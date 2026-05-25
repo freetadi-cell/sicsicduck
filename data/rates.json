@@ -1,0 +1,1109 @@
+{
+  "last_updated": "2026-05-25T11:49:31.184184+08:00",
+  "source": "各銀行官網 / MoneyHero",
+  "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
+  "banks": [
+    {
+      "name": "滙豐銀行",
+      "name_en": "HSBC",
+      "type": "traditional",
+      "logo_color": "#DB0011",
+      "hkd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.435,
+          "min_deposit": 10000,
+          "note": "新資金網上辦理 (RewardCash Time Deposit)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.215,
+          "min_deposit": 10000,
+          "note": "新資金網上辦理 (RewardCash Time Deposit)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 3.54,
+          "min_deposit": 2000,
+          "note": "新資金網上辦理 (RewardCash Time Deposit)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.425,
+          "min_deposit": 2000,
+          "note": "新資金網上辦理 (RewardCash Time Deposit)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 3.0,
+          "min_deposit": 2000,
+          "note": "新資金網上辦理",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "中銀香港",
+      "name_en": "BOC HK",
+      "type": "traditional",
+      "logo_color": "#C4161C",
+      "hkd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.1,
+          "min_deposit": 10000,
+          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 1.9,
+          "min_deposit": 10000,
+          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.8,
+          "min_deposit": 1000,
+          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.7,
+          "min_deposit": 1000,
+          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "恒生銀行",
+      "name_en": "Hang Seng",
+      "type": "traditional",
+      "logo_color": "#006699",
+      "hkd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.2,
+          "min_deposit": 10000,
+          "note": "新資金，網上理財 *",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.0,
+          "min_deposit": 10000,
+          "note": "新資金，網上理財 *",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 3.3,
+          "min_deposit": 2000,
+          "note": "優越理財新資金 *",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.2,
+          "min_deposit": 2000,
+          "note": "優越理財新資金 *",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "渣打銀行",
+      "name_en": "Standard Chartered",
+      "type": "traditional",
+      "logo_color": "#006341",
+      "hkd": {
+        "1m": {
+          "rate": 2.2,
+          "min_deposit": 10000,
+          "note": "新資金，網上辦理 *",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 2.3,
+          "min_deposit": 10000,
+          "note": "新資金網上辦理 (至2026年5月30日)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.1,
+          "min_deposit": 10000,
+          "note": "新資金網上辦理 (至2026年5月30日)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.0,
+          "min_deposit": 10000,
+          "note": "新資金網上辦理 (至2026年5月30日)",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 3.0,
+          "min_deposit": 2000,
+          "note": "網上辦理 *",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 3.2,
+          "min_deposit": 2000,
+          "note": "新資金網上辦理 (至2026年5月30日)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.3,
+          "min_deposit": 2000,
+          "note": "新資金網上辦理 (至2026年5月30日)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.7,
+          "min_deposit": 2000,
+          "note": "新資金網上辦理 (至2026年5月30日)",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "富邦銀行",
+      "name_en": "Fubon Bank",
+      "type": "traditional",
+      "logo_color": "#005594",
+      "hkd": {
+        "1m": {
+          "rate": 2.25,
+          "min_deposit": 500000,
+          "note": "新客戶，App開立 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.65,
+          "min_deposit": 500000,
+          "note": "新客戶，App開立 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.65,
+          "min_deposit": 500000,
+          "note": "新客戶，App開立 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.7,
+          "min_deposit": 500000,
+          "note": "新客戶，App開立 *",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 3.55,
+          "min_deposit": 65000,
+          "note": "新客戶 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 3.8,
+          "min_deposit": 65000,
+          "note": "新客戶 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 3.7,
+          "min_deposit": 65000,
+          "note": "新客戶 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 3.7,
+          "min_deposit": 65000,
+          "note": "新客戶 *",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "工銀亞洲",
+      "name_en": "ICBC Asia",
+      "type": "traditional",
+      "logo_color": "#C5001A",
+      "hkd": {
+        "1m": {
+          "rate": 1.6,
+          "min_deposit": 3000000,
+          "note": "手機銀行，$300萬起 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.6,
+          "min_deposit": 3000000,
+          "note": "手機銀行，$300萬起 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.4,
+          "min_deposit": 3000000,
+          "note": "手機銀行，$300萬起 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.4,
+          "min_deposit": 3000000,
+          "note": "手機銀行，$300萬起 *",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 3.3,
+          "min_deposit": 1000000,
+          "note": "網上銀行，$100萬起 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 3.7,
+          "min_deposit": 1000000,
+          "note": "網上銀行，$100萬起 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 3.7,
+          "min_deposit": 1000000,
+          "note": "網上銀行，$100萬起 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 3.7,
+          "min_deposit": 1000000,
+          "note": "網上銀行，$100萬起 *",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "東亞銀行",
+      "name_en": "BEA",
+      "type": "traditional",
+      "logo_color": "#003B5C",
+      "hkd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.3,
+          "min_deposit": 10000,
+          "note": "顯卓客戶新資金 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.4,
+          "min_deposit": 10000,
+          "note": "顯卓客戶新資金 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.4,
+          "min_deposit": 10000,
+          "note": "顯卓客戶新資金 *",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 3.35,
+          "min_deposit": 1000,
+          "note": "顯卓理財新資金 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 3.45,
+          "min_deposit": 1000,
+          "note": "顯卓理財新資金 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 3.45,
+          "min_deposit": 1000,
+          "note": "顯卓理財新資金 *",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "中信銀行（國際）",
+      "name_en": "CITICbank",
+      "type": "traditional",
+      "logo_color": "#E60012",
+      "hkd": {
+        "1m": {
+          "rate": 1.9,
+          "min_deposit": 10000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.58,
+          "min_deposit": 10000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.5,
+          "min_deposit": 10000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.5,
+          "min_deposit": 10000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "星展銀行",
+      "name_en": "DBS",
+      "type": "traditional",
+      "logo_color": "#E31837",
+      "hkd": {
+        "1m": {
+          "rate": 1.5,
+          "min_deposit": 50000,
+          "note": "新資金 *",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 2.1,
+          "min_deposit": 50000,
+          "note": "新資金 *",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 1.95,
+          "min_deposit": 50000,
+          "note": "新資金 *",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 1.95,
+          "min_deposit": 50000,
+          "note": "新資金 *",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 2.5,
+          "min_deposit": 6000,
+          "note": "網上辦理 *",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 3.3,
+          "min_deposit": null,
+          "note": "根據第三方比較網站數據 (2026年5月)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.2,
+          "min_deposit": 6000,
+          "note": "網上辦理 *",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.8,
+          "min_deposit": null,
+          "note": "根據第三方比較網站數據 (2026年5月)",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "南洋商業銀行",
+      "name_en": "Nanyang Bank",
+      "type": "traditional",
+      "logo_color": "#B22222",
+      "hkd": {
+        "1m": {
+          "rate": 2.0,
+          "min_deposit": 100000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.55,
+          "min_deposit": 100000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.4,
+          "min_deposit": 100000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.4,
+          "min_deposit": 100000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 3.5,
+          "min_deposit": 13000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 3.55,
+          "min_deposit": 13000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 3.5,
+          "min_deposit": 13000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 3.5,
+          "min_deposit": 13000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "交通銀行",
+      "name_en": "BOCOM",
+      "type": "traditional",
+      "logo_color": "#003DA5",
+      "hkd": {
+        "1m": {
+          "rate": 1.8,
+          "min_deposit": 1000000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.3,
+          "min_deposit": 1000000,
+          "note": "新資金 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.15,
+          "min_deposit": 20000,
+          "note": "每日特息 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.0,
+          "min_deposit": 20000,
+          "note": "每日特息 *",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "上海商業銀行",
+      "name_en": "Shanghai Comm",
+      "type": "traditional",
+      "logo_color": "#1B3A5C",
+      "hkd": {
+        "1m": {
+          "rate": 1.68,
+          "min_deposit": 1000,
+          "note": "網上銀行/手機銀行優惠利率 (21 May 2026)",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 2.48,
+          "min_deposit": 1000,
+          "note": "網上銀行/手機銀行優惠利率 (21 May 2026)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.48,
+          "min_deposit": 1000,
+          "note": "網上銀行/手機銀行優惠利率 (21 May 2026)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.43,
+          "min_deposit": 1000,
+          "note": "網上銀行/手機銀行優惠利率 (21 May 2026)",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 3.3,
+          "min_deposit": 10000,
+          "note": "新資金分行優惠利率 (21 May 2026)",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 3.55,
+          "min_deposit": 10000,
+          "note": "新資金分行優惠利率 (21 May 2026)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.5,
+          "min_deposit": 10000,
+          "note": "新資金分行優惠利率 (21 May 2026)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 3.4,
+          "min_deposit": 10000,
+          "note": "新資金分行優惠利率 (21 May 2026)",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "大眾銀行",
+      "name_en": "Public Bank",
+      "type": "traditional",
+      "logo_color": "#003B6F",
+      "hkd": {
+        "1m": {
+          "rate": 0.5,
+          "min_deposit": 500000,
+          "note": "$50萬或以上 *",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.1,
+          "min_deposit": 500000,
+          "note": "$50萬或以上 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.5,
+          "min_deposit": 500000,
+          "note": "$50萬或以上 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.4,
+          "min_deposit": 500000,
+          "note": "$50萬或以上 *",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 3.6,
+          "min_deposit": 1,
+          "note": "無最低門檻 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 3.4,
+          "min_deposit": 1,
+          "note": "無最低門檻 *",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 3.2,
+          "min_deposit": 1,
+          "note": "無最低門檻 *",
+          "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "招商永隆",
+      "name_en": "CMB Wing Lung",
+      "type": "traditional",
+      "logo_color": "#C41230",
+      "hkd": {
+        "1m": {
+          "rate": 1.15,
+          "min_deposit": 10000,
+          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 1.65,
+          "min_deposit": 10000,
+          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 1.95,
+          "min_deposit": 10000,
+          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.0,
+          "min_deposit": 10000,
+          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 2.5,
+          "min_deposit": 1000,
+          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 3.15,
+          "min_deposit": 1000,
+          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.1,
+          "min_deposit": 1000,
+          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.85,
+          "min_deposit": 1000,
+          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "創興銀行",
+      "name_en": "Chong Hing",
+      "type": "traditional",
+      "logo_color": "#8B4513",
+      "hkd": {
+        "1m": {
+          "rate": 0.1,
+          "min_deposit": 5000,
+          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 0.125,
+          "min_deposit": 5000,
+          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 0.125,
+          "min_deposit": 5000,
+          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 0.25,
+          "min_deposit": 5000,
+          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 0.25,
+          "min_deposit": 1000,
+          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 0.25,
+          "min_deposit": 1000,
+          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 0.25,
+          "min_deposit": 1000,
+          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 0.25,
+          "min_deposit": 1000,
+          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "富融銀行",
+      "name_en": "ZA Bank",
+      "type": "virtual",
+      "logo_color": "#6C5CE7",
+      "hkd": {
+        "1m": {
+          "rate": 1.6,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 2.7,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.6,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.65,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 3.0,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 3.6,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.7,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 3.7,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "天星銀行",
+      "name_en": "Mox Bank",
+      "type": "virtual",
+      "logo_color": "#FF6B35",
+      "hkd": {
+        "1m": {
+          "rate": 1.6,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 2.45,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.6,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.85,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 3.3,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 3.4,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.4,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 3.3,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "眾安銀行",
+      "name_en": "ZA Bank",
+      "type": "virtual",
+      "logo_color": "#00B4D8",
+      "hkd": {
+        "1m": {
+          "rate": 0.1,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 0.51,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 1.61,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.01,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": 0.1,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "3m": {
+          "rate": 0.15,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 0.2,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 0.2,
+          "min_deposit": 1,
+          "note": "無最低門檻",
+          "source": "bank"
+        }
+      }
+    },
+    {
+      "name": "PAO Bank",
+      "name_en": "PAObank",
+      "type": "virtual",
+      "logo_color": "#2ECC71",
+      "hkd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.8,
+          "min_deposit": 100,
+          "note": "虛擬銀行 *",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "*",
+          "source": "moneyhero"
+        }
+      }
+    }
+  ]
+}

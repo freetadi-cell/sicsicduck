@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>息得 | 各類資產回報率</title>
+    <meta name="description" content="全港銀行美元同港元定期存款息率即時比較，每日更新。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-50: #FFFFF0;
+            --gold-100: #FFFDE7;
+            --gold-200: #FFF9C4;
+            --gold-300: #FFF59D;
+            --gold-400: #FFEE58;
+            --gold-500: #FDD835;
+            --gold-600: #FBC02D;
+            --gold-700: #F9A825;
+            --gold-800: #F57F17;
+            --gold-900: #E65100;
+            --white: #FFFFFF;
+            --gray-50: #FFFFF5;
+            --gray-100: #FFFDE0;
+            --gray-200: #EEEEEE;
+            --gray-300: #E0E0E0;
+            --gray-400: #BDBDBD;
+            --gray-500: #9E9E9E;
+            --gray-600: #757575;
+            --gray-700: #616161;
+            --gray-800: #424242;
+            --gray-900: #212121;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gold-100);
+            color: var(--gray-800);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        .header {
+            background: #F9F9F9;
+            color: var(--white);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            height: 44px;
+        }
+
+        /* Dropdown nav */
+        .nav-dropdown-wrap {
+            position: relative;
+            margin-right: 4px;
+        }
+
+        .nav-dropdown-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--gray-700);
+            transition: background 0.15s;
+        }
+
+        .nav-dropdown-btn:hover {
+            background: var(--gold-200);
+        }
+
+        .nav-dropdown {
+            display: none;
+            position: absolute;
+            top: 44px;
+            left: 0;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border: 1px solid var(--gray-200);
+            min-width: 200px;
+            z-index: 200;
+            overflow: hidden;
+        }
+
+        .nav-dropdown.open {
+            display: block;
+        }
+
+        .nav-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: var(--gray-700);
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.15s;
+        }
+
+        .nav-dropdown a:hover {
+            background: var(--gold-100);
+            color: var(--gold-800);
+        }
+
+        .nav-dropdown a.active {
+            background: var(--gold-100);
+            color: var(--gold-800);
+            font-weight: 700;
+        }
+
+        .nav-dropdown .dd-icon {
+            font-size: 18px;
+        }
+
+        .header-logo {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 13px;
+        }
+
+        .update-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(10px);
+        }
+
+        .update-dot {
+            width: 7px;
+            height: 7px;
+            background: #4ADE80;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .layout {
+            min-height: calc(100vh - 44px);
+        }
+
+        .main-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* ===== Hero ===== */
+        .hero {
+            background: linear-gradient(180deg, var(--gold-100) 0%, var(--gold-50) 100%);
+            padding: 40px 24px 32px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--gold-800);
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== Summary Cards ===== */
+        .summary-strip {
+            max-width: 1200px;
+            margin: -20px auto 0;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .summary-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            border: 1px solid var(--gold-200);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .summary-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .summary-card .label {
+            font-size: 12px;
+            color: var(--gray-500);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .summary-card .value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--gold-700);
+        }
+
+        .summary-card .sub {
+            font-size: 11px;
+            color: var(--gray-400);
+            margin-top: 2px;
+        }
+
+        /* ===== Controls ===== */
+        .controls-wrap {
+            max-width: 1200px;
+            margin: 32px auto 0;
+            padding: 0 24px;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .currency-toggle {
+            display: flex;
+            background: var(--white);
+            border-radius: 12px;
+            padding: 4px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--gold-200);
+        }
+
+        .currency-btn {
+            padding: 10px 28px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s;
+            background: transparent;
+            color: var(--gray-600);
+            font-family: inherit;
+        }
+
+        .currency-btn.active {
+            background: linear-gradient(135deg, var(--gold-500), var(--gold-600));
+            color: var(--white);
+            box-shadow: 0 2px 8px rgba(184,134,11,0.3);
+        }
+
+        .currency-btn:not(.active):hover {
+            color: var(--gold-700);
+            background: var(--gold-100);
+        }
+
+        .period-pills {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .period-pill {
+            padding: 8px 18px;
+            border: 2px solid var(--gold-300);
+            border-radius: 24px;
+            background: var(--white);
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--gold-700);
+            font-family: inherit;
+        }
+
+        .period-pill.active {
+            background: var(--gold-600);
+            color: var(--white);
+            border-color: var(--gold-600);
+        }
+
+        .period-pill:not(.active):hover {
+            background: var(--gold-100);
+            border-color: var(--gold-400);
+        }
+
+        .sector-pills{display:flex;gap:8px;flex-wrap:wrap}
+        .sector-pill{padding:8px 16px;border:1.5px solid var(--gray-300);border-radius:8px;background:var(--white);font-size:12px;font-weight:500;cursor:pointer;transition:all .2s;color:var(--gray-600);font-family:inherit}
+        .sector-pill.active{background:var(--gray-800);color:var(--white);border-color:var(--gray-800)}
+        .sector-pill:not(.active):hover{background:var(--gray-100)}
+
+        .type-toggle {
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+        }
+
+        .type-btn {
+            padding: 8px 16px;
+            border: 1.5px solid var(--gray-300);
+            border-radius: 8px;
+            background: var(--white);
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--gray-600);
+            font-family: inherit;
+        }
+
+        .type-btn.active {
+            background: var(--gray-800);
+            color: var(--white);
+            border-color: var(--gray-800);
+        }
+
+        /* ===== Table ===== */
+        .table-wrap {
+            max-width: 1200px;
+            margin: 24px auto;
+            padding: 0 24px;
+        }
+
+        .table-container {
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            border: 1px solid var(--gold-200);
+        }
+
+        .rate-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .rate-table thead th {
+            background: linear-gradient(135deg, var(--gold-600), var(--gold-700));
+            color: var(--white);
+            padding: 14px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: left;
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s;
+        }
+
+        .rate-table thead th:hover {
+            background: linear-gradient(135deg, var(--gold-700), var(--gold-800));
+        }
+
+        .rate-table thead th .sort-icon {
+            margin-left: 4px;
+            opacity: 0.5;
+            font-size: 10px;
+        }
+
+        .rate-table thead th.sorted .sort-icon {
+            opacity: 1;
+        }
+
+        .rate-table tbody tr {
+            border-bottom: 1px solid var(--gray-100);
+            transition: background 0.15s;
+        }
+
+        .rate-table tbody tr:hover {
+            background: var(--gold-50);
+        }
+
+        .rate-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .rate-table tbody td {
+            padding: 14px 16px;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        /* Bank name cell */
+        .bank-cell {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 120px;
+        }
+
+        .bank-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .bank-name {
+            font-weight: 600;
+            color: var(--gray-800);
+            font-size: 14px;
+        }
+
+        .bank-name-en {
+            font-size: 11px;
+            color: var(--gray-400);
+            font-weight: 400;
+        }
+
+        .virtual-badge {
+            background: var(--gold-100);
+            color: var(--gold-700);
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+
+        /* Rate cell */
+        .rate-cell {
+            font-weight: 700;
+            font-size: 16px;
+            min-width: 90px;
+        }
+
+        .rate-cell.best {
+            color: #059669;
+            font-weight: 800;
+        }
+
+        .rate-cell.good {
+            color: var(--gold-700);
+        }
+
+        .rate-cell.normal {
+            color: var(--gray-700);
+        }
+
+        .rate-cell.low {
+            color: var(--gray-400);
+        }
+
+        .rate-cell.na {
+            color: var(--gray-300);
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        .rate-value {
+            display: flex;
+            align-items: baseline;
+            gap: 2px;
+        }
+
+        .rate-value .pct {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .best-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            background: linear-gradient(135deg, #059669, #10B981);
+            color: var(--white);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 6px;
+            margin-left: 6px;
+        }
+
+        /* Note cell */
+        .note-cell {
+            font-size: 12px;
+            color: var(--gray-500);
+            max-width: 180px;
+        }
+
+        .min-deposit {
+            font-size: 11px;
+            color: var(--gray-400);
+        }
+
+        /* Footer */
+        .footer {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px 40px;
+            text-align: center;
+        }
+
+        .disclaimer {
+            background: var(--gold-100);
+            border: 1px solid var(--gold-200);
+            border-radius: 12px;
+            padding: 16px 24px;
+            font-size: 12px;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        .disclaimer strong {
+            color: var(--gold-700);
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--gray-400);
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--gold-200);
+            border-top-color: var(--gold-600);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner { padding: 12px 16px; }
+            .header-title { font-size: 17px; }
+            .header-meta { display: none; }
+
+            .hero h1 { font-size: 22px; }
+            .hero { padding: 30px 16px 24px; }
+
+            .summary-strip {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 16px;
+                gap: 10px;
+            }
+
+            .summary-card { padding: 14px; }
+            .summary-card .value { font-size: 22px; }
+
+            .controls-wrap { padding: 0 16px; }
+            .controls { gap: 8px; }
+            .currency-btn { padding: 8px 20px; font-size: 14px; }
+            .period-pill { padding: 6px 14px; font-size: 12px; }
+            .type-toggle { margin-left: 0; }
+
+            .table-wrap { padding: 0 16px; }
+            .table-container { border-radius: 14px; }
+
+            .rate-table thead th { padding: 10px 10px; font-size: 12px; }
+            .rate-table tbody td { padding: 10px; font-size: 13px; }
+            .bank-cell { min-width: 90px; }
+            .bank-icon { width: 30px; height: 30px; font-size: 11px; }
+            .rate-cell { font-size: 14px; min-width: 70px; }
+
+            .footer { padding: 0 16px 30px; }
+        }
+
+        /* No-data row */
+        .no-data-row td {
+            text-align: center;
+            padding: 40px;
+            color: var(--gray-400);
+            font-size: 14px;
+        }
+
+        /* Scroll hint on mobile */
+        .scroll-hint {
+            display: none;
+            text-align: center;
+            font-size: 11px;
+            color: var(--gray-400);
+            padding: 8px;
+        }
+
+        @media (max-width: 640px) {
+            .scroll-hint { display: block; }
+            .table-container { overflow-x: auto; }
+            .rate-table { min-width: 700px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-inner">
+        <div class="nav-dropdown-wrap">
+            <button class="nav-dropdown-btn" onclick="toggleNav()" aria-label="導航">☰</button>
+            <div class="nav-dropdown" id="navDropdown">
+                <a href="index.html"><span class="dd-icon">🏦</span> 定存</a>
+                <a href="dividend-stocks.html" class="active"><span class="dd-icon">📈</span> 收息股</a>
+                <a href="rental-income.html"><span class="dd-icon">🏠</span> 租金收入</a>
+            </div>
+        </div>
+        <img class="header-logo" src="logo.jpg" alt="息得">
+        
+        <div class="header-meta" style="display:none;">
+            <div class="update-badge">
+                <div class="update-dot"></div>
+                <span id="updateTime">載入中...</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Layout -->
+<div class="layout">
+    <div class="main-content">
+
+<!-- Hero -->
+<section class="hero">
+    <div style="font-size:13px;color:var(--gray-500);margin-bottom:8px;" id="heroUpdateTime">最後更新：載入中...</div>
+    <h1>恒指成份股 — 收息股息率比較</h1>
+    <p>比較恒生指數成份股年化股息率，每日自動更新，幫你搵最高息藍籌股</p>
+</section>
+
+<!-- Summary Cards -->
+<div class="summary-strip" id="summaryCards">
+    <div class="summary-card">
+        <div class="label">最高息率</div>
+        <div class="value" id="topYield">--</div>
+        <div class="sub" id="topYieldStock">--</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">平均息率</div>
+        <div class="value" id="avgYield">--</div>
+        <div class="sub">恒指成份股</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">息率 &gt; 5%</div>
+        <div class="value" id="highYieldCount">--</div>
+        <div class="sub">高息股份數量</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">股份總數</div>
+        <div class="value" id="totalCount">--</div>
+        <div class="sub">有派息記錄</div>
+    </div>
+</div>
+
+<!-- Controls -->
+<div class="controls-wrap">
+    <div class="controls">
+        <div class="sector-pills" id="sectorPills">
+            <button class="sector-pill active" data-sector="all">全部</button>
+        </div>
+    </div>
+</div>
+
+<!-- Table -->
+<div class="table-wrap">
+    <div class="scroll-hint">👈 左右滑動查看更多 👉</div>
+    <div class="table-container">
+        <table class="rate-table" id="rateTable">
+            <thead>
+                <tr>
+                    <th data-sort="rank">#</th>
+                    <th data-sort="name">股份</th>
+                    <th data-sort="yield">年化息率 <span class="sort-icon">↕</span></th>
+                    <th data-sort="sector">行業 <span class="sort-icon">↕</span></th>
+                    <th data-sort="price">收市價 <span class="sort-icon">↕</span></th>
+                    <th data-sort="dividend">每股派息 <span class="sort-icon">↕</span></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr><td colspan="7"><div class="loading"><div class="loading-spinner"></div>載入收息股數據中...</div></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="disclaimer">
+        <strong>⚠️ 免責聲明</strong><br>
+        息率 = 最近年度每股派息 / 最近收市價 × 100%。以上數據僅供參考，不構成任何投資建議。
+        股價及派息可能隨時變動，投資前請向專業人士查詢。<br>
+        <span id="disclaimerUpdate">數據來源：各銀行官網 / MoneyHero ｜ 最後更新：--</span>
+    </div>
+</div>
+
+    </div><!-- end main-content -->
+</div><!-- end layout -->
+
+<script>
+// ===== Dropdown Nav =====
+function toggleNav(){document.getElementById('navDropdown').classList.toggle('open')}
+document.addEventListener('click',function(e){var w=document.querySelector('.nav-dropdown-wrap');if(!w.contains(e.target))document.getElementById('navDropdown').classList.remove('open')});
+
+// ===== State =====
+let stocksData=null,currentSector='all',sortCol='yield',sortDir='desc';
+
+// ===== Load Data =====
+async function loadData(){
+    try{
+        const r=await fetch('data/dividend_stocks.json?t='+Date.now());
+        stocksData=await r.json();
+        renderAll();
+    }catch(e){
+        document.getElementById('tableBody').innerHTML='<tr><td colspan="6" style="text-align:center;padding:40px;color:#9E9E9E">⚠️ 載入失敗</td></tr>';
+    }
+}
+
+// ===== Render Summary =====
+function renderSummary(){
+    if(!stocksData)return;
+    const stocks=stocksData.stocks;
+    const top=stocks[0];
+    const avgYield=stocks.reduce((s,b)=>s+b.yield,0)/stocks.length;
+    const highCount=stocks.filter(s=>s.yield>=5).length;
+
+    document.getElementById('topYield').textContent=top.yield.toFixed(2)+'%';
+    document.getElementById('topYieldStock').textContent=top.name+' ('+top.ticker+')';
+    document.getElementById('avgYield').textContent=avgYield.toFixed(2)+'%';
+    document.getElementById('highYieldCount').textContent=highCount;
+    document.getElementById('totalCount').textContent=stocks.length;
+
+    const updated=new Date(stocksData.last_updated);
+    const ts=updated.toLocaleDateString('zh-HK',{year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false});
+    document.getElementById('heroUpdateTime').textContent='最後更新：'+ts;
+    document.getElementById('updateTime').textContent='更新：'+ts;
+    document.getElementById('disclaimerUpdate').textContent='數據來源：'+stocksData.source+' ｜ 最後更新：'+ts;
+}
+
+// ===== Render Sector Pills =====
+function renderSectorPills(){
+    if(!stocksData)return;
+    const sectors=[...new Set(stocksData.stocks.map(s=>s.sector))].sort();
+    const container=document.getElementById('sectorPills');
+    let html='<button class="sector-pill active" data-sector="all">全部</button>';
+    sectors.forEach(s=>{html+='<button class="sector-pill" data-sector="'+s+'">'+s+'</button>'});
+    container.innerHTML=html;
+
+    container.querySelectorAll('.sector-pill').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+            container.querySelectorAll('.sector-pill').forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active');
+            currentSector=btn.dataset.sector;
+            renderTable();
+        });
+    });
+}
+
+// ===== Sector Colors =====
+const sectorColors={
+    '銀行':'#C4161C','保險':'#003DA5','地產':'#B22222','公用事業':'#006699',
+    '科技':'#6C5CE7','電訊':'#FF6B35','能源':'#2ECC71','博彩':'#E74C3C',
+    '金融':'#1B3A5C','工業':'#003B5C','消費品':'#F39C12','醫藥':'#27AE60',
+    '汽車':'#3498DB','運輸':'#2980B9','綜合企業':'#8E44AD','食品':'#E67E22',
+    '餐飲':'#E74C3C','紡織':'#1ABC9C','房地產信託':'#9B59B6','其他':'#95A5A6'
+};
+
+// ===== Render Table =====
+function renderTable(){
+    if(!stocksData)return;
+    let stocks=[...stocksData.stocks];
+    if(currentSector!=='all')stocks=stocks.filter(s=>s.sector===currentSector);
+
+    stocks.sort((a,b)=>{
+        let va=a[sortCol],vb=b[sortCol];
+        if(typeof va==='string')return sortDir==='asc'?va.localeCompare(vb):vb.localeCompare(va);
+        return sortDir==='asc'?va-vb:vb-va;
+    });
+
+    const avgYield=stocks.reduce((a,s)=>a+s.yield,0)/stocks.length;
+    let html='';
+    stocks.forEach((s,i)=>{
+        const color=sectorColors[s.sector]||'#95A5A6';
+        let cls='normal';
+        if(i<3)cls='best';
+        else if(s.yield>=avgYield)cls='good';
+
+        html+='<tr>'+
+            '<td style="font-weight:600;color:'+(i<3?'var(--gold-700)':'var(--gray-400)')+';font-size:13px">'+(i+1)+'</td>'+
+            '<td><div class="bank-cell">'+
+                '<div><div class="bank-name">'+s.name+'</div><div class="bank-name-en">'+s.ticker+'.HK</div></div>'+
+            '</div></td>'+
+            '<td class="rate-cell '+cls+'">'+
+                s.yield.toFixed(2)+'%'+
+            '</td>'+
+            '<td><span class="virtual-badge">'+s.sector+'</span></td>'+
+            '<td style="font-weight:600">$'+s.price.toFixed(2)+'</td>'+
+            '<td style="color:var(--gray-600)">$'+s.dividend.toFixed(4)+'</td>'+
+            '</tr>';
+    });
+
+    if(!stocks.length)html='<tr><td colspan="6" style="text-align:center;padding:40px;color:var(--gray-400)">沒有符合條件的股份</td></tr>';
+    document.getElementById('tableBody').innerHTML=html;
+}
+
+function renderAll(){renderSummary();renderSectorPills();renderTable();}
+
+// ===== Sort =====
+document.querySelectorAll('.rate-table thead th[data-sort]').forEach(th=>{
+    th.addEventListener('click',()=>{
+        const col=th.dataset.sort;
+        if(col==='rank'||col==='name')return;
+        if(sortCol===col)sortDir=sortDir==='desc'?'asc':'desc';
+        else{sortCol=col;sortDir='desc'}
+        renderTable();
+    });
+});
+
+loadData();
+</script>
+
+</body>
+</html>
