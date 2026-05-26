@@ -70,7 +70,7 @@ BANK_CONFIG = {
     },
     'bea': {
         'name': '東亞銀行',
-        'url': 'https://www.hkbea.com/html/tc/bea-personal-banking-supremegold-time-deposit.html',
+        'url': 'https://www.hkbea.com/html/tc/bea-personal-banking-supremeGold-welcome-offer.html',
     },
     'cncbi': {
         'name': '中信銀行（國際）',

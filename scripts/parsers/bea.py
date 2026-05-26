@@ -1,54 +1,37 @@
-"""東亞銀行 BEA - Parser for online time deposit rates."""
+"""東亞銀行 BEA - Parser for time deposit rates."""
 import re
 
 def parse(text, tables=None):
-    """Parse BEA online time deposit rates.
+    """Parse BEA time deposit rates from promo page.
     
-    Page has:
-    網上港元定期存款特惠年利率 (%)
-    存款期  顯卓私人理財/顯卓理財  至尊理財  BEA GOAL/其他
-    3個月   2.45 / 2.35  2.40 / 2.35  2.40 / 2.35
-    
-    Take 顯卓理財 new fund rate (first number in first column).
-    
-    USD similarly.
+    Page format:
+    $100,000 - $10,000,000
+    3個月  2.60%  3.50%
+    6個月  2.60%  3.60%
+    12個月  2.55%  3.60%
     """
     if not text:
         return None
     
     rates = {}
-    note = '網上定期存款特惠年利率（新資金）'
+    note = '顯卓理財特惠定期存款利率'
     
-    # HKD section
-    hkd_idx = text.find('網上港元定期存款特惠年利率')
-    if hkd_idx >= 0:
-        hkd_section = text[hkd_idx:hkd_idx+800]
-        
-        hkd_rates = {}
-        # Pattern: 3個月  2.45 / 2.35  ...  (take first number = new fund rate)
-        for period, label in [('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
-            pattern = rf'{label}\s+(\d+\.\d+)\s*/\s*\d+\.\d+'
-            m = re.search(pattern, hkd_section)
-            if m:
-                hkd_rates[period] = float(m.group(1))
-        
-        if hkd_rates:
-            rates['hkd'] = hkd_rates
+    # Find the rate table section
+    # Look for pattern: 存款期 followed by rates
+    hkd_rates = {}
+    usd_rates = {}
     
-    # USD section
-    usd_idx = text.find('網上美元定期存款特惠年利率')
-    if usd_idx >= 0:
-        usd_section = text[usd_idx:usd_idx+800]
-        
-        usd_rates = {}
-        for period, label in [('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
-            pattern = rf'{label}\s+(\d+\.\d+)\s*/\s*\d+\.\d+'
-            m = re.search(pattern, usd_section)
-            if m:
-                usd_rates[period] = float(m.group(1))
-        
-        if usd_rates:
-            rates['usd'] = usd_rates
+    for period, label in [('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
+        # Pattern: 3個月  2.60%  3.50%
+        m = re.search(rf'{label}\s+(\d+\.\d+)%\s+(\d+\.\d+)%', text)
+        if m:
+            hkd_rates[period] = float(m.group(1))
+            usd_rates[period] = float(m.group(2))
+    
+    if hkd_rates:
+        rates['hkd'] = hkd_rates
+    if usd_rates:
+        rates['usd'] = usd_rates
     
     if rates:
         rates['note'] = note
