@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T11:22:51.158426+08:00",
+  "last_updated": "2026-05-26T15:29:57.982254+08:00",
   "source": "各銀行官網 / MoneyHero",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -76,13 +76,13 @@
         "3m": {
           "rate": 2.1,
           "min_deposit": 10000,
-          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "note": "網上銀行新資金特優定期存款",
           "source": "bank"
         },
         "6m": {
           "rate": 1.9,
           "min_deposit": 10000,
-          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "note": "網上銀行新資金特優定期存款",
           "source": "bank"
         },
         "12m": {
@@ -100,15 +100,15 @@
           "source": "moneyhero"
         },
         "3m": {
-          "rate": 2.8,
+          "rate": 3.0,
           "min_deposit": 1000,
-          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "note": "網上銀行新資金特優定期存款",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.7,
+          "rate": 2.9,
           "min_deposit": 1000,
-          "note": "新資金網上/手機銀行辦理 (Enrich Banking/i-Free Banking)",
+          "note": "網上銀行新資金特優定期存款",
           "source": "bank"
         },
         "12m": {
@@ -126,28 +126,28 @@
       "logo_color": "#006699",
       "hkd": {
         "1m": {
-          "rate": null,
+          "rate": 0.1,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "定期存款牌價利率",
+          "source": "bank"
         },
         "3m": {
-          "rate": 2.2,
+          "rate": 0.125,
           "min_deposit": 10000,
-          "note": "新資金，網上理財 *",
+          "note": "定期存款牌價利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.0,
+          "rate": 0.125,
           "min_deposit": 10000,
-          "note": "新資金，網上理財 *",
+          "note": "定期存款牌價利率",
           "source": "bank"
         },
         "12m": {
-          "rate": null,
+          "rate": 0.15,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "定期存款牌價利率",
+          "source": "bank"
         }
       },
       "usd": {
@@ -192,19 +192,19 @@
         "3m": {
           "rate": 2.3,
           "min_deposit": 10000,
-          "note": "新資金網上辦理 (至2026年5月30日)",
+          "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         },
         "6m": {
           "rate": 2.1,
           "min_deposit": 10000,
-          "note": "新資金網上辦理 (至2026年5月30日)",
+          "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 10000,
-          "note": "新資金網上辦理 (至2026年5月30日)",
+          "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         }
       },
@@ -218,19 +218,19 @@
         "3m": {
           "rate": 3.2,
           "min_deposit": 2000,
-          "note": "新資金網上辦理 (至2026年5月30日)",
+          "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         },
         "6m": {
           "rate": 3.3,
           "min_deposit": 2000,
-          "note": "新資金網上辦理 (至2026年5月30日)",
+          "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         },
         "12m": {
           "rate": 2.7,
           "min_deposit": 2000,
-          "note": "新資金網上辦理 (至2026年5月30日)",
+          "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         }
       }
@@ -242,27 +242,27 @@
       "logo_color": "#005594",
       "hkd": {
         "1m": {
-          "rate": 2.25,
+          "rate": 0.5,
           "min_deposit": 500000,
-          "note": "新客戶，App開立 *",
+          "note": "Fubon+手機應用程式定存利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 2.65,
+          "rate": 1.05,
           "min_deposit": 500000,
-          "note": "新客戶，App開立 *",
+          "note": "Fubon+手機應用程式定存利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.65,
+          "rate": 1.15,
           "min_deposit": 500000,
-          "note": "新客戶，App開立 *",
+          "note": "Fubon+手機應用程式定存利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 2.7,
+          "rate": 1.15,
           "min_deposit": 500000,
-          "note": "新客戶，App開立 *",
+          "note": "Fubon+手機應用程式定存利率",
           "source": "bank"
         }
       },
@@ -274,9 +274,9 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 3.8,
+          "rate": 4.4,
           "min_deposit": 65000,
-          "note": "新客戶 *",
+          "note": "Fubon+手機應用程式定存利率",
           "source": "bank"
         },
         "6m": {
@@ -480,9 +480,9 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 2.1,
+          "rate": 2.5,
           "min_deposit": 50000,
-          "note": "新資金 *",
+          "note": "網上定期存款特惠利率",
           "source": "bank"
         },
         "6m": {
@@ -506,9 +506,9 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 3.3,
+          "rate": 3.9,
           "min_deposit": null,
-          "note": "根據第三方比較網站數據 (2026年5月)",
+          "note": "網上定期存款特惠利率",
           "source": "bank"
         },
         "6m": {
@@ -674,25 +674,25 @@
       },
       "usd": {
         "1m": {
-          "rate": 3.3,
+          "rate": 2.98,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 3.55,
+          "rate": 3.38,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 3.5,
+          "rate": 3.33,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 3.4,
+          "rate": 3.23,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank"

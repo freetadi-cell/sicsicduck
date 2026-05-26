@@ -46,23 +46,23 @@ BANK_CONFIG = {
     },
     'bochk': {
         'name': '中銀香港',
-        'url': 'https://www.bochk.com/dwDepOpAcct/timeDepoRate.html',
+        'url': 'https://www.bochk.com/m/tc/deposits/promotion/timedeposits.html',
     },
     'hangseng': {
         'name': '恒生銀行',
-        'url': 'https://www.hangseng.com/cms/tc/rates/td-rates',
+        'url': 'https://www.hangseng.com/zh-hk/personal/banking/rates/deposit-interest-rates/',
     },
     'sc': {
         'name': '渣打銀行',
-        'url': 'https://www.sc.com/hk/deposit/rates/',
+        'url': 'https://www.sc.com/hk/deposits/online-time-deposit/',
     },
     'dbs': {
         'name': '星展銀行',
-        'url': 'https://www.dbs.com.hk/personal-zh/deposits/rates',
+        'url': 'https://www.dbs.com.hk/personal/promotion/OnlineTD-promo',
     },
     'fubon': {
         'name': '富邦銀行',
-        'url': 'https://www.fubonbank.com.hk/tc/rate/time-deposit',
+        'url': 'https://www.fubonbank.com.hk/tc/deposit/latest-promotions/new-customers-promotion.html',
     },
     'icbc': {
         'name': '工銀亞洲',
