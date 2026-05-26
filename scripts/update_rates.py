@@ -21,7 +21,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), 'data')
 RATES_FILE = os.path.join(DATA_DIR, 'rates.json')
 
-def agent_browser_cmd(cmd, timeout=10):
+def agent_browser_cmd(cmd, timeout=15):
     """Run agent-browser command."""
     try:
         result = subprocess.run(
@@ -82,6 +82,16 @@ def update_rates():
         '恒生銀行': 'https://www.hangseng.com/cms/tc/rates/td-rates',
         '渣打銀行': 'https://www.sc.com/hk/deposit/rates/',
         '星展銀行': 'https://www.dbs.com.hk/personal-zh/deposits/rates',
+        '富邦銀行': 'https://www.fubonbank.com.hk/tc/rate/time-deposit',
+        '工銀亞洲': 'https://www.icbcasia.com/hk/tc/personal/latest-promotion/online-time-deposit.html',
+        '東亞銀行': 'https://www.hkbea.com/html/tc/bea-personal-banking-supremegold-time-deposit.html',
+        '中信銀行（國際）': 'https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html',
+        '南洋商業銀行': 'https://www.ncb.com.hk/nanyang_bank/popup1/deposit.html',
+        '交通銀行': 'https://www.bankcomm.com.hk/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml',
+        '上海商業銀行': 'https://www.shacombank.com.hk/tch/personal/promotion/fix-rate.jsp',
+        '大眾銀行': 'https://www.publicbank.com.hk/tc/usefultools/rates/depositinterestrates',
+        '招商永隆': 'https://www.winglungbank.com/ibanking/CnCoFiiDepratDsp.jsp',
+        '創興銀行': 'https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml',
         '富融銀行': 'https://www.fusionbank.com/',
         '天星銀行': 'https://www.airstarbank.com/',
         '眾安銀行': 'https://bank.za.group/',

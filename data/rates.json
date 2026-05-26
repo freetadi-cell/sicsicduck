@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T08:31:33.868685+08:00",
+  "last_updated": "2026-05-26T09:32:08.226236+08:00",
   "source": "各銀行官網 / MoneyHero",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -245,25 +245,25 @@
           "rate": 2.25,
           "min_deposit": 500000,
           "note": "新客戶，App開立 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.65,
           "min_deposit": 500000,
           "note": "新客戶，App開立 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.65,
           "min_deposit": 500000,
           "note": "新客戶，App開立 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.7,
           "min_deposit": 500000,
           "note": "新客戶，App開立 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -271,25 +271,25 @@
           "rate": 3.55,
           "min_deposit": 65000,
           "note": "新客戶 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 3.8,
           "min_deposit": 65000,
           "note": "新客戶 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 3.7,
           "min_deposit": 65000,
           "note": "新客戶 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 3.7,
           "min_deposit": 65000,
           "note": "新客戶 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       }
     },
@@ -303,25 +303,25 @@
           "rate": 1.6,
           "min_deposit": 3000000,
           "note": "手機銀行，$300萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.6,
           "min_deposit": 3000000,
           "note": "手機銀行，$300萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 3000000,
           "note": "手機銀行，$300萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 3000000,
           "note": "手機銀行，$300萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -329,25 +329,25 @@
           "rate": 3.3,
           "min_deposit": 1000000,
           "note": "網上銀行，$100萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 3.7,
           "min_deposit": 1000000,
           "note": "網上銀行，$100萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 3.7,
           "min_deposit": 1000000,
           "note": "網上銀行，$100萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 3.7,
           "min_deposit": 1000000,
           "note": "網上銀行，$100萬起 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       }
     },
@@ -367,19 +367,19 @@
           "rate": 2.3,
           "min_deposit": 10000,
           "note": "顯卓客戶新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 10000,
           "note": "顯卓客戶新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 10000,
           "note": "顯卓客戶新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -393,19 +393,19 @@
           "rate": 3.35,
           "min_deposit": 1000,
           "note": "顯卓理財新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 3.45,
           "min_deposit": 1000,
           "note": "顯卓理財新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 3.45,
           "min_deposit": 1000,
           "note": "顯卓理財新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       }
     },
@@ -419,25 +419,25 @@
           "rate": 1.9,
           "min_deposit": 10000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.58,
           "min_deposit": 10000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.5,
           "min_deposit": 10000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.5,
           "min_deposit": 10000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -535,25 +535,25 @@
           "rate": 2.0,
           "min_deposit": 100000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.55,
           "min_deposit": 100000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 100000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 100000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -561,25 +561,25 @@
           "rate": 3.5,
           "min_deposit": 13000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 3.55,
           "min_deposit": 13000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 3.5,
           "min_deposit": 13000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 3.5,
           "min_deposit": 13000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       }
     },
@@ -593,25 +593,25 @@
           "rate": 1.8,
           "min_deposit": 1000000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.3,
           "min_deposit": 1000000,
           "note": "新資金 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.15,
           "min_deposit": 20000,
           "note": "每日特息 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 20000,
           "note": "每日特息 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -709,25 +709,25 @@
           "rate": 0.5,
           "min_deposit": 500000,
           "note": "$50萬或以上 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.1,
           "min_deposit": 500000,
           "note": "$50萬或以上 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.5,
           "min_deposit": 500000,
           "note": "$50萬或以上 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 500000,
           "note": "$50萬或以上 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -741,19 +741,19 @@
           "rate": 3.6,
           "min_deposit": 1,
           "note": "無最低門檻 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 3.4,
           "min_deposit": 1,
           "note": "無最低門檻 *",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 3.2,
           "min_deposit": 1,
           "note": "無最低門檻 *",
-          "source": "moneyhero"
+          "source": "bank"
         }
       }
     },
