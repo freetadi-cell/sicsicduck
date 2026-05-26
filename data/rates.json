@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-25T11:49:31.184184+08:00",
+  "last_updated": "2026-05-26T08:31:33.868685+08:00",
   "source": "各銀行官網 / MoneyHero",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1115,25 +1115,25 @@
           "rate": 0.5,
           "min_deposit": 10,
           "note": "存款門檻：HK$10",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.3,
           "min_deposit": 10,
           "note": "存款門檻：HK$10",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 10,
           "note": "存款門檻：HK$10",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.45,
           "min_deposit": 10,
           "note": "存款門檻：HK$10",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -1173,25 +1173,25 @@
           "rate": 1.2,
           "min_deposit": 500,
           "note": "存款門檻：HK$500",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 2.3,
           "min_deposit": 500,
           "note": "存款門檻：HK$500",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 2.2,
           "min_deposit": 500,
           "note": "存款門檻：HK$500",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 500,
           "note": "存款門檻：HK$500",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
@@ -1231,25 +1231,25 @@
           "rate": 0.5,
           "min_deposit": 1,
           "note": "存款門檻：HK$1",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "3m": {
           "rate": 1.8,
           "min_deposit": 1,
           "note": "存款門檻：HK$1",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "6m": {
           "rate": 1.8,
           "min_deposit": 1,
           "note": "存款門檻：HK$1",
-          "source": "moneyhero"
+          "source": "bank"
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 1,
           "note": "存款門檻：HK$1",
-          "source": "moneyhero"
+          "source": "bank"
         }
       },
       "usd": {
