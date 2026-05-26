@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T21:35:25.215356+08:00",
+  "last_updated": "2026-05-26T21:46:08.414823+08:00",
   "source": "各銀行官網 / MoneyHero",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -248,9 +248,9 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 1.05,
+          "rate": 2.8,
           "min_deposit": 500000,
-          "note": "Fubon+手機應用程式定存利率",
+          "note": "新資金定期存款優惠",
           "source": "bank"
         },
         "6m": {
@@ -274,9 +274,9 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 4.4,
+          "rate": 3.9,
           "min_deposit": 65000,
-          "note": "Fubon+手機應用程式定存利率",
+          "note": "新資金定期存款優惠",
           "source": "bank"
         },
         "6m": {
