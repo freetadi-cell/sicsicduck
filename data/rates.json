@@ -822,53 +822,53 @@
       "logo_color": "#8B4513",
       "hkd": {
         "1m": {
-          "rate": 0.1,
-          "min_deposit": 5000,
-          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "rate": 2.2,
+          "min_deposit": 50000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "3m": {
-          "rate": 0.125,
-          "min_deposit": 5000,
-          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "rate": 2.65,
+          "min_deposit": 50000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "6m": {
-          "rate": 0.125,
-          "min_deposit": 5000,
-          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "rate": 1.65,
+          "min_deposit": 50000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "12m": {
-          "rate": 0.25,
-          "min_deposit": 5000,
-          "note": "牌價利率 (HKD 500,000+, 23 May 2026 18:00)",
+          "rate": 0.95,
+          "min_deposit": 50000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         }
       },
       "usd": {
         "1m": {
-          "rate": 0.25,
-          "min_deposit": 1000,
-          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "rate": 3.4,
+          "min_deposit": 10000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "3m": {
-          "rate": 0.25,
-          "min_deposit": 1000,
-          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "rate": 3.7,
+          "min_deposit": 10000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "6m": {
-          "rate": 0.25,
-          "min_deposit": 1000,
-          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "rate": 3.2,
+          "min_deposit": 10000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "12m": {
-          "rate": 0.25,
-          "min_deposit": 1000,
-          "note": "牌價利率 (所有金額, 23 May 2026 18:00)",
+          "rate": 2.9,
+          "min_deposit": 10000,
+          "note": "雲利率（網上/流動理財）",
           "source": "bank"
         }
       }
