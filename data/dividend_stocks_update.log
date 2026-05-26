@@ -1,0 +1,3 @@
+2026-05-25 11:00:02,727 [INFO] Updating dividend stocks data...
+2026-05-25 11:00:04,283 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 0011.HK"}}}
+2026-05-25 11:00:13,206 [INFO] ✅ Updated 50 stocks

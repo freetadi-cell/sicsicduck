@@ -875,7 +875,7 @@
     },
     {
       "name": "富融銀行",
-      "name_en": "ZA Bank",
+      "name_en": "Fusion Bank",
       "type": "virtual",
       "logo_color": "#6C5CE7",
       "hkd": {
@@ -933,7 +933,7 @@
     },
     {
       "name": "天星銀行",
-      "name_en": "Mox Bank",
+      "name_en": "Airstar Bank",
       "type": "virtual",
       "logo_color": "#FF6B35",
       "hkd": {
@@ -1102,6 +1102,180 @@
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        }
+      }
+    },
+    {
+      "name": "匯立銀行",
+      "name_en": "WeLab Bank",
+      "type": "virtual",
+      "logo_color": "#FF6347",
+      "hkd": {
+        "1m": {
+          "rate": 0.5,
+          "min_deposit": 10,
+          "note": "存款門檻：HK$10",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.3,
+          "min_deposit": 10,
+          "note": "存款門檻：HK$10",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.4,
+          "min_deposit": 10,
+          "note": "存款門檻：HK$10",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.45,
+          "min_deposit": 10,
+          "note": "存款門檻：HK$10",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        }
+      }
+    },
+    {
+      "name": "理慧銀行",
+      "name_en": "livi Bank",
+      "type": "virtual",
+      "logo_color": "#E91E63",
+      "hkd": {
+        "1m": {
+          "rate": 1.2,
+          "min_deposit": 500,
+          "note": "存款門檻：HK$500",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 2.3,
+          "min_deposit": 500,
+          "note": "存款門檻：HK$500",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 2.2,
+          "min_deposit": 500,
+          "note": "存款門檻：HK$500",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.0,
+          "min_deposit": 500,
+          "note": "存款門檻：HK$500",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        }
+      }
+    },
+    {
+      "name": "螞蟻銀行",
+      "name_en": "Ant Bank",
+      "type": "virtual",
+      "logo_color": "#1E88E5",
+      "hkd": {
+        "1m": {
+          "rate": 0.5,
+          "min_deposit": 1,
+          "note": "存款門檻：HK$1",
+          "source": "moneyhero"
+        },
+        "3m": {
+          "rate": 1.8,
+          "min_deposit": 1,
+          "note": "存款門檻：HK$1",
+          "source": "moneyhero"
+        },
+        "6m": {
+          "rate": 1.8,
+          "min_deposit": 1,
+          "note": "存款門檻：HK$1",
+          "source": "moneyhero"
+        },
+        "12m": {
+          "rate": 2.0,
+          "min_deposit": 1,
+          "note": "存款門檻：HK$1",
+          "source": "moneyhero"
+        }
+      },
+      "usd": {
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": "",
+          "source": ""
         }
       }
     }

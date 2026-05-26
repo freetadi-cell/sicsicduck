@@ -1,0 +1,34 @@
+2026-05-24 11:00:04,342 [INFO] ==================================================
+2026-05-24 11:00:04,342 [INFO] HK Deposit Rates Update Script
+2026-05-24 11:00:04,342 [INFO] Time: 2026-05-24 11:00:04
+2026-05-24 11:00:04,342 [INFO] ==================================================
+2026-05-24 11:00:04,343 [INFO] Starting rate update from MoneyHero...
+2026-05-24 11:00:04,610 [INFO] Fetched MoneyHero HKD page successfully
+2026-05-24 11:00:04,869 [INFO] Fetched MoneyHero main page successfully
+2026-05-24 11:00:04,870 [INFO] MoneyHero fetch completed - rates structure preserved
+2026-05-24 11:00:04,879 [INFO] Updated rates.json at 2026-05-24T11:00:04+08:00
+2026-05-24 11:00:04,879 [INFO] ✅ Update completed successfully
+2026-05-25 11:00:01,629 [INFO] ==================================================
+2026-05-25 11:00:01,629 [INFO] HK Deposit Rates Update
+2026-05-25 11:00:01,629 [INFO] Time: 2026-05-25 11:00:01
+2026-05-25 11:00:01,629 [INFO] ==================================================
+2026-05-25 11:00:01,630 [INFO] Fetching StashAway HKD page...
+2026-05-25 11:00:01,845 [INFO]   StashAway HKD: fetched 229299 chars
+2026-05-25 11:00:01,845 [INFO] Fetching StashAway USD page...
+2026-05-25 11:00:01,975 [INFO]   StashAway USD: fetched 206590 chars
+2026-05-25 11:00:01,975 [INFO] Fetching Syfe USD page...
+2026-05-25 11:00:02,153 [INFO]   Syfe USD: fetched 289607 chars
+2026-05-25 11:00:02,153 [INFO] Trying agent-browser for 富融銀行: https://www.fusionbank.com/deposit.html?lang=en
+2026-05-25 11:00:06,908 [WARNING]   Failed to get rates for 富融銀行 via agent-browser
+2026-05-25 11:00:07,909 [INFO] Trying agent-browser for 天星銀行: https://mox.com/promotions/time-deposit/
+2026-05-25 11:00:14,048 [INFO]   Got rates for 天星銀行: {'1m': 3.2, '3m': 3.4, '6m': 3.3, '12m': 3.3}
+2026-05-25 11:00:15,048 [INFO] Trying agent-browser for 眾安銀行: https://bank.za.group/en/deposit
+2026-05-25 11:00:22,282 [WARNING]   Failed to get rates for 眾安銀行 via agent-browser
+2026-05-25 11:00:23,282 [INFO] Trying agent-browser for PAO Bank: https://www.paobank.com/en/deposit.html
+2026-05-25 11:00:48,299 [WARNING] agent-browser open "https://www.paobank.com/en/deposit.html": timeout
+2026-05-25 11:00:48,299 [WARNING]   Failed to get rates for PAO Bank via agent-browser
+2026-05-25 11:00:49,504 [INFO] Trying MoneyHero...
+2026-05-25 11:00:50,376 [INFO]   MoneyHero: fetched 610311 chars
+2026-05-25 11:00:50,378 [INFO] Updated 19 banks in rates.json
+2026-05-25 11:00:50,378 [INFO] Timestamp: 2026-05-25T11:00:50+08:00
+2026-05-25 11:00:50,378 [INFO] ✅ Update completed successfully
