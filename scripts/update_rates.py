@@ -74,7 +74,7 @@ BANK_CONFIG = {
     },
     'cncbi': {
         'name': '中信銀行（國際）',
-        'url': 'https://www.cncbinternational.com/personal/e-banking/inmotion/tc/offers/time_deposit/index.html',
+        'url': 'https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html',
     },
     'ncb': {
         'name': '南洋商業銀行',

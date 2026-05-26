@@ -1,51 +1,73 @@
-"""中信銀行（國際）CNCBI - Parser for inMotion time deposit promo rates."""
+"""中信銀行（國際）CNCBI - Parser for time deposit rates.
+
+Uses two sources:
+1. Main rate table page (board rates) - browser scrape
+2. inMotion promo page (new fund rates) - curl fallback (browser blocked by WAF)
+"""
 import re
+import subprocess
+import logging
+
+logger = logging.getLogger(__name__)
+
+PROMO_URL = 'https://www.cncbinternational.com/personal/e-banking/inmotion/tc/offers/time_deposit/index.html'
+
+
+def _fetch_promo_rates():
+    """Try to fetch promo rates via curl (browser is blocked by CNCBI WAF)."""
+    try:
+        result = subprocess.run(
+            ['curl', '-sL', '--max-time', '15', PROMO_URL],
+            capture_output=True, timeout=20
+        )
+        html = result.stdout.decode('utf-8', errors='ignore')
+        if 'Access Denied' in html or len(html) < 200:
+            return None
+        return html
+    except Exception as e:
+        logger.debug(f"CNCBI promo fetch failed: {e}")
+        return None
+
 
 def parse(text, tables=None):
-    """Parse CNCBI inMotion new fund time deposit promo rates.
+    """Parse CNCBI time deposit rates.
     
-    URL: https://www.cncbinternational.com/personal/e-banking/inmotion/tc/offers/time_deposit/index.html
-    Page shows: 高達 2.68% (HKD), 高達 3.62% (USD), 高達 1.35% (RMB)
+    First try promo rates from inMotion page (via curl).
+    Then fall back to board rates from rate table page (via browser scrape).
     """
     if not text:
         return None
     
     rates = {}
-    note = 'inMotion新資金定期存款特惠年利率'
     
-    # Find all "高達 X.XX%" patterns
-    pcts = re.findall(r'高達\s*(\d+\.\d+)%', text)
+    # Try promo rates first
+    promo_html = _fetch_promo_rates()
+    if promo_html:
+        # Extract text from HTML
+        promo_text = re.sub(r'<[^>]+>', ' ', promo_html)
+        promo_text = re.sub(r'\s+', ' ', promo_text)
+        
+        # Find 高達 X.XX% patterns
+        pcts = re.findall(r'高達\s*(\d+\.\d+)%', promo_text)
+        if len(pcts) >= 1:
+            rates['hkd'] = {'3m': float(pcts[0])}
+            if len(pcts) >= 2:
+                rates['usd'] = {'3m': float(pcts[1])}
+            rates['note'] = 'inMotion新資金定期存款特惠年利率'
+            return rates
     
-    if len(pcts) >= 1:
-        # First is typically HKD, second USD, third RMB
-        rates['hkd'] = {'3m': float(pcts[0])}
-        if len(pcts) >= 2:
-            rates['usd'] = {'3m': float(pcts[1])}
+    # Fallback: board rates from rate table page
+    board_idx = text.find('定期存款利率')
+    if board_idx >= 0:
+        section = text[board_idx:board_idx+2000]
+        hkd_rates = {}
+        for period, label in [('1m', '一個月'), ('3m', '三個月'), ('6m', '六個月'), ('12m', '十二個月')]:
+            m = re.search(rf'{label}\s+(\d+\.\d+)%', section)
+            if m:
+                hkd_rates[period] = float(m.group(1))
+        if hkd_rates:
+            rates['hkd'] = hkd_rates
+            rates['note'] = '定期存款利率'
+            return rates
     
-    if not rates:
-        # Fallback: look for any rate percentages on the page
-        all_pcts = re.findall(r'(\d+\.\d+)%', text)
-        if all_pcts:
-            # Filter for reasonable deposit rates (>0.5%)
-            valid = [float(x) for x in all_pcts if float(x) > 0.5]
-            if valid:
-                rates['hkd'] = {'3m': max(valid)}
-    
-    # Last fallback: board rates from rate table page
-    if not rates:
-        board_idx = text.find('定期存款利率')
-        if board_idx >= 0:
-            section = text[board_idx:board_idx+2000]
-            hkd_rates = {}
-            for period, label in [('1m', '一個月'), ('3m', '三個月'), ('6m', '六個月'), ('12m', '十二個月')]:
-                m = re.search(rf'{label}\s+(\d+\.\d+)%', section)
-                if m:
-                    hkd_rates[period] = float(m.group(1))
-            if hkd_rates:
-                rates['hkd'] = hkd_rates
-                note = '定期存款利率'
-    
-    if rates:
-        rates['note'] = note
-        return rates
     return None

@@ -5,37 +5,48 @@ def parse(text, tables=None):
     """Parse Hang Seng new fund time deposit rates.
     
     URL: https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html
-    Page has new fund promo rates for HKD/USD/RMB.
+    Page format:
+    港元定期存款特優年利率 (%)
+    存款期  網上理財  分行/電話理財
+    3個月  2.20  2.20
+    6個月  2.00  2.00
     """
     if not text:
         return None
     
     rates = {}
-    note = '新資金定期存款優惠'
+    note = '新資金定期存款優惠（網上理財）'
     
-    # Look for percentage rates - page shows rates like 2.2%, 3.x% etc
-    # Find all rates in the page
-    pcts = re.findall(r'高達\s*(\d+\.\d+)%', text)
-    if pcts:
-        # Typically: HKD rate, USD rate, RMB rate
-        hkd_rate = max(float(x) for x in pcts) if pcts else None
-        if hkd_rate:
-            rates['hkd'] = {'3m': hkd_rate}
+    # Find HKD section
+    hkd_idx = text.find('港元定期存款特優年利率')
+    if hkd_idx >= 0:
+        hkd_section = text[hkd_idx:hkd_idx+500]
+        hkd_rates = {}
+        for period, label in [('3m', '3個月'), ('6m', '6個月')]:
+            # Pattern: 3個月  2.20  2.20 (no % sign)
+            m = re.search(rf'{label}\s+(\d+\.\d+)\s+(\d+\.\d+)', hkd_section)
+            if m:
+                hkd_rates[period] = float(m.group(1))  # 網上理財 rate
+        if hkd_rates:
+            rates['hkd'] = hkd_rates
     
-    # Alternative: look for specific patterns
-    # Pattern: 年利率 X.XX%
-    if 'hkd' not in rates:
-        rate_matches = re.findall(r'(\d+\.\d+)%\s*(?:年利率|p\.a\.)', text)
-        if not rate_matches:
-            rate_matches = re.findall(r'年利率.*?(\d+\.\d+)%', text)
-        if rate_matches:
-            rates['hkd'] = {'3m': max(float(x) for x in rate_matches)}
+    # Find USD section
+    usd_idx = text.find('美元定期存款特優年利率')
+    if usd_idx >= 0:
+        usd_section = text[usd_idx:usd_idx+500]
+        usd_rates = {}
+        for period, label in [('3m', '3個月'), ('6m', '6個月')]:
+            m = re.search(rf'{label}\s+(\d+\.\d+)\s+(\d+\.\d+)', usd_section)
+            if m:
+                usd_rates[period] = float(m.group(1))
+        if usd_rates:
+            rates['usd'] = usd_rates
     
     if rates:
         rates['note'] = note
         return rates
     
-    # Fallback: board rates from main page
+    # Fallback: board rates
     board_idx = text.find('牌價')
     if board_idx >= 0:
         section = text[board_idx:board_idx+1500]
