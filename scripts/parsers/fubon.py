@@ -20,10 +20,11 @@ def parse(text, tables=None):
     if nf_idx >= 0:
         nf_section = text[nf_idx:]
         
-        # Match pattern: 港元 followed by 1-20 chars then percentage
-        # Format: 港元\t\n2.8%
-        hkd_m = re.search(r'港元.{1,20}?(\d+\.\d+)%', nf_section)
-        usd_m = re.search(r'美元.{1,20}?(\d+\.\d+)%', nf_section)
+        # Find the rate table after "分行/Fubon+手機應用程式"
+        # Structure: 港元 <whitespace> 2.8% ... 美元 <whitespace> 3.9%
+        # Skip the header line: 港元 500,000 (has numbers before %)
+        hkd_m = re.search(r'港元\s+(\d+\.\d+)%', nf_section)
+        usd_m = re.search(r'美元\s+(\d+\.\d+)%', nf_section)
         
         if hkd_m:
             rates['hkd'] = {'3m': float(hkd_m.group(1))}

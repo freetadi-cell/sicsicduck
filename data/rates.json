@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T15:29:57.982254+08:00",
+  "last_updated": "2026-05-26T21:35:25.215356+08:00",
   "source": "各銀行官網 / MoneyHero",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1130,7 +1130,7 @@
           "source": "bank"
         },
         "12m": {
-          "rate": 2.8,
+          "rate": 2.85,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank"
