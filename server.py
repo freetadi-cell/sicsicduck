@@ -3,12 +3,13 @@
 Lightweight API server for hk_deposit_rates.
 - Tracks online visitors (unique IPs in last 30 min)
 - Serves the static site
+- CORS-enabled API for GitHub Pages
 """
 
 import os
 import time
 import threading
-from flask import Flask, jsonify, send_from_directory, request
+from flask import Flask, jsonify, send_from_directory, request, make_response
 
 app = Flask(__name__)
 
@@ -18,6 +19,22 @@ VISITOR_TIMEOUT = 1800  # 30 minutes
 lock = threading.Lock()
 
 STATIC_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Allowed origins for CORS
+ALLOWED_ORIGINS = [
+    'https://freetadi-cell.github.io',
+    'http://localhost:8080',
+]
+
+
+@app.after_request
+def add_cors(response):
+    origin = request.headers.get('Origin', '')
+    if origin in ALLOWED_ORIGINS or origin.endswith('.github.io'):
+        response.headers['Access-Control-Allow-Origin'] = origin
+        response.headers['Access-Control-Allow-Methods'] = 'GET'
+        response.headers['Access-Control-Max-Age'] = '86400'
+    return response
 
 
 @app.route('/api/online')
