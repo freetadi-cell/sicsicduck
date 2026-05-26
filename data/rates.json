@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T22:52:29.203618+08:00",
+  "last_updated": "2026-05-26T23:04:11.774905+08:00",
   "source": "各銀行官網 / MoneyHero",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -132,15 +132,15 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 0.125,
+          "rate": 2.2,
           "min_deposit": 10000,
-          "note": "定期存款牌價利率",
+          "note": "新資金定期存款優惠（網上理財）",
           "source": "bank"
         },
         "6m": {
-          "rate": 0.125,
+          "rate": 2.0,
           "min_deposit": 10000,
-          "note": "定期存款牌價利率",
+          "note": "新資金定期存款優惠（網上理財）",
           "source": "bank"
         },
         "12m": {
@@ -160,13 +160,13 @@
         "3m": {
           "rate": 3.3,
           "min_deposit": 2000,
-          "note": "優越理財新資金 *",
+          "note": "新資金定期存款優惠（網上理財）",
           "source": "bank"
         },
         "6m": {
           "rate": 3.2,
           "min_deposit": 2000,
-          "note": "優越理財新資金 *",
+          "note": "新資金定期存款優惠（網上理財）",
           "source": "bank"
         },
         "12m": {
@@ -422,9 +422,9 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 0.01,
+          "rate": 2.68,
           "min_deposit": 10000,
-          "note": "定期存款利率",
+          "note": "inMotion新資金定期存款特惠年利率",
           "source": "bank"
         },
         "6m": {
@@ -448,10 +448,10 @@
           "source": "moneyhero"
         },
         "3m": {
-          "rate": null,
+          "rate": 3.62,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "inMotion新資金定期存款特惠年利率",
+          "source": "bank"
         },
         "6m": {
           "rate": null,
