@@ -58,7 +58,7 @@ BANK_CONFIG = {
     },
     'dbs': {
         'name': '星展銀行',
-        'url': 'https://www.dbs.com.hk/personal/promotion/OnlineTD-promo',
+        'url': 'https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo',
     },
     'fubon': {
         'name': '富邦銀行',
