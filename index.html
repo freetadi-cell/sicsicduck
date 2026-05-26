@@ -657,6 +657,7 @@
             </div>
         </div>
         <img class="header-logo" src="logo.jpg" alt="息得">
+        <span id="onlineCount" class="online-badge" style="font-size:11px;color:#aaa;margin-left:6px;white-space:nowrap;">···</span>
         
         <div class="header-meta" style="display:none;">
             <div class="update-badge">
@@ -762,6 +763,17 @@
 </div><!-- end layout -->
 
 <script>
+// ===== Online Count =====
+function updateOnline() {
+    fetch('/api/online').then(r=>r.json()).then(d=>{
+        document.getElementById('onlineCount').textContent = d.count + ' 人在線';
+    }).catch(()=>{
+        document.getElementById('onlineCount').textContent = '';
+    });
+}
+updateOnline();
+setInterval(updateOnline, 60000);
+
 // ===== Dropdown Nav =====
 function toggleNav() {
     document.getElementById('navDropdown').classList.toggle('open');
