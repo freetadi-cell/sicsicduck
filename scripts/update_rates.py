@@ -115,8 +115,8 @@ BANK_CONFIG = {
         'skip_scrape': True,  # 利率只在App內顯示，默認用MoneyHero
     },
     'pao': {
-        'name': 'PAO Bank',
-        'url': 'https://www.paobank.com/',
+        'name': '平安數字銀行',
+        'url': 'https://www.pingandb.com/tc/retail-savings.html',
     },
     'welab': {
         'name': '匯立銀行',
