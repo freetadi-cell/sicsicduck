@@ -106,8 +106,8 @@ BANK_CONFIG = {
         'url': 'https://www.fusionbank.com/',
     },
     'airstar': {
-        'name': '天星銀行',
-        'url': 'https://www.airstarbank.com/',
+        'name': '象象銀行',
+        'url': 'https://www.elebank.com.hk/',
     },
     'za': {
         'name': '眾安銀行',
