@@ -32,3 +32,48 @@
 2026-05-25 11:00:50,378 [INFO] Updated 19 banks in rates.json
 2026-05-25 11:00:50,378 [INFO] Timestamp: 2026-05-25T11:00:50+08:00
 2026-05-25 11:00:50,378 [INFO] ✅ Update completed successfully
+2026-05-26 08:30:05,015 [INFO] ==================================================
+2026-05-26 08:30:05,015 [INFO] HK Deposit Rates Update
+2026-05-26 08:30:05,015 [INFO] Time: 2026-05-26 08:30:05
+2026-05-26 08:30:05,015 [INFO] ==================================================
+2026-05-26 08:30:05,015 [INFO] Processing 22 banks
+2026-05-26 08:30:05,015 [INFO]   Scraping 滙豐銀行...
+2026-05-26 08:30:13,657 [INFO]   ✓ Got data from 滙豐銀行 website
+2026-05-26 08:30:13,657 [INFO]   Scraping 中銀香港...
+2026-05-26 08:30:18,870 [INFO]   ✓ Got data from 中銀香港 website
+2026-05-26 08:30:18,870 [INFO]   Scraping 恒生銀行...
+2026-05-26 08:30:26,730 [INFO]   ✓ Got data from 恒生銀行 website
+2026-05-26 08:30:26,730 [INFO]   Scraping 渣打銀行...
+2026-05-26 08:30:34,058 [INFO]   ✓ Got data from 渣打銀行 website
+2026-05-26 08:30:34,058 [INFO]   ⚠️ 富邦銀行: Using MoneyHero data
+2026-05-26 08:30:34,058 [INFO]   ⚠️ 工銀亞洲: Using MoneyHero data
+2026-05-26 08:30:34,058 [INFO]   ⚠️ 東亞銀行: Using MoneyHero data
+2026-05-26 08:30:34,058 [INFO]   ⚠️ 中信銀行（國際）: Using MoneyHero data
+2026-05-26 08:30:34,058 [INFO]   Scraping 星展銀行...
+2026-05-26 08:30:41,009 [INFO]   ✓ Got data from 星展銀行 website
+2026-05-26 08:30:41,009 [INFO]   ⚠️ 南洋商業銀行: Using MoneyHero data
+2026-05-26 08:30:41,009 [INFO]   ⚠️ 交通銀行: Using MoneyHero data
+2026-05-26 08:30:41,009 [INFO]   ⚠️ 上海商業銀行: Using MoneyHero data
+2026-05-26 08:30:41,009 [INFO]   ⚠️ 大眾銀行: Using MoneyHero data
+2026-05-26 08:30:41,009 [INFO]   ⚠️ 招商永隆: Using MoneyHero data
+2026-05-26 08:30:41,009 [INFO]   ⚠️ 創興銀行: Using MoneyHero data
+2026-05-26 08:30:41,009 [INFO]   Scraping 富融銀行...
+2026-05-26 08:30:44,501 [INFO]   ✓ Got data from 富融銀行 website
+2026-05-26 08:30:44,501 [INFO]   Scraping 天星銀行...
+2026-05-26 08:30:52,164 [INFO]   ✓ Got data from 天星銀行 website
+2026-05-26 08:30:52,164 [INFO]   Scraping 眾安銀行...
+2026-05-26 08:30:58,476 [INFO]   ✓ Got data from 眾安銀行 website
+2026-05-26 08:30:58,476 [INFO]   Scraping PAO Bank...
+2026-05-26 08:31:08,487 [WARNING] agent-browser error: Command 'agent-browser open "https://www.paobank.com/" --timeout 30000' timed out after 10 seconds
+2026-05-26 08:31:08,487 [WARNING]     Failed to open PAO Bank
+2026-05-26 08:31:08,487 [WARNING]   ✗ Failed to scrape PAO Bank, marking as MoneyHero
+2026-05-26 08:31:08,487 [INFO]   Scraping 匯立銀行...
+2026-05-26 08:31:18,167 [INFO]   ✓ Got data from 匯立銀行 website
+2026-05-26 08:31:18,167 [INFO]   Scraping 理慧銀行...
+2026-05-26 08:31:24,924 [INFO]   ✓ Got data from 理慧銀行 website
+2026-05-26 08:31:24,924 [INFO]   Scraping 螞蟻銀行...
+2026-05-26 08:31:33,868 [INFO]   ✓ Got data from 螞蟻銀行 website
+2026-05-26 08:31:33,870 [INFO] ==================================================
+2026-05-26 08:31:33,870 [INFO] Update complete: 11 banks from websites
+2026-05-26 08:31:33,870 [INFO] Last updated: 2026-05-26T08:31:33.868685+08:00
+2026-05-26 08:31:33,870 [INFO] ==================================================
