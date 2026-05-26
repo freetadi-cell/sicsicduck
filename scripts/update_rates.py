@@ -50,7 +50,7 @@ BANK_CONFIG = {
     },
     'hangseng': {
         'name': '恒生銀行',
-        'url': 'https://www.hangseng.com/zh-hk/personal/banking/rates/deposit-interest-rates/',
+        'url': 'https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html',
     },
     'sc': {
         'name': '渣打銀行',
@@ -74,7 +74,7 @@ BANK_CONFIG = {
     },
     'cncbi': {
         'name': '中信銀行（國際）',
-        'url': 'https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html',
+        'url': 'https://www.cncbinternational.com/personal/e-banking/inmotion/tc/offers/time_deposit/index.html',
     },
     'ncb': {
         'name': '南洋商業銀行',
@@ -112,6 +112,7 @@ BANK_CONFIG = {
     'za': {
         'name': '眾安銀行',
         'url': 'https://bank.za.group/',
+        'skip_scrape': True,  # 利率只在App內顯示，默認用MoneyHero
     },
     'pao': {
         'name': 'PAO Bank',
@@ -244,6 +245,12 @@ def update_rates():
         
         cfg = BANK_CONFIG[parser_key]
         url = cfg['url']
+        
+        # Skip scrape if configured (e.g. rates only in app)
+        if cfg.get('skip_scrape'):
+            logger.info(f"  [{parser_key}] Skipping {bank_name} (rates only in app), using MoneyHero")
+            mark_moneyhero(bank)
+            continue
         
         # Load parser
         parse_fn = load_parser(parser_key)
