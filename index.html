@@ -711,8 +711,10 @@
             <button class="currency-btn" data-currency="usd">🇺🇸 美元 USD</button>
         </div>
         <div class="period-pills">
+            <button class="period-pill" data-period="1w">1週</button>
             <button class="period-pill" data-period="1m">1個月</button>
-            <button class="period-pill active" data-period="3m">3個月</button>
+            <button class="period-pill" data-period="2m">2個月</button>
+            <button class="period-pill" data-period="3m">3個月</button>
             <button class="period-pill" data-period="6m">6個月</button>
             <button class="period-pill" data-period="12m">12個月</button>
             <button class="period-pill active" data-period="all">全部</button>
@@ -734,7 +736,9 @@
                 <tr>
                     <th data-sort="rank">#</th>
                     <th data-sort="name">銀行</th>
+                    <th data-sort="1w">1週 <span class="sort-icon">↕</span></th>
                     <th data-sort="1m">1個月 <span class="sort-icon">↕</span></th>
+                    <th data-sort="2m">2個月 <span class="sort-icon">↕</span></th>
                     <th data-sort="3m">3個月 <span class="sort-icon">↕</span></th>
                     <th data-sort="6m">6個月 <span class="sort-icon">↕</span></th>
                     <th data-sort="12m">12個月 <span class="sort-icon">↕</span></th>
@@ -742,7 +746,7 @@
                 </tr>
             </thead>
             <tbody id="tableBody">
-                <tr><td colspan="7"><div class="loading"><div class="loading-spinner"></div>載入利率數據中...</div></td></tr>
+                <tr><td colspan="9"><div class="loading"><div class="loading-spinner"></div>載入利率數據中...</div></td></tr>
             </tbody>
         </table>
     </div>
@@ -807,7 +811,7 @@ async function loadData() {
         renderAll();
     } catch (e) {
         document.getElementById('tableBody').innerHTML =
-            '<tr><td colspan="7" style="text-align:center;padding:40px;color:#9E9E9E;">⚠️ 載入失敗，請稍後再試</td></tr>';
+            '<tr><td colspan="9" style="text-align:center;padding:40px;color:#9E9E9E;">⚠️ 載入失敗，請稍後再試</td></tr>';
     }
 }
 
@@ -902,7 +906,7 @@ function renderTable() {
     const bestRates = {};
     const avgRates = {};
     const rankByPeriod = {};
-    ['1m', '3m', '6m', '12m'].forEach(period => {
+    ['1w', '1m', '2m', '3m', '6m', '12m'].forEach(period => {
         let best = -1;
         const validRates = [];
         banks.forEach(b => {
@@ -924,12 +928,12 @@ function renderTable() {
 
     // Build rows
     const tbody = document.getElementById('tableBody');
-    const periods = currentPeriod === 'all' ? ['1m', '3m', '6m', '12m'] : [currentPeriod];
+    const periods = currentPeriod === 'all' ? ['1w', '1m', '2m', '3m', '6m', '12m'] : [currentPeriod];
 
     let html = '';
 
     if (banks.length === 0) {
-        html = '<tr class="no-data-row"><td colspan="7">沒有符合條件的銀行</td></tr>';
+        html = '<tr class="no-data-row"><td colspan="9">沒有符合條件的銀行</td></tr>';
     } else {
         banks.forEach((bank, idx) => {
             const data = bank[currentCurrency];
@@ -951,7 +955,7 @@ function renderTable() {
             </td>`;
 
             // Rate columns
-            ['1m', '3m', '6m', '12m'].forEach(period => {
+            ['1w', '1m', '2m', '3m', '6m', '12m'].forEach(period => {
                 if (!periods.includes(period) && currentPeriod !== 'all') {
                     html += '<td class="rate-cell na" style="display:none">-</td>';
                     return;
@@ -997,7 +1001,7 @@ function renderTable() {
 
     // Update header visibility
     const ths = document.querySelectorAll('.rate-table thead th');
-    const periodThMap = { 2: '1m', 3: '3m', 4: '6m', 5: '12m' };
+    const periodThMap = { 2: '1w', 3: '1m', 4: '2m', 5: '3m', 6: '6m', 7: '12m' };
     ths.forEach((th, idx) => {
         if (periodThMap[idx] && currentPeriod !== 'all' && periodThMap[idx] !== currentPeriod) {
             th.style.display = 'none';

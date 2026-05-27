@@ -9,11 +9,23 @@
       "type": "traditional",
       "logo_color": "#DB0011",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.435,
@@ -35,11 +47,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.435,
@@ -67,11 +91,23 @@
       "type": "traditional",
       "logo_color": "#C4161C",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.1,
@@ -93,11 +129,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.0,
@@ -125,11 +173,23 @@
       "type": "traditional",
       "logo_color": "#006699",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 0.1,
           "min_deposit": null,
           "note": "定期存款牌價利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.2,
@@ -151,11 +211,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.3,
@@ -183,11 +255,23 @@
       "type": "traditional",
       "logo_color": "#006341",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.2,
           "min_deposit": 10000,
           "note": "新資金，網上辦理 *",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.3,
@@ -209,11 +293,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 3.0,
           "min_deposit": 2000,
           "note": "網上辦理 *",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.2,
@@ -241,11 +337,23 @@
       "type": "traditional",
       "logo_color": "#005594",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.25,
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.8,
@@ -267,11 +375,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 3.55,
           "min_deposit": 65000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.9,
@@ -299,11 +419,23 @@
       "type": "traditional",
       "logo_color": "#C5001A",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.5,
           "min_deposit": 3000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.55,
@@ -325,11 +457,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 3.1,
           "min_deposit": 1000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.5,
@@ -357,11 +501,23 @@
       "type": "traditional",
       "logo_color": "#003B5C",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.6,
@@ -383,11 +539,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.5,
@@ -415,11 +583,23 @@
       "type": "traditional",
       "logo_color": "#E60012",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 0.01,
           "min_deposit": 10000,
           "note": "定期存款利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.68,
@@ -441,11 +621,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.62,
@@ -473,11 +665,23 @@
       "type": "traditional",
       "logo_color": "#E31837",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.5,
           "min_deposit": 50000,
           "note": "新資金 *",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.5,
@@ -499,11 +703,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.5,
           "min_deposit": 6000,
           "note": "網上辦理 *",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.9,
@@ -531,11 +747,23 @@
       "type": "traditional",
       "logo_color": "#003DA5",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.8,
           "min_deposit": 1000000,
           "note": "新資金 *",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.3,
@@ -557,11 +785,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": null,
@@ -589,11 +829,23 @@
       "type": "traditional",
       "logo_color": "#1B3A5C",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.68,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.53,
@@ -615,11 +867,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.98,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.38,
@@ -647,11 +911,23 @@
       "type": "traditional",
       "logo_color": "#003B6F",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.1,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.5,
@@ -673,11 +949,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 3.3,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.6,
@@ -705,11 +993,23 @@
       "type": "traditional",
       "logo_color": "#C41230",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.15,
           "min_deposit": 10000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.0,
@@ -731,11 +1031,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.5,
           "min_deposit": 1000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.15,
@@ -763,11 +1075,23 @@
       "type": "traditional",
       "logo_color": "#8B4513",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.2,
           "min_deposit": 50000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.65,
@@ -789,11 +1113,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 3.4,
           "min_deposit": 10000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.7,
@@ -821,11 +1157,23 @@
       "type": "virtual",
       "logo_color": "#6C5CE7",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.6,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.7,
@@ -847,11 +1195,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 3.0,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.6,
@@ -879,11 +1239,23 @@
       "type": "virtual",
       "logo_color": "#FF6B35",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.5,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.4,
@@ -905,11 +1277,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.8,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.4,
@@ -937,11 +1321,23 @@
       "type": "virtual",
       "logo_color": "#00B4D8",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 0.01,
           "min_deposit": 1,
           "note": "UHK 港生活",
           "source": "uhk"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.2,
@@ -963,11 +1359,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 0.1,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 0.15,
@@ -995,11 +1403,23 @@
       "type": "virtual",
       "logo_color": "#2ECC71",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 2.3,
           "min_deposit": null,
           "note": "UHK 港生活",
           "source": "uhk"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.6,
@@ -1021,11 +1441,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
           "source": "moneyhero"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": null,
@@ -1053,11 +1485,23 @@
       "type": "virtual",
       "logo_color": "#FF6347",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 0.5,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.6,
@@ -1079,11 +1523,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 0.5,
           "min_deposit": null,
           "note": "GoSave 2.0 定期存款",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.6,
@@ -1111,11 +1567,23 @@
       "type": "virtual",
       "logo_color": "#E91E63",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 1.2,
           "min_deposit": 500,
           "note": "存款門檻：HK$500",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 2.3,
@@ -1137,11 +1605,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "",
           "source": ""
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": null,
@@ -1169,11 +1649,23 @@
       "type": "virtual",
       "logo_color": "#1E88E5",
       "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": 0.5,
           "min_deposit": 1,
           "note": "存款門檻：HK$1",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 1.8,
@@ -1195,11 +1687,23 @@
         }
       },
       "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "",
           "source": ""
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": null,
@@ -1236,6 +1740,12 @@
           "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank"
         },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
         "3m": {
           "rate": 2.5,
           "min_deposit": "HKD 1,000,000",
@@ -1267,6 +1777,12 @@
           "min_deposit": "USD 125,000",
           "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank"
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
         },
         "3m": {
           "rate": 3.5,
