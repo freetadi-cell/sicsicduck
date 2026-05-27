@@ -395,13 +395,14 @@
             background: var(--white);
             border-radius: 20px;
             box-shadow: var(--shadow-lg);
-            overflow: hidden;
+            overflow-x: auto;
             border: 1px solid var(--gold-200);
         }
 
         .rate-table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 900px;
         }
 
         .rate-table thead th {
@@ -638,7 +639,7 @@
             .type-toggle { margin-left: 0; }
 
             .table-wrap { padding: 0 16px; }
-            .table-container { border-radius: 14px; }
+            .table-container { border-radius: 14px; overflow-x: auto; }
 
             .rate-table thead th { padding: 10px 10px; font-size: 12px; }
             .rate-table tbody td { padding: 10px; font-size: 13px; }
