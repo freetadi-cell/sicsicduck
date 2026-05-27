@@ -355,6 +355,35 @@
             border-color: var(--gray-800);
         }
 
+        .funds-toggle {
+            display: flex;
+            gap: 6px;
+        }
+        .funds-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--gray-300);
+            border-radius: 20px;
+            background: white;
+            color: var(--gray-600);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .funds-btn.active {
+            background: var(--gray-800);
+            color: var(--white);
+            border-color: var(--gray-800);
+        }
+        .funds-btn:not(.active):hover {
+            background: var(--gold-50);
+            color: var(--gold-700);
+        }
+        .nf-mark {
+            font-size: 10px;
+            opacity: 0.7;
+        }
+
         /* ===== Table ===== */
         .table-wrap {
             max-width: 1200px;
@@ -724,6 +753,11 @@
             <button class="type-btn" data-type="traditional">傳統銀行</button>
             <button class="type-btn" data-type="virtual">虛擬銀行</button>
         </div>
+        <div class="funds-toggle">
+            <button class="funds-btn active" data-funds="all">全部</button>
+            <button class="funds-btn" data-funds="new">💰 新資金</button>
+            <button class="funds-btn" data-funds="any">不限資金</button>
+        </div>
     </div>
 </div>
 
@@ -799,6 +833,7 @@ document.addEventListener('click', function(e) {
 let ratesData = null;
 let currentCurrency = 'hkd';
 let currentPeriod = 'all';
+let currentFunds = 'all'; // 'all', 'new', 'any'
 let currentType = 'all';
 let sortColumn = '3m';
 let sortDirection = 'desc';
@@ -893,6 +928,21 @@ function renderTable() {
         banks = banks.filter(b => b.type === currentType);
     }
 
+    // Filter by funds type
+    if (currentFunds !== 'all') {
+        banks = banks.filter(b => {
+            // Check if the bank has at least one rate matching the funds filter
+            const periods = ['1w', '1m', '2m', '3m', '6m', '12m'];
+            return periods.some(p => {
+                const rd = b[currentCurrency]?.[p];
+                if (!rd || rd.rate === null || rd.rate === undefined) return false;
+                if (currentFunds === 'new') return rd.new_funds === true;
+                if (currentFunds === 'any') return rd.new_funds === false;
+                return false;
+            });
+        });
+    }
+
     // Sort
     const primarySort = currentPeriod === 'all' ? sortColumn : currentPeriod;
 
@@ -974,9 +1024,10 @@ function renderTable() {
 
                     const source = rateData?.source;
                     const srcMark = source === 'moneyhero' ? ' <span class="src-mark">*</span>' : '';
+                    const nfMark = rateData?.new_funds === true ? ' <span class="nf-mark" title="新資金">💰</span>' : '';
                     html += `<td class="rate-cell ${cls}">
                         <div class="rate-value">
-                            ${rate.toFixed(2)}<span class="pct">%</span>${srcMark}
+                            ${rate.toFixed(2)}<span class="pct">%</span>${srcMark}${nfMark}
                         </div>
                     </td>`;
                 }
@@ -1040,6 +1091,15 @@ document.querySelectorAll('.type-btn').forEach(btn => {
         document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentType = btn.dataset.type;
+        renderTable();
+    });
+});
+
+document.querySelectorAll('.funds-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.funds-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFunds = btn.dataset.funds;
         renderTable();
     });
 });

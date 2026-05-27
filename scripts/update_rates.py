@@ -269,7 +269,7 @@ def load_parser(parser_key):
 def mark_moneyhero(bank):
     """Mark all rates as MoneyHero source."""
     for currency in ['hkd', 'usd']:
-        for period in ['1m', '3m', '6m', '12m']:
+        for period in ['1w', '1m', '2m', '3m', '6m', '12m']:
             if bank[currency][period]['rate'] is not None:
                 if bank[currency][period].get('source') != 'bank':
                     bank[currency][period]['source'] = 'moneyhero'
@@ -486,14 +486,27 @@ def update_rates():
                 note = result.get('note', f'從{bank_name}官網提取')
                 for currency in ['hkd', 'usd']:
                     if currency in result:
-                        for period in ['1m', '3m', '6m', '12m']:
+                        for period in ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']:
                             if period in result[currency]:
+                                val = result[currency][period]
+                                # Support both float and dict (with new_funds)
+                                if isinstance(val, dict):
+                                    rate = val.get('rate')
+                                    new_funds = val.get('new_funds')
+                                else:
+                                    rate = val
+                                    # Preserve existing new_funds from rates.json
+                                    new_funds = bank[currency].get(period, {}).get('new_funds')
                                 bank[currency][period] = {
-                                    'rate': result[currency][period],
-                                    'min_deposit': bank[currency][period].get('min_deposit'),
+                                    'rate': rate,
+                                    'min_deposit': bank[currency].get(period, {}).get('min_deposit'),
                                     'note': note,
                                     'source': 'bank',
                                 }
+                                if new_funds is not None:
+                                    bank[currency][period]['new_funds'] = new_funds
+                                elif 'new_funds' not in bank[currency][period]:
+                                    bank[currency][period]['new_funds'] = None
                 logger.info(f"  ✓ Parsed {bank_name}: {result}")
                 parsed_count += 1
             else:
@@ -511,7 +524,7 @@ def update_rates():
             if text:
                 logger.info(f"  ✓ Got data from {bank_name} (no parser, source marked)")
                 for currency in ['hkd', 'usd']:
-                    for period in ['1m', '3m', '6m', '12m']:
+                    for period in ['1w', '1m', '2m', '3m', '6m', '12m']:
                         if bank[currency][period]['rate'] is not None:
                             bank[currency][period]['source'] = 'bank'
                 scraped_count += 1
@@ -526,6 +539,42 @@ def update_rates():
     # Update metadata
     data['last_updated'] = datetime.now(HKT).isoformat()
     data['source'] = '各銀行官網 / UHK港生活'
+
+    # Apply bank-level new_funds defaults
+    # For banks where parser doesn't return new_funds, use the default map
+    NF_DEFAULTS = {
+        '滙豐銀行': True,
+        '中銀香港': True,
+        '恒生銀行': True,
+        '渣打銀行': True,
+        '工銀亞洲': False,
+        '東亞銀行': False,
+        '中信銀行（國際）': True,
+        '星展銀行': True,
+        '交通銀行': True,
+        '上海商業銀行': False,
+        '大眾銀行': False,
+        '招商永隆': False,
+        '創興銀行': False,
+        '富融銀行': False,
+        '象象銀行': False,
+        '眾安銀行': False,
+        '平安數字銀行': False,
+        '匯立銀行': False,
+        '理慧銀行': False,
+        '螞蟻銀行': False,
+        '集友銀行': True,
+    }
+    for bank in data['banks']:
+        nf_default = NF_DEFAULTS.get(bank['name'])
+        if nf_default is not None:
+            for currency in ['hkd', 'usd']:
+                if currency in bank:
+                    for period in bank[currency]:
+                        entry = bank[currency][period]
+                        if isinstance(entry, dict) and entry.get('rate') is not None:
+                            if entry.get('new_funds') is None:
+                                entry['new_funds'] = nf_default
     
     with open(RATES_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
