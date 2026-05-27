@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-27T08:34:31.873542+08:00",
-  "source": "各銀行官網 / MoneyHero",
+  "last_updated": "2026-05-27T13:53:49.428712+08:00",
+  "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
     {
@@ -708,25 +708,25 @@
         "1m": {
           "rate": 1.15,
           "min_deposit": 10000,
-          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 1.65,
+          "rate": 2.0,
           "min_deposit": 10000,
-          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 1.95,
+          "rate": 2.0,
           "min_deposit": 10000,
-          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 10000,
-          "note": "手機銀行優惠利率 (HKD 500,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         }
       },
@@ -734,25 +734,25 @@
         "1m": {
           "rate": 2.5,
           "min_deposit": 1000,
-          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         },
         "3m": {
           "rate": 3.15,
           "min_deposit": 1000,
-          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         },
         "6m": {
           "rate": 3.1,
           "min_deposit": 1000,
-          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         },
         "12m": {
           "rate": 2.85,
           "min_deposit": 1000,
-          "note": "手機銀行優惠利率 (USD 50,000+, 24 May 2026 17:00)",
+          "note": "招商永隆銀行手機App定存利率",
           "source": "bank"
         }
       }
@@ -802,7 +802,7 @@
           "source": "bank"
         },
         "6m": {
-          "rate": 3.2,
+          "rate": 3.7,
           "min_deposit": 10000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
@@ -906,27 +906,27 @@
       },
       "usd": {
         "1m": {
-          "rate": 3.3,
+          "rate": 2.8,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         },
         "3m": {
           "rate": 3.4,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 3.4,
+          "rate": 3.65,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 3.3,
+          "rate": 3.7,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         }
       }
@@ -938,28 +938,28 @@
       "logo_color": "#00B4D8",
       "hkd": {
         "1m": {
-          "rate": 0.1,
+          "rate": 0.01,
           "min_deposit": 1,
-          "note": "無最低門檻",
-          "source": "bank"
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "3m": {
-          "rate": 0.51,
+          "rate": 2.2,
           "min_deposit": 1,
-          "note": "無最低門檻",
-          "source": "bank"
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "6m": {
-          "rate": 1.61,
+          "rate": 2.2,
           "min_deposit": 1,
-          "note": "無最低門檻",
-          "source": "bank"
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "12m": {
-          "rate": 2.01,
+          "rate": 2.35,
           "min_deposit": 1,
-          "note": "無最低門檻",
-          "source": "bank"
+          "note": "UHK 港生活",
+          "source": "uhk"
         }
       },
       "usd": {
@@ -996,28 +996,28 @@
       "logo_color": "#2ECC71",
       "hkd": {
         "1m": {
-          "rate": null,
+          "rate": 2.3,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "3m": {
-          "rate": 2.8,
+          "rate": 2.6,
           "min_deposit": 100,
-          "note": "虛擬銀行 *",
-          "source": "moneyhero"
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "6m": {
-          "rate": null,
+          "rate": 2.5,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "12m": {
-          "rate": null,
+          "rate": 2.5,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "UHK 港生活",
+          "source": "uhk"
         }
       },
       "usd": {
