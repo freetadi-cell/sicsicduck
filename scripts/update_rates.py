@@ -386,7 +386,34 @@ def update_rates():
     logger.info(f"Last updated: {data['last_updated']}")
     logger.info("=" * 50)
     
+    # Send Telegram notification
+    _send_telegram_summary(parsed_count, scraped_count, failed_banks)
+    
     return True
+
+
+def _send_telegram_summary(parsed_count, scraped_count, failed_banks):
+    """Send a Telegram message with the update results."""
+    try:
+        now = datetime.now(HKT).strftime('%Y-%m-%d %H:%M')
+        msg = f"🦆 食息鴨利率更新 ({now})\n"
+        msg += f"✅ 成功解析: {parsed_count} | 標記來源: {scraped_count}\n"
+        if failed_banks:
+            msg += f"\n❌ 更新失敗 ({len(failed_banks)}):\n"
+            for name in failed_banks:
+                msg += f"  • {name}\n"
+        else:
+            msg += "\n🎉 全部銀行更新成功！"
+        
+        cmd = [
+            '/home/freet/.npm-global/bin/openclaw', 'message', 'send',
+            '--to', 'telegram:885017126',
+            '--message', msg
+        ]
+        subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        logger.info("Telegram notification sent")
+    except Exception as e:
+        logger.warning(f"Failed to send Telegram notification: {e}")
 
 
 def main():
