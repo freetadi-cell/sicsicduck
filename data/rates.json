@@ -526,64 +526,6 @@
       }
     },
     {
-      "name": "南洋商業銀行",
-      "name_en": "Nanyang Bank",
-      "type": "traditional",
-      "logo_color": "#B22222",
-      "hkd": {
-        "1m": {
-          "rate": 2.0,
-          "min_deposit": 100000,
-          "note": "新資金 *",
-          "source": "bank"
-        },
-        "3m": {
-          "rate": 2.55,
-          "min_deposit": 100000,
-          "note": "新資金 *",
-          "source": "bank"
-        },
-        "6m": {
-          "rate": 2.4,
-          "min_deposit": 100000,
-          "note": "新資金 *",
-          "source": "bank"
-        },
-        "12m": {
-          "rate": 2.4,
-          "min_deposit": 100000,
-          "note": "新資金 *",
-          "source": "bank"
-        }
-      },
-      "usd": {
-        "1m": {
-          "rate": 3.5,
-          "min_deposit": 13000,
-          "note": "新資金 *",
-          "source": "bank"
-        },
-        "3m": {
-          "rate": 3.55,
-          "min_deposit": 13000,
-          "note": "新資金 *",
-          "source": "bank"
-        },
-        "6m": {
-          "rate": 3.5,
-          "min_deposit": 13000,
-          "note": "新資金 *",
-          "source": "bank"
-        },
-        "12m": {
-          "rate": 3.5,
-          "min_deposit": 13000,
-          "note": "新資金 *",
-          "source": "bank"
-        }
-      }
-    },
-    {
       "name": "交通銀行",
       "name_en": "BOCOM",
       "type": "traditional",

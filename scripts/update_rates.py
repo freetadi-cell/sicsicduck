@@ -78,8 +78,8 @@ BANK_CONFIG = {
     },
     'ncb': {
         'name': '南洋商業銀行',
-        'url': 'https://www.ncb.com.hk/nanyang_bank/popup1/deposit.html',
-        'skip_scrape': True,  # 網站封鎖爬蟲
+        'url': 'https://www.ncbinfo.com/tc/content/deposit',
+        'skip_scrape': True,  # 利率以圖片形式提供，無法自動抓取
     },
     'bocomm': {
         'name': '交通銀行',
