@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T13:53:49.428712+08:00",
+  "last_updated": "2026-05-27T19:10:31.492192+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -242,27 +242,27 @@
       "logo_color": "#005594",
       "hkd": {
         "1m": {
-          "rate": 0.5,
+          "rate": 2.25,
           "min_deposit": 500000,
-          "note": "Fubon+手機應用程式定存利率",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         },
         "3m": {
           "rate": 2.8,
           "min_deposit": 500000,
-          "note": "新資金定期存款優惠",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         },
         "6m": {
-          "rate": 1.15,
+          "rate": 2.65,
           "min_deposit": 500000,
-          "note": "Fubon+手機應用程式定存利率",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         },
         "12m": {
-          "rate": 1.15,
+          "rate": 2.7,
           "min_deposit": 500000,
-          "note": "Fubon+手機應用程式定存利率",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         }
       },
@@ -270,25 +270,25 @@
         "1m": {
           "rate": 3.55,
           "min_deposit": 65000,
-          "note": "新客戶 *",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         },
         "3m": {
           "rate": 3.9,
           "min_deposit": 65000,
-          "note": "新資金定期存款優惠",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         },
         "6m": {
           "rate": 3.7,
           "min_deposit": 65000,
-          "note": "新客戶 *",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         },
         "12m": {
           "rate": 3.7,
           "min_deposit": 65000,
-          "note": "新客戶 *",
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank"
         }
       }
@@ -1231,28 +1231,28 @@
           "source": null
         },
         "1m": {
-          "rate": null,
+          "rate": 1.7,
           "min_deposit": "HKD 1,000,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         },
         "3m": {
-          "rate": null,
+          "rate": 2.5,
           "min_deposit": "HKD 1,000,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         },
         "6m": {
-          "rate": null,
+          "rate": 2.45,
           "min_deposit": "HKD 1,000,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         },
         "12m": {
-          "rate": null,
+          "rate": 2.2,
           "min_deposit": "HKD 1,000,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         }
       },
       "usd": {
@@ -1263,28 +1263,28 @@
           "source": null
         },
         "1m": {
-          "rate": null,
+          "rate": 3.3,
           "min_deposit": "USD 125,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         },
         "3m": {
-          "rate": null,
+          "rate": 3.5,
           "min_deposit": "USD 125,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         },
         "6m": {
-          "rate": null,
+          "rate": 3.4,
           "min_deposit": "USD 125,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         },
         "12m": {
-          "rate": null,
+          "rate": 2.9,
           "min_deposit": "USD 125,000",
-          "note": null,
-          "source": null
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank"
         }
       },
       "type": "traditional"
