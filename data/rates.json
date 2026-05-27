@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T23:04:11.774905+08:00",
+  "last_updated": "2026-05-27T08:34:31.873542+08:00",
   "source": "各銀行官網 / MoneyHero",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -364,21 +364,21 @@
           "source": "moneyhero"
         },
         "3m": {
-          "rate": 2.45,
+          "rate": 2.6,
           "min_deposit": 10000,
-          "note": "網上定期存款特惠年利率（新資金）",
+          "note": "顯卓理財特惠定期存款利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.45,
+          "rate": 2.6,
           "min_deposit": 10000,
-          "note": "網上定期存款特惠年利率（新資金）",
+          "note": "顯卓理財特惠定期存款利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 2.4,
+          "rate": 2.55,
           "min_deposit": 10000,
-          "note": "網上定期存款特惠年利率（新資金）",
+          "note": "顯卓理財特惠定期存款利率",
           "source": "bank"
         }
       },
@@ -390,21 +390,21 @@
           "source": "moneyhero"
         },
         "3m": {
-          "rate": 3.35,
+          "rate": 3.5,
           "min_deposit": 1000,
-          "note": "網上定期存款特惠年利率（新資金）",
+          "note": "顯卓理財特惠定期存款利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 3.45,
+          "rate": 3.6,
           "min_deposit": 1000,
-          "note": "網上定期存款特惠年利率（新資金）",
+          "note": "顯卓理財特惠定期存款利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 3.45,
+          "rate": 3.6,
           "min_deposit": 1000,
-          "note": "網上定期存款特惠年利率（新資金）",
+          "note": "顯卓理財特惠定期存款利率",
           "source": "bank"
         }
       }
@@ -482,7 +482,7 @@
         "3m": {
           "rate": 2.5,
           "min_deposit": 50000,
-          "note": "網上定期存款特惠利率",
+          "note": "新資金定期存款優惠（50萬港元/6.5萬美元以上）",
           "source": "bank"
         },
         "6m": {
@@ -508,7 +508,7 @@
         "3m": {
           "rate": 3.9,
           "min_deposit": null,
-          "note": "網上定期存款特惠利率",
+          "note": "新資金定期存款優惠（50萬港元/6.5萬美元以上）",
           "source": "bank"
         },
         "6m": {
@@ -654,7 +654,7 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 2.48,
+          "rate": 2.53,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank"
@@ -938,27 +938,27 @@
       "logo_color": "#FF6B35",
       "hkd": {
         "1m": {
-          "rate": 1.6,
+          "rate": 1.5,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 2.45,
+          "rate": 2.4,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.6,
+          "rate": 2.5,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         },
         "12m": {
           "rate": 2.85,
           "min_deposit": 1,
-          "note": "無最低門檻",
+          "note": "定期存款年利率",
           "source": "bank"
         }
       },
