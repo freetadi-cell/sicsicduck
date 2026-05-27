@@ -79,6 +79,7 @@ BANK_CONFIG = {
     'ncb': {
         'name': '南洋商業銀行',
         'url': 'https://www.ncb.com.hk/nanyang_bank/popup1/deposit.html',
+        'skip_scrape': True,  # 網站封鎖爬蟲
     },
     'bocomm': {
         'name': '交通銀行',
@@ -95,6 +96,7 @@ BANK_CONFIG = {
     'winglung': {
         'name': '招商永隆',
         'url': 'https://www.winglungbank.com/ibanking/CnCoFiiDepratDsp.jsp',
+        'skip_scrape': True,  # 網站封鎖爬蟲
     },
     'chbank': {
         'name': '創興銀行',
@@ -193,6 +195,7 @@ def _extract_text_tables():
 def _scrape_click_tab(url, tab_label, wait=3):
     """Re-open a page, click a tab button by label, and return (text, tables).
     Used for banks like Elebank where USD rates require clicking a tab.
+    Uses snapshot to find the button ref for reliable clicking.
     """
     run_browser('agent-browser close', timeout=5)
     time.sleep(2)
@@ -203,22 +206,44 @@ def _scrape_click_tab(url, tab_label, wait=3):
     
     time.sleep(wait)
     
-    # Find and click the tab button by text
-    click_result = run_browser(f'agent-browser find text "{tab_label}" click', timeout=10)
-    if not click_result:
-        # Fallback: try snapshot to find ref
-        snap = run_browser('agent-browser snapshot -i --json', timeout=10)
-        if snap:
-            try:
-                elements = json.loads(snap)
-                for elem in elements:
-                    if tab_label in elem.get('text', '') or tab_label in elem.get('name', ''):
+    # Use snapshot to find the tab button ref
+    clicked = False
+    snap = run_browser('agent-browser snapshot -i --json', timeout=10)
+    if snap:
+        try:
+            snap_data = json.loads(snap)
+            # Handle both formats: {"data":{"refs":{...}}} or [{...}]
+            refs = None
+            if isinstance(snap_data, dict):
+                data = snap_data.get('data', snap_data)
+                refs = data.get('refs', None)
+            
+            if isinstance(refs, dict):
+                # refs is a dict like {"e10": {"name": "美元", "role": "button"}}
+                for ref_id, elem in refs.items():
+                    name = elem.get('name', '')
+                    role = elem.get('role', '')
+                    if name == tab_label and role == 'button':
+                        click_result = run_browser(f'agent-browser click @{ref_id}', timeout=10)
+                        if click_result:
+                            clicked = True
+                            logger.info(f'  Clicked tab @{ref_id} ({tab_label})')
+                        break
+            elif isinstance(refs, list):
+                for elem in refs:
+                    if tab_label in elem.get('name', '') or tab_label in elem.get('text', ''):
                         ref = elem.get('ref')
                         if ref:
-                            run_browser(f'agent-browser click {ref}', timeout=10)
+                            click_result = run_browser(f'agent-browser click {ref}', timeout=10)
+                            if click_result:
+                                clicked = True
                             break
-            except:
-                pass
+        except Exception as e:
+            logger.warning(f'  Tab click snapshot parse error: {e}')
+    
+    if not clicked:
+        # Last resort: try find text
+        run_browser(f'agent-browser find text "{tab_label}" click', timeout=10)
     
     time.sleep(wait)
     
