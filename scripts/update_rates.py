@@ -133,6 +133,11 @@ BANK_CONFIG = {
         'name': '螞蟻銀行',
         'url': 'https://www.antbank.hk/',
     },
+    'chiyu': {
+        'name': '集友銀行',
+        'url': 'https://www.chiyubank.com/cyb/index/zxxx/20230523/index.shtml',
+        'pdf_url': 'https://www.chiyubank.com/cyb/attachDir/2026/05/2026052616594318087.pdf',
+    },
 }
 
 # ============================================================

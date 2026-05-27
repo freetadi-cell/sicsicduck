@@ -1220,6 +1220,74 @@
           "source": ""
         }
       }
+    },
+    {
+      "name": "集友銀行",
+      "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": "HKD 1,000,000",
+          "note": null,
+          "source": null
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": "HKD 1,000,000",
+          "note": null,
+          "source": null
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": "HKD 1,000,000",
+          "note": null,
+          "source": null
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": "HKD 1,000,000",
+          "note": null,
+          "source": null
+        }
+      },
+      "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": "USD 125,000",
+          "note": null,
+          "source": null
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": "USD 125,000",
+          "note": null,
+          "source": null
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": "USD 125,000",
+          "note": null,
+          "source": null
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": "USD 125,000",
+          "note": null,
+          "source": null
+        }
+      },
+      "type": "traditional"
     }
   ]
 }
