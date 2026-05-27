@@ -275,6 +275,106 @@ def mark_moneyhero(bank):
                     elif not note:
                         bank[currency][period]['note'] = '*'
 
+# UHK (ulifestyle) second source
+UHK_URL = 'https://hk.ulifestyle.com.hk/topic/detail/20053976/%E9%A6%99%E6%B8%AF%E9%8A%80%E8%A1%8C%E6%B8%AF%E5%85%83%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%E6%AF%94%E8%BC%83-%E6%9C%80%E6%96%B0%E6%B8%AF%E5%85%83%E5%AE%9A%E6%9C%9F%E9%AB%98%E6%81%AF%E4%B9%8B%E9%81%B8-%E6%AF%8F%E6%97%A5%E6%9B%B4%E6%96%B0/1'
+
+# Bank name aliases for matching UHK text to our bank names
+UHK_NAME_MAP = {
+    '滙豐': '滙豐銀行',
+    '恒生': '恒生銀行',
+    '中銀': '中銀香港',
+    '渣打': '渣打銀行',
+    '星展': '星展銀行',
+    '東亞': '東亞銀行',
+    '富邦': '富邦銀行',
+    '工銀': '工銀亞洲',
+    '創興': '創興銀行',
+    '大眾': '大眾銀行',
+    '中信': '中信銀行（國際）',
+    '花旗': '花旗銀行',
+    '建設銀行': '建設銀行',
+    '南洋': '南洋商業銀行',
+    '招商永隆': '招商永隆',
+    '永隆': '招商永隆',
+    'ZA': '眾安銀行',
+    '天星': '象象銀行',
+    'PAO': '平安數字銀行',
+    '平安': '平安數字銀行',
+    '富融': '富融銀行',
+    'Mox': 'Mox Bank',
+}
+
+def _scrape_uhk():
+    """Scrape UHK (ulifestyle) for HKD deposit rates as second source."""
+    try:
+        r = subprocess.run(
+            ['curl', '-sL', '--max-time', '20', UHK_URL],
+            capture_output=True, timeout=25
+        )
+        html = r.stdout.decode('utf-8', errors='ignore')
+        if len(html) < 500:
+            return {}
+    except Exception as e:
+        logger.warning(f'UHK fetch failed: {e}')
+        return {}
+
+    # Strip HTML tags
+    text = re.sub(r'<[^>]+>', '\n', html)
+    text = re.sub(r'\s+', ' ', text)
+
+    # Skip TOC - actual content starts after this marker
+    content_start = text.find('以下為你整理')
+    if content_start < 0:
+        content_start = 0
+    content = text[content_start:]
+
+    uhk_rates = {}
+
+    for alias, bank_name in UHK_NAME_MAP.items():
+        idx = content.find(alias)
+        if idx < 0:
+            continue
+        section = content[idx:idx + 1500]
+        rates = {}
+        for period, patterns in [
+            ('1m', [r'1個月[^0-9]*(\d+\.\d+)%', r'一個月[^0-9]*(\d+\.\d+)%']),
+            ('3m', [r'3個月[^0-9]*(\d+\.\d+)%', r'三個月[^0-9]*(\d+\.\d+)%']),
+            ('6m', [r'6個月[^0-9]*(\d+\.\d+)%', r'六個月[^0-9]*(\d+\.\d+)%']),
+            ('12m', [r'12個月[^0-9]*(\d+\.\d+)%', r'十二個月[^0-9]*(\d+\.\d+)%']),
+        ]:
+            for pat in patterns:
+                m = re.search(pat, section)
+                if m:
+                    rates[period] = float(m.group(1))
+                    break
+        if rates:
+            if bank_name not in uhk_rates:
+                uhk_rates[bank_name] = {}
+            uhk_rates[bank_name].update(rates)
+
+    logger.info(f'UHK second source: found {len(uhk_rates)} banks')
+    return uhk_rates
+
+def _apply_uhk_fallback(bank, uhk_rates):
+    """Apply UHK rates to a bank that failed bank website scrape.
+    Only updates if the bank has data in UHK."""
+    bank_name = bank['name']
+    if bank_name not in uhk_rates:
+        return False
+    
+    uhk = uhk_rates[bank_name]
+    updated = False
+    for period in ['1m', '3m', '6m', '12m']:
+        if period in uhk:
+            bank['hkd'][period] = {
+                'rate': uhk[period],
+                'min_deposit': bank['hkd'][period].get('min_deposit'),
+                'note': 'UHK 港生活',
+                'source': 'uhk',
+            }
+            updated = True
+    return updated
+
 def update_rates():
     """Main function to update rates.json."""
     logger.info("=" * 50)
@@ -301,6 +401,15 @@ def update_rates():
     scraped_count = 0
     failed_banks = []
     
+    # Scrape UHK as second source (lazy - only if needed)
+    uhk_rates = None
+    
+    def get_uhk_rates():
+        nonlocal uhk_rates
+        if uhk_rates is None:
+            uhk_rates = _scrape_uhk()
+        return uhk_rates
+    
     for bank in banks:
         bank_name = bank['name']
         parser_key = name_to_key.get(bank_name)
@@ -313,10 +422,13 @@ def update_rates():
         cfg = BANK_CONFIG[parser_key]
         url = cfg['url']
         
-        # Skip scrape if configured (e.g. rates only in app)
+        # Skip scrape if configured (e.g. rates only in app, blocked by Cloudflare)
         if cfg.get('skip_scrape'):
-            logger.info(f"  [{parser_key}] Skipping {bank_name} (rates only in app), using MoneyHero")
-            mark_moneyhero(bank)
+            # Try UHK first, then keep existing data
+            if _apply_uhk_fallback(bank, get_uhk_rates()):
+                logger.info(f"  [{parser_key}] {bank_name} using UHK second source")
+            else:
+                logger.info(f"  [{parser_key}] Skipping {bank_name}, keeping existing data")
             continue
         
         # Load parser
@@ -331,16 +443,22 @@ def update_rates():
             
             if text is None and tables is None:
                 logger.warning(f"  ✗ Failed to scrape {bank_name}")
-                failed_banks.append(bank_name)
-                mark_moneyhero(bank)
+                if _apply_uhk_fallback(bank, get_uhk_rates()):
+                    logger.info(f"  → {bank_name} using UHK second source")
+                else:
+                    failed_banks.append(bank_name)
+                    mark_moneyhero(bank)
                 continue
             
             try:
                 result = parse_fn(text, tables)
             except Exception as e:
                 logger.warning(f"  ✗ Parser error for {bank_name}: {e}")
-                failed_banks.append(bank_name)
-                mark_moneyhero(bank)
+                if _apply_uhk_fallback(bank, get_uhk_rates()):
+                    logger.info(f"  → {bank_name} using UHK second source")
+                else:
+                    failed_banks.append(bank_name)
+                    mark_moneyhero(bank)
                 continue
             
             # If bank has a USD tab to click, scrape USD rates separately
@@ -375,9 +493,12 @@ def update_rates():
                 logger.info(f"  ✓ Parsed {bank_name}: {result}")
                 parsed_count += 1
             else:
-                logger.warning(f"  ⚠️ Parser returned None for {bank_name}, marking MoneyHero")
-                failed_banks.append(bank_name)
-                mark_moneyhero(bank)
+                logger.warning(f"  ⚠️ Parser returned None for {bank_name}")
+                if _apply_uhk_fallback(bank, get_uhk_rates()):
+                    logger.info(f"  → {bank_name} using UHK second source")
+                else:
+                    failed_banks.append(bank_name)
+                    mark_moneyhero(bank)
         else:
             # No parser — just scrape and mark source
             logger.info(f"  [{parser_key}] No parser for {bank_name}, scraping text only...")
@@ -391,13 +512,16 @@ def update_rates():
                             bank[currency][period]['source'] = 'bank'
                 scraped_count += 1
             else:
-                logger.warning(f"  ✗ Failed to scrape {bank_name}, marking MoneyHero")
-                failed_banks.append(bank_name)
-                mark_moneyhero(bank)
+                logger.warning(f"  ✗ Failed to scrape {bank_name}")
+                if _apply_uhk_fallback(bank, get_uhk_rates()):
+                    logger.info(f"  → {bank_name} using UHK second source")
+                else:
+                    failed_banks.append(bank_name)
+                    mark_moneyhero(bank)
     
     # Update metadata
     data['last_updated'] = datetime.now(HKT).isoformat()
-    data['source'] = '各銀行官網 / MoneyHero'
+    data['source'] = '各銀行官網 / UHK港生活'
     
     with open(RATES_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
