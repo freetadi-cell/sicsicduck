@@ -118,6 +118,7 @@ BANK_CONFIG = {
     'pao': {
         'name': '平安數字銀行',
         'url': 'https://www.pingandb.com/tc/retail-savings.html',
+        'skip_scrape': True,  # Cloudflare 封鎖，暫時用 MoneyHero
     },
     'welab': {
         'name': '匯立銀行',
