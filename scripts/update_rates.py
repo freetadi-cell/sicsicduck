@@ -107,7 +107,8 @@ BANK_CONFIG = {
     },
     'airstar': {
         'name': '象象銀行',
-        'url': 'https://www.elebank.com.hk/',
+        'url': 'https://www.elebank.com/zh-hk/hkprime.html',
+        'usd_tab': '美元',  # Need to click USD tab to get USD rates
     },
     'za': {
         'name': '眾安銀行',
@@ -124,7 +125,7 @@ BANK_CONFIG = {
     },
     'livi': {
         'name': '理慧銀行',
-        'url': 'https://www.livibank.com/',
+        'url': 'https://www.livibank.com/zh_CN/features/livisave.html',
     },
     'ant': {
         'name': '螞蟻銀行',
@@ -159,6 +160,10 @@ def scrape_page(url, wait=5):
     
     time.sleep(wait)
     
+    return _extract_text_tables()
+
+def _extract_text_tables():
+    """Extract text and tables from current page (browser must be open)."""
     # Get page text
     raw = run_browser('agent-browser eval "document.body.innerText.substring(0, 8000)"', timeout=10)
     text = None
@@ -168,7 +173,7 @@ def scrape_page(url, wait=5):
         except:
             text = raw.strip('"')
     
-    # Get tables - use String.fromCharCode to avoid shell quoting issues with 'table'
+    # Get tables
     tables = []
     js_set = 'document.title=JSON.stringify(Array.from(document.querySelectorAll(String.fromCharCode(116,97,98,108,101))).map(function(t){return t.innerText}))'
     run_browser(f'agent-browser eval "{js_set}"', timeout=10)
@@ -181,6 +186,42 @@ def scrape_page(url, wait=5):
                 tables = json.loads(raw_t)
             except:
                 pass
+    
+    return text, tables
+
+def _scrape_click_tab(url, tab_label, wait=3):
+    """Re-open a page, click a tab button by label, and return (text, tables).
+    Used for banks like Elebank where USD rates require clicking a tab.
+    """
+    run_browser('agent-browser close', timeout=5)
+    time.sleep(2)
+    
+    result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
+    if not result:
+        return None, None
+    
+    time.sleep(wait)
+    
+    # Find and click the tab button by text
+    click_result = run_browser(f'agent-browser find text "{tab_label}" click', timeout=10)
+    if not click_result:
+        # Fallback: try snapshot to find ref
+        snap = run_browser('agent-browser snapshot -i --json', timeout=10)
+        if snap:
+            try:
+                elements = json.loads(snap)
+                for elem in elements:
+                    if tab_label in elem.get('text', '') or tab_label in elem.get('name', ''):
+                        ref = elem.get('ref')
+                        if ref:
+                            run_browser(f'agent-browser click {ref}', timeout=10)
+                            break
+            except:
+                pass
+    
+    time.sleep(wait)
+    
+    text, tables = _extract_text_tables()
     
     run_browser('agent-browser close', timeout=5)
     time.sleep(1)
@@ -275,6 +316,23 @@ def update_rates():
                 failed_banks.append(bank_name)
                 mark_moneyhero(bank)
                 continue
+            
+            # If bank has a USD tab to click, scrape USD rates separately
+            usd_tab_label = cfg.get('usd_tab')
+            if usd_tab_label and result is not None:
+                usd_text, usd_tables = _scrape_click_tab(url, usd_tab_label)
+                if usd_text or usd_tables:
+                    try:
+                        usd_result = parse_fn(usd_text, usd_tables)
+                        if usd_result and 'usd' in usd_result:
+                            result['usd'] = usd_result['usd']
+                            logger.info(f"  ✓ Got USD rates from tab for {bank_name}")
+                        else:
+                            logger.warning(f"  ⚠️ USD tab scraped but parser returned no USD data for {bank_name}")
+                    except Exception as e:
+                        logger.warning(f"  ⚠️ USD tab parse error for {bank_name}: {e}")
+                else:
+                    logger.warning(f"  ⚠️ Failed to scrape USD tab for {bank_name}")
             
             if result:
                 note = result.get('note', f'從{bank_name}官網提取')
