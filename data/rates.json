@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T22:10:09.137541+08:00",
+  "last_updated": "2026-05-28T00:22:23.733753+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -386,7 +386,8 @@
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": true
+          "new_funds": true,
+          "any_funds_rate": 2.65
         },
         "6m": {
           "rate": 2.65,
@@ -436,7 +437,8 @@
           "min_deposit": 65000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": true
+          "new_funds": true,
+          "any_funds_rate": 3.8
         },
         "6m": {
           "rate": 3.7,
