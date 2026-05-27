@@ -928,20 +928,8 @@ function renderTable() {
         banks = banks.filter(b => b.type === currentType);
     }
 
-    // Filter by funds type
-    if (currentFunds !== 'all') {
-        banks = banks.filter(b => {
-            // Check if the bank has at least one rate matching the funds filter
-            const periods = ['1w', '1m', '2m', '3m', '6m', '12m'];
-            return periods.some(p => {
-                const rd = b[currentCurrency]?.[p];
-                if (!rd || rd.rate === null || rd.rate === undefined) return false;
-                if (currentFunds === 'new') return rd.new_funds === true;
-                if (currentFunds === 'any') return rd.new_funds === false;
-                return false;
-            });
-        });
-    }
+    // Note: funds filter is applied at cell level during rendering,
+    // not at bank level, so banks with mixed rates still show partially.
 
     // Sort
     const primarySort = currentPeriod === 'all' ? sortColumn : currentPeriod;
@@ -1013,9 +1001,18 @@ function renderTable() {
 
                 const rateData = data?.[period];
                 const rate = rateData?.rate;
-                const isBest = rate !== null && rate !== undefined && rate === bestRates[period];
 
-                if (rate === null || rate === undefined) {
+                // Funds filter: hide rates that don't match
+                let hiddenByFunds = false;
+                if (currentFunds !== 'all' && rate !== null && rate !== undefined) {
+                    const nf = rateData?.new_funds;
+                    if (currentFunds === 'new' && nf !== true) hiddenByFunds = true;
+                    if (currentFunds === 'any' && nf !== false) hiddenByFunds = true;
+                }
+
+                const isBest = !hiddenByFunds && rate !== null && rate !== undefined && rate === bestRates[period];
+
+                if (rate === null || rate === undefined || hiddenByFunds) {
                     html += `<td class="rate-cell na">—</td>`;
                 } else {
                     let cls = 'normal';
