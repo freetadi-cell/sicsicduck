@@ -1007,7 +1007,6 @@ function renderTable() {
                 if (currentFunds !== 'all' && rate !== null && rate !== undefined) {
                     const nf = rateData?.new_funds;
                     if (currentFunds === 'new' && nf !== true) hiddenByFunds = true;
-                    if (currentFunds === 'any' && nf !== false) hiddenByFunds = true;
                 }
 
                 const isBest = !hiddenByFunds && rate !== null && rate !== undefined && rate === bestRates[period];
