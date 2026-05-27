@@ -95,8 +95,7 @@ BANK_CONFIG = {
     },
     'winglung': {
         'name': '招商永隆',
-        'url': 'https://www.winglungbank.com/ibanking/CnCoFiiDepratDsp.jsp',
-        'skip_scrape': True,  # 網站封鎖爬蟲
+        'url': 'https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp',
     },
     'chbank': {
         'name': '創興銀行',
