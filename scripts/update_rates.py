@@ -493,10 +493,12 @@ def update_rates():
                                 if isinstance(val, dict):
                                     rate = val.get('rate')
                                     new_funds = val.get('new_funds')
+                                    any_funds_rate = val.get('any_funds_rate')
                                 else:
                                     rate = val
                                     # Preserve existing new_funds from rates.json
                                     new_funds = bank[currency].get(period, {}).get('new_funds')
+                                    any_funds_rate = bank[currency].get(period, {}).get('any_funds_rate')
                                 bank[currency][period] = {
                                     'rate': rate,
                                     'min_deposit': bank[currency].get(period, {}).get('min_deposit'),
@@ -507,6 +509,8 @@ def update_rates():
                                     bank[currency][period]['new_funds'] = new_funds
                                 elif 'new_funds' not in bank[currency][period]:
                                     bank[currency][period]['new_funds'] = None
+                                if any_funds_rate is not None:
+                                    bank[currency][period]['any_funds_rate'] = any_funds_rate
                 logger.info(f"  ✓ Parsed {bank_name}: {result}")
                 parsed_count += 1
             else:

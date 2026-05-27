@@ -1000,31 +1000,37 @@ function renderTable() {
                 }
 
                 const rateData = data?.[period];
-                const rate = rateData?.rate;
+                let rate = rateData?.rate;
+
+                // Funds filter: swap to any_funds_rate if available and filter is 'any'
+                let displayRate = rate;
+                if (currentFunds === 'any' && rateData?.any_funds_rate != null) {
+                    displayRate = rateData.any_funds_rate;
+                }
 
                 // Funds filter: hide rates that don't match
                 let hiddenByFunds = false;
-                if (currentFunds !== 'all' && rate !== null && rate !== undefined) {
+                if (currentFunds !== 'all' && displayRate !== null && displayRate !== undefined) {
                     const nf = rateData?.new_funds;
                     if (currentFunds === 'new' && nf !== true) hiddenByFunds = true;
-                    if (currentFunds === 'any' && nf !== false) hiddenByFunds = true;
+                    if (currentFunds === 'any' && nf !== false && rateData?.any_funds_rate == null) hiddenByFunds = true;
                 }
 
-                const isBest = !hiddenByFunds && rate !== null && rate !== undefined && rate === bestRates[period];
+                const isBest = !hiddenByFunds && displayRate !== null && displayRate !== undefined && displayRate === bestRates[period];
 
-                if (rate === null || rate === undefined || hiddenByFunds) {
+                if (displayRate === null || displayRate === undefined || hiddenByFunds) {
                     html += `<td class="rate-cell na">—</td>`;
                 } else {
                     let cls = 'normal';
                     if (rankByPeriod[period][idx] < 3) cls = 'best';
-                    else if (rate >= avgRates[period]) cls = 'good';
+                    else if (displayRate >= avgRates[period]) cls = 'good';
 
                     const source = rateData?.source;
                     const srcMark = source === 'moneyhero' ? ' <span class="src-mark">*</span>' : '';
-                    const nfMark = rateData?.new_funds === true ? ' <span class="nf-mark" title="新資金">💰</span>' : '';
+                    const nfMark = rateData?.new_funds === true && currentFunds !== 'any' ? ' <span class="nf-mark" title="新資金">💰</span>' : '';
                     html += `<td class="rate-cell ${cls}">
                         <div class="rate-value">
-                            ${rate.toFixed(2)}<span class="pct">%</span>${srcMark}${nfMark}
+                            ${displayRate.toFixed(2)}<span class="pct">%</span>${srcMark}${nfMark}
                         </div>
                     </td>`;
                 }

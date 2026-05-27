@@ -3,12 +3,12 @@
 Page: https://www.fubonbank.com.hk/tc/deposit/latest-promotions/new-customers-promotion.html
 
 Three sections:
-1. 新資金定期存款優惠 (new funds): HKD/USD 3m only → new_funds=True
-2. Fubon+ 港元 (any funds, 4 tiers): take highest tier → new_funds=False
-3. Fubon+ 美元 (any funds, 3 tiers): take highest tier → new_funds=False
+1. 新資金定期存款優惠 (new funds): HKD/USD 3m only
+2. Fubon+ 港元 (any funds): take highest tier
+3. Fubon+ 美元 (any funds): take highest tier
 
-For 3m: new funds rate is higher (2.8%/3.9%), so use that with new_funds=True.
-For other periods: only Fubon+ rates available, new_funds=False.
+For 3m: both rates exist. New funds (2.8%/3.9%) stored as primary,
+Fubon+ rate (2.65%/3.8%) stored as any_funds_rate for 不限資金 filter.
 """
 import re
 
@@ -49,7 +49,6 @@ def parse(text, tables=None):
         usd_section = text[usd_idx:usd_end if usd_end > 0 else usd_idx + 3000]
         _extract_tier_rates(usd_section, usd, '美元')
 
-    # Build result - keep highest rate per period, preserve new_funds flag
     result = {}
     if hkd:
         result['hkd'] = hkd
@@ -63,7 +62,11 @@ def parse(text, tables=None):
 
 
 def _extract_tier_rates(section, rates, currency):
-    """Extract the highest tier rates from a Fubon+ section."""
+    """Extract the highest tier rates from a Fubon+ section.
+
+    If a period already has a new_funds rate, store the any-funds rate
+    as any_funds_rate instead of overwriting.
+    """
     tier_labels = re.split(r'(?:港元|美元)[\d,]+\s*(?:至[\d,]+\w*)?(?:\s*或?\s*以上)?', section)
 
     if len(tier_labels) < 2:
@@ -85,7 +88,14 @@ def _extract_tier_rates(section, rates, currency):
         if i < len(periods):
             val = float(pct)
             key = periods[i]
-            # Only update if this rate is higher than existing (new funds may be higher for 3m)
             existing = rates.get(key)
-            if existing is None or val > existing.get('rate', 0):
+
+            if existing is None:
+                # No rate yet, set as any-funds rate
+                rates[key] = {'rate': val, 'new_funds': False}
+            elif existing.get('new_funds') is True and existing.get('rate', 0) > val:
+                # Already has a higher new-funds rate, store this as any_funds_rate
+                existing['any_funds_rate'] = val
+            elif val > existing.get('rate', 0):
+                # This rate is higher, replace
                 rates[key] = {'rate': val, 'new_funds': False}
