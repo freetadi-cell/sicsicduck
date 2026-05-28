@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T00:22:23.733753+08:00",
+  "last_updated": "2026-05-28T08:34:17.246651+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -658,7 +658,7 @@
           "min_deposit": 10000,
           "note": "定期存款利率",
           "source": "bank",
-          "new_funds": true
+          "new_funds": false
         },
         "2m": {
           "rate": null,
@@ -678,14 +678,14 @@
           "min_deposit": 10000,
           "note": "定期存款利率",
           "source": "bank",
-          "new_funds": true
+          "new_funds": false
         },
         "12m": {
           "rate": 0.15,
           "min_deposit": 10000,
           "note": "定期存款利率",
           "source": "bank",
-          "new_funds": true
+          "new_funds": false
         }
       },
       "usd": {
@@ -1595,10 +1595,10 @@
           "source": null
         },
         "1m": {
-          "rate": 2.3,
+          "rate": 2.4,
           "min_deposit": null,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "定期存款年利率",
+          "source": "bank",
           "new_funds": false
         },
         "2m": {
@@ -1608,24 +1608,24 @@
           "source": null
         },
         "3m": {
-          "rate": 2.6,
-          "min_deposit": 100,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "rate": 2.9,
+          "min_deposit": null,
+          "note": "定期存款年利率",
+          "source": "bank",
           "new_funds": false
         },
         "6m": {
-          "rate": 2.5,
+          "rate": 2.7,
           "min_deposit": null,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "定期存款年利率",
+          "source": "bank",
           "new_funds": false
         },
         "12m": {
-          "rate": 2.5,
+          "rate": 2.6,
           "min_deposit": null,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "定期存款年利率",
+          "source": "bank",
           "new_funds": false
         }
       },
@@ -1637,10 +1637,11 @@
           "source": null
         },
         "1m": {
-          "rate": null,
+          "rate": 2.8,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "定期存款年利率",
+          "source": "bank",
+          "new_funds": false
         },
         "2m": {
           "rate": null,
@@ -1649,22 +1650,25 @@
           "source": null
         },
         "3m": {
-          "rate": null,
+          "rate": 2.7,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "定期存款年利率",
+          "source": "bank",
+          "new_funds": false
         },
         "6m": {
-          "rate": null,
+          "rate": 2.7,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "定期存款年利率",
+          "source": "bank",
+          "new_funds": false
         },
         "12m": {
-          "rate": null,
+          "rate": 3.8,
           "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero"
+          "note": "定期存款年利率",
+          "source": "bank",
+          "new_funds": false
         }
       }
     },
