@@ -119,7 +119,7 @@ BANK_CONFIG = {
     'pao': {
         'name': '平安數字銀行',
         'url': 'https://www.pingandb.com/tc/retail-savings.html',
-        'skip_scrape': True,  # Cloudflare 封鎖，暫時用 MoneyHero
+        'cloudflare_bypass': True,  # 需要自訂 User-Agent 繞過 Cloudflare
     },
     'welab': {
         'name': '匯立銀行',
@@ -156,10 +156,17 @@ def run_browser(cmd, timeout=20):
         logger.warning(f"agent-browser error: {e}")
         return None
 
-def scrape_page(url, wait=5):
+def scrape_page(url, wait=5, cloudflare_bypass=False):
     """Open a page and return (text, tables)."""
     run_browser('agent-browser close', timeout=5)
     time.sleep(2)
+    
+    if cloudflare_bypass:
+        # Set non-headless User-Agent to bypass Cloudflare
+        run_browser(
+            'agent-browser set headers \'{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"}\'',
+            timeout=10
+        )
     
     result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
     if not result:
@@ -443,7 +450,8 @@ def update_rates():
             logger.info(f"  [{parser_key}] Parsing {bank_name}...")
             
             needs_tables = cfg.get('needs_tables', False)
-            text, tables = scrape_page(url)
+            cloudflare_bypass = cfg.get('cloudflare_bypass', False)
+            text, tables = scrape_page(url, cloudflare_bypass=cloudflare_bypass)
             
             if text is None and tables is None:
                 logger.warning(f"  ✗ Failed to scrape {bank_name}")

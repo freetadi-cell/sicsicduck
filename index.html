@@ -707,7 +707,7 @@
 <section class="hero">
     <div style="font-size:13px;color:var(--gray-500);margin-bottom:8px;" id="heroUpdateTime">最後更新：載入中...</div>
     <h1>全港銀行定期存款利率一覽</h1>
-    <p>比較港元及美元定期存款息率，每日 11:00 自動更新，幫你搵到最高息方案</p>
+    <p>比較港元及美元定期存款息率，每日無間斷更新，幫你搵到最高息方案</p>
 </section>
 
 <!-- Summary Cards -->
@@ -933,12 +933,25 @@ function renderTable() {
     // Note: funds filter is applied at cell level during rendering,
     // not at bank level, so banks with mixed rates still show partially.
 
+    // Helper: get display rate considering funds filter
+    const getDisplayRate = (bank, period) => {
+        const rd = bank[currentCurrency]?.[period];
+        if (!rd || rd.rate == null) return null;
+        let r = rd.rate;
+        if (currentFunds === 'any' && rd.any_funds_rate != null) r = rd.any_funds_rate;
+        // Check visibility
+        const nf = rd.new_funds;
+        if (currentFunds === 'new' && nf !== true) return null;
+        if (currentFunds === 'any' && nf !== false && rd.any_funds_rate == null) return null;
+        return r;
+    };
+
     // Sort
     const primarySort = currentPeriod === 'all' ? sortColumn : currentPeriod;
 
     banks.sort((a, b) => {
-        let rateA = a[currentCurrency]?.[primarySort]?.rate ?? -1;
-        let rateB = b[currentCurrency]?.[primarySort]?.rate ?? -1;
+        let rateA = getDisplayRate(a, primarySort) ?? -1;
+        let rateB = getDisplayRate(b, primarySort) ?? -1;
         return sortDirection === 'desc' ? rateB - rateA : rateA - rateB;
     });
 
@@ -950,7 +963,7 @@ function renderTable() {
         let best = -1;
         const validRates = [];
         banks.forEach(b => {
-            const r = b[currentCurrency]?.[period]?.rate;
+            const r = getDisplayRate(b, period);
             if (r !== null && r !== undefined) {
                 validRates.push(r);
                 if (r > best) best = r;
@@ -959,7 +972,7 @@ function renderTable() {
         bestRates[period] = best;
         avgRates[period] = validRates.length ? validRates.reduce((a,b)=>a+b,0)/validRates.length : 0;
         // Sort descending, keep track of bank index ranking
-        const sorted = banks.map((b,idx) => ({idx, rate: b[currentCurrency]?.[period]?.rate ?? -1}))
+        const sorted = banks.map((b,idx) => ({idx, rate: getDisplayRate(b, period) ?? -1}))
             .sort((a,b) => b.rate - a.rate);
         const rankMap = {};
         sorted.forEach((item, rank) => { rankMap[item.idx] = rank; });
