@@ -42,11 +42,11 @@
           "new_funds": true
         },
         "12m": {
-          "rate": 3.0,
+          "rate": null,
           "min_deposit": null,
-          "note": "RewardCash定存（手機App新資金）",
-          "source": "bank",
-          "new_funds": true
+          "note": null,
+          "source": null,
+          "new_funds": null
         }
       },
       "usd": {
@@ -69,14 +69,14 @@
           "source": null
         },
         "3m": {
-          "rate": 2.435,
+          "rate": 3.54,
           "min_deposit": 2000,
           "note": "RewardCash定存（手機App新資金）",
           "source": "bank",
           "new_funds": true
         },
         "6m": {
-          "rate": 2.215,
+          "rate": 3.425,
           "min_deposit": 2000,
           "note": "RewardCash定存（手機App新資金）",
           "source": "bank",
@@ -85,7 +85,7 @@
         "12m": {
           "rate": 3.0,
           "min_deposit": 2000,
-          "note": "RewardCash定存（手機App新資金）",
+          "note": "新資金定期存款優惠",
           "source": "bank",
           "new_funds": true
         }

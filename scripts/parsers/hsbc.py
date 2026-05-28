@@ -4,55 +4,82 @@ import re
 def parse(text, tables=None):
     """Parse HSBC HK deposit rates.
     
-    Page has RewardCash Time Deposit rates.
-    Look for the rate table pattern:
-    Tenor  Equivalent interest rate (p.a.)
-    3 months  2.435%
-    6 months  2.215%
+    Page has two main sections:
+    1. RewardCash Time Deposit (HKD + USD) - 3m, 6m only
+    2. Preferential New Fund Time Deposit Rates (HKD + USD) - 3m, 6m, 12m
     
-    HKD and USD sections each have their own table.
+    We capture RewardCash rates for HKD (3m/6m) and USD (3m/6m),
+    and Preferential USD 12m since it's the only 12m rate available.
     """
     rates = {}
-    note = 'RewardCash定存（手機App新資金）'
     
     if not text:
         return None
     
-    # Find all "Equivalent interest rate" tables
-    # Pattern: "3 months  2.435%"
-    # Each currency section has its own rate table
+    # === RewardCash section ===
+    rc_end = text.find('Preferential New Fund')
+    rc_text = text[:rc_end] if rc_end > 0 else text
     
-    # Split by currency headers
-    # Find HKD section: look for "HKD" followed by rate data, then "USD" starts next section
-    sections = re.split(r'\bUSD\b', text)
+    hkd_rc = {}
+    usd_rc = {}
     
-    # First section (before first "USD") should have HKD rates
-    hkd_text = sections[0] if sections else ''
-    
-    # Look for rates in format: "3 months  2.435%"
-    hkd_rates = {}
-    for period, label in [('3m', '3 months'), ('6m', '6 months')]:
-        pattern = rf'{label}\s+(\d+\.\d+)%'
-        m = re.search(pattern, hkd_text)
-        if m:
-            hkd_rates[period] = float(m.group(1))
-    
-    if hkd_rates:
-        rates['hkd'] = hkd_rates
-    
-    # USD section: everything after first "USD"
-    if len(sections) > 1:
-        usd_text = 'USD' + sections[1]
-        usd_rates = {}
+    # Find HKD RewardCash rates
+    hkd_match = re.search(r'HKD.*?Equivalent interest rate.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
+    if hkd_match:
+        block = hkd_match.group(1)
         for period, label in [('3m', '3 months'), ('6m', '6 months')]:
-            pattern = rf'{label}\s+(\d+\.\d+)%'
-            m = re.search(pattern, usd_text)
+            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
             if m:
-                usd_rates[period] = float(m.group(1))
-        if usd_rates:
-            rates['usd'] = usd_rates
+                hkd_rc[period] = float(m.group(1))
     
-    if rates:
-        rates['note'] = note
-        return rates
+    # Find USD RewardCash rates
+    usd_match = re.search(r'USD.*?Equivalent interest rate.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
+    if usd_match:
+        block = usd_match.group(1)
+        for period, label in [('3m', '3 months'), ('6m', '6 months')]:
+            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+            if m:
+                usd_rc[period] = float(m.group(1))
+    
+    # === Preferential New Fund section ===
+    pref_text = text[rc_end:] if rc_end > 0 else ''
+    
+    # Preferential USD
+    usd_pref = {}
+    usd_pref_match = re.search(
+        r'Preferential USD.*?online offer.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
+        pref_text, re.DOTALL | re.IGNORECASE
+    )
+    if usd_pref_match:
+        block = usd_pref_match.group(1)
+        for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
+            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+            if m:
+                usd_pref[period] = float(m.group(1))
+    
+    # Build result
+    result = {}
+    
+    # HKD: RewardCash 3m/6m only
+    if hkd_rc:
+        result['hkd'] = hkd_rc
+    
+    # USD: RewardCash 3m/6m + Preferential 12m
+    if usd_rc or usd_pref:
+        usd_final = {}
+        for p in ['3m', '6m']:
+            if p in usd_rc:
+                usd_final[p] = usd_rc[p]
+        if '12m' in usd_pref:
+            usd_final['12m'] = usd_pref['12m']
+        if usd_final:
+            result['usd'] = usd_final
+    
+    # Use note 'RewardCash定存' as default; USD 12m will get different note
+    if result:
+        result['note'] = 'RewardCash定存（手機App新資金）'
+        # If USD has 12m from Preferential, store separate note
+        if 'usd' in result and '12m' in result.get('usd', {}):
+            result['usd_note'] = '新資金定期存款優惠'
+        return result
     return None

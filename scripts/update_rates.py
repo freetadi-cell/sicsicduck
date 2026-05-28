@@ -494,6 +494,7 @@ def update_rates():
                 note = result.get('note', f'從{bank_name}官網提取')
                 for currency in ['hkd', 'usd']:
                     if currency in result:
+                        curr_note = result.get(f'{currency}_note', note)
                         for period in ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']:
                             if period in result[currency]:
                                 val = result[currency][period]
@@ -510,7 +511,7 @@ def update_rates():
                                 bank[currency][period] = {
                                     'rate': rate,
                                     'min_deposit': bank[currency].get(period, {}).get('min_deposit'),
-                                    'note': note,
+                                    'note': curr_note,
                                     'source': 'bank',
                                 }
                                 if new_funds is not None:
