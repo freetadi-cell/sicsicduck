@@ -622,11 +622,15 @@ def _send_telegram_summary(parsed_count, scraped_count, failed_banks):
         
         cmd = [
             '/home/freet/.npm-global/bin/openclaw', 'message', 'send',
-            '--to', 'telegram:885017126',
-            '--message', msg
+            '-t', '885017126',
+            '--channel', 'telegram',
+            '-m', msg
         ]
-        subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        logger.info("Telegram notification sent")
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        if r.returncode != 0:
+            logger.warning(f'Telegram send failed: {r.stderr.strip()}')
+        else:
+            logger.info('Telegram notification sent')
     except Exception as e:
         logger.warning(f"Failed to send Telegram notification: {e}")
 

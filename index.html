@@ -436,12 +436,24 @@
         }
 
         .rate-table tbody tr {
-            border-bottom: 1px solid var(--gray-100);
             transition: background 0.15s;
         }
 
-        .rate-table tbody tr:hover {
+        /* 陰陽色交替行 */
+        .rate-table tbody tr:nth-child(odd) {
+            background: var(--white);
+        }
+        .rate-table tbody tr:nth-child(even) {
             background: var(--gold-50);
+        }
+
+        /* 銀行之間加金色分隔線 */
+        .rate-table tbody tr {
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .rate-table tbody tr:hover {
+            background: var(--gold-200) !important;
         }
 
         .rate-table tbody tr:last-child {
@@ -1042,10 +1054,9 @@ function renderTable() {
 
                     const source = rateData?.source;
                     const srcMark = source === 'moneyhero' ? ' <span class="src-mark">*</span>' : '';
-                    const nfMark = rateData?.new_funds === true && currentFunds !== 'any' ? ' <span class="nf-mark" title="新資金">💰</span>' : '';
                     html += `<td class="rate-cell ${cls}">
                         <div class="rate-value">
-                            ${displayRate.toFixed(2)}<span class="pct">%</span>${srcMark}${nfMark}
+                            ${displayRate.toFixed(2)}<span class="pct">%</span>${srcMark}
                         </div>
                     </td>`;
                 }
