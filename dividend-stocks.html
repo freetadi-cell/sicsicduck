@@ -776,7 +776,7 @@ let stocksData=null,currentSector='all',sortCol='yield',sortDir='desc';
 // ===== Load Data =====
 async function loadData(){
     try{
-        const r=await fetch('data/dividend_stocks.json?t='+Date.now());
+        const r=await fetch('data/dividend_stocks.json?t='+Date.now(), { cache: 'no-store' });
         stocksData=await r.json();
         renderAll();
     }catch(e){

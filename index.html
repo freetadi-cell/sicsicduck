@@ -903,7 +903,7 @@ let sortDirection = 'desc';
 // ===== Load Data =====
 async function loadData() {
     try {
-        const response = await fetch('data/rates.json?t=' + Date.now());
+        const response = await fetch('data/rates.json?t=' + Date.now(), { cache: 'no-store' });
         ratesData = await response.json();
         renderAll();
     } catch (e) {

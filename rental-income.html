@@ -227,7 +227,7 @@ const districtColors={
 
 async function loadData(){
     try{
-        const r=await fetch('data/rental_income.json?t='+Date.now());
+        const r=await fetch('data/rental_income.json?t='+Date.now(), { cache: 'no-store' });
         data=await r.json();
         renderAll();
     }catch(e){
