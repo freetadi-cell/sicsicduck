@@ -48,7 +48,7 @@
 
         /* ===== Header ===== */
         .header {
-            background: #F9F9F9;
+            background: #F3F3F3;
             color: var(--white);
             padding: 0;
             position: sticky;
@@ -411,12 +411,24 @@
         }
 
         .rate-table tbody tr {
-            border-bottom: 1px solid var(--gray-100);
             transition: background 0.15s;
         }
 
-        .rate-table tbody tr:hover {
+        /* 陰陽色交替行 */
+        .rate-table tbody tr:nth-child(odd) {
+            background: var(--white);
+        }
+        .rate-table tbody tr:nth-child(even) {
             background: var(--gold-50);
+        }
+
+        /* 格線分隔 */
+        .rate-table tbody tr {
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .rate-table tbody tr:hover {
+            background: var(--gold-200) !important;
         }
 
         .rate-table tbody tr:last-child {
