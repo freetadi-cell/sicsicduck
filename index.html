@@ -814,21 +814,44 @@
     </div><!-- end main-content -->
 </div><!-- end layout -->
 
+<script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-database-compat.js"></script>
 <script>
-// ===== Online Count =====
-function updateOnline() {
-    var api = '/api/online';
-    if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-        api = 'https://works-doors-wow-hearing.trycloudflare.com/api/online';
-    }
-    fetch(api).then(r=>r.json()).then(d=>{
-        document.getElementById('onlineCount').textContent = d.count + ' 人在線';
-    }).catch(()=>{
-        document.getElementById('onlineCount').textContent = '';
+// ===== Online Count via Firebase Realtime Database =====
+(function() {
+    const firebaseConfig = {
+        apiKey: "AIzaSyD_czqEXtqtnF2sEP8fmAJt6hyMTdhjXWI",
+        authDomain: "sicsicduck.firebaseapp.com",
+        databaseURL: "https://sicsicduck-default-rtdb.firebaseio.com",
+        projectId: "sicsicduck",
+        storageBucket: "sicsicduck.firebasestorage.app",
+        messagingSenderId: "606277142508",
+        appId: "1:606277142508:web:d342c4480fed45d85422c9"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const onlineRef = db.ref('.info/connected');
+    const myRef = db.ref('online/' + Math.random().toString(36).substr(2, 9));
+
+    // Track this visitor
+    onlineRef.on('value', snap => {
+        if (snap.val() === true) {
+            myRef.onDisconnect().remove();
+            myRef.set(Date.now());
+        }
     });
-}
-updateOnline();
-setInterval(updateOnline, 60000);
+
+    // Display count
+    db.ref('online').on('value', snap => {
+        const count = snap.numChildren();
+        const el = document.getElementById('onlineCount');
+        if (count > 0) {
+            el.textContent = count + ' 人在線';
+        } else {
+            el.textContent = '';
+        }
+    });
+})();
 
 // ===== Dropdown Nav =====
 function toggleNav() {
