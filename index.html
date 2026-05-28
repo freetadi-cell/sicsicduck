@@ -1109,11 +1109,17 @@ function renderTable() {
                 }
             });
 
-            // Notes
+            // Notes — only show if the rate is visible under current funds filter
             const activePeriod = periods[0];
             const noteData = data?.[activePeriod];
-            const note = noteData?.note || '';
-            const minDep = noteData?.min_deposit;
+            let noteVisible = true;
+            if (currentFunds !== 'all' && noteData) {
+                const nf = noteData.new_funds;
+                if (currentFunds === 'new' && nf !== true) noteVisible = false;
+                if (currentFunds === 'any' && nf !== false && noteData.any_funds_rate == null) noteVisible = false;
+            }
+            const note = noteVisible ? (noteData?.note || '') : '';
+            const minDep = noteVisible ? noteData?.min_deposit : null;
             html += `<td class="note-cell">
                 ${note ? `<div>${note}</div>` : ''}
                 ${minDep ? `<div class="min-deposit">門檻：${formatDeposit(minDep, currentCurrency)}</div>` : ''}
