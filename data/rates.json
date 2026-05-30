@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T08:34:08.029256+08:00",
+  "last_updated": "2026-05-30T08:34:22.847963+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1956,7 +1956,7 @@
           "source": null
         },
         "3m": {
-          "rate": 2.5,
+          "rate": 2.55,
           "min_deposit": "HKD 1,000,000",
           "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
@@ -1970,14 +1970,14 @@
           "new_funds": true
         },
         "12m": {
-          "rate": 2.2,
+          "rate": 2.25,
           "min_deposit": "HKD 1,000,000",
           "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
           "new_funds": true
         },
         "4m": {
-          "rate": 2.45,
+          "rate": 2.5,
           "min_deposit": null,
           "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
@@ -2012,14 +2012,14 @@
           "new_funds": true
         },
         "6m": {
-          "rate": 3.4,
+          "rate": 3.45,
           "min_deposit": "USD 125,000",
           "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
           "new_funds": true
         },
         "12m": {
-          "rate": 2.9,
+          "rate": 3.1,
           "min_deposit": "USD 125,000",
           "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
