@@ -1,7 +1,7 @@
 """渣打銀行 Standard Chartered - Parser for online time deposit rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse SC HK online time deposit rates.
     
     Page format:

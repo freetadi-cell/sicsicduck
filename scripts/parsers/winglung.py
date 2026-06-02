@@ -45,7 +45,7 @@ def _parse_section(section, min_rate=0.5):
     return rates
 
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse Wing Lung Bank time deposit rates."""
     if not text:
         return None

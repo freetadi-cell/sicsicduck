@@ -1,7 +1,7 @@
 """中銀香港 BOCHK - Parser for time deposit promotion rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse BOCHK new fund time deposit rates.
     
     Key section:

@@ -13,7 +13,7 @@ import tempfile
 import os
 
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse Chiyu Bank time deposit rates from PDF."""
     try:
         # Download the deposit page HTML

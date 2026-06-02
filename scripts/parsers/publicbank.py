@@ -1,7 +1,7 @@
 """大眾銀行 Public Bank - Parser for deposit rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse Public Bank HK deposit rates.
     
     Page has clear table:

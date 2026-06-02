@@ -1,7 +1,7 @@
 """東亞銀行 BEA - Parser for time deposit rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse BEA time deposit rates from promo page.
     
     Page format:

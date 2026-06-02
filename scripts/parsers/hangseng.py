@@ -1,7 +1,7 @@
 """恒生銀行 Hang Seng Bank - Parser for new fund deposit rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse Hang Seng new fund time deposit rates.
     
     URL: https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html

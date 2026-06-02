@@ -1,7 +1,7 @@
 """工銀亞洲 ICBC Asia - Parser for online time deposit rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse ICBC Asia online time deposit rates.
     
     Page has structured table:

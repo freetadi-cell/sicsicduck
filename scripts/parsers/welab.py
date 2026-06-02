@@ -1,7 +1,7 @@
 """匯立銀行 WeLab Bank - Parser for GoSave 2.0 time deposit rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse WeLab Bank GoSave 2.0 rates.
     
     Page shows currency tabs: HKD, USD, CNY, AUD, GBP

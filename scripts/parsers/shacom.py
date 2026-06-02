@@ -1,7 +1,7 @@
 """上海商業銀行 Shanghai Commercial Bank - Parser for deposit rates."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse Shanghai Commercial Bank online/mobile deposit rates.
     
     Page has:

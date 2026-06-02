@@ -1,7 +1,7 @@
 """創興銀行 Chong Hing Bank - Parser for 雲利率 (cloud rates)."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse Chong Hing Bank 雲利率 from tables.
     
     The 雲利率 table has lots of tabs/newlines from HTML formatting.

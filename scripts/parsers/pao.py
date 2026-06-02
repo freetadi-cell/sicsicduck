@@ -7,7 +7,7 @@ Supports two page formats:
 import re
 
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse PAO Bank (平安數字銀行) time deposit rates.
 
     新資金優惠頁格式:

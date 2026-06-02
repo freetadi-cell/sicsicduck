@@ -1,7 +1,7 @@
 """滙豐銀行 HSBC - Parser for deposit rates from text content."""
 import re
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse HSBC HK deposit rates.
     
     Page has two main sections:

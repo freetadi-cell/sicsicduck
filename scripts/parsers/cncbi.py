@@ -29,7 +29,7 @@ def _fetch_promo_rates():
         return None
 
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse CNCBI time deposit rates.
     
     First try promo rates from inMotion page (via curl, no browser needed).

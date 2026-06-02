@@ -6,7 +6,7 @@ HKD rates shown by default. USD rates shown after clicking "美元" tab.
 import re
 
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse EleBank (象象銀行) time deposit rates.
 
     Detects currency from the heading:

@@ -10,7 +10,7 @@ Three sections:
 import re
 
 
-def parse(text, tables=None):
+def parse(text, tables=None, html=None):
     """Parse Fubon Bank time deposit rates."""
     if not text:
         return None
