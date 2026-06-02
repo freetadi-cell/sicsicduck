@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T08:34:12.038919+08:00",
+  "last_updated": "2026-06-02T08:34:00.744673+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -740,36 +740,44 @@
           "source": null
         },
         "1m": {
-          "rate": 1.5,
+          "rate": 2.0,
           "min_deposit": 50000,
-          "note": "新資金 *",
+          "note": "網上定期存款特惠年利率",
           "source": "bank",
           "new_funds": true
         },
         "2m": {
-          "rate": null,
+          "rate": 2.0,
           "min_deposit": null,
-          "note": null,
-          "source": null
+          "note": "網上定期存款特惠年利率",
+          "source": "bank",
+          "new_funds": true
         },
         "3m": {
-          "rate": 2.5,
+          "rate": 2.4,
           "min_deposit": 50000,
-          "note": "新資金定期存款優惠（50萬港元/6.5萬美元以上）",
+          "note": "網上定期存款特惠年利率",
           "source": "bank",
           "new_funds": true
         },
         "6m": {
-          "rate": 1.95,
+          "rate": 2.3,
           "min_deposit": 50000,
-          "note": "新資金 *",
+          "note": "網上定期存款特惠年利率",
           "source": "bank",
           "new_funds": true
         },
         "12m": {
-          "rate": 1.95,
+          "rate": 2.3,
           "min_deposit": 50000,
-          "note": "新資金 *",
+          "note": "網上定期存款特惠年利率",
+          "source": "bank",
+          "new_funds": true
+        },
+        "4m": {
+          "rate": 2.4,
+          "min_deposit": null,
+          "note": "網上定期存款特惠年利率",
           "source": "bank",
           "new_funds": true
         }
@@ -1006,7 +1014,7 @@
           "source": null
         },
         "1m": {
-          "rate": 2.1,
+          "rate": 2.3,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -1397,14 +1405,14 @@
           "new_funds": false
         },
         "3m": {
-          "rate": 2.4,
+          "rate": 2.35,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
           "new_funds": false
         },
         "6m": {
-          "rate": 2.55,
+          "rate": 2.5,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
