@@ -118,7 +118,7 @@ BANK_CONFIG = {
     },
     'pao': {
         'name': '平安數字銀行',
-        'url': 'https://www.pingandb.com/tc/retail-savings.html',
+        'url': 'https://www.pingandb.com/tc/retail-td-newfund.html',
         'cloudflare_bypass': True,  # 需要自訂 User-Agent 繞過 Cloudflare
     },
     'welab': {
@@ -572,7 +572,7 @@ def update_rates():
         '富融銀行': False,
         '象象銀行': False,
         '眾安銀行': False,
-        '平安數字銀行': False,
+        '平安數字銀行': True,
         '匯立銀行': False,
         '理慧銀行': False,
         '螞蟻銀行': False,
