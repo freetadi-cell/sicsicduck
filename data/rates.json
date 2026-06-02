@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T13:39:14.689655+08:00",
+  "last_updated": "2026-06-02T20:49:11.246002+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -28,17 +28,17 @@
           "source": null
         },
         "3m": {
-          "rate": 2.435,
+          "rate": 2.4,
           "min_deposit": 10000,
-          "note": "RewardCash定存（手機App新資金）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         },
         "6m": {
-          "rate": 2.215,
+          "rate": 2.2,
           "min_deposit": 10000,
-          "note": "RewardCash定存（手機App新資金）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         },
         "12m": {
@@ -293,22 +293,22 @@
         "3m": {
           "rate": 2.3,
           "min_deposit": 10000,
-          "note": "網上新資金定期存款特惠年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         },
         "6m": {
           "rate": 2.1,
           "min_deposit": 10000,
-          "note": "網上新資金定期存款特惠年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 10000,
-          "note": "網上新資金定期存款特惠年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         }
       },
@@ -368,11 +368,10 @@
           "source": null
         },
         "1m": {
-          "rate": 2.25,
+          "rate": 0.27,
           "min_deposit": 500000,
-          "note": "Fubon+手機App定存（50萬港元以上）",
-          "source": "bank",
-          "new_funds": false
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "2m": {
           "rate": 2.35,
@@ -382,26 +381,22 @@
           "new_funds": false
         },
         "3m": {
-          "rate": 2.8,
+          "rate": 0.35,
           "min_deposit": 500000,
-          "note": "新資金定期存款優惠（50萬港元以上）",
-          "source": "bank",
-          "new_funds": true,
-          "any_funds_rate": 2.65
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "6m": {
-          "rate": 2.8,
+          "rate": 0.35,
           "min_deposit": 500000,
-          "note": "新資金定期存款優惠（50萬港元以上）",
-          "source": "bank",
-          "new_funds": true
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "12m": {
-          "rate": 2.8,
+          "rate": 0.4,
           "min_deposit": 500000,
-          "note": "新資金定期存款優惠（50萬港元以上）",
-          "source": "bank",
-          "new_funds": true
+          "note": "UHK 港生活",
+          "source": "uhk"
         },
         "4m": {
           "rate": 2.65,
@@ -477,8 +472,8 @@
         "1m": {
           "rate": 1.5,
           "min_deposit": 3000000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "2m": {
@@ -490,22 +485,22 @@
         "3m": {
           "rate": 2.55,
           "min_deposit": 3000000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 3000000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 3000000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         }
       },
@@ -577,24 +572,24 @@
           "source": null
         },
         "3m": {
-          "rate": 2.6,
+          "rate": 2.65,
           "min_deposit": 10000,
-          "note": "顯卓理財特惠定期存款利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "6m": {
-          "rate": 2.6,
+          "rate": 2.45,
           "min_deposit": 10000,
-          "note": "顯卓理財特惠定期存款利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "12m": {
-          "rate": 2.55,
+          "rate": 2.65,
           "min_deposit": 10000,
-          "note": "顯卓理財特惠定期存款利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         }
       },
@@ -761,11 +756,11 @@
           "new_funds": false
         },
         "6m": {
-          "rate": 3.0,
+          "rate": 2.8,
           "min_deposit": 50000,
-          "note": "新資金定期存款優惠（100萬港元以上）",
+          "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "new_funds": false
         },
         "12m": {
           "rate": 2.3,
@@ -775,11 +770,18 @@
           "new_funds": false
         },
         "4m": {
-          "rate": 3.0,
+          "rate": 2.8,
           "min_deposit": null,
-          "note": "新資金定期存款優惠（100萬港元以上）",
+          "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "new_funds": false
+        },
+        "9m": {
+          "rate": 2.3,
+          "min_deposit": null,
+          "note": "網上定存特惠年利率",
+          "source": "bank",
+          "new_funds": false
         }
       },
       "usd": {
@@ -812,11 +814,11 @@
           "new_funds": true
         },
         "6m": {
-          "rate": 3.2,
+          "rate": 3.8,
           "min_deposit": 128000,
-          "note": "新資金定期存款優惠（128,000美元以上）",
+          "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "new_funds": false
         },
         "12m": {
           "rate": null,
@@ -826,11 +828,11 @@
           "new_funds": null
         },
         "4m": {
-          "rate": 3.35,
+          "rate": 3.8,
           "min_deposit": 128000,
-          "note": "新資金定期存款優惠（128,000美元以上）",
+          "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "new_funds": false
         }
       }
     },
@@ -1023,10 +1025,10 @@
           "source": null
         },
         "1m": {
-          "rate": 2.3,
+          "rate": 2.2,
           "min_deposit": 500000,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "2m": {
@@ -1036,24 +1038,24 @@
           "source": null
         },
         "3m": {
-          "rate": 2.5,
+          "rate": 2.4,
           "min_deposit": 500000,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "6m": {
-          "rate": 2.35,
+          "rate": 2.25,
           "min_deposit": 500000,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "12m": {
-          "rate": 2.4,
+          "rate": 2.3,
           "min_deposit": 500000,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         }
       },
@@ -1219,10 +1221,10 @@
           "source": null
         },
         "1m": {
-          "rate": 2.4,
+          "rate": 2.35,
           "min_deposit": 50000,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "2m": {
@@ -1232,24 +1234,24 @@
           "source": null
         },
         "3m": {
-          "rate": 2.65,
+          "rate": 2.55,
           "min_deposit": 50000,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "6m": {
-          "rate": 1.65,
+          "rate": 1.5,
           "min_deposit": 50000,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "12m": {
-          "rate": 0.95,
+          "rate": 0.8,
           "min_deposit": 50000,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         }
       },
@@ -1400,10 +1402,10 @@
           "new_funds": false
         },
         "1m": {
-          "rate": 1.5,
+          "rate": 0.01,
           "min_deposit": 1,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "2m": {
@@ -1414,24 +1416,24 @@
           "new_funds": false
         },
         "3m": {
-          "rate": 2.35,
+          "rate": 2.2,
           "min_deposit": 1,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "6m": {
-          "rate": 2.5,
+          "rate": 2.2,
           "min_deposit": 1,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "12m": {
-          "rate": 2.85,
+          "rate": 2.35,
           "min_deposit": 1,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": false
         },
         "4m": {
@@ -1612,10 +1614,10 @@
           "new_funds": null
         },
         "1m": {
-          "rate": 2.5,
+          "rate": 2.3,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 6/30)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         },
         "2m": {
@@ -1626,24 +1628,24 @@
           "new_funds": null
         },
         "3m": {
-          "rate": 2.9,
+          "rate": 2.6,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 6/30)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         },
         "6m": {
-          "rate": 2.8,
+          "rate": 2.5,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 6/30)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         },
         "12m": {
-          "rate": 2.95,
+          "rate": 2.5,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 6/30)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "new_funds": true
         }
       },

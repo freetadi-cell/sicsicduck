@@ -67,6 +67,7 @@ sectors = {
 }
 
 ETNET_URL = 'https://www.etnet.com.hk/www/tc/stocks/realtime/quote_dividend.php?code={code}'
+RMB_HKD_RATE = 1.08  # 人民幣兌港元 (approx, etnet 用接近即時匯率轉換)
 
 
 def _run_browser(cmd, timeout=20):
@@ -142,6 +143,17 @@ def get_last_fy_dividend_etnet(stock_code):
                 if fy not in fy_divs:
                     fy_divs[fy] = []
                 fy_divs[fy].append(amount)
+            else:
+                # Fallback: if no HKD amount, try RMB/CNY and convert
+                # Pattern: "人民幣 0.1169" or "人民幣0.1169"
+                rmb_match = re.search(r'人民幣\s*(\d+\.?\d*)', line)
+                if rmb_match:
+                    rmb_amount = float(rmb_match.group(1))
+                    # Convert RMB to HKD (approx 1.07-1.08)
+                    hkd_amount = rmb_amount * RMB_HKD_RATE
+                    if fy not in fy_divs:
+                        fy_divs[fy] = []
+                    fy_divs[fy].append(hkd_amount)
         
         if not fy_divs:
             return None, None
