@@ -3,12 +3,9 @@
 Page: https://www.fubonbank.com.hk/tc/deposit/latest-promotions/new-customers-promotion.html
 
 Three sections:
-1. 新資金定期存款優惠 (new funds): HKD/USD 3m only
-2. Fubon+ 港元 (any funds): take highest tier
-3. Fubon+ 美元 (any funds): take highest tier
-
-For 3m: both rates exist. New funds (2.8%/3.9%) stored as primary,
-Fubon+ rate (2.65%/3.8%) stored as any_funds_rate for 不限資金 filter.
+1. 新資金定期存款優惠 (HKD 500K+/USD 128K+): 3/6/12m
+2. Fubon+ 港元 (any funds): take highest tier (500K+)
+3. Fubon+ 美元 (any funds): take highest tier (65K+)
 """
 import re
 
@@ -27,13 +24,16 @@ def parse(text, tables=None):
         nf_end = text.find('手機應用程式限定', nf_idx + 10)
         nf_section = text[nf_idx:nf_end if nf_end > 0 else nf_idx + 2000]
 
-        hkd_m = re.search(r'港元\s+(\d+\.\d+)%', nf_section)
-        usd_m = re.search(r'美元\s+(\d+\.\d+)%', nf_section)
+        # Format: 存款期 三個月 六個月 十二個月
+        #         港元    2.8%   2.8%    2.8%
+        #         美元    4%     /      /
+        hkd_rates = _extract_nf_row(nf_section, '港元')
+        usd_rates = _extract_nf_row(nf_section, '美元')
 
-        if hkd_m:
-            hkd['3m'] = {'rate': float(hkd_m.group(1)), 'new_funds': True}
-        if usd_m:
-            usd['3m'] = {'rate': float(usd_m.group(1)), 'new_funds': True}
+        for period, rate in hkd_rates.items():
+            hkd[period] = {'rate': rate, 'new_funds': True}
+        for period, rate in usd_rates.items():
+            usd[period] = {'rate': rate, 'new_funds': True}
 
     # === Section 2: Fubon+ 港元 ===
     hkd_idx = text.find('特優港元定期存款優惠')
@@ -61,12 +61,35 @@ def parse(text, tables=None):
     return None
 
 
-def _extract_tier_rates(section, rates, currency):
-    """Extract the highest tier rates from a Fubon+ section.
+def _extract_nf_row(section, currency):
+    """Extract new fund rates for a currency from the new fund section.
 
-    If a period already has a new_funds rate, store the any-funds rate
-    as any_funds_rate instead of overwriting.
+    Format in text:
+    存款期	三個月	六個月	十二個月
+    港元	2.8%	2.8%	2.8%
+    美元	4%	/	/
     """
+    rates = {}
+    # Find the currency row
+    c_idx = section.find(currency)
+    if c_idx < 0:
+        return rates
+
+    row = section[c_idx:c_idx + 200]
+
+    # Match pattern: 港元	2.8%	2.8%	2.8% or 港元\n2.8%\n2.8%\n2.8%
+    pcts = re.findall(r'(\d+(?:\.\d+)?)%', row)
+
+    period_order = ['3m', '6m', '12m']
+    for i, pct in enumerate(pcts):
+        if i < len(period_order):
+            rates[period_order[i]] = float(pct)
+
+    return rates
+
+
+def _extract_tier_rates(section, rates, currency):
+    """Extract the highest tier rates from a Fubon+ section."""
     tier_labels = re.split(r'(?:港元|美元)[\d,]+\s*(?:至[\d,]+\w*)?(?:\s*或?\s*以上)?', section)
 
     if len(tier_labels) < 2:
@@ -91,11 +114,8 @@ def _extract_tier_rates(section, rates, currency):
             existing = rates.get(key)
 
             if existing is None:
-                # No rate yet, set as any-funds rate
                 rates[key] = {'rate': val, 'new_funds': False}
             elif existing.get('new_funds') is True and existing.get('rate', 0) > val:
-                # Already has a higher new-funds rate, store this as any_funds_rate
                 existing['any_funds_rate'] = val
             elif val > existing.get('rate', 0):
-                # This rate is higher, replace
                 rates[key] = {'rate': val, 'new_funds': False}
