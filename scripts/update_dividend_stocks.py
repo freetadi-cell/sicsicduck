@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 """
 香港藍籌股息率數據更新腳本
-使用 yfinance 獲取股價及派息數據
+使用 etnet.com.hk 獲取上一財政年度派息 + yfinance 獲取股價
 
-息率計算方法：TTM (Trailing Twelve Months)
-= 過去12個月實際派息總額 / 現價 × 100%
+息率計算方法：
+- 從 etnet 派息紀錄提取「上一個已完成財政年度」嘅總派息（港元）
+- 從 yfinance 獲取現價
+- 息率 = 上一財政年度總派息 / 現價 × 100%
+
+etnet URL format: https://www.etnet.com.hk/www/tc/stocks/realtime/quote_dividend.php?code={code}
+code = ticker number without .HK (e.g. 00005, 0941)
 
 每日 8:30 由 cron 執行
 """
 import yfinance as yf
-import json, os, logging
+import json, os, re, logging, subprocess, time
 from datetime import datetime, timezone, timedelta
 
 HKT = timezone(timedelta(hours=8))
@@ -61,73 +66,191 @@ sectors = {
     "9961.HK":"科技","9988.HK":"科技","9999.HK":"科技",
 }
 
+ETNET_URL = 'https://www.etnet.com.hk/www/tc/stocks/realtime/quote_dividend.php?code={code}'
 
-def get_ttm_dividend(stock):
+
+def _run_browser(cmd, timeout=20):
+    """Run agent-browser command, return cleaned output or None."""
+    try:
+        r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout)
+        if r.returncode == 0:
+            out = re.sub(r'\x1b\[[0-9;]*m', '', r.stdout).strip()
+            return out if out else None
+        return None
+    except Exception as e:
+        logger.warning(f"agent-browser error: {e}")
+        return None
+
+
+def get_last_fy_dividend_etnet(stock_code):
     """
-    Get TTM (Trailing Twelve Months) dividend.
-    Sums all actual dividends paid in the past 365 days.
-    This is the most reliable method as it doesn't depend on fiscal year assumptions.
+    Scrape etnet dividend page to get total dividends for the last completed fiscal year.
+    
+    Args:
+        stock_code: e.g. "00005", "0941" (without .HK)
+    
+    Returns:
+        (total_hkd_div, fy_label) or (None, None)
+        fy_label e.g. "2025/12" meaning FY2025
     """
     try:
-        divs = stock.dividends
-        if divs is None or divs.empty:
-            return None
-
+        url = ETNET_URL.format(code=stock_code)
+        
+        # Open page
+        _run_browser('agent-browser close', timeout=5)
+        time.sleep(1)
+        result = _run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
+        if not result:
+            return None, None
+        time.sleep(5)
+        
+        # Get page text
+        raw = _run_browser('agent-browser eval "document.body.innerText.substring(0, 15000)"', timeout=10)
+        if not raw:
+            return None, None
+        
+        try:
+            text = json.loads(raw)
+        except:
+            text = raw.strip('"')
+        
+        if not text or '派息記錄' not in text:
+            return None, None
+        
+        # Extract dividend rows: each row has 財政年度 and 港元 amount
+        # Format: "22/04/2026\t2026/12\t第一次中期息美元 0.1\t14/05/2026\t..."
+        # Or: "07/08/2025\t2025/12\t中期息人民幣 2.508 或港元 2.75\t..."
+        
+        # Find all fiscal years and their HKD dividends
+        fy_divs = {}  # fy_label -> [hkd_amounts]
+        
+        lines = text.split('\n')
+        for line in lines:
+            # Match fiscal year: YYYY/MM (e.g. 2025/12)
+            fy_match = re.search(r'(\d{4}/\d{2})\t', line)
+            if not fy_match:
+                continue
+            
+            fy = fy_match.group(1)
+            
+            # Extract HKD amount
+            # Pattern: 港元 X.XXX (or 港元X.XXX)
+            # Could be: "港元 3.522942" or "港元 2.75" or "港元 2.52"
+            hkd_match = re.search(r'港元\s*(\d+\.?\d*)', line)
+            if hkd_match:
+                amount = float(hkd_match.group(1))
+                if fy not in fy_divs:
+                    fy_divs[fy] = []
+                fy_divs[fy].append(amount)
+        
+        if not fy_divs:
+            return None, None
+        
+        # Determine last completed FY
+        # FY format "2025/12" means fiscal year ending Dec 2025
+        # Now is 2026-06, so last completed FY is 2025/12
+        # Sort FY labels and find the most recent completed one
+        sorted_fys = sorted(fy_divs.keys(), reverse=True)
+        
+        # Parse FY: "2025/12" -> year=2025, month=12
         now = datetime.now(HKT)
-        one_year_ago = now - timedelta(days=365)
+        best_fy = None
+        for fy in sorted_fys:
+            parts = fy.split('/')
+            if len(parts) != 2:
+                continue
+            fy_year, fy_month = int(parts[0]), int(parts[1])
+            
+            # A FY is "completed" if its end date is in the past
+            # FY 2025/12 ends Dec 2025 (which is in the past for June 2026)
+            fy_end = datetime(fy_year, fy_month, 1, tzinfo=HKT) + timedelta(days=31)
+            if fy_end < now:
+                best_fy = fy
+                break
+        
+        if best_fy is None:
+            # Fallback: just use the second most recent (first might be current FY)
+            if len(sorted_fys) >= 2:
+                best_fy = sorted_fys[1]
+            else:
+                best_fy = sorted_fys[0]
+        
+        total = round(sum(fy_divs[best_fy]), 4)
+        if total <= 0:
+            return None, None
+        
+        return total, best_fy
+    
+    except Exception as e:
+        logger.warning(f"etnet scrape error for {stock_code}: {e}")
+        return None, None
 
-        # Sum dividends in the last 365 days
-        ttm_divs = divs[divs.index >= one_year_ago]
-        if ttm_divs.empty:
-            return None
 
-        return round(float(ttm_divs.sum()), 4)
-    except Exception:
+def get_price_yfinance(ticker):
+    """Get current price from yfinance."""
+    try:
+        s = yf.Ticker(ticker)
+        info = s.info
+        price = info.get('currentPrice') or info.get('regularMarketPrice') or info.get('previousClose')
+        return round(float(price), 2) if price else None
+    except:
         return None
 
 
 def main():
-    logger.info("Updating dividend stocks data (TTM method)...")
+    logger.info("Updating dividend stocks data (etnet FY method)...")
     results = []
     failed = []
+    
     for ticker, name in sorted(hsi_stocks.items()):
+        code = ticker.replace('.HK', '')
+        
         try:
-            stock = yf.Ticker(ticker)
-            info = stock.info
-            price = info.get('currentPrice') or info.get('regularMarketPrice') or info.get('previousClose')
-            ttm_div = get_ttm_dividend(stock)
-
-            if price and ttm_div and ttm_div > 0:
-                yld = (ttm_div / price) * 100
+            # Get dividend from etnet
+            div, fy_label = get_last_fy_dividend_etnet(code)
+            price = get_price_yfinance(ticker)
+            
+            if div and div > 0 and price:
+                yld = (div / price) * 100
                 results.append({
-                    'ticker': ticker.replace('.HK', ''),
+                    'ticker': code,
                     'name': name,
-                    'price': round(price, 2),
-                    'dividend': round(ttm_div, 4),
+                    'price': price,
+                    'dividend': div,
                     'yield': round(yld, 2),
+                    'fy': fy_label,
                     'sector': sectors.get(ticker, '其他'),
+                    'div_source': 'etnet',
                 })
-            else:
-                logger.warning(f"  ⚠ {ticker} {name}: no price or dividend (price={price}, div={ttm_div})")
+                logger.info(f"  ✓ {code} {name}: FY{fy_label} div={div} HKD, price={price}, yield={yld:.2f}%")
+            elif price and (div is None or div == 0):
+                logger.warning(f"  ⚠ {code} {name}: no dividend data from etnet (price={price})")
                 failed.append(name)
+            else:
+                logger.warning(f"  ⚠ {code} {name}: no price (div={div})")
+                failed.append(name)
+        
         except Exception as e:
-            logger.warning(f"  ✗ {ticker} {name}: {e}")
+            logger.warning(f"  ✗ {code} {name}: {e}")
             failed.append(name)
-
+    
+    # Close browser
+    _run_browser('agent-browser close', timeout=5)
+    
     results.sort(key=lambda x: x['yield'], reverse=True)
-
+    
     data = {
         'last_updated': datetime.now(HKT).strftime('%Y-%m-%dT%H:%M:%S+08:00'),
-        'source': 'Yahoo Finance (yfinance)',
-        'method': 'TTM (Trailing Twelve Months) - 過去12個月實際派息總額',
-        'disclaimer': '息率 = 過去12個月實際派息總額 / 現價 × 100%（TTM法）。數據僅供參考，不構成投資建議。',
+        'source': 'etnet (派息) + Yahoo Finance (股價)',
+        'method': '上一財政年度總派息 / 現價',
+        'disclaimer': '息率 = 上一財政年度總派息（港元）/ 現價 × 100%。派息數據來自經濟通 etnet，股價來自 Yahoo Finance。數據僅供參考，不構成投資建議。',
         'stocks': results,
     }
-
+    
     os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-
+    
     logger.info(f"✅ Updated {len(results)} stocks, {len(failed)} skipped")
     if failed:
         logger.info(f"Skipped: {', '.join(failed)}")
