@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T13:13:54.426283+08:00",
+  "last_updated": "2026-06-02T13:26:44.590629+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -761,11 +761,11 @@
           "new_funds": false
         },
         "6m": {
-          "rate": 2.8,
+          "rate": 3.0,
           "min_deposit": 50000,
-          "note": "現有資金定期存款優惠（100萬港元以上）",
+          "note": "新資金定期存款優惠（100萬港元以上）",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         },
         "12m": {
           "rate": 2.3,
@@ -775,11 +775,11 @@
           "new_funds": false
         },
         "4m": {
-          "rate": 2.4,
+          "rate": 3.0,
           "min_deposit": null,
-          "note": "網上定存特惠年利率",
+          "note": "新資金定期存款優惠（100萬港元以上）",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         }
       },
       "usd": {
@@ -791,32 +791,32 @@
           "new_funds": null
         },
         "1m": {
-          "rate": null,
-          "min_deposit": null,
-          "note": null,
-          "source": null,
-          "new_funds": null
+          "rate": 3.0,
+          "min_deposit": 128000,
+          "note": "新資金定期存款優惠（128,000美元以上）",
+          "source": "bank",
+          "new_funds": true
         },
         "2m": {
-          "rate": null,
-          "min_deposit": null,
-          "note": null,
-          "source": null,
-          "new_funds": null
+          "rate": 3.0,
+          "min_deposit": 128000,
+          "note": "新資金定期存款優惠（128,000美元以上）",
+          "source": "bank",
+          "new_funds": true
         },
         "3m": {
-          "rate": null,
-          "min_deposit": null,
-          "note": null,
-          "source": null,
-          "new_funds": null
+          "rate": 3.35,
+          "min_deposit": 128000,
+          "note": "新資金定期存款優惠（128,000美元以上）",
+          "source": "bank",
+          "new_funds": true
         },
         "6m": {
-          "rate": 3.8,
+          "rate": 3.2,
           "min_deposit": 128000,
-          "note": "現有資金定期存款優惠（128,000美元以上）",
+          "note": "新資金定期存款優惠（128,000美元以上）",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         },
         "12m": {
           "rate": null,
@@ -826,11 +826,11 @@
           "new_funds": null
         },
         "4m": {
-          "rate": 3.8,
+          "rate": 3.35,
           "min_deposit": 128000,
-          "note": "現有資金定期存款優惠（128,000美元以上）",
+          "note": "新資金定期存款優惠（128,000美元以上）",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         }
       }
     },

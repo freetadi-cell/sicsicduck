@@ -60,6 +60,7 @@ BANK_CONFIG = {
         'name': '星展銀行',
         'url': 'https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo#exist_fund',
         'cloudflare_bypass': True,
+        'get_html': True,  # 需要HTML提取data-rate屬性（新資金利率隱藏在tab中）
     },
     'fubon': {
         'name': '富邦銀行',
@@ -157,8 +158,8 @@ def run_browser(cmd, timeout=20):
         logger.warning(f"agent-browser error: {e}")
         return None
 
-def scrape_page(url, wait=5, cloudflare_bypass=False):
-    """Open a page and return (text, tables)."""
+def scrape_page(url, wait=5, cloudflare_bypass=False, get_html=False):
+    """Open a page and return (text, tables, html)."""
     run_browser('agent-browser close', timeout=5)
     time.sleep(2)
     
@@ -171,14 +172,17 @@ def scrape_page(url, wait=5, cloudflare_bypass=False):
     
     result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
     if not result:
-        return None, None
+        return None, None, None
     
     time.sleep(wait)
     
-    return _extract_text_tables()
+    return _extract_text_tables(get_html=get_html)
 
-def _extract_text_tables():
-    """Extract text and tables from current page (browser must be open)."""
+def _extract_text_tables(get_html=False):
+    """Extract text and tables from current page (browser must be open).
+    If get_html=True, also return raw HTML substring.
+    Returns (text, tables, html) tuple.
+    """
     # Get page text
     raw = run_browser('agent-browser eval "document.body.innerText.substring(0, 8000)"', timeout=10)
     text = None
@@ -202,7 +206,17 @@ def _extract_text_tables():
             except:
                 pass
     
-    return text, tables
+    # Get HTML if requested (for parsers that need data-rate attributes)
+    html = None
+    if get_html:
+        raw_h = run_browser('agent-browser eval "document.body.innerHTML.substring(0, 30000)"', timeout=10)
+        if raw_h:
+            try:
+                html = json.loads(raw_h)
+            except:
+                html = raw_h.strip('"')
+    
+    return text, tables, html
 
 def _scrape_click_tab(url, tab_label, wait=3):
     """Re-open a page, click a tab button by label, and return (text, tables).
@@ -259,12 +273,12 @@ def _scrape_click_tab(url, tab_label, wait=3):
     
     time.sleep(wait)
     
-    text, tables = _extract_text_tables()
+    text, tables, html = _extract_text_tables()
     
     run_browser('agent-browser close', timeout=5)
     time.sleep(1)
     
-    return text, tables
+    return text, tables, html
 
 def load_parser(parser_key):
     """Dynamically load a parser module. Returns parse function or None."""
@@ -452,7 +466,8 @@ def update_rates():
             
             needs_tables = cfg.get('needs_tables', False)
             cloudflare_bypass = cfg.get('cloudflare_bypass', False)
-            text, tables = scrape_page(url, cloudflare_bypass=cloudflare_bypass)
+            get_html = cfg.get('get_html', False)
+            text, tables, html = scrape_page(url, cloudflare_bypass=cloudflare_bypass, get_html=get_html)
             
             if text is None and tables is None:
                 logger.warning(f"  ✗ Failed to scrape {bank_name}")
@@ -464,7 +479,7 @@ def update_rates():
                 continue
             
             try:
-                result = parse_fn(text, tables)
+                result = parse_fn(text, tables, html=html)
             except Exception as e:
                 logger.warning(f"  ✗ Parser error for {bank_name}: {e}")
                 if _apply_uhk_fallback(bank, get_uhk_rates()):
@@ -477,10 +492,10 @@ def update_rates():
             # If bank has a USD tab to click, scrape USD rates separately
             usd_tab_label = cfg.get('usd_tab')
             if usd_tab_label and result is not None:
-                usd_text, usd_tables = _scrape_click_tab(url, usd_tab_label)
+                usd_text, usd_tables, usd_html = _scrape_click_tab(url, usd_tab_label)
                 if usd_text or usd_tables:
                     try:
-                        usd_result = parse_fn(usd_text, usd_tables)
+                        usd_result = parse_fn(usd_text, usd_tables, html=usd_html)
                         if usd_result and 'usd' in usd_result:
                             result['usd'] = usd_result['usd']
                             logger.info(f"  ✓ Got USD rates from tab for {bank_name}")
@@ -533,7 +548,7 @@ def update_rates():
         else:
             # No parser — just scrape and mark source
             logger.info(f"  [{parser_key}] No parser for {bank_name}, scraping text only...")
-            text, _ = scrape_page(url)
+            text, _, _ = scrape_page(url)
             
             if text:
                 logger.info(f"  ✓ Got data from {bank_name} (no parser, source marked)")
