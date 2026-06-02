@@ -1,54 +1,39 @@
 {
-  "last_updated": "2026-06-02T16:30:52+08:00",
+  "last_updated": "2026-06-02T18:39:10+08:00",
   "source": "Yahoo Finance (yfinance)",
-  "disclaimer": "息率 = 上一財政年度總派息（年終+中期+季息）/ 上一日收市價 × 100%。數據僅供參考，不構成投資建議。",
+  "method": "TTM (Trailing Twelve Months) - 過去12個月實際派息總額",
+  "disclaimer": "息率 = 過去12個月實際派息總額 / 現價 × 100%（TTM法）。數據僅供參考，不構成投資建議。",
   "stocks": [
     {
       "ticker": "0288",
       "name": "萬洲國際",
       "price": 9.1,
-      "dividend": 1.0967,
-      "yield": 12.05,
+      "dividend": 0.91,
+      "yield": 10.0,
       "sector": "食品"
-    },
-    {
-      "ticker": "3328",
-      "name": "交通銀行",
-      "price": 7.51,
-      "dividend": 0.5829,
-      "yield": 7.76,
-      "sector": "銀行"
-    },
-    {
-      "ticker": "0939",
-      "name": "建設銀行",
-      "price": 8.66,
-      "dividend": 0.6396,
-      "yield": 7.39,
-      "sector": "建設銀行"
     },
     {
       "ticker": "1398",
       "name": "工商銀行",
       "price": 6.8,
-      "dividend": 0.4914,
-      "yield": 7.23,
-      "sector": "銀行"
-    },
-    {
-      "ticker": "3988",
-      "name": "中國銀行",
-      "price": 5.31,
-      "dividend": 0.382,
-      "yield": 7.19,
+      "dividend": 0.5305,
+      "yield": 7.8,
       "sector": "銀行"
     },
     {
       "ticker": "1288",
       "name": "農業銀行",
       "price": 5.85,
-      "dividend": 0.3952,
-      "yield": 6.76,
+      "dividend": 0.4188,
+      "yield": 7.16,
+      "sector": "銀行"
+    },
+    {
+      "ticker": "3968",
+      "name": "招商銀行",
+      "price": 48.42,
+      "dividend": 3.3085,
+      "yield": 6.83,
       "sector": "銀行"
     },
     {
@@ -58,14 +43,6 @@
       "dividend": 2.6433,
       "yield": 6.74,
       "sector": "房地產信託"
-    },
-    {
-      "ticker": "6862",
-      "name": "海底撈",
-      "price": 12.96,
-      "dividend": 0.845,
-      "yield": 6.52,
-      "sector": "餐飲"
     },
     {
       "ticker": "0101",
@@ -79,16 +56,16 @@
       "ticker": "1044",
       "name": "恒安國際",
       "price": 24.14,
-      "dividend": 1.5232,
-      "yield": 6.31,
+      "dividend": 1.5587,
+      "yield": 6.46,
       "sector": "消費品"
     },
     {
       "ticker": "1876",
       "name": "百威亞太",
       "price": 7.11,
-      "dividend": 0.4396,
-      "yield": 6.18,
+      "dividend": 0.4425,
+      "yield": 6.22,
       "sector": "食品"
     },
     {
@@ -116,6 +93,14 @@
       "sector": "地產"
     },
     {
+      "ticker": "6862",
+      "name": "海底撈",
+      "price": 12.96,
+      "dividend": 0.722,
+      "yield": 5.57,
+      "sector": "餐飲"
+    },
+    {
       "ticker": "2313",
       "name": "申洲國際",
       "price": 48.0,
@@ -127,9 +112,17 @@
       "ticker": "1997",
       "name": "九龍倉置業",
       "price": 24.1,
-      "dividend": 1.26,
-      "yield": 5.23,
+      "dividend": 1.32,
+      "yield": 5.48,
       "sector": "地產"
+    },
+    {
+      "ticker": "2318",
+      "name": "中國平安",
+      "price": 58.6,
+      "dividend": 3.0679,
+      "yield": 5.24,
+      "sector": "保險"
     },
     {
       "ticker": "0003",
@@ -156,20 +149,20 @@
       "sector": "能源"
     },
     {
-      "ticker": "2318",
-      "name": "中國平安",
-      "price": 58.6,
-      "dividend": 2.8031,
-      "yield": 4.78,
-      "sector": "保險"
-    },
-    {
       "ticker": "2388",
       "name": "中銀香港",
       "price": 48.0,
       "dividend": 2.289,
       "yield": 4.77,
       "sector": "銀行"
+    },
+    {
+      "ticker": "0291",
+      "name": "華潤啤酒",
+      "price": 24.14,
+      "dividend": 1.148,
+      "yield": 4.76,
+      "sector": "食品"
     },
     {
       "ticker": "0267",
@@ -180,27 +173,43 @@
       "sector": "綜合企業"
     },
     {
-      "ticker": "3968",
-      "name": "招商銀行",
-      "price": 48.42,
-      "dividend": 2.1899,
-      "yield": 4.52,
-      "sector": "銀行"
+      "ticker": "0027",
+      "name": "銀河娛樂",
+      "price": 32.62,
+      "dividend": 1.5,
+      "yield": 4.6,
+      "sector": "博彩"
+    },
+    {
+      "ticker": "1928",
+      "name": "金沙中國",
+      "price": 16.35,
+      "dividend": 0.75,
+      "yield": 4.59,
+      "sector": "博彩"
     },
     {
       "ticker": "1038",
       "name": "長江基建",
       "price": 57.85,
-      "dividend": 2.59,
-      "yield": 4.48,
+      "dividend": 2.61,
+      "yield": 4.51,
       "sector": "公用事業"
+    },
+    {
+      "ticker": "0868",
+      "name": "信義玻璃",
+      "price": 9.99,
+      "dividend": 0.44,
+      "yield": 4.4,
+      "sector": "工業"
     },
     {
       "ticker": "0002",
       "name": "中電控股",
       "price": 74.05,
-      "dividend": 3.15,
-      "yield": 4.25,
+      "dividend": 3.2,
+      "yield": 4.32,
       "sector": "公用事業"
     },
     {
@@ -212,6 +221,14 @@
       "sector": "運輸"
     },
     {
+      "ticker": "0005",
+      "name": "滙豐控股",
+      "price": 147.2,
+      "dividend": 5.862,
+      "yield": 3.98,
+      "sector": "銀行"
+    },
+    {
       "ticker": "1109",
       "name": "華潤置地",
       "price": 36.16,
@@ -220,42 +237,18 @@
       "sector": "地產"
     },
     {
-      "ticker": "0291",
-      "name": "華潤啤酒",
-      "price": 24.14,
-      "dividend": 0.93,
-      "yield": 3.85,
-      "sector": "食品"
-    },
-    {
-      "ticker": "0027",
-      "name": "銀河娛樂",
-      "price": 32.62,
-      "dividend": 1.2,
-      "yield": 3.68,
-      "sector": "博彩"
-    },
-    {
       "ticker": "1113",
       "name": "長實集團",
       "price": 47.8,
-      "dividend": 1.74,
-      "yield": 3.64,
+      "dividend": 1.78,
+      "yield": 3.72,
       "sector": "地產"
-    },
-    {
-      "ticker": "0005",
-      "name": "滙豐控股",
-      "price": 147.2,
-      "dividend": 5.1304,
-      "yield": 3.49,
-      "sector": "銀行"
     },
     {
       "ticker": "9618",
       "name": "京東集團",
       "price": 120.1,
-      "dividend": 3.9189,
+      "dividend": 3.9187,
       "yield": 3.26,
       "sector": "科技"
     },
@@ -268,28 +261,20 @@
       "sector": "醫藥"
     },
     {
-      "ticker": "1928",
-      "name": "金沙中國",
-      "price": 16.35,
-      "dividend": 0.5,
-      "yield": 3.06,
-      "sector": "博彩"
+      "ticker": "0388",
+      "name": "香港交易所",
+      "price": 410.4,
+      "dividend": 12.52,
+      "yield": 3.05,
+      "sector": "金融"
     },
     {
       "ticker": "0016",
       "name": "新鴻基地產",
       "price": 127.9,
-      "dividend": 3.75,
-      "yield": 2.93,
+      "dividend": 3.78,
+      "yield": 2.96,
       "sector": "地產"
-    },
-    {
-      "ticker": "0388",
-      "name": "香港交易所",
-      "price": 410.4,
-      "dividend": 10.9,
-      "yield": 2.66,
-      "sector": "金融"
     },
     {
       "ticker": "2628",
@@ -300,44 +285,52 @@
       "sector": "保險"
     },
     {
-      "ticker": "9999",
-      "name": "網易",
-      "price": 197.6,
-      "dividend": 4.7578,
-      "yield": 2.41,
-      "sector": "科技"
+      "ticker": "9633",
+      "name": "農夫山泉",
+      "price": 44.04,
+      "dividend": 1.13,
+      "yield": 2.57,
+      "sector": "食品"
     },
     {
-      "ticker": "0868",
-      "name": "信義玻璃",
-      "price": 9.99,
-      "dividend": 0.225,
-      "yield": 2.25,
-      "sector": "工業"
+      "ticker": "0939",
+      "name": "建設銀行",
+      "price": 8.66,
+      "dividend": 0.2047,
+      "yield": 2.36,
+      "sector": "建設銀行"
     },
     {
       "ticker": "1299",
       "name": "友邦保險",
       "price": 82.1,
-      "dividend": 1.7998,
-      "yield": 2.19,
+      "dividend": 1.9308,
+      "yield": 2.35,
       "sector": "保險"
+    },
+    {
+      "ticker": "3328",
+      "name": "交通銀行",
+      "price": 7.51,
+      "dividend": 0.1729,
+      "yield": 2.3,
+      "sector": "銀行"
+    },
+    {
+      "ticker": "3988",
+      "name": "中國銀行",
+      "price": 5.31,
+      "dividend": 0.1206,
+      "yield": 2.27,
+      "sector": "銀行"
     },
     {
       "ticker": "0669",
       "name": "創科實業",
       "price": 116.3,
-      "dividend": 2.43,
-      "yield": 2.09,
+      "dividend": 2.57,
+      "yield": 2.21,
       "sector": "工業"
-    },
-    {
-      "ticker": "9633",
-      "name": "農夫山泉",
-      "price": 44.04,
-      "dividend": 0.82,
-      "yield": 1.86,
-      "sector": "食品"
     },
     {
       "ticker": "1177",
@@ -346,6 +339,14 @@
       "dividend": 0.09,
       "yield": 1.84,
       "sector": "醫藥"
+    },
+    {
+      "ticker": "9999",
+      "name": "網易",
+      "price": 197.6,
+      "dividend": 3.6051,
+      "yield": 1.82,
+      "sector": "科技"
     },
     {
       "ticker": "0175",
@@ -359,7 +360,7 @@
       "ticker": "9988",
       "name": "阿里巴巴",
       "price": 130.9,
-      "dividend": 1.9594,
+      "dividend": 1.9593,
       "yield": 1.5,
       "sector": "科技"
     },
@@ -375,8 +376,16 @@
       "ticker": "0700",
       "name": "騰訊控股",
       "price": 481.6,
-      "dividend": 4.5,
-      "yield": 0.93,
+      "dividend": 5.3,
+      "yield": 1.1,
+      "sector": "科技"
+    },
+    {
+      "ticker": "2018",
+      "name": "瑞聲科技",
+      "price": 47.7,
+      "dividend": 0.35,
+      "yield": 0.73,
       "sector": "科技"
     },
     {
@@ -385,22 +394,6 @@
       "price": 83.0,
       "dividend": 0.532,
       "yield": 0.64,
-      "sector": "科技"
-    },
-    {
-      "ticker": "9961",
-      "name": "攜程集團",
-      "price": 389.2,
-      "dividend": 2.3512,
-      "yield": 0.6,
-      "sector": "科技"
-    },
-    {
-      "ticker": "2018",
-      "name": "瑞聲科技",
-      "price": 47.7,
-      "dividend": 0.24,
-      "yield": 0.5,
       "sector": "科技"
     }
   ]

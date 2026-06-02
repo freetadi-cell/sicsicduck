@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
+"""
+香港藍籌股息率數據更新腳本
+使用 yfinance 獲取股價及派息數據
+
+息率計算方法：TTM (Trailing Twelve Months)
+= 過去12個月實際派息總額 / 現價 × 100%
+
+每日 8:30 由 cron 執行
+"""
 import yfinance as yf
-import json, os, sys, logging
+import json, os, logging
 from datetime import datetime, timezone, timedelta
 
 HKT = timezone(timedelta(hours=8))
@@ -52,81 +61,77 @@ sectors = {
     "9961.HK":"科技","9988.HK":"科技","9999.HK":"科技",
 }
 
-def get_last_fy_dividend(stock):
+
+def get_ttm_dividend(stock):
     """
-    Get total dividends from the last completed fiscal year.
-    Most HK stocks have FY ending Dec 31, but some (banks, insurers) differ.
-    Uses yfinance dividends history to find the last FY and sum all dividends in it.
+    Get TTM (Trailing Twelve Months) dividend.
+    Sums all actual dividends paid in the past 365 days.
+    This is the most reliable method as it doesn't depend on fiscal year assumptions.
     """
     try:
         divs = stock.dividends
         if divs is None or divs.empty:
             return None
-        # Get fiscal year end from info
-        info = stock.info
-        fy_end_month = info.get('lastFiscalYearEnd')
-        
-        # Find dividend dates and group by fiscal year
-        # Most HK stocks: FY ends Dec 31. We determine the last completed FY
-        # by looking at the latest dividend and working backwards.
-        last_div_date = divs.index[-1]
-        now = datetime.now()
-        
-        # Try to determine FY end month
-        # Common HK FY end months: 12 (Dec) for most, 3 (Mar) for some Japanese/banks
-        fy_month = 12  # Default for HK stocks
-        
-        # Calculate last completed fiscal year end date
-        if now.month > fy_month:
-            last_fy_end = datetime(now.year, fy_month, 31)
-        else:
-            last_fy_end = datetime(now.year - 1, fy_month, 31)
-        
-        # Previous FY end
-        prev_fy_end = datetime(last_fy_end.year - 1, fy_month, 31)
-        
-        # Sum dividends in (prev_fy_end, last_fy_end]
-        mask = (divs.index > prev_fy_end.strftime('%Y-%m-%d')) & (divs.index <= last_fy_end.strftime('%Y-%m-%d'))
-        fy_divs = divs[mask]
-        
-        if fy_divs.empty:
+
+        now = datetime.now(HKT)
+        one_year_ago = now - timedelta(days=365)
+
+        # Sum dividends in the last 365 days
+        ttm_divs = divs[divs.index >= one_year_ago]
+        if ttm_divs.empty:
             return None
-        
-        return round(float(fy_divs.sum()), 4)
+
+        return round(float(ttm_divs.sum()), 4)
     except Exception:
         return None
 
 
 def main():
-    logger.info("Updating dividend stocks data...")
+    logger.info("Updating dividend stocks data (TTM method)...")
     results = []
-    for ticker, name in hsi_stocks.items():
+    failed = []
+    for ticker, name in sorted(hsi_stocks.items()):
         try:
             stock = yf.Ticker(ticker)
             info = stock.info
             price = info.get('currentPrice') or info.get('regularMarketPrice') or info.get('previousClose')
-            dr = get_last_fy_dividend(stock)
-            if price and dr and dr > 0:
-                yld = (dr / price) * 100
+            ttm_div = get_ttm_dividend(stock)
+
+            if price and ttm_div and ttm_div > 0:
+                yld = (ttm_div / price) * 100
                 results.append({
-                    'ticker': ticker.replace('.HK',''), 'name': name,
-                    'price': round(price, 2), 'dividend': round(dr, 4),
-                    'yield': round(yld, 2), 'sector': sectors.get(ticker, '其他'),
+                    'ticker': ticker.replace('.HK', ''),
+                    'name': name,
+                    'price': round(price, 2),
+                    'dividend': round(ttm_div, 4),
+                    'yield': round(yld, 2),
+                    'sector': sectors.get(ticker, '其他'),
                 })
+            else:
+                logger.warning(f"  ⚠ {ticker} {name}: no price or dividend (price={price}, div={ttm_div})")
+                failed.append(name)
         except Exception as e:
-            logger.warning(f"{ticker} {name}: {e}")
+            logger.warning(f"  ✗ {ticker} {name}: {e}")
+            failed.append(name)
 
     results.sort(key=lambda x: x['yield'], reverse=True)
-    os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
+
     data = {
         'last_updated': datetime.now(HKT).strftime('%Y-%m-%dT%H:%M:%S+08:00'),
         'source': 'Yahoo Finance (yfinance)',
-        'disclaimer': '息率 = 上一財政年度總派息（年終+中期+季息）/ 上一日收市價 × 100%。數據僅供參考，不構成投資建議。',
+        'method': 'TTM (Trailing Twelve Months) - 過去12個月實際派息總額',
+        'disclaimer': '息率 = 過去12個月實際派息總額 / 現價 × 100%（TTM法）。數據僅供參考，不構成投資建議。',
         'stocks': results,
     }
+
+    os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    logger.info(f"✅ Updated {len(results)} stocks")
+
+    logger.info(f"✅ Updated {len(results)} stocks, {len(failed)} skipped")
+    if failed:
+        logger.info(f"Skipped: {', '.join(failed)}")
+
 
 if __name__ == '__main__':
     main()

@@ -21,3 +21,7 @@
 2026-06-01 16:30:09,250 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 0011.HK"}}}
 2026-06-01 16:30:09,721 [ERROR] $0011.HK: possibly delisted; no timezone found
 2026-06-01 16:30:32,970 [INFO] ✅ Updated 50 stocks
+2026-06-02 16:30:03,221 [INFO] Updating dividend stocks data...
+2026-06-02 16:30:08,129 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 0011.HK"}}}
+2026-06-02 16:30:09,060 [ERROR] $0011.HK: possibly delisted; no timezone found
+2026-06-02 16:30:52,784 [INFO] ✅ Updated 50 stocks
