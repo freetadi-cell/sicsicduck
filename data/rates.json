@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T08:34:00.744673+08:00",
+  "last_updated": "2026-06-02T11:17:15.635136+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1599,41 +1599,43 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "new_funds": null
         },
         "1m": {
-          "rate": 2.4,
+          "rate": 2.5,
           "min_deposit": null,
-          "note": "定期存款年利率",
+          "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "new_funds": null
         },
         "3m": {
           "rate": 2.9,
           "min_deposit": null,
-          "note": "定期存款年利率",
+          "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         },
         "6m": {
-          "rate": 2.7,
+          "rate": 2.8,
           "min_deposit": null,
-          "note": "定期存款年利率",
+          "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         },
         "12m": {
-          "rate": 2.6,
+          "rate": 2.95,
           "min_deposit": null,
-          "note": "定期存款年利率",
+          "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": false
+          "new_funds": true
         }
       },
       "usd": {
