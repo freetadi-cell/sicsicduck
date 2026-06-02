@@ -4,8 +4,7 @@ The bank's promotional rates are in a PDF linked from the deposit page.
 We download the page HTML, find the first PDF link, download it, and
 extract rates using pdftotext.
 
-We use the 特優定期存款 rates (higher tier, 100萬+/12.5萬+) as they
-apply to all channels (branch + online + mobile).
+Priority: 新資金定期存款 (higher tier) > 特優定期存款 (higher tier)
 """
 import re
 import subprocess
@@ -61,29 +60,82 @@ def parse(text, tables=None, html=None):
 def _parse_pdf_text(pdf_text):
     """Extract rates from the PDF text content.
 
-    The PDF layout for each currency is:
-    - Currency header (港元/美元)
-    - Two tier descriptions
-    - Period headers (same line for both tiers)
-    - Rates line: all 10 rates on one line (5 lower tier + 5 higher tier)
+    PDF structure (2026 format):
+    1. 港元新資金定期存款推廣 — 只適用於分行
+       Two tiers: 100萬-5000萬 (higher) | 20萬-100萬 (lower)
+       Periods: 1m 3m 4m 6m 12m
+       Rates line: 5 lower + 5 higher = 10 rates
 
-    We want the higher tier (last 5 rates in each line).
+    2. 美元新資金定期存款推廣 — 只適用於分行
+       Two tiers: 3萬-12.5萬 (lower) | 12.5萬-1000萬 (higher)
+       Periods: 1m 3m 4m 6m 12m
+
+    3. 港元/美元/人民幣特優定期存款推廣 — 分行/網上/手機銀行
+       Two tiers each
+
+    We want NEW FUNDS rates (section 1 & 2), higher tier.
     """
     if not pdf_text:
         return None
 
     rates = {}
 
-    # Find 特優定期存款 section
-    marker = '特優定期存款推廣'
-    idx = pdf_text.find(marker)
+    # Parse 港元新資金定期存款推廣
+    hkd_rates = _parse_new_funds_section(pdf_text, '港元新資金定期存款推廣')
+    if hkd_rates:
+        rates['hkd'] = hkd_rates
+
+    # Parse 美元新資金定期存款推廣
+    usd_rates = _parse_new_funds_section(pdf_text, '美元新資金定期存款推廣')
+    if usd_rates:
+        rates['usd'] = usd_rates
+
+    if not rates:
+        # Fallback: try 特優定期存款
+        return _parse_special_rates(pdf_text)
+
+    rates['note'] = '新資金定期存款推廣（分行）'
+    return rates
+
+
+def _parse_new_funds_section(text, section_name):
+    """Parse a 新資金 section for a given currency.
+
+    Layout: section header, then '新資金' label, two tier labels on one line,
+    period headers, then rates line with 10 percentages (5 lower + 5 higher).
+    """
+    idx = text.find(section_name)
     if idx < 0:
         return None
 
-    section = pdf_text[idx:]
+    section = text[idx:idx + 600]  # limit search window
 
-    # Parse each currency block
-    # HKD block: from "港元" to "美元"
+    lines = section.split('\n')
+    for line in lines:
+        pcts = re.findall(r'(\d+\.\d+)%', line)
+        if len(pcts) == 10:
+            # First 5 = 20萬-100萬 (lower), last 5 = 100萬-5000萬 (higher)
+            # Take the MAX of both tiers for each period
+            periods = ['1m', '3m', '4m', '6m', '12m']
+            result = {}
+            for i, period in enumerate(periods):
+                result[period] = max(float(pcts[i]), float(pcts[5 + i]))
+            return result
+
+    return None
+
+
+def _parse_special_rates(text):
+    """Fallback: parse 特優定期存款推廣 section."""
+    marker = '特優定期存款推廣'
+    idx = text.find(marker)
+    if idx < 0:
+        return None
+
+    section = text[idx:]
+
+    rates = {}
+
     hkd_start = section.find('港元')
     usd_start = section.find('美元', hkd_start + 2 if hkd_start >= 0 else 0)
     rmb_start = section.find('人民幣', usd_start + 2 if usd_start >= 0 else 0)
@@ -91,14 +143,14 @@ def _parse_pdf_text(pdf_text):
     if hkd_start >= 0:
         end = usd_start if usd_start > hkd_start else len(section)
         block = section[hkd_start:end]
-        parsed = _parse_currency_block(block)
+        parsed = _parse_block_10(block)
         if parsed:
             rates['hkd'] = parsed
 
     if usd_start >= 0:
         end = rmb_start if rmb_start > usd_start else len(section)
         block = section[usd_start:end]
-        parsed = _parse_currency_block(block)
+        parsed = _parse_block_10(block)
         if parsed:
             rates['usd'] = parsed
 
@@ -108,18 +160,12 @@ def _parse_pdf_text(pdf_text):
     return None
 
 
-def _parse_currency_block(block):
-    """Parse a single currency block to extract the higher tier rates.
-
-    The rates line contains 10 percentages:
-    5 for lower tier + 5 for higher tier.
-    We want the higher tier (last 5).
-    """
+def _parse_block_10(block):
+    """Parse a block with 10 percentages (5 lower + 5 higher)."""
     lines = block.split('\n')
     for line in lines:
         pcts = re.findall(r'(\d+\.\d+)%', line)
         if len(pcts) == 10:
-            # Higher tier = last 5
             periods = ['1m', '3m', '4m', '6m', '12m']
             result = {}
             for i, period in enumerate(periods):
