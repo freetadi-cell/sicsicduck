@@ -70,16 +70,25 @@ def _extract_nf_row(section, currency):
     美元	4%	/	/
     """
     rates = {}
-    # Find the currency row
-    c_idx = section.find(currency)
-    if c_idx < 0:
+    # Find the currency row - must be at start of a line or after tab/newline
+    # Avoid matching currency inside amounts like '美元128,000'
+    pattern = rf'(?:^|\n|\t){re.escape(currency)}\s+(\d+(?:\.\d+)?%)\s*(\d+(?:\.\d+)?%|/)\s*(\d+(?:\.\d+)?%|/)'
+    m = re.search(pattern, section)
+    if not m:
+        # Fallback: look for currency followed by rates on same/next lines
+        pattern2 = rf'{re.escape(currency)}\s*\n?\s*((?:\d+(?:\.\d+)?%|/)\s*(?:\d+(?:\.\d+)?%|/)\s*(?:\d+(?:\.\d+)?%|/))'
+        m2 = re.search(pattern2, section)
+        if m2:
+            row = m2.group(1)
+            pcts = re.findall(r'(\d+(?:\.\d+)?)%', row)
+            period_order = ['3m', '6m', '12m']
+            for i, pct in enumerate(pcts):
+                if i < len(period_order):
+                    rates[period_order[i]] = float(pct)
         return rates
-
-    row = section[c_idx:c_idx + 200]
-
-    # Match pattern: 港元	2.8%	2.8%	2.8% or 港元\n2.8%\n2.8%\n2.8%
+    
+    row = m.group(0)
     pcts = re.findall(r'(\d+(?:\.\d+)?)%', row)
-
     period_order = ['3m', '6m', '12m']
     for i, pct in enumerate(pcts):
         if i < len(period_order):
