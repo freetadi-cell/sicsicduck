@@ -616,3 +616,48 @@
 2026-06-02 20:49:11,248 [INFO] Last updated: 2026-06-02T20:49:11.246002+08:00
 2026-06-02 20:49:11,248 [INFO] ==================================================
 2026-06-02 20:49:19,591 [INFO] Telegram notification sent
+2026-06-03 08:30:04,657 [INFO] ==================================================
+2026-06-03 08:30:04,665 [INFO] HK Deposit Rates Update
+2026-06-03 08:30:04,665 [INFO] Time: 2026-06-03 08:30:04
+2026-06-03 08:30:04,665 [INFO] ==================================================
+2026-06-03 08:30:04,666 [INFO] Processing 22 banks
+2026-06-03 08:30:17,522 [INFO]   [hsbc] ✓ 滙豐銀行: rates unchanged (verified)
+2026-06-03 08:30:30,483 [INFO]   [bochk] ✓ 中銀香港: rates UPDATED (6 changed)
+2026-06-03 08:30:43,076 [INFO]   [hangseng] ✓ 恒生銀行: rates unchanged (verified)
+2026-06-03 08:30:57,832 [INFO]   [sc] ✓ 渣打銀行: rates unchanged (verified)
+2026-06-03 08:31:11,158 [WARNING]   [fubon] ✗ Failed to scrape 富邦銀行
+2026-06-03 08:31:11,438 [INFO] UHK second source: found 9 banks
+2026-06-03 08:31:26,007 [INFO]   [icbc] ✓ 工銀亞洲: rates unchanged (verified)
+2026-06-03 08:31:37,713 [INFO]   [bea] ✓ 東亞銀行: rates unchanged (verified)
+2026-06-03 08:31:46,785 [INFO]   [cncbi] ✓ 中信銀行（國際）: rates unchanged (verified)
+2026-06-03 08:31:58,698 [INFO]   [dbs] ✓ 星展銀行: rates unchanged (verified)
+2026-06-03 08:32:09,280 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/bocomm.json
+2026-06-03 08:32:09,280 [INFO]   [bocomm] ⏳ Parser failed, saved raw data for 交通銀行 (unverified)
+2026-06-03 08:32:18,891 [INFO]   [shacom] ✓ 上海商業銀行: rates unchanged (verified)
+2026-06-03 08:32:29,741 [INFO]   [publicbank] ✓ 大眾銀行: rates unchanged (verified)
+2026-06-03 08:32:40,248 [INFO]   [winglung] ✓ 招商永隆: rates unchanged (verified)
+2026-06-03 08:32:50,714 [INFO]   [chbank] ✓ 創興銀行: rates unchanged (verified)
+2026-06-03 08:32:59,654 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/fusion.json
+2026-06-03 08:32:59,654 [INFO]   [fusion] ⏳ Parser failed, saved raw data for 富融銀行 (unverified)
+2026-06-03 08:33:18,601 [INFO]   Clicked tab @e11 (美元)
+2026-06-03 08:33:23,275 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-03 08:33:23,276 [INFO]   [airstar] ✓ 象象銀行: rates unchanged (verified)
+2026-06-03 08:33:23,276 [INFO]   [za] 眾安銀行: skip_scrape, using UHK fallback (unverified)
+2026-06-03 08:33:34,014 [INFO]   [pao] ✓ 平安數字銀行: rates unchanged (verified)
+2026-06-03 08:33:46,503 [INFO]   [welab] ✓ 匯立銀行: rates unchanged (verified)
+2026-06-03 08:33:57,513 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/livi.json
+2026-06-03 08:33:57,513 [INFO]   [livi] ⏳ Parser failed, saved raw data for 理慧銀行 (unverified)
+2026-06-03 08:34:11,370 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/ant.json
+2026-06-03 08:34:11,370 [INFO]   [ant] ⏳ Parser failed, saved raw data for 螞蟻銀行 (unverified)
+2026-06-03 08:34:22,304 [INFO]   [chiyu] ✓ 集友銀行: rates unchanged (verified)
+2026-06-03 08:34:22,307 [INFO] ==================================================
+2026-06-03 08:34:22,307 [INFO] Update complete:
+2026-06-03 08:34:22,307 [INFO]   ✅ Verified (same): 15
+2026-06-03 08:34:22,307 [INFO]   🔄 Verified (updated): 1
+2026-06-03 08:34:22,307 [INFO]   ❌ Unverified: 6
+2026-06-03 08:34:22,307 [INFO]     Updated: 中銀香港 (6 rates changed)
+2026-06-03 08:34:22,307 [INFO]   Pending extraction: 交通銀行, 富融銀行, 理慧銀行, 螞蟻銀行
+2026-06-03 08:34:22,307 [INFO]   Failed to scrape: 富邦銀行
+2026-06-03 08:34:22,307 [INFO] Last updated: 2026-06-03T08:34:22.305286+08:00
+2026-06-03 08:34:22,307 [INFO] ==================================================
+2026-06-03 08:34:27,416 [INFO] Telegram notification sent

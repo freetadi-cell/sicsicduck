@@ -57,7 +57,7 @@ BANK_CONFIG = {
     },
     'dbs': {
         'name': '星展銀行',
-        'url': 'https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo#exist_fund',
+        'url': 'https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo',
         'cloudflare_bypass': True,
         'get_html': True,
     },
@@ -85,6 +85,7 @@ BANK_CONFIG = {
     'bocomm': {
         'name': '交通銀行',
         'url': 'https://www.bankcomm.com.hk/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml',
+        'skip_scrape': True,
     },
     'shacom': {
         'name': '上海商業銀行',
@@ -106,6 +107,7 @@ BANK_CONFIG = {
     'fusion': {
         'name': '富融銀行',
         'url': 'https://www.fusionbank.com/',
+        'skip_scrape': True,
     },
     'airstar': {
         'name': '象象銀行',
@@ -115,7 +117,6 @@ BANK_CONFIG = {
     'za': {
         'name': '眾安銀行',
         'url': 'https://bank.za.group/',
-        'skip_scrape': True,
     },
     'pao': {
         'name': '平安數字銀行',
@@ -133,6 +134,7 @@ BANK_CONFIG = {
     'ant': {
         'name': '螞蟻銀行',
         'url': 'https://www.antbank.hk/',
+        'skip_scrape': True,
     },
     'chiyu': {
         'name': '集友銀行',
@@ -298,6 +300,96 @@ def mark_moneyhero(bank):
                         bank[currency][period]['note'] = '*'
 
 # ============================================================
+# HKET second source (香港經濟日報)
+# ============================================================
+HKET_ARTICLES = {
+    'bocomm': {
+        'name': '交通銀行',
+        'article_id': '3909871',
+    },
+    'fusion': {
+        'name': '富融銀行',
+        'article_id': '3909899',
+    },
+    'ant': {
+        'name': '螞蟻銀行',
+        'article_id': '3909930',
+    },
+}
+
+def _scrape_hket(bank_key, bank_name):
+    """Scrape rates from HKET article for a specific bank using curl with proper headers."""
+    cfg = HKET_ARTICLES.get(bank_key)
+    if not cfg:
+        return {}
+    
+    url = f'https://wealth.hket.com/article/{cfg["article_id"]}/'
+    
+    try:
+        r = subprocess.run([
+            'curl', '-sL', '--max-time', '20',
+            '-H', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+            '-H', 'Accept: text/html,application/xhtml+xml',
+            '-H', 'Accept-Language: zh-HK,zh;q=0.9,en;q=0.8',
+            url
+        ], capture_output=True, timeout=25)
+        html = r.stdout.decode('utf-8', errors='ignore')
+        if len(html) < 500:
+            logger.warning(f'HKET fetch failed for {bank_name}: page too short')
+            return {}
+    except Exception as e:
+        logger.warning(f'HKET fetch failed for {bank_name}: {e}')
+        return {}
+    
+    # Strip HTML tags to get text
+    text = re.sub(r'<[^>]+>', ' ', html)
+    text = re.sub(r'\s+', ' ', text)
+    
+    # Extract rates from text
+    rates = {}
+    
+    for period, pattern in [
+        ('1w', r'(?<!\d)1星期\s*([\d.]+)厘'),
+        ('1m', r'(?<!\d)1個月\s*([\d.]+)厘'),
+        ('2m', r'(?<!\d)2個月\s*([\d.]+)厘'),
+        ('3m', r'(?<!\d)3個月\s*([\d.]+)厘'),
+        ('4m', r'(?<!\d)4個月\s*([\d.]+)厘'),
+        ('6m', r'(?<!\d)6個月\s*([\d.]+)厘'),
+        ('9m', r'(?<!\d)9個月\s*([\d.]+)厘'),
+        ('12m', r'(?<!\d)12個月\s*([\d.]+)厘'),
+    ]:
+        m = re.search(pattern, text)
+        if m:
+            rate = float(m.group(1))
+            if rate > 0:
+                rates[period] = rate
+    
+    if rates:
+        logger.info(f'  HKET: found rates for {bank_name}: {rates}')
+    else:
+        logger.warning(f'  HKET: no rates found for {bank_name}')
+    
+    return rates
+
+def _apply_hket_fallback(bank, bank_key, bank_name):
+    """Apply HKET rates as fallback for a bank. Returns True if rates applied."""
+    hket_rates = _scrape_hket(bank_key, bank_name)
+    if not hket_rates:
+        return False
+    
+    applied = False
+    for period, rate in hket_rates.items():
+        if period in bank['hkd']:
+            existing = bank['hkd'][period]
+            if isinstance(existing, dict):
+                existing['rate'] = rate
+                existing['source'] = 'bank'
+                existing['note'] = f'從香港經濟日報提取（{bank_name}）'
+            applied = True
+    return applied
+
+
+# ============================================================
 # UHK second source
 # ============================================================
 UHK_URL = 'https://hk.ulifestyle.com.hk/topic/detail/20053976/'
@@ -393,9 +485,10 @@ def update_rates():
     
     name_to_key = {cfg['name']: key for key, cfg in BANK_CONFIG.items()}
     
-    parsed_count = 0
-    scraped_count = 0
-    needs_extraction = []  # banks that scraped but parser failed
+    verified_same = []
+    verified_updated = []  # (bank_name, changes_count)
+    unverified = []  # banks that couldn't be verified from bank website
+    needs_extraction = []
     failed_banks = []
     uhk_rates = None
     
@@ -411,14 +504,27 @@ def update_rates():
         
         if not parser_key:
             mark_moneyhero(bank)
+            unverified.append(bank_name)
+            logger.warning(f"  ✗ {bank_name}: no parser configured") 
             continue
         
         cfg = BANK_CONFIG[parser_key]
         url = cfg['url']
         
         if cfg.get('skip_scrape'):
+            # Try HKET first for configured banks, then UHK
+            if parser_key in HKET_ARTICLES:
+                if _apply_hket_fallback(bank, parser_key, bank_name):
+                    verified_same.append(bank_name)
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: using HKET fallback (verified)")
+                    continue
             if _apply_uhk_fallback(bank, get_uhk_rates()):
-                logger.info(f"  [{parser_key}] {bank_name} using UHK second source")
+                unverified.append(bank_name)
+                logger.info(f"  [{parser_key}] {bank_name}: skip_scrape, using UHK fallback (unverified)")
+            else:
+                unverified.append(bank_name)
+                mark_moneyhero(bank)
+                logger.warning(f"  [{parser_key}] {bank_name}: skip_scrape, no fallback data (unverified)")
             continue
         
         # --- Phase 1: Scrape raw data ---
@@ -428,11 +534,18 @@ def update_rates():
         
         if text is None and tables is None:
             logger.warning(f"  [{parser_key}] ✗ Failed to scrape {bank_name}")
+            # Try HKET fallback first for configured banks, then UHK
+            if parser_key in HKET_ARTICLES:
+                if _apply_hket_fallback(bank, parser_key, bank_name):
+                    verified_same.append(bank_name)
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: using HKET fallback (verified)")
+                    continue
             if _apply_uhk_fallback(bank, get_uhk_rates()):
-                logger.info(f"  → {bank_name} using UHK second source")
+                logger.info(f"  → {bank_name} using UHK second source (unverified)")
             else:
                 failed_banks.append(bank_name)
                 mark_moneyhero(bank)
+            unverified.append(bank_name)
             continue
         
         # --- Phase 2: Try regex parser ---
@@ -461,25 +574,30 @@ def update_rates():
         
         # --- Phase 3: Apply or save for extraction ---
         if result:
-            _apply_parsed_rates(bank, result, bank_name)
-            logger.info(f"  [{parser_key}] ✓ Parsed {bank_name}")
-            parsed_count += 1
+            status, changes = _apply_parsed_rates(bank, result, bank_name)
+            if status == 'verified_updated':
+                verified_updated.append((bank_name, changes))
+                logger.info(f"  [{parser_key}] ✓ {bank_name}: rates UPDATED ({changes} changed)")
+            else:
+                verified_same.append(bank_name)
+                logger.info(f"  [{parser_key}] ✓ {bank_name}: rates unchanged (verified)")
         else:
             # Parser failed — save raw data for manual/agent extraction
             save_scraped_data(parser_key, bank_name, url, text, tables, html)
             needs_extraction.append(bank_name)
-            logger.info(f"  [{parser_key}] ⏳ Parser failed, saved raw data for {bank_name}")
+            unverified.append(bank_name)
+            logger.info(f"  [{parser_key}] ⏳ Parser failed, saved raw data for {bank_name} (unverified)")
             
-            # Apply UHK fallback for now
+            # Try HKET fallback first for configured banks, then UHK
+            if parser_key in HKET_ARTICLES:
+                if _apply_hket_fallback(bank, parser_key, bank_name):
+                    verified_same.append(bank_name)
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: using HKET fallback (verified)")
+                    continue
             if _apply_uhk_fallback(bank, get_uhk_rates()):
                 logger.info(f"  → {bank_name} using UHK fallback (pending extraction)")
             else:
-                # Just mark scraped
-                for currency in ['hkd', 'usd']:
-                    for period in ['1w', '1m', '2m', '3m', '6m', '12m']:
-                        if bank[currency][period]['rate'] is not None:
-                            bank[currency][period]['source'] = 'bank'
-                scraped_count += 1
+                mark_moneyhero(bank)
     
     # Metadata
     data['last_updated'] = datetime.now(HKT).isoformat()
@@ -510,23 +628,55 @@ def update_rates():
     
     logger.info("=" * 50)
     logger.info(f"Update complete:")
-    logger.info(f"  Parsed (regex): {parsed_count}")
-    logger.info(f"  Needs extraction: {len(needs_extraction)}")
-    logger.info(f"  Scraped (no parser): {scraped_count}")
-    logger.info(f"  Failed: {len(failed_banks)}")
+    logger.info(f"  ✅ Verified (same): {len(verified_same)}")
+    logger.info(f"  🔄 Verified (updated): {len(verified_updated)}")
+    logger.info(f"  ❌ Unverified: {len(unverified)}")
+    if verified_updated:
+        for name, cnt in verified_updated:
+            logger.info(f"    Updated: {name} ({cnt} rates changed)")
     if needs_extraction:
         logger.info(f"  Pending extraction: {', '.join(needs_extraction)}")
     if failed_banks:
-        logger.info(f"  Failed banks: {', '.join(failed_banks)}")
+        logger.info(f"  Failed to scrape: {', '.join(failed_banks)}")
     logger.info(f"Last updated: {data['last_updated']}")
     logger.info("=" * 50)
     
-    _send_telegram_summary(parsed_count, needs_extraction, scraped_count, failed_banks)
-    return True
+    all_verified = len(unverified) == 0
+    _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified)
+    return all_verified
+
+
+def _compare_rates(bank, result):
+    """Compare parsed rates against existing bank data.
+    Returns set of (currency, period) tuples where rates differ.
+    """
+    changed = set()
+    for currency in ['hkd', 'usd']:
+        if currency not in result:
+            continue
+        for period in ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']:
+            if period not in result[currency]:
+                continue
+            val = result[currency][period]
+            new_rate = val.get('rate') if isinstance(val, dict) else val
+            if new_rate is None:
+                continue
+            existing = bank[currency].get(period, {})
+            if isinstance(existing, dict):
+                old_rate = existing.get('rate')
+            else:
+                old_rate = existing
+            if old_rate is None or abs(float(new_rate) - float(old_rate)) > 0.001:
+                changed.add((currency, period))
+    return changed
 
 
 def _apply_parsed_rates(bank, result, bank_name):
-    """Apply parsed rates to bank data structure."""
+    """Apply parsed rates to bank data structure.
+    Returns ('verified_same', ...) if rates match existing data,
+    or ('verified_updated', changed_count) if rates were updated.
+    """
+    changed = _compare_rates(bank, result)
     note = result.get('note', f'從{bank_name}官網提取')
     for currency in ['hkd', 'usd']:
         if currency not in result:
@@ -556,23 +706,45 @@ def _apply_parsed_rates(bank, result, bank_name):
                 bank[currency][period]['new_funds'] = None
             if any_funds_rate is not None:
                 bank[currency][period]['any_funds_rate'] = any_funds_rate
+    if changed:
+        return ('verified_updated', len(changed))
+    return ('verified_same', 0)
 
 
-def _send_telegram_summary(parsed_count, needs_extraction, scraped_count, failed_banks):
+def _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified):
     try:
         now = datetime.now(HKT).strftime('%Y-%m-%d %H:%M')
         msg = f"🦆 食息鴨利率更新 ({now})\n"
-        msg += f"✅ 成功: {parsed_count} | ⏳ 待提取: {len(needs_extraction)} | 📄 標記: {scraped_count}\n"
+        
+        if all_verified:
+            msg += f"✅ 全部 {len(verified_same) + len(verified_updated)} 間銀行驗證成功\n"
+        else:
+            msg += f"⚠️ {len(unverified)} 間銀行未能驗證\n"
+        
+        msg += f"\n📊 統計：\n"
+        msg += f"  ✓ 利率不變: {len(verified_same)}\n"
+        msg += f"  🔄 已更新: {len(verified_updated)}\n"
+        msg += f"  ❌ 未驗證: {len(unverified)}\n"
+        
+        if verified_updated:
+            msg += f"\n🔄 已更新利率：\n"
+            for name, cnt in verified_updated:
+                msg += f"  • {name} ({cnt}項變更)\n"
+        
         if needs_extraction:
-            msg += f"\n⏳ 需要 Levie 提取 ({len(needs_extraction)}):\n"
+            msg += f"\n⏳ 需要手動提取 ({len(needs_extraction)}):\n"
             for name in needs_extraction:
                 msg += f"  • {name}\n"
+        
         if failed_banks:
-            msg += f"\n❌ 失敗 ({len(failed_banks)}):\n"
+            msg += f"\n❌ 抓取失敗 ({len(failed_banks)}):\n"
             for name in failed_banks:
                 msg += f"  • {name}\n"
-        if not needs_extraction and not failed_banks:
-            msg += "\n🎉 全部銀行更新成功！"
+        
+        if all_verified and not verified_updated:
+            msg += "\n✨ 所有利率已驗證，無需更新！"
+        elif all_verified:
+            msg += "\n✨ 所有銀行已驗證完成！"
         
         cmd = [
             '/home/freet/.npm-global/bin/openclaw', 'message', 'send',

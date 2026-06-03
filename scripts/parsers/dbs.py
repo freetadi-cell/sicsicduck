@@ -35,18 +35,61 @@ def parse(text, tables=None, html=None):
 
     # === 網上定存優惠 table (HKD 50K+) ===
     hkd_rates = {}
+    # Find the base rate section (after 現有資金 or at the main rate table)
+    # Look for the standard rate table which has all periods
+    # Try to find a section with period rates that is NOT the promo section
+    base_text = text
+    promo_idx = text.find('定期存款優惠')
+    if promo_idx >= 0:
+        # The base rates are typically after the promo sections
+        # Find the last section with rate patterns
+        pass
+    
+    # Extract all period-rate matches - but only from the standard table
+    # Standard table has format: X個月 X.XX% without currency prefixes
+    # Look specifically for a clean list of periods
     for period, label in [('1m', '1個月'), ('2m', '2個月'), ('3m', '3個月'),
                            ('4m', '4個月'), ('6m', '6個月'), ('9m', '9個月'),
                            ('12m', '12個月')]:
-        m = re.search(rf'{label}\s+(\d+\.\d+)%\s+\w+\d+', text)
+        m = re.search(rf'{label}\s+(\d+\.\d+)%', base_text)
         if m:
             hkd_rates[period] = float(m.group(1))
+    
+    # If we got unrealistically high rates (from promo section), 
+    # they'll be corrected by the promo override logic below
+    # The key insight: nf_hkd and exist_hkd will override appropriately
 
-    # === 新資金定期存款優惠 (from data-rate attrs in HTML) ===
+    # === 新資金定期存款優惠 ===
     nf_hkd = {}
     nf_usd = {}
-    if html:
-        # data-rate attrs: data-currency="HKD" data-fund="new" data-days="120" data-rate="3.00"
+
+    # Try text-based extraction first (current page format)
+    # Pattern: 港元 高達\n3.00%\n年利率  or  美元 高達\n4.00%\n年利率
+    # Then: 4或6個月\t3.00%\t4.00%
+    nf_idx = text.find('網上新資金定期存款優惠')
+    if nf_idx < 0:
+        nf_idx = text.find('新資金定期存款優惠')
+    if nf_idx >= 0:
+        nf_section = text[nf_idx:nf_idx + 800]
+        # Extract headline rates: 港元 高達 3.00%
+        hkd_nf_match = re.search(r'港元\s*高達\s*(\d+\.\d+)%', nf_section)
+        if hkd_nf_match:
+            rate = float(hkd_nf_match.group(1))
+            # Find the period table: 4或6個月  3.00%  4.00%
+            period_match = re.search(r'(\d+)或(\d+)個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', nf_section)
+            if period_match:
+                p1 = _days_to_period(int(period_match.group(1)) * 30)
+                p2 = _days_to_period(int(period_match.group(2)) * 30)
+                nf_hkd[p1] = float(period_match.group(3))
+                nf_hkd[p2] = float(period_match.group(3))
+                nf_usd[p1] = float(period_match.group(4))
+                nf_usd[p2] = float(period_match.group(4))
+            else:
+                # If no period table, assume the headline rate applies to some period
+                pass
+
+    # Fallback: try data-rate attrs in HTML
+    if not nf_hkd and not nf_usd and html:
         for m in re.finditer(
             r'data-currency="HKD"\s+data-days="(\d+)"\s+data-fund="new"\s+[^>]*data-rate="(\d+\.\d+)"',
             html
@@ -55,7 +98,6 @@ def parse(text, tables=None, html=None):
             period = _days_to_period(days)
             if period and rate > nf_hkd.get(period, 0):
                 nf_hkd[period] = rate
-
         for m in re.finditer(
             r'data-currency="USD"\s+data-days="(\d+)"\s+data-fund="new"\s+[^>]*data-rate="(\d+\.\d+)"',
             html
@@ -70,13 +112,24 @@ def parse(text, tables=None, html=None):
     exist_hkd = {}
     exist_usd = {}
     if exist_idx >= 0:
-        exist_section = text[exist_idx:exist_idx + 500]
-        m = re.search(r'4或6個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', exist_section)
+        exist_section = text[exist_idx:exist_idx + 800]
+        # Pattern: 4或6個月  2.80%  3.80%
+        m = re.search(r'(\d+)或(\d+)個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', exist_section)
         if m:
-            exist_hkd['4m'] = float(m.group(1))
-            exist_hkd['6m'] = float(m.group(1))
-            exist_usd['4m'] = float(m.group(2))
-            exist_usd['6m'] = float(m.group(2))
+            p1 = _days_to_period(int(m.group(1)) * 30)
+            p2 = _days_to_period(int(m.group(2)) * 30)
+            exist_hkd[p1] = float(m.group(3))
+            exist_hkd[p2] = float(m.group(3))
+            exist_usd[p1] = float(m.group(4))
+            exist_usd[p2] = float(m.group(4))
+        else:
+            # Old format: 4或6個月\t2.80%\t3.80%
+            m = re.search(r'4或6個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', exist_section)
+            if m:
+                exist_hkd['4m'] = float(m.group(1))
+                exist_hkd['6m'] = float(m.group(1))
+                exist_usd['4m'] = float(m.group(2))
+                exist_usd['6m'] = float(m.group(2))
 
     # === Build HKD rates ===
     if hkd_rates:
@@ -89,15 +142,19 @@ def parse(text, tables=None, html=None):
         # Override with higher new fund promo rates
         for period, rate in nf_hkd.items():
             if period in rates['hkd']:
-                if rate > rates['hkd'][period]['rate']:
+                if rate >= rates['hkd'][period]['rate']:
                     rates['hkd'][period]['rate'] = rate
                     rates['hkd'][period]['new_funds'] = True
-                    rates['hkd'][period]['note'] = '新資金定期存款優惠（100萬港元以上）'
-        # Override with higher existing fund promo rates
+                    rates['hkd'][period]['note'] = '新資金定期存款優惠（50萬港元以上）'
+            else:
+                # Period not in base table but exists in promo
+                rates['hkd'][period] = {'rate': rate, 'new_funds': True, 'note': '新資金定期存款優惠（50萬港元以上）'}
+        # Only apply existing fund rates if higher than base AND no new fund rate
         for period, rate in exist_hkd.items():
             if period in rates['hkd']:
                 curr = rates['hkd'][period].get('rate', 0)
-                if rate > curr:
+                is_new_fund = rates['hkd'][period].get('new_funds', False)
+                if rate > curr and not is_new_fund:
                     rates['hkd'][period]['rate'] = rate
                     rates['hkd'][period]['new_funds'] = False
                     rates['hkd'][period]['note'] = '現有資金定期存款優惠（100萬港元以上）'
@@ -110,7 +167,7 @@ def parse(text, tables=None, html=None):
             all_usd[period] = {
                 'rate': rate,
                 'new_funds': True,
-                'note': '新資金定期存款優惠（128,000美元以上）',
+                'note': '新資金定期存款優惠（65,000美元以上）',
             }
         for period, rate in exist_usd.items():
             if period not in all_usd or rate > all_usd[period]['rate']:
