@@ -1046,7 +1046,7 @@ function renderTable() {
     const bestRates = {};
     const avgRates = {};
     const rankByPeriod = {};
-    ['1m', '2m', '3m', '6m', '12m'].forEach(period => {
+    ['1w', '1m', '2m', '3m', '6m', '12m'].forEach(period => {
         let best = -1;
         const validRates = [];
         banks.forEach(b => {
