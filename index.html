@@ -809,6 +809,7 @@
             <button class="funds-btn active" data-funds="all">全部</button>
             <button class="funds-btn" data-funds="new">💰 新資金</button>
             <button class="funds-btn" data-funds="existing">📦 現有資金</button>
+            <button class="funds-btn" data-funds="exchange">💱 兌換</button>
         </div>
 
     </div>
@@ -910,7 +911,7 @@ document.addEventListener('click', function(e) {
 let ratesData = null;
 let currentCurrency = 'hkd';
 let currentPeriod = 'all';
-let currentFunds = 'all'; // 'all', 'new', 'existing'
+let currentFunds = 'all'; // 'all', 'new', 'existing', 'exchange'
 
 let currentType = 'all';
 let sortColumn = '3m';
@@ -1022,6 +1023,10 @@ function renderTable() {
         // Funds type filter (fund_type)
         if (currentFunds === 'new' && rd.fund_type !== 'new_funds') return null;
         if (currentFunds === 'existing' && rd.fund_type !== 'existing_funds') return null;
+        if (currentFunds === 'exchange') {
+            const condArr = rd.conditions || [];
+            if (rd.currency_exchange !== true && !condArr.includes('exchange')) return null;
+        }
 
         return r;
     };
@@ -1100,6 +1105,10 @@ function renderTable() {
                 // Funds type filter
                 if (displayRate !== null && currentFunds === 'new' && rateData?.fund_type !== 'new_funds') displayRate = null;
                 if (displayRate !== null && currentFunds === 'existing' && rateData?.fund_type !== 'existing_funds') displayRate = null;
+                if (displayRate !== null && currentFunds === 'exchange') {
+                    const condArr = rateData?.conditions || [];
+                    if (rateData?.currency_exchange !== true && !condArr.includes('exchange')) displayRate = null;
+                }
 
                 const isBest = displayRate !== null && displayRate !== undefined && displayRate === bestRates[period];
 
