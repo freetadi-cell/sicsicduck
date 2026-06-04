@@ -222,6 +222,45 @@ HKET_ARTICLES = {
 }
 
 # ============================================================
+# HKET CNY article config (人民幣綜合文章)
+# ============================================================
+HKET_CNY_ARTICLE = {
+    'article_id': '4134368',  # 人民幣定期存款｜大行料升值逾20%！人民幣存款4大種類 賺6.8厘至21厘
+}
+
+# Map bank names mentioned in CNY article to our bank keys
+CNY_NAME_TO_KEY = {
+    '中銀': 'bochk', '中銀香港': 'bochk',
+    '滙豐': 'hsbc', '滙豐銀行': 'hsbc', 'HSBC': 'hsbc',
+    '恒生': 'hangseng', '恒生銀行': 'hangseng',
+    '渣打': 'sc', '渣打銀行': 'sc',
+    '星展': 'dbs', '星展銀行': 'dbs', 'DBS': 'dbs',
+    '富邦': 'fubon', '富邦銀行': 'fubon',
+    '工銀': 'icbc', '工銀亞洲': 'icbc', '工商銀行': 'icbc',
+    '東亞': 'bea', '東亞銀行': 'bea',
+    '中信': 'cncbi', '中信銀行': 'cncbi',
+    '南商': 'ncb', '南洋商業': 'ncb', '南洋商業銀行': 'ncb',
+    '交通': 'bocomm', '交通銀行': 'bocomm', '交銀': 'bocomm',
+    '上海商業': 'shacom', '上海商業銀行': 'shacom',
+    '大眾': 'publicbank', '大眾銀行': 'publicbank',
+    '招商永隆': 'winglung', '永隆': 'winglung',
+    '創興': 'chbank', '創興銀行': 'chbank',
+    '富融': 'fusion', '富融銀行': 'fusion', 'Fusion': 'fusion',
+    '象象': 'airstar', '象象銀行': 'airstar', '天星': 'airstar',
+    '眾安': 'za', '眾安銀行': 'za', 'ZA': 'za',
+    '平安': 'pao', '平安數字銀行': 'pao', 'PAO': 'pao', 'PAObank': 'pao',
+    '匯立': 'welab', '匯立銀行': 'welab', 'WeLab': 'welab',
+    '理慧': 'livi', '理慧銀行': 'livi', 'livi': 'livi', 'livibank': 'livi',
+    '螞蟻': 'ant', '螞蟻銀行': 'ant', 'Ant': 'ant',
+    '集友': 'chiyu', '集友銀行': 'chiyu',
+    '建行': 'ccb_asia', '建行亞洲': 'ccb_asia', '建設銀行': 'ccb_asia',
+    '大新': 'dahsing', '大新銀行': 'dahsing',
+    '花旗': 'citibank', '花旗銀行': 'citibank',
+    'OCBC': 'ocbc', '華僑': 'ocbc', '華僑銀行': 'ocbc',
+    'Mox': 'mox', 'Mox Bank': 'mox',
+}
+
+# ============================================================
 # Scratch dir
 # ============================================================
 SCRATCH_DIR = os.path.join(DATA_DIR, '_scratch')
@@ -394,9 +433,14 @@ def mark_moneyhero(bank):
 # ============================================================
 
 def _fetch_hket_article(article_id):
-    """Fetch HKET article HTML and return (text, article_date or None)."""
+    """Fetch HKET article HTML and return (text, article_date or None).
+    Falls back to agent-browser if curl is blocked (403).
+    """
     url = f'https://wealth.hket.com/article/{article_id}/'
+    text = None
+    article_date = None
 
+    # ---- Try curl first ----
     try:
         r = subprocess.run([
             'curl', '-sL', '--max-time', '20',
@@ -406,20 +450,41 @@ def _fetch_hket_article(article_id):
             url
         ], capture_output=True, timeout=25)
         html = r.stdout.decode('utf-8', errors='ignore')
-        if len(html) < 500:
-            logger.warning(f'  HKET fetch failed: page too short')
-            return None, None
+        if html and len(html) >= 500 and '403 ERROR' not in html and 'Request blocked' not in html:
+            text = re.sub(r'<[^>]+>', ' ', html)
+            text = re.sub(r'\s+', ' ', text)
     except Exception as e:
-        logger.warning(f'  HKET fetch failed: {e}')
+        logger.warning(f'  HKET curl failed: {e}')
+
+    # ---- Fallback to agent-browser if curl failed ----
+    if text is None or len(text) < 500:
+        logger.info(f'  HKET curl failed/blocked for article {article_id}, trying agent-browser')
+        try:
+            run_browser('agent-browser close', timeout=5)
+            time.sleep(1)
+            r2 = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
+            if r2:
+                time.sleep(5)
+                raw = run_browser('agent-browser eval "document.body.innerText.substring(0, 15000)"', timeout=10)
+                if raw:
+                    try:
+                        text = json.loads(raw)
+                    except Exception:
+                        text = raw.strip('"')
+            run_browser('agent-browser close', timeout=5)
+            time.sleep(1)
+        except Exception as e:
+            logger.warning(f'  HKET browser fallback failed: {e}')
+            run_browser('agent-browser close', timeout=5)
+
+    if not text or len(text) < 200:
         return None, None
 
-    # Strip HTML tags to get text
-    text = re.sub(r'<[^>]+>', ' ', html)
-    text = re.sub(r'\s+', ' ', text)
-
-    # Extract 最後更新 date
+    # ---- Extract article date ----
+    # Support: "最後更新：2026/06/04", "最後更新日期︰2026年5月26日",
+    #          "更新日期：2026.06.04", "本文最後更新日期︰2026年6月4日"
     article_date = None
-    m = re.search(r'最後更新[：:]\s*(\d{4})/(\d{2})/(\d{2})', text)
+    m = re.search(r'(?:最後更新|更新日期|最後更新日期)[：:︰\s]*(\d{4})[/\.年](\d{1,2})[/\.月](\d{1,2})', text)
     if m:
         article_date = date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
 
@@ -650,6 +715,122 @@ def _hket_get_rates(bank_key, bank_name):
     return result, True
 
 
+def _hket_get_cny_rates():
+    """Fetch and parse HKET CNY overview article for ALL banks.
+    Returns dict of {bank_key: {cny: {period: {rate, fund_type, conditions, ...}}}} or empty dict.
+    """
+    cfg = HKET_CNY_ARTICLE
+    text, article_date = _fetch_hket_article(cfg['article_id'])
+    if text is None:
+        logger.info('  HKET CNY: fetch failed')
+        return {}
+
+    today = date.today()
+    if article_date is None:
+        logger.info('  HKET CNY: could not find article date, attempting parse anyway')
+        # Don't skip - still try to parse
+    elif (today - article_date).days > 14:
+        logger.info(f'  HKET CNY article last updated {article_date.strftime("%Y/%m/%d")}, older than 14 days, skipping')
+        return {}
+
+    date_str = article_date.strftime("%Y/%m/%d") if article_date else 'unknown'
+    logger.info(f'  HKET CNY: article updated {date_str}, parsing...')
+
+    # Parse the comparison table and inline rate mentions
+    # Format 1: "12個月1.5厘（中銀、南商、富融、螞蟻）"
+    # Format 2: "3個月（現有客戶）1.5厘（螞蟻、富融）"
+    # Format 3: "1個月（兌換資金）6.8厘（平安）"
+
+    bank_cny = {}  # bank_key -> {cny: {period: {rate, fund_type, conditions}}}
+
+    # Pattern: period + optional condition + rate + banks
+    # e.g. "12個月1.5厘（中銀、南商、富融、螞蟻）"
+    # e.g. "3個月（現有客戶）1.5厘（螞蟻、富融）"
+    # e.g. "1星期（兌換資金）21厘（平安）"
+    patterns = [
+        # period(condition) rate(banks)
+        r'(?P<period>\d+個月|\d+星期|\d+天)\s*[（(](?P<cond>[^）)]+)[）)]\s*(?P<rate>[\d.]+)厘[（(](?P<banks>[^）)]+)[）)]',
+        # period rate(banks)
+        r'(?P<period>\d+個月|\d+星期|\d+天)\s*(?P<rate>[\d.]+)厘[（(](?P<banks>[^）)]+)[）)]',
+    ]
+
+    period_map = {
+        '1星期': '1w', '7天': '1w', '1個月': '1m', '2個月': '2m',
+        '3個月': '3m', '4個月': '4m', '5個月': '5m', '6個月': '6m',
+        '9個月': '9m', '12個月': '12m',
+    }
+
+    for pat in patterns:
+        for m in re.finditer(pat, text):
+            period_str = m.group('period')
+            period_key = period_map.get(period_str)
+            if not period_key:
+                continue
+            rate = float(m.group('rate'))
+            if rate <= 0:
+                continue
+            banks_str = m.group('banks')
+            cond_str = m.groupdict().get('cond', '') or ''
+
+            # Parse conditions
+            fund_type = None
+            conditions = []
+            if '新資金' in cond_str or '新客' in cond_str:
+                fund_type = 'new_funds'
+            elif '現有' in cond_str:
+                fund_type = 'existing_funds'
+            if '兌換' in cond_str:
+                conditions.append('exchange')
+            if '新開' in cond_str or '新戶' in cond_str or '開戶' in cond_str:
+                conditions.append('new_account')
+                fund_type = 'new_funds'
+            if '理財' in cond_str or '貴賓' in cond_str:
+                conditions.append('upgrade_wealth')
+
+            # Parse bank names
+            bank_names = re.split(r'[、，,]|及|和', banks_str)
+            for bn in bank_names:
+                bn = bn.strip()
+                if not bn:
+                    continue
+                # Find matching key
+                key = None
+                for name, k in CNY_NAME_TO_KEY.items():
+                    if name in bn or bn in name:
+                        key = k
+                        break
+                if not key:
+                    continue
+
+                if key not in bank_cny:
+                    bank_cny[key] = {'cny': {}}
+                if period_key not in bank_cny[key]['cny']:
+                    bank_cny[key]['cny'][period_key] = {
+                        'rate': rate,
+                        'fund_type': fund_type,
+                        'conditions': list(conditions),
+                        'note': '從香港經濟日報人民幣文章提取',
+                        'source': 'hket',
+                    }
+                else:
+                    # Keep the higher rate
+                    if rate > bank_cny[key]['cny'][period_key]['rate']:
+                        bank_cny[key]['cny'][period_key]['rate'] = rate
+                        bank_cny[key]['cny'][period_key]['fund_type'] = fund_type
+                        bank_cny[key]['cny'][period_key]['conditions'] = list(conditions)
+
+    # Skip inline mentions - the comparison table patterns above are reliable enough
+    # and inline text often mixes HKD and CNY rates causing false positives
+
+    found_banks = list(bank_cny.keys())
+    if found_banks:
+        logger.info(f'  HKET CNY: found rates for {len(found_banks)} banks: {found_banks}')
+    else:
+        logger.info('  HKET CNY: no bank rates found in article')
+
+    return bank_cny
+
+
 def _apply_hket_rates(bank, bank_key, bank_name):
     """Try to get rates from HKET and apply them.
     Returns True if rates were applied.
@@ -823,6 +1004,9 @@ def update_rates():
 
     name_to_key = {cfg['name']: key for key, cfg in BANK_CONFIG.items()}
 
+    # ---- Phase 0: Fetch HKET CNY overview article for ALL banks ----
+    cny_hket_data = _hket_get_cny_rates()
+
     verified_same = []
     verified_updated = []   # (bank_name, changes_count)
     unverified = []         # banks that couldn't be verified
@@ -849,7 +1033,25 @@ def update_rates():
         cfg = BANK_CONFIG[parser_key]
         url = cfg['url']
 
-        # ---- Phase 1: Try HKET (primary source) ----
+        # ---- Apply HKET CNY data if available ----
+        if parser_key and parser_key in cny_hket_data:
+            cny_data = cny_hket_data[parser_key].get('cny', {})
+            if cny_data:
+                for period, val in cny_data.items():
+                    if isinstance(val, dict) and val.get('rate'):
+                        bank['cny'][period] = {
+                            'rate': val['rate'],
+                            'min_deposit': bank['cny'].get(period, {}).get('min_deposit'),
+                            'note': val.get('note', '從香港經濟日報人民幣文章提取'),
+                            'source': 'hket',
+                            'fund_type': val.get('fund_type'),
+                            'conditions': val.get('conditions', []),
+                        }
+                cny_periods = [p for p, v in cny_data.items() if isinstance(v, dict) and v.get('rate')]
+                if cny_periods:
+                    logger.info(f'  [{parser_key}] CNY from HKET overview: {cny_periods}')
+
+        # ---- Phase 1: Try HKET (primary source for HKD/USD) ----
         if parser_key in HKET_ARTICLES:
             hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
             if hket_ok and hket_result:
