@@ -1095,7 +1095,7 @@ function renderTable() {
             </td>`;
 
             // Rate columns
-            ['1m', '2m', '3m', '6m', '12m'].forEach(period => {
+            ['1w', '1m', '2m', '3m', '6m', '12m'].forEach(period => {
                 if (!periods.includes(period) && currentPeriod !== 'all') {
                     html += '<td class="rate-cell na" style="display:none">-</td>';
                     return;
