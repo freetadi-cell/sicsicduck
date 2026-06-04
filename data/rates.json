@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T13:32:28.538948+08:00",
+  "last_updated": "2026-06-04T08:33:43.795164+08:00",
   "source": "各銀行官網 / UHK港生活",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -205,14 +205,14 @@
           "source": null
         },
         "3m": {
-          "rate": 2.2,
+          "rate": 2.4,
           "min_deposit": 10000,
           "note": "新資金定期存款優惠（網上理財）",
           "source": "bank",
           "new_funds": true
         },
         "6m": {
-          "rate": 2.0,
+          "rate": 2.2,
           "min_deposit": 10000,
           "note": "新資金定期存款優惠（網上理財）",
           "source": "bank",
@@ -1729,21 +1729,21 @@
           "source": null
         },
         "3m": {
-          "rate": 2.6,
-          "min_deposit": 10,
-          "note": "GoSave 2.0 定期存款",
-          "source": "bank",
-          "new_funds": false
-        },
-        "6m": {
           "rate": 2.65,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
           "new_funds": false
         },
+        "6m": {
+          "rate": 2.7,
+          "min_deposit": 10,
+          "note": "GoSave 2.0 定期存款",
+          "source": "bank",
+          "new_funds": false
+        },
         "12m": {
-          "rate": 2.85,
+          "rate": 2.8,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
