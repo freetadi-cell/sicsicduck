@@ -661,3 +661,87 @@
 2026-06-03 08:34:22,307 [INFO] Last updated: 2026-06-03T08:34:22.305286+08:00
 2026-06-03 08:34:22,307 [INFO] ==================================================
 2026-06-03 08:34:27,416 [INFO] Telegram notification sent
+2026-06-03 20:45:03,315 [INFO] ==================================================
+2026-06-03 20:45:03,316 [INFO] HK Deposit Rates Update
+2026-06-03 20:45:03,316 [INFO] Time: 2026-06-03 20:45:03
+2026-06-03 20:45:03,316 [INFO] ==================================================
+2026-06-03 20:45:03,316 [INFO] Processing 22 banks
+2026-06-03 20:45:18,664 [INFO]   [hsbc] ✓ 滙豐銀行: rates unchanged (verified)
+2026-06-03 20:45:33,783 [INFO]   [bochk] ✓ 中銀香港: rates unchanged (verified)
+2026-06-03 20:45:48,979 [INFO]   [hangseng] ✓ 恒生銀行: rates unchanged (verified)
+2026-06-03 20:46:02,000 [INFO]   [sc] ✓ 渣打銀行: rates unchanged (verified)
+2026-06-03 20:46:11,188 [INFO]   [fubon] ✓ 富邦銀行: rates unchanged (verified)
+2026-06-03 20:46:22,995 [INFO]   [icbc] ✓ 工銀亞洲: rates unchanged (verified)
+2026-06-03 20:46:33,085 [INFO]   [bea] ✓ 東亞銀行: rates unchanged (verified)
+2026-06-03 20:46:42,143 [INFO]   [cncbi] ✓ 中信銀行（國際）: rates unchanged (verified)
+2026-06-03 20:46:56,257 [INFO]   [dbs] ✓ 星展銀行: rates unchanged (verified)
+2026-06-03 20:46:56,503 [INFO]   HKET: found rates for 交通銀行: {'1m': 2.2, '3m': 2.65, '6m': 2.4, '12m': 2.4}
+2026-06-03 20:46:56,503 [INFO]   [bocomm] ✓ 交通銀行: using HKET fallback (verified)
+2026-06-03 20:47:06,653 [INFO]   [shacom] ✓ 上海商業銀行: rates unchanged (verified)
+2026-06-03 20:47:21,013 [INFO]   [publicbank] ✓ 大眾銀行: rates unchanged (verified)
+2026-06-03 20:47:51,585 [WARNING]   [winglung] ✗ Failed to scrape 招商永隆
+2026-06-03 20:47:52,305 [INFO] UHK second source: found 9 banks
+2026-06-03 20:48:03,131 [INFO]   [chbank] ✓ 創興銀行: rates unchanged (verified)
+2026-06-03 20:48:05,477 [INFO]   HKET: found rates for 富融銀行: {'1w': 1.0, '1m': 1.6, '3m': 2.7, '6m': 2.6, '12m': 2.8}
+2026-06-03 20:48:05,477 [INFO]   [fusion] ✓ 富融銀行: using HKET fallback (verified)
+2026-06-03 20:48:22,352 [INFO]   Clicked tab @e11 (美元)
+2026-06-03 20:48:27,034 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-03 20:48:27,034 [INFO]   [airstar] ✓ 象象銀行: rates unchanged (verified)
+2026-06-03 20:48:41,007 [INFO]   [za] ✓ 眾安銀行: rates unchanged (verified)
+2026-06-03 20:48:50,985 [INFO]   [pao] ✓ 平安數字銀行: rates unchanged (verified)
+2026-06-03 20:49:00,445 [INFO]   [welab] ✓ 匯立銀行: rates UPDATED (3 changed)
+2026-06-03 20:49:10,814 [INFO]   [livi] ✓ 理慧銀行: rates unchanged (verified)
+2026-06-03 20:49:11,064 [INFO]   HKET: found rates for 螞蟻銀行: {'1m': 1.5, '3m': 1.8, '6m': 2.2, '9m': 2.3, '12m': 2.5}
+2026-06-03 20:49:11,064 [INFO]   [ant] ✓ 螞蟻銀行: using HKET fallback (verified)
+2026-06-03 20:49:22,808 [INFO]   [chiyu] ✓ 集友銀行: rates unchanged (verified)
+2026-06-03 20:49:22,811 [INFO] ==================================================
+2026-06-03 20:49:22,811 [INFO] Update complete:
+2026-06-03 20:49:22,811 [INFO]   ✅ Verified (same): 20
+2026-06-03 20:49:22,811 [INFO]   🔄 Verified (updated): 1
+2026-06-03 20:49:22,811 [INFO]   ❌ Unverified: 1
+2026-06-03 20:49:22,811 [INFO]     Updated: 匯立銀行 (3 rates changed)
+2026-06-03 20:49:22,811 [INFO]   Failed to scrape: 招商永隆
+2026-06-03 20:49:22,811 [INFO] Last updated: 2026-06-03T20:49:22.808997+08:00
+2026-06-03 20:49:22,811 [INFO] ==================================================
+2026-06-03 20:49:27,586 [INFO] Telegram notification sent
+2026-06-04 08:30:01,053 [INFO] ==================================================
+2026-06-04 08:30:01,053 [INFO] HK Deposit Rates Update
+2026-06-04 08:30:01,053 [INFO] Time: 2026-06-04 08:30:01
+2026-06-04 08:30:01,053 [INFO] ==================================================
+2026-06-04 08:30:01,054 [INFO] Processing 22 banks
+2026-06-04 08:30:13,331 [INFO]   [hsbc] ✓ 滙豐銀行: rates unchanged (verified)
+2026-06-04 08:30:23,918 [INFO]   [bochk] ✓ 中銀香港: rates unchanged (verified)
+2026-06-04 08:30:37,789 [INFO]   [hangseng] ✓ 恒生銀行: rates UPDATED (2 changed)
+2026-06-04 08:30:50,984 [INFO]   [sc] ✓ 渣打銀行: rates unchanged (verified)
+2026-06-04 08:31:01,575 [INFO]   [fubon] ✓ 富邦銀行: rates unchanged (verified)
+2026-06-04 08:31:11,794 [INFO]   [icbc] ✓ 工銀亞洲: rates unchanged (verified)
+2026-06-04 08:31:22,339 [INFO]   [bea] ✓ 東亞銀行: rates unchanged (verified)
+2026-06-04 08:31:31,569 [INFO]   [cncbi] ✓ 中信銀行（國際）: rates unchanged (verified)
+2026-06-04 08:31:43,696 [INFO]   [dbs] ✓ 星展銀行: rates unchanged (verified)
+2026-06-04 08:31:44,088 [INFO]   HKET: found rates for 交通銀行: {'1m': 2.2, '3m': 2.65, '6m': 2.4, '12m': 2.4}
+2026-06-04 08:31:44,088 [INFO]   [bocomm] ✓ 交通銀行: using HKET fallback (verified)
+2026-06-04 08:31:53,944 [INFO]   [shacom] ✓ 上海商業銀行: rates unchanged (verified)
+2026-06-04 08:32:03,889 [INFO]   [publicbank] ✓ 大眾銀行: rates unchanged (verified)
+2026-06-04 08:32:12,956 [INFO]   [winglung] ✓ 招商永隆: rates unchanged (verified)
+2026-06-04 08:32:23,181 [INFO]   [chbank] ✓ 創興銀行: rates unchanged (verified)
+2026-06-04 08:32:23,558 [INFO]   HKET: found rates for 富融銀行: {'1w': 1.0, '1m': 1.6, '3m': 2.7, '6m': 2.6, '12m': 2.8}
+2026-06-04 08:32:23,558 [INFO]   [fusion] ✓ 富融銀行: using HKET fallback (verified)
+2026-06-04 08:32:41,718 [INFO]   Clicked tab @e11 (美元)
+2026-06-04 08:32:46,395 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-04 08:32:46,395 [INFO]   [airstar] ✓ 象象銀行: rates unchanged (verified)
+2026-06-04 08:33:03,571 [INFO]   [za] ✓ 眾安銀行: rates unchanged (verified)
+2026-06-04 08:33:13,719 [INFO]   [pao] ✓ 平安數字銀行: rates unchanged (verified)
+2026-06-04 08:33:23,473 [INFO]   [welab] ✓ 匯立銀行: rates unchanged (verified)
+2026-06-04 08:33:34,043 [INFO]   [livi] ✓ 理慧銀行: rates unchanged (verified)
+2026-06-04 08:33:34,350 [INFO]   HKET: found rates for 螞蟻銀行: {'1m': 1.5, '3m': 1.8, '6m': 2.2, '9m': 2.3, '12m': 2.5}
+2026-06-04 08:33:34,350 [INFO]   [ant] ✓ 螞蟻銀行: using HKET fallback (verified)
+2026-06-04 08:33:43,795 [INFO]   [chiyu] ✓ 集友銀行: rates unchanged (verified)
+2026-06-04 08:33:43,797 [INFO] ==================================================
+2026-06-04 08:33:43,797 [INFO] Update complete:
+2026-06-04 08:33:43,797 [INFO]   ✅ Verified (same): 21
+2026-06-04 08:33:43,797 [INFO]   🔄 Verified (updated): 1
+2026-06-04 08:33:43,797 [INFO]   ❌ Unverified: 0
+2026-06-04 08:33:43,797 [INFO]     Updated: 恒生銀行 (2 rates changed)
+2026-06-04 08:33:43,797 [INFO] Last updated: 2026-06-04T08:33:43.795164+08:00
+2026-06-04 08:33:43,797 [INFO] ==================================================
+2026-06-04 08:33:49,150 [INFO] Telegram notification sent
