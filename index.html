@@ -793,6 +793,7 @@
             <button class="currency-btn" data-currency="cny">🇨🇳 人民幣 CNY</button>
         </div>
         <div class="period-pills">
+            <button class="period-pill" data-period="1w">1星期</button>
             <button class="period-pill" data-period="1m">1個月</button>
             <button class="period-pill" data-period="2m">2個月</button>
             <button class="period-pill" data-period="3m">3個月</button>
@@ -1066,7 +1067,7 @@ function renderTable() {
 
     // Build rows
     const tbody = document.getElementById('tableBody');
-    const periods = currentPeriod === 'all' ? ['1m', '2m', '3m', '6m', '12m'] : [currentPeriod];
+    const periods = currentPeriod === 'all' ? ['1w', '1m', '2m', '3m', '6m', '12m'] : [currentPeriod];
 
     let html = '';
 
