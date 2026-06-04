@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
 """
 香港銀行定期存款利率自動更新腳本
-從銀行官網直接獲取數據，MoneyHero 作為後備
+以 HKET（香港經濟日報）各銀行專頁為主要資訊來源，銀行官網為後備
 
 每日 8:30 由 cron 執行
 
-牌價息率定義：
-- 新資金息率
-- 網上銀行辦理的息率
-- 沒有特別 pre-requisite（如不需要保險、基金等）的息率
-- 取最高的那個
+數據結構：
+- 幣種：hkd, usd, cny（人民幣）
+- 第一類條件（fund_type）：new_funds（新資金）/ existing_funds（現有資金）
+- 第二類條件（conditions）：new_account（開立新戶口）/ exchange（兌換）/ upgrade_wealth（提升至理財戶）
+- conditions 為陣列，可多選
 
 提取方式：
-1. 首先嘗試 regex parser（scripts/parsers/<bank_key>.py）
-2. 若 parser 失敗或返回 None，使用 LLM（zai/glm-4.7）理解原始數據並提取利率
-3. 若都失敗，使用 UHK/MoneyHero 後備
+1. 首先嘗試 HKET 文章（需為當日或前一日更新）
+2. 若 HKET 失敗或文章過舊，嘗試 regex parser（scripts/parsers/<bank_key>.py）
+3. 若 parser 失敗，使用 LLM 理解原始數據並提取利率
+4. 若都失敗，使用 UHK 後備
 """
 
 import json
@@ -22,7 +23,7 @@ import os
 import re
 import logging
 import importlib
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 import subprocess
 import time
 
@@ -34,6 +35,9 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), 'data')
 RATES_FILE = os.path.join(DATA_DIR, 'rates.json')
 PARSERS_DIR = os.path.join(SCRIPT_DIR, 'parsers')
+
+ALL_CURRENCIES = ['hkd', 'usd', 'cny']
+ALL_PERIODS = ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']
 
 # ============================================================
 # Bank URL config
@@ -143,9 +147,85 @@ BANK_CONFIG = {
 }
 
 # ============================================================
-# Scratch dir: save raw data when parser fails for manual/agent extraction
+# HKET articles config (香港經濟日報 — 主要資訊來源)
+# ============================================================
+HKET_ARTICLES = {
+    'hsbc': {
+        'article_id': '3909928',
+    },
+    'bochk': {
+        'article_id': '3909868',
+    },
+    'hangseng': {
+        'article_id': '3909885',
+    },
+    'sc': {
+        'article_id': '3909906',
+    },
+    'dbs': {
+        'article_id': '3909888',
+    },
+    'fubon': {
+        'article_id': '3909896',
+    },
+    'icbc': {
+        'article_id': '3909836',
+    },
+    'bea': {
+        'article_id': '3909860',
+    },
+    'cncbi': {
+        'article_id': '3909875',
+    },
+    'ncb': {
+        'article_id': '3909866',
+    },
+    'bocomm': {
+        'article_id': '3909871',
+    },
+    'shacom': {
+        'article_id': '3909825',
+    },
+    'publicbank': {
+        'article_id': '3909827',
+    },
+    'winglung': {
+        'article_id': '3909844',
+    },
+    'chbank': {
+        'article_id': '3909893',
+    },
+    'fusion': {
+        'article_id': '3909899',
+    },
+    'airstar': {
+        'article_id': '3909842',
+    },
+    'za': {
+        'article_id': '3909890',
+    },
+    'pao': {
+        'article_id': '3909822',
+    },
+    'welab': {
+        'article_id': '3909925',
+    },
+    'livi': {
+        'article_id': '3909817',
+    },
+    'ant': {
+        'article_id': '3909930',
+    },
+    'chiyu': {
+        'article_id': '3909922',
+    },
+}
+
+# ============================================================
+# Scratch dir
 # ============================================================
 SCRATCH_DIR = os.path.join(DATA_DIR, '_scratch')
+
 
 def save_scraped_data(bank_key, bank_name, url, text, tables, html):
     """Save scraped raw data to scratch dir for later extraction."""
@@ -165,7 +245,6 @@ def save_scraped_data(bank_key, bank_name, url, text, tables, html):
     logger.info(f'  📄 Saved raw data to {filepath}')
 
 
-
 # ============================================================
 # Utility functions (scraping, browser)
 # ============================================================
@@ -181,22 +260,24 @@ def run_browser(cmd, timeout=20):
         logger.warning(f"agent-browser error: {e}")
         return None
 
+
 def scrape_page(url, wait=5, cloudflare_bypass=False, get_html=False):
     run_browser('agent-browser close', timeout=5)
     time.sleep(2)
-    
+
     if cloudflare_bypass:
         run_browser(
             'agent-browser set headers \'{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"}\'',
             timeout=10
         )
-    
+
     result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
     if not result:
         return None, None, None
-    
+
     time.sleep(wait)
     return _extract_text_tables(get_html=get_html)
+
 
 def _extract_text_tables(get_html=False):
     raw = run_browser('agent-browser eval "document.body.innerText.substring(0, 8000)"', timeout=10)
@@ -206,7 +287,7 @@ def _extract_text_tables(get_html=False):
             text = json.loads(raw)
         except:
             text = raw.strip('"')
-    
+
     tables = []
     js_set = 'document.title=JSON.stringify(Array.from(document.querySelectorAll(String.fromCharCode(116,97,98,108,101))).map(function(t){return t.innerText}))'
     run_browser(f'agent-browser eval "{js_set}"', timeout=10)
@@ -219,7 +300,7 @@ def _extract_text_tables(get_html=False):
                 tables = json.loads(raw_t)
             except:
                 pass
-    
+
     html = None
     if get_html:
         raw_h = run_browser('agent-browser eval "document.body.innerHTML.substring(0, 30000)"', timeout=10)
@@ -228,19 +309,20 @@ def _extract_text_tables(get_html=False):
                 html = json.loads(raw_h)
             except:
                 html = raw_h.strip('"')
-    
+
     return text, tables, html
+
 
 def _scrape_click_tab(url, tab_label, wait=3):
     run_browser('agent-browser close', timeout=5)
     time.sleep(2)
-    
+
     result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
     if not result:
         return None, None, None
-    
+
     time.sleep(wait)
-    
+
     clicked = False
     snap = run_browser('agent-browser snapshot -i --json', timeout=10)
     if snap:
@@ -248,8 +330,8 @@ def _scrape_click_tab(url, tab_label, wait=3):
             snap_data = json.loads(snap)
             refs = None
             if isinstance(snap_data, dict):
-                data = snap_data.get('data', snap_data)
-                refs = data.get('refs', None)
+                sdata = snap_data.get('data', snap_data)
+                refs = sdata.get('refs', None)
             if isinstance(refs, dict):
                 for ref_id, elem in refs.items():
                     name = elem.get('name', '')
@@ -270,15 +352,16 @@ def _scrape_click_tab(url, tab_label, wait=3):
                         break
         except Exception as e:
             logger.warning(f'  Tab click error: {e}')
-    
+
     if not clicked:
         run_browser(f'agent-browser find text "{tab_label}" click', timeout=10)
-    
+
     time.sleep(wait)
     text, tables, html = _extract_text_tables()
     run_browser('agent-browser close', timeout=5)
     time.sleep(1)
     return text, tables, html
+
 
 def load_parser(parser_key):
     try:
@@ -287,44 +370,33 @@ def load_parser(parser_key):
     except ImportError:
         return None
 
+
 def mark_moneyhero(bank):
-    for currency in ['hkd', 'usd']:
-        for period in ['1w', '1m', '2m', '3m', '6m', '12m']:
-            if bank[currency][period]['rate'] is not None:
-                if bank[currency][period].get('source') != 'bank':
-                    bank[currency][period]['source'] = 'moneyhero'
-                    note = bank[currency][period].get('note', '')
+    for currency in ALL_CURRENCIES:
+        if currency not in bank:
+            continue
+        for period in ALL_PERIODS:
+            if period not in bank[currency]:
+                continue
+            entry = bank[currency][period]
+            if isinstance(entry, dict) and entry.get('rate') is not None:
+                if entry.get('source') not in ('bank', 'hket'):
+                    entry['source'] = 'moneyhero'
+                    note = entry.get('note', '')
                     if note and not note.endswith('*'):
-                        bank[currency][period]['note'] = note + ' *'
+                        entry['note'] = note + ' *'
                     elif not note:
-                        bank[currency][period]['note'] = '*'
+                        entry['note'] = '*'
+
 
 # ============================================================
-# HKET second source (香港經濟日報)
+# HKET primary source (香港經濟日報)
 # ============================================================
-HKET_ARTICLES = {
-    'bocomm': {
-        'name': '交通銀行',
-        'article_id': '3909871',
-    },
-    'fusion': {
-        'name': '富融銀行',
-        'article_id': '3909899',
-    },
-    'ant': {
-        'name': '螞蟻銀行',
-        'article_id': '3909930',
-    },
-}
 
-def _scrape_hket(bank_key, bank_name):
-    """Scrape rates from HKET article for a specific bank using curl with proper headers."""
-    cfg = HKET_ARTICLES.get(bank_key)
-    if not cfg:
-        return {}
-    
-    url = f'https://wealth.hket.com/article/{cfg["article_id"]}/'
-    
+def _fetch_hket_article(article_id):
+    """Fetch HKET article HTML and return (text, article_date or None)."""
+    url = f'https://wealth.hket.com/article/{article_id}/'
+
     try:
         r = subprocess.run([
             'curl', '-sL', '--max-time', '20',
@@ -335,58 +407,283 @@ def _scrape_hket(bank_key, bank_name):
         ], capture_output=True, timeout=25)
         html = r.stdout.decode('utf-8', errors='ignore')
         if len(html) < 500:
-            logger.warning(f'HKET fetch failed for {bank_name}: page too short')
-            return {}
+            logger.warning(f'  HKET fetch failed: page too short')
+            return None, None
     except Exception as e:
-        logger.warning(f'HKET fetch failed for {bank_name}: {e}')
-        return {}
-    
+        logger.warning(f'  HKET fetch failed: {e}')
+        return None, None
+
     # Strip HTML tags to get text
     text = re.sub(r'<[^>]+>', ' ', html)
     text = re.sub(r'\s+', ' ', text)
-    
-    # Extract rates from text
-    rates = {}
-    
-    for period, pattern in [
-        ('1w', r'(?<!\d)1星期\s*([\d.]+)厘'),
-        ('1m', r'(?<!\d)1個月\s*([\d.]+)厘'),
-        ('2m', r'(?<!\d)2個月\s*([\d.]+)厘'),
-        ('3m', r'(?<!\d)3個月\s*([\d.]+)厘'),
-        ('4m', r'(?<!\d)4個月\s*([\d.]+)厘'),
-        ('6m', r'(?<!\d)6個月\s*([\d.]+)厘'),
-        ('9m', r'(?<!\d)9個月\s*([\d.]+)厘'),
-        ('12m', r'(?<!\d)12個月\s*([\d.]+)厘'),
-    ]:
-        m = re.search(pattern, text)
-        if m:
-            rate = float(m.group(1))
-            if rate > 0:
-                rates[period] = rate
-    
-    if rates:
-        logger.info(f'  HKET: found rates for {bank_name}: {rates}')
-    else:
-        logger.warning(f'  HKET: no rates found for {bank_name}')
-    
-    return rates
 
-def _apply_hket_fallback(bank, bank_key, bank_name):
-    """Apply HKET rates as fallback for a bank. Returns True if rates applied."""
-    hket_rates = _scrape_hket(bank_key, bank_name)
-    if not hket_rates:
+    # Extract 最後更新 date
+    article_date = None
+    m = re.search(r'最後更新[：:]\s*(\d{4})/(\d{2})/(\d{2})', text)
+    if m:
+        article_date = date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+
+    return text, article_date
+
+
+def _parse_hket_rates(text):
+    """Parse HKET article text into structured rate data.
+
+    Returns dict with structure:
+    {
+        'hkd': {
+            '3m': {'rate': 2.4, 'min_deposit': 10000, 'fund_type': 'new_funds',
+                   'conditions': ['new_account'], 'note': '...'},
+            ...
+        },
+        'usd': { ... },
+        'cny': { ... },
+        'note': '從香港經濟日報提取',
+    }
+
+    The parser looks for multiple rate tables in the article, each preceded by
+    a section header that describes the conditions (新資金, 珪有資金, 開立新戶口,
+    兌換, 提升至理財戶, etc.). It picks the highest rate for each currency/period
+    combination.
+    """
+    if not text:
+        return None
+
+    # Find the article body (between first bank name mention and "資料來源")
+    body_start = 0
+    body_end = len(text)
+    src_marker = text.find('資料來源')
+    if src_marker > 0:
+        body_end = src_marker
+
+    body = text[body_start:body_end]
+
+    # We'll collect all rate entries with their conditions
+    # Then pick the highest rate per (currency, period)
+    entries = []  # list of (currency, period, rate, min_deposit, fund_type, conditions, note)
+
+    def _detect_conditions(section_text):
+        """Detect fund_type and conditions from section text."""
+        fund_type = None
+        conditions = []
+
+        if re.search(r'新資金', section_text):
+            fund_type = 'new_funds'
+        elif re.search(r'現有資金|現有客戶|一般資金|existing', section_text, re.IGNORECASE):
+            fund_type = 'existing_funds'
+
+        if re.search(r'開[立設].*?新?戶口|開立|電子渠道開立|new.?account', section_text, re.IGNORECASE):
+            conditions.append('new_account')
+        if re.search(r'兌換|exchange|currency conversion', section_text, re.IGNORECASE):
+            conditions.append('exchange')
+        if re.search(r'提升.*?理財|升級.*?理財|理財.*?戶口|理財客戶|wealth|premier', section_text, re.IGNORECASE):
+            conditions.append('upgrade_wealth')
+
+        return fund_type, conditions
+
+    def _detect_min_deposit(section_text):
+        """Detect minimum deposit amount from section text."""
+        # Patterns like "1萬元起", "起存額10,000", "存款額2萬元起", "最低存款額"
+        patterns = [
+            r'(?:起存額|最低存款|存款額|起)\s*[:：]?\s*([\d,]+(?:\.\d+)?)\s*(?:萬|元)',
+            r'([\d,]+(?:\.\d+)?)\s*萬元(?:起|存款)',
+            r'([\d,]+(?:\.\d+)?)\s*元(?:起|存款)',
+        ]
+        for pat in patterns:
+            m = re.search(pat, section_text)
+            if m:
+                val_str = m.group(1).replace(',', '')
+                val = float(val_str)
+                if '萬' in section_text[m.start():m.start() + 30]:
+                    val *= 10000
+                return int(val)
+        return None
+
+    # ---- Extract rates per currency section ----
+    # HKET articles typically have sections like:
+    # "港元定存詳情" / "美元定存詳情" / "人民幣定存詳情"
+    # or "港元 存款期 年利率" tables
+    # or inline "3個月 2.4厘"
+
+    # Split into currency sections
+    currency_sections = {}
+
+    # Try to find explicit currency sections
+    for cur_key, cur_labels in [
+        ('hkd', ['港元', 'HKD']),
+        ('usd', ['美元', 'USD']),
+        ('cny', ['人民幣', 'RMB', 'CNY']),
+    ]:
+        for label in cur_labels:
+            # Find section headers mentioning the currency
+            idx = body.find(label)
+            if idx >= 0:
+                # Find the extent of this section
+                next_cur = len(body)
+                for other_key, other_labels in [('hkd', ['港元', 'HKD']), ('usd', ['美元', 'USD']), ('cny', ['人民幣', 'RMB', 'CNY'])]:
+                    if other_key == cur_key:
+                        continue
+                    for ol in other_labels:
+                        oi = body.find(ol, idx + len(label))
+                        if oi > 0 and oi < next_cur:
+                            next_cur = oi
+                section = body[idx:next_cur]
+                if cur_key not in currency_sections or len(section) > len(currency_sections[cur_key]):
+                    currency_sections[cur_key] = section
+                break
+
+    # If no currency sections found, treat whole body as HKD
+    if not currency_sections:
+        currency_sections['hkd'] = body
+
+    # Parse rates from each currency section
+    for cur_key, section in currency_sections.items():
+        fund_type, conditions = _detect_conditions(section)
+        min_deposit = _detect_min_deposit(section)
+
+        # Look for "存款期 年利率 起存額 條件" style tables
+        # Pattern: period + rate in 厘
+        for period, patterns in [
+            ('1w', [r'(?<!\d)1星期\s*([\d.]+)\s*厘', r'(?<!\d)7天\s*([\d.]+)\s*厘']),
+            ('1m', [r'(?<!\d)1個月\s*([\d.]+)\s*厘']),
+            ('2m', [r'(?<!\d)2個月\s*([\d.]+)\s*厘']),
+            ('3m', [r'(?<!\d)3個月\s*([\d.]+)\s*厘']),
+            ('4m', [r'(?<!\d)4個月\s*([\d.]+)\s*厘']),
+            ('6m', [r'(?<!\d)6個月\s*([\d.]+)\s*厘']),
+            ('9m', [r'(?<!\d)9個月\s*([\d.]+)\s*厘']),
+            ('12m', [r'(?<!\d)12個月\s*([\d.]+)\s*厘']),
+        ]:
+            for pat in patterns:
+                m = re.search(pat, section)
+                if m:
+                    rate = float(m.group(1))
+                    if rate > 0:
+                        # Check if there's a per-row condition near this rate
+                        # Look backwards from the rate match for nearby condition text
+                        context_start = max(0, m.start() - 100)
+                        context = section[context_start:m.end() + 50]
+                        row_fund_type, row_conditions = _detect_conditions(context)
+                        row_min = _detect_min_deposit(context) or min_deposit
+
+                        entries.append({
+                            'currency': cur_key,
+                            'period': period,
+                            'rate': rate,
+                            'min_deposit': row_min,
+                            'fund_type': row_fund_type or fund_type,
+                            'conditions': row_conditions or conditions,
+                        })
+                    break  # Found rate for this period, move on
+
+    if not entries:
+        return None
+
+    # Pick the highest rate per (currency, period)
+    best = {}
+    for e in entries:
+        key = (e['currency'], e['period'])
+        if key not in best or e['rate'] > best[key]['rate']:
+            best[key] = e
+
+    # Build result structure
+    result = {'note': '從香港經濟日報提取'}
+    for (cur, period), e in best.items():
+        result.setdefault(cur, {})
+        result[cur][period] = {
+            'rate': e['rate'],
+            'min_deposit': e.get('min_deposit'),
+            'fund_type': e.get('fund_type'),
+            'conditions': e.get('conditions', []),
+        }
+
+    # Ensure all currencies present
+    for cur in ALL_CURRENCIES:
+        if cur not in result:
+            result[cur] = {}
+
+    return result
+
+
+def _hket_get_rates(bank_key, bank_name):
+    """Fetch and parse HKET article for a bank.
+    Returns (rates_dict, True) if successful, (None, False) otherwise.
+    Checks article date is today or yesterday.
+    """
+    cfg = HKET_ARTICLES.get(bank_key)
+    if not cfg:
+        return None, False
+
+    text, article_date = _fetch_hket_article(cfg['article_id'])
+    if text is None:
+        logger.info(f'  [{bank_key}] HKET: fetch failed for {bank_name}')
+        return None, False
+
+    # Date check: accept today or yesterday only
+    today = date.today()
+    yesterday = today - timedelta(days=1)
+
+    if article_date is None:
+        logger.info(f'  [{bank_key}] HKET: could not find article date for {bank_name}, skipping')
+        return None, False
+
+    if article_date not in (today, yesterday):
+        logger.info(f'  [{bank_key}] HKET article last updated {article_date.strftime("%Y/%m/%d")}, not today or yesterday, skipping HKET')
+        return None, False
+
+    result = _parse_hket_rates(text)
+    if result is None:
+        logger.info(f'  [{bank_key}] HKET: could not parse rates for {bank_name}')
+        return None, False
+
+    # Log what we found
+    found = []
+    for cur in ALL_CURRENCIES:
+        periods = [p for p, v in result.get(cur, {}).items() if isinstance(v, dict) and v.get('rate')]
+        if periods:
+            found.append(f'{cur}: {periods}')
+    if found:
+        logger.info(f'  HKET: found rates for {bank_name}: {", ".join(found)}')
+    else:
+        logger.info(f'  HKET: no rates found for {bank_name}')
+        return None, False
+
+    return result, True
+
+
+def _apply_hket_rates(bank, bank_key, bank_name):
+    """Try to get rates from HKET and apply them.
+    Returns True if rates were applied.
+    """
+    result, ok = _hket_get_rates(bank_key, bank_name)
+    if not ok or result is None:
         return False
-    
-    applied = False
-    for period, rate in hket_rates.items():
-        if period in bank['hkd']:
-            existing = bank['hkd'][period]
-            if isinstance(existing, dict):
-                existing['rate'] = rate
-                existing['source'] = 'bank'
-                existing['note'] = f'從香港經濟日報提取（{bank_name}）'
-            applied = True
-    return applied
+
+    for cur in ALL_CURRENCIES:
+        if cur not in result:
+            continue
+        for period in ALL_PERIODS:
+            if period not in result[cur]:
+                continue
+            val = result[cur][period]
+            if not isinstance(val, dict) or val.get('rate') is None:
+                continue
+
+            bank[cur][period] = {
+                'rate': val['rate'],
+                'min_deposit': val.get('min_deposit') or bank[cur].get(period, {}).get('min_deposit'),
+                'note': result.get('note', '從香港經濟日報提取'),
+                'source': 'hket',
+            }
+            if val.get('fund_type'):
+                bank[cur][period]['fund_type'] = val['fund_type']
+            else:
+                bank[cur][period]['fund_type'] = None
+            if val.get('conditions'):
+                bank[cur][period]['conditions'] = val['conditions']
+            else:
+                bank[cur][period]['conditions'] = []
+
+    return True
 
 
 # ============================================================
@@ -445,6 +742,7 @@ def _scrape_uhk():
     logger.info(f'UHK second source: found {len(uhk_rates)} banks')
     return uhk_rates
 
+
 def _apply_uhk_fallback(bank, uhk_rates):
     bank_name = bank['name']
     if bank_name not in uhk_rates:
@@ -455,9 +753,11 @@ def _apply_uhk_fallback(bank, uhk_rates):
         if period in uhk:
             bank['hkd'][period] = {
                 'rate': uhk[period],
-                'min_deposit': bank['hkd'][period].get('min_deposit'),
+                'min_deposit': bank['hkd'].get(period, {}).get('min_deposit'),
                 'note': 'UHK 港生活',
                 'source': 'uhk',
+                'fund_type': None,
+                'conditions': [],
             }
             updated = True
     return updated
@@ -467,79 +767,123 @@ def _apply_uhk_fallback(bank, uhk_rates):
 # Main update logic
 # ============================================================
 
+def _ensure_currency_slots(bank):
+    """Ensure all currency and period slots exist in bank data."""
+    for cur in ALL_CURRENCIES:
+        if cur not in bank:
+            bank[cur] = {}
+        for period in ALL_PERIODS:
+            if period not in bank[cur]:
+                bank[cur][period] = {
+                    'rate': None,
+                    'min_deposit': None,
+                    'note': None,
+                    'source': None,
+                    'fund_type': None,
+                    'conditions': [],
+                }
+            else:
+                entry = bank[cur][period]
+                if isinstance(entry, dict):
+                    if 'fund_type' not in entry:
+                        entry['fund_type'] = None
+                    if 'conditions' not in entry:
+                        entry['conditions'] = []
+                # Migrate old format (bare value) to dict
+                elif isinstance(entry, (int, float)):
+                    bank[cur][period] = {
+                        'rate': entry,
+                        'min_deposit': None,
+                        'note': None,
+                        'source': None,
+                        'fund_type': None,
+                        'conditions': [],
+                    }
+
+
 def update_rates():
     logger.info("=" * 50)
     logger.info("HK Deposit Rates Update")
     logger.info(f"Time: {datetime.now(HKT).strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info("=" * 50)
-    
+
     if not os.path.exists(RATES_FILE):
         logger.error("rates.json not found!")
         return False
-    
+
     with open(RATES_FILE, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    
+
     banks = data['banks']
     logger.info(f"Processing {len(banks)} banks")
-    
+
+    # Ensure all banks have cny currency slots
+    for bank in banks:
+        _ensure_currency_slots(bank)
+
     name_to_key = {cfg['name']: key for key, cfg in BANK_CONFIG.items()}
-    
+
     verified_same = []
-    verified_updated = []  # (bank_name, changes_count)
-    unverified = []  # banks that couldn't be verified from bank website
+    verified_updated = []   # (bank_name, changes_count)
+    unverified = []         # banks that couldn't be verified
     needs_extraction = []
     failed_banks = []
     uhk_rates = None
-    
+
     def get_uhk_rates():
         nonlocal uhk_rates
         if uhk_rates is None:
             uhk_rates = _scrape_uhk()
         return uhk_rates
-    
+
     for bank in banks:
         bank_name = bank['name']
         parser_key = name_to_key.get(bank_name)
-        
+
         if not parser_key:
             mark_moneyhero(bank)
             unverified.append(bank_name)
-            logger.warning(f"  ✗ {bank_name}: no parser configured") 
+            logger.warning(f"  ✗ {bank_name}: no parser configured")
             continue
-        
+
         cfg = BANK_CONFIG[parser_key]
         url = cfg['url']
-        
-        if cfg.get('skip_scrape'):
-            # Try HKET first for configured banks, then UHK
-            if parser_key in HKET_ARTICLES:
-                if _apply_hket_fallback(bank, parser_key, bank_name):
+
+        # ---- Phase 1: Try HKET (primary source) ----
+        if parser_key in HKET_ARTICLES:
+            hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
+            if hket_ok and hket_result:
+                changed = _compare_rates(bank, hket_result)
+                _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                if changed:
+                    verified_updated.append((bank_name, len(changed)))
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates UPDATED ({len(changed)} changed)")
+                else:
                     verified_same.append(bank_name)
-                    logger.info(f"  [{parser_key}] ✓ {bank_name}: using HKET fallback (verified)")
-                    continue
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates unchanged (verified)")
+                continue
+            # HKET failed or article too old → fallback to bank website
+
+        # ---- Phase 2: Bank website scraping ----
+        if cfg.get('skip_scrape'):
+            # No website scraping for this bank, try UHK
             if _apply_uhk_fallback(bank, get_uhk_rates()):
                 unverified.append(bank_name)
-                logger.info(f"  [{parser_key}] {bank_name}: skip_scrape, using UHK fallback (unverified)")
+                logger.info(f"  [{parser_key}] {bank_name}: HKET unavailable, using UHK fallback (unverified)")
             else:
                 unverified.append(bank_name)
                 mark_moneyhero(bank)
-                logger.warning(f"  [{parser_key}] {bank_name}: skip_scrape, no fallback data (unverified)")
+                logger.warning(f"  [{parser_key}] {bank_name}: HKET unavailable, no fallback data (unverified)")
             continue
-        
-        # --- Phase 1: Scrape raw data ---
-        cloudflare_bypass = cfg.get('cloudflare_bypass', False)
-        get_html = cfg.get('get_html', False)
-        text, tables, html = scrape_page(url, cloudflare_bypass=cloudflare_bypass, get_html=get_html)
-        
+
+        text, tables, html = scrape_page(
+            url,
+            cloudflare_bypass=cfg.get('cloudflare_bypass', False),
+            get_html=cfg.get('get_html', False)
+        )
+
         if text is None and tables is None:
             logger.warning(f"  [{parser_key}] ✗ Failed to scrape {bank_name}")
-            # Try HKET fallback first for configured banks, then UHK
-            if parser_key in HKET_ARTICLES:
-                if _apply_hket_fallback(bank, parser_key, bank_name):
-                    verified_same.append(bank_name)
-                    logger.info(f"  [{parser_key}] ✓ {bank_name}: using HKET fallback (verified)")
-                    continue
             if _apply_uhk_fallback(bank, get_uhk_rates()):
                 logger.info(f"  → {bank_name} using UHK second source (unverified)")
             else:
@@ -547,18 +891,18 @@ def update_rates():
                 mark_moneyhero(bank)
             unverified.append(bank_name)
             continue
-        
-        # --- Phase 2: Try regex parser ---
+
+        # ---- Phase 3: Try regex parser ----
         result = None
         parse_fn = load_parser(parser_key)
-        
+
         if parse_fn:
             try:
                 result = parse_fn(text, tables, html=html)
             except Exception as e:
                 logger.warning(f"  [{parser_key}] Parser error for {bank_name}: {e}")
-        
-        # USD tab handling for parsers that got HKD but not USD
+
+        # USD tab handling
         usd_tab_label = cfg.get('usd_tab')
         if usd_tab_label and result is not None and 'usd' not in result:
             usd_text, usd_tables, usd_html = _scrape_click_tab(url, usd_tab_label)
@@ -571,61 +915,63 @@ def update_rates():
                             logger.info(f"  ✓ Got USD rates from tab for {bank_name}")
                     except Exception:
                         pass
-        
-        # --- Phase 3: Apply or save for extraction ---
+
+        # ---- Phase 4: Apply or save ----
         if result:
-            status, changes = _apply_parsed_rates(bank, result, bank_name)
-            if status == 'verified_updated':
-                verified_updated.append((bank_name, changes))
-                logger.info(f"  [{parser_key}] ✓ {bank_name}: rates UPDATED ({changes} changed)")
+            # Wrap parser result into new format
+            wrapped = _wrap_parser_result(result, bank_name)
+            changed = _compare_rates(bank, wrapped)
+            _apply_result_rates(bank, wrapped, bank_name, source='bank')
+            if changed:
+                verified_updated.append((bank_name, len(changed)))
+                logger.info(f"  [{parser_key}] ✓ {bank_name}: rates UPDATED ({len(changed)} changed)")
             else:
                 verified_same.append(bank_name)
                 logger.info(f"  [{parser_key}] ✓ {bank_name}: rates unchanged (verified)")
         else:
-            # Parser failed — save raw data for manual/agent extraction
+            # Parser failed — save raw data
             save_scraped_data(parser_key, bank_name, url, text, tables, html)
             needs_extraction.append(bank_name)
             unverified.append(bank_name)
             logger.info(f"  [{parser_key}] ⏳ Parser failed, saved raw data for {bank_name} (unverified)")
-            
-            # Try HKET fallback first for configured banks, then UHK
-            if parser_key in HKET_ARTICLES:
-                if _apply_hket_fallback(bank, parser_key, bank_name):
-                    verified_same.append(bank_name)
-                    logger.info(f"  [{parser_key}] ✓ {bank_name}: using HKET fallback (verified)")
-                    continue
+
             if _apply_uhk_fallback(bank, get_uhk_rates()):
                 logger.info(f"  → {bank_name} using UHK fallback (pending extraction)")
             else:
                 mark_moneyhero(bank)
-    
-    # Metadata
+
+    # ---- Metadata ----
     data['last_updated'] = datetime.now(HKT).isoformat()
-    data['source'] = '各銀行官網 / UHK港生活'
-    
-    # new_funds defaults
+    data['source'] = 'HKET香港經濟日報 / 各銀行官網'
+
+    # Fund type defaults (when not detected from HKET)
     NF_DEFAULTS = {
-        '滙豐銀行': True, '中銀香港': True, '恒生銀行': True,
-        '渣打銀行': True, '工銀亞洲': False, '東亞銀行': False,
-        '中信銀行（國際）': True, '星展銀行': True, '交通銀行': True,
-        '上海商業銀行': False, '大眾銀行': False, '招商永隆': False,
-        '創興銀行': False, '富融銀行': False, '象象銀行': False,
-        '眾安銀行': False, '平安數字銀行': True, '匯立銀行': False,
-        '理慧銀行': False, '螞蟻銀行': False, '集友銀行': True,
+        '滙豐銀行': 'new_funds', '中銀香港': 'new_funds', '恒生銀行': 'new_funds',
+        '渣打銀行': 'new_funds', '工銀亞洲': 'existing_funds', '東亞銀行': 'existing_funds',
+        '中信銀行（國際）': 'new_funds', '星展銀行': 'new_funds', '交通銀行': 'new_funds',
+        '上海商業銀行': 'existing_funds', '大眾銀行': 'existing_funds', '招商永隆': 'existing_funds',
+        '創興銀行': 'existing_funds', '富融銀行': 'existing_funds', '象象銀行': 'existing_funds',
+        '眾安銀行': 'existing_funds', '平安數字銀行': 'new_funds', '匯立銀行': 'existing_funds',
+        '理慧銀行': 'existing_funds', '螞蟻銀行': 'existing_funds', '集友銀行': 'new_funds',
+        '南洋商業銀行': 'new_funds',
     }
     for bank in data['banks']:
         nf = NF_DEFAULTS.get(bank['name'])
-        if nf is not None:
-            for currency in ['hkd', 'usd']:
-                if currency in bank:
-                    for period in bank[currency]:
-                        entry = bank[currency][period]
-                        if isinstance(entry, dict) and entry.get('rate') is not None and entry.get('new_funds') is None:
-                            entry['new_funds'] = nf
-    
+        for cur in ALL_CURRENCIES:
+            if cur not in bank:
+                continue
+            for period in ALL_PERIODS:
+                entry = bank[cur].get(period)
+                if not isinstance(entry, dict):
+                    continue
+                if entry.get('rate') is not None and entry.get('fund_type') is None and nf:
+                    entry['fund_type'] = nf
+                if 'conditions' not in entry:
+                    entry['conditions'] = []
+
     with open(RATES_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    
+
     logger.info("=" * 50)
     logger.info(f"Update complete:")
     logger.info(f"  ✅ Verified (same): {len(verified_same)}")
@@ -640,10 +986,40 @@ def update_rates():
         logger.info(f"  Failed to scrape: {', '.join(failed_banks)}")
     logger.info(f"Last updated: {data['last_updated']}")
     logger.info("=" * 50)
-    
+
     all_verified = len(unverified) == 0
     _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified)
     return all_verified
+
+
+def _wrap_parser_result(result, bank_name):
+    """Wrap a parser result (old format) into the new structured format."""
+    wrapped = {'note': result.get('note', f'從{bank_name}官網提取')}
+    for cur in ALL_CURRENCIES:
+        if cur not in result:
+            continue
+        wrapped[cur] = {}
+        curr_note = result.get(f'{cur}_note', wrapped['note'])
+        for period in ALL_PERIODS:
+            if period not in result[cur]:
+                continue
+            val = result[cur][period]
+            if isinstance(val, dict):
+                wrapped[cur][period] = {
+                    'rate': val.get('rate'),
+                    'min_deposit': val.get('min_deposit'),
+                    'fund_type': val.get('fund_type') or val.get('new_funds') and 'new_funds',
+                    'conditions': val.get('conditions', []),
+                    'note': curr_note,
+                }
+            else:
+                wrapped[cur][period] = {
+                    'rate': val,
+                    'fund_type': None,
+                    'conditions': [],
+                    'note': curr_note,
+                }
+    return wrapped
 
 
 def _compare_rates(bank, result):
@@ -651,101 +1027,88 @@ def _compare_rates(bank, result):
     Returns set of (currency, period) tuples where rates differ.
     """
     changed = set()
-    for currency in ['hkd', 'usd']:
-        if currency not in result:
+    for cur in ALL_CURRENCIES:
+        if cur not in result:
             continue
-        for period in ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']:
-            if period not in result[currency]:
+        for period in ALL_PERIODS:
+            if period not in result.get(cur, {}):
                 continue
-            val = result[currency][period]
+            val = result[cur][period]
             new_rate = val.get('rate') if isinstance(val, dict) else val
             if new_rate is None:
                 continue
-            existing = bank[currency].get(period, {})
+            existing = bank.get(cur, {}).get(period, {})
             if isinstance(existing, dict):
                 old_rate = existing.get('rate')
             else:
                 old_rate = existing
             if old_rate is None or abs(float(new_rate) - float(old_rate)) > 0.001:
-                changed.add((currency, period))
+                changed.add((cur, period))
     return changed
 
 
-def _apply_parsed_rates(bank, result, bank_name):
-    """Apply parsed rates to bank data structure.
-    Returns ('verified_same', ...) if rates match existing data,
-    or ('verified_updated', changed_count) if rates were updated.
-    """
-    changed = _compare_rates(bank, result)
+def _apply_result_rates(bank, result, bank_name, source='bank'):
+    """Apply parsed rates to bank data structure."""
     note = result.get('note', f'從{bank_name}官網提取')
-    for currency in ['hkd', 'usd']:
-        if currency not in result:
+    for cur in ALL_CURRENCIES:
+        if cur not in result:
             continue
-        curr_note = result.get(f'{currency}_note', note)
-        for period in ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']:
-            if period not in result[currency]:
+        curr_note = result.get(f'{cur}_note', note)
+        for period in ALL_PERIODS:
+            if period not in result.get(cur, {}):
                 continue
-            val = result[currency][period]
-            if isinstance(val, dict):
-                rate = val.get('rate')
-                new_funds = val.get('new_funds')
-                any_funds_rate = val.get('any_funds_rate')
-            else:
-                rate = val
-                new_funds = bank[currency].get(period, {}).get('new_funds')
-                any_funds_rate = bank[currency].get(period, {}).get('any_funds_rate')
-            bank[currency][period] = {
+            val = result[cur][period]
+            if not isinstance(val, dict):
+                continue
+            rate = val.get('rate')
+            if rate is None:
+                continue
+
+            bank[cur][period] = {
                 'rate': rate,
-                'min_deposit': bank[currency].get(period, {}).get('min_deposit'),
-                'note': curr_note,
-                'source': 'bank',
+                'min_deposit': val.get('min_deposit') or bank.get(cur, {}).get(period, {}).get('min_deposit'),
+                'note': val.get('note') or curr_note,
+                'source': source,
+                'fund_type': val.get('fund_type'),
+                'conditions': val.get('conditions', []),
             }
-            if new_funds is not None:
-                bank[currency][period]['new_funds'] = new_funds
-            elif 'new_funds' not in bank[currency][period]:
-                bank[currency][period]['new_funds'] = None
-            if any_funds_rate is not None:
-                bank[currency][period]['any_funds_rate'] = any_funds_rate
-    if changed:
-        return ('verified_updated', len(changed))
-    return ('verified_same', 0)
 
 
 def _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified):
     try:
         now = datetime.now(HKT).strftime('%Y-%m-%d %H:%M')
         msg = f"🦆 食息鴨利率更新 ({now})\n"
-        
+
         if all_verified:
             msg += f"✅ 全部 {len(verified_same) + len(verified_updated)} 間銀行驗證成功\n"
         else:
             msg += f"⚠️ {len(unverified)} 間銀行未能驗證\n"
-        
+
         msg += f"\n📊 統計：\n"
         msg += f"  ✓ 利率不變: {len(verified_same)}\n"
         msg += f"  🔄 已更新: {len(verified_updated)}\n"
         msg += f"  ❌ 未驗證: {len(unverified)}\n"
-        
+
         if verified_updated:
             msg += f"\n🔄 已更新利率：\n"
             for name, cnt in verified_updated:
                 msg += f"  • {name} ({cnt}項變更)\n"
-        
+
         if needs_extraction:
             msg += f"\n⏳ 需要手動提取 ({len(needs_extraction)}):\n"
             for name in needs_extraction:
                 msg += f"  • {name}\n"
-        
+
         if failed_banks:
             msg += f"\n❌ 抓取失敗 ({len(failed_banks)}):\n"
             for name in failed_banks:
                 msg += f"  • {name}\n"
-        
+
         if all_verified and not verified_updated:
             msg += "\n✨ 所有利率已驗證，無需更新！"
         elif all_verified:
             msg += "\n✨ 所有銀行已驗證完成！"
-        
+
         cmd = [
             '/home/freet/.npm-global/bin/openclaw', 'message', 'send',
             '-t', '885017126', '--channel', 'telegram', '-m', msg

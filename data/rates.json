@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-04T08:33:43.795164+08:00",
-  "source": "各銀行官網 / UHK港生活",
+  "last_updated": "2026-06-04T08:48:44.143486+08:00",
+  "source": "HKET香港經濟日報 / 各銀行官網",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
     {
@@ -13,40 +13,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.4,
           "min_deposit": 10000,
           "note": "UHK 港生活",
           "source": "uhk",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.2,
           "min_deposit": 10000,
           "note": "UHK 港生活",
           "source": "uhk",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
           "source": null,
-          "new_funds": null
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -54,40 +79,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.54,
           "min_deposit": 2000,
           "note": "RewardCash定存（手機App新資金）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.425,
           "min_deposit": 2000,
           "note": "RewardCash定存（手機App新資金）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.0,
           "min_deposit": 2000,
           "note": "新資金定期存款優惠",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -101,40 +217,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.4,
           "min_deposit": 10000,
           "note": "網上銀行新資金特優定期存款",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 10000,
           "note": "網上銀行新資金特優定期存款",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.5,
           "min_deposit": null,
           "note": "網上銀行新資金特優定期存款",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -142,40 +283,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.3,
           "min_deposit": 1000,
           "note": "網上銀行新資金特優定期存款",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.3,
           "min_deposit": 1000,
           "note": "網上銀行新資金特優定期存款",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.4,
           "min_deposit": null,
           "note": "網上銀行新資金特優定期存款",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -189,41 +421,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 0.1,
           "min_deposit": null,
           "note": "定期存款牌價利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.4,
           "min_deposit": 10000,
           "note": "新資金定期存款優惠（網上理財）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.2,
           "min_deposit": 10000,
           "note": "新資金定期存款優惠（網上理財）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 0.15,
           "min_deposit": null,
           "note": "定期存款牌價利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -231,39 +487,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.3,
           "min_deposit": 2000,
           "note": "新資金定期存款優惠（網上理財）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.2,
           "min_deposit": 2000,
           "note": "新資金定期存款優惠（網上理財）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -277,41 +625,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
           "source": null,
-          "new_funds": null
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.3,
           "min_deposit": 10000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.1,
           "min_deposit": 10000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 10000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -319,41 +691,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
           "source": null,
-          "new_funds": null
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.2,
           "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.3,
           "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.7,
           "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -367,52 +829,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.25,
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 2.35,
           "min_deposit": null,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 2.8,
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": true,
-          "any_funds_rate": 2.65
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.8,
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": true,
-          "any_funds_rate": 2.65
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.8,
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": true,
-          "any_funds_rate": 2.7
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 2.65,
           "min_deposit": null,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -420,50 +895,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 3.65,
           "min_deposit": 65000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 3.8,
           "min_deposit": null,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 4.0,
           "min_deposit": 128000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": true,
-          "any_funds_rate": 3.9
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.8,
           "min_deposit": 65000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.8,
           "min_deposit": 65000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 3.8,
           "min_deposit": null,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -477,41 +1033,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.5,
           "min_deposit": 3000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.55,
           "min_deposit": 3000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 3000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 3000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -519,41 +1099,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 3.1,
           "min_deposit": 1000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.5,
           "min_deposit": 1000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.5,
           "min_deposit": 1000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.5,
           "min_deposit": 1000000,
           "note": "網上銀行特惠利率（工銀財富客戶）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -567,40 +1237,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.6,
           "min_deposit": 10000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.6,
           "min_deposit": 10000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.55,
           "min_deposit": 10000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -608,40 +1303,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.5,
           "min_deposit": 1000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.6,
           "min_deposit": 1000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.6,
           "min_deposit": 1000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -655,41 +1441,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 0.01,
           "min_deposit": 10000,
           "note": "定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.7,
           "min_deposit": 10000,
           "note": "inMotion新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 0.05,
           "min_deposit": 10000,
           "note": "定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 0.15,
           "min_deposit": 10000,
           "note": "定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -697,38 +1507,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.65,
           "min_deposit": null,
           "note": "inMotion新資金定期存款特惠年利率",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "12m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -742,56 +1645,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.0,
           "min_deposit": 50000,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 2.0,
           "min_deposit": null,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 2.4,
           "min_deposit": 50000,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.0,
           "min_deposit": 50000,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.3,
           "min_deposit": 50000,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 2.4,
           "min_deposit": null,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "9m": {
           "rate": 2.3,
           "min_deposit": null,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         }
       },
       "usd": {
@@ -800,49 +1712,130 @@
           "min_deposit": null,
           "note": null,
           "source": null,
-          "new_funds": null
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 3.0,
           "min_deposit": 128000,
           "note": "新資金定期存款優惠（128,000美元以上）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 3.0,
           "min_deposit": 128000,
           "note": "新資金定期存款優惠（128,000美元以上）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 3.35,
           "min_deposit": 128000,
           "note": "新資金定期存款優惠（128,000美元以上）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.8,
           "min_deposit": 128000,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
           "source": null,
-          "new_funds": null
+          "fund_type": null,
+          "conditions": []
         },
         "4m": {
           "rate": 3.8,
           "min_deposit": 128000,
           "note": "網上定存特惠年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -856,41 +1849,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.2,
           "min_deposit": 1000000,
           "note": "從香港經濟日報提取（交通銀行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.65,
           "min_deposit": 1000000,
           "note": "從香港經濟日報提取（交通銀行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 20000,
           "note": "從香港經濟日報提取（交通銀行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 20000,
           "note": "從香港經濟日報提取（交通銀行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -898,37 +1915,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "6m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
         },
         "12m": {
           "rate": null,
           "min_deposit": null,
           "note": "*",
-          "source": "moneyhero"
+          "source": "moneyhero",
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -942,41 +2053,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.78,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.63,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.48,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.43,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -984,41 +2119,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.98,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.38,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.33,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.23,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1032,41 +2257,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.2,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.5,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.35,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1074,41 +2323,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 3.4,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.6,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.5,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.4,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1122,49 +2461,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.15,
           "min_deposit": 10000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 1.45,
           "min_deposit": null,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 2.0,
           "min_deposit": 10000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.0,
           "min_deposit": 10000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.0,
           "min_deposit": 10000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "9m": {
           "rate": 2.0,
           "min_deposit": null,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1172,49 +2527,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.5,
           "min_deposit": 1000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 3.0,
           "min_deposit": null,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 3.15,
           "min_deposit": 1000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.1,
           "min_deposit": 1000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.85,
           "min_deposit": 1000,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "9m": {
           "rate": 2.9,
           "min_deposit": null,
           "note": "招商永隆銀行手機App定存利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1228,41 +2665,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.5,
           "min_deposit": 50000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.65,
           "min_deposit": 50000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 1.65,
           "min_deposit": 50000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 0.95,
           "min_deposit": 50000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1270,41 +2731,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 3.65,
           "min_deposit": 10000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.7,
           "min_deposit": 10000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.7,
           "min_deposit": 10000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.9,
           "min_deposit": 10000,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1319,41 +2870,64 @@
           "min_deposit": null,
           "note": "從香港經濟日報提取（富融銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "1m": {
           "rate": 1.6,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（富融銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.7,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（富融銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.6,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（富融銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.8,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（富融銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1361,41 +2935,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 3.0,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.6,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.7,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.7,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1410,56 +3074,64 @@
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "1m": {
           "rate": 1.5,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 1.7,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 2.35,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.45,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.9,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 2.45,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "9m": {
           "rate": 2.8,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         }
       },
       "usd": {
@@ -1468,56 +3140,130 @@
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "1m": {
           "rate": 2.8,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 3.05,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 3.4,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.65,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.7,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 3.6,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "9m": {
           "rate": 3.7,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1531,41 +3277,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.0,
           "min_deposit": 1,
           "note": "從眾安銀行官網提取",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.2,
           "min_deposit": 1,
           "note": "UHK 港生活",
           "source": "uhk",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.2,
           "min_deposit": 1,
           "note": "UHK 港生活",
           "source": "uhk",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.35,
           "min_deposit": 1,
           "note": "UHK 港生活",
           "source": "uhk",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1573,41 +3343,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 0.1,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 0.15,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 0.2,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 0.2,
           "min_deposit": 1,
           "note": "無最低門檻",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1622,42 +3482,64 @@
           "min_deposit": null,
           "note": null,
           "source": null,
-          "new_funds": null
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.5,
           "min_deposit": null,
           "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
           "source": null,
-          "new_funds": null
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.9,
           "min_deposit": null,
           "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.8,
           "min_deposit": null,
           "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.95,
           "min_deposit": null,
           "note": "新資金定期優惠 (至 6/30)",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1665,41 +3547,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 2.8,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.7,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.7,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.8,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1713,41 +3685,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 0.5,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.65,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.7,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.8,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1755,41 +3751,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 0.5,
           "min_deposit": null,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.6,
           "min_deposit": null,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.65,
           "min_deposit": null,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.8,
           "min_deposit": null,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1803,56 +3889,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.2,
           "min_deposit": "HKD 50,000",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": 0.5,
           "min_deposit": null,
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "3m": {
           "rate": 2.5,
           "min_deposit": "HKD 50,000",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.5,
           "min_deposit": "HKD 50,000",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.5,
           "min_deposit": "HKD 50,000",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 2.5,
           "min_deposit": null,
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "9m": {
           "rate": 2.5,
           "min_deposit": null,
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         }
       },
       "usd": {
@@ -1860,41 +3955,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.5,
           "min_deposit": "USD 100",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.6,
           "min_deposit": "USD 100",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.4,
           "min_deposit": "USD 100",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.3,
           "min_deposit": "USD 100",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1908,41 +4093,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.5,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（螞蟻銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 1.8,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（螞蟻銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.2,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（螞蟻銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.5,
           "min_deposit": 1,
           "note": "從香港經濟日報提取（螞蟻銀行）",
           "source": "bank",
-          "new_funds": false
+          "fund_type": "existing_funds",
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -1950,37 +4159,131 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": null,
           "min_deposit": null,
           "note": "",
-          "source": ""
+          "source": "",
+          "fund_type": null,
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": null,
           "min_deposit": null,
           "note": "",
-          "source": ""
+          "source": "",
+          "fund_type": null,
+          "conditions": []
         },
         "6m": {
           "rate": null,
           "min_deposit": null,
           "note": "",
-          "source": ""
+          "source": "",
+          "fund_type": null,
+          "conditions": []
         },
         "12m": {
           "rate": null,
           "min_deposit": null,
           "note": "",
-          "source": ""
+          "source": "",
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       }
     },
@@ -1991,48 +4294,65 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 1.8,
           "min_deposit": "HKD 1,000,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 2.65,
           "min_deposit": "HKD 1,000,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 2.5,
           "min_deposit": "HKD 1,000,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 2.35,
           "min_deposit": "HKD 1,000,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 2.6,
           "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
       "usd": {
@@ -2040,51 +4360,134 @@
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "1m": {
           "rate": 3.4,
           "min_deposit": "USD 125,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
           "min_deposit": null,
           "note": null,
-          "source": null
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         },
         "3m": {
           "rate": 3.6,
           "min_deposit": "USD 125,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "6m": {
           "rate": 3.55,
           "min_deposit": "USD 125,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "12m": {
           "rate": 3.2,
           "min_deposit": "USD 125,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
         },
         "4m": {
           "rate": 3.6,
           "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
-          "new_funds": true
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
         }
       },
-      "type": "traditional"
+      "type": "traditional",
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      }
     }
   ]
 }
