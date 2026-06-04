@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>食息鴨 — 全港銀行定期存款利率即時比較 | 港元美元定存息率</title>
-    <meta name="description" content="即時比較全港銀行港元及美元定期存款利率，涵蓋滙豐、中銀、恒生等22間銀行，每日更新。搵最高息定存方案，一目了然。">
+    <meta name="description" content="即時比較全港銀行港元、美元及人民幣定期存款利率，涵蓋滙豐、中銀、恒生等22間銀行，每日更新。搵最高息定存方案，一目了然。">
     <meta name="keywords" content="定期存款,定存利率,港元定存,美元定存,銀行息率比較,香港定期存款,定存比較,高息定存">
     <link rel="canonical" href="https://sicsicduck.com/">
     <meta property="og:title" content="食息鴨 — 全港銀行定期存款利率即時比較">
-    <meta property="og:description" content="即時比較全港22間銀行港元及美元定期存款利率，每日更新，搵最高息定存方案。">
+    <meta property="og:description" content="即時比較全港22間銀行港元、美元及人民幣定期存款利率，每日更新，搵最高息定存方案。">
     <meta property="og:url" content="https://sicsicduck.com/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="zh_HK">
     <meta property="og:site_name" content="食息鴨">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="食息鴨 — 全港銀行定期存款利率即時比較">
-    <meta name="twitter:description" content="即時比較全港22間銀行港元及美元定期存款利率，每日更新。">
+    <meta name="twitter:description" content="即時比較全港22間銀行港元、美元及人民幣定期存款利率，每日更新。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -222,7 +222,7 @@
             margin: -20px auto 0;
             padding: 0 24px;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 16px;
             position: relative;
             z-index: 10;
@@ -393,6 +393,32 @@
         .nf-mark {
             font-size: 10px;
             opacity: 0.7;
+        }
+
+        .conditions-toggle {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .cond-btn {
+            padding: 8px 14px;
+            border: 1px solid var(--gold-300);
+            border-radius: 20px;
+            background: white;
+            color: var(--gold-700);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+            font-family: inherit;
+        }
+        .cond-btn.active {
+            background: var(--gold-600);
+            color: var(--white);
+            border-color: var(--gold-600);
+        }
+        .cond-btn:not(.active):hover {
+            background: var(--gold-50);
         }
 
         /* ===== Table ===== */
@@ -702,7 +728,7 @@
       "@type": "WebSite",
       "name": "食息鴨",
       "url": "https://sicsicduck.com",
-      "description": "即時比較全港銀行港元及美元定期存款利率，每日更新。",
+      "description": "即時比較全港銀行港元、美元及人民幣定期存款利率，每日更新。",
       "inLanguage": "zh-HK",
       "potentialAction": {
         "@type": "SearchAction",
@@ -745,7 +771,7 @@
 <section class="hero">
     <div style="font-size:13px;color:var(--gray-500);margin-bottom:8px;" id="heroUpdateTime">最後更新：載入中...</div>
     <h1>全港銀行定期存款利率一覽</h1>
-    <p>比較港元及美元定期存款息率，每日無間斷更新，幫你搵到最高息方案</p>
+    <p>比較港元、美元及人民幣定期存款息率，每日無間斷更新，幫你搵到最高息方案</p>
 </section>
 
 <!-- Summary Cards -->
@@ -756,19 +782,29 @@
         <div class="sub" id="hkdBest3mBank">--</div>
     </div>
     <div class="summary-card">
-        <div class="label">港元 6個月 最高</div>
-        <div class="value" id="hkdBest6m">--</div>
-        <div class="sub" id="hkdBest6mBank">--</div>
-    </div>
-    <div class="summary-card">
         <div class="label">美元 3個月 最高</div>
         <div class="value" id="usdBest3m">--</div>
         <div class="sub" id="usdBest3mBank">--</div>
     </div>
     <div class="summary-card">
+        <div class="label">人民幣 3個月 最高</div>
+        <div class="value" id="cnyBest3m">--</div>
+        <div class="sub" id="cnyBest3mBank">--</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">港元 6個月 最高</div>
+        <div class="value" id="hkdBest6m">--</div>
+        <div class="sub" id="hkdBest6mBank">--</div>
+    </div>
+    <div class="summary-card">
         <div class="label">美元 6個月 最高</div>
         <div class="value" id="usdBest6m">--</div>
         <div class="sub" id="usdBest6mBank">--</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">人民幣 6個月 最高</div>
+        <div class="value" id="cnyBest6m">--</div>
+        <div class="sub" id="cnyBest6mBank">--</div>
     </div>
 </div>
 
@@ -778,6 +814,7 @@
         <div class="currency-toggle">
             <button class="currency-btn active" data-currency="hkd">🇭🇰 港元 HKD</button>
             <button class="currency-btn" data-currency="usd">🇺🇸 美元 USD</button>
+            <button class="currency-btn" data-currency="cny">🇨🇳 人民幣 CNY</button>
         </div>
         <div class="period-pills">
             <button class="period-pill" data-period="1m">1個月</button>
@@ -795,7 +832,12 @@
         <div class="funds-toggle">
             <button class="funds-btn active" data-funds="all">全部</button>
             <button class="funds-btn" data-funds="new">💰 新資金</button>
-            <button class="funds-btn" data-funds="any">不限資金</button>
+            <button class="funds-btn" data-funds="existing">📦 現有資金</button>
+        </div>
+        <div class="conditions-toggle">
+            <button class="cond-btn" data-cond="new_account">🆕 開立新戶口</button>
+            <button class="cond-btn" data-cond="exchange">💱 兌換</button>
+            <button class="cond-btn" data-cond="upgrade_wealth">⬆️ 理財戶</button>
         </div>
     </div>
 </div>
@@ -896,7 +938,12 @@ document.addEventListener('click', function(e) {
 let ratesData = null;
 let currentCurrency = 'hkd';
 let currentPeriod = 'all';
-let currentFunds = 'all'; // 'all', 'new', 'any'
+let currentFunds = 'all'; // 'all', 'new', 'existing'
+let currentConditions = {
+    new_account: false,
+    exchange: false,
+    upgrade_wealth: false
+};
 let currentType = 'all';
 let sortColumn = '3m';
 let sortDirection = 'desc';
@@ -925,6 +972,10 @@ function formatDeposit(amount, currency) {
         if (amount >= 1000) return 'US$' + (amount / 1000).toFixed(0) + 'K';
         return 'US$' + amount;
     }
+    if (currency === 'cny') {
+        if (amount >= 10000) return 'CN¥' + (amount / 10000).toFixed(0) + '萬';
+        return 'CN¥' + amount.toLocaleString();
+    }
     if (amount >= 10000) return '$' + (amount / 10000).toFixed(0) + '萬';
     return '$' + amount.toLocaleString();
 }
@@ -946,7 +997,7 @@ function renderSummary() {
     if (!ratesData) return;
 
     const periods = ['3m', '6m'];
-    const currencies = ['hkd', 'usd'];
+    const currencies = ['hkd', 'usd', 'cny'];
 
     periods.forEach(period => {
         currencies.forEach(currency => {
@@ -994,16 +1045,29 @@ function renderTable() {
     // Note: funds filter is applied at cell level during rendering,
     // not at bank level, so banks with mixed rates still show partially.
 
-    // Helper: get display rate considering funds filter
+    // Helper: check if any condition filter is active
+    const hasConditions = currentConditions.new_account || currentConditions.exchange || currentConditions.upgrade_wealth;
+
+    // Helper: get display rate considering funds filter + conditions
     const getDisplayRate = (bank, period) => {
         const rd = bank[currentCurrency]?.[period];
         if (!rd || rd.rate == null) return null;
         let r = rd.rate;
-        if (currentFunds === 'any' && rd.any_funds_rate != null) r = rd.any_funds_rate;
-        // Check visibility
-        const nf = rd.new_funds;
-        if (currentFunds === 'new' && nf !== true) return null;
-        if (currentFunds === 'any' && nf !== false && rd.any_funds_rate == null) return null;
+
+        // Funds type filter (fund_type)
+        if (currentFunds === 'new' && rd.fund_type !== 'new_funds') return null;
+        if (currentFunds === 'existing' && rd.fund_type !== 'existing_funds') return null;
+
+        // Conditions filter (OR logic, multi-select)
+        if (hasConditions) {
+            const condArr = rd.conditions || [];
+            let matched = false;
+            if (currentConditions.new_account && (rd.new_account === true || condArr.includes('new_account'))) matched = true;
+            if (currentConditions.exchange && (rd.currency_exchange === true || condArr.includes('exchange'))) matched = true;
+            if (currentConditions.upgrade_wealth && (rd.upgrade_wealth === true || condArr.includes('upgrade_wealth'))) matched = true;
+            if (!matched) return null;
+        }
+
         return r;
     };
 
@@ -1076,25 +1140,25 @@ function renderTable() {
                 }
 
                 const rateData = data?.[period];
-                let rate = rateData?.rate;
+                let displayRate = rateData?.rate ?? null;
 
-                // Funds filter: swap to any_funds_rate if available and filter is 'any'
-                let displayRate = rate;
-                if (currentFunds === 'any' && rateData?.any_funds_rate != null) {
-                    displayRate = rateData.any_funds_rate;
+                // Funds type filter
+                if (displayRate !== null && currentFunds === 'new' && rateData?.fund_type !== 'new_funds') displayRate = null;
+                if (displayRate !== null && currentFunds === 'existing' && rateData?.fund_type !== 'existing_funds') displayRate = null;
+
+                // Conditions filter (OR logic)
+                if (displayRate !== null && hasConditions) {
+                    const condArr = rateData?.conditions || [];
+                    let matched = false;
+                    if (currentConditions.new_account && (rateData?.new_account === true || condArr.includes('new_account'))) matched = true;
+                    if (currentConditions.exchange && (rateData?.currency_exchange === true || condArr.includes('exchange'))) matched = true;
+                    if (currentConditions.upgrade_wealth && (rateData?.upgrade_wealth === true || condArr.includes('upgrade_wealth'))) matched = true;
+                    if (!matched) displayRate = null;
                 }
 
-                // Funds filter: hide rates that don't match
-                let hiddenByFunds = false;
-                if (currentFunds !== 'all' && displayRate !== null && displayRate !== undefined) {
-                    const nf = rateData?.new_funds;
-                    if (currentFunds === 'new' && nf !== true) hiddenByFunds = true;
-                    if (currentFunds === 'any' && nf !== false && rateData?.any_funds_rate == null) hiddenByFunds = true;
-                }
+                const isBest = displayRate !== null && displayRate !== undefined && displayRate === bestRates[period];
 
-                const isBest = !hiddenByFunds && displayRate !== null && displayRate !== undefined && displayRate === bestRates[period];
-
-                if (displayRate === null || displayRate === undefined || hiddenByFunds) {
+                if (displayRate === null || displayRate === undefined) {
                     html += `<td class="rate-cell na">—</td>`;
                 } else {
                     let cls = 'normal';
@@ -1111,17 +1175,11 @@ function renderTable() {
                 }
             });
 
-            // Notes — only show if the rate is visible under current funds filter
+            // Notes
             const activePeriod = periods[0];
             const noteData = data?.[activePeriod];
-            let noteVisible = true;
-            if (currentFunds !== 'all' && noteData) {
-                const nf = noteData.new_funds;
-                if (currentFunds === 'new' && nf !== true) noteVisible = false;
-                if (currentFunds === 'any' && nf !== false && noteData.any_funds_rate == null) noteVisible = false;
-            }
-            const note = noteVisible ? (noteData?.note || '') : '';
-            const minDep = noteVisible ? noteData?.min_deposit : null;
+            const note = noteData?.note || '';
+            const minDep = noteData?.min_deposit;
             html += `<td class="note-cell">
                 ${note ? `<div>${note}</div>` : ''}
                 ${minDep ? `<div class="min-deposit">門檻：${formatDeposit(minDep, currentCurrency)}</div>` : ''}
@@ -1184,6 +1242,14 @@ document.querySelectorAll('.funds-btn').forEach(btn => {
         document.querySelectorAll('.funds-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentFunds = btn.dataset.funds;
+        renderTable();
+    });
+});
+
+document.querySelectorAll('.cond-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        currentConditions[btn.dataset.cond] = btn.classList.contains('active');
         renderTable();
     });
 });
