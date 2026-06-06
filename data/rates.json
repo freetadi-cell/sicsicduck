@@ -1747,15 +1747,12 @@
           ]
         },
         "6m": {
-          "rate": 2.3,
-          "min_deposit": 50000,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
+          "rate": 3.0,
+          "min_deposit": 500000,
+          "note": "新資金定期存款優惠 (50萬港元以上)",
+          "source": "dbs",
           "fund_type": "new_funds",
-          "conditions": [
-            "new_account",
-            "upgrade_wealth"
-          ]
+          "conditions": []
         },
         "12m": {
           "rate": 2.3,
@@ -1769,15 +1766,12 @@
           ]
         },
         "4m": {
-          "rate": 2.4,
-          "min_deposit": 50000,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
+          "rate": 3.0,
+          "min_deposit": 500000,
+          "note": "新資金定期存款優惠 (50萬港元以上)",
+          "source": "dbs",
           "fund_type": "new_funds",
-          "conditions": [
-            "new_account",
-            "upgrade_wealth"
-          ]
+          "conditions": []
         },
         "9m": {
           "rate": 2.3,
@@ -1825,11 +1819,11 @@
           "conditions": []
         },
         "6m": {
-          "rate": 3.8,
-          "min_deposit": 128000,
-          "note": "網上定存特惠年利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
+          "rate": 4.0,
+          "min_deposit": 65000,
+          "note": "新資金定期存款優惠 (6.5萬美元以上)",
+          "source": "dbs",
+          "fund_type": "new_funds",
           "conditions": []
         },
         "12m": {
@@ -1841,11 +1835,11 @@
           "conditions": []
         },
         "4m": {
-          "rate": 3.8,
-          "min_deposit": 128000,
-          "note": "網上定存特惠年利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
+          "rate": 4.0,
+          "min_deposit": 65000,
+          "note": "新資金定期存款優惠 (6.5萬美元以上)",
+          "source": "dbs",
+          "fund_type": "new_funds",
           "conditions": []
         },
         "9m": {
