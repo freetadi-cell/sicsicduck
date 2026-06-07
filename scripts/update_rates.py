@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 香港銀行定期存款利率自動更新腳本
-以 HKET（香港經濟日報）各銀行專頁為主要資訊來源，銀行官網為後備
+以銀行官網為第一數據來源，HKET（香港經濟日報）作為補充數據來源
 
 每日 8:30 由 cron 執行
 
@@ -12,10 +12,9 @@
 - conditions 為陣列，可多選
 
 提取方式：
-1. 首先嘗試 HKET 文章（需為當日或前一日更新）
-2. 若 HKET 失敗或文章過舊，嘗試 regex parser（scripts/parsers/<bank_key>.py）
-3. 若 parser 失敗，使用 LLM 理解原始數據並提取利率
-4. 若都失敗，使用 UHK 後備
+1. 首先嘗試銀行官網 regex parser（scripts/parsers/<bank_key>.py）
+2. 若官網 parser 失敗或部分年期缺失，用 HKET 文章補充缺失年期
+3. 若都失敗，使用 UHK 後備
 """
 
 import json
@@ -1032,6 +1031,7 @@ def update_rates():
 
         cfg = BANK_CONFIG[parser_key]
         url = cfg['url']
+        bank_updated = False
 
         # ---- Apply HKET CNY data if available ----
         if parser_key and parser_key in cny_hket_data:
@@ -1051,31 +1051,30 @@ def update_rates():
                 if cny_periods:
                     logger.info(f'  [{parser_key}] CNY from HKET overview: {cny_periods}')
 
-        # ---- Phase 1: Try HKET (primary source for HKD/USD) ----
-        if parser_key in HKET_ARTICLES:
-            hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
-            if hket_ok and hket_result:
-                changed = _compare_rates(bank, hket_result)
-                _apply_result_rates(bank, hket_result, bank_name, source='hket')
-                if changed:
-                    verified_updated.append((bank_name, len(changed)))
-                    logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates UPDATED ({len(changed)} changed)")
-                else:
-                    verified_same.append(bank_name)
-                    logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates unchanged (verified)")
-                continue
-            # HKET failed or article too old → fallback to bank website
-
-        # ---- Phase 2: Bank website scraping ----
+        # ---- Phase 1: Bank website scraping (PRIMARY source for HKD/USD) ----
         if cfg.get('skip_scrape'):
-            # No website scraping for this bank, try UHK
-            if _apply_uhk_fallback(bank, get_uhk_rates()):
-                unverified.append(bank_name)
-                logger.info(f"  [{parser_key}] {bank_name}: HKET unavailable, using UHK fallback (unverified)")
-            else:
-                unverified.append(bank_name)
-                mark_moneyhero(bank)
-                logger.warning(f"  [{parser_key}] {bank_name}: HKET unavailable, no fallback data (unverified)")
+            # No website scraping for this bank → try HKET as primary, then UHK
+            logger.info(f"  [{parser_key}] {bank_name}: skip_scrape, trying HKET as primary...")
+            if parser_key in HKET_ARTICLES:
+                hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
+                if hket_ok and hket_result:
+                    changed = _compare_rates(bank, hket_result)
+                    _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                    if changed:
+                        verified_updated.append((bank_name, len(changed)))
+                        bank_updated = True
+                        logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates UPDATED ({len(changed)} changed)")
+                    else:
+                        verified_same.append(bank_name)
+                        logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates unchanged (verified)")
+            if not bank_updated:
+                if _apply_uhk_fallback(bank, get_uhk_rates()):
+                    unverified.append(bank_name)
+                    logger.info(f"  [{parser_key}] {bank_name}: using UHK fallback (unverified)")
+                else:
+                    unverified.append(bank_name)
+                    mark_moneyhero(bank)
+                    logger.warning(f"  [{parser_key}] {bank_name}: no data source available (unverified)")
             continue
 
         text, tables, html = scrape_page(
@@ -1086,15 +1085,24 @@ def update_rates():
 
         if text is None and tables is None:
             logger.warning(f"  [{parser_key}] ✗ Failed to scrape {bank_name}")
+            # Scrape failed → try HKET as fallback, then UHK
+            if parser_key in HKET_ARTICLES:
+                hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
+                if hket_ok and hket_result:
+                    _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                    unverified.append(bank_name)
+                    logger.info(f"  [{parser_key}] → {bank_name}: scrape failed, using HKET fallback (unverified)")
+                    continue
             if _apply_uhk_fallback(bank, get_uhk_rates()):
-                logger.info(f"  → {bank_name} using UHK second source (unverified)")
+                unverified.append(bank_name)
+                logger.info(f"  → {bank_name} using UHK fallback (unverified)")
             else:
                 failed_banks.append(bank_name)
                 mark_moneyhero(bank)
-            unverified.append(bank_name)
+                unverified.append(bank_name)
             continue
 
-        # ---- Phase 3: Try regex parser ----
+        # ---- Phase 2: Try regex parser on bank website data ----
         result = None
         parse_fn = load_parser(parser_key)
 
@@ -1118,33 +1126,51 @@ def update_rates():
                     except Exception:
                         pass
 
-        # ---- Phase 4: Apply or save ----
+        # ---- Phase 3: Apply bank website result ----
         if result:
-            # Wrap parser result into new format
             wrapped = _wrap_parser_result(result, bank_name)
             changed = _compare_rates(bank, wrapped)
             _apply_result_rates(bank, wrapped, bank_name, source='bank')
             if changed:
                 verified_updated.append((bank_name, len(changed)))
-                logger.info(f"  [{parser_key}] ✓ {bank_name}: rates UPDATED ({len(changed)} changed)")
+                bank_updated = True
+                logger.info(f"  [{parser_key}] ✓ {bank_name}: bank website rates UPDATED ({len(changed)} changed)")
             else:
                 verified_same.append(bank_name)
-                logger.info(f"  [{parser_key}] ✓ {bank_name}: rates unchanged (verified)")
+                logger.info(f"  [{parser_key}] ✓ {bank_name}: bank website rates unchanged (verified)")
         else:
-            # Parser failed — save raw data
+            # Parser failed — save raw data for later extraction
             save_scraped_data(parser_key, bank_name, url, text, tables, html)
             needs_extraction.append(bank_name)
-            unverified.append(bank_name)
-            logger.info(f"  [{parser_key}] ⏳ Parser failed, saved raw data for {bank_name} (unverified)")
+            logger.info(f"  [{parser_key}] ⏳ Parser failed, saved raw data for {bank_name}")
 
+            # Still try UHK as immediate fallback
             if _apply_uhk_fallback(bank, get_uhk_rates()):
                 logger.info(f"  → {bank_name} using UHK fallback (pending extraction)")
             else:
                 mark_moneyhero(bank)
+            unverified.append(bank_name)
+            continue  # No bank data to supplement
+
+        # ---- Phase 4: HKET supplement — fill in missing periods ----
+        hket_supplemented = []
+        if parser_key in HKET_ARTICLES:
+            hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
+            if hket_ok and hket_result:
+                hket_result['_only_missing'] = True
+                supplemented = _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                if supplemented:
+                    hket_supplemented = supplemented
+                    logger.info(f"  [{parser_key}] 🔗 HKET supplemented {bank_name}: {supplemented}")
+
+        if hket_supplemented and not bank_updated:
+            # Bank rates unchanged but HKET filled gaps
+            verified_same.append(bank_name)
+
 
     # ---- Metadata ----
     data['last_updated'] = datetime.now(HKT).isoformat()
-    data['source'] = 'HKET香港經濟日報 / 各銀行官網'
+    data['source'] = '各銀行官網 / HKET香港經濟日報（補充）'
 
     # Fund type defaults (when not detected from HKET)
     NF_DEFAULTS = {
@@ -1250,8 +1276,12 @@ def _compare_rates(bank, result):
 
 
 def _apply_result_rates(bank, result, bank_name, source='bank'):
-    """Apply parsed rates to bank data structure."""
+    """Apply parsed rates to bank data structure.
+    If only_missing=True, only fill in periods where rate is currently None (supplement mode).
+    """
     note = result.get('note', f'從{bank_name}官網提取')
+    only_missing = result.get('_only_missing', False)
+    supplemented = []
     for cur in ALL_CURRENCIES:
         if cur not in result:
             continue
@@ -1266,6 +1296,13 @@ def _apply_result_rates(bank, result, bank_name, source='bank'):
             if rate is None:
                 continue
 
+            # In supplement mode, skip if bank already has a rate for this period
+            if only_missing:
+                existing = bank.get(cur, {}).get(period, {})
+                if isinstance(existing, dict) and existing.get('rate') is not None:
+                    continue
+                supplemented.append(f'{cur}/{period}')
+
             bank[cur][period] = {
                 'rate': rate,
                 'min_deposit': val.get('min_deposit') or bank.get(cur, {}).get(period, {}).get('min_deposit'),
@@ -1274,6 +1311,7 @@ def _apply_result_rates(bank, result, bank_name, source='bank'):
                 'fund_type': val.get('fund_type'),
                 'conditions': val.get('conditions', []),
             }
+    return supplemented
 
 
 def _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified):
