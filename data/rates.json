@@ -4552,6 +4552,210 @@
           "conditions": []
         }
       }
+    },
+    {
+      "name": "南洋商業銀行",
+      "name_en": "NCB",
+      "type": "traditional",
+      "logo_color": "#003399",
+      "hkd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "usd": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      },
+      "cny": {
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "1m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "3m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "4m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "6m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "12m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        }
+      }
     }
   ]
 }
