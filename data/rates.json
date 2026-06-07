@@ -4568,7 +4568,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 1.0,
+          "rate": 2.3,
           "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
@@ -4576,7 +4576,7 @@
           "conditions": []
         },
         "2m": {
-          "rate": 1.15,
+          "rate": 2.55,
           "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
@@ -4584,7 +4584,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 1.3,
+          "rate": 2.55,
           "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
@@ -4592,7 +4592,7 @@
           "conditions": []
         },
         "4m": {
-          "rate": 1.3,
+          "rate": 2.55,
           "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
@@ -4600,7 +4600,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 1.35,
+          "rate": 2.5,
           "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
@@ -4608,7 +4608,7 @@
           "conditions": []
         },
         "9m": {
-          "rate": 1.4,
+          "rate": 2.5,
           "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
@@ -4616,7 +4616,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 1.4,
+          "rate": 2.5,
           "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
@@ -4700,56 +4700,56 @@
           "conditions": []
         },
         "1m": {
-          "rate": 2.3,
-          "min_deposit": 1000000,
+          "rate": 1.0,
+          "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
           "fund_type": "new_funds",
           "conditions": []
         },
         "2m": {
-          "rate": 2.55,
-          "min_deposit": 1000000,
+          "rate": 1.15,
+          "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
           "fund_type": "new_funds",
           "conditions": []
         },
         "3m": {
-          "rate": 2.55,
-          "min_deposit": 1000000,
+          "rate": 1.3,
+          "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
           "fund_type": "new_funds",
           "conditions": []
         },
         "4m": {
-          "rate": 2.55,
-          "min_deposit": 1000000,
+          "rate": 1.3,
+          "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
           "fund_type": "new_funds",
           "conditions": []
         },
         "6m": {
-          "rate": 2.5,
-          "min_deposit": 1000000,
+          "rate": 1.35,
+          "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
           "fund_type": "new_funds",
           "conditions": []
         },
         "9m": {
-          "rate": 2.5,
-          "min_deposit": 1000000,
+          "rate": 1.4,
+          "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
           "fund_type": "new_funds",
           "conditions": []
         },
         "12m": {
-          "rate": 2.5,
-          "min_deposit": 1000000,
+          "rate": 1.4,
+          "min_deposit": 100000,
           "note": "智優息定期存款（新資金，至6月起）",
           "source": "screenshot",
           "fund_type": "new_funds",
