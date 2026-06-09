@@ -63,6 +63,7 @@ BANK_CONFIG = {
         'url': 'https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo',
         'cloudflare_bypass': True,
         'get_html': True,
+        'wait': 10,
     },
     'fubon': {
         'name': '富邦銀行',
@@ -1079,6 +1080,7 @@ def update_rates():
 
         text, tables, html = scrape_page(
             url,
+            wait=cfg.get('wait', 5),
             cloudflare_bypass=cfg.get('cloudflare_bypass', False),
             get_html=cfg.get('get_html', False)
         )
