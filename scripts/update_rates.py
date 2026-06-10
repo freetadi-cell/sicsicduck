@@ -640,6 +640,42 @@ def _parse_hket_rates(text):
                         })
                     break  # Found rate for this period, move on
 
+    # Fallback: if currency section splitting missed the rate table
+    # (e.g. promotional mentions of other currencies truncate the section),
+    # try parsing the full body as a single HKD section
+    if not entries:
+        logger.debug('  HKET: no rates found in currency sections, trying full-body fallback')
+        fund_type, conditions = _detect_conditions(body)
+        min_deposit = _detect_min_deposit(body)
+        for period, patterns in [
+            ('1w', [r'(?<!\d)1星期\s*([\d.]+)\s*厘', r'(?<!\d)7天\s*([\d.]+)\s*厘']),
+            ('1m', [r'(?<!\d)1個月\s*([\d.]+)\s*厘']),
+            ('2m', [r'(?<!\d)2個月\s*([\d.]+)\s*厘']),
+            ('3m', [r'(?<!\d)3個月\s*([\d.]+)\s*厘']),
+            ('4m', [r'(?<!\d)4個月\s*([\d.]+)\s*厘']),
+            ('6m', [r'(?<!\d)6個月\s*([\d.]+)\s*厘']),
+            ('9m', [r'(?<!\d)9個月\s*([\d.]+)\s*厘']),
+            ('12m', [r'(?<!\d)12個月\s*([\d.]+)\s*厘']),
+        ]:
+            for pat in patterns:
+                m = re.search(pat, body)
+                if m:
+                    rate = float(m.group(1))
+                    if rate > 0:
+                        context_start = max(0, m.start() - 100)
+                        context = body[context_start:m.end() + 50]
+                        row_fund_type, row_conditions = _detect_conditions(context)
+                        row_min = _detect_min_deposit(context) or min_deposit
+                        entries.append({
+                            'currency': 'hkd',
+                            'period': period,
+                            'rate': rate,
+                            'min_deposit': row_min,
+                            'fund_type': row_fund_type or fund_type,
+                            'conditions': row_conditions or conditions,
+                        })
+                    break
+
     if not entries:
         return None
 
@@ -1056,11 +1092,13 @@ def update_rates():
         if cfg.get('skip_scrape'):
             # No website scraping for this bank → try HKET as primary, then UHK
             logger.info(f"  [{parser_key}] {bank_name}: skip_scrape, trying HKET as primary...")
+            hket_verified = False
             if parser_key in HKET_ARTICLES:
                 hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
                 if hket_ok and hket_result:
                     changed = _compare_rates(bank, hket_result)
                     _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                    hket_verified = True
                     if changed:
                         verified_updated.append((bank_name, len(changed)))
                         bank_updated = True
@@ -1068,7 +1106,7 @@ def update_rates():
                     else:
                         verified_same.append(bank_name)
                         logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates unchanged (verified)")
-            if not bank_updated:
+            if not hket_verified:
                 if _apply_uhk_fallback(bank, get_uhk_rates()):
                     unverified.append(bank_name)
                     logger.info(f"  [{parser_key}] {bank_name}: using UHK fallback (unverified)")

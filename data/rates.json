@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T12:04:46.871488+08:00",
+  "last_updated": "2026-06-10T23:47:54.438199+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -10,20 +10,26 @@
       "logo_color": "#DB0011",
       "hkd": {
         "1w": {
-          "rate": null,
-          "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
-          "conditions": []
+          "rate": 7.0,
+          "min_deposit": 10000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "1m": {
-          "rate": null,
-          "min_deposit": null,
-          "note": "*",
-          "source": "moneyhero",
-          "fund_type": null,
-          "conditions": []
+          "rate": 3.0,
+          "min_deposit": 10000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "2m": {
           "rate": null,
@@ -654,24 +660,24 @@
         "3m": {
           "rate": 2.4,
           "min_deposit": 10000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "網上新資金定期存款特惠年利率",
+          "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
         },
         "6m": {
           "rate": 2.2,
           "min_deposit": 10000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "網上新資金定期存款特惠年利率",
+          "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
         },
         "12m": {
           "rate": 2.2,
           "min_deposit": 10000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "網上新資金定期存款特惠年利率",
+          "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
         },
@@ -1048,8 +1054,8 @@
         "1m": {
           "rate": 1.5,
           "min_deposit": 50000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "source": "bank",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -1066,24 +1072,24 @@
         "3m": {
           "rate": 2.55,
           "min_deposit": 50000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "source": "bank",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
           "rate": 2.4,
           "min_deposit": 50000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "source": "bank",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
           "rate": 2.4,
           "min_deposit": 50000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "source": "bank",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -1268,26 +1274,26 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.65,
+          "rate": 2.6,
           "min_deposit": 10000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "顯卓理財特惠定期存款利率",
+          "source": "bank",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
-          "rate": 2.45,
+          "rate": 2.6,
           "min_deposit": 10000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "顯卓理財特惠定期存款利率",
+          "source": "bank",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
-          "rate": 2.65,
+          "rate": 2.55,
           "min_deposit": 10000,
-          "note": "UHK 港生活",
-          "source": "uhk",
+          "note": "顯卓理財特惠定期存款利率",
+          "source": "bank",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -1668,9 +1674,9 @@
         "1m": {
           "rate": 2.0,
           "min_deposit": 50000,
-          "note": "UHK 港生活",
-          "source": "uhk",
-          "fund_type": "new_funds",
+          "note": "網上定存特惠年利率",
+          "source": "bank",
+          "fund_type": false,
           "conditions": []
         },
         "2m": {
@@ -1684,33 +1690,33 @@
         "3m": {
           "rate": 2.5,
           "min_deposit": 50000,
-          "note": "UHK 港生活",
-          "source": "uhk",
-          "fund_type": "new_funds",
+          "note": "網上定存特惠年利率",
+          "source": "bank",
+          "fund_type": false,
           "conditions": []
         },
         "6m": {
           "rate": 3.0,
           "min_deposit": 500000,
-          "note": "新資金定期存款優惠（50萬港元以上）",
+          "note": "網上定存特惠年利率",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": false,
           "conditions": []
         },
         "12m": {
           "rate": 2.3,
           "min_deposit": 50000,
-          "note": "UHK 港生活",
-          "source": "uhk",
-          "fund_type": "new_funds",
+          "note": "網上定存特惠年利率",
+          "source": "bank",
+          "fund_type": false,
           "conditions": []
         },
         "4m": {
-          "rate": 3.0,
+          "rate": 2.4,
           "min_deposit": 500000,
-          "note": "新資金定期存款優惠（50萬港元以上）",
+          "note": "網上定存特惠年利率",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": false,
           "conditions": []
         },
         "9m": {
@@ -2086,7 +2092,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 1.78,
+          "rate": 1.98,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2118,7 +2124,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.43,
+          "rate": 2.48,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2904,18 +2910,22 @@
         "1w": {
           "rate": 1.0,
           "min_deposit": null,
-          "note": "從香港經濟日報提取（富融銀行）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "upgrade_wealth"
+          ]
         },
         "1m": {
           "rate": 1.6,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取（富融銀行）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "upgrade_wealth"
+          ]
         },
         "2m": {
           "rate": null,
@@ -2928,26 +2938,32 @@
         "3m": {
           "rate": 2.7,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取（富融銀行）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "upgrade_wealth"
+          ]
         },
         "6m": {
           "rate": 2.6,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取（富融銀行）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "upgrade_wealth"
+          ]
         },
         "12m": {
-          "rate": 2.8,
+          "rate": 2.9,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取（富融銀行）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "upgrade_wealth"
+          ]
         },
         "4m": {
           "rate": null,
@@ -3758,7 +3774,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.65,
+          "rate": 2.62,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
@@ -3766,7 +3782,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.7,
+          "rate": 2.65,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
@@ -3774,7 +3790,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.8,
+          "rate": 2.85,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
@@ -4379,7 +4395,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.65,
+          "rate": 2.7,
           "min_deposit": 200000,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4387,7 +4403,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.5,
+          "rate": 2.6,
           "min_deposit": 200000,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4395,7 +4411,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.35,
+          "rate": 2.4,
           "min_deposit": 200000,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4403,7 +4419,7 @@
           "conditions": []
         },
         "4m": {
-          "rate": 2.6,
+          "rate": 2.65,
           "min_deposit": 200000,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4453,7 +4469,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 3.55,
+          "rate": 3.6,
           "min_deposit": "USD 125,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4461,7 +4477,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 3.2,
+          "rate": 3.3,
           "min_deposit": "USD 125,000",
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4560,68 +4576,93 @@
       "logo_color": "#003399",
       "hkd": {
         "1w": {
-          "rate": null,
-          "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
-          "conditions": []
+          "rate": 6.8,
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
+          "fund_type": "new_funds",
+          "conditions": [
+            "new_account",
+            "exchange",
+            "upgrade_wealth"
+          ]
         },
         "1m": {
-          "rate": 2.3,
-          "min_deposit": 100000,
-          "note": "智優息定期存款（新資金，至6月起） *",
-          "source": "moneyhero",
+          "rate": 2.88,
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
           "fund_type": "new_funds",
-          "conditions": []
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "2m": {
           "rate": 2.55,
-          "min_deposit": 100000,
-          "note": "智優息定期存款（新資金，至6月起） *",
-          "source": "moneyhero",
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
           "fund_type": "new_funds",
-          "conditions": []
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "3m": {
-          "rate": 2.55,
-          "min_deposit": 100000,
-          "note": "智優息定期存款（新資金，至6月起） *",
-          "source": "moneyhero",
+          "rate": 2.65,
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
           "fund_type": "new_funds",
-          "conditions": []
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "4m": {
-          "rate": 2.55,
-          "min_deposit": 100000,
-          "note": "智優息定期存款（新資金，至6月起） *",
-          "source": "moneyhero",
+          "rate": 2.65,
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
           "fund_type": "new_funds",
-          "conditions": []
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "6m": {
-          "rate": 2.5,
-          "min_deposit": 100000,
-          "note": "智優息定期存款（新資金，至6月起） *",
-          "source": "moneyhero",
+          "rate": 2.6,
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
           "fund_type": "new_funds",
-          "conditions": []
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "9m": {
-          "rate": 2.5,
-          "min_deposit": 100000,
-          "note": "智優息定期存款（新資金，至6月起） *",
-          "source": "moneyhero",
+          "rate": 2.6,
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
           "fund_type": "new_funds",
-          "conditions": []
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         },
         "12m": {
-          "rate": 2.5,
-          "min_deposit": 100000,
-          "note": "智優息定期存款（新資金，至6月起） *",
-          "source": "moneyhero",
+          "rate": 2.6,
+          "min_deposit": 1000,
+          "note": "從香港經濟日報提取",
+          "source": "hket",
           "fund_type": "new_funds",
-          "conditions": []
+          "conditions": [
+            "new_account",
+            "exchange"
+          ]
         }
       },
       "usd": {
