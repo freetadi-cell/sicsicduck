@@ -1477,3 +1477,70 @@
 2026-06-09 12:04:46,876 [INFO] Last updated: 2026-06-09T12:04:46.871488+08:00
 2026-06-09 12:04:46,876 [INFO] ==================================================
 2026-06-09 12:04:51,851 [INFO] Telegram notification sent
+2026-06-11 08:30:09,071 [INFO] ==================================================
+2026-06-11 08:30:09,073 [INFO] HK Deposit Rates Update
+2026-06-11 08:30:09,073 [INFO] Time: 2026-06-11 08:30:09
+2026-06-11 08:30:09,073 [INFO] ==================================================
+2026-06-11 08:30:09,075 [INFO] Processing 23 banks
+2026-06-11 08:30:09,386 [INFO]   HKET CNY article last updated 2026/05/26, older than 14 days, skipping
+2026-06-11 08:30:22,974 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates unchanged (verified)
+2026-06-11 08:30:23,357 [INFO]   [hsbc] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:30:33,076 [INFO]   [bochk] ✓ 中銀香港: bank website rates unchanged (verified)
+2026-06-11 08:30:33,406 [INFO]   [bochk] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:30:52,133 [INFO]   [hangseng] ✓ 恒生銀行: bank website rates unchanged (verified)
+2026-06-11 08:30:52,474 [INFO]   [hangseng] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:31:06,959 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-11 08:31:07,162 [INFO]   [sc] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:31:19,680 [INFO]   [fubon] ✓ 富邦銀行: bank website rates unchanged (verified)
+2026-06-11 08:31:20,008 [INFO]   [fubon] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:31:29,990 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates unchanged (verified)
+2026-06-11 08:31:30,217 [INFO]   [icbc] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:31:40,786 [INFO]   [bea] ✓ 東亞銀行: bank website rates unchanged (verified)
+2026-06-11 08:31:41,017 [INFO]   [bea] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:31:53,649 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates unchanged (verified)
+2026-06-11 08:31:54,118 [INFO]   [cncbi] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:32:15,633 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-06-11 08:32:15,889 [INFO]   [dbs] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:32:15,889 [INFO]   [bocomm] 交通銀行: skip_scrape, trying HKET as primary...
+2026-06-11 08:32:16,095 [INFO]   [bocomm] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:32:16,854 [INFO] UHK second source: found 9 banks
+2026-06-11 08:32:16,854 [WARNING]   [bocomm] 交通銀行: no data source available (unverified)
+2026-06-11 08:32:31,522 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-06-11 08:32:31,795 [INFO]   [shacom] HKET: could not find article date for 上海商業銀行, skipping
+2026-06-11 08:32:42,427 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-06-11 08:32:42,736 [INFO]   [publicbank] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:32:51,623 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-11 08:32:51,951 [INFO]   [winglung] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:33:05,794 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-11 08:33:06,032 [INFO]   [chbank] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:33:06,032 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-11 08:33:06,275 [INFO]   [fusion] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:33:06,275 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-11 08:33:27,465 [INFO]   Clicked tab @e11 (美元)
+2026-06-11 08:33:32,134 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-11 08:33:32,134 [INFO]   [airstar] ✓ 象象銀行: bank website rates unchanged (verified)
+2026-06-11 08:33:32,335 [INFO]   [airstar] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:33:47,688 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-11 08:33:48,010 [INFO]   [za] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:33:58,629 [INFO]   [pao] ✓ 平安數字銀行: bank website rates unchanged (verified)
+2026-06-11 08:33:58,981 [INFO]   [pao] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:34:08,585 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-11 08:34:08,817 [INFO]   [welab] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:34:22,920 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-11 08:34:23,207 [INFO]   [livi] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:34:23,207 [INFO]   [ant] 螞蟻銀行: skip_scrape, trying HKET as primary...
+2026-06-11 08:34:23,522 [INFO]   [ant] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:34:23,522 [WARNING]   [ant] 螞蟻銀行: no data source available (unverified)
+2026-06-11 08:34:33,431 [INFO]   [chiyu] ✓ 集友銀行: bank website rates unchanged (verified)
+2026-06-11 08:34:33,746 [INFO]   [chiyu] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:34:33,747 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-11 08:34:33,945 [INFO]   [ncb] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-11 08:34:33,945 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-11 08:34:33,952 [INFO] ==================================================
+2026-06-11 08:34:33,952 [INFO] Update complete:
+2026-06-11 08:34:33,952 [INFO]   ✅ Verified (same): 19
+2026-06-11 08:34:33,952 [INFO]   🔄 Verified (updated): 0
+2026-06-11 08:34:33,952 [INFO]   ❌ Unverified: 4
+2026-06-11 08:34:33,952 [INFO] Last updated: 2026-06-11T08:34:33.945859+08:00
+2026-06-11 08:34:33,952 [INFO] ==================================================
+2026-06-11 08:34:41,499 [INFO] Telegram notification sent
