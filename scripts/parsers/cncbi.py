@@ -2,7 +2,7 @@
 
 Uses two sources:
 1. inMotion promo page (new fund rates) - curl (doesn't need browser)
-2. Main rate table page (board rates) - browser scrape fallback
+2. Main rate table page (board rates) - browser scrape fallback (HKD + CNY)
 """
 import re
 import subprocess
@@ -30,7 +30,7 @@ def _fetch_promo_rates():
 
 
 def parse(text, tables=None, html=None):
-    """Parse CNCBI time deposit rates.
+    """Parse CNCBI time deposit rates (HKD, USD, CNY).
     
     First try promo rates from inMotion page (via curl, no browser needed).
     Then fall back to board rates from rate table page (via browser scrape).
@@ -49,23 +49,41 @@ def parse(text, tables=None, html=None):
             if len(pcts) >= 2:
                 rates['usd'] = {'3m': float(pcts[1])}
             rates['note'] = 'inMotion新資金定期存款特惠年利率'
-            return rates
+            # Don't return yet — try to also get CNY
     
-    # Fallback: board rates from rate table page (needs browser text)
+    # Board rates from rate table page (needs browser text)
     if not text:
+        if rates:
+            return rates
         return None
     
     board_idx = text.find('定期存款利率')
     if board_idx >= 0:
-        section = text[board_idx:board_idx + 2000]
+        section = text[board_idx:board_idx + 3000]
+        
+        # HKD rates
         hkd_rates = {}
         for period, label in [('1m', '一個月'), ('3m', '三個月'), ('6m', '六個月'), ('12m', '十二個月')]:
             m = re.search(rf'{label}\s+(\d+\.\d+)%', section)
             if m:
                 hkd_rates[period] = float(m.group(1))
-        if hkd_rates:
+        if hkd_rates and 'hkd' not in rates:
             rates['hkd'] = hkd_rates
             rates['note'] = '定期存款利率'
-            return rates
+        
+        # CNY (人民幣) rates - same table structure
+        cny_idx = section.find('人民幣')
+        if cny_idx >= 0:
+            cny_section = section[cny_idx:cny_idx+1500]
+            cny_rates = {}
+            for period, label in [('1m', '一個月'), ('3m', '三個月'), ('6m', '六個月'), ('12m', '十二個月')]:
+                m = re.search(rf'{label}\s+(\d+\.\d+)%', cny_section)
+                if m:
+                    cny_rates[period] = float(m.group(1))
+            if cny_rates:
+                rates['cny'] = cny_rates
+                rates['cny_note'] = '定期存款利率（人民幣）'
     
+    if rates:
+        return rates
     return None

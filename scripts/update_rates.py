@@ -80,6 +80,7 @@ BANK_CONFIG = {
     'cncbi': {
         'name': '中信銀行（國際）',
         'url': 'https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html',
+        'cny_url': 'https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html',
     },
     'ncb': {
         'name': '南洋商業銀行',
@@ -102,6 +103,7 @@ BANK_CONFIG = {
     'winglung': {
         'name': '招商永隆',
         'url': 'https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp',
+        'cny_url': 'https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp',
     },
     'chbank': {
         'name': '創興銀行',
@@ -225,7 +227,7 @@ HKET_ARTICLES = {
 # HKET CNY article config (人民幣綜合文章)
 # ============================================================
 HKET_CNY_ARTICLE = {
-    'article_id': '4134368',  # 人民幣定期存款｜大行料升值逾20%！人民幣存款4大種類 賺6.8厘至21厘
+    'article_id': '4143776',  # 人民幣定期存款｜6月份最高21厘！高盛指升值預期增強 料未來1年升4%
 }
 
 # Map bank names mentioned in CNY article to our bank keys
@@ -751,6 +753,155 @@ def _hket_get_rates(bank_key, bank_name):
     return result, True
 
 
+def _generic_cny_parse(text, tables=None):
+    """Generic regex parser for CNY (人民幣) time deposit rates.
+    
+    Strategy: Find the CNY-specific section on the page, bounded by
+    currency markers. Only extract rates from within that section.
+    
+    Returns dict of {period_key: {'rate': float, ...}} or None.
+    """
+    if not text:
+        return None
+    
+    if not any(kw in text for kw in ['人民幣', 'RMB', 'CNY']):
+        return None
+    
+    # ---- Step 1: Isolate the CNY section ----
+    # Strategy: Find the LAST occurrence of 人民幣/RMB/CNY that has rates nearby.
+    # This avoids matching a navigation menu mention and focuses on the actual rate table.
+    
+    # Preferred markers (most specific first)
+    cny_start = None
+    for marker in ['人民幣定期存款利率', '人民幣定期', '人民幣定存', '人民幣新資金',
+                   'RMB Time Deposit']:
+        idx = text.rfind(marker)  # Use rfind to get last occurrence
+        if idx >= 0:
+            cny_start = idx
+            break
+    
+    if cny_start is None:
+        # Find the last 人民幣 that's followed by rate-like content (N個月 + digits)
+        best_pos = -1
+        for m in re.finditer(r'人民幣', text):
+            pos = m.start()
+            # Check if there's a rate pattern within 200 chars
+            after = text[pos:pos+200]
+            if re.search(r'\d+\s*(?:個月|个月)\s*[:：]?\s*\d+\.?\d*\s*%', after):
+                best_pos = pos
+        if best_pos >= 0:
+            cny_start = best_pos
+        else:
+            # Try RMB/CNY
+            for marker in ['RMB', 'CNY']:
+                idx = text.rfind(marker)
+                if idx >= 0:
+                    cny_start = idx
+                    break
+            # Last resort: use the last 人民幣 occurrence
+            if cny_start is None:
+                positions = [m.start() for m in re.finditer('人民幣', text)]
+                if positions:
+                    cny_start = max(positions)
+    
+    if cny_start is None:
+        return None
+    
+    # Find where CNY section ends (next currency section or end of text)
+    cny_end = len(text)
+    for stop_marker in ['美元定期', '美元存款', '美元1,000', '美元\n', '美元\t',
+                        'USD Time Deposit', 'USD\n',
+                        '澳元定期', '紐元定期', '英鎊定期', '加元定期',
+                        '澳元存款', '歐羅', '歐元',
+                        '外匯買賣風險', '人民幣兌換限制', '條款及細則',
+                        '聯絡我們', '常見問題', '備註']:
+        idx = text.find(stop_marker, cny_start + 3)
+        if idx >= 0 and idx < cny_end:
+            cny_end = idx
+    
+    cny_section = text[cny_start:cny_end]
+    if len(cny_section) < 10:
+        return None
+    
+    rates = {}
+    
+    # ---- Step 2: Extract period-rate pairs from CNY section ----
+    
+    # Pattern A: "N個月 X.XX%" or "N個月\tX.XX%"
+    for m in re.finditer(r'(\d+)\s*(?:個月|个月)\s*[:：]?\s*(\d+\.?\d*)\s*%', cny_section):
+        n = int(m.group(1))
+        pk = f'{n}m' if f'{n}m' in ALL_PERIODS else None
+        if pk:
+            rate = float(m.group(2))
+            if rate > 0:
+                rates[pk] = {'rate': rate, 'note': '從銀行官網提取'}
+    
+    # Pattern B: Chinese period names
+    period_map = {'一個月': '1m', '二個月': '2m', '兩個月': '2m', '三個月': '3m',
+                  '四個月': '4m', '六個月': '6m', '九個月': '9m', '十二個月': '12m',
+                  '一个月': '1m', '二个月': '2m', '三个月': '3m',
+                  '四个月': '4m', '六个月': '6m', '九个月': '9m', '十二个月': '12m',
+                  '1個月': '1m', '2個月': '2m', '3個月': '3m', '4個月': '4m',
+                  '6個月': '6m', '9個月': '9m', '12個月': '12m'}
+    
+    for cn, pk in period_map.items():
+        if pk in rates:
+            continue
+        m = re.search(rf'{cn}\s*[:：]?\s*(\d+\.?\d*)\s*%', cny_section)
+        if m:
+            rate = float(m.group(1))
+            if rate > 0:
+                rates[pk] = {'rate': rate, 'note': '從銀行官網提取'}
+    
+    # Pattern C: English "N months X.XX%" (after RMB/CNY marker)
+    for m in re.finditer(r'(\d+)\s*months?\s*[:：]?\s*(\d+\.?\d*)\s*%', cny_section):
+        n = int(m.group(1))
+        pk = f'{n}m' if f'{n}m' in ALL_PERIODS else None
+        if pk:
+            rate = float(m.group(2))
+            if rate > 0:
+                rates[pk] = {'rate': rate, 'note': '從銀行官網提取'}
+    
+    # Pattern D: Short-term "7天" or "1星期" (exchange rates)
+    for m in re.finditer(r'(?:7\s*天|1\s*星期|一星期)\s*[:：]?\s*(\d+\.?\d*)\s*%', cny_section):
+        rate = float(m.group(1))
+        if rate > 0:
+            rates['1w'] = {'rate': rate, 'note': '從銀行官網提取（兌換）', 'conditions': ['exchange']}
+    
+    # Pattern E: Tabular format with column headers
+    # e.g. header: 一星期 二星期 一個月 二個月 三個月 六個月 十二個月
+    #      data:   0.01%  0.01%  0.10%  0.10%  0.15%  0.25%  0.30%
+    # The header may be BEFORE the CNY section, so search the full text
+    period_labels = [('一星期', '1w'), ('二星期', '2w'), ('一個月', '1m'), ('1個月', '1m'),
+                     ('二個月', '2m'), ('2個月', '2m'), ('三個月', '3m'), ('3個月', '3m'),
+                     ('四個月', '4m'), ('4個月', '4m'), ('六個月', '6m'), ('6個月', '6m'),
+                     ('九個月', '9m'), ('9個月', '9m'), ('十二個月', '12m'), ('12個月', '12m')]
+    
+    # Find header line in the broader text context (around the CNY section)
+    search_area = text[max(0, cny_start-500):cny_start+len(cny_section)]
+    col_periods = []
+    for cn, pk in period_labels:
+        idx = search_area.find(cn)
+        if idx >= 0 and pk not in rates:
+            col_periods.append((idx, pk))
+    
+    if col_periods:
+        # Find data in the CNY section: percentage values
+        pcts = re.findall(r'(\d+\.\d+)%', cny_section)
+        if len(pcts) >= len(col_periods):
+            # Take only the first N percentages matching the columns
+            # (avoid picking up data from the next currency section)
+            for i, (_, pk) in enumerate(col_periods):
+                if pk not in rates and pk in ALL_PERIODS and i < len(pcts):
+                    rate = float(pcts[i])
+                    if rate > 0:
+                        rates[pk] = {'rate': rate, 'note': '從銀行官網提取'}
+    
+    return rates if rates else None
+
+
+
+
 def _hket_get_cny_rates():
     """Fetch and parse HKET CNY overview article for ALL banks.
     Returns dict of {bank_key: {cny: {period: {rate, fund_type, conditions, ...}}}} or empty dict.
@@ -855,8 +1006,139 @@ def _hket_get_cny_rates():
                         bank_cny[key]['cny'][period_key]['fund_type'] = fund_type
                         bank_cny[key]['cny'][period_key]['conditions'] = list(conditions)
 
-    # Skip inline mentions - the comparison table patterns above are reliable enough
-    # and inline text often mixes HKD and CNY rates causing false positives
+    # ---- Phase 2: Parse prose/inline rate mentions ----
+    # Parse sentence by sentence for CNY rate data from the article prose.
+
+    def _add_cny_rate(bkey, pk, rate, ft='new_funds', conds=None):
+        """Helper to add a CNY rate entry."""
+        if not bkey or rate <= 0 or pk not in ALL_PERIODS:
+            return
+        if bkey not in bank_cny:
+            bank_cny[bkey] = {'cny': {}}
+        existing = bank_cny[bkey]['cny'].get(pk, {})
+        existing_rate = existing.get('rate', 0) if isinstance(existing, dict) else 0
+        if rate > existing_rate:
+            bank_cny[bkey]['cny'][pk] = {
+                'rate': rate,
+                'fund_type': ft,
+                'conditions': conds or [],
+                'note': '從香港經濟日報人民幣文章提取',
+                'source': 'hket',
+            }
+
+    def _find_bkey(s):
+        for name, k in CNY_NAME_TO_KEY.items():
+            if name in s or s in name:
+                return k
+        return None
+
+    # Find the CNY prose section (before the comparison table)
+    cny_section_start = text.find('人民幣定期存款最高')
+    if cny_section_start < 0:
+        cny_section_start = text.find('人民幣定存')
+    table_start = text.find('存款期 人民幣定存')
+    if table_start < 0:
+        table_start = text.find('人民幣定存 VS 港元定存')
+    if cny_section_start >= 0:
+        if table_start < 0:
+            table_start = len(text)
+        cny_prose = text[cny_section_start:table_start]
+    else:
+        cny_prose = ''
+
+    if cny_prose:
+        # 1. 平安數字銀行: "7天人民幣定存有21厘、14天有10厘、1個月有6.8厘、3個月有2.5厘"
+        rate_list = re.findall(r'(\d+)(天|個月)(?:人民幣定存)?有([\d.]+)厘', cny_prose)
+        # Only apply to 平安 if found in the right context
+        if '平安數字銀行' in cny_prose and '外幣兌換定存限時優惠' in cny_prose:
+            for val, unit, rate_str in rate_list:
+                n = int(val)
+                if unit == '天':
+                    pk = '1w' if n == 7 else None
+                else:
+                    pk = f'{n}m' if f'{n}m' in ALL_PERIODS else None
+                if pk:
+                    _add_cny_rate('pao', pk, float(rate_str), conds=['exchange'])
+
+        # 2. 眾安銀行: "眾安銀行也同時設有7天的人民幣兌換定存，年利率達20厘"
+        m = re.search(r'眾安銀行.*?(\d+)天.*?人民幣.*?定存.*?年利率達([\d.]+)厘', cny_prose)
+        if m:
+            pk = '1w' if int(m.group(1)) == 7 else None
+            if pk:
+                _add_cny_rate('za', pk, float(m.group(2)), conds=['exchange'])
+
+        # 3. 星展銀行: "星展銀行最高，有16厘年利率"
+        m = re.search(r'星展銀行.*?有([\d.]+)厘.*?年利率', cny_prose)
+        if m:
+            _add_cny_rate('dbs', '1w', float(m.group(1)), conds=['exchange'])
+
+        # 4. 南商及富邦: "南商及富邦則分別有13.88厘及12.88厘"
+        m = re.search(r'南商.*?富邦.*?分別有([\d.]+)厘.*?([\d.]+)厘', cny_prose)
+        if m:
+            _add_cny_rate('ncb', '1w', float(m.group(1)), conds=['exchange'])
+            _add_cny_rate('fubon', '1w', float(m.group(2)), conds=['exchange'])
+
+        # 5. 滙豐及恒生: "滙豐及恒生都有12厘"
+        m = re.search(r'滙豐.*?恒生.*?有([\d.]+)厘', cny_prose)
+        if m:
+            rate = float(m.group(1))
+            _add_cny_rate('hsbc', '1w', rate, conds=['exchange'])
+            _add_cny_rate('hangseng', '1w', rate, conds=['exchange'])
+
+        # 6. 中銀香港及渣打: "中銀香港及渣打分別有11.8厘及11厘"
+        m = re.search(r'中銀香港.*?渣打.*?分別有([\d.]+)厘.*?([\d.]+)厘', cny_prose)
+        if m:
+            _add_cny_rate('bochk', '1w', float(m.group(1)), conds=['exchange'])
+            _add_cny_rate('sc', '1w', float(m.group(2)), conds=['exchange'])
+
+        # 7. Long-term prose: "12個月人民幣定期存款...提供1.5厘，分別是中銀香港、南商、螞蟻及富融"
+        for m in re.finditer(r'(\d+)個月人民幣(?:定期)?存款.*?提供([\d.]+)厘.*?分別是(.+?)(?:，|。|要求)', cny_prose):
+            n = int(m.group(1))
+            pk = f'{n}m' if f'{n}m' in ALL_PERIODS else None
+            if not pk:
+                continue
+            rate = float(m.group(2))
+            banks_str = m.group(3)
+            # Check following context for fund type
+            ctx = cny_prose[m.end():m.end()+60] if m.end() < len(cny_prose) else ''
+            for bp in re.split(r'[、，,]|及|和', banks_str):
+                bp = bp.strip()
+                bkey = _find_bkey(bp)
+                if bkey:
+                    # Check if specific bank has different conditions
+                    bank_ctx = ctx
+                    ft = 'new_funds'
+                    if bp in ctx and '毋需' in ctx:
+                        ft = 'existing_funds'
+                    _add_cny_rate(bkey, pk, rate, ft=ft)
+
+        # 8. "6個月人民幣定存，可留意大新銀行...另螞蟻及富融銀行都有1.5厘"
+        for m in re.finditer(r'(\d+)個月人民幣定存.*?可留意([\u4e00-\u9fff]+銀行)', cny_prose):
+            n = int(m.group(1))
+            pk = f'{n}m' if f'{n}m' in ALL_PERIODS else None
+            if not pk:
+                continue
+            bkey = _find_bkey(m.group(2))
+            if bkey:
+                rate_m = re.search(r'有([\d.]+)厘', cny_prose[m.start():m.end()])
+                if rate_m:
+                    _add_cny_rate(bkey, pk, float(rate_m.group(1)))
+        # "另螞蟻及富融銀行都有1.5厘"
+        for m in re.finditer(r'另(.+?)銀行(?:都)?有([\d.]+)厘', cny_prose):
+            rate = float(m.group(2))
+            # Find period from earlier in the paragraph
+            para_start = cny_prose.rfind('。', 0, m.start())
+            if para_start < 0:
+                para_start = 0
+            pm = re.search(r'(\d+)個月', cny_prose[para_start:m.start()])
+            if pm:
+                pk = f'{int(pm.group(1))}m'
+                if pk in ALL_PERIODS:
+                    for bp in re.split(r'[、，,]|及|和', m.group(1)):
+                        bp = bp.strip()
+                        bkey = _find_bkey(bp)
+                        if bkey:
+                            _add_cny_rate(bkey, pk, rate, ft='existing_funds')
 
     found_banks = list(bank_cny.keys())
     if found_banks:
@@ -1192,6 +1474,85 @@ def update_rates():
             unverified.append(bank_name)
             continue  # No bank data to supplement
 
+        # ---- Phase 3.5: CNY bank website fallback ----
+        # If CNY rates are still missing after parser + HKET CNY, try generic CNY regex
+        # on already-scraped bank website data (or scrape a CNY-specific page)
+        cny_missing = [p for p in ALL_PERIODS if bank['cny'].get(p, {}).get('rate') is None]
+        if cny_missing:
+            # Try generic CNY parse on scraped text first
+            if text and '人民幣' in (text or ''):
+                cny_generic = _generic_cny_parse(text, tables)
+                if cny_generic:
+                    applied = []
+                    for pk in cny_missing:
+                        if pk in cny_generic and cny_generic[pk].get('rate'):
+                            bank['cny'][pk] = {
+                                'rate': cny_generic[pk]['rate'],
+                                'min_deposit': cny_generic[pk].get('min_deposit'),
+                                'note': cny_generic[pk].get('note', f'從{bank_name}官網提取'),
+                                'source': 'bank',
+                                'fund_type': cny_generic[pk].get('fund_type', 'new_funds'),
+                                'conditions': cny_generic[pk].get('conditions', []),
+                            }
+                            applied.append(pk)
+                    if applied:
+                        logger.info(f'  [{parser_key}] CNY generic fallback: {applied}')
+                        cny_missing = [p for p in cny_missing if p not in applied]
+
+            # If still missing and bank has a CNY-specific page, scrape it
+            cny_url = cfg.get('cny_url')
+            if cny_missing and cny_url:
+                logger.info(f'  [{parser_key}] Scraping CNY page: {cny_url}')
+                cny_text, cny_tables, cny_html = scrape_page(
+                    cny_url,
+                    wait=cfg.get('cny_wait', 5),
+                    cloudflare_bypass=cfg.get('cloudflare_bypass', False),
+                    get_html=False,
+                )
+                if cny_text:
+                    # Try dedicated parser first
+                    cny_result = None
+                    parse_fn = load_parser(parser_key)
+                    if parse_fn:
+                        try:
+                            cny_result = parse_fn(cny_text, cny_tables, html=cny_html)
+                        except Exception:
+                            pass
+                    if cny_result and 'cny' in cny_result:
+                        for pk in cny_missing:
+                            val = cny_result['cny'].get(pk)
+                            if val and (isinstance(val, dict) and val.get('rate') or isinstance(val, (int, float))):
+                                rate = val.get('rate', val) if isinstance(val, dict) else val
+                                bank['cny'][pk] = {
+                                    'rate': rate,
+                                    'min_deposit': val.get('min_deposit') if isinstance(val, dict) else None,
+                                    'note': cny_result.get('cny_note', cny_result.get('note', f'從{bank_name}官網提取')),
+                                    'source': 'bank',
+                                    'fund_type': val.get('fund_type') if isinstance(val, dict) else None,
+                                    'conditions': val.get('conditions', []) if isinstance(val, dict) else [],
+                                }
+                        logger.info(f'  [{parser_key}] CNY from dedicated page: {[p for p in cny_missing if bank["cny"][p].get("rate")]}')
+                    else:
+                        # Generic CNY parse
+                        cny_generic = _generic_cny_parse(cny_text, cny_tables)
+                        if cny_generic:
+                            applied = []
+                            for pk in cny_missing:
+                                if pk in cny_generic and cny_generic[pk].get('rate'):
+                                    bank['cny'][pk] = {
+                                        'rate': cny_generic[pk]['rate'],
+                                        'min_deposit': cny_generic[pk].get('min_deposit'),
+                                        'note': cny_generic[pk].get('note', f'從{bank_name}官網提取'),
+                                        'source': 'bank',
+                                        'fund_type': cny_generic[pk].get('fund_type', 'new_funds'),
+                                        'conditions': cny_generic[pk].get('conditions', []),
+                                    }
+                                    applied.append(pk)
+                            if applied:
+                                logger.info(f'  [{parser_key}] CNY generic from CNY page: {applied}')
+                else:
+                    logger.warning(f'  [{parser_key}] Failed to scrape CNY page')
+
         # ---- Phase 4: HKET supplement — fill in missing periods ----
         hket_supplemented = []
         if parser_key in HKET_ARTICLES:
@@ -1404,7 +1765,8 @@ def _send_telegram_summary(verified_same, verified_updated, unverified, needs_ex
 
 def main():
     try:
-        return 0 if update_rates() else 1
+        update_rates()  # Always returns True when rates.json is written successfully
+        return 0        # Return 0 regardless of unverified banks
     except Exception as e:
         logger.error(f"Update failed: {e}")
         return 1

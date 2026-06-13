@@ -85,18 +85,35 @@ def parse(text, tables=None, html=None):
             cny_idx = text.find('存款期及年利率（CNY）', usd_idx)
         end = cny_idx if cny_idx > usd_idx else usd_idx + 1500
         section = text[usd_idx:end]
-        # USD has single column: 1个月  1.50%
         rates = re.findall(r'(\d+)\s*个?月\s+([\d.]+)%', section)
         for period_num, rate in rates:
             key = _period_key(int(period_num))
             if key:
                 usd[key] = float(rate)
 
+    # === CNY (人民幣) 定期 ===
+    cny = {}
+    cny_idx = text.find('存款期及年利率 (CNY)')
+    if cny_idx < 0:
+        cny_idx = text.find('存款期及年利率（CNY）')
+    if cny_idx < 0:
+        cny_idx = text.find('CNY)')
+    
+    if cny_idx >= 0:
+        section = text[cny_idx:cny_idx + 1500]
+        rates = re.findall(r'(\d+)\s*个?月\s+([\d.]+)%', section)
+        for period_num, rate in rates:
+            key = _period_key(int(period_num))
+            if key:
+                cny[key] = float(rate)
+
     result = {}
     if hkd:
         result['hkd'] = hkd
     if usd:
         result['usd'] = usd
+    if cny:
+        result['cny'] = cny
 
     if result:
         result['note'] = '定期存款利率（5萬以上）'

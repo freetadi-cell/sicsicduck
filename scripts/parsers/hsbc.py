@@ -82,4 +82,22 @@ def parse(text, tables=None, html=None):
         if 'usd' in result and '12m' in result.get('usd', {}):
             result['usd_note'] = '新資金定期存款優惠'
         return result
+    
+    # Fallback: try to find CNY exchange rates on the page
+    if text:
+        cny_rates = {}
+        # Look for RMB/CNY exchange promo: "7天" or "1星期" with high rates
+        for m in re.finditer(r'(?:人民幣|RMB|CNY).*?(\d+)\s*(?:天|星期).*?(\d+\.?\d*)\s*%', text):
+            days = int(m.group(1))
+            if days == 7:
+                cny_rates['1w'] = {'rate': float(m.group(2)), 'conditions': ['exchange']}
+        for m in re.finditer(r'(?:人民幣|RMB|CNY).*?(\d+)\s*個月.*?(\d+\.?\d*)\s*%', text):
+            n = int(m.group(1))
+            pk = f'{n}m' if f'{n}m' in ['1m', '2m', '3m', '6m', '12m'] else None
+            if pk:
+                cny_rates[pk] = {'rate': float(m.group(2))}
+        if cny_rates:
+            result = {'cny': cny_rates, 'note': '滙豐人民幣定期存款'}
+            return result
+    
     return None

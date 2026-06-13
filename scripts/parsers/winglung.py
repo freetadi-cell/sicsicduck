@@ -32,21 +32,16 @@ def _parse_section(section, min_rate=0.5):
         sub = sub[:next_period]
 
         # Find all rate pairs after "手機App"
-        # Each row: 分行 rate, 手機App rate (repeated for each tier)
-        # All numbers in sequence: b1, a1, b2, a2, b3, a3, b4, a4
         nums = re.findall(r'(\d+\.\d+)', sub)
         if len(nums) >= 2:
-            # Take every 2nd number starting from index 1 (app rates)
-            # Last app rate = nums[-1] if odd count, or nums[-1] for even
             app_rates = [float(nums[i]) for i in range(1, len(nums), 2)]
             if app_rates:
-                # Take the highest tier (last app rate)
                 rates[period] = app_rates[-1]
     return rates
 
 
 def parse(text, tables=None, html=None):
-    """Parse Wing Lung Bank time deposit rates."""
+    """Parse Wing Lung Bank time deposit rates (HKD, USD, CNY)."""
     if not text:
         return None
 
@@ -55,19 +50,21 @@ def parse(text, tables=None, html=None):
     # === HKD section ===
     hkd_idx = text.find('定期存款')
     usd_idx = text.find('美元定期存款利率')
+    cny_idx = text.find('人民幣定期存款利率')
     if hkd_idx < 0:
         return None
 
-    hkd_section = text[hkd_idx:usd_idx] if usd_idx > hkd_idx else text[hkd_idx:hkd_idx + 5000]
+    hkd_end = usd_idx if usd_idx > hkd_idx else cny_idx if cny_idx > hkd_idx else hkd_idx + 5000
+    hkd_section = text[hkd_idx:hkd_end]
     hkd_rates = _parse_section(hkd_section)
     if hkd_rates:
         rates['hkd'] = hkd_rates
 
     # === USD section ===
     if usd_idx > 0:
-        # Find end of USD section (next currency section)
-        usd_end = len(text)
-        for marker in ['人民幣定期存款利率', '澳元定期存款利率']:
+        usd_end = cny_idx if cny_idx > usd_idx else len(text)
+        # Also check for other currency sections
+        for marker in ['澳元定期存款利率', '紐西蘭元定期存款利率']:
             mi = text.find(marker, usd_idx)
             if mi > 0:
                 usd_end = min(usd_end, mi)
@@ -75,6 +72,19 @@ def parse(text, tables=None, html=None):
         usd_rates = _parse_section(usd_section, min_rate=1.0)
         if usd_rates:
             rates['usd'] = usd_rates
+
+    # === CNY (人民幣) section ===
+    if cny_idx > 0:
+        cny_end = len(text)
+        for marker in ['澳元定期存款利率', '紐西蘭元定期存款利率', '加元定期存款利率']:
+            mi = text.find(marker, cny_idx)
+            if mi > 0:
+                cny_end = min(cny_end, mi)
+        cny_section = text[cny_idx:cny_end]
+        cny_rates = _parse_section(cny_section)
+        if cny_rates:
+            rates['cny'] = cny_rates
+            rates['cny_note'] = '招商永隆銀行手機App人民幣定存利率'
 
     if rates:
         rates['note'] = '招商永隆銀行手機App定存利率'

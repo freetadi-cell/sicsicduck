@@ -46,19 +46,24 @@ def parse(text, tables=None, html=None):
         rates['note'] = note
         return rates
     
-    # Fallback: board rates
-    board_idx = text.find('牌價')
-    if board_idx >= 0:
-        section = text[board_idx:board_idx+1500]
-        hkd_rates = {}
-        for period, label in [('1m', '一個月'), ('3m', '三個月'), ('6m', '六個月'), ('12m', '十二個月')]:
-            pattern = rf'{label}\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%'
-            m = re.search(pattern, section)
-            if m:
-                hkd_rates[period] = float(m.group(4))
-        if hkd_rates:
-            rates['hkd'] = hkd_rates
-            rates['note'] = '定期存款牌價利率'
-            return rates
+    # Try CNY exchange rates
+    if text:
+        cny_idx = text.find('人民幣')
+        if cny_idx >= 0:
+            cny_section = text[cny_idx:cny_idx+1000]
+            cny_rates = {}
+            for m in re.finditer(r'(\d+)\s*(?:天|星期).*?(\d+\.?\d*)\s*%', cny_section):
+                days = int(m.group(1))
+                if days == 7:
+                    cny_rates['1w'] = float(m.group(2))
+            for m in re.finditer(r'(\d+)\s*個月.*?(\d+\.?\d*)\s*%', cny_section):
+                n = int(m.group(1))
+                pk = f'{n}m' if f'{n}m' in ['1m', '3m', '6m', '12m'] else None
+                if pk:
+                    cny_rates[pk] = float(m.group(2))
+            if cny_rates:
+                rates['cny'] = cny_rates
+                rates['note'] = '恒生人民幣定期存款'
+                return rates
     
     return None
