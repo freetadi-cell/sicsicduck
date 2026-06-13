@@ -10,6 +10,7 @@ def parse(text, tables=None, html=None):
             1 個月  3 個月  6 個月  12 個月
     港元    1.68%   2.48%   2.48%   2.43%
     美元    2.98%   3.38%   3.33%   3.23%
+    人民幣  X.XX%   X.XX%   X.XX%   X.XX%
     """
     if not text:
         return None
@@ -17,8 +18,7 @@ def parse(text, tables=None, html=None):
     rates = {}
     note = '網上銀行/流動銀行定期存款利率'
     
-    # Find online banking section
-    # Find the SECOND occurrence of '個人網上銀行' (first is in nav, second is the actual rates)
+    # Find online banking section (second occurrence)
     first_idx = text.find('個人網上銀行')
     if first_idx < 0:
         return None
@@ -44,6 +44,17 @@ def parse(text, tables=None, html=None):
             '6m': float(usd_m.group(3)),
             '12m': float(usd_m.group(4)),
         }
+    
+    # CNY (人民幣) rates
+    cny_m = re.search(r'人民幣\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%', section)
+    if cny_m:
+        rates['cny'] = {
+            '1m': float(cny_m.group(1)),
+            '3m': float(cny_m.group(2)),
+            '6m': float(cny_m.group(3)),
+            '12m': float(cny_m.group(4)),
+        }
+        rates['cny_note'] = note
     
     if rates:
         rates['note'] = note

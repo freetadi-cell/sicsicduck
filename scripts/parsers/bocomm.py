@@ -2,8 +2,7 @@
 
 Page: https://www.bankcomm.com.hk/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml
 
-The main deposit page shows navigation but rate details may require 
-clicking into sub-pages or looking for specific rate sections.
+Data includes HKD, USD, and CNY rates (especially short-term exchange rates).
 """
 import re
 
@@ -14,6 +13,7 @@ def parse(text, tables=None, html=None):
 
     hkd = {}
     usd = {}
+    cny = {}
 
     # Look for 定期存款 section
     td_idx = text.find('定期存款')
@@ -23,7 +23,7 @@ def parse(text, tables=None, html=None):
     if td_idx >= 0:
         section = text[td_idx:td_idx + 3000]
         
-        # Try rate patterns
+        # Try rate patterns for HKD
         for period, label in [('1m', r'1\s*個?月'), ('2m', r'2\s*個?月'),
                                ('3m', r'3\s*個?月'), ('6m', r'6\s*個?月'),
                                ('12m', r'12\s*個?月')]:
@@ -47,23 +47,37 @@ def parse(text, tables=None, html=None):
                         if rate > 0:
                             store[period] = rate
 
-    # Try tables
-    if tables:
-        for table in tables:
-            table_str = str(table)
-            if '定期' in table_str or '%' in table_str:
-                for period, label in [('3m', '3'), ('6m', '6'), ('12m', '12')]:
-                    m = re.search(rf'{label}\s*個?月\s*[^%]*?(\d+\.?\d*)%', table_str)
-                    if m:
-                        rate = float(m.group(1))
-                        if rate > 0:
-                            hkd[period] = rate
+    # CNY section - look for "CNY N天 X.XX%" or "人民幣 N個月 X.XX%"
+    cny_idx = text.find('CNY')
+    if cny_idx < 0:
+        cny_idx = text.find('人民幣')
+    
+    if cny_idx >= 0:
+        cny_section = text[cny_idx:cny_idx + 1500]
+        
+        # Short-term exchange rates: "CNY 7天 10.00%"
+        m = re.search(r'CNY\s*(\d+)\s*天\s*(\d+\.?\d*)%', cny_section)
+        if m:
+            days = int(m.group(1))
+            if days == 7:
+                cny['1w'] = float(m.group(2))
+        
+        # Monthly rates: "人民幣 3個月 X.XX%"
+        for period, plabel in [('1m', r'1\s*個?月'), ('3m', r'3\s*個?月'), 
+                               ('6m', r'6\s*個?月'), ('12m', r'12\s*個?月')]:
+            m = re.search(rf'(?:人民幣|CNY)[^%]*?{plabel}[^%]*?(\d+\.?\d*)%', cny_section)
+            if m:
+                rate = float(m.group(1))
+                if rate > 0:
+                    cny[period] = rate
 
     result = {}
     if hkd:
         result['hkd'] = hkd
     if usd:
         result['usd'] = usd
+    if cny:
+        result['cny'] = cny
 
     if result:
         result['note'] = '從交通銀行官網提取'
