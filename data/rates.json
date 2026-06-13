@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T18:43:32.901420+08:00",
+  "last_updated": "2026-06-13T23:36:44.757926+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -456,22 +456,18 @@
         "3m": {
           "rate": 2.4,
           "min_deposit": 10000,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
+          "note": "新資金定期存款優惠（網上理財）",
+          "source": "bank",
           "fund_type": "new_funds",
-          "conditions": [
-            "exchange"
-          ]
+          "conditions": []
         },
         "6m": {
           "rate": 2.2,
           "min_deposit": 10000,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
+          "note": "新資金定期存款優惠（網上理財）",
+          "source": "bank",
           "fund_type": "new_funds",
-          "conditions": [
-            "exchange"
-          ]
+          "conditions": []
         },
         "12m": {
           "rate": 0.15,
@@ -2238,11 +2234,11 @@
           "conditions": []
         },
         "1m": {
-          "rate": null,
+          "rate": 0.58,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
+          "note": "網上銀行/流動銀行定期存款利率",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "2m": {
@@ -2254,11 +2250,11 @@
           "conditions": []
         },
         "3m": {
-          "rate": null,
+          "rate": 0.98,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
+          "note": "網上銀行/流動銀行定期存款利率",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "4m": {
@@ -2270,11 +2266,11 @@
           "conditions": []
         },
         "6m": {
-          "rate": null,
+          "rate": 0.98,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
+          "note": "網上銀行/流動銀行定期存款利率",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "9m": {
@@ -2286,11 +2282,11 @@
           "conditions": []
         },
         "12m": {
-          "rate": null,
+          "rate": 0.98,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
+          "note": "網上銀行/流動銀行定期存款利率",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         }
       }
@@ -2446,11 +2442,11 @@
           "conditions": []
         },
         "1m": {
-          "rate": 0.05,
+          "rate": 0.1,
           "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "定期存款年利率",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "2m": {
@@ -2462,11 +2458,11 @@
           "conditions": []
         },
         "3m": {
-          "rate": 0.05,
+          "rate": 0.13,
           "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "定期存款年利率",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "4m": {
@@ -2478,11 +2474,11 @@
           "conditions": []
         },
         "6m": {
-          "rate": 0.125,
+          "rate": 0.16,
           "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "定期存款年利率",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "9m": {
@@ -2494,11 +2490,11 @@
           "conditions": []
         },
         "12m": {
-          "rate": 0.05,
+          "rate": 0.16,
           "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "定期存款年利率",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         }
       }
@@ -2718,7 +2714,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "1m": {
@@ -2726,7 +2722,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "2m": {
@@ -2734,7 +2730,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "3m": {
@@ -2742,7 +2738,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
@@ -2750,7 +2746,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
@@ -2758,7 +2754,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "4m": {
@@ -2774,7 +2770,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         }
       },
@@ -2784,7 +2780,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "1m": {
@@ -2792,7 +2788,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "2m": {
@@ -2800,7 +2796,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "3m": {
@@ -2808,7 +2804,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
@@ -2816,7 +2812,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
@@ -2824,7 +2820,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "4m": {
@@ -2840,7 +2836,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         }
       },
@@ -2850,7 +2846,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "1m": {
@@ -2858,7 +2854,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "2m": {
@@ -2866,7 +2862,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "3m": {
@@ -2874,7 +2870,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "4m": {
@@ -2890,7 +2886,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "9m": {
@@ -2898,7 +2894,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
@@ -2906,7 +2902,7 @@
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
-          "fund_type": "new_funds",
+          "fund_type": "existing_funds",
           "conditions": []
         }
       }
