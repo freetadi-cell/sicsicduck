@@ -4390,7 +4390,7 @@
         },
         "1m": {
           "rate": 1.8,
-          "min_deposit": 200000,
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4406,7 +4406,7 @@
         },
         "3m": {
           "rate": 2.8,
-          "min_deposit": 200000,
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4414,7 +4414,7 @@
         },
         "6m": {
           "rate": 2.6,
-          "min_deposit": 200000,
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4422,7 +4422,7 @@
         },
         "12m": {
           "rate": 2.4,
-          "min_deposit": 200000,
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4430,7 +4430,7 @@
         },
         "4m": {
           "rate": 2.65,
-          "min_deposit": 200000,
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4456,7 +4456,7 @@
         },
         "1m": {
           "rate": 3.4,
-          "min_deposit": "USD 125,000",
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4472,7 +4472,7 @@
         },
         "3m": {
           "rate": 3.75,
-          "min_deposit": "USD 125,000",
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4480,7 +4480,7 @@
         },
         "6m": {
           "rate": 3.7,
-          "min_deposit": "USD 125,000",
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4488,7 +4488,7 @@
         },
         "12m": {
           "rate": 3.3,
-          "min_deposit": "USD 125,000",
+          "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
@@ -4513,66 +4513,42 @@
       },
       "type": "traditional",
       "cny": {
-        "1w": {
-          "rate": null,
-          "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
-          "conditions": []
-        },
         "1m": {
-          "rate": 2.0,
+          "rate": 0.8,
           "min_deposit": null,
-          "note": "從銀行官網提取",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "2m": {
-          "rate": 2.5,
-          "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
         },
         "3m": {
-          "rate": 2.8,
+          "rate": 1.35,
           "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
         },
         "4m": {
-          "rate": null,
+          "rate": 1.35,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
-          "conditions": []
-        },
-        "6m": {
-          "rate": 2.5,
-          "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
         },
-        "9m": {
-          "rate": null,
+        "6m": {
+          "rate": 1.35,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "source": "bank",
+          "fund_type": "new_funds",
           "conditions": []
         },
         "12m": {
-          "rate": 2.5,
+          "rate": 1.35,
           "min_deposit": null,
-          "note": "從銀行官網提取",
+          "note": "特優定期存款推廣（分行/網上/手機銀行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []

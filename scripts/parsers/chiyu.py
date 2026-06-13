@@ -70,10 +70,10 @@ def _parse_pdf_text(pdf_text):
        Two tiers: 3萬-12.5萬 (lower) | 12.5萬-1000萬 (higher)
        Periods: 1m 3m 4m 6m 12m
 
-    3. 港元/美元/人民幣特優定期存款推廣 — 分行/網上/手機銀行
-       Two tiers each
-
-    We want NEW FUNDS rates (section 1 & 2), higher tier.
+    3. 港元／美元／人民幣特優定期存款推廣 — 分行/網上/手機銀行
+       HKD: two tiers (10 rates)
+       USD: two tiers (10 rates)
+       RMB: one tier (5 rates)
     """
     if not pdf_text:
         return None
@@ -90,12 +90,54 @@ def _parse_pdf_text(pdf_text):
     if usd_rates:
         rates['usd'] = usd_rates
 
+    # Parse 人民幣 from 特優定期存款推廣 section
+    cny_rates = _parse_cny_section(pdf_text)
+    if cny_rates:
+        rates['cny'] = cny_rates
+
     if not rates:
         # Fallback: try 特優定期存款
         return _parse_special_rates(pdf_text)
 
     rates['note'] = '新資金定期存款推廣（分行）'
     return rates
+
+
+def _parse_cny_section(text):
+    """Parse 人民幣 rates from the 特優定期存款推廣 section.
+    
+    Format in PDF:
+                                 人民幣
+    存款金額                      人民幣 20萬元至1000萬元
+    存 款 期     1個月         3個月       4個月       6個月             12個月
+    年 利 率    0.80%       1.35%        1.35%       1.35%       1.35%
+    """
+    # Find the 人民幣 subsection within 特優定期存款推廣
+    special_idx = text.find('特優定期存款推廣')
+    if special_idx < 0:
+        return None
+    
+    special_section = text[special_idx:]
+    
+    # Find 人民幣 within this section
+    rmb_idx = special_section.find('人民幣')
+    if rmb_idx < 0:
+        return None
+    
+    rmb_section = special_section[rmb_idx:]
+    
+    # Find the rates line (5 percentages)
+    lines = rmb_section.split('\n')
+    for line in lines[:10]:  # Only look at first 10 lines
+        pcts = re.findall(r'(\d+\.\d+)%', line)
+        if len(pcts) == 5:
+            periods = ['1m', '3m', '4m', '6m', '12m']
+            result = {}
+            for i, period in enumerate(periods):
+                result[period] = float(pcts[i])
+            return result
+    
+    return None
 
 
 def _parse_new_funds_section(text, section_name):
