@@ -1159,7 +1159,7 @@ function renderTable() {
 
     // Update header visibility
     const ths = document.querySelectorAll('.rate-table thead th');
-    const periodThMap = { 2: '1m', 3: '2m', 4: '3m', 5: '6m', 6: '12m' };
+    const periodThMap = { 2: '1w', 3: '1m', 4: '2m', 5: '3m', 6: '6m', 7: '12m' };
     ths.forEach((th, idx) => {
         if (periodThMap[idx] && currentPeriod !== 'all' && periodThMap[idx] !== currentPeriod) {
             th.style.display = 'none';
