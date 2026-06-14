@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T23:36:44.757926+08:00",
+  "last_updated": "2026-06-14T08:34:28.978508+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -4516,7 +4516,7 @@
         "1m": {
           "rate": 0.8,
           "min_deposit": null,
-          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
@@ -4524,7 +4524,7 @@
         "3m": {
           "rate": 1.35,
           "min_deposit": null,
-          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
@@ -4532,7 +4532,7 @@
         "4m": {
           "rate": 1.35,
           "min_deposit": null,
-          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
@@ -4540,7 +4540,7 @@
         "6m": {
           "rate": 1.35,
           "min_deposit": null,
-          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
@@ -4548,9 +4548,33 @@
         "12m": {
           "rate": 1.35,
           "min_deposit": null,
-          "note": "特優定期存款推廣（分行/網上/手機銀行）",
+          "note": "新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
+          "conditions": []
+        },
+        "1w": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
+          "conditions": []
+        },
+        "2m": {
+          "rate": 2.5,
+          "min_deposit": null,
+          "note": "從銀行官網提取",
+          "source": "bank",
+          "fund_type": "new_funds",
+          "conditions": []
+        },
+        "9m": {
+          "rate": null,
+          "min_deposit": null,
+          "note": null,
+          "source": null,
+          "fund_type": null,
           "conditions": []
         }
       }
