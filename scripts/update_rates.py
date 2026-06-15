@@ -1553,19 +1553,33 @@ def update_rates():
                 else:
                     logger.warning(f'  [{parser_key}] Failed to scrape CNY page')
 
-        # ---- Phase 4: HKET supplement — fill in missing periods ----
-        hket_supplemented = []
+        # ---- Phase 4: HKET override — HKET 為準，覆蓋官網不一致的利率 ----
+        hket_overridden = []
         if parser_key in HKET_ARTICLES:
             hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
             if hket_ok and hket_result:
-                hket_result['_only_missing'] = True
-                supplemented = _apply_result_rates(bank, hket_result, bank_name, source='hket')
-                if supplemented:
-                    hket_supplemented = supplemented
-                    logger.info(f"  [{parser_key}] 🔗 HKET supplemented {bank_name}: {supplemented}")
+                # 檢查 HKET 同官網有冇差異，記錄被覆蓋嘅項目
+                for cur in ALL_CURRENCIES:
+                    if cur not in hket_result:
+                        continue
+                    for period in ALL_PERIODS:
+                        if period not in hket_result.get(cur, {}):
+                            continue
+                        val = hket_result[cur][period]
+                        if not isinstance(val, dict) or val.get('rate') is None:
+                            continue
+                        existing = bank.get(cur, {}).get(period, {})
+                        if isinstance(existing, dict) and existing.get('rate') is not None:
+                            if existing.get('rate') != val.get('rate'):
+                                hket_overridden.append(f'{cur}/{period}({existing["rate"]}->{val["rate"]})')
+                # 直接覆蓋（唔再用 only_missing 模式）
+                _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                if hket_overridden:
+                    logger.info(f"  [{parser_key}] 🔗 HKET overridden {bank_name}: {hket_overridden}")
+                    if not bank_updated:
+                        verified_updated.append((bank_name, len(hket_overridden)))
 
-        if hket_supplemented and not bank_updated:
-            # Bank rates unchanged but HKET filled gaps
+        if not hket_overridden and not bank_updated:
             verified_same.append(bank_name)
 
 
