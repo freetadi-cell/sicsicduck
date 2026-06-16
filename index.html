@@ -1232,6 +1232,109 @@ document.querySelectorAll('.rate-table thead th[data-sort]').forEach(th => {
 
 // ===== Init =====
 loadData();
+
+// ===== Facebook Group Invite Popup =====
+(function() {
+    const FB_LINK = 'https://www.facebook.com/share/1GjDAEZrS5/';
+    const DISMISS_KEY = 'fb_popup_dismissed_at';
+    const JOINED_KEY = 'fb_popup_joined';
+    const POPUP_DELAY = 60000; // 1 minute
+    const RESHOW_INTERVAL = 86400000; // 24 hours
+
+    function shouldShowPopup() {
+        // User already joined — never show again
+        if (localStorage.getItem(JOINED_KEY) === 'true') return false;
+        // Check dismiss cooldown
+        const dismissedAt = parseInt(localStorage.getItem(DISMISS_KEY) || '0', 10);
+        if (dismissedAt && (Date.now() - dismissedAt) < RESHOW_INTERVAL) return false;
+        return true;
+    }
+
+    function createPopup() {
+        // Overlay
+        const overlay = document.createElement('div');
+        overlay.id = 'fb-popup-overlay';
+        overlay.style.cssText = `
+            position:fixed;top:0;left:0;width:100%;height:100%;
+            background:rgba(0,0,0,0.55);backdrop-filter:blur(3px);
+            z-index:9999;display:flex;align-items:center;justify-content:center;
+            opacity:0;transition:opacity 0.35s ease;padding:16px;
+        `;
+
+        // Modal
+        const modal = document.createElement('div');
+        modal.style.cssText = `
+            background:linear-gradient(135deg,#FFFDE7 0%,#FFF9C4 100%);
+            border-radius:20px;padding:36px 28px 28px;max-width:380px;width:100%;
+            text-align:center;box-shadow:0 24px 60px rgba(0,0,0,0.25);
+            transform:scale(0.85) translateY(20px);transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+            position:relative;
+        `;
+
+        modal.innerHTML = `
+            <div style="font-size:48px;margin-bottom:12px;">🐤</div>
+            <h2 style="font-size:20px;font-weight:700;color:#F57F17;margin-bottom:8px;font-family:'Noto Sans TC',sans-serif;">
+                加入食息鴨鴨團！
+            </h2>
+            <p style="font-size:14px;color:#616161;line-height:1.6;margin-bottom:24px;font-family:'Noto Sans TC',sans-serif;">
+                入嚟我哋嘅 Facebook 群組，同其他鴨鴨一齊交流最新定期存款利率、著數情報！
+            </p>
+            <a href="${FB_LINK}" target="_blank" rel="noopener noreferrer" id="fb-join-btn"
+               style="display:block;width:100%;padding:14px;border-radius:12px;
+               background:linear-gradient(135deg,#1877F2,#0B5fcc);color:#fff;
+               text-decoration:none;font-size:16px;font-weight:600;
+               font-family:'Noto Sans TC',sans-serif;
+               box-shadow:0 4px 14px rgba(24,119,242,0.35);transition:transform 0.15s;">
+                📘 加入 Facebook 群組
+            </a>
+            <button id="fb-dismiss-btn"
+                style="display:block;width:100%;padding:12px;margin-top:10px;border:none;
+                background:transparent;color:#999;font-size:14px;cursor:pointer;
+                font-family:'Noto Sans TC',sans-serif;transition:color 0.15s;">
+                再考慮一下
+            </button>
+        `;
+
+        overlay.appendChild(modal);
+        document.body.appendChild(overlay);
+
+        // Animate in
+        requestAnimationFrame(() => {
+            overlay.style.opacity = '1';
+            modal.style.transform = 'scale(1) translateY(0)';
+        });
+
+        // Join button — record and never show again
+        document.getElementById('fb-join-btn').addEventListener('click', () => {
+            localStorage.setItem(JOINED_KEY, 'true');
+            closePopup();
+        });
+
+        // Dismiss button — close, reshow after 24h
+        document.getElementById('fb-dismiss-btn').addEventListener('click', () => {
+            localStorage.setItem(DISMISS_KEY, Date.now().toString());
+            closePopup();
+        });
+
+        // Click overlay to close (same as dismiss)
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                localStorage.setItem(DISMISS_KEY, Date.now().toString());
+                closePopup();
+            }
+        });
+
+        function closePopup() {
+            overlay.style.opacity = '0';
+            modal.style.transform = 'scale(0.85) translateY(20px)';
+            setTimeout(() => overlay.remove(), 350);
+        }
+    }
+
+    if (shouldShowPopup()) {
+        setTimeout(createPopup, POPUP_DELAY);
+    }
+})();
 </script>
 
 </body>

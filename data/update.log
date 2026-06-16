@@ -1544,3 +1544,401 @@
 2026-06-11 08:34:33,952 [INFO] Last updated: 2026-06-11T08:34:33.945859+08:00
 2026-06-11 08:34:33,952 [INFO] ==================================================
 2026-06-11 08:34:41,499 [INFO] Telegram notification sent
+2026-06-12 08:30:03,707 [INFO] ==================================================
+2026-06-12 08:30:03,707 [INFO] HK Deposit Rates Update
+2026-06-12 08:30:03,707 [INFO] Time: 2026-06-12 08:30:03
+2026-06-12 08:30:03,707 [INFO] ==================================================
+2026-06-12 08:30:03,710 [INFO] Processing 23 banks
+2026-06-12 08:30:04,059 [INFO]   HKET CNY article last updated 2026/05/26, older than 14 days, skipping
+2026-06-12 08:30:18,751 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates unchanged (verified)
+2026-06-12 08:30:19,139 [INFO]   [hsbc] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:30:30,125 [INFO]   [bochk] ✓ 中銀香港: bank website rates unchanged (verified)
+2026-06-12 08:30:30,377 [INFO]   [bochk] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:30:45,673 [INFO]   [hangseng] ✓ 恒生銀行: bank website rates unchanged (verified)
+2026-06-12 08:30:45,943 [INFO]   [hangseng] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:31:03,746 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-12 08:31:03,991 [INFO]   [sc] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:31:17,096 [INFO]   [fubon] ✓ 富邦銀行: bank website rates UPDATED (11 changed)
+2026-06-12 08:31:17,483 [INFO]   [fubon] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:31:33,265 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates unchanged (verified)
+2026-06-12 08:31:33,648 [INFO]   [icbc] HKET: could not find article date for 工銀亞洲, skipping
+2026-06-12 08:31:43,672 [INFO]   [bea] ✓ 東亞銀行: bank website rates unchanged (verified)
+2026-06-12 08:31:44,211 [INFO]   [bea] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:31:54,561 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates unchanged (verified)
+2026-06-12 08:31:54,936 [INFO]   [cncbi] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:32:18,460 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-06-12 08:32:18,706 [INFO]   [dbs] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:32:18,706 [INFO]   [bocomm] 交通銀行: skip_scrape, trying HKET as primary...
+2026-06-12 08:32:19,025 [INFO]   [bocomm] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:32:19,559 [INFO] UHK second source: found 9 banks
+2026-06-12 08:32:19,559 [WARNING]   [bocomm] 交通銀行: no data source available (unverified)
+2026-06-12 08:32:29,223 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-06-12 08:32:29,476 [INFO]   [shacom] HKET article last updated 2026/06/10, not today or yesterday, skipping HKET
+2026-06-12 08:32:40,776 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates UPDATED (1 changed)
+2026-06-12 08:32:41,117 [INFO]   [publicbank] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:32:50,198 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-12 08:32:50,525 [INFO]   [winglung] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:33:00,911 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-12 08:33:01,212 [INFO]   [chbank] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:33:01,212 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-12 08:33:01,474 [INFO]   [fusion] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:33:01,474 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-12 08:33:24,487 [INFO]   Clicked tab @e11 (美元)
+2026-06-12 08:33:29,161 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-12 08:33:29,161 [INFO]   [airstar] ✓ 象象銀行: bank website rates UPDATED (1 changed)
+2026-06-12 08:33:29,374 [INFO]   [airstar] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:33:42,804 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-12 08:33:43,054 [INFO]   [za] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:33:52,873 [INFO]   [pao] ✓ 平安數字銀行: bank website rates UPDATED (1 changed)
+2026-06-12 08:33:53,155 [INFO]   [pao] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:34:02,670 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-12 08:34:03,028 [INFO]   [welab] HKET: could not find article date for 匯立銀行, skipping
+2026-06-12 08:34:15,001 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-12 08:34:15,265 [INFO]   [livi] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:34:15,265 [INFO]   [ant] 螞蟻銀行: skip_scrape, trying HKET as primary...
+2026-06-12 08:34:15,603 [INFO]   [ant] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:34:15,603 [WARNING]   [ant] 螞蟻銀行: no data source available (unverified)
+2026-06-12 08:34:24,982 [INFO]   [chiyu] ✓ 集友銀行: bank website rates UPDATED (4 changed)
+2026-06-12 08:34:25,343 [INFO]   [chiyu] HKET: could not find article date for 集友銀行, skipping
+2026-06-12 08:34:25,343 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-12 08:34:25,699 [INFO]   [ncb] HKET article last updated 2026/06/09, not today or yesterday, skipping HKET
+2026-06-12 08:34:25,699 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-12 08:34:25,704 [INFO] ==================================================
+2026-06-12 08:34:25,704 [INFO] Update complete:
+2026-06-12 08:34:25,704 [INFO]   ✅ Verified (same): 14
+2026-06-12 08:34:25,704 [INFO]   🔄 Verified (updated): 5
+2026-06-12 08:34:25,704 [INFO]   ❌ Unverified: 4
+2026-06-12 08:34:25,705 [INFO]     Updated: 富邦銀行 (11 rates changed)
+2026-06-12 08:34:25,705 [INFO]     Updated: 大眾銀行 (1 rates changed)
+2026-06-12 08:34:25,705 [INFO]     Updated: 象象銀行 (1 rates changed)
+2026-06-12 08:34:25,705 [INFO]     Updated: 平安數字銀行 (1 rates changed)
+2026-06-12 08:34:25,705 [INFO]     Updated: 集友銀行 (4 rates changed)
+2026-06-12 08:34:25,705 [INFO] Last updated: 2026-06-12T08:34:25.699737+08:00
+2026-06-12 08:34:25,705 [INFO] ==================================================
+2026-06-12 08:34:34,550 [INFO] Telegram notification sent
+2026-06-13 08:30:03,990 [INFO] ==================================================
+2026-06-13 08:30:03,990 [INFO] HK Deposit Rates Update
+2026-06-13 08:30:03,991 [INFO] Time: 2026-06-13 08:30:03
+2026-06-13 08:30:03,991 [INFO] ==================================================
+2026-06-13 08:30:03,993 [INFO] Processing 23 banks
+2026-06-13 08:30:06,733 [INFO]   HKET CNY: article updated 2026/06/09, parsing...
+2026-06-13 08:30:06,737 [INFO]   HKET CNY: found rates for 12 banks: ['ant', 'fusion', 'pao', 'bochk', 'ncb', 'dahsing', 'za', 'dbs', 'fubon', 'hsbc', 'hangseng', 'sc']
+2026-06-13 08:30:06,737 [INFO]   [hsbc] CNY from HKET overview: ['1w']
+2026-06-13 08:30:20,224 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates unchanged (verified)
+2026-06-13 08:30:20,555 [INFO]   [hsbc] HKET: could not find article date for 滙豐銀行, skipping
+2026-06-13 08:30:20,555 [INFO]   [bochk] CNY from HKET overview: ['12m', '1w']
+2026-06-13 08:30:31,029 [INFO]   [bochk] ✓ 中銀香港: bank website rates unchanged (verified)
+2026-06-13 08:30:31,267 [INFO]   [bochk] HKET: could not find article date for 中銀香港, skipping
+2026-06-13 08:30:31,267 [INFO]   [hangseng] CNY from HKET overview: ['1w']
+2026-06-13 08:30:46,632 [INFO]   [hangseng] ✓ 恒生銀行: bank website rates unchanged (verified)
+2026-06-13 08:30:46,893 [INFO]   [hangseng] HKET: could not find article date for 恒生銀行, skipping
+2026-06-13 08:30:46,893 [INFO]   [sc] CNY from HKET overview: ['1w']
+2026-06-13 08:31:01,571 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-13 08:31:01,799 [INFO]   [sc] HKET: could not find article date for 渣打銀行, skipping
+2026-06-13 08:31:01,799 [INFO]   [fubon] CNY from HKET overview: ['1w']
+2026-06-13 08:31:12,239 [INFO]   [fubon] ✓ 富邦銀行: bank website rates unchanged (verified)
+2026-06-13 08:31:12,621 [INFO]   [fubon] HKET: could not find article date for 富邦銀行, skipping
+2026-06-13 08:31:24,788 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates unchanged (verified)
+2026-06-13 08:31:25,110 [INFO]   [icbc] HKET: could not find article date for 工銀亞洲, skipping
+2026-06-13 08:31:35,063 [INFO]   [bea] ✓ 東亞銀行: bank website rates unchanged (verified)
+2026-06-13 08:31:35,341 [INFO]   [bea] HKET: could not find article date for 東亞銀行, skipping
+2026-06-13 08:31:44,357 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates unchanged (verified)
+2026-06-13 08:31:44,654 [INFO]   [cncbi] HKET: could not find article date for 中信銀行（國際）, skipping
+2026-06-13 08:31:44,654 [INFO]   [dbs] CNY from HKET overview: ['1w']
+2026-06-13 08:32:03,615 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-06-13 08:32:03,958 [INFO]   [dbs] HKET: could not find article date for 星展銀行, skipping
+2026-06-13 08:32:03,958 [INFO]   [bocomm] 交通銀行: skip_scrape, trying HKET as primary...
+2026-06-13 08:32:04,198 [INFO]   [bocomm] HKET: could not find article date for 交通銀行, skipping
+2026-06-13 08:32:04,816 [INFO] UHK second source: found 9 banks
+2026-06-13 08:32:04,817 [WARNING]   [bocomm] 交通銀行: no data source available (unverified)
+2026-06-13 08:32:14,313 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-06-13 08:32:14,632 [INFO]   [shacom] HKET: could not find article date for 上海商業銀行, skipping
+2026-06-13 08:32:28,246 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-06-13 08:32:28,511 [INFO]   [publicbank] HKET: could not find article date for 大眾銀行, skipping
+2026-06-13 08:32:37,242 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-13 08:32:37,598 [INFO]   [winglung] HKET: could not find article date for 招商永隆, skipping
+2026-06-13 08:32:47,619 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-13 08:32:47,836 [INFO]   [chbank] HKET: could not find article date for 創興銀行, skipping
+2026-06-13 08:32:47,836 [INFO]   [fusion] CNY from HKET overview: ['3m', '12m', '6m']
+2026-06-13 08:32:47,836 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-13 08:32:48,078 [INFO]   [fusion] HKET: could not find article date for 富融銀行, skipping
+2026-06-13 08:32:48,078 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-13 08:33:12,306 [INFO]   Clicked tab @e11 (美元)
+2026-06-13 08:33:16,998 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-13 08:33:16,999 [INFO]   [airstar] ✓ 象象銀行: bank website rates unchanged (verified)
+2026-06-13 08:33:17,273 [INFO]   [airstar] HKET: could not find article date for 象象銀行, skipping
+2026-06-13 08:33:17,273 [INFO]   [za] CNY from HKET overview: ['1w']
+2026-06-13 08:33:29,220 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-13 08:33:29,475 [INFO]   [za] HKET: could not find article date for 眾安銀行, skipping
+2026-06-13 08:33:29,476 [INFO]   [pao] CNY from HKET overview: ['1m', '1w', '3m']
+2026-06-13 08:33:42,246 [INFO]   [pao] ✓ 平安數字銀行: bank website rates unchanged (verified)
+2026-06-13 08:33:42,461 [INFO]   [pao] HKET: could not find article date for 平安數字銀行, skipping
+2026-06-13 08:33:51,886 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-13 08:33:52,225 [INFO]   [welab] HKET: could not find article date for 匯立銀行, skipping
+2026-06-13 08:34:02,774 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-13 08:34:03,095 [INFO]   [livi] HKET: could not find article date for 理慧銀行, skipping
+2026-06-13 08:34:03,095 [INFO]   [ant] CNY from HKET overview: ['3m', '12m', '9m', '6m']
+2026-06-13 08:34:03,095 [INFO]   [ant] 螞蟻銀行: skip_scrape, trying HKET as primary...
+2026-06-13 08:34:03,496 [INFO]   [ant] HKET: could not find article date for 螞蟻銀行, skipping
+2026-06-13 08:34:03,496 [WARNING]   [ant] 螞蟻銀行: no data source available (unverified)
+2026-06-13 08:34:15,226 [INFO]   [chiyu] ✓ 集友銀行: bank website rates unchanged (verified)
+2026-06-13 08:34:15,464 [INFO]   [chiyu] HKET: could not find article date for 集友銀行, skipping
+2026-06-13 08:34:15,464 [INFO]   [ncb] CNY from HKET overview: ['12m', '9m', '1w']
+2026-06-13 08:34:15,464 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-13 08:34:15,827 [INFO]   [ncb] HKET: could not find article date for 南洋商業銀行, skipping
+2026-06-13 08:34:15,828 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-13 08:34:15,832 [INFO] ==================================================
+2026-06-13 08:34:15,832 [INFO] Update complete:
+2026-06-13 08:34:15,832 [INFO]   ✅ Verified (same): 19
+2026-06-13 08:34:15,832 [INFO]   🔄 Verified (updated): 0
+2026-06-13 08:34:15,832 [INFO]   ❌ Unverified: 4
+2026-06-13 08:34:15,832 [INFO] Last updated: 2026-06-13T08:34:15.828145+08:00
+2026-06-13 08:34:15,832 [INFO] ==================================================
+2026-06-13 08:34:23,558 [INFO] Telegram notification sent
+2026-06-14 08:30:03,924 [INFO] ==================================================
+2026-06-14 08:30:03,925 [INFO] HK Deposit Rates Update
+2026-06-14 08:30:03,925 [INFO] Time: 2026-06-14 08:30:03
+2026-06-14 08:30:03,925 [INFO] ==================================================
+2026-06-14 08:30:03,927 [INFO] Processing 23 banks
+2026-06-14 08:30:04,226 [INFO]   HKET CNY: article updated 2026/06/09, parsing...
+2026-06-14 08:30:04,229 [INFO]   HKET CNY: found rates for 12 banks: ['ant', 'fusion', 'pao', 'bochk', 'ncb', 'dahsing', 'za', 'dbs', 'fubon', 'hsbc', 'hangseng', 'sc']
+2026-06-14 08:30:04,229 [INFO]   [hsbc] CNY from HKET overview: ['1w']
+2026-06-14 08:30:17,017 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates unchanged (verified)
+2026-06-14 08:30:17,398 [INFO]   [hsbc] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:30:17,398 [INFO]   [bochk] CNY from HKET overview: ['12m', '1w']
+2026-06-14 08:30:28,432 [INFO]   [bochk] ✓ 中銀香港: bank website rates unchanged (verified)
+2026-06-14 08:30:30,372 [INFO]   [bochk] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:30:30,372 [INFO]   [hangseng] CNY from HKET overview: ['1w']
+2026-06-14 08:30:43,632 [INFO]   [hangseng] ✓ 恒生銀行: bank website rates unchanged (verified)
+2026-06-14 08:30:44,013 [INFO]   [hangseng] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:30:44,013 [INFO]   [sc] CNY from HKET overview: ['1w']
+2026-06-14 08:30:59,106 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-14 08:30:59,486 [INFO]   [sc] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:30:59,486 [INFO]   [fubon] CNY from HKET overview: ['1w']
+2026-06-14 08:31:10,814 [INFO]   [fubon] ✓ 富邦銀行: bank website rates unchanged (verified)
+2026-06-14 08:31:11,142 [INFO]   [fubon] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:31:21,070 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates unchanged (verified)
+2026-06-14 08:31:21,414 [INFO]   [icbc] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:31:30,794 [INFO]   [bea] ✓ 東亞銀行: bank website rates unchanged (verified)
+2026-06-14 08:31:32,115 [INFO]   [bea] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:31:42,334 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates unchanged (verified)
+2026-06-14 08:31:42,334 [INFO]   [cncbi] Scraping CNY page: https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html
+2026-06-14 08:31:51,729 [INFO]   [cncbi] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:31:51,729 [INFO]   [dbs] CNY from HKET overview: ['1w']
+2026-06-14 08:32:08,712 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-06-14 08:32:08,942 [INFO]   [dbs] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:32:08,942 [INFO]   [bocomm] 交通銀行: skip_scrape, trying HKET as primary...
+2026-06-14 08:32:10,466 [INFO]   [bocomm] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:32:10,720 [INFO] UHK second source: found 9 banks
+2026-06-14 08:32:10,721 [WARNING]   [bocomm] 交通銀行: no data source available (unverified)
+2026-06-14 08:32:20,717 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-06-14 08:32:21,158 [INFO]   [shacom] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:32:31,683 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-06-14 08:32:32,981 [INFO]   [publicbank] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:32:41,738 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-14 08:32:41,738 [INFO]   [winglung] Scraping CNY page: https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp
+2026-06-14 08:32:51,615 [INFO]   [winglung] CNY from dedicated page: []
+2026-06-14 08:32:51,989 [INFO]   [winglung] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:33:04,716 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-14 08:33:05,077 [INFO]   [chbank] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:33:05,077 [INFO]   [fusion] CNY from HKET overview: ['3m', '12m', '6m']
+2026-06-14 08:33:05,077 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-14 08:33:05,424 [INFO]   [fusion] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:33:05,424 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-14 08:33:27,917 [INFO]   Clicked tab @e11 (美元)
+2026-06-14 08:33:32,590 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-14 08:33:32,590 [INFO]   [airstar] ✓ 象象銀行: bank website rates unchanged (verified)
+2026-06-14 08:33:32,917 [INFO]   [airstar] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:33:32,917 [INFO]   [za] CNY from HKET overview: ['1w']
+2026-06-14 08:33:44,723 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-14 08:33:45,079 [INFO]   [za] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:33:45,080 [INFO]   [pao] CNY from HKET overview: ['1m', '1w', '3m']
+2026-06-14 08:33:56,453 [INFO]   [pao] ✓ 平安數字銀行: bank website rates unchanged (verified)
+2026-06-14 08:33:56,742 [INFO]   [pao] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:34:06,242 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-14 08:34:06,743 [INFO]   [welab] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:34:17,365 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-14 08:34:17,684 [INFO]   [livi] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:34:17,684 [INFO]   [ant] CNY from HKET overview: ['3m', '12m', '9m', '6m']
+2026-06-14 08:34:17,684 [INFO]   [ant] 螞蟻銀行: skip_scrape, trying HKET as primary...
+2026-06-14 08:34:18,022 [INFO]   [ant] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:34:18,022 [WARNING]   [ant] 螞蟻銀行: no data source available (unverified)
+2026-06-14 08:34:28,579 [INFO]   [chiyu] ✓ 集友銀行: bank website rates unchanged (verified)
+2026-06-14 08:34:28,579 [INFO]   [chiyu] CNY generic fallback: ['2m']
+2026-06-14 08:34:28,795 [INFO]   [chiyu] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:34:28,795 [INFO]   [ncb] CNY from HKET overview: ['12m', '9m', '1w']
+2026-06-14 08:34:28,795 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-14 08:34:28,978 [INFO]   [ncb] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-14 08:34:28,978 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-14 08:34:28,991 [INFO] ==================================================
+2026-06-14 08:34:28,991 [INFO] Update complete:
+2026-06-14 08:34:28,991 [INFO]   ✅ Verified (same): 19
+2026-06-14 08:34:28,991 [INFO]   🔄 Verified (updated): 0
+2026-06-14 08:34:28,991 [INFO]   ❌ Unverified: 4
+2026-06-14 08:34:28,991 [INFO] Last updated: 2026-06-14T08:34:28.978508+08:00
+2026-06-14 08:34:28,991 [INFO] ==================================================
+2026-06-14 08:34:37,600 [INFO] Telegram notification sent
+2026-06-15 08:30:05,937 [INFO] ==================================================
+2026-06-15 08:30:05,937 [INFO] HK Deposit Rates Update
+2026-06-15 08:30:05,937 [INFO] Time: 2026-06-15 08:30:05
+2026-06-15 08:30:05,937 [INFO] ==================================================
+2026-06-15 08:30:05,939 [INFO] Processing 23 banks
+2026-06-15 08:30:06,282 [INFO]   HKET CNY: article updated 2026/06/09, parsing...
+2026-06-15 08:30:06,286 [INFO]   HKET CNY: found rates for 12 banks: ['ant', 'fusion', 'pao', 'bochk', 'ncb', 'dahsing', 'za', 'dbs', 'fubon', 'hsbc', 'hangseng', 'sc']
+2026-06-15 08:30:06,286 [INFO]   [hsbc] CNY from HKET overview: ['1w']
+2026-06-15 08:30:18,022 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates unchanged (verified)
+2026-06-15 08:30:18,368 [INFO]   [hsbc] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:30:18,368 [INFO]   [bochk] CNY from HKET overview: ['12m', '1w']
+2026-06-15 08:30:32,001 [INFO]   [bochk] ✓ 中銀香港: bank website rates unchanged (verified)
+2026-06-15 08:30:32,450 [INFO]   [bochk] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:30:32,450 [INFO]   [hangseng] CNY from HKET overview: ['1w']
+2026-06-15 08:30:50,674 [INFO]   [hangseng] ✓ 恒生銀行: bank website rates unchanged (verified)
+2026-06-15 08:30:51,046 [INFO]   [hangseng] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:30:51,046 [INFO]   [sc] CNY from HKET overview: ['1w']
+2026-06-15 08:31:08,179 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-15 08:31:08,562 [INFO]   [sc] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:31:08,562 [INFO]   [fubon] CNY from HKET overview: ['1w']
+2026-06-15 08:31:23,495 [INFO]   [fubon] ✓ 富邦銀行: bank website rates unchanged (verified)
+2026-06-15 08:31:23,704 [INFO]   [fubon] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:31:33,288 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates unchanged (verified)
+2026-06-15 08:31:33,636 [INFO]   [icbc] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:31:46,213 [INFO]   [bea] ✓ 東亞銀行: bank website rates unchanged (verified)
+2026-06-15 08:31:46,535 [INFO]   [bea] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:31:55,738 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates unchanged (verified)
+2026-06-15 08:31:55,738 [INFO]   [cncbi] Scraping CNY page: https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html
+2026-06-15 08:32:05,217 [INFO]   [cncbi] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:32:05,217 [INFO]   [dbs] CNY from HKET overview: ['1w']
+2026-06-15 08:32:24,382 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-06-15 08:32:24,760 [INFO]   [dbs] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:32:24,760 [INFO]   [bocomm] 交通銀行: skip_scrape, trying HKET as primary...
+2026-06-15 08:32:25,155 [INFO]   [bocomm] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:32:26,130 [INFO] UHK second source: found 9 banks
+2026-06-15 08:32:26,130 [WARNING]   [bocomm] 交通銀行: no data source available (unverified)
+2026-06-15 08:32:35,635 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-06-15 08:32:35,930 [INFO]   [shacom] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:32:46,181 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-06-15 08:32:46,541 [INFO]   [publicbank] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:32:57,768 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-15 08:32:57,768 [INFO]   [winglung] Scraping CNY page: https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp
+2026-06-15 08:33:06,547 [INFO]   [winglung] CNY from dedicated page: []
+2026-06-15 08:33:06,890 [INFO]   [winglung] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:33:19,767 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-15 08:33:19,998 [INFO]   [chbank] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:33:19,998 [INFO]   [fusion] CNY from HKET overview: ['3m', '12m', '6m']
+2026-06-15 08:33:19,998 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-15 08:33:20,224 [INFO]   [fusion] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:33:20,224 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-15 08:33:40,601 [INFO]   Clicked tab @e11 (美元)
+2026-06-15 08:33:45,274 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-15 08:33:45,274 [INFO]   [airstar] ✓ 象象銀行: bank website rates unchanged (verified)
+2026-06-15 08:33:45,512 [INFO]   [airstar] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:33:45,512 [INFO]   [za] CNY from HKET overview: ['1w']
+2026-06-15 08:33:59,825 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-15 08:34:00,040 [INFO]   [za] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:34:00,040 [INFO]   [pao] CNY from HKET overview: ['1m', '1w', '3m']
+2026-06-15 08:34:09,952 [INFO]   [pao] ✓ 平安數字銀行: bank website rates unchanged (verified)
+2026-06-15 08:34:10,310 [INFO]   [pao] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:34:19,827 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-15 08:34:20,356 [INFO]   [welab] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:34:33,958 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-15 08:34:35,539 [INFO]   [livi] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:34:35,539 [INFO]   [ant] CNY from HKET overview: ['3m', '12m', '9m', '6m']
+2026-06-15 08:34:35,539 [INFO]   [ant] 螞蟻銀行: skip_scrape, trying HKET as primary...
+2026-06-15 08:34:35,861 [INFO]   [ant] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:34:35,861 [WARNING]   [ant] 螞蟻銀行: no data source available (unverified)
+2026-06-15 08:34:45,086 [INFO]   [chiyu] ✓ 集友銀行: bank website rates unchanged (verified)
+2026-06-15 08:34:45,318 [INFO]   [chiyu] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:34:45,319 [INFO]   [ncb] CNY from HKET overview: ['12m', '9m', '1w']
+2026-06-15 08:34:45,319 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-15 08:34:45,539 [INFO]   [ncb] HKET article last updated 2026/06/12, not today or yesterday, skipping HKET
+2026-06-15 08:34:45,539 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-15 08:34:45,543 [INFO] ==================================================
+2026-06-15 08:34:45,543 [INFO] Update complete:
+2026-06-15 08:34:45,544 [INFO]   ✅ Verified (same): 19
+2026-06-15 08:34:45,544 [INFO]   🔄 Verified (updated): 0
+2026-06-15 08:34:45,544 [INFO]   ❌ Unverified: 4
+2026-06-15 08:34:45,544 [INFO] Last updated: 2026-06-15T08:34:45.539427+08:00
+2026-06-15 08:34:45,544 [INFO] ==================================================
+2026-06-15 08:34:50,586 [INFO] Telegram notification sent
+2026-06-16 08:30:04,129 [INFO] ==================================================
+2026-06-16 08:30:04,130 [INFO] HK Deposit Rates Update
+2026-06-16 08:30:04,130 [INFO] Time: 2026-06-16 08:30:04
+2026-06-16 08:30:04,130 [INFO] ==================================================
+2026-06-16 08:30:04,133 [INFO] Processing 23 banks
+2026-06-16 08:30:04,675 [INFO]   HKET CNY: article updated 2026/06/09, parsing...
+2026-06-16 08:30:04,678 [INFO]   HKET CNY: found rates for 12 banks: ['ant', 'fusion', 'pao', 'bochk', 'ncb', 'dahsing', 'za', 'dbs', 'fubon', 'hsbc', 'hangseng', 'sc']
+2026-06-16 08:30:04,678 [INFO]   [hsbc] CNY from HKET overview: ['1w']
+2026-06-16 08:30:19,475 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates unchanged (verified)
+2026-06-16 08:30:19,813 [INFO]   [hsbc] HKET: could not find article date for 滙豐銀行, skipping
+2026-06-16 08:30:19,813 [INFO]   [bochk] CNY from HKET overview: ['12m', '1w']
+2026-06-16 08:30:31,033 [INFO]   [bochk] ✓ 中銀香港: bank website rates unchanged (verified)
+2026-06-16 08:30:31,566 [INFO]   [bochk] HKET: could not find article date for 中銀香港, skipping
+2026-06-16 08:30:31,566 [INFO]   [hangseng] CNY from HKET overview: ['1w']
+2026-06-16 08:30:48,533 [INFO]   [hangseng] ✓ 恒生銀行: bank website rates unchanged (verified)
+2026-06-16 08:30:48,778 [INFO]   [hangseng] HKET: could not find article date for 恒生銀行, skipping
+2026-06-16 08:30:48,778 [INFO]   [sc] CNY from HKET overview: ['1w']
+2026-06-16 08:31:03,714 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-16 08:31:04,054 [INFO]   [sc] HKET: could not find article date for 渣打銀行, skipping
+2026-06-16 08:31:04,054 [INFO]   [fubon] CNY from HKET overview: ['1w']
+2026-06-16 08:31:13,253 [INFO]   [fubon] ✓ 富邦銀行: bank website rates unchanged (verified)
+2026-06-16 08:31:13,710 [INFO]   [fubon] HKET: could not find article date for 富邦銀行, skipping
+2026-06-16 08:31:29,354 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates unchanged (verified)
+2026-06-16 08:31:29,712 [INFO]   [icbc] HKET: could not find article date for 工銀亞洲, skipping
+2026-06-16 08:31:39,973 [INFO]   [bea] ✓ 東亞銀行: bank website rates unchanged (verified)
+2026-06-16 08:31:40,322 [INFO]   [bea] HKET: could not find article date for 東亞銀行, skipping
+2026-06-16 08:31:57,219 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates unchanged (verified)
+2026-06-16 08:31:57,219 [INFO]   [cncbi] Scraping CNY page: https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html
+2026-06-16 08:32:06,596 [INFO]   [cncbi] HKET: could not find article date for 中信銀行（國際）, skipping
+2026-06-16 08:32:06,596 [INFO]   [dbs] CNY from HKET overview: ['1w']
+2026-06-16 08:32:23,474 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-06-16 08:32:23,848 [INFO]   [dbs] HKET: could not find article date for 星展銀行, skipping
+2026-06-16 08:32:23,848 [INFO]   [bocomm] 交通銀行: skip_scrape, trying HKET as primary...
+2026-06-16 08:32:24,215 [INFO]   [bocomm] HKET: could not find article date for 交通銀行, skipping
+2026-06-16 08:32:24,898 [INFO] UHK second source: found 9 banks
+2026-06-16 08:32:24,898 [WARNING]   [bocomm] 交通銀行: no data source available (unverified)
+2026-06-16 08:32:36,169 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-06-16 08:32:36,537 [INFO]   [shacom] HKET: could not find article date for 上海商業銀行, skipping
+2026-06-16 08:32:46,560 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-06-16 08:32:46,919 [INFO]   [publicbank] HKET: could not find article date for 大眾銀行, skipping
+2026-06-16 08:32:56,029 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-16 08:32:56,030 [INFO]   [winglung] Scraping CNY page: https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp
+2026-06-16 08:33:06,172 [INFO]   [winglung] CNY from dedicated page: []
+2026-06-16 08:33:06,611 [INFO]   [winglung] HKET: could not find article date for 招商永隆, skipping
+2026-06-16 08:33:19,615 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-16 08:33:19,920 [INFO]   [chbank] HKET: could not find article date for 創興銀行, skipping
+2026-06-16 08:33:19,920 [INFO]   [fusion] CNY from HKET overview: ['3m', '12m', '6m']
+2026-06-16 08:33:19,920 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-16 08:33:20,260 [INFO]   [fusion] HKET: could not find article date for 富融銀行, skipping
+2026-06-16 08:33:20,260 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-16 08:33:42,513 [INFO]   Clicked tab @e11 (美元)
+2026-06-16 08:33:47,186 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-16 08:33:47,186 [INFO]   [airstar] ✓ 象象銀行: bank website rates unchanged (verified)
+2026-06-16 08:33:47,483 [INFO]   [airstar] HKET: could not find article date for 象象銀行, skipping
+2026-06-16 08:33:47,483 [INFO]   [za] CNY from HKET overview: ['1w']
+2026-06-16 08:33:59,527 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-16 08:33:59,770 [INFO]   [za] HKET: could not find article date for 眾安銀行, skipping
+2026-06-16 08:33:59,770 [INFO]   [pao] CNY from HKET overview: ['1m', '1w', '3m']
+2026-06-16 08:34:10,819 [INFO]   [pao] ✓ 平安數字銀行: bank website rates unchanged (verified)
+2026-06-16 08:34:11,139 [INFO]   [pao] HKET: could not find article date for 平安數字銀行, skipping
+2026-06-16 08:34:25,844 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-16 08:34:26,098 [INFO]   [welab] HKET: could not find article date for 匯立銀行, skipping
+2026-06-16 08:34:37,526 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-16 08:34:37,766 [INFO]   [livi] HKET: could not find article date for 理慧銀行, skipping
+2026-06-16 08:34:37,767 [INFO]   [ant] CNY from HKET overview: ['3m', '12m', '9m', '6m']
+2026-06-16 08:34:37,767 [INFO]   [ant] 螞蟻銀行: skip_scrape, trying HKET as primary...
+2026-06-16 08:34:38,095 [INFO]   [ant] HKET: could not find article date for 螞蟻銀行, skipping
+2026-06-16 08:34:38,095 [WARNING]   [ant] 螞蟻銀行: no data source available (unverified)
+2026-06-16 08:34:48,533 [INFO]   [chiyu] ✓ 集友銀行: bank website rates unchanged (verified)
+2026-06-16 08:34:48,893 [INFO]   [chiyu] HKET: could not find article date for 集友銀行, skipping
+2026-06-16 08:34:48,893 [INFO]   [ncb] CNY from HKET overview: ['12m', '9m', '1w']
+2026-06-16 08:34:48,893 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-16 08:34:49,116 [INFO]   [ncb] HKET: could not find article date for 南洋商業銀行, skipping
+2026-06-16 08:34:49,116 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-16 08:34:49,129 [INFO] ==================================================
+2026-06-16 08:34:49,129 [INFO] Update complete:
+2026-06-16 08:34:49,129 [INFO]   ✅ Verified (same): 38
+2026-06-16 08:34:49,129 [INFO]   🔄 Verified (updated): 0
+2026-06-16 08:34:49,129 [INFO]   ❌ Unverified: 4
+2026-06-16 08:34:49,129 [INFO] Last updated: 2026-06-16T08:34:49.116730+08:00
+2026-06-16 08:34:49,129 [INFO] ==================================================
+2026-06-16 08:34:58,259 [INFO] Telegram notification sent

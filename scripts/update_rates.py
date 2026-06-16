@@ -1579,10 +1579,6 @@ def update_rates():
                     if not bank_updated:
                         verified_updated.append((bank_name, len(hket_overridden)))
 
-        if not hket_overridden and not bank_updated:
-            verified_same.append(bank_name)
-
-
     # ---- Metadata ----
     data['last_updated'] = datetime.now(HKT).isoformat()
     data['source'] = '各銀行官網 / HKET香港經濟日報（補充）'
