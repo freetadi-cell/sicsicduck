@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T08:34:49.116730+08:00",
+  "last_updated": "2026-06-17T08:34:24.567910+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -122,7 +122,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 3.0,
+          "rate": 3.3,
           "min_deposit": 2000,
           "note": "新資金定期存款優惠",
           "source": "bank",
@@ -2118,7 +2118,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.63,
+          "rate": 2.68,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2126,7 +2126,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.48,
+          "rate": 2.63,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2134,7 +2134,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.48,
+          "rate": 2.63,
           "min_deposit": 1000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2184,7 +2184,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.38,
+          "rate": 3.43,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2192,7 +2192,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 3.33,
+          "rate": 3.43,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2200,7 +2200,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 3.23,
+          "rate": 3.33,
           "min_deposit": 10000,
           "note": "網上銀行/流動銀行定期存款利率",
           "source": "bank",
@@ -2442,7 +2442,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 0.1,
+          "rate": 0.2,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2458,7 +2458,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 0.13,
+          "rate": 0.3,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2474,7 +2474,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 0.16,
+          "rate": 0.35,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2490,7 +2490,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 0.16,
+          "rate": 0.4,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -3800,7 +3800,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.85,
+          "rate": 2.9,
           "min_deposit": 10,
           "note": "GoSave 2.0 定期存款",
           "source": "bank",
