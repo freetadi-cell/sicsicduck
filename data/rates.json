@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T08:34:24.567910+08:00",
+  "last_updated": "2026-06-18T08:34:26.227931+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -728,7 +728,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.2,
+          "rate": 3.3,
           "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
@@ -744,7 +744,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.7,
+          "rate": 3.3,
           "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank",
@@ -854,14 +854,6 @@
           ]
         },
         "1m": {
-          "rate": 2.35,
-          "min_deposit": 10000,
-          "note": "新資金/Fubon+手機App定存利率（取最高）",
-          "source": "bank",
-          "fund_type": false,
-          "conditions": []
-        },
-        "2m": {
           "rate": 2.45,
           "min_deposit": 10000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
@@ -869,8 +861,16 @@
           "fund_type": false,
           "conditions": []
         },
+        "2m": {
+          "rate": 2.55,
+          "min_deposit": 10000,
+          "note": "新資金/Fubon+手機App定存利率（取最高）",
+          "source": "bank",
+          "fund_type": false,
+          "conditions": []
+        },
         "3m": {
-          "rate": 2.9,
+          "rate": 2.95,
           "min_deposit": 10000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
@@ -878,7 +878,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.9,
+          "rate": 2.95,
           "min_deposit": 10000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
@@ -886,7 +886,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.9,
+          "rate": 2.95,
           "min_deposit": 10000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
@@ -894,7 +894,7 @@
           "conditions": []
         },
         "4m": {
-          "rate": 2.75,
+          "rate": 2.85,
           "min_deposit": 10000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
@@ -1488,7 +1488,7 @@
           ]
         },
         "3m": {
-          "rate": 2.72,
+          "rate": 2.82,
           "min_deposit": 10000,
           "note": "inMotion新資金定期存款特惠年利率",
           "source": "bank",
@@ -2308,7 +2308,7 @@
           ]
         },
         "1m": {
-          "rate": 2.4,
+          "rate": 2.5,
           "min_deposit": 100000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2326,7 +2326,7 @@
           ]
         },
         "3m": {
-          "rate": 2.5,
+          "rate": 2.6,
           "min_deposit": 100000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2334,7 +2334,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.45,
+          "rate": 2.5,
           "min_deposit": 100000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2342,7 +2342,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.5,
+          "rate": 2.6,
           "min_deposit": 100000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2376,7 +2376,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 3.45,
+          "rate": 3.5,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2392,7 +2392,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.6,
+          "rate": 3.7,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2400,7 +2400,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 3.5,
+          "rate": 3.7,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2408,7 +2408,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 3.4,
+          "rate": 3.7,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
@@ -4054,7 +4054,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.6,
+          "rate": 3.8,
           "min_deposit": "USD 100",
           "note": "定期存款利率（5萬以上）",
           "source": "bank",
