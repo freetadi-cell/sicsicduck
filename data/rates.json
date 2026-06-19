@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T08:35:02.004058+08:00",
+  "last_updated": "2026-06-19T09:03:20.379524+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1078,19 +1078,19 @@
           ]
         },
         "3m": {
-          "rate": 2.55,
+          "rate": 2.9,
           "min_deposit": 50000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
-          "fund_type": "existing_funds",
+          "fund_type": "new_funds",
           "conditions": []
         },
         "6m": {
-          "rate": 2.4,
+          "rate": 2.8,
           "min_deposit": 50000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
-          "fund_type": "existing_funds",
+          "fund_type": "new_funds",
           "conditions": []
         },
         "12m": {
@@ -1144,19 +1144,19 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.5,
-          "min_deposit": 1000000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "rate": 3.8,
+          "min_deposit": 15000,
+          "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
-          "fund_type": "existing_funds",
+          "fund_type": "new_funds",
           "conditions": []
         },
         "6m": {
-          "rate": 3.5,
-          "min_deposit": 1000000,
-          "note": "網上銀行特惠利率（工銀財富客戶）",
+          "rate": 3.75,
+          "min_deposit": 15000,
+          "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
-          "fund_type": "existing_funds",
+          "fund_type": "new_funds",
           "conditions": []
         },
         "12m": {
@@ -1210,9 +1210,9 @@
           "conditions": []
         },
         "3m": {
-          "rate": 1.15,
-          "min_deposit": null,
-          "note": "從銀行官網提取",
+          "rate": 1.25,
+          "min_deposit": 50000,
+          "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []
@@ -1226,9 +1226,9 @@
           "conditions": []
         },
         "6m": {
-          "rate": 1.15,
-          "min_deposit": null,
-          "note": "從銀行官網提取",
+          "rate": 1.25,
+          "min_deposit": 50000,
+          "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
           "fund_type": "new_funds",
           "conditions": []

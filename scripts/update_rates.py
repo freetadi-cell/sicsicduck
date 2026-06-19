@@ -71,7 +71,7 @@ BANK_CONFIG = {
     },
     'icbc': {
         'name': '工銀亞洲',
-        'url': 'https://www.icbcasia.com/hk/tc/personal/latest-promotion/online-time-deposit.html',
+        'url': 'https://www.icbcasia.com/hk/tc/personal/latest-promotion/new-funds-time-deposit.html',
     },
     'bea': {
         'name': '東亞銀行',
