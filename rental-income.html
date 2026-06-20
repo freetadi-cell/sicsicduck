@@ -65,7 +65,7 @@
         .district-pill.active{background:var(--gray-800);color:var(--white);border-color:var(--gray-800)}
         .district-pill:not(.active):hover{background:var(--gray-100)}
 
-        .age-filter{display:flex;align-items:center;gap:6px;margin-left:auto}
+        .age-filter{display:flex;align-items:center;gap:6px}
         .age-filter label{font-size:12px;font-weight:500;color:var(--gray-600);white-space:nowrap}
         .age-filter input{width:60px;padding:6px 8px;border:1.5px solid var(--gray-300);border-radius:8px;font-size:13px;font-weight:600;text-align:center;color:var(--gray-800);font-family:inherit}
         .age-filter input:focus{outline:none;border-color:var(--gold-600);box-shadow:0 0 0 3px rgba(251,192,45,.15)}
@@ -178,6 +178,8 @@
         <div class="district-pills" id="districtPills">
             <button class="district-pill active" data-district="all">全部</button>
         </div>
+    </div>
+    <div class="controls" style="margin-top:8px">
         <div class="age-filter">
             <label for="ageMax">樓齡上限</label>
             <input type="number" id="ageMax" min="0" max="100" placeholder="不限">
