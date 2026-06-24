@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T08:34:41.892024+08:00",
+  "last_updated": "2026-06-24T08:34:32.194448+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -2342,7 +2342,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.7,
+          "rate": 2.8,
           "min_deposit": 100000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -2718,7 +2718,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 2.45,
+          "rate": 2.65,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -2726,7 +2726,7 @@
           "conditions": []
         },
         "2m": {
-          "rate": 2.45,
+          "rate": 2.65,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -2734,7 +2734,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.55,
+          "rate": 2.65,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -2784,7 +2784,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 3.45,
+          "rate": 3.55,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -2792,7 +2792,7 @@
           "conditions": []
         },
         "2m": {
-          "rate": 3.5,
+          "rate": 3.6,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -2800,7 +2800,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.5,
+          "rate": 3.6,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -2808,7 +2808,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 3.5,
+          "rate": 3.6,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
