@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T08:34:32.194448+08:00",
+  "last_updated": "2026-06-25T08:34:49.643489+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1282,7 +1282,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.7,
+          "rate": 2.8,
           "min_deposit": 10000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
@@ -1290,7 +1290,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.7,
+          "rate": 2.8,
           "min_deposit": 10000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
@@ -1298,7 +1298,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.55,
+          "rate": 2.8,
           "min_deposit": 10000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
@@ -1348,7 +1348,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.5,
+          "rate": 3.75,
           "min_deposit": 1000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
@@ -1356,7 +1356,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 3.6,
+          "rate": 3.75,
           "min_deposit": 1000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
@@ -1364,7 +1364,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 3.6,
+          "rate": 3.75,
           "min_deposit": 1000,
           "note": "顯卓理財特惠定期存款利率",
           "source": "bank",
@@ -3160,7 +3160,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.65,
+          "rate": 2.7,
           "min_deposit": 1000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -3176,7 +3176,7 @@
           "conditions": []
         },
         "4m": {
-          "rate": 2.65,
+          "rate": 2.7,
           "min_deposit": 1000,
           "note": "定期存款年利率",
           "source": "bank",
@@ -3210,7 +3210,7 @@
           "conditions": []
         },
         "2m": {
-          "rate": 3.05,
+          "rate": 3.1,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -3218,7 +3218,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.45,
+          "rate": 3.5,
           "min_deposit": 1,
           "note": "定期存款年利率",
           "source": "bank",
@@ -4168,22 +4168,20 @@
       "logo_color": "#1E88E5",
       "hkd": {
         "1w": {
-          "rate": null,
+          "rate": 1.5,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "1m": {
           "rate": 1.5,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
-          "fund_type": "new_funds",
-          "conditions": [
-            "upgrade_wealth"
-          ]
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "2m": {
           "rate": null,
@@ -4194,34 +4192,28 @@
           "conditions": []
         },
         "3m": {
-          "rate": 1.8,
+          "rate": 1.6,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
-          "fund_type": "new_funds",
-          "conditions": [
-            "upgrade_wealth"
-          ]
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
-          "rate": 2.2,
+          "rate": 1.8,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
-          "fund_type": "new_funds",
-          "conditions": [
-            "upgrade_wealth"
-          ]
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
-          "rate": 2.5,
+          "rate": 2.3,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
-          "fund_type": "new_funds",
-          "conditions": [
-            "upgrade_wealth"
-          ]
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "4m": {
           "rate": null,
@@ -4232,14 +4224,12 @@
           "conditions": []
         },
         "9m": {
-          "rate": 2.3,
+          "rate": 2.2,
           "min_deposit": 1,
-          "note": "從香港經濟日報提取",
-          "source": "hket",
-          "fund_type": "new_funds",
-          "conditions": [
-            "upgrade_wealth"
-          ]
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
+          "conditions": []
         }
       },
       "usd": {
@@ -4252,11 +4242,11 @@
           "conditions": []
         },
         "1m": {
-          "rate": null,
+          "rate": 3.0,
           "min_deposit": null,
-          "note": "",
-          "source": "",
-          "fund_type": null,
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "2m": {
@@ -4268,27 +4258,27 @@
           "conditions": []
         },
         "3m": {
-          "rate": null,
+          "rate": 3.0,
           "min_deposit": null,
-          "note": "",
-          "source": "",
-          "fund_type": null,
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
-          "rate": null,
+          "rate": 3.0,
           "min_deposit": null,
-          "note": "",
-          "source": "",
-          "fund_type": null,
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
-          "rate": null,
+          "rate": 3.0,
           "min_deposit": null,
-          "note": "",
-          "source": "",
-          "fund_type": null,
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         },
         "4m": {
@@ -4300,11 +4290,11 @@
           "conditions": []
         },
         "9m": {
-          "rate": null,
+          "rate": 3.0,
           "min_deposit": null,
-          "note": null,
-          "source": null,
-          "fund_type": null,
+          "note": "總年利率（含新資金加息）",
+          "source": "bank",
+          "fund_type": "existing_funds",
           "conditions": []
         }
       },
@@ -4389,7 +4379,7 @@
           ]
         },
         "1m": {
-          "rate": 1.8,
+          "rate": 2.0,
           "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4405,7 +4395,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.8,
+          "rate": 2.85,
           "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4413,7 +4403,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.6,
+          "rate": 2.75,
           "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4421,7 +4411,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.4,
+          "rate": 2.5,
           "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
@@ -4429,7 +4419,7 @@
           "conditions": []
         },
         "4m": {
-          "rate": 2.65,
+          "rate": 2.75,
           "min_deposit": null,
           "note": "新資金定期存款推廣（分行）",
           "source": "bank",
