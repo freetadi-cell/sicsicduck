@@ -1146,10 +1146,18 @@ function renderTable() {
             // Notes
             const activePeriod = periods[0];
             const noteData = data?.[activePeriod];
-            const note = noteData?.note || '';
-            const minDep = noteData?.min_deposit;
+            // If funds filter is active and this rate doesn't match, show no note
+            let showNote = true;
+            if (currentFunds === 'new' && noteData?.fund_type !== 'new_funds') showNote = false;
+            if (currentFunds === 'existing' && noteData?.fund_type !== 'existing_funds') showNote = false;
+            if (currentFunds === 'exchange') {
+                const condArr = noteData?.conditions || [];
+                if (noteData?.currency_exchange !== true && !condArr.includes('exchange')) showNote = false;
+            }
+            const note = showNote ? (noteData?.note || '') : '';
+            const minDep = showNote ? noteData?.min_deposit : null;
             html += `<td class="note-cell">
-                ${note ? `<div>${note}</div>` : ''}
+                ${note ? `<div>${note}</div>` : (showNote ? '' : '—')}
                 ${minDep ? `<div class="min-deposit">門檻：${formatDeposit(minDep, currentCurrency)}</div>` : ''}
             </td>`;
 
