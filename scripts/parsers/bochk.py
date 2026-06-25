@@ -26,30 +26,38 @@ def parse(text, tables=None, html=None):
     
     section = text[table_idx:table_idx+2000]
     
-    # Extract HKD rates (first row after 港元)
+    # Extract HKD rates (first row after 港元) - new_funds
     hkd_match = re.search(r'港元\s+[^\d]*?(\d+\.\d+)%\s+(\d+\.\d+)%', section)
     if hkd_match:
-        rates['hkd'] = {'3m': float(hkd_match.group(1)), '6m': float(hkd_match.group(2))}
+        rates['hkd'] = {
+            '3m': {'rate': float(hkd_match.group(1)), 'fund_type': 'new_funds', 'min_deposit': 10000},
+            '6m': {'rate': float(hkd_match.group(2)), 'fund_type': 'new_funds', 'min_deposit': 10000}
+        }
         hkd_12 = re.search(r'港元\s+[^\d]*?(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%', section)
         if hkd_12:
-            rates['hkd']['12m'] = float(hkd_12.group(3))
+            rates['hkd']['12m'] = {'rate': float(hkd_12.group(3)), 'fund_type': 'new_funds', 'min_deposit': 10000}
     
-    # USD rates
+    # USD rates - new_funds
     usd_match = re.search(r'美元\s+[^\d]*?(\d+\.\d+)%\s+(\d+\.\d+)%', section)
     if usd_match:
-        rates['usd'] = {'3m': float(usd_match.group(1)), '6m': float(usd_match.group(2))}
+        rates['usd'] = {
+            '3m': {'rate': float(usd_match.group(1)), 'fund_type': 'new_funds', 'min_deposit': 1000},
+            '6m': {'rate': float(usd_match.group(2)), 'fund_type': 'new_funds', 'min_deposit': 1000}
+        }
         usd_12 = re.search(r'美元\s+[^\d]*?(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%', section)
         if usd_12:
-            rates['usd']['12m'] = float(usd_12.group(3))
+            rates['usd']['12m'] = {'rate': float(usd_12.group(3)), 'fund_type': 'new_funds', 'min_deposit': 1000}
     
-    # CNY (人民幣) rates - new funds
-    # Pattern: 人民幣  「私人財富」/「中銀理財」  1.40%  1.45%  -  1.50%
+    # CNY (人民幣) rates - new_funds
     cny_match = re.search(r'人民幣\s+[^\d]*?(\d+\.\d+)%\s+(\d+\.\d+)%', section)
     if cny_match:
-        rates['cny'] = {'3m': float(cny_match.group(1)), '6m': float(cny_match.group(2))}
+        rates['cny'] = {
+            '3m': {'rate': float(cny_match.group(1)), 'fund_type': 'new_funds', 'min_deposit': 10000},
+            '6m': {'rate': float(cny_match.group(2)), 'fund_type': 'new_funds', 'min_deposit': 10000}
+        }
         cny_12 = re.search(r'人民幣\s+[^\d]*?(\d+\.\d+)%\s+(\d+\.\d+)%\s+\S+\s+(\d+\.\d+)%', section)
         if cny_12:
-            rates['cny']['12m'] = float(cny_12.group(3))
+            rates['cny']['12m'] = {'rate': float(cny_12.group(3)), 'fund_type': 'new_funds', 'min_deposit': 10000}
     
     # CNY exchange (兌換) rates
     # Section: 特優人民幣及外幣定期存款優惠
@@ -72,25 +80,22 @@ def parse(text, tables=None, html=None):
         # Find column positions
         header_match = re.search(r'澳元\s*紐元\s*英鎊\s*加元\s*人民幣\s*美元\s*歐羅', exchange_section)
         if header_match:
-            # Find 7天 row
+            # Find 7天 row - exchange condition
             row_7d = re.search(r'7天\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%', exchange_section)
             if row_7d:
                 # Column 5 is 人民幣
                 cny_7d_rate = float(row_7d.group(5))
                 if 'cny' not in rates:
                     rates['cny'] = {}
-                rates['cny']['1w'] = cny_7d_rate
-                rates['cny_note'] = '特優人民幣及外幣定期存款（兌換資金）'
+                rates['cny']['1w'] = {'rate': cny_7d_rate, 'conditions': ['exchange'], 'min_deposit': 10000}
             
-            # Find 1個月 row
+            # Find 1個月 row - exchange condition
             row_1m = re.search(r'1個月\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%\s+([\d.]+)%', exchange_section)
             if row_1m:
                 cny_1m_rate = float(row_1m.group(5))
                 if 'cny' not in rates:
                     rates['cny'] = {}
-                rates['cny']['1m'] = cny_1m_rate
-                if 'cny_note' not in rates:
-                    rates['cny_note'] = '特優人民幣及外幣定期存款（兌換資金）'
+                rates['cny']['1m'] = {'rate': cny_1m_rate, 'conditions': ['exchange'], 'min_deposit': 10000}
     
     if rates:
         rates['note'] = note

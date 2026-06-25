@@ -31,9 +31,9 @@ def parse(text, tables=None, html=None):
         usd_rates = _extract_nf_row(nf_section, '美元')
 
         for period, rate in hkd_rates.items():
-            hkd[period] = {'rate': rate, 'new_funds': True}
+            hkd[period] = {'rate': rate, 'fund_type': 'new_funds', 'min_deposit': 500000}
         for period, rate in usd_rates.items():
-            usd[period] = {'rate': rate, 'new_funds': True}
+            usd[period] = {'rate': rate, 'fund_type': 'new_funds', 'min_deposit': 128000}
 
     # === Section 2: Fubon+ 港元 ===
     hkd_idx = text.find('特優港元定期存款優惠')
@@ -123,8 +123,8 @@ def _extract_tier_rates(section, rates, currency):
             existing = rates.get(key)
 
             if existing is None:
-                rates[key] = {'rate': val, 'new_funds': False}
-            elif existing.get('new_funds') is True and existing.get('rate', 0) > val:
-                existing['any_funds_rate'] = val
+                rates[key] = {'rate': val, 'fund_type': 'existing_funds', 'min_deposit': 500000 if currency == '港元' else 65000}
+            elif existing.get('fund_type') == 'new_funds' and existing.get('rate', 0) > val:
+                existing['existing_funds_rate'] = val
             elif val > existing.get('rate', 0):
-                rates[key] = {'rate': val, 'new_funds': False}
+                rates[key] = {'rate': val, 'fund_type': 'existing_funds', 'min_deposit': 500000 if currency == '港元' else 65000}

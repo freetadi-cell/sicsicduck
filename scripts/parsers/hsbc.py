@@ -1,15 +1,21 @@
-"""滙豐銀行 HSBC - Parser for deposit rates from text content."""
+"""滙豐銀行 HSBC - Parser for deposit rates from text content.
+
+Extracts:
+- RewardCash Time Deposit (new funds via mobile app): HKD/USD 3m/6m
+- Preferential New Fund Time Deposit: HKD 3m/6m, USD 3m/6m/12m, CNY 3m/6m/12m
+- Exchange rate promo (HKD/USD 1w via currency exchange)
+
+All rates are tagged with fund_type='new_funds' or conditions=['exchange']
+"""
 import re
 
 def parse(text, tables=None, html=None):
     """Parse HSBC HK deposit rates.
     
-    Page has two main sections:
-    1. RewardCash Time Deposit (HKD + USD) - 3m, 6m only
-    2. Preferential New Fund Time Deposit Rates (HKD + USD) - 3m, 6m, 12m
-    
-    We capture RewardCash rates for HKD (3m/6m) and USD (3m/6m),
-    and Preferential USD 12m since it's the only 12m rate available.
+    Page structure:
+    1. RewardCash Time Deposit (新資金手機App優惠)
+    2. Preferential New Fund Time Deposit Rates (新資金定期優惠)
+    3. Exchange rate promo (兌換資金優惠)
     """
     rates = {}
     
@@ -57,30 +63,101 @@ def parse(text, tables=None, html=None):
             if m:
                 usd_pref[period] = float(m.group(1))
     
-    # Build result
+    # Preferential HKD
+    hkd_pref = {}
+    hkd_pref_match = re.search(
+        r'Preferential.*?HKD.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
+        pref_text, re.DOTALL | re.IGNORECASE
+    )
+    if hkd_pref_match:
+        block = hkd_pref_match.group(1)
+        for period, label in [('3m', '3 months'), ('6m', '6 months')]:
+            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+            if m:
+                hkd_pref[period] = float(m.group(1))
+    
+    # === Preferential New Fund CNY ===
+    cny_pref = {}
+    cny_pref_match = re.search(
+        r'Preferential.*?RMB.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
+        pref_text, re.DOTALL | re.IGNORECASE
+    )
+    if cny_pref_match:
+        block = cny_pref_match.group(1)
+        for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
+            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+            if m:
+                cny_pref[period] = float(m.group(1))
+    
+    # === Exchange rate promo (1 week rates via currency exchange) ===
+    hkd_exchange = {}
+    usd_exchange = {}
+    cny_exchange = {}
+    
+    # Look for exchange/currency conversion promos
+    exchange_section = text.find('Currency exchange') if 'Currency exchange' in text else text.find('兌換')
+    if exchange_section > 0:
+        exchange_text = text[exchange_section:exchange_section + 2000]
+        # HKD exchange: look for 1 week rates
+        hkdx_match = re.search(r'HKD.*?(?:1\s*星期|7\s*天).*?(\d+\.\d+)%', exchange_text)
+        if hkdx_match:
+            hkd_exchange['1w'] = float(hkdx_match.group(1))
+        # USD exchange
+        usdx_match = re.search(r'USD.*?(?:1\s*星期|7\s*天).*?(\d+\.\d+)%', exchange_text)
+        if usdx_match:
+            usd_exchange['1w'] = float(usdx_match.group(1))
+        # CNY exchange
+        cnyx_match = re.search(r'(?:RMB|CNY|人民幣).*?(?:1\s*星期|7\s*天).*?(\d+\.\d+)%', exchange_text)
+        if cnyx_match:
+            cny_exchange['1w'] = float(cnyx_match.group(1))
+    
+    # Build result with fund_type and conditions
     result = {}
     
-    # HKD: RewardCash 3m/6m only
-    if hkd_rc:
-        result['hkd'] = hkd_rc
+    # HKD: RewardCash (new_funds) + Preferential (new_funds) + Exchange (exchange)
+    hkd_final = {}
+    # RewardCash rates are new_funds
+    for p in ['3m', '6m']:
+        if p in hkd_rc:
+            hkd_final[p] = {'rate': hkd_rc[p], 'fund_type': 'new_funds', 'min_deposit': 10000}
+    # Preferential HKD rates are new_funds
+    for p in ['3m', '6m']:
+        if p in hkd_pref:
+            hkd_final[p] = {'rate': hkd_pref[p], 'fund_type': 'new_funds', 'min_deposit': 10000}
+    # Exchange rates
+    for p in ['1w']:
+        if p in hkd_exchange:
+            hkd_final[p] = {'rate': hkd_exchange[p], 'conditions': ['exchange'], 'min_deposit': 10000}
+    if hkd_final:
+        result['hkd'] = hkd_final
     
-    # USD: RewardCash 3m/6m + Preferential 12m
-    if usd_rc or usd_pref:
-        usd_final = {}
-        for p in ['3m', '6m']:
-            if p in usd_rc:
-                usd_final[p] = usd_rc[p]
-        if '12m' in usd_pref:
-            usd_final['12m'] = usd_pref['12m']
-        if usd_final:
-            result['usd'] = usd_final
+    # USD: RewardCash (new_funds) + Preferential (new_funds) + Exchange (exchange)
+    usd_final = {}
+    for p in ['3m', '6m']:
+        if p in usd_rc:
+            usd_final[p] = {'rate': usd_rc[p], 'fund_type': 'new_funds', 'min_deposit': 2000}
+    for p in ['3m', '6m', '12m']:
+        if p in usd_pref:
+            usd_final[p] = {'rate': usd_pref[p], 'fund_type': 'new_funds', 'min_deposit': 2000}
+    for p in ['1w']:
+        if p in usd_exchange:
+            usd_final[p] = {'rate': usd_exchange[p], 'conditions': ['exchange'], 'min_deposit': 2000}
+    if usd_final:
+        result['usd'] = usd_final
     
-    # Use note 'RewardCash定存' as default; USD 12m will get different note
+    # CNY: Preferential (new_funds) + Exchange (exchange)
+    cny_final = {}
+    for p in ['3m', '6m', '12m']:
+        if p in cny_pref:
+            cny_final[p] = {'rate': cny_pref[p], 'fund_type': 'new_funds', 'min_deposit': 10000}
+    for p in ['1w']:
+        if p in cny_exchange:
+            cny_final[p] = {'rate': cny_exchange[p], 'conditions': ['exchange'], 'min_deposit': 10000}
+    if cny_final:
+        result['cny'] = cny_final
+    
     if result:
-        result['note'] = 'RewardCash定存（手機App新資金）'
-        # If USD has 12m from Preferential, store separate note
-        if 'usd' in result and '12m' in result.get('usd', {}):
-            result['usd_note'] = '新資金定期存款優惠'
+        result['note'] = '滙豐定期存款優惠（新資金）'
         return result
     
     # Fallback: try to find CNY exchange rates on the page

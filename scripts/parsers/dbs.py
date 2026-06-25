@@ -137,27 +137,39 @@ def parse(text, tables=None, html=None):
         for period, rate in hkd_rates.items():
             rates['hkd'][period] = {
                 'rate': rate,
-                'new_funds': False,
+                'fund_type': 'existing_funds',
+                'min_deposit': 50000
             }
         # Override with higher new fund promo rates
         for period, rate in nf_hkd.items():
             if period in rates['hkd']:
                 if rate >= rates['hkd'][period]['rate']:
-                    rates['hkd'][period]['rate'] = rate
-                    rates['hkd'][period]['new_funds'] = True
-                    rates['hkd'][period]['note'] = '新資金定期存款優惠（50萬港元以上）'
+                    rates['hkd'][period] = {
+                        'rate': rate,
+                        'fund_type': 'new_funds',
+                        'min_deposit': 1000000,
+                        'note': '新資金定期存款優惠（100萬港元以上）'
+                    }
             else:
                 # Period not in base table but exists in promo
-                rates['hkd'][period] = {'rate': rate, 'new_funds': True, 'note': '新資金定期存款優惠（50萬港元以上）'}
+                rates['hkd'][period] = {
+                    'rate': rate,
+                    'fund_type': 'new_funds',
+                    'min_deposit': 1000000,
+                    'note': '新資金定期存款優惠（100萬港元以上）'
+                }
         # Only apply existing fund rates if higher than base AND no new fund rate
         for period, rate in exist_hkd.items():
             if period in rates['hkd']:
                 curr = rates['hkd'][period].get('rate', 0)
-                is_new_fund = rates['hkd'][period].get('new_funds', False)
+                is_new_fund = rates['hkd'][period].get('fund_type') == 'new_funds'
                 if rate > curr and not is_new_fund:
-                    rates['hkd'][period]['rate'] = rate
-                    rates['hkd'][period]['new_funds'] = False
-                    rates['hkd'][period]['note'] = '現有資金定期存款優惠（100萬港元以上）'
+                    rates['hkd'][period] = {
+                        'rate': rate,
+                        'fund_type': 'existing_funds',
+                        'min_deposit': 1000000,
+                        'note': '現有資金定期存款優惠（100萬港元以上）'
+                    }
 
     # === Build USD rates ===
     if nf_usd or exist_usd:
@@ -166,14 +178,16 @@ def parse(text, tables=None, html=None):
         for period, rate in nf_usd.items():
             all_usd[period] = {
                 'rate': rate,
-                'new_funds': True,
+                'fund_type': 'new_funds',
+                'min_deposit': 65000,
                 'note': '新資金定期存款優惠（65,000美元以上）',
             }
         for period, rate in exist_usd.items():
             if period not in all_usd or rate > all_usd[period]['rate']:
                 all_usd[period] = {
                     'rate': rate,
-                    'new_funds': False,
+                    'fund_type': 'existing_funds',
+                    'min_deposit': 128000,
                     'note': '現有資金定期存款優惠（128,000美元以上）',
                 }
         rates['usd'] = all_usd
