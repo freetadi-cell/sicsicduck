@@ -1,0 +1,29 @@
+{
+  "bank_key": "bocomm",
+  "bank_name": "交通銀行",
+  "url": "https://www.hk.bankcomm.com/hk/hk/tw/file/getContentPath.html?fileId=2600167",
+  "scraped_at": "2026-06-24T16:25:00+08:00",
+  "rates": {
+    "hkd": {
+      "1m": {"rate": 2.20, "min_deposit": 20000, "note": "每日特息定期存款（電子渠道）"},
+      "3m": {"rate": 2.50, "min_deposit": 20000, "note": "每日特息定期存款（電子渠道）"},
+      "6m": {"rate": 2.75, "min_deposit": 20000, "note": "每日特息定期存款（電子渠道）"},
+      "12m": {"rate": 2.75, "min_deposit": 20000, "note": "每日特息定期存款（電子渠道）"}
+    },
+    "usd": {
+      "1m": {"rate": 3.10, "min_deposit": 3000, "note": "每日特息定期存款（電子渠道）"},
+      "3m": {"rate": 3.40, "min_deposit": 3000, "note": "每日特息定期存款（電子渠道）"},
+      "6m": {"rate": 3.60, "min_deposit": 3000, "note": "每日特息定期存款（電子渠道）"},
+      "12m": {"rate": 3.70, "min_deposit": 3000, "note": "每日特息定期存款（電子渠道）"}
+    },
+    "cny": {
+      "1m": {"rate": 0.60, "min_deposit": 10000, "note": "每日特息定期存款（電子渠道）"},
+      "3m": {"rate": 1.05, "min_deposit": 10000, "note": "每日特息定期存款（電子渠道）"},
+      "6m": {"rate": 1.30, "min_deposit": 10000, "note": "每日特息定期存款（電子渠道）"},
+      "12m": {"rate": 1.30, "min_deposit": 10000, "note": "每日特息定期存款（電子渠道）"}
+    }
+  },
+  "note": "每日特息定期存款（個人客戶 - 電子渠道）",
+  "source": "bank",
+  "fund_type": false
+}

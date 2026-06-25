@@ -89,8 +89,9 @@ BANK_CONFIG = {
     },
     'bocomm': {
         'name': '交通銀行',
-        'url': 'https://www.bankcomm.com.hk/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml',
-        'skip_scrape': True,
+        'url': 'https://www.hk.bankcomm.com/hk/hk/tw/file/getContentPath.html?fileId=2600167',
+        'pdf_fetch': True,
+        'pdf_file_id': '2600167',
     },
     'shacom': {
         'name': '上海商業銀行',
@@ -139,8 +140,7 @@ BANK_CONFIG = {
     },
     'ant': {
         'name': '螞蟻銀行',
-        'url': 'https://www.antbank.hk/',
-        'skip_scrape': True,
+        'url': 'https://www.antbank.hk/rates?lang=zh_hk',
     },
     'chiyu': {
         'name': '集友銀行',
@@ -406,7 +406,7 @@ def _scrape_click_tab(url, tab_label, wait=3):
 
 def load_parser(parser_key):
     try:
-        mod = importlib.import_module(f'parsers.{parser_key}')
+        mod = importlib.import_module(parser_key)
         return mod.parse
     except ImportError:
         return None
@@ -1266,6 +1266,10 @@ def _apply_uhk_fallback(bank, uhk_rates):
 # Main update logic
 # ============================================================
 
+# Add PARSERS_DIR to sys.path for dynamic imports
+import sys
+sys.path.insert(0, PARSERS_DIR)
+
 def _ensure_currency_slots(bank):
     """Ensure all currency and period slots exist in bank data."""
     for cur in ALL_CURRENCIES:
@@ -1371,6 +1375,64 @@ def update_rates():
                     logger.info(f'  [{parser_key}] CNY from HKET overview: {cny_periods}')
 
         # ---- Phase 1: Bank website scraping (PRIMARY source for HKD/USD) ----
+        # Check for PDF fetch mode (e.g., BOCOM)
+        if cfg.get('pdf_fetch'):
+            logger.info(f"  [{parser_key}] {bank_name}: fetching PDF...")
+            try:
+                # Import the parser module to access fetch_pdf_text
+                parser_mod = importlib.import_module(parser_key)
+                if hasattr(parser_mod, 'fetch_pdf_text'):
+                    text, tables, html = parser_mod.fetch_pdf_text(cfg.get('pdf_file_id', '2600167'))
+                else:
+                    text, tables, html = None, None, None
+            except Exception as e:
+                logger.warning(f"  [{parser_key}] PDF fetch error: {e}")
+                text, tables, html = None, None, None
+            
+            if text is None:
+                logger.warning(f"  [{parser_key}] PDF fetch failed for {bank_name}, trying HKET...")
+                if parser_key in HKET_ARTICLES:
+                    hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
+                    if hket_ok and hket_result:
+                        _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                        unverified.append(bank_name)
+                        logger.info(f"  [{parser_key}] → {bank_name}: PDF failed, using HKET fallback (unverified)")
+                        continue
+                if _apply_uhk_fallback(bank, get_uhk_rates()):
+                    unverified.append(bank_name)
+                else:
+                    failed_banks.append(bank_name)
+                    mark_moneyhero(bank)
+                    unverified.append(bank_name)
+                continue
+            
+            # Parse the PDF text
+            result = None
+            parse_fn = load_parser(parser_key)
+            if parse_fn:
+                try:
+                    result = parse_fn(text, tables, html=html)
+                except Exception as e:
+                    logger.warning(f"  [{parser_key}] Parser error for {bank_name}: {e}")
+            
+            if result:
+                wrapped = _wrap_parser_result(result, bank_name)
+                changed = _compare_rates(bank, wrapped)
+                _apply_result_rates(bank, wrapped, bank_name, source='bank')
+                if changed:
+                    verified_updated.append((bank_name, len(changed)))
+                    bank_updated = True
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: PDF rates UPDATED ({len(changed)} changed)")
+                else:
+                    verified_same.append(bank_name)
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: PDF rates unchanged (verified)")
+            else:
+                save_scraped_data(parser_key, bank_name, url, text, tables, html)
+                needs_extraction.append(bank_name)
+                logger.info(f"  [{parser_key}] ⏳ PDF parse failed, saved raw data for {bank_name}")
+                # Don't add to unverified - needs_extraction is its own status
+            continue
+        
         if cfg.get('skip_scrape'):
             # No website scraping for this bank → try HKET as primary, then UHK
             logger.info(f"  [{parser_key}] {bank_name}: skip_scrape, trying HKET as primary...")
@@ -1471,7 +1533,7 @@ def update_rates():
                 logger.info(f"  → {bank_name} using UHK fallback (pending extraction)")
             else:
                 mark_moneyhero(bank)
-            unverified.append(bank_name)
+            # Don't add to unverified here - needs_extraction banks are tracked separately
             continue  # No bank data to supplement
 
         # ---- Phase 3.5: CNY bank website fallback ----
