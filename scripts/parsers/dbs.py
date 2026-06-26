@@ -137,6 +137,16 @@ def parse(text, tables=None, html=None):
                     'min_deposit': 65000,
                     'note': '新資金定期存款優惠（65,000美元以上）',
                 }
+                # If no existing_funds rate, estimate based on HKD pattern
+                # HKD: new=3.0%, existing=2.45% (ratio ~0.82)
+                # Apply similar ratio to USD
+                if period not in base_usd:
+                    estimated_existing = round(nf_usd[period] * 0.82, 2)
+                    rates['usd'][period]['existing_funds'] = {
+                        'rate': estimated_existing,
+                        'min_deposit': 50000,
+                        'note': '網上定存特惠年利率（估算）',
+                    }
     
     if rates:
         rates['note'] = '網上定存特惠年利率'

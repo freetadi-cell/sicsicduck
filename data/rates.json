@@ -4392,10 +4392,11 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null
+            "rate": 3.28,
+            "min_deposit": 50000,
+            "note": "網上定存特惠年利率（估算）",
+            "source": "bank",
+            "conditions": []
           },
           "exchange": {
             "rate": null,
@@ -4438,10 +4439,11 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null
+            "rate": 3.28,
+            "min_deposit": 50000,
+            "note": "網上定存特惠年利率（估算）",
+            "source": "bank",
+            "conditions": []
           },
           "exchange": {
             "rate": null,

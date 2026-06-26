@@ -64,6 +64,9 @@ BANK_CONFIG = {
         'cloudflare_bypass': True,
         'get_html': True,
         'wait': 10,
+        # To get USD rates, need to click USD tab
+        # Current scraped text only has HKD tab
+        # Will need agent-browser with tab clicking support
     },
     'fubon': {
         'name': '富邦銀行',
