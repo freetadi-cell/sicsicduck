@@ -35,34 +35,40 @@ Example output:
 import re
 
 
-def parse(text, tables=None, html=None):
-    """Parse DBS HK online time deposit rates."""
+def parse(text, tables=None, html=None, usd_rates=None):
+    """Parse DBS HK online time deposit rates.
+    
+    Args:
+        text: Scraped text from HKD tab
+        usd_rates: Optional dict of USD existing_funds rates from USD tab
+                   e.g. {'1m': 3.0, '3m': 3.45, ...}
+    """
     if not text:
         return None
 
     rates = {}
     
     # === Extract base table rates (現有資金/續存) ===
-    # This is the standard rate table for HKD 50K+
+    # This is the standard rate table for HKD 50K+ / USD 6K+
     base_hkd = {}
     base_usd = {}
     
-    # Find the table section with "存款期" header
+    # Find HKD rates from the base table
     table_idx = text.find('存款期')
     if table_idx >= 0:
         table_section = text[table_idx:table_idx + 2000]
         
-        # Extract rates: X個月 X.XX%
+        # Extract HKD rates: X個月 X.XX%
         for period, label in [('1m', '1個月'), ('2m', '2個月'), ('3m', '3個月'),
                                ('4m', '4個月'), ('6m', '6個月'), ('9m', '9個月'),
                                ('12m', '12個月')]:
-            # Pattern: "3個月\t2.50%\tQ6135\t2.50%\tR6135"
             m = re.search(rf'{label}\s+(\d+\.\d+)%', table_section)
             if m:
                 base_hkd[period] = float(m.group(1))
     
-    # Extract USD base rates (if available)
-    # Usually in separate table or from HKET
+    # Note: USD rates need to be scraped separately (different tab)
+    # We'll use agent-browser to click USD tab and get those rates
+    # For now, USD existing_funds rates will be extracted from agent-browser output
     
     # === Extract new funds promo rates ===
     nf_hkd = {}
@@ -114,7 +120,7 @@ def parse(text, tables=None, html=None):
                     'note': '新資金定期存款優惠（100萬港元以上）',
                 }
     
-    if base_usd or nf_usd:
+    if base_usd or nf_usd or usd_rates:
         rates['usd'] = {}
         
         for period in ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']:
@@ -124,10 +130,17 @@ def parse(text, tables=None, html=None):
                 'exchange': None,
             }
             
-            if period in base_usd:
+            # Use usd_rates if provided (from USD tab)
+            if usd_rates and period in usd_rates:
+                rates['usd'][period]['existing_funds'] = {
+                    'rate': usd_rates[period],
+                    'min_deposit': 6000,
+                    'note': '網上定存特惠年利率',
+                }
+            elif period in base_usd:
                 rates['usd'][period]['existing_funds'] = {
                     'rate': base_usd[period],
-                    'min_deposit': 50000,
+                    'min_deposit': 6000,
                     'note': '網上定存特惠年利率',
                 }
             
@@ -137,16 +150,6 @@ def parse(text, tables=None, html=None):
                     'min_deposit': 65000,
                     'note': '新資金定期存款優惠（65,000美元以上）',
                 }
-                # If no existing_funds rate, estimate based on HKD pattern
-                # HKD: new=3.0%, existing=2.45% (ratio ~0.82)
-                # Apply similar ratio to USD
-                if period not in base_usd:
-                    estimated_existing = round(nf_usd[period] * 0.82, 2)
-                    rates['usd'][period]['existing_funds'] = {
-                        'rate': estimated_existing,
-                        'min_deposit': 50000,
-                        'note': '網上定存特惠年利率（估算）',
-                    }
     
     if rates:
         rates['note'] = '網上定存特惠年利率'
