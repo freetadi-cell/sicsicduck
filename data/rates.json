@@ -991,17 +991,17 @@
         },
         "1m": {
           "new_funds": {
-            "rate": 0.1,
-            "min_deposit": null,
-            "note": "定期存款牌價利率",
-            "source": "bank",
-            "conditions": []
-          },
-          "existing_funds": {
             "rate": null,
             "min_deposit": null,
             "note": null,
             "source": null,
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.1,
+            "min_deposit": null,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -1059,17 +1059,17 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 0.15,
-            "min_deposit": null,
-            "note": "定期存款牌價利率",
-            "source": "bank",
-            "conditions": []
-          },
-          "existing_funds": {
             "rate": null,
             "min_deposit": null,
             "note": null,
             "source": null,
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.15,
+            "min_deposit": null,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
