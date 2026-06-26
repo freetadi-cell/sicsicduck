@@ -984,3 +984,61 @@
 2026-06-25 16:37:48,708 [WARNING]   ⚠ 9999 網易: no dividend data from etnet (price=181.8)
 2026-06-25 16:37:48,921 [INFO] ✅ Updated 47 stocks, 7 skipped
 2026-06-25 16:37:48,921 [INFO] Skipped: 恒生銀行, 小米集團, 美團, 京東集團, 攜程集團, 阿里巴巴, 網易
+2026-06-26 16:30:05,874 [INFO] Updating dividend stocks data (etnet FY method)...
+2026-06-26 16:30:14,831 [INFO]   ✓ 0002 中電控股: FY2025/12 div=3.2 HKD, price=73.75, yield=4.34%
+2026-06-26 16:30:25,145 [INFO]   ✓ 0003 香港中華煤氣: FY2025/12 div=0.35 HKD, price=6.66, yield=5.26%
+2026-06-26 16:30:33,563 [INFO]   ✓ 0005 滙豐控股: FY2025/12 div=5.8623 HKD, price=147.7, yield=3.97%
+2026-06-26 16:30:41,998 [INFO]   ✓ 0006 電能實業: FY2025/12 div=2.82 HKD, price=57.55, yield=4.90%
+2026-06-26 16:30:44,576 [ERROR] HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 0011.HK"}}}
+2026-06-26 16:30:44,694 [WARNING]   ⚠ 0011 恒生銀行: no price (div=None)
+2026-06-26 16:30:54,950 [INFO]   ✓ 0012 恒基兆業地產: FY2025/12 div=1.26 HKD, price=25.16, yield=5.01%
+2026-06-26 16:31:03,480 [INFO]   ✓ 0016 新鴻基地產: FY2025/06 div=3.75 HKD, price=114.2, yield=3.28%
+2026-06-26 16:31:11,943 [INFO]   ✓ 0017 新世界發展: FY2024/06 div=0.2 HKD, price=6.78, yield=2.95%
+2026-06-26 16:31:20,526 [INFO]   ✓ 0027 銀河娛樂: FY2025/12 div=1.5 HKD, price=29.2, yield=5.14%
+2026-06-26 16:31:30,697 [INFO]   ✓ 0066 港鐵公司: FY2025/12 div=1.31 HKD, price=30.94, yield=4.23%
+2026-06-26 16:31:39,244 [INFO]   ✓ 0101 恒隆地產: FY2025/12 div=0.52 HKD, price=7.0, yield=7.43%
+2026-06-26 16:31:47,626 [INFO]   ✓ 0175 吉利汽車: FY2025/12 div=0.5 HKD, price=17.06, yield=2.93%
+2026-06-26 16:31:56,231 [INFO]   ✓ 0267 中信股份: FY2025/12 div=0.6351 HKD, price=11.78, yield=5.39%
+2026-06-26 16:32:06,478 [INFO]   ✓ 0288 萬洲國際: FY2025/12 div=1.1067 HKD, price=8.5, yield=13.02%
+2026-06-26 16:32:15,000 [INFO]   ✓ 0291 華潤啤酒: FY2025/12 div=1.148 HKD, price=21.4, yield=5.36%
+2026-06-26 16:32:28,016 [INFO]   ✓ 0388 香港交易所: FY2025/12 div=12.52 HKD, price=362.2, yield=3.46%
+2026-06-26 16:32:38,138 [INFO]   ✓ 0669 創科實業: FY2025/12 div=2.57 HKD, price=127.2, yield=2.02%
+2026-06-26 16:32:46,482 [INFO]   ✓ 0700 騰訊控股: FY2025/12 div=5.3 HKD, price=411.8, yield=1.29%
+2026-06-26 16:32:54,848 [INFO]   ✓ 0762 中國聯通: FY2025/12 div=0.4647 HKD, price=6.34, yield=7.33%
+2026-06-26 16:33:03,264 [INFO]   ✓ 0823 領展房產基金: FY2026/03 div=2.5361 HKD, price=36.34, yield=6.98%
+2026-06-26 16:33:13,499 [INFO]   ✓ 0857 中國石油: FY2025/12 div=0.5283 HKD, price=8.78, yield=6.02%
+2026-06-26 16:33:22,898 [INFO]   ✓ 0868 信義玻璃: FY2025/12 div=0.34 HKD, price=8.48, yield=4.01%
+2026-06-26 16:33:31,341 [INFO]   ✓ 0939 建設銀行: FY2025/12 div=0.4238 HKD, price=8.26, yield=5.13%
+2026-06-26 16:33:41,604 [INFO]   ✓ 0941 中國移動: FY2025/12 div=5.27 HKD, price=77.4, yield=6.81%
+2026-06-26 16:33:50,003 [INFO]   ✓ 1038 長江基建: FY2025/12 div=2.61 HKD, price=60.25, yield=4.33%
+2026-06-26 16:33:58,403 [INFO]   ✓ 1044 恒安國際: FY2025/12 div=1.5587 HKD, price=21.82, yield=7.14%
+2026-06-26 16:34:06,933 [INFO]   ✓ 1093 石藥集團: FY2025/12 div=0.29 HKD, price=6.69, yield=4.33%
+2026-06-26 16:34:17,112 [INFO]   ✓ 1109 華潤置地: FY2025/12 div=1.329 HKD, price=30.16, yield=4.41%
+2026-06-26 16:34:25,713 [INFO]   ✓ 1113 長實集團: FY2025/12 div=1.78 HKD, price=44.08, yield=4.04%
+2026-06-26 16:34:34,386 [INFO]   ✓ 1177 中國生物製藥: FY2025/12 div=0.1 HKD, price=4.26, yield=2.35%
+2026-06-26 16:34:42,764 [INFO]   ✓ 1211 比亞迪: FY2025/12 div=0.4114 HKD, price=72.65, yield=0.57%
+2026-06-26 16:34:52,892 [INFO]   ✓ 1288 農業銀行: FY2025/12 div=0.2813 HKD, price=5.33, yield=5.28%
+2026-06-26 16:35:01,541 [INFO]   ✓ 1299 友邦保險: FY2025/12 div=1.9308 HKD, price=70.8, yield=2.73%
+2026-06-26 16:35:10,013 [INFO]   ✓ 1398 工商銀行: FY2025/12 div=0.3502 HKD, price=6.62, yield=5.29%
+2026-06-26 16:35:19,017 [WARNING]   ⚠ 1810 小米集團: no dividend data from etnet (price=21.42)
+2026-06-26 16:35:29,138 [INFO]   ✓ 1876 百威亞太: FY2025/12 div=0.4425 HKD, price=6.32, yield=7.00%
+2026-06-26 16:35:37,683 [INFO]   ✓ 1928 金沙中國: FY2025/12 div=0.75 HKD, price=12.9, yield=5.81%
+2026-06-26 16:35:46,127 [INFO]   ✓ 1997 九龍倉置業: FY2025/12 div=1.32 HKD, price=21.86, yield=6.04%
+2026-06-26 16:35:54,496 [INFO]   ✓ 2018 瑞聲科技: FY2025/12 div=0.35 HKD, price=43.02, yield=0.81%
+2026-06-26 16:36:04,671 [INFO]   ✓ 2313 申洲國際: FY2025/12 div=2.58 HKD, price=40.26, yield=6.41%
+2026-06-26 16:36:13,072 [INFO]   ✓ 2318 中國平安: FY2025/12 div=3.0518 HKD, price=50.55, yield=6.04%
+2026-06-26 16:36:21,440 [INFO]   ✓ 2382 舜宇光學: FY2025/12 div=1.206 HKD, price=60.9, yield=1.98%
+2026-06-26 16:36:31,635 [INFO]   ✓ 2388 中銀香港: FY2025/12 div=2.125 HKD, price=45.56, yield=4.66%
+2026-06-26 16:36:40,056 [INFO]   ✓ 2628 中國人壽: FY2025/12 div=0.9708 HKD, price=26.92, yield=3.61%
+2026-06-26 16:36:48,528 [INFO]   ✓ 3328 交通銀行: FY2025/12 div=0.3548 HKD, price=6.97, yield=5.09%
+2026-06-26 16:36:56,915 [WARNING]   ⚠ 3690 美團: no dividend data from etnet (price=64.25)
+2026-06-26 16:37:07,038 [INFO]   ✓ 3968 招商銀行: FY2025/12 div=2.2018 HKD, price=44.7, yield=4.93%
+2026-06-26 16:37:15,547 [INFO]   ✓ 3988 中國銀行: FY2025/12 div=0.2468 HKD, price=5.06, yield=4.88%
+2026-06-26 16:37:23,981 [INFO]   ✓ 6862 海底撈: FY2025/12 div=0.722 HKD, price=10.87, yield=6.64%
+2026-06-26 16:37:32,380 [WARNING]   ⚠ 9618 京東集團: no dividend data from etnet (price=96.0)
+2026-06-26 16:37:42,841 [INFO]   ✓ 9633 農夫山泉: FY2025/12 div=1.13 HKD, price=42.54, yield=2.66%
+2026-06-26 16:37:51,501 [WARNING]   ⚠ 9961 攜程集團: no dividend data from etnet (price=305.2)
+2026-06-26 16:38:00,070 [WARNING]   ⚠ 9988 阿里巴巴: no dividend data from etnet (price=89.5)
+2026-06-26 16:38:08,649 [WARNING]   ⚠ 9999 網易: no dividend data from etnet (price=187.5)
+2026-06-26 16:38:08,861 [INFO] ✅ Updated 47 stocks, 7 skipped
+2026-06-26 16:38:08,861 [INFO] Skipped: 恒生銀行, 小米集團, 美團, 京東集團, 攜程集團, 阿里巴巴, 網易

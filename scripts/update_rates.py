@@ -1270,28 +1270,56 @@ def _apply_uhk_fallback(bank, uhk_rates):
 import sys
 sys.path.insert(0, PARSERS_DIR)
 
-def _ensure_currency_slots(bank):
-    """Ensure all currency and period slots exist in bank data."""
+def _ensure_currency_slots(bank, use_new_structure=False):
+    """Ensure all currency and period slots exist in bank data.
+    
+    If use_new_structure=True, use new format:
+    {
+      "new_funds": {...},
+      "existing_funds": {...},
+      "exchange": {...}
+    }
+    
+    Otherwise use old format:
+    {
+      "rate": ..., "fund_type": ..., "conditions": ...
+    }
+    """
     for cur in ALL_CURRENCIES:
         if cur not in bank:
             bank[cur] = {}
         for period in ALL_PERIODS:
             if period not in bank[cur]:
-                bank[cur][period] = {
-                    'rate': None,
-                    'min_deposit': None,
-                    'note': None,
-                    'source': None,
-                    'fund_type': None,
-                    'conditions': [],
-                }
+                if use_new_structure:
+                    bank[cur][period] = {
+                        'new_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
+                        'existing_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
+                        'exchange': {'rate': None, 'min_deposit': None, 'note': None, 'source': None, 'conditions': ['exchange']},
+                    }
+                else:
+                    bank[cur][period] = {
+                        'rate': None,
+                        'min_deposit': None,
+                        'note': None,
+                        'source': None,
+                        'fund_type': None,
+                        'conditions': [],
+                    }
             else:
                 entry = bank[cur][period]
                 if isinstance(entry, dict):
-                    if 'fund_type' not in entry:
-                        entry['fund_type'] = None
-                    if 'conditions' not in entry:
-                        entry['conditions'] = []
+                    # Check if it's new structure
+                    if 'new_funds' in entry or 'existing_funds' in entry or 'exchange' in entry:
+                        # Already new structure, ensure all keys exist
+                        for key in ['new_funds', 'existing_funds', 'exchange']:
+                            if key not in entry:
+                                entry[key] = {'rate': None, 'min_deposit': None, 'note': None, 'source': None}
+                    else:
+                        # Old structure
+                        if 'fund_type' not in entry:
+                            entry['fund_type'] = None
+                        if 'conditions' not in entry:
+                            entry['conditions'] = []
                 # Migrate old format (bare value) to dict
                 elif isinstance(entry, (int, float)):
                     bank[cur][period] = {
@@ -1748,43 +1776,118 @@ def _compare_rates(bank, result):
     return changed
 
 
-def _apply_result_rates(bank, result, bank_name, source='bank'):
+def _apply_result_rates(bank, result, bank_name, source='bank', use_new_structure=False):
     """Apply parsed rates to bank data structure.
+    
+    Supports two modes:
+    1. Old structure (default): Single rate per period with fund_type tag
+       bank['hkd']['3m'] = {'rate': 3.0, 'fund_type': 'new_funds', ...}
+    
+    2. New structure (use_new_structure=True): Separate rates per fund type
+       bank['hkd']['3m'] = {
+         'new_funds': {'rate': 3.0, ...},
+         'existing_funds': {'rate': 2.5, ...},
+         'exchange': {'rate': None, ...}
+       }
+    
     If only_missing=True, only fill in periods where rate is currently None (supplement mode).
     """
     note = result.get('note', f'從{bank_name}官網提取')
     only_missing = result.get('_only_missing', False)
     supplemented = []
+    
     for cur in ALL_CURRENCIES:
         if cur not in result:
             continue
         curr_note = result.get(f'{cur}_note', note)
+        
         for period in ALL_PERIODS:
             if period not in result.get(cur, {}):
                 continue
+            
             val = result[cur][period]
             if not isinstance(val, dict):
                 continue
+            
             rate = val.get('rate')
             if rate is None:
                 continue
-
-            # In supplement mode, skip if bank already has a rate for this period
-            if only_missing:
-                existing = bank.get(cur, {}).get(period, {})
-                if isinstance(existing, dict) and existing.get('rate') is not None:
-                    continue
-                supplemented.append(f'{cur}/{period}')
-
-            bank[cur][period] = {
-                'rate': rate,
-                'min_deposit': val.get('min_deposit') or bank.get(cur, {}).get(period, {}).get('min_deposit'),
-                'note': val.get('note') or curr_note,
-                'source': source,
-                'fund_type': val.get('fund_type'),
-                'conditions': val.get('conditions', []),
-            }
+            
+            fund_type = val.get('fund_type')
+            conditions = val.get('conditions', [])
+            
+            if use_new_structure:
+                # New structure: separate rates per fund type
+                _apply_rate_to_new_structure(bank, cur, period, val, source, curr_note, fund_type, conditions)
+            else:
+                # Old structure: single rate per period
+                # In supplement mode, skip if bank already has a rate for this period
+                if only_missing:
+                    existing = bank.get(cur, {}).get(period, {})
+                    if isinstance(existing, dict) and existing.get('rate') is not None:
+                        continue
+                    supplemented.append(f'{cur}/{period}')
+                
+                bank[cur][period] = {
+                    'rate': rate,
+                    'min_deposit': val.get('min_deposit') or bank.get(cur, {}).get(period, {}).get('min_deposit'),
+                    'note': val.get('note') or curr_note,
+                    'source': source,
+                    'fund_type': fund_type,
+                    'conditions': conditions,
+                }
+    
     return supplemented
+
+
+def _apply_rate_to_new_structure(bank, cur, period, val, source, note, fund_type, conditions):
+    """Apply a rate to the new data structure.
+    
+    Determines which slot (new_funds/existing_funds/exchange) to update
+    based on fund_type and conditions.
+    """
+    rate = val.get('rate')
+    if rate is None:
+        return
+    
+    # Determine target slot
+    slot = None
+    if 'exchange' in conditions:
+        slot = 'exchange'
+    elif fund_type == 'new_funds':
+        slot = 'new_funds'
+    elif fund_type == 'existing_funds':
+        slot = 'existing_funds'
+    elif fund_type is None:
+        # No fund_type specified, could be general rate - put in existing_funds
+        slot = 'existing_funds'
+    else:
+        slot = 'existing_funds'
+    
+    # Initialize period structure if needed
+    if period not in bank.get(cur, {}):
+        bank[cur][period] = {
+            'new_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
+            'existing_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
+            'exchange': {'rate': None, 'min_deposit': None, 'note': None, 'source': None, 'conditions': ['exchange']},
+        }
+    
+    # Initialize slot if needed
+    if slot not in bank[cur][period]:
+        bank[cur][period][slot] = {'rate': None, 'min_deposit': None, 'note': None, 'source': None}
+    
+    # Update the slot
+    bank[cur][period][slot] = {
+        'rate': rate,
+        'min_deposit': val.get('min_deposit'),
+        'note': val.get('note') or note,
+        'source': source,
+        'conditions': conditions if slot == 'exchange' else [],
+    }
+    
+    # For exchange rates, keep conditions
+    if slot == 'exchange' and conditions:
+        bank[cur][period][slot]['conditions'] = conditions
 
 
 def _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified):
