@@ -1273,7 +1273,7 @@ sys.path.insert(0, PARSERS_DIR)
 def _ensure_currency_slots(bank, use_new_structure=False):
     """Ensure all currency and period slots exist in bank data.
     
-    If use_new_structure=True, use new format:
+    If use_new_structure=True, use new format and REMOVE old format keys:
     {
       "new_funds": {...},
       "existing_funds": {...},
@@ -1310,7 +1310,11 @@ def _ensure_currency_slots(bank, use_new_structure=False):
                 if isinstance(entry, dict):
                     # Check if it's new structure
                     if 'new_funds' in entry or 'existing_funds' in entry or 'exchange' in entry:
-                        # Already new structure, ensure all keys exist
+                        # Already new structure, ensure all keys exist and remove old keys
+                        for key in ['rate', 'fund_type', 'conditions', 'min_deposit', 'note', 'source']:
+                            if key in entry and key not in ['new_funds', 'existing_funds', 'exchange']:
+                                del entry[key]
+                        
                         for key in ['new_funds', 'existing_funds', 'exchange']:
                             if key not in entry:
                                 entry[key] = {'rate': None, 'min_deposit': None, 'note': None, 'source': None}
@@ -1815,6 +1819,30 @@ def _apply_result_rates(bank, result, bank_name, source='bank', use_new_structur
             if not isinstance(val, dict):
                 continue
             
+            # Check if parser returned new structure (has new_funds/existing_funds keys)
+            if 'new_funds' in val or 'existing_funds' in val or 'exchange' in val:
+                # Parser returned new structure directly - copy all slots
+                if period not in bank.get(cur, {}):
+                    bank[cur][period] = {
+                        'new_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
+                        'existing_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
+                        'exchange': {'rate': None, 'min_deposit': None, 'note': None, 'source': None, 'conditions': ['exchange']},
+                    }
+                
+                for slot in ['new_funds', 'existing_funds', 'exchange']:
+                    if slot in val and val[slot]:
+                        slot_data = val[slot]
+                        if isinstance(slot_data, dict) and slot_data.get('rate') is not None:
+                            bank[cur][period][slot] = {
+                                'rate': slot_data.get('rate'),
+                                'min_deposit': slot_data.get('min_deposit'),
+                                'note': slot_data.get('note') or curr_note,
+                                'source': source,
+                                'conditions': slot_data.get('conditions', []),
+                            }
+                continue
+            
+            # Old structure: val has 'rate', 'fund_type', 'conditions'
             rate = val.get('rate')
             if rate is None:
                 continue
