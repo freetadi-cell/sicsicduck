@@ -27,6 +27,10 @@ def parse(text, tables=None, html=None):
 
     網上定存優惠 table (HKD 50K+):
       1個月 2.00% | 3個月 2.40% | 6個月 2.30% | 12個月 2.30%
+
+    Returns rates with proper fund_type tagging:
+    - new_funds: 新資金優惠（大額，100萬港元或65,000美元以上）
+    - existing_funds: 現有資金優惠或一般網上定存
     """
     if not text:
         return None
@@ -140,16 +144,18 @@ def parse(text, tables=None, html=None):
                 'fund_type': 'existing_funds',
                 'min_deposit': 50000
             }
-        # Override with higher new fund promo rates
+        
+        # Override with new fund promo rates (higher threshold but better rates)
         for period, rate in nf_hkd.items():
             if period in rates['hkd']:
-                if rate >= rates['hkd'][period]['rate']:
-                    rates['hkd'][period] = {
-                        'rate': rate,
-                        'fund_type': 'new_funds',
-                        'min_deposit': 1000000,
-                        'note': '新資金定期存款優惠（100萬港元以上）'
-                    }
+                # New fund rate should override if it's higher or equal
+                # Note: DBS new fund rates require HKD 1,000,000+ but offer better rates
+                rates['hkd'][period] = {
+                    'rate': rate,
+                    'fund_type': 'new_funds',
+                    'min_deposit': 1000000,
+                    'note': '新資金定期存款優惠（100萬港元以上）'
+                }
             else:
                 # Period not in base table but exists in promo
                 rates['hkd'][period] = {
@@ -158,11 +164,13 @@ def parse(text, tables=None, html=None):
                     'min_deposit': 1000000,
                     'note': '新資金定期存款優惠（100萬港元以上）'
                 }
+        
         # Only apply existing fund rates if higher than base AND no new fund rate
         for period, rate in exist_hkd.items():
             if period in rates['hkd']:
                 curr = rates['hkd'][period].get('rate', 0)
                 is_new_fund = rates['hkd'][period].get('fund_type') == 'new_funds'
+                # Don't override new_funds rates with existing_funds rates
                 if rate > curr and not is_new_fund:
                     rates['hkd'][period] = {
                         'rate': rate,
