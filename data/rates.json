@@ -5024,7 +5024,7 @@
             "rate": 3.0,
             "min_deposit": 1000000,
             "note": "新資金定期存款優惠（100萬港元以上）",
-            "source": null,
+            "source": "bank",
             "conditions": []
           },
           "existing_funds": {
@@ -5074,7 +5074,7 @@
             "rate": 3.0,
             "min_deposit": 1000000,
             "note": "新資金定期存款優惠（100萬港元以上）",
-            "source": null,
+            "source": "bank",
             "conditions": []
           },
           "existing_funds": {
