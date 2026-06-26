@@ -1713,11 +1713,9 @@
         },
         "6m": {
           "rate": 3.0,
-          "min_deposit": 50000,
-          "note": "網上定存特惠年利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "fund_type": "new_funds",
+          "min_deposit": 1000000,
+          "note": "新資金定期存款優惠（100萬港元以上）"
         },
         "12m": {
           "rate": 2.4,
@@ -1728,12 +1726,10 @@
           "conditions": []
         },
         "4m": {
-          "rate": 2.45,
-          "min_deposit": 50000,
-          "note": "網上定存特惠年利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 3.0,
+          "fund_type": "new_funds",
+          "min_deposit": 1000000,
+          "note": "新資金定期存款優惠（100萬港元以上）"
         },
         "9m": {
           "rate": 2.4,
