@@ -988,9 +988,30 @@ function renderSummary() {
             let bestBank = '';
 
             ratesData.banks.forEach(bank => {
-                const data = bank[currency]?.[period];
-                if (data && data.rate !== null && data.rate > bestRate) {
-                    bestRate = data.rate;
+                const periodData = bank[currency]?.[period];
+                if (!periodData) return;
+                
+                // Check if new structure
+                const isNewStructure = periodData.new_funds || periodData.existing_funds || periodData.exchange;
+                
+                let rate = null;
+                if (isNewStructure) {
+                    // New structure: get the best rate from any slot
+                    const slots = ['new_funds', 'existing_funds', 'exchange'];
+                    for (const slot of slots) {
+                        if (periodData[slot]?.rate !== null && periodData[slot]?.rate !== undefined) {
+                            if (rate === null || periodData[slot].rate > rate) {
+                                rate = periodData[slot].rate;
+                            }
+                        }
+                    }
+                } else {
+                    // Old structure
+                    rate = periodData.rate;
+                }
+                
+                if (rate !== null && rate > bestRate) {
+                    bestRate = rate;
                     bestBank = bank.name;
                 }
             });
