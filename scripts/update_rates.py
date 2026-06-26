@@ -64,9 +64,7 @@ BANK_CONFIG = {
         'cloudflare_bypass': True,
         'get_html': True,
         'wait': 10,
-        # To get USD rates, need to click USD tab
-        # Current scraped text only has HKD tab
-        # Will need agent-browser with tab clicking support
+        'special_handling': 'dbs_tabs',  # Need to click USD and 新資金 tabs
     },
     'fubon': {
         'name': '富邦銀行',
@@ -1544,6 +1542,69 @@ def update_rates():
                             logger.info(f"  ✓ Got USD rates from tab for {bank_name}")
                     except Exception:
                         pass
+        
+        # DBS special handling: need to click USD and 新資金 tabs
+        if cfg.get('special_handling') == 'dbs_tabs' and parse_fn:
+            dbs_usd_rates = None
+            dbs_hkd_new_rates = None
+            
+            try:
+                # Use agent-browser to get USD rates
+                logger.info(f"  [{parser_key}] Extracting USD and HKD new_funds rates with agent-browser...")
+                
+                # Close and open fresh
+                subprocess.run(['agent-browser', 'close'], timeout=5, capture_output=True)
+                subprocess.run(['agent-browser', 'open', url], timeout=35, capture_output=True)
+                
+                # Click USD tab using JavaScript
+                subprocess.run(['agent-browser', 'eval', 
+                    'document.querySelector(\'#currency_table\').value=\'USD\';document.querySelector(\'#currency_table\').dispatchEvent(new Event(\'change\'))'],
+                    timeout=10, capture_output=True)
+                
+                snap_out = subprocess.run(['agent-browser', 'snapshot', '-c'], timeout=15, capture_output=True, text=True).stdout
+                
+                # Extract USD rates: X個月 X.XX% QXXXX
+                usd_pattern = r'(\d+)個月\s+(\d+\.\d+)%\s+Q\d+'
+                dbs_usd_rates = {}
+                for m in re.finditer(usd_pattern, snap_out):
+                    period = _days_to_period(int(m.group(1)) * 30)
+                    if period:
+                        dbs_usd_rates[period] = float(m.group(2))
+                
+                if dbs_usd_rates:
+                    logger.info(f"  ✓ Got USD existing_funds rates: {dbs_usd_rates}")
+                
+                # Click HKD and 新資金 tab
+                subprocess.run(['agent-browser', 'eval',
+                    'document.querySelector(\'#currency_table\').value=\'HKD\';document.querySelector(\'#currency_table\').dispatchEvent(new Event(\'change\'))'],
+                    timeout=10, capture_output=True)
+                
+                # Click 新資金 tab using JavaScript
+                subprocess.run(['agent-browser', 'eval',
+                    'document.querySelector(\'#new-fund-tab\')?.click() || document.querySelector(\'a[href=\'#new-fund\']\')?.click()'],
+                    timeout=10, capture_output=True)
+                
+                snap_out2 = subprocess.run(['agent-browser', 'snapshot', '-c'], timeout=15, capture_output=True, text=True).stdout
+                
+                # Extract HKD new_funds rates
+                hkd_nf_pattern = r'(\d+)個月\s+(\d+\.\d+)%\s+Q\d+'
+                dbs_hkd_new_rates = {}
+                for m in re.finditer(hkd_nf_pattern, snap_out2):
+                    period = _days_to_period(int(m.group(1)) * 30)
+                    if period:
+                        dbs_hkd_new_rates[period] = float(m.group(2))
+                
+                if dbs_hkd_new_rates:
+                    logger.info(f"  ✓ Got HKD new_funds rates: {dbs_hkd_new_rates}")
+                
+                subprocess.run(['agent-browser', 'close'], timeout=5, capture_output=True)
+                
+                # Re-parse with the extra rates
+                if parse_fn:
+                    result = parse_fn(text, tables, html=html, usd_rates=dbs_usd_rates, hkd_new_funds_rates=dbs_hkd_new_rates)
+                    
+            except Exception as e:
+                logger.warning(f"  [{parser_key}] agent-browser DBS extraction error: {e}")
 
         # ---- Phase 3: Apply bank website result ----
         if result:
