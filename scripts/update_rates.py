@@ -1348,9 +1348,9 @@ def update_rates():
     banks = data['banks']
     logger.info(f"Processing {len(banks)} banks")
 
-    # Ensure all banks have cny currency slots
+    # Ensure all banks have currency slots using new structure
     for bank in banks:
-        _ensure_currency_slots(bank)
+        _ensure_currency_slots(bank, use_new_structure=True)
 
     name_to_key = {cfg['name']: key for key, cfg in BANK_CONFIG.items()}
 
@@ -1790,11 +1790,17 @@ def _apply_result_rates(bank, result, bank_name, source='bank', use_new_structur
          'exchange': {'rate': None, ...}
        }
     
+    Parsers can signal new structure by setting result['_use_new_structure'] = True
+    
     If only_missing=True, only fill in periods where rate is currently None (supplement mode).
     """
     note = result.get('note', f'從{bank_name}官網提取')
     only_missing = result.get('_only_missing', False)
     supplemented = []
+    
+    # Auto-detect new structure from parser signal
+    if result.get('_use_new_structure'):
+        use_new_structure = True
     
     for cur in ALL_CURRENCIES:
         if cur not in result:

@@ -205,6 +205,7 @@ def parse(text, tables=None, html=None):
 
     if rates and ('hkd' in rates or 'usd' in rates):
         rates['note'] = '網上定存特惠年利率'
+        rates['_use_new_structure'] = True  # Signal to update_rates.py to use new structure
         return rates
 
     return None
