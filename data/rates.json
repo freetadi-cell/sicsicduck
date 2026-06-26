@@ -4141,10 +4141,11 @@
             "conditions": []
           },
           "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null
+            "rate": 2.0,
+            "min_deposit": 1000000,
+            "note": "新資金定期存款優惠（100萬港元以上）",
+            "source": "bank",
+            "conditions": []
           },
           "exchange": {
             "rate": null,
@@ -4162,10 +4163,11 @@
             "conditions": []
           },
           "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null
+            "rate": 2.0,
+            "min_deposit": 1000000,
+            "note": "新資金定期存款優惠（100萬港元以上）",
+            "source": "bank",
+            "conditions": []
           },
           "exchange": {
             "rate": null,
@@ -4183,10 +4185,11 @@
             "conditions": []
           },
           "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null
+            "rate": 2.5,
+            "min_deposit": 1000000,
+            "note": "新資金定期存款優惠（100萬港元以上）",
+            "source": "bank",
+            "conditions": []
           },
           "exchange": {
             "rate": null,
@@ -4269,10 +4272,11 @@
             "conditions": []
           },
           "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null
+            "rate": 2.4,
+            "min_deposit": 1000000,
+            "note": "新資金定期存款優惠（100萬港元以上）",
+            "source": "bank",
+            "conditions": []
           },
           "exchange": {
             "rate": null,

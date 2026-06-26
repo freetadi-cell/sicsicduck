@@ -35,13 +35,15 @@ Example output:
 import re
 
 
-def parse(text, tables=None, html=None, usd_rates=None):
+def parse(text, tables=None, html=None, usd_rates=None, hkd_new_funds_rates=None):
     """Parse DBS HK online time deposit rates.
     
     Args:
-        text: Scraped text from HKD tab
+        text: Scraped text from main page
         usd_rates: Optional dict of USD existing_funds rates from USD tab
                    e.g. {'1m': 3.0, '3m': 3.45, ...}
+        hkd_new_funds_rates: Optional dict of HKD new_funds rates from 新資金 tab
+                            e.g. {'1m': 2.0, '3m': 2.5, ...}
     """
     if not text:
         return None
@@ -93,7 +95,19 @@ def parse(text, tables=None, html=None, usd_rates=None):
             nf_usd[p1] = float(m.group(4))
             nf_usd[p2] = float(m.group(4))
     
-    # === Build rates with NEW STRUCTURE ===
+    # Merge HKD new funds base rates from 新資金 tab
+    # Promo rates (nf_hkd) should override base new_funds rates for 4m/6m
+    if hkd_new_funds_rates:
+        for period, rate in hkd_new_funds_rates.items():
+            if period not in nf_hkd:
+                nf_hkd[period] = rate
+    
+    # Merge HKD new funds base rates from 新資金 tab
+    # Promo rates (nf_hkd) should override base new_funds rates for 4m/6m
+    if hkd_new_funds_rates:
+        for period, rate in hkd_new_funds_rates.items():
+            if period not in nf_hkd:
+                nf_hkd[period] = rate
     if base_hkd or nf_hkd:
         rates['hkd'] = {}
         
