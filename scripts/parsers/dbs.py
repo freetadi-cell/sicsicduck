@@ -74,22 +74,25 @@ def parse(text, tables=None, html=None):
     if nf_idx < 0:
         nf_idx = text.find('新資金定期存款優惠')
     if nf_idx >= 0:
-        nf_section = text[nf_idx:nf_idx + 800]
-        # Extract headline rates: 港元 高達 3.00%
-        hkd_nf_match = re.search(r'港元\s*高達\s*(\d+\.\d+)%', nf_section)
-        if hkd_nf_match:
-            rate = float(hkd_nf_match.group(1))
-            # Find the period table: 4或6個月  3.00%  4.00%
-            period_match = re.search(r'(\d+)或(\d+)個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', nf_section)
-            if period_match:
-                p1 = _days_to_period(int(period_match.group(1)) * 30)
-                p2 = _days_to_period(int(period_match.group(2)) * 30)
-                nf_hkd[p1] = float(period_match.group(3))
-                nf_hkd[p2] = float(period_match.group(3))
-                nf_usd[p1] = float(period_match.group(4))
-                nf_usd[p2] = float(period_match.group(4))
-            else:
-                # If no period table, assume the headline rate applies to some period
+        nf_section = text[nf_idx:nf_idx + 1000]
+        
+        # Clean up whitespace (including newlines)
+        nf_section_clean = re.sub(r'\s+', ' ', nf_section)
+        
+        # Find the period table: 4或6個月  3.00%  4.00%
+        period_match = re.search(r'(\d+)或(\d+)個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', nf_section_clean)
+        if period_match:
+            p1 = _days_to_period(int(period_match.group(1)) * 30)
+            p2 = _days_to_period(int(period_match.group(2)) * 30)
+            nf_hkd[p1] = float(period_match.group(3))
+            nf_hkd[p2] = float(period_match.group(3))
+            nf_usd[p1] = float(period_match.group(4))
+            nf_usd[p2] = float(period_match.group(4))
+        else:
+            # Try headline rates as fallback
+            hkd_nf_match = re.search(r'港元\s*高達\s*(\d+\.\d+)%', nf_section_clean)
+            if hkd_nf_match:
+                # Without specific period, can't use this rate
                 pass
 
     # Fallback: try data-rate attrs in HTML
