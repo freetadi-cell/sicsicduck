@@ -4408,10 +4408,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": 0.001,
+            "rate": 2.0,
             "min_deposit": 50000,
-            "note": "定期存款牌價利率（需登入網上理財查看）",
-            "source": "estimate",
+            "note": "網上現有資金定存優惠利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -4432,10 +4432,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": 0.001,
+            "rate": 2.0,
             "min_deposit": 50000,
-            "note": "定期存款牌價利率（需登入網上理財查看）",
-            "source": "estimate",
+            "note": "網上現有資金定存優惠利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -4456,10 +4456,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": 0.001,
+            "rate": 2.5,
             "min_deposit": 50000,
-            "note": "定期存款牌價利率（需登入網上理財查看）",
-            "source": "estimate",
+            "note": "網上現有資金定存優惠利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -4480,10 +4480,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": 0.001,
+            "rate": 2.45,
             "min_deposit": 50000,
-            "note": "定期存款牌價利率（需登入網上理財查看）",
-            "source": "estimate",
+            "note": "網上現有資金定存優惠利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -4504,10 +4504,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": 0.001,
+            "rate": 2.4,
             "min_deposit": 50000,
-            "note": "定期存款牌價利率（需登入網上理財查看）",
-            "source": "estimate",
+            "note": "網上現有資金定存優惠利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -4530,7 +4530,7 @@
           "existing_funds": {
             "rate": 2.45,
             "min_deposit": 50000,
-            "note": "網上定存特惠年利率",
+            "note": "網上現有資金定存優惠利率",
             "source": "bank",
             "conditions": []
           },
@@ -4551,10 +4551,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": 0.001,
+            "rate": 2.4,
             "min_deposit": 50000,
-            "note": "定期存款牌價利率（需登入網上理財查看）",
-            "source": "estimate",
+            "note": "網上現有資金定存優惠利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
