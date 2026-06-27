@@ -132,6 +132,7 @@ BANK_CONFIG = {
     'pao': {
         'name': '平安數字銀行',
         'url': 'https://www.pingandb.com/tc/retail-td-newfund.html',
+        'card_rate_url': 'https://www.pingandb.com/tc/retail-savings.html',
         'cloudflare_bypass': True,
     },
     'welab': {

@@ -77,19 +77,33 @@ def parse(text, tables=None, html=None):
                 hkd_std[period] = float(m.group(1))
                 usd_std[period] = float(m.group(2))
 
-        # If we already have new fund rates, store standard as any_funds_rate
+        # If we already have new fund rates, merge existing_funds
         if 'hkd' in rates:
             for period, rate in hkd_std.items():
                 if period in rates['hkd'] and isinstance(rates['hkd'][period], dict):
-                    rates['hkd'][period]['any_funds_rate'] = rate
+                    rates['hkd'][period]['existing_funds'] = {'rate': rate, 'min_deposit': 1, 'note': '定期存款年利率'}
         elif hkd_std:
-            rates['hkd'] = hkd_std
+            rates['hkd'] = {}
+            for period, rate in hkd_std.items():
+                rates['hkd'][period] = {
+                    'new_funds': None,
+                    'existing_funds': {'rate': rate, 'min_deposit': 1, 'note': '定期存款年利率'},
+                    'exchange': None,
+                }
             rates['note'] = '定期存款年利率'
+            rates['_use_new_structure'] = True
 
         if usd_std:
-            rates['usd'] = usd_std
+            rates['usd'] = {}
+            for period, rate in usd_std.items():
+                rates['usd'][period] = {
+                    'new_funds': None,
+                    'existing_funds': {'rate': rate, 'min_deposit': 1, 'note': '定期存款年利率'},
+                    'exchange': None,
+                }
             if 'note' not in rates:
                 rates['note'] = '定期存款年利率'
+            rates['_use_new_structure'] = True
 
     if rates and ('hkd' in rates or 'usd' in rates):
         return rates
