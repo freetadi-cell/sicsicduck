@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T22:42:05.015576+08:00",
+  "last_updated": "2026-06-27T08:34:57.301647+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -972,10 +972,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -999,7 +999,7 @@
           },
           "existing_funds": {
             "rate": 0.1,
-            "min_deposit": null,
+            "min_deposit": 10000,
             "note": "定期存款牌價利率",
             "source": "bank",
             "conditions": []
@@ -1024,10 +1024,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -1042,19 +1042,47 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.4,
-          "min_deposit": null,
-          "note": "新資金定期存款優惠（網上理財）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "existing_funds": {
+            "rate": 0.125,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "new_funds": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null
+          },
           "conditions": []
         },
         "6m": {
-          "rate": 2.2,
-          "min_deposit": null,
-          "note": "新資金定期存款優惠（網上理財）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "existing_funds": {
+            "rate": 0.125,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "new_funds": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null
+          },
           "conditions": []
         },
         "12m": {
@@ -1067,7 +1095,7 @@
           },
           "existing_funds": {
             "rate": 0.15,
-            "min_deposit": null,
+            "min_deposit": 10000,
             "note": "定期存款牌價利率",
             "source": "bank",
             "conditions": []
@@ -1118,10 +1146,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -2052,7 +2080,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.95,
+          "rate": 3.1,
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
@@ -2060,7 +2088,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 2.95,
+          "rate": 3.1,
           "min_deposit": 500000,
           "note": "新資金/Fubon+手機App定存利率（取最高）",
           "source": "bank",
@@ -4130,7 +4158,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "1m": {
           "existing_funds": {
@@ -4152,7 +4181,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "2m": {
           "existing_funds": {
@@ -4174,7 +4204,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "3m": {
           "existing_funds": {
@@ -4196,7 +4227,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "6m": {
           "new_funds": {
@@ -4218,7 +4250,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "12m": {
           "existing_funds": {
@@ -4239,7 +4272,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "4m": {
           "new_funds": {
@@ -4261,7 +4295,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "9m": {
           "existing_funds": {
@@ -4283,7 +4318,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         }
       },
       "usd": {
@@ -4310,7 +4346,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "1m": {
           "new_funds": {
@@ -4335,7 +4372,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "2m": {
           "new_funds": {
@@ -4360,7 +4398,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "3m": {
           "new_funds": {
@@ -4385,7 +4424,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "6m": {
           "new_funds": {
@@ -4407,7 +4447,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "12m": {
           "new_funds": {
@@ -4432,7 +4473,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "4m": {
           "new_funds": {
@@ -4454,7 +4496,8 @@
             "min_deposit": null,
             "note": null,
             "source": null
-          }
+          },
+          "conditions": []
         },
         "9m": {
           "new_funds": {
@@ -4479,7 +4522,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         }
       },
       "cny": {
@@ -4506,7 +4550,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "1m": {
           "new_funds": {
@@ -4531,7 +4576,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "2m": {
           "new_funds": {
@@ -4556,7 +4602,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "3m": {
           "new_funds": {
@@ -4581,7 +4628,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "4m": {
           "new_funds": {
@@ -4606,7 +4654,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "6m": {
           "new_funds": {
@@ -4631,7 +4680,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "9m": {
           "new_funds": {
@@ -4656,7 +4706,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         },
         "12m": {
           "new_funds": {
@@ -4681,7 +4732,8 @@
             "conditions": [
               "exchange"
             ]
-          }
+          },
+          "conditions": []
         }
       }
     },
