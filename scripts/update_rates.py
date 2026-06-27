@@ -53,6 +53,7 @@ BANK_CONFIG = {
     'hangseng': {
         'name': '恒生銀行',
         'url': 'https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html',
+        'card_rate_url': 'https://www.hangseng.com/zh-hk/personal/banking/rates/deposit-interest-rates/',
     },
     'sc': {
         'name': '渣打銀行',
@@ -1605,6 +1606,35 @@ def update_rates():
                     
             except Exception as e:
                 logger.warning(f"  [{parser_key}] agent-browser DBS extraction error: {e}")
+
+        # ---- Hang Seng card rate extraction ----
+        if parser_key == 'hangseng' and cfg.get('card_rate_url'):
+            logger.info(f"  [{parser_key}] Extracting card rate (existing_funds) for {bank_name}...")
+            try:
+                card_url = cfg['card_rate_url']
+                card_text, card_tables, card_html = _scrape_with_agent(
+                    card_url,
+                    wait=3,
+                    cloudflare_bypass=False,
+                    get_html=False
+                )
+                if card_text:
+                    # Parse card rate
+                    card_result = parse_fn(card_text, card_tables, html=card_html)
+                    if card_result and card_result.get('hkd'):
+                        # Merge card rate into result
+                        if result is None:
+                            result = {}
+                        if 'hkd' not in result:
+                            result['hkd'] = {}
+                        for period, data in card_result.get('hkd', {}).items():
+                            if isinstance(data, dict) and 'existing_funds' in data:
+                                if period not in result['hkd']:
+                                    result['hkd'][period] = {}
+                                result['hkd'][period]['existing_funds'] = data['existing_funds']
+                        logger.info(f"  ✓ Got Hang Seng card rate: {[p for p in card_result.get('hkd', {}).keys() if card_result['hkd'][p].get('existing_funds', {}).get('rate') is not None]}")
+            except Exception as e:
+                logger.warning(f"  [{parser_key}] Card rate extraction error: {e}")
 
         # ---- Phase 3: Apply bank website result ----
         if result:
