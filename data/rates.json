@@ -2178,65 +2178,143 @@
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
             "conditions": []
           },
           "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
             "rate": null,
             "min_deposit": null,
             "note": null,
             "source": null,
             "conditions": []
           },
-          "exchange": {
-            "rate": 6.88,
-            "min_deposit": 10000,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "exchange"
-            ]
-          },
           "conditions": []
         },
         "1m": {
-          "rate": 2.45,
-          "min_deposit": 500000,
-          "note": "新資金/Fubon+手機App定存利率（取最高）",
-          "source": "bank",
-          "fund_type": "existing_funds",
+          "new_funds": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "2m": {
-          "rate": 2.55,
-          "min_deposit": 500000,
-          "note": "新資金/Fubon+手機App定存利率（取最高）",
-          "source": "bank",
-          "fund_type": "existing_funds",
+          "new_funds": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "3m": {
-          "rate": 2.95,
-          "min_deposit": 500000,
-          "note": "新資金/Fubon+手機App定存利率（取最高）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.95,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "6m": {
-          "rate": 3.1,
-          "min_deposit": 500000,
-          "note": "新資金/Fubon+手機App定存利率（取最高）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 3.1,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.05,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "12m": {
-          "rate": 3.1,
-          "min_deposit": 500000,
-          "note": "新資金/Fubon+手機App定存利率（取最高）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 3.1,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "4m": {
@@ -2616,14 +2694,14 @@
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -2631,27 +2709,23 @@
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
           },
           "conditions": []
         },
         "1m": {
           "new_funds": {
-            "rate": 1.7,
-            "min_deposit": 50000,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "new_account"
-            ]
-          },
-          "existing_funds": {
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -2659,27 +2733,23 @@
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
           },
           "conditions": []
         },
         "2m": {
           "new_funds": {
-            "rate": 2.3,
-            "min_deposit": 50000,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "new_account"
-            ]
-          },
-          "existing_funds": {
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -2687,26 +2757,56 @@
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
           },
           "conditions": []
         },
         "3m": {
-          "rate": 3.0,
-          "min_deposit": 50000,
-          "note": "全新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 3.0,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "6m": {
-          "rate": 2.9,
-          "min_deposit": 50000,
-          "note": "全新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.9,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.05,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "12m": {
@@ -2714,26 +2814,22 @@
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
             "conditions": []
           },
           "existing_funds": {
-            "rate": 2.65,
-            "min_deposit": 50000,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "new_account"
-            ]
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
           },
           "exchange": {
             "rate": null,
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
           },
           "conditions": []
         },
@@ -3678,39 +3774,13 @@
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": []
-          },
-          "exchange": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": [
-              "exchange"
-            ]
-          },
-          "conditions": []
-        },
-        "1m": {
-          "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": []
-          },
-          "existing_funds": {
-            "rate": 0.01,
+            "rate": 0.001,
             "min_deposit": 10000,
-            "note": "定期存款利率",
+            "note": "定期存款牌價利率",
             "source": "bank",
             "conditions": []
           },
@@ -3719,27 +3789,47 @@
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
+          },
+          "conditions": []
+        },
+        "1m": {
+          "new_funds": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
           },
           "conditions": []
         },
         "2m": {
           "new_funds": {
-            "rate": 2.5,
-            "min_deposit": 10000,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "upgrade_wealth"
-            ]
-          },
-          "existing_funds": {
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -3747,35 +3837,23 @@
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
           },
           "conditions": []
         },
         "3m": {
-          "rate": 2.9,
-          "min_deposit": null,
-          "note": "inMotion新資金定期存款特惠年利率",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "6m": {
           "new_funds": {
             "rate": 2.9,
-            "min_deposit": 10000,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "upgrade_wealth"
-            ]
-          },
-          "existing_funds": {
-            "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.01,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -3783,27 +3861,47 @@
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
+          },
+          "conditions": []
+        },
+        "6m": {
+          "new_funds": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.05,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
           },
           "conditions": []
         },
         "12m": {
           "new_funds": {
-            "rate": 2.95,
-            "min_deposit": 10000,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "upgrade_wealth"
-            ]
-          },
-          "existing_funds": {
             "rate": null,
             "min_deposit": null,
             "note": null,
-            "source": null,
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -3811,9 +3909,7 @@
             "min_deposit": null,
             "note": null,
             "source": null,
-            "conditions": [
-              "exchange"
-            ]
+            "conditions": []
           },
           "conditions": []
         },
