@@ -18,10 +18,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.001,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
             "conditions": []
           },
           "exchange": {
@@ -45,10 +45,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.001,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
             "conditions": []
           },
           "exchange": {
@@ -72,10 +72,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.001,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
             "conditions": []
           },
           "exchange": {
@@ -90,19 +90,51 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.395,
-          "min_deposit": 10000,
-          "note": "滙豐定期存款優惠（新資金）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.395,
+            "min_deposit": 10000,
+            "note": "滙豐定期存款優惠（新資金）",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.001,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "6m": {
-          "rate": 2.195,
-          "min_deposit": 10000,
-          "note": "滙豐定期存款優惠（新資金）",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.195,
+            "min_deposit": 10000,
+            "note": "滙豐定期存款優惠（新資金）",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.001,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "12m": {
@@ -114,10 +146,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.001,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
             "conditions": []
           },
           "exchange": {
@@ -166,10 +198,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.001,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率（估計）",
+            "source": "estimate",
             "conditions": []
           },
           "exchange": {
@@ -530,10 +562,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -556,10 +588,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -582,10 +614,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -600,27 +632,75 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.4,
-          "min_deposit": 10000,
-          "note": "網上銀行新資金特優定期存款",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.4,
+            "min_deposit": 10000,
+            "note": "網上銀行新資金特優定期存款",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.125,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "6m": {
-          "rate": 2.4,
-          "min_deposit": 10000,
-          "note": "網上銀行新資金特優定期存款",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.4,
+            "min_deposit": 10000,
+            "note": "網上銀行新資金特優定期存款",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.125,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "12m": {
-          "rate": 2.5,
-          "min_deposit": 10000,
-          "note": "網上銀行新資金特優定期存款",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.5,
+            "min_deposit": 10000,
+            "note": "網上銀行新資金特優定期存款",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "4m": {
@@ -658,10 +738,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -1580,10 +1660,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -1606,10 +1686,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -1632,10 +1712,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.1,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {
@@ -1650,27 +1730,75 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.4,
-          "min_deposit": null,
-          "note": "網上新資金定期存款特惠年利率",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.4,
+            "min_deposit": null,
+            "note": "網上新資金定期存款特惠年利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.125,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "6m": {
-          "rate": 2.4,
-          "min_deposit": null,
-          "note": "網上新資金定期存款特惠年利率",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 2.4,
+            "min_deposit": null,
+            "note": "網上新資金定期存款特惠年利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.125,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "12m": {
-          "rate": 3.3,
-          "min_deposit": null,
-          "note": "網上新資金定期存款特惠年利率",
-          "source": "bank",
-          "fund_type": "new_funds",
+          "new_funds": {
+            "rate": 3.3,
+            "min_deposit": null,
+            "note": "網上新資金定期存款特惠年利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "existing_funds": {
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
+            "conditions": []
+          },
+          "exchange": {
+            "rate": null,
+            "min_deposit": null,
+            "note": null,
+            "source": null,
+            "conditions": []
+          },
           "conditions": []
         },
         "4m": {
@@ -1708,10 +1836,10 @@
             "conditions": []
           },
           "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
+            "rate": 0.15,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank",
             "conditions": []
           },
           "exchange": {

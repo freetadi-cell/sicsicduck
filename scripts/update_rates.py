@@ -49,6 +49,7 @@ BANK_CONFIG = {
     'bochk': {
         'name': '中銀香港',
         'url': 'https://www.bochk.com/m/tc/deposits/promotion/timedeposits.html',
+        'card_rate_url': 'https://www.bochk.com/whk/rates/depositRates/depositRates-input.action?lang=hk',
     },
     'hangseng': {
         'name': '恒生銀行',
@@ -58,6 +59,7 @@ BANK_CONFIG = {
     'sc': {
         'name': '渣打銀行',
         'url': 'https://www.sc.com/hk/deposits/online-time-deposit/',
+        'card_rate_url': 'https://www.sc.com/hk/deposits/board-rates/',
     },
     'dbs': {
         'name': '星展銀行',
@@ -1607,8 +1609,8 @@ def update_rates():
             except Exception as e:
                 logger.warning(f"  [{parser_key}] agent-browser DBS extraction error: {e}")
 
-        # ---- Hang Seng card rate extraction ----
-        if parser_key == 'hangseng' and cfg.get('card_rate_url'):
+        # ---- Card rate (existing_funds) extraction for banks ----
+        if cfg.get('card_rate_url') and parse_fn:
             logger.info(f"  [{parser_key}] Extracting card rate (existing_funds) for {bank_name}...")
             try:
                 card_url = cfg['card_rate_url']
@@ -1621,18 +1623,21 @@ def update_rates():
                 if card_text:
                     # Parse card rate
                     card_result = parse_fn(card_text, card_tables, html=card_html)
-                    if card_result and card_result.get('hkd'):
+                    if card_result and (card_result.get('hkd') or card_result.get('usd')):
                         # Merge card rate into result
                         if result is None:
                             result = {}
-                        if 'hkd' not in result:
-                            result['hkd'] = {}
-                        for period, data in card_result.get('hkd', {}).items():
-                            if isinstance(data, dict) and 'existing_funds' in data:
-                                if period not in result['hkd']:
-                                    result['hkd'][period] = {}
-                                result['hkd'][period]['existing_funds'] = data['existing_funds']
-                        logger.info(f"  ✓ Got Hang Seng card rate: {[p for p in card_result.get('hkd', {}).keys() if card_result['hkd'][p].get('existing_funds', {}).get('rate') is not None]}")
+                        for currency in ['hkd', 'usd', 'cny']:
+                            if currency in card_result:
+                                if currency not in result:
+                                    result[currency] = {}
+                                for period, data in card_result.get(currency, {}).items():
+                                    if isinstance(data, dict) and 'existing_funds' in data:
+                                        if period not in result[currency]:
+                                            result[currency][period] = {}
+                                        if 'existing_funds' not in result[currency][period]:
+                                            result[currency][period]['existing_funds'] = data['existing_funds']
+                        logger.info(f"  ✓ Got {parser_key} card rate: {list(card_result.keys())}")
             except Exception as e:
                 logger.warning(f"  [{parser_key}] Card rate extraction error: {e}")
 

@@ -7,6 +7,7 @@ def parse(text, tables=None, html=None):
     Page has:
     1. 新資金特優定期存款 - HKD/USD/RMB for 3m, 6m, 7m, 12m
     2. 特優人民幣及外幣定期存款優惠 - 兌換 rates for 7d, 1m
+    3. 牌價利率 - https://www.bochk.com/whk/rates/depositRates/depositRates-input.action?lang=hk
     """
     if not text:
         return None
@@ -14,7 +15,48 @@ def parse(text, tables=None, html=None):
     rates = {}
     note = '網上銀行新資金特優定期存款'
     
-    # Find the rate table section
+    # Check if this is card rate page
+    is_card_rate = '港元定期存款利率表' in text or '牌價' in text or '存款利率表' in text
+    
+    if is_card_rate:
+        # Parse card rate (existing_funds) - 牌價利率
+        rates['hkd'] = {}
+        rates['usd'] = {}
+        
+        # Snapshot format: row "1 個月 0.10000% 0.10000% 0.10000%"
+        periods = {
+            '1w': '7 天', '2w': '14 天',
+            '1m': '1 個月', '2m': '2 個月', '3m': '3 個月', '6m': '6 個月',
+            '9m': '9 個月', '12m': '12 個月'
+        }
+        
+        for period, label in periods.items():
+            # Try snapshot format: row "1 個月 0.10000% 0.10000% 0.10000%"
+            m = re.search(rf'row "{label}\s+(\d+\.\d+)%', text)
+            if m:
+                rate = float(m.group(1))
+                rates['hkd'][period] = {
+                    'new_funds': {'rate': None, 'min_deposit': None, 'note': None},
+                    'existing_funds': {'rate': rate, 'min_deposit': 10000, 'note': '定期存款牌價利率', 'source': 'bank'},
+                    'exchange': {'rate': None, 'min_deposit': None, 'note': None},
+                }
+            # Try text format: 1 個月 0.10000%
+            elif f'{label}' in text:
+                m = re.search(rf'{label}\s+(\d+\.\d+)%', text)
+                if m:
+                    rate = float(m.group(1))
+                    rates['hkd'][period] = {
+                        'new_funds': {'rate': None, 'min_deposit': None, 'note': None},
+                        'existing_funds': {'rate': rate, 'min_deposit': 10000, 'note': '定期存款牌價利率', 'source': 'bank'},
+                        'exchange': {'rate': None, 'min_deposit': None, 'note': None},
+                    }
+        
+        if rates.get('hkd'):
+            rates['note'] = '定期存款牌價利率'
+            rates['_use_new_structure'] = True
+            return rates
+    
+    # Find the rate table section (new funds promotion)
     table_idx = text.find('3 個月\t6 個月\t12 個月')
     if table_idx < 0:
         table_idx = text.find('3 个 月\t6 个 月\t12 个 月')
