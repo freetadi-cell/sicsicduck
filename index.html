@@ -1048,9 +1048,8 @@
         const unitMap = {hkd: '港元', usd: '美元', cny: '人民幣'};
         document.getElementById('calcCurrency').textContent = unitMap[currentCurrency] || '港元';
         
-        const periodMap = {1w:0.25, 1m:1, 2m:2, 3m:3, 4m:4, 6m:6, 9m:9, 12m:12};
-        const periodKey = period.replace('個月', 'm').replace('星期', 'w');
-        document.getElementById('calcMonths').value = periodMap[periodKey] || 3;
+        const periodMap = {1w:0.25, '1星期':0.25, 1m:1, '1個月':1, 2m:2, '2個月':2, 3m:3, '3個月':3, 4m:4, '4個月':4, 6m:6, '6個月':6, 9m:9, '9個月':9, 12m:12, '12個月':12};
+        document.getElementById('calcMonths').value = periodMap[period] || periodMap[period.replace('個月', 'm')] || 3;
         
         document.getElementById('calcOverlay').classList.add('show');
         calculate();
@@ -1086,6 +1085,20 @@
     
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeCalculator();
+    });
+    
+    // Click handler for rate cells with data attributes
+    document.addEventListener('click', function(e) {
+        const cell = e.target.closest('.rate-cell-clickable');
+        if (cell) {
+            const bank = cell.dataset.bank;
+            const rate = parseFloat(cell.dataset.rate);
+            const period = cell.dataset.period;
+            const currency = cell.dataset.currency;
+            if (bank && rate) {
+                openCalculator(bank, rate, period, currency);
+            }
+        }
     });
     
     // Expose to global
@@ -1462,7 +1475,9 @@ function renderTable() {
                         '9m': '9個月', '12m': '12個月'
                     };
                     const pName = periodNames[period] || period;
-                    html += `<td class="rate-cell ${cls} rate-cell-clickable" onclick="openCalcModal('${bank.name}', ${displayRate}, '${pName}', '${currentCurrency}')">
+                    // Use data attributes to avoid quote escaping issues
+                    const bankEsc = bank.name.replace(/"/g, '&quot;');
+                    html += `<td class="rate-cell ${cls} rate-cell-clickable" data-bank="${bankEsc}" data-rate="${displayRate}" data-period="${pName}" data-currency="${currentCurrency}">
                         <div class="rate-value">
                             ${displayRate.toFixed(2)}<span class="pct">%</span>${srcMark}
                         </div>
