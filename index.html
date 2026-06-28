@@ -1039,7 +1039,6 @@
     let currentCurrency = 'hkd';
     
     function openCalculator(bank, rate, period, currency) {
-        console.log('Opening calculator:', bank, rate, period, currency);
         currentCurrency = currency || 'hkd';
         document.getElementById('calcBank').textContent = bank;
         document.getElementById('calcPeriod').textContent = period;
@@ -1088,23 +1087,18 @@
         if (e.key === 'Escape') closeCalculator();
     });
     
-    // Click handler for rate cells - delegated event on table
-    document.getElementById('rateTable').addEventListener('click', function(e) {
-        console.log('Table click detected', e.target);
-        // Find the clicked cell
+    // Click handler for rate cells - delegated event on table body
+    document.getElementById('tableBody').addEventListener('click', function(e) {
         let cell = e.target;
-        // Traverse up to find TD with rate-cell-clickable class
+        // Traverse up to find TD
         while (cell && cell.tagName !== 'TD') {
             cell = cell.parentElement;
         }
-        console.log('Found cell:', cell);
         if (cell && cell.classList.contains('rate-cell-clickable')) {
-            console.log('Cell has rate-cell-clickable class');
             const bank = cell.getAttribute('data-bank');
             const rate = parseFloat(cell.getAttribute('data-rate'));
             const period = cell.getAttribute('data-period');
             const currency = cell.getAttribute('data-currency');
-            console.log('Data:', bank, rate, period, currency);
             if (bank && rate) {
                 openCalculator(bank, rate, period, currency);
             }
@@ -1485,9 +1479,8 @@ function renderTable() {
                         '9m': '9個月', '12m': '12個月'
                     };
                     const pName = periodNames[period] || period;
-                    // Use onclick attribute directly
-                    const bankSafe = bank.name.replace(/'/g, "\'").replace(/"/g, '\"');
-                    html += `<td class="rate-cell ${cls} rate-cell-clickable" onclick="openCalcModal('${bankSafe}', ${displayRate}, '${pName}', '${currentCurrency}')">
+                    // Store data in attributes, use event delegation
+                    html += `<td class="rate-cell ${cls} rate-cell-clickable" data-bank="${bank.name}" data-rate="${displayRate}" data-period="${pName}" data-currency="${currentCurrency}">
                         <div class="rate-value">
                             ${displayRate.toFixed(2)}<span class="pct">%</span>${srcMark}
                         </div>
