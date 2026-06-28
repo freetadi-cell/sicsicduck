@@ -708,6 +708,122 @@
             .table-container { overflow-x: auto; }
             .rate-table { min-width: 700px; }
         }
+
+        /* Calculator Modal Styles */
+        .calc-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .calc-overlay.show {
+            display: flex;
+        }
+        .calc-modal {
+            background: linear-gradient(135deg, #FFFDE7, #FFF9C4);
+            border-radius: 20px;
+            padding: 24px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .calc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .calc-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #F57F17;
+        }
+        .calc-close-btn {
+            width: 28px;
+            height: 28px;
+            border: none;
+            background: white;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .calc-info {
+            background: white;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+        .calc-info-bank {
+            font-weight: 600;
+            color: #424242;
+        }
+        .calc-info-period {
+            font-size: 12px;
+            color: #757575;
+        }
+        .calc-input-row {
+            margin-bottom: 12px;
+        }
+        .calc-label {
+            font-size: 13px;
+            color: #616161;
+            margin-bottom: 4px;
+        }
+        .calc-input-wrap {
+            display: flex;
+            align-items: center;
+        }
+        .calc-input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #FDD835;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .calc-input:focus {
+            outline: none;
+            border-color: #F9A825;
+        }
+        .calc-unit {
+            margin-left: 8px;
+            color: #757575;
+        }
+        .calc-result {
+            background: linear-gradient(135deg, #FBC02D, #F9A825);
+            color: white;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            margin-top: 16px;
+        }
+        .calc-result-label {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        .calc-result-value {
+            font-size: 28px;
+            font-weight: 800;
+            margin-top: 4px;
+        }
+        .calc-result-total {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+        .rate-cell-clickable {
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .rate-cell-clickable:hover {
+            background: #FFF9C4 !important;
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -869,6 +985,113 @@
     </div><!-- end main-content -->
 </div><!-- end layout -->
 
+<!-- Calculator Modal -->
+<div class="calc-overlay" id="calcOverlay">
+    <div class="calc-modal">
+        <div class="calc-header">
+            <div class="calc-title">💰 定存收益計算機</div>
+            <button class="calc-close-btn" id="calcCloseBtn">×</button>
+        </div>
+        <div class="calc-info">
+            <div class="calc-info-bank" id="calcBank">--</div>
+            <div class="calc-info-period" id="calcPeriod">--</div>
+        </div>
+        <div class="calc-input-row">
+            <div class="calc-label">本金</div>
+            <div class="calc-input-wrap">
+                <input type="number" class="calc-input" id="calcPrincipal" value="100000">
+                <span class="calc-unit" id="calcCurrency">港元</span>
+            </div>
+        </div>
+        <div class="calc-input-row">
+            <div class="calc-label">年利率</div>
+            <div class="calc-input-wrap">
+                <input type="number" class="calc-input" id="calcRate" value="3.00" step="0.01">
+                <span class="calc-unit">%</span>
+            </div>
+        </div>
+        <div class="calc-input-row">
+            <div class="calc-label">存款期</div>
+            <div class="calc-input-wrap">
+                <select class="calc-input" id="calcMonths">
+                    <option value="0.25">1星期</option>
+                    <option value="1">1個月</option>
+                    <option value="2">2個月</option>
+                    <option value="3" selected>3個月</option>
+                    <option value="4">4個月</option>
+                    <option value="6">6個月</option>
+                    <option value="9">9個月</option>
+                    <option value="12">12個月</option>
+                </select>
+            </div>
+        </div>
+        <div class="calc-result">
+            <div class="calc-result-label">預計利息</div>
+            <div class="calc-result-value" id="calcInterest">HK$ 750.00</div>
+            <div class="calc-result-total">本金+利息 = <span id="calcTotal">HK$ 100,750.00</span></div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Calculator logic
+(function() {
+    let currentCurrency = 'hkd';
+    
+    function openCalculator(bank, rate, period, currency) {
+        currentCurrency = currency || 'hkd';
+        document.getElementById('calcBank').textContent = bank;
+        document.getElementById('calcPeriod').textContent = period;
+        document.getElementById('calcRate').value = rate.toFixed(2);
+        document.getElementById('calcPrincipal').value = 100000;
+        
+        const unitMap = {hkd: '港元', usd: '美元', cny: '人民幣'};
+        document.getElementById('calcCurrency').textContent = unitMap[currentCurrency] || '港元';
+        
+        const periodMap = {1w:0.25, 1m:1, 2m:2, 3m:3, 4m:4, 6m:6, 9m:9, 12m:12};
+        const periodKey = period.replace('個月', 'm').replace('星期', 'w');
+        document.getElementById('calcMonths').value = periodMap[periodKey] || 3;
+        
+        document.getElementById('calcOverlay').classList.add('show');
+        calculate();
+    }
+    
+    function closeCalculator() {
+        document.getElementById('calcOverlay').classList.remove('show');
+    }
+    
+    function calculate() {
+        const principal = parseFloat(document.getElementById('calcPrincipal').value) || 0;
+        const rate = parseFloat(document.getElementById('calcRate').value) || 0;
+        const months = parseFloat(document.getElementById('calcMonths').value) || 3;
+        
+        const interest = principal * (rate / 100) * (months / 12);
+        const total = principal + interest;
+        
+        const symbols = {hkd: 'HK$', usd: 'US$', cny: 'CN¥'};
+        const sym = symbols[currentCurrency] || 'HK$';
+        
+        document.getElementById('calcInterest').textContent = sym + ' ' + interest.toFixed(2);
+        document.getElementById('calcTotal').textContent = sym + ' ' + total.toFixed(2);
+    }
+    
+    // Event listeners
+    document.getElementById('calcCloseBtn').addEventListener('click', closeCalculator);
+    document.getElementById('calcOverlay').addEventListener('click', function(e) {
+        if (e.target === this) closeCalculator();
+    });
+    document.getElementById('calcPrincipal').addEventListener('input', calculate);
+    document.getElementById('calcRate').addEventListener('input', calculate);
+    document.getElementById('calcMonths').addEventListener('change', calculate);
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeCalculator();
+    });
+    
+    // Expose to global
+    window.openCalcModal = openCalculator;
+})();
+</script>
 <script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-database-compat.js"></script>
 <script>
@@ -1233,7 +1456,13 @@ function renderTable() {
                     else if (displayRate >= avgRates[period]) cls = 'good';
 
                     const srcMark = source === 'moneyhero' ? ' <span class="src-mark">*</span>' : '';
-                    html += `<td class="rate-cell ${cls}">
+                    const periodNames = {
+                        '1w': '1星期', '1m': '1個月', '2m': '2個月',
+                        '3m': '3個月', '4m': '4個月', '6m': '6個月',
+                        '9m': '9個月', '12m': '12個月'
+                    };
+                    const pName = periodNames[period] || period;
+                    html += `<td class="rate-cell ${cls} rate-cell-clickable" onclick="openCalcModal('${bank.name}', ${displayRate}, '${pName}', '${currentCurrency}')">
                         <div class="rate-value">
                             ${displayRate.toFixed(2)}<span class="pct">%</span>${srcMark}
                         </div>
