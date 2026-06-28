@@ -1039,6 +1039,7 @@
     let currentCurrency = 'hkd';
     
     function openCalculator(bank, rate, period, currency) {
+        console.log('Opening calculator:', bank, rate, period, currency);
         currentCurrency = currency || 'hkd';
         document.getElementById('calcBank').textContent = bank;
         document.getElementById('calcPeriod').textContent = period;
@@ -1048,8 +1049,8 @@
         const unitMap = {hkd: '港元', usd: '美元', cny: '人民幣'};
         document.getElementById('calcCurrency').textContent = unitMap[currentCurrency] || '港元';
         
-        const periodMap = {1w:0.25, '1星期':0.25, 1m:1, '1個月':1, 2m:2, '2個月':2, 3m:3, '3個月':3, 4m:4, '4個月':4, 6m:6, '6個月':6, 9m:9, '9個月':9, 12m:12, '12個月':12};
-        document.getElementById('calcMonths').value = periodMap[period] || periodMap[period.replace('個月', 'm')] || 3;
+        const periodMap = {'1星期':0.25, '1個月':1, '2個月':2, '3個月':3, '4個月':4, '6個月':6, '9個月':9, '12個月':12};
+        document.getElementById('calcMonths').value = periodMap[period] || 3;
         
         document.getElementById('calcOverlay').classList.add('show');
         calculate();
@@ -1074,7 +1075,7 @@
         document.getElementById('calcTotal').textContent = sym + ' ' + total.toFixed(2);
     }
     
-    // Event listeners
+    // Event listeners for calculator
     document.getElementById('calcCloseBtn').addEventListener('click', closeCalculator);
     document.getElementById('calcOverlay').addEventListener('click', function(e) {
         if (e.target === this) closeCalculator();
@@ -1087,21 +1088,30 @@
         if (e.key === 'Escape') closeCalculator();
     });
     
-    // Click handler for rate cells with data attributes
-    document.addEventListener('click', function(e) {
-        const cell = e.target.closest('.rate-cell-clickable');
-        if (cell) {
-            const bank = cell.dataset.bank;
-            const rate = parseFloat(cell.dataset.rate);
-            const period = cell.dataset.period;
-            const currency = cell.dataset.currency;
+    // Click handler for rate cells - delegated event on table
+    document.getElementById('rateTable').addEventListener('click', function(e) {
+        console.log('Table click detected', e.target);
+        // Find the clicked cell
+        let cell = e.target;
+        // Traverse up to find TD with rate-cell-clickable class
+        while (cell && cell.tagName !== 'TD') {
+            cell = cell.parentElement;
+        }
+        console.log('Found cell:', cell);
+        if (cell && cell.classList.contains('rate-cell-clickable')) {
+            console.log('Cell has rate-cell-clickable class');
+            const bank = cell.getAttribute('data-bank');
+            const rate = parseFloat(cell.getAttribute('data-rate'));
+            const period = cell.getAttribute('data-period');
+            const currency = cell.getAttribute('data-currency');
+            console.log('Data:', bank, rate, period, currency);
             if (bank && rate) {
                 openCalculator(bank, rate, period, currency);
             }
         }
     });
     
-    // Expose to global
+    // Expose to global for onclick
     window.openCalcModal = openCalculator;
 })();
 </script>
@@ -1475,9 +1485,9 @@ function renderTable() {
                         '9m': '9個月', '12m': '12個月'
                     };
                     const pName = periodNames[period] || period;
-                    // Use data attributes to avoid quote escaping issues
-                    const bankEsc = bank.name.replace(/"/g, '&quot;');
-                    html += `<td class="rate-cell ${cls} rate-cell-clickable" data-bank="${bankEsc}" data-rate="${displayRate}" data-period="${pName}" data-currency="${currentCurrency}">
+                    // Use onclick attribute directly
+                    const bankSafe = bank.name.replace(/'/g, "\'").replace(/"/g, '\"');
+                    html += `<td class="rate-cell ${cls} rate-cell-clickable" onclick="openCalcModal('${bankSafe}', ${displayRate}, '${pName}', '${currentCurrency}')">
                         <div class="rate-value">
                             ${displayRate.toFixed(2)}<span class="pct">%</span>${srcMark}
                         </div>
