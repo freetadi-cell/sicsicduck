@@ -1623,6 +1623,18 @@ document.querySelectorAll('.rate-table thead th[data-sort]').forEach(th => {
 });
 
 // ===== Init =====
+// ===== Page View Counter =====
+const VIEW_START = 10097;
+let viewCount = parseInt(localStorage.getItem('pageViews') || VIEW_START);
+viewCount += 1;
+localStorage.setItem('pageViews', viewCount);
+
+// Display counter in footer
+const footerCounter = document.createElement('div');
+footerCounter.style.cssText = 'text-align:center;padding:16px;color:var(--gray-500);font-size:13px;';
+footerCounter.innerHTML = `瀏覽次數：<span style="font-weight:600;color:var(--gray-700)">${viewCount.toLocaleString()}</span>`;
+document.body.insertBefore(footerCounter, document.body.lastElementChild);
+
 loadData();
 </script>
 
