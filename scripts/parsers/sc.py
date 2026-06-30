@@ -58,7 +58,7 @@ def parse(text, tables=None, html=None):
             return rates
     
     # HKD section (new funds)
-hkd_idx = text.find('HKD Time Deposit')
+    hkd_idx = text.find('HKD Time Deposit')
     usd_idx = text.find('USD Time Deposit')
     rmb_idx = text.find('RMB Time Deposit')
     

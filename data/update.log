@@ -2758,3 +2758,193 @@
 2026-06-26 08:34:41,673 [INFO] Last updated: 2026-06-26T08:34:41.660604+08:00
 2026-06-26 08:34:41,673 [INFO] ==================================================
 2026-06-26 08:34:51,765 [INFO] Telegram notification sent
+2026-06-29 08:30:03,557 [INFO] ==================================================
+2026-06-29 08:30:03,557 [INFO] HK Deposit Rates Update
+2026-06-29 08:30:03,557 [INFO] Time: 2026-06-29 08:30:03
+2026-06-29 08:30:03,557 [INFO] ==================================================
+2026-06-29 08:30:03,561 [INFO] Processing 23 banks
+2026-06-29 08:30:03,893 [INFO]   HKET CNY article last updated 2026/06/09, older than 14 days, skipping
+2026-06-29 08:30:27,087 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates UPDATED (2 changed)
+2026-06-29 08:30:27,386 [INFO]   [hsbc] HKET article last updated 2026/06/26, not today or yesterday, skipping HKET
+2026-06-29 08:30:37,167 [INFO]   [bochk] Extracting card rate (existing_funds) for 中銀香港...
+2026-06-29 08:30:37,167 [WARNING]   [bochk] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-29 08:30:37,167 [INFO]   [bochk] ✓ 中銀香港: bank website rates UPDATED (3 changed)
+2026-06-29 08:30:37,413 [INFO]   [bochk] HKET article last updated 2026/06/26, not today or yesterday, skipping HKET
+2026-06-29 08:30:52,836 [WARNING]   [hangseng] Parser error for 恒生銀行: name 'note' is not defined
+2026-06-29 08:30:52,836 [INFO]   [hangseng] Extracting card rate (existing_funds) for 恒生銀行...
+2026-06-29 08:30:52,836 [WARNING]   [hangseng] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-29 08:30:52,836 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/hangseng.json
+2026-06-29 08:30:52,837 [INFO]   [hangseng] ⏳ Parser failed, saved raw data for 恒生銀行
+2026-06-29 08:30:53,054 [INFO] UHK second source: found 9 banks
+2026-06-29 08:31:07,775 [ERROR] Update failed: unexpected indent (sc.py, line 62)
+2026-06-29 13:27:28,061 [INFO] ==================================================
+2026-06-29 13:27:28,061 [INFO] HK Deposit Rates Update
+2026-06-29 13:27:28,062 [INFO] Time: 2026-06-29 13:27:28
+2026-06-29 13:27:28,062 [INFO] ==================================================
+2026-06-29 13:27:28,068 [INFO] Processing 23 banks
+2026-06-29 13:27:28,305 [INFO]   HKET CNY article last updated 2026/06/09, older than 14 days, skipping
+2026-06-29 13:27:33,855 [WARNING]   [hsbc] ✗ Failed to scrape 滙豐銀行
+2026-06-29 13:27:34,391 [INFO]   [hsbc] HKET: could not find article date for 滙豐銀行, skipping
+2026-06-29 13:27:34,750 [INFO] UHK second source: found 9 banks
+2026-06-29 13:27:34,750 [INFO]   → 滙豐銀行 using UHK fallback (unverified)
+2026-06-29 13:27:46,252 [INFO]   [bochk] Extracting card rate (existing_funds) for 中銀香港...
+2026-06-29 13:27:46,252 [WARNING]   [bochk] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-29 13:27:46,252 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/bochk.json
+2026-06-29 13:27:46,252 [INFO]   [bochk] ⏳ Parser failed, saved raw data for 中銀香港
+2026-06-29 13:27:49,588 [WARNING]   [hangseng] ✗ Failed to scrape 恒生銀行
+2026-06-29 13:27:49,846 [INFO]   [hangseng] HKET: could not find article date for 恒生銀行, skipping
+2026-06-29 13:28:00,640 [INFO]   [sc] Extracting card rate (existing_funds) for 渣打銀行...
+2026-06-29 13:28:00,640 [WARNING]   [sc] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-29 13:28:00,640 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-29 13:28:00,996 [INFO]   [sc] HKET: could not find article date for 渣打銀行, skipping
+2026-06-29 13:28:10,512 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/fubon.json
+2026-06-29 13:28:10,512 [INFO]   [fubon] ⏳ Parser failed, saved raw data for 富邦銀行
+2026-06-29 13:28:21,179 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/icbc.json
+2026-06-29 13:28:21,179 [INFO]   [icbc] ⏳ Parser failed, saved raw data for 工銀亞洲
+2026-06-29 13:28:21,179 [INFO]   → 工銀亞洲 using UHK fallback (pending extraction)
+2026-06-29 13:28:32,266 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/bea.json
+2026-06-29 13:28:32,266 [INFO]   [bea] ⏳ Parser failed, saved raw data for 東亞銀行
+2026-06-29 13:28:32,267 [INFO]   → 東亞銀行 using UHK fallback (pending extraction)
+2026-06-29 13:28:35,636 [WARNING]   [cncbi] ✗ Failed to scrape 中信銀行（國際）
+2026-06-29 13:28:35,836 [INFO]   [cncbi] HKET: could not find article date for 中信銀行（國際）, skipping
+2026-06-29 13:28:52,311 [INFO]   [dbs] Extracting USD and HKD new_funds rates with agent-browser...
+2026-06-29 13:28:57,302 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/dbs.json
+2026-06-29 13:28:57,302 [INFO]   [dbs] ⏳ Parser failed, saved raw data for 星展銀行
+2026-06-29 13:28:57,302 [INFO]   → 星展銀行 using UHK fallback (pending extraction)
+2026-06-29 13:28:57,302 [INFO]   [bocomm] 交通銀行: fetching PDF...
+2026-06-29 13:28:57,858 [INFO]   [bocomm] ✓ 交通銀行: PDF rates UPDATED (1 changed)
+2026-06-29 13:29:09,662 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/shacom.json
+2026-06-29 13:29:09,662 [INFO]   [shacom] ⏳ Parser failed, saved raw data for 上海商業銀行
+2026-06-29 13:29:20,836 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-06-29 13:29:21,267 [INFO]   [publicbank] HKET: could not find article date for 大眾銀行, skipping
+2026-06-29 13:29:30,525 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-29 13:29:30,526 [INFO]   [winglung] Scraping CNY page: https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp
+2026-06-29 13:29:39,411 [INFO]   [winglung] CNY from dedicated page: []
+2026-06-29 13:29:39,786 [INFO]   [winglung] HKET: could not find article date for 招商永隆, skipping
+2026-06-29 13:29:51,996 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-29 13:29:52,245 [INFO]   [chbank] HKET: could not find article date for 創興銀行, skipping
+2026-06-29 13:29:52,245 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-29 13:29:52,522 [INFO]   [fusion] HKET: could not find article date for 富融銀行, skipping
+2026-06-29 13:29:52,522 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-29 13:30:09,395 [INFO]   Clicked tab @e11 (美元)
+2026-06-29 13:30:14,081 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-29 13:30:14,081 [INFO]   [airstar] ✓ 象象銀行: bank website rates UPDATED (4 changed)
+2026-06-29 13:30:15,046 [INFO]   [airstar] HKET: could not find article date for 象象銀行, skipping
+2026-06-29 13:30:27,681 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-29 13:30:28,396 [INFO]   [za] HKET: could not find article date for 眾安銀行, skipping
+2026-06-29 13:30:38,481 [INFO]   [pao] Extracting card rate (existing_funds) for 平安數字銀行...
+2026-06-29 13:30:38,482 [WARNING]   [pao] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-29 13:30:38,482 [INFO]   [pao] ✓ 平安數字銀行: bank website rates unchanged (verified)
+2026-06-29 13:30:38,836 [INFO]   [pao] HKET: could not find article date for 平安數字銀行, skipping
+2026-06-29 13:30:50,202 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-29 13:30:50,606 [INFO]   [welab] HKET: could not find article date for 匯立銀行, skipping
+2026-06-29 13:31:05,209 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-29 13:31:05,556 [INFO]   [livi] HKET: could not find article date for 理慧銀行, skipping
+2026-06-29 13:31:16,388 [INFO]   [ant] ✓ 螞蟻銀行: bank website rates unchanged (verified)
+2026-06-29 13:31:16,736 [INFO]   [ant] HKET: could not find article date for 螞蟻銀行, skipping
+2026-06-29 13:31:26,143 [INFO]   [chiyu] ✓ 集友銀行: bank website rates UPDATED (15 changed)
+2026-06-29 13:31:26,143 [INFO]   [chiyu] CNY generic fallback: ['2m']
+2026-06-29 13:31:26,535 [INFO]   [chiyu] HKET: could not find article date for 集友銀行, skipping
+2026-06-29 13:31:26,535 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-29 13:31:26,896 [INFO]   [ncb] HKET: could not find article date for 南洋商業銀行, skipping
+2026-06-29 13:31:26,896 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-29 13:31:26,908 [INFO] ==================================================
+2026-06-29 13:31:26,908 [INFO] Update complete:
+2026-06-29 13:31:26,908 [INFO]   ✅ Verified (same): 9
+2026-06-29 13:31:26,908 [INFO]   🔄 Verified (updated): 3
+2026-06-29 13:31:26,908 [INFO]   ❌ Unverified: 5
+2026-06-29 13:31:26,908 [INFO]     Updated: 交通銀行 (1 rates changed)
+2026-06-29 13:31:26,908 [INFO]     Updated: 象象銀行 (4 rates changed)
+2026-06-29 13:31:26,908 [INFO]     Updated: 集友銀行 (15 rates changed)
+2026-06-29 13:31:26,908 [INFO]   Pending extraction: 中銀香港, 富邦銀行, 工銀亞洲, 東亞銀行, 星展銀行, 上海商業銀行
+2026-06-29 13:31:26,908 [INFO]   Failed to scrape: 恒生銀行, 中信銀行（國際）
+2026-06-29 13:31:26,908 [INFO] Last updated: 2026-06-29T13:31:26.896771+08:00
+2026-06-29 13:31:26,908 [INFO] ==================================================
+2026-06-29 13:31:32,822 [INFO] Telegram notification sent
+2026-06-30 08:30:03,300 [INFO] ==================================================
+2026-06-30 08:30:03,300 [INFO] HK Deposit Rates Update
+2026-06-30 08:30:03,300 [INFO] Time: 2026-06-30 08:30:03
+2026-06-30 08:30:03,300 [INFO] ==================================================
+2026-06-30 08:30:03,303 [INFO] Processing 23 banks
+2026-06-30 08:30:03,612 [INFO]   HKET CNY article last updated 2026/06/09, older than 14 days, skipping
+2026-06-30 08:30:21,008 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates UPDATED (2 changed)
+2026-06-30 08:30:21,394 [INFO]   [hsbc] HKET: could not find article date for 滙豐銀行, skipping
+2026-06-30 08:30:32,539 [INFO]   [bochk] Extracting card rate (existing_funds) for 中銀香港...
+2026-06-30 08:30:32,539 [WARNING]   [bochk] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-30 08:30:32,539 [INFO]   [bochk] ✓ 中銀香港: bank website rates UPDATED (3 changed)
+2026-06-30 08:30:32,888 [INFO]   [bochk] HKET: could not find article date for 中銀香港, skipping
+2026-06-30 08:30:45,822 [WARNING]   [hangseng] Parser error for 恒生銀行: name 'note' is not defined
+2026-06-30 08:30:45,822 [INFO]   [hangseng] Extracting card rate (existing_funds) for 恒生銀行...
+2026-06-30 08:30:45,822 [WARNING]   [hangseng] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-30 08:30:45,822 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/hangseng.json
+2026-06-30 08:30:45,822 [INFO]   [hangseng] ⏳ Parser failed, saved raw data for 恒生銀行
+2026-06-30 08:30:46,040 [INFO] UHK second source: found 9 banks
+2026-06-30 08:31:01,818 [INFO]   [sc] Extracting card rate (existing_funds) for 渣打銀行...
+2026-06-30 08:31:01,818 [WARNING]   [sc] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-30 08:31:01,818 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-06-30 08:31:02,176 [INFO]   [sc] HKET: could not find article date for 渣打銀行, skipping
+2026-06-30 08:31:16,609 [INFO]   [fubon] ✓ 富邦銀行: bank website rates UPDATED (5 changed)
+2026-06-30 08:31:16,967 [INFO]   [fubon] HKET: could not find article date for 富邦銀行, skipping
+2026-06-30 08:31:27,530 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates UPDATED (2 changed)
+2026-06-30 08:31:27,885 [INFO]   [icbc] HKET: could not find article date for 工銀亞洲, skipping
+2026-06-30 08:31:38,282 [INFO]   [bea] ✓ 東亞銀行: bank website rates UPDATED (3 changed)
+2026-06-30 08:31:38,608 [INFO]   [bea] HKET: could not find article date for 東亞銀行, skipping
+2026-06-30 08:31:47,758 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates UPDATED (1 changed)
+2026-06-30 08:31:47,758 [INFO]   [cncbi] Scraping CNY page: https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html
+2026-06-30 08:31:59,096 [INFO]   [cncbi] HKET: could not find article date for 中信銀行（國際）, skipping
+2026-06-30 08:32:16,337 [INFO]   [dbs] Extracting USD and HKD new_funds rates with agent-browser...
+2026-06-30 08:32:21,324 [WARNING]   [dbs] agent-browser DBS extraction error: name '_days_to_period' is not defined
+2026-06-30 08:32:21,324 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-06-30 08:32:21,687 [INFO]   [dbs] HKET: could not find article date for 星展銀行, skipping
+2026-06-30 08:32:21,687 [INFO]   [bocomm] 交通銀行: fetching PDF...
+2026-06-30 08:32:22,761 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/bocomm.json
+2026-06-30 08:32:22,761 [INFO]   [bocomm] ⏳ PDF parse failed, saved raw data for 交通銀行
+2026-06-30 08:32:34,256 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-06-30 08:32:34,625 [INFO]   [shacom] HKET: could not find article date for 上海商業銀行, skipping
+2026-06-30 08:32:44,795 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-06-30 08:32:45,157 [INFO]   [publicbank] HKET: could not find article date for 大眾銀行, skipping
+2026-06-30 08:32:54,101 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-06-30 08:32:54,101 [INFO]   [winglung] Scraping CNY page: https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp
+2026-06-30 08:33:03,047 [INFO]   [winglung] CNY from dedicated page: []
+2026-06-30 08:33:03,447 [INFO]   [winglung] HKET: could not find article date for 招商永隆, skipping
+2026-06-30 08:33:16,510 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-06-30 08:33:16,915 [INFO]   [chbank] HKET: could not find article date for 創興銀行, skipping
+2026-06-30 08:33:16,915 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-06-30 08:33:17,176 [INFO]   [fusion] HKET: could not find article date for 富融銀行, skipping
+2026-06-30 08:33:17,176 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-06-30 08:33:34,834 [INFO]   Clicked tab @e11 (美元)
+2026-06-30 08:33:39,512 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-06-30 08:33:39,512 [INFO]   [airstar] ✓ 象象銀行: bank website rates unchanged (verified)
+2026-06-30 08:33:39,737 [INFO]   [airstar] HKET: could not find article date for 象象銀行, skipping
+2026-06-30 08:33:57,903 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-06-30 08:33:58,122 [INFO]   [za] HKET: could not find article date for 眾安銀行, skipping
+2026-06-30 08:34:08,436 [INFO]   [pao] Extracting card rate (existing_funds) for 平安數字銀行...
+2026-06-30 08:34:08,436 [WARNING]   [pao] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-06-30 08:34:08,436 [INFO]   [pao] ✓ 平安數字銀行: bank website rates unchanged (verified)
+2026-06-30 08:34:08,755 [INFO]   [pao] HKET: could not find article date for 平安數字銀行, skipping
+2026-06-30 08:34:18,539 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-06-30 08:34:18,813 [INFO]   [welab] HKET: could not find article date for 匯立銀行, skipping
+2026-06-30 08:34:30,506 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-06-30 08:34:30,793 [INFO]   [livi] HKET: could not find article date for 理慧銀行, skipping
+2026-06-30 08:34:41,281 [INFO]   [ant] ✓ 螞蟻銀行: bank website rates unchanged (verified)
+2026-06-30 08:34:41,545 [INFO]   [ant] HKET: could not find article date for 螞蟻銀行, skipping
+2026-06-30 08:34:50,885 [INFO]   [chiyu] ✓ 集友銀行: bank website rates unchanged (verified)
+2026-06-30 08:34:51,249 [INFO]   [chiyu] HKET: could not find article date for 集友銀行, skipping
+2026-06-30 08:34:51,249 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-06-30 08:34:51,466 [INFO]   [ncb] HKET: could not find article date for 南洋商業銀行, skipping
+2026-06-30 08:34:51,466 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-06-30 08:34:51,480 [INFO] ==================================================
+2026-06-30 08:34:51,480 [INFO] Update complete:
+2026-06-30 08:34:51,480 [INFO]   ✅ Verified (same): 13
+2026-06-30 08:34:51,480 [INFO]   🔄 Verified (updated): 6
+2026-06-30 08:34:51,481 [INFO]   ❌ Unverified: 2
+2026-06-30 08:34:51,481 [INFO]     Updated: 滙豐銀行 (2 rates changed)
+2026-06-30 08:34:51,481 [INFO]     Updated: 中銀香港 (3 rates changed)
+2026-06-30 08:34:51,481 [INFO]     Updated: 富邦銀行 (5 rates changed)
+2026-06-30 08:34:51,481 [INFO]     Updated: 工銀亞洲 (2 rates changed)
+2026-06-30 08:34:51,481 [INFO]     Updated: 東亞銀行 (3 rates changed)
+2026-06-30 08:34:51,481 [INFO]     Updated: 中信銀行（國際） (1 rates changed)
+2026-06-30 08:34:51,481 [INFO]   Pending extraction: 恒生銀行, 交通銀行
+2026-06-30 08:34:51,481 [INFO] Last updated: 2026-06-30T08:34:51.466622+08:00
+2026-06-30 08:34:51,481 [INFO] ==================================================
+2026-06-30 08:34:57,292 [INFO] Telegram notification sent

@@ -117,7 +117,7 @@ def parse(text, tables=None, html=None):
             }
         
         if rates.get('hkd') or rates.get('usd'):
-            rates['note'] = note
+            rates['note'] = note_new_funds
             rates['_use_new_structure'] = True
             return rates
     
@@ -157,8 +157,22 @@ def parse(text, tables=None, html=None):
                 'exchange': {'rate': None, 'min_deposit': None, 'note': None},
             }
     
+    # Try CNY text format
+    cny_idx = text.find('人民幣定期存款特優年利率')
+    if cny_idx >= 0:
+        cny_section = text[cny_idx:cny_idx+500]
+        rates['cny'] = {}
+        for period, label in [('3m', '3個月'), ('6m', '6個月')]:
+            m = re.search(rf'{label}[\s\t]+(\d+\.\d+)[\s\t]+(\d+\.\d+)', cny_section)
+            if m:
+                rates['cny'][period] = {
+                    'new_funds': {'rate': float(m.group(1)), 'min_deposit': 10000, 'note': '新資金定期存款優惠（網上理財）'},
+                    'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
+                    'exchange': {'rate': None, 'min_deposit': None, 'note': None},
+                }
+    
     if rates:
-        rates['note'] = note
+        rates['note'] = note_new_funds
         rates['_use_new_structure'] = True
         return rates
     
