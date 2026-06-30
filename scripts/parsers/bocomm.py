@@ -3,7 +3,8 @@
 Data source: PDF file fetched via API
 - POST to /HK/getContentPath.do with fileId to get PDF path
 - Download PDF from /hk/uploadhk/{filePath}
-- Extract text using pdftotext
+- Extract images from PDF (scanned image PDF)
+- Use OCR to extract text
 
 Personal customer rates (lowest threshold) are extracted:
 - 每日特息定期存款（電子渠道）
@@ -21,7 +22,7 @@ import tempfile
 
 def parse(text, tables=None, html=None):
     """
-    Parse BOCOM rates from PDF text.
+    Parse BOCOM rates from OCR'd PDF text.
     
     The PDF contains multiple rate tables:
     1. 網上定期存款 (online time deposit) - higher rates, higher thresholds
@@ -29,17 +30,11 @@ def parse(text, tables=None, html=None):
     
     We extract the "每日特息定期存款" rates for personal customers via e-channel.
     
-    PDF structure:
-    - Each row has: 貨幣 | 港元 | 美元 | 人民幣
-    - Under each currency: 起存金額 | 1個月 | 3個月 | 6個月 | 12個月
-    - Split into 電子渠道 (e-channel) and 本行網點 (branch)
-    - Each section has 個人客戶 (personal) and 公司客戶 (corporate)
-    
     Strategy:
     1. Find "每日特息定期存款" section
     2. Find "電子渠道" sub-section (higher rates than branch)
     3. Find "個人客戶" row
-    4. Parse the 3 currencies row-by-row
+    4. Parse the 3 currencies (港元, 美元, 人民幣) row-by-row
     """
     if not text:
         return None
@@ -52,6 +47,8 @@ def parse(text, tables=None, html=None):
     daily_idx = text.find('每日特息定期存款')
     if daily_idx < 0:
         daily_idx = text.find('Daily Preferential')
+        if daily_idx < 0:
+            daily_idx = text.find('特息定期')
     
     if daily_idx < 0:
         return None
@@ -78,12 +75,11 @@ def parse(text, tables=None, html=None):
         # Extract rates row by row, looking for period markers
         # Pattern: "N 個月" followed by percentages
         
-        # Period patterns (with and without spaces)
         period_patterns = [
-            ('1m', ['1 個月', '1個月']),
-            ('3m', ['3 個月', '3個月']),
-            ('6m', ['6 個月', '6個月']),
-            ('12m', ['12 個 月', '12個月', '12 個月']),
+            ('1m', ['1 個月', '1個月', '1个月', '1個 月']),
+            ('3m', ['3 個月', '3個月', '3个月', '3個 月']),
+            ('6m', ['6 個月', '6個月', '6个月', '6個 月']),
+            ('12m', ['12 個 月', '12個月', '12 個月', '12个月', '12 個月', '12個 月']),
         ]
         
         for period_key, patterns in period_patterns:
@@ -93,19 +89,21 @@ def parse(text, tables=None, html=None):
                 if period_idx >= 0:
                     break
             
-            if period_idx >= 0 and period_idx < 500:
+            if period_idx >= 0 and period_idx < 600:
                 # Get the row text after the period marker
-                row_text = personal_section[period_idx:period_idx + 100]
+                row_text = personal_section[period_idx:period_idx + 150]
                 
-                # Fix space in decimals like "2. 75%" -> "2.75%"
+                # Fix OCR artifacts: "2. 75%" -> "2.75%", "12 個 月" -> "12個月"
                 row_text_clean = re.sub(r'(\d+)\.\s+(\d+)', r'\1.\2', row_text)
+                row_text_clean = re.sub(r'(\d+)\s+個\s+月', r'\1個月', row_text_clean)
+                row_text_clean = re.sub(r'(\d+)\s+個月', r'\1個月', row_text_clean)
+                # Fix percentage with space: "2.60 %" -> "2.60%"
+                row_text_clean = re.sub(r'(\d+\.?\d*)\s+%', r'\1%', row_text_clean)
                 
                 # Extract all percentages in this row
                 percentages = re.findall(r'(\d+\.\d+|\d+)%', row_text_clean)
                 
                 if len(percentages) >= 3:
-                    # First % is HKD, second is USD, third is CNY (personal)
-                    # Fourth % is HKD, fifth is USD, sixth is CNY (corporate)
                     hkd[period_key] = float(percentages[0])
                     usd[period_key] = float(percentages[1])
                     cny[period_key] = float(percentages[2])
@@ -126,17 +124,19 @@ def parse(text, tables=None, html=None):
 
 def fetch_pdf_text(file_id='2600167'):
     """
-    Fetch BOCOM rates PDF and extract text.
+    Fetch BOCOM rates PDF and extract text using OCR.
     
     Steps:
     1. POST to API to get PDF path
     2. Download PDF
-    3. Extract text using pdftotext
+    3. Try pdftotext first (for normal PDFs)
+    4. If empty, extract images from PDF (scanned image PDF)
+    5. Use tesseract OCR to extract text from images
     
     Returns: (text, None, None) tuple for compatibility with scrape_page()
     """
     import urllib.request
-    import urllib.parse
+    import shutil
     
     base_url = 'https://www.hk.bankcomm.com'
     
@@ -162,10 +162,10 @@ def fetch_pdf_text(file_id='2600167'):
             api_result = json.loads(resp.read().decode('utf-8'))
         
         if api_result.get('RSP_HEAD', {}).get('TRAN_SUCCESS') != '1':
+            print(f"BOCOM API error: TRAN_SUCCESS != 1")
             return None, None, None
         
         file_path = api_result['RSP_BODY']['filePath']
-        file_name = api_result['RSP_BODY']['fileName']
         
     except Exception as e:
         print(f"BOCOM API error: {e}")
@@ -174,6 +174,7 @@ def fetch_pdf_text(file_id='2600167'):
     # Step 2: Download PDF
     pdf_url = f"{base_url}/hk/uploadhk/{file_path}"
     pdf_path = None
+    img_dir = None
     
     try:
         with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as tmp:
@@ -184,11 +185,12 @@ def fetch_pdf_text(file_id='2600167'):
             )
             with urllib.request.urlopen(req, timeout=30) as resp:
                 tmp.write(resp.read())
+        print(f"Downloaded PDF: {os.path.getsize(pdf_path)} bytes")
     except Exception as e:
         print(f"BOCOM PDF download error: {e}")
         return None, None, None
     
-    # Step 3: Extract text using pdftotext
+    # Step 3: Try pdftotext first
     try:
         result = subprocess.run(
             ['pdftotext', '-layout', pdf_path, '-'],
@@ -196,15 +198,67 @@ def fetch_pdf_text(file_id='2600167'):
             text=True,
             timeout=10
         )
-        text = result.stdout
+        text = result.stdout.strip()
+        if text and len(text) > 100:
+            print(f"pdftotext extracted {len(text)} chars")
+            return text, None, None
     except Exception as e:
         print(f"pdftotext error: {e}")
-        text = None
+    
+    # Step 4: Extract images from PDF
+    try:
+        img_dir = tempfile.mkdtemp(prefix='bocomm_img_')
+        img_prefix = os.path.join(img_dir, 'page')
+        
+        result = subprocess.run(
+            ['pdfimages', '-j', pdf_path, img_prefix],
+            capture_output=True,
+            timeout=10
+        )
+        
+        images = sorted([f for f in os.listdir(img_dir) if f.endswith('.jpg')])
+        
+        if not images:
+            print("No images extracted from PDF")
+            return None, None, None
+        
+        print(f"Extracted {len(images)} images from PDF")
+        
+        # Step 5: OCR each image
+        all_text = []
+        for img_file in images:
+            img_path = os.path.join(img_dir, img_file)
+            
+            # Try tesseract directly
+            try:
+                result = subprocess.run(
+                    ['tesseract', img_path, 'stdout', '-l', 'chi_sim+eng', '--psm', '6'],
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                if result.stdout.strip():
+                    all_text.append(result.stdout)
+                    print(f"OCR'd {img_file}: {len(result.stdout)} chars")
+            except Exception as e:
+                print(f"tesseract error for {img_file}: {e}")
+        
+        if all_text:
+            combined_text = '\n\n'.join(all_text)
+            print(f"Total OCR text: {len(combined_text)} chars")
+            return combined_text, None, None
+        
+        print("OCR produced no text")
+        return None, None, None
+        
+    except Exception as e:
+        print(f"Image extraction/OCR error: {e}")
+        return None, None, None
     finally:
         if pdf_path and os.path.exists(pdf_path):
             os.unlink(pdf_path)
-    
-    return text, None, None
+        if img_dir and os.path.exists(img_dir):
+            shutil.rmtree(img_dir)
 
 
 # For testing
