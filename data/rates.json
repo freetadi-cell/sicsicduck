@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T08:35:07.616218+08:00",
+  "last_updated": "2026-07-03T08:35:06.021337+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -2608,7 +2608,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.9,
+          "rate": 3.0,
           "min_deposit": 50000,
           "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
@@ -2764,7 +2764,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 3.75,
+          "rate": 3.8,
           "min_deposit": 15000,
           "note": "全新資金定期存款推廣（分行）",
           "source": "bank",
@@ -5624,7 +5624,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 2.5,
+          "rate": 2.4,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -6322,7 +6322,7 @@
           "conditions": []
         },
         "1m": {
-          "rate": 2.65,
+          "rate": 2.4,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -6330,7 +6330,7 @@
           "conditions": []
         },
         "2m": {
-          "rate": 2.65,
+          "rate": 2.5,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -6338,7 +6338,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.65,
+          "rate": 2.55,
           "min_deposit": null,
           "note": "雲利率（網上/流動理財）",
           "source": "bank",
@@ -7234,7 +7234,7 @@
           "conditions": []
         },
         "2m": {
-          "rate": 1.7,
+          "rate": 0.5,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -7242,7 +7242,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.5,
+          "rate": 2.55,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -7250,7 +7250,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.8,
+          "rate": 2.9,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -7300,7 +7300,7 @@
           "conditions": []
         },
         "2m": {
-          "rate": 3.05,
+          "rate": 0.5,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -7308,7 +7308,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.5,
+          "rate": 3.55,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
