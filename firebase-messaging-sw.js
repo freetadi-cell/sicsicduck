@@ -13,16 +13,8 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-messaging.onBackgroundMessage((payload) => {
-    const title = payload.notification?.title || '食息鴨';
-    const body = payload.notification?.body || '最新利率更新';
-    
-    self.registration.showNotification(title, {
-        body: body,
-        icon: '/favicon.ico',
-        badge: '/favicon.ico'
-    });
-});
+// 不需要 onBackgroundMessage，因為 FCM 會自動顯示通知
+// 移除此 handler 避免雙重通知
 
 self.addEventListener('notificationclick', (event) => {
     event.notification.close();
