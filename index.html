@@ -857,7 +857,6 @@
             </div>
         </div>
         <img class="header-logo" src="logo.jpg" alt="食息鴨">
-        <button id="subscribeBtn" onclick="toggleSubscription()" style="margin-left:12px;padding:6px 12px;border:none;border-radius:20px;background:linear-gradient(135deg,#FBC02D,#F57F17);color:white;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.3s;white-space:nowrap;">🔔 訂閱通知</button>
 
         <div class="header-meta" style="display:none;">
             <div class="update-badge">
@@ -1113,7 +1112,6 @@
 </script>
 <script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-database-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-messaging-compat.js"></script>
 <script>
 // ===== Online Count via Firebase Realtime Database =====
 (function() {
@@ -1164,114 +1162,6 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// ===== FCM Push Notification Subscription =====
-const FCM_VAPID_KEY = 'BEJvQs8IociyO9puWbFA_GxWrOr-1H-UW8S25QZn2DeolCsI7rlzxL7AHk4NwuMoCNIGgBOAH39e_sgDJz98aBY';
-let fcmMessaging = null;
-
-async function initFCM() {
-    try {
-        fcmMessaging = firebase.messaging();
-        
-        // Request permission
-        const permission = await Notification.requestPermission();
-        if (permission !== 'granted') {
-            console.log('Notification permission denied');
-            alert('請允許通知權限以訂閱每日利率更新');
-            return false;
-        }
-        
-        // Get FCM token
-        const token = await fcmMessaging.getToken({ vapidKey: FCM_VAPID_KEY });
-        if (token) {
-            // Save token to Firebase Realtime Database
-            const tokenRef = firebase.database().ref('fcmTokens/' + btoa(token).replace(/[^a-zA-Z0-9]/g, ''));
-            await tokenRef.set({
-                token: token,
-                subscribedAt: Date.now(),
-                userAgent: navigator.userAgent
-            });
-            console.log('FCM token saved:', token);
-            updateSubscriptionUI(true);
-            alert('✅ 已成功訂閱！每日朝早 9 點會收到利率更新通知');
-            return true;
-        }
-    } catch (err) {
-        console.error('FCM init error:', err);
-        alert('訂閱失敗: ' + err.message);
-    }
-    return false;
-}
-
-function updateSubscriptionUI(subscribed) {
-    const btn = document.getElementById('subscribeBtn');
-    if (btn) {
-        btn.innerHTML = subscribed ? '✅ 已訂閱' : '🔔 訂閱通知';
-        btn.classList.toggle('subscribed', subscribed);
-        btn.style.background = subscribed ? 'linear-gradient(135deg,#4CAF50,#388E3C)' : 'linear-gradient(135deg,#FBC02D,#F57F17)';
-    }
-}
-
-async function toggleSubscription() {
-    const btn = document.getElementById('subscribeBtn');
-    if (!btn) return;
-    
-    if (btn.classList.contains('subscribed')) {
-        // Unsubscribe
-        try {
-            if (fcmMessaging) {
-                const token = await fcmMessaging.getToken({ vapidKey: FCM_VAPID_KEY });
-                if (token) {
-                    await fcmMessaging.deleteToken(token);
-                    const tokenRef = firebase.database().ref('fcmTokens/' + btoa(token).replace(/[^a-zA-Z0-9]/g, ''));
-                    await tokenRef.remove();
-                }
-            }
-            updateSubscriptionUI(false);
-            alert('已取消訂閱');
-        } catch (err) {
-            console.error('Unsubscribe error:', err);
-        }
-    } else {
-        await initFCM();
-    }
-}
-
-// Listen for foreground messages
-function listenForMessages() {
-    if (fcmMessaging) {
-        fcmMessaging.onMessage((payload) => {
-            console.log('Message received:', payload);
-            const { title, body } = payload.notification;
-            new Notification(title, { body, icon: '/favicon.ico' });
-        });
-    }
-}
-
-// Check subscription status on load
-async function checkSubscription() {
-    if (!('Notification' in window)) {
-        document.getElementById('subscribeBtn').style.display = 'none';
-        return;
-    }
-    
-    if (Notification.permission === 'granted') {
-        try {
-            if (!fcmMessaging) {
-                fcmMessaging = firebase.messaging();
-            }
-            const token = await fcmMessaging.getToken({ vapidKey: FCM_VAPID_KEY });
-            if (token) {
-                updateSubscriptionUI(true);
-                listenForMessages();
-            }
-        } catch (err) {
-            console.log('No existing subscription');
-        }
-    }
-}
-
-// Initialize on page load
-window.addEventListener('load', checkSubscription);
 
 
 // ===== State =====
