@@ -17,18 +17,24 @@ const messaging = firebase.messaging();
 
 // Handle background messages
 messaging.onBackgroundMessage((payload) => {
-    console.log('Received background message:', payload);
+    console.log('[firebase-messaging-sw.js] Received background message:', payload);
     
-    const notificationTitle = payload.notification.title || '食息鴨';
+    // Extract notification data
+    const notificationTitle = payload.notification?.title || payload.data?.title || '食息鴨';
+    const notificationBody = payload.notification?.body || payload.data?.body || '最新利率更新';
+    
     const notificationOptions = {
-        body: payload.notification.body || '',
+        body: notificationBody,
         icon: '/favicon.ico',
         badge: '/favicon.ico',
         tag: 'sicsicduck-rate-update',
-        data: payload.data
+        vibrate: [200, 100, 200],
+        data: {
+            url: 'https://sicsicduck.com'
+        }
     };
 
-    self.registration.showNotification(notificationTitle, notificationOptions);
+    return self.registration.showNotification(notificationTitle, notificationOptions);
 });
 
 // Handle notification click
