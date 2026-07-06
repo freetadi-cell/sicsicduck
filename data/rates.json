@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T08:35:03.251858+08:00",
+  "last_updated": "2026-07-06T08:34:47.962679+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -420,7 +420,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.4,
+          "rate": 1.1,
           "min_deposit": 10000,
           "note": "滙豐定期存款優惠（新資金）",
           "source": "bank",
@@ -454,7 +454,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.2,
+          "rate": 1.1,
           "min_deposit": 10000,
           "note": "滙豐定期存款優惠（新資金）",
           "source": "bank",
@@ -488,29 +488,11 @@
           "conditions": []
         },
         "12m": {
-          "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": []
-          },
-          "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": []
-          },
-          "exchange": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": [
-              "exchange"
-            ]
-          },
+          "rate": 1.1,
+          "min_deposit": 10000,
+          "note": "滙豐定期存款優惠（新資金）",
+          "source": "bank",
+          "fund_type": "new_funds",
           "conditions": []
         }
       }
