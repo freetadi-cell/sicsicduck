@@ -857,7 +857,7 @@
             </div>
         </div>
         <img class="header-logo" src="logo.jpg" alt="食息鴨">
-        <button id="subscribeBtn" onclick="toggleSubscription()" style="margin-left:12px;padding:6px 12px;border:none;border-radius:20px;background:linear-gradient(135deg,#FBC02D,#F57F17);color:white;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.3s;white-space:nowrap;">🔔 訂閱通知</button>
+
 
         <div class="header-meta" style="display:none;">
             <div class="update-badge">
@@ -1113,7 +1113,7 @@
 </script>
 <script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-database-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/12.13.0/firebase-messaging-compat.js"></script>
+
 <script>
 // ===== Online Count via Firebase Realtime Database =====
 (function() {
@@ -1165,73 +1165,6 @@ document.addEventListener('click', function(e) {
 });
 
 // ===== FCM Subscription =====
-const VAPID_KEY = 'BEJvQs8IociyO9puWbFA_GxWrOr-1H-UW8S25QZn2DeolCsI7rlzxL7AHk4NwuMoCNIGgBOAH39e_sgDJz98aBY';
-
-async function toggleSubscription() {
-    const btn = document.getElementById('subscribeBtn');
-    
-    if (btn.textContent.includes('已訂閱')) {
-        // Unsubscribe
-        try {
-            const msg = firebase.messaging();
-            const token = await msg.getToken({vapidKey: VAPID_KEY});
-            if (token) {
-                await msg.deleteToken(token);
-                const ref = firebase.database().ref('fcmTokens/' + btoa(token).replace(/[^a-zA-Z0-9]/g, ''));
-                await ref.remove();
-            }
-            btn.textContent = '🔔 訂閱通知';
-            btn.style.background = 'linear-gradient(135deg,#FBC02D,#F57F17)';
-        } catch(e) {
-            console.error(e);
-        }
-    } else {
-        // Subscribe
-        try {
-            const permission = await Notification.requestPermission();
-            if (permission !== 'granted') {
-                alert('請允許通知權限');
-                return;
-            }
-            
-            const msg = firebase.messaging();
-            const token = await msg.getToken({vapidKey: VAPID_KEY});
-            
-            if (token) {
-                const ref = firebase.database().ref('fcmTokens/' + btoa(token).replace(/[^a-zA-Z0-9]/g, ''));
-                await ref.set({
-                    token: token,
-                    time: Date.now(),
-                    ua: navigator.userAgent
-                });
-                btn.textContent = '✅ 已訂閱';
-                btn.style.background = 'linear-gradient(135deg,#4CAF50,#388E3C)';
-                alert('訂閱成功！每日朝早9點會收到利率更新');
-            }
-        } catch(e) {
-            console.error(e);
-            alert('訂閱失敗: ' + e.message);
-        }
-    }
-}
-
-// Check subscription on load
-window.addEventListener('load', async () => {
-    if (!('Notification' in window)) return;
-    
-    const btn = document.getElementById('subscribeBtn');
-    if (Notification.permission === 'granted') {
-        try {
-            const msg = firebase.messaging();
-            const token = await msg.getToken({vapidKey: VAPID_KEY});
-            if (token) {
-                btn.textContent = '✅ 已訂閱';
-                btn.style.background = 'linear-gradient(135deg,#4CAF50,#388E3C)';
-            }
-        } catch(e) {}
-    }
-});
-
 
 // ===== State =====
 let ratesData = null;
