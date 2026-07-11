@@ -371,7 +371,7 @@ localStorage.setItem('pageViews', viewCount);
 
 const footerCounter = document.createElement('div');
 footerCounter.style.cssText = 'text-align:center;padding:16px;color:var(--gray-500);font-size:13px;';
-footerCounter.innerHTML = `瀏覽次數：<span style="font-weight:600;color:var(--gray-700)">${viewCount.toLocaleString()}</span>`;
+footerCounter.innerHTML = `瀏覽次數：<span style="font-weight:600;color:var(--gray-700)">${viewCount.toLocaleString()}</span> | <span id="onlineCount" style="color:#aaa;">···</span>`;
 document.body.insertBefore(footerCounter, document.body.lastElementChild);
 
 loadData();
