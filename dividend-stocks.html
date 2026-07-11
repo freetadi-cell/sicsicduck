@@ -685,7 +685,6 @@
             </div>
         </div>
         <img class="header-logo" src="logo.jpg" alt="食息鴨">
-        <span id="onlineCount" class="online-badge" style="font-size:11px;color:#aaa;margin-left:6px;white-space:nowrap;">···</span>
         
         <div class="header-meta" style="display:none;">
             <div class="update-badge">
@@ -788,7 +787,7 @@
     const onlineRef=db.ref('.info/connected');
     const myRef=db.ref('online/'+Math.random().toString(36).substr(2,9));
     onlineRef.on('value',snap=>{if(snap.val()===true){myRef.onDisconnect().remove();myRef.set(Date.now())}});
-    db.ref('online').on('value',snap=>{const count=snap.numChildren();const el=document.getElementById('onlineCount');if(count>0){el.textContent=count+' 人在線'}else{el.textContent=''}});
+    db.ref('online').on('value',snap=>{const count=snap.numChildren();const el=document.getElementById('onlineCountFooter');if(el&&count>0){el.textContent=count+' 人在線'}else if(el){el.textContent=''}});
 })();
 </script>
 <script>
