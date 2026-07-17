@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T17:26:08.786922+08:00",
+  "last_updated": "2026-07-17T08:34:42.998164+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -3614,7 +3614,7 @@
           "conditions": []
         },
         "3m": {
-          "rate": 3.0,
+          "rate": 2.95,
           "min_deposit": null,
           "note": "inMotion新資金定期存款特惠年利率",
           "source": "bank",
