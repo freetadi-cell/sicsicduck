@@ -174,42 +174,6 @@
             margin: 0 auto;
         }
 
-        /* Category Tabs */
-        .category-tabs {
-            max-width: 1200px;
-            margin: -20px auto 0;
-            padding: 0 24px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 10;
-        }
-
-        .category-tab {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 24px;
-            background: var(--white);
-            color: var(--gray-700);
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: var(--shadow-md);
-            font-family: inherit;
-        }
-
-        .category-tab.active {
-            background: linear-gradient(135deg, var(--gold-500), var(--gold-600));
-            color: var(--white);
-        }
-
-        .category-tab:not(.active):hover {
-            background: var(--gold-100);
-            color: var(--gold-800);
-        }
-
         /* Articles Grid */
         .articles-section {
             max-width: 1200px;
@@ -250,17 +214,6 @@
 
         .article-content {
             padding: 20px;
-        }
-
-        .article-category {
-            display: inline-block;
-            padding: 4px 12px;
-            background: var(--gold-100);
-            color: var(--gold-700);
-            font-size: 12px;
-            font-weight: 600;
-            border-radius: 12px;
-            margin-bottom: 12px;
         }
 
         .article-title {
@@ -308,8 +261,6 @@
             .header-inner { padding: 12px 16px; }
             .hero h1 { font-size: 22px; }
             .hero { padding: 30px 16px 24px; }
-            .category-tabs { padding: 0 16px; gap: 8px; }
-            .category-tab { padding: 8px 16px; font-size: 13px; }
             .articles-section { padding: 0 16px; margin-top: 30px; }
             .articles-grid { gap: 16px; }
             .article-image { height: 150px; }
@@ -353,23 +304,13 @@
     <p>最新銀行利率動態、投資理財資訊、信用卡優惠比較</p>
 </section>
 
-<!-- Category Tabs -->
-<div class="category-tabs">
-    <button class="category-tab active" data-category="all">全部</button>
-    <button class="category-tab" data-category="deposit">定期存款</button>
-    <button class="category-tab" data-category="credit-card">信用卡</button>
-    <button class="category-tab" data-category="investment">投資理財</button>
-    <button class="category-tab" data-category="bank-news">銀行動態</button>
-</div>
-
 <!-- Articles Section -->
 <section class="articles-section">
     <div class="articles-grid" id="articlesGrid">
         <!-- Article 1 -->
-        <article class="article-card" data-category="deposit">
+        <article class="article-card">
             <div class="article-image">🏦</div>
             <div class="article-content">
-                <span class="article-category">定期存款</span>
                 <h3 class="article-title">渣打銀行12個月定存3.3% 全港最高息</h3>
                 <div class="article-meta">
                     <span class="article-date">📅 2026年7月18日</span>
@@ -379,10 +320,9 @@
         </article>
 
         <!-- Article 2 -->
-        <article class="article-card" data-category="deposit">
+        <article class="article-card">
             <div class="article-image">📊</div>
             <div class="article-content">
-                <span class="article-category">定期存款</span>
                 <h3 class="article-title">2026年7月港元定存利率比較 邊間銀行最抵？</h3>
                 <div class="article-meta">
                     <span class="article-date">📅 2026年7月18日</span>
@@ -392,10 +332,9 @@
         </article>
 
         <!-- Article 3 -->
-        <article class="article-card" data-category="credit-card">
+        <article class="article-card">
             <div class="article-image">💳</div>
             <div class="article-content">
-                <span class="article-category">信用卡</span>
                 <h3 class="article-title">虛擬銀行信用卡優惠2026 現金回贈高達5%</h3>
                 <div class="article-meta">
                     <span class="article-date">📅 2026年7月17日</span>
@@ -405,10 +344,9 @@
         </article>
 
         <!-- Article 4 -->
-        <article class="article-card" data-category="investment">
+        <article class="article-card">
             <div class="article-image">📈</div>
             <div class="article-content">
-                <span class="article-category">投資理財</span>
                 <h3 class="article-title">美元定存vs港元定存 2026年邊樣更著數？</h3>
                 <div class="article-meta">
                     <span class="article-date">📅 2026年7月16日</span>
@@ -418,10 +356,9 @@
         </article>
 
         <!-- Article 5 -->
-        <article class="article-card" data-category="bank-news">
+        <article class="article-card">
             <div class="article-image">🏦</div>
             <div class="article-content">
-                <span class="article-category">銀行動態</span>
                 <h3 class="article-title">香港虛擬銀行發展趨勢 2026年用戶突破200萬</h3>
                 <div class="article-meta">
                     <span class="article-date">📅 2026年7月15日</span>
@@ -431,10 +368,9 @@
         </article>
 
         <!-- Article 6 -->
-        <article class="article-card" data-category="deposit">
+        <article class="article-card">
             <div class="article-image">💰</div>
             <div class="article-content">
-                <span class="article-category">定期存款</span>
                 <h3 class="article-title">新資金定存優惠攻略 點樣先可以享受到最高息？</h3>
                 <div class="article-meta">
                     <span class="article-date">📅 2026年7月14日</span>
@@ -468,30 +404,9 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Category filter
-document.querySelectorAll('.category-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-        // Update active tab
-        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        
-        const category = tab.dataset.category;
-        const articles = document.querySelectorAll('.article-card');
-        
-        articles.forEach(article => {
-            if (category === 'all' || article.dataset.category === category) {
-                article.style.display = 'block';
-            } else {
-                article.style.display = 'none';
-            }
-        });
-    });
-});
-
 // Article card click (placeholder - can be extended to actual article pages)
 document.querySelectorAll('.article-card').forEach(card => {
     card.addEventListener('click', () => {
-        // For now, just show an alert. In the future, this could navigate to actual article pages
         const title = card.querySelector('.article-title').textContent;
         alert('文章詳情頁面將會推出：' + title);
     });
