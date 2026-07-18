@@ -139,8 +139,14 @@ def generate_html_content(articles):
         category_list = article.get("category", [])
         category_str = ", ".join(category_list) if category_list else ""
         
+        # Image HTML: use <img> tag with onerror fallback
+        if image_url:
+            image_html = f'<img src="{image_url}" alt="" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="article-image-fallback" style="display:none">📊</div>'
+        else:
+            image_html = '📊'
+        
         html += f'''        <a href="{link}" target="_blank" class="article-card" data-category="{category_str}">
-            <div class="article-image"{'style="background-image:url(' + image_url + ');background-size:cover;background-position:center"' if image_url else ''}>{'📊' if not image_url else ''}</div>
+            <div class="article-image">{image_html}</div>
             <div class="article-content">
                 <h3 class="article-title">{article["title"]}</h3>
                 <p class="article-description">{description}</p>
