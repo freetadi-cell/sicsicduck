@@ -17,7 +17,7 @@ SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 NEWS_FILE = DATA_DIR / "news.json"
 
-def fetch_news(days=7, max_per_category=10):
+def fetch_news(days=7, max_per_category=20):
     """
     Fetch Chinese news from NewsData.io from multiple categories
     
@@ -31,7 +31,7 @@ def fetch_news(days=7, max_per_category=10):
     articles = []
     
     # Categories to fetch
-    categories = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics']
+    categories = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics', 'world', 'environment']
     
     print(f"Fetching Chinese news from NewsData.io...")
     print(f"Categories: {', '.join(categories)}")
