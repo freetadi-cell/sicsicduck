@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財經新聞 | 食息鴨</title>
+    <meta name="description" content="最新財經新聞、投資理財資訊、銀行存款利率分析、信用卡優惠比較">
+    <meta name="keywords" content="財經新聞,投資理財,銀行利率,信用卡優惠,定期存款,香港財經">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-50: #FFFFF0;
+            --gold-100: #FFFDE7;
+            --gold-200: #FFF9C4;
+            --gold-300: #FFF59D;
+            --gold-400: #FFEE58;
+            --gold-500: #FDD835;
+            --gold-600: #FBC02D;
+            --gold-700: #F9A825;
+            --gold-800: #F57F17;
+            --gold-900: #E65100;
+            --white: #FFFFFF;
+            --gray-50: #FFFFF5;
+            --gray-100: #FFFDE0;
+            --gray-200: #EEEEEE;
+            --gray-300: #E0E0E0;
+            --gray-400: #BDBDBD;
+            --gray-500: #9E9E9E;
+            --gray-600: #757575;
+            --gray-700: #616161;
+            --gray-800: #424242;
+            --gray-900: #212121;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gold-100);
+            color: var(--gray-800);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: #F3F3F3;
+            color: var(--white);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            height: 44px;
+        }
+
+        .nav-dropdown-wrap {
+            position: relative;
+            margin-right: 4px;
+            margin-left: -10px;
+        }
+
+        .nav-dropdown-btn {
+            height: 36px;
+            padding: 0 14px;
+            border: none;
+            background: #F3F3F3;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-800);
+            transition: background 0.15s;
+            white-space: nowrap;
+        }
+        .nav-dropdown-btn::after {
+            content: '▾';
+            font-size: 12px;
+            color: var(--gray-500);
+        }
+
+        .nav-dropdown-btn:hover {
+            background: var(--gold-200);
+        }
+
+        .nav-dropdown {
+            display: none;
+            position: absolute;
+            top: 44px;
+            left: 0;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border: 1px solid var(--gray-200);
+            min-width: 200px;
+            z-index: 200;
+            overflow: hidden;
+        }
+
+        .nav-dropdown.open {
+            display: block;
+        }
+
+        .nav-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: var(--gray-700);
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.15s;
+        }
+
+        .nav-dropdown a:hover {
+            background: var(--gold-100);
+            color: var(--gold-800);
+        }
+
+        .nav-dropdown a.active {
+            background: var(--gold-100);
+            color: var(--gold-800);
+            font-weight: 700;
+        }
+
+        .nav-dropdown .dd-icon {
+            font-size: 18px;
+        }
+
+        .header-logo {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(180deg, var(--gold-100) 0%, var(--gold-50) 100%);
+            padding: 40px 24px 32px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--gold-800);
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Category Tabs */
+        .category-tabs {
+            max-width: 1200px;
+            margin: -20px auto 0;
+            padding: 0 24px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 10;
+        }
+
+        .category-tab {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 24px;
+            background: var(--white);
+            color: var(--gray-700);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: var(--shadow-md);
+            font-family: inherit;
+        }
+
+        .category-tab.active {
+            background: linear-gradient(135deg, var(--gold-500), var(--gold-600));
+            color: var(--white);
+        }
+
+        .category-tab:not(.active):hover {
+            background: var(--gold-100);
+            color: var(--gold-800);
+        }
+
+        /* Articles Grid */
+        .articles-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: 1px solid var(--gold-200);
+        }
+
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, var(--gold-200), var(--gold-300));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+
+        .article-content {
+            padding: 20px;
+        }
+
+        .article-category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--gold-100);
+            color: var(--gold-700);
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        .article-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--gray-500);
+        }
+
+        .article-date {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Footer */
+        .footer {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px 40px;
+            text-align: center;
+        }
+
+        .disclaimer {
+            background: var(--gold-100);
+            border: 1px solid var(--gold-200);
+            border-radius: 12px;
+            padding: 16px 24px;
+            font-size: 12px;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner { padding: 12px 16px; }
+            .hero h1 { font-size: 22px; }
+            .hero { padding: 30px 16px 24px; }
+            .category-tabs { padding: 0 16px; gap: 8px; }
+            .category-tab { padding: 8px 16px; font-size: 13px; }
+            .articles-section { padding: 0 16px; margin-top: 30px; }
+            .articles-grid { gap: 16px; }
+            .article-image { height: 150px; }
+            .footer { padding: 0 16px 30px; }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--gray-500);
+        }
+
+        .empty-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-inner">
+        <div class="nav-dropdown-wrap">
+            <button class="nav-dropdown-btn" onclick="toggleNav()" aria-label="導航">🏦 定存</button>
+            <div class="nav-dropdown" id="navDropdown">
+                <a href="index.html"><span class="dd-icon">🏦</span> 定存</a>
+                <a href="dividend-stocks.html"><span class="dd-icon">📈</span> 股息</a>
+                <a href="rental-income.html"><span class="dd-icon">🏠</span> 租值</a>
+                <a href="news.html" class="active"><span class="dd-icon">📰</span> 新聞</a>
+            </div>
+        </div>
+        <img class="header-logo" src="logo.jpg" alt="食息鴨">
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>📰 財經新聞</h1>
+    <p>最新銀行利率動態、投資理財資訊、信用卡優惠比較</p>
+</section>
+
+<!-- Category Tabs -->
+<div class="category-tabs">
+    <button class="category-tab active" data-category="all">全部</button>
+    <button class="category-tab" data-category="deposit">定期存款</button>
+    <button class="category-tab" data-category="credit-card">信用卡</button>
+    <button class="category-tab" data-category="investment">投資理財</button>
+    <button class="category-tab" data-category="bank-news">銀行動態</button>
+</div>
+
+<!-- Articles Section -->
+<section class="articles-section">
+    <div class="articles-grid" id="articlesGrid">
+        <!-- Article 1 -->
+        <article class="article-card" data-category="deposit">
+            <div class="article-image">🏦</div>
+            <div class="article-content">
+                <span class="article-category">定期存款</span>
+                <h3 class="article-title">渣打銀行12個月定存3.3% 全港最高息</h3>
+                <div class="article-meta">
+                    <span class="article-date">📅 2026年7月18日</span>
+                    <span>閱讀更多 →</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card" data-category="deposit">
+            <div class="article-image">📊</div>
+            <div class="article-content">
+                <span class="article-category">定期存款</span>
+                <h3 class="article-title">2026年7月港元定存利率比較 邊間銀行最抵？</h3>
+                <div class="article-meta">
+                    <span class="article-date">📅 2026年7月18日</span>
+                    <span>閱讀更多 →</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card" data-category="credit-card">
+            <div class="article-image">💳</div>
+            <div class="article-content">
+                <span class="article-category">信用卡</span>
+                <h3 class="article-title">虛擬銀行信用卡優惠2026 現金回贈高達5%</h3>
+                <div class="article-meta">
+                    <span class="article-date">📅 2026年7月17日</span>
+                    <span>閱讀更多 →</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card" data-category="investment">
+            <div class="article-image">📈</div>
+            <div class="article-content">
+                <span class="article-category">投資理財</span>
+                <h3 class="article-title">美元定存vs港元定存 2026年邊樣更著數？</h3>
+                <div class="article-meta">
+                    <span class="article-date">📅 2026年7月16日</span>
+                    <span>閱讀更多 →</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card" data-category="bank-news">
+            <div class="article-image">🏦</div>
+            <div class="article-content">
+                <span class="article-category">銀行動態</span>
+                <h3 class="article-title">香港虛擬銀行發展趨勢 2026年用戶突破200萬</h3>
+                <div class="article-meta">
+                    <span class="article-date">📅 2026年7月15日</span>
+                    <span>閱讀更多 →</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="article-card" data-category="deposit">
+            <div class="article-image">💰</div>
+            <div class="article-content">
+                <span class="article-category">定期存款</span>
+                <h3 class="article-title">新資金定存優惠攻略 點樣先可以享受到最高息？</h3>
+                <div class="article-meta">
+                    <span class="article-date">📅 2026年7月14日</span>
+                    <span>閱讀更多 →</span>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="disclaimer">
+        <strong>⚠️ 免責聲明</strong><br>
+        本網站所載之一切資訊僅供參考，不構成任何投資、財務或稅務建議。投資者應根據自身情況作出獨立判斷，並在有需要時諮詢專業財務顧問。<br>
+        聯絡我們：<a href="mailto:hello@sicsicduck.com" style="color:var(--gold-700)">hello@sicsicduck.com</a>
+    </div>
+</div>
+
+<script>
+// Toggle dropdown nav
+function toggleNav() {
+    document.getElementById('navDropdown').classList.toggle('open');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const wrap = document.querySelector('.nav-dropdown-wrap');
+    if (!wrap.contains(e.target)) {
+        document.getElementById('navDropdown').classList.remove('open');
+    }
+});
+
+// Category filter
+document.querySelectorAll('.category-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Update active tab
+        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        const category = tab.dataset.category;
+        const articles = document.querySelectorAll('.article-card');
+        
+        articles.forEach(article => {
+            if (category === 'all' || article.dataset.category === category) {
+                article.style.display = 'block';
+            } else {
+                article.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Article card click (placeholder - can be extended to actual article pages)
+document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('click', () => {
+        // For now, just show an alert. In the future, this could navigate to actual article pages
+        const title = card.querySelector('.article-title').textContent;
+        alert('文章詳情頁面將會推出：' + title);
+    });
+});
+</script>
+
+</body>
+</html>
