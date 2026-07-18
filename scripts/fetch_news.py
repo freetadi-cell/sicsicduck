@@ -139,11 +139,11 @@ def generate_html_content(articles):
         category_list = article.get("category", [])
         category_str = ", ".join(category_list) if category_list else ""
         
-        # Image HTML: use <img> tag with onerror fallback
+        # Image HTML: use <img> tag with onerror fallback to default image
         if image_url:
-            image_html = f'<img src="{image_url}" alt="" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="article-image-fallback" style="display:none">📊</div>'
+            image_html = f'<img src="{image_url}" alt="" onerror="this.src=\'/default-news.jpg\'">'
         else:
-            image_html = '📊'
+            image_html = '<img src="/default-news.jpg" alt="">'
         
         html += f'''        <a href="{link}" target="_blank" class="article-card" data-category="{category_str}">
             <div class="article-image">{image_html}</div>
