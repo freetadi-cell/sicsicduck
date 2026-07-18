@@ -464,13 +464,7 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Article card click (placeholder - can be extended to actual article pages)
-document.querySelectorAll('.article-card').forEach(card => {
-    card.addEventListener('click', () => {
-        const title = card.querySelector('.article-title').textContent;
-        alert('文章詳情頁面將會推出：' + title);
-    });
-});
+// Article cards are now <a> tags that link directly to original articles
 </script>
 
 </body>
