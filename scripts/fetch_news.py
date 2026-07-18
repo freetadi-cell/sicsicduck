@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Fetch Chinese news from NewsData.io for sicsicduck.com
-只抽取：港聞（天氣除外）、美股、港股、利息相關、國際事件、政治
 """
 
 import requests
@@ -18,47 +17,21 @@ SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 NEWS_FILE = DATA_DIR / "news.json"
 
-# 過濾關鍵字
-BLOCKED_DOMAINS = ['hk01.com', 'singtao', 'stheadline']
-WEATHER_KEYWORDS = ['天氣', '暴雨', '颱風', '風暴', '雷暴', '天文台', '氣溫', '酷熱', '寒冷']
-
-def is_blocked_source(link, source_name):
-    """檢查是否為被封鎖的新聞來源"""
-    link_lower = link.lower()
-    source_lower = source_name.lower() if source_name else ''
-    
-    for blocked in BLOCKED_DOMAINS:
-        if blocked in link_lower or blocked in source_lower:
-            return True
-    return False
-
-def is_weather_news(title, description):
-    """檢查是否為天氣相關新聞"""
-    text = f"{title} {description or ''}"
-    for keyword in WEATHER_KEYWORDS:
-        if keyword in text:
-            return True
-    return False
-
-def fetch_news(days=7, max_per_category=20):
+def fetch_news(days=7, max_per_category=10):
     """
-    Fetch Chinese news from NewsData.io
+    Fetch Chinese news from NewsData.io from multiple categories
     
-    只抽取：
-    1. 港聞（天氣除外）- politics, business
-    2. 美股 - business
-    3. 港股 - business
-    4. 利息相關 - business
-    5. 國際事件 - world, politics
-    6. 政治 - politics
+    Args:
+        days: Number of days to look back
+        max_per_category: Maximum articles per category
     """
     end_date = datetime.now()
     start_date = end_date - timedelta(days=days)
     
     articles = []
     
-    # 類別配置
-    categories = ['business', 'politics', 'world']
+    # Categories to fetch
+    categories = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics']
     
     print(f"Fetching Chinese news from NewsData.io...")
     print(f"Categories: {', '.join(categories)}")
@@ -103,28 +76,13 @@ def fetch_news(days=7, max_per_category=20):
                         except ValueError:
                             pass
                     
-                    title = article.get("title", "")
-                    description = article.get("description", "")
-                    link = article.get("link", "")
-                    source_name = article.get("source_name", "")
-                    
-                    # 過濾封鎖來源
-                    if is_blocked_source(link, source_name):
-                        print(f"  Filtered out: {source_name} - {title[:30]}")
-                        continue
-                    
-                    # 過濾天氣新聞
-                    if is_weather_news(title, description):
-                        print(f"  Filtered out (weather): {title[:30]}")
-                        continue
-                    
                     processed = {
                         "id": article.get("article_id"),
-                        "title": title,
-                        "description": description,
-                        "link": link,
+                        "title": article.get("title"),
+                        "description": article.get("description"),
+                        "link": article.get("link"),
                         "pubDate": article.get("pubDate"),
-                        "source_name": source_name,
+                        "source_name": article.get("source_name"),
                         "image_url": article.get("image_url"),
                         "keywords": article.get("keywords", []),
                         "category": article.get("category", [category]),
@@ -215,7 +173,7 @@ def generate_html_content(articles):
     return html
 
 def main():
-    articles = fetch_news(days=7, max_per_category=20)
+    articles = fetch_news(days=7, max_per_category=10)
     
     if not articles:
         print("No articles fetched!")
