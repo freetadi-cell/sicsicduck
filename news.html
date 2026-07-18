@@ -1189,8 +1189,8 @@ document.querySelectorAll('.category-tab').forEach(tab => {
             if (category === 'all') {
                 article.style.display = 'block';
             } else {
-                const articleCategories = article.dataset.category || '';
-                if (articleCategories.toLowerCase().includes(category.toLowerCase())) {
+                const articleCategories = (article.dataset.category || '').split(',').map(c => c.trim().toLowerCase());
+                if (articleCategories.includes(category.toLowerCase())) {
                     article.style.display = 'block';
                 } else {
                     article.style.display = 'none';
