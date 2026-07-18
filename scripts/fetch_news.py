@@ -114,19 +114,31 @@ def fetch_news(days=7, max_per_category=10):
     return articles
 
 def save_news(articles):
-    """Save articles to JSON file"""
+    """Save articles to JSON file with deduplication"""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Remove duplicates based on title
+    seen_titles = set()
+    unique_articles = []
+    for article in articles:
+        title = article.get('title', '')
+        if title and title not in seen_titles:
+            seen_titles.add(title)
+            unique_articles.append(article)
     
     data = {
         "last_updated": datetime.now().isoformat(),
-        "total": len(articles),
-        "articles": articles
+        "total": len(unique_articles),
+        "articles": unique_articles
     }
     
     with open(NEWS_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
-    print(f"\nTotal: {len(articles)} articles saved to {NEWS_FILE}")
+    removed = len(articles) - len(unique_articles)
+    if removed > 0:
+        print(f"Removed {removed} duplicate articles")
+    print(f"\nTotal: {len(unique_articles)} articles saved to {NEWS_FILE}")
 
 def generate_html_content(articles):
     """Generate HTML content for news cards"""

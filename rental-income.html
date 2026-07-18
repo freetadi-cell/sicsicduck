@@ -342,7 +342,7 @@ function renderTable(){
             <td class="yield-cell ${cls}">
                 ${e.yield.toFixed(2)}%
             </td>
-            <td style="color:var(--gray-600);font-weight:500">${e.building_age}年</td>
+            <td style="color:var(--gray-600);font-weight:500">${e.building_age || '--'}年</td>
             <td><span class="district-badge">${e.district}</span></td>
             <td style="font-weight:600">$${e.avg_price_sqft.toLocaleString()}/呎</td>
             <td style="color:var(--gray-600)">$${e.avg_rent_sqft}/呎</td>
