@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美債孳息率 | 食息鴨</title>
-    <meta name="description" content="美國國債孳息率實時數據，不同年期債券利率">
-    <meta name="keywords" content="美債,國債,孳息率,債券利率,yield curve">
+    <title>食息鴨 | 美國國債孳息率</title>
+    <meta name="description" content="美國國債不同年期孳息率實時數據，包括3個月、2年、5年、10年、30年期國債收益率，每10分鐘自動更新。">
+    <meta name="keywords" content="美國國債,國債孳息率,美債收益率,treasury yields,美國利率,債券收益率">
+    <link rel="canonical" href="https://sicsicduck.com/treasury-yields.html">
+    <meta property="og:title" content="食息鴨 | 美國國債孳息率">
+    <meta property="og:description" content="美國國債不同年期孳息率實時數據，每10分鐘自動更新。">
+    <meta property="og:url" content="https://sicsicduck.com/treasury-yields.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:site_name" content="食息鴨">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="食息鴨 | 美國國債孳息率">
+    <meta name="twitter:description" content="美國國債不同年期孳息率實時數據，每10分鐘自動更新。">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,15 +25,16 @@
             --gold-50: #FFFFF0;
             --gold-100: #FFFDE7;
             --gold-200: #FFF9C4;
-            --gold-300: #FFE082;
-            --gold-400: #FFD54F;
-            --gold-500: #FFC107;
-            --gold-600: #FFB300;
-            --gold-700: #FFA000;
-            --gold-800: #FF8F00;
-            --gold-900: #FF6F00;
-            --gray-50: #FAFAFA;
-            --gray-100: #F5F5F5;
+            --gold-300: #FFF59D;
+            --gold-400: #FFEE58;
+            --gold-500: #FDD835;
+            --gold-600: #FBC02D;
+            --gold-700: #F9A825;
+            --gold-800: #F57F17;
+            --gold-900: #E65100;
+            --white: #FFFFFF;
+            --gray-50: #FFFFF5;
+            --gray-100: #FFFDE0;
             --gray-200: #EEEEEE;
             --gray-300: #E0E0E0;
             --gray-400: #BDBDBD;
@@ -32,26 +43,24 @@
             --gray-700: #616161;
             --gray-800: #424242;
             --gray-900: #212121;
-            --white: #FFFFFF;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-            --shadow-xl: 0 10px 40px rgba(0,0,0,0.12);
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Inter', 'Noto Sans TC', sans-serif;
-            background: var(--gray-50);
+            font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gold-100);
             color: var(--gray-800);
             line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-        
-        /* Header */
+
+        /* ===== Header ===== */
         .header {
             background: #F3F3F3;
             color: var(--white);
@@ -61,7 +70,7 @@
             z-index: 100;
             box-shadow: 0 1px 8px rgba(0,0,0,0.08);
         }
-        
+
         .header-inner {
             max-width: 1200px;
             margin: 0 auto;
@@ -71,13 +80,14 @@
             gap: 8px;
             height: 44px;
         }
-        
+
+        /* Dropdown nav */
         .nav-dropdown-wrap {
             position: relative;
             margin-right: 4px;
             margin-left: -10px;
         }
-        
+
         .nav-dropdown-btn {
             height: 36px;
             padding: 0 14px;
@@ -94,17 +104,16 @@
             transition: background 0.15s;
             white-space: nowrap;
         }
-        
         .nav-dropdown-btn::after {
             content: '▾';
             font-size: 12px;
             color: var(--gray-500);
         }
-        
+
         .nav-dropdown-btn:hover {
             background: var(--gold-200);
         }
-        
+
         .nav-dropdown {
             display: none;
             position: absolute;
@@ -118,11 +127,11 @@
             z-index: 200;
             overflow: hidden;
         }
-        
+
         .nav-dropdown.open {
             display: block;
         }
-        
+
         .nav-dropdown a {
             display: flex;
             align-items: center;
@@ -134,164 +143,181 @@
             font-weight: 500;
             transition: background 0.15s;
         }
-        
+
         .nav-dropdown a:hover {
             background: var(--gold-100);
             color: var(--gold-800);
         }
-        
+
         .nav-dropdown a.active {
             background: var(--gold-100);
             color: var(--gold-800);
             font-weight: 700;
         }
-        
+
         .nav-dropdown .dd-icon {
             font-size: 18px;
         }
-        
+
         .header-logo {
             height: 44px;
             width: auto;
             object-fit: contain;
         }
-        
-        /* Hero */
+
+        .layout {
+            min-height: calc(100vh - 44px);
+        }
+
+        .main-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* ===== Hero ===== */
         .hero {
             background: linear-gradient(180deg, var(--gold-100) 0%, var(--gold-50) 100%);
             padding: 40px 24px 32px;
             text-align: center;
         }
-        
+
         .hero h1 {
             font-size: 28px;
             font-weight: 800;
             color: var(--gold-800);
             margin-bottom: 8px;
         }
-        
+
         .hero p {
             font-size: 15px;
             color: var(--gray-600);
             max-width: 600px;
             margin: 0 auto;
         }
-        
-        /* Main Content */
-        .main-content {
+
+        /* ===== Summary Cards ===== */
+        .summary-strip {
             max-width: 1200px;
-            margin: 40px auto;
+            margin: -20px auto 0;
             padding: 0 24px;
-        }
-        
-        /* Update Info */
-        .update-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-            padding: 16px 20px;
-            background: var(--white);
-            border-radius: 12px;
-            border: 1px solid var(--gray-200);
-        }
-        
-        .update-time {
-            font-size: 13px;
-            color: var(--gray-600);
-        }
-        
-        .update-time strong {
-            color: var(--gray-800);
-        }
-        
-        .refresh-btn {
-            padding: 8px 16px;
-            background: var(--gold-500);
-            color: var(--white);
-            border: none;
-            border-radius: 8px;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        
-        .refresh-btn:hover {
-            background: var(--gold-600);
-        }
-        
-        .refresh-btn:disabled {
-            background: var(--gray-400);
-            cursor: not-allowed;
-        }
-        
-        /* Yields Grid */
-        .yields-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(5, 1fr);
             gap: 16px;
-            margin-bottom: 40px;
+            position: relative;
+            z-index: 10;
         }
-        
-        .yield-card {
+
+        .summary-card {
             background: var(--white);
-            border-radius: 12px;
-            padding: 24px;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-lg);
             text-align: center;
-            border: 1px solid var(--gray-200);
+            border: 1px solid var(--gold-200);
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        
-        .yield-card:hover {
+
+        .summary-card:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-xl);
         }
-        
-        .yield-maturity {
-            font-size: 14px;
-            color: var(--gray-600);
-            margin-bottom: 8px;
+
+        .summary-card .label {
+            font-size: 12px;
+            color: var(--gray-500);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
         }
-        
-        .yield-value {
-            font-size: 32px;
-            font-weight: 700;
+
+        .summary-card .value {
+            font-size: 28px;
+            font-weight: 800;
             color: var(--gold-700);
         }
-        
-        /* Yield Curve Info */
-        .yield-curve-info {
+
+        .summary-card .sub {
+            font-size: 11px;
+            color: var(--gray-400);
+            margin-top: 2px;
+        }
+
+        /* ===== Update Info ===== */
+        .update-info {
+            max-width: 1200px;
+            margin: 32px auto 0;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        .update-time {
+            font-size: 13px;
+            color: var(--gray-500);
+        }
+
+        .update-time strong {
+            color: var(--gold-700);
+        }
+
+        /* ===== Yields Grid ===== */
+        .yields-wrap {
+            max-width: 1200px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
+
+        .yields-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+        }
+
+        .yield-card {
             background: var(--white);
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 24px;
-            border: 1px solid var(--gray-200);
-            margin-bottom: 40px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            border: 1px solid var(--gold-200);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        
-        .yield-curve-info h2 {
-            font-size: 18px;
-            color: var(--gray-800);
-            margin-bottom: 16px;
+
+        .yield-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
         }
-        
-        .yield-curve-info p {
+
+        .yield-label {
             font-size: 14px;
             color: var(--gray-600);
-            line-height: 1.7;
-        }
-        
-        .yield-curve-info ul {
-            margin-top: 12px;
-            padding-left: 20px;
-        }
-        
-        .yield-curve-info li {
-            font-size: 14px;
-            color: var(--gray-600);
+            font-weight: 600;
             margin-bottom: 8px;
         }
-        
+
+        .yield-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--gold-700);
+        }
+
+        .yield-pct {
+            font-size: 16px;
+            color: var(--gold-600);
+        }
+
+        .yield-ticker {
+            font-size: 11px;
+            color: var(--gray-400);
+            margin-top: 8px;
+        }
+
+        .yield-source {
+            font-size: 10px;
+            color: var(--gray-400);
+            margin-top: 4px;
+        }
+
         /* Footer */
         .footer {
             max-width: 1200px;
@@ -299,7 +325,7 @@
             padding: 0 24px 40px;
             text-align: center;
         }
-        
+
         .disclaimer {
             background: var(--gold-100);
             border: 1px solid var(--gold-200);
@@ -309,18 +335,68 @@
             color: var(--gray-600);
             line-height: 1.7;
         }
-        
+
+        .disclaimer strong {
+            color: var(--gold-700);
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--gray-400);
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--gold-200);
+            border-top-color: var(--gold-600);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header-inner { padding: 12px 16px; }
+
             .hero h1 { font-size: 22px; }
             .hero { padding: 30px 16px 24px; }
-            .main-content { padding: 0 16px; margin: 30px auto; }
-            .update-info { flex-direction: column; gap: 12px; text-align: center; }
-            .yields-grid { grid-template-columns: repeat(2, 1fr); }
+
+            .summary-strip {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 0 16px;
+                gap: 10px;
+            }
+
+            .summary-card { padding: 14px; }
+            .summary-card .value { font-size: 22px; }
+
+            .yields-wrap { padding: 0 16px; }
+            .yields-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
             .yield-card { padding: 16px; }
             .yield-value { font-size: 24px; }
+
             .footer { padding: 0 16px 30px; }
+        }
+
+        @media (max-width: 480px) {
+            .summary-strip {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .yields-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -343,55 +419,62 @@
     </div>
 </header>
 
+<!-- Layout -->
+<div class="layout">
+    <div class="main-content">
+
 <!-- Hero -->
 <section class="hero">
-    <h1>📊 美債孳息率</h1>
-    <p>美國國債不同年期孳息率實時數據</p>
+    <div style="font-size:13px;color:var(--gray-500);margin-bottom:8px;" id="heroUpdateTime">最後更新:載入中...</div>
+    <h1>📊 美國國債孳息率</h1>
+    <p>美國國債不同年期孳息率實時數據，每10分鐘自動更新</p>
 </section>
 
-<!-- Main Content -->
-<div class="main-content">
-    <!-- Update Info -->
-    <div class="update-info">
-        <div class="update-time">
-            最後更新：<strong><span id="lastUpdated">2026-07-18T22:50:10</span></strong>
-            <span style="color: var(--gray-400); margin-left: 8px;">(每10分鐘自動更新)</span>
-        </div>
-        <button class="refresh-btn" onclick="refreshData()">🔄 重新載入</button>
+<!-- Summary Cards -->
+<div class="summary-strip" id="summaryCards">
+    <div class="summary-card">
+        <div class="label">3個月</div>
+        <div class="value" id="yield3m">--</div>
+        <div class="sub">短期</div>
     </div>
+    <div class="summary-card">
+        <div class="label">2年</div>
+        <div class="value" id="yield2y">--</div>
+        <div class="sub">中期</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">5年</div>
+        <div class="value" id="yield5y">--</div>
+        <div class="sub">中期</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">10年</div>
+        <div class="value" id="yield10y">--</div>
+        <div class="sub">長期</div>
+    </div>
+    <div class="summary-card">
+        <div class="label">30年</div>
+        <div class="value" id="yield30y">--</div>
+        <div class="sub">長期</div>
+    </div>
+</div>
 
-    <!-- Yields Grid -->
+<!-- Update Info -->
+<div class="update-info">
+    <div class="update-time">
+        最後更新：<strong><span id="lastUpdated">--</span></strong>
+        <span style="color: var(--gray-400); margin-left: 8px;">(每10分鐘自動更新)</span>
+    </div>
+</div>
+
+<!-- Yields Grid -->
+<div class="yields-wrap">
     <div class="yields-grid" id="yieldsGrid">
-            <div class="yield-card">
-                <div class="yield-maturity">3M</div>
-                <div class="yield-value">3.707%</div>
-            </div>
-            <div class="yield-card">
-                <div class="yield-maturity">2Y</div>
-                <div class="yield-value">4.273%</div>
-            </div>
-            <div class="yield-card">
-                <div class="yield-maturity">5Y</div>
-                <div class="yield-value">4.273%</div>
-            </div>
-            <div class="yield-card">
-                <div class="yield-maturity">10Y</div>
-                <div class="yield-value">4.541%</div>
-            </div>
-            <div class="yield-card">
-                <div class="yield-maturity">30Y</div>
-                <div class="yield-value">5.064%</div>
-            </div>
+        <!-- Cards will be generated by JavaScript -->
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            載入美債孳息率數據中...
         </div>
-        <!-- Yield Curve Info -->
-    <div class="yield-curve-info">
-        <h2>📌 關於美債孳息率</h2>
-        <p>美國國債孳息率（Treasury Yield）係投資者持有美國政府債券至到期日所能獲得嘅回報率。唔同期間嘅國債孳息率會唔同，形成孳息率曲線（Yield Curve）。</p>
-        <ul>
-            <li><strong>短息（3個月 - 2年）</strong>：反映短期利率預期，受聯儲局政策影響較大</li>
-            <li><strong>中息（5年 - 7年）</strong>：中期利率水平，反映經濟增長同通脹預期</li>
-            <li><strong>長息（10年 - 30年）</strong>：長期利率水平，反映長期經濟前景同通脹預期</li>
-        </ul>
     </div>
 </div>
 
@@ -399,35 +482,105 @@
 <div class="footer">
     <div class="disclaimer">
         <strong>⚠️ 免責聲明</strong><br>
-        本網站所載之一切資訊僅供參考，不構成任何投資、財務或稅務建議。投資者應根據自身情況作出獨立判斷，並在有需要時諮詢專業財務顧問。<br>
-        聯絡我們：<a href="mailto:hello@sicsicduck.com" style="color:var(--gold-700)">hello@sicsicduck.com</a>
+        1. 本網站純屬個人興趣及學習用途，由獨立開發者營運，並非持牌金融機構或財務顧問。<br>
+        2. 美債孳息率會不時變動，本網站數據每10分鐘更新，可能未即時反映最新變動。所有數據請以官方來源為準。<br>
+        3. 本網站所載之一切資訊僅供參考，不構成任何投資、財務或稅務建議。投資者應根據自身情況作出獨立判斷，並在有需要時諮詢專業財務顧問。<br>
+        <span style="color:var(--gray-400);font-size:11px">數據來源: Yahoo Finance</span><br>
+        聯絡我們:<a href="mailto:hello@sicsicduck.com" style="color:var(--gold-700)">hello@sicsicduck.com</a>
+        <br><a href="https://www.facebook.com/share/14pL95Q6R8n/" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;"><img src="fb-badge.jpg" alt="Facebook 專頁" style="height:32px;vertical-align:middle;border-radius:4px;"></a>
     </div>
 </div>
 
+    </div><!-- end main-content -->
+</div><!-- end layout -->
+
 <script>
-// Toggle dropdown nav
+// Toggle navigation dropdown
 function toggleNav() {
     document.getElementById('navDropdown').classList.toggle('open');
 }
 
 // Close dropdown when clicking outside
-document.addEventListener('click', function(e) {
-    const wrap = document.querySelector('.nav-dropdown-wrap');
-    if (!wrap.contains(e.target)) {
-        document.getElementById('navDropdown').classList.remove('open');
+document.addEventListener('click', (e) => {
+    const dropdown = document.getElementById('navDropdown');
+    const btn = document.querySelector('.nav-dropdown-btn');
+    if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+        dropdown.classList.remove('open');
     }
 });
 
-// Refresh data (reload page)
-function refreshData() {
-    const btn = document.querySelector('.refresh-btn');
-    btn.disabled = true;
-    btn.textContent = '🔄 更新中...';
-    
-    setTimeout(() => {
-        location.reload();
-    }, 500);
+// Load treasury yields data
+async function loadYields() {
+    try {
+        const response = await fetch('data/treasury_yields.json');
+        const data = await response.json();
+        
+        // Update time
+        const updateTime = new Date(data.last_updated);
+        const timeStr = updateTime.toLocaleString('zh-HK', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false,
+            timeZone: 'Asia/Hong_Kong'
+        });
+        
+        document.getElementById('lastUpdated').textContent = timeStr;
+        document.getElementById('heroUpdateTime').textContent = `最後更新: ${timeStr}`;
+        
+        // Update summary cards
+        const yields = data.yields;
+        
+        document.getElementById('yield3m').textContent = yields['3M']?.yield?.toFixed(3) + '%' || '--';
+        document.getElementById('yield2y').textContent = yields['2Y']?.yield?.toFixed(3) + '%' || '--';
+        document.getElementById('yield5y').textContent = yields['5Y']?.yield?.toFixed(3) + '%' || '--';
+        document.getElementById('yield10y').textContent = yields['10Y']?.yield?.toFixed(3) + '%' || '--';
+        document.getElementById('yield30y').textContent = yields['30Y']?.yield?.toFixed(3) + '%' || '--';
+        
+        // Generate yields grid
+        const yieldsGrid = document.getElementById('yieldsGrid');
+        yieldsGrid.innerHTML = '';
+        
+        const labels = {
+            '3M': { label: '3個月', type: '短期' },
+            '2Y': { label: '2年', type: '中期' },
+            '5Y': { label: '5年', type: '中期' },
+            '10Y': { label: '10年', type: '長期' },
+            '30Y': { label: '30年', type: '長期' }
+        };
+        
+        for (const [key, value] of Object.entries(yields)) {
+            const info = labels[key];
+            const card = document.createElement('div');
+            card.className = 'yield-card';
+            card.innerHTML = `
+                <div class="yield-label">${info.label}</div>
+                <div class="yield-value">${value.yield.toFixed(3)}<span class="yield-pct">%</span></div>
+                <div style="font-size:12px;color:var(--gray-500);margin-top:8px;">${info.type}</div>
+                <div class="yield-ticker">Ticker: ${value.ticker}</div>
+                <div class="yield-source">來源: ${value.source}</div>
+            `;
+            yieldsGrid.appendChild(card);
+        }
+        
+    } catch (error) {
+        console.error('Error loading yields:', error);
+        document.getElementById('yieldsGrid').innerHTML = `
+            <div class="loading">
+                <div style="font-size:14px;color:var(--gray-600);">載入失敗，請稍後再試</div>
+            </div>
+        `;
+    }
 }
+
+// Load on page load
+loadYields();
+
+// Auto-refresh every 10 minutes
+setInterval(loadYields, 10 * 60 * 1000);
 </script>
 
 </body>
