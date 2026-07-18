@@ -134,10 +134,10 @@ def generate_html_content(articles):
     html = ""
     
     for article in articles:
-        # Generate emoji based on keywords or random
         image_url = article.get("image_url") or ""
+        link = article.get("link", "#")
         
-        html += f'''        <article class="article-card">
+        html += f'''        <a href="{link}" target="_blank" class="article-card">
             <div class="article-image"{'style="background-image:url(' + image_url + ');background-size:cover;background-position:center"' if image_url else ''}>{'📊' if not image_url else ''}</div>
             <div class="article-content">
                 <h3 class="article-title">{article["title"]}</h3>
@@ -146,7 +146,7 @@ def generate_html_content(articles):
                     <span class="article-date">📅 {article.get("pubDate", "")[:10] if article.get("pubDate") else ""}</span>
                 </div>
             </div>
-        </article>
+        </a>
 '''
     
     return html
