@@ -1,0 +1,187 @@
+#!/usr/bin/env python3
+"""
+Fetch Chinese financial news from NewsData.io for sicsicduck.com
+"""
+
+import requests
+import json
+import os
+from datetime import datetime, timedelta
+from pathlib import Path
+
+# API Configuration
+API_KEY = "pub_00e12f838504473cab89480d31d35522"
+BASE_URL = "https://newsdata.io/api/1/news"
+
+# Paths
+SCRIPT_DIR = Path(__file__).parent
+DATA_DIR = SCRIPT_DIR.parent / "data"
+NEWS_FILE = DATA_DIR / "news.json"
+
+def fetch_news(days=7, max_articles=50):
+    """
+    Fetch Chinese business news from NewsData.io
+    
+    Args:
+        days: Number of days to look back
+        max_articles: Maximum number of articles to fetch
+    """
+    # Calculate date range
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=days)
+    
+    articles = []
+    page = None
+    
+    print(f"Fetching Chinese financial news from NewsData.io...")
+    print(f"Filtering articles from the last {days} days")
+    
+    while len(articles) < max_articles:
+        # Free tier doesn't support date filtering, so we fetch and filter manually
+        params = {
+            "apikey": API_KEY,
+            "language": "zh",  # Chinese
+            "category": "business",  # Financial news
+            "country": "hk",  # Hong Kong
+        }
+        
+        if page:
+            params["page"] = page
+        
+        try:
+            response = requests.get(BASE_URL, params=params, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+            
+            if data.get("status") != "success":
+                print(f"API error: {data.get('message', 'Unknown error')}")
+                break
+            
+            results = data.get("results", [])
+            
+            if not results:
+                print("No more results")
+                break
+            
+            for article in results:
+                # Parse publish date
+                pub_date_str = article.get("pubDate")
+                if pub_date_str:
+                    try:
+                        # Parse ISO format: "2026-07-17 19:38:41"
+                        pub_date = datetime.strptime(pub_date_str[:19], "%Y-%m-%d %H:%M:%S")
+                        # Filter by date range
+                        if pub_date < start_date:
+                            continue
+                    except ValueError:
+                        pass
+                
+                # Extract relevant fields
+                processed = {
+                    "id": article.get("article_id"),
+                    "title": article.get("title"),
+                    "description": article.get("description"),
+                    "link": article.get("link"),
+                    "pubDate": article.get("pubDate"),
+                    "source_name": article.get("source_name"),
+                    "image_url": article.get("image_url"),
+                    "keywords": article.get("keywords", []),
+                }
+                
+                # Skip if no title
+                if not processed["title"]:
+                    continue
+                
+                articles.append(processed)
+                
+                if len(articles) >= max_articles:
+                    break
+            
+            print(f"Fetched {len(articles)} articles so far...")
+            
+            # Check for next page
+            next_page = data.get("next_page")
+            if not next_page:
+                break
+            page = next_page
+            
+        except requests.RequestException as e:
+            print(f"Request error: {e}")
+            break
+        except json.JSONDecodeError as e:
+            print(f"JSON decode error: {e}")
+            break
+    
+    return articles[:max_articles]
+
+def save_news(articles):
+    """Save articles to JSON file"""
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    
+    data = {
+        "last_updated": datetime.now().isoformat(),
+        "total": len(articles),
+        "articles": articles
+    }
+    
+    with open(NEWS_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    
+    print(f"Saved {len(articles)} articles to {NEWS_FILE}")
+
+def generate_html_content(articles):
+    """Generate HTML content for news cards"""
+    html = ""
+    
+    for article in articles:
+        # Generate emoji based on keywords or random
+        image_url = article.get("image_url") or ""
+        
+        html += f'''        <article class="article-card">
+            <div class="article-image"{'style="background-image:url(' + image_url + ');background-size:cover;background-position:center"' if image_url else ''}>{'📊' if not image_url else ''}</div>
+            <div class="article-content">
+                <h3 class="article-title">{article["title"]}</h3>
+                <div class="article-meta">
+                    <span class="article-source">{article.get("source_name", "")}</span>
+                    <span class="article-date">📅 {article.get("pubDate", "")[:10] if article.get("pubDate") else ""}</span>
+                </div>
+            </div>
+        </article>
+'''
+    
+    return html
+
+def main():
+    # Fetch news
+    articles = fetch_news(days=7, max_articles=50)
+    
+    if not articles:
+        print("No articles fetched!")
+        return
+    
+    # Save to JSON
+    save_news(articles)
+    
+    # Generate HTML content
+    html_content = generate_html_content(articles)
+    
+    # Read current news.html
+    news_html_path = SCRIPT_DIR.parent / "news.html"
+    with open(news_html_path, "r", encoding="utf-8") as f:
+        html_content_full = f.read()
+    
+    # Replace articles grid content
+    import re
+    pattern = r'<div class="articles-grid" id="articlesGrid">.*?</div>\s*</section>'
+    replacement = f'<div class="articles-grid" id="articlesGrid">\n{html_content}    </div>\n</section>'
+    
+    new_html = re.sub(pattern, replacement, html_content_full, flags=re.DOTALL)
+    
+    # Write updated HTML
+    with open(news_html_path, "w", encoding="utf-8") as f:
+        f.write(new_html)
+    
+    print(f"Updated {news_html_path}")
+
+if __name__ == "__main__":
+    main()
