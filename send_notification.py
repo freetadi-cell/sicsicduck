@@ -40,7 +40,7 @@ print(f'Body: {body}')
 for token in tokens:
     msg = messaging.Message(
         notification=messaging.Notification(title=title, body=body),
-        token=***
+        token=token
     )
     try:
         r = messaging.send(msg)

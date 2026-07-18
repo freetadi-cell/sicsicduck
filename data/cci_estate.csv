@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="zh-hk">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/shared/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/shared/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/shared/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/shared/img/favicon/site.webmanifest" crossorigin="use-credentials">
+    <link rel="shortcut icon" href="/assets/shared/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/assets/shared/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>找不到網頁</title>
+    <link href="/assets/themes/main/css/style.css?v=1" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/themes/main/css/bw-site.css?v=1">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="page-head page-head--404">
+        <div class="container">
+        <a class="page-logo" href="/tc">
+            <img class="page-logo__img" src="/assets/shared/img/logo_psi-portal.png" srcset="/assets/shared/img/logo_psi-portal-2x.png 2x, /assets/shared/img/logo_psi-portal.png 1x" alt="DATA.GOV.HK" loading="lazy">
+        </a>
+      </div>
+    </header>
+    <main class="page-content page-content--404">
+      <div class="container container--inner">
+        <div class="error-box">
+          <div class="error-box__left">
+            <h1>
+              找不到網頁
+            </h1>
+            <p>抱歉，你訪問的網頁不存在，<br>
+             請檢查是否輸入錯誤。</p>
+            <div class="error-box__btns">
+              <!-- <a class="error-box__btn btn btn--ghost px-8 py-3" href="javascript:history.back();">Previous Page /
+                上一頁</a> -->
+              <a class="error-box__btn btn btn--ghost px-8 py-3" href="/tc"><span class="ico ico--home"></span>回到主頁</a>
+            </div>
+          </div>
+          <div class="error-box__right">
+            <figure>
+              <img alt="找不到網頁" src="/assets/shared/img/svg/cartoons/cartoon-404.svg" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

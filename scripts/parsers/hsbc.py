@@ -78,9 +78,10 @@ def parse(text, tables=None, html=None):
     
     # === Preferential New Fund CNY ===
     cny_pref = {}
+    # Look for RMB section with "Minimum deposit amount: RMB"
     cny_pref_match = re.search(
-        r'Preferential.*?RMB.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
-        pref_text, re.DOTALL | re.IGNORECASE
+        r'Minimum deposit amount:\s*RMB\d+,\d+.*?Tenor.*?Time Deposit Interest Rates.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
+        text, re.DOTALL | re.IGNORECASE
     )
     if cny_pref_match:
         block = cny_pref_match.group(1)

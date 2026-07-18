@@ -186,6 +186,18 @@ def merge_and_save(price_data, rent_data):
     """Merge price and rent data, calculate yields, save to JSON"""
     log("合併數據並計算回報率...")
 
+    # Load completion years data
+    completion_years_path = DATA_DIR / 'estate_completion_years.json'
+    completion_years = {}
+    if completion_years_path.exists():
+        with open(completion_years_path, 'r', encoding='utf-8') as f:
+            comp_data = json.load(f)
+            completion_years = comp_data.get('estates', {})
+        log(f"已載入 {len(completion_years)} 個屋苑嘅入伙年份數據")
+
+    # Calculate current year for building age
+    current_year = datetime.now().year
+
     results = []
     for name, pdata in price_data.items():
         if name not in rent_data:
@@ -202,6 +214,12 @@ def merge_and_save(price_data, rent_data):
         district_zh = DISTRICT_MAP.get(dist_key, dist_key)
         district_code = DISTRICT_CODE_MAP.get(dist_key, '')
 
+        # Get completion year and calculate building age
+        completion_year = completion_years.get(name)
+        building_age = None
+        if completion_year and completion_year > 0:
+            building_age = current_year - completion_year
+
         results.append({
             'name': name,
             'name_en': name,
@@ -209,7 +227,8 @@ def merge_and_save(price_data, rent_data):
             'district_code': district_code,
             'avg_price_sqft': price_sqft,
             'avg_rent_sqft': rent_sqft,
-            'yield': round(rental_yield, 2) if rental_yield else None
+            'yield': round(rental_yield, 2) if rental_yield else None,
+            'building_age': building_age
         })
 
     results.sort(key=lambda x: x.get('yield') or 0, reverse=True)

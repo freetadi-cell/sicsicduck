@@ -21,13 +21,57 @@ def load_data():
 
 
 def get_top5(banks, currency_key):
-    """Get top 5 banks by 3m rate for given currency."""
+    """Get top 5 banks by best rate across all periods for given currency.
+    Excludes exchange rates (currency conversion rates)."""
+    PERIODS = ["1w", "1m", "2m", "3m", "4m", "6m", "9m", "12m"]
+    PERIOD_NAMES = {
+        "1w": "1星期", "1m": "1個月", "2m": "2個月",
+        "3m": "3個月", "4m": "4個月", "6m": "6個月",
+        "9m": "9個月", "12m": "12個月"
+    }
+    
     entries = []
     for b in banks:
-        rate_info = b[currency_key].get("3m", {})
-        rate = rate_info.get("rate")
-        if rate is not None:
-            entries.append((b["name"], rate, rate_info.get("note", "")))
+        best_rate = None
+        best_period = None
+        best_note = ""
+        
+        for period in PERIODS:
+            period_data = b[currency_key].get(period, {})
+            
+            # Check if new structure (has new_funds/existing_funds/exchange)
+            if "new_funds" in period_data or "existing_funds" in period_data or "exchange" in period_data:
+                # New structure - get best rate from new_funds or existing_funds only (skip exchange)
+                for slot in ["new_funds", "existing_funds"]:
+                    slot_data = period_data.get(slot, {})
+                    rate = slot_data.get("rate")
+                    if rate is not None and (best_rate is None or rate > best_rate):
+                        best_rate = rate
+                        best_period = period
+                        note = slot_data.get("note", "")
+                        if slot == "new_funds":
+                            note = note + "（新資金）" if note else "新資金"
+                        best_note = note
+            else:
+                # Old structure - skip if it's exchange rate
+                conditions = period_data.get("conditions", [])
+                if "exchange" in conditions:
+                    continue
+                
+                rate = period_data.get("rate")
+                if rate is not None and (best_rate is None or rate > best_rate):
+                    best_rate = rate
+                    best_period = period
+                    fund_type = period_data.get("fund_type", "")
+                    if fund_type == "new_funds":
+                        best_note = "新資金"
+                    else:
+                        best_note = period_data.get("note", "")
+        
+        if best_rate is not None:
+            period_name = PERIOD_NAMES.get(best_period, best_period)
+            entries.append((b["name"], best_rate, period_name, best_note))
+    
     entries.sort(key=lambda x: x[1], reverse=True)
     return entries[:5]
 
@@ -37,7 +81,7 @@ def format_top5(title, entries):
     lines = [f"\n📊 {title}"]
     i = 0
     while i < len(entries):
-        name, rate, note = entries[i]
+        name, rate, period, note = entries[i]
         # Check for ties
         tied = [entries[i]]
         j = i + 1
@@ -50,10 +94,12 @@ def format_top5(title, entries):
         if len(tied) > 1:
             # Tie - show all with same medal
             medal = MEDAL_EMOJI[i] if i < len(MEDAL_EMOJI) else f"{i+1}."
-            for t_name, t_rate, t_note in tied:
-                lines.append(f"{medal} {t_name} — {t_rate}%（並列第{i+1}）")
+            for t_name, t_rate, t_period, t_note in tied:
+                note_str = f" {t_note}" if t_note else ""
+                lines.append(f"{medal} {t_name} — {t_rate}% ({t_period})（並列第{i+1}）{note_str}")
         else:
-            lines.append(f"{medal} {name} — {rate}%")
+            note_str = f" {note}" if note else ""
+            lines.append(f"{medal} {name} — {rate}% ({period}){note_str}")
         
         i = j  # Skip past tied entries
     
