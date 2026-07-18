@@ -379,6 +379,9 @@
 <div class="category-tabs">
     <button class="category-tab active" data-category="all">全部</button>
     <button class="category-tab" data-category="business">財經</button>
+    <button class="category-tab" data-category="stock">股市</button>
+    <button class="category-tab" data-category="property">地產</button>
+    <button class="category-tab" data-category="interest">利率</button>
     <button class="category-tab" data-category="technology">科技</button>
     <button class="category-tab" data-category="entertainment">娛樂</button>
     <button class="category-tab" data-category="sports">體育</button>
@@ -1141,6 +1144,51 @@ document.addEventListener('click', function(e) {
     if (!wrap.contains(e.target)) {
         document.getElementById('navDropdown').classList.remove('open');
     }
+});
+
+// 自動歸類新聞到股市、地產、利率
+function classifyArticle(article) {
+    const title = article.querySelector('.article-title').textContent.toLowerCase();
+    const description = article.querySelector('.article-description').textContent.toLowerCase();
+    const text = title + ' ' + description;
+    
+    // 股市關鍵字
+    const stockKeywords = ['股票', '港股', '美股', '股市', '恒指', '納指', '道指', '上證', '深證', 'a股', 'ipo', '股份', '股價', '升市', '跌市', '牛市', '熊市', '成交', '恆生', '證券', '股票', '基金'];
+    
+    // 地產關鍵字
+    const propertyKeywords = ['地產', '樓市', '樓價', '屋苑', '物業', '住宅', '新盤', '樓花', '成交', '租金', '買樓', '賣樓', '地皮', '發展商', '地產商', '樓宇', '房地產', '置業', '按揭'];
+    
+    // 利率關鍵字
+    const interestKeywords = ['利率', '利息', '息口', '加息', '減息', '聯儲局', '央行', '基準利率', '存款利率', '貸款利率', '按揭利率', '孳息', '債息', '國債', '息率'];
+    
+    let categories = [];
+    
+    // 檢查股市
+    if (stockKeywords.some(kw => text.includes(kw))) {
+        categories.push('stock');
+    }
+    
+    // 檢查地產
+    if (propertyKeywords.some(kw => text.includes(kw))) {
+        categories.push('property');
+    }
+    
+    // 檢查利率
+    if (interestKeywords.some(kw => text.includes(kw))) {
+        categories.push('interest');
+    }
+    
+    // 更新 data-category
+    if (categories.length > 0) {
+        const existingCategories = article.dataset.category || '';
+        const newCategories = existingCategories + ',' + categories.join(',');
+        article.dataset.category = newCategories;
+    }
+}
+
+// 自動歸類所有新聞
+document.querySelectorAll('.article-card').forEach(article => {
+    classifyArticle(article);
 });
 
 // Category filter
