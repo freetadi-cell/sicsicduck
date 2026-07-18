@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美債孳息率 | 食息鴨</title>
+    <meta name="description" content="美國國債孳息率實時數據，不同年期債券利率">
+    <meta name="keywords" content="美債,國債,孳息率,債券利率,yield curve">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-50: #FFFFF0;
+            --gold-100: #FFFDE7;
+            --gold-200: #FFF9C4;
+            --gold-300: #FFE082;
+            --gold-400: #FFD54F;
+            --gold-500: #FFC107;
+            --gold-600: #FFB300;
+            --gold-700: #FFA000;
+            --gold-800: #FF8F00;
+            --gold-900: #FF6F00;
+            --gray-50: #FAFAFA;
+            --gray-100: #F5F5F5;
+            --gray-200: #EEEEEE;
+            --gray-300: #E0E0E0;
+            --gray-400: #BDBDBD;
+            --gray-500: #9E9E9E;
+            --gray-600: #757575;
+            --gray-700: #616161;
+            --gray-800: #424242;
+            --gray-900: #212121;
+            --white: #FFFFFF;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --shadow-xl: 0 10px 40px rgba(0,0,0,0.12);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background: var(--gray-50);
+            color: var(--gray-800);
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-dropdown-wrap {
+            position: relative;
+            margin-right: 4px;
+            margin-left: -10px;
+        }
+        
+        .nav-dropdown-btn {
+            height: 36px;
+            padding: 0 14px;
+            border: none;
+            background: #F3F3F3;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-800);
+            transition: background 0.15s;
+            white-space: nowrap;
+        }
+        
+        .nav-dropdown-btn::after {
+            content: '▾';
+            font-size: 12px;
+            color: var(--gray-500);
+        }
+        
+        .nav-dropdown-btn:hover {
+            background: var(--gold-200);
+        }
+        
+        .nav-dropdown {
+            display: none;
+            position: absolute;
+            top: 44px;
+            left: 0;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border: 1px solid var(--gray-200);
+            min-width: 130px;
+            z-index: 200;
+            overflow: hidden;
+        }
+        
+        .nav-dropdown.open {
+            display: block;
+        }
+        
+        .nav-dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: var(--gray-700);
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.15s;
+        }
+        
+        .nav-dropdown a:hover {
+            background: var(--gold-100);
+            color: var(--gold-800);
+        }
+        
+        .nav-dropdown a.active {
+            background: var(--gold-100);
+            color: var(--gold-800);
+            font-weight: 700;
+        }
+        
+        .nav-dropdown .dd-icon {
+            font-size: 18px;
+        }
+        
+        .header-logo {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(180deg, var(--gold-100) 0%, var(--gold-50) 100%);
+            padding: 40px 24px 32px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--gold-800);
+            margin-bottom: 8px;
+        }
+        
+        .hero p {
+            font-size: 15px;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+        
+        /* Update Info */
+        .update-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 16px 20px;
+            background: var(--white);
+            border-radius: 12px;
+            border: 1px solid var(--gray-200);
+        }
+        
+        .update-time {
+            font-size: 13px;
+            color: var(--gray-600);
+        }
+        
+        .update-time strong {
+            color: var(--gray-800);
+        }
+        
+        .refresh-btn {
+            padding: 8px 16px;
+            background: var(--gold-500);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            background: var(--gold-600);
+        }
+        
+        .refresh-btn:disabled {
+            background: var(--gray-400);
+            cursor: not-allowed;
+        }
+        
+        /* Yields Grid */
+        .yields-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .yield-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .yield-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .yield-maturity {
+            font-size: 14px;
+            color: var(--gray-600);
+            margin-bottom: 8px;
+        }
+        
+        .yield-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--gold-700);
+        }
+        
+        /* Yield Curve Info */
+        .yield-curve-info {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid var(--gray-200);
+            margin-bottom: 40px;
+        }
+        
+        .yield-curve-info h2 {
+            font-size: 18px;
+            color: var(--gray-800);
+            margin-bottom: 16px;
+        }
+        
+        .yield-curve-info p {
+            font-size: 14px;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+        
+        .yield-curve-info ul {
+            margin-top: 12px;
+            padding-left: 20px;
+        }
+        
+        .yield-curve-info li {
+            font-size: 14px;
+            color: var(--gray-600);
+            margin-bottom: 8px;
+        }
+        
+        /* Footer */
+        .footer {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px 40px;
+            text-align: center;
+        }
+        
+        .disclaimer {
+            background: var(--gold-100);
+            border: 1px solid var(--gold-200);
+            border-radius: 12px;
+            padding: 16px 24px;
+            font-size: 12px;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner { padding: 12px 16px; }
+            .hero h1 { font-size: 22px; }
+            .hero { padding: 30px 16px 24px; }
+            .main-content { padding: 0 16px; margin: 30px auto; }
+            .update-info { flex-direction: column; gap: 12px; text-align: center; }
+            .yields-grid { grid-template-columns: repeat(2, 1fr); }
+            .yield-card { padding: 16px; }
+            .yield-value { font-size: 24px; }
+            .footer { padding: 0 16px 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-inner">
+        <div class="nav-dropdown-wrap">
+            <button class="nav-dropdown-btn" onclick="toggleNav()" aria-label="導航">📈 美債</button>
+            <div class="nav-dropdown" id="navDropdown">
+                <a href="index.html"><span class="dd-icon">🏦</span> 定存</a>
+                <a href="dividend-stocks.html"><span class="dd-icon">📈</span> 股息</a>
+                <a href="rental-income.html"><span class="dd-icon">🏠</span> 租值</a>
+                <a href="news.html"><span class="dd-icon">📰</span> 新聞</a>
+                <a href="treasury-yields.html" class="active"><span class="dd-icon">📊</span> 美債</a>
+            </div>
+        </div>
+        <img class="header-logo" src="logo.jpg" alt="食息鴨">
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>📊 美債孳息率</h1>
+    <p>美國國債不同年期孳息率實時數據</p>
+</section>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Update Info -->
+    <div class="update-info">
+        <div class="update-time">
+            最後更新：<strong><span id="lastUpdated">2026-07-18T19:45:14</span></strong>
+            <span style="color: var(--gray-400); margin-left: 8px;">(每10分鐘自動更新)</span>
+        </div>
+        <button class="refresh-btn" onclick="refreshData()">🔄 重新載入</button>
+    </div>
+
+    <!-- Yields Grid -->
+    <div class="yields-grid" id="yieldsGrid">
+            <div class="yield-card">
+                <div class="yield-maturity">3M</div>
+                <div class="yield-value">3.707%</div>
+            </div>
+            <div class="yield-card">
+                <div class="yield-maturity">2Y</div>
+                <div class="yield-value">4.273%</div>
+            </div>
+            <div class="yield-card">
+                <div class="yield-maturity">5Y</div>
+                <div class="yield-value">4.273%</div>
+            </div>
+            <div class="yield-card">
+                <div class="yield-maturity">10Y</div>
+                <div class="yield-value">4.541%</div>
+            </div>
+            <div class="yield-card">
+                <div class="yield-maturity">30Y</div>
+                <div class="yield-value">5.064%</div>
+            </div>
+        </div>
+        <!-- Yield Curve Info -->
+    <div class="yield-curve-info">
+        <h2>📌 關於美債孳息率</h2>
+        <p>美國國債孳息率（Treasury Yield）係投資者持有美國政府債券至到期日所能獲得嘅回報率。唔同期間嘅國債孳息率會唔同，形成孳息率曲線（Yield Curve）。</p>
+        <ul>
+            <li><strong>短息（3個月 - 2年）</strong>：反映短期利率預期，受聯儲局政策影響較大</li>
+            <li><strong>中息（5年 - 7年）</strong>：中期利率水平，反映經濟增長同通脹預期</li>
+            <li><strong>長息（10年 - 30年）</strong>：長期利率水平，反映長期經濟前景同通脹預期</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="disclaimer">
+        <strong>⚠️ 免責聲明</strong><br>
+        本網站所載之一切資訊僅供參考，不構成任何投資、財務或稅務建議。投資者應根據自身情況作出獨立判斷，並在有需要時諮詢專業財務顧問。<br>
+        聯絡我們：<a href="mailto:hello@sicsicduck.com" style="color:var(--gold-700)">hello@sicsicduck.com</a>
+    </div>
+</div>
+
+<script>
+// Toggle dropdown nav
+function toggleNav() {
+    document.getElementById('navDropdown').classList.toggle('open');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const wrap = document.querySelector('.nav-dropdown-wrap');
+    if (!wrap.contains(e.target)) {
+        document.getElementById('navDropdown').classList.remove('open');
+    }
+});
+
+// Refresh data (reload page)
+function refreshData() {
+    const btn = document.querySelector('.refresh-btn');
+    btn.disabled = true;
+    btn.textContent = '🔄 更新中...';
+    
+    setTimeout(() => {
+        location.reload();
+    }, 500);
+}
+</script>
+
+</body>
+</html>
