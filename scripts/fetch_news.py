@@ -114,7 +114,7 @@ def fetch_news(days=7, max_per_category=10):
     return articles
 
 def save_news(articles):
-    """Save articles to JSON file with deduplication"""
+    """Save articles to JSON file with deduplication and source filtering"""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     
     # Remove duplicates based on title
@@ -122,6 +122,13 @@ def save_news(articles):
     unique_articles = []
     for article in articles:
         title = article.get('title', '')
+        link = article.get('link', '')
+        
+        # Filter out HK01 and Singtao news sources
+        if 'hk01.com' in link or 'singtao' in link.lower() or 'stheadline' in link.lower():
+            print(f"Filtered out: {article.get('source_name', '')} - {title[:30]}")
+            continue
+        
         if title and title not in seen_titles:
             seen_titles.add(title)
             unique_articles.append(article)
@@ -137,7 +144,7 @@ def save_news(articles):
     
     removed = len(articles) - len(unique_articles)
     if removed > 0:
-        print(f"Removed {removed} duplicate articles")
+        print(f"Removed {removed} articles (duplicates + filtered sources)")
     print(f"\nTotal: {len(unique_articles)} articles saved to {NEWS_FILE}")
 
 def generate_html_content(articles):
