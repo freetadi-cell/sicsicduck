@@ -1167,6 +1167,18 @@ document.querySelectorAll('.category-tab').forEach(tab => {
         });
     });
 });
+
+// Force links to open in browser (not app)
+document.querySelectorAll('.article-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        if (href) {
+            // Open in new tab withnoopener to prevent app deep links
+            window.open(href, '_blank', 'noopener,noreferrer');
+        }
+    });
+});
 </script>
 
 </body>
