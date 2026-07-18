@@ -136,11 +136,13 @@ def generate_html_content(articles):
     for article in articles:
         image_url = article.get("image_url") or ""
         link = article.get("link", "#")
+        description = article.get("description", "")
         
         html += f'''        <a href="{link}" target="_blank" class="article-card">
             <div class="article-image"{'style="background-image:url(' + image_url + ');background-size:cover;background-position:center"' if image_url else ''}>{'📊' if not image_url else ''}</div>
             <div class="article-content">
                 <h3 class="article-title">{article["title"]}</h3>
+                <p class="article-description">{description}</p>
                 <div class="article-meta">
                     <span class="article-source">{article.get("source_name", "")}</span>
                     <span class="article-date">📅 {article.get("pubDate", "")[:10] if article.get("pubDate") else ""}</span>
