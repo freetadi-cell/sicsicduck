@@ -151,6 +151,14 @@ def generate_html_content(articles):
         category_list = article.get("category", [])
         category_str = ", ".join(category_list) if category_list else ""
         
+        # Fix HK01 deep links - force browser open
+        if "hk01.com" in link:
+            # Add parameter to force web version
+            if "?" in link:
+                link = link + "&ref=browser"
+            else:
+                link = link + "?ref=browser"
+        
         # Image HTML: use <img> tag with onerror fallback to default image
         if image_url:
             image_html = f'<img src="{image_url}" alt="" onerror="this.src=\'/default-news.jpg\'">'
