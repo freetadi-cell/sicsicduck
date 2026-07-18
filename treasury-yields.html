@@ -215,10 +215,10 @@
         /* ===== Summary Cards ===== */
         .summary-strip {
             max-width: 1200px;
-            margin: 20px auto 0;
+            margin: -20px auto 0;
             padding: 0 24px;
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 16px;
             position: relative;
             z-index: 10;
@@ -379,6 +379,15 @@
             .hero { padding: 30px 16px 24px; }
 
             .update-info { padding: 0 16px 16px; }
+
+            .summary-strip {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 16px;
+                gap: 10px;
+            }
+
+            .summary-card { padding: 14px; }
+            .summary-card .value { font-size: 22px; }
 
             .table-wrap { padding: 0 16px; }
             .table-container { border-radius: 14px; }
