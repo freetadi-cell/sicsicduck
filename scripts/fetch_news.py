@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetch Chinese news from NewsData.io for sicsicduck.com
+Incremental mode: keeps old news, deduplicates, removes articles older than 30 days
 """
 
 import requests
@@ -17,7 +18,103 @@ SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 NEWS_FILE = DATA_DIR / "news.json"
 
-def fetch_news(days=7, max_per_category=10):
+# Settings
+MAX_AGE_DAYS = 30  # Remove articles older than this
+MAX_PER_CATEGORY = 10  # Max articles per category per fetch
+
+
+def load_existing_news():
+    """Load existing news from JSON file"""
+    if NEWS_FILE.exists():
+        try:
+            with open(NEWS_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return data.get("articles", [])
+        except (json.JSONDecodeError, KeyError):
+            pass
+    return []
+
+
+def save_news(articles):
+    """Save articles to JSON file"""
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    
+    data = {
+        "last_updated": datetime.now().isoformat(),
+        "total": len(articles),
+        "articles": articles
+    }
+    
+    with open(NEWS_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def remove_old_articles(articles, max_age_days=MAX_AGE_DAYS):
+    """Remove articles older than max_age_days"""
+    cutoff_date = datetime.now() - timedelta(days=max_age_days)
+    filtered = []
+    
+    for article in articles:
+        pub_date_str = article.get("pubDate", "")
+        if pub_date_str:
+            try:
+                pub_date = datetime.strptime(pub_date_str[:19], "%Y-%m-%d %H:%M:%S")
+                if pub_date >= cutoff_date:
+                    filtered.append(article)
+            except ValueError:
+                # Keep articles with invalid dates
+                filtered.append(article)
+        else:
+            # Keep articles without dates
+            filtered.append(article)
+    
+    return filtered
+
+
+def deduplicate_articles(articles):
+    """Remove duplicates based on article_id and title"""
+    seen_ids = set()
+    seen_titles = set()
+    unique = []
+    
+    for article in articles:
+        article_id = article.get("id", "")
+        title = article.get("title", "")
+        
+        # Check by ID first (most reliable)
+        if article_id and article_id in seen_ids:
+            continue
+        
+        # Then check by title
+        if title and title in seen_titles:
+            continue
+        
+        # Track what we've seen
+        if article_id:
+            seen_ids.add(article_id)
+        if title:
+            seen_titles.add(title)
+        
+        unique.append(article)
+    
+    return unique
+
+
+def sort_articles_by_date(articles):
+    """Sort articles by publication date (newest first)"""
+    def get_sort_key(article):
+        pub_date_str = article.get("pubDate", "")
+        if pub_date_str:
+            try:
+                return datetime.strptime(pub_date_str[:19], "%Y-%m-%d %H:%M:%S")
+            except ValueError:
+                pass
+        return datetime.min
+    
+    return sorted(articles, key=get_sort_key, reverse=True)
+
+
+def fetch_news(days=7, max_per_category=MAX_PER_CATEGORY):
     """
     Fetch Chinese news from NewsData.io from multiple categories
     
@@ -35,6 +132,7 @@ def fetch_news(days=7, max_per_category=10):
     
     print(f"Fetching Chinese news from NewsData.io...")
     print(f"Categories: {', '.join(categories)}")
+    print(f"Date range: {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
     
     for category in categories:
         print(f"\nFetching {category} news...")
@@ -113,32 +211,6 @@ def fetch_news(days=7, max_per_category=10):
     
     return articles
 
-def save_news(articles):
-    """Save articles to JSON file with deduplication"""
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    
-    # Remove duplicates based on title
-    seen_titles = set()
-    unique_articles = []
-    for article in articles:
-        title = article.get('title', '')
-        if title and title not in seen_titles:
-            seen_titles.add(title)
-            unique_articles.append(article)
-    
-    data = {
-        "last_updated": datetime.now().isoformat(),
-        "total": len(unique_articles),
-        "articles": unique_articles
-    }
-    
-    with open(NEWS_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    removed = len(articles) - len(unique_articles)
-    if removed > 0:
-        print(f"Removed {removed} duplicate articles")
-    print(f"\nTotal: {len(unique_articles)} articles saved to {NEWS_FILE}")
 
 def generate_html_content(articles):
     """Generate HTML content for news cards"""
@@ -172,16 +244,60 @@ def generate_html_content(articles):
     
     return html
 
-def main():
-    articles = fetch_news(days=7, max_per_category=10)
+
+def main(initial_build=False):
+    """
+    Main function
     
-    if not articles:
-        print("No articles fetched!")
+    Args:
+        initial_build: If True, fetch more articles to build initial database
+    """
+    # Load existing news
+    existing_articles = load_existing_news()
+    print(f"Loaded {len(existing_articles)} existing articles")
+    
+    # Fetch new news
+    if initial_build:
+        # First time: fetch more to build database
+        print("\n=== INITIAL BUILD MODE ===")
+        print("Fetching maximum articles to build initial database...")
+        new_articles = fetch_news(days=7, max_per_category=MAX_PER_CATEGORY)
+    else:
+        # Normal incremental update
+        new_articles = fetch_news(days=1, max_per_category=MAX_PER_CATEGORY)
+    
+    if not new_articles:
+        print("No new articles fetched!")
         return
     
-    save_news(articles)
+    print(f"\nFetched {len(new_articles)} new articles")
     
-    html_content = generate_html_content(articles)
+    # Merge old and new
+    all_articles = existing_articles + new_articles
+    print(f"Total before dedup: {len(all_articles)}")
+    
+    # Deduplicate
+    all_articles = deduplicate_articles(all_articles)
+    duplicates_removed = len(existing_articles) + len(new_articles) - len(all_articles)
+    if duplicates_removed > 0:
+        print(f"Removed {duplicates_removed} duplicates")
+    
+    # Remove old articles (older than 30 days)
+    before_age_filter = len(all_articles)
+    all_articles = remove_old_articles(all_articles)
+    old_removed = before_age_filter - len(all_articles)
+    if old_removed > 0:
+        print(f"Removed {old_removed} articles older than {MAX_AGE_DAYS} days")
+    
+    # Sort by date (newest first)
+    all_articles = sort_articles_by_date(all_articles)
+    
+    # Save
+    save_news(all_articles)
+    print(f"\n✅ Total: {len(all_articles)} articles saved")
+    
+    # Generate HTML
+    html_content = generate_html_content(all_articles)
     
     news_html_path = SCRIPT_DIR.parent / "news.html"
     with open(news_html_path, "r", encoding="utf-8") as f:
@@ -198,5 +314,17 @@ def main():
     
     print(f"Updated {news_html_path}")
 
+
 if __name__ == "__main__":
-    main()
+    import sys
+    
+    # Check for --initial flag
+    initial = "--initial" in sys.argv
+    
+    if initial:
+        print("=" * 50)
+        print("INITIAL BUILD MODE")
+        print("Building news database with max quota")
+        print("=" * 50)
+    
+    main(initial_build=initial)
