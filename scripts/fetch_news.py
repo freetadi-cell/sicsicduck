@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Fetch Chinese news from NewsData.io for sicsicduck.com
+Fetch Chinese news from NewsData.io + RSS feeds for sicsicduck.com
 Incremental mode: keeps old news, deduplicates, removes articles older than 30 days
-Expanded regions: HK + Taiwan + China
-Expanded categories: added 'world'
+Expanded sources: HK + TW regions from NewsData.io + RSS feeds (SCMP)
 """
 
 import requests
 import json
+import feedparser
+import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -28,6 +29,17 @@ MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initia
 # Categories and regions (removed 'cn' to exclude Simplified Chinese news)
 CATEGORIES = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics', 'world']
 REGIONS = ['hk', 'tw']
+
+# RSS Feeds - Hong Kong news sources
+RSS_FEEDS = {
+    "scmp": {
+        "name": "South China Morning Post",
+        "feeds": [
+            "https://www.scmp.com/rss/91/feed",  # Hong Kong news
+            "https://www.scmp.com/rss/2/feed",   # Business
+        ]
+    },
+}
 
 
 def load_existing_news():
@@ -216,6 +228,90 @@ def fetch_news(days=7, max_per_category=10):
     return articles
 
 
+def fetch_rss_feed(feed_url, source_name):
+    """Fetch and parse RSS feed"""
+    articles = []
+    
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        response = requests.get(feed_url, headers=headers, timeout=30)
+        response.raise_for_status()
+        
+        feed = feedparser.parse(response.content)
+        entries = feed.entries if hasattr(feed, 'entries') else []
+        
+        for entry in entries:
+            title = entry.get('title', '')
+            link = entry.get('link', '')
+            
+            if not title or not link:
+                continue
+            
+            # Generate ID
+            content = f"{link}|{title}"
+            article_id = hashlib.md5(content.encode()).hexdigest()[:16]
+            
+            # Parse date
+            pub_date = None
+            if hasattr(entry, 'published'):
+                try:
+                    pub_date = datetime.strptime(entry.published[:19], "%Y-%m-%dT%H:%M:%S")
+                except:
+                    try:
+                        from email.utils import parsedate_to_datetime
+                        pub_date = parsedate_to_datetime(entry.published)
+                    except:
+                        pass
+            
+            pub_date_str = pub_date.strftime("%Y-%m-%d %H:%M:%S") if pub_date else ""
+            
+            # Get description
+            description = ""
+            if hasattr(entry, 'description'):
+                import re
+                description = re.sub('<[^<]+?>', '', entry.description)
+                description = description[:500]
+            
+            article = {
+                "id": article_id,
+                "title": title,
+                "description": description,
+                "link": link,
+                "pubDate": pub_date_str,
+                "source_name": source_name,
+                "image_url": "",
+                "keywords": [],
+                "category": ["rss"],
+                "region": "hk",
+            }
+            
+            articles.append(article)
+        
+        return articles
+        
+    except Exception as e:
+        print(f"    Error: {e}")
+        return []
+
+
+def fetch_all_rss():
+    """Fetch all RSS feeds"""
+    all_articles = []
+    
+    print("\nFetching RSS feeds...")
+    
+    for source_key, source_info in RSS_FEEDS.items():
+        print(f"  {source_info['name']}:")
+        
+        for feed_url in source_info['feeds']:
+            articles = fetch_rss_feed(feed_url, source_info['name'])
+            print(f"    Fetched {len(articles)} articles from {feed_url}")
+            all_articles.extend(articles)
+    
+    
+    return all_articles
+
+
 def generate_html_content(articles):
     """Generate HTML content for news cards"""
     html = ""
@@ -259,18 +355,26 @@ def main(initial_build=False):
     existing_articles = load_existing_news()
     print(f"Loaded {len(existing_articles)} existing articles")
     
+    # Fetch from NewsData.io
     if initial_build:
         print("\n=== INITIAL BUILD MODE ===")
-        print("Fetching maximum articles to build initial database...")
-        new_articles = fetch_news(days=7, max_per_category=MAX_PER_CATEGORY_INITIAL)
+        print("Fetching from NewsData.io...")
+        newsdata_articles = fetch_news(days=7, max_per_category=MAX_PER_CATEGORY_INITIAL)
     else:
-        new_articles = fetch_news(days=1, max_per_category=MAX_PER_CATEGORY_NORMAL)
+        print("\nFetching from NewsData.io...")
+        newsdata_articles = fetch_news(days=1, max_per_category=MAX_PER_CATEGORY_NORMAL)
+    
+    # Fetch from RSS feeds
+    rss_articles = fetch_all_rss()
+    
+    # Merge all sources
+    new_articles = newsdata_articles + rss_articles
     
     if not new_articles:
         print("No new articles fetched!")
         return
     
-    print(f"\nFetched {len(new_articles)} new articles")
+    print(f"\nFetched {len(new_articles)} new articles (NewsData: {len(newsdata_articles)}, RSS: {len(rss_articles)})")
     
     all_articles = existing_articles + new_articles
     print(f"Total before dedup: {len(all_articles)}")
