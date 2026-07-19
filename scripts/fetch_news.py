@@ -226,13 +226,14 @@ def generate_html_content(articles):
         description = article.get("description", "")
         category_list = article.get("category", [])
         category_str = ", ".join(category_list) if category_list else ""
+        region = article.get("region", "")
         
         if image_url:
             image_html = f'<img src="{image_url}" alt="" onerror="this.src=\'/default-news.jpg\'">'
         else:
             image_html = '<img src="/default-news.jpg" alt="">'
         
-        html += f'''        <a href="{link}" target="_blank" class="article-card" data-category="{category_str}">
+        html += f'''        <a href="{link}" target="_blank" class="article-card" data-category="{category_str}" data-region="{region}">
             <div class="article-image">{image_html}</div>
             <div class="article-content">
                 <h3 class="article-title">{article["title"]}</h3>
