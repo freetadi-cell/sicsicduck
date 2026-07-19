@@ -26,9 +26,9 @@ MAX_AGE_DAYS = 30  # Remove articles older than this
 MAX_PER_CATEGORY_NORMAL = 10  # Max articles per category per region for daily cron
 MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initial build
 
-# Categories and regions (removed 'cn' to exclude Simplified Chinese news)
+# Categories and regions (removed 'cn' and 'tw' to exclude Simplified Chinese and Taiwan news)
 CATEGORIES = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics', 'world']
-REGIONS = ['hk', 'tw']
+REGIONS = ['hk']
 
 # RSS Feeds - Hong Kong Chinese news sources
 RSS_FEEDS = {
