@@ -1,291 +1,97 @@
 {
-  "last_updated": "2026-07-19T12:49:04.110308",
-  "total": 402,
+  "last_updated": "2026-07-19T12:54:51.649063",
+  "total": 319,
   "articles": [
     {
-      "id": "d6a44c4afedcaf0b",
-      "title": "Mind the gap year: experts say DSE graduates can gain from experience before university",
-      "description": "Hong Kong students can benefit from taking a gap year after the university entrance exam, but should set clear goals for their future, education sector experts have said, pointing to the increasing value of applicants with experience outside the classroom.\nNGOs and experts said that setting aside a year for internships, volunteer work or exchange programmes would enable students to understand different perspectives, build soft skills and learn new languages, helping them stand out amid stiff...",
-      "link": "https://www.scmp.com/news/hong-kong/education/article/3361076/mind-gap-year-experts-say-dse-graduates-can-gain-experience-university?utm_source=rss_feed",
-      "pubDate": "2026-07-19 04:00:22",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
+      "id": "d1d420f743ee55f06f4c51dbc2e4fda9",
+      "title": "花蓮原住民舉牌抗議傅崐萁遭警架走 議長張峻:應讓人民安心表達意見",
+      "description": "2026太平洋南島聯合豐年節16日至19日在花蓮德興大草坪舉行,一名原住民男子在現場高舉「我不喜歡聯合豐年『節』,因為我不想做花蓮王的政治宣傳品」標語,被警察當場以男子身上有原......",
+      "link": "https://news.ltn.com.tw/news/society/breakingnews/5510019",
+      "pubDate": "2026-07-18 16:53:33",
+      "source_name": "Ltn",
+      "image_url": "https://img.ltn.com.tw/Upload/news/600/2026/07/19/5510019_1_1.jpg",
+      "keywords": [
+        "傅崐萁",
+        "張峻",
+        "抗議",
+        "花蓮"
+      ],
       "category": [
-        "rss",
-        "local"
+        "politics",
+        "top"
+      ],
+      "region": "tw"
+    },
+    {
+      "id": "f6afccfda2efe285d91f76c3984c0bfd",
+      "title": "聯合報黑白集/逼你吃毒油",
+      "description": "中聯油脂致癌油品風暴延燒近廿天,行政院長卓榮泰才不乾不脆道歉。台北市長蔣萬安串連藍白,登高一呼發動七二五上凱道抗爭。至於抗爭口號,蔣萬安也不必多花心思,因為民進黨發言人吳崢等早幫人民想好了。台灣人民...",
+      "link": "https://udn.com/news/story/7338/9636604",
+      "pubDate": "2026-07-18 16:50:07",
+      "source_name": "Udnnewsindex",
+      "image_url": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/19/35148598.jpg&M=1&s=Y&x=0&y=18&sw=1280&sh=853&exp=3600",
+      "keywords": [
+        "社論",
+        "賴清德",
+        "蔣萬安",
+        "吳崢",
+        "卓榮泰",
+        "黑白集",
+        "致癌沙拉油",
+        "食用油",
+        "民進黨",
+        "食安"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "tw"
+    },
+    {
+      "id": "24b61ab1d8ada5c482ebe9445e064975",
+      "title": "美伊戰爭|美軍空襲致50死逾500人傷 伊朗稱暫停履行停火諒解備忘錄",
+      "description": "伊朗衛生部周六(19日)表示,自6月27日以來,美軍對伊朗發動的空襲已造成50人死亡、超過500人受傷,其中死者包括5名女性及2名18歲以下兒童和青少年。 伊朗衛生部公共關係及資訊中心主管凱爾曼普爾(Hossein Kermanpour)在社交平台X發文表示,傷者中包括32名女性及18名兒童和青少年,未有透露其他傷亡詳情。 伊朗宣布暫停履行早前與美國達成的停火諒解備忘錄(MoU),指責美方率先違反",
+      "link": "https://www.stheadline.com/realtime-world/3595170/%E7%BE%8E%E4%BC%8A%E6%88%B0%E7%88%AD%E7%BE%8E%E8%BB%8D%E7%A9%BA%E8%A5%B2%E8%87%B450%E6%AD%BB%E9%80%BE500%E4%BA%BA%E5%82%B7-%E4%BC%8A%E6%9C%97%E7%A8%B1%E6%9A%AB%E5%81%9C%E5%B1%A5%E8%A1%8C%E5%81%9C%E7%81%AB%E8%AB%92%E8%A7%A3%E5%82%99%E5%BF%98%E9%8C%84",
+      "pubDate": "2026-07-18 16:49:01",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/67698aaa4d4e3849eb769ce31066cfde/2026-07/2023-02-15T115447Z_1464107459_MT1ZUMA000QXSEYG_RTRMADP_3_ZUMA.JPG",
+      "keywords": [
+        "談判",
+        "伊朗",
+        "美國"
+      ],
+      "category": [
+        "politics",
+        "top",
+        "crime"
       ],
       "region": "hk"
     },
     {
-      "id": "f72bc361e470625a",
-      "title": "From Bruce Lee craze to regional hub: how China’s kung fu captured Ivory Coast",
-      "description": "Meite Siaka wears many hats. By day, he is a senior tax official, a lecturer at the National School of Administration and deputy mayor of Kani in northern Ivory Coast.\nBut outside government, he serves as the founding president of the Ivorian Federation of Chinese Martial Arts (FIAMC), a group he established in 2008. He also works as a master and instructor, running several martial arts clubs.\nNow he is a central figure in standardising the practice of kung fu, a Chinese martial art, and...",
-      "link": "https://www.scmp.com/news/china/diplomacy/article/3361059/bruce-lee-craze-regional-hub-how-chinas-kung-fu-captured-ivory-coast?utm_source=rss_feed",
-      "pubDate": "2026-07-19 04:00:17",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
+      "id": "fa46d384656b31b67010293e461c8e60",
+      "title": "【時事金掃描】美軍空襲伊朗橋梁 川普抛出中共顛覆美國鐵證",
+      "description": "美軍空襲扔「炸彈之王」 連炸伊朗戰略橋梁;川普公佈中共顛覆美國鐵證 盜取2億美選民檔案 美情報高層涉「叛國罪」。 大家好,歡迎收看「時事金掃描」。我是金然。美軍已經完成了對伊朗連續第六個夜晚的空襲行動!這是一場海陸空全方位的絞殺,打擊目標已...",
+      "link": "https://www.ntdtv.com/b5/2026/07/18/a104116405.html",
+      "pubDate": "2026-07-18 16:49:01",
+      "source_name": "Ntdchinese",
+      "image_url": "https://i.ntdtv.com/assets/uploads/2026/07/id104116519-youtube-868x488.jpg",
+      "keywords": [
+        "川普",
+        "中東",
+        "習近平",
+        "伊朗",
+        "fbi",
+        "情報",
+        "基礎設施",
+        "選舉",
+        "媒體"
       ],
-      "region": "hk"
-    },
-    {
-      "id": "3f835c4214c34908",
-      "title": "Why investors are upbeat on the long-delayed Asean power grid",
-      "description": "A long-discussed plan for an Asean power grid is gaining steam, according to investors and Indonesian policymakers gathered in Bali, as surging demand from AI and data centres, as well as the region’s energy transition, fuels optimism over the initiative.\nOn Friday, representatives from sovereign wealth funds, institutional capital and family principals converged on the St Regis Bali Resort for the Nusa Dua Forum, organised by the South China Morning Post with Danantara Indonesia as partner.\nThe",
-      "link": "https://www.scmp.com/week-asia/economics/article/3361037/why-investors-are-upbeat-long-delayed-asean-power-grid?utm_source=rss_feed",
-      "pubDate": "2026-07-19 04:00:13",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
       "category": [
-        "rss",
-        "local"
+        "politics",
+        "top"
       ],
-      "region": "hk"
-    },
-    {
-      "id": "36761d20546980b8",
-      "title": "Philippine school for exorcists draws priests from Asia as cases ‘pile up’",
-      "description": "Asia’s only dedicated exorcism centre – designed to train not only Philippine priests but clergy from across the region – sits just off a busy thoroughfare in Metro Manila.\nInside, neatly made-up rooms for visiting priests line warmly lit halls that lead to a chapel where the 400-year-old ritual takes place.\nHoly relics employed in the proceedings line one wall, another features a one-way mirror that allows family members and novice exorcists to observe.\nThe Michael Centre for Spiritual...",
-      "link": "https://www.scmp.com/news/asia/southeast-asia/article/3361078/philippine-school-exorcists-draws-priests-asia-cases-pile?utm_source=rss_feed",
-      "pubDate": "2026-07-19 03:26:32",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "077772498df43d10",
-      "title": "Wealthy European clients eye Hong Kong for family offices, says BNP Paribas",
-      "description": "BNP Paribas, France’s largest lender and the second-largest in Europe, has found that an increasing number of wealthy European clients are seeking to establish family offices in Hong Kong to capitalise on growing opportunities in the region, according to a banker from the lender.\nA growing number of wealthy mainland clients were also looking to invest in Europe, said Lemuel Lee, head of wealth management for BNP Paribas in Hong Kong.\n“The two-way capital flow between Europe and mainland China is",
-      "link": "https://www.scmp.com/business/banking-finance/article/3361009/wealthy-european-clients-eye-hong-kong-family-offices-says-bnp-paribas?utm_source=rss_feed",
-      "pubDate": "2026-07-19 03:00:11",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "2d9f997d455f1616",
-      "title": "Malaysia investigates state pension’s failed eFishery investment",
-      "description": "Malaysia’s anti-corruption agency has opened an investigation into losses tied to state pension fund Kumpulan Wang Persaraan Diperbadankan’s investment in failed Indonesian agritech start-up eFishery.\nA team was formed on Friday to “study and examine the issue thoroughly,” Malaysian Anti-Corruption Commission Chief Commissioner Abdul Halim Aman said in a statement on Saturday.\n“The investigation will be conducted fairly, transparently and impartially based on existing legal provisions,” Abdul...",
-      "link": "https://www.scmp.com/news/asia/southeast-asia/article/3361075/malaysia-investigates-state-pensions-failed-efishery-investment?utm_source=rss_feed",
-      "pubDate": "2026-07-19 02:08:49",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "5df4bc3eb9e6e1c0",
-      "title": "For every dollar invested, we bring in more than 8, Hong Kong investment chief says",
-      "description": "Official support and collaboration with private capital are critical for sovereign wealth funds to succeed, the head of Hong Kong’s government-owned investment vehicle has said, as she spelled out strategies needed to deliver high returns.\nAt the inaugural Nusa Dua Forum organised by the South China Morning Post and Indonesia’s sovereign wealth fund Danantara in Bali on Friday, Hong Kong Investment Corporation (HKIC) CEO Clara Chan Ka-chai said that partnerships were key to its strong...",
-      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3361063/every-dollar-invested-we-bring-more-8-hong-kong-investment-chief-says?utm_source=rss_feed",
-      "pubDate": "2026-07-19 02:00:12",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "0268bef06d4fc393",
-      "title": "China team cuts 3D optical chip production time from hours to seconds",
-      "description": "Artificial intelligence (AI) is driving unprecedented demand for computing, placing photonic chips at the centre of the race to develop next-generation AI hardware.\nBy transmitting data with light rather than electricity, photonic technologies are widely seen as a way to overcome bandwidth and power constraints.\nHowever, translating that potential into mass-producible hardware is often bottlenecked by slow, complex manufacturing.\nA Chinese research team says it has overcome one of the field’s...",
-      "link": "https://www.scmp.com/news/china/science/article/3360856/china-team-cuts-3d-optical-chip-production-time-hours-seconds?utm_source=rss_feed",
-      "pubDate": "2026-07-19 02:00:08",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "0650fc37ea844bfe",
-      "title": "Hong Kong’s 5-year plan must focus on what the city does best",
-      "description": "Hong Kong has embarked on the path of drawing up its first five-year plan – a significant moment in its history. Hong Kong’s first five-year plan should be more than a local economic blueprint. Properly conceived, it should define how the city contributes to China’s national development while preserving the global connections that make Hong Kong uniquely valuable.\nSuccess will depend on three mutually reinforcing pillars – deeper integration with the mainland, seamless connectivity across the...",
-      "link": "https://www.scmp.com/opinion/hong-kong-opinion/article/3360772/hong-kongs-5-year-plan-must-focus-what-city-does-best?utm_source=rss_feed",
-      "pubDate": "2026-07-19 01:30:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "23c6a9afaa1d102a",
-      "title": "Chinese man discovers family dining table is ancestor’s Qing dynasty academic record",
-      "description": "A man in eastern China was stunned to discover that his family’s battered dining table was in fact a Qing dynasty (1644–1912) honour board commemorating an ancestor’s success in the imperial examinations.\nXu, a villager in Anhui province, shared the unusual story in an online video on July 12, which subsequently went viral on mainland social media.\nThe footage shows a dark-red wooden table scarred by decades of use, with cracked edges and a faded surface. Yet two carved Chinese characters –...",
-      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3361073/chinese-man-discovers-family-dining-table-ancestors-qing-dynasty-academic-record?utm_source=rss_feed",
-      "pubDate": "2026-07-19 01:21:42",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "948c178e47f90f0e",
-      "title": "Tears of anger as Tai Po fire survivors slam negligent authorities after hearing",
-      "description": "Tears, anger and exhaustion marked the conclusion of an inquiry into the deadly fire at Hong Kong’s Wang Fuk Court, as survivors condemned government departments for passing the buck and demanded accountability.\nResidents have reacted to the conclusion of an inquiry into the deadly fire at Hong Kong’s Wang Fuk Court with tears of anger and exhaustion, as survivors condemned government departments for passing the buck and demanded accountability and apologies.\nAn independent committee...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3361066/tears-anger-tai-po-fire-survivors-slam-negligent-authorities-after-hearing?utm_source=rss_feed",
-      "pubDate": "2026-07-19 01:00:22",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "c70a392feb24cb15",
-      "title": "Indonesia’s Danantara must ‘outlast’ presidencies to prove worth: investment chief",
-      "description": "Indonesia’s Danantara must outlive political administrations to prove its worth to investors and most importantly to the people, according to the sovereign wealth fund’s chief investment officer.\nPandu Sjahrir said the fund was focused on the demutualisation of Jakarta’s stock market and to support the establishment of the first financial centre in Bali to boost investor confidence.\n“Investment is almost everything for us. Confidence is the name of the game, and we have to create long-term...",
-      "link": "https://www.scmp.com/week-asia/economics/article/3361041/indonesias-danantara-must-outlast-presidencies-prove-worth-investment-chief?utm_source=rss_feed",
-      "pubDate": "2026-07-19 01:00:17",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "5bbf6348c372f796",
-      "title": "Japan scapegoats foreigners as mountain rescue numbers rise",
-      "description": "On a clear summer morning at Mount Fuji’s fifth-station trailhead, the crowds look more beach ready than alpine prepared with canvas slip-ons, bare legs and lightweight jackets.\nAbove them, Japan’s most famous peak rises to 3,776 metres (12,389 feet) and into sub-zero temperatures, even in July.\nFor Tatsuo Nanai, a veteran climber and until recently secretary general of the Fuji‑san Club, the scene has become a source of dread.\nJapan’s official climbing season has only just begun, but he says he",
-      "link": "https://www.scmp.com/week-asia/health-environment/article/3360981/japan-scapegoats-foreigners-mountain-rescue-numbers-rise?utm_source=rss_feed",
-      "pubDate": "2026-07-19 00:00:13",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "8daa9b3f17ab0154",
-      "title": "Influencers Andrew and Tristan Tate arrested in Miami as UK seeks extradition",
-      "description": "Influencer brothers Andrew and Tristan Tate, whose social media empire promoting wealth, male dominance and misogyny has made them among the world’s most polarising internet personalities, were arrested on Saturday in Miami as British authorities sought their extradition on rape and sex trafficking charges.\nThe brothers were taken into custody by the US Marshals Service on a sealed warrant, agency spokesman Brady McCarron said, placing the United States at the centre of an international legal...",
-      "link": "https://www.scmp.com/news/world/united-states-canada/article/3361072/influencers-andrew-and-tristan-tate-arrested-miami?utm_source=rss_feed",
-      "pubDate": "2026-07-18 23:42:28",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "28c1d3125a9c65a7",
-      "title": "Cuban dissident artist Otero Alcantara lands in US exile",
-      "description": "Prominent Cuban dissident artist Luis Manuel Otero Alcantara flew to exile on Saturday in the United States after serving a five-year sentence on the island, as Washington urged Havana to release more than 700 political prisoners.\nOtero Alcantara, designated a prisoner of conscience by Amnesty International, was sentenced to five years in prison in 2022 for insulting national symbols, contempt and disturbing the public order.\nHe landed in Miami, the capital of the Cuban diaspora, after a short..",
-      "link": "https://www.scmp.com/news/world/americas/article/3361070/cuban-dissident-artist-otero-alcantara-lands-us-exile?utm_source=rss_feed",
-      "pubDate": "2026-07-18 23:18:23",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "a5269609d05e7dba",
-      "title": "Did the Ukraine war spark China’s quiet ban on most civilian drone flights in cities?",
-      "description": "For years, aerial drones frequently buzzed above the Huangpu River in Shanghai, capturing breathtaking views of one of China’s most iconic central business districts and the lights of thousands of homes.\nBut the spectacular aerial photos that once defined one of the world’s largest commercial drone markets have now been heavily restricted along this picturesque stretch of the river, reflecting a nationwide tightening of rules on civilian drone use.\nSecurity concerns magnified by Ukraine’s drone.",
-      "link": "https://www.scmp.com/news/china/politics/article/3361035/did-ukraine-war-spark-chinas-quiet-ban-most-civilian-drone-flights-cities?utm_source=rss_feed",
-      "pubDate": "2026-07-18 22:00:11",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "c13a7d424fad101a",
-      "title": "As the UK discusses an EU return, Hong Kong offers lessons",
-      "description": "The recent resignation of Keir Starmer as Britain’s prime minister has reignited a debate over the United Kingdom’s post-Brexit identity – and talk of rejoining the European Union. Over the past decade, has Britain’s decision to exit the EU returned the UK to its splendid isolation – or merely a splendid squalor?\nIt may seem a far-fetched idea but what if the UK were to become a special sovereignty within the EU? And in that case, what can post-Brexit Britain learn from Hong Kong, which has been",
-      "link": "https://www.scmp.com/opinion/world-opinion/article/3360564/uk-discusses-eu-return-hong-kong-offers-lessons?utm_source=rss_feed",
-      "pubDate": "2026-07-18 21:30:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "e7659dd5eaa7c1fe",
-      "title": "Leon Black told Epstein panel he paid US$21 million to woman to keep affair secret",
-      "description": "Former Apollo Global Management Chief Executive Officer Leon Black told Congress he paid US$21 million to a woman he accused of blackmailing and extorting him.\nThe billionaire investor said during a June 26 interview with the US House Oversight Committee that he paid the money to the woman, with whom he had had an affair, after she demanded US$100 million because he “ruined her life”.\nBlack’s appearance at the voluntary interview was part of the congressional investigation into the late...",
-      "link": "https://www.scmp.com/news/world/united-states-canada/article/3361069/leon-black-told-epstein-panel-he-paid-us21-million-woman-keep-affair-secret?utm_source=rss_feed",
-      "pubDate": "2026-07-18 19:32:47",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "fccd46ff0516997d",
-      "title": "2 US troops dead, 1 missing after Iran attacks base in Jordan",
-      "description": "In Iran war news with major US political implications, two US soldiers were killed and several wounded by an Iranian drone, the Pentagon announced on Saturday.\nThe tragedy, the first US combat deaths in months, came as US President Donald Trump has tried to downplay or distract attention from the hugely unpopular war that he started in late February, as his polling numbers tank four months in advance of a hugely consequential midterm election.\n“Two US service members in Jordan were killed in...",
-      "link": "https://www.scmp.com/news/us/diplomacy/article/3361068/2-us-troops-dead-1-missing-after-iran-attacks-base-jordan?utm_source=rss_feed",
-      "pubDate": "2026-07-18 18:01:11",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
+      "region": "tw"
     },
     {
       "id": "2cec0b22c6242fecce537329ae2386ef",
@@ -306,21 +112,6 @@
         "top"
       ],
       "region": "tw"
-    },
-    {
-      "id": "ed006c266523a7a8",
-      "title": "Israeli rule change clears way for using crocodiles to deter prison breaks",
-      "description": "Israeli Environmental Protection Minister Idit Silman has reclassified crocodiles from wild animals to “captive-bred wildlife”, a move that clears the way for the reptiles to be used for security purposes, including to deter prison escapes.\nFar-right National Security Minister Itamar Ben Gvir – who reportedly proposed in December surrounding a prison for Palestinian detainees with crocodiles, a la Florida’s “Alligator Alcatraz” immigration detention facility – welcomed the decision.\n“Are you...",
-      "link": "https://www.scmp.com/news/world/middle-east/article/3361067/israeli-rule-change-clears-way-using-crocodiles-deter-prison-breaks?utm_source=rss_feed",
-      "pubDate": "2026-07-18 16:38:36",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "b500576d596f263438d6d6625b3c4812",
@@ -2268,21 +2059,6 @@
       "region": "tw"
     },
     {
-      "id": "d4ce819ffcffc85b",
-      "title": "Canada to evacuate Ontario community as wildfire smoke chokes US",
-      "description": "The Canadian military was preparing on Saturday to evacuate a remote community of 600 people threatened by forest wildfires that have spread, choking smoke across a broad swathe of the United States.\nFederal Emergencies Minister Eleanor Olszewski said late on Friday that the armed forces would use aircraft to evacuate the inhabitants of Fort Hope in sparsely populated northwestern Ontario, where some of the most intense fires are burning.\nThe region has few roads and relies heavily on air...",
-      "link": "https://www.scmp.com/news/world/united-states-canada/article/3361064/canada-evacuate-ontario-community-wildfire-smoke-chokes-us?utm_source=rss_feed",
-      "pubDate": "2026-07-18 15:05:11",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "5d8f2e581f086cd31b25934833e95a45",
       "title": "中職》林襄披頭紗喊「你願意嗎?」馬傑森穿95敲安回應",
       "description": "中華職棒首日賽事18日完美落幕,賽前馬傑森就因為背號選擇95號引發熱議,賽中緋聞女友林襄戴著頭紗喊出「你今天願意......」雖然並非眾所期待的求婚或認愛,不過仍引發全場躁動,馬傑森也立刻用安打回應。前一天的明星賽",
@@ -3038,21 +2814,6 @@
       "region": "hk"
     },
     {
-      "id": "d2dce26fb3322b78",
-      "title": "Final report of Tai Po fire inquiry panel delayed to late October: source",
-      "description": "An independent committee examining the causes of Hong Kong’s deadly Wang Fuk Court blaze will delay submitting its final report to late October, a month later than expected, as more time is needed to review documents, the South China Morning Post has learned.\nA source confirmed to the SCMP on Saturday that the judge-led panel’s final report was likely to be submitted to Chief Executive John Lee Ka-chiu in late October, rather than September as the committee’s nine-month investigation deadline...",
-      "link": "https://www.scmp.com/news/hong-kong/politics/article/3361060/tai-po-fire-inquiry-panel-delay-submitting-final-report-late-october-source?utm_source=rss_feed",
-      "pubDate": "2026-07-18 14:29:00",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "ab0465cc06ad6a22aac2650a169e6182",
       "title": "日防相援引歐洲國家核武動作為例 稱核問題討論“不得不提”",
       "description": "綜合《朝日新聞》等媒體消息,日本防衛大臣小泉進次郎在一檔周五播出的網絡訪談節目中,呼籲有必要圍繞安保問題就核武器展開討論。他表示:“對日本而言,這是一個很難展開討論的議題,但核問題是我們不得不觸及的課題之一”。",
@@ -3655,21 +3416,6 @@
       "region": "tw"
     },
     {
-      "id": "5214ee5b1418b689",
-      "title": "Why data may become China’s most durable advantage in the AI race",
-      "description": "The global AI race is no longer just about chips or models. Increasingly, it is also about data – namely, the language resources that feed and train them.\nBeijing has identified that layer as a new strategic frontier, accelerating the buildout of a national ecosystem of Chinese-language data for artificial intelligence (AI). The push covers everything from foundational text corpora and high-quality training datasets to technical standards and governance frameworks.\nLanguage data has emerged as a",
-      "link": "https://www.scmp.com/news/china/politics/article/3361050/why-data-may-become-chinas-most-durable-advantage-ai-race?utm_source=rss_feed",
-      "pubDate": "2026-07-18 14:00:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "2d582b214c4b399a9fbed771a23f926a",
       "title": "楊大正正式宣佈「我是不婚主義者」 團員認證:不然怎會結兩次婚",
       "description": "金曲樂團滅火器成軍26年,今(18日)首次站上台北小巨蛋開唱,兩場門票一開賣旋即秒殺,讓滅火器士氣大振。而他們團內目前有2位人夫,大正和宇辰更同為人父,唱到〈給女兒〉時,大正感嘆如今女兒都已經唸小學三年級了,「他媽的,她應該快交男友了吧!」宇辰女兒才4個多月大,「我原本覺得還好,但我現在好擔心,我有點不爽。」隨後大正突然說自己是不婚主義者,馬上被宇辰虧:「這是真的,不然他怎麼會結兩次婚?」地獄梗讓全場笑翻。 《詳全文...》",
@@ -4002,21 +3748,6 @@
         "entertainment"
       ],
       "region": "tw"
-    },
-    {
-      "id": "d12748ff875235d5",
-      "title": "China AI summit hears Global South needs equal access to avoid digital divide",
-      "description": "Greater global cooperation and development-focused AI regulations are urgently needed to prevent a widening digital divide, scholars and international figures said at China’s premier AI conference on Saturday.\nThe message aligned with a broader pitch on display at the annual World AI Conference (WAIC) in Shanghai, where Beijing is courting the Global South with an artificial intelligence package centred on training, infrastructure and a bid for greater influence over global governance.\n“We need.",
-      "link": "https://www.scmp.com/tech/policy/article/3361057/china-ai-summit-hears-global-south-needs-equal-access-avoid-digital-divide?utm_source=rss_feed",
-      "pubDate": "2026-07-18 13:49:54",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "d5f40efde12b9531fb54c8d2d79c74a9",
@@ -5228,21 +4959,6 @@
       ]
     },
     {
-      "id": "b87ab2086bc03064",
-      "title": "Chinese social media accounts ‘profit from leaking official corruption scandals’",
-      "description": "Chinese social media accounts are profiting by hinting at the downfall of corrupt officials ahead of formal announcements, state media has warned, highlighting a “grey market” around Beijing’s anti-corruption campaign.\nThe trend had created a new challenge for Chinese law enforcement, state-run journal Banyuetan reported on Friday.\nOne tactic involves posting an official’s resume as a coded signal that they are under disciplinary investigation, according to Banyuetan, which is affiliated with...",
-      "link": "https://www.scmp.com/news/china/politics/article/3361056/chinese-social-media-accounts-profit-leaking-official-corruption-scandals?utm_source=rss_feed",
-      "pubDate": "2026-07-18 13:04:42",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "1fb52b7ab4bda81c681fc4c523f50ed7",
       "title": "有片|前國腳申思毆打未成年球員 被曝3天摑20耳光屁股打至瘀青",
       "description": "近日53歲前中國男足國腳申思被爆暴力毆打小球員。據網上影片可見,申思在訓練場上將一名小球員單獨叫出後,隨即狠狠扇出一記耳光。有小球員家長發",
@@ -5401,21 +5117,6 @@
         "top",
         "entertainment"
       ]
-    },
-    {
-      "id": "956fb2016c7ce887",
-      "title": "Sonam Wangchuk hospitalised after 21-day hunger strike over exam leaks",
-      "description": "Authorities in India’s capital Delhi moved social activist Sonam Wangchuk to hospital against his will on Saturday, after his condition worsened on the 21st day of a hunger strike launched to demand the resignation of the federal education minister.\nWangchuk, 59, had been fasting since June 28 in solidarity with India’s youth Cockroach Janta Party (CJP), which is demanding Education Minister Dharmendra Pradhan step down ‌over exam paper leaks in May that affected millions of students.\nWangchuk’s",
-      "link": "https://www.scmp.com/news/asia/south-asia/article/3361055/sonam-wangchuk-hospitalised-after-21-day-hunger-strike-over-exam-leaks?utm_source=rss_feed",
-      "pubDate": "2026-07-18 12:55:26",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "b2acadd85f49e3e2c668e1cfe53ae5d8",
@@ -5825,21 +5526,6 @@
       ]
     },
     {
-      "id": "58ef6cd7e2212404",
-      "title": "Weather weapons: why the atmosphere could become the next geopolitical battleground",
-      "description": "When devastating floods swept through Assam in northeastern India in 2018, the disaster quickly triggered a troubling question within New Delhi’s security corridors. As technology advances, could control over the weather become a tool of geopolitical pressure, or even a weapon?\nMuch of the concern centred on neighbouring China. Assam’s then finance minister, Himanta Biswa Sarma, publicly warned about Beijing’s Tianhe, or Sky River, initiative, one of the world’s largest weather-modification...",
-      "link": "https://www.scmp.com/news/china/diplomacy/article/3360967/weather-weapons-why-atmosphere-could-become-next-geopolitical-battleground?utm_source=rss_feed",
-      "pubDate": "2026-07-18 12:00:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "17545c21ba644f01cc6e81efec38aa3d",
       "title": "麻吉貓首度登陸香港 進駐上水中心及MCPOne 巨型打卡位/互動遊戲/限定禮品",
       "description": "台灣人氣療癒IP「麻吉貓(Maji Meow)」首次來港,即日起至8月16日進駐上水中心購物商場及MCPOne新都城中心一期,推出「夏日萌力補給站」。兩個商場分別以英倫風烘焙工房及便利店為主題,設有多個打卡位、互動遊戲及限時挑戰,完成指定任務更有機會獲得限定精品及商戶優惠,暑假想與麻吉貓打卡的粉絲不要錯過。",
@@ -5909,21 +5595,6 @@
       ]
     },
     {
-      "id": "81f1f9b3fa49ca0e",
-      "title": "3 arrested after 131kg of ketamine disguised as sugar cubes found in air cargo",
-      "description": "Hong Kong customs officers have arrested three men in connection with the seizure of 131kg (289lbs) of suspected ketamine worth about HK$51 million (US$6.5 million), disguised as sugar cubes and found in air cargo transported to the city.\nChiu Kai-wing, a senior investigator with the Customs and Excise Department’s drug investigation bureau, said on Saturday that officers had intercepted the air cargo consignment from Germany declared as containing sugar cubes on Tuesday, after exchanging...",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3361054/3-arrested-after-131kg-ketamine-declared-sugar-cubes-found-air-cargo?utm_source=rss_feed",
-      "pubDate": "2026-07-18 11:56:08",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "4293b4f26d6f79678d13055e0d392dbd",
       "title": "世界盃|英法季軍賽無人睇?臨開場有7100張票放售 二手劈價4成",
       "description": "世界盃季軍上演「英法大戰」,將於本港時間19日凌晨5時在美國邁阿密體育場開踢。這場賽事似乎不甚吸引,截至開場前12小時仍有逾7100張門票放售。 相關新聞:世界盃2026|浙江泰隆銀行推決賽日「延後上班」 員工幸福感爆棚 截至開場前12小時,國際足協(FIFA)官網仍有1246張門票公開發售,價格分別865美元(約6780港元)和1125美元(約8820港元)。 而在官方轉售平台上,有5864張門",
@@ -5954,36 +5625,6 @@
         "business",
         "top"
       ]
-    },
-    {
-      "id": "a9107a922549669c",
-      "title": "Call to merge housing checking unit with Buildings Department after Tai Po fire",
-      "description": "Some residents left homeless by Hong Kong’s deadliest inferno in decades have called for merging the Housing Bureau’s Independent Checking Unit (ICU) with the Buildings Department after a public inquiry revealed communication failures between them.\nIn recommendations submitted to the independent committee investigating the Wang Fuk Court fire, which were released on Saturday, legal representatives for nine residents said folding the ICU into the department would reduce regulatory overlap.\n“Given",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3361053/call-merge-housing-checking-unit-buildings-department-after-tai-po-fire?utm_source=rss_feed",
-      "pubDate": "2026-07-18 11:45:23",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "6115370a2c7ebe41",
-      "title": "Hong Kong homebuyers snap up 138 Garden Regency flats in New Territories project",
-      "description": "Sun Hung Kai Properties (SHKP), Hong Kong’s largest developer by market capitalisation, has sold out the first batch of units at its Garden Regency project in the New Territories on Saturday, according to agents.\nBy 3.30pm, all 138 flats the developer had launched in the Kam Tin North project in Yuen Long had found buyers, the agents said.\nThe launch of the three-tower development of 566 units marks SHKP’s return to the market two months after units at its Lime Spark project in Tsuen Wan were...",
-      "link": "https://www.scmp.com/business/article/3361052/hong-kong-homebuyers-snap-138-garden-regency-flats-new-territories-project?utm_source=rss_feed",
-      "pubDate": "2026-07-18 11:30:36",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "48ca18b4201a23bd11ea54a600574ed3",
@@ -6107,36 +5748,6 @@
       ]
     },
     {
-      "id": "33d91d85f44772ce",
-      "title": "Alibaba targets Nvidia’s dominant software ecosystem with open-source AI stack",
-      "description": "Alibaba Group Holding’s chip design unit, T-Head, has announced that it will open-source its proprietary software stack, marking its latest effort to streamline developer operations and challenge the dominance of American chip giant Nvidia’s CUDA ecosystem.\nAt the World AI Conference (WAIC) in Shanghai on Saturday, T-Head announced that it was making the full technical stack of SAIL – the foundational software architecture for the unit’s Zhenwu series of AI chips – freely available to...",
-      "link": "https://www.scmp.com/tech/tech-war/article/3361048/alibaba-targets-nvidias-dominant-software-ecosystem-open-source-ai-stack?utm_source=rss_feed",
-      "pubDate": "2026-07-18 11:00:07",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "5d6e4e9c7851d5ff",
-      "title": "‘Litany of failures’ blamed as Hong Kong’s Tai Po fire inquiry concludes",
-      "description": "An independent inquiry into Hong Kong’s deadly Tai Po fire has concluded after examining more than 1 million files and hearing from 80 witnesses across 30 public sessions, uncovering the causes of the blaze that killed 168 people.\nThe panel, chaired by Justice David Lok Kai-hong, wrapped up its hearings on Friday after proceedings that began on March 19. The inquiry examined evidence and testimony related to the Wang Fuk Court fire, the city’s deadliest since 1948.\n“Through open investigation...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3361047/litany-failures-blamed-hong-kongs-tai-po-fire-inquiry-concludes?utm_source=rss_feed",
-      "pubDate": "2026-07-18 11:00:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "65c74d586a707e63a37f9589674fabb8",
       "title": "黃仁勳親筆簽名皮衣拍賣 港幣 750 萬天價成交",
       "description": "Nvidia 行政總裁黃仁勳標誌性黑色 Tom Ford 皮衣,近日於 Sotheby's 拍賣行以 96 萬美元(約港幣 748.8 萬元)成交,遠超 4 萬至 6 萬美元(約港幣 31.2 萬至 46.8 萬元)預估價。",
@@ -6186,21 +5797,6 @@
         "top",
         "health"
       ]
-    },
-    {
-      "id": "155b269f41179f3f",
-      "title": "India launches first private orbital rocket as space start-ups expand",
-      "description": "India’s first privately built orbital rocket took its maiden flight on Saturday, its company said, marking a significant step for the South Asian giant as it eyes a bigger slice of the global space economy.\nThe Vikram-1 rocket, built by Skyroot Aerospace and designed to carry small satellites into low-Earth orbit, took off from the Satish Dhawan Space Centre in Sriharikota amid loud cheers.\n“Hello space, we have arrived!” Skyroot Aerospace said on social media. “Vikram-1’s Test Flight-1 has...",
-      "link": "https://www.scmp.com/news/asia/south-asia/article/3361049/india-launches-first-private-orbital-rocket-space-start-ups-expand?utm_source=rss_feed",
-      "pubDate": "2026-07-18 10:44:41",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "2091197d9d777cc6ab4a276c46ad647c",
@@ -6272,51 +5868,6 @@
       ]
     },
     {
-      "id": "e7d229b2b5defb89",
-      "title": "Bali’s ‘big leap’: from holiday paradise to international financial centre",
-      "description": "Indonesia is pushing ahead to transform the holiday island of Bali into an international financial centre, with its parliament set to debate new laws this week while a key conference set out targets and cited models such as Hong Kong as an example.\nMinister of Investment and Downstream Industry Rosan Roeslani, who heads state-owned sovereign wealth fund Danantara Indonesia, said the financial centre was part of Jakarta’s efforts to establish itself as a trusted destination for investors seeking.",
-      "link": "https://www.scmp.com/week-asia/economics/article/3361038/balis-big-leap-holiday-paradise-international-financial-centre?utm_source=rss_feed",
-      "pubDate": "2026-07-18 10:00:13",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "8e8828d19b44ab76",
-      "title": "China’s megaprojects transformed Ivory Coast. Now it’s own role is changing",
-      "description": "In Abidjan, the commercial capital and economic engine of Ivory Coast, the extent of Chinese infrastructure development is a permanent feature of the transport and trade networks.\nThis includes the Alassane Ouattara Bridge, commonly known as the Cocody Bridge, which links the affluent eastern district of Cocody to the business centre of Plateau.\nThe expansion of the Port of Abidjan’s second container terminal and the construction of the Alassane Ouattara Olympic Stadium also highlight the scale.",
-      "link": "https://www.scmp.com/news/china/diplomacy/article/3360899/chinas-megaprojects-transformed-ivory-coast-now-its-own-role-changing?utm_source=rss_feed",
-      "pubDate": "2026-07-18 10:00:07",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "234be73c8c494ad2",
-      "title": "Hong Kong unlikely to hold Legco by-election for seat vacated by William Wong",
-      "description": "The Hong Kong government has indicated that it is unlikely to hold a by-election to fill the vacancy left by former lawmaker William Wong Kam-fai’s resignation over his drink-driving and hit-and-run case, citing time constraints and concerns about cost-effectiveness.\nSecretary for Constitutional and Mainland Affairs Janice Tse Siu-wa also said on Saturday that the government had received 2,500 submissions during a public consultation on the city’s first five-year plan, with nearly half focusing.",
-      "link": "https://www.scmp.com/news/hong-kong/politics/article/3361046/hong-kong-unlikely-hold-legco-election-seat-vacated-william-wong?utm_source=rss_feed",
-      "pubDate": "2026-07-18 09:49:02",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "34403261d062198678b77ab2d1fa7d37",
       "title": "共享單車—三大平台齊加價最低消費1小時 短途民眾怨:騎不起了",
       "description": "內地許多民眾在距目的地「最後1公里」也會選擇租用共享單車來代步,貪其價廉靈活。美團、青橘、哈囉三大共享單車平台齊齊加價,由¥1.5元/30分鐘普遍調整為¥1.88元至¥1.99元/60分鐘,變相令大部份只租用30分鐘以內的消費者,被大副加價,引起部份消費者不滿。 短途出行平均加價約3成 美團、青橘、哈囉等三大共享單車平台,不約而共在近期宣布,會在北京等城市同步加價,起步價加至¥1.88-1.99元",
@@ -6382,21 +5933,6 @@
       ]
     },
     {
-      "id": "ca91de53ba78d417",
-      "title": "Robot wars: MMA bout between humanoids leaves 1 without a head, fans stunned",
-      "description": "It turns out it isn’t just office jobs people should be worried about AI taking, some athletes might want to watch their backs too.\nIn a scene that could have come from the Terminator film franchise, two robots battled it out in an MMA fight in Shenzhen this week, leaving social media users stunned and one of the two combatants without a head.\nDubbed the robot version of the UFC, the Ultimate Robot Knock-out Legend (URKL) opener was the first event of its kind, with two identical T800 robots,...",
-      "link": "https://www.scmp.com/sport/china/article/3361044/robot-wars-mma-bout-between-humanoids-leaves-1-without-head-fans-stunned?utm_source=rss_feed",
-      "pubDate": "2026-07-18 09:30:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "a9ad19f3f979ee6b25328719d52abebd",
       "title": "保健食品濫用?藥劑師:應掌握「3原則」",
       "description": "現代人多有服用保健食品的習慣,亦常於網上購買海外保健食品。但有時候會不小心買到劑量過高,甚至成分屬於處方藥品的商品。",
@@ -6409,21 +5945,6 @@
         "top",
         "health"
       ]
-    },
-    {
-      "id": "8cbbeb9272f69e32",
-      "title": "Germany to scale back renewable subsidies amid power grid strain",
-      "description": "Germany plans to scale back renewable-energy subsidies in a sweeping overhaul of its funding system, as surging solar output puts growing strain on the country’s power grid.\nFrom 2027, new renewable generators should receive support “in a way that benefits both the market and the system,” according to a draft law published by the Economy Ministry late on Friday. That means rewarding projects that respond more closely to electricity demand and do not worsen grid congestion.\nFixed feed-in tariffs.",
-      "link": "https://www.scmp.com/news/world/europe/article/3361045/germany-scale-back-renewable-subsidies-amid-power-grid-strain?utm_source=rss_feed",
-      "pubDate": "2026-07-18 09:16:34",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "26db8ffb0b8a20376b3ab6a45df9e57b",
@@ -6517,51 +6038,6 @@
       "region": "tw"
     },
     {
-      "id": "50d284fa588e93c5",
-      "title": "Hong Kong police arrest 61 in crackdown on phone scams as cases surge 46%",
-      "description": "The number of phone scams recorded in Hong Kong in the first five months of 2026 has surged by 46 per cent compared with the same period last year, with a recent police operation leading to the arrest of 61 suspects in cases involving more than HK$31 million (US$3.95 million).\nThe suspects, aged 17 to 82, were arrested this month in a police operation code-named “Pebblepace” that foiled 54 phone scam cases, mainly involving the “guess who I am” tactic. They were arrested on suspicion of...",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3361042/hong-kong-police-arrest-61-crackdown-phone-scams-cases-surge-46?utm_source=rss_feed",
-      "pubDate": "2026-07-18 08:40:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "0509d14784ecb19b",
-      "title": "How World Cup star Haaland helped put Norway on the map with China’s tourists",
-      "description": "As Norwegian World Cup footballer Erling Haaland’s herbal drink advertising blitz captivates millions, his home country has emerged as a popular destination for Chinese travellers.\nAn increasing number of Chinese citizens have visited Norway over the past two years, with interest surging during this summer’s international football competition.\nThe draw was largely Norway’s scenic allure, but in recent weeks Haaland’s social-media stagecraft had amplified the appeal, tourism professionals...",
-      "link": "https://www.scmp.com/economy/china-economy/article/3360936/how-world-cup-star-haaland-helped-put-norway-map-chinas-tourists?utm_source=rss_feed",
-      "pubDate": "2026-07-18 08:30:09",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "d980034b41b96c98",
-      "title": "Why Japan should be able to weather a US market crash",
-      "description": "What if Wall Street stock prices were to collapse from their current pinnacles under the sheer weight of excessive investment in artificial intelligence (AI)? Would markets in Tokyo and other Asian centres – not to mention Europe and beyond – follow suit?\nThese are questions that are likely to be put to the test before long if US stock prices continue their strong upward trajectory, interest rates and inflation keep rising and, as seems likely, the US-Israel war against Iran drags on.\nWhat a...",
-      "link": "https://www.scmp.com/opinion/asia-opinion/article/3360792/why-japan-should-be-able-weather-us-market-crash?utm_source=rss_feed",
-      "pubDate": "2026-07-18 08:30:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "0345e779a1d7677a882241c23cf99174",
       "title": "早餐吃麵包傷腦?專家揭麵粉1成分損腸胃增腦霧風險+2類人要小心",
       "description": "許多人選擇麵包作為早餐的食物,韓國神經科專科醫師金成甫(김성보)近日對麵粉類食品提出健康警示,指出麵包、麵條等日常早餐食物中所含的麩質成分",
@@ -6593,36 +6069,6 @@
       ]
     },
     {
-      "id": "64ec6b759ebfcb59",
-      "title": "Chinese chip start-up Biren bets on light-based ‘supernodes’ to match Nvidia",
-      "description": "Chinese semiconductor design firm Biren Technology has unveiled its next-generation “supernode” solutions – systems designed to link thousands of AI chips across a single cluster – by using optical data transmission to bypass current hardware limits.\nThe launch underscores how these highly connected server systems have become one of the latest battlegrounds for AI infrastructure companies. The industry is currently racing to scale up raw computing power as artificial intelligence models advance.",
-      "link": "https://www.scmp.com/tech/tech-war/article/3361040/chinese-chip-start-biren-bets-light-based-supernodes-match-nvidia?utm_source=rss_feed",
-      "pubDate": "2026-07-18 08:00:23",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "bd7a5e229e320a44",
-      "title": "Chinese man swims 3 hours clutching tyre to check on parents in flooded village",
-      "description": "Millions in China have been moved by a man who swam for three hours through floods to check on his parents’ status.\nThe floods in southern China’s Guangxi Zhuang autonomous region, caused by torrential rains and a number of dam collapses, have reportedly left 39 people dead and affected nearly 400,000 residents.\nFrom July 3 to 6, cumulative rainfall in Guangxi’s southern region reached 400 mm to 600 mm, with Qinzhou city receiving over 800 mm of precipitation.\nOn July 6, a 30-year-old man...",
-      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3361014/chinese-man-swims-3-hours-clutching-tyre-check-parents-flooded-village?utm_source=rss_feed",
-      "pubDate": "2026-07-18 08:00:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "83c4c5af0f113eae120b16cb1f20af6e",
       "title": "中國科學家首獲門捷列夫國際基礎科學獎",
       "description": "中評社北京7月18日電/第三屆聯合國教科文組織-俄羅斯門捷列夫國際基礎科學獎頒獎典禮17日在聯合國教科文組織巴黎總部舉行,中國科學院院士、中國科學技術大學教授潘建偉成為首位獲此殊榮的中國學者。 聯合國教科文組織介紹,潘建偉是量子光學、量子通信和量子計算領域的國際領軍科學家,他因在大尺度安全量子通信和可擴展量子計算方面的開創性貢獻而受到表彰。他的團隊研製成功“墨子號”量子科學實驗衛星,",
@@ -6635,36 +6081,6 @@
         "top",
         "science"
       ]
-    },
-    {
-      "id": "934063f139095190",
-      "title": "China’s Xi Jinping urges Thailand and Cambodia to settle long-running border dispute",
-      "description": "Chinese President Xi Jinping has urged Thailand and Cambodia to resolve their border dispute after meeting the leaders of both countries on the same day.\nLast year, the dispute escalated into the deadliest fighting between the neighbours in more than a decade, leaving more than 100 military personnel and civilians dead and hundreds more injured.\nA ceasefire reached in December has largely held, but both sides continue to accuse each other of breaches.\nIn his meeting with Thai Prime Minister...",
-      "link": "https://www.scmp.com/news/china/diplomacy/article/3361036/chinese-leader-urges-thailand-and-cambodia-settle-long-running-border-dispute?utm_source=rss_feed",
-      "pubDate": "2026-07-18 07:02:01",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "5d337be3411ecbf0",
-      "title": "Can Philippines turn reforms into gains in Southeast Asia’s FDI race?",
-      "description": "Not so long ago, the Philippines was bedevilled by warning signs to investors, from its corruption to its groaning infrastructure and a fuel crisis born of a war fought thousands of miles away.\nThose problems have not simply disappeared, but a flurry of business-friendly reforms – paired with ambitious plans to upgrade the nation’s railways, ports and power grid – now puts it in a stronger position to capture some of the billions of dollars seeking a home outside the region’s recent supply chain",
-      "link": "https://www.scmp.com/week-asia/economics/article/3360978/can-philippines-turn-reforms-gains-southeast-asias-fdi-race?utm_source=rss_feed",
-      "pubDate": "2026-07-18 07:00:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "e1b04f02bfaab90eb78f5396a62b3dfc",
@@ -6688,81 +6104,6 @@
       ]
     },
     {
-      "id": "9df9d4524d5b85ef",
-      "title": "Where can Hong Kong’s DSE students turn if they don’t get into a public university?",
-      "description": "Some 43,347 day-school candidates sat Hong Kong’s Diploma of Secondary Education (DSE) exam this year, but there are only about 12,000 subsidised undergraduate places at the city’s eight public universities. So what options do the tens of thousands of remaining students have?\nAccording to a survey by education authorities, 85 per cent of Form Six students in the 2024-25 cohort opted for local tertiary education, including bachelor’s degrees, sub-degrees and diploma courses.\nThe South China...",
-      "link": "https://www.scmp.com/news/hong-kong/education/article/3361034/where-can-hong-kongs-dse-students-turn-if-they-dont-get-public-university?utm_source=rss_feed",
-      "pubDate": "2026-07-18 06:09:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "fc294bfc2abfe607",
-      "title": "Will Taiwan’s food safety scandal wreck the ruling DPP’s local election hopes?",
-      "description": "Taiwan’s biggest food safety scandal in years has become a political liability for the ruling Democratic Progressive Party (DPP), giving the opposition valuable ammunition ahead of November’s local elections.\nThe latest controversy centres on soybean salad oil produced by Central Union Oil Corporation and found to contain excessive levels of benzo[a]pyrene (BaP).\nThe substance is classified as a carcinogen by the International Agency for Research on Cancer.\nAccording to Taiwan’s food...",
-      "link": "https://www.scmp.com/news/china/politics/article/3361033/will-taiwans-food-safety-scandal-wreck-dpps-local-election-hopes?utm_source=rss_feed",
-      "pubDate": "2026-07-18 06:00:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "6cd607aafec1b1b6",
-      "title": "Trump’s Chinese interference claims ‘reveal huge crisis facing American democracy’",
-      "description": "President Donald Trump’s latest diatribe against China over alleged election meddling has laid bare a “huge crisis” within America’s democratic system, a prominent adviser to Beijing has suggested.\nZheng Yongnian, a leading political scientist, said the claims were campaign rhetoric for November’s midterm elections and unlikely to have a significant impact on the China-US relationship.\nInstead of repeatedly shifting blame onto other countries, Washington should reflect on how to reform its own..",
-      "link": "https://www.scmp.com/news/china/diplomacy/article/3361031/trumps-chinese-interference-claims-reveal-huge-crisis-facing-american-democracy?utm_source=rss_feed",
-      "pubDate": "2026-07-18 05:44:43",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "22c895320b26895e",
-      "title": "How South Korean hypermarket chain’s fall reflects ‘time-poor’ consumer demands",
-      "description": "Homeplus was once a retail haven for millions of South Korean families who shopped for groceries and household goods regularly at its cavernous hypermarkets.\nBut that ritual over almost three decades ended this week when the company closed all its remaining 67 operating outlets nationwide after suspending 37 others earlier as part of its restructuring.\nThe sudden closure of South Korea’s second-largest hypermarket chain reflects not only its financial distress, but also a decline of the shopping",
-      "link": "https://www.scmp.com/week-asia/economics/article/3361002/how-south-korean-hypermarket-chains-fall-reflects-time-poor-consumer-demands?utm_source=rss_feed",
-      "pubDate": "2026-07-18 05:00:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "10c857fc2ce322d4",
-      "title": "UK’s Burnham faces test as Trump seeks British bases for Iran attack",
-      "description": "The resumption of US strikes against Iran has thrust incoming UK Prime Minister Andy Burnham into a potential day one decision on how much to support Britain’s closest ally in its controversial military campaign.\nEven as Burnham was installed as leader of the governing Labour Party on Friday, outgoing Prime Minister Keir Starmer’s government was engaged in high-level talks about renewed US attacks on Iran, according to people familiar with the matter.\nThe prime minister-in-waiting was kept...",
-      "link": "https://www.scmp.com/news/world/europe/article/3361030/uks-burnham-faces-test-trump-seeks-british-bases-iran-attack?utm_source=rss_feed",
-      "pubDate": "2026-07-18 04:31:07",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "1324f41ea4668bd279755017bb5380cb",
       "title": "美中日引領全球65%機器人市場 台學者:5年內掀「機器人稅」革命",
       "description": "具身智能(Embodied AI)迎來爆發期, 台灣研發管理經理人協會理事長羅仁權出席上海智能大會兩岸論壇指出,全球人形機器人市場進入美中日三強鼎立的黃金期,三國合佔全球總數65%以上。其中,大陸新創在硬體供應鏈整合與成本控制上展現驚人規模化實力。他也大膽預言,未來5年內國際間必將重啟討論「機器人稅」,也許依產業模式抽稅10%至20%不等稅收,以此財政收入轉為補助前沿科技的良性循環,最後,他也提醒,「掌握硬體供應鏈整合能力,才是最終活下來的唯一解答。」 《詳全文...》",
@@ -6776,21 +6117,6 @@
         "science"
       ],
       "region": "tw"
-    },
-    {
-      "id": "42e13a32f4c7219c",
-      "title": "Hong Kong’s Lalamove, EY team up to shape ‘low-altitude economy’. What’s the plan?",
-      "description": "Hong Kong delivery company Lalamove and professional services firm EY have joined forces and jumped on the “low-altitude economy” bandwagon in the hopes of expanding their reach in the Greater Bay Area and transforming conventional business.\nThe companies told the South China Morning Post that the collaboration would leverage Lalamove’s logistics platform and EY’s services in planning, business modelling, risk advisory, governance and tax and customs advisory.\nThe initiative involves equipment..",
-      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3361016/hong-kongs-lalamove-ey-team-shape-low-altitude-economy-whats-plan?utm_source=rss_feed",
-      "pubDate": "2026-07-18 04:00:20",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "5e87a070900884c9afd2d3d720473501",
@@ -6857,81 +6183,6 @@
       "region": "tw"
     },
     {
-      "id": "6c59494be4edfe4a",
-      "title": "90% sign up for Wang Fuk Court buy-back amid concerns over rushed decisions",
-      "description": "About 90 per cent of homeowners at the fire-ravaged Wang Fuk Court estate in Hong Kong have returned signed letters accepting the government’s buy-back offer, but some residents have raised concerns about being rushed into decisions linked to priority flat selection.\nThe Deputy Financial Secretary’s Office said on Friday that as of July 16, a total of 1,786 owners, or about 90 per cent, had submitted acceptance letters. Of these, 769 had already signed sale and purchase agreements with the...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3361028/90-sign-wang-fuk-court-buy-back-amid-concerns-over-rushed-decisions?utm_source=rss_feed",
-      "pubDate": "2026-07-18 02:52:57",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "41ccc028685dd830",
-      "title": "Brunch with your bichon frise? Some dog owners say pet dining off to ruff start",
-      "description": "Dog owners have welcomed Hong Kong’s first wave of pet-friendly restaurants, but some have been disappointed by restrictive rules, confused staff and limited space, with one saying only half of her pet stroller could fit within the designated seating area.\nAfter months of anticipation, the Food and Environmental Hygiene Department granted an initial 1,000 permits by lottery in June, and 940 restaurants opened their doors to dogs on July 9.\nSeveral businesses pulled out of the scheme days later,.",
-      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3361015/brunch-your-bichon-frise-some-dog-owners-say-pet-dining-ruff-start?utm_source=rss_feed",
-      "pubDate": "2026-07-18 01:00:15",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "02f5d4d70083880d",
-      "title": "Tai Po fire: corrupt players exploited loopholes in regulations, inquiry hears",
-      "description": "An administrative “honour system” that relied on Hong Kong’s private sector to regulate itself created oversight loopholes and left obvious fire hazards at the Wang Fuk Court housing estate unchecked before last year’s inferno, legal counsel for an independent committee investigating the disaster has said.\nIn the final session of 30 days of public hearings, Victor Dawes SC said on Friday that the contractor and consultant behind the estate’s HK$336 million renovation project deserved the...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3361010/tai-po-fire-corrupt-players-exploited-loopholes-regulations-inquiry-hears?utm_source=rss_feed",
-      "pubDate": "2026-07-17 15:06:18",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "92a8e2745e5f22d2",
-      "title": "Tai Po fire inquiry legal team calls for bamboo scaffolding to be phased out",
-      "description": "The legal team for an independent committee examining the cause of Hong Kong’s deadly Tai Po fire has recommended that authorities gradually phase out bamboo scaffolding in favour of metal replacements, among other proposals ranging from legislative reform to measures to curb bid-rigging.\nThe suggestions were outlined in 627 pages of closing submissions from the committee’s lawyers on Friday, concluding hearings that started in March to examine the Wang Fuk Court fire. The blaze last November...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3361000/tai-po-fire-inquiry-panel-calls-bamboo-scaffolding-be-phased-out?utm_source=rss_feed",
-      "pubDate": "2026-07-17 14:41:31",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "a755e6567bc4e468",
-      "title": "Cathay Pacific delays Middle East flights as US and Iran trade attacks",
-      "description": "Hong Kong flag carrier Cathay Pacific Airways has postponed resuming direct flights to the Middle East amid recent signs that the Iran crisis is rekindling.\nThe airline said on Friday that its daily passenger flights to Dubai in the United Arab Emirates would be postponed until October 25. Its four weekly flights to Saudi Arabian capital Riyadh would be delayed until October 26.\nEarlier this month, the airline said it planned to resume passenger services to the two destinations on September 1,..",
-      "link": "https://www.scmp.com/news/hong-kong/transport/article/3360976/cathay-pacific-delays-middle-east-flights-us-iran-tensions-resurface?utm_source=rss_feed",
-      "pubDate": "2026-07-17 11:10:12",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "30f2638152065a245f920f8d8a0da42e",
       "title": "【航天強國】國家航天事業成就展科技園揭幕 展現港科研貢獻冀激發青年投身科學",
       "description": "香港科技園公司(科技園公司)昨日(16日)在香港科學園舉行「國家航天事業成就」專題展覽啟動禮暨航天專家分享講座,為一連七日的巡迴展覽揭開序幕。香港科學園作為巡展首站,展覽由7月16日至22日在科學園中庭長廊...",
@@ -6972,36 +6223,6 @@
       ]
     },
     {
-      "id": "14371d7c9e4b7b41",
-      "title": "SCMP multimedia series traces causes, failures and human toll of Tai Po blaze",
-      "description": "The South China Morning Post has documented Hong Kong’s deadly Tai Po blaze in a series of multimedia projects, from detailing the search and rescue mission to examining evidence revealed at public hearings set up to investigate the cause of the inferno.\nThe fire, which engulfed the Wang Fuk Court residential complex last November, claimed 168 lives and displaced nearly 5,000 people, making it the city’s deadliest blaze in decades.\nFor a deeper look at the causes of the tragedy, the “systemic...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360962/scmp-multimedia-series-traces-causes-failures-and-human-toll-tai-po-blaze?utm_source=rss_feed",
-      "pubDate": "2026-07-17 09:46:14",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "b8504857f1766916",
-      "title": "Jury rules baby died of natural causes despite nurse’s error in medical tube check",
-      "description": "The Coroner’s Court has ruled that a premature baby born at a Hong Kong public hospital died of natural causes, after an inquest revealed that a tube delivering medicine had remained closed for 30 minutes despite repeated checks by staff.\nThe baby girl, Angel Yu Pui-fei, was born in June 2023 at 27 weeks’ gestation at Prince of Wales Hospital in Sha Tin and admitted to the neonatal intensive care unit due to complications arising from her premature birth.\nThe court earlier heard evidence...",
-      "link": "https://www.scmp.com/news/hong-kong/health-environment/article/3360952/jury-rules-baby-died-natural-causes-despite-nurses-error-medical-tube-check?utm_source=rss_feed",
-      "pubDate": "2026-07-17 09:27:57",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "2cbc2b9701b7b021b1ddde4a4bac3362",
       "title": "【穗港合作】大灣區首個國際臨床研究中心落戶南沙 梁振英:為香港科研提供內地轉化平台",
       "description": "香港中文大學、廣州南沙區人民政府與廣州市第一人民醫院前日(15日)簽署三方合作協議,共同建設「香港中文大學大灣區臨床研究中心(廣州南沙)」。這是粵港澳大灣區首個國際臨床研究中心,旨在推動粵港澳大灣區跨境...",
@@ -7014,96 +6235,6 @@
         "top",
         "science"
       ]
-    },
-    {
-      "id": "41a02d545cf09752",
-      "title": "Ex-primary school IT technician jailed 11 years for molesting 3 boys on campus",
-      "description": "A former Hong Kong primary school IT technician has been sentenced to 11 years in jail after he admitted to repeatedly molesting three male pupils, with one of the boys still recovering from the trauma of being subjected to having intercourse with him.\nThe High Court on Friday heard that 30-year-old Law Yuen-lung had been diagnosed with paedophilic disorder, despite his denials of having any sexual interest in children. The court also heard psychologists had assessed that he had lived a lonely..",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3360939/ex-primary-school-it-technician-jailed-11-years-molesting-3-boys-campus?utm_source=rss_feed",
-      "pubDate": "2026-07-17 08:59:49",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "c3da9e5112e2e429",
-      "title": "5 Hong Kong booksellers arrested for alleged sedition released on bail",
-      "description": "Five Hong Kong booksellers arrested on suspicion of sedition have been released on bail two days after national security police raided a pair of independent bookshops where they worked.\nPolice said the three women and two men, aged between 30 and 59, were released on Friday pending further investigation.\nA source earlier said the two bookstores involved were Have a Nice Stay bookshop in Prince Edward and Greenfield Book Store in Mong Kok.\nMedia footage showed Sum Wan-wah, who was among a group..",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3360934/five-hong-kong-booksellers-arrested-alleged-sedition-released-bail?utm_source=rss_feed",
-      "pubDate": "2026-07-17 08:14:30",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "af5c71af9edc7f1a",
-      "title": "Hong Kong passes bill for Huanggang ‘co-location’ arrangement",
-      "description": "Hong Kong’s legislature has passed a bill providing the legal basis for implementing a “co-location” arrangement at the upgraded Huanggang border crossing following a special, four-hour meeting, after the city’s security chief said it had to be approved by July 31.\nThe passage on Friday of the Huanggang Port Hong Kong Port Area Bill, gazetted on Tuesday, marked the fastest round of scrutiny since the Legislative Council’s 2021 overhaul under the “patriots administering Hong Kong”...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360923/hong-kong-passes-bill-huanggang-co-location-arrangement?utm_source=rss_feed",
-      "pubDate": "2026-07-17 07:43:47",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "1f3305128119170a",
-      "title": "Boy, 14, arrested after allegedly knocking classmate unconscious",
-      "description": "Hong Kong police have arrested a 14-year-old boy on suspicion of wounding for allegedly shoving a classmate who remains in a serious condition two weeks after the incident.\nThe force said on Friday that the suspect was arrested on Monday after an in-depth investigation.\nThe teenager was subsequently released on bail pending further investigation and was required to report to police in late July, it added.\nThe arrest was in connection with a report filed on July 3 about a 16-year-old boy who lost",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3360916/boy-14-arrested-after-allegedly-knocking-classmate-unconscious?utm_source=rss_feed",
-      "pubDate": "2026-07-17 07:10:21",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "8618352011ce4144",
-      "title": "First day of smoking ban at construction sites in Hong Kong catches out offenders",
-      "description": "Hong Kong adopted a ban on smoking at construction sites on Friday, with authorities issuing eight fixed penalty notices to workers and intending to prosecute a contractor over suspected rule violations.\nBut many workers said they welcomed the ban and were hoping to finally quit the habit with the help of their employers.\nThe ban was introduced in the wake of a fire at Tai Po’s Wang Fuk Court housing estate, a disaster that killed 168 people last November and was suspected to have been caused by",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360896/some-workers-seek-quit-smoking-ban-hong-kong-construction-sites-kicks?utm_source=rss_feed",
-      "pubDate": "2026-07-17 05:23:54",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "060f10b43993c001",
-      "title": "Chinese scientist’s sodium battery leap; petition to boot Argentina: SCMP’s 7 highlights",
-      "description": "We have selected seven stories from this week’s news across Hong Kong, mainland China, the wider Asia region and beyond that resonated with our readers and shed light on topical issues. If you would like to see more of our reporting, please consider subscribing.\n1. The young Chinese scientist behind ‘impossible’ breakthrough on sodium batteries\nScientist Lu Yaxiang, a professor at the Chinese Academy of Sciences’ Institute of Physics, has spent a decade working to make sodium-ion batteries...",
-      "link": "https://www.scmp.com/news/china/article/3360888/chinese-scientists-sodium-battery-leap-petition-boot-argentina-scmps-7-highlights?utm_source=rss_feed",
-      "pubDate": "2026-07-17 04:34:45",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "c528c650148a3019f836c877bdeed1f2",
@@ -7139,21 +6270,6 @@
       ]
     },
     {
-      "id": "dbbf7b2bc6527645",
-      "title": "Hong Kong taxi driver dies after crashing into railing in Tsuen Wan",
-      "description": "A Hong Kong taxi driver has died after his vehicle crashed into a railing in Tsuen Wan.\nAccording to police, the accident happened at 11.45pm on Thursday on Ma Tau Pa Road, when the cabby reportedly lost control of his vehicle and drove into a railing while travelling towards Tsuen Wan Riviera Park.\nEmergency responders arrived at the scene and found the driver unconscious, with no apparent external injuries.\nHe was rushed to Yan Chai Hospital in Tsuen Wan, where he was pronounced dead at 1.06am",
-      "link": "https://www.scmp.com/news/hong-kong/transport/article/3360872/hong-kong-taxi-driver-dies-after-crashing-railing-tsuen-wan?utm_source=rss_feed",
-      "pubDate": "2026-07-17 03:26:38",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "de27ed67df0bb302ba00805d6cb1b386",
       "title": "讀《1.23%:破幻的微光》 赴人生追問",
       "description": "李家傑既是商業王國的舵手、慈善事業的施者,更是一位獨立思考、不落俗套、常懷憂患意識的讀書人。其著《1.23%:破幻的微光》,闡述他對當下科技、社會、人類的觀察和哲思。",
@@ -7172,336 +6288,6 @@
       "category": [
         "science"
       ]
-    },
-    {
-      "id": "662683b9dfeb1458",
-      "title": "Hong Kong to brace for wet weekend as showers and thunderstorms loom",
-      "description": "The weather in Hong Kong is expected to remain unsettled over the next few days, with showers and thunderstorms caused by a broad trough of low pressure, according to the Observatory.\nThe forecaster said on Friday that the weekend would be mainly cloudy with a few showers and squally thunderstorms, with sunny intervals expected in the afternoon.\nIt added that a few showers were expected on Sunday and more on Monday, before easing off gradually in the following couple of days.\n“Under the...",
-      "link": "https://www.scmp.com/news/hong-kong/health-environment/article/3360865/hong-kong-issues-amber-rainstorm-warning-tells-public-brace-possible-floods?utm_source=rss_feed",
-      "pubDate": "2026-07-17 02:38:02",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "6b722cc0264c9921",
-      "title": "Committee pushes reforms, thanks Wang Fuk Court residents as hearing ends – as it happened",
-      "description": "Victor Dawes, lead counsel for a panel investigating Hong Kong’s deadliest fire in decades, delivered his closing remarks at the final public inquiry session, wrapping up a months-long hearing into the tragedy.\nThe 600-page statement covered the causes of the fire at Wang Fuk Court in Tai Po, as well as the roles and responsibilities of each involved party.\nThe blaze that broke out on November 26, 2025, killed 168 people and displaced nearly 5,000. The estate was undergoing a HK$336 million...",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3360862/we-hope-offer-answers-committee-counsel-tells-tai-po-fire-inquiry?utm_source=rss_feed",
-      "pubDate": "2026-07-17 02:23:54",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "3c6f8ad58ec99a48",
-      "title": "Hong Kong won’t see a bright future by constantly looking to its past",
-      "description": "Earlier this month, the first batch of 14,000 free tickets to visit the People’s Liberation Army’s naval vessels during their stopover in Hong Kong was claimed within minutes of being released. Families queued online for the opportunity to step aboard the ships, and the open days quickly became one of the most talked-about events of this year’s handover anniversary. The scenes stood in contrast to those of July 1997.\nWhen the PLA Hong Kong Garrison was first stationed following the handover,...",
-      "link": "https://www.scmp.com/opinion/hong-kong-opinion/article/3360452/hong-kong-wont-see-bright-future-constantly-looking-its-past?utm_source=rss_feed",
-      "pubDate": "2026-07-17 01:30:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "74655ebeaa472f39",
-      "title": "Is Hong Kong kicking the can down the road with ride-hailing quota?",
-      "description": "Taxi trade leader Chau Kwok-keung says he has never felt as much fear as he does now after transport minister Mable Chan set a 10,000-vehicle cap for ride-hailing service permits in May, in a bid to resolve what she called a “long-standing controversy” between traditional cabs and online service providers.\nChau, a 40-year veteran of the industry, worries that the trade, comprising 18,163 taxis and about 46,000 active cabbies, will be driven into a dead end because he believes the quota will...",
-      "link": "https://www.scmp.com/news/hong-kong/transport/article/3360841/hong-kong-kicking-can-down-road-ride-hailing-quota?utm_source=rss_feed",
-      "pubDate": "2026-07-17 00:30:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "9e8900c2fc94f412",
-      "title": "Retail rift: Hong Kong shops plead for rent relief, landlords see improving market",
-      "description": "Although retail sales in Hong Kong rose more than 10 per cent year on year in the first five months of 2026, a wave of shop closures continues, leaving tenants and landlords with vastly different assessments of the retail leasing market.\nMany tenants say that despite racking their brains for solutions, their businesses remain stagnant. They are losing money because of constant price cutting to attract customers, a situation they attribute to the broader economic climate. Many hope for rent...",
-      "link": "https://www.scmp.com/business/article/3360784/retail-rift-hong-kong-shops-plead-rent-relief-landlords-see-improving-market?utm_source=rss_feed",
-      "pubDate": "2026-07-17 00:00:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "97ee54625cc6b10d",
-      "title": "Hong Kong’s AI education blueprint is a start – but schools need more",
-      "description": "Hong Kong’s schools stand at a critical juncture as artificial intelligence (AI) reshapes learning. The government’s Blueprint for Digital Education Development in Primary and Secondary Schools, launched last month just days ahead of Digital Education Week, sets out a clear vision with students as the focus, teachers as professionals, schools as the base and society as a partner.\nIt has incorporated concerns and suggestions raised by educators and researchers, including an AI pedagogical...",
-      "link": "https://www.scmp.com/opinion/hong-kong-opinion/article/3360372/hong-kongs-ai-education-blueprint-start-schools-need-more?utm_source=rss_feed",
-      "pubDate": "2026-07-16 21:30:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "28fb002bb7ca9150",
-      "title": "Deceitful firms mostly to blame for deadly Tai Po blaze, government counsel says",
-      "description": "Hong Kong authorities’ role in last year’s deadly Wang Fuk Court blaze was secondary to that of construction and fire service firms, which either conspired to circumvent supervision or neglected their statutory duties, a government counsel has argued.\nWrapping up the government’s arguments at an independent committee inquiry into the tragedy, Jenkin Suen SC on Thursday attributed the inferno to the “deceit, inaction and deliberate omission” of contractors who exploited regulatory regimes founded",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360839/deceitful-firms-mostly-blame-deadly-tai-po-blaze-government-counsel-says?utm_source=rss_feed",
-      "pubDate": "2026-07-16 14:02:59",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "f4e60c82567352bd",
-      "title": "Hong Kong builders issue smoking ban blueprint ahead of Friday adoption",
-      "description": "Hong Kong’s construction sector has rolled out a unified blueprint to enforce a strict, site-wide smoking ban taking effect on Friday, a major safety overhaul triggered by the deadly Tai Po fire last year.\nThe guidelines, released by the Hong Kong Construction Association along with eight other industry groups on Thursday, are aimed at creating a unified and clear framework to ensure that different types of work abide by the same set of principles under the new smoking ban at sites.\n“The release",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360831/hong-kong-builders-issue-smoking-ban-blueprint-ahead-friday-adoption?utm_source=rss_feed",
-      "pubDate": "2026-07-16 12:59:33",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "2a2c51a4d66adc58",
-      "title": "Hong Kong SPCA cancels fundraiser amid backlash over bid to remove dog-killing videos",
-      "description": "An animal welfare charity has apologised and cancelled its major fundraising event this weekend after facing a backlash over its request to Hong Kong police to remove videos of a dog and its pups being killed in mainland China, with critics accusing the group of undermining efforts to raise public awareness of the case.\nThe Hong Kong Society for the Prevention of Cruelty to Animals (SPCA) said in a statement on Thursday night that it sincerely apologised “for the concerns caused by the...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360827/spca-hit-backlash-after-wading-mainland-chinese-dog-killing-case?utm_source=rss_feed",
-      "pubDate": "2026-07-16 12:05:07",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "71f7e42442ac59e0",
-      "title": "Hong Kong urged to position Greater Bay Area as equine hub, grow racing tourism",
-      "description": "The Hong Kong Jockey Club has urged the city to position the Greater Bay Area as a leading equine hub under its first five-year plan, proposing the formation of a distinctive racing circuit for both mainland Chinese and international tourists.\nIn a submission to the government on Thursday, the club said the equine industry had already been identified as a strategic economic driver under national planning frameworks.\n“Hong Kong therefore has an opportunity to play a leading role in helping to...",
-      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360825/hong-kong-urged-position-greater-bay-area-equine-hub-grow-racing-tourism?utm_source=rss_feed",
-      "pubDate": "2026-07-16 11:55:57",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "fe583ed2bf2b46aa",
-      "title": "Bar security footage helps clear Hong Kong rugby player of molestation charge",
-      "description": "A Hong Kong professional rugby player has been acquitted of molesting a woman at a bar after a magistrate ruled the athlete had touched her buttocks by accident.\nBut Faizal Solomona Penesa, 34, admitted a lesser offence of common assault and another charge of criminal damage, and was ordered by Magistrate Gary Chu Man-hon on Thursday to pay HK$12,000 (US$1,530) in fines.\nSecurity footage played in court showed Solomona’s hand on the complainant’s waist at Bobby’s Rabble on Wyndham Street on the.",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3360813/bar-security-footage-helps-clear-hong-kong-rugby-player-molestation-charge?utm_source=rss_feed",
-      "pubDate": "2026-07-16 10:18:21",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "27a395af341bded7",
-      "title": "Short-haul tourist arrivals fall 15% amid strong Hong Kong dollar, fewer flights",
-      "description": "Hong Kong’s short-haul visitor arrivals plunged by 15 per cent in June despite an overall growth in traffic, as higher fuel costs linked to the Middle East conflict reduced flight capacity and weaker regional currencies dampened travel demand, tourism authorities have said.\nThe Hong Kong Tourism Board said on Thursday that the city received 3.72 million visitors last month, up by 7 per cent from a year earlier, driven largely by a 10 per cent rise in mainland Chinese arrivals to 2.88...",
-      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360804/short-haul-tourist-arrivals-fall-15-amid-strong-hong-kong-dollar-fewer-flights?utm_source=rss_feed",
-      "pubDate": "2026-07-16 10:06:06",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "cc4b815f51b2a6fe",
-      "title": "Booksellers must ensure titles don’t violate national security laws: Chris Tang",
-      "description": "Hong Kong’s security chief has warned that booksellers are responsible for ensuring their titles do not violate national security legislation, a day after police raided two independent stores and arrested five people on suspicion of sedition.\nSecretary for Security Chris Tang Ping-keung also reiterated on Thursday that the government would not compile a list of “banned books”, arguing that doing so would allow offenders to bypass the law by simply changing a title.\nTang’s comments came after...",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3360811/booksellers-must-ensure-titles-dont-violate-national-security-laws-chris-tang?utm_source=rss_feed",
-      "pubDate": "2026-07-16 09:57:28",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "c41ac3901a33705e",
-      "title": "Mainland schools for Hong Kong pupils beat city average in university entrance exams",
-      "description": "Two of the four schools in mainland China whose students can take Hong Kong’s university entrance exams as school candidates have said that most of their pupils passed the core subjects, beating the citywide average.\nThe four schools in the Greater Bay Area are the only institutions on the mainland approved by the Hong Kong Examinations and Assessment Authority to register their students as candidates for the Diploma of Secondary Education (DSE) exams. Students pursuing the curriculum elsewhere.",
-      "link": "https://www.scmp.com/news/hong-kong/education/article/3360795/mainland-schools-hong-kong-pupils-beat-city-average-university-entrance-exams?utm_source=rss_feed",
-      "pubDate": "2026-07-16 09:05:58",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "0a4cde6363244a31",
-      "title": "Senior Hong Kong policeman convicted of molesting clerk 3 times at headquarters",
-      "description": "A senior Hong Kong police officer has been convicted of indecently assaulting a subordinate on three occasions at the force’s headquarters in Wan Chai, with one of the incidents taking place at a work party in full view of several colleagues.\nSenior Superintendent Ian Chow Ngai-kong, 51, was found guilty by West Kowloon Magistrate Vivian Ho Wai-han on Thursday, after she dismissed the defendant’s testimony and ruled that his attempt to characterise their interactions as an affair was...",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3360788/senior-hong-kong-policeman-convicted-molesting-clerk-3-times-headquarters?utm_source=rss_feed",
-      "pubDate": "2026-07-16 08:01:13",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "00b72ad100eb72b2",
-      "title": "Hongkonger dies in New Zealand car crash, third fatality this year",
-      "description": "A Hongkonger has died in a traffic accident in New Zealand, marking at least the second fatal crash involving city residents in the country this year.\nThe Chinese consulate in Christchurch said on Thursday that the resident died in a “serious traffic accident” a day earlier along Crown Range Road near Queenstown.\n“Our consulate is deeply saddened by the loss and has activated its emergency response mechanism immediately,” it said.\n“We extend our deepest condolences to the family of the victim...",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360780/hongkonger-dies-new-zealand-car-crash-3rd-fatality-year?utm_source=rss_feed",
-      "pubDate": "2026-07-16 06:43:20",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "50fe7eea3afa6adc",
-      "title": "Health Matters",
-      "description": "",
-      "link": "https://www.scmp.com/news/hong-kong/health-environment/series/3360462/health-matters?utm_source=rss_feed",
-      "pubDate": "2026-07-16 06:33:07",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "1397346262d94a10",
-      "title": "Hong Kong set to invite ride-hailing firms to apply for licences in August",
-      "description": "Hong Kong authorities plan to invite ride-hailing platforms to apply for operator licences as early as next month and will begin approving them in batches from the end of November, the city’s transport minister has said, with some leading operators expressing interest in joining the market.\nSecretary for Transport and Logistics Mable Chan laid down the timeline on Thursday as lawmakers completed the negative vetting process to approve the subsidiary legislation for the ride-hailing regulatory...",
-      "link": "https://www.scmp.com/news/hong-kong/transport/article/3360775/hong-kong-set-invite-ride-hailing-firms-apply-licences-august?utm_source=rss_feed",
-      "pubDate": "2026-07-16 06:17:09",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "c11bb70c15b40e07",
-      "title": "Cafe de Coral, in 1986, becomes first Hong Kong food chain to go public – SCMP archive",
-      "description": "This article was first published on July 17, 1986.\nCafe de Coral the live wire in quiet market\nby John Mulcahy\nFast-food counter Cafe de Coral hit the boards yesterday (July 16, 1986), trading up to $1.35 and recording the biggest volume of the day.\nAlthough 16.6 million Cafe de Coral shares traded, at a total value of $22.08 million, this was about all the excitement the market could muster, as it took a breather after some hectic activity on Monday and Tuesday.\nAnother talking point was Yeo...",
-      "link": "https://www.scmp.com/news/hong-kong/article/3360769/cafe-de-coral-1986-becomes-first-hong-kong-food-chain-go-public-scmp-archive?utm_source=rss_feed",
-      "pubDate": "2026-07-16 06:15:05",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "26c1039a8206ab51",
-      "title": "Hong Kong set to pass Huanggang crossing bill on Friday at the earliest",
-      "description": "Hong Kong’s legislature is expected to pass a bill providing the legal basis for implementing a “co-location” arrangement at the Huanggang Port border crossing on Friday at the earliest, after approving a government request to hold an extra meeting to scrutinise it.\nThe Legislative Council will hold the additional meeting on Friday to vet the Huanggang Port Hong Kong Port Area Bill ahead of the facility’s commissioning deadline at midnight on July 31.\nThe bill, which was gazetted on Tuesday, was",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360757/promote-huanggang-port-crossing-system-and-improve-bus-parking-authorities-urged?utm_source=rss_feed",
-      "pubDate": "2026-07-16 04:36:10",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "8afa7ad67bf19a59",
-      "title": "Mainland China funds increase stakes in Hong Kong biotech amid surge of licensing deals",
-      "description": "A growing number of mainland Chinese institutional fund managers have built up stakes in Hong Kong-listed biotechnology stocks over the past month, drawn by attractive valuations amid a surge in cross-border licensing deals in the sector.\nChina’s largest mutual fund manager, E Fund Management, has taken a 7 per cent stake in gene-editing biotechnology firm Biocytogen Pharmaceuticals, buying additional 91,500 shares in the Beijing-based firm at an average price of HK$46.90 each on July 2,...",
-      "link": "https://www.scmp.com/business/china-business/article/3360741/mainland-china-funds-increase-stakes-hong-kong-biotech-amid-surge-licensing-deals?utm_source=rss_feed",
-      "pubDate": "2026-07-16 03:03:20",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "945bbea58a94d992",
-      "title": "Tai Po fire: 5 ‘key weaknesses’ flagged in government regulations – as it happened",
-      "description": "An independent committee investigating Hong Kong’s deadliest fire in decades heard concluding remarks from the government on Thursday as the final round of hearings on the tragedy continued.\nThe legal representative for nine residents of the fire-ravaged Wang Fuk Court housing estate in Tai Po also delivered a concluding statement before the judge-led panel on the second-last session of the three-day hearing.\nCommittee chairman Justice David Lok Kai-hong said the government’s closing statement..",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3360738/tai-po-fire-result-multiple-layers-human-failure-hearing-told?utm_source=rss_feed",
-      "pubDate": "2026-07-16 02:55:22",
-      "source_name": "South China Morning Post",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "rss",
-        "local"
-      ],
-      "region": "hk"
     }
   ]
 }

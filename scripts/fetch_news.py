@@ -30,13 +30,19 @@ MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initia
 CATEGORIES = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics', 'world']
 REGIONS = ['hk', 'tw']
 
-# RSS Feeds - Hong Kong news sources
+# RSS Feeds - Hong Kong Chinese news sources
 RSS_FEEDS = {
-    "scmp": {
-        "name": "South China Morning Post",
+    "mingpao": {
+        "name": "明報",
         "feeds": [
-            "https://www.scmp.com/rss/91/feed",  # Hong Kong news
-            "https://www.scmp.com/rss/2/feed",   # Business
+            "https://news.mingpao.com/rss/pns.xml",  # 即時新聞
+        ]
+    },
+    "hket": {
+        "name": "香港經濟日報",
+        "feeds": [
+            "https://www.hket.com/rss/hongkong",
+            "https://www.hket.com/rss/finance",
         ]
     },
 }
