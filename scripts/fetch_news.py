@@ -2,6 +2,8 @@
 """
 Fetch Chinese news from NewsData.io for sicsicduck.com
 Incremental mode: keeps old news, deduplicates, removes articles older than 30 days
+Expanded regions: HK + Taiwan + China
+Expanded categories: added 'world'
 """
 
 import requests
@@ -20,7 +22,12 @@ NEWS_FILE = DATA_DIR / "news.json"
 
 # Settings
 MAX_AGE_DAYS = 30  # Remove articles older than this
-MAX_PER_CATEGORY = 10  # Max articles per category per fetch
+MAX_PER_CATEGORY_NORMAL = 10  # Max articles per category per region for daily cron
+MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initial build
+
+# Categories and regions
+CATEGORIES = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics', 'world']
+REGIONS = ['hk', 'tw', 'cn']
 
 
 def load_existing_news():
@@ -62,10 +69,8 @@ def remove_old_articles(articles, max_age_days=MAX_AGE_DAYS):
                 if pub_date >= cutoff_date:
                     filtered.append(article)
             except ValueError:
-                # Keep articles with invalid dates
                 filtered.append(article)
         else:
-            # Keep articles without dates
             filtered.append(article)
     
     return filtered
@@ -81,15 +86,12 @@ def deduplicate_articles(articles):
         article_id = article.get("id", "")
         title = article.get("title", "")
         
-        # Check by ID first (most reliable)
         if article_id and article_id in seen_ids:
             continue
         
-        # Then check by title
         if title and title in seen_titles:
             continue
         
-        # Track what we've seen
         if article_id:
             seen_ids.add(article_id)
         if title:
@@ -114,100 +116,102 @@ def sort_articles_by_date(articles):
     return sorted(articles, key=get_sort_key, reverse=True)
 
 
-def fetch_news(days=7, max_per_category=MAX_PER_CATEGORY):
+def fetch_news(days=7, max_per_category=10):
     """
-    Fetch Chinese news from NewsData.io from multiple categories
+    Fetch Chinese news from NewsData.io from multiple categories and regions
     
     Args:
         days: Number of days to look back
-        max_per_category: Maximum articles per category
+        max_per_category: Maximum articles per category per region
     """
     end_date = datetime.now()
     start_date = end_date - timedelta(days=days)
     
     articles = []
     
-    # Categories to fetch
-    categories = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics']
-    
     print(f"Fetching Chinese news from NewsData.io...")
-    print(f"Categories: {', '.join(categories)}")
+    print(f"Categories: {', '.join(CATEGORIES)}")
+    print(f"Regions: {', '.join(REGIONS)}")
     print(f"Date range: {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
     
-    for category in categories:
+    for category in CATEGORIES:
         print(f"\nFetching {category} news...")
         category_articles = []
-        page = None
         
-        while len(category_articles) < max_per_category:
-            params = {
-                "apikey": API_KEY,
-                "language": "zh",
-                "category": category,
-                "country": "hk",
-            }
+        for region in REGIONS:
+            print(f"  Region: {region}")
+            page = None
             
-            if page:
-                params["page"] = page
-            
-            try:
-                response = requests.get(BASE_URL, params=params, timeout=30)
-                response.raise_for_status()
-                data = response.json()
+            while len(category_articles) < max_per_category:
+                params = {
+                    "apikey": API_KEY,
+                    "language": "zh",
+                    "category": category,
+                    "country": region,
+                }
                 
-                if data.get("status") != "success":
-                    print(f"  API error: {data.get('message', 'Unknown error')}")
-                    break
+                if page:
+                    params["page"] = page
                 
-                results = data.get("results", [])
-                
-                if not results:
-                    break
-                
-                for article in results:
-                    pub_date_str = article.get("pubDate")
-                    if pub_date_str:
-                        try:
-                            pub_date = datetime.strptime(pub_date_str[:19], "%Y-%m-%d %H:%M:%S")
-                            if pub_date < start_date:
-                                continue
-                        except ValueError:
-                            pass
+                try:
+                    response = requests.get(BASE_URL, params=params, timeout=30)
+                    response.raise_for_status()
+                    data = response.json()
                     
-                    processed = {
-                        "id": article.get("article_id"),
-                        "title": article.get("title"),
-                        "description": article.get("description"),
-                        "link": article.get("link"),
-                        "pubDate": article.get("pubDate"),
-                        "source_name": article.get("source_name"),
-                        "image_url": article.get("image_url"),
-                        "keywords": article.get("keywords", []),
-                        "category": article.get("category", [category]),
-                    }
-                    
-                    if not processed["title"]:
-                        continue
-                    
-                    category_articles.append(processed)
-                    
-                    if len(category_articles) >= max_per_category:
+                    if data.get("status") != "success":
+                        print(f"    API error: {data.get('message', 'Unknown error')}")
                         break
-                
-                next_page = data.get("next_page")
-                if not next_page or len(category_articles) >= max_per_category:
+                    
+                    results = data.get("results", [])
+                    
+                    if not results:
+                        break
+                    
+                    for article in results:
+                        pub_date_str = article.get("pubDate")
+                        if pub_date_str:
+                            try:
+                                pub_date = datetime.strptime(pub_date_str[:19], "%Y-%m-%d %H:%M:%S")
+                                if pub_date < start_date:
+                                    continue
+                            except ValueError:
+                                pass
+                        
+                        processed = {
+                            "id": article.get("article_id"),
+                            "title": article.get("title"),
+                            "description": article.get("description"),
+                            "link": article.get("link"),
+                            "pubDate": article.get("pubDate"),
+                            "source_name": article.get("source_name"),
+                            "image_url": article.get("image_url"),
+                            "keywords": article.get("keywords", []),
+                            "category": article.get("category", [category]),
+                            "region": region,
+                        }
+                        
+                        if not processed["title"]:
+                            continue
+                        
+                        category_articles.append(processed)
+                        
+                        if len(category_articles) >= max_per_category:
+                            break
+                    
+                    next_page = data.get("next_page")
+                    if not next_page or len(category_articles) >= max_per_category:
+                        break
+                    page = next_page
+                    
+                except requests.RequestException as e:
+                    print(f"    Request error: {e}")
                     break
-                page = next_page
-                
-            except requests.RequestException as e:
-                print(f"  Request error: {e}")
-                break
-            except json.JSONDecodeError as e:
-                print(f"  JSON error: {e}")
-                break
+                except json.JSONDecodeError as e:
+                    print(f"    JSON error: {e}")
+                    break
         
         articles.extend(category_articles)
-        print(f"  Fetched {len(category_articles)} articles from {category}")
+        print(f"  Total for {category}: {len(category_articles)} articles")
     
     return articles
 
@@ -223,7 +227,6 @@ def generate_html_content(articles):
         category_list = article.get("category", [])
         category_str = ", ".join(category_list) if category_list else ""
         
-        # Image HTML: use <img> tag with onerror fallback to default image
         if image_url:
             image_html = f'<img src="{image_url}" alt="" onerror="this.src=\'/default-news.jpg\'">'
         else:
@@ -252,19 +255,15 @@ def main(initial_build=False):
     Args:
         initial_build: If True, fetch more articles to build initial database
     """
-    # Load existing news
     existing_articles = load_existing_news()
     print(f"Loaded {len(existing_articles)} existing articles")
     
-    # Fetch new news
     if initial_build:
-        # First time: fetch more to build database
         print("\n=== INITIAL BUILD MODE ===")
         print("Fetching maximum articles to build initial database...")
-        new_articles = fetch_news(days=7, max_per_category=MAX_PER_CATEGORY)
+        new_articles = fetch_news(days=7, max_per_category=MAX_PER_CATEGORY_INITIAL)
     else:
-        # Normal incremental update
-        new_articles = fetch_news(days=1, max_per_category=MAX_PER_CATEGORY)
+        new_articles = fetch_news(days=1, max_per_category=MAX_PER_CATEGORY_NORMAL)
     
     if not new_articles:
         print("No new articles fetched!")
@@ -272,31 +271,25 @@ def main(initial_build=False):
     
     print(f"\nFetched {len(new_articles)} new articles")
     
-    # Merge old and new
     all_articles = existing_articles + new_articles
     print(f"Total before dedup: {len(all_articles)}")
     
-    # Deduplicate
     all_articles = deduplicate_articles(all_articles)
     duplicates_removed = len(existing_articles) + len(new_articles) - len(all_articles)
     if duplicates_removed > 0:
         print(f"Removed {duplicates_removed} duplicates")
     
-    # Remove old articles (older than 30 days)
     before_age_filter = len(all_articles)
     all_articles = remove_old_articles(all_articles)
     old_removed = before_age_filter - len(all_articles)
     if old_removed > 0:
         print(f"Removed {old_removed} articles older than {MAX_AGE_DAYS} days")
     
-    # Sort by date (newest first)
     all_articles = sort_articles_by_date(all_articles)
     
-    # Save
     save_news(all_articles)
     print(f"\n✅ Total: {len(all_articles)} articles saved")
     
-    # Generate HTML
     html_content = generate_html_content(all_articles)
     
     news_html_path = SCRIPT_DIR.parent / "news.html"
@@ -318,7 +311,6 @@ def main(initial_build=False):
 if __name__ == "__main__":
     import sys
     
-    # Check for --initial flag
     initial = "--initial" in sys.argv
     
     if initial:
