@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T02:10:04.688366",
+  "last_updated": "2026-07-21T02:20:06.850537",
   "timezone": "Asia/Hong_Kong",
   "current": {
     "3M": {
@@ -8,12 +8,12 @@
       "source": "Yahoo Finance"
     },
     "2Y": {
-      "yield": 4.33,
+      "yield": 4.332,
       "ticker": "^FVX",
       "source": "Yahoo Finance"
     },
     "5Y": {
-      "yield": 4.33,
+      "yield": 4.332,
       "ticker": "^FVX",
       "source": "Yahoo Finance"
     },
@@ -38,12 +38,12 @@
           "source": "Yahoo Finance"
         },
         "2Y": {
-          "yield": 4.33,
+          "yield": 4.332,
           "ticker": "^FVX",
           "source": "Yahoo Finance"
         },
         "5Y": {
-          "yield": 4.33,
+          "yield": 4.332,
           "ticker": "^FVX",
           "source": "Yahoo Finance"
         },
