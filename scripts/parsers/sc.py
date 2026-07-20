@@ -5,7 +5,10 @@ def parse(text, tables=None, html=None):
     """Parse SC HK online time deposit rates.
     
     Page format:
-    1. HKD Time Deposit: 3 months 2.30%, 6 months 2.10%, 12 months 2.00%
+    1. Tables with format: 新資金達港元10,000或以上 | 貨幣 | 存款期 | 特惠定期存款年利率
+       港元 | 3個月 | 2.40%
+       港元 | 6個月 | 2.40%
+       港元 | 12個月 | 2.80%
     2. USD Time Deposit: 3 months 3.20%, 6 months 3.30%, 12 months 2.70%
     3. RMB Time Deposit: 3 months X.XX%, 6 months X.XX%, 12 months X.XX%
     4. 牌價利率: https://www.sc.com/hk/deposits/board-rates/
@@ -57,47 +60,76 @@ def parse(text, tables=None, html=None):
             rates['_use_new_structure'] = True
             return rates
     
-    # HKD section (new funds)
-    hkd_idx = text.find('HKD Time Deposit')
-    usd_idx = text.find('USD Time Deposit')
-    rmb_idx = text.find('RMB Time Deposit')
+    # Try parsing tables first (format from requests + BeautifulSoup)
+    if tables:
+        for table in tables:
+            # Check for new funds table format
+            if '新資金達' in table or '特惠定期存款年利率' in table:
+                lines = table.split('\n')
+                current_currency = None
+                for line in lines:
+                    # Detect currency
+                    if '港元' in line and 'HKD' not in line.upper():
+                        current_currency = 'hkd'
+                    elif '美元' in line or 'USD' in line:
+                        current_currency = 'usd'
+                    elif '人民幣' in line or 'RMB' in line or 'CNY' in line:
+                        current_currency = 'cny'
+                    
+                    # Extract rates: format "3個月 | 2.40%" or "12個月 | 2.80%"
+                    m = re.search(r'(\d+)個月\s*\|?\s*(\d+\.\d+)%', line)
+                    if m and current_currency:
+                        months = int(m.group(1))
+                        rate = float(m.group(2))
+                        period_key = f'{months}m' if months <= 12 else '12m'
+                        
+                        if current_currency not in rates:
+                            rates[current_currency] = {}
+                        rates[current_currency][period_key] = rate
     
-    if hkd_idx >= 0:
-        end = usd_idx if usd_idx > hkd_idx else rmb_idx if rmb_idx > hkd_idx else hkd_idx + 500
-        section = text[hkd_idx:end]
-        hkd_rates = {}
-        for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
-            pattern = rf'{label}\s+(\d+\.\d+)%'
-            m = re.search(pattern, section)
-            if m:
-                hkd_rates[period] = float(m.group(1))
-        if hkd_rates:
-            rates['hkd'] = hkd_rates
-    
-    # USD section
-    if usd_idx >= 0:
-        end = rmb_idx if rmb_idx > usd_idx else usd_idx + 500
-        section = text[usd_idx:end]
-        usd_rates = {}
-        for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
-            pattern = rf'{label}\s+(\d+\.\d+)%'
-            m = re.search(pattern, section)
-            if m:
-                usd_rates[period] = float(m.group(1))
-        if usd_rates:
-            rates['usd'] = usd_rates
-    
-    # CNY / RMB section
-    if rmb_idx >= 0:
-        section = text[rmb_idx:rmb_idx+500]
-        cny_rates = {}
-        for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
-            pattern = rf'{label}\s+(\d+\.\d+)%'
-            m = re.search(pattern, section)
-            if m:
-                cny_rates[period] = float(m.group(1))
-        if cny_rates:
-            rates['cny'] = cny_rates
+    # Fallback to text parsing
+    if not rates:
+        # HKD section (new funds)
+        hkd_idx = text.find('HKD Time Deposit')
+        usd_idx = text.find('USD Time Deposit')
+        rmb_idx = text.find('RMB Time Deposit')
+        
+        if hkd_idx >= 0:
+            end = usd_idx if usd_idx > hkd_idx else rmb_idx if rmb_idx > hkd_idx else hkd_idx + 500
+            section = text[hkd_idx:end]
+            hkd_rates = {}
+            for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
+                pattern = rf'{label}\s+(\d+\.\d+)%'
+                m = re.search(pattern, section)
+                if m:
+                    hkd_rates[period] = float(m.group(1))
+            if hkd_rates:
+                rates['hkd'] = hkd_rates
+        
+        # USD section
+        if usd_idx >= 0:
+            end = rmb_idx if rmb_idx > usd_idx else usd_idx + 500
+            section = text[usd_idx:end]
+            usd_rates = {}
+            for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
+                pattern = rf'{label}\s+(\d+\.\d+)%'
+                m = re.search(pattern, section)
+                if m:
+                    usd_rates[period] = float(m.group(1))
+            if usd_rates:
+                rates['usd'] = usd_rates
+        
+        # CNY / RMB section
+        if rmb_idx >= 0:
+            section = text[rmb_idx:rmb_idx+500]
+            cny_rates = {}
+            for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
+                pattern = rf'{label}\s+(\d+\.\d+)%'
+                m = re.search(pattern, section)
+                if m:
+                    cny_rates[period] = float(m.group(1))
+            if cny_rates:
+                rates['cny'] = cny_rates
     
     if rates:
         rates['note'] = note

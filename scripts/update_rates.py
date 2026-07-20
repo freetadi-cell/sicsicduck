@@ -25,6 +25,10 @@ import importlib
 from datetime import datetime, timezone, timedelta, date
 import subprocess
 import time
+import requests
+from bs4 import BeautifulSoup
+import requests
+from bs4 import BeautifulSoup
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
@@ -307,7 +311,50 @@ def run_browser(cmd, timeout=20):
         return None
 
 
+def scrape_with_requests(url):
+    """Fallback: Use requests + BeautifulSoup to scrape tables from URL.
+    Returns (text, tables, html) or (None, None, None) on failure.
+    """
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml',
+            'Accept-Language': 'zh-HK,zh;q=0.9,en;q=0.8',
+        }
+        response = requests.get(url, headers=headers, timeout=30)
+        response.encoding = 'utf-8'
+        
+        if response.status_code != 200:
+            logger.warning(f'  requests failed: HTTP {response.status_code}')
+            return None, None, None
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Extract text
+        text = soup.get_text(separator=' ', strip=True)
+        
+        # Extract tables
+        tables = []
+        for table in soup.find_all('table'):
+            table_text = []
+            for row in table.find_all('tr'):
+                cells = row.find_all(['th', 'td'])
+                row_data = [cell.get_text(strip=True) for cell in cells]
+                if row_data:
+                    table_text.append(' | '.join(row_data))
+            if table_text:
+                tables.append('\n'.join(table_text))
+        
+        html = response.text
+        
+        return text, tables, html
+    except Exception as e:
+        logger.warning(f'  requests + BeautifulSoup failed: {e}')
+        return None, None, None
+
+
 def scrape_page(url, wait=5, cloudflare_bypass=False, get_html=False):
+    """Scrape page using agent-browser, with fallback to requests + BeautifulSoup."""
     run_browser('agent-browser close', timeout=5)
     time.sleep(2)
 
@@ -319,10 +366,20 @@ def scrape_page(url, wait=5, cloudflare_bypass=False, get_html=False):
 
     result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
     if not result:
-        return None, None, None
+        # Fallback to requests + BeautifulSoup
+        logger.info(f'  agent-browser failed, trying requests + BeautifulSoup fallback...')
+        text, tables, html = scrape_with_requests(url)
+        return text, tables, html
 
     time.sleep(wait)
-    return _extract_text_tables(get_html=get_html)
+    text, tables, html = _extract_text_tables(get_html=get_html)
+    
+    # If agent-browser extraction failed, try requests fallback
+    if text is None and tables is None:
+        logger.info(f'  agent-browser extraction failed, trying requests + BeautifulSoup fallback...')
+        text, tables, html = scrape_with_requests(url)
+    
+    return text, tables, html
 
 
 def _extract_text_tables(get_html=False):
@@ -1642,9 +1699,46 @@ def update_rates():
             except Exception as e:
                 logger.warning(f"  [{parser_key}] Card rate extraction error: {e}")
 
-        # ---- Phase 3: Apply bank website result ----
+        # ---- Phase 3: Check for extraction failures and apply fallback ----
         if result:
             wrapped = _wrap_parser_result(result, bank_name)
+            
+            # Check for extraction failures (missing rates for standard periods)
+            # If a bank has rates but missing key periods (e.g., HKD 12m showing '-' or None),
+            # try requests + BeautifulSoup fallback
+            extraction_failed = False
+            for currency in ['hkd', 'usd', 'cny']:
+                if currency in wrapped:
+                    for period in ['3m', '6m', '12m']:
+                        if period in wrapped[currency]:
+                            rate_data = wrapped[currency][period]
+                            # Check if rate is missing or 0 for new_funds
+                            if isinstance(rate_data, dict):
+                                new_funds_rate = rate_data.get('new_funds', {}).get('rate')
+                                if new_funds_rate is None or new_funds_rate == 0:
+                                    extraction_failed = True
+                                    logger.warning(f"  [{parser_key}] {bank_name} {currency} {period} new_funds rate missing/zero")
+            
+            if extraction_failed:
+                logger.info(f"  [{parser_key}] {bank_name}: extraction may have failed, trying requests + BeautifulSoup fallback...")
+                fb_text, fb_tables, fb_html = scrape_with_requests(url)
+                if fb_text or fb_tables:
+                    if parse_fn:
+                        try:
+                            fb_result = parse_fn(fb_text, fb_tables, html=fb_html)
+                            if fb_result:
+                                # Merge fallback result
+                                for currency in ['hkd', 'usd', 'cny']:
+                                    if currency in fb_result:
+                                        if currency not in wrapped:
+                                            wrapped[currency] = {}
+                                        for period, data in fb_result[currency].items():
+                                            if period not in wrapped[currency] or wrapped[currency][period].get('rate') is None:
+                                                wrapped[currency][period] = data
+                                logger.info(f"  [{parser_key}] ✓ {bank_name}: fallback extracted additional rates")
+                        except Exception as e:
+                            logger.warning(f"  [{parser_key}] Fallback parse error: {e}")
+            
             changed = _compare_rates(bank, wrapped)
             _apply_result_rates(bank, wrapped, bank_name, source='bank')
             if changed:
