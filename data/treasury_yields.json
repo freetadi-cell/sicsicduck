@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T22:30:06.695374",
+  "last_updated": "2026-07-20T22:40:06.780168",
   "timezone": "Asia/Hong_Kong",
   "current": {
     "3M": {
@@ -23,7 +23,7 @@
       "source": "Yahoo Finance"
     },
     "30Y": {
-      "yield": 5.098,
+      "yield": 5.096,
       "ticker": "^TYX",
       "source": "Yahoo Finance"
     }
@@ -53,7 +53,7 @@
           "source": "Yahoo Finance"
         },
         "30Y": {
-          "yield": 5.098,
+          "yield": 5.096,
           "ticker": "^TYX",
           "source": "Yahoo Finance"
         }
