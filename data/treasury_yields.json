@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-07-20T21:40:06.851764",
+  "last_updated": "2026-07-20T21:50:07.543094",
   "timezone": "Asia/Hong_Kong",
   "current": {
     "3M": {
-      "yield": 3.705,
+      "yield": 3.715,
       "ticker": "^IRX",
       "source": "Yahoo Finance"
     },
@@ -18,7 +18,7 @@
       "source": "Yahoo Finance"
     },
     "10Y": {
-      "yield": 4.561,
+      "yield": 4.564,
       "ticker": "^TNX",
       "source": "Yahoo Finance"
     },
@@ -33,7 +33,7 @@
       "date": "2026-07-20",
       "yields": {
         "3M": {
-          "yield": 3.705,
+          "yield": 3.715,
           "ticker": "^IRX",
           "source": "Yahoo Finance"
         },
@@ -48,7 +48,7 @@
           "source": "Yahoo Finance"
         },
         "10Y": {
-          "yield": 4.561,
+          "yield": 4.564,
           "ticker": "^TNX",
           "source": "Yahoo Finance"
         },
