@@ -200,13 +200,32 @@ def main():
     save_yields(yields)
     update_html_page()
     
-    # Commit and push to GitHub
+    # Commit and push to GitHub (only if there are changes)
     import subprocess
-    subprocess.run(["git", "add", "data/treasury_yields.json", "treasury-yields.html"], cwd=SCRIPT_DIR.parent)
-    subprocess.run(["git", "commit", "-m", f"Auto: treasury yields {datetime.now().strftime('%Y-%m-%d %H:%M')}"], cwd=SCRIPT_DIR.parent)
-    subprocess.run(["git", "push"], cwd=SCRIPT_DIR.parent)
     
-    print("\nTreasury yields updated and pushed to GitHub!")
+    # Add files
+    subprocess.run(["git", "add", "data/treasury_yields.json", "treasury-yields.html"], cwd=SCRIPT_DIR.parent)
+    
+    # Check if there are changes
+    result = subprocess.run(["git", "diff", "--staged", "--quiet"], cwd=SCRIPT_DIR.parent, capture_output=True)
+    has_changes = result.returncode != 0
+    
+    if has_changes:
+        # Commit
+        subprocess.run(["git", "commit", "-m", f"Auto: treasury yields {datetime.now().strftime('%Y-%m-%d %H:%M')}"], cwd=SCRIPT_DIR.parent)
+        
+        # Pull with rebase to avoid conflicts
+        subprocess.run(["git", "pull", "--rebase", "origin", "master"], cwd=SCRIPT_DIR.parent, capture_output=True)
+        
+        # Push
+        push_result = subprocess.run(["git", "push", "origin", "master"], cwd=SCRIPT_DIR.parent, capture_output=True, text=True)
+        
+        if push_result.returncode == 0:
+            print("\nTreasury yields updated and pushed to GitHub!")
+        else:
+            print(f"\nWarning: Git push failed: {push_result.stderr}")
+    else:
+        print("\nNo changes to commit (yields unchanged)")
 
 if __name__ == "__main__":
     main()
