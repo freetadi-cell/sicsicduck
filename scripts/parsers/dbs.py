@@ -55,16 +55,20 @@ def parse(text, tables=None, html=None, usd_rates=None, hkd_new_funds_rates=None
     base_hkd = {}
     base_usd = {}
     
-    # Find HKD rates from the base table
-    table_idx = text.find('存款期')
+    # Find the rate table section with "存款額：港幣50,000或以上" or "存款期"
+    table_idx = text.find('存款額：港幣50,000或以上')
+    if table_idx < 0:
+        table_idx = text.find('存款期')
+    
     if table_idx >= 0:
-        table_section = text[table_idx:table_idx + 2000]
+        table_section = text[table_idx:table_idx + 2500]
         
-        # Extract HKD rates: X個月 X.XX%
+        # Extract HKD rates from rows like "1個月\t2.00%\tQ7112\t2.00%\tR7112"
         for period, label in [('1m', '1個月'), ('2m', '2個月'), ('3m', '3個月'),
                                ('4m', '4個月'), ('6m', '6個月'), ('9m', '9個月'),
                                ('12m', '12個月')]:
-            m = re.search(rf'{label}\s+(\d+\.\d+)%', table_section)
+            # Pattern: "1個月\t2.00%\tQ7112" or "1個月 2.00%"
+            m = re.search(rf'{label}[\s\t]+(\d+\.\d+)%', table_section)
             if m:
                 base_hkd[period] = float(m.group(1))
     
@@ -76,24 +80,29 @@ def parse(text, tables=None, html=None, usd_rates=None, hkd_new_funds_rates=None
     nf_hkd = {}
     nf_usd = {}
     
-    # Find "網上新資金定期存款優惠" section
+    # Find "網上新資金定期存款優惠" section or table with "4個月 3.00% 4.00%"
     nf_idx = text.find('網上新資金定期存款優惠')
     if nf_idx < 0:
         nf_idx = text.find('新資金定期存款優惠')
+    if nf_idx < 0:
+        nf_idx = text.find('港元 高達')
     
     if nf_idx >= 0:
-        nf_section = text[nf_idx:nf_idx + 1000]
+        nf_section = text[nf_idx:nf_idx + 1500]
         nf_clean = re.sub(r'\s+', ' ', nf_section)
         
-        # Pattern: "4或6個月 3.00% 4.00%"
-        m = re.search(r'(\d+)或(\d+)個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', nf_clean)
+        # Pattern: "4個月\t3.00%\t4.00%" or "4個月 3.00% 4.00%"
+        m = re.search(r'(\d+)個月[\s\t]+(\d+\.\d+)%[\s\t]+(\d+\.\d+)%', nf_clean)
         if m:
-            p1 = _days_to_period(int(m.group(1)) * 30)
-            p2 = _days_to_period(int(m.group(2)) * 30)
-            nf_hkd[p1] = float(m.group(3))
-            nf_hkd[p2] = float(m.group(3))
-            nf_usd[p1] = float(m.group(4))
-            nf_usd[p2] = float(m.group(4))
+            period_key = _days_to_period(int(m.group(1)) * 30)
+            nf_hkd[period_key] = float(m.group(2))
+            nf_usd[period_key] = float(m.group(3))
+        
+        # Also look for 6個月
+        m2 = re.search(r'6個月[\s\t]+(\d+\.\d+)%[\s\t]+(\d+\.\d+)%', nf_clean)
+        if m2:
+            nf_hkd['6m'] = float(m2.group(1))
+            nf_usd['6m'] = float(m2.group(2))
     
     # Merge HKD new funds base rates from 新資金 tab
     # Promo rates (nf_hkd) should override base new_funds rates for 4m/6m
