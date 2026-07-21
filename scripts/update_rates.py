@@ -1722,6 +1722,7 @@ def _check_verification_quality(bank, result, currency='hkd'):
     2. Result covers all existing periods that are present in bank data
     
     This allows partial verification when bank website doesn't show all periods.
+    Supports both old format (rate in 'rate' key) and new format (rate in 'new_funds'/'existing_funds').
     Returns True if verification quality is sufficient.
     """
     if currency not in result:
@@ -1735,7 +1736,16 @@ def _check_verification_quality(bank, result, currency='hkd'):
         if period not in result[currency]:
             continue
         val = result[currency][period]
-        rate = val.get('rate') if isinstance(val, dict) else val
+        # Support both old format and new format
+        if isinstance(val, dict):
+            # New format: check new_funds or existing_funds
+            rate = val.get('rate')
+            if rate is None and 'new_funds' in val:
+                rate = val['new_funds'].get('rate')
+            if rate is None and 'existing_funds' in val:
+                rate = val['existing_funds'].get('rate')
+        else:
+            rate = val
         if rate is not None and float(rate) > 0:
             found_main += 1
     
@@ -1764,7 +1774,14 @@ def _check_verification_quality(bank, result, currency='hkd'):
     for period in existing_periods:
         if period in result[currency]:
             val = result[currency][period]
-            rate = val.get('rate') if isinstance(val, dict) else val
+            if isinstance(val, dict):
+                rate = val.get('rate')
+                if rate is None and 'new_funds' in val:
+                    rate = val['new_funds'].get('rate')
+                if rate is None and 'existing_funds' in val:
+                    rate = val['existing_funds'].get('rate')
+            else:
+                rate = val
             if rate is not None and float(rate) > 0:
                 covered += 1
     
