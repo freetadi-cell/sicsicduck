@@ -62,8 +62,7 @@ BANK_CONFIG = {
     'dbs': {
         'name': '星展銀行',
         'url': 'https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo',
-        'cloudflare_bypass': True,
-        'get_html': True,
+        'agent_browser': True,
         'wait': 10,
     },
     'fubon': {
@@ -124,6 +123,8 @@ BANK_CONFIG = {
     'za': {
         'name': '眾安銀行',
         'url': 'https://bank.za.group/',
+        'agent_browser': True,
+        'wait': 10,
     },
     'pao': {
         'name': '平安數字銀行',
@@ -297,6 +298,50 @@ def run_browser(cmd, timeout=20):
         if r.returncode == 0:
             out = re.sub(r'\x1b\[[0-9;]*m', '', r.stdout).strip()
             return out if out else None
+    except subprocess.TimeoutExpired:
+        logger.warning(f'  Browser command timed out: {cmd[:50]}...')
+    except Exception as e:
+        logger.warning(f'  Browser command failed: {e}')
+    return None
+
+
+def _scrape_with_agent_browser(url, wait=10):
+    """Scrape JS-rendered website using agent-browser.
+    Returns (text, tables, html) tuple.
+    """
+    run_browser('agent-browser close', timeout=5)
+    time.sleep(1)
+    
+    result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
+    if not result:
+        return None, None, None
+    
+    time.sleep(wait)
+    
+    # Extract text
+    text = None
+    raw = run_browser('agent-browser eval "document.body.innerText"', timeout=10)
+    if raw:
+        try:
+            text = json.loads(raw) if raw.startswith('"') else raw
+        except:
+            text = raw
+    
+    # Extract HTML
+    html = None
+    raw_h = run_browser('agent-browser eval "document.body.innerHTML.substring(0, 30000)"', timeout=10)
+    if raw_h:
+        try:
+            html = json.loads(raw_h) if raw_h.startswith('"') else raw_h
+        except:
+            html = raw_h
+    
+    tables = None
+    
+    run_browser('agent-browser close', timeout=5)
+    time.sleep(1)
+    
+    return text, tables, html
         return None
     except Exception as e:
         logger.warning(f"agent-browser error: {e}")
@@ -1407,12 +1452,18 @@ def update_rates():
                     logger.warning(f"  [{parser_key}] {bank_name}: no data source available (unverified)")
             continue
 
-        text, tables, html = scrape_page(
-            url,
-            wait=cfg.get('wait', 5),
-            cloudflare_bypass=cfg.get('cloudflare_bypass', False),
-            get_html=cfg.get('get_html', False)
-        )
+        text, tables, html = None, None, None
+        
+        # Check if agent_browser mode is enabled
+        if cfg.get('agent_browser'):
+            text, tables, html = _scrape_with_agent_browser(url, wait=cfg.get('wait', 10))
+        else:
+            text, tables, html = scrape_page(
+                url,
+                wait=cfg.get('wait', 5),
+                cloudflare_bypass=cfg.get('cloudflare_bypass', False),
+                get_html=cfg.get('get_html', False)
+            )
 
         if text is None and tables is None:
             logger.warning(f"  [{parser_key}] ✗ Failed to scrape {bank_name}")
