@@ -25,10 +25,6 @@ import importlib
 from datetime import datetime, timezone, timedelta, date
 import subprocess
 import time
-import requests
-from bs4 import BeautifulSoup
-import requests
-from bs4 import BeautifulSoup
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
@@ -53,17 +49,14 @@ BANK_CONFIG = {
     'bochk': {
         'name': '中銀香港',
         'url': 'https://www.bochk.com/m/tc/deposits/promotion/timedeposits.html',
-        'card_rate_url': 'https://www.bochk.com/whk/rates/depositRates/depositRates-input.action?lang=hk',
     },
     'hangseng': {
         'name': '恒生銀行',
         'url': 'https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html',
-        'card_rate_url': 'https://www.hangseng.com/zh-hk/personal/banking/rates/deposit-interest-rates/',
     },
     'sc': {
         'name': '渣打銀行',
         'url': 'https://www.sc.com/hk/deposits/online-time-deposit/',
-        'card_rate_url': 'https://www.sc.com/hk/deposits/board-rates/',
     },
     'dbs': {
         'name': '星展銀行',
@@ -71,7 +64,6 @@ BANK_CONFIG = {
         'cloudflare_bypass': True,
         'get_html': True,
         'wait': 10,
-        'special_handling': 'dbs_tabs',  # Need to click USD and 新資金 tabs
     },
     'fubon': {
         'name': '富邦銀行',
@@ -97,9 +89,8 @@ BANK_CONFIG = {
     },
     'bocomm': {
         'name': '交通銀行',
-        'url': 'https://www.hk.bankcomm.com/hk/hk/tw/file/getContentPath.html?fileId=2600167',
-        'pdf_fetch': True,
-        'pdf_file_id': '2600167',
+        'url': 'https://www.bankcomm.com.hk/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml',
+        'skip_scrape': True,
     },
     'shacom': {
         'name': '上海商業銀行',
@@ -136,7 +127,6 @@ BANK_CONFIG = {
     'pao': {
         'name': '平安數字銀行',
         'url': 'https://www.pingandb.com/tc/retail-td-newfund.html',
-        'card_rate_url': 'https://www.pingandb.com/tc/retail-savings.html',
         'cloudflare_bypass': True,
     },
     'welab': {
@@ -149,7 +139,8 @@ BANK_CONFIG = {
     },
     'ant': {
         'name': '螞蟻銀行',
-        'url': 'https://www.antbank.hk/rates?lang=zh_hk',
+        'url': 'https://www.antbank.hk/',
+        'skip_scrape': True,
     },
     'chiyu': {
         'name': '集友銀行',
@@ -311,50 +302,7 @@ def run_browser(cmd, timeout=20):
         return None
 
 
-def scrape_with_requests(url):
-    """Fallback: Use requests + BeautifulSoup to scrape tables from URL.
-    Returns (text, tables, html) or (None, None, None) on failure.
-    """
-    try:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml',
-            'Accept-Language': 'zh-HK,zh;q=0.9,en;q=0.8',
-        }
-        response = requests.get(url, headers=headers, timeout=30)
-        response.encoding = 'utf-8'
-        
-        if response.status_code != 200:
-            logger.warning(f'  requests failed: HTTP {response.status_code}')
-            return None, None, None
-        
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Extract text
-        text = soup.get_text(separator=' ', strip=True)
-        
-        # Extract tables
-        tables = []
-        for table in soup.find_all('table'):
-            table_text = []
-            for row in table.find_all('tr'):
-                cells = row.find_all(['th', 'td'])
-                row_data = [cell.get_text(strip=True) for cell in cells]
-                if row_data:
-                    table_text.append(' | '.join(row_data))
-            if table_text:
-                tables.append('\n'.join(table_text))
-        
-        html = response.text
-        
-        return text, tables, html
-    except Exception as e:
-        logger.warning(f'  requests + BeautifulSoup failed: {e}')
-        return None, None, None
-
-
 def scrape_page(url, wait=5, cloudflare_bypass=False, get_html=False):
-    """Scrape page using agent-browser, with fallback to requests + BeautifulSoup."""
     run_browser('agent-browser close', timeout=5)
     time.sleep(2)
 
@@ -366,20 +314,10 @@ def scrape_page(url, wait=5, cloudflare_bypass=False, get_html=False):
 
     result = run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
     if not result:
-        # Fallback to requests + BeautifulSoup
-        logger.info(f'  agent-browser failed, trying requests + BeautifulSoup fallback...')
-        text, tables, html = scrape_with_requests(url)
-        return text, tables, html
+        return None, None, None
 
     time.sleep(wait)
-    text, tables, html = _extract_text_tables(get_html=get_html)
-    
-    # If agent-browser extraction failed, try requests fallback
-    if text is None and tables is None:
-        logger.info(f'  agent-browser extraction failed, trying requests + BeautifulSoup fallback...')
-        text, tables, html = scrape_with_requests(url)
-    
-    return text, tables, html
+    return _extract_text_tables(get_html=get_html)
 
 
 def _extract_text_tables(get_html=False):
@@ -468,7 +406,7 @@ def _scrape_click_tab(url, tab_label, wait=3):
 
 def load_parser(parser_key):
     try:
-        mod = importlib.import_module(parser_key)
+        mod = importlib.import_module(f'parsers.{parser_key}')
         return mod.parse
     except ImportError:
         return None
@@ -1328,64 +1266,28 @@ def _apply_uhk_fallback(bank, uhk_rates):
 # Main update logic
 # ============================================================
 
-# Add PARSERS_DIR to sys.path for dynamic imports
-import sys
-sys.path.insert(0, PARSERS_DIR)
-
-def _ensure_currency_slots(bank, use_new_structure=False):
-    """Ensure all currency and period slots exist in bank data.
-    
-    If use_new_structure=True, use new format and REMOVE old format keys:
-    {
-      "new_funds": {...},
-      "existing_funds": {...},
-      "exchange": {...}
-    }
-    
-    Otherwise use old format:
-    {
-      "rate": ..., "fund_type": ..., "conditions": ...
-    }
-    """
+def _ensure_currency_slots(bank):
+    """Ensure all currency and period slots exist in bank data."""
     for cur in ALL_CURRENCIES:
         if cur not in bank:
             bank[cur] = {}
         for period in ALL_PERIODS:
             if period not in bank[cur]:
-                if use_new_structure:
-                    bank[cur][period] = {
-                        'new_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
-                        'existing_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
-                        'exchange': {'rate': None, 'min_deposit': None, 'note': None, 'source': None, 'conditions': ['exchange']},
-                    }
-                else:
-                    bank[cur][period] = {
-                        'rate': None,
-                        'min_deposit': None,
-                        'note': None,
-                        'source': None,
-                        'fund_type': None,
-                        'conditions': [],
-                    }
+                bank[cur][period] = {
+                    'rate': None,
+                    'min_deposit': None,
+                    'note': None,
+                    'source': None,
+                    'fund_type': None,
+                    'conditions': [],
+                }
             else:
                 entry = bank[cur][period]
                 if isinstance(entry, dict):
-                    # Check if it's new structure
-                    if 'new_funds' in entry or 'existing_funds' in entry or 'exchange' in entry:
-                        # Already new structure, ensure all keys exist and remove old keys
-                        for key in ['rate', 'fund_type', 'conditions', 'min_deposit', 'note', 'source']:
-                            if key in entry and key not in ['new_funds', 'existing_funds', 'exchange']:
-                                del entry[key]
-                        
-                        for key in ['new_funds', 'existing_funds', 'exchange']:
-                            if key not in entry:
-                                entry[key] = {'rate': None, 'min_deposit': None, 'note': None, 'source': None}
-                    else:
-                        # Old structure
-                        if 'fund_type' not in entry:
-                            entry['fund_type'] = None
-                        if 'conditions' not in entry:
-                            entry['conditions'] = []
+                    if 'fund_type' not in entry:
+                        entry['fund_type'] = None
+                    if 'conditions' not in entry:
+                        entry['conditions'] = []
                 # Migrate old format (bare value) to dict
                 elif isinstance(entry, (int, float)):
                     bank[cur][period] = {
@@ -1414,9 +1316,9 @@ def update_rates():
     banks = data['banks']
     logger.info(f"Processing {len(banks)} banks")
 
-    # Ensure all banks have currency slots using new structure
+    # Ensure all banks have cny currency slots
     for bank in banks:
-        _ensure_currency_slots(bank, use_new_structure=True)
+        _ensure_currency_slots(bank)
 
     name_to_key = {cfg['name']: key for key, cfg in BANK_CONFIG.items()}
 
@@ -1469,64 +1371,6 @@ def update_rates():
                     logger.info(f'  [{parser_key}] CNY from HKET overview: {cny_periods}')
 
         # ---- Phase 1: Bank website scraping (PRIMARY source for HKD/USD) ----
-        # Check for PDF fetch mode (e.g., BOCOM)
-        if cfg.get('pdf_fetch'):
-            logger.info(f"  [{parser_key}] {bank_name}: fetching PDF...")
-            try:
-                # Import the parser module to access fetch_pdf_text
-                parser_mod = importlib.import_module(parser_key)
-                if hasattr(parser_mod, 'fetch_pdf_text'):
-                    text, tables, html = parser_mod.fetch_pdf_text(cfg.get('pdf_file_id', '2600167'))
-                else:
-                    text, tables, html = None, None, None
-            except Exception as e:
-                logger.warning(f"  [{parser_key}] PDF fetch error: {e}")
-                text, tables, html = None, None, None
-            
-            if text is None:
-                logger.warning(f"  [{parser_key}] PDF fetch failed for {bank_name}, trying HKET...")
-                if parser_key in HKET_ARTICLES:
-                    hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
-                    if hket_ok and hket_result:
-                        _apply_result_rates(bank, hket_result, bank_name, source='hket')
-                        unverified.append(bank_name)
-                        logger.info(f"  [{parser_key}] → {bank_name}: PDF failed, using HKET fallback (unverified)")
-                        continue
-                if _apply_uhk_fallback(bank, get_uhk_rates()):
-                    unverified.append(bank_name)
-                else:
-                    failed_banks.append(bank_name)
-                    mark_moneyhero(bank)
-                    unverified.append(bank_name)
-                continue
-            
-            # Parse the PDF text
-            result = None
-            parse_fn = load_parser(parser_key)
-            if parse_fn:
-                try:
-                    result = parse_fn(text, tables, html=html)
-                except Exception as e:
-                    logger.warning(f"  [{parser_key}] Parser error for {bank_name}: {e}")
-            
-            if result:
-                wrapped = _wrap_parser_result(result, bank_name)
-                changed = _compare_rates(bank, wrapped)
-                _apply_result_rates(bank, wrapped, bank_name, source='bank')
-                if changed:
-                    verified_updated.append((bank_name, len(changed)))
-                    bank_updated = True
-                    logger.info(f"  [{parser_key}] ✓ {bank_name}: PDF rates UPDATED ({len(changed)} changed)")
-                else:
-                    verified_same.append(bank_name)
-                    logger.info(f"  [{parser_key}] ✓ {bank_name}: PDF rates unchanged (verified)")
-            else:
-                save_scraped_data(parser_key, bank_name, url, text, tables, html)
-                needs_extraction.append(bank_name)
-                logger.info(f"  [{parser_key}] ⏳ PDF parse failed, saved raw data for {bank_name}")
-                # Don't add to unverified - needs_extraction is its own status
-            continue
-        
         if cfg.get('skip_scrape'):
             # No website scraping for this bank → try HKET as primary, then UHK
             logger.info(f"  [{parser_key}] {bank_name}: skip_scrape, trying HKET as primary...")
@@ -1603,142 +1447,10 @@ def update_rates():
                             logger.info(f"  ✓ Got USD rates from tab for {bank_name}")
                     except Exception:
                         pass
-        
-        # DBS special handling: need to click USD and 新資金 tabs
-        if cfg.get('special_handling') == 'dbs_tabs' and parse_fn:
-            dbs_usd_rates = None
-            dbs_hkd_new_rates = None
-            
-            try:
-                # Use agent-browser to get USD rates
-                logger.info(f"  [{parser_key}] Extracting USD and HKD new_funds rates with agent-browser...")
-                
-                # Close and open fresh
-                subprocess.run(['agent-browser', 'close'], timeout=5, capture_output=True)
-                subprocess.run(['agent-browser', 'open', url], timeout=35, capture_output=True)
-                
-                # Click USD tab using JavaScript
-                subprocess.run(['agent-browser', 'eval', 
-                    'document.querySelector(\'#currency_table\').value=\'USD\';document.querySelector(\'#currency_table\').dispatchEvent(new Event(\'change\'))'],
-                    timeout=10, capture_output=True)
-                
-                snap_out = subprocess.run(['agent-browser', 'snapshot', '-c'], timeout=15, capture_output=True, text=True).stdout
-                
-                # Extract USD rates: X個月 X.XX% QXXXX
-                usd_pattern = r'(\d+)個月\s+(\d+\.\d+)%\s+Q\d+'
-                dbs_usd_rates = {}
-                for m in re.finditer(usd_pattern, snap_out):
-                    period = _days_to_period(int(m.group(1)) * 30)
-                    if period:
-                        dbs_usd_rates[period] = float(m.group(2))
-                
-                if dbs_usd_rates:
-                    logger.info(f"  ✓ Got USD existing_funds rates: {dbs_usd_rates}")
-                
-                # Click HKD and 新資金 tab
-                subprocess.run(['agent-browser', 'eval',
-                    'document.querySelector(\'#currency_table\').value=\'HKD\';document.querySelector(\'#currency_table\').dispatchEvent(new Event(\'change\'))'],
-                    timeout=10, capture_output=True)
-                
-                # Click 新資金 tab using JavaScript
-                subprocess.run(['agent-browser', 'eval',
-                    'document.querySelector(\'#new-fund-tab\')?.click() || document.querySelector(\'a[href=\'#new-fund\']\')?.click()'],
-                    timeout=10, capture_output=True)
-                
-                snap_out2 = subprocess.run(['agent-browser', 'snapshot', '-c'], timeout=15, capture_output=True, text=True).stdout
-                
-                # Extract HKD new_funds rates
-                hkd_nf_pattern = r'(\d+)個月\s+(\d+\.\d+)%\s+Q\d+'
-                dbs_hkd_new_rates = {}
-                for m in re.finditer(hkd_nf_pattern, snap_out2):
-                    period = _days_to_period(int(m.group(1)) * 30)
-                    if period:
-                        dbs_hkd_new_rates[period] = float(m.group(2))
-                
-                if dbs_hkd_new_rates:
-                    logger.info(f"  ✓ Got HKD new_funds rates: {dbs_hkd_new_rates}")
-                
-                subprocess.run(['agent-browser', 'close'], timeout=5, capture_output=True)
-                
-                # Re-parse with the extra rates
-                if parse_fn:
-                    result = parse_fn(text, tables, html=html, usd_rates=dbs_usd_rates, hkd_new_funds_rates=dbs_hkd_new_rates)
-                    
-            except Exception as e:
-                logger.warning(f"  [{parser_key}] agent-browser DBS extraction error: {e}")
 
-        # ---- Card rate (existing_funds) extraction for banks ----
-        if cfg.get('card_rate_url') and parse_fn:
-            logger.info(f"  [{parser_key}] Extracting card rate (existing_funds) for {bank_name}...")
-            try:
-                card_url = cfg['card_rate_url']
-                card_text, card_tables, card_html = _scrape_with_agent(
-                    card_url,
-                    wait=3,
-                    cloudflare_bypass=False,
-                    get_html=False
-                )
-                if card_text:
-                    # Parse card rate
-                    card_result = parse_fn(card_text, card_tables, html=card_html)
-                    if card_result and (card_result.get('hkd') or card_result.get('usd')):
-                        # Merge card rate into result
-                        if result is None:
-                            result = {}
-                        for currency in ['hkd', 'usd', 'cny']:
-                            if currency in card_result:
-                                if currency not in result:
-                                    result[currency] = {}
-                                for period, data in card_result.get(currency, {}).items():
-                                    if isinstance(data, dict) and 'existing_funds' in data:
-                                        if period not in result[currency]:
-                                            result[currency][period] = {}
-                                        if 'existing_funds' not in result[currency][period]:
-                                            result[currency][period]['existing_funds'] = data['existing_funds']
-                        logger.info(f"  ✓ Got {parser_key} card rate: {list(card_result.keys())}")
-            except Exception as e:
-                logger.warning(f"  [{parser_key}] Card rate extraction error: {e}")
-
-        # ---- Phase 3: Check for extraction failures and apply fallback ----
+        # ---- Phase 3: Apply bank website result ----
         if result:
             wrapped = _wrap_parser_result(result, bank_name)
-            
-            # Check for extraction failures (missing rates for standard periods)
-            # If a bank has rates but missing key periods (e.g., HKD 12m showing '-' or None),
-            # try requests + BeautifulSoup fallback
-            extraction_failed = False
-            for currency in ['hkd', 'usd', 'cny']:
-                if currency in wrapped:
-                    for period in ['3m', '6m', '12m']:
-                        if period in wrapped[currency]:
-                            rate_data = wrapped[currency][period]
-                            # Check if rate is missing or 0 for new_funds
-                            if isinstance(rate_data, dict):
-                                new_funds_rate = rate_data.get('new_funds', {}).get('rate')
-                                if new_funds_rate is None or new_funds_rate == 0:
-                                    extraction_failed = True
-                                    logger.warning(f"  [{parser_key}] {bank_name} {currency} {period} new_funds rate missing/zero")
-            
-            if extraction_failed:
-                logger.info(f"  [{parser_key}] {bank_name}: extraction may have failed, trying requests + BeautifulSoup fallback...")
-                fb_text, fb_tables, fb_html = scrape_with_requests(url)
-                if fb_text or fb_tables:
-                    if parse_fn:
-                        try:
-                            fb_result = parse_fn(fb_text, fb_tables, html=fb_html)
-                            if fb_result:
-                                # Merge fallback result
-                                for currency in ['hkd', 'usd', 'cny']:
-                                    if currency in fb_result:
-                                        if currency not in wrapped:
-                                            wrapped[currency] = {}
-                                        for period, data in fb_result[currency].items():
-                                            if period not in wrapped[currency] or wrapped[currency][period].get('rate') is None:
-                                                wrapped[currency][period] = data
-                                logger.info(f"  [{parser_key}] ✓ {bank_name}: fallback extracted additional rates")
-                        except Exception as e:
-                            logger.warning(f"  [{parser_key}] Fallback parse error: {e}")
-            
             changed = _compare_rates(bank, wrapped)
             _apply_result_rates(bank, wrapped, bank_name, source='bank')
             if changed:
@@ -1759,7 +1471,7 @@ def update_rates():
                 logger.info(f"  → {bank_name} using UHK fallback (pending extraction)")
             else:
                 mark_moneyhero(bank)
-            # Don't add to unverified here - needs_extraction banks are tracked separately
+            unverified.append(bank_name)
             continue  # No bank data to supplement
 
         # ---- Phase 3.5: CNY bank website fallback ----
@@ -1914,6 +1626,17 @@ def update_rates():
     logger.info(f"Last updated: {data['last_updated']}")
     logger.info("=" * 50)
 
+    # Auto commit and push changes
+    try:
+        today = datetime.now(HKT).strftime('%Y-%m-%d')
+        subprocess.run(['git', 'add', 'data/rates.json', 'data/update.log'], cwd=REPO_ROOT, check=True)
+        subprocess.run(['git', 'commit', '-m', f'Auto: deposit rates {today}'], cwd=REPO_ROOT, check=True)
+        subprocess.run(['git', 'pull', '--rebase', 'origin', 'master'], cwd=REPO_ROOT, check=True)
+        subprocess.run(['git', 'push', 'origin', 'master'], cwd=REPO_ROOT, check=True)
+        logger.info("✅ Git commit and push completed")
+    except subprocess.CalledProcessError as e:
+        logger.warning(f"Git auto-commit failed: {e}")
+
     all_verified = len(unverified) == 0
     _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified)
     return all_verified
@@ -1974,148 +1697,43 @@ def _compare_rates(bank, result):
     return changed
 
 
-def _apply_result_rates(bank, result, bank_name, source='bank', use_new_structure=False):
+def _apply_result_rates(bank, result, bank_name, source='bank'):
     """Apply parsed rates to bank data structure.
-    
-    Supports two modes:
-    1. Old structure (default): Single rate per period with fund_type tag
-       bank['hkd']['3m'] = {'rate': 3.0, 'fund_type': 'new_funds', ...}
-    
-    2. New structure (use_new_structure=True): Separate rates per fund type
-       bank['hkd']['3m'] = {
-         'new_funds': {'rate': 3.0, ...},
-         'existing_funds': {'rate': 2.5, ...},
-         'exchange': {'rate': None, ...}
-       }
-    
-    Parsers can signal new structure by setting result['_use_new_structure'] = True
-    
     If only_missing=True, only fill in periods where rate is currently None (supplement mode).
     """
     note = result.get('note', f'從{bank_name}官網提取')
     only_missing = result.get('_only_missing', False)
     supplemented = []
-    
-    # Auto-detect new structure from parser signal
-    if result.get('_use_new_structure'):
-        use_new_structure = True
-    
     for cur in ALL_CURRENCIES:
         if cur not in result:
             continue
         curr_note = result.get(f'{cur}_note', note)
-        
         for period in ALL_PERIODS:
             if period not in result.get(cur, {}):
                 continue
-            
             val = result[cur][period]
             if not isinstance(val, dict):
                 continue
-            
-            # Check if parser returned new structure (has new_funds/existing_funds keys)
-            if 'new_funds' in val or 'existing_funds' in val or 'exchange' in val:
-                # Parser returned new structure directly - copy all slots
-                if period not in bank.get(cur, {}):
-                    bank[cur][period] = {
-                        'new_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
-                        'existing_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
-                        'exchange': {'rate': None, 'min_deposit': None, 'note': None, 'source': None, 'conditions': ['exchange']},
-                    }
-                
-                for slot in ['new_funds', 'existing_funds', 'exchange']:
-                    if slot in val and val[slot]:
-                        slot_data = val[slot]
-                        if isinstance(slot_data, dict) and slot_data.get('rate') is not None:
-                            bank[cur][period][slot] = {
-                                'rate': slot_data.get('rate'),
-                                'min_deposit': slot_data.get('min_deposit'),
-                                'note': slot_data.get('note') or curr_note,
-                                'source': source,
-                                'conditions': slot_data.get('conditions', []),
-                            }
-                continue
-            
-            # Old structure: val has 'rate', 'fund_type', 'conditions'
             rate = val.get('rate')
             if rate is None:
                 continue
-            
-            fund_type = val.get('fund_type')
-            conditions = val.get('conditions', [])
-            
-            if use_new_structure:
-                # New structure: separate rates per fund type
-                _apply_rate_to_new_structure(bank, cur, period, val, source, curr_note, fund_type, conditions)
-            else:
-                # Old structure: single rate per period
-                # In supplement mode, skip if bank already has a rate for this period
-                if only_missing:
-                    existing = bank.get(cur, {}).get(period, {})
-                    if isinstance(existing, dict) and existing.get('rate') is not None:
-                        continue
-                    supplemented.append(f'{cur}/{period}')
-                
-                bank[cur][period] = {
-                    'rate': rate,
-                    'min_deposit': val.get('min_deposit') or bank.get(cur, {}).get(period, {}).get('min_deposit'),
-                    'note': val.get('note') or curr_note,
-                    'source': source,
-                    'fund_type': fund_type,
-                    'conditions': conditions,
-                }
-    
+
+            # In supplement mode, skip if bank already has a rate for this period
+            if only_missing:
+                existing = bank.get(cur, {}).get(period, {})
+                if isinstance(existing, dict) and existing.get('rate') is not None:
+                    continue
+                supplemented.append(f'{cur}/{period}')
+
+            bank[cur][period] = {
+                'rate': rate,
+                'min_deposit': val.get('min_deposit') or bank.get(cur, {}).get(period, {}).get('min_deposit'),
+                'note': val.get('note') or curr_note,
+                'source': source,
+                'fund_type': val.get('fund_type'),
+                'conditions': val.get('conditions', []),
+            }
     return supplemented
-
-
-def _apply_rate_to_new_structure(bank, cur, period, val, source, note, fund_type, conditions):
-    """Apply a rate to the new data structure.
-    
-    Determines which slot (new_funds/existing_funds/exchange) to update
-    based on fund_type and conditions.
-    """
-    rate = val.get('rate')
-    if rate is None:
-        return
-    
-    # Determine target slot
-    slot = None
-    if 'exchange' in conditions:
-        slot = 'exchange'
-    elif fund_type == 'new_funds':
-        slot = 'new_funds'
-    elif fund_type == 'existing_funds':
-        slot = 'existing_funds'
-    elif fund_type is None:
-        # No fund_type specified, could be general rate - put in existing_funds
-        slot = 'existing_funds'
-    else:
-        slot = 'existing_funds'
-    
-    # Initialize period structure if needed
-    if period not in bank.get(cur, {}):
-        bank[cur][period] = {
-            'new_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
-            'existing_funds': {'rate': None, 'min_deposit': None, 'note': None, 'source': None},
-            'exchange': {'rate': None, 'min_deposit': None, 'note': None, 'source': None, 'conditions': ['exchange']},
-        }
-    
-    # Initialize slot if needed
-    if slot not in bank[cur][period]:
-        bank[cur][period][slot] = {'rate': None, 'min_deposit': None, 'note': None, 'source': None}
-    
-    # Update the slot
-    bank[cur][period][slot] = {
-        'rate': rate,
-        'min_deposit': val.get('min_deposit'),
-        'note': val.get('note') or note,
-        'source': source,
-        'conditions': conditions if slot == 'exchange' else [],
-    }
-    
-    # For exchange rates, keep conditions
-    if slot == 'exchange' and conditions:
-        bank[cur][period][slot]['conditions'] = conditions
 
 
 def _send_telegram_summary(verified_same, verified_updated, unverified, needs_extraction, failed_banks, all_verified):
