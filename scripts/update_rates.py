@@ -1726,21 +1726,32 @@ def _wrap_parser_result(result, bank_name):
                 # New structure: extract existing_funds rate for verification
                 existing_rate = None
                 new_funds_rate = None
+                existing_data = val.get('existing_funds')
+                new_funds_data = val.get('new_funds')
                 
-                if 'existing_funds' in val and isinstance(val['existing_funds'], dict):
-                    existing_rate = val['existing_funds'].get('rate')
-                if 'new_funds' in val and isinstance(val['new_funds'], dict):
-                    new_funds_rate = val['new_funds'].get('rate')
+                if existing_data and isinstance(existing_data, dict):
+                    existing_rate = existing_data.get('rate')
+                if new_funds_data and isinstance(new_funds_data, dict):
+                    new_funds_rate = new_funds_data.get('rate')
                 
                 # Use existing_funds rate as primary (for verification), or fall back to new_funds
                 rate = existing_rate or new_funds_rate
                 
+                min_deposit = None
+                note = curr_note
+                if existing_data and isinstance(existing_data, dict):
+                    min_deposit = existing_data.get('min_deposit')
+                    note = existing_data.get('note') or note
+                elif new_funds_data and isinstance(new_funds_data, dict):
+                    min_deposit = new_funds_data.get('min_deposit')
+                    note = new_funds_data.get('note') or note
+                
                 wrapped[cur][period] = {
                     'rate': rate,
-                    'min_deposit': val.get('existing_funds', {}).get('min_deposit') or val.get('new_funds', {}).get('min_deposit'),
+                    'min_deposit': min_deposit,
                     'fund_type': 'existing_funds' if existing_rate else 'new_funds',
                     'conditions': val.get('conditions', []),
-                    'note': val.get('existing_funds', {}).get('note') or val.get('new_funds', {}).get('note') or curr_note,
+                    'note': note,
                 }
                 # Preserve the full new structure for reference
                 wrapped[cur][period]['_full_structure'] = val
