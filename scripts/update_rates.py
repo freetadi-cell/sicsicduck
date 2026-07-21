@@ -34,6 +34,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), 'data')
 RATES_FILE = os.path.join(DATA_DIR, 'rates.json')
 PARSERS_DIR = os.path.join(SCRIPT_DIR, 'parsers')
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)  # Root of hk_deposit_rates repo
 
 ALL_CURRENCIES = ['hkd', 'usd', 'cny']
 ALL_PERIODS = ['1w', '1m', '2m', '3m', '4m', '6m', '9m', '12m']
