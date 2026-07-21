@@ -1715,18 +1715,38 @@ def _compare_rates(bank, result):
 
 
 def _check_verification_quality(bank, result, currency='hkd'):
-    """Check if parsed result covers all existing periods in bank data.
+    """Check if parsed result has sufficient coverage for verification.
     
-    For verification, the result must have ALL periods that currently exist in bank data.
-    Returns True if all existing periods are covered in the result.
+    Verification is successful if:
+    1. Result has at least 2 of the 3 main periods (3m, 6m, 12m), OR
+    2. Result covers all existing periods that are present in bank data
+    
+    This allows partial verification when bank website doesn't show all periods.
+    Returns True if verification quality is sufficient.
     """
     if currency not in result:
         return False
     
+    # Count main periods found in result
+    main_periods = ['3m', '6m', '12m']
+    found_main = 0
+    
+    for period in main_periods:
+        if period not in result[currency]:
+            continue
+        val = result[currency][period]
+        rate = val.get('rate') if isinstance(val, dict) else val
+        if rate is not None and float(rate) > 0:
+            found_main += 1
+    
+    # Accept if at least 2 of 3 main periods are found
+    if found_main >= 2:
+        return True
+    
+    # Fallback: check if result covers all existing periods
     if currency not in bank:
         return False
     
-    # Get all periods that have rates in bank data
     existing_periods = []
     for period in ALL_PERIODS:
         if period not in bank[currency]:
@@ -1737,19 +1757,19 @@ def _check_verification_quality(bank, result, currency='hkd'):
             existing_periods.append(period)
     
     if not existing_periods:
-        # No existing data, any result is acceptable
         return True
     
-    # Check if result covers all existing periods
+    # Check coverage of existing periods
+    covered = 0
     for period in existing_periods:
-        if period not in result[currency]:
-            return False
-        val = result[currency][period]
-        rate = val.get('rate') if isinstance(val, dict) else val
-        if rate is None or float(rate) <= 0:
-            return False
+        if period in result[currency]:
+            val = result[currency][period]
+            rate = val.get('rate') if isinstance(val, dict) else val
+            if rate is not None and float(rate) > 0:
+                covered += 1
     
-    return True
+    # Accept if at least 50% of existing periods are covered
+    return covered >= len(existing_periods) * 0.5
 
 
 def _apply_result_rates(bank, result, bank_name, source='bank'):
