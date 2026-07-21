@@ -1707,7 +1707,9 @@ def update_rates():
 
 
 def _wrap_parser_result(result, bank_name):
-    """Wrap a parser result (old format) into the new structured format."""
+    """Wrap a parser result (old format) into the new structured format.
+    Supports both old format (rate in 'rate' key) and new format (existing_funds/new_funds).
+    """
     wrapped = {'note': result.get('note', f'從{bank_name}官網提取')}
     for cur in ALL_CURRENCIES:
         if cur not in result:
@@ -1718,7 +1720,32 @@ def _wrap_parser_result(result, bank_name):
             if period not in result[cur]:
                 continue
             val = result[cur][period]
-            if isinstance(val, dict):
+            
+            # Check if this is new DBS-style structure with existing_funds/new_funds
+            if isinstance(val, dict) and 'existing_funds' in val or 'new_funds' in val:
+                # New structure: extract existing_funds rate for verification
+                existing_rate = None
+                new_funds_rate = None
+                
+                if 'existing_funds' in val and isinstance(val['existing_funds'], dict):
+                    existing_rate = val['existing_funds'].get('rate')
+                if 'new_funds' in val and isinstance(val['new_funds'], dict):
+                    new_funds_rate = val['new_funds'].get('rate')
+                
+                # Use existing_funds rate as primary (for verification), or fall back to new_funds
+                rate = existing_rate or new_funds_rate
+                
+                wrapped[cur][period] = {
+                    'rate': rate,
+                    'min_deposit': val.get('existing_funds', {}).get('min_deposit') or val.get('new_funds', {}).get('min_deposit'),
+                    'fund_type': 'existing_funds' if existing_rate else 'new_funds',
+                    'conditions': val.get('conditions', []),
+                    'note': val.get('existing_funds', {}).get('note') or val.get('new_funds', {}).get('note') or curr_note,
+                }
+                # Preserve the full new structure for reference
+                wrapped[cur][period]['_full_structure'] = val
+            elif isinstance(val, dict):
+                # Old structure with rate key
                 wrapped[cur][period] = {
                     'rate': val.get('rate'),
                     'min_deposit': val.get('min_deposit'),
@@ -1727,6 +1754,7 @@ def _wrap_parser_result(result, bank_name):
                     'note': curr_note,
                 }
             else:
+                # Simple rate value
                 wrapped[cur][period] = {
                     'rate': val,
                     'fund_type': None,
