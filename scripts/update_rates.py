@@ -342,10 +342,6 @@ def _scrape_with_agent_browser(url, wait=10):
     time.sleep(1)
     
     return text, tables, html
-        return None
-    except Exception as e:
-        logger.warning(f"agent-browser error: {e}")
-        return None
 
 
 def scrape_page(url, wait=5, cloudflare_bypass=False, get_html=False):
