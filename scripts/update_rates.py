@@ -1722,7 +1722,7 @@ def _wrap_parser_result(result, bank_name):
             val = result[cur][period]
             
             # Check if this is new DBS-style structure with existing_funds/new_funds
-            if isinstance(val, dict) and 'existing_funds' in val or 'new_funds' in val:
+            if isinstance(val, dict) and ('existing_funds' in val or 'new_funds' in val):
                 # New structure: extract existing_funds rate for verification
                 existing_rate = None
                 new_funds_rate = None
