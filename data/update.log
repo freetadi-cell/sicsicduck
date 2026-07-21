@@ -4072,3 +4072,231 @@ Total OCR text: 2726 chars
 2026-07-18 08:35:04,330 [INFO] Telegram notification sent
 Downloaded PDF: 498405 bytes
 pdftotext extracted 23488 chars
+2026-07-21 08:30:02,216 [INFO] ==================================================
+2026-07-21 08:30:02,216 [INFO] HK Deposit Rates Update
+2026-07-21 08:30:02,217 [INFO] Time: 2026-07-21 08:30:02
+2026-07-21 08:30:02,217 [INFO] ==================================================
+2026-07-21 08:30:02,221 [INFO] Processing 23 banks
+2026-07-21 08:30:02,508 [INFO]   HKET CNY article last updated 2026/06/09, older than 14 days, skipping
+2026-07-21 08:30:16,153 [WARNING]   [hsbc] 滙豐銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:30:16,153 [WARNING]   [hsbc] 滙豐銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:30:16,153 [WARNING]   [hsbc] 滙豐銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:30:16,154 [WARNING]   [hsbc] 滙豐銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:30:16,154 [WARNING]   [hsbc] 滙豐銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:30:16,154 [WARNING]   [hsbc] 滙豐銀行 cny 3m new_funds rate missing/zero
+2026-07-21 08:30:16,154 [WARNING]   [hsbc] 滙豐銀行 cny 6m new_funds rate missing/zero
+2026-07-21 08:30:16,154 [WARNING]   [hsbc] 滙豐銀行 cny 12m new_funds rate missing/zero
+2026-07-21 08:30:16,154 [INFO]   [hsbc] 滙豐銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:30:17,585 [INFO]   [hsbc] ✓ 滙豐銀行: fallback extracted additional rates
+2026-07-21 08:30:17,585 [INFO]   [hsbc] ✓ 滙豐銀行: bank website rates unchanged (verified)
+2026-07-21 08:30:17,937 [INFO]   [hsbc] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:30:28,503 [INFO]   [bochk] Extracting card rate (existing_funds) for 中銀香港...
+2026-07-21 08:30:28,503 [WARNING]   [bochk] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-07-21 08:30:28,503 [WARNING]   [bochk] 中銀香港 hkd 3m new_funds rate missing/zero
+2026-07-21 08:30:28,503 [WARNING]   [bochk] 中銀香港 hkd 6m new_funds rate missing/zero
+2026-07-21 08:30:28,503 [WARNING]   [bochk] 中銀香港 usd 3m new_funds rate missing/zero
+2026-07-21 08:30:28,503 [WARNING]   [bochk] 中銀香港 usd 6m new_funds rate missing/zero
+2026-07-21 08:30:28,503 [WARNING]   [bochk] 中銀香港 cny 3m new_funds rate missing/zero
+2026-07-21 08:30:28,503 [WARNING]   [bochk] 中銀香港 cny 6m new_funds rate missing/zero
+2026-07-21 08:30:28,503 [INFO]   [bochk] 中銀香港: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:30:28,635 [INFO]   [bochk] ✓ 中銀香港: fallback extracted additional rates
+2026-07-21 08:30:28,635 [INFO]   [bochk] ✓ 中銀香港: bank website rates unchanged (verified)
+2026-07-21 08:30:28,987 [INFO]   [bochk] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:30:42,139 [INFO]   [hangseng] Extracting card rate (existing_funds) for 恒生銀行...
+2026-07-21 08:30:42,139 [WARNING]   [hangseng] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-07-21 08:30:42,140 [WARNING]   [hangseng] 恒生銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:30:42,140 [WARNING]   [hangseng] 恒生銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:30:42,140 [WARNING]   [hangseng] 恒生銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:30:42,140 [WARNING]   [hangseng] 恒生銀行 cny 3m new_funds rate missing/zero
+2026-07-21 08:30:42,140 [WARNING]   [hangseng] 恒生銀行 cny 6m new_funds rate missing/zero
+2026-07-21 08:30:42,140 [INFO]   [hangseng] 恒生銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:30:42,264 [INFO]   [hangseng] ✓ 恒生銀行: fallback extracted additional rates
+2026-07-21 08:30:42,264 [INFO]   [hangseng] ✓ 恒生銀行: bank website rates unchanged (verified)
+2026-07-21 08:30:42,486 [INFO]   [hangseng] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:30:58,149 [INFO]   [sc] Extracting card rate (existing_funds) for 渣打銀行...
+2026-07-21 08:30:58,149 [WARNING]   [sc] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-07-21 08:30:58,149 [WARNING]   [sc] 渣打銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:30:58,149 [WARNING]   [sc] 渣打銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:30:58,149 [WARNING]   [sc] 渣打銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:30:58,149 [INFO]   [sc] 渣打銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:30:58,404 [INFO]   [sc] ✓ 渣打銀行: fallback extracted additional rates
+2026-07-21 08:30:58,405 [INFO]   [sc] ✓ 渣打銀行: bank website rates unchanged (verified)
+2026-07-21 08:30:58,726 [INFO]   [sc] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:31:08,028 [WARNING]   [fubon] 富邦銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:31:08,028 [WARNING]   [fubon] 富邦銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:31:08,028 [WARNING]   [fubon] 富邦銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:31:08,028 [WARNING]   [fubon] 富邦銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:31:08,028 [WARNING]   [fubon] 富邦銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:31:08,028 [INFO]   [fubon] 富邦銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:31:08,350 [INFO]   [fubon] ✓ 富邦銀行: fallback extracted additional rates
+2026-07-21 08:31:08,350 [INFO]   [fubon] ✓ 富邦銀行: bank website rates unchanged (verified)
+2026-07-21 08:31:08,706 [INFO]   [fubon] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:31:18,459 [WARNING]   [icbc] 工銀亞洲 hkd 3m new_funds rate missing/zero
+2026-07-21 08:31:18,459 [WARNING]   [icbc] 工銀亞洲 hkd 6m new_funds rate missing/zero
+2026-07-21 08:31:18,459 [WARNING]   [icbc] 工銀亞洲 usd 3m new_funds rate missing/zero
+2026-07-21 08:31:18,459 [WARNING]   [icbc] 工銀亞洲 usd 6m new_funds rate missing/zero
+2026-07-21 08:31:18,459 [WARNING]   [icbc] 工銀亞洲 cny 3m new_funds rate missing/zero
+2026-07-21 08:31:18,459 [WARNING]   [icbc] 工銀亞洲 cny 6m new_funds rate missing/zero
+2026-07-21 08:31:18,459 [INFO]   [icbc] 工銀亞洲: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:31:18,617 [INFO]   [icbc] ✓ 工銀亞洲: fallback extracted additional rates
+2026-07-21 08:31:18,617 [INFO]   [icbc] ✓ 工銀亞洲: bank website rates unchanged (verified)
+2026-07-21 08:31:18,956 [INFO]   [icbc] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:31:29,267 [WARNING]   [bea] 東亞銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:31:29,267 [WARNING]   [bea] 東亞銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:31:29,267 [WARNING]   [bea] 東亞銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:31:29,267 [WARNING]   [bea] 東亞銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:31:29,267 [WARNING]   [bea] 東亞銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:31:29,267 [WARNING]   [bea] 東亞銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:31:29,267 [INFO]   [bea] 東亞銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:31:29,413 [INFO]   [bea] ✓ 東亞銀行: fallback extracted additional rates
+2026-07-21 08:31:29,413 [INFO]   [bea] ✓ 東亞銀行: bank website rates unchanged (verified)
+2026-07-21 08:31:29,733 [INFO]   [bea] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:31:38,885 [WARNING]   [cncbi] 中信銀行（國際） hkd 3m new_funds rate missing/zero
+2026-07-21 08:31:38,885 [WARNING]   [cncbi] 中信銀行（國際） usd 3m new_funds rate missing/zero
+2026-07-21 08:31:38,885 [INFO]   [cncbi] 中信銀行（國際）: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:31:39,175 [INFO]   [cncbi] ✓ 中信銀行（國際）: fallback extracted additional rates
+2026-07-21 08:31:39,175 [INFO]   [cncbi] ✓ 中信銀行（國際）: bank website rates unchanged (verified)
+2026-07-21 08:31:39,175 [INFO]   [cncbi] Scraping CNY page: https://www.cncbinternational.com/rate-table/time_deposit_rate_tc.html
+2026-07-21 08:31:48,639 [INFO]   [cncbi] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:32:05,843 [INFO]   [dbs] Extracting USD and HKD new_funds rates with agent-browser...
+2026-07-21 08:32:10,673 [WARNING]   [dbs] agent-browser DBS extraction error: name '_days_to_period' is not defined
+2026-07-21 08:32:10,673 [WARNING]   [dbs] 星展銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:32:10,673 [WARNING]   [dbs] 星展銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:32:10,673 [WARNING]   [dbs] 星展銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:32:10,673 [INFO]   [dbs] 星展銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:32:10,866 [INFO]   [dbs] ✓ 星展銀行: fallback extracted additional rates
+2026-07-21 08:32:10,866 [INFO]   [dbs] ✓ 星展銀行: bank website rates unchanged (verified)
+2026-07-21 08:32:11,226 [INFO]   [dbs] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:32:11,226 [INFO]   [bocomm] 交通銀行: fetching PDF...
+2026-07-21 08:32:15,238 [INFO]   📄 Saved raw data to /home/freet/.openclaw/workspace/hk_deposit_rates/data/_scratch/bocomm.json
+2026-07-21 08:32:15,238 [INFO]   [bocomm] ⏳ PDF parse failed, saved raw data for 交通銀行
+2026-07-21 08:32:25,393 [WARNING]   [shacom] 上海商業銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 cny 3m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 cny 6m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [WARNING]   [shacom] 上海商業銀行 cny 12m new_funds rate missing/zero
+2026-07-21 08:32:25,394 [INFO]   [shacom] 上海商業銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:32:25,587 [INFO]   [shacom] ✓ 上海商業銀行: fallback extracted additional rates
+2026-07-21 08:32:25,587 [INFO]   [shacom] ✓ 上海商業銀行: bank website rates unchanged (verified)
+2026-07-21 08:32:26,005 [INFO]   [shacom] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:32:35,865 [WARNING]   [publicbank] 大眾銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:32:35,865 [WARNING]   [publicbank] 大眾銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:32:35,865 [WARNING]   [publicbank] 大眾銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:32:35,865 [WARNING]   [publicbank] 大眾銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:32:35,865 [WARNING]   [publicbank] 大眾銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:32:35,865 [WARNING]   [publicbank] 大眾銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:32:35,866 [WARNING]   [publicbank] 大眾銀行 cny 3m new_funds rate missing/zero
+2026-07-21 08:32:35,866 [WARNING]   [publicbank] 大眾銀行 cny 6m new_funds rate missing/zero
+2026-07-21 08:32:35,866 [WARNING]   [publicbank] 大眾銀行 cny 12m new_funds rate missing/zero
+2026-07-21 08:32:35,866 [INFO]   [publicbank] 大眾銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:32:36,123 [INFO]   [publicbank] ✓ 大眾銀行: fallback extracted additional rates
+2026-07-21 08:32:36,123 [INFO]   [publicbank] ✓ 大眾銀行: bank website rates unchanged (verified)
+2026-07-21 08:32:36,455 [INFO]   [publicbank] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 hkd 3m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 hkd 6m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 hkd 12m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 usd 3m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 usd 6m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 usd 12m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 cny 3m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 cny 6m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [WARNING]   [winglung] 招商永隆 cny 12m new_funds rate missing/zero
+2026-07-21 08:32:45,796 [INFO]   [winglung] 招商永隆: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:32:46,202 [INFO]   [winglung] ✓ 招商永隆: fallback extracted additional rates
+2026-07-21 08:32:46,202 [INFO]   [winglung] ✓ 招商永隆: bank website rates unchanged (verified)
+2026-07-21 08:32:46,203 [INFO]   [winglung] Scraping CNY page: https://www.cmbwinglungbank.com/ibanking/CnCoFiiDepratDsp.jsp
+2026-07-21 08:32:55,243 [INFO]   [winglung] CNY from dedicated page: []
+2026-07-21 08:32:55,586 [INFO]   [winglung] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 cny 3m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 cny 6m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [WARNING]   [chbank] 創興銀行 cny 12m new_funds rate missing/zero
+2026-07-21 08:33:08,846 [INFO]   [chbank] 創興銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:33:10,921 [INFO]   [chbank] ✓ 創興銀行: fallback extracted additional rates
+2026-07-21 08:33:10,921 [INFO]   [chbank] ✓ 創興銀行: bank website rates unchanged (verified)
+2026-07-21 08:33:11,265 [INFO]   [chbank] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:33:11,266 [INFO]   [fusion] 富融銀行: skip_scrape, trying HKET as primary...
+2026-07-21 08:33:11,505 [INFO]   [fusion] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:33:12,163 [INFO] UHK second source: found 9 banks
+2026-07-21 08:33:12,163 [WARNING]   [fusion] 富融銀行: no data source available (unverified)
+2026-07-21 08:33:28,621 [INFO]   Clicked tab @e12 (美元)
+2026-07-21 08:33:33,309 [INFO]   ✓ Got USD rates from tab for 象象銀行
+2026-07-21 08:33:33,309 [WARNING]   [airstar] 象象銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:33:33,309 [WARNING]   [airstar] 象象銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:33:33,309 [WARNING]   [airstar] 象象銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:33:33,309 [WARNING]   [airstar] 象象銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:33:33,309 [WARNING]   [airstar] 象象銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:33:33,309 [WARNING]   [airstar] 象象銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:33:33,309 [INFO]   [airstar] 象象銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:33:33,457 [INFO]   [airstar] ✓ 象象銀行: bank website rates unchanged (verified)
+2026-07-21 08:33:33,795 [INFO]   [airstar] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:33:49,780 [INFO]   [za] ✓ 眾安銀行: bank website rates unchanged (verified)
+2026-07-21 08:33:50,006 [INFO]   [za] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:34:00,589 [INFO]   [pao] Extracting card rate (existing_funds) for 平安數字銀行...
+2026-07-21 08:34:00,590 [WARNING]   [pao] Card rate extraction error: name '_scrape_with_agent' is not defined
+2026-07-21 08:34:00,590 [WARNING]   [pao] 平安數字銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:34:00,590 [WARNING]   [pao] 平安數字銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:34:00,590 [WARNING]   [pao] 平安數字銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:34:00,590 [INFO]   [pao] 平安數字銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:34:00,712 [WARNING]   requests failed: HTTP 403
+2026-07-21 08:34:00,713 [INFO]   [pao] ✓ 平安數字銀行: bank website rates UPDATED (1 changed)
+2026-07-21 08:34:01,145 [INFO]   [pao] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:34:10,986 [WARNING]   [welab] 匯立銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:34:10,986 [WARNING]   [welab] 匯立銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:34:10,986 [WARNING]   [welab] 匯立銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:34:10,987 [INFO]   [welab] 匯立銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:34:11,251 [INFO]   [welab] ✓ 匯立銀行: bank website rates unchanged (verified)
+2026-07-21 08:34:11,595 [INFO]   [welab] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 cny 3m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 cny 6m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [WARNING]   [livi] 理慧銀行 cny 12m new_funds rate missing/zero
+2026-07-21 08:34:27,031 [INFO]   [livi] 理慧銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:34:27,574 [INFO]   [livi] ✓ 理慧銀行: fallback extracted additional rates
+2026-07-21 08:34:27,575 [INFO]   [livi] ✓ 理慧銀行: bank website rates unchanged (verified)
+2026-07-21 08:34:27,936 [INFO]   [livi] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:34:38,990 [WARNING]   [ant] 螞蟻銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:34:38,991 [WARNING]   [ant] 螞蟻銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:34:38,991 [WARNING]   [ant] 螞蟻銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:34:38,991 [WARNING]   [ant] 螞蟻銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:34:38,991 [WARNING]   [ant] 螞蟻銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:34:38,991 [WARNING]   [ant] 螞蟻銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:34:38,991 [INFO]   [ant] 螞蟻銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:34:39,775 [INFO]   [ant] ✓ 螞蟻銀行: bank website rates unchanged (verified)
+2026-07-21 08:34:40,116 [INFO]   [ant] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 hkd 3m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 hkd 6m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 hkd 12m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 usd 3m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 usd 6m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 usd 12m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 cny 3m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 cny 6m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [WARNING]   [chiyu] 集友銀行 cny 12m new_funds rate missing/zero
+2026-07-21 08:34:49,486 [INFO]   [chiyu] 集友銀行: extraction may have failed, trying requests + BeautifulSoup fallback...
+2026-07-21 08:34:49,913 [INFO]   [chiyu] ✓ 集友銀行: fallback extracted additional rates
+2026-07-21 08:34:49,914 [INFO]   [chiyu] ✓ 集友銀行: bank website rates unchanged (verified)
+2026-07-21 08:34:50,285 [INFO]   [chiyu] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:34:50,285 [INFO]   [ncb] 南洋商業銀行: skip_scrape, trying HKET as primary...
+2026-07-21 08:34:50,505 [INFO]   [ncb] HKET article last updated 2026/07/10, not today or yesterday, skipping HKET
+2026-07-21 08:34:50,505 [WARNING]   [ncb] 南洋商業銀行: no data source available (unverified)
+2026-07-21 08:34:50,505 [ERROR] Update failed: 'float' object does not support item assignment
+Downloaded PDF: 1166484 bytes
+Extracted 2 images from PDF
+OCR'd page-000.jpg: 818 chars
+OCR'd page-001.jpg: 1906 chars
+Total OCR text: 2726 chars

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T13:20:46.623317+08:00",
+  "last_updated": "2026-07-21T11:04:08.187824+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -34,7 +34,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -61,7 +62,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -87,7 +89,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.395,
@@ -129,7 +132,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -155,7 +159,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -181,7 +186,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -209,7 +215,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -235,7 +242,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -261,7 +269,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.3,
@@ -311,7 +320,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -337,7 +347,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -365,7 +376,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -391,7 +403,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -417,7 +430,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 1.1,
@@ -451,7 +465,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.1,
@@ -485,7 +500,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "rate": 1.1,
@@ -527,7 +543,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -553,7 +570,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -579,7 +597,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.4,
@@ -629,7 +648,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -655,7 +675,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -683,7 +704,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -709,7 +731,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -735,7 +758,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.3,
@@ -785,7 +809,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -811,7 +836,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -859,7 +885,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 1.4,
@@ -893,7 +920,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.45,
@@ -927,7 +955,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "rate": 1.5,
@@ -969,7 +998,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -995,7 +1025,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -1021,7 +1052,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "existing_funds": {
@@ -1044,7 +1076,8 @@
             "note": null,
             "source": null
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "existing_funds": {
@@ -1067,7 +1100,8 @@
             "note": null,
             "source": null
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -1093,7 +1127,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -1119,7 +1154,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -1145,7 +1181,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -1173,7 +1210,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -1199,7 +1237,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -1225,7 +1264,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -1247,7 +1287,8 @@
             "note": null,
             "source": null
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -1269,7 +1310,8 @@
             "note": null,
             "source": null
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -1295,7 +1337,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -1321,7 +1364,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -1347,7 +1391,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -1375,7 +1420,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -1401,7 +1447,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -1427,7 +1474,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -1453,7 +1501,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -1479,7 +1528,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -1505,7 +1555,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -1531,7 +1582,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -1557,7 +1609,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -1591,7 +1644,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -1617,7 +1671,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -1643,7 +1698,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -1667,7 +1723,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -1691,7 +1748,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -1715,7 +1773,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -1741,7 +1800,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -1767,7 +1827,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -1795,7 +1856,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -1821,7 +1883,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -1847,7 +1910,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.3,
@@ -1897,7 +1961,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -1923,7 +1988,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -1951,7 +2017,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -1977,7 +2044,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -2003,7 +2071,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 1.0,
@@ -2037,7 +2106,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.1,
@@ -2071,7 +2141,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "rate": 1.2,
@@ -2111,7 +2182,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.45,
@@ -2185,7 +2257,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -2213,7 +2286,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 3.75,
@@ -2271,7 +2345,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "rate": 3.9,
@@ -2305,7 +2380,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -2333,7 +2409,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -2359,7 +2436,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -2385,7 +2463,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -2411,7 +2490,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -2437,7 +2517,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -2463,7 +2544,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -2489,7 +2571,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -2515,7 +2598,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -2547,7 +2631,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 1.5,
@@ -2579,7 +2664,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.0,
@@ -2629,7 +2715,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -2655,7 +2742,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -2683,7 +2771,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -2709,7 +2798,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -2735,7 +2825,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.8,
@@ -2777,7 +2868,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -2803,7 +2895,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -2829,7 +2922,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -2857,7 +2951,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -2883,7 +2978,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -2909,7 +3005,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 1.3,
@@ -2943,7 +3040,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.3,
@@ -2977,7 +3075,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -3003,7 +3102,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -3037,7 +3137,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -3063,7 +3164,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -3089,7 +3191,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.8,
@@ -3139,7 +3242,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -3165,7 +3269,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -3193,7 +3298,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -3219,7 +3325,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -3245,7 +3352,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.75,
@@ -3295,7 +3403,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -3321,7 +3430,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -3349,7 +3459,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -3375,7 +3486,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -3401,7 +3513,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -3427,7 +3540,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -3453,7 +3567,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -3479,7 +3594,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -3505,7 +3621,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -3531,7 +3648,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -3563,7 +3681,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -3587,7 +3706,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -3611,7 +3731,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.95,
@@ -3643,7 +3764,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -3667,7 +3789,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -3693,7 +3816,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -3719,7 +3843,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -3747,7 +3872,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -3773,7 +3899,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -3799,7 +3926,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.8,
@@ -3833,7 +3961,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -3859,7 +3988,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -3885,7 +4015,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -3911,7 +4042,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -3939,7 +4071,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -3965,7 +4098,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -3991,7 +4125,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -4017,7 +4152,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -4043,7 +4179,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -4069,7 +4206,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -4095,7 +4233,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -4121,7 +4260,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -4153,7 +4293,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.0,
@@ -4185,7 +4326,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.5,
@@ -4232,7 +4374,8 @@
             "note": null,
             "source": null
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -4256,7 +4399,8 @@
             "source": null,
             "conditions": []
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -4284,7 +4428,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -4310,7 +4455,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -4336,7 +4482,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -4362,7 +4509,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -4385,7 +4533,8 @@
             "note": null,
             "source": null
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -4411,7 +4560,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -4434,7 +4584,8 @@
             "note": null,
             "source": null
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -4460,7 +4611,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -4488,7 +4640,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -4514,7 +4667,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -4540,7 +4694,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -4566,7 +4721,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -4592,7 +4748,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -4618,7 +4775,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -4644,7 +4802,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -4670,7 +4829,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -4704,7 +4864,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.15,
@@ -4738,7 +4899,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.55,
@@ -4788,7 +4950,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -4814,7 +4977,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -4842,7 +5006,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 3.1,
@@ -4876,7 +5041,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.4,
@@ -4926,7 +5092,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -4952,7 +5119,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -4980,7 +5148,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 0.6,
@@ -5014,7 +5183,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 1.05,
@@ -5048,7 +5218,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.3,
@@ -5082,7 +5253,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "rate": 1.3,
@@ -5124,7 +5296,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.13,
@@ -5158,7 +5331,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.78,
@@ -5208,7 +5382,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -5234,7 +5409,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -5262,7 +5438,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.98,
@@ -5296,7 +5473,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.48,
@@ -5346,7 +5524,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -5372,7 +5551,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -5400,7 +5580,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 0.58,
@@ -5434,7 +5615,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 0.98,
@@ -5468,7 +5650,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.03,
@@ -5502,7 +5685,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "rate": 1.03,
@@ -5546,10 +5730,11 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
-          "rate": 2.4,
+          "rate": 2.3,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -5582,10 +5767,11 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
-          "rate": 2.8,
+          "rate": 2.7,
           "min_deposit": null,
           "note": "定期存款年利率",
           "source": "bank",
@@ -5632,7 +5818,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -5658,7 +5845,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -5686,7 +5874,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 3.45,
@@ -5720,7 +5909,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.75,
@@ -5770,7 +5960,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -5796,7 +5987,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -5824,7 +6016,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 0.2,
@@ -5874,7 +6067,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 0.35,
@@ -5908,7 +6102,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "rate": 0.4,
@@ -5950,7 +6145,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 1.15,
@@ -6024,7 +6220,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -6052,7 +6249,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.5,
@@ -6126,7 +6324,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -6154,7 +6353,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 0.55,
@@ -6204,7 +6404,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 0.95,
@@ -6310,7 +6511,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "rate": 0.9,
@@ -6394,7 +6596,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "rate": 3.9,
@@ -6462,7 +6665,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.35,
@@ -6522,7 +6726,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -6550,7 +6755,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -6576,7 +6782,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -6604,7 +6811,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -6632,7 +6840,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -6660,7 +6869,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -6686,7 +6896,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -6712,7 +6923,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -6740,7 +6952,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -6766,7 +6979,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -6792,7 +7006,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -6818,7 +7033,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -6844,7 +7060,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -6870,7 +7087,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -6896,7 +7114,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -6922,7 +7141,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -6950,7 +7170,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -6976,7 +7197,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -7002,7 +7224,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -7028,7 +7251,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -7054,7 +7278,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -7080,7 +7305,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -7106,7 +7332,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -7132,7 +7359,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -7298,7 +7526,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -7324,7 +7553,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -7350,7 +7580,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -7376,7 +7607,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -7402,7 +7634,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -7428,7 +7661,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -7454,7 +7688,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -7480,7 +7715,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -7514,7 +7750,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 1.0,
@@ -7548,7 +7785,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -7577,7 +7815,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -7606,7 +7845,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -7635,7 +7875,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -7664,7 +7905,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -7690,7 +7932,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -7718,7 +7961,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -7744,7 +7988,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -7770,7 +8015,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -7796,7 +8042,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -7822,7 +8069,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -7848,7 +8096,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -7874,7 +8123,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -7900,7 +8150,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -7928,7 +8179,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -7954,7 +8206,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -7980,7 +8233,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -8006,7 +8260,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -8032,7 +8287,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -8058,7 +8314,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -8084,7 +8341,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -8110,7 +8368,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -8144,7 +8403,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.5,
@@ -8178,7 +8438,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.0,
@@ -8197,7 +8458,7 @@
           "conditions": []
         },
         "12m": {
-          "rate": 3.1,
+          "rate": 3.15,
           "min_deposit": null,
           "note": "新資金定期優惠 (至 7/31)",
           "source": "bank",
@@ -8228,7 +8489,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -8254,7 +8516,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -8282,7 +8545,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -8308,7 +8572,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -8334,7 +8599,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -8360,7 +8626,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -8386,7 +8653,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -8412,7 +8680,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -8438,7 +8707,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -8464,7 +8734,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -8492,7 +8763,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -8518,7 +8790,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -8544,7 +8817,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -8570,7 +8844,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -8596,7 +8871,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -8622,7 +8898,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -8648,7 +8925,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -8674,7 +8952,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -8708,7 +8987,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 0.5,
@@ -8742,7 +9022,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.8,
@@ -8792,7 +9073,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -8818,7 +9100,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -8846,7 +9129,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -8872,7 +9156,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -8898,7 +9183,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -8924,7 +9210,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -8950,7 +9237,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -8976,7 +9264,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -9002,7 +9291,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -9028,7 +9318,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -9056,7 +9347,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -9082,7 +9374,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -9108,7 +9401,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -9134,7 +9428,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -9160,7 +9455,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -9186,7 +9482,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -9212,7 +9509,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -9238,7 +9536,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -9272,7 +9571,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 1.2,
@@ -9356,7 +9656,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 1.5,
@@ -9390,7 +9691,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.9,
@@ -9440,7 +9742,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -9466,7 +9769,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -9494,7 +9798,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 1.0,
@@ -9528,7 +9833,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 1.1,
@@ -9562,7 +9868,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "rate": 1.1,
@@ -9596,7 +9903,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "rate": 1.3,
@@ -9654,7 +9962,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 1.6,
@@ -9704,7 +10013,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "rate": 2.2,
@@ -9740,7 +10050,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 3.0,
@@ -9774,7 +10085,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.0,
@@ -9824,7 +10136,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "rate": 3.0,
@@ -9860,7 +10173,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -9886,7 +10200,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -9912,7 +10227,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -9938,7 +10254,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -9964,7 +10281,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -9990,7 +10308,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -10016,7 +10335,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -10042,7 +10362,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -10073,7 +10394,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 2.0,
@@ -10107,7 +10429,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 2.85,
@@ -10165,7 +10488,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -10193,7 +10517,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "rate": 3.4,
@@ -10227,7 +10552,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "rate": 3.7,
@@ -10285,7 +10611,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "type": "traditional",
@@ -10354,7 +10681,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "rate": 2.5,
@@ -10388,7 +10716,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     },
@@ -10424,7 +10753,8 @@
               "upgrade_wealth"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -10451,7 +10781,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -10478,7 +10809,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -10505,7 +10837,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -10532,7 +10865,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -10559,7 +10893,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -10586,7 +10921,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -10613,7 +10949,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "usd": {
@@ -10641,7 +10978,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -10667,7 +11005,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -10693,7 +11032,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -10719,7 +11059,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -10745,7 +11086,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -10771,7 +11113,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -10797,7 +11140,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -10823,7 +11167,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       },
       "cny": {
@@ -10851,7 +11196,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "1m": {
           "new_funds": {
@@ -10877,7 +11223,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "2m": {
           "new_funds": {
@@ -10903,7 +11250,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "3m": {
           "new_funds": {
@@ -10929,7 +11277,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "4m": {
           "new_funds": {
@@ -10955,7 +11304,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "6m": {
           "new_funds": {
@@ -10981,7 +11331,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "9m": {
           "new_funds": {
@@ -11007,7 +11358,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         },
         "12m": {
           "new_funds": {
@@ -11033,7 +11385,8 @@
               "exchange"
             ]
           },
-          "conditions": []
+          "conditions": [],
+          "fund_type": null
         }
       }
     }
