@@ -1379,15 +1379,23 @@ def update_rates():
                 hket_result, hket_ok = _hket_get_rates(parser_key, bank_name)
                 if hket_ok and hket_result:
                     changed = _compare_rates(bank, hket_result)
-                    _apply_result_rates(bank, hket_result, bank_name, source='hket')
-                    hket_verified = True
-                    if changed:
-                        verified_updated.append((bank_name, len(changed)))
-                        bank_updated = True
-                        logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates UPDATED ({len(changed)} changed)")
+                    
+                    # Check verification quality: must cover all existing periods
+                    if _check_verification_quality(bank, hket_result, 'hkd'):
+                        _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                        hket_verified = True
+                        if changed:
+                            verified_updated.append((bank_name, len(changed)))
+                            bank_updated = True
+                            logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates UPDATED ({len(changed)} changed)")
+                        else:
+                            verified_same.append(bank_name)
+                            logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates unchanged (verified)")
                     else:
-                        verified_same.append(bank_name)
-                        logger.info(f"  [{parser_key}] ✓ {bank_name}: HKET rates unchanged (verified)")
+                        # Insufficient verification quality
+                        unverified.append(bank_name)
+                        _apply_result_rates(bank, hket_result, bank_name, source='hket')
+                        logger.info(f"  [{parser_key}] ⚠ {bank_name}: HKET missing some periods (unverified)")
             if not hket_verified:
                 if _apply_uhk_fallback(bank, get_uhk_rates()):
                     unverified.append(bank_name)
@@ -1452,14 +1460,22 @@ def update_rates():
         if result:
             wrapped = _wrap_parser_result(result, bank_name)
             changed = _compare_rates(bank, wrapped)
-            _apply_result_rates(bank, wrapped, bank_name, source='bank')
-            if changed:
-                verified_updated.append((bank_name, len(changed)))
-                bank_updated = True
-                logger.info(f"  [{parser_key}] ✓ {bank_name}: bank website rates UPDATED ({len(changed)} changed)")
+            
+            # Check verification quality: must cover all existing periods
+            if _check_verification_quality(bank, wrapped, 'hkd'):
+                _apply_result_rates(bank, wrapped, bank_name, source='bank')
+                if changed:
+                    verified_updated.append((bank_name, len(changed)))
+                    bank_updated = True
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: bank website rates UPDATED ({len(changed)} changed)")
+                else:
+                    verified_same.append(bank_name)
+                    logger.info(f"  [{parser_key}] ✓ {bank_name}: bank website rates unchanged (verified)")
             else:
-                verified_same.append(bank_name)
-                logger.info(f"  [{parser_key}] ✓ {bank_name}: bank website rates unchanged (verified)")
+                # Insufficient verification quality
+                unverified.append(bank_name)
+                _apply_result_rates(bank, wrapped, bank_name, source='bank')
+                logger.info(f"  [{parser_key}] ⚠ {bank_name}: missing some existing periods (unverified)")
         else:
             # Parser failed — save raw data for later extraction
             save_scraped_data(parser_key, bank_name, url, text, tables, html)
@@ -1695,6 +1711,44 @@ def _compare_rates(bank, result):
             if old_rate is None or abs(float(new_rate) - float(old_rate)) > 0.001:
                 changed.add((cur, period))
     return changed
+
+
+def _check_verification_quality(bank, result, currency='hkd'):
+    """Check if parsed result covers all existing periods in bank data.
+    
+    For verification, the result must have ALL periods that currently exist in bank data.
+    Returns True if all existing periods are covered in the result.
+    """
+    if currency not in result:
+        return False
+    
+    if currency not in bank:
+        return False
+    
+    # Get all periods that have rates in bank data
+    existing_periods = []
+    for period in ALL_PERIODS:
+        if period not in bank[currency]:
+            continue
+        entry = bank[currency][period]
+        rate = entry.get('rate') if isinstance(entry, dict) else entry
+        if rate is not None and float(rate) > 0:
+            existing_periods.append(period)
+    
+    if not existing_periods:
+        # No existing data, any result is acceptable
+        return True
+    
+    # Check if result covers all existing periods
+    for period in existing_periods:
+        if period not in result[currency]:
+            return False
+        val = result[currency][period]
+        rate = val.get('rate') if isinstance(val, dict) else val
+        if rate is None or float(rate) <= 0:
+            return False
+    
+    return True
 
 
 def _apply_result_rates(bank, result, bank_name, source='bank'):
