@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T14:20:55.297451+08:00",
+  "last_updated": "2026-07-21T14:30:23.360786+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -3195,26 +3195,26 @@
           "fund_type": null
         },
         "3m": {
-          "rate": 2.8,
+          "rate": 2.65,
           "min_deposit": null,
-          "note": "顯卓理財特惠定期存款利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
-          "rate": 2.8,
+          "rate": 2.45,
           "min_deposit": null,
-          "note": "顯卓理財特惠定期存款利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
-          "rate": 2.8,
+          "rate": 2.65,
           "min_deposit": null,
-          "note": "顯卓理財特惠定期存款利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -4330,7 +4330,7 @@
           "fund_type": null
         },
         "3m": {
-          "rate": 2.5,
+          "rate": 2.45,
           "min_deposit": null,
           "note": "UHK 港生活",
           "source": "uhk",
@@ -4338,7 +4338,7 @@
           "conditions": []
         },
         "6m": {
-          "rate": 2.45,
+          "rate": 2.5,
           "min_deposit": null,
           "note": "UHK 港生活",
           "source": "uhk",
@@ -6450,8 +6450,8 @@
         "1m": {
           "rate": 2.45,
           "min_deposit": null,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -6466,24 +6466,24 @@
         "3m": {
           "rate": 2.6,
           "min_deposit": null,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
           "rate": 1.5,
           "min_deposit": null,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
           "rate": 0.8,
           "min_deposit": null,
-          "note": "雲利率（網上/流動理財）",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -7379,10 +7379,10 @@
           "conditions": []
         },
         "1m": {
-          "rate": 1.5,
+          "rate": 0.01,
           "min_deposit": null,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -7395,26 +7395,26 @@
           "conditions": []
         },
         "3m": {
-          "rate": 2.6,
+          "rate": 2.2,
           "min_deposit": null,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "6m": {
-          "rate": 2.95,
+          "rate": 2.2,
           "min_deposit": null,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
         "12m": {
-          "rate": 3.15,
+          "rate": 2.35,
           "min_deposit": null,
-          "note": "定期存款年利率",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -7754,10 +7754,10 @@
           "fund_type": null
         },
         "1m": {
-          "rate": 1.0,
+          "rate": 0.01,
           "min_deposit": null,
-          "note": "從眾安銀行官網提取",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
         },
@@ -7789,94 +7789,28 @@
           "fund_type": null
         },
         "3m": {
-          "new_funds": {
-            "rate": 0.51,
-            "min_deposit": 1,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "new_account",
-              "upgrade_wealth"
-            ]
-          },
-          "existing_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": []
-          },
-          "exchange": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": [
-              "exchange"
-            ]
-          },
-          "conditions": [],
-          "fund_type": null
+          "rate": 2.2,
+          "min_deposit": null,
+          "note": "UHK 港生活",
+          "source": "uhk",
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "6m": {
-          "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": []
-          },
-          "existing_funds": {
-            "rate": 1.61,
-            "min_deposit": 1,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "new_account",
-              "upgrade_wealth"
-            ]
-          },
-          "exchange": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": [
-              "exchange"
-            ]
-          },
-          "conditions": [],
-          "fund_type": null
+          "rate": 2.2,
+          "min_deposit": null,
+          "note": "UHK 港生活",
+          "source": "uhk",
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "12m": {
-          "new_funds": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": []
-          },
-          "existing_funds": {
-            "rate": 2.01,
-            "min_deposit": 1,
-            "note": "從香港經濟日報提取",
-            "source": "hket",
-            "conditions": [
-              "new_account",
-              "upgrade_wealth"
-            ]
-          },
-          "exchange": {
-            "rate": null,
-            "min_deposit": null,
-            "note": null,
-            "source": null,
-            "conditions": [
-              "exchange"
-            ]
-          },
-          "conditions": [],
-          "fund_type": null
+          "rate": 2.35,
+          "min_deposit": null,
+          "note": "UHK 港生活",
+          "source": "uhk",
+          "fund_type": "existing_funds",
+          "conditions": []
         },
         "4m": {
           "new_funds": {
@@ -8407,10 +8341,10 @@
           "fund_type": null
         },
         "1m": {
-          "rate": 2.5,
+          "rate": 2.3,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 7/31)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
         },
@@ -8442,26 +8376,26 @@
           "fund_type": null
         },
         "3m": {
-          "rate": 3.0,
+          "rate": 2.6,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 7/31)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
         },
         "6m": {
-          "rate": 2.9,
+          "rate": 2.5,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 7/31)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
         },
         "12m": {
-          "rate": 3.15,
+          "rate": 2.5,
           "min_deposit": null,
-          "note": "新資金定期優惠 (至 7/31)",
-          "source": "bank",
+          "note": "UHK 港生活",
+          "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
         },
