@@ -3,89 +3,32 @@
 Data source: HKET (香港經濟日報)
 URL pattern: https://wealth.hket.com/article/XXXXXXX
 
-Since the official website is blocked (Access Denied), we use HKET as the primary source.
+Note: 官網被 Access Denied 阻擋，使用 HKET 作為主要數據源。
 
-Last update: 2026-07-10 from HKET
+Parser 設計：
+- 使用 hket_common 通用解析器
+- 不依賴固定的新聞 ID 或標題
+- 自動識別銀行名稱和利率格式
+- 支援 % 和 厘 兩種利率表示方式
 """
-import re
+from parsers.hket_common import parse_hket_article
 
 
 def parse(text, tables=None, html=None):
     """Parse CNCBI time deposit rates from HKET article.
     
-    Expected format from HKET:
-    - 全新客戶: 6個月 3.30% (100萬-200萬)
-    - 現有客戶新資金: 12個月 2.95%
-    - 現有資金: 12個月 2.90%
+    支援的利率格式：
+    - 全新客戶 6個月 3.30%（100萬-200萬）
+    - 現有客戶新資金 12個月 2.95厘
+    - 現有資金 12個月 2.90%
     """
     if not text:
         return None
     
-    rates = {}
+    # 使用通用 HKET 解析器
+    result = parse_hket_article(text, bank_name='中信銀行（國際）')
     
-    # Parse HKET article text
-    lines = text.split('\n')
+    if result:
+        result['note'] = '中信銀行（國際）港元定期存款（來源：HKET）'
     
-    # Track which section we're in
-    current_section = None
-    
-    for line in lines:
-        line = line.strip()
-        
-        # Detect section headers
-        if '全新客戶' in line and '新資金' in line:
-            current_section = 'new_customer'
-        elif '現有客戶' in line and '新資金' in line:
-            current_section = 'new_funds'
-        elif '現有資金' in line:
-            current_section = 'existing_funds'
-        
-        # Extract rates
-        if '%' in line:
-            # Pattern: 6個月 3.30% or 12個月 2.95%
-            # Try to extract period and rate
-            period_match = re.search(r'(\d+)個月', line)
-            rate_match = re.search(r'(\d+\.?\d*)%', line)
-            
-            if period_match and rate_match:
-                period = f"{period_match.group(1)}m"
-                rate = float(rate_match.group(1)) / 100
-                
-                # Also try to extract deposit amount
-                amount_match = re.search(r'(\d+)萬元.*?(\d+)萬元', line)
-                min_amount = None
-                max_amount = None
-                if amount_match:
-                    min_amount = int(amount_match.group(1)) * 10000
-                    max_amount = int(amount_match.group(2)) * 10000
-                
-                # Add to appropriate section
-                if 'hkd' not in rates:
-                    rates['hkd'] = {}
-                
-                if period not in rates['hkd']:
-                    rates['hkd'][period] = {}
-                
-                if current_section:
-                    section_data = {'rate': rate, 'source': 'hket'}
-                    if min_amount:
-                        section_data['min_deposit'] = min_amount
-                    if max_amount:
-                        section_data['max_deposit'] = max_amount
-                    
-                    rates['hkd'][period][current_section] = section_data
-    
-    if rates:
-        rates['note'] = '中信銀行（國際）港元定期存款（來源：HKET）'
-        return rates
-    return None
-
-
-def parse_hket_url(url):
-    """Fetch and parse CNCBI rates from HKET article URL.
-    
-    This is a convenience function for the scraper to use.
-    """
-    # The scraper should use web_fetch to get the article content
-    # and then pass it to parse()
-    pass
+    return result
