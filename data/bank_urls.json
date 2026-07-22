@@ -122,9 +122,10 @@
       "name_en": "Fusion",
       "key": "fusion",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909899",
         "general": "https://www.fusionbank.com/deposit.html?lang=tc"
       },
-      "note": "被騰訊雲 EdgeOne 安全防護阻擋，無法自動抓取，需手動訪問"
+      "note": "官網被 EdgeOne 阻擋，使用 HKET 作為主要數據源"
     },
     {
       "name": "象象銀行",
@@ -173,8 +174,10 @@
       "name_en": "Ant Bank",
       "key": "ant",
       "urls": {
-        "general": "https://www.antbank.hk/tc/deposits/time-deposit"
-      }
+        "general": "https://www.antbank.hk/tc/deposits/time-deposit",
+        "hket": "https://wealth.hket.com/article/3909930"
+      },
+      "note": "官網 404 錯誤，使用 HKET 作為主要數據源"
     },
     {
       "name": "集友銀行",

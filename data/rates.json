@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T13:47:13.810898+08:00",
+  "last_updated": "2026-07-22T13:51:56.980917+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -11310,6 +11310,177 @@
       "source": "HKET 2026-07-10",
       "source_url": "https://wealth.hket.com/article/3909875",
       "last_updated": "2026-07-22T13:47:13.810868+08:00"
+    },
+    {
+      "name": "平安數字銀行",
+      "name_en": "PAObank",
+      "key": "pingan",
+      "type": "virtual",
+      "logo_color": "#FF6B00",
+      "hkd": {
+        "1m": {
+          "new_funds": {
+            "rate": 0.025,
+            "min_deposit": 100,
+            "note": "新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 0.024,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          },
+          "new_customer": {
+            "rate": 0.08,
+            "min_deposit": 50000,
+            "max_deposit": 50000,
+            "note": "全新客戶首5萬，推廣期至7月29日",
+            "source": "hket",
+            "conditions": [
+              "new_customer",
+              "limited_time"
+            ]
+          }
+        },
+        "3m": {
+          "new_funds": {
+            "rate": 0.03,
+            "min_deposit": 100,
+            "note": "新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 0.03,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
+        },
+        "6m": {
+          "new_funds": {
+            "rate": 0.029,
+            "min_deposit": 100,
+            "note": "新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 0.0285,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
+        },
+        "12m": {
+          "new_funds": {
+            "rate": 0.031,
+            "min_deposit": 100,
+            "note": "新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 0.03,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
+        },
+        "24m": {
+          "existing_funds": {
+            "rate": 0.0295,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
+        }
+      },
+      "source": "HKET 2026-07-10",
+      "source_url": "https://wealth.hket.com/article/3909822",
+      "last_updated": "2026-07-22T13:51:56.980866+08:00"
+    },
+    {
+      "name": "螞蟻銀行",
+      "name_en": "Ant Bank",
+      "key": "ant",
+      "type": "virtual",
+      "logo_color": "#1677FF",
+      "hkd": {
+        "1m": {
+          "new_funds": {
+            "rate": 0.015,
+            "min_deposit": 100000,
+            "note": "新資金，10萬起",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          }
+        },
+        "3m": {
+          "new_funds": {
+            "rate": 0.018,
+            "min_deposit": 100000,
+            "note": "新資金，10萬起",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          }
+        },
+        "6m": {
+          "new_funds": {
+            "rate": 0.022,
+            "min_deposit": 100000,
+            "note": "新資金，10萬起",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          }
+        },
+        "9m": {
+          "new_funds": {
+            "rate": 0.023,
+            "min_deposit": 100000,
+            "note": "新資金，10萬起",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          }
+        },
+        "12m": {
+          "new_funds": {
+            "rate": 0.025,
+            "min_deposit": 100000,
+            "note": "新資金，10萬起",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          }
+        }
+      },
+      "source": "HKET 2026-07-10",
+      "source_url": "https://wealth.hket.com/article/3909930",
+      "last_updated": "2026-07-22T13:51:56.980913+08:00"
     }
   ],
   "structure_version": "2.0",

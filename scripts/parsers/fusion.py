@@ -1,73 +1,123 @@
 """富融銀行 Fusion Bank - Parser for time deposit rates.
 
-Page: https://www.fusionbank.com/
+Data source: HKET (香港經濟日報)
+URL pattern: https://wealth.hket.com/article/XXXXXXX
 
-Note: Site may block automated access (Tencent Cloud EdgeOne).
-When accessible, extract rates from the deposit section.
+Since the official website is blocked by EdgeOne, we use HKET as the primary source.
+
+Last update: 2026-07-10 from HKET
 """
 import re
 
 
 def parse(text, tables=None, html=None):
+    """Parse Fusion Bank time deposit rates from HKET article.
+    
+    Expected format from HKET:
+    - 零元起存: 1周 1.0%, 1月 1.6%, 3月 2.7%, 6月 3.0%, 12月 2.9%
+    - 快閃星期一: 1周 6.88%, 新客1月 25.0%, 12月 3.1%
+    """
     if not text:
         return None
-
-    # Check if blocked
-    if 'Restricted Access' in text or 'blocked you' in text:
-        return None
-
-    hkd = {}
-    usd = {}
-
-    # Look for 定期存款 section
-    td_idx = text.find('定期存款')
-    if td_idx < 0:
-        td_idx = text.find('定期')
     
-    if td_idx >= 0:
-        section = text[td_idx:td_idx + 3000]
+    rates = {}
+    
+    lines = text.split('\n')
+    
+    for line in lines:
+        line = line.strip()
         
-        for period, label in [('1m', r'1\s*個?月'), ('2m', r'2\s*個?月'),
-                               ('3m', r'3\s*個?月'), ('6m', r'6\s*個?月'),
-                               ('12m', r'12\s*個?月')]:
-            m = re.search(rf'{label}\s*[^%]*?(\d+\.?\d*)%', section)
-            if m:
-                rate = float(m.group(1))
-                if rate > 0:
-                    hkd[period] = rate
-
-    # Look for HKD/USD sections
-    for currency, store in [('hkd', hkd), ('usd', usd)]:
-        curr_label = '港元' if currency == 'hkd' else '美元'
-        idx = text.find(curr_label)
-        if idx >= 0:
-            section = text[idx:idx + 2000]
-            for period, plabel in [('3m', r'3\s*個?月'), ('6m', r'6\s*個?月'), ('12m', r'12?\s*個?月')]:
-                m = re.search(rf'{plabel}\s*[^%]*?(\d+\.?\d*)%', section)
-                if m:
-                    rate = float(m.group(1))
-                    if rate > 0:
-                        store[period] = rate
-
-    # Try tables
-    if tables:
-        for table in tables:
-            table_str = str(table)
-            if '定期' in table_str or '%' in table_str:
-                for period, label in [('3m', '3'), ('6m', '6'), ('12m', '12')]:
-                    m = re.search(rf'{label}\s*個?月\s*[^%]*?(\d+\.?\d*)%', table_str)
-                    if m:
-                        rate = float(m.group(1))
-                        if rate > 0:
-                            hkd[period] = rate
-
-    result = {}
-    if hkd:
-        result['hkd'] = hkd
-    if usd:
-        result['usd'] = usd
-
-    if result:
-        result['note'] = '從富融銀行官網提取'
-        return result
+        # Parse standard rates (零元起存)
+        if '零元起存' in line or ('不論新舊資金' in line and '%' in line):
+            # Extract rates from table-like format
+            # Pattern: 1星期 1.0厘 不設最低存款額
+            period_match = re.search(r'(\d+)個月|(\d+)星期', line)
+            rate_match = re.search(r'(\d+\.?\d*)厘', line)
+            
+            if period_match and rate_match:
+                if period_match.group(1):  # 個月
+                    period = f"{period_match.group(1)}m"
+                else:  # 星期
+                    period = f"{period_match.group(2)}w"
+                
+                rate = float(rate_match.group(1)) / 100
+                
+                if 'hkd' not in rates:
+                    rates['hkd'] = {}
+                
+                if period not in rates['hkd']:
+                    rates['hkd'][period] = {}
+                
+                rates['hkd'][period]['general'] = {
+                    'rate': rate,
+                    'min_deposit': 0,
+                    'note': '零元起存',
+                    'source': 'hket'
+                }
+        
+        # Parse flash Monday rates (快閃星期一)
+        if '快閃' in line and '%' in line:
+            # Extract rate
+            rate_match = re.search(r'(\d+\.?\d*)%', line)
+            if rate_match:
+                rate = float(rate_match.group(1)) / 100
+                
+                # Determine period
+                if '1星期' in line or '1周' in line:
+                    period = '1w'
+                elif '1個月' in line or '1月' in line:
+                    period = '1m'
+                elif '12個月' in line or '12月' in line:
+                    period = '12m'
+                else:
+                    period = None
+                
+                if period:
+                    if 'hkd' not in rates:
+                        rates['hkd'] = {}
+                    
+                    if period not in rates['hkd']:
+                        rates['hkd'][period] = {}
+                    
+                    # Check if new customer exclusive
+                    if '新客' in line or '新戶' in line:
+                        rates['hkd'][period]['flash_monday_new_customer'] = {
+                            'rate': rate,
+                            'note': '快閃星期一新客戶專有',
+                            'source': 'hket',
+                            'conditions': ['flash_monday', 'new_customer', 'limited_quota']
+                        }
+                    else:
+                        rates['hkd'][period]['flash_monday'] = {
+                            'rate': rate,
+                            'note': '快閃星期一',
+                            'source': 'hket',
+                            'conditions': ['flash_monday', 'limited_quota']
+                        }
+        
+        # Parse USD rates
+        if '美元定存' in line and '%' in line:
+            rate_match = re.search(r'(\d+\.?\d*)%', line)
+            period_match = re.search(r'(\d+)個月', line)
+            
+            if rate_match and period_match:
+                rate = float(rate_match.group(1)) / 100
+                period = f"{period_match.group(1)}m"
+                
+                if 'usd' not in rates:
+                    rates['usd'] = {}
+                
+                if period not in rates['usd']:
+                    rates['usd'][period] = {}
+                
+                rates['usd'][period]['flash_monday'] = {
+                    'rate': rate,
+                    'note': '美元快閃星期一',
+                    'source': 'hket',
+                    'conditions': ['flash_monday', 'limited_quota']
+                }
+    
+    if rates:
+        rates['note'] = '富融銀行定期存款（來源：HKET）'
+        return rates
     return None
