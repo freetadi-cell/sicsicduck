@@ -69,20 +69,35 @@ def scrape_bank(page, bank_info):
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
             time.sleep(3)  # Wait for JS to render
             
-            # Special handling for ZA Bank - click "定期存款" tab to show rates
+            # Special handling for banks that need extra wait time or interactions
+            
+            # ZA Bank - click "定期存款" tab to show rates
             if key == 'za':
                 try:
-                    # Find and click the "定期存款" button (not the FAQ ones)
                     buttons = page.locator('button').all()
                     for btn in buttons:
                         text = btn.inner_text().strip()
                         if text == '定期存款':
                             btn.click()
                             logger.info(f"  [{key}] Clicked 定期存款 tab")
-                            time.sleep(2)  # Wait for table to update
+                            time.sleep(2)
                             break
                 except Exception as e:
                     logger.warning(f"  [{key}] Could not click 定期存款 tab: {e}")
+            
+            # Wing Lung (招商永隆) - needs longer wait for dynamic content
+            elif key == 'winglung':
+                logger.info(f"  [{key}] Waiting 8s for dynamic content...")
+                page.wait_for_timeout(8000)
+                # Also try scrolling to trigger lazy-loaded content
+                for i in range(3):
+                    page.evaluate(f"window.scrollTo(0, {i * 1000})")
+                    time.sleep(1)
+                
+            # Chbank (創興銀行) - needs longer wait for tables
+            elif key == 'chbank':
+                logger.info(f"  [{key}] Waiting 5s for dynamic content...")
+                page.wait_for_timeout(5000)
             
             # Check if page loaded successfully
             text = page.inner_text("body")

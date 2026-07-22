@@ -1,183 +1,131 @@
 """創興銀行 Chong Hing Bank - Parser for 雲利率 (e-rate / cloud rates).
 
-Uses browser to click the 雲利率 tab, then extracts rates from the rendered table.
-Falls back to XML (牌價) if browser fails.
+Updated 2026-07-22 to handle both 雲利率 and 牌價 rates from scraped tables.
+
+Page: https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml
+
+Two rate types:
+1. 雲利率 (e-rate) - for online/mobile banking, better rates
+2. 牌價 (board rate) - standard rates
 """
 import re
-import subprocess
 import logging
-import time
 
 logger = logging.getLogger(__name__)
 
-PAGE_URL = 'https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml'
-XML_URL = 'https://www.chbank.com/xml_rates2/bw_fd_int.xml'
-
 
 def parse(text=None, tables=None, html=None):
-    """Parse Chong Hing Bank 雲利率."""
-    result = _parse_via_browser()
-    if result:
-        return result
-    logger.warning('chbank: browser extraction failed, falling back to XML board rates')
-    return _parse_xml()
-
-
-def _parse_via_browser():
-    """Use agent-browser to click 雲利率 tab and extract rates."""
-    try:
-        # Open page
-        r = subprocess.run(['agent-browser', 'open', PAGE_URL],
-                          capture_output=True, text=True, timeout=30)
-        if r.returncode != 0:
-            return None
-
-        # Get snapshot to find 雲利率 button ref
-        r = subprocess.run(['agent-browser', 'snapshot'],
-                          capture_output=True, text=True, timeout=15)
-        if r.returncode != 0:
-            return None
-
-        # Find ref: snapshot format is button "雲利率" [ref=e61]
-        ref_m = re.search(r'button\s+"雲利率"\s*\[ref=(e\d+)\]', r.stdout)
-        if not ref_m:
-            logger.warning('chbank: cannot find 雲利率 button ref')
-            return None
-
-        ref = '@' + ref_m.group(1)
-        r = subprocess.run(['agent-browser', 'click', ref],
-                          capture_output=True, text=True, timeout=15)
-        if r.returncode != 0:
-            return None
-
-        time.sleep(1)
-
-        # Get snapshot with 雲利率 table data
-        r = subprocess.run(['agent-browser', 'snapshot'],
-                          capture_output=True, text=True, timeout=15)
-        if r.returncode != 0:
-            return None
-
-        return _extract_rates_from_snapshot(r.stdout)
-
-    except Exception as e:
-        logger.debug(f'chbank browser parse failed: {e}')
+    """Parse Chong Hing Bank 雲利率 from scraped tables."""
+    if not tables:
         return None
-
-
-def _extract_rates_from_snapshot(snapshot):
-    """Extract rates from agent-browser snapshot.
-
-    Table rows look like:
-    - row "人民幣 500,000 至 50,000,000 ------- 0.3500 0.3500 0.8000 1.0000 1.3500 1.3500 1.2000 1.2000 0.3500"
-
-    Columns: 1天 7天 14天 1個月 2個月 3個月 6個月 9個月 12個月 24個月
-    Indices:  0   1    2     3     4     5     6     7      8      9
-    """
-    if not snapshot:
-        return None
-
-    # Find 雲利率 table section
-    erate_idx = snapshot.find('定期存款（雲利率）')
-    if erate_idx < 0:
-        return None
-
-    section = snapshot[erate_idx:]
-
-    period_indices = {
-        1: '1w', 2: '2w', 3: '1m', 4: '2m',
-        5: '3m', 6: '6m', 7: '9m', 8: '12m',
-    }
-
+    
     rates = {}
-
-    # Best tiers for each currency
-    # Find each currency's rates from the first row that matches
-    # All tiers have the same rates for 雲利率
-    currency_patterns = [
-        ('港 元', 'hkd'),
-        ('美 元', 'usd'),
-        ('人民幣', 'cny'),
-    ]
-
-    for cn_label, curr_key in currency_patterns:
-        # Match: 港 元 5,000 至 49,999 0.0010 0.0100 ... (10 values)
-        # or:    人民幣 5,000 至 49,999 ------- 0.3500 ... (with dashes)
-        pattern = re.escape(cn_label) + r'\s+[\d,]+\s+(?:至|或以上)\s+[\d,]*\s*([\d.\-]+(?:\s+[\d.\-]+){9})'
-        m = re.search(pattern, section)
-        if m:
-            values = m.group(1).split()
-            curr_rates = {}
-            for idx, pk in period_indices.items():
-                if idx < len(values):
-                    val = values[idx]
-                    if val not in ('-------', '---', ''):
-                        try:
-                            rate = float(val)
-                            if rate > 0:
-                                curr_rates[pk] = rate
-                        except ValueError:
-                            pass
-            if curr_rates:
-                rates[curr_key] = curr_rates
-
+    
+    # Find the 雲利率 table
+    for table in tables:
+        table_str = str(table)
+        
+        # 雲利率 table has distinctive format with higher rates
+        # HKD: 3個月 2.60%, 6個月 1.50%, 12個月 0.80-0.95%
+        # USD: 3個月 3.60-3.80%, 6個月 3.90%
+        # CNY: 3個月 1.00%, 6個月 1.35%, 12個月 1.20%
+        
+        if '定期存款（雲利率）' in table_str or '港元' in table_str and '3個月' in table_str:
+            # Check if this is HKD, USD, or CNY section
+            if '港 元' in table_str:
+                hkd_rates = _parse_cloud_rates(table_str, '港 元')
+                if hkd_rates:
+                    rates['hkd'] = hkd_rates
+                    rates['hkd']['note'] = '雲利率（網上/流動理財）'
+            
+            if '美 元' in table_str:
+                usd_rates = _parse_cloud_rates(table_str, '美 元')
+                if usd_rates:
+                    rates['usd'] = usd_rates
+                    rates['usd']['note'] = '美元雲利率'
+            
+            if '人民幣' in table_str:
+                cny_rates = _parse_cloud_rates(table_str, '人民幣')
+                if cny_rates:
+                    rates['cny'] = cny_rates
+                    rates['cny']['note'] = '人民幣雲利率'
+    
     if rates:
-        rates['note'] = '雲利率（網上/流動理財）'
+        rates['note'] = '創興銀行雲利率（網上/流動理財）'
         return rates
-    return None
+    
+    # Fallback to 牌價 rates
+    for table in tables:
+        table_str = str(table)
+        if '定期存款（牌價）' in table_str:
+            if '港 元' in table_str:
+                hkd_rates = _parse_board_rates(table_str, '港 元')
+                if hkd_rates:
+                    rates['hkd'] = hkd_rates
+                    rates['hkd']['note'] = '牌價利率'
+    
+    return rates if rates else None
 
 
-def _parse_xml():
-    """Fallback: parse XML for board rates (牌價)."""
-    try:
-        import xml.etree.ElementTree as ET
-
-        result = subprocess.run(
-            ['curl', '-sL', '--max-time', '15', XML_URL],
-            capture_output=True, timeout=20
-        )
-        xml_content = result.stdout.decode('utf-8', errors='ignore')
-        if not xml_content or '<root>' not in xml_content:
-            return None
-
-        root = ET.fromstring(xml_content)
-        rates = {}
-
-        period_map = {
-            'sevenday': '1w', 'fourteenday': '2w',
-            'onemonth': '1m', 'twomonth': '2m', 'threemonth': '3m',
-            'sixmonth': '6m', 'ninemonth': '9m', 'oneyear': '12m',
-        }
-
-        for currency in root.findall('currency'):
-            name = currency.get('name')
-            if name not in ['HKD', 'USD', 'RMB']:
-                continue
-            curr_key = 'cny' if name == 'RMB' else name.lower()
-            curr_rates = {}
-            units = currency.findall('unit')
-            if not units:
-                continue
-            # Take highest tier
-            last_unit = units[-1]
-            tenor = last_unit.find('tenor')
-            if tenor is None:
-                continue
-            for period_elem in tenor:
-                pk = period_map.get(period_elem.tag)
-                if pk:
-                    try:
-                        rate = float(period_elem.text)
-                        if rate > 0:
-                            curr_rates[pk] = rate
-                    except (ValueError, TypeError):
-                        pass
-            if curr_rates:
-                rates[curr_key] = curr_rates
-
-        if rates:
-            rates['note'] = '牌價利率（備用）'
-            return rates
+def _parse_cloud_rates(table_str, currency_label):
+    """Parse 雲利率 for a specific currency.
+    
+    Format: 港 元 5,000 至 49,999 0.0010 0.0100 0.0100 2.4500 2.5000 2.6000 1.5000 0.9000 0.8000 0.2000
+    Columns: 1天 7天 14天 1個月 2個月 3個月 6個月 9個月 12個月 24個月
+    Indices:  3   4    5     6     7     8     9    10    11     12
+    """
+    rates = {}
+    
+    # Find the currency section
+    idx = table_str.find(currency_label)
+    if idx < 0:
         return None
-    except Exception:
+    
+    # Get the section after currency label
+    section = table_str[idx:]
+    
+    # Split into lines and find rate values
+    lines = section.split('\n')
+    
+    # Column indices for periods (0-indexed from start of rate values)
+    period_map = {
+        '3m': 5,   # 3個月
+        '6m': 6,   # 6個月
+        '12m': 8,  # 12個月
+    }
+    
+    # Find all numeric values
+    values = []
+    for line in lines:
+        nums = re.findall(r'[\d.]+', line)
+        values.extend([float(n) for n in nums if float(n) > 0])
+    
+    # Extract rates for each period (use highest tier)
+    for period, col_idx in period_map.items():
+        if col_idx < len(values):
+            rate = values[col_idx]
+            if rate > 0.5:  # Reasonable rate threshold
+                rates[period] = rate
+    
+    return rates if rates else None
+
+
+def _parse_board_rates(table_str, currency_label):
+    """Parse 牌價 rates (standard rates)."""
+    rates = {}
+    
+    # Similar logic but for board rates which are lower
+    idx = table_str.find(currency_label)
+    if idx < 0:
         return None
+    
+    section = table_str[idx:idx+2000]
+    
+    # Look for pattern: 港 元 5,000 至 99,999 0.0010 0.0100 0.0100 0.1000 0.1000 0.1200 ...
+    # We want 3m, 6m, 12m
+    m = re.search(r'(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)', section)
+    if m:
+        # These are 1天 7天 14天 1個月 2個月 3個月
+        rates['3m'] = float(m.group(6))
+    
+    return rates if rates else None
