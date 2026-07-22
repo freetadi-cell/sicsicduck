@@ -1,55 +1,131 @@
 #!/usr/bin/env python3
 """
-Fetch US Treasury yields from Yahoo Finance
+Fetch US Treasury yields from U.S. Treasury Department (treasury.gov)
 Updates every 10 minutes via cron
 Stores 30 days history
 """
 
 import json
-import yfinance as yf
 from datetime import datetime, timedelta
 from pathlib import Path
+from playwright.sync_api import sync_playwright
+import time
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 YIELDS_FILE = DATA_DIR / "treasury_yields.json"
 
-# Treasury yield tickers (ordered by maturity)
-YIELD_TICKERS = {
-    "3M": "^IRX",    # 3 Month (13-week)
-    "5Y": "^FVX",    # 5 Year
-    "10Y": "^TNX",   # 10 Year
-    "30Y": "^TYX",   # 30 Year
-}
+# Maturities to fetch (ordered)
+MATURITIES = ["3M", "2Y", "5Y", "10Y", "30Y"]
 
-def fetch_yields():
-    """Fetch current treasury yields from Yahoo Finance"""
-    print("Fetching US Treasury yields from Yahoo Finance...")
+
+def fetch_yields_from_treasury_gov():
+    """Fetch all treasury yields from treasury.gov"""
+    print("Fetching US Treasury yields from treasury.gov...")
     
     yields = {}
     
-    for maturity, ticker in YIELD_TICKERS.items():
-        try:
-            print(f"  Fetching {maturity} ({ticker})...")
-            stock = yf.Ticker(ticker)
-            hist = stock.history(period="1d")
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            )
+            page = context.new_page()
             
-            if not hist.empty:
-                close_price = hist['Close'].iloc[-1]
-                yields[maturity] = {
-                    "yield": round(float(close_price), 3),
-                    "ticker": ticker,
-                    "source": "Yahoo Finance"
-                }
-                print(f"    {maturity}: {close_price:.3f}%")
-            else:
-                print(f"    No data for {maturity}")
+            try:
+                url = "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
+                print(f"  Fetching {url}")
+                page.goto(url, timeout=30000, wait_until='domcontentloaded')
+                time.sleep(2)
                 
-        except Exception as e:
-            print(f"    Error fetching {maturity}: {e}")
+                # Extract all yields using JavaScript
+                data = page.evaluate('''() => {
+                    const tables = document.querySelectorAll('table');
+                    if (tables.length < 2) return null;
+                    
+                    const table = tables[1];
+                    const rows = table.querySelectorAll('tr');
+                    
+                    if (rows.length < 2) return null;
+                    
+                    // Parse header row to find column indices
+                    const headerCells = rows[0].querySelectorAll('th, td');
+                    const headers = Array.from(headerCells).map(cell => cell.textContent.trim());
+                    
+                    // Map header names to maturity codes
+                    const maturityMap = {
+                        '1 Mo': '1M',
+                        '1.5 Mo': '1.5M',
+                        '2 Mo': '2M',
+                        '3 Mo': '3M',
+                        '4 Mo': '4M',
+                        '6 Mo': '6M',
+                        '1 Yr': '1Y',
+                        '2 Yr': '2Y',
+                        '3 Yr': '3Y',
+                        '5 Yr': '5Y',
+                        '7 Yr': '7Y',
+                        '10 Yr': '10Y',
+                        '20 Yr': '20Y',
+                        '30 Yr': '30Y'
+                    };
+                    
+                    // Find column indices for our target maturities
+                    const colIndices = {};
+                    for (let i = 0; i < headers.length; i++) {
+                        const h = headers[i];
+                        if (maturityMap[h]) {
+                            colIndices[maturityMap[h]] = i;
+                        }
+                    }
+                    
+                    // Get first data row (most recent)
+                    const dataCells = rows[1].querySelectorAll('td');
+                    const dateCell = dataCells[0]?.textContent.trim();
+                    
+                    // Extract yields
+                    const yields = {};
+                    for (const [maturity, colIdx] of Object.entries(colIndices)) {
+                        if (colIdx !== undefined && dataCells[colIdx]) {
+                            yields[maturity] = dataCells[colIdx].textContent.trim();
+                        }
+                    }
+                    
+                    return { date: dateCell, yields: yields };
+                }''')
+                
+                if data and data.get('yields'):
+                    print(f"  Date: {data.get('date', 'N/A')}")
+                    
+                    # Extract our target maturities
+                    for maturity in MATURITIES:
+                        value = data['yields'].get(maturity)
+                        if value:
+                            try:
+                                yield_val = float(value)
+                                yields[maturity] = {
+                                    "yield": round(yield_val, 3),
+                                    "ticker": "treasury.gov",
+                                    "source": "U.S. Treasury"
+                                }
+                                print(f"    {maturity}: {yield_val:.3f}%")
+                            except ValueError:
+                                print(f"    {maturity}: parse error ({value})")
+                        else:
+                            print(f"    {maturity}: not found")
+                else:
+                    print("  Could not extract data from treasury.gov")
+            
+            finally:
+                browser.close()
+    
+    except Exception as e:
+        print(f"  Error fetching from treasury.gov: {e}")
     
     return yields
+
 
 def save_yields(yields):
     """Save yields to JSON file with 30 days history"""
@@ -85,6 +161,7 @@ def save_yields(yields):
     data = {
         "last_updated": datetime.now().isoformat(),
         "timezone": "Asia/Hong_Kong",
+        "source": "U.S. Treasury Department (treasury.gov)",
         "current": yields,
         "history": history,
         "cache_duration_minutes": 10
@@ -95,6 +172,7 @@ def save_yields(yields):
     
     print(f"\nSaved yields to {YIELDS_FILE}")
     print(f"History: {len(history)} days")
+
 
 def update_html_page():
     """Update treasury-yields.html with latest data"""
@@ -189,8 +267,9 @@ def update_html_page():
     
     print(f"Updated {html_path}")
 
+
 def main():
-    yields = fetch_yields()
+    yields = fetch_yields_from_treasury_gov()
     
     if not yields:
         print("No yields fetched!")
@@ -225,6 +304,7 @@ def main():
             print(f"\nWarning: Git push failed: {push_result.stderr}")
     else:
         print("\nNo changes to commit (yields unchanged)")
+
 
 if __name__ == "__main__":
     main()
