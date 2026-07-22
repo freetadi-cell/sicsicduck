@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T11:37:17.739706+08:00",
+  "last_updated": "2026-07-22T13:47:13.810898+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -11272,6 +11272,44 @@
           "fund_type": null
         }
       }
+    },
+    {
+      "name": "中信銀行（國際）",
+      "name_en": "CNCBI",
+      "key": "cncbi",
+      "type": "virtual",
+      "logo_color": "#E60012",
+      "hkd": {
+        "6m": {
+          "new_customer": {
+            "rate": 0.033,
+            "min_deposit": 1000000,
+            "max_deposit": 2000000,
+            "note": "全新客戶 CITICfirst 新資金",
+            "source": "hket",
+            "conditions": [
+              "new_customer",
+              "citcfirst",
+              "new_funds"
+            ]
+          }
+        },
+        "12m": {
+          "new_funds": {
+            "rate": 0.0295,
+            "min_deposit": 10000,
+            "note": "手機銀行新資金",
+            "source": "hket",
+            "conditions": [
+              "mobile_banking",
+              "new_funds"
+            ]
+          }
+        }
+      },
+      "source": "HKET 2026-07-10",
+      "source_url": "https://wealth.hket.com/article/3909875",
+      "last_updated": "2026-07-22T13:47:13.810868+08:00"
     }
   ],
   "structure_version": "2.0",

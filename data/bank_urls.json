@@ -55,8 +55,10 @@
       "name_en": "CNCBI",
       "key": "cncbi",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909875",
         "general": "https://www.cncbinternational.com/personal/e-banking/inmotion/tc/offers/time_deposit/index.html"
-      }
+      },
+      "note": "官網被擋，使用 HKET 作為主要數據源"
     },
     {
       "name": "工銀亞洲",
@@ -121,7 +123,8 @@
       "key": "fusion",
       "urls": {
         "general": "https://www.fusionbank.com/deposit.html?lang=tc"
-      }
+      },
+      "note": "被騰訊雲 EdgeOne 安全防護阻擋，無法自動抓取，需手動訪問"
     },
     {
       "name": "象象銀行",

@@ -1,89 +1,91 @@
 """中信銀行（國際）CNCBI - Parser for time deposit rates.
 
-Uses two sources:
-1. inMotion promo page (new fund rates) - curl (doesn't need browser)
-2. Main rate table page (board rates) - browser scrape fallback (HKD + CNY)
+Data source: HKET (香港經濟日報)
+URL pattern: https://wealth.hket.com/article/XXXXXXX
+
+Since the official website is blocked (Access Denied), we use HKET as the primary source.
+
+Last update: 2026-07-10 from HKET
 """
 import re
-import subprocess
-import logging
-
-logger = logging.getLogger(__name__)
-
-PROMO_URL = 'https://www.cncbinternational.com/personal/e-banking/inmotion/tc/offers/time_deposit/index.html'
-
-
-def _fetch_promo_rates():
-    """Try to fetch promo rates via curl (browser is blocked by CNCBI WAF)."""
-    try:
-        result = subprocess.run(
-            ['curl', '-sL', '--max-time', '15', PROMO_URL],
-            capture_output=True, timeout=20
-        )
-        html = result.stdout.decode('utf-8', errors='ignore')
-        if 'Access Denied' in html or len(html) < 200:
-            return None
-        return html
-    except Exception as e:
-        logger.debug(f"CNCBI promo fetch failed: {e}")
-        return None
 
 
 def parse(text, tables=None, html=None):
-    """Parse CNCBI time deposit rates (HKD, USD, CNY).
+    """Parse CNCBI time deposit rates from HKET article.
     
-    First try promo rates from inMotion page (via curl, no browser needed).
-    Then fall back to board rates from rate table page (via browser scrape).
+    Expected format from HKET:
+    - 全新客戶: 6個月 3.30% (100萬-200萬)
+    - 現有客戶新資金: 12個月 2.95%
+    - 現有資金: 12個月 2.90%
     """
-    rates = {}
-    
-    # Try promo rates first (doesn't need browser text)
-    promo_html = _fetch_promo_rates()
-    if promo_html:
-        promo_text = re.sub(r'<[^>]+>', ' ', promo_html)
-        promo_text = re.sub(r'\s+', ' ', promo_text)
-        
-        pcts = re.findall(r'高達\s*(\d+\.\d+)%', promo_text)
-        if len(pcts) >= 1:
-            rates['hkd'] = {'3m': float(pcts[0])}
-            if len(pcts) >= 2:
-                rates['usd'] = {'3m': float(pcts[1])}
-            rates['note'] = 'inMotion新資金定期存款特惠年利率'
-            # Don't return yet — try to also get CNY
-    
-    # Board rates from rate table page (needs browser text)
     if not text:
-        if rates:
-            return rates
         return None
     
-    board_idx = text.find('定期存款利率')
-    if board_idx >= 0:
-        section = text[board_idx:board_idx + 3000]
+    rates = {}
+    
+    # Parse HKET article text
+    lines = text.split('\n')
+    
+    # Track which section we're in
+    current_section = None
+    
+    for line in lines:
+        line = line.strip()
         
-        # HKD rates
-        hkd_rates = {}
-        for period, label in [('1m', '一個月'), ('3m', '三個月'), ('6m', '六個月'), ('12m', '十二個月')]:
-            m = re.search(rf'{label}\s+(\d+\.\d+)%', section)
-            if m:
-                hkd_rates[period] = float(m.group(1))
-        if hkd_rates and 'hkd' not in rates:
-            rates['hkd'] = hkd_rates
-            rates['note'] = '定期存款利率'
+        # Detect section headers
+        if '全新客戶' in line and '新資金' in line:
+            current_section = 'new_customer'
+        elif '現有客戶' in line and '新資金' in line:
+            current_section = 'new_funds'
+        elif '現有資金' in line:
+            current_section = 'existing_funds'
         
-        # CNY (人民幣) rates - same table structure
-        cny_idx = section.find('人民幣')
-        if cny_idx >= 0:
-            cny_section = section[cny_idx:cny_idx+1500]
-            cny_rates = {}
-            for period, label in [('1m', '一個月'), ('3m', '三個月'), ('6m', '六個月'), ('12m', '十二個月')]:
-                m = re.search(rf'{label}\s+(\d+\.\d+)%', cny_section)
-                if m:
-                    cny_rates[period] = float(m.group(1))
-            if cny_rates:
-                rates['cny'] = cny_rates
-                rates['cny_note'] = '定期存款利率（人民幣）'
+        # Extract rates
+        if '%' in line:
+            # Pattern: 6個月 3.30% or 12個月 2.95%
+            # Try to extract period and rate
+            period_match = re.search(r'(\d+)個月', line)
+            rate_match = re.search(r'(\d+\.?\d*)%', line)
+            
+            if period_match and rate_match:
+                period = f"{period_match.group(1)}m"
+                rate = float(rate_match.group(1)) / 100
+                
+                # Also try to extract deposit amount
+                amount_match = re.search(r'(\d+)萬元.*?(\d+)萬元', line)
+                min_amount = None
+                max_amount = None
+                if amount_match:
+                    min_amount = int(amount_match.group(1)) * 10000
+                    max_amount = int(amount_match.group(2)) * 10000
+                
+                # Add to appropriate section
+                if 'hkd' not in rates:
+                    rates['hkd'] = {}
+                
+                if period not in rates['hkd']:
+                    rates['hkd'][period] = {}
+                
+                if current_section:
+                    section_data = {'rate': rate, 'source': 'hket'}
+                    if min_amount:
+                        section_data['min_deposit'] = min_amount
+                    if max_amount:
+                        section_data['max_deposit'] = max_amount
+                    
+                    rates['hkd'][period][current_section] = section_data
     
     if rates:
+        rates['note'] = '中信銀行（國際）港元定期存款（來源：HKET）'
         return rates
     return None
+
+
+def parse_hket_url(url):
+    """Fetch and parse CNCBI rates from HKET article URL.
+    
+    This is a convenience function for the scraper to use.
+    """
+    # The scraper should use web_fetch to get the article content
+    # and then pass it to parse()
+    pass
