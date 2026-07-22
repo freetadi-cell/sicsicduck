@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-更新租金收入數據 - 從中原網站攞取
+更新租金收入數據 - 從中原網站攞取（用 Playwright）
 用法:
   python3 update_rental_income.py --price   # 只更新呎價
   python3 update_rental_income.py --rent    # 更新呎租（同時更新呎價）
   python3 update_rental_income.py --all     # 全部更新
 """
-import subprocess, json, sys, os, re
+import json, sys, os, re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from playwright.sync_api import sync_playwright
 
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / 'data'
@@ -26,45 +27,6 @@ def log(msg):
     with open(LOG_PATH, 'a', encoding='utf-8') as f:
         f.write(line + '\n')
 
-def ab(cmd, timeout=30):
-    """Run agent-browser command"""
-    result = subprocess.run(
-        f'agent-browser {cmd}',
-        shell=True, capture_output=True, text=True, timeout=timeout
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"agent-browser failed: {cmd}\n{result.stderr}")
-    return result.stdout
-
-def ab_eval(js, timeout=15):
-    """Run JS eval via agent-browser, parse JSON result"""
-    # Escape single quotes in JS
-    js_safe = js.replace("'", "'\\''")
-    result = subprocess.run(
-        f"agent-browser eval '{js_safe}'",
-        shell=True, capture_output=True, text=True, timeout=timeout
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"eval failed: {result.stderr}")
-    raw = result.stdout.strip()
-    # The output is a JSON string wrapped in quotes
-    try:
-        return json.loads(json.loads(raw) if raw.startswith('"') else raw)
-    except json.JSONDecodeError:
-        # Try direct parse
-        return json.loads(raw)
-
-FIND_TABLE_JS = """
-const nuxt = document.querySelector("#__nuxt").__vue__;
-function findTableData(c, depth=0) {
-  if (depth > 15) return null;
-  if (c.tableData && Array.isArray(c.tableData) && c.tableData.length > 0) return c.tableData;
-  if (c.$children) { for (const child of c.$children) { const r = findTableData(child, depth+1); if (r) return r; } }
-  return null;
-}
-JSON.stringify(findTableData(nuxt));
-"""
-
 PRICE_EXTRACT_JS = """
 const nuxt = document.querySelector("#__nuxt").__vue__;
 function findTableData(c, depth=0) {
@@ -73,7 +35,8 @@ function findTableData(c, depth=0) {
   if (c.$children) { for (const child of c.$children) { const r = findTableData(child, depth+1); if (r) return r; } }
   return null;
 }
-JSON.stringify(findTableData(nuxt).map(e => ({name: e.name, price: e.index, district: e.district})));
+const data = findTableData(nuxt);
+JSON.stringify(data.map(e => ({name: e.name, price: e.index, district: e.district})));
 """
 
 RENT_EXTRACT_JS = """
@@ -84,101 +47,113 @@ function findTableData(c, depth=0) {
   if (c.$children) { for (const child of c.$children) { const r = findTableData(child, depth+1); if (r) return r; } }
   return null;
 }
-JSON.stringify(findTableData(nuxt).map(e => ({name: e.name, rent: e.index, district: e.district, yield: e.yield})));
+const data = findTableData(nuxt);
+JSON.stringify(data.map(e => ({name: e.name, rent: e.index, district: e.district, yield: e.yield})));
 """
 
 def scrape_prices():
-    """Scrape CCI estate prices from all 4 districts"""
+    """Scrape CCI estate prices from all 4 districts using Playwright"""
     log("開始攞呎價數據...")
-    try:
-        ab("open 'https://hk.centanet.com/CCI/index' --timeout 30000")
-        ab("wait 3000")
-    except Exception as e:
-        log(f"開頁失敗: {e}")
-        return {}
-
     all_prices = {}
-    tabs = None
-
-    for attempt in range(3):
+    
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        )
+        page = context.new_page()
+        
         try:
-            out = ab("snapshot -i -c -s '.el-tabs'", timeout=10)
-            tabs = re.findall(r'tab\s+"[^"]*"\s+\[ref=(\w+)\]', out)
-            if len(tabs) >= 4:
-                break
-        except:
-            pass
-        ab("wait 2000")
-
-    if not tabs or len(tabs) < 4:
-        log(f"搵唔到分區 tabs，嘗試用預設 refs")
-        tabs = ['e1', 'e2', 'e3', 'e4']
-
-    for i, ref in enumerate(tabs):
-        district_names = ['港島', '九龍', '新界東', '新界西']
-        try:
-            if i > 0:
-                ab(f"click @{ref}")
-                ab("wait 2000")
-            data = ab_eval(PRICE_EXTRACT_JS)
-            for e in data:
-                all_prices[e['name']] = {'price': e['price'], 'district': e['district']}
-            log(f"  {district_names[i]}: {len(data)} 個屋苑")
+            log("  開啟中原 CCI 頁面...")
+            page.goto('https://hk.centanet.com/CCI/index', timeout=30000, wait_until='networkidle')
+            page.wait_for_timeout(5000)
+            
+            # Find district tabs (correct selectors from inspection)
+            tabs = ['tab-HK', 'tab-KL', 'tab-NE', 'tab-NW']
+            district_names = ['港島', '九龍', '新界東', '新界西']
+            
+            for i, tab_id in enumerate(tabs):
+                try:
+                    if i > 0:
+                        # Click on the tab
+                        page.click(f'#{tab_id}')
+                        page.wait_for_timeout(3000)
+                    
+                    # Extract data using JavaScript
+                    data = page.evaluate(PRICE_EXTRACT_JS)
+                    
+                    # Parse JSON string if needed
+                    if isinstance(data, str):
+                        import json
+                        data = json.loads(data)
+                    
+                    for e in data:
+                        all_prices[e['name']] = {'price': e['price'], 'district': e['district']}
+                    
+                    log(f"  {district_names[i]}: {len(data)} 個屋苑")
+                    
+                except Exception as e:
+                    log(f"  {district_names[i]} 失敗: {e}")
+        
         except Exception as e:
-            log(f"  {district_names[i]} 失敗: {e}")
-
-    try:
-        ab("close")
-    except:
-        pass
-
+            log(f"開頁失敗: {e}")
+        
+        finally:
+            browser.close()
+    
     log(f"呎價數據合共 {len(all_prices)} 個屋苑")
     return all_prices
 
 def scrape_rents():
-    """Scrape CRI rental data from all 4 districts"""
+    """Scrape CRI rental data from all 4 districts using Playwright"""
     log("開始攞呎租數據...")
-    try:
-        ab("open 'https://hk.centanet.com/CCI/CRI' --timeout 30000")
-        ab("wait 3000")
-    except Exception as e:
-        log(f"開頁失敗: {e}")
-        return {}
-
     all_rents = {}
-    tabs = None
-
-    for attempt in range(3):
+    
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        )
+        page = context.new_page()
+        
         try:
-            out = ab("snapshot -i -c -s '.el-tabs'", timeout=10)
-            tabs = re.findall(r'tab\s+"[^"]*"\s+\[ref=(\w+)\]', out)
-            if len(tabs) >= 4:
-                break
-        except:
-            pass
-        ab("wait 2000")
-
-    if not tabs or len(tabs) < 4:
-        tabs = ['e1', 'e2', 'e3', 'e4']
-
-    for i, ref in enumerate(tabs):
-        district_names = ['港島', '九龍', '新界東', '新界西']
-        try:
-            if i > 0:
-                ab(f"click @{ref}")
-                ab("wait 2000")
-            data = ab_eval(RENT_EXTRACT_JS)
-            for e in data:
-                all_rents[e['name']] = {'rent': e['rent'], 'yield': e.get('yield'), 'district': e['district']}
-            log(f"  {district_names[i]}: {len(data)} 個屋苑")
+            log("  開啟中原 CRI 頁面...")
+            page.goto('https://hk.centanet.com/CCI/CRI', timeout=30000, wait_until='networkidle')
+            page.wait_for_timeout(5000)
+            
+            # Find district tabs (correct selectors from inspection)
+            tabs = ['tab-HK', 'tab-KL', 'tab-NE', 'tab-NW']
+            district_names = ['港島', '九龍', '新界東', '新界西']
+            
+            for i, tab_id in enumerate(tabs):
+                try:
+                    if i > 0:
+                        # Click on the tab
+                        page.click(f'#{tab_id}')
+                        page.wait_for_timeout(3000)
+                    
+                    # Extract data using JavaScript
+                    data = page.evaluate(RENT_EXTRACT_JS)
+                    
+                    # Parse JSON string if needed
+                    if isinstance(data, str):
+                        import json
+                        data = json.loads(data)
+                    
+                    for e in data:
+                        all_rents[e['name']] = {'rent': e['rent'], 'yield': e.get('yield'), 'district': e['district']}
+                    
+                    log(f"  {district_names[i]}: {len(data)} 個屋苑")
+                    
+                except Exception as e:
+                    log(f"  {district_names[i]} 失敗: {e}")
+        
         except Exception as e:
-            log(f"  {district_names[i]} 失敗: {e}")
-
-    try:
-        ab("close")
-    except:
-        pass
-
+            log(f"開頁失敗: {e}")
+        
+        finally:
+            browser.close()
+    
     log(f"呎租數據合共 {len(all_rents)} 個屋苑")
     return all_rents
 

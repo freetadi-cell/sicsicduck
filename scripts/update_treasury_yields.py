@@ -1,128 +1,108 @@
 #!/usr/bin/env python3
 """
-Fetch US Treasury yields from U.S. Treasury Department (treasury.gov)
+Fetch US Treasury YIELDS from FRED (Federal Reserve Economic Data)
 Updates every 10 minutes via cron
 Stores 30 days history
+
+Data source: FRED - Market Yield on US Treasury Securities
+- DGS3MO: 3-Month Treasury Yield
+- DGS2: 2-Year Treasury Yield
+- DGS5: 5-Year Treasury Yield
+- DGS10: 10-Year Treasury Yield
+- DGS30: 30-Year Treasury Yield
 """
 
 import json
+import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
-from playwright.sync_api import sync_playwright
-import time
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 YIELDS_FILE = DATA_DIR / "treasury_yields.json"
 
-# Maturities to fetch (ordered)
+# FRED Series IDs for Treasury Yields
+FRED_SERIES = ["DGS3MO", "DGS2", "DGS5", "DGS10", "DGS30"]
 MATURITIES = ["3M", "2Y", "5Y", "10Y", "30Y"]
 
 
-def fetch_yields_from_treasury_gov():
-    """Fetch all treasury yields from treasury.gov"""
-    print("Fetching US Treasury yields from treasury.gov...")
+def fetch_yields_from_fred():
+    """Fetch Treasury yields from FRED CSV using curl"""
+    print("Fetching US Treasury yields from FRED...")
     
     yields = {}
     
     try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(
-                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            )
-            page = context.new_page()
-            
-            try:
-                url = "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
-                print(f"  Fetching {url}")
-                page.goto(url, timeout=30000, wait_until='domcontentloaded')
-                time.sleep(2)
-                
-                # Extract all yields using JavaScript
-                data = page.evaluate('''() => {
-                    const tables = document.querySelectorAll('table');
-                    if (tables.length < 2) return null;
+        # Build FRED CSV URL
+        end_date = datetime.now()
+        start_date = end_date - timedelta(days=7)
+        
+        url = (f"https://fred.stlouisfed.org/graph/fredgraph.csv"
+               f"?id={','.join(FRED_SERIES)}"
+               f"&cosd={start_date.strftime('%Y-%m-%d')}"
+               f"&coed={end_date.strftime('%Y-%m-%d')}")
+        
+        print(f"  Fetching FRED CSV...")
+        
+        # Use curl to download CSV (most reliable method)
+        result = subprocess.run(
+            ["curl", "-s", "--max-time", "20", "-L", url],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        
+        if result.returncode != 0:
+            print(f"  Error: curl failed with code {result.returncode}")
+            return yields
+        
+        csv_text = result.stdout
+        lines = csv_text.strip().split('\n')
+        
+        if len(lines) < 2:
+            print("  Error: No data returned")
+            return yields
+        
+        # Parse header to get series order
+        header = lines[0].split(',')
+        series_list = [s.strip() for s in header[1:]]  # Skip date column
+        
+        print(f"  Series found: {series_list}")
+        
+        # Get last non-empty row
+        for line in reversed(lines[1:]):
+            parts = line.split(',')
+            if len(parts) >= 6:
+                # Check if all values are valid
+                valid = all(p.strip() and p.strip() != '.' for p in parts[1:])
+                if valid:
+                    date = parts[0].strip()
+                    print(f"  Date: {date}")
                     
-                    const table = tables[1];
-                    const rows = table.querySelectorAll('tr');
-                    
-                    if (rows.length < 2) return null;
-                    
-                    // Parse header row to find column indices
-                    const headerCells = rows[0].querySelectorAll('th, td');
-                    const headers = Array.from(headerCells).map(cell => cell.textContent.trim());
-                    
-                    // Map header names to maturity codes
-                    const maturityMap = {
-                        '1 Mo': '1M',
-                        '1.5 Mo': '1.5M',
-                        '2 Mo': '2M',
-                        '3 Mo': '3M',
-                        '4 Mo': '4M',
-                        '6 Mo': '6M',
-                        '1 Yr': '1Y',
-                        '2 Yr': '2Y',
-                        '3 Yr': '3Y',
-                        '5 Yr': '5Y',
-                        '7 Yr': '7Y',
-                        '10 Yr': '10Y',
-                        '20 Yr': '20Y',
-                        '30 Yr': '30Y'
-                    };
-                    
-                    // Find column indices for our target maturities
-                    const colIndices = {};
-                    for (let i = 0; i < headers.length; i++) {
-                        const h = headers[i];
-                        if (maturityMap[h]) {
-                            colIndices[maturityMap[h]] = i;
-                        }
-                    }
-                    
-                    // Get first data row (most recent)
-                    const dataCells = rows[1].querySelectorAll('td');
-                    const dateCell = dataCells[0]?.textContent.trim();
-                    
-                    // Extract yields
-                    const yields = {};
-                    for (const [maturity, colIdx] of Object.entries(colIndices)) {
-                        if (colIdx !== undefined && dataCells[colIdx]) {
-                            yields[maturity] = dataCells[colIdx].textContent.trim();
-                        }
-                    }
-                    
-                    return { date: dateCell, yields: yields };
-                }''')
-                
-                if data and data.get('yields'):
-                    print(f"  Date: {data.get('date', 'N/A')}")
-                    
-                    # Extract our target maturities
-                    for maturity in MATURITIES:
-                        value = data['yields'].get(maturity)
-                        if value:
-                            try:
-                                yield_val = float(value)
+                    for i, series_id in enumerate(series_list):
+                        value = parts[i + 1].strip()
+                        # Map series to maturity
+                        for j, sid in enumerate(FRED_SERIES):
+                            if sid == series_id:
+                                maturity = MATURITIES[j]
                                 yields[maturity] = {
-                                    "yield": round(yield_val, 3),
-                                    "ticker": "treasury.gov",
-                                    "source": "U.S. Treasury"
+                                    "yield": round(float(value), 3),
+                                    "date": date,
+                                    "series": series_id,
+                                    "source": "FRED (Federal Reserve)"
                                 }
-                                print(f"    {maturity}: {yield_val:.3f}%")
-                            except ValueError:
-                                print(f"    {maturity}: parse error ({value})")
-                        else:
-                            print(f"    {maturity}: not found")
-                else:
-                    print("  Could not extract data from treasury.gov")
-            
-            finally:
-                browser.close()
-    
+                                print(f"    {maturity}: {value}%")
+                                break
+                    break
+        
+        if not yields:
+            print("  Warning: Could not parse yield data")
+        
+    except subprocess.TimeoutExpired:
+        print("  Error: curl timeout (30s)")
     except Exception as e:
-        print(f"  Error fetching from treasury.gov: {e}")
+        print(f"  Error: {e}")
     
     return yields
 
@@ -161,7 +141,8 @@ def save_yields(yields):
     data = {
         "last_updated": datetime.now().isoformat(),
         "timezone": "Asia/Hong_Kong",
-        "source": "U.S. Treasury Department (treasury.gov)",
+        "source": "FRED - Federal Reserve Bank of St. Louis",
+        "description": "Market Yield on US Treasury Securities",
         "current": yields,
         "history": history,
         "cache_duration_minutes": 10
@@ -201,7 +182,7 @@ def update_html_page():
         except:
             formatted_date = date_str
         
-        # Get yields for each maturity (ordered by maturity: 3M, 2Y, 5Y, 10Y, 30Y)
+        # Get yields for each maturity
         y3m = yields.get("3M", {}).get("yield", "--")
         y2y = yields.get("2Y", {}).get("yield", "--")
         y5y = yields.get("5Y", {}).get("yield", "--")
@@ -269,7 +250,7 @@ def update_html_page():
 
 
 def main():
-    yields = fetch_yields_from_treasury_gov()
+    yields = fetch_yields_from_fred()
     
     if not yields:
         print("No yields fetched!")
