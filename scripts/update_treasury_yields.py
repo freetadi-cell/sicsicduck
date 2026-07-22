@@ -17,8 +17,7 @@ YIELDS_FILE = DATA_DIR / "treasury_yields.json"
 
 # Treasury yield tickers (ordered by maturity)
 YIELD_TICKERS = {
-    "3M": "^IRX",    # 3 Month
-    "2Y": "^FVX",    # 2 Year
+    "3M": "^IRX",    # 3 Month (13-week)
     "5Y": "^FVX",    # 5 Year
     "10Y": "^TNX",   # 10 Year
     "30Y": "^TYX",   # 30 Year

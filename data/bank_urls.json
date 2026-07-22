@@ -1,0 +1,198 @@
+{
+  "banks": [
+    {
+      "name": "滙豐銀行",
+      "name_en": "HSBC",
+      "key": "hsbc",
+      "urls": {
+        "hkd_rates": "https://www.hsbc.com.hk/zh-hk/accounts/offers/time-deposit/",
+        "usd_rates": "https://www.hsbc.com.hk/zh-hk/accounts/offers/time-deposit/",
+        "general": "https://www.hsbc.com.hk/zh-hk/accounts/offers/time-deposit/"
+      }
+    },
+    {
+      "name": "中銀香港",
+      "name_en": "BOCHK",
+      "key": "bochk",
+      "urls": {
+        "promotion": "https://www.bochk.com/sc/deposits/promotion/timedeposits.html",
+        "card_rates": "https://www.bochk.com/sc/investment/rates/deposit.html",
+        "general": "https://www.bochk.com/sc/deposits/promotion/timedeposits.html"
+      }
+    },
+    {
+      "name": "恒生銀行",
+      "name_en": "Hang Seng",
+      "key": "hangseng",
+      "urls": {
+        "general": "https://www.hangseng.com/zh-hk/personal/deposits/time-deposits/"
+      }
+    },
+    {
+      "name": "渣打銀行",
+      "name_en": "Standard Chartered",
+      "key": "sc",
+      "urls": {
+        "general": "https://www.sc.com/hk/zh/deposits/online-time-deposit/"
+      },
+      "note": "網上定期存款頁面"
+    },
+    {
+      "name": "星展銀行",
+      "name_en": "DBS",
+      "key": "dbs",
+      "urls": {
+        "general": "https://www.dbs.com.hk/personal-zh/deposits/fixed-deposits.page"
+      }
+    },
+    {
+      "name": "東亞銀行",
+      "name_en": "BEA",
+      "key": "bea",
+      "urls": {
+        "general": "https://www.hkbea.com/tc/personal/deposits/time-deposit.html"
+      }
+    },
+    {
+      "name": "中信銀行（國際）",
+      "name_en": "CNCBI",
+      "key": "cncbi",
+      "urls": {
+        "general": "https://www.cncbi.com.hk/tc/rates/deposit-rates.jsp"
+      },
+      "note": "存款利率頁面（網站可能不穩定）"
+    },
+    {
+      "name": "工銀亞洲",
+      "name_en": "ICBC",
+      "key": "icbc",
+      "urls": {
+        "general": "https://www.icbcasia.com/zh/deposit/"
+      }
+    },
+    {
+      "name": "富邦銀行",
+      "name_en": "Fubon",
+      "key": "fubon",
+      "urls": {
+        "general": "https://www.fubonbank.com.hk/tc/deposits/time-deposit"
+      }
+    },
+    {
+      "name": "交通銀行",
+      "name_en": "BOCOM",
+      "key": "bocomm",
+      "urls": {
+        "general": "https://www.bochk.com/sc/deposits/promotion/timedeposits.html"
+      },
+      "note": "Use BOCHK URL as fallback"
+    },
+    {
+      "name": "上海商業銀行",
+      "name_en": "Shacom",
+      "key": "shacom",
+      "urls": {
+        "general": "https://www.shacombank.com.hk/tc/personal/deposits/time-deposits"
+      },
+      "note": "SSL 憑證可能有問題"
+    },
+    {
+      "name": "大眾銀行",
+      "name_en": "Public Bank",
+      "key": "publicbank",
+      "urls": {
+        "general": "https://www.publicbank.com.hk/tc/deposit_rates"
+      },
+      "note": "網站可能不穩定"
+    },
+    {
+      "name": "招商永隆",
+      "name_en": "Wing Lung",
+      "key": "winglung",
+      "urls": {
+        "general": "https://www.winglungbank.com.hk/tc/deposit/time-deposit"
+      },
+      "note": "SSL 憑證可能有問題"
+    },
+    {
+      "name": "創興銀行",
+      "name_en": "CH Bank",
+      "key": "chbank",
+      "urls": {
+        "general": "https://www.chbank.com/tc/personal/deposits/time-deposit/"
+      },
+      "note": "網站可能不穩定"
+    },
+    {
+      "name": "富融銀行",
+      "name_en": "Fusion",
+      "key": "fusion",
+      "urls": {
+        "general": "https://www.fusionbank.com.hk/tc/deposits/time-deposit"
+      },
+      "note": "虛擬銀行"
+    },
+    {
+      "name": "象象銀行",
+      "name_en": "Airstar",
+      "key": "airstar",
+      "urls": {
+        "general": "https://www.airstarbank.com.hk/tc/rates/deposit-rates"
+      },
+      "note": "虛擬銀行"
+    },
+    {
+      "name": "眾安銀行",
+      "name_en": "ZA Bank",
+      "key": "za",
+      "urls": {
+        "general": "https://www.zabank.com.hk/tc/savings/time-deposit"
+      },
+      "note": "虛擬銀行"
+    },
+    {
+      "name": "平安數字銀行",
+      "name_en": "PAO Bank",
+      "key": "pao",
+      "urls": {
+        "general": "https://www.paobank.com.hk/tc/savings/time-deposit"
+      },
+      "note": "虛擬銀行（域名可能已變更）"
+    },
+    {
+      "name": "匯立銀行",
+      "name_en": "WeLab",
+      "key": "welab",
+      "urls": {
+        "general": "https://www.welab.bank/tc/savings/goSave"
+      },
+      "note": "虛擬銀行 - GoSave 產品"
+    },
+    {
+      "name": "理慧銀行",
+      "name_en": "Livi",
+      "key": "livi",
+      "urls": {
+        "general": "https://www.livibank.com/tc/savings/time-deposit"
+      },
+      "note": "虛擬銀行"
+    },
+    {
+      "name": "螞蟻銀行",
+      "name_en": "Ant Bank",
+      "key": "ant",
+      "urls": {
+        "general": "https://www.antbank.hk/tc/deposits/time-deposit"
+      }
+    },
+    {
+      "name": "集友銀行",
+      "name_en": "Chiyu",
+      "key": "chiyu",
+      "urls": {
+        "general": "https://www.chiyubank.com/tc/deposits/time-deposit"
+      }
+    }
+  ],
+  "last_updated": "2026-07-22"
+}
