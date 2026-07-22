@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-香港藍籌股息率數據更新腳本
+香港藍籌股息率數據更新腳本（Playwright 版本）
 使用 etnet.com.hk 獲取上一財政年度派息 + yfinance 獲取股價
 
 息率計算方法：
@@ -14,8 +14,13 @@ code = ticker number without .HK (e.g. 00005, 0941)
 每日 8:30 由 cron 執行
 """
 import yfinance as yf
-import json, os, re, logging, subprocess, time
+import json
+import os
+import re
+import logging
+import time
 from datetime import datetime, timezone, timedelta
+from playwright.sync_api import sync_playwright
 
 HKT = timezone(timedelta(hours=8))
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
@@ -67,76 +72,47 @@ sectors = {
 }
 
 ETNET_URL = 'https://www.etnet.com.hk/www/tc/stocks/realtime/quote_dividend.php?code={code}'
-RMB_HKD_RATE = 1.08  # 人民幣兌港元 (approx, etnet 用接近即時匯率轉換)
+RMB_HKD_RATE = 1.08  # 人民幣兌港元 (approx)
 
 
-def _run_browser(cmd, timeout=20):
-    """Run agent-browser command, return cleaned output or None."""
-    try:
-        r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=timeout)
-        if r.returncode == 0:
-            out = re.sub(r'\x1b\[[0-9;]*m', '', r.stdout).strip()
-            return out if out else None
-        return None
-    except Exception as e:
-        logger.warning(f"agent-browser error: {e}")
-        return None
-
-
-def get_last_fy_dividend_etnet(stock_code):
+def get_last_fy_dividend_etnet(page, stock_code):
     """
     Scrape etnet dividend page to get total dividends for the last completed fiscal year.
     
     Args:
+        page: Playwright page object
         stock_code: e.g. "00005", "0941" (without .HK)
     
     Returns:
         (total_hkd_div, fy_label) or (None, None)
-        fy_label e.g. "2025/12" meaning FY2025
     """
     try:
         url = ETNET_URL.format(code=stock_code)
+        logger.info(f"  Fetching {url}")
         
-        # Open page
-        _run_browser('agent-browser close', timeout=5)
-        time.sleep(1)
-        result = _run_browser(f'agent-browser open "{url}" --timeout 30000', timeout=35)
-        if not result:
-            return None, None
-        time.sleep(5)
+        page.goto(url, timeout=15000, wait_until='domcontentloaded')
+        time.sleep(1.5)  # Reduced wait time for speed
         
         # Get page text
-        raw = _run_browser('agent-browser eval "document.body.innerText.substring(0, 15000)"', timeout=10)
-        if not raw:
-            return None, None
-        
-        try:
-            text = json.loads(raw)
-        except:
-            text = raw.strip('"')
+        text = page.evaluate('() => document.body.innerText')
         
         if not text or '派息記錄' not in text:
+            logger.warning(f"  No dividend data found for {stock_code}")
             return None, None
         
-        # Extract dividend rows: each row has 財政年度 and 港元 amount
-        # Format: "22/04/2026\t2026/12\t第一次中期息美元 0.1\t14/05/2026\t..."
-        # Or: "07/08/2025\t2025/12\t中期息人民幣 2.508 或港元 2.75\t..."
-        
-        # Find all fiscal years and their HKD dividends
+        # Extract dividend rows
         fy_divs = {}  # fy_label -> [hkd_amounts]
         
         lines = text.split('\n')
         for line in lines:
             # Match fiscal year: YYYY/MM (e.g. 2025/12)
-            fy_match = re.search(r'(\d{4}/\d{2})\t', line)
+            fy_match = re.search(r'(\d{4}/\d{2})', line)
             if not fy_match:
                 continue
             
             fy = fy_match.group(1)
             
             # Extract HKD amount
-            # Pattern: 港元 X.XXX (or 港元X.XXX)
-            # Could be: "港元 3.522942" or "港元 2.75" or "港元 2.52"
             hkd_match = re.search(r'港元\s*(\d+\.?\d*)', line)
             if hkd_match:
                 amount = float(hkd_match.group(1))
@@ -144,12 +120,10 @@ def get_last_fy_dividend_etnet(stock_code):
                     fy_divs[fy] = []
                 fy_divs[fy].append(amount)
             else:
-                # Fallback: if no HKD amount, try RMB/CNY and convert
-                # Pattern: "人民幣 0.1169" or "人民幣0.1169"
+                # Fallback: RMB to HKD
                 rmb_match = re.search(r'人民幣\s*(\d+\.?\d*)', line)
                 if rmb_match:
                     rmb_amount = float(rmb_match.group(1))
-                    # Convert RMB to HKD (approx 1.07-1.08)
                     hkd_amount = rmb_amount * RMB_HKD_RATE
                     if fy not in fy_divs:
                         fy_divs[fy] = []
@@ -159,29 +133,21 @@ def get_last_fy_dividend_etnet(stock_code):
             return None, None
         
         # Determine last completed FY
-        # FY format "2025/12" means fiscal year ending Dec 2025
-        # Now is 2026-06, so last completed FY is 2025/12
-        # Sort FY labels and find the most recent completed one
         sorted_fys = sorted(fy_divs.keys(), reverse=True)
-        
-        # Parse FY: "2025/12" -> year=2025, month=12
         now = datetime.now(HKT)
         best_fy = None
+        
         for fy in sorted_fys:
             parts = fy.split('/')
             if len(parts) != 2:
                 continue
             fy_year, fy_month = int(parts[0]), int(parts[1])
-            
-            # A FY is "completed" if its end date is in the past
-            # FY 2025/12 ends Dec 2025 (which is in the past for June 2026)
             fy_end = datetime(fy_year, fy_month, 1, tzinfo=HKT) + timedelta(days=31)
             if fy_end < now:
                 best_fy = fy
                 break
         
         if best_fy is None:
-            # Fallback: just use the second most recent (first might be current FY)
             if len(sorted_fys) >= 2:
                 best_fy = sorted_fys[1]
             else:
@@ -194,7 +160,7 @@ def get_last_fy_dividend_etnet(stock_code):
         return total, best_fy
     
     except Exception as e:
-        logger.warning(f"etnet scrape error for {stock_code}: {e}")
+        logger.warning(f"  etnet scrape error for {stock_code}: {e}")
         return None, None
 
 
@@ -205,50 +171,71 @@ def get_price_yfinance(ticker):
         info = s.info
         price = info.get('currentPrice') or info.get('regularMarketPrice') or info.get('previousClose')
         return round(float(price), 2) if price else None
-    except:
+    except Exception as e:
+        logger.warning(f"  yfinance error for {ticker}: {e}")
         return None
 
 
 def main():
-    logger.info("Updating dividend stocks data (etnet FY method)...")
+    logger.info("=" * 60)
+    logger.info("HK Dividend Stocks Update (Playwright)")
+    logger.info(f"Time: {datetime.now(HKT).strftime('%Y-%m-%d %H:%M')}")
+    logger.info("=" * 60)
+    
     results = []
     failed = []
     
-    for ticker, name in sorted(hsi_stocks.items()):
-        code = ticker.replace('.HK', '')
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        )
+        page = context.new_page()
+        
+        # Pre-warm: visit etnet once to establish session
+        try:
+            page.goto('https://www.etnet.com.hk', timeout=10000, wait_until='domcontentloaded')
+            time.sleep(1)
+        except:
+            pass
         
         try:
-            # Get dividend from etnet
-            div, fy_label = get_last_fy_dividend_etnet(code)
-            price = get_price_yfinance(ticker)
-            
-            if div and div > 0 and price:
-                yld = (div / price) * 100
-                results.append({
-                    'ticker': code,
-                    'name': name,
-                    'price': price,
-                    'dividend': div,
-                    'yield': round(yld, 2),
-                    'fy': fy_label,
-                    'sector': sectors.get(ticker, '其他'),
-                    'div_source': 'etnet',
-                })
-                logger.info(f"  ✓ {code} {name}: FY{fy_label} div={div} HKD, price={price}, yield={yld:.2f}%")
-            elif price and (div is None or div == 0):
-                logger.warning(f"  ⚠ {code} {name}: no dividend data from etnet (price={price})")
-                failed.append(name)
-            else:
-                logger.warning(f"  ⚠ {code} {name}: no price (div={div})")
-                failed.append(name)
+            for ticker, name in sorted(hsi_stocks.items()):
+                code = ticker.replace('.HK', '').zfill(5)  # Ensure 5-digit code for etnet (e.g. 0011 -> 00011)
+                
+                try:
+                    # Get dividend from etnet
+                    div, fy_label = get_last_fy_dividend_etnet(page, code)
+                    price = get_price_yfinance(ticker)
+                    
+                    if div and div > 0 and price:
+                        yld = (div / price) * 100
+                        results.append({
+                            'ticker': code,
+                            'name': name,
+                            'price': price,
+                            'dividend': div,
+                            'yield': round(yld, 2),
+                            'fy': fy_label,
+                            'sector': sectors.get(ticker, '其他'),
+                            'div_source': 'etnet',
+                        })
+                        logger.info(f"  ✓ {code} {name}: FY{fy_label} div={div} HKD, price={price}, yield={yld:.2f}%")
+                    elif price and (div is None or div == 0):
+                        logger.warning(f"  ⚠ {code} {name}: no dividend data (price={price})")
+                        failed.append(name)
+                    else:
+                        logger.warning(f"  ⚠ {code} {name}: no price (div={div})")
+                        failed.append(name)
+                
+                except Exception as e:
+                    logger.warning(f"  ✗ {code} {name}: {e}")
+                    failed.append(name)
         
-        except Exception as e:
-            logger.warning(f"  ✗ {code} {name}: {e}")
-            failed.append(name)
+        finally:
+            browser.close()
     
-    # Close browser
-    _run_browser('agent-browser close', timeout=5)
-    
+    # Sort by yield descending
     results.sort(key=lambda x: x['yield'], reverse=True)
     
     data = {
@@ -263,9 +250,15 @@ def main():
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
-    logger.info(f"✅ Updated {len(results)} stocks, {len(failed)} skipped")
+    logger.info("")
+    logger.info("=" * 60)
+    logger.info(f"SCRAPE SUMMARY")
+    logger.info("=" * 60)
+    logger.info(f"  ✅ Updated: {len(results)} stocks")
+    logger.info(f"  ⚠ Skipped: {len(failed)} stocks")
     if failed:
-        logger.info(f"Skipped: {', '.join(failed)}")
+        logger.info(f"  Skipped: {', '.join(failed[:10])}{'...' if len(failed) > 10 else ''}")
+    logger.info(f"  Output: {DATA_FILE}")
 
 
 if __name__ == '__main__':
