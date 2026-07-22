@@ -137,8 +137,9 @@
       "name_en": "ZA Bank",
       "key": "za",
       "urls": {
-        "general": "https://www.zabank.com.hk/tc/savings/time-deposit"
-      }
+        "general": "https://bank.za.group/hk/deposit"
+      },
+      "note": "需要點擊「定期存款」tab 才能看到利率表"
     },
     {
       "name": "平安數字銀行",

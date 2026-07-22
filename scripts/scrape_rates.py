@@ -69,6 +69,21 @@ def scrape_bank(page, bank_info):
             page.goto(url, wait_until="domcontentloaded", timeout=30000)
             time.sleep(3)  # Wait for JS to render
             
+            # Special handling for ZA Bank - click "定期存款" tab to show rates
+            if key == 'za':
+                try:
+                    # Find and click the "定期存款" button (not the FAQ ones)
+                    buttons = page.locator('button').all()
+                    for btn in buttons:
+                        text = btn.inner_text().strip()
+                        if text == '定期存款':
+                            btn.click()
+                            logger.info(f"  [{key}] Clicked 定期存款 tab")
+                            time.sleep(2)  # Wait for table to update
+                            break
+                except Exception as e:
+                    logger.warning(f"  [{key}] Could not click 定期存款 tab: {e}")
+            
             # Check if page loaded successfully
             text = page.inner_text("body")
             
