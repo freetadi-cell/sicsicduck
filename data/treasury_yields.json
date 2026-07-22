@@ -1,29 +1,30 @@
 {
-  "last_updated": "2026-07-22T20:20:19.279908",
+  "last_updated": "2026-07-22T20:22:56.360088",
   "timezone": "Asia/Hong_Kong",
+  "source": "U.S. Treasury Department (treasury.gov)",
   "current": {
     "3M": {
-      "yield": 3.73,
-      "ticker": "^IRX",
-      "source": "Yahoo Finance"
-    },
-    "5Y": {
-      "yield": 4.37,
-      "ticker": "^FVX",
-      "source": "Yahoo Finance"
-    },
-    "10Y": {
-      "yield": 4.628,
-      "ticker": "^TNX",
-      "source": "Yahoo Finance"
-    },
-    "30Y": {
-      "yield": 5.13,
-      "ticker": "^TYX",
-      "source": "Yahoo Finance"
+      "yield": 3.65,
+      "ticker": "treasury.gov",
+      "source": "U.S. Treasury"
     },
     "2Y": {
       "yield": 3.47,
+      "ticker": "treasury.gov",
+      "source": "U.S. Treasury"
+    },
+    "5Y": {
+      "yield": 3.74,
+      "ticker": "treasury.gov",
+      "source": "U.S. Treasury"
+    },
+    "10Y": {
+      "yield": 4.19,
+      "ticker": "treasury.gov",
+      "source": "U.S. Treasury"
+    },
+    "30Y": {
+      "yield": 4.86,
       "ticker": "treasury.gov",
       "source": "U.S. Treasury"
     }
@@ -33,27 +34,27 @@
       "date": "2026-07-22",
       "yields": {
         "3M": {
-          "yield": 3.73,
-          "ticker": "^IRX",
-          "source": "Yahoo Finance"
-        },
-        "5Y": {
-          "yield": 4.37,
-          "ticker": "^FVX",
-          "source": "Yahoo Finance"
-        },
-        "10Y": {
-          "yield": 4.628,
-          "ticker": "^TNX",
-          "source": "Yahoo Finance"
-        },
-        "30Y": {
-          "yield": 5.13,
-          "ticker": "^TYX",
-          "source": "Yahoo Finance"
+          "yield": 3.65,
+          "ticker": "treasury.gov",
+          "source": "U.S. Treasury"
         },
         "2Y": {
           "yield": 3.47,
+          "ticker": "treasury.gov",
+          "source": "U.S. Treasury"
+        },
+        "5Y": {
+          "yield": 3.74,
+          "ticker": "treasury.gov",
+          "source": "U.S. Treasury"
+        },
+        "10Y": {
+          "yield": 4.19,
+          "ticker": "treasury.gov",
+          "source": "U.S. Treasury"
+        },
+        "30Y": {
+          "yield": 4.86,
           "ticker": "treasury.gov",
           "source": "U.S. Treasury"
         }
