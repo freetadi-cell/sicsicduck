@@ -5,9 +5,7 @@
       "name_en": "HSBC",
       "key": "hsbc",
       "urls": {
-        "hkd_rates": "https://www.hsbc.com.hk/zh-hk/accounts/offers/time-deposit/",
-        "usd_rates": "https://www.hsbc.com.hk/zh-hk/accounts/offers/time-deposit/",
-        "general": "https://www.hsbc.com.hk/zh-hk/accounts/offers/time-deposit/"
+        "general": "https://www.hsbc.com.hk/zh-hk/accounts/offers/deposits/#preferential-new-fund-time-deposit-offers"
       }
     },
     {
@@ -25,7 +23,7 @@
       "name_en": "Hang Seng",
       "key": "hangseng",
       "urls": {
-        "general": "https://www.hangseng.com/zh-hk/personal/deposits/time-deposits/"
+        "general": "https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html"
       }
     },
     {
@@ -41,7 +39,7 @@
       "name_en": "DBS",
       "key": "dbs",
       "urls": {
-        "general": "https://www.dbs.com.hk/personal-zh/deposits/fixed-deposits.page"
+        "general": "https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo"
       }
     },
     {
@@ -49,7 +47,7 @@
       "name_en": "BEA",
       "key": "bea",
       "urls": {
-        "general": "https://www.hkbea.com/tc/personal/deposits/time-deposit.html"
+        "general": "https://www.hkbea.com/html/tc/bea-personal-banking-supremegold-time-deposit.html"
       }
     },
     {
@@ -73,7 +71,7 @@
       "name_en": "Fubon",
       "key": "fubon",
       "urls": {
-        "general": "https://www.fubonbank.com.hk/tc/deposits/time-deposit"
+        "general": "https://www.fubonbank.com.hk/tc/deposit/latest-promotions/new-customers-promotion.html"
       }
     },
     {
