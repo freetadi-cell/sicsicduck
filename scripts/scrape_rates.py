@@ -134,12 +134,15 @@ def main():
     
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
         
         # Set a reasonable viewport
-        page.set_viewport_size({"width": 1280, "height": 800})
+        viewport = {"width": 1280, "height": 800}
         
         for bank_info in banks:
+            # Use a fresh page for each bank to avoid redirect conflicts
+            page = browser.new_page()
+            page.set_viewport_size(viewport)
+            
             result = scrape_bank(page, bank_info)
             results.append(result)
             
@@ -147,6 +150,10 @@ def main():
                 logger.info(f"  ✅ {result['name']} ({result['name_en']}) - scraped from {result['url_type']}")
             else:
                 logger.warning(f"  ❌ {bank_info['name']} ({bank_info['name_en']}) - all URLs failed")
+            
+            # Close page after each bank to prevent redirect conflicts
+            page.close()
+            time.sleep(1)  # Small delay between banks
         
         browser.close()
     

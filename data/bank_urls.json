@@ -145,9 +145,8 @@
       "name_en": "PAO Bank",
       "key": "pao",
       "urls": {
-        "general": "https://www.pingandb.com/tc/retail-savings.html"
-      },
-      "note": "平安數字銀行已改名為平安壹賬通銀行"
+        "general": "https://www.pingandb.com/tc/retail-td-newfund.html"
+      }
     },
     {
       "name": "匯立銀行",
@@ -178,7 +177,7 @@
       "name_en": "Chiyu",
       "key": "chiyu",
       "urls": {
-        "general": "https://www.chiyubank.com/tc/deposits/time-deposit"
+        "general": "https://www.chiyubank.com/cyb/index/zxxx/20230523/index.shtml"
       }
     }
   ],
