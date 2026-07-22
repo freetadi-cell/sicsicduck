@@ -56,8 +56,13 @@ def scrape_bank(page, bank_info):
     key = bank_info['key']
     urls = bank_info.get('urls', {})
     
-    # Try each URL in order: promotion -> hkd_rates -> card_rates -> general
-    url_priority = ['promotion', 'hkd_rates', 'card_rates', 'general']
+    # Check if bank has HKET URL (primary source for blocked banks)
+    # Banks with HKET URL should use it as primary source
+    if 'hket' in urls:
+        url_priority = ['hket', 'promotion', 'hkd_rates', 'card_rates', 'general']
+    else:
+        # Try each URL in order: promotion -> hkd_rates -> card_rates -> general
+        url_priority = ['promotion', 'hkd_rates', 'card_rates', 'general']
     
     for url_type in url_priority:
         url = urls.get(url_type)
