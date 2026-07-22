@@ -34,8 +34,7 @@
       "key": "sc",
       "urls": {
         "general": "https://www.sc.com/hk/zh/deposits/online-time-deposit/"
-      },
-      "note": "網上定期存款頁面"
+      }
     },
     {
       "name": "星展銀行",
@@ -58,9 +57,8 @@
       "name_en": "CNCBI",
       "key": "cncbi",
       "urls": {
-        "general": "https://www.cncbi.com.hk/tc/rates/deposit-rates.jsp"
-      },
-      "note": "存款利率頁面（網站可能不穩定）"
+        "general": "https://www.cncbinternational.com/personal/e-banking/inmotion/tc/offers/time_deposit/index.html"
+      }
     },
     {
       "name": "工銀亞洲",
@@ -92,54 +90,49 @@
       "name_en": "Shacom",
       "key": "shacom",
       "urls": {
-        "general": "https://www.shacombank.com.hk/tc/personal/deposits/time-deposits"
-      },
-      "note": "SSL 憑證可能有問題"
+        "general": "https://www.shacombank.com.hk/tch/personal/promotion/fix-rate.jsp"
+      }
     },
     {
       "name": "大眾銀行",
       "name_en": "Public Bank",
       "key": "publicbank",
       "urls": {
-        "general": "https://www.publicbank.com.hk/tc/deposit_rates"
-      },
-      "note": "網站可能不穩定"
+        "general": "https://www.publicbank.com.hk/tc/usefultools/rates/depositinterestrates"
+      }
     },
     {
       "name": "招商永隆",
       "name_en": "Wing Lung",
       "key": "winglung",
       "urls": {
-        "general": "https://www.winglungbank.com.hk/tc/deposit/time-deposit"
-      },
-      "note": "SSL 憑證可能有問題"
+        "general": "https://www.cmbwinglungbank.com/wlb_corporate/hk/personal/investments/financial-information/interest-rates/deposit-interest-rates.html"
+      }
     },
     {
       "name": "創興銀行",
       "name_en": "CH Bank",
       "key": "chbank",
       "urls": {
-        "general": "https://www.chbank.com/tc/personal/deposits/time-deposit/"
-      },
-      "note": "網站可能不穩定"
+        "general": "https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml"
+      }
     },
     {
       "name": "富融銀行",
       "name_en": "Fusion",
       "key": "fusion",
       "urls": {
-        "general": "https://www.fusionbank.com.hk/tc/deposits/time-deposit"
-      },
-      "note": "虛擬銀行"
+        "general": "https://www.fusionbank.com/deposit.html?lang=tc"
+      }
     },
     {
       "name": "象象銀行",
       "name_en": "Airstar",
       "key": "airstar",
       "urls": {
-        "general": "https://www.airstarbank.com.hk/tc/rates/deposit-rates"
+        "general": "https://www.elebank.com/zh-hk/hkprime.html"
       },
-      "note": "虛擬銀行"
+      "note": "象象銀行已改名為 elebank"
     },
     {
       "name": "眾安銀行",
@@ -147,35 +140,32 @@
       "key": "za",
       "urls": {
         "general": "https://www.zabank.com.hk/tc/savings/time-deposit"
-      },
-      "note": "虛擬銀行"
+      }
     },
     {
       "name": "平安數字銀行",
       "name_en": "PAO Bank",
       "key": "pao",
       "urls": {
-        "general": "https://www.paobank.com.hk/tc/savings/time-deposit"
+        "general": "https://www.pingandb.com/tc/retail-savings.html"
       },
-      "note": "虛擬銀行（域名可能已變更）"
+      "note": "平安數字銀行已改名為平安壹賬通銀行"
     },
     {
       "name": "匯立銀行",
       "name_en": "WeLab",
       "key": "welab",
       "urls": {
-        "general": "https://www.welab.bank/tc/savings/goSave"
-      },
-      "note": "虛擬銀行 - GoSave 產品"
+        "general": "https://www.welab.bank/zh/feature/gosave_2/"
+      }
     },
     {
       "name": "理慧銀行",
       "name_en": "Livi",
       "key": "livi",
       "urls": {
-        "general": "https://www.livibank.com/tc/savings/time-deposit"
-      },
-      "note": "虛擬銀行"
+        "general": "https://www.livibank.com/zh_HK/features/livisave.html"
+      }
     },
     {
       "name": "螞蟻銀行",
