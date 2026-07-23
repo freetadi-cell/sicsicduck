@@ -369,13 +369,40 @@ def main():
                                 **change
                             })
             
-            # Update rates.json structure
-            # (This is simplified - in production would merge properly)
+            # Update rates.json with new parsed data
+            # Find existing bank in old_rates or add new entry
+            bank_found = False
+            for i, bank in enumerate(old_rates.get('banks', [])):
+                if bank.get('key') == key or bank.get('name_en', '').lower().replace(' ', '') == key:
+                    # Update existing bank's rates
+                    if 'hkd' in parsed:
+                        old_rates['banks'][i]['hkd'] = {**bank.get('hkd', {}), **parsed['hkd']}
+                    if 'usd' in parsed:
+                        old_rates['banks'][i]['usd'] = {**bank.get('usd', {}), **parsed['usd']}
+                    if 'cny' in parsed:
+                        old_rates['banks'][i]['cny'] = {**bank.get('cny', {}), **parsed['cny']}
+                    bank_found = True
+                    break
+            
+            if not bank_found:
+                # Add new bank entry
+                if 'banks' not in old_rates:
+                    old_rates['banks'] = []
+                old_rates['banks'].append({
+                    'name': name,
+                    'name_en': scraped.get('name_en', ''),
+                    'key': key,
+                    **parsed
+                })
             
         except Exception as e:
             logger.error(f"  [{key}] Parser error: {e}")
             failed_banks.append({'name': name, 'key': key, 'reason': f'Parser 錯誤: {str(e)[:30]}', 'needs_retry': True})
             needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
+    
+    # Save updated rates to rates.json
+    save_rates(old_rates)
+    logger.info(f"✅ Updated {len(successful_banks)} banks in rates.json")
     
     # Save scraped content
     output = {
