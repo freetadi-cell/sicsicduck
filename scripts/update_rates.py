@@ -317,7 +317,7 @@ def main():
         
         try:
             # Parse the scraped content
-            parsed = parser(scraped)
+            parsed = parser(scraped['text'], tables=scraped.get('tables', []))
             
             if not parsed or (not parsed.get('hkd') and not parsed.get('usd') and not parsed.get('cny')):
                 logger.warning(f"  [{key}] Parser returned empty rates")

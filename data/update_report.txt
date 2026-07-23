@@ -1,58 +1,61 @@
 📊 **香港銀行定期存款利率更新報告**
-時間: 2026-07-23 08:34
+時間: 2026-07-23 08:39
 
-✅ **成功抓取 (0 間)**
+✅ **成功抓取 (11 間)**
+  • 中銀香港
+  • 恒生銀行
+  • 渣打銀行
+  • 星展銀行
+  • 東亞銀行
+  • 富邦銀行
+  • 上海商業銀行
+  • 大眾銀行
+  • 象象銀行
+  • 眾安銀行
+  • 理慧銀行
 
-❌ **抓取失敗 (22 間)**
-  • 滙豐銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 中銀香港 — Parser 錯誤: 'dict' object has no attribute
-  • 恒生銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 渣打銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 星展銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 東亞銀行 — Parser 錯誤: expected string or bytes-like 
-  • 中信銀行（國際） — Parser 錯誤: 'dict' object has no attribute
+❌ **抓取失敗 (11 間)**
+  • 滙豐銀行 — Parser 返回空數據，可能需要 browser retry
+  • 中信銀行（國際） — Parser 返回空數據，可能需要 browser retry
   • 工銀亞洲 — Parser 返回空數據，可能需要 browser retry
-  • 富邦銀行 — Parser 錯誤: 'dict' object has no attribute
   • 交通銀行 — Parser 返回空數據，可能需要 browser retry
-  • 上海商業銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 大眾銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 招商永隆 — Parser 錯誤: 'dict' object has no attribute
-  • 創興銀行 — Parser 返回空數據，可能需要 browser retry
-  • 富融銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 象象銀行 — Parser 返回空數據，可能需要 browser retry
-  • 眾安銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 平安數字銀行 — Parser 錯誤: 'dict' object has no attribute
-  • 匯立銀行 — Parser 錯誤: expected string or bytes-like 
-  • 理慧銀行 — Parser 返回空數據，可能需要 browser retry
-  • 螞蟻銀行 — Parser 錯誤: 'dict' object has no attribute
+  • 招商永隆 — Parser 返回空數據，可能需要 browser retry
+  • 創興銀行 — Parser 錯誤: could not convert string to fl
+  • 富融銀行 — Parser 返回空數據，可能需要 browser retry
+  • 平安數字銀行 — Parser 返回空數據，可能需要 browser retry
+  • 匯立銀行 — Parser 返回空數據，可能需要 browser retry
+  • 螞蟻銀行 — Parser 返回空數據，可能需要 browser retry
   • 集友銀行 — Parser 返回空數據，可能需要 browser retry
 
-🔧 **需要 Agent Browser Retry (22 間)**
+🔧 **需要 Agent Browser Retry (11 間)**
   • 滙豐銀行 — URL: https://www.hsbc.com.hk/zh-hk/accounts/offers/deposits/#preferential-new-fund-time-deposit-offers
-  • 中銀香港 — URL: https://www.bochk.com/sc/deposits/promotion/timedeposits.html
-  • 恒生銀行 — URL: https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html
-  • 渣打銀行 — URL: https://www.sc.com/hk/zh/deposits/online-time-deposit/
-  • 星展銀行 — URL: https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo
-  • 東亞銀行 — URL: https://www.hkbea.com/html/tc/bea-personal-banking-supremegold-time-deposit.html
   • 中信銀行（國際） — URL: https://wealth.hket.com/article/3909875
   • 工銀亞洲 — URL: https://www.icbcasia.com/zh/deposit/
-  • 富邦銀行 — URL: https://www.fubonbank.com.hk/tc/deposit/latest-promotions/new-customers-promotion.html
   • 交通銀行 — URL: https://www.hk.bankcomm.com/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml
-  • 上海商業銀行 — URL: https://www.shacombank.com.hk/tch/personal/promotion/fix-rate.jsp
-  • 大眾銀行 — URL: https://www.publicbank.com.hk/tc/usefultools/rates/depositinterestrates
   • 招商永隆 — URL: https://www.cmbwinglungbank.com/wlb_corporate/hk/personal/investments/financial-information/interest-rates/deposit-interest-rates.html
   • 創興銀行 — URL: https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml
   • 富融銀行 — URL: https://wealth.hket.com/article/3909899
-  • 象象銀行 — URL: https://www.elebank.com/zh-hk/hkprime.html
-  • 眾安銀行 — URL: https://bank.za.group/hk/deposit
   • 平安數字銀行 — URL: https://www.pingandb.com/tc/retail-td-newfund.html
   • 匯立銀行 — URL: https://www.welab.bank/zh/feature/gosave_2/
-  • 理慧銀行 — URL: https://www.livibank.com/zh_HK/features/livisave.html
   • 螞蟻銀行 — URL: https://wealth.hket.com/article/3909930
   • 集友銀行 — URL: https://www.chiyubank.com/cyb/index/zxxx/20230523/index.shtml
 
 💡 **建議**: 需要手動用 agent browser 去提取呢啲銀行嘅利率
 
-📉 **利率變動**: 無變動
+📈 **利率變動 (14 項)**
+  • 恒生銀行 HKD 6m: 2.2% → 2.4% (⬆️0.2%)
+  • 恒生銀行 USD 6m: 3.2% → 3.4% (⬆️0.2%)
+  • 星展銀行 HKD 4m: 2.45% → 2.5% (⬆️0.05%)
+  • 星展銀行 HKD 6m: 2.5% → 3.2% (⬆️0.7%)
+  • 東亞銀行 HKD 3m: 2.65% → 3.05% (⬆️0.4%)
+  • 東亞銀行 HKD 3m: 2.65% → 2.95% (⬆️0.3%)
+  • 東亞銀行 HKD 6m: 2.45% → 2.65% (⬆️0.2%)
+  • 東亞銀行 HKD 6m: 2.45% → 2.55% (⬆️0.1%)
+  • 東亞銀行 USD 3m: 3.75% → 3.6% (⬇️0.15%)
+  • 東亞銀行 USD 3m: 3.75% → 3.5% (⬇️0.25%)
+  • 東亞銀行 USD 6m: 3.75% → 3.6% (⬇️0.15%)
+  • 東亞銀行 USD 6m: 3.75% → 3.5% (⬇️0.25%)
+  • 東亞銀行 USD 12m: 3.75% → 3.6% (⬇️0.15%)
+  • 東亞銀行 USD 12m: 3.75% → 3.5% (⬇️0.25%)
 
-總計: 0/22 成功
+總計: 11/22 成功
