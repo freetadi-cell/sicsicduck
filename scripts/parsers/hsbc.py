@@ -12,9 +12,9 @@ import re
 def parse(text, tables=None, html=None):
     """Parse HSBC HK deposit rates.
     
-    Page structure:
-    1. RewardCash Time Deposit (新資金手機App優惠)
-    2. Preferential New Fund Time Deposit Rates (新資金定期優惠)
+    Page structure (Chinese):
+    1. 「獎賞錢」定期存款 – 新資金流動理財優惠 (RewardCash Time Deposit)
+    2. 新資金定期存款優惠 (Preferential New Fund Time Deposit)
     3. Exchange rate promo (兌換資金優惠)
     """
     rates = {}
@@ -22,73 +22,136 @@ def parse(text, tables=None, html=None):
     if not text:
         return None
     
-    # === RewardCash section ===
-    rc_end = text.find('Preferential New Fund')
+    # === RewardCash section (「獎賞錢」) ===
+    rc_end = text.find('新資金定期存款優惠')
+    if rc_end < 0:
+        rc_end = text.find('Preferential New Fund')
     rc_text = text[:rc_end] if rc_end > 0 else text
     
     hkd_rc = {}
     usd_rc = {}
     
-    # Find HKD RewardCash rates
-    hkd_match = re.search(r'HKD.*?Equivalent interest rate.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
+    # Find HKD RewardCash rates (Chinese: 等值年利率)
+    hkd_match = re.search(r'港元.*?等值年利率.*?((?:\d+個?月\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
     if hkd_match:
         block = hkd_match.group(1)
-        for period, label in [('3m', '3 months'), ('6m', '6 months')]:
+        for period, label in [('3m', '3個月'), ('6m', '6個月')]:
             m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
             if m:
                 hkd_rc[period] = float(m.group(1))
+    # Fallback English
+    if not hkd_rc:
+        hkd_match = re.search(r'HKD.*?Equivalent interest rate.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
+        if hkd_match:
+            block = hkd_match.group(1)
+            for period, label in [('3m', '3 months'), ('6m', '6 months')]:
+                m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+                if m:
+                    hkd_rc[period] = float(m.group(1))
     
     # Find USD RewardCash rates
-    usd_match = re.search(r'USD.*?Equivalent interest rate.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
+    usd_match = re.search(r'美元.*?等值年利率.*?((?:\d+個?月\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
     if usd_match:
         block = usd_match.group(1)
-        for period, label in [('3m', '3 months'), ('6m', '6 months')]:
+        for period, label in [('3m', '3個月'), ('6m', '6個月')]:
             m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
             if m:
                 usd_rc[period] = float(m.group(1))
+    # Fallback English
+    if not usd_rc:
+        usd_match = re.search(r'USD.*?Equivalent interest rate.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)', rc_text, re.DOTALL)
+        if usd_match:
+            block = usd_match.group(1)
+            for period, label in [('3m', '3 months'), ('6m', '6 months')]:
+                m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+                if m:
+                    usd_rc[period] = float(m.group(1))
     
     # === Preferential New Fund section ===
     pref_text = text[rc_end:] if rc_end > 0 else ''
     
-    # Preferential USD
+    # Preferential USD (Chinese)
     usd_pref = {}
+    # Find USD Preferential section: 美元新資金定期存款優惠年利率 - 網上優惠
     usd_pref_match = re.search(
-        r'Preferential USD.*?online offer.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
-        pref_text, re.DOTALL | re.IGNORECASE
+        r'美元新資金定期存款優惠年利率.*?最低存款金額.*?2,000美元.*?存款期.*?定期存款年利率.*?((?:\d+個?月\s*\n?\s*\d+\.\d+%\s*)+)',
+        pref_text, re.DOTALL
     )
     if usd_pref_match:
         block = usd_pref_match.group(1)
-        for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
-            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+        for period, label in [('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
+            m = re.search(rf'{label}\s*\n?\s*(\d+\.\d+)%', block)
             if m:
                 usd_pref[period] = float(m.group(1))
+    # Fallback English
+    if not usd_pref:
+        usd_pref_match = re.search(
+            r'Preferential USD.*?online offer.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
+            pref_text, re.DOTALL | re.IGNORECASE
+        )
+        if usd_pref_match:
+            block = usd_pref_match.group(1)
+            for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
+                m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+                if m:
+                    usd_pref[period] = float(m.group(1))
     
-    # Preferential HKD
+    # Preferential HKD (Chinese)
     hkd_pref = {}
-    hkd_pref_match = re.search(
-        r'Preferential.*?HKD.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
-        pref_text, re.DOTALL | re.IGNORECASE
-    )
-    if hkd_pref_match:
-        block = hkd_pref_match.group(1)
-        for period, label in [('3m', '3 months'), ('6m', '6 months')]:
-            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+    # Find the HKD new fund section after the RewardCash section
+    # Pattern: 港幣10,000元或以上 → 存款期 → 定期存款年利率 → rates
+    hkd_pref_matches = list(re.finditer(
+        r'港幣10,000元或以上', pref_text
+    ))
+    for match in hkd_pref_matches:
+        section = pref_text[match.start():match.start() + 500]
+        # Extract rates from this section
+        for period, label in [('3m', '3個月'), ('6m', '6個月')]:
+            m = re.search(rf'{label}\s*\n?\s*(\d+\.\d+)%', section)
             if m:
-                hkd_pref[period] = float(m.group(1))
+                rate = float(m.group(1))
+                # Skip if this looks like RewardCash rate (2.395% or 2.195%)
+                if rate in [2.395, 2.195]:
+                    continue
+                if period not in hkd_pref:
+                    hkd_pref[period] = rate
+    # Fallback English
+    if not hkd_pref:
+        hkd_pref_match = re.search(
+            r'Preferential.*?HKD.*?Minimum deposit.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
+            pref_text, re.DOTALL | re.IGNORECASE
+        )
+        if hkd_pref_match:
+            block = hkd_pref_match.group(1)
+            for period, label in [('3m', '3 months'), ('6m', '6 months')]:
+                m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+                if m:
+                    hkd_pref[period] = float(m.group(1))
     
-    # === Preferential New Fund CNY ===
+    # === Preferential New Fund CNY (Chinese) ===
     cny_pref = {}
-    # Look for RMB section with "Minimum deposit amount: RMB"
-    cny_pref_match = re.search(
-        r'Minimum deposit amount:\s*RMB\d+,\d+.*?Tenor.*?Time Deposit Interest Rates.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
-        text, re.DOTALL | re.IGNORECASE
+    cny_match = re.search(
+        r'人民幣10,000元或以上.*?存款期.*?定期存款年利率.*?((?:\d+個?月\s*\n?\s*\d+\.\d+%\s*)+)',
+        pref_text, re.DOTALL
     )
-    if cny_pref_match:
-        block = cny_pref_match.group(1)
-        for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
-            m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+    if cny_match:
+        block = cny_match.group(1)
+        for period, label in [('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
+            m = re.search(rf'{label}\s*\n?\s*(\d+\.\d+)%', block)
             if m:
                 cny_pref[period] = float(m.group(1))
+    # Fallback English
+    if not cny_pref:
+        cny_pref_match = re.search(
+            r'Minimum deposit amount:\s*RMB\d+,\d+.*?Tenor.*?Time Deposit Interest Rates.*?((?:\d+ months?\s+\d+\.\d+%\s*)+)',
+            text, re.DOTALL | re.IGNORECASE
+        )
+        if cny_pref_match:
+            block = cny_pref_match.group(1)
+            for period, label in [('3m', '3 months'), ('6m', '6 months'), ('12m', '12 months')]:
+                m = re.search(rf'{label}\s+(\d+\.\d+)%', block)
+                if m:
+                    cny_pref[period] = float(m.group(1))
     
     # === Exchange rate promo (1 week rates via currency exchange) ===
     hkd_exchange = {}
