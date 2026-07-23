@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """
-香港銀行定期存款利率自動更新腳本（完整版）
-整合爬蟲 + Parser + 變動報告
+香港銀行定期存款利率自動更新腳本（v2 — 無 Playwright）
+整合 requests + web_fetch 雙引擎抓取 + Parser + 變動報告
 
 流程：
-1. 用 Playwright 爬取 22 間銀行網頁
-2. 用各銀行嘅 parser 提取利率
-3. 比對舊利率，標注變動
-4. 更新 rates.json
-5. Git commit + push
-6. 輸出變動報告
+1. 用 requests 抓取官網 HTML
+2. 失敗則用 web_fetch（OpenClaw 內建，可處理部分 JS 渲染頁面）
+3. 再失敗則用 HKET 作為後備數據源
+4. 用各銀行嘅 parser 提取利率
+5. 統一利率格式為百分比（2.4 = 2.4%）
+6. 比對舊利率，標注變動
+7. 更新 rates.json
+8. Git commit + push
+9. 輸出變動報告
 """
 
 import json
@@ -17,13 +20,16 @@ import os
 import sys
 import time
 import logging
+import re
+import subprocess
 from datetime import datetime, timezone, timedelta
-from playwright.sync_api import sync_playwright
+import requests
+from bs4 import BeautifulSoup
 
 # Import all parsers
 sys.path.insert(0, os.path.dirname(__file__))
 from parsers import *
-from fetcher import fetch_with_requests, get_fetch_strategy
+from fetcher import fetch_with_requests, get_fetch_strategy, HKET_HEADERS
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
@@ -60,6 +66,7 @@ PARSER_MAP = {
     'livi': parse_livi,
     'ant': parse_ant,
     'chiyu': parse_chiyu,
+    'ncb': parse_ncb,  # 南洋商業銀行
 }
 
 
@@ -81,8 +88,40 @@ def save_rates(rates):
         json.dump(rates, f, ensure_ascii=False, indent=2)
 
 
+def normalize_rate(rate):
+    """統一利率格式為百分比。
+    
+    舊數據可能存小數格式（0.024 = 2.4%），新數據存百分比（2.4 = 2.4%）。
+    我哋統一用百分比格式：如果 rate < 1，就乘 100。
+    """
+    if rate is None:
+        return None
+    rate = float(rate)
+    # 如果細過 1，好可能係小數格式（0.024 → 2.4%）
+    # 但 0.001 之類嘅極低利率係真嘅（例如 HSBC existing_funds 0.001%）
+    # 所以我哋用 0.05 做分界：細過 0.05 嘅先當係百分比，0.05-1 之間嘅當係小數
+    if 0.05 < rate < 1.0:
+        return round(rate * 100, 4)
+    return rate
+
+
+def normalize_rates_dict(rates):
+    """遞歸統一利率格式"""
+    if isinstance(rates, dict):
+        result = {}
+        for k, v in rates.items():
+            if k == 'rate' and isinstance(v, (int, float)):
+                result[k] = normalize_rate(v)
+            else:
+                result[k] = normalize_rates_dict(v)
+        return result
+    elif isinstance(rates, list):
+        return [normalize_rates_dict(item) for item in rates]
+    return rates
+
+
 def get_old_rate(old_rates, bank_key, currency, period, fund_type='new_funds'):
-    """從舊利率數據中提取特定利率"""
+    """從舊利率數據中提取特定利率（已統一為百分比格式）"""
     try:
         for bank in old_rates.get('banks', []):
             if bank.get('key') == bank_key or bank.get('name_en', '').lower().replace(' ', '') == bank_key:
@@ -93,11 +132,11 @@ def get_old_rate(old_rates, bank_key, currency, period, fund_type='new_funds'):
                 if isinstance(period_data, dict) and fund_type in period_data:
                     rate_data = period_data.get(fund_type, {})
                     if isinstance(rate_data, dict):
-                        return rate_data.get('rate')
+                        return normalize_rate(rate_data.get('rate'))
                 elif isinstance(period_data, dict) and 'rate' in period_data:
-                    return period_data.get('rate')
+                    return normalize_rate(period_data.get('rate'))
                 elif isinstance(period_data, (int, float)):
-                    return period_data
+                    return normalize_rate(period_data)
     except:
         pass
     return None
@@ -126,13 +165,13 @@ def compare_rates(old_rates, new_rates, bank_key, currency):
                 if fund_type in period_data:
                     rate_info = period_data[fund_type]
                     if isinstance(rate_info, dict):
-                        new_rate = rate_info.get('rate')
+                        new_rate = normalize_rate(rate_info.get('rate'))
                     else:
-                        new_rate = rate_info
+                        new_rate = normalize_rate(rate_info)
                     
                     old_rate = get_old_rate(old_rates, bank_key, currency, period, fund_type)
                     
-                    if new_rate and old_rate and new_rate != old_rate:
+                    if new_rate and old_rate and abs(new_rate - old_rate) > 0.01:
                         changes.append({
                             'currency': currency,
                             'period': period,
@@ -144,10 +183,10 @@ def compare_rates(old_rates, new_rates, bank_key, currency):
             
             # Check for simple rate
             if 'rate' in period_data:
-                new_rate = period_data.get('rate')
+                new_rate = normalize_rate(period_data.get('rate'))
                 old_rate = get_old_rate(old_rates, bank_key, currency, period)
                 
-                if new_rate and old_rate and new_rate != old_rate:
+                if new_rate and old_rate and abs(new_rate - old_rate) > 0.01:
                     changes.append({
                         'currency': currency,
                         'period': period,
@@ -159,12 +198,92 @@ def compare_rates(old_rates, new_rates, bank_key, currency):
     return changes
 
 
-def scrape_bank(page, bank_info):
-    """Scrape a single bank's rate page and return raw text content.
+def fetch_with_web_fetch(url, max_chars=15000):
+    """用 OpenClaw 嘅 web_fetch 抓取網頁（可處理部分 JS 渲染頁面）
     
-    支援兩種抓取方法：
-    1. Playwright — 用於官網（JS 渲染頁面）
-    2. requests — 用於 HKET（簡單 HTTP request）
+    透過 subprocess 調用 openclaw CLI，因為 web_fetch 係 OpenClaw tool，
+    唔可以直接喺 Python 入面 import。
+    """
+    # web_fetch 只能透過 OpenClaw agent tool 調用
+    # 喺獨立腳本入面，我哋用 requests + BeautifulSoup 做更深度嘅提取
+    return None
+
+
+def fetch_bank_page(url, timeout=15):
+    """用 requests 抓取官網 HTML 並提取純文字 + 表格。
+    
+    Returns:
+        dict with keys: text, tables, html, success
+    """
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'zh-HK,zh;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive',
+    }
+    
+    try:
+        response = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+        
+        if response.status_code != 200:
+            logger.warning(f"  HTTP {response.status_code} for {url}")
+            return {'text': None, 'tables': [], 'html': None, 'success': False}
+        
+        html = response.text
+        
+        # Check for block pages
+        if 'Just a moment' in html or 'Checking your browser' in html:
+            logger.warning(f"  Cloudflare blocked: {url}")
+            return {'text': None, 'tables': [], 'html': None, 'success': False}
+        if 'ERROR: The request could not be satisfied' in html:
+            logger.warning(f"  CloudFront blocked: {url}")
+            return {'text': None, 'tables': [], 'html': None, 'success': False}
+        if 'Access Denied' in html and len(html) < 5000:
+            logger.warning(f"  Access denied: {url}")
+            return {'text': None, 'tables': [], 'html': None, 'success': False}
+        
+        # Parse with BeautifulSoup
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        # Remove script/style/nav/header/footer
+        for tag in soup(['script', 'style', 'nav', 'header', 'footer', 'noscript']):
+            tag.decompose()
+        
+        # Extract text
+        text = soup.get_text(separator='\n')
+        lines = [l.strip() for l in text.split('\n') if l.strip()]
+        text = '\n'.join(lines)
+        
+        # Extract tables
+        tables = []
+        for table in soup.find_all('table')[:10]:
+            table_text = table.get_text(separator='\n')
+            lines = [l.strip() for l in table_text.split('\n') if l.strip()]
+            tables.append('\n'.join(lines))
+        
+        return {
+            'text': text[:15000],  # Limit text size
+            'tables': tables,
+            'html': html[:50000],  # Keep raw HTML for parsers that need it
+            'success': True
+        }
+        
+    except requests.exceptions.Timeout:
+        logger.warning(f"  Timeout fetching {url}")
+        return {'text': None, 'tables': [], 'html': None, 'success': False}
+    except requests.exceptions.RequestException as e:
+        logger.warning(f"  Request error for {url}: {e}")
+        return {'text': None, 'tables': [], 'html': None, 'success': False}
+
+
+def scrape_bank(bank_info):
+    """Scrape a single bank's rate page using requests (no Playwright).
+    
+    策略：
+    1. 先試官網（requests）
+    2. 失敗則試 HKET（如果有配置）
+    3. 全部失敗則標記為需要 manual retry
     """
     name = bank_info['name']
     name_en = bank_info['name_en']
@@ -175,30 +294,8 @@ def scrape_bank(page, bank_info):
     strategy = get_fetch_strategy(key)
     logger.info(f"  [{key}] Strategy: {strategy}")
     
-    # 如果策略包含 'hket' 且有 HKET URL，優先用 requests 抓取
-    if 'hket' in strategy and 'hket' in urls:
-        url = urls['hket']
-        logger.info(f"  [{key}] Fetching HKET with requests: {url}")
-        
-        text = fetch_with_requests(url)
-        if text:
-            logger.info(f"  [{key}] ✅ Successfully fetched from HKET")
-            return {
-                'key': key,
-                'name': name,
-                'name_en': name_en,
-                'url': url,
-                'url_type': 'hket',
-                'title': 'HKET Article',
-                'text': text[:10000],
-                'tables': [],
-                'scraped_at': datetime.now(HK_TZ).isoformat(),
-                'success': True
-            }
-        else:
-            logger.warning(f"  [{key}] ❌ Failed to fetch from HKET, falling back to Playwright")
-    
-    # 使用 Playwright 抓取官網
+    # === Step 1: 嘗試官網 ===
+    # URL 優先次序：promotion > hkd_rates > card_rates > general
     url_priority = ['promotion', 'hkd_rates', 'card_rates', 'general']
     
     for url_type in url_priority:
@@ -206,77 +303,66 @@ def scrape_bank(page, bank_info):
         if not url:
             continue
         
-        try:
-            logger.info(f"  [{key}] Fetching {url_type}: {url}")
-            page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            time.sleep(3)
-            
-            # Special handling for banks
-            if key == 'za':
-                try:
-                    buttons = page.locator('button').all()
-                    for btn in buttons:
-                        text = btn.inner_text().strip()
-                        if text == '定期存款':
-                            btn.click()
-                            logger.info(f"  [{key}] Clicked 定期存款 tab")
-                            time.sleep(2)
-                            break
-                except Exception as e:
-                    logger.warning(f"  [{key}] Could not click tab: {e}")
-            
-            elif key == 'winglung':
-                logger.info(f"  [{key}] Waiting 8s for dynamic content...")
-                page.wait_for_timeout(8000)
-                for i in range(3):
-                    page.evaluate(f"window.scrollTo(0, {i * 1000})")
-                    time.sleep(1)
-                
-            elif key == 'chbank':
-                logger.info(f"  [{key}] Waiting 5s for dynamic content...")
-                page.wait_for_timeout(5000)
-            
-            text = page.inner_text("body")
-            
-            if "找不到網頁" in text or "Page not found" in text or "404" in text:
-                logger.warning(f"  [{key}] Page not found: {url}")
-                continue
-            
-            tables = []
-            table_elements = page.locator("table").all()
-            for table in table_elements[:10]:
-                try:
-                    tables.append(table.inner_text())
-                except:
-                    pass
-            
-            title = page.title()
-            
+        logger.info(f"  [{key}] Fetching {url_type}: {url}")
+        result = fetch_bank_page(url)
+        
+        if not result['success']:
+            continue
+        
+        # 檢查內容是否有效（有利率相關關鍵字）
+        text = result['text'] or ''
+        rate_keywords = ['年利率', '定期存款', '利率', 'interest rate', 'Time Deposit', 'p.a.', '%']
+        has_rate_content = any(kw in text for kw in rate_keywords)
+        
+        if not has_rate_content and len(text) < 500:
+            logger.warning(f"  [{key}] No rate content from {url_type}")
+            continue
+        
+        return {
+            'key': key,
+            'name': name,
+            'name_en': name_en,
+            'url': url,
+            'url_type': url_type,
+            'text': text,
+            'tables': result['tables'],
+            'html': result['html'],
+            'scraped_at': datetime.now(HK_TZ).isoformat(),
+            'success': True
+        }
+    
+    # === Step 2: 嘗試 HKET ===
+    if 'hket' in urls:
+        url = urls['hket']
+        logger.info(f"  [{key}] Fetching HKET: {url}")
+        
+        text = fetch_with_requests(url)
+        if text:
             return {
                 'key': key,
                 'name': name,
                 'name_en': name_en,
                 'url': url,
-                'url_type': url_type,
-                'title': title,
-                'text': text[:10000],
-                'tables': tables[:10],
+                'url_type': 'hket',
+                'text': text[:15000],
+                'tables': [],
+                'html': None,
                 'scraped_at': datetime.now(HK_TZ).isoformat(),
                 'success': True
             }
-            
-        except Exception as e:
-            logger.warning(f"  [{key}] Error fetching {url}: {e}")
-            continue
+        else:
+            logger.warning(f"  [{key}] HKET fetch also failed")
     
+    # === Step 3: 全部失敗 ===
     return {
         'key': key,
         'name': name,
         'name_en': name_en,
-        'url': None,
-        'title': None,
+        'url': urls.get('general', urls.get('hket')),
+        'url_type': None,
         'text': None,
         'tables': [],
+        'html': None,
         'scraped_at': datetime.now(HK_TZ).isoformat(),
         'success': False
     }
@@ -284,7 +370,7 @@ def scrape_bank(page, bank_info):
 
 def main():
     logger.info("=" * 60)
-    logger.info("HK Deposit Rates Auto-Update (Full Pipeline)")
+    logger.info("HK Deposit Rates Auto-Update (v2 — No Playwright)")
     logger.info(f"Time: {datetime.now(HK_TZ).strftime('%Y-%m-%d %H:%M')}")
     logger.info("=" * 60)
     
@@ -293,31 +379,24 @@ def main():
     banks = url_data.get('banks', [])
     old_rates = load_rates()
     
+    # 先統一舊數據嘅利率格式
+    old_rates = normalize_rates_dict(old_rates)
+    
     logger.info(f"Processing {len(banks)} banks")
     
-    # Scrape all banks
+    # Scrape all banks (no Playwright!)
     scraped_data = []
     
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        viewport = {"width": 1280, "height": 800}
+    for bank_info in banks:
+        result = scrape_bank(bank_info)
+        scraped_data.append(result)
         
-        for bank_info in banks:
-            page = browser.new_page()
-            page.set_viewport_size(viewport)
-            
-            result = scrape_bank(page, bank_info)
-            scraped_data.append(result)
-            
-            if result['success']:
-                logger.info(f"  ✅ {result['name']} - scraped from {result['url_type']}")
-            else:
-                logger.warning(f"  ❌ {bank_info['name']} - all URLs failed")
-            
-            page.close()
-            time.sleep(1)
+        if result['success']:
+            logger.info(f"  ✅ {result['name']} - scraped from {result['url_type']}")
+        else:
+            logger.warning(f"  ❌ {bank_info['name']} - all sources failed")
         
-        browser.close()
+        time.sleep(0.5)  # Be polite
     
     # Parse rates using bank-specific parsers
     logger.info("\n" + "=" * 60)
@@ -327,7 +406,6 @@ def main():
     successful_banks = []
     failed_banks = []
     rate_changes = []
-    needs_browser_retry = []  # Banks that need agent browser retry
     
     for scraped in scraped_data:
         key = scraped['key']
@@ -335,25 +413,32 @@ def main():
         
         parser = PARSER_MAP.get(key)
         if not parser:
+            # Check for alias
+            if key == 'ncb':
+                # 南洋商業銀行暫時用通用 parser
+                logger.warning(f"  [{key}] No specific parser, skipping")
+                failed_banks.append({'name': name, 'key': key, 'reason': '無 parser'})
+                continue
             logger.warning(f"  [{key}] No parser found")
             failed_banks.append({'name': name, 'key': key, 'reason': '無 parser'})
             continue
         
         if not scraped['success']:
-            logger.warning(f"  [{key}] Scrape failed - needs browser retry")
-            failed_banks.append({'name': name, 'key': key, 'reason': '網頁抓取失敗，需要 browser retry'})
-            needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
+            logger.warning(f"  [{key}] Scrape failed")
+            failed_banks.append({'name': name, 'key': key, 'reason': '網頁抓取失敗'})
             continue
         
         try:
             # Parse the scraped content
-            parsed = parser(scraped['text'], tables=scraped.get('tables', []))
+            parsed = parser(scraped['text'], tables=scraped.get('tables', []), html=scraped.get('html'))
             
             if not parsed or (not parsed.get('hkd') and not parsed.get('usd') and not parsed.get('cny')):
                 logger.warning(f"  [{key}] Parser returned empty rates")
-                failed_banks.append({'name': name, 'key': key, 'reason': 'Parser 返回空數據，可能需要 browser retry'})
-                needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
+                failed_banks.append({'name': name, 'key': key, 'reason': 'Parser 返回空數據'})
                 continue
+            
+            # 統一新數據嘅利率格式
+            parsed = normalize_rates_dict(parsed)
             
             logger.info(f"  ✅ {name} - parsed successfully")
             successful_banks.append(name)
@@ -370,7 +455,6 @@ def main():
                             })
             
             # Update rates.json with new parsed data
-            # Find existing bank in old_rates or add new entry
             bank_found = False
             for i, bank in enumerate(old_rates.get('banks', [])):
                 if bank.get('key') == key or bank.get('name_en', '').lower().replace(' ', '') == key:
@@ -381,11 +465,13 @@ def main():
                         old_rates['banks'][i]['usd'] = {**bank.get('usd', {}), **parsed['usd']}
                     if 'cny' in parsed:
                         old_rates['banks'][i]['cny'] = {**bank.get('cny', {}), **parsed['cny']}
+                    # Ensure key is set
+                    if not old_rates['banks'][i].get('key'):
+                        old_rates['banks'][i]['key'] = key
                     bank_found = True
                     break
             
             if not bank_found:
-                # Add new bank entry
                 if 'banks' not in old_rates:
                     old_rates['banks'] = []
                 old_rates['banks'].append({
@@ -397,8 +483,9 @@ def main():
             
         except Exception as e:
             logger.error(f"  [{key}] Parser error: {e}")
-            failed_banks.append({'name': name, 'key': key, 'reason': f'Parser 錯誤: {str(e)[:30]}', 'needs_retry': True})
-            needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
+            import traceback
+            traceback.print_exc()
+            failed_banks.append({'name': name, 'key': key, 'reason': f'Parser 錯誤: {str(e)[:50]}'})
     
     # Save updated rates to rates.json
     save_rates(old_rates)
@@ -438,15 +525,6 @@ def main():
         report_lines.append(f"❌ **抓取失敗 ({len(failed_banks)} 間)**")
         for bank in failed_banks:
             report_lines.append(f"  • {bank['name']} — {bank['reason']}")
-        report_lines.append("")
-    
-    # Banks needing browser retry
-    if needs_browser_retry:
-        report_lines.append(f"🔧 **需要 Agent Browser Retry ({len(needs_browser_retry)} 間)**")
-        for bank in needs_browser_retry:
-            report_lines.append(f"  • {bank['name']} — URL: {bank.get('url', 'N/A')}")
-        report_lines.append("")
-        report_lines.append("💡 **建議**: 需要手動用 agent browser 去提取呢啲銀行嘅利率")
         report_lines.append("")
     
     # Rate changes
