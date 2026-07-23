@@ -13,6 +13,8 @@
 import requests
 import logging
 from typing import Optional, Tuple, Dict, List
+from bs4 import BeautifulSoup
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -91,7 +93,7 @@ def fetch_with_requests(url: str, headers: Optional[Dict] = None, timeout: int =
         timeout: 超時時間（秒）
     
     Returns:
-        str: 頁面 HTML 內容，失敗返回 None
+        str: 頁面純文字內容（從 HTML 提取），失敗返回 None
     """
     if not headers:
         headers = HKET_HEADERS
@@ -110,8 +112,11 @@ def fetch_with_requests(url: str, headers: Optional[Dict] = None, timeout: int =
                 logger.warning(f"Cloudflare blocked: {url}")
                 return None
             
+            # 從 HTML 提取純文字（使用 BeautifulSoup）
+            text = html_to_text(response.text)
+            
             logger.info(f"Successfully fetched with requests: {url}")
-            return response.text
+            return text
         else:
             logger.warning(f"HTTP {response.status_code} for {url}")
             return None
@@ -122,6 +127,38 @@ def fetch_with_requests(url: str, headers: Optional[Dict] = None, timeout: int =
     except requests.exceptions.RequestException as e:
         logger.error(f"Request error for {url}: {e}")
         return None
+
+
+def html_to_text(html: str) -> str:
+    """從 HTML 提取純文字
+    
+    Args:
+        html: HTML 內容
+    
+    Returns:
+        str: 純文字內容
+    """
+    if not html:
+        return ""
+    
+    # 使用 BeautifulSoup 解析 HTML
+    soup = BeautifulSoup(html, 'html.parser')
+    
+    # 移除 script 同 style 標籤
+    for script in soup(["script", "style", "nav", "header", "footer"]):
+        script.decompose()
+    
+    # 提取文字
+    text = soup.get_text(separator='\n')
+    
+    # 清理多餘嘅空白行
+    lines = []
+    for line in text.split('\n'):
+        line = line.strip()
+        if line:
+            lines.append(line)
+    
+    return '\n'.join(lines)
 
 
 def fetch_bank_data(
