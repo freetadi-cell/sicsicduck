@@ -1,7 +1,8 @@
 📊 **香港銀行定期存款利率更新報告**
-時間: 2026-07-23 08:39
+時間: 2026-07-23 08:50
 
-✅ **成功抓取 (11 間)**
+✅ **成功抓取 (12 間)**
+  • 滙豐銀行
   • 中銀香港
   • 恒生銀行
   • 渣打銀行
@@ -14,8 +15,7 @@
   • 眾安銀行
   • 理慧銀行
 
-❌ **抓取失敗 (11 間)**
-  • 滙豐銀行 — Parser 返回空數據，可能需要 browser retry
+❌ **抓取失敗 (10 間)**
   • 中信銀行（國際） — Parser 返回空數據，可能需要 browser retry
   • 工銀亞洲 — Parser 返回空數據，可能需要 browser retry
   • 交通銀行 — Parser 返回空數據，可能需要 browser retry
@@ -27,8 +27,7 @@
   • 螞蟻銀行 — Parser 返回空數據，可能需要 browser retry
   • 集友銀行 — Parser 返回空數據，可能需要 browser retry
 
-🔧 **需要 Agent Browser Retry (11 間)**
-  • 滙豐銀行 — URL: https://www.hsbc.com.hk/zh-hk/accounts/offers/deposits/#preferential-new-fund-time-deposit-offers
+🔧 **需要 Agent Browser Retry (10 間)**
   • 中信銀行（國際） — URL: https://wealth.hket.com/article/3909875
   • 工銀亞洲 — URL: https://www.icbcasia.com/zh/deposit/
   • 交通銀行 — URL: https://www.hk.bankcomm.com/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml
@@ -58,4 +57,4 @@
   • 東亞銀行 USD 12m: 3.75% → 3.6% (⬇️0.15%)
   • 東亞銀行 USD 12m: 3.75% → 3.5% (⬇️0.25%)
 
-總計: 11/22 成功
+總計: 12/22 成功
