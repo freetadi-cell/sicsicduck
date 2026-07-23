@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T08:18:26.312429+08:00",
+  "last_updated": "2026-07-23T08:51:35.023004+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -27,7 +27,7 @@
           "exchange": {
             "rate": 7.0,
             "min_deposit": 10000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -55,7 +55,7 @@
           "exchange": {
             "rate": 3.0,
             "min_deposit": 10000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -95,7 +95,7 @@
         "3m": {
           "rate": 2.4,
           "min_deposit": 10000,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -103,7 +103,7 @@
         "6m": {
           "rate": 2.2,
           "min_deposit": 10000,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -370,7 +370,7 @@
           "exchange": {
             "rate": 12.0,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -537,7 +537,7 @@
           "exchange": {
             "rate": 5.0,
             "min_deposit": 10000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -564,7 +564,7 @@
           "exchange": {
             "rate": 2.0,
             "min_deposit": 10000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -1414,7 +1414,7 @@
           "exchange": {
             "rate": 12.0,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -1638,7 +1638,7 @@
           "exchange": {
             "rate": 5.0,
             "min_deposit": 10000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -1704,7 +1704,7 @@
         "3m": {
           "rate": 2.4,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -1712,7 +1712,7 @@
         "6m": {
           "rate": 2.2,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -1720,7 +1720,7 @@
         "12m": {
           "rate": 2.2,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -1960,7 +1960,7 @@
           "exchange": {
             "rate": 11.0,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -2352,7 +2352,7 @@
           "exchange": {
             "rate": 12.88,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -2586,7 +2586,7 @@
         "1m": {
           "rate": 1.5,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -2619,7 +2619,7 @@
         "3m": {
           "rate": 2.75,
           "min_deposit": 50000,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -2627,7 +2627,7 @@
         "6m": {
           "rate": 2.5,
           "min_deposit": 50000,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -2635,7 +2635,7 @@
         "12m": {
           "rate": 2.5,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -3146,7 +3146,7 @@
         "3m": {
           "rate": 2.65,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -3154,7 +3154,7 @@
         "6m": {
           "rate": 2.45,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -3162,7 +3162,7 @@
         "12m": {
           "rate": 2.65,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -4248,7 +4248,7 @@
         "1m": {
           "rate": 2.0,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -4281,7 +4281,7 @@
         "3m": {
           "rate": 2.45,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -4289,7 +4289,7 @@
         "6m": {
           "rate": 2.5,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -4297,7 +4297,7 @@
         "12m": {
           "rate": 2.4,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -4583,7 +4583,7 @@
           "exchange": {
             "rate": 16.0,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -5664,7 +5664,7 @@
           "existing_funds": {
             "rate": 0.5,
             "min_deposit": 100000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account"
@@ -5701,7 +5701,7 @@
           "existing_funds": {
             "rate": 2.4,
             "min_deposit": 100000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account"
@@ -6399,7 +6399,7 @@
         "1m": {
           "rate": 2.45,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -6415,7 +6415,7 @@
         "3m": {
           "rate": 2.6,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -6423,7 +6423,7 @@
         "6m": {
           "rate": 1.5,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -6431,7 +6431,7 @@
         "12m": {
           "rate": 0.8,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -6653,7 +6653,7 @@
           "new_funds": {
             "rate": 1.0,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "upgrade_wealth"
@@ -6682,7 +6682,7 @@
           "new_funds": {
             "rate": 1.6,
             "min_deposit": 1,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "upgrade_wealth"
@@ -6738,7 +6738,7 @@
           "new_funds": {
             "rate": 2.7,
             "min_deposit": 1,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "upgrade_wealth"
@@ -6767,7 +6767,7 @@
           "new_funds": {
             "rate": 2.6,
             "min_deposit": 1,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "upgrade_wealth"
@@ -6796,7 +6796,7 @@
           "new_funds": {
             "rate": 2.9,
             "min_deposit": 1,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "upgrade_wealth"
@@ -7187,7 +7187,7 @@
           "existing_funds": {
             "rate": 1.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -7241,7 +7241,7 @@
           "existing_funds": {
             "rate": 1.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -7295,7 +7295,7 @@
           "existing_funds": {
             "rate": 1.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -7330,7 +7330,7 @@
         "1m": {
           "rate": 0.01,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7346,7 +7346,7 @@
         "3m": {
           "rate": 2.2,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7354,7 +7354,7 @@
         "6m": {
           "rate": 2.2,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7362,7 +7362,7 @@
         "12m": {
           "rate": 2.35,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7705,7 +7705,7 @@
         "1m": {
           "rate": 0.01,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7740,7 +7740,7 @@
         "3m": {
           "rate": 2.2,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7748,7 +7748,7 @@
         "6m": {
           "rate": 2.2,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7756,7 +7756,7 @@
         "12m": {
           "rate": 2.35,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "existing_funds",
           "conditions": []
@@ -7765,7 +7765,7 @@
           "new_funds": {
             "rate": 0.61,
             "min_deposit": 1,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -8056,7 +8056,7 @@
           "exchange": {
             "rate": 20.0,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -8292,7 +8292,7 @@
         "1m": {
           "rate": 2.3,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -8327,7 +8327,7 @@
         "3m": {
           "rate": 2.6,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -8335,7 +8335,7 @@
         "6m": {
           "rate": 2.5,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -8343,7 +8343,7 @@
         "12m": {
           "rate": 2.5,
           "min_deposit": null,
-          "note": null,
+          "note": "定期存款優惠",
           "source": "uhk",
           "fund_type": "new_funds",
           "conditions": []
@@ -8640,7 +8640,7 @@
           "exchange": {
             "rate": 21.0,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -8667,7 +8667,7 @@
           "exchange": {
             "rate": 6.8,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -8721,7 +8721,7 @@
           "exchange": {
             "rate": 2.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -10124,7 +10124,7 @@
           "existing_funds": {
             "rate": 1.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -10178,7 +10178,7 @@
           "existing_funds": {
             "rate": 1.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -10205,7 +10205,7 @@
           "existing_funds": {
             "rate": 1.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -10232,7 +10232,7 @@
           "existing_funds": {
             "rate": 1.5,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -10271,7 +10271,7 @@
           "exchange": {
             "rate": 5.0,
             "min_deposit": 200000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -10628,7 +10628,7 @@
           "exchange": {
             "rate": 6.8,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -10657,7 +10657,7 @@
           "exchange": {
             "rate": 2.88,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -10685,7 +10685,7 @@
           "exchange": {
             "rate": 2.65,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -10713,7 +10713,7 @@
           "exchange": {
             "rate": 2.8,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -10741,7 +10741,7 @@
           "exchange": {
             "rate": 2.8,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -10769,7 +10769,7 @@
           "exchange": {
             "rate": 2.75,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -10797,7 +10797,7 @@
           "exchange": {
             "rate": 2.75,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -10825,7 +10825,7 @@
           "exchange": {
             "rate": 2.75,
             "min_deposit": 1000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "new_account",
@@ -11073,7 +11073,7 @@
           "exchange": {
             "rate": 13.88,
             "min_deposit": null,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": [
               "exchange"
@@ -11221,7 +11221,7 @@
           "new_funds": {
             "rate": 1.5,
             "min_deposit": 100000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
@@ -11248,7 +11248,7 @@
           "new_funds": {
             "rate": 1.5,
             "min_deposit": 100000,
-            "note": null,
+            "note": "定期存款優惠",
             "source": "hket",
             "conditions": []
           },
