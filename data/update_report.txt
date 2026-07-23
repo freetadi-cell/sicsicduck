@@ -1,43 +1,39 @@
 📊 **香港銀行定期存款利率更新報告**
-時間: 2026-07-23 08:50
+時間: 2026-07-23 13:21
 
-✅ **成功抓取 (12 間)**
+✅ **成功抓取 (16 間)**
   • 滙豐銀行
   • 中銀香港
   • 恒生銀行
   • 渣打銀行
   • 星展銀行
   • 東亞銀行
+  • 工銀亞洲
   • 富邦銀行
   • 上海商業銀行
   • 大眾銀行
+  • 創興銀行
   • 象象銀行
   • 眾安銀行
+  • 匯立銀行
   • 理慧銀行
+  • 集友銀行
 
-❌ **抓取失敗 (10 間)**
+❌ **抓取失敗 (6 間)**
   • 中信銀行（國際） — Parser 返回空數據，可能需要 browser retry
-  • 工銀亞洲 — Parser 返回空數據，可能需要 browser retry
   • 交通銀行 — Parser 返回空數據，可能需要 browser retry
   • 招商永隆 — Parser 返回空數據，可能需要 browser retry
-  • 創興銀行 — Parser 錯誤: could not convert string to fl
   • 富融銀行 — Parser 返回空數據，可能需要 browser retry
   • 平安數字銀行 — Parser 返回空數據，可能需要 browser retry
-  • 匯立銀行 — Parser 返回空數據，可能需要 browser retry
   • 螞蟻銀行 — Parser 返回空數據，可能需要 browser retry
-  • 集友銀行 — Parser 返回空數據，可能需要 browser retry
 
-🔧 **需要 Agent Browser Retry (10 間)**
+🔧 **需要 Agent Browser Retry (6 間)**
   • 中信銀行（國際） — URL: https://wealth.hket.com/article/3909875
-  • 工銀亞洲 — URL: https://www.icbcasia.com/zh/deposit/
   • 交通銀行 — URL: https://www.hk.bankcomm.com/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml
   • 招商永隆 — URL: https://www.cmbwinglungbank.com/wlb_corporate/hk/personal/investments/financial-information/interest-rates/deposit-interest-rates.html
-  • 創興銀行 — URL: https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml
   • 富融銀行 — URL: https://wealth.hket.com/article/3909899
   • 平安數字銀行 — URL: https://www.pingandb.com/tc/retail-td-newfund.html
-  • 匯立銀行 — URL: https://www.welab.bank/zh/feature/gosave_2/
   • 螞蟻銀行 — URL: https://wealth.hket.com/article/3909930
-  • 集友銀行 — URL: https://www.chiyubank.com/cyb/index/zxxx/20230523/index.shtml
 
 💡 **建議**: 需要手動用 agent browser 去提取呢啲銀行嘅利率
 
@@ -57,4 +53,4 @@
   • 東亞銀行 USD 12m: 3.75% → 3.6% (⬇️0.15%)
   • 東亞銀行 USD 12m: 3.75% → 3.5% (⬇️0.25%)
 
-總計: 12/22 成功
+總計: 16/22 成功
