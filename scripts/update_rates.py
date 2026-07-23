@@ -23,6 +23,7 @@ from playwright.sync_api import sync_playwright
 # Import all parsers
 sys.path.insert(0, os.path.dirname(__file__))
 from parsers import *
+from fetcher import fetch_with_requests, get_fetch_strategy
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
@@ -159,17 +160,46 @@ def compare_rates(old_rates, new_rates, bank_key, currency):
 
 
 def scrape_bank(page, bank_info):
-    """Scrape a single bank's rate page and return raw text content."""
+    """Scrape a single bank's rate page and return raw text content.
+    
+    支援兩種抓取方法：
+    1. Playwright — 用於官網（JS 渲染頁面）
+    2. requests — 用於 HKET（簡單 HTTP request）
+    """
     name = bank_info['name']
     name_en = bank_info['name_en']
     key = bank_info['key']
     urls = bank_info.get('urls', {})
     
-    # Check if bank has HKET URL (primary source for blocked banks)
-    if 'hket' in urls:
-        url_priority = ['hket', 'promotion', 'hkd_rates', 'card_rates', 'general']
-    else:
-        url_priority = ['promotion', 'hkd_rates', 'card_rates', 'general']
+    # 獲取銀行的抓取策略
+    strategy = get_fetch_strategy(key)
+    logger.info(f"  [{key}] Strategy: {strategy}")
+    
+    # 如果策略包含 'hket' 且有 HKET URL，優先用 requests 抓取
+    if 'hket' in strategy and 'hket' in urls:
+        url = urls['hket']
+        logger.info(f"  [{key}] Fetching HKET with requests: {url}")
+        
+        text = fetch_with_requests(url)
+        if text:
+            logger.info(f"  [{key}] ✅ Successfully fetched from HKET")
+            return {
+                'key': key,
+                'name': name,
+                'name_en': name_en,
+                'url': url,
+                'url_type': 'hket',
+                'title': 'HKET Article',
+                'text': text[:10000],
+                'tables': [],
+                'scraped_at': datetime.now(HK_TZ).isoformat(),
+                'success': True
+            }
+        else:
+            logger.warning(f"  [{key}] ❌ Failed to fetch from HKET, falling back to Playwright")
+    
+    # 使用 Playwright 抓取官網
+    url_priority = ['promotion', 'hkd_rates', 'card_rates', 'general']
     
     for url_type in url_priority:
         url = urls.get(url_type)
