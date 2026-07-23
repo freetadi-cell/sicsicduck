@@ -56,8 +56,6 @@ def parse(text, tables=None, html=None):
                     }
         
         if rates.get('hkd'):
-            rates['note'] = '定期存款牌價利率'
-            rates['_use_new_structure'] = True
             return rates
     
     # Try parsing tables first (format from requests + BeautifulSoup)
@@ -85,7 +83,12 @@ def parse(text, tables=None, html=None):
                         
                         if current_currency not in rates:
                             rates[current_currency] = {}
-                        rates[current_currency][period_key] = rate
+                        rates[current_currency][period_key] = {
+                            'rate': rate,
+                            'min_deposit': 10000,
+                            'note': note,
+                            'source': 'bank'
+                        }
     
     # Fallback to text parsing
     if not rates:
@@ -102,7 +105,12 @@ def parse(text, tables=None, html=None):
                 pattern = rf'{label}\s+(\d+\.\d+)%'
                 m = re.search(pattern, section)
                 if m:
-                    hkd_rates[period] = float(m.group(1))
+                    hkd_rates[period] = {
+                        'rate': float(m.group(1)),
+                        'min_deposit': 10000,
+                        'note': note,
+                        'source': 'bank'
+                    }
             if hkd_rates:
                 rates['hkd'] = hkd_rates
         
@@ -115,7 +123,12 @@ def parse(text, tables=None, html=None):
                 pattern = rf'{label}\s+(\d+\.\d+)%'
                 m = re.search(pattern, section)
                 if m:
-                    usd_rates[period] = float(m.group(1))
+                    usd_rates[period] = {
+                        'rate': float(m.group(1)),
+                        'min_deposit': 2000,
+                        'note': note,
+                        'source': 'bank'
+                    }
             if usd_rates:
                 rates['usd'] = usd_rates
         
@@ -127,11 +140,15 @@ def parse(text, tables=None, html=None):
                 pattern = rf'{label}\s+(\d+\.\d+)%'
                 m = re.search(pattern, section)
                 if m:
-                    cny_rates[period] = float(m.group(1))
+                    cny_rates[period] = {
+                        'rate': float(m.group(1)),
+                        'min_deposit': 10000,
+                        'note': note,
+                        'source': 'bank'
+                    }
             if cny_rates:
                 rates['cny'] = cny_rates
     
     if rates:
-        rates['note'] = note
         return rates
     return None

@@ -27,7 +27,4 @@ def parse(text, tables=None, html=None):
     # 使用通用 HKET 解析器
     result = parse_hket_article(text, bank_name='螞蟻銀行')
     
-    if result:
-        result['note'] = '螞蟻銀行定期存款（來源：HKET）'
-    
     return result

@@ -20,7 +20,12 @@ def parse(text, tables=None, html=None):
         pattern = rf'{label}\s+(\d+\.\d+)%'
         m = re.search(pattern, text)
         if m:
-            hkd_rates[period] = float(m.group(1))
+            hkd_rates[period] = {
+                'rate': float(m.group(1)),
+                'min_deposit': 1,
+                'note': note,
+                'source': 'bank'
+            }
     
     if hkd_rates:
         rates['hkd'] = hkd_rates
@@ -30,6 +35,5 @@ def parse(text, tables=None, html=None):
     # We skip USD for now as it requires clicking the tab
     
     if rates:
-        rates['note'] = note
         return rates
     return None

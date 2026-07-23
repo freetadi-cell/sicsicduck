@@ -29,34 +29,32 @@ def parse(text, tables=None, html=None):
     hkd_m = re.search(r'港元\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%', section)
     if hkd_m:
         rates['hkd'] = {
-            '1m': float(hkd_m.group(1)),
-            '3m': float(hkd_m.group(2)),
-            '6m': float(hkd_m.group(3)),
-            '12m': float(hkd_m.group(4)),
+            '1m': {'rate': float(hkd_m.group(1)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
+            '3m': {'rate': float(hkd_m.group(2)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
+            '6m': {'rate': float(hkd_m.group(3)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
+            '12m': {'rate': float(hkd_m.group(4)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
         }
     
     # USD rates
     usd_m = re.search(r'美元\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%', section)
     if usd_m:
         rates['usd'] = {
-            '1m': float(usd_m.group(1)),
-            '3m': float(usd_m.group(2)),
-            '6m': float(usd_m.group(3)),
-            '12m': float(usd_m.group(4)),
+            '1m': {'rate': float(usd_m.group(1)), 'min_deposit': 2000, 'note': note, 'source': 'bank'},
+            '3m': {'rate': float(usd_m.group(2)), 'min_deposit': 2000, 'note': note, 'source': 'bank'},
+            '6m': {'rate': float(usd_m.group(3)), 'min_deposit': 2000, 'note': note, 'source': 'bank'},
+            '12m': {'rate': float(usd_m.group(4)), 'min_deposit': 2000, 'note': note, 'source': 'bank'},
         }
     
     # CNY (人民幣) rates
     cny_m = re.search(r'人民幣\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%', section)
     if cny_m:
         rates['cny'] = {
-            '1m': float(cny_m.group(1)),
-            '3m': float(cny_m.group(2)),
-            '6m': float(cny_m.group(3)),
-            '12m': float(cny_m.group(4)),
+            '1m': {'rate': float(cny_m.group(1)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
+            '3m': {'rate': float(cny_m.group(2)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
+            '6m': {'rate': float(cny_m.group(3)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
+            '12m': {'rate': float(cny_m.group(4)), 'min_deposit': 10000, 'note': note, 'source': 'bank'},
         }
-        rates['cny_note'] = note
     
     if rates:
-        rates['note'] = note
         return rates
     return None

@@ -27,22 +27,18 @@ def parse(text, tables=None, html=None):
             hkd_rates = _parse_rates(table_str, '港幣', '零售')
             if hkd_rates:
                 rates['hkd'] = hkd_rates
-                rates['hkd']['note'] = '工銀亞洲新資金定期存款（98/188天）'
             
             # Parse USD rates
             usd_rates = _parse_rates(table_str, '美元', '零售')
             if usd_rates:
                 rates['usd'] = usd_rates
-                rates['usd']['note'] = '美元新資金定期存款'
             
             # Parse CNY rates
             cny_rates = _parse_rates(table_str, '人民幣', '零售')
             if cny_rates:
                 rates['cny'] = cny_rates
-                rates['cny']['note'] = '人民幣新資金定期存款'
     
     if rates:
-        rates['note'] = '工銀亞洲新資金定期存款推廣'
         return rates
     return None
 
@@ -63,9 +59,19 @@ def _parse_rates(table_str, currency_marker, tier_marker):
             m = re.search(r'(\d+\.\d+)%\s+(\d+\.\d+)%', line)
             if m:
                 # Use 98天 rate as approximate 3m rate
-                rates['3m'] = float(m.group(1))
+                rates['3m'] = {
+                    'rate': float(m.group(1)),
+                    'min_deposit': 50000,
+                    'note': '工銀亞洲新資金定期存款（98天）',
+                    'source': 'bank'
+                }
                 # Also store 188天 as approximate 6m rate
-                rates['6m'] = float(m.group(2))
+                rates['6m'] = {
+                    'rate': float(m.group(2)),
+                    'min_deposit': 50000,
+                    'note': '工銀亞洲新資金定期存款（188天）',
+                    'source': 'bank'
+                }
                 break
     
     return rates if rates else None

@@ -582,6 +582,18 @@
             font-weight: 400;
             margin-left: 1px;
         }
+        .src-mark.src-hket {
+            color: #d32f2f;
+            font-size: 12px;
+        }
+        .src-mark.src-uhk {
+            color: #1976d2;
+            font-size: 12px;
+        }
+        .src-mark.src-estimate {
+            color: #ff9800;
+            font-size: 12px;
+        }
 
         .best-badge {
             display: inline-flex;
@@ -1479,7 +1491,18 @@ function renderTable() {
                     if (rankByPeriod[period][idx] < 3) cls = 'best';
                     else if (displayRate >= avgRates[period]) cls = 'good';
 
-                    const srcMark = source === 'moneyhero' ? ' <span class="src-mark">*</span>' : '';
+                    // Source markers for different data sources
+                    let srcMark = '';
+                    let srcTitle = '';
+                    if (source === 'moneyhero') {
+                        srcMark = ' <span class="src-mark" title="數據來源：MoneyHero">*</span>';
+                    } else if (source === 'hket') {
+                        srcMark = ' <span class="src-mark src-hket" title="數據來源：香港經濟日報">📰</span>';
+                    } else if (source === 'uhk') {
+                        srcMark = ' <span class="src-mark src-uhk" title="數據來源：UHK港生活">📊</span>';
+                    } else if (source === 'estimate') {
+                        srcMark = ' <span class="src-mark src-estimate" title="估計值">⚠️</span>';
+                    }
                     const periodNames = {
                         '1w': '1星期', '1m': '1個月', '2m': '2個月',
                         '3m': '3個月', '4m': '4個月', '6m': '6個月',

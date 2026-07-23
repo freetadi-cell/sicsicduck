@@ -29,7 +29,12 @@ def parse(text, tables=None, html=None):
             if m:
                 rate = float(m.group(1))
                 if rate > 0:
-                    hkd[period] = rate
+                    hkd[period] = {
+                        'rate': rate,
+                        'min_deposit': 1,
+                        'note': '眾安銀行定期存款',
+                        'source': 'bank'
+                    }
 
     # Try looking for HKD/USD specific sections
     for currency, store in [('hkd', hkd), ('usd', usd)]:
@@ -42,7 +47,12 @@ def parse(text, tables=None, html=None):
                 if m:
                     rate = float(m.group(1))
                     if rate > 0:
-                        store[period] = rate
+                        store[period] = {
+                            'rate': rate,
+                            'min_deposit': 1,
+                            'note': '眾安銀行定期存款',
+                            'source': 'bank'
+                        }
 
     # Try tables
     if tables and not hkd:
@@ -53,7 +63,12 @@ def parse(text, tables=None, html=None):
                 if m:
                     rate = float(m.group(1))
                     if rate > 0:
-                        hkd[period] = rate
+                        hkd[period] = {
+                            'rate': rate,
+                            'min_deposit': 1,
+                            'note': '眾安銀行定期存款',
+                            'source': 'bank'
+                        }
 
     result = {}
     if hkd:
@@ -62,6 +77,5 @@ def parse(text, tables=None, html=None):
         result['usd'] = usd
 
     if result:
-        result['note'] = '從眾安銀行官網提取'
         return result
     return None

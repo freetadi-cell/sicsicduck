@@ -52,8 +52,6 @@ def parse(text, tables=None, html=None):
                     }
         
         if rates.get('hkd'):
-            rates['note'] = '定期存款牌價利率'
-            rates['_use_new_structure'] = True
             return rates
     
     # Find the rate table section (new funds promotion)

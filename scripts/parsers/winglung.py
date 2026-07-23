@@ -45,7 +45,6 @@ def parse(text, tables=None, html=None):
         rates['cny'] = cny_rates
     
     if rates:
-        rates['note'] = '招商永隆銀行手機App優惠定存利率'
         return rates
     return None
 
@@ -94,7 +93,12 @@ def _parse_currency_table(tables, table_marker):
                     # Take the last number >= 1.0 (手機App rate)
                     for num in reversed(numbers):
                         if num >= 1.0:
-                            rates[period_key] = num
+                            rates[period_key] = {
+                                'rate': num,
+                                'min_deposit': 50000,
+                                'note': '招商永隆銀行手機App優惠定存利率',
+                                'source': 'bank'
+                            }
                             break
             
             break
@@ -120,9 +124,14 @@ def _parse_text(text):
                 for num in reversed(nums):
                     rate = float(num)
                     if rate >= 1.0:
-                        rates[period] = rate
+                        rates[period] = {
+                            'rate': rate,
+                            'min_deposit': 50000,
+                            'note': '招商永隆銀行手機App優惠定存利率',
+                            'source': 'bank'
+                        }
                         break
     
     if rates:
-        return {'hkd': rates, 'note': '招商永隆銀行手機App優惠定存利率'}
+        return {'hkd': rates}
     return None

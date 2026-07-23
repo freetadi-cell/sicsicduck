@@ -40,29 +40,34 @@ def parse(text, tables=None, html=None):
                 nf_section
             )
             if m:
-                hkd_nf[period] = float(m.group(1))
+                hkd_nf[period] = {
+                    'rate': float(m.group(1)),
+                    'new_funds': True,
+                    'min_deposit': 100,
+                    'note': '新資金定期存款優惠',
+                    'source': 'bank'
+                }
 
         # Fallback: try table format "1個月  新資金 HKD 100 - HKD 100,000,000  2.50%"
         if not hkd_nf:
             for period, label in [('1m', '1個月'), ('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
                 m = re.search(rf'{label}\s+新資金[^\d]*?(\d+\.\d+)%', nf_section)
                 if m:
-                    hkd_nf[period] = float(m.group(1))
+                    hkd_nf[period] = {
+                        'rate': float(m.group(1)),
+                        'new_funds': True,
+                        'min_deposit': 100,
+                        'note': '新資金定期存款優惠',
+                        'source': 'bank'
+                    }
 
         if hkd_nf:
-            rates['hkd'] = {}
-            for period, rate in hkd_nf.items():
-                rates['hkd'][period] = {
-                    'rate': rate,
-                    'new_funds': True,
-                }
-            rates['note'] = '新資金定期存款優惠'
+            rates['hkd'] = hkd_nf
             # Extract promo end date if available
             date_m = re.search(r'(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日', nf_section)
             if date_m:
-                rates['hkd_note'] = f'新資金定期優惠 (至 {date_m.group(2)}/{date_m.group(3)})'
-            else:
-                rates['hkd_note'] = '新資金定期存款優惠'
+                # Add date info to note if needed
+                pass
 
     # === 一般定期存款年利率 ===
     td_idx = text.find('定期存款年利率')
@@ -74,36 +79,41 @@ def parse(text, tables=None, html=None):
         for period, label in [('1m', '1個月'), ('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
             m = re.search(rf'{label}\s+(\d+\.\d+)%\s+\d+\.\d+%\s+(\d+\.\d+)%', td_section)
             if m:
-                hkd_std[period] = float(m.group(1))
-                usd_std[period] = float(m.group(2))
+                hkd_std[period] = {
+                    'rate': float(m.group(1)),
+                    'min_deposit': 1,
+                    'note': '定期存款年利率',
+                    'source': 'bank'
+                }
+                usd_std[period] = {
+                    'rate': float(m.group(2)),
+                    'min_deposit': 1,
+                    'note': '定期存款年利率',
+                    'source': 'bank'
+                }
 
         # If we already have new fund rates, merge existing_funds
         if 'hkd' in rates:
-            for period, rate in hkd_std.items():
+            for period, rate_dict in hkd_std.items():
                 if period in rates['hkd'] and isinstance(rates['hkd'][period], dict):
-                    rates['hkd'][period]['existing_funds'] = {'rate': rate, 'min_deposit': 1, 'note': '定期存款年利率'}
+                    rates['hkd'][period]['existing_funds'] = rate_dict
         elif hkd_std:
             rates['hkd'] = {}
-            for period, rate in hkd_std.items():
+            for period, rate_dict in hkd_std.items():
                 rates['hkd'][period] = {
                     'new_funds': None,
-                    'existing_funds': {'rate': rate, 'min_deposit': 1, 'note': '定期存款年利率'},
+                    'existing_funds': rate_dict,
                     'exchange': None,
                 }
-            rates['note'] = '定期存款年利率'
-            rates['_use_new_structure'] = True
 
         if usd_std:
             rates['usd'] = {}
-            for period, rate in usd_std.items():
+            for period, rate_dict in usd_std.items():
                 rates['usd'][period] = {
                     'new_funds': None,
-                    'existing_funds': {'rate': rate, 'min_deposit': 1, 'note': '定期存款年利率'},
+                    'existing_funds': rate_dict,
                     'exchange': None,
                 }
-            if 'note' not in rates:
-                rates['note'] = '定期存款年利率'
-            rates['_use_new_structure'] = True
 
     if rates and ('hkd' in rates or 'usd' in rates):
         return rates

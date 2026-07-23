@@ -30,24 +30,20 @@ def parse(text, tables=None, html=None):
             hkd_rates = _parse_hkd_table(table_str)
             if hkd_rates:
                 rates['hkd'] = hkd_rates
-                rates['hkd']['note'] = '理慧銀行港元定期存款'
         
         # USD table
         if '美元' in table_str and '100或以上' in table_str:
             usd_rates = _parse_usd_table(table_str)
             if usd_rates:
                 rates['usd'] = usd_rates
-                rates['usd']['note'] = '美元定期存款'
         
         # CNY table
         if '人民幣' in table_str and '500或以上' in table_str:
             cny_rates = _parse_cny_table(table_str)
             if cny_rates:
                 rates['cny'] = cny_rates
-                rates['cny']['note'] = '人民幣定期存款'
     
     if rates:
-        rates['note'] = '理慧銀行定期存款利率'
         return rates
     return None
 
@@ -72,9 +68,19 @@ def _parse_hkd_table(table_str):
                 nums = re.findall(r'(\d+\.\d+)%', line)
                 if len(nums) >= 2:
                     # Take the second rate (5萬+ tier)
-                    rates[period_key] = float(nums[1])
+                    rates[period_key] = {
+                        'rate': float(nums[1]),
+                        'min_deposit': 50000,
+                        'note': '理慧銀行港元定期存款',
+                        'source': 'bank'
+                    }
                 elif len(nums) == 1:
-                    rates[period_key] = float(nums[0])
+                    rates[period_key] = {
+                        'rate': float(nums[0]),
+                        'min_deposit': 500,
+                        'note': '理慧銀行港元定期存款',
+                        'source': 'bank'
+                    }
                 break
     
     return rates if rates else None
@@ -97,7 +103,12 @@ def _parse_usd_table(table_str):
             if period_label in line:
                 m = re.search(r'(\d+\.\d+)%', line)
                 if m:
-                    rates[period_key] = float(m.group(1))
+                    rates[period_key] = {
+                        'rate': float(m.group(1)),
+                        'min_deposit': 100,
+                        'note': '美元定期存款',
+                        'source': 'bank'
+                    }
                 break
     
     return rates if rates else None
@@ -120,7 +131,12 @@ def _parse_cny_table(table_str):
             if period_label in line:
                 m = re.search(r'(\d+\.\d+)%', line)
                 if m:
-                    rates[period_key] = float(m.group(1))
+                    rates[period_key] = {
+                        'rate': float(m.group(1)),
+                        'min_deposit': 500,
+                        'note': '人民幣定期存款',
+                        'source': 'bank'
+                    }
                 break
     
     return rates if rates else None

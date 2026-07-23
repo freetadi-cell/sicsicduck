@@ -99,7 +99,6 @@ def _parse_pdf_text(pdf_text):
         # Fallback: try 特優定期存款
         return _parse_special_rates(pdf_text)
 
-    rates['note'] = '新資金定期存款推廣（分行）'
     return rates
 
 
@@ -134,7 +133,12 @@ def _parse_cny_section(text):
             periods = ['1m', '3m', '4m', '6m', '12m']
             result = {}
             for i, period in enumerate(periods):
-                result[period] = float(pcts[i])
+                result[period] = {
+                    'rate': float(pcts[i]),
+                    'min_deposit': 200000,
+                    'note': '人民幣特優定期存款',
+                    'source': 'bank'
+                }
             return result
     
     return None
@@ -161,7 +165,12 @@ def _parse_new_funds_section(text, section_name):
             periods = ['1m', '3m', '4m', '6m', '12m']
             result = {}
             for i, period in enumerate(periods):
-                result[period] = max(float(pcts[i]), float(pcts[5 + i]))
+                result[period] = {
+                    'rate': max(float(pcts[i]), float(pcts[5 + i])),
+                    'min_deposit': 1000000,
+                    'note': '新資金定期存款推廣（分行）',
+                    'source': 'bank'
+                }
             return result
 
     return None
@@ -197,7 +206,6 @@ def _parse_special_rates(text):
             rates['usd'] = parsed
 
     if rates:
-        rates['note'] = '特優定期存款推廣（分行/網上/手機銀行）'
         return rates
     return None
 
@@ -211,6 +219,11 @@ def _parse_block_10(block):
             periods = ['1m', '3m', '4m', '6m', '12m']
             result = {}
             for i, period in enumerate(periods):
-                result[period] = float(pcts[5 + i])
+                result[period] = {
+                    'rate': float(pcts[5 + i]),
+                    'min_deposit': 500000,
+                    'note': '特優定期存款推廣（分行/網上/手機銀行）',
+                    'source': 'bank'
+                }
             return result
     return None

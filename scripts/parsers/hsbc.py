@@ -120,15 +120,33 @@ def parse(text, tables=None, html=None):
     # RewardCash rates are new_funds
     for p in ['3m', '6m']:
         if p in hkd_rc:
-            hkd_final[p] = {'rate': hkd_rc[p], 'fund_type': 'new_funds', 'min_deposit': 10000}
+            hkd_final[p] = {
+                'rate': hkd_rc[p],
+                'fund_type': 'new_funds',
+                'min_deposit': 10000,
+                'note': 'RewardCash 定期存款（新資金）',
+                'source': 'bank'
+            }
     # Preferential HKD rates are new_funds
     for p in ['3m', '6m']:
         if p in hkd_pref:
-            hkd_final[p] = {'rate': hkd_pref[p], 'fund_type': 'new_funds', 'min_deposit': 10000}
+            hkd_final[p] = {
+                'rate': hkd_pref[p],
+                'fund_type': 'new_funds',
+                'min_deposit': 10000,
+                'note': '滙豐定期存款優惠（新資金）',
+                'source': 'bank'
+            }
     # Exchange rates
     for p in ['1w']:
         if p in hkd_exchange:
-            hkd_final[p] = {'rate': hkd_exchange[p], 'conditions': ['exchange'], 'min_deposit': 10000}
+            hkd_final[p] = {
+                'rate': hkd_exchange[p],
+                'conditions': ['exchange'],
+                'min_deposit': 10000,
+                'note': '兌換資金優惠',
+                'source': 'bank'
+            }
     if hkd_final:
         result['hkd'] = hkd_final
     
@@ -136,13 +154,31 @@ def parse(text, tables=None, html=None):
     usd_final = {}
     for p in ['3m', '6m']:
         if p in usd_rc:
-            usd_final[p] = {'rate': usd_rc[p], 'fund_type': 'new_funds', 'min_deposit': 2000}
+            usd_final[p] = {
+                'rate': usd_rc[p],
+                'fund_type': 'new_funds',
+                'min_deposit': 2000,
+                'note': 'RewardCash 定期存款（新資金）',
+                'source': 'bank'
+            }
     for p in ['3m', '6m', '12m']:
         if p in usd_pref:
-            usd_final[p] = {'rate': usd_pref[p], 'fund_type': 'new_funds', 'min_deposit': 2000}
+            usd_final[p] = {
+                'rate': usd_pref[p],
+                'fund_type': 'new_funds',
+                'min_deposit': 2000,
+                'note': '滙豐定期存款優惠（新資金）',
+                'source': 'bank'
+            }
     for p in ['1w']:
         if p in usd_exchange:
-            usd_final[p] = {'rate': usd_exchange[p], 'conditions': ['exchange'], 'min_deposit': 2000}
+            usd_final[p] = {
+                'rate': usd_exchange[p],
+                'conditions': ['exchange'],
+                'min_deposit': 2000,
+                'note': '兌換資金優惠',
+                'source': 'bank'
+            }
     if usd_final:
         result['usd'] = usd_final
     
@@ -150,15 +186,27 @@ def parse(text, tables=None, html=None):
     cny_final = {}
     for p in ['3m', '6m', '12m']:
         if p in cny_pref:
-            cny_final[p] = {'rate': cny_pref[p], 'fund_type': 'new_funds', 'min_deposit': 10000}
+            cny_final[p] = {
+                'rate': cny_pref[p],
+                'fund_type': 'new_funds',
+                'min_deposit': 10000,
+                'note': '滙豐定期存款優惠（新資金）',
+                'source': 'bank'
+            }
     for p in ['1w']:
         if p in cny_exchange:
-            cny_final[p] = {'rate': cny_exchange[p], 'conditions': ['exchange'], 'min_deposit': 10000}
+            cny_final[p] = {
+                'rate': cny_exchange[p],
+                'conditions': ['exchange'],
+                'min_deposit': 10000,
+                'note': '兌換資金優惠',
+                'source': 'bank'
+            }
     if cny_final:
         result['cny'] = cny_final
     
+    # DO NOT set global note - each rate has its own note field
     if result:
-        result['note'] = '滙豐定期存款優惠（新資金）'
         return result
     
     # Fallback: try to find CNY exchange rates on the page
@@ -174,8 +222,14 @@ def parse(text, tables=None, html=None):
             pk = f'{n}m' if f'{n}m' in ['1m', '2m', '3m', '6m', '12m'] else None
             if pk:
                 cny_rates[pk] = {'rate': float(m.group(2))}
-        if cny_rates:
-            result = {'cny': cny_rates, 'note': '滙豐人民幣定期存款'}
-            return result
+        # Fallback CNY rates with proper structure
+    if cny_rates:
+        for p in cny_rates:
+            if 'note' not in cny_rates[p]:
+                cny_rates[p]['note'] = '人民幣定期存款'
+            if 'source' not in cny_rates[p]:
+                cny_rates[p]['source'] = 'bank'
+        result = {'cny': cny_rates}
+        return result
     
     return None

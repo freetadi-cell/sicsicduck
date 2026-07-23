@@ -28,8 +28,7 @@ Example output:
       'existing_funds': {'rate': 2.45, 'min_deposit': 50000},
       'exchange': None
     }
-  },
-  '_use_new_structure': True
+  }
 }
 """
 import re
@@ -133,6 +132,7 @@ def parse(text, tables=None, html=None, usd_rates=None, hkd_new_funds_rates=None
                     'rate': base_hkd[period],
                     'min_deposit': 50000,
                     'note': '網上定存特惠年利率',
+                    'source': 'bank'
                 }
             
             # Add new_funds rate from promo section
@@ -141,6 +141,7 @@ def parse(text, tables=None, html=None, usd_rates=None, hkd_new_funds_rates=None
                     'rate': nf_hkd[period],
                     'min_deposit': 1000000,
                     'note': '新資金定期存款優惠（100萬港元以上）',
+                    'source': 'bank'
                 }
     
     if base_usd or nf_usd or usd_rates:
@@ -159,12 +160,14 @@ def parse(text, tables=None, html=None, usd_rates=None, hkd_new_funds_rates=None
                     'rate': usd_rates[period],
                     'min_deposit': 6000,
                     'note': '網上定存特惠年利率',
+                    'source': 'bank'
                 }
             elif period in base_usd:
                 rates['usd'][period]['existing_funds'] = {
                     'rate': base_usd[period],
                     'min_deposit': 6000,
                     'note': '網上定存特惠年利率',
+                    'source': 'bank'
                 }
             
             if period in nf_usd:
@@ -172,11 +175,10 @@ def parse(text, tables=None, html=None, usd_rates=None, hkd_new_funds_rates=None
                     'rate': nf_usd[period],
                     'min_deposit': 65000,
                     'note': '新資金定期存款優惠（65,000美元以上）',
+                    'source': 'bank'
                 }
     
     if rates:
-        rates['note'] = '網上定存特惠年利率'
-        rates['_use_new_structure'] = True
         return rates
     
     return None

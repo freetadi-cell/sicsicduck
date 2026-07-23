@@ -92,10 +92,25 @@ def parse_hket_article(text, bank_name=None):
             if period not in rates[current_currency]:
                 rates[current_currency][period] = {}
             
+            # 根據區塊類型決定 note 和 source
+            if current_section == 'new_funds':
+                note = '新資金定期存款優惠'
+                source = 'hket'
+            elif current_section == 'existing_funds':
+                note = '定期存款牌價利率'
+                source = 'hket'
+            elif current_section == 'new_customer':
+                note = '新客戶定期存款優惠'
+                source = 'hket'
+            else:
+                note = '定期存款'
+                source = 'hket'
+            
             rates[current_currency][period][current_section] = {
                 'rate': rate,
                 'min_deposit': min_deposit,
-                'source': 'hket'
+                'note': note,
+                'source': source
             }
     
     # 清理空的幣種

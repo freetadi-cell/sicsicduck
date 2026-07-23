@@ -38,19 +38,16 @@ def parse(text, tables=None, html=None):
                     usd_rates = _parse_rate_table(table_str)
                     if usd_rates:
                         rates['usd'] = usd_rates
-                        rates['usd']['note'] = '美元新資金定期存款'
                 elif '1.40' in table_str or '1.45' in table_str:
                     # CNY table
                     cny_rates = _parse_rate_table(table_str)
                     if cny_rates:
                         rates['cny'] = cny_rates
-                        rates['cny']['note'] = '人民幣新資金定期存款'
                 else:
                     # HKD table
                     hkd_rates = _parse_rate_table(table_str)
                     if hkd_rates:
                         rates['hkd'] = hkd_rates
-                        rates['hkd']['note'] = '港元新資金定期存款'
     
     # Fallback to text parsing
     if not rates and text:
@@ -62,18 +59,18 @@ def parse(text, tables=None, html=None):
                 if 'hkd' not in rates:
                     rates['hkd'] = {}
                 rates['hkd'][period] = {
-                    'new_funds': float(m.group(1)),
-                    'existing_funds': float(m.group(2))
+                    'new_funds': {'rate': float(m.group(1)), 'min_deposit': 10000, 'note': '新資金定期存款', 'source': 'bank'},
+                    'existing_funds': {'rate': float(m.group(2)), 'min_deposit': 10000, 'note': '定期存款牌價利率', 'source': 'bank'},
+                    'exchange': None
                 }
     
     if rates:
-        rates['note'] = '東亞銀行特惠定期存款利率'
         return rates
     return None
 
 
 def _parse_rate_table(table_str):
-    """Parse a single rate table, returning dict of period -> rate (new_funds)."""
+    """Parse a single rate table, returning dict with new_funds and existing_funds."""
     rates = {}
     
     for period, label in [('3m', '3個月'), ('6m', '6個月'), ('12m', '12個月')]:
@@ -85,7 +82,11 @@ def _parse_rate_table(table_str):
                 # Format: 3個月  2.65 / 2.55  2.60 / 2.55 ...
                 m = re.search(r'(\d+\.\d+)\s*/\s*(\d+\.\d+)', line)
                 if m:
-                    rates[period] = float(m.group(1))  # new funds rate
+                    rates[period] = {
+                        'new_funds': {'rate': float(m.group(1)), 'min_deposit': 10000, 'note': '新資金定期存款', 'source': 'bank'},
+                        'existing_funds': {'rate': float(m.group(2)), 'min_deposit': 10000, 'note': '定期存款牌價利率', 'source': 'bank'},
+                        'exchange': None
+                    }
                     break
     
     return rates if rates else None

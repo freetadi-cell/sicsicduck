@@ -69,8 +69,6 @@ def parse(text, tables=None, html=None):
                     }
         
         if rates.get('hkd'):
-            rates['note'] = note_card_rate
-            rates['_use_new_structure'] = True
             return rates
     
     # Try snapshot format first (from agent-browser)
@@ -82,7 +80,7 @@ def parse(text, tables=None, html=None):
         # HKD 3m
         if 'row "港元 3個月 2.40"' in text:
             rates['hkd']['3m'] = {
-                'new_funds': {'rate': 2.40, 'min_deposit': 10000, 'note': '新資金定期存款優惠（網上理財）'},
+                'new_funds': {'rate': 2.40, 'min_deposit': 10000, 'note': note_new_funds, 'source': 'bank'},
                 'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                 'exchange': {'rate': None, 'min_deposit': None, 'note': None},
             }
@@ -90,7 +88,7 @@ def parse(text, tables=None, html=None):
         # HKD 6m
         if 'row "6個月 2.20 2.20"' in text:
             rates['hkd']['6m'] = {
-                'new_funds': {'rate': 2.20, 'min_deposit': 10000, 'note': '新資金定期存款優惠（網上理財）'},
+                'new_funds': {'rate': 2.20, 'min_deposit': 10000, 'note': note_new_funds, 'source': 'bank'},
                 'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                 'exchange': {'rate': None, 'min_deposit': None, 'note': None},
             }
@@ -98,12 +96,12 @@ def parse(text, tables=None, html=None):
         # USD 2/3m
         if 'row "美元 2/3個月 3.30"' in text or 'row "2/3個月 3.30 3.30"' in text:
             rates['usd']['2m'] = {
-                'new_funds': {'rate': 3.30, 'min_deposit': 2000, 'note': '新資金定期存款優惠（網上理財）'},
+                'new_funds': {'rate': 3.30, 'min_deposit': 2000, 'note': note_new_funds, 'source': 'bank'},
                 'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                 'exchange': {'rate': None, 'min_deposit': None, 'note': None},
             }
             rates['usd']['3m'] = {
-                'new_funds': {'rate': 3.30, 'min_deposit': 2000, 'note': '新資金定期存款優惠（網上理財）'},
+                'new_funds': {'rate': 3.30, 'min_deposit': 2000, 'note': note_new_funds, 'source': 'bank'},
                 'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                 'exchange': {'rate': None, 'min_deposit': None, 'note': None},
             }
@@ -111,14 +109,12 @@ def parse(text, tables=None, html=None):
         # USD 6m
         if 'row "6個月 3.20 3.20"' in text:
             rates['usd']['6m'] = {
-                'new_funds': {'rate': 3.20, 'min_deposit': 2000, 'note': '新資金定期存款優惠（網上理財）'},
+                'new_funds': {'rate': 3.20, 'min_deposit': 2000, 'note': note_new_funds, 'source': 'bank'},
                 'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                 'exchange': {'rate': None, 'min_deposit': None, 'note': None},
             }
         
         if rates.get('hkd') or rates.get('usd'):
-            rates['note'] = note_new_funds
-            rates['_use_new_structure'] = True
             return rates
     
     # Try text format (tab-separated)
@@ -130,7 +126,7 @@ def parse(text, tables=None, html=None):
             m = re.search(rf'{label}[\s\t]+(\d+\.\d+)[\s\t]+(\d+\.\d+)', hkd_section)
             if m:
                 rates['hkd'][period] = {
-                    'new_funds': {'rate': float(m.group(1)), 'min_deposit': 10000, 'note': '新資金定期存款優惠（網上理財）'},
+                    'new_funds': {'rate': float(m.group(1)), 'min_deposit': 10000, 'note': note_new_funds, 'source': 'bank'},
                     'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                     'exchange': {'rate': None, 'min_deposit': None, 'note': None},
                 }
@@ -145,14 +141,14 @@ def parse(text, tables=None, html=None):
             p2 = f'{m.group(2)}m' if m.group(2) in ['2', '3'] else '3m'
             for p in [p1, p2]:
                 rates['usd'][p] = {
-                    'new_funds': {'rate': float(m.group(3)), 'min_deposit': 2000, 'note': '新資金定期存款優惠（網上理財）'},
+                    'new_funds': {'rate': float(m.group(3)), 'min_deposit': 2000, 'note': note_new_funds, 'source': 'bank'},
                     'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                     'exchange': {'rate': None, 'min_deposit': None, 'note': None},
                 }
         m = re.search(r'6個月[\s\t]+(\d+\.\d+)[\s\t]+(\d+\.\d+)', usd_section)
         if m:
             rates['usd']['6m'] = {
-                'new_funds': {'rate': float(m.group(1)), 'min_deposit': 2000, 'note': '新資金定期存款優惠（網上理財）'},
+                'new_funds': {'rate': float(m.group(1)), 'min_deposit': 2000, 'note': note_new_funds, 'source': 'bank'},
                 'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                 'exchange': {'rate': None, 'min_deposit': None, 'note': None},
             }
@@ -166,14 +162,12 @@ def parse(text, tables=None, html=None):
             m = re.search(rf'{label}[\s\t]+(\d+\.\d+)[\s\t]+(\d+\.\d+)', cny_section)
             if m:
                 rates['cny'][period] = {
-                    'new_funds': {'rate': float(m.group(1)), 'min_deposit': 10000, 'note': '新資金定期存款優惠（網上理財）'},
+                    'new_funds': {'rate': float(m.group(1)), 'min_deposit': 10000, 'note': note_new_funds, 'source': 'bank'},
                     'existing_funds': {'rate': None, 'min_deposit': None, 'note': None},
                     'exchange': {'rate': None, 'min_deposit': None, 'note': None},
                 }
     
     if rates:
-        rates['note'] = note_new_funds
-        rates['_use_new_structure'] = True
         return rates
     
     return None

@@ -26,12 +26,22 @@ def parse(text, tables=None, html=None):
             pattern = rf'{label}\s+(\d+\.\d+)%\s+(\d+\.\d+)%\s+(\d+\.\d+)%'
             m = re.search(pattern, hkd_section)
             if m:
-                hkd_rates[period] = float(m.group(3))
+                hkd_rates[period] = {
+                    'rate': float(m.group(3)),
+                    'min_deposit': 500000,
+                    'note': note,
+                    'source': 'bank'
+                }
             else:
                 pattern2 = rf'{label}\s+(\d+\.\d+)%'
                 m2 = re.search(pattern2, hkd_section)
                 if m2:
-                    hkd_rates[period] = float(m2.group(1))
+                    hkd_rates[period] = {
+                        'rate': float(m2.group(1)),
+                        'min_deposit': 10000,
+                        'note': note,
+                        'source': 'bank'
+                    }
         
         if hkd_rates:
             rates['hkd'] = hkd_rates
@@ -46,7 +56,12 @@ def parse(text, tables=None, html=None):
             pattern = rf'{label}\s+(\d+\.\d+)%'
             m = re.search(pattern, usd_section)
             if m:
-                usd_rates[period] = float(m.group(1))
+                usd_rates[period] = {
+                    'rate': float(m.group(1)),
+                    'min_deposit': 2000,
+                    'note': note,
+                    'source': 'bank'
+                }
         
         if usd_rates:
             rates['usd'] = usd_rates
@@ -61,7 +76,12 @@ def parse(text, tables=None, html=None):
             pattern = rf'{label}\s+(\d+\.\d+)%'
             m = re.search(pattern, cny_section)
             if m:
-                cny_rates[period] = float(m.group(1))
+                cny_rates[period] = {
+                    'rate': float(m.group(1)),
+                    'min_deposit': 10000,
+                    'note': note,
+                    'source': 'bank'
+                }
         
         if cny_rates:
             rates['cny'] = cny_rates
@@ -85,12 +105,16 @@ def parse(text, tables=None, html=None):
                         # CNY is typically in a specific column position
                         # This is approximate - exact position varies
                         if len(pcts) >= 2:
-                            cny_rates[period] = float(pcts[1])  # Try second column
+                            cny_rates[period] = {
+                                'rate': float(pcts[1]),
+                                'min_deposit': 10000,
+                                'note': note,
+                                'source': 'bank'
+                            }
                 
                 if cny_rates:
                     rates['cny'] = cny_rates
     
     if rates:
-        rates['note'] = note
         return rates
     return None

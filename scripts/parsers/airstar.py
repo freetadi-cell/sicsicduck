@@ -55,13 +55,16 @@ def parse(text, tables=None, html=None):
                     if period_label in header and i < len(rate_matches):
                         rate = float(rate_matches[i])
                         if rate > 0.01:  # Filter out very low rates
-                            hkd_rates[period_key] = rate
+                            hkd_rates[period_key] = {
+                                'rate': rate,
+                                'min_deposit': 1,
+                                'note': '象象銀行港元定期存款',
+                                'source': 'bank'
+                            }
                 
                 if hkd_rates:
                     rates['hkd'] = hkd_rates
-                    rates['hkd']['note'] = '象象銀行港元定期存款'
     
     if rates:
-        rates['note'] = '象象銀行定期存款利率'
         return rates
     return None

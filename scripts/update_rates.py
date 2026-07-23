@@ -388,7 +388,8 @@ def main():
         report_lines.append(f"🔧 **需要 Agent Browser Retry ({len(needs_browser_retry)} 間)**")
         for bank in needs_browser_retry:
             report_lines.append(f"  • {bank['name']} — URL: {bank.get('url', 'N/A')}")
-        report_lines.append("")        report_lines.append("💡 **建議**: 需要手動用 agent browser 去提取呢啲銀行嘅利率")
+        report_lines.append("")
+        report_lines.append("💡 **建議**: 需要手動用 agent browser 去提取呢啲銀行嘅利率")
         report_lines.append("")
     
     # Rate changes

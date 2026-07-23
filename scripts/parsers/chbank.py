@@ -36,22 +36,18 @@ def parse(text=None, tables=None, html=None):
                 hkd_rates = _parse_cloud_rates(table_str, '港 元')
                 if hkd_rates:
                     rates['hkd'] = hkd_rates
-                    rates['hkd']['note'] = '雲利率（網上/流動理財）'
             
             if '美 元' in table_str:
                 usd_rates = _parse_cloud_rates(table_str, '美 元')
                 if usd_rates:
                     rates['usd'] = usd_rates
-                    rates['usd']['note'] = '美元雲利率'
             
             if '人民幣' in table_str:
                 cny_rates = _parse_cloud_rates(table_str, '人民幣')
                 if cny_rates:
                     rates['cny'] = cny_rates
-                    rates['cny']['note'] = '人民幣雲利率'
     
     if rates:
-        rates['note'] = '創興銀行雲利率（網上/流動理財）'
         return rates
     
     # Fallback to 牌價 rates
@@ -62,7 +58,6 @@ def parse(text=None, tables=None, html=None):
                 hkd_rates = _parse_board_rates(table_str, '港 元')
                 if hkd_rates:
                     rates['hkd'] = hkd_rates
-                    rates['hkd']['note'] = '牌價利率'
     
     return rates if rates else None
 
@@ -105,7 +100,12 @@ def _parse_cloud_rates(table_str, currency_label):
         if col_idx < len(values):
             rate = values[col_idx]
             if rate > 0.5:  # Reasonable rate threshold
-                rates[period] = rate
+                rates[period] = {
+                    'rate': rate,
+                    'min_deposit': 5000,
+                    'note': '雲利率（網上/流動理財）',
+                    'source': 'bank'
+                }
     
     return rates if rates else None
 
@@ -126,6 +126,11 @@ def _parse_board_rates(table_str, currency_label):
     m = re.search(r'(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)', section)
     if m:
         # These are 1天 7天 14天 1個月 2個月 3個月
-        rates['3m'] = float(m.group(6))
+        rates['3m'] = {
+            'rate': float(m.group(6)),
+            'min_deposit': 5000,
+            'note': '定期存款牌價利率',
+            'source': 'bank'
+        }
     
     return rates if rates else None
