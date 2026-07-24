@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T08:37:39.172419+08:00",
+  "last_updated": "2026-07-24T09:02:54.961731+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1166,52 +1166,52 @@
       "hkd": {
         "1m": {
           "rate": 2.13,
-          "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 1000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "3m": {
           "rate": 2.78,
-          "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 1000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "6m": {
           "rate": 2.93,
-          "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 1000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "12m": {
           "rate": 2.98,
-          "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 1000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         }
       },
       "usd": {
         "1m": {
           "rate": 3.3,
-          "min_deposit": 2000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 5000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "3m": {
           "rate": 3.65,
-          "min_deposit": 2000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 5000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "6m": {
           "rate": 3.7,
-          "min_deposit": 2000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 5000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "12m": {
           "rate": 3.7,
-          "min_deposit": 2000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "min_deposit": 5000,
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         }
       },
@@ -1219,25 +1219,25 @@
         "6m": {
           "rate": 1.3,
           "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "12m": {
           "rate": 1.3,
           "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "1m": {
           "rate": 75.0,
           "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         },
         "3m": {
           "rate": 1.25,
           "min_deposit": 10000,
-          "note": "網上銀行/流動銀行定期存款利率",
+          "note": "個人網上銀行/流動銀行定期存款",
           "source": "bank"
         }
       }
@@ -2097,18 +2097,10 @@
           }
         },
         "1m": {
-          "existing_funds": {
-            "rate": 50.0,
-            "min_deposit": 500,
-            "note": "理慧銀行港元定期存款",
-            "source": "bank"
-          },
-          "new_funds": {
-            "rate": 1.2,
-            "min_deposit": 50000,
-            "note": "5萬+利率",
-            "source": "bank"
-          }
+          "rate": 1.2,
+          "min_deposit": 50000,
+          "note": "理慧銀行港元定期存款",
+          "source": "bank"
         },
         "2m": {
           "existing_funds": {
@@ -2125,18 +2117,10 @@
           }
         },
         "3m": {
-          "existing_funds": {
-            "rate": 1.1,
-            "min_deposit": 500,
-            "note": "理慧銀行港元定期存款",
-            "source": "bank"
-          },
-          "new_funds": {
-            "rate": 2.8,
-            "min_deposit": 50000,
-            "note": "5萬+利率",
-            "source": "bank"
-          }
+          "rate": 2.8,
+          "min_deposit": 50000,
+          "note": "理慧銀行港元定期存款",
+          "source": "bank"
         },
         "4m": {
           "existing_funds": {
@@ -2153,18 +2137,10 @@
           }
         },
         "6m": {
-          "existing_funds": {
-            "rate": 1.3,
-            "min_deposit": 500,
-            "note": "理慧銀行港元定期存款",
-            "source": "bank"
-          },
-          "new_funds": {
-            "rate": 2.6,
-            "min_deposit": 50000,
-            "note": "5萬+利率",
-            "source": "bank"
-          }
+          "rate": 2.6,
+          "min_deposit": 50000,
+          "note": "理慧銀行港元定期存款",
+          "source": "bank"
         },
         "9m": {
           "existing_funds": {
@@ -2181,42 +2157,34 @@
           }
         },
         "12m": {
-          "existing_funds": {
-            "rate": 1.6,
-            "min_deposit": 500,
-            "note": "理慧銀行港元定期存款",
-            "source": "bank"
-          },
-          "new_funds": {
-            "rate": 2.7,
-            "min_deposit": 50000,
-            "note": "5萬+利率",
-            "source": "bank"
-          }
+          "rate": 2.7,
+          "min_deposit": 50000,
+          "note": "理慧銀行港元定期存款",
+          "source": "bank"
         }
       },
       "usd": {
         "1m": {
           "rate": 1.5,
-          "min_deposit": 100,
+          "min_deposit": 10000,
           "note": "理慧銀行美元定期存款",
           "source": "bank"
         },
         "3m": {
           "rate": 3.9,
-          "min_deposit": 100,
+          "min_deposit": 10000,
           "note": "理慧銀行美元定期存款",
           "source": "bank"
         },
         "6m": {
           "rate": 3.4,
-          "min_deposit": 100,
+          "min_deposit": 10000,
           "note": "理慧銀行美元定期存款",
           "source": "bank"
         },
         "12m": {
           "rate": 3.3,
-          "min_deposit": 100,
+          "min_deposit": 10000,
           "note": "理慧銀行美元定期存款",
           "source": "bank"
         }
@@ -2224,25 +2192,25 @@
       "cny": {
         "1m": {
           "rate": 1.0,
-          "min_deposit": 500,
+          "min_deposit": 10000,
           "note": "理慧銀行人民幣定期存款",
           "source": "bank"
         },
         "3m": {
           "rate": 1.1,
-          "min_deposit": 500,
+          "min_deposit": 10000,
           "note": "理慧銀行人民幣定期存款",
           "source": "bank"
         },
         "6m": {
           "rate": 1.1,
-          "min_deposit": 500,
+          "min_deposit": 10000,
           "note": "理慧銀行人民幣定期存款",
           "source": "bank"
         },
         "12m": {
           "rate": 1.3,
-          "min_deposit": 500,
+          "min_deposit": 10000,
           "note": "理慧銀行人民幣定期存款",
           "source": "bank"
         }
@@ -2609,28 +2577,28 @@
       "hkd": {
         "1m": {
           "rate": 2.5,
-          "new_funds": true,
+          "fund_type": "new_funds",
           "min_deposit": 100,
           "note": "新資金定期存款優惠",
           "source": "bank"
         },
         "3m": {
           "rate": 3.0,
-          "new_funds": true,
+          "fund_type": "new_funds",
           "min_deposit": 100,
           "note": "新資金定期存款優惠",
           "source": "bank"
         },
         "6m": {
           "rate": 2.9,
-          "new_funds": true,
+          "fund_type": "new_funds",
           "min_deposit": 100,
           "note": "新資金定期存款優惠",
           "source": "bank"
         },
         "12m": {
           "rate": 3.15,
-          "new_funds": true,
+          "fund_type": "new_funds",
           "min_deposit": 100,
           "note": "新資金定期存款優惠",
           "source": "bank"
