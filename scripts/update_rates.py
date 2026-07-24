@@ -230,6 +230,10 @@ def fetch_bank_page(url, timeout=15):
             logger.warning(f"  HTTP {response.status_code} for {url}")
             return {'text': None, 'tables': [], 'html': None, 'success': False}
         
+        # Force correct encoding
+        if response.encoding is None or response.encoding == 'ISO-8859-1':
+            response.encoding = 'utf-8'
+        
         html = response.text
         
         # Check for block pages
@@ -275,6 +279,9 @@ def fetch_bank_page(url, timeout=15):
     except requests.exceptions.RequestException as e:
         logger.warning(f"  Request error for {url}: {e}")
         return {'text': None, 'tables': [], 'html': None, 'success': False}
+    except Exception as e:
+        logger.warning(f"  Parse error for {url}: {e}")
+        return {'text': None, 'tables': [], 'html': None, 'success': False}
 
 
 def scrape_bank(bank_info):
@@ -297,6 +304,10 @@ def scrape_bank(bank_info):
     # === Step 1: 嘗試官網 ===
     # URL 優先次序：promotion > hkd_rates > card_rates > general
     url_priority = ['promotion', 'hkd_rates', 'card_rates', 'general']
+    
+    # 如果策略係 ['hket']，跳過官網直接用 HKET
+    if strategy == ['hket']:
+        url_priority = []
     
     for url_type in url_priority:
         url = urls.get(url_type)

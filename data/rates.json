@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T08:27:14.434793+08:00",
+  "last_updated": "2026-07-24T08:30:17.923635+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -499,30 +499,34 @@
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 2.9
+          "source": "bank"
         },
         "6m": {
           "rate": 3.1,
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 3.05
+          "source": "bank"
         },
         "12m": {
           "rate": 3.1,
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 3.05
+          "source": "bank"
         },
         "4m": {
           "rate": 2.9,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
+          "source": "bank"
+        },
+        "9m": {
+          "rate": 3.1,
+          "fund_type": "new_funds",
+          "min_deposit": 500000,
+          "note": "新資金定期存款優惠",
           "source": "bank"
         }
       },
@@ -546,8 +550,7 @@
           "fund_type": "new_funds",
           "min_deposit": 128000,
           "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 3.9
+          "source": "bank"
         },
         "6m": {
           "rate": 3.9,
@@ -711,13 +714,13 @@
       "hkd": {
         "3m": {
           "new_funds": {
-            "rate": 3.05,
+            "rate": 2.65,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "bank"
           },
           "existing_funds": {
-            "rate": 2.95,
+            "rate": 2.55,
             "min_deposit": 10000,
             "note": "定期存款牌價利率",
             "source": "bank"
@@ -740,12 +743,19 @@
           "exchange": null
         },
         "12m": {
-          "rate": 0.0265,
-          "min_deposit": null,
-          "note": "定期存款優惠",
-          "source": "uhk",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "new_funds": {
+            "rate": 2.65,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "bank"
+          },
+          "existing_funds": {
+            "rate": 2.55,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank"
+          },
+          "exchange": null
         }
       },
       "usd": {

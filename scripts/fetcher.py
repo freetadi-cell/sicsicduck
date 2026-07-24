@@ -105,6 +105,10 @@ def fetch_with_requests(url: str, headers: Optional[Dict] = None, timeout: int =
         response = requests.get(url, headers=headers, timeout=timeout)
         
         if response.status_code == 200:
+            # Force correct encoding
+            if response.encoding is None or response.encoding == 'ISO-8859-1':
+                response.encoding = 'utf-8'
+            
             # 檢查是否係 CloudFront 錯誤頁面
             if 'ERROR: The request could not be satisfied' in response.text:
                 logger.warning(f"CloudFront blocked: {url}")
@@ -129,6 +133,9 @@ def fetch_with_requests(url: str, headers: Optional[Dict] = None, timeout: int =
         return None
     except requests.exceptions.RequestException as e:
         logger.error(f"Request error for {url}: {e}")
+        return None
+    except Exception as e:
+        logger.error(f"Parse error for {url}: {e}")
         return None
 
 
