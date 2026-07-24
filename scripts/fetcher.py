@@ -20,35 +20,34 @@ logger = logging.getLogger(__name__)
 
 # 銀行抓取策略配置
 BANK_FETCH_STRATEGY = {
-    # B類：只用 HKET（官網被 CloudFront/Cloudflare 阻擋或 404）
+    # B類：只用 HKET（官網被 CloudFront/Cloudflare 阻擋）
     'cncbi': ['hket'],
     'fusion': ['hket'],
     'ant': ['hket'],
-    'icbc': ['hket'],  # 官網 404
     
-    # C類：官網優先，HKET 作為 backup（JS 渲染）
+    # C類：官網優先，HKET 作為 backup
     'pao': ['general', 'hket'],
-    'hangseng': ['hket'],  # JS 渲染，直接用 HKET
-    'sc': ['hket'],  # JS 渲染，直接用 HKET
-    'dbs': ['hket'],  # JS 渲染 + 壓縮數據，直接用 HKET
-    'bocomm': ['hket'],  # JS 渲染，直接用 HKET
-    'winglung': ['hket'],  # JS 渲染，直接用 HKET
-    'chbank': ['hket'],  # JS 渲染，直接用 HKET
-    'ncb': ['hket'],  # JS 渲染，直接用 HKET
     
     # D類：官網優先（PDF 或特殊處理）
-    'chiyu': ['hket', 'general'],  # HKET 優先，官網只有兌換定存
-    'welab': ['hket', 'general'],  # JS 渲染，HKET 優先
-    'airstar': ['hket', 'general'],  # JS 渲染，HKET 優先
-    'za': ['hket', 'general'],  # JS 渲染，HKET 優先
+    'chiyu': ['general'],
+    'icbc': ['general'],
+    'welab': ['general'],
     
-    # A類：大部分傳統銀行，只用官網（web_fetch 可以抓到）
+    # A類：大部分傳統銀行，只用官網
     'hsbc': ['general'],
     'bochk': ['general'],
+    'hangseng': ['general'],
+    'sc': ['general'],
+    'dbs': ['general'],
     'bea': ['general'],
     'fubon': ['general'],
+    'bocomm': ['general'],
     'shacom': ['general'],
     'publicbank': ['general'],
+    'winglung': ['general'],
+    'chbank': ['general'],
+    'airstar': ['general'],
+    'za': ['general'],
     'livi': ['general'],
     
     # 默認策略：先試官網，失敗再試 HKET
@@ -103,10 +102,6 @@ def fetch_with_requests(url: str, headers: Optional[Dict] = None, timeout: int =
         response = requests.get(url, headers=headers, timeout=timeout)
         
         if response.status_code == 200:
-            # Force correct encoding
-            if response.encoding is None or response.encoding == 'ISO-8859-1':
-                response.encoding = 'utf-8'
-            
             # 檢查是否係 CloudFront 錯誤頁面
             if 'ERROR: The request could not be satisfied' in response.text:
                 logger.warning(f"CloudFront blocked: {url}")
@@ -131,9 +126,6 @@ def fetch_with_requests(url: str, headers: Optional[Dict] = None, timeout: int =
         return None
     except requests.exceptions.RequestException as e:
         logger.error(f"Request error for {url}: {e}")
-        return None
-    except Exception as e:
-        logger.error(f"Parse error for {url}: {e}")
         return None
 
 

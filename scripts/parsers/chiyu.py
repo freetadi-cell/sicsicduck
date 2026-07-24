@@ -13,48 +13,89 @@ import os
 
 
 def parse(text, tables=None, html=None):
-    """Parse Chiyu Bank time deposit rates from PDF."""
-    try:
-        # Download the deposit page HTML
-        r = subprocess.run(
-            ['curl', '-sL', '--max-time', '15',
-             'https://www.chiyubank.com/cyb/index/zxxx/20230523/index.shtml'],
-            capture_output=True, timeout=20
-        )
-        html = r.stdout.decode('utf-8', errors='ignore')
-
-        # Find first PDF link
-        pdf_match = re.search(r'href=["\'](/cyb/attachDir/[^"\']*\.pdf)["\']', html)
-        if not pdf_match:
-            return None
-
-        pdf_url = f"https://www.chiyubank.com{pdf_match.group(1)}"
-
-        # Download PDF
-        with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as tmp:
-            tmp_path = tmp.name
-
-        r = subprocess.run(
-            ['curl', '-sL', '--max-time', '15', '-o', tmp_path, pdf_url],
-            capture_output=True, timeout=20
-        )
-        if r.returncode != 0:
-            return None
-
-        # Extract text from PDF
-        r = subprocess.run(
-            ['pdftotext', '-layout', tmp_path, '-'],
-            capture_output=True, text=True, timeout=10
-        )
-        os.unlink(tmp_path)
-
-        if r.returncode != 0:
-            return None
-
-        return _parse_pdf_text(r.stdout)
-
-    except Exception:
+    """Parse Chiyu Bank time deposit rates from page text.
+    
+    The page shows 「外幣兌換定期存款」rates for HKD/USD/CNY.
+    These require currency exchange (兌換資金).
+    """
+    if not text:
         return None
+    
+    rates = {}
+    
+    # Find the 外幣兌換定期存款 section
+    exchange_idx = text.find('外幣兌換定期存款')
+    if exchange_idx < 0:
+        return None
+    
+    # Get the section with the rate table
+    section = text[exchange_idx:exchange_idx + 1500]
+    
+    # Parse HKD rates: 港元\t2.08%\t5.00%
+    # Look for pattern: 港元 followed by percentages
+    hkd_match = re.search(r'港元[\s\t]+(\d+\.\d+)%[\s\t]+(\d+\.\d+)%', section)
+    if hkd_match:
+        rates['hkd'] = {
+            '1m': {
+                'rate': float(hkd_match.group(1)),
+                'min_deposit': 10000,
+                'note': '外幣兌換定期存款（1個月）',
+                'source': 'bank',
+                'conditions': ['exchange']
+            },
+            '1w': {
+                'rate': float(hkd_match.group(2)),
+                'min_deposit': 10000,
+                'note': '外幣兌換定期存款（1星期）',
+                'source': 'bank',
+                'conditions': ['exchange']
+            }
+        }
+    
+    # Parse USD rates
+    usd_match = re.search(r'美元[\s\t]+(\d+\.\d+)%[\s\t]+(\d+\.\d+)%', section)
+    if usd_match:
+        rates['usd'] = {
+            '1m': {
+                'rate': float(usd_match.group(1)),
+                'min_deposit': 1000,
+                'note': '外幣兌換定期存款（1個月）',
+                'source': 'bank',
+                'conditions': ['exchange']
+            },
+            '1w': {
+                'rate': float(usd_match.group(2)),
+                'min_deposit': 1000,
+                'note': '外幣兌換定期存款（1星期）',
+                'source': 'bank',
+                'conditions': ['exchange']
+            }
+        }
+    
+    # Parse CNY rates
+    cny_match = re.search(r'人民幣[\s\t]+(\d+\.\d+)%[\s\t]+(\d+\.\d+)%', section)
+    if cny_match:
+        rates['cny'] = {
+            '1m': {
+                'rate': float(cny_match.group(1)),
+                'min_deposit': 10000,
+                'note': '外幣兌換定期存款（1個月）',
+                'source': 'bank',
+                'conditions': ['exchange']
+            },
+            '1w': {
+                'rate': float(cny_match.group(2)),
+                'min_deposit': 10000,
+                'note': '外幣兌換定期存款（1星期）',
+                'source': 'bank',
+                'conditions': ['exchange']
+            }
+        }
+    
+    
+    if rates:
+        return rates
+    return None
 
 
 def _parse_pdf_text(pdf_text):

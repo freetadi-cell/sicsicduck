@@ -67,7 +67,9 @@ def _parse_cloud_rates(table_str, currency_label):
     
     Format: 港 元 5,000 至 49,999 0.0010 0.0100 0.0100 2.4500 2.5000 2.6000 1.5000 0.9000 0.8000 0.2000
     Columns: 1天 7天 14天 1個月 2個月 3個月 6個月 9個月 12個月 24個月
-    Indices:  3   4    5     6     7     8     9    10    11     12
+    
+    Note: Numbers are often concatenated (e.g., "0.00100.0100")
+    Solution: Extract 4-decimal numbers (X.XXXX format)
     """
     rates = {}
     
@@ -77,25 +79,23 @@ def _parse_cloud_rates(table_str, currency_label):
         return None
     
     # Get the section after currency label
-    section = table_str[idx:]
+    section = table_str[idx:idx+1500]
     
-    # Split into lines and find rate values
-    lines = section.split('\n')
+    # Extract 4-decimal numbers (利率都是 4 位小數)
+    # Pattern: X.XXXX where X is digit
+    nums = re.findall(r'\d+\.\d{4}', section)
+    values = [float(n) for n in nums if float(n) > 0 and float(n) < 100]
     
-    # Column indices for periods (0-indexed from start of rate values)
+    # Column indices for periods (0-indexed from rate values)
+    # Columns: 1天 7天 14天 1個月 2個月 3個月 6個月 9個月 12個月
+    # Skip the first 3 values (1天 7天 14天 are usually very low like 0.0010, 0.0100)
     period_map = {
         '3m': 5,   # 3個月
         '6m': 6,   # 6個月
         '12m': 8,  # 12個月
     }
     
-    # Find all numeric values
-    values = []
-    for line in lines:
-        nums = re.findall(r'[\d.]+', line)
-        values.extend([float(n) for n in nums if float(n) > 0])
-    
-    # Extract rates for each period (use highest tier)
+    # Extract rates for each period
     for period, col_idx in period_map.items():
         if col_idx < len(values):
             rate = values[col_idx]
