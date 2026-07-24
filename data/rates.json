@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T08:32:55.205136+08:00",
+  "last_updated": "2026-07-24T08:37:39.172419+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -377,33 +377,6 @@
       "type": "traditional",
       "logo_color": "#006341",
       "hkd": {
-        "1w": {
-          "existing_funds": {
-            "rate": 10.0,
-            "min_deposit": 10000,
-            "note": "定期存款牌價利率",
-            "source": "bank",
-            "conditions": []
-          }
-        },
-        "1m": {
-          "existing_funds": {
-            "rate": 10.0,
-            "min_deposit": 10000,
-            "note": "定期存款牌價利率",
-            "source": "bank",
-            "conditions": []
-          }
-        },
-        "2m": {
-          "existing_funds": {
-            "rate": 10.0,
-            "min_deposit": 10000,
-            "note": "定期存款牌價利率",
-            "source": "bank",
-            "conditions": []
-          }
-        },
         "3m": {
           "rate": 2.4,
           "min_deposit": 10000,
@@ -426,24 +399,30 @@
       "usd": {
         "3m": {
           "rate": 3.3,
-          "min_deposit": 10000,
+          "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         },
         "6m": {
           "rate": 3.3,
-          "min_deposit": 10000,
+          "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         },
         "12m": {
           "rate": 3.3,
-          "min_deposit": 10000,
+          "min_deposit": 2000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
         }
       },
       "cny": {
+        "3m": {
+          "rate": 1.0,
+          "min_deposit": 10000,
+          "note": "網上新資金定期存款特惠年利率",
+          "source": "bank"
+        },
         "6m": {
           "rate": 1.1,
           "min_deposit": 10000,
@@ -452,12 +431,6 @@
         },
         "12m": {
           "rate": 1.2,
-          "min_deposit": 10000,
-          "note": "網上新資金定期存款特惠年利率",
-          "source": "bank"
-        },
-        "3m": {
-          "rate": 1.0,
           "min_deposit": 10000,
           "note": "網上新資金定期存款特惠年利率",
           "source": "bank"
@@ -2109,105 +2082,169 @@
       "type": "virtual",
       "logo_color": "#E91E63",
       "hkd": {
+        "1w": {
+          "existing_funds": {
+            "rate": 25.0,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 25.0,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
+        },
         "1m": {
-          "rate": 1.2,
-          "min_deposit": 50000,
-          "note": "理慧銀行港元定期存款",
-          "source": "bank"
+          "existing_funds": {
+            "rate": 50.0,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 1.2,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
+        },
+        "2m": {
+          "existing_funds": {
+            "rate": 50.0,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 50.0,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
         },
         "3m": {
-          "rate": 2.8,
-          "min_deposit": 50000,
-          "note": "理慧銀行港元定期存款",
-          "source": "bank"
-        },
-        "6m": {
-          "rate": 2.6,
-          "min_deposit": 50000,
-          "note": "理慧銀行港元定期存款",
-          "source": "bank"
-        },
-        "12m": {
-          "rate": 2.7,
-          "min_deposit": 50000,
-          "note": "理慧銀行港元定期存款",
-          "source": "bank"
+          "existing_funds": {
+            "rate": 1.1,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 2.8,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
         },
         "4m": {
-          "rate": 0.026000000000000002,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "existing_funds": {
+            "rate": 1.2,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 2.6,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
+        },
+        "6m": {
+          "existing_funds": {
+            "rate": 1.3,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 2.6,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
         },
         "9m": {
-          "rate": 0.027000000000000003,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "existing_funds": {
+            "rate": 1.3,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 2.7,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
+        },
+        "12m": {
+          "existing_funds": {
+            "rate": 1.6,
+            "min_deposit": 500,
+            "note": "理慧銀行港元定期存款",
+            "source": "bank"
+          },
+          "new_funds": {
+            "rate": 2.7,
+            "min_deposit": 50000,
+            "note": "5萬+利率",
+            "source": "bank"
+          }
         }
       },
       "usd": {
         "1m": {
-          "rate": 0.015,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 1.5,
+          "min_deposit": 100,
+          "note": "理慧銀行美元定期存款",
+          "source": "bank"
         },
         "3m": {
-          "rate": 0.039,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 3.9,
+          "min_deposit": 100,
+          "note": "理慧銀行美元定期存款",
+          "source": "bank"
         },
         "6m": {
-          "rate": 0.034,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 3.4,
+          "min_deposit": 100,
+          "note": "理慧銀行美元定期存款",
+          "source": "bank"
         },
         "12m": {
-          "rate": 0.033,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 3.3,
+          "min_deposit": 100,
+          "note": "理慧銀行美元定期存款",
+          "source": "bank"
         }
       },
       "cny": {
+        "1m": {
+          "rate": 1.0,
+          "min_deposit": 500,
+          "note": "理慧銀行人民幣定期存款",
+          "source": "bank"
+        },
         "3m": {
-          "rate": 0.011000000000000001,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 1.1,
+          "min_deposit": 500,
+          "note": "理慧銀行人民幣定期存款",
+          "source": "bank"
         },
         "6m": {
-          "rate": 0.011000000000000001,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 1.1,
+          "min_deposit": 500,
+          "note": "理慧銀行人民幣定期存款",
+          "source": "bank"
         },
         "12m": {
-          "rate": 0.013000000000000001,
-          "min_deposit": null,
-          "note": "定期存款利率（5萬以上）",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 1.3,
+          "min_deposit": 500,
+          "note": "理慧銀行人民幣定期存款",
+          "source": "bank"
         }
       }
     },
@@ -2364,167 +2401,75 @@
       "type": "traditional",
       "logo_color": "",
       "hkd": {
-        "1m": {
-          "rate": 2.08,
-          "min_deposit": 10000,
-          "note": "外幣兌換定期存款（1個月）",
-          "source": "bank",
-          "conditions": [
-            "exchange"
-          ]
-        },
-        "3m": {
-          "rate": 0.0285,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "6m": {
-          "rate": 0.028999999999999998,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "12m": {
-          "rate": 0.026000000000000002,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "4m": {
-          "rate": 0.0285,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
         "1w": {
-          "rate": 5.0,
-          "min_deposit": 10000,
-          "note": "外幣兌換定期存款（1星期）",
-          "source": "bank",
-          "conditions": [
-            "exchange"
-          ]
+          "exchange": {
+            "rate": 5.0,
+            "min_deposit": 10000,
+            "note": "外幣兌換定期存款（1星期）",
+            "source": "bank",
+            "conditions": [
+              "exchange"
+            ]
+          }
+        },
+        "1m": {
+          "exchange": {
+            "rate": 2.08,
+            "min_deposit": 10000,
+            "note": "外幣兌換定期存款（1個月）",
+            "source": "bank",
+            "conditions": [
+              "exchange"
+            ]
+          }
         }
       },
       "usd": {
-        "1m": {
-          "rate": 4.0,
-          "min_deposit": 1000,
-          "note": "外幣兌換定期存款（1個月）",
-          "source": "bank",
-          "conditions": [
-            "exchange"
-          ]
-        },
-        "3m": {
-          "rate": 0.037000000000000005,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "6m": {
-          "rate": 0.0375,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "12m": {
-          "rate": 0.033,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "4m": {
-          "rate": 0.0375,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
         "1w": {
-          "rate": 5.0,
-          "min_deposit": 1000,
-          "note": "外幣兌換定期存款（1星期）",
-          "source": "bank",
-          "conditions": [
-            "exchange"
-          ]
+          "exchange": {
+            "rate": 5.0,
+            "min_deposit": 1000,
+            "note": "外幣兌換定期存款（1星期）",
+            "source": "bank",
+            "conditions": [
+              "exchange"
+            ]
+          }
+        },
+        "1m": {
+          "exchange": {
+            "rate": 4.0,
+            "min_deposit": 1000,
+            "note": "外幣兌換定期存款（1個月）",
+            "source": "bank",
+            "conditions": [
+              "exchange"
+            ]
+          }
         }
       },
       "cny": {
-        "3m": {
-          "rate": 0.013500000000000002,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "4m": {
-          "rate": 0.013500000000000002,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "6m": {
-          "rate": 0.013500000000000002,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "12m": {
-          "rate": 0.013500000000000002,
-          "min_deposit": null,
-          "note": "新資金定期存款推廣（分行）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
-        },
-        "2m": {
-          "rate": 0.025,
-          "min_deposit": null,
-          "note": "從銀行官網提取",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
+        "1w": {
+          "exchange": {
+            "rate": 10.0,
+            "min_deposit": 10000,
+            "note": "外幣兌換定期存款（1星期）",
+            "source": "bank",
+            "conditions": [
+              "exchange"
+            ]
+          }
         },
         "1m": {
-          "rate": 3.0,
-          "min_deposit": 10000,
-          "note": "外幣兌換定期存款（1個月）",
-          "source": "bank",
-          "conditions": [
-            "exchange"
-          ]
-        },
-        "1w": {
-          "rate": 10.0,
-          "min_deposit": 10000,
-          "note": "外幣兌換定期存款（1星期）",
-          "source": "bank",
-          "conditions": [
-            "exchange"
-          ]
+          "exchange": {
+            "rate": 3.0,
+            "min_deposit": 10000,
+            "note": "外幣兌換定期存款（1個月）",
+            "source": "bank",
+            "conditions": [
+              "exchange"
+            ]
+          }
         }
       }
     },
