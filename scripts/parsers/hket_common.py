@@ -67,17 +67,11 @@ def parse_hket_article(text, bank_name=None):
     
     for line in lines:
         line = line.strip()
-        if not line:
-            continue
         
-        # 識別區塊標題（完整標題行，如「信銀國際現有客戶新資金2.95厘港元定存」）
+        # 識別區塊標題
         section = detect_section(line)
         if section:
             current_section = section
-            # 從標題行提取貨幣（如果有）
-            currency_in_title = detect_currency(line)
-            if currency_in_title:
-                current_currency = currency_in_title
             continue
         
         # 識別貨幣
@@ -91,11 +85,6 @@ def parse_hket_article(text, bank_name=None):
             period = rate_data['period']
             rate = rate_data['rate']
             min_deposit = rate_data.get('min_deposit', 0)
-            
-            # 特殊處理：過濾明顯錯誤嘅利率
-            # 1星期嘅利率唔應該超過 10%（除非係快閃活動）
-            if period == '1w' and rate > 0.10 and current_section != 'flash_promotion':
-                continue
             
             if current_currency not in rates:
                 rates[current_currency] = {}
@@ -112,9 +101,6 @@ def parse_hket_article(text, bank_name=None):
                 source = 'hket'
             elif current_section == 'new_customer':
                 note = '新客戶定期存款優惠'
-                source = 'hket'
-            elif current_section == 'flash_promotion':
-                note = '快閃定期存款優惠'
                 source = 'hket'
             else:
                 note = '定期存款'
@@ -148,22 +134,14 @@ def detect_section(line):
     """識別區塊類型（新客戶/新資金/現有資金）"""
     line_lower = line.lower()
     
-    # 快閃活動要優先識別，因為佢有特殊利率
-    if '快閃' in line or '閃購' in line or '快搶' in line:
-        return 'flash_promotion'
-    
-    # 特殊識別「（新客戶專有）」格式（富融銀行）
-    if '（新客戶專有）' in line or '新客戶專有' in line:
+    if '全新客戶' in line or '新客戶專有' in line:
         return 'new_customer'
-    
-    if '全新客戶' in line:
-        return 'new_customer'
-    elif '現有客戶新資金' in line:
-        return 'new_funds'
     elif '新資金' in line and '現有' not in line:
         return 'new_funds'
     elif '現有資金' in line or '不論新舊資金' in line:
         return 'existing_funds'
+    elif '快閃' in line:
+        return 'flash_promotion'
     elif '零元起存' in line or '最低存款' in line:
         return 'general'
     
@@ -189,14 +167,7 @@ def extract_rate_from_line(line):
     - 12個月 2.95厘
     - 1星期 6.88%
     - 100萬元至200萬元 3.30%
-    - 10萬元 1.5厘（螞蟻銀行格式）
     """
-    # 過濾標題行（包含「最高」「每日更新」等）
-    title_indicators = ['最高', '每日更新', '定期存款年利率', '存款期年利率', '總年利率']
-    for indicator in title_indicators:
-        if indicator in line and '存款期' not in line:
-            return None
-    
     # 提取存款期
     period_match = re.search(r'(\d+)\s*(個月|月|星期|周)', line)
     if not period_match:
@@ -214,39 +185,26 @@ def extract_rate_from_line(line):
         period = f"{period_num}m"
     
     # 提取利率（支援 % 和 厘）
-    # 注意：要先匹配「厘」再匹配「%」，因為「25厘」唔係「25%厘」
-    rate_match_li = re.search(r'(\d+\.?\d*)厘', line)
     rate_match_percent = re.search(r'(\d+\.?\d*)%', line)
+    rate_match_li = re.search(r'(\d+\.?\d*)厘', line)
     
-    if rate_match_li:
-        rate = float(rate_match_li.group(1)) / 100
-    elif rate_match_percent:
+    if rate_match_percent:
         rate = float(rate_match_percent.group(1)) / 100
+    elif rate_match_li:
+        rate = float(rate_match_li.group(1)) / 100
     else:
         return None
     
     # 提取最低存款額
     min_deposit = 0
-    
-    # 優先匹配「10萬元」格式（螞蟻銀行：10萬元新資金）
-    amount_match_wan = re.search(r'(\d+)萬元', line)
-    if amount_match_wan:
-        min_deposit = int(amount_match_wan.group(1)) * 10000
+    amount_match = re.search(r'(\d+)萬', line)
+    if amount_match:
+        min_deposit = int(amount_match.group(1)) * 10000
     else:
-        # 嘗試匹配「100萬元至200萬元」格式
-        amount_match_range = re.search(r'(\d+)萬元至', line)
-        if amount_match_range:
-            min_deposit = int(amount_match_range.group(1)) * 10000
-        else:
-            # 嘗試匹配「港元定期」前面嘅金額
-            amount_match_prefix = re.search(r'(\d+)萬港元', line)
-            if amount_match_prefix:
-                min_deposit = int(amount_match_prefix.group(1)) * 10000
-            else:
-                # 嘗試提取「100元」「1元」等
-                amount_match_yuan = re.search(r'(\d+)元', line)
-                if amount_match_yuan:
-                    min_deposit = int(amount_match_yuan.group(1))
+        # 嘗試提取「100元」「1元」等
+        amount_match_yuan = re.search(r'(\d+)元', line)
+        if amount_match_yuan:
+            min_deposit = int(amount_match_yuan.group(1))
     
     return {
         'period': period,

@@ -11,7 +11,7 @@ Parser 設計：
 - 自動識別存款期限和利率
 - 支援多種利率格式
 """
-from .hket_common import parse_hket_article
+from parsers.hket_common import parse_hket_article
 
 
 def parse(text, tables=None, html=None):

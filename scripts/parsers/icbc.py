@@ -12,72 +12,31 @@ import re
 
 
 def parse(text, tables=None, html=None):
-    """Parse ICBC Asia time deposit rates from page text.
-    
-    The page may not have tables (JS-rendered), so we parse from text.
-    """
-    if not text:
+    """Parse ICBC Asia new funds time deposit rates."""
+    if not tables:
         return None
     
     rates = {}
     
-    # Check if tables exist and parse them
-    if tables:
-        for table in tables:
-            table_str = str(table)
-            if '98天' in table_str and '188天' in table_str:
-                hkd_rates = _parse_rates(table_str, '港幣', '零售')
-                if hkd_rates:
-                    rates['hkd'] = hkd_rates
-                
-                usd_rates = _parse_rates(table_str, '美元', '零售')
-                if usd_rates:
-                    rates['usd'] = usd_rates
-                
-                cny_rates = _parse_rates(table_str, '人民幣', '零售')
-                if cny_rates:
-                    rates['cny'] = cny_rates
-    
-    # If no rates from tables, parse from text
-    if not rates and text:
-        # Look for patterns like "港元定期存款 高達 3.00% 年利率"
-        # or "特惠定存年利率5.88%"
+    for table in tables:
+        table_str = str(table)
         
-        # HKD rates
-        hkd_match = re.search(r'港元定期存款.*?高達\s*(\d+\.\d+)%', text, re.DOTALL)
-        if hkd_match:
-            rates['hkd'] = {
-                '3m': {
-                    'rate': float(hkd_match.group(1)),
-                    'min_deposit': 50000,
-                    'note': '工銀亞洲網上定期存款優惠',
-                    'source': 'bank'
-                }
-            }
-        
-        # USD rates
-        usd_match = re.search(r'外幣定期存款.*?高達\s*(\d+\.\d+)%', text, re.DOTALL)
-        if usd_match:
-            rates['usd'] = {
-                '3m': {
-                    'rate': float(usd_match.group(1)),
-                    'min_deposit': 5000,
-                    'note': '工銀亞洲外幣定期存款優惠',
-                    'source': 'bank'
-                }
-            }
-        
-        # Also look for "特惠定存年利率X.XX%"
-        promo_match = re.search(r'特惠定存年利率\s*(\d+\.\d+)%', text)
-        if promo_match and 'hkd' not in rates:
-            rates['hkd'] = {
-                '3m': {
-                    'rate': float(promo_match.group(1)),
-                    'min_deposit': 10000,
-                    'note': '工銀亞洲新客戶特惠定期存款',
-                    'source': 'bank'
-                }
-            }
+        # Check if this is the main rate table
+        if '98天' in table_str and '188天' in table_str:
+            # Parse HKD rates (零售銀行個人客戶 tier)
+            hkd_rates = _parse_rates(table_str, '港幣', '零售')
+            if hkd_rates:
+                rates['hkd'] = hkd_rates
+            
+            # Parse USD rates
+            usd_rates = _parse_rates(table_str, '美元', '零售')
+            if usd_rates:
+                rates['usd'] = usd_rates
+            
+            # Parse CNY rates
+            cny_rates = _parse_rates(table_str, '人民幣', '零售')
+            if cny_rates:
+                rates['cny'] = cny_rates
     
     if rates:
         return rates

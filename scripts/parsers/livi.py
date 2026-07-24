@@ -1,87 +1,142 @@
 """理慧銀行 Livi Bank - Parser for time deposit rates.
 
-Updated 2026-07-24 to handle text format from requests.
+Page: https://www.livibank.com/zh_HK/features/livisave.html
 
-Format:
-存款期及年利率 (HKD)
-存入金額（HKD） 500 - 5萬以下 5萬+
-7 日 0.25% 0.25%
-1 個月 0.50% 1.20%
-3 個月 1.10% 2.80%
-6 個月 1.30% 2.60%
-12 個月 1.60% 2.70%
+Table format (港元定存):
+存入金額（HKD）  500 - 5萬以下  5萬+
+7 日            0.25%         0.25%
+1 個月          0.50%         1.20%
+3 個月          1.10%         2.80%
+6 個月          1.30%         2.60%
+12 個月         1.60%         2.70%
+
+Also has USD and CNY tables.
 """
 import re
 
 
 def parse(text, tables=None, html=None):
     """Parse Livi Bank time deposit rates."""
-    if not text:
+    if not tables:
         return None
     
     rates = {}
     
-    # === HKD ===
-    # Find "存款期及年利率 (HKD)" section
-    hkd_idx = text.find('存款期及年利率 (HKD)')
-    if hkd_idx >= 0:
-        section = text[hkd_idx:hkd_idx + 1000]
+    for table in tables:
+        table_str = str(table)
         
-        # Parse tier rates
-        # Format: "1 個月 0.50% 1.20%" (low tier, high tier)
-        hkd_rates = {}
+        # HKD table
+        if '存入金額' in table_str and 'HKD' in table_str.upper():
+            hkd_rates = _parse_hkd_table(table_str)
+            if hkd_rates:
+                rates['hkd'] = hkd_rates
         
-        for period, label in [('1m', '1'), ('3m', '3'), ('6m', '6'), ('12m', '12')]:
-            # Match: "1 個月 0.50% 1.20%"
-            m = re.search(rf'{label}\s*個月\s+(\d+\.\d+)%\s+(\d+\.\d+)%', section)
-            if m:
-                # Use high tier rate (for 5萬+)
-                hkd_rates[period] = {
-                    'rate': float(m.group(2)),
-                    'min_deposit': 50000,
-                    'note': '理慧銀行港元定期存款',
-                    'source': 'bank'
-                }
+        # USD table
+        if '美元' in table_str and '100或以上' in table_str:
+            usd_rates = _parse_usd_table(table_str)
+            if usd_rates:
+                rates['usd'] = usd_rates
         
-        if hkd_rates:
-            rates['hkd'] = hkd_rates
+        # CNY table
+        if '人民幣' in table_str and '500或以上' in table_str:
+            cny_rates = _parse_cny_table(table_str)
+            if cny_rates:
+                rates['cny'] = cny_rates
     
-    # === USD ===
-    usd_idx = text.find('存款期及年利率 (USD)')
-    if usd_idx >= 0:
-        section = text[usd_idx:usd_idx + 1000]
-        
-        usd_rates = {}
-        for period, label in [('1m', '1'), ('3m', '3'), ('6m', '6'), ('12m', '12')]:
-            m = re.search(rf'{label}\s*個月\s+(\d+\.\d+)%', section)
-            if m:
-                usd_rates[period] = {
-                    'rate': float(m.group(1)),
-                    'min_deposit': 10000,
-                    'note': '理慧銀行美元定期存款',
-                    'source': 'bank'
-                }
-        
-        if usd_rates:
-            rates['usd'] = usd_rates
+    if rates:
+        return rates
+    return None
+
+
+def _parse_hkd_table(table_str):
+    """Parse HKD table, returning best rates (5萬+ tier)."""
+    rates = {}
     
-    # === CNY ===
-    cny_idx = text.find('存款期及年利率 (CNY)')
-    if cny_idx >= 0:
-        section = text[cny_idx:cny_idx + 1000]
-        
-        cny_rates = {}
-        for period, label in [('1m', '1'), ('3m', '3'), ('6m', '6'), ('12m', '12')]:
-            m = re.search(rf'{label}\s*個月\s+(\d+\.\d+)%', section)
-            if m:
-                cny_rates[period] = {
-                    'rate': float(m.group(1)),
-                    'min_deposit': 10000,
-                    'note': '理慧銀行人民幣定期存款',
-                    'source': 'bank'
-                }
-        
-        if cny_rates:
-            rates['cny'] = cny_rates
+    period_map = {
+        '1 個月': '1m',
+        '3 個月': '3m',
+        '6 個月': '6m',
+        '12 個月': '12m',
+    }
+    
+    lines = table_str.split('\n')
+    for line in lines:
+        for period_label, period_key in period_map.items():
+            if period_label in line:
+                # Extract rates from this line
+                # Format: 3 個月  1.10%  2.80%
+                nums = re.findall(r'(\d+\.\d+)%', line)
+                if len(nums) >= 2:
+                    # Take the second rate (5萬+ tier)
+                    rates[period_key] = {
+                        'rate': float(nums[1]),
+                        'min_deposit': 50000,
+                        'note': '理慧銀行港元定期存款',
+                        'source': 'bank'
+                    }
+                elif len(nums) == 1:
+                    rates[period_key] = {
+                        'rate': float(nums[0]),
+                        'min_deposit': 500,
+                        'note': '理慧銀行港元定期存款',
+                        'source': 'bank'
+                    }
+                break
+    
+    return rates if rates else None
+
+
+def _parse_usd_table(table_str):
+    """Parse USD table."""
+    rates = {}
+    
+    period_map = {
+        '1個月': '1m',
+        '3個月': '3m',
+        '6個月': '6m',
+        '12個月': '12m',
+    }
+    
+    lines = table_str.split('\n')
+    for line in lines:
+        for period_label, period_key in period_map.items():
+            if period_label in line:
+                m = re.search(r'(\d+\.\d+)%', line)
+                if m:
+                    rates[period_key] = {
+                        'rate': float(m.group(1)),
+                        'min_deposit': 100,
+                        'note': '美元定期存款',
+                        'source': 'bank'
+                    }
+                break
+    
+    return rates if rates else None
+
+
+def _parse_cny_table(table_str):
+    """Parse CNY table."""
+    rates = {}
+    
+    period_map = {
+        '1個月': '1m',
+        '3個月': '3m',
+        '6個月': '6m',
+        '12個月': '12m',
+    }
+    
+    lines = table_str.split('\n')
+    for line in lines:
+        for period_label, period_key in period_map.items():
+            if period_label in line:
+                m = re.search(r'(\d+\.\d+)%', line)
+                if m:
+                    rates[period_key] = {
+                        'rate': float(m.group(1)),
+                        'min_deposit': 500,
+                        'note': '人民幣定期存款',
+                        'source': 'bank'
+                    }
+                break
     
     return rates if rates else None
