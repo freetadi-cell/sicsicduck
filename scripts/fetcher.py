@@ -20,29 +20,27 @@ logger = logging.getLogger(__name__)
 
 # 銀行抓取策略配置
 BANK_FETCH_STRATEGY = {
-    # B類：只用 HKET（官網被 CloudFront/Cloudflare 阻擋）
+    # B類：只用 HKET（官網被 CloudFront/Cloudflare 阻擋或 404）
     'cncbi': ['hket'],
     'fusion': ['hket'],
     'ant': ['hket'],
+    'icbc': ['hket'],  # 官網 404
     
-    # C類：官網優先，HKET 作為 backup
+    # C類：官網優先，HKET 作為 backup（JS 渲染）
     'pao': ['general', 'hket'],
+    'hangseng': ['hket'],  # JS 渲染，直接用 HKET
+    'sc': ['hket'],  # JS 渲染，直接用 HKET
+    'dbs': ['hket'],  # JS 渲染 + 壓縮數據，直接用 HKET
+    'bocomm': ['hket'],  # JS 渲染，直接用 HKET
+    'winglung': ['hket'],  # JS 渲染，直接用 HKET
+    'chbank': ['hket'],  # JS 渲染，直接用 HKET
+    'ncb': ['hket'],  # JS 渲染，直接用 HKET
     
     # D類：官網優先（PDF 或特殊處理）
     'chiyu': ['hket', 'general'],  # HKET 優先，官網只有兌換定存
-    'icbc': ['hket'],  # 官網 404
     'welab': ['hket', 'general'],  # JS 渲染，HKET 優先
     'airstar': ['hket', 'general'],  # JS 渲染，HKET 優先
     'za': ['hket', 'general'],  # JS 渲染，HKET 優先
-    
-    # E類：JS 渲染，嘗試官網 + HKET backup
-    'hangseng': ['general', 'hket'],
-    'sc': ['general', 'hket'],
-    'dbs': ['general', 'hket'],
-    'bocomm': ['general', 'hket'],
-    'winglung': ['general', 'hket'],
-    'chbank': ['general', 'hket'],
-    'ncb': ['hket', 'general'],  # 官網 JS 渲染，HKET 優先
     
     # A類：大部分傳統銀行，只用官網（web_fetch 可以抓到）
     'hsbc': ['general'],

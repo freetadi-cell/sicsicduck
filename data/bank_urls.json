@@ -23,27 +23,30 @@
       "name_en": "Hang Seng",
       "key": "hangseng",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909886",
         "general": "https://cms.hangseng.com/cms/emkt/pmo/grp06/p04/chi/index.html"
       },
-      "note": "JS 渲染頁面，requests 可能抓唔到利率表"
+      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
     },
     {
       "name": "渣打銀行",
       "name_en": "Standard Chartered",
       "key": "sc",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909887",
         "general": "https://www.sc.com/hk/zh/deposits/online-time-deposit/"
       },
-      "note": "JS 渲染，利率表喺另一個 API"
+      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
     },
     {
       "name": "星展銀行",
       "name_en": "DBS",
       "key": "dbs",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909888",
         "general": "https://www.dbs.com.hk/personal-zh/promotion/OnlineTD-promo"
       },
-      "note": "JS 渲染，利率表喺另一個 API"
+      "note": "官網 JS 渲染 + 壓縮數據，使用 HKET 作為主要數據源"
     },
     {
       "name": "東亞銀行",
@@ -68,7 +71,7 @@
       "name_en": "ICBC",
       "key": "icbc",
       "urls": {
-        "hket": "https://wealth.hket.com/article/3909868",
+        "hket": "https://wealth.hket.com/article/3909882",
         "general": "https://www.icbcasia.com/zh/deposit/"
       },
       "note": "官網 404，使用 HKET 作為主要數據源"
@@ -86,10 +89,10 @@
       "name_en": "BOCOM",
       "key": "bocomm",
       "urls": {
-        "hket": "https://wealth.hket.com/article/3909880",
+        "hket": "https://wealth.hket.com/article/3909889",
         "general": "https://www.hk.bankcomm.com/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml"
       },
-      "note": "官網 JS 渲染，使用 HKET 作為後備"
+      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
     },
     {
       "name": "上海商業銀行",
@@ -112,20 +115,20 @@
       "name_en": "Wing Lung",
       "key": "winglung",
       "urls": {
-        "hket": "https://wealth.hket.com/article/3909884",
+        "hket": "https://wealth.hket.com/article/3909891",
         "general": "https://www.cmbwinglungbank.com/wlb_corporate/hk/personal/investments/financial-information/interest-rates/deposit-interest-rates.html"
       },
-      "note": "官網 JS 渲染，使用 HKET 作為後備"
+      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
     },
     {
       "name": "創興銀行",
       "name_en": "CH Bank",
       "key": "chbank",
       "urls": {
-        "hket": "https://wealth.hket.com/article/3909888",
+        "hket": "https://wealth.hket.com/article/3909893",
         "general": "https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml"
       },
-      "note": "官網 JS 渲染，使用 HKET 作為後備"
+      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
     },
     {
       "name": "富融銀行",
