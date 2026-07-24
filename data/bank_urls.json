@@ -142,18 +142,20 @@
       "name_en": "Airstar",
       "key": "airstar",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909903",
         "general": "https://www.elebank.com/zh-hk/hkprime.html"
       },
-      "note": "定存利率在 HK Prime 頁面"
+      "note": "官網 JS 渲染，使用 HKET 作為後備"
     },
     {
       "name": "眾安銀行",
       "name_en": "ZA Bank",
       "key": "za",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909935",
         "general": "https://bank.za.group/hk/deposit"
       },
-      "note": "需要點擊「定期存款」tab"
+      "note": "官網 JS 渲染，使用 HKET 作為後備"
     },
     {
       "name": "平安數字銀行",
@@ -170,9 +172,10 @@
       "name_en": "WeLab",
       "key": "welab",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909940",
         "general": "https://www.welab.bank/zh/feature/gosave_2/"
       },
-      "note": "JS 渲染，利率表可能抓唔到"
+      "note": "官網 JS 渲染，使用 HKET 作為後備"
     },
     {
       "name": "理慧銀行",
@@ -197,8 +200,10 @@
       "name_en": "Chiyu",
       "key": "chiyu",
       "urls": {
+        "hket": "https://wealth.hket.com/article/3909890",
         "general": "https://www.chiyubank.com/cyb/index/zxxx/20230523/index.shtml"
-      }
+      },
+      "note": "官網定期存款喺 PDF，使用 HKET 作為後備"
     },
     {
       "name": "南洋商業銀行",

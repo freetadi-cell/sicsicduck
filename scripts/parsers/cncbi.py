@@ -11,7 +11,7 @@ Parser 設計：
 - 自動識別銀行名稱和利率格式
 - 支援 % 和 厘 兩種利率表示方式
 """
-from parsers.hket_common import parse_hket_article
+from .hket_common import parse_hket_article
 
 
 def parse(text, tables=None, html=None):

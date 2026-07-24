@@ -29,25 +29,28 @@ BANK_FETCH_STRATEGY = {
     'pao': ['general', 'hket'],
     
     # D類：官網優先（PDF 或特殊處理）
-    'chiyu': ['general'],
-    'icbc': ['general'],
-    'welab': ['general'],
+    'chiyu': ['hket', 'general'],  # HKET 優先，官網只有兌換定存
+    'icbc': ['hket'],  # 官網 404
+    'welab': ['hket', 'general'],  # JS 渲染，HKET 優先
+    'airstar': ['hket', 'general'],  # JS 渲染，HKET 優先
+    'za': ['hket', 'general'],  # JS 渲染，HKET 優先
     
-    # A類：大部分傳統銀行，只用官網
+    # E類：JS 渲染，嘗試官網 + HKET backup
+    'hangseng': ['general', 'hket'],
+    'sc': ['general', 'hket'],
+    'dbs': ['general', 'hket'],
+    'bocomm': ['general', 'hket'],
+    'winglung': ['general', 'hket'],
+    'chbank': ['general', 'hket'],
+    'ncb': ['hket', 'general'],  # 官網 JS 渲染，HKET 優先
+    
+    # A類：大部分傳統銀行，只用官網（web_fetch 可以抓到）
     'hsbc': ['general'],
     'bochk': ['general'],
-    'hangseng': ['general'],
-    'sc': ['general'],
-    'dbs': ['general'],
     'bea': ['general'],
     'fubon': ['general'],
-    'bocomm': ['general'],
     'shacom': ['general'],
     'publicbank': ['general'],
-    'winglung': ['general'],
-    'chbank': ['general'],
-    'airstar': ['general'],
-    'za': ['general'],
     'livi': ['general'],
     
     # 默認策略：先試官網，失敗再試 HKET

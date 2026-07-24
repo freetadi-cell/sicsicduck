@@ -1,16 +1,40 @@
-"""匯立銀行 WeLab Bank - Parser for GoSave 2.0 time deposit rates."""
+"""匯立銀行 WeLab Bank - Parser for GoSave 2.0 time deposit rates.
+
+Updated 2026-07-24:
+- 官網 JS 渲染，利率表可能抓唔到
+- 改用 HKET 作為主要數據源
+- 保留官網 parser 作為後備
+
+Page: https://www.welab.bank/zh/feature/gosave_2/
+"""
 import re
+import sys
+import os
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(__file__))
+from hket_common import parse_hket_article
+
 
 def parse(text, tables=None, html=None):
     """Parse WeLab Bank GoSave 2.0 rates.
     
-    Page shows currency tabs: HKD, USD, CNY, AUD, GBP
-    Default visible tab is HKD.
-    Format: 3個月\t2.85%⁵  (Chinese format with tab separator)
+    Priority:
+    1. Try HKET article parsing (hket_common)
+    2. Fallback to original text parsing
     """
     if not text:
         return None
     
+    # === Try HKET parsing first ===
+    # Check if this looks like an HKET article
+    if '匯立銀行' in text or 'WeLab' in text or '每日定存' in text:
+        rates = parse_hket_article(text, bank_name='匯立銀行')
+        if rates and rates.get('hkd'):
+            # Convert HKET format to standard format
+            return _convert_hket_to_standard(rates)
+    
+    # === Fallback: original text parsing ===
     rates = {}
     note = 'GoSave 2.0 定期存款'
     
@@ -47,3 +71,39 @@ def parse(text, tables=None, html=None):
     if rates:
         return rates
     return None
+
+
+def _convert_hket_to_standard(hket_rates):
+    """Convert HKET format to standard format."""
+    result = {}
+    
+    for currency in ['hkd', 'usd', 'cny']:
+        if currency not in hket_rates:
+            continue
+        
+        currency_rates = {}
+        for period, period_data in hket_rates[currency].items():
+            # Take the best rate (new_funds > existing_funds > general)
+            best_rate = None
+            best_data = None
+            
+            for fund_type in ['new_funds', 'existing_funds', 'general']:
+                if fund_type in period_data:
+                    data = period_data[fund_type]
+                    rate = data.get('rate', 0)
+                    if rate and (best_rate is None or rate > best_rate):
+                        best_rate = rate
+                        best_data = data
+            
+            if best_data:
+                currency_rates[period] = {
+                    'rate': best_data['rate'],
+                    'min_deposit': best_data.get('min_deposit', 0),
+                    'note': best_data.get('note', '定期存款'),
+                    'source': 'hket'
+                }
+        
+        if currency_rates:
+            result[currency] = currency_rates
+    
+    return result if result else None
