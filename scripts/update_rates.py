@@ -23,6 +23,7 @@ from playwright.sync_api import sync_playwright
 # Import all parsers
 sys.path.insert(0, os.path.dirname(__file__))
 from parsers import *
+from parsers import normalize_rates
 from fetcher import fetch_with_requests, get_fetch_strategy
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
@@ -355,6 +356,10 @@ def main():
                 failed_banks.append({'name': name, 'key': key, 'reason': 'Parser 返回空數據，可能需要 browser retry'})
                 needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
                 continue
+            
+            # === 利率正規化：統一為百分比格式 ===
+            # 修正小數格式（0.025 → 2.5）同異常值
+            parsed = normalize_rates(parsed)
             
             logger.info(f"  ✅ {name} - parsed successfully")
             successful_banks.append(name)

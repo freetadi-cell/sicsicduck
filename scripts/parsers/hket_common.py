@@ -93,8 +93,9 @@ def parse_hket_article(text, bank_name=None):
             min_deposit = rate_data.get('min_deposit', 0)
             
             # 特殊處理：過濾明顯錯誤嘅利率
-            # 1星期嘅利率唔應該超過 10%（除非係快閃活動）
-            if period == '1w' and rate > 0.10 and current_section != 'flash_promotion':
+            # 1星期嘅利率唔應該超過 10%（除非係快閃活動或兌換資金推廣）
+            # ⚠️ 注意：rate 已經係百分比格式（e.g. 6.88 = 6.88%）
+            if period == '1w' and rate > 10.0 and current_section not in ('flash_promotion', 'new_funds'):
                 continue
             
             if current_currency not in rates:
@@ -214,14 +215,17 @@ def extract_rate_from_line(line):
         period = f"{period_num}m"
     
     # 提取利率（支援 % 和 厘）
+    # 統一輸出為百分比格式：2.95厘 = 2.95%，2.80% = 2.80
     # 注意：要先匹配「厘」再匹配「%」，因為「25厘」唔係「25%厘」
     rate_match_li = re.search(r'(\d+\.?\d*)厘', line)
     rate_match_percent = re.search(r'(\d+\.?\d*)%', line)
     
     if rate_match_li:
-        rate = float(rate_match_li.group(1)) / 100
+        # 「厘」= 百分比：2.95厘 = 2.95%
+        rate = float(rate_match_li.group(1))
     elif rate_match_percent:
-        rate = float(rate_match_percent.group(1)) / 100
+        # 「%」直接取數字：2.80% = 2.80
+        rate = float(rate_match_percent.group(1))
     else:
         return None
     

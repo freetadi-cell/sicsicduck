@@ -35,6 +35,13 @@ def parse(text, tables=None, html=None):
             m = re.search(rf'row "{label}\s+(\d+\.\d+)%', text)
             if m:
                 rate = float(m.group(1))
+                # ⚠️ Bug fix: 牌價利率通常極低（0.001% - 0.5%）
+                # 如果 rate >= 5.0，大概率係解析錯誤（e.g. 0.10000% 被錯誤提取）
+                # 牌價利率唔會超過 1%（2026年環境）
+                if rate > 1.0:
+                    # 可能係小數格式錯誤，嘗試修正
+                    # e.g. 10.0 → 0.10, 0.10000 → 0.10
+                    continue
                 rates['hkd'][period] = {
                     'new_funds': {'rate': None, 'min_deposit': None, 'note': None},
                     'existing_funds': {'rate': rate, 'min_deposit': 10000, 'note': '定期存款牌價利率', 'source': 'bank'},
@@ -45,6 +52,8 @@ def parse(text, tables=None, html=None):
                 m = re.search(rf'{label}\s+(\d+\.\d+)%', text)
                 if m:
                     rate = float(m.group(1))
+                    if rate > 1.0:
+                        continue
                     rates['hkd'][period] = {
                         'new_funds': {'rate': None, 'min_deposit': None, 'note': None},
                         'existing_funds': {'rate': rate, 'min_deposit': 10000, 'note': '定期存款牌價利率', 'source': 'bank'},

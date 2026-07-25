@@ -1,19 +1,32 @@
 """眾安銀行 ZA Bank - Parser for time deposit rates.
 
-Page: https://bank.za.group/
+Page: https://bank.za.group/hk/deposit
 
-ZA Bank is a virtual bank. Rates are usually displayed on the main page
-or in a savings/deposit section.
+ZA Bank is a virtual bank. Rates are usually very low (0.1% for most periods).
+
+⚠️ Bug fix (2026-07-25):
+- 舊版會將 0.1% 嘅利率錯誤提取，尤其係 USD 1m existing_funds 出現 10.0%
+- 新版加強利率合理性檢查，過濾超出合理範圍嘅值
+- ZA Bank 嘅定期存款利率通常極低（0.1%），唔會超過 1%
 """
 import re
 
 
 def parse(text, tables=None, html=None):
+    """Parse ZA Bank time deposit rates.
+    
+    ZA Bank rates are typically very low (0.1% for most periods).
+    Any rate > 1% for ZA Bank is likely a parsing error.
+    """
     if not text:
         return None
 
     hkd = {}
     usd = {}
+
+    # ZA Bank 定期存款利率合理上限（2026年）
+    # ZA Bank 利率極低，通常 0.1%，唔會超過 1%
+    ZA_RATE_MAX = 1.0
 
     # Look for time deposit rates
     td_idx = text.find('定期存款')
@@ -28,7 +41,8 @@ def parse(text, tables=None, html=None):
             m = re.search(rf'{label}\s*[^%]*?(\d+\.?\d*)%', section)
             if m:
                 rate = float(m.group(1))
-                if rate > 0:
+                # Filter out unreasonable rates for ZA Bank
+                if 0 < rate <= ZA_RATE_MAX:
                     hkd[period] = {
                         'rate': rate,
                         'min_deposit': 1,
@@ -46,7 +60,7 @@ def parse(text, tables=None, html=None):
                 m = re.search(rf'{label}\s*[^%]*?(\d+\.?\d*)%', section)
                 if m:
                     rate = float(m.group(1))
-                    if rate > 0:
+                    if 0 < rate <= ZA_RATE_MAX:
                         store[period] = {
                             'rate': rate,
                             'min_deposit': 1,
@@ -62,7 +76,7 @@ def parse(text, tables=None, html=None):
                 m = re.search(rf'{label}\s*個?月\s*[^%]*?(\d+\.?\d*)%', table_str)
                 if m:
                     rate = float(m.group(1))
-                    if rate > 0:
+                    if 0 < rate <= ZA_RATE_MAX:
                         hkd[period] = {
                             'rate': rate,
                             'min_deposit': 1,
