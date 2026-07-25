@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T08:32:23.498997+08:00",
+  "last_updated": "2026-07-25T08:53:36.227725+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1068,34 +1068,70 @@
       "logo_color": "#003DA5",
       "hkd": {
         "1m": {
-          "rate": 0.0215,
-          "min_deposit": null,
-          "note": "每日特息定期存款（電子渠道）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
+          "new_funds": {
+            "rate": 2.45,
+            "min_deposit": 1000000,
+            "note": "理財客戶網上新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds",
+              "wealth_customer"
+            ]
+          },
+          "existing_funds": {
+            "rate": 2.15,
+            "min_deposit": 20000,
+            "note": "電子渠道開立",
+            "source": "hket",
+            "conditions": [
+              "electronic_channel"
+            ]
+          }
         },
         "3m": {
-          "rate": 2.85,
-          "min_deposit": 10000,
-          "note": "交通銀行HKD定期存款",
-          "source": "bank"
+          "new_funds": {
+            "rate": 2.85,
+            "min_deposit": 1000000,
+            "note": "理財客戶網上新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds",
+              "wealth_customer"
+            ]
+          },
+          "existing_funds": {
+            "rate": 2.55,
+            "min_deposit": 20000,
+            "note": "電子渠道開立",
+            "source": "hket",
+            "conditions": [
+              "electronic_channel"
+            ]
+          }
         },
         "6m": {
-          "rate": 0.0275,
-          "min_deposit": null,
-          "note": "每日特息定期存款（電子渠道）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
+          "new_funds": {
+            "rate": 2.75,
+            "min_deposit": 1000000,
+            "note": "理財客戶網上新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds",
+              "wealth_customer"
+            ]
+          }
         },
         "12m": {
-          "rate": 0.026000000000000002,
-          "min_deposit": null,
-          "note": "每日特息定期存款（電子渠道）",
-          "source": "bank",
-          "fund_type": "new_funds",
-          "conditions": []
+          "new_funds": {
+            "rate": 2.6,
+            "min_deposit": 1000000,
+            "note": "理財客戶網上新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds",
+              "wealth_customer"
+            ]
+          }
         }
       },
       "usd": {
@@ -1344,52 +1380,46 @@
       "logo_color": "#C41230",
       "hkd": {
         "1m": {
-          "rate": 0.0115,
-          "min_deposit": null,
-          "note": "招商永隆銀行手機App定存利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 1.15,
+          "min_deposit": 10000,
+          "note": "手機銀行開立，不論新舊資金",
+          "source": "hket"
         },
         "2m": {
-          "rate": 0.014499999999999999,
-          "min_deposit": null,
-          "note": "招商永隆銀行手機App定存利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 1.45,
+          "min_deposit": 10000,
+          "note": "手機銀行開立，不論新舊資金",
+          "source": "hket"
         },
         "3m": {
-          "rate": 0.02,
-          "min_deposit": null,
-          "note": "招商永隆銀行手機App定存利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 2.0,
+          "min_deposit": 10000,
+          "note": "手機銀行開立，不論新舊資金",
+          "source": "hket"
         },
         "6m": {
-          "rate": 0.02,
-          "min_deposit": null,
-          "note": "招商永隆銀行手機App定存利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
-        },
-        "12m": {
-          "rate": 0.02,
-          "min_deposit": null,
-          "note": "招商永隆銀行手機App定存利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 2.0,
+          "min_deposit": 10000,
+          "note": "手機銀行開立，不論新舊資金",
+          "source": "hket"
         },
         "9m": {
-          "rate": 0.02,
-          "min_deposit": null,
-          "note": "招商永隆銀行手機App定存利率",
-          "source": "bank",
-          "fund_type": "existing_funds",
-          "conditions": []
+          "rate": 2.0,
+          "min_deposit": 10000,
+          "note": "手機銀行開立，不論新舊資金",
+          "source": "hket"
+        },
+        "12m": {
+          "rate": 2.0,
+          "min_deposit": 10000,
+          "note": "手機銀行開立，不論新舊資金",
+          "source": "hket"
+        },
+        "24m": {
+          "rate": 0.15,
+          "min_deposit": 10000,
+          "note": "手機銀行開立，不論新舊資金",
+          "source": "hket"
         }
       },
       "usd": {
@@ -1886,7 +1916,7 @@
       "hkd": {
         "1m": {
           "new_funds": {
-            "rate": 0.025,
+            "rate": 2.5,
             "min_deposit": 100,
             "note": "新資金",
             "source": "hket",
@@ -1905,7 +1935,7 @@
             ]
           },
           "existing_funds": {
-            "rate": 0.024,
+            "rate": 2.4,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
@@ -1914,7 +1944,7 @@
         },
         "3m": {
           "new_funds": {
-            "rate": 0.03,
+            "rate": 3.0,
             "min_deposit": 100,
             "note": "新資金",
             "source": "hket",
@@ -1923,7 +1953,7 @@
             ]
           },
           "existing_funds": {
-            "rate": 0.03,
+            "rate": 3.0,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
@@ -1932,7 +1962,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 0.029,
+            "rate": 2.9,
             "min_deposit": 100,
             "note": "新資金",
             "source": "hket",
@@ -1941,7 +1971,7 @@
             ]
           },
           "existing_funds": {
-            "rate": 0.0285,
+            "rate": 2.85,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
@@ -1950,7 +1980,7 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 0.031,
+            "rate": 3.1,
             "min_deposit": 100,
             "note": "新資金",
             "source": "hket",
@@ -1959,7 +1989,7 @@
             ]
           },
           "existing_funds": {
-            "rate": 0.03,
+            "rate": 3.0,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
@@ -1968,7 +1998,7 @@
         },
         "24m": {
           "existing_funds": {
-            "rate": 0.0295,
+            "rate": 2.95,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
@@ -2433,7 +2463,128 @@
       "key": "ncb",
       "type": "traditional",
       "logo_color": "#003399",
-      "hkd": {},
+      "hkd": {
+        "1w": {
+          "rate": 6.8,
+          "min_deposit": 1000,
+          "note": "兌換資金開立",
+          "source": "hket",
+          "conditions": [
+            "exchange"
+          ]
+        },
+        "1m": {
+          "new_funds": {
+            "rate": 2.88,
+            "min_deposit": 10000,
+            "note": "電子渠道新資金",
+            "source": "hket",
+            "conditions": [
+              "new_funds",
+              "electronic_channel"
+            ]
+          },
+          "existing_funds": {
+            "rate": 2.5,
+            "min_deposit": 10000,
+            "note": "電子渠道新資金",
+            "source": "hket",
+            "conditions": [
+              "electronic_channel"
+            ]
+          }
+        },
+        "2m": {
+          "rate": 2.65,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "3m": {
+          "rate": 2.85,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "4m": {
+          "rate": 2.85,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "5m": {
+          "rate": 3.05,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "6m": {
+          "rate": 3.05,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "9m": {
+          "rate": 3.05,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "12m": {
+          "rate": 3.05,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "2y": {
+          "rate": 3.05,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        },
+        "3y": {
+          "rate": 3.05,
+          "min_deposit": 10000,
+          "note": "電子渠道新資金",
+          "source": "hket",
+          "conditions": [
+            "new_funds",
+            "electronic_channel"
+          ]
+        }
+      },
       "usd": {
         "1m": {
           "new_funds": {
@@ -2562,32 +2713,95 @@
       "key": "pao",
       "hkd": {
         "1m": {
-          "rate": 2.5,
-          "fund_type": "new_funds",
-          "min_deposit": 100,
-          "note": "新資金定期存款優惠",
-          "source": "bank"
+          "new_funds": {
+            "rate": 2.5,
+            "min_deposit": 100,
+            "note": "新資金定期存款優惠",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 2.4,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          },
+          "new_customer": {
+            "rate": 8.0,
+            "min_deposit": 50000,
+            "note": "全新客戶首5萬，推廣期至7月29日",
+            "source": "hket",
+            "conditions": [
+              "new_customer",
+              "limited_time"
+            ]
+          }
         },
         "3m": {
-          "rate": 3.0,
-          "fund_type": "new_funds",
-          "min_deposit": 100,
-          "note": "新資金定期存款優惠",
-          "source": "bank"
+          "new_funds": {
+            "rate": 3.0,
+            "min_deposit": 100,
+            "note": "新資金定期存款優惠",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 3.0,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
         },
         "6m": {
-          "rate": 2.9,
-          "fund_type": "new_funds",
-          "min_deposit": 100,
-          "note": "新資金定期存款優惠",
-          "source": "bank"
+          "new_funds": {
+            "rate": 2.9,
+            "min_deposit": 100,
+            "note": "新資金定期存款優惠",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 2.85,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
         },
         "12m": {
-          "rate": 3.15,
-          "fund_type": "new_funds",
-          "min_deposit": 100,
-          "note": "新資金定期存款優惠",
-          "source": "bank"
+          "new_funds": {
+            "rate": 3.1,
+            "min_deposit": 100,
+            "note": "新資金定期存款優惠",
+            "source": "hket",
+            "conditions": [
+              "new_funds"
+            ]
+          },
+          "existing_funds": {
+            "rate": 3.0,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
+        },
+        "24m": {
+          "existing_funds": {
+            "rate": 2.95,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
         }
       }
     }

@@ -60,6 +60,7 @@ PARSER_MAP = {
     'livi': parse_livi,
     'ant': parse_ant,
     'chiyu': parse_chiyu,
+    'ncb': parse_ncb,
 }
 
 

@@ -89,10 +89,10 @@
       "name_en": "BOCOM",
       "key": "bocomm",
       "urls": {
-        "hket": "https://invest.hket.com/article/4162202",
+        "hket": "https://wealth.hket.com/article/3909871",
         "general": "https://www.hk.bankcomm.com/hk/shtml/hk/tw/2005155/2005178/2005179/list.shtml"
       },
-      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
+      "note": "官網 JS 渲染（iframe），利率表格無法直接提取，使用 HKET 作為主要數據源"
     },
     {
       "name": "上海商業銀行",
@@ -115,10 +115,10 @@
       "name_en": "Wing Lung",
       "key": "winglung",
       "urls": {
-        "hket": "https://invest.hket.com/article/4162202",
+        "hket": "https://wealth.hket.com/article/3909844",
         "general": "https://www.cmbwinglungbank.com/wlb_corporate/hk/personal/investments/financial-information/interest-rates/deposit-interest-rates.html"
       },
-      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
+      "note": "官網 JS 渲染，利率表格無法提取，使用 HKET 作為主要數據源"
     },
     {
       "name": "創興銀行",
@@ -165,10 +165,10 @@
       "name_en": "PAO Bank",
       "key": "pao",
       "urls": {
-        "hket": "https://wealth.hket.com/article/3909892",
+        "hket": "https://wealth.hket.com/article/3909822",
         "general": "https://www.pingandb.com/tc/retail-td-newfund.html"
       },
-      "note": "官網被 Cloudflare 阻擋，使用 HKET 作為主要數據源"
+      "note": "官網被 Cloudflare 阻擋，HKET 舊 URL 過期（3909892 指向錯誤文章），已更新為正確 URL 3909822"
     },
     {
       "name": "匯立銀行",
@@ -215,11 +215,11 @@
       "name_en": "NCB",
       "key": "ncb",
       "urls": {
-        "hket": "https://invest.hket.com/article/4162202",
+        "hket": "https://wealth.hket.com/article/3909866",
         "general": "https://www.ncb.com.hk/nanyang_bank/popup1/deposit.html"
       },
-      "note": "官網 JS 渲染，使用 HKET 作為主要數據源"
+      "note": "官網 JS 渲染，利率表格無法提取，使用 HKET 作為主要數據源"
     }
   ],
-  "last_updated": "2026-07-24"
+  "last_updated": "2026-07-25"
 }

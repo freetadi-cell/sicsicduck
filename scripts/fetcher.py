@@ -20,13 +20,16 @@ logger = logging.getLogger(__name__)
 
 # 銀行抓取策略配置
 BANK_FETCH_STRATEGY = {
-    # B類：只用 HKET（官網被 CloudFront/Cloudflare 阻擋）
+    # B類：只用 HKET（官網被 CloudFront/Cloudflare 阻擋 或 JS 渲染無法提取）
     'cncbi': ['hket'],
     'fusion': ['hket'],
     'ant': ['hket'],
+    'bocomm': ['hket'],  # 官網 JS 渲染（iframe），利率表格無法直接提取
+    'winglung': ['hket'],  # 官網 JS 渲染，利率表格無法提取
+    'ncb': ['hket'],  # 官網 JS 渲染，利率表格無法提取
     
     # C類：官網優先，HKET 作為 backup
-    'pao': ['general', 'hket'],
+    'pao': ['hket', 'general'],  # 官網被 Cloudflare 阻擋，HKET 為主
     
     # D類：官網優先（PDF 或特殊處理）
     'chiyu': ['general'],
@@ -41,10 +44,8 @@ BANK_FETCH_STRATEGY = {
     'dbs': ['general'],
     'bea': ['general'],
     'fubon': ['general'],
-    'bocomm': ['general'],
     'shacom': ['general'],
     'publicbank': ['general'],
-    'winglung': ['general'],
     'chbank': ['general'],
     'airstar': ['general'],
     'za': ['general'],
