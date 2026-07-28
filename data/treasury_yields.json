@@ -1,41 +1,76 @@
 {
-  "last_updated": "2026-07-25T18:20:15.959919",
+  "last_updated": "2026-07-29T00:17:10.554116",
   "timezone": "Asia/Hong_Kong",
   "source": "FRED - Federal Reserve Bank of St. Louis",
   "description": "Market Yield on US Treasury Securities",
   "current": {
     "3M": {
-      "yield": 3.95,
-      "date": "2026-07-23",
+      "yield": 3.96,
+      "date": "2026-07-24",
       "series": "DGS3MO",
       "source": "FRED (Federal Reserve)"
     },
     "2Y": {
-      "yield": 4.37,
-      "date": "2026-07-23",
+      "yield": 4.33,
+      "date": "2026-07-24",
       "series": "DGS2",
       "source": "FRED (Federal Reserve)"
     },
     "5Y": {
-      "yield": 4.46,
-      "date": "2026-07-23",
+      "yield": 4.43,
+      "date": "2026-07-24",
       "series": "DGS5",
       "source": "FRED (Federal Reserve)"
     },
     "10Y": {
-      "yield": 4.71,
-      "date": "2026-07-23",
+      "yield": 4.69,
+      "date": "2026-07-24",
       "series": "DGS10",
       "source": "FRED (Federal Reserve)"
     },
     "30Y": {
-      "yield": 5.17,
-      "date": "2026-07-23",
+      "yield": 5.16,
+      "date": "2026-07-24",
       "series": "DGS30",
       "source": "FRED (Federal Reserve)"
     }
   },
   "history": [
+    {
+      "date": "2026-07-29",
+      "yields": {
+        "3M": {
+          "yield": 3.96,
+          "date": "2026-07-24",
+          "series": "DGS3MO",
+          "source": "FRED (Federal Reserve)"
+        },
+        "2Y": {
+          "yield": 4.33,
+          "date": "2026-07-24",
+          "series": "DGS2",
+          "source": "FRED (Federal Reserve)"
+        },
+        "5Y": {
+          "yield": 4.43,
+          "date": "2026-07-24",
+          "series": "DGS5",
+          "source": "FRED (Federal Reserve)"
+        },
+        "10Y": {
+          "yield": 4.69,
+          "date": "2026-07-24",
+          "series": "DGS10",
+          "source": "FRED (Federal Reserve)"
+        },
+        "30Y": {
+          "yield": 5.16,
+          "date": "2026-07-24",
+          "series": "DGS30",
+          "source": "FRED (Federal Reserve)"
+        }
+      }
+    },
     {
       "date": "2026-07-25",
       "yields": {
