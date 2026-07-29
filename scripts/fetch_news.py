@@ -32,12 +32,6 @@ REGIONS = ['hk']
 
 # RSS Feeds - Hong Kong Chinese news sources
 RSS_FEEDS = {
-    "mingpao": {
-        "name": "明報",
-        "feeds": [
-            "https://news.mingpao.com/rss/pns.xml",  # 即時新聞
-        ]
-    },
     "hket": {
         "name": "香港經濟日報",
         "feeds": [
@@ -300,8 +294,120 @@ def fetch_rss_feed(feed_url, source_name):
         return []
 
 
+def fetch_hkej_instantnews():
+    """Scrape 信報即時新聞 page (no RSS available, paywalled site)"""
+    articles = []
+    url = "https://www.hkej.com/instantnews"
+    
+    print("\nScraping 信報即時新聞...")
+    
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        
+        import re
+        html = response.text
+        
+        # 搵 article links: /instantnews/xxx/article/数字/标题
+        # 每條新聞嘅格式:
+        # /instantnews/section/article/id/...
+        # 後面跟住 #### [title](link)
+        # 同埋 description（如果有）
+        
+        # Match pattern: 路徑 + 標題 + 可能嘅描述
+        article_pattern = re.compile(
+            r'/instantnews/([^/]+)/article/(\d+)/([^"\s]+)'
+        )
+        
+        seen_urls = set()
+        
+        for match in article_pattern.finditer(html):
+            section = match.group(1)
+            article_id = match.group(2)
+            slug = match.group(3)
+            link = f"https://www.hkej.com/instantnews/{section}/article/{article_id}/{slug}"
+            
+            if link in seen_urls:
+                continue
+            seen_urls.add(link)
+            
+            # 喺 link 附近搵 title
+            # 常見 pattern: #### [title](/instantnews/...)
+            # 或者 <a href="...">title</a>
+            link_start = html.find(f'/instantnews/{section}/article/{article_id}/{slug}')
+            if link_start < 0:
+                continue
+            
+            # 向前搵 title
+            before = html[max(0, link_start - 300):link_start]
+            
+            # 嘗試 match: #### [title](link)
+            title_match = re.search(r'####\s*\[([^\]]+)\]\([^)]+\)', before)
+            if not title_match:
+                # 嘗試 match: <a href="...">title</a>
+                title_match = re.search(r'<a[^>]*href="[^"]*' + re.escape(f'/instantnews/{section}/article/{article_id}') + r'[^"]*"[^>]*>([^<]+)</a>', html[:link_start + 500])
+            
+            if not title_match:
+                continue
+            
+            title = title_match.group(1).strip()
+            if not title:
+                continue
+            
+            # 喺 title 附近搵 description（如果有）
+            desc = ""
+            after_link = html[link_start:link_start + 500]
+            desc_match = re.search(r'</a>\s*</h\d>\s*<p[^>]*>([^<]+)', after_link)
+            if desc_match:
+                desc = desc_match.group(1).strip()[:300]
+            
+            # Map section to category
+            section_map = {
+                "stock": "business",
+                "market": "business",
+                "finance": "business",
+                "property": "business",
+                "china": "business",
+                "international": "world",
+                "current": "politics",
+                "announcement": "business",
+                "comment": "business",
+            }
+            category = section_map.get(section, "business")
+            
+            # Generate ID from URL
+            content = f"hkej-{link}"
+            uid = hashlib.md5(content.encode()).hexdigest()[:16]
+            
+            article = {
+                "id": uid,
+                "title": title,
+                "description": desc,
+                "link": link,
+                "pubDate": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "信報",
+                "image_url": "",
+                "keywords": [],
+                "category": [category],
+                "region": "hk",
+            }
+            
+            articles.append(article)
+            
+            if len(articles) >= 50:
+                break
+        
+        print(f"  Fetched {len(articles)} articles from 信報即時新聞")
+        
+    except Exception as e:
+        print(f"  Error scraping 信報: {e}")
+    
+    return articles
+
+
 def fetch_all_rss():
-    """Fetch all RSS feeds"""
+    """Fetch all RSS feeds and scrape extra sources"""
     all_articles = []
     
     print("\nFetching RSS feeds...")
@@ -314,6 +420,9 @@ def fetch_all_rss():
             print(f"    Fetched {len(articles)} articles from {feed_url}")
             all_articles.extend(articles)
     
+    # 額外 source: 信報即時新聞 (scrape)
+    hkej_articles = fetch_hkej_instantnews()
+    all_articles.extend(hkej_articles)
     
     return all_articles
 
