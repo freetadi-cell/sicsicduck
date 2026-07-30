@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T09:20:51.587623+08:00",
+  "last_updated": "2026-07-31T00:11:16.268138+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1786,7 +1786,7 @@
           "source": "bank"
         },
         "2m": {
-          "rate": 0.5,
+          "rate": 0.45,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -2763,7 +2763,7 @@
           },
           "new_customer": {
             "rate": 8.0,
-            "min_deposit": 500000,
+            "min_deposit": 100000,
             "note": "全新客戶首5萬，推廣期有限",
             "source": "hket",
             "conditions": [
