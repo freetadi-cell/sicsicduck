@@ -381,13 +381,35 @@ def main():
             for i, bank in enumerate(old_rates.get('banks', [])):
                 if bank.get('key') == key or bank.get('name_en', '').lower().replace(' ', '') == key:
                     # Update existing bank's rates
-                    # 完全取代，唔 merge：parser 搵唔到嘅數據就唔應該保留
-                    if 'hkd' in parsed:
-                        old_rates['banks'][i]['hkd'] = parsed['hkd']
-                    if 'usd' in parsed:
-                        old_rates['banks'][i]['usd'] = parsed['usd']
-                    if 'cny' in parsed:
-                        old_rates['banks'][i]['cny'] = parsed['cny']
+                    # Merge 新數據，舊數據只保留 source='hket' 嘅記錄
+                    for currency in ['hkd', 'usd', 'cny']:
+                        old_currency = bank.get(currency, {})
+                        new_currency = parsed.get(currency, {})
+                        
+                        # 清走唔係來自 hket 嘅舊記錄
+                        cleaned_old = {}
+                        for period, slots in old_currency.items():
+                            if isinstance(slots, dict):
+                                # Check nested slots (new_funds/existing_funds etc)
+                                cleaned_slots = {}
+                                for fund_type, data in slots.items():
+                                    if isinstance(data, dict) and data.get('source') == 'hket':
+                                        cleaned_slots[fund_type] = data
+                                if cleaned_slots:
+                                    cleaned_old[period] = cleaned_slots
+                            else:
+                                # Simple format
+                                cleaned_old[period] = slots
+                        
+                        # Merge: new data wins, fill gaps from cleaned old data
+                        merged = {**cleaned_old, **new_currency}
+                        if merged:
+                            if currency == 'hkd':
+                                old_rates['banks'][i]['hkd'] = merged
+                            elif currency == 'usd':
+                                old_rates['banks'][i]['usd'] = merged
+                            elif currency == 'cny':
+                                old_rates['banks'][i]['cny'] = merged
                     bank_found = True
                     break
             
