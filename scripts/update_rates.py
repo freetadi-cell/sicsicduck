@@ -381,12 +381,13 @@ def main():
             for i, bank in enumerate(old_rates.get('banks', [])):
                 if bank.get('key') == key or bank.get('name_en', '').lower().replace(' ', '') == key:
                     # Update existing bank's rates
+                    # 完全取代，唔 merge：parser 搵唔到嘅數據就唔應該保留
                     if 'hkd' in parsed:
-                        old_rates['banks'][i]['hkd'] = {**bank.get('hkd', {}), **parsed['hkd']}
+                        old_rates['banks'][i]['hkd'] = parsed['hkd']
                     if 'usd' in parsed:
-                        old_rates['banks'][i]['usd'] = {**bank.get('usd', {}), **parsed['usd']}
+                        old_rates['banks'][i]['usd'] = parsed['usd']
                     if 'cny' in parsed:
-                        old_rates['banks'][i]['cny'] = {**bank.get('cny', {}), **parsed['cny']}
+                        old_rates['banks'][i]['cny'] = parsed['cny']
                     bank_found = True
                     break
             
