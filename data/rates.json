@@ -584,6 +584,34 @@
             "note": "定期存款",
             "source": "hket"
           }
+        },
+        "12m": {
+          "new_funds": {
+            "rate": 2.95,
+            "min_deposit": 10000,
+            "note": "手機銀行新資金",
+            "source": "hket",
+            "conditions": [
+              "mobile_banking",
+              "new_funds"
+            ]
+          }
+        },
+        "9m": {
+          "existing_funds": {
+            "rate": 3.1,
+            "min_deposit": 0,
+            "note": "定期存款牌價利率",
+            "source": "hket"
+          }
+        },
+        "18m": {
+          "existing_funds": {
+            "rate": 3.0,
+            "min_deposit": 0,
+            "note": "定期存款牌價利率",
+            "source": "hket"
+          }
         }
       },
       "usd": {
