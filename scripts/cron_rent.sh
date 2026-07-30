@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH="/home/freet/.nvm/versions/node/v24.18.0/bin:$PATH"
 cd /home/freet/.openclaw/workspace/sicsicduck
 python3 scripts/update_rental_income.py --rent >> /tmp/sicsicduck-rental.log 2>&1
 if [ $? -eq 0 ]; then
