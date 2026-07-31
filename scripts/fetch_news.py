@@ -507,6 +507,11 @@ def main(initial_build=False):
     
     all_articles = sort_articles_by_date(all_articles)
     
+    # Ensure newsdata.io articles appear above RSS articles
+    non_rss = [a for a in all_articles if "rss" not in a.get("category", [])]
+    rss = [a for a in all_articles if "rss" in a.get("category", [])]
+    all_articles = non_rss + rss
+    
     save_news(all_articles)
     print(f"\n✅ Total: {len(all_articles)} articles saved")
     
