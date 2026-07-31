@@ -118,14 +118,18 @@ def sort_articles_by_date(articles):
     """Sort articles by publication date (newest first)"""
     def get_sort_key(article):
         pub_date_str = article.get("pubDate", "")
+        ts = 0
         if pub_date_str:
             try:
-                return datetime.strptime(pub_date_str[:19], "%Y-%m-%d %H:%M:%S")
+                dt = datetime.strptime(pub_date_str[:19], "%Y-%m-%d %H:%M:%S")
+                ts = dt.timestamp()
             except ValueError:
                 pass
-        return datetime.min
+        # newsdata.io (non-rss) = 0, RSS = 1 → newsdata first within same time
+        is_rss = 1 if "rss" in article.get("category", []) else 0
+        return (-ts, is_rss)
     
-    return sorted(articles, key=get_sort_key, reverse=True)
+    return sorted(articles, key=get_sort_key)
 
 
 def fetch_news(days=7, max_per_category=10):
