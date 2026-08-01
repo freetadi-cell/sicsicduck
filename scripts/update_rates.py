@@ -377,9 +377,20 @@ def main():
             
             # Update rates.json with new parsed data
             # Find existing bank in old_rates or add new entry
+            # key alias：爬蟲用嘅 key 可能同 rates.json 既有 entry 唔同
+            # （例如 pao vs pingan 都係平安數字銀行），配對唔上會造成重複 entry
+            KEY_ALIASES = {
+                'pao': ['pingan', 'paobank'],
+                'pingan': ['pao'],
+                'winglung': ['cmbwinglung'],
+                'cmbwinglung': ['winglung'],
+            }
             bank_found = False
             for i, bank in enumerate(old_rates.get('banks', [])):
-                if bank.get('key') == key or bank.get('name_en', '').lower().replace(' ', '') == key:
+                bank_key = bank.get('key', '')
+                bank_name_en = bank.get('name_en', '').lower().replace(' ', '')
+                aliases = KEY_ALIASES.get(key, [])
+                if bank_key == key or bank_name_en == key or bank_key in aliases or bank_name_en in aliases:
                     # Update existing bank's rates
                     # Merge 新數據，舊數據只保留 source='hket' 嘅記錄
                     for currency in ['hkd', 'usd', 'cny']:

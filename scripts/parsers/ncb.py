@@ -20,6 +20,18 @@ Table format:
 """
 import re
 
+# HKET 文章尾部有「今日焦點」等推薦區塊，含其他銀行利率（如「建設銀行7.88厘」），
+# 必須截斷防止誤食。
+ARTICLE_END_MARKERS = ['資料來源', '更多資訊請看', '今日焦點', '最新專欄文章', '訂閱《香港經濟日報》']
+
+
+def _truncate_article(text):
+    """截斷 HKET 文章尾部嘅推薦/焦點區塊。"""
+    end_positions = [text.find(m) for m in ARTICLE_END_MARKERS if text.find(m) >= 0]
+    if end_positions:
+        return text[:min(end_positions)]
+    return text
+
 
 def parse(text, tables=None, html=None):
     """Parse NCB (南洋商業銀行) time deposit rates from HKET article.
@@ -31,6 +43,7 @@ def parse(text, tables=None, html=None):
     if not text:
         return None
     
+    text = _truncate_article(text)
     rates = {}
     
     # Find the main rate table section

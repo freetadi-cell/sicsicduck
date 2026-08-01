@@ -26,6 +26,19 @@ HKET article format:
 """
 import re
 
+# HKET 文章尾部會附帶「今日焦點」「最新專欄文章」等推薦區塊，
+# 入面含有其他銀行嘅利率（例如「建設銀行7.88厘」），
+# 必須喺解析前截斷，防止誤食污染平安嘅數據。
+ARTICLE_END_MARKERS = ['資料來源', '更多資訊請看', '今日焦點', '最新專欄文章', '訂閱《香港經濟日報》']
+
+
+def _truncate_article(text):
+    """截斷 HKET 文章尾部嘅推薦/焦點區塊。"""
+    end_positions = [text.find(m) for m in ARTICLE_END_MARKERS if text.find(m) >= 0]
+    if end_positions:
+        return text[:min(end_positions)]
+    return text
+
 
 def parse(text, tables=None, html=None):
     """Parse PAO Bank (平安數字銀行) time deposit rates.
@@ -57,6 +70,7 @@ def _parse_hket(text):
     2. 現有資金（不論新舊資金）
     3. 新客戶專享 (8.0厘)
     """
+    text = _truncate_article(text)
     rates = {}
     
     # Find sections
@@ -91,12 +105,21 @@ def _parse_hket(text):
             period_match = re.search(r'(\d+)\s*個月', section)
             period_key = f'{period_match.group(1)}m' if period_match else '1m'
             
+            # 提取推廣截止日（例如「至2026年8月31日」）
+            promo_end = re.search(r'至\s*(\d{4})年\s*(\d+)月\s*(\d+)日', section)
+            if promo_end:
+                end_note = f'推廣期至{promo_end.group(1)}年{promo_end.group(2)}月{promo_end.group(3)}日'
+            else:
+                end_note = '推廣期有限'
+            note = (f'全新客戶首{min_deposit // 10000}萬，{end_note}'
+                    if min_deposit >= 10000 else f'全新客戶，{end_note}')
+            
             if period_key not in hkd:
                 hkd[period_key] = {}
             hkd[period_key]['new_customer'] = {
                 'rate': rate,
                 'min_deposit': min_deposit,
-                'note': '全新客戶首5萬，推廣期有限',
+                'note': note,
                 'source': 'hket',
                 'conditions': ['new_customer', 'limited_time']
             }
@@ -110,9 +133,16 @@ def _parse_hket(text):
 
 
 def _parse_rate_section(section, hkd, fund_type):
-    """Parse a rate section from HKET article."""
+    """Parse a rate section from HKET article.
+
+    HKET 文章表格有兩種排版：
+    - 同行格式：'3個月  3.1厘'
+    - 分行格式：'3個月' 下一行先係 '3.1厘'
+    兩種都要支援。
+    """
     lines = section.split('\n')
-    
+    pending_period = None  # 分行格式時暫存年期
+
     for line in lines:
         line = line.strip()
         if not line:
@@ -120,18 +150,33 @@ def _parse_rate_section(section, hkd, fund_type):
         
         # Extract period
         period_match = re.search(r'(\d+)\s*個月', line)
-        if not period_match:
-            continue
-        
-        period_num = int(period_match.group(1))
-        period_key = f'{period_num}m'
-        
         # Extract rate (厘 format)
         rate_match = re.search(r'(\d+\.?\d*)厘', line)
-        if not rate_match:
+        
+        if period_match and rate_match:
+            # 同行格式
+            period_num = int(period_match.group(1))
+            rate = float(rate_match.group(1))
+            pending_period = None
+        elif period_match:
+            # 分行格式：先記住年期，等下一行嘅利率
+            pending_period = int(period_match.group(1))
+            continue
+        elif rate_match and pending_period is not None:
+            # 分行格式：用返上一行嘅年期
+            period_num = pending_period
+            rate = float(rate_match.group(1))
+            pending_period = None
+        else:
             continue
         
-        rate = float(rate_match.group(1))
+        # 防呆：現有資金/新資金利率唔可能咁高（防止誤食其他銀行嘅優惠）
+        if fund_type == 'existing_funds' and rate > 6.0:
+            continue
+        if fund_type == 'new_funds' and rate > 10.0:
+            continue
+        
+        period_key = f'{period_num}m'
         
         # Extract min deposit
         min_deposit = 100

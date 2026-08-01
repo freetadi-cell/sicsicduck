@@ -51,6 +51,10 @@ def parse_hket_article(text, bank_name=None):
     if not bank_name:
         return None
     
+    # 截斷文章尾部嘅推薦/焦點區塊（「今日焦點」「最新專欄文章」等），
+    # 防止誤食其他銀行嘅利率（例如「建設銀行7.88厘」）。
+    text = _truncate_article(text)
+    
     rates = {
         'bank': bank_name,
         'source': 'hket',
@@ -134,6 +138,19 @@ def parse_hket_article(text, bank_name=None):
             del rates[currency]
     
     return rates if rates.get('hkd') or rates.get('usd') else None
+
+
+ARTICLE_END_MARKERS = ['資料來源', '更多資訊請看', '今日焦點', '最新專欄文章', '訂閱《香港經濟日報》']
+
+
+def _truncate_article(text):
+    """截斷 HKET 文章尾部嘅推薦/焦點區塊。"""
+    if not text:
+        return text
+    end_positions = [text.find(m) for m in ARTICLE_END_MARKERS if text.find(m) >= 0]
+    if end_positions:
+        return text[:min(end_positions)]
+    return text
 
 
 def detect_bank_name(text):
