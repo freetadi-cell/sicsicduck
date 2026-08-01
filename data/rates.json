@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T08:31:48.114795+08:00",
+  "last_updated": "2026-08-01T08:31:48.028901+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -659,7 +659,12 @@
           "exchange": null
         },
         "3m": {
-          "new_funds": null,
+          "new_funds": {
+            "rate": 3.0,
+            "min_deposit": 1000000,
+            "note": "新資金定期存款優惠（100萬港元以上）",
+            "source": "bank"
+          },
           "existing_funds": {
             "rate": 2.6,
             "min_deposit": 50000,
@@ -669,12 +674,7 @@
           "exchange": null
         },
         "4m": {
-          "new_funds": {
-            "rate": 3.0,
-            "min_deposit": 1000000,
-            "note": "新資金定期存款優惠（100萬港元以上）",
-            "source": "bank"
-          },
+          "new_funds": null,
           "existing_funds": {
             "rate": 2.5,
             "min_deposit": 50000,
@@ -736,17 +736,17 @@
           "exchange": null
         },
         "3m": {
-          "new_funds": null,
-          "existing_funds": null,
-          "exchange": null
-        },
-        "4m": {
           "new_funds": {
             "rate": 4.0,
             "min_deposit": 65000,
             "note": "新資金定期存款優惠（65,000美元以上）",
             "source": "bank"
           },
+          "existing_funds": null,
+          "exchange": null
+        },
+        "4m": {
+          "new_funds": null,
           "existing_funds": null,
           "exchange": null
         },
@@ -1325,7 +1325,7 @@
           "source": "bank"
         },
         "2m": {
-          "rate": 0.45,
+          "rate": 0.5,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -1343,7 +1343,7 @@
           "source": "bank"
         },
         "6m": {
-          "rate": 3.0,
+          "rate": 2.85,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -1726,7 +1726,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.8,
+            "rate": 3.0,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -1740,7 +1740,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.6,
+            "rate": 2.8,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -1754,7 +1754,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.6,
+            "rate": 2.8,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2032,13 +2032,7 @@
       },
       "usd": {
         "3m": {
-          "rate": 3.08,
-          "min_deposit": 10000,
-          "note": "南洋商業銀行USD定期存款",
-          "source": "hket"
-        },
-        "12m": {
-          "rate": 3.2,
+          "rate": 7.88,
           "min_deposit": 10000,
           "note": "南洋商業銀行USD定期存款",
           "source": "hket"
@@ -2081,7 +2075,7 @@
             ]
           },
           "new_customer": {
-            "rate": 8.0,
+            "rate": 16.0,
             "min_deposit": 100000,
             "note": "全新客戶首5萬，推廣期有限",
             "source": "hket",
@@ -2094,6 +2088,15 @@
         "12m": {
           "existing_funds": {
             "rate": 3.2,
+            "min_deposit": 100,
+            "note": "不論新舊資金",
+            "source": "hket",
+            "conditions": []
+          }
+        },
+        "3m": {
+          "existing_funds": {
+            "rate": 7.88,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
