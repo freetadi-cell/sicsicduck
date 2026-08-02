@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T08:31:48.028901+08:00",
+  "last_updated": "2026-08-02T08:31:44.024204+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1081,45 +1081,66 @@
       "hkd": {
         "1m": {
           "rate": 1.15,
-          "min_deposit": 10000,
+          "min_deposit": 500000,
           "note": "手機銀行開立，不論新舊資金",
-          "source": "hket"
+          "source": "hket",
+          "conditions": [
+            "mobile_banking"
+          ]
         },
         "2m": {
           "rate": 1.45,
-          "min_deposit": 10000,
+          "min_deposit": 500000,
           "note": "手機銀行開立，不論新舊資金",
-          "source": "hket"
+          "source": "hket",
+          "conditions": [
+            "mobile_banking"
+          ]
         },
         "3m": {
-          "rate": 2.0,
-          "min_deposit": 10000,
+          "rate": 1.95,
+          "min_deposit": 500000,
           "note": "手機銀行開立，不論新舊資金",
-          "source": "hket"
+          "source": "hket",
+          "conditions": [
+            "mobile_banking"
+          ]
         },
         "6m": {
           "rate": 2.0,
-          "min_deposit": 10000,
+          "min_deposit": 500000,
           "note": "手機銀行開立，不論新舊資金",
-          "source": "hket"
+          "source": "hket",
+          "conditions": [
+            "mobile_banking"
+          ]
         },
         "9m": {
           "rate": 2.0,
-          "min_deposit": 10000,
+          "min_deposit": 500000,
           "note": "手機銀行開立，不論新舊資金",
-          "source": "hket"
+          "source": "hket",
+          "conditions": [
+            "mobile_banking"
+          ]
         },
         "12m": {
           "rate": 2.0,
-          "min_deposit": 10000,
+          "min_deposit": 500000,
           "note": "手機銀行開立，不論新舊資金",
-          "source": "hket"
+          "source": "hket",
+          "conditions": [
+            "mobile_banking"
+          ]
         },
         "24m": {
           "rate": 0.15,
-          "min_deposit": 10000,
+          "min_deposit": 500000,
           "note": "手機銀行開立，不論新舊資金",
-          "source": "hket"
+          "source": "hket",
+          "conditions": [
+            "mobile_banking"
+          ]
         }
       },
       "usd": {
