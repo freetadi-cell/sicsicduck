@@ -201,75 +201,56 @@ def scrape_bank(page, bank_info):
             logger.warning(f"  [{key}] ❌ Failed to fetch from HKET, falling back to Playwright")
     
     # 使用 Playwright 抓取官網
-    url_priority = ['promotion', 'hkd_rates', 'card_rates', 'general']
+    # 支援多頁：bank 可配置 multiple_urls 一次抓多個 promotion 頁（例如工銀：新資金推廣 + 網上定存），
+    # 全部塞入 tables 交俾 parser 合併
+    url_priority = ['promotion', 'online', 'hkd_rates', 'card_rates', 'general']
+    multi_urls = urls.get('multiple_urls', [])  # 額外要合併嘅 URL（同 promotion 一齊抓）
     
+    collected = []  # (url, url_type, text, tables, title)
+    
+    # 主要優先 URL
     for url_type in url_priority:
         url = urls.get(url_type)
         if not url:
             continue
-        
         try:
-            logger.info(f"  [{key}] Fetching {url_type}: {url}")
-            page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            time.sleep(3)
-            
-            # Special handling for banks
-            if key == 'za':
-                try:
-                    buttons = page.locator('button').all()
-                    for btn in buttons:
-                        text = btn.inner_text().strip()
-                        if text == '定期存款':
-                            btn.click()
-                            logger.info(f"  [{key}] Clicked 定期存款 tab")
-                            time.sleep(2)
-                            break
-                except Exception as e:
-                    logger.warning(f"  [{key}] Could not click tab: {e}")
-            
-            elif key == 'winglung':
-                logger.info(f"  [{key}] Waiting 8s for dynamic content...")
-                page.wait_for_timeout(8000)
-                for i in range(3):
-                    page.evaluate(f"window.scrollTo(0, {i * 1000})")
-                    time.sleep(1)
-                
-            elif key == 'chbank':
-                logger.info(f"  [{key}] Waiting 5s for dynamic content...")
-                page.wait_for_timeout(5000)
-            
-            text = page.inner_text("body")
-            
-            if "找不到網頁" in text or "Page not found" in text or "404" in text:
-                logger.warning(f"  [{key}] Page not found: {url}")
-                continue
-            
-            tables = []
-            table_elements = page.locator("table").all()
-            for table in table_elements[:10]:
-                try:
-                    tables.append(table.inner_text())
-                except:
-                    pass
-            
-            title = page.title()
-            
-            return {
-                'key': key,
-                'name': name,
-                'name_en': name_en,
-                'url': url,
-                'url_type': url_type,
-                'title': title,
-                'text': text[:10000],
-                'tables': tables[:10],
-                'scraped_at': datetime.now(HK_TZ).isoformat(),
-                'success': True
-            }
-            
+            result = _fetch_single_page(page, key, url, url_type)
+            if result:
+                collected.append(result)
         except Exception as e:
-            logger.warning(f"  [{key}] Error fetching {url}: {e}")
+            logger.warning(f"  [{key}] Error fetching {url_type}: {e}")
+    
+    # 額外合併 URL（skip 已抓過嘅）
+    for extra_url in multi_urls:
+        if any(item[0] == extra_url for item in collected):
             continue
+        try:
+            result = _fetch_single_page(page, key, extra_url, 'extra')
+            if result:
+                collected.append(result)
+        except Exception as e:
+            logger.warning(f"  [{key}] Error fetching extra URL {extra_url}: {e}")
+    
+    if collected:
+        # 合併所有頁：text 用第一頁，tables 包含所有頁嘅 text + table
+        all_text = '\n'.join(item[2] for item in collected)
+        all_tables = []
+        for item in collected:
+            all_tables.append(item[2][:10000])   # 每頁 body text
+            all_tables.extend(item[3])           # 每頁嘅 table
+        primary = collected[0]
+        return {
+            'key': key,
+            'name': name,
+            'name_en': name_en,
+            'url': primary[0],
+            'url_type': primary[1],
+            'title': primary[4],
+            'text': all_text[:10000],
+            'tables': all_tables[:20],
+            'scraped_at': datetime.now(HK_TZ).isoformat(),
+            'success': True
+        }
     
     return {
         'key': key,
@@ -282,6 +263,55 @@ def scrape_bank(page, bank_info):
         'scraped_at': datetime.now(HK_TZ).isoformat(),
         'success': False
     }
+
+
+def _fetch_single_page(page, key, url, url_type):
+    """抓取單一 URL，返回 (url, url_type, text, tables, title) 或 None。"""
+    logger.info(f"  [{key}] Fetching {url_type}: {url}")
+    page.goto(url, wait_until="domcontentloaded", timeout=30000)
+    time.sleep(3)
+
+    # Special handling for banks
+    if key == 'za':
+        try:
+            buttons = page.locator('button').all()
+            for btn in buttons:
+                text = btn.inner_text().strip()
+                if text == '定期存款':
+                    btn.click()
+                    logger.info(f"  [{key}] Clicked 定期存款 tab")
+                    time.sleep(2)
+                    break
+        except Exception as e:
+            logger.warning(f"  [{key}] Could not click tab: {e}")
+
+    elif key == 'winglung':
+        logger.info(f"  [{key}] Waiting 8s for dynamic content...")
+        page.wait_for_timeout(8000)
+        for i in range(3):
+            page.evaluate(f"window.scrollTo(0, {i * 1000})")
+            time.sleep(1)
+
+    elif key == 'chbank':
+        logger.info(f"  [{key}] Waiting 5s for dynamic content...")
+        page.wait_for_timeout(5000)
+
+    text = page.inner_text("body")
+
+    if "找不到網頁" in text or "Page not found" in text or "404" in text:
+        logger.warning(f"  [{key}] Page not found: {url}")
+        return None
+
+    tables = []
+    table_elements = page.locator("table").all()
+    for table in table_elements[:10]:
+        try:
+            tables.append(table.inner_text())
+        except:
+            pass
+
+    title = page.title()
+    return (url, url_type, text, tables, title)
 
 
 def main():

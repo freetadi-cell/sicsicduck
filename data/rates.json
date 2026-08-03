@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T19:07:48.735602+08:00",
+  "last_updated": "2026-08-03T19:11:24.270909+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -385,6 +385,24 @@
       "type": "traditional",
       "logo_color": "#C5001A",
       "hkd": {
+        "3m": {
+          "rate": 2.85,
+          "min_deposit": 50000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.85,
+          "min_deposit": 50000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.85,
+          "min_deposit": 50000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
         "1m": {
           "rate": 1.5,
           "min_deposit": 50000,
@@ -396,27 +414,27 @@
           "min_deposit": 50000,
           "note": "工銀亞洲網上定期存款優惠",
           "source": "bank"
-        },
-        "3m": {
-          "rate": 3.0,
-          "min_deposit": 50000,
-          "note": "工銀亞洲新資金定期存款推廣（98/188天）",
-          "source": "bank"
-        },
-        "6m": {
-          "rate": 3.0,
-          "min_deposit": 50000,
-          "note": "工銀亞洲新資金定期存款推廣（98/188天）",
-          "source": "bank"
-        },
-        "12m": {
-          "rate": 2.65,
-          "min_deposit": 50000,
-          "note": "工銀亞洲網上定期存款優惠",
-          "source": "bank"
         }
       },
       "usd": {
+        "3m": {
+          "rate": 3.75,
+          "min_deposit": 15000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 3.75,
+          "min_deposit": 15000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 3.75,
+          "min_deposit": 15000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
         "1m": {
           "rate": 3.1,
           "min_deposit": 15000,
@@ -428,27 +446,27 @@
           "min_deposit": 15000,
           "note": "工銀亞洲網上定期存款優惠",
           "source": "bank"
-        },
-        "3m": {
-          "rate": 3.6,
-          "min_deposit": 15000,
-          "note": "工銀亞洲網上定期存款優惠",
-          "source": "bank"
-        },
-        "6m": {
-          "rate": 3.6,
-          "min_deposit": 15000,
-          "note": "工銀亞洲網上定期存款優惠",
-          "source": "bank"
-        },
-        "12m": {
-          "rate": 3.6,
-          "min_deposit": 15000,
-          "note": "工銀亞洲網上定期存款優惠",
-          "source": "bank"
         }
       },
       "cny": {
+        "3m": {
+          "rate": 1.25,
+          "min_deposit": 50000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 1.25,
+          "min_deposit": 50000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 1.3,
+          "min_deposit": 50000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
         "1m": {
           "rate": 0.75,
           "min_deposit": 50000,
@@ -457,24 +475,6 @@
         },
         "2m": {
           "rate": 1.05,
-          "min_deposit": 50000,
-          "note": "工銀亞洲網上定期存款優惠",
-          "source": "bank"
-        },
-        "3m": {
-          "rate": 1.15,
-          "min_deposit": 50000,
-          "note": "工銀亞洲網上定期存款優惠",
-          "source": "bank"
-        },
-        "6m": {
-          "rate": 1.15,
-          "min_deposit": 50000,
-          "note": "工銀亞洲網上定期存款優惠",
-          "source": "bank"
-        },
-        "12m": {
-          "rate": 1.25,
           "min_deposit": 50000,
           "note": "工銀亞洲網上定期存款優惠",
           "source": "bank"
