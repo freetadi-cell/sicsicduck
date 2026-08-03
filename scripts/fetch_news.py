@@ -276,6 +276,33 @@ def fetch_rss_feed(feed_url, source_name):
                 description = re.sub('<[^<]+?>', '', entry.description)
                 description = description[:500]
             
+            # Extract image from RSS enclosures / media_content
+            image_url = ""
+            # 1) enclosure entries (standard RSS) that are images
+            for enc in entry.get('enclosures', []):
+                enc_type = enc.get('type', '')
+                enc_href = enc.get('href') or enc.get('url', '')
+                if enc_href and (enc_type.startswith('image') or enc_href.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp'))):
+                    # Skip generic SEO placeholder images (site logo/default artwork)
+                    if '/image/seo/' in enc_href or 'logo' in enc_href.lower():
+                        continue
+                    image_url = enc_href
+                    break
+            # 2) media_content (Media RSS)
+            if not image_url:
+                for mc in entry.get('media_content', []):
+                    mc_url = mc.get('url') or mc.get('href', '')
+                    if mc_url and mc_url.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp')):
+                        image_url = mc_url
+                        break
+            # 3) thumbnail (Media RSS)
+            if not image_url and entry.get('media_thumbnail'):
+                th = entry['media_thumbnail']
+                if isinstance(th, list) and th:
+                    image_url = th[0].get('url', '') if isinstance(th[0], dict) else ''
+                elif isinstance(th, dict):
+                    image_url = th.get('url', '')
+            
             article = {
                 "id": article_id,
                 "title": title,
@@ -283,7 +310,7 @@ def fetch_rss_feed(feed_url, source_name):
                 "link": link,
                 "pubDate": pub_date_str,
                 "source_name": source_name,
-                "image_url": "",
+                "image_url": image_url,
                 "keywords": [],
                 "category": ["rss"],
                 "region": "hk",
@@ -494,6 +521,22 @@ def main(initial_build=False):
         return
     
     print(f"\nFetched {len(new_articles)} new articles (NewsData: {len(newsdata_articles)}, RSS: {len(rss_articles)})")
+    
+    # Backfill: fill missing image_url in existing articles from newly fetched ones
+    # (RSS sources previously stored empty images; enrich them on next runs)
+    existing_by_id = {a.get('id'): a for a in existing_articles if a.get('id')}
+    backfilled = 0
+    for na in new_articles:
+        if not na.get('image_url'):
+            continue
+        nid = na.get('id')
+        if nid and nid in existing_by_id:
+            old = existing_by_id[nid]
+            if not old.get('image_url') and old.get('image_url') != na['image_url']:
+                old['image_url'] = na['image_url']
+                backfilled += 1
+    if backfilled:
+        print(f"Backfilled {backfilled} existing articles with missing images")
     
     all_articles = existing_articles + new_articles
     print(f"Total before dedup: {len(all_articles)}")
