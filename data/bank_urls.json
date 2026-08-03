@@ -72,9 +72,10 @@
       "key": "icbc",
       "urls": {
         "hket": "https://invest.hket.com/article/4162202",
+        "promotion": "https://www.icbcasia.com/hk/tc/personal/latest-promotion/online-time-deposit.html",
         "general": "https://www.icbcasia.com/zh/deposit/"
       },
-      "note": "官網 404，使用 HKET 作為主要數據源"
+      "note": "主要抓取網上定期存款優惠頁（online-time-deposit），HKET 作為後備"
     },
     {
       "name": "富邦銀行",
