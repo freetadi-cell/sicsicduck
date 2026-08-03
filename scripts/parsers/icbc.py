@@ -96,13 +96,15 @@ def _parse_online_table(table_str):
 
     # Convert to rates.json format with min_deposit
     min_deposits = {'hkd': 50000, 'usd': 15000, 'cny': 50000}
+    hkd_override = {'3m': 3.0, '6m': 3.0}  # 新資金推廣（98/188天）優惠值
     for cur, tenor_rates in main_rates.items():
         rates[cur] = {}
         for ten, rate in tenor_rates.items():
+            is_hkd_override = cur == 'hkd' and ten in hkd_override
             rates[cur][ten] = {
-                'rate': rate,
+                'rate': hkd_override[ten] if is_hkd_override else rate,
                 'min_deposit': min_deposits.get(cur, 50000),
-                'note': '工銀亞洲網上定期存款優惠',
+                'note': '工銀亞洲新資金定期存款推廣（98/188天）' if is_hkd_override else '工銀亞洲網上定期存款優惠',
                 'source': 'bank'
             }
 
@@ -146,13 +148,15 @@ def _parse_online_text(text):
                 main_rates[cur][ten] = float(pcts[j])
 
     min_deposits = {'hkd': 50000, 'usd': 15000, 'cny': 50000}
+    hkd_override = {'3m': 3.0, '6m': 3.0}  # 新資金推廣（98/188天）優惠值
     for cur, tenor_rates in main_rates.items():
         rates[cur] = {}
         for ten, rate in tenor_rates.items():
+            is_hkd_override = cur == 'hkd' and ten in hkd_override
             rates[cur][ten] = {
-                'rate': rate,
+                'rate': hkd_override[ten] if is_hkd_override else rate,
                 'min_deposit': min_deposits.get(cur, 50000),
-                'note': '工銀亞洲網上定期存款優惠',
+                'note': '工銀亞洲新資金定期存款推廣（98/188天）' if is_hkd_override else '工銀亞洲網上定期存款優惠',
                 'source': 'bank'
             }
 
