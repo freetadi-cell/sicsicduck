@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T19:11:24.270909+08:00",
+  "last_updated": "2026-08-04T08:32:01.966177+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -104,12 +104,12 @@
       },
       "cny": {
         "3m": {
-          "rate": 1.4,
+          "rate": 1.2,
           "fund_type": "new_funds",
           "min_deposit": 10000
         },
         "6m": {
-          "rate": 1.45,
+          "rate": 1.25,
           "fund_type": "new_funds",
           "min_deposit": 10000
         }
@@ -685,7 +685,7 @@
         "1m": {
           "new_funds": null,
           "existing_funds": {
-            "rate": 2.5,
+            "rate": 2.0,
             "min_deposit": 50000,
             "note": "網上定存特惠年利率",
             "source": "bank"
@@ -695,7 +695,7 @@
         "2m": {
           "new_funds": null,
           "existing_funds": {
-            "rate": 2.5,
+            "rate": 2.0,
             "min_deposit": 50000,
             "note": "網上定存特惠年利率",
             "source": "bank"
@@ -710,7 +710,7 @@
             "source": "bank"
           },
           "existing_funds": {
-            "rate": 2.6,
+            "rate": 2.45,
             "min_deposit": 50000,
             "note": "網上定存特惠年利率",
             "source": "bank"
@@ -1039,26 +1039,26 @@
       "logo_color": "#003B6F",
       "hkd": {
         "1m": {
-          "rate": 2.3,
-          "min_deposit": 500000,
+          "rate": 2.2,
+          "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 2.7,
-          "min_deposit": 500000,
+          "rate": 2.6,
+          "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.8,
-          "min_deposit": 500000,
+          "rate": 2.7,
+          "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 3.0,
-          "min_deposit": 500000,
+          "rate": 2.9,
+          "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
         }
