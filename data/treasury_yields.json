@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T23:50:10.404185",
+  "last_updated": "2026-08-07T00:02:38.153835",
   "timezone": "Asia/Hong_Kong",
   "source": "FRED - Federal Reserve Bank of St. Louis",
   "description": "Market Yield on US Treasury Securities",
@@ -36,6 +36,41 @@
     }
   },
   "history": [
+    {
+      "date": "2026-08-07",
+      "yields": {
+        "3M": {
+          "yield": 3.89,
+          "date": "2026-08-04",
+          "series": "DGS3MO",
+          "source": "FRED (Federal Reserve)"
+        },
+        "2Y": {
+          "yield": 4.2,
+          "date": "2026-08-04",
+          "series": "DGS2",
+          "source": "FRED (Federal Reserve)"
+        },
+        "5Y": {
+          "yield": 4.33,
+          "date": "2026-08-04",
+          "series": "DGS5",
+          "source": "FRED (Federal Reserve)"
+        },
+        "10Y": {
+          "yield": 4.63,
+          "date": "2026-08-04",
+          "series": "DGS10",
+          "source": "FRED (Federal Reserve)"
+        },
+        "30Y": {
+          "yield": 5.18,
+          "date": "2026-08-04",
+          "series": "DGS30",
+          "source": "FRED (Federal Reserve)"
+        }
+      }
+    },
     {
       "date": "2026-08-06",
       "yields": {
