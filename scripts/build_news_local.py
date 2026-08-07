@@ -39,7 +39,6 @@ def load_summary(aid):
 def card(a):
     aid = a.get("id", "")
     title = esc(a.get("title", ""))
-    desc = esc(a.get("description", ""))
     src = esc(a.get("source_name", ""))
     pub = esc((a.get("pubDate", "") or "")[:10])
     cats = esc(",".join(a.get("category", [])))
@@ -55,7 +54,6 @@ def card(a):
         inner = f'''<div class="article-image"><img src="{image}" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">{title}</h3>
-                <p class="article-description">{summary_esc}</p>
                 <div class="article-meta">
                     <span class="article-source">{src}</span>
                     <span class="article-date">📅 {pub}</span>
@@ -89,7 +87,6 @@ def card(a):
         inner = f'''<div class="article-image"><img src="{image}" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">{title}</h3>
-                <p class="article-description">{desc}</p>
                 <div class="article-meta">
                     <span class="article-source">{src}</span>
                     <span class="article-date">📅 {pub}</span>

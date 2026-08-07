@@ -33,8 +33,8 @@ API_MODEL = "glm-5.2"
 UA = ("Mozilla/5.0 (compatible; SicsicDuck/1.0; +https://sicsicduck.com) "
       "AppleWebKit/537.36")
 
-# 每篇改寫目標字數（版權安全底線：不超過 220 字自撰摘要）
-MAX_SUMMARY_CHARS = 200
+# 每篇改寫目標字數（版權安全底線：不超過 350 字自撰摘要）
+MAX_SUMMARY_CHARS = 350
 # 每輪最多處理幾篇（避免大量請求）
 BATCH_LIMIT = 20
 for _a in sys.argv[1:]:
