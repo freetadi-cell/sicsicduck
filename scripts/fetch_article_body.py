@@ -36,7 +36,11 @@ UA = ("Mozilla/5.0 (compatible; SicsicDuck/1.0; +https://sicsicduck.com) "
 # 每篇改寫目標字數（版權安全底線：不超過 220 字自撰摘要）
 MAX_SUMMARY_CHARS = 200
 # 每輪最多處理幾篇（避免大量請求）
-BATCH_LIMIT = int(sys.argv[1]) if len(sys.argv) > 1 else 20
+BATCH_LIMIT = 20
+for _a in sys.argv[1:]:
+    if _a.isdigit():
+        BATCH_LIMIT = int(_a)
+        break
 # 只處理過去幾多天之內的文章
 RECENT_DAYS = 3
 # 兩個 API 請求間隔（秒），避免過密
@@ -158,13 +162,20 @@ def main():
     # 只挑 RSS 來源（hkej 信報 / 香港經濟日報 / rthk / scmp 等本地來源）
     rss_sources = {"信報", "香港經濟日報", "香港電台",
                    "South China Morning Post", "SCMP"}
+    # --all-sources 模式：連同 newsdata.io 來源（Yahoo/明報/東網等）都處理
+    all_sources = "--all-sources" in sys.argv or "-a" in sys.argv
+    # --newsdata-only 模式：淨係處理 newsdata.io 來源（唔理 RSS）
+    newsdata_only = "--newsdata-only" in sys.argv or "-n" in sys.argv
     recent = datetime.now().timestamp() - RECENT_DAYS * 86400
 
     candidates = []
     for a in articles:
         src = a.get("source_name", "")
         pub = a.get("pubDate", "")
-        if src not in rss_sources:
+        if newsdata_only:
+            if src in rss_sources:
+                continue  # 淨係 newsdata 來源
+        elif not all_sources and src not in rss_sources:
             continue
         # 只處理近期文章
         if pub:
