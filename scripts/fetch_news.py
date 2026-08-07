@@ -567,21 +567,7 @@ def main(initial_build=False, build_only=False):
         # 由已存 news.json 重新 build news.html（唔重新抓取）
         articles = load_existing_news()
         html_content, modals = generate_html_content(articles)
-        news_html_path = SCRIPT_DIR.parent / "news.html"
-        with open(news_html_path, "r", encoding="utf-8") as f:
-            html_content_full = f.read()
-        import re
-        pattern = r'<div class="articles-grid" id="articlesGrid">.*?</section>'
-        modals_html = "\n".join(modals) if modals else ""
-        replacement = f'<div class="articles-grid" id="articlesGrid">\n{html_content}    </div>\n</section>\n\n{modals_html}'
-        new_html = re.sub(pattern, replacement, html_content_full, flags=re.DOTALL)
-        if ".news-modal" not in new_html:
-            new_html = re.sub(r'(</style>)', _MODAL_CSS() + r'\1', new_html, count=1, flags=re.DOTALL)
-        if "function openModal" not in new_html:
-            new_html = re.sub(r'(</body>)', _MODAL_JS() + r'\1', new_html, count=1, flags=re.DOTALL)
-        with open(news_html_path, "w", encoding="utf-8") as f:
-            f.write(new_html)
-        print(f"[build-only] Updated {news_html_path} (modal: {len(modals)})")
+        _rebuild_html(html_content, modals, mode="build-only")
         return
 
     existing_articles = load_existing_news()
@@ -650,26 +636,54 @@ def main(initial_build=False, build_only=False):
     
     html_content, modals = generate_html_content(all_articles)
 
-    news_html_path = SCRIPT_DIR.parent / "news.html"
-    with open(news_html_path, "r", encoding="utf-8") as f:
-        html_content_full = f.read()
+    html_content, modals = generate_html_content(all_articles)
+    _rebuild_html(html_content, modals)
 
+
+def _rebuild_html(html_content, modals, mode=""):
+    """重建 news.html：替換 articles-grid + 剷走舊 modal + 注入新 modal + CSS/JS"""
     import re
-    pattern = r'<div class="articles-grid" id="articlesGrid">.*?</section>'
+    news_html_path = SCRIPT_DIR.parent / "news.html"
+    html_content_full = news_html_path.read_text(encoding="utf-8")
+
+    # 1) 剷走所有舊 modal block（避免每次 build 累積重複），保留 articles-grid
+    #    舊 modal 喺 grid section (</section>) 之後緊接
+    grid_pattern = r'<div class="articles-grid" id="articlesGrid">.*?</section>'
+    m = re.search(grid_pattern, html_content_full, flags=re.DOTALL)
+    if not m:
+        print("❌ 唔該到 articlesGrid，中止")
+        return
+    section_end = m.end()
+
+    # 由 section 結尾起，剷走緊接嘅連續 modal block
+    rest = html_content_full[section_end:]
+    while True:
+        mm = re.match(r'\s*(<div class="news-modal"[\s\S]*?</div>\s*</div>\s*</div>)', rest)
+        if not mm:
+            break
+        block = mm.group(1)
+        # 確認係完整 modal（有 backdrop + dialog）
+        if '<div class="news-modal-backdrop"' not in block or \
+           '<div class="news-modal-dialog"' not in block:
+            break
+        rest = rest[mm.end():]
+
+    # 2) 重組：grid 內容 + 新 modal + 剷除後嘅其餘內容
     modals_html = "\n".join(modals) if modals else ""
-    replacement = f'<div class="articles-grid" id="articlesGrid">\n{html_content}    </div>\n</section>\n\n{modals_html}'
-    new_html = re.sub(pattern, replacement, html_content_full, flags=re.DOTALL)
+    cleaned = (html_content_full[:m.start()] +
+               f'<div class="articles-grid" id="articlesGrid">\n{html_content}    </div>\n</section>'
+               + (f'\n\n{modals_html}' if modals_html else '')
+               + rest)
 
-    # 注入 modal CSS + JS（若未存在）
-    if ".news-modal" not in new_html:
-        new_html = re.sub(r'(</style>)', _MODAL_CSS() + r'\1', new_html, count=1, flags=re.DOTALL)
-    if "function openModal" not in new_html:
-        new_html = re.sub(r'(</body>)', _MODAL_JS() + r'\1', new_html, count=1, flags=re.DOTALL)
+    # 3) 注入 modal CSS + JS（若未存在）
+    if ".news-modal" not in cleaned:
+        cleaned = re.sub(r'(</style>)', _MODAL_CSS() + r'\1', cleaned, count=1, flags=re.DOTALL)
+    if "function openModal" not in cleaned:
+        cleaned = re.sub(r'(</body>)', _MODAL_JS() + r'\1', cleaned, count=1, flags=re.DOTALL)
 
-    with open(news_html_path, "w", encoding="utf-8") as f:
-        f.write(new_html)
-
-    print(f"Updated {news_html_path} (modal: {len(modals)})")
+    news_html_path.write_text(cleaned, encoding="utf-8")
+    label = f"[{mode}] " if mode else ""
+    print(f"{label}Updated {news_html_path.name} (modal: {len(modals)})")
 
 
 def _MODAL_CSS():
