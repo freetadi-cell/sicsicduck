@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-從 news.json + articles_cache/ 生成 news-local.html（測試版新聞頁）。
+從 news.json + articles_cache/ 生成新聞頁（預設 news.html，正式版；--local 寫 news-local.html 測試）。
 卡片點擊 → 站內 modal 顯示「改寫摘要」+ 原文按鈕。
 版權：只顯示自撰摘要(rewritten)，不改寫嘅文章退回純標題卡片（外連原文）。
 """
@@ -121,18 +121,22 @@ def build():
     grid = "\n".join(cards_html)
     modals = "\n".join(modals_html)
 
-    # 由現有 news.html 複製 header/footer/script 結構
-    base = ROOT / "news.html"
-    src = base.read_text(encoding="utf-8")
-
-    # 抽 header（到 hero 前）— 用簡單 string 定位
-    header_start = src.index('<header class="header">')
-    hero_start = src.index('<!-- Hero -->')
-
-    # 抽 footer + script（最後完整 block）
-    footer_start = src.index('<!-- Footer -->')
-
-    header_html = src[header_start:hero_start]
+    # 固定 header 模板（唔再依賴讀 news.html，避免循環依賴）
+    header_html = '''<header class="header">
+    <div class="header-inner">
+        <div class="nav-dropdown-wrap">
+            <button class="nav-dropdown-btn" onclick="toggleNav()" aria-label="導航">📰 新聞</button>
+            <div class="nav-dropdown" id="navDropdown">
+                <a href="index.html"><span class="dd-icon">🏦</span> 定存</a>
+                <a href="dividend-stocks.html"><span class="dd-icon">📈</span> 股息</a>
+                <a href="rental-income.html"><span class="dd-icon">🏠</span> 租值</a>
+                <a href="news.html" class="active"><span class="dd-icon">📰</span> 新聞</a>
+                <a href="treasury-yields.html"><span class="dd-icon">📊</span> 美債</a>
+            </div>
+        </div>
+        <img class="header-logo" src="logo.jpg" alt="食息鴨">
+    </div>
+</header>'''
 
     # script：抽取 <script>...</script> 最後一段（剔除原始 articles grid 更新邏輯唔需要，保留 search/category/modal 兼容）
     script_html = '''<script>
@@ -244,7 +248,7 @@ document.addEventListener('keydown', (e) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新聞（站內版測試）| 食息鴨</title>
+    <title>新聞 | 食息鴨</title>
     <meta name="description" content="最新新聞資訊、投資理財、財經動態">
     <meta name="keywords" content="新聞,財經,投資理財,香港新聞">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -322,24 +326,15 @@ document.addEventListener('keydown', (e) => {
             font-weight: 700; font-size: 14px;
         }}
         .news-modal-link:hover {{ filter: brightness(1.05); }}
-        .test-banner {{
-            background: linear-gradient(90deg, var(--gold-500), var(--gold-600));
-            color: var(--white);
-            text-align: center;
-            padding: 10px 16px;
-            font-size: 13px; font-weight: 600;
-        }}
     </style>
 </head>
 <body>
-
-<div class="test-banner">🧪 測試頁：站內新聞摘要版本（尚未上線）</div>
 
 {header_html}
 <!-- Hero -->
 <section class="hero">
     <h1>📰 新聞</h1>
-    <p>站內摘要版測試 — 點擊卡片即睇改寫內容，唔使跳走</p>
+    <p>以人工智能改寫嘅新聞摘要 — 點擊卡片即睇內容，均可連回原文</p>
 </section>
 
 <!-- Search Box -->
@@ -379,7 +374,9 @@ document.addEventListener('keydown', (e) => {
 {footer_html}
 '''
 
-    out_path = ROOT / "news-local.html"
+    # 輸出位置：預設 news.html（正式版）；--local 先至寫 news-local.html（測試）
+    local_mode = "--local" in sys.argv
+    out_path = ROOT / ("news-local.html" if local_mode else "news.html")
     out_path.write_text(out, encoding="utf-8")
     print(f"✅ 生成 {out_path.name}（{len(articles)} 篇，{modals.count('news-modal') if modals else 0} 個 modal）")
 
