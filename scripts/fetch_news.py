@@ -675,9 +675,16 @@ def _rebuild_html(html_content, modals, mode=""):
                + (f'\n\n{modals_html}' if modals_html else '')
                + rest)
 
-    # 3) 注入 modal CSS + JS（若未存在）
-    if ".news-modal" not in cleaned:
-        cleaned = re.sub(r'(</style>)', _MODAL_CSS() + r'\1', cleaned, count=1, flags=re.DOTALL)
+    # 3) 注入 modal CSS + JS（強制更新 CSS，避免舊版 position:relative 殘留）
+    new_css = _MODAL_CSS()
+    if "/* ==== 站內新聞 Modal CSS ==== */" in cleaned:
+        # 已存在 → 替換成新版 CSS
+        cleaned = re.sub(
+            r'<style>\s*/\* ==== 站內新聞 Modal CSS ==== \*/.*?</style>',
+            new_css, cleaned, count=1, flags=re.DOTALL)
+    else:
+        # 唔存在 → 插去第一個 </style> 前面
+        cleaned = re.sub(r'(</style>)', new_css + r'\1', cleaned, count=1, flags=re.DOTALL)
     if "function openModal" not in cleaned:
         cleaned = re.sub(r'(</body>)', _MODAL_JS() + r'\1', cleaned, count=1, flags=re.DOTALL)
 
@@ -692,7 +699,7 @@ def _MODAL_CSS():
 .news-modal { display: none; position: fixed; inset: 0; z-index: 300; }
 .news-modal.open { display: block; }
 .news-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(2px); }
-.news-modal-dialog { position: relative; z-index: 2; max-width: 640px; margin: 6vh auto 0; background: #fff; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,.3); padding: 28px 28px 24px; max-height: 82vh; overflow-y: auto; border: 1px solid #e6c97c; }
+.news-modal-dialog { position: fixed; z-index: 302; max-width: 640px; width: calc(100% - 32px); top: 6vh; left: 50%; transform: translateX(-50%); background: #fff; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,.3); padding: 28px 28px 24px; max-height: 82vh; overflow-y: auto; border: 1px solid #e6c97c; }
 .news-modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border: none; border-radius: 50%; background: #f3f4f6; color: #6b7280; font-size: 16px; cursor: pointer; }
 .news-modal-close:hover { background: #fdeed2; color: #7c5d1e; }
 .news-modal-title { font-size: 20px; font-weight: 800; color: #111827; margin: 4px 40px 10px 0; line-height: 1.4; }

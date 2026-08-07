@@ -404,7 +404,7 @@
 .news-modal { display: none; position: fixed; inset: 0; z-index: 300; }
 .news-modal.open { display: block; }
 .news-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(2px); }
-.news-modal-dialog { position: relative; z-index: 2; max-width: 640px; margin: 6vh auto 0; background: #fff; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,.3); padding: 28px 28px 24px; max-height: 82vh; overflow-y: auto; border: 1px solid #e6c97c; }
+.news-modal-dialog { position: fixed; z-index: 302; max-width: 640px; width: calc(100% - 32px); top: 6vh; left: 50%; transform: translateX(-50%); background: #fff; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,.3); padding: 28px 28px 24px; max-height: 82vh; overflow-y: auto; border: 1px solid #e6c97c; }
 .news-modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border: none; border-radius: 50%; background: #f3f4f6; color: #6b7280; font-size: 16px; cursor: pointer; }
 .news-modal-close:hover { background: #fdeed2; color: #7c5d1e; }
 .news-modal-title { font-size: 20px; font-weight: 800; color: #111827; margin: 4px 40px 10px 0; line-height: 1.4; }
@@ -470,6 +470,72 @@
 <!-- Articles Section -->
 <section class="articles-section">
     <div class="articles-grid" id="articlesGrid">
+        <a href="https://www.hkej.com/instantnews/current/article/4479086/%E5%9B%9B%E5%B7%9D%E5%AE%9C%E8%B3%93%E9%AB%98%E7%B8%A3%E7%99%BC%E7%94%9F%E5%85%A9%E6%AC%A1%E5%9C%B0%E9%9C%87+%E6%9C%80%E5%B0%911%E6%AD%BB" target="_blank" class="article-card" data-category="politics" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">四川宜賓高縣發生兩次地震 最少1死</h3>
+                <p class="article-description">四川宜賓市高縣今日下午發生兩次地震，宜賓市抗震救災指揮部表示，截至下午4時半，造成最少1人死亡，6人 ...</p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hkej.com/instantnews/china/article/4479087/%E9%83%A8%E5%88%86%E4%B8%AD%E5%9C%8B%E9%90%B5%E7%A4%A6%E7%9F%B3%E8%B2%BF%E6%98%93%E5%95%86%E6%93%9A%E5%A0%B1%E6%9A%AB%E5%81%9C%E8%88%87Radiant+World%E9%96%8B%E5%B1%95%E6%A5%AD%E5%8B%99" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">部分中國鐵礦石貿易商據報暫停與Radiant World開展業務</h3>
+                <p class="article-description">路透引據四名知情人士報道，部分中國鐵礦石貿易商和鋼鐵生產商，今年已停止與新加坡主要鐵礦石貿易商Rad ...</p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hkej.com/instantnews/announcement/article/4479053/%E7%9B%88%E8%AD%A6%E4%B8%A8%E9%AD%AF%E5%A4%A7%E5%B8%AB%E6%96%99%E4%B8%AD%E6%9C%9F%E8%BD%89%E8%9D%95%E9%80%BE1300%E8%90%AC%E4%BA%BA%E6%B0%91%E5%B9%A3" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">盈警丨魯大師料中期轉蝕逾1300萬人民幣</h3>
+                <p class="article-description">魯大師(03601)預期，截至6月底止，中期虧損約1300萬至1500萬元(人民幣‧下同)，2025 ...</p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hkej.com/instantnews/market/article/4478321/%E7%9B%A4%E6%88%BF%E4%BE%86%E6%96%99%E4%B8%A8%E6%B8%AF%E8%82%A1%E8%B2%B7%E8%B3%A3%E5%85%A9%E9%96%92%E7%8F%BE%E6%B0%B4%E5%B9%B3%E5%85%88%E6%95%B4%E5%9B%BA" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">盤房來料丨港股買賣兩閒現水平先整固</h3>
+                <p class="article-description"></p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hkej.com/instantnews/current/article/4478260/%E5%8C%97%E8%A7%92%E4%BA%AC%E8%8F%AF%E9%81%93%E8%88%87%E7%A6%8F%E8%94%AD%E9%81%93%E4%BA%A4%E7%95%8C%E7%88%86%E9%A3%9F%E6%B0%B4%E7%AE%A1+%E6%B0%B4%E5%8B%99%E7%BD%B2%E7%88%AD%E5%8F%96%E5%8D%88%E5%A4%9C%E5%89%8D%E6%81%A2%E5%BE%A9%E4%BE%9B%E6%B0%B4" target="_blank" class="article-card" data-category="politics" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">北角京華道與福蔭道交界爆食水管 水務署爭取午夜前恢復供水</h3>
+                <p class="article-description"></p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hkej.com/instantnews/stock/article/4478300/%E6%81%92%E6%8C%87%E8%B5%B0%E5%8B%A2%E4%B8%A8%E5%A5%BD%E6%B7%A1%E7%88%AD%E6%8C%81%E5%8D%8A%E6%97%A5%E5%8D%8737%E9%BB%9E+%E8%97%A5%E8%82%A1%E7%9C%81%E9%8F%A1" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">恒指走勢丨好淡爭持半日升37點 藥股省鏡</h3>
+                <p class="article-description"></p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
         <a href="javascript:void(0)" class="article-card" data-modal-id="b29acd72cdb562b6" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
@@ -1095,6 +1161,292 @@
                 <p class="article-description">九倉置業宣布今年起派息比率調升至90%，主席吳天海表示，公司經常性營運收入穩定，有信心提高派息比率，並指市道漸趨平穩，不會輕易改變派息政策。吳天海解釋，2017年上市時因樓市熾熱，故採取保守的65%派息比率，現時商業地產周期穩定，有能力提升至與房託相若水平。公司最近以溢價12%出售新加坡會德豐廣場，淨額逾67億元將用於減債，負債率降至約11%。零售方面，吳天海認為港元貶值及日圓升值有助零售市道，下…</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.am730.com.hk/%E6%9C%AC%E5%9C%B0/1046143/5%E6%AD%B2%E7%94%B7%E7%AB%A5%E9%81%AD%E8%99%90%E5%BE%85%E8%87%B4%E6%AD%BB-%E7%B8%BD%E5%B7%A5%E6%9C%83-%E8%99%95%E7%90%86%E5%80%8B%E6%A1%88%E4%BE%9D%E8%B3%B4%E7%A4%BE%E5%B7%A5%E7%B6%93%E9%A9%97%E5%80%A1%E5%88%B6%E5%AE%9A%E5%AE%B6%E8%A8%AA%E6%AA%A2%E6%9F%A5%E6%B8%85%E5%96%AE" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://cdn3.am730.com.hk/processed/2022-09/1046143/article/1046143/df/1640765381_6S_0.jpg?updatedAt=1786069953" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">5歲男童遭虐待致死 總工會:處理個案依賴社工經驗倡制定家訪檢查清單</h3>
+                <p class="article-description">社署社工總工會主席梁建雄今早(7日)在商台節目指,案發時正值疫情,當時提供社會服務相當困難,估計可能導致家訪次數減少,又指社工不能控制小朋友除下口罩或面對面見社工。當時有關個案剛剛交給非政府組織跟進,代表社署社工判斷個案情況屬於穩定,家訪次數相應減少。</p>
+                <div class="article-meta">
+                    <span class="article-source">Am730</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60377483/%E8%9C%98%E8%9B%9B%E4%BF%A0-%E6%89%8B%E5%90%88%E6%9C%83%E8%8C%83%E5%B0%8F%E9%9B%997%E6%AD%B2%E7%BF%92%E6%AD%A6%E9%A6%96%E4%BA%AE%E7%9B%B8%E6%BC%94%E5%87%BA-%E6%9B%BE%E8%88%87%E6%A2%81%E6%9C%9D%E5%81%89%E5%8A%89%E5%BE%B7%E8%8F%AF%E5%90%88%E4%BD%9C" target="_blank" class="article-card" data-category="entertainment" data-region="hk">
+            <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20260806/1162074058368487424170842.jpeg/6a4S58aMVS0jEWSbfFEGLh3OVEGpeyKV4yNyjeMjco0" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">蜘蛛俠|手合會范小雙7歲習武首亮相演出 曾與梁朝偉劉德華合作</h3>
+                <p class="article-description">電影《蜘蛛俠:英雄重生》(Spider-Man: Brand New Day)在全球票房節節上升,是近年獲最多人叫好的超級英雄電影,連帶戲中多個角色都引起影迷興趣</p>
+                <div class="article-meta">
+                    <span class="article-source">Hk01.com</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.stheadline.com/football-news/3601707/%E8%8B%B1%E8%B6%85%E5%89%8D%E7%9E%BB-%E8%AB%BE%E5%AE%9A%E5%92%B8%E6%A3%AE%E6%9E%97%E5%86%8D%E6%98%93%E5%B8%A5-%E7%9B%AE%E5%89%8D%E9%99%A3%E5%AE%B9%E6%9C%AA%E6%9C%89%E5%90%8C%E7%B4%9A%E8%A3%9C%E5%85%85-%E5%8F%88%E8%A6%81%E6%89%93%E8%AD%B7%E7%B4%9A%E6%88%B0" target="_blank" class="article-card" data-category="top, sports" data-region="hk">
+            <div class="article-image"><img src="https://image.hkhl.hk/f/1200p0/0x0/100/none/7c91a63813d7bc89aebc345a9e3827ae/2026-08/Copy_of_KF_66_.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">英超前瞻│ 諾定咸森林再易帥 目前陣容未有同級補充 又要打護級戰?</h3>
+                <p class="article-description">諾定咸森林上季英超起用破紀錄的4名領隊,最終以第16名完成球季驚險護級。然而,該隊今季仍未能安頓好,球季未開已再易帥,請來前水晶宮領隊加拉斯拿領軍,兼且以天價將陣中主將中場艾利洛安達臣賣走,但又未於轉會市場補充同級球員。以目前陣容,森林新一季英超恐怕又要打護級戰。 森林去季先後任用紐奴、普斯迪高古、戴治和域陀皮利拉4位正式主帥,刷新了英超單季正式主帥數目紀錄。結果,球員整季忙於適應不同主帥的戰術之</p>
+                <div class="article-meta">
+                    <span class="article-source">Stheadline</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hk01.com/%E5%A4%A7%E5%9C%8B%E5%B0%8F%E4%BA%8B/60377560/%E5%A6%B3%E6%98%AF%E5%90%A6%E4%B9%9F%E6%89%93%E8%81%BD%E9%81%8E%E6%88%91-%E7%94%98%E8%82%85%E6%90%AC%E7%93%9C%E5%B0%91%E5%B9%B4%E5%AF%AB-%E6%88%91%E7%9A%84%E5%AA%BD%E5%AA%BD-%E7%B4%B0%E8%86%A9%E6%96%87%E7%AD%86%E6%84%9F%E5%8B%95%E5%85%A8%E7%B6%B2" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20260806/1162086789398138880407521.jpeg/pLzVXSDzmrkQ1hE42JGcUl0WaI6fQvG6N4bMJjeGzCY" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">妳是否也打聽過我?甘肅搬瓜少年寫《我的媽媽》細膩文筆感動全網</h3>
+                <p class="article-description">近日,一篇作文《我的媽媽》看哭全網。內地旅遊博主「丁一之旅」發影片稱,在甘肅偶遇了一群搬運西瓜的少年,她花300元(人民幣,下同)請其中一位</p>
+                <div class="article-meta">
+                    <span class="article-source">Hk01.com</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E5%85%A7%E5%9C%B0%E5%85%AB%E5%A4%A7%E5%A4%9A%E6%99%B6%E7%A1%85%E4%BC%81%E6%A5%AD%E5%80%A1%E8%AD%B0%E4%B8%8D%E5%BE%97%E4%BD%8E%E6%96%BC%E6%88%90%E6%9C%AC%E5%83%B9%E9%8A%B7%E5%94%AE%E5%85%89%E4%BC%8F%E7%94%A2%E5%93%81-%E5%8D%94%E9%91%AB%E7%A7%91%E6%8A%80-03800-hk-%E5%8D%87%E9%80%BE4-022929490.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">內地八大多晶硅企業倡議不得低於成本價銷售光伏產品 協鑫科技(03800.HK)升逾4% 新特能源(01799.HK)漲逾8%</h3>
+                <p class="article-description">內地八大多晶硅企業昨晚(6日)在上海共同簽署反內捲《倡議書》,共同承諾所有光伏產品銷售價格(含招投標報價)均不得低於依據團體標準《光伏行業成本核算模型通則》核算的對應成本。低於完全成本價銷售的必須立即制止和糾正,並自覺接受各級市場監督管理部門的監督檢查。企業要加強互相監督,當發現低於成本銷售的違法行為時,要及時向...</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E6%96%B0%E8%82%A1-%E5%AE%87%E6%A8%B9%E7%A7%91%E6%8A%80-688836-sh-ipo%E5%AE%9A%E5%83%B9150-022926513.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">《新股》宇樹科技(688836.SH)IPO定價150.8人幣 DeepSeek及騰訊等獲戰略配售</h3>
+                <p class="article-description">宇樹科技(688836.SH)科創板IPO定價每股150.8元人民幣(下同),擬發行4,044.64萬股,佔發行後總股本的10%,預計集資約60.99億元,淨籌約59.17億元,一手500股計每手涉資7.54萬元。本次發行價格確定後發行人上市時市值約為609.93億元。 宇樹科技下周一(8月10日)正式開啟科創板...</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.bastillepost.com/hongkong/article/16493214-ai%E6%8B%8D%E7%89%87%E4%B8%96%E4%BB%A3%E9%99%8D%E8%87%A8-%E5%BE%9E%E9%86%AC%E6%9D%BF%E9%B4%A8%E5%88%B0%E5%A5%B3%E7%89%88%E6%82%9F%E7%A9%BA%EF%BC%8C%E4%BA%BA%E4%BA%BA%E9%83%BD%E4%BF%82" target="_blank" class="article-card" data-category="top, entertainment" data-region="hk">
+            <div class="article-image"><img src="https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/ChatGPTE59281E58B81EFBC8CE68891E8A681E5A4B1E6A5ADE4BA86E5978EEFBC9F.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">AI拍片世代降臨——從醬板鴨到女版悟空,人人都係導演?</h3>
+                <p class="article-description">你有冇喺社交媒體睇過一條片:雪山上面,一個俠客救咗一隻狐狸,狐狸報恩——然後反轉變成醬板鴨廣告? 如果有,恭喜你,你親眼見證咗 2026 年最荒謬亦最標誌性嘅 AI 影片現象。 冇嘅話,而家同你講下。 醬板鴨——4 萬蚊的廣告,變全網爆紅迷因 2026 年初,一條名為「雪山救狐狸」嘅短片喺抖音、小紅書、Instagram 等平台瘋傳。畫面係邵氏武俠片風格:雪山、俠客、受傷嘅狐狸、報恩、反轉——最後發現成套嘢係貴州一間醬板鴨鋪頭嘅廣告。 冇明星、冇拍攝團隊、冇幾百萬製作費。係用 AI 影片工具 Seedance 2.0 生成,成本據講唔使 4 萬蚊人民幣。 結果呢?條片喺全網加埋有幾千萬觀看。Twitter 上有人話:「我睇完之後諗咗成晚,到底呢條片係人拍定 AI 做嘅。」 呢個現象唔係得佢一個。同期仲有大量 AI 生成嘅「爽劇」崛起。 YouTube 影片 如果悟空係女仔——AI 爽劇的誕生 另一個更貼近年輕人嘅現象係「如果悟空是girl」。呢個由創作者用 AI 生成嘅短劇系列,將《西遊記》嘅孫悟空重新想像成女仔,每集 1–2 分鐘,喺 Instagram Reels、抖音、Threads 上連載。 畫面質素當然唔及電影級,但對於一個冇 budget、冇團隊、得一個人同 AI 工具嘅創作者嚟講,呢個產量同質素已經係幾年前難以想像。 佢唔係孤例。中國市場已經出現大量 AI 生成嘅微短劇——由《霍去病》嘅 AI 宣傳片,到各種「穿越西遊」嘅二創系列。工具越嚟越易用,門檻越嚟越低。 Threads 貼文 Instagram Reel 全球趨勢:AI 影片由玩具變工具 唔止中國,全球嘅 [...]</p>
+                <div class="article-meta">
+                    <span class="article-source">Bastillepost</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.sports.yahoo.com/news/%E8%8E%8E%E8%8A%AD%E5%88%97%E5%8D%A1iga%E6%99%89%E7%B4%9A%E7%BE%85%E6%B8%A3%E5%A3%AB%E7%9B%8316%E5%BC%B7-022534058.html" target="_blank" class="article-card" data-category="sports" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/lo/mysterio/api/41049420994fcc72c7512bab94bbbab270fed7558dfc5a30979d78b386ab44d2/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F4f65283d-9a5d-4b1d-a78c-ee58c7fb1414" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">莎芭列卡Iga晉級羅渣士盃16強</h3>
+                <p class="article-description">【Now Sports】WTA羅渣士盃周四進行第3圈,莎芭列卡、絲維雅迪克與柏高娜等種子球手均輕鬆過關。莎芭列卡(Aryna Sabalenka)以6:3及6:4直落兩盤擊敗中國球手張帥,一發僅失7分,但開局接發球的節奏一度不是太理想,賽後說:「我嘗試向前推進,然後又往後退,找不到感覺,但當我移動變得更靈活時,場...</p>
+                <div class="article-meta">
+                    <span class="article-source">All In Yahoo</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E4%BA%A4%E9%8A%80%E5%9C%8B%E9%9A%9B%E9%A6%96%E4%BA%88%E6%A8%82%E5%8B%95%E6%A9%9F%E5%99%A8%E4%BA%BA-01236-%E8%B2%B7%E5%85%A5-%E8%A9%95%E7%B4%9A-%E7%9B%AE%E6%A8%99%E5%83%B949-022509783.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">交銀國際首予樂動機器人(01236)「買入」評級 目標價49.14元</h3>
+                <p class="article-description"><匯港通訊> 交銀國際發表報告指,樂動機器人(01236)是以空間感知技術為核心的智能機器人公司,已服務全球前十大家用服務機器人公司中的七家,以及所有全球前五大商用服務機器人公司,2025年客戶留存率升至100%,客戶淨收入留存率持續高於100%,首次覆蓋予「買入」評級,目標價49.14港元。該行預計公司2026...</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E5%A4%A7%E6%91%A9%E6%96%99%E5%A4%A7%E9%BA%A5%E5%A8%9B%E6%A8%82-01060-hk-%E8%82%A1%E5%83%B9%E6%9C%AA%E4%BE%8615%E5%A4%A9%E5%85%A7%E8%82%A1%E5%83%B9%E4%B8%8A%E5%8D%87-022503241.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">《大行》大摩料大麥娛樂(01060.HK)股價未來15天內股價上升</h3>
+                <p class="article-description">大摩發表技術研究報告,預計大麥娛樂(01060.HK)股價未來15天內股價上升,發生機率料70%至80%以上,將上映的《歡迎來龍餐館》可成為短期股價催化劑。評級「增持」,目標價0.8元。 報告指,8月5日,備受期待的潛在票房大片《歡迎來龍餐館》宣布將於8月11日內地上映,並於8月8日至10日進行全國點映。大麥是該...</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E4%B8%AD%E4%BF%A1%E9%87%8C%E6%98%82%E7%B6%AD%E6%8C%81%E4%B9%9D%E5%80%89%E7%BD%AE%E6%A5%AD-01997-%E7%9B%AE%E6%A8%99%E5%83%B940%E5%85%83-%E6%8C%87%E4%BB%8D%E6%98%AF%E9%A6%96%E9%81%B8%E8%82%A1%E4%B9%8B-022439027.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">中信里昂維持九倉置業(01997)目標價40元 指仍是首選股之一</h3>
+                <p class="article-description"><匯港通訊> 九倉置業(01997.HK)昨日宣布,今年起將派息比率由65%調高至90%,令股價在公布業績後急升,中信里昂發表報告,維持九倉置業「跑贏大市」的投資評級,目標價為40港元,這考慮到奢侈品銷售的利好因素,該行指九倉置業2026年每股淨資產值為64.6港元。中信里昂表示,九倉置業上半年業績超出預期,其中...</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.ejtech.ai/ceoai/ai%E5%8F%9B%E8%AE%8A-%E4%BC%81%E6%A5%AD-meta-%E6%A8%A1%E5%9E%8B-%E5%85%A5%E4%BE%B5/" target="_blank" class="article-card" data-category="top, technology" data-region="hk">
+            <div class="article-image"><img src="https://www.ejtech.ai/wp-content/uploads/2026/08/0807_P07.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">AI叛變|有企業遭Meta模型入侵</h3>
+                <p class="article-description">科技媒體The Information引述知情人士報道,Meta旗下人工智能(AI)模型Muse Spark 1.1,曾經在一次安全測試演練中,駭入其他公司系統。</p>
+                <div class="article-meta">
+                    <span class="article-source">Startupbeat</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E7%89%B9%E6%9C%97%E6%99%AE%E8%80%83%E6%85%AE%E5%B0%B1%E7%96%AB%E8%8B%97%E8%88%87%E8%87%AA%E9%96%89%E7%97%87%E7%A0%94%E7%A9%B6%E7%99%BC%E5%B8%83%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4-022429088.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://i-invdn-com.investing.com/news/LYNXMPEM541GN_M.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">特朗普考慮就疫苗與自閉症研究發布行政命令</h3>
+                <p class="article-description">Investing.com - 據彭博新聞社週五引述知情人士報導,特朗普政府正考慮就疫苗與自閉症議題發布一項行政命令,最快可能於下週正式頒布。</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1046142/%E6%81%92%E7%94%9F%E6%8C%87%E6%95%B8%E5%8D%8A%E6%97%A5%E5%8D%8737%E9%BB%9E-%E4%B9%9D%E5%80%89%E7%BD%AE%E6%A5%AD%E5%8D%875-minimax%E6%99%BA%E8%AD%9C%E5%8D%87%E9%80%BE17-%E6%9B%B4%E6%96%B0-" target="_blank" class="article-card" data-category="top, business" data-region="hk">
+            <div class="article-image"><img src="https://cdn3.am730.com.hk/processed/2026-01/1046142/article/1046142/df/F67beec180cf2429757b2e1e8_0_1.jpg?updatedAt=1786076536" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">恒生指數半日升37點 九倉置業升5% MINIMAX智譜升逾17%(更新)</h3>
+                <p class="article-description">科技股個別發展,騰訊(700)跌0.13%,報478.6元;美團(3690)升0.27%,報92.45元;京東(9618)跌0.24%,報127元;阿里巴巴(9988)跌0.4%,報123.9元;百度(9888)跌0.19%,報106.9元;小米(1810)跌0.52%,報26.72元;快手(1024)升1.13%,報44.74元;網易(9999)升1.08%,報205.2元。</p>
+                <div class="article-meta">
+                    <span class="article-source">Am730</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1046142/%E6%81%92%E7%94%9F%E6%8C%87%E6%95%B8%E5%8D%87137%E9%BB%9E-%E4%B9%9D%E5%80%89%E7%BD%AE%E6%A5%AD%E5%8D%87%E8%BF%917-%E6%99%BA%E8%AD%9C%E5%8D%87%E9%80%BE14-%E6%9B%B4%E6%96%B0-" target="_blank" class="article-card" data-category="top, business" data-region="hk">
+            <div class="article-image"><img src="https://cdn3.am730.com.hk/processed/2026-01/1046142/article/1046142/df/F67beec180cf2429757b2e1e8_0_1.jpg?updatedAt=1786091084" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">恒生指數升137點 九倉置業升近7% 智譜升逾14%(更新)</h3>
+                <p class="article-description">科技股個別發展,騰訊(700)跌0.08%,報478.8元;美團(3690)無升跌,報92.2元;京東(9618)升0.16%,報127.5元;阿里巴巴(9988)跌0.48%,報123.8元;百度(9888)跌0.28%,報106.8元;小米(1810)升0.75%,報27.06元;快手(1024)跌0.14%,報44.18元;網易(9999)升1.08%,報205.2元。</p>
+                <div class="article-meta">
+                    <span class="article-source">Am730</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1046142/%E6%81%92%E7%94%9F%E6%8C%87%E6%95%B8%E4%BD%8E%E9%96%8B3%E9%BB%9E-%E4%B9%9D%E5%80%89%E7%BD%AE%E6%A5%AD%E9%AB%98%E9%96%8B%E9%80%BE2-" target="_blank" class="article-card" data-category="top, business" data-region="hk">
+            <div class="article-image"><img src="https://cdn3.am730.com.hk/processed/2026-01/1046142/article/1046142/df/F67beec180cf2429757b2e1e8_0_1.jpg?updatedAt=1786069344" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">恒生指數低開3點 九倉置業高開逾2%</h3>
+                <p class="article-description">None</p>
+                <div class="article-meta">
+                    <span class="article-source">Am730</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E6%93%9A%E5%A0%B1%E9%98%BF%E9%87%8C-09988-hk-%E5%8D%83%E5%95%8F%E9%96%8B%E6%BA%90ai%E6%A8%A1%E5%9E%8B%E6%93%AC%E5%90%91%E5%A4%A7%E5%9E%8B%E5%95%86%E6%A5%AD%E7%94%A8%E6%88%B6%E6%94%B6%E8%B2%BB-%E6%A2%9D%E6%AC%BE%E6%95%88%E6%B3%95%E6%9C%88%E4%B9%8B%E6%9A%97%E9%9D%A2kimi-021927906.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">據報阿里(09988.HK)千問開源AI模型擬向大型商業用戶收費 條款效法月之暗面Kimi K3</h3>
+                <p class="article-description">繼昨日DeepSeek預告短期大幅加價後,路透引述消息報道,阿里巴巴(09988.HK)下一版千問開源人工智能(AI)模型計劃對大型商業用戶收費。 報道稱,阿里計劃下周在其開源模型的許可條款中加入一項類似月之暗面Kimi K3的規定。Kimi K3的許可條款規定,如果用戶營運「模型即服務」業務,且年收入超過2,0...</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.am730.com.hk/%E6%9C%AC%E5%9C%B0/1046141/%E5%B6%BA%E5%8D%97%E5%A4%A7%E5%AD%B8%E5%AD%B8%E7%94%9F%E6%9C%83%E8%A7%A3%E6%95%A3-%E7%A8%B1%E6%A0%A1%E5%85%A7%E5%A4%96%E5%BD%A2%E5%8B%A2%E5%87%BA%E7%8F%BE%E8%AE%8A%E5%8C%96" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://cdn3.am730.com.hk/processed/2026-08/1046141/article/1046141/df/01KZD1KMWTCCNHNN9ZXJRWCM7N.jpg?updatedAt=1786070593" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">嶺南大學學生會解散 稱校內外形勢出現變化</h3>
+                <p class="article-description">前嶺大學生會外務副會長賴卓賢表示,校方去年起拒承認學生會,導致學生會無法在校內提供服務,舉例舉辦迎新活動時,校內外多個場地均拒絕租借,發放刊物時亦遭校方沒收,形容學生會已完全失去運作空間。</p>
+                <div class="article-meta">
+                    <span class="article-source">Am730</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.am730.com.hk/%E5%B8%82%E5%A0%B4%E8%B3%87%E8%A8%8A/1046015/%E6%B3%95%E5%9C%8B%E9%9B%99%E9%A3%9B%E4%BA%BA%E8%97%A5%E6%B0%B4-%E4%B8%80%E7%93%B6%E8%A7%A3%E6%B1%BA%E5%A4%9A%E7%A8%AE%E4%B8%8D%E9%81%A9" target="_blank" class="article-card" data-category="top, health" data-region="hk">
+            <div class="article-image"><img src="https://cdn3.am730.com.hk/processed/2026-08/1046015/article/1046015/df/01KZBAJ96S388Y5VEX2RNHBHZB.PNG?updatedAt=1786013214" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">法國雙飛人藥水 一瓶解決多種不適</h3>
+                <p class="article-description">夏天最適合一家大小出外旅遊,但旅遊途中最怕蚊叮蟲咬後又痕又腫,或者傷風感冒、舟車暈浪、腹痛腹瀉等不適。擁有超過180年歷史的「法國雙飛人藥水」,法國製造,是不少家庭的夏日常備之選,具備「內服外用、多重功效」。外用可快速舒緩蚊叮蟲咬、消毒止炎、止癢消腫、舟車暈浪;只需加幾滴於溫水中飲用,有效緩解傷風感冒、疴嘔肚痛等不適,迅速見效,深受用家信賴。「法國雙飛人藥水」帶有清新薄荷香氣,使用後不留污漬,方便攜帶。無論是居家常備、戶外活動還是長途旅行,都是一瓶多效的常備良藥。</p>
+                <div class="article-meta">
+                    <span class="article-source">Am730</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.ejtech.ai/%E7%A7%91%E6%8A%80%E5%8B%95%E6%85%8B/%E8%B0%B7%E6%AD%8C-%E8%80%81%E5%B0%87-%E5%89%B5%E6%A5%AD-%E8%87%AA%E6%88%91%E9%80%B2%E5%8C%96-ai-%E9%A6%96%E5%B8%AD%E7%A7%91%E5%AD%B8%E5%AE%B6-%E8%BF%AA%E6%81%A9-%E9%9B%A2%E8%81%B7/" target="_blank" class="article-card" data-category="top, technology" data-region="hk">
+            <div class="article-image"><img src="https://www.ejtech.ai/wp-content/uploads/2026/08/0807_P04.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">谷歌4老將創業|冀研自我進化AI 首席科學家迪恩効力27年 聯同3戰友離職</h3>
+                <p class="article-description">谷歌(Google)首席科學家、現代人工智能(AI)基礎設施核心人物之一的迪恩(Jeff Dean),在谷歌工作近27年後即將離職,宣布聯合成立AI初創Discovery Loop。</p>
+                <div class="article-meta">
+                    <span class="article-source">Startupbeat</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.stheadline.com/realtime-world/3601883/%E7%BD%95%E8%A6%8B%E9%81%BA%E5%82%B3%E7%97%85%E6%B2%B3%E5%8D%974%E5%AD%A9%E5%AE%B6%E5%BA%AD2%E5%AD%90%E7%BD%B9%E8%87%AA%E6%AF%80%E5%AE%B9%E8%B2%8C%E7%97%87-%E6%A9%9F%E7%8E%87%E5%83%8538%E8%90%AC%E5%88%86%E4%B9%8B1" target="_blank" class="article-card" data-category="top, health" data-region="hk">
+            <div class="article-image"><img src="https://image.hkhl.hk/f/1200p0/0x0/100/none/df417da715ff8f2c9ab515a950592507/2026-08/KF_2__0.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">罕見遺傳病|河南4孩家庭2子罹「自毀容貌症」 機率僅38萬分之1</h3>
+                <p class="article-description">河南省濮陽市一名育有四名子女的母親日前透露,其14歲大兒子及1歲小兒子均患上發病率僅38萬分之1的罕見遺傳病「萊希-尼亨症候群」(Lesch-Nyhan syndrome,俗稱自毀容貌綜合徵),會出現不受控的咬指甲、咬嘴唇及撞頭等自殘行為。儘管該病目前無特效藥可醫,但母親表示絕不放棄照顧。事件引發網民熱議,不少人質疑其在長子發病後仍接連生育,對其境況難以同情。 相關新聞:家長注意|寧波7歲女童乳房</p>
+                <div class="article-meta">
+                    <span class="article-source">Stheadline</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="http://www.crntt.com/doc/7_0_107220942_1_0807101130.html" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://hkpic.crntt.com/upload/202608/7/107220944.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">特朗普行政令重擊生育旅遊 收緊出生公民權</h3>
+                <p class="article-description">中評社北京8月7日電/當地時間8月6日,美國總統特朗普在白宮簽署兩項行政令,重點打擊商業化“生育旅遊”,並進一步限制部分在美國出生兒童自動獲得公民身份的範圍。 據央視新聞報導,特朗普表示,政府將對通過酒店等機構組織赴美生子的“生育旅遊”產業展開更大規模、更強力的執法行動。 特朗普稱,出生公民權制度長期被濫用,“生育旅遊”已經發展成一門生意。他聲稱,每年可能有“數十萬人”通過</p>
+                <div class="article-meta">
+                    <span class="article-source">Crntt</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.stheadline.com/realtime-finance/3601884/OpenAI%E6%93%9A%E5%A0%B1%E6%8E%A8%E9%A6%96%E6%AC%BE%E5%86%AC%E7%94%A9%E9%80%A0%E5%9E%8BAI%E7%A1%AC%E4%BB%B6-%E7%94%B1%E8%98%8B%E6%9E%9C%E5%89%8D%E8%A8%AD%E8%A8%88%E5%B8%AB%E6%93%8D%E5%88%80-%E5%94%AE%E5%83%B9%E6%9C%80%E9%AB%98400%E7%BE%8E%E5%85%83" target="_blank" class="article-card" data-category="top, technology" data-region="hk">
+            <div class="article-image"><img src="https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/8a940cb35cf6cc0f3ea8117dc9a8ad56/2026-08/KF_-_2026-08-07T100840_961.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">OpenAI據報推首款「冬甩」造型AI硬件 由蘋果前設計師操刀 售價最高400美元</h3>
+                <p class="article-description">據彭博引述消息報道,OpenAI的首款消費硬件曝光,產品將是一款沒有螢幕的智能揚聲器,採用類似「冬甩」的圓環造型,大小約如冰球,並設有可自行移動的零件。產品預計於2027年推出,定位為「AI優先」電腦,售價可能介乎300至400美元。OpenAI拒絕評論產品計劃。 可單手拿取 配備電池 消息指,新裝置由電池供電,重量及尺寸將方便用戶單手拿取,並可在不同位置使用,包括放在床頭櫃、廚房工作枱,或直接拿</p>
+                <div class="article-meta">
+                    <span class="article-source">Stheadline</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.master-insight.com/article/49579" target="_blank" class="article-card" data-category="politics" data-region="hk">
+            <div class="article-image"><img src="https://bucket-image.inkmaginecms.com/9dde7c0f-adea-48d0-9671-8f5a6345ad4a/image/2026/08/c2b5e4a0-3118-488f-bf51-346855501b49.webp" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">趙靈敏:尼加拉瓜政府取消選舉 美國為何視若無睹? 專制總統奧爾特加是如何養成的?</h3>
+                <p class="article-description">2007年至今,尼加拉瓜總統奧爾特加已經擔任了20年總統,如今更公然取消選舉,把國家變成了專制的牢籠。尼加拉瓜如此過分,美國為什麼不干預呢?聽聽資深傳媒人趙靈敏從尼國歷史娓娓道來原因。</p>
+                <div class="article-meta">
+                    <span class="article-source">Master – Insight</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="http://www.crntt.com/doc/7_0_107220988_1_0807100933.html" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://hkpic.crntt.com/upload/202608/7/107220994.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">俄外交部批日本加速“再軍事化”擾亂全球</h3>
+                <p class="article-description">中評社北京8月7日電/俄羅斯外交部信息與出版司副司長法捷耶夫6日就日本發布新版《防衛白皮書》表態說,日本加速“再軍事化”擾亂地區及全球安全局勢。 據新華社報導,法捷耶夫當天在例行記者會上回答新華社記者提問時說,日方不斷背離本國憲法中的和平主義條款,試圖推翻“無核三原則”等承諾。 法捷耶夫強調,在廣島核爆81周年之際,俄方希望日本政府能夠以史為鑒,銘記歷史教訓,牢記堅持和平道</p>
+                <div class="article-meta">
+                    <span class="article-source">Crntt</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.stheadline.com/realtime-china/3601879/%E5%BB%A3%E5%B3%B6%E5%8E%9F%E7%88%8681%E5%91%A8%E5%B9%B4%E5%A4%96%E4%BA%A4%E9%83%A8%E6%89%B9%E6%97%A5%E6%9C%AC%E5%80%9F%E5%8F%97%E5%AE%B3%E8%80%85%E5%8D%9A%E5%90%8C%E6%83%85-%E4%B8%80%E9%82%8A%E5%9C%96%E8%AC%80%E7%AA%81%E7%A0%B4%E7%84%A1%E6%A0%B8%E4%B8%89%E5%8E%9F%E5%89%87" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://image.hkhl.hk/f/1200p0/0x0/100/none/2646e3b4e295d6ee35ade353256fa8ed/2026-08/AFP__20260805__AR-20260805200256_KINQ1_0F6A6459_200251675__v1__HighRes__VisitorsPayR_1__0.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">廣島原爆81周年|外交部批日本借「受害者」博同情 一邊圖謀突破無核三原則</h3>
+                <p class="article-description">今年是美國向日本廣島投下原子彈81周年,廣島和平紀念公園近日舉行悼念儀式,日本首相高市早苗6日於致辭時重申,日本將堅持「無核三原則」。 相關新聞:廣島原爆81周年—高市早苗稱日本肩負「無核世界」使命 重申無核三原則 對此,中國外交部發言人6日在北京回應記者提問時表示,針對日本執政當局擴軍備武、甚至試圖修改「無核三原則」的動向,長期以來,日本右翼勢力篡改歷史事實,在政治上利用原爆受害者的身份標籤博取</p>
+                <div class="article-meta">
+                    <span class="article-source">Stheadline</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
