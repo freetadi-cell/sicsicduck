@@ -101,14 +101,22 @@ def card(a):
 
 
 def build():
+    import sys
+    # --summary-only 模式：只顯示已改寫嘅文章（測試用，避免幾千張外連圖拖垮頁面）
+    summary_only = "--summary-only" in sys.argv
+
     articles = load_news()
     cards_html = []
     modals_html = []
+    shown = 0
     for a in articles:
         c, m = card(a)
+        if summary_only and m is None:
+            continue  # 只揀有站內摘要嘅
         cards_html.append(c)
         if m:
             modals_html.append(m)
+        shown += 1
 
     grid = "\n".join(cards_html)
     modals = "\n".join(modals_html)
