@@ -9,6 +9,7 @@ import requests
 import json
 import feedparser
 import hashlib
+import html as html_lib
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -20,6 +21,7 @@ BASE_URL = "https://newsdata.io/api/1/news"
 SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 NEWS_FILE = DATA_DIR / "news.json"
+CACHE_DIR = SCRIPT_DIR.parent / "articles_cache"
 
 # Settings
 MAX_AGE_DAYS = 30  # Remove articles older than this
@@ -458,46 +460,130 @@ def fetch_all_rss():
     return all_articles
 
 
+def load_summary(aid):
+    """讀取已改寫嘅摘要; 無就回 None"""
+    if not aid:
+        return None
+    p = CACHE_DIR / f"{aid}.json"
+    if not p.exists():
+        return None
+    try:
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("status") == "done" and d.get("rewritten"):
+            return d["rewritten"]
+    except (json.JSONDecodeError, OSError):
+        pass
+    return None
+
+
 def generate_html_content(articles):
     """Generate HTML content for news cards"""
     html = ""
-    
+    modals = []
+
     for article in articles:
+        aid = article.get("id", "")
         image_url = article.get("image_url") or ""
         link = article.get("link", "#")
         description = article.get("description", "")
         category_list = article.get("category", [])
         category_str = ", ".join(category_list) if category_list else ""
         region = article.get("region", "")
-        
+        title = article.get("title", "")
+        source = article.get("source_name", "")
+        pub = (article.get("pubDate", "") or "")[:10]
+
         if image_url:
             image_html = f'<img src="{image_url}" alt="" onerror="this.src=\'/default-news.jpg\'">'
         else:
             image_html = '<img src="/default-news.jpg" alt="">'
-        
-        html += f'''        <a href="{link}" target="_blank" class="article-card" data-category="{category_str}" data-region="{region}">
+
+        # 有站內摘要 → 用 modal 卡片
+        summary = load_summary(aid)
+        if summary:
+            summary_esc = html_lib.escape(summary, quote=True)
+            title_esc = html_lib.escape(title, quote=True)
+            aid_esc = html_lib.escape(aid, quote=True)
+            src_esc = html_lib.escape(source, quote=True)
+            pub_esc = html_lib.escape(pub, quote=True)
+            link_esc = html_lib.escape(link, quote=True)
+
+            html += f'''        <a href="javascript:void(0)" class="article-card" data-modal-id="{aid_esc}" data-category="{html_lib.escape(category_str, quote=True)}" data-region="{html_lib.escape(region, quote=True)}">
             <div class="article-image">{image_html}</div>
             <div class="article-content">
-                <h3 class="article-title">{article["title"]}</h3>
-                <p class="article-description">{description}</p>
+                <h3 class="article-title">{title_esc}</h3>
+                <p class="article-description">{summary_esc}</p>
                 <div class="article-meta">
-                    <span class="article-source">{article.get("source_name", "")}</span>
-                    <span class="article-date">📅 {article.get("pubDate", "")[:10] if article.get("pubDate") else ""}</span>
+                    <span class="article-source">{src_esc}</span>
+                    <span class="article-date">📅 {pub_esc}</span>
                 </div>
             </div>
         </a>
 '''
-    
-    return html
+            modals.append(f'''<div class="news-modal" id="modal-{aid_esc}" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('{aid_esc}')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('{aid_esc}')">✕</button>
+            <h2 class="news-modal-title">{title_esc}</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">{src_esc}</span>
+                <span class="article-date">📅 {pub_esc}</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">{summary_esc}</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="{link_esc}" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>''')
+        else:
+            html += f'''        <a href="{link}" target="_blank" class="article-card" data-category="{category_str}" data-region="{region}">
+            <div class="article-image">{image_html}</div>
+            <div class="article-content">
+                <h3 class="article-title">{title}</h3>
+                <p class="article-description">{description}</p>
+                <div class="article-meta">
+                    <span class="article-source">{source}</span>
+                    <span class="article-date">📅 {pub}</span>
+                </div>
+            </div>
+        </a>
+'''
+
+    return html, modals
 
 
-def main(initial_build=False):
+def main(initial_build=False, build_only=False):
     """
     Main function
     
     Args:
         initial_build: If True, fetch more articles to build initial database
+        build_only: If True, skip fetching, just rebuild news.html from news.json
     """
+    if build_only:
+        # 由已存 news.json 重新 build news.html（唔重新抓取）
+        articles = load_existing_news()
+        html_content, modals = generate_html_content(articles)
+        news_html_path = SCRIPT_DIR.parent / "news.html"
+        with open(news_html_path, "r", encoding="utf-8") as f:
+            html_content_full = f.read()
+        import re
+        pattern = r'<div class="articles-grid" id="articlesGrid">.*?</section>'
+        modals_html = "\n".join(modals) if modals else ""
+        replacement = f'<div class="articles-grid" id="articlesGrid">\n{html_content}    </div>\n</section>\n\n{modals_html}'
+        new_html = re.sub(pattern, replacement, html_content_full, flags=re.DOTALL)
+        if ".news-modal" not in new_html:
+            new_html = re.sub(r'(</style>)', _MODAL_CSS() + r'\1', new_html, count=1, flags=re.DOTALL)
+        if "function openModal" not in new_html:
+            new_html = re.sub(r'(</body>)', _MODAL_JS() + r'\1', new_html, count=1, flags=re.DOTALL)
+        with open(news_html_path, "w", encoding="utf-8") as f:
+            f.write(new_html)
+        print(f"[build-only] Updated {news_html_path} (modal: {len(modals)})")
+        return
+
     existing_articles = load_existing_news()
     print(f"Loaded {len(existing_articles)} existing articles")
     
@@ -562,22 +648,73 @@ def main(initial_build=False):
     save_news(all_articles)
     print(f"\n✅ Total: {len(all_articles)} articles saved")
     
-    html_content = generate_html_content(all_articles)
-    
+    html_content, modals = generate_html_content(all_articles)
+
     news_html_path = SCRIPT_DIR.parent / "news.html"
     with open(news_html_path, "r", encoding="utf-8") as f:
         html_content_full = f.read()
-    
+
     import re
     pattern = r'<div class="articles-grid" id="articlesGrid">.*?</section>'
-    replacement = f'<div class="articles-grid" id="articlesGrid">\n{html_content}    </div>\n</section>'
-    
+    modals_html = "\n".join(modals) if modals else ""
+    replacement = f'<div class="articles-grid" id="articlesGrid">\n{html_content}    </div>\n</section>\n\n{modals_html}'
     new_html = re.sub(pattern, replacement, html_content_full, flags=re.DOTALL)
-    
+
+    # 注入 modal CSS + JS（若未存在）
+    if ".news-modal" not in new_html:
+        new_html = re.sub(r'(</style>)', _MODAL_CSS() + r'\1', new_html, count=1, flags=re.DOTALL)
+    if "function openModal" not in new_html:
+        new_html = re.sub(r'(</body>)', _MODAL_JS() + r'\1', new_html, count=1, flags=re.DOTALL)
+
     with open(news_html_path, "w", encoding="utf-8") as f:
         f.write(new_html)
-    
-    print(f"Updated {news_html_path}")
+
+    print(f"Updated {news_html_path} (modal: {len(modals)})")
+
+
+def _MODAL_CSS():
+    return r"""<style>
+/* ==== 站內新聞 Modal CSS ==== */
+.news-modal { display: none; position: fixed; inset: 0; z-index: 300; }
+.news-modal.open { display: block; }
+.news-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(2px); }
+.news-modal-dialog { position: relative; z-index: 2; max-width: 640px; margin: 6vh auto 0; background: #fff; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,.3); padding: 28px 28px 24px; max-height: 82vh; overflow-y: auto; border: 1px solid #e6c97c; }
+.news-modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border: none; border-radius: 50%; background: #f3f4f6; color: #6b7280; font-size: 16px; cursor: pointer; }
+.news-modal-close:hover { background: #fdeed2; color: #7c5d1e; }
+.news-modal-title { font-size: 20px; font-weight: 800; color: #111827; margin: 4px 40px 10px 0; line-height: 1.4; }
+.news-modal-meta { display: flex; gap: 14px; align-items: center; font-size: 13px; color: #a16e12; margin-bottom: 16px; }
+.news-modal-body { border-top: 1px solid #e5e7eb; padding-top: 16px; }
+.news-modal-rewritten { font-size: 15px; line-height: 1.75; color: #1f2937; }
+.news-modal-copy { margin-top: 16px; font-size: 12px; color: #6b7280; background: #fdf6e3; border-left: 3px solid #d9a928; padding: 8px 12px; border-radius: 6px; }
+.news-modal-footer { margin-top: 20px; text-align: right; }
+.news-modal-link { display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #d9a928, #b8860b); color: #fff; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; }
+.news-modal-link:hover { filter: brightness(1.05); }
+</style>"""
+
+
+def _MODAL_JS():
+    return r"""<script>
+// Modal 開關
+function openModal(id) {
+    const m = document.getElementById('modal-' + id);
+    if (m) { m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeModal(id) {
+    const m = document.getElementById('modal-' + id);
+    if (m) { m.classList.remove('open'); document.body.style.overflow = ''; }
+}
+document.querySelectorAll('.article-card[data-modal-id]').forEach(card => {
+    card.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal(card.dataset.modalId);
+    });
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.news-modal.open').forEach(m => closeModal(m.id.replace('modal-','')));
+    }
+});
+</script>"""
 
 
 if __name__ == "__main__":

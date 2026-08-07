@@ -399,7 +399,23 @@
             font-size: 64px;
             margin-bottom: 16px;
         }
-    </style>
+    <style>
+/* ==== 站內新聞 Modal CSS ==== */
+.news-modal { display: none; position: fixed; inset: 0; z-index: 300; }
+.news-modal.open { display: block; }
+.news-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.55); backdrop-filter: blur(2px); }
+.news-modal-dialog { position: relative; z-index: 2; max-width: 640px; margin: 6vh auto 0; background: #fff; border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,.3); padding: 28px 28px 24px; max-height: 82vh; overflow-y: auto; border: 1px solid #e6c97c; }
+.news-modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border: none; border-radius: 50%; background: #f3f4f6; color: #6b7280; font-size: 16px; cursor: pointer; }
+.news-modal-close:hover { background: #fdeed2; color: #7c5d1e; }
+.news-modal-title { font-size: 20px; font-weight: 800; color: #111827; margin: 4px 40px 10px 0; line-height: 1.4; }
+.news-modal-meta { display: flex; gap: 14px; align-items: center; font-size: 13px; color: #a16e12; margin-bottom: 16px; }
+.news-modal-body { border-top: 1px solid #e5e7eb; padding-top: 16px; }
+.news-modal-rewritten { font-size: 15px; line-height: 1.75; color: #1f2937; }
+.news-modal-copy { margin-top: 16px; font-size: 12px; color: #6b7280; background: #fdf6e3; border-left: 3px solid #d9a928; padding: 8px 12px; border-radius: 6px; }
+.news-modal-footer { margin-top: 20px; text-align: right; }
+.news-modal-link { display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #d9a928, #b8860b); color: #fff; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; }
+.news-modal-link:hover { filter: brightness(1.05); }
+</style></style>
 </head>
 <body>
 
@@ -454,6 +470,29 @@
 <!-- Articles Section -->
 <section class="articles-section">
     <div class="articles-grid" id="articlesGrid">
+        <a href="https://www.hkej.com/instantnews/property/article/4478352/%E7%B2%89%E5%B6%BA%E5%90%8D%E9%83%BD%E4%B8%89%E6%88%BF17%E5%B9%B4%E5%8D%87%E5%80%BC%E9%80%BE%E5%85%A9%E5%80%8D" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">粉嶺名都三房17年升值逾兩倍</h3>
+                <p class="article-description">粉嶺名都1座中層G室，實用面積454方呎，3房間隔，日前議價後以505萬元獲承接，實用呎價11123 ...</p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hkej.com/instantnews/announcement/article/4478474/%E7%9B%88%E8%AD%A6%E4%B8%A8%E7%94%B3%E6%B4%B2%E5%9C%8B%E9%9A%9B%E6%96%99%E5%8D%8A%E5%B9%B4%E7%9B%88%E5%88%A9%E5%80%92%E9%80%80%E9%80%BE38%25" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="/default-news.jpg" alt=""></div>
+            <div class="article-content">
+                <h3 class="article-title">盈警丨申洲國際料半年盈利倒退逾38%</h3>
+                <p class="article-description">申洲國際(02313)預期，截至6月底止中期業績，股東應佔溢利按年減少38%至43%。
+該公司202 ...</p>
+                <div class="article-meta">
+                    <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-07</span>
+                </div>
+            </div>
+        </a>
         <a href="https://www.hkej.com/instantnews/property/article/4478347/%E5%A4%A9%E8%B3%A6%E6%B5%B7%E7%81%A3%E4%B8%89%E6%88%BF4.5%E8%90%AC%E7%A7%9F%E5%87%BA+%E5%9B%9E%E5%A0%B12.6%E5%8E%98" target="_blank" class="article-card" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
@@ -564,444 +603,440 @@
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478161/%E7%BE%8E%E8%82%A1%E8%B5%B0%E5%8B%A2%E4%B8%A8%E9%81%93%E6%8C%87%E6%94%B6%E5%B8%82%E8%B7%8C464%E9%BB%9E+SpaceX%E5%8F%8D%E5%BD%88%E9%80%BE6%25" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="162803db52f3013e" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">美股走勢丨道指收市跌464點 SpaceX反彈逾6%</h3>
-                <p class="article-description"></p>
+                <p class="article-description">美股周四收市下跌，道指挫464點或0.85%，報53885點；標指跌0.18%，納指跌0.06%。市場受聯儲局主席沃什可能加息的傳聞影響，加上國際油價及美債息回升，削弱股市動力。SpaceX股價反彈6.1%，Alphabet擬發債最多250億美元，股價跌1.3%。摩根大通行政總裁戴蒙警告金融市場槓桿偏高，可能引發恐慌。美國上周新領失業救濟人數19.9萬，少過預期。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478158/%E5%9F%83%E5%8F%8A%E5%A5%B3%E6%98%9F%E6%B6%89%E6%AF%92%E8%A2%AB%E5%88%A4%E6%AD%BB%E5%88%91+%E6%A1%88%E4%BB%B6%E9%9C%87%E9%A9%9A%E7%A4%BE%E6%9C%83" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="1d01fe2937996c50" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">埃及女星涉毒被判死刑 案件震驚社會</h3>
-                <p class="article-description"></p>
+                <p class="article-description">埃及開羅刑事法院近日對一宗大型毒品案作出判決，知名女星Sarah Khalifa與另外12名被告被判處死刑。該案涉及跨國犯罪集團，警方去年4月拘捕28人，查獲逾750公斤毒品原料及製毒設備。一審判決須經國家最高宗教機構「大穆夫提」提出意見，預計9月5日裁決，案件仍可上訴。現年32歲的Khalifa因與演藝及足球界人士緋聞而具知名度，社交媒體追蹤者超過300萬。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/announcement/article/4478198/%E7%9B%88%E8%AD%A6%E4%B8%A8%E8%8F%AF%E9%A0%98%E9%86%AB%E8%97%A5%E6%96%99%E4%B8%AD%E6%9C%9F%E8%BD%89%E8%99%A73020%E8%90%AC%E4%BA%BA%E6%B0%91%E5%B9%A3" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="02e60ddb21312772" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">盈警丨華領醫藥料中期轉虧3020萬人民幣</h3>
-                <p class="article-description">華領醫藥(02552)發盈警，預期於截至6月底止6月錄得虧損約3020萬元(人民幣．下同)，2025 ...</p>
+                <p class="article-description">華領醫藥（02552）發盈警，預期截至6月底止六個月錄得虧損約3020萬元人民幣，相對2025年同期溢利約11.84億元。虧損主因終止拜耳合約後，缺少一次性解除合約負債約12.44億元收入。撇除非經常性項目，經調整虧損約5960萬元，按年收窄約2940萬元，受惠收入增加及毛利率改善。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478194/%E5%9C%8B%E9%9A%9B%E6%97%A9%E7%8F%AD%E8%BB%8A%E4%B8%A8SpaceX+IPO%E9%A6%96%E6%89%B9%E8%82%A1%E4%BB%BD%E5%8D%B3%E5%B0%87%E8%A7%A3%E7%A6%81+%E8%82%A1%E5%83%B9%E6%88%96%E9%9D%A2%E8%87%A8%E6%9B%B4%E5%A4%A7%E5%A3%93%E5%8A%9B" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="1bbf3d086abadd55" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">國際早班車丨SpaceX IPO首批股份即將解禁 股價或面臨更大壓力</h3>
-                <p class="article-description">SpaceX IPO首批股份即將解禁 股價或面臨更大壓力馬斯克旗下SpaceX股價或將面臨更大壓力， ...</p>
+                <p class="article-description">SpaceX早期投資者股份鎖定期將於周四屆滿，首次迎來套現機會，股價或面臨更大壓力。公司於得州格賴姆斯縣興建的Terafab晶片設施，首階段資本開支達168億美元。美股方面，道指收市跌464點，SpaceX逆市反彈6.1%。其他消息包括：蘋果據傳因供應鏈瓶頸搶購DRAM，以確保新iPhone供應；特朗普簽令對進口多晶矽加徵關稅；伊朗據報在霍爾木茲海峽打擊敵對目標；埃及女星涉毒被判死刑。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478189/OpenAI%E6%98%8E%E5%B9%B4%E6%93%AC%E6%8E%A8%E6%99%BA%E8%83%BD%E9%9F%B3%E7%AE%B1+iPhone%E8%A8%AD%E8%A8%88%E4%B9%8B%E7%88%B6%E6%93%8D%E5%88%80" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="67555cda1958c9d9" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">OpenAI明年擬推智能音箱 iPhone設計之父操刀</h3>
-                <p class="article-description">美國人工智能(AI)技術開發商OpenAI，正在加速開發首款消費級硬件。據彭博報道，新產品是一款形狀 ...</p>
+                <p class="article-description">OpenAI正加速開發首款消費級硬件，計劃明年推出一款形如甜甜圈、大小如冰球的無屏幕智能音箱，定價300至400美元。該設備由蘋果前設計總監Jony Ive旗下LoveFrom工作室操刀，採用高端金屬材質，內建攝影機與感應器，能學習用戶習慣並進行擬人化互動，被視為取代智能手機的第一步。OpenAI去年斥資65億美元收購Ive創辦的io Products，吸納多名蘋果前設計師及工程師，蘋果為此興訟，指控OpenAI盜用商業機密，並已申請禁制令，若獲批或影響新產品發布。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478183/%E7%89%B9%E6%9C%97%E6%99%AE%E5%AE%A3%E5%B8%83%E5%B0%8D%E5%A4%9A%E6%99%B6%E7%9F%BD%E5%8F%8A%E8%A1%8D%E7%94%9F%E5%93%81%E5%8A%A0%E5%BE%B5%E9%97%9C%E7%A8%85" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="34c3c95f3280cbed" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">特朗普宣布對多晶矽及衍生品加徵關稅</h3>
-                <p class="article-description">美國總統特朗普周四簽署行政令，依據《1962年貿易擴展法》第232條，對進口多晶矽(Polysili ...</p>
+                <p class="article-description">美國總統特朗普簽署行政令，依據《1962年貿易擴展法》第232條，對進口多晶矽及衍生產品實施最低進口價格及額外關稅，以支持本土半導體和太陽能供應鏈。多晶矽最低進口價定為每公斤21美元，相關產品另加徵15%從價關稅，措施於12月4日生效。華府同時授權商務部推出「回流美國」激勵計劃，企業若承諾在2029年1月20日前動工興建或擴建相關生產設施，可申請豁免部分關稅。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478173/%E4%BC%8A%E6%9C%97%E6%93%9A%E5%A0%B1%E5%9C%A8%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E6%89%93%E6%93%8A%E6%95%B5%E5%B0%8D%E7%9B%AE%E6%A8%99" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="739157890dff26f3" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">伊朗據報在霍爾木茲海峽打擊敵對目標</h3>
-                <p class="article-description">據伊朗法爾斯通訊社報道，伊朗在霍爾木茲海峽打擊敵對目標。伊朗塔斯尼姆通訊社則引述消息稱，格什姆島傳出 ...</p>
+                <p class="article-description">據伊朗法爾斯通訊社報道，伊朗在霍爾木茲海峽對敵對目標實施打擊，格什姆島傳出爆炸聲。沙特官員指伊朗正策劃攻擊沙特，已觀測到無人機與導彈調運，潛在目標或涉及能源設施、港口及機場，強調將採取一切必要措施應對。沙特與美國合作維持高水平。美國總統特朗普稱伊朗難以持久，並表示霍爾木茲海峽重開協議尚未正式達成，但海峽已部分開放，美方正參與談判，進展良好。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478164/%E6%99%B6%E7%89%87%E4%BE%9B%E6%87%89%E7%9F%AD%E7%BC%BA+%E8%BC%9D%E9%81%94%E6%93%AC%E9%99%8DRubin+Ultra%E8%A8%98%E6%86%B6%E9%AB%94%E9%85%8D%E7%BD%AE" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="492ad5c33ffc805f" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">晶片供應短缺 輝達擬降Rubin Ultra記憶體配置</h3>
-                <p class="article-description">The Information報道，美國晶片廠商輝達(Nvidia)正考慮一項激進措施，以應對高頻寬 ...</p>
+                <p class="article-description">輝達（Nvidia）因高頻寬記憶晶片（HBM）供應短缺，正考慮在下一代圖形處理器Rubin Ultra上採用低於原計劃的記憶體配置。過去數周，輝達已測試至少三個版本的Rubin Ultra顯示卡，部分記憶體規格低於最初公佈。此舉源於高端記憶晶片供應可能無法滿足原始設計需求，記憶體縮減雖影響效能，但輝達可透過其他方式彌補。成本上漲已在科技產業引發連鎖反應，蘋果等公司亦因此上調硬件售價。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478160/%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E4%B8%A8%E4%BC%8A%E6%9C%97%E6%8E%A8%E9%80%B2%E9%9C%8D%E5%B3%BD%E9%80%9A%E8%A1%8C%E8%A6%8F%E5%89%87%E6%B3%95%E6%A1%88+%E6%93%AC%E7%A6%81%E7%BE%8E%E4%BB%A5%E8%88%B9%E9%9A%BB%E9%80%9A%E8%A1%8C" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="aba226ea6f2c6a15" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">中東局勢丨伊朗推進霍峽通行規則法案 擬禁美以船隻通行</h3>
-                <p class="article-description">伊朗官方法爾斯通訊社(Fars)周四報道，伊朗的霍爾木茲海峽計劃將禁止美國和以色列船隻通行。
-伊朗議 ...</p>
+                <p class="article-description">伊朗正推進一項涉及霍爾木茲海峽通行規則的法案，擬禁止美國、以色列及敵對國家船隻通過該海峽，同時禁止與以色列相關的軍民物資過境。法案由伊朗國家安全委員會審查，違規者最高可被罰款貨物價值的20%。伊朗政府將與武裝部隊合作，負責航行引導、船舶監控及波斯灣安全。草案仍處於專家審查階段。此外，伊朗計劃對過境船隻收取貨物價值5%至7%的費用，阿曼建議較低的3%，美國則反對任何收費，強調海峽為國際水道，任何一方無權控制或設限。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/hongkong/article/4478159/%E6%81%92%E6%8C%87%E5%A4%9C%E6%9C%9F%E4%B8%A8%E6%94%B6%E5%A0%B125542+%E9%AB%98%E6%B0%B412%E9%BB%9E" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="8cf2a98205c04a4c" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">恒指夜期丨收報25542 高水12點</h3>
-                <p class="article-description">恒指夜市期指收報25542點，跌6點，較昨日恒指收市25530點，高水12點，成交12716張。
-國 ...</p>
+                <p class="article-description">恒指夜市期指收報25542點，跌6點，較昨日恒指收市25530點高水12點，成交12716張。國指夜市期指收報8518點，較昨日國指收市高水19點。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478157/%E6%AD%90%E8%82%A1%E6%94%B6%E5%B8%82%E5%8D%870.16%25+%E6%84%8F%E5%A4%A7%E5%88%A9%E8%82%A1%E5%B8%82%E5%90%8C%E5%89%B5%E6%96%B0%E9%AB%98" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="fb5fa7769f57d3f0" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">歐股收市升0.16% 意大利股市同創新高</h3>
-                <p class="article-description">美國華爾街投資者在非農就業數據公布前採取謹慎態度，美股周四反覆回軟，道指暫時曾轉跌逾400點。歐洲股 ...</p>
+                <p class="article-description">歐股周四收市普遍上升，泛歐指數Stoxx 600收報658點，升0.16%，盤中曾高見660點，創收市及即市新高；意大利富時MIB指數亦突破歷史高位。英國富時100指數收報10867點，跌0.19%；德國DAX指數微升0.05%；法國CAC 40指數升0.35%；西班牙IBEX 35指數升0.62%。市場觀望美國周五公布的非農就業數據，分析指若數據強勁，可能提高聯儲局提前加息的預期；若連續第二次疲弱，則強化鴿派論點。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478156/AI%E4%B8%A8Terafab%E6%99%B6%E7%89%87%E5%BB%A0%E9%A6%96%E9%9A%8E%E6%AE%B5%E8%A8%88%E5%8A%83%E6%8A%95%E8%B3%87168%E5%84%84%E7%BE%8E%E5%85%83" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="6b048dc29b974b58" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">AI丨Terafab晶片廠首階段計劃投資168億美元</h3>
-                <p class="article-description">美國得克薩斯州州長阿博特(Greg Abbott)宣布，全球首富馬斯克(Elon Musk)旗下太空 ...</p>
+                <p class="article-description">美國得克薩斯州州長阿博特宣佈，馬斯克旗下SpaceX在格賴姆斯縣興建的Terafab晶片設施，首階段資本開支達168億美元。該項目由SpaceX的xAI部門與特斯拉合作，目標每年生產超過1太瓦時算力。特斯拉表示，公司及SpaceX對晶片需求持續增加。馬斯克估計，特斯拉Optimus人形機械人將消耗約25%的算力產出，其餘75%供太空船AI項目使用。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478155/SpaceX+IPO%E9%A6%96%E6%89%B9%E8%82%A1%E4%BB%BD%E5%8D%B3%E5%B0%87%E8%A7%A3%E7%A6%81+%E8%82%A1%E5%83%B9%E6%88%96%E9%9D%A2%E8%87%A8%E6%9B%B4%E5%A4%A7%E5%A3%93%E5%8A%9B" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="2505b28cf15863e6" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">SpaceX IPO首批股份即將解禁 股價或面臨更大壓力</h3>
-                <p class="article-description">全球首富馬斯克(Elon Musk)旗下太空探索公司SpaceX，股價或將面臨更大壓力，事關公司早期 ...</p>
+                <p class="article-description">SpaceX首批IPO股份的初始鎖定期將於周四屆滿，涉及逾9.11億股，約佔已發行股份7%，超過IPO售出的6.39億股。8月20日及9月、10月將再有股份陸續解禁。創辦人馬斯克持有逾60億股，禁售期至2027年6月。SpaceX股價周四一度升6.9%至115.75美元，其後升幅收窄，最新報110.11美元，較6月高位累跌逾50%。NFL球員Jessie Bates計劃出售持股鎖定收益，其2022年以約15萬美元購入的股份，現估值可能超過150萬美元。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478152/%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E4%B8%A8%E4%BC%8A%E6%9C%97%E8%88%87%E9%98%BF%E6%9B%BC%E5%B0%B1%E9%9C%8D%E5%B3%BD%E5%95%8F%E9%A1%8C%E6%8E%A5%E8%BF%91%E9%81%94%E6%88%90%E5%8D%94%E8%AD%B0+%E7%BE%8E%E5%9C%8B%E6%9C%AA%E5%8F%83%E8%88%87" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="359c9eaa3ae62922" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">中東局勢丨伊朗與阿曼就霍峽問題接近達成協議 美國未參與</h3>
-                <p class="article-description">伊朗一名高級外交官表示，伊朗與阿曼即將就霍爾木茲海峽商業航運的新安排達成最終協議，但否認美國參與談判 ...</p>
+                <p class="article-description">伊朗一名高級外交官表示，伊朗與阿曼即將就霍爾木茲海峽商業航運新安排達成最終協議，但否認美國參與談判。根據協議，現有臨時南北航線將被一條新的單一航線取代，所有通行轉移至中央走廊，由伊朗管理入口，兩國共同管理出口，新航線途經伊朗領海，協議為期兩至四個月。伊朗副外長加里布阿巴迪警告，達成協議並不意味完全重新開放海峽航道。美國總統特朗普近日堅稱，重新開放這條關鍵水道的協議即將達成。社交平台有報道指，伊朗法…</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478150/%E5%B6%BA%E5%8D%97%E5%A4%A7%E5%AD%B8%E5%AD%B8%E7%94%9F%E6%9C%83%E5%AE%A3%E5%B8%83%E8%A7%A3%E6%95%A3" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="3a830be79f29675a" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">嶺南大學學生會宣布解散</h3>
-                <p class="article-description">嶺南大學學生會較早前召開聯席會議，通過解散之決議案。
-嶺南大學學生會最新在社交媒體發表致會員聲明，表 ...</p>
+                <p class="article-description">嶺南大學學生會宣布解散。該會較早前召開聯席會議，通過解散決議案，並在社交媒體發表聲明，指近年校園內外形勢出現變化，經平衡各種因素後作出此決定。嶺南大學學生會自1967年成立，會方感謝會員一直以來的支持。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478146/%E4%B8%AD%E5%9C%8B%E9%A7%90%E9%98%BF%E6%A0%B9%E5%BB%B7%E4%BD%BF%E9%A4%A8%3A%E7%BE%8E%E5%9C%8B%E8%82%86%E6%84%8F%E7%A0%B4%E5%A3%9E%E4%B8%AD%E9%98%BF%E5%90%88%E4%BD%9C+%E4%BF%83%E5%81%9C%E6%AD%A2%E9%9C%B8%E6%AC%8A%E8%A1%8C%E5%BE%91" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="d5c209cf94a9c33c" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">中國駐阿根廷使館:美國肆意破壞中阿合作 促停止霸權行徑</h3>
-                <p class="article-description">中國駐阿根廷使館發言人表示，近期美國駐阿根廷使館蓄意煽炒「中國威脅論」，泛化國家安全概念，以吊銷簽證 ...</p>
+                <p class="article-description">中國駐阿根廷使館發言人批評美國駐阿根廷使館近期蓄意炒作「中國威脅論」，以吊銷簽證方式阻止阿根廷企業與華為合作，認為此舉反映美方傲慢與偏見，嚴重破壞自由市場原則，中方堅決反對。發言人指美國標榜民主自由，卻容不下外國民營企業在第三國正常發展，虛偽本質暴露無遺。另外，人民銀行近日與阿根廷央行續簽雙邊本幣互換協議，規模1300億元人民幣/28萬億阿根廷比索，有效期由3年延至5年。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478145/%E8%B7%91%E9%A6%AC%E5%9C%B0%E7%A7%81%E4%BA%BA%E5%B1%8B%E8%8B%91%E7%96%91%E6%9C%89%E6%95%91%E7%94%9F%E5%93%A1%E7%94%A8%E5%81%87%E8%AD%89%E4%BB%B6+%E9%A3%9F%E7%92%B0%E7%BD%B2%E5%A0%B1%E8%AD%A6" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="dd199f61a88b69a9" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">跑馬地私人屋苑疑有救生員用假證件 食環署報警</h3>
-                <p class="article-description">跑馬地一個私人屋苑懷疑有救生員使用虛假救生員證件，食環署已指示有關泳池立即關閉，並考慮向其持牌人提出 ...</p>
+                <p class="article-description">跑馬地雲地利道1至5號一個私人屋苑懷疑有救生員使用虛假證件，食環署經中國香港拯溺總會核實後，發現一名當值救生員證件資料與紀錄不符，已指示涉事泳池即時關閉，考慮檢控持牌人，並報警及通報物業管理業監管局跟進。食環署今年1至7月巡查逾1400個持牌私人泳池約7000次，核實約2100名救生員資格，自2025年加強規管以來，曾發現一宗同類違規個案。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478144/%E5%89%9B%E6%9E%9C%E7%A6%81%E6%AD%A2%E5%87%BA%E5%8F%A3%E9%8A%85%E3%80%81%E9%88%B7%E7%B2%BE%E7%A4%A6+%E5%8D%B3%E6%99%82%E7%94%9F%E6%95%88" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="db42c11e84782b31" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">剛果禁止出口銅、鈷精礦 即時生效</h3>
-                <p class="article-description">據路透查閱的一項政府新命令，剛果已禁止銅精礦和鈷精礦出口，進一步擴大推動礦產在國內加工的政策，以期從 ...</p>
+                <p class="article-description">剛果民主共和國即日起禁止出口銅精礦和鈷精礦，以推動礦產在國內加工，保留更多附加價值。該禁令由礦業部長、外貿部長及經濟部長於6月29日簽署，即時生效。剛果是全球最大鈷生產國及第二大銅供應國，主要營運商包括洛陽鉬業、嘉能可、華友鈷業、紫金礦業等。同時，政府針對採礦副產品推出新課稅制度，設有3個月過渡期，礦業部長可在戰略情況下批准為期一年的出口豁免。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4478124/%E7%BE%8E%E5%9C%8B%E5%85%A9%E9%BB%A8%E6%8C%87%E6%94%BF%E5%BA%9CAI%E7%9B%A3%E7%AE%A1%E4%B8%8D%E5%8A%9B%E5%9B%A0%E7%89%B9%E6%9C%97%E6%99%AE%E8%88%87%E7%A7%91%E6%8A%80%E8%A1%8C%E6%A5%AD%E9%97%9C%E4%BF%82%E5%AF%86%E5%88%87" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="5dee75d0e7b00985" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">美國兩黨指政府AI監管不力因特朗普與科技行業關係密切</h3>
-                <p class="article-description">特朗普政府對OpenAI和Anthropic AI代理近期發動的黑客攻擊應對有限，民主黨人與特朗普的 ...</p>
+                <p class="article-description">美國兩黨罕見一致批評特朗普政府AI監管不力，認為總統與科技行業關係過於密切。前顧問班農指矽谷與白宮及國安機構關係緊密，民主黨參議員懷登則批評共和黨阻撓州級AI監管。Anthropic因拒絕將AI用於軍事監控而與政府關係惡化。科技企業已向特朗普競選捐贈逾3億美元，多名科技業人士獲任政府要職。政府雖要求OpenAI等開發商自願提交AI模型進行網絡安全測試，但細節未公布。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/announcement/article/4478125/%E6%96%B0%E8%82%A1IPO%E4%B8%A8%E6%8B%BF%E6%A3%AE%E7%A7%91%E6%8A%80%E4%B8%80%E6%89%8B%E4%B8%AD%E7%B1%A4%E7%8E%878%25" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="0f250501388997f6" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">新股IPO丨拿森科技一手中籤率8%</h3>
-                <p class="article-description">開發智能駕駛運動控制技術的拿森科技(02261)公布招股結果，每股以10.42元定價，所得款項淨額約 ...</p>
+                <p class="article-description">拿森科技（02261）公布招股結果，每股定價10.42元，所得款項淨額約5.33億元。公開發售部分獲超額認購2512.54倍，一手100股中籤率8%，股份明日掛牌。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/international/article/4478102/%E5%B0%8D%E6%B2%96%E5%9F%BA%E9%87%91Millennium%E5%A4%A5Anthropic%E9%96%8B%E7%99%BCAI%E9%A2%A8%E9%9A%AA%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7" target="_blank" class="article-card" data-category="world" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="6b5d73e820b90fb1" data-category="world" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">對沖基金Millennium夥Anthropic開發AI風險分析工具</h3>
-                <p class="article-description">對沖基金Millennium Management正與美國AI初創公司Anthropic PBC合作 ...</p>
+                <p class="article-description">對沖基金Millennium Management與AI初創公司Anthropic合作，開發一款由人工智能驅動的風險分析工具，並擴大Anthropic模型在公司內部的應用。雙方聲明指，Anthropic工程師將與Millennium技術及風險管理團隊共同搭建數字風險分析師工具，協助人類風險管理人員決策，並從不同資產類別發掘新風險訊息。合作亦會擴大對Anthropic最新前沿模型的測試，以Mille…</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/market/article/4478056/%E7%82%92%E8%82%A1%E8%AE%80%E5%BF%83%E4%B8%A8%E6%A5%AD%E7%B8%BE%E7%85%A7%E5%A6%96%E9%8F%A1" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="1960a024f8b4428f" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">炒股讀心丨業績照妖鏡</h3>
-                <p class="article-description"></p>
+                <p class="article-description">8月6日港股表現疲弱，恒指跌逾1%，科指跌逾2%，但創科實業（00669）及稀宇科技（00100）逆市上升。創科實業中期業績理想，純利增長、毛利率擴張、現金流充裕、增加派息及啟動回購，獲多家大行上調目標價，顯示盈利支持股價。稀宇科技受惠納入港股通消息大幅反彈，但屬消息面驅動，非盈利修復，同業AI股份仍錄跌幅。作者建議業績期內選低估值高股息股份較安全，AI次新股雖回調多，但缺乏業績數據支持，需待8月下旬至9月上旬業績公布後再作判斷。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/stock/article/4478064/%E5%90%B3%E5%A4%A9%E6%B5%B7%3A%E4%B9%9D%E5%80%89%E7%BD%AE%E6%A5%AD%E6%9C%89%E4%BF%A1%E5%BF%83%E5%A2%9E%E6%B4%BE%E6%81%AF%E6%AF%94%E7%8E%87" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="157c2fd12637fc13" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">吳天海:九倉置業有信心增派息比率</h3>
-                <p class="article-description"></p>
+                <p class="article-description">九倉置業宣布今年起派息比率調升至90%，主席吳天海表示，公司經常性營運收入穩定，有信心提高派息比率，並指市道漸趨平穩，不會輕易改變派息政策。吳天海解釋，2017年上市時因樓市熾熱，故採取保守的65%派息比率，現時商業地產周期穩定，有能力提升至與房託相若水平。公司最近以溢價12%出售新加坡會德豐廣場，淨額逾67億元將用於減債，負債率降至約11%。零售方面，吳天海認為港元貶值及日圓升值有助零售市道，下…</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-07</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/announcement/article/4478051/%E4%B8%AD%E4%BF%A1%E8%A8%BC%E5%88%B8%E5%90%91%E4%B8%AD%E4%BF%A1%E9%87%91%E6%8E%A7%E9%85%8D%E8%82%A1%E7%B1%8C%E8%BF%91186%E5%84%84" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="67355bf10898c156" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">中信証券向中信金控配股籌近186億</h3>
-                <p class="article-description">中信証券(06030)公布，公司已按每股新H股23.13元的發行價格，向中信金控配發合共8.04億新 ...</p>
+                <p class="article-description">中信証券公布，按每股23.13港元向中信金控配發8.04億股新H股，佔擴大後股本約5.14%。集資總額160億元人民幣，換滙後約185.9億港元，淨額約184.13億港元，將全部留存境外用於國際化業務發展。完成後，中信金控持股比例增至約23.96%。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/announcement/article/4478050/%E7%B6%A0%E5%9F%8E%E4%B8%AD%E5%9C%8B%E9%A6%967%E6%9C%88%E9%8A%B7%E5%94%AE%E9%A1%8D%E8%B7%8C24%25" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="d0ff66e933e12a7c" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">綠城中國首7月銷售額跌24%</h3>
-                <p class="article-description">綠城中國(03900)公布，今年首7個月，合同銷售金額約655億元(人民幣‧下同)，按年減少23.5 ...</p>
+                <p class="article-description">綠城中國公布，今年首7個月合同銷售金額約655億元人民幣，按年跌23.57%，歸屬於集團的權益金額約451億元；銷售面積約200萬平方米，跌19.35%。截至7月底，累計已簽認購協議未轉銷售合同金額約18億元，權益金額約12億元。單計7月，銷售金額約54億元，按年增8%，銷售均價每平方米約3.1萬元。7月代建項目銷售金額約70億元，首7個月相關合同銷售金額約415億元。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/announcement/article/4478014/%E7%BE%8E%E9%AB%98%E6%A2%85%E4%B8%AD%E5%9C%8B%E4%B8%AD%E6%9C%9F%E5%B0%91%E8%B3%BA20%25" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="06634004b6211fee" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">美高梅中國中期少賺20%</h3>
-                <p class="article-description">美高梅中國(02282)公布，截至6月底止，中期盈利19.01億元，按年跌20.24%；每股基本盈利 ...</p>
+                <p class="article-description">美高梅中國（02282）公布截至6月底止中期業績，盈利19.01億元，按年跌20.24%，每股基本盈利50.1仙，派中期息0.25元。期內經營收益173.92億元，按年升4.39%；娛樂場收益151.17億元，升3.56%，增幅主要來自主場地賭枱及角子機博彩收益增長，部分被貴賓博彩收益下降抵銷。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/hongkong/article/4477952/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B8%E4%B8%A8%E4%B8%AD%E9%8A%80%3A%E6%81%AF%E7%8E%87%E5%85%B7%E5%90%B8%E5%BC%95%E5%8A%9B+%E5%8F%AF%E8%80%83%E6%85%AE%E7%94%B3%E8%AB%8B%E8%AA%8D%E8%B3%BC20%E8%87%B330%E6%89%8B" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="24125c47ff9022a0" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">銀色債券丨中銀:息率具吸引力 可考慮申請認購20至30手</h3>
-                <p class="article-description">中銀香港個人金融產品部總經理周國昌表示，新一批銀色債券的保證息率為4.25厘，具吸引力，預期市場反應 ...</p>
+                <p class="article-description">中銀香港個人金融產品部總經理周國昌表示，新一批銀色債券保證息率4.25厘具吸引力，預期市場反應熱烈，整體認購人數可突破30萬人。該行建議客戶按自身資產情況，可考慮申請認購20至30手。中銀客戶在認購期內透過手機銀行、網上銀行、認購熱線及全線分行認購，相關費用全免，包括豁免0.15%認購手續費、保管費、轉入轉倉費、轉出轉倉費、代收利息費，且不設存入費、提早贖回費及到期贖回費。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/hongkong/article/4477951/%E5%B7%A5%E9%8A%80%E4%BA%9E%E6%B4%B2%E5%AE%8C%E6%88%90%E9%A6%96%E7%AD%86LNG%E8%B7%A8%E5%A2%83%E9%80%9A%E4%BA%BA%E6%B0%91%E5%B9%A3%E7%B5%90%E7%AE%97%E4%BA%A4%E6%98%93" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="fe8e9632cd8e414a" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">工銀亞洲完成首筆LNG跨境通人民幣結算交易</h3>
-                <p class="article-description">中國工商銀行(亞洲)近日聯動工行上海分行，協助中海油氣電集團國際貿易有限公司於首筆液化天然氣(LNG ...</p>
+                <p class="article-description">工銀亞洲近日聯動工行上海分行，協助中海油氣電集團國際貿易有限公司完成首筆液化天然氣「跨境通」產品試點交易的人民幣結算。該產品由中海石油氣電集團與上海石油天然氣交易中心聯合推出，實現境內外市場「掛單—採購—結算」全流程閉環管理。工銀亞洲負責境外資金清算，工行上海分行完成境內人民幣資金歸集，結算周期由數日縮短至分鐘級別，提升交易效率並避免傳統外幣結算帶來的匯兌損失。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/hongkong/article/4477932/%E5%A2%83%E5%A4%96%E4%BF%9D%E5%96%AE%E6%94%B6%E7%9B%8A%E5%BE%B5%E7%A8%85%E4%B8%A8%E4%BF%9D%E7%9B%A3%E5%B1%80%3A%E4%B8%AD%E5%9C%8B%E5%B1%85%E6%B0%91%E5%B0%B1%E5%A2%83%E5%A4%96%E6%8A%95%E8%B3%87%E6%94%B6%E7%9B%8A%E7%B9%B3%E7%A8%85%E4%B8%80%E7%9B%B4%E5%AD%98%E5%9C%A8" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="132bacfd1b990125" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">境外保單收益徵稅丨保監局:中國居民就境外投資收益繳稅一直存在</h3>
-                <p class="article-description">據報內地將境外保險保單產生的各類收益納入徵稅範圍，市場擔憂影響本港保險業務。保險業監管局(保監局)表 ...</p>
+                <p class="article-description">針對內地傳出將境外保險保單收益納入徵稅範圍，保險業監管局表示，政府及該局正密切留意內地金融產品稅務安排的最新發展，並與業界保持緊密溝通。保監局強調，中國居民就境外投資收益依法申報及繳稅的要求一直存在，市場毋須過度解讀或揣測。局方指出，香港保險市場成熟，產品設計靈活，提供貨幣選擇、環球資產配置及財富傳承等服務，相信對內地客戶仍具吸引力。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/property/article/4477888/%E6%96%B0%E7%9B%A4%E4%B8%A8%E5%AF%8C%E8%B1%AA%EF%BC%8E%E5%B1%B1%E5%B3%AF%E5%9B%9B%E6%88%BF4320%E8%90%AC%E5%94%AE%E5%87%BA" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="a099bcc7e395e2e6" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">新盤丨富豪．山峯四房4320萬售出</h3>
-                <p class="article-description">百利保(00617)與富豪國際(00078)合作的沙田九肚富豪．山峯，今天透過招標形式，成功售出1伙 ...</p>
+                <p class="article-description">百利保與富豪國際合作發展的沙田九肚豪宅項目富豪．山峯，昨日以招標形式售出一個分層單位，成交價4320萬元。單位為第2座5樓B室，屬4房4套間隔，實用面積約2107方呎，呎價約20503元，買家可獲一個住宅車位認購權。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/property/article/4477851/%E5%8F%88%E4%B8%80%E5%B1%85%E4%B8%80%E6%88%BF%E6%9C%88%E7%A7%9F2.45%E8%90%AC+%E5%9B%9E%E5%A0%B13.2%E5%8E%98" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="48403f0ce6993ac9" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">又一居一房月租2.45萬 回報3.2厘</h3>
-                <p class="article-description">九龍塘又一居11座低層G室，實用面積439方呎，改1房間隔，最新以2.45萬元租出，實用呎租56元。 ...</p>
+                <p class="article-description">九龍塘又一居11座低層G室，實用面積439方呎，改一房間隔，以月租2.45萬元租出，呎租約56元。中原地產指，新租客為本地分支家庭，因同類租盤稀缺，選擇以年付方式承租。業主2018年以920萬元購入，持貨8年，租金回報約3.2厘。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/hongkong/article/4477880/%E5%A2%83%E5%A4%96%E4%BF%9D%E5%96%AE%E6%94%B6%E7%9B%8A%E5%BE%B5%E7%A8%85%E4%B8%A8%E8%A8%B1%E6%AD%A3%E5%AE%87%3A%E7%94%A8%E5%AE%B6%E6%9C%83%E7%B6%9C%E5%90%88%E8%80%83%E6%85%AE%E6%B1%BA%E5%AE%9A%E6%98%AF%E5%90%A6%E8%B2%B7%E7%94%A2%E5%93%81" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="16f342715123d804" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">境外保單收益徵稅丨許正宇:用家會綜合考慮決定是否買產品</h3>
-                <p class="article-description">據報內地將境外保險保單產生的各類收益納入徵稅範圍，市場擔憂影響本港保險業務。財經事務及庫務局局長許正 ...</p>
+                <p class="article-description">內地據報將境外保險保單收益納入徵稅範圍，引發市場對本港保險業務的關注。財經事務及庫務局局長許正宇回應稱，港府一直透過監管部門與內地溝通政策，各地稅務安排不同，香港作為國際金融中心須遵守稅法。他指相關報道基於共同匯報標準（CRS），逾百個稅務管轄區已承諾實施自動交換資料安排，香港亦積極配合執行。許正宇強調對本港保險產品有信心，用家及投資方會綜合考慮產品設計、分銷渠道等因素作決定，市場傳聞每日都有，最重要是確保本港產品及服務維持競爭力。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/hongkong/article/4477857/5%E5%89%87%E5%BF%85%E8%AE%80%E6%96%B0%E8%81%9E%E4%B8%A8%E6%96%B0%E4%B8%80%E6%89%B9%E9%8A%80%E5%82%B5%E4%BF%9D%E5%BA%95%E6%81%AF4.25%E5%8E%98+%E6%AD%B7%E4%BE%86%E7%AC%AC%E4%BA%8C%E9%AB%98" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="9fedb2f7fa8c44e8" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">5則必讀新聞丨新一批銀債保底息4.25厘 歷來第二高</h3>
-                <p class="article-description">1.銀色債券丨新一批發行額最多550億 保證息率4.25厘
-政府推出新一批銀色債券，發行額最多550 ...</p>
+                <p class="article-description">政府推出新一批銀色債券，發行額最多550億元，保證息率4.25厘，屬歷來第二高，8月21日起接受認購。中電控股行政總裁蔣東強表示，按目前油價走勢，短期燃料費或呈上升趨勢。太古地產行政總裁彭國邦稱，上半年內地零售組合強勁，對下半年展望有信心，本港零售組合未受北上消費潮明顯影響。花旗認為，保險股因中國擴大境外保單收益徵稅而急挫，屬恐慌驅動且跌幅過度。TikTok美國合資企業將關閉納什維爾辦公室，裁減250名員工。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/property/article/4477148/%E5%8C%AF%E7%92%BD%E9%96%8B%E6%94%BE%E6%88%B6%E7%9F%AD%E7%82%92%E4%B8%80%E5%B9%B4%E7%8D%B2%E5%88%A990%E8%90%AC" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="7ef08453cfe6b5c8" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">匯璽開放戶短炒一年獲利90萬</h3>
-                <p class="article-description">長沙灣南昌站匯璽2A期2B座高層H室，實用面積約267方呎，開放式間隔，買家以約600萬元承接，實用 ...</p>
+                <p class="article-description">長沙灣南昌站上蓋屋苑匯璽2A期2B座一個高層開放式單位，實用面積約267方呎，近日以600萬元易手，呎價約22472元。美聯物業指出，買家因鍾情屋苑交通便利及樓齡較新，且價錢符合預算而購入。原業主於2025年1月以約510萬元入市，持貨約一年轉手，賬面獲利約90萬元，升值約17.6%。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/property/article/4477695/%E4%B8%83%E6%9C%88%E4%BA%94%E6%A8%93%E7%9B%A4%E7%94%B3%E8%AB%8B%E9%A0%90%E5%94%AE+%E6%B6%892246%E4%BC%99" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="ccf58835b6f3131d" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">七月五樓盤申請預售 涉2246伙</h3>
-                <p class="article-description">地政總署公布，7月共有5個私樓申請預售樓花同意書，共涉2246伙，按月減少1026伙或31.36%。 ...</p>
+                <p class="article-description">地政總署公布，7月共有5個私人住宅樓盤申請預售樓花同意書，涉及2246個單位，按月減少1026伙，跌幅約31.36%。其中遠東發展與市建局合作發展的西營盤桂香街項目涉210伙，九建牛池灣33清水灣第3A期涉411伙，嘉里建設土瓜灣銀漢街項目2期涉259伙，長實土瓜灣啟明街項目涉566伙，房協土瓜灣道資助出售房屋項目提供800伙。目前待批預售樓花同意書涉及13734伙，為2024年10月後約21個月高位。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/announcement/article/4477572/%E5%A4%AA%E5%B9%B3%E6%B4%8B%E8%88%AA%E9%81%8B%E4%B8%AD%E6%9C%9F%E5%A4%9A%E8%B3%BA%E9%80%BE3%E5%80%8D+%E5%A4%A7%E5%A2%9E%E6%B4%BE%E6%81%AF%E8%87%B315.5%E4%BB%99" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="1984a0a13131dec7" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">太平洋航運中期多賺逾3倍 大增派息至15.5仙</h3>
-                <p class="article-description">太平洋航運(02343)公布，截至6月底止中期股東應佔盈利1.05億元(美元‧下同)，按年升3.1倍 ...</p>
+                <p class="article-description">太平洋航運公布中期業績，截至6月底止股東應佔盈利1.05億美元，按年增長3.1倍，每股基本盈利2.06仙。公司因現金流及資產負債表穩健，派發中期息15.5港仙，按年大增8.69倍，派息比率約為期內淨溢利的100%。期內營業額11.05億美元，按年上升8.52%。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/property/article/4477522/%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%A7%81%E6%A8%93%E8%90%BD%E6%88%90%E9%87%8F7914%E4%BC%99+%E6%8C%89%E5%B9%B4%E8%B7%8C21%25" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="40bd2f68374181b9" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">上半年私樓落成量7914伙 按年跌21%</h3>
-                <p class="article-description">差估署最新的《香港物業報告每月補編》顯示，6月私人住宅落成量3532伙，按月增加2723伙或3.37 ...</p>
+                <p class="article-description">差餉物業估價署最新數據顯示，6月私人住宅落成量錄得3,532伙，按月大增3.37倍；上半年累計落成量7,914伙，按年下跌21.36%，僅達全年預測約46.6%。地區分布方面，新界區以5,054伙居首，佔整體64%；港島及九龍分別佔23%及13%。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4477049/%E8%97%A5%E5%80%8D%E5%AE%89%E5%BF%83%E9%A2%A8%E6%B3%A2%EF%BD%9C%E5%90%B9%E5%93%A8%E8%80%85%E6%B6%89%E8%B5%B7%E5%BA%95+%E9%84%AD%E6%9B%A6%E7%90%B3%3A%E8%B8%A2%E4%BF%9D%E7%8D%B2%E7%84%A1%E6%A2%9D%E4%BB%B6%E9%87%8B%E6%94%BE" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="6c3d9565d63c0b42" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">藥倍安心風波｜吹哨者涉起底 鄭曦琳:踢保獲無條件釋放</h3>
-                <p class="article-description"></p>
+                <p class="article-description">「藥倍安心」事件吹哨者鄭曦琳因涉在網上發布「起底」資訊被捕，她今日在社交平台宣布已完成「踢保」程序，獲警方無條件釋放。事件源於聖保羅男女中學學生潘浠淳以人工智能醫療輔助系統「藥倍安心」參賽獲獎，鄭曦琳公開質疑系統由第三方開發，引發學術誠信討論。今年2月，鄭曦琳因涉嫌未經當事人同意披露個人資料被捕。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/property/article/4477115/%E6%96%B0%E7%9B%A4%E4%B8%A8%E4%B9%9D%E5%BB%BA%E7%89%9B%E6%B1%A0%E7%81%A3%E9%A0%85%E7%9B%AE%E5%91%BD%E5%90%8D33%E6%B8%85%E6%B0%B4%E7%81%A3+%E7%AC%AC%E4%B8%80%E6%9C%9F%E6%B6%89361%E4%BC%99" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="c238d288052c4d13" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">新盤丨九建牛池灣項目命名33清水灣 第一期涉361伙</h3>
-                <p class="article-description"></p>
+                <p class="article-description">九建旗下牛池灣清水灣道33號前聖約瑟安老院重建項目正式命名為33清水灣，總樓面面積逾210萬方呎，提供逾2000伙，由5座住宅大樓組成，分5期發展。第一期涉361伙，標準戶實用面積492至1039方呎，間隔涵蓋2房至4房，現正待批預售樓花同意書，取得售樓紙後隨即推售。基座商場面積約65萬方呎，可無縫連接港鐵彩虹站。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hkej.com/instantnews/current/article/4476970/%E5%A4%A7%E9%AC%A7%E6%A8%9F%E5%AE%9C%E6%A9%9F%E5%A0%B4%E4%B8%A8%E6%B8%AF%E6%AF%8D%E5%AD%90%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%82%B7%E4%BA%BA%E8%A5%B2%E8%AD%A6+%E5%88%86%E5%88%A5%E5%9B%9A%E5%8D%8A%E5%B9%B4%E5%8F%8A10%E5%A4%A9" target="_blank" class="article-card" data-category="politics" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="ef1339a74b3ae1d0" data-category="politics" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">大鬧樟宜機場丨港母子新加坡傷人襲警 分別囚半年及10天</h3>
-                <p class="article-description"></p>
+                <p class="article-description">一對港人母子2024年在新加坡樟宜機場與途人發生衝突，42歲兒子陳永坤誤以為被嘲笑，情緒激動踢向65歲母親，一名69歲男子上前關心時遭其揮拳擊打後腦，導致右耳後血腫、雙膝擦傷及手指瘀傷。警員到場調查期間，母親陳瑞君拒絕交出護照並吵鬧，更咬傷警員右前臂留下1公分咬痕。兩人原定上月22日受審但缺席，法庭一度發出逮捕令，母親解釋因皮膚病發及發燒，加上無電話卡未能及時通報，兒子則求情稱深感後悔。周一（3日）當地法院分別判處母親囚6個月及兒子囚10日。</p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
                     <span class="article-date">📅 2026-08-06</span>
@@ -1026,6 +1061,61 @@
                 <p class="article-description"></p>
                 <div class="article-meta">
                     <span class="article-source">信報</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/airbnb%E7%AC%AC%E4%BA%8C%E5%AD%A3%E6%A5%AD%E7%B8%BE%E8%B6%85%E9%A0%90%E6%9C%9F-%E4%B8%8A%E8%AA%BF2026%E5%B9%B4%E5%85%A8%E5%B9%B4%E5%B1%95%E6%9C%9B-211647161.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://i-invdn-com.investing.com/news/LYNXMPEA8400B_M.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">Airbnb第二季業績超預期,上調2026年全年展望</h3>
+                <p class="article-description">Investing.com — Airbnb周四公布第二季業績,每股收益及營收均超越華爾街預期,並上調全年展望,強勁的旅遊需求、加速增長的預訂量及較高的每日平均房價共同推動了業績表現。</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.bastillepost.com/hongkong/article/16520385-%E7%89%B9%E6%9C%97%E6%99%AE%E6%9E%97%E8%82%AF%E7%B4%80%E5%BF%B5%E5%A0%82%E5%80%92%E5%BD%B1%E6%B1%A0%E7%BF%BB%E6%96%B0%E8%A8%80%E8%AB%96%E6%83%B9%E8%AD%B0-%E8%80%97%E8%B3%87%E8%88%87%E5%B7%A5%E6%9C%9F" target="_blank" class="article-card" data-category="top, business" data-region="hk">
+            <div class="article-image"><img src="https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/3b4430b8c8bf586df0b3a13b3493c604_Lincoln_Memorial_Reflecting_Pool_26194_FB.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">特朗普林肯紀念堂倒影池翻新言論惹議 耗資與工期與事實不符</h3>
+                <p class="article-description">美國前總統特朗普於4月宣布,林肯紀念堂倒影池正進行翻新工程,以解決長期存在的表面及結構問題。他最初承諾,工程將於一周內完成,耗資150萬美元,遠低於前幾屆政府為這座國家地標所支付的費用,並將呈現一個閃閃發光的藍色水池。 然而,四個月後,工程結果並未達到特朗普的預期,其言論在某些情況下變得愈來愈誇大。 以下是特朗普多項說法及相關事實: 特朗普於4月23日在橢圓形辦公室活動上表示:「我們的工作將需時一周,耗資約150萬美元。」 事實:15周後,工程仍在進行中。倒影池於7月中旬第二次排乾池水,以處理再次出現的藻類滋生問題,以及新塗層剝落的情況。隨着工程進展,特朗普對項目成本的估計已增至「少於2000萬美元」。記錄顯示,截至目前,該項目已批出超過1600萬美元的合約。 特朗普於4月23日發布的一段影片中表示:「我說,不,有更好的方法。我說,我們要做的就是,我會致電過去曾為我工作的三個人,他們都曾負責游泳池工程。」 事實:特朗普曾多次吹噓他致電過去合作過的承包商,他們可以修復倒影池,並批出多份無競標合約。 其中,俄亥俄州的綠水解決方案公司(Green Water Solutions,又稱綠水服務公司)獲批170萬美元合約,負責在倒影池安裝淨水系統;維珍尼亞州的大西洋工業塗料公司(Atlantic Industrial Coatings)則獲批1470萬美元,負責重新粉刷及為倒影池的混凝土池底進行防水處理。 特朗普後來收回言論。他於5月12日在Truth Social發文稱:「我沒有批出合約,是『內政部』批給一個我不認識、從未合作過的承包商。」在8月3日一次不相關的橢圓形辦公室活動上,特朗普再次強調:「順帶一提,我並不認識那個承包商。」 特朗普於5月27日在內閣會議上表示:「拜登政府和奧巴馬政府花費數億美元試圖使其運作,但他們失敗了。」 事實:這說法是錯誤的。奧巴馬政府在2012年完成了一項為期兩年、耗資至少3400萬美元的大型重建項目。拜登政府期間,倒影池沒有進行任何重大維修。 特朗普於5月4日在白宮活動上表示:「這將至少持續50年,而且永遠不會漏水。它非常堅固。你無法——如果你有一把刀,我不想給任何人提供想法——如果你有一把刀,你甚至無法割開它。」 事實:總統回應有關重新鋪設問題的報道時稱,倒影池曾被美工刀、刀或鋒利剃刀割開,導致出現一道250至350呎長的巨大裂痕,或「長達350呎的多處劃痕」。 當局至少拘捕7人,涉及倒影池的問題,包括控告前奧運選手大衛·赫恩一項嚴重破壞罪。赫恩不認罪。 特朗普亦將倒影池重新注水後再次出現的藻類滋生歸咎於破壞者,於6月22日聲稱可能有人在水中投放化學物質,例如肥料,以「製造藻類」。多年來,藻類一直是倒影池的問題。 到7月底,相關案件開始瓦解。 司法部於7月31日提出撤銷對赫恩的刑事案件,稱檢察官最近收到的證據反駁了破壞者應負責任的說法。 聯邦檢察官珍妮娜·皮羅提交的20頁文件指出,自赫恩被起訴以來,內政部提供的額外文件顯示,損壞是承包商安裝失誤以及「為趕在2026年獨立日前後數周的美國250周年慶典相關活動前完成項目」所致。 根據網上法庭記錄,另外三名被控在同一華盛頓特區法院犯有輕罪的人士——賈斯汀·卡雷諾、卡梅倫·泰爾斯和蘇菲·丹尼森-吉比——的控罪亦已撤銷,他們被指控從倒影池中移除油漆碎片。 特朗普譴責皮羅的舉動,並堅稱破壞者應負責任,稱她「表現失準」及「退縮」。 (美聯社)</p>
+                <div class="article-meta">
+                    <span class="article-source">Bastillepost</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/atlassian%E8%82%A1%E5%83%B9%E6%9A%B4%E6%BC%B223-%E5%AD%A3%E5%BA%A6%E6%A5%AD%E7%B8%BE%E4%BA%AE%E7%9C%BC-%E9%9B%B2%E7%AB%AF%E8%88%87ai%E6%A5%AD%E5%8B%99%E5%BC%B7%E5%8B%81%E5%A2%9E%E9%95%B7-211510822.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://i-invdn-com.investing.com/news/LYNXMPEA6H0CU_M.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">Atlassian股價暴漲23%,季度業績亮眼,雲端與AI業務強勁增長</h3>
+                <p class="article-description">公司調整後每股收益為1.87美元,高於分析師預期的1.50美元,超出0.37美元。營收達17.7億美元,超過市場預估的16.6億美元,較去年同期的13.8億美元同比增長28%。雲端營收同比增長31%至12.1億美元,數據中心營收為4.619億美元,高於市場預期的4.146億美元。</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.finance.yahoo.com/news/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%A3%E5%91%8A%E5%B7%A8%E9%A0%ADthe-trade-desk%E7%AC%AC%E4%BA%8C%E5%AD%A3%E7%87%9F%E6%94%B6%E9%81%9C%E9%A0%90%E6%9C%9F-%E8%82%A1%E5%83%B9%E6%9A%B4%E8%B7%8C%E9%80%BE21-211305235.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+            <div class="article-image"><img src="https://content-media.investing.com/news/red1_b._M_1440048380.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">程序化廣告巨頭The Trade Desk第二季營收遜預期,股價暴跌逾21%</h3>
+                <p class="article-description">Investing.com - 程序化廣告平台The Trade Desk公布第二季業績,每股收益為0.34美元,高於分析師預期的0.18美元。然而,營收僅達7.15億美元,大幅低於市場共識預期的7.5261億美元。</p>
+                <div class="article-meta">
+                    <span class="article-source">Yahoo Finance</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://hk.sports.yahoo.com/news/%E4%B9%9F%E6%96%AF%E5%88%A9%E7%9B%BC%E6%89%93%E9%80%A0-%E9%80%B2%E6%93%8A%E7%9A%84%E5%96%9C%E9%B5%B2-210254349.html" target="_blank" class="article-card" data-category="sports" data-region="hk">
+            <div class="article-image"><img src="https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">也斯利盼打造「進擊的喜鵲」</h3>
+                <p class="article-description">【Now Sports】紐卡素新帥也斯利周三就任後,公開談論他的執教哲學。為了以也斯利(Matthias Jaissle)取代艾迪賀維的空缺,紐卡素不惜向其前球會吉達艾阿希里支付950萬鎊的賠償金。這名被喜鵲CEO鶴健臣盛讚是「搖滾巨星」的新領隊,也向球迷透露他可為球會帶來甚麼。「保持積極主動,比賽節奏快,充滿侵...</p>
+                <div class="article-meta">
+                    <span class="article-source">All In Yahoo</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
@@ -1228,6 +1318,83 @@
                 </div>
             </div>
         </a>
+        <a href="https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260807/s00015/1786033785646/%E9%AB%94%E5%A3%87%E5%BF%AB%E8%A8%8A-%E6%B8%AF%E6%BB%91%E5%86%B0%E9%9A%8A%E4%BA%9E%E6%B4%B2%E8%B3%BD%E5%A5%AA5%E9%8A%85" target="_blank" class="article-card" data-category="health" data-region="hk">
+            <div class="article-image"><img src="https://fs.mingpao.com/image/mingpao_logo_200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">體壇快訊:港滑冰隊亞洲賽奪5銅</h3>
+                <p class="article-description">【明報專訊】亞洲公開花樣滑冰錦標賽前晚於印尼雅加達煞科,港將李嘉銳及郭幸儀分別於男、女子青年組各摘銅牌,加上女子高級少年組的陳卓瑩,以及男、女子初級組的袁萬臻與施翊霖同樣奪季而回,最終港隊共奪5面銅牌佳績收官。</p>
+                <div class="article-meta">
+                    <span class="article-source">Ming Pao</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260807/s00015/1786033785451/%E7%A6%BE%E4%BB%99%E5%A4%8F%E6%8A%AB%E9%AB%98%E8%B7%AF%E9%AB%98%E8%B7%AF29%E8%99%9F-%E7%89%B9%E5%87%86%E5%8D%B0vozinha%E6%82%BC%E7%A5%96%E6%AF%8D" target="_blank" class="article-card" data-category="health" data-region="hk">
+            <div class="article-image"><img src="https://fs.mingpao.com/pns/20260807/s00085/1d38641f54b04b1f8d6e25f2fcf49d1a.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">禾仙夏披高路高路29號 特准印Vozinha悼祖母</h3>
+                <p class="article-description">【明報專訊】智利甲組勁旅高路高路日前於主場大衛阿雷利亞諾紀念碑球場,為簽約半年的40歲佛得角國腳門將禾仙夏(右)舉行盛大加盟儀式。球會特別邀來當地歌手現場獻唱,首次蒞臨主場的禾仙夏與多座盃賽獎盃合照,受到現場球迷熱烈歡迎;禾仙夏確認將披上新東家的29號戰衣,另由於智利足總規定球員球衣須印上真實姓名,故高路高路特意為禾仙夏爭取特許,讓其印上因已故祖母而得來的外號「Vozinha」上陣。禾仙夏在加盟後曾表示:「世盃是我職業生涯中最美好的回憶,但那已成過去;能夠代表這家擁有悠久歷史的豪門效力,才是我球會生涯的巔峰。」</p>
+                <div class="article-meta">
+                    <span class="article-source">Ming Pao</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260807/s00015/1786033785144/%E9%98%BF%E4%BB%99%E5%A5%B47-92%E5%84%84%E7%B0%BD%E5%8F%A4%E9%A6%AC%E9%9B%B7%E6%96%AF-%E9%80%81%E6%B4%9B%E5%8A%A0%E7%89%B9%E5%88%B0%E6%84%9B%E8%8F%AF%E9%A0%93-%E7%8D%B5%E7%89%A9%E9%9B%B2%E5%B0%BC%E6%B8%85%E7%A9%BAig%E5%8E%BB%E7%95%99%E6%88%90%E8%AC%8E" target="_blank" class="article-card" data-category="health" data-region="hk">
+            <div class="article-image"><img src="https://fs.mingpao.com/pns/20260807/s00085/7959c085fdd14055bf8a8be2276f6234.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">阿仙奴7.92億簽古馬雷斯 送洛加特到愛華頓 獵物雲尼清空IG去留成謎</h3>
+                <p class="article-description">【明報專訊】據英國《天空體育》消息指,阿仙奴已與紐卡素達成交易,以7500萬鎊(約7.92億港元)購入28歲巴西國腳中場般奴古馬雷斯。這支應屆英超盟主昨則率先公布將32歲丹麥國腳中場基斯甸洛加特售予愛華頓,簽約兩年。</p>
+                <div class="article-meta">
+                    <span class="article-source">Ming Pao</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260807/s00015/1786033784674/%E6%8B%9C%E4%BB%81%E5%B0%87%E5%B8%A5%E5%BF%AB%E9%96%83%E5%B0%96%E6%B2%99%E5%98%B4-%E6%95%B8%E7%99%BE%E7%90%83%E8%BF%B7%E9%80%BC%E7%88%86%E8%A1%97%E9%81%93" target="_blank" class="article-card" data-category="health" data-region="hk">
+            <div class="article-image"><img src="https://fs.mingpao.com/pns/20260807/s00085/3acf22d0ac8847c191303fe480741eae.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">拜仁將帥快閃尖沙嘴 數百球迷逼爆街道</h3>
+                <p class="article-description">【明報專訊】近日訪港的德甲班霸拜仁慕尼黑,主教練高柏尼率領門將紐亞等3名球星昨早快閃現身尖沙嘴,出席運動品牌舉行的見面會,吸引數百球迷到場逼爆店外街道,4人更在活動尾聲更走近店外為前排球迷簽名,相當親民。</p>
+                <div class="article-meta">
+                    <span class="article-source">Ming Pao</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260807/s00015/1786033784235/%E6%8B%9C%E4%BB%81%E9%9A%9419%E5%B9%B4%E9%87%8D%E8%87%A8%E9%A6%99%E6%B1%9F-%E4%BB%8A%E5%95%9F%E5%BE%B7%E5%A4%9C%E6%88%B0%E7%B6%AD%E6%8B%89-%E9%AB%98%E6%9F%8F%E5%B0%BC%E8%AD%89%E7%B4%90%E4%BA%9E%E6%AD%A3%E9%81%B8%E6%8A%8A%E9%97%9C-%E7%90%83%E5%93%A1%E6%93%8D%E7%B7%B4%E5%BE%8C%E7%B0%BD%E5%90%8D%E6%94%BE%E9%A1%8C%E6%BB%BF%E8%B6%B3%E7%90%83%E8%BF%B7" target="_blank" class="article-card" data-category="health" data-region="hk">
+            <div class="article-image"><img src="https://fs.mingpao.com/pns/20260807/s00085/79c4260bae2f4ac880139aaef6c2a2dc.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">拜仁隔19年重臨香江 今啟德夜戰維拉 高柏尼證紐亞正選把關 球員操練後簽名放題滿足球迷</h3>
+                <p class="article-description">【明報專訊】相隔19年再度訪港的德甲班霸拜仁慕尼黑,今晚8時將在啟德主場館出戰「奧迪足球峰會2026」友賽英超勁旅阿士東維拉。拜仁主帥高柏尼昨午出席賽前記者會時確認隊長門將紐亞將會正選上陣,大軍昨晚於同一場地公開操練,包括去年曾隨利物浦來港的哥倫比亞隊翼鋒路易斯迪亞斯等多名主力,在操練尾段四散球場為前排觀眾簽名,令不少球迷滿載而歸。</p>
+                <div class="article-meta">
+                    <span class="article-source">Ming Pao</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://news.mingpao.com/pns/%E8%A6%81%E8%81%9E/article/20260807/s00001/1786037687125/%E6%B5%81%E5%8B%95%E5%9C%96%E6%9B%B8%E9%A4%A8%E6%9C%89%E7%AB%99%E9%BB%9E%E5%B9%B4%E6%95%B8%E5%8D%81%E4%BA%BA%E5%88%B0%E8%A8%AA-%E7%94%B3%E8%A8%B4%E7%BD%B2%E8%AA%BF%E6%9F%A5" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://fs.mingpao.com/pns/20260807/s00006/a71452788bb941f6aa249d868dc425f9.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">流動圖書館有站點年數十人到訪 申訴署調查</h3>
+                <p class="article-description">【明報專訊】申訴專員公署昨日公布展開主動調查,指流動圖書館不時暫停服務,且服務站使用人次參差,「『喜』動圖書館」到校活動次數亦偏低。公署引述有意見認為,流動圖書館的服務時間及停泊位置未能切合市民需要,並應增設自助圖書站,將審視如何善用圖書館設施推廣閱讀文化。</p>
+                <div class="article-meta">
+                    <span class="article-source">Ming Pao</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://news.mingpao.com/pns/%E8%A6%81%E8%81%9E/article/20260807/s00001/1786037686797/%E3%80%8C%E9%81%8A%E6%88%B2%E8%A6%8F%E5%89%87%E8%AE%8A%E3%80%8D%E9%9B%A3%E8%BF%94%E8%AD%B0%E6%9C%83-%E5%B0%88%E6%B3%A8%E8%BE%A6%E5%86%8D%E5%9F%B9%E8%A8%93%E4%B8%AD%E5%BF%83%E8%99%95%E7%90%86%E5%B7%A5%E5%82%B7" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://fs.mingpao.com/image/mingpao_logo_200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">「遊戲規則變」難返議會 專注辦再培訓中心處理工傷</h3>
+                <p class="article-description">【明報專訊】代表工人階層的街坊工友服務處(街工)自2019年反修例事件後淡出政壇。現任主席胡偉忠承認隨着《港區國安法》實施,加上2021年「完善」選舉制度,街工此類「小團體」難再透過晉身議會獲取資源維持地區工作,只能「睇餸食飯」,街工日後會集中資源營辦轄下再培訓中心及處理工傷個案。</p>
+                <div class="article-meta">
+                    <span class="article-source">Ming Pao</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
         <a href="https://www.prnewswire.com/apac/zh/news-releases/diego-mesa-puyo--gef--302845430.html" target="_blank" class="article-card" data-category="technology, business" data-region="hk">
             <div class="article-image"><img src="https://mmx.prnewswire.com/media/MS1964528/Global-Environment-Facility-Diego-Mesa-Puyo-Photo.jpg?id=OA2827177&p=original" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
@@ -1257,6 +1424,17 @@
                 <p class="article-description">領先的智能能源管理、電動車充電、太陽能及儲能方案供應商PowerFlex,今日宣布透過換股交易,收購The Mobility House北美公司。作為交易一部分,The Mobility House將成為合併後業務的少數股東。 這次收購匯聚兩家智能充電及車隊電動化先驅,建立更強大平台,支援北美地區加速轉向電動運輸。合併後的機構將為客戶提供更廣泛的軟件、能源及基礎設施方案,同時推動共同願景,透過智能充電及雙向能源技術,實現更潔淨、更靈活的電網。 PowerFlex行政總裁拉斐爾·德克萊爾克指出:「這次合併正是車隊電動化市場目前所需的戰略舉措。The Mobility House北美公司在車隊領域建立真正獨特的平台,包括已在公用事業計劃中運作的車輛到電網(V2G)功能,以及十年來建立的客戶關係。結合PowerFlex的能源管理平台及商業規模,我們現可透過一家綜合公司,滿足北美地區全面的電動化需求。我們共同處於更有利位置,協助機構降低成本、提升韌性,並最大限度發揮電動運輸的效益。」 這次收購結合了車隊電動化方面高度互補的優勢。PowerFlex已確立其為大型商業車隊提供智能充電方案的領導地位,包括「最後一哩」送貨、市政及公用事業車隊。The Mobility House則在公共交通機構及校巴車隊電動化方面擁有深厚專業知識,並具備雙向充電及車輛到電網整合的先進能力。 透過聯手,兩家公司將擴大為客戶提供的方案,涵蓋更廣泛的車隊應用。The Mobility House在雙向充電方面的專業知識,將有助加速車輛到電網及車輛到建築(V2B)功能的開發及部署,進一步支援兩家公司將電動車轉化為靈活電網資源的願景。同時,其客戶將可使用PowerFlex廣泛的項目開發及工程能力、公共充電功能,以及綜合能源管理平台。客戶亦將受惠於PowerFlex在商業太陽能及儲能方面的經驗,為尋求優化能源成本及可持續發展成果的重型車隊營運商創造新機遇。 The Mobility House北美公司行政總裁格雷戈爾·欣特勒表示:「The Mobility House北美公司在車隊車輛到電網整合方面建立領先地位,並為公共交通及校巴領域建立最先進的充電管理系統。這次合併是令人振奮的新篇章的開始。我們現可為信任我們的客戶帶來更廣泛的能源能力,並將我們建立的方案帶給PowerFlex的客戶及北美各地新市場。我對我們將共同建立的成果感到無比興奮。」 自The Mobility House北美公司作為獨立北美實體成立以來,一直領導該公司的格雷戈爾·欣特勒,將與其大部分團隊一同加入PowerFlex,確保公司已建立的客戶、合作夥伴及渠道關係得以延續。兩家公司預計將逐步整合其軟件平台,以創造統一的客戶體驗,並透過擴展的人工智能驅動功能,提升產品能力。預計在整個整合過程中,現有客戶營運及服務將不受影響。 這次交易進一步鞏固PowerFlex作為智能充電及分散式能源方案領先供應商的地位,支援商業、公共部門及運輸客戶,應對日益電動化的未來轉型。 關於PowerFlex PowerFlex是一家潔淨科技方案公司,致力實現無碳電動化及運輸轉型。其能源管理平台PowerFlex XTM監控、控制及共同優化電動車充電器、太陽能、儲能及微電網等現場資產,透過專利演算法,最大限度利用分散式能源,從而降低整體能源成本。 PowerFlex是美國最大的商業太陽能安裝商,總太陽能容量超500兆瓦,電池儲能超50兆瓦時。PowerFlex亦在全國管理超7萬個電動車充電器,使其成為美國最大的硬件中立電動車充電供應商。 PowerFlex由EDF北美電力方案公司及宏利投資支持。 關於The Mobility House北美公司 The Mobility House北美公司是智能充電及車輛到電網整合方案的先驅,協助公共交通機構、學區及車隊營運商,最大限度發揮電動運輸的價值。透過先進的充電管理及雙向能源技術,該公司使電動車能作為靈活的能源資源,同時支援可靠的電網運作。 (美聯社)</p>
                 <div class="article-meta">
                     <span class="article-source">Bastillepost</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60377670/%E4%BB%A5%E8%BB%8D%E5%96%AE%E6%97%A5%E5%90%91%E9%BB%8E%E5%B7%B4%E5%AB%A9%E5%8D%97%E9%83%A8%E7%99%BC%E5%B0%84113%E6%9E%9A%E7%A0%B2%E5%BD%88-%E5%90%8C%E6%97%A5%E6%B5%B7%E8%BB%8D%E5%A4%A7%E8%A6%8F%E6%A8%A1%E6%BC%94%E7%BF%92" target="_blank" class="article-card" data-category="politics" data-region="hk">
+            <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20260807/1162226855172902912742918.jpeg/lk2WFW4Fby7owyAfSa5cJcuS202Ift0o-SI7afkiO2k" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">以軍單日向黎巴嫩南部發射113枚砲彈 同日海軍大規模演習</h3>
+                <p class="article-description">以色列海軍本週在地中海及紅海舉行大規模演習,以軍同日亦向黎巴嫩南部發射大量砲彈,聯合國駐黎巴嫩臨時部隊(UNIFIL)警告局勢脆弱。據《以色列</p>
+                <div class="article-meta">
+                    <span class="article-source">Hk01.com</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
@@ -1345,6 +1523,50 @@
                 <p class="article-description">DXC 成 为 Primary AI 原生零信任 统一控制平面的独家托管服务合作伙伴,助力企业安全扩展 AI 应用规模 。 全新 联合解决方案可对 AI 智能体及企 业 AI 应用程序的数据访问进行治理,同时强化安全、身份及合规管理 。 DXC 的托管安全服 务涵盖咨询、实施、集成、治理及持续运营支持,加快 AI 安全落地 。 弗吉尼亚州阿什本 2026年8月7日 /美通社/ -- DXC Technology(纽约证券交易所代码:DXC)今日宣布与 Primary 达成战略合作,成为 Primary AI 原生零信任平台的独家托管服务提供商。双方推出的联合解决方案可对 AI 智能体及企业 AI 应用程序的数据访问进行治理,帮助企业安全部署并规模化应用 AI,同时提升安全、身份及合规管理能力。 DXC and Primary Launch AI-Native Zero Trust Platform for Enterprise AI 随着各类组织从 AI 试验阶段迈向生产应用,一项新的安全挑战随之而来:如何治理能够访问企业敏感数据的自主式 AI 系统。传统安全模式主要围绕用户、设备和网络构建,并非针对跨复杂企业环境运行的 AI 智能体而设计。 为填补这一安全与治理缺口,DXC 与 Primary 携手推出专为 AI 安全及治理量身打造的平台。该解决方案由 DXC 全球网络安全部门提供,集咨询、实施、集成、治理及托管安全服务于一体,帮助客户推动 AI 落地应用,进一步提升可视性、管控力及可信度。 DXC Technology 全球网 络安全解决方案负责人 Dawn-Marie Vaughan 表示 : “ 随着企 业从 AI 试点迈向生产应用,安全与治理体系也必须同步快速演进。可信赖的 AI 不 仅需要安全的基础设施,还需要妥善治理 AI 系 统访问数据、身份及业务流程的方式。通过与 Primary 合作,我 们正在帮助客户将零信任理念应用于企业 AI,为其提供从试点迈向生产应用所需的可视性、管控力及运营信心 。 ” 该解决方案由 DXC 全球网络安全部门提供,可帮助客户: 保障 AI 智能体及企业 AI 应用程序的安全 治理 AI 对企业数据的访问 强化身份管理及策略执行 降低企业环境中的整体风险 满足合规及监管要求 提升对用户、应用程序、数据及 AI 智能体的整体可视性 Primary 联合创始人兼总裁 Michael Marx 表示 : “ 企 业 AI 面 临的核心安全挑战,并非只是了解 AI 智能体正在 执行什么操作,而是要掌握足够的上下文信息,以判断该操作是否应获准,同时具备相应的基础设施,自动执行这一实时决策。 Primary 将跨域遥 测数据转化为覆盖整个 AI 工作流的持 续性、上下文感知型策略执行机制。依托 DXC 的全球 实施能力及托管安全专业经验,客户可以构建统一控制层,保护敏感数据、降低运营风险,并确保 AI 系 统在明确界定的企业边界内安全运行 。 ” 该平台专为高度受监管环境中的组织而设计,可帮助其应对日益严格的治理、合规、数据主权及安全要求。通过将零信任原则直接嵌入企业 AI 环境,DXC 与 Primary 可帮助客户从试验阶段迈向企业级规模化部署,并获得从容创新所需的韧性和管控能力。如需了解更多信息,请访问 公司网站 。 关于 DXC Technology DXC Technology(纽约证券交易所代码:DXC)是领先的企业技术与创新合作伙伴,为全球企业及公共部门机构提供软件、服务和解决方案。在变革呈指数级加速的时代,DXC 帮助客户快速运用 AI,推动业务成果落地。DXC 在托管基础设施服务、应用程序现代化及行业专用软件解决方案领域拥有深厚的专业能力,帮助客户推进技术现代化、强化安全保障,并运营全球部分最复杂的技术环境。如需了解更多信息,请访问 dxc.com。</p>
                 <div class="article-meta">
                     <span class="article-source">美通社</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60377667/%E7%BE%8E%E5%9C%8B%E5%AE%A3%E5%B8%83%E5%B0%8D%E5%8F%A4%E5%B7%B4%E9%80%B2%E8%A1%8C%E6%96%B0%E4%B8%80%E8%BC%AA%E5%88%B6%E8%A3%81-%E6%8C%87%E5%85%B6%E9%97%9C%E8%81%AF%E4%B8%AD%E4%BF%84%E8%BB%8D%E6%96%B9%E7%8D%B2%E5%8F%96%E6%AD%A6%E5%99%A8" target="_blank" class="article-card" data-category="politics" data-region="hk">
+            <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20260722/1156632810975399936328791.jpeg/grmF2kkzdcl5ozlk82R8m_KBlsneGWqtRq4kTUauJE0" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">美國宣布對古巴進行新一輪制裁 指其關聯中俄軍方獲取武器</h3>
+                <p class="article-description">美國周四對五個古巴實體及八名個人實施制裁,指其協助古巴取得武器、並與外國軍方維持關係,包括古巴駐中國及俄羅斯的武官。據路透社8月6日報道,</p>
+                <div class="article-meta">
+                    <span class="article-source">Hk01.com</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.stheadline.com/realtime-world/3601842/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E8%8F%AF%E9%83%B5%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8D%E6%BB%BF%E9%9A%B1%E7%9E%9E%E5%BD%88%E8%97%A5%E5%91%8A%E6%80%A5-%E5%9A%B4%E5%8E%B2%E6%96%A5%E8%B2%AC%E9%98%B2%E9%95%B7" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://image.hkhl.hk/f/1200p0/0x0/100/none/93dcc608ac4b528e14d9ce80cd77084a/2026-08/2026-08-06_19_08_15.png" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">伊朗局勢|《華郵》:特朗普不滿隱瞞彈藥告急 嚴厲斥責防長</h3>
+                <p class="article-description">《華盛頓郵報》援引知情人士稱,美國總統特朗普與國防部長(戰爭部長)赫格塞思日前因伊朗戰事彈藥短缺問題「起衝突」。據稱特不滿自己似遭誤導而未能掌握美軍彈藥已告罄的實情,導致如今對伊朗的軍事選項大受限制,為此嚴厲質問赫格塞思。 誤以為「已經解決了」 白宮發言人萊維特答覆《華郵》詢問時,稱「這100%是假新聞。這事根本從未發生過。特朗普總統對赫格塞思部長抱有最大的信心。」然而兩名匿名知情人士說,事情發生</p>
+                <div class="article-meta">
+                    <span class="article-source">Stheadline</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="http://www.crntt.com/doc/7_0_107220929_1_0807014300.html" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+            <div class="article-image"><img src="https://hkpic.crntt.com/upload/202608/7/107220933.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">快評:台美軍事合作公開化 大陸不會沉默</h3>
+                <p class="article-description">中評社快評/台灣漢光42號演習自5日起展開,為期10天9夜,在各地參與演訓的“美語老師”滿街跑。台灣軍方公開稱,台美軍事合作程度“比外界想像更多”。美國在台協會(AIT)早前也公開美台海巡合作畫面。 美方軍事人員在台訓練向來是敏感議題,長期保持低調,但現在公開化了。《華爾街日報》近日刊出的深度報導稱,台灣正逐步公開過去長期低調處理的美台安全合作內容,包括軍事訓練、實戰經驗交流、海巡安</p>
+                <div class="article-meta">
+                    <span class="article-source">Crntt</span>
+                    <span class="article-date">📅 2026-08-06</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60377658/%E4%BF%84%E7%83%8F%E5%9C%A8%E9%BB%91%E6%B5%B7%E8%A1%9D%E7%AA%81%E5%8A%A0%E5%8A%87-%E5%85%A8%E7%90%83%E7%B3%A7%E9%A3%9F%E8%88%87%E7%9F%B3%E6%B2%B9%E4%BE%9B%E6%87%89%E7%B7%9A%E5%8F%97%E9%98%BB" target="_blank" class="article-card" data-category="politics" data-region="hk">
+            <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20260619/1144652105353793536482709.jpeg/PjZ-BoTB36ztvWPosMWk1f5achuWdk7CD7qnWw-6p1s" alt="" onerror="this.src='/default-news.jpg'"></div>
+            <div class="article-content">
+                <h3 class="article-title">俄烏在黑海衝突加劇 全球糧食與石油供應線受阻</h3>
+                <p class="article-description">俄羅斯和烏克蘭近期在黑海加大襲擊船隻、港口和出口碼頭,已打擊該處的出口活動,顯著干擾全球糧食和石油供應,使黑海一帶成為全球最新一個受戰火波</p>
+                <div class="article-meta">
+                    <span class="article-source">Hk01.com</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
@@ -1517,220 +1739,220 @@
                 </div>
             </div>
         </a>
-        <a href="https://hk.sports.yahoo.com/news/%E8%B3%BD%E4%BA%8B-u20%E4%B8%96%E7%95%8C%E7%94%B0%E5%BE%91%E9%8C%A6%E6%A8%99%E8%B3%BD-%E7%BE%8E%E5%9C%8B-4x400-%E6%B7%B7%E5%90%88%E6%8E%A5%E5%8A%9B%E5%AF%AB%E4%B8%8B-160000170.html" target="_blank" class="article-card" data-category="sports" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="a1afa0af9f3c6e6eb11b899941fd248a" data-category="sports" data-region="hk">
             <div class="article-image"><img src="https://s.yimg.com/lo/mysterio/api/ae35b6a0cdc669416d31956c9bdd6fdf018623035059e7d18adba01855cc15dc/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Frunning_biji_hk_617%2F94052143df383aef904f14847d949495" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">【賽事】U20世界田徑錦標賽 美國 4x400 混合接力寫下 3:15.31 世界青年最速紀錄</h3>
-                <p class="article-description">2026 世界 U20 田徑錦標賽於當地時間週三(5 日)在美國尤金海沃德體育場(Hayward Field)正式開跑,首日賽事精彩紛呈,其中又以東道主美國隊在混合 4x400 米接力寫下的世界青年最...</p>
+                <p class="article-description">2026年世界U20田徑錦標賽在美國尤金海沃德體育場揭幕，東道主美國隊在混合4x400米接力以3:15.31刷新世界U20最佳紀錄，較2022年舊紀錄快逾2秒。捷克隊與澳洲隊分獲銀銅，成績亦躋身歷史前三、四位。肯亞的Frankline Kibet與烏干達的Charity Cherop分別奪得男、女子5000米金牌，後者收穫生涯首面世界級金牌。巴西選手Alessandro Borges以20.35米個人最佳成績在男子鉛球封王，僅以40毫米之差力壓韓國選手朴時勳。</p>
                 <div class="article-meta">
                     <span class="article-source">All In Yahoo</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.sports.yahoo.com/news/%E5%81%A5%E5%BA%B7-pure-%E9%9B%86%E5%9C%98%E8%88%87%E6%B8%AF%E6%80%A1%E9%86%AB%E7%99%82-%E6%A7%8B%E5%BB%BA%E5%85%A8%E6%96%B0%E5%81%A5%E5%BA%B7%E7%94%9F%E6%85%8B%E5%9C%88-project-160000489.html" target="_blank" class="article-card" data-category="sports" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="6663c9ba87a8adeee1bc9420c794db9b" data-category="sports" data-region="hk">
             <div class="article-image"><img src="https://s.yimg.com/lo/mysterio/api/06e85882eb8125b08f1fb7580e2282b5d263eadb09ecbba712d1545d0e6e3a96/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Frunning_biji_hk_617%2Fd13321c7a3cd4419ddd4565f8b7bff5a" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">【健康】PURE 集團與港怡醫療 構建全新健康生態圈 Project Healthspan 正式啟動</h3>
-                <p class="article-description">當醫療專業與健身科學真正相遇,健康管理不再只是「生病求醫」或「盲目鍛鍊」。PURE 集團與港怡醫療打破醫療與健身的傳統界線,結合兩大領域的專業優勢,構建出全球其中一個首創真正融合臨床醫療與健康管理的綜...</p>
+                <p class="article-description">PURE集團與港怡醫療宣布啟動名為Project Healthspan的合作項目，整合臨床醫療與健身科學專業，建構融合醫療與健康管理的綜合生態圈。項目以延長健康壽命為核心，強調透過積極規劃生活習慣來塑造健康，而非僅在疾病出現後治療。首階段推出為期14天的The Metabolic Blueprint計劃，利用連續血糖監測技術，結合港怡的醫療專業及PURE的運動、營養專家團隊，為參與者提供個人化代謝…</p>
                 <div class="article-meta">
                     <span class="article-source">All In Yahoo</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.finance.yahoo.com/news/%E9%BA%A5%E6%A0%BC%E7%90%86%E9%A6%96%E4%BA%88%E6%A8%82%E5%A4%A9-%E8%B7%91%E8%B4%8F%E5%A4%A7%E5%B8%82-%E8%A9%95%E7%B4%9A-%E6%8C%87%E7%9B%88%E5%88%A9%E6%8B%90%E9%BB%9E%E5%B7%B2%E8%87%B3-155809246.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="06ae24b0ed55b44f191a9a14b99e7a37" data-category="business" data-region="hk">
             <div class="article-image"><img src="https://content-media.investing.com/news/LYNXMPEA730B0_M.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">麥格理首予樂天「跑贏大市」評級,指盈利拐點已至</h3>
-                <p class="article-description">Investing.com - 麥格理(Macquarie)啟動對樂天集團(Rakuten)的研究覆蓋,給予「跑贏大市」評級,目標價定為¥1,100,認為這家日本互聯網及金融科技集團的盈利正邁向拐點,移動業務盈利能力持續改善,加上金融服務業務強勁動能,共同推動集團整體業績向好。</p>
+                <p class="article-description">麥格理首予樂天集團「跑贏大市」評級，目標價¥1,100，認為其盈利拐點已至。該行預測樂天FY2026年收入達¥2.88萬億，按年增長15.2%，非GAAP營業利潤¥2,440億，按年增逾一倍；FY2027及FY2028年營業利潤料再增36.6%及31.8%。麥格理看好其電商、支付、銀行、證券及移動服務一體化生態系統的交叉銷售優勢，並預期10月金融業務重組有助提升融資效率及釋放估值潛力。移動業務方面…</p>
                 <div class="article-meta">
                     <span class="article-source">Yahoo Finance</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.prnasia.com/story/543246-1.shtml" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="7d1c04b63eb69ae54e2edfd7b2f63429" data-category="business" data-region="hk">
             <div class="article-image"><img src="https://mmx.prnasia.com/media/MS1964310/Magliano-AW26-Paris-Show.jpg?id=OA2825632&p=medium600" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">MONDEVITA 收购了 MAGLIANO 母公司 UNDERSCORE 区的多数股权,这是新的意大利奢侈品平台的第二步</h3>
-                <p class="article-description">米兰 2026年8月6日 /美通社/ -- MondeVita 已收购总部位于米兰的品牌加速器 Underscore District 的战略性多数股权,该公司是 Magliano、GR10K 以及多品牌零售商 WOK Store 背后的推手。该交易是 MondeVita 打造全新意大利奢华平台计划的第二步,在其集团已拥有的制造优势基础上,进一步融入了品牌开发、零售和数字商务能力。本次交易获得了 Underscore District 现有股东群体的支持。财务条款未予披露。 Magliano, AW26 Paris Show 在此次交易之前,MondeVita 已收购了位于索拉尼亚的男装制造商 Raffaele Caruso S.p.A.。该公司成立于 1964 年,不仅生产自有品牌,还为该行业多家顶尖大牌代工制作系列服饰。Caruso 报告 2025 年的营业收入为 3420 万欧元,拥有 479 名员工。Caruso 为集团赋予了深厚的工业底蕴,而 Underscore District 则带来了品牌建设、商品企划和零售能力,从而使该平台更加完善。 Underscore District 由 Edoardo Di Luzio 于 2022 年创立,在四年时间里构建了一个涵盖品牌开发、财务、运营、商品企划和电子商务的综合平台。2025 年,其品牌组合通过全球 150 多家零售商组成的批发网络创造了超过 700 万欧元的销售额,旗下各项业务均正迈入全新的增长阶段。在 MondeVita 旗下,这些能力与通过收购 Caruso 所获得的工业基础形成互补:该集团如今将制造、品牌开发和直接零售整合于同一体系之下。 本次交易的核心是 Magliano,该品牌由 Luca Magliano 于 2017 年在博洛尼亚创立。该品牌自 2018 年起登上了米兰时装周的官方日程,并自 2026 年起在巴黎办秀;2023 年,该品牌荣获 LVMH Karl Lagerfeld 奖,同年 Luca Magliano 入选 BoF 500 榜单。在新所有权下,MondeVita 和 Underscore District 计划强化 Magliano 的组织和工业能力(包括共享 Caruso 的制造基地),同时支持其国际化扩张。 本次交易还包括机能工装品牌 GR10K,Underscore District 已于 2024 年 1 月收购了该品牌的股份。 同样纳入本次交易的还有 WOK Store,这是一家位于米兰的多品牌零售商,以其独特的选品视角以及与米兰创意社区的深厚联系而闻名。其在米兰的第二家门店已于 2024 年开业,预计将进入新的扩展阶段,在巩固其核心多品牌业务的同时,拓展至生活方式及新型消费品类。 该交易发生在意大利时尚及制造平台掀起更大规模整合浪潮的大背景下,而整个行业对奢侈品需求的放缓促使独立设计师品牌寻求与更大规模的伙伴合作,以获取资金、基础设施和分销渠道;在此背景下,MondeVita 将自己定位为一个自身具备全套内部能力的平台,从而使其有能力收购、发展并提升纳入集团旗下的每一个品牌。该集团将当前的市场阶段视为一个难得的机遇:在这个时刻,互补的能力、品牌和人才可以聚集在同一个平台上,为该行业的下一个增长周期做好准备。 这些能力延伸到了时尚运营之外的领域。Mondevo Tech 作为该集团设立于新加坡的技术分支,运营着一个由 50 名工程师与 120 个 AI 代码智能体组成的自主 AI 平台,旨在将奢侈品牌推向涵盖设计、生产、分销和客户体验的新经济时代。正是这个由集团自主拥有而非外包的核心技术层,被部署到了该集团收购的每一项业务中。 此次收购标志着 MondeVita 更广泛投资阶段的开始。该集团打算在互补领域寻求进一步的收购和战略合作,特别是关注更具规模、能够加速打造具备国际竞争力的意大利奢华平台的业务。 Edoardo Di Luzio 将继续担任 Underscore District 的首席执行官,并在 MondeVita 内部承担战略角色,致力于促进集团品牌组合之间的协同效应发展,并参与识别和执行未来的投资机会。 “ 意大利一直在源源不断地孕育出时尚界最具独创性的创意声音。我们正在打造一个平台,让他们能够在本土发展壮大,同时拥有在全球范围内展开竞争的资源,”拥有 MondeVita 的投资控股公司 Mondevo Group 主席 Hussam Otaibi 表示。“Underscore District 正是该平台旨在承载的那种创业引擎。而且,由于我们的智能体 AI Ittikar 能够让我们在几天内而非数周或数月内完成对交易的分析和尽职调查,我们能够比该市场上的任何人都更快地把握合适的机会。” “ 除了我们通过收购 Caruso 获得的工业基础之外,本次交易还增加了仅凭金钱无法快速构建的能力:品牌开发、零售以及直接对接塑造时尚文化的纽带,”MondeVita 主席 Fabio Brambilla 表示。“我们正在构建一个创意与成熟工艺相互促进的平台,而 Underscore District 正是这一设计的核心所在。” “Underscore 始终围绕着一种极具创业精神的时尚模式而构建。与 MondeVita 的合作使我们有机会将这种模式拓展至全新的规模,同时保留与我们合作的各业务的特色和独立性,”Underscore District 首席执行官 Edoardo Di Luzio 表示。“同时,我很高兴能够为 MondeVita 的下一阶段做出贡献,并推动开发能够与我们现有建设形成补充的新投资。” 关于 Underscore District Underscore District 成立于 2022 年,是一家专注于打造和扩充新一代奢华时尚品牌的意大利品牌加速器。该集团将战略投资、运营专业知识和长期创业方法相结合,以支持具有全球潜力的独特创意企业。如今,Underscore District 的品牌组合包括意大利最受赞誉的时尚品牌之一 Magliano、先锋机能男装品牌 GR10K,以及拥有强大全渠道布局的知名多品牌零售平台 Wok Store。 关于 MondeVita MondeVita 是一家创新的奢华控股集团,汇聚了卓越的品牌与非凡的体验,拥有自主掌握而非外包的核心能力:植根于意大利的 475 名精湛工匠;位于米兰的品牌建设平台,汇集了设计师主导的品牌;设立于新加坡的专属 AI 平台,拥有 50 名工程师和 120 个代码代理;以及横跨电影、电视、音乐和游戏领域的跨大西洋媒体企业。 关于 Mondevo Group Mondevo Group 是一家总部位于阿布扎比的多业务部门控股公司,运营于科技、投资和生活方式的交汇领域。该集团的业务部门涵盖财富管理、风险投资、奢华与生活方式以及基础科技平台。Mondevo 的使命是利用 AI 原生能力和超高净值家庭的全球网络,在具有高进入壁垒和强劲长期增长潜力的各个行业中打造经久不衰的企业。 Magliano, SS27 Lookbook Magliano, SS27 Lookbook Wok Gallery, Porta Venezia, Milan</p>
+                <p class="article-description">MondeVita收购了米兰品牌加速器Underscore District的多数股权，后者旗下拥有Magliano、GR10K及多品牌零售商WOK Store。这是MondeVita打造意大利奢华平台的第二步，此前其已收购男装制造商Raffaele Caruso S.p.A.。交易获现有股东支持，财务条款未披露。Underscore District由Edoardo Di Luzio于2022年…</p>
                 <div class="article-meta">
                     <span class="article-source">美通社</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.bastillepost.com/hongkong/article/16519931-%E7%83%8F%E5%B9%B2%E9%81%94%E6%89%B9%E5%87%86%E6%B4%BE%E5%85%B5%E5%8A%A0%E5%85%A5%E5%8A%A0%E6%B2%99%E5%9C%8B%E9%9A%9B%E9%83%A8%E9%9A%8A" target="_blank" class="article-card" data-category="politics, top" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="0bd6d8cf0903fc1089182efdeced3f61" data-category="politics, top" data-region="hk">
             <div class="article-image"><img src="https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/2363467ec800644552f8be5a1b84f8f4_APTOPIX_Israel_Palestinians_Gaza_37653_FB.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">烏干達批准派兵加入加沙國際部隊</h3>
-                <p class="article-description">烏干達當局周四尋求並獲得國會批准,派兵前往加沙,作為美國總統特朗普和平委員會建議的國際部隊一部分,以確保在毀滅性的以色列與哈馬斯戰爭後該地區的安全。 國防部長提出的這項動議獲得通過,是烏干達首次公開表明願意加入加沙國際穩定部隊。摩洛哥亦已承諾為這次任務派兵。 烏干達為何同意派兵加沙,以及當中是否涉及利益交換,目前尚不清楚。部分反對派議員隨即質疑烏干達這次決定的動機。議員哈桑·基魯米拉表示,對於一個伊斯蘭合作組織成員國而言,這次部署將引起「外交憂慮」。 他在國會表示,支持這次部署的人士需要澄清的「最大問題」是:「我國軍隊將會為哪一方作戰?」 國防部長基里奧瓦·基瓦努卡在尋求議員支持時,援引烏干達在索馬里等國的維和部署所展現的軍事能力。 這支部隊由特朗普的和平委員會於二月提出,將由美國少將賈斯珀·傑弗斯領導,他在五月表示,這支二萬人的部隊將確保「未來的繁榮與持久和平」。 特朗普上周宣布一項協議,要求哈馬斯解除武裝,並要求以色列從加沙撤軍。根據該協議,國際穩定部隊將在以色列軍隊分階段撤出後部署到加沙。 這項協議是去年達成的一項更廣泛停火協議的一部分,要求以色列停止軍事行動,並要求哈馬斯及其在加沙的盟友停止所有武裝活動。協議亦大致說明了解除武裝的過程。 協議文本公布後,以色列表示有「嚴重安全憂慮」,並已向美國表達。 自去年十月達成停火協議以來,以色列的襲擊已造成一千二百五十人死亡,該協議結束了持續兩年的以色列與哈馬斯戰爭中的主要戰鬥。 (美聯社)</p>
+                <p class="article-description">烏干達國會周四批准政府派兵加入加沙國際穩定部隊，這是該國首次公開表態參與相關任務。國防部長基里奧瓦·基瓦努卡在尋求支持時援引烏干達在索馬里等國的維和經驗，但部分反對派議員質疑派兵動機，議員哈桑·基魯米拉指出作為伊斯蘭合作組織成員國，此舉引發「外交憂慮」，並要求澄清軍隊作戰對象。這支部隊由特朗普和平委員會於二月提出，由美國少將賈斯珀·傑弗斯領導，規模約二萬人，將在以色列分階段撤軍後部署至加沙。特朗普上周公布的協議要求哈馬斯解除武裝，以色列則表示有「嚴重安全憂慮」。摩洛哥亦已承諾派兵參與。</p>
                 <div class="article-meta">
                     <span class="article-source">Bastillepost</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.finance.yahoo.com/news/imf%E4%BA%8C%E6%8A%8A%E6%89%8B%E9%A0%90%E8%A8%88%E6%97%A5%E6%9C%AC%E5%A4%AE%E8%A1%8C%E5%B0%87%E7%B9%BC%E7%BA%8C%E6%8E%A8%E5%8B%95%E8%B2%A8%E5%B9%A3%E6%94%BF%E7%AD%96%E6%AD%A3%E5%B8%B8%E5%8C%96-155049043.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="c64dd202014b3ad437f5a3a9783ede66" data-category="business" data-region="hk">
             <div class="article-image"><img src="/default-news.jpg" alt=""></div>
             <div class="article-content">
                 <h3 class="article-title">IMF二把手預計日本央行將繼續推動貨幣政策正常化</h3>
-                <p class="article-description">None</p>
+                <p class="article-description">國際貨幣基金組織（IMF）第一副總裁丹·卡茨表示，日本經濟復甦正為日本央行在長期超寬鬆貨幣政策後繼續推進政策正常化創造條件。卡茨指出，日本正經歷「意義深遠的長期轉型」，前首相安倍晉三推動的結構性改革開始顯現成效。他預計日本央行將採取必要措施履行通膨及支持經濟成長的使命，並稱通膨仍略高於目標水平，正常化進程將持續。卡茨曾任美國財政部幕僚長，於去年加入IMF。</p>
                 <div class="article-meta">
                     <span class="article-source">Yahoo Finance</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.prnewswire.com/apac/zh/news-releases/mondevita--magliano--underscore-district--302845182.html" target="_blank" class="article-card" data-category="technology, business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="f2fbea3b3c8c2ba1afcf919e4ae78bdc" data-category="technology, business" data-region="hk">
             <div class="article-image"><img src="https://mmx.prnewswire.com/media/MS1964310/Magliano-AW26-Paris-Show.jpg?id=OA2825632" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">MondeVita 收購 Magliano 母公司 Underscore District 的多數股權,為構建全新意大利奢侈品平台邁出第二步</h3>
-                <p class="article-description">米蘭2026年8月6日 /美通社/ -- MondeVita 已戰略收購 Underscore District 的多數股權。Underscore District 是一間總部位於米蘭的品牌加速器,旗下擁有 Magliano、GR10K 及多品牌零售商 WOK Store。此交易是 MondeVita 建立全新意大利奢侈品平台的第二步,為集團現有的製造實力增添品牌發展、零售和數碼商務等業務。該交易獲得 Underscore District 現有股東基礎的支持。財務條款未有披露。 此交易前,MondeVita 已收購 Raffaele Caruso...</p>
+                <p class="article-description">MondeVita宣佈戰略收購米蘭品牌加速器Underscore District的多數股權，後者旗下擁有時尚品牌Magliano、GR10K及多品牌零售商WOK Store。此為MondeVita繼收購男裝製造商Raffaele Caruso後，構建意大利奢侈品平台的第二步，交易條款未披露。Underscore District成立於2022年，2025年透過全球150間零售商網絡創造逾700萬…</p>
                 <div class="article-meta">
                     <span class="article-source">Pr Newswire Apac</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.finance.yahoo.com/news/piper-sandler%E4%B8%8B%E8%AA%BFapplovin%E8%A9%95%E7%B4%9A-%E6%8C%87%E5%85%B6%E4%B8%8A%E5%B8%82%E4%BB%A5%E4%BE%86%E9%A6%96%E6%AC%A1%E6%9C%AA%E9%81%94%E6%8C%87%E5%BC%95%E7%9B%AE%E6%A8%99-153505697.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="a1078afb3a100b0851b5b819c6fdc76d" data-category="business" data-region="hk">
             <div class="article-image"><img src="https://content-media.investing.com/news/LYNXMPEM18116_M.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">Piper Sandler下調AppLovin評級,指其上市以來首次未達指引目標</h3>
-                <p class="article-description">Investing.com - Piper Sandler在一份研究報告中將AppLovin下調至「中性」評級,表示在該公司公布第二季業績後,前景「更趨複雜」。</p>
+                <p class="article-description">Piper Sandler將AppLovin評級下調至「中性」，因該公司上市以來首次未達業績指引。第二季收入指引中位數低30個點子，EBITDA低100個點子，管理層歸因於模型改進時間安排，預期第三季逆轉。分析師擔憂未來需更頻繁或更大規模的模型改進才能符合市場預期，並質疑公司能否按預期推動模型提升。Piper Sandler對管理層及市場地位仍持正面看法，但認為未來業績能否持續超預期存在疑問，電商…</p>
                 <div class="article-meta">
                     <span class="article-source">Yahoo Finance</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.finance.yahoo.com/news/spacex%E8%82%A1%E5%83%B9%E4%B8%8A%E6%BC%B2%E7%B4%845-%E9%8E%96%E5%AE%9A%E6%9C%9F%E8%A7%A3%E9%99%A4%E6%81%90%E6%85%8C%E6%83%85%E7%B7%92%E6%B6%88%E9%80%80-153419693.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="58bea7dfb1527aa15d9d18e6d66bae23" data-category="business" data-region="hk">
             <div class="article-image"><img src="https://i-invdn-com.investing.com/news/LYNXMPEA9Q076_M.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">SpaceX股價上漲約5%,鎖定期解除恐慌情緒消退</h3>
-                <p class="article-description">Investing.com - SpaceX股價於週四開盤約一小時後上漲約5%,此前共有9.115億股(市值約1000億美元)從鎖定協議中解除,這些股票此前限制內部人士出售。</p>
+                <p class="article-description">SpaceX股價週四盤中上漲約2%，早盤一度升幅達5%。此前約9.115億股、市值約1000億美元的股票鎖定期解除，內部人士出售限制取消，市場恐慌情緒消退。目前已有近2億股易手。此次反彈發生在公司發布首份財報後股價下跌14%的背景下，投資者此前對AI支出超預期反應負面，但華爾街分析師整體維持正面看法。鎖定期解除後，可交易股票總數從6月IPO時的6.39億股增至15.5億股。另一批鎖定期解除將於20…</p>
                 <div class="article-meta">
                     <span class="article-source">Yahoo Finance</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.bastillepost.com/hongkong/article/16519892-massive-bio%E7%8D%B2%E9%81%B8openai%E7%B2%BE%E9%81%B8%E5%90%88%E4%BD%9C%E5%A4%A5%E4%BC%B4-%E6%8E%A8%E9%80%B2ai%E7%B2%BE%E6%BA%96%E8%85%AB%E7%98%A4%E5%AD%B8%E6%87%89%E7%94%A8" target="_blank" class="article-card" data-category="top, technology" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="15416501bfaf2d11527215958fcc24af" data-category="top, technology" data-region="hk">
             <div class="article-image"><img src="https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/043dcac27d254cefab44b4aaa46bde3d_1_FB.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">Massive Bio獲選OpenAI精選合作夥伴 推進AI精準腫瘤學應用</h3>
-                <p class="article-description">全球精準腫瘤學公司Massive Bio今日宣布,獲選為OpenAI合作夥伴網絡的OpenAI精選合作夥伴。 OpenAI合作夥伴網絡是一項全球計劃,旨在讓合作夥伴與OpenAI共同開發、銷售及提供人工智能解決方案。該網絡匯聚具備深厚行業專業知識、交付能力及客戶關係的合作夥伴,同時為他們提供資源、支援及協助,以協助企業採用OpenAI的尖端模型及產品,並將其轉化為可衡量的成果。 作為OpenAI精選合作夥伴,Massive Bio將繼續與OpenAI合作,協助各機構負責任及有效地建立、部署及擴展人工智能解決方案。這次合作將有助機構透過GPT-5.6,從每個代幣中獲取更多實用成果,並以更低成本實現更強表現,同時利用ChatGPT Work將宏大目標轉化為實際成果。Massive Bio為醫療系統、研究網絡、生物製藥公司、臨床醫生及病人支援機構帶來腫瘤學領域專業知識、臨床工作流程整合及交付能力。 Massive Bio聯合創辦人兼行政總裁Selin Kurnaz博士表示:「Massive Bio從一開始便致力將人工智能轉化為臨床研究的可擴展基礎設施。獲選為OpenAI精選合作夥伴,加強我們將尖端模型與腫瘤學專業知識及受規管交付結合的能力,協助醫療保健及生命科學機構從具潛力的試點項目,邁向可衡量的生產工作流程。」 Massive Bio支援醫療保健及生命科學領域的機構,提供人工智能驅動的臨床試驗情報、預篩選、潛在匹配識別、轉介協調、病人參與及真實世界數據解決方案。其工作包括將複雜的方案標準轉化為結構化、機器可讀的參數,並整合臨床及生物標誌物資訊,以呈現潛在的試驗選項,供合資格專業人士審閱。Massive Bio的技術支援研究及試驗工作流程,並不會取代臨床判斷或決定最終研究資格。 這次精選合作夥伴的里程碑,是基於Massive Bio早前宣布與OpenAI的合作,旨在支援大規模臨床試驗方案參數化及實時病人預篩選。該合作重點是將複雜的資格標準轉化為結構化參數,用於人工審閱的預篩選工作流程。 Massive Bio聯合創辦人兼首席醫療人工智能總監Arturo Loaiza-Bonilla醫生表示:「人工智能只有在能夠將複雜證據轉化為真實臨床及研究工作流程中及時、負責任的行動時,才對腫瘤學有意義。我們獲選為OpenAI精選合作夥伴,加強我們將尖端模型與腫瘤學特定知識、人工監督及嚴格評估結合的能力,協助團隊從手動方案解讀轉向可擴展、可追溯的執行。」 展望未來,Massive Bio計劃擴展其OpenAI相關服務,投資於人才及賦能,並擴展受規管的部署,以應用於臨床試驗情報、病人獲取及精準腫瘤學營運,協助客戶將人工智能的抱負轉化為業務成果。該公司將專注於具明確界限的應用案例,並實施人工監督、績效評估、數據管治及生命週期監控。 Massive Bio聯合創辦人、首席技術總監兼首席營運總監Çağatay M. Çulcuoğlu表示:「精選合作夥伴地位加強我們將尖端人工智能引入腫瘤學及臨床研究營運架構的能力。我們的工程重點是建立可靠、可互操作的系統,將先進模型連接到受規管數據、臨床工作流程及可衡量的執行,讓機構能夠自信而清晰地擴展人工智能。」 Massive Bio由Selin Kurnaz博士、Arturo Loaiza-Bonilla醫生及Çağatay M. Çulcuoğlu共同創立,透過人工智能驅動的解決方案,改革製藥價值鏈。作為一間具備人工智能的真實世界數據公司,Massive Bio簡化病人就醫流程,擴大臨床研究的可及性,並優化全球17個國家的臨床試驗營運。其技術及服務支援病人、醫生、研究地點、醫療系統及生物製藥機構,貫穿整個臨床試驗生命週期。 (美聯社)</p>
+                <p class="article-description">全球精準腫瘤學公司Massive Bio獲選為OpenAI合作夥伴網絡的精選合作夥伴，將與OpenAI共同開發及部署人工智能解決方案。該公司運用GPT-5.6及ChatGPT Work等技術，協助醫療系統、生物製藥公司等機構將臨床試驗方案轉化為結構化參數，支援病人預篩選及轉介協調。Massive Bio表示，此次合作將加強其將尖端模型與腫瘤學專業知識結合的能力，並計劃擴展相關服務至臨床試驗情報及精準腫瘤學營運，目前其服務覆蓋全球17個國家。</p>
                 <div class="article-meta">
                     <span class="article-source">Bastillepost</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.finance.yahoo.com/news/%E9%A6%AC%E6%96%AF%E5%85%8B%E8%B6%85%E7%B4%9A%E6%99%B6%E7%89%87%E5%BB%A0%E8%A8%88%E5%8A%83%E8%90%BD%E5%AF%A6-168%E5%84%84%E7%BE%8E%E5%85%83%E5%B7%A5%E5%BB%A0%E7%A2%BA%E8%AA%8D%E8%90%BD%E6%88%B6%E5%BE%B7%E5%B7%9E-152259091.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="1080c961bf890de15392abe7c1647eba" data-category="business" data-region="hk">
             <div class="article-image"><img src="https://i-invdn-com.investing.com/news/LYNXNPEAB20CL_M.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">馬斯克超級晶片廠計劃落實:168億美元工廠確認落戶德州</h3>
-                <p class="article-description">Investing.com - 伊隆·馬斯克(Elon Musk)打造全球最大半導體工廠的雄心壯志,如今正式邁入實施階段。德州州長葛雷格·雅培(Greg Abbott)日前與SpaceX及特斯拉(Tesla)聯合宣布,一座名為「Terafab」的大型垂直整合晶片製造廠,將在德州格萊姆斯縣(Grimes Count...</p>
+                <p class="article-description">馬斯克旗下特斯拉與SpaceX組成合資企業，正式確認在德州格萊姆斯縣興建名為「Terafab」的大型垂直整合晶片製造廠。第一期工程投資額達168億美元，分析師估計全部階段完成後總投資可能超過1,190億美元。德州州政府提供3,000萬美元企業基金補助及稅務減免優惠。廠房佔地1億平方英尺，預計創造3,000個高薪職位，優先聘用當地人才。該廠將在英特爾製造支援下，以統一人工智能平台運營，按需分配產能用…</p>
                 <div class="article-meta">
                     <span class="article-source">Yahoo Finance</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.bastillepost.com/hongkong/article/16519835-%E7%9A%87%E5%AE%B6%E9%A6%AC%E5%BE%B7%E9%87%8C%E7%B0%BD%E4%B8%8B%E8%B1%A1%E7%89%99%E6%B5%B7%E5%B2%B8%E6%96%B0%E6%98%9F%E8%BF%AA%E5%A5%A7%E6%9B%BC%E5%BE%B7-%E9%81%94%E6%88%90%E4%B8%83%E5%B9%B4%E5%90%88" target="_blank" class="article-card" data-category="top, sports" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="68ec12f1351d297f98150ba4f2a166e3" data-category="top, sports" data-region="hk">
             <div class="article-image"><img src="https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/dc9262582ef66154fd204dafcd114a84_Norway_Ivory_Coast_WCup_Soccer_4_667_FB.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">皇家馬德里簽入科特迪瓦國腳恩迪奧曼德 達成七年合約</h3>
-                <p class="article-description">皇家馬德里已與萊比錫達成協議,轉會簽入科特迪瓦年輕國腳恩迪奧曼德。 這支西班牙勁旅周四表示,這名19歲前鋒未來七個球季將效力球會。 恩迪奧曼德在世界盃表現出色,據報部分英超球隊有意羅致他。萊比錫此前一直表示他是非賣品。 科特迪瓦在世界盃三十二強賽事中,遭挪威淘汰出局。 萊比錫體育總監馬塞爾沙費爾表示,恩迪奧曼德「從第一天起,他的無憂無慮態度、學習意願及勇氣已令我們留下深刻印象」。 他續指:「他迅速在最高水平站穩陣腳,展示其速度、盤球技術及入球威脅。」 馬塞爾沙費爾表示,球會為恩迪奧曼德的表現「獲得國際間廣泛關注」感到自豪。 據報巴黎聖日耳門亦有意羅致這名年輕前鋒。 目前尚不清楚恩迪奧曼德最初會否註冊為皇馬B隊球員。 皇馬一線隊自上季表現令人失望後已重組。新簽入的球員將由摩連奴執教,包括進攻中場貝拿度施華、中堅伊巴希馬干拿迪、右閘丹素丹費斯及左閘馬克古古列拿。 (美聯社)</p>
+                <p class="article-description">皇家馬德里宣布與德甲萊比錫達成轉會協議，簽入19歲科特迪瓦前鋒恩迪奧曼德，雙方達成七年合約。這名年輕國腳在今夏世界盃表現出色，吸引英超及巴黎聖日耳門等球會關注，萊比錫此前曾稱其為非賣品。萊比錫體育總監讚揚他態度積極、學習意願強，並具速度及盤球技術。恩迪奧曼德將加盟由摩連奴執教、今季重組的皇馬一線隊，暫未確定會否先註冊為B隊球員。</p>
                 <div class="article-meta">
                     <span class="article-source">Bastillepost</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60377639/%E6%B5%81%E6%84%9F-%E7%94%B7%E7%AB%A5%E6%9F%93%E7%94%B2%E6%B5%81%E4%BA%A1-%E8%A1%9E%E7%94%9F%E7%BD%B2-%E9%83%A8%E5%88%86%E7%BD%95%E8%A6%8B%E5%9F%BA%E5%9B%A0%E7%95%B0%E5%B8%B8%E5%BC%95%E7%99%BC%E7%B4%B0%E8%83%9E%E5%9B%A0%E5%AD%90%E9%A2%A8%E6%9A%B4" target="_blank" class="article-card" data-category="health" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="1e4b9a7138807b6ce9ea51546a0e97ee" data-category="health" data-region="hk">
             <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20250413/988114626816249856503742.jpeg/yjspv4l9IWr_P5VOdpDgBLXvjuVcC54eIRvUBCEb1AQ" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">流感|男童染甲流亡 衞生署:部分罕見基因異常引發細胞因子風暴</h3>
-                <p class="article-description">衞生署衞生防護中心周二(4日)公佈,一名7歲男童確診感染甲型流感H3後病情惡化,至周二不治,為今年首宗兒童流感死亡個案。亞洲兒童傳染病學會會</p>
+                <p class="article-description">衞生防護中心公布，一名7歲男童感染甲型H3流感後病情惡化，周二不治，為今年首宗兒童流感死亡個案。亞洲兒童傳染病學會會長關日華指出，社區流感抗體水平偏低，加上病毒可能基因變異，可誘發罕見的「細胞因子風暴」，令病情在一天內急劇惡化。中心補充，部分罕見遺傳或基因異常會令兒童感染流感時出現過度炎症反應，尤其影響腦部，惟確切機制尚未明確。最新監測顯示，本港流感陽性檢測以甲型H3及H1各佔45%為主，乙型佔10%，病毒株與全球流行情況相若，無證據顯示會引致更嚴重疾病。</p>
                 <div class="article-meta">
                     <span class="article-source">Hk01.com</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60377549/%E5%91%82%E6%80%9D%E7%B7%AF%E8%95%AD%E7%A7%89%E6%B2%BB%E7%82%BA%E8%8A%B1%E8%93%AE%E9%87%91%E9%87%9D%E8%8A%B1%E5%AD%A3%E7%AB%99%E5%8F%B0-%E8%B1%AA%E6%B0%A3%E5%8A%A0%E7%A2%BCmv%E9%A0%90%E7%AE%97%E5%B1%95%E5%85%84%E5%BC%9F%E6%83%85" target="_blank" class="article-card" data-category="entertainment" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="86325b69e7e28bf7d84bc7bb1115a1c6" data-category="entertainment" data-region="hk">
             <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20260806/1162080777819656192840356.jpeg/ZkTVCqABdlKKgdqZKgKxp9XI_cf7AXe0RO4J-kTuCfo" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">呂思緯蕭秉治為花蓮金針花季站台 豪氣加碼MV預算展兄弟情</h3>
-                <p class="article-description">鼓鼓呂思緯、蕭秉治出席「2026花蓮金針花季」記者會,為暖身活動《花開富玉-山谷裡的金黃色花海》於台北車站一樓大廳正式揭開序幕。兩人一連帶來</p>
+                <p class="article-description">鼓鼓呂思緯與蕭秉治出席「2026花蓮金針花季」記者會，於台北車站為活動揭幕，現場演唱多首歌曲並體驗製作金針花料理，推廣花蓮在地特色。兩人宣布8月8日將與品冠、丁噹等歌手參加富里「漫遊富里983」音樂市集。蕭秉治因喜愛鼓鼓新歌〈警戒線〉，主動加碼MV預算力挺，並答應客串其新專輯MV，展現深厚兄弟情誼。鼓鼓巡演12月26日於台北流行音樂中心登場，蕭秉治巡演最終站則於12月12日在上海舉行。</p>
                 <div class="article-meta">
                     <span class="article-source">Hk01.com</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.stheadline.com/society/3601756/%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83%E5%BE%8B%E5%B8%AB%E6%9C%83%E4%BA%A4%E5%BB%BA%E8%AD%B0%E6%9B%B8-%E5%BC%B7%E8%AA%BF%E7%99%BC%E5%B1%95%E9%A0%88%E4%BB%A5%E6%B3%95%E5%BE%8B%E5%85%88%E8%A1%8C-%E7%9B%A3%E5%AF%9F%E5%85%A8%E7%90%83AI%E7%9B%A3%E7%AE%A1%E8%B6%A8%E5%8B%A2" target="_blank" class="article-card" data-category="top, business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="2e4eb4c386c38756d3d684541f8e3306" data-category="top, business" data-region="hk">
             <div class="article-image"><img src="https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/8de4ba6c5a62c7bb574f9f01d8b3fe66/2026-08/NB260615CGO20THUMB.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">五年規劃|律師會交建議書 強調發展須以「法律先行」 監察全球AI監管趨勢</h3>
-                <p class="article-description">政府正就香港首份「五年規劃」進行公眾諮詢。香港律師會今日(6日)提交意見書,強調各項經濟與社會發展願景必須以「法律先行」(law comes first)為落實原則。律師會強調,清晰、可預測且具國際公信力的法律框架是吸引投資和推動創新的核心條件,會方又就北部都會區、財富管理、爭議解決及體育法等領域提出多項戰略建議。 精簡北都發展程序時 須兼顧程序公義及環境保護 在土地及基建發展方面,律師會支持全速</p>
+                <p class="article-description">香港律師會就政府「五年規劃」公眾諮詢提交意見書，強調各項發展須以「法律先行」為原則，認為清晰且具國際公信力的法律框架是吸引投資及推動創新的核心。會方支持加快北部都會區發展，但提醒精簡程序時須兼顧程序公義、環境保護及公眾參與。律師會亦建議推廣香港國際仲裁中心地位，為數碼資產及ESG等新興領域設立專家名冊，並把握國際調解院落戶契機試行行業調解計劃。為鞏固財富管理樞紐地位，建議港交所牽頭建立統一監管框架…</p>
                 <div class="article-meta">
                     <span class="article-source">Stheadline</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60377601/%E7%A6%81%E5%94%AE%E8%99%95%E6%96%B9%E6%97%A5%E6%9C%AC%E6%AD%A2%E7%97%9B%E8%97%A5-%E9%86%AB%E5%AD%B8%E7%95%8C%E6%8C%87%E4%B8%A6%E7%84%A1-%E7%A5%9E%E8%97%A5-%E6%B8%AF%E6%9C%89%E5%94%AE%E6%88%90%E5%88%86%E7%9B%B8%E5%90%8C%E8%97%A5%E5%93%81" target="_blank" class="article-card" data-category="health" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="0ae26b0096e73fa298ec84e0ac962b1d" data-category="health" data-region="hk">
             <div class="article-image"><img src="https://cdn.hk01.com/di/media/images/dw/20260806/1162106810472075264970863.jpeg/yr-wtn0zK1JcVa3ENKiWjQfgpb26qAnF0ugGhvfoBoY" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">禁售處方日本止痛藥|醫學界指並無「神藥」 港有售成分相同藥品</h3>
-                <p class="article-description">衞生署昨日及今日(5日及6日)在全港多區展開執法行動,打擊非法售賣及管有未經註冊藥物,兩日共檢獲240盒含有受管制成分、但屬未在本港註冊的藥品</p>
+                <p class="article-description">衞生署於8月5日至6日在全港多區展開執法行動，打擊非法售賣未經註冊藥物，共檢獲240盒含受管制成分的藥品，包括港人遊日熱門的大正製藥感冒藥及EVE QUICK頭痛藥，涉及七間店舖。醫衛界立法會議員林哲玄指問題存在20年屢禁不止，建議加強罰則，包括永久釘牌及視案情提升至犯毒層次，並強調無「神藥」，任何有效藥物均有副作用，曾有用戶長期服用未經處方類固醇消炎藥致嚴重胃穿孔。香港醫院藥劑師學會會長蘇曜華表…</p>
                 <div class="article-meta">
                     <span class="article-source">Hk01.com</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.finance.yahoo.com/news/%E6%98%8E%E5%9F%BA%E9%86%AB%E9%99%A2-02581-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A92081%E8%90%AC%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3%E8%B7%8C57-26-%E4%B8%8D%E6%B4%BE%E6%81%AF-151050908.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="3acf5514c901df8cd78f28f32b6755a2" data-category="business" data-region="hk">
             <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">明基醫院(02581)中期純利2081萬元人民幣跌57.26% 不派息</h3>
-                <p class="article-description"><匯港通訊> 明基醫院集團股份有限公司(02581)公布截至2026年6月30日止中期業績:股東應佔溢利: 2081.4萬元人民幣, 同比跌 57.26% (去年同期純利4870.4萬元人民幣)每股盈利: 0.07元人民幣派息: 無(WH)</p>
+                <p class="article-description">明基醫院集團（02581）公布截至2026年6月30日止中期業績，期內股東應佔溢利為2081.4萬元人民幣，按年下跌57.26%，去年同期純利為4870.4萬元人民幣。每股盈利0.07元人民幣，不派息。</p>
                 <div class="article-meta">
                     <span class="article-source">Yahoo Finance</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://hk.finance.yahoo.com/news/%E6%B1%9F%E8%A5%BF%E9%8A%80%E8%A1%8C-01916-hk-%E5%BB%BA%E8%AD%B0%E9%9D%9E%E5%85%AC%E9%96%8B%E7%99%BC%E8%A1%8C%E5%85%A7%E8%B3%87%E8%82%A1%E5%8F%8Ah%E8%82%A1-150939999.html" target="_blank" class="article-card" data-category="business" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="f8044c710b230bb26152484d8b32afc2" data-category="business" data-region="hk">
             <div class="article-image"><img src="https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">江西銀行(01916.HK)建議非公開發行內資股及H股</h3>
-                <p class="article-description">江西銀行(01916.HK)公布,建議通過特別授權向特定對象發行不超過2.15億股H股及發行不超過7.15億股內資股。集資淨額將全部用於補充核心一級資本。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com</p>
+                <p class="article-description">江西銀行(01916.HK)公布，計劃通過特別授權向特定對象非公開發行不超過2.15億股H股及不超過7.15億股內資股，集資淨額將全部用於補充核心一級資本。</p>
                 <div class="article-meta">
                     <span class="article-source">Yahoo Finance</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.bastillepost.com/hongkong/article/16515381-%E9%99%B3%E6%B3%95%E6%8B%89%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%9F%B7%E5%B0%8E%E7%9F%AD%E7%89%87%E3%80%8Abloodline%E3%80%8B%E5%85%A5%E5%9C%8D51%E5%B1%86%E5%A4%9A%E5%80%AB%E5%A4%9A%E5%9C%8B%E9%9A%9B%E9%9B%BB" target="_blank" class="article-card" data-category="top, entertainment" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="262c912263c1c9b45d9654b5dee07155" data-category="top, entertainment" data-region="hk">
             <div class="article-image"><img src="https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260806_FB_EN_Chan_source-web_.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">陳法拉第二部執導短片《Bloodline》入圍51屆多倫多國際電影節 集荷里活頂級班底打造年代驚慄片</h3>
-                <p class="article-description">不斷突破自我的陳法拉繼八年前首度執導兼主演短片《人來人往》(入選「辛丹斯電影節香港短片比賽」九部得獎短片之一)後,再下一城,其自編自導的最新短片作品《Bloodline》(血脈),正式入選被譽為世界五大影展之一丶第51屆多倫多國際電影節(51st Toronto International Film Festival)的 Short Cuts 競賽單元,並將於9月14日在多倫多舉行全球首映。 談及作品入選的感受,陳法拉難掩興奮,並感恩自己人緣頗佳:「能夠憑藉這部短片入圍真的感到非常榮幸!非常感激許多人的鼎力相助!無論是配樂還是剪接,大家都是義不容辭地前來幫忙。我發現原來自己的人緣還不錯,向這麼多朋友開口,每個人都爽快地答應了!」 《Bloodline》(血脈)是一部年代的驚慄劇情片,故事發生在1950的美國,核心圍繞著華人移民在海外的生活,因世代相傳且難以磨滅的創傷而展開。 從首部作品《人來人往》猶如學生短片般的克難規模,到今次《Bloodline》(血脈)以專業水準的製作登陸國際大舞台,陳法拉直言這是一場「人情大動員」。她笑言自己幾乎「拍爛膊頭」邀請了許多先前在荷里活多部電影中合作過、並已成為好友的幕後精英來協助,包括配樂、剪接等工作人員全都是業內專業人士,許多人甚至沒有收取酬勞,純粹以義氣相挺,心存感激! 有關演出陣容,在戲中飾演兄妹的兩位美國華籍演員分別是曾演出《功夫夢:傳奇少年》(Karate Kid: Legends)的王璞存(王班/Ben Wang)及 Michelle Mao (最新作品Netflix 劇集 Bridgerton 第4季)。此外,其中一位監製去年與法拉一同為《小人物之歌》出席多倫多電影節,今年大家卻一齊合作,憑《Bloodline》(血脈)入圍影展,心情倍感開心。最令法拉感到驚喜與感激的是,荷里活著名演員哥連法奴(Colin Farrell)及其資深影視製片人家姐 Claudine Farrell ,亦為今次短片擔任監製,兩姐弟更親自到場探班,並在劇本與選角上給予了極為寶貴的意見,令整個製作水準大幅提升。 在拍攝方面,短片主要取景於加州洛杉磯附近一帶及沙漠地區。儘管需要面對惡劣的天氣與環境,拍攝過程相當艱辛,但幸好團隊合作無間,最終得以順利完成。除了幕後團隊的無私奉獻外,亦全賴眾多贊助商及投資人的信任與支持,方能成就這部國際級短片。 《Bloodline》(血脈)將於9月14日在多倫多舉行全球首映,備受各地觀眾期待。</p>
+                <p class="article-description">陳法拉自編自導的第二部短片《Bloodline》（血脈）入圍第51屆多倫多國際電影節Short Cuts競賽單元，將於9月14日在多倫多全球首映。影片為1950年代美國背景的驚慄劇情片，講述華人移民因世代創傷而展開的故事。製作獲荷里活頂級班底義助，包括哥連法奴及其姊Claudine Farrell擔任監製，演員有王璞存（Ben Wang）及Michelle Mao。法拉感激各方支持，指團隊在惡劣環境下完成拍攝。她2019年首部執導短片《人來人往》曾入選辛丹斯電影節香港短片比賽得獎名單。</p>
                 <div class="article-meta">
                     <span class="article-source">Bastillepost</span>
                     <span class="article-date">📅 2026-08-06</span>
                 </div>
             </div>
         </a>
-        <a href="https://www.stheadline.com/film-drama/3601732/%E5%90%B3%E5%BB%BA%E8%B1%AA48%E6%AD%B2%E5%89%8D%E5%A4%95%E5%A4%AB%E5%A6%BB%E5%90%88%E7%85%A7%E9%A6%96%E5%85%AC%E9%96%8B-%E6%97%A5%E6%98%9F%E6%84%9B%E5%A6%BB%E8%8D%92%E5%8D%B7%E7%B9%AA%E7%BE%8E%E7%94%9C%E8%B5%B4%E6%9B%BC%E8%B0%B7%E8%B2%BC%E8%BA%AB%E6%92%90%E8%80%81%E5%85%AC" target="_blank" class="article-card" data-category="top, entertainment" data-region="hk">
+        <a href="javascript:void(0)" class="article-card" data-modal-id="842280a461f99438d296e0ed24a2bb9e" data-category="top, entertainment" data-region="hk">
             <div class="article-image"><img src="https://image.hkhl.hk/f/1200p0/0x0/100/none/f04ce3cbd0b2e07e02ab243c32465905/2026-08/KF_29.jpg" alt="" onerror="this.src='/default-news.jpg'"></div>
             <div class="article-content">
                 <h3 class="article-title">吳建豪48歲前夕夫妻合照首公開 日星愛妻荒卷繪美甜赴曼谷貼身撐老公</h3>
-                <p class="article-description">正舉行F4《F✦FOREVER恆星之城》演唱會的男星吳建豪,明日48歲生日,日前吳建豪與言承旭、周渝民及五月天的阿信到泰國曼谷進行巡迴演唱會時,吳建豪的日本女星新婚妻荒卷繪美(Emi Aramaki),被發現在台下支持老公,兩人婚後的首度同框照亦同時曝光。 吳建豪晒婚戒相報喜 吳建豪於今年6月突然宣布再婚消息,晒出與太太戴上婚戒的牽手相分享喜訊,而女方的身份其後曝光是日本女星荒卷繪美。由於吳建豪從</p>
+                <p class="article-description">吳建豪於48歲生日前夕，與F4成員言承旭、周渝民及五月天阿信在泰國曼谷舉行演唱會，其日籍新婚妻子荒卷繪美現身台下支持，夫妻婚後首張同框照曝光。吳建豪今年6月宣布再婚，女方身份其後揭曉為日本女星。照片中荒卷繪美低調坐在觀眾席，手持應援棒隨音樂搖擺；另一張合照中吳建豪攬著太太肩膀，兩人外型登對。吳建豪曾於2013年與新加坡富商千金石貞善結婚，2018年正式離婚，結束5年婚姻。</p>
                 <div class="article-meta">
                     <span class="article-source">Stheadline</span>
                     <span class="article-date">📅 2026-08-06</span>
@@ -44207,6 +44429,1087 @@
     </div>
 </section>
 
+<div class="news-modal" id="modal-162803db52f3013e" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('162803db52f3013e')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('162803db52f3013e')">✕</button>
+            <h2 class="news-modal-title">美股走勢丨道指收市跌464點 SpaceX反彈逾6%</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">美股周四收市下跌，道指挫464點或0.85%，報53885點；標指跌0.18%，納指跌0.06%。市場受聯儲局主席沃什可能加息的傳聞影響，加上國際油價及美債息回升，削弱股市動力。SpaceX股價反彈6.1%，Alphabet擬發債最多250億美元，股價跌1.3%。摩根大通行政總裁戴蒙警告金融市場槓桿偏高，可能引發恐慌。美國上周新領失業救濟人數19.9萬，少過預期。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478161/%E7%BE%8E%E8%82%A1%E8%B5%B0%E5%8B%A2%E4%B8%A8%E9%81%93%E6%8C%87%E6%94%B6%E5%B8%82%E8%B7%8C464%E9%BB%9E+SpaceX%E5%8F%8D%E5%BD%88%E9%80%BE6%25" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-1d01fe2937996c50" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('1d01fe2937996c50')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('1d01fe2937996c50')">✕</button>
+            <h2 class="news-modal-title">埃及女星涉毒被判死刑 案件震驚社會</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">埃及開羅刑事法院近日對一宗大型毒品案作出判決，知名女星Sarah Khalifa與另外12名被告被判處死刑。該案涉及跨國犯罪集團，警方去年4月拘捕28人，查獲逾750公斤毒品原料及製毒設備。一審判決須經國家最高宗教機構「大穆夫提」提出意見，預計9月5日裁決，案件仍可上訴。現年32歲的Khalifa因與演藝及足球界人士緋聞而具知名度，社交媒體追蹤者超過300萬。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478158/%E5%9F%83%E5%8F%8A%E5%A5%B3%E6%98%9F%E6%B6%89%E6%AF%92%E8%A2%AB%E5%88%A4%E6%AD%BB%E5%88%91+%E6%A1%88%E4%BB%B6%E9%9C%87%E9%A9%9A%E7%A4%BE%E6%9C%83" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-02e60ddb21312772" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('02e60ddb21312772')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('02e60ddb21312772')">✕</button>
+            <h2 class="news-modal-title">盈警丨華領醫藥料中期轉虧3020萬人民幣</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">華領醫藥（02552）發盈警，預期截至6月底止六個月錄得虧損約3020萬元人民幣，相對2025年同期溢利約11.84億元。虧損主因終止拜耳合約後，缺少一次性解除合約負債約12.44億元收入。撇除非經常性項目，經調整虧損約5960萬元，按年收窄約2940萬元，受惠收入增加及毛利率改善。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/announcement/article/4478198/%E7%9B%88%E8%AD%A6%E4%B8%A8%E8%8F%AF%E9%A0%98%E9%86%AB%E8%97%A5%E6%96%99%E4%B8%AD%E6%9C%9F%E8%BD%89%E8%99%A73020%E8%90%AC%E4%BA%BA%E6%B0%91%E5%B9%A3" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-1bbf3d086abadd55" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('1bbf3d086abadd55')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('1bbf3d086abadd55')">✕</button>
+            <h2 class="news-modal-title">國際早班車丨SpaceX IPO首批股份即將解禁 股價或面臨更大壓力</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">SpaceX早期投資者股份鎖定期將於周四屆滿，首次迎來套現機會，股價或面臨更大壓力。公司於得州格賴姆斯縣興建的Terafab晶片設施，首階段資本開支達168億美元。美股方面，道指收市跌464點，SpaceX逆市反彈6.1%。其他消息包括：蘋果據傳因供應鏈瓶頸搶購DRAM，以確保新iPhone供應；特朗普簽令對進口多晶矽加徵關稅；伊朗據報在霍爾木茲海峽打擊敵對目標；埃及女星涉毒被判死刑。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478194/%E5%9C%8B%E9%9A%9B%E6%97%A9%E7%8F%AD%E8%BB%8A%E4%B8%A8SpaceX+IPO%E9%A6%96%E6%89%B9%E8%82%A1%E4%BB%BD%E5%8D%B3%E5%B0%87%E8%A7%A3%E7%A6%81+%E8%82%A1%E5%83%B9%E6%88%96%E9%9D%A2%E8%87%A8%E6%9B%B4%E5%A4%A7%E5%A3%93%E5%8A%9B" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-67555cda1958c9d9" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('67555cda1958c9d9')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('67555cda1958c9d9')">✕</button>
+            <h2 class="news-modal-title">OpenAI明年擬推智能音箱 iPhone設計之父操刀</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">OpenAI正加速開發首款消費級硬件，計劃明年推出一款形如甜甜圈、大小如冰球的無屏幕智能音箱，定價300至400美元。該設備由蘋果前設計總監Jony Ive旗下LoveFrom工作室操刀，採用高端金屬材質，內建攝影機與感應器，能學習用戶習慣並進行擬人化互動，被視為取代智能手機的第一步。OpenAI去年斥資65億美元收購Ive創辦的io Products，吸納多名蘋果前設計師及工程師，蘋果為此興訟，指控OpenAI盜用商業機密，並已申請禁制令，若獲批或影響新產品發布。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478189/OpenAI%E6%98%8E%E5%B9%B4%E6%93%AC%E6%8E%A8%E6%99%BA%E8%83%BD%E9%9F%B3%E7%AE%B1+iPhone%E8%A8%AD%E8%A8%88%E4%B9%8B%E7%88%B6%E6%93%8D%E5%88%80" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-34c3c95f3280cbed" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('34c3c95f3280cbed')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('34c3c95f3280cbed')">✕</button>
+            <h2 class="news-modal-title">特朗普宣布對多晶矽及衍生品加徵關稅</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">美國總統特朗普簽署行政令，依據《1962年貿易擴展法》第232條，對進口多晶矽及衍生產品實施最低進口價格及額外關稅，以支持本土半導體和太陽能供應鏈。多晶矽最低進口價定為每公斤21美元，相關產品另加徵15%從價關稅，措施於12月4日生效。華府同時授權商務部推出「回流美國」激勵計劃，企業若承諾在2029年1月20日前動工興建或擴建相關生產設施，可申請豁免部分關稅。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478183/%E7%89%B9%E6%9C%97%E6%99%AE%E5%AE%A3%E5%B8%83%E5%B0%8D%E5%A4%9A%E6%99%B6%E7%9F%BD%E5%8F%8A%E8%A1%8D%E7%94%9F%E5%93%81%E5%8A%A0%E5%BE%B5%E9%97%9C%E7%A8%85" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-739157890dff26f3" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('739157890dff26f3')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('739157890dff26f3')">✕</button>
+            <h2 class="news-modal-title">伊朗據報在霍爾木茲海峽打擊敵對目標</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">據伊朗法爾斯通訊社報道，伊朗在霍爾木茲海峽對敵對目標實施打擊，格什姆島傳出爆炸聲。沙特官員指伊朗正策劃攻擊沙特，已觀測到無人機與導彈調運，潛在目標或涉及能源設施、港口及機場，強調將採取一切必要措施應對。沙特與美國合作維持高水平。美國總統特朗普稱伊朗難以持久，並表示霍爾木茲海峽重開協議尚未正式達成，但海峽已部分開放，美方正參與談判，進展良好。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478173/%E4%BC%8A%E6%9C%97%E6%93%9A%E5%A0%B1%E5%9C%A8%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E6%89%93%E6%93%8A%E6%95%B5%E5%B0%8D%E7%9B%AE%E6%A8%99" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-492ad5c33ffc805f" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('492ad5c33ffc805f')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('492ad5c33ffc805f')">✕</button>
+            <h2 class="news-modal-title">晶片供應短缺 輝達擬降Rubin Ultra記憶體配置</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">輝達（Nvidia）因高頻寬記憶晶片（HBM）供應短缺，正考慮在下一代圖形處理器Rubin Ultra上採用低於原計劃的記憶體配置。過去數周，輝達已測試至少三個版本的Rubin Ultra顯示卡，部分記憶體規格低於最初公佈。此舉源於高端記憶晶片供應可能無法滿足原始設計需求，記憶體縮減雖影響效能，但輝達可透過其他方式彌補。成本上漲已在科技產業引發連鎖反應，蘋果等公司亦因此上調硬件售價。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478164/%E6%99%B6%E7%89%87%E4%BE%9B%E6%87%89%E7%9F%AD%E7%BC%BA+%E8%BC%9D%E9%81%94%E6%93%AC%E9%99%8DRubin+Ultra%E8%A8%98%E6%86%B6%E9%AB%94%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-aba226ea6f2c6a15" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('aba226ea6f2c6a15')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('aba226ea6f2c6a15')">✕</button>
+            <h2 class="news-modal-title">中東局勢丨伊朗推進霍峽通行規則法案 擬禁美以船隻通行</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">伊朗正推進一項涉及霍爾木茲海峽通行規則的法案，擬禁止美國、以色列及敵對國家船隻通過該海峽，同時禁止與以色列相關的軍民物資過境。法案由伊朗國家安全委員會審查，違規者最高可被罰款貨物價值的20%。伊朗政府將與武裝部隊合作，負責航行引導、船舶監控及波斯灣安全。草案仍處於專家審查階段。此外，伊朗計劃對過境船隻收取貨物價值5%至7%的費用，阿曼建議較低的3%，美國則反對任何收費，強調海峽為國際水道，任何一方無權控制或設限。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478160/%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E4%B8%A8%E4%BC%8A%E6%9C%97%E6%8E%A8%E9%80%B2%E9%9C%8D%E5%B3%BD%E9%80%9A%E8%A1%8C%E8%A6%8F%E5%89%87%E6%B3%95%E6%A1%88+%E6%93%AC%E7%A6%81%E7%BE%8E%E4%BB%A5%E8%88%B9%E9%9A%BB%E9%80%9A%E8%A1%8C" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-8cf2a98205c04a4c" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('8cf2a98205c04a4c')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('8cf2a98205c04a4c')">✕</button>
+            <h2 class="news-modal-title">恒指夜期丨收報25542 高水12點</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">恒指夜市期指收報25542點，跌6點，較昨日恒指收市25530點高水12點，成交12716張。國指夜市期指收報8518點，較昨日國指收市高水19點。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/hongkong/article/4478159/%E6%81%92%E6%8C%87%E5%A4%9C%E6%9C%9F%E4%B8%A8%E6%94%B6%E5%A0%B125542+%E9%AB%98%E6%B0%B412%E9%BB%9E" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-fb5fa7769f57d3f0" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('fb5fa7769f57d3f0')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('fb5fa7769f57d3f0')">✕</button>
+            <h2 class="news-modal-title">歐股收市升0.16% 意大利股市同創新高</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">歐股周四收市普遍上升，泛歐指數Stoxx 600收報658點，升0.16%，盤中曾高見660點，創收市及即市新高；意大利富時MIB指數亦突破歷史高位。英國富時100指數收報10867點，跌0.19%；德國DAX指數微升0.05%；法國CAC 40指數升0.35%；西班牙IBEX 35指數升0.62%。市場觀望美國周五公布的非農就業數據，分析指若數據強勁，可能提高聯儲局提前加息的預期；若連續第二次疲弱，則強化鴿派論點。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478157/%E6%AD%90%E8%82%A1%E6%94%B6%E5%B8%82%E5%8D%870.16%25+%E6%84%8F%E5%A4%A7%E5%88%A9%E8%82%A1%E5%B8%82%E5%90%8C%E5%89%B5%E6%96%B0%E9%AB%98" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-6b048dc29b974b58" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('6b048dc29b974b58')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('6b048dc29b974b58')">✕</button>
+            <h2 class="news-modal-title">AI丨Terafab晶片廠首階段計劃投資168億美元</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">美國得克薩斯州州長阿博特宣佈，馬斯克旗下SpaceX在格賴姆斯縣興建的Terafab晶片設施，首階段資本開支達168億美元。該項目由SpaceX的xAI部門與特斯拉合作，目標每年生產超過1太瓦時算力。特斯拉表示，公司及SpaceX對晶片需求持續增加。馬斯克估計，特斯拉Optimus人形機械人將消耗約25%的算力產出，其餘75%供太空船AI項目使用。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478156/AI%E4%B8%A8Terafab%E6%99%B6%E7%89%87%E5%BB%A0%E9%A6%96%E9%9A%8E%E6%AE%B5%E8%A8%88%E5%8A%83%E6%8A%95%E8%B3%87168%E5%84%84%E7%BE%8E%E5%85%83" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-2505b28cf15863e6" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('2505b28cf15863e6')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('2505b28cf15863e6')">✕</button>
+            <h2 class="news-modal-title">SpaceX IPO首批股份即將解禁 股價或面臨更大壓力</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">SpaceX首批IPO股份的初始鎖定期將於周四屆滿，涉及逾9.11億股，約佔已發行股份7%，超過IPO售出的6.39億股。8月20日及9月、10月將再有股份陸續解禁。創辦人馬斯克持有逾60億股，禁售期至2027年6月。SpaceX股價周四一度升6.9%至115.75美元，其後升幅收窄，最新報110.11美元，較6月高位累跌逾50%。NFL球員Jessie Bates計劃出售持股鎖定收益，其2022年以約15萬美元購入的股份，現估值可能超過150萬美元。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478155/SpaceX+IPO%E9%A6%96%E6%89%B9%E8%82%A1%E4%BB%BD%E5%8D%B3%E5%B0%87%E8%A7%A3%E7%A6%81+%E8%82%A1%E5%83%B9%E6%88%96%E9%9D%A2%E8%87%A8%E6%9B%B4%E5%A4%A7%E5%A3%93%E5%8A%9B" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-359c9eaa3ae62922" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('359c9eaa3ae62922')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('359c9eaa3ae62922')">✕</button>
+            <h2 class="news-modal-title">中東局勢丨伊朗與阿曼就霍峽問題接近達成協議 美國未參與</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">伊朗一名高級外交官表示，伊朗與阿曼即將就霍爾木茲海峽商業航運新安排達成最終協議，但否認美國參與談判。根據協議，現有臨時南北航線將被一條新的單一航線取代，所有通行轉移至中央走廊，由伊朗管理入口，兩國共同管理出口，新航線途經伊朗領海，協議為期兩至四個月。伊朗副外長加里布阿巴迪警告，達成協議並不意味完全重新開放海峽航道。美國總統特朗普近日堅稱，重新開放這條關鍵水道的協議即將達成。社交平台有報道指，伊朗法…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478152/%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E4%B8%A8%E4%BC%8A%E6%9C%97%E8%88%87%E9%98%BF%E6%9B%BC%E5%B0%B1%E9%9C%8D%E5%B3%BD%E5%95%8F%E9%A1%8C%E6%8E%A5%E8%BF%91%E9%81%94%E6%88%90%E5%8D%94%E8%AD%B0+%E7%BE%8E%E5%9C%8B%E6%9C%AA%E5%8F%83%E8%88%87" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-3a830be79f29675a" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('3a830be79f29675a')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('3a830be79f29675a')">✕</button>
+            <h2 class="news-modal-title">嶺南大學學生會宣布解散</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">嶺南大學學生會宣布解散。該會較早前召開聯席會議，通過解散決議案，並在社交媒體發表聲明，指近年校園內外形勢出現變化，經平衡各種因素後作出此決定。嶺南大學學生會自1967年成立，會方感謝會員一直以來的支持。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478150/%E5%B6%BA%E5%8D%97%E5%A4%A7%E5%AD%B8%E5%AD%B8%E7%94%9F%E6%9C%83%E5%AE%A3%E5%B8%83%E8%A7%A3%E6%95%A3" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-d5c209cf94a9c33c" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('d5c209cf94a9c33c')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('d5c209cf94a9c33c')">✕</button>
+            <h2 class="news-modal-title">中國駐阿根廷使館:美國肆意破壞中阿合作 促停止霸權行徑</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">中國駐阿根廷使館發言人批評美國駐阿根廷使館近期蓄意炒作「中國威脅論」，以吊銷簽證方式阻止阿根廷企業與華為合作，認為此舉反映美方傲慢與偏見，嚴重破壞自由市場原則，中方堅決反對。發言人指美國標榜民主自由，卻容不下外國民營企業在第三國正常發展，虛偽本質暴露無遺。另外，人民銀行近日與阿根廷央行續簽雙邊本幣互換協議，規模1300億元人民幣/28萬億阿根廷比索，有效期由3年延至5年。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478146/%E4%B8%AD%E5%9C%8B%E9%A7%90%E9%98%BF%E6%A0%B9%E5%BB%B7%E4%BD%BF%E9%A4%A8%3A%E7%BE%8E%E5%9C%8B%E8%82%86%E6%84%8F%E7%A0%B4%E5%A3%9E%E4%B8%AD%E9%98%BF%E5%90%88%E4%BD%9C+%E4%BF%83%E5%81%9C%E6%AD%A2%E9%9C%B8%E6%AC%8A%E8%A1%8C%E5%BE%91" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-dd199f61a88b69a9" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('dd199f61a88b69a9')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('dd199f61a88b69a9')">✕</button>
+            <h2 class="news-modal-title">跑馬地私人屋苑疑有救生員用假證件 食環署報警</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">跑馬地雲地利道1至5號一個私人屋苑懷疑有救生員使用虛假證件，食環署經中國香港拯溺總會核實後，發現一名當值救生員證件資料與紀錄不符，已指示涉事泳池即時關閉，考慮檢控持牌人，並報警及通報物業管理業監管局跟進。食環署今年1至7月巡查逾1400個持牌私人泳池約7000次，核實約2100名救生員資格，自2025年加強規管以來，曾發現一宗同類違規個案。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478145/%E8%B7%91%E9%A6%AC%E5%9C%B0%E7%A7%81%E4%BA%BA%E5%B1%8B%E8%8B%91%E7%96%91%E6%9C%89%E6%95%91%E7%94%9F%E5%93%A1%E7%94%A8%E5%81%87%E8%AD%89%E4%BB%B6+%E9%A3%9F%E7%92%B0%E7%BD%B2%E5%A0%B1%E8%AD%A6" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-db42c11e84782b31" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('db42c11e84782b31')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('db42c11e84782b31')">✕</button>
+            <h2 class="news-modal-title">剛果禁止出口銅、鈷精礦 即時生效</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">剛果民主共和國即日起禁止出口銅精礦和鈷精礦，以推動礦產在國內加工，保留更多附加價值。該禁令由礦業部長、外貿部長及經濟部長於6月29日簽署，即時生效。剛果是全球最大鈷生產國及第二大銅供應國，主要營運商包括洛陽鉬業、嘉能可、華友鈷業、紫金礦業等。同時，政府針對採礦副產品推出新課稅制度，設有3個月過渡期，礦業部長可在戰略情況下批准為期一年的出口豁免。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478144/%E5%89%9B%E6%9E%9C%E7%A6%81%E6%AD%A2%E5%87%BA%E5%8F%A3%E9%8A%85%E3%80%81%E9%88%B7%E7%B2%BE%E7%A4%A6+%E5%8D%B3%E6%99%82%E7%94%9F%E6%95%88" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-5dee75d0e7b00985" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('5dee75d0e7b00985')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('5dee75d0e7b00985')">✕</button>
+            <h2 class="news-modal-title">美國兩黨指政府AI監管不力因特朗普與科技行業關係密切</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">美國兩黨罕見一致批評特朗普政府AI監管不力，認為總統與科技行業關係過於密切。前顧問班農指矽谷與白宮及國安機構關係緊密，民主黨參議員懷登則批評共和黨阻撓州級AI監管。Anthropic因拒絕將AI用於軍事監控而與政府關係惡化。科技企業已向特朗普競選捐贈逾3億美元，多名科技業人士獲任政府要職。政府雖要求OpenAI等開發商自願提交AI模型進行網絡安全測試，但細節未公布。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4478124/%E7%BE%8E%E5%9C%8B%E5%85%A9%E9%BB%A8%E6%8C%87%E6%94%BF%E5%BA%9CAI%E7%9B%A3%E7%AE%A1%E4%B8%8D%E5%8A%9B%E5%9B%A0%E7%89%B9%E6%9C%97%E6%99%AE%E8%88%87%E7%A7%91%E6%8A%80%E8%A1%8C%E6%A5%AD%E9%97%9C%E4%BF%82%E5%AF%86%E5%88%87" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-0f250501388997f6" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('0f250501388997f6')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('0f250501388997f6')">✕</button>
+            <h2 class="news-modal-title">新股IPO丨拿森科技一手中籤率8%</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">拿森科技（02261）公布招股結果，每股定價10.42元，所得款項淨額約5.33億元。公開發售部分獲超額認購2512.54倍，一手100股中籤率8%，股份明日掛牌。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/announcement/article/4478125/%E6%96%B0%E8%82%A1IPO%E4%B8%A8%E6%8B%BF%E6%A3%AE%E7%A7%91%E6%8A%80%E4%B8%80%E6%89%8B%E4%B8%AD%E7%B1%A4%E7%8E%878%25" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-6b5d73e820b90fb1" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('6b5d73e820b90fb1')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('6b5d73e820b90fb1')">✕</button>
+            <h2 class="news-modal-title">對沖基金Millennium夥Anthropic開發AI風險分析工具</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">對沖基金Millennium Management與AI初創公司Anthropic合作，開發一款由人工智能驅動的風險分析工具，並擴大Anthropic模型在公司內部的應用。雙方聲明指，Anthropic工程師將與Millennium技術及風險管理團隊共同搭建數字風險分析師工具，協助人類風險管理人員決策，並從不同資產類別發掘新風險訊息。合作亦會擴大對Anthropic最新前沿模型的測試，以Mille…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/international/article/4478102/%E5%B0%8D%E6%B2%96%E5%9F%BA%E9%87%91Millennium%E5%A4%A5Anthropic%E9%96%8B%E7%99%BCAI%E9%A2%A8%E9%9A%AA%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-1960a024f8b4428f" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('1960a024f8b4428f')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('1960a024f8b4428f')">✕</button>
+            <h2 class="news-modal-title">炒股讀心丨業績照妖鏡</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">8月6日港股表現疲弱，恒指跌逾1%，科指跌逾2%，但創科實業（00669）及稀宇科技（00100）逆市上升。創科實業中期業績理想，純利增長、毛利率擴張、現金流充裕、增加派息及啟動回購，獲多家大行上調目標價，顯示盈利支持股價。稀宇科技受惠納入港股通消息大幅反彈，但屬消息面驅動，非盈利修復，同業AI股份仍錄跌幅。作者建議業績期內選低估值高股息股份較安全，AI次新股雖回調多，但缺乏業績數據支持，需待8月下旬至9月上旬業績公布後再作判斷。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/market/article/4478056/%E7%82%92%E8%82%A1%E8%AE%80%E5%BF%83%E4%B8%A8%E6%A5%AD%E7%B8%BE%E7%85%A7%E5%A6%96%E9%8F%A1" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-157c2fd12637fc13" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('157c2fd12637fc13')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('157c2fd12637fc13')">✕</button>
+            <h2 class="news-modal-title">吳天海:九倉置業有信心增派息比率</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-07</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">九倉置業宣布今年起派息比率調升至90%，主席吳天海表示，公司經常性營運收入穩定，有信心提高派息比率，並指市道漸趨平穩，不會輕易改變派息政策。吳天海解釋，2017年上市時因樓市熾熱，故採取保守的65%派息比率，現時商業地產周期穩定，有能力提升至與房託相若水平。公司最近以溢價12%出售新加坡會德豐廣場，淨額逾67億元將用於減債，負債率降至約11%。零售方面，吳天海認為港元貶值及日圓升值有助零售市道，下…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/stock/article/4478064/%E5%90%B3%E5%A4%A9%E6%B5%B7%3A%E4%B9%9D%E5%80%89%E7%BD%AE%E6%A5%AD%E6%9C%89%E4%BF%A1%E5%BF%83%E5%A2%9E%E6%B4%BE%E6%81%AF%E6%AF%94%E7%8E%87" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-67355bf10898c156" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('67355bf10898c156')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('67355bf10898c156')">✕</button>
+            <h2 class="news-modal-title">中信証券向中信金控配股籌近186億</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">中信証券公布，按每股23.13港元向中信金控配發8.04億股新H股，佔擴大後股本約5.14%。集資總額160億元人民幣，換滙後約185.9億港元，淨額約184.13億港元，將全部留存境外用於國際化業務發展。完成後，中信金控持股比例增至約23.96%。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/announcement/article/4478051/%E4%B8%AD%E4%BF%A1%E8%A8%BC%E5%88%B8%E5%90%91%E4%B8%AD%E4%BF%A1%E9%87%91%E6%8E%A7%E9%85%8D%E8%82%A1%E7%B1%8C%E8%BF%91186%E5%84%84" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-d0ff66e933e12a7c" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('d0ff66e933e12a7c')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('d0ff66e933e12a7c')">✕</button>
+            <h2 class="news-modal-title">綠城中國首7月銷售額跌24%</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">綠城中國公布，今年首7個月合同銷售金額約655億元人民幣，按年跌23.57%，歸屬於集團的權益金額約451億元；銷售面積約200萬平方米，跌19.35%。截至7月底，累計已簽認購協議未轉銷售合同金額約18億元，權益金額約12億元。單計7月，銷售金額約54億元，按年增8%，銷售均價每平方米約3.1萬元。7月代建項目銷售金額約70億元，首7個月相關合同銷售金額約415億元。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/announcement/article/4478050/%E7%B6%A0%E5%9F%8E%E4%B8%AD%E5%9C%8B%E9%A6%967%E6%9C%88%E9%8A%B7%E5%94%AE%E9%A1%8D%E8%B7%8C24%25" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-06634004b6211fee" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('06634004b6211fee')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('06634004b6211fee')">✕</button>
+            <h2 class="news-modal-title">美高梅中國中期少賺20%</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">美高梅中國（02282）公布截至6月底止中期業績，盈利19.01億元，按年跌20.24%，每股基本盈利50.1仙，派中期息0.25元。期內經營收益173.92億元，按年升4.39%；娛樂場收益151.17億元，升3.56%，增幅主要來自主場地賭枱及角子機博彩收益增長，部分被貴賓博彩收益下降抵銷。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/announcement/article/4478014/%E7%BE%8E%E9%AB%98%E6%A2%85%E4%B8%AD%E5%9C%8B%E4%B8%AD%E6%9C%9F%E5%B0%91%E8%B3%BA20%25" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-24125c47ff9022a0" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('24125c47ff9022a0')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('24125c47ff9022a0')">✕</button>
+            <h2 class="news-modal-title">銀色債券丨中銀:息率具吸引力 可考慮申請認購20至30手</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">中銀香港個人金融產品部總經理周國昌表示，新一批銀色債券保證息率4.25厘具吸引力，預期市場反應熱烈，整體認購人數可突破30萬人。該行建議客戶按自身資產情況，可考慮申請認購20至30手。中銀客戶在認購期內透過手機銀行、網上銀行、認購熱線及全線分行認購，相關費用全免，包括豁免0.15%認購手續費、保管費、轉入轉倉費、轉出轉倉費、代收利息費，且不設存入費、提早贖回費及到期贖回費。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/hongkong/article/4477952/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B8%E4%B8%A8%E4%B8%AD%E9%8A%80%3A%E6%81%AF%E7%8E%87%E5%85%B7%E5%90%B8%E5%BC%95%E5%8A%9B+%E5%8F%AF%E8%80%83%E6%85%AE%E7%94%B3%E8%AB%8B%E8%AA%8D%E8%B3%BC20%E8%87%B330%E6%89%8B" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-fe8e9632cd8e414a" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('fe8e9632cd8e414a')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('fe8e9632cd8e414a')">✕</button>
+            <h2 class="news-modal-title">工銀亞洲完成首筆LNG跨境通人民幣結算交易</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">工銀亞洲近日聯動工行上海分行，協助中海油氣電集團國際貿易有限公司完成首筆液化天然氣「跨境通」產品試點交易的人民幣結算。該產品由中海石油氣電集團與上海石油天然氣交易中心聯合推出，實現境內外市場「掛單—採購—結算」全流程閉環管理。工銀亞洲負責境外資金清算，工行上海分行完成境內人民幣資金歸集，結算周期由數日縮短至分鐘級別，提升交易效率並避免傳統外幣結算帶來的匯兌損失。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/hongkong/article/4477951/%E5%B7%A5%E9%8A%80%E4%BA%9E%E6%B4%B2%E5%AE%8C%E6%88%90%E9%A6%96%E7%AD%86LNG%E8%B7%A8%E5%A2%83%E9%80%9A%E4%BA%BA%E6%B0%91%E5%B9%A3%E7%B5%90%E7%AE%97%E4%BA%A4%E6%98%93" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-132bacfd1b990125" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('132bacfd1b990125')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('132bacfd1b990125')">✕</button>
+            <h2 class="news-modal-title">境外保單收益徵稅丨保監局:中國居民就境外投資收益繳稅一直存在</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">針對內地傳出將境外保險保單收益納入徵稅範圍，保險業監管局表示，政府及該局正密切留意內地金融產品稅務安排的最新發展，並與業界保持緊密溝通。保監局強調，中國居民就境外投資收益依法申報及繳稅的要求一直存在，市場毋須過度解讀或揣測。局方指出，香港保險市場成熟，產品設計靈活，提供貨幣選擇、環球資產配置及財富傳承等服務，相信對內地客戶仍具吸引力。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/hongkong/article/4477932/%E5%A2%83%E5%A4%96%E4%BF%9D%E5%96%AE%E6%94%B6%E7%9B%8A%E5%BE%B5%E7%A8%85%E4%B8%A8%E4%BF%9D%E7%9B%A3%E5%B1%80%3A%E4%B8%AD%E5%9C%8B%E5%B1%85%E6%B0%91%E5%B0%B1%E5%A2%83%E5%A4%96%E6%8A%95%E8%B3%87%E6%94%B6%E7%9B%8A%E7%B9%B3%E7%A8%85%E4%B8%80%E7%9B%B4%E5%AD%98%E5%9C%A8" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-a099bcc7e395e2e6" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('a099bcc7e395e2e6')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('a099bcc7e395e2e6')">✕</button>
+            <h2 class="news-modal-title">新盤丨富豪．山峯四房4320萬售出</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">百利保與富豪國際合作發展的沙田九肚豪宅項目富豪．山峯，昨日以招標形式售出一個分層單位，成交價4320萬元。單位為第2座5樓B室，屬4房4套間隔，實用面積約2107方呎，呎價約20503元，買家可獲一個住宅車位認購權。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/property/article/4477888/%E6%96%B0%E7%9B%A4%E4%B8%A8%E5%AF%8C%E8%B1%AA%EF%BC%8E%E5%B1%B1%E5%B3%AF%E5%9B%9B%E6%88%BF4320%E8%90%AC%E5%94%AE%E5%87%BA" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-48403f0ce6993ac9" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('48403f0ce6993ac9')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('48403f0ce6993ac9')">✕</button>
+            <h2 class="news-modal-title">又一居一房月租2.45萬 回報3.2厘</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">九龍塘又一居11座低層G室，實用面積439方呎，改一房間隔，以月租2.45萬元租出，呎租約56元。中原地產指，新租客為本地分支家庭，因同類租盤稀缺，選擇以年付方式承租。業主2018年以920萬元購入，持貨8年，租金回報約3.2厘。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/property/article/4477851/%E5%8F%88%E4%B8%80%E5%B1%85%E4%B8%80%E6%88%BF%E6%9C%88%E7%A7%9F2.45%E8%90%AC+%E5%9B%9E%E5%A0%B13.2%E5%8E%98" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-16f342715123d804" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('16f342715123d804')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('16f342715123d804')">✕</button>
+            <h2 class="news-modal-title">境外保單收益徵稅丨許正宇:用家會綜合考慮決定是否買產品</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">內地據報將境外保險保單收益納入徵稅範圍，引發市場對本港保險業務的關注。財經事務及庫務局局長許正宇回應稱，港府一直透過監管部門與內地溝通政策，各地稅務安排不同，香港作為國際金融中心須遵守稅法。他指相關報道基於共同匯報標準（CRS），逾百個稅務管轄區已承諾實施自動交換資料安排，香港亦積極配合執行。許正宇強調對本港保險產品有信心，用家及投資方會綜合考慮產品設計、分銷渠道等因素作決定，市場傳聞每日都有，最重要是確保本港產品及服務維持競爭力。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/hongkong/article/4477880/%E5%A2%83%E5%A4%96%E4%BF%9D%E5%96%AE%E6%94%B6%E7%9B%8A%E5%BE%B5%E7%A8%85%E4%B8%A8%E8%A8%B1%E6%AD%A3%E5%AE%87%3A%E7%94%A8%E5%AE%B6%E6%9C%83%E7%B6%9C%E5%90%88%E8%80%83%E6%85%AE%E6%B1%BA%E5%AE%9A%E6%98%AF%E5%90%A6%E8%B2%B7%E7%94%A2%E5%93%81" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-9fedb2f7fa8c44e8" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('9fedb2f7fa8c44e8')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('9fedb2f7fa8c44e8')">✕</button>
+            <h2 class="news-modal-title">5則必讀新聞丨新一批銀債保底息4.25厘 歷來第二高</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">政府推出新一批銀色債券，發行額最多550億元，保證息率4.25厘，屬歷來第二高，8月21日起接受認購。中電控股行政總裁蔣東強表示，按目前油價走勢，短期燃料費或呈上升趨勢。太古地產行政總裁彭國邦稱，上半年內地零售組合強勁，對下半年展望有信心，本港零售組合未受北上消費潮明顯影響。花旗認為，保險股因中國擴大境外保單收益徵稅而急挫，屬恐慌驅動且跌幅過度。TikTok美國合資企業將關閉納什維爾辦公室，裁減250名員工。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/hongkong/article/4477857/5%E5%89%87%E5%BF%85%E8%AE%80%E6%96%B0%E8%81%9E%E4%B8%A8%E6%96%B0%E4%B8%80%E6%89%B9%E9%8A%80%E5%82%B5%E4%BF%9D%E5%BA%95%E6%81%AF4.25%E5%8E%98+%E6%AD%B7%E4%BE%86%E7%AC%AC%E4%BA%8C%E9%AB%98" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-7ef08453cfe6b5c8" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('7ef08453cfe6b5c8')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('7ef08453cfe6b5c8')">✕</button>
+            <h2 class="news-modal-title">匯璽開放戶短炒一年獲利90萬</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">長沙灣南昌站上蓋屋苑匯璽2A期2B座一個高層開放式單位，實用面積約267方呎，近日以600萬元易手，呎價約22472元。美聯物業指出，買家因鍾情屋苑交通便利及樓齡較新，且價錢符合預算而購入。原業主於2025年1月以約510萬元入市，持貨約一年轉手，賬面獲利約90萬元，升值約17.6%。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/property/article/4477148/%E5%8C%AF%E7%92%BD%E9%96%8B%E6%94%BE%E6%88%B6%E7%9F%AD%E7%82%92%E4%B8%80%E5%B9%B4%E7%8D%B2%E5%88%A990%E8%90%AC" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-ccf58835b6f3131d" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('ccf58835b6f3131d')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('ccf58835b6f3131d')">✕</button>
+            <h2 class="news-modal-title">七月五樓盤申請預售 涉2246伙</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">地政總署公布，7月共有5個私人住宅樓盤申請預售樓花同意書，涉及2246個單位，按月減少1026伙，跌幅約31.36%。其中遠東發展與市建局合作發展的西營盤桂香街項目涉210伙，九建牛池灣33清水灣第3A期涉411伙，嘉里建設土瓜灣銀漢街項目2期涉259伙，長實土瓜灣啟明街項目涉566伙，房協土瓜灣道資助出售房屋項目提供800伙。目前待批預售樓花同意書涉及13734伙，為2024年10月後約21個月高位。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/property/article/4477695/%E4%B8%83%E6%9C%88%E4%BA%94%E6%A8%93%E7%9B%A4%E7%94%B3%E8%AB%8B%E9%A0%90%E5%94%AE+%E6%B6%892246%E4%BC%99" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-1984a0a13131dec7" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('1984a0a13131dec7')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('1984a0a13131dec7')">✕</button>
+            <h2 class="news-modal-title">太平洋航運中期多賺逾3倍 大增派息至15.5仙</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">太平洋航運公布中期業績，截至6月底止股東應佔盈利1.05億美元，按年增長3.1倍，每股基本盈利2.06仙。公司因現金流及資產負債表穩健，派發中期息15.5港仙，按年大增8.69倍，派息比率約為期內淨溢利的100%。期內營業額11.05億美元，按年上升8.52%。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/announcement/article/4477572/%E5%A4%AA%E5%B9%B3%E6%B4%8B%E8%88%AA%E9%81%8B%E4%B8%AD%E6%9C%9F%E5%A4%9A%E8%B3%BA%E9%80%BE3%E5%80%8D+%E5%A4%A7%E5%A2%9E%E6%B4%BE%E6%81%AF%E8%87%B315.5%E4%BB%99" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-40bd2f68374181b9" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('40bd2f68374181b9')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('40bd2f68374181b9')">✕</button>
+            <h2 class="news-modal-title">上半年私樓落成量7914伙 按年跌21%</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">差餉物業估價署最新數據顯示，6月私人住宅落成量錄得3,532伙，按月大增3.37倍；上半年累計落成量7,914伙，按年下跌21.36%，僅達全年預測約46.6%。地區分布方面，新界區以5,054伙居首，佔整體64%；港島及九龍分別佔23%及13%。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/property/article/4477522/%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%A7%81%E6%A8%93%E8%90%BD%E6%88%90%E9%87%8F7914%E4%BC%99+%E6%8C%89%E5%B9%B4%E8%B7%8C21%25" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-6c3d9565d63c0b42" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('6c3d9565d63c0b42')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('6c3d9565d63c0b42')">✕</button>
+            <h2 class="news-modal-title">藥倍安心風波｜吹哨者涉起底 鄭曦琳:踢保獲無條件釋放</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">「藥倍安心」事件吹哨者鄭曦琳因涉在網上發布「起底」資訊被捕，她今日在社交平台宣布已完成「踢保」程序，獲警方無條件釋放。事件源於聖保羅男女中學學生潘浠淳以人工智能醫療輔助系統「藥倍安心」參賽獲獎，鄭曦琳公開質疑系統由第三方開發，引發學術誠信討論。今年2月，鄭曦琳因涉嫌未經當事人同意披露個人資料被捕。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4477049/%E8%97%A5%E5%80%8D%E5%AE%89%E5%BF%83%E9%A2%A8%E6%B3%A2%EF%BD%9C%E5%90%B9%E5%93%A8%E8%80%85%E6%B6%89%E8%B5%B7%E5%BA%95+%E9%84%AD%E6%9B%A6%E7%90%B3%3A%E8%B8%A2%E4%BF%9D%E7%8D%B2%E7%84%A1%E6%A2%9D%E4%BB%B6%E9%87%8B%E6%94%BE" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-c238d288052c4d13" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('c238d288052c4d13')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('c238d288052c4d13')">✕</button>
+            <h2 class="news-modal-title">新盤丨九建牛池灣項目命名33清水灣 第一期涉361伙</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">九建旗下牛池灣清水灣道33號前聖約瑟安老院重建項目正式命名為33清水灣，總樓面面積逾210萬方呎，提供逾2000伙，由5座住宅大樓組成，分5期發展。第一期涉361伙，標準戶實用面積492至1039方呎，間隔涵蓋2房至4房，現正待批預售樓花同意書，取得售樓紙後隨即推售。基座商場面積約65萬方呎，可無縫連接港鐵彩虹站。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/property/article/4477115/%E6%96%B0%E7%9B%A4%E4%B8%A8%E4%B9%9D%E5%BB%BA%E7%89%9B%E6%B1%A0%E7%81%A3%E9%A0%85%E7%9B%AE%E5%91%BD%E5%90%8D33%E6%B8%85%E6%B0%B4%E7%81%A3+%E7%AC%AC%E4%B8%80%E6%9C%9F%E6%B6%89361%E4%BC%99" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-ef1339a74b3ae1d0" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('ef1339a74b3ae1d0')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('ef1339a74b3ae1d0')">✕</button>
+            <h2 class="news-modal-title">大鬧樟宜機場丨港母子新加坡傷人襲警 分別囚半年及10天</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">信報</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">一對港人母子2024年在新加坡樟宜機場與途人發生衝突，42歲兒子陳永坤誤以為被嘲笑，情緒激動踢向65歲母親，一名69歲男子上前關心時遭其揮拳擊打後腦，導致右耳後血腫、雙膝擦傷及手指瘀傷。警員到場調查期間，母親陳瑞君拒絕交出護照並吵鬧，更咬傷警員右前臂留下1公分咬痕。兩人原定上月22日受審但缺席，法庭一度發出逮捕令，母親解釋因皮膚病發及發燒，加上無電話卡未能及時通報，兒子則求情稱深感後悔。周一（3日）當地法院分別判處母親囚6個月及兒子囚10日。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hkej.com/instantnews/current/article/4476970/%E5%A4%A7%E9%AC%A7%E6%A8%9F%E5%AE%9C%E6%A9%9F%E5%A0%B4%E4%B8%A8%E6%B8%AF%E6%AF%8D%E5%AD%90%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%82%B7%E4%BA%BA%E8%A5%B2%E8%AD%A6+%E5%88%86%E5%88%A5%E5%9B%9A%E5%8D%8A%E5%B9%B4%E5%8F%8A10%E5%A4%A9" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-a1afa0af9f3c6e6eb11b899941fd248a" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('a1afa0af9f3c6e6eb11b899941fd248a')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('a1afa0af9f3c6e6eb11b899941fd248a')">✕</button>
+            <h2 class="news-modal-title">【賽事】U20世界田徑錦標賽 美國 4x400 混合接力寫下 3:15.31 世界青年最速紀錄</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">All In Yahoo</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">2026年世界U20田徑錦標賽在美國尤金海沃德體育場揭幕，東道主美國隊在混合4x400米接力以3:15.31刷新世界U20最佳紀錄，較2022年舊紀錄快逾2秒。捷克隊與澳洲隊分獲銀銅，成績亦躋身歷史前三、四位。肯亞的Frankline Kibet與烏干達的Charity Cherop分別奪得男、女子5000米金牌，後者收穫生涯首面世界級金牌。巴西選手Alessandro Borges以20.35米個人最佳成績在男子鉛球封王，僅以40毫米之差力壓韓國選手朴時勳。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.sports.yahoo.com/news/%E8%B3%BD%E4%BA%8B-u20%E4%B8%96%E7%95%8C%E7%94%B0%E5%BE%91%E9%8C%A6%E6%A8%99%E8%B3%BD-%E7%BE%8E%E5%9C%8B-4x400-%E6%B7%B7%E5%90%88%E6%8E%A5%E5%8A%9B%E5%AF%AB%E4%B8%8B-160000170.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-6663c9ba87a8adeee1bc9420c794db9b" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('6663c9ba87a8adeee1bc9420c794db9b')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('6663c9ba87a8adeee1bc9420c794db9b')">✕</button>
+            <h2 class="news-modal-title">【健康】PURE 集團與港怡醫療 構建全新健康生態圈 Project Healthspan 正式啟動</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">All In Yahoo</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">PURE集團與港怡醫療宣布啟動名為Project Healthspan的合作項目，整合臨床醫療與健身科學專業，建構融合醫療與健康管理的綜合生態圈。項目以延長健康壽命為核心，強調透過積極規劃生活習慣來塑造健康，而非僅在疾病出現後治療。首階段推出為期14天的The Metabolic Blueprint計劃，利用連續血糖監測技術，結合港怡的醫療專業及PURE的運動、營養專家團隊，為參與者提供個人化代謝…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.sports.yahoo.com/news/%E5%81%A5%E5%BA%B7-pure-%E9%9B%86%E5%9C%98%E8%88%87%E6%B8%AF%E6%80%A1%E9%86%AB%E7%99%82-%E6%A7%8B%E5%BB%BA%E5%85%A8%E6%96%B0%E5%81%A5%E5%BA%B7%E7%94%9F%E6%85%8B%E5%9C%88-project-160000489.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-06ae24b0ed55b44f191a9a14b99e7a37" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('06ae24b0ed55b44f191a9a14b99e7a37')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('06ae24b0ed55b44f191a9a14b99e7a37')">✕</button>
+            <h2 class="news-modal-title">麥格理首予樂天「跑贏大市」評級,指盈利拐點已至</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Yahoo Finance</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">麥格理首予樂天集團「跑贏大市」評級，目標價¥1,100，認為其盈利拐點已至。該行預測樂天FY2026年收入達¥2.88萬億，按年增長15.2%，非GAAP營業利潤¥2,440億，按年增逾一倍；FY2027及FY2028年營業利潤料再增36.6%及31.8%。麥格理看好其電商、支付、銀行、證券及移動服務一體化生態系統的交叉銷售優勢，並預期10月金融業務重組有助提升融資效率及釋放估值潛力。移動業務方面…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.finance.yahoo.com/news/%E9%BA%A5%E6%A0%BC%E7%90%86%E9%A6%96%E4%BA%88%E6%A8%82%E5%A4%A9-%E8%B7%91%E8%B4%8F%E5%A4%A7%E5%B8%82-%E8%A9%95%E7%B4%9A-%E6%8C%87%E7%9B%88%E5%88%A9%E6%8B%90%E9%BB%9E%E5%B7%B2%E8%87%B3-155809246.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-7d1c04b63eb69ae54e2edfd7b2f63429" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('7d1c04b63eb69ae54e2edfd7b2f63429')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('7d1c04b63eb69ae54e2edfd7b2f63429')">✕</button>
+            <h2 class="news-modal-title">MONDEVITA 收购了 MAGLIANO 母公司 UNDERSCORE 区的多数股权,这是新的意大利奢侈品平台的第二步</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">美通社</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">MondeVita收购了米兰品牌加速器Underscore District的多数股权，后者旗下拥有Magliano、GR10K及多品牌零售商WOK Store。这是MondeVita打造意大利奢华平台的第二步，此前其已收购男装制造商Raffaele Caruso S.p.A.。交易获现有股东支持，财务条款未披露。Underscore District由Edoardo Di Luzio于2022年…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.prnasia.com/story/543246-1.shtml" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-0bd6d8cf0903fc1089182efdeced3f61" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('0bd6d8cf0903fc1089182efdeced3f61')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('0bd6d8cf0903fc1089182efdeced3f61')">✕</button>
+            <h2 class="news-modal-title">烏干達批准派兵加入加沙國際部隊</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Bastillepost</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">烏干達國會周四批准政府派兵加入加沙國際穩定部隊，這是該國首次公開表態參與相關任務。國防部長基里奧瓦·基瓦努卡在尋求支持時援引烏干達在索馬里等國的維和經驗，但部分反對派議員質疑派兵動機，議員哈桑·基魯米拉指出作為伊斯蘭合作組織成員國，此舉引發「外交憂慮」，並要求澄清軍隊作戰對象。這支部隊由特朗普和平委員會於二月提出，由美國少將賈斯珀·傑弗斯領導，規模約二萬人，將在以色列分階段撤軍後部署至加沙。特朗普上周公布的協議要求哈馬斯解除武裝，以色列則表示有「嚴重安全憂慮」。摩洛哥亦已承諾派兵參與。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.bastillepost.com/hongkong/article/16519931-%E7%83%8F%E5%B9%B2%E9%81%94%E6%89%B9%E5%87%86%E6%B4%BE%E5%85%B5%E5%8A%A0%E5%85%A5%E5%8A%A0%E6%B2%99%E5%9C%8B%E9%9A%9B%E9%83%A8%E9%9A%8A" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-c64dd202014b3ad437f5a3a9783ede66" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('c64dd202014b3ad437f5a3a9783ede66')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('c64dd202014b3ad437f5a3a9783ede66')">✕</button>
+            <h2 class="news-modal-title">IMF二把手預計日本央行將繼續推動貨幣政策正常化</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Yahoo Finance</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">國際貨幣基金組織（IMF）第一副總裁丹·卡茨表示，日本經濟復甦正為日本央行在長期超寬鬆貨幣政策後繼續推進政策正常化創造條件。卡茨指出，日本正經歷「意義深遠的長期轉型」，前首相安倍晉三推動的結構性改革開始顯現成效。他預計日本央行將採取必要措施履行通膨及支持經濟成長的使命，並稱通膨仍略高於目標水平，正常化進程將持續。卡茨曾任美國財政部幕僚長，於去年加入IMF。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.finance.yahoo.com/news/imf%E4%BA%8C%E6%8A%8A%E6%89%8B%E9%A0%90%E8%A8%88%E6%97%A5%E6%9C%AC%E5%A4%AE%E8%A1%8C%E5%B0%87%E7%B9%BC%E7%BA%8C%E6%8E%A8%E5%8B%95%E8%B2%A8%E5%B9%A3%E6%94%BF%E7%AD%96%E6%AD%A3%E5%B8%B8%E5%8C%96-155049043.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-f2fbea3b3c8c2ba1afcf919e4ae78bdc" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('f2fbea3b3c8c2ba1afcf919e4ae78bdc')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('f2fbea3b3c8c2ba1afcf919e4ae78bdc')">✕</button>
+            <h2 class="news-modal-title">MondeVita 收購 Magliano 母公司 Underscore District 的多數股權,為構建全新意大利奢侈品平台邁出第二步</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Pr Newswire Apac</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">MondeVita宣佈戰略收購米蘭品牌加速器Underscore District的多數股權，後者旗下擁有時尚品牌Magliano、GR10K及多品牌零售商WOK Store。此為MondeVita繼收購男裝製造商Raffaele Caruso後，構建意大利奢侈品平台的第二步，交易條款未披露。Underscore District成立於2022年，2025年透過全球150間零售商網絡創造逾700萬…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.prnewswire.com/apac/zh/news-releases/mondevita--magliano--underscore-district--302845182.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-a1078afb3a100b0851b5b819c6fdc76d" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('a1078afb3a100b0851b5b819c6fdc76d')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('a1078afb3a100b0851b5b819c6fdc76d')">✕</button>
+            <h2 class="news-modal-title">Piper Sandler下調AppLovin評級,指其上市以來首次未達指引目標</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Yahoo Finance</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">Piper Sandler將AppLovin評級下調至「中性」，因該公司上市以來首次未達業績指引。第二季收入指引中位數低30個點子，EBITDA低100個點子，管理層歸因於模型改進時間安排，預期第三季逆轉。分析師擔憂未來需更頻繁或更大規模的模型改進才能符合市場預期，並質疑公司能否按預期推動模型提升。Piper Sandler對管理層及市場地位仍持正面看法，但認為未來業績能否持續超預期存在疑問，電商…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.finance.yahoo.com/news/piper-sandler%E4%B8%8B%E8%AA%BFapplovin%E8%A9%95%E7%B4%9A-%E6%8C%87%E5%85%B6%E4%B8%8A%E5%B8%82%E4%BB%A5%E4%BE%86%E9%A6%96%E6%AC%A1%E6%9C%AA%E9%81%94%E6%8C%87%E5%BC%95%E7%9B%AE%E6%A8%99-153505697.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-58bea7dfb1527aa15d9d18e6d66bae23" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('58bea7dfb1527aa15d9d18e6d66bae23')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('58bea7dfb1527aa15d9d18e6d66bae23')">✕</button>
+            <h2 class="news-modal-title">SpaceX股價上漲約5%,鎖定期解除恐慌情緒消退</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Yahoo Finance</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">SpaceX股價週四盤中上漲約2%，早盤一度升幅達5%。此前約9.115億股、市值約1000億美元的股票鎖定期解除，內部人士出售限制取消，市場恐慌情緒消退。目前已有近2億股易手。此次反彈發生在公司發布首份財報後股價下跌14%的背景下，投資者此前對AI支出超預期反應負面，但華爾街分析師整體維持正面看法。鎖定期解除後，可交易股票總數從6月IPO時的6.39億股增至15.5億股。另一批鎖定期解除將於20…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.finance.yahoo.com/news/spacex%E8%82%A1%E5%83%B9%E4%B8%8A%E6%BC%B2%E7%B4%845-%E9%8E%96%E5%AE%9A%E6%9C%9F%E8%A7%A3%E9%99%A4%E6%81%90%E6%85%8C%E6%83%85%E7%B7%92%E6%B6%88%E9%80%80-153419693.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-15416501bfaf2d11527215958fcc24af" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('15416501bfaf2d11527215958fcc24af')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('15416501bfaf2d11527215958fcc24af')">✕</button>
+            <h2 class="news-modal-title">Massive Bio獲選OpenAI精選合作夥伴 推進AI精準腫瘤學應用</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Bastillepost</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">全球精準腫瘤學公司Massive Bio獲選為OpenAI合作夥伴網絡的精選合作夥伴，將與OpenAI共同開發及部署人工智能解決方案。該公司運用GPT-5.6及ChatGPT Work等技術，協助醫療系統、生物製藥公司等機構將臨床試驗方案轉化為結構化參數，支援病人預篩選及轉介協調。Massive Bio表示，此次合作將加強其將尖端模型與腫瘤學專業知識結合的能力，並計劃擴展相關服務至臨床試驗情報及精準腫瘤學營運，目前其服務覆蓋全球17個國家。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.bastillepost.com/hongkong/article/16519892-massive-bio%E7%8D%B2%E9%81%B8openai%E7%B2%BE%E9%81%B8%E5%90%88%E4%BD%9C%E5%A4%A5%E4%BC%B4-%E6%8E%A8%E9%80%B2ai%E7%B2%BE%E6%BA%96%E8%85%AB%E7%98%A4%E5%AD%B8%E6%87%89%E7%94%A8" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-1080c961bf890de15392abe7c1647eba" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('1080c961bf890de15392abe7c1647eba')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('1080c961bf890de15392abe7c1647eba')">✕</button>
+            <h2 class="news-modal-title">馬斯克超級晶片廠計劃落實:168億美元工廠確認落戶德州</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Yahoo Finance</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">馬斯克旗下特斯拉與SpaceX組成合資企業，正式確認在德州格萊姆斯縣興建名為「Terafab」的大型垂直整合晶片製造廠。第一期工程投資額達168億美元，分析師估計全部階段完成後總投資可能超過1,190億美元。德州州政府提供3,000萬美元企業基金補助及稅務減免優惠。廠房佔地1億平方英尺，預計創造3,000個高薪職位，優先聘用當地人才。該廠將在英特爾製造支援下，以統一人工智能平台運營，按需分配產能用…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.finance.yahoo.com/news/%E9%A6%AC%E6%96%AF%E5%85%8B%E8%B6%85%E7%B4%9A%E6%99%B6%E7%89%87%E5%BB%A0%E8%A8%88%E5%8A%83%E8%90%BD%E5%AF%A6-168%E5%84%84%E7%BE%8E%E5%85%83%E5%B7%A5%E5%BB%A0%E7%A2%BA%E8%AA%8D%E8%90%BD%E6%88%B6%E5%BE%B7%E5%B7%9E-152259091.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-68ec12f1351d297f98150ba4f2a166e3" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('68ec12f1351d297f98150ba4f2a166e3')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('68ec12f1351d297f98150ba4f2a166e3')">✕</button>
+            <h2 class="news-modal-title">皇家馬德里簽入科特迪瓦國腳恩迪奧曼德 達成七年合約</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Bastillepost</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">皇家馬德里宣布與德甲萊比錫達成轉會協議，簽入19歲科特迪瓦前鋒恩迪奧曼德，雙方達成七年合約。這名年輕國腳在今夏世界盃表現出色，吸引英超及巴黎聖日耳門等球會關注，萊比錫此前曾稱其為非賣品。萊比錫體育總監讚揚他態度積極、學習意願強，並具速度及盤球技術。恩迪奧曼德將加盟由摩連奴執教、今季重組的皇馬一線隊，暫未確定會否先註冊為B隊球員。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.bastillepost.com/hongkong/article/16519835-%E7%9A%87%E5%AE%B6%E9%A6%AC%E5%BE%B7%E9%87%8C%E7%B0%BD%E4%B8%8B%E8%B1%A1%E7%89%99%E6%B5%B7%E5%B2%B8%E6%96%B0%E6%98%9F%E8%BF%AA%E5%A5%A7%E6%9B%BC%E5%BE%B7-%E9%81%94%E6%88%90%E4%B8%83%E5%B9%B4%E5%90%88" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-1e4b9a7138807b6ce9ea51546a0e97ee" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('1e4b9a7138807b6ce9ea51546a0e97ee')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('1e4b9a7138807b6ce9ea51546a0e97ee')">✕</button>
+            <h2 class="news-modal-title">流感|男童染甲流亡 衞生署:部分罕見基因異常引發細胞因子風暴</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Hk01.com</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">衞生防護中心公布，一名7歲男童感染甲型H3流感後病情惡化，周二不治，為今年首宗兒童流感死亡個案。亞洲兒童傳染病學會會長關日華指出，社區流感抗體水平偏低，加上病毒可能基因變異，可誘發罕見的「細胞因子風暴」，令病情在一天內急劇惡化。中心補充，部分罕見遺傳或基因異常會令兒童感染流感時出現過度炎症反應，尤其影響腦部，惟確切機制尚未明確。最新監測顯示，本港流感陽性檢測以甲型H3及H1各佔45%為主，乙型佔10%，病毒株與全球流行情況相若，無證據顯示會引致更嚴重疾病。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60377639/%E6%B5%81%E6%84%9F-%E7%94%B7%E7%AB%A5%E6%9F%93%E7%94%B2%E6%B5%81%E4%BA%A1-%E8%A1%9E%E7%94%9F%E7%BD%B2-%E9%83%A8%E5%88%86%E7%BD%95%E8%A6%8B%E5%9F%BA%E5%9B%A0%E7%95%B0%E5%B8%B8%E5%BC%95%E7%99%BC%E7%B4%B0%E8%83%9E%E5%9B%A0%E5%AD%90%E9%A2%A8%E6%9A%B4" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-86325b69e7e28bf7d84bc7bb1115a1c6" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('86325b69e7e28bf7d84bc7bb1115a1c6')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('86325b69e7e28bf7d84bc7bb1115a1c6')">✕</button>
+            <h2 class="news-modal-title">呂思緯蕭秉治為花蓮金針花季站台 豪氣加碼MV預算展兄弟情</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Hk01.com</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">鼓鼓呂思緯與蕭秉治出席「2026花蓮金針花季」記者會，於台北車站為活動揭幕，現場演唱多首歌曲並體驗製作金針花料理，推廣花蓮在地特色。兩人宣布8月8日將與品冠、丁噹等歌手參加富里「漫遊富里983」音樂市集。蕭秉治因喜愛鼓鼓新歌〈警戒線〉，主動加碼MV預算力挺，並答應客串其新專輯MV，展現深厚兄弟情誼。鼓鼓巡演12月26日於台北流行音樂中心登場，蕭秉治巡演最終站則於12月12日在上海舉行。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60377549/%E5%91%82%E6%80%9D%E7%B7%AF%E8%95%AD%E7%A7%89%E6%B2%BB%E7%82%BA%E8%8A%B1%E8%93%AE%E9%87%91%E9%87%9D%E8%8A%B1%E5%AD%A3%E7%AB%99%E5%8F%B0-%E8%B1%AA%E6%B0%A3%E5%8A%A0%E7%A2%BCmv%E9%A0%90%E7%AE%97%E5%B1%95%E5%85%84%E5%BC%9F%E6%83%85" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-2e4eb4c386c38756d3d684541f8e3306" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('2e4eb4c386c38756d3d684541f8e3306')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('2e4eb4c386c38756d3d684541f8e3306')">✕</button>
+            <h2 class="news-modal-title">五年規劃|律師會交建議書 強調發展須以「法律先行」 監察全球AI監管趨勢</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Stheadline</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">香港律師會就政府「五年規劃」公眾諮詢提交意見書，強調各項發展須以「法律先行」為原則，認為清晰且具國際公信力的法律框架是吸引投資及推動創新的核心。會方支持加快北部都會區發展，但提醒精簡程序時須兼顧程序公義、環境保護及公眾參與。律師會亦建議推廣香港國際仲裁中心地位，為數碼資產及ESG等新興領域設立專家名冊，並把握國際調解院落戶契機試行行業調解計劃。為鞏固財富管理樞紐地位，建議港交所牽頭建立統一監管框架…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.stheadline.com/society/3601756/%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83%E5%BE%8B%E5%B8%AB%E6%9C%83%E4%BA%A4%E5%BB%BA%E8%AD%B0%E6%9B%B8-%E5%BC%B7%E8%AA%BF%E7%99%BC%E5%B1%95%E9%A0%88%E4%BB%A5%E6%B3%95%E5%BE%8B%E5%85%88%E8%A1%8C-%E7%9B%A3%E5%AF%9F%E5%85%A8%E7%90%83AI%E7%9B%A3%E7%AE%A1%E8%B6%A8%E5%8B%A2" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-0ae26b0096e73fa298ec84e0ac962b1d" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('0ae26b0096e73fa298ec84e0ac962b1d')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('0ae26b0096e73fa298ec84e0ac962b1d')">✕</button>
+            <h2 class="news-modal-title">禁售處方日本止痛藥|醫學界指並無「神藥」 港有售成分相同藥品</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Hk01.com</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">衞生署於8月5日至6日在全港多區展開執法行動，打擊非法售賣未經註冊藥物，共檢獲240盒含受管制成分的藥品，包括港人遊日熱門的大正製藥感冒藥及EVE QUICK頭痛藥，涉及七間店舖。醫衛界立法會議員林哲玄指問題存在20年屢禁不止，建議加強罰則，包括永久釘牌及視案情提升至犯毒層次，並強調無「神藥」，任何有效藥物均有副作用，曾有用戶長期服用未經處方類固醇消炎藥致嚴重胃穿孔。香港醫院藥劑師學會會長蘇曜華表…</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60377601/%E7%A6%81%E5%94%AE%E8%99%95%E6%96%B9%E6%97%A5%E6%9C%AC%E6%AD%A2%E7%97%9B%E8%97%A5-%E9%86%AB%E5%AD%B8%E7%95%8C%E6%8C%87%E4%B8%A6%E7%84%A1-%E7%A5%9E%E8%97%A5-%E6%B8%AF%E6%9C%89%E5%94%AE%E6%88%90%E5%88%86%E7%9B%B8%E5%90%8C%E8%97%A5%E5%93%81" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-3acf5514c901df8cd78f28f32b6755a2" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('3acf5514c901df8cd78f28f32b6755a2')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('3acf5514c901df8cd78f28f32b6755a2')">✕</button>
+            <h2 class="news-modal-title">明基醫院(02581)中期純利2081萬元人民幣跌57.26% 不派息</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Yahoo Finance</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">明基醫院集團（02581）公布截至2026年6月30日止中期業績，期內股東應佔溢利為2081.4萬元人民幣，按年下跌57.26%，去年同期純利為4870.4萬元人民幣。每股盈利0.07元人民幣，不派息。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.finance.yahoo.com/news/%E6%98%8E%E5%9F%BA%E9%86%AB%E9%99%A2-02581-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A92081%E8%90%AC%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3%E8%B7%8C57-26-%E4%B8%8D%E6%B4%BE%E6%81%AF-151050908.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-f8044c710b230bb26152484d8b32afc2" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('f8044c710b230bb26152484d8b32afc2')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('f8044c710b230bb26152484d8b32afc2')">✕</button>
+            <h2 class="news-modal-title">江西銀行(01916.HK)建議非公開發行內資股及H股</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Yahoo Finance</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">江西銀行(01916.HK)公布，計劃通過特別授權向特定對象非公開發行不超過2.15億股H股及不超過7.15億股內資股，集資淨額將全部用於補充核心一級資本。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://hk.finance.yahoo.com/news/%E6%B1%9F%E8%A5%BF%E9%8A%80%E8%A1%8C-01916-hk-%E5%BB%BA%E8%AD%B0%E9%9D%9E%E5%85%AC%E9%96%8B%E7%99%BC%E8%A1%8C%E5%85%A7%E8%B3%87%E8%82%A1%E5%8F%8Ah%E8%82%A1-150939999.html" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-262c912263c1c9b45d9654b5dee07155" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('262c912263c1c9b45d9654b5dee07155')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('262c912263c1c9b45d9654b5dee07155')">✕</button>
+            <h2 class="news-modal-title">陳法拉第二部執導短片《Bloodline》入圍51屆多倫多國際電影節 集荷里活頂級班底打造年代驚慄片</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Bastillepost</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">陳法拉自編自導的第二部短片《Bloodline》（血脈）入圍第51屆多倫多國際電影節Short Cuts競賽單元，將於9月14日在多倫多全球首映。影片為1950年代美國背景的驚慄劇情片，講述華人移民因世代創傷而展開的故事。製作獲荷里活頂級班底義助，包括哥連法奴及其姊Claudine Farrell擔任監製，演員有王璞存（Ben Wang）及Michelle Mao。法拉感激各方支持，指團隊在惡劣環境下完成拍攝。她2019年首部執導短片《人來人往》曾入選辛丹斯電影節香港短片比賽得獎名單。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.bastillepost.com/hongkong/article/16515381-%E9%99%B3%E6%B3%95%E6%8B%89%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%9F%B7%E5%B0%8E%E7%9F%AD%E7%89%87%E3%80%8Abloodline%E3%80%8B%E5%85%A5%E5%9C%8D51%E5%B1%86%E5%A4%9A%E5%80%AB%E5%A4%9A%E5%9C%8B%E9%9A%9B%E9%9B%BB" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+<div class="news-modal" id="modal-842280a461f99438d296e0ed24a2bb9e" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('842280a461f99438d296e0ed24a2bb9e')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('842280a461f99438d296e0ed24a2bb9e')">✕</button>
+            <h2 class="news-modal-title">吳建豪48歲前夕夫妻合照首公開 日星愛妻荒卷繪美甜赴曼谷貼身撐老公</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">Stheadline</span>
+                <span class="article-date">📅 2026-08-06</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">吳建豪於48歲生日前夕，與F4成員言承旭、周渝民及五月天阿信在泰國曼谷舉行演唱會，其日籍新婚妻子荒卷繪美現身台下支持，夫妻婚後首張同框照曝光。吳建豪今年6月宣布再婚，女方身份其後揭曉為日本女星。照片中荒卷繪美低調坐在觀眾席，手持應援棒隨音樂搖擺；另一張合照中吳建豪攬著太太肩膀，兩人外型登對。吳建豪曾於2013年與新加坡富商千金石貞善結婚，2018年正式離婚，結束5年婚姻。</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="https://www.stheadline.com/film-drama/3601732/%E5%90%B3%E5%BB%BA%E8%B1%AA48%E6%AD%B2%E5%89%8D%E5%A4%95%E5%A4%AB%E5%A6%BB%E5%90%88%E7%85%A7%E9%A6%96%E5%85%AC%E9%96%8B-%E6%97%A5%E6%98%9F%E6%84%9B%E5%A6%BB%E8%8D%92%E5%8D%B7%E7%B9%AA%E7%BE%8E%E7%94%9C%E8%B5%B4%E6%9B%BC%E8%B0%B7%E8%B2%BC%E8%BA%AB%E6%92%90%E8%80%81%E5%85%AC" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>
+
 <!-- Footer -->
 <div class="footer">
     <div class="disclaimer">
@@ -44323,5 +45626,26 @@ function clearSearch() {
     });
 </script>
 
-</body>
+<script>
+// Modal 開關
+function openModal(id) {
+    const m = document.getElementById('modal-' + id);
+    if (m) { m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeModal(id) {
+    const m = document.getElementById('modal-' + id);
+    if (m) { m.classList.remove('open'); document.body.style.overflow = ''; }
+}
+document.querySelectorAll('.article-card[data-modal-id]').forEach(card => {
+    card.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal(card.dataset.modalId);
+    });
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('.news-modal.open').forEach(m => closeModal(m.id.replace('modal-','')));
+    }
+});
+</script></body>
 </html>

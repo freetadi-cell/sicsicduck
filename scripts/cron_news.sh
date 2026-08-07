@@ -12,6 +12,15 @@ if ! python3 scripts/fetch_news.py >> /tmp/sicsicduck-news.log 2>&1; then
   exit 1
 fi
 
+# 1.5) 為新抓取嘅新聞寫摘要（RSS + newsdata.io，含 GLM 改寫，失敗不阻斷主流程）
+# 只處理近期新文章，每輪最多 10 篇，避免 quota 用罄
+if ! python3 scripts/fetch_article_body.py --all-sources 10 >> /tmp/sicsicduck-news.log 2>&1; then
+  echo "[cron_news] 摘要生成失敗（已跳過，不阻塞部署）" >> /tmp/sicsicduck-news.log
+fi
+
+# 1.6) 重新 build news.html（令最新寫好嘅摘要入頁）——唔重新抓取
+python3 scripts/fetch_news.py --build-only >> /tmp/sicsicduck-news.log 2>&1
+
 # 2) 提交變更（無變更則跳過）
 git add -A
 if git diff --staged --quiet; then
