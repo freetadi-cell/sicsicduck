@@ -159,8 +159,8 @@ def main():
     articles = load_news()
     print(f"news.json 共 {len(articles)} 篇")
 
-    # 只挑 RSS 來源（hkej 信報 / 香港經濟日報 / rthk / scmp 等本地來源）
-    rss_sources = {"信報", "香港經濟日報", "香港電台",
+    # 只挑 RSS 來源（香港經濟日報 / rthk / scmp 等本地來源）
+    rss_sources = {"香港經濟日報", "香港電台",
                    "South China Morning Post", "SCMP"}
     # --all-sources 模式：連同 newsdata.io 來源（Yahoo/明報/東網等）都處理
     all_sources = "--all-sources" in sys.argv or "-a" in sys.argv
