@@ -302,7 +302,7 @@ document.addEventListener('keydown', (e) => {
         }}
         .news-modal-body {{ border-top: 1px solid var(--gray-200); padding-top: 16px; }}
         .news-modal-rewritten {{
-            font-size: 15px; line-height: 1.75;
+            font-size: 16px; line-height: 1.75;
             color: var(--gray-800);
         }}
         .news-modal-copy {{

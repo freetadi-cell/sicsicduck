@@ -589,7 +589,7 @@ def _MODAL_CSS():
 .news-modal-title { font-size: 20px; font-weight: 800; color: #111827; margin: 4px 40px 10px 0; line-height: 1.4; }
 .news-modal-meta { display: flex; gap: 14px; align-items: center; font-size: 13px; color: #a16e12; margin-bottom: 16px; }
 .news-modal-body { border-top: 1px solid #e5e7eb; padding-top: 16px; }
-.news-modal-rewritten { font-size: 15px; line-height: 1.75; color: #1f2937; }
+.news-modal-rewritten { font-size: 16px; line-height: 1.75; color: #1f2937; }
 .news-modal-copy { margin-top: 16px; font-size: 12px; color: #6b7280; background: #fdf6e3; border-left: 3px solid #d9a928; padding: 8px 12px; border-radius: 6px; }
 .news-modal-footer { margin-top: 20px; text-align: right; }
 .news-modal-link { display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #d9a928, #b8860b); color: #fff; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; }
