@@ -35,12 +35,14 @@ UA = ("Mozilla/5.0 (compatible; SicsicDuck/1.0; +https://sicsicduck.com) "
 
 # 每篇改寫目標字數（版權安全底線：不超過 350 字自撰摘要）
 MAX_SUMMARY_CHARS = 350
-# 每輪最多處理幾篇（避免大量請求）
-BATCH_LIMIT = 20
+# 每輪最多處理幾篇（避免大量請求）；傳 0 表示無上限，全部處理
+BATCH_LIMIT = 0
 for _a in sys.argv[1:]:
     if _a.isdigit():
         BATCH_LIMIT = int(_a)
         break
+if BATCH_LIMIT and BATCH_LIMIT > 0:
+    print(f"每輪限處理 {BATCH_LIMIT} 篇（傳 0 可無上限）")
 # 只處理過去幾多天之內的文章
 RECENT_DAYS = 3
 # 兩個 API 請求間隔（秒），避免過密
@@ -192,8 +194,10 @@ def main():
             continue
         candidates.append(a)
 
-    print(f"需處理候選 {len(candidates)} 篇（取頭 {BATCH_LIMIT}）")
-    candidates = candidates[:BATCH_LIMIT]
+    print(f"需處理候選 {len(candidates)} 篇")
+    if BATCH_LIMIT > 0:
+        print(f"（取頭 {BATCH_LIMIT} 篇）")
+        candidates = candidates[:BATCH_LIMIT]
 
     done = no_body = failed = 0
     for i, a in enumerate(candidates, 1):
