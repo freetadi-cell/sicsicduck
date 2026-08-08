@@ -170,6 +170,8 @@ def main():
     all_sources = "--all-sources" in sys.argv or "-a" in sys.argv
     # --newsdata-only 模式：淨係處理 newsdata.io 來源（唔理 RSS）
     newsdata_only = "--newsdata-only" in sys.argv or "-n" in sys.argv
+    # --force 模式：忽略已有 cache，強制重寫所有候選文章
+    force = "--force" in sys.argv or "-f" in sys.argv
     recent = datetime.now().timestamp() - RECENT_DAYS * 86400
 
     candidates = []
@@ -189,9 +191,10 @@ def main():
                     continue
             except ValueError:
                 pass
-        cached = load_cache(a.get("id", ""))
-        if cached and cached.get("status") == "done":
-            continue  # 已有改寫成果
+        if not force:
+            cached = load_cache(a.get("id", ""))
+            if cached and cached.get("status") == "done":
+                continue  # 已有改寫成果
         if not a.get("link"):
             continue
         candidates.append(a)

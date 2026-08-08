@@ -1,0 +1,9 @@
+{
+  "id": "52927b41c7ca646259cc21cdb480069a",
+  "title": "國產路由器秘藏後門!逾 20 款型號每 35 秒自動連線中國伺服器",
+  "source_name": "Pcm",
+  "link": "https://www.pcmarket.com.hk/zbtlink-router-backdoor-china-connection/",
+  "rewritten": "資安機構 VulnCheck 研究發現，深圳智博通電子（Zbtlink）生產的多款 Wi-Fi 路由器，官方韌體被植入隱蔽後門程式。受影響設備開機後，每 35 秒便自動向位於中國的伺服器發送連線訊號，並可接收遠端指令，讓攻擊者取得路由器最高控制權。研究團隊在阿里巴巴等平台購買 Zbtlink AX3000 路由器分析時，發現系統內含名為「skworker」的開機啟動腳本，執行源自 2015 年 GitHub 開源專案的遠端控制工具「rctl」。由於連線由路由器內部主動發起，用戶即使開啟防火牆亦難以阻止。受影響型號涵蓋 CPE、WE、WG 及 Z 系列共逾 20 款，且 Zbtlink 為多個第三方品牌代工貼牌，相關產品曾於 Amazon、Newegg 等平台廣泛發售。專家估計全球至少 10 …",
+  "status": "done",
+  "fetched_at": "2026-08-08T17:01:04"
+}
