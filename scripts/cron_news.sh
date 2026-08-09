@@ -66,7 +66,8 @@ if removed > 0:
 EOF
 
 # 1.7) 重建 news.html（只顯示有摘要嘅文章）——唔重新抓取
-python3 scripts/build_news_local.py --summary-only >> /tmp/sicsicduck-news.log 2>&1
+# 注意：用 venv python 行，確保 OpenCC（簡體→繁體標題/摘要轉換）可正常載入
+./venv/bin/python3 scripts/build_news_local.py --summary-only >> /tmp/sicsicduck-news.log 2>&1
 
 # 2) 提交變更（無變更則跳過）
 git add -A

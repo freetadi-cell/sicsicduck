@@ -13,6 +13,26 @@ CACHE_DIR = ROOT / "articles_cache"
 
 CSS_BLOCK = open(ROOT / "scripts" / "_news_local_css.html", encoding="utf-8").read()
 
+# 簡體 -> 繁體轉換（顯示時統一轉，唔改原始 cache）
+# 用 OpenCC 標準 s2t（簡轉繁，保留港澳用字）。冇裝 opencc 就原樣輸出。
+_converter = None
+def to_trad(text):
+    global _converter
+    if not text:
+        return text
+    if _converter is None:
+        try:
+            import opencc
+            _converter = opencc.OpenCC("s2t")
+        except Exception:
+            _converter = False  # 冇裝，向下兼容
+    if _converter:
+        try:
+            return _converter.convert(str(text))
+        except Exception:
+            return text
+    return text
+
 
 def esc(s):
     return html.escape(str(s or ""), quote=True)
@@ -30,7 +50,7 @@ def load_summary(aid):
     try:
         d = json.loads(p.read_text(encoding="utf-8"))
         if d.get("status") == "done" and d.get("rewritten"):
-            return d["rewritten"]
+            return to_trad(d["rewritten"])
     except json.JSONDecodeError:
         pass
     return None
@@ -38,7 +58,7 @@ def load_summary(aid):
 
 def card(a):
     aid = a.get("id", "")
-    title = esc(a.get("title", ""))
+    title = esc(to_trad(a.get("title", "")))
     src = esc(a.get("source_name", ""))
     pub = esc((a.get("pubDate", "") or "")[:10])
     cats = esc(",".join(a.get("category", [])))
