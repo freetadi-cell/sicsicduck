@@ -56,13 +56,14 @@ def load_summary(aid):
     return None
 
 
-# 最新頭 3 篇先顯示圖片（用站內無版權 CC0/公有領域圖，唔 hotlink 原媒體）
-LEAD_IMAGE_COUNT = 3
+# 最新頭 4 篇先顯示圖片（用站內無版權 CC0/公有領域圖，唔 hotlink 原媒體）
+LEAD_IMAGE_COUNT = 4
 # 站內無版權圖（CC0/公有領域，Wikimedia Commons）—— 循環派畀頭幾篇
 LEAD_IMAGES = [
     "/assets/news/finance-1.jpg",
     "/assets/news/finance-2.jpg",
     "/assets/news/finance-3.jpg",
+    "/assets/news/finance-4.jpg",
 ]
 
 def card(a, show_image, lead_index=0):
