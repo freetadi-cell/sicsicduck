@@ -6,8 +6,29 @@ cd /home/freet/.openclaw/workspace/sicsicduck
 PUSH_TIMEOUT=60     # 單次 push 最長秒數
 PUSH_RETRIES=3      # push 重試次數
 
+# 通知頻率控制：新聞每小時更新一次，但例行通知維持原有節奏（每日 4 次）
+# 例行通知時段（小時，24h 制）
+NOTIFY_HOURS=(8 12 17 22)
+NOTIFY_NOW=$(date '+%H')
+NOTIFY_YES=0
+for h in "${NOTIFY_HOURS[@]}"; do
+  if [ "$NOTIFY_NOW" -eq "$h" ]; then
+    NOTIFY_YES=1
+    break
+  fi
+  # 補零比較（08 vs 8）
+  if [ "$NOTIFY_NOW" -eq "$(printf '%d' "$h")" ]; then
+    NOTIFY_YES=1
+    break
+  fi
+done
+
+# 非例行時段唔發例行通知（成功/無變更），但錯誤通知照發
+export SIC_NEWS_NOTIFY="$NOTIFY_YES"
+
 # 1) 抓取新聞
 if ! python3 scripts/fetch_news.py >> /tmp/sicsicduck-news.log 2>&1; then
+  # 錯誤通知不受通知頻率限制，照發
   openclaw message send --channel telegram -t telegram:885017126 -m "❌ 新聞抓取失敗，請檢查 /tmp/sicsicduck-news.log" 2>/dev/null
   exit 1
 fi
@@ -50,7 +71,11 @@ python3 scripts/build_news_local.py --summary-only >> /tmp/sicsicduck-news.log 2
 # 2) 提交變更（無變更則跳過）
 git add -A
 if git diff --staged --quiet; then
-  openclaw message send --channel telegram -t telegram:885017126 -m "✅ 新聞更新：無新變更" 2>/dev/null
+  if [ "$SIC_NEWS_NOTIFY" -eq 1 ]; then
+    openclaw message send --channel telegram -t telegram:885017126 -m "✅ 新聞更新：無新變更" 2>/dev/null
+  else
+    echo "[cron_news] 非通知時段，無新變更（唔發通知）" >> /tmp/sicsicduck-news.log
+  fi
   exit 0
 fi
 git commit -m "Auto: news update $(date '+%Y-%m-%d %H:%M')" >> /tmp/sicsicduck-news.log 2>&1
@@ -68,8 +93,13 @@ done
 
 # 4) 發通知
 if [ "$push_ok" -eq 1 ]; then
-  openclaw message send --channel telegram -t telegram:885017126 -m "📰 新聞更新完成 ✅" 2>/dev/null
+  if [ "$SIC_NEWS_NOTIFY" -eq 1 ]; then
+    openclaw message send --channel telegram -t telegram:885017126 -m "📰 新聞更新完成 ✅" 2>/dev/null
+  else
+    echo "[cron_news] 非通知時段，更新完成（唔發通知）" >> /tmp/sicsicduck-news.log
+  fi
 else
+  # 推送失敗屬於異常，照發通知
   openclaw message send --channel telegram -t telegram:885017126 -m "❌ 新聞已抓取但推送失敗（已重試 ${PUSH_RETRIES} 次），請檢查 /tmp/sicsicduck-news.log" 2>/dev/null
   exit 1
 fi
