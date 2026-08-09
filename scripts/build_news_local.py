@@ -56,22 +56,36 @@ def load_summary(aid):
     return None
 
 
-def card(a):
+# 最新頭 3 篇先顯示圖片（用站內無版權 CC0/公有領域圖，唔 hotlink 原媒體）
+LEAD_IMAGE_COUNT = 3
+# 站內無版權圖（CC0/公有領域，Wikimedia Commons）—— 循環派畀頭幾篇
+LEAD_IMAGES = [
+    "/assets/news/finance-1.jpg",
+    "/assets/news/finance-2.jpg",
+    "/assets/news/finance-3.jpg",
+]
+
+def card(a, show_image, lead_index=0):
     aid = a.get("id", "")
     title = esc(to_trad(a.get("title", "")))
     src = esc(a.get("source_name", ""))
     pub = esc((a.get("pubDate", "") or "")[:10])
     cats = esc(",".join(a.get("category", [])))
     region = esc(a.get("region", ""))
-    image = a.get("image_url") or "/default-news.jpg"
-    image = esc(image)
     link = esc(a.get("link", "#"))
+
+    # 圖片：只喺頭幾篇 show_image=True 時顯示站內無版權圖；其餘唔 render 圖片區塊
+    if show_image:
+        image = esc(LEAD_IMAGES[lead_index % len(LEAD_IMAGES)])
+        image_block = f'''<div class="article-image"><img src="{image}" alt="" loading="lazy"></div>'''
+    else:
+        image_block = ""
 
     summary = load_summary(aid)
     if summary:
         summary_esc = esc(summary)
         # 有本地改寫 → 卡片點擊開 modal, 用 data-modal-id
-        inner = f'''<div class="article-image"><img src="{image}" alt="" onerror="this.src='/default-news.jpg'"></div>
+        inner = f'''{image_block}
             <div class="article-content">
                 <h3 class="article-title">{title}</h3>
                 <div class="article-meta">
@@ -104,7 +118,7 @@ def card(a):
         return card_html, modal
     else:
         # 冇改寫 → 直接外連（現況）
-        inner = f'''<div class="article-image"><img src="{image}" alt="" onerror="this.src='/default-news.jpg'"></div>
+        inner = f'''{image_block}
             <div class="article-content">
                 <h3 class="article-title">{title}</h3>
                 <div class="article-meta">
@@ -126,13 +140,17 @@ def build():
     cards_html = []
     modals_html = []
     shown = 0
+    lead_shown = 0  # 頭幾篇先有圖片
     for a in articles:
-        c, m = card(a)
+        show_image = lead_shown < LEAD_IMAGE_COUNT
+        c, m = card(a, show_image, lead_shown)
         if summary_only and m is None:
             continue  # 只揀有站內摘要嘅
         cards_html.append(c)
         if m:
             modals_html.append(m)
+        if show_image:
+            lead_shown += 1
         shown += 1
 
     grid = "\n".join(cards_html)
