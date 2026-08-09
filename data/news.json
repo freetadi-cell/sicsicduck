@@ -1,7 +1,548 @@
 {
-  "last_updated": "2026-08-09T16:00:27.180371",
-  "total": 315,
+  "last_updated": "2026-08-09T17:00:18.871535",
+  "total": 346,
   "articles": [
+    {
+      "id": "f1d5512d96e59e9805cdd280855e69b2",
+      "title": "美拟取消H-1B劳工60天宽限期 RFE补件规定收紧可直接拒签",
+      "description": "美国国土安全部(DHS)正考虑取消部分外籍劳工,失去工作后可享有的60天宽限期,若这项提案最终实施,持H-1B、L-1、O-1等工作签证的外籍人士遭解雇后,寻找新雇主、转换移民身分或安排离境的时间将大幅缩短。这项措施目前仍在白宫管理及预算办公室(OMB)审查,尚未生效,现行60天宽限期仍然有效。",
+      "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260808-%E7%BE%8E%E6%8B%9F%E5%8F%96%E6%B6%88h-1b%E5%8A%B3%E5%B7%A560%E5%A4%A9%E5%AE%BD%E9%99%90%E6%9C%9F-rfe%E8%A1%A5%E4%BB%B6%E8%A7%84%E5%AE%9A%E6%94%B6%E7%B4%A7%E5%8F%AF%E7%9B%B4%E6%8E%A5%E6%8B%92%E7%AD%BE",
+      "pubDate": "2026-08-08 20:56:22",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/dbd87564-3d05-11f1-bcf3-005056bfb2b6/w:1024/p:16x9/AP26110703294068.jpg",
+      "keywords": [
+        "中国"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "45bce70357710ea5960b3821a5ec8dd9",
+      "title": "卡域克:理應取得更多入球",
+      "description": "【Now Sports】曼聯周末賽和巴黎聖日耳門,領隊卡域克一方面滿意大軍的表現,但同時又謂應該取得更多入球。曼聯周六在哥登堡與巴黎聖日耳門打成1:1平手,卡域克賽後接受球會官方電視訪問時說:「我享受它(比賽)。很好的考驗,人家的踢法與預計的略為不同。我們理應取得更多入球。」這名前曼聯及英格蘭中場續說:「我們嘗試...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%8D%A1%E5%9F%9F%E5%85%8B-%E7%90%86%E6%87%89%E5%8F%96%E5%BE%97%E6%9B%B4%E5%A4%9A%E5%85%A5%E7%90%83-203705233.html",
+      "pubDate": "2026-08-08 20:37:05",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "巴黎聖日耳門",
+        "曼聯"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d20e16f660f85b8270100905f5a19729",
+      "title": "馮其十:國債期貨來港 補齊關鍵拼圖",
+      "description": "【明報專訊】繼「債券通」、「互換通」之後,內地與香港金融互聯互通再迎突破。5年期中國國債期貨近日在港交所上市,作為離岸市場唯一的人民幣國債期貨合約產品,該工具旨在滿足境外投資者日益增長的利率風險管理及交易需求,被視為完善香港離岸人民幣產品體系、鞏固國際金融中心地位的重要一步。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208284364/%E9%A6%AE%E5%85%B6%E5%8D%81-%E5%9C%8B%E5%82%B5%E6%9C%9F%E8%B2%A8%E4%BE%86%E6%B8%AF-%E8%A3%9C%E9%BD%8A%E9%97%9C%E9%8D%B5%E6%8B%BC%E5%9C%96",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "馮其十 神州新形勢"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "36d2ba1edbde72f22494066441c7069c",
+      "title": "薛偉傑:遠大貿易推出多款清真罐頭 部分出口星馬",
+      "description": "【明報專訊】香港商界一直希望加強與伊斯蘭國家貿易、旅遊和經濟合作。遠大貿易今年推出了多款取得清真認證(Halal)罐頭,包括鹹牛肉、五香雞丁、雞午餐肉等,會在8月13至17日貿發局美食博覽中重點宣傳。據悉,部分產品已出口到馬來西亞或新加坡。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208284109/%E8%96%9B%E5%81%89%E5%82%91-%E9%81%A0%E5%A4%A7%E8%B2%BF%E6%98%93%E6%8E%A8%E5%87%BA%E5%A4%9A%E6%AC%BE%E6%B8%85%E7%9C%9F%E7%BD%90%E9%A0%AD-%E9%83%A8%E5%88%86%E5%87%BA%E5%8F%A3%E6%98%9F%E9%A6%AC",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00260/7f4eb20af5d04e4aa59f045a59f266d4.jpg",
+      "keywords": [
+        "薛偉傑 行銷新意思"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1421a449d48bac056ed770fa1a6dd8a0",
+      "title": "張宗永:「追一」的堅持",
+      "description": "【明報專訊】中國製造的人工智能(AI)大模型Kimi K3於今年7月問世,因性價比遠超美國對手,導致華爾街的AI概念股應聲急挫。Nvidia(英偉達)(美:NVDA)股價一度從高位跌至接近190美元(2026年7月29日),但截至執筆時,已回升至220美元。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208283804/%E5%BC%B5%E5%AE%97%E6%B0%B8-%E3%80%8C%E8%BF%BD%E4%B8%80%E3%80%8D%E7%9A%84%E5%A0%85%E6%8C%81",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "張宗永 翼之聯想"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5c35d7361f947fba257a7f192c151038",
+      "title": "通脹加劇持續困擾民生 動搖國民對自民黨信心",
+      "description": "【明報專訊】日、美息差令日圓持續低企,日本向外進貨成本大增,通脹加劇持續困擾民生,以至動搖國民對執政黨自民黨的信心,日匯低企已成政治議題。過往兩任首相岸田文雄及石破茂任內均受通脹挑戰,並被視為促成他們下台的原因之一。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208283694/%E9%80%9A%E8%84%B9%E5%8A%A0%E5%8A%87%E6%8C%81%E7%BA%8C%E5%9B%B0%E6%93%BE%E6%B0%91%E7%94%9F-%E5%8B%95%E6%90%96%E5%9C%8B%E6%B0%91%E5%B0%8D%E8%87%AA%E6%B0%91%E9%BB%A8%E4%BF%A1%E5%BF%83",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "企業地球村"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f3fadb12990425e550703536609f9146",
+      "title": "美日干預日圓 成效還待日央行加息",
+      "description": "【明報專訊】美國上月底罕有地與日本聯手干預日本匯市,支撐日圓反彈至近3個月來高位。市場推測美國出手,是不想日本為托日圓而出售美國國債,導致美債價跌息升,變相推高美國政府的借貸成本,而且日圓長期走弱亦不利美國貿易。分析員普遍認為,托市只屬暫時措施,最終要靠日本央行加息,收窄日美息差才緩和日圓走弱問題。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208283478/%E7%BE%8E%E6%97%A5%E5%B9%B2%E9%A0%90%E6%97%A5%E5%9C%93-%E6%88%90%E6%95%88%E9%82%84%E5%BE%85%E6%97%A5%E5%A4%AE%E8%A1%8C%E5%8A%A0%E6%81%AF",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00064/6f573e072fe94ed9b2e6ef15f98b0549.jpg",
+      "keywords": [
+        "企業地球村"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "27aaef8e4a90a328a07b0e786b464d9c",
+      "title": "雪佛蘭汽車據報內地停售 通用:續在華生產",
+      "description": "【明報專訊】近日內媒傳出通用汽車(美:GM)旗下雪佛蘭汽車(Chevrolet)將停止在中國內地銷售。通用汽車回應內地傳媒時表示,將繼續在內地生產雪佛蘭產品,並繼續為現有雪佛蘭車主提供完整售後服務保障,但未有直接回應雪佛蘭會否繼續在內地市場出售。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208283083/%E9%9B%AA%E4%BD%9B%E8%98%AD%E6%B1%BD%E8%BB%8A%E6%93%9A%E5%A0%B1%E5%85%A7%E5%9C%B0%E5%81%9C%E5%94%AE-%E9%80%9A%E7%94%A8-%E7%BA%8C%E5%9C%A8%E8%8F%AF%E7%94%9F%E7%94%A2",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "通用汽車（gm）",
+        "上汽",
+        "雪佛蘭"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fde8d7f3408e13bbab1ace975793fba8",
+      "title": "日圓上周跌0.4% 市場料再有干預行動",
+      "description": "【明報專訊】上周五美國非農就業數字意外疲弱,美匯指數下跌0.34%至99.604,推動日圓上升0.4%,美元兌日圓收報157.76。不過日圓全周走勢自從7月底美日聯合干預匯價的155水平逐步走貶,上周跌約0.4%。State Street策略師Lee Ferridge表示,雖然上周五日圓上升與干預無關,不過市場預期將會再有干預行動。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208282976/%E6%97%A5%E5%9C%93%E4%B8%8A%E5%91%A8%E8%B7%8C0-4-%E5%B8%82%E5%A0%B4%E6%96%99%E5%86%8D%E6%9C%89%E5%B9%B2%E9%A0%90%E8%A1%8C%E5%8B%95",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "日圓",
+        "匯率",
+        "摩根士丹利",
+        "干預"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fae03e5e2d51e5f04c14471a00613d1d",
+      "title": "就業數據弱加息預期降溫 標指創新高",
+      "description": "【明報專訊】上周五非農就業數據遠遜預期,市場對加息預期降溫,推動美股上周五做好,標指收報7757點創新高,升0.62%;道指升0.28%,收報54,036點;納指升1.3%,報26,690點。三大指數均創4月中以來最佳單周表現,納指揚5.19%,標指和道指各升3.58%和2.96%。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208282769/%E5%B0%B1%E6%A5%AD%E6%95%B8%E6%93%9A%E5%BC%B1%E5%8A%A0%E6%81%AF%E9%A0%90%E6%9C%9F%E9%99%8D%E6%BA%AB-%E6%A8%99%E6%8C%87%E5%89%B5%E6%96%B0%E9%AB%98",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00064/0d62a7242d5e4aef8991a5a50663eafa.jpg",
+      "keywords": [
+        "spacex",
+        "美股",
+        "空頭回補",
+        "加息",
+        "期權",
+        "非農就業職位"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1b8cd1cf0beaac3b53ec5d572e1fa2b3",
+      "title": "PARK SILICON首日收票 超購近10倍",
+      "description": "【明報專訊】毗鄰港鐵古洞站的全新盤、會德豐旗下古洞PARK SILICON 2期日前公布首張價65伙,以折實均呎1.76萬元推售,昨日正式對外開放示範單位及同步接受認購登記,反應不俗,昨日售樓處不少準買家排隊等候睇樓,售樓處現場亦人頭湧湧,非常熱鬧。項目首日收逾700票,超額認購近10倍。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208282483/park-silicon%E9%A6%96%E6%97%A5%E6%94%B6%E7%A5%A8-%E8%B6%85%E8%B3%BC%E8%BF%9110%E5%80%8D",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00064/3b80614e7d1741849f83e2cc6bd44730.jpg",
+      "keywords": [
+        "信置",
+        "whitesand cove",
+        "華懋",
+        "會德豐",
+        "黃光耀",
+        "海瑅灣",
+        "香港地產",
+        "park silicon",
+        "梁志堅"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "01e4c04b1990cf673a42e6aa6b176519",
+      "title": "里士滿聯儲行長:美勞動市場勉強維持均衡狀態",
+      "description": "【明報專訊】上周五公布,7月美國非農就業職位減少2.3萬個,遠差過經濟師預期的8萬個職位增長,引起市場降低今年加息預期。里士滿聯儲銀行行長巴爾金(Tom Barkin)表示,過去一年招聘量均處於低位,認為現時美國勞動市場正在勉強地維持均衡的狀態,既非寬鬆亦不緊張,目前未見工資通脹,勞動市場沒有推高物價的壓力。不過若物價壓力升溫,屆時需要稍為加息。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260809/s00004/1786208282282/%E9%87%8C%E5%A3%AB%E6%BB%BF%E8%81%AF%E5%84%B2%E8%A1%8C%E9%95%B7-%E7%BE%8E%E5%8B%9E%E5%8B%95%E5%B8%82%E5%A0%B4%E5%8B%89%E5%BC%B7%E7%B6%AD%E6%8C%81%E5%9D%87%E8%A1%A1%E7%8B%80%E6%85%8B",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "巴爾金",
+        "聯儲局",
+        "債息",
+        "加息",
+        "通脹",
+        "非農就業職位"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8907ee5cfd3ca20db741f69b0dfe982b",
+      "title": "【開箱】《劇場版CHIIKAWA人魚島的秘密》 吉伊卡哇大戰《奧德賽》海妖",
+      "description": "【明報專訊】日本漫畫家nagano創作《CHIIKAWA》可算近年冒起最快、吸金力最強的動漫IP之一,每次推出周邊產品,pop-up商店必現人龍,首次改編拍成電影《劇場版CHIIKAWA人魚島的秘密》同樣叫座,日本上月開畫票房累收50億日圓(約2.4億港元),賣座原因或許跟金像導演基斯杜化路蘭(Christopher Nolan)史詩式新片《奧德賽》撞橋有關?",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208292103/%E3%80%90%E9%96%8B%E7%AE%B1%E3%80%91%E3%80%8A%E5%8A%87%E5%A0%B4%E7%89%88chiikawa%E4%BA%BA%E9%AD%9A%E5%B3%B6%E7%9A%84%E7%A7%98%E5%AF%86%E3%80%8B-%E5%90%89%E4%BC%8A%E5%8D%A1%E5%93%87%E5%A4%A7%E6%88%B0%E3%80%8A%E5%A5%A7%E5%BE%B7%E8%B3%BD%E3%80%8B%E6%B5%B7%E5%A6%96",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/6f5fd25454b649c4a17a70c6f9cc797b.jpg",
+      "keywords": [
+        "劇場版chiikawa人魚島的秘密",
+        "開箱"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5e6a16ac3f17d592843fb21316263a66",
+      "title": "56歲及川光博奉子再婚",
+      "description": "【明報專訊】日劇《半澤直樹》56歲男星及川光博昨天(8日)透過官方網站報喜:「我要結婚了,並跟妻子迎來新生命。」由於女方是圈外人,不便透露私隱及婚事詳情,希望外界給予尊重;他亦不忘向粉絲及工作伙伴表達謝意,期望未來能夠繼續獲得各方支持和祝福。這是及川光博第2段婚姻,2011年曾與寶塚歌劇團出身的《VIVANT》女星檀麗結婚,可惜捱不過七年之癢,2018年離婚至今,相隔8年再婚兼為人父,粉絲紛紛送上祝福。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208291822/56%E6%AD%B2%E5%8F%8A%E5%B7%9D%E5%85%89%E5%8D%9A%E5%A5%89%E5%AD%90%E5%86%8D%E5%A9%9A",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/8899fa4f8963480fa333a32288b7941a.jpg",
+      "keywords": [
+        "及川光博",
+        "奉子成婚"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "56869e87e8115afd1c017a7a08d9190c",
+      "title": "Blackpink認溝通出問題 出道10周年活動安排混亂 成員直播道歉",
+      "description": "【明報專訊】昨天(8日)正值韓國人氣女團Blackpink出道10周年的紀念日子,所屬事務所YG娛樂卻在兩日前才宣布舉辦粉絲見面會,僅招待40人參加,且不保證成員Jennie、Lisa、Rose和Jisoo全體亮相,惹來粉絲不滿。為了平息眾怒,4名成員昨日合體開直播,坦承「因溝通出現問題,令粉絲感失望,對此表示歉意」,韓媒Dispatch爆料指「其中兩名成員突然表示可以出席活動」,導致見面會倉卒舉行。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208291545/blackpink%E8%AA%8D%E6%BA%9D%E9%80%9A%E5%87%BA%E5%95%8F%E9%A1%8C-%E5%87%BA%E9%81%9310%E5%91%A8%E5%B9%B4%E6%B4%BB%E5%8B%95%E5%AE%89%E6%8E%92%E6%B7%B7%E4%BA%82-%E6%88%90%E5%93%A1%E7%9B%B4%E6%92%AD%E9%81%93%E6%AD%89",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/bcd6b65771ab42e2bbd95ce4db118e1b.jpg",
+      "keywords": [
+        "blackpink"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "04b82365879b5cf4a93a05beb83247ee",
+      "title": "【娛樂場】《現代豪俠「轉」》 武俠情懷融入鋼筋森林",
+      "description": "【明報專訊】香港話劇團全新劇作《現代豪俠「轉」》由郭永康編寫、陳淑儀執導,吳家良、邱廷輝、黃慧慈、陳嘉樂、張紫琪、蔡溥泰、麥靜雯及杜雋饒演出,以荒誕幽默的筆觸,將經典武俠情懷融入深夜麥當勞、公園紙皮箱與高樓之間。既是獻給成年人的當代童話,也是一首關於失敗者的英雄史詩,帶領觀眾聽風中殘留的俠影餘聲,9月19至10月4日假香港大會堂劇院公演。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208291284/%E3%80%90%E5%A8%9B%E6%A8%82%E5%A0%B4%E3%80%91%E3%80%8A%E7%8F%BE%E4%BB%A3%E8%B1%AA%E4%BF%A0%E3%80%8C%E8%BD%89%E3%80%8D%E3%80%8B-%E6%AD%A6%E4%BF%A0%E6%83%85%E6%87%B7%E8%9E%8D%E5%85%A5%E9%8B%BC%E7%AD%8B%E6%A3%AE%E6%9E%97",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/e664c5c593df497c813719a3ca3e9fb2.jpg",
+      "keywords": [
+        "郭永康",
+        "《現代豪俠「轉」》",
+        "陳淑儀"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "84d3111ad3a3f42fe9fd5c910eaf47c6",
+      "title": "吳業坤自資出新歌盼夫妻檔搵銀 193審慎理財 鍾培生心急追多個",
+      "description": "【明報專訊】男團ERROR成員郭嘉駿(193)前晚聯同吳業坤(坤哥)出席《符文戰場:英雄聯盟對戰卡牌》繁體中文版宣傳活動,193一向興趣多,花費不少金錢,買股票亦曾蝕錢,他有感現在市道麻麻掙錢不容易,用錢會變得審慎。坤哥自資製作歌曲亦要努力搵錢,希望與太太濱口愛子夫妻檔工作。他年底參加空手道賽事,要勤力操練。鍾培生與太太莊雅婷早前誕下女兒,他讚太太是好媽媽,透露會努力再造人。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208290930/%E5%90%B3%E6%A5%AD%E5%9D%A4%E8%87%AA%E8%B3%87%E5%87%BA%E6%96%B0%E6%AD%8C%E7%9B%BC%E5%A4%AB%E5%A6%BB%E6%AA%94%E6%90%B5%E9%8A%80-193%E5%AF%A9%E6%85%8E%E7%90%86%E8%B2%A1-%E9%8D%BE%E5%9F%B9%E7%94%9F%E5%BF%83%E6%80%A5%E8%BF%BD%E5%A4%9A%E5%80%8B",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/fa464a59db5a41b38203d27e835c6c31.jpg",
+      "keywords": [
+        "郭嘉駿(193)",
+        "鍾培生",
+        "吳業坤（坤哥）",
+        "莊雅婷"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f78d95d2f40b4b1b98afc86e40225e6a",
+      "title": "COLLAR王家晴擇偶要高大靚仔 沈貞巧擬安排節目相睇",
+      "description": "【明報專訊】COLLAR沈貞巧與王家晴擔任「至尊沙田足球會」球隊大使,昨日與班主王至尊、香港足球總會主席霍啟山等出席記者會,沈貞巧與王家晴同在沙田長大,笑言留下了不少腳毛。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208290412/collar%E7%8E%8B%E5%AE%B6%E6%99%B4%E6%93%87%E5%81%B6%E8%A6%81%E9%AB%98%E5%A4%A7%E9%9D%9A%E4%BB%94-%E6%B2%88%E8%B2%9E%E5%B7%A7%E6%93%AC%E5%AE%89%E6%8E%92%E7%AF%80%E7%9B%AE%E7%9B%B8%E7%9D%87",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/be5292bcb81d49b39e0da50fef6b1559.jpg",
+      "keywords": [
+        "王家晴",
+        "沈貞巧"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "eef86a2e5973b2c5237086258fa1e906",
+      "title": "蘇韻姿分飾兩角告別「熊心如」 阮政峰自製「池家」大結局",
+      "description": "【明報專訊】無綫處境劇《愛‧回家之開心速遞》前晚大結局,劇集播放多年來匯聚不少演員,當中飾演「熊心如」的蘇韻姿、演「池子孝」的阮政峰雖已離巢,未能親身出席大結局派對,仍特意在社交平台發布自製短片向一眾劇迷道別。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208290097/%E8%98%87%E9%9F%BB%E5%A7%BF%E5%88%86%E9%A3%BE%E5%85%A9%E8%A7%92%E5%91%8A%E5%88%A5%E3%80%8C%E7%86%8A%E5%BF%83%E5%A6%82%E3%80%8D-%E9%98%AE%E6%94%BF%E5%B3%B0%E8%87%AA%E8%A3%BD%E3%80%8C%E6%B1%A0%E5%AE%B6%E3%80%8D%E5%A4%A7%E7%B5%90%E5%B1%80",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/10c6a1bf11a942acb7108abb020d539e.jpg",
+      "keywords": [
+        "阮政峰",
+        "愛‧回家之開心速遞",
+        "蘇韻姿"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2c74eddac170c5f3e553f262819d0755",
+      "title": "郭柏妍演活「綠茶婊」 對空氣練嗲 游嘉欣豪花6位數旅行「唔會慳住使」",
+      "description": "【明報專訊】馬國明、郭柏妍、陳曉華、游嘉欣及鍾柔美等昨日到荃灣出席無綫劇《夫妻的博弈》宣傳活動,眾人在台上獲安排模仿郭柏妍劇中角色扮嬌嗲,場面搞笑。問馬國明對女性嬌嗲是否受落?他說:「我在想,假設將來的女兒是這樣,都幾得意。老婆(湯洛雯)就很少這樣,如果她這樣嬌嗲,都應該好得意。」湯洛雯早前掩着肚影相再傳懷孕?馬國明無奈道:「可能只是整理件衫,有好消息我們會公布,不知為何她影相就話有咗,就像黃翠如上台又話有BB,我不是很心急,一向都隨緣。」",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208289573/%E9%83%AD%E6%9F%8F%E5%A6%8D%E6%BC%94%E6%B4%BB%E3%80%8C%E7%B6%A0%E8%8C%B6%E5%A9%8A%E3%80%8D-%E5%B0%8D%E7%A9%BA%E6%B0%A3%E7%B7%B4%E5%97%B2-%E6%B8%B8%E5%98%89%E6%AC%A3%E8%B1%AA%E8%8A%B16%E4%BD%8D%E6%95%B8%E6%97%85%E8%A1%8C%E3%80%8C%E5%94%94%E6%9C%83%E6%85%B3%E4%BD%8F%E4%BD%BF%E3%80%8D",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/ccbd0e6f7b1b4e019cf2f77be5138707.jpg",
+      "keywords": [
+        "郭柏妍",
+        "鍾柔美",
+        "夫妻的博弈",
+        "陳曉華",
+        "馬國明",
+        "游嘉欣"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "991061e0b623f204de4c7d58d6d7ba2e",
+      "title": "周星馳解《功夫女足》無廣東話版原因 劉嘉玲迪麗熱巴現身謝票 影迷拉橫額捧場",
+      "description": "【明報專訊】周星馳自編自導電影《功夫女足》在內地上映近一個月,票房衝上逾22億元人民幣(約25億港元),成績理想。本月13日在港上映,周星馳昨日率領片中演員劉嘉玲、迪麗熱巴、蔡思貝、張繼聰、胡予安、新一代星女郎雪野及聯合導演林子聰出席香港特別場謝票活動,與香港影迷近距離接觸,以及分享拍攝點滴,影迷特別準備印上「星仔你最帥 我們永遠愛你!」橫額支持。周星馳讚賞劉嘉玲演技是最高境界,還指蔡思貝拍打戲有天分;蔡思貝表示開拍前苦練一年,希望滿足導演要求。周星馳表示因上映時間臨時調整,香港趕不及廣東話版。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260809/s00016/1786208288380/%E5%91%A8%E6%98%9F%E9%A6%B3%E8%A7%A3%E3%80%8A%E5%8A%9F%E5%A4%AB%E5%A5%B3%E8%B6%B3%E3%80%8B%E7%84%A1%E5%BB%A3%E6%9D%B1%E8%A9%B1%E7%89%88%E5%8E%9F%E5%9B%A0-%E5%8A%89%E5%98%89%E7%8E%B2%E8%BF%AA%E9%BA%97%E7%86%B1%E5%B7%B4%E7%8F%BE%E8%BA%AB%E8%AC%9D%E7%A5%A8-%E5%BD%B1%E8%BF%B7%E6%8B%89%E6%A9%AB%E9%A1%8D%E6%8D%A7%E5%A0%B4",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00092/a63aa894dd1b49cfa103a855efe4a7b0.jpg",
+      "keywords": [
+        "功夫女足",
+        "迪麗熱巴",
+        "劉嘉玲",
+        "蔡思貝",
+        "周星馳"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3b417e94d2fab68f0aed904b8b8fde98",
+      "title": "體壇快訊:車路士友賽輕取米蘭",
+      "description": "【明報專訊】3支早前曾訪港出戰「香港足球盛會」的歐洲勁旅車路士、祖雲達斯及國際米蘭昨分途續戰季前熱身賽,其中「藍戰士」在印尼的中立場憑前鋒祖奧柏度梅開二度,領銜以3:0擊敗AC米蘭。國米則在澳洲的中立場以2:1挫祖雲。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260809/s00015/1786208286625/%E9%AB%94%E5%A3%87%E5%BF%AB%E8%A8%8A-%E8%BB%8A%E8%B7%AF%E5%A3%AB%E5%8F%8B%E8%B3%BD%E8%BC%95%E5%8F%96%E7%B1%B3%E8%98%AD",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "afaa52b8eb539062c34d3a83f07bf88d",
+      "title": "美斯父親佐治因病離世 享年68歲",
+      "description": "【明報專訊】39歲阿根廷球王美斯父親兼經理人佐治美斯(圖)昨因病離世,享年68歲。佐治近期鮮有出席公開場合,早前的美加墨世界盃亦未有到現場觀戰,當時其家人曾發聲明證實對方患病正接受治療,但未有透露病情。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260809/s00015/1786208286460/%E7%BE%8E%E6%96%AF%E7%88%B6%E8%A6%AA%E4%BD%90%E6%B2%BB%E5%9B%A0%E7%97%85%E9%9B%A2%E4%B8%96-%E4%BA%AB%E5%B9%B468%E6%AD%B2",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00085/5badfa17933546d0bb4ae2d2f31b2ef7.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "10490522e48a0fe2cd9597ff6b6187ff",
+      "title": "國足U17今鬥阿仙奴U17爭奪明日之星冠軍盃",
+      "description": "【明報專訊】中國17歲或以下男子足球代表隊(國足U17)前晚於主場出戰明日之星冠軍盃4強,與阿根廷勁旅河床U17法定時間言和0:0後,於互射12碼階段贏3:1,今午將再遇英超勁旅阿仙奴U17爭冠。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260809/s00015/1786208286178/%E5%9C%8B%E8%B6%B3u17%E4%BB%8A%E9%AC%A5%E9%98%BF%E4%BB%99%E5%A5%B4u17%E7%88%AD%E5%A5%AA%E6%98%8E%E6%97%A5%E4%B9%8B%E6%98%9F%E5%86%A0%E8%BB%8D%E7%9B%83",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00085/38e271eb56d74fa9b210bc0434f4fd09.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "10b05436f5e59b9be8ac925798b073bb",
+      "title": "古馬雷斯7500萬鎊投阿仙奴 簽約4年 冀更上一層樓贏更多錦標",
+      "description": "【明報專訊】世界盃後開始加快增兵進度的英超盟主阿仙奴,繼較早前加盟的希臘翼鋒謝索利斯,昨宣布與另一英超球會紐卡素達成協議,以7500萬鎊(約7.94億港元)羅致28歲巴西國腳中場般奴古馬雷斯,簽約4年。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260809/s00015/1786208285960/%E5%8F%A4%E9%A6%AC%E9%9B%B7%E6%96%AF7500%E8%90%AC%E9%8E%8A%E6%8A%95%E9%98%BF%E4%BB%99%E5%A5%B4-%E7%B0%BD%E7%B4%844%E5%B9%B4-%E5%86%80%E6%9B%B4%E4%B8%8A%E4%B8%80%E5%B1%A4%E6%A8%93%E8%B4%8F%E6%9B%B4%E5%A4%9A%E9%8C%A6%E6%A8%99",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "808b545baa8dad7383dc51a2b9ad6eee",
+      "title": "兩土炮久別港超重新出發 投至尊沙田爭出場機會",
+      "description": "【明報專訊】港超新軍至尊沙田球員名單之中,出現一些久違的名字。20歲中場趙正宇闊別港超兩季後,選擇加盟這支升班馬重新出發。過去兩年從本地球壇「人間蒸發」,換來兩段外流經歷,他強調並不後悔,新球季期望獲得穩定出場機會,重拾昔日表現。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260809/s00015/1786208285783/%E5%85%A9%E5%9C%9F%E7%82%AE%E4%B9%85%E5%88%A5%E6%B8%AF%E8%B6%85%E9%87%8D%E6%96%B0%E5%87%BA%E7%99%BC-%E6%8A%95%E8%87%B3%E5%B0%8A%E6%B2%99%E7%94%B0%E7%88%AD%E5%87%BA%E5%A0%B4%E6%A9%9F%E6%9C%83",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00085/89d2389c11754f0da19d35ac3a780a01.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e2fce7018ebe45bcb760e35887d61d6d",
+      "title": "港超新軍至尊沙田結合演藝界吸客 女團COLLAR兩成員任大使 推年費計劃可與明星簽名合照",
+      "description": "【明報專訊】新一季港超升班馬至尊沙田昨舉行記者會揭開神秘面紗,公布球隊名單及發展大計,宣傳上致力結合娛樂元素,宣布由兩名在沙田長大的女團COLLAR成員王家晴(Candy)及沈貞巧(Gao)擔任球會大使,並推出會員計劃,最貴年費5880元,除了有主場門票及球衣,又可跟出席主場的星級嘉賓見面招睞。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260809/s00015/1786208285379/%E6%B8%AF%E8%B6%85%E6%96%B0%E8%BB%8D%E8%87%B3%E5%B0%8A%E6%B2%99%E7%94%B0%E7%B5%90%E5%90%88%E6%BC%94%E8%97%9D%E7%95%8C%E5%90%B8%E5%AE%A2-%E5%A5%B3%E5%9C%98collar%E5%85%A9%E6%88%90%E5%93%A1%E4%BB%BB%E5%A4%A7%E4%BD%BF-%E6%8E%A8%E5%B9%B4%E8%B2%BB%E8%A8%88%E5%8A%83%E5%8F%AF%E8%88%87%E6%98%8E%E6%98%9F%E7%B0%BD%E5%90%8D%E5%90%88%E7%85%A7",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260809/s00085/71f4eefd765447fdbceffde91112c732.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e013ec256c819c94103ce4dee67c13dc",
+      "title": "醫生:鄰里衝突或致精神問題惡化 跨部門應增協作",
+      "description": "【明報專訊】黃大仙上邨昭善樓企圖謀殺及自殺案源於噪音糾紛,疑犯兼死者有精神病紀錄。精神科專科醫生麥永接指出,鄰居衝突易誘發抑鬱焦慮失眠,長期糾紛易令精神健康問題升級,演變成嚴重暴力及自殺風險;而噪音爭執本屬人之常情,外人易只當普通摩擦,致這類高風險個案往往難察覺。他建議加強警方、房署、社工、社康及精神科服務等不同部門協作,做好早期介入。",
+      "link": "https://news.mingpao.com/pns/%E8%A6%81%E8%81%9E/article/20260809/s00001/1786212738360/%E9%86%AB%E7%94%9F-%E9%84%B0%E9%87%8C%E8%A1%9D%E7%AA%81%E6%88%96%E8%87%B4%E7%B2%BE%E7%A5%9E%E5%95%8F%E9%A1%8C%E6%83%A1%E5%8C%96-%E8%B7%A8%E9%83%A8%E9%96%80%E6%87%89%E5%A2%9E%E5%8D%94%E4%BD%9C",
+      "pubDate": "2026-08-08 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8bab69fdc9635ac3decff5a23574d901",
+      "title": "友賽|泰利文斯首演 B費回歸 曼聯1:1巴黎聖日耳門",
+      "description": "曼聯繼續季前熱身賽,今晨與巴黎聖日耳門(PSG)踢成1:1。「紅魔」今場有新兵泰利文斯首次上陣,但美臣蒙特於20分鐘受傷退下火線;領隊卡域克賽後則表示滿意球隊的表現。 麥比奧莫為曼聯扳平 PSG仍有部份主力因為世界盃而未歸隊,但這支歐聯冠軍球隊於2分鐘,便憑伊巴謙麥巴耶打開紀錄。曼聯20分鐘更有美臣蒙特受傷退下火線,但其傷勢料並不嚴重,他其後被拍到能夠自由走動。而今場阿密特迪亞路的表現出色,他在前",
+      "link": "https://www.stheadline.com/football-news/3602442/%E5%8F%8B%E8%B3%BD%E6%B3%B0%E5%88%A9%E6%96%87%E6%96%AF%E9%A6%96%E6%BC%94-B%E8%B2%BB%E5%9B%9E%E6%AD%B8-%E6%9B%BC%E8%81%AF11%E5%B7%B4%E9%BB%8E%E8%81%96%E6%97%A5%E8%80%B3%E9%96%80",
+      "pubDate": "2026-08-08 20:19:55",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fc01dbae5166f4806fd9cde346f9b055/2026-08/manutd.jpg",
+      "keywords": [
+        "英超",
+        "曼聯",
+        "巴黎聖日耳門",
+        "法甲"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d279cdfe415641a41fe56410e496086c",
+      "title": "禮品總值逾3.1億!美搖滾樂隊Zac Brown演唱會豪送3.7萬名歌迷郵輪旅程",
+      "description": "美國鄉村搖滾樂隊Zac Brown演唱會上宣佈史上最大規模歌迷福利,3.7萬名歌迷均可獲得雙人郵輪旅程,禮品總值達4,000萬美元(約3.1億港元)。 Zac Brown Band not only sold out 15 concerts at Fenway Park but also surprised over 37,000 fans with a free cruise for two. This $40 million giveaway is a historic audience gift. pic.twitter.com/Nvw7VIsqYQ — News Now (@NewsNowUS) August 4, 2026 星期日(8月2日),美國鄉村搖滾樂隊Zac Brown Band在波士頓芬威球場舉行演唱會,也是樂隊連續第15場在該場地舉行的爆滿演出。演唱會期間,Zac Brown突然向在場歌迷宣佈驚喜,指現場超過3.7萬名觀眾均可獲得由「瑪格麗塔維爾海上郵輪」(Margaritaville at Sea)提供的免費雙人郵輪旅程,禮品總值高達4,000萬美元。主音Zac Brown更形容,這是「史上最大規模的贈送活動」,消息公佈後,全場歌迷隨即爆出熱烈歡呼。 Zac Brown在台上表示:「我將為在場的每一位購買雙人遊輪之旅。在場的每一位都將獲得一次自己和愛人共遊的體驗......女士們先生們,今晚在芬威球場,我們將迎來史上規模最大的贈送活動!」話音剛落,場內立即響起歌迷的驚喜歡呼聲。 一名帶同3名兒子入場觀看演唱會的歌迷表示,Zac Brown起初只透露當晚會有一份驚喜,未料最終竟收到如此豐厚的禮物,令她難以置信。另一名與女友及父母一同入場的歌迷也表示:「這太不可思議了。如此慷慨,真是太棒了。至今仍難以置信,超乎我們意料」。 瑪格麗塔維爾海上郵輪行政總裁克里斯托弗・艾維(Christopher [...]",
+      "link": "https://www.bastillepost.com/hongkong/article/16510049-%E7%A6%AE%E5%93%81%E7%B8%BD%E5%80%BC%E9%80%BE3-1%E5%84%84%EF%BC%81%E7%BE%8E%E6%90%96%E6%BB%BE%E6%A8%82%E9%9A%8Azac-brown%E6%BC%94%E5%94%B1%E6%9C%83%E8%B1%AA%E9%80%813-7%E8%90%AC%E5%90%8D%E6%AD%8C",
+      "pubDate": "2026-08-08 20:15:44",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20250314_PL_ship_source_web6.png",
+      "keywords": [
+        "大視野",
+        "演唱會",
+        "太極影片",
+        "郵輪"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "16abb1dec3ad88036ee4d69ef92129ed",
+      "title": "土耳其沙特巴基斯坦簽防務協議 外長:非針對伊朗",
+      "description": "土耳其外長周六表示,土耳其與沙特阿拉伯及巴基斯坦簽署的防務協議,並非針對伊朗或任何其他國家,形容協議是邁向地區穩定的重要一步。 沙特王儲穆罕默德·本·薩勒曼、土耳其總統埃爾多安及巴基斯坦總理謝赫巴茲·謝里夫,周五在沙特聖城麥加簽署這份協議。協議指出,攻擊其中一方將被視為攻擊三方。 這份「麥加聯合防務協議」結合了富油的沙特阿拉伯、核武國家巴基斯坦,以及擁有北約第二大軍隊及迅速發展的國防工業的土耳其。在地區不確定性增加及伊朗戰爭威脅下,協議深化了合作及威懾力。 土耳其外長哈坎·費丹接受土耳其國營阿納多盧通訊社訪問時強調,三國不視任何特定國家為敵對目標,除非對方對其採取敵對行動。 費丹表示:「我們沒有任何書面協議,沒有任何已簽署的文件,定義共同威脅。任何不攻擊我們的國家,都不是我們的目標。」 土耳其外長形容協議中關於共同防禦的條款,「技術上與北約第五條款相同」。北約第五條款規定,攻擊其中一個成員國,將被視為攻擊所有32個成員國。 被問及機制如何運作,費丹表示,成員國需要正式請求協助。另外兩國的協助範圍可從情報共享到後勤支援,或根據威脅部署軍事單位。 費丹表示:「這些是多層次的事宜,會根據威脅規模而有所不同。這是我們目前工作中設定的觀點。」 土耳其外長表示,其他國家(他沒有點名)已表示有興趣加入協議,並預計埃及(他形容為「天然夥伴」)將在下一階段參與。 根據協議,三國的外長、防長及軍事首長將定期舉行委員會會議。費丹表示,三國亦將設立一個秘書處,總部設於沙特阿拉伯。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16532490-%E5%9C%9F%E8%80%B3%E5%85%B6%E6%B2%99%E7%89%B9%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E7%B0%BD%E9%98%B2%E5%8B%99%E5%8D%94%E8%AD%B0-%E5%A4%96%E9%95%B7%EF%BC%9A%E9%9D%9E%E9%87%9D%E5%B0%8D%E4%BC%8A%E6%9C%97",
+      "pubDate": "2026-08-08 20:07:59",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1fd785d1c261621f8dcb33010c4f14e2_Saudi_Turkey_Pakistan__7335_FB.jpg",
+      "keywords": [
+        "巴基斯坦",
+        "土耳其",
+        "大視野",
+        "防務協議",
+        "伊朗",
+        "沙特阿拉伯"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
     {
       "id": "7ad586001eb5c58afa6d701db3498a8c",
       "title": "美職|美斯父親病逝終年68歲 培育愛兒成為球王",
