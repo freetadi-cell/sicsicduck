@@ -82,6 +82,35 @@ def card(a, show_image, lead_index=0):
         image_block = ""
 
     summary = load_summary(aid)
+
+    # 第 4 篇起：純標題列表（唔用框、冇圖、冇 meta）
+    if not show_image:
+        # 有摘要 → 標題可開 modal；冇摘要 → 直接外連
+        if summary:
+            modal = f'''<div class="news-modal" id="modal-{esc(aid)}" data-modal>
+        <div class="news-modal-backdrop" onclick="closeModal('{esc(aid)}')"></div>
+        <div class="news-modal-dialog">
+            <button class="news-modal-close" onclick="closeModal('{esc(aid)}')">✕</button>
+            <h2 class="news-modal-title">{title}</h2>
+            <div class="news-modal-meta">
+                <span class="article-source">{src}</span>
+                <span class="article-date">📅 {pub}</span>
+            </div>
+            <div class="news-modal-body">
+                <p class="news-modal-rewritten">{esc(summary)}</p>
+                <p class="news-modal-copy">* 以上內容為本站以人工智能改寫之摘要，版權屬原媒體所有。</p>
+            </div>
+            <div class="news-modal-footer">
+                <a class="news-modal-link" href="{link}" target="_blank" rel="noopener">📄 閱讀原文 →</a>
+            </div>
+        </div>
+    </div>'''
+            item = f'''<a href="javascript:void(0)" class="news-title-link" data-modal-id="{esc(aid)}" data-category="{cats}" data-region="{region}" style="text-decoration:none;color:inherit;display:block;padding:10px 0;border-bottom:1px solid var(--gold-100);">{title}</a>'''
+            return item, modal
+        else:
+            item = f'''<a href="{link}" target="_blank" rel="noopener" class="news-title-link" data-category="{cats}" data-region="{region}" style="text-decoration:none;color:inherit;display:block;padding:10px 0;border-bottom:1px solid var(--gold-100);">{title}</a>'''
+            return item, None
+
     if summary:
         summary_esc = esc(summary)
         # 有本地改寫 → 卡片點擊開 modal, 用 data-modal-id
