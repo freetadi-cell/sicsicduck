@@ -40,6 +40,7 @@ if ! python3 scripts/fetch_article_body.py --all-sources 0 >> /tmp/sicsicduck-ne
 fi
 
 # 1.6) 淨化 news.json：只保留有摘要(rewritten)嗰啲文章，冇摘要嘅移除（唔堆返幾千篇落 cache）
+# 淨化牌先將 rank 標記清走，避免殘留舊嘅 pinned
 SHOWN=$(grep -c 'class="article-card"' news.html)
 python3 - <<'EOF' >> /tmp/sicsicduck-news.log 2>&1
 import json, os
@@ -65,7 +66,12 @@ if removed > 0:
     print(f"[purge] 移除 {removed} 篇冇摘要，保留 {len(kept)} 篇")
 EOF
 
-# 1.7) 重建 news.html（只顯示有摘要嘅文章）——唔重新抓取
+# 1.7) 用 GLM-5.2 判斷當日最火熱 + 非娛樂花邊新聞，置頂頭 4 篇（失敗不阻斷部署）
+if ! ./venv/bin/python3 scripts/rank_news.py >> /tmp/sicsicduck-news.log 2>&1; then
+  echo "[cron_news] GLM 置頂判斷失敗（已跳過，不阻塞部署）" >> /tmp/sicsicduck-news.log
+fi
+
+# 1.8) 重建 news.html（只顯示有摘要嘅文章）——唔重新抓取
 # 注意：用 venv python 行，確保 OpenCC（簡體→繁體標題/摘要轉換）可正常載入
 ./venv/bin/python3 scripts/build_news_local.py --summary-only >> /tmp/sicsicduck-news.log 2>&1
 
