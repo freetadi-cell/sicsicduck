@@ -231,15 +231,15 @@ function classifyArticle(article) {
         article.dataset.category = existing + ',' + categories.join(',');
     }
 }
-document.querySelectorAll('.article-card').forEach(classifyArticle);
+document.querySelectorAll('.article-card, .news-title-link').forEach(classifyArticle);
 
 let currentSearch = '';
 let currentCategory = 'all';
 function applyFilters() {
-    const articles = document.querySelectorAll('.article-card');
+    const articles = document.querySelectorAll('.article-card, .news-title-link');
     let shown = 0;
     articles.forEach(article => {
-        const title = (article.querySelector('.article-title')?.textContent || '').toLowerCase();
+        const title = (article.querySelector('.article-title')?.textContent || article.textContent || '').toLowerCase();
         const desc = (article.querySelector('.article-description')?.textContent || '').toLowerCase();
         const cats = (article.dataset.category || '').split(',').map(c => c.trim().toLowerCase());
         const matchCat = currentCategory === 'all' || cats.includes(currentCategory.toLowerCase());
@@ -282,7 +282,7 @@ function closeModal(id) {
     const m = document.getElementById('modal-' + id);
     if (m) { m.classList.remove('open'); document.body.style.overflow = ''; }
 }
-document.querySelectorAll('.article-card[data-modal-id]').forEach(card => {
+document.querySelectorAll('.article-card[data-modal-id], .news-title-link[data-modal-id]').forEach(card => {
     card.addEventListener('click', (e) => {
         e.preventDefault();
         openModal(card.dataset.modalId);
