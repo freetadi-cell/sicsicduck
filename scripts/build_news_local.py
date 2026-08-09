@@ -56,15 +56,46 @@ def load_summary(aid):
     return None
 
 
-# 最新頭 4 篇先顯示圖片（用站內無版權 CC0/公有領域圖，唔 hotlink 原媒體）
+# 最新頭 4 篇先顯示圖片——按新聞主題派對應嘅無版權圖（唔 hotlink 原媒體）
 LEAD_IMAGE_COUNT = 4
-# 站內無版權圖（CC0/公有領域，Wikimedia Commons）—— 循環派畀頭幾篇
-LEAD_IMAGES = [
-    "/assets/news/finance-1.jpg",
-    "/assets/news/finance-2.jpg",
-    "/assets/news/finance-3.jpg",
-    "/assets/news/finance-4.jpg",
+
+# 站內無版權主題圖（CC0/公有領域，Wikimedia Commons）—— 按新聞主題配圖
+THEME_MONEY = "/assets/news/theme-money.jpg"     # 美元鈔票（公有領域）
+THEME_STOCK = "/assets/news/theme-stock.jpg"     # NYSE 交易大廳（公有領域）
+THEME_HK = "/assets/news/theme-hk.jpg"           # 香港天際線（CC0）
+THEME_WORLD = "/assets/news/theme-world.jpg"     # 世界地圖（公有領域）
+THEME_RATES = "/assets/news/theme-rates.jpg"     # 國庫債券（公有領域）
+THEME_MINING = "/assets/news/theme-mining.jpg"   # 露天礦場（公有領域）
+THEME_TECH = "/assets/news/theme-tech.jpg"       # 晶片/半導體（公有領域）
+THEME_GOLD = "/assets/news/theme-gold.jpg"       # 金條（CC0）
+
+# 兜底：無匹配主題時用嘅通用財經圖
+THEME_FALLBACK = "/assets/news/finance-1.jpg"
+
+# 主題判斷關鍵詞（標題 + category + keywords）
+THEME_KEYWORDS = [
+    # (主題圖, [關鍵詞...])
+    (THEME_GOLD, ["金價", "黃金", "金條", "貴金屬", "金市", "金飾", "實金"]),
+    (THEME_MINING, ["礦業", "礦產", "礦場", "開採", "稀土", "鋰", "銅礦", "鐵礦", "能源轉型"]),
+    (THEME_TECH, ["晶片", "半導體", "芯片", "微軟", "谷歌", "蘋果", "ai", "人工智能", "數據中心", "科技股", "軟銀", "nvidia", "輝達"]),
+    (THEME_RATES, ["利率", "利息", "息口", "加息", "減息", "債息", "孳息", "國債", "美債", "儲局", "聯儲", "基準利率", "存款利率", "按揭利率", "美匯", "匯率", "外匯", "美元", "港元", "走勢", "通脹", "貨幣"]),
+    (THEME_STOCK, ["股市", "港股", "美股", "股價", "恒指", "恆指", "納指", "道指", "上證", "深證", "a股", "ipo", "股份", "牛市", "熊市", "成交", "基金", "etf", "海力士", "半導體股"]),
+    (THEME_HK, ["樓市", "樓價", "屋苑", "物業", "住宅", "新盤", "樓花", "租金", "買樓", "賣樓", "地皮", "發展商", "地產", "置業", "按揭", "香港", "港府", "金管局"]),
+    (THEME_WORLD, ["國際", "全球", "美國", "特朗普", "中國", "俄羅斯", "烏克蘭", "戰爭", "襲擊", "無人機", "爆炸", "軍事", "國防", "伊朗", "以色列", "聯合國", "北約", "歐盟", "世界", "外交", "地緣", "攻擊", "威脅", "衝突"]),
 ]
+
+
+def theme_for(a):
+    """按新聞標題/category/keywords 判斷主題圖；無匹配返回兜底圖"""
+    title = str(a.get("title", ""))
+    cats = " ".join(a.get("category", []) or [])
+    kws = " ".join(str(k) for k in (a.get("keywords", []) or []))
+    text = (title + " " + cats + " " + kws).lower()
+    for img, kws_list in THEME_KEYWORDS:
+        if any(kw in text for kw in kws_list):
+            return img
+    return THEME_FALLBACK
+
 
 def card(a, show_image, lead_index=0):
     aid = a.get("id", "")
@@ -75,9 +106,9 @@ def card(a, show_image, lead_index=0):
     region = esc(a.get("region", ""))
     link = esc(a.get("link", "#"))
 
-    # 圖片：只喺頭幾篇 show_image=True 時顯示站內無版權圖；其餘唔 render 圖片區塊
+    # 圖片：只喺頭幾篇 show_image=True 時按主題派無版權圖；其餘唔 render 圖片區塊
     if show_image:
-        image = esc(LEAD_IMAGES[lead_index % len(LEAD_IMAGES)])
+        image = esc(theme_for(a))
         image_block = f'''<div class="article-image"><img src="{image}" alt="" loading="lazy"></div>'''
     else:
         image_block = ""
