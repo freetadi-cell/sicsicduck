@@ -56,6 +56,21 @@ def load_summary(aid):
     return None
 
 
+def load_title(aid):
+    """讀改寫標題（rewritten_title）；冇就返 None（由 caller fallback 原標題）"""
+    p = CACHE_DIR / f"{aid}.json"
+    if not p.exists():
+        return None
+    try:
+        d = json.loads(p.read_text(encoding="utf-8"))
+        rt = d.get("rewritten_title")
+        if d.get("status") == "done" and rt:
+            return to_trad(rt)
+    except json.JSONDecodeError:
+        pass
+    return None
+
+
 # 最新頭 4 篇先顯示圖片——按新聞主題派對應嘅無版權圖（唔 hotlink 原媒體）
 LEAD_IMAGE_COUNT = 4
 
@@ -99,7 +114,8 @@ def theme_for(a):
 
 def card(a, show_image, lead_index=0):
     aid = a.get("id", "")
-    title = esc(to_trad(a.get("title", "")))
+    # 標題：優先用改寫標題（避版權），冇先 fallback 原標題
+    title = esc(load_title(aid) or to_trad(a.get("title", "")))
     src = esc(a.get("source_name", ""))
     pub = esc((a.get("pubDate", "") or "")[:10])
     cats = esc(",".join(a.get("category", [])))

@@ -128,17 +128,22 @@ def fetch_body(url):
 
 # ---------- 智譜 API 改寫 ----------
 def rewrite_with_glm(api_key, title, body):
-    sys_prompt = ("你係專業中文新聞摘要寫手。將用戶提供嘅新聞正文，改寫為一段約"
-                  f"{MAX_SUMMARY_CHARS}字以內嘅中文摘要。\n"
+    sys_prompt = ("你係專業中文新聞編輯，負責將原媒體新聞改寫成自家版本嘅標題同摘要，避免逐字照抄原媒體（版權問題）。\n"
                   "【語言要求】必須使用繁體中文（香港／台灣用字，如『資訊、支援、網絡、程式、股價』等），"
                   "絕不可輸出簡體字。\n"
-                  "【字數】全文必須控制在 200 字以內，唔好超過。\n"
-                  "【分段】如內容較多，可按自然段落分段（每段 2-3 句），但全文總字數仍不得超過 200 字。\n"
-                  "要求：用你自己嘅措辭重新組織，不得逐字複製原文句子；"
-                  "客觀陳述事實，保留必要數字、公司名、人名；"
-                  "唔好加個人評論，唔好加『以下係』『總結嚟講』等套話；"
-                  "直接輸出摘要正文，唔好加標題。")
-    user_prompt = f"新聞標題：{title}\n\n新聞正文：\n{body}"
+                  "【標題要求】將原標題改寫為一句自己嘅講法（約 20-30 字）：\n"
+                  "  - 保留新聞事實：人名（特朗普、李聲揚等）、數字、地點、公司名一定要留\n"
+                  "  - 保留關鍵詞用嚟搜尋分類：樓市、利率、股市、美匯、金價、地產等字眼要留住\n"
+                  "  - 唔逐字照搬原標題，換措辭重新組織\n"
+                  "  - 唔好改成 clickbait 或誇大失真，客觀持平\n"
+                  "【摘要要求】將新聞正文改寫為一段約"
+                  f"{MAX_SUMMARY_CHARS}字以內嘅中文摘要。\n"
+                  "  - 用你自己嘅措辭重新組織，不得逐字複製原文句子\n"
+                  "  - 客觀陳述事實，保留必要數字、公司名、人名\n"
+                  "  - 唔好加個人評論，唔好加『以下係』『總結嚟講』等套話\n"
+                  "【輸出格式】只輸出 JSON，唔好加任何其他文字：\n"
+                  "  {\"title\": \"改寫後標題\", \"summary\": \"改寫後摘要\"}")
+    user_prompt = f"原新聞標題:{title}\n\n原新聞正文:\n{body}"
 
     payload = json.dumps({
         "model": API_MODEL,
@@ -147,7 +152,7 @@ def rewrite_with_glm(api_key, title, body):
             {"role": "user", "content": user_prompt},
         ],
         "temperature": 0.5,
-        "max_tokens": 500,
+        "max_tokens": 700,
     }).encode("utf-8")
 
     req = urllib.request.Request(
@@ -237,18 +242,31 @@ def main():
             continue
 
         try:
-            rewritten = rewrite_with_glm(api_key, title, body)
+            out = rewrite_with_glm(api_key, title, body)
+            # 解析 JSON：{title, summary}
+            rewritten_title, rewritten = title, None
+            try:
+                parsed = json.loads(out.strip())
+                if isinstance(parsed, dict):
+                    rewritten_title = (parsed.get("title") or title).strip()
+                    rewritten = (parsed.get("summary") or "").strip()
+            except json.JSONDecodeError:
+                # 兼容舊版：直接當摘要
+                rewritten = out.strip()
+            if not rewritten:
+                raise ValueError("GLM 冇回摘要")
             if len(rewritten) > MAX_SUMMARY_CHARS + 50:
                 rewritten = rewritten[:MAX_SUMMARY_CHARS] + "…"
             entry = {
                 "id": aid, "title": title, "source_name": src, "link": link,
+                "rewritten_title": rewritten_title,
                 "rewritten": rewritten,
                 "status": "done",
                 "fetched_at": datetime.now().isoformat(timespec="seconds"),
             }
             save_cache(entry)
             done += 1
-            print(f"    ✅ 改寫成功 ({len(rewritten)}字)")
+            print(f"    ✅ 改寫成功 (標題+{len(rewritten)}字摘要)")
         except Exception as e:
             entry = {
                 "id": aid, "title": title, "source_name": src, "link": link,
