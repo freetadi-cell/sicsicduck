@@ -94,22 +94,39 @@ THEME_KEYWORDS = [
     (THEME_MINING, ["礦業", "礦產", "礦場", "開採", "稀土", "鋰", "銅礦", "鐵礦", "能源轉型"]),
     (THEME_TECH, ["晶片", "半導體", "芯片", "微軟", "谷歌", "蘋果", "ai", "人工智能", "數據中心", "科技股", "軟銀", "nvidia", "輝達"]),
     (THEME_RATES, ["利率", "利息", "息口", "加息", "減息", "債息", "孳息", "國債", "美債", "儲局", "聯儲", "基準利率", "存款利率", "按揭利率", "美匯", "匯率", "外匯", "美元", "港元", "走勢", "通脹", "貨幣"]),
-    (THEME_STOCK, ["股市", "港股", "美股", "股價", "恒指", "恆指", "納指", "道指", "上證", "深證", "a股", "ipo", "股份", "牛市", "熊市", "成交", "基金", "etf", "海力士", "半導體股"]),
+    (THEME_STOCK, ["股市", "港股", "美股", "股價", "恒指", "恆指", "納指", "道指", "上證", "深證", "a股", "ipo", "股份", "牛市", "熊市", "成交", "基金", "etf", "海力士", "半導體股", "私有化", "回購", "復牌", "溢價", "券商", "證監會", "上市", "停牌", "股息", "派息"]),
     (THEME_HK, ["樓市", "樓價", "屋苑", "物業", "住宅", "新盤", "樓花", "租金", "買樓", "賣樓", "地皮", "發展商", "地產", "置業", "按揭", "香港", "港府", "金管局"]),
-    (THEME_WORLD, ["國際", "全球", "美國", "特朗普", "中國", "俄羅斯", "烏克蘭", "戰爭", "襲擊", "無人機", "爆炸", "軍事", "國防", "伊朗", "以色列", "聯合國", "北約", "歐盟", "世界", "外交", "地緣", "攻擊", "威脅", "衝突"]),
+    (THEME_WORLD, ["全球", "美國", "特朗普", "俄羅斯", "烏克蘭", "戰爭", "襲擊", "無人機", "爆炸", "軍事", "國防", "伊朗", "以色列", "聯合國", "北約", "歐盟", "世界", "外交", "地緣", "攻擊", "威脅", "衝突", "中東", "亞太", "南海", "台海", "對華", "美中"]),
 ]
 
 
-def theme_for(a):
-    """按新聞標題/category/keywords 判斷主題圖；無匹配返回兜底圖"""
+# 已派過嘅圖（避免頭幾篇相鄰卡片重複用同一張）——build 時會 reset
+_used_images = set()
+
+
+def theme_for(a, avoid_repeat=True):
+    """按新聞標題/category/keywords 判斷主題圖；無匹配返回兜底圖。
+    avoid_repeat=True 時會避開近期已派過嘅圖，令頭幾篇圖片更多元。"""
     title = str(a.get("title", ""))
     cats = " ".join(a.get("category", []) or [])
     kws = " ".join(str(k) for k in (a.get("keywords", []) or []))
     text = (title + " " + cats + " " + kws).lower()
+    # 按主題優先順序試，避開已用圖
+    candidates = []
     for img, kws_list in THEME_KEYWORDS:
         if any(kw in text for kw in kws_list):
+            candidates.append(img)
+    # 主題冇撞到 → 用兜底圖
+    if not candidates:
+        candidates = [THEME_FALLBACK]
+    # 揀第一張未用過嘅；全部用過就任揀一張（去重後）
+    for img in candidates:
+        if not avoid_repeat or img not in _used_images:
+            if avoid_repeat:
+                _used_images.add(img)
             return img
-    return THEME_FALLBACK
+    # 理論上唔會到呢度；兜底返第一張
+    return candidates[0]
 
 
 def card(a, show_image, lead_index=0):
@@ -218,6 +235,8 @@ def build():
     modals_html = []
     shown = 0
     lead_shown = 0  # 頭幾篇先有圖片
+    global _used_images
+    _used_images = set()  # 每趟 build 重新計，避免跨 run 記住舊圖
     for a in articles:
         show_image = lead_shown < LEAD_IMAGE_COUNT
         c, m = card(a, show_image, lead_shown)
