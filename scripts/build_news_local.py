@@ -544,7 +544,6 @@ document.addEventListener('keydown', (e) => {
     <button class="category-tab" data-category="sports">體育</button>
     <button class="category-tab" data-category="science">科學</button>
     <button class="category-tab" data-category="health">健康</button>
-    <button class="category-tab" data-category="politics">政治</button>
 </div>
 
 <!-- Articles Section -->
