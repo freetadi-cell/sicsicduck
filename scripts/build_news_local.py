@@ -84,8 +84,22 @@ THEME_MINING = "/assets/news/theme-mining.jpg"   # 露天礦場（公有領域�
 THEME_TECH = "/assets/news/theme-tech.jpg"       # 晶片/半導體（公有領域）
 THEME_GOLD = "/assets/news/theme-gold.jpg"       # 金條（CC0）
 
-# 兜底：無匹配主題時用嘅通用財經圖
-THEME_FALLBACK = "/assets/news/finance-1.jpg"
+# 兜底：無匹配主題時用嘅通用財經圖（多張輪住派，避免頭幾篇重複）
+THEME_FALLBACKS = [
+    "/assets/news/finance-1.jpg",
+    "/assets/news/finance-2.jpg",
+    "/assets/news/finance-3.jpg",
+    "/assets/news/finance-5.jpg",
+    "/assets/news/finance-6.jpg",
+    "/assets/news/theme-life.jpg",
+]
+
+# 生活/人物/娛樂/教育/健康類主題圖（CC0/公有領域）
+THEME_LIFE = "/assets/news/theme-life.jpg"      # 城市/生活（CC0）
+THEME_ENT = "/assets/news/theme-ent.jpg"        # 娛樂/演藝（公有領域）
+THEME_EDU = "/assets/news/theme-edu.jpg"        # 教育/校園（公有領域）
+THEME_HEALTH = "/assets/news/theme-health.jpg"  # 健康/醫療（公有領域）
+THEME_WEATHER = "/assets/news/theme-weather.jpg" # 天氣/氣候（公有領域）
 
 # 主題判斷關鍵詞（標題 + category + keywords）
 THEME_KEYWORDS = [
@@ -97,6 +111,12 @@ THEME_KEYWORDS = [
     (THEME_STOCK, ["股市", "港股", "美股", "股價", "恒指", "恆指", "納指", "道指", "上證", "深證", "a股", "ipo", "股份", "牛市", "熊市", "成交", "基金", "etf", "海力士", "半導體股", "私有化", "回購", "復牌", "溢價", "券商", "證監會", "上市", "停牌", "股息", "派息"]),
     (THEME_HK, ["樓市", "樓價", "屋苑", "物業", "住宅", "新盤", "樓花", "租金", "買樓", "賣樓", "地皮", "發展商", "地產", "置業", "按揭", "香港", "港府", "金管局"]),
     (THEME_WORLD, ["全球", "美國", "特朗普", "俄羅斯", "烏克蘭", "戰爭", "襲擊", "無人機", "爆炸", "軍事", "國防", "伊朗", "以色列", "聯合國", "北約", "歐盟", "世界", "外交", "地緣", "攻擊", "威脅", "衝突", "中東", "亞太", "南海", "台海", "對華", "美中"]),
+    # 生活/人物/娛樂/教育/健康/天氣——常見但撞唔到財經主題嘅新聞類型
+    (THEME_WEATHER, ["天氣", "高溫", "酷熱", "熱浪", "暴雨", "颱風", "溫度", "氣溫", "天文台", "寒流", "寒潮", "氣候"]),
+    (THEME_EDU, ["學生", "學校", "大學", "學位", "留學", "升學", "課程", "考試", "dse", "文憑試", "中學", "小學", "幼稚園", "教育", "gpa", "學費"]),
+    (THEME_HEALTH, ["健康", "醫療", "醫院", "醫生", "病人", "疫苗", "疫情", "疾病", "染病", "治療", "手術", "診所", "保健", "疾病", "流感", "癌症", "心臟", "腦"]) ,
+    (THEME_ENT, ["明星", "藝人", "歌手", "演員", "演唱會", "電影", "電視劇", "劇集", "頒獎", "紅館", "娛樂", "新聞台", "女主播", "網紅", "fans", "歌迷", "影迷", "緋聞", "結婚", "離婚", "生b", "生仔", "懷孕", "演唱會", "影帝", "影后"]),
+    (THEME_LIFE, ["生活", "人物", "市民", "社區", "交通", "巴士", "地鐵", "港鐵", "天氣炎熱", "客", "新聞", "見聞", "趣聞", "社會", "虐", "火災", "意外", "事故", "偷", "劫", "賊", "騙", "罪案", "被捕", "警", "法庭", "審訊", "檢控"]),
 ]
 
 
@@ -116,16 +136,24 @@ def theme_for(a, avoid_repeat=True):
     for img, kws_list in THEME_KEYWORDS:
         if any(kw in text for kw in kws_list):
             candidates.append(img)
-    # 主題冇撞到 → 用兜底圖
+    # 主題冇撞到 → 用兜底圖庫（多張通用財經/生活圖，輪住派避重複）
     if not candidates:
-        candidates = [THEME_FALLBACK]
-    # 揀第一張未用過嘅；全部用過就任揀一張（去重後）
+        candidates = list(THEME_FALLBACKS)
+    # 揀第一張未用過嘅；全部用過就輪番唔重複派（優先未用，其次冧序）
+    seen = set()
     for img in candidates:
         if not avoid_repeat or img not in _used_images:
             if avoid_repeat:
                 _used_images.add(img)
             return img
-    # 理論上唔會到呢度；兜底返第一張
+        seen.add(img)
+    # 全用過：搵一張唔喺已派 set 裏面嘅（兜底庫之外嘅主題圖）
+    for img in list(THEME_FALLBACKS) + list(dict(THEME_KEYWORDS).keys()):
+        if img not in _used_images:
+            _used_images.add(img)
+            return img
+    # 全部真係用晒：reset 再派第一張
+    _used_images.clear()
     return candidates[0]
 
 
