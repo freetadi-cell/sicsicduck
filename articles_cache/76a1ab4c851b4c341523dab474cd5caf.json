@@ -1,0 +1,10 @@
+{
+  "id": "76a1ab4c851b4c341523dab474cd5caf",
+  "title": "WeatherNext|谷歌AI一分鐘測15日颱風路徑",
+  "source_name": "Startupbeat",
+  "link": "https://www.ejtech.ai/ceoai/weathernext-%E8%B0%B7%E6%AD%8C-ai-%E4%B8%80%E5%88%86%E9%90%98-15%E6%97%A5-%E9%A2%B1%E9%A2%A8-%E8%B7%AF%E5%BE%91/",
+  "rewritten_title": "谷歌AI氣象模型WeatherNext 一分鐘預測15日颱風路徑",
+  "rewritten": "谷歌推出人工智能氣象模型WeatherNext，程式碼及模型權重已在GitHub發布。該模型只需不到一分鐘，就能在張量處理器（TPU）上生成15天的天氣預報，預測風暴路徑及強度，相關論文已刊登於學術期刊《自然》。模型由Google DeepMind與Google Research團隊共同訓練，汲取近20TB全球大氣資料及近5000次歷史風暴的IBTrACS資料庫，開發過程獲美國國家颶風中心、美國大…",
+  "status": "done",
+  "fetched_at": "2026-08-10T23:05:08"
+}
