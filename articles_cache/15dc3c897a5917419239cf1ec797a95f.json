@@ -1,0 +1,10 @@
+{
+  "id": "15dc3c897a5917419239cf1ec797a95f",
+  "title": "Microsoft 慳 RAM 承諾未兌現 內置天氣 App 竟食 1.6GB 記憶體",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/10/windows11-weather-app-ram/software/windows-11/",
+  "rewritten_title": "Microsoft 慳 RAM 承諾跳票 內置天氣 App 實測食 1.6GB 記憶體",
+  "rewritten": "Microsoft 早前承諾讓 Windows 11 更節省記憶體資源，但實測顯示內置天氣 App 記憶體佔用最高可達約 1.6GB，令針對低記憶體裝置的改良目標大打折扣。天氣 App 剛開啟時用約 1GB 記憶體，閒置後回落至約 600MB，但用戶進行縮放操作時用量迅速回升至約 1.5GB。問題根源在於天氣 App 是以 WebView2 技術開發的 MSN 天氣網頁包裝版本，工作管理員可見多達…",
+  "status": "done",
+  "fetched_at": "2026-08-11T05:03:18"
+}
