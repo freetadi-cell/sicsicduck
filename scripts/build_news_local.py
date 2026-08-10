@@ -157,13 +157,39 @@ def theme_for(a, avoid_repeat=True):
     return candidates[0]
 
 
+# ===== 財經層面分類（股市/地產/利率）=====
+# 篩選 tab 用 stock/property/interest，build 時按標題關鍵詞直接寫入 data-category
+STOCK_KEYWORDS = ["股票", "港股", "美股", "股市", "恒指", "恆指", "納指", "道指", "上證", "深證", "a股", "ipo", "股份", "股價", "升市", "跌市", "牛市", "熊市", "成交", "恆生", "證券", "基金", "etf", "回購", "私有化", "溢價", "券商", "證監會", "上市", "停牌", "股息", "派息"]
+PROPERTY_KEYWORDS = ["地產", "樓市", "樓價", "屋苑", "物業", "住宅", "新盤", "樓花", "租金", "買樓", "賣樓", "地皮", "發展商", "地產商", "樓宇", "房地產", "置業", "按揭", "呎價"]
+INTEREST_KEYWORDS = ["利率", "利息", "息口", "加息", "減息", "聯儲局", "央行", "基準利率", "存款利率", "貸款利率", "按揭利率", "孳息", "債息", "國債", "息率", "逆回購", "通脹"]
+
+
+def finance_tags(a):
+    """按標題/描述/category 判斷屬唔屬於股市/地產/利率，返回加嘅 tag 列表。"""
+    title = str(a.get("title", "") or "")
+    desc = str(a.get("description", "") or "")
+    cats = " ".join(a.get("category", []) or [])
+    text = (title + " " + desc + " " + cats).lower()
+    tags = []
+    if any(k in text for k in STOCK_KEYWORDS):
+        tags.append("stock")
+    if any(k in text for k in PROPERTY_KEYWORDS):
+        tags.append("property")
+    if any(k in text for k in INTEREST_KEYWORDS):
+        tags.append("interest")
+    return tags
+
+
 def card(a, show_image, lead_index=0):
     aid = a.get("id", "")
     # 標題：優先用改寫標題（避版權），冇先 fallback 原標題
     title = esc(load_title(aid) or to_trad(a.get("title", "")))
     src = esc(a.get("source_name", ""))
     pub = esc((a.get("pubDate", "") or "")[:10])
-    cats = esc(",".join(a.get("category", [])))
+    # 原始分類 + 財經層面分類（股市/地產/利率）併入 data-category
+    cats_raw = list(a.get("category", []) or [])
+    cats_raw += finance_tags(a)
+    cats = esc(",".join(cats_raw))
     region = esc(a.get("region", ""))
     link = esc(a.get("link", "#"))
 
