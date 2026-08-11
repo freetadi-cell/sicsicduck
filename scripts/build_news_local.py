@@ -518,7 +518,7 @@ document.addEventListener('keydown', (e) => {
 {header_html}
 <!-- Hero -->
 <section class="hero">
-    <h1>📰 新聞</h1>
+    <h1>📰 新聞摘要</h1>
 </section>
 
 <!-- Search Box -->
