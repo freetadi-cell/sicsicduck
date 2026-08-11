@@ -1,25 +1,6 @@
 {
   "articles": [
     {
-      "id": "8341804f72aad82b35656d6afa4b5a6d",
-      "title": "房協10.1起加租2.85% 每戶平均加$73至$200",
-      "description": "房協今日(11日)宣布其執行委員會通過2026年至2028年房協轄下出租屋邨的新租金安排。其轄下出租屋邨的租金將於今年10月1日起上調百分之2.85,新租金會維持至2028年9月30日。經調整後,房協甲類及乙類出租屋邨租戶將會分別每月平均多繳約73元及200元租金。 而近兩年新入伙的出租屋邨,包括香港仔漁映樓、洪水橋/厦村樂翹樓1座、粉嶺樂嶺樓及牛頭角鴻鵠臺第一座,並不涵蓋於是次租金檢討。 房協表",
-      "link": "https://www.stheadline.com/society/3603156/%E6%88%BF%E5%8D%94101%E8%B5%B7%E5%8A%A0%E7%A7%9F285-%E6%AF%8F%E6%88%B6%E5%B9%B3%E5%9D%87%E5%8A%A073%E8%87%B3200",
-      "pubDate": "2026-08-11 02:58:47",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/4a0809720155bd49f5a8bfb601354931/2026-08/KakaoTalk_20240821_163545285_04.jpg",
-      "keywords": [
-        "公屋加租",
-        "房協"
-      ],
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "a1e7196161dd4899cd5cfab6c1577c29",
       "title": "日圓再跌穿「5算」 美日干預效應漸消退 市場關注今日會否「突襲」",
       "description": "日圓重現跌勢,每百兌港元最新報4.92水平,再次跌穿「5算」。據彭博報道,日圓早前因美日聯手入市干預而獲得的強勁反彈,目前已回吐超過一半,其中日圓兌美元匯價回落至159.29,標誌市場對日圓的悲觀情緒再度浮現,並密切注視當局會否再次出手托市。值得留意的是,市場猜測當局或會趁今日(11日)日本假期交投淡靜之際再次突襲。 重新聚焦美日龐大息差等因素 據彭博分析指出,日圓7月下旬一度跌至164兌一美元的",
@@ -39,15 +20,52 @@
       "pinned": true
     },
     {
-      "id": "b4270cba70a81b1a458641b4832f180f",
-      "title": "金價創年內單周最大漲幅 回歸上行通道",
-      "description": "中評社北京8月11日電/北京時間8月11日,COMEX黃金期貨上漲1.11%,收報4448.6美元/盎司;現貨黃金盤中最高觸及4395美元/盎司,距離4400美元關口近在咫尺;過去一周現貨黃金累計漲幅超7%,創下今年1月以來最大單周漲幅。 據新華社報導,本輪金價走強受到多重因素共同推動。地緣層面,美伊圍繞霍爾木茲海峽通航博弈持續發酵。特朗普10日表態,將向伊朗提出索賠並納入談判議程。",
-      "link": "http://www.crntt.com/doc/7_0_107222428_1_0811105652.html",
-      "pubDate": "2026-08-11 02:56:52",
-      "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202608/11/107222430.jpg",
+      "id": "3ccad1af9742c54af90b6f85f31b8f98",
+      "title": "亞幣保衛戰|日美聯手撐日圓真相曝光! 植田和男暗示加快加息",
+      "description": "據日本共同社,多位日本政府官員10日透露,日美兩國政府於美國東部時間7月31日實施了一次異乎尋常的聯合日元買入干預,這是28年來首次此類行動。其",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60378718/%E4%BA%9E%E5%B9%A3%E4%BF%9D%E8%A1%9B%E6%88%B0-%E6%97%A5%E7%BE%8E%E8%81%AF%E6%89%8B%E6%92%90%E6%97%A5%E5%9C%93%E7%9C%9F%E7%9B%B8%E6%9B%9D%E5%85%89-%E6%A4%8D%E7%94%B0%E5%92%8C%E7%94%B7%E6%9A%97%E7%A4%BA%E5%8A%A0%E5%BF%AB%E5%8A%A0%E6%81%AF",
+      "pubDate": "2026-08-10 23:55:17",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20241129/939217898323316736605214.jpeg/cRxajiRRAmP77e7fCny97b3gpfq1KCyAFtFEURbRRFE",
       "keywords": [
-        "國際金價"
+        "財經透視",
+        "股票",
+        "a股",
+        "新聞",
+        "港股",
+        "財經網",
+        "財經新聞",
+        "地產消息",
+        "hk01",
+        "香港新聞",
+        "經濟",
+        "財經台",
+        "香港01",
+        "恆生指數"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "9c03d67dcf2a8a39bbb9826949cb7546",
+      "title": "馬時亨指內地追稅難衝擊港樓及金融 北水繼續南下 「分散風險無地方好過香港」|跨境監管",
+      "description": "貿發局周二(11日)將於馬來西亞吉隆坡舉行「成就機遇.首選香港」推廣活動,主席馬時亨今日(10日)在當地會見香港傳媒。他回應近期限制資本外流,以及「跨境追稅」報道時表示,即使部分內地富裕人士需要補繳稅款,相信對香港的資產管理業務及樓市不會構成太大衝擊,又預告貿發局下月或上調本港全年出口增長數字。 富裕人士不介意補交稅 內地近期多次傳出限制資本外流的消息,馬時亨認為,內地有14億人口,即使少部分人來",
+      "link": "https://www.stheadline.com/realtime-finance/3602995/%E9%A6%AC%E6%99%82%E4%BA%A8%E6%8C%87%E5%85%A7%E5%9C%B0%E8%BF%BD%E7%A8%85%E9%9B%A3%E8%A1%9D%E6%93%8A%E6%B8%AF%E6%A8%93%E5%8F%8A%E9%87%91%E8%9E%8D-%E5%8C%97%E6%B0%B4%E7%B9%BC%E7%BA%8C%E5%8D%97%E4%B8%8B-%E5%88%86%E6%95%A3%E9%A2%A8%E9%9A%AA%E7%84%A1%E5%9C%B0%E6%96%B9%E5%A5%BD%E9%81%8E%E9%A6%99%E6%B8%AF%E8%B7%A8%E5%A2%83%E7%9B%A3%E7%AE%A1",
+      "pubDate": "2026-08-10 12:45:40",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/c633f6f469e86a7f052b286e3ffa5a8e/2026-08/260810_hktdcma.png",
+      "keywords": [
+        "跨境監管",
+        "保險收益",
+        "跨境追稅",
+        "馬時亨",
+        "成就機遇",
+        "張淑芬",
+        "首選香港",
+        "貿發局"
       ],
       "category": [
         "top",
@@ -57,40 +75,851 @@
       "pinned": true
     },
     {
-      "id": "466a9d14ebb6b709b899036b3364dc69",
-      "title": "今日我咁睇|中東和談仍有波折 油價急升影響股市 恆指預計窄幅上落|小編苟豪",
-      "description": "1.美國及伊朗尚未就和議達成共識,導致油價再次反彈,雖然距離上次高位仍有距離,但考慮到現時股市的樂觀程度,油價...",
-      "link": "https://hk.finance.yahoo.com/news/%E4%BB%8A%E6%97%A5%E6%88%91%E5%92%81%E7%9D%87-%E4%B8%AD%E6%9D%B1%E5%92%8C%E8%AB%87%E4%BB%8D%E6%9C%89%E6%B3%A2%E6%8A%98-%E6%B2%B9%E5%83%B9%E6%80%A5%E5%8D%87%E5%BD%B1%E9%9F%BF%E8%82%A1%E5%B8%82-%E6%81%86%E6%8C%87%E9%A0%90%E8%A8%88%E7%AA%84%E5%B9%85%E4%B8%8A%E8%90%BD-%E5%B0%8F%E7%B7%A8%E8%8B%9F%E8%B1%AA-020000534.html",
-      "pubDate": "2026-08-11 02:00:00",
-      "source_name": "Yahoo Finance",
-      "image_url": null,
+      "id": "a8f6466fd3647ca248f33196775919ae",
+      "title": "【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購",
+      "description": "香港政府新一批銀色債券今年保底息率提升至4.25厘,創近三年新高,發行額更由500億元上調至最多550億元,反映政府大手吸納銀髮資金應對高息環境下的市場需求。今年門檻依舊——申請人須於1967年或之前出生,每手入場費維持1萬元,究竟今次「加息」加碼是否值得申請? 據政府公布,新一批銀色債券(第十一批)保底年利率定為4.25厘,較去年(第十批)的3.85厘明顯提升,是近三年以來最高水平;發行額目標為500億元,視乎市場反應可進一步增至550億元,年期維持3年。申請期由8月21日(星期五)上午9時起至9月4日(星期五)下午2時截止,正式發行日為9月15日(星期二)。合資格申請人須於1967年或之前出生,並持有效香港身份證,可透過配售銀行或指定證券經紀提出認購。 【息率比較】4.25厘屬近年高位 惟未及2023年 翻查歷年紀錄,銀色債券保底息率並非單向向上:2021年為3.5厘,2022年升至4厘,2023年一度攀上5厘高位,其後2024年回落至4厘,去年(第十批)再降至3.85厘。今年4.25厘的水平雖較去年明顯回升,但仍未及2023年的5厘高位,反映定價與當時市場利率環境仍有一定落差。 批次 保底息率 洞察 2023年(第七批) 5厘 近年最高 2024年(第八批) 4厘 回落 去年(第十批) 3.85厘 持續下行 今年(第十一批) 4.25厘 近三年新高,惟未及2023年.. The post 【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E6%9C%80%E6%96%B0%E8%B2%A1%E7%B6%93%E6%B6%88%E6%81%AF/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B82026%E7%AC%AC%E5%8D%81%E4%B8%80%E6%89%B9-2031135/",
+      "pubDate": "2026-08-09 06:23:55",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/05/ed-social-share_19873850955e4e5ab66fb9a_27499425069f836787b3ab.jpg",
       "keywords": [
-        "track portfolio",
-        "financial information",
-        "stock research",
-        "business",
-        "suze orman",
-        "stock valuation",
-        "personal finance",
-        "finance",
-        "investment tools",
-        "economy",
-        "stocks",
-        "investor",
-        "401k",
-        "stock",
-        "business news",
-        "real estate",
-        "retirement",
-        "mortgage",
-        "tax",
-        "investing"
+        "最新財經消息",
+        "最新財經資訊"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "e80169711f0845a8e1017d04f20541a4",
+      "title": "阮兆祥無懼「Fun Coffee」騙局陰霾 《東周刊》獨家直擊做孝子陪母飲茶兼派錢行善積福",
+      "description": "阮兆祥(祥仔)近期雖然無辜捲入投資騙案風波,但無損其孝順與向善的心!最新一期《東周刊》獨家直擊,孝順仔阮兆祥帶着需由外傭推輪椅的母親及女親友,現身一間屋邨酒樓歎茶。席間大夥兒言談甚歡,食飽後阮兆祥更主動埋單並殿後護航。在離開途中,阮兆祥看見一位老人家在烈日當空下坐地吹奏樂器討錢,他二話不說便打開銀包拿出現鈔放入對方的籃內,更不忘上前親切問候。事實上,阮兆祥一向熱心公益,經常為慈善活動做司儀及落區派",
+      "link": "https://www.stheadline.com/realtime-entertainment/3603001/%E9%98%AE%E5%85%86%E7%A5%A5%E7%84%A1%E6%87%BCFun-Coffee%E9%A8%99%E5%B1%80%E9%99%B0%E9%9C%BE-%E6%9D%B1%E5%91%A8%E5%88%8A%E7%8D%A8%E5%AE%B6%E7%9B%B4%E6%93%8A%E5%81%9A%E5%AD%9D%E5%AD%90%E9%99%AA%E6%AF%8D%E9%A3%B2%E8%8C%B6%E5%85%BC%E6%B4%BE%E9%8C%A2%E8%A1%8C%E5%96%84%E7%A9%8D%E7%A6%8F",
+      "pubDate": "2026-08-11 04:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/ba4033ebe4e4fd6c080ca85199c5f0ba/2026-08/ENT___6.png",
+      "keywords": [
+        "東周刊獨家",
+        "阮兆祥行善",
+        "阮兆祥",
+        "娛樂新聞",
+        "香港明星八卦",
+        "fun coffee投資騙案",
+        "阮兆祥澄清",
+        "阮兆祥騙案",
+        "fun coffee騙局"
+      ],
+      "category": [
+        "top",
+        "lifestyle",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2845a0c91e8bb868744a63bd1a3f5c9d",
+      "title": "筲箕灣長者「長車短搭」被扣$2.2不忿討公道:「我係交咗幾十年稅嘅人」 網民怒轟:攞咗着數仲驚人呃?|Juicy叮",
+      "description": "有筲箕灣長者在網上群組大吐苦水,指自己乘搭短途巴士時被多扣了兩毫子車資,結果不僅未能獲得網民同情,反被群起圍攻指責其「長車短搭」,期間更有網民以靈異故事作弄樓主,令原本充滿火藥味的討論變得極具娛樂性。 搭兩個站被扣$2.2 長者發帖討公道 一名女長者在「筲箕灣西灣河關注組」facebook專頁發帖抱怨,寫道:「我在筲箕灣南安里搭往柴灣方向的巴士(雖然只有一,二站路程,但手提太多東西故乘車)。樂遊卡",
+      "link": "https://www.stheadline.com/local-topics/3602824/%E7%AD%B2%E7%AE%95%E7%81%A3%E9%95%B7%E8%80%85%E9%95%B7%E8%BB%8A%E7%9F%AD%E6%90%AD%E8%A2%AB%E6%89%A322%E4%B8%8D%E5%BF%BF%E8%A8%8E%E5%85%AC%E9%81%93%E6%88%91%E4%BF%82%E4%BA%A4%E5%92%97%E5%B9%BE%E5%8D%81%E5%B9%B4%E7%A8%85%E5%98%85%E4%BA%BA-%E7%B6%B2%E6%B0%91%E6%80%92%E8%BD%9F%E6%94%9E%E5%92%97%E7%9D%80%E6%95%B8%E4%BB%B2%E9%A9%9A%E4%BA%BA%E5%91%83Juicy%E5%8F%AE",
+      "pubDate": "2026-08-11 04:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a84461a551f66cce0fa7a92210418c33/2026-08/20260811_NEWS_2scheme_0.png",
+      "keywords": null,
+      "category": [
+        "crime",
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9e52b25a87a749e1f4a5b6007cb4e7bb",
+      "title": "日白皮書刪台海攸關安保 荊元宙:某種妥協",
+      "description": "中評社台北8月11日電(記者 張穎齊)針對日本政府推出2026年版《防衛白皮書》,將中國定位為“前所未有最大的戰略挑戰”,但刪除“台海攸關安保”等文字,是否代表“台灣有事就是日本有事”的立場有所鬆動?前“國防大學”中大陸事事務研究所長荊元宙11日表示,若單純從文字表述來看,確實可視為某種程度上的妥協,但日本對中國軍事威脅的警戒實際上逐年增加,並不會因白皮書文字有所調整而改變。 日本防",
+      "link": "http://www.crntt.com/doc/7_0_160255611_1_0811115736.html",
+      "pubDate": "2026-08-11 03:57:35",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255639.jpg",
+      "keywords": [
+        "日本防衛白皮書",
+        "荊元宙"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6877b1a1e3addcf1ad534fcad4e06201",
+      "title": "朝野喊價無人機預算 張延廷:走到政治路線",
+      "description": "中評社台北8月11日電(記者 張穎齊)“立法院”朝野力推無人機採購特別條例,藍綠白各自提出版本。前台灣空軍副司令、退役中將張延廷11日向中評社表示,從俄烏戰爭實戰經驗來看,台灣真正應該強化的是中大型、具備遠程打擊能力的無人機,而不是將重心放在近距離城鎮作戰,這是極大的錯誤。 張延廷表示,“立法院”應該好好把關,但不是胡亂把關,關鍵是回到專業與軍事需求,而不是以政治立場決定軍事建軍方向",
+      "link": "http://www.crntt.com/doc/7_0_160255576_1_0811115235.html",
+      "pubDate": "2026-08-11 03:52:34",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255578.jpg",
+      "keywords": [
+        "無人機",
+        "張延廷"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bb440487fd9b27d5ff4a4b139fa9b275",
+      "title": "前NBA球員簡達正式報名參與WNBA選秀 指要求一視同仁",
+      "description": "簡達在社交平台發放簽署文件的影片,身穿的一件支持女性權益的T裇,寫上了「投資在女性、為女性支薪、僱用女性(Invest in women, pay women, hire women)」,他表示自己並非要嘲笑,而是認為自己擁有資格:「我知道我出現在球場上會引發激烈的爭論。我絕非為了嘲諷、戲弄或不尊重任何群體或個人的選擇而來。我只是要求現行規則對所有人一視同仁。這些規則正是許多WNBA球員和教練公開倡議的價值觀的體現。」之前在簡達宣布參加WNBA以後,共和黨的參議員候選人,曾3次在NBA上陣的萊斯韋特(Royce White)亦加入,並表示:「有時為了打籃球,我會認為自己是女性。」",
+      "link": "https://www.am730.com.hk/%E9%AB%94%E8%82%B2/1046740/%E5%89%8Dnba%E7%90%83%E5%93%A1%E7%B0%A1%E9%81%94%E6%AD%A3%E5%BC%8F%E5%A0%B1%E5%90%8D%E5%8F%83%E8%88%87wnba%E9%81%B8%E7%A7%80-%E6%8C%87%E8%A6%81%E6%B1%82%E4%B8%80%E8%A6%96%E5%90%8C%E4%BB%81",
+      "pubDate": "2026-08-11 03:51:57",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046740/article/1046740/df/01KZQDN16WHWBNBX50JWHFYXQY.png?updatedAt=1786420317",
+      "keywords": null,
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "de7415ebedff1d2f8cecaa082ffc3696",
+      "title": "陳錦鴻罕談最紅時退圈 全面引退僅考慮數小時:做戲只係賺錢活動 自傲教曉自閉兒求生技能",
+      "description": "現年59歲、前TVB一線小生陳錦鴻,在事業如日中天之際,為照顧患有自閉症的兒子陳駕樺(Edgar)而淡出幕前,這份偉大的父愛一直為外界稱道。近日,他接受HOY節目《關於快樂的死亡2》訪問,罕有地詳述當年作出此重大決定的心路歷程,坦言為了兒子的成長,放棄辛辛苦苦打拼的演藝事業,僅考慮了數小時就決定,其無私奉獻讓無數網民動容。 陳錦鴻:做戲只係賺錢活動 陳錦鴻在訪問中憶述,當年在演藝生涯高峰期選擇退下",
+      "link": "https://www.stheadline.com/film-drama/3602954/%E9%99%B3%E9%8C%A6%E9%B4%BB%E7%BD%95%E8%AB%87%E6%9C%80%E7%B4%85%E6%99%82%E9%80%80%E5%9C%88-%E5%85%A8%E9%9D%A2%E5%BC%95%E9%80%80%E5%83%85%E8%80%83%E6%85%AE%E6%95%B8%E5%B0%8F%E6%99%82%E5%81%9A%E6%88%B2%E5%8F%AA%E4%BF%82%E8%B3%BA%E9%8C%A2%E6%B4%BB%E5%8B%95-%E8%87%AA%E5%82%B2%E6%95%99%E6%9B%89%E8%87%AA%E9%96%89%E5%85%92%E6%B1%82%E7%94%9F%E6%8A%80%E8%83%BD",
+      "pubDate": "2026-08-11 03:49:20",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5b286af4c52b5ccb879a4b20515270ee/2026-08/KF_68_.png",
+      "keywords": [
+        "全面引退",
+        "陳錦鴻",
+        "最紅時退圈",
+        "求生",
+        "自閉兒",
+        "考慮數小時"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e92ff6b0d7b0debbfecfef98d7e29dc1",
+      "title": "對抗AI|專家研特殊圖案 避開AI監控",
+      "description": "美國網絡安全專家斯韋林根(Bill Swearingen)花費一年時間,開發「對抗圖案」生成系統noRecognition,而這些圖案可讓一般衣物、配件甚至車身表面,避開人工智能(AI)演算法的監控。",
+      "link": "https://www.ejtech.ai/ceoai/%E5%B0%8D%E6%8A%97-ai-%E5%B0%88%E5%AE%B6-%E7%89%B9%E6%AE%8A-%E5%9C%96%E6%A1%88-%E9%81%BF%E9%96%8B-ai-%E7%9B%A3%E6%8E%A7/",
+      "pubDate": "2026-08-11 03:48:58",
+      "source_name": "Startupbeat",
+      "image_url": "https://www.ejtech.ai/wp-content/uploads/2026/08/0811_P16-1.jpg",
+      "keywords": [
+        "監控",
+        "科技動態",
+        "ai",
+        "ceo-ai"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "78c128fff9fe7670831b606e4046f409",
+      "title": "《異動股》半新股三環集團飆一成逼近頂位,MLCC供應緊張傳獲三倍價錢追訂",
+      "description": "《經濟通通訊社11日專訊》上市一個月陶瓷電容供應商三環集團(06951)H股現價 升10.4%,報118.2元,盤中高見122元逼近歷史新高122.2元,現價計暫連升 三日累升13.9%。該股成交約254萬股,涉資2.95億元。 積層陶瓷電容(MLCC)業界傳出,因應供應緊張而且需求強勁,有客戶以兩倍甚至三倍 價錢向MLCC供應商譬如台企國巨或日企村田製作所等大廠訂貨,務求成功下單,令",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360811332",
+      "pubDate": "2026-08-11 03:45:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1372d8a7993acb567100620c016c9d5a",
+      "title": "AI見工|求職者建虛擬分身見工興起",
+      "description": "時至今日,不少企業開始利用人工智能(AI),協助面試開始前篩選履歷,連招募人員也使用AI虛擬形象,對求職者做首輪面試。",
+      "link": "https://www.ejtech.ai/ceoai/ai-%E8%A6%8B%E5%B7%A5-%E6%B1%82%E8%81%B7%E8%80%85-%E8%99%9B%E6%93%AC%E5%88%86%E8%BA%AB-%E8%A6%8B%E5%B7%A5-%E8%88%88%E8%B5%B7/",
+      "pubDate": "2026-08-11 03:42:20",
+      "source_name": "Startupbeat",
+      "image_url": "https://www.ejtech.ai/wp-content/uploads/2026/08/0811_P06-scaled.jpg",
+      "keywords": [
+        "科技動態",
+        "見工",
+        "ai",
+        "ceo-ai",
+        "虛擬分身"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a0a0cdbcab84785cbb32419b5b9af84e",
+      "title": "受香港保單收益徵稅消息影響 官媒:內地客重估赴港投保性價比",
+      "description": "內地據報開始對居民的境外保單收益徵收20%稅項,《上海證券報》近日調研發現,受「香港保單收益徵稅」消息影響,一些消費者正重新評估赴港投保性價比。報道引述多名香港保險營銷員指出,接到不少客戶諮詢徵稅的問...",
+      "link": "https://china.hket.com/article/4174409",
+      "pubDate": "2026-08-11 03:41:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174409/h34y980vowb_300.jpg",
+      "keywords": null,
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9b1fca8d97a0f4bae36b394c5c61b644",
+      "title": "趙少康:台必須發展無人機 不信追不上大疆",
+      "description": "中評社台北8月11日電(記者 張嘉文)中廣前董事長、中興政策文教基金會董事長趙少康今天表示,無人機在現代戰爭中的角色愈來愈重要,從俄烏戰爭到近期各地戰事都已充分證明,台灣發展無人機是一條必走的路。他不認同外界認為台灣追不上大陸大疆無人機的說法,強調土耳其都能將無人機發展到相當高的水準,“台灣怎麼可能不如土耳其?怎麼可能追不上大疆?” 中興政策文教基金會今天上午在“立法院”舉辦“台灣無",
+      "link": "http://www.crntt.com/doc/7_0_160255568_1_0811113920.html",
+      "pubDate": "2026-08-11 03:39:20",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255580.jpg",
+      "keywords": [
+        "無人機",
+        "中興政策文教基金會",
+        "趙少康"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "37f57a5271b03b46e540f10f6e487171",
+      "title": "金宣虎、李彩玟、鄭麗媛、秋英宇等人氣韓星齊聚!「2026 K-World Dream Awards」頒獎嘉賓華麗陣容公開",
+      "description": "「2026 K-World Dream Awards」(簡稱KWDA)繼K-POP明星陣容後,連歷代級頒獎嘉賓陣容也華麗集結。金宣虎、鄭麗媛、李彩玟、秋英宇等人氣演員,以及「撞球女帝」金佳映齊聚一堂,為迎接透過K-POP實現訪韓旅客2000萬人時代,以及邁向K文化強國的10週年慶典增添力量。",
+      "link": "https://www.koreastardaily.com/tc/news/163565",
+      "pubDate": "2026-08-11 03:39:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-11/163565-1062027.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0604dcfbde2d9542b6ff1e42eaad9d72",
+      "title": "許志安公開恩師梅姐舞台心法 細數華星時期低潮與突破",
+      "description": "安仔坦言入行初期並非一帆風順,推出首張唱片《戀愛片段》後,接連三張專輯銷量未如理想,讓他陷入長達三年的迷茫期。幸好隨後憑藉轉型作品《翻騰》橫掃三台冠軍,才為他開啟音樂上的無限可能,其後更憑《喜歡你是你》及《男人最痛》等金曲奠定實力派地位。接受主持人Colin訪問時,安仔除了分享各張專輯封面設計和拍攝趣事,還有當年於尖沙咀酒廊登台累積臨場經驗的歲月。他大讚華星唱片充滿濃厚人情味,並說:「華星喺我人生路途上佔咗個好重要嘅位置,係一間非常有溫度同埋人情味嘅公司,係我嘅娘家。」",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1046742/%E8%A8%B1%E5%BF%97%E5%AE%89%E5%85%AC%E9%96%8B%E6%81%A9%E5%B8%AB%E6%A2%85%E5%A7%90%E8%88%9E%E5%8F%B0%E5%BF%83%E6%B3%95-%E7%B4%B0%E6%95%B8%E8%8F%AF%E6%98%9F%E6%99%82%E6%9C%9F%E4%BD%8E%E6%BD%AE%E8%88%87%E7%AA%81%E7%A0%B4",
+      "pubDate": "2026-08-11 03:37:10",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046742/article/1046742/df/01KZQE6YKGG9SQ9SAQTQAQV0GN.jpg?updatedAt=1786419886",
+      "keywords": null,
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7971afd91f14a1f63f7c9c5c5706cd33",
+      "title": "內地留學人數創9年新低 英媒點出三大原因",
+      "description": "內地青年出國留學人數已從2019年的70萬人高峰降至2025年的57萬人,創2016年以來最低;去年留學生完成學業後回國的比例更升至94%,是歷史新高。英媒《經濟學人》最新專題指出,數據背後是三大原因...",
+      "link": "https://china.hket.com/article/4174404",
+      "pubDate": "2026-08-11 03:37:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174404/8731d3f2be70dba8c69b2baea49e99d9_1_300.jpg",
+      "keywords": [
+        "簽證",
+        "碩士",
+        "企業文化",
+        "政治",
+        "地緣政治",
+        "中國",
+        "品牌",
+        "移民",
+        "職位招聘",
+        "畢業",
+        "海外升學",
+        "大學",
+        "科研",
+        "文娛藝術",
+        "海外院校"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "36fd5b10cab4c982ce37ba3547352bf6",
+      "title": "丘應樺稱港推動金融科技等發展 與馬來西亞創新格局具合作潛力",
+      "description": "商務及經濟發展局局長丘應樺今日(12日)於馬來西亞吉隆坡出席貿發局「成就機遇.首選香港」推廣活動致開幕詞時表示,全球正值經濟轉型期,當前全球經濟以地緣政治局勢緊張、供應鏈重組以及技術變革顯著。然而,香港憑藉其核心優勢,可成為馬來西亞的得力夥伴,共同應對日益複雜的外圍環境。 出海專班也助馬企獲得資金 他指,香港憑藉零關稅、簡單低稅制,以及獨立司法制度,提供了一個穩定、透明及可持續的營商環境。無論是與",
+      "link": "https://www.stheadline.com/realtime-finance/3603175/%E4%B8%98%E6%87%89%E6%A8%BA%E7%A8%B1%E6%B8%AF%E6%8E%A8%E5%8B%95%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%AD%89%E7%99%BC%E5%B1%95-%E8%88%87%E9%A6%AC%E4%BE%86%E8%A5%BF%E4%BA%9E%E5%89%B5%E6%96%B0%E6%A0%BC%E5%B1%80%E5%85%B7%E5%90%88%E4%BD%9C%E6%BD%9B%E5%8A%9B",
+      "pubDate": "2026-08-11 03:35:58",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/9aee4f1e2fcf4e1d0f85c529a1f5aa43/2026-08/PIC_ONLY_0925_2__3.jpg",
+      "keywords": [
+        "丘應樺",
+        "貿發局"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "06c0cf9c8d135ec856399c41fda37f5f",
+      "title": "深股及創業板半日升 滬股偏軟",
+      "description": "A股半日個別發展,深股及創業板升,滬股偏軟,兩市成交合計151933.55億元(人民幣‧下同)。 滬綜指半日收報3,964,跌2點或0.05% ,最低見3,942,跌24點或0.6%,為半日低位,即反覆向上,尾段高見3,965,僅跌1點,半日成交6924.74億元。 深成指半日報14,410,升93點或0.65%,最低見14,201,跌115點或0.8%,後段高見14,447,升131點或0.91%,為半日高位,半日成交8,268.81億元。 滬深300半日升7點或0.15%,報4,709 ; 創業板指數半日升 3.587,升50點或1.41%。",
+      "link": "https://www.bastillepost.com/hongkong/article/16545287-%E6%B7%B1%E8%82%A1%E5%8F%8A%E5%89%B5%E6%A5%AD%E6%9D%BF%E5%8D%8A%E6%97%A5%E5%8D%87-%E6%BB%AC%E8%82%A1%E5%81%8F%E8%BB%9F",
+      "pubDate": "2026-08-11 03:35:39",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2024/04/20240307_FI_source-ap_AShare-3.png",
+      "keywords": [
+        "錢財事",
+        "a股"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1dacc7aeece649e6a77bb413bba60e6f",
+      "title": "英超 FPL|後防線正選、後備選人全攻略 唔好揀同隊隊友? 拉耶、加比爾季初避之則吉?",
+      "description": "英超2026至27球季將於8月21開鑼,全球最受歡迎的免費虛擬足球遊戲Fantasy Premier League(簡稱FPL)再次掀起熱潮。今季遊戲官方雖然微調了額外獎分系統(Bonus Point System,簡稱BPS),令傳統防守型後衛透過防守貢獻分(Defensive Contribution Points,簡稱DefCon)重複得分的難度提高,但一條構建得宜的後防線仍是玩家之間勝負的",
+      "link": "https://www.stheadline.com/football-news/3602958/%E8%8B%B1%E8%B6%85-FPL%E5%BE%8C%E9%98%B2%E7%B7%9A%E6%AD%A3%E9%81%B8%E5%BE%8C%E5%82%99%E9%81%B8%E4%BA%BA%E5%85%A8%E6%94%BB%E7%95%A5-%E5%94%94%E5%A5%BD%E6%8F%80%E5%90%8C%E9%9A%8A%E9%9A%8A%E5%8F%8B-%E6%8B%89%E8%80%B6%E5%8A%A0%E6%AF%94%E7%88%BE%E5%AD%A3%E5%88%9D%E9%81%BF%E4%B9%8B%E5%89%87%E5%90%89",
+      "pubDate": "2026-08-11 03:34:23",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/31992fa7ce9a3e29aebacb16ba2e8f86/2026-08/Copy_of_KF_79_.png",
+      "keywords": [
+        "defcon",
+        "阿仙奴",
+        "fantasypremierleague",
+        "fpl",
+        "bps",
+        "英超"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dea562cbf2114f523bee181be0422987",
+      "title": "工作暑熱警告—搭棚工稱地盤氣溫隨時達50°C 清潔工嘆休息遭「冷暴力」",
+      "description": "近兩天本港天氣極端酷熱,錄破紀錄高溫36.9度,對戶外工作者健康風險令人關注。有前線清潔工及搭棚工會代表揭示工友在烈日下工作不但面對高溫煎熬,更要面對公眾的不解的「冷暴力」對待,以及酷熱天氣下管理層沒有主動關心前線工友,批評有關黃色工作暑熱警告欠缺法律約束力。 港九搭棚同敬工會理事長何炳德今(11日)在電台節目批評,早前香港經歷了142年以來有紀錄的最高溫,但當局依然只發出黃色工作暑熱警告,令業界",
+      "link": "https://www.stheadline.com/society/3603173/%E5%B7%A5%E4%BD%9C%E6%9A%91%E7%86%B1%E8%AD%A6%E5%91%8A%E6%90%AD%E6%A3%9A%E5%B7%A5%E7%A8%B1%E5%9C%B0%E7%9B%A4%E6%B0%A3%E6%BA%AB%E9%9A%A8%E6%99%82%E9%81%9450-%E6%B8%85%E6%BD%94%E5%B7%A5%E5%98%86%E4%BC%91%E6%81%AF%E9%81%AD%E5%86%B7%E6%9A%B4%E5%8A%9B",
+      "pubDate": "2026-08-11 03:31:49",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/eede3c97b3adb9bf5d40faae87208f68/2026-08/20260811_NEWS_hot.png",
+      "keywords": [
+        "搭棚工",
+        "黃色工作暑熱警告",
+        "工作暑熱警告"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d3088533e096a04cac8bb1984c035a0c",
+      "title": "工作暑熱警告—搭棚工稱地盤氣溫隨時達50°C 清潔工歎休息遭「冷暴力」",
+      "description": "近兩天本港天氣極端酷熱,錄破紀錄高溫36.9度,對戶外工作者健康風險令人關注。有前線清潔工及搭棚工會代表揭示工友在烈日下工作不但面對高溫煎熬,更要面對公眾的不解的「冷暴力」對待,以及酷熱天氣下管理層沒有主動關心前線工友,批評有關黃色工作暑熱警告欠缺法律約束力。 港九搭棚同敬工會理事長何炳德今(11日)在電台節目批評,早前香港經歷了142年以來有紀錄的最高溫,但當局依然只發出黃色工作暑熱警告,令業界",
+      "link": "https://www.stheadline.com/society/3603173/%E5%B7%A5%E4%BD%9C%E6%9A%91%E7%86%B1%E8%AD%A6%E5%91%8A%E6%90%AD%E6%A3%9A%E5%B7%A5%E7%A8%B1%E5%9C%B0%E7%9B%A4%E6%B0%A3%E6%BA%AB%E9%9A%A8%E6%99%82%E9%81%9450-%E6%B8%85%E6%BD%94%E5%B7%A5%E6%AD%8E%E4%BC%91%E6%81%AF%E9%81%AD%E5%86%B7%E6%9A%B4%E5%8A%9B",
+      "pubDate": "2026-08-11 03:31:49",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/9726a71cb1c8a018e3318a6e4c2d6a67/2026-08/Picture_002.jpg",
+      "keywords": [
+        "搭棚工",
+        "工作暑熱警告",
+        "黃色工作暑熱警告"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "beef4f334fc7897b9dd3db5c9526423e",
+      "title": "1500米爆冷封王竟服藥?美國跑手禁賽3年",
+      "description": "【Now Sports】29歲美國中長跑選手高治因在血液興奮劑測試中,被證實有違禁物質,遭處以禁賽3年的重罰。美國反興奮劑機構(USADA)表示,高治(Jonah Koech)的違規行為是在其運動員生物護照(ABP)中出現「極度異常的血液數值」。ABP會追蹤運動員一段時間內的血液指標,以便在藥檢呈陰性的情況下也能...",
+      "link": "https://hk.sports.yahoo.com/news/1500%E7%B1%B3%E7%88%86%E5%86%B7%E5%B0%81%E7%8E%8B%E7%AB%9F%E6%9C%8D%E8%97%A5-%E7%BE%8E%E5%9C%8B%E8%B7%91%E6%89%8B%E7%A6%81%E8%B3%BD3%E5%B9%B4-033146228.html",
+      "pubDate": "2026-08-11 03:31:46",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "高治",
+        "興奮劑"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "99ea2e96155c60db349cff7a341eb1d7",
+      "title": "從休達風暴看「新北非軸心」的代價",
+      "description": "摩洛哥在所有阿拉伯國家中,擁有最獨特的猶太歷史背景。她利用這段本土猶太文化背景,作為與以色列結盟的合法性藉口。然而,這種「歷史敘事」在面對當前加沙與黎巴嫩衝突的血腥現實時,直接引發了國內強烈的身份認同撕裂。",
+      "link": "https://www.master-insight.com/article/49567",
+      "pubDate": "2026-08-11 03:31:00",
+      "source_name": "Master – Insight",
+      "image_url": "https://bucket-image.inkmaginecms.com/9dde7c0f-adea-48d0-9671-8f5a6345ad4a/image/2026/08/f5201948-61ef-4b87-90aa-731b8c9102ad.webp",
+      "keywords": [
+        "政局",
+        "國際",
+        "自由行"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e1068d5a4b1171e90d2e1b7ea6cfc7ad",
+      "title": "ERB兩月津貼8千蚊 失業漢呻「車費飯錢都蝕埋」惹轟 網民盤點「唔蝕底」選科攻略",
+      "description": "本港失業率持續維持3.7%,超過14萬人仍處於待業狀態。不少人在求職空窗期選擇報讀僱員再培訓局(ERB)的就業掛鈎課程,既可學習技能,又能領取津貼。 然而,近日有網民在討論區發文抱怨,指為期兩個月的課程僅得8,000元津貼,扣除交通及膳食開支後所剩無幾,直言「如果返2個月得8000就唔X讀,車錢飯錢都蝕埋」,更表明報讀目的是「有錢袋又有嘢學」,結果讀完比之前更窮,覺得「唔係好抵玩」。 此番言論隨即引起培訓機構不滿。有自稱「實習中」的機構小編在社交平台發文反擊,批評這種心態完全錯誤。他強調,ERB課程旨在協助失業人士轉換跑道,而非鼓勵辭職後靠上課賺取收入。他更語重心長地表示:「失業不可怕,可怕嘅係想法走樣。」帖文引來大批網民共鳴,有人指出津貼僅屬輔助性質,不可能作為主要收入來源;亦有人提醒課程遍布各區,根本無需長途跋涉上課,批評「話蝕車錢先戇居」。 不少網民幽默分享「唔會蝕」的選課策略。最受推崇的是烹飪班,排名依次為日式、西式、點心、中式、甜品及咖啡。有人解釋日式班有刺身及壽喜燒任食,中式班因鍋鏟及刀具太重「太辛苦」,甜品班則擔心吃太多會患上糖尿病。有曾就讀點心班的過來人表示,雖然每天要站立八小時切菜洗碗,但「整嘢食始終開心」。亦有網民力推電腦班,形容「坐喺位度聽歌上網,夠80%出席率,臨尾考試嗰堂消失,八千幾蚊袋袋平安」,引來培訓機構也留言笑稱這是「學員攻略」。 根據資料,ERB「就業掛鈎課程」免學費,自去年起每月津貼上限提高至8,000元,增幅接近四成,每人每年只可申領一次,大學畢業生亦符合資格。局方與超過80間培訓機構合作,提供逾800個課程。津貼的原意是減輕學員經濟壓力,讓他們專注學習技能以提升就業機會,而非取代正職收入。",
+      "link": "https://www.bastillepost.com/hongkong/article/16522670-erb%E5%85%A9%E6%9C%88%E6%B4%A5%E8%B2%BC8000%E8%9A%8A%E3%80%80%E5%A4%B1%E6%A5%AD%E6%BC%A2%E5%91%BB%E3%80%8C%E8%BB%8A%E8%B2%BB%E9%A3%AF%E9%8C%A2%E9%83%BD%E8%9D%95%E5%9F%8B%E3%80%8D%E6%83%B9%E8%BD%9F",
+      "pubDate": "2026-08-11 03:30:55",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/704x369-14.png",
+      "keywords": [
+        "網上熱話",
+        "社會事"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "014243974c033cea1d1b683365f1529e",
+      "title": "《日落下的彩虹》栢天男最愛吃嫲嫲牌牛肉蕃茄蛋 張雷望能保存香港獨特人情味",
+      "description": "ViuTV原創劇《日落下的彩虹》逢星期一至五晚上9時30分播出。劇集以七個發生在彩虹之下、細膩動人的小故事,編寫各種情感與遺憾,建構香港人的屋邨情懷。當中由不同人物串連不同故事,阡陌交錯,並穿插彩虹邨進入倒數的命運,引發現實共鳴。 上星期四晚(6日)播出的一集,講述栢天男飾演的Tony是從紐約回流返港的廚神,師承多年來做街坊生意的強師傅(張雷 飾)。兩位不約而同地表示最喜歡的味道是人情味,並希望香港能一直保留這種味道。栢天男透露最令他回味的食物是祖母的小菜:「講返我自己細個食過嘅嘢,係我嫲嫲煮嘅牛肉蕃茄蛋,非常非常之好味,食唔返呢種味道。係佢一個煮我先至會覺得好味。」張雷笑言當時年代屋邨嘅家常便飯一定有蕃茄蛋,酸酸甜甜的味道是小朋友最喜歡。 談到最想香港能留下的味道,張雷肯定地說:「人情味。所謂香港精神呀嘛。獅子山下,喺低谷又可以衝返上去頂,有咩事分散咗又可以團結返,咁咪就係人情味」。栢天男表示同感:「香港人嘅韌力係非常之強,無論發生咩事、咩處境都好,我哋都一定會有精神去加油,一定做到嘅」。",
+      "link": "https://www.bastillepost.com/hongkong/article/16539884-%E3%80%8A%E6%97%A5%E8%90%BD%E4%B8%8B%E7%9A%84%E5%BD%A9%E8%99%B9%E3%80%8B%E6%A0%A2%E5%A4%A9%E7%94%B7%E6%9C%80%E6%84%9B%E5%90%83%E5%AB%B2%E5%AB%B2%E7%89%8C%E7%89%9B%E8%82%89%E8%95%83%E8%8C%84%E8%9B%8B",
+      "pubDate": "2026-08-11 03:30:47",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260810_EN_Rainbow_source-web_FB.jpg",
+      "keywords": [
+        "娛圈事",
+        "張雷",
+        "日落下的彩虹",
+        "栢天男"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6a954fd0ed266d98409145fd08fb8274",
+      "title": "出海策略的下一個篇章",
+      "description": "中國企業出海的未來,應加入一項新的成效指標:海外成功不是靠擊敗當地企業,而是靠幫助它們與我們一起成功。",
+      "link": "https://www.master-insight.com/article/49598",
+      "pubDate": "2026-08-11 03:30:00",
+      "source_name": "Master – Insight",
+      "image_url": "https://bucket-image.inkmaginecms.com/9dde7c0f-adea-48d0-9671-8f5a6345ad4a/image/2026/08/8fa3459f-ec63-46e2-bc43-5c0007fb3494.webp",
+      "keywords": [
+        "灼見來論",
+        "商業",
+        "企管"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "053fce476f8510db5b8dee8fc0da8c86",
+      "title": "神雲科技美國子公司宣布 Newark 辦公室擴建盛大開幕,全力推動美國基礎設施成長",
+      "description": "加州紐瓦克2026年8月11日 /美通社/ -- 神達控股(TWSE:3706)旗下子公司、全球高效能與節能伺服器解決方案領導廠商神雲科技(MiTAC Computing Technology Corporation),宣布其美國子公司(MiTAC Computing Technology USA Corporation)位於加州 Newark 的營運據點擴建盛大開幕。此項戰略擴建進一步深化了神雲科技對北美技術基礎設施、客戶共同創新以及企業長期成長的投資。 升級後的設施大幅提升了神雲科技的營運規模與工程技術實力,重點涵蓋四大卓越中心(Centers of...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/-newark--302847761.html",
+      "pubDate": "2026-08-11 03:30:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1967502/20260810222918EDT_image_2.jpg?id=OA2854670&p=original",
+      "keywords": [
+        "cxp",
+        "csr",
+        "pdt"
+      ],
+      "category": [
+        "politics",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "80929eee8ea8babb90d57e1016190676",
+      "title": "神雲科技美国子公司宣布 Newark 办公室扩建盛大开幕,全力推动美国基础设施成长",
+      "description": "加州纽瓦克 2026年8月11日 /美通社/ -- 神达控股(TWSE:3706)旗下子公司、全球高效能与节能服务器解决方案领导厂商神雲科技(MiTAC Computing Technology Corporation),宣布其美国子公司(MiTAC Computing Technology USA Corporation)位于加州 Newark 的运营据点扩建盛大开幕。此项战略扩建进一步深化了神雲科技对北美技术基础设施、客户共同创新以及企业长期计画的投资。 神雲科技美国子公司宣布 Newark 办公室扩建盛大开幕, 全力推动美国基础设施成长 升级后的设施大幅提升了神雲科技的运营规模与工程技术实力,重点涵盖四大卓越中心(Centers of Excellence): 新产品导入中心(NPI lab): 专为先进的气冷与液冷机柜级架构打造,支持快速原型制作与客户远程测试。 工程验证实验室: 为企业级 AI 与云端工作负载提供全面且端到端的软硬件系统验证。 客户体验中心: 让超大规模(Hyperscale)与企业客户能直接体验神雲科技最新的全栈式(Full-stack)单机至集群基础设施。 技术服务中心: 提供专属的部署后技术支持、产品生命周期管理与现场服务。 神雲科技美国子公司总经理黄裕圣(Raymond Huang)表示:\"这座全新运营据点展现了神云科技深化美国在地合作的坚定承诺。借助这次扩建,我们能直接提供在地化的工程、测试、验证与失效分析(FA)服务,全面强化我們在美国的销售与制造运营能力。将此在地支持与先进的制造底蕴结合,我们打造出一个协同创新中心,旨在加速下一代数据中心基础设施的上市进程。我们非常期待这座设施能为区域的创新与合作带来更多契机。\" 开幕典礼汇聚了政要名流、核心客户、战略产业伙伴及社区代表,共同参与正式剪彩、高管交流、专人导览以及互动式实机展示,全面呈现神雲科技端到端的系统工程能力。 神雲科技十分荣幸邀请到纽瓦克市长 Michael Hannon 莅临——市长除亲自致辞并代表市政府颁发贺词证书外,纽瓦克市议员 Eve Marie Little、市政经理 David Benoun、社区发展局局长 Steven Turner、经济发展局副局长 Angela Tsui,以及纽瓦克商会执行长 Lily Mei 也一同出席盛会。 神雲科技美国子公司谨向 Hannon 市长、各位贵宾、尊荣客户、战略伙伴以及活动赞助商——AMD、美光(Micron)、SanDisk、TDS 与 D&H——致以最诚挚的谢意,感谢各位的支持,以及共同推动 AI 领域创新的承诺。 关于神雲科技股份有限公司 神雲科技股份有限公司(MiTAC Computing Technology Corp.)为神达控股集团(MiTAC Holdings)旗下子公司,凭借自 1990 年以来的深厚产业经验,提供多元、节能高效的服务器解决方案。专注于人工智能(AI)、高效能运算(HPC)、云端运算及边缘运算,神雲科技采用严谨的方法,确保从单机(Barebone)、系统、机柜到丛集层级,皆能达到无与伦比的质量,充分发挥卓越效能与系统整合;这项对质量的承诺,使神雲科技在业界独树一帜。 神雲科技拥有全球布局与端到端的服务能力,涵盖研发、制造到全球技术支援,为超大规模数据中心、HPC 及 AI 应用,提供灵活且量身打造的解决方案,确保最佳效能与高扩展性,满足企业多元化的需求。凭借 AI 及液冷技术的最新发展,以MiTAC品牌整合 Intel DSG 与 TYAN等服务器产品线发挥综效,致力于打造兼具创新、效率与可靠性的服务器技术与软硬件解决方案,助力企业迎接未来挑战。 神雲科技官方网站: https://www.mitaccomputing.com/",
+      "link": "https://www.prnasia.com/story/543577-1.shtml",
+      "pubDate": "2026-08-11 03:30:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnasia.com/media/MS1967501/20260810222918EDT_image_3.jpg?id=OA2854666&p=medium600",
+      "keywords": [
+        "sem",
+        "eda",
+        "iot",
+        "hrd",
+        "net",
+        "pdt",
+        "cxp"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d612ddbe890424ec2d1c9282209e3091",
+      "title": "全脂奶唔健康?12年研究追蹤 揭牛奶脂肪含量未必影響健康",
+      "description": "不少人為了健康,選擇以低脂或脫脂生奶取代全脂奶。加拿大一項研究發現,本身超重的成人持續攝取全脂奶製品後,體重、體脂、膽固醇及其他血脂指標都沒有明顯惡化,也未出現胰島素抗阻增加的情況,反映奶製品對健康的影響可能不能只看脂肪含量。",
+      "link": "https://www.am730.com.hk/%E5%81%A5%E5%BA%B7/1046678/%E5%85%A8%E8%84%82%E5%A5%B6%E5%94%94%E5%81%A5%E5%BA%B7-12%E5%B9%B4%E7%A0%94%E7%A9%B6%E8%BF%BD%E8%B9%A4-%E6%8F%AD%E7%89%9B%E5%A5%B6%E8%84%82%E8%82%AA%E5%90%AB%E9%87%8F%E6%9C%AA%E5%BF%85%E5%BD%B1%E9%9F%BF%E5%81%A5%E5%BA%B7",
+      "pubDate": "2026-08-11 03:30:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046678/article/1046678/df/01KZNZW29E06M1T0R0CAZ1T4FN.jpg?updatedAt=1786370890",
+      "keywords": null,
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "929e917801092670669e1ce614e3be72",
+      "title": "冷氣開放大廈,係窮人嘅避暑所嗎?",
+      "description": "三十六度,街頭熱浪蒸騰。我見阿伯坐喺商場中庭長椅,衫濕透,手拎住個膠袋,望住行人。保安無驅趕,但眼神似在問:你幾時走?旁邊情侶打卡自拍,空調風吹起裙擺,笑聲清脆。同一片冷氣下,有人係『顧客』,有人只係『過客』。 商場唔係公共空間,係消費場所。冷氣免費,但代價係 你要顯得『有消費能力』:衣著整潔、行路有目的、最好拎住購物袋。於是,清潔工休息要躲後巷,外傭聚會被勸離中庭,連老人家坐久啲,都會被『友善提醒』:『呢度唔係公園。』 有次見個年輕人企喺奢侈品店門口,背囊破舊,手捧凍飲,閉眼享受冷氣。店員假裝整理櫥窗,企喺門邊,目光如柵欄。他五分鐘後離開,飲品幾乎未動。原來,連涼快,都要符合某種形象先至配享有。 後來我開始留意:城市真正容許『純粹存在』嘅地方愈來愈少。公園有閉園時間,圖書館要安靜,就連街市檔口都話:『唔買餸唔好阻路。』於是,窮人嘅避暑,變成一場靜默嘅協商——用姿態換取片刻陰涼。 真正嘅包容,唔在冷氣夠唔夠凍; 而在——你敢於相信:每個人都值得一段無條件嘅喘息。",
+      "link": "https://www.bastillepost.com/hongkong/article/16445069-%E5%86%B7%E6%B0%A3%E9%96%8B%E6%94%BE%E5%A4%A7%E5%BB%88%EF%BC%8C%E4%BF%82%E7%AA%AE%E4%BA%BA%E5%98%85%E9%81%BF%E6%9A%91%E6%89%80%E5%97%8E%EF%BC%9F",
+      "pubDate": "2026-08-11 03:30:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/07/cover-1777223331400-7.jpg",
+      "keywords": [
+        "博客文章"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cd7d698437803dbf00fb5c2a63d3e999",
+      "title": "房協10.1起加租2.85% 平均每戶多繳73元至200元",
+      "description": "房協表示,作為自負盈虧的非牟利機構,在進行租金檢討時會平衡出租屋邨的營運成本及租戶的負擔能力。此外,房協設有「租金援助計劃」為有短暫經濟困難的合資格租戶提供支援。成功申請的租戶可獲減免四分之一或一半租金。",
+      "link": "https://www.am730.com.hk/%E6%9C%AC%E5%9C%B0/1046741/%E6%88%BF%E5%8D%9410.1%E8%B5%B7%E5%8A%A0%E7%A7%9F2.85-%E5%B9%B3%E5%9D%87%E6%AF%8F%E6%88%B6%E5%A4%9A%E7%B9%B373%E5%85%83%E8%87%B3200%E5%85%83",
+      "pubDate": "2026-08-11 03:29:19",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-04/1046741/article/1046741/wm/01KPHTTTPCQTK0N2V8JEXTPS8D.JPG?updatedAt=1786418986",
+      "keywords": null,
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b0807392a143fab2d50bc1cff24cbfa6",
+      "title": "AI調查|港73%上班族常用AI 比率高",
+      "description": "香港科技大學商學院的調查發現,本港72.7%在職人士表示,每天或每星期均會使用人工智能(AI)工作,比例高於全球平均水平。",
+      "link": "https://www.ejtech.ai/ceoai/ai-%E8%AA%BF%E6%9F%A5-%E9%A6%99%E6%B8%AF-73-%E4%B8%8A%E7%8F%AD%E6%97%8F-%E5%B8%B8%E7%94%A8-ai-%E6%AF%94%E7%8E%87%E9%AB%98/",
+      "pubDate": "2026-08-11 03:26:12",
+      "source_name": "Startupbeat",
+      "image_url": "https://www.ejtech.ai/wp-content/uploads/2026/08/0811_P10-scaled.jpg",
+      "keywords": [
+        "科技動態",
+        "創新生態圈",
+        "ai",
+        "香港科技大學",
+        "ceo-ai"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6e495a8142329cf81f5113844c1cb0e2",
+      "title": "長征七號發射失敗升空90秒炸成火球 馬斯克:火箭真的很難|有片",
+      "description": "據新華社報道,8月10日20時02分,文昌航天發射場使用長征七號改運載火箭發射中星4B衛星,火箭飛行異常,發射任務失利。具體原因正在進一步分析排查",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60378774/%E9%95%B7%E5%BE%81%E4%B8%83%E8%99%9F%E7%99%BC%E5%B0%84%E5%A4%B1%E6%95%97%E5%8D%87%E7%A9%BA90%E7%A7%92%E7%82%B8%E6%88%90%E7%81%AB%E7%90%83-%E9%A6%AC%E6%96%AF%E5%85%8B-%E7%81%AB%E7%AE%AD%E7%9C%9F%E7%9A%84%E5%BE%88%E9%9B%A3-%E6%9C%89%E7%89%87",
+      "pubDate": "2026-08-11 03:24:01",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260811/1163808220276330496245791.png/oPGDpySxcPu0VtgsJEBjl5LaT6iH7hGKSoI7NkqCOzY",
+      "keywords": [
+        "突發",
+        "時事",
+        "香港01",
+        "中國"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3ff1e3ad677eaa59f632056487e3e026",
+      "title": "與珉豪是建大同學!柳惠英笑稱:「在他旁邊依然會覺得很累,太熱情了」",
+      "description": null,
+      "link": "https://www.koreastardaily.com/tc/news/163564",
+      "pubDate": "2026-08-11 03:24:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-11/163564-1062025.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "55975c37c766843fde6cf31d6b5b7ace",
+      "title": "【蘋果測試中國晶片】長鑫記憶體擬用內地機型 全球記憶體荒逼考慮替代 美參議員促徹底摒棄",
+      "description": "當全球記憶體晶片供應告急、價格四倍暴漲,就連財力雄厚的蘋果都要向內地供應商叩門。這是一場純粹的成本考量,還是科技供應鏈格局正在悄悄改寫? 據外電報道,蘋果正測試內地記憶體晶片製造商長鑫存儲(CXMT)的產品,擬應用於iPhone及MacBook等產品線,初步聚焦於內地市場銷售的機型。有報道指出,蘋果已與長鑫存儲展開初步洽談供應事宜,並正尋求美國政府批准,容許在內地銷售的產品中使用相關晶片。事件發生在蘋果行政總裁庫克約兩個月前形容記憶體短缺情況為「百年一遇的洪水」、並因晶片成本上漲而調高多款產品售價之後。 【記憶體荒】AI基建搶貨 成本四倍暴漲 今次事件的背景,是全球記憶體晶片正經歷嚴重短缺。據報道,受Google、微軟、Meta及亞馬遜等大型科技公司大舉擴建人工智能基礎設施帶動,市場對記憶體晶片需求急升,記憶體成本已較之前上漲約四倍。在這股搶貨潮下,即使是蘋果這類議價能力極強的科技巨企,亦難免要向更多供應商尋求貨源,長鑫存儲因而進入其考慮名單。據報道,長鑫存儲的報價與美光、SK海力士及三星相若甚至更高,惟該公司今年產能已經「爆滿」,可供新增海外客戶的空間有限。 【技術差距】落後對手兩三代 惠普宏碁已率先採用 儘管價格具競爭力,長鑫存儲的技術水平仍與行業龍頭存在明顯差距。有分析人士指出,長鑫存儲的技術大約落後於SK海力士、三星及美光等領先廠商兩至三代。亦有出口法律專家指出,蘋果可購入長鑫存儲的現成標準規格晶片並議價,但無法要求對方按其專屬規格定製晶片,若採用標準規格產品,或需要對硬件進行相應改動,甚至可能影響部分性能表現。事實上,個人電腦生產商惠普及宏碁已率先在美國以外市場銷售的產品中,採用長鑫存儲的記憶體晶片。 項目 詳情 洞察 供應商 長鑫存儲(CXMT),今年7月剛掛牌 已成內地市值最高股份之一 應用範圍 初步聚焦內地銷售的iPhone及MacBook 尚待美國政府批准 技術水平 落後SK海力士/三星/美光約2至3代 價格具競爭力,惟產能已滿.. The post 【蘋果測試中國晶片】長鑫記憶體擬用內地機型 全球記憶體荒逼考慮替代 美參議員促徹底摒棄 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E6%9C%80%E6%96%B0%E8%B2%A1%E7%B6%93%E6%B6%88%E6%81%AF/%E8%98%8B%E6%9E%9C%E6%B8%AC%E8%A9%A6%E4%B8%AD%E5%9C%8B%E9%95%B7%E9%91%AB%E5%AD%98%E5%84%B2%E8%A8%98%E6%86%B6%E9%AB%94%E6%99%B6%E7%89%87-%E5%85%A7%E5%9C%B0iphone-macbook-2031681/",
+      "pubDate": "2026-08-11 03:23:01",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/05/ed-social-share_19873850955e4e5ab66fb9a_27499425069f836787b3ab.jpg",
+      "keywords": [
+        "最新財經消息",
+        "最新財經資訊"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7ba44d6fd13c72f0f5838cc3a8432ec8",
+      "title": "香港據報考慮將Jane Street及城堡證券等交易公司納入稅改範圍",
+      "description": "《經濟通通訊社11日專訊》據英國《金融時報》引述知情人士報道,香港正考慮把 JaneStreet和城堡證券等交易公司納入改革之中,相關改革料將為資產管理業帶來 「大刀闊斧」的減稅。 報道指,香港當局正考慮修改擬議法例,使自營交易公司員工的績效相關薪酬毋須繳稅。 香港財經事務及庫務局被《金融時報》問及這項稅制改革時表示,擬議加強的基金及附帶權 益稅務優惠,其適用範圍並不限於特定類型",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360811527",
+      "pubDate": "2026-08-11 03:23:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c521af0507bd8ca280e97fbe17be7280",
+      "title": "【內地券商收緊審查】融資融券期權新戶嚴審 上半年孖展戶增60% 監管憂杠桿風險升溫",
+      "description": "當散戶借錢炒股的熱情遇上監管的煞車掣,一場靜悄悄的杠桿收緊行動正在內地券商業界展開。這是防患未然的及時舉措,還是牛市降溫的先兆? 據報道,多家內地券商近期悄然收緊新客戶開立融資融券(孖展)及期權等衍生產品交易帳戶的審查標準,包括中信証券及東方財富在內的券商已加強審核新客戶的財務狀況及過往交易紀錄。有報道指出,對於過去六個月內在多家券商新開戶、或頻密接獲追加保證金通知(俗稱「Call Loan」)的投資者,部分券商已進一步限制其借貸額度。此舉被市場解讀為監管機構對股市槓桿風險升溫的及時應對。 【收緊背後】散戶瘋狂加杠桿 監管憂社會穩定 今次收緊審查的背景,源於今年上半年內地股市炒風熾熱,帶動大量散戶湧入借貸炒股。據公開資料顯示,今年上半年內地新開立孖展帳戶逾96萬個,按年大幅增加60%;單計6月份,新開戶數目更達約17.9萬個,按年激增77%。監管機構對高槓桿交易極為警惕,主因是此類交易一旦遇上市況逆轉,極容易觸發連鎖強制平倉,加速市場下跌,並可能令散戶蒙受嚴重虧損,甚至波及更廣泛的金融及社會穩定。 【數字急跌】孖展餘額一個月蒸發逾4千億元 事實上,市場波動的跡象已經浮現。隨著7月下旬內地股市波動加劇,愈來愈多散戶被迫平倉離場。內地融資融券餘額由6月下旬逾3萬億元人民幣的高位,顯著回落至7月底約2.6萬億元人民幣,一個月內蒸發逾4千億元人民幣,反映去槓桿壓力已實質浮現。 指標 數據 洞察 上半年新開孖展戶 逾96萬個,按年增60% 散戶加杠桿意欲強烈 6月單月新開戶 約17.9萬個,按年增77% 單月增速較上半年均值更快 孖展餘額(6月底) 逾3萬億元人民幣 槓桿水平接近高位.. The post 【內地券商收緊審查】融資融券期權新戶嚴審 上半年孖展戶增60% 監管憂杠桿風險升溫 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E6%9C%80%E6%96%B0%E8%B2%A1%E7%B6%93%E6%B6%88%E6%81%AF/%E5%85%A7%E5%9C%B0%E5%88%B8%E5%95%86%E6%94%B6%E7%B7%8A%E6%96%B0%E6%88%B6%E5%AF%A9%E6%9F%A5-%E8%9E%8D%E8%B3%87%E8%9E%8D%E5%88%B8%E6%9C%9F%E6%AC%8A%E9%9B%99%E7%AE%A1%E5%88%B6-2031679/",
+      "pubDate": "2026-08-11 03:22:58",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/05/ed-social-share_19873850955e4e5ab66fb9a_27499425069f836787b3ab.jpg",
+      "keywords": [
+        "最新財經消息",
+        "最新財經資訊"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "02007204512de607e9799c1a41ccdede",
+      "title": "英超|諾定咸森林班主不滿遭諷刺 就橫幅風波起訴水晶宮誹謗",
+      "description": "馬連拿基斯的代表律師,在周一(10日)向高等法院提出誹謗的訴訟,向包括水晶宮球會在內的兩個個體提出起訴。事發在去年8月的一場英超聯賽,由於水晶宮被歐洲足協降級打歐協聯,森林卻取代參加歐霸盃,水晶宮球迷不滿,在主場對森林的比賽拉起一條大型橫幅,上面有馬連拿基斯及森林基比斯韋特(Morgan Gibbs-White)的畫像,畫中的馬連拿基斯拿着槍,由基比斯韋特說「馬連拿基斯先生沒有參與勒索、操控賽果、販毒及貪污」。",
+      "link": "https://www.am730.com.hk/%E9%AB%94%E8%82%B2/1046727/%E8%8B%B1%E8%B6%85-%E8%AB%BE%E5%AE%9A%E5%92%B8%E6%A3%AE%E6%9E%97%E7%8F%AD%E4%B8%BB%E4%B8%8D%E6%BB%BF%E9%81%AD%E8%AB%B7%E5%88%BA-%E5%B0%B1%E6%A9%AB%E5%B9%85%E9%A2%A8%E6%B3%A2%E8%B5%B7%E8%A8%B4%E6%B0%B4%E6%99%B6%E5%AE%AE%E8%AA%B9%E8%AC%97",
+      "pubDate": "2026-08-11 03:17:02",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046727/article/1046727/df/01KZQBZHSM3NE50P0R369RJVV9.JPG?updatedAt=1786418222",
+      "keywords": null,
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "69ea11b38c08ec60a2b3ca669e2e4028",
+      "title": "維特健靈門市引入肝臟掃描服務 先進FattaLab®技術篩出早期肥肝",
+      "description": "香港人飲食豐富、缺乏運動,加上生活節奏急促,肝臟健康日益受到關注。維特健靈宣布於門市推出全新「肝臟健康影像掃描服務」,引入榮獲 CES 2026",
+      "link": "https://www.hk01.com/%E5%81%A5%E5%BA%B7Easy/60378704/%E7%B6%AD%E7%89%B9%E5%81%A5%E9%9D%88%E9%96%80%E5%B8%82%E5%BC%95%E5%85%A5%E8%82%9D%E8%87%9F%E6%8E%83%E6%8F%8F%E6%9C%8D%E5%8B%99-%E5%85%88%E9%80%B2fattalab-%E6%8A%80%E8%A1%93%E7%AF%A9%E5%87%BA%E6%97%A9%E6%9C%9F%E8%82%A5%E8%82%9D",
+      "pubDate": "2026-08-11 03:10:39",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260811/1163700169980514304051283.png/IOmLpNVZ9sPk_Lkvj8nOK_MiGagnsgPeqZ6HQ6meh0M",
+      "keywords": [
+        "網絡媒體",
+        "香港新聞",
+        "于品海",
+        "香港零一",
+        "香港傳媒",
+        "網上媒體",
+        "香港01",
+        "香港媒體",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8884dd90cc7606949c928d3c6cb491ca",
+      "title": "WTT瑞典大滿貫|黃鎮廷杜凱琹單打齊負日本 周三轉戰雙打爭殊榮",
+      "description": "港乒代表黃鎮廷、杜凱琹分途出戰WTT瑞典大滿貫單打,首圈不約而同遇上日本球手,兩人雙雙首圈止步,周三(12日)轉戰雙打,再爭殊榮。黃鎮廷在男單",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60378725/wtt%E7%91%9E%E5%85%B8%E5%A4%A7%E6%BB%BF%E8%B2%AB-%E9%BB%83%E9%8E%AE%E5%BB%B7%E6%9D%9C%E5%87%B1%E7%90%B9%E5%96%AE%E6%89%93%E9%BD%8A%E8%B2%A0%E6%97%A5%E6%9C%AC-%E5%91%A8%E4%B8%89%E8%BD%89%E6%88%B0%E9%9B%99%E6%89%93%E7%88%AD%E6%AE%8A%E6%A6%AE",
+      "pubDate": "2026-08-11 03:10:30",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260811/1163804980981796864874023.jpeg/qSnW9PwQVl1Hr4UlOamd1OETrYreDbr84Une-eFJ3vk",
+      "keywords": [
+        "香港新聞",
+        "f1賽車",
+        "體育新聞",
+        "高爾夫球",
+        "體育消息",
+        "網球",
+        "nba",
+        "體育",
+        "香港01",
+        "籃球",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8b1e97cd17b1b008ddc9fced542be1bd",
+      "title": "疑受長征七號改發射失利影響 藍箭航天朱雀三號遙二火箭發射推遲",
+      "description": "原定於8月11日早上在酒泉衛星發射中心執行的藍箭航天朱雀三號遙二運載火箭發射任務,據報已推遲。此前通告顯示,酒泉衛星發射中心相關空域的臨時管",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60378777/%E7%96%91%E5%8F%97%E9%95%B7%E5%BE%81%E4%B8%83%E8%99%9F%E6%94%B9%E7%99%BC%E5%B0%84%E5%A4%B1%E5%88%A9%E5%BD%B1%E9%9F%BF-%E8%97%8D%E7%AE%AD%E8%88%AA%E5%A4%A9%E6%9C%B1%E9%9B%80%E4%B8%89%E8%99%9F%E9%81%99%E4%BA%8C%E7%81%AB%E7%AE%AD%E7%99%BC%E5%B0%84%E6%8E%A8%E9%81%B2",
+      "pubDate": "2026-08-11 03:09:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20230712/755738077795717120836521.jpeg/ptGk-Ax-twu80k2LBsR6-nZWmCBLgzwMMPeIiDD3iIg",
+      "keywords": [
+        "時事",
+        "香港01",
+        "中國",
+        "突發"
+      ],
+      "category": [
+        "crime",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "46229838e610c5c0135f444a09a4683c",
+      "title": "為什麼中國大模型便宜又好用?",
+      "description": "中評社北京8月11日電/“為什麼中國的AI(人工智能)大模型能力出色,還這麼便宜?”近來,海外社交平台上關於中國大模型的討論熱度居高不下。不少海外開發者反饋,用中國大模型處理一整天複雜開發任務,綜合成本遠低於同類海外產品;有初創團隊表示,全面切換到中國AI大模型後,技術運營支出大幅下降,不少此前因成本擱置的AI項目得以落地推進。從北美技術圈到東南亞的創業團隊,從歐洲獨立開發者到亞洲科技愛好者,",
+      "link": "http://www.crntt.com/doc/7_0_107222440_1_0811110909.html",
+      "pubDate": "2026-08-11 03:09:08",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/107222469.jpg",
+      "keywords": [
+        "大模型",
+        "人工智能"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2b987c24ccbd4e594c1397efa54008fb",
+      "title": "AI奇點|Alexa創造者:AI奇點難成真",
+      "description": "亞馬遜Alexa共同創造者坦斯托爾佩多指出,自工業革命以來,機器在某項任務上超越人類,並非什麼新鮮事,毋須為此擔憂。",
+      "link": "https://www.ejtech.ai/ceoai/ai%E5%A5%87%E9%BB%9E-alexa-%E5%89%B5%E9%80%A0%E8%80%85-ai%E5%A5%87%E9%BB%9E-%E9%9B%A3%E6%88%90%E7%9C%9F/",
+      "pubDate": "2026-08-11 03:07:11",
+      "source_name": "Startupbeat",
+      "image_url": "https://www.ejtech.ai/wp-content/uploads/2026/08/0811_P14-scaled.jpg",
+      "keywords": [
+        "ceo-ai",
+        "alexa",
+        "奇點",
+        "ai",
+        "william tunstall-pedoe",
+        "科技動態"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d115196d59b721b8f928512f39061028",
+      "title": "Uber 聯乘冠忠推 Elite 尊尚出行 豪華 MPV 最多載六人",
+      "description": "Uber 正式宣布,與香港最大規模之非專利巴士營運商冠忠巴士集團有限公司合作,於香港推出全新尊尚出行選項 Uber Elite,成為亞太區首個登陸的市場。這個嶄新的尊尚出行選項結合專業級體驗與可靠性,以滿足市場對尊尚地面出行的需求。 Uber Elite 以「First Class on the Ground」的尊尚行程為理念,讓乘客透過 Uber App 即可輕鬆預約行程,享受有別於傳統豪華轎車接送服務的全新體驗。這個出行選項結合 Uber 流暢便捷的手機應用程式預約平台及透明的收費模式,並配合冠忠巴士集團有限公司旗下優質車隊的專業水準,提供卓越質素與尊尚出行體驗。 由即日起,乘客只需透過 Uber App 即可一鍵預約 Uber Elite 行程,並可選擇最多可接載六位乘客的豪華 MPV 車款。所有行程均由冠忠巴士集團有限公司旗下持有有效「出租汽車許可證」的優質車隊提供乘車服務,確保每趟行程均符合最高的質素及專業標準。 為慶祝全新出行選項正式推出,由即日起至2026年8月31日,Uber App 用户首趟 Uber Elite 行程可享限時 5 折優惠 (該行程最高可減 HK$2,000)。 「First Class on the Ground」的尊尚出行體驗 Uber Elite 專為追求卓越體驗的乘客、企業高層管理人員、商務旅客、高淨值人士、海外旅客,以及需要為貴賓安排出行的企業客戶而設,致力提供尊尚貼心的禮賓級出行體驗,當中包括: • 穿著制服的專業司機團隊:所有司機均須完成六小時專業培訓課程,並通過嚴格考核後,方可正式投入服務。 • 機場迎賓與接待服務:於抵港接機大堂提供專人迎接,並安排直達指定高級座駕到上客區,讓接送流程更方便流暢。 • 尊尚車廂配套:車內提供免費 Wi-Fi、樽裝水、小食、流動裝置充電設備及濕紙巾,打造更為舒適的出行體驗。 Uber Elite 使用提前預訂功能,乘客可於出發前短至兩小時、長至 90 日內預約行程。為讓乘客享有更具彈性的旅程,Uber [...]",
+      "link": "https://www.bastillepost.com/hongkong/article/16545191-uber-%E8%81%AF%E4%B9%98%E5%86%A0%E5%BF%A0%E6%8E%A8-elite-%E5%B0%8A%E5%B0%9A%E5%87%BA%E8%A1%8C-%E8%B1%AA%E8%8F%AF-mpv-%E6%9C%80%E5%A4%9A%E8%BC%89%E5%85%AD%E4%BA%BA",
+      "pubDate": "2026-08-11 03:05:41",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/010_Uber-Elite_FB.jpg",
+      "keywords": [
+        "ai小助手",
+        "商業事",
+        "uber"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b0e6f1e6c939d2bbd049b9f653a962e3",
+      "title": "北京大運河變身世界合唱盛會露天舞台",
+      "description": "在北京通州區大運河畔一個璀璨夏夜,這條千年古運河搖身一變,成為一個沒有圍牆的劇場。 八艘主題船隻在波光粼粼的水面上滑行,每艘船都充當一個流動舞台。 來自三大洲的合唱團在水面上高歌,燈光則在古運河上閃爍。 這就是最近在北京舉行的一場獨特水上音樂會——「超級周末,世界和諧」水上音樂會的場景,亦是北京今夏首個運河合唱盛會。 當塞舌爾國家合唱團的歌聲在水面迴盪時,一場跨越山海的文化共鳴隨即展開。 該合唱團曾多次訪華,改編中國歌曲已成為其標誌之一。然而,即使對於資深男高音朱利安·亞歷克西斯而言,在大運河上移動的船隻上表演,仍是首次。 亞歷克西斯表示:「音樂是普世的,無論你用哪種語言歌唱都無關緊要。我預計這將是一個非常感人的時刻,我亦預計每個人都會喜歡這種團結的時刻。」 這次盛會匯聚了來自塞舌爾、保加利亞、俄羅斯及中國等國家的專業合唱團。沿岸觀眾紛紛舉起手機,將旋律唱回水面。初步數字顯示,現場觀眾人數超74000人。 一名觀眾表示:「我真的很喜歡今晚的大運河音樂會。每個合唱團和每首歌曲都是經典。」 通州區文化和旅遊局局長張妍指出:「這次水上音樂會匯集了八個國內外頂級專業合唱團,以及藝術力量和公眾文化愛好者同台演出。我們以音樂為橋樑,促進文化交流,並透過一場跨國音樂盛宴,喚醒大運河作為聯合國教科文組織世界遺產地的新活力。」 (CGTN)",
+      "link": "https://www.bastillepost.com/hongkong/article/16545337-%E5%8C%97%E4%BA%AC%E5%A4%A7%E9%81%8B%E6%B2%B3%E8%AE%8A%E8%BA%AB%E4%B8%96%E7%95%8C%E5%90%88%E5%94%B1%E7%9B%9B%E6%9C%83%E9%9C%B2%E5%A4%A9%E8%88%9E%E5%8F%B0",
+      "pubDate": "2026-08-11 03:04:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/screenshot_8493728_01_FB.jpeg",
+      "keywords": [
+        "cgtn",
+        "兩岸"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "820ce6271e991886cb99c4a99b0a6f8b",
+      "title": "港超前瞻|標準流浪大換血迎新時代 司徒文俊領軍重建爭穩定",
+      "description": "上季聯賽僅於10支球隊中排名第9的標準流浪,雖然曾打入高級組銀牌決賽及足總盃四強,但整體成績仍未如理想,更創下自2019/20球季重返港超聯以來最差聯賽排名。今個夏天,球隊無論管理層、教練團以至球員陣容均出現大幅變動,力求以全新面貌迎接新球季。 管理層重組 司徒文俊再掌港超球隊 今季流浪最大改變首先來自管理層。掌管球隊多年的李輝立退居幕後,轉任球會名譽顧問,來季不再直接管理一隊事務。上季主教練潘文",
+      "link": "https://www.stheadline.com/football-news/3603162/%E6%B8%AF%E8%B6%85%E5%89%8D%E7%9E%BB%E6%A8%99%E6%BA%96%E6%B5%81%E6%B5%AA%E5%A4%A7%E6%8F%9B%E8%A1%80%E8%BF%8E%E6%96%B0%E6%99%82%E4%BB%A3%E5%8F%B8%E5%BE%92%E6%96%87%E4%BF%8A%E9%A0%98%E8%BB%8D%E9%87%8D%E5%BB%BA%E7%88%AD%E7%A9%A9%E5%AE%9A",
+      "pubDate": "2026-08-11 03:02:53",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/148f77c8643dffd6a77e6a07cde11c53/2026-08/KF_6__0.png",
+      "keywords": [
+        "港超聯",
+        "標準流浪"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
     },
     {
       "id": "26e80b7a45a0417b3458c35ab5780296",
@@ -108,6 +937,25 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "8341804f72aad82b35656d6afa4b5a6d",
+      "title": "房協10.1起加租2.85% 每戶平均加$73至$200",
+      "description": "房協今日(11日)宣布其執行委員會通過2026年至2028年房協轄下出租屋邨的新租金安排。其轄下出租屋邨的租金將於今年10月1日起上調百分之2.85,新租金會維持至2028年9月30日。經調整後,房協甲類及乙類出租屋邨租戶將會分別每月平均多繳約73元及200元租金。 而近兩年新入伙的出租屋邨,包括香港仔漁映樓、洪水橋/厦村樂翹樓1座、粉嶺樂嶺樓及牛頭角鴻鵠臺第一座,並不涵蓋於是次租金檢討。 房協表",
+      "link": "https://www.stheadline.com/society/3603156/%E6%88%BF%E5%8D%94101%E8%B5%B7%E5%8A%A0%E7%A7%9F285-%E6%AF%8F%E6%88%B6%E5%B9%B3%E5%9D%87%E5%8A%A073%E8%87%B3200",
+      "pubDate": "2026-08-11 02:58:47",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/4a0809720155bd49f5a8bfb601354931/2026-08/KakaoTalk_20240821_163545285_04.jpg",
+      "keywords": [
+        "公屋加租",
+        "房協"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "c9e1e793d17791a34599a85bc9e8c8d0",
@@ -165,6 +1013,24 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "b4270cba70a81b1a458641b4832f180f",
+      "title": "金價創年內單周最大漲幅 回歸上行通道",
+      "description": "中評社北京8月11日電/北京時間8月11日,COMEX黃金期貨上漲1.11%,收報4448.6美元/盎司;現貨黃金盤中最高觸及4395美元/盎司,距離4400美元關口近在咫尺;過去一周現貨黃金累計漲幅超7%,創下今年1月以來最大單周漲幅。 據新華社報導,本輪金價走強受到多重因素共同推動。地緣層面,美伊圍繞霍爾木茲海峽通航博弈持續發酵。特朗普10日表態,將向伊朗提出索賠並納入談判議程。",
+      "link": "http://www.crntt.com/doc/7_0_107222428_1_0811105652.html",
+      "pubDate": "2026-08-11 02:56:52",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/107222430.jpg",
+      "keywords": [
+        "國際金價"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "f0050df16074aa88e164586018844acd",
@@ -753,6 +1619,42 @@
         "entertainment"
       ],
       "region": "hk"
+    },
+    {
+      "id": "466a9d14ebb6b709b899036b3364dc69",
+      "title": "今日我咁睇|中東和談仍有波折 油價急升影響股市 恆指預計窄幅上落|小編苟豪",
+      "description": "1.美國及伊朗尚未就和議達成共識,導致油價再次反彈,雖然距離上次高位仍有距離,但考慮到現時股市的樂觀程度,油價...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BB%8A%E6%97%A5%E6%88%91%E5%92%81%E7%9D%87-%E4%B8%AD%E6%9D%B1%E5%92%8C%E8%AB%87%E4%BB%8D%E6%9C%89%E6%B3%A2%E6%8A%98-%E6%B2%B9%E5%83%B9%E6%80%A5%E5%8D%87%E5%BD%B1%E9%9F%BF%E8%82%A1%E5%B8%82-%E6%81%86%E6%8C%87%E9%A0%90%E8%A8%88%E7%AA%84%E5%B9%85%E4%B8%8A%E8%90%BD-%E5%B0%8F%E7%B7%A8%E8%8B%9F%E8%B1%AA-020000534.html",
+      "pubDate": "2026-08-11 02:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": null,
+      "keywords": [
+        "track portfolio",
+        "financial information",
+        "stock research",
+        "business",
+        "suze orman",
+        "stock valuation",
+        "personal finance",
+        "finance",
+        "investment tools",
+        "economy",
+        "stocks",
+        "investor",
+        "401k",
+        "stock",
+        "business news",
+        "real estate",
+        "retirement",
+        "mortgage",
+        "tax",
+        "investing"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "d73b22edc6d293665a552b85ed5312d9",
@@ -1995,35 +2897,6 @@
       "category": [
         "top",
         "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "3ccad1af9742c54af90b6f85f31b8f98",
-      "title": "亞幣保衛戰|日美聯手撐日圓真相曝光! 植田和男暗示加快加息",
-      "description": "據日本共同社,多位日本政府官員10日透露,日美兩國政府於美國東部時間7月31日實施了一次異乎尋常的聯合日元買入干預,這是28年來首次此類行動。其",
-      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60378718/%E4%BA%9E%E5%B9%A3%E4%BF%9D%E8%A1%9B%E6%88%B0-%E6%97%A5%E7%BE%8E%E8%81%AF%E6%89%8B%E6%92%90%E6%97%A5%E5%9C%93%E7%9C%9F%E7%9B%B8%E6%9B%9D%E5%85%89-%E6%A4%8D%E7%94%B0%E5%92%8C%E7%94%B7%E6%9A%97%E7%A4%BA%E5%8A%A0%E5%BF%AB%E5%8A%A0%E6%81%AF",
-      "pubDate": "2026-08-10 23:55:17",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20241129/939217898323316736605214.jpeg/cRxajiRRAmP77e7fCny97b3gpfq1KCyAFtFEURbRRFE",
-      "keywords": [
-        "財經透視",
-        "股票",
-        "a股",
-        "新聞",
-        "港股",
-        "財經網",
-        "財經新聞",
-        "地產消息",
-        "hk01",
-        "香港新聞",
-        "經濟",
-        "財經台",
-        "香港01",
-        "恆生指數"
-      ],
-      "category": [
-        "politics"
       ],
       "region": "hk"
     },
@@ -5946,31 +6819,6 @@
         "entertainment"
       ],
       "region": "hk"
-    },
-    {
-      "id": "9c03d67dcf2a8a39bbb9826949cb7546",
-      "title": "馬時亨指內地追稅難衝擊港樓及金融 北水繼續南下 「分散風險無地方好過香港」|跨境監管",
-      "description": "貿發局周二(11日)將於馬來西亞吉隆坡舉行「成就機遇.首選香港」推廣活動,主席馬時亨今日(10日)在當地會見香港傳媒。他回應近期限制資本外流,以及「跨境追稅」報道時表示,即使部分內地富裕人士需要補繳稅款,相信對香港的資產管理業務及樓市不會構成太大衝擊,又預告貿發局下月或上調本港全年出口增長數字。 富裕人士不介意補交稅 內地近期多次傳出限制資本外流的消息,馬時亨認為,內地有14億人口,即使少部分人來",
-      "link": "https://www.stheadline.com/realtime-finance/3602995/%E9%A6%AC%E6%99%82%E4%BA%A8%E6%8C%87%E5%85%A7%E5%9C%B0%E8%BF%BD%E7%A8%85%E9%9B%A3%E8%A1%9D%E6%93%8A%E6%B8%AF%E6%A8%93%E5%8F%8A%E9%87%91%E8%9E%8D-%E5%8C%97%E6%B0%B4%E7%B9%BC%E7%BA%8C%E5%8D%97%E4%B8%8B-%E5%88%86%E6%95%A3%E9%A2%A8%E9%9A%AA%E7%84%A1%E5%9C%B0%E6%96%B9%E5%A5%BD%E9%81%8E%E9%A6%99%E6%B8%AF%E8%B7%A8%E5%A2%83%E7%9B%A3%E7%AE%A1",
-      "pubDate": "2026-08-10 12:45:40",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/c633f6f469e86a7f052b286e3ffa5a8e/2026-08/260810_hktdcma.png",
-      "keywords": [
-        "跨境監管",
-        "保險收益",
-        "跨境追稅",
-        "馬時亨",
-        "成就機遇",
-        "張淑芬",
-        "首選香港",
-        "貿發局"
-      ],
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "f5d50a1d17d4ee76f17ecf0d57527829",
@@ -22074,24 +22922,6 @@
       "region": "hk"
     },
     {
-      "id": "a8f6466fd3647ca248f33196775919ae",
-      "title": "【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購",
-      "description": "香港政府新一批銀色債券今年保底息率提升至4.25厘,創近三年新高,發行額更由500億元上調至最多550億元,反映政府大手吸納銀髮資金應對高息環境下的市場需求。今年門檻依舊——申請人須於1967年或之前出生,每手入場費維持1萬元,究竟今次「加息」加碼是否值得申請? 據政府公布,新一批銀色債券(第十一批)保底年利率定為4.25厘,較去年(第十批)的3.85厘明顯提升,是近三年以來最高水平;發行額目標為500億元,視乎市場反應可進一步增至550億元,年期維持3年。申請期由8月21日(星期五)上午9時起至9月4日(星期五)下午2時截止,正式發行日為9月15日(星期二)。合資格申請人須於1967年或之前出生,並持有效香港身份證,可透過配售銀行或指定證券經紀提出認購。 【息率比較】4.25厘屬近年高位 惟未及2023年 翻查歷年紀錄,銀色債券保底息率並非單向向上:2021年為3.5厘,2022年升至4厘,2023年一度攀上5厘高位,其後2024年回落至4厘,去年(第十批)再降至3.85厘。今年4.25厘的水平雖較去年明顯回升,但仍未及2023年的5厘高位,反映定價與當時市場利率環境仍有一定落差。 批次 保底息率 洞察 2023年(第七批) 5厘 近年最高 2024年(第八批) 4厘 回落 去年(第十批) 3.85厘 持續下行 今年(第十一批) 4.25厘 近三年新高,惟未及2023年.. The post 【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購 appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/%E6%9C%80%E6%96%B0%E8%B2%A1%E7%B6%93%E6%B6%88%E6%81%AF/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B82026%E7%AC%AC%E5%8D%81%E4%B8%80%E6%89%B9-2031135/",
-      "pubDate": "2026-08-09 06:23:55",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/05/ed-social-share_19873850955e4e5ab66fb9a_27499425069f836787b3ab.jpg",
-      "keywords": [
-        "最新財經消息",
-        "最新財經資訊"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "6c29bc5b3d587a649bb80aa9485bb5e1",
       "title": "【SK海力士擬砸4萬億韓圓回購】股份回購料達2.9萬億韓圓 按季息375韓圓創新高 公布後股價由挫轉紅",
       "description": "南韓晶片巨企SK海力士(SK Hynix)一夜之間公布最新季度股息,並承諾在第三季內交出總值料達數萬億韓圓的股東回報方案細節,力度之大一舉扭轉公布前股價一度急挫的走勢。這場「峰迴路轉」的背後,是全球投資者對AI晶片巨企坐擁巨額現金卻遲遲未有大手回饋股東的耐性見底。 據市場消息,SK海力士於8月7日收市後突然公布,將派發每股375韓圓季度股息,總額約2733億韓圓,除淨日定於8月31日;同時確認會在第三季內公布追加股東回報方案,市場估算方案總值可能達到約100萬億韓圓(約合724億美元),當中股份回購部分料介乎40萬億韓圓(約合290億美元)左右,相當於已發行股份逾2%。消息公布前,SK海力士股價曾在盤中急挫近4.88%,公布後跌幅顯著收窄至約1%。 【耐性見底】巨額現金遭質疑 投資者施壓 今次公布並非巧合。SK海力士早前完成美國預託證券(ADR)發售,觸發美國證券法規定的25個交易日「緘默期」,令集團一直未能就股東回報作進一步表態;緘默期已於8月4日屆滿,公布隨即在數日後出爐。有分析指出,SK海力士與同業三星電子受惠AI記憶體需求急升,年底淨現金合計料達約2630億美元,規模超過輝達逾一倍,卻遲遲未有相應加碼回饋股東的具體方案,令投資者不滿情緒持續累積。有券商分析師形容,企業需要「更大膽、更具體、符合國際水平的溝通策略」,才能扭轉市場觀感。 項目 內容 洞察 季度股息 每股375韓圓,總額約2733億韓圓 除淨日8月31日 回報方案規模 市場估算約100萬億韓圓(約724億美元) 第三季內公布細節 回購部分 料介乎40萬億韓圓(約290億美元) 相當於已發行股份逾2% 股價反應 盤中曾急挫4.88%,收窄至約1%.. The post 【SK海力士擬砸4萬億韓圓回購】股份回購料達2.9萬億韓圓 按季息375韓圓創新高 公布後股價由挫轉紅 appeared first on 經濟一週 .",
@@ -32097,6 +32927,20 @@
       "region": "hk"
     },
     {
+      "id": "030094d875155f64",
+      "title": "夫妻的博弈｜郭柏妍展現教科級OL穿搭　游嘉欣百變造型駕馭富家千金　高Ling露肩裝晒鎖骨時尚感爆燈",
+      "description": "【游嘉欣 /郭柏妍 / 高海寧 / 夫妻的博弈】由鍾澍佳總監製的輕鬆愛情小品劇《夫妻的博弈》，昨晚（10 日）劇情講述 KC（鄧智堅飾）使出一招「明升暗害」，刻意安排被全公司睇死辦事能力不足的葉熙妍（...",
+      "link": "https://topick.hket.com/article/4174590",
+      "pubDate": "2026-08-11 23:06:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174590/OLLing_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "2d559a41c603b978",
       "title": "功夫女足︱星爺罕做專訪全靠《430穿梭機》同事　《一周星星》黎芷珊爆周星馳當年「無厘頭」行為",
       "description": "【周星馳 / 劉嘉玲 / 黎芷珊】TVB娛樂訪談節目《一周星星》在本周日晚（8月16日）嘉賓請來電影《功夫女足》導演兼編劇周星馳（星爺）、劉嘉玲、聯合導演林子聰，以及參演演員蔡思貝、張繼聰接受嘉賓主持...",
@@ -32426,6 +33270,6 @@
       "pinned": true
     }
   ],
-  "total": 1691,
-  "last_updated": "2026-08-11T23:08:24.714871"
+  "total": 1736,
+  "last_updated": "2026-08-12T00:08:27.109139"
 }
