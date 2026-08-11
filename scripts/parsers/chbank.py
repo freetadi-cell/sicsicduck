@@ -18,7 +18,9 @@ Row9: ['人民幣','5,000 至 49,999',...]
 - 數據行：貨幣行(12 cells) 利率由 idx2 開始；金額行(11 cells) 利率由 idx1 開始
   所以 row_idx = header_idx + offset，offset = len(row) - 10（靈活計）
 
-我哋要：3m, 6m, 12m（雲利率），取非 0 最高檔。
+注意 pipeline 傳入嘅 tables 可能係「string body text + dict tables」混合 list，
+所以 _find_and_parse 分兩輪：先掃 dict format（HTML cells 可靠），
+string format（inner_text 黏連唔可靠）只作後備。
 """
 import logging
 
@@ -42,23 +44,36 @@ def parse(text=None, tables=None, html=None):
 
 
 def _find_and_parse(tables, keyword):
+    """喺 tables 揾包含 keyword 嘅 table 並 parse.
+
+    分兩輪：
+    - 第一輪：dict format（HTML cells，caption / cells 命中 keyword）
+    - 第二輪（後備）：string format（body text / inner_text，黏連唔可靠）
+    咁樣即使 body text(string) 排喺 dict tables 前面，都唔會俾 fallback 搶走。
+    """
+    # 第一輪：dict format 優先
+    for table in tables:
+        if not isinstance(table, dict):
+            continue
+        cells = table.get('cells')
+        caption = str(table.get('caption', ''))
+        if caption and keyword in caption:
+            parsed = _parse_cells(cells if cells else [], keyword)
+            if parsed:
+                return parsed
+        if cells and any(keyword in str(c) for row in cells for c in row):
+            parsed = _parse_cells(cells, keyword)
+            if parsed:
+                return parsed
+
+    # 第二輪：string format 後備
     for table in tables:
         if isinstance(table, dict):
-            cells = table.get('cells')
-            caption = str(table.get('caption', ''))
-            if caption and keyword in caption:
-                parsed = _parse_cells(cells if cells else [], keyword)
-                if parsed:
-                    return parsed
-            if cells and any(keyword in str(c) for row in cells for c in row):
-                parsed = _parse_cells(cells, keyword)
-                if parsed:
-                    return parsed
-        else:
-            if keyword in str(table):
-                parsed = _parse_text(str(table))
-                if parsed:
-                    return parsed
+            continue
+        if keyword in str(table):
+            parsed = _parse_text(str(table))
+            if parsed:
+                return parsed
     return None
 
 
@@ -146,7 +161,7 @@ def _extract_row(flat, col_idx, cur_key, per_currency):
 
 
 def _parse_text(table_str):
-    """舊 format fallback：inner_text()（數字黏連），只作後備，唔可靠。"""
+    """string format 後備：inner_text()/body text（數字黏連），唔可靠但防 crash。"""
     import re
     out = {}
     for label, cur in CURRENCY_LABELS.items():
