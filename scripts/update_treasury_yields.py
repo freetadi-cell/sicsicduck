@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """
-Fetch US Treasury YIELDS from FRED (Federal Reserve Economic Data)
+Fetch US Treasury YIELDS from Yahoo Finance (即時報價)
 Updates every 10 minutes via cron
 Stores 30 days history
 
-Data source: FRED - Market Yield on US Treasury Securities
-- DGS3MO: 3-Month Treasury Yield
-- DGS2: 2-Year Treasury Yield
-- DGS5: 5-Year Treasury Yield
-- DGS10: 10-Year Treasury Yield
-- DGS30: 30-Year Treasury Yield
+Data source: Yahoo Finance 即時美債收益率（貼近 Investing/市場即時價）
+- 3M: ^IRX
+- 2Y: 2YY=F
+- 5Y: ^FVX
+- 10Y: ^TNX
+- 30Y: ^TYX
 """
 
 import json
+import re
 import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -22,88 +23,54 @@ SCRIPT_DIR = Path(__file__).parent
 DATA_DIR = SCRIPT_DIR.parent / "data"
 YIELDS_FILE = DATA_DIR / "treasury_yields.json"
 
-# FRED Series IDs for Treasury Yields
-FRED_SERIES = ["DGS3MO", "DGS2", "DGS5", "DGS10", "DGS30"]
+# Yahoo Finance symbols (即時報價)
+YAHOO_SERIES = {
+    "3M": "^IRX",
+    "2Y": "2YY=F",
+    "5Y": "^FVX",
+    "10Y": "^TNX",
+    "30Y": "^TYX",
+}
 MATURITIES = ["3M", "2Y", "5Y", "10Y", "30Y"]
 
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 
-def fetch_yields_from_fred():
-    """Fetch Treasury yields from FRED CSV using curl"""
-    print("Fetching US Treasury yields from FRED...")
-    
+
+def fetch_yields_from_yahoo():
+    """Fetch Treasury yields from Yahoo Finance real-time quote API"""
+    print("Fetching US Treasury yields from Yahoo Finance...")
+
     yields = {}
-    
-    try:
-        # Build FRED CSV URL
-        end_date = datetime.now()
-        start_date = end_date - timedelta(days=7)
-        
-        url = (f"https://fred.stlouisfed.org/graph/fredgraph.csv"
-               f"?id={','.join(FRED_SERIES)}"
-               f"&cosd={start_date.strftime('%Y-%m-%d')}"
-               f"&coed={end_date.strftime('%Y-%m-%d')}")
-        
-        print(f"  Fetching FRED CSV...")
-        
-        # Use curl to download CSV (most reliable method)
-        result = subprocess.run(
-            ["curl", "-s", "--max-time", "20", "-L", url],
-            capture_output=True,
-            text=True,
-            timeout=30
-        )
-        
-        if result.returncode != 0:
-            print(f"  Error: curl failed with code {result.returncode}")
-            return yields
-        
-        csv_text = result.stdout
-        lines = csv_text.strip().split('\n')
-        
-        if len(lines) < 2:
-            print("  Error: No data returned")
-            return yields
-        
-        # Parse header to get series order
-        header = lines[0].split(',')
-        series_list = [s.strip() for s in header[1:]]  # Skip date column
-        
-        print(f"  Series found: {series_list}")
-        
-        # Get last non-empty row
-        for line in reversed(lines[1:]):
-            parts = line.split(',')
-            if len(parts) >= 6:
-                # Check if all values are valid
-                valid = all(p.strip() and p.strip() != '.' for p in parts[1:])
-                if valid:
-                    date = parts[0].strip()
-                    print(f"  Date: {date}")
-                    
-                    for i, series_id in enumerate(series_list):
-                        value = parts[i + 1].strip()
-                        # Map series to maturity
-                        for j, sid in enumerate(FRED_SERIES):
-                            if sid == series_id:
-                                maturity = MATURITIES[j]
-                                yields[maturity] = {
-                                    "yield": round(float(value), 3),
-                                    "date": date,
-                                    "series": series_id,
-                                    "source": "FRED (Federal Reserve)"
-                                }
-                                print(f"    {maturity}: {value}%")
-                                break
-                    break
-        
-        if not yields:
-            print("  Warning: Could not parse yield data")
-        
-    except subprocess.TimeoutExpired:
-        print("  Error: curl timeout (30s)")
-    except Exception as e:
-        print(f"  Error: {e}")
-    
+    now_iso = datetime.now().isoformat()
+
+    for maturity, symbol in YAHOO_SERIES.items():
+        try:
+            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=1d"
+            result = subprocess.run(
+                ["curl", "-s", "--max-time", "15", "-H", f"User-Agent: {UA}", url],
+                capture_output=True, text=True, timeout=20)
+            if result.returncode != 0:
+                print(f"  {maturity}: curl failed")
+                continue
+            data = json.loads(result.stdout)
+            price = data['chart']['result'][0]['meta'].get('regularMarketPrice')
+            if price is not None and price > 0:
+                yields[maturity] = {
+                    "yield": round(float(price), 3),
+                    "date": now_iso[:10],
+                    "series": symbol,
+                    "source": "Yahoo Finance (即時報價)"
+                }
+                print(f"    {maturity}: {price}%")
+            else:
+                print(f"  {maturity}: 攞唔到價格")
+        except Exception as e:
+            print(f"  {maturity}: error {e}")
+
+    if yields:
+        print(f"\n攞到 {len(yields)}/{len(YAHOO_SERIES)} 個年期：{list(yields.keys())}")
+    else:
+        print("Warning: 完全攞唔到數據")
     return yields
 
 
@@ -141,7 +108,7 @@ def save_yields(yields):
     data = {
         "last_updated": datetime.now().isoformat(),
         "timezone": "Asia/Hong_Kong",
-        "source": "FRED - Federal Reserve Bank of St. Louis",
+        "source": "Yahoo Finance (即時報價)",
         "description": "Market Yield on US Treasury Securities",
         "current": yields,
         "history": history,
@@ -250,12 +217,22 @@ def update_html_page():
 
 
 def main():
-    yields = fetch_yields_from_fred()
-    
+    yields = fetch_yields_from_yahoo()
+
     if not yields:
         print("No yields fetched!")
         return
-    
+
+    # 確保 5 個年期全部攞到先繼續，唔齊就唔覆蓋數據
+    required = ["3M", "2Y", "5Y", "10Y", "30Y"]
+    missing = [m for m in required if m not in yields]
+    if missing:
+        print(f"⚠️ 攞唔齊 5 個年期，缺：{missing}")
+        print("  為避免用唔完整數據覆蓋現有資料，跳過 save/commit/push")
+        return
+
+    print(f"✅ {len(yields)}/{len(required)} 個年期齊全，繼續更新")
+
     save_yields(yields)
     update_html_page()
     
