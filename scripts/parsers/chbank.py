@@ -1,136 +1,163 @@
 """創興銀行 Chong Hing Bank - Parser for 雲利率 (e-rate / cloud rates).
 
-Updated 2026-07-22 to handle both 雲利率 and 牌價 rates from scraped tables.
-
 Page: https://www.chbank.com/tc/personal/banking-services/useful-information/deposit-rates/index.shtml
 
-Two rate types:
-1. 雲利率 (e-rate) - for online/mobile banking, better rates
-2. 牌價 (board rate) - standard rates
+注意：網頁用 inner_text() 數字會黏連，所以用 HTML cell（<td>/<th>）逐 cell 讀。
+
+雲利率 table 結構（HTML cells，每 row 係 list of cell text）：
+Row0: ['貨幣', '金額', '存款期']
+Row1: ['1天','7天','14天','1個月','2個月','3個月','6個月','9個月','12個月','24個月']  ← 標題行(10 cells)
+Row2: ['港 元','5,000 至 49,999','0.0010',...]  ← 貨幣行：12 cells（貨幣+金額+10利率）
+Row3: ['50,000 至 499,999','0.0010',...]        ← 金額行：11 cells（金額+10利率）
+...
+Row6: ['美 元','1,000 至 9,999',...]
+Row9: ['人民幣','5,000 至 49,999',...]
+
+關鍵索引：
+- 標題行：col_idx['3個月']=5, '6個月'=6, '12個月'=8（10 cells，0-based）
+- 數據行：貨幣行(12 cells) 利率由 idx2 開始；金額行(11 cells) 利率由 idx1 開始
+  所以 row_idx = header_idx + offset，offset = len(row) - 10（靈活計）
+
+我哋要：3m, 6m, 12m（雲利率），取非 0 最高檔。
 """
-import re
 import logging
 
 logger = logging.getLogger(__name__)
 
+CURRENCY_LABELS = {'港 元': 'hkd', '美 元': 'usd', '人民幣': 'cny'}
+PERIOD_MAP = {'3個月': '3m', '6個月': '6m', '12個月': '12m'}
+ALL_PERIODS = ['1天', '7天', '14天', '1個月', '2個月', '3個月', '6個月', '9個月', '12個月', '24個月']
+
+# 標題行有幾多個利率欄（= 10）
+HEADER_RATE_CELLS = 10
+
 
 def parse(text=None, tables=None, html=None):
-    """Parse Chong Hing Bank 雲利率 from scraped tables."""
     if not tables:
         return None
-    
-    rates = {}
-    
-    # Find the 雲利率 table
+    cloud = _find_and_parse(tables, '雲利率')
+    if cloud:
+        return cloud
+    return _find_and_parse(tables, '牌價')
+
+
+def _find_and_parse(tables, keyword):
     for table in tables:
-        table_str = str(table)
-        
-        # 雲利率 table has distinctive format with higher rates
-        # HKD: 3個月 2.60%, 6個月 1.50%, 12個月 0.80-0.95%
-        # USD: 3個月 3.60-3.80%, 6個月 3.90%
-        # CNY: 3個月 1.00%, 6個月 1.35%, 12個月 1.20%
-        
-        if '定期存款（雲利率）' in table_str or '港元' in table_str and '3個月' in table_str:
-            # Check if this is HKD, USD, or CNY section
-            if '港 元' in table_str:
-                hkd_rates = _parse_cloud_rates(table_str, '港 元')
-                if hkd_rates:
-                    rates['hkd'] = hkd_rates
-            
-            if '美 元' in table_str:
-                usd_rates = _parse_cloud_rates(table_str, '美 元')
-                if usd_rates:
-                    rates['usd'] = usd_rates
-            
-            if '人民幣' in table_str:
-                cny_rates = _parse_cloud_rates(table_str, '人民幣')
-                if cny_rates:
-                    rates['cny'] = cny_rates
-    
-    if rates:
-        return rates
-    
-    # Fallback to 牌價 rates
-    for table in tables:
-        table_str = str(table)
-        if '定期存款（牌價）' in table_str:
-            if '港 元' in table_str:
-                hkd_rates = _parse_board_rates(table_str, '港 元')
-                if hkd_rates:
-                    rates['hkd'] = hkd_rates
-    
-    return rates if rates else None
+        if isinstance(table, dict):
+            cells = table.get('cells')
+            caption = str(table.get('caption', ''))
+            if caption and keyword in caption:
+                parsed = _parse_cells(cells if cells else [], keyword)
+                if parsed:
+                    return parsed
+            if cells and any(keyword in str(c) for row in cells for c in row):
+                parsed = _parse_cells(cells, keyword)
+                if parsed:
+                    return parsed
+        else:
+            if keyword in str(table):
+                parsed = _parse_text(str(table))
+                if parsed:
+                    return parsed
+    return None
 
 
-def _parse_cloud_rates(table_str, currency_label):
-    """Parse 雲利率 for a specific currency.
-    
-    Format: 港 元 5,000 至 49,999 0.0010 0.0100 0.0100 2.4500 2.5000 2.6000 1.5000 0.9000 0.8000 0.2000
-    Columns: 1天 7天 14天 1個月 2個月 3個月 6個月 9個月 12個月 24個月
-    
-    Note: Numbers are often concatenated (e.g., "0.00100.0100")
-    Solution: Extract 4-decimal numbers (X.XXXX format)
-    """
-    rates = {}
-    
-    # Find the currency section
-    idx = table_str.find(currency_label)
-    if idx < 0:
+def _parse_cells(cells, keyword):
+    """從 HTML cells parse. Returns {hkd:{'3m':{...}},...}，每期限取最高檔。"""
+    # 1. 定位標題行 → col_idx（標題 text → 喺標題行嘅 index）
+    col_idx = {}
+    for row in cells:
+        flat = [str(c).strip() for c in row]
+        if any(c == '3個月' for c in flat) and any(c == '1天' for c in flat):
+            for i, c in enumerate(flat):
+                if c in ALL_PERIODS:
+                    col_idx[c] = i
+            break
+    if not col_idx:
         return None
-    
-    # Get the section after currency label
-    section = table_str[idx:idx+1500]
-    
-    # Extract 4-decimal numbers (利率都是 4 位小數)
-    # Pattern: X.XXXX where X is digit
-    nums = re.findall(r'\d+\.\d{4}', section)
-    values = [float(n) for n in nums if float(n) > 0 and float(n) < 100]
-    
-    # Column indices for periods (0-indexed from rate values)
-    # Columns: 1天 7天 14天 1個月 2個月 3個月 6個月 9個月 12個月
-    # Skip the first 3 values (1天 7天 14天 are usually very low like 0.0010, 0.0100)
-    period_map = {
-        '3m': 5,   # 3個月
-        '6m': 6,   # 6個月
-        '12m': 8,  # 12個月
-    }
-    
-    # Extract rates for each period
-    for period, col_idx in period_map.items():
-        if col_idx < len(values):
-            rate = values[col_idx]
-            if rate > 0.5:  # Reasonable rate threshold
-                rates[period] = {
-                    'rate': rate,
-                    'min_deposit': 5000,
-                    'note': '雲利率（網上/流動理財）',
-                    'source': 'bank'
-                }
-    
-    return rates if rates else None
 
+    # 2. 掃行，按貨幣分組
+    per_currency = {}  # cur -> {period: rate}
+    cur_key = None
 
-def _parse_board_rates(table_str, currency_label):
-    """Parse 牌價 rates (standard rates)."""
-    rates = {}
-    
-    # Similar logic but for board rates which are lower
-    idx = table_str.find(currency_label)
-    if idx < 0:
-        return None
-    
-    section = table_str[idx:idx+2000]
-    
-    # Look for pattern: 港 元 5,000 至 99,999 0.0010 0.0100 0.0100 0.1000 0.1000 0.1200 ...
-    # We want 3m, 6m, 12m
-    m = re.search(r'(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)', section)
-    if m:
-        # These are 1天 7天 14天 1個月 2個月 3個月
-        rates['3m'] = {
-            'rate': float(m.group(6)),
-            'min_deposit': 5000,
-            'note': '定期存款牌價利率',
-            'source': 'bank'
+    for row in cells:
+        flat = [str(c).strip() for c in row]
+        if not flat or not any(flat):
+            continue
+
+        # 貨幣標籤行
+        if flat[0] in CURRENCY_LABELS:
+            cur_key = CURRENCY_LABELS[flat[0]]
+            _extract_row(flat, col_idx, cur_key, per_currency)
+            continue
+
+        # 非貨幣行
+        if cur_key is None:
+            continue
+        if any(c in ('貨幣', '金額', '存款期') for c in flat):
+            continue
+        if any(c == '1天' for c in flat):
+            continue
+        _extract_row(flat, col_idx, cur_key, per_currency)
+
+    # 3. 組最終輸出
+    out = {}
+    for cur, pr in per_currency.items():
+        if not pr:
+            continue
+        out[cur] = {
+            period: {
+                'rate': rate,
+                'min_deposit': 5000,
+                'note': '雲利率（網上/流動理財）' if '雲' in keyword else '牌價利率',
+                'source': 'bank',
+            }
+            for period, rate in pr.items()
         }
-    
-    return rates if rates else None
+    return out if out else None
+
+
+def _extract_row(flat, col_idx, cur_key, per_currency):
+    """從單一數據行抽 3m/6m/12m，存入 per_currency[cur_key]（取最高）。"""
+    # offset = 數據行有幾多個「前置欄」（貨幣/金額）＝ len(row) - 標題行利率欄數
+    offset = len(flat) - HEADER_RATE_CELLS
+    if offset < 0:
+        offset = 0
+
+    if cur_key not in per_currency:
+        per_currency[cur_key] = {}
+    for label, period_key in PERIOD_MAP.items():
+        header_idx = col_idx.get(label)
+        if header_idx is None:
+            continue
+        row_idx = header_idx + offset
+        if row_idx >= len(flat):
+            continue
+        val = flat[row_idx]
+        if val in ('-------', '—', '-', ''):
+            continue
+        try:
+            rate = float(val)
+        except ValueError:
+            continue
+        if 0 < rate < 100:
+            if period_key not in per_currency[cur_key] or rate > per_currency[cur_key][period_key]:
+                per_currency[cur_key][period_key] = rate
+
+
+def _parse_text(table_str):
+    """舊 format fallback：inner_text()（數字黏連），只作後備，唔可靠。"""
+    import re
+    out = {}
+    for label, cur in CURRENCY_LABELS.items():
+        idx = table_str.find(label)
+        if idx < 0:
+            continue
+        nums = [float(n) for n in re.findall(r'\d+\.\d{4}', table_str[idx:idx + 2000]) if 0 < float(n) < 100]
+        if len(nums) > 8:
+            out[cur] = {
+                period: {'rate': nums[col], 'min_deposit': 5000,
+                         'note': '雲利率（網上/流動理財）', 'source': 'bank'}
+                for period, col in {'3m': 5, '6m': 6, '12m': 8}.items() if col < len(nums)
+            }
+    return out if out else None

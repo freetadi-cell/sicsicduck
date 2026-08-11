@@ -306,7 +306,25 @@ def _fetch_single_page(page, key, url, url_type):
     table_elements = page.locator("table").all()
     for table in table_elements[:10]:
         try:
-            tables.append(table.inner_text())
+            # chbank 特例：用 HTML cell 結構（inner_text 會令數字黏連，例：49,9990.0010）
+            if key == 'chbank':
+                # 收集 table caption（雲利率/牌價標題喺 <caption>，唔喺 cell 度）
+                caption = ""
+                try:
+                    cap = table.locator("caption")
+                    if cap.count():
+                        caption = cap.first.inner_text().strip()
+                except:
+                    caption = ""
+                rows = table.locator("tr").all()
+                cell_rows = []
+                for r in rows:
+                    cells = [c.inner_text().strip() for c in r.locator("th, td").all()]
+                    if any(x for x in cells):
+                        cell_rows.append(cells)
+                tables.append({"caption": caption, "cells": cell_rows})
+            else:
+                tables.append(table.inner_text())
         except:
             pass
 
