@@ -1,0 +1,10 @@
+{
+  "id": "464acfb3c3083716b37aff0762596777",
+  "title": "中國發現多起“Sorry”勒索病毒攻擊事件",
+  "source_name": "Crntt",
+  "link": "http://www.crntt.com/doc/7_0_107222318_1_0810213614.html",
+  "rewritten_title": "中國發現多起「Sorry」勒索病毒攻擊 針對Linux伺服器",
+  "rewritten": "國家計算機病毒應急處理中心近日在境內發現多起「Sorry」勒索病毒攻擊事件。該病毒屬2026年新出現的勒索病毒家族，由攻擊者使用GO語言編寫，主要針對暴露於互聯網的Linux Web伺服器。攻擊者利用WebPros cPanel授權問題漏洞（CNNVD-202604-5641，CVE-2026-41940）獲取伺服器管理權限，投放並運行病毒，偽裝成sshd進程。病毒會生成受害者標識符回傳攻擊者，終…",
+  "status": "done",
+  "fetched_at": "2026-08-11T10:03:16"
+}
