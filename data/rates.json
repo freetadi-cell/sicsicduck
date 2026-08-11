@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T08:31:54.813850+08:00",
+  "last_updated": "2026-08-11T08:31:54.468071+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -298,40 +298,38 @@
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
           "source": "bank",
-          "existing_funds_rate": 2.9
+          "existing_funds_rate": 2.85
         },
         "6m": {
           "rate": 3.1,
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 3.05
+          "source": "bank"
         },
         "12m": {
           "rate": 3.1,
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 3.05
+          "source": "bank"
         },
         "1m": {
-          "rate": 2.45,
+          "rate": 2.4,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "2m": {
-          "rate": 2.55,
+          "rate": 2.5,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "4m": {
-          "rate": 2.9,
+          "rate": 2.85,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
@@ -720,7 +718,7 @@
         "4m": {
           "new_funds": null,
           "existing_funds": {
-            "rate": 2.5,
+            "rate": 2.55,
             "min_deposit": 50000,
             "note": "網上定存特惠年利率",
             "source": "bank"
@@ -735,7 +733,7 @@
             "source": "bank"
           },
           "existing_funds": {
-            "rate": 2.5,
+            "rate": 2.55,
             "min_deposit": 50000,
             "note": "網上定存特惠年利率",
             "source": "bank"
@@ -1384,7 +1382,7 @@
       "logo_color": "#FF6B35",
       "hkd": {
         "1m": {
-          "rate": 1.45,
+          "rate": 1.4,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -1396,7 +1394,7 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 2.5,
+          "rate": 2.55,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -1583,7 +1581,7 @@
         },
         "3m": {
           "new_funds": {
-            "rate": 3.1,
+            "rate": 3.05,
             "min_deposit": 100,
             "note": "新資金定期存款優惠",
             "source": "hket",
@@ -1592,7 +1590,7 @@
             ]
           },
           "existing_funds": {
-            "rate": 3.05,
+            "rate": 3.0,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
@@ -1610,7 +1608,7 @@
             ]
           },
           "existing_funds": {
-            "rate": 2.85,
+            "rate": 2.8,
             "min_deposit": 100,
             "note": "不論新舊資金",
             "source": "hket",
