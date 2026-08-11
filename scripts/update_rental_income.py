@@ -20,6 +20,39 @@ HKST = timezone(timedelta(hours=8))
 DISTRICT_MAP = {'HK': '香港', 'KL': '九龍', 'KLN': '九龍', 'NTE': '新界', 'NTW': '新界', 'NW': '新界', 'NE': '新界'}
 DISTRICT_CODE_MAP = {'HK': 'hk', 'KL': 'kl', 'KLN': 'kl', 'NTE': 'nt', 'NTW': 'nt', 'NW': 'nt', 'NE': 'nt'}
 
+# 每個 tab 應該含嘅代表屋苑（用嚟驗證切換成功，唔會撳完仲係上一個 tab 嘅數據）
+# 以 2026-06 實測網頁嘅真實名單為準
+DISTRICT_SAMPLE_ESTATES = {
+    'HK': ['太古城', '海怡半島', '杏花邨', '康怡花園', '置富花園'],      # 港島
+    'KL': ['美孚新邨', '黃埔花園', '麗港城', '新都城', '維景灣畔'],      # 九龍
+    'NE': ['沙田第一城', '新港城', '名城', '迎海', '大埔中心', '太湖花園'],  # 新界東
+    'NW': ['嘉湖山莊', '珀麗灣', '海濱花園', '麗城花園', '映灣園', '荃威花園'],  # 新界西
+}
+
+# CRI 每個 tab 應該有一個識別標記：用「唔屬於該區嘅屋苑」嚟檢測重複/冇切換
+# 例如新界東唔應該出現太古城（港島代表）
+DISTRICT_ALIEN_SAMPLES = {
+    'HK': ['沙田第一城', '嘉湖山莊'],   # 港島 tab 唔應該有新界屋苑
+    'KL': ['沙田第一城', '嘉湖山莊'],   # 九龍 tab 唔應該有新界屋苑
+    'NE': ['太古城', '海怡半島', '美孚新邨'],  # 新界東唔應該有港島/九龍代表
+    'NW': ['太古城', '海怡半島', '美孚新邨'],  # 新界西唔應該有港島/九龍代表
+}
+
+
+def _verify_tab_switch(names, tab_id):
+    """驗證攞到嘅屋苑名單係咪真係屬於目標區域。
+    回傳 True = 切換成功；False = 攞到重複/港島/九龍數據（切換失敗）。"""
+    if not names:
+        return False
+    # tab_id 係 'tab-NE' 格式，剝走 'tab-' 前綴先對返 DISTRICT_SAMPLE_ESTATES 嘅 key
+    region_key = tab_id.replace('tab-', '') if tab_id.startswith('tab-') else tab_id
+    sample = DISTRICT_SAMPLE_ESTATES.get(region_key, [])
+    if not sample:
+        return True  # 冇 sample 定義就唔阻撓（保守通過）
+    # 目標區嘅代表屋苑：至少中一個先當切換成功（攞到該區嘢）
+    return any(n in names for n in sample)
+
+
 def log(msg):
     ts = datetime.now(HKST).strftime('%Y-%m-%d %H:%M:%S')
     line = f"[{ts}] {msg}"
@@ -73,28 +106,44 @@ def scrape_prices():
             district_names = ['港島', '九龍', '新界東', '新界西']
             
             for i, tab_id in enumerate(tabs):
-                try:
-                    if i > 0:
-                        # Click on the tab
-                        page.click(f'#{tab_id}')
-                        page.wait_for_timeout(3000)
-                    
-                    # Extract data using JavaScript
-                    data = page.evaluate(PRICE_EXTRACT_JS)
-                    
-                    # Parse JSON string if needed
-                    if isinstance(data, str):
-                        import json
-                        data = json.loads(data)
-                    
-                    for e in data:
-                        all_prices[e['name']] = {'price': e['price'], 'district': e['district']}
-                    
-                    log(f"  {district_names[i]}: {len(data)} 個屋苑")
-                    
-                except Exception as e:
-                    log(f"  {district_names[i]} 失敗: {e}")
-        
+                district_zh = district_names[i]
+                for attempt in range(3):  # 最多重試 3 次
+                    try:
+                        if i > 0:
+                            # Click on the tab
+                            page.click(f'#{tab_id}')
+                            page.wait_for_timeout(4000)
+
+                        # Extract data using JavaScript
+                        data = page.evaluate(PRICE_EXTRACT_JS)
+
+                        # Parse JSON string if needed
+                        if isinstance(data, str):
+                            import json
+                            data = json.loads(data)
+
+                        names = [e.get('name', '') for e in data]
+
+                        # 驗證切換成功：攞到嘅必須包含目標區代表屋苑
+                        if i > 0 and not _verify_tab_switch(names, tab_id):
+                            log(f"  {district_zh} 切換驗證失敗(第{attempt+1}次)，攞到 {len(data)} 個但唔似 {district_zh}，重試...")
+                            page.wait_for_timeout(2500 * (attempt + 1))
+                            continue
+
+                        for e in data:
+                            n = e.get('name')
+                            if not n:
+                                continue
+                            all_prices[n] = {'price': e.get('price'), 'district': e.get('district')}
+
+                        log(f"  {district_zh}: {len(data)} 個屋苑")
+                        break  # 成功，唔使重試
+                    except Exception as e:
+                        log(f"  {district_zh} 第{attempt+1}次失敗: {e}")
+                        if attempt < 2:
+                            page.wait_for_timeout(3000)
+                            continue
+
         except Exception as e:
             log(f"開頁失敗: {e}")
         
@@ -126,28 +175,44 @@ def scrape_rents():
             district_names = ['港島', '九龍', '新界東', '新界西']
             
             for i, tab_id in enumerate(tabs):
-                try:
-                    if i > 0:
-                        # Click on the tab
-                        page.click(f'#{tab_id}')
-                        page.wait_for_timeout(3000)
-                    
-                    # Extract data using JavaScript
-                    data = page.evaluate(RENT_EXTRACT_JS)
-                    
-                    # Parse JSON string if needed
-                    if isinstance(data, str):
-                        import json
-                        data = json.loads(data)
-                    
-                    for e in data:
-                        all_rents[e['name']] = {'rent': e['rent'], 'yield': e.get('yield'), 'district': e['district']}
-                    
-                    log(f"  {district_names[i]}: {len(data)} 個屋苑")
-                    
-                except Exception as e:
-                    log(f"  {district_names[i]} 失敗: {e}")
-        
+                district_zh = district_names[i]
+                for attempt in range(3):  # 最多重試 3 次
+                    try:
+                        if i > 0:
+                            # Click on the tab
+                            page.click(f'#{tab_id}')
+                            page.wait_for_timeout(4000)
+
+                        # Extract data using JavaScript
+                        data = page.evaluate(RENT_EXTRACT_JS)
+
+                        # Parse JSON string if needed
+                        if isinstance(data, str):
+                            import json
+                            data = json.loads(data)
+
+                        names = [e.get('name', '') for e in data]
+
+                        # 驗證切換成功：攞到嘅必須包含目標區代表屋苑
+                        if i > 0 and not _verify_tab_switch(names, tab_id):
+                            log(f"  {district_zh} 切換驗證失敗(第{attempt+1}次)，攞到 {len(data)} 個但唔似 {district_zh}，重試...")
+                            page.wait_for_timeout(2500 * (attempt + 1))
+                            continue
+
+                        for e in data:
+                            n = e.get('name')
+                            if not n:
+                                continue
+                            all_rents[n] = {'rent': e.get('rent'), 'yield': e.get('yield'), 'district': e.get('district')}
+
+                        log(f"  {district_zh}: {len(data)} 個屋苑")
+                        break  # 成功，唔使重試
+                    except Exception as e:
+                        log(f"  {district_zh} 第{attempt+1}次失敗: {e}")
+                        if attempt < 2:
+                            page.wait_for_timeout(3000)
+                            continue
+
         except Exception as e:
             log(f"開頁失敗: {e}")
         
@@ -160,6 +225,16 @@ def scrape_rents():
 def merge_and_save(price_data, rent_data):
     """Merge price and rent data, calculate yields, save to JSON"""
     log("合併數據並計算回報率...")
+
+    # Load existing data (for fallback: 呎租一時攞唔到就保留舊值)
+    old_by_name = {}
+    if JSON_PATH.exists():
+        try:
+            old = json.loads(JSON_PATH.read_text(encoding='utf-8'))
+            for e in old.get('estates', []):
+                old_by_name[e.get('name')] = e
+        except Exception:
+            pass
 
     # Load completion years data
     completion_years_path = DATA_DIR / 'estate_completion_years.json'
@@ -174,20 +249,32 @@ def merge_and_save(price_data, rent_data):
     current_year = datetime.now().year
 
     results = []
+    skipped = []
+    fallback_used = 0
     for name, pdata in price_data.items():
-        if name not in rent_data:
-            continue
-        rdata = rent_data[name]
+        rdata = rent_data.get(name)
+        dist_key = pdata['district']
+        district_zh = DISTRICT_MAP.get(dist_key, dist_key)
+        district_code = DISTRICT_CODE_MAP.get(dist_key, '')
+
+        # 搵唔到今次呎租 → 用返舊 json 數據頂住，唔好直接洗走（防止新界全軍覆沒）
+        use_old_fallback = False
+        if rdata is None:
+            old_e = old_by_name.get(name)
+            if old_e and old_e.get('avg_rent_sqft'):
+                rdata = {'rent': old_e['avg_rent_sqft'], 'yield': old_e.get('yield')}
+                use_old_fallback = True
+                fallback_used += 1
+            else:
+                skipped.append(name)
+                continue
+
         price_sqft = round(pdata['price'])
         rent_sqft = rdata['rent']
         rental_yield = rdata.get('yield')
 
         if rental_yield is None and price_sqft > 0:
             rental_yield = round((rent_sqft * 12 / price_sqft) * 100, 2)
-
-        dist_key = pdata['district']
-        district_zh = DISTRICT_MAP.get(dist_key, dist_key)
-        district_code = DISTRICT_CODE_MAP.get(dist_key, '')
 
         # Get completion year and calculate building age
         completion_year = completion_years.get(name)
