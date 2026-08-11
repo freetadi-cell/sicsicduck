@@ -561,7 +561,7 @@ document.addEventListener('keydown', (e) => {
     local_mode = "--local" in sys.argv
     out_path = ROOT / ("news-local.html" if local_mode else "news.html")
     out_path.write_text(out, encoding="utf-8")
-    print(f"✅ 生成 {out_path.name}（{len(articles)} 篇，{modals.count('news-modal') if modals else 0} 個 modal）")
+    print(f"✅ 生成 {out_path.name}（{len(articles)} 篇，{len(re.findall(r'class=\"news-modal\"', modals)) if modals else 0} 個 modal）")
 
     # 檢查大細
     size_kb = out_path.stat().st_size / 1024
