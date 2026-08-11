@@ -1,6 +1,62 @@
 {
   "articles": [
     {
+      "id": "8341804f72aad82b35656d6afa4b5a6d",
+      "title": "房協10.1起加租2.85% 每戶平均加$73至$200",
+      "description": "房協今日(11日)宣布其執行委員會通過2026年至2028年房協轄下出租屋邨的新租金安排。其轄下出租屋邨的租金將於今年10月1日起上調百分之2.85,新租金會維持至2028年9月30日。經調整後,房協甲類及乙類出租屋邨租戶將會分別每月平均多繳約73元及200元租金。 而近兩年新入伙的出租屋邨,包括香港仔漁映樓、洪水橋/厦村樂翹樓1座、粉嶺樂嶺樓及牛頭角鴻鵠臺第一座,並不涵蓋於是次租金檢討。 房協表",
+      "link": "https://www.stheadline.com/society/3603156/%E6%88%BF%E5%8D%94101%E8%B5%B7%E5%8A%A0%E7%A7%9F285-%E6%AF%8F%E6%88%B6%E5%B9%B3%E5%9D%87%E5%8A%A073%E8%87%B3200",
+      "pubDate": "2026-08-11 02:58:47",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/4a0809720155bd49f5a8bfb601354931/2026-08/KakaoTalk_20240821_163545285_04.jpg",
+      "keywords": [
+        "公屋加租",
+        "房協"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "a1e7196161dd4899cd5cfab6c1577c29",
+      "title": "日圓再跌穿「5算」 美日干預效應漸消退 市場關注今日會否「突襲」",
+      "description": "日圓重現跌勢,每百兌港元最新報4.92水平,再次跌穿「5算」。據彭博報道,日圓早前因美日聯手入市干預而獲得的強勁反彈,目前已回吐超過一半,其中日圓兌美元匯價回落至159.29,標誌市場對日圓的悲觀情緒再度浮現,並密切注視當局會否再次出手托市。值得留意的是,市場猜測當局或會趁今日(11日)日本假期交投淡靜之際再次突襲。 重新聚焦美日龐大息差等因素 據彭博分析指出,日圓7月下旬一度跌至164兌一美元的",
+      "link": "https://www.stheadline.com/macroeconomics/3603158/%E6%97%A5%E5%9C%93%E5%86%8D%E8%B7%8C%E7%A9%BF5%E7%AE%97-%E7%BE%8E%E6%97%A5%E5%B9%B2%E9%A0%90%E6%95%88%E6%87%89%E6%BC%B8%E6%B6%88%E9%80%80-%E5%B8%82%E5%A0%B4%E9%97%9C%E6%B3%A8%E4%BB%8A%E6%97%A5%E6%9C%83%E5%90%A6%E7%AA%81%E8%A5%B2",
+      "pubDate": "2026-08-11 02:58:33",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fc73c9387506aca6ac90478d9fc75861/2026-08/KF_ALEX__4.png",
+      "keywords": [
+        "日圓",
+        "加息"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "b4270cba70a81b1a458641b4832f180f",
+      "title": "金價創年內單周最大漲幅 回歸上行通道",
+      "description": "中評社北京8月11日電/北京時間8月11日,COMEX黃金期貨上漲1.11%,收報4448.6美元/盎司;現貨黃金盤中最高觸及4395美元/盎司,距離4400美元關口近在咫尺;過去一周現貨黃金累計漲幅超7%,創下今年1月以來最大單周漲幅。 據新華社報導,本輪金價走強受到多重因素共同推動。地緣層面,美伊圍繞霍爾木茲海峽通航博弈持續發酵。特朗普10日表態,將向伊朗提出索賠並納入談判議程。",
+      "link": "http://www.crntt.com/doc/7_0_107222428_1_0811105652.html",
+      "pubDate": "2026-08-11 02:56:52",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/107222430.jpg",
+      "keywords": [
+        "國際金價"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "466a9d14ebb6b709b899036b3364dc69",
       "title": "今日我咁睇|中東和談仍有波折 油價急升影響股市 恆指預計窄幅上落|小編苟豪",
       "description": "1.美國及伊朗尚未就和議達成共識,導致油價再次反彈,雖然距離上次高位仍有距離,但考慮到現時股市的樂觀程度,油價...",
@@ -37,68 +93,666 @@
       "pinned": true
     },
     {
-      "id": "8cbccbc1d3de7a38a3c4703a1b84dc22",
-      "title": "AI泡沫論|英偉達領軍 夥華爾街巨頭籌5000億美元拓AI生態",
-      "description": "英偉達夥華爾街巨頭籌5,000億美元拓AI生態。據英國金融時報,多家公司與英偉達圍繞5000億美元人工智能(AI)融資協議結盟,預計最快將在(美東時間",
-      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60378717/ai%E6%B3%A1%E6%B2%AB%E8%AB%96-%E8%8B%B1%E5%81%89%E9%81%94%E9%A0%98%E8%BB%8D-%E5%A4%A5%E8%8F%AF%E7%88%BE%E8%A1%97%E5%B7%A8%E9%A0%AD%E7%B1%8C5000%E5%84%84%E7%BE%8E%E5%85%83%E6%8B%93ai%E7%94%9F%E6%85%8B",
-      "pubDate": "2026-08-11 00:06:30",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260723/1156911118321455104453876.jpeg/-eN7fCdwZ0BBTwGfL1y4xm4M1eOt2u60KcltxSnJbcU",
+      "id": "26e80b7a45a0417b3458c35ab5780296",
+      "title": "Campaign亞太2026年度代理商大獎最終報名截止臨近 公佈史上規模最大亞太區評審團",
+      "description": "超80位亞太頭部品牌資深營銷高管將評選出區域最佳代理商。 香港2026年8月11日 /美通社/ -- Haymarket Media Asia旗下權威媒體、營銷及廣告行業刊物Campaign亞太公佈了「2026年度代理商大獎」(Agency of the Year Awards 2026)亞太區評審團,其規模為歷屆之最。本次評審集結了全球80餘位來自一眾知名品牌的資深營銷高管,共同評選並表彰亞太地區領先的代理商。 本屆評審團成員來自澳新地區、大中華區、日韓、南亞、東南亞以及整個亞太區域,匯聚了金融服務、快消、科技、電信、酒店文旅、汽車及醫療健康等多元行業的資深決策高管。...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/campaign2026--302847176.html",
+      "pubDate": "2026-08-11 03:00:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1964261/20260804232654EDT_image_1.jpg?id=OA2851030&p=original",
       "keywords": [
-        "財經透視",
-        "股票",
-        "a股",
-        "新聞",
-        "港股",
-        "財經網",
-        "財經新聞",
-        "地產消息",
-        "hk01",
-        "香港新聞",
+        "awd"
+      ],
+      "category": [
+        "technology",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c9e1e793d17791a34599a85bc9e8c8d0",
+      "title": "房協10.1起加租2.85% 每戶平均加$73至$200 房協:營運開支上升、連續兩年錄虧損",
+      "description": "房協今日(11日)宣布其執行委員會通過2026年至2028年房協轄下出租屋邨的新租金安排。其轄下出租屋邨的租金將於今年10月1日起上調百分之2.85,新租金會維持至2028年9月30日。經調整後,房協甲類及乙類出租屋邨租戶將會分別每月平均多繳約73元及200元租金。 每戶平均多繳約73元至200元 而近兩年新入伙的出租屋邨,包括香港仔漁映樓、洪水橋/厦村樂翹樓1座、粉嶺樂嶺樓及牛頭角鴻鵠臺第一座,",
+      "link": "https://www.stheadline.com/society/3603156/%E6%88%BF%E5%8D%94101%E8%B5%B7%E5%8A%A0%E7%A7%9F285-%E6%AF%8F%E6%88%B6%E5%B9%B3%E5%9D%87%E5%8A%A073%E8%87%B3200-%E6%88%BF%E5%8D%94%E7%87%9F%E9%81%8B%E9%96%8B%E6%94%AF%E4%B8%8A%E5%8D%87%E9%80%A3%E7%BA%8C%E5%85%A9%E5%B9%B4%E9%8C%84%E8%99%A7%E6%90%8D",
+      "pubDate": "2026-08-11 02:58:47",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/e3e360fe368d2534bb7b7445c3f9dc3e/2026-08/NJ240527RF28thu_b.jpg",
+      "keywords": [
+        "公屋加租",
+        "房協"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4ea104c36b2405ff5685f71f49ceab65",
+      "title": "英超│傳水晶宮愛華頓互換鋒將 班倫莊臣直接換麥尼爾 無轉會費情況罕有",
+      "description": "2026至27球季英超下周五開鑼,各隊正在最後衝刺引援補充實力,當中水晶宮和愛華頓接近完成一宗不涉及轉會費直接互換球員的罕有交易。水晶宮翼鋒班倫莊臣轉投愛華頓,後者鋒將杜韋麥尼爾就會入「宮」。英格蘭球壇甚少互換球員的案例,較注目是曼聯、阿仙奴互換阿歷斯山齊士及米布達利恩。 傳兩人已過體測 將各自簽約4年 水晶宮和愛華頓正蘊釀一宗互換鋒將的交易,前者送出威爾斯快翼班倫班臣,拖肥糖就交出英格蘭翼鋒杜韋",
+      "link": "https://www.stheadline.com/football-news/3603157/%E8%8B%B1%E8%B6%85%E5%82%B3%E6%B0%B4%E6%99%B6%E5%AE%AE%E6%84%9B%E8%8F%AF%E9%A0%93%E4%BA%92%E6%8F%9B%E9%8B%92%E5%B0%87-%E7%8F%AD%E5%80%AB%E8%8E%8A%E8%87%A3%E7%9B%B4%E6%8E%A5%E6%8F%9B%E9%BA%A5%E5%B0%BC%E7%88%BE-%E7%84%A1%E8%BD%89%E6%9C%83%E8%B2%BB%E6%83%85%E6%B3%81%E7%BD%95%E6%9C%89",
+      "pubDate": "2026-08-11 02:57:10",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d521138819d040f573fa4401a6104e52/2026-08/KF_-_2026-08-11T105616_550.png",
+      "keywords": [
+        "愛華頓",
+        "杜韋麥尼爾",
+        "水晶宮",
+        "班倫莊臣",
+        "英超"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f304c4994656ebfd6a51c42d971d8971",
+      "title": "M1A2T戰車首參漢光 迷彩防護網防無人機",
+      "description": "中評社台北8月11日電/台軍方漢光42號演習實兵驗證第6天,進入縱深作戰階段。台“國防部長”顧立雄10日視導憲兵負責首都衛戍的指揮所,要求衛戍區與作戰區間必須建立完善溝通協調機制。另外,陸軍M1A2T戰車在車頂加裝防範遭無人機與飛彈攻擊的鋼網,也首度對外亮相。 第6天的漢光演習,除了中部、東部地區持續演練跨區支援,動員兵力或遠程火力投入北部戰場。顧立雄10日上午由“國防部”副部長徐斯",
+      "link": "http://www.crntt.com/doc/7_0_160255545_1_0811105704.html",
+      "pubDate": "2026-08-11 02:57:04",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255557.jpg",
+      "keywords": [
+        "漢光演習",
+        "m1a2t戰車"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f0050df16074aa88e164586018844acd",
+      "title": "香港紀律部隊女足今再度披甲上陣 參加第四屆「山海盃」青少年足球賽",
+      "description": "香港紀律部隊青少年足球隊上星期遠征廈門,參加第四屆「山海盃」青少年足球賽。挾住上屆冠軍的氣勢,香港紀律部隊女足今次再度披甲上陣,場上拼盡真功夫,與全國17個地區、32支球隊激戰!9日賽程、70場比賽,雖然並非電影內的「功夫女足」,但她們在場上的表現絕對有板有眼,功架十足!最珍貴是不止在球場上入球及勝負,而這班女足一齊流過汗、一齊笑過的瞬間。今個夏天,她們再一次為廈門山海盃留低最熱血的青春回憶,亦建",
+      "link": "https://www.stheadline.com/breaking-news/3603154/%E9%A6%99%E6%B8%AF%E7%B4%80%E5%BE%8B%E9%83%A8%E9%9A%8A%E5%A5%B3%E8%B6%B3%E4%BB%8A%E5%86%8D%E5%BA%A6%E6%8A%AB%E7%94%B2%E4%B8%8A%E9%99%A3-%E5%8F%83%E5%8A%A0%E7%AC%AC%E5%9B%9B%E5%B1%86%E5%B1%B1%E6%B5%B7%E7%9B%83%E9%9D%92%E5%B0%91%E5%B9%B4%E8%B6%B3%E7%90%83%E8%B3%BD",
+      "pubDate": "2026-08-11 02:56:10",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e2f37dbb7889b346aed845a089492558/2026-08/771909375_896057656486391_1684856681173044509_n.jpg",
+      "keywords": [
+        "香港紀律部隊青少年足球隊"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ac6e86aa88962fe317390a3e0f5ce560",
+      "title": "中國駐日使館:台灣非國家 不存在國格一說",
+      "description": "中評社北京8月11日電/中國駐日本大使館發言人10日就台灣地區所謂“駐日代表”聲明答記者問。新華網報導,發言人表示,台灣不是一個國家,不存在“國格”一說,四處刷存在感,只會自取其辱。 問:台灣地區所謂“駐日代表”日前聲稱,“國格”與地位遭到刻意矮化,令人遺憾且失望,還說提出了“嚴正抗議”。請問發言人對此有何評論? 答:台灣不是一個國家,不存在“國格”一說。自不量力四處刷存在",
+      "link": "http://www.crntt.com/doc/7_0_107222415_1_0811105554.html",
+      "pubDate": "2026-08-11 02:55:54",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": [
+        "台灣"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7ded522a0aae1ba402161197d39c9e19",
+      "title": "澳首爆智能叛變|「龍蝦」擅自網攻 入侵健身App 替用戶「打尖」報課程",
+      "description": "領先的人工智能(AI)模型功能日益強大,更具備入侵關鍵電腦系統及基礎設施的能力,引發AI失控後誰該承擔責任的問題。",
+      "link": "https://www.ejtech.ai/%E7%A7%91%E6%8A%80%E5%8B%95%E6%85%8B/%E6%BE%B3%E6%B4%B2-%E6%99%BA%E8%83%BD%E5%8F%9B%E8%AE%8A-%E9%BE%8D%E8%9D%A6-%E7%B6%B2%E6%94%BB-%E5%85%A5%E4%BE%B5-%E5%81%A5%E8%BA%ABapp-%E6%89%93%E5%B0%96-%E5%A0%B1%E8%AA%B2%E7%A8%8B/",
+      "pubDate": "2026-08-11 02:55:20",
+      "source_name": "Startupbeat",
+      "image_url": "https://www.ejtech.ai/wp-content/uploads/2026/08/0811_P02-scaled.jpg",
+      "keywords": [
+        "openclaw",
+        "ceo-ai",
+        "智能叛變",
+        "feature",
+        "ai",
+        "科技動態"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d72d55da3bc781ff81e50070defbdc41",
+      "title": "韓國韓華集團出價最高12億美元收購澳大利亞奧斯塔美國業務,股價急漲逾16%",
+      "description": "Investing.com — 澳大利亞造船商奧斯塔(Austal,ASX:ASB)週二股價飆升逾16%,原因是韓國韓華集團(Hanwha Group,KS:000880)提出以最高12億美元收購其美國業務。",
+      "link": "https://hk.finance.yahoo.com/news/%E9%9F%93%E5%9C%8B%E9%9F%93%E8%8F%AF%E9%9B%86%E5%9C%98%E5%87%BA%E5%83%B9%E6%9C%80%E9%AB%9812%E5%84%84%E7%BE%8E%E5%85%83%E6%94%B6%E8%B3%BC%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9E%E5%A5%A7%E6%96%AF%E5%A1%94%E7%BE%8E%E5%9C%8B%E6%A5%AD%E5%8B%99-%E8%82%A1%E5%83%B9%E6%80%A5%E6%BC%B2%E9%80%BE16-025457835.html",
+      "pubDate": "2026-08-11 02:54:57",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7H00D_M.jpg",
+      "keywords": [
+        "韓華",
+        "hanwha defense usa",
+        "奧斯塔"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "80a2091ad95745efaeeb0c44850fcb56",
+      "title": "高雄民調拉平 郭正亮:韓國瑜王金平會動員",
+      "description": "中評社台北8月11日電/2026年高雄市長選舉升溫,據《鉅聞天下》公布的最新民調,民進黨參選人賴瑞隆的支持度僅僅領先國民黨參選人柯志恩1.64個百分點,在誤差範圍內。前“立委”郭正亮分析,賴瑞隆才贏不到2個百分點,代表隨時會輸;而柯志恩後勢看好,“立法院”前院長王金平與現任院長韓國瑜之後應該會全力動員。 《鉅聞天下》10日公布高雄市長選舉最新民調顯示,民進黨提名的賴瑞隆獲47.78%",
+      "link": "http://www.crntt.com/doc/7_0_160255550_1_0811105454.html",
+      "pubDate": "2026-08-11 02:54:54",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255555.jpg",
+      "keywords": [
+        "民調",
+        "高雄"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6d16cdeb403a69f9c392ace0142dd656",
+      "title": "金價走勢|現貨金重上4400美元 市場等待美國7月通脹數據",
+      "description": "墨爾本Vantage Markets分析師Hebe Chen表示,自3月以來,黃金一直處於下跌螺旋中,現在開始擺脫這種模式,更重要是金價能隨著油價上升和美元走強而向上。",
+      "link": "https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1046726/%E9%87%91%E5%83%B9%E8%B5%B0%E5%8B%A2-%E7%8F%BE%E8%B2%A8%E9%87%91%E9%87%8D%E4%B8%8A4400%E7%BE%8E%E5%85%83-%E5%B8%82%E5%A0%B4%E7%AD%89%E5%BE%85%E7%BE%8E%E5%9C%8B7%E6%9C%88%E9%80%9A%E8%84%B9%E6%95%B8%E6%93%9A",
+      "pubDate": "2026-08-11 02:54:37",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046726/article/1046726/df/01KZQBS1J9FWS822PKT2DQKCA1.JPG?updatedAt=1786416882",
+      "keywords": null,
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9e3e7972eebb21a25281da504d41f487",
+      "title": "張文生:美軍深入介入台演習 無助中美關係",
+      "description": "中評社北京8月11日電(記者 海涵)廈門大學台灣研究院副院長張文生10日就台軍“漢光42號演習”接受中評社採訪表示,美軍介入“漢光演習”更加直接、深入,反映出美國在台灣問題上的戰略層面與實際執行層面存在矛盾和差距,也反映出美國軍方、國務院、國會等部分勢力始終不願放手台灣。 張文生,廈門大學台灣研究院副院長、教授,兩岸關係和平發展協同創新中心教授,廈門市台灣學會副會長。 美軍",
+      "link": "http://www.crntt.com/doc/7_0_107222408_1_0811105340.html",
+      "pubDate": "2026-08-11 02:53:39",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/107222379.jpg",
+      "keywords": [
+        "漢光演習"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "174a58f5c574392e42bd3ea79199bd6a",
+      "title": "Anthropic與Riot簽署910億美元雲端運算長期協議",
+      "description": "Investing.com - 人工智慧開發商Anthropic (NASDAQ:ANTP) 與 Riot Platforms (NASDAQ:RIOT) 簽署了一份價值91億美元的長期協議,以確保獲得充足的AI運算容量。據彭博社報導,此舉凸顯了Anthropic積極鎖定基礎設施資源的策略,以應對其Claude...",
+      "link": "https://hk.finance.yahoo.com/news/anthropic%E8%88%87riot%E7%B0%BD%E7%BD%B2910%E5%84%84%E7%BE%8E%E5%85%83%E9%9B%B2%E7%AB%AF%E9%81%8B%E7%AE%97%E9%95%B7%E6%9C%9F%E5%8D%94%E8%AD%B0-025218315.html",
+      "pubDate": "2026-08-11 02:52:18",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/green1_b._M_1440048373.jpg",
+      "keywords": [
+        "數據中心",
+        "彭博社",
+        "anthropic",
+        "riot",
+        "基礎設施",
+        "ai"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "78c02fb5029cb48a303dd4490612d1d4",
+      "title": "哥倫比亞地震增至132死 暫無中國公民傷亡報告",
+      "description": "南美洲國家哥倫比亞在當地時間周一(10日)早上發生7.4級大地震。新華社引述哥倫比亞政府最新通報報道,死亡人數增至132人,570人受傷,該國32個城市嚴重受災。中國駐當地大使館說,使館已第一時間啟動...",
+      "link": "https://china.hket.com/article/4174370",
+      "pubDate": "2026-08-11 02:52:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174370/9ejk4ck7tca_1_300.jpg",
+      "keywords": [
+        "南美洲",
+        "交通事故",
+        "外交",
+        "哥倫比亞",
+        "中國",
+        "新華社",
+        "地震"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3341f6a3a4da968cbba8f742868f15e6",
+      "title": "Anthropic取消Claude Sonnet 5加價計劃 代理式AI成本預期趨穩",
+      "description": "Anthropic宣布,取消了Claude Sonnet 5原定於8月底生效的加價計劃,模型發布時的初始API定價將永久保留,為企業採用代理式AI提供更穩定的成本預期。 原定優惠價只維持至8月31日 公司表示,Sonnet 5是公司「最具代理能力的Sonnet模型」,可自主規劃工作流程,並調用瀏覽器、終端等工具處理複雜任務。至於Claude Sonnet 5於今年6月推出,現時輸入Token價格為",
+      "link": "https://www.stheadline.com/realtime-finance/3603150/Anthropic%E5%8F%96%E6%B6%88Claude-Sonnet-5%E5%8A%A0%E5%83%B9%E8%A8%88%E5%8A%83-%E4%BB%A3%E7%90%86%E5%BC%8FAI%E6%88%90%E6%9C%AC%E9%A0%90%E6%9C%9F%E8%B6%A8%E7%A9%A9",
+      "pubDate": "2026-08-11 02:51:50",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/lr/sthl_square/8bd7a69cca4f7bce3e91d85e92aaddb7/2026-08/KF_-_2026-08-11T105101_929.png",
+      "keywords": [
+        "ai",
+        "anthropic"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "449a114663f96ca6d3846e596c9f9830",
+      "title": "內地民企藍箭航天火箭發射推遲",
+      "description": "昨日長征七號A運載火箭執行發射任務期間爆炸後,航天民企藍箭航天原定今日進行的火箭發射據報推遲。內媒第一財經引述知情人士報道稱,藍箭航天朱雀三號遙二運載火箭原定今早的發射推遲。此前根據通告,酒泉衛星發射...",
+      "link": "https://china.hket.com/article/4174367",
+      "pubDate": "2026-08-11 02:44:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174367/lj_1_300.jpg",
+      "keywords": [
+        "中國",
+        "地緣政治",
+        "外交",
+        "科技產品",
+        "5g",
         "經濟",
-        "財經台",
-        "香港01",
-        "恆生指數"
+        "中國市場"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "20f4666e9e64d1afaf1afafb022e7877",
+      "title": "譚仔家族沽柴灣自用舖 作價料達2600萬元 售後租回繼續經營",
+      "description": "譚仔雲南米線沽售位於柴灣華泰大廈的自用舖,業界料作價約2600萬,譚仔將以售後租回繼續經營,既可套現同時不影響生意,毋須搬遷。 帳面料損失1050萬 上址為柴灣道220號華泰大廈地下A、H及I號舖,建築面積約1000方呎,現由譚仔雲南米線自用,市場消息指,新買家料回報逾6厘,預期譚仔月租約14萬。譚仔於2011年7月以3650萬購入舖位,若以逾2600萬易手,帳面料損失1050萬。 譚仔家族早前將",
+      "link": "https://www.stheadline.com/realtime-property/3603141/%E8%AD%9A%E4%BB%94%E5%AE%B6%E6%97%8F%E6%B2%BD%E6%9F%B4%E7%81%A3%E8%87%AA%E7%94%A8%E8%88%96-%E4%BD%9C%E5%83%B9%E6%96%99%E9%81%942600%E8%90%AC%E5%85%83-%E5%94%AE%E5%BE%8C%E7%A7%9F%E5%9B%9E%E7%B9%BC%E7%BA%8C%E7%B6%93%E7%87%9F",
+      "pubDate": "2026-08-11 02:43:30",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6c13a290b65172b9323a5253bb713880/2026-08/20260811_FIN___1.png",
+      "keywords": [
+        "譚仔",
+        "譚仔米線",
+        "舖位"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e65db4811d34a7c613a18586305492ec",
+      "title": "醫療失德|山西實習護士曬婦產科手術照 無碼露出病人私隱部位兼爆病歷",
+      "description": "保護病人私隱本應是醫護人員的基本職務操守與行業底線。然而近日,山西醫科大學第一醫院一名實習護士在朋友圈公開產科手術照片,不僅未對患者私隱部位進行遮擋(打碼),更在評論區洩露患者患有乙肝的病情。院方於8月11日凌晨發佈通報,表示已成立專項調查組展開全面調查,並將依法依規嚴肅處理。 透露患者有乙肝 相關新聞:湖南醫生涉嚴重違法被免職 正接受長沙市監察委員會調查 據了解,涉事人員為山西醫科大學第一醫院的",
+      "link": "https://www.stheadline.com/realtime-china/3603138/%E9%86%AB%E7%99%82%E5%A4%B1%E5%BE%B7%E5%B1%B1%E8%A5%BF%E5%AF%A6%E7%BF%92%E8%AD%B7%E5%A3%AB%E6%9B%AC%E5%A9%A6%E7%94%A2%E7%A7%91%E6%89%8B%E8%A1%93%E7%85%A7-%E7%84%A1%E7%A2%BC%E9%9C%B2%E5%87%BA%E7%97%85%E4%BA%BA%E7%A7%81%E9%9A%B1%E9%83%A8%E4%BD%8D%E5%85%BC%E7%88%86%E7%97%85%E6%AD%B7",
+      "pubDate": "2026-08-11 02:39:56",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/8d61d9ad880bce07314f0e6d1676cd8b/2026-08/KF_-Sam_19_.png",
+      "keywords": [
+        "醫療失德",
+        "山西"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4e85cde8082c32f65557fc3308b94f94",
+      "title": "胡塞武裝再襲也門政府軍陣地 聯合國特使警告衝突恐進一步升級",
+      "description": "<匯港通訊> 也門政府軍消息指出,也門胡塞武裝於當地時間周一,以無人機對東南部舍卜沃省的一處政府軍陣地發動襲擊,造成3名士兵死亡、9人受傷。對此,聯合國也門問題特使格倫德貝里透過社交媒體發表聲明,對近期胡塞武裝頻繁針對也門政府控制區發動攻擊深表關切,並警告最新事態可能將也門重新推入全面衝突危機。在此之前,胡塞武裝...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%83%A1%E5%A1%9E%E6%AD%A6%E8%A3%9D%E5%86%8D%E8%A5%B2%E4%B9%9F%E9%96%80%E6%94%BF%E5%BA%9C%E8%BB%8D%E9%99%A3%E5%9C%B0-%E8%81%AF%E5%90%88%E5%9C%8B%E7%89%B9%E4%BD%BF%E8%AD%A6%E5%91%8A%E8%A1%9D%E7%AA%81%E6%81%90%E9%80%B2-%E6%AD%A5%E5%8D%87%E7%B4%9A-023825545.html",
+      "pubDate": "2026-08-11 02:38:25",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2455dfe548faddeb8ce9f65d8876ebe8",
+      "title": "學術不端|法國物理學家克萊因遭撤銷27年前博士學位 曾以香腸扮恆星掀熱議",
+      "description": "曾因以「西班牙香腸」假冒恆星照片而引發熱議的法國知名物理學家埃蒂安.克萊因(Étienne Klein),日前因博士論文涉及嚴重抄襲,遭巴黎西岱大學(Université Paris Cité)撤銷其於27年前取得的博士學位,同時禁止其重新註冊攻讀博士,法國原子能和替代能源委員會(CEA)亦隨即撤銷其研究主任頭銜。 相關新聞:劍橋史上最年輕黑人教授辭職 被指博士論文或涉抄襲 論文三分之二頁面涉抄襲",
+      "link": "https://www.stheadline.com/realtime-world/3603143/%E5%AD%B8%E8%A1%93%E4%B8%8D%E7%AB%AF%E6%B3%95%E5%9C%8B%E7%89%A9%E7%90%86%E5%AD%B8%E5%AE%B6%E5%85%8B%E8%90%8A%E5%9B%A0%E9%81%AD%E6%92%A4%E9%8A%B727%E5%B9%B4%E5%89%8D%E5%8D%9A%E5%A3%AB%E5%AD%B8%E4%BD%8D-%E6%9B%BE%E4%BB%A5%E9%A6%99%E8%85%B8%E6%89%AE%E6%81%86%E6%98%9F%E6%8E%80%E7%86%B1%E8%AD%B0",
+      "pubDate": "2026-08-11 02:33:53",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/05c6618437d73a97238821973fa6cd02/2026-08/KF_5__4.jpg",
+      "keywords": [
+        "學術不端",
+        "法國"
+      ],
+      "category": [
+        "politics",
+        "top",
+        "science"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "89f4bda54b98985ba616968a1767cfd9",
+      "title": "車路士抽好籤 英聯盃次圈鬥盧頓",
+      "description": "【Now Sports】英格蘭聯賽盃第2圈抽籤結果揭曉,曾5度奪冠的車路士抽得好籤,將主場迎戰英甲球隊盧頓。今季未有歐洲賽任務的車路士,會在今月26日展開的英聯盃第2圈賽事中,主場面對盧頓;另一上季跌落護級漩渦的倫敦球對熱刺,則抽中在主場對英冠球隊查爾頓。11支會在第2圈亮相的英超球隊中,只有諾定咸森林與列斯聯要...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%BB%8A%E8%B7%AF%E5%A3%AB%E6%8A%BD%E5%A5%BD%E7%B1%A4-%E8%8B%B1%E8%81%AF%E7%9B%83%E6%AC%A1%E5%9C%88%E9%AC%A5%E7%9B%A7%E9%A0%93-023207635.html",
+      "pubDate": "2026-08-11 02:32:07",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "英格蘭聯賽盃",
+        "愛華頓",
+        "普雷斯頓",
+        "車路士",
+        "主場",
+        "英甲",
+        "盧頓"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2c4007ca1eb192fd8f378ad253a2b462",
+      "title": "CNBLUE前成員李宗泫消失8年突發文!自曝「與世隔絕」,如今轉行當上班族",
+      "description": "韓國樂團CNBLUE前成員李宗泫,自2018年入伍後因一連串醜聞銷聲匿跡,如今相隔8年突然重啟SNS活動,公開自己的近況,透露已轉行從事美妝行銷,過著平凡的上班族生活,引發網友熱議。",
+      "link": "https://www.koreastardaily.com/tc/news/163561",
+      "pubDate": "2026-08-11 02:26:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-11/163561-1062004.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e47f0992a542671b42f3294547585f33",
+      "title": "公安部深化掃黑除惡首輪收網行動 逮捕8,200多人",
+      "description": "公安部指揮全國公安機關,開展深化掃黑除惡專項鬥爭第一輪集中收網行動,搗破1000多個犯罪團伙,逮捕8200多名犯罪嫌疑人,破獲5400多宗刑事案件。公安部周一(10日)指,全國公安機關近年始終保持對黑...",
+      "link": "https://china.hket.com/article/4174355",
+      "pubDate": "2026-08-11 02:21:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174355/z0fp4vo61ts_300.jpeg",
+      "keywords": null,
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2e4b101fc2307763b7dfaed507dc51e3",
+      "title": "美华沃德女性内分泌中心正式启幕,打造女性全生命周期健康管理新平台",
+      "description": "上海 2026年8月11日 /美通社/ -- \"女性全生命周期内分泌健康发展论坛暨美华沃德女性内分泌中心启幕仪式\"在思南沙龙举行。本次活动由上海市社会医疗机构协会指导,美华沃德医疗集团主办。来自全市多家三甲医院的妇科内分泌、生殖医学、精神心理及内分泌代谢领域的专家学者齐聚一堂,共同见证美华沃德在女性健康专科建设领域的重要布局。 图 | 从左至右:美华沃德特邀专家/原国际和平妇幼保健院更年期保健特色专科负责人花琪主任、美华沃德医疗集团妇科主任王丽华、美华沃德医疗集团董事长兼首席执行官王玮先生、上海市社会医疗机构协会会长闫东方先生、美华沃德特邀专家/原上海市第六人民医院副院长陶敏芳教授、美华沃德医疗集团首席医学官段涛院长、美华沃德医疗集团行政医疗副总裁金露青女士 从疾病诊疗到健康促进,构建覆盖女性全生命周期的整合式健康管理体系 女性内分泌贯穿从青春期到绝经后的全生命周期,涉及月经异常、多内分泌代谢卵巢综合征(PMOS)、不孕症、更年期综合征、骨质疏松等多种问题。由于病因隐匿、表现多样,客户常需辗转多个科室甚至多家医院,难以获得系统连续的诊疗方案。 美华沃德医疗集团首席医学官段涛院长在致辞中表示:\"女性内分泌是女性健康的重要基石。我们的目标,是让每一位女性更年轻、更美丽、更健康、更自信——这不仅关乎外在的活力与容颜,更关乎内在的身心平衡。我们的服务不仅是疾病诊疗,更涵盖健康维护、健康促进,以及生活美容、产后康复等致力于提升女性生命质量的内容。 这正是世界卫生组织'身体健康、心理健康、社会适应良好'三维健康观在女性内分泌领域的具体实践。我们倡导的全生命周期健康管理,内涵包括健康维护、健康促进与健康诊疗三个层面——不仅要治好病,更要帮助女性活出更好的生命状态。\" 段涛院长进一步指出,美华沃德女性内分泌中心的设立,旨在打破学科壁垒,整合妇科内分泌、生殖医学、代谢性疾病、精神心理、康复医学等多学科资源,构建覆盖全人群、全生命周期、全方位的女性健康服务体系。 图 | 美华沃德医疗集团首席医学官段涛院长 致开场词 依托资深专家团队,深耕女性内分泌领域 美华沃德医疗成立于2003年,以妇产科为核心奠基起步,现已建立覆盖全家、全生命周期的医疗健康服务体系,累计服务超100万人次。妇科作为核心科室,拥有一支平均临床经验超过三十年的专家团队,成员均来自上海知名三甲医院。 美华沃德倡导独具特色的医生培养理念——我们拥有更了解女性的内科全科医生,以及更懂妇产科以外女性需求的妇产科医生。 这种\"女性全科医生\"式的复合能力,使医生不仅能解决专科问题,更能从整体视角理解女性的身心变化,将内科代谢、精神心理与妇科内分泌深度融合,真正做到以女性为中心的整合式医疗。 此次成立的女性内分泌中心,汇聚了沪上妇科内分泌领域资深专家,特邀原上海市第六人民医院副院长陶敏芳教授、原国际和平妇幼保健院更年期保健特色专科负责人花琪主任等专家。同时,集团妇科主任王丽华坐镇引领学科整体发展。王丽华主任为主任医师、硕士生导师,原上海交通大学医学院附属国际和平妇幼保健院妇科肿瘤科主任,具备妇科微创四级手术资质,年均完成微创手术三百余例,为内分泌中心疑难病例会诊、合并症综合诊疗等提供有力的技术支撑。 图 |美华沃德医疗集团妇科主任王丽华 介绍女性内分泌中心 中心重点开设青春期内分泌门诊、生殖内分泌门诊、多内分泌代谢性卵巢综合征(PMOS)门诊、减重代谢门诊及更年期/围绝经期多学科管理五大特色门诊,同步整合集团更年期多学科健康管理中心等资源,实现从青春期、育龄期、围绝经期至更年期的全周期覆盖。 学术论坛聚焦前沿,多学科融合助推学科发展 启幕仪式后,\"女性全生命周期内分泌健康发展论坛\"正式举行。陶敏芳教授分享《生殖内分泌管理策略》,花琪主任讲解《青春期异常子宫出血的诊断及管理》,王丽华主任解读《绝经激素治疗指南》。同济大学附属第十人民医院生殖医学中心唐荣欣主任围绕《从PCOS到PMOS命名更替后的临床思考》,结合2026年5月《柳叶刀》发布的全球共识进行分享。美华沃德精神心理科岳英主任、内科李昱东主任分别从心理与代谢视角带来精彩分享。 上海市社会医疗机构协会会长闫东方在贺词中指出,美华沃德女性内分泌中心的成立,是上海社会医疗机构在亚专科建设上的有益探索,为妇科内分泌学科的专业化、系统化发展提供了实践样本。 全新女性健康科普平台,延伸线上健康服务 为更好服务广大女性群体,美华沃德医疗在本次论坛上宣布正式推出女性健康科普小红书账号【@ Know Her Health她健康】,聚焦当代女性 生理健康、心理困境与自我成长 三大核心板块,由妇科主诊医生团队主导内容创作,以专业、客观、共情的视角,持续输出面向女性全生命周期的健康科普内容。账号已于活动当天正式上线。 美华沃德医疗集团董事长兼首席执行官王玮在致辞中表示,女性内分泌中心的启幕是集团专科建设的重要一步,也是践行\"全人群、全生命周期、全方位\" 女性健康理念的具体体现。未来,中心将持续以循证医学为依据,以多学科协作为支撑,为女性提供更有温度、更具连续性的医疗健康服务。",
+      "link": "https://www.prnasia.com/story/543567-1.shtml",
+      "pubDate": "2026-08-11 02:19:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnasia.com/media/MS1966738/20260810033507EDT_image_1.jpg?id=OA2850857&p=medium600",
+      "keywords": [
+        "hea",
+        "pha",
+        "mtc",
+        "wom",
+        "fit"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "350727e10aee1f487cb7457a3a0bb4b7",
+      "title": "全民AI 不如利民AI?",
+      "description": "諾貝爾經濟學獎得主阿齊默魯認為,AI將導致「大規模工作取代」,提倡透過干預推動「親勞工AI」。然而,要推動「利民AI」,我們不得不先對「大規模工作取代」的風險有個說法。",
+      "link": "https://www.master-insight.com/article/49563",
+      "pubDate": "2026-08-11 02:17:00",
+      "source_name": "Master – Insight",
+      "image_url": "https://bucket-image.inkmaginecms.com/9dde7c0f-adea-48d0-9671-8f5a6345ad4a/image/2026/08/a0205a7e-db00-4c92-ae58-4ba9453741fe.webp",
+      "keywords": [
+        "免費早餐",
+        "科技"
       ],
       "category": [
         "technology"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "ec7311a673a398c2364e9f6e49ddc879",
-      "title": "恒生科技指數迎重大改革,諮詢市場擴至50隻成分股,引入收入增長選股機制",
-      "description": "《經濟通通訊社11日專訊》恒生指數公司昨日(10日)發表諮詢文件,建議對恒生科技 指數進行推出以來的重大修訂,包括將成分股數目由現時30隻增加至50隻,並引入以收入增 長為準則的補充選股機制,同時擴大科技主題覆蓋範圍,以提升指數的市場代表性及前瞻性。諮 詢期至9月18日止。 恒生科技指數自2020年推出以來,追蹤本港30隻市值最大的科技公司,截至今年6月 底,追蹤該指數的資產管理規模",
-      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360811270",
-      "pubDate": "2026-08-11 00:59:00",
-      "source_name": "Etnet",
-      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "id": "dc7f73ece4539b75c7de9f536f1eebe3",
+      "title": "吳乃仁月還台糖5萬?郭正亮:綠選情必受傷",
+      "description": "中評社台北8月11日電/民進黨新潮流大老、台糖前董座吳乃仁積欠台糖新台幣1.8億元,台糖日前聲請管收,卻在短短12天後撤回,傳出吳乃仁日前提出還款計劃是每月還5萬元。對此,前“立委”郭正亮10日在政論節目表示,對比前台灣民眾黨主席柯文哲遭祭出嚴厲禁奢令,民進黨赤裸裸的雙標,說這種雙標若繼續搞下去,未來選舉綠營勢必有人會受傷。 郭正亮於10日在政論節目《新聞大白話》表示,1.7億多元光",
+      "link": "http://www.crntt.com/doc/7_0_160255530_1_0811101651.html",
+      "pubDate": "2026-08-11 02:16:50",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255532.jpg",
       "keywords": [
-        "latest"
+        "郭正亮",
+        "台糖",
+        "吳乃仁"
       ],
       "category": [
-        "business"
+        "politics",
+        "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "b3f43356f7bde6666866da8d7ecba60e",
-      "title": "【外圍經濟】日圓重現拋售壓力,匯率跌破159關口,美日再出手干預壓力增",
-      "description": "《經濟通通訊社11日專訊》隨著日美兩國於7月末史無前例的聯合干預效應逐漸消退,日 圓匯價再度面臨沉重拋售壓力。美元兌日圓匯率持續走高,升破159關口,亞洲時段早盤最新 報159.17。(yc)",
-      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360811242",
-      "pubDate": "2026-08-11 00:00:00",
-      "source_name": "Etnet",
-      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "id": "d50ee43c4e27d9bdc37f9a29454244e6",
+      "title": "伊朗局勢 | 佩澤希齊揚:與最高領袖會談7小時 對方健康狀況很好",
+      "description": "伊朗總統佩澤希齊揚表示,近期與最高領袖穆傑塔巴進行了一次約7小時的會談,並指對方健康狀況很好。佩澤希齊揚稱,雙方討論了伊朗在內政和外交領域面臨的挑戰,涵蓋民生、就業、住房和應對制裁等議題,會談非常成功。 穆傑塔巴指出,敵對勢力正試圖在伊朗國內製造分裂,當前維護國家團結和凝聚力至關重要。伊朗傳媒星期日報道,雙方詳細討論伊朗當前面臨的問題和困難,亦就與外國有關方面展開經濟互動交換意見。",
+      "link": "https://www.bastillepost.com/hongkong/article/16544933-%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2-%E4%BD%A9%E6%BE%A4%E5%B8%8C%E9%BD%8A%E6%8F%9A%EF%BC%9A%E8%88%87%E6%9C%80%E9%AB%98%E9%A0%98%E8%A2%96%E6%9C%83%E8%AB%877%E5%B0%8F%E6%99%82%E3%80%80%E5%B0%8D",
+      "pubDate": "2026-08-11 02:16:44",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/FotoJet-2-5-e1786416633121.jpg",
       "keywords": [
-        "latest"
+        "source-2",
+        "伊朗局勢",
+        "大視野",
+        "穆傑塔巴"
       ],
       "category": [
-        "business"
+        "politics",
+        "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "bb3c04fc58e181432d442fae9e0f0a7e",
+      "title": "投注站變教堂!賽馬會5100萬沽大角咀自用巨舖 澳門宗教團體接貨",
+      "description": null,
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60378613/%E6%8A%95%E6%B3%A8%E7%AB%99%E8%AE%8A%E6%95%99%E5%A0%82-%E8%B3%BD%E9%A6%AC%E6%9C%835100%E8%90%AC%E6%B2%BD%E5%A4%A7%E8%A7%92%E5%92%80%E8%87%AA%E7%94%A8%E5%B7%A8%E8%88%96-%E6%BE%B3%E9%96%80%E5%AE%97%E6%95%99%E5%9C%98%E9%AB%94%E6%8E%A5%E8%B2%A8",
+      "pubDate": "2026-08-11 02:12:38",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260810/1163546605031264256830679.png/C4TOO5p8HbECYe6MtnhwWK0FGwAVnSVjKwHjUSsB41E",
+      "keywords": null,
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c540058b4dff987cf4d59629261e5062",
+      "title": "醒來立刻刷手機極傷眼!眼科專家揭「眼疲勞」真相:1 招拯救乾眼",
+      "description": "醒來立刻刷手機極傷眼!很多人清晨鬧鐘一響,手比腦快,順勢就撈起床頭的手機,訊息新聞、社交媒體刷不停。但可能會發現,大腦還沒清醒,雙眼已經開",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60378589/%E9%86%92%E4%BE%86%E7%AB%8B%E5%88%BB%E5%88%B7%E6%89%8B%E6%A9%9F%E6%A5%B5%E5%82%B7%E7%9C%BC-%E7%9C%BC%E7%A7%91%E5%B0%88%E5%AE%B6%E6%8F%AD-%E7%9C%BC%E7%96%B2%E5%8B%9E-%E7%9C%9F%E7%9B%B8-1-%E6%8B%9B%E6%8B%AF%E6%95%91%E4%B9%BE%E7%9C%BC",
+      "pubDate": "2026-08-11 02:04:59",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260810/1163546785805766656810326.png/8OiS0gVhMOF7kUowg3-QA-1wZ2flqjsRlq1QLpatUC4",
+      "keywords": [
+        "科技",
+        "app",
+        "航拍",
+        "手遊",
+        "facebook",
+        "tesla",
+        "apple",
+        "動漫",
+        "ios",
+        "香港01",
+        "潮物",
+        "android"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3677737a16814a1dc4cc98a1e9d5485b",
+      "title": "冷氣機|窗口式比分體式更好?內行人揭4大優勢:平價方便又耐用",
+      "description": "夏天天氣悶熱,冷氣成為家中不可或缺產品,不過,究竟冷氣是窗型好還是分離式更有優勢呢?對此,一名網友在PTT上發文表示,自己近期打算換冷氣,猶",
+      "link": "https://www.hk01.com/%E8%A6%AA%E5%AD%90/60363362/%E5%86%B7%E6%B0%A3%E6%A9%9F-%E7%AA%97%E5%8F%A3%E5%BC%8F%E6%AF%94%E5%88%86%E9%AB%94%E5%BC%8F%E6%9B%B4%E5%A5%BD-%E5%85%A7%E8%A1%8C%E4%BA%BA%E6%8F%AD4%E5%A4%A7%E5%84%AA%E5%8B%A2-%E5%B9%B3%E5%83%B9%E6%96%B9%E4%BE%BF%E5%8F%88%E8%80%90%E7%94%A8",
+      "pubDate": "2026-08-11 02:00:33",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260624/1146451919951106048318475.jpeg/qNeOrcgIDmFjJ-tmEa_JRBDXiR9TmQTVVOEKmFThCpg",
+      "keywords": [
+        "健康",
+        "入學試面",
+        "育兒",
+        "玩樂",
+        "親子",
+        "教育",
+        "香港01",
+        "熱話"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cdc7182fc7561d0cf7c3440c817e16c7",
+      "title": "Apple秋季發佈會傳定於9月9日 iPhone 18系列/Ultra還有新Watch",
+      "description": "外界關注的Apple年度重磅活動即將登場。據海外供應鏈透露的最新消息,Apple目前正緊密籌備今年的秋季新品發佈會,部分提早安排協助發佈會相關工作",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60378556/apple%E7%A7%8B%E5%AD%A3%E7%99%BC%E4%BD%88%E6%9C%83%E5%82%B3%E5%AE%9A%E6%96%BC9%E6%9C%889%E6%97%A5-iphone-18%E7%B3%BB%E5%88%97-ultra%E9%82%84%E6%9C%89%E6%96%B0watch",
+      "pubDate": "2026-08-11 02:00:29",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260810/1163518055674810368240871.jpeg/soVh16Ukhb5CxhI2d7LpUkmKFmOE-WrLjNe4NYzXuDU",
+      "keywords": [
+        "科技",
+        "app",
+        "航拍",
+        "手遊",
+        "facebook",
+        "tesla",
+        "apple",
+        "動漫",
+        "ios",
+        "香港01",
+        "潮物",
+        "android"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3a82d0b1dc3c0d82fc0550a6c9d06506",
+      "title": "56歲陳松伶否認患病 大爆「紙片人」背後真相老公嚴密監控",
+      "description": "現年56歲的昔日TVB當家花旦陳松伶,近年與比她年輕 9歲的內地演員丈夫張鐸長駐內地發展,夫妻倆感情一直相當甜蜜。然而,日前陳松伶在上載的一段與",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60378648/56%E6%AD%B2%E9%99%B3%E6%9D%BE%E4%BC%B6%E5%90%A6%E8%AA%8D%E6%82%A3%E7%97%85-%E5%A4%A7%E7%88%86-%E7%B4%99%E7%89%87%E4%BA%BA-%E8%83%8C%E5%BE%8C%E7%9C%9F%E7%9B%B8%E8%80%81%E5%85%AC%E5%9A%B4%E5%AF%86%E7%9B%A3%E6%8E%A7",
+      "pubDate": "2026-08-11 02:00:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260810/1163589527835512832254870.png/CrStXGEKaotQOqromBt2bdxL9Hnpyl7aiGhJK4hoSSs",
+      "keywords": [
+        "香港新聞",
+        "韓星",
+        "藝人",
+        "即時娛樂",
+        "明星",
+        "香港01",
+        "即時娛樂新聞",
+        "娛樂新聞",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "578044ef37f15b225228fbd618f7ebec",
+      "title": "6大癌症初期無明顯症狀?營養師揭防癌關鍵:戒食7種致癌食物",
+      "description": "癌症連年蟬聯台灣人十大死因首位,其中最危險的特徵在於許多患者確診時已處於疾病進展的中後期。台灣營養師高敏敏指出,包括大腸癌、肝癌、胰臟癌、",
+      "link": "https://www.hk01.com/%E5%81%A5%E5%BA%B7Easy/60369471/6%E5%A4%A7%E7%99%8C%E7%97%87%E5%88%9D%E6%9C%9F%E7%84%A1%E6%98%8E%E9%A1%AF%E7%97%87%E7%8B%80-%E7%87%9F%E9%A4%8A%E5%B8%AB%E6%8F%AD%E9%98%B2%E7%99%8C%E9%97%9C%E9%8D%B5-%E6%88%92%E9%A3%9F7%E7%A8%AE%E8%87%B4%E7%99%8C%E9%A3%9F%E7%89%A9",
+      "pubDate": "2026-08-11 02:00:09",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260805/1161685748483624960705348.jpeg/fPJE9H9QigT2WGrrpc94Njg073sEGSQTCAIgNAgCIDQ",
+      "keywords": [
+        "網絡媒體",
+        "香港新聞",
+        "于品海",
+        "香港零一",
+        "香港傳媒",
+        "網上媒體",
+        "香港01",
+        "香港媒體",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ca1789b7be1878b7171323612d0f45a",
+      "title": "七成太空人中招!量子技術驗眼機助測深空任務眼疾",
+      "description": "歐洲太空總署(European Space Agency,ESA)正積極研究太空人在太空中視力受損成因,期望能 [...]",
+      "link": "https://unwire.hk/2026/08/11/astronauts-vision-loss-sans-siloton-esa/learning/",
+      "pubDate": "2026-08-11 02:00:08",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo20260810t202.png",
+      "keywords": [
+        "新科創業",
+        "太空科技",
+        "健康",
+        "siloton",
+        "光子晶片",
+        "量子技術驗眼機",
+        "生活學習",
+        "esa"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b53907ec519bb8d8ffb1552befe31308",
+      "title": "宋宛穎清新Y2K造型現身東京街頭 開心晒戰利品少女心爆棚",
+      "description": "前港姐冠軍宋宛穎(Sabrina)自從以女團MYNT出道後,工作接踵而來,好不容易迎來假期,她即刻啟程飛往日本旅行,好好放鬆充電,繼日前分享一輯大歎甜品的靚相後,近日她就晒出一輯滿滿青春氣息的東京街拍照。 View this post on Instagram A post shared by Sabrina Mendes 宋宛穎 (@sabrinaxmendes) 相中,宋宛穎以清新Y2K風格造型現身街頭,灰色貼身小背心,搭配七分寬鬆牛仔褲,打扮簡約俐落又充滿時尚感。她拿着即棄菲林相機遊走東京街頭,捕捉都市的動感,又一時到便利店覓食,一時去潮店購物,更開心分享自己戰利品—三對風格可愛的新鞋,盡藏滿滿少女心。旅程尾聲,她還去到到標誌性的東京鐵塔打卡留念,為今次短暫的日本之旅留下完美記錄。 休息過後,宋宛穎亦正式回歸工作狀態,「短暫出走幾天,真的有好好休息把電充,現在已滿血復活歸隊,一回來立刻投入工作,行程滿滿,幸福感滿滿,新歌準備中......」不少網民都紛紛表示期待新歌,又留言大讚:「怎麼天天都那麼美!期待新歌耶~加油加油」、「一個字:美、二個字:好美、三個字:超級美」、「美在你這根本沒有標準,因為你每個post都會創造新的美」。",
+      "link": "https://www.bastillepost.com/hongkong/article/16538534-%E5%AE%8B%E5%AE%9B%E7%A9%8E%E6%B8%85%E6%96%B0y2k%E9%80%A0%E5%9E%8B%E7%8F%BE%E8%BA%AB%E6%9D%B1%E4%BA%AC%E8%A1%97%E9%A0%AD-%E9%96%8B%E5%BF%83%E6%99%92%E6%88%B0%E5%88%A9%E5%93%81%E5%B0%91%E5%A5%B3",
+      "pubDate": "2026-08-11 02:00:03",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260810_EN_Sabrina_FB.jpg",
+      "keywords": [
+        "宋宛穎",
+        "娛圈事"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
     },
     {
       "id": "d73b22edc6d293665a552b85ed5312d9",
@@ -737,6 +1391,23 @@
       "region": "hk"
     },
     {
+      "id": "ec7311a673a398c2364e9f6e49ddc879",
+      "title": "恒生科技指數迎重大改革,諮詢市場擴至50隻成分股,引入收入增長選股機制",
+      "description": "《經濟通通訊社11日專訊》恒生指數公司昨日(10日)發表諮詢文件,建議對恒生科技 指數進行推出以來的重大修訂,包括將成分股數目由現時30隻增加至50隻,並引入以收入增 長為準則的補充選股機制,同時擴大科技主題覆蓋範圍,以提升指數的市場代表性及前瞻性。諮 詢期至9月18日止。 恒生科技指數自2020年推出以來,追蹤本港30隻市值最大的科技公司,截至今年6月 底,追蹤該指數的資產管理規模",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360811270",
+      "pubDate": "2026-08-11 00:59:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "fb688532cc7b575019b74a30ffbb8320",
       "title": "傳英特爾(INTC.US)新股發行加碼至200億美元 已吸引逾千億美元認購",
       "description": "《彭博》引述消息人士報道,英特爾(INTC.US)正尋求將新股發行規模增加至約200億美元,較公司周一(10日)宣布發行150億美元新股時的規模增加逾三分之一。 據悉,英特爾計劃將發行價定為每股約95美元或以上,較上周五(7日)的收市價折讓6.5%。若行使超額配售權,發售規模可能會增加至遠超過200億美元,今次新...",
@@ -1058,6 +1729,36 @@
       "region": "hk"
     },
     {
+      "id": "8cbccbc1d3de7a38a3c4703a1b84dc22",
+      "title": "AI泡沫論|英偉達領軍 夥華爾街巨頭籌5000億美元拓AI生態",
+      "description": "英偉達夥華爾街巨頭籌5,000億美元拓AI生態。據英國金融時報,多家公司與英偉達圍繞5000億美元人工智能(AI)融資協議結盟,預計最快將在(美東時間",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60378717/ai%E6%B3%A1%E6%B2%AB%E8%AB%96-%E8%8B%B1%E5%81%89%E9%81%94%E9%A0%98%E8%BB%8D-%E5%A4%A5%E8%8F%AF%E7%88%BE%E8%A1%97%E5%B7%A8%E9%A0%AD%E7%B1%8C5000%E5%84%84%E7%BE%8E%E5%85%83%E6%8B%93ai%E7%94%9F%E6%85%8B",
+      "pubDate": "2026-08-11 00:06:30",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260723/1156911118321455104453876.jpeg/-eN7fCdwZ0BBTwGfL1y4xm4M1eOt2u60KcltxSnJbcU",
+      "keywords": [
+        "財經透視",
+        "股票",
+        "a股",
+        "新聞",
+        "港股",
+        "財經網",
+        "財經新聞",
+        "地產消息",
+        "hk01",
+        "香港新聞",
+        "經濟",
+        "財經台",
+        "香港01",
+        "恆生指數"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "0b9860b6a1cb60c09b7bb22974b977bd",
       "title": "微軟Maia 300 AI晶片最快9月亮相 已與台積電敲定逾30萬枚產能",
       "description": "微軟Maia 300 AI晶片最快9月亮相,據悉已與台積電敲定超30萬枚產能。據外媒引述兩位直接了解該計劃的人士透露,Microsoft計劃明年大幅增加其自設計",
@@ -1177,6 +1878,23 @@
         "politics"
       ],
       "region": "hk"
+    },
+    {
+      "id": "b3f43356f7bde6666866da8d7ecba60e",
+      "title": "【外圍經濟】日圓重現拋售壓力,匯率跌破159關口,美日再出手干預壓力增",
+      "description": "《經濟通通訊社11日專訊》隨著日美兩國於7月末史無前例的聯合干預效應逐漸消退,日 圓匯價再度面臨沉重拋售壓力。美元兌日圓匯率持續走高,升破159關口,亞洲時段早盤最新 報159.17。(yc)",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360811242",
+      "pubDate": "2026-08-11 00:00:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "8c4b9c5d1308cb851241a8738532bb27",
@@ -31379,6 +32097,20 @@
       "region": "hk"
     },
     {
+      "id": "2d559a41c603b978",
+      "title": "功夫女足︱星爺罕做專訪全靠《430穿梭機》同事　《一周星星》黎芷珊爆周星馳當年「無厘頭」行為",
+      "description": "【周星馳 / 劉嘉玲 / 黎芷珊】TVB娛樂訪談節目《一周星星》在本周日晚（8月16日）嘉賓請來電影《功夫女足》導演兼編劇周星馳（星爺）、劉嘉玲、聯合導演林子聰，以及參演演員蔡思貝、張繼聰接受嘉賓主持...",
+      "link": "https://topick.hket.com/article/4174579",
+      "pubDate": "2026-08-11 22:31:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174579/film20160811_thumb_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "647e68eb35afe1e6",
       "title": "我的剩餘戀愛︱年度最催淚戀綜《我的剩餘戀愛》　絕症青年重生再愛YENA憶抗癌經歷眼紅紅",
       "description": "韓國首個以絕症為主題、全新戀愛綜藝《我的剩餘戀愛》月初首播後隨即引爆話題！節目跳出過往戀綜主打外貌與曖昧氛圍的模式，將鏡頭對準一群曾走過生死關頭的2、30代年輕人，記錄他們如何重新擁抱生命與愛情的故事...",
@@ -31694,6 +32426,6 @@
       "pinned": true
     }
   ],
-  "total": 1653,
-  "last_updated": "2026-08-11T22:06:45.213142"
+  "total": 1691,
+  "last_updated": "2026-08-11T23:08:24.714871"
 }
