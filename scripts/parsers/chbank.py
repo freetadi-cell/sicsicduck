@@ -27,7 +27,11 @@ import logging
 logger = logging.getLogger(__name__)
 
 CURRENCY_LABELS = {'港 元': 'hkd', '美 元': 'usd', '人民幣': 'cny'}
-PERIOD_MAP = {'3個月': '3m', '6個月': '6m', '12個月': '12m'}
+# 支援全部年期：1個月/2個月/3個月/6個月/9個月/12個月（24個月唔入網站顯示）
+PERIOD_MAP = {
+    '1個月': '1m', '2個月': '2m', '3個月': '3m',
+    '6個月': '6m', '9個月': '9m', '12個月': '12m',
+}
 ALL_PERIODS = ['1天', '7天', '14天', '1個月', '2個月', '3個月', '6個月', '9個月', '12個月', '24個月']
 
 # 標題行有幾多個利率欄（= 10）
@@ -115,32 +119,35 @@ def _parse_cells(cells, keyword):
             continue
         _extract_row(flat, col_idx, cur_key, per_currency)
 
-    # 3. 組最終輸出
+    # 3. 組最終輸出（保留每個 period 所屬金額檔嘅 min_deposit）
     out = {}
     for cur, pr in per_currency.items():
         if not pr:
             continue
         out[cur] = {
             period: {
-                'rate': rate,
-                'min_deposit': 5000,
+                'rate': info['rate'],
+                'min_deposit': info['min_deposit'],
                 'note': '雲利率（網上/流動理財）' if '雲' in keyword else '牌價利率',
                 'source': 'bank',
             }
-            for period, rate in pr.items()
+            for period, info in pr.items()
         }
     return out if out else None
 
 
 def _extract_row(flat, col_idx, cur_key, per_currency):
-    """從單一數據行抽 3m/6m/12m，存入 per_currency[cur_key]（取最高）。"""
+    """從單一數據行抽所有年期，存入 per_currency[cur_key]（取最高，並記返 min_deposit）。"""
     # offset = 數據行有幾多個「前置欄」（貨幣/金額）＝ len(row) - 標題行利率欄數
     offset = len(flat) - HEADER_RATE_CELLS
     if offset < 0:
         offset = 0
 
+    # 記錄呢行嘅最低存款額（金額檔，通常喺第一欄，形如 '5,000 至 49,999' / '50,000,001 或以上'）
+    min_deposit = _parse_min_deposit(flat)
+
     if cur_key not in per_currency:
-        per_currency[cur_key] = {}
+        per_currency[cur_key] = {}  # period -> {'rate': float, 'min_deposit': float}
     for label, period_key in PERIOD_MAP.items():
         header_idx = col_idx.get(label)
         if header_idx is None:
@@ -156,8 +163,29 @@ def _extract_row(flat, col_idx, cur_key, per_currency):
         except ValueError:
             continue
         if 0 < rate < 100:
-            if period_key not in per_currency[cur_key] or rate > per_currency[cur_key][period_key]:
-                per_currency[cur_key][period_key] = rate
+            cur = per_currency[cur_key].get(period_key)
+            if cur is None or rate > cur['rate']:
+                per_currency[cur_key][period_key] = {'rate': rate, 'min_deposit': min_deposit}
+
+
+def _parse_min_deposit(flat):
+    """從數據行嘅金額欄（通常第一欄）抽最低存款額。
+
+    支援格式：
+    - '5,000 至 49,999'      → 5000
+    - '50,000,001 或以上'    → 50000001
+    - '1,000 至 9,999'       → 1000
+    攞唔到就預設 5000。
+    """
+    import re
+    for c in flat:
+        m = re.match(r'^[\d,]+', c.replace(' ', ''))
+        if m:
+            try:
+                return float(m.group(0).replace(',', ''))
+            except ValueError:
+                pass
+    return 5000
 
 
 def _parse_text(table_str):
