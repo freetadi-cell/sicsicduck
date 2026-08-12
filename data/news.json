@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "b7258b4dd96053099a76d8b223b74213",
+      "title": "BTIG分析師Krinsky警告:股市風險回報比「相當糟糕」",
+      "description": "Investing.com — BTIG週二在一份研究報告中指出,在週三消費者物價指數(CPI)報告公布前夕,美國股市面臨的下行風險遠大於債券市場。儘管過去一個月國債收益率持續上升,美股卻逆勢走高,令兩者之間的背離愈發明顯。",
+      "link": "https://hk.finance.yahoo.com/news/btig%E5%88%86%E6%9E%90%E5%B8%ABkrinsky%E8%AD%A6%E5%91%8A-%E8%82%A1%E5%B8%82%E9%A2%A8%E9%9A%AA%E5%9B%9E%E5%A0%B1%E6%AF%94-%E7%9B%B8%E7%95%B6%E7%B3%9F%E7%B3%95-193921324.html",
+      "pubDate": "2026-08-11 19:39:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXNPEAB20CL_M.jpg",
+      "keywords": [
+        "消費者物價指數",
+        "btig",
+        "美國股市"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "138f9c9e1c284577c848415660c7a1c6",
+      "title": "8月夜期收市報25533點 跌95點",
+      "description": "<匯港通訊> 8月夜期期指收市報25533點,跌95點,低水120點,成交13417張;9月夜期期指報25463點,跌72點,低水190點,成交111張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125533%E9%BB%9E-%E8%B7%8C95%E9%BB%9E-190500173.html",
+      "pubDate": "2026-08-11 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊>"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "879648f831543d6f1caa005a39624461",
       "title": "美國7月整體消費物價料升0.1% 核心物價升0.2%",
       "description": "據彭博編製的調查,美國7月消費物價指數(CPI)預期按月升0.1%,6月則跌0.4%。 按年計算,CPI升幅預料由3.5%放緩至3.4%。 CPI數據將於周三美東時間上午8時30分公布。 Scotiabank表示,7月汽油價格預料下跌。Jefferies研究報告指出,食品價格繼上月升0.2%後,預料將輕微推高CP...",
@@ -19,17 +55,18 @@
       "pinned": true
     },
     {
-      "id": "135fc8535a68d0e09ef5479dbcb15628",
-      "title": "更新:憧憬霍爾木茲海峽重開降溫 美股下跌油價上升",
-      "description": "美國主要股指周二中午時段下跌,油價延續升勢,市場對霍爾木茲海峽重開的不確定性升溫。 納斯達克綜合指數中午後跌0.6%至26,436.2,標普500指數跌0.3%至7,727.5,道瓊斯工業平均指數跌0.2%至53,871.7。板塊方面,通信服務板塊跌幅最大,能源股則領漲。 路透報道,伊朗最高國家安全委員會秘書Mo...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E6%86%A7%E6%86%AC%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E9%99%8D%E6%BA%AB-%E7%BE%8E%E8%82%A1%E4%B8%8B%E8%B7%8C%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-174444154.html",
-      "pubDate": "2026-08-11 17:44:44",
+      "id": "a3c750c22a63598775066d8d40a990d4",
+      "title": "油價上升 市場對霍爾木茲海峽重開希望降溫",
+      "description": "油價周二上升,市場對全球最重要原油運輸咽喉霍爾木茲海峽重開的不確定性增加。 紐約期油升1.1%,報每桶83.08美元;布蘭特期油升1.3%,報88.86美元。 據路透周二引述伊朗最高國家安全委員會秘書Mohsen Rezaei表示,霍爾木茲海峽將維持關閉,直至美國改變行為並接受伊朗結束衝突的條件,包括解凍伊朗海外...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-%E5%B8%82%E5%A0%B4%E5%B0%8D%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E5%B8%8C%E6%9C%9B%E9%99%8D%E6%BA%AB-183300521.html",
+      "pubDate": "2026-08-11 18:33:00",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "特朗普",
+        "國家安全委員會",
         "霍爾木茲海峽",
-        "納斯達克綜合指數"
+        "伊朗",
+        "布蘭特期油"
       ],
       "category": [
         "business"
@@ -38,41 +75,181 @@
       "pinned": true
     },
     {
-      "id": "a8f6466fd3647ca248f33196775919ae",
-      "title": "【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購",
-      "description": "香港政府新一批銀色債券今年保底息率提升至4.25厘,創近三年新高,發行額更由500億元上調至最多550億元,反映政府大手吸納銀髮資金應對高息環境下的市場需求。今年門檻依舊——申請人須於1967年或之前出生,每手入場費維持1萬元,究竟今次「加息」加碼是否值得申請? 據政府公布,新一批銀色債券(第十一批)保底年利率定為4.25厘,較去年(第十批)的3.85厘明顯提升,是近三年以來最高水平;發行額目標為500億元,視乎市場反應可進一步增至550億元,年期維持3年。申請期由8月21日(星期五)上午9時起至9月4日(星期五)下午2時截止,正式發行日為9月15日(星期二)。合資格申請人須於1967年或之前出生,並持有效香港身份證,可透過配售銀行或指定證券經紀提出認購。 【息率比較】4.25厘屬近年高位 惟未及2023年 翻查歷年紀錄,銀色債券保底息率並非單向向上:2021年為3.5厘,2022年升至4厘,2023年一度攀上5厘高位,其後2024年回落至4厘,去年(第十批)再降至3.85厘。今年4.25厘的水平雖較去年明顯回升,但仍未及2023年的5厘高位,反映定價與當時市場利率環境仍有一定落差。 批次 保底息率 洞察 2023年(第七批) 5厘 近年最高 2024年(第八批) 4厘 回落 去年(第十批) 3.85厘 持續下行 今年(第十一批) 4.25厘 近三年新高,惟未及2023年.. The post 【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購 appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/%E6%9C%80%E6%96%B0%E8%B2%A1%E7%B6%93%E6%B6%88%E6%81%AF/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B82026%E7%AC%AC%E5%8D%81%E4%B8%80%E6%89%B9-2031135/",
-      "pubDate": "2026-08-09 06:23:55",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/05/ed-social-share_19873850955e4e5ab66fb9a_27499425069f836787b3ab.jpg",
-      "keywords": [
-        "最新財經消息",
-        "最新財經資訊"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "a1e7196161dd4899cd5cfab6c1577c29",
-      "title": "日圓再跌穿「5算」 美日干預效應漸消退 市場關注今日會否「突襲」",
-      "description": "日圓重現跌勢,每百兌港元最新報4.92水平,再次跌穿「5算」。據彭博報道,日圓早前因美日聯手入市干預而獲得的強勁反彈,目前已回吐超過一半,其中日圓兌美元匯價回落至159.29,標誌市場對日圓的悲觀情緒再度浮現,並密切注視當局會否再次出手托市。值得留意的是,市場猜測當局或會趁今日(11日)日本假期交投淡靜之際再次突襲。 重新聚焦美日龐大息差等因素 據彭博分析指出,日圓7月下旬一度跌至164兌一美元的",
-      "link": "https://www.stheadline.com/macroeconomics/3603158/%E6%97%A5%E5%9C%93%E5%86%8D%E8%B7%8C%E7%A9%BF5%E7%AE%97-%E7%BE%8E%E6%97%A5%E5%B9%B2%E9%A0%90%E6%95%88%E6%87%89%E6%BC%B8%E6%B6%88%E9%80%80-%E5%B8%82%E5%A0%B4%E9%97%9C%E6%B3%A8%E4%BB%8A%E6%97%A5%E6%9C%83%E5%90%A6%E7%AA%81%E8%A5%B2",
-      "pubDate": "2026-08-11 02:58:33",
+      "id": "d0699efc98c2b713ac69a7a18a334d5b",
+      "title": "伊朗局勢|霍爾木茲海峽重開在望?巴國:美伊接近達成「某種形式」安排",
+      "description": "美伊局勢及霍爾木茲海峽通航問題出現曙光。據彭博社報道,巴基斯坦國防部長阿西夫周二指出,儘管美國與伊朗在長期陷入僵局的談判上立場強硬,但針對霍爾木茲海峽的議題,雙方「接近達成某種形式的安排;局勢朝有利於和平的方向發展」。 伊朗:達成協議前 霍爾木茲海峽會一直關閉 《半島電視台》日前引述卡塔爾外交部發言人報道,伊朗與阿曼針對重新開放霍爾木茲海峽、讓部份海上航運通行的談判已進入後期階段。巴基斯坦國防部長",
+      "link": "https://www.stheadline.com/realtime-world/3603454/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E5%9C%A8%E6%9C%9B%E5%B7%B4%E5%9C%8B%E7%BE%8E%E4%BC%8A%E6%8E%A5%E8%BF%91%E9%81%94%E6%88%90%E6%9F%90%E7%A8%AE%E5%BD%A2%E5%BC%8F%E5%AE%89%E6%8E%92",
+      "pubDate": "2026-08-11 19:57:28",
       "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fc73c9387506aca6ac90478d9fc75861/2026-08/KF_ALEX__4.png",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/be887241fe5728e99906999bcbb355ec/2026-08/2026-08-10T112656Z_278659854_RC2NVMAYJOIM_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ.JPG",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "898aa1c3c2f9293e0ced7bdedbfe35f8",
+      "title": "伊朗局勢|霍爾木茲海峽重開露曙光 巴國:美伊接近達成「某種式形」安排",
+      "description": "美伊局勢及霍爾木茲海峽通航問題出現曙光。據彭博社報道,巴基斯坦國防部長阿西夫周二指出,儘管美國與伊朗在長期陷入僵局的談判上立場強硬,但針對霍爾木茲海峽的議題,雙方「接近達成某種形式的安排;局勢朝有利於和平的方向發展」。雖然阿西夫未有透露具體細節,但消息令市場對能源運輸中斷的疑慮稍為舒緩。 《半島電視台》日前引述卡塔爾外交部發言人報道,伊朗與阿曼針對重新開放霍爾木茲海峽、讓部份海上航運通行的談判已進",
+      "link": "https://www.stheadline.com/realtime-world/3603454/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E9%9C%B2%E6%9B%99%E5%85%89-%E5%B7%B4%E5%9C%8B%E7%BE%8E%E4%BC%8A%E6%8E%A5%E8%BF%91%E9%81%94%E6%88%90%E6%9F%90%E7%A8%AE%E5%BC%8F%E5%BD%A2%E5%AE%89%E6%8E%92",
+      "pubDate": "2026-08-11 19:57:28",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/066648a7ce4e31bb2056539dee4d09ea/2026-08/2026-08-11_20_53_38.png",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d6a9e1af2db83f32a7df22e46d32725d",
+      "title": "伊朗局勢|霍爾木茲海峽重開在望 巴國:美伊接近達成「某種形式」安排",
+      "description": "美伊局勢及霍爾木茲海峽通航問題出現曙光。據彭博社報道,巴基斯坦國防部長阿西夫周二指出,儘管美國與伊朗在長期陷入僵局的談判上立場強硬,但針對霍爾木茲海峽的議題,雙方「接近達成某種形式的安排;局勢朝有利於和平的方向發展」。雖然阿西夫未有透露具體細節,但消息令市場對能源運輸中斷的疑慮稍為舒緩。 《半島電視台》日前引述卡塔爾外交部發言人報道,伊朗與阿曼針對重新開放霍爾木茲海峽、讓部份海上航運通行的談判已進",
+      "link": "https://www.stheadline.com/realtime-world/3603454/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E5%9C%A8%E6%9C%9B-%E5%B7%B4%E5%9C%8B%E7%BE%8E%E4%BC%8A%E6%8E%A5%E8%BF%91%E9%81%94%E6%88%90%E6%9F%90%E7%A8%AE%E5%BD%A2%E5%BC%8F%E5%AE%89%E6%8E%92",
+      "pubDate": "2026-08-11 19:57:28",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/066648a7ce4e31bb2056539dee4d09ea/2026-08/2026-08-11_20_53_38.png",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e0754111e8dda5031469c06ec27087ea",
+      "title": "歐洲錦標賽門票價格惹爭議 主辦單位辯護稱銷情理想",
+      "description": "歐洲錦標賽主辦單位,在英國短跑選手艾美亨特於伯明翰亞歷山大體育場近乎半空的情況下,贏得百米決賽後,為賽事門票價格辯護。 奧運冠軍姬莉鶴堅遜其中一名教練,質疑門票價格,並關注泊車及食物費用,其中德國香腸熱狗售價為15英鎊(約20美元)。 周一晚上的甲級座位,包括雅各布英格布里格森贏得五千米賽事及亨特奪金的環節,售價為150英鎊(約202美元)。最便宜的成人門票為26英鎊(約35美元)。 周一晚上的官方入場人數為13,623人,但現場記者表示,實際數字似乎更低,該體育場可容納23,000人。 鶴堅遜的教練珍妮米杜斯在社交媒體上寫道:「從球迷口中得知門票價格高昂、泊車問題,甚至有人不知道賽事正在舉行。」 評論員桑婭麥克勞克倫補充指:「對收取的價格感到有點震驚。這對值得更好待遇的運動員來說是一種恥辱。這項運動在沒有足球賽事的情況下,擁有寶貴的免費電視曝光機會,但觀眾稀疏令場面顯得平淡。」 運動員參與資格賽的上午環節,門票價格較低。周二及周三晚上的門票價格最高為110英鎊(約148美元),其後周四至周日將恢復較高價格。 主辦單位周二表示,超50%的門票定價為30英鎊(約40美元)或以下。 他們在一份聲明中表示:「伯明翰2026對錦標賽的門票銷售感到滿意,遠超我們的目標。周五、周六及周日晚上的環節已接近售罄,其他多個環節亦接近滿座。」 備受期待的女子八百米決賽將於周五晚上舉行,預計將有鶴堅遜、奧黛麗韋羅及芬克布羅德斯-博爾參與。 瑞典撐竿跳選手阿爾芒「蒙多」杜普蘭蒂斯將是周日晚上最後一個環節的焦點。周五上午,兒童門票以優惠價格發售,讓觀眾觀看杜普蘭蒂斯參與資格賽。 主辦單位表示:「仍有機會以極佳的價值參與錦標賽,包括周五上午的『蒙多』6.31英鎊兒童門票,該門票以其世界紀錄命名,而一家四口只需30英鎊即可入場。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16550401-%E6%AD%90%E6%B4%B2%E9%8C%A6%E6%A8%99%E8%B3%BD%E9%96%80%E7%A5%A8%E5%83%B9%E6%A0%BC%E6%83%B9%E7%88%AD%E8%AD%B0-%E4%B8%BB%E8%BE%A6%E5%96%AE%E4%BD%8D%E8%BE%AF%E8%AD%B7%E7%A8%B1%E9%8A%B7%E6%83%85%E7%90%86",
+      "pubDate": "2026-08-11 19:49:41",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/df8c1f4f4d870e516072e81d94adb99d_Britain_European_Championships_Athletics_26878_FB.jpg",
       "keywords": [
-        "日圓",
-        "加息"
+        "艾美亨特",
+        "門票價格",
+        "體育賽事",
+        "體育",
+        "歐洲錦標賽",
+        "伯明翰"
       ],
       "category": [
         "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c28941b765ca03170ff2ceaed96a42f1",
+      "title": "Realtor.com報告指大型數據中心附近住宅銷售佔比料擴大",
+      "description": "News Corp(NWS.US)(NWSA.US)旗下Realtor.com周二表示,美國大型數據中心附近地區的住宅銷售佔比自2018年以來已增加逾一倍,並可能在基建快速擴張下進一步增長。 根據該網上房地產平台,距離容量至少50兆瓦數據中心五英里範圍內的住宅銷售佔比,由八年前的0.67%升至今年的1.5%,預計...",
+      "link": "https://hk.finance.yahoo.com/news/realtor-com%E5%A0%B1%E5%91%8A%E6%8C%87%E5%A4%A7%E5%9E%8B%E6%95%B8%E6%93%9A%E4%B8%AD%E5%BF%83%E9%99%84%E8%BF%91%E4%BD%8F%E5%AE%85%E9%8A%B7%E5%94%AE%E4%BD%94%E6%AF%94%E6%96%99%E6%93%B4%E5%A4%A7-192732666.html",
+      "pubDate": "2026-08-11 19:27:32",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "數據中心"
+      ],
+      "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "f535dc2bdd23ff3cbc8d933caa4ff318",
+      "title": "全黑隊雨中大勝鯊魚隊54比0 麥堅斯傷出",
+      "description": "新西蘭全黑隊周二在南非德班國王公園,以54比0大勝鯊魚隊,在南非之旅取得兩連勝。 全黑隊測試賽後衛達米安麥堅斯在第28分鐘達陣得分後,一瘸一拐離場。他早前在接球落地時傷及左腳踝,一直帶傷上陣,腳踝纏有厚重繃帶。由於距離測試賽系列尚有11天,他這次離場似乎是出於預防措施。 全黑隊今仗派出半數測試賽十五人陣容,迎戰他們在這次南非之旅中,四支省級隊伍中最弱的一隊。由於開賽前球場一直受大雨影響,場地濕滑,但全黑隊表現依然流暢,令鯊魚隊難以招架。 全黑隊修正了上周五在開普敦以38比21擊敗閃電隊時暴露的問題。他們的密集進攻防守成功阻止了鯊魚隊兩次從距離達陣線五米處的邊線球推進,爭球表現穩固,紀律亦大為改善。在濕滑的晚上,全黑隊沒有被罰黃牌,罰球次數亦有所減少,表現依然流暢。 全黑隊共取得八次達陣,其中七次由魯賓洛夫成功轉換,當中四次是從邊線射入,一次是擊中門柱後入網。 洛夫帶領全黑隊在賽前跳哈卡舞,而鯊魚隊的馬亞諾努則獨自跳哈卡舞回應,場面獨特。現年44歲的欖球名宿馬亞諾努,曾在2003至2015年間為新西蘭國家隊上陣104次,他於一周前才獲鯊魚隊簽約。 諾努首次面對舊東家,但當他後備上陣時,全黑隊已領先42比0,距離完場還有四分之一時間。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16550380-%E5%85%A8%E9%BB%91%E9%9A%8A%E9%9B%A8%E4%B8%AD%E5%A4%A7%E5%8B%9D%E9%AF%8A%E9%AD%9A%E9%9A%8A54%E6%AF%940-%E9%BA%A5%E5%A0%85%E6%96%AF%E5%82%B7%E5%87%BA",
+      "pubDate": "2026-08-11 19:14:11",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/c8893851751a76f9402a67eb5e0f21c7_South_Africa_All_Blacks_Rugby_8_369_FB.jpg",
+      "keywords": [
+        "鯊魚隊",
+        "全黑隊",
+        "達米安麥堅斯",
+        "體育",
+        "欖球",
+        "德班"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ab96bc472e7e6f5c156a3f02416d3b42",
+      "title": "豐田前董事長奧田碩辭世,享年93歲",
+      "description": "Investing.com - 據日本共同社報道,豐田汽車前社長兼董事長奧田碩(Hiroshi Okuda)於週二辭世,享年93歲。他在1990年代末至2000年代初帶領豐田走向全球擴張的輝煌時期。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B1%90%E7%94%B0%E5%89%8D%E8%91%A3%E4%BA%8B%E9%95%B7%E5%A5%A7%E7%94%B0%E7%A2%A9%E8%BE%AD%E4%B8%96-%E4%BA%AB%E5%B9%B493%E6%AD%B2-191056774.html",
+      "pubDate": "2026-08-11 19:10:56",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEDA60GB_M.jpg",
+      "keywords": [
+        "奧田碩",
+        "hiroshi okuda",
+        "豐田",
+        "日本共同社"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ed990df93537bdab9a020e464eb7c9b8",
+      "title": "半年前激嬲麥尼爾女友 派利殊親致電「拆彈」?",
+      "description": "【Now Sports】為讓麥尼爾今夏轉會成功,水晶宮主席派利殊據報親自致電這名愛華頓翼鋒的女友,排解雙方在上一個轉會窗產生的誤會。水晶宮日前與愛華頓達成交換球員的轉會協議,從該隊引入麥尼爾(Dwight McNeil),而1月從熱刺加盟的賓倫莊臣,則會改投拖肥糖,雙方已進行體測,一旦順利通過便可各自簽約。事實上...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%8D%8A%E5%B9%B4%E5%89%8D%E6%BF%80%E5%AC%B2%E9%BA%A5%E5%B0%BC%E7%88%BE%E5%A5%B3%E5%8F%8B-%E6%B4%BE%E5%88%A9%E6%AE%8A%E8%A6%AA%E8%87%B4%E9%9B%BB-%E6%8B%86%E5%BD%88-190826890.html",
+      "pubDate": "2026-08-11 19:08:26",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "水晶宮",
+        "愛華頓",
+        "麥尼爾"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2110510f2457de85cb37309ba2502959",
+      "title": "城堡證券看好股市反彈 建議投資者為槓桿押注捲土重來做好準備",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E5%9F%8E%E5%A0%A1%E8%AD%89%E5%88%B8%E7%9C%8B%E5%A5%BD%E8%82%A1%E5%B8%82%E5%8F%8D%E5%BD%88-%E5%BB%BA%E8%AD%B0%E6%8A%95%E8%B3%87%E8%80%85%E7%82%BA%E6%A7%93%E6%A1%BF%E6%8A%BC%E6%B3%A8%E6%8D%B2%E5%9C%9F%E9%87%8D%E4%BE%86%E5%81%9A%E5%A5%BD%E6%BA%96%E5%82%99-190816546.html",
+      "pubDate": "2026-08-11 19:08:16",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/en/bloomberg_chinese_traditional_757/7350c571b5bfc8e4774c13626761c215.jpg",
+      "keywords": [
+        "citadel securities"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "651a6896ff0473f2c637a45836967ac6",
+      "title": "Apple Pay負責人Jennifer Bailey將於10月退休",
+      "description": "Investing.com - 據彭博社週二報導,蘋果公司(Apple Inc.)旗下Pay與Wallet服務的掌舵人Jennifer Bailey將於今年10月正式退休,結束她在蘋果逾20年的職業生涯。Bailey自2014年起便領導該部門至今。",
+      "link": "https://hk.finance.yahoo.com/news/apple-pay%E8%B2%A0%E8%B2%AC%E4%BA%BAjennifer-bailey%E5%B0%87%E6%96%BC10%E6%9C%88%E9%80%80%E4%BC%91-190326499.html",
+      "pubDate": "2026-08-11 19:03:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7306L_M.jpg",
+      "keywords": [
+        "apple pay",
+        "蘋果",
+        "jennifer bailey",
+        "apple"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
     },
     {
       "id": "a5e6fb495e40682e40b91041ae9b71b5",
@@ -151,25 +328,6 @@
       "keywords": [
         "manus",
         "meta platforms inc"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "a3c750c22a63598775066d8d40a990d4",
-      "title": "油價上升 市場對霍爾木茲海峽重開希望降溫",
-      "description": "油價周二上升,市場對全球最重要原油運輸咽喉霍爾木茲海峽重開的不確定性增加。 紐約期油升1.1%,報每桶83.08美元;布蘭特期油升1.3%,報88.86美元。 據路透周二引述伊朗最高國家安全委員會秘書Mohsen Rezaei表示,霍爾木茲海峽將維持關閉,直至美國改變行為並接受伊朗結束衝突的條件,包括解凍伊朗海外...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-%E5%B8%82%E5%A0%B4%E5%B0%8D%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E5%B8%8C%E6%9C%9B%E9%99%8D%E6%BA%AB-183300521.html",
-      "pubDate": "2026-08-11 18:33:00",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "國家安全委員會",
-        "霍爾木茲海峽",
-        "伊朗",
-        "布蘭特期油"
       ],
       "category": [
         "business"
@@ -271,6 +429,25 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "135fc8535a68d0e09ef5479dbcb15628",
+      "title": "更新:憧憬霍爾木茲海峽重開降溫 美股下跌油價上升",
+      "description": "美國主要股指周二中午時段下跌,油價延續升勢,市場對霍爾木茲海峽重開的不確定性升溫。 納斯達克綜合指數中午後跌0.6%至26,436.2,標普500指數跌0.3%至7,727.5,道瓊斯工業平均指數跌0.2%至53,871.7。板塊方面,通信服務板塊跌幅最大,能源股則領漲。 路透報道,伊朗最高國家安全委員會秘書Mo...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E6%86%A7%E6%86%AC%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E9%99%8D%E6%BA%AB-%E7%BE%8E%E8%82%A1%E4%B8%8B%E8%B7%8C%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-174444154.html",
+      "pubDate": "2026-08-11 17:44:44",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "特朗普",
+        "霍爾木茲海峽",
+        "納斯達克綜合指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "c600efe38a31841f540c4b713ccb7809",
@@ -5922,6 +6099,25 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "a1e7196161dd4899cd5cfab6c1577c29",
+      "title": "日圓再跌穿「5算」 美日干預效應漸消退 市場關注今日會否「突襲」",
+      "description": "日圓重現跌勢,每百兌港元最新報4.92水平,再次跌穿「5算」。據彭博報道,日圓早前因美日聯手入市干預而獲得的強勁反彈,目前已回吐超過一半,其中日圓兌美元匯價回落至159.29,標誌市場對日圓的悲觀情緒再度浮現,並密切注視當局會否再次出手托市。值得留意的是,市場猜測當局或會趁今日(11日)日本假期交投淡靜之際再次突襲。 重新聚焦美日龐大息差等因素 據彭博分析指出,日圓7月下旬一度跌至164兌一美元的",
+      "link": "https://www.stheadline.com/macroeconomics/3603158/%E6%97%A5%E5%9C%93%E5%86%8D%E8%B7%8C%E7%A9%BF5%E7%AE%97-%E7%BE%8E%E6%97%A5%E5%B9%B2%E9%A0%90%E6%95%88%E6%87%89%E6%BC%B8%E6%B6%88%E9%80%80-%E5%B8%82%E5%A0%B4%E9%97%9C%E6%B3%A8%E4%BB%8A%E6%97%A5%E6%9C%83%E5%90%A6%E7%AA%81%E8%A5%B2",
+      "pubDate": "2026-08-11 02:58:33",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fc73c9387506aca6ac90478d9fc75861/2026-08/KF_ALEX__4.png",
+      "keywords": [
+        "日圓",
+        "加息"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "4ea104c36b2405ff5685f71f49ceab65",
@@ -27927,6 +28123,24 @@
       "region": "hk"
     },
     {
+      "id": "a8f6466fd3647ca248f33196775919ae",
+      "title": "【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購",
+      "description": "香港政府新一批銀色債券今年保底息率提升至4.25厘,創近三年新高,發行額更由500億元上調至最多550億元,反映政府大手吸納銀髮資金應對高息環境下的市場需求。今年門檻依舊——申請人須於1967年或之前出生,每手入場費維持1萬元,究竟今次「加息」加碼是否值得申請? 據政府公布,新一批銀色債券(第十一批)保底年利率定為4.25厘,較去年(第十批)的3.85厘明顯提升,是近三年以來最高水平;發行額目標為500億元,視乎市場反應可進一步增至550億元,年期維持3年。申請期由8月21日(星期五)上午9時起至9月4日(星期五)下午2時截止,正式發行日為9月15日(星期二)。合資格申請人須於1967年或之前出生,並持有效香港身份證,可透過配售銀行或指定證券經紀提出認購。 【息率比較】4.25厘屬近年高位 惟未及2023年 翻查歷年紀錄,銀色債券保底息率並非單向向上:2021年為3.5厘,2022年升至4厘,2023年一度攀上5厘高位,其後2024年回落至4厘,去年(第十批)再降至3.85厘。今年4.25厘的水平雖較去年明顯回升,但仍未及2023年的5厘高位,反映定價與當時市場利率環境仍有一定落差。 批次 保底息率 洞察 2023年(第七批) 5厘 近年最高 2024年(第八批) 4厘 回落 去年(第十批) 3.85厘 持續下行 今年(第十一批) 4.25厘 近三年新高,惟未及2023年.. The post 【銀債保底4.25厘破近年新高】發行額增至550億元 申請8月21日至9月4日 1967年前出生可認購 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E6%9C%80%E6%96%B0%E8%B2%A1%E7%B6%93%E6%B6%88%E6%81%AF/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B82026%E7%AC%AC%E5%8D%81%E4%B8%80%E6%89%B9-2031135/",
+      "pubDate": "2026-08-09 06:23:55",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/05/ed-social-share_19873850955e4e5ab66fb9a_27499425069f836787b3ab.jpg",
+      "keywords": [
+        "最新財經消息",
+        "最新財經資訊"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "6c29bc5b3d587a649bb80aa9485bb5e1",
       "title": "【SK海力士擬砸4萬億韓圓回購】股份回購料達2.9萬億韓圓 按季息375韓圓創新高 公布後股價由挫轉紅",
       "description": "南韓晶片巨企SK海力士(SK Hynix)一夜之間公布最新季度股息,並承諾在第三季內交出總值料達數萬億韓圓的股東回報方案細節,力度之大一舉扭轉公布前股價一度急挫的走勢。這場「峰迴路轉」的背後,是全球投資者對AI晶片巨企坐擁巨額現金卻遲遲未有大手回饋股東的耐性見底。 據市場消息,SK海力士於8月7日收市後突然公布,將派發每股375韓圓季度股息,總額約2733億韓圓,除淨日定於8月31日;同時確認會在第三季內公布追加股東回報方案,市場估算方案總值可能達到約100萬億韓圓(約合724億美元),當中股份回購部分料介乎40萬億韓圓(約合290億美元)左右,相當於已發行股份逾2%。消息公布前,SK海力士股價曾在盤中急挫近4.88%,公布後跌幅顯著收窄至約1%。 【耐性見底】巨額現金遭質疑 投資者施壓 今次公布並非巧合。SK海力士早前完成美國預託證券(ADR)發售,觸發美國證券法規定的25個交易日「緘默期」,令集團一直未能就股東回報作進一步表態;緘默期已於8月4日屆滿,公布隨即在數日後出爐。有分析指出,SK海力士與同業三星電子受惠AI記憶體需求急升,年底淨現金合計料達約2630億美元,規模超過輝達逾一倍,卻遲遲未有相應加碼回饋股東的具體方案,令投資者不滿情緒持續累積。有券商分析師形容,企業需要「更大膽、更具體、符合國際水平的溝通策略」,才能扭轉市場觀感。 項目 內容 洞察 季度股息 每股375韓圓,總額約2733億韓圓 除淨日8月31日 回報方案規模 市場估算約100萬億韓圓(約724億美元) 第三季內公布細節 回購部分 料介乎40萬億韓圓(約290億美元) 相當於已發行股份逾2% 股價反應 盤中曾急挫4.88%,收窄至約1%.. The post 【SK海力士擬砸4萬億韓圓回購】股份回購料達2.9萬億韓圓 按季息375韓圓創新高 公布後股價由挫轉紅 appeared first on 經濟一週 .",
@@ -37947,6 +38161,20 @@
       "region": "hk"
     },
     {
+      "id": "bb04bb46d387a2df",
+      "title": "重症解密︱拆解香港女性頭號癌症殺手　兩類人增加患乳癌風險　注意生活三大事項降患病機會",
+      "description": "由譚俊彥、陳曉華、林秀怡及梁凱晴攜手主持TVB健康資訊綜藝節目《重症解密》在前晚（8月10日）播出的第11集，為大家拆解香港女性頭號癌症殺手-乳癌。節目中，港大醫學院外科學系臨床教授鄺靄慧詳細拆解乳癌...",
+      "link": "https://topick.hket.com/article/4175178",
+      "pubDate": "2026-08-12 14:37:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4175178/tvb20260812_thumb_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "c58bf3e955a529f9",
       "title": "呂慧儀母子︱呂慧儀帶兒子赴加國為海外升學鋪路　「長腳蟹」科大神科畢業再半工讀牛津商科",
       "description": "【呂慧儀 / 長腳蟹 / 蟹籽】TVB劇《愛回家之開心速遞》已經大結局，現年43歲的「長腳蟹」呂慧儀趁這段空閒時間，帶12歲兒子「蟹籽」（黃柏翹）赴加拿大親子旅遊，當中更特別安排到當地著名的卡加里大學...",
@@ -37982,6 +38210,20 @@
       "pubDate": "2026-08-12 10:14:00",
       "source_name": "香港經濟日報",
       "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4175012/kol20260812_thumb_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "610deae21d2c5e3e",
+      "title": "酷熱天氣｜香港高溫希慎廣場冷氣獲激讚　體感即降5度：出街眼鏡會起霧！　網民推本港冷氣勁商場",
+      "description": "天文台8月9日下午錄得本港最高氣溫36.9度，打破自1884年幼記錄以來的最高氣溫，上水更一度飆升至39.7度。高溫天氣出街，商場內置的強勁冷氣便成為避暑關鍵。近日，有網民在Threads發帖，大讚銅...",
+      "link": "https://topick.hket.com/article/4174357",
+      "pubDate": "2026-08-12 08:31:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4170000/4174357/5_300.png",
       "keywords": [],
       "category": [
         "rss"
@@ -38346,6 +38588,6 @@
       "pinned": true
     }
   ],
-  "total": 1996,
-  "last_updated": "2026-08-12T15:01:17.985268"
+  "total": 2010,
+  "last_updated": "2026-08-12T16:01:54.320092"
 }
