@@ -1,34 +1,43 @@
 {
   "articles": [
     {
-      "id": "71b4e236258bb90d22b0bfa19fa544d5",
-      "title": "韓國軍方:朝鮮向東部海域發射彈道導彈",
-      "description": "中評社北京8月12日電/韓國軍方消息稱,朝鮮發射了一枚彈道導彈。 韓聯社星期三(8月12日)清晨引述韓國聯合參謀本部消息說,朝鮮從元山一帶朝東部海域發射彈道導彈。 路透社報導,此次發射正值韓國和美國計劃於下周啟動大規模聯合軍事演習。定於8月17日至27日舉行的美韓大規模聯合軍演,旨在應對朝鮮不斷升級的核武能力。 朝鮮8月6日向日本海發射了一枚短程彈道導彈。",
-      "link": "http://www.crntt.com/doc/7_0_107222692_1_0812145917.html",
-      "pubDate": "2026-08-12 06:59:17",
-      "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202608/12/107222735.jpg",
+      "id": "2517daa1054de7042aadf27e1244ad65",
+      "title": "比特幣徘徊於63,000美元附近,伊朗局勢不明朗,CPI數據備受關注",
+      "description": "Investing.com - 週三,比特幣走勢平穩,市場對美伊達成協議重開霍爾木茲海峽的樂觀情緒逐漸消退,加上投資者在關鍵通脹數據公布前保持謹慎,加密貨幣市場整體受壓。",
+      "link": "https://hk.finance.yahoo.com/news/%E6%AF%94%E7%89%B9%E5%B9%A3%E5%BE%98%E5%BE%8A%E6%96%BC63-000%E7%BE%8E%E5%85%83%E9%99%84%E8%BF%91-%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E4%B8%8D%E6%98%8E%E6%9C%97-cpi%E6%95%B8%E6%93%9A%E5%82%99%E5%8F%97%E9%97%9C%E6%B3%A8-075235799.html",
+      "pubDate": "2026-08-12 07:52:35",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7U0A9_M.jpg",
       "keywords": [
-        "朝鮮"
+        "通脹",
+        "霍爾木茲海峽",
+        "加密貨幣市場"
       ],
       "category": [
-        "politics",
-        "top"
+        "business"
       ],
       "region": "hk",
       "pinned": true
     },
     {
-      "id": "e1bba3655f7bcb2c3c016c92f4d66573",
-      "title": "西南九龍「叡璟I」首張價單涉102伙 折實入場529.8萬",
-      "description": "<匯港通訊> 華潤置地(01109)發展的西南九龍南昌項目「叡璟I」今日公布首張價單,涉及102伙,包括18伙一房,66伙兩房,18伙三房。實用面積介乎304-657平方呎。在扣除最高16%的折扣後(不包華潤員工及澐璟業主優惠),折實售價介乎529.8-1237.1萬,折實呎價介乎16538-19291元,折實平...",
-      "link": "https://hk.finance.yahoo.com/news/%E8%A5%BF%E5%8D%97%E4%B9%9D%E9%BE%8D-%E5%8F%A1%E7%92%9Fi-%E9%A6%96%E5%BC%B5%E5%83%B9%E5%96%AE%E6%B6%89102%E4%BC%99-%E6%8A%98%E5%AF%A6%E5%85%A5%E5%A0%B4529-8%E8%90%AC-065908746.html",
-      "pubDate": "2026-08-12 06:59:08",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
+      "id": "44f6737e80082bf931ea4c7e5178bea6",
+      "title": "特朗普:美國「完全控制」霍爾木茲海峽 強調不信任伊朗",
+      "description": "美國總統特朗普(Donald Trump)8月11日表示,他不信任伊朗,並宣稱美國目前對霍爾木茲海峽擁有「完全控制權」。特朗普周二結束俄亥俄州的行程後,",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379297/%E7%89%B9%E6%9C%97%E6%99%AE-%E7%BE%8E%E5%9C%8B-%E5%AE%8C%E5%85%A8%E6%8E%A7%E5%88%B6-%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD-%E5%BC%B7%E8%AA%BF%E4%B8%8D%E4%BF%A1%E4%BB%BB%E4%BC%8A%E6%9C%97",
+      "pubDate": "2026-08-12 07:37:25",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260801/1160113880261726208408376.jpeg/6d_RQIPSWPzi1vC9a9dLnCf46_E2bKTELM1sayzNbGs",
+      "keywords": [
+        "世界新聞",
+        "hk01",
+        "國際",
+        "香港01",
+        "國際新聞",
+        "新聞",
+        "環球"
+      ],
       "category": [
-        "business"
+        "politics"
       ],
       "region": "hk",
       "pinned": true
@@ -66,6 +75,799 @@
       "pinned": true
     },
     {
+      "id": "7af6f3bd59cdd7d6acf9b6b20f2efdc6",
+      "title": "中國7月汽車銷售按年為-0.3%,高於前值的-3.2%。",
+      "description": "中國7月汽車銷售按年為-0.3%,高於前值的-3.2%。~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%9C%8B7%E6%9C%88%E6%B1%BD%E8%BB%8A%E9%8A%B7%E5%94%AE%E6%8C%89%E5%B9%B4%E7%82%BA-0-3-%E9%AB%98%E6%96%BC%E5%89%8D%E5%80%BC%E7%9A%84-3-080000255.html",
+      "pubDate": "2026-08-12 08:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "阿思達克財經新聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4498ebb8db596718f0cc72474c742d54",
+      "title": "解除禁令|白宮解除政府設備使用TikTok禁令 指已不構成國安威脅",
+      "description": "美國白宮管理及預算辦公室(OMB)在周一(10日)的備忘錄中,正式解除自2023年起聯邦政府設備使用 TikT...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%A7%A3%E9%99%A4%E7%A6%81%E4%BB%A4-%E7%99%BD%E5%AE%AE%E8%A7%A3%E9%99%A4%E6%94%BF%E5%BA%9C%E8%A8%AD%E5%82%99%E4%BD%BF%E7%94%A8tiktok%E7%A6%81%E4%BB%A4-%E6%8C%87%E5%B7%B2%E4%B8%8D%E6%A7%8B%E6%88%90%E5%9C%8B%E5%AE%89%E5%A8%81%E8%84%85-080000594.html",
+      "pubDate": "2026-08-12 08:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": null,
+      "keywords": [
+        "tiktok"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "826e79c2661b5d1ab8cadd442c45f8fa",
+      "title": "DJ Korolova 領銜 Velo 首屆 Ibiza「Echoes of Tomorrowland」活動,鼓勵樂迷展現真我",
+      "description": "首屆活動由頂尖 DJ Korolova 領銜,Velo 將 Tomorrowland 精神帶到 Ibiza,鼓勵樂迷擁抱獨特個性,印證舞池無分疆界 倫敦2026年8月12日 /美通社/ -- Velo日前於 Ibiza 的 Tomorrowland Store 舉辦首屆「Echoes of Tomorrowland」活動,以音樂、共融精神及共同體驗呈獻一場活力澎湃的盛會。 活動再次印證舞曲無分疆界,讓 Ibiza 樂迷親身感受 Tomorrowland 獨有的人際連繫與社群歸屬感。 活動由烏克蘭浩室及科技舞曲 DJ Korolova 領銜演出,現場並直播...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/dj-korolova--velo--ibizaechoes-of-tomorrowland-302848773.html",
+      "pubDate": "2026-08-12 08:00:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": null,
+      "keywords": [
+        "mat",
+        "pdt",
+        "fvt"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cece14518338cf60604829dec9c62b97",
+      "title": "親子好去處|香港醫學博物館小醫生體驗日 專科醫生教聽心跳聲+肺部聲",
+      "description": "周末不知道帶小朋友到哪裡玩?香港醫學博物館再次推出「小醫生體驗日」工作坊,小朋友可在專科醫生的帶領下,認識各種健康常識,甚至可以聆聽自己的心跳聲和肺部,啟發對醫學的興趣,絕對值得參加。",
+      "link": "https://www.am730.com.hk/%E7%94%9F%E6%B4%BB/1046949/%E8%A6%AA%E5%AD%90%E5%A5%BD%E5%8E%BB%E8%99%95-%E9%A6%99%E6%B8%AF%E9%86%AB%E5%AD%B8%E5%8D%9A%E7%89%A9%E9%A4%A8%E5%B0%8F%E9%86%AB%E7%94%9F%E9%AB%94%E9%A9%97%E6%97%A5-%E5%B0%88%E7%A7%91%E9%86%AB%E7%94%9F%E6%95%99%E8%81%BD%E5%BF%83%E8%B7%B3%E8%81%B2-%E8%82%BA%E9%83%A8%E8%81%B2",
+      "pubDate": "2026-08-12 08:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046949/article/1046949/df/01KZT14KH3MB499XJNN7H1YKZH.jpg?updatedAt=1786506613",
+      "keywords": null,
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e5f4fc96984f020e9119c5029722b35e",
+      "title": "《港樓》沙田兩幅商地申改建住宅 料涉1,456伙",
+      "description": "土木工程拓展署就已納入今財年賣地表的沙田安心街兩幅商業地、向城規會申請改劃住宅、商店、食肆、社會福利設施及公眾停車場等用途發展,涉及5幢住宅群,共提供1,456伙私人住宅單位。擬以地積比率6.2倍發展,較原先作商業發展的地積比率約9倍,低逾三成。 當中大涌橋路與安心街交界的土地,為沙田市地段第626號,是兩幅土地...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E6%B2%99%E7%94%B0%E5%85%A9%E5%B9%85%E5%95%86%E5%9C%B0%E7%94%B3%E6%94%B9%E5%BB%BA%E4%BD%8F%E5%AE%85-%E6%96%99%E6%B6%891-456%E4%BC%99-075949641.html",
+      "pubDate": "2026-08-12 07:59:49",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "公眾停車場",
+        "土木工程拓展署"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b8847bd15fe21ffe59a7dca7535835f2",
+      "title": "黃國昌:藍選竹縣長、白選竹北市長才能雙贏",
+      "description": "中評社台北8月12日電/距離9月4日年底選舉登記截止日僅剩23天,藍白在新竹縣竹北市長人選仍喬不攏。台灣民眾黨主席黃國昌12日在網路節目表示,中國國民黨推派新竹縣長參選人,民眾黨擔綱竹北市長參選人,這樣才能創造最高最大的效應,真的不希望這件事情出現破口,否則絕對不利在野黨的合作大局。 黃國昌強調,自己說過相信鄭麗文、希望徐欣瑩說到做到,“我話講到這邊,應該算是蠻清楚”,現在所有該跑的",
+      "link": "http://www.crntt.com/doc/7_0_160256277_1_0812155900.html",
+      "pubDate": "2026-08-12 07:59:00",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256307.jpg",
+      "keywords": [
+        "黃國昌",
+        "藍白合",
+        "竹北市長"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ff0d3daac144bbaae9ee0e3f0ca46426",
+      "title": "鄭欽模:烏克蘭血淋淋教訓 台灣勿單靠美國",
+      "description": "中評社台北8月12日電(記者 張穎齊)針對俄烏戰爭及台美關係變化,淡江大學外交與國際關係學系副教授鄭欽模12日在一場座談會上表示,烏克蘭血淋淋的教訓之一,就是台灣政黨與社會高度分裂、缺乏基本共識,進而給予外部勢力介入空間。台灣目前也有逐漸走向大分裂的危險,台灣不能一味依靠美國,也不能把雞蛋放在同一個籃子,內部應先尋求共識,也可維持與中國大陸溝通的可能。 “雞蛋不能放在同一個籃子。”鄭",
+      "link": "http://www.crntt.com/doc/7_0_160256259_1_0812155814.html",
+      "pubDate": "2026-08-12 07:58:13",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256269.jpg",
+      "keywords": [
+        "兩岸關係",
+        "俄烏戰爭",
+        "鄭欽模"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "71457bf62868a6252e793829ff7d410e",
+      "title": "\"十五五\"期间中国高标仓市场将迎来供需关系显著改善,中西部与华东率先迎来投资窗口",
+      "description": "CBRE世邦魏理仕发布《筑底渐明,修复重启——中国物流大周期下的投资机遇》报告 上海 2026年8月12日 /美通社/ -- CBRE世邦魏理仕最新发布《筑底渐明,修复重启——中国物流大周期下的投资机遇》报告指出,在经历过去两年的急速回调后,中国高标仓市场的供需关系有望在\"十五五\"期间显著改善,并于2028年前后迎来周期拐点。当前过半城市的资产价格已低于重置成本,为长期机构资本和自用型买家收购核心区位优质资产打开战略窗口。 周期研判:第四轮\"超级周期\"筑底, 2028 年前后迎来拐点 CBRE对过去15年供需和租金趋势的研究显示,中国高标仓市场自2012年以来经历了三个完整的3至4年库存周期,而3年的去化周期是租金涨跌的临界线。当前市场所处的第四个\"超级周期\"长度远超以往,其根源在于新冠疫情带来的需求结构性提升吸引大量资本涌入,2021至2025年全国高标仓存量增长一倍,导致2024年后租金加速下跌。 CBRE测算,2026至2027年间高标仓库存周期将围绕3年临界线运行,2028年年中市场有望进入第五周期。考虑到租金大幅下降后开发商对绿地开发态度谨慎,预计2030年前补库存力度较为有限,租金在2028年后有望迎来一轮快速反弹。 供应端\"潮落\":新增供应大幅下降,租金倒挂制约绿地开发 \"十四五\"是中国仓储物流的供应高峰。2021至2025年,全国主要城市高标仓供应达5,000万平方米,相当于此前全部高标仓存量的总和,其中超过四分之三位于一线城市及环一线区域。天量供应压低出租率与租金,也显著削弱了投资者的开发意愿。CBRE测算,\"十五五\"期间高标仓新增供应预计将大幅下降,其中华东和华北较\"十四五\"分别下降88%和73%,华西与华中仅有零星新项目在建。 数据来源:世邦魏理仕研究部,2026年8月 开发商拿地意愿同步大幅回落。2024至2025年,开发商和物流企业年均购置物流用地的可建面积较此前五年均值下降73%,其中开发商拿地面积降幅高达90%。与此同时,2024至2025年市场租金已下穿经济租金,表明市场已较难系统性支撑绿地开发的投资逻辑。CBRE预计这一倒挂状况将持续至2028年前后,高标仓新增供应在2030年前总体较为有限。 注释*:经济租金=((土地成本+建筑成本)*(1+12%)的开发利润)*毛租金回报率;假设建筑成本自2026年起每年增长2%,土地成本假设不变; 注释**:市场租金为24个城市仓储物流平均租金报价*出租率。 数据来源:世邦魏理仕研究部,2026年8月 需求端\"乘风\":制造业升级与三方物流外包提供结构性动力 需求端展现出较强韧性。2025年全国高标仓净吸纳量达到破纪录的1,010万平方米;2026年上半年净吸纳量达400万平方米,继续保持较高水平。CBRE预计2026至2028年制造业升级和第三方物流外包渗透率的提升将持续拉动需求,年均净吸纳量有望达到约720万平方米,与2023至2024年水平相当。至2028年底,全国高标仓空置率有望降至11%。 制造业升级是核心结构性动力。2025年新能源汽车、光伏、装备制造等\"新三样\"产业的高标仓新租面积约150万平方米,为2021年的4.5倍;机器人、人工智能与创新药等\"新新三样\"在2025年至2026年上半年的新租面积达52万平方米,超过此前四年的总和。华东(长三角)是先进制造业新租需求最旺盛的区域,在2023至2026年上半年贡献了全国制造业新租面积的46%。 供应链物流外包是需求的另一重要来源。2021至2025年,供应链物流和综合物流服务供应商的年均高标仓新租面积较此前五年增长180%。从渗透率看,2024年中国20家主要第三方物流企业总营收占社会物流总费用的5%,仍显著低于美国的9.7%,提升空间广阔。选址方面,第三方物流偏好距市中心30至70公里的高标仓,其中超过70%位于一线城市周边卫星城,相关区位需求稳固。 投资展望\"将晓\":中西部与华东率先迎来投资窗口 受市场周期调整和地缘政治因素影响,近年高标仓投资额高位滑落。2023至2025年全国高标仓年均大宗投资交易额约150亿元,为2023年峰值的一半;2026年上半年进一步滑落至不足50亿元。跨境资金活跃度下降,以险资及Pre-REITs基金为代表的国内投资者成为近两年高标仓大宗投资的绝对主导买家。 各区域所处周期阶段不尽相同。中西部市场已显现租金底部企稳迹象,华东大部分市场也将在2026至2028年间进入复苏阶段,是近期高标仓投资最为理想的目标区域;华北京津廊区域空置率仍接近30%,华南正处于供应高峰,预计将在2029至2030年前后进入复苏期。 数据来源:世邦魏理仕研究部,2026年8月 资本化率方面,目前国内一线城市高标仓资本化率区间为5.00%至6.25%,CBRE认为已触及顶部区间;受益于较强的供需平衡改善预期,上海的资本化率水平有望在2027至2028年小幅回落。 基于对未来两至三年市场租金、出租率及经济租金的预测,CBRE建议:中西部和上海都市圈以成熟项目收购为主;宁波、杭州、南京等华东城市成熟项目收购与绿地开发均适宜;广深都市圈和北京都市圈短期内宜精选核心区位、且价格具备较厚安全垫的项目,例如位于空港或靠近市区的项目;深莞区域可考虑绿地开发机会。 免责声明 除特别注明或提示,以上所有内容仅供阅读者参考之用,不作为唯一决策依据。相关信息之知识产权均属世邦魏理仕所有,所有权利受法律保护。基于信息发布时所掌握的情况,以世邦魏理仕所知,所刊载信息及预测真实且无误导。世邦魏理仕未对此信息进行进一步核实验证,亦不对上述信息做出任何保证。阅读者如参考、使用或依赖上述信息,应对上述信息的准确性、真实性和完整性进行独立审查。世邦魏理仕不对阅读者和任何第三方使用或依赖以上信息, 或者/以及作出商业决策而导致任何损失和费用或任何其他后果承担任何责任。 关于世邦魏理仕 世邦魏理仕(纽约证券交易所代号:CBRE)是财富500强和标准普尔500强企业,为全球性的地产服务和投资公司。公司拥有员工超过155,000名,在全球100多个国家和地区为投资者、广泛的企业用户及各类资产地产业主提供服务。CBRE通过四大业务分支提供的具体服务包括:顾问服务(租赁交易、投资及资本市场、估值及咨询服务、战略顾问);楼宇运营(设施管理、不动产管理、灵活办公、数字基础设施服务);项目管理(项目群管理、项目管理、成本咨询);房地产投资(投资管理、基金管理、开发)。欢迎浏览公司网址 www.cbre.com.cn 。 微信搜索CBRE_China关注CBRE官方微信",
+      "link": "https://www.prnasia.com/story/543771-1.shtml",
+      "pubDate": "2026-08-12 07:58:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "cst",
+        "rlt",
+        "scl",
+        "svy",
+        "trn",
+        "rrl",
+        "cpr",
+        "crl"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "481266c601befb50f73df08c08231459",
+      "title": "渣打擬用AI重新平衡全球員工 料印度等市場招聘持續增加",
+      "description": "據彭博報道,渣打集團(2888)預期採用AI將令其全球員工總數重新平衡,但認為在印度等市場的招聘將持續增加,而印度是其最大全球能力中心(global capability centers, GCC)的所在地。 渣打營運總監Tanuj Kapilashrami接受彭博電視訪問時表示,「諸如印度,集團最大的GCC,我們預測這些市場的員工人數只會增長,因為我們正從包括印度在內的共享服務中心,進行越來越多",
+      "link": "https://www.stheadline.com/realtime-finance/3603611/%E6%B8%A3%E6%89%93%E6%93%AC%E7%94%A8AI%E9%87%8D%E6%96%B0%E5%B9%B3%E8%A1%A1%E5%85%A8%E7%90%83%E5%93%A1%E5%B7%A5-%E6%96%99%E5%8D%B0%E5%BA%A6%E7%AD%89%E5%B8%82%E5%A0%B4%E6%8B%9B%E8%81%98%E6%8C%81%E7%BA%8C%E5%A2%9E%E5%8A%A0",
+      "pubDate": "2026-08-12 07:57:39",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/278bee67ec3571f3ecbf0de115da6e22/2026-08/KF_ANDY_1__0.png",
+      "keywords": [
+        "渣打"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "345be42cfcb130d692ec7e2e1477fe5b",
+      "title": "艾略特向北方之星施壓,要求更換董事會成員",
+      "description": "Investing.com - 維權投資者艾略特投資管理公司(Elliott Investment Management)週三對澳洲最大黃金礦商北方之星資源公司(ASX:NST)進一步施壓,提名六位獨立董事候選人。此前,雙方就董事會改組問題的談判未能達成共識。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%89%BE%E7%95%A5%E7%89%B9%E5%90%91%E5%8C%97%E6%96%B9%E4%B9%8B%E6%98%9F%E6%96%BD%E5%A3%93-%E8%A6%81%E6%B1%82%E6%9B%B4%E6%8F%9B%E8%91%A3%E4%BA%8B%E6%9C%83%E6%88%90%E5%93%A1-075720768.html",
+      "pubDate": "2026-08-12 07:57:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM3Q0HO_M.jpg",
+      "keywords": [
+        "艾略特"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c6efa5156bab4e2b1bc7aa34d6ccf07d",
+      "title": "烏克蘭|傳應萬斯要求 停襲使用俄羅斯港口油輪",
+      "description": "英媒周三(12日)引述烏克蘭官員消息報道,烏克蘭應美國副總統萬斯(JD Vance)的要求,已暫停向使用俄羅斯黑海港口新羅西斯克(Novorossiysk)的油輪發動無人機襲擊。特朗普|秘密轉機惹爭議...",
+      "link": "https://inews.hket.com/article/4175226",
+      "pubDate": "2026-08-12 07:57:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4175226/0812_tanker_300.jpg",
+      "keywords": [
+        "戰爭",
+        "石油",
+        "美國",
+        "軍事",
+        "地緣政治",
+        "烏克蘭",
+        "無人機",
+        "外交",
+        "俄羅斯",
+        "黑海"
+      ],
+      "category": [
+        "world"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9c6056d7cb366f97da23cd3da5dddca7",
+      "title": "普巴或遭摩納哥提前解約",
+      "description": "【Now Sports】BBC報道,普巴正與摩納哥商討提前解約,預計近期將正式離隊。普巴(Paul Pogba)上季走出禁藥陰霾後加盟摩納哥,當時簽下一份為期兩年至2027年夏天屆滿的合約。然而,他在摩納哥首個球季飽受傷患困擾,僅在法甲上陣6場,只踢了121分鐘。最新消息指出,這名33歲中場周二在摩納哥來到英格蘭...",
+      "link": "https://hk.sports.yahoo.com/news/%E6%99%AE%E5%B7%B4%E6%88%96%E9%81%AD%E6%91%A9%E7%B4%8D%E5%93%A5%E6%8F%90%E5%89%8D%E8%A7%A3%E7%B4%84-075505761.html",
+      "pubDate": "2026-08-12 07:55:05",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/4f31e21954d74842f73511c59519c17fb0a3c747175b5b5e67bc4928f698398b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fc2408adc-acc1-45ef-a244-0937f9ba7bd2",
+      "keywords": [
+        "摩納哥"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "179700ce98c6471c6af93a34dc4ae21a",
+      "title": "日全食當日限定!MoonSwatch日食版 首開放西班牙官網線上購買",
+      "description": "今日(8月12日),相信是全球天文迷熱切期待的日子,因為竟可一日內看到罕見三大天象同框登場。而在這特別的一天,Swatch亦同步推出了聯乘Omega的M",
+      "link": "https://www.hk01.com/%E4%B8%80%E7%89%A9/60379203/%E6%97%A5%E5%85%A8%E9%A3%9F%E7%95%B6%E6%97%A5%E9%99%90%E5%AE%9A-moonswatch%E6%97%A5%E9%A3%9F%E7%89%88-%E9%A6%96%E9%96%8B%E6%94%BE%E8%A5%BF%E7%8F%AD%E7%89%99%E5%AE%98%E7%B6%B2%E7%B7%9A%E4%B8%8A%E8%B3%BC%E8%B2%B7",
+      "pubDate": "2026-08-12 07:53:34",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164185400730718208241586.jpeg/eDiLkefOW7_V4-L1PlOk_DenwD4MMpgK8NGSSfDRkkk",
+      "keywords": [
+        "一物",
+        "hk01",
+        "object a",
+        "香港01"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "03c7fc61de69d81774b0a9a9e7019ca6",
+      "title": "香港電腦節2026優惠|入場必中300萬消費券 csl./ASUS/MSI特價品",
+      "description": "暑假壓軸科技盛事「香港電腦通訊節 2026」(HKCCF 2026)將於 8 月 21 至 24 日假灣仔香港會議展覽中心 Hall 1 盛大登場。主辦單位香港電腦商會今",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60379238/%E9%A6%99%E6%B8%AF%E9%9B%BB%E8%85%A6%E7%AF%802026%E5%84%AA%E6%83%A0-%E5%85%A5%E5%A0%B4%E5%BF%85%E4%B8%AD300%E8%90%AC%E6%B6%88%E8%B2%BB%E5%88%B8-csl-asus-msi%E7%89%B9%E5%83%B9%E5%93%81",
+      "pubDate": "2026-08-12 07:53:21",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164237780373475328269817.jpeg/rXx5h-UjkvtFYTOGU1yusSfGQxXzKjo9ZMRLk2TES5M",
+      "keywords": [
+        "ios",
+        "科技",
+        "tesla",
+        "香港01",
+        "潮物",
+        "航拍",
+        "facebook",
+        "動漫",
+        "手遊",
+        "apple",
+        "app",
+        "android"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b9be9731c24e80e78a719a3eb7cb99a4",
+      "title": "達實智能(002421.SZ)澄清無參股宇樹科技(688836.SH) 暫不存在機械人相關研發業務",
+      "description": "市傳達實智能(002421.SZ)間接持有宇樹科技(688836.SH)0.04%的股份,消息刺激達實智能全日漲停,收報3.88元人民幣,成交額6.79億元人民幣。 達實智能證券部工作人員明確表示,無論直接持股還是間接持股,達實智能均不持有宇樹科技股份,同時公司現階段不存在機械人相關研發、生產與製造業務。對於當日...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%81%94%E5%AF%A6%E6%99%BA%E8%83%BD-002421-sz-%E6%BE%84%E6%B8%85%E7%84%A1%E5%8F%83%E8%82%A1%E5%AE%87%E6%A8%B9%E7%A7%91%E6%8A%80-688836-075028700.html",
+      "pubDate": "2026-08-12 07:50:28",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "達實智能證券部",
+        "達實智能"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9b85dd0e7e955678da2290547b3dc6dd",
+      "title": "政府就《建築物管理條例》修訂展開公眾諮詢 提五大方向包括增大型維修投票門檻",
+      "description": "宏福苑去年發生五級大火,暴露了本港樓宇維修工程系統性失效,更引發市民對大廈管理與公共安全監管制度的關注。政府今日(12日)就《建築物管理條例》(第344章)的修訂建議,展開為期一個月的公眾諮詢。是次修例建議主要涵蓋五大方向,包括提高大型維修工程及大額採購決定的出席及投票門檻、完善委任代表文書制度等。 政府發言人指出,是次修訂建議旨在繼《2024年建築物管理(修訂)條例》後,進一步深化《建管條例》規",
+      "link": "https://www.stheadline.com/politics/3603605/%E6%94%BF%E5%BA%9C%E5%B0%B1%E5%BB%BA%E7%AF%89%E7%89%A9%E7%AE%A1%E7%90%86%E6%A2%9D%E4%BE%8B%E4%BF%AE%E8%A8%82%E5%B1%95%E9%96%8B%E5%85%AC%E7%9C%BE%E8%AB%AE%E8%A9%A2-%E6%8F%90%E4%BA%94%E5%A4%A7%E6%96%B9%E5%90%91%E5%8C%85%E6%8B%AC%E5%A2%9E%E5%A4%A7%E5%9E%8B%E7%B6%AD%E4%BF%AE%E6%8A%95%E7%A5%A8%E9%96%80%E6%AA%BB",
+      "pubDate": "2026-08-12 07:48:37",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/d447f2bb4194d447f2a67902a07db88e/2026-08/081215165403218.jpeg",
+      "keywords": [
+        "宏福苑",
+        "公眾諮詢",
+        "建築物管理條例",
+        "投票",
+        "門檻",
+        "大型維修"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "de98d7514c5cb647e0daee09cd10fe0a",
+      "title": "畢彼特自爆因家庭紛爭引自殺念頭 公開承認恢復飲酒 前妻安祖蓮娜對「戒酒失敗」未感意外",
+      "description": "62歲荷里活男神畢彼特(Brad Pitt)最近接受英國版《Esquire》雜誌訪問時,首次談及曾因家庭紛爭一度動起自殺念頭。他又承認在戒酒7年之後,已悄悄恢復飲酒。而其前妻安祖蓮娜祖莉(Angelina Jolie)亦早已「睇死」他,對他「戒酒失敗」毫不驚訝。 畢佬首談黑暗時期 畢佬在訪問中首度談及那段人生中的黑暗時期:「除了那段短暫的時間外,我從未有過自殺的念頭。在那段短暫的時間裏,我只是覺得",
+      "link": "https://www.stheadline.com/film-drama/3603606/%E7%95%A2%E5%BD%BC%E7%89%B9%E8%87%AA%E7%88%86%E5%9B%A0%E5%AE%B6%E5%BA%AD%E7%B4%9B%E7%88%AD%E5%BC%95%E8%87%AA%E6%AE%BA%E5%BF%B5%E9%A0%AD-%E5%85%AC%E9%96%8B%E6%89%BF%E8%AA%8D%E6%81%A2%E5%BE%A9%E9%A3%B2%E9%85%92-%E5%89%8D%E5%A6%BB%E5%AE%89%E7%A5%96%E8%93%AE%E5%A8%9C%E5%B0%8D%E6%88%92%E9%85%92%E5%A4%B1%E6%95%97%E6%9C%AA%E6%84%9F%E6%84%8F%E5%A4%96",
+      "pubDate": "2026-08-12 07:48:37",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a26d275864e33252dcdab9a971a3037d/2026-08/178652051135854.jpg",
+      "keywords": [
+        "安祖蓮娜祖莉",
+        "畢彼特",
+        "brad pitt",
+        "angelina jolie"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8b181406c55e357b9b0da45c8a97d42a",
+      "title": "中原余志偉:PALO SPRINGS第二張價單屬原價加推 即日沽清機會大",
+      "description": "<匯港通訊> 會德豐地產古洞北「PARK SILICION」2期PALO SPRINGS加推,中原地產新界東高級資深營業董事余志偉表示,北部都會區古洞北首個新盤「PARK SILICION」自公布首張價單後,市場反應相當熱烈,連日來收到大量查詢及入票,亦不乏買家到現場實地視察環境,感受優質生活宜居環境及可持續社區...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%8E%9F%E4%BD%99%E5%BF%97%E5%81%89-palo-springs%E7%AC%AC%E4%BA%8C%E5%BC%B5%E5%83%B9%E5%96%AE%E5%B1%AC%E5%8E%9F%E5%83%B9%E5%8A%A0%E6%8E%A8-%E5%8D%B3%E6%97%A5%E6%B2%BD%E6%B8%85%E6%A9%9F%E6%9C%83%E5%A4%A7-074646792.html",
+      "pubDate": "2026-08-12 07:46:46",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0ca3a18432b6558763aee2883346a591",
+      "title": "議長寶座告急?戴錫欽:不排除辭黨部主委",
+      "description": "中評社台北8月12日電/有媒體報導,台北市議會議長、兼國民黨北市黨部主委戴錫欽,被指想藉民眾黨保議長位子,惹毛黨內議員,傳出議長寶座面臨挑戰。對此,戴錫欽今天受訪透露,目前正慎重評估黨部主委職務是否已超出自身負荷,若無法讓大家滿意,也不排除辭去主委一職。 戴錫欽表示,從去年大罷免期間代理台北市黨部主委,到今年鄭麗文接任國民黨主席後正式接下主委職務,都是在黨內較為艱難的時刻,他認為自己",
+      "link": "http://www.crntt.com/doc/7_0_160256295_1_0812154310.html",
+      "pubDate": "2026-08-12 07:43:10",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256301.jpg",
+      "keywords": [
+        "國民黨",
+        "黨部主委",
+        "台北市",
+        "戴錫欽"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "45f77e3d82e76977a16c090869db461a",
+      "title": "藍白爭竹北 吳旭智:尊重民意推出最強人選",
+      "description": "中評社新竹8月12日電(記者 盧誠輝)距離9月4日年底選舉登記截止日僅剩23天,藍白在新竹縣竹北市長人選仍喬不攏。台灣民眾黨籍竹北市長參選人邱臣遠12日呼籲,藍應顧全大局。已被中國國民黨提名的竹北市長參選人吳旭智則回應表示,尊重民意,推出最強人選。 已被民進黨提名為新竹縣長參選人的竹北市長鄭朝方,年底將對決中國國民黨新竹縣長參選人、藍委徐欣瑩。鄭所留下的竹北市長空缺,藍綠白都積極爭搶",
+      "link": "http://www.crntt.com/doc/7_0_160256251_1_0812154113.html",
+      "pubDate": "2026-08-12 07:41:13",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256253.jpg",
+      "keywords": [
+        "2026地方選舉",
+        "竹北市長",
+        "國民黨",
+        "吳旭智"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0e30c3d04efb8930892e914d9e2a7dc7",
+      "title": "神雲科技于 OCP APAC 高峰会展出多元化架构 打造代理型 AI 运行系统(Agentic Workloads)",
+      "description": "台北 2026年8月12日 /美通社/ -- 全球高性能服务器解决方案领导者 神达 控股股份有限公司(股票代码:3706)子公司神雲科技(MiTAC Computing Technology Corp.), 今日 于 OCP APAC 高峰会(OCP APAC Summit)展出了专为代理型 AI(Agentic AI)工作负载打造的多元化机柜级(Rack-Scale)基础架构。本次展会的亮点为神 雲 最新符合 OCP 标准的高性能计算(HPC)服务器—— C2810Z6 与 C2610Z6 的全球首发。两款产品均与 AMD 合作开发,搭载全新 第 6 代 AMD EPYCTM 服务器处理器 ,并基于先进的 SP7/SP8 平台与 PCIe Gen 6 连接技术。 针对持续性的多代理推理循环(Multi-Agent Reasoning Loops)与极致数据吞吐需求,神雲以旗舰款 52U 高密度 AI 液冷机柜为核心,打造全方位的机柜级解决方案。透过整合跨越 AMD 与 Intel 平台的 AI 服务器,并搭配包含算力、网络与软件的 NVIDIA 加速运算平台,神雲提供从底层芯片到可直接部署之「AI 工厂」(AI Factory)的无缝升级路径。 首度亮相:专为代理执行( Agentic Execution )打造的新一代 OCP 计算节点 随着自主代理(Autonomous Agents)从简单的指令提示(Prompts)转变为动态的多步骤工作流程,底层计算节点需要前所未有的 I/O 带宽与电源效率。在 OCP APAC 展会上,神 雲 推出了两款由 第 6 代 AMD EPYCTM 服务器处理器 驱动的 ORv3 计算平台。这些平台采用 AMD \"Zen 6\" 架构、PCIe Gen 6 连接性与 CXL 3.1 支持,旨在处理大规模并行代理请求,同时优化数据中心占用空间与能源密度。 神雲通过两款全球首发的平台引领这一架构转型: C2810Z6 :专为高密度云端与 HPC 工作负载设计的 ORv3 多节点计算服务器。搭载 第 6 代 AMD EPYCTM 处理器 (SP7 插槽,最高支持 256 核心与 512 线程,默认 CPU 功耗最高支持至 600W),每节点支持高达 4TB 的 DDR5-8000 内存。此平台提供庞大的 PCIe Gen 6 I/O 吞吐量以及灵活的 NVMe 存储配置(12x E3.S-1T 或 6x U.2),例如 Micron 9650 NVMeTM Gen 6 SSD 。集成 48Vdc 电源母线与 DC-SCM 2.0 模块,可确保高密度计算集群具备极致性能、安全性与电源效率。 C2610Z6 :新一代 ORv3 计算平台,针对可扩展云端、企业 IT 与边缘应用进行优化。搭载 第 6 代 AMD EPYCTM 处理器 (SP8 插槽,最高支持 128 核心与 256 线程,400W cTDP),每节点支持高达 4TB 的 DDR5-8000 内存。配备 PCIe Gen 6 连接性与灵活的 NVMe 存储,例如 Micron 9650 NVMeTM Gen 6 SSD 。集成 48Vdc 电源母线与 DC-SCM 2.0 管理模块,为企业 AI 扩展提供高度高效且灵活的架构。 针对代理型工作负载的多元化机柜级基础设施 除了单一节点的原生性能外,为自主代理型 AI 提供动力还带来了复杂的架构需求。与静态的单一提示 AI 不同,多代理系统依赖持续的推理循环、动态工具调用、实时记忆检索与多代理调度(Multi-Agent Orchestration)。 为了消除这些执行管线中的散热、存储与集群治理瓶颈,神 雲 科技提供全方位的多元化机柜级基础设施: 高密度 AI 机柜(液冷与气冷) :专为维持代理型工作负载持续进行的多步骤推理循环而设计。通过极大化 GPU 密度——例如在单一 52U 液冷机柜中容纳 96 颗 AMD InstinctTM MI355X GPU ,神 雲 提供了实时代理执行所需的低延迟、无降频计算引擎。 OCP HPC 机柜(模块化与可扩展) :提供开放式 ORv3 标准、高能源效率的 48Vdc 电源分发与模块化灵活性,神雲的液冷与气冷 OCP 机柜允许数据中心在自主代理工作团队扩展时,无缝扩展执行节点。 代理记忆体与调度生态系统( DDN 、 Rafay 及 Canonical Ubuntu ) :自主代理的运作速度取决于其访问企业记忆体与任务委派的能力。通过与提供超高吞吐量向量/会话存储的 DDN,以及提供自动化多代理集群治理的 Rafay 合作,神 雲 交付了一个低延迟且无降频的\"存储到计算\"管线,使多代理工作流程能全速运行。 从芯片到应用:神雲的全栈 AI 工厂愿景 为了将这些多元组件整合至实际运作环境中,神雲将其整个机柜级产品组合与生态系层级进行对齐,将模块化芯片转化为可直接部署的企业级 AI 工厂: 芯片层( Chips Layer ): 神雲平台极大化了下一代芯片的原生运算能力,可灵活整合高密度加速器——包含 AMD InstinctTM MI355X GPU 、 AMD InstinctTM MI350X GPU 、 AMD InstinctTM MI350P PCIe® 加速卡—以及非常适合 AI、仿真和视觉运算的多工作负载企业级 GPU,例如 NVIDIA RTX PROTM 4500 Blackwell Server Edition GPU 与 NVIDIA RTX PROTM 6000 Blackwell Server Edition GPU 。 基础设施层( Infrastructure Layer ) :我们提供超高效的物理基础设施——以容纳 G4826Z5 服务器的 52U AI 液冷机柜,以及 TN85-B8261 和 G4520G6 (搭载双路 Intel® Xeon® 6 处理器,支持最高 8,192GB DDR5 内存)等多元计算节点为亮点,并由 MiOBMCTM / MiOPFTM 开放韧体与企业级 Linux 操作系统提供支持。 调度与数据管线层( Orchestration & Data Pipeline Layer ) :为了将实体服务器与上层智慧相链接,神 雲 与包括 DDN、Rafay 和 Kubernetes 在内的顶尖生态系统伙伴合作,结合神 雲 专有的 MiCoreViewTM POD 管理套件,在现代 AI 工厂中交付高吞吐量的数据传输与自动化集群管理。 模型层( Models Layer ) :我们针对吞吐量优化的计算与并行存储管线可满足多样化架构的需求——加速大规模大型语言模型(LLM)、视觉语言模型(VLM)、多模态大型语言模型(MMLLM)与混合专家模型(MoE),避免数据瓶颈或硬件闲置。 应用层( Applications Layer ) :从多步骤代理型 AI 与 RAG 工作流程,到生成式 AI 与大规模 HPC 模拟,神 雲 提供坚韧的机柜级基础,专为大规模执行真实世界的企业 AI 而建置。 关于神雲科技股份有限公司 神雲科技(MiTAC Computing Technology Corp.)为 神達 投控之子公司,凭借可追溯至 1990 年代的丰富产业经验,提供全面且高能源效率的服务器解决方案。神雲科技专精于 AI、HPC、云端与边缘计算,采用严谨的方法论,确保从准系统、系统、机柜到集群层级的卓越品质,全面实现绝佳性能与集成度。这种在各个层级对品质的坚持,使神 雲 科技在业界脱颖而出。 神雲科技拥有全球化的布局与端到端的完整能力——从研发、制造到全球技术支持,为超大规模数据中心、HPC 及 AI 应用提供敏捷且客制化的平台,确保最佳性能与可扩展性,以满足独特的业务需求。通过利用 AI 与液冷技术的最新突破,并将神 雲 品牌与 Intel DSG 及 TYAN 服务器产品进行整合,神 雲 科技凭借创新、高效且可靠的服务器技术以及软硬件集成解决方案拔得头筹,助力企业应对未来挑战。 神雲科技官方网站: https://www.mitaccomputing.com/",
+      "link": "https://www.prnasia.com/story/543764-1.shtml",
+      "pubDate": "2026-08-12 07:37:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "pdt",
+        "cpr",
+        "afi",
+        "pel",
+        "tds",
+        "hrd"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3a4175eeeae4ccde0b002296b34c955f",
+      "title": "浸大遭黑客勒索軟件入侵 校方:已聯絡警方 聘專業機構檢視系統",
+      "description": "浸會大學遭勒索軟件組織「TheGentlemen」入侵,涉及至少130名教職員及1,747名學生或註冊用戶的帳戶資料。校方今日(12日)向教職員發信指,早前已",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60379281/%E6%B5%B8%E5%A4%A7%E9%81%AD%E9%BB%91%E5%AE%A2%E5%8B%92%E7%B4%A2%E8%BB%9F%E4%BB%B6%E5%85%A5%E4%BE%B5-%E6%A0%A1%E6%96%B9-%E5%B7%B2%E8%81%AF%E7%B5%A1%E8%AD%A6%E6%96%B9-%E8%81%98%E5%B0%88%E6%A5%AD%E6%A9%9F%E6%A7%8B%E6%AA%A2%E8%A6%96%E7%B3%BB%E7%B5%B1",
+      "pubDate": "2026-08-12 07:36:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20210717/493168981545324544384570.jpeg/6eNO4tIFtR6XX2uqXQGbV2LnBOW8ySTsE9lTEBPZUxA",
+      "keywords": [
+        "即時新聞",
+        "hk01",
+        "國際新聞",
+        "香港01",
+        "香港新聞",
+        "新聞",
+        "頭條新聞",
+        "港聞"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ceac21586d3369e945ed0f79968f9c8b",
+      "title": "運動驛站政見遭諷 沈伯洋指民眾有需求",
+      "description": "中評社台北8月12日電/民進黨台北市長參選人沈伯洋11日拋HEART五大政見,其中包含於公園、捷運站等地設運動驛站提供寄物、換衣及沖洗等設施,引起各界討論。沈伯洋表示,運動驛站在日韓已行之有年,台北市大安森林公園旁亦設有跑站,代表確實民眾有相關需求,也是值得討論的議題,但若以恥笑看待未免有些可惜。 媒體關心,運動驛站政見遭擔憂經費、未來維護問題。沈伯洋解釋,日韓推行運動驛站已行之有年",
+      "link": "http://www.crntt.com/doc/7_0_160256238_1_0812153514.html",
+      "pubDate": "2026-08-12 07:35:13",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256240.jpg",
+      "keywords": [
+        "沈伯洋",
+        "李政軒",
+        "運動驛站",
+        "蔣萬安"
+      ],
+      "category": [
+        "politics",
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "68a33ba6956c1dc18c3ee788be5cc8ad",
+      "title": "溫子仁監製《兒兇:屠出暗界》香港8.20上映 全新預告公開五大惡靈角色海報",
+      "description": "全球熱賣超過 7.4 億美元、由恐怖大師溫子仁親手打造的經典系列《兒兇》(Insidious)),最新篇章《兒兇:屠出暗界》(Insidious: Out of the Further) 定於8月20日全港大銀幕上映!新片由積各卓斯(Jacob Chase)執導,《愛你致死不渝》(Obsession)及《嚇房》(Backrooms)金牌製作班底強勢加盟,今集將打破系列一直以來的遊戲規則。官方近日釋出最新預告片及五款極具壓迫感的角色海報,正式揭開「暗界」(The Further)惡靈逃離異空間、強行攻陷現實世界的恐怖浩劫!",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1046999/%E6%BA%AB%E5%AD%90%E4%BB%81%E7%9B%A3%E8%A3%BD-%E5%85%92%E5%85%87-%E5%B1%A0%E5%87%BA%E6%9A%97%E7%95%8C-%E9%A6%99%E6%B8%AF8.20%E4%B8%8A%E6%98%A0-%E5%85%A8%E6%96%B0%E9%A0%90%E5%91%8A%E5%85%AC%E9%96%8B%E4%BA%94%E5%A4%A7%E6%83%A1%E9%9D%88%E8%A7%92%E8%89%B2%E6%B5%B7%E5%A0%B1",
+      "pubDate": "2026-08-12 07:34:23",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046999/article/1046999/df/01KZTDT5S88KE28SFY2BG0ZYW3.jpg?updatedAt=1786520262",
+      "keywords": null,
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3b27c9f6a2c770b7119f2592d8181deb",
+      "title": "沈伯洋率台北隊造勢 吳沛憶喊配票全壘打",
+      "description": "中評社台北8月12日電/民進黨台北市長參選人沈伯洋12日出席民進黨台北市黨部聯合競選記者會,展現台北隊團結氣勢。沈伯洋表示,議員是城市最重要的神經網絡,也是城市治理的重要根基,這次力拚25+1全壘打,讓市政有願景、議會監督更有力,才能讓“台北順起來”。 沈伯洋昨公布HEART五大政見主軸,今再與台北市黨部主委吳沛憶、競辦總幹事吳思瑤及25+1(原住民)議員、議員參選人同台,各選區戰將",
+      "link": "http://www.crntt.com/doc/7_0_160256241_1_0812153311.html",
+      "pubDate": "2026-08-12 07:33:10",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256243.jpg",
+      "keywords": [
+        "沈伯洋",
+        "吳思瑤",
+        "吳沛憶",
+        "台北市長"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "01e20538d594a9981a560f8edfd8e277",
+      "title": "日落下的彩虹|邱士縉甘願被老千吳海昕騙25萬 觀眾讚微表情滿分",
+      "description": "ViuTV劇集《日落下的彩虹》中,邱士縉(Stanley)與吳海昕(Sofiee)繼《I SWIM》後再合作,最近兩集聚焦Stanley飾演的李子柏與Sofiee飾演的李家欣",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60379210/%E6%97%A5%E8%90%BD%E4%B8%8B%E7%9A%84%E5%BD%A9%E8%99%B9-%E9%82%B1%E5%A3%AB%E7%B8%89%E7%94%98%E9%A1%98%E8%A2%AB%E8%80%81%E5%8D%83%E5%90%B3%E6%B5%B7%E6%98%95%E9%A8%9925%E8%90%AC-%E8%A7%80%E7%9C%BE%E8%AE%9A%E5%BE%AE%E8%A1%A8%E6%83%85%E6%BB%BF%E5%88%86",
+      "pubDate": "2026-08-12 07:30:57",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164200208578383872592631.jpeg/JKmD6-qVblAEAaUCTc3Qwf5LgNgecwffJsnigybJ4oM",
+      "keywords": [
+        "即時娛樂",
+        "明星",
+        "娛樂新聞",
+        "hk01",
+        "香港01",
+        "韓星",
+        "香港新聞",
+        "新聞",
+        "藝人",
+        "即時娛樂新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e36f67da653bb42d8a9340803bda65a9",
+      "title": "孟耿如神隠一年多晒近照 宣布與黃子佼離婚後醉心藝術",
+      "description": "台灣藝人黃子佼於2023年捲入#MeToo風波,面對的指控不僅摧毀了他長久以來的主持人形象,更導致個人演藝事業陷入停擺。他與相差19歲的老婆孟耿如的",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60379088/%E5%AD%9F%E8%80%BF%E5%A6%82%E7%A5%9E%E9%9A%A0%E4%B8%80%E5%B9%B4%E5%A4%9A%E6%99%92%E8%BF%91%E7%85%A7-%E5%AE%A3%E5%B8%83%E8%88%87%E9%BB%83%E5%AD%90%E4%BD%BC%E9%9B%A2%E5%A9%9A%E5%BE%8C%E9%86%89%E5%BF%83%E8%97%9D%E8%A1%93",
+      "pubDate": "2026-08-12 07:30:54",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164045554745872384093618.jpeg/zw3s8WvsOgYhSsgKI-yLMhzC6O17Yv9YJhKfryYSn68",
+      "keywords": [
+        "即時娛樂",
+        "明星",
+        "娛樂新聞",
+        "hk01",
+        "香港01",
+        "韓星",
+        "香港新聞",
+        "新聞",
+        "藝人",
+        "即時娛樂新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0f56387dae7caa8238432913ac25de9f",
+      "title": "《鐵拳教育》女星賀營炫耀醫生世家翻車 寫信道歉認祖上親日爭議",
+      "description": "韓劇《鐵拳教育》中飾演主角「羅華振」未婚妻的女星賀營(或譯夏英)言論爆爭議,日前她登上KBS 2TV節目「屋塔房的問題兒童們」,分享家族「4代醫",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379245/%E9%90%B5%E6%8B%B3%E6%95%99%E8%82%B2-%E5%A5%B3%E6%98%9F%E8%B3%80%E7%87%9F%E7%82%AB%E8%80%80%E9%86%AB%E7%94%9F%E4%B8%96%E5%AE%B6%E7%BF%BB%E8%BB%8A-%E5%AF%AB%E4%BF%A1%E9%81%93%E6%AD%89%E8%AA%8D%E7%A5%96%E4%B8%8A%E8%A6%AA%E6%97%A5%E7%88%AD%E8%AD%B0",
+      "pubDate": "2026-08-12 07:30:38",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164227114761719808251097.jpeg/7Fq2AZuHFxjiLDj6O7iviNdIMJ7jmZ8ylFndWJRZ3Vg",
+      "keywords": [
+        "世界新聞",
+        "hk01",
+        "國際",
+        "香港01",
+        "國際新聞",
+        "新聞",
+        "環球"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c3b22a8ea954333f686d212c733cb27b",
+      "title": "《我的荒糖戀愛》賀營炫耀醫生世家翻車 寫信道歉認祖上親日爭議",
+      "description": "韓劇《鐵拳教育》中飾演主角「羅華振」未婚妻的女星賀營(或譯夏英)言論爆爭議,日前她登上KBS 2TV節目「屋塔房的問題兒童們」,分享家族「4代醫",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379245/%E6%88%91%E7%9A%84%E8%8D%92%E7%B3%96%E6%88%80%E6%84%9B-%E8%B3%80%E7%87%9F%E7%82%AB%E8%80%80%E9%86%AB%E7%94%9F%E4%B8%96%E5%AE%B6%E7%BF%BB%E8%BB%8A-%E5%AF%AB%E4%BF%A1%E9%81%93%E6%AD%89%E8%AA%8D%E7%A5%96%E4%B8%8A%E8%A6%AA%E6%97%A5%E7%88%AD%E8%AD%B0",
+      "pubDate": "2026-08-12 07:30:38",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164227114761719808251097.jpeg/7Fq2AZuHFxjiLDj6O7iviNdIMJ7jmZ8ylFndWJRZ3Vg",
+      "keywords": [
+        "hk01",
+        "環球",
+        "世界新聞",
+        "新聞",
+        "國際新聞",
+        "國際",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "23613252e2360d3d88c3ffccf3e09f3b",
+      "title": "與竹北搶版面 新竹市白營拚7席議員全壘打",
+      "description": "中評社新竹8月12日電(記者 盧誠輝)今年底地方選舉逐漸增溫,台灣民眾黨新竹市議員參選人12日舉行共同政見記者會,7席議員參選人全員到齊,力拚年底選戰全壘打,也希望展現氣勢,避免選戰焦點被竹北市長選舉搶走。 民眾黨年底在大新竹共推出20名參選人,其中新竹市議員共提名7人、新竹縣議員則提名5人,另外還有提名包括竹北市長和7席鄉鎮市民代表及里長,展現白營在大新竹選戰的企圖心。但民眾黨現在",
+      "link": "http://www.crntt.com/doc/7_0_160256204_1_0812152750.html",
+      "pubDate": "2026-08-12 07:27:50",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256206.jpg",
+      "keywords": [
+        "2026地方選舉",
+        "新竹市議員參選人",
+        "民眾黨"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3f9a9c709fc0f9e220ba91b5b733a793",
+      "title": "疑發生資料外洩事故 浸大指已按機制採取行動 聯絡警方及私隱公署",
+      "description": "浸會大學日前疑被黑客成功入侵,並列入暗網勒索名單,近2000個帳戶資料恐遭外洩。浸會大學表示,已即時按機制採取適當行動,並就事件與警方聯絡。 浸大資訊科技處向校內同學及教職員發信,指留意到有網頁聲稱大學的資訊科技系統被非法入侵,已即時按機制採取適當行動。校方早前已就事件聯絡警方並委聘專業機構全面檢視大學的資訊科技系統及個人資料的安全狀況,包括資訊鑑證與系統排查。 校方亦已聯絡個人資料私隱專員公署,",
+      "link": "https://www.stheadline.com/society/3603590/%E7%96%91%E7%99%BC%E7%94%9F%E8%B3%87%E6%96%99%E5%A4%96%E6%B4%A9%E4%BA%8B%E6%95%85-%E6%B5%B8%E5%A4%A7%E6%8C%87%E5%B7%B2%E6%8C%89%E6%A9%9F%E5%88%B6%E6%8E%A1%E5%8F%96%E8%A1%8C%E5%8B%95-%E8%81%AF%E7%B5%A1%E8%AD%A6%E6%96%B9%E5%8F%8A%E7%A7%81%E9%9A%B1%E5%85%AC%E7%BD%B2",
+      "pubDate": "2026-08-12 07:12:42",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/lr/sthl_square/07655cd764acc17c8a1c75aa7ee51deb/2026-08/MAZ01P01030525_2.jpg",
+      "keywords": [
+        "資料外洩",
+        "浸會大學",
+        "黑客"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "38e4527e062514a2601d85d91f652945",
+      "title": "南韓|公布7大未來科技項目 擬2030登月",
+      "description": "南韓政府周三(12日)公布,圍繞未來科技戰略發展的7大項目,希望尋求半導體及人工智能(AI)以外的經濟發展動力,並計劃在2030年實現登用。Google|南韓每月用戶首超Naver AI勢改變市場總統...",
+      "link": "https://inews.hket.com/article/4175199",
+      "pubDate": "2026-08-12 07:12:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4175199/120826_169_iet_fish_2030_v1_300.jpg",
+      "keywords": null,
+      "category": [
+        "world"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d0871ed9f77ce96d3d84f0fd466e628a",
+      "title": "「空靈女神」蒼井優清透肌4保養秘訣 「乳液先行」不用厚重底妝",
+      "description": "近日Netflix日劇《氣體人第一號》掀起話題,不僅登上日本排行榜冠軍,在台灣等地也成功打入熱門排行榜前十名。該劇集結小栗旬、蒼井優、竹野內豐、",
+      "link": "https://www.hk01.com/%E7%BE%8E%E5%AE%B9%E6%89%8B%E5%B8%B3/60378489/%E7%A9%BA%E9%9D%88%E5%A5%B3%E7%A5%9E-%E8%92%BC%E4%BA%95%E5%84%AA%E6%B8%85%E9%80%8F%E8%82%8C4%E4%BF%9D%E9%A4%8A%E7%A7%98%E8%A8%A3-%E4%B9%B3%E6%B6%B2%E5%85%88%E8%A1%8C-%E4%B8%8D%E7%94%A8%E5%8E%9A%E9%87%8D%E5%BA%95%E5%A6%9D",
+      "pubDate": "2026-08-12 07:03:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260810/1163521630199091200016425.png/XPy724Se8WQQJttBYVXiSomCkMwK303l5A8zROQPM0Q",
+      "keywords": [
+        "fashion",
+        "時裝",
+        "trend",
+        "cosmetic",
+        "潮流",
+        "化妝",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "35d5d8f51bfbe3110b551911eb2276e8",
+      "title": "拒教橙軍原因曝光 史洛:我仲想喺球會搵食",
+      "description": "【Now Sports】前利物浦領隊史洛親自證實已拒絕荷蘭國家隊的邀請,但澄清放棄帥位並非如傳聞般因薪酬或合約年期談不攏,而是因為現階段仍希望留在球會界發展。朗奴高文於世界盃後離開荷蘭國家隊,史洛(Arne Slot)曾被視為熱門接任人選。然而,面對外界的揣測,這名47歲教練透過荷蘭媒體Voetbal Inter...",
+      "link": "https://hk.sports.yahoo.com/news/%E6%8B%92%E6%95%99%E6%A9%99%E8%BB%8D%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B2%E6%B4%9B%EF%BC%9A%E6%88%91%E4%BB%B2%E6%83%B3%E5%96%BA%E7%90%83%E6%9C%83%E6%90%B5%E9%A3%9F-070055512.html",
+      "pubDate": "2026-08-12 07:00:55",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/9056f5f2841a3b5da96ac458929fd4dd5f3a64b0648e86f412d164c2ce74c05c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F0ee64ae2-b88b-4d8d-b34a-5ff68a83a96a",
+      "keywords": [
+        "荷蘭國家隊"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2aee6f019f1857ca7445ac6d483d7b02",
+      "title": "蘋果官方推租機服務 按月租iPhone值不值得?專家揭登陸中國時間",
+      "description": "7月末,蘋果在美國上線了一個「Apple Upgrades」的產品租賃服務,iPhone、Mac、iPad以及Apple Watch都能參加,用戶只需支付固定月費即可在租賃期間",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60377908/%E8%98%8B%E6%9E%9C%E5%AE%98%E6%96%B9%E6%8E%A8%E7%A7%9F%E6%A9%9F%E6%9C%8D%E5%8B%99-%E6%8C%89%E6%9C%88%E7%A7%9Fiphone%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97-%E5%B0%88%E5%AE%B6%E6%8F%AD%E7%99%BB%E9%99%B8%E4%B8%AD%E5%9C%8B%E6%99%82%E9%96%93",
+      "pubDate": "2026-08-12 07:00:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260807/1162451519254040576734062.jpeg/4gBu5rwMf9lIeDhAcI8-uUIg01CuWKGHlxfREZcX0RE",
+      "keywords": [
+        "ios",
+        "動漫",
+        "facebook",
+        "tesla",
+        "手遊",
+        "android",
+        "潮物",
+        "航拍",
+        "apple",
+        "香港01",
+        "科技",
+        "app"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8b395f8dcb8a79cb5227fde7d43b7bfd",
+      "title": "電腦節2026|電腦節即將開鑼 優惠產品及新品率先預覽!(多圖)",
+      "description": "全城暑假壓軸科技盛事「香港電腦通訊節2026」將於8月21至24日,一連四日假灣仔香港會議展覽中心舉行。今年展覽設有超過600個展位,逾200家本地及海外參展商。現場展示最新科技及優惠產品、人工智能應用等,想知今年優惠及新產品即睇以下介紹!",
+      "link": "https://www.am730.com.hk/%E7%A7%91%E6%8A%80/1046981/%E9%9B%BB%E8%85%A6%E7%AF%802026-%E9%9B%BB%E8%85%A6%E7%AF%80%E5%8D%B3%E5%B0%87%E9%96%8B%E9%91%BC-%E5%84%AA%E6%83%A0%E7%94%A2%E5%93%81%E5%8F%8A%E6%96%B0%E5%93%81%E7%8E%87%E5%85%88%E9%A0%90%E8%A6%BD-%E5%A4%9A%E5%9C%96-",
+      "pubDate": "2026-08-12 07:00:40",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1046981/article/1046981/df/01KZTB29DSDFKS0MX952ZJD6X2.jpg?updatedAt=1786518040",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5382281e40d4c650eea224b293b4ef8a",
+      "title": "茄子怎麼煮不變黑?專家教下鍋前2招美味抗氧化 附涼拌茄子食譜",
+      "description": "每年5月到11月是茄子的盛產季節,這種價格實惠又富含營養的紫色蔬菜,受到許多人歡迎。茄子富含維他命A、C、B群、膳食纖維及花青素等,不僅熱量低",
+      "link": "https://www.hk01.com/%E6%95%99%E7%85%AE/60376543/%E8%8C%84%E5%AD%90%E6%80%8E%E9%BA%BC%E7%85%AE%E4%B8%8D%E8%AE%8A%E9%BB%91-%E5%B0%88%E5%AE%B6%E6%95%99%E4%B8%8B%E9%8D%8B%E5%89%8D2%E6%8B%9B%E7%BE%8E%E5%91%B3%E6%8A%97%E6%B0%A7%E5%8C%96-%E9%99%84%E6%B6%BC%E6%8B%8C%E8%8C%84%E5%AD%90%E9%A3%9F%E8%AD%9C",
+      "pubDate": "2026-08-12 07:00:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260123/1091415112427769856845237.jpeg/cmjtMgBylaYcHvw7HJQ6AK2LwSFQpzRzRGpTZ0RqU2c",
+      "keywords": [
+        "快速檢測",
+        "消費者委員會",
+        "天文台",
+        "教育局",
+        "科興",
+        "吃喝玩樂",
+        "停課",
+        "hk01",
+        "飲食",
+        "食譜",
+        "香港新聞",
+        "疫苗安全",
+        "停學",
+        "兒童疫苗",
+        "復必泰",
+        "香港01",
+        "新聞"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5f168259207d366fc6c290ae54fc13bd",
+      "title": "茄子怎煮不變黑?內行網友教煮前多1步超有效!台農業部2招抗氧化",
+      "description": "每年5月到11月是茄子的盛產季節,這種價格實惠又富含營養的紫色蔬菜,受到許多人歡迎。茄子富含維他命A、C、B群、膳食纖維及花青素等,不僅熱量低",
+      "link": "https://www.hk01.com/%E6%95%99%E7%85%AE/60376543/%E8%8C%84%E5%AD%90%E6%80%8E%E7%85%AE%E4%B8%8D%E8%AE%8A%E9%BB%91-%E5%85%A7%E8%A1%8C%E7%B6%B2%E5%8F%8B%E6%95%99%E7%85%AE%E5%89%8D%E5%A4%9A1%E6%AD%A5%E8%B6%85%E6%9C%89%E6%95%88-%E5%8F%B0%E8%BE%B2%E6%A5%AD%E9%83%A82%E6%8B%9B%E6%8A%97%E6%B0%A7%E5%8C%96",
+      "pubDate": "2026-08-12 07:00:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164250990199705600256437.jpeg/F4Qpv0hMEAgkaZ-W7jCkI4zjwcBd5UUmEFgkYhBYJGI",
+      "keywords": [
+        "停學",
+        "快速檢測",
+        "hk01",
+        "天文台",
+        "吃喝玩樂",
+        "科興",
+        "食譜",
+        "飲食",
+        "新聞",
+        "兒童疫苗",
+        "疫苗安全",
+        "香港新聞",
+        "消費者委員會",
+        "復必泰",
+        "停課",
+        "教育局",
+        "香港01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fe098d693afb301bcf4e194e00082a2b",
+      "title": "陳凱琳坐電車佔位爭議 孫慧雪緊張流汗回應:我唔鍾意搭車老公接",
+      "description": "娛樂圈育兒話題層出不出,日前陳凱琳(Grace)帶兒子到戲院睇戲時,傳出疑似騷擾到鄰座觀眾而遭人「淋忌廉」;其後又被網民公審搭電車時將隨身物品",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60379049/%E9%99%B3%E5%87%B1%E7%90%B3%E5%9D%90%E9%9B%BB%E8%BB%8A%E4%BD%94%E4%BD%8D%E7%88%AD%E8%AD%B0-%E5%AD%AB%E6%85%A7%E9%9B%AA%E7%B7%8A%E5%BC%B5%E6%B5%81%E6%B1%97%E5%9B%9E%E6%87%89-%E6%88%91%E5%94%94%E9%8D%BE%E6%84%8F%E6%90%AD%E8%BB%8A%E8%80%81%E5%85%AC%E6%8E%A5",
+      "pubDate": "2026-08-12 07:00:01",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260811/1163963333108305920673204.jpeg/kSY9xKJr2WdFr6L6Ul42gqPz5dZKVyJi9XK-us9yvro",
+      "keywords": [
+        "明星",
+        "即時娛樂",
+        "即時娛樂新聞",
+        "hk01",
+        "藝人",
+        "韓星",
+        "香港新聞",
+        "香港01",
+        "新聞",
+        "娛樂新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "26fdaf3a302a70b0e3ccd185877cbaba",
       "title": "一樽162年歷史健力士黑啤於海底尋獲 專家:或者仍可飲用(有片)",
       "description": "綜合報道,水底攝影師Stefan Panis去年在水底發現啤酒時,當時並不知是甚麼,他只拍了一些相片,帶走了其中一支玻璃樽,直至返回水面沖洗一下,才看見健力士的品牌,上面還刻著「1864年」的生產年份,追溯之下,原來這瓶啤酒於 1864年11月與「明多拉號」因撞船而一起沉沒海底。Stefan相信海底至少還有一箱珍貴的健力士黑啤,甚至更多,他計劃重返沉船地點打撈更多瓶子。",
@@ -79,6 +881,39 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "71b4e236258bb90d22b0bfa19fa544d5",
+      "title": "韓國軍方:朝鮮向東部海域發射彈道導彈",
+      "description": "中評社北京8月12日電/韓國軍方消息稱,朝鮮發射了一枚彈道導彈。 韓聯社星期三(8月12日)清晨引述韓國聯合參謀本部消息說,朝鮮從元山一帶朝東部海域發射彈道導彈。 路透社報導,此次發射正值韓國和美國計劃於下周啟動大規模聯合軍事演習。定於8月17日至27日舉行的美韓大規模聯合軍演,旨在應對朝鮮不斷升級的核武能力。 朝鮮8月6日向日本海發射了一枚短程彈道導彈。",
+      "link": "http://www.crntt.com/doc/7_0_107222692_1_0812145917.html",
+      "pubDate": "2026-08-12 06:59:17",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/107222735.jpg",
+      "keywords": [
+        "朝鮮"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "e1bba3655f7bcb2c3c016c92f4d66573",
+      "title": "西南九龍「叡璟I」首張價單涉102伙 折實入場529.8萬",
+      "description": "<匯港通訊> 華潤置地(01109)發展的西南九龍南昌項目「叡璟I」今日公布首張價單,涉及102伙,包括18伙一房,66伙兩房,18伙三房。實用面積介乎304-657平方呎。在扣除最高16%的折扣後(不包華潤員工及澐璟業主優惠),折實售價介乎529.8-1237.1萬,折實呎價介乎16538-19291元,折實平...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%A5%BF%E5%8D%97%E4%B9%9D%E9%BE%8D-%E5%8F%A1%E7%92%9Fi-%E9%A6%96%E5%BC%B5%E5%83%B9%E5%96%AE%E6%B6%89102%E4%BC%99-%E6%8A%98%E5%AF%A6%E5%85%A5%E5%A0%B4529-8%E8%90%AC-065908746.html",
+      "pubDate": "2026-08-12 06:59:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "cc9055c3ba0d85fe7f848d82e61054ee",
@@ -45832,6 +46667,6 @@
       "pinned": true
     }
   ],
-  "total": 2388,
-  "last_updated": "2026-08-13T03:04:06.736674"
+  "total": 2429,
+  "last_updated": "2026-08-13T04:05:01.923374"
 }
