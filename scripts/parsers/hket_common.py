@@ -68,6 +68,12 @@ def parse_hket_article(text, bank_name=None):
     # 追蹤當前區塊（新客戶/新資金/現有資金）
     current_section = 'general'
     current_currency = 'hkd'
+
+    # 表格模式狀態：期數行同利率行分開（例：「3個月\n2.7厘\n6個月\n3.0厘」）
+    table_mode = False
+    pending_period = None  # 等待配對利率嘅期數
+    pending_section = None  # 該期數所屬嘅 section
+    pending_currency = None
     
     for line in lines:
         line = line.strip()
@@ -91,46 +97,41 @@ def parse_hket_article(text, bank_name=None):
         
         # 提取利率
         rate_data = extract_rate_from_line(line)
+
+        # ---- 表格模式：期數同利率分開行 ----
+        # 純期數行（如「3個月」「6個月」，唔帶利率）——記低等候配對
+        period_only = _extract_period_only(line) if not rate_data else None
+        if period_only and not rate_data:
+            pending_period = period_only
+            pending_section = current_section
+            pending_currency = current_currency
+            table_mode = True
+            continue
+        
+        # 純利率行（如「2.7厘」「3.0厘」，唔帶期數）——同之前嘅期數配對
+        if rate_data is None and pending_period and not _extract_period_only(line):
+            rate_only = _extract_rate_only(line)
+            if rate_only is not None:
+                period_key = pending_period
+                period_section = pending_section or current_section
+                period_currency = pending_currency or current_currency
+                _store_rate(rates, period_currency, period_key, rate_only, 0, period_section)
+                pending_period = None  # 已配對
+                pending_section = None
+                pending_currency = None
+                continue
+            # 遇到其他非利率內容（如「不設最低存款額」），保留 pending 但唔清空
+
         if rate_data:
             period = rate_data['period']
             rate = rate_data['rate']
             min_deposit = rate_data.get('min_deposit', 0)
             
             # 特殊處理：過濾明顯錯誤嘅利率
-            # 1星期嘅利率唔應該超過 10%（除非係快閃活動或兌換資金推廣）
-            # ⚠️ 注意：rate 已經係百分比格式（e.g. 6.88 = 6.88%）
             if period == '1w' and rate > 10.0 and current_section not in ('flash_promotion', 'new_funds'):
                 continue
             
-            if current_currency not in rates:
-                rates[current_currency] = {}
-            
-            if period not in rates[current_currency]:
-                rates[current_currency][period] = {}
-            
-            # 根據區塊類型決定 note 和 source
-            if current_section == 'new_funds':
-                note = '新資金定期存款優惠'
-                source = 'hket'
-            elif current_section == 'existing_funds':
-                note = '定期存款牌價利率'
-                source = 'hket'
-            elif current_section == 'new_customer':
-                note = '新客戶定期存款優惠'
-                source = 'hket'
-            elif current_section == 'flash_promotion':
-                note = '快閃定期存款優惠'
-                source = 'hket'
-            else:
-                note = '定期存款'
-                source = 'hket'
-            
-            rates[current_currency][period][current_section] = {
-                'rate': rate,
-                'min_deposit': min_deposit,
-                'note': note,
-                'source': source
-            }
+            _store_rate(rates, current_currency, period, rate, min_deposit, current_section)
     
     # 清理空的幣種
     for currency in ['hkd', 'usd', 'cny']:
@@ -138,6 +139,54 @@ def parse_hket_article(text, bank_name=None):
             del rates[currency]
     
     return rates if rates.get('hkd') or rates.get('usd') else None
+
+
+def _store_rate(rates, currency, period, rate, min_deposit, section):
+    """將一筆利率存入 rates 結構，根據 section 分類。"""
+    if currency not in rates:
+        rates[currency] = {}
+    if period not in rates[currency]:
+        rates[currency][period] = {}
+    
+    # 根據區塊類型決定 note 和 source
+    if section == 'new_funds':
+        note = '新資金定期存款優惠'
+    elif section == 'existing_funds':
+        note = '定期存款牌價利率'
+    elif section == 'new_customer':
+        note = '新客戶定期存款優惠'
+    elif section == 'flash_promotion':
+        note = '快閃定期存款優惠'
+    else:
+        note = '定期存款'
+    
+    source = 'hket'
+    rates[currency][period][section] = {
+        'rate': rate,
+        'min_deposit': min_deposit,
+        'note': note,
+        'source': source
+    }
+
+
+def _extract_period_only(line):
+    """只提取期數（唔帶利率），如「3個月」「6個月」「1星期」。返回 period key；唔係期數行就 None。"""
+    m = re.match(r'^(\d+)\s*(個月|月|星期|周)$', line)
+    if not m:
+        return None
+    num, unit = m.group(1), m.group(2)
+    return f"{num}w" if unit in ('星期', '周') else f"{num}m"
+
+
+def _extract_rate_only(line):
+    """只提取利率（唔帶期數），如「2.7厘」「3.0厘」「2.80%」。返回 float；唔係利率行就 None。"""
+    m_li = re.search(r'(\d+\.?\d*)厘', line)
+    m_pct = re.search(r'(\d+\.?\d*)%', line)
+    if m_li:
+        return float(m_li.group(1))
+    elif m_pct:
+        return float(m_pct.group(1))
+    return None
 
 
 ARTICLE_END_MARKERS = ['資料來源', '更多資訊請看', '今日焦點', '最新專欄文章', '訂閱《香港經濟日報》']
@@ -180,9 +229,10 @@ def detect_section(line):
         return 'new_funds'
     elif '新資金' in line and '現有' not in line:
         return 'new_funds'
-    elif '現有資金' in line or '不論新舊資金' in line:
+    elif '現有資金' in line:
         return 'existing_funds'
-    elif '零元起存' in line or '最低存款' in line:
+    elif '零元起存' in line or '最低存款' in line or '不論新舊資金' in line:
+        # 「零元起存」「不論新舊資金」= 不限資金來源嘅牌價（general）
         return 'general'
     
     return None

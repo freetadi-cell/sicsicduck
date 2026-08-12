@@ -1371,6 +1371,12 @@
             "min_deposit": 20000,
             "note": "新客戶定期存款優惠",
             "source": "hket"
+          },
+          "general": {
+            "rate": 1.6,
+            "min_deposit": 0,
+            "note": "定期存款",
+            "source": "hket"
           }
         },
         "1w": {
@@ -1378,6 +1384,12 @@
             "rate": 6.88,
             "min_deposit": 10000,
             "note": "新客戶定期存款優惠",
+            "source": "hket"
+          },
+          "general": {
+            "rate": 1.0,
+            "min_deposit": 0,
+            "note": "定期存款",
             "source": "hket"
           }
         },
@@ -1394,6 +1406,28 @@
             "rate": 0.2,
             "min_deposit": 200000,
             "note": "新客戶定期存款優惠",
+            "source": "hket"
+          },
+          "general": {
+            "rate": 2.7,
+            "min_deposit": 0,
+            "note": "定期存款",
+            "source": "hket"
+          }
+        },
+        "6m": {
+          "general": {
+            "rate": 3.0,
+            "min_deposit": 0,
+            "note": "定期存款",
+            "source": "hket"
+          }
+        },
+        "12m": {
+          "general": {
+            "rate": 3.0,
+            "min_deposit": 0,
+            "note": "定期存款",
             "source": "hket"
           }
         }
