@@ -1,0 +1,10 @@
+{
+  "id": "9fe0fd61f29ba8ea8762a29893863173",
+  "title": "【iOS 27 新功能】iPhone 拍片影相都可以防偽!Apple 開發全新相機認證機制杜絕 AI 假圖",
+  "source_name": "Pcm",
+  "link": "https://www.pcmarket.com.hk/ios27-apple-reference-image-iphone-photo-authentication/",
+  "rewritten_title": "iOS 27 新功能：Apple 開發相機認證機制，以硬件數據杜絕 AI 假圖",
+  "rewritten": "Apple 在 iOS 27 Beta 5 程式碼中，被發現正開發名為「Apple Reference Image」的相機防偽認證功能，旨在證明照片確實由 iPhone 鏡頭硬件拍攝。用戶需手動在設定中開啟功能，並使用全新的「Reference」拍攝模式，照片的來源數據會傳送至 Apple 的 Private Cloud Compute 進行驗證，成功後會獲發專屬 ID。Apple 強調驗證過程不…",
+  "status": "done",
+  "fetched_at": "2026-08-12T14:01:10"
+}
