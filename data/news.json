@@ -1,72 +1,16 @@
 {
   "articles": [
     {
-      "id": "b7258b4dd96053099a76d8b223b74213",
-      "title": "BTIG分析師Krinsky警告:股市風險回報比「相當糟糕」",
-      "description": "Investing.com — BTIG週二在一份研究報告中指出,在週三消費者物價指數(CPI)報告公布前夕,美國股市面臨的下行風險遠大於債券市場。儘管過去一個月國債收益率持續上升,美股卻逆勢走高,令兩者之間的背離愈發明顯。",
-      "link": "https://hk.finance.yahoo.com/news/btig%E5%88%86%E6%9E%90%E5%B8%ABkrinsky%E8%AD%A6%E5%91%8A-%E8%82%A1%E5%B8%82%E9%A2%A8%E9%9A%AA%E5%9B%9E%E5%A0%B1%E6%AF%94-%E7%9B%B8%E7%95%B6%E7%B3%9F%E7%B3%95-193921324.html",
-      "pubDate": "2026-08-11 19:39:21",
+      "id": "65a97c319966f49ff10bbfa3841f7398",
+      "title": "Eurizon料美日撐場能推高日圓至125 勸說空頭勿負隅頑抗",
+      "description": "Commodity Futures Trading Commission 【彭博】-- Eurizon SLJ Capital執行長Stephen Jen認為,美國和日本聯手撐日圓之舉是「一個分水嶺時刻」,將阻止它兌美元跌回四十年低點。 「美元-日圓很可能已經見頂了,因為美國和日本都不會放棄,也不會向市場讓步,」...",
+      "link": "https://hk.finance.yahoo.com/news/eurizon%E6%96%99%E7%BE%8E%E6%97%A5%E6%92%90%E5%A0%B4%E8%83%BD%E6%8E%A8%E9%AB%98%E6%97%A5%E5%9C%93%E8%87%B3125-%E5%8B%B8%E8%AA%AA%E7%A9%BA%E9%A0%AD%E5%8B%BF%E8%B2%A0%E9%9A%85%E9%A0%91%E6%8A%97-205114659.html",
+      "pubDate": "2026-08-11 20:51:14",
       "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXNPEAB20CL_M.jpg",
+      "image_url": "https://media.zenfs.com/en/bloomberg_chinese_traditional_757/d06ba10000884496c3af349d1962423b.jpg",
       "keywords": [
-        "消費者物價指數",
-        "btig",
-        "美國股市"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "138f9c9e1c284577c848415660c7a1c6",
-      "title": "8月夜期收市報25533點 跌95點",
-      "description": "<匯港通訊> 8月夜期期指收市報25533點,跌95點,低水120點,成交13417張;9月夜期期指報25463點,跌72點,低水190點,成交111張。",
-      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125533%E9%BB%9E-%E8%B7%8C95%E9%BB%9E-190500173.html",
-      "pubDate": "2026-08-11 19:05:00",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "<匯港通訊>"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "879648f831543d6f1caa005a39624461",
-      "title": "美國7月整體消費物價料升0.1% 核心物價升0.2%",
-      "description": "據彭博編製的調查,美國7月消費物價指數(CPI)預期按月升0.1%,6月則跌0.4%。 按年計算,CPI升幅預料由3.5%放緩至3.4%。 CPI數據將於周三美東時間上午8時30分公布。 Scotiabank表示,7月汽油價格預料下跌。Jefferies研究報告指出,食品價格繼上月升0.2%後,預料將輕微推高CP...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B7%E6%9C%88%E6%95%B4%E9%AB%94%E6%B6%88%E8%B2%BB%E7%89%A9%E5%83%B9%E6%96%99%E5%8D%870-1-%E6%A0%B8%E5%BF%83%E7%89%A9%E5%83%B9%E5%8D%870-2-183950139.html",
-      "pubDate": "2026-08-11 18:39:50",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "scotiabank",
-        "cpi"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "a3c750c22a63598775066d8d40a990d4",
-      "title": "油價上升 市場對霍爾木茲海峽重開希望降溫",
-      "description": "油價周二上升,市場對全球最重要原油運輸咽喉霍爾木茲海峽重開的不確定性增加。 紐約期油升1.1%,報每桶83.08美元;布蘭特期油升1.3%,報88.86美元。 據路透周二引述伊朗最高國家安全委員會秘書Mohsen Rezaei表示,霍爾木茲海峽將維持關閉,直至美國改變行為並接受伊朗結束衝突的條件,包括解凍伊朗海外...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-%E5%B8%82%E5%A0%B4%E5%B0%8D%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E5%B8%8C%E6%9C%9B%E9%99%8D%E6%BA%AB-183300521.html",
-      "pubDate": "2026-08-11 18:33:00",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "國家安全委員會",
-        "霍爾木茲海峽",
-        "伊朗",
-        "布蘭特期油"
+        "-- eurizon slj capital執行長",
+        "commodity futures trading commission"
       ],
       "category": [
         "business"
@@ -86,6 +30,468 @@
       "category": [
         "politics",
         "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "a1e7196161dd4899cd5cfab6c1577c29",
+      "title": "日圓再跌穿「5算」 美日干預效應漸消退 市場關注今日會否「突襲」",
+      "description": "日圓重現跌勢,每百兌港元最新報4.92水平,再次跌穿「5算」。據彭博報道,日圓早前因美日聯手入市干預而獲得的強勁反彈,目前已回吐超過一半,其中日圓兌美元匯價回落至159.29,標誌市場對日圓的悲觀情緒再度浮現,並密切注視當局會否再次出手托市。值得留意的是,市場猜測當局或會趁今日(11日)日本假期交投淡靜之際再次突襲。 重新聚焦美日龐大息差等因素 據彭博分析指出,日圓7月下旬一度跌至164兌一美元的",
+      "link": "https://www.stheadline.com/macroeconomics/3603158/%E6%97%A5%E5%9C%93%E5%86%8D%E8%B7%8C%E7%A9%BF5%E7%AE%97-%E7%BE%8E%E6%97%A5%E5%B9%B2%E9%A0%90%E6%95%88%E6%87%89%E6%BC%B8%E6%B6%88%E9%80%80-%E5%B8%82%E5%A0%B4%E9%97%9C%E6%B3%A8%E4%BB%8A%E6%97%A5%E6%9C%83%E5%90%A6%E7%AA%81%E8%A5%B2",
+      "pubDate": "2026-08-11 02:58:33",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fc73c9387506aca6ac90478d9fc75861/2026-08/KF_ALEX__4.png",
+      "keywords": [
+        "日圓",
+        "加息"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "9c03d67dcf2a8a39bbb9826949cb7546",
+      "title": "馬時亨指內地追稅難衝擊港樓及金融 北水繼續南下 「分散風險無地方好過香港」|跨境監管",
+      "description": "貿發局周二(11日)將於馬來西亞吉隆坡舉行「成就機遇.首選香港」推廣活動,主席馬時亨今日(10日)在當地會見香港傳媒。他回應近期限制資本外流,以及「跨境追稅」報道時表示,即使部分內地富裕人士需要補繳稅款,相信對香港的資產管理業務及樓市不會構成太大衝擊,又預告貿發局下月或上調本港全年出口增長數字。 富裕人士不介意補交稅 內地近期多次傳出限制資本外流的消息,馬時亨認為,內地有14億人口,即使少部分人來",
+      "link": "https://www.stheadline.com/realtime-finance/3602995/%E9%A6%AC%E6%99%82%E4%BA%A8%E6%8C%87%E5%85%A7%E5%9C%B0%E8%BF%BD%E7%A8%85%E9%9B%A3%E8%A1%9D%E6%93%8A%E6%B8%AF%E6%A8%93%E5%8F%8A%E9%87%91%E8%9E%8D-%E5%8C%97%E6%B0%B4%E7%B9%BC%E7%BA%8C%E5%8D%97%E4%B8%8B-%E5%88%86%E6%95%A3%E9%A2%A8%E9%9A%AA%E7%84%A1%E5%9C%B0%E6%96%B9%E5%A5%BD%E9%81%8E%E9%A6%99%E6%B8%AF%E8%B7%A8%E5%A2%83%E7%9B%A3%E7%AE%A1",
+      "pubDate": "2026-08-10 12:45:40",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/c633f6f469e86a7f052b286e3ffa5a8e/2026-08/260810_hktdcma.png",
+      "keywords": [
+        "跨境監管",
+        "保險收益",
+        "跨境追稅",
+        "馬時亨",
+        "成就機遇",
+        "張淑芬",
+        "首選香港",
+        "貿發局"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "f1e4ee49a96d01fb0d50e3f555cec321",
+      "title": "美聯社精選每日圖片 捕捉新聞頭條與動人時刻",
+      "description": "這輯圖片集展示美聯社攝影編輯精選的今日最佳照片,當中包括頭版新聞,以及一些可能被忽略的動人時刻。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16550501-%E7%BE%8E%E8%81%AF%E7%A4%BE%E7%B2%BE%E9%81%B8%E6%AF%8F%E6%97%A5%E5%9C%96%E7%89%87-%E6%8D%95%E6%8D%89%E6%96%B0%E8%81%9E%E9%A0%AD%E6%A2%9D%E8%88%87%E5%8B%95%E4%BA%BA%E6%99%82%E5%88%BB",
+      "pubDate": "2026-08-11 20:52:59",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/9de247427ae94c0d95be86130437de97_APTOPIX_China_Daily_Life__5262_FB.jpg",
+      "keywords": [
+        "大視野",
+        "攝影",
+        "新聞",
+        "圖片",
+        "國際",
+        "美聯社"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7847d711c57736622218c1105e64ef86",
+      "title": "CoreWeave次季業績勝預期 受惠雲端運算需求",
+      "description": "CoreWeave(CRWV.US)公布,由於雲端運算需求強勁,第二季收入按年增長逾倍,業績優於市場預期。 截至6月30日止季度,CoreWeave每股淨虧損由去年同期的0.60美元擴大至1.14美元,優於FactSet綜合市場預期的每股虧損1.46美元。收入由12.1億美元升至25.8億美元,高於分析師平均預期...",
+      "link": "https://hk.finance.yahoo.com/news/coreweave%E6%AC%A1%E5%AD%A3%E6%A5%AD%E7%B8%BE%E5%8B%9D%E9%A0%90%E6%9C%9F-%E5%8F%97%E6%83%A0%E9%9B%B2%E7%AB%AF%E9%81%8B%E7%AE%97%E9%9C%80%E6%B1%82-204813084.html",
+      "pubDate": "2026-08-11 20:48:13",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "雲端"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4fdc4a34bd1d1c2f939e7292f350c28a",
+      "title": "蓮茜·克蘭西殺害三子女案開審 庭上聚焦案發前處方藥物",
+      "description": "蓮茜·克蘭西在2023年殺害三名年幼子女前不足兩個月,曾向其中一名護理人員發訊息,表示自己「出現從未有過的侵入性思想」、「感到完全絕望」,並擔心對某些藥物上癮。 南岸健康圍產期行為健康計劃的精神科護士執業師麗貝卡·喬洛塔,周二在審訊中作證指,她於2022年11月下旬至12月期間,透過病人平台定期與克蘭西互通訊息。她們大部分對話圍繞克蘭西報告的睡眠困難、抑鬱症狀,以及她尋找合適藥物組合以治療症狀的情況。她們亦曾進行面對面及視像會診。 克蘭西曾多次向喬洛塔表示,她未有服用處方藥物的完整劑量,又或希望根據她認為無法忍受的副作用,減少劑量或更改處方。克蘭西亦擔心對阿替凡等藥物上癮,但喬洛塔表示她並無上癮。 克蘭西在12月的一則訊息中表示:「我真的不喜歡服用瑞美隆後的感覺,我知道我無法堅持服用。」她要求從這種亦用於治療焦慮症及失眠的抗抑鬱藥,轉回之前的處方組合。她又指:「我開始出現從未有過的侵入性思想。」 喬洛塔嘗試向克蘭西保證,患有產後抑鬱症及焦慮症的人出現侵入性思想是常見情況,並鼓勵她給予瑞美隆更多時間發揮藥效,因為她才服用數天。 喬洛塔表示:「這可能是產後焦慮症。我想讓她熟悉這些症狀,以便她能將其記錄下來並向我報告。」 喬洛塔是蓮茜及柏德烈·克蘭西就其護理服務提出訴訟的數名醫療服務提供者之一。她曾多次為克蘭西提出替代治療方案,包括建議行為治療、支援小組及冥想。但她承認,克蘭西是否選擇遵循這些方案,取決於她本人。 喬洛塔說:「我只是根據我的教育經驗、培訓以及我所看到的症狀提出建議。病人擁有自主權。」 喬洛塔表示,在視像及面對面會診期間,克蘭西從未提及有傷害自己或子女的計劃。她亦從未表現出精神病或躁狂症的跡象。 但喬洛塔承認,克蘭西確實報告過有自殺念頭。她亦曾暗示克蘭西可能患有潛在的躁鬱症——因為她曾多日失眠。然而,柏德烈·克蘭西否認了這一說法。 12月中旬,喬洛塔與這對夫婦通話,獲告知克蘭西經歷了她「最糟糕的一天」,並「持續出現侵入性自殺念頭」。喬洛塔建議她考慮更高層次的護理,例如麻省總醫院提供的服務。她最終選擇了羅德島州的一個計劃,但很快便出院——並獲建議服用其中一種抗精神病藥物。 正準備度假的喬洛塔表示,她對克蘭西已出院感到擔憂,並在訊息中告知她,即使不改變藥物,「亦可從小組及額外支援中獲益」。 她亦擔心克蘭西希望停用抗精神病藥物思樂康。克蘭西獲告知這可能導致「情緒惡化、睡眠惡化」,但她堅持停藥。喬洛塔同意逐步減少劑量。 36歲的克蘭西對殺害卡倫、道森及科拉·克蘭西的謀殺指控,表示不認罪。三名子女年齡介乎8個月大至5歲。他們在麻省沿海城鎮達克斯伯里家中地庫被發現,當時他們的母親則躺在院子裏。她從二樓窗戶跳下,目前腰部以下癱瘓。 檢察官辯稱,這名前產科護士是蓄意殺人,她設法讓丈夫離開家,然後於2023年1月24日用運動帶勒死子女。檢察官莎南·白金漢敦促陪審員,不要將這次審訊視為「一場關於女性精神健康以及醫療系統如何對待女性的公開辯論」。 克蘭西的律師不否認她殺害了子女。但他們表示,她不應承擔刑事責任,因為她患有精神病,相信自己聽到聲音命令她奪走自己及子女的性命。 辯方表示,她當時正受躁鬱症及產後精神病困擾,這是一種罕見的產後疾病,可改變女性的現實感。一名法醫精神科醫生在案發後診斷克蘭西患有這些疾病。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16550490-%E8%93%AE%E8%8C%9C%C2%B7%E5%85%8B%E8%98%AD%E8%A5%BF%E6%AE%BA%E5%AE%B3%E4%B8%89%E5%AD%90%E5%A5%B3%E6%A1%88%E9%96%8B%E5%AF%A9-%E5%BA%AD%E4%B8%8A%E8%81%9A%E7%84%A6%E6%A1%88%E7%99%BC%E5%89%8D%E8%99%95",
+      "pubDate": "2026-08-11 20:46:25",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1be4c6455e94da7931309171f1042876_Lindsay_Clancy_Trial_76154_FB.jpg",
+      "keywords": [
+        "產後抑鬱",
+        "藥物副作用",
+        "大視野",
+        "精神健康",
+        "殺害子女",
+        "蓮茜·克蘭西"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0f3957a40f1f2ad488ac31f48804a6d9",
+      "title": "鄉村水泥路變天然畫布 河南男巧用透視技巧畫出立體懸浮字驚艷網民",
+      "description": "河南一名男子不用動畫特效,僅用簡單顏料和巧用透視技巧畫出立體懸浮字驚艷網民。 近日,河南一名網絡創作者在鄉郊田野旁的水泥道路上,僅憑簡單工具繪製出令人驚嘆的「懸浮字體」。他利用透視及視覺錯覺,營造出猶如立體文字凌空漂浮的3D效果,令不少網民看後紛紛驚嘆:「這些字真的浮起來了!」 影片可見,創作者先以刷子蘸上深色顏料在地面勾畫文字輪廓,再以白色粉筆水修飾細節。透過深淺色彩的配搭、陰影位置及特殊排列方式,原本平面的文字瞬間呈現立體層次,彷彿懸浮在道路上方。不少網民起初以為影片加入了動畫或後期特效,仔細觀看後才發現,作品完全依靠創作者對光影及透視技巧的掌握完成,其原理是在文字底部加入深色陰影,再以白色線條勾勒立體結構,藉著視覺誤差營造「懸浮」效果。 由於創作地點大多位於鄉村水泥道路,所使用的材料主要為白色粉筆水或水溶性顏料,因此作品並非永久保存,經雨水沖刷或人工清潔後便可消除,也令這類街頭藝術增添一份短暫而驚喜的特色。 影片曝光後,網民紛紛留言讚賞:「這字跡太漂亮了」、「真正的大師藏在人群中」、「根本是肉眼3D」、「感覺文字真的飄起來」、「這是被務農耽誤的書法家吧!」",
+      "link": "https://www.bastillepost.com/hongkong/article/16510065-%E9%84%89%E6%9D%91%E6%B0%B4%E6%B3%A5%E8%B7%AF%E8%AE%8A%E5%A4%A9%E7%84%B6%E7%95%AB%E5%B8%83-%E6%B2%B3%E5%8D%97%E7%94%B7%E5%B7%A7%E7%94%A8%E9%80%8F%E8%A6%96%E6%8A%80%E5%B7%A7%E7%95%AB%E5%87%BA%E7%AB%8B",
+      "pubDate": "2026-08-11 20:40:38",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20250314_PL_word_source_web3.jpg",
+      "keywords": [
+        "繪畫",
+        "太極影片",
+        "兩岸"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "73ce2b63781018390ea857b10557e95c",
+      "title": "超微電腦營收指引遠超預期 盤後股價大漲",
+      "description": "【彭博】-- 超微電腦給出的本季度銷售預期超過分析師預估,顯示人工智能熱潮持續推動其伺服器需求成長。該公司周二在聲明中表示,截至9月的季度營收預計為145億至155億美元。不計部分項目後,每股純益預計為1.10美元。彭博調查分析師平均預計營收為120億美元、每股純益為0.",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B6%85%E5%BE%AE%E9%9B%BB%E8%85%A6%E7%87%9F%E6%94%B6%E6%8C%87%E5%BC%95%E9%81%A0%E8%B6%85%E9%A0%90%E6%9C%9F-%E7%9B%A4%E5%BE%8C%E8%82%A1%E5%83%B9%E5%A4%A7%E6%BC%B2-203705737.html",
+      "pubDate": "2026-08-11 20:37:05",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "超微"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ed4d61fa4546fc914ae10712b4ccd81f",
+      "title": "C朗娶洛迪古絲 手疊手晒婚戒:C LOVE G",
+      "description": "【Now Sports】葡萄牙巨星基斯坦奴朗拿度與女友洛迪古絲正式結為夫婦,他周二在社交平台上載一張相片,兩人戴上結婚戒指,手疊手,C朗留言「C LOVE G」,LOVE以心心emoji代替,恩愛美滿!41歲基斯坦奴朗拿度(Cristiano Ronaldo)與洛迪古絲的婚禮,之前盛傳為8月8日,不少球迷為此而撲...",
+      "link": "https://hk.sports.yahoo.com/news/c%E6%9C%97%E5%A8%B6%E6%B4%9B%E8%BF%AA%E5%8F%A4%E7%B5%B2-%E6%89%8B%E7%96%8A%E6%89%8B%E6%99%92%E5%A9%9A%E6%88%92-c-love-g-203443773.html",
+      "pubDate": "2026-08-11 20:34:43",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "基斯坦奴朗拿度",
+        "洛迪古絲"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0c50bc590a5a7bdd1b288ac285c02373",
+      "title": "C朗低調娶洛迪古絲 手疊手曬婚戒:C LOVE G",
+      "description": "【Now Sports】葡萄牙巨星基斯坦奴朗拿度與女友洛迪古絲正式結為夫婦,他周二在社交平台上載一張相片,兩人戴上結婚戒指,手疊手,C朗留言「C LOVE G」,LOVE以心心emoji代替,恩愛美滿!41歲基斯坦奴朗拿度(Cristiano Ronaldo)與洛迪古絲的婚禮,之前盛傳為8月8日,不少球迷為此而撲...",
+      "link": "https://hk.sports.yahoo.com/news/c%E6%9C%97%E4%BD%8E%E8%AA%BF%E5%A8%B6%E6%B4%9B%E8%BF%AA%E5%8F%A4%E7%B5%B2-%E6%89%8B%E7%96%8A%E6%89%8B%E6%9B%AC%E5%A9%9A%E6%88%92%EF%BC%9Ac-love-g-203443773.html",
+      "pubDate": "2026-08-11 20:34:43",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/3f92e9cf2e245f245ffdb3859708ed46e35f53394cb29444afae7dc171d5d1c3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fscreenshot-2026-08-12-at-93017-am-side_2521.png",
+      "keywords": [
+        "基斯坦奴朗拿度",
+        "洛迪古絲"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "93c00c964d5c59d805c18473eb75263c",
+      "title": "選美舞台抱2.1米受保護蟒蛇表演 斯里蘭卡19歲女子遭檢控罰款",
+      "description": "斯里蘭卡一名19歲女子選美舞台抱2.1米受保護蟒蛇表演涉虐待動物認罪被罰款。 在 Instagram 查看這則帖子 Nethmi Hiranya(@___.netha.___)分享的帖子 綜合外媒報道,斯里蘭卡一名19歲選美參賽者梅特米·希拉尼亞(Methmi Hiranya)約5個月前參加一場選美比賽時,與一條長約2.1米、沒有毒性的受保護蟒蛇同台共舞。相關片段事後在社交平台廣泛流傳,引起外界關注。當地野生動物保護部門隨即展開調查,並以涉嫌虐待動物為由向她提出檢控。 當地野生動物保護部門隨即展開調查,並向希拉尼亞以及一名借出蟒蛇供她表演的男子提出檢控,兩人之後在庭上承認控罪。法院最終判處希拉尼亞罰款5萬元(斯里蘭卡盧比,下同,約1,200港元),涉事男子則被罰款10萬盧比(約2,340港元)。 當地野生動物保護官員桑吉瓦(M.P. Sanjeeva)表示,希拉尼亞在表演結束後不久,已將蟒蛇安全放回叢林。斯里蘭卡實施嚴格的野生動植物保護法例,禁止民眾接觸野生動物,尤其是受保護物種。不過,當地部分旅遊景點仍有人展示野生動物,並向外國遊客收費,讓他們與動物合照。 桑吉瓦透露,過去數周已有3名男子因在科倫坡加勒菲斯海濱(Galle Face)展示爬行類動物而被檢控。他指出,當局一般會先向違規人士作出警告,但若有人屢次違規,便會依法提出檢控。他補充,耍蛇或訓練猴子參與馬戲表演本身並不違法,但若過程涉及虐待動物,相關人士便可能面對刑事檢控。",
+      "link": "https://www.bastillepost.com/hongkong/article/16526649-%E9%81%B8%E7%BE%8E%E8%88%9E%E5%8F%B0%E6%8A%B12-1%E7%B1%B3%E5%8F%97%E4%BF%9D%E8%AD%B7%E8%9F%92%E8%9B%87%E8%A1%A8%E6%BC%94-%E6%96%AF%E9%87%8C%E8%98%AD%E5%8D%A119%E6%AD%B2%E5%A5%B3%E5%AD%90%E9%81%AD",
+      "pubDate": "2026-08-11 20:30:18",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20250314_PL_snake_source_web.jpg",
+      "keywords": [
+        "蛇",
+        "大視野",
+        "太極影片",
+        "動物保護"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6826a9d44af238305838dadad3db97dd",
+      "title": "美國8月7日API原油庫存變動為907.2萬桶,高於前值的269萬桶。預測值為-50萬桶。",
+      "description": "美國8月7日API原油庫存變動為907.2萬桶,高於前值的269萬桶。預測值為-50萬桶。~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B8%E6%9C%887%E6%97%A5api%E5%8E%9F%E6%B2%B9%E5%BA%AB%E5%AD%98%E8%AE%8A%E5%8B%95%E7%82%BA907-2%E8%90%AC%E6%A1%B6-%E9%AB%98%E6%96%BC%E5%89%8D%E5%80%BC%E7%9A%84269%E8%90%AC%E6%A1%B6-%E9%A0%90%E6%B8%AC%E5%80%BC%E7%82%BA-50%E8%90%AC%E6%A1%B6-203000501.html",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "阿思達克財經新聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e89b093b1d59c76aa0b2f9b0705159a5",
+      "title": "基金特區:施羅德:可換股債助增防守力 下半年料資金從科技股轉投價值股",
+      "description": "【明報專訊】美伊談判再度陷入膠着狀態,近日市場觀望事態發展而受壓。施羅德投資多元收益投資主管Dorian Carrell預期,下半年地緣政治、通脹及私募信貸市場等風險難除下,有望促使投資者分散投資,將部分資金由估值偏高的科技股轉投價值股,尤其看好當中的金融股,並認為於投資組合內加入可換股債券,有助增加防守性。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260812/s00004/1786465326908/%E5%9F%BA%E9%87%91%E7%89%B9%E5%8D%80-%E6%96%BD%E7%BE%85%E5%BE%B7-%E5%8F%AF%E6%8F%9B%E8%82%A1%E5%82%B5%E5%8A%A9%E5%A2%9E%E9%98%B2%E5%AE%88%E5%8A%9B-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E6%96%99%E8%B3%87%E9%87%91%E5%BE%9E%E7%A7%91%E6%8A%80%E8%82%A1%E8%BD%89%E6%8A%95%E5%83%B9%E5%80%BC%E8%82%A1",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00256/a7036c5ec7d2464aa07896ca71520f20.jpg",
+      "keywords": [
+        "基金特區",
+        "基金持區 金融股 科技股 價值股 ai"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "60a4464ca119110e14d56b91484c9d21",
+      "title": "全港首住宅引入羅馬式高溫浴室",
+      "description": "【明報專訊】海德園住客會所CLUB HEADLAND,以「Urban Resort」為設計概念,設30項設施,佔地約8萬方呎,特設全港首個住宅項目內的羅馬高溫浴室(Laconium),以及高達6.3米高的大型兒童攀爬繩網及4.9米旋轉滑梯,其中室外泳池旁設羅馬式高溫浴室,內在溫度維持攝氏38°C至45°C,兒童亦可使用。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260812/s00004/1786465326515/%E5%85%A8%E6%B8%AF%E9%A6%96%E4%BD%8F%E5%AE%85%E5%BC%95%E5%85%A5%E7%BE%85%E9%A6%AC%E5%BC%8F%E9%AB%98%E6%BA%AB%E6%B5%B4%E5%AE%A4",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00073/9d6784bbde534e1c90175c70ff7129ed.jpg",
+      "keywords": [
+        "會所",
+        "羅馬式高溫浴室",
+        "睇樓手冊",
+        "柴灣",
+        "海德園"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8505c7cf6ba71eb4e9546e47510c2af4",
+      "title": "柴灣海德園屆現樓 可即買即住",
+      "description": "【明報專訊】柴灣多年來首個大型住宅新盤,太古地產(1972)牽頭發展的柴灣常安街海德園1期、涉單位總數592伙,項目擁有發展商名牌效應,至今已累售約360個單位,當中所有一房標準單位已全數售罄,總套現逾31億元。項目已進入收樓程序,可即買即住,準買家可親身到現樓示範單位觀察建築質素、景觀及附近環境。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260812/s00004/1786465324943/%E6%9F%B4%E7%81%A3%E6%B5%B7%E5%BE%B7%E5%9C%92%E5%B1%86%E7%8F%BE%E6%A8%93-%E5%8F%AF%E5%8D%B3%E8%B2%B7%E5%8D%B3%E4%BD%8F",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00073/ee68c58bc948406f9b261f40e160b66d.jpg",
+      "keywords": [
+        "太古地產",
+        "睇樓手冊",
+        "海德園",
+        "柴灣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ec01f65f03386656b129825c616d78bb",
+      "title": "土木工程拓展署就沙田兩地 申建住宅料涉1456伙",
+      "description": "【明報專訊】兩幅已被納入本年度賣地表住宅用地,沙田石門大涌橋路與安心街交界,以及石門安心街與安平街交界之地皮,土木工程拓展署就兩幅土地向城規會申請興建住宅,預計可供約1456伙住宅。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260812/s00004/1786465323178/%E5%9C%9F%E6%9C%A8%E5%B7%A5%E7%A8%8B%E6%8B%93%E5%B1%95%E7%BD%B2%E5%B0%B1%E6%B2%99%E7%94%B0%E5%85%A9%E5%9C%B0-%E7%94%B3%E5%BB%BA%E4%BD%8F%E5%AE%85%E6%96%99%E6%B6%891456%E4%BC%99",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "城規會",
+        "土木工程拓展署",
+        "石門",
+        "賣地表"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0f30eeb861e7e7392b23c4718e211895",
+      "title": "內地碩士生2萬租Kennedy 38開放戶",
+      "description": "【明報專訊】正值暑假租務旺季,加上臨近開學,私宅租務市場繼續錄得內地生入市;中原高級資深區域營業經理沈興和透露,港島堅尼地城Kennedy 38一伙低層H室,屬實用面積228方呎開放式設計,最新以2萬元租出、實用呎租約88元,據悉新租客為內地碩士生,並預付一年租金約24萬元承租;業主2021年以649萬元一手購入單位,享租金回報率3.7厘。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260812/s00004/1786465323082/%E5%85%A7%E5%9C%B0%E7%A2%A9%E5%A3%AB%E7%94%9F2%E8%90%AC%E7%A7%9Fkennedy-38%E9%96%8B%E6%94%BE%E6%88%B6",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "港島南岸",
+        "天鑽",
+        "blue coast",
+        "瑧蓺",
+        "kennedy 38",
+        "匯璽"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5cce2f74dd5288c1793aed4cb63b56ea",
+      "title": "「鐘表大王」家族成員5300萬 購淺水灣分層戶",
+      "description": "【明報專訊】二手物業市場不乏城中名人入市;資料顯示,淺水灣冠園B座一伙極高層單位,屬實用面積1878方呎3房1套連工人房間隔,連同車位於上月底以5300萬元易手、實呎28,222元,登記買家為新達有限公司(SUN INTERNATIONAL LIMITED),股東及董事包括已故香港「鐘表大王」孫秉樞兩名兒子孫大豪(HAROLD)、孫大為(DAVID)等。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260812/s00004/1786465322895/%E3%80%8C%E9%90%98%E8%A1%A8%E5%A4%A7%E7%8E%8B%E3%80%8D%E5%AE%B6%E6%97%8F%E6%88%90%E5%93%A15300%E8%90%AC-%E8%B3%BC%E6%B7%BA%E6%B0%B4%E7%81%A3%E5%88%86%E5%B1%A4%E6%88%B6",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00072/c94a13c687b041c6a4eb4897dac7aa98.jpg",
+      "keywords": [
+        "孫秉樞",
+        "冠園",
+        "天璽．天",
+        "得寶花園",
+        "鐘錶大王",
+        "淺月灣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fb35777ffe4b02b12846dc8722f10736",
+      "title": "【娛樂場】《最後孤屋》 異形襲地球虎頭蛇尾",
+      "description": "【明報專訊】《狂野時速10》法國導演路易斯賴托瑞(Louis Leterrier)執導、《地下代理人》康城影帝韋納莫拉(Wagner Moura)與《創戰紀:戰神降臨》美籍韓裔女星李姬蒂(Greta Lee)合演驚慄片《最後孤屋》(The Last House),講述一家四口遭神秘生物圍困屋內,面對資源短缺,如何掙扎求存。電影8月7日在影視串流平台Netflix上架,爛番茄影評網站給30%低分,觀眾好感度29%,相差無幾,證明台前幕後陣容強勁亦非品質保證。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465334601/%E3%80%90%E5%A8%9B%E6%A8%82%E5%A0%B4%E3%80%91%E3%80%8A%E6%9C%80%E5%BE%8C%E5%AD%A4%E5%B1%8B%E3%80%8B-%E7%95%B0%E5%BD%A2%E8%A5%B2%E5%9C%B0%E7%90%83%E8%99%8E%E9%A0%AD%E8%9B%87%E5%B0%BE",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/624b2107a6744a82a842d05d609a20e2.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c259b983a99e7b5e36117511477f020b",
+      "title": "伙廣瀨鈴登煙花盛會 橫濱流星祈新片大賣",
+      "description": "【明報專訊】《國寶》橫濱流星與《流浪之月》廣瀨鈴合演,改編同名小說電影《宛如星辰的你》,定於10月9日日本上映。新片由《新聞記者》日本電影學院獎得獎導演藤井道人執導,講述橫濱流星與廣瀨鈴一段跨越15年,因家庭破碎而相遇又錯過的愛情故事。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465334318/%E4%BC%99%E5%BB%A3%E7%80%A8%E9%88%B4%E7%99%BB%E7%85%99%E8%8A%B1%E7%9B%9B%E6%9C%83-%E6%A9%AB%E6%BF%B1%E6%B5%81%E6%98%9F%E7%A5%88%E6%96%B0%E7%89%87%E5%A4%A7%E8%B3%A3",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/8bb4ccc0664e4283af23e5ee3692e2e6.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "669b001606b2983aef46b0d444f47bc3",
+      "title": "曾祖父陷親日爭議捱轟 賀營新劇取消宣傳",
+      "description": "【明報專訊】憑韓劇《外傷重症中心》打響知名度的33歲女星賀營,近日伙《媽媽朋友的兒子》丁海寅合演影視串流平台Netflix韓劇《我的荒糖戀愛》。賀營日前亮相綜藝節目,分享「四代行醫」家族背景,被網民查出其曾祖父安尚浩是親日分子,惹來外界指摘。賀營發文道歉未能平息爭議,韓媒指她的代言廣告被下架,新劇宣傳全部取消,甚至影響她正在拍攝的新作。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465333990/%E6%9B%BE%E7%A5%96%E7%88%B6%E9%99%B7%E8%A6%AA%E6%97%A5%E7%88%AD%E8%AD%B0%E6%8D%B1%E8%BD%9F-%E8%B3%80%E7%87%9F%E6%96%B0%E5%8A%87%E5%8F%96%E6%B6%88%E5%AE%A3%E5%82%B3",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/8ebc6b2c9ddf4477a8ef89f82990425e.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1f02121a7f7d9b363f6433f2bdb56bd5",
+      "title": "《為你鍾情》作曲人欽點唱新歌 顏米羔花半年調聲",
+      "description": "【明報專訊】顏米羔昨日於中環為新歌《子虛烏有》舉行發布會,前輩賈思樂和胡渭康到場支持。他表示今次獲張國榮(哥哥)《為你鍾情》作曲的資深大律師王正宇委派唱新歌,受寵若驚和感恩,「聽到uncle(王正宇)話當年哥哥要搵一把新聲音,用了9個月時間。我話我要用9年,唱的時候會想哥哥會點唱,便一直提醒自己要溫柔,花了半年時間整理自己的聲音,希望大家會喜歡」。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465333596/%E3%80%8A%E7%82%BA%E4%BD%A0%E9%8D%BE%E6%83%85%E3%80%8B%E4%BD%9C%E6%9B%B2%E4%BA%BA%E6%AC%BD%E9%BB%9E%E5%94%B1%E6%96%B0%E6%AD%8C-%E9%A1%8F%E7%B1%B3%E7%BE%94%E8%8A%B1%E5%8D%8A%E5%B9%B4%E8%AA%BF%E8%81%B2",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/1b247c628df248e5ab2659fa82f44186.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d56735b708eb4a42815987c6d6359ad5",
+      "title": "陳卓賢自認「哥迷」 演出紀念騷盼傳承張國榮美德",
+      "description": "【明報專訊】MIRROR成員陳卓賢、陳瑞輝和柳應廷前晚任ViuTV節目《8點直樂 VIURIETY》嘉賓,柳應廷在遊戲環節充當主持,陳瑞輝和陳卓賢玩「心有靈犀」,合力贏得2000元獎金。陳卓賢下月參與《繼續寵愛.張國榮70誕辰.音樂會》,他自認是「哥迷」(張國榮粉絲暱稱),一向鍾意聽張國榮(哥哥)的歌,正商討可否獻唱較熟悉和喜歡的歌,「成長過程中常聽哥哥的歌,雖與哥哥素未謀面,但從小聽到很多他照顧後輩和在樂壇的事迹,覺得他是絕對值得學習的榜樣,我有幸成為樂壇一分子,如果可以略盡綿力,承傳哥哥的意志和好,有幸參與,很樂意和感恩」。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465333315/%E9%99%B3%E5%8D%93%E8%B3%A2%E8%87%AA%E8%AA%8D%E3%80%8C%E5%93%A5%E8%BF%B7%E3%80%8D-%E6%BC%94%E5%87%BA%E7%B4%80%E5%BF%B5%E9%A8%B7%E7%9B%BC%E5%82%B3%E6%89%BF%E5%BC%B5%E5%9C%8B%E6%A6%AE%E7%BE%8E%E5%BE%B7",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/f4f55548e8cb481ebcda4ceae5b1b866.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5ffca6f0a0450ca325907d1da711ea5b",
+      "title": "黎芷珊訪問舊拍檔周星馳 伙劉嘉玲一唱一和逼供",
+      "description": "【明報專訊】周星馳帶隊宣傳自編自導電影《功夫女足》,偕劉嘉玲、林子聰、蔡思貝與張繼聰接受黎芷珊主持的無綫節目《一周星星》訪問。近年鮮亮相節目的周星馳因黎芷珊答應受訪,黎芷珊說:「諗住派我出去成數高啲,點知真係成功,可能佢見到係熟人所以應承。」她與周星馳當年同主持兒童節目《430穿梭機》,回想當年是新人初加入,難忘與周星馳在沙灘拍外景,「沙灘上介紹我係新主持,佢(周星馳)自己行開咗,玩緊一隻浮咗上沙灘嘅水母」。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465333024/%E9%BB%8E%E8%8A%B7%E7%8F%8A%E8%A8%AA%E5%95%8F%E8%88%8A%E6%8B%8D%E6%AA%94%E5%91%A8%E6%98%9F%E9%A6%B3-%E4%BC%99%E5%8A%89%E5%98%89%E7%8E%B2%E4%B8%80%E5%94%B1%E4%B8%80%E5%92%8C%E9%80%BC%E4%BE%9B",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/baee09ce8b9e45779f779a49dfa02d4c.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3ef3a5bae954120a990b810a38a86a29",
+      "title": "吳若希稱奉旨唱主題曲 車婉婉澄清無爭過",
+      "description": "【明報專訊】車婉婉、吳若希、何依婷和李偉健等前晚出席無綫處境劇《愛•回家之三代同糖》首播晚宴,車婉婉兒子現身支持。劇集主題曲《代代相愛》由吳若希主唱,她強調不存在爭唱主題歌這回事,是收柯打做事,「當初收到拍劇後,翌日已知要唱主題曲,第三日錄音,準備錄歌的時間很短,件事來得很快,沒有爭奪過程,未播出前想保密,所以一直沒有講」。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465332539/%E5%90%B3%E8%8B%A5%E5%B8%8C%E7%A8%B1%E5%A5%89%E6%97%A8%E5%94%B1%E4%B8%BB%E9%A1%8C%E6%9B%B2-%E8%BB%8A%E5%A9%89%E5%A9%89%E6%BE%84%E6%B8%85%E7%84%A1%E7%88%AD%E9%81%8E",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/45b8490d65034dd882c1a936c1a42c1b.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7c30058feb513cc8a38267439369c9d6",
+      "title": "衛詩雅以為「食蛋」 驚喜高票封后 領獎孤單下台 稱只識梁家輝朱一龍",
+      "description": "【明報專訊】衛詩雅憑電影《破.地獄》前晚在北京舉行的第38屆大眾電影百花獎頒獎禮奪最佳女主角,成為首名奪得百花獎影后殊榮的香港女演員。她以壓倒性票數贏內地影后級對手宋佳和馬麗等被指爆冷,衛詩雅上台領獎前一臉愕然和激動。由於內地網民對衛詩雅較陌生,有人留意到眾得獎者在台上互相恭賀,她在人群中獨自捧獎離開,形成強烈對比。衛詩雅昨晚從北京回港於機場受訪,承認沒想過能高票勝出,曾擔心「零票」落空。對於領獎後獨自落寞下台,她說現場只認識梁家輝和朱一龍,當時因地下好跣,眼神望向下,沒有不開心。",
+      "link": "https://news.mingpao.com/pns/%E5%A8%9B%E6%A8%82/article/20260812/s00016/1786465331303/%E8%A1%9B%E8%A9%A9%E9%9B%85%E4%BB%A5%E7%82%BA%E3%80%8C%E9%A3%9F%E8%9B%8B%E3%80%8D-%E9%A9%9A%E5%96%9C%E9%AB%98%E7%A5%A8%E5%B0%81%E5%90%8E-%E9%A0%98%E7%8D%8E%E5%AD%A4%E5%96%AE%E4%B8%8B%E5%8F%B0-%E7%A8%B1%E5%8F%AA%E8%AD%98%E6%A2%81%E5%AE%B6%E8%BC%9D%E6%9C%B1%E4%B8%80%E9%BE%8D",
+      "pubDate": "2026-08-11 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260812/s00092/41653831edce4a1db507f56f9402c310.jpg",
+      "keywords": null,
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b6c8aabecaf9624cb935b184fb5dc689",
+      "title": "俄襲扎波羅熱鋼鐵廠釀7死 基輔指莫斯科動用朝鮮導彈",
+      "description": "俄羅斯周二襲擊烏克蘭東南部扎波羅熱市,一間鋼鐵廠七名員工喪生;烏克蘭總統澤連斯基(Volodymyr Zelenskyy)指莫斯科動用朝鮮製彈道導彈。據路透",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379090/%E4%BF%84%E8%A5%B2%E6%89%8E%E6%B3%A2%E7%BE%85%E7%86%B1%E9%8B%BC%E9%90%B5%E5%BB%A0%E9%87%807%E6%AD%BB-%E5%9F%BA%E8%BC%94%E6%8C%87%E8%8E%AB%E6%96%AF%E7%A7%91%E5%8B%95%E7%94%A8%E6%9C%9D%E9%AE%AE%E5%B0%8E%E5%BD%88",
+      "pubDate": "2026-08-11 20:13:22",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164060833261555712163509.jpeg/Xk3hyLyE9g-dG06CQLApMFQmPrkX_sOqXBKed1wSnnc",
+      "keywords": [
+        "國際新聞",
+        "新聞",
+        "hk01",
+        "世界新聞",
+        "香港01",
+        "國際",
+        "環球"
+      ],
+      "category": [
+        "crime",
+        "politics"
       ],
       "region": "hk"
     },
@@ -140,6 +546,25 @@
         "sports"
       ],
       "region": "hk"
+    },
+    {
+      "id": "b7258b4dd96053099a76d8b223b74213",
+      "title": "BTIG分析師Krinsky警告:股市風險回報比「相當糟糕」",
+      "description": "Investing.com — BTIG週二在一份研究報告中指出,在週三消費者物價指數(CPI)報告公布前夕,美國股市面臨的下行風險遠大於債券市場。儘管過去一個月國債收益率持續上升,美股卻逆勢走高,令兩者之間的背離愈發明顯。",
+      "link": "https://hk.finance.yahoo.com/news/btig%E5%88%86%E6%9E%90%E5%B8%ABkrinsky%E8%AD%A6%E5%91%8A-%E8%82%A1%E5%B8%82%E9%A2%A8%E9%9A%AA%E5%9B%9E%E5%A0%B1%E6%AF%94-%E7%9B%B8%E7%95%B6%E7%B3%9F%E7%B3%95-193921324.html",
+      "pubDate": "2026-08-11 19:39:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXNPEAB20CL_M.jpg",
+      "keywords": [
+        "消費者物價指數",
+        "btig",
+        "美國股市"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "c28941b765ca03170ff2ceaed96a42f1",
@@ -231,6 +656,23 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "138f9c9e1c284577c848415660c7a1c6",
+      "title": "8月夜期收市報25533點 跌95點",
+      "description": "<匯港通訊> 8月夜期期指收市報25533點,跌95點,低水120點,成交13417張;9月夜期期指報25463點,跌72點,低水190點,成交111張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125533%E9%BB%9E-%E8%B7%8C95%E9%BB%9E-190500173.html",
+      "pubDate": "2026-08-11 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊>"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "651a6896ff0473f2c637a45836967ac6",
@@ -333,6 +775,44 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "879648f831543d6f1caa005a39624461",
+      "title": "美國7月整體消費物價料升0.1% 核心物價升0.2%",
+      "description": "據彭博編製的調查,美國7月消費物價指數(CPI)預期按月升0.1%,6月則跌0.4%。 按年計算,CPI升幅預料由3.5%放緩至3.4%。 CPI數據將於周三美東時間上午8時30分公布。 Scotiabank表示,7月汽油價格預料下跌。Jefferies研究報告指出,食品價格繼上月升0.2%後,預料將輕微推高CP...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B7%E6%9C%88%E6%95%B4%E9%AB%94%E6%B6%88%E8%B2%BB%E7%89%A9%E5%83%B9%E6%96%99%E5%8D%870-1-%E6%A0%B8%E5%BF%83%E7%89%A9%E5%83%B9%E5%8D%870-2-183950139.html",
+      "pubDate": "2026-08-11 18:39:50",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "scotiabank",
+        "cpi"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "a3c750c22a63598775066d8d40a990d4",
+      "title": "油價上升 市場對霍爾木茲海峽重開希望降溫",
+      "description": "油價周二上升,市場對全球最重要原油運輸咽喉霍爾木茲海峽重開的不確定性增加。 紐約期油升1.1%,報每桶83.08美元;布蘭特期油升1.3%,報88.86美元。 據路透周二引述伊朗最高國家安全委員會秘書Mohsen Rezaei表示,霍爾木茲海峽將維持關閉,直至美國改變行為並接受伊朗結束衝突的條件,包括解凍伊朗海外...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-%E5%B8%82%E5%A0%B4%E5%B0%8D%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E9%87%8D%E9%96%8B%E5%B8%8C%E6%9C%9B%E9%99%8D%E6%BA%AB-183300521.html",
+      "pubDate": "2026-08-11 18:33:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "國家安全委員會",
+        "霍爾木茲海峽",
+        "伊朗",
+        "布蘭特期油"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "6216f3f43aacadd9efe389d3f9730a56",
@@ -6099,25 +6579,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "a1e7196161dd4899cd5cfab6c1577c29",
-      "title": "日圓再跌穿「5算」 美日干預效應漸消退 市場關注今日會否「突襲」",
-      "description": "日圓重現跌勢,每百兌港元最新報4.92水平,再次跌穿「5算」。據彭博報道,日圓早前因美日聯手入市干預而獲得的強勁反彈,目前已回吐超過一半,其中日圓兌美元匯價回落至159.29,標誌市場對日圓的悲觀情緒再度浮現,並密切注視當局會否再次出手托市。值得留意的是,市場猜測當局或會趁今日(11日)日本假期交投淡靜之際再次突襲。 重新聚焦美日龐大息差等因素 據彭博分析指出,日圓7月下旬一度跌至164兌一美元的",
-      "link": "https://www.stheadline.com/macroeconomics/3603158/%E6%97%A5%E5%9C%93%E5%86%8D%E8%B7%8C%E7%A9%BF5%E7%AE%97-%E7%BE%8E%E6%97%A5%E5%B9%B2%E9%A0%90%E6%95%88%E6%87%89%E6%BC%B8%E6%B6%88%E9%80%80-%E5%B8%82%E5%A0%B4%E9%97%9C%E6%B3%A8%E4%BB%8A%E6%97%A5%E6%9C%83%E5%90%A6%E7%AA%81%E8%A5%B2",
-      "pubDate": "2026-08-11 02:58:33",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fc73c9387506aca6ac90478d9fc75861/2026-08/KF_ALEX__4.png",
-      "keywords": [
-        "日圓",
-        "加息"
-      ],
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "4ea104c36b2405ff5685f71f49ceab65",
@@ -11994,31 +12455,6 @@
         "entertainment"
       ],
       "region": "hk"
-    },
-    {
-      "id": "9c03d67dcf2a8a39bbb9826949cb7546",
-      "title": "馬時亨指內地追稅難衝擊港樓及金融 北水繼續南下 「分散風險無地方好過香港」|跨境監管",
-      "description": "貿發局周二(11日)將於馬來西亞吉隆坡舉行「成就機遇.首選香港」推廣活動,主席馬時亨今日(10日)在當地會見香港傳媒。他回應近期限制資本外流,以及「跨境追稅」報道時表示,即使部分內地富裕人士需要補繳稅款,相信對香港的資產管理業務及樓市不會構成太大衝擊,又預告貿發局下月或上調本港全年出口增長數字。 富裕人士不介意補交稅 內地近期多次傳出限制資本外流的消息,馬時亨認為,內地有14億人口,即使少部分人來",
-      "link": "https://www.stheadline.com/realtime-finance/3602995/%E9%A6%AC%E6%99%82%E4%BA%A8%E6%8C%87%E5%85%A7%E5%9C%B0%E8%BF%BD%E7%A8%85%E9%9B%A3%E8%A1%9D%E6%93%8A%E6%B8%AF%E6%A8%93%E5%8F%8A%E9%87%91%E8%9E%8D-%E5%8C%97%E6%B0%B4%E7%B9%BC%E7%BA%8C%E5%8D%97%E4%B8%8B-%E5%88%86%E6%95%A3%E9%A2%A8%E9%9A%AA%E7%84%A1%E5%9C%B0%E6%96%B9%E5%A5%BD%E9%81%8E%E9%A6%99%E6%B8%AF%E8%B7%A8%E5%A2%83%E7%9B%A3%E7%AE%A1",
-      "pubDate": "2026-08-10 12:45:40",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/c633f6f469e86a7f052b286e3ffa5a8e/2026-08/260810_hktdcma.png",
-      "keywords": [
-        "跨境監管",
-        "保險收益",
-        "跨境追稅",
-        "馬時亨",
-        "成就機遇",
-        "張淑芬",
-        "首選香港",
-        "貿發局"
-      ],
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "f5d50a1d17d4ee76f17ecf0d57527829",
@@ -38588,6 +39024,6 @@
       "pinned": true
     }
   ],
-  "total": 2010,
-  "last_updated": "2026-08-12T16:01:54.320092"
+  "total": 2035,
+  "last_updated": "2026-08-12T17:03:13.663599"
 }
