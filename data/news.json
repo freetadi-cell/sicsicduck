@@ -1,23 +1,6 @@
 {
   "articles": [
     {
-      "id": "8a61b247f1a314fc24193634f5b79271",
-      "title": "美股在看空聲中屢創新高 謹慎情緒或許意味著仍有上升空間",
-      "description": "8%。22V Research總裁兼首席市場策略師Dennis DeBusschere在給客戶的報告中寫道:「相對於經濟數據,目前的投資者情緒讀數意味著回報率將高於正常水平。」滙豐全球股票策略師Alastair Pinder表示:「過去幾周,投資者有太多理由質疑股票牛市。我們認為,這些擔憂正越來越多地反映在市場定...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E8%82%A1%E5%9C%A8%E7%9C%8B%E7%A9%BA%E8%81%B2%E4%B8%AD%E5%B1%A2%E5%89%B5%E6%96%B0%E9%AB%98-%E8%AC%B9%E6%85%8E%E6%83%85%E7%B7%92%E6%88%96%E8%A8%B1%E6%84%8F%E5%91%B3%E8%91%97%E4%BB%8D%E6%9C%89%E4%B8%8A%E5%8D%87%E7%A9%BA%E9%96%93-153930024.html",
-      "pubDate": "2026-08-11 15:39:30",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/3bbdb02903271b6f87a54b0546bdcd67.jpg",
-      "keywords": [
-        "投資者"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "30563c3684cb764659cb1b05cc6bead8",
       "title": "美股|道指收市跌184點 納指挫0.6% 中概股指數跌2.94%",
       "description": "有消息指美伊可望達成協議,道指周二(8月11日)早段曾升246點。但伊朗最高國家安全委員會(SNSC)新任秘書雷扎伊(Mohsen Rezaei)隨後表示,除非",
@@ -67,24 +50,498 @@
       "pinned": true
     },
     {
-      "id": "a35acb4b5f4fd32020f5dc67a2e35a6f",
-      "title": "澳洲央行維持利率4.35%不變,警告通脹仍高企或需進一步加息",
-      "description": "Investing.com — 澳洲儲備銀行(RBA)週二宣布維持利率不變,符合市場預期。儘管近期通脹有所降溫,但央行警告價格壓力依然高企,不排除進一步加息的可能性。",
-      "link": "https://hk.finance.yahoo.com/news/%E6%BE%B3%E6%B4%B2%E5%A4%AE%E8%A1%8C%E7%B6%AD%E6%8C%81%E5%88%A9%E7%8E%874-35-%E4%B8%8D%E8%AE%8A-%E8%AD%A6%E5%91%8A%E9%80%9A%E8%84%B9%E4%BB%8D%E9%AB%98%E4%BC%81%E6%88%96%E9%9C%80%E9%80%B2-%E6%AD%A5%E5%8A%A0%E6%81%AF-054327938.html",
-      "pubDate": "2026-08-11 05:43:27",
+      "id": "3dffbe936effe6a5192fee44525327c8",
+      "title": "比特幣穩守65,000美元關口,美國通脹數據與伊朗局勢成焦點",
+      "description": "Investing.com — 週一,比特幣在65,000美元附近保持相對穩定。此前,出乎意料疲弱的美國就業報告推動比特幣突破該水平,但投資者在等待美國通脹數據公布之際態度趨於謹慎,同時密切關注中東局勢緩和進展的不確定性。",
+      "link": "https://hk.finance.yahoo.com/news/%E6%AF%94%E7%89%B9%E5%B9%A3%E7%A9%A9%E5%AE%8865-000%E7%BE%8E%E5%85%83%E9%97%9C%E5%8F%A3-%E7%BE%8E%E5%9C%8B%E9%80%9A%E8%84%B9%E6%95%B8%E6%93%9A%E8%88%87%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E6%88%90%E7%84%A6%E9%BB%9E-074646502.html",
+      "pubDate": "2026-08-10 07:46:46",
       "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXNPEE2507E_M.jpg",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEBBM0M5_M.jpg",
       "keywords": [
-        "rba",
-        "央行",
-        "澳洲儲備銀行",
-        "通脹"
+        "business news",
+        "retirement",
+        "401k",
+        "mortgage",
+        "track portfolio",
+        "suze orman",
+        "tax",
+        "market news",
+        "stock valuation",
+        "economy",
+        "investment tools",
+        "finance",
+        "personal finance",
+        "mutual funds",
+        "investing",
+        "real estate",
+        "stock",
+        "business",
+        "stocks",
+        "investor"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "d3da98a7b8c4ebfd489302dddc21f2bc",
+      "title": "陳茂波:下半年將舉辦逾100項盛事活動 料吸引逾185萬旅客",
+      "description": "<匯港通訊> 財政司司長陳茂波在網誌表示,今年上半年約有175萬旅客參與超過130項盛事活動,為香港帶來約58億港元的消費額,經濟增加價值約為33億港元。藝術、文創到盛事活動,為本港增添了正面氛圍和消費需求。整體數據也展現良好勢頭,本港的零售業總銷貨價值已經連升14個月,今年上半年的升幅為9.6%。陳茂波稱,近日...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%99%B3%E8%8C%82%E6%B3%A2-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%B0%87%E8%88%89%E8%BE%A6%E9%80%BE100%E9%A0%85%E7%9B%9B%E4%BA%8B%E6%B4%BB%E5%8B%95-%E6%96%99%E5%90%B8%E5%BC%95%E9%80%BE185%E8%90%AC%E6%97%85%E5%AE%A2-055554530.html",
+      "pubDate": "2026-08-09 05:55:54",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "c9221fc044d42fa641131dc758ab042a",
+      "title": "OpenAI高管Brad Lightcap將離職 開啟「新項目」",
+      "description": "【彭博】-- OpenAI管理人士Brad Lightcap將離開這家人工智能公司,開啟一個新項目。就在幾個月前,他卸任首席運營官一職。Lightcap在一份與OpenAI員工分享的內部通知中寫道,「過去幾個月裡,我一直在思考和探索下一個方向。隨著我們進入下一個階段,我認為有幾件重要的事情是這個世界需要妥善解決的...",
+      "link": "https://hk.finance.yahoo.com/news/openai%E9%AB%98%E7%AE%A1brad-lightcap%E5%B0%87%E9%9B%A2%E8%81%B7-%E9%96%8B%E5%95%9F-%E6%96%B0%E9%A0%85%E7%9B%AE-165846608.html",
+      "pubDate": "2026-08-11 16:58:46",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "首席運營官",
+        "lightcap"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6e3d694914a806e9dedc259d79433b51",
+      "title": "水邊圍邨停電|沖涼突漆黑 女居民驚叫:咩事 行17層樓落樓避暑",
+      "description": "元朗水邊圍邨18小時內兩次大停電。昨日(本周二/8月11日)凌晨4時許,以及同晚10時許,水邊圍邨7樓大廈中,僅康水樓一幢維持電力供應,去到同晚大",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60379074/%E6%B0%B4%E9%82%8A%E5%9C%8D%E9%82%A8%E5%81%9C%E9%9B%BB-%E6%B2%96%E6%B6%BC%E7%AA%81%E6%BC%86%E9%BB%91-%E5%A5%B3%E5%B1%85%E6%B0%91%E9%A9%9A%E5%8F%AB-%E5%92%A9%E4%BA%8B-%E8%A1%8C17%E5%B1%A4%E6%A8%93%E8%90%BD%E6%A8%93%E9%81%BF%E6%9A%91",
+      "pubDate": "2026-08-11 16:56:36",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164022581351682048952637.jpeg/b-gGOHYDQX5eL93SLHy8kvkZewkVa9yZkocE1ZKHBNU",
+      "keywords": [
+        "hk01",
+        "頭條新聞",
+        "新聞",
+        "即時新聞",
+        "港聞",
+        "香港新聞",
+        "國際新聞",
+        "香港01"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "45f35e16266683bcb1c233bbec1df606",
+      "title": "瑞銀升評捷普至買入,看好AI成長動能,維持430美元目標價",
+      "description": "Investing.com - 瑞銀(UBS)將捷普(Jabil)的評級從中性上調至買入,理由是人工智慧(AI)驅動的需求持續增強,加上業務組合更趨多元化。瑞銀維持430美元的目標價,隱含約28%的上漲空間,同時將2027財年及2028財年的每股盈利(EPS)預測分別從15.89美元和18.34美元上調至16.7...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%91%9E%E9%8A%80%E5%8D%87%E8%A9%95%E6%8D%B7%E6%99%AE%E8%87%B3%E8%B2%B7%E5%85%A5-%E7%9C%8B%E5%A5%BDai%E6%88%90%E9%95%B7%E5%8B%95%E8%83%BD-%E7%B6%AD%E6%8C%81430%E7%BE%8E%E5%85%83%E7%9B%AE%E6%A8%99%E5%83%B9-165441532.html",
+      "pubDate": "2026-08-11 16:54:41",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7I0CN_M.jpg",
+      "keywords": [
+        "瑞銀",
+        "eps"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d07536af8ab050cf90b70a0f8c21f9a9",
+      "title": "愛回家|「細龍生」鄭世豪開心分享與劇中演員合照 唯獨欠林淑敏",
+      "description": "無綫處境劇《愛.回家之開心速遞》早前播出大結局,許多觀眾都表現得十分不捨。而已經離開TVB的鄭世豪,即劇中的「細龍生」,也於社交平台上多次發",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60379075/%E6%84%9B%E5%9B%9E%E5%AE%B6-%E7%B4%B0%E9%BE%8D%E7%94%9F-%E9%84%AD%E4%B8%96%E8%B1%AA%E9%96%8B%E5%BF%83%E5%88%86%E4%BA%AB%E8%88%87%E5%8A%87%E4%B8%AD%E6%BC%94%E5%93%A1%E5%90%88%E7%85%A7-%E5%94%AF%E7%8D%A8%E6%AC%A0%E6%9E%97%E6%B7%91%E6%95%8F",
+      "pubDate": "2026-08-11 16:51:42",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260811/1163998050847297536624083.jpeg/PECxZ3nVCiPi0O7XGIeR3ufhl9wWutEYIhIYCyISGAs",
+      "keywords": [
+        "香港新聞",
+        "hk01",
+        "娛樂新聞",
+        "即時娛樂",
+        "藝人",
+        "即時娛樂新聞",
+        "新聞",
+        "明星",
+        "韓星",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d5efe1e052ab34701b3d6f21274cb797",
+      "title": "韓國瑜嗆傅崐萁辭總召 內部權力洗牌?",
+      "description": "中評社台北8月12日電(記者 邱筠媜)中國國民黨籍“立法院長”韓國瑜11日召開協商討論今年度總預算案,因不滿國民黨“立法院”黨團總召傅崐萁再度缺席,動怒要傅崐萁辭掉總召,韓國瑜甚至以“慈禧太后垂簾聽政”形容傅崐萁,一改過去的中立、和諧的姿態,可見其對傅崐萁主導國民黨團的方式失去耐性,也讓藍營“立院”兩大權力核心的微妙關係浮上檯面。 今年度總預算延宕至8月仍未完成三讀,明年度總預算又即",
+      "link": "http://www.crntt.com/doc/7_0_160255971_1_0812004925.html",
+      "pubDate": "2026-08-11 16:49:24",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255987.jpg",
+      "keywords": [
+        "韓國瑜",
+        "傅崐萁"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a786f6a1dfb46fc84e4b890ceae45cac",
+      "title": "Truist上調評級 指百思買銷售動力受換機需求及AI採用改善",
+      "description": "Truist Securities周二表示,百思買(BBY.US)在持續換機需求及新興迷你產品周期等因素帶動下,銷售動力正在改善。 該券商預期,這家電子產品零售商於8月27日公布業績時,其2026財年第二季度美國同店銷售將增長2.5%。Truist指出,華爾街目前預期約為增長1%。 Truist分析師Scot C...",
+      "link": "https://hk.finance.yahoo.com/news/truist%E4%B8%8A%E8%AA%BF%E8%A9%95%E7%B4%9A-%E6%8C%87%E7%99%BE%E6%80%9D%E8%B2%B7%E9%8A%B7%E5%94%AE%E5%8B%95%E5%8A%9B%E5%8F%97%E6%8F%9B%E6%A9%9F%E9%9C%80%E6%B1%82%E5%8F%8Aai%E6%8E%A1%E7%94%A8%E6%94%B9%E5%96%84-164630948.html",
+      "pubDate": "2026-08-11 16:46:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "百思買",
+        "ciccarelli",
+        "truist"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2283ccf51cc93b140e50022c0e0153b7",
+      "title": "黃耀輝:“政院”無人機草案沒學好美國制度",
+      "description": "中評社台北8月12日電(記者 張穎齊)朝野力推無人機採購特別條例,各自推出版本。台北商業大學財稅系教授黃耀輝11日痛批,“行政院”版草案內容草率、文不對題,只談採購,卻沒有真正建立本土無人載具產業鏈的制度設計,用特別預算編列存在空白授權及違反財政紀律疑慮,從蔡英文到“賴政府”,都使用特別預算,過於浮濫、亂灌水。 他認為,美國制度中如何協助無人機研發走向商業化、如何促進民用無人機系統發",
+      "link": "http://www.crntt.com/doc/7_0_160255735_1_0812004046.html",
+      "pubDate": "2026-08-11 16:40:08",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255739.JPG",
+      "keywords": [
+        "蔡英文",
+        "黃耀輝",
+        "國民黨",
+        "賴清德",
+        "民眾黨：無人機"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2dbbd1f3d7d40e4aced197a0aadbde65",
+      "title": "關注:韓對傅動怒 長期矛盾攤上檯面",
+      "description": "中評社台北8月12日電(記者 張嘉文)中國國民黨籍“立法院長”韓國瑜11日主持朝今年度政府總預算案野協商時罕見動怒,直接點名未出席的國民黨“立法院”黨團總召傅崐萁,甚至撂下不來協商、不授權就乾脆辭掉總召的重話。韓這一怒,看起來是總預算協商久拖不決所引爆,但背後卻也將他與傅崐萁之間累積已久的矛盾直接攤在檯面上。 韓國瑜此次怒火確實不小,甚至以“慈禧太后垂簾聽政”形容,要求傅崐萁要嘛親自",
+      "link": "http://www.crntt.com/doc/7_0_160255988_1_0812003954.html",
+      "pubDate": "2026-08-11 16:39:53",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255990.jpg",
+      "keywords": [
+        "總預算",
+        "韓國瑜",
+        "傅崐萁",
+        "“立法院”"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f40392c496e9622a5e26a58f831df273",
+      "title": "王育敏棄守嘉義 吳品叡選戰難上加難",
+      "description": "中評社嘉義8月11日電(記者 李京昇)嘉義縣長選戰,中國國民黨從自提人選轉向禮讓無黨籍朴子市長吳品叡參選,顯示藍營策略已從單打獨鬥轉為在野整合,但曾代表國民黨參選、並接掌縣黨部的國民黨不分區王育敏,選前請辭主委,讓地方充滿疑惑。對吳品叡而言,她雖具市長歷練及跨黨派優勢,卻面臨組織不足,吳品叡能否有效轉移藍營既有基本盤,將成選戰關鍵。 國民黨今年嘉義縣長選戰,沒有沿用過去自提參選人的模",
+      "link": "http://www.crntt.com/doc/7_0_160255907_1_0812005313.html",
+      "pubDate": "2026-08-11 16:32:24",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255912.jpg",
+      "keywords": [
+        "嘉義縣",
+        "吳品叡"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9a4c0e87da2370be60c5caf5129be73b",
+      "title": "獨家:Wealthfront將房貸業務拓展至加州最大客戶市場",
+      "description": "Investing.com - Investing.com獲悉,Wealthfront Corporation(納斯達克:WLTH)正將其房貸業務延伸至加州——這是該公司最大的客戶市場,也是其逐步向各州推進計劃中的最新一步,目前已覆蓋三個州。",
+      "link": "https://hk.finance.yahoo.com/news/%E7%8D%A8%E5%AE%B6-wealthfront%E5%B0%87%E6%88%BF%E8%B2%B8%E6%A5%AD%E5%8B%99%E6%8B%93%E5%B1%95%E8%87%B3%E5%8A%A0%E5%B7%9E%E6%9C%80%E5%A4%A7%E5%AE%A2%E6%88%B6%E5%B8%82%E5%A0%B4-163037702.html",
+      "pubDate": "2026-08-11 16:30:37",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPED0T1F1_M.jpg",
+      "keywords": [
+        "科羅拉多州",
+        "wealthfront"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2bc470c6dcf485d128552d944d170b89",
+      "title": "媒體參觀液冷散熱技術 改變AI伺服器生態",
+      "description": "中評社桃園8月12日電(記者 盧誠輝)台灣筆記型電腦代工大廠仁寶電腦布局AI產業,11日位在桃園大溪的AI伺服器製造中心正式啟用。仁寶也特別開放媒體進入廠區,參觀仁寶自主研發的液冷散熱技術,如何改變AI伺服器生態,讓伺服器的體積越變越小,效能卻越來越高。 仁寶電腦成立於1984年,原為筆記型電腦及智慧裝置產業的代工大廠,近年積極布局雲端伺服器、汽車電子與智慧醫療等新興事業,總部設於台",
+      "link": "http://www.crntt.com/doc/7_0_160255970_1_0812002850.html",
+      "pubDate": "2026-08-11 16:28:50",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255973.jpg",
+      "keywords": [
+        "液冷散熱技術",
+        "ai伺服器",
+        "仁寶電腦"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4957ed90edbdb78cf8428976b60f96a6",
+      "title": "韓國瑜嗆傅崐萁 韓家軍白喬茵盼點醒黨內",
+      "description": "中評社高雄8月12日電(記者 蔣繼平)中國國民黨籍“立法院長”韓國瑜11日怒斥缺席總預算朝野協商的國民黨“立法院”黨團總召傅崐萁。對此,國民黨籍高雄市議員白喬茵11日也喊話盼“君子務本,本立而道生”這番話可以真正點醒黨內許多人,若忘了社會多數人怎麼看,將成選舉包袱。 白喬茵呼籲,只要黨內高層多聽聽人民心聲,這次,國民黨提名高雄市參選人、“立委”柯志恩真的會贏,因為國民黨要爭的,不是和",
+      "link": "http://www.crntt.com/doc/7_0_160255956_1_0812002643.html",
+      "pubDate": "2026-08-11 16:26:43",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255961.jpg",
+      "keywords": [
+        "國民黨",
+        "白喬茵",
+        "柯志恩",
+        "韓國瑜",
+        "傅崐萁"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e24bb39294f14edbbe7751213519f4b3",
+      "title": "LIV球手零星回歸PGA巡迴賽 巡迴賽或需為更多人作準備",
+      "description": "任何認為被沙特阿拉伯LIV高爾夫豐厚獎金吸引的球手,永遠不會重返PGA巡迴賽的想法,現時已站不住腳。五個月後,或有多達五名前LIV球手,在加州賽季揭幕戰中開球。 布魯克斯·科普卡是首位回歸的球手,但結果不如他所願。他出賽16次,表現一度像一位五屆大滿貫冠軍,直至其球僮遞上推桿。科普卡在聯邦快遞盃排名第94位,未能晉級季後賽,他形容這次表現「可悲」。 帕特里克·瑞德在LIV 2026賽季開始前一周,決定不續約。他目前在歐洲巡迴賽的「杜拜競賽」中領先,並篤定會成為尚未獲豁免、可取得2027年PGA巡迴賽參賽資格的十名領先球手之一。 瑞德表示:「我一直都希望在PGA巡迴賽開始和結束我的職業生涯。」他將於下周在蘇格蘭參加Nexo錦標賽,爭奪300萬美元獎金。即使是新巡迴賽賽程中較次要的「挑戰者系列」賽事,亦會感覺像是一種升級。 目前在領先十名中的其他球手包括尤金尼奧·查卡拉、伯恩德·維斯伯格及肖恩·諾里斯。他們全部都是LIV高爾夫於2022年推出時的成員,並且都已離開LIV足夠長時間,可以無罰款(及無股權)回歸。 PGA巡迴賽目前事務繁多,正嘗試鞏固2028年改革後的賽程,並建立一個能真正賦予「季後賽」一詞意義的賽制。 布萊恩·羅拉普擔任PGA巡迴賽行政總裁一年,從未花太多時間談論LIV高爾夫,因為沒有必要,尤其是在現時。羅拉普在彭博新聞訪問中表示「沒有合併,沒有與LIV高爾夫的對話」,不知何故成為新聞。框架協議解決了訴訟,這點至關重要。 然而,創造一條回歸之路,最終仍需納入考慮。 這個「叛逆」聯盟在沒有沙特資金下,正處於求生模式。儘管它正以主要投資者的承諾,傾向於「LIV 2.0」的概念,但數字並不合理。公共投資基金在五年內花費超50億美元,其中大部分用於吸引因金錢而轉投LIV的明星球手。 LIV行政總裁斯科特·奧尼爾上周分享與投資者達成協議的消息時表示:「他們很多人來,是因為這是一個賺錢的好機會,而這次的第二次機會是股權而非現金。」 他充滿樂觀,但細節欠奉,其中最主要的是投資規模。 隨後賽事繼續進行。華金·尼曼第九次奪冠。喬恩·拉姆連續第三次鎖定個人冠軍,並獲得600萬美元獎金,較他過去兩年奪冠時的1800萬美元有所下降。 斯科蒂·舍夫勒贏得PGA巡迴賽常規賽冠軍,獲得1000萬美元獎金。PGA巡迴賽2028年新的「錦標賽系列」提供2000萬美元獎金。LIV高爾夫重組後的獎金,可能只有PGA巡迴賽的一半。這筆賬並不複雜。 LIV將於下周在印第安納波利斯結束賽季。之後呢?球手將有數月時間思考他們在高爾夫的未來,期間或會參加零星的歐洲巡迴賽或亞洲巡迴賽賽事。 奧尼爾就主要投資者提供最新消息的前一天,卡梅隆·史密斯談及重返PGA巡迴賽時表示:「我的意思是,如果這是唯一的選擇,我認為所有人肯定百分百會想在那裡。」盧卡斯·赫伯特表示,其經理人已與巡迴賽聯繫。 關鍵人物是拉姆和布賴森·德尚博,他們對LIV高爾夫的價值,較對PGA巡迴賽更高。當然,德尚博不這麼認為。 德尚博上周接受《紐約郵報》訪問時表示:「就我個人而言,我也很想參加PGA巡迴賽的賽事。」「我認為這對高爾夫運動最好。我很樂意這樣做。這不是非此即彼的心態,而是『我們能否兩者兼顧?』我認為這是每個人都想達到的目標。」 他續指:「地球上沒有一個高爾夫球迷不想看到我參加大型巡迴賽事,我明白這一點。」「我很想參加有意義的賽事,喜歡打團體賽,也喜歡在任何允許我打球的地方比賽。」 這是否PGA巡迴賽及其成員所希望的呢? 羅拉普於一月曾向德尚博、史密斯及拉姆——自LIV於2022年推出以來的大滿貫冠軍——提供回歸之路,並給予他們三周時間決定。無人接受該提議,這並不令人意外。當時,沒有跡象顯示沙特阿拉伯會關閉對這個(曾經)完全依賴現金的聯盟的資金水龍頭。 這三位是知名球手。還有其他球手,例如泰瑞爾·哈頓(四屆萊德盃隊成員)及尼曼(九次LIV勝利)。亦有未經考驗的年輕球手。此外,還有17名40歲或以上的球手,他們可能不願為艱難的回歸之路而奮鬥,重返昔日地位。 LIV 2.0如何成形以及能持續多久,將決定很多事情。 羅拉普一直堅稱他希望為巡迴賽爭取最佳利益,同時尊重其球手可能因經歷過大分裂而懷有更多不滿。他也可能意識到,PGA巡迴賽沒有他們也運作良好。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16550114-liv%E7%90%83%E6%89%8B%E9%9B%B6%E6%98%9F%E5%9B%9E%E6%AD%B8pga%E5%B7%A1%E8%BF%B4%E8%B3%BD-%E5%B7%A1%E8%BF%B4%E8%B3%BD%E6%88%96%E9%9C%80%E7%82%BA%E6%9B%B4%E5%A4%9A%E4%BA%BA%E4%BD%9C%E6%BA%96%E5%82%99",
+      "pubDate": "2026-08-11 16:22:57",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/ae77f4cb89866099bb9017c7648804da_LIV_Golf_49248_FB.jpg",
+      "keywords": [
+        "獎金",
+        "體育",
+        "liv高爾夫",
+        "高爾夫球手",
+        "pga巡迴賽"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3f14a92cf17b388ec8bed546388260e8",
+      "title": "關注:盧秀燕、蔣萬安高人氣 綠攻勢來了?",
+      "description": "中評社台北8月12日電(記者 黃筱筠)最近中國國民黨籍台中市長盧秀燕、台北市長蔣萬安人氣旺,一再被追問是否要參選2028等議題,而北市府前發言李政軒在這時候涉台中市政府秘書處勞務採購洩密等案,李政軒過去也擔任過盧秀燕秘書,偵辦此案似乎能“一箭雙鵰”,刻意要打擊盧、蔣,此時司法動作的時間巧合,很像是綠營展開的攻勢。 盧秀燕才喊出跟蔣萬安是姐弟,也是“同組的”,沒想到被檢調偵辦案件,也與",
+      "link": "http://www.crntt.com/doc/7_0_160256015_1_0812002211.html",
+      "pubDate": "2026-08-11 16:22:10",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160256019.jpg",
+      "keywords": [
+        "韓國瑜",
+        "李政軒",
+        "蔣萬安",
+        "盧秀燕"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ef2eae606fb97751850bcb29eb8eb49",
+      "title": "Bitmine Immersion Technologies(BMNR)宣佈 ETH 持有量達 581 萬枚,加密資產及現金持有總額達 116 億美元",
+      "description": "Bitmine 持有 ETH 總供應量的 4.8%,目前 ETH 總供應量為 1.207 億枚 短短 14 個月內,Bitmine 已完成「5% 煉金術」目標的 96% 7 月,ETH 跑贏 Nasdaq 100 指數 2,500 個基點,為 2025 年 7 月以來最大幅度,反映加密資產基本面持續增強 Bitmine 過去一週回購了 300 萬股普通股;自 2026 年 7 月起,公司已根據早前宣佈的 40 億美元股份回購計劃,累計回購逾 1,900 萬股 Bitmine 於 2026 年 6 月 26 日獲納入羅素 1000 大型股指數 (Russell 1000...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/bitmine-immersion-technologiesbmnr-eth--581--116--302848696.html",
+      "pubDate": "2026-08-11 16:22:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1966634/1.jpg?id=OA2850060&p=original",
+      "keywords": [
+        "inc.",
+        "bitmine immersion technologies"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "be4b00215dd3c2a545e5c250a1fa4a7f",
+      "title": "不再構成國安威脅 白宮解除美國政府設備使用TikTok的禁令",
+      "description": "【彭博】-- 川普政府取消了在聯邦機構設備上使用TikTok的限制,稱這款流行的社交媒體應用程式轉移到美國投資者手中後已不再構成國家安全威脅。白宮管理和預算辦公室周一在備忘錄中撤銷了2023年有關禁止在政府設備上使用該視頻分享服務的指令。美國司法部上個月發表書面意見認定,TikTok不再符合2022年通過的一項法...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%8D%E5%86%8D%E6%A7%8B%E6%88%90%E5%9C%8B%E5%AE%89%E5%A8%81%E8%84%85-%E7%99%BD%E5%AE%AE%E8%A7%A3%E9%99%A4%E7%BE%8E%E5%9C%8B%E6%94%BF%E5%BA%9C%E8%A8%AD%E5%82%99%E4%BD%BF%E7%94%A8tiktok%E7%9A%84%E7%A6%81%E4%BB%A4-161823419.html",
+      "pubDate": "2026-08-11 16:18:23",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "-- 川普政府",
+        "構成國家安全威脅",
+        "tiktok"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4d72608321ee7abaed1ea46c560a91e2",
+      "title": "基本半導體(09971.HK)建議申請H股全流通",
+      "description": "基本半導體(09971.HK)公布,建議申請H股全流通,涉及轉換1,675.52萬股未上市內資股,佔公司總股本5.51%。目前,公司尚未向中國證監會提交申請及備案文件。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E5%9F%BA%E6%9C%AC%E5%8D%8A%E5%B0%8E%E9%AB%94-09971-hk-%E5%BB%BA%E8%AD%B0%E7%94%B3%E8%AB%8Bh%E8%82%A1%E5%85%A8%E6%B5%81%E9%80%9A-161742106.html",
+      "pubDate": "2026-08-11 16:17:42",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "665f21e649a5c87958e9aa95300eeb97",
+      "title": "關注:賴姪也邀蔡英文當基隆主委有何用意?",
+      "description": "中評社台北8月12日電(記者 張穎齊)蔡英文近期動作頻頻,先後擔任民進黨台東縣長參選人陳瑩、新北市長參選人蘇巧慧的競選總部主委,豈料各地都傳出敲碗聲,賴清德姪子、民進黨基隆市長參選人童子瑋也要邀蔡英文當競總主委,這不尋常的意義,究竟是蔡賴分進合擊?還是賴清德聲勢減弱?而基隆基本盤藍大於綠,蔡英文擔任競總主委,能為選舉帶來什麼幫助,值得進一步觀察。 蔡英文近期大動作投入輔選行列,先後擔",
+      "link": "http://www.crntt.com/doc/7_0_160255793_1_0812001305.html",
+      "pubDate": "2026-08-11 16:13:04",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255795.jpg",
+      "keywords": [
+        "蔡英文",
+        "謝國樑",
+        "國民黨",
+        "童子瑋",
+        "民進黨",
+        "賴清德"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "26723058fbd129c713f1f276c7989a43",
+      "title": "張延廷:演習美語老師檯面化 未來限制更多",
+      "description": "中評社台北8月12日電(記者 張嘉文)正在進行的漢光42號演習,各演訓場域出現大批俗稱“美語老師”的美方人員,引發關注。前台灣空軍副司令、退役中將張延廷向中評社表示,台美軍事合作多年都有美方顧問參與,根本不是新鮮事,過去之所以低調自有道理,如今卻將這些交流搬到檯面上,恐怕未來會面臨更多限制。 他也質疑,漢光演習處處有“美語老師”盯場,台軍是否已經形成依賴?如果真正開戰,美方人員都離開",
+      "link": "http://www.crntt.com/doc/7_0_160255964_1_0812001149.html",
+      "pubDate": "2026-08-11 16:11:48",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/11/160255966.JPG",
+      "keywords": [
+        "張延廷",
+        "漢光演習",
+        "台美關係",
+        "美方人員"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5daca5fd961e7629218af8b6fdf1be65",
+      "title": "HARIO推杯載式電動攪拌器登陸美國 輕鬆製作抹茶拿鐵",
+      "description": "HARIO株式會社,一家領先的耐熱玻璃及精品咖啡設備製造商,今日宣布在美國推出其抹茶拿鐵攪拌器。這是一款集攪拌、起泡及盛載於單一耐熱玻璃杯的多功能電動攪拌器。該產品將於8月11日起,透過HARIO的全球網站獨家供美國消費者選購。這次拿鐵攪拌器於2026年在日本首次亮相,HARIO決定將其推廣至美國,是受美國抹茶需求不斷增長所推動,抹茶正迅速成為現代美國生活方式的必需品。 抹茶順滑之路的「結塊」挑戰 儘管抹茶在美國各地持續普及,許多人仍認為傳統製備方法困難或難以接觸,因其需要專門工具及技術。另一個常見挑戰是抹茶粉末往往未能順滑混合,尤其是在冷液體中,導致結塊及質地不均。這不僅令製備過程複雜化,亦可能降低最終飲品的品質,即使消費者購買優質抹茶亦然。 HARIO改進攪拌器技術 克服抹茶結塊問題 為應對這些挑戰,並支援家居及商業環境中更一致、高品質的抹茶製備,HARIO開發了抹茶拿鐵攪拌器。儘管HARIO過往曾推出多款電動攪拌器,包括Creamer「Qto」及Creamer「Z」,但抹茶拿鐵攪拌器透過專為抹茶製備而設的設計,實現從攪拌到飲用的完整體驗,主要改進包括: HARIO美國公司董事總經理宇野良平解釋:「抹茶現已成為許多美國人日常生活的一部分,但製備體驗一直未能跟上熱情。」他續指:「抹茶拿鐵攪拌器改變了這一點。它每次都能提供順滑、咖啡店品質的成果,且沒有挫敗感。我們希望任何熱愛抹茶的人,無論是在咖啡店櫃檯後,還是在自己的廚房,現在都能自信地製作抹茶。」 產品詳情 關於HARIO HARIO於1921年成立,是一家總部位於東京的耐熱玻璃製造商,亦是日本唯一擁有自家耐熱玻璃工廠的公司。HARIO以其標誌性的V60咖啡濾杯聞名全球,業務已從實驗室玻璃器皿擴展至咖啡及茶具、微波爐適用炊具、廚具及工業玻璃組件。HARIO在全球八個國家設有九個辦事處,產品分銷至超80個國家,將日本耐熱玻璃帶到世界各地的家庭、咖啡店及工業領域。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16550064-hario%E6%8E%A8%E6%9D%AF%E8%BC%89%E5%BC%8F%E9%9B%BB%E5%8B%95%E6%94%AA%E6%8B%8C%E5%99%A8%E7%99%BB%E9%99%B8%E7%BE%8E%E5%9C%8B-%E8%BC%95%E9%AC%86%E8%A3%BD%E4%BD%9C%E6%8A%B9%E8%8C%B6%E6%8B%BF%E9%90%B5",
+      "pubDate": "2026-08-11 16:02:38",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/f9a1149a77184daaa134a87d8c594f97_HARIO_Matcha_Latte_Frother_US_Relaunch_Press_Release_drink_variations_FB.jpg",
+      "keywords": [
+        "抹茶",
+        "抹茶拿鐵攪拌器",
+        "咖啡設備",
+        "商業事",
+        "hario",
+        "電動攪拌器"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1b01634d462d634ea15b3fd2b0824a88",
+      "title": "Marvel Tokon Fighting Souls評測4vs4共用體力機制顛覆格鬥標準",
+      "description": "Marvel Tokon Fighting Souls評測4vs4共用體力機制顛覆格鬥標準|放棄傳統後台回血機制,《Marvel Tokon: Fighting Souls》讓同隊4名參戰超級英雄",
+      "link": "https://www.hk01.com/%E9%81%8A%E6%88%B2%E5%8B%95%E6%BC%AB/60377720/marvel-tokon-fighting-souls%E8%A9%95%E6%B8%AC4vs4%E5%85%B1%E7%94%A8%E9%AB%94%E5%8A%9B%E6%A9%9F%E5%88%B6%E9%A1%9B%E8%A6%86%E6%A0%BC%E9%AC%A5%E6%A8%99%E6%BA%96",
+      "pubDate": "2026-08-11 16:01:43",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260811/1163917193453244416217409.jpeg/i9Hhf36OB-NrTEw8X6Ut6dAO7zygp_-jvRqtdb0arXU",
+      "keywords": [
+        "遊戲歷史",
+        "switch",
+        "gamers",
+        "打機",
+        "vr",
+        "sony",
+        "遊戲評論",
+        "本土遊戲",
+        "遊戲文化",
+        "nintendo",
+        "hk01",
+        "遊戲開發",
+        "香港遊戲",
+        "app store",
+        "google play",
+        "遊戲",
+        "steam",
+        "games",
+        "geme",
+        "玩家"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "42e7045df48e9d82cb4fdc46b67703da",
+      "title": "從感知邁向自主:中控技術攜工業AI與AOP技術亮相OGA 2026和Gastech 2026",
+      "description": "新加坡、馬來西亞吉隆坡和曼谷2026年8月12日 /美通社/ -- 全球工業自動化與工業人工智能領域的領先企業中控技術(SUPCON,688777.SH,SUPCON.SW)宣佈,將參加東南亞兩大能源行業展會:在馬來西亞吉隆坡舉辦的2026年亞洲石油天然氣展(OGA 2026)以及在泰國曼谷舉辦的2026年世界石油天然氣、氫能展覽會(Gastech 2026)。...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/aiaopoga-2026gastech-2026-302848670.html",
+      "pubDate": "2026-08-11 16:01:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": null,
+      "keywords": [
+        "fvt",
+        "pdt",
+        "tds"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
     },
     {
       "id": "0e1e6314bd841b77b74c9bfa3b83adb9",
@@ -275,6 +732,23 @@
         "politics"
       ],
       "region": "hk"
+    },
+    {
+      "id": "8a61b247f1a314fc24193634f5b79271",
+      "title": "美股在看空聲中屢創新高 謹慎情緒或許意味著仍有上升空間",
+      "description": "8%。22V Research總裁兼首席市場策略師Dennis DeBusschere在給客戶的報告中寫道:「相對於經濟數據,目前的投資者情緒讀數意味著回報率將高於正常水平。」滙豐全球股票策略師Alastair Pinder表示:「過去幾周,投資者有太多理由質疑股票牛市。我們認為,這些擔憂正越來越多地反映在市場定...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E8%82%A1%E5%9C%A8%E7%9C%8B%E7%A9%BA%E8%81%B2%E4%B8%AD%E5%B1%A2%E5%89%B5%E6%96%B0%E9%AB%98-%E8%AC%B9%E6%85%8E%E6%83%85%E7%B7%92%E6%88%96%E8%A8%B1%E6%84%8F%E5%91%B3%E8%91%97%E4%BB%8D%E6%9C%89%E4%B8%8A%E5%8D%87%E7%A9%BA%E9%96%93-153930024.html",
+      "pubDate": "2026-08-11 15:39:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/3bbdb02903271b6f87a54b0546bdcd67.jpg",
+      "keywords": [
+        "投資者"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "92ebc1cd4df91bd289bf58f14f02b39f",
@@ -2850,6 +3324,26 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "a35acb4b5f4fd32020f5dc67a2e35a6f",
+      "title": "澳洲央行維持利率4.35%不變,警告通脹仍高企或需進一步加息",
+      "description": "Investing.com — 澳洲儲備銀行(RBA)週二宣布維持利率不變,符合市場預期。儘管近期通脹有所降溫,但央行警告價格壓力依然高企,不排除進一步加息的可能性。",
+      "link": "https://hk.finance.yahoo.com/news/%E6%BE%B3%E6%B4%B2%E5%A4%AE%E8%A1%8C%E7%B6%AD%E6%8C%81%E5%88%A9%E7%8E%874-35-%E4%B8%8D%E8%AE%8A-%E8%AD%A6%E5%91%8A%E9%80%9A%E8%84%B9%E4%BB%8D%E9%AB%98%E4%BC%81%E6%88%96%E9%9C%80%E9%80%B2-%E6%AD%A5%E5%8A%A0%E6%81%AF-054327938.html",
+      "pubDate": "2026-08-11 05:43:27",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXNPEE2507E_M.jpg",
+      "keywords": [
+        "rba",
+        "央行",
+        "澳洲儲備銀行",
+        "通脹"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "0accc3386351add73145c2a672e6cdd9",
@@ -14800,41 +15294,6 @@
       "category": [
         "top",
         "environment",
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "3dffbe936effe6a5192fee44525327c8",
-      "title": "比特幣穩守65,000美元關口,美國通脹數據與伊朗局勢成焦點",
-      "description": "Investing.com — 週一,比特幣在65,000美元附近保持相對穩定。此前,出乎意料疲弱的美國就業報告推動比特幣突破該水平,但投資者在等待美國通脹數據公布之際態度趨於謹慎,同時密切關注中東局勢緩和進展的不確定性。",
-      "link": "https://hk.finance.yahoo.com/news/%E6%AF%94%E7%89%B9%E5%B9%A3%E7%A9%A9%E5%AE%8865-000%E7%BE%8E%E5%85%83%E9%97%9C%E5%8F%A3-%E7%BE%8E%E5%9C%8B%E9%80%9A%E8%84%B9%E6%95%B8%E6%93%9A%E8%88%87%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E6%88%90%E7%84%A6%E9%BB%9E-074646502.html",
-      "pubDate": "2026-08-10 07:46:46",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEBBM0M5_M.jpg",
-      "keywords": [
-        "business news",
-        "retirement",
-        "401k",
-        "mortgage",
-        "track portfolio",
-        "suze orman",
-        "tax",
-        "market news",
-        "stock valuation",
-        "economy",
-        "investment tools",
-        "finance",
-        "personal finance",
-        "mutual funds",
-        "investing",
-        "real estate",
-        "stock",
-        "business",
-        "stocks",
-        "investor"
-      ],
-      "category": [
         "business"
       ],
       "region": "hk"
@@ -27363,20 +27822,6 @@
       "region": "hk"
     },
     {
-      "id": "d3da98a7b8c4ebfd489302dddc21f2bc",
-      "title": "陳茂波:下半年將舉辦逾100項盛事活動 料吸引逾185萬旅客",
-      "description": "<匯港通訊> 財政司司長陳茂波在網誌表示,今年上半年約有175萬旅客參與超過130項盛事活動,為香港帶來約58億港元的消費額,經濟增加價值約為33億港元。藝術、文創到盛事活動,為本港增添了正面氛圍和消費需求。整體數據也展現良好勢頭,本港的零售業總銷貨價值已經連升14個月,今年上半年的升幅為9.6%。陳茂波稱,近日...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%99%B3%E8%8C%82%E6%B3%A2-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%B0%87%E8%88%89%E8%BE%A6%E9%80%BE100%E9%A0%85%E7%9B%9B%E4%BA%8B%E6%B4%BB%E5%8B%95-%E6%96%99%E5%90%B8%E5%BC%95%E9%80%BE185%E8%90%AC%E6%97%85%E5%AE%A2-055554530.html",
-      "pubDate": "2026-08-09 05:55:54",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "d4c5ecd53fb7a278a229516a778d7548",
       "title": "世界U20田徑錦標賽港隊刷新3項青年港績 郭俊廷、古綽峰再創突破",
       "description": "香港田徑代表隊早前出發到美國參加一連4天的世界U20田徑錦標賽,港隊派出10位運動員參賽,兩位狀態正勇的短跑男將郭俊廷、古綽峰,分別刷新100米、",
@@ -37451,6 +37896,6 @@
       "pinned": true
     }
   ],
-  "total": 1951,
-  "last_updated": "2026-08-12T12:03:00.868453"
+  "total": 1973,
+  "last_updated": "2026-08-12T13:02:31.903970"
 }
