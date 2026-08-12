@@ -1,0 +1,10 @@
+{
+  "id": "ef46a93ead20bfccea7f2dd982a919d2",
+  "title": "Meta|新模型減磅 PC單顯卡可運行",
+  "source_name": "Startupbeat",
+  "link": "https://www.ejtech.ai/ceoai/meta-%E6%96%B0%E6%A8%A1%E5%9E%8B-%E6%B8%9B%E7%A3%85-pc-%E5%96%AE%E9%A1%AF%E5%8D%A1-%E5%8F%AF%E9%81%8B%E8%A1%8C/",
+  "rewritten_title": "Meta推輕量AI模型Muse Glimmer 300億參數單顯卡可運行",
+  "rewritten": "Meta推出新人工智能模型Muse Glimmer，以Apache 2.0許可證開源。作為Muse Spark 1.2的精簡版，新模型有300億個參數，透過量化技術令記憶體佔用大減六成至不足20GB，預設上下文視窗為12.8萬個詞元，可在個人電腦上以單張顯示卡運行，繞過雲端運算成本並提升私隱度。模型主要處理代理式AI任務，如日程管理及文件組織，並支援多步驟推理、工具調用失敗恢復及多模態輸入，接受逾…",
+  "status": "done",
+  "fetched_at": "2026-08-12T23:01:42"
+}
