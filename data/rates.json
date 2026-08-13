@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12T08:31:57.049615+08:00",
+  "last_updated": "2026-08-13T08:31:56.307799+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -298,38 +298,40 @@
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
           "source": "bank",
-          "existing_funds_rate": 2.85
+          "existing_funds_rate": 2.8
         },
         "6m": {
           "rate": 3.1,
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
-          "source": "bank"
+          "source": "bank",
+          "existing_funds_rate": 2.95
         },
         "12m": {
           "rate": 3.1,
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
-          "source": "bank"
+          "source": "bank",
+          "existing_funds_rate": 2.95
         },
         "1m": {
-          "rate": 2.4,
+          "rate": 2.35,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "2m": {
-          "rate": 2.5,
+          "rate": 2.45,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "4m": {
-          "rate": 2.85,
+          "rate": 2.8,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
@@ -629,14 +631,16 @@
         },
         "12m": {
           "new_funds": {
+            "rate": 3.05,
+            "min_deposit": 0,
+            "note": "新資金定期存款優惠",
+            "source": "hket"
+          },
+          "existing_funds": {
             "rate": 2.95,
-            "min_deposit": 10000,
-            "note": "手機銀行新資金",
-            "source": "hket",
-            "conditions": [
-              "mobile_banking",
-              "new_funds"
-            ]
+            "min_deposit": 0,
+            "note": "定期存款牌價利率",
+            "source": "hket"
           }
         },
         "9m": {
@@ -650,6 +654,40 @@
         "18m": {
           "existing_funds": {
             "rate": 3.0,
+            "min_deposit": 0,
+            "note": "定期存款牌價利率",
+            "source": "hket"
+          }
+        },
+        "6m": {
+          "new_customer": {
+            "rate": 3.3,
+            "min_deposit": 0,
+            "note": "新客戶定期存款優惠",
+            "source": "hket"
+          },
+          "new_funds": {
+            "rate": 2.9,
+            "min_deposit": 0,
+            "note": "新資金定期存款優惠",
+            "source": "hket"
+          },
+          "existing_funds": {
+            "rate": 2.8,
+            "min_deposit": 0,
+            "note": "定期存款牌價利率",
+            "source": "hket"
+          }
+        },
+        "3m": {
+          "new_funds": {
+            "rate": 2.8,
+            "min_deposit": 0,
+            "note": "新資金定期存款優惠",
+            "source": "hket"
+          },
+          "existing_funds": {
+            "rate": 2.7,
             "min_deposit": 0,
             "note": "定期存款牌價利率",
             "source": "hket"
@@ -866,7 +904,7 @@
         },
         "6m": {
           "existing_funds": {
-            "rate": 2.75,
+            "rate": 2.8,
             "min_deposit": 20000,
             "note": "電子渠道開立",
             "source": "hket",
@@ -1069,7 +1107,7 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 3.75,
+          "rate": 3.8,
           "min_deposit": 2000,
           "note": "定期存款年利率",
           "source": "bank"
@@ -1089,25 +1127,25 @@
       },
       "cny": {
         "1m": {
-          "rate": 0.2,
+          "rate": 0.25,
           "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 0.3,
+          "rate": 0.4,
           "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 0.35,
+          "rate": 0.45,
           "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 0.4,
+          "rate": 0.5,
           "min_deposit": 10000,
           "note": "定期存款年利率",
           "source": "bank"
@@ -1500,13 +1538,13 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 2.45,
+          "rate": 2.5,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
         },
         "4m": {
-          "rate": 2.65,
+          "rate": 2.7,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -1673,16 +1711,6 @@
             "note": "不論新舊資金",
             "source": "hket",
             "conditions": []
-          },
-          "new_customer": {
-            "rate": 16.0,
-            "min_deposit": 100000,
-            "note": "全新客戶首10萬，推廣期至2026年8月31日",
-            "source": "hket",
-            "conditions": [
-              "new_customer",
-              "limited_time"
-            ]
           }
         },
         "3m": {
@@ -1737,6 +1765,16 @@
             "note": "不論新舊資金",
             "source": "hket",
             "conditions": []
+          },
+          "new_customer": {
+            "rate": 16.0,
+            "min_deposit": 100000,
+            "note": "全新客戶首10萬，推廣期至2026年8月31日",
+            "source": "hket",
+            "conditions": [
+              "new_customer",
+              "limited_time"
+            ]
           }
         },
         "24m": {
@@ -2006,9 +2044,41 @@
       "hkd": {
         "1m": {
           "general": {
-            "rate": 2.8,
-            "min_deposit": 1,
+            "rate": 1.5,
+            "min_deposit": 0,
             "note": "定期存款",
+            "source": "hket"
+          }
+        },
+        "3m": {
+          "new_funds": {
+            "rate": 1.6,
+            "min_deposit": 0,
+            "note": "新資金定期存款優惠",
+            "source": "hket"
+          }
+        },
+        "6m": {
+          "new_funds": {
+            "rate": 2.8,
+            "min_deposit": 0,
+            "note": "新資金定期存款優惠",
+            "source": "hket"
+          }
+        },
+        "9m": {
+          "new_funds": {
+            "rate": 2.2,
+            "min_deposit": 0,
+            "note": "新資金定期存款優惠",
+            "source": "hket"
+          }
+        },
+        "12m": {
+          "new_funds": {
+            "rate": 2.3,
+            "min_deposit": 0,
+            "note": "新資金定期存款優惠",
             "source": "hket"
           }
         }
