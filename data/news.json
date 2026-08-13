@@ -1,81 +1,259 @@
 {
   "articles": [
     {
-      "id": "94006d9ce809782a7e5281ca061943fb",
-      "title": "美國財政部7月預算赤字大於預期 並較去年同期擴大",
-      "description": "美國財政部公布,7月錄得4,323.1億美元預算赤字,高於彭博調查預期的3,460億美元,亦高於去年同期的2,911.4億美元預算赤字。 6月月度赤字為1,203.1億美元。 本財政年度首10個月,赤字為1.799萬億美元,高於去年同期的1.629萬億美元赤字。 免責聲明 本內容由 AI 生成,僅供一般資訊及參考...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E8%B2%A1%E6%94%BF%E9%83%A87%E6%9C%88%E9%A0%90%E7%AE%97%E8%B5%A4%E5%AD%97%E5%A4%A7%E6%96%BC%E9%A0%90%E6%9C%9F-%E4%B8%A6%E8%BC%83%E5%8E%BB%E5%B9%B4%E5%90%8C%E6%9C%9F%E6%93%B4%E5%A4%A7-180626054.html",
-      "pubDate": "2026-08-12 18:06:26",
+      "id": "44e0fb5ed7ded61cfdf5e001e220f79a",
+      "title": "美國財政赤字今年迄今擴大至1.8萬億美元",
+      "description": "Investing.com - 根據美國財政部發布的月結單,聯邦政府7月份錄得4,323億美元的財政赤字,使本財年首10個月的累計赤字接近1.8萬億美元。",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E8%B2%A1%E6%94%BF%E8%B5%A4%E5%AD%97%E4%BB%8A%E5%B9%B4%E8%BF%84%E4%BB%8A%E6%93%B4%E5%A4%A7%E8%87%B31-8%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83-194009374.html",
+      "pubDate": "2026-08-12 19:40:09",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXNPEB7O0QZ_M.jpg",
+      "keywords": [
+        "赤字",
+        "財政部"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "046c0af3c28a28ab427819b845b40f00",
+      "title": "Redfin:7月美國房屋銷售量跌至約兩年低位 因樓價及按揭利率高企",
+      "description": "Redfin.com周三表示,美國7月房屋銷售量跌至近兩年最低水平,受接近紀錄高位的樓價、高按揭利率及經濟不穩定影響。 根據該網上房地產經紀數據,經季節性調整後,上月房屋銷售量按月下跌4.1%至285,312間;房屋售價中位數按年上升3.2%至407,730美元,創7月紀錄高位。月內平均按揭利率升至一年高位6.5...",
+      "link": "https://hk.finance.yahoo.com/news/redfin-7%E6%9C%88%E7%BE%8E%E5%9C%8B%E6%88%BF%E5%B1%8B%E9%8A%B7%E5%94%AE%E9%87%8F%E8%B7%8C%E8%87%B3%E7%B4%84%E5%85%A9%E5%B9%B4%E4%BD%8E%E4%BD%8D-%E5%9B%A0%E6%A8%93%E5%83%B9%E5%8F%8A%E6%8C%89%E6%8F%AD%E5%88%A9%E7%8E%87%E9%AB%98%E4%BC%81-191845896.html",
+      "pubDate": "2026-08-12 19:18:45",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
+        "按揭"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "66be0e2a1186eb4ab9d552cab9ee2a05",
+      "title": "8月夜期收市報25320點 跌88點",
+      "description": "<匯港通訊> 8月夜期期指收市報25320點,跌88點,低水120點,成交10031張;9月夜期期指報25246點,跌83點,低水194點,成交154張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125320%E9%BB%9E-%E8%B7%8C88%E9%BB%9E-190500061.html",
+      "pubDate": "2026-08-12 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊>"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "d3cca8ee4c03f8c914d1939f2773f7fe",
+      "title": "IEA預測2026年石油需求跌幅擴大 因霍爾木茲海峽持續關閉",
+      "description": "國際能源署(IEA)周三表示,由於霍爾木茲海峽持續關閉拖累消費,該署預計今年全球石油需求跌幅將較早前估計更大。 IEA在最新月度石油市場報告中表示,現時預計2026年石油消費將減少160萬桶/日,較此前預測多51萬桶/日。 IEA指出,作為全球最重要原油運輸咽喉的霍爾木茲海峽實際上仍處於關閉狀態,擾亂國際供應鏈並...",
+      "link": "https://hk.finance.yahoo.com/news/iea%E9%A0%90%E6%B8%AC2026%E5%B9%B4%E7%9F%B3%E6%B2%B9%E9%9C%80%E6%B1%82%E8%B7%8C%E5%B9%85%E6%93%B4%E5%A4%A7-%E5%9B%A0%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E6%8C%81%E7%BA%8C%E9%97%9C%E9%96%89-135553375.html",
+      "pubDate": "2026-08-12 13:55:53",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "石油",
+        "霍爾木茲海峽",
+        "國際能源署",
+        "iea"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "ad1858ec182b3da975272fd5fb394202",
+      "title": "UBS稱Salesforce料下調下半年收入增長加速預期",
+      "description": "UBS Securities周三發表報告指,Salesforce(CRM.US)客戶對軟件支出的反饋好壞參半,或令市場對其下半年收入增長加速的預期降溫。 該客戶關係管理平台將於8月26日公布2027財年第二季度業績。UBS預計,季度每股盈利為3.44美元,高於市場預期的3.27美元。 Salesforce於5月預...",
+      "link": "https://hk.finance.yahoo.com/news/ubs%E7%A8%B1salesforce%E6%96%99%E4%B8%8B%E8%AA%BF%E4%B8%8B%E5%8D%8A%E5%B9%B4%E6%94%B6%E5%85%A5%E5%A2%9E%E9%95%B7%E5%8A%A0%E9%80%9F%E9%A0%90%E6%9C%9F-194749168.html",
+      "pubDate": "2026-08-12 19:47:49",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "salesforce",
+        "客戶關係管理",
+        "好壞參半",
+        "ubs securities周三",
+        "keirstead"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bceda93e4d2be271b84835f8eead09cc",
+      "title": "SpaceX股價飆升11%,華爾街押注馬斯克的「真實世界」AI野心",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/spacex%E8%82%A1%E5%83%B9%E9%A3%86%E5%8D%8711-%E8%8F%AF%E7%88%BE%E8%A1%97%E6%8A%BC%E6%B3%A8%E9%A6%AC%E6%96%AF%E5%85%8B%E7%9A%84-%E7%9C%9F%E5%AF%A6%E4%B8%96%E7%95%8C-ai%E9%87%8E%E5%BF%83-194632922.html",
+      "pubDate": "2026-08-12 19:46:32",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7I0CN_M.jpg",
+      "keywords": [
+        "spacex",
+        "grok",
+        "摩根士丹利"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7359e6f77ac6897198c7f92829183457",
+      "title": "北卡羅來納州後衛特林布爾轉投路易斯維爾 獲判第五季參賽資格",
+      "description": "北卡羅來納州後衛塞斯·特林布爾將轉投路易斯維爾大學,並受惠於科羅拉多州法官最近發出的初步禁制令。該禁制令允許於2022年高中畢業的學生運動員,在來季獲得第五個賽季的參賽資格。 ESPN周三早上報道,特林布爾已承諾加盟路易斯維爾大學,而路易斯維爾大學亦在社交媒體上分享了相關帖文。 特林布爾在Instagram帖文中感謝北卡羅來納州球迷,稱那是「任何人夢寐以求的四年」。他寫道,自己每天都竭盡全力代表北卡羅來納州。 特林布爾寫道:「我整個夏天都在考慮重返大學,而北卡羅來納州一直都在我的考慮之列。但由於北卡羅來納州陣容已滿,加上其他情況,我將無法回家,並會轉會。」 特林布爾在二月一場比賽中,於北卡羅來納州隊後備席前射入一記三分球,皮球在比賽剩下0.4秒時應聲入網,助排名第十四的焦油腳跟隊以71比68擊敗排名第四的藍魔隊,為焦油腳跟隊寫下傳奇一頁。 北卡羅來納州體育總監史蒂夫·紐馬克表示,他們理解所有相關人士面對的困難和複雜情況,並形容特林布爾在焦油腳跟隊的四年是真正的榜樣。 紐馬克指出:「科羅拉多州最近的法院裁決,為已完成傳統四年參賽資格的學生運動員,創造了一個不尋常的局面。裁決的時間、持續的法律程序以及我們陣容周圍的情況,都令情況變得愈來愈難以應對。」 北卡羅來納州新任教練米高·馬龍在一份聲明中表示,即使特林布爾會到其他地方打一個賽季,他永遠都是焦油腳跟隊的一員。 馬龍說:「我對塞斯深感同情,因為法院裁決的時間,令他和我們的球隊在組建陣容時陷入困境。但這一切都不會改變我們對塞斯的看法。他以正確的方式代表了北卡羅來納州,我很感激有機會認識他和他的家人。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16557395-%E5%8C%97%E5%8D%A1%E7%BE%85%E4%BE%86%E7%B4%8D%E5%B7%9E%E5%BE%8C%E8%A1%9B%E7%89%B9%E6%9E%97%E5%B8%83%E7%88%BE%E8%BD%89%E6%8A%95%E8%B7%AF%E6%98%93%E6%96%AF%E7%B6%AD%E7%88%BE-%E7%8D%B2%E5%88%A4%E7%AC%AC",
+      "pubDate": "2026-08-12 19:45:55",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/77e2619f7c49c6332319707f7893abed_Louisville_Trimble_Basketball_977_1_FB.jpg",
+      "keywords": [
+        "塞斯·特林布爾",
+        "路易斯維爾",
+        "體育",
+        "轉會",
+        "大學籃球",
+        "北卡羅來納州"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "64cdbcac7c0a27917cdb8821f9797aaf",
+      "title": "舒夫拿爭聯邦快遞盃冠軍 季後賽孟菲斯酷熱中開打",
+      "description": "美國職業高爾夫巡迴賽(PGA Tour)季後賽展開,聯邦快遞聖裘德錦標賽(FedEx St. Jude Championship)獎金達2000萬美元,僅69名球手參賽,當中約一半球手感到形勢緊迫。 頭號種子史葛利舒夫拿(Scottie Scheffler)正準備迎接連續三場季後賽,儘管他能否第二次贏得聯邦快遞盃,完全取決於他在東湖球場(East Lake)舉行的賽季總決賽表現。 舒夫拿表示,他有三場賽事,三個好的開局來結束今年賽季,對此感到非常興奮。他曾七次在TPC南風球場(TPC Southwind)作賽,是他在PGA巡迴賽中參賽次數最多的球場,但從未贏過。 聯邦快遞盃排名50名以外的球手,包括排名第54位的佐敦史畢斯(Jordan Spieth),以及今年六月才轉為職業球手、排名第70位的積遜高雲(Jackson Koivun),都感到非常緊迫。如果他們未能晉身前50名,並前往聖路易斯參加寶馬錦標賽(BMW Championship),他們的賽季將會結束。 排名第12位的羅利麥克羅伊(Rory McIlroy)已確定可參加巡迴賽總決賽。他去年沒有參加TPC南風球場的賽事,因為當時參賽沒有意義。但他今年回歸,可能是因為這位美國大師賽冠軍,今季只在PGA巡迴賽上陣11次。 麥克羅伊指出,這次決定涉及多個因素。他認為在賽季最後兩場賽事前休息四周,對他而言可能過長,影響競爭力。因此,這次是個好機會,他希望打出好表現,同時亦可檢視自己的狀態,並在炎熱天氣下盡可能多加練習。 麥克羅伊未能達到PGA巡迴賽會員所需的最低15場賽事要求,但由於他所屬的歐洲巡迴賽(Europe tour)有足夠豁免條款,加上他憑30場勝利成為終身會員,這可能不會構成問題。 會員資格是投票選出PGA巡迴賽年度最佳球員的必要條件,這可能是今年季後賽最引人注目的部分,之後巡迴賽將穿越炎熱的美國中部地區,最終抵達同樣炎熱的亞特蘭大。 今年沒有球手表現特別突出。贏得球員錦標賽(The Players Championship)的卡梅倫楊格(Cameron Young),原本可能是領跑者,直至賴恩霍士(Ryan Fox)在皇家伯克代爾球場(Royal Birkdale)第18洞打出令人難忘的小鳥球,贏得英國公開賽(British Open)。 麥克羅伊今年只贏得一場賽事,即美國大師賽,但他不會放棄。舒夫拿今年亦只贏得一場賽事,即他今年在加州沙漠的首場比賽,但他有五次獲得亞軍,並在所有大滿貫賽事中,除一場外均打入前四名。儘管他今年只贏過一次,但他仍然是難以擊敗的球手。 馬特費茲柏德歷(Matt Fitzpatrick)和基斯高特立(Chris Gotterup)各贏得三場賽事。溫德姆克拉克(Wyndham Clark)贏得兩場,包括美國公開賽(U.S. Open)。霍士和PGA錦標賽冠軍艾朗賴(Aaron Rai)各贏得一場。他們當中任何一人贏得聯邦快遞盃,都可能大大有助於獲得積尼告斯獎(Jack Nicklaus Award)。 麥克羅伊表示,如果重視贏得最大型賽事,可能會說是卡梅倫楊格和溫德姆克拉克。馬特費茲柏德歷今年表現出色。舒夫拿今年表現非常穩定,只是沒有像過去幾年那樣贏得那麼多冠軍。他重申,這一切都取決於你重視甚麼。他認為自己重視大型賽事和球手的重要時刻。 賽事將於周四展開,預計八月天氣將會酷熱難耐,一如既往。賽季即將結束,聖裘德錦標賽亦然。PGA巡迴賽已表明,該賽事將不會納入2028年頂級「錦標賽系列」(Championship Series)。 目前,這項賽事與PGA巡迴賽任何其他賽事一樣重要。本周過後排名前50位的球手,將確保獲得下個賽季所有2000萬美元的重點賽事資格,並保留晉級巡迴賽總決賽的希望,屆時所有球手將重新開始,冠軍將贏得聯邦快遞盃。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16557368-%E8%88%92%E5%A4%AB%E6%8B%BF%E7%88%AD%E8%81%AF%E9%82%A6%E5%BF%AB%E9%81%9E%E7%9B%83%E5%86%A0%E8%BB%8D-%E5%AD%A3%E5%BE%8C%E8%B3%BD%E5%AD%9F%E8%8F%B2%E6%96%AF%E9%85%B7%E7%86%B1%E4%B8%AD%E9%96%8B%E6%89%93",
+      "pubDate": "2026-08-12 19:42:33",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/9871b86e0090703ddca34594d719f5ec_Rocket_Classic_Golf_3929__FB.jpg",
+      "keywords": [
+        "fedex cup",
+        "pga tour",
+        "體育",
+        "scottie scheffler",
+        "高爾夫",
+        "rory mcilroy"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f7b04863889ddb6269ecdc51b2c93dfc",
+      "title": "德意志銀行上調希爾頓評級至「買入」,預期重設創造入場良機",
+      "description": "Investing.com - 希爾頓全球控股(Hilton Worldwide)股價過去一個月承受壓力,但德意志銀行(Deutsche Bank)表示,投資者預期已大幅重設,加上酒店需求依然穩健、估值趨於合理,目前已形成較具吸引力的入場時機。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%BE%B7%E6%84%8F%E5%BF%97%E9%8A%80%E8%A1%8C%E4%B8%8A%E8%AA%BF%E5%B8%8C%E7%88%BE%E9%A0%93%E8%A9%95%E7%B4%9A%E8%87%B3-%E8%B2%B7%E5%85%A5-%E9%A0%90%E6%9C%9F%E9%87%8D%E8%A8%AD%E5%89%B5%E9%80%A0%E5%85%A5%E5%A0%B4%E8%89%AF%E6%A9%9F-193542597.html",
+      "pubDate": "2026-08-12 19:35:42",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEB1H0D1_M.jpg",
+      "keywords": [
+        "希爾頓",
+        "deutsche bank",
+        "hilton worldwide",
+        "德意志銀行"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fc225dd3f15cd33d05f511235de47b81",
+      "title": "Russell Westbrook 正式宣布結束 18 個球季 NBA 生涯",
+      "description": "摘要Russell Westbrook 正式宣布從 NBA 退役,結束橫跨 7 支球隊、長達 18 個球季的球員生涯。這位 2017 年聯盟 MVP 以 209 次大三元,成為 NBA 史上的大三元王,同時在生涯助攻榜上排名第 5 位。儘管收到 Sacramento Kings 及 Washington Wiza...",
+      "link": "https://hk.sports.yahoo.com/news/russell-westbrook-%E6%AD%A3%E5%BC%8F%E5%AE%A3%E5%B8%83%E7%B5%90%E6%9D%9F-18-%E5%80%8B%E7%90%83%E5%AD%A3-193353157.html",
+      "pubDate": "2026-08-12 19:33:53",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/1fad9fcabd0bf77a570ef32f69aac16831430a1ab4e1b3f3b2b153fb5eef032e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhypebeast_hk_sports_439%2F3356e92a4048e9e0fc3b23b85c29910b.jpg",
+      "keywords": [
+        "russell westbrook",
+        "nba",
+        "washington wizards",
+        "sacramento kings"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "706893658e7d0c312f7b0d0ef46e6579",
+      "title": "新皇崗口岸開通|海關關長陳子達到場巡視 確保各項工作落實到位",
+      "description": "新皇崗口岸開通在即,海關關長陳子達周三(12日)率領一眾管理層視察新皇崗口岸,詳細了解皇崗口岸的最新準備情況,確保各項工作落實到位,以便口",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60379467/%E6%96%B0%E7%9A%87%E5%B4%97%E5%8F%A3%E5%B2%B8%E9%96%8B%E9%80%9A-%E6%B5%B7%E9%97%9C%E9%97%9C%E9%95%B7%E9%99%B3%E5%AD%90%E9%81%94%E5%88%B0%E5%A0%B4%E5%B7%A1%E8%A6%96-%E7%A2%BA%E4%BF%9D%E5%90%84%E9%A0%85%E5%B7%A5%E4%BD%9C%E8%90%BD%E5%AF%A6%E5%88%B0%E4%BD%8D",
+      "pubDate": "2026-08-12 19:30:14",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164412621227560960570216.jpeg/JqiLWzoBcVBhOCvfQewlUss2YLQboOiFnjxXPZ48Vz0",
+      "keywords": [
+        "即時新聞",
+        "hk01",
+        "國際新聞",
+        "香港01",
+        "香港新聞",
+        "新聞",
+        "頭條新聞",
+        "港聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5f416868c9542419c5e66c8a51d7b6c0",
+      "title": "特朗普媒體遭起訴 禁收費提供政策帖文搶先閱覽權",
+      "description": "美國總統特朗普周三遭聯邦法院起訴,要求禁止其旗下Truth Social公司透過付費服務,提供其美國政策帖文的搶先獨家閱覽權以牟利。 訴訟指控,特朗普在其公司網站上,率先發布有關美國戰爭、關稅及其他政策決定的協議,違反憲法,並指官方公告應同時向所有人公開。這次訴訟源於特朗普媒體科技公司本月初推出新訂閱服務,向華爾街公司每月收取高達10萬美元,以便更快取得其帖文,從中進行交易。 新聞自由基金會倡議總監塞思·斯特恩表示:「總統出售由他本人發布的新聞的優先閱覽權,以圖利他控制的私人公司,這種行為公然腐敗且違反憲法,幾年前甚至難以想像。」新聞自由基金會與新聞機構The Intercept均為這次案件的原告。 特朗普媒體公司表示,向交易員出售快速閱覽權在其行業中屬常見做法,並指原告只是試圖讓總統噤聲。 該公司在一份聲明中表示:「來自特朗普總統的資訊由無數平台和新聞機構傳播,其中許多提供訂閱API服務。現在,左翼活躍分子正試圖再次錯誤地利用法院審查他,並損害股東利益。」 這次搶先閱覽服務推出之際,上市的特朗普媒體公司每季虧損數億美元,其股價在兩年前上市後不久,從62美元跌至不足10美元。 原告爭辯指,特朗普的協議,即其帖文在Truth Social獨家發布六小時後才分發到其他平台,違反憲法兩部分:第一修正案賦予新聞界及公眾,以平等條件閱覽總統言論的權利;以及第五修正案禁止對政府福利收取不合理條件。 訴訟要求特朗普媒體公司必須終止名為Truth API的新付費服務,以及與其公司的一般獨家閱覽協議。 即使在新API服務本月初啟動之前,道德監察機構已批評特朗普在Truth Social發文,是公然試圖利用總統職位牟利,類似其他牟利活動,特別是與加密貨幣相關的項目。總統今年較早時提交一份強制性年度財務披露報告,顯示他去年從其政府監管的新加密貨幣業務中,賺取超10億美元。 自他再次當選以來,特朗普的數碼金融公司World Liberty Financial,獲得一間與阿拉伯聯合酋長國政府有關聯的公司,注資5億美元,並向其支持者及可能尋求聯邦優待的人士,出售價值數億美元的特別版特朗普紀念幣,其中包括一名億萬富翁,他正捲入一宗聯邦訴訟,該訴訟後來暫停並達成和解。 除了總統本人,在紐約南區提交的訴訟中,其副幕僚長丹尼爾·斯卡維諾及行政助理娜塔莉·J·哈普亦被列為被告。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16557332-%E7%89%B9%E6%9C%97%E6%99%AE%E5%AA%92%E9%AB%94%E9%81%AD%E8%B5%B7%E8%A8%B4-%E7%A6%81%E6%94%B6%E8%B2%BB%E6%8F%90%E4%BE%9B%E6%94%BF%E7%AD%96%E5%B8%96%E6%96%87%E6%90%B6%E5%85%88%E9%96%B1%E8%A6%BD%E6%AC%8A",
+      "pubDate": "2026-08-12 19:13:45",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/7f057fd1dba31dd4e357c8bf635ee009_Trump_Truth_Social_46135_FB.jpg",
+      "keywords": [
+        "訴訟",
+        "truth social",
+        "商業事",
+        "特朗普",
+        "媒體公司",
+        "美國政策"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a2d564310888f85ad389043e6493ffc3",
+      "title": "美國7月預算赤字激增 聯邦支出加速成長",
+      "description": "Treasury Department 【彭博】-- 由於聯邦支出加速成長,美國7月預算赤字創同期紀錄,達到4320億美元,再次凸顯政府借款需求持續上升。美國財政部周三公佈的數據顯示,2026財年前10個月預算赤字累計達1.8萬億美元。經日曆因素調整後,赤字規模較2025財年同期擴大5%。根據彭博匯編的數據,7月...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B7%E6%9C%88%E9%A0%90%E7%AE%97%E8%B5%A4%E5%AD%97%E6%BF%80%E5%A2%9E-%E8%81%AF%E9%82%A6%E6%94%AF%E5%87%BA%E5%8A%A0%E9%80%9F%E6%88%90%E9%95%B7-191301264.html",
+      "pubDate": "2026-08-12 19:13:01",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/en/bloomberg_chinese_traditional_757/34fc5500582f08ad1ed17ffa3ee42c58.jpg",
+      "keywords": [
+        "treasury department",
         "赤字",
         "美國財政部"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "f8a80170a490571fc2768b1b551a66e2",
-      "title": "美國7月消費者物價年增率降至3.4%,符合市場預期",
-      "description": "Investing.com - 美國勞工部週三公佈的關鍵數據顯示,7月份消費者物價年增率如預期般小幅回落,聯準會(Fed)決策官員將密切關注此數據,以作為調整利率的重要參考依據。",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B7%E6%9C%88%E6%B6%88%E8%B2%BB%E8%80%85%E7%89%A9%E5%83%B9%E5%B9%B4%E5%A2%9E%E7%8E%87%E9%99%8D%E8%87%B33-4-%E7%AC%A6%E5%90%88%E5%B8%82%E5%A0%B4%E9%A0%90%E6%9C%9F-133522647.html",
-      "pubDate": "2026-08-12 13:35:22",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEB5O0O0_M.jpg",
-      "keywords": [
-        "消費者物價年增率",
-        "美國勞工部",
-        "聯準會"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "2806f07e4ed7a1a3f8c64294a0bf7b51",
-      "title": "霍爾木茲海峽船隻通行量跌至近三個月低點",
-      "description": "Investing.com - 霍爾木茲海峽的船隻通行量跌至近三個月低點,市場對美國與伊朗能否達成協議、全面重開這條中東關鍵石油出口通道仍充滿不確定性。",
-      "link": "https://hk.finance.yahoo.com/news/%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%88%B9%E9%9A%BB%E9%80%9A%E8%A1%8C%E9%87%8F%E8%B7%8C%E8%87%B3%E8%BF%91%E4%B8%89%E5%80%8B%E6%9C%88%E4%BD%8E%E9%BB%9E-182927750.html",
-      "pubDate": "2026-08-12 18:29:27",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM4K1RC_M.jpg",
-      "keywords": [
-        "貿易情報公司",
-        "霍爾木茲海峽"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "ffa7753042333f15ccb8f979024b61e7",
-      "title": "騰訊公佈二零二六年第二季業績",
-      "description": "騰訊公佈2026年第二季業績，總收入2,048億元人民幣，按年增長11%；毛利1,184億元，增長13%。非國際財務報告準則經營盈利756億元，增長9%；期內盈利706億元，本公司權益持有人應佔盈利684億元，均增長9%。資本開支528億元，大增176%，自由現金流因大額AI相關預付款轉負138億元。業務方面，本土遊戲收入增長17%，營銷服務收入增長22%，金融科技及企業服務收入增長9%。AI佈局上，集團於智能、應用及基礎設施三層並進：Hy3正式版推出，WorkBuddy及CodeBuddy用戶增長，微信AI智能體小微正灰度測試，並大幅增加算力採購以支持相關需求。",
-      "link": "https://hk.prnasia.com/story/543791-2.shtml",
-      "pubDate": "2026-08-12 10:58:00",
-      "source_name": "美通社",
-      "image_url": null,
-      "keywords": [
-        "ern",
-        "cpr",
-        "mlm",
-        "afi",
-        "tls",
-        "smd"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
       "id": "4c4d35df79d7463810653acf04063156",
@@ -175,6 +353,24 @@
       "region": "hk"
     },
     {
+      "id": "2806f07e4ed7a1a3f8c64294a0bf7b51",
+      "title": "霍爾木茲海峽船隻通行量跌至近三個月低點",
+      "description": "Investing.com - 霍爾木茲海峽的船隻通行量跌至近三個月低點,市場對美國與伊朗能否達成協議、全面重開這條中東關鍵石油出口通道仍充滿不確定性。",
+      "link": "https://hk.finance.yahoo.com/news/%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%88%B9%E9%9A%BB%E9%80%9A%E8%A1%8C%E9%87%8F%E8%B7%8C%E8%87%B3%E8%BF%91%E4%B8%89%E5%80%8B%E6%9C%88%E4%BD%8E%E9%BB%9E-182927750.html",
+      "pubDate": "2026-08-12 18:29:27",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4K1RC_M.jpg",
+      "keywords": [
+        "貿易情報公司",
+        "霍爾木茲海峽"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "df8898a682c7b23896c762264bbe60e9",
       "title": "蜘蛛俠Tom Holland自揭患ADHD與讀寫障礙 家長必知常見症狀表現",
       "description": "湯賀蘭(Tom Holland)早於2016憑藉漫威超級英雄角色「蜘蛛俠」一角爆紅。後來除了蜘蛛俠系列,也拍攝過不少電影作品。早前湯賀蘭曾接受外媒採訪,",
@@ -237,6 +433,24 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "94006d9ce809782a7e5281ca061943fb",
+      "title": "美國財政部7月預算赤字大於預期 並較去年同期擴大",
+      "description": "美國財政部公布,7月錄得4,323.1億美元預算赤字,高於彭博調查預期的3,460億美元,亦高於去年同期的2,911.4億美元預算赤字。 6月月度赤字為1,203.1億美元。 本財政年度首10個月,赤字為1.799萬億美元,高於去年同期的1.629萬億美元赤字。 免責聲明 本內容由 AI 生成,僅供一般資訊及參考...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E8%B2%A1%E6%94%BF%E9%83%A87%E6%9C%88%E9%A0%90%E7%AE%97%E8%B5%A4%E5%AD%97%E5%A4%A7%E6%96%BC%E9%A0%90%E6%9C%9F-%E4%B8%A6%E8%BC%83%E5%8E%BB%E5%B9%B4%E5%90%8C%E6%9C%9F%E6%93%B4%E5%A4%A7-180626054.html",
+      "pubDate": "2026-08-12 18:06:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "赤字",
+        "美國財政部"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "8525f4f961f0e1b0254105cf9017c3d8",
@@ -2030,26 +2244,6 @@
       "region": "hk"
     },
     {
-      "id": "d3cca8ee4c03f8c914d1939f2773f7fe",
-      "title": "IEA預測2026年石油需求跌幅擴大 因霍爾木茲海峽持續關閉",
-      "description": "國際能源署(IEA)周三表示,由於霍爾木茲海峽持續關閉拖累消費,該署預計今年全球石油需求跌幅將較早前估計更大。 IEA在最新月度石油市場報告中表示,現時預計2026年石油消費將減少160萬桶/日,較此前預測多51萬桶/日。 IEA指出,作為全球最重要原油運輸咽喉的霍爾木茲海峽實際上仍處於關閉狀態,擾亂國際供應鏈並...",
-      "link": "https://hk.finance.yahoo.com/news/iea%E9%A0%90%E6%B8%AC2026%E5%B9%B4%E7%9F%B3%E6%B2%B9%E9%9C%80%E6%B1%82%E8%B7%8C%E5%B9%85%E6%93%B4%E5%A4%A7-%E5%9B%A0%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E6%8C%81%E7%BA%8C%E9%97%9C%E9%96%89-135553375.html",
-      "pubDate": "2026-08-12 13:55:53",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "石油",
-        "霍爾木茲海峽",
-        "國際能源署",
-        "iea"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "49fc566dd7df3bdc12f63d670eaf4ab6",
       "title": "新皇崗口岸|陳子達率海關高層視察 重點巡視全新「聯合一站式」車道",
       "description": "海關關長陳子達今日(8月12日)率領一眾管理層視察新皇崗口岸,詳細了解皇崗口岸的最新準備情況,確保各項工作落實到位,以便口岸通關時能為市民提供高效的清關服務。 新皇崗口岸是首個採用「聯合一站式」車道的口岸,陳子達特意重點巡視車輛出入境各樓層,並現場視察關員的車道運作調試。香港海關強調,會繼續全力做好各項準備,確保口岸設施運作安全順暢,帶給市民和旅客最佳的通關體驗。 相關報道:新皇崗口岸|跨部門舉行",
@@ -2206,6 +2400,25 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "f8a80170a490571fc2768b1b551a66e2",
+      "title": "美國7月消費者物價年增率降至3.4%,符合市場預期",
+      "description": "Investing.com - 美國勞工部週三公佈的關鍵數據顯示,7月份消費者物價年增率如預期般小幅回落,聯準會(Fed)決策官員將密切關注此數據,以作為調整利率的重要參考依據。",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B7%E6%9C%88%E6%B6%88%E8%B2%BB%E8%80%85%E7%89%A9%E5%83%B9%E5%B9%B4%E5%A2%9E%E7%8E%87%E9%99%8D%E8%87%B33-4-%E7%AC%A6%E5%90%88%E5%B8%82%E5%A0%B4%E9%A0%90%E6%9C%9F-133522647.html",
+      "pubDate": "2026-08-12 13:35:22",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEB5O0O0_M.jpg",
+      "keywords": [
+        "消費者物價年增率",
+        "美國勞工部",
+        "聯準會"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "dc72181cb27394be4f900c2eabca4c96",
@@ -4374,6 +4587,28 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "ffa7753042333f15ccb8f979024b61e7",
+      "title": "騰訊公佈二零二六年第二季業績",
+      "description": "騰訊公佈2026年第二季業績，總收入2,048億元人民幣，按年增長11%；毛利1,184億元，增長13%。非國際財務報告準則經營盈利756億元，增長9%；期內盈利706億元，本公司權益持有人應佔盈利684億元，均增長9%。資本開支528億元，大增176%，自由現金流因大額AI相關預付款轉負138億元。業務方面，本土遊戲收入增長17%，營銷服務收入增長22%，金融科技及企業服務收入增長9%。AI佈局上，集團於智能、應用及基礎設施三層並進：Hy3正式版推出，WorkBuddy及CodeBuddy用戶增長，微信AI智能體小微正灰度測試，並大幅增加算力採購以支持相關需求。",
+      "link": "https://hk.prnasia.com/story/543791-2.shtml",
+      "pubDate": "2026-08-12 10:58:00",
+      "source_name": "美通社",
+      "image_url": null,
+      "keywords": [
+        "ern",
+        "cpr",
+        "mlm",
+        "afi",
+        "tls",
+        "smd"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "9943575d5fca6c5ae1133fc25c036589",
@@ -54002,6 +54237,6 @@
       "pinned": true
     }
   ],
-  "total": 2802,
-  "last_updated": "2026-08-13T15:01:38.068640"
+  "total": 2814,
+  "last_updated": "2026-08-13T16:01:32.683352"
 }
