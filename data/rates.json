@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T23:00:57.234556+08:00",
+  "last_updated": "2026-08-13T23:04:46.951593+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1401,13 +1401,13 @@
           "new_funds": {
             "rate": 25.0,
             "min_deposit": 20000,
-            "note": "新客戶定期存款優惠",
+            "note": "快閃星期一（新客戶專有）",
             "source": "hket"
           },
           "existing_funds": {
             "rate": 1.6,
             "min_deposit": 0,
-            "note": "定期存款",
+            "note": "定期存款（零元起存）",
             "source": "hket"
           }
         },
@@ -1415,13 +1415,13 @@
           "new_funds": {
             "rate": 6.88,
             "min_deposit": 10000,
-            "note": "新客戶定期存款優惠",
+            "note": "快閃星期一",
             "source": "hket"
           },
           "existing_funds": {
             "rate": 1.0,
             "min_deposit": 0,
-            "note": "定期存款",
+            "note": "定期存款（零元起存）",
             "source": "hket"
           }
         },
@@ -1429,21 +1429,21 @@
           "new_funds": {
             "rate": 3.25,
             "min_deposit": 20000,
-            "note": "新客戶定期存款優惠",
+            "note": "快閃星期一",
             "source": "hket"
           }
         },
         "3m": {
           "new_funds": {
-            "rate": 0.2,
-            "min_deposit": 200000,
-            "note": "新客戶定期存款優惠",
+            "rate": 2.7,
+            "min_deposit": 0,
+            "note": "定期存款（零元起存）",
             "source": "hket"
           },
           "existing_funds": {
             "rate": 2.7,
             "min_deposit": 0,
-            "note": "定期存款",
+            "note": "定期存款（零元起存）",
             "source": "hket"
           }
         },
@@ -1451,7 +1451,7 @@
           "existing_funds": {
             "rate": 3.0,
             "min_deposit": 0,
-            "note": "定期存款",
+            "note": "定期存款（零元起存）",
             "source": "hket"
           }
         },
@@ -1459,7 +1459,7 @@
           "existing_funds": {
             "rate": 3.0,
             "min_deposit": 0,
-            "note": "定期存款",
+            "note": "定期存款（零元起存）",
             "source": "hket"
           }
         }
@@ -1469,7 +1469,7 @@
           "new_funds": {
             "rate": 4.0,
             "min_deposit": 0,
-            "note": "新客戶定期存款優惠",
+            "note": "快閃星期一（美元）",
             "source": "hket"
           }
         },
@@ -1477,7 +1477,7 @@
           "new_funds": {
             "rate": 0.2,
             "min_deposit": 0,
-            "note": "新客戶定期存款優惠",
+            "note": "新客戶加息券 +0.2%（20萬-100萬港元機會，美元1-10萬）",
             "source": "hket"
           }
         }
