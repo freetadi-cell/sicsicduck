@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "id": "0117b1c3e68aec996ea087d903a03183",
+      "title": "Jane Street發行146億美元債券 10年期殖利率逾8%",
+      "description": "【彭博】-- Jane Street發行146億美元債券,這家做市巨頭將把融資所得用於技術基礎設施並拓展交易策略。知情人士稱,Jane Street發行了2031年、2033年和2036年到期的高級擔保票據,規模分別為58.088%。這筆由摩根大通牽頭的固定利率債券發行是Jane Street償還浮動利率貸款並重...",
+      "link": "https://hk.finance.yahoo.com/news/jane-street%E7%99%BC%E8%A1%8C146%E5%84%84%E7%BE%8E%E5%85%83%E5%82%B5%E5%88%B8-10%E5%B9%B4%E6%9C%9F%E6%AE%96%E5%88%A9%E7%8E%87%E9%80%BE8-155935670.html",
+      "pubDate": "2026-08-12 15:59:35",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "基礎設施",
+        "jane street"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "f8a80170a490571fc2768b1b551a66e2",
       "title": "美國7月消費者物價年增率降至3.4%,符合市場預期",
       "description": "Investing.com - 美國勞工部週三公佈的關鍵數據顯示,7月份消費者物價年增率如預期般小幅回落,聯準會(Fed)決策官員將密切關注此數據,以作為調整利率的重要參考依據。",
@@ -12,6 +30,42 @@
         "消費者物價年增率",
         "美國勞工部",
         "聯準會"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "779d6895a093235d02ee24839840aafc",
+      "title": "樓市朝陽|8月一手「大軍壓境」 實體經濟強勁 料港樓走出整固拾升軌|馬泰陽",
+      "description": "踏入8月份,本港一手「戰雲密布」,新界及九龍區新盤更是「遍地開花」。綜合發展商及市場消息,預料本月或有多逾2,...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A8%93%E5%B8%82%E6%9C%9D%E9%99%BD-8%E6%9C%88-%E6%89%8B-%E5%A4%A7%E8%BB%8D%E5%A3%93%E5%A2%83-%E5%AF%A6%E9%AB%94%E7%B6%93%E6%BF%9F%E5%BC%B7%E5%8B%81-110000195.html",
+      "pubDate": "2026-08-12 11:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bossmind_356/366e95e1cc0df2eeab73de239efd5cfb.jpg",
+      "keywords": [
+        "track portfolio",
+        "mortgage",
+        "stock research",
+        "market news",
+        "suze orman",
+        "finance",
+        "business news",
+        "tax",
+        "stocks",
+        "401k",
+        "stock",
+        "investment tools",
+        "quote",
+        "business",
+        "investor",
+        "financial information",
+        "retirement",
+        "personal finance",
+        "investing",
+        "mutual funds"
       ],
       "category": [
         "business"
@@ -40,41 +94,324 @@
       "pinned": true
     },
     {
-      "id": "c76c95e44df08651e92446d87893e1e8",
-      "title": "《藍籌》騰訊(00700.HK)上半年多賺一成 純利逾1,141億人民幣",
-      "description": "騰訊(00700.HK)公布截至2026年6月底止六個月中期業績,純利1,141.15億元人民幣(下同),按年升10.3%;每股盈利12.639元。上半年非國際財務報告準則(Non-IFRS)淨利潤錄1,363.2億元,按年增長9.6%。不派中期息。 中期收入4,012.43億元,按年增長10.1%。按業務劃分,...",
-      "link": "https://hk.finance.yahoo.com/news/%E8%97%8D%E7%B1%8C-%E9%A8%B0%E8%A8%8A-00700-hk-%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%A4%9A%E8%B3%BA-085506373.html",
-      "pubDate": "2026-08-12 08:55:06",
+      "id": "89ad16072174622bf14aeacd8e079845",
+      "title": "俄羅斯7月按年通脹率為6.0%,與前值相同。",
+      "description": "俄羅斯7月按年通脹率為6.0%,與前值相同。~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BF%84%E7%BE%85%E6%96%AF7%E6%9C%88%E6%8C%89%E5%B9%B4%E9%80%9A%E8%84%B9%E7%8E%87%E7%82%BA6-0-%E8%88%87%E5%89%8D%E5%80%BC%E7%9B%B8%E5%90%8C-160000483.html",
+      "pubDate": "2026-08-12 16:00:00",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "國際財務報告準則"
+        "阿思達克財經新聞"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "459bb9c9881cfa45ed54f50034b17db9",
-      "title": "中國電動車月銷佔比首次破60% 汽車出口連續兩個月破百萬輛",
-      "description": "《新華社》報道,中國汽車工業協會8月12日發佈數據顯示,2026年7月份,電動車月度新車銷量佔比首次超過60%、累計佔比首次超過50%;月度出口量連續",
-      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60379334/%E4%B8%AD%E5%9C%8B%E9%9B%BB%E5%8B%95%E8%BB%8A%E6%9C%88%E9%8A%B7%E4%BD%94%E6%AF%94%E9%A6%96%E6%AC%A1%E7%A0%B460-%E6%B1%BD%E8%BB%8A%E5%87%BA%E5%8F%A3%E9%80%A3%E7%BA%8C%E5%85%A9%E5%80%8B%E6%9C%88%E7%A0%B4%E7%99%BE%E8%90%AC%E8%BC%9B",
-      "pubDate": "2026-08-12 10:00:17",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164255205257121792032546.jpeg/3FvTd2555xGMcd_LunGRuTelizmxIbrJ99wNy_fcDcs",
+      "id": "34c25a82d5a96defaa1835d4a8fd9381",
+      "title": "【賽事】英國學霸 Amy Hunt 打破「銀牌魔咒」 登頂歐錦賽百米女飛人寶座",
+      "description": "2026 歐洲田徑錦標賽首日,24 歲的 Amy Hunt 在自家主場中再度展現她的招牌後段爆發力,一舉摘下生涯首面個人成年組金牌,登頂歐錦賽百米女飛人寶座。賽後這位畢業於劍橋大學的學霸,笑稱自己「真...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%B3%BD%E4%BA%8B-%E8%8B%B1%E5%9C%8B%E5%AD%B8%E9%9C%B8-amy-hunt-%E6%89%93%E7%A0%B4-160000361.html",
+      "pubDate": "2026-08-12 16:00:00",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/151cc0655dc793050e282d5f04af5514b5a009f53191587f396dd8704c8d61dc/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Frunning_biji_hk_617%2F823c5da39a29f54077f5553ba382dcb7.png",
       "keywords": [
-        "時事",
+        "劍橋大學",
+        "hunt",
+        "銀牌",
+        "英聯邦運動會"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "36c3a9d30debad6828241f37d569fac0",
+      "title": "「最強小三」五索稱被有錢人洗腦 騷Hermès拖鞋:真正old money",
+      "description": "「最強小三」鍾睿心(五索)因與大生銀行主席馬清鏗維持長達十年的婚外情而為人認識,近年已大大方方承認戀情,早前更上「DaDa師妹」之稱的郭玥彤Y",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60379256/%E6%9C%80%E5%BC%B7%E5%B0%8F%E4%B8%89-%E4%BA%94%E7%B4%A2%E7%A8%B1%E8%A2%AB%E6%9C%89%E9%8C%A2%E4%BA%BA%E6%B4%97%E8%85%A6-%E9%A8%B7herm%C3%A8s%E6%8B%96%E9%9E%8B-%E7%9C%9F%E6%AD%A3old-money",
+      "pubDate": "2026-08-12 15:59:28",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164312140794826752170586.jpeg/V5CA2qK0rx4XYeavTKNKPdSc_QicEQvj60uhcutLoXI",
+      "keywords": [
+        "hk01",
+        "藝人",
+        "即時娛樂",
+        "明星",
+        "新聞",
+        "即時娛樂新聞",
+        "香港新聞",
+        "娛樂新聞",
         "香港01",
-        "中國",
-        "突發"
+        "韓星"
+      ],
+      "category": [
+        "business",
+        "lifestyle"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c68dab90b486b0c6bab4b7d222d16a7f",
+      "title": "李家超對朱鎔基逝世表示深切哀悼 感謝多年來對香港關心和支持",
+      "description": "行政長官李家超就國務院原總理朱鎔基逝世表示深切哀悼,並代表香港特別行政區,向朱鎔基的家屬致以深切慰問。 李家超表示,朱鎔基一直關心和支持香港的發展,在出任不同崗位期間曾多次來港,接觸不同階層的香港市民,堅定貫徹「一國兩制」、「港人治港」、高度自治的方針,保持香港長期繁榮穩定。 李家超又指,朱鎔基擔任國務院總理期間,支持香港在面對亞洲金融風暴等挑戰下團結奮進、發揮優勢,堅決維護香港國際金融中心繁榮穩定。他衷心感謝朱鎔基多年來對香港經濟和社會發展的關心和支持。",
+      "link": "https://www.bastillepost.com/hongkong/article/16556975-%E6%9D%8E%E5%AE%B6%E8%B6%85%E5%B0%8D%E6%9C%B1%E9%8E%94%E5%9F%BA%E9%80%9D%E4%B8%96%E8%A1%A8%E7%A4%BA%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC-%E6%84%9F%E8%AC%9D%E5%A4%9A%E5%B9%B4%E4%BE%86%E5%B0%8D%E9%A6%99",
+      "pubDate": "2026-08-12 15:57:49",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/07/20260716_CR_Battery01_source_web_.jpg",
+      "keywords": [
+        "source-2",
+        "政事",
+        "朱鎔基",
+        "李家超"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "84122d19cf12e558dc9dc834c56100a2",
+      "title": "阿爾法企業(00948.HK)一供一淨籌8,100萬元 每手買賣單位減半",
+      "description": "阿爾法企業(00948.HK)公布,建議進行一供一,發行4.12億股;供股價0.2元,較今日(12日)收市價折讓19.68%。集資淨額8,100萬元,其中50%用於償還部分借貸;餘額用於出資成立新合營、擴充奶類產品業務以及一般營運資金。 此外,每手買賣單位將由20,000股改為10,000股,自9月2日(星期三)...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%98%BF%E7%88%BE%E6%B3%95%E4%BC%81%E6%A5%AD-00948-hk-%E4%BE%9B-%E6%B7%A8%E7%B1%8C8-155555909.html",
+      "pubDate": "2026-08-12 15:55:55",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ec23c01f17324636841ca5db6c5a3984",
+      "title": "Helfie AI 委任兩名科技及企業管治界重量級領袖加入董事會",
+      "description": "前 Apple 及 Airbnb 高層 Patrick Gates 與前 Meta 高層 Sunita Parasuraman 獲委任為非執行董事,進一步增強 Helfie 的科技實力及企業管治能力。 澳洲墨爾本 2026年8月12日 /美通社/ -- Helfie AI(「Helfie」)是一個由 AI 驅動的預防醫療網絡,致力透過流動裝置革新全球醫療保健服務。公司今日宣佈委任 Patrick Gates 及 Sunita Parasuraman 為非執行董事。 Helfie AI 非執行董事 Patrick Gates 及 Sunita Parasuraman Patrick Gates 擁有逾 30 年工程及科技領導經驗,當中包括於 Apple 任職 14 年,期間參與構建 iCloud、FaceTime、iMessage 及 iTunes Store。其後,他出任 AI 硬件初創企業 Humane 的技術總監,之後加入 Airbnb 擔任副總裁兼技術專家,負責推動 AI 產品升級。 Sunita Parasuraman 擁有逾 25 年行業經驗,曾任職於 Apple、Genentech、VMware 及 Meta。她在 Meta 任職長達 12 年,期間曾擔任全球財資主管,負責建立公司的全球財資團隊,並管理為 Meta Libra/Diem 穩定幣計劃提供資產支持的儲備。其後,她出任 Meta 投資及新產品實驗主管,目前亦擔任 IREN Limited、The Baldwin Insurance Group 及 BitGo Holdings 的董事。 Helfie AI 主席 Tony De Fougerolles 表示: 「Patrick 與 Sunita 在 Helfie 發展的重要時刻加入公司,令人振奮。Patrick 曾於 Apple 參與構建支援數以億計用戶的基礎設施,並領導全球規模的 AI 轉型。Sunita 則擁有在最高管理層面處理科技、企業管治及監管事務的豐富經驗。兩人的加入將進一步增強董事會實力,推動我們實踐使命,讓人人都能獲得預防醫療服務。」 Helfie AI 非執行董事 Patrick Gates 補充道 : 「Helfie 正在推動一項真正具有重要意義的事業。我很高興能夠協助團隊應對建立全球健康網絡過程中,在基礎設施及規模化發展方面面對的挑戰。」 Helfie AI 非執行董事 Sunita Parasuraman 表示 : 「Helfie 便捷易用的智能預防保健工具,有望改善全球民眾的生活質素。我期待運用自己在科技管治及負責任規模化發展方面的經驗,支持 Helfie 持續成長。」 關於 HELFIE AI Helfie AI 是一個面向全球逾 80 億人口的健康平台,提供早期檢測、主動預防及健康優化服務。此平台以科學實證為基礎並由 AI 驅動, 透過智能手機即時提供逾 30 項價格相宜的健康檢查 ,並結合深入的醫療分析、數據擁有權及普及使用等優勢。Helfie AI 與全球各地政府及企業合作,致力讓人人都能獲得預防保健服務。 詳情請瀏覽 www.helfie.ai",
+      "link": "https://hk.prnasia.com/story/543842-2.shtml",
+      "pubDate": "2026-08-12 15:55:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnasia.com/media/MS1966667/Helfie-AI-Headshots.jpg?id=OA2863508&p=medium600",
+      "keywords": [
+        "hea",
+        "afi",
+        "per",
+        "iot",
+        "cpr"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "92cfb871c80f9975da8cad16a5da4360",
+      "title": "《公司盈警》祖龍娛樂(09990)料中期虧損擴大",
+      "description": "<匯港通訊> 祖龍娛樂(09990)發盈警,預期截至2026年6月30日六個月將錄得公司擁有人應佔虧損介於約6500萬至7500萬元人民幣(下同),去年同期錄得公司擁有人應佔虧損約為1170萬元。虧損增加主要由於期內,集團的兩款在研新遊戲《代號:神不言》及《詭秘之主:愚者》因受到市場較高關注,管理層經審慎評估其市...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E7%A5%96%E9%BE%8D%E5%A8%9B%E6%A8%82-09990-%E6%96%99%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7-155334868.html",
+      "pubDate": "2026-08-12 15:53:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "55efb5d3ebfcc30abc7bcf6f896c0b4e",
+      "title": "《盈警》祖龍娛樂(09990.HK)估計中期虧損擴至6,500萬人民幣",
+      "description": "祖龍娛樂(09990.HK)發盈警,預計6月止六個月經調整虧損介乎6,000萬至7,000萬人民幣,相較上年同期錄得770萬人民幣;公司擁有人應佔虧損介乎6,500萬至7,500萬人民幣,上年同期約1,170萬人民幣。主要由於期內兩款在研新遊戲相關開支增加;及遊戲上線導致銷售與營銷開支增加。(de/d)~ 阿思達...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%9B%88%E8%AD%A6-%E7%A5%96%E9%BE%8D%E5%A8%9B%E6%A8%82-09990-hk-%E4%BC%B0%E8%A8%88%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E8%87%B36-155008347.html",
+      "pubDate": "2026-08-12 15:50:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6554ca0a4dc2853941cbeddf4cbbdbd6",
+      "title": "微創醫療(00853.HK)預計上半年虧損不超過5,000萬美元",
+      "description": "微創醫療(00853.HK)發盈警,預計6月止六個月淨虧損不超過5,000萬美元,相較上年同期錄得4,900萬美元。預期虧損主要源於匯率波動、可轉換貸款的公允值重估以及一次性非現金因素產生的財務成本約4,300萬美元。 上半年,公司收入實現增長12%-14%,尤其出海業務繼續貢獻約140%的強勁增長;盈利能力穩步...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%BE%AE%E5%89%B5%E9%86%AB%E7%99%82-00853-hk-%E9%A0%90%E8%A8%88%E4%B8%8A%E5%8D%8A%E5%B9%B4%E8%99%A7%E6%90%8D%E4%B8%8D%E8%B6%85%E9%81%8E5-000%E8%90%AC%E7%BE%8E%E5%85%83-154842572.html",
+      "pubDate": "2026-08-12 15:48:42",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "微創醫療"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dcd95c5512fea061f70caf310cdf15ac",
+      "title": "朱鎔基逝世|李家超發文深切哀悼:衷心感謝多年來對香港關心支持",
+      "description": "行政長官李家超今日(八月十二日)就國務院原總理朱鎔基逝世表示深切哀悼。 李家超說:「朱鎔基原總理一直關心和支持香港的發展。他在出任不同崗位期間曾多次訪港,接觸不同階層的香港市民,堅定貫徹『一國兩制』、『港人治港』、高度自治的方針,保持香港長期繁榮穩定。」 「朱鎔基先生擔任國務院總理期間,支持香港在面對亞洲金融風暴等挑戰下團結奮進、發揮優勢,堅決維護香港國際金融中心繁榮穩定。我衷心感謝朱",
+      "link": "https://www.stheadline.com/society/3603776/%E6%9C%B1%E9%8E%94%E5%9F%BA%E9%80%9D%E4%B8%96%E6%9D%8E%E5%AE%B6%E8%B6%85%E7%99%BC%E6%96%87%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC%E8%A1%B7%E5%BF%83%E6%84%9F%E8%AC%9D%E5%A4%9A%E5%B9%B4%E4%BE%86%E5%B0%8D%E9%A6%99%E6%B8%AF%E9%97%9C%E5%BF%83%E6%94%AF%E6%8C%81",
+      "pubDate": "2026-08-12 15:48:38",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/52cb8ecf4930ddd10ab4325739107f4f/2026-08/2026-08-12_16_43_40.png",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d29f554b4c179288c11c903daa3b6468",
+      "title": "貓屎咖啡控股(01869)折讓約17.02%配股籌1100萬元",
+      "description": "<匯港通訊> 貓屎咖啡控股(01869)宣布,配售最多2.82億股股份,佔擴大後股本約14.3%,配售價每股0.039元,較8月12日收市價每股0.047元折讓約17.02%,所得款項總額1100萬元,淨額約1077萬元,擬用於集團的業務經營及一般營運資金。 (WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%93%E5%B1%8E%E5%92%96%E5%95%A1%E6%8E%A7%E8%82%A1-01869-%E6%8A%98%E8%AE%93%E7%B4%8417-02-%E9%85%8D%E8%82%A1%E7%B1%8C1100%E8%90%AC%E5%85%83-154534972.html",
+      "pubDate": "2026-08-12 15:45:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c7156713a469d111330b7eee0246aff7",
+      "title": "中国拟派遣科学家前往伊朗 就稀土元素勘探与加工等领域开展合作交流",
+      "description": "据《南华早报》报导,中国正将其与伊朗的科学合作扩展至具有战略敏感性的稀土领域,其中包括北京方面日益寻求防止向海外转移的加工技术。",
+      "link": "https://www.rfi.fr/cn/%E7%A7%91%E6%8A%80%E4%B8%8E%E6%96%87%E5%8C%96/20260812-%E4%B8%AD%E5%9B%BD%E6%8B%9F%E6%B4%BE%E9%81%A3%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%89%8D%E5%BE%80%E4%BC%8A%E6%9C%97-%E5%B0%B1%E7%A8%80%E5%9C%9F%E5%85%83%E7%B4%A0%E5%8B%98%E6%8E%A2%E4%B8%8E%E5%8A%A0%E5%B7%A5%E7%AD%89%E9%A2%86%E5%9F%9F%E5%BC%80%E5%B1%95%E5%90%88%E4%BD%9C%E4%BA%A4%E6%B5%81",
+      "pubDate": "2026-08-12 15:45:24",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/6497475e-aadf-11f0-bdb7-005056bf30b7/w:1024/p:16x9/2025-10-12T033000Z-792071857-RC22AHA4AW7D-RTRMADP-3-USA-TRUMP-TARRIFS-CHINA.jpg",
+      "keywords": [
+        "科技与文化"
+      ],
+      "category": [
+        "top",
+        "science"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c8c9203319bb68808f6f6b1b7be3609e",
+      "title": "民主黨初選選民求變心切 意識形態分歧不再重要",
+      "description": "民主黨人對於黨派應採取何種意識形態方向,意見仍然分歧。然而,在一系列備受關注的初選中,他們正就黨派未來路向發出更清晰的訊息:他們渴望改變。 在密歇根州及明尼蘇達州備受矚目的參議院初選中,進步派候選人擊敗兩名獲黨領袖大力支持的國會議員。威斯康星州選民以微弱差距否決一名民主社會主義者,但仍選出一名四十歲的縣行政長官,他正尋求成為該州首位黑人州長。而在康涅狄格州,選民罷免一名任期最長的民主黨國會議員,轉而支持一名以世代交替為競選主題的挑戰者。 這次月內至今的結果並未帶來明確的意識形態授權。相反,它們進一步證明今年初選中,民主黨人對更替的渴望正跨越黨派傳統分歧。 盧克·布羅寧在周二初選中擊敗連任十四屆的康涅狄格州眾議員約翰·拉爾森,他在勝選演說中表示:「如果我們黨內的領袖不承認我們需要作出改變,那麼改變將會從基層開始。這是我們黨派需要聽到的訊息。」 民主黨人當前的挑戰是,他們能否利用對自身黨派不滿而引發的反抗情緒,並在十一月將其轉化為對共和黨人的攻勢。除此之外,二零二八年總統大選亦迫在眉睫,屆時新一代領袖將會競逐,以塑造一個正在變革的民主黨。 民主社會主義者弗朗西斯卡·洪曾希望藉著近期進步派的勝利浪潮,包括一周前阿卜杜勒·埃爾賽義德在鄰近密歇根州美國參議院初選中爆冷勝出,以爭奪威斯康星州州長民主黨提名。 然而,她以微弱差距敗給密爾沃基縣行政長官戴維·克勞利,後者是一名較溫和的民主黨人,他曾退出競選,卻在最後數周重新參選,並獲得即將卸任的州長托尼·埃弗斯支持。 洪的落敗亦發生在她過往一些言論被重新提及之後,包括支持削減警方經費,以及她聲稱是開玩笑的取消感恩節呼籲。與埃爾賽義德不同,洪並未獲得國內一些最著名進步派領袖的支持,包括伯尼·桑德斯參議員及亞歷山德里亞·奧卡西奧-科爾特斯眾議員。 這次結果反映黨內崛起左翼的緊張局面。以民粹經濟訊息參選的候選人,在民主黨選民中取得越來越多成功。然而,一些與進步運動近期歷史相關的立場仍然是弱點,尤其是在擔心十一月勝選機會的選民中。 周二,六十一歲的莎拉·阿特金斯·霍加特明顯感受到這種緊張。她表示同意洪在生殖權利及全民醫保等議題上的立場,但擔心洪的極端進步派政治立場及民主社會主義標籤,會令她更難擊敗共和黨人湯姆·蒂芙尼。 阿特金斯·霍加特表示:「我投票給一個我認為更有機會」擊敗蒂芙尼的人。她銷售建築材料及排水系統,並投票給克勞利。 她說:「我沒有憑心投票。」 進步派在明尼蘇達州取得更明確的勝利,副州長佩吉·弗拉納根以壓倒性優勢擊敗中間派眾議員安吉·克雷格。克雷格獲得眾議院民主黨領袖哈基姆·傑弗里斯、前議長南希·佩洛西及多名來自關鍵州的參議員支持。 弗拉納根亦有其強大盟友,包括桑德斯、伊麗莎白·沃倫參議員及即將卸任的明尼蘇達州參議員蒂娜·史密斯,他們在競選最後數周與她一同造勢。但她亦試圖將克雷格的優勢轉化為劣勢,強調她獲得富裕捐助者支持,並抨擊她投票支持一項特朗普支持的移民法案,該法案在移民局人員於明尼阿波利斯槍殺蕾妮·古德及亞歷克斯·普雷蒂後,成為她的負擔。 猶如密歇根州的情況,勝出的進步派候選人競選經費遠少於對手。 弗拉納根在明尼阿波利斯慶祝勝利時表示:「數月以來,我一直告訴大家,這次競選是關於多數人對抗金錢。結果如何?多數人剛剛贏了。」 明尼蘇達州與威斯康星州截然不同的結果,突顯十一月將為進步運動的成果提供更具決定性的考驗。埃爾賽義德及弗拉納根現在必須證明,推動他們初選勝利的訊息,能夠在大選中引起更廣泛選民的共鳴。 弗拉納根四十六歲,克勞利四十歲,埃爾賽義德四十一歲。然而,周二在康涅狄格州,對世代交替的要求表現得最為明確。 四十七歲的布羅寧擊敗七十八歲的拉爾森。布羅寧競選的一個核心主題是華盛頓需要新一代領導層,這個論點幫助他在初選取得決定性勝利前數月,便贏得該州民主黨的認可。 布羅寧勝選後表示:「目標是震動華盛頓特區,我們才剛開始。」一九九八年拉爾森首次當選國會議員時,他還是耶魯大學二年級學生。 拉爾森成為今年第七位在初選中落敗的民主黨眾議院現任議員,其中許多人敗給較年輕的挑戰者。落敗的現任議員及取代他們的民主黨人跨越意識形態界線,令這次落敗浪潮難以簡單解釋為向左轉。 自二零二四年民主黨落敗以來,推動世代交替變得更為迫切,當時對總統喬·拜登年齡的擔憂,最終結束他的連任競選,並迫使黨派對數十年來一直掌權的一代領袖進行一次令人不安的清算。 布羅寧本人將他的挑戰與這次經歷聯繫起來。今年較早時,他認為民主黨需要「新的國會議員、新的民主黨領袖,他們擁有這個時刻所需的活力、勇氣及清晰的使命」。 這種情緒在拉爾森選區的選民中亦很明顯。七十三歲的民主黨人丹·施奈德在初選前數月向美聯社表示,他感謝拉爾森的服務,但認為是時候向前看。 施奈德說:「是時候注入新血,引入新思維了。」 儘管洪在威斯康星州功敗垂成,但她這次挑戰性競選的實力,突顯另一股正在重塑民主黨政治的力量:年輕選民。 三十五歲的軟件工程師科迪·錢德勒投票給洪,並稱她為「我見過最令人興奮的候選人」。錢德勒表示,與過往選舉不同,他投票給他最希望勝出的候選人,而非他認為最有可能勝出的候選人。 三十二歲的麥迪遜企業主傑西·希爾亦支持洪,他指出洪關注負擔能力是其投票的首要原因。 這種支持在地理上有所體現。洪在威斯康星大學旗艦校區所在地麥迪遜,以近七個百分點的優勢勝出,儘管這不足以幫助她贏得提名。 一周前,類似的模式亦幫助埃爾賽義德在密歇根州取得勝利。 埃爾賽義德在密歇根大學所在地沃什特瑙縣以近二十五個百分點的優勢勝出,並在密歇根州立大學所在地英厄姆縣以二十三個百分點勝出。他亦在大急流城以近二十六個百分點勝出,該市擁有大量年輕、受過大學教育的選民。 二十歲的密歇根州選民喬丹·斯奈德支持埃爾賽義德,她表示支持他是因為他的進步派立場,以及她認為他是一個值得信任的人,而非「一個我覺得可以被收買的人」。 斯奈德說:「人們覺得,許多他們信任並在政府任職的人,實際上並未達到預期。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16556921-%E6%B0%91%E4%B8%BB%E9%BB%A8%E5%88%9D%E9%81%B8%E9%81%B8%E6%B0%91%E6%B1%82%E8%AE%8A%E5%BF%83%E5%88%87-%E6%84%8F%E8%AD%98%E5%BD%A2%E6%85%8B%E5%88%86%E6%AD%A7%E4%B8%8D%E5%86%8D%E9%87%8D%E8%A6%81",
+      "pubDate": "2026-08-12 15:32:57",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/0618c650d24c17a2a8f2d3273d813808_APTOPIX_Election_2_26_Wisconsin_Governor_46972_FB.jpg",
+      "keywords": [
+        "民主黨",
+        "進步派",
+        "美國政治",
+        "大視野",
+        "初選",
+        "世代交替"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9b26e01dce4736942af73984a8b89066",
+      "title": "普京:北約正滲入太平洋地區對俄構成威脅 增地區衝突可能性",
+      "description": "俄羅斯太平洋艦隊從8月4日開始演習,俄總統普京(Vladimir Putin)12日抵達庫頁島首府南薩哈林斯克,在巡洋艦上觀摩太平洋艦隊演習。他表示北約正",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379442/%E6%99%AE%E4%BA%AC-%E5%8C%97%E7%B4%84%E6%AD%A3%E6%BB%B2%E5%85%A5%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%9C%B0%E5%8D%80%E5%B0%8D%E4%BF%84%E6%A7%8B%E6%88%90%E5%A8%81%E8%84%85-%E5%A2%9E%E5%9C%B0%E5%8D%80%E8%A1%9D%E7%AA%81%E5%8F%AF%E8%83%BD%E6%80%A7",
+      "pubDate": "2026-08-12 15:31:21",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164338388745064448826034.jpeg/zPQo-f81ZJfEEgBsv26Pch8X0IIvuP_konS-FqJ0vhY",
+      "keywords": [
+        "hk01",
+        "環球",
+        "世界新聞",
+        "新聞",
+        "國際新聞",
+        "國際",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c55b8f3467df73a2edb0da1bdeff3987",
+      "title": "全球首款內置雲台相機手機 HONOR Robot Phone 正式發佈 ARRI 色彩聯乘直指隨身電影機",
+      "description": "手機攝影競賽,像素、感光元件尺寸升級成為慣例,今日 HONOR 帶來了嶄新設計 Robot Phone,顯然不希望在同一條跑道上競逐,而是創造出全球首款內置雲台相機的智能手機——HONOR Robot Phone 不單在硬件上破格,更宣布與電影工業攝影設備品牌 ARRI 合作,將專業電影色彩科學移植至行動裝置。這部手機究竟是噱頭多於實際,還是真正代表著手機影像的下一個世代? 這篇文章 全球首款內置雲台相機手機 HONOR Robot Phone 正式發佈 ARRI 色彩聯乘直指隨身電影機 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/world-first-built-in-gimbal-smartphone-honor-robot-phone-announce/",
+      "pubDate": "2026-08-12 15:26:43",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/12182422/world-first-built-in-gimbal-smartphone-honor-robot-phone-announce-01.jpg",
+      "keywords": [
+        "雲台相機",
+        "tech",
+        "科技新聞",
+        "honor",
+        "arri"
       ],
       "category": [
         "technology"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "2402e812e62fec1a3daca4f149c88a2b",
+      "title": "鄭秀文上圍突然升級震撼一眾粉絲 運動後罕有展露豐滿曲線",
+      "description": "天后鄭秀文(Sammi)向來是圈中的「健美代表」,多年來靠著驚人的自律與運動習慣保持極佳狀態,向來以「紙片人」身材深入民心的她,近日在社交平台",
+      "link": "https://www.hk01.com/%E4%BA%BA%E6%B0%A3%E5%A8%9B%E6%A8%82/60379454/%E9%84%AD%E7%A7%80%E6%96%87%E4%B8%8A%E5%9C%8D%E7%AA%81%E7%84%B6%E5%8D%87%E7%B4%9A%E9%9C%87%E6%92%BC%E4%B8%80%E7%9C%BE%E7%B2%89%E7%B5%B2-%E9%81%8B%E5%8B%95%E5%BE%8C%E7%BD%95%E6%9C%89%E5%B1%95%E9%9C%B2%E8%B1%90%E6%BB%BF%E6%9B%B2%E7%B7%9A",
+      "pubDate": "2026-08-12 15:23:21",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164351796211093504896415.jpeg/MI3hDhv-h3j8WXr814SzdAd-30OcxLvasGtxY7BrcWM",
+      "keywords": [
+        "hk01",
+        "藝人",
+        "即時娛樂",
+        "明星",
+        "viu",
+        "tvb",
+        "marvel",
+        "新聞",
+        "即時娛樂新聞",
+        "香港新聞",
+        "美劇",
+        "娛樂新聞",
+        "mirror",
+        "香港01",
+        "韓星"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ea513c424a78566518febdef5e23bd6",
+      "title": "Angelababy三代同堂馬爾代夫度假被捕 帥氣學霸胞弟成焦點",
+      "description": "37歲的楊穎(Angelababy)趁暑假帶兒子「小海綿」去旅行,有網民分享捕獲Angelababy一家人的照片,見到其母及弟弟也有同行,更有多位網民公開在馬爾代夫與Angelababy的合照,可見此行Angelababy的心情非常愉快。 Angelababy合照來者不拒 多位網民近日在社交平台分享與Angelababy的合照,當中包括出海時,一行人在遊艇上打卡,又見到Angelababy打扮清涼",
+      "link": "https://www.stheadline.com/film-drama/3603723/Angelababy%E4%B8%89%E4%BB%A3%E5%90%8C%E5%A0%82%E9%A6%AC%E7%88%BE%E4%BB%A3%E5%A4%AB%E5%BA%A6%E5%81%87%E8%A2%AB%E6%8D%95-%E5%B8%A5%E6%B0%A3%E5%AD%B8%E9%9C%B8%E8%83%9E%E5%BC%9F%E6%88%90%E7%84%A6%E9%BB%9E",
+      "pubDate": "2026-08-12 15:00:37",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/304ab04a3965622696a0dcafd6050537/2026-08/KF_61.jpg",
+      "keywords": [
+        "馬爾代夫",
+        "黃曉明",
+        "小海綿",
+        "angelababy",
+        "楊穎"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "920954d8ead80e3c985783abfd6db1f2",
@@ -2855,42 +3192,6 @@
       "region": "hk"
     },
     {
-      "id": "779d6895a093235d02ee24839840aafc",
-      "title": "樓市朝陽|8月一手「大軍壓境」 實體經濟強勁 料港樓走出整固拾升軌|馬泰陽",
-      "description": "踏入8月份,本港一手「戰雲密布」,新界及九龍區新盤更是「遍地開花」。綜合發展商及市場消息,預料本月或有多逾2,...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%A8%93%E5%B8%82%E6%9C%9D%E9%99%BD-8%E6%9C%88-%E6%89%8B-%E5%A4%A7%E8%BB%8D%E5%A3%93%E5%A2%83-%E5%AF%A6%E9%AB%94%E7%B6%93%E6%BF%9F%E5%BC%B7%E5%8B%81-110000195.html",
-      "pubDate": "2026-08-12 11:00:00",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bossmind_356/366e95e1cc0df2eeab73de239efd5cfb.jpg",
-      "keywords": [
-        "track portfolio",
-        "mortgage",
-        "stock research",
-        "market news",
-        "suze orman",
-        "finance",
-        "business news",
-        "tax",
-        "stocks",
-        "401k",
-        "stock",
-        "investment tools",
-        "quote",
-        "business",
-        "investor",
-        "financial information",
-        "retirement",
-        "personal finance",
-        "investing",
-        "mutual funds"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "0ae0a01a070556a746ace18623b48064",
       "title": "深圳好去處|怪奇物語Stranger Things期間限定店登陸深圳!即睇攻略 神還原經典場景+必買周邊",
       "description": "Netflix人氣神劇《怪奇物語》粉絲請注意,Stranger Things期間限定店已限時登陸深圳前海壹方城!由即日起至至10月8日期間,Stranger Things期間限定店特別將劇中的1980年代美式復古氛圍與神秘「顛倒世界(Upside Down)」搬進商場,現場神還原了多個劇中經典場景,設有Demogorgon及Demo Dog雕像、Will家中客廳字母燈牆等打卡位等,更有售服飾、包袋、家居用品、角色公仔及寵物聯名周邊,劇迷絕對不能錯過!",
@@ -3777,6 +4078,26 @@
         "entertainment"
       ],
       "region": "hk"
+    },
+    {
+      "id": "459bb9c9881cfa45ed54f50034b17db9",
+      "title": "中國電動車月銷佔比首次破60% 汽車出口連續兩個月破百萬輛",
+      "description": "《新華社》報道,中國汽車工業協會8月12日發佈數據顯示,2026年7月份,電動車月度新車銷量佔比首次超過60%、累計佔比首次超過50%;月度出口量連續",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60379334/%E4%B8%AD%E5%9C%8B%E9%9B%BB%E5%8B%95%E8%BB%8A%E6%9C%88%E9%8A%B7%E4%BD%94%E6%AF%94%E9%A6%96%E6%AC%A1%E7%A0%B460-%E6%B1%BD%E8%BB%8A%E5%87%BA%E5%8F%A3%E9%80%A3%E7%BA%8C%E5%85%A9%E5%80%8B%E6%9C%88%E7%A0%B4%E7%99%BE%E8%90%AC%E8%BC%9B",
+      "pubDate": "2026-08-12 10:00:17",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164255205257121792032546.jpeg/3FvTd2555xGMcd_LunGRuTelizmxIbrJ99wNy_fcDcs",
+      "keywords": [
+        "時事",
+        "香港01",
+        "中國",
+        "突發"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "aa7d642352b7f7efa4187572647ebcd3",
@@ -4958,6 +5279,23 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "c76c95e44df08651e92446d87893e1e8",
+      "title": "《藍籌》騰訊(00700.HK)上半年多賺一成 純利逾1,141億人民幣",
+      "description": "騰訊(00700.HK)公布截至2026年6月底止六個月中期業績,純利1,141.15億元人民幣(下同),按年升10.3%;每股盈利12.639元。上半年非國際財務報告準則(Non-IFRS)淨利潤錄1,363.2億元,按年增長9.6%。不派中期息。 中期收入4,012.43億元,按年增長10.1%。按業務劃分,...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%97%8D%E7%B1%8C-%E9%A8%B0%E8%A8%8A-00700-hk-%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%A4%9A%E8%B3%BA-085506373.html",
+      "pubDate": "2026-08-12 08:55:06",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "國際財務報告準則"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "1d27fa9bef4806a12238aaaa72b6c666",
@@ -52029,6 +52367,20 @@
       "region": "hk"
     },
     {
+      "id": "ad41d5384309093a",
+      "title": "功夫女足｜黃一山被指跟向太隊數臭星爺　細龜親回應忘恩負義質疑　揭周星馳片場鬧人真相",
+      "description": "【周星馳 /黃一山 /陳嵐】現年61歲的「細龜」黃一山，早年因演出周星馳的電影而為人熟知，之後轉往內地發展，接拍過不少劇集電影及綜藝節目，還進軍商界，投資開設火鍋店，生意做得有聲有色。近日周星馳新作電...",
+      "link": "https://topick.hket.com/article/4175690",
+      "pubDate": "2026-08-13 11:18:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4175690/1_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "a4b33f65f6e74c99",
       "title": "余文樂近況︱余文樂婚變復出被指崩壞走樣似阿伯　臉型暴脹大細眼與時代脫節遭千嬅取笑",
       "description": "【余文樂 / 王棠云 / 楊千嬅】現年44歲的余文樂在上月公布與王棠云離婚，驚爆婚變僅約1個月，昔日「億元駙馬」余文樂回歸演藝界即有新工作，火速加盟內地綜藝《披荊斬棘2026》，可是久未公開露面的余文...",
@@ -52512,6 +52864,6 @@
       "pinned": true
     }
   ],
-  "total": 2725,
-  "last_updated": "2026-08-13T11:02:32.216035"
+  "total": 2744,
+  "last_updated": "2026-08-13T12:02:06.981332"
 }
