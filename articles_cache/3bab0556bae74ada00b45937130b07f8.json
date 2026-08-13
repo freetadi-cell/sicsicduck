@@ -1,0 +1,10 @@
+{
+  "id": "3bab0556bae74ada00b45937130b07f8",
+  "title": "Claude水印|生成圖文嵌入隱形水印 遵從歐盟AI新法案 Anthropic推識別措施",
+  "source_name": "Startupbeat",
+  "link": "https://www.ejtech.ai/%E7%A7%91%E6%8A%80%E5%8B%95%E6%85%8B/claude-%E6%B0%B4%E5%8D%B0-%E6%AD%90%E7%9B%9F-ai-%E6%B3%95%E6%A1%88-anthropic-%E8%AD%98%E5%88%A5-%E6%8E%AA%E6%96%BD/",
+  "rewritten_title": "Anthropic為遵歐盟AI法案 Claude輸出內容加隱形水印識別",
+  "rewritten": "美國AI初創Anthropic為遵守歐盟《人工智能法案》透明度規定，開始在Claude輸出的文字及圖片添加數碼簽章來源元資料，嵌入肉眼無法察覺的隱形水印，機器可檢測且複製貼上仍有效，方便用戶及平台識別內容是否由Claude生成。新政策全球通用，涵蓋Claude所有服務，文字採用嵌入式水印，圖像則使用C2PA開放標準。Anthropic強調水印僅屬訊號而非證據，格式轉換或截圖可能令標記消失。歐盟法案…",
+  "status": "done",
+  "fetched_at": "2026-08-13T23:04:19"
+}
