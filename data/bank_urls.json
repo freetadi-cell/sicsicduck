@@ -157,7 +157,7 @@
       "name_en": "ZA Bank",
       "key": "za",
       "urls": {
-        "hket": "https://wealth.hket.com/article/3909935",
+        "hket": "https://wealth.hket.com/article/3909890",
         "general": "https://bank.za.group/hk/deposit"
       },
       "note": "官網 JS 渲染，使用 HKET 作為後備"
@@ -223,5 +223,5 @@
       "note": "官網 JS 渲染，利率表格無法提取，使用 HKET 作為主要數據源"
     }
   ],
-  "last_updated": "2026-07-25"
+  "last_updated": "2026-08-13T23:14:27.768166+08:00"
 }

@@ -28,6 +28,7 @@ BANK_NAME_MAPPING = {
     '平安數字銀行': ['平安數字銀行', '平安銀行', 'PAObank', 'PAO bank'],
     '螞蟻銀行': ['螞蟻銀行', 'Ant Bank', 'Ant'],
     '中信銀行': ['中信銀行', 'CITIC'],
+    '眾安銀行': ['眾安銀行', 'ZA Bank', '眾安'],
 }
 
 
@@ -212,17 +213,26 @@ def detect_bank_name(text):
 
 
 def detect_section(line):
-    """識別區塊類型（新客戶/新資金/現有資金）"""
+    """識別區塊類型（新客戶/新資金/現有資金）
+
+    ⚠️ 若該行本身含有利率（「X個月Y厘/Y%」格式），係數據行而非區塊標題，
+    唔應該被判做 section（否則 main loop 會 continue 跳走，漏抽該利率）。
+    例如「3個月0.51厘1元不論新舊資金」含「不論新舊資金」但都係數據行。
+    """
     line_lower = line.lower()
-    
+
+    # 數據行（已含「N個月/N星期 Y厘/%」利率）唔當 section 標題
+    if re.search(r'\d+\s*(個月|月|星期|周)\s*\d*[.．]?\d*\s*(厘|%)', line):
+        return None
+
     # 快閃活動要優先識別，因為佢有特殊利率
     if '快閃' in line or '閃購' in line or '快搶' in line:
         return 'flash_promotion'
-    
+
     # 特殊識別「（新客戶專有）」格式（富融銀行）
     if '（新客戶專有）' in line or '新客戶專有' in line:
         return 'new_customer'
-    
+
     if '全新客戶' in line:
         return 'new_customer'
     elif '現有客戶新資金' in line:
@@ -234,7 +244,7 @@ def detect_section(line):
     elif '零元起存' in line or '最低存款' in line or '不論新舊資金' in line:
         # 「零元起存」「不論新舊資金」= 不限資金來源嘅牌價（general）
         return 'general'
-    
+
     return None
 
 
@@ -259,11 +269,19 @@ def extract_rate_from_line(line):
     - 100萬元至200萬元 3.30%
     - 10萬元 1.5厘（螞蟻銀行格式）
     """
-    # 過濾標題行（包含「最高」「每日更新」等）
-    title_indicators = ['最高', '每日更新', '定期存款年利率', '存款期年利率', '總年利率']
+    # 過濾標題行（包含「最高」「每日更新」「定期存款年利率」等）
+    # 原條件 ``in line and '存款期' not in line`` 會誤放行：
+    #   「最高20厘，存款期限涵蓋3個月…」——因含「存款期」三個字跳過過濾，誤抽標題利率
+    # 修正：標題特徵（最高/每日更新/定期存款年利率）只要出現就成個唔抽，
+    #        唔好因為行內同時出現「存款期」就放行
+    title_indicators = ['最高', '每日更新', '定期存款年利率', '總年利率']
     for indicator in title_indicators:
-        if indicator in line and '存款期' not in line:
+        if indicator in line:
             return None
+    # 「存款期年利率」係 HKET 表格表頭（存款期 | 年利率 | 起存額 | 條件），
+    # 呢行冇實際利率數字，亦應跳過
+    if '存款期年利率' in line:
+        return None
     
     # 提取存款期
     period_match = re.search(r'(\d+)\s*(個月|月|星期|周)', line)
