@@ -1,43 +1,6 @@
 {
   "articles": [
     {
-      "id": "8c8f14ede12f461cb62c1c8f4f5aa7f5",
-      "title": "黑石考慮放棄30億美元債務融資計畫",
-      "description": "一直為黑石這筆交易提供顧問服務,該項目代號為Project Eclipse。Jefferies發言人不予置評。持續數年的交易低迷令資產管理公司利潤受損,也使其更難從傳統投資者募集資金。這推動了私募股權二級市場以及CFO的發展。原文標題Blackstone Mulls Pulling Plug on $3 Bill...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%BB%91%E7%9F%B3%E8%80%83%E6%85%AE%E6%94%BE%E6%A3%8430%E5%84%84%E7%BE%8E%E5%85%83%E5%82%B5%E5%8B%99%E8%9E%8D%E8%B3%87%E8%A8%88%E7%95%AB-165112986.html",
-      "pubDate": "2026-08-12 16:51:12",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "投資者"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "0655b7bce63f2663b4bae1bd697c1c73",
-      "title": "OPEC進一步下調2026年全球石油需求增長預測 上調明年反彈預期",
-      "description": "石油輸出國組織(OPEC)周三下調2026年全球石油需求增長預測,並預計明年反彈力度將較早前估計更強。 OPEC現時預計,今年石油消耗將增加58萬桶/日,低於上月預測的增加78萬桶/日,並為連續第四次下調預測。至於2027年,OPEC現預測全球石油需求將增加216萬桶/日,高於7月預測的增加194萬桶/日。 國際...",
-      "link": "https://hk.finance.yahoo.com/news/opec%E9%80%B2-%E6%AD%A5%E4%B8%8B%E8%AA%BF2026%E5%B9%B4%E5%85%A8%E7%90%83%E7%9F%B3%E6%B2%B9%E9%9C%80%E6%B1%82%E5%A2%9E%E9%95%B7%E9%A0%90%E6%B8%AC-%E4%B8%8A%E8%AA%BF%E6%98%8E%E5%B9%B4%E5%8F%8D%E5%BD%88%E9%A0%90%E6%9C%9F-164355223.html",
-      "pubDate": "2026-08-12 16:43:55",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "石油輸出國組織",
-        "國際能源署",
-        "石油消耗",
-        "opec"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "f8a80170a490571fc2768b1b551a66e2",
       "title": "美國7月消費者物價年增率降至3.4%,符合市場預期",
       "description": "Investing.com - 美國勞工部週三公佈的關鍵數據顯示,7月份消費者物價年增率如預期般小幅回落,聯準會(Fed)決策官員將密切關注此數據,以作為調整利率的重要參考依據。",
@@ -49,6 +12,24 @@
         "消費者物價年增率",
         "美國勞工部",
         "聯準會"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "c1d3034cda645e72d42dc0e1149418de",
+      "title": "美國10年期國債拍賣最高收益率高於上次拍賣 需求下降",
+      "description": "美國財政部周三拍賣10年期國債,最高收益率為4.683%,高於上次拍賣的4.580%。 拍賣投標倍數為2.53,低於上次拍賣的2.59。 交易商投標佔54.80%,直接投標者佔10.08%,間接投標者佔35.12%。 在中標分配方面,交易商獲配8.60%,直接投標者獲配14.67%,間接投標者獲配76.73%。...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B10%E5%B9%B4%E6%9C%9F%E5%9C%8B%E5%82%B5%E6%8B%8D%E8%B3%A3%E6%9C%80%E9%AB%98%E6%94%B6%E7%9B%8A%E7%8E%87%E9%AB%98%E6%96%BC%E4%B8%8A%E6%AC%A1%E6%8B%8D%E8%B3%A3-%E9%9C%80%E6%B1%82%E4%B8%8B%E9%99%8D-170633705.html",
+      "pubDate": "2026-08-12 17:06:33",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "美國財政部",
+        "10年期國債"
       ],
       "category": [
         "business"
@@ -74,6 +55,301 @@
       "pinned": true
     },
     {
+      "id": "459bb9c9881cfa45ed54f50034b17db9",
+      "title": "中國電動車月銷佔比首次破60% 汽車出口連續兩個月破百萬輛",
+      "description": "《新華社》報道,中國汽車工業協會8月12日發佈數據顯示,2026年7月份,電動車月度新車銷量佔比首次超過60%、累計佔比首次超過50%;月度出口量連續",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60379334/%E4%B8%AD%E5%9C%8B%E9%9B%BB%E5%8B%95%E8%BB%8A%E6%9C%88%E9%8A%B7%E4%BD%94%E6%AF%94%E9%A6%96%E6%AC%A1%E7%A0%B460-%E6%B1%BD%E8%BB%8A%E5%87%BA%E5%8F%A3%E9%80%A3%E7%BA%8C%E5%85%A9%E5%80%8B%E6%9C%88%E7%A0%B4%E7%99%BE%E8%90%AC%E8%BC%9B",
+      "pubDate": "2026-08-12 10:00:17",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164255205257121792032546.jpeg/3FvTd2555xGMcd_LunGRuTelizmxIbrJ99wNy_fcDcs",
+      "keywords": [
+        "時事",
+        "香港01",
+        "中國",
+        "突發"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "3caaa57e23bd525e7e99e2326d56a404",
+      "title": "Josh Kushner 與 Bob Iger 將以 125 億美元收購 Los Angeles Lakers",
+      "description": "摘要 Los Angeles Lakers 正以創紀錄的 125 億美元被商人 Josh Kushner 和 Bob Iger 收購。Mark Walter 在以 100 億美元取得控股權、不足一年之後,便決定出售這支球隊。這宗交易目前仍有待 NBA Board of Governors 於即將舉行的 9 月會議上正式批準。 Josh Kushner 與 Bob Iger 將以破紀錄的 125 億美元估值收購洛杉磯 Lakers。據 ESPN 報道,這宗交易將創下職業體育特許經營權歷來最高成交價。Kushner 與 Iger 早前曾參與推動 NBA 在拉斯維加斯擴軍,現轉而向現任大股東 Mark Walter 提出進取的收購報價。身兼 TWG Global 行政總裁及主席的 Walter,去年向 Buss 家族購入 Lakers 的控股權,作價為當時破紀錄的 100 億美元。這宗交易正值 Walter 因涉嫌與關聯保險實體有關的稅務詐騙而遭聯邦調查;不過,他只會出售 Lakers,並保留於洛杉磯 Dodgers、洛杉磯 Sparks、Chelsea FC 及 Cadillac Formula 1 的其他體育投資。新東主團隊由 Thrive Capital 創辦人 Josh Kushner 和前 Disney 行政總裁 Bob Iger 組成:Kushner 將出售其持有的邁阿密 Heat 少數股權,為收購掃除障礙;Iger 則早已持有 NWSL 球會 Angel City FC 的控股權。LeBron James 離隊後,Lakers 核心球員 Luka Dončić 對球隊迎來新東主時代表示期待,並稱盼望與 Kushner 和 Iger 合作,在洛杉磯打造一支冠軍隊伍。Kushner 談及這宗交易時表示:「作為終身 NBA 球迷,我們深感榮幸能有機會成為洛杉磯 Lakers 的守護者;這是全球最具代表性的體育特許經營權之一。我們十分敬重 Jerry 和 Jeanie Buss 的領導能力與遠見。我們的長遠承諾,是延續這個基礎,在最高水平競逐,並服務這支非凡的球隊、球迷及洛杉磯市。」交易仍有待 NBA 理事會正式批准;審核程序預計需時數星期,並將在 2026 年 9 月於紐約舉行的下次理事會會議前進行。 Click here to view full gallery at Hypebeast",
+      "link": "https://hypebeast.com/zh/2026/8/nba-josh-kushner-bob-iger-acquire-los-angeles-lakers-12-5-billion-usd",
+      "pubDate": "2026-08-12 17:49:21",
+      "source_name": "Hypebeast",
+      "image_url": null,
+      "keywords": [
+        "business",
+        "sports 體育"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d1dac059d3c0968c4f30ef60f23f1467",
+      "title": "Brinker在Chili's增長動力下發布樂觀展望 股價急升",
+      "description": "Brinker International(EAT.US)股價周三急升,公司發布樂觀的2027財年財務指引中值,並有信心旗下Chili's品牌可延續推動第四季度強勁業績的增長動力。 Chili's Grill & Bar及Maggiano's Little Italy母公司預期全年非GAAP每股盈利介乎12.60...",
+      "link": "https://hk.finance.yahoo.com/news/brinker%E5%9C%A8chilis%E5%A2%9E%E9%95%B7%E5%8B%95%E5%8A%9B%E4%B8%8B%E7%99%BC%E5%B8%83%E6%A8%82%E8%A7%80%E5%B1%95%E6%9C%9B-%E8%82%A1%E5%83%B9%E6%80%A5%E5%8D%87-174337367.html",
+      "pubDate": "2026-08-12 17:43:37",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "brinker",
+        "季度"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9db5f0e8c277141d817e20c2184804ec",
+      "title": "摩洛哥加強休達梅利利亞邊境保安 應對網上號召大規模闖關",
+      "description": "摩洛哥周三表示,已加強與西班牙接壤邊境的保安,因應社交媒體再次出現號召大規模闖入西班牙城市休達的呼籲,令人關注會否再次出現類似上月數萬名移民衝擊邊境的情況。 西班牙國民警衛隊強調,邊境將會繼續關閉,國防大臣羅夫萊斯警告,切勿再次嘗試大規模闖入西班牙在北非的飛地。 摩洛哥社交媒體群組正流傳訊息,號召周六再次衝擊休達邊境。訊息來源不明。 七月下旬,約七萬二千名移民游過或爬過邊境防波堤,進入這座西班牙城市,他們受經濟困境及網上流傳邊境開放的虛假消息驅使。幾乎所有人都已返回摩洛哥,但這次大規模闖關事件在歐洲各地引起政治反響。 據官方統計,這次嘗試造成至少八十人死亡。人權組織則報告更高的數字。 潛在移民現時亦被呼籲闖入梅利利亞,這是西班牙在北非海岸的另一座自治城市。休達和梅利利亞共同構成歐盟與非洲之間唯一的陸地邊界。 摩洛哥內政部在周三的聲明中表示,「已採取一切必要措施,以應對」任何新的「非法闖關嘗試」。部門指,保安監控是「持續警惕系統」的一部分,尤其是在「休達和梅利利亞關口附近地區」。 內政部未有即時回應有關部署人員數量或所用設備的問題。 社交媒體流傳的影片顯示,數百名身穿防暴裝備的警員,連同水炮車及救護車,部署在摩洛哥邊境一側。當地新聞網站Hespress表示,催淚彈及震撼彈的部署設備亦已運抵邊境。 一名摩洛哥高級外交官早前表示,每天有超二萬名摩洛哥保安人員部署在休達邊境,耗資數億美元。該外交官未獲授權向媒體發言,並要求匿名。 內政部亦表示,摩洛哥當局已拘捕並正調查「一批涉嫌從事煽動活動的人士」。部門未有詳細說明。 羅夫萊斯到訪休達時表示,處理「透過社交媒體等方式指揮這些行動的人士,是每個人的責任」,並形容「任何針對休達或梅利利亞的侵略......都是對整個西班牙的侵略」。 她強調:「這必須絕對清楚:所發生的事情不能再次發生。」 西班牙國民警衛隊在社交媒體上發布一則訊息,以法文及西班牙文寫成,似乎是針對移民。 訊息指:「與西班牙的邊境沒有開放,也不會開放。現時有新的圍堵屏障。如果你越過它們,你將會被遣返。不要讓自己受騙。」 該Instagram帖文附有一張休達圍堵屏障的照片,該屏障是在七月三十一日邊境被突破後立即建造的。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16557172-%E6%91%A9%E6%B4%9B%E5%93%A5%E5%8A%A0%E5%BC%B7%E4%BC%91%E9%81%94%E6%A2%85%E5%88%A9%E5%88%A9%E4%BA%9E%E9%82%8A%E5%A2%83%E4%BF%9D%E5%AE%89-%E6%87%89%E5%B0%8D%E7%B6%B2%E4%B8%8A%E8%99%9F%E5%8F%AC%E5%A4%A7",
+      "pubDate": "2026-08-12 17:34:24",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/cc19f6270dfe276aecd1b1fb559fcb5e_Migration_Spain_Ceuta_54251_FB.jpg",
+      "keywords": [
+        "大視野",
+        "休達",
+        "移民",
+        "摩洛哥",
+        "梅利利亞",
+        "邊境安全"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "25e672d55b18f6f89752333348d2f81f",
+      "title": "Stevie® Awards 公佈 2026 International Business Awards® 得獎名單,得獎者來自 78 個國家及地區",
+      "description": "第 23 屆 International Business Awards® 是全球首屈一指的商業獎項評選,旨在表揚世界各地表現卓越的機構、企業領袖、創業家及團隊。 維珍尼亞州費爾法克斯 2026年8月13日 /美通社/ -- 世界各地表現卓越的機構及企業領袖,在 第 23 屆 International Business Awards® (IBAs)中榮獲 Stevie® 金獎、銀獎及銅獎。IBAs 是全球唯一兼具國際性並全面涵蓋各個商業領域的獎項計劃。 世界各地表現卓越的機構及企業領袖,在第 23 屆 International Business Awards®(IBAs)中榮獲 Stevie® 金獎、銀獎及銅獎。IBAs 是全球唯一兼具國際性並全面涵蓋各個商業領域的獎項計劃。來自 78 個國家及地區的機構共提交逾 3,800 份提名,由超過 210 名商界專業人士擔任評審。 來自 78 個國家及地區的機構共提交逾 3,800 份提名,由超過 210 名商界專業人士組成 11 個專業評審委員會 進行評審。大會根據獨立評審過程所得的平均分數選出得獎者。 2026 年 Stevie 金獎、銀獎及銅獎各組別的完整得獎名單,已載於 iba.stevieawards.com 。 獲得最多 Stevie Awards 的機構 Viettel 是本屆獲得 Stevie 金獎、銀獎及銅獎總數最多的機構。Viettel 旗下全球各機構合共奪得 28 個獎項,其中 Viettel Cambodia Pte., Ltd. 及 Viettel Peru S.A.C. 各獲 6 個獎項,成績最為突出。Viettel 旗下其他得獎機構包括 Viettel Post Joint Stock Corporation、Viettel Burundi(Lumitel)、Viettel Solutions、Viettel Tanzania PLC(Halotel)、Viettel Global、Viettel Group、Viettel IDC 及 Viettel Timor。 其他獲得 4 項或以上 Stevie 金獎的機構包括: 9 項 Stevie 金獎 Globe Telecoms, Inc.,菲律賓馬尼拉 7 項 Stevie 金獎 Cathay United Bank,中國台灣台北 LLYC,西班牙馬德里 Tata Consultancy Services,多個地點 6 項 Stevie 金獎 Cathay Financial Holding Co. Ltd.,中國台灣台北 HALKBANK,土耳其阿塔謝希爾 IBM,多個地點 Megaworld Foundation, Inc. 及 Megaworld Lifestyle Malls,菲律賓達義市 pladis,土耳其伊斯坦布爾 QNB,土耳其伊斯坦布爾 香港特別行政區政府發展局及建造業議會,中國香港 5 項 Stevie 金獎 CarrefourSA,土耳其馬爾泰佩 Leobit,美國德州奧斯汀 Miral,阿聯酋阿布扎比 4 項 Stevie 金獎 Abu Dhabi Customs,阿聯酋阿布扎比 Addvox,墨西哥墨西哥城 AS Watson,意大利米蘭及中國香港 Beyaz Kağıt San. ve Tic. A.Ş.,土耳其阿達納 Cebuana Lhuillier,菲律賓馬卡蒂市 Cisco Systems,美國加州聖何塞 George Capital Finance Solutions,澳洲悉尼 HeyMo® The Experience Design Company,土耳其伊斯坦布爾 Noguchi x,匈牙利布達佩斯 Türkiye Sigorta,土耳其貝西克塔斯 巴黎頒獎禮 得獎者將於 2026 年 10 月 28 日星期三,在法國巴黎 Pullman Paris Montparnasse 舉行的紅地氈頒獎典禮上接受嘉許。同場亦會表揚本年度 Stevie Awards 傑出僱主獎、Stevie Awards 科技卓越獎及德國 Stevie Awards 的得獎者。該頒獎禮將會全球直播,現已開始發售門票。 Stevie Awards 總裁 Maggie Miller 表示:「我們衷心祝賀所有 2026 International Business Awards 得獎者,並對他們取得的卓越成就表示肯定。本年度得獎者充分展現世界各地不同規模及行業的機構,在創新、領導力及創意方面的非凡表現。他們的成就為卓越表現樹立了更高標準。我們期待今年 10 月在巴黎的舞台上與各位一同慶祝這些佳績。」 International Business Awards 由 Stevie Awards 機構主辦。該機構負責籌辦全球 9 個主要商業獎項計劃,包括 The American Business Awards® 及 Stevie Awards for Women in Business。 關於 International Business Awards International Business Awards® 是全球首屈一指的商業獎項計劃。全球所有機構,不論公營或私營、牟利或非牟利,以及規模大小,均可提交提名。 IBAs 又稱「International Stevies」,設有 逾 200 個獎項組別 ,涵蓋職場各個範疇。獎項表揚範疇包括機構、企業領袖、創業家、團隊、產品與服務、科技、人工智能創新與轉型、市場推廣、公共關係、客戶服務、人力資源、網站、應用程式、活動、出版物、影片、Podcast、可持續發展、思想領導力,以及公共部門與政府創新等。 2026 年 IBAs 亦特設人工智能創新與轉型,以及公共部門與政府創新獎項組別,以表揚相關領域的卓越成就,反映全球商業環境持續演變。 2027 年 IBAs 將於 2 月起接受提名。 關於 Stevie Awards 自 2002 年以來,Stevie Awards 一直位列全球首屈一指的商業獎項,表揚世界各地職場上的卓越成就。「Stevie」這名字源自希臘文「 stephanos 」,意思為「加冕」。 Stevie Awards 包括以下 9 個商業獎項計劃: 亞太區 Stevie Awards 德國 Stevie Awards 中東及北非 Stevie Awards The American Business Awards® The International Business Awards® Stevie Awards 傑出僱主獎 Stevie Awards 商界女性獎 Stevie Awards 科技卓越獎 Stevie Awards 銷售及客戶服務獎 Stevie Awards 每年收到來自逾 70 個國家及地區 的機構提交超過 12,000 份提名 ,表揚不同規模的機構,以及推動其取得成功的專業人士。 詳情請瀏覽 www.StevieAwards.com 。 傳媒聯絡: Nina Moore +1 703 547 8389 Nina@stevieawards.com",
+      "link": "https://hk.prnasia.com/story/543848-2.shtml",
+      "pubDate": "2026-08-12 17:33:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnasia.com/media/MS1968299/Winner-Announcement.jpg?id=OA2864216&p=medium600",
+      "keywords": [
+        "tcs",
+        "tls",
+        "awd"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d785c01d8391ae83c4a6c7c58ed60a6c",
+      "title": "巴勒斯坦總統訪問土耳其 埃爾多安會面後稱支持巴人建國",
+      "description": "巴勒斯坦總統阿巴斯(Mahmoud Abbas)8月11日抵安卡拉,展開三日官方訪問,於12日會見土耳其總統埃爾多安(Recep Tayyip Erdoğan)。據阿納多盧通",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379462/%E5%B7%B4%E5%8B%92%E6%96%AF%E5%9D%A6%E7%B8%BD%E7%B5%B1%E8%A8%AA%E5%95%8F%E5%9C%9F%E8%80%B3%E5%85%B6-%E5%9F%83%E7%88%BE%E5%A4%9A%E5%AE%89%E6%9C%83%E9%9D%A2%E5%BE%8C%E7%A8%B1%E6%94%AF%E6%8C%81%E5%B7%B4%E4%BA%BA%E5%BB%BA%E5%9C%8B",
+      "pubDate": "2026-08-12 17:26:00",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164378612577603584328695.jpeg/7I4niAWhwQD3nphpbHQDKaM04XQderOQgD9A_oA_QP4",
+      "keywords": [
+        "新聞",
+        "世界新聞",
+        "香港01",
+        "國際",
+        "環球",
+        "hk01",
+        "國際新聞"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6ec00a8ce430e3724be5900e52630f23",
+      "title": "快評:黨內望降溫 韓飆罵傅能很快翻篇?",
+      "description": "中評社快評/國民黨昨天到屏東舉辦行動中常會,黨主席鄭麗文被問到韓國瑜飆罵傅崐萁一事,只說“謝謝”2字,並快步離開。這與此前處理季麟連炮轟韓國瑜一事的態度與方式不同。 今年4月底,季麟連在中常會上炮轟韓國瑜,鄭麗文定調事件為“脫序衝動談話”,並在第一時間致電韓國瑜。鄭認為事情已經“翻篇”,不需要做額外處分,或陰謀論解讀。今次鄭僅以“謝謝”2字回應,但看得出,國民黨中央希望事件降溫。",
+      "link": "http://www.crntt.com/doc/7_0_107223096_1_0813012254.html",
+      "pubDate": "2026-08-12 17:22:54",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/13/107223098.jpg",
+      "keywords": [
+        "快評"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c77a063122ce9c557bac5de05d3ca18f",
+      "title": "28歲左閘查華利亞投效車仔",
+      "description": "【Now Sports】車路士領隊沙比阿朗素繼續今夏擴軍計劃,周三成功從西班牙甲組聯賽隊伍華歷簡奴,簽下左後衛查華利亞,合約為期5年。現年28歲的查華利亞(Pep Chavarria)是車路士季前第9名簽入的新球員,而這間倫敦球會似乎正在改變簽新兵風格,不再只是簽年輕球員,查華利亞的年紀,以及比賽經驗可說是對球隊...",
+      "link": "https://hk.sports.yahoo.com/news/28%E6%AD%B2%E5%B7%A6%E9%96%98%E6%9F%A5%E8%8F%AF%E5%88%A9%E4%BA%9E%E6%8A%95%E6%95%88%E8%BB%8A%E4%BB%94-172137484.html",
+      "pubDate": "2026-08-12 17:21:37",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "西班牙甲組聯賽",
+        "車路士",
+        "沙比阿朗素",
+        "查華利亞"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1b916a840f017e82bb055748961ce4be",
+      "title": "蕭督圜:綠如何說服台積電不會變美積電?",
+      "description": "中評社台北8月13日電(記者 張穎齊)針對台美關係,淡江大學大陸研究中心執行長蕭督圜12日在中、美競逐下兩岸情勢發展座談會上表示,美國基於印太戰略及人工智能AI產業鏈利益,支持台灣基本上無庸置疑,但特朗普是否支持民進黨的兩岸政策則要打上問號。 蕭督圜表示,假設民進黨政府的政策主軸能與美國利益高度嵌合,美方當然可能支持民進黨的政策,但這並不代表台美之間不存在利益矛盾,舉例台積電擴大赴美",
+      "link": "http://www.crntt.com/doc/7_0_160256308_1_0813011336.html",
+      "pubDate": "2026-08-12 17:13:36",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256311.JPG",
+      "keywords": [
+        "特朗普",
+        "民進黨",
+        "美國",
+        "蕭督圜",
+        "韓國瑜",
+        "鄭麗文",
+        "國民黨"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0dd7fb8d6aee1d293e86f71d56280e30",
+      "title": "Helfie AI 任命两位科技与公司治理领域资深领袖加入董事会",
+      "description": "前 Apple、Airbnb 高管 Patrick Gates 和前 Meta 高管 Sunita Parasuraman 出任非执行董事,进一步提升 Helfie 的技术实力与公司治理水平。 澳大利亚墨尔本 2026年8月13日 /美通社/ -- Helfie AI(以下简称“Helfie”)是一家由 AI 驱动的预防健康网络,致力于借助移动技术推动全球医疗健康服务变革。公司今日宣布任命 Patrick Gates 和 Sunita Parasuraman 为非执行董事。 Helfie AI 非执行董事 Patrick Gates 和 Sunita Parasuraman Patrick Gates 拥有 30 余年工程技术及管理经验,其中包括在 Apple 任职 14 年,期间参与打造 iCloud、FaceTime、iMessage 和 iTunes Store。此后,他曾担任 AI 硬件初创公司 Humane 的首席技术官,随后加入 Airbnb,出任副总裁兼技术专家,负责推动 AI 驱动的产品升级。 Sunita Parasuraman 拥有超过 25 年的行业经验,曾先后任职于 Apple、Genentech、VMware 和 Meta。她在 Meta 工作长达 12 年,期间曾担任全球资金管理负责人,负责建立公司的全球资金管理体系,并监管为 Meta Libra/Diem 稳定币项目提供支持的储备资产。此后,她出任 Meta 投资及新产品实验负责人,目前担任 IREN Limited、The Baldwin Insurance Group 和 BitGo Holdings 的董事。 Helfie AI 董事长 Tony De Fougerolles 表示: “Patrick 和 Sunita 在 Helfie 发展的重要阶段加入公司,我们对此深感振奋。Patrick 曾在 Apple 参与构建服务数亿用户的基础设施,并推动全球范围的 AI 转型。Sunita 则在技术、公司治理和监管领域拥有丰富的高层管理经验。两人的加入将进一步增强董事会实力,助力我们践行使命,让每个人都能享有便捷可及的预防健康服务。” Helfie AI 非执行董事 Patrick Gates 补充道 : “Helfie 正在推动一项真正具有重要意义的事业。我很高兴能够帮助团队应对建设全球健康网络过程中面临的基础设施建设和规模化发展挑战。” Helfie AI 非执行董事 Sunita Parasuraman 表示 : “Helfie 便捷、智能的预防健康工具有望改善世界各地人们的生活质量。我期待运用自己在技术治理和负责任规模化发展方面的经验,为 Helfie 的成长贡献力量。” 关于 HELFIE AI Helfie AI 是一个全球健康平台,旨在为全球 80 多亿人提供早期检测、主动预防和健康优化服务。这一以科学证据为基础、由 AI 驱动的平台, 可通过智能手机即时提供 30 多项价格亲民的健康检查 ,并融合深入的医学洞察,让用户掌控个人数据,推动健康服务普惠可及。Helfie AI 与全球各地的政府和企业合作,致力于让每个人都能便捷获得预防健康服务。 更多详情请访问 www.helfie.ai",
+      "link": "https://www.prnasia.com/story/543846-1.shtml",
+      "pubDate": "2026-08-12 17:13:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "per",
+        "cpr",
+        "iot",
+        "afi",
+        "hea"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "189b3964cb53dcb39c07fb2a4ea356e3",
+      "title": "美伊談判陷入僵局 哈梅內伊新動作意在為長期地區衝突做準備",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E4%BC%8A%E8%AB%87%E5%88%A4%E9%99%B7%E5%85%A5%E5%83%B5%E5%B1%80-%E5%93%88%E6%A2%85%E5%85%A7%E4%BC%8A%E6%96%B0%E5%8B%95%E4%BD%9C%E6%84%8F%E5%9C%A8%E7%82%BA%E9%95%B7%E6%9C%9F%E5%9C%B0%E5%8D%80%E8%A1%9D%E7%AA%81%E5%81%9A%E6%BA%96%E5%82%99-170848966.html",
+      "pubDate": "2026-08-12 17:08:48",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/en/bloomberg_chinese_traditional_757/ebf67fe89d2b1bdaa3afc314a7c0f641.jpg",
+      "keywords": [
+        "伊朗",
+        "霍爾木茲海峽",
+        "巴基斯坦"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f431f8e5fc6245a6cb5ebc8c860127d5",
+      "title": "曾昭維:高科技缺工嚴重沒人管特朗普說什麼",
+      "description": "中評社新竹8月13日電(記者 盧誠輝)台灣受惠AI浪潮,對美貿易順差已近2000億美元,有學者示警,美國總統特朗普可能因此要求與台灣重談貿易協議。對此,新竹縣工業會總幹事曾昭維接受中評社訪問表示,台灣高科技產業已經沒有人在管特朗普說什麼了,因為缺工比關稅問題還要嚴重。 台灣受惠AI浪潮,2026年第1季GDP年增率13.69%,第2季仍維持12.92%高檔。有美國學者示警,台灣對美貿",
+      "link": "http://www.crntt.com/doc/7_0_160256468_1_0813010523.html",
+      "pubDate": "2026-08-12 17:05:22",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256470.jpg",
+      "keywords": [
+        "科技廠缺工",
+        "美國關稅",
+        "新竹縣工業會總幹事",
+        "曾昭維"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "078bc148c0b8b23d9e21034ab0addcf2",
+      "title": "黑石集團考慮放棄30億美元「Project Eclipse」抵押基金債券交易",
+      "description": "這項結構性交易以「Project Eclipse」為代號,旨在將黑石旗下一隻較早期的二級市場基金中約700項底層投資打包,並以此為基礎發行有評級的債務分層。此類工具被稱為抵押基金債券(CFO),讓保險公司等固定收益投資者得以透過更為熟悉的債務證券形式,間接參與私募資本基金的投資。據彭博社消息人士透露,傑富瑞金融集...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BB%91%E7%9F%B3%E9%9B%86%E5%9C%98%E8%80%83%E6%85%AE%E6%94%BE%E6%A3%8430%E5%84%84%E7%BE%8E%E5%85%83-project-eclipse-%E6%8A%B5%E6%8A%BC%E5%9F%BA%E9%87%91%E5%82%B5%E5%88%B8%E4%BA%A4%E6%98%93-170207104.html",
+      "pubDate": "2026-08-12 17:02:07",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEE0T06O_M.jpg",
+      "keywords": [
+        "黑石集團",
+        "彭博社",
+        "cfo"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4608a2d0fe1f2a1c29119fc971ce73b8",
+      "title": "警聯運輸署九龍城打擊「學神」違規 發11張罰款通知書和18張傳票",
+      "description": "警方表示,九龍城警區交通隊人員在過去一星期(8月6日至12日)聯同運輸署在區內展開代號「黑角」的行動,打擊「違例學習駕駛」相關違規行為。除了",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60379461/%E8%AD%A6%E8%81%AF%E9%81%8B%E8%BC%B8%E7%BD%B2%E4%B9%9D%E9%BE%8D%E5%9F%8E%E6%89%93%E6%93%8A-%E5%AD%B8%E7%A5%9E-%E9%81%95%E8%A6%8F-%E7%99%BC11%E5%BC%B5%E7%BD%B0%E6%AC%BE%E9%80%9A%E7%9F%A5%E6%9B%B8%E5%92%8C18%E5%BC%B5%E5%82%B3%E7%A5%A8",
+      "pubDate": "2026-08-12 17:02:01",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164374958600622080107389.jpeg/KzEqfpERtZBlpCsspbmvcb5pstIHlL91D1G33A9Rt9w",
+      "keywords": [
+        "頭條新聞",
+        "港聞",
+        "新聞",
+        "香港01",
+        "香港新聞",
+        "即時新聞",
+        "hk01",
+        "國際新聞"
+      ],
+      "category": [
+        "crime",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e68060864594ba6850eab62de5cd8ded",
+      "title": "王育敏辭主委 蔡明顯:時間不多盡力而為",
+      "description": "中評社嘉義8月13日電(記者 李京昇)中國國民黨“立委”、嘉義縣黨部主委王育敏請辭主委一職,由同黨嘉義市黨部主委蔡明顯兼任。蔡明顯12日表示,8月1日已接獲通知,嘉義縣選戰架構及提名作業大致底定,時間所剩不多,不會刻意改變既定策略,黨中央交付任務,他盡力而為。將以“尋求最大公約數”為原則,協助無黨籍嘉義縣長參選人吳品叡及其他非綠陣營人選,透過合縱連橫擴大在野力量。 選戰倒數3個多月,",
+      "link": "http://www.crntt.com/doc/7_0_160256404_1_0813010013.html",
+      "pubDate": "2026-08-12 17:00:13",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/12/160256412.JPG",
+      "keywords": [
+        "蔡明顯",
+        "嘉義縣"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "06a39b54eed9be67843daa1d688e3acd",
       "title": "吳瑟致:各黨不用期待美無條件支持台灣",
       "description": "中評社台北8月13日電(記者 張穎齊)針對台美關係,台北海洋科技大學通識教育中心助理教授吳瑟致12日在中、美競逐下兩岸情勢發展座談會上分析,美國總統特朗普對台政策核心很清楚,就是美國利益優先及交易思維,台灣各政黨都不應期待美國會無條件支持特定政黨,但真正關鍵是台灣能否提升自我防衛能力?符合美國印太戰略利益?讓台灣成為美國及國際不能輕易放棄的夥伴。 吳瑟致強調,台灣朝野政黨真正應該競爭",
@@ -95,6 +371,23 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "8c8f14ede12f461cb62c1c8f4f5aa7f5",
+      "title": "黑石考慮放棄30億美元債務融資計畫",
+      "description": "一直為黑石這筆交易提供顧問服務,該項目代號為Project Eclipse。Jefferies發言人不予置評。持續數年的交易低迷令資產管理公司利潤受損,也使其更難從傳統投資者募集資金。這推動了私募股權二級市場以及CFO的發展。原文標題Blackstone Mulls Pulling Plug on $3 Bill...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BB%91%E7%9F%B3%E8%80%83%E6%85%AE%E6%94%BE%E6%A3%8430%E5%84%84%E7%BE%8E%E5%85%83%E5%82%B5%E5%8B%99%E8%9E%8D%E8%B3%87%E8%A8%88%E7%95%AB-165112986.html",
+      "pubDate": "2026-08-12 16:51:12",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "投資者"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "0c3d0ad2c2b1bc976f1d824186b8845e",
@@ -138,6 +431,26 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "0655b7bce63f2663b4bae1bd697c1c73",
+      "title": "OPEC進一步下調2026年全球石油需求增長預測 上調明年反彈預期",
+      "description": "石油輸出國組織(OPEC)周三下調2026年全球石油需求增長預測,並預計明年反彈力度將較早前估計更強。 OPEC現時預計,今年石油消耗將增加58萬桶/日,低於上月預測的增加78萬桶/日,並為連續第四次下調預測。至於2027年,OPEC現預測全球石油需求將增加216萬桶/日,高於7月預測的增加194萬桶/日。 國際...",
+      "link": "https://hk.finance.yahoo.com/news/opec%E9%80%B2-%E6%AD%A5%E4%B8%8B%E8%AA%BF2026%E5%B9%B4%E5%85%A8%E7%90%83%E7%9F%B3%E6%B2%B9%E9%9C%80%E6%B1%82%E5%A2%9E%E9%95%B7%E9%A0%90%E6%B8%AC-%E4%B8%8A%E8%AA%BF%E6%98%8E%E5%B9%B4%E5%8F%8D%E5%BD%88%E9%A0%90%E6%9C%9F-164355223.html",
+      "pubDate": "2026-08-12 16:43:55",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "石油輸出國組織",
+        "國際能源署",
+        "石油消耗",
+        "opec"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "ad77837085d3c678f7419f094f0ac7c8",
@@ -4642,26 +4955,6 @@
         "entertainment"
       ],
       "region": "hk"
-    },
-    {
-      "id": "459bb9c9881cfa45ed54f50034b17db9",
-      "title": "中國電動車月銷佔比首次破60% 汽車出口連續兩個月破百萬輛",
-      "description": "《新華社》報道,中國汽車工業協會8月12日發佈數據顯示,2026年7月份,電動車月度新車銷量佔比首次超過60%、累計佔比首次超過50%;月度出口量連續",
-      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60379334/%E4%B8%AD%E5%9C%8B%E9%9B%BB%E5%8B%95%E8%BB%8A%E6%9C%88%E9%8A%B7%E4%BD%94%E6%AF%94%E9%A6%96%E6%AC%A1%E7%A0%B460-%E6%B1%BD%E8%BB%8A%E5%87%BA%E5%8F%A3%E9%80%A3%E7%BA%8C%E5%85%A9%E5%80%8B%E6%9C%88%E7%A0%B4%E7%99%BE%E8%90%AC%E8%BC%9B",
-      "pubDate": "2026-08-12 10:00:17",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164255205257121792032546.jpeg/3FvTd2555xGMcd_LunGRuTelizmxIbrJ99wNy_fcDcs",
-      "keywords": [
-        "時事",
-        "香港01",
-        "中國",
-        "突發"
-      ],
-      "category": [
-        "technology"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "aa7d642352b7f7efa4187572647ebcd3",
@@ -52931,6 +53224,34 @@
       "region": "hk"
     },
     {
+      "id": "3adcc638b2859ff0",
+      "title": "王祖藍李亞男｜王祖藍李亞男全家機場被偶遇　1教育方式獲讚吸引目光　41歲昔日華姐冠軍身形仍姣好",
+      "description": "【王祖藍 / 李亞男 / 星二代】現年46歲的藝人王祖藍，早年北上掘金，參加多個國民綜藝人氣急升，近年積極發展直播帶貨，身價水漲船高，事業做得有聲有色；他於2015年與華姐冠軍李亞男結婚，育有兩名女兒...",
+      "link": "https://topick.hket.com/article/4175797",
+      "pubDate": "2026-08-13 13:40:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4175797/W_0813_THUMBS_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6a87e5a5f6295fbc",
+      "title": "開心速遞｜Po與同劇演員合照獨欠「大小姐」　鄭世豪疑再開火爆林淑敏假好人惡行",
+      "description": "【林淑敏 /鄭世豪 /開心速遞】TVB長壽處境劇《愛.回家之開心速遞》早前迎來大結局，同劇不少演員常年搭檔拍戲，相處似家人一般；然而，早前劇集接近尾聲時卻驚爆「大家姐」滕麗名與「大小姐」林淑敏關係不和...",
+      "link": "https://topick.hket.com/article/4175735",
+      "pubDate": "2026-08-13 13:08:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4175735/HO_0813_THUMBS_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "ad41d5384309093a",
       "title": "功夫女足｜黃一山被指跟向太隊數臭星爺　細龜親回應忘恩負義質疑　揭周星馳片場鬧人真相",
       "description": "【周星馳 /黃一山 /陳嵐】現年61歲的「細龜」黃一山，早年因演出周星馳的電影而為人熟知，之後轉往內地發展，接拍過不少劇集電影及綜藝節目，還進軍商界，投資開設火鍋店，生意做得有聲有色。近日周星馳新作電...",
@@ -53428,6 +53749,6 @@
       "pinned": true
     }
   ],
-  "total": 2772,
-  "last_updated": "2026-08-13T13:03:06.367138"
+  "total": 2789,
+  "last_updated": "2026-08-13T14:02:42.372793"
 }
