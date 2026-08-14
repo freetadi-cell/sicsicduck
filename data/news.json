@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "id": "51c1de8435b4cac17bea74bddd796c28",
+      "title": "美國法院裁定川普可以暫停對低價商品的關稅豁免",
+      "description": "【彭博】-- 美國一家貿易法院駁回了針對川普暫停低價值進口商品關稅豁免的訴訟。該法院周四作出裁決,拒絕推翻總統川普過去一年發布的行政命令。這些行政命令取消了針對零售價值不超過800美元商品的所謂「小額豁免」。據美國海關與邊境保護局稱,截至2025年底,川普暫停這一豁免已帶來超過10億美元的關稅繳款。位於紐約的美國...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E6%B3%95%E9%99%A2%E8%A3%81%E5%AE%9A%E5%B7%9D%E6%99%AE%E5%8F%AF%E4%BB%A5%E6%9A%AB%E5%81%9C%E5%B0%8D%E4%BD%8E%E5%83%B9%E5%95%86%E5%93%81%E7%9A%84%E9%97%9C%E7%A8%85%E8%B1%81%E5%85%8D-193420511.html",
+      "pubDate": "2026-08-13 19:34:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "關稅",
+        "川普"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "4bfac414e6d3bf066e290272f7bd7759",
       "title": "美國30年期國債中標殖利率創25年新高 融資成本恐成華府棘手難題",
       "description": "US Treasury, Bloomberg 【彭博】-- 美國政府發行30年期國債的中標殖利率創下25年來新高。此前長期美債經歷歷史性拋售,引發市場猜測,美國可能進一步將舉債結構轉向較短期限。周四250億美元30年期國債的中標殖利率為5.216%,為2001年以來最高水平,儘管原油價格下跌推動了二級市場國債價格...",
@@ -37,28 +55,6 @@
       "pinned": true
     },
     {
-      "id": "cdc3492bb5b3e255ccb1d95628ce7eee",
-      "title": "聯儲局觀察:Barkin稱不確定是否需加息以壓低通脹 Hammack主張立即加息",
-      "description": "里士滿聯儲銀行總裁Tom Barkin(沒有貨幣政策投票權)表示,通脹路徑仍存在不確定性,亦不確定是否需要加息才能令通脹回落至2%目標,抑或通脹會自行放緩。 克里夫蘭聯儲銀行總裁Beth Hammack(擁有貨幣政策投票權)表示,聯邦公開市場委員會(FOMC)應立即開始加息進程以壓低通脹,並指近期較疲弱的價格數據...",
-      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E5%84%B2%E5%B1%80%E8%A7%80%E5%AF%9F-barkin%E7%A8%B1%E4%B8%8D%E7%A2%BA%E5%AE%9A%E6%98%AF%E5%90%A6%E9%9C%80%E5%8A%A0%E6%81%AF%E4%BB%A5%E5%A3%93%E4%BD%8E%E9%80%9A%E8%84%B9-hammack%E4%B8%BB%E5%BC%B5%E7%AB%8B%E5%8D%B3%E5%8A%A0%E6%81%AF-183605764.html",
-      "pubDate": "2026-08-13 18:36:05",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "克里夫蘭聯儲銀行",
-        "里士滿聯儲銀行",
-        "通脹",
-        "表示",
-        "投票權",
-        "貨幣政策"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "23cf0a96951d3a5441352cb028d1e4dc",
       "title": "日圓匯率距離160大關僅咫尺之遙 政府支持加息的消息幾無影響",
       "description": "Bloomberg 【彭博】-- 儘管據稱日本首相高市早苗政府支持加息,但日圓兌美元匯率仍處在一個關鍵水平觸手可及的範圍之內。日圓周四小幅走低,紐約午後交易中一度跌至1美元兌159.56日圓。過去,在接近160時,日圓貶值勢頭往往會受到遏制。據知情人士透露,日本央行可能會在9月份或10月份加息。他們補充說,日本央...",
@@ -78,22 +74,272 @@
       "pinned": true
     },
     {
-      "id": "f5b81a4672417a6941a84e0cbe8c8ce6",
-      "title": "長鑫科技超越騰訊 成中國市值最高上市公司",
-      "description": "<匯港通訊> 內存晶片巨頭長鑫科技7月底登陸 A 股,在科創板上市僅兩周多後,收盤總市值首次趕超騰訊(00700.HK),躍居中國上市公司市值首位。長鑫科技盤中一度上漲逾4%,但之後回吐輕微收低。不過,相較發行價,該股累計漲幅仍超過5倍,總市值達到約3.54萬億元。相比之下,騰訊在公布季度業績後股價走低,市場對其...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%95%B7%E9%91%AB%E7%A7%91%E6%8A%80%E8%B6%85%E8%B6%8A%E9%A8%B0%E8%A8%8A-%E6%88%90%E4%B8%AD%E5%9C%8B%E5%B8%82%E5%80%BC%E6%9C%80%E9%AB%98%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8-125143358.html",
-      "pubDate": "2026-08-13 12:51:43",
+      "id": "577f9b3754c75767e100b35c4d06ea45",
+      "title": "人民幣首超港元成為香港外匯交易最大貨幣對",
+      "description": "香港財資市場公會公布香港外匯市場半年度調查結果,於2026年4月,香港外匯交易日均成交額為9,082億美元,其中美元兌人民幣交易量首次超越美元兌港元,躍居香港市場交投最活躍的貨幣對。 當中,4月美元兌人民幣日均成交2,740億美元,佔香港全部外匯交易的30.2%,超過美元兌港元的2,402億美元,佔比26.4%。...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E6%B0%91%E5%B9%A3%E9%A6%96%E8%B6%85%E6%B8%AF%E5%85%83%E6%88%90%E7%82%BA%E9%A6%99%E6%B8%AF%E5%A4%96%E5%8C%AF%E4%BA%A4%E6%98%93%E6%9C%80%E5%A4%A7%E8%B2%A8%E5%B9%A3%E5%B0%8D-064457313.html",
+      "pubDate": "2026-08-13 06:44:57",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "匯港通訊",
-        "科創板上市"
-      ],
+      "keywords": null,
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "e534242e4fb8a30527bb04892ec4a081",
+      "title": "聯合醫院產科或遷將軍澳 議員指當區年輕家庭多 可對應區內需求",
+      "description": "原負責九龍東醫院聯網產科服務的聯合醫院產科,未來或遷至將軍澳醫院。有議員認為將軍澳區新屋苑較多,有不少年輕、適育年齡的家庭居住,相信區內對產科服務有一定需求,認為將產房遷至需求較高的地區是好事;有議員則希望增設產科而非搬遷,亦擔心未來啟德醫院或要支援觀塘區的產科服務,會因人手不足而有較大負擔。 陳凱欣:將軍澳區新屋苑多 料產科服務需求增 立法會議員陳凱欣說,九龍東醫院聯網只有3間醫院,包括聯合醫院",
+      "link": "https://www.stheadline.com/society/3604125/%E8%81%AF%E5%90%88%E9%86%AB%E9%99%A2%E7%94%A2%E7%A7%91%E6%88%96%E9%81%B7%E5%B0%87%E8%BB%8D%E6%BE%B3-%E8%AD%B0%E5%93%A1%E6%8C%87%E7%95%B6%E5%8D%80%E5%B9%B4%E8%BC%95%E5%AE%B6%E5%BA%AD%E5%A4%9A-%E5%8F%AF%E5%B0%8D%E6%87%89%E5%8D%80%E5%85%A7%E9%9C%80%E6%B1%82",
+      "pubDate": "2026-08-13 20:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/307f7b16e5b2211307f4d790f9ba7f83/2026-08/DNSG0517HOP004.jpg",
+      "keywords": [
+        "出生率",
+        "產科",
+        "醫管局",
+        "聯合醫院",
+        "將軍澳醫院"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b6d96336ccdbdb91cbd7a21651057d76",
+      "title": "九龍東出生率下跌 消息指聯合醫院產科擬遷將軍澳醫院 醫管局: 正檢視安排",
+      "description": "近年本港出生率下跌,各區對產科服務的需求有所改變,近日有傳醫管局計劃將基督教聯合醫院的產科服務遷至將軍澳醫院,醫管局回覆《星島》查詢時承認,正檢視有關臨床服務的安排,目前未有最終定案。 消息人士透露,不少將軍澳區孕婦未有在聯合醫院生育,而是在其他醫院聯網或私家醫院分娩,加上九龍東生率下降,啟德醫院亦即將投入服務,足以協助處理觀塘區的需求,故此局方正考慮有關搬遷安排,若決定落實,或將於明年下半年實行",
+      "link": "https://www.stheadline.com/society/3604111/%E4%B9%9D%E9%BE%8D%E6%9D%B1%E5%87%BA%E7%94%9F%E7%8E%87%E4%B8%8B%E8%B7%8C-%E6%B6%88%E6%81%AF%E6%8C%87%E8%81%AF%E5%90%88%E9%86%AB%E9%99%A2%E7%94%A2%E7%A7%91%E6%93%AC%E9%81%B7%E5%B0%87%E8%BB%8D%E6%BE%B3%E9%86%AB%E9%99%A2-%E9%86%AB%E7%AE%A1%E5%B1%80-%E6%AD%A3%E6%AA%A2%E8%A6%96%E5%AE%89%E6%8E%92",
+      "pubDate": "2026-08-13 20:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/75988daabe53d178ee05cd77fc3f90aa/2026-08/v1_jpg_3__0.jpeg",
+      "keywords": [
+        "出生率",
+        "產科",
+        "醫管局",
+        "聯合醫院",
+        "將軍澳醫院"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9bf14404ec906f4ffae9c9f923acd0af",
+      "title": "Apple 9月發布會傳聞|摺機iPhone Ultra領軍 10款新品或登場",
+      "description": "Apple 每年秋季發布會都是焦點,而 2026 年的陣容可能比過往更加龐大。綜合目前流出的消息,除了例行更新的 iPhone 18 Pro 系列及 Apple Watch,Ap",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60379650/apple-9%E6%9C%88%E7%99%BC%E5%B8%83%E6%9C%83%E5%82%B3%E8%81%9E-%E6%91%BA%E6%A9%9Fiphone-ultra%E9%A0%98%E8%BB%8D-10%E6%AC%BE%E6%96%B0%E5%93%81%E6%88%96%E7%99%BB%E5%A0%B4",
+      "pubDate": "2026-08-13 19:59:40",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164659436875157504587162.png/KzwddmL_W_Uq9DhTf1xVWWY_roKnMyklDtsedQ7bHnU",
+      "keywords": [
+        "手遊",
+        "android",
+        "apple",
+        "tesla",
+        "動漫",
+        "科技",
+        "facebook",
+        "航拍",
+        "潮物",
+        "香港01",
+        "app",
+        "ios"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b7445be81e2c56819c7984294f3548f1",
+      "title": "Workday股價因Silver Lake收購洽談報道急漲25%",
+      "description": "Investing.com - Workday (NASDAQ:WDAY) 股價週四下午急漲25%,此前路透社報道指私募股權公司Silver Lake正就收購該公司進行洽談。",
+      "link": "https://hk.finance.yahoo.com/news/workday%E8%82%A1%E5%83%B9%E5%9B%A0silver-lake%E6%94%B6%E8%B3%BC%E6%B4%BD%E8%AB%87%E5%A0%B1%E9%81%93%E6%80%A5%E6%BC%B225-194539696.html",
+      "pubDate": "2026-08-13 19:45:39",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7306L_M.jpg",
+      "keywords": [
+        "silver lake",
+        "workday"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8b02918a68b63b183bb3ded2190fc89f",
+      "title": "英超|卡域克談拉舒福特回歸 「淡定處理,一視同仁」",
+      "description": "曼聯領隊卡域克坐正後的首個轉會窗,迎來新兵之餘,還有外借回收的拉舒福特回歸。曾經的隊友,如今是教練與球員的關係,卡域克表示會一視同仁。 拉舒福特上一次為曼聯上陣已經是2024年12月,之後他先後外借阿士東維拉和巴塞隆拿,在離開曼聯的邊緣游走後,回到母會。這名英格蘭國腳有機會在周末友賽AC米蘭上陣,後者目前由前曼聯主帥魯賓艾摩廉領軍,而兩人在曼聯共事時並不愉快。 曾做隊友不會令情況變得獨特 如今曼聯",
+      "link": "https://www.stheadline.com/football-news/3604229/%E8%8B%B1%E8%B6%85%E5%8D%A1%E5%9F%9F%E5%85%8B%E8%AB%87%E6%8B%89%E8%88%92%E7%A6%8F%E7%89%B9%E5%9B%9E%E6%AD%B8-%E6%B7%A1%E5%AE%9A%E8%99%95%E7%90%86%E4%B8%80%E8%A6%96%E5%90%8C%E4%BB%81",
+      "pubDate": "2026-08-13 19:43:44",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5df363a90de1651209861ae07e1818a7/2026-08/manutd_1.jpg",
+      "keywords": [
+        "拉舒福特",
+        "曼聯",
+        "卡域克"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "28a7bde90d550083b5d0b51a4b95c320",
+      "title": "Google 發表 Gemini 3.7 Flash!編程與 AI Agent 效能大躍進",
+      "description": "Google 的人工智能模型疊代速度驚人!繼三星期前推出 Gemini 3.6 Flash 後,官方今日正式發放最新一代「主力工作型」模型 Gemini 3.7 Flash。今次更新主要針對軟件工程(Coding)、網頁開發及 AI Agent 自動化流程進行全面優化,同時更推出「早鳥半價」優惠,大幅降低開發者使用門檻! 這篇文章 Google 發表 Gemini 3.7 Flash!編程與 AI Agent 效能大躍進 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/google-gemini-3-7-flash-launch-price-cut/",
+      "pubDate": "2026-08-13 19:39:30",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/14033743/PCM_Banner_1080_20260814_google_gemini_flash_3-7.jpg",
+      "keywords": [
+        "ai agent",
+        "google ai studio",
+        "gemini 3.7 flash",
+        "ai 模型",
+        "a.i. 生成",
+        "編程 ai",
+        "a.i.",
+        "人工智能",
+        "google",
+        "tech",
+        "科技新聞",
+        "gemini spark"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e164c871ad69a618e4d0ecc982f0febc",
+      "title": "屏幕時間激增推動酒店業達7.5萬億美元 揭示家庭團聚新模式",
+      "description": "全球酒店業正蓬勃發展,其原因不僅限於疫後反彈。市場研究預計,該行業規模將於2026年底達到約5.8萬億美元,並於2030年攀升至7.5萬億美元,每年錄得6.4%的穩定增長率,未見放緩跡象。 麥哲倫噴射機公司行政總裁兼創辦人喬舒亞·馬克·希伯特,在豪華酒店業及私人航空業累積26年經驗,一直觀察著這股趨勢的形成。他對此有著一套簡明理論。 對於麥哲倫噴射機公司而言,這種轉變體現在私人飛機乘客行為的改變。該公司以路演營運商聞名,在七天內每日將行政人員運送至兩個城市,該業務至今依然強勁。然而,一種新模式正在浮現:家庭利用私人航空作為縮短距離的工具。 希伯特表示:「我們現在生活在電子設備之中。網飛、亞馬遜Prime、蘋果電視、Hulu、電子遊戲,以及口袋裡的手機。人們生活中有極大部分時間花在屏幕上。我們花在屏幕上的時間越多,就越重視其反面:與真實的人共度真實時光,脫離所有屏幕時間發生的四堵牆。這正是酒店業所銷售的,亦是其持續增長的原因。」 他續指:「祖父母難以前往探望子女及孫輩,而子女家庭反向探訪亦同樣困難,因此我們將他們聯繫起來。關於孫輩,實情是當他們的父母說『我們要去探望祖父母』時,他們不一定會雀躍萬分。但當祖父母派出私人飛機時,答案總是肯定的。私人航空是一種工具。對於我們的路演客戶而言,它是提高生產力的工具;對於我們的家庭而言,它是建立聯繫的工具。隨著世界將更多時間花在屏幕上,讓大家共聚一室的價值只會不斷提升。這是趨勢,我認為它不會逆轉。」 疫情加速了這種轉變,但並非其源頭。封鎖歲月讓一代人明白分離的代價,但上升趨勢早在2020年前已然展開。疫情所做的是增強了對屏幕無法取代的共享體驗的渴望。 在希伯特看來,這就是現代酒店業的本質。它不再僅僅是一間酒店客房或一張餐廳餐桌,而是一種買回屏幕令其變得稀缺的一樣東西:共聚時光。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16565076-%E5%B1%8F%E5%B9%95%E6%99%82%E9%96%93%E6%BF%80%E5%A2%9E%E6%8E%A8%E5%8B%95%E9%85%92%E5%BA%97%E6%A5%AD%E9%81%947-5%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83-%E6%8F%AD%E7%A4%BA%E5%AE%B6%E5%BA%AD%E5%9C%98",
+      "pubDate": "2026-08-13 19:32:16",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/c9ff770006ab46fe813faa4b05fa4fb1_MagellanJetsFamily_FB.jpg",
+      "keywords": [
+        "酒店業",
+        "商業事",
+        "家庭團聚",
+        "麥哲倫噴射機公司",
+        "私人航空",
+        "屏幕時間"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "43b81a0bbce7c122fbc89052b50c9482",
+      "title": "Zillow稱美國有子女家庭在住房短缺下承受更大租金壓力",
+      "description": "Zillow Group(Z.US, ZG.US)周四引用美國人口普查局最新分析數據表示,美國有子女家庭面對較無子女家庭更高的租金負擔風險。 該網上房地產平台指出,美國約三分之一有子女家庭為租戶,其中54%屬於租金負擔家庭,即租金支出佔收入逾30%。 Zillow表示,美國目前面臨470萬個住宅單位短缺,持續推高...",
+      "link": "https://hk.finance.yahoo.com/news/zillow%E7%A8%B1%E7%BE%8E%E5%9C%8B%E6%9C%89%E5%AD%90%E5%A5%B3%E5%AE%B6%E5%BA%AD%E5%9C%A8%E4%BD%8F%E6%88%BF%E7%9F%AD%E7%BC%BA%E4%B8%8B%E6%89%BF%E5%8F%97%E6%9B%B4%E5%A4%A7%E7%A7%9F%E9%87%91%E5%A3%93%E5%8A%9B-193050104.html",
+      "pubDate": "2026-08-13 19:30:50",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "zillow",
+        "美國人口普查局"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bc8c9b12a3a989a5f157b77935063ded",
+      "title": "OpenAI營收總監將離職 成為該人工智能實驗室最新高層離職個案",
+      "description": "OpenAI周四表示,首席營收總監Denise Dresser將離職,成為該人工智能實驗室最新一名離職高層。 Dresser將於過渡期後離任,以「尋求其他機會」。這間AI聊天機械人ChatGPT開發商表示,她於去年12月加入OpenAI。 公司周四表示,Dali Rajic將接替Dresser出任首席營收總監。R...",
+      "link": "https://hk.finance.yahoo.com/news/openai%E7%87%9F%E6%94%B6%E7%B8%BD%E7%9B%A3%E5%B0%87%E9%9B%A2%E8%81%B7-%E6%88%90%E7%82%BA%E8%A9%B2%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%A6%E9%A9%97%E5%AE%A4%E6%9C%80%E6%96%B0%E9%AB%98%E5%B1%A4%E9%9B%A2%E8%81%B7%E5%80%8B%E6%A1%88-192240398.html",
+      "pubDate": "2026-08-13 19:22:40",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "表示",
+        "人工智能實驗室"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5374e54153a892692f59778b724b9c0d",
+      "title": "成本下跌芯片價漲 中芯二季度利潤升兩倍",
+      "description": "中國領先的芯片代工企業中芯國際集成電路製造有限公司(SMIC)(0981.HK; 688981.SH)周四公布,受惠於尖端產品的需求強勁,第二季度收入和盈利均強勁增長。 中芯國際在截至6月的三個月內,收入同比增長36.1%,從去年同期的22.1億元增至30.1億元。最新季度毛利率同比上升近5個百分點,從20.4%...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%88%90%E6%9C%AC%E4%B8%8B%E8%B7%8C%E8%8A%AF%E7%89%87%E5%83%B9%E6%BC%B2-%E4%B8%AD%E8%8A%AF%E4%BA%8C%E5%AD%A3%E5%BA%A6%E5%88%A9%E6%BD%A4%E5%8D%87%E5%85%A9%E5%80%8D-191724568.html",
+      "pubDate": "2026-08-13 19:17:24",
+      "source_name": "Yahoo Finance",
+      "image_url": null,
+      "keywords": [
+        "中芯國際"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1afead95775fdaba97c6f478c87ae9c5",
+      "title": "軟件公司Workday的股價飆升 路透報導稱銀湖正洽談收購",
+      "description": "的股價躍升,之前路透社報導稱,私募股權公司銀湖資本正在洽談收購該公司。路透周四引述未具名知情人士的話報導稱,銀湖資本數月來一直在就收購Workday進行磋商。Workday生產用於人力資源等企業業務的軟件。報導稱,目前不能保證交易一定會達成。Workday股價一度大漲26%,至220.50美元,隨後因波動過大而暫...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%BB%9F%E4%BB%B6%E5%85%AC%E5%8F%B8workday%E7%9A%84%E8%82%A1%E5%83%B9%E9%A3%86%E5%8D%87-%E8%B7%AF%E9%80%8F%E5%A0%B1%E5%B0%8E%E7%A8%B1%E9%8A%80%E6%B9%96%E6%AD%A3%E6%B4%BD%E8%AB%87%E6%94%B6%E8%B3%BC-191018813.html",
+      "pubDate": "2026-08-13 19:10:18",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "workday"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "113fb44939b2197cb7749dddfa48a92c",
+      "title": "8月夜期收市報25214點 跌159點",
+      "description": "<匯港通訊> 8月夜期期指收市報25214點,跌159點,低水183點,成交11852張;9月夜期期指報25156點,跌139點,低水241點,成交264張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125214%E9%BB%9E-%E8%B7%8C159%E9%BB%9E-190500105.html",
+      "pubDate": "2026-08-13 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊>"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f691a16df458f17daa858f3eb0844054",
+      "title": "古迪絲連續兩日刷新女子50背世績",
+      "description": "【Now Sports】意大利泳手古迪絲,於周四在巴黎上演的歐洲游泳錦標賽,以26.56秒,打破前一天由他自己刷新的女子50米背泳世界紀錄。19歲的古迪絲(Sara Curtis)在這場決賽游出26.56秒的時間,打破前一天在準決賽造出的26.63秒。她賽後說:「我真的非常高興。昨天刷新紀錄的那份激動,實在難以平...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%8F%A4%E8%BF%AA%E7%B5%B2%E9%80%A3%E7%BA%8C%E5%85%A9%E6%97%A5%E5%88%B7%E6%96%B0%E5%A5%B3%E5%AD%9050%E8%83%8C%E4%B8%96%E7%B8%BE-190452323.html",
+      "pubDate": "2026-08-13 19:04:52",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "歐洲游泳錦標賽",
+        "古迪絲"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
     },
     {
       "id": "d8f1710f1c0404082c4fe6c4190884c2",
@@ -334,6 +580,28 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "cdc3492bb5b3e255ccb1d95628ce7eee",
+      "title": "聯儲局觀察:Barkin稱不確定是否需加息以壓低通脹 Hammack主張立即加息",
+      "description": "里士滿聯儲銀行總裁Tom Barkin(沒有貨幣政策投票權)表示,通脹路徑仍存在不確定性,亦不確定是否需要加息才能令通脹回落至2%目標,抑或通脹會自行放緩。 克里夫蘭聯儲銀行總裁Beth Hammack(擁有貨幣政策投票權)表示,聯邦公開市場委員會(FOMC)應立即開始加息進程以壓低通脹,並指近期較疲弱的價格數據...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E5%84%B2%E5%B1%80%E8%A7%80%E5%AF%9F-barkin%E7%A8%B1%E4%B8%8D%E7%A2%BA%E5%AE%9A%E6%98%AF%E5%90%A6%E9%9C%80%E5%8A%A0%E6%81%AF%E4%BB%A5%E5%A3%93%E4%BD%8E%E9%80%9A%E8%84%B9-hammack%E4%B8%BB%E5%BC%B5%E7%AB%8B%E5%8D%B3%E5%8A%A0%E6%81%AF-183605764.html",
+      "pubDate": "2026-08-13 18:36:05",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "克里夫蘭聯儲銀行",
+        "里士滿聯儲銀行",
+        "通脹",
+        "表示",
+        "投票權",
+        "貨幣政策"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "dadc3fd4cf573434abf163b59f0ae5a3",
@@ -2852,6 +3120,24 @@
         "technology"
       ],
       "region": "hk"
+    },
+    {
+      "id": "f5b81a4672417a6941a84e0cbe8c8ce6",
+      "title": "長鑫科技超越騰訊 成中國市值最高上市公司",
+      "description": "<匯港通訊> 內存晶片巨頭長鑫科技7月底登陸 A 股,在科創板上市僅兩周多後,收盤總市值首次趕超騰訊(00700.HK),躍居中國上市公司市值首位。長鑫科技盤中一度上漲逾4%,但之後回吐輕微收低。不過,相較發行價,該股累計漲幅仍超過5倍,總市值達到約3.54萬億元。相比之下,騰訊在公布季度業績後股價走低,市場對其...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%95%B7%E9%91%AB%E7%A7%91%E6%8A%80%E8%B6%85%E8%B6%8A%E9%A8%B0%E8%A8%8A-%E6%88%90%E4%B8%AD%E5%9C%8B%E5%B8%82%E5%80%BC%E6%9C%80%E9%AB%98%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8-125143358.html",
+      "pubDate": "2026-08-13 12:51:43",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "匯港通訊",
+        "科創板上市"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "2b53580cbe29177e44d773271c4635e7",
@@ -8402,21 +8688,6 @@
         "technology"
       ],
       "region": "hk"
-    },
-    {
-      "id": "577f9b3754c75767e100b35c4d06ea45",
-      "title": "人民幣首超港元成為香港外匯交易最大貨幣對",
-      "description": "香港財資市場公會公布香港外匯市場半年度調查結果,於2026年4月,香港外匯交易日均成交額為9,082億美元,其中美元兌人民幣交易量首次超越美元兌港元,躍居香港市場交投最活躍的貨幣對。 當中,4月美元兌人民幣日均成交2,740億美元,佔香港全部外匯交易的30.2%,超過美元兌港元的2,402億美元,佔比26.4%。...",
-      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E6%B0%91%E5%B9%A3%E9%A6%96%E8%B6%85%E6%B8%AF%E5%85%83%E6%88%90%E7%82%BA%E9%A6%99%E6%B8%AF%E5%A4%96%E5%8C%AF%E4%BA%A4%E6%98%93%E6%9C%80%E5%A4%A7%E8%B2%A8%E5%B9%A3%E5%B0%8D-064457313.html",
-      "pubDate": "2026-08-13 06:44:57",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "95bce7ee22a8c107dae4d69af1a1946b",
@@ -70078,6 +70349,6 @@
       "pinned": true
     }
   ],
-  "total": 3616,
-  "last_updated": "2026-08-14T15:02:18.814987"
+  "total": 3630,
+  "last_updated": "2026-08-14T16:01:58.429627"
 }
