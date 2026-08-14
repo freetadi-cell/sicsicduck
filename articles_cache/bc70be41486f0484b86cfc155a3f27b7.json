@@ -1,0 +1,10 @@
+{
+  "id": "bc70be41486f0484b86cfc155a3f27b7",
+  "title": "DeepSeek V4 API 定價下周一起大幅上調",
+  "source_name": "Yahoo Finance",
+  "link": "https://hk.finance.yahoo.com/news/deepseek-v4-api-%E5%AE%9A%E5%83%B9%E4%B8%8B%E5%91%A8-%E8%B5%B7%E5%A4%A7%E5%B9%85%E4%B8%8A%E8%AA%BF-235549191.html",
+  "rewritten_title": "DeepSeek V4 API下周一加價 高峰谷時段收費差一倍",
+  "rewritten": "內地人工智能大模型DeepSeek宣布，隨着V4全系列正式版上線，將調整API定價，並引入峰谷定價機制，閒時價格為高峰時段一半。新價格於下周一（17日）凌晨零時生效。以V4 Pro為例，空閒時段輸入（緩存命中）由每百萬tokens 0.025元人民幣上調至0.15元，漲幅達5倍；輸入（緩存未命中）由3元升至4.5元；輸出則由6元升至13.5元，最小漲幅50%。DeepSeek V4 Pro於8月13日凌晨推出並更新至API，新版本增強了Agent能力。",
+  "status": "done",
+  "fetched_at": "2026-08-14T20:01:01"
+}
