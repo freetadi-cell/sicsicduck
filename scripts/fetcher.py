@@ -48,7 +48,7 @@ BANK_FETCH_STRATEGY = {
     'publicbank': ['general'],
     'chbank': ['general'],
     'airstar': ['general'],
-    'za': ['general'],
+    'za': ['hket', 'general'],  # 官網定期牌價要靠 App，用 HKET 抽正確牌價
     'livi': ['general'],
     
     # 默認策略：先試官網，失敗再試 HKET
