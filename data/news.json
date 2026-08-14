@@ -37,57 +37,415 @@
       "pinned": true
     },
     {
-      "id": "fb914f5846d15e230a7fd5e94ae941da",
-      "title": "伊朗將加入金磚國家新開發銀行 尋求美元體系以外替代融資管道",
-      "description": "伊朗國營傳媒8月12日刊出的報道指,央行行長赫馬提(Abdolnasser Hemmati)表示伊朗即將加入由金磚國家(BRICS)成立的新開發銀行(New Developmen",
-      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379809/%E4%BC%8A%E6%9C%97%E5%B0%87%E5%8A%A0%E5%85%A5%E9%87%91%E7%A3%9A%E5%9C%8B%E5%AE%B6%E6%96%B0%E9%96%8B%E7%99%BC%E9%8A%80%E8%A1%8C-%E5%B0%8B%E6%B1%82%E7%BE%8E%E5%85%83%E9%AB%94%E7%B3%BB%E4%BB%A5%E5%A4%96%E6%9B%BF%E4%BB%A3%E8%9E%8D%E8%B3%87%E7%AE%A1%E9%81%93",
-      "pubDate": "2026-08-13 15:31:52",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260726/1158130962530308096542638.jpeg/57al301x4x7YlOU6-FZpYE4kteu6mGjRbuBdb27gXW8",
+      "id": "cdc3492bb5b3e255ccb1d95628ce7eee",
+      "title": "聯儲局觀察:Barkin稱不確定是否需加息以壓低通脹 Hammack主張立即加息",
+      "description": "里士滿聯儲銀行總裁Tom Barkin(沒有貨幣政策投票權)表示,通脹路徑仍存在不確定性,亦不確定是否需要加息才能令通脹回落至2%目標,抑或通脹會自行放緩。 克里夫蘭聯儲銀行總裁Beth Hammack(擁有貨幣政策投票權)表示,聯邦公開市場委員會(FOMC)應立即開始加息進程以壓低通脹,並指近期較疲弱的價格數據...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E5%84%B2%E5%B1%80%E8%A7%80%E5%AF%9F-barkin%E7%A8%B1%E4%B8%8D%E7%A2%BA%E5%AE%9A%E6%98%AF%E5%90%A6%E9%9C%80%E5%8A%A0%E6%81%AF%E4%BB%A5%E5%A3%93%E4%BD%8E%E9%80%9A%E8%84%B9-hammack%E4%B8%BB%E5%BC%B5%E7%AB%8B%E5%8D%B3%E5%8A%A0%E6%81%AF-183605764.html",
+      "pubDate": "2026-08-13 18:36:05",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
+        "克里夫蘭聯儲銀行",
+        "里士滿聯儲銀行",
+        "通脹",
+        "表示",
+        "投票權",
+        "貨幣政策"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "23cf0a96951d3a5441352cb028d1e4dc",
+      "title": "日圓匯率距離160大關僅咫尺之遙 政府支持加息的消息幾無影響",
+      "description": "Bloomberg 【彭博】-- 儘管據稱日本首相高市早苗政府支持加息,但日圓兌美元匯率仍處在一個關鍵水平觸手可及的範圍之內。日圓周四小幅走低,紐約午後交易中一度跌至1美元兌159.56日圓。過去,在接近160時,日圓貶值勢頭往往會受到遏制。據知情人士透露,日本央行可能會在9月份或10月份加息。他們補充說,日本央...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%97%A5%E5%9C%93%E5%8C%AF%E7%8E%87%E8%B7%9D%E9%9B%A2160%E5%A4%A7%E9%97%9C%E5%83%85%E5%92%AB%E5%B0%BA%E4%B9%8B%E9%81%99-%E6%94%BF%E5%BA%9C%E6%94%AF%E6%8C%81%E5%8A%A0%E6%81%AF%E7%9A%84%E6%B6%88%E6%81%AF%E5%B9%BE%E7%84%A1%E5%BD%B1%E9%9F%BF-183110984.html",
+      "pubDate": "2026-08-13 18:31:10",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/5c6c94ae3fb30e7961707f7d40e07378.jpg",
+      "keywords": [
+        "日圓兌美元匯率",
+        "日本央行",
+        "日本"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "f5b81a4672417a6941a84e0cbe8c8ce6",
+      "title": "長鑫科技超越騰訊 成中國市值最高上市公司",
+      "description": "<匯港通訊> 內存晶片巨頭長鑫科技7月底登陸 A 股,在科創板上市僅兩周多後,收盤總市值首次趕超騰訊(00700.HK),躍居中國上市公司市值首位。長鑫科技盤中一度上漲逾4%,但之後回吐輕微收低。不過,相較發行價,該股累計漲幅仍超過5倍,總市值達到約3.54萬億元。相比之下,騰訊在公布季度業績後股價走低,市場對其...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%95%B7%E9%91%AB%E7%A7%91%E6%8A%80%E8%B6%85%E8%B6%8A%E9%A8%B0%E8%A8%8A-%E6%88%90%E4%B8%AD%E5%9C%8B%E5%B8%82%E5%80%BC%E6%9C%80%E9%AB%98%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8-125143358.html",
+      "pubDate": "2026-08-13 12:51:43",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "匯港通訊",
+        "科創板上市"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "d8f1710f1c0404082c4fe6c4190884c2",
+      "title": "阿根廷7月按年通脹率為33.8%,高於前值的33.5%。預測值為33.5%。",
+      "description": "阿根廷7月按年通脹率為33.8%,高於前值的33.5%。預測值為33.5%。~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E9%98%BF%E6%A0%B9%E5%BB%B77%E6%9C%88%E6%8C%89%E5%B9%B4%E9%80%9A%E8%84%B9%E7%8E%87%E7%82%BA33-8-%E9%AB%98%E6%96%BC%E5%89%8D%E5%80%BC%E7%9A%8433-5-%E9%A0%90%E6%B8%AC%E5%80%BC%E7%82%BA33-190000587.html",
+      "pubDate": "2026-08-13 19:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "阿思達克財經新聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "79906f1dbccc38fb07044aea649984cd",
+      "title": "谷歌發布新版Gemini Flash 最強人工智能模型依然延期",
+      "description": "旗下谷歌發布Gemini Flash人工智能模型的又一版本,但沒有說明何時會推出其最強大的AI模型Gemini 3.5 Pro。谷歌周四在一篇博客文章中表示,新推出的Gemini 3.",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B0%B7%E6%AD%8C%E7%99%BC%E5%B8%83%E6%96%B0%E7%89%88gemini-flash-%E6%9C%80%E5%BC%B7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A8%A1%E5%9E%8B%E4%BE%9D%E7%84%B6%E5%BB%B6%E6%9C%9F-185957153.html",
+      "pubDate": "2026-08-13 18:59:57",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "flash",
+        "ai",
+        "gemini"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c3733ac70d7811bb68c3a1e39ebf49f4",
+      "title": "乒乓WTT瑞典大滿貫|杜凱琹吳詠琳挫世一 破王曼昱/蒯曼兩年不敗",
+      "description": "要與中國乒乓球隊的王曼昱/蒯曼爭奪WTT瑞典大滿貫女雙4強席位,香港隊的杜凱琹/吳詠琳賽前特地翻看大量對方的比賽錄像備戰,兩人得出這樣的結論:",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60379857/%E4%B9%92%E4%B9%93wtt%E7%91%9E%E5%85%B8%E5%A4%A7%E6%BB%BF%E8%B2%AB-%E6%9D%9C%E5%87%B1%E7%90%B9%E5%90%B3%E8%A9%A0%E7%90%B3%E6%8C%AB%E4%B8%96%E4%B8%80-%E7%A0%B4%E7%8E%8B%E6%9B%BC%E6%98%B1-%E8%92%AF%E6%9B%BC%E5%85%A9%E5%B9%B4%E4%B8%8D%E6%95%97",
+      "pubDate": "2026-08-13 18:58:02",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260814/1164767963933315072730926.jpeg/4fkleTol6rg9Vnur3FqRNB17I6auK6cua-hyKGvocig",
+      "keywords": [
+        "體育",
+        "網球",
         "新聞",
-        "世界新聞",
+        "f1賽車",
+        "高爾夫球",
         "香港01",
-        "國際",
-        "環球",
-        "hk01",
-        "國際新聞"
+        "香港新聞",
+        "體育新聞",
+        "籃球",
+        "nba",
+        "體育消息",
+        "hk01"
       ],
       "category": [
-        "politics"
+        "sports"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "943ba1dfca5fccfb13f215ea07c67c09",
-      "title": "最新一季公屋綜合輪候時間4.8年 較上一季微升0.1年",
-      "description": "<匯港通訊> 房屋局公布最新一季的公屋綜合輪候時間為4.8年,較上一季輕微上升0.1年,但仍低於2018年至2025年間的紀錄,繼續維持在5年以下。房屋局發言人表示,為進一步滿足市民的住屋需求,政府會繼續致力在未來5年(即2026/27至2030/31年度)每年平均提供超過3萬個公營房屋單位(包括資助出售房屋和出...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%9C%80%E6%96%B0-%E5%AD%A3%E5%85%AC%E5%B1%8B%E7%B6%9C%E5%90%88%E8%BC%AA%E5%80%99%E6%99%82%E9%96%934-8%E5%B9%B4-%E8%BC%83%E4%B8%8A-%E5%AD%A3%E5%BE%AE%E5%8D%870-085847294.html",
-      "pubDate": "2026-08-13 08:58:47",
+      "id": "617d31668ce960c3c41a61f2e37d9c60",
+      "title": "乒乓WTT瑞典大滿貫|杜凱琹吳詠琳挫世一 力克中國隊王曼昱/蒯曼",
+      "description": "要與中國乒乓球隊的王曼昱/蒯曼爭奪WTT瑞典大滿貫女雙4強席位,香港隊的杜凱琹/吳詠琳賽前特地翻看大量對方的比賽錄像備戰,兩人得出這樣的結論:",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60379857/%E4%B9%92%E4%B9%93wtt%E7%91%9E%E5%85%B8%E5%A4%A7%E6%BB%BF%E8%B2%AB-%E6%9D%9C%E5%87%B1%E7%90%B9%E5%90%B3%E8%A9%A0%E7%90%B3%E6%8C%AB%E4%B8%96%E4%B8%80-%E5%8A%9B%E5%85%8B%E4%B8%AD%E5%9C%8B%E9%9A%8A%E7%8E%8B%E6%9B%BC%E6%98%B1-%E8%92%AF%E6%9B%BC",
+      "pubDate": "2026-08-13 18:58:02",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260814/1164767963933315072730926.jpeg/4fkleTol6rg9Vnur3FqRNB17I6auK6cua-hyKGvocig",
+      "keywords": [
+        "體育",
+        "網球",
+        "新聞",
+        "f1賽車",
+        "高爾夫球",
+        "香港01",
+        "香港新聞",
+        "體育新聞",
+        "籃球",
+        "nba",
+        "體育消息",
+        "hk01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "40233a584e81f55a33ee79a1326515cf",
+      "title": "OpenAI首席營收官任職不足一年即離職",
+      "description": "Investing.com - OpenAI週四宣布,首席營收官丹尼斯·德雷瑟(Denise Dresser)將離開這家人工智能公司,距其加入不足一年。此次離職是該公司籌備首次公開招股(IPO)之際又一名高層出走。",
+      "link": "https://hk.finance.yahoo.com/news/openai%E9%A6%96%E5%B8%AD%E7%87%9F%E6%94%B6%E5%AE%98%E4%BB%BB%E8%81%B7%E4%B8%8D%E8%B6%B3-%E5%B9%B4%E5%8D%B3%E9%9B%A2%E8%81%B7-185611075.html",
+      "pubDate": "2026-08-13 18:56:11",
       "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
+      "image_url": "https://content-media.investing.com/news/LYNXMPEB0507V_M.jpg",
+      "keywords": [
+        "首次公開招股",
+        "denise dresser",
+        "德雷瑟",
+        "丹尼斯·德雷瑟"
+      ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "577f9b3754c75767e100b35c4d06ea45",
-      "title": "人民幣首超港元成為香港外匯交易最大貨幣對",
-      "description": "香港財資市場公會公布香港外匯市場半年度調查結果,於2026年4月,香港外匯交易日均成交額為9,082億美元,其中美元兌人民幣交易量首次超越美元兌港元,躍居香港市場交投最活躍的貨幣對。 當中,4月美元兌人民幣日均成交2,740億美元,佔香港全部外匯交易的30.2%,超過美元兌港元的2,402億美元,佔比26.4%。...",
-      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E6%B0%91%E5%B9%A3%E9%A6%96%E8%B6%85%E6%B8%AF%E5%85%83%E6%88%90%E7%82%BA%E9%A6%99%E6%B8%AF%E5%A4%96%E5%8C%AF%E4%BA%A4%E6%98%93%E6%9C%80%E5%A4%A7%E8%B2%A8%E5%B9%A3%E5%B0%8D-064457313.html",
-      "pubDate": "2026-08-13 06:44:57",
+      "id": "f7e07a50eec094aeb53825d9d9ccf0fb",
+      "title": "Sciton 在加拿大推出 OMNITM:专为所有人设计的新型激光脱毛平台",
+      "description": "加利福尼亚州帕洛阿尔托 2026年8月14日 /美通社/ -- 激光和光动力技术的全球领导者Sciton Inc. 的最新创新OMNITM 激光脱毛已获得加拿大卫生部的批准。OMNI 的开发旨在满足对快速、有效的激光脱毛系统不断增长的需求,该系统可无缝融入任何工作流程,专为所有皮肤类型、治疗区域和诊所规模而设计。 凭借高达 5000 W* 的功率和业界最大的光斑尺寸,OMNI 可提供超快的治疗以提高患者吞吐量,帮助医疗服务提供商在更短的时间内治疗更多患者。波长选项,包括 760 nm、810/940 nm 混合波长和 1060 nm,以及各种光斑大小和治疗模式,可确保为所有皮肤类型和身体部位提供精确和个性化的护理。集成的接触式冷却有助于保持患者的舒适度,而芦荟类喷雾剂可用作无凝胶替代品,可舒缓皮肤,增强舒适度并简化清洁。此外,OMNI 使用标准的 110V 插座运行,使其更易于集成到任何治疗室中。OMNI 专为大批量使用而打造,可提供提供商全年提供卓越业绩所需的性能和多功能性。 “ 对于加拿大美容行业来说,这是一个令人兴奋的发展。这项技术在美国的成功尤其令人鼓舞,尤其是在历史上被视为商品化服务的治疗类别中。因此,许多提供者选择不在实践中优先考虑脱发治疗。OMNI 正在帮助改变这种看法。凭借其速度、多功能性和有效治疗各种皮肤类型的能力,它使诊所能够提供安全、舒适且具有商业可行性的脱发治疗。最终,这为医疗服务提供者创造了新的机会,同时改善了患者的可及性和疗效。” Sciton加拿大和拉丁美洲销售总监安德鲁•赫里扎克说。 OMNI 专为支持各种实践环境而设计,将高性能技术与工作流程增强功能相结合,有助于在不影响患者舒适度的前提下最大限度地提高效率。其可定制的治疗参数和双手持功能使提供者能够根据个体患者的需求量身定制治疗方案,同时保持当今繁忙的美容实践所需的速度和一致性。 “Sciton 的 OMNI 允许我们为所治疗的皮肤类型和肤色选择合适的波长,还有许多可定制的选项。通过同时连接两部手机,我们可以轻松地在小光斑和大光斑尺寸之间切换,从而使治疗不仅快速有效,而且高效。这是一个安全、多功能的系统,我对全年委托我的员工充满信心。” 内科医生兼美容激光外科 医生戴安娜•基贝尔博 士 说。 OMNI加入了Sciton屡获殊荣的美学解决方案组合,这反映了该公司致力于构建智能、有效的系统,帮助加拿大提供商充满信心地发展业务。 要了解有关 OMNITM 激光脱毛的更多信息,请访问 www.sciton.com/omni 要了解有关 Sciton 的更多信息,请访问 www.sciton.com 关于 Sciton Sciton, Inc. 总部位于加利福尼亚州帕洛阿尔托,是一家前瞻性的、由员工持股的医疗器械公司,由行业远见卓识的詹姆斯•霍巴特博士和丹尼尔•内格斯博士于1997年创立。Sciton 以提供高质量的激光和光解决方案而闻名,其产品组合涵盖了广泛的医疗和美容应用,包括女性健康、皮肤活化、换肤、光疗、血管和色素病变、疤痕修复、痤疮治疗和脱发。Sciton凭借强大的直销队伍在美国、加拿大、英国、瑞士、澳大利亚、日本、韩国、爱尔兰、荷兰、法国和智利开展业务,战略分销网络遍及超过45个国家,其全球影响力继续扩大——为卓越的医疗和美容设定了新的标准。 *视手机而定 OMNITM 激光脱毛",
+      "link": "https://www.prnasia.com/story/544012-1.shtml",
+      "pubDate": "2026-08-13 18:55:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "cpc",
+        "meq",
+        "hea",
+        "pdt",
+        "ima"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2022382dae5ab898634c247dfbd8d9be",
+      "title": "Webull詳解其管理型債券投資組合的運作機制",
+      "description": "Investing.com - Webull近期向Investing.com透露,其新推出的管理型債券投資組合,每個CUSIP(美國證券識別碼)的最低持倉金額僅需100美元,而在傳統債券市場中,合理執行一筆交易通常需要至少1萬美元。",
+      "link": "https://hk.finance.yahoo.com/news/webull%E8%A9%B3%E8%A7%A3%E5%85%B6%E7%AE%A1%E7%90%86%E5%9E%8B%E5%82%B5%E5%88%B8%E6%8A%95%E8%B3%87%E7%B5%84%E5%90%88%E7%9A%84%E9%81%8B%E4%BD%9C%E6%A9%9F%E5%88%B6-185042909.html",
+      "pubDate": "2026-08-13 18:50:42",
       "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM18123_M.jpg",
+      "keywords": [
+        "投資組合",
+        "peterson"
+      ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "9086b9d31227e8f5e86702c763fb3cbc",
+      "title": "Quantinuum 公佈 2026 年第二季業績",
+      "description": "第二季營收同比增長 279%;上調 2026 財年展望 在 Helios 上實現近五個九的邏輯保真度,鞏固在容錯技術領域的領導地位 宣佈與 Oracle 建立業界首創合作夥伴關係,將 Helios 作為 Oracle Cloud Infrastructure (OCI) 服務部署 透過與全球主要電子產品製造商進行戰略合作強化供應鏈 科羅拉多州布魯姆菲爾德2026年8月14日 /美通社/ -- 領先的量子運算公司 Quantinuum Inc.(納斯達克股票代碼:QNT)(以下簡稱「公司」)今日公佈了截至 2026 年 6 月 30 日的第二季財務業績。...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/quantinuum--2026--302851279.html",
+      "pubDate": "2026-08-13 18:50:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1662925/Quantinuum-Logo.jpg?id=OA2859511",
+      "keywords": [
+        "ern"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "93ee2594dced7541beb35a0171314b93",
+      "title": "加州監獄未能阻止獄警性侵女囚 司法部:系統性失職",
+      "description": "美國司法部周四表示,加州監獄系統未能有效保護女囚免受獄警性侵犯及性騷擾,更發現加州懲教部門未能為受害者提供安全舉報途徑,以避免報復。此外,負責調查不當行為的職員,本身亦經常被指控涉及性侵犯或性騷擾。 這次調查在拜登政府時期展開,主要針對兩所州立監獄:喬奇拉(Chowchilla)的加州中部女子監獄,以及奇諾(Chino)的加州女子懲教所。調查揭示多宗獄警經常性侵女囚的個案。其中至少一宗,一名獄警因長達約十年的嚴重性侵行為被定罪,判處監禁224年。 加州懲教及康復部未有回覆電郵查詢。 司法部民權司助理司法部長迪隆(Harmeet K. Dhillon)表示,女囚被告知透過一個不保密、且被指控的獄警可查閱的網上系統舉報不當行為。迪隆指出,女囚「完全清楚這種保密漏洞,這阻礙她們舉報不當行為」。她提到至少一名負責調查不當行為的警長,因承認在職期間接收兒童性侵圖片,被判監禁15年。 迪隆周四在洛杉磯舉行的新聞發布會上表示:「這次調查的結果是,加州監獄系統在處理女性囚犯問題上,缺乏足夠的機制來阻止、偵測及追究針對女囚的嚴重性侵犯及襲擊行為。」 美聯社過往曾揭露,加州都柏林(Dublin)一所聯邦監獄的職員,對女囚犯進行類似的嚴重性侵模式,該設施當時被稱為「強姦俱樂部」。該監獄在美聯社調查後已關閉。 聯邦政府周四給予加州監獄系統49天時間,糾正導致嚴重性侵的狀況,並警告若未能改善,可能面臨民事訴訟。措施包括擴大閉路電視覆蓋範圍、加強保密舉報渠道及強化調查程序。 獲總統特朗普任命為洛杉磯首席聯邦檢察官的埃塞利(Bill Essayli)表示,加州必須採取行動。埃塞利在一份聲明中寫道:「州政府必須正視其員工在這些設施中未能阻止及處理性侵犯的持續失職,以及導致這些情況持續存在的系統性崩潰。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16564998-%E5%8A%A0%E5%B7%9E%E7%9B%A3%E7%8D%84%E6%9C%AA%E8%83%BD%E9%98%BB%E6%AD%A2%E7%8D%84%E8%AD%A6%E6%80%A7%E4%BE%B5%E5%A5%B3%E5%9B%9A-%E5%8F%B8%E6%B3%95%E9%83%A8%EF%BC%9A%E7%B3%BB%E7%B5%B1%E6%80%A7%E5%A4%B1",
+      "pubDate": "2026-08-13 18:46:41",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/6d0a99b44b4272a85487568af3fbba88_DOJ_California_Prisons_Investigation_94537_FB.jpg",
+      "keywords": [
+        "司法部",
+        "加州監獄",
+        "獄警",
+        "性侵",
+        "大視野",
+        "女囚"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "39165cde70f2035e1322e56bce3d368a",
+      "title": "特朗普疫苗新政惹爭議 專家憂分拆注射增財政物流挑戰",
+      "description": "公共衞生專家迅速譴責美國總統特朗普一項旨在顛覆美國兒童疫苗接種的行政命令,但最大的障礙可能是它將對家長、醫療服務提供者和製藥商構成前所未有的財政和物流挑戰。 這位共和黨總統周一宣布,要求將包括麻疹、腮腺炎和德國麻疹(MMR)疫苗在內的混合疫苗分拆為獨立注射。該命令指出,這種疫苗及其他疫苗的接種預約應盡可能錯開。 為此,製藥商需要重新啟用數十年來在美國未廣泛使用的多種獨立疫苗。他們還必須興建新的生產設施,以生產較全國目前使用量多數百萬劑的疫苗。 對於家長而言,分拆MMR疫苗並錯開注射,意味著需要比目前多出許多次前往診所。這些預約亦可能令通常負責注射的兒科醫生承受壓力,同時推高與針筒及其他醫療用品相關的成本。 美國及其他國家的研究顯示,混合疫苗能增加兒童在入學前完全受到傳染病保護的可能性。 衞生專家指出,改變做法並無科學依據。 約翰霍普金斯彭博公共衞生學院的安娜·德賓醫生表示:「如果有充分理由,我們會做一些不那麼方便且更昂貴的事情。但這次沒有充分理由。我認為這是非常糟糕的公共衞生政策。」 根據特朗普的行政命令,聯邦官員獲指示在90天內制定分拆MMR疫苗及錯開其他疫苗的計劃。 然而,製藥科學家及前監管機構官員表示,這些改變可能需時數年,並要求製藥商投入數千萬美元用於新研究及生產設施。 目前,美國並無麻疹、腮腺炎或德國麻疹的獨立疫苗。所有獲食品及藥物管理局批准用於這些病毒的疫苗均為混合注射。這種三合一方式自1970年代起已成為美國的標準。 前食品及藥物管理局疫苗主管傑西·古德曼醫生表示,公司將需要進行大型研究,證明新的獨立注射疫苗在兒童體內產生與現有版本相似的免疫系統增強反應。 鑑於獨立麻疹疫苗在美國已約半個世紀未廣泛生產,公司亦可能需要證明新生產設施及程序的安全性。 現為喬治城大學教授的古德曼表示:「問題是自那時以來改變了多少,以及食品及藥物管理局和公司在依賴這些比較時會有何程度的信心?」 據業界專家稱,設計、建造新疫苗廠並獲得聯邦批准通常需時約五年。 此外,古德曼指出,食品及藥物管理局將必須單獨審查及批准每種分拆後的疫苗,這是一個史無前例的程序。 他表示:「我認為沒有任何可比較的例子,是在沒有文件證明科學理由的情況下,取消保護嬰兒的極其有效的公共衞生措施。」 麻疹及相關疾病的獨立注射疫苗,傾向由無法負擔MMR疫苗的低收入國家使用。默克、葛蘭素史克及其他數家供應美國兒童疫苗的公司,只生產混合疫苗。 默克及葛蘭素史克在獨立聲明中表示,他們堅守其產品的安全及有效性。兩者均未討論分拆疫苗的計劃。 默克在一份電郵聲明中表示:「迄今為止,並無已發表的科學證據顯示,將混合MMR疫苗分拆為三種獨立注射有任何益處。」 MMR疫苗目前分兩劑接種——第一劑在一歲時,第二劑在四歲後。將疫苗分拆為三個獨立成分,將意味著六次診所就診。錯開百日咳及其他傳染病的注射,可能令就診次數增加許多倍。 德賓指出,隨著就診次數增加,家長更有可能錯過預約或停止預約。 她表示:「這將會更不方便、更昂貴,而且接種疫苗的人數將會減少。」 超過十年來,特朗普一直表達其觀點——與醫療團體的指引相反——認為兒童疫苗應在較長時間內以較小劑量接種。去年,他呼籲衞生部長小羅伯特·F·甘迺迪研究減少接種次數。甘迺迪及其他官員曾指出,丹麥等較小國家建議的疫苗接種次數略少於美國。 但德賓指出,分拆混合疫苗將導致兒童接種的獨立疫苗數量,較其他可比較國家多出許多。 白宮發言人庫什·德賽表示,特朗普政府在MMR疫苗方面的努力「將為家長提供更多關於子女接種時間及頻率的選擇,這最終將提高所有三種疾病的疫苗接種率。」 儘管特朗普的命令具有打破先例的性質,部分專家仍質疑它能否帶來實質性改變。 白宮及食品及藥物管理局均不能強迫製藥商開發及尋求新疫苗的批准。從商業角度來看,公司幾乎沒有動力開發他們已以混合注射形式銷售的疫苗的獨立版本。 費城兒童醫院疫苗研究員兼前政府顧問保羅·奧菲特醫生表示:「他們將會與自己競爭,沒有理由這樣做。」 雖然特朗普的命令要求進行更多聯邦研究及建議,但只有州政府擁有法律權力要求學童接種疫苗。該命令僅建議各州考慮更新其法律,以反映特朗普政府的做法。 奧菲特表示:「我認為各州將會無視這項命令。我認為底線是我們不需要向特朗普尋求醫療建議。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16562570-%E7%89%B9%E6%9C%97%E6%99%AE%E7%96%AB%E8%8B%97%E6%96%B0%E6%94%BF%E6%83%B9%E7%88%AD%E8%AD%B0-%E5%B0%88%E5%AE%B6%E6%86%82%E9%87%8D%E6%8E%A8%E5%96%AE%E5%8A%91%E9%87%9D%E7%A4%99%E5%85%92%E7%AB%A5%E5%81%A5",
+      "pubDate": "2026-08-13 18:42:03",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/5a1d91e149feab99b18dd916412523ee_Trump_611_8_FB.jpg",
+      "keywords": [
+        "公共衞生",
+        "製藥商",
+        "mmr疫苗",
+        "商業事",
+        "疫苗",
+        "特朗普"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "693de7eee739db365f7efaccc32066f7",
+      "title": "美國6月零售銷售料升0.1% 扣除汽車後升0.2%",
+      "description": "據彭博綜合調查,美國7月零售銷售預期按月上升0.1%,此前一個月升0.2%。市場預期6月汽油銷售下跌,而汽車銷售則輕微上升。 每月消費者物價報告顯示,新車價格升0.1%,二手車及貨車價格升0.4%,但單位銷量下跌,令市場預期本周報告中的汽車及零件類別銷售僅溫和增長,此前一個月升1.9%。 有關數據將於周五美東時間...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B6%E6%9C%88%E9%9B%B6%E5%94%AE%E9%8A%B7%E5%94%AE%E6%96%99%E5%8D%870-1-%E6%89%A3%E9%99%A4%E6%B1%BD%E8%BB%8A%E5%BE%8C%E5%8D%870-2-183611955.html",
+      "pubDate": "2026-08-13 18:36:11",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "track portfolio",
+        "mortgage",
+        "stock research",
+        "market news",
+        "suze orman",
+        "finance",
+        "business news",
+        "tax",
+        "stocks",
+        "401k",
+        "stock",
+        "investment tools",
+        "quote",
+        "business",
+        "investor",
+        "financial information",
+        "retirement",
+        "personal finance",
+        "investing",
+        "mutual funds"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dadc3fd4cf573434abf163b59f0ae5a3",
+      "title": "8月13日美國重要經濟數據每日概覽",
+      "description": "美國7月生產者價格持平,此前6月下跌0.1%,其中能源價格下跌3.1%,食品價格下跌0.9%。 扣除食品及能源的核心價格上升0.2%,此前升0.4%,低於市場預期。 生產者價格按年升幅由前一個月的5.5%放緩至4.7%,核心價格按年升幅則由前一個月的4.7%放緩至4.2%,但仍處於較高水平。 截至8月8日止當周,...",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%8813%E6%97%A5%E7%BE%8E%E5%9C%8B%E9%87%8D%E8%A6%81%E7%B6%93%E6%BF%9F%E6%95%B8%E6%93%9A%E6%AF%8F%E6%97%A5%E6%A6%82%E8%A6%BD-183558104.html",
+      "pubDate": "2026-08-13 18:35:58",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "能源價格下跌"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2efddbb5dee04fb62e5aac363c70949e",
+      "title": "BofA下調StubHub評級 指世界盃利好效應消退後增長或放緩",
+      "description": "美銀證券周四表示,隨著世界盃帶動的利好效應消退,以及面對較高比較基數,StubHub(STUB.US)未來數季增長或放緩。 該現場活動票務平台周三收市後公布,第二季商品交易總額(GMS)按年急升34%至31億美元,創新高。 StubHub行政總裁Eric Baker於業績公告中表示,第二季反映現場活動需求強勁,當...",
+      "link": "https://hk.finance.yahoo.com/news/bofa%E4%B8%8B%E8%AA%BFstubhub%E8%A9%95%E7%B4%9A-%E6%8C%87%E4%B8%96%E7%95%8C%E7%9B%83%E5%88%A9%E5%A5%BD%E6%95%88%E6%87%89%E6%B6%88%E9%80%80%E5%BE%8C%E5%A2%9E%E9%95%B7%E6%88%96%E6%94%BE%E7%B7%A9-183023242.html",
+      "pubDate": "2026-08-13 18:30:23",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "表示",
+        "stubhub"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "71e596e68d1734b553270a0a008bcfe2",
+      "title": "TERREPOWER 推出全新品牌標語「重新想像無限可能」,品牌革新邁向新階段",
+      "description": "阿拉巴馬州達芙妮2026年8月14日 /美通社/ -- TERREPOWER 今日宣佈推出全新企業品牌標語「重新想像無限可能」(Reimagine What's Possible),彰顯公司由再製造先驅蛻變為全球可持續製造領導者。全新品牌標語是 TERREPOWER 持續推進品牌革新的重要里程碑。品牌標語體現推動 TERREPOWER 成長的企業家精神與創新思維,亦彰顯公司將可持續製造模式大規模應用於售後市場的成果。 全新品牌標語承接公司歷時多年的品牌革新計劃。該計劃旨在重塑企業形象、拓展業務能力,並進一步鞏固 TERREPOWER...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/terrepower--302850938.html",
+      "pubDate": "2026-08-13 18:28:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1471764/TERREPOWER1-Logo.jpg?id=OA2882186&p=original",
+      "keywords": [
+        "pdt",
+        "rcy",
+        "esg"
+      ],
+      "category": [
+        "technology",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "967ff6ee871b1eadf587ab826e2e5c3f",
+      "title": "朱鎔基逝世,經濟集權改革者的政治遺產|端聞 Podcast",
+      "description": "他一方面讓中央政府獲得經濟上的集權,也由此重塑了政權的合法性基礎,另一方面也造成了一代產業工人和無數家庭的集體殘酷記憶。",
+      "link": "https://theinitium.com/20260814-initium-audio-mainland-passing-of-zhurongji/",
+      "pubDate": "2026-08-13 18:27:52",
+      "source_name": "端傳媒",
+      "image_url": "https://storage.ghost.io/c/bd/52/bd52a4c1-eed6-4103-b487-e9a77365f6b3/content/images/2026/08/RP3DRHXSHTAA.jpg",
+      "keywords": [
+        "大陸",
+        "經濟",
+        "播客",
+        "政治",
+        "端聞 | 新聞播客"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "86df3541c313fab8cf2565cc45ccded5",
+      "title": "快評:柯伯吉避提“台灣” 華府策略變了",
+      "description": "中評社快評/近日訪問東南亞的美國副防長柯伯吉13日在記者會上回應了台灣問題,但沒有提“台灣”二字,記者會也沒有給兩岸記者提問的機會。華府處理台海問題的策略變了,具體為“言辭軟、行動硬”。 柯伯吉披露本屆特朗普政府刻意與拜登政府區別--在敏感問題上保持言論氛圍穩定,不助長增加戰爭可能性的言論,但實際行動上加強威懾力。美國的立場是“維持現狀”,“期待促進該地區的戰略穩定和力量平衡”。",
+      "link": "http://www.crntt.com/doc/7_0_107223584_1_0814020641.html",
+      "pubDate": "2026-08-13 18:06:41",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/14/107223586.jpg",
+      "keywords": [
+        "快評"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0d847337eeb31c86912cf53ad0ba10a2",
+      "title": "「超人」Henry Cavill驚喜現身中環拍戲 劇組搭建懷舊霓虹燈街景",
+      "description": "前「超人」亨利卡菲爾(Henry Cavill)今晚現身中環卑利街,夥拍《殺神John Wick》導演Chad Stahelski拍攝全新奇幻動作電影《Highlander》。劇組搭",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60379854/%E8%B6%85%E4%BA%BA-henry-cavill%E9%A9%9A%E5%96%9C%E7%8F%BE%E8%BA%AB%E4%B8%AD%E7%92%B0%E6%8B%8D%E6%88%B2-%E5%8A%87%E7%B5%84%E6%90%AD%E5%BB%BA%E6%87%B7%E8%88%8A%E9%9C%93%E8%99%B9%E7%87%88%E8%A1%97%E6%99%AF",
+      "pubDate": "2026-08-13 18:01:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260814/1164752870692622336489251.jpeg/la7oajpAkRW0WCjqVfueSAeNf9zKAPFqcKDxcnCg8XI",
+      "keywords": [
+        "外語片",
+        "電影",
+        "睇戲",
+        "港產片",
+        "香港01",
+        "影評",
+        "經典電影"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
     },
     {
       "id": "f42f854ad69dcc0fdc149647f0fc8cff",
@@ -1092,6 +1450,29 @@
         "entertainment"
       ],
       "region": "hk"
+    },
+    {
+      "id": "fb914f5846d15e230a7fd5e94ae941da",
+      "title": "伊朗將加入金磚國家新開發銀行 尋求美元體系以外替代融資管道",
+      "description": "伊朗國營傳媒8月12日刊出的報道指,央行行長赫馬提(Abdolnasser Hemmati)表示伊朗即將加入由金磚國家(BRICS)成立的新開發銀行(New Developmen",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379809/%E4%BC%8A%E6%9C%97%E5%B0%87%E5%8A%A0%E5%85%A5%E9%87%91%E7%A3%9A%E5%9C%8B%E5%AE%B6%E6%96%B0%E9%96%8B%E7%99%BC%E9%8A%80%E8%A1%8C-%E5%B0%8B%E6%B1%82%E7%BE%8E%E5%85%83%E9%AB%94%E7%B3%BB%E4%BB%A5%E5%A4%96%E6%9B%BF%E4%BB%A3%E8%9E%8D%E8%B3%87%E7%AE%A1%E9%81%93",
+      "pubDate": "2026-08-13 15:31:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260726/1158130962530308096542638.jpeg/57al301x4x7YlOU6-FZpYE4kteu6mGjRbuBdb27gXW8",
+      "keywords": [
+        "新聞",
+        "世界新聞",
+        "香港01",
+        "國際",
+        "環球",
+        "hk01",
+        "國際新聞"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "da404966153ab727324876ddf0ff79de",
@@ -2469,23 +2850,6 @@
       ],
       "category": [
         "technology"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "f5b81a4672417a6941a84e0cbe8c8ce6",
-      "title": "長鑫科技超越騰訊 成中國市值最高上市公司",
-      "description": "<匯港通訊> 內存晶片巨頭長鑫科技7月底登陸 A 股,在科創板上市僅兩周多後,收盤總市值首次趕超騰訊(00700.HK),躍居中國上市公司市值首位。長鑫科技盤中一度上漲逾4%,但之後回吐輕微收低。不過,相較發行價,該股累計漲幅仍超過5倍,總市值達到約3.54萬億元。相比之下,騰訊在公布季度業績後股價走低,市場對其...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%95%B7%E9%91%AB%E7%A7%91%E6%8A%80%E8%B6%85%E8%B6%8A%E9%A8%B0%E8%A8%8A-%E6%88%90%E4%B8%AD%E5%9C%8B%E5%B8%82%E5%80%BC%E6%9C%80%E9%AB%98%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8-125143358.html",
-      "pubDate": "2026-08-13 12:51:43",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "匯港通訊",
-        "科創板上市"
-      ],
-      "category": [
-        "business"
       ],
       "region": "hk"
     },
@@ -5602,6 +5966,21 @@
       "region": "hk"
     },
     {
+      "id": "943ba1dfca5fccfb13f215ea07c67c09",
+      "title": "最新一季公屋綜合輪候時間4.8年 較上一季微升0.1年",
+      "description": "<匯港通訊> 房屋局公布最新一季的公屋綜合輪候時間為4.8年,較上一季輕微上升0.1年,但仍低於2018年至2025年間的紀錄,繼續維持在5年以下。房屋局發言人表示,為進一步滿足市民的住屋需求,政府會繼續致力在未來5年(即2026/27至2030/31年度)每年平均提供超過3萬個公營房屋單位(包括資助出售房屋和出...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9C%80%E6%96%B0-%E5%AD%A3%E5%85%AC%E5%B1%8B%E7%B6%9C%E5%90%88%E8%BC%AA%E5%80%99%E6%99%82%E9%96%934-8%E5%B9%B4-%E8%BC%83%E4%B8%8A-%E5%AD%A3%E5%BE%AE%E5%8D%870-085847294.html",
+      "pubDate": "2026-08-13 08:58:47",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "fc7b050d5eadae02bb46356e7b8e5252",
       "title": "《藍籌》長實集團(01113.HK)上半年基礎溢利按年升4.9%至66.4億元 中期息增至41仙",
       "description": "長實集團(01113.HK)公布2026年6月底止六個月中期業績,集團收入403.06億元,按年升58.8%。純利86.83億元,按年升37.8%;每股盈利2.48港元。派中期息0.41港元,按年升5.1%(上年同期0.39港元)。 期內,基礎溢利按年升4.9%至66.4億元。每股基礎溢利1.9元。 上半年度已確...",
@@ -8023,6 +8402,21 @@
         "technology"
       ],
       "region": "hk"
+    },
+    {
+      "id": "577f9b3754c75767e100b35c4d06ea45",
+      "title": "人民幣首超港元成為香港外匯交易最大貨幣對",
+      "description": "香港財資市場公會公布香港外匯市場半年度調查結果,於2026年4月,香港外匯交易日均成交額為9,082億美元,其中美元兌人民幣交易量首次超越美元兌港元,躍居香港市場交投最活躍的貨幣對。 當中,4月美元兌人民幣日均成交2,740億美元,佔香港全部外匯交易的30.2%,超過美元兌港元的2,402億美元,佔比26.4%。...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E6%B0%91%E5%B9%A3%E9%A6%96%E8%B6%85%E6%B8%AF%E5%85%83%E6%88%90%E7%82%BA%E9%A6%99%E6%B8%AF%E5%A4%96%E5%8C%AF%E4%BA%A4%E6%98%93%E6%9C%80%E5%A4%A7%E8%B2%A8%E5%B9%A3%E5%B0%8D-064457313.html",
+      "pubDate": "2026-08-13 06:44:57",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "95bce7ee22a8c107dae4d69af1a1946b",
@@ -69019,6 +69413,20 @@
       "region": "hk"
     },
     {
+      "id": "91212da2a6ad6f12",
+      "title": "日落下的彩虹︱邱士縉父子情戲催淚　張錦程寄語學懂擁抱遺憾",
+      "description": "【日落下的彩虹 / 邱士縉 / 張錦程】ViuTV原創劇《日落下的彩虹》昨晚（8月13日）和今晚（8月14日）播出的一集，邱士縉（Stanley）和張錦程充滿遺憾的父子關係故事，令人感到十分婉惜。St...",
+      "link": "https://topick.hket.com/article/4176550",
+      "pubDate": "2026-08-14 14:07:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4176550/VIUTV20260814_THUMB_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "e8a05bbb1906ac7b",
       "title": "十優港姐｜麥明詩帶囝囝快閃親子遊　變身辣媽罕騷泳裝照　產後身形Fit到爆",
       "description": "【麥明詩 / 十優港姐】現年34歲的「十優港姐」麥明詩（Louisa）前年與機師盛勁為（Keith）結婚，並於去年3月誕下BB，成為新手媽媽，不時在社交平台分享湊仔的生活點滴。日前，麥明詩趁工作空檔，...",
@@ -69670,6 +70078,6 @@
       "pinned": true
     }
   ],
-  "total": 3596,
-  "last_updated": "2026-08-14T14:01:51.918066"
+  "total": 3616,
+  "last_updated": "2026-08-14T15:02:18.814987"
 }
