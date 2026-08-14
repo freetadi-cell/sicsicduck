@@ -1313,18 +1313,20 @@ function renderTable() {
         const periodData = bank[currentCurrency]?.[period];
         if (!periodData) return null;
 
+        // Normalize slot keys: some banks (富融等) 用 new_customer/general 而非 new_funds/existing_funds
+        const slots = ['new_funds', 'existing_funds', 'exchange', 'new_customer', 'general'];
+
         // Check if new structure (has new_funds/existing_funds/exchange keys)
-        const isNewStructure = periodData.new_funds || periodData.existing_funds || periodData.exchange;
+        const isNewStructure = slots.some(s => periodData[s]);
 
         if (isNewStructure) {
             // New structure: get rate from appropriate slot
             let slot = null;
-            if (currentFunds === 'new') slot = 'new_funds';
-            else if (currentFunds === 'existing') slot = 'existing_funds';
+            if (currentFunds === 'new') slot = 'new_customer', slot = periodData['new_funds'] ? 'new_funds' : 'new_customer';
+            else if (currentFunds === 'existing') slot = periodData['existing_funds'] ? 'existing_funds' : 'general';
             else if (currentFunds === 'exchange') slot = 'exchange';
             else if (currentFunds === 'best') {
                 // "不限資金" - return the highest rate from any slot
-                const slots = ['new_funds', 'existing_funds', 'exchange'];
                 let maxRate = null;
                 for (const s of slots) {
                     const slotData = periodData[s];
@@ -1336,7 +1338,7 @@ function renderTable() {
                 }
                 return maxRate;
             }
-            else slot = 'existing_funds'; // Default to existing_funds for 'all'
+            else slot = 'general'; // 預設顯示不限資金牌價（general）
 
             const slotData = periodData[slot];
             if (!slotData || slotData.rate == null) return null;
@@ -1432,8 +1434,11 @@ function renderTable() {
 
                 const rateData = data?.[period];
 
+                // Normalize slot keys: 富融等銀行用 new_customer/general，唔係 standard new_funds/existing_funds
+                const slots = ['new_funds', 'existing_funds', 'exchange', 'new_customer', 'general'];
+
                 // Check if new structure
-                const isNewStructure = rateData?.new_funds || rateData?.existing_funds || rateData?.exchange;
+                const isNewStructure = slots.some(s => rateData?.[s]);
 
                 let displayRate = null;
                 let slotData = null;
@@ -1442,12 +1447,11 @@ function renderTable() {
                 if (isNewStructure && rateData) {
                     // New structure
                     let slot = null;
-                    if (currentFunds === 'new') slot = 'new_funds';
-                    else if (currentFunds === 'existing') slot = 'existing_funds';
+                    if (currentFunds === 'new') slot = rateData['new_funds'] ? 'new_funds' : 'new_customer';
+                    else if (currentFunds === 'existing') slot = rateData['existing_funds'] ? 'existing_funds' : 'general';
                     else if (currentFunds === 'exchange') slot = 'exchange';
                     else if (currentFunds === 'best') {
                         // "不限資金" - find the highest rate from any slot
-                        const slots = ['new_funds', 'existing_funds', 'exchange'];
                         let maxRate = null;
                         for (const s of slots) {
                             const sd = rateData[s];
@@ -1461,7 +1465,7 @@ function renderTable() {
                         }
                         displayRate = maxRate;
                     }
-                    else slot = 'existing_funds'; // Default
+                    else slot = 'general'; // 預設顯示不限資金牌價（general）
 
                     if (slot && !slotData) {
                         slotData = rateData[slot];
