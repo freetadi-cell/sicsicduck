@@ -1,24 +1,6 @@
 {
   "articles": [
     {
-      "id": "277033679853addbbc8073bf2e0b85af",
-      "title": "《藍籌》京東(09618.HK)次季Non-GAAP純利升20.8%至89.3億人幣 美股盤前跌逾2%",
-      "description": "京東集團-SW(09618.HK)公布截至2026年6月30日止三個月(2026年第二季度),京東集團錄得總收入3,464.01億元人民幣(下同),按年減少2.9%,略高於市場預期的3,421億元。主要受2025年同期的高基數影響。期內,商品收入按年減少5.4%至2,671.15億元,服務收入則按年增長6.8%至...",
-      "link": "https://hk.finance.yahoo.com/news/%E8%97%8D%E7%B1%8C-%E4%BA%AC%E6%9D%B1-09618-hk-%E6%AC%A1%E5%AD%A3non-105855548.html",
-      "pubDate": "2026-08-13 10:58:55",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "季度",
-        "京東集團"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "fc7b050d5eadae02bb46356e7b8e5252",
       "title": "《藍籌》長實集團(01113.HK)上半年基礎溢利按年升4.9%至66.4億元 中期息增至41仙",
       "description": "長實集團(01113.HK)公布2026年6月底止六個月中期業績,集團收入403.06億元,按年升58.8%。純利86.83億元,按年升37.8%;每股盈利2.48港元。派中期息0.41港元,按年升5.1%(上年同期0.39港元)。 期內,基礎溢利按年升4.9%至66.4億元。每股基礎溢利1.9元。 上半年度已確...",
@@ -72,34 +54,773 @@
       "pinned": true
     },
     {
-      "id": "b3c52784684b50027c04d22158bbb1f8",
-      "title": "銀色債券2026|申請日期+各大銀行認購優惠+保底息4.25厘|最新",
-      "description": "政府公布新一批銀色債券發售詳情,每手1萬元,年期3年。每半年派息一次,息率與本地通脹掛鈎,保證息率為4.25厘,高於上一批銀債的3.85厘,為歷來",
-      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60377650/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B82026-%E7%94%B3%E8%AB%8B%E6%97%A5%E6%9C%9F-%E5%90%84%E5%A4%A7%E9%8A%80%E8%A1%8C%E8%AA%8D%E8%B3%BC%E5%84%AA%E6%83%A0-%E4%BF%9D%E5%BA%95%E6%81%AF4-25%E5%8E%98-%E6%9C%80%E6%96%B0",
-      "pubDate": "2026-08-13 07:58:52",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260807/1162396653630525440137642.jpeg/emFR_ygcAuzrd0OyXHlAXa_dzexgHKGC3HMQudxzELk",
+      "id": "577f9b3754c75767e100b35c4d06ea45",
+      "title": "人民幣首超港元成為香港外匯交易最大貨幣對",
+      "description": "香港財資市場公會公布香港外匯市場半年度調查結果,於2026年4月,香港外匯交易日均成交額為9,082億美元,其中美元兌人民幣交易量首次超越美元兌港元,躍居香港市場交投最活躍的貨幣對。 當中,4月美元兌人民幣日均成交2,740億美元,佔香港全部外匯交易的30.2%,超過美元兌港元的2,402億美元,佔比26.4%。...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E6%B0%91%E5%B9%A3%E9%A6%96%E8%B6%85%E6%B8%AF%E5%85%83%E6%88%90%E7%82%BA%E9%A6%99%E6%B8%AF%E5%A4%96%E5%8C%AF%E4%BA%A4%E6%98%93%E6%9C%80%E5%A4%A7%E8%B2%A8%E5%B9%A3%E5%B0%8D-064457313.html",
+      "pubDate": "2026-08-13 06:44:57",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "9800a7e4b672576b650a5cc8430fb43c",
+      "title": "《大行》瑞銀料下半年至明年香港樓價大致持平 四大關鍵風險未充分反映 住房供應短缺料僅持續四年",
+      "description": "瑞銀投行研究部指,在開發商股息收益率利差高於歷史平均水準的情況下,市場尚未充分反映香港房地產市場面臨的四個關鍵風險,包括無就業復甦、港澳大灣區融合、北部都會區供應和人口缺口。 瑞銀大中華區房地產行業分析師梁展嘉提到,儘管自2024年以來GDP增速達到3%至4%,但新增就業明顯走弱。自2023年以來,應屆生就業機會...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E7%91%9E%E9%8A%80%E6%96%99%E4%B8%8B%E5%8D%8A%E5%B9%B4%E8%87%B3%E6%98%8E%E5%B9%B4%E9%A6%99%E6%B8%AF%E6%A8%93%E5%83%B9%E5%A4%A7%E8%87%B4%E6%8C%81%E5%B9%B3-%E5%9B%9B%E5%A4%A7%E9%97%9C%E9%8D%B5%E9%A2%A8%E9%9A%AA%E6%9C%AA%E5%85%85%E5%88%86%E5%8F%8D%E6%98%A0-%E4%BD%8F%E6%88%BF%E4%BE%9B%E6%87%89%E7%9F%AD%E7%BC%BA%E6%96%99%E5%83%85%E6%8C%81%E7%BA%8C%E5%9B%9B%E5%B9%B4-035240354.html",
+      "pubDate": "2026-08-13 03:52:40",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "地產消息",
-        "財經新聞",
-        "a股",
-        "hk01",
-        "香港01",
-        "股票",
-        "財經透視",
-        "財經台",
-        "香港新聞",
-        "新聞",
-        "恆生指數",
-        "港股",
-        "財經網",
-        "經濟"
+        "股息收益率",
+        "瑞銀"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "1399e987aac493c7129ca01e5c310715",
+      "title": "【話題】去信賽會要求加設90+組別被接納 90 歲韓裔退休教授樂活人生",
+      "description": "今年 5 月,現年 90 歲加拿大籍韓裔退休經濟學教授 Yul Kwon 在 BMO 溫哥華半程馬拉松賽中以 3:50:33 的成績贏得了他所在年齡組的冠軍,但同時也是最後一名。由於比賽的年齡組別都只...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%A9%B1%E9%A1%8C-%E5%8E%BB%E4%BF%A1%E8%B3%BD%E6%9C%83%E8%A6%81%E6%B1%82%E5%8A%A0%E8%A8%AD90-%E7%B5%84%E5%88%A5%E8%A2%AB%E6%8E%A5%E7%B4%8D-90-%E6%AD%B2%E9%9F%93%E8%A3%94%E9%80%80%E4%BC%91%E6%95%99%E6%8E%88%E6%A8%82%E6%B4%BB%E4%BA%BA%E7%94%9F-130000131.html",
+      "pubDate": "2026-08-13 13:00:00",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/12997a59df80c6de96dafd99efb17c818a85f5a69874ebdfc3c64342e7789cad/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Frunning_biji_hk_617%2Fd39e2d46dfad40f0b276525f1ec18cb0.png",
+      "keywords": null,
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "37c5ae0ada7f0dad792d29d00e3490be",
+      "title": "會計師公會就香港首個五年規劃提七大範疇建議",
+      "description": "<匯港通訊> 香港會計師公會就香港經濟和社會發展第一個五年規劃的公眾諮詢,向政府提交正式回應,提出七大範疇的政策建議,接軌國家「十五五」規劃。公會早前就書面回應內容諮詢會員並收集意見,政策建議包括七大範疇,分別為綠色發展與可持續金融;人才高地與專業資格發展及教育轉型;深化改革與營商環境優化;國際金融中心與高水平開...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9C%83%E8%A8%88%E5%B8%AB%E5%85%AC%E6%9C%83%E5%B0%B1%E9%A6%99%E6%B8%AF%E9%A6%96%E5%80%8B%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83%E6%8F%90%E4%B8%83%E5%A4%A7%E7%AF%84%E7%96%87%E5%BB%BA%E8%AD%B0-125935063.html",
+      "pubDate": "2026-08-13 12:59:35",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "21cfe0437adc0faaa1733ae648001fe9",
+      "title": "新華匯富金融(00188.HK)沽騰訊(00700.HK)逾2萬股 變現收益100萬",
+      "description": "新華匯富金融(00188.HK)公布,去年8月19日至本月13日期間,於聯交所進行一連串場內交易出售騰訊(00700.HK)合共21,220股,總代價1,261萬元,每股每日平均價介乎465至655元。變現收益約100萬元。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%96%B0%E8%8F%AF%E5%8C%AF%E5%AF%8C%E9%87%91%E8%9E%8D-00188-hk-%E6%B2%BD%E9%A8%B0%E8%A8%8A-00700-125857377.html",
+      "pubDate": "2026-08-13 12:58:57",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e53db87267a9fbaa0cebb6ddc9f1d665",
+      "title": "神冠控股(00829.HK)潛在投資膠原蛋白食品生產項目",
+      "description": "神冠控股(00829.HK)公布,與和林格爾縣人民政府訂立框架協議,公司擬於內蒙古和林格爾乳業開發區潛在投資一項膠原蛋白食品生產項目,總投資額估計約9,000萬人民幣。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E7%A5%9E%E5%86%A0%E6%8E%A7%E8%82%A1-00829-hk-%E6%BD%9B%E5%9C%A8%E6%8A%95%E8%B3%87%E8%86%A0%E5%8E%9F%E8%9B%8B%E7%99%BD%E9%A3%9F%E5%93%81%E7%94%9F%E7%94%A2%E9%A0%85%E7%9B%AE-125822330.html",
+      "pubDate": "2026-08-13 12:58:22",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e4098fd9340db75ebc59f51b009bc0c6",
+      "title": "《盈喜》雲能國際(01298.HK)預告扭虧 半年最多賺900萬",
+      "description": "雲能國際(01298.HK)發盈喜,預計6月止六個月淨利潤介乎700萬至900萬元,相較上年同期虧損270萬元。扭虧為盈主要由於供應鏈業務收入及毛利增加;及股本投資股息收入增加。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E7%9B%88%E5%96%9C-%E9%9B%B2%E8%83%BD%E5%9C%8B%E9%9A%9B-01298-hk-%E9%A0%90%E5%91%8A%E6%89%AD%E8%99%A7-125752350.html",
+      "pubDate": "2026-08-13 12:57:52",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d07e9a7d1cb9ec39d4d074d22685640a",
+      "title": "黑桃資本及卓智醫院香港接待美國麻省總醫院訪問團 探討轉診計劃",
+      "description": "新濠國際(200)主席何猷龍旗下家族辦公室黑桃資本,聯同其控股的卓智醫院,日前在港接待美國麻省總醫院並就建立完善診療協調及轉診機制等核心議題進行交流,旨在協助卓智醫院長遠發展為卓越醫療中心,並為本地患者開闢前往美國接受頂尖專科醫療服務的新途徑。 卓智醫院創辦人兼主席顏文煌醫生指出,麻省總醫院具備臨床與科研實力,期望透過深化合作,拓展為患者提供的專科醫療服務,及和美國麻省總醫院代表探針對有意赴美尋求",
+      "link": "https://www.stheadline.com/realtime-finance/3604112/%E9%BB%91%E6%A1%83%E8%B3%87%E6%9C%AC%E5%8F%8A%E5%8D%93%E6%99%BA%E9%86%AB%E9%99%A2%E9%A6%99%E6%B8%AF%E6%8E%A5%E5%BE%85%E7%BE%8E%E5%9C%8B%E9%BA%BB%E7%9C%81%E7%B8%BD%E9%86%AB%E9%99%A2%E8%A8%AA%E5%95%8F%E5%9C%98-%E6%8E%A2%E8%A8%8E%E8%BD%89%E8%A8%BA%E8%A8%88%E5%8A%83",
+      "pubDate": "2026-08-13 12:57:27",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/26f521cec88fe8e6e088c5875ad7a401/2026-08/KF_ALEX__7.png",
+      "keywords": [
+        "黑桃資本",
+        "何猷龍",
+        "卓智醫院",
+        "新濠國際",
+        "卓智醫療",
+        "美國麻省總醫院"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8d6594fbd3b91b840fa5ab57a278b084",
+      "title": "韓國被美白宮列為非法轉運中國商品風險國家",
+      "description": "中評社香港8月13日電/韓聯社報導,美國白宮貿易與製造業政策辦公室13日(當地時間)發布一份報告,將韓國等列為“存在中國商品非法轉運風險的國家”。 報告主張,原本被徵收高額關稅的中國商品,經第三國進行簡單組裝、包裝或更換標簽等方式改變原產地後出口美國的事例正在增加。報告根據經濟規模、與中國供應鏈的整合程度等標準,將所謂“存在非法轉運中國商品風險”的國家和地區分為三類。 韓國",
+      "link": "http://www.crntt.com/doc/7_0_107223423_1_0813205721.html",
+      "pubDate": "2026-08-13 12:57:21",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "15702d8c643062d89958b8491af4f8e5",
+      "title": "「East Hub」連售兩層 加推6樓及25樓連天台特色戶",
+      "description": "<匯港通訊> 寶輝控股發展、美聯工商舖獨家代理的觀塘鴻圖道2號全新銀座式商舖項目「East Hub」已成功促成5樓及20樓兩個全層商舖項目售出;發展商隨即加推6樓全層及25樓連獨立天台特色樓層。美聯旺舖營業董事陸澤森表示,「East Hub」早前售出5樓及20樓全層單位,反映買家對項目地段、設計及資產質素的認同。...",
+      "link": "https://hk.finance.yahoo.com/news/east-hub-%E9%80%A3%E5%94%AE%E5%85%A9%E5%B1%A4-%E5%8A%A0%E6%8E%A86%E6%A8%93%E5%8F%8A25%E6%A8%93%E9%80%A3%E5%A4%A9%E5%8F%B0%E7%89%B9%E8%89%B2%E6%88%B6-125708078.html",
+      "pubDate": "2026-08-13 12:57:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4a69a3b2e3dc0f526d85addad5c70856",
+      "title": "阿迪達拒談史基利出「廠」傳聞",
+      "description": "【Now Sports】阿仙奴領隊阿迪達拒絕正面答覆路易斯史基利會否於今夏離隊的問題,重申該名19歲年輕中場季前賽一直表現良好。路易斯史基利(Myles Lewis-Skelly)上季只為阿仙奴正選上陣過5次,落場機會買少見少,近日更與曼聯和車路士扯上關係,傳聞他今夏出「廠」機會甚大。周中阿仙奴友賽以1:1賽和科...",
+      "link": "https://hk.sports.yahoo.com/news/%E9%98%BF%E8%BF%AA%E9%81%94%E6%8B%92%E8%AB%87%E5%8F%B2%E5%9F%BA%E5%88%A9%E5%87%BA-%E5%BB%A0-%E5%82%B3%E8%81%9E-125340542.html",
+      "pubDate": "2026-08-13 12:53:40",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "史基利",
+        "阿仙奴",
+        "路易斯史基利"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8a965085a2c10335502cbe6ef6b70a2a",
+      "title": "一蘭食拉麵神秘木牌 靜靜地交給店員 可投訴隔雜手機播片太大聲",
+      "description": "最近社交平台 Threads 上有網民分享自己第一次到知名連鎖拉麵店一蘭拉麵用餐,沒想到隔壁顧客突然遞過來一塊 [...]",
+      "link": "https://unwire.hk/2026/08/13/ichiran-noisy-wood-tag-viral/life-tech/social-network/",
+      "pubDate": "2026-08-13 12:52:49",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/2026081381305-scaled.jpg",
+      "keywords": [
+        "社交平台",
+        "飲食",
+        "一蘭拉麵",
+        "日本旅遊",
+        "科技新聞",
+        "社交網絡",
+        "網絡熱話"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f5b81a4672417a6941a84e0cbe8c8ce6",
+      "title": "長鑫科技超越騰訊 成中國市值最高上市公司",
+      "description": "<匯港通訊> 內存晶片巨頭長鑫科技7月底登陸 A 股,在科創板上市僅兩周多後,收盤總市值首次趕超騰訊(00700.HK),躍居中國上市公司市值首位。長鑫科技盤中一度上漲逾4%,但之後回吐輕微收低。不過,相較發行價,該股累計漲幅仍超過5倍,總市值達到約3.54萬億元。相比之下,騰訊在公布季度業績後股價走低,市場對其...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%95%B7%E9%91%AB%E7%A7%91%E6%8A%80%E8%B6%85%E8%B6%8A%E9%A8%B0%E8%A8%8A-%E6%88%90%E4%B8%AD%E5%9C%8B%E5%B8%82%E5%80%BC%E6%9C%80%E9%AB%98%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8-125143358.html",
+      "pubDate": "2026-08-13 12:51:43",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "匯港通訊",
+        "科創板上市"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2b53580cbe29177e44d773271c4635e7",
+      "title": "瑞銀下調可口可樂歐太平洋合作夥伴評級,儘管第二季銷售及銷量超預期",
+      "description": "Investing.com - 瑞銀(UBS)週五將可口可樂歐太平洋合作夥伴(LON:CCEPC)的評級由「買入」下調至「中性」,並將12個月目標股價從109美元小幅下調至107美元。瑞銀指出,該股年初至今已累計上漲19%,估值重估至12個月遠期市盈率20倍,較歐洲必需消費品(不含酒精類)溢價20%,上行空間已相...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%91%9E%E9%8A%80%E4%B8%8B%E8%AA%BF%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%AD%90%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%90%88%E4%BD%9C%E5%A4%A5%E4%BC%B4%E8%A9%95%E7%B4%9A-%E5%84%98%E7%AE%A1%E7%AC%AC%E4%BA%8C%E5%AD%A3%E9%8A%B7%E5%94%AE%E5%8F%8A%E9%8A%B7%E9%87%8F%E8%B6%85%E9%A0%90%E6%9C%9F-125045019.html",
+      "pubDate": "2026-08-13 12:50:45",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA6H0CU_M.jpg",
+      "keywords": [
+        "瑞銀",
+        "ccep"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "799088052ff8f5a59cc3dc959df5eb87",
+      "title": "京東物流(02618.HK)子公司德邦中上半年轉虧2.62億人民幣",
+      "description": "京東物流(02618.HK)公布,子公司德邦物流上半年業績,收入156.09億人民幣(下同),按年下降24.1%。歸屬股東淨虧損2.62億元,相較上年同期淨利潤5,215萬元,盈轉虧;每股虧損26分。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BA%AC%E6%9D%B1%E7%89%A9%E6%B5%81-02618-hk-%E5%AD%90%E5%85%AC%E5%8F%B8%E5%BE%B7%E9%82%A6%E4%B8%AD%E4%B8%8A%E5%8D%8A%E5%B9%B4%E8%BD%89%E8%99%A72-62%E5%84%84%E4%BA%BA%E6%B0%91%E5%B9%A3-124921373.html",
+      "pubDate": "2026-08-13 12:49:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dbb57f72d06f64fe72c2b4ae040d6477",
+      "title": "美國7月生產者物價指數持平 核心PPI上升 按年升幅放緩",
+      "description": "美國7月生產者物價指數(PPI)持平,6月則下跌0.1%,低於彭博截至美東時間上午7時30分調查預期的0.2%升幅。 期內,能源價格按月下跌3.1%,其中天然氣液體價格下跌9.8%,柴油價格下跌6.7%,汽油價格下跌5.7%。食品價格下跌0.9%。 扣除食品及能源價格後,核心PPI按月上升0.2%,低於預期的0....",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B7%E6%9C%88%E7%94%9F%E7%94%A2%E8%80%85%E7%89%A9%E5%83%B9%E6%8C%87%E6%95%B8%E6%8C%81%E5%B9%B3-%E6%A0%B8%E5%BF%83ppi%E4%B8%8A%E5%8D%87-%E6%8C%89%E5%B9%B4%E5%8D%87%E5%B9%85%E6%94%BE%E7%B7%A9-124908620.html",
+      "pubDate": "2026-08-13 12:49:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "ppi",
+        "生產者物價指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "be67bd57a4a62d21aabb738cab52ce22",
+      "title": "湯駿業盼開大型個唱證歌手實力 邀圈中好友分享流淚故事推歌丨獨家",
+      "description": "湯駿業(Ahdee)早前推出歌曲《為自己流淚》,選用了全新宣傳方式,找了多位圈中藝人講述各自為自己流淚的一次經歷,提醒大家不要只顧為身邊親人、朋友而流淚,要好好為自己反覆思索,哭了過後將壞情緒清空,再接收新事物和感受。文、圖 鍾舜英 場地提供:Harlan’s (The ONE) Ahdee借助好友力量推廣歌曲 作為獨立歌手,Ahdee認為最難面對是宣傳和開支,向來作風低調的他,很少在網上宣傳。但",
+      "link": "https://www.stheadline.com/film-drama/3604101/%E6%B9%AF%E9%A7%BF%E6%A5%AD%E7%9B%BC%E9%96%8B%E5%A4%A7%E5%9E%8B%E5%80%8B%E5%94%B1%E8%AD%89%E6%AD%8C%E6%89%8B%E5%AF%A6%E5%8A%9B-%E9%82%80%E5%9C%88%E4%B8%AD%E5%A5%BD%E5%8F%8B%E5%88%86%E4%BA%AB%E6%B5%81%E6%B7%9A%E6%95%85%E4%BA%8B%E6%8E%A8%E6%AD%8C%E4%B8%A8%E7%8D%A8%E5%AE%B6",
+      "pubDate": "2026-08-13 12:45:04",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/3dac74d58872e841aa0cda9c881dab90/2026-08/tongggg.jpg",
+      "keywords": [
+        "為自己流淚",
+        "湯駿業",
+        "ahdee"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6aa5c310913f7de3c02068917ef1a8bc",
+      "title": "米雪孖林穎施《蔽月無眠》演母女情 試造型即幫手執妝容:今次舞台必定有默契",
+      "description": "由藝穗會呈獻、中意歌劇製作的原創中西糅合歌劇《蔽月無眠》(Sleepless Moon)將於10月1日至4日假東九文化中心劇院首演,一連演出五場門票即日起公開發售。本劇由譚新強(Eddie Tam)親自策劃與監製,謝欣樺(Ivy Tse)擔綱故事創作、編劇及監製,並夥拍音樂才女周曉晴作曲及出任音樂總監,連同粵劇編演導文華編劇及填詞古代曲目,作詞人唐家穎填詞現代曲目。 殿堂級與新世代藝術家攜手合作",
+      "link": "https://www.stheadline.com/film-drama/3604076/%E7%B1%B3%E9%9B%AA%E5%AD%96%E6%9E%97%E7%A9%8E%E6%96%BD%E8%94%BD%E6%9C%88%E7%84%A1%E7%9C%A0%E6%BC%94%E6%AF%8D%E5%A5%B3%E6%83%85-%E8%A9%A6%E9%80%A0%E5%9E%8B%E5%8D%B3%E5%B9%AB%E6%89%8B%E5%9F%B7%E5%A6%9D%E5%AE%B9%E4%BB%8A%E6%AC%A1%E8%88%9E%E5%8F%B0%E5%BF%85%E5%AE%9A%E6%9C%89%E9%BB%98%E5%A5%91",
+      "pubDate": "2026-08-13 12:45:03",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5425f9cfca6ee0a799e0af650c65e95d/2026-08/cats1_56.jpg",
+      "keywords": [
+        "蔽月無眠",
+        "顏嘉樂",
+        "林穎施",
+        "米雪"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b3e4667dbe940599ca502f6bd9eac509",
+      "title": "米雪孖林穎施《蔽月無眠》再續姊妹情 試造型即幫手執妝容:今次舞台必定有默契",
+      "description": "由藝穗會呈獻、中意歌劇製作的原創中西糅合歌劇《蔽月無眠》(Sleepless Moon)將於10月1日至4日假東九文化中心劇院首演,一連演出五場門票即日起公開發售。本劇由譚新強(Eddie Tam)親自策劃與監製,謝欣樺(Ivy Tse)擔綱故事創作、編劇及監製,並夥拍音樂才女周曉晴作曲及出任音樂總監,連同粵劇編演導文華編劇及填詞古代曲目,作詞人唐家穎填詞現代曲目。 殿堂級與新世代藝術家攜手合作",
+      "link": "https://www.stheadline.com/film-drama/3604076/%E7%B1%B3%E9%9B%AA%E5%AD%96%E6%9E%97%E7%A9%8E%E6%96%BD%E8%94%BD%E6%9C%88%E7%84%A1%E7%9C%A0%E5%86%8D%E7%BA%8C%E5%A7%8A%E5%A6%B9%E6%83%85-%E8%A9%A6%E9%80%A0%E5%9E%8B%E5%8D%B3%E5%B9%AB%E6%89%8B%E5%9F%B7%E5%A6%9D%E5%AE%B9%E4%BB%8A%E6%AC%A1%E8%88%9E%E5%8F%B0%E5%BF%85%E5%AE%9A%E6%9C%89%E9%BB%98%E5%A5%91",
+      "pubDate": "2026-08-13 12:45:03",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5425f9cfca6ee0a799e0af650c65e95d/2026-08/cats1_56.jpg",
+      "keywords": [
+        "顏嘉樂",
+        "蔽月無眠",
+        "林穎施",
+        "米雪"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e50dbb0f54004d2f5232ebb94a6c2d51",
+      "title": "加加得得8.15最「熊」2歲生日會 入園可獲送限量版磁貼 社交平台同步直播",
+      "description": "大熊貓龍鳳胎家姐「加加」同細佬「得得」本周六(8月15日)將迎來2歲生日,入園市民有機會獲得限量版生日磁貼,而海洋公園官方ig、fb、小紅書當日亦會同步直播這場最「熊」生日會盛況。 海洋公園於社交平台發文,預告8月15日將於園內現場慶祝。當天亮點搶先看: 全園沉浸式生日氛圍感拉滿 壽星們和生日蛋糕有愛同框 近距離看壽星們,捕捉可愛瞬間 入園即送限定生日磁貼(數量有限,送完即止) 回收竹葉,親手製作心意生日畫作(活動名額有限,額滿即止) 盛夏最「熊」生日盛典+夏日匯演,還有香港舞蹈團兒童團及少年團特別表演,氣氛熱烈拉爆。 至於無法到達現場的契爸契媽,可以觀看線上直播,隔住熒幕都可以「吸貓」、送祝福。 直播開始時間:8月15日 9:45 am 直播平台:香港海洋公園ig、Facebook專頁、小紅書官方帳號",
+      "link": "https://www.bastillepost.com/hongkong/article/16562490-%E5%8A%A0%E5%8A%A0%E5%BE%97%E5%BE%978-15%E6%9C%80%E3%80%8C%E7%86%8A%E3%80%8D2%E6%AD%B2%E7%94%9F%E6%97%A5%E6%9C%83%E3%80%80%E5%85%A5%E5%9C%92%E5%8F%AF%E7%8D%B2%E9%80%81%E9%99%90%E9%87%8F%E7%89%88",
+      "pubDate": "2026-08-13 12:41:57",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260813_CR_Pandas08_source_web_FB.jpg",
+      "keywords": [
+        "加加得得",
+        "大熊貓",
+        "社會事",
+        "家姐細佬",
+        "source-1"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "05fa6d4672b57d9f695427cf2befe81a",
+      "title": "新皇崗口岸|入境處參與首次大型演練 稱將不斷檢討流程 確保口岸啟用時運作暢順",
+      "description": "入境處今天(13日)參與新皇崗口岸首次大型跨部門演練,以測試新皇崗口岸聯檢大樓與公共運輸交匯處的客流及車流整體管理。是次測試有超過1000名參與者模擬進出口岸的情況,他們先由公共運輸交匯處前往離境大堂,再轉往入境大堂,最後返回公共運輸交匯處,從而評估客流、車流管理及各項配套支援措施。 入境處:積極參與並配合一系列聯合測試 入境處副處長(管制、簽證及證件)程和木及助理處長(管制)樊曉聲陪同保安局局長",
+      "link": "https://www.stheadline.com/society/3604107/%E6%96%B0%E7%9A%87%E5%B4%97%E5%8F%A3%E5%B2%B8%E5%85%A5%E5%A2%83%E8%99%95%E5%8F%83%E8%88%87%E9%A6%96%E6%AC%A1%E5%A4%A7%E5%9E%8B%E6%BC%94%E7%B7%B4-%E7%A8%B1%E5%B0%87%E4%B8%8D%E6%96%B7%E6%AA%A2%E8%A8%8E%E6%B5%81%E7%A8%8B-%E7%A2%BA%E4%BF%9D%E5%8F%A3%E5%B2%B8%E5%95%9F%E7%94%A8%E6%99%82%E9%81%8B%E4%BD%9C%E6%9A%A2%E9%A0%86",
+      "pubDate": "2026-08-13 12:33:23",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/3a511b339af782baa647a92c436cef35/2026-08/01thumbm.JPG",
+      "keywords": [
+        "入境處",
+        "新皇崗口岸"
+      ],
+      "category": [
+        "business",
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9eb12444067514c7d464542f45f70faa",
+      "title": "不良一族尋愛記2|Awich經歷極驚心 曾遇槍火掃射、老公慘遭槍殺",
+      "description": "Netflix實境節目《不良一族尋愛記2》(Love Deadline,以下簡稱「不良一族2」)熱播,除了參賽者間的火花引人注目,主持人Awich的超狂背景也引發網",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60379642/%E4%B8%8D%E8%89%AF%E4%B8%80%E6%97%8F%E5%B0%8B%E6%84%9B%E8%A8%982-awich%E7%B6%93%E6%AD%B7%E6%A5%B5%E9%A9%9A%E5%BF%83-%E6%9B%BE%E9%81%87%E6%A7%8D%E7%81%AB%E6%8E%83%E5%B0%84-%E8%80%81%E5%85%AC%E6%85%98%E9%81%AD%E6%A7%8D%E6%AE%BA",
+      "pubDate": "2026-08-13 12:30:34",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164573909983432704917536.png/j87iixAuKpXrjfZqMWlG-Kxqn4HmTcjQ83SDjPN0g4w",
+      "keywords": [
+        "影評",
+        "外語片",
+        "港產片",
+        "電影",
+        "睇戲",
+        "香港01",
+        "經典電影"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "07ff110a6b2c222d4de983ce2c5756d1",
+      "title": "胸口翳悶,火燒心定心絞痛?",
+      "description": "胸口翳悶、灼熱,以為胃酸倒流,食粒胃藥頂住。但心絞痛同胃食道逆流,症狀重疊,生死一線間,分辨錯誤隨時致命。 胃食道逆流:火燒心位於胸骨後,飯後或瞓平加重,坐起或飲奶紓緩,伴隨酸水湧上、喉嚨痛。心絞痛:胸骨後壓迫感、緊束感,似大象踩住,運動或情緒激動誘發,休息數分鐘緩解,可放射至左肩、下巴、手臂,伴隨氣促、冷汗、噁心。 更弊係非典型心絞痛。長者、女性、糖尿病患者,心絞痛可能僅表現為上腹不適、呼吸困難、極度疲倦,無明顯胸痛。誤當胃病,延誤送院,心肌壞死。 分辨要點:胃食道逆流與飲食、姿勢相關,時間較長;心絞痛與運動、情緒相關,數分鐘至十餘分鐘,硝酸甘油舌下含服可速緩。但兩者可共存,冠心病患者常同時有胃酸倒流。 警號:首次胸痛、症狀加劇、伴隨氣促冷汗、或休息不緩,即刻叫救護車。胃藥無效更係危險信號。心電圖、心肌酵素、冠狀動脈造影確診。胸口翳悶唔好賭,寧願虛驚一場,唔好錯過黃金搶救期。",
+      "link": "https://www.bastillepost.com/hongkong/article/16396569-%E8%83%B8%E5%8F%A3%E7%BF%B3%E6%82%B6%EF%BC%8C%E7%81%AB%E7%87%92%E5%BF%83%E5%AE%9A%E5%BF%83%E7%B5%9E%E7%97%9B%EF%BC%9F",
+      "pubDate": "2026-08-13 12:30:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/07/E9A0ADE79AAEE5B191E99BAAE88AB1E9A39BEFBC8CE9828AE5808BE69097E4BA82EFBC9F-1.jpg",
+      "keywords": [
+        "博客文章"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "18ba7c026635b6f5364c56b905c24c66",
+      "title": "米雪夥粵劇花旦林穎施再度合作 原創中西糅合歌劇《蔽月無眠》10月東九文化中心開演",
+      "description": "原創中西糅合歌劇《蔽月無眠》(Sleepless Moon)將於2026年10月1日至4日假東九文化中心劇院盛大首演,一連演出五場。票價為$1880、$880、$680和$380共四種,即日起於城市售票網公開發售。本劇主創陣容鼎盛,由金融界翹楚兼文化推手譚新強(Eddie Tam)親自策劃與監製,攜手投行出身、跨足藝術領域的謝欣樺(Ivy Tse)擔綱故事創作、編劇及監製,並夥拍音樂才女周曉晴作曲及出任音樂總監,連同粵劇編演導全能才女文華編劇及填詞古代曲目,著名作詞人唐家穎填詞現代曲目。本地菁英強強聯手,引領觀眾穿梭於古代兩國交鋒的煙火與現代AI紀元的科幻時空,交織出一場跨越千年的宿命愛戀,傾心打造一場耳目一新的視聽體驗。策劃與監製譚新強表示:「2023年,因場地無期,我們苦等了一年;至2024年,我們在西九戲曲中心藉其他團體的粵劇表演加插一小段《蔽月無眠》,方能將這套宏大格局的雛形呈現在觀眾眼前。時至2026年,經歷重重挑戰與磨練,我們終於鐵定於10月,在全新落成的東九文化中心正式舉辦首個完整版的《蔽月無眠》世界首演,圓滿這個跨越千年的美夢!」",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1047285/%E7%B1%B3%E9%9B%AA%E5%A4%A5%E7%B2%B5%E5%8A%87%E8%8A%B1%E6%97%A6%E6%9E%97%E7%A9%8E%E6%96%BD%E5%86%8D%E5%BA%A6%E5%90%88%E4%BD%9C-%E5%8E%9F%E5%89%B5%E4%B8%AD%E8%A5%BF%E7%B3%85%E5%90%88%E6%AD%8C%E5%8A%87-%E8%94%BD%E6%9C%88%E7%84%A1%E7%9C%A0-10%E6%9C%88%E6%9D%B1%E4%B9%9D%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83%E9%96%8B%E6%BC%94",
+      "pubDate": "2026-08-13 12:30:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1047285/article/1047285/df/01KZX9RPJ54D5D846Q4MAN7R3F.jpg?updatedAt=1786616176",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "69089dc03ddc2ab9458edd0a91a5c21e",
+      "title": "韓民調悖論 對美國信任度下降",
+      "description": "中評社首爾8月13日電(記者 崔銀珍)韓國民眾對美國的信任正在發生明顯變化。韓國東亞研究院(EAI)最新調查顯示,對美信任下降的同時,對朝鮮的軍事威脅感仍處高位;多數人依然支持維持和強化韓美同盟,也希望擴大安全自主,卻對自身是否具備相應能力缺乏信心。對美信任下降、高威脅感持續與自主信心不足相互交織,構成當前韓國安全認知中的鮮明張力。 EAI於12日發布2026年東亞認知調查分析。調查",
+      "link": "http://www.crntt.com/doc/7_0_107223336_1_0813202242.html",
+      "pubDate": "2026-08-13 12:22:41",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/13/107223338.jpg",
+      "keywords": [
+        "對美信任",
+        "韓美同盟"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "da163836ce3a55c862be96401c3d57f1",
+      "title": "林肯紀念堂倒影池維修失誤 損害國家公園管理局聲譽",
+      "description": "美國總統特朗普在林肯紀念堂倒影池的維修失誤,令國家公園管理局陷入政治困境。 這個備受愛戴的聯邦機構,其標誌性的公園護林員及其他員工,一直為公眾服務,同時應對共和黨總統具爭議性的要求。這些要求包括修訂公園及其他地點的展品、拆除其管轄下的重要建築物(例如白宮東翼),以及逮捕涉嫌在水池破壞公眾設施的遊客。 批評者指,長達數月的倒影池事件及特朗普的其他要求,恐損害這個長期以來備受美國公眾推崇的聯邦機構的聲譽。 前公園護林員及主管比爾.韋德表示:「幾十年來,我從未見過像今天在總統特朗普及內政部長道格.伯格姆領導下,國家公園管理局遭受如此系統性的破壞、不尊重及瓦解。」 韋德現任國家公園護林員協會執行董事,他為《丹佛郵報》撰寫一篇評論文章,哀嘆他所稱的特朗普政府「攻擊國家公園管理局的人員、使命及價值觀,而這些正是令其成為美國最有價值機構之一的原因」。 國家公園管理局一直是特朗普第二任期內一些最具爭議性行動的核心。一項行政命令針對國家公園及其他地點的資金,並要求進行審查,特朗普稱這些地點宣揚「具爭議性論述」及「不當意識形態」,導致一些關於奴隸制或氣候變化的展品被修改。 總統亦下令對華盛頓屬國家公園管理局管轄範圍的歷史古蹟及建築物進行大規模改動,包括興建白宮宴會廳及一座76米高的紀念拱門。與此同時,自特朗普第二任期開始以來,該局至少四分之一的常設員工因裁員、強迫退休及辭職而流失。 加州眾議員賈里德.霍夫曼表示,公園管理局的員工「經常被政治化,捲入本屆政府的荒謬及腐敗」。霍夫曼是眾議院自然資源委員會的首席民主黨人,他提及水池項目、擬議的拱門及關於展品材料的行政命令。 霍夫曼指,對該局持續的政治攻擊「與我們國家所見過的一切都不同,這令國家公園管理局等機構的工作環境變得惡劣」。 特朗普今年較早前啟動倒影池的維修工程,希望在美國250周年慶祝活動前解決這個標誌性地點的長期問題。然而,這個耗資1600萬美元的項目立即面臨問題,包括藍色密封劑剝落及綠藻嚴重滋生。 特朗普將密封劑問題歸咎於人為破壞,但未有提供證據。前奧運獨木舟運動員大衛.赫恩被指控破壞水池後,被控重罪。 美國公園警察是國家公園管理局的一個單位,他們逮捕了赫恩。赫恩否認有不當行為,並表示他只是短暫觸碰了一塊塗層。 檢察官承認損壞是由安裝失誤而非人為破壞造成後,針對赫恩的指控於7月31日被撤銷。 一名未獲授權討論內部事務並匿名發言的內政部員工透露,當特朗普及伯格姆就失敗的水池維修作出決定時,資深官員及護林員(他們以標誌性平頂帽及綠灰色制服而聞名)的建議及意見被忽視或擱置。 國家公園保育協會政府事務副總裁埃德.斯蒂爾利形容這是「悲劇」。他指:「整件事是一本反面教材,展示如何不應進行公共修復項目。」 自指控被撤銷以來,特朗普繼續依賴國家公園管理局,多次聲稱破壞者損壞水池內襯。 特朗普於8月9日在其Truth Social網站上發文稱:「一名國家公園管理局的資深員工,一名高度可信的證人,光天化日之下看到大衛.赫恩『猛烈』撕扯水池相對脆弱的塗層,破壞了倒影池。」赫恩的法律團隊表示,特朗普「繼續攻擊無辜人士」。 斯蒂爾利指,特朗普提及這名未具名的公園員工,正反映該局員工在特朗普及伯格姆領導下所面臨的尷尬處境。伯格姆曾公開支持特朗普關於水池遭破壞的說法。 斯蒂爾利表示:「我認為公眾明白,不幸的是,美國總統直接主導華盛頓及全國各地的決策。」他補充指,公園管理局,尤其是其資深員工,「幾乎無法控制這一切」。 白宮及內政部未有直接回應關於公園管理局的置評請求。白宮為水池項目辯護,稱特朗普「承諾令華盛頓特區安全及美麗,他正在兌現承諾」。 白宮在一份聲明中表示:「多年來,倒影池長期被忽視,飽受藻類滋生及數百萬加侖水洩漏困擾。修復它是常識。」 前公園主管韋德稱水池維修是「一連串錯誤」及特朗普政府「無能的延續」。 他表示:「大多數人意識到國家公園管理局承受巨大壓力,即使他們想,也無能為力。」他補充指,該局士氣處於他記憶中最低點。 韋德指,華盛頓的指令已明確表示,如實講述情況可能令員工丟失工作。他在一次採訪中表示:「國家公園管理局的員工普遍感到恐懼。你可以想像,這令他們非常沮喪。」 特朗普擬議的紀念拱門面臨一些反對。國家公園管理局員工最近一份報告警告,擬議的鍍金拱門可能破壞其計劃地點(林肯紀念堂附近)周圍數十處地點的歷史意義。 報告指,該拱門上月獲聯邦一個關鍵委員會初步批准,將影響數十處歷史建築的「完整性」,因為它會改變它們之間「界定特徵的視覺及空間關係」。 國家公園管理局在美國人中很受歡迎。皮尤研究中心2025年的民意調查顯示,約四分之三的美國成年人(包括民主黨及共和黨的相似比例)對該局持正面評價。只有約十分之一的人持負面印象,約15%的人不確定。 《華盛頓郵報》及益普索7月的一項民意調查發現,約三分之二的美國人表示對特朗普在華盛頓地區的項目感到「不滿」或「沮喪」,包括在白宮興建新宴會廳、粉刷倒影池及建造他的凱旋拱門。共和黨人則較可能對這些項目感到「熱衷」或「滿意」。 約四分之一的美國成年人表示,特朗普的目標是「令華盛頓更美麗」,而約一半人表示他有「不同目標」。在一個開放式問題中,許多受訪者推測特朗普希望美化自己或留下印記。 韋德表示,水池及其他近期爭議,包括展品審查,危及該局的公信力。 他指:「無論是詮釋南北戰爭、討論氣候科學,還是描述原住民的複雜故事,護林員都力求呈現證據,而非政治意識形態。這正在消失。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16563255-%E6%9E%97%E8%82%AF%E7%B4%80%E5%BF%B5%E5%A0%82%E5%80%92%E5%BD%B1%E6%B1%A0%E7%B6%AD%E4%BF%AE%E5%A4%B1%E8%AA%A4-%E6%90%8D%E5%AE%B3%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92%E7%AE%A1%E7%90%86%E5%B1%80%E8%81%B2",
+      "pubDate": "2026-08-13 12:16:41",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/c2ba61c896028b1c4ef87811a70fb8d9_Lincoln_Memorial_Reflecting_Pool__9268_FB.jpg",
+      "keywords": [
+        "大視野",
+        "特朗普",
+        "林肯紀念堂倒影池",
+        "維修失誤",
+        "國家公園管理局",
+        "美國政治"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ed7d947be9b1e53349d517b36137bce1",
+      "title": "BTS V右耳聽力僅30%當兵期間一度惡化 與柾國健身遭20狂粉包圍",
+      "description": "韓國天團BTS(防彈少年團)成員V(金泰亨)近日開直播,不但自爆右耳聽力僅剩30%令大批ARMY(粉絲暱稱)心痛,更透露與隊友Jung Kook(田柾國)在",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60379651/bts-v%E5%8F%B3%E8%80%B3%E8%81%BD%E5%8A%9B%E5%83%8530-%E7%95%B6%E5%85%B5%E6%9C%9F%E9%96%93%E4%B8%80%E5%BA%A6%E6%83%A1%E5%8C%96-%E8%88%87%E6%9F%BE%E5%9C%8B%E5%81%A5%E8%BA%AB%E9%81%AD20%E7%8B%82%E7%B2%89%E5%8C%85%E5%9C%8D",
+      "pubDate": "2026-08-13 12:15:51",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164586590425583616814506.jpeg/1HkIWbZwF2_ujABaHjk5bMaz2dgkfsodLTCbwC0wm8A",
+      "keywords": [
+        "hk01",
+        "藝人",
+        "即時娛樂",
+        "明星",
+        "新聞",
+        "即時娛樂新聞",
+        "香港新聞",
+        "娛樂新聞",
+        "香港01",
+        "韓星"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d79c36130c02e9fb8171e2c98d59bc28",
+      "title": "Samsung Galaxy Buds 獲 FDA 助聽器認證!年底上線.支援機型與優缺點一次看清",
+      "description": "Samsung 旗下 Galaxy Buds 穿戴裝置正式通過美國 FDA(食品藥物管理局)核准,可作為 OTC(非處方)助聽器使用。這項更新讓輕度至中度聽損使用者,能直接透過耳機獲得接近醫療等級的輔助聽力體驗。 這篇文章 Samsung Galaxy Buds 獲 FDA 助聽器認證!年底上線.支援機型與優缺點一次看清 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/fda-granted-hearing-aid-certification-to-samsung-galaxy-buds-expected-launch-by-the-end-of-the-year/",
+      "pubDate": "2026-08-13 12:15:03",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/13121350/galaxy-buds4-pro-highlight-02-tb.jpg",
+      "keywords": [
+        "科技新聞",
+        "samsung",
+        "助聽器",
+        "tech"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d23ef005cb864700df4a9b2f17a07268",
+      "title": "天空體育:巴塞5500萬鎊收購洛迪被拒",
+      "description": "【Now Sports】天空體育指,巴塞隆拿周中第2度向曼城出價,欲以5500萬鎊購洛迪靴蘭迪斯,但遭到「藍月亮」狠心拒絕。巴塞隆拿早前出價4000萬鎊欲購洛迪靴蘭迪斯(Rodri Hernández)但被拒,天空體育指巴塞已再接再厲,周中第二度出價,以5500萬鎊測試對方底線,然而「藍月亮」立場堅定,價格一分不...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%A4%A9%E7%A9%BA%E9%AB%94%E8%82%B2-%E5%B7%B4%E5%A1%9E5500%E8%90%AC%E9%8E%8A%E6%94%B6%E8%B3%BC%E6%B4%9B%E8%BF%AA%E8%A2%AB%E6%8B%92-121237562.html",
+      "pubDate": "2026-08-13 12:12:37",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "天空體育",
+        "洛迪",
+        "曼城",
+        "洛迪靴蘭迪斯"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3f137bec9dad20ede4fd6689107c5c15",
+      "title": "朱鎔基逝世│家鄉長沙祖居 民眾獻花悼念",
+      "description": "今日(13日)有民眾前往位於湖南長沙的朱鎔基祖居「恬園」門前獻花悼念,亦有無法到場的網友委托他人代獻,現場有工作人員維持秩序。內地社交平台上,不少網友自發曬出花束與蠟燭的照片表達緬懷,但部分含有全名或挽聯的帖文無法正常發送。另外,朱鎔基創立的北京清華大學經濟管理學院,官方網站變更為黑白色,以示對這位前院長的悼念。 相關新聞:前總理朱鎔基離世 享年98歲 相關新聞:朱鎔基逝世—為明太祖朱元璋後人 父",
+      "link": "https://www.stheadline.com/realtime-china/3604102/%E6%9C%B1%E9%8E%94%E5%9F%BA%E9%80%9D%E4%B8%96%E5%AE%B6%E9%84%89%E9%95%B7%E6%B2%99%E7%A5%96%E5%B1%85-%E6%B0%91%E7%9C%BE%E7%8D%BB%E8%8A%B1%E6%82%BC%E5%BF%B5",
+      "pubDate": "2026-08-13 12:09:12",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0872372a35e204d0af851fe0896f01a0/2026-08/Clipboard23_4.jpg",
+      "keywords": [
+        "朱鎔基逝世"
+      ],
+      "category": [
+        "top",
+        "politics",
+        "lifestyle"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e2d6ad6c81c1aa6cf80068bf2a29f6ed",
+      "title": "八月電影|李滄東經典《愛的綠洲》重映+ 《誘人飯聚》+東盟電影節",
+      "description": "【8月電影】踏入2026年8月,暑期檔期電影戰況激烈。相信不少影迷近期的焦點,都落在話題度極高的荷里活超級大片《奧德賽》與《蜘蛛俠》之上。不過",
+      "link": "https://www.hk01.com/%E8%97%9D%E6%96%87/60379761/%E5%85%AB%E6%9C%88%E9%9B%BB%E5%BD%B1-%E6%9D%8E%E6%BB%84%E6%9D%B1%E7%B6%93%E5%85%B8-%E6%84%9B%E7%9A%84%E7%B6%A0%E6%B4%B2-%E9%87%8D%E6%98%A0-%E8%AA%98%E4%BA%BA%E9%A3%AF%E8%81%9A-%E6%9D%B1%E7%9B%9F%E9%9B%BB%E5%BD%B1%E7%AF%80",
+      "pubDate": "2026-08-13 12:09:02",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164662308136292352298567.jpeg/u-RDNh2LQMEvsAX1F8GqB81bVT_BAQpdPE1cTzxNXE8",
+      "keywords": [
+        "設計",
+        "次文化",
+        "藝術文化",
+        "文化活動",
+        "文藝尾班車",
+        "藝術展覽",
+        "潮流",
+        "時尚"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4652ba13d2fa7de3e4ba85c642f9f883",
+      "title": "My Little Airport十二月重返竹翠公園開唱 露天企位變全坐位安排",
+      "description": "本地獨立樂隊 My Little Airport正式宣布,將於 2026 年 12 月假西九竹翠公園舉行演唱會,消息一出隨即引起樂迷關注。這是繼兩年前的演出後,樂隊",
+      "link": "https://www.hk01.com/%E8%97%9D%E6%96%87/60379816/my-little-airport%E5%8D%81%E4%BA%8C%E6%9C%88%E9%87%8D%E8%BF%94%E7%AB%B9%E7%BF%A0%E5%85%AC%E5%9C%92%E9%96%8B%E5%94%B1-%E9%9C%B2%E5%A4%A9%E4%BC%81%E4%BD%8D%E8%AE%8A%E5%85%A8%E5%9D%90%E4%BD%8D%E5%AE%89%E6%8E%92",
+      "pubDate": "2026-08-13 12:07:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164663562560344064620587.jpeg/xue2aUUZh14uFzHrqDMyHLb5A5000_Pm2O0xjNjtMYw",
+      "keywords": [
+        "設計",
+        "次文化",
+        "藝術文化",
+        "文化活動",
+        "文藝尾班車",
+        "藝術展覽",
+        "潮流",
+        "時尚"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ef1e33a1a6362e06d253bfb9add57684",
+      "title": "希迪智駕首份半年報:營收飆升97%,機器人業務從零到一",
+      "description": "香港2026年8月13日 /美通社/ -- 重載具身智能賽道跑出最強增長曲線!8月10日,希迪智駕(03881.HK)正式披露2026年中期業績報告。這是公司登陸港交所主板後發佈的首份半年報。2026年上半年,公司從自動駕駛自然進化到重載具身智能,並進入商業化規模兌現、訂單放量、場景擴容的新階段,收入近乎倍增、逼近盈虧平衡、經營質量躍升,成為業內唯一在資源挖採與運輸、物流、大基建及交通工程等多類重載場景獲規模化訂單的物理AI企業。 營收倍增盈利拐點在即,充裕資金夯實戰略縱深...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/97-302850842.html",
+      "pubDate": "2026-08-13 12:07:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1969190/20260813062626EDT_image_2.jpg?id=OA2881421&p=original",
+      "keywords": [
+        "ern"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b18d464f5d2c446bfca07e2ea3a09847",
+      "title": "華納兄弟曾取消《威利狼與ACME公司》上映 3年後電影終獲發行",
+      "description": "在被稱為「告別放映」之前,這只是威爾·福特準備觀看這部電影的時候。 《威利狼與ACME公司》已經完成。導演戴夫·格林受《夢城兔福星》啟發,完成了這部結合卡通與真人演出的樂一通電影剪輯。整個項目以《紐約客》雜誌伊恩·弗雷澤的「Shouts and Murmurs」專欄為藍本,是一次大膽的喜劇嘗試,似乎正取得成功。 當時各方寄予厚望,觀眾試映評分亦理想。然而,在飾演威利狼律師的福特觀看《威利狼與ACME公司》前數天,華納兄弟公司卻取消了該片。不單是放映會,而是整部電影。該電影公司並非延遲上映或轉為串流播放,而是完全取消。 福特憶述:「我當時只覺得:『他們取消了電影,那肯定很差。』」 福特與妻子懷疑電影質素欠佳,於是與其他演員及製作人員一同為這部無人能觀看的電影告別。 福特表示:「那時真正的感情才開始湧現。這部電影比我所期望的還要好。它非常特別,這令我感到非常沮喪和毀滅性。困惑加劇,繼而是沮喪,然後是極度憤怒。」 他補充:「然後這一切變得更難以理解。我們都環顧四周,心想:『這裡發生了甚麼事?』」 《威利狼與ACME公司》突然被取消,震驚了荷里活。電影業界人士都習慣了突如其來的痛苦轉折。然而,一部已完成的電影在眨眼間被徹底取消,卻是前所未見。 華納兄弟公司行政總裁大衛·扎斯拉夫,當時決意擺脫其前任直接發行至HBO Max的項目。該公司認為,為發行《威利狼與ACME公司》預計花費的約3,000萬至4,000萬美元宣傳費用並不值得。該公司表示,最好是將這部耗資7,000萬美元製作的電影作稅務沖銷。連同另外兩部電影《蝙蝠女》及《史酷比!假日驚魂》,《威利狼與ACME公司》一同被擱置。 然而,在該次「告別放映」近三年後,這部電影就像其永不氣餒的主角一樣,起死回生。在公眾強烈反對下,華納兄弟公司將《威利狼與ACME公司》放售。獨立發行商Ketchup Entertainment去年發行了樂一通電影《地球爆炸日》,並以約5,000萬美元收購了該片。8月28日,《威利狼與ACME公司》將最終面世。 對於所有相關人士而言,這是一連串令人眼花繚亂的轉變。為片中達菲鴨、賓尼兔等角色配音的埃里克·鮑扎,直到在當地戲院看到《迷戀》後才真正相信。 鮑扎表示:「離開戲院時,一個小小的招牌箱裡放著《威利狼與ACME公司》的海報。我突然意識到:這部電影將會被大眾看到。」 在最近一次訪問中,格林仍然難以置信。 格林說:「我一定是在做夢。我今天能坐在這裡與你交談,完全是個驚喜。」 製作團隊及其新發行商利用了該項目坎坷的歷史,將其宣傳為「ACME公司不想你看的電影」。更重要的是,《威利狼與ACME公司》現在擁有了新的「元」特質。電影的前提是威利狼在多年遭受有缺陷產品的困擾後,將ACME公司告上法庭。就像電影周圍的戲劇性事件一樣,這是一個被大公司欺壓的弱者。 格林表示:「我情不自禁地以全新的方式看待這部電影,因為故事與電影所代表的意義之間存在『元』交叉。這幾乎感覺就像我們是在消息傳出後才寫了這部電影。」 當《威利狼與ACME公司》被取消時,其命運成為了號召。基斯杜化·米勒、菲爾·洛德、關家永及丹尼爾·舒奈特等電影製作人,都力挺該片不應消失。甚至有政界人士,例如德州民主黨眾議員華金·卡斯特羅,亦敦促司法部調查華納兄弟公司的決定。 資深配音演員鮑扎在社交媒體上推動了#ReleaseCoyoteVsACME的標籤。他最戲劇性的努力,是在2024年的安妮獎頒獎禮上。他在講台上以達菲鴨的聲音為該片發聲,贏得了熱烈掌聲。 鮑扎表示:「在懇求和哀求方面,他是首選的卡通人物。這似乎很合適。」 如此多人為這部電影奮鬥,令格林在整個磨難中從未感到孤單。 格林說:「有一天我打開手機,看到有人穿著威利狼的服裝,在雨中於電影公司外舉牌抗議——這些事情令人難以置信。」 同時,整個事件預示著電影業一個黑暗的新篇章,令許多參與《威利狼與ACME公司》的人感到不安。這並非年輕電影製作人首次被拒絕。這是華納兄弟公司最標誌性系列之一的兩年心血,甚至由DC影業總裁詹姆斯·岡恩監製。 鮑扎說:「我不知道他們的判斷是甚麼。他們是否知情,還是只看數字?從外面看很難,心想:『如果樂一通都受到這種待遇,那我的故事又會怎樣?』」 他補充:「製作流程已經改變。我們如何達到終點線也不同了。」 《威利狼與ACME公司》在電影公司努力應對疫情、戲院掙扎求存時獲准開拍。但格林的電影現在在一個截然不同的時間點面世。戲院業正蓬勃發展,這很大程度上歸功於基斯杜化·路蘭到庫里·巴克等電影製作人的願景。 對格林而言,《威利狼與ACME公司》最終在公眾輿論中獲得認可,是荷里活回歸其根基的標誌。 格林表示:「電影業,儘管可能感覺不像,但它是由藝術家、電影製作人、演員和編劇的創作慾望所引導和決定的。沒有甚麼能奪走創作者的這種慾望。只要我們繼續創作,電影業就會存在。」 福特仍在努力尋找一個圓滿結局。他表示,電影最初被取消感覺「殘酷無情」。 福特說:「壞處是:不要相信任何人。而好處是:不要放棄希望。我想我會堅持後者。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16563198-%E8%8F%AF%E7%B4%8D%E5%85%84%E5%BC%9F%E6%9B%BE%E5%8F%96%E6%B6%88%E3%80%8A%E5%A8%81%E5%88%A9%E7%8B%BC%E8%88%87acme%E5%85%AC%E5%8F%B8%E3%80%8B%E4%B8%8A%E6%98%A0-3%E5%B9%B4%E5%BE%8C%E9%9B%BB%E5%BD%B1",
+      "pubDate": "2026-08-13 12:04:20",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/f3ce1106f191a8ef2cc6e26bf8b73fe9__Coyote_vs._Acme__Portrait_Session_51_42_FB.jpg",
+      "keywords": [
+        "樂一通",
+        "電影發行",
+        "威利狼與acme公司",
+        "荷里活",
+        "大視野",
+        "華納兄弟"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2e0b93c47ead277a4617aa7f5e7be1b0",
+      "title": "Context Labs 与 Trafigura 签订多年协议并收购 Kinertic,赋能碳信息大宗商品交易",
+      "description": "工业人工智能 (AI) 平台将在原始排放数据与 Trafigura 全球业务组合中石油、天然气及金属领域的运营实体和交易部门建立对接 阿姆斯特丹 2026年8月13日 /美通社/ -- 工业人工智能 (AI) 基础设施企业 Context Labs B.V. (“Context Labs”)今天宣布与 Trafigura PTE Ltd(“Trafigura”)达成三项相互关联的交易:收购 Agora (Europe) Limited 及其由 Trafigura 开发的 Kinertic 碳智能平台;Trafigura 对 Context Labs 的战略股权投资;并签订一项多年期主服务与平台许可协议,根据该协议规定,Trafigura 可在其大宗商品交易部门部署该整合平台。 Context Labs 与 Trafigura 签订多年协议并收购 Kinertic Kinertic 为大宗商品生产商、贸易商及买家提供碳智能平台,该平台集成至其现有系统,并与交易捕获系统相连接,用以映射货物流向、汇总投资组合,并生成监管报告和客户报告。通过将 Kinertic 纳入Context Labs AI 解决方案产品体系,并将其接入可信数据基础设施,交易者将能够在统一环境中直接在现有工具内查看价格、数量、物流及可信碳指标。随着欧盟碳边境调节机制 (CBAM) 进入最终实施阶段,默认排放值将直接转化为每批适用范围内货物的成本。随着欧盟甲烷法规从报告阶段进入监测与验证阶段,甲烷强度将成为天然气、液化天然气及石油流入欧盟市场的市场准入前提条件。经核实的、针对特定交易的碳数据现已构成采购与交易的必要条件,而非事后报告事项。 作为交易的一部分: Context Labs 已收购 Trafigura 旗下子公司——Agora (Europe) Limited,此公司为 Kinertic 平台的所有者和运营商。 Trafigura 已另行对 Context Labs 进行战略股权投资,支持平台的持续开发及 Kinertic 功能的整合。 Context Labs 和 Trafigura 已签订多年期平台许可协议,Trafigura 将在多个大宗商品交易部门获得该平台的许可使用权。 Context Labs 提供数字信任基础设施,用于可靠地监测并计算大宗商品的碳强度数据——从生产经运输直至终端市场。Context Labs通过将原始输入转化为受管控的、可审计的产出,在合规和商业市场中创造可衡量的企业价值,从而使工业 AI 和碳计划获得信任。 Context Labs 创始人兼首席执行官丹•哈普尔 (Dan Harple) 表示 :“机遇不在于生成更多数据,而在于为我们客户已有的数据提供背景信息。在其他人看来是孤立的数据集,但我们看到的则是新型智能层面的基础。通过将 Kinertic 与 Context Labs AI 及我们的资产级数据基础设施相结合,我们将碎片化的输入转化为相互关联的、可验证的知识,使每一项输出均可追溯至源头、可复现流程,并具有足够的可信度,用于定价参考、风险管理和资本配置指导。” Trafigura 全球碳交易主管 Hannah Hauman 表示:“如今,碳已成为市场风险和机遇的核心维度。我们的贸易商在碳排放数据方面需要与价格和物流同等的精确度。自成立以来,Trafigura 有幸支持 Kinertic 发展成为行业领先的碳报告和分析平台。我们相信,Context Labs 将在这一坚实基础上再接再厉,推动该平台的持续发展。” Kinertic 首席执行官兼联合创始人 Pelle Sommansson 表示:“此次整合旨在将碳从报告事务转化为核心市场信号。我们与 Context Labs 合作,将透明度提高到一个新的水平,使碳强度成为能源估值和交易中值得信赖的、可衡量的属性。” 对于大宗商品生产商、贸易商、融资方及买家而言,Context Labs-Kinertic 的组合产品可提供: 碳信息交易:投资组合分析、贸易流生成器和量化大宗商品价值链中碳排放和甲烷强度的报告,从而实现差异化定价、结构化交易和改善对冲策略。 大规模应用工业 AI:一个 AI 就绪、来源丰富的数据层,将物联网、运营数据、第三方数据及认证数据整合为统一的排放与属性层。 监管和报告合规就绪:针对欧盟甲烷法规、碳边境调节机制 (CBAM) 及其他相关披露制度提供标准化、可审计的输出(包括端到端产品碳足迹报告)。",
+      "link": "https://www.prnasia.com/story/543959-1.shtml",
+      "pubDate": "2026-08-13 12:04:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "tnm",
+        "cpr",
+        "dta",
+        "uti",
+        "jvn",
+        "afi",
+        "stw",
+        "oil",
+        "lic"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "73a688d330183a619a68695e233eea2d",
+      "title": "評測掛在身上變電子痛包 兼具 AirTag 功能 TB 最潮迷你電子墨水屏、電子螢幕產品",
+      "description": "近年行街不難發現,不論是動漫迷、追星族還是寵物主人,都喜歡在隨身背囊、小包掛上各式各樣的公仔、徽章,製成俗稱「 [...]",
+      "link": "https://unwire.hk/2026/08/13/phototag/review-2/",
+      "pubDate": "2026-08-13 12:03:42",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/20260813tag.jpg",
+      "keywords": [
+        "生活科技",
+        "phototag",
+        "穿戴式裝置",
+        "評測",
+        "手機配件",
+        "airtag",
+        "電子墨水",
+        "配件",
+        "apple"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8454b41d7513828a4e9789a1f089c557",
+      "title": "Vantage數據中心與Nebius擴展英國AI基建 南威爾斯部署首個項目",
+      "description": "全球領先的超大規模數據中心園區供應商Vantage數據中心,與人工智能雲端公司Nebius (Nasdaq: NBIS) 今日公布達成協議,將在Vantage位於威爾斯紐波特的CWL1園區部署高密度、由英偉達驅動的人工智能基礎設施。這次部署標誌著南威爾斯人工智能增長區首個公布的商業容量承諾,並將支援英國對本地人工智能運算容量日益增長的需求。 根據協議,Nebius將租用CWL1的高密度容量,以支援人工智能訓練、推論、代理人工智能及企業人工智能工作負載,服務尋求存取先進人工智能基礎設施的企業、研究人員、初創公司及公共部門機構。 這次容量部署是Nebius更廣泛的英國擴張計劃一部分,亦是其擴大本地人工智能運算容量的承諾。該公司於六月公布,將在英國四個地點投入約17億英鎊的容量建設。該公司在英國的基礎設施建設利用英偉達最新的全棧式、端到端DSXAI工廠參考設計,並支援英國政府的《人工智能機遇行動計劃》。 這次協議建基於Vantage在紐波特的長期業務,並強化了超大規模數據中心在推動英國人工智能經濟中的作用。CWL1園區自2010年起投入運作,是歐洲最大的數據中心園區之一,提供高密度人工智能工作負載所需的規模、連接性及電力基礎設施,並服務多元化的超大規模、企業及公共部門客戶。其電力消耗與百分之百經認證的可再生能源匹配,而其最新設施則透過閉環冷卻系統最大限度減少營運用水量,該系統循環用水而非蒸發,並由風冷式冷卻機支援,在環境條件允許時利用自然冷卻,以減少能源消耗。 CWL1是Vantage在南威爾斯數十億英鎊投資策略的一部分,該公司預計將在紐波特、布里真德及布羅塔森提供超1吉瓦的具備人工智能就緒容量。 Vantage數據中心歐洲、中東及非洲區總裁戴維·豪森表示:「這對南威爾斯及英國的人工智能基礎設施雄心而言,是一個重要里程碑。在本地運算容量需求持續加速之際,Nebius正在英國擴大人工智能雲端基礎設施。Vantage的紐波特園區提供所需規模、連接性及卓越營運,以支援這項增長,我們很榮幸能協助確立南威爾斯作為人工智能投資的領先目的地。」 Nebius歐洲、中東及非洲區總經理加里·蒂爾尼指出:「英國是人工智能正在被初創公司、企業及公共部門建立、部署及採用的地方之一。Vantage的紐波特園區為我們擴大在英國存取由英偉達驅動的人工智能基礎設施,並支援客戶建立下一代人工智能應用程式提供了堅實基礎。」 人工智能部長卡尼什卡·納拉揚表示:「本屆政府希望將人工智能應用為振興英國及創造新職位的工具。這是我們國家再工業化、在每個地區推動良好增長,並確保我們的公共服務在未來數十年保持最佳狀態的核心使命。要實現這一目標,有賴於在本土擁有尖端運算能力——使人工智能成為可能的核心動力。紐波特的基礎設施將在南威爾斯創造新的高技能職位,並協助英國企業及創新者利用人工智能解決部分最棘手的問題。」 威爾斯企業、連接及能源內閣部長亞當·普賴斯表示:「今日的公布標誌著南威爾斯人工智能增長區的一個重要里程碑,並展示了威爾斯作為推動人工智能經濟基礎設施戰略位置日益增長的聲譽。Nebius及Vantage的投資將有助於釋放新的經濟機遇,支援高技能職位,並強化威爾斯作為先進數碼投資領先目的地的地位。我們期待與合作夥伴合作,最大限度發揮這項投資對企業、社區及更廣泛威爾斯經濟的效益。」 南威爾斯被指定為英國人工智能增長區,以表彰其數碼基礎設施的集中度、與倫敦的光纖連接、高容量電網基礎設施及強大的工業基礎。該地區亦是英國最大的半導體業務集群所在地,為先進科技、人工智能基礎設施及高價值數碼投資創造一個不斷發展的生態系統。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16563134-vantage%E6%95%B8%E6%93%9A%E4%B8%AD%E5%BF%83%E8%88%87nebius%E6%93%B4%E5%B1%95%E8%8B%B1%E5%9C%8Bai%E5%9F%BA%E5%BB%BA-%E5%8D%97%E5%A8%81%E7%88%BE%E6%96%AF%E9%83%A8%E7%BD%B2%E9%A6%96%E5%80%8B%E9%A0%85",
+      "pubDate": "2026-08-13 12:02:38",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/d7f3332e9e15424a9fb89d87db70cf2b_CWL13_Vantage_Data_Centers_FB.jpg",
+      "keywords": [
+        "人工智能",
+        "vantage數據中心",
+        "nebius",
+        "商業事",
+        "數據中心",
+        "南威爾斯"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b682ca365b5cf77909ef1cf2c641fcdd",
+      "title": "美國運通擴展虛擬卡功能 助企業善用商業支付方式",
+      "description": "美國運通今日宣布推出新功能,協助美國商業客戶簡化支付流程,並透過美國運通虛擬卡,讓客戶在其選用的財務軟件中,更有效管理開支。虛擬卡是一種迅速增長的商業支付方式,透過可調整的消費限額提供更大控制權,並透過獨特的數碼卡號加強保安。美國運通企業客戶現時可於美國運通的軟件平台@ Work中,建立、管理及使用美國運通虛擬卡,客戶可利用該平台管理其企業計劃。此外,使用美國運通附虛擬支付功能的商務旅遊賬戶(BTA)的客戶,該賬戶為商務旅遊支付提供中央結算,現時亦可透過虛擬支付技術領導者Conferma的解決方案,建立、管理及使用美國運通虛擬卡。 美國運通全球商業服務產品執行副總裁伊娃·雷達表示:「企業希望簡化支付方式,同時維持對員工開支、供應商支付及商務旅遊開支的控制及透明度。虛擬卡有助解決多項挑戰,因此我們讓客戶更容易在他們已使用的軟件及數碼錢包中建立及管理虛擬卡,同時維持客戶對美國運通的信任、保安及服務。」 虛擬卡用途涵蓋多種商業開支,包括供應商支付、日常採購及旅遊開支,亦適用於沒有傳統企業卡的承辦商、實習生、公司賓客或其他獲授權用戶。美國運通虛擬卡提供便利,並加強保安,過去連續19年錄得主要卡網絡中最低的美國詐騙率。 無論是預訂旅遊、透過數碼錢包支付開支,抑或進行供應商支付或日常商業採購,虛擬卡都為獲授權用戶提供便捷的支付方式,減少個人卡報銷的需要,並協助企業透過認可支付方式進行更多採購,同時維持開支透明度。 美國運通正擴大客戶在其已使用的工具中,使用虛擬卡的權限,以管理其商業開支。 美國運通企業客戶現時可於@ Work平台中建立及管理美國運通虛擬卡,該平台協助客戶管理企業卡申請、追蹤員工開支及生成客戶報告,並可與企業資源規劃(ERP)及費用管理平台整合。 隨著美國運通虛擬卡現已整合至@ Work平台,合資格客戶可以: 建立具有特定消費限額及有效期的單次或多次使用虛擬卡; 設定國家限制,以限制卡片使用地點; 設定商戶類別限制,以限制卡片使用地點; 在一個地方查看及管理所有虛擬卡; 獲取詳細交易數據,以便更輕鬆地對賬。 @ Work平台中的美國運通虛擬卡目前適用於部分美國的美國運通企業計劃客戶,並計劃擴展至更多客戶。請聯絡您的美國運通代表以了解更多資訊。 對於使用BTA的客戶,美國運通亦透過與Conferma擴大合作關係,擴展美國運通虛擬卡功能(需登記)。 合資格的BTA客戶現時可透過Conferma流動應用程式建立美國運通虛擬卡,以支付合資格的流動開支,包括餐飲、零售採購、租車、共乘服務及商務旅遊期間產生的其他合資格費用。這次合作補充了BTA的中央結算功能,透過讓旅客能夠使用美國運通虛擬卡支付需要在消費時付款的開支,協助公司對高額開支(例如機票及酒店)有更大控制權。 其他優點包括: 透過詳細交易數據,提高開支透明度; 能夠為每張虛擬卡設定消費限額及有效期; 減少個人卡報銷的需要; 透過獨特的虛擬卡號,提高保安性。 與Conferma合作的美國運通虛擬卡目前適用於美國的美國運通BTA客戶。作為第三方代幣服務商,Conferma促進美國運通虛擬卡的分發。Conferma提供的功能之可用性、功能及表現或會更改,恕不另行通知。如欲了解更多資訊,請聯絡您的美國運通代表。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16563222-%E7%BE%8E%E5%9C%8B%E9%81%8B%E9%80%9A%E6%93%B4%E5%B1%95%E8%99%9B%E6%93%AC%E5%8D%A1%E5%8A%9F%E8%83%BD-%E5%8A%A9%E4%BC%81%E6%A5%AD%E5%96%84%E7%94%A8%E5%95%86%E6%A5%AD%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8F",
+      "pubDate": "2026-08-13 12:02:32",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/0ed0117ca49d41d78011c5b6313e6cfb_Virtual_Card_Screen_Updated_Visual5B55D_FB.jpg",
+      "keywords": [
+        "商業支付",
+        "美國運通",
+        "商業事",
+        "企業管理",
+        "數碼支付",
+        "虛擬卡"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9b56921722fd6962b3b7fdfb6d7646f9",
+      "title": "聯合國:阿富汗半數受訪女性每月出門最多2次 婦女就業率僅7%",
+      "description": "聯合國婦女署8月12日(周二)發布的數據顯示,由於塔利班實施的限制措施,阿富汗半數受訪女性現在每月只出門一到兩次,行動自由和參與公共生活的權",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60379732/%E8%81%AF%E5%90%88%E5%9C%8B-%E9%98%BF%E5%AF%8C%E6%B1%97%E5%8D%8A%E6%95%B8%E5%8F%97%E8%A8%AA%E5%A5%B3%E6%80%A7%E6%AF%8F%E6%9C%88%E5%87%BA%E9%96%80%E6%9C%80%E5%A4%9A2%E6%AC%A1-%E5%A9%A6%E5%A5%B3%E5%B0%B1%E6%A5%AD%E7%8E%87%E5%83%857",
+      "pubDate": "2026-08-13 12:01:09",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260220/1101572494671745024075869.jpeg/SbPJNcmFXBTFjKic8GQYNvaw1Yudw3stzXeGrs13hq4",
+      "keywords": [
+        "hk01",
+        "環球",
+        "世界新聞",
+        "新聞",
+        "國際新聞",
+        "國際",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "524106e61e07aa50097d0d5f3f8d435b",
+      "title": "暗影伊莉絲|伴遊飛上枝頭變豪門少奶 槍殺丈夫分屍裝入篋棄置",
+      "description": "改編自真實豪門血案的Netflix電影《暗影伊莉絲》(Elize: Shadows of a Woman)上月上架後隨即登上多國熱播排行榜,主角Elize由麻雀變鳳凰到豪門凶",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60379326/%E6%9A%97%E5%BD%B1%E4%BC%8A%E8%8E%89%E7%B5%B2-%E4%BC%B4%E9%81%8A%E9%A3%9B%E4%B8%8A%E6%9E%9D%E9%A0%AD%E8%AE%8A%E8%B1%AA%E9%96%80%E5%B0%91%E5%A5%B6-%E6%A7%8D%E6%AE%BA%E4%B8%88%E5%A4%AB%E5%88%86%E5%B1%8D%E8%A3%9D%E5%85%A5%E7%AF%8B%E6%A3%84%E7%BD%AE",
+      "pubDate": "2026-08-13 12:00:58",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164262417186689024651802.jpeg/6_ySToSmCrqGP-VhXGXhOj7z74XBy3hyaD6mgGg-poA",
+      "keywords": [
+        "影評",
+        "外語片",
+        "港產片",
+        "電影",
+        "睇戲",
+        "香港01",
+        "經典電影"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "69c9807288f03ecfb6f695c91a9bac6e",
+      "title": "腰圍量法|中央肥胖標準是多少?遠離內臟脂肪危機!附瘦腰攻略",
+      "description": "腰圍數字不單影響身材線條,更是反映個人健康狀況的關鍵指標。當腰圍過粗,往往代表體內積聚過量內臟脂肪,大大增加患上心血管疾病及糖尿病的風險。以下帶大家了解正確的測量步驟,並提供瘦腰秘訣,助你輕鬆維持健康體態。 同場加映:經常寒背恐壓迫脊椎!專家教2招伸展動作改善 每日做4分鐘有效|附詳細步驟 4步驟輕鬆掌握正確測量方法 保持呼吸順暢避免縮肚影響準確度 根據衞生署指引,正確測量腰圍的方法非常簡單,市民",
+      "link": "https://www.stheadline.com/health-edu/3603545/%E8%85%B0%E5%9C%8D%E9%87%8F%E6%B3%95%E4%B8%AD%E5%A4%AE%E8%82%A5%E8%83%96%E6%A8%99%E6%BA%96%E6%98%AF%E5%A4%9A%E5%B0%91%E9%81%A0%E9%9B%A2%E5%85%A7%E8%87%9F%E8%84%82%E8%82%AA%E5%8D%B1%E6%A9%9F%E9%99%84%E7%98%A6%E8%85%B0%E6%94%BB%E7%95%A5",
+      "pubDate": "2026-08-13 12:00:03",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/1601f61a08e210453c3fd04fc0a2ec67/2026-08/daniel_STheadline_-_2026-08-12T151905_251.jpg",
+      "keywords": null,
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "c7b9bda0b0dc84b572cea7d32394e6f9",
@@ -624,6 +1345,24 @@
         "technology"
       ],
       "region": "hk"
+    },
+    {
+      "id": "277033679853addbbc8073bf2e0b85af",
+      "title": "《藍籌》京東(09618.HK)次季Non-GAAP純利升20.8%至89.3億人幣 美股盤前跌逾2%",
+      "description": "京東集團-SW(09618.HK)公布截至2026年6月30日止三個月(2026年第二季度),京東集團錄得總收入3,464.01億元人民幣(下同),按年減少2.9%,略高於市場預期的3,421億元。主要受2025年同期的高基數影響。期內,商品收入按年減少5.4%至2,671.15億元,服務收入則按年增長6.8%至...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%97%8D%E7%B1%8C-%E4%BA%AC%E6%9D%B1-09618-hk-%E6%AC%A1%E5%AD%A3non-105855548.html",
+      "pubDate": "2026-08-13 10:58:55",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "季度",
+        "京東集團"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "aab13f9a3b91c7ec03de12d66744eb9e",
@@ -3642,6 +4381,36 @@
       "region": "hk"
     },
     {
+      "id": "b3c52784684b50027c04d22158bbb1f8",
+      "title": "銀色債券2026|申請日期+各大銀行認購優惠+保底息4.25厘|最新",
+      "description": "政府公布新一批銀色債券發售詳情,每手1萬元,年期3年。每半年派息一次,息率與本地通脹掛鈎,保證息率為4.25厘,高於上一批銀債的3.85厘,為歷來",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60377650/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B82026-%E7%94%B3%E8%AB%8B%E6%97%A5%E6%9C%9F-%E5%90%84%E5%A4%A7%E9%8A%80%E8%A1%8C%E8%AA%8D%E8%B3%BC%E5%84%AA%E6%83%A0-%E4%BF%9D%E5%BA%95%E6%81%AF4-25%E5%8E%98-%E6%9C%80%E6%96%B0",
+      "pubDate": "2026-08-13 07:58:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260807/1162396653630525440137642.jpeg/emFR_ygcAuzrd0OyXHlAXa_dzexgHKGC3HMQudxzELk",
+      "keywords": [
+        "地產消息",
+        "財經新聞",
+        "a股",
+        "hk01",
+        "香港01",
+        "股票",
+        "財經透視",
+        "財經台",
+        "香港新聞",
+        "新聞",
+        "恆生指數",
+        "港股",
+        "財經網",
+        "經濟"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "5e32162be5bc2dd46f71b220795147f0",
       "title": "傳國泰海通(02611.HK)考慮私有化海通恒信(01905.HK) 尋求整合海外業務",
       "description": "《彭博》引述消息人士報道,國泰海通(02611.HK)在宣布計劃將國泰君安國際(01788.HK)私有化後,正研究合併其海外業務,考慮對另一間子公司海通恒信(01905.HK)進行私有化。 據悉,將海通恒信私有化,應有助國泰海通更輕鬆地將重疊的海外部門整合至單一上市公司,亦可更好地與華爾街大行競爭。 海通恒信主要...",
@@ -4989,21 +5758,6 @@
         "technology"
       ],
       "region": "hk"
-    },
-    {
-      "id": "577f9b3754c75767e100b35c4d06ea45",
-      "title": "人民幣首超港元成為香港外匯交易最大貨幣對",
-      "description": "香港財資市場公會公布香港外匯市場半年度調查結果,於2026年4月,香港外匯交易日均成交額為9,082億美元,其中美元兌人民幣交易量首次超越美元兌港元,躍居香港市場交投最活躍的貨幣對。 當中,4月美元兌人民幣日均成交2,740億美元,佔香港全部外匯交易的30.2%,超過美元兌港元的2,402億美元,佔比26.4%。...",
-      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E6%B0%91%E5%B9%A3%E9%A6%96%E8%B6%85%E6%B8%AF%E5%85%83%E6%88%90%E7%82%BA%E9%A6%99%E6%B8%AF%E5%A4%96%E5%8C%AF%E4%BA%A4%E6%98%93%E6%9C%80%E5%A4%A7%E8%B2%A8%E5%B9%A3%E5%B0%8D-064457313.html",
-      "pubDate": "2026-08-13 06:44:57",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "95bce7ee22a8c107dae4d69af1a1946b",
@@ -7522,24 +8276,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "9800a7e4b672576b650a5cc8430fb43c",
-      "title": "《大行》瑞銀料下半年至明年香港樓價大致持平 四大關鍵風險未充分反映 住房供應短缺料僅持續四年",
-      "description": "瑞銀投行研究部指,在開發商股息收益率利差高於歷史平均水準的情況下,市場尚未充分反映香港房地產市場面臨的四個關鍵風險,包括無就業復甦、港澳大灣區融合、北部都會區供應和人口缺口。 瑞銀大中華區房地產行業分析師梁展嘉提到,儘管自2024年以來GDP增速達到3%至4%,但新增就業明顯走弱。自2023年以來,應屆生就業機會...",
-      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E7%91%9E%E9%8A%80%E6%96%99%E4%B8%8B%E5%8D%8A%E5%B9%B4%E8%87%B3%E6%98%8E%E5%B9%B4%E9%A6%99%E6%B8%AF%E6%A8%93%E5%83%B9%E5%A4%A7%E8%87%B4%E6%8C%81%E5%B9%B3-%E5%9B%9B%E5%A4%A7%E9%97%9C%E9%8D%B5%E9%A2%A8%E9%9A%AA%E6%9C%AA%E5%85%85%E5%88%86%E5%8F%8D%E6%98%A0-%E4%BD%8F%E6%88%BF%E4%BE%9B%E6%87%89%E7%9F%AD%E7%BC%BA%E6%96%99%E5%83%85%E6%8C%81%E7%BA%8C%E5%9B%9B%E5%B9%B4-035240354.html",
-      "pubDate": "2026-08-13 03:52:40",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "股息收益率",
-        "瑞銀"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "40adbbdda7d1171e2470e60bc6c22d0e",
@@ -66609,6 +67345,6 @@
       "pinned": true
     }
   ],
-  "total": 3444,
-  "last_updated": "2026-08-14T08:02:47.222227"
+  "total": 3483,
+  "last_updated": "2026-08-14T09:03:42.398134"
 }
