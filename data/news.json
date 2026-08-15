@@ -1,16 +1,37 @@
 {
   "articles": [
     {
-      "id": "e5874dcc788ff3d12ec44130539effc8",
-      "title": "簡街因科技股拋售承受150億美元損失",
-      "description": null,
-      "link": "https://hk.finance.yahoo.com/news/%E7%B0%A1%E8%A1%97%E5%9B%A0%E7%A7%91%E6%8A%80%E8%82%A1%E6%8B%8B%E5%94%AE%E6%89%BF%E5%8F%97150%E5%84%84%E7%BE%8E%E5%85%83%E6%90%8D%E5%A4%B1-225108220.html",
-      "pubDate": "2026-08-14 22:51:08",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM37199_M.jpg",
+      "id": "c15d039cfcc56eb66e7c9a6a63dbd95c",
+      "title": "美國30年期國債拍賣中標利率達5.216厘 創25年新高",
+      "description": "美國財政部拍賣30年期國債,中標利率達5.216厘,觸及25年高位,略高於市場預期。這是繼10年期國債拍賣中標利率創19年新高後,長債息率再度攀升至多年未見的水平。 作為衡量市場需求的重要指標,這次拍賣的投標倍數為2.39倍,略低於過去6次平均的2.43倍;包括外國投資者在內的間接投標中標率為66.8%,同樣略低於過去6次平均的67%,反映市場吸納長債的意欲稍為降溫。 市場關注融資成本持續高企,將進一步推高美國財政赤字。數據顯示,美國今個財政年度首10個月預算赤字已逼近1.8萬億美元,超越上個財政年度全年的赤字水平。期內,公共債務利息支出達1.17萬億美元,按年上升15%,主要由於美債孳息率向上帶動利息開支增加。市場亦普遍預期,財政部未來拍賣國債,或以2年至7年期的中短期國債為主,以控制融資成本。 二手市場方面,債息表現偏軟。30年期債息反覆向下,低見5.18厘,跌約7個基點,尾市貼近5.22厘水平。10年期債息低見4.613厘,跌約8個基點。對利率變動前景較敏感的兩年期債息低見4.1215厘,跌約8個基點,創約一個月新低。",
+      "link": "https://www.bastillepost.com/hongkong/article/16565401-%E7%BE%8E%E5%9C%8B30%E5%B9%B4%E6%9C%9F%E5%9C%8B%E5%82%B5%E6%8B%8D%E8%B3%A3%E4%B8%AD%E6%A8%99%E5%88%A9%E7%8E%87%E9%81%945-216%E5%8E%98%E3%80%80%E5%89%B525%E5%B9%B4%E6%96%B0%E9%AB%98",
+      "pubDate": "2026-08-13 23:36:45",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2024/04/20190902_FI_US-TREASURY-BONDS_US-BOND_FB-1-2-1-1-1-1_source-web_-1-2-1.jpg",
       "keywords": [
-        "人工智能",
-        "對沖基金"
+        "source-2",
+        "錢財事",
+        "美國債息"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "815bd150f1bd767b7c069682c471f418",
+      "title": "黃金跌破4,400美元,聯儲局前景與霍爾木茲海峽談判壓制漲勢",
+      "description": "Investing.com - 黃金價格週五小幅回落,從十週高位撤退,投資者正在權衡聯儲局較為溫和的加息前景,以及霍爾木茲海峽重開談判的不確定性。",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BB%83%E9%87%91%E8%B7%8C%E7%A0%B44-400%E7%BE%8E%E5%85%83-%E8%81%AF%E5%84%B2%E5%B1%80%E5%89%8D%E6%99%AF%E8%88%87%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%AB%87%E5%88%A4%E5%A3%93%E5%88%B6%E6%BC%B2%E5%8B%A2-015940884.html",
+      "pubDate": "2026-08-14 01:59:40",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM440N3_M.jpg",
+      "keywords": [
+        "聯儲局",
+        "霍爾木茲海峽",
+        "通脹"
       ],
       "category": [
         "business"
@@ -37,41 +58,484 @@
       "pinned": true
     },
     {
-      "id": "c15d039cfcc56eb66e7c9a6a63dbd95c",
-      "title": "美國30年期國債拍賣中標利率達5.216厘 創25年新高",
-      "description": "美國財政部拍賣30年期國債,中標利率達5.216厘,觸及25年高位,略高於市場預期。這是繼10年期國債拍賣中標利率創19年新高後,長債息率再度攀升至多年未見的水平。 作為衡量市場需求的重要指標,這次拍賣的投標倍數為2.39倍,略低於過去6次平均的2.43倍;包括外國投資者在內的間接投標中標率為66.8%,同樣略低於過去6次平均的67%,反映市場吸納長債的意欲稍為降溫。 市場關注融資成本持續高企,將進一步推高美國財政赤字。數據顯示,美國今個財政年度首10個月預算赤字已逼近1.8萬億美元,超越上個財政年度全年的赤字水平。期內,公共債務利息支出達1.17萬億美元,按年上升15%,主要由於美債孳息率向上帶動利息開支增加。市場亦普遍預期,財政部未來拍賣國債,或以2年至7年期的中短期國債為主,以控制融資成本。 二手市場方面,債息表現偏軟。30年期債息反覆向下,低見5.18厘,跌約7個基點,尾市貼近5.22厘水平。10年期債息低見4.613厘,跌約8個基點。對利率變動前景較敏感的兩年期債息低見4.1215厘,跌約8個基點,創約一個月新低。",
-      "link": "https://www.bastillepost.com/hongkong/article/16565401-%E7%BE%8E%E5%9C%8B30%E5%B9%B4%E6%9C%9F%E5%9C%8B%E5%82%B5%E6%8B%8D%E8%B3%A3%E4%B8%AD%E6%A8%99%E5%88%A9%E7%8E%87%E9%81%945-216%E5%8E%98%E3%80%80%E5%89%B525%E5%B9%B4%E6%96%B0%E9%AB%98",
-      "pubDate": "2026-08-13 23:36:45",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2024/04/20190902_FI_US-TREASURY-BONDS_US-BOND_FB-1-2-1-1-1-1_source-web_-1-2-1.jpg",
+      "id": "466410397dd3b02e8bd21dab2522199c",
+      "title": "香港投資|2020年引入 港府稱吸引資金到港有限合夥基金突破2000個",
+      "description": "據財經事務及庫務局(財庫局)社交媒體發文指出,本港有限合夥基金(LPF)制度反應極為熱烈,最新登記數目已正式突...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%A6%99%E6%B8%AF%E6%8A%95%E8%B3%87-2020%E5%B9%B4%E5%BC%95%E5%85%A5-%E6%B8%AF%E5%BA%9C%E7%A8%B1%E5%90%B8%E5%BC%95%E8%B3%87%E9%87%91%E5%88%B0%E6%B8%AF%E6%9C%89%E9%99%90%E5%90%88%E5%A4%A5%E5%9F%BA%E9%87%91%E7%AA%81%E7%A0%B42000%E5%80%8B-050000889.html",
+      "pubDate": "2026-08-14 05:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bossmind_356/0f00949e3714cd19cba1b2e623223ce4.jpg",
       "keywords": [
-        "source-2",
-        "錢財事",
-        "美國債息"
-      ],
-      "category": [
-        "business",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "33a28d52e50339a40ce64caa3728d98d",
-      "title": "港產加密大亨葉俊德離奇墜樓亡!創辦Quantum Fintech創辦由60美元比特幣至24億身家 寫下加密界資產神話",
-      "description": "加密貨幣市場一向盛產暴富故事,但財富愈透明,風險亦愈貼身。香港出生、Quantum Fintech Group創辦人Harry Yeh葉俊德近日在巴拉圭豪宅墜亡,令市場再次關注加密富豪的人身安全、私鑰保管及跨境資產風險。 港產加密貨幣富豪巴拉圭30樓墜亡 巴拉圭警方正調查一宗涉及香港出生加密貨幣投資人的死亡案件。當地傳媒報道,Quantum Fintech Group創辦人兼管理合夥人Harry Chun Tak Yeh葉俊德,於8月7日凌晨約4時30分,被發現倒臥於首都亞松森Trinidad區豪宅項目Jade Park樓下。警方初步相信,他由30樓單位高處墜下,案件仍在調查階段,檢方未有就死因作出定論。 報道指,保安員聽到巨響後到場查看,其後通知警方。調查人員進入相信與葉俊德有關的30樓單位後,發現大門打開,室內物品有被翻動的痕跡。當局亦接觸到其29歲巴西籍伴侶Isadora de Proenca Braganholo Carvalho,她向警方表示事前不知情,暫時未有被控。檢方表示,案件仍保留多個調查方向,法醫報告、閉路電視片段及現場鑑證結果,將會是釐清案情的關鍵。 據官方介紹,葉俊德是Quantum Fintech Group(QFG)董事總經理,早於2013年已投身加密貨幣市場,當時比特幣價格約60美元,屬早期入場者之一。QFG主要從事加密貨幣、區塊鏈及數碼資產投資管理,據報他與QFG及合作夥伴管理的基金及資產規模超過20億美元。.. The post 港產加密大亨葉俊德離奇墜樓亡!創辦Quantum Fintech創辦由60美元比特幣至24億身家 寫下加密界資產神話 appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/%E8%99%9B%E6%93%AC%E6%8A%95%E8%B3%87/%E6%B8%AF%E7%94%A2%E5%8A%A0%E5%AF%86%E5%A4%A7%E4%BA%A8-%E8%91%89%E4%BF%8A%E5%BE%B7-%E9%9B%A2%E5%A5%87%E5%A2%9C%E6%A8%93-%E6%AF%94%E7%89%B9%E5%B9%A3-ed01-2032319/",
-      "pubDate": "2026-08-13 22:54:40",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/0802-app-carousel-banners-27_4804038476a7e4a1a5db86.png",
-      "keywords": [
-        "虛擬投資"
+        "有限合夥基金",
+        "財經事務及庫務局",
+        "財庫局"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "09ba714a2dee9049e48485da4c53aab9",
+      "title": "尚餘 77 天:7 WONDERS OF FUTURE CITIES 投票活動開始倒數",
+      "description": "阿聯酋杜拜2026年8月15日 /美通社/ -- 7 Wonders of Future Cities(未來城市七大奇觀)今日宣佈,全球投票將於 77 天後,即 2026 年 10 月 31 日在 www.7wondersfc.com 網站上正式展開。當天亦是「世界城市日」,屆時公眾將可從參與的城市和發展項目中,選出他們心目中最能代表未來都市生活的典範,賦予其歷史性的認可。 7 Wonders of Future Cities 活動主席 Jean-Paul de la Fuente...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/-77-7-wonders-of-future-cities--302851910.html",
+      "pubDate": "2026-08-15 00:00:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1968582/New-7-Wonders.jpg?id=OA2867140&token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..2OW7gXO_dUU762MA.5LSoB8WbSnSiwQmrfSzKCU4vt8JTJa7iqJNxsj0iruMoMZGWTaZSNvR400s3IhnU0VVp2jvzh_5mRWT8M7qfTn51BZ6XJqDXqJ27toANlqPni-rTHxRM2",
+      "keywords": [
+        "npt",
+        "eni",
+        "esg",
+        "csr",
+        "pdt"
+      ],
+      "category": [
+        "business",
+        "environment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "19d7c9800cf761ed1aaf85359d42f97f",
+      "title": "日防相小泉進次郎參拜靖國神社 自民黨高層首度集體參拜",
+      "description": "日本防衛大臣小泉進次郎周五(8月15日)參拜靖國神社;同日,自民黨幹事長鈴木俊一、總務會長有村治子及選舉對策委員長西村康稔亦前往參拜,屬自民",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380199/%E6%97%A5%E9%98%B2%E7%9B%B8%E5%B0%8F%E6%B3%89%E9%80%B2%E6%AC%A1%E9%83%8E%E5%8F%83%E6%8B%9C%E9%9D%96%E5%9C%8B%E7%A5%9E%E7%A4%BE-%E8%87%AA%E6%B0%91%E9%BB%A8%E9%AB%98%E5%B1%A4%E9%A6%96%E5%BA%A6%E9%9B%86%E9%AB%94%E5%8F%83%E6%8B%9C",
+      "pubDate": "2026-08-14 23:57:06",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260228/1104265532149862400802796.jpeg/8p1mdeiFyksirZlilkxIhzG9YmGH_dXWLXZh4y12YeM",
+      "keywords": [
+        "環球",
+        "國際新聞",
+        "國際",
+        "香港01",
+        "世界新聞",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4c08c340cba497c3fa15dfe4df18e5dd",
+      "title": "日本防相等官員參拜靖國神社 中國強烈不滿 韓國表遺憾",
+      "description": "日本防衛大臣小泉進次郎8月15日(周六)日本二戰投降紀念日參拜靖國神社;執政自民黨幹事長鈴木俊一、總務會長有村治子及選舉對策委員長西村康稔同",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380199/%E6%97%A5%E6%9C%AC%E9%98%B2%E7%9B%B8%E7%AD%89%E5%AE%98%E5%93%A1%E5%8F%83%E6%8B%9C%E9%9D%96%E5%9C%8B%E7%A5%9E%E7%A4%BE-%E4%B8%AD%E5%9C%8B%E5%BC%B7%E7%83%88%E4%B8%8D%E6%BB%BF-%E9%9F%93%E5%9C%8B%E8%A1%A8%E9%81%BA%E6%86%BE",
+      "pubDate": "2026-08-14 23:57:06",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260815/1165256172974903296904512.jpeg/-jhdhyDHG8Vxwkxx3BOKkcHvrS2OXRiF6XRZpel0WaU",
+      "keywords": [
+        "新聞",
+        "國際",
+        "世界新聞",
+        "hk01",
+        "國際新聞",
+        "環球",
+        "香港01"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a0f6afd4d994a2d22df6494f548c505c",
+      "title": "日本防相等官員參拜靖國神社 中國強烈不滿 稱應深刻反省歷史",
+      "description": "日本防衛大臣小泉進次郎8月15日(周六)日本二戰投降紀念日參拜靖國神社;執政自民黨幹事長鈴木俊一、總務會長有村治子及選舉對策委員長西村康稔同",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380199/%E6%97%A5%E6%9C%AC%E9%98%B2%E7%9B%B8%E7%AD%89%E5%AE%98%E5%93%A1%E5%8F%83%E6%8B%9C%E9%9D%96%E5%9C%8B%E7%A5%9E%E7%A4%BE-%E4%B8%AD%E5%9C%8B%E5%BC%B7%E7%83%88%E4%B8%8D%E6%BB%BF-%E7%A8%B1%E6%87%89%E6%B7%B1%E5%88%BB%E5%8F%8D%E7%9C%81%E6%AD%B7%E5%8F%B2",
+      "pubDate": "2026-08-14 23:57:06",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260228/1104265532149862400802796.jpeg/8p1mdeiFyksirZlilkxIhzG9YmGH_dXWLXZh4y12YeM",
+      "keywords": [
+        "世界新聞",
+        "新聞",
+        "國際新聞",
+        "hk01",
+        "國際",
+        "香港01",
+        "環球"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7be9cc9fc11967daec170783d386b28c",
+      "title": "淡化中期選舉影響 川普說要對重創伊朗經濟",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E6%B7%A1%E5%8C%96%E4%B8%AD%E6%9C%9F%E9%81%B8%E8%88%89%E5%BD%B1%E9%9F%BF-%E5%B7%9D%E6%99%AE%E8%AA%AA%E8%A6%81%E5%B0%8D%E9%87%8D%E5%89%B5%E4%BC%8A%E6%9C%97%E7%B6%93%E6%BF%9F-234640937.html",
+      "pubDate": "2026-08-14 23:46:40",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/3e056d2a39c1587e602bc40906a097f5.jpg",
+      "keywords": [
+        "霍爾木茲海峽",
+        "前所未有的",
+        "川普",
+        "福克斯新聞",
+        "伊朗"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e6e38c7c32cf4b6eed03f65da5cb1571",
+      "title": "上午07時15分 天文台特別天氣提示:天文台預警未來一兩小時香港或有廣泛大雨",
+      "description": "香港天文台於2026年8月15日上午7時15分發出特別天氣提示,警告未來一至兩小時內,香港廣泛地區可能會受到大雨影響。市民應提高警覺,密切留意最新天氣資訊。 天文台提醒市民,若需外出,請攜帶雨具並注意路面濕滑,避免前往低窪地區或容易水浸的地方。此外,駕駛人士應減速駕駛,保持安全車距,以應對可能的惡劣路況。 請市民留意天文台的進一步更新,並採取必要的防範措施以確保安全。 The post 上午07時15分 天文台特別天氣提示:天文台預警未來一兩小時香港或有廣泛大雨 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%94%9F%E6%B4%BB/%E5%A4%A9%E6%96%87%E5%8F%B0-%E7%89%B9%E5%88%A5%E5%A4%A9%E6%B0%A3%E6%8F%90%E7%A4%BA-%E5%A4%A7%E9%9B%A8%E8%AD%A6%E5%91%8A-aplt2-95-2032730/",
+      "pubDate": "2026-08-14 23:45:28",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2025/08/6102915770909576456_12072579806895dc3ce6cae.jpg",
+      "keywords": [
+        "大雨警告",
+        "天文台",
+        "生活",
+        "特別天氣提示"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1220051752dc78e43421b36f818b5a0a",
+      "title": "法國禁15歲以下少年用社媒遇阻 憲法委員會裁定侵犯言論自由駁回",
+      "description": "法國限制青少年使用社交媒體的政策遭遇重大阻力。法國憲法委員會於當地時間14日正式駁回一項旨在禁止15歲以下兒童及青少年使用社交媒體的法案,認定該法案侵犯公民的言論自由,令一直力推此案的法國總統馬克龍遭遇挫。馬克龍隨即指示總理重新研擬相關法案,強調推動改革落實的決心絲毫未減。 裁定違比例原則 侵害兒少表達自由 據法新社報道,法國國會議員早前已表決通過這項禁止15歲以下兒童及少年人使用社媒的法案,使法",
+      "link": "https://www.stheadline.com/realtime-world/3604595/%E6%B3%95%E5%9C%8B%E7%A6%8115%E6%AD%B2%E4%BB%A5%E4%B8%8B%E5%B0%91%E5%B9%B4%E7%94%A8%E7%A4%BE%E5%AA%92%E9%81%87%E9%98%BB-%E6%86%B2%E6%B3%95%E5%A7%94%E5%93%A1%E6%9C%83%E8%A3%81%E5%AE%9A%E4%BE%B5%E7%8A%AF%E8%A8%80%E8%AB%96%E8%87%AA%E7%94%B1%E9%A7%81%E5%9B%9E",
+      "pubDate": "2026-08-14 23:44:50",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d68146ed0641c3ffaed8d66bc894fb4d/2026-08/2026-08-14T064816Z_776649399_RC2DDMAGOQT6_RTRMADP_3_AUSTRALIA-SOCIALMEDIA.JPG",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ed2d5b1230433166374506d7468d412f",
+      "title": "消委會自願醫保保單比較|標準計劃同靈活計劃邊個好(2026)",
+      "description": "消委會《選擇》月刊拆解自願醫保保障重點:標準計劃與靈活計劃分別、揀計劃要留意咩、$8,000 稅務扣減安排,以及去邊度查政府認可產品名單,一文睇清。 The post 消委會自願醫保保單比較|標準計劃同靈活計劃邊個好(2026) appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%90%86%E8%B2%A1/%E6%B6%88%E5%A7%94%E6%9C%83%E8%87%AA%E9%A1%98%E9%86%AB%E4%BF%9D%E4%BF%9D%E5%96%AE%E6%AF%94%E8%BC%83-2032728/",
+      "pubDate": "2026-08-14 23:35:19",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/hong-kong-health-insurance_9_18189789516a7fa5bf3b422.jpg",
+      "keywords": [
+        "理財"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "467740f6c5762e0684e8e01e5c683a36",
+      "title": "AIA自願醫保尊耀計劃|保障範圍保費及延伸癌症保障一覽(2026)",
+      "description": "AIA自願醫保尊耀計劃保障範圍點睇?終身保障限額6,000萬港元、每年1,200萬港元,仲有市場首創延伸癌症保障。即睇官方保費參考、認可產品編號及稅務扣減詳情。 The post AIA自願醫保尊耀計劃|保障範圍保費及延伸癌症保障一覽(2026) appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%90%86%E8%B2%A1/aia%E8%87%AA%E9%A1%98%E9%86%AB%E4%BF%9D%E5%B0%8A%E8%80%80%E8%A8%88%E5%8A%83-2032721/",
+      "pubDate": "2026-08-14 23:29:30",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/hong-kong-health-insurance_0_8152240866a7fa46dae932.jpg",
+      "keywords": [
+        "理財"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7dcba1d6e799211a3dfae1492a4865ff",
+      "title": "伊朗局勢|特朗普:很快把霍爾木茲海峽列「美國領土」 嚴厲打擊伊朗經濟",
+      "description": "美國總統特朗普周五(14日)再就霍爾木茲海峽發表震撼言論,聲稱美國在「徹底擊敗伊朗」後,將很快宣布這條全球能源運輸命脈成為「美國領土」。伊朗隨即強硬反擊,副外長加里巴巴迪(Kazem Gharibabadi)表示,伊朗不會被美國的威脅或武力展示嚇倒,霍爾木茲海峽開放還是關閉,只能由伊朗決定。 特朗普輕笑稱「這是真的」 綜合新華社、《衛報》、澳洲廣播公司(ABC)及美國霍士新聞報道,特朗普周五在紐約",
+      "link": "https://www.stheadline.com/society/3604594/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E7%89%B9%E6%9C%97%E6%99%AE%E5%BE%88%E5%BF%AB%E6%8A%8A%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E5%88%97%E7%BE%8E%E5%9C%8B%E9%A0%98%E5%9C%9F-%E5%9A%B4%E5%8E%B2%E6%89%93%E6%93%8A%E4%BC%8A%E6%9C%97%E7%B6%93%E6%BF%9F",
+      "pubDate": "2026-08-14 23:27:50",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a84540fa8c94367947d24d463e5aa05c/2026-08/2026-08-14T220131Z_6747644_RC2KYMAW0ZRL_RTRMADP_3_USA-TRUMP.JPG",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "19272978957ed82250633659101731f3",
+      "title": "伊朗局勢|特朗普:擊敗伊朗後 將宣布霍爾木茲海峽列入「美國領土」",
+      "description": "美國總統特朗普周五(14日)再就霍爾木茲海峽發表「震撼」言論,聲稱美國在「徹底擊敗伊朗」後,將很快宣布這條全球能源運輸命脈成為「美國領土」。伊朗隨即強硬反擊,副外長加里巴巴迪(Kazem Gharibabadi)表示,伊朗不會被美國的威脅或武力展示嚇倒,霍爾木茲海峽開放還是關閉,只能由伊朗決定。 特朗普輕笑稱「這是真的」 綜合新華社、《衛報》、澳洲廣播公司(ABC)及美國霍士新聞報道,特朗普周五在",
+      "link": "https://www.stheadline.com/society/3604594/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E7%89%B9%E6%9C%97%E6%99%AE%E6%93%8A%E6%95%97%E4%BC%8A%E6%9C%97%E5%BE%8C-%E5%B0%87%E5%AE%A3%E5%B8%83%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E5%88%97%E5%85%A5%E7%BE%8E%E5%9C%8B%E9%A0%98%E5%9C%9F",
+      "pubDate": "2026-08-14 23:27:50",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a84540fa8c94367947d24d463e5aa05c/2026-08/2026-08-14T220131Z_6747644_RC2KYMAW0ZRL_RTRMADP_3_USA-TRUMP.JPG",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1b2b86a4819f7b8d7b49f4afc30f6664",
+      "title": "滙豐自願醫保好唔好|3 大計劃保費索償批核率一覽(2026)",
+      "description": "滙豐自願醫保好唔好?拆解滙豐自願醫保靈活、進階、標準三大計劃嘅保障範圍、保費水平、98.6% 索償批核率,並比較市場上其他熱門自願醫保產品,助你判斷是否適合自己需要。 The post 滙豐自願醫保好唔好|3 大計劃保費索償批核率一覽(2026) appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%90%86%E8%B2%A1/%E6%BB%99%E8%B1%90%E8%87%AA%E9%A1%98%E9%86%AB%E4%BF%9D%E5%A5%BD%E5%94%94%E5%A5%BD-2032714/",
+      "pubDate": "2026-08-14 23:24:31",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/hong-kong-health-insurance_2_13678759396a7fa310eb491.jpg",
+      "keywords": [
+        "理財"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "365c600a5588c34787eb4d17e74281f0",
+      "title": "近十年來首次單月失血 Jane Street在AI股大跌中巨虧150億美元",
+      "description": "【彭博】-- 據一位知情人士透露,由於主投人工智能的對沖基金Situational Awareness折戟並拖累整個股票市場的資產價格,Jane",
+      "link": "https://hk.finance.yahoo.com/news/%E8%BF%91%E5%8D%81%E5%B9%B4%E4%BE%86%E9%A6%96%E6%AC%A1%E5%96%AE%E6%9C%88%E5%A4%B1%E8%A1%80-jane-street%E5%9C%A8ai%E8%82%A1%E5%A4%A7%E8%B7%8C%E4%B8%AD%E5%B7%A8%E8%99%A7150%E5%84%84%E7%BE%8E%E5%85%83-230943648.html",
+      "pubDate": "2026-08-14 23:09:43",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "股票市場",
+        "situational awareness",
+        "jane street"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b7814b3dde730aedafe5699035838697",
+      "title": "性罪行改革|哪種推定?如何欺騙?「性自主權」待體現",
+      "description": "【01政策分析】政府提出完善性罪行法例,除了考慮法改會的建議之外,也參考了包括英格蘭及威爾斯、蘇格蘭、加拿大、澳洲、新西蘭等不同司法管轄區",
+      "link": "https://www.hk01.com/%E6%94%BF%E6%83%85/60378896/%E6%80%A7%E7%BD%AA%E8%A1%8C%E6%94%B9%E9%9D%A9-%E5%93%AA%E7%A8%AE%E6%8E%A8%E5%AE%9A-%E5%A6%82%E4%BD%95%E6%AC%BA%E9%A8%99-%E6%80%A7%E8%87%AA%E4%B8%BB%E6%AC%8A-%E5%BE%85%E9%AB%94%E7%8F%BE",
+      "pubDate": "2026-08-14 23:00:56",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260814/1165019663680147456961324.jpeg/6nlssdn4T186Ths7wBaAL7iplzUMBlHdVwzKVlcMylY",
+      "keywords": [
+        "選舉",
+        "特區政府",
+        "議員",
+        "政治",
+        "立法會",
+        "委員會",
+        "內閣",
+        "局長",
+        "高官",
+        "司長",
+        "候任特首",
+        "班子",
+        "撥款",
+        "問責官員",
+        "行政會議",
+        "區議會",
+        "林鄭月娥",
+        "特首"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4d0c2a09291f8bb58e51ffd622f4700b",
+      "title": "輔警畢業|執業大律師又做執法者 形容是一個換位思考機會",
+      "description": "去年獲取錄的輔警近期畢業,其中一位畢業生是執業大律師邱紫君。她有一位做了20多年輔警的朋友,對方經常跟她分享當輔警的經歷,加上她小時候有加",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60379402/%E8%BC%94%E8%AD%A6%E7%95%A2%E6%A5%AD-%E5%9F%B7%E6%A5%AD%E5%A4%A7%E5%BE%8B%E5%B8%AB%E5%8F%88%E5%81%9A%E5%9F%B7%E6%B3%95%E8%80%85-%E5%BD%A2%E5%AE%B9%E6%98%AF%E4%B8%80%E5%80%8B%E6%8F%9B%E4%BD%8D%E6%80%9D%E8%80%83%E6%A9%9F%E6%9C%83",
+      "pubDate": "2026-08-14 23:00:53",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164671549341437952643509.jpeg/013oXZM5InzSlAI-BwrUT2Ms8Zjvs2Ht1Cye9_Esnvc",
+      "keywords": [
+        "新聞",
+        "hk01",
+        "國際新聞",
+        "港聞",
+        "即時新聞",
+        "頭條新聞",
+        "香港新聞",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ee689b794493916ec87f196a02648dcc",
+      "title": "iPhone 18傳爆外觀大改款 改橫向鏡頭模組 8款馬卡龍新色掀熱議",
+      "description": "iPhone 18標準版這次如果真按網傳方案量產,背面會迎來近幾年最明顯的一次變化。沿用多代的左上角豎向雙鏡頭被取消,兩顆鏡頭被放進一塊橫向矩形相",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60379703/iphone-18%E5%82%B3%E7%88%86%E5%A4%96%E8%A7%80%E5%A4%A7%E6%94%B9%E6%AC%BE-%E6%94%B9%E6%A9%AB%E5%90%91%E9%8F%A1%E9%A0%AD%E6%A8%A1%E7%B5%84-8%E6%AC%BE%E9%A6%AC%E5%8D%A1%E9%BE%8D%E6%96%B0%E8%89%B2%E6%8E%80%E7%86%B1%E8%AD%B0",
+      "pubDate": "2026-08-14 23:00:35",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260814/1164963633814310912465038.jpeg/7JhUiGerDxv1MV32YZ3_d4U0Fk7khZVx5gsZOOYLGTg",
+      "keywords": [
+        "手遊",
+        "科技",
+        "ios",
+        "潮物",
+        "動漫",
+        "facebook",
+        "apple",
+        "app",
+        "tesla",
+        "航拍",
+        "android",
+        "香港01"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bdede01c7757ee06629cd1286aafb8bc",
+      "title": "上午06時40分 天文台特別天氣提示:天文台發出雷暴警告提醒市民注意天氣變化",
+      "description": "天文台於2026年8月15日早上6時40分發出雷暴警告,珠江口一帶持續有雷雨區發展,預料未來兩至三小時本港部分地區雨勢較大並伴隨狂風雷暴。市民應密切留意天氣情況,避免在雷暴期間進行戶外活動。 雷暴可能引致突如其來的強風及閃電,對人身安全構成威脅。建議市民遠離高地及樹木,並避免使用金屬物品。此外,駕駛人士需注意道路濕滑及能見度下降,減速行駛以確保安全。 天文台將持續監察天氣變化,並適時更新相關警告。市民可透過天文台網站或手機應用程式獲取最新資訊,確保安全。 The post 上午06時40分 天文台特別天氣提示:天文台發出雷暴警告提醒市民注意天氣變化 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%94%9F%E6%B4%BB/%E5%A4%A9%E6%96%87%E5%8F%B0-%E7%89%B9%E5%88%A5%E5%A4%A9%E6%B0%A3%E6%8F%90%E7%A4%BA-%E9%9B%B7%E6%9A%B4%E8%AD%A6%E5%91%8A-aplt2-35-2032705/",
+      "pubDate": "2026-08-14 23:00:32",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2025/08/6102915770909576456_12072579806895dc3ce6cae.jpg",
+      "keywords": [
+        "生活",
+        "天文台",
+        "雷暴警告",
+        "特別天氣提示"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4e9c6c72eeac726245fc155811d4f4e6",
+      "title": "項明生炒股債曾蝕三球 為慳錢瞓墳場 勸年青人棄港樓|同你搵錢",
+      "description": "《香港01》全新理財節目《同你搵錢》,教你理財貼士,解決生活中遇到的理財問題和陷阱,拒絕做「水魚」,慳到錢之餘,還有錢落袋。首集邀請到旅遊",
+      "link": "https://www.hk01.com/%E5%B0%88%E9%A1%8C%E4%BA%BA%E8%A8%AA/60378599/%E9%A0%85%E6%98%8E%E7%94%9F%E7%82%92%E8%82%A1%E5%82%B5%E6%9B%BE%E8%9D%95%E4%B8%89%E7%90%83-%E7%82%BA%E6%85%B3%E9%8C%A2%E7%9E%93%E5%A2%B3%E5%A0%B4-%E5%8B%B8%E5%B9%B4%E9%9D%92%E4%BA%BA%E6%A3%84%E6%B8%AF%E6%A8%93-%E5%90%8C%E4%BD%A0%E6%90%B5%E9%8C%A2",
+      "pubDate": "2026-08-14 23:00:31",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260812/1164258307754430464598274.jpeg/2H-cOe5rbCf00ehKIQHXpqXifZnnqKTp4L0EueC9BLk",
+      "keywords": [
+        "恆生指數",
+        "新聞",
+        "股票",
+        "財經網",
+        "hk01",
+        "財經台",
+        "地產消息",
+        "財經透視",
+        "經濟",
+        "港股",
+        "財經新聞",
+        "香港新聞",
+        "香港01",
+        "a股"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cd5162c6813b212f08373b7ad622fdc9",
+      "title": "AI人工智能時代 為何仍然看好香港樓市?",
+      "description": "踏入AI時代,難免有人擔憂科技會改變行業現狀和就業形態。就如醫療行業,市場憂慮機器人會取代醫生看病和施手術,然而每年高考狀元選擇大學就讀的",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60380110/ai%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%99%82%E4%BB%A3-%E7%82%BA%E4%BD%95%E4%BB%8D%E7%84%B6%E7%9C%8B%E5%A5%BD%E9%A6%99%E6%B8%AF%E6%A8%93%E5%B8%82",
+      "pubDate": "2026-08-14 23:00:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260814/1165006210269712384423861.jpeg/kh0-UVhASegAmrwzFNW4UF-Eia1clfI4w7rR9cO60fU",
+      "keywords": [
+        "恆生指數",
+        "新聞",
+        "股票",
+        "財經網",
+        "hk01",
+        "財經台",
+        "地產消息",
+        "財經透視",
+        "經濟",
+        "港股",
+        "財經新聞",
+        "香港新聞",
+        "香港01",
+        "a股"
+      ],
+      "category": [
+        "science"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3e3c3821be8563d35d1935430798e844",
+      "title": "輔警畢業|政府統計師挑戰離開舒適圈 文員學揸槍要跨過心理關口",
+      "description": "去年獲取錄的輔警近期畢業,其中一位畢業生是政府統計師吳海俊。他平時的工作對着電腦螢幕、與數字打交道,所以決定投考輔警,給自己離開舒適圈的挑",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60379446/%E8%BC%94%E8%AD%A6%E7%95%A2%E6%A5%AD-%E6%94%BF%E5%BA%9C%E7%B5%B1%E8%A8%88%E5%B8%AB%E6%8C%91%E6%88%B0%E9%9B%A2%E9%96%8B%E8%88%92%E9%81%A9%E5%9C%88-%E6%96%87%E5%93%A1%E5%AD%B8%E6%8F%B8%E6%A7%8D%E8%A6%81%E8%B7%A8%E9%81%8E%E5%BF%83%E7%90%86%E9%97%9C%E5%8F%A3",
+      "pubDate": "2026-08-14 23:00:22",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260813/1164670055737200640856134.jpeg/FmFBNfzcZXmmPulCM3yxMffdQvJ3-o0erdJwM4TScDM",
+      "keywords": [
+        "新聞",
+        "hk01",
+        "國際新聞",
+        "港聞",
+        "即時新聞",
+        "頭條新聞",
+        "香港新聞",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1346b377765ea0db7872809c11ecd569",
+      "title": "林家謙自爆「間歇性失蹤」令Tyson Yoshi搵唔到人 回應姚焯菲邀約:為怕食檸檬少主動搵人合作",
+      "description": "《SHINE ON!保良慈善演唱會》昨晚在紅館舉行,文化體育及旅遊局局長羅淑佩與保良局主席譚毓楨、節目籌委會主席暨保良局副主席何猷亨、保良局副主席郭浩泉及總理嚴子諭等為節目擔任主禮嘉賓。 TWINS 林家謙 魏浚笙群星拱照 演唱會陣容鼎盛包括:TWINS、林家謙、馮允謙(Jay)、李幸倪(Gin)、湯令山(Gareth.T )、Tyson Yoshi、魏浚笙(Jeffrey)、關心妍、王灝兒(JW",
+      "link": "https://www.stheadline.com/film-drama/3604584/%E6%9E%97%E5%AE%B6%E8%AC%99%E8%87%AA%E7%88%86%E9%96%93%E6%AD%87%E6%80%A7%E5%A4%B1%E8%B9%A4%E4%BB%A4Tyson-Yoshi%E6%90%B5%E5%94%94%E5%88%B0%E4%BA%BA-%E5%9B%9E%E6%87%89%E5%A7%9A%E7%84%AF%E8%8F%B2%E9%82%80%E7%B4%84%E7%82%BA%E6%80%95%E9%A3%9F%E6%AA%B8%E6%AA%AC%E5%B0%91%E4%B8%BB%E5%8B%95%E6%90%B5%E4%BA%BA%E5%90%88%E4%BD%9C",
+      "pubDate": "2026-08-14 23:00:13",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ll/sthl_square/9228d52d063ff0d5922166972478a0e5/2026-08/cats4_3.jpg",
+      "keywords": [
+        "twins",
+        "tysonyoshi",
+        "林家謙",
+        "魏浚笙",
+        "中年好聲音"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4b757d962db5cc5bd2e6db55f8694b13",
+      "title": "《牛來》—國產動畫10日票房僅¥7,705 網民諷「聽過的人已後悔」",
+      "description": "2026年內地暑期檔電影競爭激烈,有《功夫女足》、《八仙!》及《歡迎來龍餐館》等多部作品,惟一部名為《牛來》的國產動畫電影因製作極度粗糙,意外引發網絡熱議。該影片於8月5日上映,累計票房僅得7千多元(人民幣‧下同),創下2026年內地院線動畫電影最低紀錄。電影引來不少網民出於獵奇心理圍觀,甚至以反諷方式給予五星好評。 相關新聞:反戰新片《歡迎來龍餐館》今上映票房口碑大爆 出品方股票漲停 放映場次斷",
+      "link": "https://www.stheadline.com/china-topics/3604406/%E7%89%9B%E4%BE%86%E5%9C%8B%E7%94%A2%E5%8B%95%E7%95%AB10%E6%97%A5%E7%A5%A8%E6%88%BF%E5%83%857705-%E7%B6%B2%E6%B0%91%E8%AB%B7%E8%81%BD%E9%81%8E%E7%9A%84%E4%BA%BA%E5%B7%B2%E5%BE%8C%E6%82%94",
+      "pubDate": "2026-08-14 23:00:10",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d50e3248d5b67acd8ba5c23295e36f9f/2026-08/20260814_news__.png",
+      "keywords": [
+        "牛來",
+        "電影"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "683b59d2b085c8a301990165aa429f70",
@@ -151,6 +615,24 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "e5874dcc788ff3d12ec44130539effc8",
+      "title": "簡街因科技股拋售承受150億美元損失",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E7%B0%A1%E8%A1%97%E5%9B%A0%E7%A7%91%E6%8A%80%E8%82%A1%E6%8B%8B%E5%94%AE%E6%89%BF%E5%8F%97150%E5%84%84%E7%BE%8E%E5%85%83%E6%90%8D%E5%A4%B1-225108220.html",
+      "pubDate": "2026-08-14 22:51:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM37199_M.jpg",
+      "keywords": [
+        "人工智能",
+        "對沖基金"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "a0592797006ceefbe62d7ce1af4083b5",
@@ -2731,24 +3213,6 @@
       "region": "hk"
     },
     {
-      "id": "466410397dd3b02e8bd21dab2522199c",
-      "title": "香港投資|2020年引入 港府稱吸引資金到港有限合夥基金突破2000個",
-      "description": "據財經事務及庫務局(財庫局)社交媒體發文指出,本港有限合夥基金(LPF)制度反應極為熱烈,最新登記數目已正式突...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%A6%99%E6%B8%AF%E6%8A%95%E8%B3%87-2020%E5%B9%B4%E5%BC%95%E5%85%A5-%E6%B8%AF%E5%BA%9C%E7%A8%B1%E5%90%B8%E5%BC%95%E8%B3%87%E9%87%91%E5%88%B0%E6%B8%AF%E6%9C%89%E9%99%90%E5%90%88%E5%A4%A5%E5%9F%BA%E9%87%91%E7%AA%81%E7%A0%B42000%E5%80%8B-050000889.html",
-      "pubDate": "2026-08-14 05:00:00",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bossmind_356/0f00949e3714cd19cba1b2e623223ce4.jpg",
-      "keywords": [
-        "有限合夥基金",
-        "財經事務及庫務局",
-        "財庫局"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "874d4e0d6f43e53580aa52537bc85956",
       "title": "韓國女團CLC出道11周年 巡演香港站大派福利",
       "description": "韓國人氣女團CLC將於2026年8月29日晚上7時假西九文化區安盛竹翠公園AXA Wonderland舉行《CLC 11th Anniversary Concert : After All in Hong Kong》演唱會。作為CLC出道11周年巡演的重要一站,久違香港的完整體成員將再度重臨,與香港CHESHIRE共度意義非凡的重聚時刻。",
@@ -5278,25 +5742,6 @@
       "pinned": true
     },
     {
-      "id": "815bd150f1bd767b7c069682c471f418",
-      "title": "黃金跌破4,400美元,聯儲局前景與霍爾木茲海峽談判壓制漲勢",
-      "description": "Investing.com - 黃金價格週五小幅回落,從十週高位撤退,投資者正在權衡聯儲局較為溫和的加息前景,以及霍爾木茲海峽重開談判的不確定性。",
-      "link": "https://hk.finance.yahoo.com/news/%E9%BB%83%E9%87%91%E8%B7%8C%E7%A0%B44-400%E7%BE%8E%E5%85%83-%E8%81%AF%E5%84%B2%E5%B1%80%E5%89%8D%E6%99%AF%E8%88%87%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%AB%87%E5%88%A4%E5%A3%93%E5%88%B6%E6%BC%B2%E5%8B%A2-015940884.html",
-      "pubDate": "2026-08-14 01:59:40",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM440N3_M.jpg",
-      "keywords": [
-        "聯儲局",
-        "霍爾木茲海峽",
-        "通脹"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "00f8515e80e65ecb8c15b318e87b8165",
       "title": "中芯國際(00981)第三季收入料按季增2-4%毛利率續升 最多升6%",
       "description": "<匯港通訊> 中芯國際(00981)公布今年第二季銷售收入約30億美元,按季升約20%%,同比升約36%,今年第二季毛利7.606億美元,按季升51%,同心升約69%,今年第二季毛利率為25.3%,高於今年首季的20.1%及去年同期的20.4%。對於今年第三季指引,預期國際財務報告準則下的指引為,季度收入按季增長...",
@@ -6652,6 +7097,23 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "33a28d52e50339a40ce64caa3728d98d",
+      "title": "港產加密大亨葉俊德離奇墜樓亡!創辦Quantum Fintech創辦由60美元比特幣至24億身家 寫下加密界資產神話",
+      "description": "加密貨幣市場一向盛產暴富故事,但財富愈透明,風險亦愈貼身。香港出生、Quantum Fintech Group創辦人Harry Yeh葉俊德近日在巴拉圭豪宅墜亡,令市場再次關注加密富豪的人身安全、私鑰保管及跨境資產風險。 港產加密貨幣富豪巴拉圭30樓墜亡 巴拉圭警方正調查一宗涉及香港出生加密貨幣投資人的死亡案件。當地傳媒報道,Quantum Fintech Group創辦人兼管理合夥人Harry Chun Tak Yeh葉俊德,於8月7日凌晨約4時30分,被發現倒臥於首都亞松森Trinidad區豪宅項目Jade Park樓下。警方初步相信,他由30樓單位高處墜下,案件仍在調查階段,檢方未有就死因作出定論。 報道指,保安員聽到巨響後到場查看,其後通知警方。調查人員進入相信與葉俊德有關的30樓單位後,發現大門打開,室內物品有被翻動的痕跡。當局亦接觸到其29歲巴西籍伴侶Isadora de Proenca Braganholo Carvalho,她向警方表示事前不知情,暫時未有被控。檢方表示,案件仍保留多個調查方向,法醫報告、閉路電視片段及現場鑑證結果,將會是釐清案情的關鍵。 據官方介紹,葉俊德是Quantum Fintech Group(QFG)董事總經理,早於2013年已投身加密貨幣市場,當時比特幣價格約60美元,屬早期入場者之一。QFG主要從事加密貨幣、區塊鏈及數碼資產投資管理,據報他與QFG及合作夥伴管理的基金及資產規模超過20億美元。.. The post 港產加密大亨葉俊德離奇墜樓亡!創辦Quantum Fintech創辦由60美元比特幣至24億身家 寫下加密界資產神話 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E8%99%9B%E6%93%AC%E6%8A%95%E8%B3%87/%E6%B8%AF%E7%94%A2%E5%8A%A0%E5%AF%86%E5%A4%A7%E4%BA%A8-%E8%91%89%E4%BF%8A%E5%BE%B7-%E9%9B%A2%E5%A5%87%E5%A2%9C%E6%A8%93-%E6%AF%94%E7%89%B9%E5%B9%A3-ed01-2032319/",
+      "pubDate": "2026-08-13 22:54:40",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/0802-app-carousel-banners-27_4804038476a7e4a1a5db86.png",
+      "keywords": [
+        "虛擬投資"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "9567ff0b70a83556c5faf244607e71c8",
@@ -77947,6 +78409,6 @@
       "pinned": true
     }
   ],
-  "total": 4026,
-  "last_updated": "2026-08-15T19:02:29.702784"
+  "total": 4048,
+  "last_updated": "2026-08-15T20:02:32.832478"
 }
