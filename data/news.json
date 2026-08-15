@@ -1,15 +1,17 @@
 {
   "articles": [
     {
-      "id": "14245aab992deb3b618a1906d0a79bfd",
-      "title": "財經|傳SHEIN最快下周招股 擬8月28日左右港上市",
-      "description": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social interaction and mortgage rates that help you manage your financial life.",
-      "link": "https://hk.finance.yahoo.com/news/%E8%B2%A1%E7%B6%93-%E5%82%B3shein%E6%9C%80%E5%BF%AB%E4%B8%8B%E5%91%A8%E6%8B%9B%E8%82%A1-%E6%93%AC8%E6%9C%8828%E6%97%A5%E5%B7%A6%E5%8F%B3%E6%B8%AF%E4%B8%8A%E5%B8%82-045904870.html",
-      "pubDate": "2026-08-13 04:59:04",
+      "id": "2d5a2004a97ea41afc1d7c67810b9c6c",
+      "title": "Stripe與Advent出價每股60.50美元競購PayPal,談判持續推進",
+      "description": "受此消息提振,PayPal(納斯達克:PYPL)股價於週五下午上漲約1.7%。事實上,該股早已展開一輪強勁漲勢——僅7月份便累計飆升32.5%,成為當月標普500表現第三佳的個股,主要動力來自此前市場上流傳的收購傳聞。",
+      "link": "https://hk.finance.yahoo.com/news/stripe%E8%88%87advent%E5%87%BA%E5%83%B9%E6%AF%8F%E8%82%A160-50%E7%BE%8E%E5%85%83%E7%AB%B6%E8%B3%BCpaypal-%E8%AB%87%E5%88%A4%E6%8C%81%E7%BA%8C%E6%8E%A8%E9%80%B2-205741030.html",
+      "pubDate": "2026-08-14 20:57:41",
       "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/en/fortune_insight_694/dbddec0f78d2a1ab4bc25a6950c04ffb.png",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEDAF0YT_M.jpg",
       "keywords": [
-        "shein"
+        "stripe",
+        "advent international",
+        "paypal"
       ],
       "category": [
         "business"
@@ -57,21 +59,221 @@
       "pinned": true
     },
     {
-      "id": "c5bc965d16ecab40556f8a4f603a308d",
-      "title": "8月夜期收市報25247點 升153點",
-      "description": "<匯港通訊> 8月夜期期指收市報25247點,升153點,高水130點,成交9114張;9月夜期期指報25173點,升147點,高水56點,成交153張。",
-      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125247%E9%BB%9E-%E5%8D%87153%E9%BB%9E-190500075.html",
-      "pubDate": "2026-08-14 19:05:00",
+      "id": "14245aab992deb3b618a1906d0a79bfd",
+      "title": "財經|傳SHEIN最快下周招股 擬8月28日左右港上市",
+      "description": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social interaction and mortgage rates that help you manage your financial life.",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%A1%E7%B6%93-%E5%82%B3shein%E6%9C%80%E5%BF%AB%E4%B8%8B%E5%91%A8%E6%8B%9B%E8%82%A1-%E6%93%AC8%E6%9C%8828%E6%97%A5%E5%B7%A6%E5%8F%B3%E6%B8%AF%E4%B8%8A%E5%B8%82-045904870.html",
+      "pubDate": "2026-08-13 04:59:04",
       "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "image_url": "https://media.zenfs.com/en/fortune_insight_694/dbddec0f78d2a1ab4bc25a6950c04ffb.png",
       "keywords": [
-        "<匯港通訊>"
+        "shein"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "6e3ec4b1fb35de17dcf7e2f710f8d6e0",
+      "title": "派拉蒙與華納兄弟探索合併獲全球監管批准,僅剩美國州級訴訟待解",
+      "description": "Investing.com — 派拉蒙天空舞(Paramount Skydance)週五宣佈,已取得其與華納兄弟探索公司(Warner Bros. Discovery)合併協議所需的全部監管批准,歷經八個月、橫跨68個國家的審查後,這筆交易的最後一道監管障礙正式清除。",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B4%BE%E6%8B%89%E8%92%99%E8%88%87%E8%8F%AF%E7%B4%8D%E5%85%84%E5%BC%9F%E6%8E%A2%E7%B4%A2%E5%90%88%E4%BD%B5%E7%8D%B2%E5%85%A8%E7%90%83%E7%9B%A3%E7%AE%A1%E6%89%B9%E5%87%86-%E5%83%85%E5%89%A9%E7%BE%8E%E5%9C%8B%E5%B7%9E%E7%B4%9A%E8%A8%B4%E8%A8%9F%E5%BE%85%E8%A7%A3-205945717.html",
+      "pubDate": "2026-08-14 20:59:45",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA5I05A_M.jpg",
+      "keywords": [
+        "派拉蒙",
+        "華納兄弟探索公司"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "97e04c2e021818514820371b7a48bd16",
+      "title": "抖音免費起英文名吸粉 美籍男網紅「零成本約會」情騙逾百內地女子",
+      "description": "內地近日爆出一宗「美國渣男呃飲呃食」風波,一名自稱復旦大學在讀研究生的美籍網紅「王水牛」(Jackson),被多名中國女子接連發文指控情感欺騙,更以「零成本約會」方式令多人懷孕墮胎,事件驚動官媒《環球時報》前總編輯胡錫進親自發聲,在網絡掀起軒然大波。 據了解,這名在抖音平台坐擁約16萬粉絲的美籍男子,長期對外塑造「陽光學霸」人設,不但自稱是復旦大學在讀研究生,更操得一口流利中文,外形討好之餘又經常在復旦校園取景拍攝,甚至曾擔任校園畢業活動的主持人。他同時以「免費為網友起英文名」、「熱愛中國文化」等親民形象吸納粉絲,成功營造出一個熱情、友善又上進的留學生形象,令人防不勝防。 然而,多名女性早前陸續在網絡平台發文,控訴王水牛採用同一套「情騙套路」。據受害者描述,他首先在線上以「免費起英文名」作為篩選手段,主動私信那些在評論區發布自拍的年輕女粉絲,藉此鎖定目標;到了線下約會階段,則實行所謂「零成本約會」,餐飲、出行、住宿等所有開銷全部由女方一力承擔。他還同時與多名女性保持親密關係,而且拒絕採取避孕措施。、 據稱受害女生人數多逾三百人,部分女生意外懷孕後,他只勸說對方墮胎,隨後便直接「拉黑」徹底失聯,有受害者更自述曾兩次墮胎,身心受創。 風波持續發酵後,王水牛迅速將抖音賬號設置為私密、關閉評論區,至今未作任何回應或道歉。胡錫進則引述復旦大學校內人士消息,確認王水牛僅參加過該校為期數月的非學歷中文短期語言進修項目,早已結業離校,根本不存在研究生學籍,所謂名校標籤不過是他抬高自身身價的包裝手段。 事件在網上引起熱議,但令人意外的是,不少網民非但不同情受害者,反而將矛頭指向女方,留言炮轟「不是活該是啥啊?不做安全措施不就是大傻X」、「你情我願的事情,她們憑什麼是受害者?」、「換國男早就一堆人告強姦了」、「這些女生咋想的,就是當談戀愛也要自己拎得清啊,不是你情我願的話請告他強姦」、「為甚麼對外國男性如此不設防」、「目前並沒看出有受害者」。 不過亦有網民力撐受害者,認為「有預謀進行欺騙、逃避責任的人,才是需要被譴責的一方。一味指責受害者,只會讓未來更多遭遇傷害的人不敢發聲。」、「他的錢都是女生給的。他不消費的話,根本發現不了他非法逗留啊!」兩派意見在網上激烈交鋒,令這宗情騙風波的爭議持續升溫。",
+      "link": "https://www.bastillepost.com/hongkong/article/16568533-%E6%8A%96%E9%9F%B3%E5%85%8D%E8%B2%BB%E8%B5%B7%E8%8B%B1%E6%96%87%E5%90%8D%E5%90%B8%E7%B2%89-%E7%BE%8E%E7%B1%8D%E7%94%B7%E7%B6%B2%E7%B4%85%E3%80%8C%E9%9B%B6%E6%88%90%E6%9C%AC%E7%B4%84%E6%9C%83%E3%80%8D",
+      "pubDate": "2026-08-14 20:45:44",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260806_man__source-web-1788.jpg",
+      "keywords": [
+        "兩岸",
+        "網紅",
+        "詐騙",
+        "太極影片"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e77e8ff5731a24d4c06cbc234a08e4c5",
+      "title": "維納斯威廉絲辛辛那提公開賽首圈出局 單打連敗紀錄達13場",
+      "description": "維納斯威廉絲的單打連敗紀錄已達13場。這位七屆大滿貫冠軍周五在辛辛那提公開賽首圈,以兩盤6比2不敵艾米莉安娜艾蘭戈。 46歲的威廉絲獲外卡資格出戰這項WTA 1000賽事。她自2025年7月以來,未嘗贏得任何一場單打比賽。 25歲的哥倫比亞資格賽選手艾蘭戈,世界排名第95位,在林德納網球中心的主場,僅用1小時5分鐘便擊敗威廉絲。 威廉絲在比賽首局便遭破發,之後一直處於劣勢。艾蘭戈五次破發機會中把握了四次,並贏得71%的一發得分。 威廉絲唯一一次破發機會未能把握,一發得分率僅得41%。 艾蘭戈談及早段領先時表示:「這多少紓緩了我的緊張情緒,讓我有一點喘息空間。我認為我做得很好,一直保持專注,盡力讓她多跑動。」 艾蘭戈將在第二圈面對賽事七號種籽、衛冕辛辛那提冠軍伊加施維雅迪。 威廉絲上次贏得單打比賽是去年在華盛頓,當時她擊敗了佩頓史坦絲。 威廉絲表示:「我認為我一直都能控制得分點,但可惜未能如我所願地完成。令人鼓舞的是我能控制擊球,但我必須在最後階段更穩定一點。」她這次是第11次參加這項賽事。 威廉絲將留在辛辛那提,與妹妹莎蓮娜出戰雙打賽事,兩人同樣獲外卡資格。她們上次一同出戰雙打是2022年美國公開賽。 威廉絲姊妹原定在溫布頓出戰雙打,但莎蓮娜受傷。她們將在首圈對陣瑪爾塔科斯秋克及佩頓史坦絲。 賽事的雙打部分將於周日展開。 維納斯威廉絲表示:「我感到興奮,希望我們都能以最佳狀態、保持警覺並準備就緒。我會為此作好準備。」 維納斯亦定於本月稍後時間,與亞歷山大布布利克一同出戰美國公開賽混雙賽事。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16572001-%E7%B6%AD%E7%B4%8D%E6%96%AF%E5%A8%81%E5%BB%89%E7%B5%B2%E8%BE%9B%E8%BE%9B%E9%82%A3%E6%8F%90%E5%85%AC%E9%96%8B%E8%B3%BD%E9%A6%96%E5%9C%88%E5%87%BA%E5%B1%80-%E5%96%AE%E6%89%93%E9%80%A3%E6%95%97%E7%B4%80",
+      "pubDate": "2026-08-14 20:41:22",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/32a5871e7a1fe021b2658253ab4296f9_Toronto_Tennis_83987_FB.jpg",
+      "keywords": [
+        "辛辛那提公開賽",
+        "網球",
+        "單打",
+        "連敗",
+        "體育",
+        "維納斯威廉絲"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "40398057d93b4eab26e3d63d4fd1b4a3",
+      "title": "Jumia與IFC達成5,000萬美元融資協議,CEO稱此舉有助降低盈利路徑風險",
+      "description": "Investing.com - Jumia Technologies AG (NYSE:JMIA) 股價本週走勢平穩。儘管宏觀經濟逆風迫使管理層下調全年交易量目標,但第二季度財報顯示單位經濟效益持續改善,公司亦趁機完成一筆5,000萬美元的融資。",
+      "link": "https://hk.finance.yahoo.com/news/jumia%E4%BB%A55-000%E8%90%AC%E7%BE%8E%E5%85%83ifc%E8%9E%8D%E8%B3%87%E9%99%8D%E4%BD%8E%E7%9B%88%E5%88%A9%E9%A2%A8%E9%9A%AA-ceo%E8%A9%B3%E8%A7%A3%E6%88%B0%E7%95%A5%E5%B8%83%E5%B1%80-204049867.html",
+      "pubDate": "2026-08-14 20:40:49",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA6H0CU_M.jpg",
+      "keywords": [
+        "jumia",
+        "dufay"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "61021695dc139e44bb0d5a740107bb98",
+      "title": "Cirrus擴建大福克斯廠房 應對需求增長",
+      "description": "Cirrus公司今日慶祝其位於北達科他州大福克斯的擴建製造廠房啟用,標誌著公司在卓越製造、安全、品質及長遠發展方面持續投資的重要里程碑。這次耗資數百萬美元的擴建項目,旨在提升產能,優化生產流程,並支援包括最暢銷高性能單引擎活塞飛機SR系列,以及通用航空領域最暢銷噴射機Vision Jet在內的Cirrus產品需求。 專為支援現有及預計的生產率而建,擴建後的廠房實現優化的生產佈局,簡化複合材料部件在整個製造過程中的流動。提升的工作流程將提高製造效率,而額外空間有助於提升自動化能力、設備與業務系統整合,以及工作場所安全。 Cirrus行政總裁Zean Nielsen表示:「這次擴建反映公司持續投資於員工、產品及大福克斯社區。透過增加超3萬平方呎空間、創造新職位,並為團隊成員改善工作環境,公司正為持續增長作好準備。與大福克斯市、北達科他州、北達科他州銀行及北達科他大學建立的緊密夥伴關係,讓公司有信心繼續在此投資,包括將大福克斯定為新TRAC10飛行訓練飛機複合材料的製造地點。」 Cirrus創新及營運總裁Pat Waddick指出:「大福克斯數十年來在Cirrus的增長及製造策略中扮演關鍵角色。公司的成功始於員工及支持性社區。這次投資讓公司能為團隊創造更佳環境,同時擴大支援持續增長所需的產能及能力。」 擁有約500名員工的大福克斯廠房,在Cirrus的製造營運中扮演關鍵角色,生產支援飛機製造的先進複合材料部件。製造、工程、安全與品質保證、數控加工、人力資源及培訓等部門的團隊成員均為廠房的成功作出貢獻,約八成員工專注於直接製造營運。 這次擴建解決對額外製造空間日益增長的需求,隨著Cirrus飛機需求持續上升。擴建亦為廠房提供靈活性,以更好支援創新過程。 這次項目亦反映Cirrus與大福克斯社區之間的緊密夥伴關係。除了Cirrus的投資外,當地合作夥伴的貢獻亦突顯各方對該地區經濟增長及先進製造業的共同承諾。 擴建後的廠房於8月14日正式啟用,進一步鞏固Cirrus的製造網絡,確保公司能妥善應對客戶需求,同時繼續提供每架Cirrus飛機所具備的品質、創新及精湛工藝。 Cirrus是公認的全球私人航空領域領導者,亦是最暢銷SR系列活塞飛機及Vision Jet的製造商,Vision Jet是全球首款單引擎私人噴射機,並曾獲羅伯特·J·科利爾獎。公司於1984年成立,透過Cirrus機身降落傘系統(CAPS®)等創新技術,重新定義航空性能、舒適度及安全性。CAPS®是首個獲美國聯邦航空管理局(FAA)認證,作為飛機標準設備的全機身降落傘安全系統。迄今為止,Cirrus飛機的全球飛行時間超1,900萬小時,超300人因所有Cirrus飛機均配備CAPS作為標準功能而安全返回家人身邊。公司在美國設有七個地點,包括明尼蘇達州德盧斯;北達科他州大福克斯;德州大達拉斯;亞利桑那州大鳳凰城;佛羅里達州大奧蘭多;田納西州諾克斯維爾及密歇根州本頓港。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16571967-cirrus%E6%93%B4%E5%BB%BA%E5%A4%A7%E7%A6%8F%E5%85%8B%E6%96%AF%E5%BB%A0%E6%88%BF-%E6%87%89%E5%B0%8D%E9%9C%80%E6%B1%82%E5%A2%9E%E9%95%B7",
+      "pubDate": "2026-08-14 20:33:26",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/d5263cad4c1e45cfa6a505731b5fb0c9_GFKTeamPhotoEdited_FB.jpg",
+      "keywords": [
+        "cirrus",
+        "產能擴張",
+        "飛機製造",
+        "vision jet",
+        "sr series",
+        "商業事"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "64fe8f18ed02de357945969a87457361",
+      "title": "上訴法院裁定特朗普勝訴 司法部可向性別肯定護理供應商發傳票",
+      "description": "聯邦上訴法院周五裁定,美國總統特朗普旨在終止性別肯定護理的目標並無不當,不能作為撤銷司法部向跨性別青少年醫療服務供應商發出傳票的理由。 司法部去年宣布,已向提供性別肯定護理的醫生及診所發出超過20份傳票,作為調查醫療保健詐騙行動的一部分。聯邦法官已撤銷多份傳票,指這些傳票是旨在恐嚇供應商終止性別肯定護理的不合法行動。 美國第九巡迴上訴法院一個小組以2比1的裁決指出,相關治療的療效及長期風險「不確定」,總統有權使司法部的執法重點與其更廣泛的政策目標保持一致。 法官卡洛斯·比亞撰文指:「每位總統都有執法重點,正如每位總統都有標誌性政策(通常前者是後者的組成部分)。」 比亞是共和黨總統喬治·W·布殊提名的法官,特朗普提名的法官丹尼爾·布雷斯亦同意其意見。他們推翻了撤銷針對遙距醫療服務供應商 QueerDoc 傳票的裁決,將案件發還地區法院考慮其他論點。 根據第九巡迴法院的裁決,該傳票要求 QueerDoc 提供人事檔案、帳單文件、與藥物製造商的通訊,以及獲處方青春期阻斷劑或荷爾蒙治療的病人紀錄等資料。 代表總部設於華盛頓州 QueerDoc 的美國公民自由聯盟律師阿德里安·利維特表示,該聯盟將繼續在地區法院抗辯該傳票。QueerDoc 亦辯稱傳票過於廣泛及繁重。司法部表示,有理由相信該公司可能誤導公眾有關青春期阻斷劑及荷爾蒙的資訊。 利維特在一份聲明中表示:「我們準備繼續捍衛醫療保健最基本原則之一:每位病人享有保密醫療護理的權利。」 他表示,總部設於三藩市的第九巡迴法院是首個就這些傳票發表意見的上訴法院。 特朗普已簽署一份行政命令,將性別定義為僅限男性或女性,且不可改變;另一份行政命令則旨在終止對19歲以下病人提供護理的聯邦資助。後者亦指示司法部「優先調查」任何「可能誤導公眾有關化學及手術閹割長期副作用」的實體,是否違反藥物安全法。 性別肯定護理包括一系列醫療及精神健康服務,以支持個人的性別認同,即使其與出生時被指定的性別不同。這涵蓋輔導、青春期阻斷藥物、產生身體變化的荷爾蒙治療,以及改變胸部及生殖器的手術,儘管這些對未成年人而言較為罕見。 大多數主要醫療團體表示,對於患有性別不安症的人士而言,獲得治療至關重要,並認為性別存在於一個光譜上。 第九巡迴法院多數意見稱,圍繞性別肯定護理的討論是「一場尚未解決的科學辯論」,並表示特朗普政府亦可基於道德或哲學理由,證明其反對該治療的立場。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16571953-%E4%B8%8A%E8%A8%B4%E6%B3%95%E9%99%A2%E8%A3%81%E5%AE%9A%E7%89%B9%E6%9C%97%E6%99%AE%E5%8B%9D%E8%A8%B4-%E5%8F%B8%E6%B3%95%E9%83%A8%E5%8F%AF%E5%90%91%E6%80%A7%E5%88%A5%E8%82%AF%E5%AE%9A%E8%AD%B7%E7%90%86",
+      "pubDate": "2026-08-14 20:25:43",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/187b7bea5f839146cffc45f206e51403_GenderAffirming_Care_978_8_FB.jpg",
+      "keywords": [
+        "性別肯定護理",
+        "美國上訴法院",
+        "特朗普",
+        "司法部",
+        "傳票",
+        "大視野"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "60707aff7cf0809ea5ac499f48daa1ae",
+      "title": "奧運袋鼠跳迷「茵」 紀錄片助還原真相",
+      "description": "【Now Sports】Netflix最新推出的紀錄片系列《Untold》,其中探討了在巴黎奧運得零分而被恥笑的澳洲霹靂舞選手根茵,於那段期間所遭遇的假新聞及網絡欺凌風波。兩年前巴黎奧運的霹靂舞項目,根茵(Rachael Gunn)因其獨特自創的「袋鼠跳」動作,在3個回合的比賽都沒有獲評審垂青,全數「捧蛋」,也因...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%A5%A7%E9%81%8B%E8%A2%8B%E9%BC%A0%E8%B7%B3%E8%BF%B7-%E8%8C%B5-%E7%B4%80%E9%8C%84%E7%89%87%E5%8A%A9%E9%82%84%E5%8E%9F%E7%9C%9F%E7%9B%B8-202348919.html",
+      "pubDate": "2026-08-14 20:23:48",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "紀錄片",
+        "奧運"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "370eef59c6e447c579738f4aa9976f39",
+      "title": "Google 首間海外旗艦店落戶東京表參道 日本手機市場勢力轉變 Android 反超 iPhone",
+      "description": "Google 於 8 月 13 日正式在東京表參道開設「Google Store 表參道」,成為該公司在美國以外的第一家直營店,也是全球第 11 間、規模最大的 Google Store。這間位處東急 Plaza 表參道「Omokado」的三層旗艦店,不僅售賣最新 Pixel 11 系列手機、Nest、Fitbit 及配件,更提供現場維修、線上訂單取貨、AI 體驗空間(包括 Gemini 生成頭像、超解像變焦演示等),被視為 Google 硬件業務全球化的重要一步。 這篇文章 Google 首間海外旗艦店落戶東京表參道 日本手機市場勢力轉變 Android 反超 iPhone 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/google-store-omotesando-japan-android-iphone-share-shift-2026/",
+      "pubDate": "2026-08-14 20:19:51",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/15035816/google-store-omotesando-japan-android-iphone-share-shift-2026-01.jpg",
+      "keywords": [
+        "iphone",
+        "android",
+        "市場佔有率",
+        "google store",
+        "tech",
+        "表參道",
+        "科技新聞"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2d0dad50d51a9ece3696ee267e854c1e",
+      "title": "Wedbush指Sandisk長期目標顯示盈利能力",
+      "description": "Wedbush Securities周五發表報告指,Sandisk(SNDK.US)的長期目標顯示,該行對公司2028財年的預測低估其盈利潛力。 該數據儲存設備製造商於周四投資者日公布2028年至2030年指引,預計收入增長介乎中至高雙位數百分比,經調整毛利率約為80%。 Wedbush表示,Sandisk重申2...",
+      "link": "https://hk.finance.yahoo.com/news/wedbush%E6%8C%87sandisk%E9%95%B7%E6%9C%9F%E7%9B%AE%E6%A8%99%E9%A1%AF%E7%A4%BA%E7%9B%88%E5%88%A9%E8%83%BD%E5%8A%9B-201837669.html",
+      "pubDate": "2026-08-14 20:18:37",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "wedbush",
+        "sandisk",
+        "wedbush securities"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b68c7168233d9ec85f15eb21539426ac",
+      "title": "赫格塞思:美國可能對伊朗實施永久封鎖 加大經濟施壓",
+      "description": "美國警告可能對伊朗實施永久性的海上封鎖,並加大對德黑蘭政府的經濟施壓。目前中東緊張局勢加劇,美伊停火談判陷入僵局,全球石油供應下降。美國戰",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380186/%E8%B5%AB%E6%A0%BC%E5%A1%9E%E6%80%9D-%E7%BE%8E%E5%9C%8B%E5%8F%AF%E8%83%BD%E5%B0%8D%E4%BC%8A%E6%9C%97%E5%AF%A6%E6%96%BD%E6%B0%B8%E4%B9%85%E5%B0%81%E9%8E%96-%E5%8A%A0%E5%A4%A7%E7%B6%93%E6%BF%9F%E6%96%BD%E5%A3%93",
+      "pubDate": "2026-08-14 20:01:35",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260722/1156618998113112064532980.jpeg/eifAb2aZitvhXINOFrJt7037gn-ZDC4hfXZ7xH12e8Q",
+      "keywords": [
+        "新聞",
+        "國際",
+        "世界新聞",
+        "hk01",
+        "國際新聞",
+        "環球",
+        "香港01"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "76163f392f14a33e4ba4cfc2ea859732",
@@ -263,6 +465,23 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "c5bc965d16ecab40556f8a4f603a308d",
+      "title": "8月夜期收市報25247點 升153點",
+      "description": "<匯港通訊> 8月夜期期指收市報25247點,升153點,高水130點,成交9114張;9月夜期期指報25173點,升147點,高水56點,成交153張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125247%E9%BB%9E-%E5%8D%87153%E9%BB%9E-190500075.html",
+      "pubDate": "2026-08-14 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊>"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "61fdae1d6e8660a5ddd1e1bdfd10ada0",
@@ -77173,6 +77392,6 @@
       "pinned": true
     }
   ],
-  "total": 3984,
-  "last_updated": "2026-08-15T16:02:11.753541"
+  "total": 3995,
+  "last_updated": "2026-08-15T17:02:10.509774"
 }
