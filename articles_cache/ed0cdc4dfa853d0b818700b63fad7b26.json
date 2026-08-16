@@ -1,0 +1,10 @@
+{
+  "id": "ed0cdc4dfa853d0b818700b63fad7b26",
+  "title": "PS5 Pro 畫質再進化 PSSR 2 低解像度升頻更穩定",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/16/ps5-pro-pssr2-upgrade/game-channel/",
+  "rewritten_title": "Sony公佈PSSR 2技術細節 改用減法設計提升畫質穩定性",
+  "rewritten": "Sony喺SIGGRAPH 2026公開新版PlayStation Spectral Super Resolution（PSSR 2）技術細節。新版本改用「減法」設計思路，將部分影像重建工作交返傳統圖像處理流程，令AI神經網絡工作範圍收窄，主要負責模式識別同決策。呢個改動令大部分神經網絡運算可以喺540p或以下低解像度進行，大幅減少GPU運算時間同記憶體使用量。同時，新版本加入橢圓高斯濾波器，改善…",
+  "status": "done",
+  "fetched_at": "2026-08-17T01:06:18"
+}
