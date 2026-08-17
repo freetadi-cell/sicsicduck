@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17T08:31:49.695459+08:00",
+  "last_updated": "2026-08-17T08:56:16.708808+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1633,20 +1633,16 @@
       "logo_color": "#00B4D8",
       "hkd": {
         "3m": {
-          "general": {
-            "rate": 0.51,
-            "min_deposit": 0,
-            "note": "定期存款",
-            "source": "hket"
-          }
+          "rate": 0.51,
+          "min_deposit": 1,
+          "note": "眾安銀行定期存款",
+          "source": "bank"
         },
         "4m": {
-          "general": {
-            "rate": 0.61,
-            "min_deposit": 0,
-            "note": "定期存款",
-            "source": "hket"
-          }
+          "rate": 0.61,
+          "min_deposit": 1,
+          "note": "眾安銀行定期存款",
+          "source": "bank"
         },
         "6m": {
           "general": {
@@ -1657,12 +1653,10 @@
           }
         },
         "12m": {
-          "general": {
-            "rate": 2.01,
-            "min_deposit": 0,
-            "note": "定期存款",
-            "source": "hket"
-          }
+          "rate": 2.01,
+          "min_deposit": 1,
+          "note": "眾安銀行定期存款",
+          "source": "bank"
         }
       },
       "usd": {
