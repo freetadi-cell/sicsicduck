@@ -1,6 +1,39 @@
 {
   "articles": [
     {
+      "id": "84de0f39aacc44ba7b0ee11e96eed92d",
+      "title": "《大行》里昂升中芯國際(00981.HK)目標價至97.5元 第三季指引勝市場預期",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E9%87%8C%E6%98%82%E5%8D%87%E4%B8%AD%E8%8A%AF%E5%9C%8B%E9%9A%9B-00981-hk-%E7%9B%AE%E6%A8%99%E5%83%B9%E8%87%B397-015846082.html",
+      "pubDate": "2026-08-17 01:58:46",
+      "source_name": "Yahoo Finance",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "4b9db64100e32a48b4a163fc1c6c8296",
+      "title": "中東產油國借「暗航」持續出口原油 幫助抑制全球油價漲勢",
+      "description": "35億桶原油,並於上周再次啟動新一輪銷售。不過,在戰爭環境下大規模出口原油絕非易事。熟悉霍爾木茲海峽運輸情況的人士表示,實際上發生的海上事件遠多於公開披露的數量,其中既包括針對商船的襲擊,也包括西方軍隊為保護過境貨船而對騷擾者船隻採取的防禦行動。這些情況提醒人們,將全球能源價格維持在相對低位並非沒有代價。多名海員...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E6%9D%B1%E7%94%A2%E6%B2%B9%E5%9C%8B%E5%80%9F-%E6%9A%97%E8%88%AA-%E6%8C%81%E7%BA%8C%E5%87%BA%E5%8F%A3%E5%8E%9F%E6%B2%B9-%E5%B9%AB%E5%8A%A9%E6%8A%91%E5%88%B6%E5%85%A8%E7%90%83%E6%B2%B9%E5%83%B9%E6%BC%B2%E5%8B%A2-015520644.html",
+      "pubDate": "2026-08-17 01:55:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/bf4aba375abe0d1e263fa14c0e3f81eb.jpg",
+      "keywords": [
+        "原油",
+        "霍爾木茲海峽"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "00f2ecb213b9e4c898ebdb44671a6a06",
       "title": "阿里(09988.HK)千問過去六個月全球下載量逾30億次 超越Meta及Alphabet",
       "description": "開源AI平台Hugging Face最新報告顯示,阿里巴巴(09988.HK)旗下AI模型千問(Qwen)在過去六個月內,全球累計下載量已超過30億次,超越Meta(META.US)、Alphabet(GOOGL.US)以及其中國同業,成為全球第一的人工智能模型。 阿里巴巴表示,旗下Qwen已開源超過460個模型...",
@@ -12,23 +45,6 @@
         "qwen",
         "阿里巴巴",
         "hugging face"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "8b2d966ced69e52710c1ed1aa7e343ac",
-      "title": "【企業盈喜】壁仞科技(06082)料中期虧損顯著收窄至3.2億人幣,收入升最多21倍",
-      "description": "《經濟通通訊社17日專訊》壁仞科技(06082)發盈利預告,預期截至2026年6 月30日止六個月,虧損及公司擁有人應佔虧損約3.2億元(人民幣.下同)至4億元,較去 年同期虧損16億元大幅收窄約75%至80%;經調整期內虧損則料介乎2.9億元至3.6 億元,按年收窄約35%至47%。 預計期內,收入約11.5億元至13億元,按年大幅增長約18.5倍至21.1倍。公 司指出,收入高速",
-      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360817167",
-      "pubDate": "2026-08-17 00:00:00",
-      "source_name": "Etnet",
-      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
-      "keywords": [
-        "latest"
       ],
       "category": [
         "business"
@@ -55,24 +71,701 @@
       "pinned": true
     },
     {
-      "id": "4ee493d8c2918693e013a84c22b2c780",
-      "title": "特朗普突下令縮減美韓軍演規模 稱與金正恩關係好 指南韓拒對付伊朗",
-      "description": "美國總統特朗普突然下令縮減與南韓聯合軍演規模,表明與北韓領袖金正恩關係非常好,對於美國參加與南韓的聯合軍事演習「並不滿意」,指出所費不菲,而且恐向北韓傳遞錯誤訊號,因此決定縮減於周一展開、旨在阻嚇北韓的「乙支自由護盾」聯合軍演的規模。特朗普又提到,他最近要求南韓與美國一起推動伊朗無核化,但遭到韓方拒絕,似暗示這是縮減軍演規模的原因之一。 特朗普周日在其社交平台Truth Social平台發文說:「",
-      "link": "https://www.stheadline.com/realtime-world/3605093/%E7%89%B9%E6%9C%97%E6%99%AE%E7%AA%81%E4%B8%8B%E4%BB%A4%E7%B8%AE%E6%B8%9B%E7%BE%8E%E9%9F%93%E8%BB%8D%E6%BC%94%E8%A6%8F%E6%A8%A1-%E7%A8%B1%E8%88%87%E9%87%91%E6%AD%A3%E6%81%A9%E9%97%9C%E4%BF%82%E5%A5%BD-%E6%8C%87%E5%8D%97%E9%9F%93%E6%8B%92%E5%B0%8D%E4%BB%98%E4%BC%8A%E6%9C%97",
-      "pubDate": "2026-08-17 00:40:01",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0514729a65f048154ca1c49f24ba5cb5/2026-08/a1_0_24.jpg",
+      "id": "75befbbb27b04509d8aa58f743d59d4a",
+      "title": "財律指揮|轉型與聯想相似 聯股價先開車 戴爾有望跟上|曲鳴",
+      "description": "上周中資科網股的業績幾乎全炒,即使騰訊公佈不錯的收入或盈利增長超預期,但資本開支引起市場憂慮,結果騰訊股價績後...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%A1%E5%BE%8B%E6%8C%87%E6%8F%AE-%E8%BD%89%E5%9E%8B%E8%88%87%E8%81%AF%E6%83%B3%E7%9B%B8%E4%BC%BC-%E8%81%AF%E8%82%A1%E5%83%B9%E5%85%88%E9%96%8B%E8%BB%8A-%E6%88%B4%E7%88%BE%E6%9C%89%E6%9C%9B%E8%B7%9F%E4%B8%8A-%E6%9B%B2%E9%B3%B4-020000669.html",
+      "pubDate": "2026-08-17 02:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bossmind_356/8ac9b818ba58c61f3d768a91f33921d6.png",
       "keywords": [
-        "美韓軍演",
-        "特朗普",
-        "金正恩"
+        "伺服器",
+        "戴爾"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "39f163b887bf50a1c609ca30611e154b",
+      "title": "秀智、孔曉振「黑衣雙美」合體噴仙氣!韓網:漂亮的人旁邊還是漂亮的人!",
+      "description": "「國民初戀」秀智與「收視女王」孔曉振的「神仙同框」終於來了!為了幫即將上映的新片《慶州殺遊紀》拉抬聲勢,秀智日前專程抽空出席電影試映會,為主演的「前輩姊姊」孔曉振應援,兩大女神合體不僅散發滿滿姊妹情,超強顏值更是讓現場閃光燈停不下來!",
+      "link": "https://www.koreastardaily.com/tc/news/163638",
+      "pubDate": "2026-08-17 02:00:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-17/163638-1062429.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "91a93aec3bab70bb847dd68a951b72b3",
+      "title": "维尔莱茵戏剧性加冕第二个世界冠军,巴纳德伦敦收官战历史性夺魁",
+      "description": "伦敦 2026年8月17日 /美通社/ -- 在8月16日于伦敦上演的赛季收官混战中,保时捷车队车手帕斯卡•维尔莱茵凭借积分优势,成功加冕个人第二个ABB国际汽联电动方程式世界锦标赛车手世界冠军。而DS潘世奇车队的泰勒•巴纳德则在第17回合正赛中力压马恒达车队的尼克•德弗里斯与爱德华多•莫塔拉,收获一场历史性的胜利。 FE史上最年轻分站冠军 -- 泰勒·巴纳德 在8月15日进行的第16回合比赛中,维尔莱茵以完美表现斩获杆位,并将优势转化为关键胜利。这场胜利让这位德国车手在周日决战前,以5分的优势领跑车手积分榜。彼时,仍有三位车手保有理论上争夺总冠军的希望——维尔莱茵、安德雷蒂车队的杰克•丹尼斯与捷豹TCS车队的米奇•埃文斯。 从杆位出发的维尔莱茵在第16回合中执行了无懈可击的策略。当迪格拉西的赛车引发全段黄旗时,这位保时捷车手高效完成进站快充,始终掌控比赛节奏。队友尼科•穆勒在前方与其形成配合,进一步巩固了车队的战术优势。 米奇•埃文斯从第三位发起早期攻势,捷豹TCS车队通过提前激活攻击模式与进站快充调整策略,试图对穆勒实现进站超越。此举迫使维尔莱茵做出回应,然而全场黄旗的时机成功遏制了埃文斯的反击。最终,这位新西兰车手以第三名完赛,在决战前落后维尔莱茵21分。 杰克•丹尼斯是选择在全场黄旗期间进站的车手之一。他将最后一次攻击模式保留至比赛后半段,从第六名边缘一路追进,最终以第二名冲线。对安东尼奥•菲利克斯•达科斯塔与丹•提克图姆的关键超越,使丹尼斯在进入收官战前将分差缩小至5分。达科斯塔则收获第三名,登上领奖台。 第16轮过后,车手与车队世界冠军的悬念被推向第17轮决战,而这场收官战也注定激烈异常。整场比赛中,维尔莱茵在抵御米奇•埃文斯与杰克•丹尼斯的轮番冲击时,总冠军的归属始终在动态变化。 比赛进行到第27圈,维尔莱茵的工程师示意他为速度更快的远景车队车手塞巴斯蒂安•布埃米让车,这一策略性指令瞬间搅乱了场上名次。达科斯塔的挤压动作让丹尼斯在首次激活攻击模式时升至第八位,后者一度登上虚拟积分榜榜首,而维尔莱茵则滑落至第12位。 第31圈,维尔莱茵与远景车队的乔尔•埃里克松在16号弯发生接触,被进一步推向后方。这次事故还导致丹尼斯的赛车遭遇退赛性损伤,直接终结了其争冠希望。捷豹TCS车队的米奇•埃文斯排在第四位前进,但他必须夺冠才能加冕总冠军。随着巴纳德与两位马恒达车手在前方拉开差距,埃文斯始终无法填补所需的积分缺口。 巴纳德精准管理了较晚的攻击模式激活时机,他先是超越莫塔拉升至第二,随后在比赛仅剩两圈时,于最后一个弯道从内线完成对德弗里斯的惊险超越。以22岁零76天的年龄,巴纳德成为FE电动方程式历史上最年轻的分站冠军,为DS潘世奇车队在这场谢幕战中带来胜利。 尽管埃文斯最终以第四名完赛,他获得的积分仍帮助捷豹TCS车队锁定ABB国际汽联电动方程式车队世界冠军。而保时捷车队早前已在东京站提前加冕制造商世界冠军。 维尔莱茵加冕其个人第二个世界冠军 第16回合赛后采访: 保时捷车队车手帕斯卡•维尔莱茵表示:\"今天是完美的一天,杆位加胜利。非常感谢车队。这正是我们开启这个周末所需要的方式:练习赛充满竞争力,排位赛极具优势,两辆赛车占据头排发车。正赛中我们采取了正确的策略——晚进站并随时准备应对突发状况,而全场黄旗确实让我们受益。之后就是把胜利带回家。差距相当大,所以我能够稳稳拿下胜利,这至关重要。一切由最后一场比赛决定,而我们今天表现出色。周日我们会争取复制今天的表现。今天完成了50%的工作,明天才是关键。\" 安德雷蒂车队车手杰克•丹尼斯表示:\"老实说,我对今天自己和车队的执行非常满意。我认为第二已经是上限了。等我终于超过丹•提克图姆之后,后面的比赛相对轻松。我和维尔莱茵在能量管理上非常接近,但尼科•穆勒的减速给我们制造了不少变数。不过我们仍在为冠军而战,这就是我们能做到的。情况本可能完全相反,但我们带回了第二名,完成了漂亮的超车,赛车状态也很好。我只希望周日是一场公平的较量。赢或输,我们以前做到过,而且我一直说没人会记住第二名,所以我会全力以赴去争取总冠军。\" 捷豹TCS车队车手安东尼奥•菲利克斯•达科斯塔表示:\"我们看到了保时捷在玩的把戏,但他们的赛道位置确实允许他们这么做。这未必是我们想看到的场面,我也听别人说过那些小伎俩——但他们确实用了,好吧,算他们厉害。不幸的是米奇•埃文斯在全场黄旗的时机上很不走运。我很幸运,我能利用黄旗进站并保住位置。和丹•提克图姆也有一场不错的缠斗,这次我们比之前公平一些!他还是会防守,但能带回一个领奖台并保持车队冠军悬念,我很高兴。周日将会是充满乐趣且紧张的一天。5分领先不算什么,每支车队两辆赛车都能拿分,积分榜变化可以非常快。我们有速度,他们也有。周日决战的比赛会非常精彩。\" 第17回合赛后采访: 保时捷车队车手帕斯卡•维尔莱茵表示:\"首先,衷心感谢我的整个团队。我们这个周末再次表现卓越,在必须拿出表现的时刻做到了,在压力面前做到了。你不会在压力下崩溃——我们热爱压力,拥抱压力,在压力下变得更强,这太棒了。今晚我们会庆祝并享受这一刻,接下来几天也会如此。我很高兴之后能回去和家人团聚,遗憾的是他们这周末不能在这里,但我父亲和姐姐来了。我非常期待和他们共度时光,然后调整状态,投入GEN4赛车的研发工作,让明年的比赛对他们来说更难对付。\" DS潘世奇车手泰勒•巴纳德表示:\"这是我很久以来第一次哭出来!成为最年轻的分站冠军感觉太棒了,而且是在主场观众面前做到这一切,难以置信。我的全家人也在这里。我现在说不出话来,简直不敢相信。那些超越绝对是孤注一掷的冒险动作。我两次都在最后一个弯道完成超越,而且都是在攻击模式期间,这就是机会主义的、典型的电动方程式战术。说实话,我激动得说不出话来。那大概会是我职业生涯中最紧张的最后一圈。在经历了如此艰难的一个赛季后,车队付出了这么多努力,我们全年都在模拟器上不知疲倦地工作。比赛结果一直不理想,但今天,我觉得整个车队都值得好好休息,真心感谢他们所有人,今天伙计们的表现绝对出色。\" FE电动方程式第12赛季伦敦收官战 FE电动方程式世界锦标赛其他新闻 Paysafe成为远景车队冠名合作伙伴: 赛事周期间,远景车队宣布Paysafe将成为车队冠名合作伙伴,共同打造粉丝互动新模式,将赛车运动、游戏与支付融为一体。车队将以\"Paysafe远景车队\"(Paysafe Envision Racing)的新队名,全速驶入GEN4时代。 DS汽车以历史性传承告别FE: DS汽车在上周末结束了其在ABB国际汽联电动方程式世界锦标赛长达11年的征程。车队以DS E-TENSE FE25赛车的专属金色涂装作为谢幕之作,由马克西米利安•冈特尔与泰勒•巴纳德驾驶,以此纪念其包括两项双料总冠军和18场胜利的辉煌历史。 泰奥•波谢尔签约欧宝GSE车队: 欧宝已签下泰奥•波谢尔(Théo Pourchaire)作为欧宝GSE车队首位车手,出战FE电动方程式世界锦标赛。对于这位22岁的法国车手而言,这标志着他单座赛车生涯迄今为止迈出的最大一步。 Disney+成为FE电动方程式全球流媒体合作伙伴: 该项多年协议中,Disney+与ESPN+将从2026/27赛季起在144个国家和地区直播锦标赛,这标志着FE电动方程式历史上最重要的里程碑之一。 FE电动方程式与森海塞尔达成合作: FE与享誉全球的音频专家森海塞尔达成多年合作,指定其为赛事官方声音提供商。这项合作将全面接入森海塞尔的专业音频解决方案及开创性的AMBEO沉浸式音频技术,利用其专业能力捕捉GEN4时代独特且高性能的声音景观,为全球体育赛事直播与车迷互动树立新标杆。 PIF与FE电动方程式扩展\"驱动力\"教育项目线上平台: 该项目已通过教师教案覆盖92,400名青少年,并通过线下工作坊覆盖1,738名青少年。全新的线上平台将在全球范围内提供互动挑战、问答和游戏内容。 GEN4时代将于十一月在马德里季前测试拉开帷幕: GEN3时代的大幕已然落下,上周的赛季收官战标志着GEN3赛车的最后一次竞技登场。GEN4赛车将在2026/27赛季ABB国际汽联电动方程式世界锦标赛中正式亮相,首秀定于12月18日在吉达举行。GEN4将重新定义赛车运动——拥有600kW的可用功率(相当于超过815匹马力),并在比赛所有阶段配备主动式全轮驱动。 四年征程,终有谢幕。至此,FE电动方程式第12赛季伦敦收官站圆满落幕,GEN3时代在ExCeL展览馆赛道画下最后一道笔触。这座陪伴FE走过多个赛季的标志性舞台,再一次见证了速度、荣耀与历史的交汇,也与GEN3时代一同迎来最终的告别。 2026/27赛季将以21场比赛、13座城市的史上最大规模亮相,三亚站计划于4月17日回归,上海站将于7月10-11日举行。全新全时四驱赛车GEN4将在新赛季中登场,并全新引入E-Prix极速赛(E-PrixUnleashed),全新动态赛制让比赛更加精彩纷呈。 捷豹TCS车队夺得FE车队世界冠军 FE电动方程式第12赛季圆满落幕",
+      "link": "https://www.prnasia.com/story/544187-1.shtml",
+      "pubDate": "2026-08-17 02:00:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "spt",
+        "aut",
+        "trn",
+        "sse"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c0e878f49722cdfc4fdb40f7227dd940",
+      "title": "明匯智庫提出五大政策建議 倡香港五年規劃以北都試點建設「青年發展型城市」",
+      "description": "是次研究由明匯智庫策劃,於今年6至8月進行並獲香港各界青少年活動委員會、香港青年聯會及香港菁英會支持,通過研究如何更好對接國家十五五規劃及香港未来發展需要開展研究,以問卷調查、諮詢會及個案訪談等方式,了解青年在就業、創業、住屋、家庭、北部都會區及大灣區發展等各方面的需要和期望。研究顯示特區政府近年推出的青年措施已建立廣泛政策基礎,而香港首次編制五年規劃,正好提供契機,進一步將不同青年政策由個別措施提升至跨部門、跨年度的中長期發展框架。",
+      "link": "https://www.am730.com.hk/%E5%95%86%E7%A4%BE%E7%86%B1%E8%A9%B1/1047762/%E6%98%8E%E5%8C%AF%E6%99%BA%E5%BA%AB%E6%8F%90%E5%87%BA%E4%BA%94%E5%A4%A7%E6%94%BF%E7%AD%96%E5%BB%BA%E8%AD%B0-%E5%80%A1%E9%A6%99%E6%B8%AF%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83%E4%BB%A5%E5%8C%97%E9%83%BD%E8%A9%A6%E9%BB%9E%E5%BB%BA%E8%A8%AD-%E9%9D%92%E5%B9%B4%E7%99%BC%E5%B1%95%E5%9E%8B%E5%9F%8E%E5%B8%82-",
+      "pubDate": "2026-08-17 02:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1047762/article/1047762/df/01M06PJ58YM7T2JF085YF2YKDX.jpg?updatedAt=1786932249",
+      "keywords": null,
+      "category": [
+        "science",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3d5d5741280e1f785cb61ef9d7969d36",
+      "title": "貓咪飲水機點揀好?一次看清3大材質排名+夏天清潔指南",
+      "description": "想提升貓咪飲水意欲,流動飲水機是不少家庭會考慮的選擇。不過,飲水機並非買回家便可以完全改善貓咪飲水問題。因為水機的材質和衛生程度,都有機會影響貓咪飲水的關鍵。一般來說,飲水機的材質可按「陶瓷、不鏽鋼、高品質塑膠」作優先次序考慮;至於來歷不明、有異味或容易刮花的塑膠款式,則不宜選用。以下編輯整理了3類最值得買的水機選擇給貓奴。",
+      "link": "https://www.am730.com.hk/%E7%94%9F%E6%B4%BB/1047187/%E8%B2%93%E5%92%AA%E9%A3%B2%E6%B0%B4%E6%A9%9F%E9%BB%9E%E6%8F%80%E5%A5%BD-%E4%B8%80%E6%AC%A1%E7%9C%8B%E6%B8%853%E5%A4%A7%E6%9D%90%E8%B3%AA%E6%8E%92%E5%90%8D-%E5%A4%8F%E5%A4%A9%E6%B8%85%E6%BD%94%E6%8C%87%E5%8D%97",
+      "pubDate": "2026-08-17 02:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1047187/article/1047187/df/01M06SN7BWXAB0CAKNX93E58BJ.jpeg?updatedAt=1786934648",
+      "keywords": null,
+      "category": [
+        "health",
+        "environment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "08d1375e3b8bc5604e48d43668fe9f06",
+      "title": "社區盾│阿仙奴全方位輾壓曼城 英超名帥已下定論「槍手一定可以衛冕聯賽」",
+      "description": "周日(17日)英格蘭社區盾,阿仙奴不費吹灰之力以3:0大勝曼城,捧走這個季前錦標。槍手今夏除了保留上季的奪冠班底,更簽入了紐卡素的巴西星級中場般奴古馬雷斯,實力有增無減,前英超名帥柏度從今仗比賽已見到他們比其它競爭對手的實力已高出一截,未開季已斷定槍手可以衛冕英超冠軍。 阿仙奴輕鬆捧走第18個社區盾錦標 阿仙奴今場的控球率雖然只有41%,但共有5次中目標攻門與曼城持平,其中4次更是黃金機會,比藍月",
+      "link": "https://www.stheadline.com/football-news/3605114/%E7%A4%BE%E5%8D%80%E7%9B%BE%E9%98%BF%E4%BB%99%E5%A5%B4%E5%85%A8%E6%96%B9%E4%BD%8D%E8%BC%BE%E5%A3%93%E6%9B%BC%E5%9F%8E-%E8%8B%B1%E8%B6%85%E5%90%8D%E5%B8%A5%E5%B7%B2%E4%B8%8B%E5%AE%9A%E8%AB%96%E6%A7%8D%E6%89%8B%E4%B8%80%E5%AE%9A%E5%8F%AF%E4%BB%A5%E8%A1%9B%E5%86%95%E8%81%AF%E8%B3%BD",
+      "pubDate": "2026-08-17 01:58:05",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/eb6c768c335ca732962ec7b753150bec/2026-08/KF_-_2026-08-17T095727_138.png",
+      "keywords": [
+        "社區盾",
+        "曼城",
+        "阿仙奴",
+        "阿迪達"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "154cf442452262160c645a6c0dc42ec3",
+      "title": "英格蘭社區盾│阿仙奴全方位輾壓曼城 英超名帥已下定論「槍手一定可以衛冕聯賽」",
+      "description": "周日(17日)英格蘭社區盾,阿仙奴不費吹灰之力以3:0大勝曼城,捧走這個季前錦標。槍手今夏除了保留上季的奪冠班底,更簽入了紐卡素的巴西星級中場般奴古馬雷斯,實力有增無減,前英超名帥柏度從今仗比賽已見到他們比其它競爭對手的實力已高出一截,未開季已斷定槍手可以衛冕英超冠軍。 阿仙奴輕鬆捧走第18個社區盾錦標 阿仙奴今場的控球率雖然只有41%,但共有5次中目標攻門與曼城持平,其中4次更是黃金機會,比藍月",
+      "link": "https://www.stheadline.com/football-news/3605114/%E8%8B%B1%E6%A0%BC%E8%98%AD%E7%A4%BE%E5%8D%80%E7%9B%BE%E9%98%BF%E4%BB%99%E5%A5%B4%E5%85%A8%E6%96%B9%E4%BD%8D%E8%BC%BE%E5%A3%93%E6%9B%BC%E5%9F%8E-%E8%8B%B1%E8%B6%85%E5%90%8D%E5%B8%A5%E5%B7%B2%E4%B8%8B%E5%AE%9A%E8%AB%96%E6%A7%8D%E6%89%8B%E4%B8%80%E5%AE%9A%E5%8F%AF%E4%BB%A5%E8%A1%9B%E5%86%95%E8%81%AF%E8%B3%BD",
+      "pubDate": "2026-08-17 01:58:05",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/eb6c768c335ca732962ec7b753150bec/2026-08/KF_-_2026-08-17T095727_138.png",
+      "keywords": [
+        "阿迪達",
+        "社區盾",
+        "阿仙奴",
+        "曼城"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "77f84ca9bc2293628fa61ecb6acd256f",
+      "title": "美進口車商發起拒絕中國車運動 推動立法圖永久封殺",
+      "description": "代表美國9400多家進口車經銷商的美國國際汽車經銷商協會(AIADA),本月初發起一項名為「拒絕中國車」(No China Autos)的運動,以主席達羅(Mike Darrow)名義發表聲明,指控中國汽車憑藉大量政府補貼供應大量低價產品,令美國汽車業面對不公平競爭,導致收益惡化,本土就業機會減少。 AIADA指出,豐田、現代、福士等外國汽車在美國設立生產、研發設施,創造就業並成為當地產業的一部分",
+      "link": "https://www.stheadline.com/realtime-world/3605113/%E7%BE%8E%E9%80%B2%E5%8F%A3%E8%BB%8A%E5%95%86%E7%99%BC%E8%B5%B7%E6%8B%92%E7%B5%95%E4%B8%AD%E5%9C%8B%E8%BB%8A%E9%81%8B%E5%8B%95-%E6%8E%A8%E5%8B%95%E7%AB%8B%E6%B3%95%E5%9C%96%E6%B0%B8%E4%B9%85%E5%B0%81%E6%AE%BA",
+      "pubDate": "2026-08-17 01:57:46",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/60037eae97a434f9b446d1c6410e700f/2026-08/c1_2.jpg",
+      "keywords": [
+        "中國汽車"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3b0dc35352953db7dc0cac05ae083969",
+      "title": "中科聞歌(01956.HK)成立合夥基金 投資決策智能業務上下游生態企業",
+      "description": "中科聞歌(01956.HK)公布,公司作為有限合夥人,與國科西子及柯橋金開訂立合夥協議,內容有關擬議成立出資總額為3億元人民幣(下同)的基金。公司擬認繳出資總額1.77億元,佔基金出資總額的59%。 基金將聚焦於公司決策智能業務上下游生態內的優質企業,包括企業級數據基礎設施、行業模型、智能體、AI安全、AI4Sc...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E7%A7%91%E8%81%9E%E6%AD%8C-01956-hk-%E6%88%90%E7%AB%8B%E5%90%88%E5%A4%A5%E5%9F%BA%E9%87%91-%E6%8A%95%E8%B3%87%E6%B1%BA%E7%AD%96%E6%99%BA%E8%83%BD%E6%A5%AD%E5%8B%99%E4%B8%8A%E4%B8%8B%E6%B8%B8%E7%94%9F%E6%85%8B%E4%BC%81%E6%A5%AD-015710737.html",
+      "pubDate": "2026-08-17 01:57:10",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f5efb7054ddded13a7b5ae2c2bc9f818",
+      "title": "君正股份今起招股 入場費10,383.68元",
+      "description": "君正股份(03223)今起招股集資,招股價不高於102.8元,一手100股,入場費10,383.68元。 招股日期今起至周四(8 月20日)中午,掛牌日期8 月25日(周二),集資最多32.16億元。 獨家保薦人國泰海通。 公司是「存儲+計算+模擬」芯片提供商,產品應用於汽車電子、工業 醫療應用,以及AIoT及智能安防設備。經營模式為無晶圓廠模式,聚焦芯片的研發與設計,同時與晶圓廠及半導體封測代工公司展開合作。 公司頸計截至6 月30日半年利潤不少於10.79億元(人民幣‧下同),而截至今年3月31日首,利潤3.2億元,按年升334.81%,2025年全年利潤3.75億元,按年升3.05%,2024年度報3.64億元,按年跌28.82%。 首季收入15.6億元,按年升47.61%,2025年全年收入47.41億元,按年升12.54%,2024年度收入42.13億元,按年跌7.05%。 公司擬將所得款項淨額中,約50%用於加強三大核心業務板塊的技術創新和產品開發;約25%用於戰略投資及/或收購,以把握增長機遇;約15%用於擴展銷售網絡並推廣產品;及約10%用作營運資金及其他一般公司用途,包括日常運營和一般公司支出。",
+      "link": "https://www.bastillepost.com/hongkong/article/16583187-%E5%90%9B%E6%AD%A3%E8%82%A1%E4%BB%BD%E4%BB%8A%E8%B5%B7%E6%8B%9B%E8%82%A1-%E5%85%A5%E5%A0%B4%E8%B2%BB10383-68%E5%85%83",
+      "pubDate": "2026-08-17 01:56:11",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260810_FI_source-web_Ingenic-4.jpg",
+      "keywords": [
+        "錢財事",
+        "君正股份(03223)"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3a70cc5088650ca7b33d7fa7666928b6",
+      "title": "新世紀醫療(01518.HK)若干銀行賬戶被凍結 涉合作夥伴受查",
+      "description": "新世紀醫療(01518.HK)公布,於今年4月下旬,公司獲悉集團的若干銀行賬戶被凍結。經溝通後,公司得知凍結行動主要涉及北京市門頭溝區監察委員會對公司其中一名合作夥伴正在進行的調查。 目前公司未獲提供有關調查的任何書面詳情。調查並非直接針對集團、其董事或其高級管理人員發起。集團僅有部分銀行賬戶被凍結,涉及總金額約...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%96%B0%E4%B8%96%E7%B4%80%E9%86%AB%E7%99%82-01518-hk-%E8%8B%A5%E5%B9%B2%E9%8A%80%E8%A1%8C%E8%B3%AC%E6%88%B6%E8%A2%AB%E5%87%8D%E7%B5%90-%E6%B6%89%E5%90%88%E4%BD%9C%E5%A4%A5%E4%BC%B4%E5%8F%97%E6%9F%A5-015540522.html",
+      "pubDate": "2026-08-17 01:55:40",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "北京市門頭溝區監察委員會",
+        "銀行賬戶",
+        "新世紀醫療"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9bcd70a470e0f4907aa951f3a05f8a1a",
+      "title": "申萬宏源(06806.HK)總經理變動",
+      "description": "申萬宏源(06806.HK)公布,因工作安排原因,黃昊申請辭去董事會副董事長、執行董事、董事會戰略與ESG委員會成員、董事會風險控制委員會成員以及總經理、執行委員會副主任及成員等職務,已自上周五(14日)送達公司時生效。同日起,黃建軍獲聘任為總經理,並獲提名為執行董事候選人。(sl/da)~ 阿思達克財經新聞 網...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%94%B3%E8%90%AC%E5%AE%8F%E6%BA%90-06806-hk-%E7%B8%BD%E7%B6%93%E7%90%86%E8%AE%8A%E5%8B%95-015422643.html",
+      "pubDate": "2026-08-17 01:54:22",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "63293307c89a0070186ec66c046a33a0",
+      "title": "中信里昂下調希慎興業(00014)目標價20% 維持「跑贏大市」",
+      "description": "<匯港通訊> 中信里昂發報告指,下調希慎興業(00014)目標價,從25港元降至20港元,維持「跑贏大市」評級。 希慎2026年上半年業績穩健,經常性盈利維持強勁,每股股息維持不變,零售業務持續跑贏大市。利園在零售市場情緒改善、奢侈品租戶升級以及客流量增加的支撐下,繼續跑贏香港整體零售市場。租戶銷售額已恢復至疫情...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E4%BF%A1%E9%87%8C%E6%98%82%E4%B8%8B%E8%AA%BF%E5%B8%8C%E6%85%8E%E8%88%88%E6%A5%AD-00014-%E7%9B%AE%E6%A8%99%E5%83%B920-%E7%B6%AD%E6%8C%81-%E8%B7%91%E8%B4%8F%E5%A4%A7%E5%B8%82-015410648.html",
+      "pubDate": "2026-08-17 01:54:10",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "45309831835c264fbc7f28c715557482",
+      "title": "碧瑤綠色急瀉逾15% 料中期利潤少最多54%│港股異動",
+      "description": "本地「清潔股」碧瑤綠色集團(1397)盈警,股價今早急瀉,最新報0.78元,瀉15.7%,成交額約63萬元。該集團通告稱,預期截至6月30日止中期除稅後溢",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60380585/%E7%A2%A7%E7%91%A4%E7%B6%A0%E8%89%B2%E6%80%A5%E7%80%89%E9%80%BE15-%E6%96%99%E4%B8%AD%E6%9C%9F%E5%88%A9%E6%BD%A4%E5%B0%91%E6%9C%80%E5%A4%9A54-%E6%B8%AF%E8%82%A1%E7%95%B0%E5%8B%95",
+      "pubDate": "2026-08-17 01:53:19",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260817/1165959585253560320146728.jpeg/NJppYbAiN4Itd_5Wxdi8BFkLFFYbupygHwCDuh8Ag7o",
+      "keywords": [
+        "恆生指數",
+        "港股",
+        "財經台",
+        "a股",
+        "經濟",
+        "香港新聞",
+        "股票",
+        "財經透視",
+        "財經網",
+        "香港01",
+        "地產消息",
+        "新聞",
+        "hk01",
+        "財經新聞"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b307b3d2ba7b14c6dbba4eef47f51fb1",
+      "title": "聖諾醫藥(02257.HK)向若干前管理層發傳訊令狀",
+      "description": "聖諾醫藥-B(02257.HK)公布,於上周五(14日),公司及其直接全資附屬公司聖諾(香港)有限公司已向香港特別行政區高等法院提交傳訊令狀(案件編號:HCA 1427/2026),控告集團若干前管理層,包括陸陽、戴曉暢及葉永基。該等申索乃有關集團於TradArt Flagship Investment SPC的...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%81%96%E8%AB%BE%E9%86%AB%E8%97%A5-02257-hk-%E5%90%91%E8%8B%A5%E5%B9%B2%E5%89%8D%E7%AE%A1%E7%90%86%E5%B1%A4%E7%99%BC%E5%82%B3%E8%A8%8A%E4%BB%A4%E7%8B%80-015308793.html",
+      "pubDate": "2026-08-17 01:53:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "聖諾醫藥-b",
+        "香港特別行政區"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a4854ace3dbe588e19ad97d95c193d39",
+      "title": "中信里昂下調京東健康目標價至61元 維持「跑贏大市」評級",
+      "description": "<匯港通訊> 中信里昂發表報告指,京東健康(06618)上半年業績符合預期,但將目標價由66.5元下調至61元,反映更低的財務收入及將DCF模型延展至明年6月,維持「跑贏大市」評級。該行分別下調公司2026-2027年經調整淨利預測1.4%及4.3%,至66.09億元人民幣及77.57億元人民幣,仍看好公司能受惠...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E4%BF%A1%E9%87%8C%E6%98%82%E4%B8%8B%E8%AA%BF%E4%BA%AC%E6%9D%B1%E5%81%A5%E5%BA%B7%E7%9B%AE%E6%A8%99%E5%83%B9%E8%87%B361%E5%85%83-%E7%B6%AD%E6%8C%81-%E8%B7%91%E8%B4%8F%E5%A4%A7%E5%B8%82-%E8%A9%95%E7%B4%9A-015307213.html",
+      "pubDate": "2026-08-17 01:53:07",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "京東健康",
+        "<匯港通訊> 中信里昂"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bb78e7faf33a94f119bdd46d19a2a95e",
+      "title": "當AI能生成一切 小學資訊與創新科技課程框架正當其時",
+      "description": "人工智能可以提升效率,卻不能代替人的審視和判斷。這也是試行版課程框架特別強調培養學生質疑態度和事實查核能力的原因。",
+      "link": "https://www.master-insight.com/article/49677",
+      "pubDate": "2026-08-17 01:52:00",
+      "source_name": "Master – Insight",
+      "image_url": "https://bucket-image.inkmaginecms.com/9dde7c0f-adea-48d0-9671-8f5a6345ad4a/image/2026/08/6424a202-edc1-4899-9b79-9a0f921d88eb.webp",
+      "keywords": [
+        "小學",
+        "教育",
+        "教評心事"
+      ],
+      "category": [
+        "technology",
+        "education"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2d7eb85a9b9d23eb53f040c132ecd396",
+      "title": "WTT歐洲大滿貫賽瑞典站王曼昱女單登頂",
+      "description": "中評社香港8月17日電/世界乒乓球職業大聯盟(WTT)歐洲大滿貫賽瑞典站16日收官,中國隊王曼昱奪得女子單打冠軍。本站比賽國乒收穫女單和混雙兩項冠軍。 據新華社報導,當天下午的女單半決賽中,王藝迪以4:2擊敗日本選手張本美和;王曼昱則以4:0戰勝隊友蒯曼,與王藝迪會師決賽。 決賽中,兩人經過6局激戰,最終王曼昱以4:2獲勝,摘得桂冠。王曼昱賽後表示,拿到冠軍很開心,本場比賽",
+      "link": "http://www.crntt.com/doc/7_0_107224749_1_0817094859.html",
+      "pubDate": "2026-08-17 01:48:58",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": [
+        "乒乓球",
+        "wtt"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "41db6815dfe35f766dc857d1f82163a6",
+      "title": "FAA溫網後首戰贏波 舒爾頓爆冷出局",
+      "description": "【Now Sports】周日辛辛那堤公開賽進行男單次圈賽事,休戰逾1個月後復出的艾加阿利亞森,擊敗老對手薛斯柏斯,成功晉級。日前剛成功衛冕羅渣士盃的舒爾頓,則以直落兩盤不敵葡萄牙對手,爆冷次圈出局。艾加阿利亞森(Felix Auger-Aliassime)上月溫布頓8強與祖高域激戰5小時僅敗,至本月羅渣士盃因背傷...",
+      "link": "https://hk.sports.yahoo.com/news/faa%E6%BA%AB%E7%B6%B2%E5%BE%8C%E9%A6%96%E6%88%B0%E8%B4%8F%E6%B3%A2-%E8%88%92%E7%88%BE%E9%A0%93%E7%88%86%E5%86%B7%E5%87%BA%E5%B1%80-014349317.html",
+      "pubDate": "2026-08-17 01:43:49",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/1e82e9a3cd814b8b3239a938fd25a39e5d0154033cb9b2118ea563e02e1f4041/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F30d62c5e-21d3-4110-9d89-459ca618d992",
+      "keywords": [
+        "艾加阿利亞森",
+        "薛斯柏斯",
+        "舒爾頓"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b0ad704291e230bf79b50e8125df87c3",
+      "title": "南京大屠殺在長崎如何被篡改為“南京事件”",
+      "description": "中評社北京8月17日電/日本長崎核爆資料館,是為數不多依然使用“南京大屠殺”展陳說明的公立設施之一。然而,該館7月28日公布的新展陳解說文本方案顯示,有關“南京大屠殺”的表述從明年3月起將改為“南京事件”。管理核爆資料館的長崎市政府竟宣稱,這一改動是為了與日本官方表述及主流教科書“保持一致”。 據新華社報導,南京大屠殺是日本軍國主義犯下的殘暴罪行,鐵證如山,不容篡改。東京審判明確認定",
+      "link": "http://www.crntt.com/doc/7_0_107224716_1_0817094325.html",
+      "pubDate": "2026-08-17 01:43:25",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/17/107224718.jpg",
+      "keywords": [
+        "長崎",
+        "南京大屠殺"
+      ],
+      "category": [
+        "politics",
+        "top",
+        "crime"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "19273024b6025c9dc6b3a0989c217d96",
+      "title": "預算被刪扯滅文化 游淑慧:罷免的歌也補助",
+      "description": "中評社台北8月17日電/2026年度總預算案,“立法院”日前三讀通過。“文化部”相關預算總計被刪新台幣10億元、凍結新台幣3.86億元。針對“文化部長”李遠稱“欲滅其國,先滅其史;欲滅其族,先滅其文化;欲封其口,先刪媒宣費”。中國國民黨籍台北市議員游淑慧16日在政論節目表示,我們所有的中華文化補助,成為一些粗俗不堪的藝術表演;還有去年“文化部”補助推動罷免國民黨的歌,這種也能政治補助,這就是李",
+      "link": "http://www.crntt.com/doc/7_0_160257565_1_0817094117.html",
+      "pubDate": "2026-08-17 01:41:17",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/17/160257567.jpg",
+      "keywords": [
+        "總預算",
+        "李遠",
+        "“文化部”",
+        "游淑慧"
       ],
       "category": [
         "politics",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "5f8341f6f3ff69393a9d90b0aef0e8f4",
+      "title": "數百偷渡者休達集會 不願返回摩洛哥尋求獲西班牙庇護",
+      "description": "近期進入西班牙位於北非的飛地休達(Ceuta)的數百名非法移民,8月16日在一處海灘集會,要求西班牙當局給予他們庇護,而非將他們遣返摩洛哥。有示",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380574/%E6%95%B8%E7%99%BE%E5%81%B7%E6%B8%A1%E8%80%85%E4%BC%91%E9%81%94%E9%9B%86%E6%9C%83-%E4%B8%8D%E9%A1%98%E8%BF%94%E5%9B%9E%E6%91%A9%E6%B4%9B%E5%93%A5%E5%B0%8B%E6%B1%82%E7%8D%B2%E8%A5%BF%E7%8F%AD%E7%89%99%E5%BA%87%E8%AD%B7",
+      "pubDate": "2026-08-17 01:33:38",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260817/1165953048468525056630425.jpeg/Wf3KsUGl-BcwKT2y_WBEX7K6RqPwSnYG2tO5t9rTubc",
+      "keywords": [
+        "環球",
+        "國際新聞",
+        "國際",
+        "香港01",
+        "世界新聞",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bbbbfb9e09a4f1a998838983bec3c240",
+      "title": "紐約市長曼達尼發中文宣傳片爆紅 數百萬人驚艷大讚字正腔圓|有片",
+      "description": "紐約市長曼達尼(Zohran Mamdani)近日在社交平台X發布一段約41秒短片,全程以中文宣傳市政府向高中生提供免費百老匯門票的活動。在影片中,他的中文發音清晰,被許多講中文和學習者評為字正腔圓,還會捲舌,在各平台吸引數百萬點閱及討論熱潮。 演出现场见!https://t.co/3aEqbt0cp5 https://t.co/tuBi2oDn5E pic.twitter.com/qtIAMIM",
+      "link": "https://www.stheadline.com/realtime-world/3605107/%E7%B4%90%E7%B4%84%E5%B8%82%E9%95%B7%E6%9B%BC%E9%81%94%E5%B0%BC%E7%99%BC%E4%B8%AD%E6%96%87%E5%AE%A3%E5%82%B3%E7%89%87%E7%88%86%E7%B4%85-%E6%95%B8%E7%99%BE%E8%90%AC%E4%BA%BA%E9%A9%9A%E8%89%B7%E5%A4%A7%E8%AE%9A%E5%AD%97%E6%AD%A3%E8%85%94%E5%9C%93%E6%9C%89%E7%89%87",
+      "pubDate": "2026-08-17 01:28:09",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6add8d2f6546ebe72f90b11878ceea9c/2026-08/a4_22.jpg",
+      "keywords": [
+        "曼達尼"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f16608fedd962af631948afc395f2c20",
+      "title": "IVE 張員瑛揭巡演後1小時洗浴SOP!完美主義爆發:這是我的鐵律",
+      "description": null,
+      "link": "https://www.koreastardaily.com/tc/news/163598",
+      "pubDate": "2026-08-17 01:27:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-13/163598-1062207.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5c48b19b5bb88d55c3214e7e1e6e2d7d",
+      "title": "伊朗總統:伊美諒解備忘錄維護尊嚴展現實力",
+      "description": "中評社香港8月17日電/針對兩個月前伊朗和美國簽署的旨在結束衝突的諒解備忘錄,伊朗總統佩澤希齊揚16日表示,諒解備忘錄是伊方在“維護尊嚴、展現實力”的基礎上達成的,“沒有向敵人屈服”。 據伊朗總統府網站發布的聲明,佩澤希齊揚當天在首都德黑蘭參加伊朗全國教育部門負責人會議時作上述表態。他強調,該諒解備忘錄是經過深思熟慮和專家深入討論後起草的。 另據伊朗伊斯蘭共和國通訊社16日",
+      "link": "http://www.crntt.com/doc/7_0_107224742_1_0817092527.html",
+      "pubDate": "2026-08-17 01:25:27",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": [
+        "美伊",
+        "伊朗"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a21b569346081c220ee899da47e344a6",
+      "title": "西甲│曼城同意7600萬歐羅放走洛迪 巴塞隆拿派包機接送",
+      "description": "英國和西班牙多間媒體周日報導,曼城接受巴塞隆拿對陣中西班牙中場洛迪卡斯簡迪的第3份報價,以6000萬歐羅固定轉會費,再加1600萬歐羅的浮動條款放走他。此子為完成轉會同日缺席對阿仙奴的英格蘭社區盾賽事,據報他將會在曼徹斯特接受初步體測,然後乘坐巴塞安排的私人飛機前往西班牙,整個交易預計周二落實。 6000萬歐羅固定轉會費 將簽約4年 巴塞隆拿上周兩次向曼城報價求購洛迪被拒後,周末再提交一份新報價,",
+      "link": "https://www.stheadline.com/football-news/3605104/%E8%A5%BF%E7%94%B2%E6%9B%BC%E5%9F%8E%E5%90%8C%E6%84%8F7600%E8%90%AC%E6%AD%90%E7%BE%85%E6%94%BE%E8%B5%B0%E6%B4%9B%E8%BF%AA-%E5%B7%B4%E5%A1%9E%E9%9A%86%E6%8B%BF%E6%B4%BE%E5%8C%85%E6%A9%9F%E6%8E%A5%E9%80%81",
+      "pubDate": "2026-08-17 01:20:59",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e19eccd24cd09463c9c58eabc5926604/2026-08/KF_-_2026-08-17T092025_084.png",
+      "keywords": [
+        "曼城",
+        "洛迪卡斯簡迪",
+        "阿仙奴",
+        "英超",
+        "巴塞隆拿",
+        "社區盾",
+        "西甲"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a72661b37e2631a9e84e0cce7b79f3d5",
+      "title": "前傳銷頭目經營國學書院 3人涉虐童遭刑拘",
+      "description": "浙江新昌一間號稱弘揚國學的「如是書院」早前被傳媒踢爆創辦人「如平」實為曾經入獄的前傳鎖頭目賴澤明。他更被曝涉嫌虐打學院學員,體罰管教堪比電影《周處除三害》邪教情節。 相關新聞:《周處除三害》現實版—傳銷頭目出獄化身國學大師 收¥12萬「幫家長」暴力教子女 官方昨日公布,「如是書院」為無資質違法經營,以國學、禮儀為名,開展封閉式培訓,目前已被依法關停,在訓學員已全部返回。經調查,書院在經營活動中存在",
+      "link": "https://www.stheadline.com/realtime-china/3605096/%E5%89%8D%E5%82%B3%E9%8A%B7%E9%A0%AD%E7%9B%AE%E7%B6%93%E7%87%9F%E5%9C%8B%E5%AD%B8%E6%9B%B8%E9%99%A2-3%E4%BA%BA%E6%B6%89%E8%99%90%E7%AB%A5%E9%81%AD%E5%88%91%E6%8B%98",
+      "pubDate": "2026-08-17 01:20:23",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a1069d2153770dcc23fffab5ec860936/2026-08/New_Proje1212.jpg",
+      "keywords": [
+        "賴澤明",
+        "如是書院",
+        "《周處除三害》"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "996ecee78fd6df27ff2bb9b813e30d9a",
+      "title": "Jennie勁舞「春光外洩」全網看傻!派系大戰開打:鐵粉護航、酸民秒被圍剿",
+      "description": "BLACKPINK成員Jennie上週末在「2026 Summer Sonic Tokyo」音樂祭的熱力演出,竟意外引爆網路騷動!",
+      "link": "https://www.koreastardaily.com/tc/news/163637",
+      "pubDate": "2026-08-17 01:19:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-17/163637-1062422.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9b3c23bcd213119daeff886a0e56da22",
+      "title": "八國外長聯合譴責以色列拒絕加沙和平計劃",
+      "description": "中評社北京8月17日電/八個國家的外長16日發表聯合聲明,譴責以色列公開拒絕完成加沙和平計劃的路線圖。 據新華社報導,埃及、卡塔爾、約旦、阿聯酋、印度尼西亞、巴基斯坦、土耳其和沙特阿拉伯的外長星期天(8月16日)發聯合聲明說:“以色列拒絕(加沙和平計劃)證實,它現在應對阻礙加沙和平進程的努力負有責任。” 聲明指出,這個路線圖是實現武器解除、以色列軍隊撤出、國際穩定部隊部署、",
+      "link": "http://www.crntt.com/doc/7_0_107224722_1_0817091709.html",
+      "pubDate": "2026-08-17 01:17:08",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/17/107224724.jpg",
+      "keywords": [
+        "巴勒斯坦",
+        "加沙",
+        "以色列"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "66698513e55ce3eee1fe9dfb81235483",
+      "title": "日在野黨痛批:不知反省的國家無法獲得信任",
+      "description": "中評社北京8月17日電/8月15日是日本戰敗投降日。當天,日本首相高市早苗以自民黨總裁身份,向供奉有二戰甲級戰犯的靖國神社供奉“玉串料”(祭祀費),日本防衛大臣等多名政客分別前往靖國神社參拜。近期日本執政當局持續加碼防衛擴張,一系列危險動向嚴重挑戰二戰勝利成果和戰後國際秩序,引發日本國內有識之士與周邊國家的強烈批評和高度警惕。 此等惡劣行徑是對國際公平正義的公然踐踏和蔑視",
+      "link": "http://www.crntt.com/doc/7_0_107224719_1_0817091621.html",
+      "pubDate": "2026-08-17 01:16:04",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/17/107224721.jpg",
+      "keywords": [
+        "高市早苗"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7f1c2942126090ab5b6940439f3f91a6",
+      "title": "民政事務總署開放19間臨時避暑中心 酷熱天氣警告期間全日服務",
+      "description": "民政事務總署宣布開放19間臨時避暑中心,在酷熱天氣警告生效期間全日開放供市民避暑。中心由晚上10時半至翌日早上8時,亦會提供被鋪及睡覺地方予有需要人士。 民政事務總署與各區民政事務處今年已推出一系列提升服務措施,包括加強降溫通風設備、提供飲水機、個人化降溫用品、更舒適的休息區及優化女士專用區,部分中心更會提供照顧少數族裔人士飲食需要的食品,為避暑人士提供更全面的服務。 市民可瀏覽新聞公報查閱各區避暑中心位置,亦可致電民政事務總署熱線2572 8427查詢。署方另設額外日間避暑社區會堂及社區中心,相關地點已上載至指定網頁供市民參考。",
+      "link": "https://www.bastillepost.com/hongkong/article/16582944-%E6%B0%91%E6%94%BF%E4%BA%8B%E5%8B%99%E7%B8%BD%E7%BD%B2%E9%96%8B%E6%94%BE19%E9%96%93%E8%87%A8%E6%99%82%E9%81%BF%E6%9A%91%E4%B8%AD%E5%BF%83-%E9%85%B7%E7%86%B1%E5%A4%A9%E6%B0%A3%E8%AD%A6%E5%91%8A",
+      "pubDate": "2026-08-17 01:14:44",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1487979360041825_d85e3f3202_FB_v2-2.jpg",
+      "keywords": [
+        "ai小助手",
+        "太極影片",
+        "source-gov",
+        "政事"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "836adaeea1fa99762541ac2339c2f34a",
+      "title": "東京高評分酒店20間推介|人均$200起/住客都讚好!全部9分以上",
+      "description": "東京高評分酒店推介2026|記者整理了20間於旅遊網站獲得高評分酒店,當中不乏有溫泉酒店,而且鄰近沙灘、一程鐵路直達東京迪士尼樂園等。另外還有",
+      "link": "https://www.hk01.com/%E6%97%85%E9%81%8A/944651/%E6%9D%B1%E4%BA%AC%E9%AB%98%E8%A9%95%E5%88%86%E9%85%92%E5%BA%9720%E9%96%93%E6%8E%A8%E4%BB%8B-%E4%BA%BA%E5%9D%87-200%E8%B5%B7-%E4%BD%8F%E5%AE%A2%E9%83%BD%E8%AE%9A%E5%A5%BD-%E5%85%A8%E9%83%A89%E5%88%86%E4%BB%A5%E4%B8%8A",
+      "pubDate": "2026-08-17 01:12:32",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20240813/899977240488448000736821.jpeg/l7jqZdh4AQNY-9QyUla5FFKiQm-WYTlmRZruI0Wa7iM",
+      "keywords": [
+        "新聞",
+        "網上媒體",
+        "香港零一",
+        "網絡媒體",
+        "hk01",
+        "于品海",
+        "香港新聞",
+        "香港媒體",
+        "香港01",
+        "香港傳媒"
+      ],
+      "category": [
+        "tourism",
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "87650c5fe1cdd7a4b1ff08ce2a0ee9e7",
+      "title": "Cristiano Ronaldo 表示 2026-27 球季「很可能是我足球生涯的最後一年」",
+      "description": "摘要Cristiano Ronaldo 近日明確表示,他有可能在本賽季結束後正式從職業足球退役。在一篇於他與 Georgina Rodríguez 婚禮前刊出的獨家專訪中,這位 41 歲球星坦言,希望為自己留下精彩耀目的傳承。這位 5 屆 Ballon d'Or 得主亦確認,自己已為退役後的人生做好規劃,包括多花...",
+      "link": "https://hk.sports.yahoo.com/news/cristiano-ronaldo-%E8%A1%A8%E7%A4%BA-2026-27-010546949.html",
+      "pubDate": "2026-08-17 01:05:46",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/c6ef9d472356bf9796d712ccd08dae4756cff27429bce381bbac0b4cc912eba5/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhypebeast_hk_sports_439%2F8e6ccf888068207d34e5e73211469ca1.jpg",
+      "keywords": [
+        "ronaldo",
+        "cristiano ronaldo",
+        "足球",
+        "georgina rodríguez 婚禮"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ac2fafbb06f074394c4429a9f0a2d4b8",
+      "title": "金智勳大讚金憓秀是「完美搭檔」!《現在不是出軌的問題》合作幕後曝光:她總是毫不吝嗇地稱讚我",
+      "description": "演員金智勳和金憓秀正在合作話題韓劇《現在不是出軌的問題》(現在不是外遇的問題),他熱情地分享了與前輩金憓秀之間的合作默契,看起來兩人非常的合拍。",
+      "link": "https://www.koreastardaily.com/tc/news/163633",
+      "pubDate": "2026-08-17 01:05:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-16/163633-1062395.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "69262578e3114d5657d39210dcd64298",
+      "title": "三藩市初創搶先試行每小時 $234 Tau Robotics 人形機械人上門洗碗掃地",
+      "description": "三藩市機械人初創 Tau Robotics 推出人形機械人上門保潔服務,每小時收費 30 美元(約港幣 234 [...]",
+      "link": "https://unwire.hk/2026/08/17/humanoid-robot-cleaning-service/ai/",
+      "pubDate": "2026-08-17 01:01:19",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo25-2.png",
+      "keywords": [
+        "人工智能",
+        "生活科技",
+        "家居清潔",
+        "科技新聞",
+        "unitree",
+        "tau robotics",
+        "機械人",
+        "人形機械人"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9dd76d8a7def5dd204bbf5571b7d006b",
+      "title": "王祖賢罕現身 回應授權美貌做AI遊戲分身:我們是用AI不是被AI用",
+      "description": "王祖賢淡出並移居加拿大溫哥華逾20年,近日卻突然於多個社交平台開設賬戶,日前更罕有現身廣州出席公開活動,惹來復出揣測。當日她現身網易旗下大",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60380543/%E7%8E%8B%E7%A5%96%E8%B3%A2%E7%BD%95%E7%8F%BE%E8%BA%AB-%E5%9B%9E%E6%87%89%E6%8E%88%E6%AC%8A%E7%BE%8E%E8%B2%8C%E5%81%9Aai%E9%81%8A%E6%88%B2%E5%88%86%E8%BA%AB-%E6%88%91%E5%80%91%E6%98%AF%E7%94%A8ai%E4%B8%8D%E6%98%AF%E8%A2%ABai%E7%94%A8",
+      "pubDate": "2026-08-17 01:00:29",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260816/1165806595871870976821596.jpeg/4H4TWpFl8eFyBnO-LwjL-5sYPEVKmlveRwDq3EcA6tw",
+      "keywords": [
+        "即時娛樂新聞",
+        "明星",
+        "新聞",
+        "香港新聞",
+        "hk01",
+        "即時娛樂",
+        "韓星",
+        "藝人",
+        "娛樂新聞",
+        "香港01"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f4a93348c43d33be636f2180b3619c83",
+      "title": "區議會議員.張展鵬|請把「告別圍標」納入五年規劃",
+      "description": "來稿作者:張展鵬今年7月,本人以分區委員會委員身份,出席香港首個五年規劃及2026年施政報告諮詢會(選委會第一場),並向特首及官員反映社區聲音",
+      "link": "https://www.hk01.com/01%E8%AB%96%E5%A3%87/60379621/%E5%8D%80%E8%AD%B0%E6%9C%83%E8%AD%B0%E5%93%A1-%E5%BC%B5%E5%B1%95%E9%B5%AC-%E8%AB%8B%E6%8A%8A-%E5%91%8A%E5%88%A5%E5%9C%8D%E6%A8%99-%E7%B4%8D%E5%85%A5%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83",
+      "pubDate": "2026-08-17 01:00:28",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/1668630/org/9d0b34d6307b25d1919be0d18cb161c7.jpg/VeTr-9E8WvqmT9lgrOO2p4etJkP39blZnHestJx3rLQ",
+      "keywords": [
+        "政治政黨",
+        "土地政策",
+        "房屋政策",
+        "專欄作家",
+        "投稿",
+        "01論壇"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "fffbe875b7f401b9dbf2745ff493841e",
@@ -253,6 +946,26 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "4ee493d8c2918693e013a84c22b2c780",
+      "title": "特朗普突下令縮減美韓軍演規模 稱與金正恩關係好 指南韓拒對付伊朗",
+      "description": "美國總統特朗普突然下令縮減與南韓聯合軍演規模,表明與北韓領袖金正恩關係非常好,對於美國參加與南韓的聯合軍事演習「並不滿意」,指出所費不菲,而且恐向北韓傳遞錯誤訊號,因此決定縮減於周一展開、旨在阻嚇北韓的「乙支自由護盾」聯合軍演的規模。特朗普又提到,他最近要求南韓與美國一起推動伊朗無核化,但遭到韓方拒絕,似暗示這是縮減軍演規模的原因之一。 特朗普周日在其社交平台Truth Social平台發文說:「",
+      "link": "https://www.stheadline.com/realtime-world/3605093/%E7%89%B9%E6%9C%97%E6%99%AE%E7%AA%81%E4%B8%8B%E4%BB%A4%E7%B8%AE%E6%B8%9B%E7%BE%8E%E9%9F%93%E8%BB%8D%E6%BC%94%E8%A6%8F%E6%A8%A1-%E7%A8%B1%E8%88%87%E9%87%91%E6%AD%A3%E6%81%A9%E9%97%9C%E4%BF%82%E5%A5%BD-%E6%8C%87%E5%8D%97%E9%9F%93%E6%8B%92%E5%B0%8D%E4%BB%98%E4%BC%8A%E6%9C%97",
+      "pubDate": "2026-08-17 00:40:01",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0514729a65f048154ca1c49f24ba5cb5/2026-08/a1_0_24.jpg",
+      "keywords": [
+        "美韓軍演",
+        "特朗普",
+        "金正恩"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "46cdc5508a2043506c355ecc7e821be5",
@@ -477,6 +1190,23 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "8b2d966ced69e52710c1ed1aa7e343ac",
+      "title": "【企業盈喜】壁仞科技(06082)料中期虧損顯著收窄至3.2億人幣,收入升最多21倍",
+      "description": "《經濟通通訊社17日專訊》壁仞科技(06082)發盈利預告,預期截至2026年6 月30日止六個月,虧損及公司擁有人應佔虧損約3.2億元(人民幣.下同)至4億元,較去 年同期虧損16億元大幅收窄約75%至80%;經調整期內虧損則料介乎2.9億元至3.6 億元,按年收窄約35%至47%。 預計期內,收入約11.5億元至13億元,按年大幅增長約18.5倍至21.1倍。公 司指出,收入高速",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360817167",
+      "pubDate": "2026-08-17 00:00:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "8fcdfc99dce12571f832456061d53989",
@@ -93967,6 +94697,6 @@
       "pinned": true
     }
   ],
-  "total": 4834,
-  "last_updated": "2026-08-17T21:04:51.651465"
+  "total": 4873,
+  "last_updated": "2026-08-17T22:11:55.762642"
 }
