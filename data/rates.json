@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15T08:31:48.875488+08:00",
+  "last_updated": "2026-08-17T08:31:49.695459+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -292,30 +292,6 @@
       "type": "traditional",
       "logo_color": "#005594",
       "hkd": {
-        "3m": {
-          "rate": 2.95,
-          "fund_type": "new_funds",
-          "min_deposit": 500000,
-          "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 2.8
-        },
-        "6m": {
-          "rate": 3.1,
-          "fund_type": "new_funds",
-          "min_deposit": 500000,
-          "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 2.95
-        },
-        "12m": {
-          "rate": 3.1,
-          "fund_type": "new_funds",
-          "min_deposit": 500000,
-          "note": "新資金定期存款優惠",
-          "source": "bank",
-          "existing_funds_rate": 2.95
-        },
         "1m": {
           "rate": 2.35,
           "fund_type": "existing_funds",
@@ -330,8 +306,29 @@
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
+        "3m": {
+          "rate": 2.8,
+          "fund_type": "existing_funds",
+          "min_deposit": 500000,
+          "note": "Fubon+手機App定期存款",
+          "source": "bank"
+        },
         "4m": {
           "rate": 2.8,
+          "fund_type": "existing_funds",
+          "min_deposit": 500000,
+          "note": "Fubon+手機App定期存款",
+          "source": "bank"
+        },
+        "6m": {
+          "rate": 2.95,
+          "fund_type": "existing_funds",
+          "min_deposit": 500000,
+          "note": "Fubon+手機App定期存款",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 2.95,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
@@ -340,7 +337,7 @@
       },
       "usd": {
         "3m": {
-          "rate": 4.1,
+          "rate": 4.05,
           "fund_type": "new_funds",
           "min_deposit": 128000,
           "note": "新資金定期存款優惠",
