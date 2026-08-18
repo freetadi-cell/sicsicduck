@@ -1316,13 +1316,13 @@ function renderTable() {
         // Normalize slot keys: some banks (富融等) 用 new_customer/general 而非 new_funds/existing_funds
         const slots = ['new_funds', 'existing_funds', 'exchange', 'new_customer', 'general'];
 
-        // Check if new structure (has new_funds/existing_funds/exchange keys)
+        // Check if new structure (has new_funds/existing_funds/exchange/new_customer keys)
         const isNewStructure = slots.some(s => periodData[s]);
 
         if (isNewStructure) {
             // New structure: get rate from appropriate slot
             let slot = null;
-            if (currentFunds === 'new') slot = 'new_customer', slot = periodData['new_funds'] ? 'new_funds' : 'new_customer';
+            if (currentFunds === 'new') slot = periodData['new_funds'] ? 'new_funds' : 'new_customer';
             else if (currentFunds === 'existing') slot = periodData['existing_funds'] ? 'existing_funds' : 'general';
             else if (currentFunds === 'exchange') slot = 'exchange';
             else if (currentFunds === 'best') {
@@ -1527,7 +1527,8 @@ function renderTable() {
             const noteData = data?.[activePeriod];
 
             // Check if new structure
-            const isNewStructure = noteData?.new_funds || noteData?.existing_funds || noteData?.exchange;
+            const noteSlots = ['new_funds', 'existing_funds', 'exchange', 'new_customer'];
+            const isNewStructure = noteSlots.some(s => noteData?.[s]);
 
             let note = '';
             let minDep = null;
@@ -1535,14 +1536,13 @@ function renderTable() {
             if (isNewStructure && noteData) {
                 // New structure
                 let slot = null;
-                if (currentFunds === 'new') slot = 'new_funds';
-                else if (currentFunds === 'existing') slot = 'existing_funds';
-                else if (currentFunds === 'exchange') slot = 'exchange';
+                if (currentFunds === 'new') slot = noteData['new_funds'] ? 'new_funds' : 'new_customer';
+                else if (currentFunds === 'existing') slot = noteData['existing_funds'] ? 'existing_funds' : null;
+                else if (currentFunds === 'exchange') slot = noteData['exchange'] ? 'exchange' : null;
                 else if (currentFunds === 'best') {
                     // "不限資金" - find which slot has the highest rate
-                    const slots = ['new_funds', 'existing_funds', 'exchange'];
                     let maxRate = null;
-                    for (const s of slots) {
+                    for (const s of noteSlots) {
                         const slotData = noteData[s];
                         if (slotData && slotData.rate != null) {
                             if (maxRate === null || slotData.rate > maxRate) {
@@ -1554,7 +1554,7 @@ function renderTable() {
                 }
                 else slot = 'existing_funds'; // Default
 
-                const slotData = noteData[slot];
+                const slotData = slot ? noteData[slot] : null;
                 note = slotData?.note || '';
                 minDep = slotData?.min_deposit;
             } else {
