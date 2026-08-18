@@ -1,7 +1,473 @@
 {
-  "last_updated": "2026-08-18T10:11:07.940209",
-  "total": 5387,
+  "last_updated": "2026-08-18T11:07:59.415684",
+  "total": 5414,
   "articles": [
+    {
+      "id": "29bbbb7766349e58f6497c0481f5b9be",
+      "title": "《業績》知行科技(01274.HK)中期虧損收窄至5,301萬人民幣",
+      "description": "知行科技(01274.HK)公布2026年6月底止六個月中期業績,收入7.6億人民幣(下同),按年升107.8%。虧損由上年同期1.78億元收窄至5,301萬元,每股虧損0.21元。不派中期股息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E7%9F%A5%E8%A1%8C%E7%A7%91%E6%8A%80-01274-hk-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%94%B6%E7%AA%84%E8%87%B35-145747627.html",
+      "pubDate": "2026-08-17 14:57:47",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5a9e73645a09c77c9cb341aace77fe29",
+      "title": "齊合環保(00976)委任伏淘為主席",
+      "description": "<匯港通訊> 齊合環保(00976)宣布,自8月17日起,執行董事伏淘獲委任為董事會主席及執行委員會主席;執行董事姚翔獲委任為行政總裁。 (WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BD%8A%E5%90%88%E7%92%B0%E4%BF%9D-00976-%E5%A7%94%E4%BB%BB%E4%BC%8F%E6%B7%98%E7%82%BA%E4%B8%BB%E5%B8%AD-145706782.html",
+      "pubDate": "2026-08-17 14:57:06",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "執行董事",
+        "齊合環保",
+        "<匯港通訊>",
+        "董事會主席"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b14d6ff9d73e30257f8f8c217dae4ac4",
+      "title": "iOS 版 Firefox 終於原生支援「擋廣告」功能!即睇啟用方法+運作細節",
+      "description": "iPhone 用戶睇網頁時,最令人頭痛的莫過於突然彈出的浮動廣告!Mozilla 最新宣佈,正逐步為 iOS 版 Firefox 瀏覽器引入原生「擋廣告」(Ad Blocker)功能!以後 iPhone 同 iPad 用戶唔洗再另外安裝第三方擴充套件(Add-ons),就可以擁有更乾淨、更順暢的瀏覽體驗。 這篇文章 iOS 版 Firefox 終於原生支援「擋廣告」功能!即睇啟用方法+運作細節 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/firefox-ios-built-in-ad-blocker-launch/",
+      "pubDate": "2026-08-17 14:56:17",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/17224347/PCM_Banner_1080_20260817_Firefox_iOS_AD_blocker.jpg",
+      "keywords": [
+        "safari",
+        "ad blocker",
+        "hide distracting items",
+        "瀏覽器",
+        "網絡安全",
+        "how to",
+        "tech",
+        "ios",
+        "mozilla",
+        "firefox",
+        "科技新聞",
+        "流動應用",
+        "ios 27",
+        "擋廣告"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4c38a04ebb21e0a80c3526d8ef70e92c",
+      "title": "《公司盈警》興達國際(01899)料中期溢利減少逾60%",
+      "description": "<匯港通訊> 興達國際(01899)發盈警,預期截至2026年6月30日止6個月公司擁有人應佔溢利將較去年同期減少約60%至75%,去年同期溢利約1.989億元。溢利減少主要由於公司由匯兌收益淨額轉為於「其他收益及虧損」項下確認的匯兌虧損淨額,主要由於匯率波動所致;該公司「其他收益」項下銀行利息收入減少,主要由於...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E8%88%88%E9%81%94%E5%9C%8B%E9%9A%9B-01899-%E6%96%99%E4%B8%AD%E6%9C%9F%E6%BA%A2%E5%88%A9%E6%B8%9B%E5%B0%91%E9%80%BE60-145543828.html",
+      "pubDate": "2026-08-17 14:55:43",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊> 興達國際"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "80d40e60f4fcf6ee762526167f024d26",
+      "title": "宇樹科技周三科創板上市 中籤率低至0.018% 首掛或賺逾20萬人幣",
+      "description": "A股「人形機器人第一股」宇樹科技(688836.SH)公告稱,將於本周三(19日)在上交所科創板上市。據澎湃新聞,宇樹科技將於上市當天舉辦答謝午宴。宇",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60380908/%E5%AE%87%E6%A8%B9%E7%A7%91%E6%8A%80%E5%91%A8%E4%B8%89%E7%A7%91%E5%89%B5%E6%9D%BF%E4%B8%8A%E5%B8%82-%E4%B8%AD%E7%B1%A4%E7%8E%87%E4%BD%8E%E8%87%B30-018-%E9%A6%96%E6%8E%9B%E6%88%96%E8%B3%BA%E9%80%BE20%E8%90%AC%E4%BA%BA%E5%B9%A3",
+      "pubDate": "2026-08-17 14:54:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260512/1130864745901985792892314.png/ocP0E4-r3lyK6xQhcZt83H39-ynjJPB23iZiO94mYjs",
+      "keywords": [
+        "恆生指數",
+        "財經台",
+        "財經新聞",
+        "財經網",
+        "地產消息",
+        "a股",
+        "股票",
+        "港股",
+        "財經透視",
+        "經濟",
+        "新聞",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2c244dab717294578c68a45c1baa2747",
+      "title": "《公司盈警》經緯天地(02477)料中期業績由盈轉虧",
+      "description": "<匯港通訊> 經緯天地(02477)發盈警,預期截至2026年6月30日止六個月將錄得公司擁有人應佔淨虧損不超過約4500萬元人民幣(下同),而2025年同期則錄得公司擁有人應佔淨溢利約771.7萬元。虧損淨額主要是由於按公平值計入損益的金融資產的公平值虧損;受市場趨於飽和、行業競爭加劇以及營運成本上升的影響,集...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E7%B6%93%E7%B7%AF%E5%A4%A9%E5%9C%B0-02477-%E6%96%99%E4%B8%AD%E6%9C%9F%E6%A5%AD%E7%B8%BE%E7%94%B1%E7%9B%88%E8%BD%89%E8%99%A7-145319845.html",
+      "pubDate": "2026-08-17 14:53:19",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ea8c2793485f50b77ac6a16be7c1d6b2",
+      "title": "《盈警》上美股份(02145.HK)預告中期利潤跌76.6%-78.4%",
+      "description": "上美股份(02145.HK)發盈警,預計6月止六個月利潤介乎1.2億至1.3億人民幣,較去年同期減少76.6%-78.4%。收入介乎37.18億至37.59億人民幣,預計減少8.5%-9.5%。主要由於集團收入佔比較高的科學抗衰護膚品牌韓束受階段性市場因素影響,銷售收入有所下降,該品牌對集團貢獻的毛利相應減少;及...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%9B%88%E8%AD%A6-%E4%B8%8A%E7%BE%8E%E8%82%A1%E4%BB%BD-02145-hk-%E9%A0%90%E5%91%8A%E4%B8%AD%E6%9C%9F%E5%88%A9%E6%BD%A4%E8%B7%8C76-145318117.html",
+      "pubDate": "2026-08-17 14:53:18",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9759be42e6d10db8b760d9b77ec80fe5",
+      "title": "國藥控股(01099.HK)附屬國藥一致半年賺6.06億人民幣 倒退9%",
+      "description": "國藥控股(01099.HK)公布,附屬國藥一致(000028.SZ)上半年業績,營業總收入362.66億人民幣(下同),按年下降1.4%。歸屬股東淨利潤6.06億元,倒退9%,每股收益99分。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E5%9C%8B%E8%97%A5%E6%8E%A7%E8%82%A1-01099-hk-%E9%99%84%E5%B1%AC%E5%9C%8B%E8%97%A5-%E8%87%B4%E5%8D%8A%E5%B9%B4%E8%B3%BA6-145234437.html",
+      "pubDate": "2026-08-17 14:52:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5284db392def614f9e82e3eeeeaa63d5",
+      "title": "《公司盈警》山高新能源(01250)料中期溢利減少",
+      "description": "<匯港通訊> 山高新能源(01250)發盈警,預期截至2026年6月30日止6個月錄得公司權益持有人應佔溢利介乎約1.39億至1.7億元人民幣(下同),去年同期溢利約2.87億元。溢利減少主要由於電力消納受限加劇;綜合平均電價下降;及風光資源下降綜合導致發電收入較上年同期減少之影響所致。 (WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E5%B1%B1%E9%AB%98%E6%96%B0%E8%83%BD%E6%BA%90-01250-%E6%96%99%E4%B8%AD%E6%9C%9F%E6%BA%A2%E5%88%A9%E6%B8%9B%E5%B0%91-145111232.html",
+      "pubDate": "2026-08-17 14:51:11",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cd9eb8c1f1618f25ee17e3b72231cdc2",
+      "title": "美媒:伊朗談判期內持續為更大規模衝突做準備 未寄希望和談",
+      "description": "伊朗和阿拉伯國家官員透露,美伊今年6月簽署停戰備忘錄後,伊朗強硬派領導人並沒有寄希望於談判,而是利用過去兩個月的時間,為一場更大規模的衝突",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380905/%E7%BE%8E%E5%AA%92-%E4%BC%8A%E6%9C%97%E8%AB%87%E5%88%A4%E6%9C%9F%E5%85%A7%E6%8C%81%E7%BA%8C%E7%82%BA%E6%9B%B4%E5%A4%A7%E8%A6%8F%E6%A8%A1%E8%A1%9D%E7%AA%81%E5%81%9A%E6%BA%96%E5%82%99-%E6%9C%AA%E5%AF%84%E5%B8%8C%E6%9C%9B%E5%92%8C%E8%AB%87",
+      "pubDate": "2026-08-17 14:50:43",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260726/1158130962530308096542638.jpeg/57al301x4x7YlOU6-FZpYE4kteu6mGjRbuBdb27gXW8",
+      "keywords": [
+        "環球",
+        "世界新聞",
+        "國際新聞",
+        "新聞",
+        "香港01",
+        "hk01",
+        "國際"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ab5e24fa9131512dbe0f2425be4c4de3",
+      "title": "《公司盈警》上美股份(02145)料中期利潤減少逾78.4%",
+      "description": "<匯港通訊> 上美股份(02145)發盈警,預期截至截至2026年6月30日止六個月公司利潤介乎約1.2億至1.3億元人民幣(下同),較截至2025年6月30日止六個月公司利潤約5.556億元減少約78.4%至76.6%。根據目前可得資料,收入減少主要由於集團收入佔比較高的科學抗衰護膚品牌韓束受階段性市場因素影響...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E4%B8%8A%E7%BE%8E%E8%82%A1%E4%BB%BD-02145-%E6%96%99%E4%B8%AD%E6%9C%9F%E5%88%A9%E6%BD%A4%E6%B8%9B%E5%B0%91%E9%80%BE78-4-144908270.html",
+      "pubDate": "2026-08-17 14:49:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "99e139132f04070b2d12478b03f15714",
+      "title": "家長注意|北京消協約談20間兒童寢具商 「金多喜」鉛超標逾10倍",
+      "description": "北京市消費者協會日前依據《中華人民共和國消費者權益保護法實施條例》約談內地20間兒童寢具及傢俬生產企業,並通報比較試驗檢測結果。測試顯示,多個品牌存在警示標籤、結構安全或有害物質方面隱患,其中品牌「金多喜」的樣品重金屬鉛含量更超標高達10倍以上。 相關新聞:家長注意|寧波7歲女童乳房發育 揭一種玩具擾亂內分泌導致 15款產品標籤不全 北京消協指,今次比較試驗的20款樣品由工作人員由電商平台、實體傢",
+      "link": "https://www.stheadline.com/realtime-china/3605375/%E5%AE%B6%E9%95%B7%E6%B3%A8%E6%84%8F%E5%8C%97%E4%BA%AC%E6%B6%88%E5%8D%94%E7%B4%84%E8%AB%8720%E9%96%93%E5%85%92%E7%AB%A5%E5%AF%A2%E5%85%B7%E5%95%86-%E9%87%91%E5%A4%9A%E5%96%9C%E9%89%9B%E8%B6%85%E6%A8%99%E9%80%BE10%E5%80%8D",
+      "pubDate": "2026-08-17 14:46:54",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/120d0c6680937c328704f4513f2746f9/2026-08/KF_3__7.jpg",
+      "keywords": [
+        "重金屬",
+        "兒童床"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e4755262c6fa9f39e915ac18096bc1c1",
+      "title": "般奴屬非賣球員 曼聯不受任何開價",
+      "description": "【Now Sports】曼聯隊長般奴費蘭迪斯在隊中重要性,已經不用多說,據英國廣播公司早前報道,球會包括土超的加拉塔沙雷、意甲的祖雲達斯及AC米蘭,都對這位葡萄牙國腳有興趣,只是紅魔鬼並無意出售他,甚至續列其為非賣球員。現年31歲的般奴費蘭迪斯(Bruno Fernandes)目前與曼聯尚有1年合約,但可以有續約...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%88%AC%E5%A5%B4%E5%B1%AC%E9%9D%9E%E8%B3%A3%E7%90%83%E5%93%A1-%E6%9B%BC%E8%81%AF%E4%B8%8D%E5%8F%97%E4%BB%BB%E4%BD%95%E9%96%8B%E5%83%B9-144538386.html",
+      "pubDate": "2026-08-17 14:45:38",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "般奴費蘭迪斯",
+        "曼聯",
+        "加拉塔沙雷",
+        "英國廣播公司",
+        "蘭迪斯"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "af0fb9ebf103859d74ad810c024e5f17",
+      "title": "Opatra London回應跪地痛哭事件 強調無強迫消費 曾酌情退回1.6萬元 英總公司割席",
+      "description": "近日網上流傳一段影片,沙田新城市廣場美妝店「Opatra London」門前,有一名中年婦人跪地痛哭,稱遭該店職員以不良銷售手法推銷,涉款約6萬元。警方證實收到報案,海關亦正跟進事件。涉事的Opatra London新城市廣場分店,以及其在元朗YOHO Mall的分店,昨日(16日)均暫停營業。 英總公司:不擁有或經營香港OPATRA品牌店舖 Opatra London今日(17日)發聲明回應事件",
+      "link": "https://www.stheadline.com/society/3605374/Opatra-London%E5%9B%9E%E6%87%89%E8%B7%AA%E5%9C%B0%E7%97%9B%E5%93%AD%E4%BA%8B%E4%BB%B6-%E5%BC%B7%E8%AA%BF%E7%84%A1%E5%BC%B7%E8%BF%AB%E6%B6%88%E8%B2%BB-%E6%9B%BE%E9%85%8C%E6%83%85%E9%80%80%E5%9B%9E16%E8%90%AC%E5%85%83-%E8%8B%B1%E7%B8%BD%E5%85%AC%E5%8F%B8%E5%89%B2%E5%B8%AD",
+      "pubDate": "2026-08-17 14:41:09",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/lr/sthl_square/7441128e529f21ba26cc103fa04a3e43/2026-08/WhatsApp_Image_2026-08-16_at_3_14_48_PM_0.jpeg",
+      "keywords": [
+        "opatra",
+        "新城市廣場"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b7bf8279088ac4c51b70a8f51ba99fe3",
+      "title": "特朗普警告阿曼勿阻礙重開海峽 否則狠狠轟炸",
+      "description": "中評社北京8月17日電/當地時間8月17日,美國總統特朗普在接受採訪時表示,如果阿曼“阻礙美國重新開放霍爾木茲海峽、結束伊朗戰爭的努力”,美國將對阿曼實施轟炸。 央視新聞報導,特朗普表示:“如果阿曼阻礙我們,我們將狠狠轟炸他們。” 此外,特朗普還證實他與伊朗伊斯蘭革命衛隊官員之間存在秘密溝通渠道,並稱他“不著急”解決伊朗問題。",
+      "link": "http://www.crntt.com/doc/7_0_107224993_1_0817224057.html",
+      "pubDate": "2026-08-17 14:40:57",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3ca5f0e27583f33319ad8b9c275e4a9c",
+      "title": "美國“縮減”美韓聯合軍演規模暴露政策挫敗感",
+      "description": "中評社北京8月17日電/韓國和美國軍方17日開始舉行代號為“乙支自由之盾”的聯合軍演。與此同時,美國總統特朗普卻稱軍演向朝鮮釋放“敵對信號”,他已要求“大幅縮減”軍演規模。他還暗批韓國不配合美國對伊朗政策。 新華社報導,分析人士認為,特朗普宣佈調整軍演規模並非有意緩和地區局勢,更多是尋求外界關注和外交加分。此舉是美國現任政府脅迫盟友的慣用套路,暴露出其在朝鮮半島和伊朗問題上陷入政策僵",
+      "link": "http://www.crntt.com/doc/7_0_107225008_1_0817223431.html",
+      "pubDate": "2026-08-17 14:34:31",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6067fdc3eae374f486ae219fcf2a6676",
+      "title": "伊朗議長:美以對伊戰爭9個正式目標均未達成",
+      "description": "中評社北京8月17日電/據央視新聞:當地時間8月16日,伊朗伊斯蘭議會議長、伊朗首席談判代表卡利巴夫表示,美國、以色列在對伊朗的戰爭中,9個正式目標均未能達成,伊朗取得了“名副其實”的勝利,伊美諒解備忘錄就是這一勝利榮耀的見證文件。 據瞭解,卡利巴夫所說的“9個正式目標”,指的是美國此前提出的“伊朗徹底投降”“政權更迭”“伊朗不得發展核武器”“伊朗停止支持其在中東的代理人”等。",
+      "link": "http://www.crntt.com/doc/7_0_107224994_1_0817223048.html",
+      "pubDate": "2026-08-17 14:30:48",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "25cf8c08f2aff83c0899b228cb913673",
+      "title": "澳洲放緩審批工作假期簽證 暫停24國申請",
+      "description": "澳洲政府近期為控制移民數量,正逐步放緩審批工作假期簽證(working holiday visa)並暫停接受來自24個國家的申請。該簽證允許外國旅客在當地旅行",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380890/%E6%BE%B3%E6%B4%B2%E6%94%BE%E7%B7%A9%E5%AF%A9%E6%89%B9%E5%B7%A5%E4%BD%9C%E5%81%87%E6%9C%9F%E7%B0%BD%E8%AD%89-%E6%9A%AB%E5%81%9C24%E5%9C%8B%E7%94%B3%E8%AB%8B",
+      "pubDate": "2026-08-17 14:30:41",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20240207/831953896925564928784216.jpeg/WwPA5TO2NUafjb-Tmco3lo8EPGeMYhTVuY6unbmOrp0",
+      "keywords": [
+        "環球",
+        "世界新聞",
+        "國際新聞",
+        "新聞",
+        "香港01",
+        "hk01",
+        "國際"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "33e3a8d1823eeb5622225760899809c3",
+      "title": "中年好聲音4決賽|台灣選手吳亦偉口音無阻爭三甲 出身音樂世家 胞姊唱紅《甄嬛傳》歌曲",
+      "description": "TVB節目《中年好聲音4》總決賽將於8月23日假啟德體藝館舉行,由車婉婉擔任主持,並由肥媽(Maria Cordero)、張佳添、周國豐、海兒及谷婭溦擔任評審,更特邀李克勤與巫啟賢出任嘉賓評審。現時7強名單包括:尹景順、吳亦偉、尤淑情、許雲妮、許美琪、蔡宓婕及鄭家聲,他們將於總決賽爭奪冠軍寶座。當中43歲的台灣代表吳亦偉成為最具爭議性的選手,在早前賽事中選唱側田的〈決戰二世祖〉、衛蘭的〈驗傷〉等粵",
+      "link": "https://www.stheadline.com/film-drama/3603763/%E4%B8%AD%E5%B9%B4%E5%A5%BD%E8%81%B2%E9%9F%B34%E6%B1%BA%E8%B3%BD%E5%8F%B0%E7%81%A3%E9%81%B8%E6%89%8B%E5%90%B3%E4%BA%A6%E5%81%89%E5%8F%A3%E9%9F%B3%E7%84%A1%E9%98%BB%E7%88%AD%E4%B8%89%E7%94%B2-%E5%87%BA%E8%BA%AB%E9%9F%B3%E6%A8%82%E4%B8%96%E5%AE%B6-%E8%83%9E%E5%A7%8A%E5%94%B1%E7%B4%85%E7%94%84%E5%AC%9B%E5%82%B3%E6%AD%8C%E6%9B%B2",
+      "pubDate": "2026-08-17 14:30:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/c6f30ed466e3379b2cd6c865e9964db0/2026-08/Copy_of_KF__62.png",
+      "keywords": [
+        "吳亦偉",
+        "肥媽",
+        "蔡宓婕",
+        "中年好聲音4 7強",
+        "許美琪",
+        "張佳添",
+        "許雲妮",
+        "中年好聲音4決賽時間",
+        "鄭家聲",
+        "尹景順",
+        "中年好聲音4總決賽",
+        "啟德體藝館",
+        "尤淑情",
+        "車婉婉",
+        "中年好聲音4冠軍",
+        "中年好聲音4"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d2206896593f5e198b030103577993ce",
+      "title": "移卡有限公司將於2026年8月27日公佈2026年中期業績",
+      "description": "香港2026年8月17日 /美通社/ -- 以支付爲基礎領先的科技平台---移卡有限公司(簡稱\"移卡\"或\"公司\",股份代號:9923.HK)今天宣佈,公司將公佈其截至2026年6月30日的六個月的未經審計財務業績。 公司創始人兼 CEO 劉穎麒先生、CFO 姚志堅先生和企業發展及資本市場部主管陳瀚賢先生、財務部總經理兼董秘黎進達先生和高級投資者關係專家楊楠先生將於北京時間2026年8月27日晚上8時(美東時間早上8時)主持業績發佈會。 參會指引 請點擊以下連結進行預先登記。...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/20268272026-302852940.html",
+      "pubDate": "2026-08-17 14:28:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": null,
+      "keywords": [
+        "bfa",
+        "cca"
+      ],
+      "category": [
+        "technology",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0d10ea11d666e9c7fc97a4d2b00cf010",
+      "title": "伊朗革命衛隊否認與美國通過秘密渠道對話",
+      "description": "中評社北京8月17日電/新華社援引伊朗媒體17日報導,伊朗伊斯蘭革命衛隊發言人說,革命衛隊官員並未與美國方面通過秘密渠道進行對話。",
+      "link": "http://www.crntt.com/doc/7_0_107224997_1_0817222713.html",
+      "pubDate": "2026-08-17 14:27:13",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "309539bb508150e664020b9d20b31e85",
+      "title": "美衛生部長之子曾為烏克蘭作戰 俄發出通緝令",
+      "description": "中評社香港8月17日電/美國衛生與公共服務部長小羅勃甘迺迪(Robert F. Kennedy Jr.),對俄烏戰爭的立場在屬於“各打五十大板”。他承認俄羅斯攻擊烏克蘭,但同時認為美國及北約東擴政策也對戰爭爆發負有一定責任,主張透過外交協商結束戰爭,反對持續升高美俄直接衝突的風險。 中時新聞網報導,不過,他的兒子康納.甘迺迪(Conor Kennedy)對戰爭的態度卻截然不同。康納在",
+      "link": "http://www.crntt.com/doc/7_0_107225006_1_0817222458.html",
+      "pubDate": "2026-08-17 14:24:57",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "752e81bf85d223fcf25297a256ed977c",
+      "title": "60天談判期已滿 美國“體面退出”成奢望",
+      "description": "中評社北京8月17日電/17日,美國和伊朗諒解備忘錄所設定的60天談判窗口期期滿。雙方6月中旬遠程簽署這一備忘錄,承諾在60天內進行談判並達成最終協議。 新華社報導,分析人士認為,美國特朗普政府原本希望通過諒解備忘錄恢復霍爾木茲海峽通航,並為下一步核問題談判創造條件,最終實現從伊朗戰事中“體面退出”。然而,由於在霍爾木茲海峽等問題上存在嚴重分歧且缺乏互信,美伊過去60天裡再次發生激烈",
+      "link": "http://www.crntt.com/doc/7_0_107224995_1_0817220935.html",
+      "pubDate": "2026-08-17 14:09:35",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f74432ccabd37a7e5eb2628a6d9d0dd5",
+      "title": "XPPen發佈Artist Ultra 14,以更便攜的形態帶來專業繪畫性能",
+      "description": "洛杉磯2026年8月17日 /美通社/ -- 全球數字藝術創新領導者XPPen今日發佈Artist Ultra 14。這是一款超清真彩便攜手繪屏,配備2.8K OLED真彩屏、工作室級色彩表現、先進的X-Touch觸控解決方案,以及超纖薄設計。值此XPPen成立21週年之際,Artist Ultra 14將旗艦級性能與卓越便攜性相結合,讓創作者無論靈感何時迸發,都能隨時隨地揮灑專業創意。 XPPen市場總監Brian Huang表示:「創意工作流日益靈活,當今創作者需要能夠適配自身工作方式的工具。Artist Ultra...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/xppenartist-ultra-14-302847833.html",
+      "pubDate": "2026-08-17 14:06:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1966645/20260809230929EDT_image_2.jpg?id=OA2850629&p=original",
+      "keywords": [
+        "pdt"
+      ],
+      "category": [
+        "technology",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fa410dba423358756a1ed2637c63aef9",
+      "title": "特朗普宣布大幅縮編美韓年度軍演規模意在向平壤示好?",
+      "description": "美國與韓國17日啟動年度聯合軍演“乙支自由護盾”。然而就在演習啟動前幾小時,美國總統特朗普16日在他旗下的社交媒體“真相社交“平台上貼文稱,他已要求五角大樓大幅縮減美韓聯合軍演規模。韓國國防部17日宣布這次聯合軍演已經如期啟動。特朗普此番表述是否只是對韓國此前不願參與美國對伊朗的軍事行動而發泄不滿不得而知,但它無疑令美國的東亞戰略以及印太戰略更多了一層模糊的面紗。",
+      "link": "https://www.rfi.fr/tw/%E5%B0%88%E6%AC%84%E6%AA%A2%E7%B4%A2/%E8%A6%81%E8%81%9E%E8%A7%A3%E8%AA%AA/20260817-%E7%89%B9%E6%9C%97%E6%99%AE%E5%AE%A3%E5%B8%83%E5%A4%A7%E5%B9%85%E7%B8%AE%E7%B7%A8%E7%BE%8E%E9%9F%93%E5%B9%B4%E5%BA%A6%E8%BB%8D%E6%BC%94%E8%A6%8F%E6%A8%A1%E6%84%8F%E5%9C%A8%E5%90%91%E5%B9%B3%E5%A3%A4%E7%A4%BA%E5%A5%BD",
+      "pubDate": "2026-08-17 14:05:05",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/40d7a304-9a35-11f1-8bf5-005056bfb2b6/w:1024/p:16x9/AP26229310643684.jpg",
+      "keywords": [
+        "要聞解說"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a8fe748cc17ec1c8e7e0e537765ce67e",
+      "title": "香港代表團揚威2026矽谷國際發明節 各大院校科研創新成果豐碩",
+      "description": "本港大學積極投入科研,由多校組成的香港代表團在2026年矽谷國際發明節中勇創佳績。本屆發明節匯聚全球30多個國家、逾500位發明家參與,作為國際創科交流的重要平台,香港代表團表示出色,一舉奪得全場最高榮譽大獎、8項特別獎、22個金獎及13個銀獎,教育大學、嶺南大學、浸會大學等院校的科研項目脫穎而出。 創新科技及工業局局長孫東對獲獎科研團隊致以祝賀。他表示,本港代表團在國際發明節的豐碩收穫,是特區政",
+      "link": "https://www.stheadline.com/edu-news/3605358/%E9%A6%99%E6%B8%AF%E4%BB%A3%E8%A1%A8%E5%9C%98%E6%8F%9A%E5%A8%812026%E7%9F%BD%E8%B0%B7%E5%9C%8B%E9%9A%9B%E7%99%BC%E6%98%8E%E7%AF%80-%E5%90%84%E5%A4%A7%E9%99%A2%E6%A0%A1%E7%A7%91%E7%A0%94%E5%89%B5%E6%96%B0%E6%88%90%E6%9E%9C%E8%B1%90%E7%A2%A9",
+      "pubDate": "2026-08-17 14:04:34",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/155ee3194a7e94e90ed8e6db66219b49/2026-08/jpg__0.jpg",
+      "keywords": null,
+      "category": [
+        "science",
+        "top"
+      ],
+      "region": "hk"
+    },
     {
       "id": "55473229d868bb7c7508dbb0c58e7d99",
       "title": "《盈喜》亨鑫科技(01085.HK)預告半年轉賺最多1,000萬人民幣",
@@ -104080,6 +104546,20 @@
       "category": [
         "top",
         "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "aabf701fe736dfbd",
+      "title": "鍾鎮濤女兒︱阿B愛女鍾懿越大越似媽咪　繼承衣缽入行騷實力挑戰「最美星二代」位置",
+      "description": "【鍾鎮濤 / 阿B / 鍾懿】鍾鎮濤（阿B）與太太范姜素貞的大女鍾懿（Blythe）今年已22歲，對演藝行業有興趣的她，獲父親鍾鎮濤力撐入行。早前鍾懿參加內地綜藝節目《閃光的夏天》時，鍾鎮濤親自轉發海...",
+      "link": "https://topick.hket.com/article/4178105",
+      "pubDate": "2026-08-18 10:11:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4178105/Blythe20260818_THUMB_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
       ],
       "region": "hk"
     },
