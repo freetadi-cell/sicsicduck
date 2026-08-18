@@ -1326,9 +1326,11 @@ function renderTable() {
             else if (currentFunds === 'existing') slot = periodData['existing_funds'] ? 'existing_funds' : 'general';
             else if (currentFunds === 'exchange') slot = 'exchange';
             else if (currentFunds === 'best') {
-                // "不限資金" - return the highest rate from any slot
+                // "不限資金" - only general/new_funds/existing_funds (filter new_customer/exchange)
+                const excludeSlots = ['new_customer', 'exchange'];
                 let maxRate = null;
                 for (const s of slots) {
+                    if (excludeSlots.includes(s)) continue;
                     const slotData = periodData[s];
                     if (slotData && slotData.rate != null) {
                         if (maxRate === null || slotData.rate > maxRate) {
@@ -1338,7 +1340,7 @@ function renderTable() {
                 }
                 return maxRate;
             }
-            else slot = 'general'; // 預設顯示不限資金牌價（general）
+            else slot = 'general';
 
             const slotData = periodData[slot];
             if (!slotData || slotData.rate == null) return null;
@@ -1451,9 +1453,11 @@ function renderTable() {
                     else if (currentFunds === 'existing') slot = rateData['existing_funds'] ? 'existing_funds' : 'general';
                     else if (currentFunds === 'exchange') slot = 'exchange';
                     else if (currentFunds === 'best') {
-                        // "不限資金" - find the highest rate from any slot
+                        // "不限資金" - only general/new_funds/existing_funds (filter new_customer/exchange)
+                        const excludeSlots = ['new_customer', 'exchange'];
                         let maxRate = null;
                         for (const s of slots) {
+                            if (excludeSlots.includes(s)) continue;
                             const sd = rateData[s];
                             if (sd && sd.rate != null) {
                                 if (maxRate === null || sd.rate > maxRate) {
@@ -1465,7 +1469,7 @@ function renderTable() {
                         }
                         displayRate = maxRate;
                     }
-                    else slot = 'general'; // 預設顯示不限資金牌價（general）
+                    else slot = 'general';
 
                     if (slot && !slotData) {
                         slotData = rateData[slot];
@@ -1540,9 +1544,11 @@ function renderTable() {
                 else if (currentFunds === 'existing') slot = noteData['existing_funds'] ? 'existing_funds' : null;
                 else if (currentFunds === 'exchange') slot = noteData['exchange'] ? 'exchange' : null;
                 else if (currentFunds === 'best') {
-                    // "不限資金" - find which slot has the highest rate
+                    // "不限資金" - only general/new_funds/existing_funds (filter new_customer/exchange)
+                    const excludeSlots = ['new_customer', 'exchange'];
                     let maxRate = null;
                     for (const s of noteSlots) {
+                        if (excludeSlots.includes(s)) continue;
                         const slotData = noteData[s];
                         if (slotData && slotData.rate != null) {
                             if (maxRate === null || slotData.rate > maxRate) {
@@ -1552,7 +1558,7 @@ function renderTable() {
                         }
                     }
                 }
-                else slot = 'existing_funds'; // Default
+                else slot = 'existing_funds';
 
                 const slotData = slot ? noteData[slot] : null;
                 note = slotData?.note || '';
