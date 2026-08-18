@@ -1,95 +1,163 @@
 {
+  "last_updated": "2026-08-18T16:04:36.709413",
+  "total": 5491,
   "articles": [
     {
-      "id": "8696001ac4f27df0c20573b33f947804",
-      "title": "城堡證券:美債殖利率飆升反映聯儲會政策風險 下次利率會議結果難料",
-      "description": "【彭博】-- 城堡證券表示,在通膨長期高於目標的情況下,聯儲會仍不願進一步收緊貨幣政策,這使長期債券殖利率維持在多年高位並對更廣泛的市場構成風險。城堡證券歐洲、中東和非洲固定收益銷售主管Nohshad Shah在一份客戶報告中寫道,儘管政策利率已經較峰值低175個基點,長期美債殖利率仍處在近20年來最高水平。推薦...",
-      "link": "https://hk.finance.yahoo.com/news/%E5%9F%8E%E5%A0%A1%E8%AD%89%E5%88%B8-%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%A3%86%E5%8D%87%E5%8F%8D%E6%98%A0%E8%81%AF%E5%84%B2%E6%9C%83%E6%94%BF%E7%AD%96%E9%A2%A8%E9%9A%AA-%E4%B8%8B%E6%AC%A1%E5%88%A9%E7%8E%87%E6%9C%83%E8%AD%B0%E7%B5%90%E6%9E%9C%E9%9B%A3%E6%96%99-175730737.html",
-      "pubDate": "2026-08-17 17:57:30",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/50d0053a1a95728f80033e2041e04a4a.jpg",
-      "keywords": [
-        "長期債券殖利率",
-        "進一步收緊",
-        "聯儲會"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "c4dfc40ecd72a3b90581fda96d94c0d9",
-      "title": "拋售潮繼續衝擊長期美債 30年期殖利率升至近二十年最高水平",
-      "description": "【彭博】-- 美國30年期國債殖利率升至近20年來最高水平,因投資者擔心美國國債規模激增、長期國債供應大增,以及通膨過去五年持續高於聯儲會目標。30年期殖利率周一上漲3個基點,至5.29%,為2007年以來最高水平,進一步逼近全球金融危機初期創下的5.",
-      "link": "https://hk.finance.yahoo.com/news/%E6%8B%8B%E5%94%AE%E6%BD%AE%E7%B9%BC%E7%BA%8C%E8%A1%9D%E6%93%8A%E9%95%B7%E6%9C%9F%E7%BE%8E%E5%82%B5-30%E5%B9%B4%E6%9C%9F%E6%AE%96%E5%88%A9%E7%8E%87%E5%8D%87%E8%87%B3%E8%BF%91%E4%BA%8C%E5%8D%81%E5%B9%B4%E6%9C%80%E9%AB%98%E6%B0%B4%E5%B9%B3-171406857.html",
-      "pubDate": "2026-08-17 17:14:06",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/57f82b3b83925037f8206e7613f55f46.jpg",
-      "keywords": [
-        "retirement",
-        "investing",
-        "economy",
-        "business",
-        "stocks",
-        "track portfolio",
-        "stock",
-        "financial information",
-        "finance",
-        "stock research",
-        "business news",
-        "tax",
-        "real estate",
-        "suze orman",
-        "stock valuation",
-        "investment tools",
-        "mutual funds",
-        "mortgage",
-        "quote",
-        "personal finance"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "2c39de1f3395c68ce84c090902309ea3",
-      "title": "更新:中東局勢緊張拖累股市盤中下跌 油價上升",
-      "description": "美國基準股指周一中午後盤中下跌,油價則上升,因華盛頓與伊朗之間的停火協議到期,且未見短期內重啟接觸的跡象。 道瓊斯工業平均指數午後跌0.5%至53,484.5,標普500指數跌0.4%至7,756.7,納斯達克綜合指數跌0.3%至26,647.9。板塊方面,通訊服務板塊跌幅最大,能源板塊表現最佳。 紐約西德州中質...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E7%B7%8A%E5%BC%B5%E6%8B%96%E7%B4%AF%E8%82%A1%E5%B8%82%E7%9B%A4%E4%B8%AD%E4%B8%8B%E8%B7%8C-%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-180130581.html",
-      "pubDate": "2026-08-17 18:01:30",
+      "id": "3453a6bc4bf51a37a16e62129aae874b",
+      "title": "Redfin稱住房及托兒開支佔美國典型家庭年收入逾半",
+      "description": "Redfin周一表示,一個典型在職家庭將逾半數年收入用於住房及托兒開支,而在洛杉磯,有關比例更升至97%。 Redfin比較美國100個最大都會區購買房屋及安排一名子女托兒服務的年度成本,與家庭收入中位數之間的關係。托兒數據採用Winnie資料。 報告顯示,全美住房及托兒成本佔收入中位數52%。阿肯色州Littl...",
+      "link": "https://hk.finance.yahoo.com/news/redfin%E7%A8%B1%E4%BD%8F%E6%88%BF%E5%8F%8A%E6%89%98%E5%85%92%E9%96%8B%E6%94%AF%E4%BD%94%E7%BE%8E%E5%9C%8B%E5%85%B8%E5%9E%8B%E5%AE%B6%E5%BA%AD%E5%B9%B4%E6%94%B6%E5%85%A5%E9%80%BE%E5%8D%8A-195148160.html",
+      "pubDate": "2026-08-17 19:51:48",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "道瓊斯工業平均指數",
-        "霍爾木茲海峽"
+        "托兒",
+        "最大都會區",
+        "redfin"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "09c0d8ca34597b974030a37c219a571a",
-      "title": "香港首半年GDP升 港府上調全年預測至3.5%至4.5% 惟仍較台灣和星洲遜色",
-      "description": "基於全球對人工智能(AI)相關電子產品需求殷切而帶動外質,香港第二季的本地生產總值(GDP)增長達 4.3%,增幅雖較第一季放緩,但仍令香港上半年的經濟增長達 5.1%,創近五年的半年新高,港府隨之把全年經濟增長預測調高一個百分點到「3.5%至4.5%」。不過,與同樣受惠於AI相關產品的的台灣和區內競爭對手新加坡相比,香港的增幅卻略為遜色,因為兩地分別把全年經濟預測上調至 11.05%和「4.5% 至 5.5%」。",
-      "link": "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20260817-%E9%A6%99%E6%B8%AF%E9%A6%96%E5%8D%8A%E5%B9%B4gdp%E5%8D%87-%E6%B8%AF%E5%BA%9C%E4%B8%8A%E8%AA%BF%E5%85%A8%E5%B9%B4%E9%A0%90%E6%B8%AC%E8%87%B33-5-%E8%87%B34-5-%E6%83%9F%E4%BB%8D%E8%BC%83%E5%8F%B0%E7%81%A3%E5%92%8C%E6%98%9F%E6%B4%B2%E9%81%9C%E8%89%B2",
-      "pubDate": "2026-08-17 06:50:51",
-      "source_name": "Rfi",
-      "image_url": "https://s.rfi.fr/media/display/b90497fc-9a07-11f1-b343-005056bfb2b6/w:1024/p:16x9/17-8-%E9%A6%99%E6%B8%AF%E4%BB%8A%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%BB%8F%E6%B5%8E%E6%88%90%E7%BB%A9%E4%BA%AE%E4%B8%BD-%E6%B8%AF%E5%BA%9C%E9%9A%8F%E4%B9%8B%E6%8A%8A%E5%85%A8%E5%B9%B4%E6%9C%AC%E5%9C%B0%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%E4%B8%8A%E4%BF%AE%E8%87%B33-5-%E8%87%B34-5-%E9%BA%A6%E7%87%95%E5%BA%AD%E6%8F%90%E4%BE%9B.jpg",
+      "id": "95cef0010f1fa00d2f59f3a7a165054d",
+      "title": "LIV Golf提早結束賽季 取消密歇根團體賽",
+      "description": "LIV Golf 周一宣布,將提早一周結束今個賽季,下周不會在密歇根州舉行團體錦標賽,改為本周在印第安納州決出團體冠軍。 今年共舉行十二場賽事,其中新奧爾良站早前已延期。這是該聯賽自二零二二年獲沙特阿拉伯巨額注資成立以來,最短的賽程。 莊.拉姆已連續第三年鎖定個人賽季冠軍。LIV Golf 印第安納站將於周四在查塔姆山俱樂部展開,該站賽事將決定球員個人賽的第二、三名,以及團體冠軍誰屬。 沙特阿拉伯公共投資基金是這個競爭聯賽從一開始的財政支柱,該基金已於三月決定,今年將是最後一年提供資金。LIV Golf 本月初宣布,已與主要投資者達成協議,該協議將支持二零二七年新版本的聯賽運作。 LIV Golf 密歇根站取消並不令人意外。近期有報道指,該賽事甚至尚未開始搭建看台及其他設施。 LIV Golf 表示,門票將會退款。該機構又指,已取消原定為印第安納站賽事安排的娛樂節目。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16589262-liv-golf%E6%8F%90%E6%97%A9%E7%B5%90%E6%9D%9F%E8%B3%BD%E5%AD%A3-%E5%8F%96%E6%B6%88%E5%AF%86%E6%AD%87%E6%A0%B9%E5%9C%98%E9%AB%94%E8%B3%BD",
+      "pubDate": "2026-08-17 19:46:25",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/04a06372ca49e8cb560a118f3d63bd0c_LIV_Golf_46158_FB.jpg",
       "keywords": [
-        "港台"
+        "高爾夫球",
+        "liv golf",
+        "密歇根",
+        "體育",
+        "賽季",
+        "印第安納"
       ],
       "category": [
-        "business",
+        "sports",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "3d11749c9015d068021cb6c351edf4ee",
+      "title": "Tigress:沃爾瑪持續強勁電子商務增長將鞏固盈利樂觀看法",
+      "description": "Tigress Financial Partners周一表示,沃爾瑪(WMT.US)若持續錄得強勁電子商務增長及廣告業務強勁動力,將鞏固其對該零售巨頭盈利增長可「遠快於」零售銷售增長的看法。 沃爾瑪於5月公布,其2027財年第一季度全球電子商務銷售增長26%,全球廣告業務則急升37%。 Tigress首席市場策略...",
+      "link": "https://hk.finance.yahoo.com/news/tigress-%E6%B2%83%E7%88%BE%E7%91%AA%E6%8C%81%E7%BA%8C%E5%BC%B7%E5%8B%81%E9%9B%BB%E5%AD%90%E5%95%86%E5%8B%99%E5%A2%9E%E9%95%B7%E5%B0%87%E9%9E%8F%E5%9B%BA%E7%9B%88%E5%88%A9%E6%A8%82%E8%A7%80%E7%9C%8B%E6%B3%95-194508658.html",
+      "pubDate": "2026-08-17 19:45:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "tigress financial partners",
+        "表示",
+        "ivan feinseth",
+        "沃爾瑪",
+        "電子商務"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f0da7be4681017a303c7e0d70e52c202",
+      "title": "俄外長:促日本勿藉攻擊俄羅斯 轉移國際對其軍事路線注意",
+      "description": "俄羅斯總統普京(Vladimir Putin,又譯普丁或蒲亭)日前登上南千島群島(日本稱北方四島)的伊圖魯普島(日本稱擇捉島), 遭日本首相高市早苗提出",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380925/%E4%BF%84%E5%A4%96%E9%95%B7-%E4%BF%83%E6%97%A5%E6%9C%AC%E5%8B%BF%E8%97%89%E6%94%BB%E6%93%8A%E4%BF%84%E7%BE%85%E6%96%AF-%E8%BD%89%E7%A7%BB%E5%9C%8B%E9%9A%9B%E5%B0%8D%E5%85%B6%E8%BB%8D%E4%BA%8B%E8%B7%AF%E7%B7%9A%E6%B3%A8%E6%84%8F",
+      "pubDate": "2026-08-17 19:42:04",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20250402/983947247295139840645129.jpeg/7m6RhIsaqb-9s66CSusXeVIQxNfdiXK5_CPgn_wj4J8",
+      "keywords": [
+        "世界新聞",
+        "新聞",
+        "國際新聞",
+        "hk01",
+        "國際",
+        "香港01",
+        "環球"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a8481b8226d52d3d38fdc94960359870",
+      "title": "美國投資級債券8月發行創歷年同月新高 AI基建推動企業舉債",
+      "description": "【彭博】-- 隨著人工智能基礎設施建設支出推動企業舉債,美國投資級債券發行規模連續第三個月創歷年同月紀錄新高,創紀錄的發債速度仍在延續。彭博新聞匯編的數據顯示,截至周一,8月美國投資級債券發行規模已達1452億美元,超過2020年8月創下的1360億美元歷年同月紀錄。今年1月、6月和7月也分別創下歷年同月最高紀錄...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E6%8A%95%E8%B3%87%E7%B4%9A%E5%82%B5%E5%88%B88%E6%9C%88%E7%99%BC%E8%A1%8C%E5%89%B5%E6%AD%B7%E5%B9%B4%E5%90%8C%E6%9C%88%E6%96%B0%E9%AB%98-ai%E5%9F%BA%E5%BB%BA%E6%8E%A8%E5%8B%95%E4%BC%81%E6%A5%AD%E8%88%89%E5%82%B5-193715512.html",
+      "pubDate": "2026-08-17 19:37:15",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/d32805c9912e2858bd867f2530b5de54.jpg",
+      "keywords": [
+        "規模",
+        "人工智能基礎設施"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a5faa2613d0b61feff9f318c50dcecdc",
+      "title": "加利奧尼爾招納兩舊將入葉士域治",
+      "description": "【Now Sports】葉士域治新任領隊加利奧尼爾,向前執教球隊斯特拉斯堡雙重挖角,簽入安斯素及韋達夏。安斯素(Julio Enciso)以據報2500萬鎊轉會費重返葉士域治,這位巴拉圭國腳翼鋒於2025年曾由白禮頓以借用形式,效力葉士域治半年,但未能阻止葉士域治降班。代表巴拉圭參戰今夏世界盃決賽周的安斯素,於2...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%8A%A0%E5%88%A9%E5%A5%A7%E5%B0%BC%E7%88%BE%E6%8B%9B%E7%B4%8D%E5%85%A9%E8%88%8A%E5%B0%87%E5%85%A5%E8%91%89%E5%A3%AB%E5%9F%9F%E6%B2%BB-191731075.html",
+      "pubDate": "2026-08-17 19:17:31",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "安斯素",
+        "加利奧尼爾",
+        "葉士域治",
+        "韋達夏",
+        "斯特拉斯堡"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "de37d9c2f7eca82ea78dc9cccc1bb209",
+      "title": "美國2028奧運田徑選拔賽重返尤金 洛杉磯無緣主辦",
+      "description": "美國田徑奧運選拔賽將重返俄勒岡州尤金舉行,洛杉磯則無緣主辦,而洛杉磯將於數周後主辦2028年夏季奧運。 這次選拔賽定於2028年6月17日至22日舉行,將是連續第六次在俄勒岡大學校園內的海沃德田徑場舉行。該場地有「美國田徑之城」的稱號,數十年來證明是美國唯一能持續舉辦大型田徑賽事的場地。 這次為期六天的賽程將有別於以往通常橫跨兩個周末、中間有數天休息的選拔賽。這六天將不包括十項全能、七項全能或一萬米賽事的選拔,這些項目將於春季較早時候舉行,地點待定,以讓運動員有額外時間恢復。 奧運會將於7月14日開幕,田徑賽事則於翌日展開;這標誌著自1968年以來,田徑首次在奧運會開幕初期舉行。 有部分運動員抱怨前往及留宿一個約有40萬人口的大都會區費用高昂,但美國田徑協會行政總裁麥斯·西格爾表示,尤金「在選拔美國最佳田徑運動員方面的成功紀錄不言而喻」。 他指出,自2008年尤金開始連續主辦選拔賽以來,美國運動員已在田徑項目中贏得52面金牌。 然而,這次決定繼續由尤金主辦,令外界感到意外。外界曾認為將主辦奧運田徑賽事的洛杉磯紀念體育場,會是選拔賽的理想主辦場地,儘管在短時間內舉辦兩項大型賽事存在問題。 洛杉磯其他場地包括加州大學洛杉磯分校的德雷克體育場,該處正用作奧運訓練場地;以及附近胡桃市的聖安東尼奧山學院體育場。該體育場曾獲選為2020年選拔賽的主辦場地,但因場地翻新問題,選拔賽最終移師尤金,並於2021年在海沃德田徑場舉行。 海沃德田徑場亦曾於2022年主辦世界錦標賽,並曾十次主辦美國全國田徑錦標賽,包括去年,並將於2027年再次主辦。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16589241-%E7%BE%8E%E5%9C%8B2028%E5%A5%A7%E9%81%8B%E7%94%B0%E5%BE%91%E9%81%B8%E6%8B%94%E8%B3%BD%E9%87%8D%E8%BF%94%E5%B0%A4%E9%87%91-%E6%B4%9B%E6%9D%89%E7%A3%AF%E7%84%A1%E7%B7%A3%E4%B8%BB%E8%BE%A6",
+      "pubDate": "2026-08-17 19:10:18",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/9ee0ed5821c7d235f0dfbad4d94e0fd9_US_Track_Trials_Eugene_4257__FB.jpg",
+      "keywords": [
+        "尤金",
+        "海沃德田徑場",
+        "2028奧運",
+        "美國田徑選拔賽",
+        "體育",
+        "洛杉磯奧運"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "145b8afb0aa7ada1a83c542b356cdeaf",
+      "title": "8月夜期收市報25355點 跌68點",
+      "description": "<匯港通訊> 8月夜期期指收市報25355點,跌68點,低水98點,成交10065張;9月夜期期指報25293點,跌58點,低水160點,成交150張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125355%E9%BB%9E-%E8%B7%8C68%E9%BB%9E-190500007.html",
+      "pubDate": "2026-08-17 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊>"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
     },
     {
       "id": "7d567a2c59c192cfb568a504260985e1",
@@ -336,6 +404,24 @@
       "region": "hk"
     },
     {
+      "id": "2c39de1f3395c68ce84c090902309ea3",
+      "title": "更新:中東局勢緊張拖累股市盤中下跌 油價上升",
+      "description": "美國基準股指周一中午後盤中下跌,油價則上升,因華盛頓與伊朗之間的停火協議到期,且未見短期內重啟接觸的跡象。 道瓊斯工業平均指數午後跌0.5%至53,484.5,標普500指數跌0.4%至7,756.7,納斯達克綜合指數跌0.3%至26,647.9。板塊方面,通訊服務板塊跌幅最大,能源板塊表現最佳。 紐約西德州中質...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E7%B7%8A%E5%BC%B5%E6%8B%96%E7%B4%AF%E8%82%A1%E5%B8%82%E7%9B%A4%E4%B8%AD%E4%B8%8B%E8%B7%8C-%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-180130581.html",
+      "pubDate": "2026-08-17 18:01:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "道瓊斯工業平均指數",
+        "霍爾木茲海峽"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "df6b671c1f9298a2c58c39880c71815c",
       "title": "黑石咖啡投資者集體訴訟限期將至 法魯奇律師事務所提醒尋求首席原告",
       "description": "全國領先的證券律師事務所法魯奇律師事務所,正調查針對黑石咖啡吧公司(Black Rock Coffee Bar, Inc.,納斯達克:BRCB)的潛在索償。該事務所提醒投資者,聯邦證券集體訴訟中尋求擔任首席原告的截止日期為2026年8月17日。 法魯奇律師事務所是一間全國領先的證券律師事務所,在紐約、賓夕法尼亞州、加州及佐治亞州設有辦事處。該事務所自1995年成立以來,已為投資者追回數億美元。 訴訟指控,黑石咖啡吧公司及其高層違反聯邦證券法,作出虛假及/或誤導性陳述及/或未能披露以下事實:(1) 黑石咖啡的新店開業導致其現有服務及收入被「蠶食」;(2) 黑石咖啡誇大其擴張策略如何旨在避免「銷售轉移」;(3) 由於「銷售轉移」,公司財務業績受到實質影響;及 (4) 由於上述原因,被告對公司業務、營運及前景的正面陳述存在實質誤導及/或缺乏合理依據。 法院委任的首席原告,是擁有最大經濟利益的投資者,其資格及代表性符合集體成員要求,並代表潛在集體成員指導及監督訴訟。任何潛在集體成員均可透過其選擇的律師向法院申請擔任首席原告,亦可選擇不採取行動,維持為缺席集體成員。無論是否擔任首席原告,均不影響分享任何追回款項的權利。 法魯奇律師事務所亦鼓勵任何掌握有關黑石咖啡行為資訊的人士聯絡該事務所,包括舉報人、前僱員、股東及其他人士。 黑石咖啡吧證券欺詐訴訟是一宗聯邦證券集體訴訟,指控黑石咖啡吧公司(納斯達克:BRCB)及其高層在公司2025年9月首次公開招股(IPO)中,向投資者作出虛假及誤導性陳述,誇大其擴張策略的成效,並隱瞞新店開業透過「銷售轉移」蠶食現有分店收入。儘管公司吹噓其擴張策略經過精心設計以避免銷售轉移,但訴訟指控這種「蠶食」實際上實質影響公司財務業績,令管理層對公司業務、營運及前景的正面陳述存在實質誤導。 於2025年9月首次公開招股相關的註冊聲明購買A類普通股,及/或於2025年9月12日至2026年5月12日(即集體訴訟期)期間購買BRCB證券並因此蒙受財務損失的投資者,均合資格參與黑石咖啡證券集體訴訟。作為集體成員參與無需採取任何積極法律行動;合資格投資者只需維持集體成員身份即可追回損失。舉報人、黑石咖啡前僱員及其他掌握公司相關資訊的人士亦獲鼓勵挺身而出。 黑石咖啡吧集體訴訟中的首席原告,是法院委任的投資者,通常是案件中擁有最大經濟利益的一方,代表所有集體成員指導及監督訴訟。任何於集體訴訟期或與首次公開招股相關期間購買BRCB證券的黑石咖啡投資者,均可透過其選擇的律師向法院申請擔任首席原告。尋求首席原告委任的截止日期為2026年8月17日。重要的是,選擇不尋求首席原告角色,並不影響投資者分享為集體追回的任何款項的權利。 於2025年9月首次公開招股相關或於2025年9月12日至2026年5月12日期間購買黑石咖啡吧公司(BRCB)證券並蒙受損失的投資者,應立即聯絡法魯奇律師事務所,討論其法律權利。尋求擔任黑石咖啡吧證券集體訴訟首席原告的截止日期為2026年8月17日。如欲直接與證券訴訟合夥人喬什·威爾遜通話,可致電877-247-4292或212-983-9330(分機1310)。 (美聯社)",
@@ -356,6 +442,25 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "8696001ac4f27df0c20573b33f947804",
+      "title": "城堡證券:美債殖利率飆升反映聯儲會政策風險 下次利率會議結果難料",
+      "description": "【彭博】-- 城堡證券表示,在通膨長期高於目標的情況下,聯儲會仍不願進一步收緊貨幣政策,這使長期債券殖利率維持在多年高位並對更廣泛的市場構成風險。城堡證券歐洲、中東和非洲固定收益銷售主管Nohshad Shah在一份客戶報告中寫道,儘管政策利率已經較峰值低175個基點,長期美債殖利率仍處在近20年來最高水平。推薦...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%9F%8E%E5%A0%A1%E8%AD%89%E5%88%B8-%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%A3%86%E5%8D%87%E5%8F%8D%E6%98%A0%E8%81%AF%E5%84%B2%E6%9C%83%E6%94%BF%E7%AD%96%E9%A2%A8%E9%9A%AA-%E4%B8%8B%E6%AC%A1%E5%88%A9%E7%8E%87%E6%9C%83%E8%AD%B0%E7%B5%90%E6%9E%9C%E9%9B%A3%E6%96%99-175730737.html",
+      "pubDate": "2026-08-17 17:57:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/50d0053a1a95728f80033e2041e04a4a.jpg",
+      "keywords": [
+        "長期債券殖利率",
+        "進一步收緊",
+        "聯儲會"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "79a38cff123b6fa31feab31f14ffdb14",
@@ -478,6 +583,42 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "c4dfc40ecd72a3b90581fda96d94c0d9",
+      "title": "拋售潮繼續衝擊長期美債 30年期殖利率升至近二十年最高水平",
+      "description": "【彭博】-- 美國30年期國債殖利率升至近20年來最高水平,因投資者擔心美國國債規模激增、長期國債供應大增,以及通膨過去五年持續高於聯儲會目標。30年期殖利率周一上漲3個基點,至5.29%,為2007年以來最高水平,進一步逼近全球金融危機初期創下的5.",
+      "link": "https://hk.finance.yahoo.com/news/%E6%8B%8B%E5%94%AE%E6%BD%AE%E7%B9%BC%E7%BA%8C%E8%A1%9D%E6%93%8A%E9%95%B7%E6%9C%9F%E7%BE%8E%E5%82%B5-30%E5%B9%B4%E6%9C%9F%E6%AE%96%E5%88%A9%E7%8E%87%E5%8D%87%E8%87%B3%E8%BF%91%E4%BA%8C%E5%8D%81%E5%B9%B4%E6%9C%80%E9%AB%98%E6%B0%B4%E5%B9%B3-171406857.html",
+      "pubDate": "2026-08-17 17:14:06",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/57f82b3b83925037f8206e7613f55f46.jpg",
+      "keywords": [
+        "retirement",
+        "investing",
+        "economy",
+        "business",
+        "stocks",
+        "track portfolio",
+        "stock",
+        "financial information",
+        "finance",
+        "stock research",
+        "business news",
+        "tax",
+        "real estate",
+        "suze orman",
+        "stock valuation",
+        "investment tools",
+        "mutual funds",
+        "mortgage",
+        "quote",
+        "personal finance"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "fbf5558df675b3c88519c56189b4f42a",
@@ -7750,6 +7891,24 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "09c0d8ca34597b974030a37c219a571a",
+      "title": "香港首半年GDP升 港府上調全年預測至3.5%至4.5% 惟仍較台灣和星洲遜色",
+      "description": "基於全球對人工智能(AI)相關電子產品需求殷切而帶動外質,香港第二季的本地生產總值(GDP)增長達 4.3%,增幅雖較第一季放緩,但仍令香港上半年的經濟增長達 5.1%,創近五年的半年新高,港府隨之把全年經濟增長預測調高一個百分點到「3.5%至4.5%」。不過,與同樣受惠於AI相關產品的的台灣和區內競爭對手新加坡相比,香港的增幅卻略為遜色,因為兩地分別把全年經濟預測上調至 11.05%和「4.5% 至 5.5%」。",
+      "link": "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20260817-%E9%A6%99%E6%B8%AF%E9%A6%96%E5%8D%8A%E5%B9%B4gdp%E5%8D%87-%E6%B8%AF%E5%BA%9C%E4%B8%8A%E8%AA%BF%E5%85%A8%E5%B9%B4%E9%A0%90%E6%B8%AC%E8%87%B33-5-%E8%87%B34-5-%E6%83%9F%E4%BB%8D%E8%BC%83%E5%8F%B0%E7%81%A3%E5%92%8C%E6%98%9F%E6%B4%B2%E9%81%9C%E8%89%B2",
+      "pubDate": "2026-08-17 06:50:51",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/b90497fc-9a07-11f1-b343-005056bfb2b6/w:1024/p:16x9/17-8-%E9%A6%99%E6%B8%AF%E4%BB%8A%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%BB%8F%E6%B5%8E%E6%88%90%E7%BB%A9%E4%BA%AE%E4%B8%BD-%E6%B8%AF%E5%BA%9C%E9%9A%8F%E4%B9%8B%E6%8A%8A%E5%85%A8%E5%B9%B4%E6%9C%AC%E5%9C%B0%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%E4%B8%8A%E4%BF%AE%E8%87%B33-5-%E8%87%B34-5-%E9%BA%A6%E7%87%95%E5%BA%AD%E6%8F%90%E4%BE%9B.jpg",
+      "keywords": [
+        "港台"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "8e1cc09c3af297f14ae0e334db80be58",
@@ -106858,7 +107017,5 @@
       "region": "hk",
       "pinned": true
     }
-  ],
-  "total": 5483,
-  "last_updated": "2026-08-18T15:06:37.068447"
+  ]
 }
