@@ -1,43 +1,6 @@
 {
   "articles": [
     {
-      "id": "170ecca2368983fbb8b2607c6b1d122a",
-      "title": "美伊停火到期 美股下跌油價上升",
-      "description": "美股周一下跌,油價上升,美國與伊朗之間的停火協議到期,雙方均無意延長協議。 標普500指數及道瓊斯工業平均指數分別跌0.5%,收報7,745.06及53,459.78。納斯達克綜合指數跌0.3%,收報26,644.91。除能源板塊外,其餘板塊均下跌,其中通信服務及必需消費品板塊領跌。 紐約期油周一尾市升2.4%,...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E4%BC%8A%E5%81%9C%E7%81%AB%E5%88%B0%E6%9C%9F-%E7%BE%8E%E8%82%A1%E4%B8%8B%E8%B7%8C%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-203511598.html",
-      "pubDate": "2026-08-17 20:35:11",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "道瓊斯工業平均指數",
-        "霍爾木茲海峽"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "8696001ac4f27df0c20573b33f947804",
-      "title": "城堡證券:美債殖利率飆升反映聯儲會政策風險 下次利率會議結果難料",
-      "description": "【彭博】-- 城堡證券表示,在通膨長期高於目標的情況下,聯儲會仍不願進一步收緊貨幣政策,這使長期債券殖利率維持在多年高位並對更廣泛的市場構成風險。城堡證券歐洲、中東和非洲固定收益銷售主管Nohshad Shah在一份客戶報告中寫道,儘管政策利率已經較峰值低175個基點,長期美債殖利率仍處在近20年來最高水平。推薦...",
-      "link": "https://hk.finance.yahoo.com/news/%E5%9F%8E%E5%A0%A1%E8%AD%89%E5%88%B8-%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%A3%86%E5%8D%87%E5%8F%8D%E6%98%A0%E8%81%AF%E5%84%B2%E6%9C%83%E6%94%BF%E7%AD%96%E9%A2%A8%E9%9A%AA-%E4%B8%8B%E6%AC%A1%E5%88%A9%E7%8E%87%E6%9C%83%E8%AD%B0%E7%B5%90%E6%9E%9C%E9%9B%A3%E6%96%99-175730737.html",
-      "pubDate": "2026-08-17 17:57:30",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/50d0053a1a95728f80033e2041e04a4a.jpg",
-      "keywords": [
-        "長期債券殖利率",
-        "進一步收緊",
-        "聯儲會"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "c4dfc40ecd72a3b90581fda96d94c0d9",
       "title": "拋售潮繼續衝擊長期美債 30年期殖利率升至近二十年最高水平",
       "description": "【彭博】-- 美國30年期國債殖利率升至近20年來最高水平,因投資者擔心美國國債規模激增、長期國債供應大增,以及通膨過去五年持續高於聯儲會目標。30年期殖利率周一上漲3個基點,至5.29%,為2007年以來最高水平,進一步逼近全球金融危機初期創下的5.",
@@ -74,21 +37,237 @@
       "pinned": true
     },
     {
-      "id": "7b290447ac48ee468bce7807bb4fb1f6",
-      "title": "Shein香港IPO目標估值進一步下調 目前僅略超史高的四分之一",
-      "description": "【彭博】-- 據知情人士透露,快時尚跨境電商Shein Global Holdings Ltd.目前希望以260億至270億美元的估值實現在香港上市,這一目標較其歷史峰值出現了大幅下降。不願公開身份的知情人士還說,該公司尋求在此次IPO中募資約20億美元。彭博新聞此前報導稱,Shein一直在對投資者的興趣進行摸底...",
-      "link": "https://hk.finance.yahoo.com/news/shein%E9%A6%99%E6%B8%AFipo%E7%9B%AE%E6%A8%99%E4%BC%B0%E5%80%BC%E9%80%B2-%E6%AD%A5%E4%B8%8B%E8%AA%BF-%E7%9B%AE%E5%89%8D%E5%83%85%E7%95%A5%E8%B6%85%E5%8F%B2%E9%AB%98%E7%9A%84%E5%9B%9B%E5%88%86%E4%B9%8B-170442685.html",
-      "pubDate": "2026-08-17 17:04:42",
+      "id": "c873dc221c396feed538b90d2ed3e1df",
+      "title": "油價上升 因美伊停火協議到期且未達成最終協議",
+      "description": "油價周一上升,美國與伊朗之間為期60日的停火協議到期,且未見短期內重啟接觸的跡象。 布蘭特原油升0.4%至每桶88.86美元,西德州中質原油升0.2%至82.52美元。 布蘭特原油於8月累跌1.8%,此前於上月升24%;西德州中質原油月初至今升0.2%,此前於7月升近18%。 美國與伊朗於6月同意簽署諒解備忘錄,...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-%E5%9B%A0%E7%BE%8E%E4%BC%8A%E5%81%9C%E7%81%AB%E5%8D%94%E8%AD%B0%E5%88%B0%E6%9C%9F%E4%B8%94%E6%9C%AA%E9%81%94%E6%88%90%E6%9C%80%E7%B5%82%E5%8D%94%E8%AD%B0-170436526.html",
+      "pubDate": "2026-08-17 17:04:36",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "shein"
+        "霍爾木茲海峽",
+        "布蘭特原油"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "75f8c8eeb9cb7eef0b70dc0f254f196a",
+      "title": "高負債、高槓桿、高周轉:美國AI熱潮背後是史上最大雙重泡沫?",
+      "description": "今天,再聊聊美國AI泡沫。從監管,到投資人,到業界,都務必關注美國AI投資熱潮及泡沫對全球市場的影響。開篇:兩家公司兩家公司,代表着當前美國A",
+      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60380887/%E9%AB%98%E8%B2%A0%E5%82%B5-%E9%AB%98%E6%A7%93%E6%A1%BF-%E9%AB%98%E5%91%A8%E8%BD%89-%E7%BE%8E%E5%9C%8Bai%E7%86%B1%E6%BD%AE%E8%83%8C%E5%BE%8C%E6%98%AF%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E9%9B%99%E9%87%8D%E6%B3%A1%E6%B2%AB",
+      "pubDate": "2026-08-17 13:35:20",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260711/1152561168783511552620471.jpeg/1YmybTr082aOuHO8_F87hYunOH8xIlSRlDQG1JQ0BtQ",
+      "keywords": [
+        "環球",
+        "世界新聞",
+        "國際新聞",
+        "新聞",
+        "香港01",
+        "hk01",
+        "國際"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "09c0d8ca34597b974030a37c219a571a",
+      "title": "香港首半年GDP升 港府上調全年預測至3.5%至4.5% 惟仍較台灣和星洲遜色",
+      "description": "基於全球對人工智能(AI)相關電子產品需求殷切而帶動外質,香港第二季的本地生產總值(GDP)增長達 4.3%,增幅雖較第一季放緩,但仍令香港上半年的經濟增長達 5.1%,創近五年的半年新高,港府隨之把全年經濟增長預測調高一個百分點到「3.5%至4.5%」。不過,與同樣受惠於AI相關產品的的台灣和區內競爭對手新加坡相比,香港的增幅卻略為遜色,因為兩地分別把全年經濟預測上調至 11.05%和「4.5% 至 5.5%」。",
+      "link": "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20260817-%E9%A6%99%E6%B8%AF%E9%A6%96%E5%8D%8A%E5%B9%B4gdp%E5%8D%87-%E6%B8%AF%E5%BA%9C%E4%B8%8A%E8%AA%BF%E5%85%A8%E5%B9%B4%E9%A0%90%E6%B8%AC%E8%87%B33-5-%E8%87%B34-5-%E6%83%9F%E4%BB%8D%E8%BC%83%E5%8F%B0%E7%81%A3%E5%92%8C%E6%98%9F%E6%B4%B2%E9%81%9C%E8%89%B2",
+      "pubDate": "2026-08-17 06:50:51",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/b90497fc-9a07-11f1-b343-005056bfb2b6/w:1024/p:16x9/17-8-%E9%A6%99%E6%B8%AF%E4%BB%8A%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%BB%8F%E6%B5%8E%E6%88%90%E7%BB%A9%E4%BA%AE%E4%B8%BD-%E6%B8%AF%E5%BA%9C%E9%9A%8F%E4%B9%8B%E6%8A%8A%E5%85%A8%E5%B9%B4%E6%9C%AC%E5%9C%B0%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%E4%B8%8A%E4%BF%AE%E8%87%B33-5-%E8%87%B34-5-%E9%BA%A6%E7%87%95%E5%BA%AD%E6%8F%90%E4%BE%9B.jpg",
+      "keywords": [
+        "港台"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "10708c5c53aaa71a46c3ed0de4d09389",
+      "title": "認購銀債睇住嚟食|曾智華",
+      "description": "每年此時皆如是,總有最少幾十老友追住小弟問:「碌Sir,(一)你會否申請銀債!(二)會申請幾多?(三)今年值唔值得申請?(四)中電(002)等股票都有4厘利息,又有機會升值,會否比申請銀債更好?(五)應用幾錢申請,估計可以派到幾多手? 都幾好笑,銀債已推出多年,點解班老友仍然年年問,而問的,又是同一批問題? 肯定不單止小弟老友們如此,廣大讀者相信也有超過六、七成會年年繼續問。咁好啦,我就一年一度,",
+      "link": "https://www.stheadline.com/investment/3605220/%E8%AA%8D%E8%B3%BC%E9%8A%80%E5%82%B5%E7%9D%87%E4%BD%8F%E5%9A%9F%E9%A3%9F%E6%9B%BE%E6%99%BA%E8%8F%AF",
+      "pubDate": "2026-08-17 22:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/4cc8f0583876a7665ac74cbb7657530c/2026-08/20250509_fin__8__0.jpg",
+      "keywords": [
+        "曾智華",
+        "銀債"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8855520012ad47efa6c2dfc2a75e50e7",
+      "title": "26歲創業拉投資屢遭拒 美漢靠父母相助搭建首間彈床樂園 公司年收逾78億",
+      "description": "美國一名男子於26歲時創業拉投資屢遭拒絕,靠父母相助搭建首間彈床樂園,如今公司年收突破10億(美元,下同,約78億港元),旗下品牌在全美更設有逾1,600間分店並持續擴張。 在 Instagram 查看這則帖子 Unleashed Brands CEO(@michaelbrowningjr)分享的帖子 綜合外媒報導,美國一名企業家小邁克爾·布朗寧(Michael Browning Jr.)於2011年創業。當年26歲的他計劃開設一間彈床樂園,惟向銀行及投資者籌集資金時屢屢碰壁。布朗寧憶述,年齡是當時遭拒絕的主要原因之一,不少投資者認為他年紀太輕,也不相信他的商業構思能夠成功。 面對接連受挫,布朗寧並未氣餒,轉而向父母尋求協助。由於父親具建築業背景,答應協助興建場館,而父母也決定投資他的創業計劃。布朗寧之後與父親親自參與首間Urban Air室內冒險樂園的建設工作,包括租用叉車、鋪設木板、搬運及卸下泡沫墊等,幾乎由零開始親手打造整個彈床樂園。 近日,布朗寧受訪問時表示,自己當年對創業充滿熱情,即使銀行、業主及身邊不少人均不看好計劃,甚至認為他「瘋了」,但他仍選擇堅持下去,「最終一切都成功了。」到了2021年,他進一步創立Unleashed Brands,建立一個以兒童學習、遊戲及成長為核心的綜合特許經營平台,旗下品牌包括Urban Air、The Little Gym、Sylvan Learning、Premier Martial Arts及Water Wings Swim School等。 目前,Unleashed Brands旗下品牌在全美合共有逾1,600間分店,累計服務超過2,500萬名兒童。公司去年營業額突破10億美元,布朗寧預計,2026年也可再次達到這一水平。公司於2025年新增133間加盟店,目前另有超過200間分店正在籌備興建,業務規模仍持續擴張。 談到當年如何克服重重困難,成功開設首間Urban Air,布朗寧表示,關鍵並非如何避免問題,而是如何看待問題及逆境。他一直奉行的核心經營理念,就是將每一次遇到的問題,視為「通往成功的里程碑」。 布朗寧指出,人們面對問題時往往容易感到慌亂,但在創業過程中,困難本來就是意料之中的事。面對障礙,可以選擇放棄,也可以選擇想辦法克服、繞過或突破,因此創業者必須保持堅韌、好奇心及創新精神。 布朗寧又表示,Urban Air創立之初,只是全美第六間同類型的彈床樂園,自己當時對相關行業的營運也幾乎一竅不通。不過,他一直秉持一個簡單的經營原則:首先確保顧客安全,其次讓顧客感到開心,最後才是創造盈利。",
+      "link": "https://www.bastillepost.com/hongkong/article/16542361-26%E6%AD%B2%E5%89%B5%E6%A5%AD%E6%8B%89%E6%8A%95%E8%B3%87%E5%B1%A2%E9%81%AD%E6%8B%92%E7%B5%95-%E7%BE%8E%E6%BC%A2%E9%9D%A0%E7%88%B6%E6%AF%8D%E7%9B%B8%E5%8A%A9%E6%90%AD%E5%BB%BA%E9%A6%96%E9%96%93",
+      "pubDate": "2026-08-17 21:50:05",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20250314_PL_work_source_web1-4.jpg",
+      "keywords": [
+        "plastic",
+        "奇聞"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9a6ab3537a81b6b2e92ff997a7aa7d46",
+      "title": "特朗普:不尋求延長美伊諒解備忘錄 警告阿曼勿礙事否則轟炸",
+      "description": "美國與伊朗6月簽署諒解備忘錄,展開60日談判和停火,談判窗口期於8月17日屆滿。美國總統特朗普(Donald Trump,又譯川普)17日表示,不尋求延長與",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60380932/%E7%89%B9%E6%9C%97%E6%99%AE-%E4%B8%8D%E5%B0%8B%E6%B1%82%E5%BB%B6%E9%95%B7%E7%BE%8E%E4%BC%8A%E8%AB%92%E8%A7%A3%E5%82%99%E5%BF%98%E9%8C%84-%E8%AD%A6%E5%91%8A%E9%98%BF%E6%9B%BC%E5%8B%BF%E7%A4%99%E4%BA%8B%E5%90%A6%E5%89%87%E8%BD%9F%E7%82%B8",
+      "pubDate": "2026-08-17 21:36:21",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166254922337882112025873.jpeg/gjQwM8FfEJsFAfrh5mKGStYR-8EsFrPcpCZTaaQmU2k",
+      "keywords": [
+        "新聞",
+        "國際",
+        "世界新聞",
+        "hk01",
+        "國際新聞",
+        "環球",
+        "香港01"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0ab31f0331a14ab4a9553e576a9782d5",
+      "title": "納斯達克計劃從12月起實施近23小時交易日",
+      "description": "Investing.com - 納斯達克(Nasdaq)計劃將其美國股票市場的交易時間延長至每天近23小時、每週五天,以滿足全球對美國股票日益增長的需求。該交易所表示,擴展後的交易時段將新增一個夜間交易時段,從美國東部時間晚上9:00至凌晨4:00(北京時間次日上午9:00至下午4:00),並與現有的延長交易時段...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%B4%8D%E6%96%AF%E9%81%94%E5%85%8B%E8%A8%88%E5%8A%83%E5%BE%9E12%E6%9C%88%E8%B5%B7%E5%AF%A6%E6%96%BD%E8%BF%9123%E5%B0%8F%E6%99%82%E4%BA%A4%E6%98%93%E6%97%A5-213330501.html",
+      "pubDate": "2026-08-17 21:33:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEE2R1CK_M.jpg",
+      "keywords": [
+        "納斯達克",
+        "美國東部",
+        "交易時段"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "06615bfb0d630724e414e30c128e2cbb",
+      "title": "去年才刷新酋長岩紀錄 美國30歲攀岩好手攀爬內華達山脈意外身亡",
+      "description": "美國知名攀岩手去年才刷新酋長岩紀錄,近來被證實在內華達山脈(Sierra Nevada)發生意外身亡。 🇺🇸 One of the fastest men on El Capitan is gone at 30. Jake Whisenant, the Mammoth Lakes climber who tore up Yosemite’s biggest wall, died August 3 in an accident in the Sierra Nevada. Officials haven’t said yet exactly what happened. Back in October 2024 he raced up El Cap’s... pic.twitter.com/Oej3ZsH1LA — [...]",
+      "link": "https://www.bastillepost.com/hongkong/article/16542356-%E5%8E%BB%E5%B9%B4%E6%89%8D%E5%88%B7%E6%96%B0%E9%85%8B%E9%95%B7%E5%B2%A9%E7%B4%80%E9%8C%84-%E7%BE%8E%E5%9C%8B30%E6%94%80%E5%B2%A9%E5%A5%BD%E6%89%8B%E5%85%A7%E6%94%80%E7%88%AC%E8%8F%AF%E9%81%94",
+      "pubDate": "2026-08-17 21:30:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20250314_PL_death_source_web13-6.jpg",
+      "keywords": [
+        "plastic",
+        "奇聞"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8e0eeab035be6a464049457584a31bbd",
+      "title": "特朗普白宮表揚少年救生員及獲救男童 讚揚兩人為英雄",
+      "description": "一名少年救生員與他從加州海岸救起的男童,周一在白宮重聚,美國總統特朗普表揚兩人為英雄。 特朗普向兩名男童表示:「你們所做的一切令人難以置信,所有人都看到了。」他提到七月在聖克魯斯發生的救援事件,相關影片在網上瘋傳。特朗普續指:「我第一次看到時,我說『倒帶,我想再看一次』。」 特朗普與16歲救生員賴德·威廉斯及10歲男童納撒尼爾·賴一同就座,對兩人七月在聖克魯斯驚險的海上救援中保持冷靜感到驚嘆。兩名男童的家人,以及協助救援的救生員艾倫·博恩亦有出席這次橢圓形辦公室的重聚。 這次救援的網上影片在全球已獲數百萬次觀看。片段顯示威廉斯緊抱納撒尼爾,巨浪不斷拍打他們。兩名男童一度在水底消失數秒,其後從海浪中浮現,威廉斯繼續將納撒尼爾拉向岸邊。 特朗普讚揚威廉斯是「真正的英雄」。他對納撒尼爾說:「上帝正在看顧你。」特朗普與威廉斯坐在橢圓形辦公室壁爐前的椅子上,而納撒尼爾及其他人則坐在旁邊的兩張沙發上。 當被問及當時情況時,威廉斯歸功於訓練他迅速採取行動的人。 他表示:「在那些危險時刻,我們總是嘗試依賴我們的訓練。我當時真的在想如何盡快將男童救出水面。」 威廉斯身穿黑色制服,上面有加州州立公園救生員的臂章,他表示希望接受訓練成為一名醫護人員,並成為消防員。 納撒尼爾坐在父親和妹妹旁邊,當特朗普描述救援過程時,他點頭表示同意。 特朗普對他說:「你的父親是世界上最快樂的人。」他補充指,這名男童面對緊急情況的表現值得尊重。「納撒尼爾的處理方式——考慮到當時的問題,他表現得很冷靜。」 特朗普邀請他們參觀白宮的林肯臥室。當威廉斯提到他立志成為消防員時,總統表示他可能會獲得「一些好的推薦」。 特朗普說:「他是一個真正的英雄。我不知道我會不會這樣做。我可能不會。你們很幸運那天我不在場。」 上月,當這段影片在網上引起關注時,特朗普亦加入分享行列。特朗普在他的Truth Social平台發布影片,表示兩名男童值得表揚。 特朗普在7月28日寫道:「我們將把這位英勇的年輕人及其家人,或許還有他救起的男童,帶到白宮,授予他崇高的平民榮譽。」 在美聯社早前的一次訪問中,威廉斯描述看到納撒尼爾在西布賴特海灘的淺水區失去平衡。當時水流太湍急,無法將救生圈套在失去意識的納撒尼爾身上。他們承受了一連串巨浪拍打,最終由另一名救生員博恩協助他們上岸。 在橢圓形辦公室,特朗普評論威廉斯當時展現出「極大的優雅」。 特朗普說:「看到這一切發生,親眼目睹,真是太神奇了。我以前見過救援,但從未見過如此情景。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16589367-%E7%89%B9%E6%9C%97%E6%99%AE%E7%99%BD%E5%AE%AE%E8%A1%A8%E6%8F%9A%E5%B0%91%E5%B9%B4%E6%95%91%E7%94%9F%E5%93%A1%E5%8F%8A%E7%8D%B2%E6%95%91%E7%94%B7%E7%AB%A5-%E8%AE%9A%E6%8F%9A%E5%85%A9%E4%BA%BA%E7%82%BA",
+      "pubDate": "2026-08-17 21:27:19",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/ff5632750179f2cc696f8fab23dc4bc8_Trump_43984_FB.jpg",
+      "keywords": [
+        "特朗普",
+        "英雄",
+        "救生員",
+        "救援",
+        "白宮",
+        "大視野"
+      ],
+      "category": [
+        "politics",
+        "top",
+        "crime"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "aa23c246796ad12f3ad8b6a1486842c8",
+      "title": "Auba建功 拉科1:1艾爾切",
+      "description": "【Now Sports】拉科魯尼亞重返西甲的首場比賽,與來訪的艾爾切各一言和,加蓬名將奧巴美揚為拉科先開紀錄。闊別西甲8年的前冠軍拉科魯尼亞,在這場周一西甲有賴前阿仙奴射手奧巴美揚(Pierre-Emerick Aubameyang)在21分鐘先開紀錄,當時他在禁區內巧妙地控定隊友長傳,然後左腳射遠柱得手。不過艾...",
+      "link": "https://hk.sports.yahoo.com/news/auba%E5%BB%BA%E5%8A%9F-%E6%8B%89%E7%A7%911-1%E8%89%BE%E7%88%BE%E5%88%87-212511978.html",
+      "pubDate": "2026-08-17 21:25:11",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "西甲",
+        "艾爾切",
+        "拉科魯尼亞",
+        "奧巴美揚"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bb8efae90d9841a5d7b1b3a689171315",
+      "title": "印度7窮困工廢礦尋獲17.96卡鑽石 人生改寫終有錢娶妻",
+      "description": "印度中部中央邦(Madhya Pradesh)7名依靠散工維生的貧困勞工,在潘納(Panna)一幅曾經荒廢近一年的租賃礦地,意外發現一顆重17.96卡的天然鑽石,估值至少500萬盧比(約41萬至42萬港元)。鑽石預計於10月上旬交由政府公開拍賣,扣除12%政府權利金後,其餘款項將由7人平均分配。 廢棄一年暴雨後重返 「鑽石就在最上層」 這筆意外之財有望改寫7人的命運。其中3名未婚勞工表示,過去因為",
+      "link": "https://www.stheadline.com/realtime-world/3605456/%E5%8D%B0%E5%BA%A67%E7%AA%AE%E5%9B%B0%E5%B7%A5%E5%BB%A2%E7%A4%A6%E5%B0%8B%E7%8D%B21796%E5%8D%A1%E9%91%BD%E7%9F%B3-%E4%BA%BA%E7%94%9F%E6%94%B9%E5%AF%AB%E7%B5%82%E6%9C%89%E9%8C%A2%E5%A8%B6%E5%A6%BB",
+      "pubDate": "2026-08-17 21:21:15",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0530c6a0e068b77bcd5bd90bb4a91a09/2026-08/2026-08-17_22_10_15.png",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c0f32d7e22b69600bd12d542319c7662",
+      "title": "大學美式足球2026:美聯社25強排名榜知識問答考驗",
+      "description": "美聯社大學美式足球25強排名榜歷史悠久,您對此了解多少?請嘗試以下知識問答,了解其歷史,並為新賽季作好準備。當局已於周一公布季前排名,敬請留意。 a. 1936 b. 1944 c. 1952 d. 1960 a. 阿拉巴馬大學 b. 明尼蘇達大學 c. 匹茲堡大學 d. 斯利珀里羅克大學 a. 1940 b. 1950 c. 1960 d. 1970 a. 密歇根大學 b. 聖母大學 c. 俄亥俄州立大學 d. 德州大學 a. 阿拉巴馬大學 b. 內布拉斯加大學 c. 聖母大學 d. 奧克拉荷馬大學 a. 楊百翰大學,1984 b. 佛羅里達州立大學,1999 c. 內布拉斯加大學,1995 d. 南加州大學,2004 a. 阿拉巴馬大學 b. 佛羅里達州立大學 c. 內布拉斯加大學 [...]",
+      "link": "https://www.bastillepost.com/hongkong/article/16589360-%E5%A4%A7%E5%AD%B8%E7%BE%8E%E5%BC%8F%E8%B6%B3%E7%90%832026%EF%BC%9A%E7%BE%8E%E8%81%AF%E7%A4%BE25%E5%BC%B7%E6%8E%92%E5%90%8D%E6%A6%9C%E7%9F%A5%E8%AD%98%E5%95%8F%E7%AD%94%E8%80%83%E9%A9%97",
+      "pubDate": "2026-08-17 21:10:06",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/71b1951cb9d7e84cd0ec978a6c4f4599_College_Football_Poll_Quiz_76844_FB.jpg",
+      "keywords": [
+        "知識問答",
+        "大學美式足球",
+        "美聯社",
+        "體育",
+        "排名榜"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "c46c408a68675326cb5f3e167b8ec108",
@@ -209,6 +388,24 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "170ecca2368983fbb8b2607c6b1d122a",
+      "title": "美伊停火到期 美股下跌油價上升",
+      "description": "美股周一下跌,油價上升,美國與伊朗之間的停火協議到期,雙方均無意延長協議。 標普500指數及道瓊斯工業平均指數分別跌0.5%,收報7,745.06及53,459.78。納斯達克綜合指數跌0.3%,收報26,644.91。除能源板塊外,其餘板塊均下跌,其中通信服務及必需消費品板塊領跌。 紐約期油周一尾市升2.4%,...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E4%BC%8A%E5%81%9C%E7%81%AB%E5%88%B0%E6%9C%9F-%E7%BE%8E%E8%82%A1%E4%B8%8B%E8%B7%8C%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-203511598.html",
+      "pubDate": "2026-08-17 20:35:11",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "道瓊斯工業平均指數",
+        "霍爾木茲海峽"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "e01241601cff5b87a29e0a12546715a6",
@@ -1051,6 +1248,25 @@
       "region": "hk"
     },
     {
+      "id": "8696001ac4f27df0c20573b33f947804",
+      "title": "城堡證券:美債殖利率飆升反映聯儲會政策風險 下次利率會議結果難料",
+      "description": "【彭博】-- 城堡證券表示,在通膨長期高於目標的情況下,聯儲會仍不願進一步收緊貨幣政策,這使長期債券殖利率維持在多年高位並對更廣泛的市場構成風險。城堡證券歐洲、中東和非洲固定收益銷售主管Nohshad Shah在一份客戶報告中寫道,儘管政策利率已經較峰值低175個基點,長期美債殖利率仍處在近20年來最高水平。推薦...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%9F%8E%E5%A0%A1%E8%AD%89%E5%88%B8-%E7%BE%8E%E5%82%B5%E6%AE%96%E5%88%A9%E7%8E%87%E9%A3%86%E5%8D%87%E5%8F%8D%E6%98%A0%E8%81%AF%E5%84%B2%E6%9C%83%E6%94%BF%E7%AD%96%E9%A2%A8%E9%9A%AA-%E4%B8%8B%E6%AC%A1%E5%88%A9%E7%8E%87%E6%9C%83%E8%AD%B0%E7%B5%90%E6%9E%9C%E9%9B%A3%E6%96%99-175730737.html",
+      "pubDate": "2026-08-17 17:57:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/50d0053a1a95728f80033e2041e04a4a.jpg",
+      "keywords": [
+        "長期債券殖利率",
+        "進一步收緊",
+        "聯儲會"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "79a38cff123b6fa31feab31f14ffdb14",
       "title": "湯普森思富伯明翰郊區建豪華公寓 里維特項目落戶切爾西",
       "description": "全國知名全方位房地產公司兼全國領先多戶住宅發展商湯普森思富,今日宣布在伯明翰都會區內發展一個名為「里維特」的甲級豪華公寓社區。該社區位於切爾西,提供三百個單位,切爾西是區內增長最快、最富裕的社區之一。 湯普森思富住宅部管理合夥人喬什·珀維斯指出,切爾西是區內最具吸引力的增長市場之一,受惠於穩健的經濟基本面、持續投資及優越地理位置。他續指,由於區內新建多戶住宅的機會有限,里維特項目獨特地定位,有助滿足對優質公寓日益增長的需求,同時為居民創造卓越的居住體驗。 里維特項目佔地近二十九英畝,沿美國280號公路走廊而建,將為居民提供便捷通道,前往主要就業中心、零售熱點及戶外康樂設施。項目亦將配備湯普森思富社區一貫的高品質裝修及度假式設施。 首批居民預計於二零二七年末遷入,屆時可選擇一房、兩房或三房公寓單位。所有單位均配備典雅石英檯面、不鏽鋼電器、瓷磚擋板、硬木風格地板、全尺寸洗衣機及乾衣機、智能家居技術、寬敞步入式衣帽間,並可選擇設有露台、陽台或私人庭院的單位。 居民將可享用全面的設施配套,包括度假式恆溫泳池、二十四小時開放的設備齊全健身中心、匹克球場、社區燒烤區及火爐、設有桌球及沙壺球的社交中心、寵物公園及寵物美容中心、設有會議室及專注套間的商務中心,以及亞馬遜包裹中心。 湯普森思富住宅部發展高級副總裁傑西·霍特倫表示,切爾西提供卓越的生活品質,擁有頂級學校、優美成熟社區,以及沿美國280號公路走廊便捷通往就業、零售及醫療目的地。他續指,里維特項目與該環境相輔相成,為居民提供精心設計的公寓單位、度假式設施,以及鄰近切爾西所有吸引之處的便利。 里維特項目位置優越,居民只需數分鐘即可抵達格蘭德維尤醫療中心、草甸溪企業園、塔特索爾公園、峰會購物中心、阿拉巴馬大學伯明翰分校、薩姆福德大學及伯明翰市中心。該走廊內亦有超一千八百萬平方呎的購物、餐飲及娛樂設施。周邊地區持續獲得大量投資,包括一個規劃中的零售中心,以及附近的科技及生命科學辦公園,進一步鞏固該區的長遠增長。 切爾西持續展現強勁發展勢頭。自二零二零年以來,該市人口增長約百分之十六,突顯其作為伯明翰都會區增長最快社區之一的地位。謝爾比縣亦因都會區內醫療保健、科技及銀行業僱主基礎雄厚,維持全州最低失業率。 這次發展項目由湯普森思富二零二五多戶住宅發展有限合夥公司提供股權資金。 過去四十年來,湯普森思富已向各地社區投資超七十三億美元,並已成為全國各地高品質房地產項目發展、建設、租賃及管理各方面值得信賴的合作夥伴。 湯普森思富房地產公司自一九八六年成立以來,已從一家專注於本地的發展及建築公司,發展成為一家業務遍及全國的全方位綜合企業。該公司在印第安納州印第安納波利斯及特雷霍特、丹佛、侯斯頓及鳳凰城設有辦事處,業務涵蓋優質多戶住宅及商業項目發展、建設、租賃及管理各方面。該公司榮獲二零二六年美國最佳工作場所獎,此為最新殊榮,反映公司持續致力於社區及工作場所的卓越表現。 (美聯社)",
@@ -1220,21 +1436,21 @@
       "region": "hk"
     },
     {
-      "id": "c873dc221c396feed538b90d2ed3e1df",
-      "title": "油價上升 因美伊停火協議到期且未達成最終協議",
-      "description": "油價周一上升,美國與伊朗之間為期60日的停火協議到期,且未見短期內重啟接觸的跡象。 布蘭特原油升0.4%至每桶88.86美元,西德州中質原油升0.2%至82.52美元。 布蘭特原油於8月累跌1.8%,此前於上月升24%;西德州中質原油月初至今升0.2%,此前於7月升近18%。 美國與伊朗於6月同意簽署諒解備忘錄,...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-%E5%9B%A0%E7%BE%8E%E4%BC%8A%E5%81%9C%E7%81%AB%E5%8D%94%E8%AD%B0%E5%88%B0%E6%9C%9F%E4%B8%94%E6%9C%AA%E9%81%94%E6%88%90%E6%9C%80%E7%B5%82%E5%8D%94%E8%AD%B0-170436526.html",
-      "pubDate": "2026-08-17 17:04:36",
+      "id": "7b290447ac48ee468bce7807bb4fb1f6",
+      "title": "Shein香港IPO目標估值進一步下調 目前僅略超史高的四分之一",
+      "description": "【彭博】-- 據知情人士透露,快時尚跨境電商Shein Global Holdings Ltd.目前希望以260億至270億美元的估值實現在香港上市,這一目標較其歷史峰值出現了大幅下降。不願公開身份的知情人士還說,該公司尋求在此次IPO中募資約20億美元。彭博新聞此前報導稱,Shein一直在對投資者的興趣進行摸底...",
+      "link": "https://hk.finance.yahoo.com/news/shein%E9%A6%99%E6%B8%AFipo%E7%9B%AE%E6%A8%99%E4%BC%B0%E5%80%BC%E9%80%B2-%E6%AD%A5%E4%B8%8B%E8%AA%BF-%E7%9B%AE%E5%89%8D%E5%83%85%E7%95%A5%E8%B6%85%E5%8F%B2%E9%AB%98%E7%9A%84%E5%9B%9B%E5%88%86%E4%B9%8B-170442685.html",
+      "pubDate": "2026-08-17 17:04:42",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "霍爾木茲海峽",
-        "布蘭特原油"
+        "shein"
       ],
       "category": [
         "business"
       ],
-      "region": "hk"
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "36eded9da7f63e3651114327b890e5d8",
@@ -2764,29 +2980,6 @@
       "category": [
         "politics",
         "top"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "75f8c8eeb9cb7eef0b70dc0f254f196a",
-      "title": "高負債、高槓桿、高周轉:美國AI熱潮背後是史上最大雙重泡沫?",
-      "description": "今天,再聊聊美國AI泡沫。從監管,到投資人,到業界,都務必關注美國AI投資熱潮及泡沫對全球市場的影響。開篇:兩家公司兩家公司,代表着當前美國A",
-      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60380887/%E9%AB%98%E8%B2%A0%E5%82%B5-%E9%AB%98%E6%A7%93%E6%A1%BF-%E9%AB%98%E5%91%A8%E8%BD%89-%E7%BE%8E%E5%9C%8Bai%E7%86%B1%E6%BD%AE%E8%83%8C%E5%BE%8C%E6%98%AF%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E9%9B%99%E9%87%8D%E6%B3%A1%E6%B2%AB",
-      "pubDate": "2026-08-17 13:35:20",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260711/1152561168783511552620471.jpeg/1YmybTr082aOuHO8_F87hYunOH8xIlSRlDQG1JQ0BtQ",
-      "keywords": [
-        "環球",
-        "世界新聞",
-        "國際新聞",
-        "新聞",
-        "香港01",
-        "hk01",
-        "國際"
-      ],
-      "category": [
-        "business",
-        "technology"
       ],
       "region": "hk"
     },
@@ -8427,24 +8620,6 @@
         "top"
       ],
       "region": "hk"
-    },
-    {
-      "id": "09c0d8ca34597b974030a37c219a571a",
-      "title": "香港首半年GDP升 港府上調全年預測至3.5%至4.5% 惟仍較台灣和星洲遜色",
-      "description": "基於全球對人工智能(AI)相關電子產品需求殷切而帶動外質,香港第二季的本地生產總值(GDP)增長達 4.3%,增幅雖較第一季放緩,但仍令香港上半年的經濟增長達 5.1%,創近五年的半年新高,港府隨之把全年經濟增長預測調高一個百分點到「3.5%至4.5%」。不過,與同樣受惠於AI相關產品的的台灣和區內競爭對手新加坡相比,香港的增幅卻略為遜色,因為兩地分別把全年經濟預測上調至 11.05%和「4.5% 至 5.5%」。",
-      "link": "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20260817-%E9%A6%99%E6%B8%AF%E9%A6%96%E5%8D%8A%E5%B9%B4gdp%E5%8D%87-%E6%B8%AF%E5%BA%9C%E4%B8%8A%E8%AA%BF%E5%85%A8%E5%B9%B4%E9%A0%90%E6%B8%AC%E8%87%B33-5-%E8%87%B34-5-%E6%83%9F%E4%BB%8D%E8%BC%83%E5%8F%B0%E7%81%A3%E5%92%8C%E6%98%9F%E6%B4%B2%E9%81%9C%E8%89%B2",
-      "pubDate": "2026-08-17 06:50:51",
-      "source_name": "Rfi",
-      "image_url": "https://s.rfi.fr/media/display/b90497fc-9a07-11f1-b343-005056bfb2b6/w:1024/p:16x9/17-8-%E9%A6%99%E6%B8%AF%E4%BB%8A%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%BB%8F%E6%B5%8E%E6%88%90%E7%BB%A9%E4%BA%AE%E4%B8%BD-%E6%B8%AF%E5%BA%9C%E9%9A%8F%E4%B9%8B%E6%8A%8A%E5%85%A8%E5%B9%B4%E6%9C%AC%E5%9C%B0%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%E4%B8%8A%E4%BF%AE%E8%87%B33-5-%E8%87%B34-5-%E9%BA%A6%E7%87%95%E5%BA%AD%E6%8F%90%E4%BE%9B.jpg",
-      "keywords": [
-        "港台"
-      ],
-      "category": [
-        "business",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "8e1cc09c3af297f14ae0e334db80be58",
@@ -107568,6 +107743,6 @@
       "pinned": true
     }
   ],
-  "total": 5519,
-  "last_updated": "2026-08-18T17:12:34.096926"
+  "total": 5528,
+  "last_updated": "2026-08-18T18:05:21.531765"
 }
