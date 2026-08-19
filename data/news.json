@@ -1,83 +1,756 @@
 {
+  "last_updated": "2026-08-19T08:09:44.291501",
+  "total": 6114,
   "articles": [
     {
-      "id": "8683ce5d3be9457b060a6b60d6ce5a45",
-      "title": "恒指微升17點 阿里升近4%撐市 智譜急挫13% 分析:AI概念股未玩完|港股收市",
-      "description": "受美伊局勢僵持拖累,油價飆升推升通脹預期,國際油價升逾2%。港股昨日終止四連跌後,今日表現反覆,早盤低開84點,最多跌逾210點,低見25240點,下午逐步收復失地,全日力保升勢。 恒生指數全日微升17點或0.07%,收報25471點,大市全日成交額2,555.41億元;北水淨流入140.01億元;國企指數收報8453點,升13點或0.16%;恒生科技指數收報4739點,跌42點或0.9%。 聯想",
-      "link": "https://www.stheadline.com/stock-market/3605480/%E6%81%92%E6%8C%87%E5%BE%AE%E5%8D%8717%E9%BB%9E-%E9%98%BF%E9%87%8C%E5%8D%87%E8%BF%914%E6%92%90%E5%B8%82-%E6%99%BA%E8%AD%9C%E6%80%A5%E6%8C%AB13-%E5%88%86%E6%9E%90AI%E6%A6%82%E5%BF%B5%E8%82%A1%E6%9C%AA%E7%8E%A9%E5%AE%8C%E6%B8%AF%E8%82%A1%E6%94%B6%E5%B8%82",
-      "pubDate": "2026-08-18 09:45:49",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/557f77dad789d109cabbbbc93408fae7/2026-08/PIC_ONLY_0925_18_.jpg",
+      "id": "2ae8850b5b7b23f5213687004f75609a",
+      "title": "暑假搶租潮|西營盤半新盤呎租連環「破百」 尚逸一房高見102元創新高",
+      "description": "市場消息透露,今年6月正式入伙的尚逸,本月暫錄得11宗租務成交,平均呎租約86元。其中一個低層G室,單位實用面積約236方呎,屬一房間隔,連約145方呎平台,日前以2.4萬元租出,呎租約101.7元,屬屋苑首宗呎租超過100元租賃成交。",
+      "link": "https://www.am730.com.hk/%E5%9C%B0%E7%94%A2/1048141/%E6%9A%91%E5%81%87%E6%90%B6%E7%A7%9F%E6%BD%AE-%E8%A5%BF%E7%87%9F%E7%9B%A4%E5%8D%8A%E6%96%B0%E7%9B%A4%E5%91%8E%E7%A7%9F%E9%80%A3%E7%92%B0-%E7%A0%B4%E7%99%BE-%E5%B0%9A%E9%80%B8%E4%B8%80%E6%88%BF%E9%AB%98%E8%A6%8B102%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98",
+      "pubDate": "2026-08-18 12:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048141/article/1048141/df/01M0A7H3XJ8T1ZXJYHX28258ZD.jpg?updatedAt=1787050265",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6a7d490c5b3ca3fef56619d39243dffc",
+      "title": "留住青年的心 培育本地的根",
+      "description": null,
+      "link": "https://www.am730.com.hk/column/%E6%96%B0%E8%81%9E/2009189/%E7%95%99%E4%BD%8F%E9%9D%92%E5%B9%B4%E7%9A%84%E5%BF%83-%E5%9F%B9%E8%82%B2%E6%9C%AC%E5%9C%B0%E7%9A%84%E6%A0%B9",
+      "pubDate": "2026-08-18 12:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/2009189/column/2009189/df/01M0ABTHVM2H2MAH7F2GZW7NZV.jpg?updatedAt=1787054902",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "592851b34698203311b4053e6ef94513",
+      "title": "瑞銀看空法國再保險商Scor,下調評級至「賣出」",
+      "description": "Investing.com - 瑞銀(UBS)將再保險商Scor的評級由「中性」下調至「賣出」,並將目標價下調6%,從34.50歐元降至32.50歐元。瑞銀指出,即將到來的兩大催化劑——9月的蒙地卡羅年度會議(Monte Carlo Rendez-vous)及12月的資本市場日——可能對市場共識預測構成壓力,並推...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%91%9E%E9%8A%80%E7%9C%8B%E7%A9%BA%E6%B3%95%E5%9C%8B%E5%86%8D%E4%BF%9D%E9%9A%AA%E5%95%86scor-%E4%B8%8B%E8%AA%BF%E8%A9%95%E7%B4%9A%E8%87%B3-%E8%B3%A3%E5%87%BA-115702234.html",
+      "pubDate": "2026-08-18 11:57:02",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXNPEC0E0NG_M.jpg",
       "keywords": [
-        "港股"
+        "瑞銀",
+        "歐元",
+        "scor"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "15c3cf72774a42a36e49b598c85cc36f",
+      "title": "郵政署試用期滿不轉正 首批30人改簽兩年約 方保僑倡加深網購合作",
+      "description": "香港郵政宣布,向 9 月完成試用期員工以公務員合約條款續聘 2 年,不再向他們發出長期聘用條款,受影響人員約 [...]",
+      "link": "https://unwire.hk/2026/08/18/hkpost-contract-extension/shop_guide/",
+      "pubDate": "2026-08-18 11:56:11",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo7-6.png",
+      "keywords": [
+        "城中熱話",
+        "方保僑",
+        "香港郵政",
+        "買物情報",
+        "郵政改革",
+        "網購物流",
+        "智慧城市",
+        "公務員合約"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ef67449cebe961856a3866d35f052db5",
+      "title": "英超 FPL|搏拉耶繼續神勇還是平選拿文斯? 一文睇清三個價位門將性價比之選",
+      "description": "英超新球季周五正式開鑼,意味各位Fantasy Premier League(簡稱FPL)玩家進入最後「砌陣」階段。門將雖然鮮會參與進攻獲得積分,但如果各大豪門的進攻選項表現對辦之時,一個「穩陣」的門將以及後防線就很可能是致勝關鍵。今集《FPL密碼》就為大家篩選在三個不同價位性價比最高的守門員,同時為大家分析剛剛協助阿仙奴捧起社區盾的門將大衛拉耶(David Raya)是否抵買。 在門將的選擇上,",
+      "link": "https://www.stheadline.com/football-news/3605709/%E8%8B%B1%E8%B6%85-FPL%E6%90%8F%E6%8B%89%E8%80%B6%E7%B9%BC%E7%BA%8C%E7%A5%9E%E5%8B%87%E9%82%84%E6%98%AF%E5%B9%B3%E9%81%B8%E6%8B%BF%E6%96%87%E6%96%AF-%E4%B8%80%E6%96%87%E7%9D%87%E6%B8%85%E4%B8%89%E5%80%8B%E5%83%B9%E4%BD%8D%E9%96%80%E5%B0%87%E6%80%A7%E5%83%B9%E6%AF%94%E4%B9%8B%E9%81%B8",
+      "pubDate": "2026-08-18 11:53:48",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/45ec03fd0059b7e7c464e8090c82e3c5/2026-08/Copy_of_KF_-_2026-08-18T190938_790.png",
+      "keywords": [
+        "阿仙奴",
+        "fpl",
+        "英超",
+        "fantasy premier league"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7befd9f3a13a85f0b32fcc23b5e7220d",
+      "title": "馬鞍山半新盤錄蝕讓成交 星漣海中層3房戶920萬元售",
+      "description": "整體二手成交平穩,馬鞍山有半新盤成交,鄰近烏溪沙站的星漣海再錄蝕讓成交。 世紀21奇豐物業分行經理黃宗信表示,市場新近錄得星漣海二手成交,單位為3A座中層C室,實用面積780方呎,3房1套間隔,座向西南望園景,原業主叫價950萬元,最終減價30萬元,以920萬元易手,實用面積呎價約11795元。據了解,原業主於2017年4月於樓花期間一手向發展商購入單位,當時購入價達1,099萬元,持貨9年轉售,",
+      "link": "https://www.stheadline.com/realtime-property/3605735/%E9%A6%AC%E9%9E%8D%E5%B1%B1%E5%8D%8A%E6%96%B0%E7%9B%A4%E9%8C%84%E8%9D%95%E8%AE%93%E6%88%90%E4%BA%A4-%E6%98%9F%E6%BC%A3%E6%B5%B7%E4%B8%AD%E5%B1%A43%E6%88%BF%E6%88%B6920%E8%90%AC%E5%85%83%E5%94%AE",
+      "pubDate": "2026-08-18 11:50:07",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/7fd3fbc0582c5dbea499cea3178c930c/2026-08/KF_Yan_4_.png",
+      "keywords": [
+        "北角",
+        "二手",
+        "星漣海",
+        "港運城",
+        "馬鞍山",
+        "樓市"
       ],
       "category": [
         "business",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "66ed5e06fe155e1599e4d735ccde4069",
-      "title": "資金來源|傳滙豐要求內地投資客戶確認資金來源為境外合法渠道 未及時提交確認聲明或終止服務",
-      "description": "內媒報道,滙豐香港近日已陸續向部份內地投資客戶,啟動資金來源聲明程序,要求其確認資金來源為境外合法渠道,在9月...",
-      "link": "https://hk.finance.yahoo.com/news/%E8%B3%87%E9%87%91%E4%BE%86%E6%BA%90-%E5%82%B3%E6%BB%99%E8%B1%90%E8%A6%81%E6%B1%82%E5%85%A7%E5%9C%B0%E6%8A%95%E8%B3%87%E5%AE%A2%E6%88%B6%E7%A2%BA%E8%AA%8D%E8%B3%87%E9%87%91%E4%BE%86%E6%BA%90%E7%82%BA%E5%A2%83%E5%A4%96%E5%90%88%E6%B3%95%E6%B8%A0%E9%81%93-%E6%9C%AA%E5%8F%8A%E6%99%82%E6%8F%90%E4%BA%A4%E7%A2%BA%E8%AA%8D%E8%81%B2%E6%98%8E%E6%88%96%E7%B5%82%E6%AD%A2%E6%9C%8D%E5%8B%99-080000149.html",
-      "pubDate": "2026-08-18 08:00:00",
+      "id": "bfa5c349aeaeb25335db182c026d7caf",
+      "title": "花旗:市場風險重心從挾淡倉轉向獲利了結",
+      "description": "Investing.com - 花旗銀行週二在致客戶報告中指出,已發展市場的投資者持倉整體仍屬正面,但該行同時警示,市場潛在風險的所在位置正在發生轉變。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%8A%B1%E6%97%97-%E5%B8%82%E5%A0%B4%E9%A2%A8%E9%9A%AA%E9%87%8D%E5%BF%83%E5%BE%9E%E6%8C%BE%E6%B7%A1%E5%80%89%E8%BD%89%E5%90%91%E7%8D%B2%E5%88%A9%E4%BA%86%E7%B5%90-114844157.html",
+      "pubDate": "2026-08-18 11:48:44",
       "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bossmind_356/be729ab0ade2e0f9388af23c950131b7.png",
+      "image_url": "https://content-media.investing.com/news/asian_2_M_1440047814.jpg",
       "keywords": [
-        "滙豐",
-        "資金來源聲明"
+        "花旗"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "ae294489bd89aa32249fbe753260d573",
-      "title": "30年期美債利率突破5.3%!已陷入一場「溫水煮青蛙」式危機|點經",
-      "description": "如果美國經濟資料轉弱,按常理,美債應該受到更多追捧,美債收益率也應該回落才對。可這一次,長期美債繼續遭到拋售,三十年期美債收益率飆升到5.3",
-      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60381029/30%E5%B9%B4%E6%9C%9F%E7%BE%8E%E5%82%B5%E5%88%A9%E7%8E%87%E7%AA%81%E7%A0%B45-3-%E5%B7%B2%E9%99%B7%E5%85%A5%E4%B8%80%E5%A0%B4-%E6%BA%AB%E6%B0%B4%E7%85%AE%E9%9D%92%E8%9B%99-%E5%BC%8F%E5%8D%B1%E6%A9%9F-%E9%BB%9E%E7%B6%93",
-      "pubDate": "2026-08-18 03:59:45",
+      "id": "017eddfd4abed442ae94f73aca8b453c",
+      "title": "麥玲玲析「離運」多分離籲注重健康 林盛斌爆大女讀演藝只想做英語音樂劇非為入行",
+      "description": "林盛斌(Bob)和麥玲玲師傅今日出席補習學校剪綵儀式,Bob透露當年做DJ時,曾為該校做宣傳工作,後來更介紹太太加入從事幕後工作,直至太太誕下第二、三女兒才放棄工作照顧家庭。 林霏兒想做英語音樂劇非入行 提到Bob的18歲大女林霏兒(Faye)在社交網公開已獲香港演藝學院取錄,並透露將修讀戲劇學院基礎文憑。Bob表示大女獲取錄讀戲劇學院基礎文憑,希望讀完一年後可以修讀學士課程。他說:「大女好想讀英",
+      "link": "https://www.stheadline.com/film-drama/3605727/%E9%BA%A5%E7%8E%B2%E7%8E%B2%E6%9E%90%E9%9B%A2%E9%81%8B%E5%A4%9A%E5%88%86%E9%9B%A2%E7%B1%B2%E6%B3%A8%E9%87%8D%E5%81%A5%E5%BA%B7-%E6%9E%97%E7%9B%9B%E6%96%8C%E7%88%86%E5%A4%A7%E5%A5%B3%E8%AE%80%E6%BC%94%E8%97%9D%E5%8F%AA%E6%83%B3%E5%81%9A%E8%8B%B1%E8%AA%9E%E9%9F%B3%E6%A8%82%E5%8A%87%E9%9D%9E%E7%82%BA%E5%85%A5%E8%A1%8C",
+      "pubDate": "2026-08-18 11:45:04",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ll/sthl_square/0ff835f5d2caa6ee3938d0a33812ddba/2026-08/cats2_26.jpg",
+      "keywords": [
+        "bob",
+        "離運",
+        "林霏兒",
+        "林盛斌",
+        "麥玲玲",
+        "失憶大師",
+        "演藝學院"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ffedaa166fcbcf413b5d6a904a115ecd",
+      "title": "東方神起U-KNOW首個個人巡迴演唱會香港站 將於9月26日舉行與仙后歡度中秋",
+      "description": "韓國傳奇二代男團東方神起成員鄭允浩(U-KNOW)出道23年,首個個人巡迴演唱會《U-KNOW PROJECT 26: SCENE#1 in HONG KONG》香港站定於2026年9月26日(星期六)假西沙Go Park香港AXA安盛創夢館舉行。適逢演出當日是中秋節翌日,U-KNOW勢用他充滿熱情的歌聲與舞蹈,與仙后(Cassiopeia.粉絲暱稱)歡度中秋佳節。",
+      "link": "https://www.koreastardaily.com/tc/news/163659",
+      "pubDate": "2026-08-18 11:45:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-18/163659-1062516.jpeg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d8bdcf3d998385279e405735915d964e",
+      "title": "英偉達還是閃迪?美銀揭示哪隻股票持倉不足、哪隻過度擁擠",
+      "description": "Investing.com - 根據摩根士丹利最新發布的大型股機構擁有權追蹤報告,主動型機構投資者對大型科技股的持倉比例,相對於其在標普500中的權重仍然偏低,且這一差距在第二季度進一步擴大。此次分析涵蓋摩根士丹利美國科技股研究範疇內的28家大型科技公司。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%8B%B1%E5%81%89%E9%81%94%E9%82%84%E6%98%AF%E9%96%83%E8%BF%AA-%E7%BE%8E%E9%8A%80%E6%8F%AD%E7%A4%BA%E5%93%AA%E9%9A%BB%E8%82%A1%E7%A5%A8%E6%8C%81%E5%80%89%E4%B8%8D%E8%B6%B3-%E5%93%AA%E9%9A%BB%E9%81%8E%E5%BA%A6%E6%93%81%E6%93%A0-114430640.html",
+      "pubDate": "2026-08-18 11:44:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEB0507V_M.jpg",
+      "keywords": [
+        "摩根士丹利",
+        "持倉比例",
+        "機構投資者"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "008d7c581cc7af38523f524fa2411d76",
+      "title": "王菲20歲細女李嫣穿小背心晒Model高瘦身材 母女鬆弛感如出一轍 歷4次手術零兔唇痕跡",
+      "description": "王菲與前夫李亞鵬的20歲女兒李嫣,近日於雲南被網民偶遇。身高約175cm的她,當日與同母異父的家姐竇靖童及女星宋妍霏等人同行。李嫣身穿黑色緊身吊帶背心,搭配同色系寬鬆運動長褲,展現纖瘦的模特兒身材及白滑肌膚,她將長髮隨意束成馬尾,戴著一副黑色方框眼鏡,整體造型低調。由於李嫣高人一等,很快已被網民認出,並紛紛拍照放上社交平台,引起熱議。 李嫣自帶媽媽王菲鬆弛氣場 在網民發布的影片中,李嫣的走路姿態成",
+      "link": "https://www.stheadline.com/film-drama/3605684/%E7%8E%8B%E8%8F%B220%E6%AD%B2%E7%B4%B0%E5%A5%B3%E6%9D%8E%E5%AB%A3%E7%A9%BF%E5%B0%8F%E8%83%8C%E5%BF%83%E6%99%92Model%E9%AB%98%E7%98%A6%E8%BA%AB%E6%9D%90-%E6%AF%8D%E5%A5%B3%E9%AC%86%E5%BC%9B%E6%84%9F%E5%A6%82%E5%87%BA%E4%B8%80%E8%BD%8D-%E6%AD%B74%E6%AC%A1%E6%89%8B%E8%A1%93%E9%9B%B6%E5%85%94%E5%94%87%E7%97%95%E8%B7%A1",
+      "pubDate": "2026-08-18 11:39:45",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d0c6a3930d255119b13f0f675aba83a5/2026-08/Copy_of_KF__82.png",
+      "keywords": [
+        "李嫣兔唇",
+        "兔唇手術",
+        "宋妍霏",
+        "唇顎裂",
+        "李嫣雲南",
+        "王菲女兒",
+        "金史密斯學院",
+        "竇靖童",
+        "星二代",
+        "李嫣身高",
+        "李嫣",
+        "王菲",
+        "李嫣近照",
+        "李嫣大學"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b4415c3fbbe6ff4aeac29897c2226793",
+      "title": "世界健身-KY宣布:泰國首家分店 啟動預售!",
+      "description": "台北 2026年8月18日 /美通社/ -- 台灣第一大健身連鎖品牌世界健身-KY(股票代號:2762),今(18)日宣布正式進軍泰國,首家泰國分店將進駐 Imperial World Samrong,並同步啟動創始會員預售,為泰國會員帶來結合國際級健身設備、先進科技與多元會員方案的全新健身體驗。 World Gym Thailand team at Imperial World Samrong. World Gym 源自1976年美國加州 Muscle Beach,自黃金健美年代一路發展至今,已成為全球最具知名度的健身品牌之一。目前全球六大洲擁有近300家俱樂部,會員人數突破100萬。品牌成立初期即吸引包括 Arnold Schwarzenegger、Lou Ferrigno ...等健美巨星於 Muscle Beach 訓練;如今,World Gym Corporation 已於台灣資本市場正式掛牌上市,股票代號2762,並在台灣營運超過140家分店,使台灣成為目前World Gym在全球佈局中最大的單一市場。 正式進軍泰國,象徵 World Gym 全球布局再下一城,也將以超過50年的國際健身品牌價值與成熟營運經驗,複製專業運動服務到快速成長的泰國健身市場,為當地消費者帶來更具國際標準的健身服務。 首店進駐 Imperial World Samrong 拓展泰國健身市場 World Gym 進軍泰國的核心承諾十分明確:讓國際級、高品質的健身體驗真正普及於日常生活。首家泰國分店將導入符合國際標準的健身設備與訓練設施,並攜手 Matrix、Abs Company...等國際品牌,同時導入新一代智慧健身科技,包括:AI 體態檢測,透過約3分鐘的靜態與動態評估,提供會員個人化的姿勢、平衡與柔軟度分析;此外,同時導入 MYZONE Switch 穿戴式裝置,協助會員以運動強度為核心進行訓練,打造更智慧、更個人化的健身體驗。 除了硬體設備與智慧科技,World Gym 也將進一步擴大在泰國的國際化訓練內容。透過與全球知名功能性體能賽事 HYROX 的合作,World Gym 已成為 HYROX 在亞太地區最大的合作夥伴,目前合作版圖涵蓋台灣World Gym各據點;也積極規劃於未來幾年,將此拓展至泰國,持續為當地會員引進國際級訓練內容與運動體驗。 國際級設備器材 創新運動科技 提供會員優質方案 世界健身-KY董事長暨總經理柯約翰(John Caraccio)表示:「泰國是 World Gym 全球策略擴張的重要一步。泰國市場充滿活力與戰鬥力,且健身文化正快速成長,這正是 World Gym 品牌所深耕的核心市場。我們的承諾很簡單,我們不只是要在泰國開設一家健身房,而是要讓世界級的健身體驗,真正融入人們的日常生活。我們要把超過50年的品牌精神與價值,以及代表下一世代健身趨勢的創新運動科技,帶進泰國,為當地會員創造全新的健身體驗。」 隨著泰國首店即將開幕,World Gym 目前已正式開放創始會員預約登記,也誠摯邀請泰國消費者加入 World Gym 在泰國的首批會員社群,共同見證品牌進軍泰國的重要里程碑。更多泰國首店及會員相關資訊,請參閱 World Gym Thailand 官方網站。 【關於世界健身 -KY 】 World Gym Corporation,是為台灣第一大健身連鎖品牌,目前在台141個據點。於2024年完成收購World Gym International,擁有此標誌性品牌World Gym及全球經營權,為全球健身領導品牌。其加盟網絡遍佈10個國家、297個地點,為百萬名成員提供服務。將持續以最先進的設施、創新的課程和科技驅動的計畫,與世界各地一起實現健身目標和享受健康的生活方式。 World Gym first club in Thailand at Imperial World Samrong. John Caraccio, Chairman, President, World Gym Corporation.",
+      "link": "https://hk.prnasia.com/story/544375-2.shtml",
+      "pubDate": "2026-08-18 11:39:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnasia.com/media/MS1971471/20260818064115EDT_image_1.jpg?id=OA2893422&p=medium600",
+      "keywords": [
+        "cxp",
+        "pdt",
+        "fit",
+        "spe",
+        "spt"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "eb8a5a6b6342bed1c63fee686c0880cb",
+      "title": "挪威足總主席批國際足協「恐懼管理」 斥因凡蒂諾解僱高層不可接受",
+      "description": "挪威足總主席克拉維內斯周二表示,國際足協解僱一名高級行政人員的做法不可接受,該名高層曾指國際足協主席因凡蒂諾的世界盃出售計劃欺騙員工。克拉維內斯同時促請該管理機構其他領袖抵制可能造成損害的指令。 國際足協首席營運官拉穆爾周一深夜被解僱,距離他向美聯社發表聲明,批評因凡蒂諾一項涉及200億美元的私募股權項目,已過了17天。該項目數小時後因此告吹。 克拉維內斯接受美聯社電話訪問時表示:「現在他被解僱了,我們卻要繼續前進。這是不可接受的,這是『恐懼管理』。」她形容拉穆爾是「我見過最好的足球行政人員」。 克拉維內斯補充:「現在我們還要呼籲國際足協領導層及行政部門,不要屈從於他們明知不符合足球界利益的指令。」她特別點名國際足協秘書長格拉夫斯特倫。 克拉維內斯是前挪威國家隊球員,亦是奧斯陸法官,以及歐洲足協(UEFA)的民選執行委員會成員。她繼承挪威在足球界良好管治方面長期享有的聲譽。 拉穆爾是因凡蒂諾的長期同事,他先於2007至2015年間在歐洲足協擔任高級行政人員,其後於2016年加入其競選團隊,助他當選國際足協主席,並於兩年前從歐洲足協轉到蘇黎世,負責監督國際足協大部分運作。 在全球足球政治這個往往複雜的世界中,拉穆爾被視為最值得信賴的行政人員之一。他對因凡蒂諾領導層的尖銳批評,令國際足協主席面臨的危機加劇。 歐洲足協、亞洲足協及北美洲、中美洲及加勒比海足球協會(CONCACAF)的反彈,源於一項秘密計劃,向由庫什納(Joshua Kushner)牽頭的投資者出售未來世界盃利潤。 一項涉及42億美元的投資,旨在取得國際足協商業附屬公司20%股權,並向其211個國家成員協會各提供2000萬美元。這些協會實際上已擁有這個擁有數十億美元儲備的非牟利足球機構,而接受方案的截止日期為9月中旬。 拉穆爾在7月31日的聲明中,提到國際足協員工被因凡蒂諾在這次已告吹的出售計劃中缺乏透明度所「欺騙」,以及他們「應得到比蔑視和恐嚇更好的待遇」。 這位法國行政人員呼籲全球足球領袖「作出正確決定」,並在聲明結尾寫道:「如果這意味著我會失去工作,那就這樣吧。我會理解並尊重這個決定。至少今晚我會睡個好覺。」 克拉維內斯談及拉穆爾離職時表示:「這是解僱,不是辭職。」她暗示這是格拉夫斯特倫「顯然受到主席壓力」下所為。 國際足協發表聲明稱:「感謝拉穆爾兩年來的服務,並祝願他未來一切順利。」 克拉維內斯談及拉穆爾的介入時表示:「他的聲明對於終止該項目是必要的。他說了一些顯而易見且非常重要的事情,有員工向我們講述了情況,讓我們知道這並非國際足協的整體意願,而是一個人(的決定)。」 因凡蒂諾在摩洛哥拉巴特召集了一次高級管理層會議,但拉穆爾並未出席。該次8月5日的會議後,國際足協發表聲明,為錯誤致歉,並表示出席會議的管理人員「重申對因凡蒂諾主席職位的全力支持」。 克拉維內斯表示:「我們都在摩洛哥收到了報告,我們知道這是一種恐懼管理。這不符合足球界的最佳利益。」 在因凡蒂諾的「國際足協前瞻企業」(FIFA Forward Enterprise)提案引發爭議之前,他似乎肯定會在明年摩洛哥舉行的選舉中,在沒有對手的情況下連任。挑戰者參選的截止日期為11月18日。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16593817-%E6%8C%AA%E5%A8%81%E8%B6%B3%E7%B8%BD%E4%B8%BB%E5%B8%AD%E6%89%B9%E5%9C%8B%E9%9A%9B%E8%B6%B3%E5%8D%94%E3%80%8C%E6%81%90%E6%87%BC%E7%AE%A1%E7%90%86%E3%80%8D-%E6%96%A5%E5%9B%A0%E5%87%A1%E8%92%82%E8%AB%BE",
+      "pubDate": "2026-08-18 11:35:18",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/42cb8b80b6c076ea75f409f638ff6c0c_FIFA_Executive_Leaves_12985_FB.jpg",
+      "keywords": [
+        "體育",
+        "國際足協",
+        "高層解僱",
+        "克拉維內斯",
+        "足球",
+        "因凡蒂諾"
+      ],
+      "category": [
+        "sports",
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f0a98b0ff8286fdc1cdfd462645bc83f",
+      "title": "Airbnb對MercadoLibre:評估兩家消費企業的收入軌跡",
+      "description": "MercadoLibre已連續兩年每季增加收入,而Airbnb則隨季節大幅波動——這種穩定度上的鮮明差異,改變投資者應如何比較兩者。",
+      "link": "https://hk.finance.yahoo.com/news/airbnb%E5%B0%8Dmercadolibre-%E8%A9%95%E4%BC%B0%E5%85%A9%E5%AE%B6%E6%B6%88%E8%B2%BB%E4%BC%81%E6%A5%AD%E7%9A%84%E6%94%B6%E5%85%A5%E8%BB%8C%E8%B7%A1-113500648.html",
+      "pubDate": "2026-08-18 11:35:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/en/hk_moneyclub_713/2b30bb4ed27f572b1073b458de3fa457.jpg",
+      "keywords": [
+        "airbnb",
+        "mercadolibre"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1b3c69bc7431c8010b363b4252080505",
+      "title": "港姐2026—盧蔚晴獲麥美恩力撐做自己 解鎖夜蒲戰衣大展野性本色",
+      "description": "年度選美盛事《2026香港小姐競選》熱戰在即,年僅20歲的熱門佳麗盧蔚晴(Jasmine)憑住超高顏值未選先爆紅,穩佔網絡人氣榜Top 1!日前師姐麥美恩",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60381071/%E6%B8%AF%E5%A7%902026-%E7%9B%A7%E8%94%9A%E6%99%B4%E7%8D%B2%E9%BA%A5%E7%BE%8E%E6%81%A9%E5%8A%9B%E6%92%90%E5%81%9A%E8%87%AA%E5%B7%B1-%E8%A7%A3%E9%8E%96%E5%A4%9C%E8%92%B2%E6%88%B0%E8%A1%A3%E5%A4%A7%E5%B1%95%E9%87%8E%E6%80%A7%E6%9C%AC%E8%89%B2",
+      "pubDate": "2026-08-18 11:30:44",
       "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/cis/5d48bb00da23771958558d89.jpg/mvOPi2agzI10zUOfABfpbg4JewMnft6IYT6xDmE-sQ4",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166390690045759488079823.jpeg/1zX-_ENspaKS01-dlK4Ix59cTFthqcuqDp-20Q6fttE",
       "keywords": [
         "新聞",
-        "國際",
-        "世界新聞",
         "hk01",
-        "國際新聞",
-        "環球",
-        "香港01"
+        "即時娛樂",
+        "明星",
+        "韓星",
+        "即時娛樂新聞",
+        "香港新聞",
+        "藝人",
+        "香港01",
+        "娛樂新聞"
       ],
       "category": [
-        "business"
+        "entertainment",
+        "lifestyle"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "bf52b450e8040a8a611666c65272b3c0",
-      "title": "Nvidia擲1050億美元撐OpenAI大型AI數據中心 黃仁勳否認屬循環融資",
-      "description": "英偉達(Nvidia)將為OpenAI位於美國俄亥俄州的AI數據中心提供信貸及算力支持。據彭博報道,Nvidia與OpenAI達成協議,承諾投入最多1,050億美元,支持俄亥俄州大型AI數據中心園區。該園區建成後將由OpenAI租用,並將採用Nvidia晶片及運算系統;據悉,相關設備採購至2030年或為Nvidia帶來約6,000億美元收入。 首階段規模達4.25吉瓦 OpenAI計劃從俄亥俄州P",
-      "link": "https://www.stheadline.com/realtime-finance/3605512/Nvidia%E6%93%B21050%E5%84%84%E7%BE%8E%E5%85%83%E6%92%90OpenAI%E5%A4%A7%E5%9E%8BAI%E6%95%B8%E6%93%9A%E4%B8%AD%E5%BF%83-%E9%BB%83%E4%BB%81%E5%8B%B3%E5%90%A6%E8%AA%8D%E5%B1%AC%E5%BE%AA%E7%92%B0%E8%9E%8D%E8%B3%87",
-      "pubDate": "2026-08-18 02:50:12",
+      "id": "a3bf49c6854323f04634ea019127271c",
+      "title": "羽毛球世錦賽|伍家朗、李卓耀齊闖男單32強 「澤柔配」輕取德國組合問闖下一輪",
+      "description": "印度新德里舉行的「2026世界羽毛球錦標賽」周二上演第二日賽事,港將分途出擊,男單代表伍家朗和李卓耀首輪未受太大挑戰齊晉級32強,而混雙的「澤柔配」陳延澤/吳芷柔則以22:20、21:11擊敗德國組合Marvin Emil Seidel/阮淑芳。女單盧善恩對上世界第4的國家隊選手陳雨菲在先贏一局後遭逆轉,首圈止步。 港隊男單代表李卓耀和伍家朗分途出擊,家朗周二率先亮相,對上新西蘭的Edward L",
+      "link": "https://www.stheadline.com/realtime-sport/3605732/%E7%BE%BD%E6%AF%9B%E7%90%83%E4%B8%96%E9%8C%A6%E8%B3%BD%E4%BC%8D%E5%AE%B6%E6%9C%97%E6%9D%8E%E5%8D%93%E8%80%80%E9%BD%8A%E9%97%96%E7%94%B7%E5%96%AE32%E5%BC%B7-%E6%BE%A4%E6%9F%94%E9%85%8D%E8%BC%95%E5%8F%96%E5%BE%B7%E5%9C%8B%E7%B5%84%E5%90%88%E5%95%8F%E9%97%96%E4%B8%8B%E4%B8%80%E8%BC%AA",
+      "pubDate": "2026-08-18 11:30:35",
       "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/ee19bcba042fa3c63c398ff1f5da4e31/2026-08/KF_-_2026-08-18T104935_588.png",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/36d0aebb8ba8836a8547dd12a3245840/2026-08/KF_-_2026-08-18T192247_872.jpg",
       "keywords": [
-        "英偉達",
-        "openai",
-        "nvidia"
+        "李卓耀",
+        "盧善恩",
+        "「澤柔配」",
+        "男單",
+        "陳延澤",
+        "羽毛球世錦賽",
+        "吳芷柔",
+        "陳雨菲",
+        "伍家朗"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "06c920d0de571b44724db1a9c775d604",
+      "title": "鍾嘉欣台上大談人生哲理送「忙」字 網民聽完嬲爆",
+      "description": "42歲鍾嘉欣(Linda)自與脊醫丈夫Jeremy結婚後移居加拿大,先後誕下兩女一子,家庭生活幸福。近年她逐步重拾演藝事業,更展開巡迴演唱會,繼續在舞台上與粉絲見面。 近日鍾嘉欣在內地汕尾舉行演唱會,期間除了獻唱,還即席在台上寫下一個「忙」字送給粉絲,更大談自己對人生的看法。不過,原本充滿正能量的「心靈雞湯」,就未能令網民受落,反而被大批網民質疑「離地」,相關片段隨即在網上掀起熱議。 演唱會上,鍾嘉欣一邊寫下「忙」字,一邊向全場解釋自己為何選擇送這個字給大家。她說:「我送個『忙』字俾大家......點解我送個『忙』字呢?因為人生只要有得忙,即係話你更有生命,你有得活著。」 她續指,自己認為「忙」其實是一件好事,甚至會令人更加有朝氣及懂得照顧自己:「其實忙係好㗎,會令到你更加有朝氣啦,更加會照顧好自己啦,因為你忙嘛!」 最後,她更向現場粉絲送上祝福:「所以,我好希望祝大家,喺呢個世界上,忙......喺忙嘅當中呢,我希望你哋好好享受呢一個忙嘅過程。無論發生咩事都好,心態係最要緊,所以祝大家愈忙愈好!」 原本一番出於善意的祝福,卻意外引爆網民討論。 不少網民認為,「愈忙愈好」對於每日為返工、生活忙到透氣的打工仔而言,聽起來未必係祝福,甚至有點「地獄笑話」Feel。 有人留言:「星期一睇到想報警」、「簡直係詛咒」,亦有人批評鍾嘉欣如果沒有相關智慧,就不要「扮文青哲學家」。更有人認為,鍾嘉欣可能將藝人的工作觀套用在一般人身上,直指藝人「唔忙」可能代表冇工作,但對普通打工仔而言,「忙」很多時反而代表OT、壓力爆煲及身心俱疲。 甚至有網民直接問:「鍾嘉欣係咪好等錢洗?」亦有人反問:「佢想忙咪自己忙囉,做咩要其他人陪佢。」 不過,亦不是所有網民都認同批評聲音,有人認為大家可能過分解讀,指出藝人的工作模式與一般打工仔始終不同,從藝人的角度而言,工作量增加確實可能代表事業有起色,因此理解鍾嘉欣只是想向粉絲傳遞正面訊息。 但另一邊廂,亦有網民以其他職業作反例,笑言「愈忙愈好」如果套用落其他行業,隨時變成超級唔吉利的祝福,更反問:「如果我做殯儀,醫護,消防點算」。",
+      "link": "https://www.bastillepost.com/hongkong/article/16592273-%E9%8D%BE%E5%98%89%E6%AC%A3%E5%8F%B0%E4%B8%8A%E5%A4%A7%E8%AB%87%E4%BA%BA%E7%94%9F%E5%93%B2%E7%90%86%E9%80%81%E3%80%8C%E5%BF%99%E3%80%8D%E5%AD%97-%E7%B6%B2%E6%B0%91%E8%81%BD%E5%AE%8C%E5%AC%B2%E7%88%86",
+      "pubDate": "2026-08-18 11:30:21",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260818_EN_source-web_Linda-Chung-4.jpg",
+      "keywords": [
+        "娛圈事",
+        "鍾嘉欣"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "638db5670b94ca47ab096ec63f998b30",
+      "title": "孫慧雪5歲開始偏頭痛 開工發作痛到嘔焗住死撐",
+      "description": "孫慧雪一直受到偏頭痛影響,日前她以患者的身份在一連兩集的醫療健康資訊節目《Dr. Bob》,與主持林盛斌(Bob)、嘉賓醫生腦神經科專科朱炎培醫生和腦神經科專科李可倫醫生,分享自己與偏頭痛糾纏逾三十年的親身經歷。她希望以過來人身分提醒公眾不要將偏頭痛視為一般頭痛。很多人以為睡一覺或服用止痛藥便可解決問題,但偏頭痛其實屬於腦神經疾病,若長期忍受或只靠止痛藥硬撐,病情只會愈來愈嚴重。",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1048132/%E5%AD%AB%E6%85%A7%E9%9B%AA5%E6%AD%B2%E9%96%8B%E5%A7%8B%E5%81%8F%E9%A0%AD%E7%97%9B-%E9%96%8B%E5%B7%A5%E7%99%BC%E4%BD%9C%E7%97%9B%E5%88%B0%E5%98%94%E7%84%97%E4%BD%8F%E6%AD%BB%E6%92%90",
+      "pubDate": "2026-08-18 11:30:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048132/article/1048132/df/01M0A5W53RC53RCB3GRKQ9TMVH.jpg?updatedAt=1787048582",
+      "keywords": null,
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "69630f4b83e7545f7b3df30d67d35ea9",
+      "title": "iOS 26.6.1緊急更新|Apple修補iPhone 29個安全漏洞即升級免被駭",
+      "description": "快升!iOS 26.6.1緊急更新 補iPhone 29個安全漏洞|蘋果公司(Apple)深夜突然向全球用戶推送了 iOS 26.6.1 以及 iPadOS 26.6.1 的緊急修補更新。",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60381284/ios-26-6-1%E7%B7%8A%E6%80%A5%E6%9B%B4%E6%96%B0-apple%E4%BF%AE%E8%A3%9Ciphone-29%E5%80%8B%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%E5%8D%B3%E5%8D%87%E7%B4%9A%E5%85%8D%E8%A2%AB%E9%A7%AD",
+      "pubDate": "2026-08-18 11:25:17",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166464181612843008972345.jpeg/YxxYiGQEWK5Um08SBCWOabwXU2eU2znzll6XvJZel7w",
+      "keywords": [
+        "app",
+        "航拍",
+        "ios",
+        "動漫",
+        "tesla",
+        "android",
+        "apple",
+        "潮物",
+        "facebook",
+        "科技",
+        "香港01",
+        "手遊"
       ],
       "category": [
         "technology",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "88ec81b499655c1b6d2232910a30724c",
+      "title": "全能AI摺機 極纖薄Galaxy Z Fold8 Ultra",
+      "description": "摺疊手機市場從早期的「高階產品」,到近年進化成兼具極致質感、高耐用性與強大效能的主流旗艦選擇。Samsung作為摺疊手機的領導者,經歷了八代的演",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60381197/%E5%85%A8%E8%83%BDai%E6%91%BA%E6%A9%9F-%E6%A5%B5%E7%BA%96%E8%96%84galaxy-z-fold8-ultra",
+      "pubDate": "2026-08-18 11:19:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166427486108520448214968.jpeg/swBRyngF7yerhmlicRXpcBKwTbhMEwHMc521r3Odta8",
+      "keywords": [
+        "app",
+        "航拍",
+        "ios",
+        "動漫",
+        "tesla",
+        "android",
+        "apple",
+        "潮物",
+        "facebook",
+        "科技",
+        "香港01",
+        "手遊"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d1182bda7b80d5dca6ce0f918f0d94f1",
+      "title": "關智斌第8次出戰HYROX終奪冠圓夢 自爆初次參賽「名都仲未識讀」",
+      "description": "現年45歲的「凍齡男神」關智斌(Kenny)近年酷愛極限體能運動,日前他就到深圳第八次出戰HYROX體能賽事。Kenny與拍檔Benny Woo在賽場上展現出驚人",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60381203/%E9%97%9C%E6%99%BA%E6%96%8C%E7%AC%AC8%E6%AC%A1%E5%87%BA%E6%88%B0hyrox%E7%B5%82%E5%A5%AA%E5%86%A0%E5%9C%93%E5%A4%A2-%E8%87%AA%E7%88%86%E5%88%9D%E6%AC%A1%E5%8F%83%E8%B3%BD-%E5%90%8D%E9%83%BD%E4%BB%B2%E6%9C%AA%E8%AD%98%E8%AE%80",
+      "pubDate": "2026-08-18 11:15:30",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166438089984315392645081.jpeg/fa8U4P9GasYHA6G3a3223dwKEUyDcrZzowebR6MHm0c",
+      "keywords": [
+        "明星",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "藝人",
+        "韓星",
+        "新聞",
+        "即時娛樂",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c0d935f36871aaf6cde23c08feb26bf2",
+      "title": "央視現場畫面|朱鎔基遺體18日火化 習近平、李強等到八寶山送別",
+      "description": "新華社消息,中國共產黨的優秀黨員,久經考驗的忠誠的共產主義戰士,傑出的無產階級革命家、政治家,黨和國家的卓越領導人,中國共產黨第十四屆、十",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60381277/%E5%A4%AE%E8%A6%96%E7%8F%BE%E5%A0%B4%E7%95%AB%E9%9D%A2-%E6%9C%B1%E9%8E%94%E5%9F%BA%E9%81%BA%E9%AB%9418%E6%97%A5%E7%81%AB%E5%8C%96-%E7%BF%92%E8%BF%91%E5%B9%B3-%E6%9D%8E%E5%BC%B7%E7%AD%89%E5%88%B0%E5%85%AB%E5%AF%B6%E5%B1%B1%E9%80%81%E5%88%A5",
+      "pubDate": "2026-08-18 11:15:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166461943054077952293687.png/gjKdLA_mX9YAr30PE3UfQBjQ1t50bsLXBHxKgQR8SoE",
+      "keywords": [
+        "時事",
+        "突發",
+        "香港01",
+        "中國"
+      ],
+      "category": [
+        "politics",
+        "top",
+        "lifestyle"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9362d4b64df08ee1ef6a3b96b6b610bb",
+      "title": "英超推關鍵判決解釋議案",
+      "description": "【Now Sports】足球比賽愈來愈倚重視像裁判的判決,甚至會影響整個比賽形勢,但當中的疑慮仍然不少,故英超今季實行主裁判及VAR的判決解釋論,以讓球迷更加深入知道球證為何作出這些判決理據。相關的球證及VAR關鍵判決的選擇性文字解釋,會在英超官方網頁、英超官方App及英超官方社交平台《X》帳號刊出,希望透過更多...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%8B%B1%E8%B6%85%E6%8E%A8%E9%97%9C%E9%8D%B5%E5%88%A4%E6%B1%BA%E8%A7%A3%E9%87%8B%E8%AD%B0%E6%A1%88-111431976.html",
+      "pubDate": "2026-08-18 11:14:31",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/9550c37aa3df171087cf1f4e43c92c90b10acb14c772530d51cb73abe4d16fe0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F8b3bddd2-e323-4d5a-9386-93d90309e2a5",
+      "keywords": [
+        "英超",
+        "var",
+        "判決"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5090d6d698a58bacfb43cdbee48fedde",
+      "title": "TASKING聯隊奪AWS黑客松大獎 示範AI助汽車安全軟件開發",
+      "description": "一個由TASKING、英飛凌(Infineon)及德國航空太空中心(DLR)專家組成的跨機構團隊,在亞馬遜網絡服務(AWS)舉辦的「利用代理式人工智能加速V型開發週期」黑客松比賽中,憑藉展示一個受規管的人工智能輔助工程工作流程,重新構想軟件定義汽車開發,贏得最高殊榮。該原型方案在比賽中獲得原廠設備製造商(OEM)採購準備度的最高評分,驗證了一種將可靠半導體產品及知識,與汽車V型開發週期中的實施、合規、測試及驗證相結合的新方法。 隨着汽車日益由軟件定義,工程機構必須應對日益複雜的軟件問題,儘管許多機構仍依賴碎片化的開發流程。需求、半導體文件、實施、合規、測試及驗證,通常由分散的團隊及不相關的工具管理,拖慢開發進度並延遲關鍵反饋。儘管人工智能有潛力解決這些問題,但安全關鍵行業要求建立在可靠技術資訊、確定性驗證工具、可審計證據及持續人手監督之上的受規管工作流程。正如該工作流程原型所示,這些要求可以結合在一個實用的工程工作流程中,其一致的架構原則亦適用於航空太空及國防等其他安全關鍵領域。 TASKING首席解決方案架構師Travis Bone表示:「為滿足軟件定義汽車日益複雜的需求,我們創建了一個原型,展示人工智能如何在不犧牲安全關鍵開發所需的嚴謹性或基本人手判斷下,協調工程任務。」他與TASKING研究工程師Felix Martin、德國航空太空中心研究生Pablo Jahnen及英飛凌首席工程師兼汽車人工智能系統團隊主管Simon Achatz共同創建了該原型。Travis Bone續指:「透過將TASKING的合規及驗證技術與英飛凌可靠的半導體產品及知識相結合,我們展示了工程團隊如何減少人手交接、加快驗證,並在整個V型開發週期中生成所需證據,同時讓工程師牢牢掌握控制權。這次勝利驗證了我們對安全關鍵軟件開發未來的承諾。」 為黑客松參賽作品開發的原型,利用AWS Kiro人工智能代理協調整個軟件開發生命週期的工程活動,將可靠的英飛凌設備規格、產品更新及錯誤資訊,與實施、TASKING編碼標準分析、自動單元測試生成、虛擬電子控制單元執行、結構覆蓋率分析及證據報告相結合。利用TASKING人工智能框架,代理迭代評估結果並改進代碼或測試,直至編碼標準發現、需求覆蓋率及結構覆蓋率得到解決或適當記錄。工程師對每個關鍵決策均保持監督及批准。 該架構設計為透過AWS Marketplace部署的概念驗證,展示了雲端交付的合規及驗證功能,如何使先進的安全關鍵工程工作流程更容易供分散的開發團隊使用。 Achatz表示:「人工智能可以生成代碼,但在安全關鍵開發中,真正的挑戰是確保實施、驗證及合規與可靠的工程知識保持聯繫。我們的貢獻是將英飛凌的設備規格、產品更新及錯誤資訊直接引入工作流程,使人工智能輔助的決策基於實際硬件環境。結合確定性驗證及人手監督,這展示了一條擴展軟件定義汽車開發的實用路徑。我們與TASKING的長期合作為探索人工智能如何在安全關鍵汽車開發中負責任地應用,提供了堅實基礎。」 AWS全球新興科技、汽車及製造業主管Stefano Marzani表示:「作為評審,我們尋找將技術創新與實際影響相結合的解決方案。慕尼黑黑客松的獲獎項目之所以脫穎而出,是因為它將對軟件定義汽車面臨挑戰的清晰理解,與將正確技術整合到一個可執行工作流程中以實際解決這些問題的能力相結合。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16593729-tasking%E8%81%AF%E9%9A%8A%E5%A5%AAaws%E9%BB%91%E5%AE%A2%E6%9D%BE%E5%A4%A7%E7%8D%8E-%E7%A4%BA%E7%AF%84ai%E5%8A%A9%E6%B1%BD%E8%BB%8A%E5%AE%89%E5%85%A8%E8%BB%9F%E4%BB%B6%E9%96%8B%E7%99%BC",
+      "pubDate": "2026-08-18 11:06:58",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/a9523512c23c4f5db40ea185cbc6094c_Team_photo_without_names_FB.jpg",
+      "keywords": [
+        "人工智能",
+        "tasking",
+        "英飛凌",
+        "汽車軟件",
+        "aws",
+        "商業事"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "197cc5e871cea715433f94af173cafba",
+      "title": "一田大減價2026|超市貨品名牌廚具15折起!海產再95折+買1送1區",
+      "description": "一田大減價2026|一田「夏日購物賞」將於周五8月21日至30日舉行,全場貨品低至15折!今次增設「$20、 $35、買一送一」等筍價專區,有逾300款人氣筍",
+      "link": "https://www.hk01.com/%E6%95%99%E7%85%AE/60381083/%E4%B8%80%E7%94%B0%E5%A4%A7%E6%B8%9B%E5%83%B92026-%E8%B6%85%E5%B8%82%E8%B2%A8%E5%93%81%E5%90%8D%E7%89%8C%E5%BB%9A%E5%85%B715%E6%8A%98%E8%B5%B7-%E6%B5%B7%E7%94%A2%E5%86%8D95%E6%8A%98-%E8%B2%B71%E9%80%811%E5%8D%80",
+      "pubDate": "2026-08-18 11:04:08",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166458415065600000085693.jpeg/4FhfwOrD1lBuCsKjcTd8sJ8exyjRIFYTVz8w5lc_MOY",
+      "keywords": [
+        "飲食",
+        "教育局",
+        "復必泰",
+        "兒童疫苗",
+        "食譜",
+        "消費者委員會",
+        "天文台",
+        "科興",
+        "hk01",
+        "停學",
+        "疫苗安全",
+        "停課",
+        "新聞",
+        "快速檢測",
+        "香港01",
+        "吃喝玩樂",
+        "香港新聞"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9785753f01d7fc1b62ca88357336637d",
+      "title": "Trossen與Stereolabs合作 整合立體視覺技術助實體AI數據收集",
+      "description": "Trossen Robotics與Ouster旗下Stereolabs SAS公司,今日宣布合作,將Stereolabs的ZED X Mini及ZED X Nano相機,整合至Trossen為機械人學習而設的全新實體人工智能硬件套件。該套件主要包括Trossen Workbench及Rivet,兩者均為固定及流動的雙臂操作平台。 實體人工智能模型表現,取決於其訓練所用的示範數據質素,而大部分數據均為視覺資訊。現時,團隊通常自行組裝機械臂及消費級USB相機,並依賴自訂驅動程式碼連接。這導致數據集出現低解像度圖像、校準不一致、動態模糊,以及不同視角和數據流之間的時間偏差。 Trossen Workbench及Rivet是統一開發平台,配備雙WidowX Pro六自由度機械臂,伸展範圍由70厘米至100厘米,負載能力為4至6公斤,重複定位精度達1毫米。每個平台均由內置的NVIDIA Jetson AGX Orin 64 GB計算單元驅動,並支援透過本地網絡及互聯網進行遙距操作。每個平台亦包含一個完全由Stereolabs硬件構建,並經廠方校準的三相機視覺系統。 Stereolabs與Trossen的聯合視覺架構,反映了最先進操作策略的訓練方式。中央安裝的Stereolabs ZED X Mini提供全局場景視圖及整個工作空間的立體深度資訊,而每個腕部安裝的ZED X Nano則提供夾持器及物件的近距離視圖,這正是模仿學習策略進行精細操作所依賴的。 ZED X Nano專為此應用而設計。其雙2.3百萬像素(1920×1200)全局快門感應器,能以高達每秒60幀的速度捕捉影像,避免了捲簾快門USB相機的動態模糊問題。其神經深度引擎可解析近至3厘米的幾何形狀,這正是實際抓取操作發生的距離。GMSL2連接配合鎖定、抗電磁干擾的電纜,確保所有三個相機在Jetson上確定性同步,並採用零複製管道,使團隊能夠同時錄製、編碼及運行推斷,而不會在過程中無聲地丟失幀數。內置的抗震慣性測量單元(IMU)確保即使機械臂高速移動時,腕部視圖仍可使用。 每個在Workbench及Rivet上收集的遙距操作片段,均是清晰、同步、多視角、包含RGB及深度資訊的訓練樣本,透過原生支援ROS 2及NVIDIA Isaac Sim / Isaac Lab,可供模仿學習、強化學習及模擬到現實工作流程使用。 Trossen Robotics行政總裁Matt Trossen表示:「實體人工智能界正轉向GMSL2,因為USB無法處理真實機械人所需的,由末端執行器到計算單元的長電纜連接。Stereolabs ZED X Nano為我們提供信號穩定性、圖像質素及吞吐量,將實體人工智能從實驗室帶入堅固的工業部署。團隊應將時間用於收集示範及訓練策略,而非整合及校準相機設備。」 Stereolabs總裁Cecile Schmollgruber指出:「Trossen做到了其他人鮮有做到的事:將相機置於完整、經校準的數據收集系統核心。配備Stereolabs ZED X Mini及ZED X Nano的Workbench,將每個示範轉化為訓練級數據,這將推動實體人工智能向前發展。」 Workbench是Trossen更廣泛實體人工智能硬件套件的核心,該套件包括RIVET流動操作平台、GLIDE被動引導臂,以及用於可擴展遙距操作數據收集的COCKPIT操作站。該套件將於2026年8月12日至28日,在三藩市舉行的Trossen實體人工智能駐場活動中公開展示,同時亦會在2026年8月18日至19日,同樣於三藩市舉行的Actuate會議上,在Trossen的展位進行實時數據收集及策略評估示範。 Trossen Robotics開發易於使用、模組化的硬件及軟件平台,用於實體人工智能研究、數據收集及部署。其機械臂、流動操作器、遙距操作系統及開發工具,協助團隊收集高質素數據、訓練具體化人工智能模型,並將機械人應用從實驗室推向實際應用。 Stereolabs是Ouster公司(納斯達克:OUST)全資子公司,是實體人工智能三維視覺及深度感知領域的領導者。其ZED相機系列及ZED SDK平台,為機械人技術、工業自動化及智能空間提供實時深度感知、空間映射及人工智能驅動的物件理解功能。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16593679-trossen%E8%88%87stereolabs%E5%90%88%E4%BD%9C-%E6%95%B4%E5%90%88%E7%AB%8B%E9%AB%94%E8%A6%96%E8%A6%BA%E6%8A%80%E8%A1%93%E5%8A%A9%E5%AF%A6%E9%AB%94ai%E6%95%B8%E6%93%9A%E6%94%B6%E9%9B%86",
+      "pubDate": "2026-08-18 11:03:06",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/5c783d7971064e018629b17b64850fd8_Trossen_and_Stereolabs_Workbench_Rivet_with_ZED_X_Mini_and_Nano_Cameras_FB.jpg",
+      "keywords": [
+        "trossen robotics",
+        "stereolabs",
+        "實體人工智能",
+        "數據收集",
+        "機械人學習",
+        "商業事"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ac6c80e2ee238fbf83d9778c4fdcadd8",
+      "title": "Wellvii BP Go獲FDA批准 成為最輕巧便攜指套血壓計",
+      "description": "Wellvii公司今日宣布,其創新的BP Go血壓監測技術已獲美國食品藥物管理局批准,標誌著公司在改革遙距病人監測及互聯醫療方面,邁出重要一步。 BP Go旨在透過便捷的指套測量方式,簡化血壓測量過程,免除傳統臂式血壓計的諸多不便。該設備專為家居及遙距護理環境設計,支持Wellvii將可及的互聯健康監測,推廣至臨床環境以外的願景。 馬克·卡查圖里安博士表示,這次美國食品藥物管理局的批准,對Wellvii及BP Go而言是一個具變革意義的里程碑。他指出,這讓公司距離為全球數百萬病人提供簡單、準確及互聯的血壓監測服務,更近一步。 Wellvii公司總部設於佛羅里達州棕櫚灘花園,致力透過無線互聯的非侵入式生命體徵測量技術,革新消費者健康及臨床市場的醫療效率與質素。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16593644-wellvii-bp-go%E7%8D%B2fda%E6%89%B9%E5%87%86-%E6%88%90%E7%82%BA%E6%9C%80%E8%BC%95%E5%B7%A7%E4%BE%BF%E6%94%9C%E6%8C%87%E5%A5%97%E8%A1%80%E5%A3%93%E8%A8%88",
+      "pubDate": "2026-08-18 11:02:39",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/65a91e8bde0e45e299f1154459e621a4_WwWB_AVwH_FB.jpg",
+      "keywords": [
+        "血壓監測",
+        "bp go",
+        "遙距醫療",
+        "wellvii",
+        "fda",
+        "商業事"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "774bcdc23e8b486fced91c65d24ae756",
+      "title": "卸任嘉義縣長後選“立委”?翁章梁未把話說死",
+      "description": "中評社嘉義8月18日電(記者 李京昇)民進黨籍嘉義縣長翁章梁兩屆任期將屆滿,綠營提名“立委”蔡易餘參選下屆縣長,而翁章梁政治生涯下一步備受關注,若蔡易餘順利當選,其“立委”一職將出缺,翁17日受訪首度鬆口說“不排除、都有可能”。翁章梁18日再被問是否補選“立委”?他則強調現階段仍以縣政與輔選為重,並未做出任何決定。 嘉義縣長翁章梁17日接受媒體專訪時提到,縣長卸任後不排除投入補選,要",
+      "link": "http://www.crntt.com/doc/7_0_160258262_1_0818190157.html",
+      "pubDate": "2026-08-18 11:01:56",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/18/160258272.JPG",
+      "keywords": [
+        "翁章梁",
+        "嘉義縣"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0cfbf72376ac6ea329800b07727a1e56",
+      "title": "OpenAI推青少年版ChatGPT 設內容限制助學習",
+      "description": "OpenAI正推出專為青少年設計的ChatGPT版本。這批青少年是首代在人工智能環境下成長的人,他們已將ChatGPT用於學業、日常問題,甚至尋求陪伴。 總部設於三藩市的OpenAI表示,將於周二推出的「青少年版ChatGPT」,專為13至17歲青少年而設,並加強保護措施,包括限制涉及自殺、自殘、浪漫或性相關對話的內容。該版本亦提供功課及學習支援,旨在協助學生學習,而非直接提供答案或學校論文。 公司指出,此舉旨在引導青少年在適合其年齡的環境中,健康地使用人工智能。 OpenAI全球政策副總裁安·奧利里表示:「我們希望以對待青少年的方式對待他們,這意味著我們必須確保在適當的發展階段出現,既不輕視他們,也不將他們視為兒童,同時亦要確保他們不會接觸到不應接觸的內容。」 家長、教育工作者及兒童發展專家一直對兒童使用人工智能聊天機械人發出警告,這些機械人被指助長學業作弊,甚至導致自殺。儘管成年人亦可能將人工智能擬人化並發展出不健康的關係,但青少年的大腦尚未完全發育,他們尤其脆弱。 去年,一個監察組織的研究發現,ChatGPT會向13歲兒童提供如何飲酒及吸毒的資訊,教導他們如何隱藏飲食失調,甚至在被要求時,撰寫一封令人心碎的遺書給其父母。在研究人員假扮脆弱青少年進行互動時,ChatGPT通常會警告不要進行危險活動,但隨後卻提供了令人震驚的詳細及個人化毒品使用、限制卡路里飲食或自殘計劃。 根據一個研究及倡導明智使用數碼媒體的組織Common Sense Media於2025年發表的研究顯示,在美國,超過七成青少年正轉向人工智能聊天機械人尋求陪伴,其中一半人定期使用人工智能伴侶。 OpenAI行政總裁薩姆·奧爾特曼曾表示,公司正嘗試研究對該技術的「情感過度依賴」,並於去年形容這在年輕人中是「非常普遍的現象」。 據OpenAI稱,對於「青少年版ChatGPT」的用戶,聊天機械人將被阻止暗示對用戶有個人感情,或暗示其有意識或會體驗情感。這亦是除了阻止浪漫或性相關對話之外的措施。 OpenAI兒童發展主管艾莉森·米什金表示:「我們仔細審視並識別出模型可能發出的假設性暗示,這些暗示可能會讓青少年對其產生某種關係。」 OpenAI不會核實用戶年齡,但已利用年齡驗證功能,根據查詢類型等因素,估計用戶是否未滿18歲。若有人被識別或自行表明為未成年人,他們將自動轉入青少年版聊天機械人。這與Meta在Instagram上處理青少年帳戶的方式類似,後者對內容、聊天及私隱的限制比普通帳戶更嚴格。 若要使用家長控制功能,青少年用戶及其家長或監護人均須選擇加入。但奧利里指出,青少年版聊天機械人的理念是「確保其安全,即使不使用家長控制功能」。已連結青少年帳戶的家長可設定「靜默時段」,在此期間青少年無法使用ChatGPT,並在有限的高風險情況下,例如用戶可能自殘時,接收安全通知。 OpenAI表示:「我們正增加與飲食失調相關的額外通知,同時限制分享內容,並專注於線下支援可能最關鍵的時刻。」 至於功課輔助方面,OpenAI表示,青少年版聊天機械人旨在引導學生自行找出答案,而非直接提供簡單答案。該公司已為教師提供ChatGPT版本,而為協助兒童學習及功課而量身定制的模型,可為OpenAI提供更多將其產品引入學校的途徑。 米什金表示:「我們亦會繼續投資擴展互動學習,因為研究顯示,當人們積極參與並努力理解概念時,學習效果會更佳。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16593571-openai%E6%8E%A8%E9%9D%92%E5%B0%91%E5%B9%B4%E7%89%88chatgpt-%E8%A8%AD%E5%85%A7%E5%AE%B9%E9%99%90%E5%88%B6%E5%8A%A9%E5%AD%B8%E7%BF%92",
+      "pubDate": "2026-08-18 11:00:56",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/650cb35591de6546054d6c4e73b3290a_ChatGPT_Teens_33976_FB.jpg",
+      "keywords": [
+        "青少年",
+        "openai",
+        "人工智能",
+        "chatgpt",
+        "商業事",
+        "聊天機械人"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "922480d5b94bb19ac90256286698e3f2",
+      "title": "研究指常用消毒劑或影響生殖與神經系統 專家:應區分清潔與消毒",
+      "description": "許多家庭、學校和醫院常用的消毒濕巾、抗菌洗手液和清潔劑,可能含有一種名為「季銨化合物」(quaternary ammonium compounds,簡稱QACs)的殺菌成",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60381138/%E7%A0%94%E7%A9%B6%E6%8C%87%E5%B8%B8%E7%94%A8%E6%B6%88%E6%AF%92%E5%8A%91%E6%88%96%E5%BD%B1%E9%9F%BF%E7%94%9F%E6%AE%96%E8%88%87%E7%A5%9E%E7%B6%93%E7%B3%BB%E7%B5%B1-%E5%B0%88%E5%AE%B6-%E6%87%89%E5%8D%80%E5%88%86%E6%B8%85%E6%BD%94%E8%88%87%E6%B6%88%E6%AF%92",
+      "pubDate": "2026-08-18 11:00:51",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166414586291687424763045.jpeg/W4h9TTXhY3z-nTFKs9TrM8Sb_T6G5B-U5KcBGeSnARk",
+      "keywords": [
+        "環球",
+        "世界新聞",
+        "國際新聞",
+        "新聞",
+        "香港01",
+        "hk01",
+        "國際"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ebb8dfac12288a9e73620b180ae9f13e",
+      "title": "《給阿嬤的情書》台首映一票難求 官媒:放寬陸片限制是強烈民意",
+      "description": "《給阿嬤的情書》8月15日在2026桃園電影節迎來台灣首映,一票難求。央視旗下新媒體「日月潭天」發文表示,台灣民眾對放寬大陸電影到台灣播映限制的",
+      "link": "https://www.hk01.com/%E5%8F%B0%E7%81%A3%E6%96%B0%E8%81%9E/60381118/%E7%B5%A6%E9%98%BF%E5%AC%A4%E7%9A%84%E6%83%85%E6%9B%B8-%E5%8F%B0%E9%A6%96%E6%98%A0%E4%B8%80%E7%A5%A8%E9%9B%A3%E6%B1%82-%E5%AE%98%E5%AA%92-%E6%94%BE%E5%AF%AC%E9%99%B8%E7%89%87%E9%99%90%E5%88%B6%E6%98%AF%E5%BC%B7%E7%83%88%E6%B0%91%E6%84%8F",
+      "pubDate": "2026-08-18 11:00:33",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166395417332551680814309.jpeg/jr_qVpiUwG4Xo5QA5GiOe2unoY64u6oBVgvZHVYL2R0",
+      "keywords": [
+        "台灣",
+        "中國",
+        "兩岸",
+        "大陸",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "db40391fa790883e9623a4a84f18af19",
+      "title": "港交所優化科技100指數編制方案 更全面捕捉區內科技業發展動態",
+      "description": "港交所(0388)宣布,將優化香港交易所科技100指數的編制方案,讓該指數更全面捕捉區內科技行業發展動態,並滿足投資者不斷變化的需求。港交所科技10",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60381216/%E6%B8%AF%E4%BA%A4%E6%89%80%E5%84%AA%E5%8C%96%E7%A7%91%E6%8A%80100%E6%8C%87%E6%95%B8%E7%B7%A8%E5%88%B6%E6%96%B9%E6%A1%88-%E6%9B%B4%E5%85%A8%E9%9D%A2%E6%8D%95%E6%8D%89%E5%8D%80%E5%85%A7%E7%A7%91%E6%8A%80%E6%A5%AD%E7%99%BC%E5%B1%95%E5%8B%95%E6%85%8B",
+      "pubDate": "2026-08-18 11:00:17",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260703/1149721436802256896934610.jpeg/S_CaxRgzkUsiro-p3FSIX1WVM3sGMCOgRveHcEb3h3A",
+      "keywords": [
+        "恆生指數",
+        "財經台",
+        "財經新聞",
+        "財經網",
+        "地產消息",
+        "a股",
+        "股票",
+        "港股",
+        "財經透視",
+        "經濟",
+        "新聞",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6a3b79d823953ddaaed87c7c299a765c",
+      "title": "汪明荃合體《四千金》黃楚穎近照曝光 相識58年保養得宜風采依舊",
+      "description": "「阿姐」汪明荃日前於社交網分享與相識近58年的好姊妹黃楚穎及羅元徽的聚會合照。黃楚穎為1968年麗的經典劇集《四千金》中的「二家姐」,雖然淡出",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60380995/%E6%B1%AA%E6%98%8E%E8%8D%83%E5%90%88%E9%AB%94-%E5%9B%9B%E5%8D%83%E9%87%91-%E9%BB%83%E6%A5%9A%E7%A9%8E%E8%BF%91%E7%85%A7%E6%9B%9D%E5%85%89-%E7%9B%B8%E8%AD%9858%E5%B9%B4%E4%BF%9D%E9%A4%8A%E5%BE%97%E5%AE%9C%E9%A2%A8%E9%87%87%E4%BE%9D%E8%88%8A",
+      "pubDate": "2026-08-18 11:00:12",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166440501621035008327450.jpeg/hVtU0Yam1mJ3G3nHLhYoTqsQW6GYGnF7Lc67JC3OuyQ",
+      "keywords": [
+        "明星",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "藝人",
+        "韓星",
+        "新聞",
+        "即時娛樂",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1a8b711706bbe3a602777260026a0896",
+      "title": "日本10個景點都市傳說 UFO經常出現在石川縣 仙台受結界保護",
+      "description": "日本有很多都市傳說及怪談,有些更被改編成電影或是動漫、小說的主題,像是裂口女、廁所裡的花子等等。但這次我們不談那些可怕的故事,來分享一些跟",
+      "link": "https://www.hk01.com/%E9%96%8B%E7%BD%90/1091338/%E6%97%A5%E6%9C%AC10%E5%80%8B%E6%99%AF%E9%BB%9E%E9%83%BD%E5%B8%82%E5%82%B3%E8%AA%AA-ufo%E7%B6%93%E5%B8%B8%E5%87%BA%E7%8F%BE%E5%9C%A8%E7%9F%B3%E5%B7%9D%E7%B8%A3-%E4%BB%99%E5%8F%B0%E5%8F%97%E7%B5%90%E7%95%8C%E4%BF%9D%E8%AD%B7",
+      "pubDate": "2026-08-18 11:00:09",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166420745270595584405693.png/DHtd8fag0c9UAaA3VXsPiJE4Rj6orbHqD1w58g9cOfI",
+      "keywords": [
+        "熱話",
+        "話題",
+        "城中熱話"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "40cb0c72261736fb6ec02c7bfcd75f0b",
+      "title": "中国出入境新规:开放与控制之间的矛盾",
+      "description": "中国国务院于七月底公布《国务院关于出境入境管理的规定》,共19条,将于2026年9月15日起施行。 新规涉及中国公民出境、外国人入境、海外安全风险、科技人员跨境流动、移民中介,以及公职人员和军队人员办理外国国籍、境外永久居留等问题。 其中最受关注的,是中国政府进一步规范公民出境。",
+      "link": "https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E5%85%AC%E6%B0%91%E8%AE%BA%E5%9D%9B/20260818-%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%85%A5%E5%A2%83%E6%96%B0%E8%A7%84-%E5%BC%80%E6%94%BE%E4%B8%8E%E6%8E%A7%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9F%9B%E7%9B%BE",
+      "pubDate": "2026-08-18 11:00:06",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/e4080536-9ae5-11f1-9da5-005056a97e36/w:1024/p:16x9/000-64WJ4QA.jpg",
+      "keywords": [
+        "公民论坛"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "92cafb88c192c7c074602a547b1d064b",
@@ -1274,6 +1947,24 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "8683ce5d3be9457b060a6b60d6ce5a45",
+      "title": "恒指微升17點 阿里升近4%撐市 智譜急挫13% 分析:AI概念股未玩完|港股收市",
+      "description": "受美伊局勢僵持拖累,油價飆升推升通脹預期,國際油價升逾2%。港股昨日終止四連跌後,今日表現反覆,早盤低開84點,最多跌逾210點,低見25240點,下午逐步收復失地,全日力保升勢。 恒生指數全日微升17點或0.07%,收報25471點,大市全日成交額2,555.41億元;北水淨流入140.01億元;國企指數收報8453點,升13點或0.16%;恒生科技指數收報4739點,跌42點或0.9%。 聯想",
+      "link": "https://www.stheadline.com/stock-market/3605480/%E6%81%92%E6%8C%87%E5%BE%AE%E5%8D%8717%E9%BB%9E-%E9%98%BF%E9%87%8C%E5%8D%87%E8%BF%914%E6%92%90%E5%B8%82-%E6%99%BA%E8%AD%9C%E6%80%A5%E6%8C%AB13-%E5%88%86%E6%9E%90AI%E6%A6%82%E5%BF%B5%E8%82%A1%E6%9C%AA%E7%8E%A9%E5%AE%8C%E6%B8%AF%E8%82%A1%E6%94%B6%E5%B8%82",
+      "pubDate": "2026-08-18 09:45:49",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/557f77dad789d109cabbbbc93408fae7/2026-08/PIC_ONLY_0925_18_.jpg",
+      "keywords": [
+        "港股"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "a2539431931ee05147d1a909155d05c0",
@@ -2984,6 +3675,24 @@
         "technology"
       ],
       "region": "hk"
+    },
+    {
+      "id": "66ed5e06fe155e1599e4d735ccde4069",
+      "title": "資金來源|傳滙豐要求內地投資客戶確認資金來源為境外合法渠道 未及時提交確認聲明或終止服務",
+      "description": "內媒報道,滙豐香港近日已陸續向部份內地投資客戶,啟動資金來源聲明程序,要求其確認資金來源為境外合法渠道,在9月...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B3%87%E9%87%91%E4%BE%86%E6%BA%90-%E5%82%B3%E6%BB%99%E8%B1%90%E8%A6%81%E6%B1%82%E5%85%A7%E5%9C%B0%E6%8A%95%E8%B3%87%E5%AE%A2%E6%88%B6%E7%A2%BA%E8%AA%8D%E8%B3%87%E9%87%91%E4%BE%86%E6%BA%90%E7%82%BA%E5%A2%83%E5%A4%96%E5%90%88%E6%B3%95%E6%B8%A0%E9%81%93-%E6%9C%AA%E5%8F%8A%E6%99%82%E6%8F%90%E4%BA%A4%E7%A2%BA%E8%AA%8D%E8%81%B2%E6%98%8E%E6%88%96%E7%B5%82%E6%AD%A2%E6%9C%8D%E5%8B%99-080000149.html",
+      "pubDate": "2026-08-18 08:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bossmind_356/be729ab0ade2e0f9388af23c950131b7.png",
+      "keywords": [
+        "滙豐",
+        "資金來源聲明"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "62f9483d77e299962bed5fd780d656ee",
@@ -6877,6 +7586,29 @@
       "region": "hk"
     },
     {
+      "id": "ae294489bd89aa32249fbe753260d573",
+      "title": "30年期美債利率突破5.3%!已陷入一場「溫水煮青蛙」式危機|點經",
+      "description": "如果美國經濟資料轉弱,按常理,美債應該受到更多追捧,美債收益率也應該回落才對。可這一次,長期美債繼續遭到拋售,三十年期美債收益率飆升到5.3",
+      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60381029/30%E5%B9%B4%E6%9C%9F%E7%BE%8E%E5%82%B5%E5%88%A9%E7%8E%87%E7%AA%81%E7%A0%B45-3-%E5%B7%B2%E9%99%B7%E5%85%A5%E4%B8%80%E5%A0%B4-%E6%BA%AB%E6%B0%B4%E7%85%AE%E9%9D%92%E8%9B%99-%E5%BC%8F%E5%8D%B1%E6%A9%9F-%E9%BB%9E%E7%B6%93",
+      "pubDate": "2026-08-18 03:59:45",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/cis/5d48bb00da23771958558d89.jpg/mvOPi2agzI10zUOfABfpbg4JewMnft6IYT6xDmE-sQ4",
+      "keywords": [
+        "新聞",
+        "國際",
+        "世界新聞",
+        "hk01",
+        "國際新聞",
+        "環球",
+        "香港01"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "5ea2a1665fc1163b8c1af27ee0055a3b",
       "title": "H World Group 公布 2026 年第二季亮眼業績,並宣佈新的股東回饋計劃",
       "description": "新加坡和上海2026年8月18日 /美通社/ -- World Group Limited(納斯達克股票代碼:HTHT;香港交易所股票代碼:1179)作為全球領先的酒店集團之一,今日公佈了 2026 年第二季度的未經審計財務業績,展現出強勁的盈利能力,其輕資產業務持續改善,並再次交出穩健的季度表現。 截至 2026 年 6 月 30 日,該集團營運 13,539 間酒店,共計 1,335,445 間客房,並有 3,089 間酒店正在籌建中。 本季度,酒店交易總額達到 305 億元人民幣,較去年同期增長 13.2%。 H World...",
@@ -8009,6 +8741,26 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "bf52b450e8040a8a611666c65272b3c0",
+      "title": "Nvidia擲1050億美元撐OpenAI大型AI數據中心 黃仁勳否認屬循環融資",
+      "description": "英偉達(Nvidia)將為OpenAI位於美國俄亥俄州的AI數據中心提供信貸及算力支持。據彭博報道,Nvidia與OpenAI達成協議,承諾投入最多1,050億美元,支持俄亥俄州大型AI數據中心園區。該園區建成後將由OpenAI租用,並將採用Nvidia晶片及運算系統;據悉,相關設備採購至2030年或為Nvidia帶來約6,000億美元收入。 首階段規模達4.25吉瓦 OpenAI計劃從俄亥俄州P",
+      "link": "https://www.stheadline.com/realtime-finance/3605512/Nvidia%E6%93%B21050%E5%84%84%E7%BE%8E%E5%85%83%E6%92%90OpenAI%E5%A4%A7%E5%9E%8BAI%E6%95%B8%E6%93%9A%E4%B8%AD%E5%BF%83-%E9%BB%83%E4%BB%81%E5%8B%B3%E5%90%A6%E8%AA%8D%E5%B1%AC%E5%BE%AA%E7%92%B0%E8%9E%8D%E8%B3%87",
+      "pubDate": "2026-08-18 02:50:12",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/ee19bcba042fa3c63c398ff1f5da4e31/2026-08/KF_-_2026-08-18T104935_588.png",
+      "keywords": [
+        "英偉達",
+        "openai",
+        "nvidia"
+      ],
+      "category": [
+        "technology",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "dbccfcb07c3e0f245bf82f1f64ba7c2c",
@@ -118765,7 +119517,5 @@
       "region": "hk",
       "pinned": true
     }
-  ],
-  "total": 6079,
-  "last_updated": "2026-08-19T07:10:59.619894"
+  ]
 }
