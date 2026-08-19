@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-20T02:50:05.109131",
+  "last_updated": "2026-08-20T03:00:42.368589",
   "timezone": "Asia/Hong_Kong",
   "source": "Yahoo Finance (即時報價)",
   "description": "Market Yield on US Treasury Securities",
   "current": {
     "3M": {
-      "yield": 3.703,
+      "yield": 3.7,
       "date": "2026-08-20",
       "series": "^IRX",
       "source": "Yahoo Finance (即時報價)"
@@ -40,7 +40,7 @@
       "date": "2026-08-20",
       "yields": {
         "3M": {
-          "yield": 3.703,
+          "yield": 3.7,
           "date": "2026-08-20",
           "series": "^IRX",
           "source": "Yahoo Finance (即時報價)"
