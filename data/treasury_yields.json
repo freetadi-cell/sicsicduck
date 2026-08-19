@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T23:20:08.840570",
+  "last_updated": "2026-08-19T23:30:05.819775",
   "timezone": "Asia/Hong_Kong",
   "source": "Yahoo Finance (即時報價)",
   "description": "Market Yield on US Treasury Securities",
@@ -17,19 +17,19 @@
       "source": "Yahoo Finance (即時報價)"
     },
     "5Y": {
-      "yield": 4.353,
+      "yield": 4.355,
       "date": "2026-08-19",
       "series": "^FVX",
       "source": "Yahoo Finance (即時報價)"
     },
     "10Y": {
-      "yield": 4.651,
+      "yield": 4.653,
       "date": "2026-08-19",
       "series": "^TNX",
       "source": "Yahoo Finance (即時報價)"
     },
     "30Y": {
-      "yield": 5.189,
+      "yield": 5.194,
       "date": "2026-08-19",
       "series": "^TYX",
       "source": "Yahoo Finance (即時報價)"
@@ -52,19 +52,19 @@
           "source": "Yahoo Finance (即時報價)"
         },
         "5Y": {
-          "yield": 4.353,
+          "yield": 4.355,
           "date": "2026-08-19",
           "series": "^FVX",
           "source": "Yahoo Finance (即時報價)"
         },
         "10Y": {
-          "yield": 4.651,
+          "yield": 4.653,
           "date": "2026-08-19",
           "series": "^TNX",
           "source": "Yahoo Finance (即時報價)"
         },
         "30Y": {
-          "yield": 5.189,
+          "yield": 5.194,
           "date": "2026-08-19",
           "series": "^TYX",
           "source": "Yahoo Finance (即時報價)"
