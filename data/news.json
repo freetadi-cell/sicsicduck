@@ -1,6 +1,45 @@
 {
   "articles": [
     {
+      "id": "7246d96f5cda1c0a3c77984b6ccdadfe",
+      "title": "更新:特朗普稱美國未有與伊朗會談 美股下跌油價上升",
+      "description": "美國總統特朗普表示,華盛頓未有與伊朗進行會談。在兩國停火協議屆滿一天後,美股周二盤中下跌,油價上升。 納斯達克綜合指數周二中午後跌1.1%至26,341.7,標準普爾500指數跌0.5%至7,703.3,道瓊斯工業平均指數跌0.1%至53,382.7。板塊方面,科技股跌幅最大,醫療保健股則領漲。 紐約期油(WTI...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E7%89%B9%E6%9C%97%E6%99%AE%E7%A8%B1%E7%BE%8E%E5%9C%8B%E6%9C%AA%E6%9C%89%E8%88%87%E4%BC%8A%E6%9C%97%E6%9C%83%E8%AB%87-%E7%BE%8E%E8%82%A1%E4%B8%8B%E8%B7%8C%E6%B2%B9%E5%83%B9%E4%B8%8A%E5%8D%87-180302263.html",
+      "pubDate": "2026-08-18 18:03:02",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "特朗普",
+        "道瓊斯工業平均指數",
+        "油價上升",
+        "標準普爾500指數",
+        "納斯達克綜合指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "eaf2c030937625067f6a538ef7a07c45",
+      "title": "五角大廈評估波斯灣撤軍計劃,或標誌戰後戰略重大轉變",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E4%BA%94%E8%A7%92%E5%A4%A7%E5%BB%88%E8%A9%95%E4%BC%B0%E6%B3%A2%E6%96%AF%E7%81%A3%E6%92%A4%E8%BB%8D%E8%A8%88%E5%8A%83-%E6%88%96%E6%A8%99%E8%AA%8C%E6%88%B0%E5%BE%8C%E6%88%B0%E7%95%A5%E9%87%8D%E5%A4%A7%E8%BD%89%E8%AE%8A-173818476.html",
+      "pubDate": "2026-08-18 17:38:18",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEBB02FJ_M.jpg",
+      "keywords": [
+        "華盛頓郵報",
+        "美國國防部"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "464e13df4d3194a54da391aa9edd934d",
       "title": "美國二手房簽約量跌至年初以來最低 高抵押貸款利率和房價持續施壓",
       "description": "【彭博】-- 美國二手房簽約量在7月降至年初以來最低水平,反映出抵押貸款利率和房價高企持續拖累房地產市場。美國全國房地產經紀人協會(NAR)周二公佈的數據顯示,二手房簽約量指數下降2.2,為1月以來最低,並且追平2001年有記錄以來第二低水平。彭博調查經濟學家的預估中值為持平。「今年最高的抵押貸款利率正值盛夏時節...",
@@ -14,25 +53,6 @@
       ],
       "category": [
         "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "63cedb0eb1248950792d77222927ef58",
-      "title": "美國長債息抽升 道指跌逾100點 Meta股價挫逾3% 被控危害兒童案開審",
-      "description": "美國國債出現拋售壓力,債息持續抽高,美股三大指數下滑。 道指報53297點,跌162點;標指報7711點,跌33點;納指報26413點,跌213點或0.9%。港股夜期報25519點,高水48點。 30年債息升穿5.3厘 19年新高 美國30年債息一度高見5.338厘,為2007年以來新高,反映投資者憂慮美伊談判陷入僵局。而油價亦難回落,紐約期油報每桶84.8美元,升0.8%。 Meta(META)",
-      "link": "https://www.stheadline.com/stock-market/3605753/%E7%BE%8E%E5%9C%8B%E9%95%B7%E5%82%B5%E6%81%AF%E6%8A%BD%E5%8D%87-%E9%81%93%E6%8C%87%E8%B7%8C%E9%80%BE100%E9%BB%9E-Meta%E8%82%A1%E5%83%B9%E6%8C%AB%E9%80%BE3-%E8%A2%AB%E6%8E%A7%E5%8D%B1%E5%AE%B3%E5%85%92%E7%AB%A5%E6%A1%88%E9%96%8B%E5%AF%A9",
-      "pubDate": "2026-08-18 13:54:51",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/eb99866eccae6281bd74c144428e6752/2026-08/260818_USS.png",
-      "keywords": [
-        "債息",
-        "美股"
-      ],
-      "category": [
-        "business",
-        "top"
       ],
       "region": "hk",
       "pinned": true
@@ -56,27 +76,177 @@
       "pinned": true
     },
     {
-      "id": "ae294489bd89aa32249fbe753260d573",
-      "title": "30年期美債利率突破5.3%!已陷入一場「溫水煮青蛙」式危機|點經",
-      "description": "如果美國經濟資料轉弱,按常理,美債應該受到更多追捧,美債收益率也應該回落才對。可這一次,長期美債繼續遭到拋售,三十年期美債收益率飆升到5.3",
-      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60381029/30%E5%B9%B4%E6%9C%9F%E7%BE%8E%E5%82%B5%E5%88%A9%E7%8E%87%E7%AA%81%E7%A0%B45-3-%E5%B7%B2%E9%99%B7%E5%85%A5%E4%B8%80%E5%A0%B4-%E6%BA%AB%E6%B0%B4%E7%85%AE%E9%9D%92%E8%9B%99-%E5%BC%8F%E5%8D%B1%E6%A9%9F-%E9%BB%9E%E7%B6%93",
-      "pubDate": "2026-08-18 03:59:45",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/cis/5d48bb00da23771958558d89.jpg/mvOPi2agzI10zUOfABfpbg4JewMnft6IYT6xDmE-sQ4",
+      "id": "1633c89d7b98467858f03a6f42432f49",
+      "title": "諾曼質疑特朗普支持達琳格雷厄姆 南卡參院決選現分歧",
+      "description": "美國眾議員拉爾夫·諾曼形容,總統特朗普在南卡羅來納州共和黨參議院決選中,支持參議員達琳·格雷厄姆的決定「令人費解」。諾曼指,他在國會和商界的經驗,以及一貫支持特朗普優先事項的投票紀錄,令他成為接替已故參議員林賽·格雷厄姆的更強候選人。 諾曼是在美聯社一次廣泛採訪中發表上述言論,這次採訪是在8月25日共和黨決選前進行,旨在選出上月意外離世的參議員繼任人。在一個通常只選出共和黨人擔任全州職位的州份,共和黨初選往往是最具爭議的競爭。周二的勝出者將於11月面對民主黨人安妮·安德魯斯。 諾曼在8月11日一場有10名候選人參與的特別初選中,僅次於格雷厄姆,但兩人均未能獲得直接勝出所需的過半數票。美聯社要求採訪格雷厄姆的請求未獲批准。 達琳·格雷厄姆在胞兄離世後獲任命為臨時參議員。她選擇參加特別初選,爭取完整任期,她指特朗普(其胞兄的長期盟友)曾敦促她這樣做。達琳·格雷厄姆表示,她在臨時任期內成就斐然,在南卡羅來納州經營州政府機構多年,並將繼續在參議院倡導特朗普的目標。 諾曼表示,他懷疑南卡羅來納州選民是否有足夠時間審查這位政壇新人,以擔任六年任期。他指自己已在本屆選舉周期中經歷過一場全州競選,在6月的州長初選中落敗。他又迴避了針對他的數百萬美元廣告開支,其中大部分來自一個曾與林賽·格雷厄姆結盟、現支持達琳·格雷厄姆的超級政治行動委員會。 諾曼在2024年總統初選中曾支持前南卡羅來納州州長妮基·黑利而非特朗普,但此後一直支持特朗普。 以下是美聯社與諾曼就這次競選對話的節錄。這份謄本已為篇幅和清晰度進行編輯: 諾曼:如果你了解全國民眾的情緒,他們會說:「我們希望汽油價格下降。」他們不明白還剩下甚麼。特朗普在消除我們40年來的核威脅方面做得很好......但仍有很多工作要做。美國人民不明白霍爾木茲海峽為何沒有完全由美國控制。這是我聽到的。結果是汽油價格居高不下。我認為總統最不希望看到的是公眾因為他未能結束這一切而轉向反對他。那麼,結束這一切意味著甚麼?沒有人真正知道。我的意思是,這是否意味著只剩下一些反對他的領導人?是否意味著轟炸?他曾提到要切斷電力供應。他曾說要摧毀這個國家。但這並沒有發生。因此,我認為這是一個他需要處理的溝通問題。所以我認為他現在多作解釋會對他自己大有裨益。他說這沒有時間表。但當公眾轉向反對你時,他們就會反對你。 諾曼:想像一下,如果我去找克萊姆森大學的(美式足球總教練)達博·斯威尼,任何教練都會說:「看,我有一個潛力球員想讓你看看,我希望他們能上場。他們可以首發。我希望你簽下他們。他們可以在未來六年首發。」「有甚麼資格?」 「他們是湯姆·布雷迪的親戚。」告訴我這個比喻在這裡為何不適用。這是政治。這是選票,我一直堅持,也將繼續堅持。 諾曼:這並非她沒有從政的實情。她曾在政府機構工作。我經營過企業。我賺過錢也虧過錢,這是任何政治人物的缺點。你需要有這樣的經驗。我已表明我希望解決國家債務問題,我認為這是導致國家破產的癌症,但她迴避辯論將會傷害她,也應該如此。你必須走出去回答所有問題。她可以按照自己喜歡的方式競選。發生了甚麼事?她告訴華盛頓精英,他們正在決定條件,因為這不是南卡羅來納州的資金。我的資金是我的錢和南卡羅來納州的錢,所以他們正在決定條件,並給她政治答案,就像拜登一樣:不要露面,躲在地下室。他這樣做是因為他年老糊塗。她這樣做是他們希望她贏得這次選舉。當權者不希望拉爾夫·諾曼進入國會,人們會質疑,他們這樣針對我,投資回報是甚麼?對總統來說,投資回報是甚麼?如果我是典型的政治人物,我會說:「不,這讓我生氣,我會在每個層面阻止他。」我不會那樣做。我不是那種玩法。如果賀錦麗贏得這次選舉,那將是可怕的。他拯救了國家,我真的這樣認為。他應該被刻在拉什莫爾山。他真的應該。他所做的一切,需要勇氣。但這次卻令人費解。我會贏得這次選舉。我們將贏得這次選舉,除非發生甚麼事,你知道——我就是有這種感覺。人們支持我們,我有一個他們無法反駁的紀錄。 諾曼:不。我告訴總統這是一個忠誠問題。我與妮基一同參選。她來自南卡羅來納州,他明白這一點。再說,任何人都可以拿任何事情來作為理由。看,她(在2024年總統初選中對特朗普)落敗的那一刻,我打電話給他,而自他上任以來,我的紀錄一直堅定不移。這是因為我相信他。我只是相信他正在做的事情。現在我不喜歡他正在做的事情,但他是總統。如果這是他想做的,我會給他所有迴旋餘地。但他對我來說做了很多好事。選民必須決定這一點。我的意思是,如果他們想以此來反對我,那就在那裡。我不會道歉。 諾曼:人們引誘我們說:「你會解僱(參議院多數黨領袖約翰·圖恩)嗎?」嗯,這比那更深層。首先,我不會對一個我沒有先與之交談過的人這樣做。當你解僱任何人時,你會與他們交談,然後達成協議。你要麼不同意,要麼同意。我會與圖恩會面,據我所知,他是一個好人,我會說:「我們如何才能讓《SAVE法案》通過?」如果情況仍然是:「我們沒有足夠的票數。我們不會嘗試任何事情。」那麼我只會說:「好吧,我會努力取代你,然後我們看看那是誰。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16595606-%E8%AB%BE%E6%9B%BC%E8%B3%AA%E7%96%91%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%AF%E6%8C%81%E9%81%94%E7%90%B3%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86-%E5%8D%97%E5%8D%A1%E5%8F%83%E9%99%A2%E6%B1%BA%E9%81%B8%E7%8F%BE",
+      "pubDate": "2026-08-18 18:56:43",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/72ee10ba47152f1306e0f51803839cb4_Election_2_26_South_Carolina_Senate_8_451_FB.jpg",
       "keywords": [
-        "新聞",
-        "國際",
-        "世界新聞",
-        "hk01",
-        "國際新聞",
-        "環球",
-        "香港01"
+        "達琳格雷厄姆",
+        "共和黨",
+        "南卡羅來納州",
+        "拉爾夫諾曼",
+        "特朗普",
+        "大視野"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8826599fd6c7db16435bcfc72f9de267",
+      "title": "跨部門上水大埔掃黃 9內地女子被捕 年齡24至50歲",
+      "description": "大埔警區特別職務隊聯同相關部門人員於昨日(18日)下午約4時在大埔區大埔墟、上水區石湖墟一帶街道及多個單位展開代號「火石」(FLINTSTONE)的行動,打擊非法賣淫活動。 行動中,人員在大埔區同茂坊、上水區新豐路的單位內拘捕九名內地女子,年齡介乎24至50歲,涉嫌「違反逗留條件」。所有被捕人現正被扣留調查,稍後將交由相關部門跟進。",
+      "link": "https://www.stheadline.com/breaking-news/3605851/%E8%B7%A8%E9%83%A8%E9%96%80%E4%B8%8A%E6%B0%B4%E5%A4%A7%E5%9F%94%E6%8E%83%E9%BB%83-9%E5%85%A7%E5%9C%B0%E5%A5%B3%E5%AD%90%E8%A2%AB%E6%8D%95-%E5%B9%B4%E9%BD%A124%E8%87%B350%E6%AD%B2",
+      "pubDate": "2026-08-18 18:53:31",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/10f11b05aea6dee3e5acd4e60b20dfe2/2026-08/FLINTSTONE_1.jpeg",
+      "keywords": [
+        "上水",
+        "大埔",
+        "掃黃"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1cb8f38c9fdae106ce64cff8f2a45115",
+      "title": "RBC稱Coty第四季度銷售料符合公司「保守」指引",
+      "description": "RBC Capital Markets周二發表報告表示,Coty(COTY.US)截至財年第四季度的銷售預料將符合公司自身「保守」指引,而2027年的展望亦可能相若。 該美容公司於5月指引第四季度可比銷售將錄得中單位數跌幅。RBC預計有機淨銷售下跌6%,而華爾街預期跌幅為4.7%。 RBC全球消費及零售研究聯席主...",
+      "link": "https://hk.finance.yahoo.com/news/rbc%E7%A8%B1coty%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%BA%A6%E9%8A%B7%E5%94%AE%E6%96%99%E7%AC%A6%E5%90%88%E5%85%AC%E5%8F%B8-%E4%BF%9D%E5%AE%88-%E6%8C%87%E5%BC%95-184704250.html",
+      "pubDate": "2026-08-18 18:47:04",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "rbc",
+        "coty"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "7757dee6e35846648446133e62138985",
+      "title": "Etched獲7億美元融資,估值翻倍以擴大AI推理硬體規模",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/etched%E7%8D%B27%E5%84%84%E7%BE%8E%E5%85%83%E8%9E%8D%E8%B3%87-%E4%BC%B0%E5%80%BC%E7%BF%BB%E5%80%8D%E4%BB%A5%E6%93%B4%E5%A4%A7ai%E6%8E%A8%E7%90%86%E7%A1%AC%E9%AB%94%E8%A6%8F%E6%A8%A1-184440540.html",
+      "pubDate": "2026-08-18 18:44:40",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA8400B_M.jpg",
+      "keywords": [
+        "ai硬體新創公司",
+        "etched"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "52ed0253937b3af6f42f9b522a55b59d",
+      "title": "俄羅斯黑海港口附近至少五艘糧船遇襲 糧食供應風險升溫",
+      "description": "【彭博】-- 知情人士透露,在俄羅斯因烏克蘭襲擊升級而艱難維持糧食出口之際,至少有五艘糧船在俄羅斯黑海港口新羅西斯克和圖阿普謝附近遭到襲擊。俄羅斯和烏克蘭加大了對黑海地區商船和港口的相互攻擊,引發對全球糧食供應的擔憂。兩國合計占全球小麥出口逾四分之一,而襲擊發生之際正值今年糧食收獲季。這是首次有消息證實,服務於受...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BF%84%E7%BE%85%E6%96%AF%E9%BB%91%E6%B5%B7%E6%B8%AF%E5%8F%A3%E9%99%84%E8%BF%91%E8%87%B3%E5%B0%91%E4%BA%94%E8%89%98%E7%B3%A7%E8%88%B9%E9%81%87%E8%A5%B2-%E7%B3%A7%E9%A3%9F%E4%BE%9B%E6%87%89%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%BA%AB-181907028.html",
+      "pubDate": "2026-08-18 18:19:07",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "俄羅斯",
+        "新羅西斯克"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bb208e972e3e77b8e4b5960d5f8a6f1c",
+      "title": "上午01時45分 天文台特別天氣提示:天文台發出偏東強風信號提醒市民注意海面大浪危險",
+      "description": "天文台於2026年8月19日凌晨1時45分發出偏東強風信號,提醒市民注意即時天氣情況。本港現時吹偏東強風,海面可能出現大浪,對海上活動構成潛在危險。 市民應避免進行水上活動,尤其是遠離海岸的地區。此外,船隻操作人員需加強警惕,確保船隻安全停泊,並密切留意天氣更新。 天文台建議市民留意最新天氣報告,並採取必要的安全措施以保障自身安全。請保持冷靜並遵守相關指引。 The post 上午01時45分 天文台特別天氣提示:天文台發出偏東強風信號提醒市民注意海面大浪危險 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%94%9F%E6%B4%BB/%E5%A4%A9%E6%96%87%E5%8F%B0-%E7%89%B9%E5%88%A5%E5%A4%A9%E6%B0%A3%E6%8F%90%E7%A4%BA-%E5%BC%B7%E9%A2%A8%E4%BF%A1%E8%99%9F-aplt2-30-2033496/",
+      "pubDate": "2026-08-18 18:15:31",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2025/08/6102915770909576456_12072579806895dc3ce6cae.jpg",
+      "keywords": [
+        "生活",
+        "天文台",
+        "強風信號",
+        "特別天氣提示"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "acde39f0ba636b905d1a5d58596a5f29",
+      "title": "阿聯酋與美國兩國總統通電話 討論雙邊合作及地區局勢",
+      "description": "當地時間18日,阿聯酋總統阿勒納哈揚(Mohamed bin Zayed Al Nahyan)與美國總統特朗普(Donald Trump,又譯川普)通電話,就兩國合作及加強雙邊關",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60381336/%E9%98%BF%E8%81%AF%E9%85%8B%E8%88%87%E7%BE%8E%E5%9C%8B%E5%85%A9%E5%9C%8B%E7%B8%BD%E7%B5%B1%E9%80%9A%E9%9B%BB%E8%A9%B1-%E8%A8%8E%E8%AB%96%E9%9B%99%E9%82%8A%E5%90%88%E4%BD%9C%E5%8F%8A%E5%9C%B0%E5%8D%80%E5%B1%80%E5%8B%A2",
+      "pubDate": "2026-08-18 18:10:56",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260819/1166563032101294080854762.png/md-ovdMAhwOGxwsERPPZVxB7dyvXOD5te91FgnvdRYI",
+      "keywords": [
+        "國際",
+        "hk01",
+        "國際新聞",
+        "新聞",
+        "世界新聞",
+        "香港01",
+        "環球"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "710b1c915bb9c83bf98c57a44397e539",
+      "title": "Anthropic擬籌逾100億美元循環信貸,為IPO鋪路",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/anthropic%E6%93%AC%E7%B1%8C%E9%80%BE100%E5%84%84%E7%BE%8E%E5%85%83%E5%BE%AA%E7%92%B0%E4%BF%A1%E8%B2%B8-%E7%82%BAipo%E9%8B%AA%E8%B7%AF-180031249.html",
+      "pubDate": "2026-08-18 18:00:31",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7306L_M.jpg",
+      "keywords": [
+        "首次公開募股",
+        "人工智能",
+        "anthropic"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "de1320e5b0eef27dd60db3a6d720cb37",
+      "title": "施維杜蓮娜因傷退出辛辛那提公開賽 無緣第三圈賽事",
+      "description": "烏克蘭網球手施維杜蓮娜因右腳踝受傷,宣布退出辛辛那提公開賽,未能出戰第三圈賽事。她表示已盡力恢復,但未能及時為下一圈比賽做好準備。 施維杜蓮娜周二表示:「很不幸,我已盡力恢復,但未能及時為下一圈比賽做好準備。醫生建議我休息一段時間,讓身體完全康復。我本來很期待在這裡比賽,兩晚前在這裡打了一場精彩的比賽。這次退出這一圈賽事,我感到非常難過。」 世界排名第九的施維杜蓮娜原定周二對陣中國球手王欣瑜。王欣瑜將直接晉級第四圈,並於周三對陣美國球手姬絲。 施維杜蓮娜的傷勢是在周日第二圈對陣華倫杜娃的比賽中,第二盤時受傷。當時她曾申請醫療暫停檢查右腳踝,但其後仍成功挽救七個賽點,贏得該盤。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16595521-%E6%96%BD%E7%B6%AD%E6%9D%9C%E8%93%AE%E5%A8%9C%E5%9B%A0%E5%82%B7%E9%80%80%E5%87%BA%E8%BE%9B%E8%BE%9B%E9%82%A3%E6%8F%90%E5%85%AC%E9%96%8B%E8%B3%BD-%E7%84%A1%E7%B7%A3%E7%AC%AC%E4%B8%89%E5%9C%88%E8%B3%BD",
+      "pubDate": "2026-08-18 18:00:30",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/c8566dd12175aef54f7168d19f11e925_Toronto_Tennis_53735_FB.jpg",
+      "keywords": [
+        "受傷",
+        "辛辛那提公開賽",
+        "網球",
+        "體育",
+        "退賽",
+        "施維杜蓮娜"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "9a96d6c1157d3f06c6a81295c5920099",
@@ -92,23 +262,6 @@
         "ai",
         "網絡安全",
         "tal liani"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "eaf2c030937625067f6a538ef7a07c45",
-      "title": "五角大廈評估波斯灣撤軍計劃,或標誌戰後戰略重大轉變",
-      "description": null,
-      "link": "https://hk.finance.yahoo.com/news/%E4%BA%94%E8%A7%92%E5%A4%A7%E5%BB%88%E8%A9%95%E4%BC%B0%E6%B3%A2%E6%96%AF%E7%81%A3%E6%92%A4%E8%BB%8D%E8%A8%88%E5%8A%83-%E6%88%96%E6%A8%99%E8%AA%8C%E6%88%B0%E5%BE%8C%E6%88%B0%E7%95%A5%E9%87%8D%E5%A4%A7%E8%BD%89%E8%AE%8A-173818476.html",
-      "pubDate": "2026-08-18 17:38:18",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEBB02FJ_M.jpg",
-      "keywords": [
-        "華盛頓郵報",
-        "美國國防部"
       ],
       "category": [
         "business"
@@ -1859,6 +2012,25 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "63cedb0eb1248950792d77222927ef58",
+      "title": "美國長債息抽升 道指跌逾100點 Meta股價挫逾3% 被控危害兒童案開審",
+      "description": "美國國債出現拋售壓力,債息持續抽高,美股三大指數下滑。 道指報53297點,跌162點;標指報7711點,跌33點;納指報26413點,跌213點或0.9%。港股夜期報25519點,高水48點。 30年債息升穿5.3厘 19年新高 美國30年債息一度高見5.338厘,為2007年以來新高,反映投資者憂慮美伊談判陷入僵局。而油價亦難回落,紐約期油報每桶84.8美元,升0.8%。 Meta(META)",
+      "link": "https://www.stheadline.com/stock-market/3605753/%E7%BE%8E%E5%9C%8B%E9%95%B7%E5%82%B5%E6%81%AF%E6%8A%BD%E5%8D%87-%E9%81%93%E6%8C%87%E8%B7%8C%E9%80%BE100%E9%BB%9E-Meta%E8%82%A1%E5%83%B9%E6%8C%AB%E9%80%BE3-%E8%A2%AB%E6%8E%A7%E5%8D%B1%E5%AE%B3%E5%85%92%E7%AB%A5%E6%A1%88%E9%96%8B%E5%AF%A9",
+      "pubDate": "2026-08-18 13:54:51",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/eb99866eccae6281bd74c144428e6752/2026-08/260818_USS.png",
+      "keywords": [
+        "債息",
+        "美股"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "a561b01c3b3b6569808af0706cddb119",
@@ -9946,6 +10118,29 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "ae294489bd89aa32249fbe753260d573",
+      "title": "30年期美債利率突破5.3%!已陷入一場「溫水煮青蛙」式危機|點經",
+      "description": "如果美國經濟資料轉弱,按常理,美債應該受到更多追捧,美債收益率也應該回落才對。可這一次,長期美債繼續遭到拋售,三十年期美債收益率飆升到5.3",
+      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60381029/30%E5%B9%B4%E6%9C%9F%E7%BE%8E%E5%82%B5%E5%88%A9%E7%8E%87%E7%AA%81%E7%A0%B45-3-%E5%B7%B2%E9%99%B7%E5%85%A5%E4%B8%80%E5%A0%B4-%E6%BA%AB%E6%B0%B4%E7%85%AE%E9%9D%92%E8%9B%99-%E5%BC%8F%E5%8D%B1%E6%A9%9F-%E9%BB%9E%E7%B6%93",
+      "pubDate": "2026-08-18 03:59:45",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/cis/5d48bb00da23771958558d89.jpg/mvOPi2agzI10zUOfABfpbg4JewMnft6IYT6xDmE-sQ4",
+      "keywords": [
+        "新聞",
+        "國際",
+        "世界新聞",
+        "hk01",
+        "國際新聞",
+        "環球",
+        "香港01"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "5ea2a1665fc1163b8c1af27ee0055a3b",
@@ -120785,6 +120980,34 @@
       "region": "hk"
     },
     {
+      "id": "ddc7e395420cad9a",
+      "title": "游嘉欣回應整容｜游嘉欣捏鼻證原生臉無果　再被狙擊出絕招證無整容　曬中學舊照反擊：不解釋了",
+      "description": "【游嘉欣 / 整容 / TVB小花】現年26歲的TVB小花游嘉欣（游游），在近日熱播劇集《夫妻的博弈》中飾演富家千金，與馬國明做兄妹，在劇中不僅演技表現可圈可點，她甜美長相搭配百變造型，完美駕馭角色獲...",
+      "link": "https://topick.hket.com/article/4178938",
+      "pubDate": "2026-08-19 14:12:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4178938/ohxw0f3nd2l_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "890e73b0df8b2f8d",
+      "title": "Viu愛情專題︱《現在不是出軌的問題》金智勳出軌求饒金憓秀　《好，離婚吧》李珉廷金知碩不敵七年之癢",
+      "description": "近年韓國吹起一陣「愛情實驗風」，從直接面對生命有限性的《我的剩餘戀愛》，到探討人機情感的《我的AI戀人：奇異戀愛》，再到撕開婚姻假面的《現在不是出軌的問題》與《好，離婚吧》，兩檔綜藝與兩檔話題韓劇從不...",
+      "link": "https://topick.hket.com/article/4178951",
+      "pubDate": "2026-08-19 13:53:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4178951/viu20260819_thumb_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "2c00b1d5be8aa192",
       "title": "胡杏兒疑懷孕｜李乘德一家馬爾代夫親子遊　胡杏兒孕味濃疑懷第四胎　酒店1佈置疑暗示有喜？",
       "description": "【胡杏兒 / 李承德 / 視后】現年46歲的視后胡杏兒，與丈夫李乘德於2015年結婚，夫妻感情恩愛幸福，短短幾年時間誕下3名兒子，一家五口生活美滿。對馬爾代夫情有獨鍾的夫妻兩人，曾多次結伴或帶兒子們前...",
@@ -121886,6 +122109,6 @@
       "pinned": true
     }
   ],
-  "total": 6235,
-  "last_updated": "2026-08-19T14:03:27.851806"
+  "total": 6247,
+  "last_updated": "2026-08-19T15:05:52.344933"
 }
