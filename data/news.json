@@ -1,80 +1,971 @@
 {
+  "last_updated": "2026-08-21T01:12:44.375628",
+  "total": 7321,
   "articles": [
     {
-      "id": "b907effbc49edb720d2ca406f9e6659d",
-      "title": "美國債務首次突破40萬億美元創新高 分析憂利息上升推高償債成本",
-      "description": "美國財政部加碼回購長債之際,財政部公佈美國總債務首次突破40萬億美元創新高,截至周二(18日)政府債務總額為40.05萬億美元,距離2022年1月突破30萬億美元不足5年。德意志銀行首席美國經濟學家Matthew Luzzetti稱,整數關口本身不是債務動態的臨界點,重點在於利息上升推高償債成本。 利息支出已成第三大聯邦支出項目 綜合媒體報道,美國債務預計將繼續增長,自本財年至今,聯邦政府利息支出",
-      "link": "https://www.stheadline.com/macroeconomics/3606267/%E7%BE%8E%E5%9C%8B%E5%82%B5%E5%8B%99%E9%A6%96%E6%AC%A1%E7%AA%81%E7%A0%B440%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E5%88%86%E6%9E%90%E6%86%82%E5%88%A9%E6%81%AF%E4%B8%8A%E5%8D%87%E6%8E%A8%E9%AB%98%E5%84%9F%E5%82%B5%E6%88%90%E6%9C%AC",
-      "pubDate": "2026-08-20 01:58:21",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d40a8de40379424391ec31b0a6c6acc4/2026-08/PIC_ONLY_0925_5__2_0.jpg",
-      "keywords": [
-        "美債"
-      ],
+      "id": "b2aae43f613a3e2decdc81eb7b8be0eb",
+      "title": "利嘉閣:百大新晉屋苑7月登記量跌近39% 創半年新低 登記額同跌37%|樓市數據",
+      "description": "利嘉閣地產研究部主管陳海潮表示,本地股市在六月下旬見底後急劇反彈,惟美國加息陰霾籠罩七月,反映在七月份的新晉屋苑二手登記亦要短暫回氣喘息。綜合土地註冊處數據,2026年7月本行追蹤的全港100大新晉屋苑共錄456宗二手買賣登記(數字主要反映6月中旬至7月上旬二手市場市況),較6月的745宗跌近39%,登記量創六個月新低;期內登記總額錄44.66億元,較前月70.84億跌約37%,為今年第三低。",
+      "link": "https://www.am730.com.hk/%E5%9C%B0%E7%94%A2/1048434/%E5%88%A9%E5%98%89%E9%96%A3-%E7%99%BE%E5%A4%A7%E6%96%B0%E6%99%89%E5%B1%8B%E8%8B%917%E6%9C%88%E7%99%BB%E8%A8%98%E9%87%8F%E8%B7%8C%E8%BF%9139-%E5%89%B5%E5%8D%8A%E5%B9%B4%E6%96%B0%E4%BD%8E-%E7%99%BB%E8%A8%98%E9%A1%8D%E5%90%8C%E8%B7%8C37-%E6%A8%93%E5%B8%82%E6%95%B8%E6%93%9A",
+      "pubDate": "2026-08-20 05:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048434/article/1048434/df/01M0D7JXBF5FBS2N3M4T0JTA70.jpeg?updatedAt=1787151119",
+      "keywords": null,
       "category": [
         "business",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "dca753934945004a8fc5f7120a41d6fa",
-      "title": "聯儲局7月議息紀錄放鷹 3官員投反對票撐加息 惟經濟轉弱 9月加息機率降至36%",
-      "description": "美國聯儲局最新會議紀錄顯示,數名官員在7月議息會議上支持加息,另有多名官員認為,若通脹未能回落,當局或有需要進一步收緊貨幣政策。同時,部分官員認為,目前的金融狀況可能未具足夠限制性,無法推動通脹回落至2%的目標。 聯邦公開市場委員會(FOMC)於7月28日至29日舉行會議,最終以9票對3票,決定把聯邦基金利率目標區間維持於3.5厘至3.75厘。今次是聯儲局自2025年底連續3次減息後,第5次維持利",
-      "link": "https://www.stheadline.com/macroeconomics/3606285/%E8%81%AF%E5%84%B2%E5%B1%807%E6%9C%88%E8%AD%B0%E6%81%AF%E7%B4%80%E9%8C%84%E6%94%BE%E9%B7%B9-3%E5%AE%98%E5%93%A1%E6%8A%95%E5%8F%8D%E5%B0%8D%E7%A5%A8%E6%92%90%E5%8A%A0%E6%81%AF-%E6%83%9F%E7%B6%93%E6%BF%9F%E8%BD%89%E5%BC%B1-9%E6%9C%88%E5%8A%A0%E6%81%AF%E6%A9%9F%E7%8E%87%E9%99%8D%E8%87%B336",
-      "pubDate": "2026-08-20 02:50:11",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/f477008a523902d229dcc32d55e3a0cd/2026-08/KF_-_2026-08-20T104854_871.png",
-      "keywords": [
-        "fed",
-        "聯儲局"
-      ],
-      "category": [
-        "business",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "ebc58df78bd704caaeaf83caa28cb51d",
-      "title": "日本7月出口創新高 料央行續推進貨幣政策正常化最早9月加息",
-      "description": "<匯港通訊> 日本官方數據顯示,7月總出口額達11.5萬億日圓,創紀錄高位,按年增長23.2%,超過市場預期的增長19.9%,亦高過6月的增長19.3%。市場分析認為,數據反映全球需求強勁,為日本經濟提供支撐,可能進一步支持日本央行繼續推進貨幣政策正常化,預計日本央行最早於9月加息。期內,日本對美國出口按年增長2...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%97%A5%E6%9C%AC7%E6%9C%88%E5%87%BA%E5%8F%A3%E5%89%B5%E6%96%B0%E9%AB%98-%E6%96%99%E5%A4%AE%E8%A1%8C%E7%BA%8C%E6%8E%A8%E9%80%B2%E8%B2%A8%E5%B9%A3%E6%94%BF%E7%AD%96%E6%AD%A3%E5%B8%B8%E5%8C%96%E6%9C%80%E6%97%A99%E6%9C%88%E5%8A%A0%E6%81%AF-035923111.html",
-      "pubDate": "2026-08-20 03:59:23",
+      "id": "70296732248ee378a728fb44d8f5bfe7",
+      "title": "《大行》大和下調華潤啤酒(00291.HK)目標價至30元 維持「買入」評級",
+      "description": "大和發表報告指,華潤啤酒(00291.HK)上半年純利按年跌11%至51.7億元人民幣,較市場共識低2.3%。集團整體收入按年增長1.2%至242億元人民幣,啤酒業務收入按年升2.2%至237億元人民幣,白酒業務收入則按年跌27%至5.7億元人民幣。 大和指出,啤酒業務銷量按年升1.7%至660萬千升,平均售價按...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E5%A4%A7%E5%92%8C%E4%B8%8B%E8%AA%BF%E8%8F%AF%E6%BD%A4%E5%95%A4%E9%85%92-00291-hk-%E7%9B%AE%E6%A8%99%E5%83%B9%E8%87%B330%E5%85%83-045901991.html",
+      "pubDate": "2026-08-20 04:59:01",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "<匯港通訊",
-        "日本",
-        "市場預期的",
-        "日本央行"
+        "人民幣"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "4f9ab770f2d0dd9712e6fe65f72d6219",
-      "title": "長和就巴拿馬港口投資啟動國際仲裁 索償逾15億美元",
-      "description": "長和(001)宣布,就巴拿馬共和國涉嫌違反投資保護條約、以國家行為破壞其在當地港口投資,正式向巴拿馬展開國際仲裁,索償超過15億美元。 長和表示,早於今年2月4日,已就巴拿馬過去一年持續針對其資產的行動,向當地政府發出投資保護條約爭議通知,惟尋求解決方案未果。公司今日就巴拿馬被指違反條約責任及國際法,啟動仲裁程序。 批巴拿馬欠正當程序打壓 長和指,巴拿馬自2025年初突然對其投資採取國家層面的打壓",
-      "link": "https://www.stheadline.com/stock-market/3606243/%E9%95%B7%E5%92%8C%E5%B0%B1%E5%B7%B4%E6%8B%BF%E9%A6%AC%E6%B8%AF%E5%8F%A3%E6%8A%95%E8%B3%87%E5%95%9F%E5%8B%95%E5%9C%8B%E9%9A%9B%E4%BB%B2%E8%A3%81-%E7%B4%A2%E5%84%9F%E9%80%BE15%E5%84%84%E7%BE%8E%E5%85%83",
-      "pubDate": "2026-08-20 00:31:22",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/45fd75ee121c3ee51a2b5ccfe2d45765/2026-08/_1_2_1_.png",
+      "id": "e6867088a390dde5620ca0da7abdaa87",
+      "title": "永嘉半年虧損收窄逾83% 不派息",
+      "description": "永嘉集團(03322) 半年虧損941.9元,按年收窄83.2%,不派息。 收益增加3.0%,至16.3億元,主要是由於時裝品牌及專營業務以及運動服生產業務的收益增加,惟高級功能戶外服裝生產業務的收益下跌抵銷部份增幅。 時裝品牌及專營業務的經營溢利增加至3780萬元,按年1.72倍,主要源於收益增長、成本管理及擴大特許經營模式。 運動服生產業務轉虧為盈,錄得經營溢利490萬元,2025年同期經營虧損1760萬元),主要源於本集團成功解決位於東南亞的生產設施早前出現的原材料問題後,生產及運輸成本較二零二五年同期減少。",
+      "link": "https://www.bastillepost.com/hongkong/article/16604798-%E6%B0%B8%E5%98%89%E5%8D%8A%E5%B9%B4%E8%99%A7%E6%90%8D%E6%94%B6%E7%AA%84%E9%80%BE83-%E4%B8%8D%E6%B4%BE%E6%81%AF",
+      "pubDate": "2026-08-20 04:58:31",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/02/03322_web_1.jpg",
       "keywords": [
-        "巴拿馬",
-        "李嘉誠"
+        "永嘉集團(03322)",
+        "錢財事"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1c175b11515f01aa2a62f523e9adfdfc",
+      "title": "運輸署推AI審批續領車牌、港車北上 審批縮至一個工作天 明年試行智慧燈號",
+      "description": "運輸署今日(20日)表示,署方擬於今年底開始利用人工智能技術協助自動審批網上續領車牌,以及「港車北上」和「粵車南下」兩個跨境駕駛計劃的申請。此外,署方宣布會在明年首季試行利用 AI 技術縮短行人等紅燈時間。 目標逾9成申請經AI協助審批 審批時間大減9成 署方正籌備於今年底推出「牌照申請審批易」項目,利用大型語言模型 AI 技術協助自動審批網上續領車牌,以及「港車北上」和「粵車南下」兩個跨境駕駛計",
+      "link": "https://www.stheadline.com/society/3606347/%E9%81%8B%E8%BC%B8%E7%BD%B2%E6%8E%A8AI%E5%AF%A9%E6%89%B9%E7%BA%8C%E9%A0%98%E8%BB%8A%E7%89%8C%E6%B8%AF%E8%BB%8A%E5%8C%97%E4%B8%8A-%E5%AF%A9%E6%89%B9%E7%B8%AE%E8%87%B3%E4%B8%80%E5%80%8B%E5%B7%A5%E4%BD%9C%E5%A4%A9-%E6%98%8E%E5%B9%B4%E8%A9%A6%E8%A1%8C%E6%99%BA%E6%85%A7%E7%87%88%E8%99%9F",
+      "pubDate": "2026-08-20 04:58:12",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5b85ea3bbf10ddd2bf090f8fbfa404cb/2026-08/KakaoTalk_20260820_112926933_2.jpg",
+      "keywords": [
+        "粵車南下",
+        "運輸署",
+        "港車北上"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f15d78dad5356a1cad5a5c795523a6fa",
+      "title": "運輸署年底推AI審批續領車牌及港車北上 審批時間縮至一個工作天 明年首季試行智慧燈號縮短行人等燈時間",
+      "description": "運輸署今日(20日)表示,署方擬於今年底開始利用人工智能技術協助自動審批網上續領車牌,以及「港車北上」和「粵車南下」兩個跨境駕駛計劃的申請。此外,署方宣布會在明年首季試行利用 AI 技術縮短行人等紅燈時間。 目標逾9成申請經AI協助審批 審批時間大減9成 署方正籌備於今年底推出「牌照申請審批易」項目,利用大型語言模型 AI 技術協助自動審批網上續領車牌,以及「港車北上」和「粵車南下」兩個跨境駕駛計",
+      "link": "https://www.stheadline.com/society/3606347/%E9%81%8B%E8%BC%B8%E7%BD%B2%E5%B9%B4%E5%BA%95%E6%8E%A8AI%E5%AF%A9%E6%89%B9%E7%BA%8C%E9%A0%98%E8%BB%8A%E7%89%8C%E5%8F%8A%E6%B8%AF%E8%BB%8A%E5%8C%97%E4%B8%8A-%E5%AF%A9%E6%89%B9%E6%99%82%E9%96%93%E7%B8%AE%E8%87%B3%E4%B8%80%E5%80%8B%E5%B7%A5%E4%BD%9C%E5%A4%A9-%E6%98%8E%E5%B9%B4%E9%A6%96%E5%AD%A3%E8%A9%A6%E8%A1%8C%E6%99%BA%E6%85%A7%E7%87%88%E8%99%9F%E7%B8%AE%E7%9F%AD%E8%A1%8C%E4%BA%BA%E7%AD%89%E7%87%88%E6%99%82%E9%96%93",
+      "pubDate": "2026-08-20 04:58:12",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5b85ea3bbf10ddd2bf090f8fbfa404cb/2026-08/KakaoTalk_20260820_112926933_2.jpg",
+      "keywords": [
+        "運輸署",
+        "港車北上",
+        "粵車南下"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8cbef08208cd6eaaa2c9ef3ac9fde193",
+      "title": "【提振內房】上海樓市新政:增公積金提取頻次和限額、降二套房首付比例、推最高8萬元換房補貼",
+      "description": "《經濟通通訊社20日專訊》為更好滿足居民剛性和改善性住房需求,促進房地產市場平穩 健康發展,上海市住房城鄉建設管理委、市房屋管理局、市財政局、人民銀行上海市分行、上海 金融監管局、市公積金管理中心等六部門今日聯合印發《關於優化該市房地產政策措施的通知》 (下稱《通知》),自2026年8月21日起施行。《通知》主要包括優化住房公積金提取、 優化個人住房信貸、實施「以舊換新」購房補貼、推行房票",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360820843",
+      "pubDate": "2026-08-20 04:58:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "84ab6958ff722189af363b16c1b64b70",
+      "title": "美國|美軍傳秘密護送油輪 日運千萬桶石油通過霍爾木茲",
+      "description": "美媒引述消息人士報道,美軍近期通過護送油輪航行的秘密行動,協助每天運送500萬桶至1,000萬桶石油經過霍爾木茲海峽。特朗普|稱對伊朗發動最嚴厲經濟打擊 援伊國家將被制裁《紐時》報道,美軍中央司令部(...",
+      "link": "https://inews.hket.com/article/4179627",
+      "pubDate": "2026-08-20 04:58:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4179627/0820_hormuz_300.jpg",
+      "keywords": [
+        "美國",
+        "石油",
+        "伊朗",
+        "阿曼",
+        "經濟",
+        "地緣政治",
+        "霍爾木茲海峽",
+        "軍事"
+      ],
+      "category": [
+        "world"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e3988778cf8f89fdcc26f761fc7d0a47",
+      "title": "三星電子傳月底公布逾百萬億韓圜股東回報計劃",
+      "description": "<匯港通訊> 南韓網媒MoneyToday引述業界消息指,三星電子計劃於本月底召開董事會會議,正式公布一項總額超過100萬億韓圜(約5600億元)的股東回報計劃,創下南韓企業相關計劃的最高金額,旨在明確向市場展現公司與股東共享豐厚成果的原則。報道指,三星電子計劃將大約50%的自由現金流用於股東回報,具體執行措施預...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%89%E6%98%9F%E9%9B%BB%E5%AD%90%E5%82%B3%E6%9C%88%E5%BA%95%E5%85%AC%E5%B8%83%E9%80%BE%E7%99%BE%E8%90%AC%E5%84%84%E9%9F%93%E5%9C%9C%E8%82%A1%E6%9D%B1%E5%9B%9E%E5%A0%B1%E8%A8%88%E5%8A%83-045744805.html",
+      "pubDate": "2026-08-20 04:57:44",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "62f4e10e764c5168c9cd1fd3095892d9",
+      "title": "友邦(01299.HK):內地訪客業務需求良好",
+      "description": "內媒月初報道多地稅務部門已開始對境外保單收益徵收個人所得稅20%,友邦(01299.HK)區域首席執行官及集團首席分銷總監陳榮聲在業續會議表示,內地對全球收入的稅務規定一直存在,並非針對香港保險業的新政策。在報道後,見到內地訪客來港投保的需求仍然良好。 他指,內地訪客來香港購買保險的主要驅動因素包括財富多元化的需...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8F%8B%E9%82%A6-01299-hk-%E5%85%A7%E5%9C%B0%E8%A8%AA%E5%AE%A2%E6%A5%AD%E5%8B%99%E9%9C%80%E6%B1%82%E8%89%AF%E5%A5%BD-045730492.html",
+      "pubDate": "2026-08-20 04:57:30",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "首席執行官"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f5b62dd7b29f8302b5abbcbbcd75513b",
+      "title": "Stripe 75億美元收購OpenRouter 支付巨頭搶佔AI模型路由管道",
+      "description": "支付巨頭Stripe周三宣布,以75億美元收購AI模型路由平台OpenRouter,成為支付業歷來最大宗AI收購之一。 OpenRouter提供統一API閘道,讓開發者透過單一介面存取逾400個AI模型,包括OpenAI、Anthropic、DeepSeek及阿里巴巴Qwen等,並按成本、速度及能力自動分配請求,被視為「AI時代的水電錶」。平台目前擁有約800萬全球用戶。 Stripe表示,收購有助客戶在AI時代「賺到盡、慳到盡」,將模型路由嵌入支付系統,形成AI驅動商業的閉環。 支付巨頭Stripe周三(8月19日)宣布,已達成協議收購AI模型路由平台OpenRouter,作價75億美元,為支付行業歷來最大宗AI收購之一。 OpenRouter為企業提供統一API閘道,讓開發者透過單一介面存取逾400個AI模型(包括Anthropic、Google、OpenAI、DeepSeek及阿里巴巴Qwen等),並按成本、速度及能力自動分配模型處理請求,兼管理Token開支,被視為「AI時代的水電錶」。平台目前擁有約800萬全球用戶。 Stripe表示,收購將幫助客戶「管好AI時代利潤的兩邊:賺到盡、慳到盡」——將模型路由嵌入支付平台,形成AI驅動商業的閉環系統,捕捉開發者由實驗階段轉向生產級AI部署的資金流。據報OpenRouter創辦人獲分約15億美元。 有創投界人士笑稱Stripe「singularity開始了」,但分析認為背後純粹是商業邏輯:AI支出將成為企業最大成本之一,Stripe冀搶佔這條支付管道。惟OpenRouter作為連接全球AI流量的樞紐,大量企業活動依賴非西方模型供應商,或令Stripe在美國的監管合規層面更趨複雜;如何在維持平台中立性的同時應對全球AI模型市場的地緣政治敏感性,將是Stripe面臨的挑戰。 分析指出,模型路由崛起為關鍵基建層,意味AI開發的未來將由「抽象化」定義——OpenRouter的架構實際上商品化了底層模型,將價值從模型創造者轉移至編排路由層,Stripe此舉反映其視這層編排層為AI價值鏈中最具防禦性的位置。",
+      "link": "https://www.bastillepost.com/hongkong/article/16604768-stripe-75%E5%84%84%E7%BE%8E%E5%85%83%E6%94%B6%E8%B3%BCopenrouter-%E6%94%AF%E4%BB%98%E5%B7%A8%E9%A0%AD%E6%90%B6%E4%BD%94ai%E6%A8%A1%E5%9E%8B%E8%B7%AF%E7%94%B1%E7%AE%A1%E9%81%93",
+      "pubDate": "2026-08-20 04:55:11",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/openrouter-stripe_FB.png",
+      "keywords": [
+        "太極影片",
+        "stripe",
+        "bastech",
+        "openrouter",
+        "商業事"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b91ff28ff21070a8480e17c5adbdf97f",
+      "title": "《大行》花旗削平安好醫生(01833.HK)目標價33%至12元 下半年經營利潤率或大幅下降",
+      "description": "花旗發表研究報告指出,平安好醫生(01833.HK)中期淨利潤按年升63%,較市場預測高3%,收入則按年跌1%,較市場預期低6%,管理層將收入下跌歸因於期內主動減少健康商城低利潤商品及團體體檢等低價服務,並指出有關調整或持續至明年初。 考慮到F端收入下半年可能下跌,花旗目前預測平安好醫生下半年收入按年跌幅將擴大至...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E8%8A%B1%E6%97%97%E5%89%8A%E5%B9%B3%E5%AE%89%E5%A5%BD%E9%86%AB%E7%94%9F-01833-hk-%E7%9B%AE%E6%A8%99%E5%83%B933-045503880.html",
+      "pubDate": "2026-08-20 04:55:03",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "平安好醫生"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ec8adea0aac57cd361c7b88181091856",
+      "title": "16強魔咒持續 莎芭列卡辛網下馬",
+      "description": "【Now Sports】女單世界排名第1的莎芭列卡,於周三辛辛那堤網球賽爆冷不敵20歲捷克新星比歷出局。列為賽事頭號種子的莎芭列卡(Aryna Sabalenka),開賽後即打破比歷的發球局,以為有個好開始,怎料第4局亦被對方破發,之後一直打到TieBreak,大幅領先5:1下竟然失誤頻生,最終被對方連追多分下,...",
+      "link": "https://hk.sports.yahoo.com/news/16%E5%BC%B7%E9%AD%94%E5%92%92%E6%8C%81%E7%BA%8C-%E8%8E%8E%E8%8A%AD%E5%88%97%E5%8D%A1%E8%BE%9B%E7%B6%B2%E4%B8%8B%E9%A6%AC-045347942.html",
+      "pubDate": "2026-08-20 04:53:47",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "女單世界排名",
+        "莎芭列卡"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7364efd48b4829ca98489eced041ae4d",
+      "title": "《大行》野村:SK海力士斥40萬億韓圜回購 後續將有更多回報措施",
+      "description": "野村發表報告指,SK海力士將斥資40萬億韓圜進行股份回購及全數註銷,回購規模約2,410萬股,相當於已發行股份的3.3%。該行維持「買入」評級,目標價470萬韓圜。 野村預測,SK海力士2026及2027財年自由現金流將分別達156萬億及318萬億韓圜,按50%回報比例計算,股東回報金額分別約78萬億及159萬億...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E9%87%8E%E6%9D%91-sk%E6%B5%B7%E5%8A%9B%E5%A3%AB%E6%96%A540%E8%90%AC%E5%84%84%E9%9F%93%E5%9C%9C%E5%9B%9E%E8%B3%BC-%E5%BE%8C%E7%BA%8C%E5%B0%87%E6%9C%89%E6%9B%B4%E5%A4%9A%E5%9B%9E%E5%A0%B1%E6%8E%AA%E6%96%BD-045332939.html",
+      "pubDate": "2026-08-20 04:53:32",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "韓圜"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a930507d41ca85c5ea1297c9fd8d82e6",
+      "title": "華置中期虧損收窄至2億元 不派中期息",
+      "description": "華人置業(00127)公布,截至2026年6月底止半年,公司擁有人應佔虧損2.01億元,虧損按年減少51.2%;董事會不擬派中期息。 若撇除主要非現金項目虧損淨額1.96億元,但包括攤佔聯營公司就出售投資物業於過往年度確認累積已變現公平值收益380萬元,上半年將錄得本公司擁有人應佔核心虧損50萬元,虧損按年收窄逾99%。 期內公司應佔租金收入淨額約1.146億元,按年減少0.4%。",
+      "link": "https://www.bastillepost.com/hongkong/article/16604775-%E8%8F%AF%E7%BD%AE%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%94%B6%E7%AA%84%E8%87%B32%E5%84%84%E5%85%83-%E4%B8%8D%E6%B4%BE%E4%B8%AD%E6%9C%9F%E6%81%AF",
+      "pubDate": "2026-08-20 04:53:21",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/02/00127.jpg",
+      "keywords": [
+        "錢財事",
+        "華人置業(00127)"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dbb5da9bd7a7497d9a61102916f6ec1c",
+      "title": "《大行》里昂:SK海力士股份回購金額符合預期 更多股東回報措施將推出",
+      "description": "SK海力士公布將於未來三個月回購及註銷價值40萬億韓圜的股份,里昂發表報告指,回購規模符合預期,以本周二(18日)收市價166萬韓圜計算,相當於約2,400萬股或已發行股份的3.3%。集團同時將2025至2027年股東回報目標由「累計自由現金流最多50%」上調至「超過50%」,並計劃於10月底公布第三季業績時披露...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E9%87%8C%E6%98%82-sk%E6%B5%B7%E5%8A%9B%E5%A3%AB%E8%82%A1%E4%BB%BD%E5%9B%9E%E8%B3%BC%E9%87%91%E9%A1%8D%E7%AC%A6%E5%90%88%E9%A0%90%E6%9C%9F-%E6%9B%B4%E5%A4%9A%E8%82%A1%E6%9D%B1%E5%9B%9E%E5%A0%B1%E6%8E%AA%E6%96%BD%E5%B0%87%E6%8E%A8%E5%87%BA-045233620.html",
+      "pubDate": "2026-08-20 04:52:33",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "韓圜"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a86bc57b1c3613b7fb7e9d5a22aaee07",
+      "title": "坎昆網球公開賽|黃澤林輕取香港公開賽冠軍 強勢闖入16強",
+      "description": "香港網球「一哥」黃澤林周三轉戰墨西哥的ATP125坎昆網球公開賽,首圈直落6:2、6:2總局數2:0輕取上屆香港網球公開賽冠軍法國球手亞歷山大梅拿(Alexandre Muller),成功闖入16強。 現世界排名93的Coleman早前在辛辛那堤網球大師賽止步首圈,本周轉戰在墨西哥的ATP125坎昆網球公開賽,以賽代練備戰美網外圍賽。被列為6號種子的Coleman首輪對上現世界排名136的梅拿,他",
+      "link": "https://www.stheadline.com/realtime-sport/3606346/%E5%9D%8E%E6%98%86%E7%B6%B2%E7%90%83%E5%85%AC%E9%96%8B%E8%B3%BD%E9%BB%83%E6%BE%A4%E6%9E%97%E8%BC%95%E5%8F%96%E9%A6%99%E6%B8%AF%E5%85%AC%E9%96%8B%E8%B3%BD%E5%86%A0%E8%BB%8D-%E5%BC%B7%E5%8B%A2%E9%97%96%E5%85%A516%E5%BC%B7",
+      "pubDate": "2026-08-20 04:52:07",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/411fbcf63fe5aac4afe759afd5482141/2026-08/KF_-_2026-08-20T124826_835.jpg",
+      "keywords": [
+        "香港網球公開賽",
+        "坎昆網球公開賽",
+        "黃澤林",
+        "亞歷山大梅拿",
+        "alexandre muller"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a569a490e6c85b1430cb1c37539ba5d0",
+      "title": "台北吹洋流?台南綠營籲大家幫沈伯洋造浪",
+      "description": "中評社台南8月20日電(記者 蔣繼平)針對民進黨台北市長參選人沈伯洋掀起“洋流”被熱議,民進黨籍台南市長黃偉哲與民進黨台南市長參選人陳亭妃,20日都在台南不約而同呼籲台南的支持者和鄉親打給台北的親友,幫忙沈伯洋拉票,把效益擴大,有意造浪。 沈伯洋18日前往寧夏夜市掃街拜票,受到支持者簇擁,人潮一度讓他寸步難行,還有支持者自製“洋流”文宣,在網路引發話題。國民黨籍台北市長蔣萬安19日回",
+      "link": "http://www.crntt.com/doc/7_0_160259030_1_0820125020.html",
+      "pubDate": "2026-08-20 04:50:19",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/160259034.jpg",
+      "keywords": [
+        "台南",
+        "陳亭妃",
+        "民進黨",
+        "沈伯洋",
+        "黃偉哲"
       ],
       "category": [
         "politics",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "9a0a76548a4b91911ee331a015bb642c",
+      "title": "李勝峯:和統要接地氣 化為地方選舉政見",
+      "description": "中評社台北8月20日電(記者 張嘉文)新黨將於22日舉辦33周年黨慶活動,新黨副主席李勝峯今天表示,外界常認為和平統一、統獨問題層次太高,和地方選舉無關,但新黨這次要打破這種看法,把和平統一落實到民生、接地氣,轉化成地方選舉政見。他形容,這“可能是統派有史以來第一次”將宏觀的和平、統一主張落實到地方選舉。 新黨今天上午在台北黨部召開33周年黨慶記者會,黨主席吳成典、副主席李勝峯、秘書",
+      "link": "http://www.crntt.com/doc/7_0_160259029_1_0820124807.html",
+      "pubDate": "2026-08-20 04:48:06",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/160259040.JPG",
+      "keywords": [
+        "李勝峯",
+        "新黨",
+        "陳麗玲"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ca78db2bc33916b6e6f2df796c8fe158",
+      "title": "鼻鼾重 驚現氣道危機!最新內口腔激光治療 無痛無創 即時改善",
+      "description": "打鼻鼾是極為常見的香港都市問題。根據本地大學研究調查顯示,阻塞性睡眠窒息症在30至60歲的中年人士尤其普遍,男女患病比例約為2:1。打鼻鼾嚴重",
+      "link": "https://www.hk01.com/%E5%81%A5%E5%BA%B7Easy/60378535/%E9%BC%BB%E9%BC%BE%E9%87%8D-%E9%A9%9A%E7%8F%BE%E6%B0%A3%E9%81%93%E5%8D%B1%E6%A9%9F-%E6%9C%80%E6%96%B0%E5%85%A7%E5%8F%A3%E8%85%94%E6%BF%80%E5%85%89%E6%B2%BB%E7%99%82-%E7%84%A1%E7%97%9B%E7%84%A1%E5%89%B5-%E5%8D%B3%E6%99%82%E6%94%B9%E5%96%84",
+      "pubDate": "2026-08-20 04:47:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260810/1163505553897426944380917.jpeg/M9T5byLclqESLh8I-MfVRMSfRLYACprHtU_rM7VP6zM",
+      "keywords": [
+        "香港媒體",
+        "網絡媒體",
+        "新聞",
+        "于品海",
+        "hk01",
+        "香港傳媒",
+        "網上媒體",
+        "香港零一",
+        "香港新聞",
+        "香港01"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "604eb969d007cc54274ad8c00b8305fc",
+      "title": "港超前瞻│冠忠南區砍掉重練 陳志康領軍大換血",
+      "description": "冠忠南區在2025–26球季經歷了加入港超年代以來最艱難的一季,聯賽僅排第七,三項盃賽更全部「一輪游」,在首圈便早早出局。面對如此成績,球會今季選擇大刀闊斧重建:換帥、換外援、換思維,由上季港超候選最佳教練最後三強的的陳志康(Cow Sir)領軍,誓要帶領球隊走出低谷,重返聯賽前列,並至少爭奪一項盃賽錦標。 「失敗球季」 冠忠南區上季在22場聯賽中取得7勝4和11負,僅得25分,最終排名第七。這個",
+      "link": "https://www.stheadline.com/football-news/3606342/%E6%B8%AF%E8%B6%85%E5%89%8D%E7%9E%BB%E5%86%A0%E5%BF%A0%E5%8D%97%E5%8D%80%E7%A0%8D%E6%8E%89%E9%87%8D%E7%B7%B4-%E9%99%B3%E5%BF%97%E5%BA%B7%E9%A0%98%E8%BB%8D%E5%A4%A7%E6%8F%9B%E8%A1%80",
+      "pubDate": "2026-08-20 04:44:27",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/c1520a9c785a72ec5998bbc801477e22/2026-08/WhatsApp_Image_2026-08-20_at_12_18_41_PM.jpeg",
+      "keywords": [
+        "港超聯",
+        "港超前瞻",
+        "冠忠南區"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "930ec536d0723fd19dbc86872184028e",
+      "title": "孫慧雪親述三十年偏頭痛之路 生二胎後曾痛到膊頭、背脊",
+      "description": "近年轉型為網絡內容創作者兼兩子之母的孫慧雪(Snow),經常在社交平台分享育兒及健康心得。這次Snow以偏頭痛患者的身份在醫療健康資訊節目與嘉賓",
+      "link": "https://www.hk01.com/%E5%81%A5%E5%BA%B7Easy/60381888/%E5%AD%AB%E6%85%A7%E9%9B%AA%E8%A6%AA%E8%BF%B0%E4%B8%89%E5%8D%81%E5%B9%B4%E5%81%8F%E9%A0%AD%E7%97%9B%E4%B9%8B%E8%B7%AF-%E7%94%9F%E4%BA%8C%E8%83%8E%E5%BE%8C%E6%9B%BE%E7%97%9B%E5%88%B0%E8%86%8A%E9%A0%AD-%E8%83%8C%E8%84%8A",
+      "pubDate": "2026-08-20 04:43:55",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167089906816651264107236.jpeg/c0mCDR1ZfbTxCJADYb1C9y1oxAaQKIRofUVAvH1FQLw",
+      "keywords": [
+        "香港媒體",
+        "網絡媒體",
+        "新聞",
+        "于品海",
+        "hk01",
+        "香港傳媒",
+        "網上媒體",
+        "香港零一",
+        "香港新聞",
+        "香港01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "44fe17d6733dd99a1931d3ff09812642",
+      "title": "凌晨帶BB入住深圳酒店拒做一事被下逐客令! 港客公審前台不近人情唔通融 網民反指:好正常",
+      "description": "帶著嬰幼兒到外地旅遊,往往令父母身心俱疲,若在遇上阻滯,更容易引發爭執。近日,一名香港旅客在凌晨時份,準備入住一家深圳酒店,當時同行嬰兒正在熟睡,加上行李繁多,事主希望先以成人證件辦理入住,待安頓嬰兒後才補交嬰兒的證件,卻遭酒店前台嚴格拒絕。事主隨後在網上發文大吐苦水,更怒斥該名前台「少一根筋」。 帶BB入住深圳酒店拒翻行李出示證件爆衝突 港人怒批:弱智前台 該名港客於Facebook群組「深圳大",
+      "link": "https://www.stheadline.com/travel/3606337/%E5%87%8C%E6%99%A8%E5%B8%B6BB%E5%85%A5%E4%BD%8F%E6%B7%B1%E5%9C%B3%E9%85%92%E5%BA%97%E6%8B%92%E5%81%9A%E4%B8%80%E4%BA%8B%E8%A2%AB%E4%B8%8B%E9%80%90%E5%AE%A2%E4%BB%A4%E6%B8%AF%E5%AE%A2%E5%85%AC%E5%AF%A9%E5%89%8D%E5%8F%B0%E4%B8%8D%E8%BF%91%E4%BA%BA%E6%83%85%E5%94%94%E9%80%9A%E8%9E%8D-%E7%B6%B2%E6%B0%91%E5%8F%8D%E6%8C%87%E5%A5%BD%E6%AD%A3%E5%B8%B8",
+      "pubDate": "2026-08-20 04:35:34",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d4da9f0d600b806acfea7bf1aed454f7/2026-08/20260820_LIFESTYLE_hotel.png",
+      "keywords": null,
+      "category": [
+        "crime",
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9a9205804bc90de2bb64a167556455c1",
+      "title": "凌晨帶BB入住深圳酒店拒做一事! 港客公審前台不近人情唔通融 網民反指:好正常",
+      "description": "帶著嬰幼兒到外地旅遊,往往令父母身心俱疲,若在遇上阻滯,更容易引發爭執。近日,一名香港旅客在凌晨時份,準備入住一家深圳酒店,當時同行嬰兒正在熟睡,加上行李繁多,事主希望先以成人證件辦理入住,待安頓嬰兒後才補交嬰兒的證件,卻遭酒店前台嚴格拒絕。事主隨後在網上發文大吐苦水,更怒斥該名前台「少一根筋」。 帶BB入住深圳酒店拒翻行李出示證件爆衝突 港人怒批:弱智前台 該名港客於Facebook群組「深圳大",
+      "link": "https://www.stheadline.com/travel/3606337/%E5%87%8C%E6%99%A8%E5%B8%B6BB%E5%85%A5%E4%BD%8F%E6%B7%B1%E5%9C%B3%E9%85%92%E5%BA%97%E6%8B%92%E5%81%9A%E4%B8%80%E4%BA%8B%E6%B8%AF%E5%AE%A2%E5%85%AC%E5%AF%A9%E5%89%8D%E5%8F%B0%E4%B8%8D%E8%BF%91%E4%BA%BA%E6%83%85%E5%94%94%E9%80%9A%E8%9E%8D-%E7%B6%B2%E6%B0%91%E5%8F%8D%E6%8C%87%E5%A5%BD%E6%AD%A3%E5%B8%B8",
+      "pubDate": "2026-08-20 04:35:34",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d4da9f0d600b806acfea7bf1aed454f7/2026-08/20260820_LIFESTYLE_hotel.png",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a7d6f8caea4f44ed70dd10621a3229fd",
+      "title": "特朗普助手Natalie Harp肉麻信件:你是我的一切 永不想讓你失望",
+      "description": "美國總統特朗普(Donald Trump,又譯川普)與其助手哈普(Natalie Harp)的緊密關係近日成為外界的焦點。美媒報道,哈普曾為了陪同特朗普出庭,甘",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60381884/%E7%89%B9%E6%9C%97%E6%99%AE%E5%8A%A9%E6%89%8Bnatalie-harp%E8%82%89%E9%BA%BB%E4%BF%A1%E4%BB%B6-%E4%BD%A0%E6%98%AF%E6%88%91%E7%9A%84%E4%B8%80%E5%88%87-%E6%B0%B8%E4%B8%8D%E6%83%B3%E8%AE%93%E4%BD%A0%E5%A4%B1%E6%9C%9B",
+      "pubDate": "2026-08-20 04:34:55",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166356919477080064391578.jpeg/IUwdiV6w9qQsWLRF76jkqqOUUL-_4Xfwl28u8pdvLvI",
+      "keywords": [
+        "新聞",
+        "國際",
+        "世界新聞",
+        "hk01",
+        "國際新聞",
+        "環球",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7bfe1385dd5700a818995991f1c63c7f",
+      "title": "北京研究南海建「機器人堡壘」 搭海陸空無人平台協同防禦",
+      "description": "中國海警研究人員提出一項南海島礁前線防禦構想,未來或部署由空中、海面及水下無人平台協同作戰的「機器人堡壘」,應對低成本無人機及無人平台集群",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60381890/%E5%8C%97%E4%BA%AC%E7%A0%94%E7%A9%B6%E5%8D%97%E6%B5%B7%E5%BB%BA-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%A0%A1%E5%A3%98-%E6%90%AD%E6%B5%B7%E9%99%B8%E7%A9%BA%E7%84%A1%E4%BA%BA%E5%B9%B3%E5%8F%B0%E5%8D%94%E5%90%8C%E9%98%B2%E7%A6%A6",
+      "pubDate": "2026-08-20 04:30:59",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20240616/879075729323593728769481.jpeg/PzWzAScnQGvd3_YASnIM8Cro8Oa_a9bU3EimPNxIpjw",
+      "keywords": [
+        "時事",
+        "突發",
+        "中國",
+        "香港01"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9840f49c63e9f58ec5a8b24992cccff7",
+      "title": "關嘉敏出戰肚皮舞大賽超低胸戰衣騷火辣身材 包辦冠亞季咩玩法?",
+      "description": "現年31歲的關嘉敏(Carman)今年初開始接觸並迷上肚皮舞,日前她專程飛赴南京參加「南京國際東方舞比賽」,面對實力雄厚的各路參賽對手,她於賽事",
+      "link": "https://www.hk01.com/%E4%BA%BA%E6%B0%A3%E5%A8%9B%E6%A8%82/60381806/%E9%97%9C%E5%98%89%E6%95%8F%E5%87%BA%E6%88%B0%E8%82%9A%E7%9A%AE%E8%88%9E%E5%A4%A7%E8%B3%BD%E8%B6%85%E4%BD%8E%E8%83%B8%E6%88%B0%E8%A1%A3%E9%A8%B7%E7%81%AB%E8%BE%A3%E8%BA%AB%E6%9D%90-%E5%8C%85%E8%BE%A6%E5%86%A0%E4%BA%9E%E5%AD%A3%E5%92%A9%E7%8E%A9%E6%B3%95",
+      "pubDate": "2026-08-20 04:30:22",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167057532418527232176392.jpeg/09Yatlt-Rr5DlmMD_MdYuOuI_VJCE_XCUtXT2lLV09o",
+      "keywords": [
+        "新聞",
+        "marvel",
+        "mirror",
+        "hk01",
+        "即時娛樂",
+        "明星",
+        "韓星",
+        "tvb",
+        "即時娛樂新聞",
+        "viu",
+        "美劇",
+        "香港新聞",
+        "藝人",
+        "香港01",
+        "娛樂新聞"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "757f11d266e22a1332f872e89b5ca378",
+      "title": "【電腦通訊節 2026】NETGEAR Wi-Fi 7 網絡陣容升級!會場限定驚喜優惠",
+      "description": "一年一度的「香港電腦通訊節 2026」正式開鑼!適逢配合 2.5G 寛頻的 Wi-Fi 7 產品全線爆發,不少用家都趁著展覽期親臨現場尋覓升級網絡配備的最佳時機。作為網絡設備龍頭品牌,NETGEAR 今年於會場的展位同樣陣容鼎盛,除了展示多款配備最新 Wi-Fi 7 技術的網絡裝備外,現場更備有極具吸引力的展場專屬優惠! 這篇文章 【電腦通訊節 2026】NETGEAR Wi-Fi 7 網絡陣容升級!會場限定驚喜優惠 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/hkccf-2026-netgear-wifi7-orbi-nighthawk-deals/",
+      "pubDate": "2026-08-20 04:30:00",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/17205325/PCM_Banner_1080_20260817_hkccf26_netgear.jpg",
+      "keywords": [
+        "場料",
+        "mh7150",
+        "tech",
+        "rbe372",
+        "rbe873",
+        "會場優惠",
+        "mesh wifi",
+        "wi-fi 7",
+        "科技新聞",
+        "orbi 870",
+        "buyer guide",
+        "netgear",
+        "nighthawk m7",
+        "5g router",
+        "網絡升級",
+        "orbi 370",
+        "香港電腦通訊節"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "959b115e33b3c56fe45df575c6dba4d9",
+      "title": "英超 FPL|加比爾貴得值還是用梳爾平替? 一文睇清三個價位後衛抵買之選",
+      "description": "英超新球季今個周末就會正式開鑼,亦意味各位Fantasy Premier League(簡稱FPL)玩家進入最後「砌陣」階段。阿仙奴後衛加比爾馬加希斯(Gabriel Magalhaes)開季已經達到£8m,究竟這位巴西中堅能否對得住他的身價,或是以接近半價買曼聯的勞基梳爾(Luke Shaw,£4.5m)已經足夠?今集《FPL密碼》為大家一一拆解。 今季FPL更改了額外獎分系統(Bonus Po",
+      "link": "https://www.stheadline.com/football-news/3606154/%E8%8B%B1%E8%B6%85-FPL%E5%8A%A0%E6%AF%94%E7%88%BE%E8%B2%B4%E5%BE%97%E5%80%BC%E9%82%84%E6%98%AF%E7%94%A8%E6%A2%B3%E7%88%BE%E5%B9%B3%E6%9B%BF-%E4%B8%80%E6%96%87%E7%9D%87%E6%B8%85%E4%B8%89%E5%80%8B%E5%83%B9%E4%BD%8D%E5%BE%8C%E8%A1%9B%E6%8A%B5%E8%B2%B7%E4%B9%8B%E9%81%B8",
+      "pubDate": "2026-08-20 04:29:43",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/9228a34195919b9b9f887d520e47b0fa/2026-08/Copy_of_KF_-_2026-08-20T121934_825.png",
+      "keywords": [
+        "fpl",
+        "阿仙奴",
+        "曼聯",
+        "英超"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "64f9b33fe086949411c61a7dbc23bb32",
+      "title": "Canvas系統遭入侵 外洩事件影響4教學機構逾15萬師生",
+      "description": "Canvas為Instructure, Inc.所營運的網上教學管理平台。Instructure於4月29日發現黑客組織 ShinyHunters 透過一個「Free-For-Teacher」帳戶在Canvas上進行未經授權活動,並竊取用戶資料,隨即封鎖未經授權的存取,並委聘網絡安全公司展開獨立調查。其後,黑客於5月7日利用Canvas另一個保安漏洞再次入侵,並修改多間院校的登入頁面,張貼勒索訊息。外洩事件發生後,Instructure修補相關保安漏洞、加強保安措施,並停用「Free-For-Teacher」服務。經相關網絡安全公司審視後,Instructure於5月9日恢復Canvas服務,並於5月11日表示與黑客達成協議,取回被竊取的個人資料。",
+      "link": "https://www.am730.com.hk/%E6%9C%AC%E5%9C%B0/1048497/canvas%E7%B3%BB%E7%B5%B1%E9%81%AD%E5%85%A5%E4%BE%B5-%E5%A4%96%E6%B4%A9%E4%BA%8B%E4%BB%B6%E5%BD%B1%E9%9F%BF4%E6%95%99%E5%AD%B8%E6%A9%9F%E6%A7%8B%E9%80%BE15%E8%90%AC%E5%B8%AB%E7%94%9F",
+      "pubDate": "2026-08-20 04:24:37",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048497/article/1048497/df/1616035897_aj.jpg?updatedAt=1787199906",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c9218629ec368865702703140ae90d06",
+      "title": "恒大案|許家印被判無期徒刑 恆大集團被判罰88.2億元",
+      "description": "據央視報道,8月20日上午,廣東省深圳市中級人民法院對被告單位恆大集團有限公司(以下簡稱恆大集團)、被告單位恆大地產集團有限公司(以下簡稱恆大地產)、被告人許家印案進行一審公開宣判。對恆大集團數罪並罰...",
+      "link": "https://china.hket.com/article/4179591",
+      "pubDate": "2026-08-20 04:21:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4179591/xj_1_300.jpg",
+      "keywords": [
+        "罪案",
+        "許家印",
+        "內地物業",
+        "政治",
+        "深圳",
+        "經濟",
+        "地產",
+        "物業",
+        "金融",
+        "金融機構"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fece6f22b7e82317f8438f6774358258",
+      "title": "Claude 剛推 AI 文字浮水印 即有人出開源工具破解 自己重新打字亦抹走痕跡",
+      "description": "Anthropic 為 Claude 生成文字加入浮水印標記,原意是遵守歐盟 AI 法案要求,計劃卻在數小時內 [...]",
+      "link": "https://unwire.hk/2026/08/20/claude-watermark-removal-tools/fun-tech/",
+      "pubDate": "2026-08-20 04:20:20",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo32-3.png",
+      "keywords": [
+        "anthropic",
+        "人工智能",
+        "github",
+        "科技新聞",
+        "eu ai act",
+        "ai watermark",
+        "claude"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e83bdc2cc68513b7e30a316d1b142769",
+      "title": "全国首个眼科数据知识产权授权转化项目落地 参天中国携手温医大眼视光赋能数据要素化改革",
+      "description": "上海 2026年8月20日 /美通社/ -- 近日,参天中国与温州医科大学附属眼视光医院正式签署医疗数据要素项目合作协议,落地全国首个全流程合规眼科数据知识产权授权转化项目。 该项目是温医大眼视光医院继2025年全国首例数据产权交易后,在数据要素领域的又一次制度创新与模式升级。此外,该项目突破了单纯的数据产品交易逻辑,通过知识产权授权明确了数据资产权益,为医疗数据合规流通与科技成果转化打造了高阶样板。 作为全球眼科领域的领导企业,参天公司始终致力于全生命周期视觉健康管理,高度重视近视领域的临床需求与发展,并将其作为公司重点关注和持续投入的治疗领域。参天公司不断投入全球前沿创新产品和治疗方案的研发,同时关注如何通过高质量研究,为眼科相关疾病防控提供更加科学、更加可靠的证据支持,最终为患者创造更多价值。 作为国内眼科领域的头部医院,温州医科大学附属眼视光医院深耕眼病筛查、诊疗与长期随访工作,积累规模庞大、维度完整、随访连续的眼病数据资源。这些优质数据此前因转化渠道限制,主要服务于院内科研,未能充分释放其数据要素的宝贵价值。本次合作正是瞄准这一痛点,探索医疗数据规范赋能眼健康事业、服务人民群众的可行路径。 温州市科技局副局长金龙军、市卫健委市级公办医院管理中心主任余颖聪、市医保局副局长胡坚、市数据局(人工智能局)数安港管理服务中心主任陈弦,温州医科大学副校长朱雪波、温州医科大学附属眼视光医院终身名誉院长瞿佳、眼和视光疾病国家临床医学研究中心主任吕帆、副院长徐丹、学术院长苏建忠,参天公司研发和产品开发负责人邵维良、全国市场总监龚生胜,医渡云副总裁李程等出席了签约仪式。",
+      "link": "https://www.prnasia.com/story/544635-1.shtml",
+      "pubDate": "2026-08-20 04:19:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "mtc",
+        "lic",
+        "pha",
+        "hea",
+        "con"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "79b5362c7b7aadf3a0a145b6616dbdd0",
+      "title": "从模型到新药,天鹜科技推动蛋白质AI走向真实研发",
+      "description": "四轮\"AI计算设计—湿实验验证\"覆盖222个突变体,推动蛋白质AI走向真实药物工程场景 上海 2026年8月20日 /美通社/ -- 上海天鹜科技有限公司(以下简称\"天鹜科技\")宣布,其参与分子工程设计与优化的眼科创新生物药 GenSci148注射液 取得临床开发新进展。该药用于新生血管性年龄相关性黄斑变性(nAMD)、糖尿病性黄斑水肿(DME)和视网膜静脉阻塞(RVO)的三项临床试验申请,均已通过创新药临床试验30日通道的审评审批。 GenSci148由长春金赛药业有限责任公司(以下简称\"金赛药业\")自主研发。受金赛药业委托,天鹜科技利用蛋白质AI和计算分子设计能力参与相关分子工程设计与优化,通过多轮\" AI计算设计—湿实验验证 \",对候选分子的功能活性及多项关键成药属性进行系统优化。 此次项目进展进一步将蛋白质AI的验证从公开数据集和实验体系延伸至真实创新药研发: AI提出候选设计,实验验证并产生反馈,再由数据驱动下一轮分子优化。 【图1|GenSci148三个适应症进入临床开发阶段】GenSci148用于nAMD、DME及RVO的三项临床试验申请获得临床试验许可。来源:国家药品监督管理局药品审评中心。 四轮干湿迭代,覆盖222个突变体 GenSci148是一款眼科创新生物药,可同时结合 VEGF-A、VEGF-C、VEGF-D及Ang-2 ,协同干预异常血管生成及血管稳定性相关通路。其潜在临床优势仍需通过后续临床试验验证。 围绕功能活性和高浓度制剂粘度,天鹜科技共完成 4轮\"AI计算设计—湿实验验证\"迭代,累计覆盖222个突变体 :两轮活性优化分别覆盖92个和30个突变体,两轮粘度优化分别覆盖50个突变体。 项目围绕六项关键药物性能开展优化: VEGF-A亲和力 最高提升约10倍; VEGF-A/C/D三重阻断活性 最高提升约3倍; 在项目采用的血管渗漏非临床模型中,优化分子给药后 84天 仍表现出持续抑制作用,并在该实验条件下优于Eylea和Faricimab; 蛋白热稳定性 (Tm)最高提高约4.5°C; 蛋白表达量 最高提升约27.6%; 高浓度制剂粘度 降低约13 cP。 【图2|四轮干湿迭代实现六项关键性能协同优化】GenSci148相关分子工程项目累计覆盖222个突变体,在亲和力、阻断活性、体内药效、热稳定性、表达量及高浓度制剂粘度等关键性能上实现优化。 值得注意的是,AI提出的关键突变位点并非全部集中于传统关注的结合界面,部分甚至位于结合界面远端;这些设计经实验验证发现显著提升了功能性质,显示出AI有望拓展传统基于结构界面和经验直觉的蛋白质药物设计空间。 在蛋白质药物工程中,不同性能目标往往相互制约。天鹜科技希望通过AI与实验闭环,不仅寻找单项指标更优的突变,也提高在活性、稳定性、表达和制剂性质等多目标条件下寻找综合候选分子的效率。 【图3|GenSci148相关分子工程代表性临床前实验结果】代表性实验显示,项目优化分子在VEGF-A和Ang-2功能阻断实验中表现出增强的活性,并在RNV非临床模型中显示出持续的体内药效。 *结果基于相应非临床实验条件,与Eylea和Faricimab等对照药物比较。临床意义尚需进一步研究验证。 Venus专业蛋白质AI模型持续演进 支撑相关蛋白质设计工作的,是天鹜科技持续开发的 Venus专业蛋白质AI模型体系 。 其基础模型从以蛋白质序列为核心的 Venus 1.0 ,演进至融合序列和三维结构信息的 Venus 2.0 / Venus-ProSST ,并进一步发展为整合序列、结构与MSA进化信息的 Venus 3.0 / Venus-REM 。 围绕具体研发任务,天鹜科技还开发了小样本学习模型 Venus-FSFP 、专家模型 Venus-Maxwell 、模板酶挖掘模型 Venus-Mine 、无模板功能挖酶模型 Venus-RXN 以及结构预测模型 Venus-Fold 等,覆盖定向进化、后训练、功能挖掘和结构预测等任务。 这些模型与计算设计及湿实验验证结合,使模型输出能够进入实验验证,并由实验结果持续反馈后续设计。 【图4|Venus专业蛋白质AI模型矩阵持续演进】Venus模型体系覆盖基础模型、定向进化、后训练、酶挖掘及结构预测等研发任务。部分模型处于研发或规划阶段。 VenusREM在国际公开评测中取得领先表现 VenusREM是天鹜科技开发的蛋白质突变效应预测模型,通过联合利用蛋白质序列、三维结构和同源进化信息,对候选突变的功能影响进行预测和排序。 发表于《Bioinformatics》的研究显示,VenusREM在 ProteinGym的217组DMS实验数据 上取得领先表现,并进一步通过VHH抗体和DNA聚合酶等实验体系进行了湿实验验证。 2026年7月,哈佛大学与Capable研究团队发布PG-LLM蛋白质突变排序评测。在统一的 N=50候选突变排序条件 下,该研究比较13款通用语言模型和95种已发表专业蛋白质预测方法。VenusREM取得 Spearman ρ=0.523 ,高于该研究主要排行榜中的Claude Opus 5(0.406)和GPT-5.6 Sol(0.402),并在所比较的专业预测方法中位居首位。 【图5|VenusREM在国际蛋白质突变预测评测中领先】PG-LLM评测中,VenusREM取得Spearman ρ=0.523,在所比较的专业蛋白质预测方法中位居首位。来源:PG-LLM,2026。 公开评测检验模型对蛋白质突变的预测和排序能力;真实药物项目则进一步检验模型能否参与解决多目标、受实验约束的复杂药物工程问题。二者共同构成从 模型评测、实验验证到产业研发应用 的不同层级证据。 进一步走向创新药研发 在持续建设蛋白质AI技术平台并开展产业项目的基础上, 2026年3月,天鹜科技发起设立上海生鹜医药科技有限公司(以下简称\"生鹜医药\") ,进一步将相关技术能力用于创新药资产创造和临床转化。 天鹜科技将继续聚焦蛋白质数据、专业AI模型、科研智能体、计算分子设计及自动化实验等底层能力;生鹜医药则进一步将AI与疾病生物学、蛋白质工程和药物开发结合,面向创新药产品研发。 在这一体系中, 临床需求定义产品目标,药物科学家确定差异化方向,AI扩大可探索的分子空间,实验数据持续驱动下一轮设计。 天鹜科技创始人、首席科学家洪亮表示: \"AI for Science最终需要在真实研发场景中创造价值。与金赛药业的合作,让我们有机会把蛋白质AI放到复杂的药物工程问题中,通过设计、实验和数据反馈不断迭代。GenSci148进入临床开发,是这一研发路径向临床阶段迈出的重要一步。我们希望继续推动蛋白质AI从模型能力走向可重复的研发能力。\" 金赛药业CEO金磊表示: \"金赛药业始终坚持自主创新,也积极拥抱AI等前沿技术,通过开放合作提升创新药研发能力。天鹜科技在GenSci148分子工程设计与优化过程中提供了重要的技术支持,双方将AI计算设计与实验验证结合,共同推动候选分子的持续优化。三项临床试验申请获得默示许可,是项目迈向临床开发的重要里程碑。我们期待通过后续临床研究进一步验证GenSci148的潜在临床价值,为眼科患者带来新的治疗选择。\" 关于天鹜科技 天鹜科技是一家AI驱动的全栈式蛋白质研发平台公司,通过蛋白质数据、专业AI模型、科研智能体、计算分子设计及自动化实验体系,构建覆盖蛋白质研究、设计、实验验证和产业应用的研发平台。 关于生鹜医药 上海生鹜医药科技有限公司成立于2026年3月,由天鹜科技发起设立,聚焦AI驱动的创新药资产创造及临床转化。 媒体联系: www.matwings.com public@biowingsthera.com",
+      "link": "https://www.prnasia.com/story/544636-1.shtml",
+      "pubDate": "2026-08-20 04:16:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "mtc",
+        "afi",
+        "bio",
+        "jvn",
+        "pha",
+        "tri",
+        "hea"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "41e79440c5ba1af94e0acaaac9a130dd",
+      "title": "牛來電影|片方窮到沒宣傳經費 內地戲院「自創海報」變繪畫大賽",
+      "description": "內地近來有一部低成本動畫電影《牛來》因「爛到出圈」,從無人問津到逆襲爆紅,許多觀眾抱著獵奇的心態來朝聖,本來的個位數票房,到現在已經超過1",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60381811/%E7%89%9B%E4%BE%86%E9%9B%BB%E5%BD%B1-%E7%89%87%E6%96%B9%E7%AA%AE%E5%88%B0%E6%B2%92%E5%AE%A3%E5%82%B3%E7%B6%93%E8%B2%BB-%E5%85%A7%E5%9C%B0%E6%88%B2%E9%99%A2-%E8%87%AA%E5%89%B5%E6%B5%B7%E5%A0%B1-%E8%AE%8A%E7%B9%AA%E7%95%AB%E5%A4%A7%E8%B3%BD",
+      "pubDate": "2026-08-20 04:15:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167056291982479360418523.png/9BVEOKE6Jgk4LZLUAK0IwB5_cezAY6bpoaaFNaGmhTU",
+      "keywords": [
+        "電影",
+        "經典電影",
+        "睇戲",
+        "港產片",
+        "香港01",
+        "影評",
+        "外語片"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "57c49af66b27973f7b5dd2abebbba9df",
+      "title": "兩童到訪動物農場後嘔吐血便 染大腸桿菌致腎衰竭即睇症狀及預防",
+      "description": "動物農莊|不少家長會帶孩子到動物農場遊玩,與小動物近距離接觸,但要注意衛生,以免感染細菌!澳洲兩名幼童在到訪動物農場後,感染「產志賀毒素大",
+      "link": "https://www.hk01.com/%E8%A6%AA%E5%AD%90/60380192/%E5%85%A9%E7%AB%A5%E5%88%B0%E8%A8%AA%E5%8B%95%E7%89%A9%E8%BE%B2%E5%A0%B4%E5%BE%8C%E5%98%94%E5%90%90%E8%A1%80%E4%BE%BF-%E6%9F%93%E5%A4%A7%E8%85%B8%E6%A1%BF%E8%8F%8C%E8%87%B4%E8%85%8E%E8%A1%B0%E7%AB%AD%E5%8D%B3%E7%9D%87%E7%97%87%E7%8B%80%E5%8F%8A%E9%A0%90%E9%98%B2",
+      "pubDate": "2026-08-20 04:11:08",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260819/1166597282884227072428536.jpeg/04IefVUFX3zrWXv2o2gtkzGLSDPaP0XDjq-0m46vtJs",
+      "keywords": [
+        "教育",
+        "熱話",
+        "育兒",
+        "玩樂",
+        "入學試面",
+        "香港01",
+        "健康",
+        "親子"
+      ],
+      "category": [
+        "crime",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8add568133d2fea6c38d42f4fc8f6feb",
+      "title": "黑客攻擊Canvas|私隱署指港逾15萬人受影響 城大等4機構沒違例",
+      "description": "網上教育平台Canvas遭黑客組織攻擊,全球2.75億名用戶受影響,香港有7間教育機構向個人資料私隱專員公署通報資料外泄事故。私隱公署今日(20日)公",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60381876/%E9%BB%91%E5%AE%A2%E6%94%BB%E6%93%8Acanvas-%E7%A7%81%E9%9A%B1%E7%BD%B2%E6%8C%87%E6%B8%AF%E9%80%BE15%E8%90%AC%E4%BA%BA%E5%8F%97%E5%BD%B1%E9%9F%BF-%E5%9F%8E%E5%A4%A7%E7%AD%894%E6%A9%9F%E6%A7%8B%E6%B2%92%E9%81%95%E4%BE%8B",
+      "pubDate": "2026-08-20 04:09:13",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20250324/980969119425761280539120.jpeg/fFZwPhFw_n2ZXU3KzQ13FrumdinBDNyvBaFjgwWhY4M",
+      "keywords": [
+        "國際新聞",
+        "即時新聞",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "港聞",
+        "頭條新聞",
+        "hk01"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e297fb15700cec0dc145f472aef77a9b",
+      "title": "美媒稱五角大樓正評估減少在海灣地區軍事存在",
+      "description": "中評社北京8月20日電/據新華社引述美國《華盛頓郵報》18日援引一些美國官員及知情人士的話報導,受伊朗戰事影響,五角大樓正評估是否減少美國在中東地區的軍事存在。 報導說,美國大型海外軍事基地遭受伊朗數月襲擊並受損,五角大樓難得有機會重新考慮在該地區的軍事存在,其中一個重要方面為是否從海灣地區撤軍。此前,美國防部已表示可能不會按衝突發生前的規模重建基地。 報導披露,美軍通常在",
+      "link": "http://www.crntt.com/doc/7_0_107225878_1_0820120728.html",
+      "pubDate": "2026-08-20 04:07:27",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/107225880.jpg",
+      "keywords": [
+        "美軍"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f126009267ebf5e2dd73a26de5058ca7",
+      "title": "意甲│國際米蘭鍾情英格蘭球員 接近以3500萬歐羅簽下居迪斯鍾斯",
+      "description": "意大利轉會專家羅馬諾周三(19日)透露,國際米蘭與利物浦就後者中場居迪斯鍾斯(Curtis Jones)的交易達成協議,據報轉會費總價為3500萬歐羅,待體測完成就可落實交易。這名25歲英格蘭中場預計成為繼史東斯和迪積史賓斯後,今夏第3位加盟國米的英格蘭球員。事實上這支意甲豪門近年鍾情英格蘭戰將和英超兵,不停在英超挖角。 鍾斯差體測就加入國米 羅馬諾周三以標誌性的「Here We Go」來報導居迪",
+      "link": "https://www.stheadline.com/football-news/3606320/%E6%84%8F%E7%94%B2%E5%9C%8B%E9%9A%9B%E7%B1%B3%E8%98%AD%E9%8D%BE%E6%83%85%E8%8B%B1%E6%A0%BC%E8%98%AD%E7%90%83%E5%93%A1-%E6%8E%A5%E8%BF%91%E4%BB%A53500%E8%90%AC%E6%AD%90%E7%BE%85%E7%B0%BD%E4%B8%8B%E5%B1%85%E8%BF%AA%E6%96%AF%E9%8D%BE%E6%96%AF",
+      "pubDate": "2026-08-20 04:06:05",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e32625f4d135b6f1bd10db029c8ebcf5/2026-08/Copy_of_KF_-_2026-08-20T120513_314.png",
+      "keywords": [
+        "國際米蘭",
+        "curtis jones",
+        "英超",
+        "利物浦"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "af01e7868d7f0e8c7eac6e58e965160c",
+      "title": "吳成典:兩岸像兄弟衹有和平統一這條路可走",
+      "description": "中評社台北8月20日電(記者 張嘉文)新黨將於22日舉辦33年黨慶活動,今天由黨主席吳成典召開記者會說明細節。吳成典表示,新黨成立33年來始終堅持兩岸和平統一,從未改變,如今國際及兩岸大環境已經改變,更證明這條路的重要性。 他強調,台灣和大陸就像兄弟,文化、民族及感情密不可分,“兩岸衹有一條路可以走,就是和平統一”。 新黨今天上午在台北黨部召開33周年黨慶記者會,包括吳成典",
+      "link": "http://www.crntt.com/doc/7_0_160259003_1_0820120554.html",
+      "pubDate": "2026-08-20 04:05:54",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/160259005.JPG",
+      "keywords": [
+        "新黨",
+        "吳成典"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4422e821185fec99f4ee7ba0b51f26f6",
+      "title": "劑泰科技正式落戶中環盈置大廈",
+      "description": "三界資本加速資產升級 賦予傳統核心甲廈創新動能 香港 – Media OutReach Newswire – 2026年8月20日 – 香港核心區商廈租賃持續回暖,中環盈置大廈(Nexxus Building)最新獲全球首家上市的人工智能(AI)藥物遞送生物科技企業劑泰科技(股票編號:7666.HK)正式進駐,成為亞洲房地產資產管理公司三界資本(Trivium Asset Management)接手項目營運及管理後,積極推動資產優化並成功引入多元化優質租戶的又一里程碑。 三界資本自今年初接手管理盈置大廈後,迅速推動內部升級優化工程,並將大廈23樓打造成全新活動空間「Nexxus Hub」,為租戶舉辦研討會、交流會及工作坊等活動提供一站式增值配套。同時,為配合市場對靈活辦公空間的需求,團隊把大廈6樓分間成6個中小型單位,大幅提升樓面配置的靈活性,精準切合不同規模企業的需求,工程竣工後即時吸引多組租戶接洽及先後進駐,當中包括劑泰科技,以及多家金融相關的企業。 劑泰科技為全球首家以AI驅動納米科技創新及藥物遞送的生物科技企業,於今年5月在香港聯交所主板上市後,展現出強勁的市場發展潛力。劑泰科技聯合創辦人兼首席執行官賴才達博士表示:「作為一家處於生命科學與AI創新科技前沿的企業,我們正值業務快速擴展與國際化佈局的關鍵階段。中環作為國際金融與商業核心,擁有卓越的地理優勢和頂尖的商業生態。隨著盈置大廈完成內部升級工程,其活動空間配套及6樓靈活的空間規劃,均切合我們團隊的營運需要。我們非常期待以盈置大廈為本港據點,進一步推動集團技術創新與業務突破。」 是次劑泰科技選擇落戶盈置大廈,不僅反映頂尖創科企業對中環核心商業前景的信心,亦突顯大廈優化後的升級和規劃能精準滿足高增長企業的需求。三界資本管理合夥人馬維俊(Wilfred Ma)先生指:「我們非常歡迎劑泰科技進駐盈置大廈。這充分體現市場對盈置大廈核心地段及優質配套的認同。自三界資本團隊接手以來,一直積極推動資產優化,包括打造活動空間『Nexxus Hub』,以及重新規劃6樓的單位間隔,為傳統甲級寫字樓注入創新概念,亦為租戶提供更具彈性和附加價值的辦公體驗。未來,我們將繼續以創新管理思維,吸引更多元化的優質企業落戶,持續釋放盈置大廈作為區內指標甲廈的商業價值。」 盈置大廈位處中環干諾道中41號,樓高23層,前身為恒生大廈,亦曾為恒生銀行總部,早於1962年落成,屹立在香港核心商業區心臟地帶逾半世紀,見證香港作為金融中心的變遷。大樓於2008年完成全面翻新,其後更在2020年建成行人天橋,直接連接鄰近中環地標商場及寫字樓國際金融中心(IFC)和港鐵機場快綫站。盈置大廈多年來吸引不少國際企業、知名品牌及香港銀行家會所進駐,成為中環區內極具代表性的甲級寫字樓之一。 Hashtag: #盈置大廈 #NexxusBuilding #三界資本 #Trivium #劑泰科技 #METiSTechBio 發佈者對本公告的內容承擔全部責任 關於三界資本 三界資本是一家創立於2022年的亞洲房地產資產管理公司,具備豐富的物業投資及營運管理經驗,現時管理資產規模超過9億美元,服務對象包括機構投資者、金融機構及家族辦公室。三界資本業務範疇多元,透過專業資產管理、資產增值、及科技應用等策略,提升房地產項目回報並打造可持續的價值。 ** 本新聞稿由 Media OutReach Newswire 通過自動發布系统提供,內容由客戶承擔全部責任。**",
+      "link": "https://www.bastillepost.com/hongkong/article/16604565-%E5%8A%91%E6%B3%B0%E7%A7%91%E6%8A%80%E6%AD%A3%E5%BC%8F%E8%90%BD%E6%88%B6%E4%B8%AD%E7%92%B0%E7%9B%88%E7%BD%AE%E5%A4%A7%E5%BB%88",
+      "pubDate": "2026-08-20 04:05:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/03/asia-pacific-placeholder.jpeg",
+      "keywords": [
+        "亞太",
+        "media outreach newswire"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8739196500c17cd8429364860e8aabbe",
+      "title": "張敬軒直播接母親來電驚聞親戚患晚期癌症 坦言最怕父母深夜來電",
+      "description": "張敬軒早前在直播期間突然接到母親來電,得知有親戚患上晚期胰臟癌。他感慨人生無常,更坦言隨着年紀漸長,最怕就是深夜收到父母的來電,多年來都保",
+      "link": "https://www.hk01.com/%E8%A6%AA%E5%AD%90/60381762/%E5%BC%B5%E6%95%AC%E8%BB%92%E7%9B%B4%E6%92%AD%E6%8E%A5%E6%AF%8D%E8%A6%AA%E4%BE%86%E9%9B%BB%E9%A9%9A%E8%81%9E%E8%A6%AA%E6%88%9A%E6%82%A3%E6%99%9A%E6%9C%9F%E7%99%8C%E7%97%87-%E5%9D%A6%E8%A8%80%E6%9C%80%E6%80%95%E7%88%B6%E6%AF%8D%E6%B7%B1%E5%A4%9C%E4%BE%86%E9%9B%BB",
+      "pubDate": "2026-08-20 04:04:51",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167073385004404736127465.jpeg/V1f6XFOoChMhjNNhnjXdqHjmnGfVrpyZiB4kRogeJEY",
+      "keywords": [
+        "教育",
+        "熱話",
+        "育兒",
+        "玩樂",
+        "入學試面",
+        "香港01",
+        "健康",
+        "親子"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ee23fec66cb72f4bc463805d04653b8a",
+      "title": "雲班亞馬出任法國籃球隊隊長",
+      "description": "【Now Sports】法國籃球國家隊周三宣佈,正式委任聖安東尼奧馬刺球星雲班亞馬擔任新一任隊長,帶領國家隊備戰世界盃歐洲區外圍賽。現年22歲的雲班亞馬(Victor Wembanyama)將率領法國於周四及下周日與由尤基治領銜的塞爾維亞進行熱身賽,隨後於今月27日迎戰斯洛文尼亞,正式展開外圍賽賽程,並於30日再...",
+      "link": "https://hk.sports.yahoo.com/news/%E9%9B%B2%E7%8F%AD%E4%BA%9E%E9%A6%AC%E5%87%BA%E4%BB%BB%E6%B3%95%E5%9C%8B%E7%B1%83%E7%90%83%E9%9A%8A%E9%9A%8A%E9%95%B7-040441066.html",
+      "pubDate": "2026-08-20 04:04:41",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "星雲班亞馬",
+        "victor wembanyama",
+        "聖安東尼奧馬刺",
+        "法國籃球國家隊",
+        "nba",
+        "世界盃歐洲區外圍賽"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7579540e6d3f62efa647a93ac1350c77",
+      "title": "iCAUR V27 越野風 SUV 香港測試 硬朗方盒外形 + REEV 黃金增程 1200 公里續航",
+      "description": "iCUAR(內地稱 iCAR)是奇瑞汽車旗下的新能源電動品牌,V27 作為品牌首款中大型增程硬派 SUV,近日 [...]",
+      "link": "https://unwire.hk/2026/08/20/icaur-v27-testdrive/shop_guide/",
+      "pubDate": "2026-08-20 04:02:51",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo27-2.png",
+      "keywords": [
+        "電動車",
+        "奇瑞",
+        "生活娛樂",
+        "icar",
+        "增程suv",
+        "汽車科技",
+        "icaur",
+        "v27",
+        "買物情報"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "63e3413cd57512673ca12287a3586428",
+      "title": "《牛來》可望在港上映?百老匯覆網民「傾緊」 周邊玩偶網上熱賣",
+      "description": "國產動畫《牛來》近日因其災難級畫質及毫無邏輯的劇情爆紅,上映15天票房突破2,500萬元人民幣(近3,000萬港元),吸引不少港人抱獵奇心態北上,到",
+      "link": "https://www.hk01.com/%E7%86%B1%E7%88%86%E8%A9%B1%E9%A1%8C/60381858/%E7%89%9B%E4%BE%86-%E5%8F%AF%E6%9C%9B%E5%9C%A8%E6%B8%AF%E4%B8%8A%E6%98%A0-%E7%99%BE%E8%80%81%E5%8C%AF%E8%A6%86%E7%B6%B2%E6%B0%91-%E5%82%BE%E7%B7%8A-%E5%91%A8%E9%82%8A%E7%8E%A9%E5%81%B6%E7%B6%B2%E4%B8%8A%E7%86%B1%E8%B3%A3",
+      "pubDate": "2026-08-20 04:02:46",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167071495864717312765128.png/hBchUulp8J5GlyFhvZxr7-G2jlaF79wiJp2wvSadsL0",
+      "keywords": [
+        "城中熱話",
+        "熱話",
+        "話題"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a4f7b66af7aa719ef39ce7e6d63b609f",
+      "title": "牛來電影在香港上映?百老匯覆網民「傾緊」 周邊玩偶網上熱賣",
+      "description": "國產動畫《牛來》近日因其災難級畫質及毫無邏輯的劇情爆紅,上映15天票房突破2,500萬元人民幣(近3,000萬港元),吸引不少港人抱獵奇心態北上,到",
+      "link": "https://www.hk01.com/%E7%86%B1%E7%88%86%E8%A9%B1%E9%A1%8C/60381858/%E7%89%9B%E4%BE%86%E9%9B%BB%E5%BD%B1%E5%9C%A8%E9%A6%99%E6%B8%AF%E4%B8%8A%E6%98%A0-%E7%99%BE%E8%80%81%E5%8C%AF%E8%A6%86%E7%B6%B2%E6%B0%91-%E5%82%BE%E7%B7%8A-%E5%91%A8%E9%82%8A%E7%8E%A9%E5%81%B6%E7%B6%B2%E4%B8%8A%E7%86%B1%E8%B3%A3",
+      "pubDate": "2026-08-20 04:02:46",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167071495864717312765128.png/hBchUulp8J5GlyFhvZxr7-G2jlaF79wiJp2wvSadsL0",
+      "keywords": [
+        "城中熱話",
+        "話題",
+        "熱話"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5f11bbfa7f58780ef5afc1362affd5e8",
+      "title": "游嘉欣持續被質疑整容 晒中學舊照證從細靚到大:不解釋了",
+      "description": "TVB小花游嘉欣(游游)憑清純甜美的形象入屋,近年又積極運動,練出一副好身材,而且越來越靚!不過,近日網上對她「外貌進化」有所質疑,更懷疑她的美貌是「後天加工」,指她她有削腮骨、隆鼻及做「微笑唇」。面對連串醫美疑雲,游嘉欣早前在社交平台分享拍片回應傳聞,在鏡頭前「糟質」自己的樣子,以行動證明全臉零假體! 雖然游嘉欣連續出招力證自己的美貌時「純天然」,但近日有自稱「半娛樂圈」網民指,「最近有個女星經常強調自己冇整容,其實真係得啖笑,盲都睇得出整咗,唔係個樣瘦咗咁簡單,係個人個感覺唔同晒」,又透露某娛樂公司老闆曾表示會要求女新人簽約前必須「削骨隆鼻執個樣」,迎合俗世審美才能獲推捧出碟,矛頭直指游嘉欣。 對此,游嘉欣使出終極大招,晒出一張中學時期素顏舊照,可見她從小就五官精緻、大眼高鼻,只是有些Baby Fat,其他與現時相差無幾,她更霸氣留言:「這是中學照,不解釋了!不過拍片都有想表達我8年內運動上嘅努力」,獲得不少網民力撐!",
+      "link": "https://www.bastillepost.com/hongkong/article/16599661-%E6%B8%B8%E5%98%89%E6%AC%A3%E6%8C%81%E7%BA%8C%E8%A2%AB%E8%B3%AA%E7%96%91%E6%95%B4%E5%AE%B9-%E6%99%92%E4%B8%AD%E5%AD%B8%E8%88%8A%E7%85%A7%E8%AD%89%E5%BE%9E%E7%B4%B0%E9%9D%9A%E5%88%B0%E5%A4%A7%EF%BC%9A",
+      "pubDate": "2026-08-20 04:00:50",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260819_EN_Yau_FB.jpg",
+      "keywords": [
+        "娛圈事",
+        "游嘉欣"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6861103415afe978354f4fbb407d9915",
+      "title": "張寶兒抱1歲細仔洩「超濃孕味」 袁偉豪晒全家福曾預告不封肚有意追女",
+      "description": "袁偉豪與太太張寶兒(Bowie)婚姻踏入第6年,成功三年抱兩,誕下兩子「袁咕碌」和「袁氹氹」,一家四口生活幸福美滿。袁偉豪與張寶兒昨日(19日)在社交平台分享新家庭照慶祝七夕,張寶兒抱起細仔袁氹氹時,見到其腹部微隆,疑再度有喜。 袁偉豪一家打扮走文青風格 袁偉豪分享的照片中,一家人以文青風格的親子裝拍攝,張寶兒穿上白裙與大仔同色系,而袁偉豪則穿上杏色西裝,細仔打扮似爸爸,四人笑得燦爛,而囝囝更做出",
+      "link": "https://www.stheadline.com/film-drama/3606305/%E5%BC%B5%E5%AF%B6%E5%85%92%E6%8A%B11%E6%AD%B2%E7%B4%B0%E4%BB%94%E6%B4%A9%E8%B6%85%E6%BF%83%E5%AD%95%E5%91%B3-%E8%A2%81%E5%81%89%E8%B1%AA%E6%99%92%E5%85%A8%E5%AE%B6%E7%A6%8F%E6%9B%BE%E9%A0%90%E5%91%8A%E4%B8%8D%E5%B0%81%E8%82%9A%E6%9C%89%E6%84%8F%E8%BF%BD%E5%A5%B3",
+      "pubDate": "2026-08-20 04:00:31",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bc8bc198deedb74f81ce45d7a3b4b588/2026-08/KF_110.jpg",
+      "keywords": [
+        "袁偉豪張寶兒第三胎",
+        "benjaminyuen",
+        "bowie cheung",
+        "張寶兒",
+        "袁咕碌",
+        "張寶兒懷孕",
+        "袁氹氹",
+        "張寶兒孕味",
+        "袁偉豪老婆",
+        "張寶兒凸肚",
+        "袁偉豪",
+        "袁偉豪一家四口"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b9ece260ed390399014f6c8c174697db",
+      "title": "深夜泊車攻略|全港15大最平夜泊推介!康文署轄下體育館、游泳池停車場泊過夜低至$16起",
+      "description": "對於一眾夜歸車主、深夜跨區工作者,甚或想於清晨運動的駕駛者而言,夜間泊車開支絕非小數。市面上商業大廈或商場夜泊套餐普遍索價$80至$150不等,但其實全港藏有大量「隱世平價夜泊」——大部分為康樂及文化事務署(康文署)轄下的體育館、游泳池及運動場,半小時收費普遍低至$1至$2。換言之,整晚停足8小時總費用只需$16至$32!以下為整理全港15大最平夜泊地點及泊車隱藏細節。 深夜泊車攻略|全港15大最",
+      "link": "https://www.stheadline.com/car/3606104/%E6%B7%B1%E5%A4%9C%E6%B3%8A%E8%BB%8A%E6%94%BB%E7%95%A5%E5%85%A8%E6%B8%AF15%E5%A4%A7%E6%9C%80%E5%B9%B3%E5%A4%9C%E6%B3%8A%E6%8E%A8%E4%BB%8B%E5%BA%B7%E6%96%87%E7%BD%B2%E8%BD%84%E4%B8%8B%E9%AB%94%E8%82%B2%E9%A4%A8%E6%B8%B8%E6%B3%B3%E6%B1%A0%E5%81%9C%E8%BB%8A%E5%A0%B4%E6%B3%8A%E9%81%8E%E5%A4%9C%E4%BD%8E%E8%87%B316%E8%B5%B7",
+      "pubDate": "2026-08-20 04:00:25",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5db2873ff2bf229d3af8f9bcd2153e6f/2026-08/HeadlifeEVCarNightParking152026P01.png",
+      "keywords": [
+        "平價泊車",
+        "夜泊",
+        "泊車攻略",
+        "駕駛貼士",
+        "康文署停車場",
+        "香港好去處",
+        "電動車充電",
+        "停車場"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "da4b8e7c639e339914adbe119cc852b2",
@@ -182,6 +1073,26 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "ebc58df78bd704caaeaf83caa28cb51d",
+      "title": "日本7月出口創新高 料央行續推進貨幣政策正常化最早9月加息",
+      "description": "<匯港通訊> 日本官方數據顯示,7月總出口額達11.5萬億日圓,創紀錄高位,按年增長23.2%,超過市場預期的增長19.9%,亦高過6月的增長19.3%。市場分析認為,數據反映全球需求強勁,為日本經濟提供支撐,可能進一步支持日本央行繼續推進貨幣政策正常化,預計日本央行最早於9月加息。期內,日本對美國出口按年增長2...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%97%A5%E6%9C%AC7%E6%9C%88%E5%87%BA%E5%8F%A3%E5%89%B5%E6%96%B0%E9%AB%98-%E6%96%99%E5%A4%AE%E8%A1%8C%E7%BA%8C%E6%8E%A8%E9%80%B2%E8%B2%A8%E5%B9%A3%E6%94%BF%E7%AD%96%E6%AD%A3%E5%B8%B8%E5%8C%96%E6%9C%80%E6%97%A99%E6%9C%88%E5%8A%A0%E6%81%AF-035923111.html",
+      "pubDate": "2026-08-20 03:59:23",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊",
+        "日本",
+        "市場預期的",
+        "日本央行"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "37fc6e142dbc5022c585fb9456af4bb9",
@@ -1431,6 +2342,25 @@
       "region": "hk"
     },
     {
+      "id": "dca753934945004a8fc5f7120a41d6fa",
+      "title": "聯儲局7月議息紀錄放鷹 3官員投反對票撐加息 惟經濟轉弱 9月加息機率降至36%",
+      "description": "美國聯儲局最新會議紀錄顯示,數名官員在7月議息會議上支持加息,另有多名官員認為,若通脹未能回落,當局或有需要進一步收緊貨幣政策。同時,部分官員認為,目前的金融狀況可能未具足夠限制性,無法推動通脹回落至2%的目標。 聯邦公開市場委員會(FOMC)於7月28日至29日舉行會議,最終以9票對3票,決定把聯邦基金利率目標區間維持於3.5厘至3.75厘。今次是聯儲局自2025年底連續3次減息後,第5次維持利",
+      "link": "https://www.stheadline.com/macroeconomics/3606285/%E8%81%AF%E5%84%B2%E5%B1%807%E6%9C%88%E8%AD%B0%E6%81%AF%E7%B4%80%E9%8C%84%E6%94%BE%E9%B7%B9-3%E5%AE%98%E5%93%A1%E6%8A%95%E5%8F%8D%E5%B0%8D%E7%A5%A8%E6%92%90%E5%8A%A0%E6%81%AF-%E6%83%9F%E7%B6%93%E6%BF%9F%E8%BD%89%E5%BC%B1-9%E6%9C%88%E5%8A%A0%E6%81%AF%E6%A9%9F%E7%8E%87%E9%99%8D%E8%87%B336",
+      "pubDate": "2026-08-20 02:50:11",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/f477008a523902d229dcc32d55e3a0cd/2026-08/KF_-_2026-08-20T104854_871.png",
+      "keywords": [
+        "fed",
+        "聯儲局"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "a7734526a1988f457c1c8d921cc82047",
       "title": "郭家耀:港股短期料徘徊25,000至26,000區間 中芯(00981.HK)季績亮麗",
       "description": "港灣家族辦公室業務發展總監郭家耀稱,美股週三(19日)反覆高收,美國財政部入市買入長期國債推動債息回落,三大指數均錄得溫和升幅。美元走勢向下,美國十年期債息回落至4.64厘,金價顯著上升,油價反覆靠穩。港股預託證券普遍向好,預料大市早段跟隨高開。 內地股市昨日低開低收,滬綜指收市下跌2.4%,滬深兩市成交金額有所...",
@@ -2077,6 +3007,24 @@
       "region": "hk"
     },
     {
+      "id": "b907effbc49edb720d2ca406f9e6659d",
+      "title": "美國債務首次突破40萬億美元創新高 分析憂利息上升推高償債成本",
+      "description": "美國財政部加碼回購長債之際,財政部公佈美國總債務首次突破40萬億美元創新高,截至周二(18日)政府債務總額為40.05萬億美元,距離2022年1月突破30萬億美元不足5年。德意志銀行首席美國經濟學家Matthew Luzzetti稱,整數關口本身不是債務動態的臨界點,重點在於利息上升推高償債成本。 利息支出已成第三大聯邦支出項目 綜合媒體報道,美國債務預計將繼續增長,自本財年至今,聯邦政府利息支出",
+      "link": "https://www.stheadline.com/macroeconomics/3606267/%E7%BE%8E%E5%9C%8B%E5%82%B5%E5%8B%99%E9%A6%96%E6%AC%A1%E7%AA%81%E7%A0%B440%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E5%88%86%E6%9E%90%E6%86%82%E5%88%A9%E6%81%AF%E4%B8%8A%E5%8D%87%E6%8E%A8%E9%AB%98%E5%84%9F%E5%82%B5%E6%88%90%E6%9C%AC",
+      "pubDate": "2026-08-20 01:58:21",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d40a8de40379424391ec31b0a6c6acc4/2026-08/PIC_ONLY_0925_5__2_0.jpg",
+      "keywords": [
+        "美債"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "7b3874bf540e5fc8d73d97e8f48c864c",
       "title": "《盈喜》東光化工(01702.HK)料中期純利按年增約55%",
       "description": "東光化工(01702.HK)發盈喜,預期截至今年6月底止六個月的純利將按年增長約55%,此乃主要由於收入增加導致總體毛利及毛利率上升及來自尿素期貨套期保值的收益。(sl/a)~ 阿思達克財經新聞 網址: www.aastocks.com",
@@ -2643,6 +3591,25 @@
         "technology"
       ],
       "region": "hk"
+    },
+    {
+      "id": "4f9ab770f2d0dd9712e6fe65f72d6219",
+      "title": "長和就巴拿馬港口投資啟動國際仲裁 索償逾15億美元",
+      "description": "長和(001)宣布,就巴拿馬共和國涉嫌違反投資保護條約、以國家行為破壞其在當地港口投資,正式向巴拿馬展開國際仲裁,索償超過15億美元。 長和表示,早於今年2月4日,已就巴拿馬過去一年持續針對其資產的行動,向當地政府發出投資保護條約爭議通知,惟尋求解決方案未果。公司今日就巴拿馬被指違反條約責任及國際法,啟動仲裁程序。 批巴拿馬欠正當程序打壓 長和指,巴拿馬自2025年初突然對其投資採取國家層面的打壓",
+      "link": "https://www.stheadline.com/stock-market/3606243/%E9%95%B7%E5%92%8C%E5%B0%B1%E5%B7%B4%E6%8B%BF%E9%A6%AC%E6%B8%AF%E5%8F%A3%E6%8A%95%E8%B3%87%E5%95%9F%E5%8B%95%E5%9C%8B%E9%9A%9B%E4%BB%B2%E8%A3%81-%E7%B4%A2%E5%84%9F%E9%80%BE15%E5%84%84%E7%BE%8E%E5%85%83",
+      "pubDate": "2026-08-20 00:31:22",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/45fd75ee121c3ee51a2b5ccfe2d45765/2026-08/_1_2_1_.png",
+      "keywords": [
+        "巴拿馬",
+        "李嘉誠"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "9eb356152b90435067ceed7bf2a70860",
@@ -142280,7 +143247,5 @@
       "region": "hk",
       "pinned": true
     }
-  ],
-  "total": 7273,
-  "last_updated": "2026-08-21T00:13:40.319687"
+  ]
 }

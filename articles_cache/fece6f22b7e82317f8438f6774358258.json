@@ -1,0 +1,10 @@
+{
+  "id": "fece6f22b7e82317f8438f6774358258",
+  "title": "Claude 剛推 AI 文字浮水印 即有人出開源工具破解 自己重新打字亦抹走痕跡",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/20/claude-watermark-removal-tools/fun-tech/",
+  "rewritten_title": "Claude新增AI文字浮水印功能數小時即遭開源工具破解",
+  "rewritten": "Anthropic為Claude生成文字加入浮水印以符合歐盟AI法案要求，但功能推出僅4小時，巴黎開發者Guillaume Meyer便發布開源工具Watermarks Remover，透過清除隱藏字元及改用其他模型重寫文字來去除標記。該工具已累積逾1.4萬個GitHub星標，另有開發者推出類似工具，引發AI浮水印技術可行性的討論。Anthropic解釋浮水印基於統計選詞偏好，不含用戶識別資料。研…",
+  "status": "done",
+  "fetched_at": "2026-08-21T01:09:36"
+}
