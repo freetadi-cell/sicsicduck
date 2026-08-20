@@ -1,76 +1,979 @@
 {
+  "last_updated": "2026-08-21T07:13:34.320332",
+  "total": 7593,
   "articles": [
     {
-      "id": "dca753934945004a8fc5f7120a41d6fa",
-      "title": "聯儲局7月議息紀錄放鷹 3官員投反對票撐加息 惟經濟轉弱 9月加息機率降至36%",
-      "description": "美國聯儲局最新會議紀錄顯示,數名官員在7月議息會議上支持加息,另有多名官員認為,若通脹未能回落,當局或有需要進一步收緊貨幣政策。同時,部分官員認為,目前的金融狀況可能未具足夠限制性,無法推動通脹回落至2%的目標。 聯邦公開市場委員會(FOMC)於7月28日至29日舉行會議,最終以9票對3票,決定把聯邦基金利率目標區間維持於3.5厘至3.75厘。今次是聯儲局自2025年底連續3次減息後,第5次維持利",
-      "link": "https://www.stheadline.com/macroeconomics/3606285/%E8%81%AF%E5%84%B2%E5%B1%807%E6%9C%88%E8%AD%B0%E6%81%AF%E7%B4%80%E9%8C%84%E6%94%BE%E9%B7%B9-3%E5%AE%98%E5%93%A1%E6%8A%95%E5%8F%8D%E5%B0%8D%E7%A5%A8%E6%92%90%E5%8A%A0%E6%81%AF-%E6%83%9F%E7%B6%93%E6%BF%9F%E8%BD%89%E5%BC%B1-9%E6%9C%88%E5%8A%A0%E6%81%AF%E6%A9%9F%E7%8E%87%E9%99%8D%E8%87%B336",
-      "pubDate": "2026-08-20 02:50:11",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/f477008a523902d229dcc32d55e3a0cd/2026-08/KF_-_2026-08-20T104854_871.png",
+      "id": "4419798c7cf47c245359fa30e2cdffe9",
+      "title": "「積金易」一眼看清多個計劃 是否就不需要整合強積金?",
+      "description": null,
+      "link": "https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1048331/-%E7%A9%8D%E9%87%91%E6%98%93-%E4%B8%80%E7%9C%BC%E7%9C%8B%E6%B8%85%E5%A4%9A%E5%80%8B%E8%A8%88%E5%8A%83-%E6%98%AF%E5%90%A6%E5%B0%B1%E4%B8%8D%E9%9C%80%E8%A6%81%E6%95%B4%E5%90%88%E5%BC%B7%E7%A9%8D%E9%87%91-",
+      "pubDate": "2026-08-20 11:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048331/article/1048331/df/01M0EQFZXD1FKARET7B44HY9D9.jpg?updatedAt=1787223021",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8f6d0cb5ec0197f626fc0ef378ec3d92",
+      "title": "深圳好去處|PINGU企鵝45周年「南極奇境」展覽 免費入場!必影巨型打卡位+限定聯名周邊",
+      "description": "深圳好去處 !陪伴無數人成長的經典動畫角色 PINGU 迎來45歲生日!由即日起至10月18日,深圳萬象天地限定舉行「PINGU 南極奇境」特展,邀請全球45位藝術家為PINGU企鵝注入全新創意。展覽不僅帶來深圳首次亮相的藝術家聯名限定周邊,更設有多個還原動畫場景的大型立體雕塑與創意打卡牆,粉絲必睇!",
+      "link": "https://www.am730.com.hk/%E7%94%9F%E6%B4%BB/1048546/%E6%B7%B1%E5%9C%B3%E5%A5%BD%E5%8E%BB%E8%99%95-pingu%E4%BC%81%E9%B5%9D45%E5%91%A8%E5%B9%B4-%E5%8D%97%E6%A5%B5%E5%A5%87%E5%A2%83-%E5%B1%95%E8%A6%BD-%E5%85%8D%E8%B2%BB%E5%85%A5%E5%A0%B4-%E5%BF%85%E5%BD%B1%E5%B7%A8%E5%9E%8B%E6%89%93%E5%8D%A1%E4%BD%8D-%E9%99%90%E5%AE%9A%E8%81%AF%E5%90%8D%E5%91%A8%E9%82%8A",
+      "pubDate": "2026-08-20 11:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048546/article/1048546/df/01M0F3T998RE78V3F421QHR8AV.jpg?updatedAt=1787214501",
+      "keywords": null,
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bcaf6de95079a8ac9679be99980222df",
+      "title": "德國盃首圈賽事或受阻 球迷擬發起大型抗議反對VAR",
+      "description": "德國盃首圈賽事本周末或會受阻,多個球迷團體計劃發起大型抗議,反對在賽事期間使用視像技術。 德國足球賽季將於周五展開,德甲球隊法蘭克福及史特加將會迎戰低組別球隊,而首圈賽事將持續至周末及周一。 由於技術及財政原因,首圈賽事涉及64支球隊,裁判將不會獲得視像輔助。不過,視像助理裁判(VAR)將於第二圈賽事首次引入。 德新社周四發布一份據稱在球迷之間流傳的聲明,表明他們抗議的意圖。 聲明指出:「我們看到德國盃首圈賽事正以其應有的方式進行——沒有視像助理裁判,因此真實、即時、充滿情感。我們希望永久恢復這種狀態,因此呼籲廢除德國足球的視像助理裁判(VAR)。」 聲明續指:「足球憑藉強度與節奏蓬勃發展,但賽事流程因長時間中斷而嚴重受損。我們亦痛苦地意識到它破壞了比賽中最激動人心的時刻。即使最初對這項創新持開放及正面態度的球迷,經過九年後亦承認,視像助理裁判已徹底改變了比賽的性質。」 德國球迷過往曾使用網球或煙花中斷賽事。上季德國盃決賽便在球迷煙花造成的煙霧籠罩下進行。 今季在德國,裁判的視像助理權力將會擴大。若球員因不合理地領取第二張黃牌而被罰離場,他們可以介入;若裁判錯誤地向球員發出警告或將其罰離場,他們亦可以糾正。然而,與世界盃不同,視像助理裁判不會介入錯誤判罰的角球。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16607315-%E5%BE%B7%E5%9C%8B%E7%9B%83%E9%A6%96%E5%9C%88%E8%B3%BD%E4%BA%8B%E6%88%96%E5%8F%97%E9%98%BB-%E7%90%83%E8%BF%B7%E6%93%AC%E7%99%BC%E8%B5%B7%E5%A4%A7%E5%9E%8B%E6%8A%97%E8%AD%B0%E5%8F%8D%E5%B0%8Dvar",
+      "pubDate": "2026-08-20 10:58:48",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/233085ce7e06048dc17f81c4fc3ee60f_Germany_VAR_Protests_7198__FB.jpg",
       "keywords": [
-        "fed",
-        "聯儲局"
+        "足球",
+        "德國足球",
+        "體育",
+        "德國盃",
+        "球迷抗議",
+        "var"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5a2f08629dc584d54a0d61b56f8bd05c",
+      "title": "工信部再次批覆開展衛星物聯網業務商用試驗",
+      "description": "中評社北京8月20日電/新華社報導,記者20日獲悉,工業和信息化部日前批覆浙江時空道宇科技有限公司開展衛星物聯網業務商用試驗,試驗期為兩年。這是衛星物聯網業務進一步擴大向民營開放的重要舉措。 商用試驗期間,時空道宇可依法試點經營衛星物聯網業務,依託“吉利未來出行星座(一期)”為用戶提供廣覆蓋、低功耗、高可靠的物聯網連接服務,在智慧交通、海洋漁業、能源水利等領域實現全天候、智能化的數據",
+      "link": "http://www.crntt.com/doc/7_0_107225993_1_0820185810.html",
+      "pubDate": "2026-08-20 10:58:10",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bc1aaea8e15d9cef64ba02916d06a4b5",
+      "title": "伟立瑞®在华获批用于治疗成人和1月龄及以上儿童阵发性睡眠性血红蛋白尿症(PNH)患者",
+      "description": "8 周一次给药,为成人和 1 月龄及以上儿童 PNH 患者带来长效治疗选择 上海 2026年8月20日 /美通社/ -- 阿斯利康罕见病业务旗下的长效C5补体抑制剂伟立瑞 ® (英文商品名:Ultomiris ® ,通用名:瑞利珠单抗注射液),已获得中国国家药品监督管理局(NMPA)批准,用于成人和1月龄及以上儿童阵发性睡眠性血红蛋白尿症(PNH)患者的治疗。 此次获批是基于三项全球III期(ALXN1210-PNH-301,ALXN1210-PNH-302,ALXN1210-PNH-304)及一项中国III期(ALXN1210-PNH-323)临床研究的综合结果,显示了瑞利珠单抗在PNH成人和儿童患者中的疗效与安全性。相关研究结果分别发表于《Blood》杂志( ALXN1210-PNH-301 , ALXN1210-PNH-302 ) [1] , [2] 和《Blood Advances》杂志( ALXN1210-PNH-304 ) [3] 。 PNH是一种慢性、进行性且危及生命的血液系统罕见疾病。该疾病好发于青壮年,77%的PNH患者在20-40岁发病 [4] 。PNH的临床主要表现为补体介导的血管内溶血、潜在的造血功能衰竭以及血栓形成倾向等,从而导致器官损伤甚至死亡 [4] 。结合PNH患病率特征,预计中国PNH患者约16000例,目前已被纳入我国《第一批罕见病目录》 [5] 。 北京协和医院血液内科主任医师,中国III期临床研究主要研究者韩冰教授 表示:\"PNH是一种由补体系统末端通路异常激活驱动的罕见血液疾病,可引发血管内溶血、血栓及多器官损伤,严重影响患者的生存与生活质量。C5补体抑制剂作为PNH治疗的重要基石,通过持续抑制末端补体活化,显著改善了患者的临床结局。此次瑞利珠单抗获批,为成人及儿童PNH患者带来了兼具长效性、稳定性和便利性的治疗选择,可实现快速、完全且持续的终末补体抑制。此次获批基于全球III期研究及中国患者临床研究所积累的循证医学证据。令人欣喜的是,中国8家研究中心在患者入组、临床研究及证据生成方面作出了重要贡献,为这一治疗方案惠及中国患者提供了坚实支撑。\" 阿斯利康全球高级副总裁、全球研发中国负责人何静博士 表示:\"此次瑞利珠单抗PNH适应症的获批,为中国PNH患者提供了一种疗效确切、安全性良好、应答持久且更为便捷的治疗选择,也意味着PNH治疗迈入了一个新的阶段。未来,我们将继续加大在罕见病领域的研发投入,携手各方加速创新药物研发与可及,为中国患者带来更多创新治疗选择。\" 阿斯利康中国副总裁,罕见病事业部负责人胡轶清 表示:\"继瑞利珠单抗此前在中国获批用于治疗全身型重症肌无力(gMG)和视神经脊髓炎谱系疾病(NMOSD)后,此次PNH适应症的获批,为中国罕见病患者带来了又一具有里程碑意义的重要进展。PNH患者多处于青壮年时期,长效治疗有望帮助患者减轻疾病与频繁治疗带来的负担。随着补体科学不断突破,阿斯利康将持续拓展创新产品组合,为更多补体介导疾病患者带来新的治疗选择。\" 全球III期ALXN1210-PNH-301,ALXN1210-PNH-302临床研究在 成人PNH患者 中证实,瑞利珠单抗可快速、完全且持续抑制C5,控制血管内溶血,降低并发症风险 [1] ,[ 2] ;且突破性溶血发生率及严重程度低 [6] 。已发表的6年随访数据进一步证实疗效可维持,安全性与既往已知特征一致 [7] 。 中国III期ALXN1210-PNH-323纳入18例补体抑制剂初治 成人患者 。研究结果显示,瑞利珠单抗在主要疗效终点上达到具有统计学显著性且临床意义的改善,即第26周时乳酸脱氢酶(LDH)水平较基线平均下降81.3%(95% CI:-84.2%,-78.3%; p<0.001)。此外,在纠正贫血,改善输血依赖及提高生活质量等方面观察到临床获益。 全球III期ALXN1210-PNH-304临床研究在 儿童PNH患者 中显示,瑞利珠单抗在26周主要评价期及4年延长期可实现快速、完全且持续的C5补体抑制,并有效控制补体介导的血管内溶血,促进LDH水平下降并维持改善 [3] 。此外,在主要评价期内,未报告治疗相关严重不良事件,无患者停药,也无患者发生突破性溶血 [3] 。 在所有研究中,瑞利珠单抗的安全性表现与其已知安全性特征一致,在长期随访中未发现新的安全性信号 [3] ,[ 7] 。 目前,瑞利珠单抗在中国、美国、欧盟、日本等国家和地区获批用于治疗特定的阵发性睡眠性血红蛋白尿症(PNH)的成人及儿童患者,并在全球多个国家和地区获批多项适应症。",
+      "link": "https://www.prnasia.com/story/544691-1.shtml",
+      "pubDate": "2026-08-20 10:58:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "hea",
+        "pha",
+        "mtc",
+        "tri",
+        "bio"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "65ed417701aa40de9a537a7cea8232e4",
+      "title": "日本將於10月20日發射火星衛星探測器",
+      "description": "中評社香港8月20日電/共同社報導,日本宇宙航空研究開發機構(JAXA)20日就火星衛星探測計劃“MMX”發佈消息稱,10月20日清晨4點41分將從鹿兒島縣的種子島宇宙中心,使用H3火箭10號機把將從“火衛一”(Phobos)採集沙礫等樣本帶回地球的探測器發射升空。這將是全球首次嘗試。探測器計劃在2031年度返回地球。 MMX是一項國際共同項目,目標是探尋火星衛星的起源,獲取太空探索",
+      "link": "http://www.crntt.com/doc/7_0_107225994_1_0820185728.html",
+      "pubDate": "2026-08-20 10:57:28",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "807a2088167d46545010e541f3b3a0af",
+      "title": "載通(00062)中期純利2520萬港元跌86.74% 不派息",
+      "description": "<匯港通訊> 載通國際控股有限公司(00062)公布截至2026年6月30日止中期業績:股東應佔溢利: 2520萬港元, 同比跌 86.74% (去年同期純利1.9億港元)每股盈利: 0.05港元派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E8%BC%89%E9%80%9A-00062-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A92520%E8%90%AC%E6%B8%AF%E5%85%83%E8%B7%8C86-74-%E4%B8%8D%E6%B4%BE%E6%81%AF-105723496.html",
+      "pubDate": "2026-08-20 10:57:23",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "載通國際控股有限公司"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1a9053e62769a047815cf85a47c9eba3",
+      "title": "雍禾醫療(02279)中期純利7552萬元人民幣升170.56% 不派息",
+      "description": "<匯港通訊> 雍禾醫療集團有限公司(02279)公布截至2026年6月30日止中期業績:股東應佔溢利: 7552.1萬元人民幣, 同比升 170.56% (去年同期純利2791.3萬元人民幣)每股盈利: 0.15元人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E9%9B%8D%E7%A6%BE%E9%86%AB%E7%99%82-02279-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A97552%E8%90%AC%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3%E5%8D%87170-56-%E4%B8%8D%E6%B4%BE%E6%81%AF-105620120.html",
+      "pubDate": "2026-08-20 10:56:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "人民幣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "edbaab0765d010cc03da0ac4291feecd",
+      "title": "泡泡瑪特(09992)半年經調整盈利升9.5% 毛利率降至69.7%",
+      "description": "<匯港通訊> 泡泡瑪特(09992)半年業績,公司擁有人應佔溢利50.38億人民幣,經調整純利 51.558億元人民幣,同比升9.5%。期內收益同比升23.8%至171.7元人民幣,毛利119.657億元人民幣,升幅22.6%,經營溢利67.247億元人民幣,同比升11.3%。毛利率由2025年上半年的70.3%...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B3%A1%E6%B3%A1%E7%91%AA%E7%89%B9-09992-%E5%8D%8A%E5%B9%B4%E7%B6%93%E8%AA%BF%E6%95%B4%E7%9B%88%E5%88%A9%E5%8D%879-5-%E6%AF%9B%E5%88%A9%E7%8E%87%E9%99%8D%E8%87%B369-105412628.html",
+      "pubDate": "2026-08-20 10:54:12",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1038243656266320001e932a292c3f88",
+      "title": "市場傳聞:Google及Salesforce支持衛星初創Muon Space完成2.5億美元融資",
+      "description": "據彭博周四引述公司聲明報道,Alphabet旗下Google(GOOG.US)(GOOGL.US)及Salesforce(CRM.US)支持衛星初創Muon Space進行2.5億美元C輪融資,該輪融資由Eclipse Capital領投。 公司表示,至今已累計籌集超過3.86億美元股本融資。Muon已發射11枚...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%B8%82%E5%A0%B4%E5%82%B3%E8%81%9E-google%E5%8F%8Asalesforce%E6%94%AF%E6%8C%81%E8%A1%9B%E6%98%9F%E5%88%9D%E5%89%B5muon-space%E5%AE%8C%E6%88%902-5%E5%84%84%E7%BE%8E%E5%85%83%E8%9E%8D%E8%B3%87-105234435.html",
+      "pubDate": "2026-08-20 10:52:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "eclipse capital領投",
+        "muon",
+        "alphabet旗下google"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "06d34d7d9979092f487dddc73e1c685b",
+      "title": "Nordson上調2026財年展望 第三季業績勝預期受需求強勁帶動",
+      "description": "精密科技公司Nordson(NDSN.US)周四早段股價上升,公司在主要終端市場需求增長帶動下,上調全年展望,並公布2026財年第三季業績優於預期。 公司周三晚表示,現預期2026財年經調整每股盈利介乎11.80美元至12美元,高於此前預測的11.30美元至11.80美元。收入預料介乎30.4億美元至30.8億美...",
+      "link": "https://hk.finance.yahoo.com/news/nordson%E4%B8%8A%E8%AA%BF2026%E8%B2%A1%E5%B9%B4%E5%B1%95%E6%9C%9B-%E7%AC%AC%E4%B8%89%E5%AD%A3%E6%A5%AD%E7%B8%BE%E5%8B%9D%E9%A0%90%E6%9C%9F%E5%8F%97%E9%9C%80%E6%B1%82%E5%BC%B7%E5%8B%81%E5%B8%B6%E5%8B%95-105203448.html",
+      "pubDate": "2026-08-20 10:52:03",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "全年展望",
+        "市場需求",
+        "每股盈利"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e29b72f995203a302a224c5ce04b4892",
+      "title": "中國平安中期淨利潤升36%增派息 新業務價值達升11%",
+      "description": "中國平安(2318)公布中期業績,期內淨利潤925.85億元(人民幣,下同),按年增長36.1%;派中期股息每股0.98元,按年增長3.2%。平保表示,上半年壽險及健康險業務新業務價值達成248.47億元,按年增長11.2% 壽險及健康險業務新業務價值按年增逾一成 期內,營業收入6153.51億元,按年增長12.6%;營運利潤841.96億元,按年增長8.3%。中國平安指,持續推進分紅型產品轉型,",
+      "link": "https://www.stheadline.com/stock-market/3606484/%E4%B8%AD%E5%9C%8B%E5%B9%B3%E5%AE%89%E4%B8%AD%E6%9C%9F%E6%B7%A8%E5%88%A9%E6%BD%A4%E5%8D%8736%E5%A2%9E%E6%B4%BE%E6%81%AF-%E6%96%B0%E6%A5%AD%E5%8B%99%E5%83%B9%E5%80%BC%E9%81%94%E5%8D%8711",
+      "pubDate": "2026-08-20 10:51:22",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d23d2febbbb359d426eb95513ea44798/2026-08/KF__ricki_-_2026-08-20T181613_187.png",
+      "keywords": [
+        "中國平安",
+        "高息股",
+        "內險",
+        "平保"
       ],
       "category": [
         "business",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "af50c205dc84db6602b9ae63714a8adc",
-      "title": "美國公共債務首次突破40萬億美元 「厄運循環」風險升溫",
-      "description": "【彭博】-- 美國公共債務總額首次突破40萬億美元,在不到五年間激增了三分之一。儘管各界不斷呼籲解決居高不下的財政赤字問題,但美國議員依然對此置之不理。美國財政部周三公佈的數據顯示,到周二結束時,美國未償公共債務總額達到40.05萬億美元。這一消息公佈前數小時,美國財政部長斯科特·貝森特再次試圖遏制長期借貸成本攀...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E5%85%AC%E5%85%B1%E5%82%B5%E5%8B%99%E9%A6%96%E6%AC%A1%E7%AA%81%E7%A0%B440%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83-%E5%8E%84%E9%81%8B%E5%BE%AA%E7%92%B0-%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%BA%AB-212431091.html",
-      "pubDate": "2026-08-19 21:24:31",
+      "id": "3dc7bd50eb7099a42f99991f46f643d8",
+      "title": "中電信(00728):下半年資本開支佔收入比會降低",
+      "description": "<匯港通訊> 中國電信(00728.HK)上半年資本開支為324億元人民幣(下同),按年下跌5%,當中算力網為154億元,按年增97%,佔比48%,上升24.6百分點。中電信執行董事、董事長兼首席執行官柯瑞文於半年業績發佈會表示,集團下半年資本開支佔收入比會降低,以保持資金的靈活性及彈性。中電信中期息每股派0.1...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E9%9B%BB%E4%BF%A1-00728-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E8%B3%87%E6%9C%AC%E9%96%8B%E6%94%AF%E4%BD%94%E6%94%B6%E5%85%A5%E6%AF%94%E6%9C%83%E9%99%8D%E4%BD%8E-104935384.html",
+      "pubDate": "2026-08-20 10:49:35",
       "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/6e568ca0cdccd8f698790a3802b19ac0.jpg",
-      "keywords": [
-        "美國財政部"
-      ],
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "d9eac56d0769dc5e29b84408b7330a64",
-      "title": "Moderna與默沙東公布黑色素瘤藥物第三期試驗正面結果 Moderna股價急升逾100%",
-      "description": "Moderna(MRNA.US)與默沙東(MRK.US)周三表示,一項實驗性皮膚癌療法的後期試驗錄得正面初步結果,帶動兩家公司股價上升,其中Moderna急升逾100%。 第三期試驗評估intismeran與默沙東Keytruda聯合使用,相較單獨使用Keytruda,對高風險已切除皮膚黑色素瘤患者的安全性及療效...",
-      "link": "https://hk.finance.yahoo.com/news/moderna%E8%88%87%E9%BB%98%E6%B2%99%E6%9D%B1%E5%85%AC%E5%B8%83%E9%BB%91%E8%89%B2%E7%B4%A0%E7%98%A4%E8%97%A5%E7%89%A9%E7%AC%AC%E4%B8%89%E6%9C%9F%E8%A9%A6%E9%A9%97%E6%AD%A3%E9%9D%A2%E7%B5%90%E6%9E%9C-moderna%E8%82%A1%E5%83%B9%E6%80%A5%E5%8D%87%E9%80%BE100-173937527.html",
-      "pubDate": "2026-08-19 17:39:37",
+      "id": "c90121b5c9475b29130ffeb3af226dc1",
+      "title": "英國王室|哈里梅根傳欲放售加州豪宅 因還按揭及交稅開銷大",
+      "description": "英王查理斯三世(King Charles III)幼子哈里王子(Prince Harry)及夫人梅根(Meghan Markle)8月將返回英國定居,美媒指兩人計劃放售名下位於加州的豪宅,因其按揭貸款...",
+      "link": "https://inews.hket.com/article/4179950",
+      "pubDate": "2026-08-20 10:49:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4179950/21chk008__1024_1_300.jpg",
+      "keywords": [
+        "美國",
+        "查理斯",
+        "梅根王妃",
+        "哈里王子",
+        "加利福尼亞",
+        "英國",
+        "皇室",
+        "海外物業"
+      ],
+      "category": [
+        "world"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "896048a5434e7d2c8d29283cf344d40e",
+      "title": "Bybit強化安全防禦體系,應對不斷演變的加密貨幣威脅,半年攔截7億美元潛在用戶損失",
+      "description": "在2025年安全事件發生後,Bybit的2026年上半年報告詳細披露了擴展後的賬戶保護機制、100%鏈上監控體系及AI輔助威脅探測能力 阿聯酋迪拜2026年8月20日 /美通社/ -- 作為全球交易量第二大的加密貨幣交易所,Bybit在2025年2月發生約14.6億美元數字資產被盜事件後,全面強化並擴展自身安全體系,轉向一套新的防護模式,該模式可以實現更早威脅發現、更快響應處置,還能在攻擊者運用包括人工智能(AI)在內的新技術時持續迭代適配。...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/bybit7-302856331.html",
+      "pubDate": "2026-08-20 10:47:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1971655/Bybit-Updated-Logo_18-Aug-2026.jpg?id=OA2894241&p=original",
+      "keywords": [
+        "bybit"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e21cd0b90524ac88f65e771f493dfcaf",
+      "title": "柏傲莊III加推5伙高層兩房戶 入場價1172萬|大圍新盤",
+      "description": null,
+      "link": "https://www.am730.com.hk/%E5%9C%B0%E7%94%A2/1048592/%E6%9F%8F%E5%82%B2%E8%8E%8Aiii%E5%8A%A0%E6%8E%A85%E4%BC%99%E9%AB%98%E5%B1%A4%E5%85%A9%E6%88%BF%E6%88%B6-%E5%85%A5%E5%A0%B4%E5%83%B91172%E8%90%AC-%E5%A4%A7%E5%9C%8D%E6%96%B0%E7%9B%A4",
+      "pubDate": "2026-08-20 10:45:31",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-06/1048592/article/1048592/df/01KTPDPSY836KXMYPQ888YZ0WQ.jpg?updatedAt=1787222731",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dda221fcead068fc1c9fcee5265168ed",
+      "title": "東京地鐵站酒店32間|望晴空塔/有露台/親子友善/人均$178起",
+      "description": "東京地鐵站酒店推介2026|東京近年有不少新景點及商場全新開幕,例如哈利波特影城、東京澀谷SHIBUYA SKY及歌舞伎町Tower等,適合打卡之外,附近亦",
+      "link": "https://www.hk01.com/%E6%97%85%E9%81%8A/950732/%E6%9D%B1%E4%BA%AC%E5%9C%B0%E9%90%B5%E7%AB%99%E9%85%92%E5%BA%9732%E9%96%93-%E6%9C%9B%E6%99%B4%E7%A9%BA%E5%A1%94-%E6%9C%89%E9%9C%B2%E5%8F%B0-%E8%A6%AA%E5%AD%90%E5%8F%8B%E5%96%84-%E4%BA%BA%E5%9D%87-178%E8%B5%B7",
+      "pubDate": "2026-08-20 10:45:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20240924/915318767020412928263701.jpeg/VaTluD1Hzy9p47ktx9ZnViFKDHmtluVLBTBtBgUwbQY",
+      "keywords": [
+        "網絡媒體",
+        "香港零一",
+        "新聞",
+        "香港媒體",
+        "香港01",
+        "香港新聞",
+        "網上媒體",
+        "香港傳媒",
+        "于品海",
+        "hk01"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "008c8e0976e64ee6dc06a01fa78e68e4",
+      "title": "8月夜期最新報25692點 跌3點",
+      "description": "<匯港通訊> 8月夜期期指最新報25692點,跌3點,低水6點;9月夜期期指報25610點,跌22點,低水88點。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%9C%80%E6%96%B0%E5%A0%B125692%E9%BB%9E-%E8%B7%8C3%E9%BB%9E-104504459.html",
+      "pubDate": "2026-08-20 10:45:04",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "默沙東",
-        "keytruda",
-        "黑色素瘤"
+        "<匯港通訊>"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "8cbef08208cd6eaaa2c9ef3ac9fde193",
-      "title": "【提振內房】上海樓市新政:增公積金提取頻次和限額、降二套房首付比例、推最高8萬元換房補貼",
-      "description": "《經濟通通訊社20日專訊》為更好滿足居民剛性和改善性住房需求,促進房地產市場平穩 健康發展,上海市住房城鄉建設管理委、市房屋管理局、市財政局、人民銀行上海市分行、上海 金融監管局、市公積金管理中心等六部門今日聯合印發《關於優化該市房地產政策措施的通知》 (下稱《通知》),自2026年8月21日起施行。《通知》主要包括優化住房公積金提取、 優化個人住房信貸、實施「以舊換新」購房補貼、推行房票",
-      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360820843",
-      "pubDate": "2026-08-20 04:58:00",
-      "source_name": "Etnet",
-      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "id": "2e459db68e67d4c47156d8bb77cc2350",
+      "title": "美車市恐萎縮200萬輛!消費習慣大變",
+      "description": "中評社香港8月20日電/美國汽車市場正面臨結構性萎縮危機,貝恩策略顧問公司預估,受到人口成長放緩、消費習慣改變及自動駕駛逐漸普及等因素影響,2040年美國新車銷量可能減少約200萬輛。然而,新車銷售疲軟之際,汽車經銷商卻在維修零件與延長保固業務中找到新的獲利來源,因為美國人把車愈開愈久,相關需求持續攀升。 TVBS據美國CNBC報導,美國今年新車銷量預計比10年前巔峰時期減少約150",
+      "link": "http://www.crntt.com/doc/7_0_107225990_1_0820184100.html",
+      "pubDate": "2026-08-20 10:41:00",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1dd06c33c9c2db2b36289454c9012e03",
+      "title": "港鐵夥機管局測自動車 穿梭西九龍至九龍站 首日市區路測表現穩定",
+      "description": "百度自動駕駛平台蘿蔔快跑 8 月 19 日起在香港西九龍站與機場快綫九龍站之間展開路面測試,是香港首個由大型公 [...]",
+      "link": "https://unwire.hk/2026/08/20/apollogo-mtr-airport-shuttle/life-tech/auto/",
+      "pubDate": "2026-08-20 10:40:38",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/778935661_4497182557.jpg",
       "keywords": [
-        "latest"
+        "自動駕駛",
+        "智慧城市",
+        "百度",
+        "人工智能",
+        "港鐵",
+        "汽車科技",
+        "蘿蔔快跑",
+        "uber"
       ],
       "category": [
-        "business"
+        "technology"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "b5cc585448f879f9ea727a73108b7e93",
+      "title": "全球球迷聯署促國際足協主席因凡蒂諾辭職 斥圖出售世界盃利潤為「背叛」",
+      "description": "全球各地多個足球球迷團體周四發起聯署,呼籲國際足協主席詹尼·因凡蒂諾辭職,指他曾試圖將未來世界盃利潤出售予私人投資者。 這次聯署以標籤「InfantinOut」為號召,同時呼籲「重建國際足協,避免現時的慘況再次發生」。聯署聲明指出:「單一人物,即國際足協主席本人,試圖將世界盃出售予私人投資者的可恥行為,揭示了足球界永誌不忘的背叛。」因凡蒂諾的商業分拆計劃,最終在強烈反彈下放棄。 參與聯署的球迷團體包括歐洲足球支持者、非洲足球支持者、北美洲獨立支持者委員會,以及全球約40個國家級球迷團體。 因凡蒂諾一直拒絕辭職的呼籲,儘管歐洲足協表明對他失去信心。他亦受到北美洲及加勒比海足球協會(CONCACAF)和亞洲足球協會領導層的批評。 球迷聯署聲明表示:「詹尼·因凡蒂諾已證明嚴重領導失誤,與民主管治不符。權力集中於國際足協主席一職,加上不透明的決策過程、個人崇拜式的裙帶關係,以及零問責制,已摧毀了外界對這個世界管理機構僅存的信任。」聯署補充:「為了國際足協的信譽,以及足球運動的未來,他必須辭職。」 聯署亦提及因凡蒂諾過往支持一些激怒球迷的項目,包括失敗的歐洲超級聯賽計劃,以及推動每兩年舉辦一次世界盃。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16607297-%E5%85%A8%E7%90%83%E7%90%83%E8%BF%B7%E8%81%AF%E7%BD%B2%E4%BF%83%E5%9C%8B%E9%9A%9B%E8%B6%B3%E5%8D%94%E4%B8%BB%E5%B8%AD%E5%9B%A0%E5%87%A1%E8%92%82%E8%AB%BE%E8%BE%AD%E8%81%B7-%E6%96%A5%E5%9C%96%E5%87%BA",
+      "pubDate": "2026-08-20 10:39:51",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/aa25d658091045debb190e13e9bb5140_APTOPIX_Colombia_Inauguration_81526_FB.jpg",
+      "keywords": [
+        "球迷聯署",
+        "世界盃",
+        "因凡蒂諾",
+        "體育",
+        "國際足協",
+        "足球"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8a4fd99217e3078fcace3b19ec2a001b",
+      "title": "富士胶片亮相BIRTV2026 赋能超高清影像多场景落地",
+      "description": "上海 2026年8月20日 /美通社/ -- 2026年8月19日至22日,第33届北京国际广播电影电视展览会(BIRTV2026)在北京•中国国际展览中心(朝阳馆)举办。富士胶片(中国)投资有限公司于8B06展位亮相,呼应展会\"全媒体 超高清 强智能\"主题,展示了品牌融合近百年前沿光学技术与色彩管理科学的多元化影视制作解决方案,覆盖电影制作、广播电视、短视频创作等多样化应用场景。 步入展台,首先映入眼帘的是经典的FUJIFILM ETERNA系列电影胶片。自1934年创立以来,胶片便是富士胶片集团的光影技术起点,而如今,这一经典之名也被赋予FUJIFILM GFX ETERNA 55中画幅电影摄影机,象征着光学技术的传承与延伸。展台核心区域以\"深夜食堂\"为主题打造沉浸式影棚,周围环绕多组视频机位。参观者可现场上手试拍体验,还可配合现场的导演监视器,实时感受不同机位下的画面效果。 GFX ETERNA 55电影机:电影感创作的多面手 本次展出的GFX ETERNA 55是富士胶片首款电影级中画幅摄影机,搭载比全画幅更大的传感器,面积约为35mm全画幅传感器的1.7倍。这不仅带来宽广的动态范围与更高的信噪比,更能营造出独特的浅景深与柔美焦外虚化,呈现更具感染力的电影感画面。作为IMAX®认证 * 1 体系的成员之一,它成功将中画幅高达1.02亿像素的静态图像解析力引入了动态影像领域。 GFX ETERNA 55的适用场景十分灵活——既可作为电影级主机位用于影视创作,也可接入多机位讯道系统,在广电级实时制作中输出电影质感的画面。其内置了富士胶片经典的胶片模拟模式,无需后期调色即可直出电影感画面,为内容创作者提供了从电影拍摄到广电制作的跨场景创作自由。 GFX ETERNA 55 Duvo系列电影变焦镜头:以HZK25-1000树立现场制作新标杆 \"Duvo\"一词源自拉丁语Duo(双重)与Vivo(现场)的组合,代表了该系列\"兼具电影与广播镜头的双重特质\"、\"兼容电影摄影机两大主流大型传感器\"的设计理念,为万众瞩目的现场影像制作而生。 富士胶片旗下Duvo系列电影变焦镜头包含\"HZK25-1000mm\"、\"HZK24-300mm\"、\"HZK14-100mm\",其中\"HZK25-1000mm\"是该系列的标杆之作。三款镜头覆盖了从14mm-1000mm的广阔焦段,且能营造出电影般柔和的背景虚化效果。 Duvo系列电影变焦镜头 在展台的广播电视解决方案区,\"HZK25-1000\"电影变焦镜头与GFX ETERNA 55中画幅电影摄影机搭配成组合,架设在高台上演示远距离拍摄,直观展现了\"中画幅+4K\"在超高清制作中的实际应用能力。两者结合,构成了一套从画质到色彩都带有富士胶片独特风格的电影化制作方案。 “HZK25-1000”电影变焦镜头与GFX ETERNA 55中画幅电影摄影机组合展示 新品UA22x4.8:填补移动机位焦段空白 如今,广播电视节目制作广泛运用多机位系统,特种移动机位的应用也愈发普及。然而传统镜头存在明显短板:广角镜头无法兼顾远摄能力,长焦镜头又缺失广角视野,焦段断层成为拍摄创作的一大壁垒。在本次展会首次亮相的FUJINON UA22x4.8BERD 4K广播电视变焦镜头(简称UA22x4.8),则填补了这一焦段空白。 UA22x4.8是一款便携式多用途广播电视变焦镜头,具有紧凑轻便的机身及从广角到长焦\"一镜到底\"的变焦范围,适用于新闻采访、演唱会和体育赛事转播等场景。UA22x4.8将广角镜头和标准镜头的光学优势做了融合,使其同时拥有90度的水平视角和22倍的放大倍率,焦距从4.8mm至106mm,打开镜头的2倍镜,可达212mm。这意味着,一支镜头即可同时满足拍摄具有视觉冲击力的广角画面和更紧景别特写画面的需求,为特种移动机位提供了较高的创作自由度。 在富士胶片展台上,还将该镜头与影视机械臂相结合,呈现灵活、可定制的特种拍摄效果,参观者可现场感受这款轻量化4K广播镜头在复杂拍摄场景下的灵活表现。 UA22x4.8广播电视变焦镜头与影视机械臂组合展示 多机位实景演示,全景呈现方案矩阵 围绕\"深夜食堂\"场景影棚,富士胶片共设置了不同高度、不同角度的多个机位,覆盖固定机位、高台机位、斯坦尼康、手持移动机位、竖拍机位与特种设备机位等多种拍摄形态。 由4K广播电视变焦镜头\"FUJINON LA30x7.8BRM-XB2\"(以下简称\"LA30\")组成的竖拍方案,专门适配短视频和社交媒体竖屏内容的创作需求,方便快速产出适合手机观看的视频;GFX ETERNA 55与X-H2S分别搭配不同焦段镜头,并置于同一场景中,参观者可直观对比两种画幅在透视、背景虚化等方面的差异。 此外,展台还设置了静态展示区,集中展出GFX ETERNA 55、GFX 100II系列、X-H2S、X-H2、X-T5、X100VI等数码相机,以及丰富的相机镜头、电影镜头组合,供参观者体验富士胶片数码系统的拍摄实力;同时现场还展出了富士胶片旗下望远镜,其中新品CC 8x20为演唱会等远距离观测场景打造,兼具高质量与性价比。 在2026年度BIRTV推荐活动评选中,富士胶片旗下FUJIFILM GFX ETERNA 55中画幅电影摄影机与FUJINON UA22x4.8BERD 4K广播电视变焦镜头成功入选BIRTV2026产品类推荐项目。这不仅是对其产品实力的认可,也印证了两款产品在影视行业的应用潜力。 富士胶片两款产品入选2026年度BIRTV推荐项目 从1934年的摄影胶片出发,富士胶片积累了丰富的先进光学技术,持续赋能影像、医疗、工业等多元领域。本次展出的多元化影像解决方案及设备矩阵,是公司核心技术在影视行业的集中呈现。未来,富士胶片将继续依托光学设计与色彩科学的深厚积淀,为超高清时代开拓更广阔的应用边界。 *1 IMAX认证数字摄影机是\"Filmed For IMAX ® \"项目的重要组成部分,该项目是一项端到端的合作计划,旨在帮助电影创作者在制作流程的各个环节充分发挥IMAX技术体系的优势,为全球观众带来更加沉浸式的观影体验。",
+      "link": "https://www.prnasia.com/story/544688-1.shtml",
+      "pubDate": "2026-08-20 10:38:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "mlm",
+        "flm",
+        "fvt",
+        "ent"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cf1fa9ee84a77ffbab2cb644a3d481fc",
+      "title": "挺陳幸妤掀鍘美藝術節 台南5天5齣戲加辦桌",
+      "description": "中評社台北8月20日電/民進黨陳水扁女兒陳幸妤自曝離婚後,為聲援陳幸妤,台南蘇姓網友自掏腰包舉辦“2026台南文藝負心運動之鍘美藝術節”,原規畫4場演出,如今再加碼1場。9月18日至22日連續5天登場,集結5個劇團演出“負心”題材戲碼,還規畫復刻25年前陳幸妤歸寧宴、南北辦桌活動,話題持續延燒。 40多歲的蘇姓發起人表示,既然是藝術節,不能讓周六晚上空著,因此再邀請台南本土羅裕誴歌劇",
+      "link": "http://www.crntt.com/doc/7_0_160259363_1_0820183425.html",
+      "pubDate": "2026-08-20 10:34:24",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/160259376.jpg",
+      "keywords": [
+        "陳幸妤",
+        "趙建銘",
+        "台南市"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3ff73037ce8b5ac53c0a56e26a474fe0",
+      "title": "華潤叡璟I成新盤票王!首輪累收逾4.6萬票、超額逾254倍",
+      "description": "新盤票王!華潤置地(1109)西南九龍長沙灣發祥街叡璟 (THE STERLING) 第一期「叡璟I」落實周六(22日)首輪銷售201伙,當中180伙為價單單位。據發",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60381232/%E8%8F%AF%E6%BD%A4%E5%8F%A1%E7%92%9Fi%E6%88%90%E6%96%B0%E7%9B%A4%E7%A5%A8%E7%8E%8B-%E9%A6%96%E8%BC%AA%E7%B4%AF%E6%94%B6%E9%80%BE4-6%E8%90%AC%E7%A5%A8-%E8%B6%85%E9%A1%8D%E9%80%BE254%E5%80%8D",
+      "pubDate": "2026-08-20 10:34:00",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260805/1161697655978463232647189.jpeg/eX4nnNEzdYrDmsisryi-KSGodEYAe5BW2oofk9qKH5M",
+      "keywords": [
+        "地產消息",
+        "港股",
+        "財經網",
+        "財經透視",
+        "hk01",
+        "經濟",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "a股",
+        "財經台",
+        "財經新聞",
+        "恆生指數",
+        "股票"
+      ],
+      "category": [
+        "business",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a328905abb70a63fb3f9bb08a940f93c",
+      "title": "面具怪客凌晨狂追6路人!城警方全面追緝",
+      "description": "中評社香港8月20日電/美國費城近日出現一名詭異的面具怪客,一名身穿黑衣、戴著黑髮白色洋娃娃面具的男子,在清晨時分於市區街頭隨機鎖定路人逼近,甚至一手拿著手機錄影、邊追逐邊逼問對方是否準備好去死,短短半小時內狂追至少6名路人,警方懷疑男子疑似為了拍片衝流量,目前正全面追緝中。 TVBS報導,這名嫌犯身穿黑衣、背著藍黑格紋背包,頭上戴著極其詭異的黑髮白色洋娃娃面具,在費城市政廳周圍的街",
+      "link": "http://www.crntt.com/doc/7_0_107225987_1_0820183225.html",
+      "pubDate": "2026-08-20 10:32:25",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/107225989.jpg",
+      "keywords": null,
+      "category": [
+        "crime",
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "15918ce3d1422481af6c733d5bae1d29",
+      "title": "研究顯示,杜拜警方的各項措施創造了 1.764 億美元的社會價值,並在安全、福祉及經濟方面帶來顯著效益",
+      "description": "阿聯酋迪拜2026年8月20日 /美通社/ -- 一項研究估計,杜拜警察的 80 項社區倡議所產生的社會投資回報率 (SROI) 為 6.479 億迪拉姆(1.764 億美元),反映出這些計劃在 2017 年至 2026 年間,為 380 萬名受惠者創造了更廣泛的社會、經濟及安全價值。 這項由 Future Foresight Centre 進行的研究,檢視了教育、衛生、公眾意識及體育等領域的各項措施,並評估其對安全、經濟及社會成果的貢獻,包括公共安全、犯罪預防、對警方的信任以及生活品質。 該研究發現,經濟與社區貢獻佔總社會回報率 (SROI) 的 5.427...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/-1-764--302856321.html",
+      "pubDate": "2026-08-20 10:31:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1972295/processed-76F359A1-0970-412C-B06C-769D24F09552.jpg?id=OA2900001&p=original",
+      "keywords": [
+        "csr",
+        "svy"
+      ],
+      "category": [
+        "business",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "875b7f5837bff377325c49e1fa89b8f6",
+      "title": "猴痘|39歲男確診 潛伏期曾在泰國與陌生男子高風險接觸",
+      "description": "本港新增一宗猴痘輸入個案。衞生防護中心今日(20日)表示,一名39歲男子本月12日起喉嚨痛、發燒和身體多處地方出現皮疹,求醫後證實對猴痘呈陽性",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60382089/%E7%8C%B4%E7%97%98-39%E6%AD%B2%E7%94%B7%E7%A2%BA%E8%A8%BA-%E6%BD%9B%E4%BC%8F%E6%9C%9F%E6%9B%BE%E5%9C%A8%E6%B3%B0%E5%9C%8B%E8%88%87%E9%99%8C%E7%94%9F%E7%94%B7%E5%AD%90%E9%AB%98%E9%A2%A8%E9%9A%AA%E6%8E%A5%E8%A7%B8",
+      "pubDate": "2026-08-20 10:30:59",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20241202/940331018513158144673948.jpeg/6yFU8-4uPQiV3r1fGAKaaVVySX9XTAFel-rKkJfqypA",
+      "keywords": [
+        "國際新聞",
+        "即時新聞",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "港聞",
+        "頭條新聞",
+        "hk01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "25b924524a34b3234c3d45742d7ad2a7",
+      "title": "OH MY GIRL Mimi出道11年首發單曲 親自包辦詞曲展現真我",
+      "description": "韓國女子組合 OH MY GIRL 成員 Mimi 在出道 11 年後,正式以個人歌手身份展開全新音。其首張個人單曲《Bish Bash Bosh》8月 20 日通過各大線上音源網站同步公開,宣告作為 Solo 藝人的全新起點。 單曲《Bish Bash Bosh》以「準備就緒」、「自我肯定」及「大膽能量」為核心,透過強烈的色彩展現 Mimi 的真正價值。歌曲蘊含著「準備已經結束,現在是時候展現真正的我了」的意思,充分展現她作為獨立藝人站上世界舞台的抱負。為了打造專屬於自己的音樂身份,Mimi 不僅親自參與整首歌曲的全程製作,更一手包辦作詞與作曲,將個人風格融入音樂之中,投入全方位的創作實力。 在音源正式發行前,Mimi 透過 OH MY GIRL 官方社交平台依次公開了預告片,提前展現作為個人藝人的全新面貌。影片中她自由穿梭於多個空間,並以享受 DJ 表演的姿態登場。 View this post on Instagram A post shared by MIMI [...]",
+      "link": "https://www.bastillepost.com/hongkong/article/16606751-oh-my-girl-mimi%E5%87%BA%E9%81%9311%E5%B9%B4%E9%A6%96%E7%99%BC%E5%96%AE%E6%9B%B2-%E8%A6%AA%E8%87%AA%E5%8C%85%E8%BE%A6%E8%A9%9E%E6%9B%B2%E5%B1%95%E7%8F%BE%E7%9C%9F%E6%88%91",
+      "pubDate": "2026-08-20 10:30:27",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260820_EN_MIMI-FB_source-web_.jpg",
+      "keywords": [
+        "mimi",
+        "心韓",
+        "ohmygirl"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a8dfa16ad4c304bfc4da2178ac921d5d",
+      "title": "《牛來》電影|有望在香港上映? 百老匯兩字回應令網民引頸以待",
+      "description": "國產3D動畫電影《牛來》因極度粗糙的畫質、動作生硬且荒謬的劇情,激發全網的獵奇心態意外「反向爆紅」。在零宣傳的情況下空降院線,短短數日內,",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60381977/%E7%89%9B%E4%BE%86-%E9%9B%BB%E5%BD%B1-%E6%9C%89%E6%9C%9B%E5%9C%A8%E9%A6%99%E6%B8%AF%E4%B8%8A%E6%98%A0-%E7%99%BE%E8%80%81%E5%8C%AF%E5%85%A9%E5%AD%97%E5%9B%9E%E6%87%89%E4%BB%A4%E7%B6%B2%E6%B0%91%E5%BC%95%E9%A0%B8%E4%BB%A5%E5%BE%85",
+      "pubDate": "2026-08-20 10:30:24",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167132755218141184597641.jpeg/uHo0vwZMeuvriYnKxXNP6kyBXYnls_BBNOmZ1TTpmdU",
+      "keywords": [
+        "電影",
+        "經典電影",
+        "睇戲",
+        "港產片",
+        "香港01",
+        "影評",
+        "外語片"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "86b9fddcb08bb9db900c3d410222a151",
+      "title": "Qnity安裝KLA檢測系統 加速先進半導體材料創新",
+      "description": "Qnity電子公司今日宣布,已安裝KLA的Surfscan SP7 XP未圖案晶圓缺陷檢測系統。這次安裝是公司持續投資先進半導體材料創新的一部分,旨在加強Qnity開發及製造尖端材料的能力,並深化過程洞察力,以支援客戶的技術發展藍圖。 Qnity半導體技術副總裁Julia Woertink指出:「開發用於先進半導體技術的突破性材料,需要在開發及製造的每個階段,深入了解其性能及質量。透過加強我們對質量的理解及控制,我們可以協助客戶更有信心及更快地推進至更先進的節點。」 Surfscan SP7 XP系統安裝於Qnity位於麻省馬爾堡的新英格蘭製造及技術中心。這是公司更廣泛投資策略的一部分,旨在支援其全球網絡的先進半導體創新。該系統擴展了Qnity的特性分析及過程控制能力生態系統,協助團隊在材料開發及整合的早期階段,識別變異來源。 在先進節點中,即使是微小缺陷亦可能影響設備性能。因此,改進對產品及過程變異的理解,有助於Qnity及其客戶加快過程學習及規模化。Qnity這次最新投資,支援先進光刻材料的開發及可靠製造,包括用於氟化氬光刻的Epic光刻膠系列、用於極紫外光刻的Eon光刻膠系列,以及相關的底層材料。 KLA總經理James Seale表示:「Qnity對Surfscan SP7 XP系統的投資,反映了半導體價值鏈中對特性分析及過程控制日益增長的重視。過程認證、監測及缺陷特性分析,是先進半導體應用所需質量及可靠性的關鍵推動因素。」 Qnity是半導體價值鏈中的領先技術供應商,為人工智能、高效能運算及先進連接提供支援。從半導體晶片製造的突破性解決方案,到複雜電子系統內的高速傳輸,Qnity的高性能材料及整合專業知識,令未來的技術成為可能。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16607257-qnity%E5%AE%89%E8%A3%9Dkla%E6%AA%A2%E6%B8%AC%E7%B3%BB%E7%B5%B1-%E5%8A%A0%E9%80%9F%E5%85%88%E9%80%B2%E5%8D%8A%E5%B0%8E%E9%AB%94%E6%9D%90%E6%96%99%E5%89%B5%E6%96%B0",
+      "pubDate": "2026-08-20 10:30:16",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/aef3b045c0014f249078e90483701410_Picture1_FB.jpg",
+      "keywords": [
+        "kla",
+        "材料創新",
+        "晶圓檢測",
+        "qnity",
+        "商業事",
+        "半導體"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "148395f8dbd80cb70a256969b3ef6d1c",
+      "title": "張柏芝攜7歲細仔出海滑水 1日狂發55條IG限動被嘲對分享生活充滿熱情",
+      "description": "46歲的張柏芝育有三子,大仔謝振軒(Lucas)已經19歲,二子謝振南(Quintus)今年16歲。張柏芝為謝霆鋒誕下的兩子已漸漸長大,餘下7歲的細仔Marcus需要張柏芝照顧。熱愛水上運動的張柏芝,近日在社交平台分享帶Marcus出海滑水的影片,還在1日之內更新IG的限時動態多達58次,被網民嘲:「對分享生活真係充滿住熱情」。 張柏芝兩母子感情好 張柏芝是眾所周知的Wakesurf與Wakebo",
+      "link": "https://www.stheadline.com/film-drama/3606425/%E5%BC%B5%E6%9F%8F%E8%8A%9D%E6%94%9C7%E6%AD%B2%E7%B4%B0%E4%BB%94%E5%87%BA%E6%B5%B7%E6%BB%91%E6%B0%B4-1%E6%97%A5%E7%8B%82%E7%99%BC55%E6%A2%9DIG%E9%99%90%E5%8B%95%E8%A2%AB%E5%98%B2%E5%B0%8D%E5%88%86%E4%BA%AB%E7%94%9F%E6%B4%BB%E5%85%85%E6%BB%BF%E7%86%B1%E6%83%85",
+      "pubDate": "2026-08-20 10:30:08",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/868823a04427e58858bfa8226d32fb27/2026-08/KF_116.jpg",
+      "keywords": [
+        "張栢芝",
+        "謝振軒",
+        "張柏芝wakesurf",
+        "明星滑水",
+        "lucas",
+        "謝振南",
+        "張柏芝滑水",
+        "marcus",
+        "張柏芝",
+        "張柏芝ig",
+        "張柏芝限時動態",
+        "張禮承",
+        "quintus",
+        "張柏芝洗版"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ede237ab8c064a9c80dd821c6a5b3c4c",
+      "title": "媒體披露五角大樓調查北約盟友“忠誠度”",
+      "description": "中評社北京8月20日電/卡塔爾半島電視台19日披露,美國國防部近日向北約盟友發出調查問卷,通過提出“是否公開支持美國外交政策優先事項”等問題,瞭解其是否遵循美國總統特朗普對跨大西洋關係的願景。 據新華社報導,卡塔爾半島電視台網站刊文稱,這份調查問卷題為《給北約盟國及其他關鍵利益攸關方的問題》。問卷中的問題包括,“是否對美國使用其境內基地及軍事飛越其領空設置了限制”“是否願意減少或取消",
+      "link": "http://www.crntt.com/doc/7_0_107225972_1_0820182725.html",
+      "pubDate": "2026-08-20 10:27:25",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/107225974.jpg",
+      "keywords": [
+        "北約",
+        "美國"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6e3110f1617ffcd98726d9f68d3e7416",
+      "title": "PS5《狼人》搶先試玩 DualSense 鋼爪打擊超爽 限量版 PS5 主機同步推出",
+      "description": "由《Marvel’s Spider-Man》團隊 Insomniac Games 開發的 PS5 獨佔動作新作 [...]",
+      "link": "https://unwire.hk/2026/08/20/ps5-marvels-wolverine-hands-on-review/shop_guide/",
+      "pubDate": "2026-08-20 10:27:14",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/2026082060803-1280x714.jpg",
+      "keywords": [
+        "ps5",
+        "評測",
+        "影視娛樂",
+        "遊戲情報",
+        "insomniac games",
+        "金剛狼",
+        "marvel's wolverine",
+        "dualsense",
+        "動作遊戲",
+        "買物情報",
+        "marvel"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "37243ba88efdb416eb64f38729d550b5",
+      "title": "羽毛球世錦賽—港隊女雙楊雅婷楊霈霖勇挫種子組合 首度晉身8強",
+      "description": "2026世界羽毛球錦標賽香港女雙組合楊雅婷/楊霈霖16強面對中華台北組合、11號種子許尹鏸、林芝昀,「楊楊配」再次打出精彩一仗擊敗強敵,首度晉身",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60382080/%E7%BE%BD%E6%AF%9B%E7%90%83%E4%B8%96%E9%8C%A6%E8%B3%BD-%E6%B8%AF%E9%9A%8A%E5%A5%B3%E9%9B%99%E6%A5%8A%E9%9B%85%E5%A9%B7%E6%A5%8A%E9%9C%88%E9%9C%96%E5%8B%87%E6%8C%AB%E7%A8%AE%E5%AD%90%E7%B5%84%E5%90%88-%E9%A6%96%E5%BA%A6%E6%99%89%E8%BA%AB8%E5%BC%B7",
+      "pubDate": "2026-08-20 10:25:43",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167168948458754048609213.jpeg/Slgnt4s1uhwUgwT7mrcweIDJ-b3VQUv7VzfW5Fc31uQ",
+      "keywords": [
+        "籃球",
+        "體育",
+        "網球",
+        "體育新聞",
+        "高爾夫球",
+        "f1賽車",
+        "新聞",
+        "nba",
+        "香港01",
+        "hk01",
+        "香港新聞",
+        "體育消息"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fbc0ed09167c9f4ebc5f78adec644762",
+      "title": "猴痘|39歲男確診 潛伏期赴泰與陌生男「高風險接觸」",
+      "description": "根據病人提供的資料,他不曾接種猴痘疫苗,於潛伏期內曾在泰國與一名陌生男子有高風險接觸。暫時沒有資料顯示這宗個案與本港早前錄得的其他猴痘確診個案有流行病學關連,中心正繼續就個案進行流行病學調查,會設法聯繫曾與他有高風險接觸的人士。中心亦會將個案通報世界衞生組織。",
+      "link": "https://www.am730.com.hk/%E6%9C%AC%E5%9C%B0/1048591/%E7%8C%B4%E7%97%98-39%E6%AD%B2%E7%94%B7%E7%A2%BA%E8%A8%BA-%E6%BD%9B%E4%BC%8F%E6%9C%9F%E8%B5%B4%E6%B3%B0%E8%88%87%E9%99%8C%E7%94%9F%E7%94%B7-%E9%AB%98%E9%A2%A8%E9%9A%AA%E6%8E%A5%E8%A7%B8-",
+      "pubDate": "2026-08-20 10:25:10",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2025-11/1048591/article/1048591/df/2025-07-17%20104805_0.png?updatedAt=1787221510",
+      "keywords": null,
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2c55c24920c0959d24d7a253fabe99c5",
+      "title": "王毅訪韓晤李在明 籲中韓盡快完成自由貿易協定第二階段談判",
+      "description": "韓國總統李在明8月20日在首爾青瓦台會見中共中央政治局委員、外交部長王毅。雙方認可兩國關係正積極改善,王毅呼籲中韓應發揮表率作用,儘快完成自",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382067/%E7%8E%8B%E6%AF%85%E8%A8%AA%E9%9F%93%E6%99%A4%E6%9D%8E%E5%9C%A8%E6%98%8E-%E7%B1%B2%E4%B8%AD%E9%9F%93%E7%9B%A1%E5%BF%AB%E5%AE%8C%E6%88%90%E8%87%AA%E7%94%B1%E8%B2%BF%E6%98%93%E5%8D%94%E5%AE%9A%E7%AC%AC%E4%BA%8C%E9%9A%8E%E6%AE%B5%E8%AB%87%E5%88%A4",
+      "pubDate": "2026-08-20 10:24:37",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167164465917988864201847.jpeg/wKH8bdZ8ognrMfpVP9rtZCJ9NJWrOEyKm4qcmJuKnJg",
+      "keywords": [
+        "環球",
+        "世界新聞",
+        "國際新聞",
+        "新聞",
+        "香港01",
+        "hk01",
+        "國際"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fd53157ed33012336269286b88ca103e",
+      "title": "世界羽毛球錦標賽|「雙楊配」16強挫中華台北組合 首闖世錦賽女雙8強",
+      "description": "「2026年世界羽毛球錦標賽」港隊女雙組合楊雅婷/楊霈霖周四(20日)出戰16強賽事,對上中華台北11號種子許君鏸/林芝昀,最終以直落21:18、21:16擊敗對手,首以闖入世錦賽8強。 「雙楊配」16強對上中華台北的種子組合許君鏸/林芝昀,過往雙方兩度碰頭,港將兩戰全勝較為佔優,而今戰再碰頭「雙楊配」在首局早段便打出13:5的優勢,之後更以20:15取得賽點,但之後中華台北組合展開反撲連追,但好",
+      "link": "https://www.stheadline.com/realtime-sport/3606488/%E4%B8%96%E7%95%8C%E7%BE%BD%E6%AF%9B%E7%90%83%E9%8C%A6%E6%A8%99%E8%B3%BD%E9%9B%99%E6%A5%8A%E9%85%8D16%E5%BC%B7%E6%8C%AB%E4%B8%AD%E8%8F%AF%E5%8F%B0%E5%8C%97%E7%B5%84%E5%90%88-%E9%A6%96%E9%97%96%E4%B8%96%E9%8C%A6%E8%B3%BD%E5%A5%B3%E9%9B%998%E5%BC%B7",
+      "pubDate": "2026-08-20 10:24:15",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bd48f6439f29b643e429149c93481521/2026-08/KF_-_2026-08-20T182137_497.jpg",
+      "keywords": [
+        "「雙楊配」",
+        "「2026年世界羽毛球錦標賽」",
+        "楊霈霖",
+        "楊雅婷",
+        "女雙"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bcf550bcbfd1e16a7b7c06fcb6aa5974",
+      "title": "跨黨派倡議地方政府聯合會 韓國瑜嘆不容易",
+      "description": "中評社台北8月20日電/台灣民主基金會20日下午舉行六都共同倡議成立“地方政府聯合會”記者會,包括身兼基金會董事長的“立法院長”韓國瑜,及副董事長、“外交部長”林佳龍,還有國民黨籍台中市長盧秀燕、台北市長蔣萬安等人皆親自出席。會中也簽署意向書,將作為地方政府推動城市外交、參與全球治理的平台,促進地方治理經驗共享及政策創新。 韓國瑜致詞時表示,年底大選即將到來,在當前台灣政治氛圍下,如",
+      "link": "http://www.crntt.com/doc/7_0_160259362_1_0820182130.html",
+      "pubDate": "2026-08-20 10:21:30",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/160259370.jpg",
+      "keywords": [
+        "地方政府聯合會",
+        "韓國瑜"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4f378218be21487ce411827eda7da6b5",
+      "title": "杜德偉演唱會2026澳門|門票攻略+購票連結+座位表",
+      "description": "杜德偉《Get Up》澳門演唱會將於2026年11月14日在澳門倫敦人綜藝館舉行,會在金光票務、澳門售票網、大麥、貓眼、uutix、攜程、MPAY開始公開發售,",
+      "link": "https://www.hk01.com/%E7%9C%BE%E6%A8%82%E8%BF%B7/60382054/%E6%9D%9C%E5%BE%B7%E5%81%89%E6%BC%94%E5%94%B1%E6%9C%832026%E6%BE%B3%E9%96%80-%E9%96%80%E7%A5%A8%E6%94%BB%E7%95%A5-%E8%B3%BC%E7%A5%A8%E9%80%A3%E7%B5%90-%E5%BA%A7%E4%BD%8D%E8%A1%A8",
+      "pubDate": "2026-08-20 10:19:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167163083534110720793625.jpeg/x_gXFgnNt6KQbsQqdriLi6Wx31jn9R2X0Z8aeNGfGng",
+      "keywords": [
+        "明星",
+        "marvel",
+        "tvb",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "viu",
+        "mirror",
+        "美劇",
+        "藝人",
+        "韓星",
+        "新聞",
+        "即時娛樂",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c368f78e4ce9c6ffcf357caaae4a90e6",
+      "title": "西班牙政府政策「急轉彎」 准500名休達非法移民兒童赴本土",
+      "description": "西班牙政府政策U-turn,宣布將允許約500名滯留在北非飛地休達(Ceuta)的非法移民兒童轉移到西班牙本土,交由非政府組織及兒童保護機構照顧。英國",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382073/%E8%A5%BF%E7%8F%AD%E7%89%99%E6%94%BF%E5%BA%9C%E6%94%BF%E7%AD%96-%E6%80%A5%E8%BD%89%E5%BD%8E-%E5%87%86500%E5%90%8D%E4%BC%91%E9%81%94%E9%9D%9E%E6%B3%95%E7%A7%BB%E6%B0%91%E5%85%92%E7%AB%A5%E8%B5%B4%E6%9C%AC%E5%9C%9F",
+      "pubDate": "2026-08-20 10:18:21",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260804/1161327179921887232975021.jpeg/oZgUZD6Z2eRQpUu_zzEIkOheGIlLNbf2isSVxorElcY",
+      "keywords": [
+        "環球",
+        "世界新聞",
+        "國際新聞",
+        "新聞",
+        "香港01",
+        "hk01",
+        "國際"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5c73f6a26bd63cac2d0ca65d5037a948",
+      "title": "生活英語|《蜘蛛俠4》再掀超英電影熱潮!即學9個電影相關生字 輕鬆討論劇情",
+      "description": "暑期向來是荷里活大片上映的旺季。早前上映的《蜘蛛俠:英雄重生》掀起超級英雄電影熱潮。不少同學會與朋友討論電影劇情、人物以及價值觀。以下詞彙可以幫助同學更好的用英文表達自己對超級英雄電影的看法,在口語交流中更顯自信。 1. Blockbuster (n.) 意思:賣座大片 例句:This new Spider‐Man film has become a summer blockbuster amon",
+      "link": "https://www.stheadline.com/knowledge/3606334/%E7%94%9F%E6%B4%BB%E8%8B%B1%E8%AA%9E%E8%9C%98%E8%9B%9B%E4%BF%A04%E5%86%8D%E6%8E%80%E8%B6%85%E8%8B%B1%E9%9B%BB%E5%BD%B1%E7%86%B1%E6%BD%AE%E5%8D%B3%E5%AD%B89%E5%80%8B%E9%9B%BB%E5%BD%B1%E7%9B%B8%E9%97%9C%E7%94%9F%E5%AD%97-%E8%BC%95%E9%AC%86%E8%A8%8E%E8%AB%96%E5%8A%87%E6%83%85",
+      "pubDate": "2026-08-20 10:15:09",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/69f50596f302dd12e54c3a03f1f4653e/2026-08/1_12_38.jpg",
+      "keywords": [
+        "英語",
+        "蜘蛛俠",
+        "英文"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ea9fcad6fedd2e6588268fe5a95ba74b",
+      "title": "生活英語|《蜘蛛俠4》再掀超英電影熱潮!即學10個電影相關生字 輕鬆討論劇情",
+      "description": "暑期向來是荷里活大片上映的旺季。早前上映的《蜘蛛俠:英雄重生》掀起超級英雄電影熱潮。不少同學會與朋友討論電影劇情、人物以及價值觀。以下詞彙可以幫助同學更好的用英文表達自己對超級英雄電影的看法,在口語交流中更顯自信。 1. Blockbuster (n.) 意思:賣座大片 例句:This new Spider‐Man film has become a summer blockbuster amon",
+      "link": "https://www.stheadline.com/knowledge/3606334/%E7%94%9F%E6%B4%BB%E8%8B%B1%E8%AA%9E%E8%9C%98%E8%9B%9B%E4%BF%A04%E5%86%8D%E6%8E%80%E8%B6%85%E8%8B%B1%E9%9B%BB%E5%BD%B1%E7%86%B1%E6%BD%AE%E5%8D%B3%E5%AD%B810%E5%80%8B%E9%9B%BB%E5%BD%B1%E7%9B%B8%E9%97%9C%E7%94%9F%E5%AD%97-%E8%BC%95%E9%AC%86%E8%A8%8E%E8%AB%96%E5%8A%87%E6%83%85",
+      "pubDate": "2026-08-20 10:15:09",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fd9c91ffab912c8aa15e84cc78a33d8f/2026-08/1_12_37.jpg",
+      "keywords": [
+        "英語",
+        "蜘蛛俠",
+        "英文"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9debcba7263c3ef8262a6d07f71a1029",
+      "title": "伊朗駁斥美國經濟威脅 敘利亞外長訪巴基斯坦尋求化解緊張",
+      "description": "伊朗周四駁斥美國總統特朗普的經濟制裁及孤立威脅,而敘利亞外長則正訪問巴基斯坦,該國正尋求化解美國與伊朗之間的緊張關係。 伊朗外長阿拉奇駁斥針對該國的經濟威脅,指這些「失敗政策」將激起伊朗人更多敵意,並「帶來更多失敗」。 阿拉奇發表上述言論前數小時,美國總統特朗普威脅對伊朗實施「毀滅性經濟措施」。特朗普承諾會實施「前所未有規模的經濟戰及孤立」,但未有提供詳情。 阿拉奇在社交媒體發文,堅稱這些威脅旨在轉移美國民眾對國內財政問題的注意力,並補充指美國的「經濟恐怖主義威脅全球經濟及世界各國的國家主權」。 巴基斯坦外交部表示,敘利亞外長阿薩德·希巴尼已抵達伊斯蘭堡,預計會談將聚焦地區議題。 這次訪問發生在數天前,以色列空襲敘利亞北部一個空軍基地,造成損毀但無人傷亡。 巴基斯坦官員表示,該國政治及軍事領導層與伊朗及美國保持聯繫,就化解緊張局勢及推動恢復談判的努力,在一份六月諒解備忘錄規定的60天期限屆滿後,繼續進行。該協議由巴基斯坦在地區國家協助下促成。 上周胡塞武裝在曼德海峽襲擊一艘懸掛坦桑尼亞國旗的商船,導致兩名巴基斯坦人遇害,他們的遺體已運返巴基斯坦。 外長伊沙克·達爾在社交平台X發文表示,六名在襲擊中受傷的巴基斯坦海員亦已安全回國。 達爾感謝沙特阿拉伯外交部提供合作,包括醫療援助。 達爾表示:「巴基斯坦最強烈譴責這次襲擊,並重申必須時刻確保海員的安全。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16607155-%E4%BC%8A%E6%9C%97%E9%A7%81%E6%96%A5%E7%BE%8E%E5%9C%8B%E7%B6%93%E6%BF%9F%E5%A8%81%E8%84%85-%E6%95%98%E5%88%A9%E4%BA%9E%E5%A4%96%E9%95%B7%E8%A8%AA%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E5%B0%8B%E6%B1%82",
+      "pubDate": "2026-08-20 10:15:05",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/bbc5df71e56f000515edef0817468c9d_Pakistan_Syria_84465_FB.jpg",
+      "keywords": [
+        "伊朗",
+        "特朗普",
+        "敘利亞",
+        "巴基斯坦",
+        "大視野",
+        "美國"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "08d96fea823e5d1750661b9dfc25c2ee",
+      "title": "BIGBANG舞台皇者回歸! 解構新歌〈BiiiG〉MV G-Dragon 6套造型",
+      "description": "VIP 們久等了!BIGBANG 迎來出道20週年,除了萬眾期待的世界巡迴演唱會即將展開,團隊更於成軍紀念日霸氣釋出時隔 4 年的全新單曲〈BiiiG〉 。今次",
+      "link": "https://www.hk01.com/%E4%B8%80%E7%89%A9/60382078/bigbang%E8%88%9E%E5%8F%B0%E7%9A%87%E8%80%85%E5%9B%9E%E6%AD%B8-%E8%A7%A3%E6%A7%8B%E6%96%B0%E6%AD%8C-biiig-mv-g-dragon-6%E5%A5%97%E9%80%A0%E5%9E%8B",
+      "pubDate": "2026-08-20 10:12:06",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167169662014722048145682.jpeg/UrU1ghvD5bfkg0mVnXsCW6rIGAXKMqvnOKAi0DigItA",
+      "keywords": [
+        "一物",
+        "object a",
+        "香港01",
+        "hk01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7327f3a9c098c60997acfb572b731f4b",
+      "title": "密蘇里大學面對艱難賽程 四分衛西蒙斯加盟跑鋒哈迪康復",
+      "description": "密蘇里大學二零二五年球季戰績為八勝五負。在教練伊萊·德林克維茨帶領下,密蘇里大學過去六個球季均有參與碗賽,包括二零二三年球季以十一勝兩負作結,並在棉花碗擊敗俄亥俄州立大學。然而,除了該個出色球季外,密蘇里大學在東南聯盟(SEC)一直未能擺脫中游位置。德林克維茨執教期間,球隊曾兩度在碗賽落敗後,以負多於勝的戰績完成球季。 如果全美跑鋒艾哈邁德·哈迪能從今年較早前受到的槍傷中康復歸隊,以及在防守協調員科里·巴圖恩帶領下的防線,能繼續成為全國最穩固的防線之一,密蘇里大學或許能在全國最艱難的賽程中取得佳績。密蘇里大學是唯一一支將與美聯社大學美式足球季前二十五強榜中,五支前十名球隊對賽的隊伍。 德林克維茨表示:「我們一直秉持相同的信念:STP,即有所證明。密蘇里大學的每個人每天都有需要證明的事情,證明我們屬於東南聯盟,證明我們能贏得高水平賽事,以及證明我們希望今年就能做到。」 奧斯汀·西蒙斯上季在奧勒密斯大學擔任積遜·達特的後備,其後贏得正選位置。但在第二周對陣肯塔基大學的比賽中,他因足踝受傷離場,特立尼達·錢布利斯接替上陣並迅速嶄露頭角。西蒙斯在該球季餘下時間上陣機會不多,其後轉會至密蘇里大學,取代轉投維珍尼亞大學的博·普里布拉。 他的強勁臂力應能提升密蘇里大學的傳球進攻能力,特別是前奧勒密斯大學隊友凱登·李及明尼蘇達大學轉會球員卡萊布·古迪,將為他提供兩名具潛力的接球目標,加上資深邊鋒布雷特·諾弗利特。 然而,球隊的進攻實質上取決於跑動進攻,哈迪在密蘇里大學的首個球季,便跑出東南聯盟最佳的一千六百四十九碼,並取得十六次達陣。密蘇里大學希望他能在球季某個時候,恢復到相若的高水平表現。同時,積馬爾·羅伯茨(上季跑出七百五十三碼,六次達陣)及侯斯頓基督教大學轉會球員沙伊肖恩·愛德華茲將分擔重任。 密蘇里大學的防線將幾乎全面換血,上季因畢業或轉會而離隊的球員,僅協助球隊以平均每場失二百七十七碼的成績,位列全國第八。 上季合計取得十五點五次擒殺的頂級傳球衝擊手戴蒙·威爾遜二世及錫安·楊格,將需要被取代。威爾遜已轉會至邁阿密大學,而楊格則在選秀會第二輪被巴爾的摩烏鴉選中。他們隊中擒抱次數最多的球員約西亞·特羅特,則在選秀會第二輪被坦帕灣海盜選中。在二線防守方面,馬文·伯克斯二世及戴蘭·卡內爾等球員亦需要被取代。 主要新加盟球員包括:四分衛奧斯汀·西蒙斯(來自奧勒密斯大學)、外接手凱登·李(來自奧勒密斯大學)、跑鋒沙伊肖恩·愛德華茲(來自侯斯頓基督教大學)、線衛羅伯特·伍德亞德二世(來自奧本大學)、角衛克里斯·格雷夫斯二世(來自奧勒密斯大學)。 主要離隊球員包括:防守端鋒錫安·楊格(被巴爾的摩烏鴉在第二輪選中)、線衛約西亞·特羅特(被坦帕灣海盜在第二輪選中)、防守截鋒克里斯·麥克萊倫(被綠灣包裝工在第三輪選中)、進攻截鋒基根·特羅斯特(被綠灣包裝工在第三輪選中)、四分衛博·普里布拉(轉會至維珍尼亞大學)。 關鍵賽事包括:九月十一日作客堪薩斯大學、十一月七日主場迎戰德州大學、十一月十四日作客喬治亞大學。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16607022-%E5%AF%86%E8%98%87%E9%87%8C%E5%A4%A7%E5%AD%B8%E9%9D%A2%E5%B0%8D%E8%89%B1%E9%9B%A3%E8%B3%BD%E7%A8%8B-%E5%9B%9B%E5%88%86%E8%A1%9B%E8%A5%BF%E8%92%99%E6%96%AF%E5%8A%A0%E7%9B%9F%E8%B7%91%E9%8B%92%E5%93%88",
+      "pubDate": "2026-08-20 10:10:09",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/7dca209f1440aae8664f89dc71eb7d82_Missouri_Preview_Football_31567_FB.jpg",
+      "keywords": [
+        "體育",
+        "哈迪",
+        "密蘇里大學",
+        "西蒙斯",
+        "大學體育",
+        "美式足球"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "74465a5b3fee4cf586917d29dbe9c277",
+      "title": "港超前瞻│東方全面西班牙化 文努托利斯領軍捲土重來",
+      "description": "東方在2025–26球季經歷了近年最艱難的一季。球隊在亞冠二接連大敗,被球迷冠上「令香港蒙羞」的負面評價,三屆「最佳教練」盧比度季中跳船轉任港隊主教練,亦令球隊在本地賽事難有起色。由前季的盃賽雙冠,變成四大皆空,隊中的精神領導葉鴻輝亦不幸大傷收咧,球隊上下一蹶不振。但是東方始終都是一支有底蘊的球隊,經過大半季的調整,西班牙教練文努托利斯似乎已經找到球隊的方向,今季的東方相信會向好的方面發展。 文努",
+      "link": "https://www.stheadline.com/football-news/3606477/%E6%B8%AF%E8%B6%85%E5%89%8D%E7%9E%BB%E6%9D%B1%E6%96%B9%E5%85%A8%E9%9D%A2%E8%A5%BF%E7%8F%AD%E7%89%99%E5%8C%96-%E6%96%87%E5%8A%AA%E6%89%98%E5%88%A9%E6%96%AF%E9%A0%98%E8%BB%8D%E6%8D%B2%E5%9C%9F%E9%87%8D%E4%BE%86",
+      "pubDate": "2026-08-20 10:05:48",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6aec5159016d7500b7026245115d22e3/2026-08/KF_17__1.png",
+      "keywords": [
+        "港超聯",
+        "港超前瞻",
+        "東方",
+        "文努托利斯"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a6ea2feb9d9285b539ea130000c5a790",
+      "title": "台勞長赴上海出席活動?陸委會:沒接到消息",
+      "description": "中評社台北8月20日電(記者 鄭羿菲)台媒報導,台“勞動部長”洪申翰近日規劃於9月下旬赴上海出席“第48屆國際技能競賽”。不過,陸委會副主委梁文傑20日表示,從洪的回應中他沒聽出洪有要去的意思,陸委會也未接到洪將帶隊去上海參加國際技能競賽的消息,這件事完全是媒體報導。 第48屆國際技能競賽預計2026年9月22日至9月27日於上海舉行,梁文傑說,最重要的是年輕選手,台灣從1971年參",
+      "link": "http://www.crntt.com/doc/7_0_160259352_1_0820180326.html",
+      "pubDate": "2026-08-20 10:03:26",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/160259355.JPG",
+      "keywords": [
+        "上海",
+        "梁文傑",
+        "陸委會",
+        "洪申翰",
+        "國際技能競賽"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d9c44a75c303870b6e86cb980d5cf26e",
+      "title": "盧秀燕喊國民黨重新執政 韓、蔣缺一不可",
+      "description": "中評社台北8月20日電/台灣民主基金會20日舉辦成立“台灣地方政府聯合會”記者會,中國國民黨籍“立法院長”韓國瑜、台“外交部長”林佳龍、國民黨籍台北市長蔣萬安、台中市長盧秀燕均出席。盧秀燕在致詞時表示,台灣的民主空間越來越困難,但不分藍綠,大家勇敢的為“國家”前進;最後更說“未來國民黨重新執政,韓院長,萬安,我們都在,缺一不可”。 這場記者會由台灣民主基金會主辦,韓國瑜以董事長身份主",
+      "link": "http://www.crntt.com/doc/7_0_160259364_1_0820180148.html",
+      "pubDate": "2026-08-20 10:01:47",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/160259366.jpg",
+      "keywords": [
+        "韓國瑜",
+        "蔣萬安",
+        "盧秀燕",
+        "台灣民主基金會"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "21ceea2ee6a5b78ac304087ac240ac03",
+      "title": "夏日水果熱量排行榜出爐!哈密瓜水蜜桃超低卡 第一名又稱「消暑補水聖品」?",
+      "description": "夏日炎炎,正是水果大造之時。營養師高敏敏整理了一份「夏天水果寶藏」清單,從高維他命C的釋迦、快樂食物香蕉,到補水神瓜西瓜、助消化之王鳳梨,為大家逐一拆解營養價值與食用要訣。要留意,水果雖健康,但不代表可以無限吃,要控制份量。 低卡水果|第12位:「高維C之選」釋迦 熱量:每100克約99kcal。 營養:富含維他命C及鉀質,有助降血壓、消水腫,並幫助美白淡斑。夏天流汗多時適量進食,可補充電解質,但",
+      "link": "https://www.stheadline.com/health-care/3605720/%E5%A4%8F%E6%97%A5%E6%B0%B4%E6%9E%9C%E7%86%B1%E9%87%8F%E6%8E%92%E8%A1%8C%E6%A6%9C%E5%87%BA%E7%88%90%E5%93%88%E5%AF%86%E7%93%9C%E6%B0%B4%E8%9C%9C%E6%A1%83%E8%B6%85%E4%BD%8E%E5%8D%A1%E7%AC%AC%E4%B8%80%E5%90%8D%E5%8F%88%E7%A8%B1%E6%B6%88%E6%9A%91%E8%A3%9C%E6%B0%B4%E8%81%96%E5%93%81",
+      "pubDate": "2026-08-20 10:00:57",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/790210c150aee294bcd7726055f06549/2026-08/image_1787051210243312---v2.png",
+      "keywords": null,
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
     },
     {
       "id": "2a074fbcb094885dcd1650c4c929aa76",
@@ -4670,6 +5573,23 @@
       "region": "hk"
     },
     {
+      "id": "8cbef08208cd6eaaa2c9ef3ac9fde193",
+      "title": "【提振內房】上海樓市新政:增公積金提取頻次和限額、降二套房首付比例、推最高8萬元換房補貼",
+      "description": "《經濟通通訊社20日專訊》為更好滿足居民剛性和改善性住房需求,促進房地產市場平穩 健康發展,上海市住房城鄉建設管理委、市房屋管理局、市財政局、人民銀行上海市分行、上海 金融監管局、市公積金管理中心等六部門今日聯合印發《關於優化該市房地產政策措施的通知》 (下稱《通知》),自2026年8月21日起施行。《通知》主要包括優化住房公積金提取、 優化個人住房信貸、實施「以舊換新」購房補貼、推行房票",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360820843",
+      "pubDate": "2026-08-20 04:58:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "84ab6958ff722189af363b16c1b64b70",
       "title": "美國|美軍傳秘密護送油輪 日運千萬桶石油通過霍爾木茲",
       "description": "美媒引述消息人士報道,美軍近期通過護送油輪航行的秘密行動,協助每天運送500萬桶至1,000萬桶石油經過霍爾木茲海峽。特朗普|稱對伊朗發動最嚴厲經濟打擊 援伊國家將被制裁《紐時》報道,美軍中央司令部(...",
@@ -6906,6 +7826,25 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "dca753934945004a8fc5f7120a41d6fa",
+      "title": "聯儲局7月議息紀錄放鷹 3官員投反對票撐加息 惟經濟轉弱 9月加息機率降至36%",
+      "description": "美國聯儲局最新會議紀錄顯示,數名官員在7月議息會議上支持加息,另有多名官員認為,若通脹未能回落,當局或有需要進一步收緊貨幣政策。同時,部分官員認為,目前的金融狀況可能未具足夠限制性,無法推動通脹回落至2%的目標。 聯邦公開市場委員會(FOMC)於7月28日至29日舉行會議,最終以9票對3票,決定把聯邦基金利率目標區間維持於3.5厘至3.75厘。今次是聯儲局自2025年底連續3次減息後,第5次維持利",
+      "link": "https://www.stheadline.com/macroeconomics/3606285/%E8%81%AF%E5%84%B2%E5%B1%807%E6%9C%88%E8%AD%B0%E6%81%AF%E7%B4%80%E9%8C%84%E6%94%BE%E9%B7%B9-3%E5%AE%98%E5%93%A1%E6%8A%95%E5%8F%8D%E5%B0%8D%E7%A5%A8%E6%92%90%E5%8A%A0%E6%81%AF-%E6%83%9F%E7%B6%93%E6%BF%9F%E8%BD%89%E5%BC%B1-9%E6%9C%88%E5%8A%A0%E6%81%AF%E6%A9%9F%E7%8E%87%E9%99%8D%E8%87%B336",
+      "pubDate": "2026-08-20 02:50:11",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/f477008a523902d229dcc32d55e3a0cd/2026-08/KF_-_2026-08-20T104854_871.png",
+      "keywords": [
+        "fed",
+        "聯儲局"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "a7734526a1988f457c1c8d921cc82047",
@@ -9324,6 +10263,23 @@
       "pinned": true
     },
     {
+      "id": "af50c205dc84db6602b9ae63714a8adc",
+      "title": "美國公共債務首次突破40萬億美元 「厄運循環」風險升溫",
+      "description": "【彭博】-- 美國公共債務總額首次突破40萬億美元,在不到五年間激增了三分之一。儘管各界不斷呼籲解決居高不下的財政赤字問題,但美國議員依然對此置之不理。美國財政部周三公佈的數據顯示,到周二結束時,美國未償公共債務總額達到40.05萬億美元。這一消息公佈前數小時,美國財政部長斯科特·貝森特再次試圖遏制長期借貸成本攀...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E5%85%AC%E5%85%B1%E5%82%B5%E5%8B%99%E9%A6%96%E6%AC%A1%E7%AA%81%E7%A0%B440%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83-%E5%8E%84%E9%81%8B%E5%BE%AA%E7%92%B0-%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%BA%AB-212431091.html",
+      "pubDate": "2026-08-19 21:24:31",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/6e568ca0cdccd8f698790a3802b19ac0.jpg",
+      "keywords": [
+        "美國財政部"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "4a1a505790da9e91376dc23645f656b6",
       "title": "美國債務突破40萬億美元 特朗普拜登任內合增近20萬億",
       "description": "美國財政部周三表示,美國債務總額首次突破40萬億美元(約312萬億港元)。據路透社(Reuters)8月19日報道,財政部數據顯示,周二公債餘額達40.047",
@@ -9619,6 +10575,25 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "d9eac56d0769dc5e29b84408b7330a64",
+      "title": "Moderna與默沙東公布黑色素瘤藥物第三期試驗正面結果 Moderna股價急升逾100%",
+      "description": "Moderna(MRNA.US)與默沙東(MRK.US)周三表示,一項實驗性皮膚癌療法的後期試驗錄得正面初步結果,帶動兩家公司股價上升,其中Moderna急升逾100%。 第三期試驗評估intismeran與默沙東Keytruda聯合使用,相較單獨使用Keytruda,對高風險已切除皮膚黑色素瘤患者的安全性及療效...",
+      "link": "https://hk.finance.yahoo.com/news/moderna%E8%88%87%E9%BB%98%E6%B2%99%E6%9D%B1%E5%85%AC%E5%B8%83%E9%BB%91%E8%89%B2%E7%B4%A0%E7%98%A4%E8%97%A5%E7%89%A9%E7%AC%AC%E4%B8%89%E6%9C%9F%E8%A9%A6%E9%A9%97%E6%AD%A3%E9%9D%A2%E7%B5%90%E6%9E%9C-moderna%E8%82%A1%E5%83%B9%E6%80%A5%E5%8D%87%E9%80%BE100-173937527.html",
+      "pubDate": "2026-08-19 17:39:37",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "默沙東",
+        "keytruda",
+        "黑色素瘤"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "3efd7d709a0a89c26736401c3be5107f",
@@ -147761,7 +148736,5 @@
       "region": "hk",
       "pinned": true
     }
-  ],
-  "total": 7544,
-  "last_updated": "2026-08-21T06:10:56.747637"
+  ]
 }
