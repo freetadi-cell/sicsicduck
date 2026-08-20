@@ -1,30 +1,6 @@
 {
   "articles": [
     {
-      "id": "c8a6daf91e2c8f1871cde63f6477b8f9",
-      "title": "發展局試行7舊區舊樓重建可獲額外20%地積比 9月起實施為期5年",
-      "description": "發展局9月推出「額外地積比率先導計劃」,為期5年,7個舊區重建可獲額外20%的地積比率,可將額外地積比率轉化為地價價值,用以抵銷發展商於該項原",
-      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60381736/%E7%99%BC%E5%B1%95%E5%B1%80%E8%A9%A6%E8%A1%8C7%E8%88%8A%E5%8D%80%E8%88%8A%E6%A8%93%E9%87%8D%E5%BB%BA%E5%8F%AF%E7%8D%B2%E9%A1%8D%E5%A4%9620-%E5%9C%B0%E7%A9%8D%E6%AF%94-9%E6%9C%88%E8%B5%B7%E5%AF%A6%E6%96%BD%E7%82%BA%E6%9C%9F5%E5%B9%B4",
-      "pubDate": "2026-08-19 15:41:26",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20220624/617081351619219456946807.jpeg/FBVSJS3dPLWuEKFbMwiG2eZjCOSYOR6od3vOgVJ7zoE",
-      "keywords": [
-        "新聞",
-        "hk01",
-        "國際新聞",
-        "港聞",
-        "即時新聞",
-        "頭條新聞",
-        "香港新聞",
-        "香港01"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "960d592e1d99cc191653951484b1e2d5",
       "title": "美國財政部突出手!長債回購規模翻倍 債息急回、金價彈升",
       "description": "由於投資者擔心美國國債規模激增、長期國債供應大增,以及通膨過去五年持續高於聯儲,美國30年期國債殖利率近日升至近20年來最高水平,終惹來官方",
@@ -47,6 +23,30 @@
         "新聞",
         "hk01",
         "財經新聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "c8a6daf91e2c8f1871cde63f6477b8f9",
+      "title": "發展局試行7舊區舊樓重建可獲額外20%地積比 9月起實施為期5年",
+      "description": "發展局9月推出「額外地積比率先導計劃」,為期5年,7個舊區重建可獲額外20%的地積比率,可將額外地積比率轉化為地價價值,用以抵銷發展商於該項原",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60381736/%E7%99%BC%E5%B1%95%E5%B1%80%E8%A9%A6%E8%A1%8C7%E8%88%8A%E5%8D%80%E8%88%8A%E6%A8%93%E9%87%8D%E5%BB%BA%E5%8F%AF%E7%8D%B2%E9%A1%8D%E5%A4%9620-%E5%9C%B0%E7%A9%8D%E6%AF%94-9%E6%9C%88%E8%B5%B7%E5%AF%A6%E6%96%BD%E7%82%BA%E6%9C%9F5%E5%B9%B4",
+      "pubDate": "2026-08-19 15:41:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20220624/617081351619219456946807.jpeg/FBVSJS3dPLWuEKFbMwiG2eZjCOSYOR6od3vOgVJ7zoE",
+      "keywords": [
+        "新聞",
+        "hk01",
+        "國際新聞",
+        "港聞",
+        "即時新聞",
+        "頭條新聞",
+        "香港新聞",
+        "香港01"
       ],
       "category": [
         "business"
@@ -87,6 +87,275 @@
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "110bee9dd44f686f5d6a35612a09b94e",
+      "title": "《公司盈警》迪信通(06188)料中期虧損擴大",
+      "description": "<匯港通訊> 迪信通(06188)發盈警,預期截至2026年6月30日止6個月歸屬於本公司母公司擁有人的虧損淨額不超過1.1億元人民幣(下同),去年同期虧損淨額約7664萬元,同比虧損增加。上述變動主要由於來貨價格不斷攀升導致產品價格上漲令市場需求下降,持續低迷的線下市場環境導致集團線下渠道推廣業務規模降低、整體...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E8%BF%AA%E4%BF%A1%E9%80%9A-06188-%E6%96%99%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7-175827739.html",
+      "pubDate": "2026-08-19 17:58:27",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "740859fa776d63618640840ca9e456c4",
+      "title": "康諾亞(02162)擬發行人民幣股份於科創板上市",
+      "description": "<匯港通訊> 康諾亞(02162)宣布,建議發行於上海證券交易所科創板上市並以人民幣買賣的普通股。 (WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%BA%B7%E8%AB%BE%E4%BA%9E-02162-%E6%93%AC%E7%99%BC%E8%A1%8C%E4%BA%BA%E6%B0%91%E5%B9%A3%E8%82%A1%E4%BB%BD%E6%96%BC%E7%A7%91%E5%89%B5%E6%9D%BF%E4%B8%8A%E5%B8%82-175601094.html",
+      "pubDate": "2026-08-19 17:56:01",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "上海證券交易所",
+        "<匯港通訊> 康諾亞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b16dd10aba177cced918a5ddd994f9ef",
+      "title": "《公司盈喜》意達利控股(00720)料中期溢利增加",
+      "description": "<匯港通訊> 意達利控股(00720)發盈喜,預期截至2026年6月30日止六個月錄得公司擁有人應佔綜合溢利約1.3億元至1.4億元,而截至2025年6月30日止六個月則錄得本公司擁有人應佔綜合溢利約840萬元。 (WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E5%96%9C-%E6%84%8F%E9%81%94%E5%88%A9%E6%8E%A7%E8%82%A1-00720-%E6%96%99%E4%B8%AD%E6%9C%9F%E6%BA%A2%E5%88%A9%E5%A2%9E%E5%8A%A0-175327926.html",
+      "pubDate": "2026-08-19 17:53:27",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b84bdc816a1aacac4ef5f7002abb1824",
+      "title": "《公司盈警》稀鎂科技(00601)料中期淨虧損逾4500萬元",
+      "description": "<匯港通訊> 稀鎂科技(00601)發盈警,預期截至2026年6月30日止六個月錄得淨虧損約4500萬元至6500萬元,而截至2025年6月30日止六個月6530萬元。集團預期2026年上半年收益約為3050萬元,較去年同期減少約67.5%。收益下跌主要由於鎂產品銷售量減少,而鎂行業市場環境持續疲弱,供強需弱格局...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E7%A8%80%E9%8E%82%E7%A7%91%E6%8A%80-00601-%E6%96%99%E4%B8%AD%E6%9C%9F%E6%B7%A8%E8%99%A7%E6%90%8D%E9%80%BE4500%E8%90%AC%E5%85%83-175134977.html",
+      "pubDate": "2026-08-19 17:51:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "quote",
+        "track portfolio",
+        "stock",
+        "finance",
+        "business",
+        "stock research",
+        "investor",
+        "investment tools",
+        "stock valuation",
+        "mortgage",
+        "business news",
+        "personal finance",
+        "economy",
+        "real estate",
+        "retirement",
+        "stocks",
+        "mutual funds",
+        "investing",
+        "suze orman",
+        "financial information"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ccc6bd4bdc024f7c9c8c93921b44a354",
+      "title": "專論:中國火箭回收突破與兩岸航天合作前景",
+      "description": "中評社香港8月20日電(評論員 楊流昌)8月19日,甘肅民勤戈壁灘上,朱雀三號遙二運載火箭一子級,以不到2米/秒的速度平穩軟著陸,四條著陸腿穩穩撐在回收場坪中央。這是中國首次成功實現運載火箭一子級陸地支腿回收。而就在一個多月前的7月10日,長征十號乙運載火箭剛剛在海上回收平台,通過網系捕獲方式成功回收一子級,完成了全球首次運載火箭網系回收。短短40天,中國航天集齊了“海陸雙回收”。從昔日仰望S",
+      "link": "http://www.crntt.com/doc/7_0_107225698_1_0820015133.html",
+      "pubDate": "2026-08-19 17:51:32",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/107225700.jpg",
+      "keywords": [
+        "火箭"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c2c89538b5562aa440a036aa5ca69976",
+      "title": "美國股市指數上升 國債孳息回落 因財政部提高回購上限及特朗普暫停加拿大關稅",
+      "description": "美國財政部表示,將於9月把長期國債每次回購規模由20億美元提高至至少40億美元,加上美國總統特朗普周二深夜於Truth Social發文暫停對部分加拿大商品徵收關稅,美國股市周三中午後上升。 納斯達克綜合指數升0.2%至26,343.5,標普500指數升0.3%至7,716.1,道瓊斯工業平均指數升0.2%至53...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E8%82%A1%E5%B8%82%E6%8C%87%E6%95%B8%E4%B8%8A%E5%8D%87-%E5%9C%8B%E5%82%B5%E5%AD%B3%E6%81%AF%E5%9B%9E%E8%90%BD-%E5%9B%A0%E8%B2%A1%E6%94%BF%E9%83%A8%E6%8F%90%E9%AB%98%E5%9B%9E%E8%B3%BC%E4%B8%8A%E9%99%90%E5%8F%8A%E7%89%B9%E6%9C%97%E6%99%AE%E6%9A%AB%E5%81%9C%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%97%9C%E7%A8%85-174655193.html",
+      "pubDate": "2026-08-19 17:46:55",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "quote",
+        "track portfolio",
+        "stock",
+        "finance",
+        "business",
+        "stock research",
+        "investor",
+        "investment tools",
+        "stock valuation",
+        "mortgage",
+        "business news",
+        "personal finance",
+        "economy",
+        "real estate",
+        "retirement",
+        "stocks",
+        "mutual funds",
+        "investing",
+        "suze orman",
+        "financial information"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "408cf89e2f7fd211aafba7a8ef4c065e",
+      "title": "《公司盈警》建聯集團(00385)料中期業績由盈轉虧",
+      "description": "<匯港通訊> 建聯集團(00385)發盈警,預期截至2026年6月30日止6個月錄得公司擁有人應佔虧損不多於4000萬元,去年同期溢利約2060萬元。虧損主要由於樓宇相關承造服務分類收益減少約35%,以及上述分類毛利及毛利率因項目交付延遲、嚴格之測試及調試規定,以及與客戶結算項目之賬目所費時間延長而下跌。 (WH...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E5%BB%BA%E8%81%AF%E9%9B%86%E5%9C%98-00385-%E6%96%99%E4%B8%AD%E6%9C%9F%E6%A5%AD%E7%B8%BE%E7%94%B1%E7%9B%88%E8%BD%89%E8%99%A7-174329509.html",
+      "pubDate": "2026-08-19 17:43:29",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "quote",
+        "track portfolio",
+        "stock",
+        "finance",
+        "business",
+        "stock research",
+        "investor",
+        "investment tools",
+        "stock valuation",
+        "mortgage",
+        "business news",
+        "personal finance",
+        "economy",
+        "real estate",
+        "retirement",
+        "stocks",
+        "mutual funds",
+        "investing",
+        "suze orman",
+        "financial information"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f64df663d0a3c84d6626b89585ec9d30",
+      "title": "更新:聯儲局會議紀錄公布前 美股中段上升",
+      "description": "美國主要股指周三中段向上,受醫療保健板塊上升支持,其中Moderna(MRNA.US)股價大幅抽升,市場亦等待聯儲局上次政策會議紀錄公布。 標普500指數周三中午後升0.3%,報7,716.7點;納斯達克綜合指數升0.2%,報26,341.6點;道瓊斯工業平均指數升0.2%,報53,436.2點。三大指數周二連續...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E8%81%AF%E5%84%B2%E5%B1%80%E6%9C%83%E8%AD%B0%E7%B4%80%E9%8C%84%E5%85%AC%E5%B8%83%E5%89%8D-%E7%BE%8E%E8%82%A1%E4%B8%AD%E6%AE%B5%E4%B8%8A%E5%8D%87-174201325.html",
+      "pubDate": "2026-08-19 17:42:01",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "quote",
+        "track portfolio",
+        "stock",
+        "finance",
+        "business",
+        "stock research",
+        "investor",
+        "investment tools",
+        "stock valuation",
+        "mortgage",
+        "business news",
+        "personal finance",
+        "economy",
+        "real estate",
+        "retirement",
+        "stocks",
+        "mutual funds",
+        "investing",
+        "suze orman",
+        "financial information"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "47b3edd0df3a05ef81007a6941387df2",
+      "title": "《公司盈警》王朝酒業(00828)料中期盈利減少逾85%",
+      "description": "<匯港通訊> 王朝酒業(00828)發盈警,預期截至2026年6月30日止6個月錄得未經審核綜合盈利約40萬至120萬元,去年同期綜合盈利約820萬元,減少約85%至95%。盈利下降主要歸因於集團截至2026年6月30日止期間:受中國葡萄酒消費市場疲弱需求之影響,銷售收入顯著承壓致毛利減少;及其他收益上升如撤銷賬...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E7%8E%8B%E6%9C%9D%E9%85%92%E6%A5%AD-00828-%E6%96%99%E4%B8%AD%E6%9C%9F%E7%9B%88%E5%88%A9%E6%B8%9B%E5%B0%91%E9%80%BE85-174138988.html",
+      "pubDate": "2026-08-19 17:41:38",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "匯港通訊"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d9eac56d0769dc5e29b84408b7330a64",
+      "title": "Moderna與默沙東公布黑色素瘤藥物第三期試驗正面結果 Moderna股價急升逾100%",
+      "description": "Moderna(MRNA.US)與默沙東(MRK.US)周三表示,一項實驗性皮膚癌療法的後期試驗錄得正面初步結果,帶動兩家公司股價上升,其中Moderna急升逾100%。 第三期試驗評估intismeran與默沙東Keytruda聯合使用,相較單獨使用Keytruda,對高風險已切除皮膚黑色素瘤患者的安全性及療效...",
+      "link": "https://hk.finance.yahoo.com/news/moderna%E8%88%87%E9%BB%98%E6%B2%99%E6%9D%B1%E5%85%AC%E5%B8%83%E9%BB%91%E8%89%B2%E7%B4%A0%E7%98%A4%E8%97%A5%E7%89%A9%E7%AC%AC%E4%B8%89%E6%9C%9F%E8%A9%A6%E9%A9%97%E6%AD%A3%E9%9D%A2%E7%B5%90%E6%9E%9C-moderna%E8%82%A1%E5%83%B9%E6%80%A5%E5%8D%87%E9%80%BE100-173937527.html",
+      "pubDate": "2026-08-19 17:39:37",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "默沙東",
+        "keytruda",
+        "黑色素瘤"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3efd7d709a0a89c26736401c3be5107f",
+      "title": "《公司盈喜》南方通信(01617)料中期淨利潤增加",
+      "description": "<匯港通訊> 南方通信(01617)發盈喜,預期截至2026年6月30日止6個月錄得未經審核淨利潤及綜合收益約3600萬至3900萬元人民幣(下同),較去年同期未經審核淨利潤及綜合收益約2610萬元,顯著增加。中期業績改善乃主要由於隨著算力基礎設施持續擴大,光纖光纜行業景氣穩步上行,市場供需格局進一步優化,公司應...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E5%96%9C-%E5%8D%97%E6%96%B9%E9%80%9A%E4%BF%A1-01617-%E6%96%99%E4%B8%AD%E6%9C%9F%E6%B7%A8%E5%88%A9%E6%BD%A4%E5%A2%9E%E5%8A%A0-173920490.html",
+      "pubDate": "2026-08-19 17:39:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "716c5cdff80686747417130594dfe5ae",
+      "title": "穆斯亞拿兩度暈眩 漢尼斯表示驚訝",
+      "description": "【Now Sports】拜仁慕尼黑進攻中場穆斯亞拿,周二季前球會賽對海登咸,再次出現暈眩情況,4日內兩度發生相似事件,有指他稱患上神經系統功能障礙,會突然失神,球會主席漢尼斯對這位23歲球員有這種情況表示震驚。穆斯亞拿(Jamal Musiala)這種神經系統出現障礙,漢尼斯表示,現在球員最需要的是得到大家支持,...",
+      "link": "https://hk.sports.yahoo.com/news/%E7%A9%86%E6%96%AF%E4%BA%9E%E6%8B%BF%E5%85%A9%E5%BA%A6%E6%9A%88%E7%9C%A9-%E6%BC%A2%E5%B0%BC%E6%96%AF%E8%A1%A8%E7%A4%BA%E9%A9%9A%E8%A8%9D-172125892.html",
+      "pubDate": "2026-08-19 17:21:25",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "拜仁慕尼黑",
+        "穆斯亞",
+        "漢尼斯",
+        "穆斯亞拿"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
     },
     {
       "id": "bbdf82cb5bc82f2e1411a019e1f69d77",
@@ -136769,6 +137038,20 @@
       "region": "hk"
     },
     {
+      "id": "4a529c04889a061c",
+      "title": "張寶兒疑懷孕︱張寶兒「孕味濃」疑懷第3胎　早透露未「封肚」爆袁偉豪有意「追多個女」",
+      "description": "【張寶兒 / 袁偉豪 / 香港小姐】現年34歲的張寶兒（Bowie）在2020年與袁偉豪結婚，夫妻恩愛「三年抱兩」，分別在2023年及去年11月誕下兒子「袁咕碌」與「袁氹氹」，組一家四口幸福家庭。在昨...",
+      "link": "https://topick.hket.com/article/4179588",
+      "pubDate": "2026-08-20 12:55:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4175000/4179588/BOWIE_0820_THUMBS_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "43f5665bea225870",
       "title": "竇唯二女竇佳嫄｜竇佳嫄從小遭受網絡欺凌　12歲患精神疾病需終身服藥　罕談與父親真實關係",
       "description": "【竇唯 / 竇佳嫄 / 竇靖童 / 王菲】王菲前夫、內地著名音樂人竇唯，與第二任太太攝影師高原於2002年結婚，育有女兒竇佳嫄，即竇靖童同父異母妹妹。現年24歲的歌手竇佳嫄，近日接受網絡節目的訪問，罕...",
@@ -138010,6 +138293,6 @@
       "pinned": true
     }
   ],
-  "total": 7059,
-  "last_updated": "2026-08-20T13:09:12.387244"
+  "total": 7072,
+  "last_updated": "2026-08-20T14:04:49.643032"
 }
