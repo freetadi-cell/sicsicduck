@@ -1,7 +1,617 @@
 {
-  "last_updated": "2026-08-20T12:07:36.774548",
-  "total": 7032,
   "articles": [
+    {
+      "id": "c8a6daf91e2c8f1871cde63f6477b8f9",
+      "title": "發展局試行7舊區舊樓重建可獲額外20%地積比 9月起實施為期5年",
+      "description": "發展局9月推出「額外地積比率先導計劃」,為期5年,7個舊區重建可獲額外20%的地積比率,可將額外地積比率轉化為地價價值,用以抵銷發展商於該項原",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60381736/%E7%99%BC%E5%B1%95%E5%B1%80%E8%A9%A6%E8%A1%8C7%E8%88%8A%E5%8D%80%E8%88%8A%E6%A8%93%E9%87%8D%E5%BB%BA%E5%8F%AF%E7%8D%B2%E9%A1%8D%E5%A4%9620-%E5%9C%B0%E7%A9%8D%E6%AF%94-9%E6%9C%88%E8%B5%B7%E5%AF%A6%E6%96%BD%E7%82%BA%E6%9C%9F5%E5%B9%B4",
+      "pubDate": "2026-08-19 15:41:26",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20220624/617081351619219456946807.jpeg/FBVSJS3dPLWuEKFbMwiG2eZjCOSYOR6od3vOgVJ7zoE",
+      "keywords": [
+        "新聞",
+        "hk01",
+        "國際新聞",
+        "港聞",
+        "即時新聞",
+        "頭條新聞",
+        "香港新聞",
+        "香港01"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "960d592e1d99cc191653951484b1e2d5",
+      "title": "美國財政部突出手!長債回購規模翻倍 債息急回、金價彈升",
+      "description": "由於投資者擔心美國國債規模激增、長期國債供應大增,以及通膨過去五年持續高於聯儲,美國30年期國債殖利率近日升至近20年來最高水平,終惹來官方",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60381735/%E7%BE%8E%E5%9C%8B%E8%B2%A1%E6%94%BF%E9%83%A8%E7%AA%81%E5%87%BA%E6%89%8B-%E9%95%B7%E5%82%B5%E5%9B%9E%E8%B3%BC%E8%A6%8F%E6%A8%A1%E7%BF%BB%E5%80%8D-%E5%82%B5%E6%81%AF%E6%80%A5%E5%9B%9E-%E9%87%91%E5%83%B9%E5%BD%88%E5%8D%87",
+      "pubDate": "2026-08-19 15:09:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/3222718/org/86ca790b9678f13fcc586f507e0cbdab.jpg/U9Mp9W5oVy6hFY-hS2sRxgjvhLJrw1esjPVAuoz1QLo",
+      "keywords": [
+        "恆生指數",
+        "港股",
+        "財經台",
+        "a股",
+        "經濟",
+        "香港新聞",
+        "股票",
+        "財經透視",
+        "財經網",
+        "香港01",
+        "地產消息",
+        "新聞",
+        "hk01",
+        "財經新聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "6f2566ce23d986c739b582eb650acad0",
+      "title": "財經|港交所上半年盈利升24% 派中期息每股7.43元",
+      "description": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social interaction and mortgage rates that help you manage your financial life.",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%A1%E7%B6%93-%E6%B8%AF%E4%BA%A4%E6%89%80%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%9B%88%E5%88%A9%E5%8D%8724-%E6%B4%BE%E4%B8%AD%E6%9C%9F%E6%81%AF%E6%AF%8F%E8%82%A17-43%E5%85%83-045220515.html",
+      "pubDate": "2026-08-19 04:52:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/en/fortune_insight_694/dbddec0f78d2a1ab4bc25a6950c04ffb.png",
+      "keywords": [
+        "港交所"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "9832f40fd4fdb83808ce457c7ecb4c9d",
+      "title": "宇樹科技登陸 A 股科創板 首日高開 629% 總市值破 4,400 億 抽中一手賬面狂賺近 48 萬人幣 但中籤率僅約 0.018%",
+      "description": "全球科技界與資本市場迎來「具身智能(Embodied AI)」的里程碑時刻。中國通用機械人領軍企業宇樹科技(Unitree)今日(8月19日)正式登陸上海科創板。乘著 AI 浪潮,其股價開市即報 1,100 元(人民幣,下同),較發行價 150.8 元大幅狂飆約 629%,總市值瞬間突破 4,400 億元。一文為您客觀拆解這隻超級新股的「造富神話」、豪華戰投陣容,以及支撐其千億估值的底層商業邏輯。 散戶狂熱與造富神話:科創板兩大歷史紀錄 宇樹科技的 IPO 堪稱 A 股市場近年來最令人矚目的盛宴。 在財富效應的驅動下,此次公開招股共吸引高達 978.46 萬名散戶認購,直接創下科創板歷史新高。在啟動回撥機制後,中籤率被大幅攤薄至僅約.. The post 宇樹科技登陸 A 股科創板 首日高開 629% 總市值破 4,400 億 抽中一手賬面狂賺近 48 萬人幣 但中籤率僅約 0.018% appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/news/unitree-robotics-star-market-ipo-629-percent-surge-deepseek-humanoid-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2033594/",
+      "pubDate": "2026-08-19 02:53:17",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/a8100f59-986f-4737-964a-89942e8686b2_21254152686a851a934a5d5.jpg",
+      "keywords": [
+        "即時財經"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "bbdf82cb5bc82f2e1411a019e1f69d77",
+      "title": "《公司盈警》正榮地產(06158)料中期虧損擴大",
+      "description": "<匯港通訊> 正榮地產(06158)發盈警,預期截至2026年6月30日止6個月將錄得母公司擁有人應佔虧損82億至84億元人民幣(下同),去年同期虧損約64.63億元。虧損增加主要歸因於交付的項目數量由同期的約2000個大幅減少至期間的約600個,導致毛利較同期下降約9350萬元;利息資本化率下降,導致融資成本較...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E6%AD%A3%E6%A6%AE%E5%9C%B0%E7%94%A2-06158-%E6%96%99%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7-165804541.html",
+      "pubDate": "2026-08-19 16:58:04",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1bbf64aa931b2ab23c68f4f74929fb08",
+      "title": "特朗普稱可能在“某個時候”恢復與伊朗的談判",
+      "description": "中評社北京8月20日電/新華社報導,美國總統特朗普19日接受媒體採訪時表示,可能在“某個時候”恢復與伊朗的談判,但伊朗必須徹底放棄核武器。",
+      "link": "http://www.crntt.com/doc/7_0_107225689_1_0820005709.html",
+      "pubDate": "2026-08-19 16:57:08",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d9e79852ca9d26c5fb88e91de89cb6fb",
+      "title": "王毅:希望韓方“獨立自主”發展對外關係",
+      "description": "中評社北京8月20日電/中共中央政治局委員、外交部長王毅19日在首爾同韓國外長趙顯舉行會談。 新華社報導,王毅表示,中韓隔海相望,理應經常交往,增進互信,深化合作。去年底以來,習近平主席和李在明總統成功實現互訪,就中韓關係未來發展達成重要共識,為兩國關係作出戰略指引。中韓關係正在按照兩國元首指明的方向持續改善和發展。當前世界百年變局加速演進,特別是今年以來,國際形勢劇烈動蕩,局部衝突",
+      "link": "http://www.crntt.com/doc/7_0_107225690_1_0820005509.html",
+      "pubDate": "2026-08-19 16:55:09",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/20/107225692.jpg",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "12e66ea2ec9187e8822e83cfd977c147",
+      "title": "《公司盈警》正榮服務(06958)料中期虧損擴大",
+      "description": "<匯港通訊> 正榮服務(06958)發盈警,預期截至2026年6月30日止6個月母公司擁有人應佔虧損不超過6000萬元人民幣(下同),去年同期錄得虧損約750萬元。受市場環境的影響,預期業績轉差主要由於集團應收賬款回款率下降,導致本集團計提的應收賬款減值撥備增加等因素導致,社區增值服務和非業主增值服務收入下降。...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%AC%E5%8F%B8%E7%9B%88%E8%AD%A6-%E6%AD%A3%E6%A6%AE%E6%9C%8D%E5%8B%99-06958-%E6%96%99%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7-165452548.html",
+      "pubDate": "2026-08-19 16:54:52",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d87c18f84d752ede5321f4ec590839d9",
+      "title": "鷹眼台灣機器人 結合輝達技術能辨識視力表",
+      "description": "中評社台北8月20日電(記者 邱筠媜)“2026台灣機器人與智慧自動化展”19日起在台北登場,台灣企業所羅門股份有限公司(SOLOMON)展出結合輝達前沿視覺AI技術的人形機器人,不僅能在7公尺外辨識視力表,連9公尺遠的溫濕度計指針也能秒讀。 “2026台灣機器人與智慧自動化展”暨“台北國際自動化工業大展”8月19日至8月22日於台北南港展覽館登場,今年展會以“人機協作.AI賦能”為",
+      "link": "http://www.crntt.com/doc/7_0_160258857_1_0820005217.html",
+      "pubDate": "2026-08-19 16:52:17",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/160258859.jpg",
+      "keywords": [
+        "所羅門",
+        "機器人展"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fd3ad903a68fd49928abb6818e81cb61",
+      "title": "Empathy中央車站辦藝術裝置鼓勵市民反思記憶傳承",
+      "description": "Empathy,一間致力改變世人規劃及應對人生艱難時刻的科技公司,今日宣布將於2026年8月20及21日,在中央車站范德堡廳舉行名為「此處生長」(What Grows Here)的公共藝術裝置展。這次為期兩日的活動,邀請紐約市民參與藝術體驗,停下來反思記憶與傳承。活動時間配合8月的「哀傷意識日」(8月30日)及「訂立遺囑月」。 這次裝置是大型活動「傳承不息。擁抱你的。緬懷他們的。」(Legacies live on. Own yours. Honor theirs.)的一部分,反映Empathy相信傳承屬於每個人,無論是為自己準備,抑或緬懷他人。參觀者獲邀寫下字條,給摯愛、思念的人、希望致敬的人,或作為提醒自己正在建立的傳承。每張字條隨後會繫於一束小麥上,成為一個生長中的裝置藝術,由數千個個人記憶與傳承共同構成一幅集體肖像。 這次裝置推出之際,正值不少美國人日益在缺乏所需支援下,處理哀傷及傳承規劃。Empathy的研究發現: Empathy首席市場總監Cindy Goodrich表示:「傳承不單是我們留下的東西,更是我們每天與摯愛及共同創造的回憶所建立的。我們希望將這個理念帶到世界上最公開、最人性化的交匯點之一。中央車站每日有數十萬人經過,每個人都帶著自己的愛與失落故事。『此處生長』是一個機會,以非常公開的方式,將一個常被視為禁忌的話題呈現出來,並在繁忙中停下來,共同緬懷這些故事。」 Empathy是一間領先的科技公司,利用人工智能及人手關懷,改變世人規劃及應對人生艱難時刻的方式。該公司為美國、加拿大及英國超5,000萬名保單持有人提供服務。Empathy獲Index Ventures、General Catalyst、Adams Street Partners等頂級風險投資公司及其他領先基金,以及全球金融機構的策略性投資,共計1.62億美元資金支持。Empathy提供全面的專業指導,涵蓋喪親、遺產管理、傳承規劃、照護及休假等。Empathy獲蘋果、Google Play及Fast Company認可,結合大規模科技與人本關懷,重新定義現代支援的標準。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16602280-empathy%E4%B8%AD%E5%A4%AE%E8%BB%8A%E7%AB%99%E8%BE%A6%E8%97%9D%E8%A1%93%E8%A3%9D%E7%BD%AE%E9%BC%93%E5%8B%B5%E5%B8%82%E6%B0%91%E5%8F%8D%E6%80%9D%E8%A8%98%E6%86%B6%E5%82%B3%E6%89%BF",
+      "pubDate": "2026-08-19 16:47:22",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/739ed746cce146ff8a6a3b0bf344dcd9_Promotion_Central_station_FB.jpg",
+      "keywords": [
+        "empathy",
+        "藝術裝置",
+        "傳承",
+        "中央車站",
+        "記憶",
+        "商業事"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3243246d692256e5aa70e0910de04cd7",
+      "title": "美銀指惠普季度個人系統收入增長有望略勝預期",
+      "description": "美銀證券周三表示,惠普(HPQ.US)2026財年第三季度個人系統收入增長預期將較公司指引「略好」,受惠於定價措施及市場份額回升。 該行預期,這家個人電腦製造商於8月26日公布業績時,其第三季度個人系統業務收入將按年增長8%。美銀分析師Wamsi Mohan於報告中表示,業績料受定價措施及「剩餘提前拉貨需求」帶動...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E9%8A%80%E6%8C%87%E6%83%A0%E6%99%AE%E5%AD%A3%E5%BA%A6%E5%80%8B%E4%BA%BA%E7%B3%BB%E7%B5%B1%E6%94%B6%E5%85%A5%E5%A2%9E%E9%95%B7%E6%9C%89%E6%9C%9B%E7%95%A5%E5%8B%9D%E9%A0%90%E6%9C%9F-164721330.html",
+      "pubDate": "2026-08-19 16:47:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "季度",
+        "市場份額",
+        "惠普",
+        "個人電腦",
+        "表示",
+        "美銀"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6e3dc30e1dafd1163ba9acffef97585c",
+      "title": "中韓外長首爾會談|北京研APEC舉行首腦會晤 韓方促朝鮮重回對話",
+      "description": "中國外交部長王毅周三在與韓國外交部長趙顯會晤後表示,北京正積極考慮在11月深圳舉行的亞太經合組織(APEC)峰會期間,與韓國舉行首腦會晤。據路",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60381742/%E4%B8%AD%E9%9F%93%E5%A4%96%E9%95%B7%E9%A6%96%E7%88%BE%E6%9C%83%E8%AB%87-%E5%8C%97%E4%BA%AC%E7%A0%94apec%E8%88%89%E8%A1%8C%E9%A6%96%E8%85%A6%E6%9C%83%E6%99%A4-%E9%9F%93%E6%96%B9%E4%BF%83%E6%9C%9D%E9%AE%AE%E9%87%8D%E5%9B%9E%E5%B0%8D%E8%A9%B1",
+      "pubDate": "2026-08-19 16:47:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1166908132203433984502613.png/jZL2Txy1E0ep844wm8PDycuZZPkkiLpfvggsO74ILDs",
+      "keywords": [
+        "國際",
+        "hk01",
+        "國際新聞",
+        "新聞",
+        "世界新聞",
+        "香港01",
+        "環球"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "692fdbd7bcf3344fbe3946aff0290c24",
+      "title": "上午12時00分 天文台特別天氣提示:天文台密切監察南海低壓區動向市民需留意最新天氣消息",
+      "description": "天文台於今日(8月20日)凌晨00:45表示,南海北部的低壓區正穩定向西移動,並靠近海南島一帶。該低壓區結構仍然鬆散,尚未發展成熱帶氣旋。根據現時預測,低壓區將於今日橫過海南島,並繼續遠離香港。受中國東南沿岸的高壓脊與低壓區共同影響,廣東沿岸風勢較大且有驟雨。天文台提醒市民,該低壓區在橫過海南島後的動向仍存在不確定性,可能於接近週末時以偏北方向靠近北部灣至雷州半島一帶,亦有可能轉向偏東方向靠近廣東沿岸。天文台將密切監察其強度及動向,並評估是否需要發出一號戒備信號。市民應留意天文台的最新天氣消息,並採取必要的防風防雨措施,尤其是居住在沿海地區的居民。請保持警覺,避免前往危險地區,並確保家中物品固定以防強風影響。 The post 上午12時00分 天文台特別天氣提示:天文台密切監察南海低壓區動向市民需留意最新天氣消息 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%94%9F%E6%B4%BB/%E5%A4%A9%E6%96%87%E5%8F%B0-%E7%89%B9%E5%88%A5%E5%A4%A9%E6%B0%A3%E6%8F%90%E7%A4%BA-%E4%BD%8E%E5%A3%93%E5%8D%80-aplt2-6-2033715/",
+      "pubDate": "2026-08-19 16:45:55",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2025/08/6102915770909576456_12072579806895dc3ce6cae.jpg",
+      "keywords": [
+        "天文台",
+        "生活",
+        "特別天氣提示",
+        "低壓區"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "eb4c2d5de0f733718991c5590bd349cf",
+      "title": "北韓否認美朝元首進行直接溝通 川普期待今年與金正恩會面",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E5%8C%97%E9%9F%93%E5%90%A6%E8%AA%8D%E7%BE%8E%E6%9C%9D%E5%85%83%E9%A6%96%E9%80%B2%E8%A1%8C%E7%9B%B4%E6%8E%A5%E6%BA%9D%E9%80%9A-%E5%B7%9D%E6%99%AE%E6%9C%9F%E5%BE%85%E4%BB%8A%E5%B9%B4%E8%88%87%E9%87%91%E6%AD%A3%E6%81%A9%E6%9C%83%E9%9D%A2-164408420.html",
+      "pubDate": "2026-08-19 16:44:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "金正恩",
+        "川普",
+        "北韓"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ea3625151cb9b6c23eaaa01e76fc31d6",
+      "title": "美韓軍演縮減 張瑞雄:特朗普向朝鮮釋善意",
+      "description": "中評社台北8月20日電(記者 鄭羿菲)美國總統特朗普近期對韓國、朝鮮態度大不相同,縮減美韓聯合軍演,引發熱議。前台北商業大學校長張瑞雄接受中評社訪問表示,特朗普在中東問題碰壁,短時間內沒辦法結束美伊戰爭,11月又要舉行期中選舉,需要轉移焦點,一方面警告韓國,一方面也向朝鮮釋善意,嘗試會否有美朝峰會,在外交成績單上有所斬獲。 張瑞雄,台灣清華大學計算機與管理決策研究所博士,曾任東華大學",
+      "link": "http://www.crntt.com/doc/7_0_160258870_1_0820004016.html",
+      "pubDate": "2026-08-19 16:40:15",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/160258872.JPG",
+      "keywords": [
+        "美國",
+        "張瑞雄",
+        "韓國",
+        "中美關係",
+        "朝鮮",
+        "美韓峰會",
+        "特朗普"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ab213a994e3be13afaaf0ca6ed12987b",
+      "title": "特朗普提名Heidi Overton出任美國食品藥品監督管理局局長",
+      "description": "美國總統特朗普周三表示,已提名Dr. Heidi Overton出任美國食品藥品監督管理局(FDA)局長。 特朗普在Truth Social發文表示,「我們現時需要她在FDA的領導,以確保美國繼續成為科學發現及療法方面的世界領導者。」 免責聲明 本內容由 AI 生成,僅供一般資訊及參考用途,並不構成任何投資建議、...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%89%B9%E6%9C%97%E6%99%AE%E6%8F%90%E5%90%8Dheidi-overton%E5%87%BA%E4%BB%BB%E7%BE%8E%E5%9C%8B%E9%A3%9F%E5%93%81%E8%97%A5%E5%93%81%E7%9B%A3%E7%9D%A3%E7%AE%A1%E7%90%86%E5%B1%80%E5%B1%80%E9%95%B7-163726212.html",
+      "pubDate": "2026-08-19 16:37:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "特朗普",
+        "fda",
+        "美國食品藥品監督管理局"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ea4fcc8bcf98164c6ecd488e50220e8a",
+      "title": "北韓否認與特朗普直接溝通,並對美韓軍演縮減不屑一顧",
+      "description": "Investing.com - 北韓週三否認金正恩與美國總統唐納德·特朗普之間存在直接溝通,並對華盛頓決定縮減與韓國聯合軍事演習一事嗤之以鼻,認為此舉毫無意義。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8C%97%E9%9F%93%E5%90%A6%E8%AA%8D%E8%88%87%E7%89%B9%E6%9C%97%E6%99%AE%E7%9B%B4%E6%8E%A5%E6%BA%9D%E9%80%9A-%E4%B8%A6%E5%B0%8D%E7%BE%8E%E9%9F%93%E8%BB%8D%E6%BC%94%E7%B8%AE%E6%B8%9B%E4%B8%8D%E5%B1%91-%E9%A1%A7-163622219.html",
+      "pubDate": "2026-08-19 16:36:22",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4617G_M.jpg",
+      "keywords": [
+        "朝鮮中央通訊社",
+        "金正恩",
+        "軍事演習",
+        "特朗普",
+        "北韓"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "319f01127c3ca41496ae9d94b09417a1",
+      "title": "陳幸妤開撕趙建銘 余元傑:主要是財務紛爭",
+      "description": "中評社台南8月20日電(記者 蔣繼平)陳水扁女兒陳幸妤自爆與趙建銘離婚近日成為媒體焦點。針對背後是否有政治脈絡,嘉南藥理科技大學社會工作系教授余元傑認為,背後政治動機不強,主要涉及家庭財務,但因有名人效應,大家愛看、當事人又願講,才登上霸榜熱搜。 陳幸妤近日開撕趙建銘,並指趙未歸還兒子新台幣2300萬教育基金。對此,陳幸妤19日中午現身受訪表示,趙母透露趙返台後將處理,她藏不住好心情",
+      "link": "http://www.crntt.com/doc/7_0_160258846_1_0820003557.html",
+      "pubDate": "2026-08-19 16:35:56",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/160258848.jpg",
+      "keywords": [
+        "余元傑",
+        "台南",
+        "陳幸妤",
+        "政治"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0e180c8576b608eb432d5ea511173956",
+      "title": "OPATRA London兩管理人員被捕 英國總公司再割蓆:非直屬僱員",
+      "description": "沙田新城市廣場美容店OPATRA London銷售爭議持續發酵,香港海關於周三晚(19日)採取行動,拘捕涉案公司一名42歲男財務經理及一名25歲女行政經理。OPATRA London英國總公司其後隨即再次發布聲明,澄清香港OPATRA品牌店舖是由一間本地公司根據分銷協議獨立擁有及經營,被捕人非其直屬僱員,再度與香港店舖劃清界線。 指香港店舖由獨立公司經營 人員管理全由本地公司負責 OPATRA L",
+      "link": "https://www.stheadline.com/breaking-news/3606187/OPATRA-London%E5%85%A9%E7%AE%A1%E7%90%86%E4%BA%BA%E5%93%A1%E8%A2%AB%E6%8D%95-%E8%8B%B1%E5%9C%8B%E7%B8%BD%E5%85%AC%E5%8F%B8%E5%86%8D%E5%89%B2%E8%93%86%E9%9D%9E%E7%9B%B4%E5%B1%AC%E5%83%B1%E5%93%A1",
+      "pubDate": "2026-08-19 16:35:25",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/b0c57de1c5ab2b7bbf4d6c46c85b89e0/2026-08/2026-08-19_17_31_29.png",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "515d71dc36c73eddf35e1706c77480a5",
+      "title": "美洲國家組織警告海地需援助 準備逾十年來首次大選",
+      "description": "美洲國家組織秘書長艾伯特·拉姆丁周三訪問海地期間表示,該國需要協助打擊幫派及收復失地,以準備舉行超過十年來首次大選。 拉姆丁結束對這個動盪的加勒比海國家訪問時發表上述言論,期間他會見了總理及其他官員。 他指出,新的聯合國支持的打擊幫派部隊需要更多人員、裝備及資金。 他表示:「該部隊的努力對於改善治安及公共安全,以及為安全的選舉進程創造條件至關重要。進展必須盡快顯而易見及可衡量。」 拉姆丁指出,優先事項是確保通往主要國際機場的幹線安全;確保機場及海港的持續通行;以及恢復海地南部地區的安全通道。幫派目前控制著進出首都的主要路線。 他亦呼籲海地在12月13日大選前加強選民登記及身份識別工作。自喬弗內爾·莫伊茲於2021年7月在其私人住所遇害以來,海地一直沒有總統。此後,幫派暴力只增不減,導致創紀錄的150萬人流離失所。 拉姆丁承諾將繼續「動員政治、技術及財政支援」予這個加勒比海國家。 他表示,美洲國家組織將與泛美衞生組織合作,建立創傷中心,為受傷的海地警員提供治療,他們正持續反擊控制太子港約七成地區及首都以外大片土地的幫派。 拉姆丁表示,他亦計劃組建一個商界領袖代表團,討論在海地的潛在投資項目,該國的貧困、飢餓及失業問題日益嚴重。 他指出:「海地正處於一個關鍵時刻。海地的未來首先屬於海地人民。但國際社會亦有責任。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16602269-%E7%BE%8E%E6%B4%B2%E5%9C%8B%E5%AE%B6%E7%B5%84%E7%B9%94%E8%AD%A6%E5%91%8A%E6%B5%B7%E5%9C%B0%E9%9C%80%E6%8F%B4%E5%8A%A9-%E6%BA%96%E5%82%99%E9%80%BE%E5%8D%81%E5%B9%B4%E4%BE%86%E9%A6%96%E6%AC%A1%E5%A4%A7",
+      "pubDate": "2026-08-19 16:35:07",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/4d4e414524cd0981150cc829fd6b4b69_Haiti_Displaced_41_44_FB.jpg",
+      "keywords": [
+        "海地",
+        "大視野",
+        "美洲國家組織",
+        "國際援助",
+        "大選",
+        "幫派暴力"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "954b7a4dbd61b1d1e386a34fd92bc201",
+      "title": "綠各個擊破 侯友宜王惠美成藍破口",
+      "description": "中評社台北8月20日電(記者 黃筱筠)年底選舉氛圍對民進黨不利,卻可觀察到綠營精心布局,正在逐個擊破藍軍輔選力道,尤其以新北市以及彰化縣最為明顯。只要中國國民黨籍新北市長侯友宜、彰化縣長王惠美消極輔選黨籍提名參選人,綠營認為就有力搏機會。 賴清德面對年底選舉一再送出大禮包,除了不副署在野黨三讀通過的《台灣兒少成長及未來帳戶條例》,改推動自己的兒少帳戶,且強調明年開始,18歲以下兒少就",
+      "link": "http://www.crntt.com/doc/7_0_160258873_1_0820003458.html",
+      "pubDate": "2026-08-19 16:34:57",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/160258877.jpg",
+      "keywords": [
+        "彰化",
+        "新北",
+        "民進黨：國民黨"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "de22fee40aacd094c267f39bde04fdff",
+      "title": "快評:兩岸青年交流季 國共互信成果",
+      "description": "中評社快評/19日舉行的國台辦例行記者會上,發言人朱鳳蓮向媒體表示,8月24日至28日,兩岸有關青年組織將在上海共同舉辦“同心同行——兩岸青年交流季”上海站活動。同日,中國國民黨宣布,國民黨青年事務發展委員會受邀將出席兩岸青年交流季上海站活動。 國共雙方同時宣布相關資訊,凸顯了該活動是今年4月“習鄭會”後,大陸推出十項促進兩岸交流合作的政策措施中有關“建立國共兩黨青年雙向交流機制化平",
+      "link": "http://www.crntt.com/doc/7_0_107225616_1_0820002808.html",
+      "pubDate": "2026-08-19 16:28:07",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/107225626.jpg",
+      "keywords": [
+        "習鄭會",
+        "快評",
+        "國共領導人"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c5cbd839249e303dd7a93291cf0e784b",
+      "title": "俄烏戰爭促歐防務整合 張心怡:無人機耀眼",
+      "description": "中評社嘉義8月20日電(記者 李京昇)南華大學國際事務與企業學系教授張心怡表示,俄烏戰爭凸顯無人機在現代戰場的重要性,也讓歐洲找到推動國防合作的新切入點。相較傳統武器,無人機成本較低、更新快速,且較不涉及敏感的軍事主權問題,適合跨國共同研發與生產,若能透過EDIP逐步整合規格、採購與產業鏈,無人機有機會成為歐洲國防自主的突破口。 張心怡為英國萊斯特大學國際關係學研究所博士、英國萊斯特",
+      "link": "http://www.crntt.com/doc/7_0_160258794_1_0820002651.html",
+      "pubDate": "2026-08-19 16:26:50",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/160258817.jpg",
+      "keywords": [
+        "南華大學",
+        "歐盟"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8b7b3474965bbe3f5a99caa565d5ce3a",
+      "title": "美聯社精選每日圖片 捕捉頭條新聞及動人時刻",
+      "description": "這個圖片集展示了由美聯社圖片編輯選出的今日精選圖片,內容涵蓋頭條新聞及可能錯過的動人時刻。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16602237-%E7%BE%8E%E8%81%AF%E7%A4%BE%E7%B2%BE%E9%81%B8%E6%AF%8F%E6%97%A5%E5%9C%96%E7%89%87-%E6%8D%95%E6%8D%89%E9%A0%AD%E6%A2%9D%E6%96%B0%E8%81%9E%E5%8F%8A%E5%8B%95%E4%BA%BA%E6%99%82%E5%88%BB",
+      "pubDate": "2026-08-19 16:25:03",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/cbe6fa3b410345ecb2ccd4318b84075c_Seattle_Daily_Life__7888_FB.jpg",
+      "keywords": [
+        "大視野",
+        "圖片",
+        "攝影",
+        "美聯社",
+        "國際",
+        "新聞"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b2f45629114432287de676d1a07d9988",
+      "title": "關注:藍縣長倒戈?彰化縣成了一級戰區",
+      "description": "中評社彰化8月20日電(記者 方敬為)距離年底縣市長選舉僅剩3個多月,中國國民黨與民進黨主席領軍,19日不約而同在彰化縣舉辦行動中常會。由於彰化縣長選情為三方競逐,藍綠均不敢大意。對藍營而言是席次保衛戰;對綠營來說,雖然本身有票源分散風險,仍是相對有贏面的縣市,將是年底地方選舉藍綠主戰場之一。 理當作為藍營“母雞”的黨籍縣長王惠美輔選態度消極,作為地主連昨日的中常會都缺席,被質疑倒戈",
+      "link": "http://www.crntt.com/doc/7_0_160258822_1_0820002502.html",
+      "pubDate": "2026-08-19 16:25:00",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/160258828.JPG",
+      "keywords": [
+        "陳素月",
+        "國民黨",
+        "彰化縣",
+        "賴清德",
+        "民進黨",
+        "鄭麗文",
+        "魏平政",
+        "2028",
+        "2026"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c61656d5f3147ff2dbf69ca1124742b9",
+      "title": "Next Level Aviation® 任命 Mike Fleener 為全球銷售資深副總裁",
+      "description": "佛羅里達州達尼亞灘 2026年8月20日 /美通社/ -- Next Level Aviation ® (NLA) 是全部波音和空中巴士商用飛機及相關噴射引擎平台二手可用材料 (USM) 的全球分銷領導者,已任命 Mike Fleener 為全球銷售高級副總裁。 身為美國陸軍軍官學校畢業生、前陸軍軍官兼「阿帕奇」攻擊直升機飛行員,並在商用航空售後服務領域擁有超過 20 年資歷,Fleener 先生為 Next Level Aviation ® 帶來了豐富的領導、銷售、營運及供應鏈經驗。在整個職業生涯中, Fleener 先生曾於商用航空售後市場的多家大型企業(包括一間原始設備製造商)擔任過各種職務。 在新的職位上,Mike 將運用其領導經驗,領導、管理、培育並擴充 Next Level Aviation 的全球銷售團隊,以在未來幾年推動其 USM 業務的成長。他亦將與全球業務發展高級副總裁 Clive Rankin密切合作,以拓展 Next Level Aviation 的全球客戶群。 Next Level Aviation ® 行政總裁 Jack Gordon 表示:「我們很高興能邀請 Mike Fleener 加入 Next Level Aviation ® ,擔任全球銷售資深副總裁。」Gordon 繼續說:「在商業航空售後市場工作 20 年之後,Mike 了解了 USM 的需求,以及如何為我們的航空公司、租賃公司、MRO 和 OEM 的目標終用戶客戶構建 NLA 的價值建議。他那分析性的工作方式、願意指導我們現有銷售團隊的態度,以及在快節奏營運環境中創造佳績的經驗,正是 Next Level Aviation ® 所需要的,以推動公司邁向下一階段的成長。」 全球銷售資深副總裁 Mike Fleener 表示:「我很高興能夠在公司成長中如此重要階段加入 Next Level Aviation ® 。NLA 憑藉其卓越的客戶服務、業界專業知識,以及為全球客戶提供高品質的 USM 解決方案,建立了極佳的聲譽。我期待與整個 NLA 團隊攜手合作,拓展我們的全球客戶關係、培育我們才華洋溢的銷售團隊,並為客戶及商業夥伴創造長期價值。」 關於 Next Level Aviation ® Next Level Aviation ® 是已獲 ASA-100 認證兼符合 FAA Advisory Circular 00-56B 要求的供應商,現在為全部波音和空中巴士平台及相關噴射引擎提供商用飛機/噴射引擎二手可用材料 (USM)。Next Level Aviation ® 專注為波音 737 和空中巴士 A320 系列飛機及其相關噴射引擎儲備 USM,這些飛機目前約佔全球商用機隊 65%。Next Level Aviation ® 由 Jack Gordon、Mike Dreyer 和 Matt Dreyer 於 2013 年 3 月創辦,現已發展成為全球頂級商用飛機/噴射引擎二手可用材料供應商。 www.nextlevelaviation.net 如需了解更多資訊或要求其他圖像,請聯絡 morgane@aerospacemarketing.com 。",
+      "link": "https://hk.prnasia.com/story/544577-2.shtml",
+      "pubDate": "2026-08-19 16:22:00",
+      "source_name": "美通社",
+      "image_url": null,
+      "keywords": [
+        "aro",
+        "air",
+        "tra",
+        "per"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "98ee23d8d9034775986bf486369c2bc4",
+      "title": "Moderna做淡者面臨48億USD帳面虧損,股價單日升幅創歷史紀錄",
+      "description": "Investing.com — 根據ORTEX的數據,週三押注Moderna Inc股價下跌的投資者面臨高達48億USD的按市值計算虧損。此前,這家生物科技公司公佈了其個人化mRNA癌症療法試驗的正面結果,股價隨即急升逾一倍。",
+      "link": "https://hk.finance.yahoo.com/news/moderna%E5%81%9A%E6%B7%A1%E8%80%85%E9%9D%A2%E8%87%A848%E5%84%84usd%E5%B8%B3%E9%9D%A2%E8%99%A7%E6%90%8D-%E8%82%A1%E5%83%B9%E5%96%AE%E6%97%A5%E5%8D%87%E5%B9%85%E5%89%B5%E6%AD%B7%E5%8F%B2%E7%B4%80%E9%8C%84-162143722.html",
+      "pubDate": "2026-08-19 16:21:43",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA8400B_M.jpg",
+      "keywords": [
+        "moderna"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ee18131ff3064ec43f3101fada22ed6e",
+      "title": "全球排名第一賽駒「監察員」爆冷僅獲第四 「項目」奪賈德蒙特國際錦標",
+      "description": "英國其中一項最享負盛名賽馬,周三爆出冷門賽果,全球排名第一的純種賽駒「監察員」在賈德蒙特國際錦標賽事中,僅獲第四名,冠軍由十賠一的「項目」奪得。 「項目」是從未落敗的名駒「范高爾」的子嗣,「范高爾」亦曾於2012年在約克馬場贏得賈德蒙特國際錦標。「項目」為馬主贏得85萬英鎊(約116萬美元)頭獎獎金,其馬主亦是賽事贊助商,即已故沙特王子哈立德·本·阿卜杜拉·阿勒沙特旗下的賈德蒙特馬房。 這匹三歲雄駒在八駒參賽的激烈賽事中,最終在約2.1公里賽程的最後數米才找到空位領先。在騎師哥連堅策騎、練馬師安德魯·鮑爾丁訓練下,「項目」以一個馬頭位之差,擊敗十四賠一的「阿爾馬卡姆」奪冠。 法國打吡冠軍「憲法河」在艾登·奧拜恩於愛爾蘭為庫摩馬房訓練下,以七賠四賠率獲得第三名。「監察員」作為五賠六的大熱門,因沿欄競跑時未能找到空位,最終跌落第四名。 「監察員」由來自杜拜的高多芬馬房擁有,去年曾贏得賈德蒙特國際錦標,此前12場賽事從未跌出前兩名。這匹五歲賽駒在賽事開始時,與駐港短途馬「嘉應高昇」並列全球排名第一。「項目」和「阿爾馬卡姆」則並列第二十名。 表現不斷進步的「項目」在六場賽事中贏得五場,其職業生涯唯一失誤是六月在惡劣天氣下舉行的葉森打吡中獲得第九名。牠在約克馬場已取得三連勝,但從未成為投注大熱門。 在周三約克馬場另一場賽事中,打吡冠軍「聖誕日」在大沃爾蒂熱錦標中被「馬耳他十字」擊敗,僅獲第三名。「馬耳他十字」曾在葉森的強風大雨中獲得亞軍。 「馬耳他十字」為馬主,即英國電影公司高層喬治·沃德贏得14萬1775英鎊(約19萬3千美元)獎金。喬治·沃德曾是電影《毒蛇嚇機》的監製。 「項目」和「馬耳他十字」兩駒現時均有望劍指歐洲獎金最豐厚賽事,即10月4日在巴黎隆尚馬場舉行的凱旋門大賽。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16602205-%E5%85%A8%E7%90%83%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80%E8%B3%BD%E9%A7%92%E3%80%8C%E7%9B%A3%E5%AF%9F%E5%93%A1%E3%80%8D%E7%88%86%E5%86%B7%E5%83%85%E7%8D%B2%E7%AC%AC%E5%9B%9B-%E3%80%8C%E9%A0%85%E7%9B%AE",
+      "pubDate": "2026-08-19 16:17:20",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/b22489cf0d04543d549309d97f3f1b12_Juddmonte_Item_Horse_Racing_93973_FB.jpg",
+      "keywords": [
+        "體育",
+        "賈德蒙特國際錦標",
+        "賽馬",
+        "監察員",
+        "項目",
+        "約克馬場"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "67bbd9111255c34835e8ccaf3801b4f8",
+      "title": "Xsolla與Good Game Club播客結盟 宣揚全球遊戲業正面故事",
+      "description": "全球電子遊戲商務公司Xsolla今日宣布與獨立全球播客Good Game Club建立為期多年的策略夥伴關係,該播客致力分享遊戲生態系統中的正面故事。這次合作是更廣泛行動的一部分,旨在透過支持電子遊戲業務中人性化的良好故事,以正面方式支援塑造遊戲產業未來的開發商、發行商及創作者。這次夥伴關係將涵蓋全球活動日程,計劃每年在科隆遊戲展(gamescom)及三藩市遊戲開發者大會(GDC)進行聯合播客錄製。 Xsolla與Good Game Club將合作推出定期編輯環節及深入探討的節目,探索業界各個角落的工作室及故事,涵蓋新晉團隊、中型以至成熟的開發商。這次合作亦會帶來來自杜拜、柏林、巴庫及其他地區的節目,以表揚在當地市場表現出色、具正面影響力的工作室、創作者及業界聲音。Xsolla將加入Good Game Club現有夥伴,包括杜拜影視及遊戲委員會以及騰訊。 由PlanetPlay首席策略總監Jude Ower MBE及SYBO行政總裁Mathias Gredal Nørvig主持,Xsolla與Good Game Club將聚焦於人物、工作室及理念,證明健康、正面的遊戲能為玩家、社群及整個行業帶來甚麼。透過這次合作,Good Game Club新增一個全球商務夥伴,其業務覆蓋各規模及地區的工作室,有助節目擴闊視野,發掘更多正面遊戲故事的來源。 Xsolla首席市場推廣及增長總監Berkley Egenes表示:「Good Game Club正在講述我們整個行業更需要的故事,關於遊戲如何善待玩家,以及開發商如何建立所有重要事物。與Jude及Mathias合作,讓我們能以全球網絡支持這項使命,並為各種規模的開發商提供另一個平台,分享他們正在建立的成果及其重要性。」 Good Game Club聯合創辦人兼主持人Jude Ower稱:「我們很高興與Xsolla合作,這將使我們能夠涵蓋全球新興開發商及市場中更多正面故事。Xsolla正提供關鍵基礎設施,支援各種規模的開發商,透過合作並利用Xsolla的網絡,我們可以表揚全球遊戲產業中表現出色的人士。」 Good Game Club聯合創辦人兼主持人Mathias Gredal Nørvig指出:「Good Game Club是真正全球性的,涵蓋世界各地所有地區及所有類型的良好遊戲。我們很高興能擴展網絡,並受惠於Xsolla的優勢及影響力。我們期待講述所有即將到來的故事,並激勵更多開發商付出額外努力。遊戲有潛力將世界變得更美好。」 新節目及合作內容將於今年開始推出,Good Game Club可在所有主要播客平台收聽。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16602216-xsolla%E8%88%87good-game-club%E6%92%AD%E5%AE%A2%E7%B5%90%E7%9B%9F-%E5%AE%A3%E6%8F%9A%E5%85%A8%E7%90%83%E9%81%8A%E6%88%B2%E6%A5%AD%E6%AD%A3%E9%9D%A2%E6%95%85%E4%BA%8B",
+      "pubDate": "2026-08-19 16:10:23",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/61a590d73f964a7395ef7b6b9e83670b_261A8333_1_FB.jpg",
+      "keywords": [
+        "策略夥伴",
+        "遊戲產業",
+        "商業事",
+        "播客",
+        "good game club",
+        "xsolla"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "58620aaacfaeb8088284b2a8ffaf8b5c",
+      "title": "鏡頭:台灣機器人展旗袍正妹添亮點",
+      "description": "中評社台北8月20日電(記者 莊亦軒)“台灣機器人與智慧自動化展”19日在台北南港展覽館登場,從今年主題“人機協作.AI賦能”可以看到,從輝達執行長黃仁勳點名機器人是AI發展下一波浪潮、特斯拉推出第3代人形機器人,這股機器人風潮也從美國吹向台灣,各大廠商除了展示商品,也請來許多正妹Show Girl,成為展場一道亮麗的風景線。 “台灣機器人與智慧自動化展”在台北南港展覽館19日至22",
+      "link": "http://www.crntt.com/doc/7_0_160258889_1_0820000937.html",
+      "pubDate": "2026-08-19 16:09:37",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/19/160258893.JPG",
+      "keywords": [
+        "ai",
+        "正妹",
+        "機器人"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "622e3f2238801741c3e43a70b3a457c1",
+      "title": "Tesla Model 3全新後輪驅動版抵港|534km續航力意向價32萬起",
+      "description": "Tesla Model 3全新後輪驅動版抵港,意向價32萬起|全新登場的 Tesla Model 3 後輪驅動版,以相對親民的定價策略打入市場,同時保留了一貫的長續航",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60381198/tesla-model-3%E5%85%A8%E6%96%B0%E5%BE%8C%E8%BC%AA%E9%A9%85%E5%8B%95%E7%89%88%E6%8A%B5%E6%B8%AF-534km%E7%BA%8C%E8%88%AA%E5%8A%9B%E6%84%8F%E5%90%91%E5%83%B932%E8%90%AC%E8%B5%B7",
+      "pubDate": "2026-08-19 16:00:50",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166436517732683776298147.jpeg/FvwhWA5mdJUGrOXJ2cKsq98hahrBCQBqURt3AlEbdwI",
+      "keywords": [
+        "手遊",
+        "科技",
+        "ios",
+        "潮物",
+        "動漫",
+        "facebook",
+        "apple",
+        "app",
+        "tesla",
+        "航拍",
+        "android",
+        "香港01"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
     {
       "id": "a7d554ed50cf2a76d09d91f7aae1d4cb",
       "title": "【人物】旅居海外不忘跑步初心 「鷹鷹」曾進傑首次挑戰 OCC 「跟著身體感覺去跑!」",
@@ -73,29 +683,6 @@
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
         "每股盈利"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "c8a6daf91e2c8f1871cde63f6477b8f9",
-      "title": "發展局試行7舊區舊樓重建可獲額外20%地積比 9月起實施為期5年",
-      "description": "發展局9月推出「額外地積比率先導計劃」,為期5年,7個舊區重建可獲額外20%的地積比率,可將額外地積比率轉化為地價價值,用以抵銷發展商於該項原",
-      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60381736/%E7%99%BC%E5%B1%95%E5%B1%80%E8%A9%A6%E8%A1%8C7%E8%88%8A%E5%8D%80%E8%88%8A%E6%A8%93%E9%87%8D%E5%BB%BA%E5%8F%AF%E7%8D%B2%E9%A1%8D%E5%A4%9620-%E5%9C%B0%E7%A9%8D%E6%AF%94-9%E6%9C%88%E8%B5%B7%E5%AF%A6%E6%96%BD%E7%82%BA%E6%9C%9F5%E5%B9%B4",
-      "pubDate": "2026-08-19 15:41:26",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20220624/617081351619219456946807.jpeg/FBVSJS3dPLWuEKFbMwiG2eZjCOSYOR6od3vOgVJ7zoE",
-      "keywords": [
-        "新聞",
-        "hk01",
-        "國際新聞",
-        "港聞",
-        "即時新聞",
-        "頭條新聞",
-        "香港新聞",
-        "香港01"
       ],
       "category": [
         "business"
@@ -239,35 +826,6 @@
         "盈利",
         "tjx",
         "每股盈利"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "960d592e1d99cc191653951484b1e2d5",
-      "title": "美國財政部突出手!長債回購規模翻倍 債息急回、金價彈升",
-      "description": "由於投資者擔心美國國債規模激增、長期國債供應大增,以及通膨過去五年持續高於聯儲,美國30年期國債殖利率近日升至近20年來最高水平,終惹來官方",
-      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60381735/%E7%BE%8E%E5%9C%8B%E8%B2%A1%E6%94%BF%E9%83%A8%E7%AA%81%E5%87%BA%E6%89%8B-%E9%95%B7%E5%82%B5%E5%9B%9E%E8%B3%BC%E8%A6%8F%E6%A8%A1%E7%BF%BB%E5%80%8D-%E5%82%B5%E6%81%AF%E6%80%A5%E5%9B%9E-%E9%87%91%E5%83%B9%E5%BD%88%E5%8D%87",
-      "pubDate": "2026-08-19 15:09:52",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/3222718/org/86ca790b9678f13fcc586f507e0cbdab.jpg/U9Mp9W5oVy6hFY-hS2sRxgjvhLJrw1esjPVAuoz1QLo",
-      "keywords": [
-        "恆生指數",
-        "港股",
-        "財經台",
-        "a股",
-        "經濟",
-        "香港新聞",
-        "股票",
-        "財經透視",
-        "財經網",
-        "香港01",
-        "地產消息",
-        "新聞",
-        "hk01",
-        "財經新聞"
       ],
       "category": [
         "business"
@@ -9297,22 +9855,6 @@
       "region": "hk"
     },
     {
-      "id": "6f2566ce23d986c739b582eb650acad0",
-      "title": "財經|港交所上半年盈利升24% 派中期息每股7.43元",
-      "description": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social interaction and mortgage rates that help you manage your financial life.",
-      "link": "https://hk.finance.yahoo.com/news/%E8%B2%A1%E7%B6%93-%E6%B8%AF%E4%BA%A4%E6%89%80%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%9B%88%E5%88%A9%E5%8D%8724-%E6%B4%BE%E4%B8%AD%E6%9C%9F%E6%81%AF%E6%AF%8F%E8%82%A17-43%E5%85%83-045220515.html",
-      "pubDate": "2026-08-19 04:52:20",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/en/fortune_insight_694/dbddec0f78d2a1ab4bc25a6950c04ffb.png",
-      "keywords": [
-        "港交所"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "14377c746babb24532e3f5c0c6017e29",
       "title": "《大行》大摩降百度(BIDU.US)評級至「減持」兼削目標價至80美元 AI投資急升",
       "description": "摩根士丹利發表報告指,百度(09888.HK)次季核心廣告收入按年跌19%,反映線下垂直行業復甦慢於預期,人工智能變現仍處早期階段。該行預期下半年廣告業務復甦有限,第三季核心廣告收入按年料跌18.5%。核心經營溢利將進一步按季下跌,並於第三季見底,因下半年加大人才招聘、文心大模型升級及算力擴展的投資。 報告指,百...",
@@ -11065,23 +11607,6 @@
         "sports"
       ],
       "region": "hk"
-    },
-    {
-      "id": "9832f40fd4fdb83808ce457c7ecb4c9d",
-      "title": "宇樹科技登陸 A 股科創板 首日高開 629% 總市值破 4,400 億 抽中一手賬面狂賺近 48 萬人幣 但中籤率僅約 0.018%",
-      "description": "全球科技界與資本市場迎來「具身智能(Embodied AI)」的里程碑時刻。中國通用機械人領軍企業宇樹科技(Unitree)今日(8月19日)正式登陸上海科創板。乘著 AI 浪潮,其股價開市即報 1,100 元(人民幣,下同),較發行價 150.8 元大幅狂飆約 629%,總市值瞬間突破 4,400 億元。一文為您客觀拆解這隻超級新股的「造富神話」、豪華戰投陣容,以及支撐其千億估值的底層商業邏輯。 散戶狂熱與造富神話:科創板兩大歷史紀錄 宇樹科技的 IPO 堪稱 A 股市場近年來最令人矚目的盛宴。 在財富效應的驅動下,此次公開招股共吸引高達 978.46 萬名散戶認購,直接創下科創板歷史新高。在啟動回撥機制後,中籤率被大幅攤薄至僅約.. The post 宇樹科技登陸 A 股科創板 首日高開 629% 總市值破 4,400 億 抽中一手賬面狂賺近 48 萬人幣 但中籤率僅約 0.018% appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/news/unitree-robotics-star-market-ipo-629-percent-surge-deepseek-humanoid-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2033594/",
-      "pubDate": "2026-08-19 02:53:17",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/a8100f59-986f-4737-964a-89942e8686b2_21254152686a851a934a5d5.jpg",
-      "keywords": [
-        "即時財經"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "cbcf840a31cd1faf1bef19f7fde810b3",
@@ -137484,5 +138009,7 @@
       "region": "hk",
       "pinned": true
     }
-  ]
+  ],
+  "total": 7059,
+  "last_updated": "2026-08-20T13:09:12.387244"
 }
