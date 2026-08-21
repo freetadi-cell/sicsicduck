@@ -1,23 +1,6 @@
 {
   "articles": [
     {
-      "id": "126d2da8326ab8262b65c489313bb3de",
-      "title": "更新:債息上升拖累股市跌至逾兩周低位",
-      "description": "美國股市周四下跌,跌至逾兩周低位,因債券孳息率上升,儘管財政部介入債市。 道瓊斯工業平均指數跌1.3%,收報52,759.21點,為7月31日以來最低收市水平。納斯達克綜合指數跌1%至26,067.17點,標普500指數跌0.9%至7,641.16點,兩者均錄得8月3日以來最低收市水平。 除能源及房地產板塊外,其...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E5%82%B5%E6%81%AF%E4%B8%8A%E5%8D%87%E6%8B%96%E7%B4%AF%E8%82%A1%E5%B8%82%E8%B7%8C%E8%87%B3%E9%80%BE%E5%85%A9%E5%91%A8%E4%BD%8E%E4%BD%8D-204202855.html",
-      "pubDate": "2026-08-20 20:42:02",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "道瓊斯工業平均指數"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "17a67c701b42dbb8c4ad548bd8cf432b",
       "title": "特朗普警告將對伊朗採取嚴厲經濟行動 美股指數下跌 油價及債息上升",
       "description": "美國股市周四下跌,總統特朗普警告將對伊朗及任何向該中東國家提供支持的國家實施嚴厲經濟制裁後,債息及油價急升。 伊朗外長Seyed Abbas Araghchi在X發文淡化特朗普的警告,稱其為轉移美國面對「前所未有的債務及利息成本飆升」挑戰的注意力。 儘管美國財長Scott Bessent表示,昨日公布的長期國債回...",
@@ -54,17 +37,31 @@
       "pinned": true
     },
     {
-      "id": "bd97b27767d1cb949951b0eb214107ba",
-      "title": "英偉達計劃推出專用晶片重返中國AI市場",
+      "id": "ad81eadcf4d4327e787b8e3fc661bfba",
+      "title": "YOHO WEST PARKSIDE 兩房戶年半炒貴百萬",
+      "description": "【明報專訊】屢錄二手獲利個案的天水圍YOHO WEST PARKSIDE,日前再錄兩宗二手成交。中原副分區營業經理何家樂表示,YOHO WEST PARKSIDE 1B座中層B6室,實用408方呎,兩房間隔,以560萬元成交,實呎13,725元。原業主去年3月以463.13萬元一手買入,近日正式收樓後便隨即放盤,持貨約1年半,帳面獲利96.87萬元或21%。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260821/s00004/1787248731145/yoho-west-parkside-%E5%85%A9%E6%88%BF%E6%88%B6%E5%B9%B4%E5%8D%8A%E7%82%92%E8%B2%B4%E7%99%BE%E8%90%AC",
+      "pubDate": "2026-08-20 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "d1178120488714eff1f8f58f16f19050",
+      "title": "貝森特稱可能進一步加大美債回購力度 並將公佈新的財政舉措",
       "description": null,
-      "link": "https://hk.finance.yahoo.com/news/%E8%8B%B1%E5%81%89%E9%81%94%E8%A8%88%E5%8A%83%E6%8E%A8%E5%87%BA%E5%B0%88%E7%94%A8%E6%99%B6%E7%89%87%E9%87%8D%E8%BF%94%E4%B8%AD%E5%9C%8Bai%E5%B8%82%E5%A0%B4-182431639.html",
-      "pubDate": "2026-08-20 18:24:31",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%9D%E6%A3%AE%E7%89%B9%E7%A8%B1%E5%8F%AF%E8%83%BD%E9%80%B2-%E6%AD%A5%E5%8A%A0%E5%A4%A7%E7%BE%8E%E5%82%B5%E5%9B%9E%E8%B3%BC%E5%8A%9B%E5%BA%A6-%E4%B8%A6%E5%B0%87%E5%85%AC%E4%BD%88%E6%96%B0%E7%9A%84%E8%B2%A1%E6%94%BF%E8%88%89%E6%8E%AA-162634748.html",
+      "pubDate": "2026-08-20 21:50:02",
       "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEA9Q076_M.jpg",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/9a7280820810b027dd353ce66faff112.jpg",
       "keywords": [
-        "英偉達",
-        "人工智能",
-        "中國"
+        "貝森特",
+        "川普"
       ],
       "category": [
         "business"
@@ -73,23 +70,321 @@
       "pinned": true
     },
     {
-      "id": "8fb0e4171eacf31461f0e0c789fea3f6",
-      "title": "阿里巴巴次季經調整淨利降38% 季度資本支出大增75%",
-      "description": "阿里巴巴(09988)公布,截至6 月30日首季度,淨利潤為104.44 億元(人民幣‧下同。15.39 億美元),按年下降 75.35%。每股收益0.46元。 歸屬於普通股股東淨利潤為105.37 億元(15.53 億美元),按年跌75.56%。 非公認會計準則淨利潤為207.15 億元(30.53 億美元),相較 2025 年同期335.1億元下降 38.18%。 經營利潤為151.61億元(22.34億美元),按年下降57%,主要是由於經調整 EBITA的減少、本年度計提的商譽減值以及準備金所致。經調整EBITA同比下降30%至273.29億元(40.28億美元),主要歸因於對科技的投入。 收入為2,689.53 億元(396.39 億美元),按年增長8.6%。 季度內,AI雲與算力服務收入為484.37億元(71.39億美元),總收入及外部客戶收入按年增長至45%。集團稱,這一增長勢頭主要由AI相關產品採用量的提升所驅動。 AI相關產品收入123.76億元(18.24億美元),實現連續第十二個季度的三位數同比增長。 季度內資本性支出為676.78億元(99.75億美元),較2025年同期的386.76億元增長75%,源於持續投入AI基礎設施,以滿足強勁且不斷增長的客戶 需求。 截至2026年6月30日止季度,集團以1.62億美元的總價回購1,340萬股普通股(相當於170萬股ADS)。",
-      "link": "https://www.bastillepost.com/hongkong/article/16606767-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%AC%A1%E5%AD%A3%E7%B6%93%E8%AA%BF%E6%95%B4%E6%B7%A8%E5%88%A9%E9%99%8D38",
-      "pubDate": "2026-08-20 09:59:58",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/03/20260323_FI_source-web_09988.jpg",
+      "id": "126d2da8326ab8262b65c489313bb3de",
+      "title": "更新:債息上升拖累股市跌至逾兩周低位",
+      "description": "美國股市周四下跌,跌至逾兩周低位,因債券孳息率上升,儘管財政部介入債市。 道瓊斯工業平均指數跌1.3%,收報52,759.21點,為7月31日以來最低收市水平。納斯達克綜合指數跌1%至26,067.17點,標普500指數跌0.9%至7,641.16點,兩者均錄得8月3日以來最低收市水平。 除能源及房地產板塊外,其...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E5%82%B5%E6%81%AF%E4%B8%8A%E5%8D%87%E6%8B%96%E7%B4%AF%E8%82%A1%E5%B8%82%E8%B7%8C%E8%87%B3%E9%80%BE%E5%85%A9%E5%91%A8%E4%BD%8E%E4%BD%8D-204202855.html",
+      "pubDate": "2026-08-20 20:42:02",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "阿里巴巴(09988)",
-        "錢財事"
+        "道瓊斯工業平均指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "29a64d4212d13fc5229b5486da51f3b7",
+      "title": "銀債今開鑼 宜最多抽30手 拆解100萬認購迷思 專家教「3層階梯式」理財",
+      "description": "新一批銀色債券今日(21日)起正式接受認購,發行額最多550億元,年期3年,保底息率達4.25厘,銀行及券商均推出多項豁免收費優惠、甚至大抽獎吸客,不少年滿60歲的「老友記」都希望認購,但究竟抽幾多手才合適?為何每年均有人會大手認購100手?卓橋財富創辦人余碩衡接受《星島頭條》訪問時直言,銀債由特區政府百分百背書,「接近零風險」,建議一般投資者抽20至30手(20萬至30萬元),切忌為賺取退款優惠",
+      "link": "https://www.stheadline.com/investment/3606393/%E9%8A%80%E5%82%B5%E4%BB%8A%E9%96%8B%E9%91%BC-%E5%AE%9C%E6%9C%80%E5%A4%9A%E6%8A%BD30%E6%89%8B-%E6%8B%86%E8%A7%A3100%E8%90%AC%E8%AA%8D%E8%B3%BC%E8%BF%B7%E6%80%9D-%E5%B0%88%E5%AE%B6%E6%95%993%E5%B1%A4%E9%9A%8E%E6%A2%AF%E5%BC%8F%E7%90%86%E8%B2%A1",
+      "pubDate": "2026-08-20 22:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0c09c0b1aa86d8a18d6ad5e3c77eb90f/2026-08/20260820_fin___si.png",
+      "keywords": [
+        "退休理財",
+        "定期存款",
+        "資產配置",
+        "卓橋財富",
+        "保底息",
+        "銀債",
+        "銀色債券",
+        "銀色債券2026"
       ],
       "category": [
         "business",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "514fab026f7f80c448088111f2cdb5e9",
+      "title": "Adeptus完成第三宗收購 擴展南加州顧問業務",
+      "description": "Adeptus自2025年加入Current平台以來,已完成第三宗收購,持續其加速增長,擴展這間總部設於新澤西州的會計師事務所的能力、地理覆蓋範圍及南加州的專業顧問服務。 Shapiro Villalobos & Associates是繼今年較早前加入的Besselman & Company及McNulty & Associates之後,第三間被收購的公司。這次收購令Adeptus的收入由加入Current時的約4050萬美元,增至現時約5360萬美元,按年增長12.9%。 Current行政總裁Steve Stagner表示,優秀的公司值得擁有優秀的平台。他指出,Adeptus本身已具備卓越的領導能力、深厚的客戶關係及差異化的商業模式。透過將這些優勢與Current的技術、營運資源、人工智能技術、全球交付模式及收購專業知識結合,Adeptus得以加速增長,同時繼續提供客戶所期望的高度個人化服務。 Adeptus透過結合傳統稅務、審計及鑒證服務,以及全國知名的商業管理業務,建立了業界最獨特的顧問平台之一。該平台服務高淨值人士、藝人、運動員、創作者及其他客戶,這些客戶的財務狀況所需遠超年度報稅服務。 Adeptus行政總裁Howard Krant表示,公司一直相信,其最大價值來自於深入參與客戶的生活及業務。他指,無論是協助企業家擴展公司,抑或引導客戶應對突如其來的成功所帶來的獨特財務挑戰,公司的角色都是保護客戶所建立的一切,並協助他們為未來作出明智決定。Current加速了公司實現這目標的能力,同時沒有改變公司的本質。 對於在部分全球最具活力及不可預測行業工作的客戶而言,財務複雜性往往比管理所需基礎設施更快出現。Adeptus作為值得信賴的顧問,協助客戶應對增長、保全財富、協調專業顧問,並建立長期的財務穩定性。 SVA管理合夥人Stuart Shapiro表示,公司一直在尋找一個與其同樣致力於建立長期關係及提供卓越客戶服務的合作夥伴。他指,Adeptus及Current提供規模、技術及資源,以支持公司持續增長,同時讓公司能繼續成為客戶所信賴的顧問。 Adeptus於2026年完成三宗收購,成為Current增長模式的有力典範,透過策略性投資、擴展能力及共享營運資源,協助成功的地區性公司擴大規模,同時保持其在本地市場的深厚根基。 Shapiro Villalobos & Associates是一間總部設於加州伯班克的會計及商業管理事務所。該公司以提供個人化服務為基礎,與客戶緊密合作,了解其目標並提供切合其獨特需求的實用財務指導。在註冊會計師Stuart Shapiro及Laila Villalobos兩位合夥人領導下,該公司以其迅速回應的服務、值得信賴的關係及專業技術而聞名。作為Adeptus的一部分,Shapiro Villalobos & Associates將其本地化、以客戶為中心的方法,與一間不斷發展的全國性機構的擴展資源、技術及能力結合。 SVA為個人、私人企業、遺產及信託,以及各行各業的機構提供稅務規劃及準備、商業管理、會計及簿記、薪酬、商業諮詢、退休規劃、遺產及信託稅務服務、美國國稅局代表服務及管理顧問服務。 Adeptus於1986年成立,是一間領先的稅務、審計及商業管理事務所,服務美國及全球的個人及企業。Adeptus在紐約、新澤西州、馬里蘭州及加州設有八個辦事處,為藝術家、藝人、運動員、企業家、行政人員及成長型企業提供高度個人化的會計、稅務及顧問服務。Adeptus以其協作方式及深厚的行業專業知識而聞名,為大型全球性公司提供一個精密而個人化的替代方案,協助客戶應對複雜性、規劃增長,並在其發展的每個階段作出明智而自信的決定。 「Adeptus」是Adeptus Partners有限責任公司及Adeptus Advisors Group有限責任公司提供專業服務的品牌名稱。Adeptus Partners有限責任公司及Adeptus Advisors Group有限責任公司根據美國註冊會計師協會專業行為守則及適用法律、法規和專業標準,以替代執業結構運作。Adeptus Partners有限責任公司是一間獲許可的獨立註冊會計師事務所,為其客戶提供鑒證服務;而Adeptus Advisors Group有限責任公司則為其客戶提供稅務及商業諮詢服務。Adeptus Advisors Group有限責任公司並非註冊會計師事務所。 Current是一個由頂級會計及顧問事務所組成的全國性合作夥伴網絡。Current以本地領導及企業家自主為基礎,為其合作夥伴事務所提供全國性平台的資源、技術及規模。Current由Jake Sloane及Frank Zhang創立,並獲Thrive Holdings支持,為全國超30間表現卓越的公司提供企業級支援、全球服務交付及人工智能驅動的創新。Current獲評為《今日會計》最佳科技公司之一,正在重新定義在當今專業服務領域中蓬勃發展的意義。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16609554-adeptus%E5%AE%8C%E6%88%90%E7%AC%AC%E4%B8%89%E5%AE%97%E6%94%B6%E8%B3%BC-%E6%93%B4%E5%B1%95%E5%8D%97%E5%8A%A0%E5%B7%9E%E9%A1%A7%E5%95%8F%E6%A5%AD%E5%8B%99",
+      "pubDate": "2026-08-20 21:58:15",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/e771c93da85f427db58e4edbdc6cb922_image_281229_FB.jpg",
+      "keywords": [
+        "顧問服務",
+        "current",
+        "收購",
+        "adeptus",
+        "商業事",
+        "南加州"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cb1543223b42940a25566daec453a83e",
+      "title": "錢塘江退潮現「巨型流沙畫」 航拍猶如巨型羽毛引網驚呼:大自然太會畫畫!",
+      "description": "錢塘江退潮現「巨型流沙畫」,四色泥沙交錯如巨型羽毛引網驚嘆:大自然太會畫畫! 日前,浙江錢塘江退潮後,岸邊出現棕、褐、灰、黑等不同色調交錯的蜿蜒沙紋。從高空俯瞰,整片灘塗猶如一幅鋪展在大地上的「巨型流沙畫」,細密紋理更被不少網民形容酷似巨大羽毛。相關航拍片段在網上曝光後,迅速引起熱議。 影片可見,原本較為平坦的泥灘經強勁潮水反覆沖刷後,留下密集的溝壑及水流痕跡,一道道線條向四周伸延,形成猶如羽軸及羽枝般的特殊圖案。棕色、褐色、灰色及黑色泥沙互相交錯,在航拍視角下呈現出層次分明的天然紋理,恍如有人以大地為畫布,在錢塘江灘塗上揮筆作畫。 不少網民看過片段後大感驚艷,紛紛留言直呼:「大自然也太會畫畫了吧」、「第一次看到這麼漂亮的大地紋路」、「颱風帶走風雨,卻留下美景」,甚至有人專程前往錢塘江附近,希望一睹這片罕見景觀。 報導指出,錢塘江出現的「大地流沙畫」並非單純由強風吹出,而是颱風、潮汐及泥沙共同作用下形成的自然地貌。這類地貌在地理學上稱為「潮汐樹」,主要出現在淤泥質潮灘。當潮水漲退時,水流會在灘塗上逐漸沖刷出主要潮溝,再由主潮溝向兩側分岔,形成大量細小支溝。從高空俯瞰,整個水系呈樹枝狀伸延,外形猶如一棵大樹或一根羽毛,因此被稱為「潮汐樹」。 今次受「白海豚」外圍環流影響,錢塘江潮水動力明顯增強。強勁潮流持續沖刷及侵蝕灘塗,同時重新分選及搬運泥沙,令原本較平坦的江灘形成更為清晰的溝槽及紋理。當潮水退去後,大量水流留下的痕跡便完整呈現在灘塗表面,形成今次壯觀景象。 至於灘塗為何會呈現棕、褐、灰、黑等不同顏色,主要與沉積物本身的成分及分布有關。不同深度的泥沙所含有機質及礦物成分有所不同,在強潮反覆沖刷、翻動及重新沉積後,不同顏色的泥沙也會重新排列及分布,最終形成肉眼可見、層層交錯的天然色帶。專家解釋,有關景象屬自然地貌形成過程,並非由水體污染造成,也不是人工刻意製作。",
+      "link": "https://www.bastillepost.com/hongkong/article/16549292-%E9%8C%A2%E5%A1%98%E6%B1%9F%E9%80%80%E6%BD%AE%E7%8F%BE%E3%80%8C%E5%B7%A8%E5%9E%8B%E6%B5%81%E6%B2%99%E7%95%AB%E3%80%8D-%E8%88%AA%E6%8B%8D%E7%8C%B6%E5%A6%82%E5%B7%A8%E5%9E%8B%E7%BE%BD%E6%AF%9B%E5%BC%95",
+      "pubDate": "2026-08-20 21:55:17",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20250314_PL_paint_source_web1.jpg",
+      "keywords": [
+        "plastic",
+        "奇聞"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6a545a5d3eed5c5e8c44b1c3ec26936c",
+      "title": "美國批准向卡塔爾351億軍售 含最多4架KC-46A",
+      "description": "美國周四批准一項潛在價值45億美元(約351億港元)的空中加油機售卡塔爾交易。美國國務院宣布,卡塔爾尋求購買最多四架KC-46A空中加油機,機上配備",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382167/%E7%BE%8E%E5%9C%8B%E6%89%B9%E5%87%86%E5%90%91%E5%8D%A1%E5%A1%94%E7%88%BE351%E5%84%84%E8%BB%8D%E5%94%AE-%E5%90%AB%E6%9C%80%E5%A4%9A4%E6%9E%B6kc-46a",
+      "pubDate": "2026-08-20 21:51:57",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1166905157586259968802647.jpeg/XcyQKcOjOdfQxcAh_cF7f_rIns-vZH8WAQFZ2gEBWdo",
+      "keywords": [
+        "國際新聞",
+        "國際",
+        "新聞",
+        "香港01",
+        "世界新聞",
+        "環球",
+        "hk01"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "84167b53b21e776ae302ee7873543777",
+      "title": "歐洲多國領袖促以色列停建加沙定居點 以外長反斥忽略巴極端主義",
+      "description": "歐洲七國領袖譴責以色列在約旦河西岸推進大型定居點項目。事緣當局就E1地段逾1,200套住房招標。據歐洲新聞台(Euronews)8月20日報道,法國、德國",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382165/%E6%AD%90%E6%B4%B2%E5%A4%9A%E5%9C%8B%E9%A0%98%E8%A2%96%E4%BF%83%E4%BB%A5%E8%89%B2%E5%88%97%E5%81%9C%E5%BB%BA%E5%8A%A0%E6%B2%99%E5%AE%9A%E5%B1%85%E9%BB%9E-%E4%BB%A5%E5%A4%96%E9%95%B7%E5%8F%8D%E6%96%A5%E5%BF%BD%E7%95%A5%E5%B7%B4%E6%A5%B5%E7%AB%AF%E4%B8%BB%E7%BE%A9",
+      "pubDate": "2026-08-20 21:51:33",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260821/1167337463878782976928305.png/SXuZc69CsMk2uFN0iEQdkKANXlh6x01J3h1n0t4dZ9I",
+      "keywords": [
+        "國際新聞",
+        "國際",
+        "新聞",
+        "香港01",
+        "世界新聞",
+        "環球",
+        "hk01"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e609c5f10e03852598002cc947c95406",
+      "title": "伊朗局勢|阿聯酋宣布切斷與伊朗經濟聯繫 專家:影響或超越美軍封鎖",
+      "description": "美伊緊張局勢持續升溫之際,阿聯酋突然宣佈,切斷與伊朗的所有經濟聯繫,令中東局勢再添變數。彭博社報道指,美伊戰爭久拖不決,華府正加大對伊朗的經濟施壓,而身為德黑蘭最核心貿易夥伴的阿聯酋祭出貿易禁運,對伊朗經濟造成的衝擊,或比美歐發動的制裁更具殺傷力。 指控伊朗導彈襲海運 阿聯酋配合華府「經濟扼殺」 據報,阿聯酋外交部於8月18日發出聲明,指當局偵測到兩枚從伊朗發射、瞄準海上交通的彈道導彈,導彈最終墜",
+      "link": "https://www.stheadline.com/realtime-world/3606646/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E9%98%BF%E8%81%AF%E9%85%8B%E5%AE%A3%E5%B8%83%E5%88%87%E6%96%B7%E8%88%87%E4%BC%8A%E6%9C%97%E7%B6%93%E6%BF%9F%E8%81%AF%E7%B9%AB-%E5%B0%88%E5%AE%B6%E5%BD%B1%E9%9F%BF%E6%88%96%E8%B6%85%E8%B6%8A%E7%BE%8E%E8%BB%8D%E5%B0%81%E9%8E%96",
+      "pubDate": "2026-08-20 21:39:58",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e6d655f5f3a33f05eb37bf6817139b38/2026-08/2026-08-20_22_30_20.png",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "473480af361de201f2e20defad5463b8",
+      "title": "長期用牙籤剔蛀牙 泰男左臉嚴重發炎長巨大腫塊 上網求助遭質疑AI造假",
+      "description": "泰國一名男子長期用牙籤剔蛀牙導致左臉嚴重發炎長巨大腫塊,上網求助反被質疑AI造假,善心人士親訪揭真相。 綜合泰媒報導,泰國一名31歲男子疑因長期使用牙籤清理蛀牙位置,導致左邊臉部嚴重發炎,之後更長出巨大腫塊,每日飽受劇痛折磨。他曾絕望表示,不知道自己「還能活多久」。男子之後將自身遭遇及照片上載至社交平台求助,未料卻遭部分網民質疑照片由人工智能(AI)生成或經修圖處理,令他大受打擊。所幸近日有善心人士親自上門探望,證實情況屬實並向他提供經濟援助。 據悉,該名31歲男子目前與伴侶同住在一間狹小房間內。他透露,自己最初只是患有一般蛀牙,但由於進食時食物殘渣經常攝入蛀牙位置,因此逐漸養成頻繁使用牙籤清理的習慣。未料,長期反覆使用牙籤後,疑似持續刺激患處並引發嚴重發炎反應,左邊臉部之後逐漸腫脹,最終形成一個巨大的腫塊。 男子表示,臉上的巨大腫塊令他每日承受劇烈疼痛,生活也大受影響,甚至不知道自己還能支撐多久。無奈之下,他決定將自己的照片及遭遇上載至網上,希望獲得外界協助。 然而,相關照片曝光後,卻有不少網民對事件真實性提出質疑,甚至有人指像片是利用AI生成或經修圖軟件加工,懷疑男子藉此製造虛假消息。面對大量質疑及冷嘲熱諷,男子坦言一度不知所措,情緒也受到打擊。 Facebook專頁「Met Jaochainoi」創辦人Met得悉事件後,親自前往男子住所探望,並證實男子的病情及生活處境屬實,並非網民所指的AI合成或修圖造假,Met之後即場向男子提供初步經濟援助。他也表示,專頁公開的相關照片、影片及資料均已獲當事人授權,希望透過今次事件提醒公眾重視正確的口腔衞生習慣,切勿忽視牙齒及口腔健康問題。",
+      "link": "https://www.bastillepost.com/hongkong/article/16549288-%E9%95%B7%E6%9C%9F%E7%94%A8%E7%89%99%E7%B1%A4%E5%89%94%E8%9B%80%E7%89%99-%E6%B3%B0%E7%94%B7%E5%B7%A6%E8%87%89%E5%9A%B4%E9%87%8D%E7%99%BC%E7%82%8E%E9%95%B7%E5%B7%A8%E5%A4%A7%E8%85%AB%E5%A1%8A-%E4%B8%8A",
+      "pubDate": "2026-08-20 21:35:11",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20250314_PL_face_source_web1-1.jpg",
+      "keywords": [
+        "plastic",
+        "奇聞"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "48e1d047d5fb57440a613eb8c69933ef",
+      "title": "法國負塞爾維亞 Wemba復出國際賽即敗興",
+      "description": "【Now Sports】NBA球星雲班亞馬相隔兩年再披法國國家隊戰衣,結果受挫於由尤基治領軍的塞爾維亞。聖安東尼奧馬刺球星雲班亞馬(Victor Wembanyama)在周四的友誼賽替法國上陣,是自兩年前奧運決賽負美國後再次參與國際賽,不過他表現未如理想,受制於塞爾維亞的壓迫性防守,在貝爾格萊德度過艱難的一夜,全...",
+      "link": "https://hk.sports.yahoo.com/news/%E6%B3%95%E5%9C%8B%E8%B2%A0%E5%A1%9E%E7%88%BE%E7%B6%AD%E4%BA%9E-wemba%E5%BE%A9%E5%87%BA%E5%9C%8B%E9%9A%9B%E8%B3%BD%E5%8D%B3%E6%95%97%E8%88%88-213400849.html",
+      "pubDate": "2026-08-20 21:34:00",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "法國國家隊",
+        "塞爾維亞",
+        "星雲班亞馬",
+        "victor wembanyama",
+        "聖安東尼奧馬刺",
+        "尤基治"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6d01cf87e1ea9c08fff691703d945e6a",
+      "title": "英伟达年底前出货中国专用AI芯片 争夺人工智能应用市场",
+      "description": "美国科技媒体《The Information》周四(8月20日)援引两名英伟达员工的话报道,这家美国芯片巨头计划在今年年底前,开始向中国客户小批量供应一款专门为中国市场设计的人工智能芯片。",
+      "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260820-%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%B9%B4%E5%BA%95%E5%89%8D%E5%87%BA%E8%B4%A7%E4%B8%AD%E5%9B%BD%E4%B8%93%E7%94%A8ai%E8%8A%AF%E7%89%87-%E4%BA%89%E5%A4%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8%E5%B8%82%E5%9C%BA",
+      "pubDate": "2026-08-20 21:30:43",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/6250404e-9cde-11f1-bb21-005056bfb2b6/w:1024/p:16x9/2026-08-20T172544Z-2114380371-RC2QRLA53G3J-RTRMADP-3-USA-CHINA-NVIDIA.jpg",
+      "keywords": [
+        "中国"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8d8a266f24f2a4076938611aae037d70",
+      "title": "CES Asia Unveiled Seoul 將進軍韓國首爾消費電子展 KES,邁向 CES 2027",
+      "description": "透過與 KEA 的合作,CES 在 KES 展會上深化了區域參與,並彰顯全球創新成果 維吉尼亞州阿靈頓2026年8月21日 /美通社/ -- 美國消費者技術協會(Consumer Technology Association,簡稱 CTA)® 是 CES® 的擁有者及主辦單位,宣佈將與 韓國電子資訊通訊產業振興會(Korea Electronics Association,簡稱 KEA),於 10 月 13 日至 16 日在 COEX 會議暨展覽中心舉行的 KES 期間,舉辦「CES AsiaTM Unveiled Seoul」活動。延續韓國在 CES...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/ces-asia-unveiled-seoul--kes-ces-2027-302856867.html",
+      "pubDate": "2026-08-20 21:30:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1596331/CES.jpg?id=OA2899230&p=original",
+      "keywords": [
+        "tds"
+      ],
+      "category": [
+        "technology",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f8ebd319c0f329abecd82d6d8c637be7",
+      "title": "學習服務強勁增長 有道二季度收入小幅增長",
+      "description": "在線教育公司網易有道(DAO.US)周四公布,智能設備和在線營銷服務部門的收入下滑,但學習服務強勁增長,第二季度的收入穫小幅增長。 公司由遊戲巨頭網易控股,截至6月的三個月內收入同比增長3.5%至15億元,上年同期為14億元。受輔導服務強勁增長推動,學習服務收入增長20.9%至7.96億元,佔總收入一半以上。但智...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%AD%B8%E7%BF%92%E6%9C%8D%E5%8B%99%E5%BC%B7%E5%8B%81%E5%A2%9E%E9%95%B7-%E6%9C%89%E9%81%93%E4%BA%8C%E5%AD%A3%E5%BA%A6%E6%94%B6%E5%85%A5%E5%B0%8F%E5%B9%85%E5%A2%9E%E9%95%B7-212559630.html",
+      "pubDate": "2026-08-20 21:25:59",
+      "source_name": "Yahoo Finance",
+      "image_url": null,
+      "keywords": [
+        "retirement",
+        "investing",
+        "economy",
+        "business",
+        "stocks",
+        "track portfolio",
+        "stock",
+        "financial information",
+        "finance",
+        "stock research",
+        "business news",
+        "tax",
+        "real estate",
+        "suze orman",
+        "stock valuation",
+        "investment tools",
+        "mutual funds",
+        "mortgage",
+        "quote",
+        "personal finance"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "557f13a07efae8476f47dc185f84b027",
+      "title": "美国将对伊朗祭出史上最严厉制裁 贝森特敦促中国配合",
+      "description": "美国财政部长贝森特周四(8月20日)表示,美国将对伊朗实施“史上最严厉的制裁”,并敦促中国及美国盟友配合华盛顿,加入针对德黑兰的大规模经济施压行动。",
+      "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260820-%E7%BE%8E%E5%9B%BD%E5%B0%86%E5%AF%B9%E4%BC%8A%E6%9C%97%E7%A5%AD%E5%87%BA%E5%8F%B2%E4%B8%8A%E6%9C%80%E4%B8%A5%E5%8E%89%E5%88%B6%E8%A3%81-%E7%BE%8E%E8%B4%A2%E9%95%BF%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9B%BD%E9%85%8D%E5%90%88",
+      "pubDate": "2026-08-20 21:23:03",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/4eab3bee-9cdd-11f1-853b-005056bfb2b6/w:1024/p:16x9/2026-08-20T153741Z-1726519747-RC2F2NAG98JE-RTRMADP-3-USA-TRUMP.jpg",
+      "keywords": [
+        "中国"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "223623a400a5648a0001dcd76cc310ae",
+      "title": "博通據報尋求籌集逾600億美元用於AI晶片交易",
+      "description": "Investing.com - 據彭博社週四引述知情人士報導,博通公司(Broadcom Inc.)正與一批貸款機構洽談,擬籌集逾600億美元的債務融資,用於支持一項人工智能晶片交易,受益方包括Anthropic PBC及其他企業。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8D%9A%E9%80%9A%E6%93%9A%E5%A0%B1%E5%B0%8B%E6%B1%82%E7%B1%8C%E9%9B%86%E9%80%BE600%E5%84%84%E7%BE%8E%E5%85%83%E7%94%A8%E6%96%BCai%E6%99%B6%E7%89%87%E4%BA%A4%E6%98%93-211953369.html",
+      "pubDate": "2026-08-20 21:19:53",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA5I05A_M.jpg",
+      "keywords": [
+        "人工智能"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a3941dfdc724f4df5f69164912f276b0",
+      "title": "华盛顿指责北京任意拘留第二位美国公民",
+      "description": "距离中国国家主席习近平访问华盛顿仅剩一月之际,美国周四谴责中国以间谍罪名拘留一名美国公民的行为属于“任意拘留”,并呼吁释放该公民以及另一名被拘留的美国人。",
+      "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260820-%E5%8D%8E%E7%9B%9B%E9%A1%BF%E6%8C%87%E8%B4%A3%E5%8C%97%E4%BA%AC%E4%BB%BB%E6%84%8F%E6%8B%98%E7%95%99%E7%AC%AC%E4%BA%8C%E4%BD%8D%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91",
+      "pubDate": "2026-08-20 21:15:54",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/8ec92a26-6658-11f1-a870-005056a97e36/w:1024/p:16x9/U-Min-Zin-en-2019.png",
+      "keywords": [
+        "中国"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3640b3720fb0d8271b3eb03287c00f56",
+      "title": "中国继续保持德国最大贸易伙伴地位",
+      "description": "据德新社报道:中国继续保持德国最大贸易伙伴地位。中国与德国经济之间的贸易往来是德国经济的重要推动力。不过,德国出口最大目的地仍然是美国。但美国提高关税的政策已开始产生负面影响。",
+      "link": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20260820-%E4%B8%AD%E5%9B%BD%E7%BB%A7%E7%BB%AD%E4%BF%9D%E6%8C%81%E5%BE%B7%E5%9B%BD%E6%9C%80%E5%A4%A7%E8%B4%B8%E6%98%93%E4%BC%99%E4%BC%B4%E5%9C%B0%E4%BD%8D",
+      "pubDate": "2026-08-20 21:12:34",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/d788ba42-9cdb-11f1-9d6b-005056a97e36/w:1024/p:16x9/2026-07-31T021011Z-1403968230-RC2QSLAEH2MQ-RTRMADP-3-CHINA-ECONOMY-PMI.jpg",
+      "keywords": [
+        "中国"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "74ba34301d54230fca4231b9a6351b25",
@@ -212,20 +507,6 @@
       "pubDate": "2026-08-20 20:30:00",
       "source_name": "Ming Pao",
       "image_url": "https://fs.mingpao.com/pns/20260821/s00072/4adfe3acef694d368835526f3899b2cd.jpg",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "ad81eadcf4d4327e787b8e3fc661bfba",
-      "title": "YOHO WEST PARKSIDE 兩房戶年半炒貴百萬",
-      "description": "【明報專訊】屢錄二手獲利個案的天水圍YOHO WEST PARKSIDE,日前再錄兩宗二手成交。中原副分區營業經理何家樂表示,YOHO WEST PARKSIDE 1B座中層B6室,實用408方呎,兩房間隔,以560萬元成交,實呎13,725元。原業主去年3月以463.13萬元一手買入,近日正式收樓後便隨即放盤,持貨約1年半,帳面獲利96.87萬元或21%。",
-      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260821/s00004/1787248731145/yoho-west-parkside-%E5%85%A9%E6%88%BF%E6%88%B6%E5%B9%B4%E5%8D%8A%E7%82%92%E8%B2%B4%E7%99%BE%E8%90%AC",
-      "pubDate": "2026-08-20 20:30:00",
-      "source_name": "Ming Pao",
-      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
       "keywords": null,
       "category": [
         "business"
@@ -731,6 +1012,25 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "bd97b27767d1cb949951b0eb214107ba",
+      "title": "英偉達計劃推出專用晶片重返中國AI市場",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E8%8B%B1%E5%81%89%E9%81%94%E8%A8%88%E5%8A%83%E6%8E%A8%E5%87%BA%E5%B0%88%E7%94%A8%E6%99%B6%E7%89%87%E9%87%8D%E8%BF%94%E4%B8%AD%E5%9C%8Bai%E5%B8%82%E5%A0%B4-182431639.html",
+      "pubDate": "2026-08-20 18:24:31",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA9Q076_M.jpg",
+      "keywords": [
+        "英偉達",
+        "人工智能",
+        "中國"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "2ea624431d1832b916c74d6b861f26f9",
@@ -6184,6 +6484,25 @@
         "technology"
       ],
       "region": "hk"
+    },
+    {
+      "id": "8fb0e4171eacf31461f0e0c789fea3f6",
+      "title": "阿里巴巴次季經調整淨利降38% 季度資本支出大增75%",
+      "description": "阿里巴巴(09988)公布,截至6 月30日首季度,淨利潤為104.44 億元(人民幣‧下同。15.39 億美元),按年下降 75.35%。每股收益0.46元。 歸屬於普通股股東淨利潤為105.37 億元(15.53 億美元),按年跌75.56%。 非公認會計準則淨利潤為207.15 億元(30.53 億美元),相較 2025 年同期335.1億元下降 38.18%。 經營利潤為151.61億元(22.34億美元),按年下降57%,主要是由於經調整 EBITA的減少、本年度計提的商譽減值以及準備金所致。經調整EBITA同比下降30%至273.29億元(40.28億美元),主要歸因於對科技的投入。 收入為2,689.53 億元(396.39 億美元),按年增長8.6%。 季度內,AI雲與算力服務收入為484.37億元(71.39億美元),總收入及外部客戶收入按年增長至45%。集團稱,這一增長勢頭主要由AI相關產品採用量的提升所驅動。 AI相關產品收入123.76億元(18.24億美元),實現連續第十二個季度的三位數同比增長。 季度內資本性支出為676.78億元(99.75億美元),較2025年同期的386.76億元增長75%,源於持續投入AI基礎設施,以滿足強勁且不斷增長的客戶 需求。 截至2026年6月30日止季度,集團以1.62億美元的總價回購1,340萬股普通股(相當於170萬股ADS)。",
+      "link": "https://www.bastillepost.com/hongkong/article/16606767-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%AC%A1%E5%AD%A3%E7%B6%93%E8%AA%BF%E6%95%B4%E6%B7%A8%E5%88%A9%E9%99%8D38",
+      "pubDate": "2026-08-20 09:59:58",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/03/20260323_FI_source-web_09988.jpg",
+      "keywords": [
+        "阿里巴巴(09988)",
+        "錢財事"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "fb8a8f4339f13a0c629567acd87ba9a5",
@@ -152534,6 +152853,34 @@
       "region": "hk"
     },
     {
+      "id": "5d7149f690a456ec",
+      "title": "古天樂演唱會︱古天樂率宣萱胡子彤開騷前拜神　兩場演出均有紅星嘉賓登場",
+      "description": "古天樂演唱會《MY FIRST SHOW》在今晚（8月21日）於紅磡香港體育館正式揭幕，古天樂在今日下午抵達紅館進行最後彩排。以工人褲再配太陽眼鏡現身紅館的古天樂，於3時進行拜神儀式。Band lea...",
+      "link": "https://topick.hket.com/article/4180597",
+      "pubDate": "2026-08-21 17:31:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4180597/KOO20260821_THUMB_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d409c1c6b0f22923",
+      "title": "張致恒經濟狀況｜張致恒認入不敷支會遲交租　Steven回應仍堅持請工人養狗苦衷",
+      "description": "【張致恒 / Boy'z / 雯雯】現年41歲的前男團Boy'z成員張致恒（Steven）與太太區燕雯（雯雯）婚後育有4子，六口之家不時傳出經濟及債務問題；自去年起，張致恒改過轉行做搬運工人自力更生，...",
+      "link": "https://topick.hket.com/article/4180404",
+      "pubDate": "2026-08-21 17:03:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4180404/5shzyadhs0i_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "0ae07233d873bfe2",
       "title": "名媛謝玲玲｜謝玲玲離婚多年七夕送花孝敬前奶奶　罕談與余寶珠真實關係靠1關鍵維繫",
       "description": "【謝玲玲 / 余寶珠 / 林建岳】現年69歲的名媛謝玲玲，與富商林建岳於1980年結婚，育有兩子三女，不過這段豪門婚姻維持15年後以離婚收場；不過，她與前夫家仍保持密切聯繫，時常參與家庭活動；而前奶奶...",
@@ -153943,6 +154290,6 @@
       "pinned": true
     }
   ],
-  "total": 7865,
-  "last_updated": "2026-08-21T17:14:40.537503"
+  "total": 7883,
+  "last_updated": "2026-08-21T18:10:34.202388"
 }
