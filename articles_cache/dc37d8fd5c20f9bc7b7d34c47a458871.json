@@ -1,0 +1,10 @@
+{
+  "id": "dc37d8fd5c20f9bc7b7d34c47a458871",
+  "title": "Waymo自研芯片提升機器人出租車性能,減少對英偉達依賴",
+  "source_name": "Yahoo Finance",
+  "link": "https://hk.finance.yahoo.com/news/waymo%E8%87%AA%E7%A0%94%E8%8A%AF%E7%89%87%E6%8F%90%E5%8D%87%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%87%BA%E7%A7%9F%E8%BB%8A%E6%80%A7%E8%83%BD-%E6%B8%9B%E5%B0%91%E5%B0%8D%E8%8B%B1%E5%81%89%E9%81%94%E4%BE%9D%E8%B3%B4-153225498.html",
+  "rewritten_title": "Waymo推出自研專用芯片 強化機器人出租車性能 降低英偉達依賴",
+  "rewritten": "Alphabet旗下自動駕駛部門Waymo宣布研發出專用集成電路芯片，已應用於最新一代機器人出租車。此芯片運算能力超過1000 TOPS，性能與英偉達最新自動駕駛系統相當，並由台積電以5納米製程生產。Waymo過往依賴英偉達及AMD芯片，自研芯片可加速傳感器數據處理和AI模型運行，提升車輛在複雜城市環境的反應與導航能力。舉措旨在降低成本，改善車內空間，同時減少對第三方供應商的依賴，與Alphabet整體自研芯片戰略方向一致。",
+  "status": "done",
+  "fetched_at": "2026-08-21T12:05:22"
+}
