@@ -1,19 +1,52 @@
 {
   "articles": [
     {
-      "id": "198919da3572e7afa514ba12ee618b13",
-      "title": "港股ADR預計恆指下周一低開123點 報25,886點",
-      "description": "ADR預託證券 | 代號 | 相對股價(HKD) | 港股對預託證券溢價(%) 長和 | CKHUY.NASD OTHER | 70.353 | 0.64% 中電控股 | CLPHY.NASD OTHER | 80.235 | -0.54% 香港中華煤氣 | HOKCY.NASD OTHER | 7.451 |...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E8%82%A1adr%E9%A0%90%E8%A8%88%E6%81%86%E6%8C%87%E4%B8%8B%E5%91%A8-%E4%BD%8E%E9%96%8B123%E9%BB%9E-%E5%A0%B125-886%E9%BB%9E-003001665.html",
-      "pubDate": "2026-08-22 00:30:01",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "id": "38395deb5b0a7962680dd7802adfc79f",
+      "title": "比特幣逼近8萬美元 一周累升23% 達利奧籲買:降低風險及提高回報",
+      "description": "比特幣周五曾觸及7.95萬美元,本周累升約23%,創2023年3月以來最大單周漲幅。據Coindesk報價,比特幣最新報近7.8萬美元。 比特幣在去年10月創下了約12.6萬美元的歷史高點,隨後一路下跌超過50%,並在今年7月初跌至約5.76萬美元的低點。不過,自美國財長貝森特周三宣布,將把長期國債回購規模至少提高一倍,加密貨幣市場情緒隨之轉趨樂觀,今輪上漲亦迫使交易員平倉數十億美元的空頭頭寸。同",
+      "link": "https://www.stheadline.com/blockchain/3607028/%E6%AF%94%E7%89%B9%E5%B9%A3%E9%80%BC%E8%BF%918%E8%90%AC%E7%BE%8E%E5%85%83-%E4%B8%80%E5%91%A8%E7%B4%AF%E5%8D%8723-%E9%81%94%E5%88%A9%E5%A5%A7%E7%B1%B2%E8%B2%B7%E9%99%8D%E4%BD%8E%E9%A2%A8%E9%9A%AA%E5%8F%8A%E6%8F%90%E9%AB%98%E5%9B%9E%E5%A0%B1",
+      "pubDate": "2026-08-22 01:54:58",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bce3f27fa51ae2325df3b9822b128b24/2026-08/BTC_1.png",
       "keywords": [
-        "nasd",
-        "nasd other"
+        "比特幣",
+        "達利奧",
+        "特朗普"
       ],
       "category": [
-        "business"
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "9c492aa0e6507bf0dc4caeffd0cd9435",
+      "title": "華潤叡璟I首輪開賣180伙 全數沽清 新盤票王最終收逾4.71萬票!",
+      "description": "【華潤/叡璟/叡璟I/新盤/票王/大手客】華潤置地(1109)西南九龍長沙灣發祥街叡璟 (THE STERLING) 第一期「叡璟I」,於今日(22日)首輪銷售201伙",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60382267/%E8%8F%AF%E6%BD%A4%E5%8F%A1%E7%92%9Fi%E9%A6%96%E8%BC%AA%E9%96%8B%E8%B3%A3180%E4%BC%99-%E5%85%A8%E6%95%B8%E6%B2%BD%E6%B8%85-%E6%96%B0%E7%9B%A4%E7%A5%A8%E7%8E%8B%E6%9C%80%E7%B5%82%E6%94%B6%E9%80%BE4-71%E8%90%AC%E7%A5%A8",
+      "pubDate": "2026-08-22 01:52:41",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167925663701667840801325.jpeg/rEfHjFDJJWlymqhhUZb4SAZ52N4mYpjBe9j_hXvY_4U",
+      "keywords": [
+        "恆生指數",
+        "新聞",
+        "股票",
+        "財經網",
+        "hk01",
+        "財經台",
+        "地產消息",
+        "財經透視",
+        "經濟",
+        "港股",
+        "財經新聞",
+        "香港新聞",
+        "香港01",
+        "a股"
+      ],
+      "category": [
+        "business",
+        "top"
       ],
       "region": "hk",
       "pinned": true
@@ -38,44 +71,582 @@
       "pinned": true
     },
     {
-      "id": "f8be0444d0aa51b191b1cbc26ba9740a",
-      "title": "伊朗局勢 | 伊朗外長:美國對伊政策沒實質變化 經濟施壓行動註定失敗",
-      "description": "伊朗外長阿拉格齊表示,美國歷屆政府針對伊朗採取的制裁和施壓政策均以失敗告終,美國最新宣布的對伊經濟施壓行動同樣註定失敗。 阿拉格齊星期五晚在社交媒體發文,回顧美國近年針對伊朗採取的一系列政策。他說,14年前美國宣稱對伊朗實施史上最嚴厲制裁,8年前又對伊朗實施極限施壓,5個月前提出要求伊朗無條件投降,這些政策最終都失敗。他批評,美國歷屆政府對伊朗政策並無實質變化。 美國總統特朗普日前表示,伊朗錯失與美國達成協議的良機,宣布對伊朗實施前所未有的經濟戰和孤立行動。",
-      "link": "https://www.bastillepost.com/hongkong/article/16615840-%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2-%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%B7%EF%BC%9A%E7%BE%8E%E5%9C%8B%E5%B0%8D%E4%BC%8A%E6%94%BF%E7%AD%96%E6%B2%92%E5%AF%A6%E8%B3%AA%E8%AE%8A%E5%8C%96-%E7%B6%93",
-      "pubDate": "2026-08-22 00:45:37",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/04/20260427_CR_source-AP_Iran.jpeg",
+      "id": "198919da3572e7afa514ba12ee618b13",
+      "title": "港股ADR預計恆指下周一低開123點 報25,886點",
+      "description": "ADR預託證券 | 代號 | 相對股價(HKD) | 港股對預託證券溢價(%) 長和 | CKHUY.NASD OTHER | 70.353 | 0.64% 中電控股 | CLPHY.NASD OTHER | 80.235 | -0.54% 香港中華煤氣 | HOKCY.NASD OTHER | 7.451 |...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E8%82%A1adr%E9%A0%90%E8%A8%88%E6%81%86%E6%8C%87%E4%B8%8B%E5%91%A8-%E4%BD%8E%E9%96%8B123%E9%BB%9E-%E5%A0%B125-886%E9%BB%9E-003001665.html",
+      "pubDate": "2026-08-22 00:30:01",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "大視野",
-        "伊朗局勢",
-        "source-2"
+        "nasd",
+        "nasd other"
       ],
       "category": [
-        "politics",
-        "top"
+        "business"
       ],
       "region": "hk",
       "pinned": true
     },
     {
-      "id": "5eef09aac3f4a7bd37530ef40703e514",
-      "title": "中國印尼舉行外長防長「2+2」會議 雙方稱要共同反對外部干涉",
-      "description": "雅加達舉行了中國與印尼外長防長「2+2」對話機制的第二次部長級會議,外交部長王毅、國防部長董軍,以及印尼外長蘇吉約諾、防長沙夫里共同主持了這次會議。雙方在會上達成共識,認為必須統籌兼顧發展與安全兩大範疇,並一致表明要共同反對外部干涉。 王毅在會上指出,中國印尼「2+2」機制是中國在全球建立的首個部長級「2+2」機制,為兩國戰略溝通搭建了全新平台。他提到,首次會議已有效推動政治安全與防務領域的合作,對維護兩國正當利益發揮了積極作用。 董軍則表示,中方願意與印尼攜手,以戰略眼光推進國防和軍隊建設方面的合作,並持續發掘防務合作的潛力。 根據新華社的報道,蘇吉約諾在會上重申,印尼堅定奉行一個中國政策,反對任何形式的外部干涉,同時表達了與中方在反恐、執法及打擊網絡詐騙等範疇拓展合作的意願。 沙夫里亦表示,印尼期望與中方加強戰略溝通,促進兩軍之間的交流,並在防務、海上安全、網絡安全、打擊網賭電詐及跨國犯罪等領域不斷深化合作。",
-      "link": "https://www.bastillepost.com/hongkong/article/16615807-%E4%B8%AD%E5%9C%8B%E5%8D%B0%E5%B0%BC%E8%88%89%E8%A1%8C%E5%A4%96%E9%95%B7%E9%98%B2%E9%95%B7%E3%80%8C22%E3%80%8D%E6%9C%83%E8%AD%B0%E3%80%80%E9%9B%99%E6%96%B9%E7%A8%B1%E8%A6%81%E5%85%B1%E5%90%8C",
-      "pubDate": "2026-08-22 00:51:32",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260822_CH_source_web_wangyi_FB.jpg",
+      "id": "b251b1becd216c39b67384e849bba818",
+      "title": "吉家宠物携旗下蓝氏、疯狂小狗亮相第28届亚宠展",
+      "description": "上海 2026年8月21日 /美通社/ -- 2026年8月19日,第28届亚洲宠物展览会在上海新国际博览中心盛大启幕。作为亚太地区最具影响力的宠物行业盛会,本届展会吸引了全球2600余家展商,聚焦\"亚太新品首发首创\"战略。吉家宠物集团携旗下中高端宠粮品牌蓝氏LEGENDSANDY与国民犬食品品牌疯狂小狗联袂亮相,分别以\"天性标准 成就优质好蛋白\"与\"疯狂小狗城 真材实料 喂出旺财\"为主题,从产品升级与用户情感两大维度,全面展示集团在宠物食品领域的体系化实力与品牌战略布局。 蓝氏:猎鸟乳鸽 2.0 上新, \" 天性蛋白 \" 高阶营养升级 上市五年来,蓝氏猎鸟乳鸽系列累计销量突破3800万袋,连续4年稳居猫主粮单品 TOP1 。 此次亮相的2.0版本实现了全方位的产品力进阶: - 革新减油工艺 :采用内注油脂与真空喷涂技术,相较普通膨化粮减油83%,减轻猫咪代谢负担; - 高肉高蛋白配方 :依托专属供应链实现100%鲜肉投料,动物原料占比高达87%,粗蛋白≥42%; - 肠胃养护体系 :添加300亿CFU/kg高活益生菌及三重益生元,并采用微晶镶嵌技术将活性成分包裹于冻干中,协同优化肠道菌群,有效减少猫咪软便、呕吐和便臭; - 甜甜圈颗粒设计 :中空结构增加消化液接触面积,搭配冻干碎夹心,酥脆可口的同时助力猫咪补水。 四大升级协同发力,让猫咪在享受猎食本能乐趣的同时,实现营养的高效吸收与健康体态的 平衡。 猎鸟乳鸽2.0的诞生,是蓝氏基于对犬猫物种天性深入研究后的系统性重构。 在展台核心区域,经WSAVA(世界小动物兽医协会)科学审核的《犬猫天性蛋白蓝皮书》与猎鸟乳鸽系列展示区相互呼应。 蓝氏在蓝皮书中提出四维评价体系,从进化食性、完整营养、消化利用与采食体验四个维度甄选优质蛋白。乳鸽因高蛋白、适度脂肪及必需氨基酸组成,与猫咪专性食肉天性高度契合,被确认为理想\"天性蛋白\"来源。为更好保留乳鸽天然营养优势,蓝氏建立专属养殖标准,通过低密度饲养、天然谷物饲喂及模拟自然光照,使营养沉积更充分、风味更接近自然状态,让\"天性蛋白\"从科学理论真正落地为可感知的产品力。 以猫咪天性研究为起点的\"富养天性\"理念,同样延展至犬粮领域。新品真鲜鸭肉梨犬粮选用黑嘴麻鸭与丰水梨差异化组合,上市仅一周便登顶天猫狗主粮新品榜 TOP1 ,并蝉联榜首八周。 此次蓝皮书发布,也是蓝氏与WSAVA战略合作的实质性落地。蓝氏以\"Silver Partner\"与\"Educational Partner\"双重身份参与WSAVA国际教育项目,围绕犬猫营养、天性研究、产品验证等展开深度交流,为\"天性蛋白\"理论提供国际权威科学背书,推动全球前沿营养原则转化为中国消费者日常可用的喂养 标准。 此外,\"天性超级工厂\"展区展示了自有苏宠工厂的硬核实力:鸽肉屠宰后约3小时投产锁鲜、投资超2000万元的质量科学实验区、一物一码全程溯源系统,以透明供应链建立深度信任。 疯狂小狗:跨界北高峰, \" 真材实料 \" 融入旺财生活 疯狂小狗产品端升级同样亮眼。 疯狂小狗夹心粮推出鸭肉&高原梨冻干夹心粮升级款:梨升级为云南高原梨,多酚含量约为普通梨的1.6倍;鲜肉升级为100%鲜肉添加、0肉粉、80%动物性原料;冻干升级为真实果蔬镶嵌冻干。三重升级瞄准白毛犬泪痕反复、眼周显脏等痛点,山东省农业科学院畜牧兽医研究所21天喂养试验证实,试验组犬泪痕显著改善,\"21天吃出干净小狗\"的承诺经得起验证。 展会现场,疯狂小狗与杭州名山北高峰的跨界联名引爆人气。\"旺财\"既是中国家庭对犬类的爱称,也与北高峰\"天下第一财神庙\"的聚财寓意相合。展位设置\"真旺你发财墙\"——消费者购物后获\"旺财签\"写下心愿贴于元宝墙,拍照打卡即领好礼;\"出城福利站\"提供现场优惠券及价值199元\"旺财大礼包\"。从元宝墙到旺财签,从祈愿打卡到福利回馈,疯狂小狗把\"旺财\"变为一场可触摸、可参与的沉浸式体验。 同期,\"真健康宠讲堂\"升级为\"真健康宠讲堂旺财版\",参与讲座完成问答即可领好礼;\"真材实料福利购\"推出限定价格与多档满赠,消费满额可获得\"钱袋子\"购物袋、\"财运贴贴\"黄金手机贴、\"财神到\"宠物围兜礼盒等限定周边,让消费者把\"旺财\"祝福带回家。 科学研发与产品升级的背后,离不开供应链体系的强力支撑。吉家宠物集团旗下苏宠工厂,引进国际先进生产设备与MES智能制造系统,通过实时监控与精细化追踪,确保每一批次产品品质高度稳定、均一可控。从鲜肉原料冷链直达、到内外部质量检测体系、一物一码全程溯源,覆盖原料、生产、检测、溯源各个环节的供应链基础设施,既支撑起蓝氏\"天性蛋白\"从理论到产品的完整落地,也确保疯狂小狗\"真材实料\"的每一份承诺有据可依。在宠物行业从\"流量竞争\"转向\"用户价值深耕\"的当下,吉家宠物集团正以扎实的产业底座与持续的产品创新,为国产宠粮品牌的高质量发展提供有力范本,让更多养宠家庭享受到\"高阶营养\"与\"真材实料\"兼具的品质养宠生活。",
+      "link": "https://www.prnasia.com/story/544912-1.shtml",
+      "pubDate": "2026-08-22 02:00:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
       "keywords": [
-        "兩岸",
-        "source-2",
-        "王毅"
+        "rea",
+        "fod",
+        "tds",
+        "pet"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "eef0c5ab077eb35d0f232f6a5fcf30d0",
+      "title": "不用飛韓國都買到!14個OLIVE YOUNG嚴選美妝品牌登陸Sephora",
+      "description": "K-beauty 熱潮持續升溫,韓國美妝早已不只是旅行時必買的手信,而是全球美妝市場的重要力量。最近, 韓國美妝零售平台 OLIVE YOUNG宣布與 Sephora 展開全球合作計劃,將韓國人氣美妝品牌帶到香港,首階段登場的 14 個品牌,全由 OLIVE YOUNG 嚴格甄選,皆以其在韓國市場的產品競爭力、消費者人氣及潮流影響力為考量。",
+      "link": "https://www.am730.com.hk/%E7%94%9F%E6%B4%BB/1048261/%E4%B8%8D%E7%94%A8%E9%A3%9B%E9%9F%93%E5%9C%8B%E9%83%BD%E8%B2%B7%E5%88%B0-14%E5%80%8Bolive-young%E5%9A%B4%E9%81%B8%E7%BE%8E%E5%A6%9D%E5%93%81%E7%89%8C%E7%99%BB%E9%99%B8sephora",
+      "pubDate": "2026-08-22 02:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048261/article/1048261/df/01M0C4QFCEYNNJTTYRHM08045T.jpg?updatedAt=1787114082",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "35980a1fd81632ebfa549bc0eb6cffb7",
+      "title": "【電腦通訊節 2026】千元有找 5G 手機限量搶!F35 攤位主打抵玩大屏平板",
+      "description": "2026 電腦通訊節正式開鑼,預算有限又想添置新數碼產品的讀者,不妨留意主打高性價比的鵬勃電子(攤位 F35)。今年該展區以實惠定價作招徠,當中最受關注的必定是限量發售八部的 Ulefone Note 18 Ultra,會場價僅需 $999 即可入手 5G 手機,大幅降低 5G 網絡的體驗門檻。若需要應付戶外工作或極端環境,擁有 21,200mAh 超大容量電池的 Ulefone Armor 29 Ultra 專業三防手機則以 $5,999 發售;同場亦有 RugKing 及 RugOne 等定價千多元起的入門三防選擇,滿足用家對長效續航與耐用度的需求。 這篇文章 【電腦通訊節 2026】千元有找 5G 手機限量搶!F35 攤位主打抵玩大屏平板 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/hkccf-2026-5g-phones-for-under-1000-dollars-limited-quantities-available/",
+      "pubDate": "2026-08-22 02:00:00",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/22020055/hkccf-2026-5g-phones-for-under-1000-dollars-limited-quantities-available-01.jpg",
+      "keywords": [
+        "zoho",
+        "三防手機",
+        "平板電腦",
+        "ulefone",
+        "便攜式屏幕",
+        "台電",
+        "場料",
+        "buyer guide",
+        "電腦通訊節",
+        "投影機",
+        "電腦節"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e1064595e8da85b9669ba8f8059b47ad",
+      "title": "貝殼-W(02423)中期純利38.78億元人民幣升79.82% 不派息",
+      "description": "<匯港通訊> 貝殼控股有限公司(02423)公布截至2026年6月30日止中期業績:股東應佔溢利: 38.78億元人民幣, 同比升 79.82% (去年同期純利21.57億元人民幣)每股盈利: 1.19元人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%9D%E6%AE%BC-02423-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A938-78%E5%84%84%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3%E5%8D%8779-82-015638004.html",
+      "pubDate": "2026-08-22 01:56:38",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "人民幣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "367c89334d92132efbb70101a293c53a",
+      "title": "掃入「AI股神」爆倉持股火速出貨 城堡..近百筆交易、逾40億美元",
+      "description": "肯·格里芬旗下城堡投資上月底達成協議,從由Leopold Aschenbrenner管理的對沖基金Situational Awareness手中收購股票。當時,該基金因觸發追加保證",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60382553/%E6%8E%83%E5%85%A5-ai%E8%82%A1%E7%A5%9E-%E7%88%86%E5%80%89%E6%8C%81%E8%82%A1%E7%81%AB%E9%80%9F%E5%87%BA%E8%B2%A8-%E5%9F%8E%E5%A0%A1-%E8%BF%91%E7%99%BE%E7%AD%86%E4%BA%A4%E6%98%93-%E9%80%BE40%E5%84%84%E7%BE%8E%E5%85%83",
+      "pubDate": "2026-08-22 01:55:47",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260519/1133383445695696896832690.png/mMfTIpmcHSZ3q0tu80Q2vZ4knAEgB8jZnD6CzJw-gsw",
+      "keywords": [
+        "恆生指數",
+        "港股",
+        "財經台",
+        "a股",
+        "經濟",
+        "香港新聞",
+        "股票",
+        "財經透視",
+        "財經網",
+        "香港01",
+        "地產消息",
+        "新聞",
+        "hk01",
+        "財經新聞"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2faa62c858843c892e7c4a99ee2f701a",
+      "title": "比特幣逼近8萬美元 一周累升23% 13隻ETF本周吸金逾10億美元",
+      "description": "比特幣周五曾觸及7.95萬美元,本周累升約23%,創2023年3月以來最大單周漲幅。據Coindesk報價,比特幣最新報近7.8萬美元。 比特幣在去年10月創下了約12.6萬美元的歷史高點,隨後一路下跌超過50%,並在今年7月初跌至約5.76萬美元的低點。不過,自美國財長貝森特周三宣布,將把長期國債回購規模至少提高一倍,加密貨幣市場情緒隨之轉趨樂觀,今輪上漲亦迫使交易員平倉數十億美元的空頭頭寸。同",
+      "link": "https://www.stheadline.com/blockchain/3607028/%E6%AF%94%E7%89%B9%E5%B9%A3%E9%80%BC%E8%BF%918%E8%90%AC%E7%BE%8E%E5%85%83-%E4%B8%80%E5%91%A8%E7%B4%AF%E5%8D%8723-13%E9%9A%BBETF%E6%9C%AC%E5%91%A8%E5%90%B8%E9%87%91%E9%80%BE10%E5%84%84%E7%BE%8E%E5%85%83",
+      "pubDate": "2026-08-22 01:54:58",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bce3f27fa51ae2325df3b9822b128b24/2026-08/BTC_1.png",
+      "keywords": [
+        "比特幣",
+        "達利奧",
+        "特朗普"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d22b035fc7f5622e2dfc3dc57c9b4dfc",
+      "title": "新盤票王開賣!華潤叡璟I今首輪價單發售180伙 大批準買家到場",
+      "description": "華潤置地(1109)西南九龍長沙灣發祥街叡璟 (THE STERLING) 第一期「叡璟I」,於落實今日(22日)首輪銷售201伙,當中180伙為價單單位,折實平均呎",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60382267/%E6%96%B0%E7%9B%A4%E7%A5%A8%E7%8E%8B%E9%96%8B%E8%B3%A3-%E8%8F%AF%E6%BD%A4%E5%8F%A1%E7%92%9Fi%E4%BB%8A%E9%A6%96%E8%BC%AA%E5%83%B9%E5%96%AE%E7%99%BC%E5%94%AE180%E4%BC%99-%E5%A4%A7%E6%89%B9%E6%BA%96%E8%B2%B7%E5%AE%B6%E5%88%B0%E5%A0%B4",
+      "pubDate": "2026-08-22 01:52:41",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167771058204315648863749.jpeg/9-bivDNGj8WgP5WYUUuXMn23gQQ6f40XTh1qc04danM",
+      "keywords": [
+        "恆生指數",
+        "港股",
+        "財經台",
+        "a股",
+        "經濟",
+        "香港新聞",
+        "股票",
+        "財經透視",
+        "財經網",
+        "香港01",
+        "地產消息",
+        "新聞",
+        "hk01",
+        "財經新聞"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f5e32fbb58bf364401a2eb520f059ed4",
+      "title": "新盤票王最終收4.71萬票!華潤叡璟I今首輪價單發售180伙",
+      "description": "華潤置地(1109)西南九龍長沙灣發祥街叡璟 (THE STERLING) 第一期「叡璟I」,於落實今日(22日)首輪銷售201伙,當中180伙為價單單位,折實平均呎",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60382267/%E6%96%B0%E7%9B%A4%E7%A5%A8%E7%8E%8B%E6%9C%80%E7%B5%82%E6%94%B64-71%E8%90%AC%E7%A5%A8-%E8%8F%AF%E6%BD%A4%E5%8F%A1%E7%92%9Fi%E4%BB%8A%E9%A6%96%E8%BC%AA%E5%83%B9%E5%96%AE%E7%99%BC%E5%94%AE180%E4%BC%99",
+      "pubDate": "2026-08-22 01:52:41",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167771058204315648863749.jpeg/9-bivDNGj8WgP5WYUUuXMn23gQQ6f40XTh1qc04danM",
+      "keywords": [
+        "地產消息",
+        "港股",
+        "財經網",
+        "財經透視",
+        "hk01",
+        "經濟",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "a股",
+        "財經台",
+        "財經新聞",
+        "恆生指數",
+        "股票"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8d96e371767067fea02a1a9477a75c6c",
+      "title": "新盤票王最終收逾4.71萬票!華潤叡璟I今首輪價單發售180伙",
+      "description": "【華潤/叡璟/叡璟I/新盤/票王/大手客】華潤置地(1109)西南九龍長沙灣發祥街叡璟 (THE STERLING) 第一期「叡璟I」,於落實今日(22日)首輪銷售20",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60382267/%E6%96%B0%E7%9B%A4%E7%A5%A8%E7%8E%8B%E6%9C%80%E7%B5%82%E6%94%B6%E9%80%BE4-71%E8%90%AC%E7%A5%A8-%E8%8F%AF%E6%BD%A4%E5%8F%A1%E7%92%9Fi%E4%BB%8A%E9%A6%96%E8%BC%AA%E5%83%B9%E5%96%AE%E7%99%BC%E5%94%AE180%E4%BC%99",
+      "pubDate": "2026-08-22 01:52:41",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167771058204315648863749.jpeg/9-bivDNGj8WgP5WYUUuXMn23gQQ6f40XTh1qc04danM",
+      "keywords": [
+        "港股",
+        "香港新聞",
+        "股票",
+        "hk01",
+        "財經台",
+        "a股",
+        "財經網",
+        "新聞",
+        "財經透視",
+        "經濟",
+        "香港01",
+        "地產消息",
+        "財經新聞",
+        "恆生指數"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cd5c2a676c08964fe2787af358509276",
+      "title": "美軍P-8A「海神」巡邏機飛越台海 中方全程跟監警戒",
+      "description": "美軍第七艦隊證實,美國海軍一架P-8A「海神」反潛巡邏機8月21日飛越台灣海峽的國際空域。《環球時報》引述解放軍消息人士,解放軍對該軍機全程跟監",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382560/%E7%BE%8E%E8%BB%8Dp-8a-%E6%B5%B7%E7%A5%9E-%E5%B7%A1%E9%82%8F%E6%A9%9F%E9%A3%9B%E8%B6%8A%E5%8F%B0%E6%B5%B7-%E4%B8%AD%E6%96%B9%E5%85%A8%E7%A8%8B%E8%B7%9F%E7%9B%A3%E8%AD%A6%E6%88%92",
+      "pubDate": "2026-08-22 01:52:04",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20240623/881486239910334464173098.jpeg/30JXhyNye3G5ECd3Oc4lUMTFx3oNq3ozxrvYVsa72FY",
+      "keywords": [
+        "環球",
+        "國際新聞",
+        "國際",
+        "香港01",
+        "世界新聞",
+        "新聞",
+        "hk01"
       ],
       "category": [
         "politics",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "e09458cc45fc376dd74ab0bda5f4d9a9",
+      "title": "SQ1衝進碎石緩衝區讓Antonelli損失大量下壓力",
+      "description": "SQ1衝進碎石緩衝區讓Antonelli損失大量下壓力由於荷蘭GP衝刺賽排位賽一開始的失誤,讓Andrea Kimi Antonelli在剩餘的賽段中陷入困境,車手積分榜領先者最後僅取得第五,今天稍晚的短程賽事中只能從第三排展開比賽。昨天SQ1一開始,Antonelli率先登場展開計時,但當他來到第13彎時突然遭...",
+      "link": "https://hk.sports.yahoo.com/news/sq1%E8%A1%9D%E9%80%B2%E7%A2%8E%E7%9F%B3%E7%B7%A9%E8%A1%9D%E5%8D%80%E8%AE%93antonelli%E6%90%8D%E5%A4%B1%E5%A4%A7%E9%87%8F%E4%B8%8B%E5%A3%93%E5%8A%9B-014522297.html",
+      "pubDate": "2026-08-22 01:45:22",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/be471c8023558055b55e405900336847f25880fb33bbb577656ee9e5dde838f7/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fm621234-f1-grand-prix-of-netherlands-practice-sprint-qualifying_0124.jpg",
+      "keywords": [
+        "antonelli"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "734e62bbe3470dc7c6023e1adfe5808b",
+      "title": "聯儲局股票估值模型是否重拾參考價值?",
+      "description": "Investing.com - 投資研究機構Yardeni Research在最新報告中指出,隨著量化寬鬆政策對國債收益率的壓制效應逐漸消退,聯邦儲備局的股票估值模型或正重新發揮其參考作用。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E5%84%B2%E5%B1%80%E8%82%A1%E7%A5%A8%E4%BC%B0%E5%80%BC%E6%A8%A1%E5%9E%8B%E6%98%AF%E5%90%A6%E9%87%8D%E6%8B%BE%E5%8F%83%E8%80%83%E5%83%B9%E5%80%BC-013750136.html",
+      "pubDate": "2026-08-22 01:37:50",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM5H1MW_M.jpg",
+      "keywords": [
+        "聯邦儲備局",
+        "收益率",
+        "yardeni research",
+        "量化寬鬆政策"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c9873cf3ae4483c42b7b5d559c4cc49f",
+      "title": "學者:統一方案需回應台灣民眾具體關切",
+      "description": "中評社北京8月22日電(記者 王教仁)2026年兩岸關係研討會21日在武漢閉幕。兩岸學者指出,融合發展要從網絡傳播走向產業與公共服務協同,統一方案還需回應台灣民眾的具體關切。 本次研討會於20日至21日在武漢舉行。兩岸專家學者圍繞“堅守民族大義 共謀復興偉業”主題,為推動兩岸關係發展和祖國統一進程建言獻策。 廈門大學台灣研究院副院長張文生代表第一小組匯報時表示,互聯網已成為",
+      "link": "http://www.crntt.com/doc/7_0_107226470_1_0822093326.html",
+      "pubDate": "2026-08-22 01:33:25",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/22/107226473.jpg",
+      "keywords": [
+        "2026兩岸關係研討會"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9f1d8b35f0edcf44c1fa1e3400d67f7d",
+      "title": "中聲4|周志康「畢業」感言搞喊羅天宇 「現場講到支咪無電」",
+      "description": "《中年好聲音4》將於本周日舉行決賽,而當中以蒙面身分參賽的藝員同事,包括「企鵝人」周志康、「獅子王」羅天宇、「貓女郎」劉佩玥、「白羊君」姚",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60382524/%E4%B8%AD%E8%81%B24-%E5%91%A8%E5%BF%97%E5%BA%B7-%E7%95%A2%E6%A5%AD-%E6%84%9F%E8%A8%80%E6%90%9E%E5%96%8A%E7%BE%85%E5%A4%A9%E5%AE%87-%E7%8F%BE%E5%A0%B4%E8%AC%9B%E5%88%B0%E6%94%AF%E5%92%AA%E7%84%A1%E9%9B%BB",
+      "pubDate": "2026-08-22 01:30:49",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167665709820416000169074.jpeg/uw10Z_Rn2r2cz1WUdYpX8SE5Tmhgjn_bI0fCOCNHwjg",
+      "keywords": [
+        "即時娛樂",
+        "娛樂新聞",
+        "香港新聞",
+        "明星",
+        "藝人",
+        "韓星",
+        "香港01",
+        "即時娛樂新聞",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "sports",
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ac0a98ee8dce2112bb4a334062364ed1",
+      "title": "敘利亞完成整合 庫爾德“自治”告終",
+      "description": "中評社北京8月22日電/敘利亞庫爾德武裝主導的“敘利亞民主力量”領導人馬茲盧姆·阿卜迪20日宣布,庫爾德當局與敘國家機構的整合進程已經“完成”。敘利亞庫爾德人曾得到美國支持,但在敘利亞劇變後遭美國拋棄。按法新社說法,“整合”標誌著敘庫爾德人長期以來的“自治”就此結束。 新階段開始 據新華社報導,阿卜迪當天在敘利亞東北部哈塞克省卡米什利市一場活動上說,庫爾德“軍事、安全和行政",
+      "link": "http://www.crntt.com/doc/7_0_107226471_1_0822093039.html",
+      "pubDate": "2026-08-22 01:30:39",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/22/107226484.jpg",
+      "keywords": [
+        "庫爾德",
+        "敘利亞"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8c2af119c90113ecf72d1207979ac27f",
+      "title": "80、90後最愛的日本男偶像Top 10 木村拓哉之下誰才是第一男神?",
+      "description": "青春歲月裡絕對少不了幾部經典日劇與男神海報!七、八年級生(80後、90後)追過的日本男神TOP 10聲量榜出爐,帶你看櫻井翔、小栗旬、福山雅治等不",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60381556/80-90%E5%BE%8C%E6%9C%80%E6%84%9B%E7%9A%84%E6%97%A5%E6%9C%AC%E7%94%B7%E5%81%B6%E5%83%8Ftop-10-%E6%9C%A8%E6%9D%91%E6%8B%93%E5%93%89%E4%B9%8B%E4%B8%8B%E8%AA%B0%E6%89%8D%E6%98%AF%E7%AC%AC%E4%B8%80%E7%94%B7%E7%A5%9E",
+      "pubDate": "2026-08-22 01:30:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260819/1166765950385524736406159.png/MX9p19f8MNZpGayS7OGH6Ur8SC6xsT9Y4rBnCuKwZwo",
+      "keywords": [
+        "即時娛樂",
+        "娛樂新聞",
+        "香港新聞",
+        "明星",
+        "藝人",
+        "韓星",
+        "香港01",
+        "即時娛樂新聞",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "40596d940033d54e643cf1c0e71b5313",
+      "title": "「Hi Bye」最考驗偶像這兩個能力!銀赫:「能看到粉絲各式各樣的反應,非常有趣」",
+      "description": null,
+      "link": "https://www.koreastardaily.com/tc/news/163709",
+      "pubDate": "2026-08-22 01:30:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-21/163709-1062783.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "424c21d8c60dc03525c273e1e5e5ec88",
+      "title": "韓美軍演“縮水” 動搖美國同盟體系信任?",
+      "description": "中評社北京8月22日電/在美國總統特朗普發布一則社交媒體帖文後,韓國和美國原定於27日結束的“乙支自由之盾”聯合軍演於21日提前收場,引發韓國輿論嘩然。這一變化將帶來哪些衝擊?對韓美同盟及戰時作戰指揮權移交將產生怎樣影響?又將如何影響美國的盟友體系? 為何突然“縮水”? 據新華社報導,軍演在啟動後突然“大幅縮水”,在韓媒看來“極為罕見”。韓媒認為,戰區級聯合演習通常需要韓美",
+      "link": "http://www.crntt.com/doc/7_0_107226449_1_0822092630.html",
+      "pubDate": "2026-08-22 01:26:30",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/22/107226454.jpg",
+      "keywords": [
+        "韓美軍演",
+        "韓美關係"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d5d010dbae650be5269e3cbc2cff3e4d",
+      "title": "劉寧榮教授:後冷戰秩序失效 中美競爭將維持50年? 香港原有優勢為何未變 全球精英蜂擁而至?",
+      "description": "後冷戰秩序失效,中美競爭將維持50年? 香港原有優勢為何未變,全球精英蜂擁而至?聽聽香港城市大學劉寧榮教授的分析。",
+      "link": "https://www.master-insight.com/article/49756",
+      "pubDate": "2026-08-22 01:26:00",
+      "source_name": "Master – Insight",
+      "image_url": "https://bucket-image.inkmaginecms.com/9dde7c0f-adea-48d0-9671-8f5a6345ad4a/image/2026/08/d17ae4e2-5cdd-41a7-9d1d-94c9f3cf276e.webp",
+      "keywords": [
+        "政局",
+        "灼見視頻",
+        "國際",
+        "影片"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ad80d1254fe29ab76c9bd897812295fb",
+      "title": "屯門區「成功有約」計劃2026 學員3日2夜外展訓練營圓滿結束",
+      "description": "屯門民政處聯同屯門區青年發展及公民教育委員會,於今個暑假為新一屆「成功有約」屯門區青年自我挑戰及獎勵計劃的學員,安排了由8月17日至19日,為期3日2夜的外展訓練營,活動日前圓滿結束並舉行結業典禮。 訓練營透過一系列歷奇及團隊訓練活動,鼓勵青年人勇於面對挑戰,學習互相包容及發揮團隊合作精神,從中突破自我、釋放潛能。學員在結業典禮上分享這次難忘的體驗,大家都十分高興能夠完成多個挑戰項目,包括划獨木舟、岩岸遊走、跳水挑戰等。 有學員表示,這些活動不單止讓自己有機會跳出舒適圈,更令他們與其他學員建立互信和友誼。參與「成功有約」的學員接下來還會有許多機會去經歷和成長,主辦方期望大家繼續勇於嘗試、突破自我、成就未來。",
+      "link": "https://www.bastillepost.com/hongkong/article/16614650-%E5%B1%AF%E9%96%80%E5%8D%80%E3%80%8C%E6%88%90%E5%8A%9F%E6%9C%89%E7%B4%84%E3%80%8D%E8%A8%88%E5%8A%832026-%E5%AD%B8%E5%93%A13%E6%97%A52%E5%A4%9C%E5%A4%96%E5%B1%95%E8%A8%93%E7%B7%B4%E7%87%9F%E5%9C%93",
+      "pubDate": "2026-08-22 01:25:26",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/img_1ad4869a_01_FB_v2-2.jpg",
+      "keywords": [
+        "活動",
+        "訓練",
+        "太極影片",
+        "ai小助手",
+        "source-gov",
+        "社會事"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e9e3e2de8311255f9a47d457dc50f4d0",
+      "title": "曾揭林肯號官兵生活黑幕 《星條旗報》高層突遭國防部解僱",
+      "description": "美國國防部旗下老牌軍事報刊《星條旗報》(Stars and Stripes)早前揭露美軍航母「林肯號」上多名水兵企圖跳海、生活條件惡劣等問題,引發廣泛關注。美國國防部周五突然以「不服從命令」為由,解僱該報的總編輯斯拉文(Erik Slavin)和高級記者枓爾特(Lara Korte)。此前,2人公開反對國防部干預這家擁有悠久編輯獨立歷史的軍事報章。剛宣布即將於9月底退休的發行人萊德勒(Max Le",
+      "link": "https://www.stheadline.com/realtime-world/3607025/%E6%9B%BE%E6%8F%AD%E6%9E%97%E8%82%AF%E8%99%9F%E5%AE%98%E5%85%B5%E7%94%9F%E6%B4%BB%E9%BB%91%E5%B9%95-%E6%98%9F%E6%A2%9D%E6%97%97%E5%A0%B1%E9%AB%98%E5%B1%A4%E7%AA%81%E9%81%AD%E5%9C%8B%E9%98%B2%E9%83%A8%E8%A7%A3%E5%83%B1",
+      "pubDate": "2026-08-22 01:21:29",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bdb30265e6941ae5d5bd2beaa38df562/2026-08/a1_0_28.jpg",
+      "keywords": [
+        "《星條旗報》",
+        "五角大樓"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "20b0d215f0f1611755cb6fc8186a6e84",
+      "title": "比亞迪 M9 DM-i 及Atto 1 香港開售!曾志偉 成為首位M9豪華7座混能MPV車主,Atto 1入門電動小車開價17萬!",
+      "description": "比亞迪(BYD)昨天(8月21日)聯同代理和諧汽車,在灣仔告士打道品牌體驗中心,正式發表兩款全新車:BYD M9 DM-i 豪華7座插電混能 MPV,以及 BYD Atto 1純電入門小車,兩者連稅意向售價分別為HK$428,800起(首批早鳥價)及HK$169,360起。廠方宣布著名演藝人曾志偉,成為全港首位 BYD M9 DM-i 車主。 文:DP 部份圖片:Sammy、DP 比亞迪 BYD",
+      "link": "https://www.stheadline.com/car/3607024/%E6%AF%94%E4%BA%9E%E8%BF%AA-M9-DM-i-%E5%8F%8AAtto-1-%E9%A6%99%E6%B8%AF%E9%96%8B%E5%94%AE%E6%9B%BE%E5%BF%97%E5%81%89-%E6%88%90%E7%82%BA%E9%A6%96%E4%BD%8DM9%E8%B1%AA%E8%8F%AF7%E5%BA%A7%E6%B7%B7%E8%83%BDMPV%E8%BB%8A%E4%B8%BBAtto-1%E5%85%A5%E9%96%80%E9%9B%BB%E5%8B%95%E5%B0%8F%E8%BB%8A%E9%96%8B%E5%83%B917%E8%90%AC",
+      "pubDate": "2026-08-22 01:18:29",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5c060af6b0f04a13466422b7e00e4b4e/2026-08/00_4.png",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bbdf77a0bd871d2620d7b9a9ed4aae81",
+      "title": "巴士的專訪|《八仙!》內地勁收16億人幣票房 粵配在港上畫齊看凡人鬥神仙",
+      "description": "內地動畫電影《八仙!》於8月20日在港上畫,自暑期檔上映以來,《八仙!》在內地口碑與票房雙豐收,截至8月16日,《八仙!》累計票房已突破16億元人民幣。主創團隊接受《巴士的報》專訪時,八仙是八個凡人鬥神仙的故事,代表了普通人的能量。 導演牟正洋表示,自己本身喜歡中國傳統神話,而八仙是當中較為特殊的群體,他們並非天生的天之驕子,而是在歷朝演變中始終代表凡人發聲的成仙團體。在查閱古籍與民間故事後,他發現八仙的故事內容豐富,可塑性高,因而決定將鏡頭對準八仙。 從劇本打磨到最終完成耗時數年,創作周期久,無論故事打磨或中後期製作,AI技術尚未成熟,因此全片關鍵幀、鏡頭語言與動畫流程全由人手完成,牟正洋表示,「這是個笨拙的方法,但所有人拼盡全力,動畫師、武術指導,包括我自己都親自上陣,出演很多角色,這也代表了普通人的能量。」 牟正洋透露,僅是「韓湘子」的配音演員就換了三輪,「韓湘子」在電影中的定位是青少年,需要體現年輕稚嫩、具有少年感的聲音,所以最初找了一位變聲期男孩,「但動畫製作周期太長,變聲期只有幾個月,所以第一次配完、調整後要補配時,他已是成熟男聲;之後又換了第二位男孩,但補配時又長大了,只好再找第三位。」 牟正洋坦言,創作《八仙!》的最大難度就是「人多」,首先是戲份難以平衡,「包括鏡頭語言、人物表演等,一顆鏡頭就要構圖很久,把八個人囊括其中,且都要有細膩的表演,可能只有兩三個人是主要角色,但其他人也要輔助表演。」 其次是要讓觀眾留下深刻印象,因此要賦予角色更為獨特的符號特征,凸顯角色性格,加深大家的記憶,「兩個小時的電影裡要展現這些非常難,但最終結果還可以,首先有幾個重要角色承載故事的核心主題表達,其他角色也足夠出彩,最終八個人在一起,每個人都是主角。」 談及最喜歡的角色,牟正洋指自己最愛鐵拐李,《八仙!》講述凡人的故事,強調市井感和凡人感,而鐵拐李有煙火氣,角色最豐富飽滿,「鐵拐李是乞丐,遊走於人間,清醒通透,有真實想法會講出來,想幹就幹,很喜歡這種敢說敢做敢承擔的性格,雖然油嘴滑舌,但關鍵時刻非常有擔當,例如喚回失意的鐘離權,並義無反顧地和大家去追楊戩。」 他也解釋《八仙!》片名驚嘆號的由來,「電影節奏快、看了很燃很過癮,驚嘆號完全契合氣質,希望觀眾推薦時也帶著這股語氣喊『《八仙!》好看!』」 電影特別製作了粵語配音版,每個配音演員均由導演親自挑選,展現誠意。總監製應旭珺指出,香港是亞洲重要電影市場,動畫受眾廣泛,而《八仙!》根植中華傳統文化,運用國內最先進動畫技術,構建龐大壯麗世界觀,兼具喜劇元素、溫暖主題與情感共鳴。 她表示,團隊從未設定票房目標,而是把所有精力集中在講好故事、做好動畫,「看到票房走高當然十分欣慰,但這不僅是數字的增長,也是觀影人次的增長,意味著《八仙!》不斷被全世界更多觀眾看見和欣賞、認同。」 應旭珺個人最欣賞曹國舅,曹國舅從小生長條件優渥,出身皇親國戚,傲嬌, 擅長化解壓力,在職場中巧妙地消除上級的施壓,又能完成事情,在八仙中擔任家長的角色,「有一場大家爭執後和好的戲份,其實是他煲了一鍋香噴噴的粥給大家喝,用吃飯把大家連在一起;危機來臨凸顯善良本色,面對楊戩時,他帶著張果老和藍采和逃走,有擔當又可愛。」 製片人曹林林認為,好故事不分地域,從觀眾回饋來看,大家對內容的理解與期待高度一致,文化本身是共通的,對傳統神話的詮釋並無本質差異。她個人偏愛何仙姑,認為何仙姑優秀獨立,堅定理想,「片中有場打戲,面對七位比她厲害、年長的男性毫不畏懼,我們稱為『何仙姑一打七』。她為了目標與心中的善良堅定前行,同時具備調皮可愛、耍酷耍帥的『活人感』,形象豐富飽滿。」",
+      "link": "https://www.bastillepost.com/hongkong/article/16603912-%E5%B7%B4%E5%A3%AB%E7%9A%84%E5%B0%88%E8%A8%AA%EF%BD%9C%E3%80%8A%E5%85%AB%E4%BB%99%EF%BC%81%E3%80%8B%E5%85%A7%E5%9C%B0%E5%8B%81%E6%94%B616%E5%84%84%E4%BA%BA%E5%B9%A3%E7%A5%A8%E6%88%BF-%E7%B2%B5",
+      "pubDate": "2026-08-22 01:00:55",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260820_CR_%E5%85%AB%E4%BB%99.png",
+      "keywords": [
+        "hottv",
+        "巴士的專訪",
+        "《八仙！》",
+        "太極影片",
+        "電影",
+        "社會事"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "959d7b747a21ede3334618055a79571e",
+      "title": "跑鞋推薦|adidas HYPERBOOST EDGE 實測無碳板輕彈跑鞋最佳配速",
+      "description": "2026年跑鞋界的主調是「超級訓練鞋」,adidas上月推出競速跑鞋HYPERBOOST EDGE的最新配色,後跟45毫米及前掌39毫米的超厚泡棉中底,為日常訓練增添",
+      "link": "https://www.hk01.com/%E8%B7%91%E6%AD%A5/60382471/%E8%B7%91%E9%9E%8B%E6%8E%A8%E8%96%A6-adidas-hyperboost-edge-%E5%AF%A6%E6%B8%AC%E7%84%A1%E7%A2%B3%E6%9D%BF%E8%BC%95%E5%BD%88%E8%B7%91%E9%9E%8B%E6%9C%80%E4%BD%B3%E9%85%8D%E9%80%9F",
+      "pubDate": "2026-08-22 01:00:51",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260821/1167612834352205824567412.jpeg/HZGiJrdCRe9PcV2rqxuc_WI4zKsApmS7Ix9OGSMfThk",
+      "keywords": [
+        "hk01",
+        "跑步姿勢",
+        "跑步",
+        "馬拉松",
+        "跑步用品",
+        "跑步訓練",
+        "慢跑",
+        "香港01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ba2f6555315b01b230d850882880e02b",
+      "title": "馬天佑讚佘詩曼全行最好人一事令人飆淚 點名與某天后合作最辛苦",
+      "description": "馬天佑在圈中一向人緣絕佳,出一首歌閒閒地找到幾十位藝人朋友合唱,而近日他與好友JW為節目《新城任務35》開咪,期間JW要他選出最好人、最靚、最",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60381691/%E9%A6%AC%E5%A4%A9%E4%BD%91%E8%AE%9A%E4%BD%98%E8%A9%A9%E6%9B%BC%E5%85%A8%E8%A1%8C%E6%9C%80%E5%A5%BD%E4%BA%BA%E4%B8%80%E4%BA%8B%E4%BB%A4%E4%BA%BA%E9%A3%86%E6%B7%9A-%E9%BB%9E%E5%90%8D%E8%88%87%E6%9F%90%E5%A4%A9%E5%90%8E%E5%90%88%E4%BD%9C%E6%9C%80%E8%BE%9B%E8%8B%A6",
+      "pubDate": "2026-08-22 01:00:31",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260819/1166826868112887808852360.jpeg/lIv3dtnqwkES2RHb84e7inj-1OpNTswPPN59UTzefVE",
+      "keywords": [
+        "藝人",
+        "韓星",
+        "香港新聞",
+        "明星",
+        "hk01",
+        "即時娛樂",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "新聞",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "09b26a8f12aaa2e3d54e6b83ec15b357",
+      "title": "美國第 5 大銀行豪賭雲端 U.S. Bank 遷移數百核心系統上 AWS",
+      "description": "美國第 5 大商業銀行 U.S. Bank 宣布擴大與 Amazon Web Services 的戰略合作,將數百個關鍵銀行應用遷移至 AWS 雲端,是金融服務業最大規模、最全面的銀行現代化項目之一。這項多年期計劃涵蓋支付處理系統、財富管理平台及商業銀行應用,期望能為約 1,300 萬消費者和 140 萬企業客戶提供服務的全國網絡注入生成式 AI 能力。",
+      "link": "https://unwire.hk/2026/08/22/us-bank-migrates-core-systems-aws-generative-ai/genai-and-cloud/",
+      "pubDate": "2026-08-22 01:00:27",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/adobestock_192165804-1.jpg",
+      "keywords": [
+        "ai",
+        "aws",
+        "金融科技",
+        "genai 與雲端科技專區",
+        "雲端遷移",
+        "u.s. bank"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
     },
     {
       "id": "79af5fbd7007aaf7e422e020f9341329",
@@ -129,6 +700,26 @@
       "region": "hk"
     },
     {
+      "id": "5eef09aac3f4a7bd37530ef40703e514",
+      "title": "中國印尼舉行外長防長「2+2」會議 雙方稱要共同反對外部干涉",
+      "description": "雅加達舉行了中國與印尼外長防長「2+2」對話機制的第二次部長級會議,外交部長王毅、國防部長董軍,以及印尼外長蘇吉約諾、防長沙夫里共同主持了這次會議。雙方在會上達成共識,認為必須統籌兼顧發展與安全兩大範疇,並一致表明要共同反對外部干涉。 王毅在會上指出,中國印尼「2+2」機制是中國在全球建立的首個部長級「2+2」機制,為兩國戰略溝通搭建了全新平台。他提到,首次會議已有效推動政治安全與防務領域的合作,對維護兩國正當利益發揮了積極作用。 董軍則表示,中方願意與印尼攜手,以戰略眼光推進國防和軍隊建設方面的合作,並持續發掘防務合作的潛力。 根據新華社的報道,蘇吉約諾在會上重申,印尼堅定奉行一個中國政策,反對任何形式的外部干涉,同時表達了與中方在反恐、執法及打擊網絡詐騙等範疇拓展合作的意願。 沙夫里亦表示,印尼期望與中方加強戰略溝通,促進兩軍之間的交流,並在防務、海上安全、網絡安全、打擊網賭電詐及跨國犯罪等領域不斷深化合作。",
+      "link": "https://www.bastillepost.com/hongkong/article/16615807-%E4%B8%AD%E5%9C%8B%E5%8D%B0%E5%B0%BC%E8%88%89%E8%A1%8C%E5%A4%96%E9%95%B7%E9%98%B2%E9%95%B7%E3%80%8C22%E3%80%8D%E6%9C%83%E8%AD%B0%E3%80%80%E9%9B%99%E6%96%B9%E7%A8%B1%E8%A6%81%E5%85%B1%E5%90%8C",
+      "pubDate": "2026-08-22 00:51:32",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260822_CH_source_web_wangyi_FB.jpg",
+      "keywords": [
+        "兩岸",
+        "source-2",
+        "王毅"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "4adc2a6f391c487c9720c3ad87787a50",
       "title": "中國觀察—仙氣黃敏珊現京城 AI女廚師的啟示",
       "description": "科創精英雲集的世界機械人大會正在北京舉行,美國科技巨頭輝達CEO黃仁勳的女兒黃敏珊(圖左),也專程來華參觀。她有着歐亞混血長相,大眼睛配黑色長卷髮,獲網民狂讚「仙氣逼人」,在會場引來不少人爭相合影。 30多歲的黃敏珊現任輝達實體AI平台產品與技術營銷高級總監。高中時期,她原計劃走父母的理工路,攻讀電機,但在最後一刻,黃仁勳對女兒說:「我不覺得你真的愛工程。你應該去做你真正熱愛的事,我覺得那件事是烹",
@@ -162,6 +753,26 @@
         "entertainment"
       ],
       "region": "hk"
+    },
+    {
+      "id": "f8be0444d0aa51b191b1cbc26ba9740a",
+      "title": "伊朗局勢 | 伊朗外長:美國對伊政策沒實質變化 經濟施壓行動註定失敗",
+      "description": "伊朗外長阿拉格齊表示,美國歷屆政府針對伊朗採取的制裁和施壓政策均以失敗告終,美國最新宣布的對伊經濟施壓行動同樣註定失敗。 阿拉格齊星期五晚在社交媒體發文,回顧美國近年針對伊朗採取的一系列政策。他說,14年前美國宣稱對伊朗實施史上最嚴厲制裁,8年前又對伊朗實施極限施壓,5個月前提出要求伊朗無條件投降,這些政策最終都失敗。他批評,美國歷屆政府對伊朗政策並無實質變化。 美國總統特朗普日前表示,伊朗錯失與美國達成協議的良機,宣布對伊朗實施前所未有的經濟戰和孤立行動。",
+      "link": "https://www.bastillepost.com/hongkong/article/16615840-%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2-%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%B7%EF%BC%9A%E7%BE%8E%E5%9C%8B%E5%B0%8D%E4%BC%8A%E6%94%BF%E7%AD%96%E6%B2%92%E5%AF%A6%E8%B3%AA%E8%AE%8A%E5%8C%96-%E7%B6%93",
+      "pubDate": "2026-08-22 00:45:37",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/04/20260427_CR_source-AP_Iran.jpeg",
+      "keywords": [
+        "大視野",
+        "伊朗局勢",
+        "source-2"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "51f3f5d82f3f43b1f42abcd024957baf",
@@ -170511,6 +171122,20 @@
       "region": "hk"
     },
     {
+      "id": "3c59b1f6a49383a2",
+      "title": "MIRROR成員｜Anson Lo騷自拍照惹整容負評　罕有反擊教網民社交平台「正確使用方法」",
+      "description": "【MIRROR / 盧瀚霆 / Anson Lo】現年31歲的男團MIRROR成員Anson Lo（盧瀚霆）向來寵粉，常在社交平台分享靚相派福利；日前適逢七夕節，他在IG及Threads同步上載對鏡自...",
+      "link": "https://topick.hket.com/article/4180589",
+      "pubDate": "2026-08-22 21:31:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4180589/AnsonLo1_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "7f58de3810f58452",
       "title": "你好，打劫！Return︱劉德華驚喜現身　阿Dee直呼壓力大芯駖舞姿曼妙結局震撼",
       "description": "由《舞台山莊》製作，魯文傑執導、麥沛東、李芯駖、巢嘉倫、何啟華、陳湛文、王俊傑等主演，鄧永威監製之舞台劇 《你好，打劫！Return》，昨晚（8月21日）於香港藝術中心壽臣劇院作首場公演，為20場的表...",
@@ -172047,6 +172672,6 @@
       "pinned": true
     }
   ],
-  "total": 8779,
-  "last_updated": "2026-08-22T21:14:21.522336"
+  "total": 8808,
+  "last_updated": "2026-08-22T22:14:07.256896"
 }
