@@ -1,92 +1,757 @@
 {
+  "last_updated": "2026-08-22T23:17:42.056927",
+  "total": 8844,
   "articles": [
     {
-      "id": "38395deb5b0a7962680dd7802adfc79f",
-      "title": "比特幣逼近8萬美元 一周累升23% 達利奧籲買:降低風險及提高回報",
-      "description": "比特幣周五曾觸及7.95萬美元,本周累升約23%,創2023年3月以來最大單周漲幅。據Coindesk報價,比特幣最新報近7.8萬美元。 比特幣在去年10月創下了約12.6萬美元的歷史高點,隨後一路下跌超過50%,並在今年7月初跌至約5.76萬美元的低點。不過,自美國財長貝森特周三宣布,將把長期國債回購規模至少提高一倍,加密貨幣市場情緒隨之轉趨樂觀,今輪上漲亦迫使交易員平倉數十億美元的空頭頭寸。同",
-      "link": "https://www.stheadline.com/blockchain/3607028/%E6%AF%94%E7%89%B9%E5%B9%A3%E9%80%BC%E8%BF%918%E8%90%AC%E7%BE%8E%E5%85%83-%E4%B8%80%E5%91%A8%E7%B4%AF%E5%8D%8723-%E9%81%94%E5%88%A9%E5%A5%A7%E7%B1%B2%E8%B2%B7%E9%99%8D%E4%BD%8E%E9%A2%A8%E9%9A%AA%E5%8F%8A%E6%8F%90%E9%AB%98%E5%9B%9E%E5%A0%B1",
-      "pubDate": "2026-08-22 01:54:58",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bce3f27fa51ae2325df3b9822b128b24/2026-08/BTC_1.png",
-      "keywords": [
-        "比特幣",
-        "達利奧",
-        "特朗普"
-      ],
-      "category": [
-        "business",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "9c492aa0e6507bf0dc4caeffd0cd9435",
-      "title": "華潤叡璟I首輪開賣180伙 全數沽清 新盤票王最終收逾4.71萬票!",
-      "description": "【華潤/叡璟/叡璟I/新盤/票王/大手客】華潤置地(1109)西南九龍長沙灣發祥街叡璟 (THE STERLING) 第一期「叡璟I」,於今日(22日)首輪銷售201伙",
-      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60382267/%E8%8F%AF%E6%BD%A4%E5%8F%A1%E7%92%9Fi%E9%A6%96%E8%BC%AA%E9%96%8B%E8%B3%A3180%E4%BC%99-%E5%85%A8%E6%95%B8%E6%B2%BD%E6%B8%85-%E6%96%B0%E7%9B%A4%E7%A5%A8%E7%8E%8B%E6%9C%80%E7%B5%82%E6%94%B6%E9%80%BE4-71%E8%90%AC%E7%A5%A8",
-      "pubDate": "2026-08-22 01:52:41",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167925663701667840801325.jpeg/rEfHjFDJJWlymqhhUZb4SAZ52N4mYpjBe9j_hXvY_4U",
-      "keywords": [
-        "恆生指數",
-        "新聞",
-        "股票",
-        "財經網",
-        "hk01",
-        "財經台",
-        "地產消息",
-        "財經透視",
-        "經濟",
-        "港股",
-        "財經新聞",
-        "香港新聞",
-        "香港01",
-        "a股"
-      ],
-      "category": [
-        "business",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "c9206aaf9a1d44c987b0b5cced8d6691",
-      "title": "美加談判競速達成協議,力阻50%鋼鋁關稅生效",
-      "description": "Investing.com - 據彭博社週五引述知情人士報導,美國與加拿大談判代表正就鋼鐵及鋁進口的關稅減免範圍展開磋商,雙方爭分奪秒,力求在午夜截止期限前達成貿易協議。",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%8A%A0%E8%AB%87%E5%88%A4%E7%AB%B6%E9%80%9F%E9%81%94%E6%88%90%E5%8D%94%E8%AD%B0-%E5%8A%9B%E9%98%BB50-%E9%8B%BC%E9%8B%81%E9%97%9C%E7%A8%85%E7%94%9F%E6%95%88-005803530.html",
-      "pubDate": "2026-08-22 00:58:03",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM4R00M_M.jpg",
-      "keywords": [
-        "談判",
-        "關稅",
-        "加拿大"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "198919da3572e7afa514ba12ee618b13",
-      "title": "港股ADR預計恆指下周一低開123點 報25,886點",
-      "description": "ADR預託證券 | 代號 | 相對股價(HKD) | 港股對預託證券溢價(%) 長和 | CKHUY.NASD OTHER | 70.353 | 0.64% 中電控股 | CLPHY.NASD OTHER | 80.235 | -0.54% 香港中華煤氣 | HOKCY.NASD OTHER | 7.451 |...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E8%82%A1adr%E9%A0%90%E8%A8%88%E6%81%86%E6%8C%87%E4%B8%8B%E5%91%A8-%E4%BD%8E%E9%96%8B123%E9%BB%9E-%E5%A0%B125-886%E9%BB%9E-003001665.html",
-      "pubDate": "2026-08-22 00:30:01",
+      "id": "9c03e612b23a218742ed2dad119ed304",
+      "title": "德琪醫藥-B(06996)中期虧轉盈賺2.16億元人民幣 不派息",
+      "description": "<匯港通訊> 德琪醫藥有限公司(06996)公布截至2026年6月30日止中期業績:股東應佔溢利: 2.16億元人民幣, 虧轉盈 (去年同期虧損7637.8萬元人民幣)每股盈利: 0.34元人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%BE%B7%E7%90%AA%E9%86%AB%E8%97%A5-06996-%E4%B8%AD%E6%9C%9F%E8%99%A7%E8%BD%89%E7%9B%88%E8%B3%BA2-16%E5%84%84%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3-%E4%B8%8D%E6%B4%BE%E6%81%AF-025923342.html",
+      "pubDate": "2026-08-22 02:59:23",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "nasd",
-        "nasd other"
+        "人民幣"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "f9b6bac9da856cdda4a88815aeb6bc31",
+      "title": "卡撒天嬌(02223)中期虧損收窄至788萬港元 不派息",
+      "description": "<匯港通訊> 卡撒天嬌集團有限公司(02223)公布截至2026年6月30日止中期業績:股東應佔虧損: 787.8萬港元, 虧損收窄 (去年同期虧損1221.8萬港元)每股虧損: 3.05港仙派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8D%A1%E6%92%92%E5%A4%A9%E5%AC%8C-02223-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%94%B6%E7%AA%84%E8%87%B3788%E8%90%AC%E6%B8%AF%E5%85%83-%E4%B8%8D%E6%B4%BE%E6%81%AF-025803787.html",
+      "pubDate": "2026-08-22 02:58:03",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "卡撒天嬌"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ef1333f292e4078cf30c5acf08abf44d",
+      "title": "阿根廷世界盃決賽輸波職球員動粗 FIFA重判柏利迪斯停賽10場",
+      "description": "阿根廷在世界盃決賽不敵西班牙後,多名職球員失控先口角再動武。國際足協(FIFA)8月21日宣布嚴懲阿根廷足總(AFA)及涉事職球員,當中柏利迪斯(L",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382565/%E9%98%BF%E6%A0%B9%E5%BB%B7%E4%B8%96%E7%95%8C%E7%9B%83%E6%B1%BA%E8%B3%BD%E8%BC%B8%E6%B3%A2%E8%81%B7%E7%90%83%E5%93%A1%E5%8B%95%E7%B2%97-fifa%E9%87%8D%E5%88%A4%E6%9F%8F%E5%88%A9%E8%BF%AA%E6%96%AF%E5%81%9C%E8%B3%BD10%E5%A0%B4",
+      "pubDate": "2026-08-22 02:56:21",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260721/1156277358874071040071689.jpeg/CeVrISzQz146yt2Zt0EHVThpGovW1cDQKKtR-yirUfs",
+      "keywords": [
+        "國際",
+        "hk01",
+        "國際新聞",
+        "新聞",
+        "世界新聞",
+        "香港01",
+        "環球"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "836ec38d2e86275401a245e993af5fcd",
+      "title": "港鐵西九龍自動車接駁服務路試展開 目標明年第二季推出",
+      "description": "港鐵宣布,西九龍自動車接駁服務已正式展開路面測試。測試期間,4架自動車會行駛於高鐵香港西九龍站與機場快綫九龍站之間的指定路段,以確保日後投入服務時,自動駕駛系統安全可靠。 第一階段測試屬不載客性質,自動駕駛期間如有需要,坐在司機位的後備操作員會進行人手操作。港鐵表示,會密切監察路試情況,循序漸進推展測試,目標在明年第二季推出服務。港鐵亦發布了路試首日的精華片段,讓公眾率先了解測試情況。",
+      "link": "https://www.bastillepost.com/hongkong/article/16616780-%E6%B8%AF%E9%90%B5%E8%A5%BF%E4%B9%9D%E9%BE%8D%E8%87%AA%E5%8B%95%E8%BB%8A%E6%8E%A5%E9%A7%81%E6%9C%8D%E5%8B%99%E8%B7%AF%E8%A9%A6%E5%B1%95%E9%96%8B-%E7%9B%AE%E6%A8%99%E6%98%8E%E5%B9%B4%E7%AC%AC%E4%BA%8C",
+      "pubDate": "2026-08-22 02:55:55",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1361582836109895_7e306025c3_FB_v2-2.jpg",
+      "keywords": [
+        "source-gov",
+        "太極影片",
+        "社會事",
+        "西九龍",
+        "ai小助手",
+        "mtr",
+        "港鐵"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3c27d91903eddbf2e3e96bcbdb3aa337",
+      "title": "Anthropic傳以2萬億美元估值上市 為自研晶片聘Google定制晶片創始人加盟",
+      "description": "據《紐約時報》引述知情人士報道,Anthropic近日在與潛在投資者的討論中表示,或尋求在首次公開招股(IPO)中集資超過1000億美元,使公司估值達到2萬億美元。若成立僅五年Anthropic成功以此規模IPO,將創下史上最大規模的IPO紀錄,超過馬斯克旗下SpaceX今年6月創下的1.77萬億美元估值,集資857億美元紀錄。 另外據彭博報道,Anthropic已聘請Google定制晶片項目創始",
+      "link": "https://www.stheadline.com/realtime-finance/3607033/Anthropic%E5%82%B3%E4%BB%A52%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83%E4%BC%B0%E5%80%BC%E4%B8%8A%E5%B8%82-%E7%82%BA%E8%87%AA%E7%A0%94%E6%99%B6%E7%89%87%E8%81%98Google%E5%AE%9A%E5%88%B6%E6%99%B6%E7%89%87%E5%89%B5%E5%A7%8B%E4%BA%BA%E5%8A%A0%E7%9B%9F",
+      "pubDate": "2026-08-22 02:55:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/18d2f162820cd79d9c8528147a4968d3/2026-08/AN204.jpg",
+      "keywords": [
+        "ai",
+        "人工智能",
+        "anthropic",
+        "晶片"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9fcdb0703ec85b57b72122f9163fb73a",
+      "title": "古天樂演唱會|重溫汪明荃94年有幾勁 47歲阿姐穿性感魚網跳《熱咖啡》",
+      "description": "汪明荃事後在社交平台分享多張花絮,及後台合照,留言說:「非常榮幸可以參加古天樂第一次个人演唱會,合唱熱咖啡,大家好開心。」",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1048830/%E5%8F%A4%E5%A4%A9%E6%A8%82%E6%BC%94%E5%94%B1%E6%9C%83-%E9%87%8D%E6%BA%AB%E6%B1%AA%E6%98%8E%E8%8D%8394%E5%B9%B4%E6%9C%89%E5%B9%BE%E5%8B%81-47%E6%AD%B2%E9%98%BF%E5%A7%90%E7%A9%BF%E6%80%A7%E6%84%9F%E9%AD%9A%E7%B6%B2%E8%B7%B3-%E7%86%B1%E5%92%96%E5%95%A1-",
+      "pubDate": "2026-08-22 02:53:20",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1048830/article/1048830/df/01M0KMB6GXYNBCADZS6YDJB1KP.jpg?updatedAt=1787367504",
+      "keywords": null,
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "895b444a947ba764ffa8f5d79fb1eff8",
+      "title": "叮噹健康(09886)中期虧損擴大至6437萬元人民幣 不派息",
+      "description": "<匯港通訊> 叮噹健康科技集團有限公司(09886)公布截至2026年6月30日止中期業績:股東應佔虧損: 6437.1萬元人民幣, 虧損擴大 (去年同期虧損5167.1萬元人民幣)每股虧損: 0.05元人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8F%AE%E5%99%B9%E5%81%A5%E5%BA%B7-09886-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7%E8%87%B36437%E8%90%AC%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3-%E4%B8%8D%E6%B4%BE%E6%81%AF-025251618.html",
+      "pubDate": "2026-08-22 02:52:51",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "人民幣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "04877934593b9fb7cfd8158650a094e9",
+      "title": "Tesla 及小米等車企因車內把手問題召回逾400萬輛車",
+      "description": "<匯港通訊> 國家市場監督管理總局表示,Tesla(特斯拉)(TSLA.US)、小米(01810.HK)等9間車企因為車內應急機械把手相關問題,宣布召回超過400萬輛車,其中 Tesla 召回最多,接近300萬輛,小米、零跑汽車(09863.HK)及吉利汽車(00175.HK)將分別召回超過39萬、37萬及9萬輛...",
+      "link": "https://hk.finance.yahoo.com/news/tesla-%E5%8F%8A%E5%B0%8F%E7%B1%B3%E7%AD%89%E8%BB%8A%E4%BC%81%E5%9B%A0%E8%BB%8A%E5%85%A7%E6%8A%8A%E6%89%8B%E5%95%8F%E9%A1%8C%E5%8F%AC%E5%9B%9E%E9%80%BE400%E8%90%AC%E8%BC%9B%E8%BB%8A-025234915.html",
+      "pubDate": "2026-08-22 02:52:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d85acfb8c2252af0c593f4416435c092",
+      "title": "帶埋阿媽結婚? 港男拒留客房畀外母過夜 自爆「供樓內幕」惹全網圍剿 網民反嘲:你畀晒咪有話事權囉|Juicy叮",
+      "description": "結婚難道要「帶埋阿媽」?有港男因不滿女友堅持在新居預留一間客房,方便未來外母偶爾過夜及煮飯,本想發文求教網民說服女友的方法。豈料在他自爆「供樓內幕」後,隨即惹來全網圍剿,更有網民不客氣地反嘲:「你層樓自己畀晒錢,咪有絕對話事權囉!」詳情見下圖及下文: 帶埋阿媽結婚? 港男拒留客房畀外母過夜 自爆「供樓內幕」惹全網圍剿 網民反嘲:你畀晒咪有話事權囉逐張睇↓↓↓↓ 樓主:女友自小喪父 樓主昨天(21日",
+      "link": "https://www.stheadline.com/local-topics/3607023/%E5%B8%B6%E5%9F%8B%E9%98%BF%E5%AA%BD%E7%B5%90%E5%A9%9A-%E6%B8%AF%E7%94%B7%E6%8B%92%E7%95%99%E5%AE%A2%E6%88%BF%E7%95%80%E5%A4%96%E6%AF%8D%E9%81%8E%E5%A4%9C-%E8%87%AA%E7%88%86%E4%BE%9B%E6%A8%93%E5%85%A7%E5%B9%95%E6%83%B9%E5%85%A8%E7%B6%B2%E5%9C%8D%E5%89%BF-%E7%B6%B2%E6%B0%91%E5%8F%8D%E5%98%B2%E4%BD%A0%E7%95%80%E6%99%92%E5%92%AA%E6%9C%89%E8%A9%B1%E4%BA%8B%E6%AC%8A%E5%9B%89Juicy%E5%8F%AE",
+      "pubDate": "2026-08-22 02:50:32",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5e54b8c1f6449b677a5cc14727218725/2026-08/20260822_news_HOME_siV2.png",
+      "keywords": [
+        "juicy叮",
+        "熱話"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e31a85a8c4773dddbe86d7f6c2e0eccc",
+      "title": "英超開鑼戰 阿仙奴旗開得勝 主場3球炒升班馬高雲地利",
+      "description": "英超新季本港時間周五深夜正式開鑼,揭幕戰由衛冕阿仙奴打頭陣迎戰升班馬高雲地利。結果兵工廠憑前線三子夏維斯、布卡約沙卡及奧迪加特各入一球,以",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60382574/%E8%8B%B1%E8%B6%85%E9%96%8B%E9%91%BC%E6%88%B0-%E9%98%BF%E4%BB%99%E5%A5%B4%E6%97%97%E9%96%8B%E5%BE%97%E5%8B%9D-%E4%B8%BB%E5%A0%B43%E7%90%83%E7%82%92%E5%8D%87%E7%8F%AD%E9%A6%AC%E9%AB%98%E9%9B%B2%E5%9C%B0%E5%88%A9",
+      "pubDate": "2026-08-22 02:47:18",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167783541098942464127536.jpeg/D9MpBV7qD_Ac9973lKN6xpKUtu5qpjmvGF96EBhfehA",
+      "keywords": [
+        "香港新聞",
+        "hk01",
+        "體育",
+        "籃球",
+        "體育消息",
+        "網球",
+        "新聞",
+        "體育新聞",
+        "f1賽車",
+        "香港01",
+        "高爾夫球",
+        "nba"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "57bd0aef58634b2ec05622a8d7d1bb66",
+      "title": "蘋果裁減Siri及Vision Pro團隊共逾200人 資源重心轉向AI與新產品",
+      "description": "據彭博報道,蘋果公司將裁減負責Siri數字助理和Vision Pro頭戴裝置的團隊的員工,此舉旨在聚焦新設備和人工智能。 報道引述知情人士指,蘋果又裁減智能系統體驗團隊員工。該團隊隸屬於軟件工程部門,負責開發蘋果設備上的部分AI功能。知情人士又稱,今次調整中蘋果基本關閉了Vision Pro遊戲團隊,並縮減了負責製作Vision Pro沈浸式視頻內容團隊的規模。 此次裁員共影響逾200人,其中Vi",
+      "link": "https://www.stheadline.com/realtime-finance/3607036/%E8%98%8B%E6%9E%9C%E8%A3%81%E6%B8%9BSiri%E5%8F%8AVision-Pro%E5%9C%98%E9%9A%8A%E5%85%B1%E9%80%BE200%E4%BA%BA-%E8%B3%87%E6%BA%90%E9%87%8D%E5%BF%83%E8%BD%89%E5%90%91AI%E8%88%87%E6%96%B0%E7%94%A2%E5%93%81",
+      "pubDate": "2026-08-22 02:47:15",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e1f6cf6b79364697a51122ef08970bb8/2026-08/apple_0.png",
+      "keywords": [
+        "siri",
+        "vision pro",
+        "ai",
+        "人工智能",
+        "蘋果"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a803130db5256a1161ac95ac4b28302d",
+      "title": "建築物管理條例—收緊業主大會授權票制度 杜潔麗:持開放態度看社會認為是否太嚴格",
+      "description": "政府正就《建築物管理條例》的修訂建議作諮詢,建議主要涵蓋五大方向,包括提高大型維修工程及大額採購決定的出席及投票門檻、完善委任代表文書制度等。針對建議考慮僅容許業主親屬或同一屋苑的其他業主等特定人士,擔任獲授權代表等,民政事務總署署長杜潔麗於一個電視節目中稱,對此改動持開放態度,會考慮會否過於嚴格。 杜潔麗表示,收緊業主大會授權票制度,是回應有意見擔心投票結果被少數人操縱,修例期望提升授權票認受性",
+      "link": "https://www.stheadline.com/society/3607038/%E5%BB%BA%E7%AF%89%E7%89%A9%E7%AE%A1%E7%90%86%E6%A2%9D%E4%BE%8B%E6%94%B6%E7%B7%8A%E6%A5%AD%E4%B8%BB%E5%A4%A7%E6%9C%83%E6%8E%88%E6%AC%8A%E7%A5%A8%E5%88%B6%E5%BA%A6-%E6%9D%9C%E6%BD%94%E9%BA%97%E6%8C%81%E9%96%8B%E6%94%BE%E6%85%8B%E5%BA%A6%E7%9C%8B%E7%A4%BE%E6%9C%83%E8%AA%8D%E7%82%BA%E6%98%AF%E5%90%A6%E5%A4%AA%E5%9A%B4%E6%A0%BC",
+      "pubDate": "2026-08-22 02:46:49",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d28f32695350a95e10edda7c75bfca67/2026-08/NI260328WTC09.jpg",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cf9350fdd07ff07ac91a7264e6b25ecf",
+      "title": "羅淑佩:有信心達全年5380萬人次旅客訪港 考慮擴票尾經濟活動",
+      "description": "文化體育及旅遊局局長羅淑佩今日(22日)在港台節目中表示,有信心能達到全年有5380萬人次旅客訪港的目標,又稱本港第四季屬傳統旅遊旺季,下半年",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60382573/%E7%BE%85%E6%B7%91%E4%BD%A9-%E6%9C%89%E4%BF%A1%E5%BF%83%E9%81%94%E5%85%A8%E5%B9%B45380%E8%90%AC%E4%BA%BA%E6%AC%A1%E6%97%85%E5%AE%A2%E8%A8%AA%E6%B8%AF-%E8%80%83%E6%85%AE%E6%93%B4%E7%A5%A8%E5%B0%BE%E7%B6%93%E6%BF%9F%E6%B4%BB%E5%8B%95",
+      "pubDate": "2026-08-22 02:45:37",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260715/1154137934979534848391625.jpeg/qYCm-uKCYrGYZs5zAjUE1fkTdhQYIVKoo2Jlu7liZbs",
+      "keywords": [
+        "香港新聞",
+        "國際新聞",
+        "hk01",
+        "頭條新聞",
+        "新聞",
+        "即時新聞",
+        "香港01",
+        "港聞"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0cba7fe98a54c2900629f3e8ac59284c",
+      "title": "應科院參與可持續住宅生活研討會 展示綠色建築及可再生能源技術",
+      "description": "香港應用科技研究院(應科院)參與由中華電力有限公司及香港科技園公司合辦的「2026 可持續住宅生活研討會」,在展覽攤位展示其在可持續建築材料與可再生能源技術領域的最新研發成果,推動綠色建築節能減碳,打造低碳、智慧的宜居環境。 研討會期間,應科院首席總監(技術解決方案業務拓展部)沈文龍獲邀擔任專題討論嘉賓,與業界領袖探討如何運用創新科技在私人住宅開發中推動可持續發展。應科院亦接待來自香港房屋協會、中電及香港科技園公司的嘉賓團到展位交流,共同探討研發技術落地應用與跨界綠色合作。",
+      "link": "https://www.bastillepost.com/hongkong/article/16616881-%E6%87%89%E7%A7%91%E9%99%A2%E5%8F%83%E8%88%87%E5%8F%AF%E6%8C%81%E7%BA%8C%E4%BD%8F%E5%AE%85%E7%94%9F%E6%B4%BB%E7%A0%94%E8%A8%8E%E6%9C%83-%E5%B1%95%E7%A4%BA%E7%B6%A0%E8%89%B2%E5%BB%BA%E7%AF%89%E5%8F%8A",
+      "pubDate": "2026-08-22 02:45:06",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1382222400720599_4464f28346_FB_v2-2.jpg",
+      "keywords": [
+        "source-gov",
+        "太極影片",
+        "社會事",
+        "應科院",
+        "ai小助手",
+        "中電",
+        "科技園",
+        "可再生能源"
+      ],
+      "category": [
+        "science",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9b9452fbfeb6a2b71e86ccc13538a081",
+      "title": "的士服務嘉許計劃得獎名單出爐 運輸署署長冀持續改革提升服務質素",
+      "description": "運輸署公布今屆的士服務嘉許計劃得獎名單,共有20位優秀的士司機獲表揚,另有公眾投票最高分的最受歡迎的士司機、兩位傑出服務的好人好事司機,以及1支優秀的士服務管理團隊獲獎。 運輸署署長謝詠誼表示,獎項不但是支持和鼓勵,更肯定業界將優化乘客出行體驗放在首位。事實上,持續提升的士服務質素已寫入《運輸策略藍圖》,是長期工作重點之一。 運輸署近年引入的士車隊制度,組建更專業和系統化的車隊。所有車隊的士均安裝全球導航衞星系統、行車記錄器和車廂攝錄機三項設備,日後亦會擴展至所有的士,善用科技改善駕駛及乘客安全。此外,優化的士筆試、的士司機違例記分制度、的士電子繳費新規定等均已順利落實。署方會繼續與業界緊密合作,落實所有的士必須在車廂安裝行車記錄系統,以保障乘客和司機的權益。 謝詠誼感謝業界同心同德,一人一小步,成就改革的士業的一大步。她指出改革永遠在路上,期望繼續深化改革,使個人化點對點公共交通服務有更多、更優質的選擇,惠及乘客和旅客。",
+      "link": "https://www.bastillepost.com/hongkong/article/16616948-%E7%9A%84%E5%A3%AB%E6%9C%8D%E5%8B%99%E5%98%89%E8%A8%B1%E8%A8%88%E5%8A%83%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE%E5%87%BA%E7%88%90-%E9%81%8B%E8%BC%B8%E7%BD%B2%E7%BD%B2%E9%95%B7%E5%86%80%E6%8C%81%E7%BA%8C",
+      "pubDate": "2026-08-22 02:38:46",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1087050467411967_258c0c7b8c_FB_v2-2.jpg",
+      "keywords": [
+        "太極影片",
+        "ai小助手",
+        "的士",
+        "運輸署",
+        "source-gov",
+        "社會事"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "75b68347c29546a6be32740be2b09436",
+      "title": "西南九龍叡璟I今首輪發售180伙 大批準買家到場 現排隊人龍",
+      "description": "華潤置地發展的西南九龍叡璟I日前截收逾4.6萬票,刷新九龍新盤票王紀錄,更成歷來新盤首輪銷售新票王,以超額認購逾254倍之勢頭,於今日開售180伙價單單位,折實入場價約529.8萬元。 在尖沙咀新港中心售樓處現場所見,今日早上約9時已見大批準買家及地產代理等到場,現場已見人龍,A組買家率先到場登記。 項目以用家主導 華潤置地(海外)董事總經理施偉賢表示,項目最終更新收逾4.7萬票,按首輪180伙計",
+      "link": "https://www.stheadline.com/property-new/3607037/%E8%A5%BF%E5%8D%97%E4%B9%9D%E9%BE%8D%E5%8F%A1%E7%92%9FI%E4%BB%8A%E9%A6%96%E8%BC%AA%E7%99%BC%E5%94%AE180%E4%BC%99-%E5%A4%A7%E6%89%B9%E6%BA%96%E8%B2%B7%E5%AE%B6%E5%88%B0%E5%A0%B4-%E7%8F%BE%E6%8E%92%E9%9A%8A%E4%BA%BA%E9%BE%8D",
+      "pubDate": "2026-08-22 02:37:15",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0803ee92278fc19857ec6620bac4ac0b/2026-08/KF_Yan_40_.png",
+      "keywords": [
+        "樓市",
+        "西南九龍",
+        "叡璟",
+        "開售",
+        "新盤",
+        "一手"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a4a055b499418095cf6281a28241ee0a",
+      "title": "日媒:高市早苗9月改組內閣 維新會可望首度入閣",
+      "description": "日本傳媒報道,首相高市早苗已著手規畫9月中下旬進行上台後首次內閣及自民黨高層人事改組。官房長官木原稔留任幾成定局,而防衛大臣小泉進次郎、外務大臣茂木敏充及財務大臣片山皋月,留任的可能性都極高。另外,執政聯盟日本維新會預計首次派員入閣,而自民黨方面最大焦點為幹事長鈴木俊一是否續任。 今次人事牽動高市秋季臨時國會推動消費稅減稅、積極財政及年底修訂安保3文件,也被視為她為明年9月自民黨總裁選舉提前布局。",
+      "link": "https://www.stheadline.com/realtime-world/3607035/%E6%97%A5%E5%AA%92%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%979%E6%9C%88%E6%94%B9%E7%B5%84%E5%85%A7%E9%96%A3-%E7%B6%AD%E6%96%B0%E6%9C%83%E5%8F%AF%E6%9C%9B%E9%A6%96%E5%BA%A6%E5%85%A5%E9%96%A3",
+      "pubDate": "2026-08-22 02:37:10",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/aa909be2dbb93596bb307dfa5716c68e/2026-08/a1_27.jpg",
+      "keywords": [
+        "小泉進次郎",
+        "高市早苗",
+        "維新會"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d3e331792317b87689178738c1b9ccf8",
+      "title": "電池老化換電貴過車價 內地首批電動車保養過期高峰 2026 年殺到",
+      "description": "內地首批新能源車陸續脫離廠方質保期,早年購入電動車的車主開始面對續航大減、電池老化等問題,換電池費用甚至高過車 [...]",
+      "link": "https://unwire.hk/2026/08/22/ev-battery-warranty-cost/fun-tech/",
+      "pubDate": "2026-08-22 02:31:11",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo29-1.png",
+      "keywords": [
+        "電動車",
+        "電池",
+        "科技新聞",
+        "新能源車",
+        "質保",
+        "二手車",
+        "汽車科技"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2ba02b2d17a2898dc312da94c0a97db8",
+      "title": "名古屋亞運會9.19開幕 羅淑佩:對港隊表現有信心",
+      "description": "名古屋亞運會將於下月19日開幕,文化體育及旅遊局局長羅淑佩表示,對港隊代表在今屆賽事的表現有信心。她指出,最終參賽運動員人數將於9月授旗儀式時公布,雖然上屆杭州亞運有主場之利,但近期不同體育項目均傳來「好消息」,包括乒乓港隊代表在男雙、女雙及混雙均打入決賽,狀態良好,又提到不同項目運動員的經驗亦越來越多。 羅淑佩在電台節目表示,過往隊際外出參賽獲資助九成參賽資金,現時已增至全額資助,又提到現時的審批亦會較寬鬆,希望資助更多運動員參賽。",
+      "link": "https://www.bastillepost.com/hongkong/article/16616374-%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E6%9C%839-19%E9%96%8B%E5%B9%95-%E7%BE%85%E6%B7%91%E4%BD%A9%EF%BC%9A%E5%B0%8D%E6%B8%AF%E9%9A%8A%E8%A1%A8%E7%8F%BE%E6%9C%89%E4%BF%A1%E5%BF%83",
+      "pubDate": "2026-08-22 02:30:54",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/FotoJet-2-9.jpg",
+      "keywords": [
+        "政事",
+        "名古屋亞運會",
+        "羅淑佩",
+        "source-2"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9d5b6ebddcb41c5cd4ea9c7d2559d915",
+      "title": "台海有戰事| 如果賴清德搞政變 鄭麗文怎麼辦",
+      "description": "很多人一看到「政變」這個詞可能就會表示質疑,自1996年舉行第一次公民直選總統、副總統已經三十年了,每四年一次大選已成為台灣政治的一部分,民",
+      "link": "https://www.hk01.com/%E4%B8%AD%E5%9C%8B%E8%A7%80%E5%AF%9F/60381546/%E5%8F%B0%E6%B5%B7%E6%9C%89%E6%88%B0%E4%BA%8B-%E5%A6%82%E6%9E%9C%E8%B3%B4%E6%B8%85%E5%BE%B7%E6%90%9E%E6%94%BF%E8%AE%8A-%E9%84%AD%E9%BA%97%E6%96%87%E6%80%8E%E9%BA%BC%E8%BE%A6",
+      "pubDate": "2026-08-22 02:30:10",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260410/1119289073010610176682791.jpeg/J2gwOW_wpr9TAxo1NGWUNFswKal5UhNa0wxf39MMX98",
+      "keywords": [
+        "兩岸",
+        "社會",
+        "政治",
+        "文化",
+        "香港01",
+        "經濟",
+        "中國"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "40f41cb154fb9cfd28fd1076c0bbe5ad",
+      "title": "田曦薇造型起爭議 「蕾絲透膚內衣」側邊風光全露 遭批毫無美感",
+      "description": "內地女星田曦薇近來憑藉新劇《逐玉》狂漲百萬粉絲,躋身新一代古裝劇女神。不過人紅是非多,有網友翻出她過去出席時尚大秀的照片,只見她身穿連身黑",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60382070/%E7%94%B0%E6%9B%A6%E8%96%87%E9%80%A0%E5%9E%8B%E8%B5%B7%E7%88%AD%E8%AD%B0-%E8%95%BE%E7%B5%B2%E9%80%8F%E8%86%9A%E5%85%A7%E8%A1%A3-%E5%81%B4%E9%82%8A%E9%A2%A8%E5%85%89%E5%85%A8%E9%9C%B2-%E9%81%AD%E6%89%B9%E6%AF%AB%E7%84%A1%E7%BE%8E%E6%84%9F",
+      "pubDate": "2026-08-22 02:30:04",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167169857309904896042386.png/0zd30h95CA43uW7Yh_fGAOxzhdh3P0h6szn56rM5-eo",
+      "keywords": [
+        "即時娛樂新聞",
+        "韓星",
+        "娛樂新聞",
+        "藝人",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "明星",
+        "hk01",
+        "即時娛樂"
+      ],
+      "category": [
+        "entertainment",
+        "lifestyle"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2aa5e4a068dd4b246f8e0360cd4918a7",
+      "title": "1961年油麻地舊貌曝光 天后古廟前即今日廟街",
+      "description": "有網民在社交平台分享1961年油麻地的舊日景象,與現時面貌大相逕庭。帖文指出,天后古廟門前的一條街道,正是今日的廟街;新填地街一帶昔日曾設有戲院;榕樹頭滿佈小店;而油麻地警署當時仍然位處海邊。 在 Instagram 查看這則貼文 地政總署 Lands Department(@hkmapping)分享的貼文 帖文又提到,這就是六十年代的油麻地景像,並詢問網民有否聽過長輩講述這些故事,或家中是否藏有舊相片可以留言分享。",
+      "link": "https://www.bastillepost.com/hongkong/article/16616905-1961%E5%B9%B4%E6%B2%B9%E9%BA%BB%E5%9C%B0%E8%88%8A%E8%B2%8C%E6%9B%9D%E5%85%89-%E5%A4%A9%E5%90%8E%E5%8F%A4%E5%BB%9F%E5%89%8D%E5%8D%B3%E4%BB%8A%E6%97%A5%E5%BB%9F%E8%A1%97",
+      "pubDate": "2026-08-22 02:29:24",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/122266086680252949_fab54b001f_FB_v2-2.jpg",
+      "keywords": [
+        "太極影片",
+        "廟街",
+        "ai小助手",
+        "油麻地",
+        "source-gov",
+        "地政總署",
+        "社會事"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "863a87b19ff66752b117d12edaaecbe6",
+      "title": "愛知名古屋亞運|將全額資助派逾500人參賽 羅淑佩:對港隊有信心",
+      "description": "名古屋亞運會將於下月19日開幕。文化體育及旅遊局局長羅淑佩今日(22日)出席電台節目訪問表示,預料港隊派出超過500人出戰,惟最終參賽運動員人數將於9月授旗儀式時公布。而本港近期不同體育項目均有「好消息」,包括乒乓港隊代表在男雙、女雙、及混雙均打入決賽,狀態良好,對港隊代表有信心。 全額資助亞運籌備 羅淑佩透露,港隊除與內地國家隊共同訓練外,亦與水平優異的歐洲外籍選手交流,以提升技術並熟悉對手打法",
+      "link": "https://www.stheadline.com/society/3607032/%E6%84%9B%E7%9F%A5%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E5%B0%87%E5%85%A8%E9%A1%8D%E8%B3%87%E5%8A%A9%E6%B4%BE%E9%80%BE500%E4%BA%BA%E5%8F%83%E8%B3%BD-%E7%BE%85%E6%B7%91%E4%BD%A9%E5%B0%8D%E6%B8%AF%E9%9A%8A%E6%9C%89%E4%BF%A1%E5%BF%83",
+      "pubDate": "2026-08-22 02:26:28",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/sthl_square/e513c460242b5e7c9e7798d7fea99aae/2026-08/08967468746846.jpg",
+      "keywords": [
+        "愛知名古屋亞運",
+        "羅淑佩",
+        "對港隊"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3b37403226f552b7a8c70a44f5899f13",
+      "title": "平機會接小學生殘疾歧視投訴 學校拒批課外活動申請",
+      "description": "暑假臨近尾聲,不少學生趁假期參加課外活動認識新朋友。平機會近日公布一宗涉及特殊教育需要學生的個案,一名小學生報名參加學校舉辦的課外活動,惟校方以其過往曾行為失控及不聽指示為由,拒絕其申請。學生的父親認為學校拒絕申請的原因與兒子的過往行為無關,遂代兒子向平機會投訴學校涉殘疾歧視。 根據《殘疾歧視條例》,教育機構若因學生的殘疾而作出歧視,令學生未能獲得機構提供的服務或設施,即可能違法,除非校方能夠證明提供服務會對機構造成不合情理的困難。平機會提醒,教育機構應與家長討論其顧慮,共同尋找合適的安排,而非直接拒絕為有殘疾的學生提供服務或設施。",
+      "link": "https://www.bastillepost.com/hongkong/article/16616975-%E5%B9%B3%E6%A9%9F%E6%9C%83%E6%8E%A5%E5%B0%8F%E5%AD%B8%E7%94%9F%E6%AE%98%E7%96%BE%E6%AD%A7%E8%A6%96%E6%8A%95%E8%A8%B4-%E5%AD%B8%E6%A0%A1%E6%8B%92%E6%89%B9%E8%AA%B2%E5%A4%96%E6%B4%BB%E5%8B%95%E7%94%B3",
+      "pubDate": "2026-08-22 02:22:32",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1803069545160270_7c1baa176d_FB_v2-2.jpg",
+      "keywords": [
+        "太極影片",
+        "殘疾",
+        "教育",
+        "平機會",
+        "ai小助手",
+        "學校",
+        "source-gov",
+        "社會事"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a9816535b1212cabbcd25dfbce06b523",
+      "title": "Anthropic為自研晶片招兵買馬 Google定制晶片創始人加盟算力團隊",
+      "description": "據彭博報道,Anthropic已聘請Google定制晶片項目創始人Amir Salek,為自研半導體做準備。Anthropic周五指Salek將加入Anthropic的算力團隊,並向James Bradbury匯報。Salek曾負責Google的張量處理單元(TPU)業務直至2022年,並參與推出了前七代TPU晶片。 Anthropic目前從英偉達、Google和亞馬遜等多個供應商採購晶片,但近期",
+      "link": "https://www.stheadline.com/realtime-finance/3607033/Anthropic%E7%82%BA%E8%87%AA%E7%A0%94%E6%99%B6%E7%89%87%E6%8B%9B%E5%85%B5%E8%B2%B7%E9%A6%AC-Google%E5%AE%9A%E5%88%B6%E6%99%B6%E7%89%87%E5%89%B5%E5%A7%8B%E4%BA%BA%E5%8A%A0%E7%9B%9F%E7%AE%97%E5%8A%9B%E5%9C%98%E9%9A%8A",
+      "pubDate": "2026-08-22 02:16:44",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/18d2f162820cd79d9c8528147a4968d3/2026-08/AN204.jpg",
+      "keywords": [
+        "ai",
+        "人工智能",
+        "anthropic",
+        "晶片"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6daecbf00e1f5093e873a4af71c1a51e",
+      "title": "盧寵茂稱公營醫療收費改革至今 藥物名冊增17種藥包括專科用藥",
+      "description": "醫務衞生局局長盧寵茂表示,公營醫療收費改革實施後,資助藥物的引入速度有所加快。2026年截至目前,已有17種藥物納入藥物名冊,其中包括部分專科藥物。 盧寵茂在一個電台節目舉例,一種用於治療血癌的標靶藥,在改革及相關審批機制推行前,患者須自行支付約2萬至4萬元;現時若獲醫生處方,每4星期只需支付20元。 盧寵茂認為,這反映收費改革帶來正面轉變。醫院管理局目前亦正研究引入更多創新藥物及醫療器械,希望透過相關機制加快審批和普及使用,同時減輕患者的經濟負擔。",
+      "link": "https://www.bastillepost.com/hongkong/article/16617350-%E7%9B%A7%E5%AF%B5%E8%8C%82%E7%A8%B1%E5%85%AC%E7%87%9F%E9%86%AB%E7%99%82%E6%94%B6%E8%B2%BB%E6%94%B9%E9%9D%A9%E8%87%B3%E4%BB%8A%E3%80%80%E8%97%A5%E7%89%A9%E5%90%8D%E5%86%8A%E5%A2%9E17%E7%A8%AE%E8%97%A5",
+      "pubDate": "2026-08-22 02:11:55",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/12/20251205_CR_source-web_Lo_02.png",
+      "keywords": [
+        "政事",
+        "盧寵茂",
+        "source-2"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e50e8bd1c1a966bff32be36de8018f9b",
+      "title": "登高而望远,融智以精进----第十四届陆道培血液病学术大会圆满举办",
+      "description": "北京 2026年8月22日 /美通社/ -- 2026年8月21日,由北京健康促进会、广州市红棉肿瘤和罕见病公益基金会、北京医爱公益基金会联合主办,北京陆道培血液病研究院承办的第十四届陆道培血液病学术大会在河北燕达陆道培医院新院隆重开幕。近千名国内外血液学领域专家学者及临床医务工作者现场参会,线上同步直播吸引近3万人次观看。 大会联席主席由北京大学人民医院/北京大学血液病研究所黄晓军教授、北京大学人民医院血液病研究所张晓辉教授、哈尔滨血液病肿瘤研究所马军教授、北京陆道培血液病研究院陆佩华教授共同担任,北京陆道培血液病研究院刘开彦教授担任执行主席。 中国血液学新坐标 开幕式上,哈尔滨血液病肿瘤研究所马军教授的一句话引人注目——\"中国血液学已从过去的'跟跑'走向'并跑',部分领域实现了'领跑'。\"这背后,是几代血液学专家的接力创新。北京大学人民医院黄晓军教授也指出,陆道培血液病学术大会十四年来\"立足临床、面向前沿\",已成为推动学科发展的重要平台。大会联席主席张晓辉教授强调,一批年轻的道培团队正成为中国血液学事业的重要力量。陆佩华院长回顾大会十四年历程,感谢国内外专家支持,并介绍2025年陆道培医学团队完成造血干细胞移植1662例,发表学术论文81篇,累计影响因子181.87,54篇学术报告入选ASH、EHA、EBMT等国际顶级学术会议。 哪些进展值得关注? 大会设置主会场及血液病检验、护理专场,围绕造血干细胞移植、细胞免疫治疗、精准诊断、感染防治及护理等方向展开近40场专题报告,诸多内容紧贴临床痛点: 主会场(上午) 黄晓军教授带来\"造血干细胞移植后晚发重症肺炎的再认识\",直击移植患者常见致命并发症。 斯坦福医学中心、美国血液学会(ASH)主席Robert Negrin教授分享\"Regulatory T Cells Come of Age\",聚焦调节性T细胞前沿。 张晓辉教授从细胞力学与系统代谢维度,作\"白血病细胞免疫\"多维探索报告。 朱军教授(北京大学肿瘤医院)分享中国患者可及的滤泡性淋巴瘤新药治疗进展。 江倩教授(北京大学人民医院)解析MPNs诊断陷阱,聚焦易误诊病例。 陆佩华教授分享\"CD7 CAR-T治疗难治复发T-ALL/LBL伴有脑白病人\"的探索。 付涌水教授(广州市第一人民医院)介绍输血依赖型β-地中海贫血基因治疗真实世界经验。 主会场(下午) 王昱教授(北京大学人民医院)讲述\"How I treat allo-HSCT后植入不良\"的临床经验。 胡炯教授(上海瑞金医院)介绍PTCy联合后置小剂量ATG预防aGVHD临床研究。 庄俊玲教授(北京协和医院)交流多发性骨髓瘤患者队列管理经验。 孙于谦教授(北京大学人民医院)围绕老年异基因造血干细胞移植展开探讨。 张弦教授(陆道培医院)聚焦Ph+急性淋巴细胞白血病治疗进展。 石玉铸教授(陆道培医院)分享造血干细胞移植后中枢系统感染性并发症影像特点。 罗成娟教授(上海儿童医学中心)报告半相合体外去T造血干细胞移植在儿童单倍体移植中应用。 曹星玉教授(陆道培医院)分享MDS造血干细胞移植经验。 检验专场(主席:王卉教授、刘红星教授) 王建中教授(北京大学第一医院):AI时代血细胞形态学检验诊断高阶认知能力提升策略。 陈曼教授(北京陆道培医院):淋巴细胞亚群监测在造血干细胞移植并发症鉴别中应用。 王东出教授(河北燕达陆道培医院):CD7 CAR-T治疗后细胞因子水平与桥接移植后GVHD相关性。 潘金兰教授(苏州大学附属第一医院):MCL细胞/分子遗传学特征分析。 赵佳炜教授(中国医学科学院血液病医院):MYC基因异常能否优化多发性骨髓瘤高危分层。 张丽娜教授(陆道培医院):血管免疫母细胞性T细胞淋巴瘤病理诊断。 牧启田教授(宁波大学附属第一医院)、徐智芳教授(山西医科大学第二医院)、刘芹芹教授(泰安市中心医院)、周晓苏博士(北京陆道培血液病研究院):围绕不典型APL实验室诊断、耐药机制及复杂融合基因等角度作系列报告。 护理专场 段建春护士长(河北燕达陆道培医院):造血干细胞移植后合并疱疹性口腔黏膜炎护理经验。 翟旭妍护士长(北京陆道培医院):PICC输注大蒜素注射液后穿刺部位不良反应及处理。 王尚护士长(北京陆道培血液病医院):白血病危重患者早期识别与安全管理。 学术专题环节 李楠楠教授(燕达陆道培医院):免疫重建视角下迟发性CMV感染预防策略。 朱会丽教授(燕达陆道培医院):从第7版指南看血液病/恶性肿瘤患者IFD诊疗策略优化。 金建学教授(医科达):基于直线加速器的TBI&TMI放疗技术临床应用进展。 颜述教授(燕达陆道培医院):抗真菌感染全程管理优化探讨。 何九江教授(燕达陆道培医院):从维奈克拉专家建议看真实世界AML患者应用。 十四年:从高峰论坛到学术盛会 自2012年河北燕达陆道培医院成立,陆道培血液病学术大会已走过十四年。陆佩华院长在致辞中感慨:\"人间万事出艰辛。\"最初只是一个小规模的高峰论坛,如今已发展为涵盖多学科、链接国内外的重要学术盛会。今年的大会首次在功能完善、设施先进的燕达陆道培医院新院举办,承载着承前启后的特殊意义。 当学术研究照进临床应用,当个体智慧汇聚成行业力量,血液病诊疗的每一次微小进步,终将汇成照亮患者生命的巨大曙光。陆道培医疗将继续以开放姿态链接国内外学术资源,推动血液病诊疗水平持续提升。",
+      "link": "https://www.prnasia.com/story/544913-1.shtml",
+      "pubDate": "2026-08-22 02:06:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "bio",
+        "pha",
+        "tds",
+        "hea",
+        "mtc"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5b553b8daeb52f85792857ceb20e54ff",
+      "title": "阿曼伊朗外長通話 討論恢復霍爾木茲海峽航行自由",
+      "description": "阿曼外交部表示,阿曼外交大臣巴德爾與伊朗外長阿拉格齊周五通電話,討論恢復霍爾木茲海峽航行自由的努力。 外交部指,兩位外長討論了這條戰略水道的航運發展,並強調需要繼續對話,以達成務實共識,促進航運恢復及暢順,同時支持地區安全與穩定。 他們亦審視了最新地區發展,以及為恢復對話及談判創造條件的努力,旨在收窄分歧,並就懸而未決的問題達成和平解決方案。 伊朗與阿曼近月就霍爾木茲海峽的航運安排舉行會談。伊朗外交部發言人巴蓋伊周一表示,兩國已就海峽新航線圖達成共識,預計將以包含航線圖及聯合聲明的「一攬子協議」形式,敲定有關協議。 (CGTN)",
+      "link": "https://www.bastillepost.com/hongkong/article/16617399-%E9%98%BF%E6%9B%BC%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%B7%E9%80%9A%E8%A9%B1-%E8%A8%8E%E8%AB%96%E6%81%A2%E5%BE%A9%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%88%AA%E8%A1%8C%E8%87%AA%E7%94%B1",
+      "pubDate": "2026-08-22 02:05:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/screenshot_8495452_01_FB.jpeg",
+      "keywords": [
+        "cgtn",
+        "大視野"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e28017d30e8557b9f74ecced682bb532",
+      "title": "蔚觀全局|使命感非無限犧牲理由:制度如何守住社工?",
+      "description": "蔚觀全局|林素蔚專欄試想一名入職不久的社工:早上收到學校通知,有學生懷疑受到虐待;中午要處理家庭衝突,評估當事人是否面對即時危險;下午接到",
+      "link": "https://www.hk01.com/01%E5%B0%88%E6%AC%84/60381892/%E8%94%9A%E8%A7%80%E5%85%A8%E5%B1%80-%E4%BD%BF%E5%91%BD%E6%84%9F%E9%9D%9E%E7%84%A1%E9%99%90%E7%8A%A7%E7%89%B2%E7%90%86%E7%94%B1-%E5%88%B6%E5%BA%A6%E5%A6%82%E4%BD%95%E5%AE%88%E4%BD%8F%E7%A4%BE%E5%B7%A5",
+      "pubDate": "2026-08-22 02:00:57",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167116941828034560528609.jpeg/mxvdYSRYyx5W98H3YQKTshiQwqAfzlV2Yo8M9WKPDPU",
+      "keywords": [
+        "政策",
+        "經濟",
+        "專欄",
+        "政治",
+        "投稿"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "688004a2bba34a1bfb02a11a154b79aa",
+      "title": "中年好聲音4|尹景順剖白走過抑鬱自殘陰霾 平淡看負評佛系爭冠:多咗個title我又唔等錢使",
+      "description": "TVB節目《中年好聲音4》總決賽將於8月23日假啟德體藝館舉行,終極7強名單已經順利訊誕生,包括:尹景順、吳亦偉、尤淑情、許雲妮、許美琪、蔡宓婕和鄭家聲。馬來西亞過江龍尹景順(Eugene)憑藉雌雄莫辨、真假音轉換自如的獨特聲線成為三甲大熱。尹景順近接受網上節目《橙色大笨象》專訪,首度深情剖白十年追夢的辛酸背景、對抗嚴重抑鬱症的經歷,以及他如何練就出一顆「百毒不侵」的強大心臟。 因為能完美駕馭男女",
+      "link": "https://www.stheadline.com/film-drama/3606905/%E4%B8%AD%E5%B9%B4%E5%A5%BD%E8%81%B2%E9%9F%B34%E5%B0%B9%E6%99%AF%E9%A0%86%E5%89%96%E7%99%BD%E8%B5%B0%E9%81%8E%E6%8A%91%E9%AC%B1%E8%87%AA%E6%AE%98%E9%99%B0%E9%9C%BE-%E5%B9%B3%E6%B7%A1%E7%9C%8B%E8%B2%A0%E8%A9%95%E4%BD%9B%E7%B3%BB%E7%88%AD%E5%86%A0%E5%A4%9A%E5%92%97%E5%80%8Btitle%E6%88%91%E5%8F%88%E5%94%94%E7%AD%89%E9%8C%A2%E4%BD%BF",
+      "pubDate": "2026-08-22 02:00:50",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/48058923e71631b6ae7c7be93b7934d6/2026-08/kf006_2.jpg",
+      "keywords": [
+        "尹景順"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "27b3cd1e30a74dda1311bf674cb859b1",
+      "title": "中年好聲音4|尹景順曾陷嚴重抑鬱日日想死十幾次 走過自殘陰霾看淡名利:攞第七都冇問題",
+      "description": "TVB節目《中年好聲音4》總決賽將於8月23日假啟德體藝館舉行,終極7強名單已經順利誕生,包括:尹景順、吳亦偉、尤淑情、許雲妮、許美琪、蔡宓婕和鄭家聲。馬來西亞過江龍尹景順(Eugene)憑藉雌雄莫辨、真假音轉換自如的獨特聲線成為三甲大熱。尹景順近日接受網上節目《橙色大笨象》專訪,首度深情剖白十年追夢的辛酸背景、對抗嚴重抑鬱症的經歷,以及他如何練就出一顆「百毒不侵」的強大心臟。 尹景順選擇平淡面對",
+      "link": "https://www.stheadline.com/film-drama/3606905/%E4%B8%AD%E5%B9%B4%E5%A5%BD%E8%81%B2%E9%9F%B34%E5%B0%B9%E6%99%AF%E9%A0%86%E6%9B%BE%E9%99%B7%E5%9A%B4%E9%87%8D%E6%8A%91%E9%AC%B1%E6%97%A5%E6%97%A5%E6%83%B3%E6%AD%BB%E5%8D%81%E5%B9%BE%E6%AC%A1-%E8%B5%B0%E9%81%8E%E8%87%AA%E6%AE%98%E9%99%B0%E9%9C%BE%E7%9C%8B%E6%B7%A1%E5%90%8D%E5%88%A9%E6%94%9E%E7%AC%AC%E4%B8%83%E9%83%BD%E5%86%87%E5%95%8F%E9%A1%8C",
+      "pubDate": "2026-08-22 02:00:50",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/48058923e71631b6ae7c7be93b7934d6/2026-08/kf006_2.jpg",
+      "keywords": [
+        "尹景順"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bf77259020e8493bfb194889625b9525",
+      "title": "用濕廁紙更乾淨?醫:易誘發瘙癢和皮炎 2類人群可以適當使用",
+      "description": "近期,濕廁紙相關話題在網絡引發熱議,不少人覺得只用乾紙巾如廁擦拭,總有清潔不到位的感覺,搭配濕廁紙才安心。不僅擦拭體驗更為柔和舒適,清潔效",
+      "link": "https://www.hk01.com/%E5%81%A5%E5%BA%B7Easy/60367830/%E7%94%A8%E6%BF%95%E5%BB%81%E7%B4%99%E6%9B%B4%E4%B9%BE%E6%B7%A8-%E9%86%AB-%E6%98%93%E8%AA%98%E7%99%BC%E7%98%99%E7%99%A2%E5%92%8C%E7%9A%AE%E7%82%8E-2%E9%A1%9E%E4%BA%BA%E7%BE%A4%E5%8F%AF%E4%BB%A5%E9%81%A9%E7%95%B6%E4%BD%BF%E7%94%A8",
+      "pubDate": "2026-08-22 02:00:50",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260818/1166402086930223104634521.jpeg/0bCJyxd_C69K9cGu01JV6GYICg6Gyp0na1G_12tRv9c",
+      "keywords": [
+        "網絡媒體",
+        "香港零一",
+        "新聞",
+        "香港媒體",
+        "香港01",
+        "香港新聞",
+        "網上媒體",
+        "香港傳媒",
+        "于品海",
+        "hk01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3c4cd89dac17f706977b87b25bd7f401",
+      "title": "愛·回家之三代同糖|李偉健隱藏漫畫家身份曝光 自畫像送客獲激讚",
+      "description": "藝人李偉健在《愛·回家之三代同糖》中飾演「曹嘉驄Terry」,創業賣杜拜朱古力糯米糍失敗,幸獲家人幫助才成功吸引客人。他更親自畫自畫像送給客人,出色畫功獲網民及同劇演員李茵彤大讚:「舅公畫得好靚」。 現實中的李偉健原來是著名兒童漫畫雜誌《CO-CO!》的前人氣主筆,曾連載《校園大英雄》等經典作品,更是不少八、九十後的集體回憶,堪稱TVB隱藏的漫畫高手。 在 Instagram 查看这篇帖子 李偉健Terry (@liwaikinterryli) 分享的帖子",
+      "link": "https://www.bastillepost.com/hongkong/article/16611578-%E6%84%9B%C2%B7%E5%9B%9E%E5%AE%B6%E4%B9%8B%E4%B8%89%E4%BB%A3%E5%90%8C%E7%B3%96%EF%BD%9C%E6%9D%8E%E5%81%89%E5%81%A5%E9%9A%B1%E8%97%8F%E6%BC%AB%E7%95%AB%E5%AE%B6%E8%BA%AB%E4%BB%BD%E6%9B%9D%E5%85%89",
+      "pubDate": "2026-08-22 02:00:40",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260806_liwaikinterryli__source-web-22-2.jpg",
+      "keywords": [
+        "愛回家之三代同糖",
+        "娛圈事",
+        "李偉健"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9aeb36ef6179a484f79766aaf7245305",
+      "title": "英超前瞻│曼城未執好季初或脫腳 後哥迪奧拿年代唔易應付",
+      "description": "曼城今夏有功勳領隊哥迪奧拿離任,繼任人馬列斯卡的戰術風格和踢法雖然相似,但其個人魅力難以複製,球隊預計會進入一段動蕩期。再者藍月今季又重組中場線,馬帥在上周英格蘭社區盾大敗予阿仙奴後,表現要增兵買人,行動正在進行中,季初脫腳在所難免。 馬列斯卡個人魅力不及哥迪奧拿 執教球隊10年共贏得20個錦標的哥迪奧拿今夏離任,由曾擔任其助手的馬列斯卡回歸接手。這名曾任教李斯特城和車路士的意大利籍主帥,不單外型",
+      "link": "https://www.stheadline.com/football-news/3606992/%E8%8B%B1%E8%B6%85%E5%89%8D%E7%9E%BB%E6%9B%BC%E5%9F%8E%E6%9C%AA%E5%9F%B7%E5%A5%BD%E5%AD%A3%E5%88%9D%E6%88%96%E8%84%AB%E8%85%B3-%E5%BE%8C%E5%93%A5%E8%BF%AA%E5%A5%A7%E6%8B%BF%E5%B9%B4%E4%BB%A3%E5%94%94%E6%98%93%E6%87%89%E4%BB%98",
+      "pubDate": "2026-08-22 02:00:36",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/04da6ef96b9b29c935fdc86017e4beff/2026-08/KF_-_2026-08-22T014642_953.png",
+      "keywords": [
+        "英超前瞻",
+        "曼城",
+        "艾寧夏蘭特",
+        "馬列斯卡"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7334efb24c3c9554ca0e128d47de5752",
+      "title": "體壇札記|我們能夠擁有正規棒球場嗎——從少棒佳績看香港棒球發展",
+      "description": "七月看罷世界盃,八月又忙着收看日本的全國高等學校棒球錦標賽(俗稱夏季甲子園/夏甲)。夏甲是全球最熱烈的學界體育比賽之一,全國超過四千間高校",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60364517/%E9%AB%94%E5%A3%87%E6%9C%AD%E8%A8%98-%E6%88%91%E5%80%91%E8%83%BD%E5%A4%A0%E6%93%81%E6%9C%89%E6%AD%A3%E8%A6%8F%E6%A3%92%E7%90%83%E5%A0%B4%E5%97%8E-%E5%BE%9E%E5%B0%91%E6%A3%92%E4%BD%B3%E7%B8%BE%E7%9C%8B%E9%A6%99%E6%B8%AF%E6%A3%92%E7%90%83%E7%99%BC%E5%B1%95",
+      "pubDate": "2026-08-22 02:00:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167205368653156352713894.jpeg/Ag4zI6lsIQSuL9qGLXpuCP9MZVHtsGDlXVxW4V1cVuE",
+      "keywords": [
+        "體育新聞",
+        "高爾夫球",
+        "籃球",
+        "f1賽車",
+        "新聞",
+        "體育消息",
+        "香港新聞",
+        "香港01",
+        "網球",
+        "體育",
+        "nba",
+        "hk01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5660e1f64f05c60252c42e46afdce3c8",
+      "title": "擁頂級電腦與過百遊戲!玩家嘆下班無精神打機 迷因圖引萬人共鳴",
+      "description": "近日,一則題為「這就是我的感受」的表情包(Meme圖),在遊戲愛好者聚集的網絡社區引發廣泛共鳴。圖中上半部分呈現的是怒目圓睜、肌肉賁張的綠巨",
+      "link": "https://www.hk01.com/%E9%81%8A%E6%88%B2%E5%8B%95%E6%BC%AB/60380007/%E6%93%81%E9%A0%82%E7%B4%9A%E9%9B%BB%E8%85%A6%E8%88%87%E9%81%8E%E7%99%BE%E9%81%8A%E6%88%B2-%E7%8E%A9%E5%AE%B6%E5%98%86%E4%B8%8B%E7%8F%AD%E7%84%A1%E7%B2%BE%E7%A5%9E%E6%89%93%E6%A9%9F-%E8%BF%B7%E5%9B%A0%E5%9C%96%E5%BC%95%E8%90%AC%E4%BA%BA%E5%85%B1%E9%B3%B4",
+      "pubDate": "2026-08-22 02:00:13",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167175111954927616320571.jpeg/9DX42_yOTglTUngdoTCT3g_cpcCfPVKiWNjUmljY1Jo",
+      "keywords": [
+        "打機",
+        "手機遊戲",
+        "steam",
+        "遊戲",
+        "香港01",
+        "玩家",
+        "google play",
+        "indie games",
+        "vr",
+        "gamers",
+        "switch",
+        "本土遊戲",
+        "遊戲開發",
+        "遊戲文化",
+        "機因",
+        "遊戲歷史",
+        "games",
+        "sony",
+        "geme",
+        "game development"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
     },
     {
       "id": "b251b1becd216c39b67384e849bba818",
@@ -196,6 +861,26 @@
       "region": "hk"
     },
     {
+      "id": "38395deb5b0a7962680dd7802adfc79f",
+      "title": "比特幣逼近8萬美元 一周累升23% 達利奧籲買:降低風險及提高回報",
+      "description": "比特幣周五曾觸及7.95萬美元,本周累升約23%,創2023年3月以來最大單周漲幅。據Coindesk報價,比特幣最新報近7.8萬美元。 比特幣在去年10月創下了約12.6萬美元的歷史高點,隨後一路下跌超過50%,並在今年7月初跌至約5.76萬美元的低點。不過,自美國財長貝森特周三宣布,將把長期國債回購規模至少提高一倍,加密貨幣市場情緒隨之轉趨樂觀,今輪上漲亦迫使交易員平倉數十億美元的空頭頭寸。同",
+      "link": "https://www.stheadline.com/blockchain/3607028/%E6%AF%94%E7%89%B9%E5%B9%A3%E9%80%BC%E8%BF%918%E8%90%AC%E7%BE%8E%E5%85%83-%E4%B8%80%E5%91%A8%E7%B4%AF%E5%8D%8723-%E9%81%94%E5%88%A9%E5%A5%A7%E7%B1%B2%E8%B2%B7%E9%99%8D%E4%BD%8E%E9%A2%A8%E9%9A%AA%E5%8F%8A%E6%8F%90%E9%AB%98%E5%9B%9E%E5%A0%B1",
+      "pubDate": "2026-08-22 01:54:58",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bce3f27fa51ae2325df3b9822b128b24/2026-08/BTC_1.png",
+      "keywords": [
+        "比特幣",
+        "達利奧",
+        "特朗普"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "2faa62c858843c892e7c4a99ee2f701a",
       "title": "比特幣逼近8萬美元 一周累升23% 13隻ETF本周吸金逾10億美元",
       "description": "比特幣周五曾觸及7.95萬美元,本周累升約23%,創2023年3月以來最大單周漲幅。據Coindesk報價,比特幣最新報近7.8萬美元。 比特幣在去年10月創下了約12.6萬美元的歷史高點,隨後一路下跌超過50%,並在今年7月初跌至約5.76萬美元的低點。不過,自美國財長貝森特周三宣布,將把長期國債回購規模至少提高一倍,加密貨幣市場情緒隨之轉趨樂觀,今輪上漲亦迫使交易員平倉數十億美元的空頭頭寸。同",
@@ -213,6 +898,37 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "9c492aa0e6507bf0dc4caeffd0cd9435",
+      "title": "華潤叡璟I首輪開賣180伙 全數沽清 新盤票王最終收逾4.71萬票!",
+      "description": "【華潤/叡璟/叡璟I/新盤/票王/大手客】華潤置地(1109)西南九龍長沙灣發祥街叡璟 (THE STERLING) 第一期「叡璟I」,於今日(22日)首輪銷售201伙",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60382267/%E8%8F%AF%E6%BD%A4%E5%8F%A1%E7%92%9Fi%E9%A6%96%E8%BC%AA%E9%96%8B%E8%B3%A3180%E4%BC%99-%E5%85%A8%E6%95%B8%E6%B2%BD%E6%B8%85-%E6%96%B0%E7%9B%A4%E7%A5%A8%E7%8E%8B%E6%9C%80%E7%B5%82%E6%94%B6%E9%80%BE4-71%E8%90%AC%E7%A5%A8",
+      "pubDate": "2026-08-22 01:52:41",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167925663701667840801325.jpeg/rEfHjFDJJWlymqhhUZb4SAZ52N4mYpjBe9j_hXvY_4U",
+      "keywords": [
+        "恆生指數",
+        "新聞",
+        "股票",
+        "財經網",
+        "hk01",
+        "財經台",
+        "地產消息",
+        "財經透視",
+        "經濟",
+        "港股",
+        "財經新聞",
+        "香港新聞",
+        "香港01",
+        "a股"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "d22b035fc7f5622e2dfc3dc57c9b4dfc",
@@ -700,6 +1416,25 @@
       "region": "hk"
     },
     {
+      "id": "c9206aaf9a1d44c987b0b5cced8d6691",
+      "title": "美加談判競速達成協議,力阻50%鋼鋁關稅生效",
+      "description": "Investing.com - 據彭博社週五引述知情人士報導,美國與加拿大談判代表正就鋼鐵及鋁進口的關稅減免範圍展開磋商,雙方爭分奪秒,力求在午夜截止期限前達成貿易協議。",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%8A%A0%E8%AB%87%E5%88%A4%E7%AB%B6%E9%80%9F%E9%81%94%E6%88%90%E5%8D%94%E8%AD%B0-%E5%8A%9B%E9%98%BB50-%E9%8B%BC%E9%8B%81%E9%97%9C%E7%A8%85%E7%94%9F%E6%95%88-005803530.html",
+      "pubDate": "2026-08-22 00:58:03",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4R00M_M.jpg",
+      "keywords": [
+        "談判",
+        "關稅",
+        "加拿大"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "5eef09aac3f4a7bd37530ef40703e514",
       "title": "中國印尼舉行外長防長「2+2」會議 雙方稱要共同反對外部干涉",
       "description": "雅加達舉行了中國與印尼外長防長「2+2」對話機制的第二次部長級會議,外交部長王毅、國防部長董軍,以及印尼外長蘇吉約諾、防長沙夫里共同主持了這次會議。雙方在會上達成共識,認為必須統籌兼顧發展與安全兩大範疇,並一致表明要共同反對外部干涉。 王毅在會上指出,中國印尼「2+2」機制是中國在全球建立的首個部長級「2+2」機制,為兩國戰略溝通搭建了全新平台。他提到,首次會議已有效推動政治安全與防務領域的合作,對維護兩國正當利益發揮了積極作用。 董軍則表示,中方願意與印尼攜手,以戰略眼光推進國防和軍隊建設方面的合作,並持續發掘防務合作的潛力。 根據新華社的報道,蘇吉約諾在會上重申,印尼堅定奉行一個中國政策,反對任何形式的外部干涉,同時表達了與中方在反恐、執法及打擊網絡詐騙等範疇拓展合作的意願。 沙夫里亦表示,印尼期望與中方加強戰略溝通,促進兩軍之間的交流,並在防務、海上安全、網絡安全、打擊網賭電詐及跨國犯罪等領域不斷深化合作。",
@@ -852,6 +1587,24 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "198919da3572e7afa514ba12ee618b13",
+      "title": "港股ADR預計恆指下周一低開123點 報25,886點",
+      "description": "ADR預託證券 | 代號 | 相對股價(HKD) | 港股對預託證券溢價(%) 長和 | CKHUY.NASD OTHER | 70.353 | 0.64% 中電控股 | CLPHY.NASD OTHER | 80.235 | -0.54% 香港中華煤氣 | HOKCY.NASD OTHER | 7.451 |...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E8%82%A1adr%E9%A0%90%E8%A8%88%E6%81%86%E6%8C%87%E4%B8%8B%E5%91%A8-%E4%BD%8E%E9%96%8B123%E9%BB%9E-%E5%A0%B125-886%E9%BB%9E-003001665.html",
+      "pubDate": "2026-08-22 00:30:01",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "nasd",
+        "nasd other"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "9ad7d9d04dcc0722ef837d092e0247e5",
@@ -172671,7 +173424,5 @@
       "region": "hk",
       "pinned": true
     }
-  ],
-  "total": 8808,
-  "last_updated": "2026-08-22T22:14:07.256896"
+  ]
 }
