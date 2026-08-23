@@ -1,7 +1,547 @@
 {
-  "last_updated": "2026-08-23T16:00:24.469593",
-  "total": 9279,
   "articles": [
+    {
+      "id": "9631c7c78a0237db7f1c5a0fa22158d3",
+      "title": "北美貿易戰開打 美國加徵50%關稅 卡尼稱實行等值反制",
+      "description": "加拿大總理卡尼(Mark Carney)周六表示,加拿大將於9月8日起對美國多個領域進口商品徵收報復性關稅,回應特朗普(Donald Trump,又譯川普)稅率50",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382711/%E5%8C%97%E7%BE%8E%E8%B2%BF%E6%98%93%E6%88%B0%E9%96%8B%E6%89%93-%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%BE%B550-%E9%97%9C%E7%A8%85-%E5%8D%A1%E5%B0%BC%E7%A8%B1%E5%AF%A6%E8%A1%8C%E7%AD%89%E5%80%BC%E5%8F%8D%E5%88%B6",
+      "pubDate": "2026-08-22 18:31:55",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260706/1150833035134898176436975.jpeg/847-hg5QxzIpfT6AJWsOV0XhGp5tXISx_baHuf22h7k",
+      "keywords": [
+        "國際新聞",
+        "國際",
+        "新聞",
+        "香港01",
+        "世界新聞",
+        "環球",
+        "hk01"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "7dff19a359a1debeb1cd4a3d1296c69b",
+      "title": "九建短債飈5.8倍 涉清水灣道項目貸款明年上半年到期",
+      "description": "【明報專訊】九龍建業(0034)上周五公布中期業績,續保持獲利及派息。但集團指出,因為要就興建清水灣道項目,所涉銀團項目貸款將於明年上半年到期,因此將有關貸款列為短期負債,致一年內到期的流動負債在半年內大增5.8倍至114.73億元,管理層強調有信心取得再融資。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417283565/%E4%B9%9D%E5%BB%BA%E7%9F%AD%E5%82%B5%E9%A3%885-8%E5%80%8D-%E6%B6%89%E6%B8%85%E6%B0%B4%E7%81%A3%E9%81%93%E9%A0%85%E7%9B%AE%E8%B2%B8%E6%AC%BE%E6%98%8E%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%88%B0%E6%9C%9F",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "九龍建業"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "b7ef54759a6ff3794c3b6c9a9aa753ad",
+      "title": "「叡璟I」首輪銷售價單單位售罄 套現近16億元 擬日內加推",
+      "description": "<匯港通訊> 華潤置地(海外)董事總經理施偉賢表示:「THE STERLING 叡璟I」延續新盤首輪銷售票王之熱潮,項目首輪以價單發售的180伙已火速售罄,套現近16億港元。A組時段售出64伙,套現逾6.6億港元,當中最大額成交的客人購入4伙單位,包括3間2房單位及1間3房單位,涉資約4270萬港元。項目向隅者眾...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8F%A1%E7%92%9Fi-%E9%A6%96%E8%BC%AA%E9%8A%B7%E5%94%AE%E5%83%B9%E5%96%AE%E5%96%AE%E4%BD%8D%E5%94%AE%E7%BD%84-%E5%A5%97%E7%8F%BE%E8%BF%9116%E5%84%84%E5%85%83-%E6%93%AC%E6%97%A5%E5%85%A7%E5%8A%A0%E6%8E%A8-145220203.html",
+      "pubDate": "2026-08-22 14:52:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "e726926f6d18a04481dd1a1d0bcc390d",
+      "title": "比特幣在國債收益率下滑引發挾淡倉後,守穩77,000美元上方",
+      "description": "Investing.com - 據CoinDesk及CNBC報道,比特幣週六交投於77,000美元略上方,此前曾一度逼近80,000美元,但隨後回吐部分升幅。市場正在評估此次由美國國債市場帶動的挾淡倉行情,究竟是持續復甦的開端,還是短暫反彈。",
+      "link": "https://hk.finance.yahoo.com/news/%E6%AF%94%E7%89%B9%E5%B9%A3%E5%9C%A8%E5%9C%8B%E5%82%B5%E6%94%B6%E7%9B%8A%E7%8E%87%E4%B8%8B%E6%BB%91%E5%BC%95%E7%99%BC%E6%8C%BE%E6%B7%A1%E5%80%89%E5%BE%8C-%E5%AE%88%E7%A9%A977-000%E7%BE%8E%E5%85%83%E4%B8%8A%E6%96%B9-105207243.html",
+      "pubDate": "2026-08-22 10:52:07",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPED9G1CM_M.jpg",
+      "keywords": [
+        "retirement",
+        "investing",
+        "economy",
+        "business",
+        "stocks",
+        "track portfolio",
+        "stock",
+        "financial information",
+        "finance",
+        "stock research",
+        "business news",
+        "tax",
+        "real estate",
+        "suze orman",
+        "stock valuation",
+        "investment tools",
+        "mutual funds",
+        "mortgage",
+        "quote",
+        "personal finance"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "31c51ea68ea41febb19b90be67647d2b",
+      "title": "英超|迪沙比為慘敗致歉 「熱刺沒準備好對抗」",
+      "description": "熱刺在英超首戰以0:3不敵賓福特,領隊迪沙比賽後為敗仗致歉。他表示熱刺在體能上被比下去,但他相信球隊會有進步,與去季在榜尾掙扎不一樣。 體能對抗不及賓福特 熱刺去季在最後一周才確定護級成功,今夏豪花超過兩億鎊買人,但開季首戰即吃一記悶棍,作客以0:3不敵賓福特。迪沙比賽後為敗仗致歉,他分析敗因時認為體能分野是關鍵:「在體能上吃了苦頭,但這是賽前已知的,我們在很多時爭搶中慢了一步,我為吞敗感到抱欺。",
+      "link": "https://www.stheadline.com/football-news/3607232/%E8%8B%B1%E8%B6%85%E8%BF%AA%E6%B2%99%E6%AF%94%E7%82%BA%E6%85%98%E6%95%97%E8%87%B4%E6%AD%89-%E7%86%B1%E5%88%BA%E6%B2%92%E6%BA%96%E5%82%99%E5%A5%BD%E5%B0%8D%E6%8A%97",
+      "pubDate": "2026-08-22 20:56:39",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/f47e371a95a638a32e3f9a1ff0890291/2026-08/dezerbi.jpg",
+      "keywords": [
+        "英超",
+        "迪沙比",
+        "熱刺"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1cb130448123540162fd699db41277d7",
+      "title": "法國安樂死法案正式生效 成年絕症患者可自行服藥終結生命",
+      "description": "法國的「安樂死」合法化法案通過憲法審查階段,總統馬克龍(Emmanuel Macron)8月19日正式簽署,他對法案通過表示歡迎,稱其為「一場堪稱典範的民主辯論畫上句號」。 該法案歷經多年辯論及修訂,設立嚴格門檻,僅允許罹患嚴重且無法治癒的終末期疾病、長期承受身心痛苦的成年民眾申請安樂死。此外患者需「自願表達意願」,經醫生評估諮詢15日後,歷經兩天反思期,可自行使用致命藥物;若患者無力自理,可由醫護人員協助執行,並於執行當日再次確認其意願。 這項議題在法國極具爭議,遭天主教會及部分醫界人士反對。不過民調顯示,多數人表示支持,馬克龍亦長期支持安樂死立法,甚至在2022年連任時承諾推動。 隨著法案生效,意味法國將加入荷蘭、比利時、瑞士等歐洲國家行列,落實安樂死合法制度。 生命可貴,若有困擾可求助。 24小時求助熱線.. 香港撒瑪利亞防止自殺會熱線..23892222 撒瑪利亞會熱線(多種語言)..28960000 生命熱線..23820000 東華三院芷若園熱線..18281 社會福利署熱線..23432255 醫院管理局精神健康專線(24小時精神健康熱線諮詢服務):24667350 明愛向晴熱線:18288",
+      "link": "https://www.bastillepost.com/hongkong/article/16611165-%E6%B3%95%E5%9C%8B%E5%AE%89%E6%A8%82%E6%AD%BB%E6%B3%95%E6%A1%88%E6%AD%A3%E5%BC%8F%E7%94%9F%E6%95%88-%E6%88%90%E5%B9%B4%E7%B5%95%E7%97%87%E6%82%A3%E8%80%85%E5%8F%AF%E8%87%AA%E8%A1%8C%E6%9C%8D%E8%97%A5",
+      "pubDate": "2026-08-22 20:45:42",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/GettyImages-1219136359.jpg",
+      "keywords": [
+        "法律",
+        "太極影片",
+        "死亡",
+        "大視野"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3656461073bbe0f48ddf70b41ac3f971",
+      "title": "江蘇19歲正能量網紅「光Sir」車禍離世 才剛還清百萬債買新車 粉絲悲慟:天意弄人",
+      "description": "江蘇有靠分享正能量和六塊腹肌,收穫近47萬粉絲的19歲男網紅,日前車禍去世,距離他買了新車僅3天,距離他還清百萬債務相距約半個月,消息傳出後粉絲及網民紛紛表示哀悼,感慨好人不長命。 網紅「光Sir」身亡的消息,是他的姐姐在15日於「光Sir」的抖音賬號發布。訃告指,「光Sir」14日駕駛電單車在路口未有減速,與一輛汽車相撞,送院搶救無效身亡,年僅19歲。 「光Sir」姐姐指,弟弟遇事前6小時才駕車送她到車站,轉眼間便天人永隔。她透露,「光Sir」3天前才全款22萬人民幣買了一輛奧迪,想不到車技一向很好的「光Sir」卻駕車出了事。 年紀輕輕的「光Sir」,半生坎坷。一向予人陽光感覺的他,4月時曾透露,兒時家裡很窮,父親酗酒家暴,母親被迫逃離家園。14歲便踏入社會,試過每日僅可花5元生活,15歲車禍險癱。 從事多項工作的他,製作甜品、電焊、開船、汽車維修樣樣皆能。17歲投身工程界卻遇上欠款,令他負債過百萬,經過2年打拼才在7月把債還清。當時「光Sir」還滿心歡喜地把好消息和粉絲分享。 「光Sir」的離開,令其粉絲及網民十分唏噓,指他才剛苦盡甘來,卻即與新買愛車遇上致命車禍:「天意弄人,太可惜了」、「24年看他救貓開始一直都很喜歡他」、「好人不長命」、「今年到底怎麼了?悄悄咪咪地奪走了很多人的生命」、「人生啊,哭了」、「才19啊,好可惜」。",
+      "link": "https://www.bastillepost.com/hongkong/article/16586055-%E6%B1%9F%E8%98%8719%E6%AD%B2%E6%AD%A3%E8%83%BD%E9%87%8F%E7%B6%B2%E7%B4%85%E3%80%8C%E5%85%89sir%E3%80%8D%E8%BB%8A%E7%A6%8D%E9%9B%A2%E4%B8%96-%E6%89%8D%E5%89%9B%E9%82%84%E6%B8%85%E7%99%BE%E8%90%AC",
+      "pubDate": "2026-08-22 20:40:40",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/bplib_20260817-170249_20260817_guang2_source-web__704px_1.png",
+      "keywords": [
+        "網紅",
+        "兩岸",
+        "太極影片",
+        "死亡"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "220327ce5b2c391bc5592963b90362d8",
+      "title": "中国在伊朗问题上为何占据了优势?",
+      "description": "美国威胁对伊朗及其支持者实施新的制裁,但这并未令北京感到不安。尽管特朗普呼吁中国加入其对德黑兰的经济胁迫政策,但中国拒绝了这一提议。尽管作为伊朗主要经济伙伴的北京表面上可能对美国“史无前例的制裁”威胁感到担忧,但中国当局似乎处于相当强势的地位。",
+      "link": "https://www.rfi.fr/cn/%E4%B8%AD%E4%B8%9C/20260822-%E4%B8%AD%E5%9B%BD%E5%9C%A8%E4%BC%8A%E6%9C%97%E9%97%AE%E9%A2%98%E4%B8%8A%E4%B8%BA%E4%BD%95%E5%8D%A0%E6%8D%AE%E4%BA%86%E4%BC%98%E5%8A%BF",
+      "pubDate": "2026-08-22 20:35:44",
+      "source_name": "Rfi",
+      "image_url": "https://s.rfi.fr/media/display/7d4699d0-9e68-11f1-83ff-005056a97e36/w:1024/p:16x9/AP26126265484646-1-1.jpg",
+      "keywords": [
+        "中东"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9be15ba66f36045195cc40935b3f93e2",
+      "title": "新加坡研發全球首個「人腦細胞」數據中心 號稱比傳統芯片更節能環保",
+      "description": "新加坡國立大學聯同澳洲生物科技初創Cortical Labs,以及新加坡數據中心平台DayOne,共同開發全球首個以人類腦細胞取代電腦芯片運作的生物數據中心原型,聲稱比傳統系統更節能環保。 Scientists at Cortical Labs have trained lab-grown human brain cells to play the video game Doom. Their system, CL1, uses about 200,000 neurons grown on a microchip that receive game signals and learn through feedback. pic.twitter.com/5tqxL4mQRD — Massimo (@Rainmaker1973) March 7, 2026 據報道,Cortical Labs的CL1生物計算系統在現場演示中,以閃爍燈光監測人類腦細胞活動,收集反應後用於運算。Cortical Labs創辦人兼CEO張漢文表示:「這是一個簡單的生物神經系統,內含不超過20萬個主要並列的腦神經元。」 研究人員強調,儘管腦細胞活躍,但系統並不具備意識,因此不存在道德爭議。團隊未來計劃將這項技術應用於腦退化疾病研究。 新加坡國立大學楊潞齡醫學院教授Rickie Patani指出:「我們希望利用系統了解疾病機制、篩選藥物,並找出最佳藥物組合,以恢復神經系統正常功能。」團隊亦正研究其他類型腦細胞在運算方面的應用潛力。",
+      "link": "https://www.bastillepost.com/hongkong/article/16610938-%E6%96%B0%E5%8A%A0%E5%9D%A1%E7%A0%94%E7%99%BC%E5%85%A8%E7%90%83%E9%A6%96%E5%80%8B%E3%80%8C%E4%BA%BA%E8%85%A6%E7%B4%B0%E8%83%9E%E3%80%8D%E6%95%B8%E6%93%9A%E4%B8%AD%E5%BF%83-%E8%99%9F%E7%A8%B1%E6%AF%94",
+      "pubDate": "2026-08-22 20:30:42",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/704x369-47.png",
+      "keywords": [
+        "太極影片",
+        "人工智能",
+        "大視野",
+        "ai",
+        "道德"
+      ],
+      "category": [
+        "science",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0f49fa87305b0b8ee4f17c43ff66ba0d",
+      "title": "馮其十:朱雀「歸來」 內地商業航天邁出關鍵一步",
+      "description": "【明報專訊】朱雀三號遙二運載火箭近日成功發射,火箭一子級在回收場順利着陸,成為中國首型實現陸地回收的運載火箭。繼上月成功實現全球首例火箭海上網系回收後,中國再度突破火箭回收關鍵技術,商業航天由此邁出關鍵一步。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417284722/%E9%A6%AE%E5%85%B6%E5%8D%81-%E6%9C%B1%E9%9B%80%E3%80%8C%E6%AD%B8%E4%BE%86%E3%80%8D-%E5%85%A7%E5%9C%B0%E5%95%86%E6%A5%AD%E8%88%AA%E5%A4%A9%E9%82%81%E5%87%BA%E9%97%9C%E9%8D%B5%E4%B8%80%E6%AD%A5",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": null,
+      "keywords": [
+        "馮其十 神州新形勢"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "70d439b724696a606891ac9f4941536c",
+      "title": "薛偉傑:哈薩克AI影片初創爆紅 估值衝上54億美元",
+      "description": "【明報專訊】據《金融時報》報道,提供AI影片生成平台服務的哈薩克初創企業Higgsfield已在8月17日完成4億美元的B輪融資,不但成為哈薩克的第一家AI獨角獸,其最新估值更大升至54億美元。Higgsfield由Snapchat前生成式AI主管Alex Mashrabov和哈薩克機器學習專家Yerzat Dulat等合作創辦,成立於2023年10月;2025年3月,正式推出瀏覽器版本產品。該公司上一次融資是在8個月前,當時成功融資8000萬美元,估值13億美元。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417284539/%E8%96%9B%E5%81%89%E5%82%91-%E5%93%88%E8%96%A9%E5%85%8Bai%E5%BD%B1%E7%89%87%E5%88%9D%E5%89%B5%E7%88%86%E7%B4%85-%E4%BC%B0%E5%80%BC%E8%A1%9D%E4%B8%8A54%E5%84%84%E7%BE%8E%E5%85%83",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00260/ec384a80748e4772943bbd75944473eb.jpg",
+      "keywords": [
+        "薛偉傑 行銷新意思"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8692614298a87bb5fecb763d28628eef",
+      "title": "張宗永:當高科技遇上大政府",
+      "description": "【明報專訊】美國麻省政府近日提出一項全新監管法案,若成功立法,將成為全美各州中最嚴格的AI安全法律。此法案直指年收入逾5億美元或年研發支出逾10億美元的頂尖「前沿模型」(Frontier Model)開發商,法案強制規定,企業每100天須接受第三方獨立評估,審查最新模型是否潛藏引發大規模網路攻擊或設計生化武器等重大災難風險,並會公開審查結果。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417284340/%E5%BC%B5%E5%AE%97%E6%B0%B8-%E7%95%B6%E9%AB%98%E7%A7%91%E6%8A%80%E9%81%87%E4%B8%8A%E5%A4%A7%E6%94%BF%E5%BA%9C",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "張宗永 翼之聯想"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4c65ec64bc5b1ef2ed041b45f78437d6",
+      "title": "與OpenAI奧爾特曼不和 阿莫迪另創Anthroipc",
+      "description": "【明報專訊】Anthropic與OpenAI現時貴為兩大生成式AI龍頭,而Anthroipc某程度是從OpenAI成名前分裂出來。據奧爾特曼(Sam Altman)傳記所述,阿莫迪(Dario Amodei)於OpenAI任職時與奧爾特曼不和,帶隊出走而成立。市傳未來一兩年內兩大AI龍頭陸續上市爭取資金,勢由公司內部鬥到全球市場上。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417284230/%E8%88%87openai%E5%A5%A7%E7%88%BE%E7%89%B9%E6%9B%BC%E4%B8%8D%E5%92%8C-%E9%98%BF%E8%8E%AB%E8%BF%AA%E5%8F%A6%E5%89%B5anthroipc",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f1d10ce93caf0694ed2b76ed70b93e6c",
+      "title": "Anthropic上市前 CEO妻被揭傳奇往事",
+      "description": "【明報專訊】市傳Anthropic將於10月掛牌之際,外媒突然將鎂光燈放在聯合創辦人及行政總裁阿莫迪(Dario Amodei)妻子Cami Clark的傳奇往事。據報Cami Clark早年曾與年長逾40歲的建築師結婚,離婚後曾申請破產,又一度創辦女性色情網站,還向淫媒愛潑斯坦(Jeffrey Epstein)招資,後來與Google前行政總裁Eric Schmidt約會3年,並介紹對方投資予現時丈夫阿莫迪創辦的Anthropic。據悉有關Cami Clark的背景不多,使她的身分更添神秘色彩。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417284010/anthropic%E4%B8%8A%E5%B8%82%E5%89%8D-ceo%E5%A6%BB%E8%A2%AB%E6%8F%AD%E5%82%B3%E5%A5%87%E5%BE%80%E4%BA%8B",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00064/b02ce3ded88e4c1bad7c04e09c65c06a.jpg",
+      "keywords": [
+        "企業地球村"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7b1837c7b5eedbaf5b4338de4d19fddc",
+      "title": "騰訊有份投資 生物製藥公司Tyligand申港上市",
+      "description": "【明報專訊】騰訊(0700)近期積極投資醫藥項目,在有份投資並持股9.11%的禮邦醫藥(9637)6月下旬在港上市後,另一有份投資的生物製藥公司Tyligand Bioscience(下稱Tyligand)剛於上周五入表申請在港上市。根據Tyligand提交的初步招股文件顯示,騰訊目前在該公司佔股11.17%,另一股東康哲藥業(0867)佔股8.09%。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417283672/%E9%A8%B0%E8%A8%8A%E6%9C%89%E4%BB%BD%E6%8A%95%E8%B3%87-%E7%94%9F%E7%89%A9%E8%A3%BD%E8%97%A5%E5%85%AC%E5%8F%B8tyligand%E7%94%B3%E6%B8%AF%E4%B8%8A%E5%B8%82",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": [
+        "康哲藥業",
+        "騰訊",
+        "tyligand  bioscience",
+        "神邦醫藥"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cc7b9ff380e7104239bfffb13738d114",
+      "title": "內媒:星橋倫敦金自動交易異常 客戶爆倉錄巨額虧損",
+      "description": "【明報專訊】內媒財新報道,星橋資本(SBCFX)因倫敦金衍生產品自動交易異常,有客戶面對巨額虧損。客戶原於上周五約見管理層,卻發現人去樓空,最終報警。彭博亦有跟進及引述財新報道。警方回覆,接獲多人報案並謂交易系統異常未能取回資金,涉款約592萬元,暫列欺詐處理。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260823/s00004/1787417283317/%E5%85%A7%E5%AA%92-%E6%98%9F%E6%A9%8B%E5%80%AB%E6%95%A6%E9%87%91%E8%87%AA%E5%8B%95%E4%BA%A4%E6%98%93%E7%95%B0%E5%B8%B8-%E5%AE%A2%E6%88%B6%E7%88%86%E5%80%89%E9%8C%84%E5%B7%A8%E9%A1%8D%E8%99%A7%E6%90%8D",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00064/47ce1168c74842e083d73fad0e4ddbab.jpg",
+      "keywords": [
+        "警方",
+        "財新",
+        "星橋資本"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d4b8922a4399f020a7c621efd34f1851",
+      "title": "新彩虹邨擬為長者裝門禁感應 研智能系統進出大廈",
+      "description": "【明報專訊】房委會去年起於觀塘雲漢邨及何文田常樂邨兩個長者較多的屋邨試行「物聯網長者住戶大門開關訊息系統」,若大門在住戶選定的時間內未有開啟,系統會向其聯絡人發出電話信息。房屋署結構工程師柯偉信表示,彩虹邨有不少長者,擬為有需要長者住戶增設家居門禁感應,以關顧獨居長者;又會研究於新彩虹邨採用智能門禁系統,讓居民可用智能卡或電話個人碼進出。",
+      "link": "https://news.mingpao.com/pns/%E8%A6%81%E8%81%9E/article/20260823/s00001/1787423046153/%E6%96%B0%E5%BD%A9%E8%99%B9%E9%82%A8%E6%93%AC%E7%82%BA%E9%95%B7%E8%80%85%E8%A3%9D%E9%96%80%E7%A6%81%E6%84%9F%E6%87%89-%E7%A0%94%E6%99%BA%E8%83%BD%E7%B3%BB%E7%B5%B1%E9%80%B2%E5%87%BA%E5%A4%A7%E5%BB%88",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "88eac9e0caa8e8d187f27b0b9f244bb5",
+      "title": "期盼名古屋亞運齊登頒獎台 千雨樂見男花現良性競爭",
+      "description": "【明報專訊】被問起今屆亞運最圓滿的結果,梁天晴和梁千雨不約而同答道:「一起拿獎牌。」踏入備戰最後一個月,兩人有各自的課題需應對。男子花劍港隊作為鎂光燈下常客,千雨認為邁向成功必須經得起別人關注,不會把外界期望視為壓力;天晴正從傷患康復中,期望盡快重拾狀態,稱保持身體健康乃男子佩劍港隊再次踏上頒獎台的關鍵。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417288139/%E6%9C%9F%E7%9B%BC%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E9%BD%8A%E7%99%BB%E9%A0%92%E7%8D%8E%E5%8F%B0-%E5%8D%83%E9%9B%A8%E6%A8%82%E8%A6%8B%E7%94%B7%E8%8A%B1%E7%8F%BE%E8%89%AF%E6%80%A7%E7%AB%B6%E7%88%AD",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "22b6cae530a2940a383e664b726ae5aa",
+      "title": "晴雨兄弟攜手揮劍攻亞運 追夢路上互相扶持休戚與共 團體賽分途出鞘",
+      "description": "【明報專訊】今屆名古屋亞運劍擊港隊名單裏出現一對「兄弟檔」,對佩劍代表梁天晴及花劍代表梁千雨來說,攜手征戰亞運不僅寫下運動員生涯第一次,更是一場「特別的旅行」。兩人自小與劍擊形影不離,從兒時玩伴化為彼此奮鬥路途上的依靠,卻鮮有一起出外比賽的經歷,此行除了為各自的目標奮鬥,也期待為這份兄弟情留下難忘回憶。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417287694/%E6%99%B4%E9%9B%A8%E5%85%84%E5%BC%9F%E6%94%9C%E6%89%8B%E6%8F%AE%E5%8A%8D%E6%94%BB%E4%BA%9E%E9%81%8B-%E8%BF%BD%E5%A4%A2%E8%B7%AF%E4%B8%8A%E4%BA%92%E7%9B%B8%E6%89%B6%E6%8C%81%E4%BC%91%E6%88%9A%E8%88%87%E5%85%B1-%E5%9C%98%E9%AB%94%E8%B3%BD%E5%88%86%E9%80%94%E5%87%BA%E9%9E%98",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00085/d263b25ad9ff4ddb9dd4322b99cbc87c.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f4b5db3bf0b260522d304cbf184fa78c",
+      "title": "體壇快訊:38歲前世界拳王遭槍擊亡",
+      "description": "【明報專訊】南非籍前世界拳王蘇蘭尼泰迪(Zolani Tete)日前遭槍擊身亡,終年38歲。據報當時他準備外出,在座駕被兩名歹徒連開多槍而當場死亡,南非文體部長事後致哀並表明全力緝凶。泰迪曾於2017年勇奪WBO雛量級世界拳王並保持寶座兩年,其間曾僅花11秒擊倒對手,創世界拳王頭銜戰最快KO世界紀錄。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417286686/%E9%AB%94%E5%A3%87%E5%BF%AB%E8%A8%8A-38%E6%AD%B2%E5%89%8D%E4%B8%96%E7%95%8C%E6%8B%B3%E7%8E%8B%E9%81%AD%E6%A7%8D%E6%93%8A%E4%BA%A1",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0f59f001eccc8bca4c9358240f13dfdc",
+      "title": "名古屋亞運聖火傳遞開展",
+      "description": "【明報專訊】名古屋亞運下月19日揭幕,賽會早前完成採火儀式後,昨於名古屋城展開聖火傳遞,由日本隊奧運女子摔跤3金得主吉田沙保里(揮手者)擔任首棒,其後聖火將途征愛知縣各地,包括名古屋全部16區,最終送往舉行開幕禮的瑞穗體育場。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417286475/%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E8%81%96%E7%81%AB%E5%82%B3%E9%81%9E%E9%96%8B%E5%B1%95",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00085/37aebd1e7f3547a1af11afd4997aad64.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ef290def559f3af4ada69052f46882b1",
+      "title": "FIFA公布世盃決賽衝突裁決 柏利迪斯重罰停賽10場",
+      "description": "【明報專訊】西班牙隊上月在美加墨世界盃決賽戰至加時以1:0險勝阿根廷隊奪冠後,雙方職球員在球證鳴笛未久爆發激烈衝突。國際足協(FIFA)紀律委員會前晚頒布判決,阿根廷隊共有4名職球員遭停賽處分,其中兩度出手施襲的中場里安度柏利迪斯遭重罰停賽10場。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417286260/fifa%E5%85%AC%E5%B8%83%E4%B8%96%E7%9B%83%E6%B1%BA%E8%B3%BD%E8%A1%9D%E7%AA%81%E8%A3%81%E6%B1%BA-%E6%9F%8F%E5%88%A9%E8%BF%AA%E6%96%AF%E9%87%8D%E7%BD%B0%E5%81%9C%E8%B3%BD10%E5%A0%B4",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1d7b3aa12ba74e9ce2abe7f00c33a4cd",
+      "title": "黃澤林坎昆挑戰賽8強止步 仙拿膝傷棄戰美網",
+      "description": "【明報專訊】22歲香港網球一哥黃澤林(Coleman)昨在墨西哥續戰ATP 125級的坎昆挑戰賽,於男單8強以直落兩盤不敵頭號種子的阿根廷籍好手巴爾斯,無緣爭逐年內第2冠。另外,意大利籍世界一哥仙拿宣布因膝傷棄戰下周日展開的美國公開賽。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417286150/%E9%BB%83%E6%BE%A4%E6%9E%97%E5%9D%8E%E6%98%86%E6%8C%91%E6%88%B0%E8%B3%BD8%E5%BC%B7%E6%AD%A2%E6%AD%A5-%E4%BB%99%E6%8B%BF%E8%86%9D%E5%82%B7%E6%A3%84%E6%88%B0%E7%BE%8E%E7%B6%B2",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "29923bab4a74f398684156f76cfb7187",
+      "title": "傑志衛冕首擊驚險拔頭籌 新兵奧比達艾華頓包辦入球 3:2挫流浪",
+      "description": "【明報專訊】上屆港超冠軍傑志新球季昨首度登場,作客青衣運動場對標準流浪靠兩名新兵奧比達射入12碼及艾華頓梅開二度,克服一度遭反超的險境以3:2逆轉告捷。主帥卡迪朗賽後提醒麾下切忌鬆懈,並透露球會即將公布新援加盟,惟須待會方官宣。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417285977/%E5%82%91%E5%BF%97%E8%A1%9B%E5%86%95%E9%A6%96%E6%93%8A%E9%A9%9A%E9%9A%AA%E6%8B%94%E9%A0%AD%E7%B1%8C-%E6%96%B0%E5%85%B5%E5%A5%A7%E6%AF%94%E9%81%94%E8%89%BE%E8%8F%AF%E9%A0%93%E5%8C%85%E8%BE%A6%E5%85%A5%E7%90%83-3-2%E6%8C%AB%E6%B5%81%E6%B5%AA",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00085/5bb5479a9c5d484c858ca94c337e17ba.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cca89141c0525084ed266fb7b93276b3",
+      "title": "曼城新季首擊迎般茅 馬利斯卡拒為大換血言憂",
+      "description": "【明報專訊】上屆英超亞軍曼城今晚在新帥馬利斯卡領軍展開新球季,在首輪主場面對般尼茅夫。這支豪門今夏有功勳名帥哥迪奧拿離隊之餘,亦有多名昔日奪冠主力他投。對此馬帥強調不會杞人憂天,又稱在轉會窗關閉前仍會積極增兵提升爭冠本錢。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417285774/%E6%9B%BC%E5%9F%8E%E6%96%B0%E5%AD%A3%E9%A6%96%E6%93%8A%E8%BF%8E%E8%88%AC%E8%8C%85-%E9%A6%AC%E5%88%A9%E6%96%AF%E5%8D%A1%E6%8B%92%E7%82%BA%E5%A4%A7%E6%8F%9B%E8%A1%80%E8%A8%80%E6%86%82",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/image/mingpao_logo_200.png",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "680a75f333317366de60d03b65ef404d",
+      "title": "阿仙奴英超衛冕路先拔頭籌 3球大勝高雲地利「打強心針」",
+      "description": "【明報專訊】2026/27年英超球季昨晨揭開戰幔,衛冕之師阿仙奴在主場憑前線主力夏維斯、布卡約沙卡及馬田奧迪加特各建一功,以3:0輕取上屆英冠盟主的「升班馬」高雲地利旗開得勝。反觀近季表現浮沉的英超傳統班霸曼聯昨晚則「落筆打三更」,意外地作客以0:2不敵另一「升班馬」侯城。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417285466/%E9%98%BF%E4%BB%99%E5%A5%B4%E8%8B%B1%E8%B6%85%E8%A1%9B%E5%86%95%E8%B7%AF%E5%85%88%E6%8B%94%E9%A0%AD%E7%B1%8C-3%E7%90%83%E5%A4%A7%E5%8B%9D%E9%AB%98%E9%9B%B2%E5%9C%B0%E5%88%A9%E3%80%8C%E6%89%93%E5%BC%B7%E5%BF%83%E9%87%9D%E3%80%8D",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00085/825a440fc93c4030b88abbed1531cf0a.jpg",
+      "keywords": null,
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5ebd3b2de4013078bd59ffb36bfb22f8",
+      "title": "名古屋亞運|晴雨兄弟攜手揮劍攻亞運 追夢路上互相扶持休戚與共 團體賽分途出鞘",
+      "description": "【明報專訊】今屆名古屋亞運劍擊港隊名單裏出現一對「兄弟檔」,對佩劍代表梁天晴及花劍代表梁千雨來說,攜手征戰亞運不僅寫下運動員生涯第一次,更是一場「特別的旅行」。兩人自小與劍擊形影不離,從兒時玩伴化為彼此奮鬥路途上的依靠,卻鮮有一起出外比賽的經歷,此行除了為各自的目標奮鬥,也期待為這份兄弟情留下難忘回憶。",
+      "link": "https://news.mingpao.com/pns/%E9%AB%94%E8%82%B2/article/20260823/s00015/1787417287694/%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B-%E6%99%B4%E9%9B%A8%E5%85%84%E5%BC%9F%E6%94%9C%E6%89%8B%E6%8F%AE%E5%8A%8D%E6%94%BB%E4%BA%9E%E9%81%8B-%E8%BF%BD%E5%A4%A2%E8%B7%AF%E4%B8%8A%E4%BA%92%E7%9B%B8%E6%89%B6%E6%8C%81%E4%BC%91%E6%88%9A%E8%88%87%E5%85%B1-%E5%9C%98%E9%AB%94%E8%B3%BD%E5%88%86%E9%80%94%E5%87%BA%E9%9E%98",
+      "pubDate": "2026-08-22 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260823/s00085/d263b25ad9ff4ddb9dd4322b99cbc87c.jpg",
+      "keywords": [
+        "亞運",
+        "梁千雨",
+        "名古屋亞運",
+        "劍擊",
+        "梁天晴"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "145d8286a3e9c725c2de2193d2b65835",
+      "title": "連續兩站排頭位 羅利斯:生涯表現最佳一圈",
+      "description": "【Now Sports】麥拿倫車手羅利斯在F1荷蘭站排位賽勇奪頭位,繼匈牙利站後再成功獲排頭位,他興奮地說:「生涯表現最佳一圈!已經不能夠再好了。」羅利斯(Lando Norris)上季首奪車手總冠軍,今季鋒芒被平治車手安東尼利蓋過,現時以134分,車手榜以90分落後安東尼利,但在上月的匈牙利站終排頭位,並在正賽...",
+      "link": "https://hk.sports.yahoo.com/news/%E9%80%A3%E7%BA%8C%E5%85%A9%E7%AB%99%E6%8E%92%E9%A0%AD%E4%BD%8D-%E7%BE%85%E5%88%A9%E6%96%AF-%E7%94%9F%E6%B6%AF%E8%A1%A8%E7%8F%BE%E6%9C%80%E4%BD%B3-%E5%9C%88-202416021.html",
+      "pubDate": "2026-08-22 20:24:16",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "安東尼利",
+        "安東尼",
+        "羅利斯"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c7f0845a45d96c3112cde8e7f2dcce06",
+      "title": "蘋果相機版AirPods開發影片意外流出 傳仍按原訂計畫2027年上市",
+      "description": "蘋果(Apple)近日意外流出搭載相機的AirPods影片,引猜測可能提前問世。不過彭博(Bloomberg)報道,新產品目前仍將按原訂時程規劃在明年上市。 New AirPods will have built-in cameras that allow Siri to see and remember your surroundings, according to leaks pic.twitter.com/6qkOJ48GEG — Dexerto (@Dexerto) August 19, 2026 這款新耳機是蘋果進軍AI穿戴裝置市場的重要產品。彭博5月初曾報道,蘋果原本早就計劃在今年推出,並已於今年春季交由員工進行進階測試。不過,蘋果準備在夏季開始生產時,供應鏈及軟件問題浮現,迫使上市時程延至2027年。彭博6月中旬也曾報道這項消息。 近日,一項Mac電腦軟件更新的開發人員版本,意外出現多款蘋果未來產品的資料,包括相機版AirPods實際運作的影片。這段由MacRumors率先發布的影片,也證實彭博先前報道,相機版AirPods將採用蘋果「視覺智慧」(Visual Intelligence)功能,透過相機了解周遭物品,並採取相應行動。 蘋果9月iPhone發表會將近,相關影片又出現在即將正式發布的軟件中,不免引發外界猜測相機版AirPods可能提前亮相。不過,以報道蘋果產品動態知名的彭博記者葛曼(Mark Gurman)引述消息指出,蘋果仍在解決產品面臨的問題,相機版AirPods並未列入2026年產品發布計劃。知情人士表示,蘋果仍預期這款耳機將於2027年上市。 相機版AirPods也在社交媒體引發私隱疑慮。部分使用者無法接受蘋果推出可能在他人不知情下錄影或拍照的產品,甚至把這款裝置稱為「變態AirPods」(PervertPods)。不過,知情人士表示,耳機搭載的是低解析度感測器,並非用來拍攝照片或影片,而是掃描周遭環境,為Siri數碼助理及其他AI工具提供現場資訊。蘋果長期把私隱保護當成主要行銷訴求,也希望避免重蹈Meta智能眼鏡引發私隱爭議的覆轍。 蘋果開發新款AirPods期間,曾研發兩個版本,內部代號分別為B790及B798。B790直到最近仍列在2026年產品藍圖中,是以去年推出的AirPods Pro 3為基礎,加裝感測器及AI功能。知情人士表示,流出影片中出現的就是這個版本。B798則是新一代AirPods Pro,同樣搭載相機。 若相機版AirPods最終於明年上市,將和蘋果多款新產品一同在2027年亮相,包括蘋果首款智能眼鏡。蘋果也曾研發一款可掛在頸部或別在衣服上、配備相機的吊墜,做為AI穿戴裝置策略的一環。 即使相機版AirPods不在今年推出,即將接任執行長的特努斯仍將在上任後首個年終購物季推出多項全新類別產品,包括蘋果首款摺疊式iPhone,以及搭載新一代AI版Siri的智能家庭顯示器。 蘋果還在開發首款觸控螢幕MacBook、智能家庭監控攝影機、配備機械手臂的智能顯示器、新款電視機上盒及新版HomePod mini。蘋果也計劃推出多款換上更快處理器的Mac及新款iPad。相關產品預定從今年秋季至明年底陸續上市。",
+      "link": "https://www.bastillepost.com/hongkong/article/16606087-%E8%98%8B%E6%9E%9C%E7%9B%B8%E6%A9%9F%E7%89%88airpods%E9%96%8B%E7%99%BC%E5%BD%B1%E7%89%87%E6%84%8F%E5%A4%96%E6%B5%81%E5%87%BA-%E6%83%9F%E5%82%B3%E4%BB%8D%E6%8C%89%E5%8E%9F%E8%A8%82%E8%A8%88%E7%95%AB202",
+      "pubDate": "2026-08-22 20:05:18",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/03/20240416_source-web_airpods-3_1.png",
+      "keywords": [
+        "蘋果",
+        "太極影片",
+        "耳機",
+        "大視野"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f69940cb475ae64561150142b0d4a323",
+      "title": "英超|熱刺被賓福特炒三蛋 小列納:似一隊陌生人",
+      "description": "今夏豪花超過兩億鎊買人的熱刺,在英超開季首戰作客以0:3被賓福特大炒。小列納點評時認為熱刺球員之間欠缺默契,「似一隊陌生人」。 熱刺貴價新兵東拿利今場正選上陣,左閘正選則是免費收購的安德魯羅拔臣;另一新兵馬迪奧斯費南迪斯則於半場後備上陣。主隊賓福特今場甫開賽便搶佔主動,並於12分鐘打開紀錄。馬馬度辛加尼與隊友撞牆配合後於右路傳中,路易斯樸達第一時間撞射入網,助賓福特打開紀錄。 熱刺上半場沒中目標埋",
+      "link": "https://www.stheadline.com/football-news/3607231/%E8%8B%B1%E8%B6%85%E7%86%B1%E5%88%BA%E8%A2%AB%E8%B3%93%E7%A6%8F%E7%89%B9%E7%82%92%E4%B8%89%E8%9B%8B-%E5%B0%8F%E5%88%97%E7%B4%8D%E4%BC%BC%E4%B8%80%E9%9A%8A%E9%99%8C%E7%94%9F%E4%BA%BA",
+      "pubDate": "2026-08-22 20:02:35",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/cf0ff64868a936c7d637deed46854ab5/2026-08/hotspur_1.jpg",
+      "keywords": [
+        "英超",
+        "賓福特",
+        "熱刺"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4523aa8058263031c4f92b859419532d",
+      "title": "AI晶片新創Cerebras推「餐盤大」晶片!CS-4系統或挑戰英偉達",
+      "description": "美國AI晶片新創Cerebras Systems於18日宣布推出新一代伺服器系統CS-4,搭載自家設計、尺寸如「餐盤」般大的AI晶片,訴求提升聊天機械人產生答案的速度,直接向AI晶片龍頭英偉達發起挑戰。 據《路透社》報道,Cerebras主要開發AI運算硬件與晶片,與英偉達競爭的焦點並非單純訓練AI模型,而是AI完成訓練後,實際接收使用者問題並產生答案的「推論」運算。Cerebras表示,新系統CS-4是一個伺服器機櫃,內建3個自家大型AI晶片,以Nexus伺服器架構為核心,採用可插拔模組設計,讓晶片能夠直接整合進系統。 這些晶片尺寸遠大於一般AI晶片,反而成為Cerebras主打高速運算的關鍵。公司指出,由於晶片面積足夠大,可以減少數據在不同晶片之間傳輸時產生的能源消耗及速度損失。此外,CS-4還重新設計系統架構,零組件數量減少約50%。Cerebras技術長表示,這項設計可簡化安裝流程,進而加快資料中心建置速度。 報道指出,這些AI晶片採用台積電5奈米製程生產,新系統預計於今年第三季開始供應。Cerebras也透露,下一代晶片與伺服器系統預計在2027年推出。 隨着ChatGPT、Claude等生成式AI服務快速普及,市場對AI推論運算的需求急速增加。如何讓AI更快理解問題、生成答案,同時降低數據中心的能源與硬件成本,已成為AI產業競爭的新戰場。",
+      "link": "https://www.bastillepost.com/hongkong/article/16605503-ai%E6%99%B6%E7%89%87%E6%96%B0%E5%89%B5cerebras%E6%8E%A8%E3%80%8C%E9%A4%90%E7%9B%A4%E5%A4%A7%E3%80%8D%E6%99%B6%E7%89%87%EF%BC%81cs-4%E7%B3%BB%E7%B5%B1%E6%88%96%E6%8C%91%E6%88%B0%E8%8B%B1%E5%81%89",
+      "pubDate": "2026-08-22 20:00:04",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/bplib_20260820-150351_20260820_Cerebras-Systems_source-web__704px_1.png",
+      "keywords": [
+        "ai",
+        "大視野",
+        "太極影片",
+        "英偉達",
+        "晶片"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
     {
       "id": "f2caf8c734ebd7d9d8923f62a0e9fe54",
       "title": "AI資本支出週期放緩後將帶來哪些影響?",
@@ -75,28 +615,6 @@
       ],
       "category": [
         "sports"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "9631c7c78a0237db7f1c5a0fa22158d3",
-      "title": "北美貿易戰開打 美國加徵50%關稅 卡尼稱實行等值反制",
-      "description": "加拿大總理卡尼(Mark Carney)周六表示,加拿大將於9月8日起對美國多個領域進口商品徵收報復性關稅,回應特朗普(Donald Trump,又譯川普)稅率50",
-      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60382711/%E5%8C%97%E7%BE%8E%E8%B2%BF%E6%98%93%E6%88%B0%E9%96%8B%E6%89%93-%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%BE%B550-%E9%97%9C%E7%A8%85-%E5%8D%A1%E5%B0%BC%E7%A8%B1%E5%AF%A6%E8%A1%8C%E7%AD%89%E5%80%BC%E5%8F%8D%E5%88%B6",
-      "pubDate": "2026-08-22 18:31:55",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260706/1150833035134898176436975.jpeg/847-hg5QxzIpfT6AJWsOV0XhGp5tXISx_baHuf22h7k",
-      "keywords": [
-        "國際新聞",
-        "國際",
-        "新聞",
-        "香港01",
-        "世界新聞",
-        "環球",
-        "hk01"
-      ],
-      "category": [
-        "business"
       ],
       "region": "hk"
     },
@@ -943,21 +1461,6 @@
         "entertainment"
       ],
       "region": "hk"
-    },
-    {
-      "id": "b7ef54759a6ff3794c3b6c9a9aa753ad",
-      "title": "「叡璟I」首輪銷售價單單位售罄 套現近16億元 擬日內加推",
-      "description": "<匯港通訊> 華潤置地(海外)董事總經理施偉賢表示:「THE STERLING 叡璟I」延續新盤首輪銷售票王之熱潮,項目首輪以價單發售的180伙已火速售罄,套現近16億港元。A組時段售出64伙,套現逾6.6億港元,當中最大額成交的客人購入4伙單位,包括3間2房單位及1間3房單位,涉資約4270萬港元。項目向隅者眾...",
-      "link": "https://hk.finance.yahoo.com/news/%E5%8F%A1%E7%92%9Fi-%E9%A6%96%E8%BC%AA%E9%8A%B7%E5%94%AE%E5%83%B9%E5%96%AE%E5%96%AE%E4%BD%8D%E5%94%AE%E7%BD%84-%E5%A5%97%E7%8F%BE%E8%BF%9116%E5%84%84%E5%85%83-%E6%93%AC%E6%97%A5%E5%85%A7%E5%8A%A0%E6%8E%A8-145220203.html",
-      "pubDate": "2026-08-22 14:52:20",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "0f115cac3b41d38275a781c858448f8a",
@@ -3379,42 +3882,6 @@
         "sports"
       ],
       "region": "hk"
-    },
-    {
-      "id": "e726926f6d18a04481dd1a1d0bcc390d",
-      "title": "比特幣在國債收益率下滑引發挾淡倉後,守穩77,000美元上方",
-      "description": "Investing.com - 據CoinDesk及CNBC報道,比特幣週六交投於77,000美元略上方,此前曾一度逼近80,000美元,但隨後回吐部分升幅。市場正在評估此次由美國國債市場帶動的挾淡倉行情,究竟是持續復甦的開端,還是短暫反彈。",
-      "link": "https://hk.finance.yahoo.com/news/%E6%AF%94%E7%89%B9%E5%B9%A3%E5%9C%A8%E5%9C%8B%E5%82%B5%E6%94%B6%E7%9B%8A%E7%8E%87%E4%B8%8B%E6%BB%91%E5%BC%95%E7%99%BC%E6%8C%BE%E6%B7%A1%E5%80%89%E5%BE%8C-%E5%AE%88%E7%A9%A977-000%E7%BE%8E%E5%85%83%E4%B8%8A%E6%96%B9-105207243.html",
-      "pubDate": "2026-08-22 10:52:07",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPED9G1CM_M.jpg",
-      "keywords": [
-        "retirement",
-        "investing",
-        "economy",
-        "business",
-        "stocks",
-        "track portfolio",
-        "stock",
-        "financial information",
-        "finance",
-        "stock research",
-        "business news",
-        "tax",
-        "real estate",
-        "suze orman",
-        "stock valuation",
-        "investment tools",
-        "mutual funds",
-        "mortgage",
-        "quote",
-        "personal finance"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "a7314e33247efbd8f8aadf17d661f547",
@@ -182219,5 +182686,7 @@
       "region": "hk",
       "pinned": true
     }
-  ]
+  ],
+  "total": 9307,
+  "last_updated": "2026-08-23T17:15:48.101089"
 }
