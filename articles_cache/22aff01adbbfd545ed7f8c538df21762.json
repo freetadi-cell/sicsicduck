@@ -1,0 +1,10 @@
+{
+  "id": "22aff01adbbfd545ed7f8c538df21762",
+  "title": "Windows 11 八月更新又出事 部分遊戲會觸發當機",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/23/kb5121003-windows-11-game-crash-fix/software/",
+  "rewritten_title": "Win11八月保安更新KB5121003致多款遊戲當機，微軟正調查中",
+  "rewritten": "微軟於8月11日推出的Windows 11強制保安更新KB5121003，雖修補逾400個漏洞，卻引發部分遊戲當機、系統重啟等問題。受影響遊戲包括《ARC Raiders》、《The Finals》及《MARVEL Tōkon: Fighting Souls》。問題根源被指為更新影響第三方驅動程式inpoutx64.sys的相容性。微軟已將事件列為「調查中」，暫未公布修復時間表。建議受影響用戶可手動刪除該驅動程式或移除更新作為臨時解決方案。",
+  "status": "done",
+  "fetched_at": "2026-08-24T05:10:46"
+}
