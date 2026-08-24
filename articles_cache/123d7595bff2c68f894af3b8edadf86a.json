@@ -1,0 +1,10 @@
+{
+  "id": "123d7595bff2c68f894af3b8edadf86a",
+  "title": "【教學】Windows 11 檔案總管未能預覽下載 PDF 檔?3 步教你如何回復預覽功能",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/24/windows-11-file-explorer-preview-anyway-button/tips-2/",
+  "rewritten_title": "Windows 11 檔案總管新增「仍然預覽」按鈕，解決下載 PDF 無法預覽問題",
+  "rewritten": "Microsoft 正在測試 Windows 11 檔案總管的「仍然預覽」功能，允許用戶在確認檔案安全後，直接於預覽窗格查看下載檔案。此舉旨在解決因安全策略（防止 NTLM 哈希值洩漏漏洞）而預設停用網路下載檔案預覽所帶來的不便。新功能預計數週內推送，用戶點擊按鈕即可快速檢視內容。目前，用戶亦可透過右鍵選單解除單一檔案的封鎖，以恢復預覽功能，此方法僅影響個別檔案，兼顧安全與效率。",
+  "status": "done",
+  "fetched_at": "2026-08-25T00:09:11"
+}
