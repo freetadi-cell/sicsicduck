@@ -1,19 +1,38 @@
 {
   "articles": [
     {
-      "id": "73b325be8e9a2c21d38dc5cf0ca9365a",
-      "title": "阿里巴巴配股集資逾千億港元以擴展AI基礎設施,股價急挫逾一成",
-      "description": "Investing.com - 阿里巴巴集團(HK:9988)週日宣布,將透過配售新股籌集約800億港元(102.1億美元),所得款項淨額將全數用於擴展其人工智能基礎設施及相關能力。",
-      "link": "https://hk.finance.yahoo.com/news/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87%E9%80%BE%E5%8D%83%E5%84%84%E6%B8%AF%E5%85%83%E4%BB%A5%E6%93%B4%E5%B1%95ai%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD-%E8%82%A1%E5%83%B9%E6%80%A5%E6%8C%AB%E9%80%BE-%E6%88%90-025132602.html",
-      "pubDate": "2026-08-24 02:51:32",
+      "id": "a0e40c845bb02de218421eaebf3ceaba",
+      "title": "首次配股|阿里巴巴擬配股集資800億 全數用於AI發展 曾跌近9%失配股價",
+      "description": "科技巨頭阿里巴巴(9988)宣佈進行上市以來首次配股集資,配售總金額高達800億港元,所得資金將全數用於投資「...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87-%E6%93%AC%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87800%E5%84%84%E6%8C%87%E5%85%A8%E6%95%B8%E7%94%A8%E6%96%BCai%E7%99%BC%E5%B1%95-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%B7%8C%E8%BF%919-%E5%A4%B1%E9%85%8D%E8%82%A1%E5%83%B9-050000602.html",
+      "pubDate": "2026-08-24 05:00:00",
       "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "image_url": "https://media.zenfs.com/ko/bossmind_356/96a015a93955322d7a568f454225a52d.jpg",
       "keywords": [
-        "人工智能",
-        "阿里巴巴"
+        "阿里巴巴",
+        "ai",
+        "阿里巴巴擬"
       ],
       "category": [
         "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "e1b22de23575e7fc20239f4b72079bb8",
+      "title": "特朗普關稅 | 50%高關稅激化反美情緒 加拿大球迷噓美國國歌",
+      "description": "美加貿易談判破裂,美國對加拿大貨品徵收50%新關稅已於上周六(22日)生效,加拿大也宣布反制,令兩國關係進一步惡化。周末多場足球賽事中,加拿大球迷在播放美國國歌時發出噓聲,不少民眾稱美國為壞朋友、敵人。儘管加拿大經濟受創,多數民眾都支持政府不低頭的決定。 上周六在溫哥華舉行美國職業足球大聯盟(MLS)溫哥華白浪(Vancouver Whitecaps)對FC達拉斯(FC Dallas)的比賽時,當",
+      "link": "https://www.stheadline.com/realtime-world/3607585/%E7%89%B9%E6%9C%97%E6%99%AE%E9%97%9C%E7%A8%85-50%E9%AB%98%E9%97%9C%E7%A8%85%E6%BF%80%E5%8C%96%E5%8F%8D%E7%BE%8E%E6%83%85%E7%B7%92-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%90%83%E8%BF%B7%E5%99%93%E7%BE%8E%E5%9C%8B%E5%9C%8B%E6%AD%8C",
+      "pubDate": "2026-08-24 04:14:51",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e30f4ee9b71ee39543309b4ce3e6fbd9/2026-08/a1_32.jpg",
+      "keywords": [
+        "特朗普關稅"
+      ],
+      "category": [
+        "sports",
+        "top"
       ],
       "region": "hk",
       "pinned": true
@@ -40,51 +59,883 @@
       "pinned": true
     },
     {
-      "id": "7caf3754dc0819ce94dda41cc0e064c8",
-      "title": "特朗普|斥加拿大只想要好處 卡尼指新關稅釀分裂",
-      "description": "美國總統特朗普(Donald Trump)批評,加拿大想享受成為美國州份好處,但又不想真的成為美國一部分,回應加拿大總理卡尼(Mark Carney)宣布報復美國關稅。伊朗|國安委員會秘書警告 鄰國倘...",
-      "link": "https://inews.hket.com/article/4181351",
-      "pubDate": "2026-08-24 03:51:00",
-      "source_name": "Hket",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4181351/25cafp003__1024_1_300.jpg",
+      "id": "28d1be3b4f45b2f7f82fc64dcf1a7c8c",
+      "title": "達里奧:貝森特行動是債務危機逼近信號 推崇黃金及比特幣",
+      "description": "橋水基金創辦人達里奧(Ray Dalio)表示,美國財長貝森特(Scott Bessent)上周公布的債務回購計劃,符合可能預示危機即將來臨的更廣泛模式。 達里奧在LinkedIn帖文中指出,貝森特增加政府債務回購的計劃,或預示美國經濟將面臨困難。配合日本政府減少美國債市敞口,以及美國長期國債孳息率急升,投資者或...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%81%94%E9%87%8C%E5%A5%A7-%E8%B2%9D%E6%A3%AE%E7%89%B9%E8%A1%8C%E5%8B%95%E6%98%AF%E5%82%B5%E5%8B%99%E5%8D%B1%E6%A9%9F%E9%80%BC%E8%BF%91%E4%BF%A1%E8%99%9F-%E6%8E%A8%E5%B4%87%E9%BB%83%E9%87%91%E5%8F%8A%E6%AF%94%E7%89%B9%E5%B9%A3-005526877.html",
+      "pubDate": "2026-08-24 00:55:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "美國",
-        "財政政策",
-        "貿易戰",
-        "卡尼",
-        "地緣政治",
-        "特朗普",
-        "關稅",
-        "加拿大",
-        "商品",
-        "貿易",
-        "外交"
-      ],
-      "category": [
-        "world"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "b9f3c6b3d2712c0cdfeb935b405a198c",
-      "title": "叡璟I加推133伙 折實均呎1.9萬 加價約2% 連招標累沽197伙呎價高見2.57萬",
-      "description": "【明報專訊】雖然近月新盤市場氣氛較為淡靜,但以「北都價」招徠的焦點項目、華潤置地(海外)旗下西南九龍長沙灣叡璟I,剛過去周末首輪價單連招標共售出197伙,成交實呎高見2.57萬元。發展商昨加推133伙,折實均呎19,212元,輕微提價約2%。在叡璟I帶動下,過去兩日新盤市場共錄約242宗成交,料為5月初後逾3個月最旺周末,帶挈本月迄今一手市場已錄約720宗成交,市場預期本月全月勢超上月全月約820宗水平。",
-      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260824/s00004/1787501481658/%E5%8F%A1%E7%92%9Fi%E5%8A%A0%E6%8E%A8133%E4%BC%99-%E6%8A%98%E5%AF%A6%E5%9D%87%E5%91%8E1-9%E8%90%AC-%E5%8A%A0%E5%83%B9%E7%B4%842-%E9%80%A3%E6%8B%9B%E6%A8%99%E7%B4%AF%E6%B2%BD197%E4%BC%99%E5%91%8E%E5%83%B9%E9%AB%98%E8%A6%8B2-57%E8%90%AC",
-      "pubDate": "2026-08-23 20:30:00",
-      "source_name": "Ming Pao",
-      "image_url": "https://fs.mingpao.com/pns/20260824/s00072/add41323e36645f88db228226675de97.jpg",
-      "keywords": [
-        "新盤銷售",
-        "華潤置地（海外）",
-        "叡璟i",
-        "海瑅灣系列"
+        "即將來臨的",
+        "達里奧",
+        "表示",
+        "貝森特",
+        "橋水基金創辦人"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "cfed0c36ab8fd1fb3c7837cc56b4fc63",
+      "title": "美中長債息口走勢 相映成趣",
+      "description": "最重要新發展是美國長債息口開始飈升,有點失控的味道。每年利息支出或將高達1.4萬億美元,已遠超軍費,僅低於保健和社福支出。",
+      "link": "https://www.master-insight.com/article/49766",
+      "pubDate": "2026-08-24 05:00:00",
+      "source_name": "Master – Insight",
+      "image_url": "https://bucket-image.inkmaginecms.com/9dde7c0f-adea-48d0-9671-8f5a6345ad4a/image/2026/08/4b50ad4f-3225-40fb-81de-ffa40c3bcbbd.webp",
+      "keywords": [
+        "投資",
+        "財經",
+        "中環新譚",
+        "金融"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4d6b60fed5193232781ddf521ab7fe81",
+      "title": "新加坡7月通脹率按年為2.2%,高於前值的1.9%。",
+      "description": "新加坡7月通脹率按年為2.2%,高於前值的1.9%。~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%96%B0%E5%8A%A0%E5%9D%A17%E6%9C%88%E9%80%9A%E8%84%B9%E7%8E%87%E6%8C%89%E5%B9%B4%E7%82%BA2-2-%E9%AB%98%E6%96%BC%E5%89%8D%E5%80%BC%E7%9A%841-9-050000656.html",
+      "pubDate": "2026-08-24 05:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "阿思達克財經新聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1b1dd0469aa5210094a6fa337587061d",
+      "title": "黃碧嬌病假後酒樓聚餐 黨友報平安:唔係傷風感冒|政壇諸事町",
+      "description": "捲入宏福苑大維修「離世授權票」爭議的民建聯大埔南區議員黃碧嬌,上周四(20日)以「身體不適」為由缺席大埔區議會大廈管理工作小組會議。昨晚(2",
+      "link": "https://www.hk01.com/%E6%94%BF%E6%83%85/60382998/%E9%BB%83%E7%A2%A7%E5%AC%8C%E7%97%85%E5%81%87%E5%BE%8C%E9%85%92%E6%A8%93%E8%81%9A%E9%A4%90-%E9%BB%A8%E5%8F%8B%E5%A0%B1%E5%B9%B3%E5%AE%89-%E5%94%94%E4%BF%82%E5%82%B7%E9%A2%A8%E6%84%9F%E5%86%92-%E6%94%BF%E5%A3%87%E8%AB%B8%E4%BA%8B%E7%94%BA",
+      "pubDate": "2026-08-24 04:59:55",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168540031246143488598271.jpeg/loVhnpMIGgD3MMnoDnmgIKG4kSTUTZyN9-5eKtLuXio",
+      "keywords": [
+        "委員會",
+        "區議會",
+        "班子",
+        "行政會議",
+        "局長",
+        "特區政府",
+        "撥款",
+        "司長",
+        "立法會",
+        "議員",
+        "選舉",
+        "高官",
+        "候任特首",
+        "內閣",
+        "特首",
+        "林鄭月娥",
+        "政治",
+        "問責官員"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "00431a8891cec9374f9d3e4646f687b8",
+      "title": "阿摩廉意甲首捷:足球志在贏波",
+      "description": "【Now Sprots】當阿摩廉的前任教球隊曼聯在周末英超出閘脫腳,阿摩廉現執教的AC米蘭在周日意甲贏波,作客贏拖連奴2:1。AC米蘭去季僅以第5名完季,由失意於曼聯的阿摩廉領軍,該隊這場作客拖連奴的比賽,直到64分鐘,由阿法祖施斯控定傳中球後,球不著地射入。3分鐘後,哈比奧近門撞入成2:0。拖連奴於補時由阿當斯...",
+      "link": "https://hk.sports.yahoo.com/news/%E9%98%BF%E6%91%A9%E5%BB%89%E6%84%8F%E7%94%B2%E9%A6%96%E6%8D%B7%EF%BC%9A%E8%B6%B3%E7%90%83%E5%BF%97%E5%9C%A8%E8%B4%8F%E6%B3%A2-045939536.html",
+      "pubDate": "2026-08-24 04:59:39",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/3080f2a5429870f63ca20ad852a8f783cfbf4c1ec8830d75c5d03b6011de8b8a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F8fb9a891-d4c6-44e6-8a0c-37756ba0dc5f",
+      "keywords": [
+        "拖連奴",
+        "拉莫斯",
+        "ac米蘭"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d02b9c6426774e50b5edb980b66e2989",
+      "title": "甯漢豪冀「4S」工地成香港標配 年底修例推動承建商履工地安全責",
+      "description": "發展局和建造業議會合辦建造業安全周,推動業界透過關愛文化及安全智慧工地系統等,提升建造安全文化。發展局局長甯漢豪今日(24日)表示,「4S」",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383007/%E7%94%AF%E6%BC%A2%E8%B1%AA%E5%86%80-4s-%E5%B7%A5%E5%9C%B0%E6%88%90%E9%A6%99%E6%B8%AF%E6%A8%99%E9%85%8D-%E5%B9%B4%E5%BA%95%E4%BF%AE%E4%BE%8B%E6%8E%A8%E5%8B%95%E6%89%BF%E5%BB%BA%E5%95%86%E5%B1%A5%E5%B7%A5%E5%9C%B0%E5%AE%89%E5%85%A8%E8%B2%AC",
+      "pubDate": "2026-08-24 04:58:09",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168538892643602432843579.jpeg/q9W0pg8ihXm1pzSJC_Zlv_rZOYeMHT8UrOuvZ6zrr2c",
+      "keywords": [
+        "香港新聞",
+        "國際新聞",
+        "hk01",
+        "頭條新聞",
+        "新聞",
+        "即時新聞",
+        "香港01",
+        "港聞"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "05070c03e671873b168c107dd085b5df",
+      "title": "連鎖酒樓黯然銷魂飯$14.8!街坊激讚性價比:叉燒加蛋菜,都算係咁啦",
+      "description": "香港的餐飲市場競爭激烈,不少食肆均會透過各類時段推廣活動來增加客流量。主打傳統粵式菜餚的連鎖酒樓「金都海鮮酒家」近期亦加入戰團,推出全新的下午茶優惠,只需超低價$14.8,即可享用一碗足料叉燒飯。 金都海鮮酒家「黯然銷魂腩叉煎蛋飯」$14.8 上水/柴灣酒樓特價供應 街坊激讚性價比:叉燒加蛋菜,都算係咁啦 這次主打的「黯然銷魂腩叉煎蛋飯」定價為$14.8。根據網民分享的實物圖片顯示,白飯上鋪有約四",
+      "link": "https://www.stheadline.com/food/3607604/%E9%80%A3%E9%8E%96%E9%85%92%E6%A8%93%E9%BB%AF%E7%84%B6%E9%8A%B7%E9%AD%82%E9%A3%AF148%E8%A1%97%E5%9D%8A%E6%BF%80%E8%AE%9A%E6%80%A7%E5%83%B9%E6%AF%94%E5%8F%89%E7%87%92%E5%8A%A0%E8%9B%8B%E8%8F%9C%E9%83%BD%E7%AE%97%E4%BF%82%E5%92%81%E5%95%A6",
+      "pubDate": "2026-08-24 04:57:22",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/30f41ccf0654004b925d88a2cc517480/2026-08/KF2026_16.png",
+      "keywords": [
+        "優惠",
+        "酒樓"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6c1cfc258718882a7d45691910a06e9a",
+      "title": "新人入職政府工呻難頂!力數5大職場苦況控訴職場欺凌:衰過坐監",
+      "description": "公務員一向被視為「鐵飯碗」,吸引不少年輕人爭相投考,但近日有職場小薯反映,覺得「公門深似海」,入到去未必如想像中風光!最近有新入職公務員發",
+      "link": "https://www.hk01.com/%E9%96%8B%E7%BD%90/60382925/%E6%96%B0%E4%BA%BA%E5%85%A5%E8%81%B7%E6%94%BF%E5%BA%9C%E5%B7%A5%E5%91%BB%E9%9B%A3%E9%A0%82-%E5%8A%9B%E6%95%B85%E5%A4%A7%E8%81%B7%E5%A0%B4%E8%8B%A6%E6%B3%81%E6%8E%A7%E8%A8%B4%E8%81%B7%E5%A0%B4%E6%AC%BA%E5%87%8C-%E8%A1%B0%E9%81%8E%E5%9D%90%E7%9B%A3",
+      "pubDate": "2026-08-24 04:53:51",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260512/1130703061418119168195074.jpeg/pOpC6006xRTML8u-2FJ-NiBjpYraAOuTyEGh2shBodo",
+      "keywords": [
+        "城中熱話",
+        "熱話",
+        "話題"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b606732c3dca7897dce24895207693b0",
+      "title": "建滔集團(00148)上半年收入按年升35% 受惠於覆銅面板業務",
+      "description": "<匯港通訊> 建滔集團(00148)公布中期業績,雖然投資業務部門因6月底股市下行,呈報分部於期內錄得虧損,但受惠於覆銅面板業務,整體收入按年升35%至291.31億港元(下同),股東應佔盈利增長5%至27.11億元,派發中期股息每股73仙,同比增6%。其中,覆銅面板部門營業額上升55%,印刷線路板部門增長23%...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%BB%BA%E6%BB%94%E9%9B%86%E5%9C%98-00148-%E4%B8%8A%E5%8D%8A%E5%B9%B4%E6%94%B6%E5%85%A5%E6%8C%89%E5%B9%B4%E5%8D%8735-%E5%8F%97%E6%83%A0%E6%96%BC%E8%A6%86%E9%8A%85%E9%9D%A2%E6%9D%BF%E6%A5%AD%E5%8B%99-045322569.html",
+      "pubDate": "2026-08-24 04:53:22",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c8cf7155fe51b9b8027477e491bcb8be",
+      "title": "《午市前瞻》重磅消息臨近資金料趨保守,李寧回調壓力仍在勿盲目低吸",
+      "description": "《經濟通通訊社24日專訊》阿里巴巴(09988)擬配售7.1億股新股,每股作價 112.7元,較公司上周五收市價123元折讓約8.37%,集資淨額達797億元。是次 配售不僅是阿里巴巴自2019年在港上市以來首次增發新股,亦創下香港證券市場有史以來最 大宗新股配售紀錄。阿里歷史性配股致股價半日下插9.76%報111元,拖低恒指接近 200點,恒指半日報25465,跌544點或2.1%,跌穿",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN36082446",
+      "pubDate": "2026-08-24 04:53:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3b7766f9245e05872804368aff41dd07",
+      "title": "Sony Xperia 10 VIII官方宣傳圖流出 料明早正式發布",
+      "description": "Sony將於日本時間 8 月 25 日早上 11 時舉行 Xperia 新機發布會。雖然官方尚未對外公佈具體的產品名稱,但綜合近期的市場消息,外界普遍預料今次發表的正是中階手機 Sony Xperia 10 VIII。在距離發佈會僅剩數天的時間,科技網站 Android Headlines 率先公開了一張疑似是 Xperia 10 VIII 的宣傳圖,讓大眾可以提前預覽這款新機的外觀細節。",
+      "link": "https://www.am730.com.hk/%E7%A7%91%E6%8A%80/1049117/sony-xperia-10-viii%E5%AE%98%E6%96%B9%E5%AE%A3%E5%82%B3%E5%9C%96%E6%B5%81%E5%87%BA-%E6%96%99%E6%98%8E%E6%97%A9%E6%AD%A3%E5%BC%8F%E7%99%BC%E5%B8%83",
+      "pubDate": "2026-08-24 04:52:46",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049117/article/1049117/df/01M0S1KMFHBED1RE3VEJJQBMF8.jpg?updatedAt=1787547167",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c6154ac6bb8ea5bf1d70bafbab081b5c",
+      "title": "盧秀燕轟賴忙選舉 應學蔡英文到南部勘災",
+      "description": "中評社台中8月24日電(記者 方敬為)中國國民黨籍台中市長盧秀燕近期火力全開砲打民進黨,23日批評賴清德搞“台獨”,這個月還4度到台中市拉抬民進黨市長參選人何欣純,她質問可以讓“台獨”的人拿下台中嗎?盧秀燕今天出席公開行程,又呼籲賴清德多將心思放在治理,多關心南部水患,近期南部大淹水,可學習蔡英文到南部勘災,慰問災民,才是當務之急。 賴清德日前拋出“行政院”、“立法院”遷到台中市,外",
+      "link": "http://www.crntt.com/doc/7_0_160260139_1_0824125114.html",
+      "pubDate": "2026-08-24 04:51:13",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/24/160260146.JPG",
+      "keywords": [
+        "盧秀燕",
+        "賴清德"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2c4818676f8ca5e38185e6898072ef95",
+      "title": "經絡:2026年7月份MMI報3.17厘 按月持平",
+      "description": "<匯港通訊> 根據經絡按揭轉介研究部最新數據顯示,2026年7月份的經絡按揭息率指數(MMI),即反映普遍按揭新客戶一般可做到的實際按息水平,最新報3.17厘,按月持平。經絡按揭轉介首席副總裁曹德明表示,7月份有逾兩成半客戶選用大型銀行2.73厘定息按揭計劃,使MMI仍處於近一年的低位。曹續指,7月份美國消費者物...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%B6%93%E7%B5%A1-2026%E5%B9%B47%E6%9C%88%E4%BB%BDmmi%E5%A0%B13-17%E5%8E%98-%E6%8C%89%E6%9C%88%E6%8C%81%E5%B9%B3-044950180.html",
+      "pubDate": "2026-08-24 04:49:50",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c051fa4793369f3962aa42de14bcbc07",
+      "title": "阿里巴巴推視頻生成大模型Wan3.0-video",
+      "description": "<匯港通訊> 阿里巴巴(09988)公布,推出視頻生成大模型Wan3.0-video,將支援文本、圖像、視頻、音訊等多模態輸入,統一實現文生視頻、圖生視頻和參考生視頻等能力,最長可生成30秒視頻,並首次支援doc、xls、ppt、pdf、md等文檔格式輸入。價格方面,480P、720P及1080P的API價格分別...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%8E%A8%E8%A6%96%E9%A0%BB%E7%94%9F%E6%88%90%E5%A4%A7%E6%A8%A1%E5%9E%8Bwan3-0-video-044902602.html",
+      "pubDate": "2026-08-24 04:49:02",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "521cc76bffb54af27c46a40b8d751fbe",
+      "title": "《牛來》衝出國際?傳9.1新加坡上映 星GV影院無排片 真相爆笑",
+      "description": "國產動畫電影《牛來》成為近期最觸目電影作品,甚至引來許多國際媒體爭相報道,而且不少外國網民表達希望電影到當地上映。近日網傳一張印有嘉華影院",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60382963/%E7%89%9B%E4%BE%86-%E8%A1%9D%E5%87%BA%E5%9C%8B%E9%9A%9B-%E5%82%B39-1%E6%96%B0%E5%8A%A0%E5%9D%A1%E4%B8%8A%E6%98%A0-%E6%98%9Fgv%E5%BD%B1%E9%99%A2%E7%84%A1%E6%8E%92%E7%89%87-%E7%9C%9F%E7%9B%B8%E7%88%86%E7%AC%91",
+      "pubDate": "2026-08-24 04:48:59",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168530014816178176562491.png/9m8dQDN9rDS2lMfHLqQSNqX73RBxXZkqAmGtuwJhrbs",
+      "keywords": [
+        "經典電影",
+        "睇戲",
+        "港產片",
+        "電影",
+        "外語片",
+        "影評",
+        "香港01"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6c463a1a38039e843948a9cfda7ba9a1",
+      "title": "內地續加大力度打擊網絡娛樂團播亂象",
+      "description": "<匯港通訊> 中央網信辦表示,「清朗•網絡娛樂團播亂象整治」專項行動啟動以來,緊盯娛樂團播場景內容低俗不良、規則設計刺激打賞、侵害未成年人權益等突出問題,持續加大違法違規娛樂團播打擊力度,目前已累計處置團播違規直播間7200餘個,嚴懲違規賬號2200餘個,同時指導網站平台清退處置一批問題嚴重的團播MCN機構(網紅...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%85%A7%E5%9C%B0%E7%BA%8C%E5%8A%A0%E5%A4%A7%E5%8A%9B%E5%BA%A6%E6%89%93%E6%93%8A%E7%B6%B2%E7%B5%A1%E5%A8%9B%E6%A8%82%E5%9C%98%E6%92%AD%E4%BA%82%E8%B1%A1-044831971.html",
+      "pubDate": "2026-08-24 04:48:31",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9149eb2933c1f40bdbf8c2f8542cbe49",
+      "title": "建滔積層板中期純利升逾2.09倍 中期息增逾86%",
+      "description": "建滔積層板(01888)公司持有人應佔純利升209.28%,至28.87億元,每股基本盈利92仙,按年升208%,派中期息28港仙,按年增86.66%。 未扣除利息、稅項、折舊及攤銷前溢利41.3億元,按年年升143%。 營業額149.03億元,按年升55%。 集團稱,AI等相關新材料需求強勁,覆銅面板及其上游行業處於高景氣度週期,集團精準捕捉AI爆發性增長的浪潮,新建4個生產特種電子玻璃纖維紗的窯爐已相繼投產,目前總數增至5個, 現有產能大幅度轉移至生產AI相關產品,導致傳統電子玻璃纖維紗及電子玻璃纖維布供應嚴重短缺。於二零二六年上半年,集團電子玻璃纖維紗及電子玻璃纖維布業務的利潤約十億港元,較二零二五年同期增長約280%。 於2026年6月30日之淨負債比率約為30%,2025同期為16%)。短期與長期借貸的比例為84%:16%。",
+      "link": "https://www.bastillepost.com/hongkong/article/16628739-%E5%BB%BA%E6%BB%94%E7%A9%8D%E5%B1%A4%E6%9D%BF%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A9%E5%8D%87%E9%80%BE2-09%E5%80%8D-%E4%B8%AD%E6%9C%9F%E6%81%AF%E5%A2%9E%E9%80%BE86",
+      "pubDate": "2026-08-24 04:48:26",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2024/08/01888.jpg",
+      "keywords": [
+        "錢財事",
+        "建滔積層板(01888)"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0c533fbfc6f1555423e7467d86e1eb24",
+      "title": "狗襲擊.大型狗隻|陳凱欣倡申狗牌增品種覆檢 籲勿負面標籤狗隻",
+      "description": "近日發生多宗狗隻襲擊事件,政府表示會審視加強規管大型狗隻,檢討格鬥犬的定義,爭取年內向立法會交建議。立法會食物安全及環境衞生事務委員會主席",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60382994/%E7%8B%97%E8%A5%B2%E6%93%8A-%E5%A4%A7%E5%9E%8B%E7%8B%97%E9%9A%BB-%E9%99%B3%E5%87%B1%E6%AC%A3%E5%80%A1%E7%94%B3%E7%8B%97%E7%89%8C%E5%A2%9E%E5%93%81%E7%A8%AE%E8%A6%86%E6%AA%A2-%E7%B1%B2%E5%8B%BF%E8%B2%A0%E9%9D%A2%E6%A8%99%E7%B1%A4%E7%8B%97%E9%9A%BB",
+      "pubDate": "2026-08-24 04:46:04",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260820/1167216362502754304021835.jpeg/d1bNc2q1FZCPJlP2SWp2mez0ZifDPnRa4UUdQOFFHUA",
+      "keywords": [
+        "香港新聞",
+        "國際新聞",
+        "hk01",
+        "頭條新聞",
+        "新聞",
+        "即時新聞",
+        "香港01",
+        "港聞"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ee59a647c5ca265ec392d0a445605f5f",
+      "title": "冰鎮飲料|實測冰水加1物10分鐘急降4.4°C 附2招快速冷凍匙羮都得",
+      "description": "冰鎮飲料|炎炎夏日,急著喝冰鎮飲料時,放進雪櫃往往要等很久才變涼;直接泡進冰水裡,又覺得不夠冰爽。有專家實測,只要在水中加點鹽就能讓飲料快",
+      "link": "https://www.hk01.com/%E6%95%99%E7%85%AE/60374768/%E5%86%B0%E9%8E%AE%E9%A3%B2%E6%96%99-%E5%AF%A6%E6%B8%AC%E5%86%B0%E6%B0%B4%E5%8A%A01%E7%89%A910%E5%88%86%E9%90%98%E6%80%A5%E9%99%8D4-4-%E9%99%842%E6%8B%9B%E5%BF%AB%E9%80%9F%E5%86%B7%E5%87%8D%E5%8C%99%E7%BE%AE%E9%83%BD%E5%BE%97",
+      "pubDate": "2026-08-24 04:45:36",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168539417640439808152847.png/YqRtS2MDlNcXvGRtnHcpvs_YqurEF8DTsiFIt7IhSLc",
+      "keywords": [
+        "消費者委員會",
+        "停課",
+        "復必泰",
+        "飲食",
+        "香港新聞",
+        "停學",
+        "教育局",
+        "hk01",
+        "快速檢測",
+        "天文台",
+        "科興",
+        "兒童疫苗",
+        "疫苗安全",
+        "新聞",
+        "食譜",
+        "香港01",
+        "吃喝玩樂"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a94e76da68c94fe0e237201c10b0dc4e",
+      "title": "意甲|艾摩廉AC米蘭首戰贏波 祖雲達斯作客險勝升班馬",
+      "description": "在英超揭幕戰曼聯就不敵侯城,而艾摩廉領軍的米蘭周日(23日)作客都靈對拖連奴。球隊雖然半場未有入球,不過下半場64分鐘由拉比奧特(Adrien Rabiot)交出助攻,阿爾法迪祖施斯(Alphadjo Cisse)為米蘭打開紀錄。3分鐘後,拉比奧特再個人建功,令米蘭一度領先兩球。雖然主場的拖連奴在補時由蘇格蘭國腳的查阿當斯(Che Adams)追回一球,不過米蘭仍以2:1取得新季的首捷。艾摩廉成為自2009年的李安納度(Leonardo)之後,首位帶領米蘭首場聯賽就贏波的外籍領隊。",
+      "link": "https://www.am730.com.hk/%E9%AB%94%E8%82%B2/1049110/%E6%84%8F%E7%94%B2-%E8%89%BE%E6%91%A9%E5%BB%89ac%E7%B1%B3%E8%98%AD%E9%A6%96%E6%88%B0%E8%B4%8F%E6%B3%A2-%E7%A5%96%E9%9B%B2%E9%81%94%E6%96%AF%E4%BD%9C%E5%AE%A2%E9%9A%AA%E5%8B%9D%E5%8D%87%E7%8F%AD%E9%A6%AC",
+      "pubDate": "2026-08-24 04:44:21",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049110/article/1049110/df/01M0S0EJ2QYZEP4H6DHA4PN8M0.JPG?updatedAt=1787546661",
+      "keywords": null,
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2682471cae34f0894ca2e07e2e9a3d82",
+      "title": "嫦娥七號發射推遲至明年 一場颱風何為要等一年?影響2030年前實現載人登月目標嗎?",
+      "description": "由於颱風過境,原定8月124日在海南文昌航天發射場升空的嫦娥七號月球探測任務不得不推遲。中國載人航天工程辦公室消息指,因不滿足發射條件,不能在今年預定窗口實施,是本著穩妥、可靠、萬無一失的原則綜合研判決定。 官方通報並未說明技術原因,但也沒公佈下一次發射日期,更沒說火箭或探測器出了故障,但結合先前文昌天氣變化和任務進程看,天氣是這次錯過窗口的直接觸發因素,但為何一場颱風要令整項任務推遲整整一年? 據騰訊網專欄「翔說航太」專家分析,嫦娥七號面對的,從來不只是文昌發射場的天氣,火箭離開地球以後,還要追上正在運轉的月球,探測器到達月球以後,要進入合適的極軌;軌道器還要看清著陸區;最後,著陸器必須在光照合適的時候下降,並給巡視器和飛躍器留下足夠的充電、工作時間。這幾件事像接力賽一樣連起來,錯過整段安排後,後面的測繪、著陸和供電可能全部接不上。所以,即使颱風不會刮一年,但只要剛好在最關鍵的幾天裡發生,便對整個發射安排產生致命性的影響。 另一方面,嫦娥七號要去的是月球南極。嫦娥四號、嫦娥六號的落點距離南極都在1300公里以上,印度月船三號距離南極約626公里。嫦娥七號候選降落區在南緯85度以上,距離南極點約152公里以內。越接近南極,太陽越貼近地平線,地形和光照越難處理。月球南極光照模擬顯示,那裡的太陽幾乎沿著地平線繞圈圈,即使一塊不高的石頭,也能拖出很長的影子,遠處一座山,甚至會讓登陸區提前進入黑暗。 後續月份主要卡在兩件事上。首先,如果發射時間往後推,還想趕上原來的環月、測繪和著陸節奏,軌道需要的能量可能更高,火箭和探測器要付出的推進劑代價也會增加。這可理解成同樣一箱油,原來走的是一條順路的高速,現在既要晚出發,又想照原計畫到達,就得趕路、變換車道,留給後面的油自然更少,途中還要修正軌道,繞月後還要調整軌道,著陸時更要留足處置意外的能力。 還有,月球南極能用的陽光越來越少。嫦娥七號的登陸器、巡視器和飛躍器都離不開電。飛躍器也要從有陽光的區域進入永久陰影坑尋找水冰,再回到光照區。著陸後的連續見光時間越短,太陽翼發電越困難,設備充電、保溫和工作的時間也越緊。如果把落月時間繼續往後移,太陽會更低,山和撞擊坑擋住的光更多,最後很可能會出現一個尷尬情況:探測器能到月球,也能落下去,但真正工作時間不夠。嫦娥七號還要在亞百公尺級安全區內著陸,飛躍器至少要完成3次飛行。如此昂貴、複雜的一項任務,要保證「落得穩、充得上電、幹得完活」。 而且,月球南極也有類似季節的光照變化。由於月球自轉軸傾角很小,南極太陽始終很低。太陽照射方向要經過接近一年的變化,才會回到相似的位置。結果,地形、光照、地月轉移軌道和著陸時刻重新湊在一起,往往不是再等一個月,而是接近一年。 依照目前所能看到的任務難度,以及軌道能量、推進劑餘裕和著陸區光照這些條件,「翔說航太」綜合判斷,2027年8月中旬是下一段更值得關注的候選時段,正式日期還要看火箭和探測器重新測試的結果,也要看最新的天氣和發射場安排。 按照重大任務一般做法,嫦娥七號需要撤回、檢查、維護,並根據保存週期重新安排測試,具體仍等待官方消息。 但「翔說航太」認為,嫦娥七號延遲一年任務,不會改變中國2030年前實現載人登月的目標。今年5月,官方已經宣布,載人登月和無人探月將從任務、資源、隊伍3個面向深度整合,統稱為「月球探測工程」。所以嫦娥七號與載人登月當然有關,卻不是一發推遲,載人登月就一定跟著推遲。 載人登月的主線任務,仍是長征十號運載火箭、夢舟載人太空船、攬月月面登陸器、登月服、月面車和地面支援系統。官方沒把嫦娥七號列為載人登月前必須完成的唯一前置任務。嫦娥七號延後,壓力更直接落在嫦娥八號和國際月球科研站上。公開規劃中,嫦娥七號與嫦娥八號將共同組成月球科研站基本型。 若嫦娥七號晚到一年,留給資料分析、方案調整和兩次任務協同的時間會壓縮,但未算打亂載人登月計畫。當然,如果後面繼續出現新延期,影響就會一點點放大,但眼下沒任何公開消息表明,2030年前載人登月目標因此改變。 有人會問:為什麼不多準備幾條軌道,多帶一些燃料,再多選幾個著陸點?方向沒有錯,代價也很現實。多帶一公斤燃料或電池,就會少一公斤科學設備;多準備一個著陸區,就要增加測繪、軟體和地面試驗;讓探測器在月球軌道多等一段時間,還要增加供電、保溫和測控能力。太空船上沒免費備用方案。後續任務可繼續增加對天氣的適應能力,縮短發射中止後的恢復時間,準備更多可選軌道和落點,也可給推進劑、電池和保溫留出更大的餘裕。載人登月還要把回程、中止和救援一起考慮,標準只會更嚴格。這次延期本身,也會變成後續工程的一份真實數據:哪一段準備時間太緊,天氣轉好後多久能重新進入倒數計時,哪些軌道看起來能走卻不值得走,都會進入下一次任務設計。 一場颱風,可能讓嫦娥七號等近一年。但重大航太任務最怕的不是延期,而是明知道餘裕已不夠,還要為趕時間硬衝。能飛,不等於值得飛。這次停下來,是為下一次真正落到月球南極,把該幹的事情幹完。",
+      "link": "https://www.bastillepost.com/hongkong/article/16628731-%E5%AB%A6%E5%A8%A5%E4%B8%83%E8%99%9F%E7%99%BC%E5%B0%84%E6%8E%A8%E9%81%B2%E8%87%B3%E6%98%8E%E5%B9%B4%E3%80%80%E4%B8%80%E5%A0%B4%E9%A2%B1%E9%A2%A8%E4%BD%95%E7%82%BA%E8%A6%81%E7%AD%89%E8%BF%91%E4%B8%80",
+      "pubDate": "2026-08-24 04:44:03",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/E6AF9BE68B8DE6898B_FB-18.jpg",
+      "keywords": [
+        "毛拍手",
+        "博客文章",
+        "時事熱話"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0ee03dbaac54303204210174a5b84dc9",
+      "title": "乘客公然吸電子煙被懷疑是「依托咪酯」 城巴已報警",
+      "description": "一名男乘客最近在城巴車廂公然吸食電子煙,由於吸食後神態奇怪,更被質疑是正吸食毒品「依托咪酯」。城巴已就事件報案,交由警方作進一步調查及跟進。",
+      "link": "https://www.am730.com.hk/%E6%9C%AC%E5%9C%B0/1049115/%E4%B9%98%E5%AE%A2%E5%85%AC%E7%84%B6%E5%90%B8%E9%9B%BB%E5%AD%90%E7%85%99%E8%A2%AB%E6%87%B7%E7%96%91%E6%98%AF-%E4%BE%9D%E6%89%98%E5%92%AA%E9%85%AF-%E5%9F%8E%E5%B7%B4%E5%B7%B2%E5%A0%B1%E8%AD%A6",
+      "pubDate": "2026-08-24 04:44:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049115/article/1049115/df/01M0S167T58Z4DRHE6CCVH4YQ5.png?updatedAt=1787546640",
+      "keywords": null,
+      "category": [
+        "crime",
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1225764ea7eb7b953f2f8be00c7ea5a1",
+      "title": "中國 AI 短片爆紅 點擊逾千萬 「把人寫成了妖」 網民憂最終會被審查",
+      "description": "一部由 AI 生成的 26 分鐘短片《我這一生最大的罪,是把人寫成了妖......》,近日在中國影片平台 Bilibi [...]",
+      "link": "https://unwire.hk/2026/08/24/ai-short-film-china-viral/ai/",
+      "pubDate": "2026-08-24 04:42:55",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo760.png",
+      "keywords": [
+        "seedance",
+        "人工智能",
+        "ai",
+        "ai短片",
+        "bilibili",
+        "gpt-image-2",
+        "影視娛樂"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "212191e61c57b01c8cb1f87fdbeec08b",
+      "title": "巴塞需要9號?夏芬拿:由會長定奪",
+      "description": "【Now Sports】剛為巴塞隆拿梅開二度的巴西國腳夏芬拿,被問到球隊是否需要引入「9號」時,拒絕正面回應。夏芬拿(Raphinha)在這場巴塞大勝艾爾切5:0的比賽梅開二度,而在利雲度夫斯基及費蘭托利斯離隊後,他今仗擔任「9號」位置,表現出色。被問到球隊是否需要簽入「9號」球員時,他說:「這問題留給會長定奪。...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%B7%B4%E5%A1%9E%E9%9C%80%E8%A6%819%E8%99%9F-%E5%A4%8F%E8%8A%AC%E6%8B%BF-%E7%94%B1%E6%9C%83%E9%95%B7%E5%AE%9A%E5%A5%AA-044248590.html",
+      "pubDate": "2026-08-24 04:42:48",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "夏芬拿",
+        "艾爾切",
+        "費力克",
+        "費蘭托利斯"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "946cd2c57c2c252ad554cb86866a3472",
+      "title": "綠委:賣馬桶的賣火藥聽起來荒謬 別看不起",
+      "description": "中評社台北8月24日電(記者 張穎齊)“立法院”拚28日三讀無人機載具特別條例,在野黨質疑賣茶葉罐、馬桶、裝潢等業者不應當得標“國防”相關標案。民進黨籍“立委”鍾佳濱24日表示,不能因此鄙視傳統產業,賣馬桶的不能賣火藥嗎?許多高科技企業也是從傳產轉型而來,只要給中小微企業機會,醜小鴨也可變天鵝,甚至可能打造下一座“護國神山”。 針對外界質疑賣馬桶的怎能賣火藥?鍾佳濱說,聽起來很荒謬,",
+      "link": "http://www.crntt.com/doc/7_0_160260116_1_0824124159.html",
+      "pubDate": "2026-08-24 04:41:59",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/24/160260136.JPG",
+      "keywords": [
+        "鍾佳濱",
+        "無人機"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1ecae1674f7651bfa6c0d3717063bbaf",
+      "title": "七旬翁持剪狂刺不相識女兼職 企圖謀殺罪成 官接納有悔意囚7年",
+      "description": "七旬翁返回他曾任職的遊戲機中心,並用剪刀狂刺一名從未與她共事的女兼職,並一邊稱:「拮死你」,幸東主從閉路電視見到情況報警。七旬翁早前經審訊",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383008/%E4%B8%83%E6%97%AC%E7%BF%81%E6%8C%81%E5%89%AA%E7%8B%82%E5%88%BA%E4%B8%8D%E7%9B%B8%E8%AD%98%E5%A5%B3%E5%85%BC%E8%81%B7-%E4%BC%81%E5%9C%96%E8%AC%80%E6%AE%BA%E7%BD%AA%E6%88%90-%E5%AE%98%E6%8E%A5%E7%B4%8D%E6%9C%89%E6%82%94%E6%84%8F%E5%9B%9A7%E5%B9%B4",
+      "pubDate": "2026-08-24 04:38:21",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260807/1162379236934422528932608.jpeg/lNh-cQIYzL9qyNc_qs6nJJReca40GLwn4on_IceJ_yE",
+      "keywords": [
+        "香港新聞",
+        "國際新聞",
+        "hk01",
+        "頭條新聞",
+        "新聞",
+        "即時新聞",
+        "香港01",
+        "港聞"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0704a27501525bd42a6f205418034684",
+      "title": "vivo X500 9月發佈代號滅霸專打iPhone18 Pro?備2nm雙核2億長焦",
+      "description": "iPhone 18 Pro 幾乎肯定會在9月9日發表,打響2026下半年旗艦手機大戰。vivo產品經理韓伯嘯今日宣佈,全新vivo X500系列將於9月面世,系列涵蓋X500",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60382995/vivo-x500-9%E6%9C%88%E7%99%BC%E4%BD%88%E4%BB%A3%E8%99%9F%E6%BB%85%E9%9C%B8%E5%B0%88%E6%89%93iphone18-pro-%E5%82%992nm%E9%9B%99%E6%A0%B82%E5%84%84%E9%95%B7%E7%84%A6",
+      "pubDate": "2026-08-24 04:35:24",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168539955215994880643051.jpeg/hUFJb5E0uVZQHpxwe8kXe5tTSB9NrleJh3M0hIdzNIQ",
+      "keywords": [
+        "app",
+        "tesla",
+        "facebook",
+        "android",
+        "apple",
+        "動漫",
+        "科技",
+        "手遊",
+        "香港01",
+        "ios",
+        "航拍",
+        "潮物"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8a7fa8e8667f6a21e7e0fa882bc33d53",
+      "title": "英超|曼城神鋒夏蘭特剪短髮即「食白果」 網民爆笑哀求:快啲留返長!",
+      "description": "曼城射手艾寧夏蘭特(Erling Haaland)剪了一頭短髮,以全新型象開啟新球季,惟在首輪對般尼茅夫多次門前失機,全場 5 次射門僅 2 次命中目標、顆粒無收。賽後大批曼城球迷紛紛於網上哀求夏蘭特盡快留長頭髮,直言他剪髮後便失去了「神力」! 伊巴謙莫域曾警告「頭髮是力量源泉」 在今場「無冕大捷」前,夏蘭特在個人社交平台上分享了一段短片,大爆自己早前「剪掉煩惱絲」時,幾位死黨的震驚反應。其中,曼",
+      "link": "https://www.stheadline.com/football-news/3607592/%E8%8B%B1%E8%B6%85%E6%9B%BC%E5%9F%8E%E7%A5%9E%E9%8B%92%E5%A4%8F%E8%98%AD%E7%89%B9%E5%89%AA%E7%9F%AD%E9%AB%AE%E5%8D%B3%E9%A3%9F%E7%99%BD%E6%9E%9C-%E7%B6%B2%E6%B0%91%E7%88%86%E7%AC%91%E5%93%80%E6%B1%82%E5%BF%AB%E5%95%B2%E7%95%99%E8%BF%94%E9%95%B7",
+      "pubDate": "2026-08-24 04:32:33",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0f30f0478e02d13d4c2962219963835e/2026-08/Copy_of_KF_-_2026-08-24T123029_242.png",
+      "keywords": [
+        "曼城",
+        "haaland",
+        "manchester city"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "91549261b2aa98a30fcb4393980759c0",
+      "title": "中年好聲音4|尹景順罕談赴台發展辛酸史 直認賺唔到錢來港圓夢",
+      "description": "《中年好聲音》決賽昨日(23日)圓滿落幕,賽前大熱尹景順最終不負眾望,成功奪得冠軍寶座。賽後他與同入三甲的兩位參賽者許雲妮及鄭家聲一同接受",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60382891/%E4%B8%AD%E5%B9%B4%E5%A5%BD%E8%81%B2%E9%9F%B34-%E5%B0%B9%E6%99%AF%E9%A0%86%E7%BD%95%E8%AB%87%E8%B5%B4%E5%8F%B0%E7%99%BC%E5%B1%95%E8%BE%9B%E9%85%B8%E5%8F%B2-%E7%9B%B4%E8%AA%8D%E8%B3%BA%E5%94%94%E5%88%B0%E9%8C%A2%E4%BE%86%E6%B8%AF%E5%9C%93%E5%A4%A2",
+      "pubDate": "2026-08-24 04:30:53",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168411652375187456529470.jpeg/Gce0rKyHx3tLcu93GY6GBNIqe6LbfKTFTioNd3QqDXc",
+      "keywords": [
+        "藝人",
+        "韓星",
+        "香港新聞",
+        "明星",
+        "hk01",
+        "即時娛樂",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "新聞",
+        "香港01"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "62556e5d67c04a9ede99649513658af5",
+      "title": "港漂打工仔獲同事悄悄送藥留紙條 「心裏暖到爆炸」 網民因1質疑引發罵戰",
+      "description": "職場上常有「別跟同事做朋友」的說法,認為同事之間難有真心。不過早前一名港漂打工仔在小紅書分享,放假後回到公司,發現桌面上有人悄悄放了藥物,還附上一張手寫紙條,令她直言「心裏暖到爆炸」。 該名打工仔自稱「沒感冒、沒生病、沒咳嗽」,但同事仍在她的桌上放了傷風咳素及特效必理痛,紙條上寫着:「上星期見你有幾聲咳,唔舒服就食呢個」、「頭痛先食呢個」。她大讚同事超級友好,形容這是「在香港感到深深的善意」。 帖文引來熱議,有網民因她自稱無病痛而起疑,質疑「是一種提醒,你怕不是沒戴口罩」、「佢仲驚過你呀,驚你傳染俾大家」。發文者隨即回應強調「我沒感冒呀,我都不知道自己咳了幾聲」。 不過更多網民反轟質疑者「小人之心度君子之腹」,認為「肯主動買藥送俾你吃,出發點一定是想為你好」。事件反映職場中同一件事,有人看到溫暖,有人看到算計——你又是哪一種?",
+      "link": "https://www.bastillepost.com/hongkong/article/16592001-%E6%B8%AF%E6%BC%82%E6%89%93%E5%B7%A5%E4%BB%94%E7%8D%B2%E5%90%8C%E4%BA%8B%E6%82%84%E6%82%84%E9%80%81%E8%97%A5%E7%95%99%E7%B4%99%E6%A2%9D%E3%80%80%E3%80%8C%E5%BF%83%E8%A3%8F%E6%9A%96%E5%88%B0%E7%88%86",
+      "pubDate": "2026-08-24 04:30:34",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/704x369-42.png",
+      "keywords": [
+        "社會事",
+        "網上熱話"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "88acb93b6b8bd85222734fa83a49faa8",
+      "title": "以敘|商緩緊張局勢 美國斡旋促降溫",
+      "description": "敘利亞媒體報道,與以色列在美國斡旋下,於周日(23日)舉行高層會議,商討近來因以色列轟炸導致的緊張局勢。特朗普|斥加拿大只想要好處 卡尼指新關稅釀分裂國營SANA通訊社報道,敘利亞與以色列周日在約旦舉...",
+      "link": "https://inews.hket.com/article/4181389",
+      "pubDate": "2026-08-24 04:27:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4181389/25cafp004__1024_1_300.jpg",
+      "keywords": [
+        "約旦",
+        "美國",
+        "中東局勢",
+        "伊朗",
+        "以色列",
+        "地緣政治",
+        "巴沙爾",
+        "土耳其",
+        "敘利亞",
+        "軍事"
+      ],
+      "category": [
+        "world"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "acd14ab4d92409ac79cdbefecb3e4119",
+      "title": "藍委:無人機條例可望周五通過 就怕颱風假",
+      "description": "中評社台北8月24日電(記者 張嘉文)“立法院”本周將力拚無人機相關條例三讀,中國國民黨籍“立委”賴士葆今天表示,當然希望本周五能完成三讀,目前朝野之間的版本還需要整合,如果無法整合,就按照議事程序處理(指表決)。唯一的變數是颱風,如果周五放颱風假無法開會,因為本會期延長至8月31日,下周一仍可開會繼續處理。 “賴政府”日前提出新台幣2100億元《“國防”自主無人載具採購特別條例》,",
+      "link": "http://www.crntt.com/doc/7_0_160260101_1_0824122522.html",
+      "pubDate": "2026-08-24 04:25:21",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/24/160260105.JPG",
+      "keywords": [
+        "賴士葆",
+        "無人機"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5eb266ece54ef33ed8abd60b38183414",
+      "title": "凌晨兩點放心去街:外國年輕人如何被「中國式安全感」嚇到",
+      "description": "在Chinamaxxing的敘事中,高鐵、火箭等高科技元素往往是主角。但真正令外國年輕人大感震驚的,往往不是這些宏大符號,而是凌晨兩點獨自走在街頭的那份安心。 這種感覺,在英語世界被稱為「Chinese-style safety」,或者更直白地說——即敢於在深夜放下戒備的奢侈。 從「生存本能」到「文化衝擊」 對許多西方Z世代而言,「天黑後不出門」是從小被灌輸的生存法則。在約翰內斯堡、倫敦或洛杉磯,夜晚的街道意味着風險評估:這區是否安全?手機是否需要收起?錢包放在哪裏? 但在中國,這套邏輯失效了。 2026年初,29歲的南非內容創作者Lizzy(YouTube頻道 “Because I’m Lizzy\")在重慶做了一個大膽實驗。她將裝滿個人物品的背囊,隨意留在鬧市街頭,自己則在城內閒逛了約100分鐘。當她返回原地時,背囊原封不動。 後來她接受新華社訪問時直言:「這已經不是第一次了。在中國,我無數次被證明『甚麼都不會被偷』。這種安全感,是我選擇留在這裏的首要原因。」 與此同時,英國博主Jason(\"Living in China\")在重慶和昆明也做了類似測試。他在午夜時分邊走邊拍,指出街道上依然人來人往,而且「沒有一絲不安」。他在片中表示:「在英國,深夜出門我得不停回頭看有沒有人跟蹤;但在中國,這些念頭從未出現過。」 「顛覆認知」的瞬間 這種安全感並非源於個別網紅的影片,而是滲透在日常細節中的一種普遍觀察。在Reddit、TikTok和小紅書等平台上,不時可見外國遊客分享類似經歷:將背囊隨意留在街頭或電單車車籃中一段時間後返回,物品原封不動;遺失手機或錢包後,透過店員或路人主動聯絡而失而復得;女性遊客敢於在晚上十時後獨自步行或乘搭公共交通工具,而這在她們的母國往往難以想像。這些分享屬於個人敘事,受地點、路線與運氣等多重因素影響,不能推論為「所有街區在深夜都百分之百安全」,但它們反覆出現的頻率,折射出一種文化差異:在中國,向陌生人求助或信任對方會歸還失物,所需的心理成本明顯低於許多西方國家。對於習慣了「天黑後盡量不出門」的西方年輕人而言,這種對比本身,就是Chinamaxxing敘事中最常被提及的「顛覆認知」時刻。 數字背後的底氣 這種「安全感」的底氣,來自實實在在的數據支撐,而不僅僅是個人感受。 2025年年底,美國權威民調機構蓋洛普(Gallup)發布報告,在受訪的140多個國家和地區中,中國民眾在「夜間獨自走在所住街區是否感到安全」一項上的肯定回答率超過九成。這一成績將美國遠遠拋在身後,也是美國機構自己出具的「成績單」。 此外,國家移民管理局2026年7月公布:上半年入境外國人達2,291.4萬人次,同比增長20.4%;其中免簽入境佔77.7%。這意味着,越來越多外國人選擇「說走就走」,而無需繁複的簽證手續。當一名外國遊客敢於走進縣城的夜市、坐上鄉鎮的巴士,這本身就是對當地治安的最高認可。 安全感是一種體感,無法偽裝,也無法透過宣傳片完全傳遞。 Chinamaxxing的核心,或許就在這盞凌晨兩點的街燈下——它照亮的不僅是路面,更是全球年輕人對另一種生活方式的嚮往。當他們開始羨慕這種「深夜散步的自由」時,文化影響力的種子便已悄然種下。",
+      "link": "https://www.bastillepost.com/hongkong/article/16628560-%E5%87%8C%E6%99%A8%E5%85%A9%E9%BB%9E%E6%94%BE%E5%BF%83%E5%8E%BB%E8%A1%97%EF%BC%9A%E5%A4%96%E5%9C%8B%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%A6%82%E4%BD%95%E8%A2%AB%E3%80%8C%E4%B8%AD%E5%9C%8B%E5%BC%8F%E5%AE%89",
+      "pubDate": "2026-08-24 04:23:28",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/E5878CE699A8E585A9E9BB9EE694BEE5BF83E58EBBE8A197EFBC9AE5A496E59C8BE5B9B4E8BC95E4BABAE5A682E4BD95E8A2ABE3808CE4B8ADE59C8BE5BC8FE5AE89E585A8E6849FE3808DE59A87E588B0.jpg",
+      "keywords": [
+        "博客文章",
+        "chinamaxxing"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "27fee230ce9a5d365c15225d92345db5",
+      "title": "艾馬利回應屈堅斯缺陣:應該問他",
+      "description": "【Now Sports】阿士東維拉今夏多位主力球員均被出售,30歲前鋒奧利屈堅斯盛傳獲沙特阿拉伯球隊艾希拿青睞,領隊艾馬利被問及是否他不讓奧利屈堅斯上陣,他說:「這個問題應該問他,你可以致電給他尋找答案。」維拉上季贏得歐霸盃,只是今夏多位主力,即摩根羅渣士、迪拿曼斯、甸尼等離隊,前鋒奧利屈堅斯(Ollie Wat...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%89%BE%E9%A6%AC%E5%88%A9%E5%9B%9E%E6%87%89%E5%B1%88%E5%A0%85%E6%96%AF%E7%BC%BA%E9%99%A3-%E6%87%89%E8%A9%B2%E5%95%8F%E4%BB%96-042100867.html",
+      "pubDate": "2026-08-24 04:21:00",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "艾希拿",
+        "阿士東維拉",
+        "奧利屈堅斯",
+        "艾馬利"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f33721dec37f396159cbbd6dd11ed6ce",
+      "title": "Xbox 與 IKEA 預告即將推出遊戲家具系列",
+      "description": "摘要 Xbox 與 IKEA 正式開始預告即將推出的聯乘家具及家居配件系列。首波釋出的預覽,展示多款 Xbox 風格家飾單品,包括綠色 D-pad 咕𠱸及仿模擬搖桿設計的矮櫈。這個聯合設計系列預定於 Gamescom 期間,在 Xbox 展位率先亮相。 Xbox 與 IKEA 正式預告即將推出的遊戲家具及家居配件聯乘系列。兩個品牌均透過社交平台發布預告,率先呈現瑞典家居設計與遊戲硬件設計交會的概念。Instagram 早期釋出的預告短片展示多款注入 Xbox 元素的家居擺設。焦點單品包括一款仿照 Xbox 手掣方向鍵造型的鮮綠色咕𠱸,以及一件放大版類比搖桿造型單品,配以亮面外環,可作凳子或小桌使用。此系列延續 IKEA 早前涉足遊戲家具的步伐,亦為 Xbox 一直以來推出的品牌生活產品再添新作。整個共同設計的系列將於 Gamescom 舉行期間,在 Xbox 展位首次亮相。Xbox x IKEA 系列的完整產品詳情,預計將於 2026 年 8 月 26 日及 27 日的 Gamescom 直播中公布。 View this post on InstagramA post shared by IKEA (@ikea) View this post on InstagramA post shared by IKEA (@ikea) Click here to view full gallery at Hypebeast",
+      "link": "https://hypebeast.com/zh/2026/8/ikea-xbox-furniture-collaboration-collection-teaser-announcement",
+      "pubDate": "2026-08-24 04:20:49",
+      "source_name": "Hypebeast",
+      "image_url": null,
+      "keywords": [
+        "design 設計"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0f260b2e8ef9bc97ac7805b365090023",
+      "title": "整合藍營備戰2028?盧:一定要重返執政",
+      "description": "中評社台中8月24日電(記者 方敬為)中國國民黨籍台中市長盧秀燕上周與“立法院長”韓國瑜、台北市長蔣萬安等藍營要角同台,喊出“重返執政,缺一不可”,此說法被外界解讀為角逐2028大選的起手式,盧秀燕今天被問到,有意擔任藍營桶箍?她表示,這段時間我們的確在整合,因為她比較資深,所以希望將每個力量拉進來,過去藍營角逐大選都是個人單打獨鬥,這次要團結,2028一定要重返執政! 盧秀燕24日",
+      "link": "http://www.crntt.com/doc/7_0_160260089_1_0824122029.html",
+      "pubDate": "2026-08-24 04:20:28",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/24/160260092.JPG",
+      "keywords": [
+        "盧秀燕",
+        "韓國瑜",
+        "蔣萬安",
+        "2028"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0b1b894045bd360049f6b8e1ada0f424",
+      "title": "SHEIN收購服裝零售商Everlane交易 據報遭美國國安審查",
+      "description": "消息人士又指,CFIUS的審查重點為Everlane持有美國公民資料,可能引發的國安問題,惟目前不清楚審查結果。",
+      "link": "https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1049104/shein%E6%94%B6%E8%B3%BC%E6%9C%8D%E8%A3%9D%E9%9B%B6%E5%94%AE%E5%95%86everlane%E4%BA%A4%E6%98%93-%E6%93%9A%E5%A0%B1%E9%81%AD%E7%BE%8E%E5%9C%8B%E5%9C%8B%E5%AE%89%E5%AF%A9%E6%9F%A5",
+      "pubDate": "2026-08-24 04:07:19",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-07/1049104/article/1049104/df/01KX5S3K686TDDGKEPQTA3W8W7.JPG?updatedAt=1787544440",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ea54cfa7da5bd1f086d6b11a800ed456",
+      "title": "破邊洲預約制|今起登記9.5、9.6 須填身份證號碼 至中午未滿額",
+      "description": "漁護署將於9月5日至10月7日期間的周末、中秋節及國慶黃金周,於西貢萬宜水庫東壩的萬宜地質步道破邊洲段,試行預約制度。預約系統今(24日)上午11",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60382948/%E7%A0%B4%E9%82%8A%E6%B4%B2%E9%A0%90%E7%B4%84%E5%88%B6-%E4%BB%8A%E8%B5%B7%E7%99%BB%E8%A8%989-5-9-6-%E9%A0%88%E5%A1%AB%E8%BA%AB%E4%BB%BD%E8%AD%89%E8%99%9F%E7%A2%BC-%E8%87%B3%E4%B8%AD%E5%8D%88%E6%9C%AA%E6%BB%BF%E9%A1%8D",
+      "pubDate": "2026-08-24 04:04:59",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20250101/951196223380131840074631.jpeg/-6CJuNu7hI1Xx8hc3DKpNQvM75Tjc5lEbRXelW0V3pU",
+      "keywords": [
+        "國際新聞",
+        "即時新聞",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "港聞",
+        "頭條新聞",
+        "hk01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c66454ff90fe88dbae050f5acc057467",
+      "title": "紓壓捏捏樂變毒玩具!泰國查近2萬件問題產品 長期接觸恐傷肝臟",
+      "description": "減壓玩具|近年不少人喜歡玩「捏捏樂」減壓,這類玩具款式多樣、手感柔軟,大受年輕人和小孩歡迎。不過,最近泰國在曼谷檢獲近2萬件未獲認證的捏捏",
+      "link": "https://www.hk01.com/%E8%A6%AA%E5%AD%90/60381356/%E7%B4%93%E5%A3%93%E6%8D%8F%E6%8D%8F%E6%A8%82%E8%AE%8A%E6%AF%92%E7%8E%A9%E5%85%B7-%E6%B3%B0%E5%9C%8B%E6%9F%A5%E8%BF%912%E8%90%AC%E4%BB%B6%E5%95%8F%E9%A1%8C%E7%94%A2%E5%93%81-%E9%95%B7%E6%9C%9F%E6%8E%A5%E8%A7%B8%E6%81%90%E5%82%B7%E8%82%9D%E8%87%9F",
+      "pubDate": "2026-08-24 04:01:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260822/1167727320509714432736250.jpeg/LqMs1MtD10eg0aadPrnsjiV8yamGRuAtdhp2k3YadpM",
+      "keywords": [
+        "教育",
+        "熱話",
+        "育兒",
+        "玩樂",
+        "入學試面",
+        "香港01",
+        "健康",
+        "親子"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cf2c3751c01f7c9820ad082024ee7678",
+      "title": "《火遮眼》導演谷垣健治宣布結婚娶日本女星 藤本露娜甜蜜曝光秘戀10年",
+      "description": "兩奪金像獎「最佳動作設計」的《火遮眼》導演谷垣健治,昨日(23日)在社交平台宣布結婚消息,新婚妻為日劇《VIVANT》人氣女星藤本露娜(Luna Fujimoto),二人在親友見證下,已低調舉行婚禮。 藤本露娜:我們結婚啦 導演谷垣健治在X上分享結婚照片報喜訊,而太太藤本露娜昨日也在IG上晒出婚照及婚戒,並甜蜜以日文分享新婚喜悅:「我們很高興地宣佈,我們結婚啦!」藤本露娜透露,二人相識已經10年感",
+      "link": "https://www.stheadline.com/film-drama/3607575/%E7%81%AB%E9%81%AE%E7%9C%BC%E5%B0%8E%E6%BC%94%E8%B0%B7%E5%9E%A3%E5%81%A5%E6%B2%BB%E5%AE%A3%E5%B8%83%E7%B5%90%E5%A9%9A%E5%A8%B6%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%98%9F-%E8%97%A4%E6%9C%AC%E9%9C%B2%E5%A8%9C%E7%94%9C%E8%9C%9C%E6%9B%9D%E5%85%89%E7%A7%98%E6%88%8010%E5%B9%B4",
+      "pubDate": "2026-08-24 04:00:43",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ll/sthl_square/81cb3cc70a4e366e344ff6cefb988518/2026-08/KF_137.jpg",
+      "keywords": [
+        "谷垣健治",
+        "藤本ルナ",
+        "金像獎",
+        "功夫女足",
+        "vivant",
+        "邪不壓正",
+        "kenji tanigaki",
+        "luna fujimoto",
+        "vivant女星",
+        "最佳動作設計",
+        "九龍城寨之圍城",
+        "藤本露娜",
+        "藤本露娜結婚",
+        "谷垣健治結婚",
+        "火遮眼",
+        "怒火"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "941702c1ff050926357dcbf080b4e642",
+      "title": "谷垣健治結婚 老婆係《功夫女足》女星藤本露娜 Kenji來港發展多年 因《九龍城寨》爆紅",
+      "description": "兩奪金像獎「最佳動作設計」的《火遮眼》導演谷垣健治(Kenji Tanigaki),昨日(23日)在社交平台宣布結婚消息,新婚妻為日劇《VIVANT》人氣女星藤本露娜(Luna Fujimoto),二人在親友見證下,已低調舉行婚禮。 藤本露娜:我們結婚啦 導演谷垣健治在X上分享結婚照片報喜訊,而太太藤本露娜昨日也在IG上晒出婚照及婚戒,並甜蜜以日文分享新婚喜悅:「我們很高興地宣佈,我們結婚啦!」藤",
+      "link": "https://www.stheadline.com/film-drama/3607575/%E8%B0%B7%E5%9E%A3%E5%81%A5%E6%B2%BB%E7%B5%90%E5%A9%9A-%E8%80%81%E5%A9%86%E4%BF%82%E5%8A%9F%E5%A4%AB%E5%A5%B3%E8%B6%B3%E5%A5%B3%E6%98%9F%E8%97%A4%E6%9C%AC%E9%9C%B2%E5%A8%9C-Kenji%E4%BE%86%E6%B8%AF%E7%99%BC%E5%B1%95%E5%A4%9A%E5%B9%B4-%E5%9B%A0%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E7%88%86%E7%B4%85",
+      "pubDate": "2026-08-24 04:00:43",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ll/sthl_square/81cb3cc70a4e366e344ff6cefb988518/2026-08/KF_137.jpg",
+      "keywords": [
+        "藤本露娜",
+        "火遮眼",
+        "vivant女星",
+        "藤本ルナ",
+        "luna fujimoto",
+        "vivant",
+        "金像獎",
+        "功夫女足",
+        "谷垣健治",
+        "kenji tanigaki",
+        "九龍城寨之圍城",
+        "最佳動作設計",
+        "怒火",
+        "邪不壓正",
+        "谷垣健治結婚",
+        "藤本露娜結婚"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4faff3d3b2f68e2537b25a3637d505ab",
+      "title": "谷垣健治宣布與藤本露娜結婚曬甜蜜婚照:讓我們迎接下一個篇章",
+      "description": "憑擔任《九龍城寨之圍城》武術指導而爆紅的谷垣健治,昨日(23日)宣布與日本女演員藤本露娜結婚。兩人透過社交平台發布喜訊,透露已經順利舉行婚",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60382976/%E8%B0%B7%E5%9E%A3%E5%81%A5%E6%B2%BB%E5%AE%A3%E5%B8%83%E8%88%87%E8%97%A4%E6%9C%AC%E9%9C%B2%E5%A8%9C%E7%B5%90%E5%A9%9A%E6%9B%AC%E7%94%9C%E8%9C%9C%E5%A9%9A%E7%85%A7-%E8%AE%93%E6%88%91%E5%80%91%E8%BF%8E%E6%8E%A5%E4%B8%8B%E4%B8%80%E5%80%8B%E7%AF%87%E7%AB%A0",
+      "pubDate": "2026-08-24 04:00:42",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168522623206821888624180.jpeg/bcDPK3N8Ev3x8LtwXoUvphGi7YtVE_NmJhKJFSYSiRU",
+      "keywords": [
+        "電影",
+        "經典電影",
+        "睇戲",
+        "港產片",
+        "香港01",
+        "影評",
+        "外語片"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f8bd95b50a77aeabd76cd20e3658117a",
+      "title": "中年好聲音4|「小野貓」蔡宓婕滿意舞台發揮失落三甲不失望 盼回歸平淡家庭生活",
+      "description": "全城矚目的歌唱比賽節目《中年好聲音4》決賽《登峯之戰》於昨晚(8月23日)隆重舉行,經過一輪激戰,尹景順以大熱姿態成功奪得冠軍寶座及十萬元獎金,許雲妮屈居亞軍,鄭家聲奪得季軍。而有「小野貓」之稱的蔡宓婕雖然落敗,但她對自己的表現已很滿意! 蔡宓婕表示,在如此緊張的狀態下,自己整體發揮算不錯,第一首歌仍有進步的空間,可以做得更加好,而唱第二首歌就完全放開享受舞台,玩得很開心,「所以第二首歌,我唱完之後都覺得值得啦!唔理咩名次啦,我自己係玩得好勁嘅!」提到之前她前明言想得到第三名,但最終失落名次,會否有失望?蔡宓婕直言沒有,因為想完成這個比賽的心情,比想拿到三甲的心情更加強,而且她與鄭家聲、吳亦偉是同分,人氣方面輸給鄭嘉聲亦是心服口服!她認為自己在台上已將自己能夠發揮的已經做得很盡,唱的兩首歌沒有很大失誤,已為自己感到驕傲,但唯一遺憾是沒有機會唱想送給在場支持自己父母的歌。 至於完成比賽後,蔡宓婕表示最想的是回到正常的生活,回歸作為媽媽、老婆、在舖頭賣衫的正常人,可以有正常的生活作息,不用再比賽、沒有壓力的生活。不過,她亦開明表示,如果日後有合適的幕前工作邀約,自己亦樂意嘗試,更大方笑言當初參加《中年好聲音 4》,初衷都是為賺錢養家。 提到其他落敗的選手比賽後已離開,是否對自己的成績感到失望?蔡宓婕就認為大家對於自己理想中的名次和決心是不同的,或者他們在臺上有什麼突發事件發生是大家不知道的, 所以需要時間消化一下也是正常的,「我哋行到嚟呢個舞臺已經好唔容易,呢個都係一個經驗,唔理係咩失誤,或者好嘅或者唔好嘅,呢個都係我哋可以學習嘅嘢。」",
+      "link": "https://www.bastillepost.com/hongkong/article/16628048-%E4%B8%AD%E5%B9%B4%E5%A5%BD%E8%81%B2%E9%9F%B34%EF%BD%9C%E3%80%8C%E5%B0%8F%E9%87%8E%E8%B2%93%E3%80%8D%E8%94%A1%E5%AE%93%E5%A9%95%E6%BB%BF%E6%84%8F%E8%88%9E%E5%8F%B0%E7%99%BC%E6%8F%AE%E5%A4%B1%E8%90%BD",
+      "pubDate": "2026-08-24 04:00:14",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260824_EN_TVB_Mimi_FB.jpg",
+      "keywords": [
+        "娛圈事",
+        "中年好聲音4",
+        "蔡宓婕"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "a42735438caed3cd22c8564b7ac1a253",
@@ -415,6 +1266,33 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "7caf3754dc0819ce94dda41cc0e064c8",
+      "title": "特朗普|斥加拿大只想要好處 卡尼指新關稅釀分裂",
+      "description": "美國總統特朗普(Donald Trump)批評,加拿大想享受成為美國州份好處,但又不想真的成為美國一部分,回應加拿大總理卡尼(Mark Carney)宣布報復美國關稅。伊朗|國安委員會秘書警告 鄰國倘...",
+      "link": "https://inews.hket.com/article/4181351",
+      "pubDate": "2026-08-24 03:51:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4181351/25cafp003__1024_1_300.jpg",
+      "keywords": [
+        "美國",
+        "財政政策",
+        "貿易戰",
+        "卡尼",
+        "地緣政治",
+        "特朗普",
+        "關稅",
+        "加拿大",
+        "商品",
+        "貿易",
+        "外交"
+      ],
+      "category": [
+        "world"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "ae04bc71c5b66322596ae1b5ad945d17",
@@ -1333,6 +2211,24 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "73b325be8e9a2c21d38dc5cf0ca9365a",
+      "title": "阿里巴巴配股集資逾千億港元以擴展AI基礎設施,股價急挫逾一成",
+      "description": "Investing.com - 阿里巴巴集團(HK:9988)週日宣布,將透過配售新股籌集約800億港元(102.1億美元),所得款項淨額將全數用於擴展其人工智能基礎設施及相關能力。",
+      "link": "https://hk.finance.yahoo.com/news/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87%E9%80%BE%E5%8D%83%E5%84%84%E6%B8%AF%E5%85%83%E4%BB%A5%E6%93%B4%E5%B1%95ai%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD-%E8%82%A1%E5%83%B9%E6%80%A5%E6%8C%AB%E9%80%BE-%E6%88%90-025132602.html",
+      "pubDate": "2026-08-24 02:51:32",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "人工智能",
+        "阿里巴巴"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "ed2ff342131669bb9e5e1d888b7feaa5",
@@ -2785,27 +3681,6 @@
         "top"
       ],
       "region": "hk"
-    },
-    {
-      "id": "28d1be3b4f45b2f7f82fc64dcf1a7c8c",
-      "title": "達里奧:貝森特行動是債務危機逼近信號 推崇黃金及比特幣",
-      "description": "橋水基金創辦人達里奧(Ray Dalio)表示,美國財長貝森特(Scott Bessent)上周公布的債務回購計劃,符合可能預示危機即將來臨的更廣泛模式。 達里奧在LinkedIn帖文中指出,貝森特增加政府債務回購的計劃,或預示美國經濟將面臨困難。配合日本政府減少美國債市敞口,以及美國長期國債孳息率急升,投資者或...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%81%94%E9%87%8C%E5%A5%A7-%E8%B2%9D%E6%A3%AE%E7%89%B9%E8%A1%8C%E5%8B%95%E6%98%AF%E5%82%B5%E5%8B%99%E5%8D%B1%E6%A9%9F%E9%80%BC%E8%BF%91%E4%BF%A1%E8%99%9F-%E6%8E%A8%E5%B4%87%E9%BB%83%E9%87%91%E5%8F%8A%E6%AF%94%E7%89%B9%E5%B9%A3-005526877.html",
-      "pubDate": "2026-08-24 00:55:26",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "即將來臨的",
-        "達里奧",
-        "表示",
-        "貝森特",
-        "橋水基金創辦人"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "847578df03bbf62b4fd12e6f2ec23930",
@@ -4514,6 +5389,26 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "b9f3c6b3d2712c0cdfeb935b405a198c",
+      "title": "叡璟I加推133伙 折實均呎1.9萬 加價約2% 連招標累沽197伙呎價高見2.57萬",
+      "description": "【明報專訊】雖然近月新盤市場氣氛較為淡靜,但以「北都價」招徠的焦點項目、華潤置地(海外)旗下西南九龍長沙灣叡璟I,剛過去周末首輪價單連招標共售出197伙,成交實呎高見2.57萬元。發展商昨加推133伙,折實均呎19,212元,輕微提價約2%。在叡璟I帶動下,過去兩日新盤市場共錄約242宗成交,料為5月初後逾3個月最旺周末,帶挈本月迄今一手市場已錄約720宗成交,市場預期本月全月勢超上月全月約820宗水平。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260824/s00004/1787501481658/%E5%8F%A1%E7%92%9Fi%E5%8A%A0%E6%8E%A8133%E4%BC%99-%E6%8A%98%E5%AF%A6%E5%9D%87%E5%91%8E1-9%E8%90%AC-%E5%8A%A0%E5%83%B9%E7%B4%842-%E9%80%A3%E6%8B%9B%E6%A8%99%E7%B4%AF%E6%B2%BD197%E4%BC%99%E5%91%8E%E5%83%B9%E9%AB%98%E8%A6%8B2-57%E8%90%AC",
+      "pubDate": "2026-08-23 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260824/s00072/add41323e36645f88db228226675de97.jpg",
+      "keywords": [
+        "新盤銷售",
+        "華潤置地（海外）",
+        "叡璟i",
+        "海瑅灣系列"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "4a2a744b27f475945ddef0bd7f223fa7",
@@ -197101,6 +197996,20 @@
       "region": "hk"
     },
     {
+      "id": "813e9d489d39a7e8",
+      "title": "香港小姐2026｜「五大類型」佳麗綻放多元魅力　2號李澤欣「母獅」上身率性可愛面　5號魏欣做瑜珈大晒柔軟身手",
+      "description": "【香港小姐2026 / 決賽 / 佳麗】《2026香港小姐競選》將於8月30日晚（周日）隆重舉行決賽。 大會日前發佈最新形象宣傳影片，12位佳麗：1號袁絲珩（Bernice）、2號李澤欣（Scarle...",
+      "link": "https://topick.hket.com/article/4181597",
+      "pubDate": "2026-08-25 00:02:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4181597/252026_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "23b98ae67728c892",
       "title": "汪明荃黃淑儀｜汪明荃黃淑儀世紀同框　1細節證關係勁親密　50年前合作拍戲傳出不和",
       "description": "【汪明荃 / 黃淑儀 / 張德蘭 / 楊紹鴻】張德蘭澳門演唱會日前完滿結束，阿姐汪明荃與老公羅家英一同出席慶功宴，資深製作人楊紹鴻相當有心，為已相似40年、即將於星期五（8月28日）迎來79歲生日的阿...",
@@ -198905,6 +199814,6 @@
       "pinned": true
     }
   ],
-  "total": 10131,
-  "last_updated": "2026-08-25T00:09:33.855798"
+  "total": 10176,
+  "last_updated": "2026-08-25T01:08:50.870601"
 }
