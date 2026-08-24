@@ -1,0 +1,10 @@
+{
+  "id": "73044028622d978c2225063bead3953f",
+  "title": "網上流傳假《GTA6》 113GB 安裝檔全是垃圾 只藏 50KB 木馬潛用家電腦",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/24/gta6-fake-iso-malware/game-channel/",
+  "rewritten_title": "假《GTA6》安裝檔藏木馬 113GB檔案實為垃圾資料",
+  "rewritten": "網上流傳容量達113GB的假《GTA6》ISO安裝檔，經網絡安全研究人員逆向分析，發現檔案99.99%為無意義的零填充資料，真正惡意程式碼僅50KB。該木馬包含兩條指令，分別透過PowerShell將C磁碟加入Windows Defender白名單，並強制終止防毒軟件，導致電腦防護機制失效。安全人員提醒玩家切勿下載非官方遊戲檔案。",
+  "status": "done",
+  "fetched_at": "2026-08-25T03:03:05"
+}
