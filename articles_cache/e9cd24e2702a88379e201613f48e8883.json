@@ -1,0 +1,10 @@
+{
+  "id": "e9cd24e2702a88379e201613f48e8883",
+  "title": "初代 PSP 玩到經典 CS 僅用 12MB RAM 行 60 FPS 神人自研雙引擎完美移植",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/24/bilibili-global-app-launch/game-channel/",
+  "rewritten_title": "神人自研雙引擎將經典CS移植至初代PSP，僅用12MB記憶體跑60FPS",
+  "rewritten": "開發者Yifeng Wang（網名doodlestrike）發布開源專案OpenStrike，成功將經典射擊遊戲《絕對武力》移植到2004年推出的初代Sony PSP。專案採用獨特的雙引擎架構：底層以Rust語言自研的3D引擎Pocket3D處理高負載運算與場景渲染，上層則用自研JavaScript引擎PocketJS處理遊戲規則與介面邏輯。透過精準的記憶體分配，整個遊戲運作僅佔用約12MB記憶體…",
+  "status": "done",
+  "fetched_at": "2026-08-25T05:03:11"
+}
