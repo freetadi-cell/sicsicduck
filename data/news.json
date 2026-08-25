@@ -1,90 +1,1009 @@
 {
   "articles": [
     {
-      "id": "6675bad9a0e00db3dd76a11c760bd0f1",
-      "title": "美國制裁伊朗波及中港 北京:將採取措施維權",
-      "description": "美國財政部外國資產管制辦公室(OFAC)於24日宣布新一輪針對伊朗的制裁措施,將多名中國公民、中港多家企業及多艘油輪列入「指定制裁名單」。財政部長貝森特形容行動為「經濟放逐」,旨在切斷伊朗政權的所有收入來源,並鎖定伊朗在數位資產、科技、黃金、航空及航運等5大關鍵經濟領域。 美國財長貝森特:「我們今天啟動『經濟放逐行動』,以切斷伊朗政權所有選項,美國財政部已掌握伊朗用以走私石油及規避制裁的所有節點、",
-      "link": "https://www.stheadline.com/realtime-world/3607999/%E7%BE%8E%E5%9C%8B%E5%88%B6%E8%A3%81%E4%BC%8A%E6%9C%97%E6%B3%A2%E5%8F%8A%E4%B8%AD%E6%B8%AF-%E5%8C%97%E4%BA%AC%E5%B0%87%E6%8E%A1%E5%8F%96%E6%8E%AA%E6%96%BD%E7%B6%AD%E6%AC%8A",
-      "pubDate": "2026-08-25 09:58:49",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/2c2f841ecaa0a8354ad0526e383cd0f3/2026-08/a1_39.jpg",
+      "id": "684770c2207adcad81a41431da3852af",
+      "title": "馬雲出手撐阿里! 消息..豪斥6億港元掃入公司股份",
+      "description": "阿里巴巴(9988)配股集資800億元,累股價一度急挫。繼公司高層蔡崇信、吳泳銘於過去兩日累計增持合共價值超過2億元的公司股份後,阿里創辦人馬雲也",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60383590/%E9%A6%AC%E9%9B%B2%E5%87%BA%E6%89%8B%E6%92%90%E9%98%BF%E9%87%8C-%E6%B6%88%E6%81%AF-%E8%B1%AA%E6%96%A56%E5%84%84%E6%B8%AF%E5%85%83%E6%8E%83%E5%85%A5%E5%85%AC%E5%8F%B8%E8%82%A1%E4%BB%BD",
+      "pubDate": "2026-08-25 10:56:32",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20211019/527092537777721344614527.jpeg/aMLXYQhYbr__fv9I9IXLRcwDOEbFzL8XwexxccHscXE",
       "keywords": [
-        "貝森特",
+        "港股",
+        "香港新聞",
+        "股票",
+        "hk01",
+        "財經台",
+        "a股",
+        "財經網",
+        "新聞",
+        "財經透視",
+        "經濟",
+        "香港01",
+        "地產消息",
+        "財經新聞",
+        "恆生指數"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "0f5be3b7a35b8ebeb34ddf704e190dea",
+      "title": "彭博社:特朗普擬9.24晤習近平前 宣布加徵中國7.5%關稅",
+      "description": "彭博社8月24日引述消息人士報道,在美國總統特朗普預計於9月24日與到訪白宮的中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%的關稅,使特朗普第二任期內對華關稅水平提升至約20%。不過,路透社報道指,暫未能獨立證實該報道。 美方擬發布「產能過剩」調查 法律定稿面臨挑戰 彭博社的報道指,美方貿易官員計劃在中美最高領導人9月24日「習特會」登場前,正式公布針對「產能過剩",
+      "link": "https://www.stheadline.com/realtime-world/3607885/%E5%BD%AD%E5%8D%9A%E7%A4%BE%E7%89%B9%E6%9C%97%E6%99%AE%E6%93%AC924%E6%99%A4%E7%BF%92%E8%BF%91%E5%B9%B3%E5%89%8D-%E5%AE%A3%E5%B8%83%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B75%E9%97%9C%E7%A8%85",
+      "pubDate": "2026-08-24 23:56:49",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6ec67f1f4fd3676edec8340889598d05/2026-08/2026-08-25_00_43_30.png",
+      "keywords": null,
+      "category": [
+        "business",
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "752692555c7b1558d309a8bb68667a1f",
+      "title": "伊朗局勢|美宣布擴大二級制裁 要求各國關閉境內伊朗銀行 德黑蘭列45油輪黑名單",
+      "description": "美國總統特朗普威脅對伊朗實施「經濟諾曼第登陸日」(Economic D-Day)的嚴厲制裁,形容這是一場「史上最具毀滅性的經濟行動」。周一(24日),美國財政部長貝森特召開新聞發布會,正式宣布啟動代號為「離岸經濟行動」(Operation Economic Outcast)的全新極限施壓措施,警告任何與伊朗結盟或保持商業往來的國家及實體,均會受到二級制裁,被排斥在美元體系之外。 擴大二級制裁覆蓋五",
+      "link": "https://www.stheadline.com/realtime-world/3607868/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E7%BE%8E%E5%AE%A3%E5%B8%83%E6%93%B4%E5%A4%A7%E4%BA%8C%E7%B4%9A%E5%88%B6%E8%A3%81-%E8%A6%81%E6%B1%82%E5%90%84%E5%9C%8B%E9%97%9C%E9%96%89%E5%A2%83%E5%85%A7%E4%BC%8A%E6%9C%97%E9%8A%80%E8%A1%8C-%E5%BE%B7%E9%BB%91%E8%98%AD%E5%88%9745%E6%B2%B9%E8%BC%AA%E9%BB%91%E5%90%8D%E5%96%AE",
+      "pubDate": "2026-08-24 19:06:06",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0e4005dacc51f63b580739f91722519a/2026-08/2026-08-24T172356Z_1251564812_RC255NANC00Z_RTRMADP_3_USA-TREASURY-BESSENT.JPG",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "d32aba161e98a98acd95aa026d36a777",
+      "title": "電費燃料調整費|9月港燈每度電收60.7仙升5.9% 中電升0.2%",
+      "description": "受國際地緣政治局勢持續緊張及能源市場波動影響,本港兩大電力公司公布最新燃料調整費數據。港燈9月份燃料調整費將升至每度電60.7仙,按月上升約5.",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383401/%E9%9B%BB%E8%B2%BB%E7%87%83%E6%96%99%E8%AA%BF%E6%95%B4%E8%B2%BB-9%E6%9C%88%E6%B8%AF%E7%87%88%E6%AF%8F%E5%BA%A6%E9%9B%BB%E6%94%B660-7%E4%BB%99%E5%8D%875-9-%E4%B8%AD%E9%9B%BB%E5%8D%870-2",
+      "pubDate": "2026-08-25 06:53:20",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260225/1103272771040841728318674.jpeg/GnYVBDQHNKiiNHFrcaYHA4mfDSk5fYDQeNgLel3YC3o",
+      "keywords": [
+        "國際新聞",
+        "即時新聞",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "港聞",
+        "頭條新聞",
+        "hk01"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "3099c7469868ec44d599fde4625f29d9",
+      "title": "天璽.天第2期單日標售4伙 兩房戶2116萬成交|啟德新盤",
+      "description": "「天璽.天」第2期由兩座樓高44層的大樓組成,提供584伙單位,涵蓋一房至四房間隔,實用面積介乎296至4,306方呎;主打一房及兩房,共有399伙,佔全盤約68%。",
+      "link": "https://www.am730.com.hk/%E5%9C%B0%E7%94%A2/1049436/%E5%A4%A9%E7%92%BD-%E5%A4%A9%E7%AC%AC2%E6%9C%9F%E5%96%AE%E6%97%A5%E6%A8%99%E5%94%AE4%E4%BC%99-%E5%85%A9%E6%88%BF%E6%88%B62116%E8%90%AC%E6%88%90%E4%BA%A4-%E5%95%9F%E5%BE%B7%E6%96%B0%E7%9B%A4",
+      "pubDate": "2026-08-25 11:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-02/1049436/article/1049436/df/01KGHH6VX8TC9M0MD9Z8WS9XHA.jpg?updatedAt=1787654398",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f1a2efb2b8cbdc29522bb241a946ee9b",
+      "title": "胡子彤出戰名古屋亞運棒球賽 演《九龍城寨》「十二少」日本爆紅 近年受古天樂力捧",
+      "description": "亞運會2026將於9月在日本名古屋舉行,近年轉型成為演員及歌手的古天樂愛將、34歲男星胡子彤,近日重拾港隊棒球運動員身份,入選香港棒球代表隊,即將出戰名古屋亞運會,相隔 12 年回歸國際賽場再度為港爭光!與此同時,今日(25日)為其出道電影《點五步》香港上映 10 周年,胡子彤於社交平台分享與一眾演員,包括林耀聲、柯煒林、岑珈其、談善言、林家熙敍舊合照,眾人笑容燦爛,十年情誼不變。 胡子彤時隔12",
+      "link": "https://www.stheadline.com/film-drama/3608104/%E8%83%A1%E5%AD%90%E5%BD%A4%E5%87%BA%E6%88%B0%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E6%A3%92%E7%90%83%E8%B3%BD-%E6%BC%94%E4%B9%9D%E9%BE%8D%E5%9F%8E%E5%AF%A8%E5%8D%81%E4%BA%8C%E5%B0%91%E6%97%A5%E6%9C%AC%E7%88%86%E7%B4%85-%E8%BF%91%E5%B9%B4%E5%8F%97%E5%8F%A4%E5%A4%A9%E6%A8%82%E5%8A%9B%E6%8D%A7",
+      "pubDate": "2026-08-25 11:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/54a56e6261e20282f45b9849faba4723/2026-08/Copy_of_KF__117.png",
+      "keywords": [
+        "香港棒球代表隊",
+        "亞運棒球港隊",
+        "逆流大叔",
+        "細威",
+        "點五步10周年",
+        "男人難以說的話",
+        "梅艷芳蔡一智",
+        "古天樂天下一",
+        "九龍城寨之圍城",
+        "沙燕隊",
+        "名古屋亞運",
+        "點五步",
+        "十二少",
+        "胡子彤"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "93d9218a9f387aac4cbca2c53d44a7f4",
+      "title": "林定國:國家安全現問題或受到威脅 必然影響社會甚至個人安全",
+      "description": "律政司司長林定國表示,秩序與安全是法治主要元素,當國家安全出現問題或受到威脅,必然影響社會甚至個人安全。國家安全包含維持經濟社會可持續發展相對處於沒有危險和不受內外威脅的狀態。 林定國在社交媒體上表示,良好的法治環境對促進社會經濟發展至為關鍵。法治的其中一個主要元素及組成部分正是秩序與安全(order and security)。 林定國指出,國家安全是最根本和最高層次的秩序與安全。國家安全出現問題或受到威脅,必然影響社會甚至個人安全。只有一個受法律保障安全的法治環境,才會令人專心、安心、有信心謀發展。這是十分顯淺的常理。 林定國稱,《維護國家安全條例》第四條採納了《中華人民共和國國家安全法》第二條對國家安全的定義:國家安全是指國家政權、主權、統一和領土完整、人民福祉、經濟社會可持續發展和國家其他重大利益相對處於沒有危險和不受內外威脅的狀態,以及保障持續安全狀態的能力。 林定國強調國家安全包含維持經濟社會可持續發展相對處於沒有危險和不受內外威脅的狀態。這是在法律上對安全與發展之間不可分割、密切關係的最權威表述。",
+      "link": "https://www.bastillepost.com/hongkong/article/16637991-%E6%9E%97%E5%AE%9A%E5%9C%8B%EF%B9%95%E5%9C%8B%E5%AE%B6%E5%AE%89%E5%85%A8%E7%8F%BE%E5%95%8F%E9%A1%8C%E6%88%96%E5%8F%97%E5%88%B0%E5%A8%81%E8%84%85-%E5%BF%85%E7%84%B6%E5%BD%B1%E9%9F%BF%E7%A4%BE%E6%9C%83",
+      "pubDate": "2026-08-25 10:55:33",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2024/12/20241107_PO_Paul-Lam3_source-web_-1-e1734339069673.jpg",
+      "keywords": [
+        "林定國",
+        "政事"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "63f3ce6435db30765336b8bb5008cb92",
+      "title": "派世富研究:無縫安全支付需求重塑視像遊戲消費模式",
+      "description": "全球支付龍頭派世富(Paysafe)(NYSE:PSFE)發表最新研究報告,指出隨着視像遊戲發展成全天候娛樂體驗,支付表現正成為推動玩家投入度及消費的關鍵因素。報告揭示,雖然玩家在各類遊戲、訂閱服務及數碼內容上的消費日趨多元化,但不少交易仍因支付不暢及安全疑慮而未能完成。 這份名為《2026年體驗經濟報告:視像遊戲》的新報告,訪問了美國、英國、法國、德國、意大利、希臘、波蘭及羅馬尼亞共5,000名玩家,他們均在過去12個月內曾進行與遊戲相關的消費。研究探討玩家如何消費、支付及參與遊戲體驗,並強調市場對更快、更安全及更靈活支付選項的需求日益增加。 報告發現: 派世富首席產品總監鮑勃·萊格特斯表示:「視像遊戲已成為由訂閱服務、數碼內容、創作者生態系統及持續玩家投入度所推動的連續消費體驗。」他續指:「因此,支付在塑造整體玩家體驗方面發揮着比以往任何時候都更重要的作用。我們的研究顯示,玩家期望支付過程無縫、安全且符合個人偏好。對於發行商及平台而言,減少結帳時的阻礙並提供更多支付選擇,有助於開拓收入機會,同時增強玩家忠誠度。」 研究亦強調支付表現與消費行為之間的關聯。超過三分之二(佔68%)的玩家表示,無縫的支付體驗有助他們充分享受遊戲樂趣;而近半數(佔46%)玩家則稱,若結帳過程更快或更便捷,他們將會在遊戲上花費更多。 隨着視像遊戲持續擴展至不同平台、內容形式及數碼社群,支付正成為玩家探索、購買及參與遊戲體驗中愈趨重要的一環。優先考慮便捷、安全及支付靈活性的企業,將能更好地滿足玩家不斷變化的期望,並在遊戲消費市場中佔據更大份額。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16638153-%E6%B4%BE%E4%B8%96%E5%AF%8C%E7%A0%94%E7%A9%B6%EF%BC%9A%E7%84%A1%E7%B8%AB%E5%AE%89%E5%85%A8%E6%94%AF%E4%BB%98%E9%9C%80%E6%B1%82%E9%87%8D%E5%A1%91%E8%A6%96%E5%83%8F%E9%81%8A%E6%88%B2%E6%B6%88%E8%B2%BB",
+      "pubDate": "2026-08-25 10:51:42",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/d46e5b3cc8434e2c8d158e8e05b6af86_Paysafe_Experience_Economy_Report_Video_Gaming_2026_Infographic_FB.jpg",
+      "keywords": [
+        "paysafe",
+        "視像遊戲",
+        "消費模式",
+        "支付",
+        "電子錢包",
+        "商業事"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "011c8e76aabb50cc51a7ca360d8a2686",
+      "title": "阿里蔡崇信再掃貨 斥逾8000萬增持",
+      "description": "蔡崇信昨日亦以平均價112.0803元,增持72萬股阿里巴巴股份;首席執行官吳泳銘買入35萬股,平均價111.6359元。兩人合計合共斥近1.2億元增持阿里,出手「撐市」。",
+      "link": "https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1049439/%E9%98%BF%E9%87%8C%E8%94%A1%E5%B4%87%E4%BF%A1%E5%86%8D%E6%8E%83%E8%B2%A8-%E6%96%A5%E9%80%BE8000%E8%90%AC%E5%A2%9E%E6%8C%81",
+      "pubDate": "2026-08-25 10:50:11",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049439/article/1049439/df/20b4a071-9145-4e9b-967c-7114c286d2f0.png?updatedAt=1787655014",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "df1f49835274d6b63ec4c5bb8b4e4808",
+      "title": "TVS Motor委任馬塞爾德里森為歐洲區主管 領導下一階段增長",
+      "description": "TVS Motor Company(TVSM)今日宣布,委任馬塞爾德里森為歐洲區主管,於2026年9月15日生效,以強化其國際業務營運,並加速在全球主要市場的增長。TVSM隸屬TVS VENU旗下,是全球知名的兩輪及三輪車輛製造商。馬塞爾德里森將帶領TVSM及Norton Motorcycles兩個品牌,在公司其中一個具戰略重要性的地區,展開下一階段的擴張。 馬塞爾德里森加入TVS Motor Company前,擁有超過三十年於汽車及高端電單車行業的國際領導經驗。在其卓越的職業生涯中,他曾於全球多個備受尊崇的品牌擔任高級商業及管理職位,包括山葉、寶馬電單車、杜卡迪、比亞喬、偉士牌、莫托古茲、阿普利亞及漢高。他對歐洲市場的深入了解,加上其廣泛的行業專業知識,使其能夠有力地領導TVS Motor Company在該地區的增長目標。 這次委任正值TVS Motor Company調整其國際業務組織,以提升市場專注度、靈活性及客戶親近度,並強化其在全球市場可持續增長的承諾。 TVS Motor Company國際業務總裁佩曼卡爾加表示,歐洲是TVS Motor Company在全球最令人振奮的增長機遇之一,對我們的長期國際戰略至關重要。馬塞爾德里森擁有卓越的行業知識、商業專長及領導經驗,這些經驗是他在超過三十年與全球多個標誌性流動品牌合作期間累積所得。他對歐洲消費者、經銷商網絡及市場動態的深入了解,對於我們繼續強化業務、加速增長,並在該地區建立一個更強大、更具抱負的TVS Motor品牌至關重要。我們很高興歡迎馬塞爾加入TVS大家庭。 候任歐洲區主管馬塞爾德里森表示,很榮幸能在TVS Motor Company全球增長歷程的關鍵時刻加入。公司在創新、品質及以客戶為中心方面展現出卓越的承諾,同時建立了日益強大的國際影響力。歐洲帶來巨大的增長機遇,他期待與我們的團隊及合作夥伴緊密合作,進一步強化品牌、擴大業務範圍,並為該地區的客戶創造持久價值。 作為公司旨在提升市場專注度及靈活性的更廣泛國際業務重組一部分,現任歐洲區主管理查德圖熱龍將擔任中東及亞洲區主管(涵蓋中東、獨立國家聯合體、北非及亞洲)。他將駐杜拜,繼續領導公司在這些具戰略重要性市場的增長及營運。 TVS Motor Company(孟買證券交易所代號:532343,國家證券交易所代號:TVSMOTOR)隸屬TVS VENU旗下,是全球知名的兩輪及三輪車輛製造商,透過可持續流動性推動進步,並在印度及印尼設有四個最先進的生產設施。公司植根於百年來對客戶的信任、價值及熱情,以透過創新及可持續的流程,生產國際認可的最高品質產品為傲。TVS Motor是唯一一家榮獲著名戴明獎的兩輪車公司。我們的產品在J.D. Power IQS及APEAL調查中,於各自類別中領先。我們已連續四年在J.D. Power客戶服務滿意度調查中排名第一。我們位於英國的集團公司Norton Motorcycles,是全球最具情感的電單車品牌之一。TVS Motor Company致力於在我們營運的90個國家提供最卓越的客戶體驗。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16638184-tvs-motor%E5%A7%94%E4%BB%BB%E9%A6%AC%E5%A1%9E%E7%88%BE%E5%BE%B7%E9%87%8C%E6%A3%AE%E7%82%BA%E6%AD%90%E6%B4%B2%E5%8D%80%E4%B8%BB%E7%AE%A1-%E9%A0%98%E5%B0%8E%E4%B8%8B%E4%B8%80%E9%9A%8E%E6%AE%B5%E5%A2%9E",
+      "pubDate": "2026-08-25 10:49:34",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/1512d5a4b869452bba8d8c0a3879231e_Foto_Marcel_Driessen_TVS_HRes_FB.jpg",
+      "keywords": [
+        "馬塞爾德里森",
+        "歐洲業務",
+        "norton motorcycles",
+        "電單車",
+        "tvs motor company",
+        "商業事"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "42988abcef052b392471b13b02013324",
+      "title": "英超轉會消息|沙雲奴7500萬鎊轉投熱刺 今夏熱刺增兵已豪花超過3億",
+      "description": "曼城周二官宣,翼鋒沙雲奴(Savinho)轉投熱刺,據報轉會費高達7500萬鎊,也意味今季熱刺已豪花3億鎊在引援上。 22歲巴西翼鋒沙雲奴實際上,早在去年夏天熱剌已有意簽入,但最終以失敗告吹,但留隊後沙雲奴在哥迪奧拿揮下並未獲太多機會,上季各賽事僅上陣39場攻入五球三助攻,在英超上陣24場僅正選上陣7場。沙雲奴在轉會後表示:「雖然花了一點時間,但好開心可以來到這裏。這是一個絕佳的機會,加入一支優秀",
+      "link": "https://www.stheadline.com/football-news/3608136/%E8%8B%B1%E8%B6%85%E8%BD%89%E6%9C%83%E6%B6%88%E6%81%AF%E6%B2%99%E9%9B%B2%E5%A5%B47500%E8%90%AC%E9%8E%8A%E8%BD%89%E6%8A%95%E7%86%B1%E5%88%BA-%E4%BB%8A%E5%A4%8F%E7%86%B1%E5%88%BA%E5%A2%9E%E5%85%B5%E5%B7%B2%E8%B1%AA%E8%8A%B1%E8%B6%85%E9%81%8E3%E5%84%84",
+      "pubDate": "2026-08-25 10:49:34",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/47a62cf7316c0c177ee874aa92d6b7b8/2026-08/KF_-_2026-08-25T184417_963.jpg",
+      "keywords": [
+        "沙雲奴",
+        "savinho",
+        "英超轉會消息",
+        "熱刺"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8ed152e4d21b50f51a9056d04ee4b1bc",
+      "title": "Netflix《早春晴朗》8.26開播!井柏然孫千kiss+床上戲預告片瘋傳",
+      "description": "由井柏然與孫千領銜主演的職場虐戀內地劇《早春晴朗》,已正式定檔於8月26日在優酷及Netflix(奈飛)全網同步上線。近期劇方釋出的預告片段、主題",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60383068/netflix-%E6%97%A9%E6%98%A5%E6%99%B4%E6%9C%97-8-26%E9%96%8B%E6%92%AD-%E4%BA%95%E6%9F%8F%E7%84%B6%E5%AD%AB%E5%8D%83kiss-%E5%BA%8A%E4%B8%8A%E6%88%B2%E9%A0%90%E5%91%8A%E7%89%87%E7%98%8B%E5%82%B3",
+      "pubDate": "2026-08-25 10:48:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168607195093274624875201.png/w10xS01Ly7RwhvOvhyS5MfEBfGnR8ZBFyOdgAcjnYAE",
+      "keywords": [
+        "經典電影",
+        "睇戲",
+        "港產片",
+        "電影",
+        "外語片",
+        "影評",
+        "香港01"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5e4f83ce996d681306bda4687fde55d8",
+      "title": "致富證券47周年嘉年華 陸叔薦5厘高息股 郭Sir看好黃金避險",
+      "description": "致富證券於上週六(22日)在香港喜來登酒店舉辦「47 周年投資嘉年華」, 吸引逾 500 名投資者到場參與。 致富集團首席執行官梁昊先生表示:「致富證券既擁有一家 47 年香港金融機構的穩健和溫度, 也擁有新一代金融科技公司的效率和創新。公司將圍繞線下分行服務網絡建設、數碼化投資體驗升級及財富管理業務拓展三大方向持續投入。」 致富證券研究部聯席董事莊志豪先生透露,致富證券 App 的 PI 頁面亦將會新增美國國債等債券,鯊魚鰭、雪球等結構化產品,並加強專業投顧服務,為不同類型客戶提供更加全面的資產配置方案。 在嘉年華投資論壇上,多位重量級市場專家出席,拆解熱門板塊。其中包括,著名股評家陳永陸(陸叔)、易方達資產管理策略分析師全曉蕾與全職投資者泡泡龍(龍少)、花旗環球金融亞洲上市結構性產品部副總裁麥穎儀、香港股票分析師協會理事溫杰 (比比)及獨立股評人 K.Ho等。 著名股評家陳永陸(陸叔)指出,下半年持股可考慮息口達5厘的股份,並可特別留意受惠於內地政策轉變的內銀以及內險板塊。 香港股票分析師協會副主席郭思治(郭 Sir.. The post 致富證券47周年嘉年華 陸叔薦5厘高息股 郭Sir看好黃金避險 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E6%8A%95%E8%B3%87%E7%86%B1%E8%A9%B1/%E8%87%B4%E5%AF%8C%E8%AD%89%E5%88%B8-47%E5%91%A8%E5%B9%B4-%E9%99%B8%E5%8F%94-%E9%AB%98%E6%81%AF%E8%82%A1-%E9%83%ADsir-%E9%BB%83%E9%87%91-2035486/",
+      "pubDate": "2026-08-25 10:48:19",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/20260425-chief47-00322_12385029876a8d71e9b44a9.jpg",
+      "keywords": [
+        "投資熱話"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c83013dc421921c7db247436af4fdae5",
+      "title": "名古屋亞運會2026跆拳道|香港運動員名單+賽程賽果+歷屆成績",
+      "description": "愛知.名古屋亞運2026的跆拳道項目將於10月1日至10月3日舉行,本文詳列香港跆拳道隊參賽名單、比賽日期及最新賽程。名古屋亞運將由HOY TV全程免費",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60380339/%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E6%9C%832026%E8%B7%86%E6%8B%B3%E9%81%93-%E9%A6%99%E6%B8%AF%E9%81%8B%E5%8B%95%E5%93%A1%E5%90%8D%E5%96%AE-%E8%B3%BD%E7%A8%8B%E8%B3%BD%E6%9E%9C-%E6%AD%B7%E5%B1%86%E6%88%90%E7%B8%BE",
+      "pubDate": "2026-08-25 10:46:54",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168993276695416832519304.jpeg/JIrYy6PPtOdgTwanEn_Tm2c5cEg_ElYMy81bsMvNW7A",
+      "keywords": [
+        "香港新聞",
+        "hk01",
+        "體育",
+        "籃球",
+        "體育消息",
+        "網球",
+        "新聞",
+        "體育新聞",
+        "f1賽車",
+        "香港01",
+        "高爾夫球",
+        "nba"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f429128492ca8c143f27eb8b1290cdff",
+      "title": "澳博中期虧損擴大至2.95億元 不派息",
+      "description": "澳博控股(880)公布,上半年股東應佔虧損2.95億元,虧損按年擴大61.7%;每股虧損4.1仙,不派中期息;經調整EBITDA報17.01億元,按年升3.3%。澳博主席及澳娛綜合常務董事何超鳳表示,2026年上半年標誌著集團完成一項重要的業務轉型,隨著所有娛樂場業務全面由集團直營管理,公司在掌控顧客體驗、成本管理及盈利質素方面的優勢正逐步顯現,並已反映於整體營運表現及利潤率提升之中。 期內,集團",
+      "link": "https://www.stheadline.com/stock-market/3608133/%E6%BE%B3%E5%8D%9A%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7%E8%87%B3295%E5%84%84%E5%85%83-%E4%B8%8D%E6%B4%BE%E6%81%AF",
+      "pubDate": "2026-08-25 10:46:12",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/51b9a205a9c5be848bb8898b0dacd9da/2026-08/2470478.png",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1964e8a71fdf8b96fc4cd70b9834b885",
+      "title": "27歲童星徐杰離世 昔11歲登《超級偶像》踢館擊敗冠軍影片成追憶",
+      "description": "過去曾在歌唱選秀節目《超級偶像》中展現精湛唱功、被封為「美聲小歌王」的排灣族歌手徐杰,驚傳於離世!根據《壹頻新聞網》報導,徐杰於上月19日",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60383521/27%E6%AD%B2%E7%AB%A5%E6%98%9F%E5%BE%90%E6%9D%B0%E9%9B%A2%E4%B8%96-%E6%98%9411%E6%AD%B2%E7%99%BB-%E8%B6%85%E7%B4%9A%E5%81%B6%E5%83%8F-%E8%B8%A2%E9%A4%A8%E6%93%8A%E6%95%97%E5%86%A0%E8%BB%8D%E5%BD%B1%E7%89%87%E6%88%90%E8%BF%BD%E6%86%B6",
+      "pubDate": "2026-08-25 10:45:43",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168977109784203264302458.png/D_Uo4SQWNbxzaoZwV7W-7gk7_3yfhQu5ofDHWqHwx1o",
+      "keywords": [
+        "藝人",
+        "韓星",
+        "香港新聞",
+        "明星",
+        "hk01",
+        "即時娛樂",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "新聞",
+        "香港01"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "47b1c677074ac320b2af44b3b558d2d2",
+      "title": "長橋「Longbridge Café」進駐荃灣 香港第二間門店8月25日開幕",
+      "description": "通往 AI 投資時代的長橋帶進社區 兩年內目標拓展至八間 香港2026年8月25日 /美通社/ -- 長橋集團今日宣布,旗下線下品牌體驗空間「Longbridge Café」香港第二間門店已正式進駐荃灣大鴻輝中心。延續集團「投資者社群空間」的定位,繼 2025 年 9 月尖沙咀首店後,進一步將長橋的品牌體驗由線上延伸至線下,走進用戶的日常生活。線上,長橋以 AI 重塑投資體驗;線下,Longbridge Café 讓投資者在真實空間中交流、學習與連結——兩者相加,正是長橋為用戶搭建的一座「通往 AI 投資時代的長橋」。 不只是一間咖啡店 更是通往 AI 投資時代的線下入口...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/longbridge-cafe-825-302859326.html",
+      "pubDate": "2026-08-25 10:45:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1975097/20260825030248EDT_image_1.jpg?id=OA2909570&p=original",
+      "keywords": [
+        "cxp",
+        "pdt"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "867b028ed726473a576fa6458796b981",
+      "title": "屯門屯利街食水管滲漏 水務署今晚11時停水維修 影響4屋邨屋苑",
+      "description": "水務署透過社交媒體官方帳號「滴惜仔 Water Save Dave」表示,水務署於今日(25日)上午接獲報告指,屯門青山公路近屯利街有水管滲漏,經了解後確",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60383582/%E5%B1%AF%E9%96%80%E5%B1%AF%E5%88%A9%E8%A1%97%E9%A3%9F%E6%B0%B4%E7%AE%A1%E6%BB%B2%E6%BC%8F-%E6%B0%B4%E5%8B%99%E7%BD%B2%E4%BB%8A%E6%99%9A11%E6%99%82%E5%81%9C%E6%B0%B4%E7%B6%AD%E4%BF%AE-%E5%BD%B1%E9%9F%BF4%E5%B1%8B%E9%82%A8%E5%B1%8B%E8%8B%91",
+      "pubDate": "2026-08-25 10:44:53",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168992715858251776790281.jpeg/U__iqXU20_EDpqb2dQkVyePYPQRT8WXMb0-TOW9Pkzk",
+      "keywords": [
+        "香港新聞",
+        "國際新聞",
+        "hk01",
+        "頭條新聞",
+        "新聞",
+        "即時新聞",
+        "香港01",
+        "港聞"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b10142717ea3faf5448a4ec47cd226c6",
+      "title": "伊朗局勢|美國指伊政權瀕臨瓦解 伊媒首度公開最高領袖穆傑塔巴開聲影片",
+      "description": "美國與伊朗的地緣政治對決已由海上交火演變成「心理暗戰」。美國總統特朗普於當地時間24日在其社交平台「真實社交」(Truth Social)上,發出一行極具挑釁性的全大寫文字:「IRAN IS COMPLETELY COLLAPSING!!!(伊朗正在全面崩潰!)」,直指伊朗通脹高企、海空軍及軍警欠薪,里亞爾匯率更跌至歷史新低。與此同時,美國財政部亦啟動了針對伊朗的「經濟諾曼第」次級制裁。然而,德黑",
+      "link": "https://www.stheadline.com/realtime-world/3608123/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E7%BE%8E%E5%9C%8B%E6%8C%87%E4%BC%8A%E6%94%BF%E6%AC%8A%E7%80%95%E8%87%A8%E7%93%A6%E8%A7%A3-%E4%BC%8A%E5%AA%92%E9%A6%96%E5%BA%A6%E5%85%AC%E9%96%8B%E6%9C%80%E9%AB%98%E9%A0%98%E8%A2%96%E7%A9%86%E5%82%91%E5%A1%94%E5%B7%B4%E9%96%8B%E8%81%B2%E5%BD%B1%E7%89%87",
+      "pubDate": "2026-08-25 10:44:21",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/907ef1fab6231f360c0bd1ef8445e069/2026-08/New_Project_58__0.jpg",
+      "keywords": [
         "伊朗"
       ],
       "category": [
         "politics",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "43a35687e932bd32b279515481c433f9",
-      "title": "美據報擬加徵中國關稅 恒指高開116點 阿里獲增持重上配股價 小鵬績後跌逾8%|港股開市",
-      "description": "美國財長貝森特宣佈對伊朗展開「前所未有」的經濟行動,以切斷伊朗與全球經濟聯繫,並警告任何繼續與伊朗開展業務的國家都可能面臨美國制裁。另一方面,據彭博引述消息報道,美國總統特朗普預計於9月24日與中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%關稅,使特朗普第二任期內對華關稅水平提升至約20%。 金價逼4700美元 比特幣衝8萬美元 美股三大指數周一個別發展,道指收市",
-      "link": "https://www.stheadline.com/stock-market/3607900/%E7%BE%8E%E6%93%9A%E5%A0%B1%E6%93%AC%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B%E9%97%9C%E7%A8%85-%E6%81%92%E6%8C%87%E9%AB%98%E9%96%8B116%E9%BB%9E-%E9%98%BF%E9%87%8C%E7%8D%B2%E5%A2%9E%E6%8C%81%E9%87%8D%E4%B8%8A%E9%85%8D%E8%82%A1%E5%83%B9-%E5%B0%8F%E9%B5%AC%E7%B8%BE%E5%BE%8C%E8%B7%8C%E9%80%BE8%E6%B8%AF%E8%82%A1%E9%96%8B%E5%B8%82",
-      "pubDate": "2026-08-25 01:28:59",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/360d8187db7cec3a53fafaebe4a7f731/2026-08/dd_1_6.jpg",
+      "id": "49b1e71cf1f642f971467749018f4279",
+      "title": "Maradona「上帝之手」入球所用 1986 年世界盃足球拍賣逾 300 萬美元成交",
+      "description": "摘要在 1986 年 World Cup 阿根廷對 England 的 8 強賽中使用的 Adidas Azteca 比賽用球,日前在 Heritage Auctions 以 250 萬英鎊售出。當場主裁判 Ali Bin Nasser 原本一直珍藏這件歷史文物——當年 Diego Maradona 以此球射入惡...",
+      "link": "https://hk.sports.yahoo.com/news/maradona-%E4%B8%8A%E5%B8%9D%E4%B9%8B%E6%89%8B-%E5%85%A5%E7%90%83%E6%89%80%E7%94%A8-1986-%E5%B9%B4%E4%B8%96%E7%95%8C%E7%9B%83%E8%B6%B3%E7%90%83%E6%8B%8D%E8%B3%A3%E9%80%BE-094403158.html",
+      "pubDate": "2026-08-25 10:44:03",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/4c97458cad174660d40b764e70d1b4f867407d7c5548e581c6885a6627d96263/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fhypebeast_hk_sports_439%2F3b7931901f9c43a27384924c8922930c.jpg",
       "keywords": [
-        "港股"
+        "heritage auctions",
+        "ali bin nasser",
+        "阿根廷"
       ],
       "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "04e0d8b2057d34dc08b84738160163f5",
+      "title": "小米 AI Cube 迷你電腦曝光 三款自研晶片合體運行 本機直行 2000 億模型",
+      "description": "小米在 8 月 24 日舉行的玄戒晶片技術溝通會上,展示一款名為 AI Cube 的工程原型迷你電腦,同時搭載 [...]",
+      "link": "https://unwire.hk/2026/08/25/xiaomi-ai-cube-xring-chip/wireless-home/desktop-pc/",
+      "pubDate": "2026-08-25 10:41:46",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo1-2.png",
+      "keywords": [
+        "小米",
+        "人工智能",
+        "玄戒o3",
+        "桌上電腦",
+        "ai cube",
+        "晶片"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ef3795b109dee5f98e7b5993724de282",
+      "title": "英格蘭板球隊夜店醜聞不斷 飲酒文化再受審視",
+      "description": "這番話當時意義深遠,兩個月後重提更見其意。 時任英格蘭板球隊隊長賓史篤斯,在六月羅德板球場一場激戰中擊敗新西蘭後,曾向記者表示:「我可能不會真正開心和笑,直到我能與隊友們好好喝一杯啤酒。」 畢竟,賽後與隊友甚至有時是對手在更衣室飲酒,是板球界由來已久的傳統。 英格蘭板球是否將此推向極端? 英格蘭男子板球隊的場外行為及飲酒習慣,本周再次受到審視,事緣隊中一名球員再涉夜店事件。 這次涉事的是三十一歲的快速投球手布萊登卡斯,他近年是球隊的成功故事之一。周日凌晨,他在一間夜店外被戴上手銬,並被警員包圍的畫面,令人難以忽視,尤其這次事件發生在英格蘭新任隊長祖魯特呼籲球員自律數天之後。 祖魯特表示:「歸根結底,你們都是成年人。」他是在英格蘭領導層決定取消男子隊因一系列具爭議的深夜事件而實施的午夜宵禁後發言。 「你們知道代表英格蘭出賽需要甚麼,也知道自己在場外的責任,我們必須確保不會在場外出現任何小狀況。」 因此,隨著英格蘭板球監管機構著手調查另一宗場外事件,一切又回到原點。 現在是否需要進行文化重塑?在這個體育科學及極度專業化的時代,關於板球運動員賽後是否應該飲酒,存在更廣泛的疑問。又或者,球員是否只需要更聰明一點? 前英格蘭隊長艾利斯達曲克在周二發布的《Stick to Cricket》播客中表示:「你們之間應該有點腦筋,看看剛才發生了甚麼事。」「肯定會有人說,要麼不要去那個地方,要麼在午夜十二時或凌晨一時說,如果我們想繼續,就找個安靜點的地方。」 以下是曾令英格蘭板球蒙羞的深夜事件: 在前往澳洲參加一場最終以恥辱告終的灰燼盃系列賽之前,英格蘭隊於十月前往新西蘭進行白球巡迴賽。 在第三場亦是最後一場單日國際賽前一天,隊長哈利布魯克在威靈頓一間夜店被拒入場後,遭一名保安員襲擊,隊友雅各布貝瑟爾及祖殊唐當晚亦在場。 哈利布魯克當時被罰款約三萬英鎊,折合約四萬零三百美元,並獲發最後警告,以規範其未來行為——這些制裁措施直到數月後,即英格蘭隊以一比四落敗的灰燼盃系列賽結束後才公開。 哈利布魯克表示:「我為自己的行為致歉。我完全接受我的行為是錯誤的,並為我自己和英格蘭隊帶來尷尬。」 在十二月對澳洲的灰燼盃系列賽第二及第三場測試賽之間,英格蘭隊前往布里斯班以北陽光海岸的度假小鎮努沙,在漫長巡迴賽中稍作休息。 期間,有片段顯示英格蘭開路擊球手賓德克特在一次夜遊中與一群人交談時顯得迷失方向,並稱自己不記得如何返回酒店。 賓德克特其後表示:「我為該事件感到抱歉,這是不專業的,不應該發生。」「這件事無可遁形。」 英格蘭男子板球總監羅布基表示,他將調查英格蘭隊的飲酒習慣。 在冬季灰燼盃系列賽慘敗後,英格蘭隊於六月與新西蘭進行主場系列賽,展開所謂的「重啟」。 贏得首場測試賽後,史篤斯及快速投球手格斯艾堅遜在羅德板球場繼續賽後慶祝,並在倫敦夜遊,期間據報一名英格蘭隊保安人員遭英格蘭撒拉遜人欖球會一名球員襲擊。 事件影響巨大:史篤斯及艾堅遜在調查期間被排除在第二場測試賽之外,該調查最終裁定沒有發生「違反規定」行為。史篤斯其後在第三場比賽中復出,但卻在比賽中途宣布退出國際板球賽事,稱過去數月「已造成影響」。布蘭登麥卡倫隨後被解僱測試賽教練職務,而羅布基則表示,英格蘭及威爾斯板球總會正考慮對球隊實施禁酒令。 嚴格來說,卡斯夜遊時並非執行英格蘭隊職務。事發於周六,其所屬球會達勒姆在國內郡級錦標賽中大勝打比郡之後。 卡斯是上周獲選入英格蘭隊,參加對巴基斯坦首場測試賽的球員之一,但他未獲選上陣,並獲准為達勒姆出賽。 在這次不幸的夜遊之前,卡斯已被保留在英格蘭隊陣容中,準備參加周四開始的第二場測試賽。他於周一被除名,因為當局正調查該事件,據英國新聞協會報道,卡斯曾被警方短暫拘捕,並被戴上手銬。 英格蘭投球手馬修普茨當晚與卡斯一同外出,而社交媒體流傳的片段顯示,史篤斯在旁觀看卡斯被戴上手銬。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16638105-%E8%8B%B1%E6%A0%BC%E8%98%AD%E6%9D%BF%E7%90%83%E9%9A%8A%E5%A4%9C%E5%BA%97%E9%86%9C%E8%81%9E%E4%B8%8D%E6%96%B7-%E9%A3%B2%E9%85%92%E6%96%87%E5%8C%96%E5%86%8D%E5%8F%97%E5%AF%A9%E8%A6%96",
+      "pubDate": "2026-08-25 10:40:56",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/d65ff5a912eb54188cdf3e667e73f0cd_England_Off_Field_Problems_5523__FB.jpg",
+      "keywords": [
+        "體育",
+        "板球",
+        "體育紀律",
+        "飲酒問題",
+        "夜店醜聞",
+        "英格蘭板球隊"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2a0d9123909b567ea2be81a6c6cc0afa",
+      "title": "因批外界悼念Charlie Kirk炒人 美媒仲裁敗訴須復聘黑人女作家",
+      "description": "美國《華盛頓郵報》(The Washington Post)去年因評論作家阿蒂亞(Karen Attiah)批評外界急於悼念遇刺的保守派活動人士柯克(Charlie Kirk),以",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60383576/%E5%9B%A0%E6%89%B9%E5%A4%96%E7%95%8C%E6%82%BC%E5%BF%B5charlie-kirk%E7%82%92%E4%BA%BA-%E7%BE%8E%E5%AA%92%E4%BB%B2%E8%A3%81%E6%95%97%E8%A8%B4%E9%A0%88%E5%BE%A9%E8%81%98%E9%BB%91%E4%BA%BA%E5%A5%B3%E4%BD%9C%E5%AE%B6",
+      "pubDate": "2026-08-25 10:40:00",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168990750348677120679408.jpeg/e4Ec0F8ENQWoc2XYwJ01ZtBY6hE6nXBNmzddd5s3XXc",
+      "keywords": [
+        "國際",
+        "hk01",
+        "國際新聞",
+        "新聞",
+        "世界新聞",
+        "香港01",
+        "環球"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "62ee1b7cdc1c3bef60d68822b792af8b",
+      "title": "醫委會改革|多名議員冀減處理投訴時間 醫衞局強調修例非小修小補:初步篩查時間料減半",
+      "description": "政府提出《2026年醫生註冊(修訂)條例草案》,以改革醫委會組成、改革處理申訴機制、配合提升專業水平及醫生人手供應,以完善保障社會和市民的機制。立法會相關的法案委員會今午(25日)召開會議,多名議員關注修例後可以縮短多少時間處理研訊,及會否訂立醫委會調查人員的資歷要求。 醫務衞生局:今次修例並非小修小補 醫務衞生局強調今次修例並非小修小補,「頭痛醫頭、腳痛醫腳」,而是針對性的改革,令醫生專業規管真",
+      "link": "https://www.stheadline.com/politics/3608107/%E9%86%AB%E5%A7%94%E6%9C%83%E6%94%B9%E9%9D%A9%E5%A4%9A%E5%90%8D%E8%AD%B0%E5%93%A1%E5%86%80%E6%B8%9B%E8%99%95%E7%90%86%E6%8A%95%E8%A8%B4%E6%99%82%E9%96%93-%E9%86%AB%E8%A1%9E%E5%B1%80%E5%BC%B7%E8%AA%BF%E4%BF%AE%E4%BE%8B%E9%9D%9E%E5%B0%8F%E4%BF%AE%E5%B0%8F%E8%A3%9C%E5%88%9D%E6%AD%A5%E7%AF%A9%E6%9F%A5%E6%99%82%E9%96%93%E6%96%99%E6%B8%9B%E5%8D%8A",
+      "pubDate": "2026-08-25 10:39:42",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/16eb2b8faf30fa2ff09df3bfc20c5a97/2026-08/08086086048604864.jpg",
+      "keywords": [
+        "醫務衞生局",
+        "陳永光",
+        "林哲玄",
+        "改革",
+        "醫委會",
+        "陳凱欣",
+        "投訴"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "06dc69f7f35bd7748575083fd969a063",
+      "title": "蔡崇信連續兩日增持阿里 累計斥資1.62億元",
+      "description": "阿里巴巴(9988)主席蔡崇信連續第二日出手增持。港交所股權披露顯示,蔡崇信今日在場內以每股平均價113.4668元,增持72萬股阿里巴巴股份,涉資約8,170萬元,持股量由1.43%升至1.44%。 昨日已斥8,070萬增持 兩日合共144萬股 昨日阿里巴巴股價受800億元配股消息拖累急挫,一度跌穿配股價112.7元。蔡崇信當日已以每股平均價112.0803元增持72萬股,涉資約8,070萬元。",
+      "link": "https://www.stheadline.com/stock-market/3608127/%E8%94%A1%E5%B4%87%E4%BF%A1%E9%80%A3%E7%BA%8C%E5%85%A9%E6%97%A5%E5%A2%9E%E6%8C%81%E9%98%BF%E9%87%8C-%E7%B4%AF%E8%A8%88%E6%96%A5%E8%B3%87162%E5%84%84%E5%85%83",
+      "pubDate": "2026-08-25 10:32:19",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/9659c9b32aaa4d8a5c85df15cda6cf52/2026-08/178765389019627.png",
+      "keywords": null,
+      "category": [
         "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "67a13f08989996015fcd843f8baa7e29",
+      "title": "劉浩存被指「14歲就跟了某導演」 女星韓沛穎直播失控爆料惹爭議",
+      "description": "內地女星韓沛穎近期因出演熱播劇《主角》女二「楚嘉禾」受到關注,沒想到24日凌晨卻在直播中情緒潰堤,不僅抱怨戲份遭大量刪減,還在網友追問同劇",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60383415/%E5%8A%89%E6%B5%A9%E5%AD%98%E8%A2%AB%E6%8C%87-14%E6%AD%B2%E5%B0%B1%E8%B7%9F%E4%BA%86%E6%9F%90%E5%B0%8E%E6%BC%94-%E5%A5%B3%E6%98%9F%E9%9F%93%E6%B2%9B%E7%A9%8E%E7%9B%B4%E6%92%AD%E5%A4%B1%E6%8E%A7%E7%88%86%E6%96%99%E6%83%B9%E7%88%AD%E8%AD%B0",
+      "pubDate": "2026-08-25 10:30:55",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168938953508655104263580.png/6IxJj-9QRVOUmx5UovTwRVhOrXFJWRnSjaz3To2s904",
+      "keywords": [
+        "藝人",
+        "韓星",
+        "香港新聞",
+        "明星",
+        "hk01",
+        "即時娛樂",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "新聞",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "47998813117d4c93b1dbe4ad70f003fa",
+      "title": "許冠傑許冠文啟德主場館開騷夢碎?傳媒人曾智華指一原因棄攻新地標演出 粉絲:最緊要好玩",
+      "description": "「歌神」許冠傑(Sam)入行超過60年,歌曲深受樂迷歡迎,歌詞道盡了升斗市民的心聲。雖然許冠傑已經77歲,但仍對音樂充滿熱誠,近年亦有舉行巡迴演唱會。不過,許冠傑多年來在香港舉行演唱會,都選在紅磡香港體育館開騷,近日有消息指他打算轉場,有計劃移師到香港新地標啟德主場館舉行演唱會,但卻傳出因一個問題而告吹。 許冠傑原本有意在啟德主場館開騷 近日前港台節目主持曾智華在社交平台發文,指「歌神」許冠傑原本",
+      "link": "https://www.stheadline.com/film-drama/3608091/%E8%A8%B1%E5%86%A0%E5%82%91%E8%A8%B1%E5%86%A0%E6%96%87%E5%95%9F%E5%BE%B7%E4%B8%BB%E5%A0%B4%E9%A4%A8%E9%96%8B%E9%A8%B7%E5%A4%A2%E7%A2%8E%E5%82%B3%E5%AA%92%E4%BA%BA%E6%9B%BE%E6%99%BA%E8%8F%AF%E6%8C%87%E4%B8%80%E5%8E%9F%E5%9B%A0%E6%A3%84%E6%94%BB%E6%96%B0%E5%9C%B0%E6%A8%99%E6%BC%94%E5%87%BA-%E7%B2%89%E7%B5%B2%E6%9C%80%E7%B7%8A%E8%A6%81%E5%A5%BD%E7%8E%A9",
+      "pubDate": "2026-08-25 10:30:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/00fc96bb883de5b5642b918035ffba51/2026-08/kf004_4.jpg",
+      "keywords": [
+        "許冠文",
+        "演唱會",
+        "許冠傑",
+        "啟德主場館"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "60c94769c0882264324566bd7adf6671",
+      "title": "馬場浮世繪│甘敏斯父母來港為地標戰打氣",
+      "description": "澳洲練馬師甘敏斯今季在港開倉立萬,由於有長達一季的時間準備,成功獲得大量支持,目前廄內養馬數目已達四十匹,隨新馬季開鑼在即,其同樣是練馬師的父親甘寧斯,以及母親Bernadetter已於日前抵港,一同為兒子打氣。他們將會一同入馬房參觀,了解甘敏斯目前的備戰情況,並且會留港至馬季開鑼之後,見證兒子首次在港出馬的重要時刻來臨。 文傑",
+      "link": "https://www.stheadline.com/realtime-racing/3608122/%E9%A6%AC%E5%A0%B4%E6%B5%AE%E4%B8%96%E7%B9%AA%E7%94%98%E6%95%8F%E6%96%AF%E7%88%B6%E6%AF%8D%E4%BE%86%E6%B8%AF%E7%82%BA%E5%9C%B0%E6%A8%99%E6%88%B0%E6%89%93%E6%B0%A3",
+      "pubDate": "2026-08-25 10:27:53",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/b208f96de93bf29097d46ede40bc2e61/2026-08/m1_3.JPG",
+      "keywords": [
+        "文傑",
+        "ernadetter",
+        "甘敏斯",
+        "甘寧斯",
+        "馬季開鑼"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "14b14da09767a36cea707615dcac771c",
+      "title": "韓國人氣手機配件品牌168cm 全新水光唇蜜配件登場!多功能手機支架打造每日好心情",
+      "description": "韓國人氣手機配件品牌168cm早前登陸香港開設首間分店後,憑藉極具創意且色彩繽紛的設計,迅速成為新一代的話題,成為不少Gen Z及文青族群必入手配件。168cm今個夏天,推出在韓國當地大受歡迎的全新「Glow Balm Series 水光唇蜜系列」。將韓系美妝概念與實用配件完美結合,將日常隨身攜帶的手機,搖身一變成為兼具實用性與時尚感的Beauty on the Go隨身美妝單品,即睇詳情!",
+      "link": "https://www.am730.com.hk/%E7%94%9F%E6%B4%BB/1049428/%E9%9F%93%E5%9C%8B%E4%BA%BA%E6%B0%A3%E6%89%8B%E6%A9%9F%E9%85%8D%E4%BB%B6%E5%93%81%E7%89%8C168cm-%E5%85%A8%E6%96%B0%E6%B0%B4%E5%85%89%E5%94%87%E8%9C%9C%E9%85%8D%E4%BB%B6%E7%99%BB%E5%A0%B4-%E5%A4%9A%E5%8A%9F%E8%83%BD%E6%89%8B%E6%A9%9F%E6%94%AF%E6%9E%B6%E6%89%93%E9%80%A0%E6%AF%8F%E6%97%A5%E5%A5%BD%E5%BF%83%E6%83%85",
+      "pubDate": "2026-08-25 10:27:11",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049428/article/1049428/df/01M0W5V45M0MM12J42NG18KRZ5.jpg?updatedAt=1787653631",
+      "keywords": null,
+      "category": [
+        "top",
+        "lifestyle",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5a92b914ddc9f80d27504c74a764d1fc",
+      "title": "天工機器人跑步捂臉嬌羞似少女 研發者:它自己「思考」出這動作(有片)",
+      "description": "第二屆世界人形機器人運動會上,天工Omni機器人以45.66秒的成績,在400米小型組決賽摘得金牌。令人熱議的不只是它的速度,還有它獨特的雙手捂臉、身體前傾、大幅扭腰的「嬌羞」跑姿。研發者稱,它可能感...",
+      "link": "https://china.hket.com/article/4182405",
+      "pubDate": "2026-08-25 10:25:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4182405/250826_169_iet_Wan__300.jpg",
+      "keywords": [
+        "運動",
+        "設計",
+        "跑步",
+        "工程"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9a9662f12abfa26e94d7c0ded2b4a7e8",
+      "title": "BIGBANG演唱會2026香港|門票優先/公售攻略+購票連結+座位表",
+      "description": "《BIGBANG 2026 WORLD TOUR》演唱會將於2026年11月13日至15日在啟德主場館舉行,即刻看內文了解如何搶飛、場地座位表及交通!置頂置頂置頂置頂置頂",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60359124/bigbang%E6%BC%94%E5%94%B1%E6%9C%832026%E9%A6%99%E6%B8%AF-%E9%96%80%E7%A5%A8%E5%84%AA%E5%85%88-%E5%85%AC%E5%94%AE%E6%94%BB%E7%95%A5-%E8%B3%BC%E7%A5%A8%E9%80%A3%E7%B5%90-%E5%BA%A7%E4%BD%8D%E8%A1%A8",
+      "pubDate": "2026-08-25 10:23:45",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260611/1141705772124606464480951.jpeg/nMm53PD5LVflMka6MvZ0c17BmwwxxbGagslXbILJV2w",
+      "keywords": [
+        "明星",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "藝人",
+        "韓星",
+        "新聞",
+        "即時娛樂",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ac8ff41e92c5a4d337818c67b969ad23",
+      "title": "趙建銘反擊陳幸妤!5大爭議一次看",
+      "description": "中評社台北8月25日電/陳水扁女兒陳幸妤近日接連談及與前夫趙建銘的婚姻糾紛,從3名子女約2300萬元教育基金、診所貸款,到許芊芊相關爭議,引發外界關注。趙建銘今天出面回應,逐一說明相關指控,雙方說法仍有明顯落差。對此,《中時新聞網》整理出5大爭議焦點。 一、2300萬元教育基金去了哪? 陳幸妤先前質疑,3名子女合計約2300萬元的教育基金遭趙建銘挪作他用,至今未清楚交代資金",
+      "link": "http://www.crntt.com/doc/7_0_160260932_1_0825181846.html",
+      "pubDate": "2026-08-25 10:18:46",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/160260938.jpg",
+      "keywords": [
+        "陳水扁",
+        "陳幸妤",
+        "趙建銘"
+      ],
+      "category": [
         "politics",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "bc57308f321ea9a099fc4780b9c94762",
-      "title": "【中東戰火】美對伊推「經濟末日」制裁,貝森特:繼續與伊經貿往來國家及企業均面臨制裁",
-      "description": "《經濟通通訊社25日專訊》美國財政部長貝森特周一(24日)宣布大幅擴大對伊朗的經 濟制裁,警告任何繼續與德黑蘭維持經貿往來的國家及企業,均可能面臨美國二級制裁。貝森特 形容行動是前所未有的「經濟末日」(EconomicD-Day),目標是切斷伊朗與全 球經濟的主要聯繫。 美國財政部表示,最新措施針對近60名個人、實體及船隻,重點打擊數碼資產、科技、黃 金、航空及航運等伊朗重要經濟命脈",
-      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360825231",
-      "pubDate": "2026-08-24 23:56:00",
-      "source_name": "Etnet",
-      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
-      "keywords": [
-        "latest"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "83e2e6bc58a7f559076eb1674a1c72a5",
-      "title": "阿里巴巴配股集資800億 消息..最終總訂單需求超額認購近3倍",
-      "description": "阿里巴巴(9988)周日突宣布配股集資約800億港元(102億美元),破港股市場記錄。據消息人士透露,股權配售啟動後,訂單規模很快便超過百億美元。",
-      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60382958/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87800%E5%84%84-%E6%B6%88%E6%81%AF-%E6%9C%80%E7%B5%82%E7%B8%BD%E8%A8%82%E5%96%AE%E9%9C%80%E6%B1%82%E8%B6%85%E9%A1%8D%E8%AA%8D%E8%B3%BC%E8%BF%913%E5%80%8D",
-      "pubDate": "2026-08-24 02:58:25",
+      "id": "66abeb1b075c1fddcb7568f0d7f8f31e",
+      "title": "《香港01》十周年|體壇港將齊賀跨越十載「不止於此!」",
+      "description": "《香港01》跨越十載,迎來十周年!十年來,我們如運動員般堅守信念,以「倡議型媒體」之姿扎根香港,見證並記錄了無數撼動人心的歷史時刻。我們不",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60378809/%E9%A6%99%E6%B8%AF01-%E5%8D%81%E5%91%A8%E5%B9%B4-%E9%AB%94%E5%A3%87%E6%B8%AF%E5%B0%87%E9%BD%8A%E8%B3%80%E8%B7%A8%E8%B6%8A%E5%8D%81%E8%BC%89-%E4%B8%8D%E6%AD%A2%E6%96%BC%E6%AD%A4",
+      "pubDate": "2026-08-25 10:18:13",
       "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20210813/502871046492262400351287.jpeg/eGTlnk7jGQOl9s5ROm7fv8c2sPIOjfpAG4NhdhuDYXY",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168985590620753920062487.jpeg/GOQastTryH14jyPlgX48Wp1SRtzyPjUM0PXFDtD1xQ4",
       "keywords": [
-        "恆生指數",
-        "財經台",
-        "財經新聞",
-        "財經網",
-        "地產消息",
-        "a股",
-        "股票",
-        "港股",
-        "財經透視",
-        "經濟",
+        "港聞",
+        "國際新聞",
+        "頭條新聞",
+        "即時新聞",
         "新聞",
         "香港01",
         "hk01",
         "香港新聞"
       ],
       "category": [
-        "business",
+        "politics",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "eda6b4269261c45cceac9e955a575ab9",
+      "title": "譚玉瑛擔心被外界誤會「性冷感」:我未試過色迷迷咁望住一個男人",
+      "description": "新城知訊台全新節目《放飯ICU》由譚玉瑛、林柏希及何基佑主持,首集邀請資深藝人麥長青(麥包)作嘉賓。訪問中,麥包坦言入行多年最希望拍攝一部擔",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60383466/%E8%AD%9A%E7%8E%89%E7%91%9B%E6%93%94%E5%BF%83%E8%A2%AB%E5%A4%96%E7%95%8C%E8%AA%A4%E6%9C%83-%E6%80%A7%E5%86%B7%E6%84%9F-%E6%88%91%E6%9C%AA%E8%A9%A6%E9%81%8E%E8%89%B2%E8%BF%B7%E8%BF%B7%E5%92%81%E6%9C%9B%E4%BD%8F%E4%B8%80%E5%80%8B%E7%94%B7%E4%BA%BA",
+      "pubDate": "2026-08-25 10:15:19",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168956494654214144934782.jpeg/VZWKrvUpjctvSqjRbrRg76V5980xQuLv6MZwK-jGcCs",
+      "keywords": [
+        "明星",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "藝人",
+        "韓星",
+        "新聞",
+        "即時娛樂",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7b967abc8dd66f52fb23d134490d591c",
+      "title": "馬場浮世繪|「浪漫戰神」受傷 征韓告吹折返",
+      "description": "「浪漫戰神」一心出戰九月六日在首爾舉行的三級賽韓國盃,並於今午偕「自強不息」、「美麗第一」及「華麗再勝」齊齊出發,從沙田馬場往機場飛赴韓國,惟在運送途中,「浪漫戰神」被發現足部受傷,征韓行程與告終,並已立即折返沙田馬場,將要接受治理。",
+      "link": "https://www.stheadline.com/realtime-racing/3608117/%E9%A6%AC%E5%A0%B4%E6%B5%AE%E4%B8%96%E7%B9%AA%E6%B5%AA%E6%BC%AB%E6%88%B0%E7%A5%9E%E5%8F%97%E5%82%B7-%E5%BE%81%E9%9F%93%E5%91%8A%E5%90%B9%E6%8A%98%E8%BF%94",
+      "pubDate": "2026-08-25 10:15:14",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/36ce5c20557886b97a35ae8f0a4f47ad/2026-08/ggggg.jpg",
+      "keywords": [
+        "沈集成",
+        "浪漫戰神"
+      ],
+      "category": [
+        "sports",
+        "top",
+        "crime"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "21ac0c897e6ffe0b25673860b6174cee",
+      "title": "張柏芝兌現生日會承諾 帶粉絲遊迪士尼圓夢",
+      "description": "張柏芝早前5月23日舉行生日活動,當時提出舉行香港迪士尼親子遊的構想,以感謝粉絲多年來的追隨,希望粉絲能收穫一段愜意的家庭樂園時光。縱使日常行程繁忙,柏芝依舊把這份與粉絲之間的約定牢牢記在心裏,默默推進落實,只為兌現那句帶着溫度的承諾。 張柏芝把粉絲當家人 打動人心的從來不是花了多少錢,而是柏芝全程把粉絲當自己家人的那份細心。現場粉絲在社交媒體瘋狂刷屏:「她是把粉絲當朋友處的明星」、「姐姐真的太好",
+      "link": "https://www.stheadline.com/film-drama/3608055/%E5%BC%B5%E6%9F%8F%E8%8A%9D%E5%85%8C%E7%8F%BE%E7%94%9F%E6%97%A5%E6%9C%83%E6%89%BF%E8%AB%BE-%E5%B8%B6%E7%B2%89%E7%B5%B2%E9%81%8A%E8%BF%AA%E5%A3%AB%E5%B0%BC%E5%9C%93%E5%A4%A2",
+      "pubDate": "2026-08-25 10:15:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/aa8e8d0c91df18dc800ef608a58507c3/2026-08/pakchiii.jpg",
+      "keywords": [
+        "張柏芝"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "83c94b271edc3b00ecd11a3483e5d5c9",
+      "title": "信达生物2026年度中期业绩亮点",
+      "description": "从本土领先到国际一流:全球化转型战略路径清晰 美国旧金山和中国苏州 2026年8月25日 /美通社/ -- 信达生物制药集团(香港联交所股票代码:01801),一家致力于研发、生产和销售肿瘤、代谢及心血管、自身免疫、眼科等重大疾病领域创新药物的生物制药公司 公布 2026 年度中期业绩及公司 2030 年战略愿景 。 信达生物制药集团创始人、董事会主席、首席执行官俞德超博士 表示:\"回顾前十五年,公司完成了两次关键转型:2016-2020年从一家研发驱动的生物科技公司,转型为具备研发、生产和商业化全价值链能力的生物制药企业;2021年-2025年从长期投入阶段,转型为实现收入突破百亿并全面盈利的公司。2026年是信达生物最好的战略窗口期,借此我们提出了2030年的战略发展新目标,我们有决心也有信心推动第三次关键转型——从本土领先的生物制药企业,迈向初步具备跨国运营能力的全球一流生物制药企业。 2026年上半年,公司收入利润双线增长,在中国生物制药行业的领先地位进一步凸显,确定性和成长性兼备的稀缺价值突出。同时,过去10个月与全球跨国药企武田、礼来、辉瑞达成多项战略合作,与Ollin,Spero等biotech合作推动差异化管线全球开发,合作管线超20款,其中包括5款共同开发及共同商业化(Co-Co)项目,合作总金额达340亿美元,占中国药企同期对外授权总额的30% [1] 以上。公司正处在战略发展最好的窗口期,我们将继续以清晰的战略和稳健的执行,实现收入与利润并进的高质量发展,巩固并放大在肿瘤和综合管线\"双轮驱动\"优势,加快推进全球化布局,朝着2030年战略目标迈进,为股东和社会持续创造长期价值。\" 2026 年:发展战略窗口期,规模与盈利快速增长,持续高质量发展 2026年上半年,公司总营收 86 亿元 ,同比增长 45% ,其中产品收入 82 亿元 ,同比增长 57% 。在百亿收入的新起点上,公司保持高速增长,肿瘤与综合管线双轮驱动战略卓然有效。 得益于收入快速增长、生产效率持续提升及精细化运营管理,公司利润水平持续改善。2026年上半年国际财务报告准则(IFRS)口径净利润约 13 亿元 ,同比增长 50% ;非国际财务报告准则(Non-IFRS)利润达 17 亿元 ,同比增长 41% 。公司已经进入\"规模扩张和盈利质量\"并进的崭新阶段,引领生物制药公司高质量发展的新范式。 截至2026年7月31日,公司现金储备 302 亿元 ,约折合 45 亿美元 。此外,公司持续实现了正向现金流,为公司长期发展提供了坚实有力的资金保障。 展望 2030 :从本土领先迈向国际一流 在持续高质量增长和系统性布局基础上,公司明确 2030 年发展目标 收入规模:基于现有业务和管线的内生增长,2030年总收入目标350–400亿元人民币。 持续利润:收入规模扩张,生产运营提效,2030年利润率逐步提升至一流创新药企水平。 全球创新:2030年推进至少5个分子进入全球多中心III期研究,并实现产品在欧美关键市场上市,海外产品收入开始产生贡献。 全球运营:建立跨国运营的配套能力和体系架构,实现向独立自主的国际一流生物药企的跨越式发展。 从\"单品增长\"走向\"组合驱动\",双轮驱动释放增长动能 中国领先的肿瘤品牌,巩固重点领域优势,战略拓展核心领域 在肿瘤领域,公司在肺癌、消化道肿瘤、血液肿瘤等核心适应症上已建立起较强的产品组合与品牌影响力,并围绕新一代 \" IO+ADC\" 创新管线,推进IBI363(PD-1/IL-2 α-biased )、IBI343(CLDN18.2 ADC)、IBI3003(GPRC5D/BCMA/CD3) 等新一代产品组合至临床后期阶段,在多个关键赛道上布局中长期增长点,构建竞争优势。 同时,通过与礼来在乳腺癌产品唯择 ® (阿贝西利片)上的合作,公司切入又一高发核心瘤种,并与后续管线如 IBI354(HER2 ADC)、IBI3014(PD-L1/TROP2 ADC) 等形成互补,为未来在乳腺癌等领域的系统性布局奠定基础。 崛起的慢病创新品牌,贡献增长新引擎 公司在代谢、心血管、眼科、自身免疫四大慢病领域顺利布局,综合管线已成为公司另一核心支柱。信必敏 ® (替妥尤单抗N01注射液,中国70年来首个甲状腺眼病突破性创新药)、信尔美 ® (玛仕度肽注射液,全球首个且唯一获批的GCG/GLP-1双靶减重降糖药物)、信必乐 ® (托莱西单抗注射液,首个纳入国家医保的中国原研PCSK9抑制剂)自上市以来均展现出了强劲的增长势头,自免领域的基石产品信美悦 ® (匹康奇拜单抗注射液)也于2025年底成功获批。 同时,以 IBI3032(口服 GLP‐1 日制剂)、IBI3042(口服 GLP‐1 周制剂)、IBI3040(Amylin)、IBI3046(INHBE siRNA)、IBI3030(PCSK9-GGG 月制剂)为代表的下一代代谢与肥胖管线,为公司在全球肥胖及代谢管理领域提供了长远的增长储备。在心血管、自身免疫和眼科等领域,公司也通过\"现有高潜力产品 + 下一代创新分子\"的组合,逐步形成各自领域的产品集群和长期竞争力。 三大后期全球化资产撬动超 600 亿美元潜在空间,20 + 款全球合作管线构建出海梯队 在国际化与 BD 层面,公司围绕核心管线,通过多元模式有序推进全球开发与商业化布局。目前,已有三项核心资产进入或即将进入全球多中心III期临床,其合计潜在市场空间预计超过600亿美元,有望成为未来几年公司价值的核心增长点: IBI363(PD-1/IL-2 α-biased ,武田研发代号: TAK-928 ):定位下一代 IO 基石疗法,首批适应症潜在全球市场空间超 400 亿美元,与武田紧密合作推进全球开发 全球多中心临床III期研究MarsLight-11进行中,并将基于监管沟通,从IO耐药鳞状非小细胞肺癌(NSCLC)拓展至IO耐药非鳞状NSCLC; 黑色素瘤中国关键临床II期预计2026年下半年读出数据,有望支持IBI363首个新药上市申请; 在一线非小细胞肺癌中读出初步积极PoC结果,在一线非小细胞肺癌和一线结直肠癌PoC研究持续随访中,并在其他瘤种中推进PoC研究,为IBI363成为潜在新一代IO基石品种奠定基础。 坦康阿妥塔单抗( CLDN18.2 ADC, 信达 / 武田研发代号: IBI343/TAK-921 ):全球首个 NDA 阶段的新一代 Fc 沉默型 CLDN18.2 ADC ,潜在全球市场空间超 80 亿美元 中日多中心III期研究完成首次期中分析并达到主要终点,已率先向中国NMPA递交上市申请用于在CLDN18.2阳性晚期胃癌后线治疗; 一线胰腺癌的临床III期研究计划在中国启动 在一线胰腺癌、一线胃癌的国际多中心PoC临床1期研究持续推进 IBI324(VEGF/ANG-2 , Ollin 研发代号 : OLN324) :潜在疾病同类最佳眼底病疗法,潜在全球市场空间 150 亿美元 公司合作伙伴Ollin Biosciences在一项美国DME和nAMD患者中开展的头对头法瑞西单抗的Ib期JADE临床研究读出积极结果。 Ollin Biosciences计划于2026年下半年启动针对DME和nAMD的全球多中心III期临床研究,并将与本公司合作在中国和韩国招募患者。 多元化全球合作,加速价值兑现 在过去10个月,公司陆续与全球跨国药企武田、礼来、辉瑞达成战略性多产品合作,与Ollin,Spero等biotech在特定疾病领域推动具有差异化的管线快速验证。合作总金额达340亿美元,合作管线超20余款,其中包括5个共同开发、共同商业化(Co-Co)合作项目。 公司将借助多元合作模式,逐步打造海外研发和商业化能力,并成长为真正具备跨国运营能力的国际一流生物制药企业。 坚守高质量生产标准 本公司拥有按照国际标准建设的先进生产设施,苏州基地于近期通过了欧盟GMP审查并获得GMP证书。 已投入使用产能共14万升,占全国生物药总产能20%。其中苏州基地拥有6万升抗体产能和ADC产业化生产线,杭州基地拥有8万升已建成抗体产能,保障全球供应和CDMO业务。 可持续发展 切实践行 ESG 承诺 超过9000名员工遍布全球,全球研发中心分别坐落于旧金山、上海、苏州 每天超过3000名新的肿瘤患者开始使用信达生物研发的药物,截止目前超过1000万患者受益于信达生物的创新药产品 MSCI ESG评级维持AAA,在中国医药行业处于领先水平 首个纳入恒生指数的生物创新药\"蓝筹\"股 响应\"体重管理年\"号召,创新发布《减重无难事》公益MV,倡导科学健康减重;发布《体重向下、人生向上》公益片,促进肥胖与脂肪肝早筛早治理念的落地 支持推出《甲状腺眼病科普教育手册》、《医生教你科学减重》疾病科普书籍,推动社会健康意识提升 发起、参与多项患者援助项目,累计已惠及20余万普通患者,药物捐赠总价值40亿元人民币 荣获\"医疗公益推动者\"公益荣誉奖项和\"中国公益企业\"称号,来自社会各界的认可,激励着我们持续回馈社会 累计为应届生提供2700多份就业岗位 截至目前信达生物制药集团累计纳各类税费等90多亿人民币 [1]. 数据来源: 医药魔方Next Pharma数据库。 关于信达生物 \"始于信,达于行\",开发出老百姓用得起的高质量生物药,是信达生物的使命和目标。信达生物成立于2011年,致力于研发、生产和销售肿瘤、自身免疫、代谢、眼科等重大疾病领域的创新药物,让我们的工作惠及更多的生命。公司已有20个产品获得批准上市,它们分别是信迪利单抗注射液(达伯舒 ® ),贝伐珠单抗注射液(达攸同 ® ),阿达木单抗注射液(苏立信 ® ),利妥昔单抗注射液(达伯华 ® ),佩米替尼片(达伯坦 ® ),奥雷巴替尼片(耐立克 ® ), 雷莫西尤单抗注射液(希冉择 ® ),塞普替尼胶囊(睿妥 ® ),伊基奥仑赛注射液(福可苏 ® ),托莱西单抗注射液(信必乐 ® ),氟泽雷塞片(达伯特 ® ),匹妥布替尼片(捷帕力 ® ),己二酸他雷替尼胶囊(达伯乐 ® ),利厄替尼片(奥壹新 ® ),替妥尤单抗N01注射液(信必敏 ® ),玛仕度肽注射液(信尔美 ® ),匹康奇拜单抗注射液(信美悦 ® ),伊匹木单抗N01注射液(达伯欣 ® ),阿贝西利片(唯择 ® )和盐酸奎扎替尼片(维复泰 ® )。目前,还有1个品种在NMPA审评中,5个新药分子进入III期或关键性临床研究,14个新药品种已进入临床研究。 公司已与礼来、罗氏、武田、辉瑞、赛诺菲、Incyte和MD Anderson 癌症中心等国际合作方达成30多项战略合作。信达生物在不断自研创新药物、谋求自身发展的同时,秉承经济建设以人民为中心的发展思想。多年来,始终心怀科学善念,坚守\"以患者为中心\",心系患者并关注患者家庭,积极履行社会责任。公司陆续发起、参与了多项药品公益援助项目,让越来越多的患者能够得益于生命科学的进步,买得到、用得起高质量的生物药。截至目前,信达生物患者援助项目已惠及20余万普通患者,药物捐赠总价值40亿元人民币。信达生物希望和大家一起努力,提高中国生物制药产业的发展水平,以满足百姓用药可及性和人民对生命健康美好愿望的追求。 详情请访问公司网站: www.innoventbio.com 或公司领英账号:Innovent Biologics。 声明: 1.信达不推荐任何未获批的药品/适应症使用。 2.雷莫西尤单抗注射液(希冉择 ® ),塞普替尼胶囊(睿妥 ® ),匹妥布替尼片(捷帕力 ® )和阿贝西利片(唯择 ® )由礼来公司研发。 信达生物前瞻性声明 本新闻稿所发布的信息中可能会包含某些前瞻性表述。这些表述本质上具有相当风险和不确定性。在使用\"预期\"、\"相信\"、\"预测\"、\"期望\"、\"打算\"及其他类似词语进行表述时,凡与本公司有关的,目的均是要指明其属前瞻性表述。本公司并无义务不断地更新这些预测性陈述。 这些前瞻性表述乃基于本公司管理层在做出表述时对未来事务的现有看法、假设、期望、估计、预测和理解。这些表述并非对未来发展的保证,会受到风险、不确性及其他因素的影响,有些乃超出本公司的控制范围,难以预计。因此,受我们的业务、竞争环境、政治、经济、法律和社会情况的未来变化及发展的影响,实际结果可能会与前瞻性表述所含资料有较大差别。",
+      "link": "https://www.prnasia.com/story/545133-1.shtml",
+      "pubDate": "2026-08-25 10:15:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "bio",
+        "ern",
+        "tri",
+        "mtc",
+        "hea",
+        "pha"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c0bfe4db9394feedb85d8bae600b1089",
+      "title": "甜甜小記│程俊華暫訂「遨遊」大計",
+      "description": "「遨遊」系馬主程俊華和父親程志輝除了鼎力持香港賽馬運動之餘,程俊華也是應屆仁愛堂主席,盡心盡力貢獻慈善事務。今期他百忙中抽空分享屬姚廄鎮倉寶的三冠王「遨遊氣泡」的近況,以及馬匹的退役安排。 「遨遊氣泡」上季蟬聯一級賽香港一哩錦標,可惜五月初時驗出左跗關節腫脹,因此避戰三冠大賽尾關一級賽遮打盃並提早歇暑。馬匹於七月二十二日已由從化回港,近期操練恢復正常,看來健康已經無大礙。 程俊華說:「其實『遨遊氣",
+      "link": "https://www.stheadline.com/racing-tips/3608112/%E7%94%9C%E7%94%9C%E5%B0%8F%E8%A8%98%E7%A8%8B%E4%BF%8A%E8%8F%AF%E6%9A%AB%E8%A8%82%E9%81%A8%E9%81%8A%E5%A4%A7%E8%A8%88",
+      "pubDate": "2026-08-25 10:08:28",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/3a79fa7e8930d911d43ba40214f57f0e/2026-08/48dc381b-41b0-4524-babd-bd5b979252ec.jpg",
+      "keywords": [
+        "程俊華",
+        "仁愛堂",
+        "澳洲",
+        "陳嘉甜",
+        "香港一哩錦標",
+        "程志輝",
+        "退役",
+        "沙田錦標",
+        "北方牧場",
+        "遨遊氣泡"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e78ed586c935740bf7effc287de50e3c",
+      "title": "英國救護員質疑裝病逼癱瘓女爬落樓 104分鐘後送院驚揭腦出血主動脈破裂",
+      "description": "醫生發現該名女患者腦出血中風,之後還檢查出她有腹主動脈瘤(abdominal aortic aneurysm),其主動脈破裂。她最後接受了生存機會50%的緊急心臟手術。該名女救護員事後已被辭退,並須接受專業操守聆訊。",
+      "link": "https://www.am730.com.hk/%E5%9C%8B%E9%9A%9B/1049425/%E8%8B%B1%E5%9C%8B%E6%95%91%E8%AD%B7%E5%93%A1%E8%B3%AA%E7%96%91%E8%A3%9D%E7%97%85%E9%80%BC%E7%99%B1%E7%98%93%E5%A5%B3%E7%88%AC%E8%90%BD%E6%A8%93-104%E5%88%86%E9%90%98%E5%BE%8C%E9%80%81%E9%99%A2%E9%A9%9A%E6%8F%AD%E8%85%A6%E5%87%BA%E8%A1%80%E4%B8%BB%E5%8B%95%E8%84%88%E7%A0%B4%E8%A3%82",
+      "pubDate": "2026-08-25 10:05:13",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049425/article/1049425/df/01M0W5DY1JJYZEC44732YA458K.jpg?updatedAt=1787652313",
+      "keywords": null,
+      "category": [
+        "crime",
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d93dfdc12cc117587a4e0daf4eccaec8",
+      "title": "中醫醫院|12.11推24小時住院 日收980元 卞兆祥:分科專職治病",
+      "description": "香港中醫醫院今日(25日)公布服務擴展計劃,重點宣布將於今年12月11日開展全港首個中醫24小時住院服務,同時增加門診及日間住院服務量、推出更多",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383508/%E4%B8%AD%E9%86%AB%E9%86%AB%E9%99%A2-12-11%E6%8E%A824%E5%B0%8F%E6%99%82%E4%BD%8F%E9%99%A2-%E6%97%A5%E6%94%B6980%E5%85%83-%E5%8D%9E%E5%85%86%E7%A5%A5-%E5%88%86%E7%A7%91%E5%B0%88%E8%81%B7%E6%B2%BB%E7%97%85",
+      "pubDate": "2026-08-25 10:03:20",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168964404130091008821750.jpeg/wzSkvS_3Wtg0NSeTj_wfMMx29JikFeoF0mwEXtJsBF4",
+      "keywords": [
+        "港聞",
+        "國際新聞",
+        "頭條新聞",
+        "即時新聞",
+        "新聞",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d498a4db902e708172860fb1cc869d08",
+      "title": "邦耀生物BRL-101关键性临床研究达到预设主要疗效终点",
+      "description": "摘要:TI12主要疗效评价达到研究预设要求;全部30例患者均已实现脱离输血依赖 上海 2026年8月25日 /美通社/ -- 邦耀生物今日宣布,公司自主研发的 基因编辑造血干细胞疗法BRL-101的关键性临床研究取得重要进展 。该研究是获国家药品监督管理局药品审评中心(CDE)同意的用于治疗输血依赖型β-地中海贫血(Transfusion-dependent β-thalassemia,TDT)的关键性(pivotal)临床试验。 根据截至2026年8月20日的数据,达到连续12个月脱离输血依赖(Transfusion independence for 12 months,TI12)的患者比例已满足研究预设的主要疗效终点要求 。 BRL-101关键性临床研究达到预设的主要疗效终点 本研究共30例TDT患者完成给药。全部30例患者均已实现脱离输血依赖;截至2026年8月20日数据截止日,全部30例患者均处于脱离输血依赖状态,无需接受红细胞输注。所有患者仍将按照研究方案继续完成后续随访,以进一步评价疗效持久性、长期安全性及其他临床指标。 关键性临床验证取得重要进展 输血依赖型β-地中海贫血是一种严重的遗传性血液疾病。由于β-珠蛋白生成异常,患者通常需要长期规律接受红细胞输注,并面临铁过载及相关心脏、肝脏、内分泌等多系统并发症和长期疾病负担。 BRL-101是一款基于基因编辑技术开发的自体造血干细胞疗法,通过对患者自身造血干细胞中的关键调控区域进行基因编辑,促进胎儿血红蛋白(HbF)重新表达,从而改善患者自身的有效造血能力,旨在通过一次性治疗帮助TDT患者实现长期脱离输血依赖。 对于TDT基因治疗而言,实现脱离输血依赖是重要的临床目标,而这一临床获益能否长期、稳定地持续,则是评价一次性治疗长期价值的关键。 与全球已上市的病毒载体类地贫基因编辑疗法相比, BRL-101的一大核心优势在于采用了非病毒载体的基因编辑技术,相较传统的病毒载体基因疗法,非病毒递送方式消除了病毒在体内整合带来的潜在致瘤风险 。非病毒载体技术的应用,使BRL-101在保证高效编辑效率的同时,与病毒载体产品相比有望实现更高水平的安全保障,为患者提供更可靠的基因治疗选择。 本次关键性研究达到预设主要疗效终点,标志着BRL-101的临床证据进一步从早期患者中的概念验证和长期随访,拓展至更大样本量的系统性关键临床验证,为BRL-101后续注册申报提供了重要临床依据。 BRL-101同时已积累长期人体随访证据。2020年接受BRL-101治疗的首批两名儿童TDT患者目前均已持续六年脱离输血依赖,其中全球首例接受BRL-101治疗的β0/β0型TDT患儿在六周年随访时血红蛋白水平约为142 g/L,生长发育及日常生活情况良好。 六年长期随访结果与此次关键性临床研究进展,共同支持BRL-101不断积累的长期、系统性临床证据 。 持续推进长期随访及注册申报 关键性研究达到预设主要疗效终点,是BRL-101临床开发过程中的重要里程碑 。对于一次性基因编辑造血干细胞疗法,长期随访对于持续评价疗效持久性和长期安全性仍具有重要意义。 邦耀生物将继续按照研究方案完成所有患者的后续随访,持续评价脱离输血依赖的持久性、血红蛋白水平、造血功能以及长期安全性等临床指标。随着相关数据进一步成熟并完成完整统计分析,公司将择机公布完整临床研究结果,并积极推进BRL-101后续注册申报相关准备工作。 邦耀生物CEO向宇博士 邦耀生物CEO向宇博士表示: \"BRL-101关键性临床研究达到预设主要疗效终点,是项目开发过程中一个非常重要的里程碑。从六年前首批患者接受治疗并获得持续的长期获益,到最近30例关键性临床研究的患者的系统性临床验证,我们看到BRL-101的临床证据正在从早期突破不断走向更加系统和完整。\" \"对于地贫患者而言,我们不仅关注治疗后能否脱离输血,更关注这种获益能否长期持续,患者能否建立稳定而充分的自主造血能力,并真正回归正常的学习、工作和生活。此次TI12主要疗效评价达到研究预设要求,为BRL-101的长期临床价值提供了进一步的重要证据。\" \"随着公司进入新的发展阶段,新的管理团队将继续坚持以患者安全和高质量临床证据为首要原则,严格推进患者长期随访、注册申报、质量体系和产业化准备,并积极探索全球合作机会。 \" 关于\"邦耀生物\" 邦耀生物是一家平台型生物科技公司,专注于基因及细胞疗法的研究、开发及临床应用。凭借在基因编辑技术方面的实力及六大模块化平台的组合,我们自主开发了完整的产品管线,已涵盖遗传性疾病、自身免疫性疾病、血液系统恶性肿瘤及实体瘤等领域的创新治疗解决方案。该等领域均存在重大医疗需求,但目前尚无有效的解决方案,因此具有广阔的市场潜力。自成立以来,邦耀生物已从建立核心技术平台及研究能力发展到推进在研产品进入商业化阶段。 前瞻性声明 本新闻稿包含涉及公司未来研发计划、临床开发、注册申报及商业化发展的前瞻性陈述。相关陈述基于公司目前掌握的信息和判断,实际结果可能因临床研究、监管审评、生产制造及其他因素而存在差异。BRL-101目前仍处于临床研究阶段,尚未获得上市批准,其安全性和有效性仍需经过监管机构审评确认。本新闻稿不构成任何药品推广或投资建议。",
+      "link": "https://www.prnasia.com/story/545130-1.shtml",
+      "pubDate": "2026-08-25 10:02:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "bio",
+        "tri",
+        "mtc",
+        "hea",
+        "pha"
+      ],
+      "category": [
+        "science",
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cf61b0d0e3720ff35bb62cfdf2dd168a",
+      "title": "美網拒批外卡予華連卡 混雙新制同捱轟",
+      "description": "【Now Sports】網壇年度盛事美國公開賽本周開鑼,即將退役的瑞士名將華連卡不獲批外卡參加男單賽事,惹人熱議。與此同時,美網賽會再改新制的混雙賽事,同樣受到批評。大滿貫賽事的外卡分配決定不時引起爭論,今屆美網再度成為熱話。44歲前一姐莎蓮娜威廉絲確定不會參加女單賽事,外界預計大會原本為她預留的外卡資格,日前已...",
+      "link": "https://hk.sports.yahoo.com/news/%E7%BE%8E%E7%B6%B2%E6%8B%92%E6%89%B9%E5%A4%96%E5%8D%A1%E4%BA%88%E8%8F%AF%E9%80%A3%E5%8D%A1-%E6%B7%B7%E9%9B%99%E6%96%B0%E5%88%B6%E5%90%8C%E6%8D%B1%E8%BD%9F-100150269.html",
+      "pubDate": "2026-08-25 10:01:50",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e97df5a84199aa4d512aab958b001499",
+      "title": "張榮恭、連勝武出席兩岸青年融合發展論壇",
+      "description": "中評社台北8月25日電/兩岸青年團體共同參與的“同心同行-兩岸青年交流季上海站”活動,25日在大陸上海舉行“兩岸青年融合發展論壇”,中國國民黨青年事務發展委員會主委連勝武率青年代表團參加,副主席張榮恭受邀出席,並發表致詞。連勝武致詞時,鼓勵兩岸青年同心同行、互學互鑑,張榮恭致詞時則期勉兩岸青年投入和平發展、共創美好時代。 今日上海活動由連勝武率青年代表團參加,國民黨主席特別顧問李德維",
+      "link": "http://www.crntt.com/doc/7_0_160260885_1_0825221818.html",
+      "pubDate": "2026-08-25 10:01:38",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/160260889.jpg",
+      "keywords": [
+        "兩岸青年融合發展論壇",
+        "張榮恭",
+        "連勝武"
+      ],
+      "category": [
+        "politics",
+        "lifestyle",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fb4f0ff6bc5656f0ab55f6140fdd7e27",
+      "title": "連勝武、張榮恭出席兩岸青年融合發展論壇",
+      "description": "中評社台北8月25日電/兩岸青年團體共同參與的“同心同行-兩岸青年交流季上海站”活動,25日在大陸上海舉行“兩岸青年融合發展論壇”,中國國民黨青年事務發展委員會主委連勝武率青年代表團參加,副主席張榮恭受邀出席,並發表致詞。連勝武致詞時,鼓勵兩岸青年同心同行、互學互鑑,張榮恭致詞時則期勉兩岸青年投入和平發展、共創美好時代。 今日上海活動由連勝武率青年代表團參加,國民黨主席特別顧問李德維",
+      "link": "http://www.crntt.com/doc/7_0_160260885_1_0825180139.html",
+      "pubDate": "2026-08-25 10:01:38",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/160260889.jpg",
+      "keywords": [
+        "張榮恭",
+        "兩岸青年融合發展論壇",
+        "連勝武"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bd595c308bfbc6f1bf4d2b9ac8786d3c",
+      "title": "《RM》16年唯一全勤成員!HAHA自爆為節目棄進軍荷李活演《魔戒》機會",
+      "description": "韓國歌手兼綜藝人HAHA近日在長壽人氣綜藝《Running Man》中自爆,自己過去曾收到荷李活鉅製《魔戒》系列作品的演出邀約,不僅被選為「亞洲代表」之一,甚至已完成角色資料照,卻因拍攝行程與《Running Man》撞期,最終忍痛放棄進軍荷李活的機會。消息曝光後,不僅現場成員震驚,也在韓網掀起熱烈討論,不少網友直呼「太可惜了」。 8月23日播出的《Running Man》中,節目特別為從第一集就一路合作至今的攝影導演姜燦熙,安排「加油吧,姜部長」競賽。開場時,製作團隊突然透露HAHA曾接到荷李活大製作電影的演出邀約,讓現場成員全都露出難以置信的表情。 面對大家的驚訝,HAHA一度猶豫:「這個可以公開嗎?」最後才鬆口,當年向他發出邀約的作品竟然就是全球知名的《魔戒》。一聽到電影名稱,劉在錫立刻笑問:「所以你是哈比人嗎?」HAHA沒有否認,反而透露自己當時確實是12名哈比人演員之一,更以「亞洲代表」身分獲得邀約。劉在錫也趁機虧他:「HAHA的腳很大,很適合演哈比人,根本不需要特別化妝。」讓現場笑成一團。 更令人意外的是,HAHA並非只是收到試鏡邀請,甚至已經完成角色資料照。他透露:「我把資料照全部拍好寄過去了,他們還要求我要空出大約一個月的時間。」沒想到當時《Running Man》的拍攝行程早已排定,HAHA經過考量後最終選擇拒絕,「因為《Running Man》的拍攝先排好了,所以我就說不行。」他進一步透露,這部作品還是一部《魔戒》主要演員將齊聚演出的企劃,讓現場成員聽完更加震驚。 眼看他竟然放棄參與全球知名電影的機會,其他成員反而比本人更加惋惜。梁世燦甚至吐槽:「哥就算在這裡也沒什麼差啊,沒有哥《Running Man》也照樣運作得很好。」其他成員也紛紛追問「為什麼不去?」替他感到可惜。不過劉在錫似乎仍不太相信,故意虧他:「該不會是《魔戒》的外傳,叫《石戒之王》之類的吧?」池錫辰也跟著補刀:「還是《半地下之王》?該不會是在半地下室生活的故事吧?」兩人一唱一和,讓現場笑翻。 值得一提的是,HAHA不只為了《Running Man》放棄荷李活邀約,這次節目中也再次展現他對節目的深厚情誼。成員們為了送禮物給姜燦熙導演,準備了山蔘、禮券等獎品進行飛鏢對決,沒想到挑戰失敗後,HAHA當場自掏腰包50萬韓元,直接買下山蔘送給導演。 而HAHA也是《Running Man》自2010年7月11日開播至今,16年來唯一從未缺席錄影的「全勤」成員。他在《2025 SBS演藝大獎》拿下特別獎時,也曾謙虛表示,這座獎並不是因為自己特別厲害,而是「一直撐著、一直做,才走到今天」。陪伴《Running Man》走過16年的同時,HAHA也從單身藝人成為3個孩子的爸爸。他曾特別感謝妻子星(Byul)長期在背後默默付出,並笑說終於能把獎盃帶回家,安慰此前因爸爸遲遲沒有得獎而感到失落的兒子Dream,逗得現場笑聲不斷。 根據網友推斷,HAHA當時到案受邀的作品可能是預計2027年上映的《魔戒:獵捕咕嚕》。消息傳回韓網後,網友意見呈現兩極。有人直呼可惜:「只有一個月而已,居然沒接,真的替他覺得可惜」、「不是在開玩笑吧?」、「不能跟製作組協調一下嗎?對節目宣傳也有幫助,根本雙贏,太可惜了」、「如果是《Running Man》,製作組應該會等他吧」、「完全有機會拓展演藝事業,真的很可惜」。不過也有粉絲認為HAHA的選擇並非沒有道理:「我覺得HAHA在《Running Man》的本業更有價值」、「雖然可惜,但如果不是重要角色,而且HAHA又是《Running Man》唯一全勤成員」、「我是《Running Man》的忠實粉絲,但我可以理解他的選擇」、「感覺拒絕得很好。總覺得會變得像朴敘俊演漫威那樣...」掀起網友熱烈討論。 觀看相關片段按以下連結:https://youtu.be/ttcC1VwFn8s?si=pPz5xxgUTMiTNDrm",
+      "link": "https://www.bastillepost.com/hongkong/article/16637583-%E3%80%8Arm%E3%80%8B16%E5%B9%B4%E5%94%AF%E4%B8%80%E5%85%A8%E5%8B%A4%E6%88%90%E5%93%A1%EF%BC%81haha%E8%87%AA%E7%88%86%E7%82%BA%E7%AF%80%E7%9B%AE%E6%A3%84%E9%80%B2%E8%BB%8D%E8%8D%B7%E6%9D%8E%E6%B4%BB",
+      "pubDate": "2026-08-25 10:00:46",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260825_EN_RunningManHaha_source-web_FB.jpg",
+      "keywords": [
+        "haha",
+        "runningman",
+        "心韓"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fc55156c1c6c4ec7977e44d1bb7f6b7f",
+      "title": "Apple Watch Series 12傳9月推出!新增血壓監測提醒 陶瓷版回歸",
+      "description": "Apple Watch Series 12預計會在9月蘋果秋季iPhone發布會上正式亮相,該機依舊屬於小幅迭代更新,外觀基本不變,主要升級集中在機身內部硬件。晶片",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60383544/apple-watch-series-12%E5%82%B39%E6%9C%88%E6%8E%A8%E5%87%BA-%E6%96%B0%E5%A2%9E%E8%A1%80%E5%A3%93%E7%9B%A3%E6%B8%AC%E6%8F%90%E9%86%92-%E9%99%B6%E7%93%B7%E7%89%88%E5%9B%9E%E6%AD%B8",
+      "pubDate": "2026-08-25 10:00:31",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168977218714472448287196.jpeg/2tr46bJ7ypQmZuk-QPVFcVeMvNL5gAGu3uHMfN7hzHw",
+      "keywords": [
+        "app",
+        "航拍",
+        "ios",
+        "動漫",
+        "tesla",
+        "android",
+        "apple",
+        "潮物",
+        "facebook",
+        "科技",
+        "香港01",
+        "手遊"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "04f6ea7ef3db888805e7fd3c55e0e08a",
+      "title": "魯振順黃昏戀大反轉未婚妻驚變「阿媽」 自爆同居分房瞓零性生活",
+      "description": "現年68歲的資深綠葉魯振順入行逾50年,憑《笑傲江湖》中「東方不敗」一角深入民心,他與女同學Julie於2019年重逢譜出黃昏戀,原定高調籌備2022年結",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60383344/%E9%AD%AF%E6%8C%AF%E9%A0%86%E9%BB%83%E6%98%8F%E6%88%80%E5%A4%A7%E5%8F%8D%E8%BD%89%E6%9C%AA%E5%A9%9A%E5%A6%BB%E9%A9%9A%E8%AE%8A-%E9%98%BF%E5%AA%BD-%E8%87%AA%E7%88%86%E5%90%8C%E5%B1%85%E5%88%86%E6%88%BF%E7%9E%93%E9%9B%B6%E6%80%A7%E7%94%9F%E6%B4%BB",
+      "pubDate": "2026-08-25 10:00:24",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168948905807712256286043.jpeg/uPWCmtV8kgYQ_rFcFzeQUhTD0DbDqBLLzcy8o83MvKM",
+      "keywords": [
+        "明星",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "藝人",
+        "韓星",
+        "新聞",
+        "即時娛樂",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a1aff78726c155177c0f1ddf4d91dd0e",
+      "title": "GTA 6 最新片段再外洩 全裸小鎮無打底無遮掩 偷望 NPC 即引發大槍戰",
+      "description": "《Grand Theft Auto VI》(GTA 6)近日再遭外洩,網上流出據稱是第 11 段遊戲片段。焦點 [...]",
+      "link": "https://unwire.hk/2026/08/25/gta6-leak-nudist-town-clip11/game-channel/",
+      "pubDate": "2026-08-25 10:00:10",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/fb_photo46.png",
+      "keywords": [
+        "城中熱話",
+        "遊戲外洩",
+        "gta 6",
+        "take-two",
+        "ps5",
+        "rockstar games",
+        "遊戲情報"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
     },
     {
       "id": "202da340d1af29e0dbaa7d2365da2588",
@@ -124,6 +1043,25 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "6675bad9a0e00db3dd76a11c760bd0f1",
+      "title": "美國制裁伊朗波及中港 北京:將採取措施維權",
+      "description": "美國財政部外國資產管制辦公室(OFAC)於24日宣布新一輪針對伊朗的制裁措施,將多名中國公民、中港多家企業及多艘油輪列入「指定制裁名單」。財政部長貝森特形容行動為「經濟放逐」,旨在切斷伊朗政權的所有收入來源,並鎖定伊朗在數位資產、科技、黃金、航空及航運等5大關鍵經濟領域。 美國財長貝森特:「我們今天啟動『經濟放逐行動』,以切斷伊朗政權所有選項,美國財政部已掌握伊朗用以走私石油及規避制裁的所有節點、",
+      "link": "https://www.stheadline.com/realtime-world/3607999/%E7%BE%8E%E5%9C%8B%E5%88%B6%E8%A3%81%E4%BC%8A%E6%9C%97%E6%B3%A2%E5%8F%8A%E4%B8%AD%E6%B8%AF-%E5%8C%97%E4%BA%AC%E5%B0%87%E6%8E%A1%E5%8F%96%E6%8E%AA%E6%96%BD%E7%B6%AD%E6%AC%8A",
+      "pubDate": "2026-08-25 09:58:49",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/2c2f841ecaa0a8354ad0526e383cd0f3/2026-08/a1_39.jpg",
+      "keywords": [
+        "貝森特",
+        "伊朗"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "4cded2d218162c44526c53f7e93ed0a4",
@@ -3119,30 +4057,6 @@
       ],
       "category": [
         "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "d32aba161e98a98acd95aa026d36a777",
-      "title": "電費燃料調整費|9月港燈每度電收60.7仙升5.9% 中電升0.2%",
-      "description": "受國際地緣政治局勢持續緊張及能源市場波動影響,本港兩大電力公司公布最新燃料調整費數據。港燈9月份燃料調整費將升至每度電60.7仙,按月上升約5.",
-      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383401/%E9%9B%BB%E8%B2%BB%E7%87%83%E6%96%99%E8%AA%BF%E6%95%B4%E8%B2%BB-9%E6%9C%88%E6%B8%AF%E7%87%88%E6%AF%8F%E5%BA%A6%E9%9B%BB%E6%94%B660-7%E4%BB%99%E5%8D%875-9-%E4%B8%AD%E9%9B%BB%E5%8D%870-2",
-      "pubDate": "2026-08-25 06:53:20",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260225/1103272771040841728318674.jpeg/GnYVBDQHNKiiNHFrcaYHA4mfDSk5fYDQeNgLel3YC3o",
-      "keywords": [
-        "國際新聞",
-        "即時新聞",
-        "新聞",
-        "香港新聞",
-        "香港01",
-        "港聞",
-        "頭條新聞",
-        "hk01"
-      ],
-      "category": [
-        "business",
-        "top"
       ],
       "region": "hk"
     },
@@ -7804,6 +8718,25 @@
       "region": "hk"
     },
     {
+      "id": "43a35687e932bd32b279515481c433f9",
+      "title": "美據報擬加徵中國關稅 恒指高開116點 阿里獲增持重上配股價 小鵬績後跌逾8%|港股開市",
+      "description": "美國財長貝森特宣佈對伊朗展開「前所未有」的經濟行動,以切斷伊朗與全球經濟聯繫,並警告任何繼續與伊朗開展業務的國家都可能面臨美國制裁。另一方面,據彭博引述消息報道,美國總統特朗普預計於9月24日與中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%關稅,使特朗普第二任期內對華關稅水平提升至約20%。 金價逼4700美元 比特幣衝8萬美元 美股三大指數周一個別發展,道指收市",
+      "link": "https://www.stheadline.com/stock-market/3607900/%E7%BE%8E%E6%93%9A%E5%A0%B1%E6%93%AC%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B%E9%97%9C%E7%A8%85-%E6%81%92%E6%8C%87%E9%AB%98%E9%96%8B116%E9%BB%9E-%E9%98%BF%E9%87%8C%E7%8D%B2%E5%A2%9E%E6%8C%81%E9%87%8D%E4%B8%8A%E9%85%8D%E8%82%A1%E5%83%B9-%E5%B0%8F%E9%B5%AC%E7%B8%BE%E5%BE%8C%E8%B7%8C%E9%80%BE8%E6%B8%AF%E8%82%A1%E9%96%8B%E5%B8%82",
+      "pubDate": "2026-08-25 01:28:59",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/360d8187db7cec3a53fafaebe4a7f731/2026-08/dd_1_6.jpg",
+      "keywords": [
+        "港股"
+      ],
+      "category": [
+        "business",
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "95dfc439e8ad6f9e72628af39d42d961",
       "title": "普京會見印度外長蘇傑生 積極評價經貿關系",
       "description": "中評社香港8月25日電/俄羅斯總統普京24日在莫斯科克裡姆林宮會見來訪的印度外交部長蘇傑生。雙方積極評價俄印經貿關系,并表示兩國領導人期待通過上海合作組織平台舉行會晤。 據俄羅斯總統網站24日消息,普京在會見時表示,俄印幾乎在所有領域繼續開展合作,兩國貿易額今年迎來增長。普京說,希望近期按計劃在“上合組織工作框架下”與印度總理莫迪會晤。 普京說,俄第一副總理曼圖羅夫當天已同",
@@ -8545,18 +9478,18 @@
       "region": "hk"
     },
     {
-      "id": "0f5be3b7a35b8ebeb34ddf704e190dea",
-      "title": "彭博社:特朗普擬9.24晤習近平前 宣布加徵中國7.5%關稅",
-      "description": "彭博社8月24日引述消息人士報道,在美國總統特朗普預計於9月24日與到訪白宮的中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%的關稅,使特朗普第二任期內對華關稅水平提升至約20%。不過,路透社報道指,暫未能獨立證實該報道。 美方擬發布「產能過剩」調查 法律定稿面臨挑戰 彭博社的報道指,美方貿易官員計劃在中美最高領導人9月24日「習特會」登場前,正式公布針對「產能過剩",
-      "link": "https://www.stheadline.com/realtime-world/3607885/%E5%BD%AD%E5%8D%9A%E7%A4%BE%E7%89%B9%E6%9C%97%E6%99%AE%E6%93%AC924%E6%99%A4%E7%BF%92%E8%BF%91%E5%B9%B3%E5%89%8D-%E5%AE%A3%E5%B8%83%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B75%E9%97%9C%E7%A8%85",
-      "pubDate": "2026-08-24 23:56:49",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6ec67f1f4fd3676edec8340889598d05/2026-08/2026-08-25_00_43_30.png",
-      "keywords": null,
+      "id": "bc57308f321ea9a099fc4780b9c94762",
+      "title": "【中東戰火】美對伊推「經濟末日」制裁,貝森特:繼續與伊經貿往來國家及企業均面臨制裁",
+      "description": "《經濟通通訊社25日專訊》美國財政部長貝森特周一(24日)宣布大幅擴大對伊朗的經 濟制裁,警告任何繼續與德黑蘭維持經貿往來的國家及企業,均可能面臨美國二級制裁。貝森特 形容行動是前所未有的「經濟末日」(EconomicD-Day),目標是切斷伊朗與全 球經濟的主要聯繫。 美國財政部表示,最新措施針對近60名個人、實體及船隻,重點打擊數碼資產、科技、黃 金、航空及航運等伊朗重要經濟命脈",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360825231",
+      "pubDate": "2026-08-24 23:56:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
       "category": [
-        "business",
-        "politics",
-        "top"
+        "business"
       ],
       "region": "hk",
       "pinned": true
@@ -10352,22 +11285,6 @@
         "top"
       ],
       "region": "hk"
-    },
-    {
-      "id": "752692555c7b1558d309a8bb68667a1f",
-      "title": "伊朗局勢|美宣布擴大二級制裁 要求各國關閉境內伊朗銀行 德黑蘭列45油輪黑名單",
-      "description": "美國總統特朗普威脅對伊朗實施「經濟諾曼第登陸日」(Economic D-Day)的嚴厲制裁,形容這是一場「史上最具毀滅性的經濟行動」。周一(24日),美國財政部長貝森特召開新聞發布會,正式宣布啟動代號為「離岸經濟行動」(Operation Economic Outcast)的全新極限施壓措施,警告任何與伊朗結盟或保持商業往來的國家及實體,均會受到二級制裁,被排斥在美元體系之外。 擴大二級制裁覆蓋五",
-      "link": "https://www.stheadline.com/realtime-world/3607868/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E7%BE%8E%E5%AE%A3%E5%B8%83%E6%93%B4%E5%A4%A7%E4%BA%8C%E7%B4%9A%E5%88%B6%E8%A3%81-%E8%A6%81%E6%B1%82%E5%90%84%E5%9C%8B%E9%97%9C%E9%96%89%E5%A2%83%E5%85%A7%E4%BC%8A%E6%9C%97%E9%8A%80%E8%A1%8C-%E5%BE%B7%E9%BB%91%E8%98%AD%E5%88%9745%E6%B2%B9%E8%BC%AA%E9%BB%91%E5%90%8D%E5%96%AE",
-      "pubDate": "2026-08-24 19:06:06",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0e4005dacc51f63b580739f91722519a/2026-08/2026-08-24T172356Z_1251564812_RC255NANC00Z_RTRMADP_3_USA-TREASURY-BESSENT.JPG",
-      "keywords": null,
-      "category": [
-        "politics",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "31f207ef37d45468babb417197c9b40c",
@@ -21791,6 +22708,37 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "83e2e6bc58a7f559076eb1674a1c72a5",
+      "title": "阿里巴巴配股集資800億 消息..最終總訂單需求超額認購近3倍",
+      "description": "阿里巴巴(9988)周日突宣布配股集資約800億港元(102億美元),破港股市場記錄。據消息人士透露,股權配售啟動後,訂單規模很快便超過百億美元。",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60382958/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87800%E5%84%84-%E6%B6%88%E6%81%AF-%E6%9C%80%E7%B5%82%E7%B8%BD%E8%A8%82%E5%96%AE%E9%9C%80%E6%B1%82%E8%B6%85%E9%A1%8D%E8%AA%8D%E8%B3%BC%E8%BF%913%E5%80%8D",
+      "pubDate": "2026-08-24 02:58:25",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20210813/502871046492262400351287.jpeg/eGTlnk7jGQOl9s5ROm7fv8c2sPIOjfpAG4NhdhuDYXY",
+      "keywords": [
+        "恆生指數",
+        "財經台",
+        "財經新聞",
+        "財經網",
+        "地產消息",
+        "a股",
+        "股票",
+        "港股",
+        "財經透視",
+        "經濟",
+        "新聞",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "52d2ba577db071c1153c33fefded4841",
@@ -219694,6 +220642,6 @@
       "pinned": true
     }
   ],
-  "total": 11170,
-  "last_updated": "2026-08-26T06:10:31.160562"
+  "total": 11215,
+  "last_updated": "2026-08-26T07:10:13.046677"
 }
