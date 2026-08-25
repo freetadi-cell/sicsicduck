@@ -1,6 +1,58 @@
 {
   "articles": [
     {
+      "id": "da247fb6250f356c0e64e3eced191e72",
+      "title": "利嘉閣:上半年私宅落成量按年減近24% 動工量創十六年新低|樓市數據",
+      "description": "此外,私人住宅落成量方面,根據屋宇署今日最新發表的資料月報顯示,2026年六月份全港共有11個項目,合共3,272個私人住宅單位落成(以屋宇署發出佔用許可證的樓宇數量為準),較五月份的809個增加3.04倍;至於今年上半年累計共7,654伙私宅落成,較去年同期的10,064伙減少近24%,為四年同期次高。",
+      "link": "https://www.am730.com.hk/%E5%9C%B0%E7%94%A2/1049226/%E5%88%A9%E5%98%89%E9%96%A3-%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%A7%81%E5%AE%85%E8%90%BD%E6%88%90%E9%87%8F%E6%8C%89%E5%B9%B4%E6%B8%9B%E8%BF%9124-%E5%8B%95%E5%B7%A5%E9%87%8F%E5%89%B5%E5%8D%81%E5%85%AD%E5%B9%B4%E6%96%B0%E4%BD%8E-%E6%A8%93%E5%B8%82%E6%95%B8%E6%93%9A",
+      "pubDate": "2026-08-25 01:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049226/article/1049226/df/01M0T0EFMKJK9YW8DJ57P8ST8H.jpg?updatedAt=1787581648",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "ff4f39a2f09f7a4dd1c836248c1d6c9c",
+      "title": "前日央行委員:央行下月或加息 最快明年1月再加息",
+      "description": "前日本央行委員安達誠司表示,日本央行可能一如市場預期在下月加息,並且最早於1月再次加息,因在美日聯手干預日圓後,日圓匯價依然疲弱,維持利率不變可能會重新引發日圓被拋售,從而令進口成本高企引發通脹加速的風險。 截至周一(24日)下午,交易員預計日本央行在9月18日議息會議上加息的可能性約為80%。安達誠司表示,日本...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%89%8D%E6%97%A5%E5%A4%AE%E8%A1%8C%E5%A7%94%E5%93%A1-%E5%A4%AE%E8%A1%8C%E4%B8%8B%E6%9C%88%E6%88%96%E5%8A%A0%E6%81%AF-%E6%9C%80%E5%BF%AB%E6%98%8E%E5%B9%B41%E6%9C%88%E5%86%8D%E5%8A%A0%E6%81%AF-005405016.html",
+      "pubDate": "2026-08-25 00:54:05",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "日本央行",
+        "安達誠司"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "d3cdbae10e0cf6fa42097523893e805d",
+      "title": "H-1B工作簽證 | 特朗普政府擬立法 H-1B費用將大增至10.3萬美元",
+      "description": "美國總統特朗普的政府計畫將H-1B工作簽證費用正式寫入一項史無前例的法例,這筆費用定為10萬3265美元(約80.5萬港元),適用於新的H-1B簽證。該簽證面向高度專業的外國人才,特朗普去年曾試圖實施這項措施,但被法院叫停。根據官方數據,2025財政年度70%的H-1B勞工來自印度,其次是中國的12%,接著是菲律賓、加拿大和南韓。特朗普與其他對H-1B計畫持批評態度的人士認為,許多企業濫用該計畫,",
+      "link": "https://www.stheadline.com/realtime-world/3607890/H-1B%E5%B7%A5%E4%BD%9C%E7%B0%BD%E8%AD%89-%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E6%93%AC%E7%AB%8B%E6%B3%95-H-1B%E8%B2%BB%E7%94%A8%E5%B0%87%E5%A4%A7%E5%A2%9E%E8%87%B3103%E8%90%AC%E7%BE%8E%E5%85%83",
+      "pubDate": "2026-08-25 00:43:45",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/00ed89fb113012b2e33f4afcf276bbdb/2026-08/a3_46.jpg",
+      "keywords": [
+        "h-1b工作簽證"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "60edd85e3aa80373991bc5c44d2751c4",
       "title": "BAT三大互聯網巨頭AI重資產燒錢 現金流持續承壓",
       "description": null,
@@ -17,19 +69,402 @@
       "pinned": true
     },
     {
-      "id": "bafbde97c0b46450",
-      "title": "居住體驗｜對康城印象咁差？　街坊力數3大優勢超宜居　堆填區衞生交通問題有解法",
-      "description": "不少網民對將軍澳日出康城的印象平平，認為存在交通不便且又是「填埋區」等問題。不過，近日有街坊在Threads發帖質疑「點解咁多人對康城印象咁差？」，力數區內3大優勢力撐優勢盛讚宜居；至於存在的問題，街...",
-      "link": "https://topick.hket.com/article/4181344",
-      "pubDate": "2026-08-25 08:31:00",
-      "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4181344/3_300.png",
-      "keywords": [],
-      "category": [
-        "rss"
+      "id": "6f4b6148f10fa4200b674449edceb984",
+      "title": "胡定欣自設公司誓圓歌星夢 《東周刊》獨家爆冧掂老公做金主 劍指年底樂壇新人獎",
+      "description": "現年44歲的胡定欣,去年10月與外科醫生陳健華(Akin)於新西蘭低調完婚,消息一出震撼全城。「升呢」為幸福人妻後,她並未放慢事業腳步,今年2月更宣布離開效力逾20年的TVB。 胡定欣獲老公全力支持追夢 毅然跳出舒適圈,胡定欣全力衝刺音樂與大銀幕,據悉27年前參加《全球華人新秀歌唱大賽》入行的她,一直以來都有一個歌手夢,故今年決定自設公司,出歌進軍樂壇。而貴為高薪「月球族」(月賺逾一百萬元)的老公",
+      "link": "https://www.stheadline.com/realtime-entertainment/3607754/%E8%83%A1%E5%AE%9A%E6%AC%A3%E8%87%AA%E8%A8%AD%E5%85%AC%E5%8F%B8%E8%AA%93%E5%9C%93%E6%AD%8C%E6%98%9F%E5%A4%A2-%E6%9D%B1%E5%91%A8%E5%88%8A%E7%8D%A8%E5%AE%B6%E7%88%86%E5%86%A7%E6%8E%82%E8%80%81%E5%85%AC%E5%81%9A%E9%87%91%E4%B8%BB-%E5%8A%8D%E6%8C%87%E5%B9%B4%E5%BA%95%E6%A8%82%E5%A3%87%E6%96%B0%E4%BA%BA%E7%8D%8E",
+      "pubDate": "2026-08-25 01:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/108f224bfc7c9cdd54346d7d4c13e0f4/2026-08/178757372468196.jpg",
+      "keywords": [
+        "金主",
+        "胡定欣",
+        "樂壇",
+        "東周刊",
+        "歌星夢",
+        "自設公司",
+        "新人獎"
       ],
-      "region": "hk",
-      "pinned": true
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f658a6996c492a452fe882696cc2c528",
+      "title": "《現在不是出軌的問題》原來這一幕是導演為觀眾「謀福利」!金智勳稱自己的身材「入帳前、後都一樣」",
+      "description": null,
+      "link": "https://www.koreastardaily.com/tc/news/163735",
+      "pubDate": "2026-08-25 01:00:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-25/163735-1062911.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dff44857b3f26ab32a21a29e9b9db7cf",
+      "title": "50歲後記性變差勿單靠吃魚油!營養師教7招防腦退化 首選2大飲食法",
+      "description": "踏入50歲記性開始變差,不少人會第一時間買魚油補腦?其實想守護記憶力,必須由生活習慣著手,有營養師教7大護腦方法,其中首選2大飲食法。 營養師教7招防腦退化 首選2大飲食法 營養師廖欣儀在Facebook撰文指,過了50歲,不少人開始擔心記憶力衰退,明明剛剛想做的事,一轉身就忘記;熟悉的人名突然叫不出來;手機明明拿在手上,卻還在到處找。於是,開始花錢買魚油、銀杏、維他命B雜等保健品,希望能補腦。然",
+      "link": "https://www.stheadline.com/health-care/3606708/50%E6%AD%B2%E5%BE%8C%E8%A8%98%E6%80%A7%E8%AE%8A%E5%B7%AE%E5%8B%BF%E5%96%AE%E9%9D%A0%E5%90%83%E9%AD%9A%E6%B2%B9%E7%87%9F%E9%A4%8A%E5%B8%AB%E6%95%997%E6%8B%9B%E9%98%B2%E8%85%A6%E9%80%80%E5%8C%96-%E9%A6%96%E9%81%B82%E5%A4%A7%E9%A3%B2%E9%A3%9F%E6%B3%95",
+      "pubDate": "2026-08-25 01:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/d2280d0afe12551d36a5ff4a93df6c4a/2026-08/9769f078-927b-439d-ab33-3a96462a42d6.png",
+      "keywords": [
+        "腦退化症",
+        "失智症",
+        "認知障礙症"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "21341fee3b86ffb3aa2eeac403a5fb3e",
+      "title": "腹脹|50歲女長期腹脹 進食後腰圍變緊 醫生教3招KO肚漲漲 5個症狀不求醫恐出事",
+      "description": "進食後容易腹脹是身體發出警號?有醫生分享一宗案例指,一名50多歲女子長期腹脹進食後腰圍變緊,經胃鏡檢查後卻沒有異常發現。在這種情況下,醫生教3大方法有助改善與應對腹脹問題,並提醒,有5大症狀就要及時求醫,以排除惡性腫瘤等問題。",
+      "link": "https://www.am730.com.hk/%E5%81%A5%E5%BA%B7/1049218/%E8%85%B9%E8%84%B9-50%E6%AD%B2%E5%A5%B3%E9%95%B7%E6%9C%9F%E8%85%B9%E8%84%B9-%E9%80%B2%E9%A3%9F%E5%BE%8C%E8%85%B0%E5%9C%8D%E8%AE%8A%E7%B7%8A-%E9%86%AB%E7%94%9F%E6%95%993%E6%8B%9Bko%E8%82%9A%E6%BC%B2%E6%BC%B2-5%E5%80%8B%E7%97%87%E7%8B%80%E4%B8%8D%E6%B1%82%E9%86%AB%E6%81%90%E5%87%BA%E4%BA%8B",
+      "pubDate": "2026-08-25 01:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049218/article/1049218/df/01M0SMQYKX1VAT41ESE3A9DE5F.jpg?updatedAt=1787568243",
+      "keywords": null,
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "233fc70fe69cbfcf8e8e49a0841999f5",
+      "title": "王滬寧晤美國代表 稱兩國元首關係良好至關重要",
+      "description": "<匯港通訊> 中共中央政治局常委兼全國政協主席王滬寧在北京,會見來華出席第三屆中美1.5軌對話的美方代表。王滬寧表示,兩國元首的良好關係是雙方關係最寶貴、最重要的組成部分。王滬寧指,今年5月,國家主席習近平主席與來訪的美國總統特朗普,就中美關係及世界和平發展的重大問題,進行深入溝通。中方願同美方共同努力,全面準確...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%8E%8B%E6%BB%AC%E5%AF%A7%E6%99%A4%E7%BE%8E%E5%9C%8B%E4%BB%A3%E8%A1%A8-%E7%A8%B1%E5%85%A9%E5%9C%8B%E5%85%83%E9%A6%96%E9%97%9C%E4%BF%82%E8%89%AF%E5%A5%BD%E8%87%B3%E9%97%9C%E9%87%8D%E8%A6%81-005834666.html",
+      "pubDate": "2026-08-25 00:58:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "19d15c231b441cc3a4a30da64eb661c2",
+      "title": "期指踏入轉倉高峰期 大市暫未見大突破|古天后",
+      "description": "8月25日,大致多雲,有幾陣驟雨,初時局部地區驟雨較多及有狂風雷暴。美國財長貝森特宣布要徹底孤立伊朗,並制裁不與伊朗切斷聯繫嘅國家,不過相關制裁並未有具體細節,加上市場對美伊戰爭消息早已麻木,除非再掟出震撼彈,否則對市場氣氛影響有限,投資者焦點繼續放喺晶片股、財政及貨幣政策之上。與此同時,美國加碼回購國債行動繼續令美元貶值交易熱炒,現貨金價重越4,600美元。彭博追蹤嘅黃金交易所買賣基金(ETF)",
+      "link": "https://www.stheadline.com/stock-market/3607892/%E6%9C%9F%E6%8C%87%E8%B8%8F%E5%85%A5%E8%BD%89%E5%80%89%E9%AB%98%E5%B3%B0%E6%9C%9F-%E5%A4%A7%E5%B8%82%E6%9A%AB%E6%9C%AA%E8%A6%8B%E5%A4%A7%E7%AA%81%E7%A0%B4%E5%8F%A4%E5%A4%A9%E5%90%8E",
+      "pubDate": "2026-08-25 00:58:06",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/bb72afc01c20462295afe6087bee4439/2026-08/20250509_fin__19_.jpg",
+      "keywords": [
+        "古天后"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fbc6e83678293d4b7f2c519a529dc1ea",
+      "title": "民主黨稱特朗普油氣股投資今年錄最多1,550萬美元收益",
+      "description": "國會聯合經濟委員會民主黨發布新報告指出,美國總統特朗普持有的油氣股投資,今年可能錄得最多1,550萬美元收益,因伊朗戰事期間能源股大升。 特朗普在2025年年度財務披露中申報持有介乎1,250萬至4,560萬美元的油氣股。委員會指,截至今年8月17日,相關持股平均上升約39%,估計價值介乎1,720萬至6,110...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B0%91%E4%B8%BB%E9%BB%A8%E7%A8%B1%E7%89%B9%E6%9C%97%E6%99%AE%E6%B2%B9%E6%B0%A3%E8%82%A1%E6%8A%95%E8%B3%87%E4%BB%8A%E5%B9%B4%E9%8C%84%E6%9C%80%E5%A4%9A1-550%E8%90%AC%E7%BE%8E%E5%85%83%E6%94%B6%E7%9B%8A-005747584.html",
+      "pubDate": "2026-08-25 00:57:47",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "特朗普",
+        "國會聯合經濟委員會民主黨"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7b25eaedfeeeac490ea2cfb390bf236f",
+      "title": "零跑中期經調整淨利倒退逾18% 單月交付在7月份突破10萬",
+      "description": "零跑汽車(09863)公布,截至2026年6月底止半年連續實現半年度盈利,淨利潤2.1億元(人民幣.下同),按年升6倍,維持不派中期息。 至於按非國際財務報告準則的經調整淨利潤,則為2.7億元,按年倒退18.2%。 期內收入381.1億元,按年升57.2%,主要受惠整車及備件交付量增加。毛利44.5億元,增長29.7%;毛利率11.7%,則按年減少2.4個百分點,主要因為原材料成本上漲及整車產品組合變動。 上半年公司汽車總交付量35.65萬台,按年增60.8%;7月份銷量再創新高,達10.13萬台,按年升1.02倍,也是單月首次突破10萬台大關。",
+      "link": "https://www.bastillepost.com/hongkong/article/16633772-%E9%9B%B6%E8%B7%91%E4%B8%AD%E6%9C%9F%E7%B6%93%E8%AA%BF%E6%95%B4%E6%B7%A8%E5%88%A9%E5%80%92%E9%80%80%E9%80%BE18-%E5%96%AE%E6%9C%88%E4%BA%A4%E4%BB%98%E5%9C%A87%E6%9C%88%E4%BB%BD%E7%AA%81%E7%A0%B410",
+      "pubDate": "2026-08-25 00:57:15",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2024/05/20230825_FI_source-web_09863.jpg",
+      "keywords": [
+        "錢財事",
+        "零跑汽車(009863)"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "22fce356aefab71cb778ddf0d6d730d6",
+      "title": "阿根廷球王|馬勒當拿「上帝之手」皮球拍賣 售2586萬遠低於預估價",
+      "description": "已故阿根廷球王馬勒當拿(Diego Armando Maradona)1986年世界盃對英格蘭時,以爭議性「上帝之手」進球的那顆皮球,上周六(22日)由總部設於美國德州的「傳統拍賣公司」拍賣,以330萬美元(約2586萬港元)成交,遠低於原先預估的1000萬美元。 當年在8強賽中,馬勒當拿以手將球打進球門,助球隊最終以2比1獲勝。他賽後說,這球是靠「一點馬勒當拿的頭,加上一點上帝之手」攻入。 皮球",
+      "link": "https://www.stheadline.com/realtime-world/3607891/%E9%98%BF%E6%A0%B9%E5%BB%B7%E7%90%83%E7%8E%8B%E9%A6%AC%E5%8B%92%E7%95%B6%E6%8B%BF%E4%B8%8A%E5%B8%9D%E4%B9%8B%E6%89%8B%E7%9A%AE%E7%90%83%E6%8B%8D%E8%B3%A3-%E5%94%AE2586%E8%90%AC%E9%81%A0%E4%BD%8E%E6%96%BC%E9%A0%90%E4%BC%B0%E5%83%B9",
+      "pubDate": "2026-08-25 00:55:57",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/8f2169325ada369882e62ff4f25e4972/2026-08/KF_143.jpg",
+      "keywords": [
+        "馬勒當拿",
+        "阿根廷"
+      ],
+      "category": [
+        "business",
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b8f3d2e1acfe1ae26b8f729b2b7e14c6",
+      "title": "黃金出現一宗大額交易 期權市場議論紛紛",
+      "description": "在利率上升背景下黃金持續反彈,本月上升15%,並有望錄得自2008年以來最佳單月表現。惟期權市場今日最大宗交易顯示,這輪升勢或將結束。 周一開市20分鐘後,有交易員在SPDR Gold Shares ETF(GLD.US)沽出接近116,000張行使價420美元、9月18日到期的認購期權,相關合約目前處於價內,共...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BB%83%E9%87%91%E5%87%BA%E7%8F%BE-%E5%AE%97%E5%A4%A7%E9%A1%8D%E4%BA%A4%E6%98%93-%E6%9C%9F%E6%AC%8A%E5%B8%82%E5%A0%B4%E8%AD%B0%E8%AB%96%E7%B4%9B%E7%B4%9B-005042424.html",
+      "pubDate": "2026-08-25 00:50:42",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "期權",
+        "spdr gold shares etf"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4efc748725aa57b41c98dd256741eab6",
+      "title": "南韓海軍:獲美方通知因調度兵力受限 取消下月聯合兩棲登陸演習",
+      "description": "<匯港通訊> 南韓海軍陸戰隊發言人表示,美國以伊朗戰事限制兵力調度為由,6月時已正式通知韓方,取消原定9月舉行代號「雙龍」的聯合兩棲登陸演習,雙方仍就恢復演習進行緊密磋商。不過,發言人未有交代會採取哪些措施防止未來再取消演習,或如何彌補今次失去的演習機會。 美國國務院表示,國務卿魯比奧周一與南韓外長趙顯通電話,就...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8D%97%E9%9F%93%E6%B5%B7%E8%BB%8D-%E7%8D%B2%E7%BE%8E%E6%96%B9%E9%80%9A%E7%9F%A5%E5%9B%A0%E8%AA%BF%E5%BA%A6%E5%85%B5%E5%8A%9B%E5%8F%97%E9%99%90-%E5%8F%96%E6%B6%88%E4%B8%8B%E6%9C%88%E8%81%AF%E5%90%88%E5%85%A9%E6%A3%B2%E7%99%BB%E9%99%B8%E6%BC%94%E7%BF%92-004924191.html",
+      "pubDate": "2026-08-25 00:49:24",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3e748c7e11f82ee0f513a5ca17491c01",
+      "title": "高盛合夥人警告AI取代銀行家推理能力存在「巨大危險」",
+      "description": "負責高盛(GS.US)機構客戶數碼平台Marquee的合夥人Chris Churchman警告,AI在華爾街廣泛應用存在巨大危險,金融從業員將推理工作委派至大模型,可能導致金融從業員的認知能力退化,令其無法再從基本原理進行推理,或會削弱下一代的思考能力。 Churchman表示,銀行需要在使用AI與保留華爾街師徒...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%AB%98%E7%9B%9B%E5%90%88%E5%A4%A5%E4%BA%BA%E8%AD%A6%E5%91%8Aai%E5%8F%96%E4%BB%A3%E9%8A%80%E8%A1%8C%E5%AE%B6%E6%8E%A8%E7%90%86%E8%83%BD%E5%8A%9B%E5%AD%98%E5%9C%A8-%E5%B7%A8%E5%A4%A7%E5%8D%B1%E9%9A%AA-004500198.html",
+      "pubDate": "2026-08-25 00:45:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "churchman",
+        "ai",
+        "金融從業員"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "81b7e4970082a60a0da0b3b648162dd5",
+      "title": "美網外圍賽|黃澤林力爭再寫歷史 首圈逆轉挫丹麥球手晉級",
+      "description": "黃澤林(Coleman Wong)在上年的美國網球公開賽締歷史,殺入主賽圈32強。世界排名躋身前100位的Coleman,同樣需要透過外圍賽爭奪正賽資格。黃澤林",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60383272/%E7%BE%8E%E7%B6%B2%E5%A4%96%E5%9C%8D%E8%B3%BD-%E9%BB%83%E6%BE%A4%E6%9E%97%E5%8A%9B%E7%88%AD%E5%86%8D%E5%AF%AB%E6%AD%B7%E5%8F%B2-%E9%A6%96%E5%9C%88%E9%80%86%E8%BD%89%E6%8C%AB%E4%B8%B9%E9%BA%A5%E7%90%83%E6%89%8B%E6%99%89%E7%B4%9A",
+      "pubDate": "2026-08-25 00:44:34",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168840445610954752128605.png/PYdIE8mltGIil5KCnZ8rXYJUA2qQjympAKTN9gCkzfY",
+      "keywords": [
+        "籃球",
+        "體育",
+        "網球",
+        "體育新聞",
+        "高爾夫球",
+        "f1賽車",
+        "新聞",
+        "nba",
+        "香港01",
+        "hk01",
+        "香港新聞",
+        "體育消息"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fe2e0c5d581d572d34f428ffa083f070",
+      "title": "日本民間舉辦日軍毒氣展 揭露軍國主義暴行",
+      "description": "中評社北京8月25日電/由日本市民團體主辦的“日軍毒氣展”23日至28日在日本神奈川縣橫濱市的神奈川縣民中心舉辦。展覽旨在揭批日軍戰時製造毒氣並在侵華戰爭中實施毒氣戰的暴行,揭露日本軍國主義犯下的反人類行徑。 據新華社報導,二戰時期,日本在廣島縣大久野島、福岡縣北九州市、千葉縣習志野市等地分別生產毒氣、製造毒氣彈、培訓從事毒氣戰的人員,並在中國多地實施毒氣戰。日本戰敗後,一些毒氣武器",
+      "link": "http://www.crntt.com/doc/7_0_107227566_1_0825084341.html",
+      "pubDate": "2026-08-25 00:43:40",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/107227568.jpg",
+      "keywords": [
+        "日本軍國主義"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "51435b2b2e3c71230b5c4bff67d86e77",
+      "title": "法賓奴投特拉布宗再拍沙拿:感覺很特別",
+      "description": "【Now Sports】土超球隊特拉布宗周一宣佈,與巴西中場法賓奴簽下兩年合約,意即球迷將可看到法賓奴與沙拿這對前利物浦隊友合體。法賓奴(Fabinho)與沙特阿拉伯球隊伊蒂哈德的合約今夏屆滿,離隊後成為自由身,周一正式宣佈加盟土超球隊特拉布宗,將與曾一起效力利物浦、同樣今個月才來投的沙拿重逢。不過,根據球會公開...",
+      "link": "https://hk.sports.yahoo.com/news/%E6%B3%95%E8%B3%93%E5%A5%B4%E6%8A%95%E7%89%B9%E6%8B%89%E5%B8%83%E5%AE%97%E8%88%87%E6%B2%99%E6%8B%BF%E6%8B%8D%E4%BD%8F%E4%B8%8A%EF%BC%9A%E6%84%9F%E8%A6%BA%E5%BE%88%E7%89%B9%E5%88%A5-004212157.html",
+      "pubDate": "2026-08-25 00:42:12",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/eac5724f2ac7e5896e2262959ce8b70df2a011aaebfcee1b394107c547c6c1d1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F65641a01-56ea-4cf6-9d5b-286facae8bd4",
+      "keywords": [
+        "利物浦",
+        "拉布",
+        "法賓奴"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6eff4a4be147dd355d6233b2b215dedf",
+      "title": "以色列總理聲稱伊朗曾企圖暗殺其子",
+      "description": "中評社北京8月25日電/以色列總理內塔尼亞胡24日接受以色列第14頻道電視台採訪時聲稱,伊朗曾“試圖暗殺他的一個兒子”。 據新華社報導,內塔尼亞胡沒有提供更多細節。內塔尼亞胡有兩個兒子,他在採訪中沒有透露哪一個成為所謂暗殺目標,亦未指明所謂暗殺企圖的性質和時間。 《以色列時報》報導說,即使內塔尼亞胡在今年晚些時候舉行的大選中落敗,以國家安全總局(辛貝特)也會為內塔尼亞胡及其",
+      "link": "http://www.crntt.com/doc/7_0_107227557_1_0825084122.html",
+      "pubDate": "2026-08-25 00:41:21",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": [
+        "伊朗",
+        "以色列"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "71627c4b6dd40bc92df1c20fb11ce3ce",
+      "title": "美宣佈對伊朗實施“經濟孤立”新措施加大施壓",
+      "description": "中評社香港8月25日電/美國財政部長貝森特24日下午召開新聞發佈會,宣佈美國當日發起對伊朗“經濟孤立”的新一輪制裁措施,以進一步加大對伊施壓。 據美財政部外國資產控制辦公室24日發佈的公告,美國從當日起把對伊朗經濟制裁範圍擴大到航空、數字資產、黃金、航運和技術行業等5個領域。公告稱,美國還將暫停多項涉伊朗的許可,涉及部分教育活動和服務、個人匯款、體育和學術交流等。此外,約60個伊朗相",
+      "link": "http://www.crntt.com/doc/7_0_107227569_1_0825083856.html",
+      "pubDate": "2026-08-25 00:38:56",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": [
+        "伊朗",
+        "美伊"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ef18b27c7928d077a7d984d5db428776",
+      "title": "中國觀察:「紫檀」攔路 嫦娥最快明年2月再奔月",
+      "description": "本欄8月12日曾發文《長征火箭折戟 嫦娥七號會否「升」不逢時?》,關注長征火箭發射失利,會否阻礙8月24日嫦娥七號探月器的升空計劃,結果「烏鴉嘴」,官方前晚宣布因「不滿足發射條件」,嫦娥七號任務「不能在今年預定窗口實施」,具體原因沒交代。 「紫檀」預報難度大 消息稱,嫦娥今次無法升天,主因是颱風「紫檀」在海南附近的北部灣持續打轉,影響到火箭的安全性。 過往其他颱風大多生成於西太平洋一帶,但今次「紫",
+      "link": "https://www.stheadline.com/realtime-china/3607886/%E4%B8%AD%E5%9C%8B%E8%A7%80%E5%AF%9F%E7%B4%AB%E6%AA%80%E6%94%94%E8%B7%AF-%E5%AB%A6%E5%A8%A5%E6%9C%80%E5%BF%AB%E6%98%8E%E5%B9%B42%E6%9C%88%E5%86%8D%E5%A5%94%E6%9C%88",
+      "pubDate": "2026-08-25 00:22:45",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/4fd1f067ee7bfc6d071fed72ec0694b1/2026-08/KF_-Sam_57_.png",
+      "keywords": [
+        "紫檀",
+        "嫦娥七號探測器"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0fe4aaa7f34317d7091424a8dd413338",
+      "title": "費達拿重返美網打表演賽:無意復出",
+      "description": "【Now Sports】已掛拍數年的瑞士網球天王費達拿,本周將會披上戰衣重返美網——不過並非復出參戰,而是在表演賽與其他名宿聯手娛樂球迷。面對眾多期待的聲音,費天王亦表明無意復出。美國網球公開賽外圍賽正進行得如火如荼,主賽圈則會在較後時間才展開,同一時間賽會亦安排了不少場外活動,吸引球迷參與。周二將會參加表演賽的...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%B2%BB%E9%81%94%E6%8B%BF%E9%87%8D%E8%BF%94%E7%BE%8E%E7%B6%B2%E6%89%93%E8%A1%A8%E6%BC%94%E8%B3%BD%EF%BC%9A%E7%84%A1%E6%84%8F%E5%BE%A9%E5%87%BA-000922506.html",
+      "pubDate": "2026-08-25 00:09:22",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/89ffa0e75a164fea1d78032087c945932a86852d6572520e730fff0fd2115d7e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fc75b36d4-3f6a-4926-b8c1-9af8d729961f",
+      "keywords": null,
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d7bb6e0ff119f694fffb23c7df91ed55",
+      "title": "西甲|攻力差天共地 貝迪斯客W穩開",
+      "description": "華倫西亞 VS 貝迪斯 Now632台周三凌晨3:00直播 推介:主客和客勝 貝迪斯火力強勁,加上兩翼輪流進襲,有狀態正盛的翼鋒洛迪高列基美隨時後上入楔,今晚西甲作客創造力不足的華倫西亞時有力再下一城,主客和客勝單頭或過關過宜。 客隊貝迪斯剛周六在對蘇斯達一役的進攻表現可謂獅子搏兔,全場射門次數高達18次,遠超對手的9次,射正次數亦以7比3大勝,最終憑臨門一腳質素取勝,此等火力若能延續,今場即使作",
+      "link": "https://www.stheadline.com/football-betting/3607803/%E8%A5%BF%E7%94%B2%E6%94%BB%E5%8A%9B%E5%B7%AE%E5%A4%A9%E5%85%B1%E5%9C%B0-%E8%B2%9D%E8%BF%AA%E6%96%AF%E5%AE%A2W%E7%A9%A9%E9%96%8B",
+      "pubDate": "2026-08-25 00:00:56",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/899db295dc6f6306594d3b786db31f45/2026-08/page2_14.jpg",
+      "keywords": [
+        "貝迪斯",
+        "華倫西亞",
+        "西甲"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "befe8efb3b10414c72e9019a37ac16d4",
+      "title": "年輕人患癌率急升近8成!腫瘤科專家揭異常出血+3大徵狀極高危",
+      "description": "雖然癌症較常見於中老年人,過往調查中首次確診年齡中位數為67歲。不過近年癌症年輕化趨勢驚人,最新數據顯示,從1990年至2019年間,50歲以下罹癌",
+      "link": "https://www.hk01.com/%E9%96%8B%E7%BD%90/60383089/%E5%B9%B4%E8%BC%95%E4%BA%BA%E6%82%A3%E7%99%8C%E7%8E%87%E6%80%A5%E5%8D%87%E8%BF%918%E6%88%90-%E8%85%AB%E7%98%A4%E7%A7%91%E5%B0%88%E5%AE%B6%E6%8F%AD%E7%95%B0%E5%B8%B8%E5%87%BA%E8%A1%80-3%E5%A4%A7%E5%BE%B5%E7%8B%80%E6%A5%B5%E9%AB%98%E5%8D%B1",
+      "pubDate": "2026-08-25 00:00:17",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260824/1168609228324081664915246.jpeg/BqTmJvNZg43GcdQ87PR37UDTqoI925AMzVJZCM1SWQg",
+      "keywords": [
+        "城中熱話",
+        "熱話",
+        "話題"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "709d153394c2f226ddfb1707c7fd709a",
+      "title": "怕行李箱撞款!爸爸把愛貓高清照印到箱上 女兒接機一睇笑爆",
+      "description": "一位女子被爸爸的操作驚到了。因為過年時女子不回家,爸爸媽媽就來到女子的地方來探她。去地鐵站接爸爸媽媽時,一開始沒看到爸爸,只看到一個行李箱",
+      "link": "https://www.hk01.com/%E5%AF%B5%E7%89%A9/60358747/%E6%80%95%E8%A1%8C%E6%9D%8E%E7%AE%B1%E6%92%9E%E6%AC%BE-%E7%88%B8%E7%88%B8%E6%8A%8A%E6%84%9B%E8%B2%93%E9%AB%98%E6%B8%85%E7%85%A7%E5%8D%B0%E5%88%B0%E7%AE%B1%E4%B8%8A-%E5%A5%B3%E5%85%92%E6%8E%A5%E6%A9%9F%E4%B8%80%E7%9D%87%E7%AC%91%E7%88%86",
+      "pubDate": "2026-08-25 00:00:03",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260610/1141348084781944832613205.jpeg/uU-ctMIBWhys5zdAsIhsslgw6Y2_3HTh7GcjPexnIz0",
+      "keywords": [
+        "寵物美容",
+        "狗糧",
+        "寵物",
+        "貓糧",
+        "香港01",
+        "狗",
+        "貓奴",
+        "貓",
+        "寵物用品"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
     },
     {
       "id": "7e3b0f7ffd2f043982e3dd0a99edea17",
@@ -209354,6 +209789,20 @@
       "region": "hk"
     },
     {
+      "id": "3b28249590d45681",
+      "title": "夫妻的博弈｜陳曉華郭柏妍純白造型Battle！　Rosita絕美婚紗封「最美新娘」　與林漪娸婆媳大戰引共鳴",
+      "description": "【陳曉華 / 郭柏妍 / 林漪娸 / 夫妻的博弈】輕鬆愛情小品劇《夫妻的博弈》昨晚（24日）劇情講述繼威（張頴康飾）在上司家謙（馬國明飾）施壓下，向雪文（郭柏妍飾）求婚，雪文被繼威的甜言蜜語打動，答應...",
+      "link": "https://topick.hket.com/article/4182215",
+      "pubDate": "2026-08-25 20:03:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4182215/BattleRosita_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "cf05e580f968d903",
       "title": "香港先生｜高鈞賢為湊女推工作少賺百萬元　購千萬豪宅為愛女學業鋪路　盼做運動員：好似谷愛玲咁",
       "description": "【高鈞賢 / 香港先生 / 港男】現年42歲的前香港先生冠軍高鈞賢（Matthew），前年宣布與億萬身家的女友黃梓漫（Christine）結婚，翌年迎來寶貝女兒高子琳（Liona），一家三口生活幸福美...",
@@ -209422,6 +209871,21 @@
         "rss"
       ],
       "region": "hk"
+    },
+    {
+      "id": "bafbde97c0b46450",
+      "title": "居住體驗｜對康城印象咁差？　街坊力數3大優勢超宜居　堆填區衞生交通問題有解法",
+      "description": "不少網民對將軍澳日出康城的印象平平，認為存在交通不便且又是「填埋區」等問題。不過，近日有街坊在Threads發帖質疑「點解咁多人對康城印象咁差？」，力數區內3大優勢力撐優勢盛讚宜居；至於存在的問題，街...",
+      "link": "https://topick.hket.com/article/4181344",
+      "pubDate": "2026-08-25 08:31:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4181344/3_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "813e9d489d39a7e8",
@@ -211242,6 +211706,6 @@
       "pinned": true
     }
   ],
-  "total": 10751,
-  "last_updated": "2026-08-25T20:07:58.092326"
+  "total": 10777,
+  "last_updated": "2026-08-25T21:08:00.127794"
 }
