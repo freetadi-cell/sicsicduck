@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "a0e40c845bb02de218421eaebf3ceaba",
+      "title": "首次配股|阿里巴巴擬配股集資800億 全數用於AI發展 曾跌近9%失配股價",
+      "description": "科技巨頭阿里巴巴(9988)宣佈進行上市以來首次配股集資,配售總金額高達800億港元,所得資金將全數用於投資「...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87-%E6%93%AC%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87800%E5%84%84%E6%8C%87%E5%85%A8%E6%95%B8%E7%94%A8%E6%96%BCai%E7%99%BC%E5%B1%95-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%B7%8C%E8%BF%919-%E5%A4%B1%E9%85%8D%E8%82%A1%E5%83%B9-050000602.html",
+      "pubDate": "2026-08-24 05:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bossmind_356/96a015a93955322d7a568f454225a52d.jpg",
+      "keywords": [
+        "阿里巴巴",
+        "ai",
+        "阿里巴巴擬"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "6e5d797bf7e9e8199d29f9e6e9106226",
       "title": "美國擬在習特峰會前對中國加徵7.5%產能過剩關稅",
       "description": null,
@@ -18,47 +37,19 @@
       "pinned": true
     },
     {
-      "id": "e60ba2a3201c00d46817d5daff797d28",
-      "title": "美股|道指收市升140點 納指挫0.76% 油價跌2.35%",
-      "description": "市場關注美國揚言對伊朗發動「經濟D-Day」的極限施壓,以及等待AI晶片龍頭Nvidia本周稍後公布的季績。美股周一(8月24日)個別發展。道指至收市升1",
-      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60383238/%E7%BE%8E%E8%82%A1-%E9%81%93%E6%8C%87%E6%94%B6%E5%B8%82%E5%8D%87140%E9%BB%9E-%E7%B4%8D%E6%8C%87%E6%8C%AB0-76-%E6%B2%B9%E5%83%B9%E8%B7%8C2-35",
-      "pubDate": "2026-08-24 15:02:56",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20250428/993660677904142336562089.jpeg/4FxnWUlvNAFN7lLzwIaP4efSPeemohQpuK3JyLitycg",
+      "id": "a1709d260bb374a396a5fa9a2552f26b",
+      "title": "貝森特宣告對伊朗展開「經濟D日」攻勢,德黑蘭警告石油供應將遭重創",
+      "description": "Investing.com - 美國財政部長斯科特·貝森特(Scott Bessent)週日警告,伊朗將面臨嚴峻的經濟後果,華盛頓正準備宣布其史上最嚴厲的對伊制裁措施。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%9D%E6%A3%AE%E7%89%B9%E5%AE%A3%E5%91%8A%E5%B0%8D%E4%BC%8A%E6%9C%97%E5%B1%95%E9%96%8B-%E7%B6%93%E6%BF%9Fd%E6%97%A5-%E6%94%BB%E5%8B%A2-%E5%BE%B7%E9%BB%91%E8%98%AD%E8%AD%A6%E5%91%8A%E7%9F%B3%E6%B2%B9%E4%BE%9B%E6%87%89%E5%B0%87%E9%81%AD%E9%87%8D%E5%89%B5-015210296.html",
+      "pubDate": "2026-08-24 01:52:10",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM2B1EJ_M.jpg",
       "keywords": [
-        "地產消息",
-        "港股",
-        "財經網",
-        "財經透視",
-        "hk01",
-        "經濟",
-        "新聞",
-        "香港新聞",
-        "香港01",
-        "a股",
-        "財經台",
-        "財經新聞",
-        "恆生指數",
-        "股票"
-      ],
-      "category": [
-        "business",
-        "politics",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "952942a8e36798f94d6b24b18b0dd2f3",
-      "title": "阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕",
-      "description": "阿里巴巴(09988)宣布集資 800 億元全數押注 AI,惟市場對股權攤薄及資本開支大增反應劇烈。阿里股價單日急挫 8.5%,跌穿配股價,市值蒸發逾 2,000 億元。為穩定軍心,集團主席蔡崇信及首席執行官吳泳銘隨即在場內斥資約 1.2 億元增持股份。 市值大蒸發:股價跌穿配售價 配股消息公布後,阿里巴巴股價在二級市場顯著受壓。 全日股價曾大挫逾一成,低見 110.1 元,最終收報 112.5 元,跌幅達 8.5%,失守 112.7 元的配股價。單日市值大幅蒸發 2,013.. The post 阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕 appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/news/alibaba-09988-share-placement-joe-tsai-eddie-wu-increase-stake-michael-burry-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2035197/",
-      "pubDate": "2026-08-24 10:59:25",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/07051243-df5f-4d2f-8e93-d8aed9552584_276786316a8c23ff8bb32.png",
-      "keywords": [
-        "即時財經"
+        "貝森特",
+        "霍爾木茲海峽",
+        "華盛頓",
+        "伊朗",
+        "美國財政部長"
       ],
       "category": [
         "business"
@@ -67,27 +58,235 @@
       "pinned": true
     },
     {
-      "id": "6e3febaa38b56370cd3fca70bcac2e7f",
-      "title": "海明威式的危險警示:美國國債站上四十萬億美元高位",
-      "description": "2024年大選期間,特朗普不止一次向美國人描繪過他的施政藍圖:阻擋非法移民,削減政府開支,通過徵收關稅增加財政收入,把美國從民主黨拜登的無能",
-      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60383055/%E6%B5%B7%E6%98%8E%E5%A8%81%E5%BC%8F%E7%9A%84%E5%8D%B1%E9%9A%AA%E8%AD%A6%E7%A4%BA-%E7%BE%8E%E5%9C%8B%E5%9C%8B%E5%82%B5%E7%AB%99%E4%B8%8A%E5%9B%9B%E5%8D%81%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83%E9%AB%98%E4%BD%8D",
-      "pubDate": "2026-08-24 09:00:42",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20210906/511552604526874624910782.jpeg/ugNP75X6qj4GNzMODk80bX7n-9Vok7EpNcN9RTXDfUU",
+      "id": "5debc140aa7778a088ee65334f71d99e",
+      "title": "潼關黃金(00340)被納入恒生綜合指數成份股 9月7日起生效",
+      "description": "<匯港通訊> 潼關黃金(00340)宣布,公司被納入恒生綜合指數成份股,2026年9月4日(星期五)收市後實施,並於2026年9月7日(星期一)起生效。 (ST)",
+      "link": "https://hk.finance.yahoo.com/news/%E6%BD%BC%E9%97%9C%E9%BB%83%E9%87%91-00340-%E8%A2%AB%E7%B4%8D%E5%85%A5%E6%81%92%E7%94%9F%E7%B6%9C%E5%90%88%E6%8C%87%E6%95%B8%E6%88%90%E4%BB%BD%E8%82%A1-9%E6%9C%887%E6%97%A5%E8%B5%B7%E7%94%9F%E6%95%88-115748353.html",
+      "pubDate": "2026-08-24 11:57:48",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "新聞",
-        "國際",
-        "世界新聞",
-        "hk01",
-        "國際新聞",
-        "環球",
-        "香港01"
+        "恒生綜合指數"
       ],
       "category": [
-        "politics"
+        "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "9385130a4e9a8a600ca1ef2d46042b91",
+      "title": "藥明康德(02359.HK)生物學業務DEL平台經歷網路安全事件",
+      "description": "藥明康德(02359.HK)公布,公司生物學業務板塊近期經歷一起網路安全事件,其DNA Encoded Library「DEL」平台上的一些資料遭遇未經授權的訪問。DEL平台是用於早期發現項目的專業編碼化學合成物庫。 公司已立即啟動應急回應機制,並聘請領先的外部網路安全專家及外部法律顧問,以控制事態並對本次事件展...",
+      "link": "https://hk.finance.yahoo.com/news/%E8%97%A5%E6%98%8E%E5%BA%B7%E5%BE%B7-02359-hk-%E7%94%9F%E7%89%A9%E5%AD%B8%E6%A5%AD%E5%8B%99del%E5%B9%B3%E5%8F%B0%E7%B6%93%E6%AD%B7%E7%B6%B2%E8%B7%AF%E5%AE%89%E5%85%A8%E4%BA%8B%E4%BB%B6-184805739.html",
+      "pubDate": "2026-08-24 18:48:05",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "網路安全事件",
+        "dna encoded library",
+        "del平台"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1309f93d524d5ce2cfb073c7c8b11e25",
+      "title": "《業績》力量發展(01277.HK)中期純利7.68億人民幣增36.8% 派息6港仙",
+      "description": "力量發展(01277.HK)公布6月止六個月中期業績,收益25.21億人民幣(下同),按年微增0.4%。錄得純利7.68億元,增長36.8%,每股盈利9.11分。中期息6港仙,上年同期派5港仙。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E5%8A%9B%E9%87%8F%E7%99%BC%E5%B1%95-01277-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A97-184735679.html",
+      "pubDate": "2026-08-24 18:47:35",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f5b484ec47d4f8e15c55e5402bbcac98",
+      "title": "《業績》榮昌生物(09995.HK)中期純利46.62億人民幣 虧轉盈",
+      "description": "榮昌生物(09995.HK)公布6月止六個月中期業績,收益58.5億人民幣(下同),按年增加435.7%。錄得純利46.62億元,相較上年同期虧損4.5億元,虧轉盈;每股盈利8.32元。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E6%A6%AE%E6%98%8C%E7%94%9F%E7%89%A9-09995-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A946-184704138.html",
+      "pubDate": "2026-08-24 18:47:04",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4fbc6e31a6cf5bea7e84e576f647b18e",
+      "title": "博通信貸風險指標上升,與AI融資交易有關",
+      "description": "Investing.com - 隨著博通公司(Broadcom Inc.)為大型人工智能相關融資方案提供財務支持,債券交易員對其信貸風險的評估持續升溫。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8D%9A%E9%80%9A%E4%BF%A1%E8%B2%B8%E9%A2%A8%E9%9A%AA%E6%8C%87%E6%A8%99%E4%B8%8A%E5%8D%87-%E8%88%87ai%E8%9E%8D%E8%B3%87%E4%BA%A4%E6%98%93%E6%9C%89%E9%97%9C-184552577.html",
+      "pubDate": "2026-08-24 18:45:52",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA6H0CU_M.jpg",
+      "keywords": [
+        "retirement",
+        "investing",
+        "economy",
+        "business",
+        "stocks",
+        "track portfolio",
+        "stock",
+        "financial information",
+        "finance",
+        "stock research",
+        "business news",
+        "tax",
+        "real estate",
+        "suze orman",
+        "stock valuation",
+        "investment tools",
+        "mutual funds",
+        "mortgage",
+        "quote",
+        "personal finance"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dfa1b1fd1aeb123002629303100a3ba2",
+      "title": "加拿大斥資逾110億加元 訂購六艘新破冰船強化海岸警衛隊實力",
+      "description": "Investing.com - 加拿大總理馬克·卡尼(Mark Carney)今日宣布,政府將投入逾110億加元(約79.5億美元),為加拿大海岸警衛隊建造六艘全新破冰船。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E6%96%A5%E8%B3%87%E9%80%BE110%E5%84%84%E5%8A%A0%E5%85%83-%E8%A8%82%E8%B3%BC%E5%85%AD%E8%89%98%E6%96%B0%E7%A0%B4%E5%86%B0%E8%88%B9%E5%BC%B7%E5%8C%96%E6%B5%B7%E5%B2%B8%E8%AD%A6%E8%A1%9B%E9%9A%8A%E5%AF%A6%E5%8A%9B-184438885.html",
+      "pubDate": "2026-08-24 18:44:38",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM501EL_M.jpg",
+      "keywords": [
+        "海岸警衛隊",
+        "levis",
+        "卡尼",
+        "魁北克省",
+        "加拿大",
+        "加拿大總理"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0daef493fcd4cc94ca691f178d745c44",
+      "title": "《新股》君正股份(03223.HK)招股超購926.37倍 一手中籤率0.27%",
+      "description": "君正股份(03223.HK)公布招股結果,香港公開發售接獲927.37倍認購,一手(100股)中籤率0.27%,認購4萬股獲穩派一手。國際發售錄得8.43倍認購。最終發售價100元,集資淨額30.55億元。股份預期周二(25日)掛牌。 無廠半導體商君正股份是次擬全球發售3,128.73萬股,公開發售佔10%,最高...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%96%B0%E8%82%A1-%E5%90%9B%E6%AD%A3%E8%82%A1%E4%BB%BD-03223-hk-%E6%8B%9B%E8%82%A1%E8%B6%85%E8%B3%BC926-183758363.html",
+      "pubDate": "2026-08-24 18:37:58",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "公開發售"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "aa60f7c164be8191ee9df55906557880",
+      "title": "《業績》安井食品(02648.HK)中期淨利潤8.22億人民幣增21.6% 派息1.733元人民幣",
+      "description": "安井食品(02648.HK)公布6月止六個月中期業績,營業收入92.66億人民幣(下同),按年增加21.9%。歸屬股東淨利潤8.22億元,增長21.6%,每股收益2.48元。中期息派1.733元。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E5%AE%89%E4%BA%95%E9%A3%9F%E5%93%81-02648-hk-%E4%B8%AD%E6%9C%9F%E6%B7%A8%E5%88%A9%E6%BD%A48-183709796.html",
+      "pubDate": "2026-08-24 18:37:09",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "797d714f07bbfdbb8df68a71a868af6f",
+      "title": "《業績》西部水泥(02233.HK)中期純利3.79億人民幣 倒退49.4%",
+      "description": "西部水泥(02233.HK)公布6月止六個月中期業績,收益45.27億人民幣(下同),按年下降16.5%。錄得純利3.79億元,倒退49.4%,每股盈利6.9分。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E8%A5%BF%E9%83%A8%E6%B0%B4%E6%B3%A5-02233-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A93-183634571.html",
+      "pubDate": "2026-08-24 18:36:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ac98b13b6c3ba1a9cb9d009d90e979f",
+      "title": "中加國信(00899.HK)折讓12.5%配股 集資415萬元",
+      "description": "中加國信(00899.HK)公布,配售最多2,967.72萬股新股,相當於擴大後股本6.25%;配售價0.14元,較上交易日(24日)收報折讓12.50%。集資總額415萬元,所得淨額395萬元,擬用作一般營運資金。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%8A%A0%E5%9C%8B%E4%BF%A1-00899-hk-%E6%8A%98%E8%AE%9312-5-183600133.html",
+      "pubDate": "2026-08-24 18:36:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "57674cba75cb3e6b487f8cc41725f29d",
+      "title": "花氏兄弟各有所長 一人美式足球一人英式足球闖名堂",
+      "description": "花氏兄弟各自在美式足球及英式足球界闖出名堂。哥哥艾朗效力全美排名第二的俄勒岡大學美式足球隊,而弟弟賓治則由著名的達拉斯足球會青訓學院培訓,最近與英超球會車路士簽約。 賓治現年15歲,將於18歲時加盟該支英超球隊。在此之前,他會繼續在德州磨練球技。他於七月下旬成為該隊最年輕的本土青訓球員,並簽署職業合約。 賓治笑言自己不適合哥哥所玩的美式足球。 賓治表示:「他比我高大得多,而且我覺得他比我更能承受撞擊,體重及身高均是我的兩倍,年齡卻相若。所以我想這就是我父母認為美式足球對我來說太危險的原因。他們讓他去玩美式足球,並叫我繼續踢英式足球。」 艾朗最終選擇了另一種足球。他是一名來自德州福尼的四星級安全衛,該處是花氏兄弟成長的地方。艾朗選擇了俄勒岡大學,而非南加州大學、貝勒大學、奧克拉荷馬大學、阿肯色大學及阿拉巴馬大學。 艾朗稱:「我小時候也踢過英式足球。但後來我長大了,身體變得太強壯,經常拿到紅牌,所以我就不踢了。但我弟弟,他踢英式足球。他顯然沒有我那麼高大,身形較矮小。所以我的父母不敢讓他玩美式足球,他就這樣茁壯成長,並在英式足球方面表現出色。」 賓治自10歲起便在達拉斯青訓學院受訓,今年首次代表達拉斯的美國職業足球大聯盟次級聯賽球隊北德州體育會上陣。達拉斯青訓學院此前曾培養出列卡度·佩皮及韋斯頓·麥堅尼等美國球星,兩人均入選這次夏季的世界盃大名單。 賓治·花氏早在加入青訓學院前,已知道自己想以英式足球為事業。 他表示:「我剛開始踢球時,只是為了好玩,然後大約六歲左右,我就立志要成為職業球員,並以此為生。所以,那時我才真正開始認真對待這件事。」 車路士為賓治支付的轉會費據報為300萬美元,但附加條款可令總額增至1000萬美元。 美國職業足球大聯盟總監加伯向美聯社表示,與車路士簽訂的合約顯示該聯賽致力建立青訓系統的努力正取得成果。 加伯稱:「這可能是近年來對我們球員發展計劃的最大肯定,我對此感到非常興奮和自豪,因為我們長期以來一直努力不懈,投入大量資源改善球會的球員發展計劃。」 花氏亦是美國國家隊的潛力新星。他曾代表美國15歲以下國家隊上陣,今年三次出場攻入兩球。 達拉斯足球會主席丹·亨特發表聲明指:「賓治憑藉努力、決心及家人的支持,擁抱了這段旅程的每一步。他的簽約反映了達拉斯足球會青訓學院所做的巨大工作,並證明了下一代球員的可能性。」 艾朗高中時亦曾是田徑運動員,在2024賽季為俄勒岡大學上陣兩場後,曾以紅衫球員身份暫停比賽。他於2025年嶄露頭角,為鴨隊在所有15場比賽中擔任正選,並闖入全國準決賽。他在俄勒岡大學的防守中排名第三,總共錄得70次擒抱,其中37次為單人擒抱。 上賽季,艾朗·花氏與安全衛迪倫·蒂內曼搭檔,後者現效力芝加哥熊隊。這次賽季,他很可能與從明尼蘇達大學轉會而來的鯉·佩里奇一同擔任正選。 俄勒岡大學上賽季錄得13勝2負的戰績,兩場敗仗均是輸給由費爾南多·門多薩帶領的印第安納大學——一次在常規賽,另一次則在大學美式足球季後賽準決賽。 艾朗表示,他相信賓治會從遠處觀看鴨隊的比賽,鴨隊亦渴望再次打入季後賽。當然,作為一個驕傲的哥哥,他亦會關注賓治的職業生涯。 花氏稱:「我早就知道他很出色。當我回家時,他在一場比賽中攻入五球。我當時想,『哦,他肯定會成為職業球員。』看到這一切發生,真的讓我感到非常自豪,也很高興能為他見證。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16633166-%E8%8A%B1%E6%B0%8F%E5%85%84%E5%BC%9F%E5%90%84%E6%9C%89%E6%89%80%E9%95%B7-%E4%B8%80%E4%BA%BA%E7%BE%8E%E5%BC%8F%E8%B6%B3%E7%90%83%E4%B8%80%E4%BA%BA%E8%8B%B1%E5%BC%8F%E8%B6%B3%E7%90%83%E9%97%96%E5%90%8D",
+      "pubDate": "2026-08-24 18:21:06",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/b41aa48ec6234ad48fc27106307438d5_Football_Flowers_73263_FB.jpg",
+      "keywords": [
+        "體育",
+        "車路士",
+        "美式足球",
+        "花氏兄弟",
+        "俄勒岡大學",
+        "英式足球"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cf3d85411d73d11e0710a161643673f1",
+      "title": "彭馬曾親自下廚致食物中毒",
+      "description": "【Now Sports】車路士中場高爾彭馬在球場上進攻出色,場外搞笑亦有一手,但下廚就不是他的強項了。英國《太陽報》報道,24歲的高爾彭馬(Cole Palmer)曾經因為進食三文魚導致食物中毒,而「下毒手」的廚師正是他本人。彭馬憶起舊事:「我很久沒有煮過東西了。對上一次下廚,我令到自己食物中毒......三文魚...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%BD%AD%E9%A6%AC%E6%9B%BE%E8%A6%AA%E8%87%AA%E4%B8%8B%E5%BB%9A%E8%87%B4%E9%A3%9F%E7%89%A9%E4%B8%AD%E6%AF%92-181828763.html",
+      "pubDate": "2026-08-24 18:18:28",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "高爾彭馬",
+        "車路士"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5841ebd9ccc718bb8ff817379a8db2f6",
+      "title": "日本擬收緊賣淫法 嫖客也要罰 街頭問價亦犯法?",
+      "description": "日本長期以來在打擊性交易上存在法律不平等爭議。日本法務省專家檢討會議於24日正式提出報告書草案,建議修改實施近70年的《賣春防止法》,研究將目前僅針對「賣方」的招攬及等客等罰則,擴大至「買方」(嫖客),並大幅調高罰金上限。這項修法意在矯正長期以來「只罰賣方、不罰買方」的法律扭曲現象,預計最快於今年秋季的臨時國會上提出修法草案。 現行法律遭批評結構扭曲 被迫賣淫女性反而被捕 綜合《日本放送協會》(N",
+      "link": "https://www.stheadline.com/realtime-world/3607867/%E6%97%A5%E6%9C%AC%E6%93%AC%E6%94%B6%E7%B7%8A%E8%B3%A3%E6%B7%AB%E6%B3%95-%E5%AB%96%E5%AE%A2%E4%B9%9F%E8%A6%81%E7%BD%B0-%E8%A1%97%E9%A0%AD%E5%95%8F%E5%83%B9%E4%BA%A6%E7%8A%AF%E6%B3%95",
+      "pubDate": "2026-08-24 18:17:09",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/ba3836abe49d3ecff7cdef60361edf82/2026-08/AFP__20250420__38WR6NP__v1__HighRes__JapanEconomyTourismProstitutionSocial.jpg",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "b6ec28d8b9be9516e205590b659e3c79",
@@ -968,6 +1167,38 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "e60ba2a3201c00d46817d5daff797d28",
+      "title": "美股|道指收市升140點 納指挫0.76% 油價跌2.35%",
+      "description": "市場關注美國揚言對伊朗發動「經濟D-Day」的極限施壓,以及等待AI晶片龍頭Nvidia本周稍後公布的季績。美股周一(8月24日)個別發展。道指至收市升1",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60383238/%E7%BE%8E%E8%82%A1-%E9%81%93%E6%8C%87%E6%94%B6%E5%B8%82%E5%8D%87140%E9%BB%9E-%E7%B4%8D%E6%8C%87%E6%8C%AB0-76-%E6%B2%B9%E5%83%B9%E8%B7%8C2-35",
+      "pubDate": "2026-08-24 15:02:56",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20250428/993660677904142336562089.jpeg/4FxnWUlvNAFN7lLzwIaP4efSPeemohQpuK3JyLitycg",
+      "keywords": [
+        "地產消息",
+        "港股",
+        "財經網",
+        "財經透視",
+        "hk01",
+        "經濟",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "a股",
+        "財經台",
+        "財經新聞",
+        "恆生指數",
+        "股票"
+      ],
+      "category": [
+        "business",
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "7d67727a21dd0de94ec5eb2c985383cc",
@@ -2902,22 +3133,6 @@
       "region": "hk"
     },
     {
-      "id": "5debc140aa7778a088ee65334f71d99e",
-      "title": "潼關黃金(00340)被納入恒生綜合指數成份股 9月7日起生效",
-      "description": "<匯港通訊> 潼關黃金(00340)宣布,公司被納入恒生綜合指數成份股,2026年9月4日(星期五)收市後實施,並於2026年9月7日(星期一)起生效。 (ST)",
-      "link": "https://hk.finance.yahoo.com/news/%E6%BD%BC%E9%97%9C%E9%BB%83%E9%87%91-00340-%E8%A2%AB%E7%B4%8D%E5%85%A5%E6%81%92%E7%94%9F%E7%B6%9C%E5%90%88%E6%8C%87%E6%95%B8%E6%88%90%E4%BB%BD%E8%82%A1-9%E6%9C%887%E6%97%A5%E8%B5%B7%E7%94%9F%E6%95%88-115748353.html",
-      "pubDate": "2026-08-24 11:57:48",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "恒生綜合指數"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "b5b9a79a483a06f6bf6c26f542e2fd88",
       "title": "王滬寧會見第三屆中美1.5軌對話美方代表",
       "description": "中評社北京8月24日電/中共中央政治局常委、全國政協主席王滬寧24日在京會見出席第三屆中美1.5軌對話的美方代表。 新華社報導,王滬寧表示,今年5月,習近平主席同來華訪問的特朗普總統就事關中美關係以及世界和平發展的重大問題進行深入溝通。中方願同美方共同努力,全面準確落實兩國元首重要共識,增進相互正確認知,尊重彼此核心利益,加強各領域務實合作,妥善管控分歧,積極構建中美建設性戰略穩定關",
@@ -3500,6 +3715,23 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "952942a8e36798f94d6b24b18b0dd2f3",
+      "title": "阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕",
+      "description": "阿里巴巴(09988)宣布集資 800 億元全數押注 AI,惟市場對股權攤薄及資本開支大增反應劇烈。阿里股價單日急挫 8.5%,跌穿配股價,市值蒸發逾 2,000 億元。為穩定軍心,集團主席蔡崇信及首席執行官吳泳銘隨即在場內斥資約 1.2 億元增持股份。 市值大蒸發:股價跌穿配售價 配股消息公布後,阿里巴巴股價在二級市場顯著受壓。 全日股價曾大挫逾一成,低見 110.1 元,最終收報 112.5 元,跌幅達 8.5%,失守 112.7 元的配股價。單日市值大幅蒸發 2,013.. The post 阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/news/alibaba-09988-share-placement-joe-tsai-eddie-wu-increase-stake-michael-burry-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2035197/",
+      "pubDate": "2026-08-24 10:59:25",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/07051243-df5f-4d2f-8e93-d8aed9552584_276786316a8c23ff8bb32.png",
+      "keywords": [
+        "即時財經"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "2b1441d2cd60c785358e29337fac7b71",
@@ -5219,6 +5451,29 @@
         "health"
       ],
       "region": "hk"
+    },
+    {
+      "id": "6e3febaa38b56370cd3fca70bcac2e7f",
+      "title": "海明威式的危險警示:美國國債站上四十萬億美元高位",
+      "description": "2024年大選期間,特朗普不止一次向美國人描繪過他的施政藍圖:阻擋非法移民,削減政府開支,通過徵收關稅增加財政收入,把美國從民主黨拜登的無能",
+      "link": "https://www.hk01.com/%E5%9C%8B%E9%9A%9B%E5%88%86%E6%9E%90/60383055/%E6%B5%B7%E6%98%8E%E5%A8%81%E5%BC%8F%E7%9A%84%E5%8D%B1%E9%9A%AA%E8%AD%A6%E7%A4%BA-%E7%BE%8E%E5%9C%8B%E5%9C%8B%E5%82%B5%E7%AB%99%E4%B8%8A%E5%9B%9B%E5%8D%81%E8%90%AC%E5%84%84%E7%BE%8E%E5%85%83%E9%AB%98%E4%BD%8D",
+      "pubDate": "2026-08-24 09:00:42",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20210906/511552604526874624910782.jpeg/ugNP75X6qj4GNzMODk80bX7n-9Vok7EpNcN9RTXDfUU",
+      "keywords": [
+        "新聞",
+        "國際",
+        "世界新聞",
+        "hk01",
+        "國際新聞",
+        "環球",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "03c3518771a84f4edc804cd089c73c7d",
@@ -9184,25 +9439,6 @@
       "region": "hk"
     },
     {
-      "id": "a0e40c845bb02de218421eaebf3ceaba",
-      "title": "首次配股|阿里巴巴擬配股集資800億 全數用於AI發展 曾跌近9%失配股價",
-      "description": "科技巨頭阿里巴巴(9988)宣佈進行上市以來首次配股集資,配售總金額高達800億港元,所得資金將全數用於投資「...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87-%E6%93%AC%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87800%E5%84%84%E6%8C%87%E5%85%A8%E6%95%B8%E7%94%A8%E6%96%BCai%E7%99%BC%E5%B1%95-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%B7%8C%E8%BF%919-%E5%A4%B1%E9%85%8D%E8%82%A1%E5%83%B9-050000602.html",
-      "pubDate": "2026-08-24 05:00:00",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bossmind_356/96a015a93955322d7a568f454225a52d.jpg",
-      "keywords": [
-        "阿里巴巴",
-        "ai",
-        "阿里巴巴擬"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "cfed0c36ab8fd1fb3c7837cc56b4fc63",
       "title": "美中長債息口走勢 相映成趣",
       "description": "最重要新發展是美國長債息口開始飈升,有點失控的味道。每年利息支出或將高達1.4萬億美元,已遠超軍費,僅低於保健和社福支出。",
@@ -12132,27 +12368,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "a1709d260bb374a396a5fa9a2552f26b",
-      "title": "貝森特宣告對伊朗展開「經濟D日」攻勢,德黑蘭警告石油供應將遭重創",
-      "description": "Investing.com - 美國財政部長斯科特·貝森特(Scott Bessent)週日警告,伊朗將面臨嚴峻的經濟後果,華盛頓正準備宣布其史上最嚴厲的對伊制裁措施。",
-      "link": "https://hk.finance.yahoo.com/news/%E8%B2%9D%E6%A3%AE%E7%89%B9%E5%AE%A3%E5%91%8A%E5%B0%8D%E4%BC%8A%E6%9C%97%E5%B1%95%E9%96%8B-%E7%B6%93%E6%BF%9Fd%E6%97%A5-%E6%94%BB%E5%8B%A2-%E5%BE%B7%E9%BB%91%E8%98%AD%E8%AD%A6%E5%91%8A%E7%9F%B3%E6%B2%B9%E4%BE%9B%E6%87%89%E5%B0%87%E9%81%AD%E9%87%8D%E5%89%B5-015210296.html",
-      "pubDate": "2026-08-24 01:52:10",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM2B1EJ_M.jpg",
-      "keywords": [
-        "貝森特",
-        "霍爾木茲海峽",
-        "華盛頓",
-        "伊朗",
-        "美國財政部長"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "33ac26e25ed1d4ab5851bfdab459d266",
@@ -209054,6 +209269,6 @@
       "pinned": true
     }
   ],
-  "total": 10638,
-  "last_updated": "2026-08-25T14:08:29.377474"
+  "total": 10650,
+  "last_updated": "2026-08-25T15:12:49.922412"
 }
