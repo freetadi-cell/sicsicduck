@@ -1,0 +1,10 @@
+{
+  "id": "9dbc02e0469e13f981c32d9d4b39bb57",
+  "title": "MPS推出高集成电源模块,为AI加速卡提供15A至240A全覆盖供电方案",
+  "source_name": "美通社",
+  "link": "https://www.prnasia.com/story/545074-1.shtml",
+  "rewritten_title": "MPS推兩款電源模組 覆蓋AI加速卡15A至240A供電需求",
+  "rewritten": "MPS芯源系統（納斯達克：MPWR）推出MPM3696-40與MPM3685兩款高集成電源模組，分別針對大電流核心供電與中小功率輔助供電。MPM3696-40支援最高240A輸出，適用於GPU核心、AI ASIC及HBM；MPM3685提供最高15A輸出，適用於FPGA、RAM等負載。兩款產品均採用緊湊封裝與快速瞬態響應架構，可協同工作以簡化AI加速卡與伺服器板卡的電源設計。",
+  "status": "done",
+  "fetched_at": "2026-08-25T22:07:39"
+}
