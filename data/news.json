@@ -1,7 +1,921 @@
 {
-  "last_updated": "2026-08-26T02:12:18.784810",
-  "total": 10989,
   "articles": [
+    {
+      "id": "43a35687e932bd32b279515481c433f9",
+      "title": "美據報擬加徵中國關稅 恒指高開116點 阿里獲增持重上配股價 小鵬績後跌逾8%|港股開市",
+      "description": "美國財長貝森特宣佈對伊朗展開「前所未有」的經濟行動,以切斷伊朗與全球經濟聯繫,並警告任何繼續與伊朗開展業務的國家都可能面臨美國制裁。另一方面,據彭博引述消息報道,美國總統特朗普預計於9月24日與中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%關稅,使特朗普第二任期內對華關稅水平提升至約20%。 金價逼4700美元 比特幣衝8萬美元 美股三大指數周一個別發展,道指收市",
+      "link": "https://www.stheadline.com/stock-market/3607900/%E7%BE%8E%E6%93%9A%E5%A0%B1%E6%93%AC%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B%E9%97%9C%E7%A8%85-%E6%81%92%E6%8C%87%E9%AB%98%E9%96%8B116%E9%BB%9E-%E9%98%BF%E9%87%8C%E7%8D%B2%E5%A2%9E%E6%8C%81%E9%87%8D%E4%B8%8A%E9%85%8D%E8%82%A1%E5%83%B9-%E5%B0%8F%E9%B5%AC%E7%B8%BE%E5%BE%8C%E8%B7%8C%E9%80%BE8%E6%B8%AF%E8%82%A1%E9%96%8B%E5%B8%82",
+      "pubDate": "2026-08-25 01:28:59",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/360d8187db7cec3a53fafaebe4a7f731/2026-08/dd_1_6.jpg",
+      "keywords": [
+        "港股"
+      ],
+      "category": [
+        "business",
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "0f5be3b7a35b8ebeb34ddf704e190dea",
+      "title": "彭博社:特朗普擬9.24晤習近平前 宣布加徵中國7.5%關稅",
+      "description": "彭博社8月24日引述消息人士報道,在美國總統特朗普預計於9月24日與到訪白宮的中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%的關稅,使特朗普第二任期內對華關稅水平提升至約20%。不過,路透社報道指,暫未能獨立證實該報道。 美方擬發布「產能過剩」調查 法律定稿面臨挑戰 彭博社的報道指,美方貿易官員計劃在中美最高領導人9月24日「習特會」登場前,正式公布針對「產能過剩",
+      "link": "https://www.stheadline.com/realtime-world/3607885/%E5%BD%AD%E5%8D%9A%E7%A4%BE%E7%89%B9%E6%9C%97%E6%99%AE%E6%93%AC924%E6%99%A4%E7%BF%92%E8%BF%91%E5%B9%B3%E5%89%8D-%E5%AE%A3%E5%B8%83%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B75%E9%97%9C%E7%A8%85",
+      "pubDate": "2026-08-24 23:56:49",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6ec67f1f4fd3676edec8340889598d05/2026-08/2026-08-25_00_43_30.png",
+      "keywords": null,
+      "category": [
+        "business",
+        "politics",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "6e5d797bf7e9e8199d29f9e6e9106226",
+      "title": "美國擬在習特峰會前對中國加徵7.5%產能過剩關稅",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E6%93%AC%E5%9C%A8%E7%BF%92%E7%89%B9%E5%B3%B0%E6%9C%83%E5%89%8D%E5%B0%8D%E4%B8%AD%E5%9C%8B%E5%8A%A0%E5%BE%B57-5-%E7%94%A2%E8%83%BD%E9%81%8E%E5%89%A9%E9%97%9C%E7%A8%85-164734004.html",
+      "pubDate": "2026-08-24 16:47:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4611N_M.jpg",
+      "keywords": [
+        "特朗普"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "952942a8e36798f94d6b24b18b0dd2f3",
+      "title": "阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕",
+      "description": "阿里巴巴(09988)宣布集資 800 億元全數押注 AI,惟市場對股權攤薄及資本開支大增反應劇烈。阿里股價單日急挫 8.5%,跌穿配股價,市值蒸發逾 2,000 億元。為穩定軍心,集團主席蔡崇信及首席執行官吳泳銘隨即在場內斥資約 1.2 億元增持股份。 市值大蒸發:股價跌穿配售價 配股消息公布後,阿里巴巴股價在二級市場顯著受壓。 全日股價曾大挫逾一成,低見 110.1 元,最終收報 112.5 元,跌幅達 8.5%,失守 112.7 元的配股價。單日市值大幅蒸發 2,013.. The post 阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/news/alibaba-09988-share-placement-joe-tsai-eddie-wu-increase-stake-michael-burry-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2035197/",
+      "pubDate": "2026-08-24 10:59:25",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/07051243-df5f-4d2f-8e93-d8aed9552584_276786316a8c23ff8bb32.png",
+      "keywords": [
+        "即時財經"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "3829d447d125917329598ecb9b4e5390",
+      "title": "AI時代下的數碼共融 善用人工智能打造更友善的網站與流動應用程式",
+      "description": "香港2026年8月25日 /美通社/ -- 人工智能(AI)正以前所未有的速度改變企業的營運模式,從客戶服務、市場推廣到數據分析及業務管理,AI的應用日益廣泛。香港互聯網註冊管理有限公司(HKIRC)鼓勵企業在推動數碼轉型的過程中,積極肩負促進數碼共融的責任。企業可善用AI技術提升數碼服務的可達性與易用性,確保不同背景及能力人士均能公平受惠於科技發展帶來的機遇。 善用人工智能 推動數碼無障礙與共融發展...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/ai--302859170.html",
+      "pubDate": "2026-08-25 07:00:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": null,
+      "keywords": [
+        "香港互聯網註冊管理有限公司",
+        "internet technology",
+        "artificial intelligence",
+        "telecommunications industry",
+        "computer & electronics"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b33191c94ffbbecd39ba1baa47eed9f0",
+      "title": "全港首宗犬隻心臟病微創治療 毋須停心跳減手術負擔",
+      "description": "狗狗年紀漸長,心臟病亦較常見。十歲松鼠狗「BB」去年確診退化性二尖瓣疾病,最初屬B2期,今年5月病情突然惡化至C期,日夜咳嗽甚至咳至嘔吐,檢查發現心臟肥大及肺積水。BB其後接受全港首宗犬隻TEER(經導管二尖瓣修復術)微創手術,術後左心房與主動脈比例由2.41降至1.69,左心房容積減少約四成,咳嗽及活動能力均有改善。",
+      "link": "https://www.am730.com.hk/%E7%94%9F%E6%B4%BB/1049335/%E5%85%A8%E6%B8%AF%E9%A6%96%E5%AE%97%E7%8A%AC%E9%9A%BB%E5%BF%83%E8%87%9F%E7%97%85%E5%BE%AE%E5%89%B5%E6%B2%BB%E7%99%82-%E6%AF%8B%E9%A0%88%E5%81%9C%E5%BF%83%E8%B7%B3%E6%B8%9B%E6%89%8B%E8%A1%93%E8%B2%A0%E6%93%94",
+      "pubDate": "2026-08-25 07:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049335/article/1049335/df/01M0VHS9M5DR8V778QAB2E3YGT.jpg?updatedAt=1787632294",
+      "keywords": [
+        "心臟病",
+        "獸醫",
+        "寵物"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fc5788bf90a93ef045633c9bde046e71",
+      "title": "《新盤》西南九龍叡璟I累收逾4.9萬票 周六次輪銷售133伙價單單位",
+      "description": "由華潤置地(01109.HK)發展的西南九龍叡璟I迄今累收逾49,000個購樓意向登記,超額認購逾367倍,項目將於周六(29日)進行次輪銷售170伙,其中133伙屬以價單形式發售的單位。 華潤置地(海外)董事總經理施偉賢表示,次輪將以價單形式推售133個標準單位,悉數推出價單第3號的所有單位,涵蓋位於第3(3A...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%96%B0%E7%9B%A4-%E8%A5%BF%E5%8D%97%E4%B9%9D%E9%BE%8D%E5%8F%A1%E7%92%9Fi%E7%B4%AF%E6%94%B6%E9%80%BE4-9%E8%90%AC%E7%A5%A8-%E5%91%A8%E5%85%AD%E6%AC%A1%E8%BC%AA%E9%8A%B7%E5%94%AE133%E4%BC%99%E5%83%B9%E5%96%AE%E5%96%AE%E4%BD%8D-065857304.html",
+      "pubDate": "2026-08-25 06:58:57",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "retirement",
+        "investing",
+        "economy",
+        "business",
+        "stocks",
+        "track portfolio",
+        "stock",
+        "financial information",
+        "finance",
+        "stock research",
+        "business news",
+        "tax",
+        "real estate",
+        "suze orman",
+        "stock valuation",
+        "investment tools",
+        "mutual funds",
+        "mortgage",
+        "quote",
+        "personal finance"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "790c7254c3a0acd84b74eea6db72f09c",
+      "title": "台灣利率市場:IRS利率稍走低 短率大致持穩;央行升息與否看法不一",
+      "description": "【彭博】-- 對於CNBC報導美國財政部或動用現金儲備購債,財長貝森特並未進一步釋放相關信號,美國10年期國債殖利率在隔夜走低後亞洲時段回升至4.7%上方。台灣各年期IRS利率周二多數轉跌,其中5年期下降約1.",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%88%A9%E7%8E%87%E5%B8%82%E5%A0%B4-%E8%B3%87%E9%87%91%E8%88%87%E7%9F%AD%E6%9C%9F%E5%88%A9%E7%8E%87%E5%A4%A7%E8%87%B4%E6%8C%81%E7%A9%A9-%E9%97%9C%E6%B3%A8%E9%A2%B1%E9%A2%A8%E5%8B%95%E5%90%91-034605044.html",
+      "pubDate": "2026-08-25 06:58:56",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "台灣央行"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f156fd1b295d550082a592c35f2c6084",
+      "title": "一箭7星 長征六號丙遙一運載火箭發射成功",
+      "description": "中評社北京8月25日電/8月25日11時21分,長征六號丙遙一運載火箭在太原衛星發射中心發射升空,將中科衛星14星、中科衛星15星、木鐸1A衛星、木鐸1B衛星、靜安夢想星、八一04星、銀河航天靈知09泰國立方星等7顆衛星順利送入預定軌道,飛行試驗任務取得圓滿成功。 新華社報導,這次任務是長征系列運載火箭的第665次飛行。",
+      "link": "http://www.crntt.com/doc/7_0_107227619_1_0825145659.html",
+      "pubDate": "2026-08-25 06:56:59",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/107227621.jpg",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5560e840e6250e0c41b1030132c1b646",
+      "title": "《大行》中金升瑞聲(02018.HK)目標價至50元 上半年純利略遜預期 但新業務盈利勝預期",
+      "description": "中金發表報告,指瑞聲科技(02018.HK)多元化業務締造新增長引擎,其上半年收入按年升9%至145.1億元人民幣,股東應佔淨利潤按年增長3%至9.01億元人民幣,略低於該行預期。剔除公允值變動損益後淨利潤按年增長37%。該行將上半年利潤增長歸因於(1)散熱業務收入按年激增約400%,帶動精密結構件及散熱業務收入...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E4%B8%AD%E9%87%91%E5%8D%87%E7%91%9E%E8%81%B2-02018-hk-%E7%9B%AE%E6%A8%99%E5%83%B9%E8%87%B350%E5%85%83-065631685.html",
+      "pubDate": "2026-08-25 06:56:31",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "淨利潤",
+        "人民幣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4c117b93209e5ca6425159961ede7f5c",
+      "title": "《大行》中金:中銀航空租賃(02588.HK)股東回報進一步增強 下調盈測重申「跑贏行業」",
+      "description": "中金發表報告,指中銀航空租賃(02588.HK)資產負債表加快擴張支撐盈利。上半年收入按年升4%至13億美元,淨利潤按年增長4%至3.57億美元,每股盈利按年升4%至51美仙,大致符合該行預期。該公司宣派中期股息每股17.99美仙,派息比率按年升5個百分點至35%。股東回報進一步增強。 考慮到聯儲局減息步伐放緩,...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E4%B8%AD%E9%87%91-%E4%B8%AD%E9%8A%80%E8%88%AA%E7%A9%BA%E7%A7%9F%E8%B3%83-02588-hk-065451576.html",
+      "pubDate": "2026-08-25 06:54:51",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "資產負債表",
+        "中銀航空租賃"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d32aba161e98a98acd95aa026d36a777",
+      "title": "電費燃料調整費|9月港燈每度電收60.7仙升5.9% 中電升0.2%",
+      "description": "受國際地緣政治局勢持續緊張及能源市場波動影響,本港兩大電力公司公布最新燃料調整費數據。港燈9月份燃料調整費將升至每度電60.7仙,按月上升約5.",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383401/%E9%9B%BB%E8%B2%BB%E7%87%83%E6%96%99%E8%AA%BF%E6%95%B4%E8%B2%BB-9%E6%9C%88%E6%B8%AF%E7%87%88%E6%AF%8F%E5%BA%A6%E9%9B%BB%E6%94%B660-7%E4%BB%99%E5%8D%875-9-%E4%B8%AD%E9%9B%BB%E5%8D%870-2",
+      "pubDate": "2026-08-25 06:53:20",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260225/1103272771040841728318674.jpeg/GnYVBDQHNKiiNHFrcaYHA4mfDSk5fYDQeNgLel3YC3o",
+      "keywords": [
+        "國際新聞",
+        "即時新聞",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "港聞",
+        "頭條新聞",
+        "hk01"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "aac51881ebd206865d8ec01f27704b2a",
+      "title": "《大行》中金:貝殼(BEKE.US)次季經調整純利升75%遠勝預期 上調盈測重申「跑贏行業」",
+      "description": "中金發表報告,指貝殼(BEKE.US)次季收入按年跌5.7%至245.4億元人民幣,符合市場預期。經調整淨利潤按年升74.9%至接近31.9億元人民幣,顯著超越市場預期,主要受惠於成本及費用優化優於預期。自2022年8月啟動股份回購計劃以來,截至今年次季末,公司已累計回購價值約29.9億美元的股份。單計次季,公司...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E4%B8%AD%E9%87%91-%E8%B2%9D%E6%AE%BC-beke-us-065216268.html",
+      "pubDate": "2026-08-25 06:52:16",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "人民幣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "27a8fae79508b62ef6af9f32a5321b48",
+      "title": "中醫醫院|12.11推24小時住院 政府資助病床「全包」日收980元",
+      "description": "香港中醫醫院今日(25日)宣布擴展服務安排,將於今年12月11日正式開展24小時住院服務,提供共93張常規住院病床。院方同步公布服務收費標準,其中政府資助住院服務採用套餐式收費,每日980元「全包」。另外,院方透露將於9月及11月分別推出各5個專病項目,包括「皮膚濕疹」及「柏金遜病」等,連同現有項目,年內將合共提供12個專病項目。 資助與自費病床雙軌並行 醫務衞生局中醫醫院發展計劃辦事處總監張偉麟",
+      "link": "https://www.stheadline.com/society/3608015/%E4%B8%AD%E9%86%AB%E9%86%AB%E9%99%A21211%E6%8E%A824%E5%B0%8F%E6%99%82%E4%BD%8F%E9%99%A2-%E6%94%BF%E5%BA%9C%E8%B3%87%E5%8A%A9%E7%97%85%E5%BA%8A%E5%85%A8%E5%8C%85%E6%97%A5%E6%94%B6980%E5%85%83",
+      "pubDate": "2026-08-25 06:51:14",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/ca7da0c04eee2dcb02a10226de235219/2026-08/WhatsApp_Image_2026-08-25_at_2_02_58_PM_0.jpeg",
+      "keywords": [
+        "中醫",
+        "香港中醫醫院"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4a240ddb9cd6c5b76ca8269cb84d6108",
+      "title": "郭東延今天正式入伍!剪短頭髮向粉絲告別:「我會平安回來的~」",
+      "description": "出演過多部熱門韓劇《雲畫的月光》、《黑道律師文森佐》、《淚之女王》的演員郭東延在即將入伍之際,向粉絲們送上了最後的問候。",
+      "link": "https://www.koreastardaily.com/tc/news/163744",
+      "pubDate": "2026-08-25 06:50:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-25/163744-1062962.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ce137e14a7f6e929486ebaccf951b551",
+      "title": "陽明交大啟動新創計劃 打造深科技產業聚落",
+      "description": "中評社新竹8月25日電(記者 盧誠輝)新竹陽明交通大學25日宣布啟動“NYCU 50”創新計劃,把長期累積的科研、新創與產業能量組織起來,進一步串聯企業、醫院、資本、校友及國際市場,打造陽明交大的深科技(Deep Tech)產業聚落。 陽明交大校長林奇宏表示,一項研究從實驗室走向市場,需經歷專利布局、產品開發、場域驗證、企業合作及資金募集等多重關卡。過去研究團隊必須自行尋找資源,如同",
+      "link": "http://www.crntt.com/doc/7_0_160260722_1_0825144935.html",
+      "pubDate": "2026-08-25 06:49:34",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/160260724.jpg",
+      "keywords": [
+        "新竹市",
+        "林奇宏",
+        "陽明交通大學"
+      ],
+      "category": [
+        "science",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1123d6a095b36240b4005f56ebe50795",
+      "title": "無人機條例本周決戰 李綱籲台美共同生產",
+      "description": "中評社台北8月25日電(記者 邱筠媜)“立法院”朝野黨團26日將協商無人機條例,“立法院”會力拚28日三讀。民進黨“立委”鍾佳濱今召開記者會,台灣大學機械系教授、台大無人載具研發設計中心主任李綱於會中透露,最近美國卸任國防部高層來台,不斷詢問台灣政府是否投入無人機產業鏈發展。他強調,台灣擁有最完整AI供應鏈與無人機零組件齊全優勢,朝野應創造良好投資環境,與美國合作共同生產、研發無人機。",
+      "link": "http://www.crntt.com/doc/7_0_160260716_1_0825144852.html",
+      "pubDate": "2026-08-25 06:48:51",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/160260720.jpg",
+      "keywords": [
+        "兩岸軍事",
+        "李綱",
+        "民進黨",
+        "無人機"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7e437a4f2075cb89512d1fbaf8478b43",
+      "title": "長飛光纖光纜(06869)H股午後再挾高17.9% A股僅升3%",
+      "description": "<匯港通訊> 長飛光纖光纜(06869)H股午後再挾高17.9%至166港元,A股報390.78元人民幣,僅升3.138%。 (SY)",
+      "link": "https://hk.finance.yahoo.com/news/%E9%95%B7%E9%A3%9B%E5%85%89%E7%BA%96%E5%85%89%E7%BA%9C-06869-h%E8%82%A1%E5%8D%88%E5%BE%8C%E5%86%8D%E6%8C%BE%E9%AB%9817-9-a%E8%82%A1%E5%83%85%E5%8D%873-064819841.html",
+      "pubDate": "2026-08-25 06:48:19",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊",
+        "長飛光纖光纜"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3cb0b07e814babba2bd2de4f2edbd4ba",
+      "title": "最後施政報告 張麗善談打拚雲林一度哽咽",
+      "description": "中評社雲林8月25日電(記者 李京昇)雲林縣議會25日舉行定期會,中國國民黨雲林縣長張麗善進行施政總報告,她花費2小時細數其任內8年施政,同黨雲林縣議員、縣議會國民黨團總召李明哲詢問她如何8年如一日保持工作熱忱?她表示,源自對雲林的愛與改變家鄉的執著,加上護理人員背景,讓上任第一天到最後一天,都會堅持同樣態度為雲林打拚。也讓她一度講到哽咽。 雲林縣議會今天舉行定期會,即將在今年12月",
+      "link": "http://www.crntt.com/doc/7_0_160260696_1_0825143804.html",
+      "pubDate": "2026-08-25 06:38:04",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/160260709.JPG",
+      "keywords": [
+        "雲林縣",
+        "張麗善"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7953c63e9d787405511e413b809a5ce2",
+      "title": "加拿大|拒接受美國貿協削弱法語 特朗普徵50%汽車關稅",
+      "description": "加拿大總理卡尼(Mark Carney)表示,不會接受削弱法語的美國貿易協議。美國總統特朗普(Donald Trump)宣布,將對加拿大的汽車及貨車加徵50%關稅。特朗普|斥加拿大只想要好處 卡尼指新...",
+      "link": "https://inews.hket.com/article/4182159",
+      "pubDate": "2026-08-25 06:38:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4182159/250826_169_iet_fish_50_v1_300.jpg",
+      "keywords": [
+        "美國",
+        "貿易戰",
+        "卡尼",
+        "汽車",
+        "地緣政治",
+        "特朗普",
+        "關稅",
+        "加拿大",
+        "貿易"
+      ],
+      "category": [
+        "world"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "32401820a100b5cf9e769ec5d6c93c1c",
+      "title": "韓正會見印度國安顧問:中印應增進戰略互信",
+      "description": "中評社北京8月25日電/國家副主席韓正25日在北京會見印度國家安全顧問、中印邊界問題印方特別代表多瓦爾。 據新華社報導,韓正表示,過去兩年,習近平主席同莫迪總理在喀山、天津兩度會晤,就中印關係發展達成一系列重要共識,引領兩國關係重回恢復改善軌道。中印作為相鄰的發展中大國和重要新興經濟體,應從戰略高度和長遠角度看待和處理兩國關係,共同落實好兩國領導人重要共識,增進戰略互信,挖掘合作潛",
+      "link": "http://www.crntt.com/doc/7_0_107227612_1_0825143548.html",
+      "pubDate": "2026-08-25 06:35:47",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/107227614.jpg",
+      "keywords": [
+        "韓正",
+        "中印關係"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d4b89a1eff416472124ccbd93c0ff7fc",
+      "title": "網傳港鐵嚴打「交收黨」?深水埗店主站內面交撞正截查 客人臨場驚走:「捉得好緊!」港鐵澄清: 人員當時進行查票工作|Juicy叮",
+      "description": "社交平台Threads上流傳港鐵截查違規人士的事件,引發網民熱烈討論,有深水埗一間店舖的負責人昨日(24日)交收時,聲稱撞正港鐵職員截查數名男子,其客人見狀臨時縮沙,急改交收地點,他呼籲同行及買家「避下風頭」。港鐵發言人今日(25日)回覆《星島頭條》查詢澄清,人員當時在站內正進行查票工作。 多名港鐵職員截查 買家臨急煞停:出站口交收啦 事發在昨日(24日)港鐵深水埗站內,一間主要售賣防災、家居及汽",
+      "link": "https://www.stheadline.com/local-topics/3607932/%E7%B6%B2%E5%82%B3%E6%B8%AF%E9%90%B5%E5%9A%B4%E6%89%93%E4%BA%A4%E6%94%B6%E9%BB%A8%E6%B7%B1%E6%B0%B4%E5%9F%97%E5%BA%97%E4%B8%BB%E7%AB%99%E5%85%A7%E9%9D%A2%E4%BA%A4%E6%92%9E%E6%AD%A3%E6%88%AA%E6%9F%A5-%E5%AE%A2%E4%BA%BA%E8%87%A8%E5%A0%B4%E9%A9%9A%E8%B5%B0%E6%8D%89%E5%BE%97%E5%A5%BD%E7%B7%8A%E6%B8%AF%E9%90%B5%E6%BE%84%E6%B8%85-%E4%BA%BA%E5%93%A1%E7%95%B6%E6%99%82%E9%80%B2%E8%A1%8C%E6%9F%A5%E7%A5%A8%E5%B7%A5%E4%BD%9CJuicy%E5%8F%AE",
+      "pubDate": "2026-08-25 06:34:51",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/8afde82750af58594ee9ce8967fccde9/2026-08/20260825_NEWS_MTR_v2_0.png",
+      "keywords": [
+        "juicy叮",
+        "熱話"
+      ],
+      "category": [
+        "crime",
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "abb4ce8c935701c5d715550ffb86bd5b",
+      "title": "有片|機械人舉重「選手」扛槓鈴失控衝向裁判桌 倒地被擔架抬離",
+      "description": "8月22日,第二屆世界人形機械人運動會在北京開幕。在一場舉重比賽中,有一名天卓隊機械人選手舉起槓鈴後失去平衡,衝向裁判桌後倒地。據網民發佈的",
+      "link": "https://www.hk01.com/%E5%A4%A7%E5%9C%8B%E5%B0%8F%E4%BA%8B/60383398/%E6%9C%89%E7%89%87-%E6%A9%9F%E6%A2%B0%E4%BA%BA%E8%88%89%E9%87%8D-%E9%81%B8%E6%89%8B-%E6%89%9B%E6%A7%93%E9%88%B4%E5%A4%B1%E6%8E%A7%E8%A1%9D%E5%90%91%E8%A3%81%E5%88%A4%E6%A1%8C-%E5%80%92%E5%9C%B0%E8%A2%AB%E6%93%94%E6%9E%B6%E6%8A%AC%E9%9B%A2",
+      "pubDate": "2026-08-25 06:34:48",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168926200182083584761803.jpeg/cQQIqQu2sq6mynR5HDErMpvvuk5PIWvTUVv9-FFb_fg",
+      "keywords": [
+        "文化",
+        "人物故事",
+        "香港01",
+        "社會"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bb78c50b8acdb351da7807f730d786da",
+      "title": "有片|機械人舉重「選手」舉槓鈴失控衝向裁判桌 倒地被擔架抬離",
+      "description": "8月22日,第二屆世界人形機械人運動會在北京開幕。在一場舉重比賽中,有一名天卓隊機械人選手舉起槓鈴後失去平衡,衝向裁判桌後倒地。據網民發佈的",
+      "link": "https://www.hk01.com/%E5%A4%A7%E5%9C%8B%E5%B0%8F%E4%BA%8B/60383398/%E6%9C%89%E7%89%87-%E6%A9%9F%E6%A2%B0%E4%BA%BA%E8%88%89%E9%87%8D-%E9%81%B8%E6%89%8B-%E8%88%89%E6%A7%93%E9%88%B4%E5%A4%B1%E6%8E%A7%E8%A1%9D%E5%90%91%E8%A3%81%E5%88%A4%E6%A1%8C-%E5%80%92%E5%9C%B0%E8%A2%AB%E6%93%94%E6%9E%B6%E6%8A%AC%E9%9B%A2",
+      "pubDate": "2026-08-25 06:34:48",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168926200182083584761803.jpeg/cQQIqQu2sq6mynR5HDErMpvvuk5PIWvTUVv9-FFb_fg",
+      "keywords": [
+        "文化",
+        "人物故事",
+        "香港01",
+        "社會"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a4370f2a143c3d0d3d2f72a8ea9ba395",
+      "title": "特朗普連曬與金正恩合照 再次釋放對話信號",
+      "description": "中評社北京8月25日電/美國總統特朗普在自家社交媒體平台Truth Social接連發布三張與朝鮮領導人金正恩的合照,再次釋放希望重啟朝美對話的信號。 據《聯合早報》報導,特朗普於星期一(8月24日)下午發布的照片中,第一張為2018年6月在新加坡舉行美朝首腦首次歷史性會晤的照片,另外兩張為2019年6月特朗普和金正恩在板門店會晤時拍攝的照片。 韓聯社報導稱,分析人士認為,",
+      "link": "http://www.crntt.com/doc/7_0_107227609_1_0825143350.html",
+      "pubDate": "2026-08-25 06:33:49",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/107227611.jpg",
+      "keywords": [
+        "美朝關係",
+        "朝美關係",
+        "金正恩",
+        "特朗普"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e45f5d97c94188b9fdcc8c3d68380829",
+      "title": "企業 AI 規模化部署實戰:AI 代理重塑端到端流程.ISO 42001 築起可信治理防線",
+      "description": "企業運用 AI 不再停留在單一部門的小規模試驗,而是邁向全公司整合業務流程。在佳能香港舉辦的企業科技研討會上,多位業界領袖與專家指出,企業要成功推行 AI,轉化為商業價值,關鍵在於推動「結果主導」的思維變革、引入具自主執行能力的 AI 代理,並依循國際標準 ISO 42001 建立受控可信的治理體系。 這篇文章 企業 AI 規模化部署實戰:AI 代理重塑端到端流程.ISO 42001 築起可信治理防線 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/practical-guide-to-large-scale-deployment-of-enterprise-ai/",
+      "pubDate": "2026-08-25 06:32:48",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/20190233/practical-guide-to-large-scale-deployment-of-enterprise-ai-01.jpg",
+      "keywords": [
+        "iso 42001",
+        "tech",
+        "a.i. 代理",
+        "ai 代理",
+        "ai",
+        "科技新聞",
+        "a.i.",
+        "佳能香港",
+        "biz.it",
+        "趨勢分析",
+        "think big"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0570ead98f1b377b2f966686e41835a6",
+      "title": "韓智庫:朝美軍控談判難以替代無核化",
+      "description": "中評社首爾8月25日電(記者 崔銀珍)韓國峨山政策研究院24日發布報告指出,以凍結或限制朝鮮核能力為核心的朝美軍控談判,未必比無核化談判更容易推進。由於雙方的履約核查透明度並不對稱,協議反而可能對韓美軍事能力形成更嚴格的約束。即使無核化的核心措施需後置並分階段實施,也應保留無核化這一最終目標。 這份題為“朝美軍控談判論的局限與韓國政府的政策方向”的報告由該院外交安全中心研究委員全暻珠",
+      "link": "http://www.crntt.com/doc/7_0_107227548_1_0825143248.html",
+      "pubDate": "2026-08-25 06:32:47",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/107227550.jpg",
+      "keywords": [
+        "朝美軍控",
+        "無核化",
+        "延伸威懾"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "030e856304a9d2420be7d60d433bce4b",
+      "title": "許冠傑開騷疑場地所限被擱置 啟德體育園:前線團隊會作靈活安排",
+      "description": "日前,香港電台第二台的前電台節目主持人曾智華在社交平台發文,指歌神許冠傑原本有意挑戰啟德主場館開騷,不過場館的地理位置與極度嚴格的入場限制",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60383377/%E8%A8%B1%E5%86%A0%E5%82%91%E9%96%8B%E9%A8%B7%E7%96%91%E5%A0%B4%E5%9C%B0%E6%89%80%E9%99%90%E8%A2%AB%E6%93%B1%E7%BD%AE-%E5%95%9F%E5%BE%B7%E9%AB%94%E8%82%B2%E5%9C%92-%E5%89%8D%E7%B7%9A%E5%9C%98%E9%9A%8A%E6%9C%83%E4%BD%9C%E9%9D%88%E6%B4%BB%E5%AE%89%E6%8E%92",
+      "pubDate": "2026-08-25 06:30:56",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168906981080043520198436.jpeg/lH2i-05OOKhIj5G1QyoivPe5sJf4Uf7nwV2fOvddnzo",
+      "keywords": [
+        "即時娛樂新聞",
+        "韓星",
+        "娛樂新聞",
+        "藝人",
+        "新聞",
+        "香港新聞",
+        "香港01",
+        "明星",
+        "hk01",
+        "即時娛樂"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5619391c515a904f761fb45426e57857",
+      "title": "新加坡新育兒福利比北歐更優厚 學者:獅城長期生存的跨世代投資",
+      "description": "受訪政治觀察員認為,新加坡總理黃循財在地緣政治衝突頻發和氣候危機等外部陰霾籠罩之際,大幅調整生育政策並投入巨資支持家庭,是一場著眼於國家長",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60383318/%E6%96%B0%E5%8A%A0%E5%9D%A1%E6%96%B0%E8%82%B2%E5%85%92%E7%A6%8F%E5%88%A9%E6%AF%94%E5%8C%97%E6%AD%90%E6%9B%B4%E5%84%AA%E5%8E%9A-%E5%AD%B8%E8%80%85-%E7%8D%85%E5%9F%8E%E9%95%B7%E6%9C%9F%E7%94%9F%E5%AD%98%E7%9A%84%E8%B7%A8%E4%B8%96%E4%BB%A3%E6%8A%95%E8%B3%87",
+      "pubDate": "2026-08-25 06:30:54",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168868375011528704529630.jpeg/61rcds0NFn7p2GNsXlirSWiDu8pTormRN3CLjDdwi4w",
+      "keywords": [
+        "國際新聞",
+        "國際",
+        "新聞",
+        "香港01",
+        "世界新聞",
+        "環球",
+        "hk01"
+      ],
+      "category": [
+        "environment",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "75c4815c946318e90318077c86c552ca",
+      "title": "「含華量」普及後 車企競爭重回造車本身",
+      "description": "於8月21日正式開幕的2026成都車展在新車數量和整體熱度上均有所回落。但這並不說明車企在市場競爭上變得保守或者鬆懈。BMW、福士、智界、享界等品",
+      "link": "https://www.hk01.com/%E4%B8%AD%E5%9C%8B%E8%A7%80%E5%AF%9F/60383404/%E5%90%AB%E8%8F%AF%E9%87%8F-%E6%99%AE%E5%8F%8A%E5%BE%8C-%E8%BB%8A%E4%BC%81%E7%AB%B6%E7%88%AD%E9%87%8D%E5%9B%9E%E9%80%A0%E8%BB%8A%E6%9C%AC%E8%BA%AB",
+      "pubDate": "2026-08-25 06:30:43",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168921032619200512079546.jpeg/7t9OUHF2ld083g22v9uvRnZ-DHDiIz6RvIr_kbyK_5E",
+      "keywords": [
+        "兩岸",
+        "經濟",
+        "政治",
+        "香港01",
+        "中國",
+        "社會",
+        "文化"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8e8a4f3b1ff2bc36d4288206a2facc95",
+      "title": "英超|車路士門將山齊士「送禮」 球迷洗版怒罵 沙比阿朗素護航",
+      "description": "車路士新任主帥沙比阿朗素(Xabi Alonso)上任後在英超取得好開始,在球隊的「開咧戰」作客以3:2險勝富咸。然而門將羅拔山齊士(Robert Sánchez)",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60383274/%E8%8B%B1%E8%B6%85-%E8%BB%8A%E8%B7%AF%E5%A3%AB%E9%96%80%E5%B0%87%E5%B1%B1%E9%BD%8A%E5%A3%AB-%E9%80%81%E7%A6%AE-%E7%90%83%E8%BF%B7%E6%B4%97%E7%89%88%E6%80%92%E7%BD%B5-%E6%B2%99%E6%AF%94%E9%98%BF%E6%9C%97%E7%B4%A0%E8%AD%B7%E8%88%AA",
+      "pubDate": "2026-08-25 06:30:16",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168902422110670848504872.jpeg/mh4-5RhxXxK8egKUFj-4PvzSl8X4zPKzwL5Td8C-U3c",
+      "keywords": [
+        "體育新聞",
+        "高爾夫球",
+        "籃球",
+        "f1賽車",
+        "新聞",
+        "體育消息",
+        "香港新聞",
+        "香港01",
+        "網球",
+        "體育",
+        "nba",
+        "hk01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "884022f2162cfc3691eec8f489b63472",
+      "title": "郭可盈女兒林天若IGCSE成績出爐表現驚訝 爸爸林文龍激動獻吻 學霸女想做歌手?",
+      "description": "前TVB四大花旦之一郭可盈與林文龍婚後育有女兒林天若(Tania),淡出幕前的郭可盈專心相夫教女,不時在社交平台分享環遊世界的點滴,一家三口生活美滿。林天若在媽媽的悉心發掘下,在學術、品德及才藝方面都表現極其優異,從小參與多種課外活動,包括彈琴、繪畫、唱歌、玩花式溜冰和跳舞,名副其實的「學霸星二代」。 林天若睇完IGCSE成績一臉驚喜 郭可盈昨日(24日)貼出林文龍和女兒林天若出席英國國際普通中學",
+      "link": "https://www.stheadline.com/film-drama/3607990/%E9%83%AD%E5%8F%AF%E7%9B%88%E5%A5%B3%E5%85%92%E6%9E%97%E5%A4%A9%E8%8B%A5IGCSE%E6%88%90%E7%B8%BE%E5%87%BA%E7%88%90%E8%A1%A8%E7%8F%BE%E9%A9%9A%E8%A8%9D-%E7%88%B8%E7%88%B8%E6%9E%97%E6%96%87%E9%BE%8D%E6%BF%80%E5%8B%95%E7%8D%BB%E5%90%BB-%E5%AD%B8%E9%9C%B8%E5%A5%B3%E6%83%B3%E5%81%9A%E6%AD%8C%E6%89%8B",
+      "pubDate": "2026-08-25 06:30:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/49cda2a59980ee6fc4788beb84d26765/2026-08/kf002_3.jpg",
+      "keywords": [
+        "校長獎",
+        "tania林天若",
+        "保良局蔡繼有學校",
+        "igcse成績",
+        "igcse放榜",
+        "郭可盈女兒",
+        "林文龍女兒",
+        "星二代",
+        "林天若",
+        "郭可盈",
+        "林文龍",
+        "劉筱玲博士",
+        "明星育兒",
+        "劉筱玲",
+        "星二代學霸",
+        "蔡蔡繼有學校"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ada5b651513c613e9660617447165f5",
+      "title": "江若琳驚覺相簿零自己 慨嘆三年冇入鏡狂晒母子照補數",
+      "description": "江若琳(Elanne)與老公蕭唯展(Oscar)婚後育有一子Owen,而成為母親後,江若琳一直專心湊仔。轉眼間兒子已經三歲,最近,她終重拾歌手及演員身份,更相隔15年後再度拍劇。近日,她趁暑假尾聲,一家三口到泰國旅行,並在社交網分享多張溫馨合照,但她慨嘆原來自己這幾年一直沒有入鏡,相簿裏全是老公和兒子的照片。",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1049341/%E6%B1%9F%E8%8B%A5%E7%90%B3%E9%A9%9A%E8%A6%BA%E7%9B%B8%E7%B0%BF%E9%9B%B6%E8%87%AA%E5%B7%B1-%E6%85%A8%E5%98%86%E4%B8%89%E5%B9%B4%E5%86%87%E5%85%A5%E9%8F%A1%E7%8B%82%E6%99%92%E6%AF%8D%E5%AD%90%E7%85%A7%E8%A3%9C%E6%95%B8",
+      "pubDate": "2026-08-25 06:30:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049341/article/1049341/df/01M0VKWHGX9V2CRMEKW1R6AF5D.jpeg?updatedAt=1787638982",
+      "keywords": null,
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cea2526d23d2fdd5c18a9b4407bd21a7",
+      "title": "林天若IGCSE放榜睇成績一臉驚喜 郭可盈林文龍肉緊吻賀女兒:好好享受喜悅時刻",
+      "description": "前TVB四大花旦之一郭可盈與林文龍婚後育有女兒林天若(Tania),淡出幕前的郭可盈專心相夫教女,不時在社交平台分享環遊世界的點滴,一家三口生活美滿。林天若在媽媽的悉心發掘下,在學術、品德及才藝方面都表現極其優異,從小參與多種課外活動,包括彈琴、繪畫、唱歌、玩花式溜冰和跳舞,名副其實的「學霸星二代」。 林天若睇完IGCSE成績一臉驚喜 郭可盈昨日(24日)貼出林文龍和女兒林天若出席英國國際普通中學",
+      "link": "https://www.stheadline.com/film-drama/3607990/%E6%9E%97%E5%A4%A9%E8%8B%A5IGCSE%E6%94%BE%E6%A6%9C%E7%9D%87%E6%88%90%E7%B8%BE%E4%B8%80%E8%87%89%E9%A9%9A%E5%96%9C-%E9%83%AD%E5%8F%AF%E7%9B%88%E6%9E%97%E6%96%87%E9%BE%8D%E8%82%89%E7%B7%8A%E5%90%BB%E8%B3%80%E5%A5%B3%E5%85%92%E5%A5%BD%E5%A5%BD%E4%BA%AB%E5%8F%97%E5%96%9C%E6%82%85%E6%99%82%E5%88%BB",
+      "pubDate": "2026-08-25 06:26:51",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/49cda2a59980ee6fc4788beb84d26765/2026-08/kf002_3.jpg",
+      "keywords": [
+        "校長獎",
+        "tania林天若",
+        "保良局蔡繼有學校",
+        "igcse成績",
+        "igcse放榜",
+        "郭可盈女兒",
+        "林文龍女兒",
+        "星二代",
+        "林天若",
+        "郭可盈",
+        "林文龍",
+        "劉筱玲博士",
+        "明星育兒",
+        "劉筱玲",
+        "星二代學霸",
+        "蔡蔡繼有學校"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cfef37a9a0cd35d12ad01ac4808f7ecf",
+      "title": "被指圖取內塔尼亞胡兒命 伊朗:懸賞千萬美元刺殺特朗普幼子巴倫",
+      "description": "以色列總理內塔尼亞胡(Benjamin Netanyahu)8月24日聲稱伊朗曾試圖暗殺他其中一名兒子,但未有透露更多細節。同日,伊朗國營電視台播出影片,聲稱",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60383416/%E8%A2%AB%E6%8C%87%E5%9C%96%E5%8F%96%E5%85%A7%E5%A1%94%E5%B0%BC%E4%BA%9E%E8%83%A1%E5%85%92%E5%91%BD-%E4%BC%8A%E6%9C%97-%E6%87%B8%E8%B3%9E%E5%8D%83%E8%90%AC%E7%BE%8E%E5%85%83%E5%88%BA%E6%AE%BA%E7%89%B9%E6%9C%97%E6%99%AE%E5%B9%BC%E5%AD%90%E5%B7%B4%E5%80%AB",
+      "pubDate": "2026-08-25 06:22:37",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168923982498369536640285.png/t8jmS68ZG6JHpzu1bBBJdDQbRlJh4SlOO8DwEzvA8BM",
+      "keywords": [
+        "國際新聞",
+        "國際",
+        "新聞",
+        "香港01",
+        "世界新聞",
+        "環球",
+        "hk01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a54462a8effec8e9ae2ae92f7de4985f",
+      "title": "張雅屏:卓榮泰不守“憲法”就應辭職下台",
+      "description": "中評社台北8月25日電/“行政院長”卓榮泰17日再度宣布不副署“立法院”三讀通過的《台灣兒少成長及未來帳戶條例》及《有線廣播電視法》修正案。中國國民黨考紀會主委張雅屏25日在臉書發文表示,“行政院”是“國家”最高行政機關,依法行政是最基本的義務,“行政院長”卓榮泰若帶頭拒絕執行法律、拒絕尊重“國會”、拒絕接受權力制衡,應立即為違法“違憲”、破壞五權分立負起政治責任,辭職下台。 張雅屏",
+      "link": "http://www.crntt.com/doc/7_0_160260652_1_0825142005.html",
+      "pubDate": "2026-08-25 06:20:04",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/25/160260664.jpg",
+      "keywords": [
+        "卓榮泰",
+        "張雅屏",
+        "不副署"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "45b1ddc32663644fae3c628e06d1ea70",
+      "title": "中國長征六號丙遙一運載火箭成功發射 七顆衛星送入軌道",
+      "description": "中國周二成功發射長征六號丙遙一運載火箭,將七顆衛星送入預定軌道,涵蓋遙感、技術驗證及科學教育等重點領域。 火箭於北京時間上午11時21分,在中國山西省的太原衛星發射中心升空。 這次發射是長征系列運載火箭的第665次飛行任務,發射中心表示。 (CGTN)",
+      "link": "https://www.bastillepost.com/hongkong/article/16636120-%E4%B8%AD%E5%9C%8B%E9%95%B7%E5%BE%81%E5%85%AD%E8%99%9F%E4%B8%99%E9%81%99%E4%B8%80%E9%81%8B%E8%BC%89%E7%81%AB%E7%AE%AD%E6%88%90%E5%8A%9F%E7%99%BC%E5%B0%84-%E4%B8%83%E9%A1%86%E8%A1%9B%E6%98%9F%E9%80%81",
+      "pubDate": "2026-08-25 06:14:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/screenshot_8495936_01_FB.jpeg",
+      "keywords": [
+        "兩岸",
+        "cgtn"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8d8a908431b679db8f51910873bcdf64",
+      "title": "打機有賞|英大學設電競獎學金",
+      "description": "英國羅漢普頓大學設立的電競(Esports)獎學金,不論本科生及研究生均可申請,現時每年金額增加到2000英鎊(約2.13萬港元),獲資助學生需要參加每周的大學比賽,並代表大學參加線下活動,目前已頒發100多個名額。",
+      "link": "https://www.ejtech.ai/ceoai/%E6%89%93%E6%A9%9F%E6%9C%89%E8%B3%9E%EF%BD%9C%E8%8B%B1%E5%A4%A7%E5%AD%B8%E8%A8%AD%E9%9B%BB%E7%AB%B6%E7%8D%8E%E5%AD%B8%E9%87%91/",
+      "pubDate": "2026-08-25 06:08:01",
+      "source_name": "Startupbeat",
+      "image_url": "https://www.ejtech.ai/wp-content/uploads/2026/08/0825_P20.jpg",
+      "keywords": [
+        "ceo-ai",
+        "英國羅漢普頓大學",
+        "電競",
+        "esports",
+        "科技動態"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "053daaff4590caf499ae1033b39947f6",
+      "title": "SFi 2026影響力週最新調查:家族辦公室投資策略日趨成熟 全面擁抱系統性影響力投資",
+      "description": "香港2026年8月25日 /美通社/ -- Sustainable Finance Initiative (SFi)最新針對亞太區及全球 121 位^家族辦公室代表與資產擁有人進行的調查顯示,投資者對可持續投資的取態持續向好。今年,將過半投資組合配置於影響力及 ESG(環境、社會及管治)策略的家族辦公室,其佔比大幅上升。...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/sfi-2026--302859080.html",
+      "pubDate": "2026-08-25 06:05:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": null,
+      "keywords": [
+        "svy",
+        "eco",
+        "esg"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "25a82df54c4b4464772f8edc1badda02",
+      "title": "私隱署:代理式AI具高度自主能力存風險 倡勿過度提供個人資料",
+      "description": "愈來愈多人使用代理式人工智能(AI)作為虛擬助理,私隱專員公署今(25日)發布《代理式人工智能篇:保障個人資料私隱》指引,私隱專員鍾麗玲表示",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383408/%E7%A7%81%E9%9A%B1%E7%BD%B2-%E4%BB%A3%E7%90%86%E5%BC%8Fai%E5%85%B7%E9%AB%98%E5%BA%A6%E8%87%AA%E4%B8%BB%E8%83%BD%E5%8A%9B%E5%AD%98%E9%A2%A8%E9%9A%AA-%E5%80%A1%E5%8B%BF%E9%81%8E%E5%BA%A6%E6%8F%90%E4%BE%9B%E5%80%8B%E4%BA%BA%E8%B3%87%E6%96%99",
+      "pubDate": "2026-08-25 06:04:01",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168917225776615424142769.jpeg/89X3FE4_tVjjOS-e0qNl1jugA_qqccK6wHo_PMB6Pzw",
+      "keywords": [
+        "香港新聞",
+        "國際新聞",
+        "hk01",
+        "頭條新聞",
+        "新聞",
+        "即時新聞",
+        "香港01",
+        "港聞"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "99187e43497489421d03562ad4949f13",
+      "title": "智能手錶錶帶驚爆含PFAS!這1款材質風險高 長期戴恐傷肝 專家推介3招自保",
+      "description": "日常佩戴的智慧型手錶,可能在無形中帶來意想不到的健康風險。最新研究揭露,部分智能手錶錶帶中驗出「永久化學物」PFAS!這類物質不僅會經由飲食攝取,還能透過皮膚吸收滲入體內。若長時間佩戴手錶,有機會引致肝功能受損或內分泌紊亂,嚴重者甚至可能面臨致癌威脅。 智能手錶錶帶驚爆含PFAS!長期佩戴恐致癌兼傷肝 PFAS(Per- and polyfluoroalkyl substances)是一系列人造化",
+      "link": "https://www.stheadline.com/food-safety/3607685/%E6%99%BA%E8%83%BD%E6%89%8B%E9%8C%B6%E9%8C%B6%E5%B8%B6%E9%A9%9A%E7%88%86%E5%90%ABPFAS%E9%80%991%E6%AC%BE%E6%9D%90%E8%B3%AA%E9%A2%A8%E9%9A%AA%E9%AB%98-%E9%95%B7%E6%9C%9F%E6%88%B4%E6%81%90%E5%82%B7%E8%82%9D-%E5%B0%88%E5%AE%B6%E6%8E%A8%E4%BB%8B3%E6%8B%9B%E8%87%AA%E4%BF%9D",
+      "pubDate": "2026-08-25 06:00:52",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fa38d49828de8111a16057d83455d86d/2026-08/20260824_health_watch.jpg",
+      "keywords": [
+        "傷肝",
+        "致癌",
+        "食用安全",
+        "pfas",
+        "智能手錶"
+      ],
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bb1a387137f00d3883641964686ce208",
+      "title": "汪明荃黃淑儀罕有同場 搭膊合照破 「半世紀不和」傳聞",
+      "description": "「阿姐」汪明荃與黃淑儀(Gigi姐)同為70年代TVB當家花旦,但二人多年來屢傳不和,近日二人竟然罕有同場現身,更以行動粉碎所有不和傳聞! 阿姐日前與丈夫羅家英一同到澳門支持張德蘭的演唱會,期間大會特別為即將於8月28日迎來79歲生日的阿姐,準備了生日蛋糕提前賀壽。阿姐事後在社交平台晒出當晚合照,可見她站在Gigi姐身旁,化上淡妝的Gigi姐右手輕輕搭住阿姐膊頭,二人神采飛揚,笑容自然從容,各自伴侶亦陪伴在側,一齊影大合照,氣氛融洽,完全看不出有任何芥蒂,可見二人早已冰釋前嫌。 View this post on Instagram A post shared by Liza Wang (@wang_liza) 而要講起這段「半世紀不和」傳聞,源於1976年二人拍攝TVB劇集《書劍恩仇錄》時的一場武打意外,當時劇組使用金屬真劍對戲,豈料劍斷開後飛中Gigi姐眉心,令她縫了4針。Gigi姐曾坦言知道這是意外,並無怪責對方,但當年阿姐事後未有半通電話慰問,令Gigi姐有少許微言。不過,阿姐之後亦曾為當年年輕不懂人情世故,未及時慰問公開致歉,如今二人再次同框,足證多年恩怨早已煙消雲散。",
+      "link": "https://www.bastillepost.com/hongkong/article/16633803-%E6%B1%AA%E6%98%8E%E8%8D%83%E9%BB%83%E6%B7%91%E5%84%80%E7%BD%95%E6%9C%89%E5%90%8C%E5%A0%B4-%E6%90%AD%E8%86%8A%E5%90%88%E7%85%A7%E7%A0%B4-%E3%80%8C%E5%8D%8A%E4%B8%96%E7%B4%80%E4%B8%8D%E5%92%8C%E3%80%8D",
+      "pubDate": "2026-08-25 06:00:51",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260825_EN_Liza_Gigi_FB.jpg",
+      "keywords": [
+        "黃淑儀",
+        "娛圈事",
+        "汪明荃",
+        "source-ent",
+        "ai小助手"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "59462d41c344570f4819a3556bac92f4",
+      "title": "前主播林可瑩容家耀公開戀情?結伴旅行曬合照大讚:最佳旅伴",
+      "description": "無綫新聞前主播容家耀、林可瑩,自二人兩、三年前仍在電視台時,已常常被指是一對,網民更指他們主持《探古尋源》時如像攞正牌拍拖。昨日林可瑩在社",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60383252/%E5%89%8D%E4%B8%BB%E6%92%AD%E6%9E%97%E5%8F%AF%E7%91%A9%E5%AE%B9%E5%AE%B6%E8%80%80%E5%85%AC%E9%96%8B%E6%88%80%E6%83%85-%E7%B5%90%E4%BC%B4%E6%97%85%E8%A1%8C%E6%9B%AC%E5%90%88%E7%85%A7%E5%A4%A7%E8%AE%9A-%E6%9C%80%E4%BD%B3%E6%97%85%E4%BC%B4",
+      "pubDate": "2026-08-25 06:00:38",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168940403123032064698047.jpeg/PfkhTK2CSgRK6B1NQRuq-XdilH_TagDZCVI1lwlSNZc",
+      "keywords": [
+        "明星",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "藝人",
+        "韓星",
+        "新聞",
+        "即時娛樂",
+        "香港01",
+        "hk01",
+        "香港新聞"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "aae5bd6f9e9f28c5ed08814a34a6cfaf",
+      "title": "前主播林可瑩容家耀公開戀情 曬拍拖旅行合照放閃:最佳旅伴",
+      "description": "無綫新聞前主播容家耀、林可瑩,自二人兩、三年前仍在電視台時,已常常被指是一對,網民更指他們主持《探古尋源》時如像攞正牌拍拖。昨日林可瑩在社",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60383252/%E5%89%8D%E4%B8%BB%E6%92%AD%E6%9E%97%E5%8F%AF%E7%91%A9%E5%AE%B9%E5%AE%B6%E8%80%80%E5%85%AC%E9%96%8B%E6%88%80%E6%83%85-%E6%9B%AC%E6%8B%8D%E6%8B%96%E6%97%85%E8%A1%8C%E5%90%88%E7%85%A7%E6%94%BE%E9%96%83-%E6%9C%80%E4%BD%B3%E6%97%85%E4%BC%B4",
+      "pubDate": "2026-08-25 06:00:38",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168756080759541760291385.jpeg/7hy6F289O0Jpn_D5UVpyoxHQA66-tBM0ekO7mHpDu5g",
+      "keywords": [
+        "藝人",
+        "韓星",
+        "香港新聞",
+        "明星",
+        "hk01",
+        "即時娛樂",
+        "娛樂新聞",
+        "即時娛樂新聞",
+        "新聞",
+        "香港01"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
     {
       "id": "74a21375975820bdb29318b2e17be850",
       "title": "粉嶺御庭軒460呎2房戶 520萬成交 原業主持貨6年蝕讓65萬",
@@ -3978,25 +4892,6 @@
       "region": "hk"
     },
     {
-      "id": "43a35687e932bd32b279515481c433f9",
-      "title": "美據報擬加徵中國關稅 恒指高開116點 阿里獲增持重上配股價 小鵬績後跌逾8%|港股開市",
-      "description": "美國財長貝森特宣佈對伊朗展開「前所未有」的經濟行動,以切斷伊朗與全球經濟聯繫,並警告任何繼續與伊朗開展業務的國家都可能面臨美國制裁。另一方面,據彭博引述消息報道,美國總統特朗普預計於9月24日與中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%關稅,使特朗普第二任期內對華關稅水平提升至約20%。 金價逼4700美元 比特幣衝8萬美元 美股三大指數周一個別發展,道指收市",
-      "link": "https://www.stheadline.com/stock-market/3607900/%E7%BE%8E%E6%93%9A%E5%A0%B1%E6%93%AC%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B%E9%97%9C%E7%A8%85-%E6%81%92%E6%8C%87%E9%AB%98%E9%96%8B116%E9%BB%9E-%E9%98%BF%E9%87%8C%E7%8D%B2%E5%A2%9E%E6%8C%81%E9%87%8D%E4%B8%8A%E9%85%8D%E8%82%A1%E5%83%B9-%E5%B0%8F%E9%B5%AC%E7%B8%BE%E5%BE%8C%E8%B7%8C%E9%80%BE8%E6%B8%AF%E8%82%A1%E9%96%8B%E5%B8%82",
-      "pubDate": "2026-08-25 01:28:59",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/360d8187db7cec3a53fafaebe4a7f731/2026-08/dd_1_6.jpg",
-      "keywords": [
-        "港股"
-      ],
-      "category": [
-        "business",
-        "politics",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "95dfc439e8ad6f9e72628af39d42d961",
       "title": "普京會見印度外長蘇傑生 積極評價經貿關系",
       "description": "中評社香港8月25日電/俄羅斯總統普京24日在莫斯科克裡姆林宮會見來訪的印度外交部長蘇傑生。雙方積極評價俄印經貿關系,并表示兩國領導人期待通過上海合作組織平台舉行會晤。 據俄羅斯總統網站24日消息,普京在會見時表示,俄印幾乎在所有領域繼續開展合作,兩國貿易額今年迎來增長。普京說,希望近期按計劃在“上合組織工作框架下”與印度總理莫迪會晤。 普京說,俄第一副總理曼圖羅夫當天已同",
@@ -4736,23 +5631,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "0f5be3b7a35b8ebeb34ddf704e190dea",
-      "title": "彭博社:特朗普擬9.24晤習近平前 宣布加徵中國7.5%關稅",
-      "description": "彭博社8月24日引述消息人士報道,在美國總統特朗普預計於9月24日與到訪白宮的中國國家主席習近平會晤前夕,美國擬以「產能過剩」為由,宣布對中國商品加徵7.5%的關稅,使特朗普第二任期內對華關稅水平提升至約20%。不過,路透社報道指,暫未能獨立證實該報道。 美方擬發布「產能過剩」調查 法律定稿面臨挑戰 彭博社的報道指,美方貿易官員計劃在中美最高領導人9月24日「習特會」登場前,正式公布針對「產能過剩",
-      "link": "https://www.stheadline.com/realtime-world/3607885/%E5%BD%AD%E5%8D%9A%E7%A4%BE%E7%89%B9%E6%9C%97%E6%99%AE%E6%93%AC924%E6%99%A4%E7%BF%92%E8%BF%91%E5%B9%B3%E5%89%8D-%E5%AE%A3%E5%B8%83%E5%8A%A0%E5%BE%B5%E4%B8%AD%E5%9C%8B75%E9%97%9C%E7%A8%85",
-      "pubDate": "2026-08-24 23:56:49",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6ec67f1f4fd3676edec8340889598d05/2026-08/2026-08-25_00_43_30.png",
-      "keywords": null,
-      "category": [
-        "business",
-        "politics",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "bc57308f321ea9a099fc4780b9c94762",
@@ -7030,23 +7908,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "6e5d797bf7e9e8199d29f9e6e9106226",
-      "title": "美國擬在習特峰會前對中國加徵7.5%產能過剩關稅",
-      "description": null,
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E6%93%AC%E5%9C%A8%E7%BF%92%E7%89%B9%E5%B3%B0%E6%9C%83%E5%89%8D%E5%B0%8D%E4%B8%AD%E5%9C%8B%E5%8A%A0%E5%BE%B57-5-%E7%94%A2%E8%83%BD%E9%81%8E%E5%89%A9%E9%97%9C%E7%A8%85-164734004.html",
-      "pubDate": "2026-08-24 16:47:34",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM4611N_M.jpg",
-      "keywords": [
-        "特朗普"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "d226132a0953e05837fc406baf2b6e37",
@@ -10270,23 +11131,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "952942a8e36798f94d6b24b18b0dd2f3",
-      "title": "阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕",
-      "description": "阿里巴巴(09988)宣布集資 800 億元全數押注 AI,惟市場對股權攤薄及資本開支大增反應劇烈。阿里股價單日急挫 8.5%,跌穿配股價,市值蒸發逾 2,000 億元。為穩定軍心,集團主席蔡崇信及首席執行官吳泳銘隨即在場內斥資約 1.2 億元增持股份。 市值大蒸發:股價跌穿配售價 配股消息公布後,阿里巴巴股價在二級市場顯著受壓。 全日股價曾大挫逾一成,低見 110.1 元,最終收報 112.5 元,跌幅達 8.5%,失守 112.7 元的配股價。單日市值大幅蒸發 2,013.. The post 阿里配股事件 單日市值蒸發逾 2,000 億 股價挫 8.5% 跌穿 112.7 元配股價 蔡崇信、吳泳銘急斥 1.2 億增持救駕 appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/news/alibaba-09988-share-placement-joe-tsai-eddie-wu-increase-stake-michael-burry-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2035197/",
-      "pubDate": "2026-08-24 10:59:25",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/08/07051243-df5f-4d2f-8e93-d8aed9552584_276786316a8c23ff8bb32.png",
-      "keywords": [
-        "即時財經"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "2b1441d2cd60c785358e29337fac7b71",
@@ -215934,5 +216778,7 @@
       "region": "hk",
       "pinned": true
     }
-  ]
+  ],
+  "total": 11029,
+  "last_updated": "2026-08-26T03:10:28.801914"
 }
