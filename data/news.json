@@ -1,78 +1,248 @@
 {
+  "last_updated": "2026-08-25T16:09:04.911899",
+  "total": 10664,
   "articles": [
     {
-      "id": "a0e40c845bb02de218421eaebf3ceaba",
-      "title": "首次配股|阿里巴巴擬配股集資800億 全數用於AI發展 曾跌近9%失配股價",
-      "description": "科技巨頭阿里巴巴(9988)宣佈進行上市以來首次配股集資,配售總金額高達800億港元,所得資金將全數用於投資「...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87-%E6%93%AC%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87800%E5%84%84%E6%8C%87%E5%85%A8%E6%95%B8%E7%94%A8%E6%96%BCai%E7%99%BC%E5%B1%95-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%B7%8C%E8%BF%919-%E5%A4%B1%E9%85%8D%E8%82%A1%E5%83%B9-050000602.html",
-      "pubDate": "2026-08-24 05:00:00",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bossmind_356/96a015a93955322d7a568f454225a52d.jpg",
+      "id": "8ca6bde9de63a9451cd00f1340b72c3b",
+      "title": "上午03時20分 天文台特別天氣提示:天文台預警珠江口雨勢加劇市民需注意安全",
+      "description": "天文台於今日凌晨三時二十分發出特別天氣提示,指出珠江口一帶持續有雨區發展,預料未來兩至三小時本港部分地區雨勢將會較大。市民需密切留意天氣變化,尤其是居住在低窪地區或易受水浸影響的居民,應提前做好防範措施。 天文台提醒市民在外出時攜帶雨具,並避免前往山區或河道附近,以免因突發性大雨引發危險。駕駛人士需注意路面濕滑,減速行駛以確保安全。若雨勢持續加劇,市民應留意天文台的最新天氣報告及警告信號。 請大家保持警覺,並與家人朋友分享相關信息,以共同應對可能的天氣挑戰。 The post 上午03時20分 天文台特別天氣提示:天文台預警珠江口雨勢加劇市民需注意安全 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%94%9F%E6%B4%BB/%E5%A4%A9%E6%96%87%E5%8F%B0-%E7%89%B9%E5%88%A5%E5%A4%A9%E6%B0%A3%E6%8F%90%E7%A4%BA-%E6%9A%B4%E9%9B%A8%E8%AD%A6%E5%91%8A-aplt2-41-2035285/",
+      "pubDate": "2026-08-24 19:45:38",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2025/08/6102915770909576456_12072579806895dc3ce6cae.jpg",
       "keywords": [
-        "阿里巴巴",
-        "ai",
-        "阿里巴巴擬"
+        "天文台",
+        "特別天氣提示",
+        "生活",
+        "暴雨警告"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "6e5d797bf7e9e8199d29f9e6e9106226",
-      "title": "美國擬在習特峰會前對中國加徵7.5%產能過剩關稅",
-      "description": null,
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E6%93%AC%E5%9C%A8%E7%BF%92%E7%89%B9%E5%B3%B0%E6%9C%83%E5%89%8D%E5%B0%8D%E4%B8%AD%E5%9C%8B%E5%8A%A0%E5%BE%B57-5-%E7%94%A2%E8%83%BD%E9%81%8E%E5%89%A9%E9%97%9C%E7%A8%85-164734004.html",
-      "pubDate": "2026-08-24 16:47:34",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM4611N_M.jpg",
-      "keywords": [
-        "特朗普"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "a1709d260bb374a396a5fa9a2552f26b",
-      "title": "貝森特宣告對伊朗展開「經濟D日」攻勢,德黑蘭警告石油供應將遭重創",
-      "description": "Investing.com - 美國財政部長斯科特·貝森特(Scott Bessent)週日警告,伊朗將面臨嚴峻的經濟後果,華盛頓正準備宣布其史上最嚴厲的對伊制裁措施。",
-      "link": "https://hk.finance.yahoo.com/news/%E8%B2%9D%E6%A3%AE%E7%89%B9%E5%AE%A3%E5%91%8A%E5%B0%8D%E4%BC%8A%E6%9C%97%E5%B1%95%E9%96%8B-%E7%B6%93%E6%BF%9Fd%E6%97%A5-%E6%94%BB%E5%8B%A2-%E5%BE%B7%E9%BB%91%E8%98%AD%E8%AD%A6%E5%91%8A%E7%9F%B3%E6%B2%B9%E4%BE%9B%E6%87%89%E5%B0%87%E9%81%AD%E9%87%8D%E5%89%B5-015210296.html",
-      "pubDate": "2026-08-24 01:52:10",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM2B1EJ_M.jpg",
-      "keywords": [
-        "貝森特",
-        "霍爾木茲海峽",
-        "華盛頓",
-        "伊朗",
-        "美國財政部長"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "5debc140aa7778a088ee65334f71d99e",
-      "title": "潼關黃金(00340)被納入恒生綜合指數成份股 9月7日起生效",
-      "description": "<匯港通訊> 潼關黃金(00340)宣布,公司被納入恒生綜合指數成份股,2026年9月4日(星期五)收市後實施,並於2026年9月7日(星期一)起生效。 (ST)",
-      "link": "https://hk.finance.yahoo.com/news/%E6%BD%BC%E9%97%9C%E9%BB%83%E9%87%91-00340-%E8%A2%AB%E7%B4%8D%E5%85%A5%E6%81%92%E7%94%9F%E7%B6%9C%E5%90%88%E6%8C%87%E6%95%B8%E6%88%90%E4%BB%BD%E8%82%A1-9%E6%9C%887%E6%97%A5%E8%B5%B7%E7%94%9F%E6%95%88-115748353.html",
-      "pubDate": "2026-08-24 11:57:48",
+      "id": "075b28d57f40cadcf122e17b0e4b3889",
+      "title": "RBC稱消費支出強勁 Affirm有望輕微勝預期",
+      "description": "RBC Capital Markets周一致客戶報告表示,在美國消費支出保持韌性下,Affirm(AFRM.US)有望輕微優於財政第四季度預期。 該先買後付服務供應商將於周四公布最新業績。RBC預計第四季度收入為11.1億美元,經調整經營收入為3.14億美元。 RBC分析師Daniel Perlin及Matthe...",
+      "link": "https://hk.finance.yahoo.com/news/rbc%E7%A8%B1%E6%B6%88%E8%B2%BB%E6%94%AF%E5%87%BA%E5%BC%B7%E5%8B%81-affirm%E6%9C%89%E6%9C%9B%E8%BC%95%E5%BE%AE%E5%8B%9D%E9%A0%90%E6%9C%9F-194116639.html",
+      "pubDate": "2026-08-24 19:41:16",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "恒生綜合指數"
+        "rbc",
+        "affirm",
+        "季度"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "ca69a892517137c235f0f9ac12de0c38",
+      "title": "Wedbush稱Best Buy(BBY.US)有望第二財季可比銷售勝預期",
+      "description": "Wedbush Securities周一表示,在信用卡數據及其他關鍵指標向好的支持下,Best Buy(BBY.US)有望於財政第二季度錄得高於預期的可比銷售表現。 該券商將這家電子產品零售商季內企業可比銷售增長預測,由1%上調至2.4%。Wedbush在致客戶報告中指出,華爾街目前預期增長1.8%。 該券商預期...",
+      "link": "https://hk.finance.yahoo.com/news/wedbush%E7%A8%B1best-buy-bby-us-%E6%9C%89%E6%9C%9B%E7%AC%AC%E4%BA%8C%E8%B2%A1%E5%AD%A3%E5%8F%AF%E6%AF%94%E9%8A%B7%E5%94%AE%E5%8B%9D%E9%A0%90%E6%9C%9F-193817448.html",
+      "pubDate": "2026-08-24 19:38:17",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "wedbush",
+        "best buy",
+        "季度"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e141696dcd475963d4e1c684394165a3",
+      "title": "洪水橋片區|團結香港基金歡迎招標結果 劉國勳稱展示產業新城",
+      "description": "發展局周一(24日)公布北部都會區洪水橋「片區」招標結果,項目批予洪水橋新發展有限公司(HSK New Development Limited),中標價為10.3億元。團",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60383254/%E6%B4%AA%E6%B0%B4%E6%A9%8B%E7%89%87%E5%8D%80-%E5%9C%98%E7%B5%90%E9%A6%99%E6%B8%AF%E5%9F%BA%E9%87%91%E6%AD%A1%E8%BF%8E%E6%8B%9B%E6%A8%99%E7%B5%90%E6%9E%9C-%E5%8A%89%E5%9C%8B%E5%8B%B3%E7%A8%B1%E5%B1%95%E7%A4%BA%E7%94%A2%E6%A5%AD%E6%96%B0%E5%9F%8E",
+      "pubDate": "2026-08-24 19:37:11",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260609/1141149899887218688164527.jpeg/r3IJVpEMWLX668vwnGNGVEqZNg3uO3yPlcC8dZXAvHU",
+      "keywords": [
+        "港聞",
+        "國際新聞",
+        "香港新聞",
+        "即時新聞",
+        "香港01",
+        "頭條新聞",
+        "新聞",
+        "hk01"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "44f9841da05e9d7769afd475e171c61f",
+      "title": "魯爾阿辛斯奧復操緩皇馬中堅荒",
+      "description": "【Now Sports】皇家馬德里開季首戰旗開得勝,惟中堅兵源捉襟見肘。《阿斯報》透露球隊青訓產品魯爾阿辛斯奧現已復操,令教練摩連奴在中堅位置上作出輪替。皇家馬德里於今季西甲揭幕戰順利擊敗愛斯賓奴,該場中堅由干拿迪夥拍侯辛擔任正選,魯迪加與小將李華士列居後備。然而皇馬在8日內需要進行3場賽事,短時間內連續以同一中...",
+      "link": "https://hk.sports.yahoo.com/news/%E9%AD%AF%E7%88%BE%E9%98%BF%E8%BE%9B%E6%96%AF%E5%A5%A7%E5%BE%A9%E6%93%8D%E7%B7%A9%E7%9A%87%E9%A6%AC%E4%B8%AD%E5%A0%85%E8%8D%92-192945674.html",
+      "pubDate": "2026-08-24 19:29:45",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "中堅",
+        "皇家馬德里",
+        "魯爾阿辛斯奧",
+        "摩連奴"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b6033a9aa2f97786553dec1761d6df0e",
+      "title": "ZoomInfo證券集體訴訟 投資者須於2026年8月24日前登記",
+      "description": "法魯奇律師事務所,一間全國領先的證券律師事務所,正調查ZoomInfo科技公司(納斯達克:GTM)的潛在索償,並提醒投資者,尋求擔任聯邦證券集體訴訟首席原告的截止日期為2026年8月24日。 法魯奇律師事務所是一間全國領先的證券律師事務所,在紐約、賓夕法尼亞州、加利福尼亞州及佐治亞州設有辦事處。該事務所自1995年成立以來,已為投資者追回數億美元。 訴訟指控,該公司及其高層違反聯邦證券法,作出虛假及/或誤導性陳述,及/或未能披露ZoomInfo的傳統按席位訂閱平台增長放緩,以及在低端市場客戶挽留率轉弱的真實狀況。此外,該公司淡化客戶正轉向按用量收費模式,並開發內部人工智能驅動的市場推廣方案的憂慮。 2026年5月11日,市場收市後,ZoomInfo公布其2026年第一季度財務業績,披露增長前景急劇下降,並相應下調其2026年全年財務指引。該公司同時宣布,正重整其低端市場業務,裁減約20%員工,並預計將產生約4500萬至6000萬美元的重組成本。受此消息影響,ZoomInfo股價於2026年5月12日下跌1.98美元,跌幅約33%,收市報每股4.06美元。 法院委任的首席原告,是集體訴訟中尋求賠償方面擁有最大經濟利益的投資者,其資格及代表性均符合集體訴訟成員的要求,並代表潛在集體訴訟成員指導及監督訴訟。任何潛在集體訴訟成員可透過其選擇的律師,向法院申請擔任首席原告,或選擇不採取任何行動,維持為缺席的集體訴訟成員。閣下能否分享任何賠償,不受是否擔任首席原告的決定影響。 法魯奇律師事務所亦鼓勵任何掌握ZoomInfo行為資訊的人士,包括舉報人、前員工、股東及其他人士,聯絡該事務所。 ZoomInfo證券詐騙訴訟的內容是甚麼?訴訟指控,ZoomInfo科技公司(納斯達克:GTM)及其部分高層及董事在集體訴訟期內,向投資者作出重大虛假及誤導性陳述,違反聯邦證券法。具體而言,訴訟指控被告發布極其正面的聲明,同時涉嫌隱瞞ZoomInfo傳統按席位訂閱平台增長放緩,以及在低端市場客戶挽留率轉弱的真實程度。訴訟進一步指控,被告淡化客戶正轉向按用量收費模式,並開發內部人工智能驅動的市場推廣方案的憂慮,這涉嫌掩蓋影響該公司業務的重大不利趨勢。2026年5月11日,市場收市後,ZoomInfo涉嫌披露這些情況的嚴重性,當時該公司宣布大幅下調2026年全年指引,重整其低端市場業務,裁減約20%員工,並預計產生約4500萬至6000萬美元的重組成本——據稱此消息導致該公司股價在下一個交易日下跌約33%。 誰有資格參與訴訟?在集體訴訟期內,即2025年11月3日至2026年5月11日(包括首尾兩日)期間,購買或以其他方式取得ZoomInfo科技公司(納斯達克:GTM)證券的投資者,可能有資格參與這次訴訟。合資格的投資者不限於尋求委任為首席原告的人士;任何在集體訴訟期內蒙受損失的集體訴訟成員,均可能分享代表集體訴訟獲得的任何賠償。投資者應審查其交易記錄,以確定其購買是否在適用的集體訴訟期內。參與訴訟不要求投資者在案件中扮演積極角色,或承擔自付法律費用,方可被視為潛在的集體訴訟成員。 甚麼是首席原告,以及我如何申請委任?首席原告是法院委任的代表,代表所有集體訴訟成員指導訴訟,包括選擇及監督集體訴訟律師,並在案件中作出關鍵策略決定。根據《私人證券訴訟改革法案》,任何在集體訴訟期內購買ZoomInfo科技證券並蒙受損失的投資者,均可向法院申請委任為首席原告。提交尋求委任首席原告動議的截止日期為2026年8月24日。重要的是,投資者毋須擔任首席原告,亦有資格分享訴訟可能產生的任何賠償;絕大多數集體訴訟成員在不擔任該代表角色的情況下參與。 為何投資者應聯絡法魯奇律師事務所?法魯奇律師事務所數十年來一直代表投資者處理證券訴訟,並已為股東追回數億美元。在集體訴訟期內購買ZoomInfo證券的投資者,可聯絡該事務所,免費及無義務地討論其法律權利、潛在索償及首席原告程序。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16633276-zoominfo%E8%AD%89%E5%88%B8%E9%9B%86%E9%AB%94%E8%A8%B4%E8%A8%9F-%E6%8A%95%E8%B3%87%E8%80%85%E9%A0%88%E6%96%BC2026%E5%B9%B48%E6%9C%8824%E6%97%A5%E5%89%8D%E7%99%BB%E8%A8%98",
+      "pubDate": "2026-08-24 19:27:32",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/ab4ceaa89ff2413784dc0ee2f0ea09c2_FF_BW_Image_2_FB.jpg",
+      "keywords": [
+        "證券集體訴訟",
+        "商業事",
+        "zoominfo",
+        "投資者",
+        "法魯奇律師事務所",
+        "股價"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "49fa0486dcf2cb1413a595130c6c9b58",
+      "title": "中國駭客借助DeepSeek AI大幅提升網路攻擊能力",
+      "description": "Investing.com - 據中國台灣資安研究機構TeamT5指出,自從將DeepSeek及其他開源人工智慧模型納入攻擊行動後,中國國家背景的駭客組織攻擊量已翻逾一倍。",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%9C%8B%E9%A7%AD%E5%AE%A2%E5%80%9F%E5%8A%A9deepseek-ai%E5%A4%A7%E5%B9%85%E6%8F%90%E5%8D%87%E7%B6%B2%E8%B7%AF%E6%94%BB%E6%93%8A%E8%83%BD%E5%8A%9B-191838959.html",
+      "pubDate": "2026-08-24 19:18:38",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA7B05U_M.jpg",
+      "keywords": [
+        "駭客"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7bb61bd38a2a181f3c9100a9eb89cf40",
+      "title": "《業績》中國通號(03969.HK)中期淨利潤14.73億人民幣 倒退9.1%",
+      "description": "中國通號(03969.HK)公布6月止六個月中期業績,營業收入140.8億人民幣(下同),按年下降4%。歸屬股東淨利潤14.73億元,倒退9.1%,每股收益14分。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E4%B8%AD%E5%9C%8B%E9%80%9A%E8%99%9F-03969-hk-%E4%B8%AD%E6%9C%9F%E6%B7%A8%E5%88%A9%E6%BD%A414-191614389.html",
+      "pubDate": "2026-08-24 19:16:14",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "224f325a87a72c2fb220b6dedc9a4f2b",
+      "title": "《業績》中偉新材(02579.HK)中期純利13.11億人民幣增78.4% 每10股派3.8元人民幣",
+      "description": "中偉新材(02579.HK)公布6月止六個月中期業績,營業收入335.84億人民幣(下同),按年增加57.5%。錄得純利13.11億元,增長78.4%,每股盈利1.24元。每10股派息3.8元。(d)。~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E4%B8%AD%E5%81%89%E6%96%B0%E6%9D%90-02579-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A913-191539366.html",
+      "pubDate": "2026-08-24 19:15:39",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9d9e02c9815c4a60cd90cb7a3c859171",
+      "title": "《業績》劍橋科技(06166.HK)中期淨利潤3.28億人民幣增171% 派息9分",
+      "description": "劍橋科技(06166.HK)公布6月止六個月中期業績,營業收入27.05億人民幣(下同),按年增加32.9%。歸屬股東淨利潤3.28億元,增長171.1%,每股收益93分。中期息派9分。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E5%8A%8D%E6%A9%8B%E7%A7%91%E6%8A%80-06166-hk-%E4%B8%AD%E6%9C%9F%E6%B7%A8%E5%88%A9%E6%BD%A43-191458732.html",
+      "pubDate": "2026-08-24 19:14:58",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0ad4ef0dff5732e930caaefc9993fac3",
+      "title": "林定國率團訪新疆 推廣香港法律和解決爭議服務",
+      "description": "律政司司長林定國周一(24日)率領由香港法律和爭議解決專業,以及金融和會計專業等成員組成的跨專業代表團,在新疆烏魯木齊展開首站訪問,出席由",
+      "link": "https://www.hk01.com/%E6%94%BF%E6%83%85/60383253/%E6%9E%97%E5%AE%9A%E5%9C%8B%E7%8E%87%E5%9C%98%E8%A8%AA%E6%96%B0%E7%96%86-%E6%8E%A8%E5%BB%A3%E9%A6%99%E6%B8%AF%E6%B3%95%E5%BE%8B%E5%92%8C%E8%A7%A3%E6%B1%BA%E7%88%AD%E8%AD%B0%E6%9C%8D%E5%8B%99",
+      "pubDate": "2026-08-24 19:06:33",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168755096083894272589472.jpeg/Rnvt-1-m8f05vRMc6pq95RNaxsWUsu9f2KHgd9ih4Hc",
+      "keywords": [
+        "委員會",
+        "區議會",
+        "班子",
+        "行政會議",
+        "局長",
+        "特區政府",
+        "撥款",
+        "司長",
+        "立法會",
+        "議員",
+        "選舉",
+        "高官",
+        "候任特首",
+        "內閣",
+        "特首",
+        "林鄭月娥",
+        "政治",
+        "問責官員"
+      ],
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "752692555c7b1558d309a8bb68667a1f",
+      "title": "伊朗局勢|美宣布擴大二級制裁 要求各國關閉境內伊朗銀行 德黑蘭列45油輪黑名單",
+      "description": "美國總統特朗普威脅對伊朗實施「經濟諾曼第登陸日」(Economic D-Day)的嚴厲制裁,形容這是一場「史上最具毀滅性的經濟行動」。周一(24日),美國財政部長貝森特召開新聞發布會,正式宣布啟動代號為「離岸經濟行動」(Operation Economic Outcast)的全新極限施壓措施,警告任何與伊朗結盟或保持商業往來的國家及實體,均會受到二級制裁,被排斥在美元體系之外。 擴大二級制裁覆蓋五",
+      "link": "https://www.stheadline.com/realtime-world/3607868/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E7%BE%8E%E5%AE%A3%E5%B8%83%E6%93%B4%E5%A4%A7%E4%BA%8C%E7%B4%9A%E5%88%B6%E8%A3%81-%E8%A6%81%E6%B1%82%E5%90%84%E5%9C%8B%E9%97%9C%E9%96%89%E5%A2%83%E5%85%A7%E4%BC%8A%E6%9C%97%E9%8A%80%E8%A1%8C-%E5%BE%B7%E9%BB%91%E8%98%AD%E5%88%9745%E6%B2%B9%E8%BC%AA%E9%BB%91%E5%90%8D%E5%96%AE",
+      "pubDate": "2026-08-24 19:06:06",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0e4005dacc51f63b580739f91722519a/2026-08/2026-08-24T172356Z_1251564812_RC255NANC00Z_RTRMADP_3_USA-TREASURY-BESSENT.JPG",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "31f207ef37d45468babb417197c9b40c",
+      "title": "伊朗局勢|美擴大二級制裁 要求各國領導人抉擇 伊朗公布霍峽黑名單遍佈17國",
+      "description": "美國總統特朗普威脅對伊朗實施「經濟諾曼第登陸日」(Economic D-Day)的嚴厲制裁,形容這是一場「史上最具毀滅性的經濟行動」。周一(24日),美國財政部長貝森特召開新聞發布會,正式宣布啟動代號為「離岸經濟行動」(Operation Economic Outcast)的全新極限施壓措施,警告任何與伊朗結盟或保持商業往來的國家及實體,均會受到二級制裁,被排斥在美元體系之外。 擴大二級制裁覆蓋五",
+      "link": "https://www.stheadline.com/realtime-world/3607868/%E4%BC%8A%E6%9C%97%E5%B1%80%E5%8B%A2%E7%BE%8E%E6%93%B4%E5%A4%A7%E4%BA%8C%E7%B4%9A%E5%88%B6%E8%A3%81-%E8%A6%81%E6%B1%82%E5%90%84%E5%9C%8B%E9%A0%98%E5%B0%8E%E4%BA%BA%E6%8A%89%E6%93%87-%E4%BC%8A%E6%9C%97%E5%85%AC%E5%B8%83%E9%9C%8D%E5%B3%BD%E9%BB%91%E5%90%8D%E5%96%AE%E9%81%8D%E4%BD%8817%E5%9C%8B",
+      "pubDate": "2026-08-24 19:06:06",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/0e4005dacc51f63b580739f91722519a/2026-08/2026-08-24T172356Z_1251564812_RC255NANC00Z_RTRMADP_3_USA-TREASURY-BESSENT.JPG",
+      "keywords": null,
+      "category": [
+        "politics",
+        "top"
+      ],
+      "region": "hk"
     },
     {
       "id": "9385130a4e9a8a600ca1ef2d46042b91",
@@ -510,6 +680,23 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "6e5d797bf7e9e8199d29f9e6e9106226",
+      "title": "美國擬在習特峰會前對中國加徵7.5%產能過剩關稅",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E6%93%AC%E5%9C%A8%E7%BF%92%E7%89%B9%E5%B3%B0%E6%9C%83%E5%89%8D%E5%B0%8D%E4%B8%AD%E5%9C%8B%E5%8A%A0%E5%BE%B57-5-%E7%94%A2%E8%83%BD%E9%81%8E%E5%89%A9%E9%97%9C%E7%A8%85-164734004.html",
+      "pubDate": "2026-08-24 16:47:34",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4611N_M.jpg",
+      "keywords": [
+        "特朗普"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "d226132a0953e05837fc406baf2b6e37",
@@ -3131,6 +3318,23 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "5debc140aa7778a088ee65334f71d99e",
+      "title": "潼關黃金(00340)被納入恒生綜合指數成份股 9月7日起生效",
+      "description": "<匯港通訊> 潼關黃金(00340)宣布,公司被納入恒生綜合指數成份股,2026年9月4日(星期五)收市後實施,並於2026年9月7日(星期一)起生效。 (ST)",
+      "link": "https://hk.finance.yahoo.com/news/%E6%BD%BC%E9%97%9C%E9%BB%83%E9%87%91-00340-%E8%A2%AB%E7%B4%8D%E5%85%A5%E6%81%92%E7%94%9F%E7%B6%9C%E5%90%88%E6%8C%87%E6%95%B8%E6%88%90%E4%BB%BD%E8%82%A1-9%E6%9C%887%E6%97%A5%E8%B5%B7%E7%94%9F%E6%95%88-115748353.html",
+      "pubDate": "2026-08-24 11:57:48",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "恒生綜合指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "b5b9a79a483a06f6bf6c26f542e2fd88",
@@ -9439,6 +9643,25 @@
       "region": "hk"
     },
     {
+      "id": "a0e40c845bb02de218421eaebf3ceaba",
+      "title": "首次配股|阿里巴巴擬配股集資800億 全數用於AI發展 曾跌近9%失配股價",
+      "description": "科技巨頭阿里巴巴(9988)宣佈進行上市以來首次配股集資,配售總金額高達800億港元,所得資金將全數用於投資「...",
+      "link": "https://hk.finance.yahoo.com/news/%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87-%E6%93%AC%E9%85%8D%E8%82%A1%E9%9B%86%E8%B3%87800%E5%84%84%E6%8C%87%E5%85%A8%E6%95%B8%E7%94%A8%E6%96%BCai%E7%99%BC%E5%B1%95-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%B7%8C%E8%BF%919-%E5%A4%B1%E9%85%8D%E8%82%A1%E5%83%B9-050000602.html",
+      "pubDate": "2026-08-24 05:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bossmind_356/96a015a93955322d7a568f454225a52d.jpg",
+      "keywords": [
+        "阿里巴巴",
+        "ai",
+        "阿里巴巴擬"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "cfed0c36ab8fd1fb3c7837cc56b4fc63",
       "title": "美中長債息口走勢 相映成趣",
       "description": "最重要新發展是美國長債息口開始飈升,有點失控的味道。每年利息支出或將高達1.4萬億美元,已遠超軍費,僅低於保健和社福支出。",
@@ -12368,6 +12591,27 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "a1709d260bb374a396a5fa9a2552f26b",
+      "title": "貝森特宣告對伊朗展開「經濟D日」攻勢,德黑蘭警告石油供應將遭重創",
+      "description": "Investing.com - 美國財政部長斯科特·貝森特(Scott Bessent)週日警告,伊朗將面臨嚴峻的經濟後果,華盛頓正準備宣布其史上最嚴厲的對伊制裁措施。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%B2%9D%E6%A3%AE%E7%89%B9%E5%AE%A3%E5%91%8A%E5%B0%8D%E4%BC%8A%E6%9C%97%E5%B1%95%E9%96%8B-%E7%B6%93%E6%BF%9Fd%E6%97%A5-%E6%94%BB%E5%8B%A2-%E5%BE%B7%E9%BB%91%E8%98%AD%E8%AD%A6%E5%91%8A%E7%9F%B3%E6%B2%B9%E4%BE%9B%E6%87%89%E5%B0%87%E9%81%AD%E9%87%8D%E5%89%B5-015210296.html",
+      "pubDate": "2026-08-24 01:52:10",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM2B1EJ_M.jpg",
+      "keywords": [
+        "貝森特",
+        "霍爾木茲海峽",
+        "華盛頓",
+        "伊朗",
+        "美國財政部長"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "33ac26e25ed1d4ab5851bfdab459d266",
@@ -207395,6 +207639,20 @@
       "region": "hk"
     },
     {
+      "id": "87aa2b0e6bd024e0",
+      "title": "王晶身體情況｜為愛妻慶生最新全家福曝光　71歲王晶明顯消瘦大肚腩變細　曾認身體亮紅燈節目停播",
+      "description": "【王晶 / 導演 / 編劇】現年71歲的著名導演王晶與太太丁德君於1978年結婚，兩人攜手走過48年，感情一直恩愛如初；日前，他與兩名女兒齊齊為愛妻慶生，細女王海榛在社交平台分享最新全家福，王晶近況曝...",
+      "link": "https://topick.hket.com/article/4182155",
+      "pubDate": "2026-08-25 15:33:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4182155/71_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "abfc9c7896cce7e5",
       "title": "香港小姐｜陳庭欣孖「東張男神」曾錦燊組CP　茶餐廳撐抬腳甜蜜餵食",
       "description": "【陳庭欣 / 曾錦燊 / 東張西望】現年38歲的港姐冠軍陳庭欣（Toby），去年底宣布與拍拖8年的富豪男友楊振源分手。「金牌媒人」林盛斌（Bob）年初曾高調承諾幫回復單身的Toby介紹「筍盤」；陳庭欣...",
@@ -209268,7 +209526,5 @@
       "region": "hk",
       "pinned": true
     }
-  ],
-  "total": 10650,
-  "last_updated": "2026-08-25T15:12:49.922412"
+  ]
 }
