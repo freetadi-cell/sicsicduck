@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-26T08:31:50.401902+08:00",
+  "last_updated": "2026-08-26T22:05:38.392516+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -487,13 +487,13 @@
       "hkd": {
         "3m": {
           "new_funds": {
-            "rate": 2.65,
+            "rate": 3.5,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "bank"
           },
           "existing_funds": {
-            "rate": 2.55,
+            "rate": 3.4,
             "min_deposit": 10000,
             "note": "定期存款牌價利率",
             "source": "bank"
@@ -502,13 +502,13 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 2.65,
+            "rate": 3.5,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "bank"
           },
           "existing_funds": {
-            "rate": 2.55,
+            "rate": 3.4,
             "min_deposit": 10000,
             "note": "定期存款牌價利率",
             "source": "bank"
@@ -1559,7 +1559,7 @@
           "source": "bank"
         },
         "9m": {
-          "rate": 3.05,
+          "rate": 3.0,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
