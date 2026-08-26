@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from parsers import *
 from parsers import normalize_rates
 from fetcher import fetch_with_requests, get_fetch_strategy
-from llm_extractor import llm_extract_rates, should_use_llm
+from llm_extractor import llm_extract_rates, should_use_llm, llm_verify_all
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
@@ -499,6 +499,53 @@ def main():
             logger.error(f"  [{key}] Parser error: {e}")
             failed_banks.append({'name': name, 'key': key, 'reason': f'Parser 錯誤: {str(e)[:30]}', 'needs_retry': True})
             needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
+    
+    # ===== Phase 2: LLM 全量驗證 =====
+    logger.info("\n" + "=" * 60)
+    logger.info("LLM 全量驗證 (kimi-k3)...")
+    logger.info("=" * 60)
+    
+    # 收集每間銀行嘅 parsed results + raw text，交畀 LLM 驗證
+    banks_for_llm = []
+    for scraped in scraped_data:
+        key = scraped['key']
+        name = scraped['name']
+        # 搵返呢間銀行嘅 parsed results（從 old_rates 入面攞）
+        parsed_result = None
+        for bank in old_rates.get('banks', []):
+            if bank.get('key') == key:
+                parsed_result = bank
+                break
+        if not parsed_result:
+            continue
+        banks_for_llm.append({
+            'name': name,
+            'key': key,
+            'text': scraped.get('text', ''),
+            'parsed': parsed_result,
+        })
+    
+    llm_results = llm_verify_all(banks_for_llm)
+    llm_stats = llm_results.get('stats', {})
+    llm_verified = llm_results.get('verified', {})
+    llm_discrepancies = llm_results.get('discrepancies', [])
+    
+    logger.info(f"  LLM 驗證完成: {llm_stats.get('parser_ok', 0)} 一致, "
+                f"{llm_results['stats'].get('llm_fixed', 0)} 修正, "
+                f"{llm_results['stats'].get('llm_only', 0)} LLM接管, "
+                f"{llm_results['stats'].get('llm_failed', 0)} 失敗")
+    
+    # 用 LLM 驗證結果覆蓋 rates.json 入面嘅利率
+    if llm_verified:
+        for i, bank in enumerate(old_rates.get('banks', [])):
+            key = bank.get('key', '')
+            if key in llm_verified:
+                llm_bank = llm_verified[key]
+                # 只覆蓋有 LLM source 嘅 currency
+                for currency in ['hkd', 'usd', 'cny']:
+                    if currency in llm_bank:
+                        old_rates['banks'][i][currency] = llm_bank[currency]
+        logger.info(f"  ✅ 已用 LLM 驗證結果覆蓋 {len(llm_verified)} 間銀行")
     
     # Save updated rates to rates.json
     save_rates(old_rates)
