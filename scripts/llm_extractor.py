@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-LLM 輔助利率抽取 — 當 Parser 失敗時嘅 Fallback
+LLM 全量驗證 + Fallback — 用 kimi-k3 驗證所有銀行利率
 
 策略：
-1. 爬蟲抓到 raw text / table 後，先用現有 parser 嘗試
-2. 如果 parser 返回空或只覆蓋部分幣種，觸發 LLM fallback
-3. LLM 讀 raw text 直接抽利率（唔依賴 HTML 結構）
-
-支援嘅 LLM：
-- OpenAI-compatible API（自己嘅 endpoint）
+1. Parser 先跑（免費、快）
+2. 每間銀行嘅 raw text 送 kimi-k3 做獨立抽取
+3. 比對 Parser 結果同 LLM 結果
+4. 不一致 → 以 LLM 為準 + 標記異常
+5. Parser 完全失敗 → LLM 直接接管
 """
 import json
 import re
@@ -17,11 +16,14 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# LLM config — 優先用環境變量，fallback 到 yuanyuai endpoint
-LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://yuanyuaicloud.cn/v1")
+# LLM config — kimi-k3 via Moonshot API
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.moonshot.cn/v1")
 LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
-LLM_MODEL = os.environ.get("LLM_MODEL", "glm-5.2")
-LLM_TIMEOUT = 30
+LLM_MODEL = os.environ.get("LLM_MODEL", "kimi-k3")
+LLM_TIMEOUT = 60
+
+# Rate comparison tolerance (percentage points)
+RATE_DIFF_TOLERANCE = 0.05  # 0.05% 以內視為一致
 
 
 EXTRACTION_PROMPT_TEMPLATE = """你係一個香港銀行定期存款利率提取助手。我會畀你一段從銀行官網抓到嘅文字，請提取所有定期存款利率。
@@ -41,7 +43,8 @@ EXTRACTION_PROMPT_TEMPLATE = """你係一個香港銀行定期存款利率提取
 2. 利率必須係百分比格式（例如 2.65 表示 2.65%），唔好用小數格式
 3. 如果只有「新資金」冇「現有資金」嘅區分，將新資金利率放入 new_funds，existing_funds 設為 null
 4. 如果只見到一個利率（冇分新資金/現有資金），放入 new_funds
-5. 只輸出 JSON，唔好加解釋
+5. 如果某幣種冇定期存款資料，唔好放該幣種
+6. 只輸出 JSON，唔好加解釋
 
 銀行名稱：{bank_name}
 文字內容：
@@ -51,19 +54,15 @@ EXTRACTION_PROMPT_TEMPLATE = """你係一個香港銀行定期存款利率提取
 
 
 def _call_llm(prompt):
-    """呼叫 LLM API 抽取利率"""
+    """呼叫 LLM API"""
     try:
         import httpx
     except ImportError:
-        logger.warning("LLM fallback: httpx 未安裝，嘗試 pip install httpx")
-        try:
-            os.system("pip install httpx -q")
-            import httpx
-        except:
-            return None
+        os.system("pip install httpx -q")
+        import httpx
 
     if not LLM_API_KEY:
-        logger.warning("LLM fallback: 未設定 LLM_API_KEY，請設定環境變量 LLM_API_KEY")
+        logger.warning("LLM: 未設定 LLM_API_KEY")
         return None
 
     headers = {
@@ -74,14 +73,8 @@ def _call_llm(prompt):
     payload = {
         "model": LLM_MODEL,
         "messages": [
-            {
-                "role": "system",
-                "content": "你係一個精確嘅數據提取助手。只輸出 JSON，唔好加任何解釋。"
-            },
-            {
-                "role": "user",
-                "content": prompt
-            }
+            {"role": "system", "content": "你係一個精確嘅數據提取助手。只輸出 JSON，唔好加任何解釋。"},
+            {"role": "user", "content": prompt}
         ],
         "temperature": 0,
         "max_tokens": 2000
@@ -89,27 +82,21 @@ def _call_llm(prompt):
 
     try:
         with httpx.Client(timeout=LLM_TIMEOUT) as client:
-            resp = client.post(
-                f"{LLM_BASE_URL}/chat/completions",
-                headers=headers,
-                json=payload
-            )
+            resp = client.post(f"{LLM_BASE_URL}/chat/completions", headers=headers, json=payload)
             resp.raise_for_status()
-            data = resp.json()
-            content = data["choices"][0]["message"]["content"]
-            return content.strip()
+            return resp.json()["choices"][0]["message"]["content"].strip()
     except Exception as e:
-        logger.error(f"LLM fallback API error: {e}")
+        logger.error(f"LLM API error: {e}")
         return None
 
 
-def _parse_llm_response(response_text):
-    """解析 LLM 返回嘅 JSON"""
-    if not response_text:
+def _parse_llm_response(text):
+    """解析 LLM 返回嘅 JSON，標準化為完整格式"""
+    if not text:
         return None
 
     # 清理 markdown code block
-    text = response_text.strip()
+    text = text.strip()
     if text.startswith("```"):
         text = re.sub(r'^```\w*\n?', '', text)
         text = re.sub(r'\n?```$', '', text)
@@ -117,7 +104,6 @@ def _parse_llm_response(response_text):
     try:
         data = json.loads(text)
     except json.JSONDecodeError:
-        # 嘗試搵 JSON 嘅部分
         m = re.search(r'\{[\s\S]*\}', text)
         if m:
             try:
@@ -132,115 +118,210 @@ def _parse_llm_response(response_text):
 
     result = {}
     for currency in ['hkd', 'usd', 'cny']:
-        if currency in data and isinstance(data[currency], dict):
-            curr_result = {}
-            for tenor, rates in data[currency].items():
-                if not isinstance(rates, dict):
-                    continue
+        if currency not in data or not isinstance(data[currency], dict):
+            continue
 
-                # 處理簡寫格式（直接有 rate）
-                if 'rate' in rates:
-                    curr_result[tenor] = {
-                        'new_funds': {'rate': rates['rate'], 'min_deposit': 10000, 'note': '新資金定期存款', 'source': 'llm'},
-                        'existing_funds': None
-                    }
-                    continue
+        curr_result = {}
+        for tenor, rates in data[currency].items():
+            if not isinstance(rates, dict):
+                continue
 
-                # 完整格式
-                period_data = {}
-                for fund_type in ['new_funds', 'existing_funds']:
-                    if fund_type in rates and rates[fund_type] is not None:
-                        try:
-                            rate_val = float(rates[fund_type])
-                            if 0 < rate_val < 15:
-                                period_data[fund_type] = {
-                                    'rate': rate_val,
-                                    'min_deposit': 10000,
-                                    'note': f'{"新資金" if fund_type == "new_funds" else "現有資金"}定期存款',
-                                    'source': 'llm'
-                                }
-                        except (ValueError, TypeError):
-                            continue
+            # 簡寫格式（直接有 rate key）
+            if 'rate' in rates:
+                try:
+                    rate_val = float(rates['rate'])
+                    if 0 < rate_val < 15:
+                        curr_result[tenor] = {
+                            'new_funds': {'rate': rate_val, 'min_deposit': 10000, 'note': '新資金定期存款', 'source': 'llm'},
+                            'existing_funds': None
+                        }
+                except (ValueError, TypeError):
+                    pass
+                continue
 
-                if period_data:
-                    curr_result[tenor] = period_data
+            # 完整格式
+            period_data = {}
+            for fund_type in ['new_funds', 'existing_funds']:
+                if fund_type in rates and rates[fund_type] is not None:
+                    try:
+                        rate_val = float(rates[fund_type])
+                        if 0 < rate_val < 15:
+                            period_data[fund_type] = {
+                                'rate': rate_val,
+                                'min_deposit': 10000,
+                                'note': f'{"新資金" if fund_type == "new_funds" else "現有資金"}定期存款',
+                                'source': 'llm'
+                            }
+                    except (ValueError, TypeError):
+                        continue
 
-            if curr_result:
-                result[currency] = curr_result
+            if period_data:
+                curr_result[tenor] = period_data
+
+        if curr_result:
+            result[currency] = curr_result
 
     return result if result else None
 
 
-def llm_extract_rates(raw_text, bank_name="", existing_rates=None):
+def _get_rates_flat(rates_dict):
+    """將嵌套利率結構攤平成 {(currency, tenor, fund_type): rate}"""
+    flat = {}
+    if not rates_dict:
+        return flat
+    for currency in ['hkd', 'usd', 'cny']:
+        if currency not in rates_dict:
+            continue
+        for tenor, tenor_data in rates_dict[currency].items():
+            if not isinstance(tenor_data, dict):
+                continue
+            for fund_type in ['new_funds', 'existing_funds']:
+                if fund_type in tenor_data and isinstance(tenor_data[fund_type], dict):
+                    rate = tenor_data[fund_type].get('rate')
+                    if rate is not None:
+                        flat[(currency, tenor, fund_type)] = rate
+    return flat
+
+
+def _compare_rates(parser_flat, llm_flat):
+    """比對 Parser 同 LLM 結果，返回差異列表"""
+    discrepancies = []
+    all_keys = set(parser_flat.keys()) | set(llm_flat.keys())
+
+    for key in all_keys:
+        p_rate = parser_flat.get(key)
+        l_rate = llm_flat.get(key)
+        currency, tenor, fund_type = key
+
+        if p_rate is None and l_rate is not None:
+            discrepancies.append({
+                'currency': currency, 'tenor': tenor, 'fund_type': fund_type,
+                'parser': None, 'llm': l_rate, 'diff': None,
+                'type': 'llm_only'
+            })
+        elif p_rate is not None and l_rate is None:
+            # LLM 搵唔到，唔算大問題（可能 text 截斷）
+            pass
+        elif p_rate is not None and l_rate is not None:
+            diff = abs(p_rate - l_rate)
+            if diff > RATE_DIFF_TOLERANCE:
+                discrepancies.append({
+                    'currency': currency, 'tenor': tenor, 'fund_type': fund_type,
+                    'parser': p_rate, 'llm': l_rate, 'diff': round(diff, 4),
+                    'type': 'mismatch'
+                })
+
+    return discrepancies
+
+
+def llm_verify_all(banks_data):
     """
-    用 LLM 從 raw text 抽取利率。
+    全量 LLM 驗證：對每間銀行做獨立抽取，同 Parser 結果比對。
 
     Args:
-        raw_text: 爬蟲抓到嘅文字
-        bank_name: 銀行名稱（用於 prompt）
-        existing_rates: 現有 parser 已抽到嘅利率（用於判斷覆蓋率）
+        banks_data: list of dicts, 每個包含:
+            - name: 銀行名稱
+            - key: 銀行 key
+            - text: raw text（爬蟲抓到嘅）
+            - parsed: parser 返回嘅利率（可能為 None）
 
     Returns:
-        dict: 利率數據，格式同 parser 一樣；或者 None 如果 LLM 都失敗
+        dict with:
+            - verified: {key: rates_dict} — LLM 驗證後嘅利率
+            - discrepancies: [{bank, ...}] — Parser 同 LLM 不一致嘅記錄
+            - stats: {total, parser_ok, llm_fixed, llm_failed}
     """
-    if not raw_text or len(raw_text) < 50:
-        logger.info("LLM fallback: text 太短，跳過")
-        return None
+    if not LLM_API_KEY:
+        logger.warning("LLM 全量驗證: 未設定 LLM_API_KEY，跳過")
+        return {'verified': {}, 'discrepancies': [], 'stats': {'total': len(banks_data), 'skipped': len(banks_data)}}
 
-    text = raw_text[:8000]
+    verified = {}
+    discrepancies = []
+    stats = {'total': len(banks_data), 'parser_ok': 0, 'llm_fixed': 0, 'llm_only': 0, 'llm_failed': 0}
 
-    logger.info(f"LLM fallback: 正在用 LLM 抽取 {bank_name} 嘅利率...")
-    prompt = EXTRACTION_PROMPT_TEMPLATE.format(bank_name=bank_name, text=text)
-    response = _call_llm(prompt)
+    for bank in banks_data:
+        name = bank['name']
+        key = bank['key']
+        text = bank.get('text', '')
+        parsed = bank.get('parsed')
 
-    if not response:
-        logger.warning(f"LLM fallback: {bank_name} — LLM 無回應")
-        return None
+        if not text or len(text) < 50:
+            logger.info(f"  LLM 驗證 [{key}]: text 太短，跳過")
+            if parsed:
+                verified[key] = parsed
+            else:
+                stats['llm_failed'] += 1
+            continue
 
-    parsed = _parse_llm_response(response)
-    if parsed:
-        currencies_found = list(parsed.keys())
-        logger.info(f"LLM fallback: {bank_name} — 成功抽取 {currencies_found}")
+        # 呼叫 LLM
+        logger.info(f"  LLM 驗證 [{name}]...")
+        prompt = EXTRACTION_PROMPT_TEMPLATE.format(bank_name=name, text=text[:8000])
+        response = _call_llm(prompt)
+        llm_rates = _parse_llm_response(response)
 
-        if existing_rates:
-            for c in currencies_found:
-                if c not in existing_rates:
-                    logger.info(f"  → LLM 補充咗 {c.upper()} 利率")
+        if not llm_rates:
+            logger.warning(f"  LLM 驗證 [{key}]: LLM 抽取失敗")
+            if parsed:
+                verified[key] = parsed  # fallback 到 parser 結果
+            else:
+                stats['llm_failed'] += 1
+            continue
 
-        return parsed
-    else:
-        logger.warning(f"LLM fallback: {bank_name} — LLM 返回嘅 JSON 解析失敗")
-        return None
+        if not parsed:
+            # Parser 完全失敗，LLM 直接接管
+            verified[key] = llm_rates
+            stats['llm_only'] += 1
+            logger.info(f"  🤖 [{name}] Parser 失敗，LLM 直接接管")
+            continue
+
+        # 比對 Parser 同 LLM
+        parser_flat = _get_rates_flat(parsed)
+        llm_flat = _get_rates_flat(llm_rates)
+        diffs = _compare_rates(parser_flat, llm_flat)
+
+        if not diffs:
+            # 一致，用 parser 結果（結構已知）
+            verified[key] = parsed
+            stats['parser_ok'] += 1
+            logger.info(f"  ✅ [{name}] Parser 同 LLM 一致")
+        else:
+            # 不一致，以 LLM 為準
+            verified[key] = llm_rates
+            stats['llm_fixed'] += 1
+            for d in diffs:
+                d['bank'] = name
+                d['key'] = key
+                discrepancies.append(d)
+            logger.warning(f"  ⚠️ [{name}] Parser 同 LLM 有 {len(diffs)} 處差異，以 LLM 為準")
+            for d in diffs:
+                logger.warning(f"    {d['currency'].upper()} {d['tenor']} {d['fund_type']}: parser={d['parser']}, llm={d['llm']}, diff={d['diff']}")
+
+    return {'verified': verified, 'discrepancies': discrepancies, 'stats': stats}
 
 
 def should_use_llm(existing_rates, expected_currencies=None):
-    """
-    判斷需唔需要用 LLM fallback。
-
-    Args:
-        existing_rates: 現有 parser 返回嘅利率
-        expected_currencies: 預期嘅幣種（例如 ['hkd', 'usd', 'cny']）
-
-    Returns:
-        bool: True = 需要 LLM fallback
-    """
-    if expected_currencies is None:
-        expected_currencies = ['hkd', 'usd', 'cny']
-
+    """向舊版 update_rates.py 提供相容判斷。"""
     if not existing_rates:
         return True
+    currencies = expected_currencies or ['hkd', 'usd', 'cny']
+    return any(not existing_rates.get(currency) for currency in currencies)
 
-    missing = [c for c in expected_currencies if c not in existing_rates or not existing_rates[c]]
-    if len(missing) >= 2:
-        return True
 
-    for c in expected_currencies:
-        if c in existing_rates:
-            for tenor, data in existing_rates[c].items():
-                if isinstance(data, dict):
-                    for fund_type in ['new_funds', 'existing_funds']:
-                        if fund_type in data and isinstance(data[fund_type], dict):
-                            if data[fund_type].get('rate') is None:
-                                return True
+def llm_extract_rates(raw_text, bank_name="", existing_rates=None):
+    """
+    Fallback 模式：Parser 失敗時用 LLM 抽取。
+    """
+    if not raw_text or len(raw_text) < 50:
+        return None
 
-    return False
+    logger.info(f"LLM fallback: 正在用 LLM 抽取 {bank_name} 嘅利率...")
+    prompt = EXTRACTION_PROMPT_TEMPLATE.format(bank_name=bank_name, text=raw_text[:8000])
+    response = _call_llm(prompt)
+    parsed = _parse_llm_response(response)
+
+    if parsed:
+        logger.info(f"LLM fallback: {bank_name} — 成功抽取 {list(parsed.keys())}")
+        return parsed
+
+    logger.warning(f"LLM fallback: {bank_name} — 失敗")
+    return None
