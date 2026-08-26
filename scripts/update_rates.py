@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from parsers import *
 from parsers import normalize_rates
 from fetcher import fetch_with_requests, get_fetch_strategy
+from llm_extractor import llm_extract_rates, should_use_llm
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
@@ -400,10 +401,21 @@ def main():
             parsed = parser(scraped['text'], tables=scraped.get('tables', []))
             
             if not parsed or (not parsed.get('hkd') and not parsed.get('usd') and not parsed.get('cny')):
-                logger.warning(f"  [{key}] Parser returned empty rates")
-                failed_banks.append({'name': name, 'key': key, 'reason': 'Parser 返回空數據，可能需要 browser retry'})
-                needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
-                continue
+                # === LLM Fallback：Parser 失敗時嘗試用 LLM 抽取 ===
+                logger.info(f"  [{key}] Parser returned empty, trying LLM fallback...")
+                llm_rates = llm_extract_rates(
+                    raw_text=scraped.get('text', ''),
+                    bank_name=name,
+                    existing_rates=parsed
+                )
+                if llm_rates:
+                    parsed = llm_rates
+                    logger.info(f"  🤖 [{key}] LLM fallback succeeded")
+                else:
+                    logger.warning(f"  [{key}] Parser returned empty rates AND LLM fallback failed")
+                    failed_banks.append({'name': name, 'key': key, 'reason': 'Parser 返回空數據，LLM fallback 亦失敗，需要 browser retry'})
+                    needs_browser_retry.append({'name': name, 'key': key, 'url': scraped.get('url')})
+                    continue
             
             # === 利率正規化：統一為百分比格式 ===
             # 修正小數格式（0.025 → 2.5）同異常值
