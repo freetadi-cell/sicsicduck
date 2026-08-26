@@ -71,8 +71,9 @@ def load_title(aid):
     return None
 
 
-# 最新頭 4 篇先顯示圖片——按新聞主題派對應嘅無版權圖（唔 hotlink 原媒體）
-LEAD_IMAGE_COUNT = 4
+# 所有新聞都顯示圖片卡片（唔再限制頭4篇）
+LEAD_IMAGE_COUNT = 999999
+LEAD_IMAGE_COUNT = 999999
 
 # 站內無版權主題圖（CC0/公有領域，Wikimedia Commons）—— 按新聞主題配圖
 THEME_MONEY = "/assets/news/theme-money.jpg"     # 美元鈔票（公有領域）
@@ -193,7 +194,7 @@ def card(a, show_image, lead_index=0):
     region = esc(a.get("region", ""))
     link = esc(a.get("link", "#"))
 
-    # 圖片：只喺頭幾篇 show_image=True 時按主題派無版權圖；其餘唔 render 圖片區塊
+    # 所有新聞均按主題派發站內無版權圖片
     if show_image:
         image = esc(theme_for(a))
         image_block = f'''<div class="article-image"><img src="{image}" alt="" loading="lazy"></div>'''
@@ -202,7 +203,7 @@ def card(a, show_image, lead_index=0):
 
     summary = load_summary(aid)
 
-    # 第 4 篇起：純標題列表（唔用框、冇圖、冇 meta）
+    # 非卡片模式保留作兼容（目前所有新聞均使用卡片模式）
     if not show_image:
         # 有摘要 → 標題可開 modal；冇摘要 → 直接外連
         if summary:
