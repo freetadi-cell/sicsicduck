@@ -71,9 +71,10 @@ def load_title(aid):
     return None
 
 
-# 所有新聞都顯示圖片卡片（唔再限制頭4篇）
-LEAD_IMAGE_COUNT = 999999
-LEAD_IMAGE_COUNT = 999999
+# 頭 10 篇顯示圖片卡片，其餘文字連結
+LEAD_IMAGE_COUNT = 10
+# 頭 10 篇顯示圖片卡片，其餘文字連結
+LEAD_IMAGE_COUNT = 10
 
 # 站內無版權主題圖（CC0/公有領域，Wikimedia Commons）—— 按新聞主題配圖
 THEME_MONEY = "/assets/news/theme-money.jpg"     # 美元鈔票（公有領域）
