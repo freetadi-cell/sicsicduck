@@ -13,12 +13,25 @@ import json
 import re
 import os
 import logging
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-# LLM config — kimi-k3 via Moonshot API
-LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.moonshot.cn/v1")
-LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
+# LLM config — environment variables take precedence; otherwise use the
+# provider configured in OpenClaw's private config.
+def _load_openclaw_provider():
+    config_path = Path.home() / ".openclaw" / "openclaw.json"
+    try:
+        config = json.loads(config_path.read_text())
+        provider = config.get("models", {}).get("providers", {}).get("yuanyuai", {})
+        return provider.get("apiKey", ""), provider.get("baseUrl") or provider.get("api", "")
+    except (OSError, json.JSONDecodeError, TypeError):
+        return "", ""
+
+
+_CONFIG_API_KEY, _CONFIG_BASE_URL = _load_openclaw_provider()
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL") or _CONFIG_BASE_URL or "https://api.moonshot.cn/v1"
+LLM_API_KEY = os.environ.get("LLM_API_KEY") or _CONFIG_API_KEY
 LLM_MODEL = os.environ.get("LLM_MODEL", "kimi-k3")
 LLM_TIMEOUT = 60
 
