@@ -1,0 +1,10 @@
+{
+  "id": "8bca1e6c7ac694de3eabe253a87c8a3c",
+  "title": "XCENA發布MX1架構 整合記憶體擴展及近記憶體運算",
+  "source_name": "Bastillepost",
+  "link": "https://www.bastillepost.com/hongkong/article/16640326-xcena%E7%99%BC%E5%B8%83mx1%E6%9E%B6%E6%A7%8B-%E6%95%B4%E5%90%88%E8%A8%98%E6%86%B6%E9%AB%94%E6%93%B4%E5%B1%95%E5%8F%8A%E8%BF%91%E8%A8%98%E6%86%B6%E9%AB%94%E9%81%8B%E7%AE%97",
+  "rewritten_title": "XCENA於Hot Chips 2026展示MX1架構 整合CXL記憶體擴展與近記憶體運算",
+  "rewritten": "半導體公司XCENA於Hot Chips 2026發表運算型CXL記憶體架構MX1，將大規模記憶體擴展、SSD支援及可編程近記憶體運算整合於單一CXL Type 3裝置，旨在解決AI基礎設施的記憶體瓶頸。實測顯示，MX1在數據處理核心上的吞吐量較主機CPU透過CXL處理數據時高達4.7倍，能源效率提升18.7倍。該架構支援標準C/C++及Rust編程，並計劃於2026年底前量產，2027年實現首批客戶收入。XCENA由三星及SK海力士資深人士創立，已籌集1.85億美元。",
+  "status": "done",
+  "fetched_at": "2026-08-26T15:04:12"
+}
