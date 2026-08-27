@@ -1,41 +1,20 @@
 {
   "articles": [
     {
-      "id": "4b4f72b1b68243d3eb21959a9961a1a4",
-      "title": "特朗普稱霍爾木茲海峽國際水域已清除水雷 警告伊朗再布雷將摧毀船隻",
-      "description": "美國總統特朗普周二表示,霍爾木茲海峽國際水域的水雷已全部引爆或移除,並警告伊朗,任何船隻或快艇如再布設水雷,美方將予以摧毀。 特朗普:太空軍正監視霍爾木茲海峽 特朗普在社交平台Truth Social發文稱,美國透過太空軍監視霍爾木茲海峽「每一平方吋」,並強調美方已全面實施對布雷行動的「零容忍政策」。 另外,伊朗及阿曼周二商討在霍爾木茲海峽設立臨時聯合航道,以及共同清除水雷。阿曼外交大臣巴德爾(B",
-      "link": "https://www.stheadline.com/realtime-world/3608265/%E7%89%B9%E6%9C%97%E6%99%AE%E7%A8%B1%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E5%9C%8B%E9%9A%9B%E6%B0%B4%E5%9F%9F%E5%B7%B2%E6%B8%85%E9%99%A4%E6%B0%B4%E9%9B%B7-%E8%AD%A6%E5%91%8A%E4%BC%8A%E6%9C%97%E5%86%8D%E5%B8%83%E9%9B%B7%E5%B0%87%E6%91%A7%E6%AF%80%E8%88%B9%E9%9A%BB",
-      "pubDate": "2026-08-25 18:50:40",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/7a39d6bb11692386686dd830d885b839/2026-08/2026-08-24T202227Z_1102145854_RC275NA3BY3Q_RTRMADP_3_USA-TRUMP_0.JPG",
+      "id": "6cd65315ffe7f869f63556a77decaa93",
+      "title": "美國第二季GDP增長維持初值不變 PCE增長向上修訂",
+      "description": "美國經濟增長按本地生產總值(GDP)計算,第二季增長1.5%,與上月公布的初值一致,符合彭博截至美東時間上午6時10分調查預期。 第一季GDP增長2.1%。 個人消費開支(PCE)增長3.4%,第一季為增長0.5%,較初值增長3.2%向上修訂。 非住宅固定投資貢獻亦輕微向上修訂,但私人庫存、淨出口及政府支出貢獻則...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E7%AC%AC%E4%BA%8C%E5%AD%A3gdp%E5%A2%9E%E9%95%B7%E7%B6%AD%E6%8C%81%E5%88%9D%E5%80%BC%E4%B8%8D%E8%AE%8A-pce%E5%A2%9E%E9%95%B7%E5%90%91%E4%B8%8A%E4%BF%AE%E8%A8%82-125154853.html",
+      "pubDate": "2026-08-26 12:51:54",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "美國",
-        "霍爾木茲",
-        "伊朗"
+        "美東時間",
+        "gdp",
+        "本地生產總值"
       ],
       "category": [
-        "politics",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "141853c4fbbf741f7fb8d5ed3bc72e76",
-      "title": "加拿大9月8日起 對約700種美國進口貨品加徵報復性關稅 最高50%",
-      "description": "路透社報道,加拿大周二宣布,將對總值276億加元(約199.4億美元/約1,555億港元)的美國進口貨品加徵報復性關稅,與美方新關稅「以額對額、以率對率」反制。新措施將於9月8日生效,涉及約700種產品。 700種貨品加徵15%至50% 鋼鋁最高50% 加拿大政府表示,相關貨品將分別加徵15%、25%及50%關稅。其中鋼鐵、鋁材、家具及服裝等部分重要產品稅率達50%;芝士、家電及部分海產加徵25%",
-      "link": "https://www.stheadline.com/realtime-world/3608212/%E5%8A%A0%E6%8B%BF%E5%A4%A79%E6%9C%888%E6%97%A5%E8%B5%B7-%E5%B0%8D%E7%B4%84700%E7%A8%AE%E7%BE%8E%E5%9C%8B%E9%80%B2%E5%8F%A3%E8%B2%A8%E5%93%81%E5%8A%A0%E5%BE%B5%E5%A0%B1%E5%BE%A9%E6%80%A7%E9%97%9C%E7%A8%85-%E6%9C%80%E9%AB%9850",
-      "pubDate": "2026-08-25 15:43:19",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/70490445c5db188159f8973b99622d80/2026-08/AP26234773742119.jpg",
-      "keywords": [
-        "美國",
-        "關稅",
-        "加拿大"
-      ],
-      "category": [
-        "business",
-        "top"
+        "business"
       ],
       "region": "hk",
       "pinned": true
@@ -59,22 +38,235 @@
       "pinned": true
     },
     {
-      "id": "5bbec08b2198556ec89e90def84b5097",
-      "title": "更新:通脹報告公布後股市盤中下跌 市場關注輝達(NVDA.US)業績",
-      "description": "美國基準股指周三中午後偏軟,交易員消化最新通脹數據,並等待科技龍頭輝達(NVDA.US)公布業績。 納斯達克綜合指數及道瓊斯工業平均指數周三中午後分別跌0.2%,報26,093.1及53,460.6。標普500指數微跌0.1%至7,671.6。三大指數周二均高收,道指連升第三個交易日。 板塊方面,非必需消費品及醫...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E9%80%9A%E8%84%B9%E5%A0%B1%E5%91%8A%E5%85%AC%E5%B8%83%E5%BE%8C%E8%82%A1%E5%B8%82%E7%9B%A4%E4%B8%AD%E4%B8%8B%E8%B7%8C-%E5%B8%82%E5%A0%B4%E9%97%9C%E6%B3%A8%E8%BC%9D%E9%81%94-nvda-us-175238148.html",
-      "pubDate": "2026-08-26 17:52:38",
+      "id": "aaaadce8b36134799f0e29606a225797",
+      "title": "波士頓聯儲銀行總裁Collins稱 若通脹持續或需加息",
+      "description": "波士頓聯儲銀行總裁Susan Collins周二表示,除非通脹持續降溫,否則聯儲局可能很快需要收緊貨幣政策。 Collins表示,她支持聯邦公開市場委員會(FOMC)上月維持「輕微限制性」政策立場的決定。她在波士頓聯儲銀行網站發表的文章中指出,有關立場應有助通脹在「合理時間內」回到2%目標。 不過,Collins...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B3%A2%E5%A3%AB%E9%A0%93%E8%81%AF%E5%84%B2%E9%8A%80%E8%A1%8C%E7%B8%BD%E8%A3%81collins%E7%A8%B1-%E8%8B%A5%E9%80%9A%E8%84%B9%E6%8C%81%E7%BA%8C%E6%88%96%E9%9C%80%E5%8A%A0%E6%81%AF-163456842.html",
+      "pubDate": "2026-08-25 16:34:56",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "納斯達克綜合指數",
-        "道瓊斯工業平均指數"
+        "collins",
+        "聯儲局",
+        "表示",
+        "波士頓聯儲銀行",
+        "susan collins",
+        "美國勞工統計局",
+        "通脹"
       ],
       "category": [
         "business"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "ba3e88d811e6c7b169702b2d42dcef61",
+      "title": "IMF總裁呼籲各國應對財政風險 央行繼續專注抗通膨",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/imf%E7%B8%BD%E8%A3%81%E5%91%BC%E7%B1%B2%E5%90%84%E5%9C%8B%E6%87%89%E5%B0%8D%E8%B2%A1%E6%94%BF%E9%A2%A8%E9%9A%AA-%E5%A4%AE%E8%A1%8C%E7%B9%BC%E7%BA%8C%E5%B0%88%E6%B3%A8%E6%8A%97%E9%80%9A%E8%86%A8-184850221.html",
+      "pubDate": "2026-08-25 18:48:50",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "imf",
+        "國際貨幣基金組織",
+        "格奧爾基耶娃",
+        "經濟"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "012575f8871ea8be3da1c8696f23d97b",
+      "title": "敘利亞民主力量解散併入國家軍隊 庫爾德人心情複雜",
+      "description": "敘利亞東北部的庫爾德人,對於曾控制該地區的庫爾德人主導部隊宣布解散,心情複雜。而與敘利亞有利益關係的國際參與者則對此舉表示歡迎。 庫爾德人主導的敘利亞民主力量指揮官馬茲盧姆·阿卜迪,周二宣布該組織正式解散。該組織多年來控制一個事實上的自治區,一度佔敘利亞約25%的土地。 該組織今年一月在政府攻勢中失去大部分土地。其戰士現正被整合到官方國家軍隊中,而其控制的民事機構亦正移交予國家。 這次過渡較預期順利,臨時總統艾哈邁德·沙拉承諾加強庫爾德人的權利。庫爾德人在他上任前,長期受阿薩德王朝統治下被邊緣化。 許多庫爾德人最初對沙拉政府抱持懷疑。部分參與推翻前敘利亞總統巴沙爾·阿薩德攻勢的叛亂組織,過去亦曾與敘利亞民主力量發生衝突。 不過,卡米什利的公民社會活躍分子穆罕默德·阿爾·穆罕默德表示,他對阿卜迪有信心,阿卜迪曾領導一場長達多年的戰役對抗伊斯蘭國武裝分子。 他說:「我們相信阿卜迪將軍及其團隊,能夠為庫爾德人民的利益工作,並保障我們的權利。」他續指:「我們的權利是基本權利——能夠說自己的語言、生活在自己的土地上、能夠自行管理我們的土地,以及作為庫爾德人不會受到侵犯,就像阿薩德政權時期那樣。」 來自卡米什利以西阿穆達鎮的伊娃·謝赫·穆薩表示,只要庫爾德人的權利受到尊重,敘利亞民主力量作為一個組織對她來說並不重要。 她說:「無論誰保障庫爾德人的權利,包括說自己語言的權利、在農場自由工作的權利,以及政治權利,如果我們能在新敘利亞中成為活躍的參與者,這就是庫爾德人所追求的。」她又說:「...這並非敘利亞民主力量解散,庫爾德人也隨之消失。」 部分人對正在發生的變化更為謹慎。賈萬·穆罕默德在2018年土耳其部隊及盟友敘利亞反對派戰士的攻勢中,從阿夫林鎮流離失所。庫爾德平民及敘利亞民主力量戰士被趕出在攻勢中佔領的地區,儘管部分流離失所者現已開始返回。 穆罕默德表示,他同意與國家軍隊整合,但不樂見敘利亞民主力量作為一個組織終結。 他說:「敘利亞民主力量作出了巨大犧牲,他們對抗伊斯蘭國。」他續指:「現在,他們說敘利亞民主力量這個名字不再存在。這太過分了,令人難以接受。」 自中央政府接管並取消了此前實施的燃油補貼後,前敘利亞民主力量控制地區的居民亦受到物價上漲的嚴重打擊。近月來,當地因物價上漲及生活條件惡化而爆發抗議活動。 然而,東北地區的整合為沙拉政府帶來了重大推動,該政府在國家開始從近14年的內戰中恢復之際,一直努力統一全國。敘利亞民主力量解散的宣布,受到國際參與者的讚揚。 法國總統馬克龍周三發表聲明,祝賀敘利亞「昨天在敘利亞民主力量和平整合到敘利亞國家進程中,邁出了決定性一步」。 美國駐敘利亞特使湯姆·巴拉克在X平台發文,形容阿卜迪的宣布「絕對是歷史性的」,並讚揚「有遠見的領導層」「將過去的分歧轉化為持久的夥伴關係,並讓敘利亞人民有機會塑造共同的未來」。 他讚揚沙拉承諾在教育中承認庫爾德語,並任命包括阿卜迪及曾擔任敘利亞民主力量相關行政部門外交關係官員的伊勒哈姆·艾哈邁德等敘利亞民主力量高級人物,在敘利亞政府中擔任「實質職位」。政府尚未正式宣布這些任命,但當地媒體報道指,阿卜迪將獲任命為總統顧問,艾哈邁德則為國會議員。 伊拉克北部半自治庫爾德地區總統內奇爾萬·巴爾扎尼,曾擔任敘利亞民主力量與大馬士革之間的調解角色,他歡迎為執行雙方協議所採取的措施,並呼籲「所有庫爾德政黨及敘利亞社會所有組成部分支持這些措施,並為其成功作出貢獻」。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16647559-%E6%95%98%E5%88%A9%E4%BA%9E%E6%B0%91%E4%B8%BB%E5%8A%9B%E9%87%8F%E8%A7%A3%E6%95%A3%E4%BD%B5%E5%85%A5%E5%9C%8B%E5%AE%B6%E8%BB%8D%E9%9A%8A-%E5%BA%AB%E7%88%BE%E5%BE%B7%E4%BA%BA%E5%BF%83%E6%83%85%E8%A4%87",
+      "pubDate": "2026-08-26 19:49:29",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/6320f7cb7e72322e99420e7da3c21fa5_Syria_Kurdish_Force_5_778_FB.jpg",
+      "keywords": [
+        "庫爾德人",
+        "中東",
+        "敘利亞",
+        "內戰",
+        "敘利亞民主力量",
+        "大視野"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "caec4da9d8b94f901ec219455bef633d",
+      "title": "Apple 9.9 舉行「Surprise and shine」發佈會 iPhone 18 Pro、首款摺機及新 Apple Watch 預測總整理",
+      "description": "Apple 官方今日(8月26日)正式發出媒體邀請函,宣布將於美國時間 2026 年 9 月 9 日上午 10 時(香港時間 9 月 10 日凌晨 1 時),在加州 Apple Park 的 Steve Jobs Theater 舉行秋季特別發佈會。今次發佈會主題為「Surprise and shine」,亦是新任 CEO John Ternus 上任後的首場「重頭戲」發佈會! 這篇文章 Apple 9.9 舉行「Surprise and shine」發佈會 iPhone 18 Pro、首款摺機及新 Apple Watch 預測總整理 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/apple-event-september-2026-iphone-18-pro-foldable-launch-date/",
+      "pubDate": "2026-08-26 19:46:20",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/27032622/PCM_Banner_1080_20260827_Apple_event_09.jpg",
+      "keywords": [
+        "科技新聞",
+        "surprise and shine",
+        "iphone 18 pro",
+        "john ternus",
+        "iphone ultra",
+        "tech",
+        "apple 發佈會",
+        "apple watch"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3bd555b9c7a90262e238227d48adb646",
+      "title": "塘鵝與馬圖林達成兩年1600萬美元合約",
+      "description": "新奧爾良塘鵝隊一名知情人士周三透露,球隊已與得分能力強勁的側翼球員班尼迪克·馬圖林達成協議,簽訂一份為期兩年、價值1600萬美元的合約。 該名人士要求匿名,因為這項消息最初由ESPN報道,但尚未正式公布。 現年24歲的馬圖林上季從印第安納隊被交易至洛杉磯快艇隊,期間他場均取得17.6分。 這名身高6呎5吋、擁有四年NBA經驗、來自亞利桑那大學的老將,在休賽期成為快艇隊的受限制自由球員。快艇隊必須同意撤回早前一份價值880萬美元的合格報價,才能讓馬圖林與塘鵝隊的交易得以完成。 自2022年NBA選秀中以總第六順位被印第安納隊選中以來,馬圖林生涯場均取得16.2分及4.7個籃板。 馬圖林與新奧爾良隊的這份合約,是塘鵝隊第二年擔任籃球營運總監祖·杜馬斯在這次休賽期最重大的舉動。由於球隊上季以26勝56負的戰績未能晉身季後賽,杜馬斯選擇不交易隊中更重要的球員。 塘鵝隊今夏沒有首輪選秀權,因為他們在2025年已將其交易出去,以換取以總第13順位選中德里克·昆恩的機會。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16647542-%E5%A1%98%E9%B5%9D%E8%88%87%E9%A6%AC%E5%9C%96%E6%9E%97%E9%81%94%E6%88%90%E5%85%A9%E5%B9%B41600%E8%90%AC%E7%BE%8E%E5%85%83%E5%90%88%E7%B4%84",
+      "pubDate": "2026-08-26 19:28:46",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/230c1d61458832c1e14f21aa0830925f_Pelicans_Mathurin_Basketball_45342_FB.jpg",
+      "keywords": [
+        "馬圖林",
+        "nba",
+        "塘鵝",
+        "合約",
+        "體育",
+        "籃球"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "aa901d75486243a0c0b3121583aaf140",
+      "title": "美國盟友質疑川普關於霍爾木茲海峽已無水雷的說法",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E7%9B%9F%E5%8F%8B%E8%B3%AA%E7%96%91%E5%B7%9D%E6%99%AE%E9%97%9C%E6%96%BC%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E5%B7%B2%E7%84%A1%E6%B0%B4%E9%9B%B7%E7%9A%84%E8%AA%AA%E6%B3%95-191656239.html",
+      "pubDate": "2026-08-26 19:16:56",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/b93356149f620392281098894793f252.jpg",
+      "keywords": [
+        "霍爾木茲海峽",
+        "水雷",
+        "伊朗"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "943b569b816a1d9450f4e9e69fa1bd81",
+      "title": "8月夜期收市報25615點 跌55點",
+      "description": "<匯港通訊> 8月夜期期指收市報25615點,跌55點,低水38點,成交8246張;9月夜期期指報25553點,跌59點,低水100點,成交4454張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125615%E9%BB%9E-%E8%B7%8C55%E9%BB%9E-190500109.html",
+      "pubDate": "2026-08-26 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "<匯港通訊>"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "987055d77e2dd1fb3b995f6121012178",
+      "title": "《業績》龍蟠科技(02465.HK)中期純利4.21億人民幣 虧轉盈",
+      "description": "龍蟠科技(02465.HK)公布6月止六個月中期業績,營業收入71.98億人民幣(下同),按年增加98.7%,主要是LFP正極材料業務收入大增144%至57.56億元。錄得純利4.21億元,相較上年同期虧損8,515萬元,虧轉盈;每股盈利59分。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%BE%8D%E8%9F%A0%E7%A7%91%E6%8A%80-02465-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A94-190404887.html",
+      "pubDate": "2026-08-26 19:04:04",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fee95d807de578b3c8f6a017f3cd4dab",
+      "title": "《業績》靈寶黃金(03330.HK)中期純利9.72億人民幣增46.5% 不派息",
+      "description": "靈寶黃金(03330.HK)公布6月止六個月中期業績,收入79.88億人民幣(下同),按年增加2.5%;毛利18.8億元,上升65.2%。錄得純利9.72億元,增長46.5%,每股盈利72.72分。不派息。上年同期派16.4分。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%9D%88%E5%AF%B6%E9%BB%83%E9%87%91-03330-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A99-190305076.html",
+      "pubDate": "2026-08-26 19:03:05",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "903d63648bdb940f9b417efd3233c73c",
+      "title": "《業績》哈爾濱電氣(01133.HK)中期淨利潤17.18億人民幣 增長63.5%",
+      "description": "哈爾濱電氣(01133.HK)公布6月止六個月中期業績,按中國會計準則,營業收入248億人民幣(下同),按年增加10.3%;毛利37.19億元,上升37.4%。歸屬股東淨利潤17.18億元,增長63.5%,每股收益77分。不派息。 上半年,實現正式合同簽約額360.4億元,增長1.4%。(d)~ 阿思達克財經新聞...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E5%93%88%E7%88%BE%E6%BF%B1%E9%9B%BB%E6%B0%A3-01133-hk-%E4%B8%AD%E6%9C%9F%E6%B7%A8%E5%88%A9%E6%BD%A417-190214924.html",
+      "pubDate": "2026-08-26 19:02:14",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "836c36130c58dcf343f51760a94c449d",
+      "title": "麥科醫藥(02335.HK)MT200605完成II期臨床試驗",
+      "description": "麥科醫藥-B(02335.HK)公布,集團自主研發用於治療急性缺血性腦卒中的候選藥物MT200605的II期臨床試驗已完成。該試驗已證明具有顯著且穩健的療效優勢及良好的安全性。(de/d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BA%A5%E7%A7%91%E9%86%AB%E8%97%A5-02335-hk-mt200605%E5%AE%8C%E6%88%90ii%E6%9C%9F%E8%87%A8%E5%BA%8A%E8%A9%A6%E9%A9%97-190126221.html",
+      "pubDate": "2026-08-26 19:01:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "79416549874c80fc8320c3432fef64bf",
+      "title": "《業績》西銳(02507.HK)中期純利8,812萬美元 增長35.6%",
+      "description": "西銳(02507.HK)公布6月止六個月中期業績,收入7.37億美元,按年增加24%;毛利2.67億美元,上升24.2%。錄得純利8,812萬美元,增長35.6%,每股盈利24美仙。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E8%A5%BF%E9%8A%B3-02507-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A98-190026140.html",
+      "pubDate": "2026-08-26 19:00:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "65fccd8cc4c0dd5f5bbd6f52d2c9efdf",
+      "title": "8月26日美國重要經濟數據每日摘要",
+      "description": "美國第二季GDP第二次預估按季增長1.5%,與初值一致,前一季度增長2.1%。 個人消費支出由初值增長3.2%向上修訂至增長3.4%,明顯高於前一季度增長0.5%。 非住宅固定投資亦獲向上修訂,但庫存、淨出口及政府支出則向下修訂。住宅固定投資貢獻維持不變。 GDP價格指數繼前一季度升3.6%後,本季度升6.4%,...",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%8826%E6%97%A5%E7%BE%8E%E5%9C%8B%E9%87%8D%E8%A6%81%E7%B6%93%E6%BF%9F%E6%95%B8%E6%93%9A%E6%AF%8F%E6%97%A5%E6%91%98%E8%A6%81-190013807.html",
+      "pubDate": "2026-08-26 19:00:13",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "個人消費支出",
+        "美國第二季gdp"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
     },
     {
       "id": "f7532cc31ec935177ce6eb650416a869",
@@ -396,6 +588,24 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "5bbec08b2198556ec89e90def84b5097",
+      "title": "更新:通脹報告公布後股市盤中下跌 市場關注輝達(NVDA.US)業績",
+      "description": "美國基準股指周三中午後偏軟,交易員消化最新通脹數據,並等待科技龍頭輝達(NVDA.US)公布業績。 納斯達克綜合指數及道瓊斯工業平均指數周三中午後分別跌0.2%,報26,093.1及53,460.6。標普500指數微跌0.1%至7,671.6。三大指數周二均高收,道指連升第三個交易日。 板塊方面,非必需消費品及醫...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9B%B4%E6%96%B0-%E9%80%9A%E8%84%B9%E5%A0%B1%E5%91%8A%E5%85%AC%E5%B8%83%E5%BE%8C%E8%82%A1%E5%B8%82%E7%9B%A4%E4%B8%AD%E4%B8%8B%E8%B7%8C-%E5%B8%82%E5%A0%B4%E9%97%9C%E6%B3%A8%E8%BC%9D%E9%81%94-nvda-us-175238148.html",
+      "pubDate": "2026-08-26 17:52:38",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "納斯達克綜合指數",
+        "道瓊斯工業平均指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "f3dbd37610c3795f0a11f1af1686f2c9",
@@ -2696,25 +2906,6 @@
       "region": "hk"
     },
     {
-      "id": "6cd65315ffe7f869f63556a77decaa93",
-      "title": "美國第二季GDP增長維持初值不變 PCE增長向上修訂",
-      "description": "美國經濟增長按本地生產總值(GDP)計算,第二季增長1.5%,與上月公布的初值一致,符合彭博截至美東時間上午6時10分調查預期。 第一季GDP增長2.1%。 個人消費開支(PCE)增長3.4%,第一季為增長0.5%,較初值增長3.2%向上修訂。 非住宅固定投資貢獻亦輕微向上修訂,但私人庫存、淨出口及政府支出貢獻則...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E7%AC%AC%E4%BA%8C%E5%AD%A3gdp%E5%A2%9E%E9%95%B7%E7%B6%AD%E6%8C%81%E5%88%9D%E5%80%BC%E4%B8%8D%E8%AE%8A-pce%E5%A2%9E%E9%95%B7%E5%90%91%E4%B8%8A%E4%BF%AE%E8%A8%82-125154853.html",
-      "pubDate": "2026-08-26 12:51:54",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "美東時間",
-        "gdp",
-        "本地生產總值"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "4b14ef4dce0b2c8eba79ca57cfa482c9",
       "title": "探班直播間!宋濤呼籲助推台品進入大陸市場",
       "description": "中評社上海8月26日電(記者 陳思遠)中共中央台辦、國務院台辦主任宋濤25日晚來到位於上海黃浦江邊的“兩岸青年交流季Young市集”,探班正在直播帶貨的台灣演員明道。宋濤強調,大陸人口眾多、市場廣闊、消費能力強,希望大家一起為兩岸的交流合作,為兩岸的融合發展,為台灣農漁產品、優質產品進入大陸市場共同努力。 剛步入市集,身著少數民族服飾的台灣青年便熱情迎上前來,歡迎宋濤、張榮恭一行。",
@@ -3168,23 +3359,24 @@
       "region": "hk"
     },
     {
-      "id": "ba3e88d811e6c7b169702b2d42dcef61",
-      "title": "IMF總裁呼籲各國應對財政風險 央行繼續專注抗通膨",
-      "description": null,
-      "link": "https://hk.finance.yahoo.com/news/imf%E7%B8%BD%E8%A3%81%E5%91%BC%E7%B1%B2%E5%90%84%E5%9C%8B%E6%87%89%E5%B0%8D%E8%B2%A1%E6%94%BF%E9%A2%A8%E9%9A%AA-%E5%A4%AE%E8%A1%8C%E7%B9%BC%E7%BA%8C%E5%B0%88%E6%B3%A8%E6%8A%97%E9%80%9A%E8%86%A8-184850221.html",
-      "pubDate": "2026-08-25 18:48:50",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "id": "4b4f72b1b68243d3eb21959a9961a1a4",
+      "title": "特朗普稱霍爾木茲海峽國際水域已清除水雷 警告伊朗再布雷將摧毀船隻",
+      "description": "美國總統特朗普周二表示,霍爾木茲海峽國際水域的水雷已全部引爆或移除,並警告伊朗,任何船隻或快艇如再布設水雷,美方將予以摧毀。 特朗普:太空軍正監視霍爾木茲海峽 特朗普在社交平台Truth Social發文稱,美國透過太空軍監視霍爾木茲海峽「每一平方吋」,並強調美方已全面實施對布雷行動的「零容忍政策」。 另外,伊朗及阿曼周二商討在霍爾木茲海峽設立臨時聯合航道,以及共同清除水雷。阿曼外交大臣巴德爾(B",
+      "link": "https://www.stheadline.com/realtime-world/3608265/%E7%89%B9%E6%9C%97%E6%99%AE%E7%A8%B1%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E5%9C%8B%E9%9A%9B%E6%B0%B4%E5%9F%9F%E5%B7%B2%E6%B8%85%E9%99%A4%E6%B0%B4%E9%9B%B7-%E8%AD%A6%E5%91%8A%E4%BC%8A%E6%9C%97%E5%86%8D%E5%B8%83%E9%9B%B7%E5%B0%87%E6%91%A7%E6%AF%80%E8%88%B9%E9%9A%BB",
+      "pubDate": "2026-08-25 18:50:40",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/7a39d6bb11692386686dd830d885b839/2026-08/2026-08-24T202227Z_1102145854_RC275NA3BY3Q_RTRMADP_3_USA-TRUMP_0.JPG",
       "keywords": [
-        "imf",
-        "國際貨幣基金組織",
-        "格奧爾基耶娃",
-        "經濟"
+        "美國",
+        "霍爾木茲",
+        "伊朗"
       ],
       "category": [
-        "business"
+        "politics",
+        "top"
       ],
-      "region": "hk"
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "0ad7b19729cc07933fa028f350de5653",
@@ -3793,29 +3985,6 @@
       "region": "hk"
     },
     {
-      "id": "aaaadce8b36134799f0e29606a225797",
-      "title": "波士頓聯儲銀行總裁Collins稱 若通脹持續或需加息",
-      "description": "波士頓聯儲銀行總裁Susan Collins周二表示,除非通脹持續降溫,否則聯儲局可能很快需要收緊貨幣政策。 Collins表示,她支持聯邦公開市場委員會(FOMC)上月維持「輕微限制性」政策立場的決定。她在波士頓聯儲銀行網站發表的文章中指出,有關立場應有助通脹在「合理時間內」回到2%目標。 不過,Collins...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B3%A2%E5%A3%AB%E9%A0%93%E8%81%AF%E5%84%B2%E9%8A%80%E8%A1%8C%E7%B8%BD%E8%A3%81collins%E7%A8%B1-%E8%8B%A5%E9%80%9A%E8%84%B9%E6%8C%81%E7%BA%8C%E6%88%96%E9%9C%80%E5%8A%A0%E6%81%AF-163456842.html",
-      "pubDate": "2026-08-25 16:34:56",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "collins",
-        "聯儲局",
-        "表示",
-        "波士頓聯儲銀行",
-        "susan collins",
-        "美國勞工統計局",
-        "通脹"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "bbb5860b8af4da0e46a712a36f7c8a1b",
       "title": "調查顯示商業環境及勞工市場前景「更悲觀」 美國消費者信心下跌",
       "description": "美國經濟評議會(The Conference Board)周二表示,由於預期指數下滑,反映對商業環境及勞工市場前景「更悲觀」,美國8月消費者信心下跌。 消費者信心指數由7月的90.2降至本月的89.4,符合彭博調查共識。 經濟評議會首席經濟學家Dana Peterson表示,8月消費者信心連續第二個月輕微回落,而...",
@@ -4203,6 +4372,26 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "141853c4fbbf741f7fb8d5ed3bc72e76",
+      "title": "加拿大9月8日起 對約700種美國進口貨品加徵報復性關稅 最高50%",
+      "description": "路透社報道,加拿大周二宣布,將對總值276億加元(約199.4億美元/約1,555億港元)的美國進口貨品加徵報復性關稅,與美方新關稅「以額對額、以率對率」反制。新措施將於9月8日生效,涉及約700種產品。 700種貨品加徵15%至50% 鋼鋁最高50% 加拿大政府表示,相關貨品將分別加徵15%、25%及50%關稅。其中鋼鐵、鋁材、家具及服裝等部分重要產品稅率達50%;芝士、家電及部分海產加徵25%",
+      "link": "https://www.stheadline.com/realtime-world/3608212/%E5%8A%A0%E6%8B%BF%E5%A4%A79%E6%9C%888%E6%97%A5%E8%B5%B7-%E5%B0%8D%E7%B4%84700%E7%A8%AE%E7%BE%8E%E5%9C%8B%E9%80%B2%E5%8F%A3%E8%B2%A8%E5%93%81%E5%8A%A0%E5%BE%B5%E5%A0%B1%E5%BE%A9%E6%80%A7%E9%97%9C%E7%A8%85-%E6%9C%80%E9%AB%9850",
+      "pubDate": "2026-08-25 15:43:19",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/70490445c5db188159f8973b99622d80/2026-08/AP26234773742119.jpg",
+      "keywords": [
+        "美國",
+        "關稅",
+        "加拿大"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "141844f970239542546b279fcb4ed356",
@@ -228115,6 +228304,6 @@
       "pinned": true
     }
   ],
-  "total": 11590,
-  "last_updated": "2026-08-27T15:07:39.715870"
+  "total": 11601,
+  "last_updated": "2026-08-27T16:05:02.651695"
 }
