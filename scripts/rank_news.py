@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-rank_news.py — 用 GLM-5.2 判斷「當日最火熱 + 非娛樂花邊」新聞，置頂頭 4 篇。
+rank_news.py — 用 kimi-k3 判斷「當日最火熱 + 非娛樂花邊」新聞，置頂頭 4 篇。
 
 流程：
 1. 讀 data/news.json，抽出「今日」(pubDate == 今天) 文章
 2. 規則預篩：剔除明顯娛樂花邊 (category=entertainment / keywords / 標題關鍵詞)
-3. 剩低候選標題一次過打包，call GLM-5.2 揀最火熱 + 最相關嘅 Top 4
+3. 剩低候選標題一次過打包，call kimi-k3 揀最火熱 + 最相關嘅 Top 4
 4. 將揀中嘅 4 篇 reorder 到 news.json 列表最前，標記 pinned=True
 5. build script 讀到 pinned 就放最前（頭 4 篇顯示圖片）
 
@@ -31,10 +31,10 @@ ROOT = SCRIPT_DIR.parent
 DATA_DIR = ROOT / "data"
 NEWS_FILE = DATA_DIR / "news.json"
 
-# ---- 智譜 GLM API（同 fetch_article_body.py 一致）----
+# ---- kimi-k3 API（同 fetch_article_body.py 一致）----
 OPENCLAW_CFG = Path("/home/freet/.openclaw/openclaw.json")
 API_BASE = "https://yuanyuaicloud.cn/v1"
-API_MODEL = "glm-5.2"
+API_MODEL = "kimi-k3"
 API_TIMEOUT = 60
 
 # ---- 置頂篇數 ----
@@ -97,8 +97,8 @@ def is_entertainment(a):
     return any(kw in hay for kw in ENTERTAIN_KEYWORDS)
 
 
-def call_glm(api_key, prompt):
-    """call GLM-5.2，返回純文字回覆（失敗 raise）。"""
+def call_kimi(api_key, prompt):
+    """call kimi-k3，返回純文字回覆（失敗 raise）。"""
     payload = {
         "model": API_MODEL,
         "messages": [
@@ -121,8 +121,8 @@ def call_glm(api_key, prompt):
     return data["choices"][0]["message"]["content"]
 
 
-def parse_glm_json(text):
-    """從 GLM 回覆抽 JSON（可能包喺 ```json 或零散文字入面）。"""
+def parse_kimi_json(text):
+    """從 kimi-k3 回覆抽 JSON（可能包喺 ```json 或零散文字入面）。"""
     text = text.strip()
     m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.S)
     if m:
@@ -158,7 +158,7 @@ def rank(articles):
     # 規則預篩：剔走娛樂花邊
     cands = [(i, a) for i, a in enumerate(pool) if not is_entertainment(a)]
     if len(cands) < TOP_N:
-        # 候選太少，放寬：唔預篩，交俾 GLM 全權判斷（GLM 自己會排除娛樂）
+        # 候選太少，放寬：唔預篩，交俾 kimi-k3 全權判斷（模型自己會排除娛樂）
         cands = [(i, a) for i, a in enumerate(pool)]
     if len(cands) < TOP_N:
         return articles, [], f"候選不足（{len(cands)}）"
@@ -189,16 +189,16 @@ def rank(articles):
 理由請用一句廣東話簡短說明。"""
 
     api_key = get_api_key()
-    resp = call_glm(api_key, prompt)
-    parsed = parse_glm_json(resp)
+    resp = call_kimi(api_key, prompt)
+    parsed = parse_kimi_json(resp)
 
     if not parsed or "top" not in parsed:
-        print(f"[rank_news] GLM 回覆無法解析，保留原排序。回覆：{resp[:300]}", file=sys.stderr)
-        return articles, [], "GLM 回覆無法解析"
+        print(f"[rank_news] kimi-k3 回覆無法解析，保留原排序。回覆：{resp[:300]}", file=sys.stderr)
+        return articles, [], "kimi-k3 回覆無法解析"
 
     picks = parsed["top"]
     if not isinstance(picks, list) or len(picks) == 0:
-        return articles, [], "GLM 未揀到"
+        return articles, [], "kimi-k3 未揀到"
 
     # 收集揀中嘅候選 index（去重、夾返 cands）
     chosen_cands = []
@@ -224,9 +224,9 @@ def rank(articles):
             break
 
     if not chosen_cands:
-        return articles, [], "GLM 揀選無效"
+        return articles, [], "kimi-k3 揀選無效"
 
-    # 置頂：將揀中嘅文章移到列表最前（保持 GLM 揀嘅順序），其餘保持原序
+    # 置頂：將揀中嘅文章移到列表最前（保持 kimi-k3 揀嘅順序），其餘保持原序
     chosen_ids = [a.get("id") for _, a in chosen_cands]
     # 揀中嘅集合（去重）
     chosen_set = set()

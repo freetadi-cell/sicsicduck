@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-為 RSS 新聞抓正文 + 智譜 GLM-5.2 改寫，暫存本地 articles_cache/。
+為 RSS 新聞抓正文 + kimi-k3 改寫，暫存本地 articles_cache/。
 
 版權原則：只存「自撰摘要」(rewritten)，不存原文全文。
 每篇 <id>.json:
@@ -25,10 +25,10 @@ DATA_DIR = ROOT / "data"
 CACHE_DIR = ROOT / "articles_cache"
 NEWS_FILE = DATA_DIR / "news.json"
 
-# 智譜 API key 從 openclaw.json models.providers.yuanyuai 提取
+# API key 從 openclaw.json models.providers.yuanyuai 提取
 OPENCLAW_CFG = Path("/home/freet/.openclaw/openclaw.json")
 API_BASE = "https://yuanyuaicloud.cn/v1"
-API_MODEL = "glm-5.2"
+API_MODEL = "kimi-k3"
 
 UA = ("Mozilla/5.0 (compatible; SicsicDuck/1.0; +https://sicsicduck.com) "
       "AppleWebKit/537.36")
@@ -126,8 +126,8 @@ def fetch_body(url):
         return None
 
 
-# ---------- 智譜 API 改寫 ----------
-def rewrite_with_glm(api_key, title, body):
+# ---------- kimi-k3 API 改寫 ----------
+def rewrite_with_kimi(api_key, title, body):
     sys_prompt = ("你係專業中文新聞編輯，負責將原媒體新聞改寫成自家版本嘅標題同摘要，避免逐字照抄原媒體（版權問題）。\n"
                   "【語言要求】必須使用繁體中文（香港／台灣用字，如『資訊、支援、網絡、程式、股價』等），"
                   "絕不可輸出簡體字。\n"
@@ -242,7 +242,7 @@ def main():
             continue
 
         try:
-            out = rewrite_with_glm(api_key, title, body)
+            out = rewrite_with_kimi(api_key, title, body)
             # 解析 JSON：{title, summary}
             rewritten_title, rewritten = title, None
             try:

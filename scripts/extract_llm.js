@@ -48,7 +48,7 @@ try {
       gateway.send(JSON.stringify({
         type: 'chat',
         message: prompt,
-        model: 'glm-5-turbo',
+        model: 'kimi-k3',
       }));
       
       setTimeout(() => {

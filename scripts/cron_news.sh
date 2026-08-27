@@ -33,7 +33,7 @@ if ! python3 scripts/fetch_news.py >> /tmp/sicsicduck-news.log 2>&1; then
   exit 1
 fi
 
-# 1.5) 為新抓取嘅新聞寫摘要（RSS + newsdata.io，含 GLM 改寫，失敗不阻斷主流程）
+# 1.5) 為新抓取嘅新聞寫摘要（RSS + newsdata.io，含 kimi-k3 改寫，失敗不阻斷主流程）
 # 零上限：所有近期新文章全部寫摘要（BATCH 改為無上限）
 if ! python3 scripts/fetch_article_body.py --all-sources 0 >> /tmp/sicsicduck-news.log 2>&1; then
   echo "[cron_news] 摘要生成失敗（已跳過，不阻塞部署）" >> /tmp/sicsicduck-news.log
@@ -66,9 +66,9 @@ if removed > 0:
     print(f"[purge] 移除 {removed} 篇冇摘要，保留 {len(kept)} 篇")
 EOF
 
-# 1.7) 用 GLM-5.2 判斷當日最火熱 + 非娛樂花邊新聞，置頂頭 4 篇（失敗不阻斷部署）
+# 1.7) 用 kimi-k3 判斷當日最火熱 + 非娛樂花邊新聞，置頂頭 4 篇（失敗不阻斷部署）
 if ! ./venv/bin/python3 scripts/rank_news.py >> /tmp/sicsicduck-news.log 2>&1; then
-  echo "[cron_news] GLM 置頂判斷失敗（已跳過，不阻塞部署）" >> /tmp/sicsicduck-news.log
+  echo "[cron_news] kimi-k3 置頂判斷失敗（已跳過，不阻塞部署）" >> /tmp/sicsicduck-news.log
 fi
 
 # 1.8) 重建 news.html（只顯示有摘要嘅文章）——唔重新抓取
