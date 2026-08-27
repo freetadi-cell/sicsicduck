@@ -1,20 +1,42 @@
 {
   "articles": [
     {
-      "id": "6cd65315ffe7f869f63556a77decaa93",
-      "title": "美國第二季GDP增長維持初值不變 PCE增長向上修訂",
-      "description": "美國經濟增長按本地生產總值(GDP)計算,第二季增長1.5%,與上月公布的初值一致,符合彭博截至美東時間上午6時10分調查預期。 第一季GDP增長2.1%。 個人消費開支(PCE)增長3.4%,第一季為增長0.5%,較初值增長3.2%向上修訂。 非住宅固定投資貢獻亦輕微向上修訂,但私人庫存、淨出口及政府支出貢獻則...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E7%AC%AC%E4%BA%8C%E5%AD%A3gdp%E5%A2%9E%E9%95%B7%E7%B6%AD%E6%8C%81%E5%88%9D%E5%80%BC%E4%B8%8D%E8%AE%8A-pce%E5%A2%9E%E9%95%B7%E5%90%91%E4%B8%8A%E4%BF%AE%E8%A8%82-125154853.html",
-      "pubDate": "2026-08-26 12:51:54",
+      "id": "a127852ab47bb5f0b87cac9514ffc261",
+      "title": "普丁據悉準備升級對烏克蘭的戰爭 俄羅斯官員愈發認為最終恐動用核武",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E6%99%AE%E4%B8%81%E6%93%9A%E6%82%89%E6%BA%96%E5%82%99%E5%8D%87%E7%B4%9A%E5%B0%8D%E7%83%8F%E5%85%8B%E8%98%AD%E7%9A%84%E6%88%B0%E7%88%AD-%E4%BF%84%E7%BE%85%E6%96%AF%E5%AE%98%E5%93%A1%E6%84%88%E7%99%BC%E8%AA%8D%E7%82%BA%E6%9C%80%E7%B5%82%E6%81%90%E5%8B%95%E7%94%A8%E6%A0%B8%E6%AD%A6-163421233.html",
+      "pubDate": "2026-08-26 16:34:21",
       "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/3786fa9b45c7e54635d87adebbce5b8b.jpg",
       "keywords": [
-        "美東時間",
-        "gdp",
-        "本地生產總值"
+        "俄羅斯",
+        "普丁",
+        "烏克蘭",
+        "莫斯科",
+        "克里姆林宮"
       ],
       "category": [
         "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "4b4f72b1b68243d3eb21959a9961a1a4",
+      "title": "特朗普稱霍爾木茲海峽國際水域已清除水雷 警告伊朗再布雷將摧毀船隻",
+      "description": "美國總統特朗普周二表示,霍爾木茲海峽國際水域的水雷已全部引爆或移除,並警告伊朗,任何船隻或快艇如再布設水雷,美方將予以摧毀。 特朗普:太空軍正監視霍爾木茲海峽 特朗普在社交平台Truth Social發文稱,美國透過太空軍監視霍爾木茲海峽「每一平方吋」,並強調美方已全面實施對布雷行動的「零容忍政策」。 另外,伊朗及阿曼周二商討在霍爾木茲海峽設立臨時聯合航道,以及共同清除水雷。阿曼外交大臣巴德爾(B",
+      "link": "https://www.stheadline.com/realtime-world/3608265/%E7%89%B9%E6%9C%97%E6%99%AE%E7%A8%B1%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E5%9C%8B%E9%9A%9B%E6%B0%B4%E5%9F%9F%E5%B7%B2%E6%B8%85%E9%99%A4%E6%B0%B4%E9%9B%B7-%E8%AD%A6%E5%91%8A%E4%BC%8A%E6%9C%97%E5%86%8D%E5%B8%83%E9%9B%B7%E5%B0%87%E6%91%A7%E6%AF%80%E8%88%B9%E9%9A%BB",
+      "pubDate": "2026-08-25 18:50:40",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/7a39d6bb11692386686dd830d885b839/2026-08/2026-08-24T202227Z_1102145854_RC275NA3BY3Q_RTRMADP_3_USA-TRUMP_0.JPG",
+      "keywords": [
+        "美國",
+        "霍爾木茲",
+        "伊朗"
+      ],
+      "category": [
+        "politics",
+        "top"
       ],
       "region": "hk",
       "pinned": true
@@ -58,26 +80,484 @@
       "pinned": true
     },
     {
-      "id": "c8e9319659b52fa6f7b75021c6fb3731",
-      "title": "馬雲過去幾天斥6 億元買入阿里巴巴股份 蔡崇信吳泳銘合共斥約2 億購股",
-      "description": "《南華早報》引述知情人士報道,阿里巴巴(09988)集團創辦人馬雲連續數日買入阿里巴巴股份,總價值超過6億元。 消息人士表示,這些增持行動顯示馬雲「對阿里巴巴實現其AI雄心並把握未來長期成長機會充滿信心」。 在此之前,阿里巴巴董事長蔡崇信(Joe Tsai)和首席執行官吳泳銘(Eddie Wu Yongming)過去兩天內累計斥資2.02億元購入公司股票。 蔡崇信繼周一買入價值8000萬元的股票後,又於周二增持了約8200萬港元的股票;吳泳銘也在周一投入了約4000萬元。 阿里巴巴星期日宣布發行新股集資800億元以發展AI;是中國致力於AI發展的企業進行的最大規模融資行動之一。阿里巴巴周一股價顯著下挫。周二,阿里巴巴在香港的股價上漲1.5%,收在114.20港元。 有報道指,阿里巴巴在數小時內就達到了800億港元的預定目標,總認購需求接近目標規模的三倍。 消息人士稱,此次發行吸引了280億美元的認購需求,其中包括來自主權財富基金和長線投資者的60億美元;主要認購需求來自中東、歐洲和亞洲的頂級主權財富基金。 他們表示,最終配售份額中,超過40%將分配給主權財富基金和長線投資基金。 根據《南華早報》先前報道,馬雲在2023年購入了價值約5,000萬美元的公司股票。",
-      "link": "https://www.bastillepost.com/hongkong/article/16638336-%E9%A6%AC%E9%9B%B2%E9%81%8E%E5%8E%BB%E5%B9%BE%E5%A4%A9%E6%96%A56-%E5%84%84%E5%85%83%E8%B2%B7%E5%85%A5%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%82%A1%E4%BB%BD-%E8%94%A1%E5%B4%87%E4%BF%A1%E5%90%B3",
-      "pubDate": "2026-08-25 11:50:50",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/02/20250218_FI_source-ap_China_Xi_Business_25048435658296.jpg",
+      "id": "5a964b3a01243eec2c4c993f885dfa4a",
+      "title": "華連卡終獲外卡告別美網 威廉絲姊妹再戰雙打",
+      "description": "【Now Sports】美網賽會周三宣佈,2016年冠軍華連卡代替因傷退出的傑臣,將以外卡身份參戰男單。威廉絲姊妹同樣獲發外卡,再度於女雙攜手合作。絕望過後意外獲得喜訊的華連卡(Stan Wawrinka)表示:「我非常興奮地接受2026年美網的外卡資格,期待再次在紐約球迷面前比賽。」2014年、2015年及20...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%8F%AF%E9%80%A3%E5%8D%A1%E7%B5%82%E7%8D%B2%E5%A4%96%E5%8D%A1%E5%91%8A%E5%88%A5%E7%BE%8E%E7%B6%B2-%E5%A8%81%E5%BB%89%E7%B5%B2%E5%A7%8A%E5%A6%B9%E5%86%8D%E6%88%B0%E9%9B%99%E6%89%93-165740674.html",
+      "pubDate": "2026-08-26 16:57:40",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
       "keywords": [
-        "阿里巴巴(09988)",
-        "馬雲",
-        "錢財事",
-        "吳泳銘",
-        "蔡崇信"
+        "外卡",
+        "華連卡",
+        "stan wawrinka"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "93727a66a9a6903856b39eb8dfbf282d",
+      "title": "塔拉里科要求公開帕克斯頓證詞 聚焦對手醜聞史爭德州參議員",
+      "description": "德州美國參議院民主黨候選人詹姆斯·塔拉里科,要求公開其共和黨對手肯·帕克斯頓的證詞。這次行動是持續努力的一部分,旨在繼續聚焦帕克斯頓過往的醜聞。 這些證詞涉及一宗民事案件,礦產資產公司聯合資源被指控欺詐。帕克斯頓與聯合資源有關,但並非被告,案件已和解。 塔拉里科的競選團隊證實,已於周三要求法院公開相關文件。 這位民主黨州眾議員指望選民會對帕克斯頓過往的指控感到反感,儘管類似策略在過往競選活動中曾失敗。帕克斯頓現為德州檢察總長。 除了尋求公開證詞,塔拉里科近期重新發布一段影片,顯示帕克斯頓在法院安檢處私藏一支昂貴鋼筆。塔拉里科亦提及帕克斯頓曾被彈劾,儘管其後獲判無罪;以及他曾面對證券欺詐刑事指控,最終與檢察官達成協議,涉及賠償金但未承認有罪。 帕克斯頓多次否認對他的指控,並如同其支持者美國總統特朗普一樣,稱這些指控是出於政治動機的抹黑。這種策略多年來一直奏效,包括帕克斯頓在今年共和黨初選中擊敗現任美國參議員約翰·科寧。 帕克斯頓競選團隊的發言人未即時回應置評請求。 《華爾街日報》早前報道其中一份證詞內容,包括帕克斯頓可能違反律師與客戶之間的保密特權。涉事人士否認這項說法。《華爾街日報》亦報道,帕克斯頓在證詞中約90次表示不記得問題答案。 在法庭文件草稿中,塔拉里科競選團隊的律師爭辯指,「根據德州法律或程序,沒有理由不向公眾公開這些文件。將其保密違反德州憲法保障司法程序自由開放供公眾審查的規定。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16647302-%E5%A1%94%E6%8B%89%E9%87%8C%E7%A7%91%E8%A6%81%E6%B1%82%E5%85%AC%E9%96%8B%E5%B8%95%E5%85%8B%E6%96%AF%E9%A0%93%E8%AD%89%E8%A9%9E-%E8%81%9A%E7%84%A6%E5%B0%8D%E6%89%8B%E9%86%9C%E8%81%9E%E5%8F%B2%E7%88%AD",
+      "pubDate": "2026-08-26 16:56:18",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/dcb8298c9390ae12a58f0fb18dd704bf_Election_2_26_Texas_47181_FB.jpg",
+      "keywords": [
+        "肯·帕克斯頓",
+        "證詞",
+        "詹姆斯·塔拉里科",
+        "醜聞",
+        "大視野",
+        "德州參議院"
       ],
       "category": [
         "business",
         "top"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "af0ca9d67408e3af7be61adc6d4e8710",
+      "title": "《業績》周生生(00116.HK)中期純利21.53億元增139% 派息28仙",
+      "description": "周生生(00116.HK)公布6月止六個月中期業績,營業額128.78億元,按年增加16.7%。錄得純利21.53億元,增長138.7%,每股盈利320.5仙。第一次中期息28仙,增派7仙。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E5%91%A8%E7%94%9F%E7%94%9F-00116-hk-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A921-165251556.html",
+      "pubDate": "2026-08-26 16:52:51",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6e3f7d1ce38bd9623522ce0f1d2c0d39",
+      "title": "《業績》奈雪的茶(02150.HK)中期虧損收窄至9,749萬人民幣",
+      "description": "奈雪的茶(02150.HK)公布6月止六個月中期業績,收入18.92億人民幣(下同),按年下降13.1%。虧損由上年同期1.17億元,收窄至9,749萬元,每股虧損6分。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E5%A5%88%E9%9B%AA%E7%9A%84%E8%8C%B6-02150-hk-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%94%B6%E7%AA%84%E8%87%B39-165207212.html",
+      "pubDate": "2026-08-26 16:52:07",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ea9507dcbdc1a432274062e268f306a0",
+      "title": "《業績》澤景股份(02632.HK)中期虧損擴至4.14億人民幣",
+      "description": "澤景股份(02632.HK)公布6月止六個月中期業績,收益3.28億人民幣(下同),按年增加2.1%。虧損由上年同期2.51億元,擴至4.14億元,每股虧損3.57元。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E6%BE%A4%E6%99%AF%E8%82%A1%E4%BB%BD-02632-hk-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E8%87%B34-165121102.html",
+      "pubDate": "2026-08-26 16:51:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c56626df52701117293ba93070adbfb3",
+      "title": "《業績》易控智駕(07687.HK)中期虧損收窄至1.87億人民幣",
+      "description": "易控智駕(07687.HK)公布6月止六個月中期業績,收入5.49億人民幣(下同),按年下降17.3%。虧損由上年同期2.39億元,收窄至1.87億元,每股虧損1.54元。不派息。(d)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E6%98%93%E6%8E%A7%E6%99%BA%E9%A7%95-07687-hk-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%94%B6%E7%AA%84%E8%87%B31-164953289.html",
+      "pubDate": "2026-08-26 16:49:53",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "76bc4216ff0ad8aae1c8c7ef73e157ac",
+      "title": "關注:鄭麗文重建黃復興 補足最大短板",
+      "description": "中評社台北8月27日電(記者 張嘉文)中國國民黨主席鄭麗文上任後積極推動黃復興組織再造,26日中常會正式通過設置“黃復興委員會”,更一口氣拉高成為黨中央一級單位,與原有七大部門並列,成為第八大部門。鄭如此大動作重建黃復興,除了兌現競選黨主席時的承諾,給一路力挺她的軍系一個交代,更重要的背後訊號是藉由重新集結這支傳統鐵桿部隊,補足自己在國民黨內根基不深的最大短板。 前主席朱立倫任內裁撤",
+      "link": "http://www.crntt.com/doc/7_0_160261553_1_0827004453.html",
+      "pubDate": "2026-08-26 16:44:52",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/160261555.JPG",
+      "keywords": [
+        "鄭麗文",
+        "國民黨",
+        "黃復興",
+        "藍營角力",
+        "軍系"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cbb0340a67db342e0ea465aa5b7ea14b",
+      "title": "關注:黃國昌尊盧有戰略考量 瞄準2028",
+      "description": "中評社台中8月27日電(記者 方敬為)台灣民眾黨展開中央委員會地方巡迴,由黨主席黃國昌領軍,為年底地方選舉衝刺選情,第一站從白營重點經營的竹北市出發,第二站則到台中市,黃國昌在會中重申“台中的事,就是民眾黨的事”,並提及他擔任主席後第一個請益的就是中國國民黨籍市長盧秀燕,展現“尊盧”姿態,相關舉措,顯然是設法借助盧的影響力,讓民眾黨在地方佔有一席之地,以累積量能邁向2028。 從20",
+      "link": "http://www.crntt.com/doc/7_0_160261438_1_0827004206.html",
+      "pubDate": "2026-08-26 16:42:05",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/160261440.JPG",
+      "keywords": [
+        "國民黨",
+        "2026",
+        "黃國昌",
+        "盧秀燕",
+        "台中市",
+        "九合一選舉",
+        "柯文哲",
+        "2028",
+        "民眾黨",
+        "藍白合"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e4e9daeadc2355a873cc7c8caa2eb077",
+      "title": "快評:吃便當喝奶茶逛夜市 青年交心搏感情",
+      "description": "中評社快評/“同心同行——兩岸青年交流季上海站”正在如火如荼舉行。透過中評社等兩岸媒體的第一線觀察,可以清楚發現,此次活動打破了以論壇和參訪為主的制式框架,充滿了年輕味、創新力和煙火氣。 一盒便當、一杯奶茶,拉近彼此距離。國台辦主任宋濤與歌手汪東城、運動員馬龍等兩岸青年代表以“便當會”的形式邊吃邊聊,不僅體現了簡約樸實的會風,也非常契合台灣年輕人的生活習慣。值得一提的是,這次上桌的奶",
+      "link": "http://www.crntt.com/doc/7_0_107228110_1_0827004134.html",
+      "pubDate": "2026-08-26 16:41:33",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/107228112.jpg",
+      "keywords": [
+        "中評社快評",
+        "兩岸青年交流",
+        "快評",
+        "宋濤",
+        "中評快評"
+      ],
+      "category": [
+        "top",
+        "tourism",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "853a7dd0110a3f619e975e94e3db622e",
+      "title": "張亞中:北京沒冰箱?台灣人用腳看真相",
+      "description": "中評社台北8月27日電(記者 張嘉文)有台灣命理師近日在親綠政論節目聲稱,北京“少有冰箱”、當地人不喝冷飲等,引發大陸網友嘲諷熱議。孫文學校總校長張亞中向中評社表示,這種說法完全不是事實,當成笑話聽聽就好,真正值得注意的是,兩岸長期缺乏正常交流,讓台灣社會對大陸容易產生片面、過時甚至錯誤印象。 張亞中說,但今年台灣民眾赴陸人數仍創新高,證明民眾會“用自己的腳作出選擇”,親自去認識真實",
+      "link": "http://www.crntt.com/doc/7_0_160261494_1_0827004035.html",
+      "pubDate": "2026-08-26 16:40:34",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/160261496.JPG",
+      "keywords": [
+        "兩岸交流",
+        "張亞中",
+        "冰箱"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a162db426269a04d1827483b6322085b",
+      "title": "高市早苗發表能源供需新方案 力求擺脫霍爾木茲海峽能源依賴",
+      "description": "為了應對中東戰事引發的斷供危機,並滿足人工智能(AI)時代爆發式增長的用電需求,日本首相高市早苗星期三(8月26日)正式公布「加強能源供需結構",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60384020/%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E7%99%BC%E8%A1%A8%E8%83%BD%E6%BA%90%E4%BE%9B%E9%9C%80%E6%96%B0%E6%96%B9%E6%A1%88-%E5%8A%9B%E6%B1%82%E6%93%BA%E8%84%AB%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%83%BD%E6%BA%90%E4%BE%9D%E8%B3%B4",
+      "pubDate": "2026-08-26 16:38:01",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260815/1165308044247044096761053.jpeg/6zkdpvtWNmf-ZDkh2HdkK2anI6YYJbi6EcEwFBHBMBQ",
+      "keywords": [
+        "世界新聞",
+        "國際",
+        "香港01",
+        "hk01",
+        "新聞",
+        "國際新聞",
+        "環球"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f31ac79aa8f744ec301cb1ef6ea7be62",
+      "title": "國開國際投資(01062)中期虧損擴大至9073萬港元",
+      "description": "<匯港通訊> 國開國際投資有限公司(01062)公布截至2026年6月30日止中期業績:股東應佔虧損: 9072.9萬港元, 虧損擴大 (去年同期虧損1168.2萬港元)每股虧損: 3.13港仙(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%9C%8B%E9%96%8B%E5%9C%8B%E9%9A%9B%E6%8A%95%E8%B3%87-01062-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7%E8%87%B39073%E8%90%AC%E6%B8%AF%E5%85%83-163604665.html",
+      "pubDate": "2026-08-26 16:36:04",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "國開國際投資"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7e3520360541c968a32672d6037f0e7e",
+      "title": "專論:北京沒冰箱的笑話 還要鬧多少?",
+      "description": "中評社台北8月27日電(評論員 林淑玲)台灣命理師說“北京沒有冰箱”,成了兩岸笑話。命理師對大陸生活的無知完全不是重點,比這更嚴重的是,民進黨政府封殺交流,禁止政府部門接觸大陸資訊、不准官員赴陸,據此制定出來的兩岸政策、產業政策,會不會鬧出更大的“北京沒有冰箱”笑話? 中國大陸是全球第二大經濟體,也是製造業、科技與消費市場。《日本經濟新聞》8月初發布《2026年全球主要產品與服務市場",
+      "link": "http://www.crntt.com/doc/7_0_160261491_1_0827003545.html",
+      "pubDate": "2026-08-26 16:35:44",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/160261493.jpg",
+      "keywords": [
+        "兩岸關係",
+        "民進黨",
+        "北京沒冰箱"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "88c235ba8786299f0166a541b244d5b8",
+      "title": "親俄黑客組織聲稱襲擊挪威政府數碼服務 挪威首相曾宣布援烏",
+      "description": "一個親俄羅斯黑客組織周三聲稱,過去三日對挪威多個挪威政府數碼服務發動網絡攻擊。 挪威數碼化局(Digdir)發言人克維斯塔德向美聯社表示,這次網絡攻擊自周一開始。該局是負責將挪威公共服務數碼化及提升用戶體驗的國家機構。 克維斯塔德形容,這是該局歷來面對最大規模的攻擊。 這次阻斷服務攻擊,意味黑客向該局發送大量流量,以阻礙服務運作,當中包括一項讓公民可透過單一登入,使用多個公共服務的功能。 不過,該局發言人表示,他們幾乎一直都能維持服務運作。 挪威傳媒廣泛報道,親俄黑客組織「伺服器殺手」(Server Killers)周三在通訊軟件Telegram發文,聲稱對這次攻擊負責,並指由於挪威於8月23日恢復與烏克蘭的安全合作,因此向挪威宣戰。 挪威首相約納斯·加爾·斯特勒周日訪問基輔期間宣布,挪威將連續第三年,從明年國家預算中向烏克蘭提供850億挪威克朗(約92億美元)援助。 兩國亦承諾在無人機技術及其他現代戰爭形式上,進一步加強合作。 截至發稿時,挪威官員未有就黑客的說法置評。 自俄羅斯於2022年2月全面入侵烏克蘭以來,莫斯科當局加強在歐洲大陸的破壞及惡意活動,令歐洲各國高度戒備。 官員表示,這些攻擊旨在削弱對烏克蘭的支持,在歐洲社會散播恐懼及不和,並耗費調查資源。 挪威當局曾於2025年表示,俄羅斯黑客可能與該國一處水壩的懷疑破壞活動有關。該事件中,黑客入侵一個遙距控制水壩其中一個閥門的數碼系統,並將其打開以增加水流量。警方表示,當時通訊軟件Telegram上發布了一段長約三分鐘的影片,顯示水壩的控制面板,以及一個識別親俄網絡犯罪組織的標誌。 去年,丹麥當局指責俄羅斯於2024年及2025年,對丹麥的基礎設施及網站發動網絡攻擊。丹麥官員表示,親俄組織Z-Pentest於2024年對當地水務公司發動「破壞性攻擊」,而另一個組織NoName057(16)則在2025年地方選舉前,對丹麥網站發動網絡攻擊。他們表示,兩者均與俄羅斯政府有關。 據挪威傳媒報道,「伺服器殺手」曾直接或間接參與挪威及其他歐洲國家的網絡攻擊。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16647272-%E8%A6%AA%E4%BF%84%E9%BB%91%E5%AE%A2%E7%B5%84%E7%B9%94%E8%81%B2%E7%A8%B1%E8%A5%B2%E6%93%8A%E6%8C%AA%E5%A8%81%E6%94%BF%E5%BA%9C%E6%95%B8%E7%A2%BC%E6%9C%8D%E5%8B%99-%E6%8C%AA%E5%A8%81%E9%A6%96%E7%9B%B8",
+      "pubDate": "2026-08-26 16:35:28",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/fdb32290906168cd7f4a587f5288473a_Norway_Cyberattack_95849_FB.jpg",
+      "keywords": [
+        "親俄黑客",
+        "商業事",
+        "烏克蘭",
+        "數碼服務",
+        "挪威",
+        "網絡攻擊"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "54d341aac8abe2bb1a8dc820f7ea94fe",
+      "title": "阿正被森美證實並非住加多利山 搞笑宣布新名「太子道西女人」",
+      "description": "商台DJ森美、黃正宜(阿正)及呂珮琳(Elsie)昨日一同出席商台67周年台慶活動時接受傳媒訪問,被指是「加多利山小富婆」的阿正卻被森美大爆:「我",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384018/%E9%98%BF%E6%AD%A3%E8%A2%AB%E6%A3%AE%E7%BE%8E%E8%AD%89%E5%AF%A6%E4%B8%A6%E9%9D%9E%E4%BD%8F%E5%8A%A0%E5%A4%9A%E5%88%A9%E5%B1%B1-%E6%90%9E%E7%AC%91%E5%AE%A3%E5%B8%83%E6%96%B0%E5%90%8D-%E5%A4%AA%E5%AD%90%E9%81%93%E8%A5%BF%E5%A5%B3%E4%BA%BA",
+      "pubDate": "2026-08-26 16:35:15",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169437877369573376497581.jpeg/qUb0uEDlGunHq6LhZD8dh5Qu2-0AkLOhSC0DS3ItA0s",
+      "keywords": [
+        "即時娛樂",
+        "香港新聞",
+        "香港01",
+        "藝人",
+        "hk01",
+        "新聞",
+        "娛樂新聞",
+        "明星",
+        "即時娛樂新聞",
+        "韓星"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e581fadf95fe9d767622a334b735af1b",
+      "title": "龍蟠科技(02465)中期虧轉盈賺4.2億元人民幣 不派息",
+      "description": "<匯港通訊> 江蘇龍蟠科技集團股份有限公司(02465)公布截至2026年6月30日止中期業績:股東應佔溢利: 4.2億元人民幣, 虧轉盈 (去年同期虧損8515.3萬元人民幣)每股盈利: 0.59元人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BE%8D%E8%9F%A0%E7%A7%91%E6%8A%80-02465-%E4%B8%AD%E6%9C%9F%E8%99%A7%E8%BD%89%E7%9B%88%E8%B3%BA4-2%E5%84%84%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3-%E4%B8%8D%E6%B4%BE%E6%81%AF-163251183.html",
+      "pubDate": "2026-08-26 16:32:51",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "股份有限公司",
+        "人民幣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bc4ab11ec61b93698bd11664c0eebc31",
+      "title": "iPhone Ultra來了!Apple 9月秋季發佈會邀請函發出|7大重點前瞻",
+      "description": "iPhone Ultra來了!Apple 9月秋季發佈會邀請函發出,7大重點前瞻|Apple剛剛正式對外發出了 2026 年度秋季特別活動(Apple Special Event)的媒體",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60384001/iphone-ultra%E4%BE%86%E4%BA%86-apple-9%E6%9C%88%E7%A7%8B%E5%AD%A3%E7%99%BC%E4%BD%88%E6%9C%83%E9%82%80%E8%AB%8B%E5%87%BD%E7%99%BC%E5%87%BA-7%E5%A4%A7%E9%87%8D%E9%BB%9E%E5%89%8D%E7%9E%BB",
+      "pubDate": "2026-08-26 16:31:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169447191568191488923765.jpeg/g9LhpjYP0pthXY9ZvXvd1SfE6y1XN3HAT7x7yk-8e8o",
+      "keywords": [
+        "動漫",
+        "app",
+        "apple",
+        "香港01",
+        "ios",
+        "facebook",
+        "手遊",
+        "科技",
+        "航拍",
+        "潮物",
+        "tesla",
+        "android"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "63e1bb828ec9c20fc4be739a6013b6ab",
+      "title": "特朗普主導對華政策 美國會涉台角色變化",
+      "description": "中評社華盛頓8月26日電(記者 余東暉)今年上半年,隨著特朗普政府日益主導美國對華政策的節奏和框架,美國國會的對華角色發生微妙而意義重大的轉變,從以往的主動設定議程轉向被動應對議程。美國國會的涉台立法活動最能體現這種變化。 這是華府智庫“中美研究中心”(ICAS)最新立法簡報提出的研究觀察。美國國會對華立場一向強硬,過去十幾年更甚。以往美國會在美中戰略競爭中經常扮演著議程設定者的角色",
+      "link": "http://www.crntt.com/doc/7_0_107228059_1_0827074013.html",
+      "pubDate": "2026-08-26 16:29:56",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/107228061.jpg",
+      "keywords": [
+        "余東暉",
+        "中美",
+        "立法",
+        "台灣",
+        "戰略"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dfada3e6db212b66e898dd7173b0fba8",
+      "title": "智庫:美國會涉台立法反映其對華角色變化",
+      "description": "中評社華盛頓8月26日電(記者 余東暉)今年上半年,隨著特朗普政府日益主導美國對華政策的節奏和框架,美國國會的對華角色發生微妙而意義重大的轉變,從以往的主動設定議程轉向被動應對議程。美國國會的涉台立法活動最能體現這種變化。 這是華府智庫“中美研究中心”(ICAS)最新立法簡報提出的研究觀察。美國國會對華立場一向強硬,過去十幾年更甚。以往美國會在美中戰略競爭中經常扮演著議程設定者的角色",
+      "link": "http://www.crntt.com/doc/7_0_107228059_1_0827002956.html",
+      "pubDate": "2026-08-26 16:29:56",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/107228061.jpg",
+      "keywords": [
+        "余東暉",
+        "中美",
+        "立法",
+        "台灣",
+        "戰略"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9a1ea6ed4d3d3e34e389e30c1220703a",
+      "title": "張亞中:習特二會是管控分歧 而非化解矛盾",
+      "description": "中評社台北8月27日電(記者 張嘉文)中美兩國元首9月可望在美國再次會面,孫文學校總校長張亞中向中評社表示,這次“習特二會”主要功能是維持中美元首直接溝通,避免兩國關係失控,但美中在經貿、科技、人工智慧、供應鏈、關稅及地緣戰略上的結構性競爭並未消失,因此這場會晤比較可能是“管控分歧”,而非“化解矛盾”,重點在避免關係進一步惡化,而不是重新建立全面合作。 針對可望於9月登場的中美峰會,",
+      "link": "http://www.crntt.com/doc/7_0_160261498_1_0827002740.html",
+      "pubDate": "2026-08-26 16:27:40",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/160261500.JPG",
+      "keywords": [
+        "台灣議題",
+        "中美關係",
+        "張亞中",
+        "習特二會"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "40c283f1b70a5afae7092d9e04aaa4e1",
+      "title": "柯P戴監控手環旋風拜票 粉絲熱情喊愛你",
+      "description": "中評社台北8月27日電(記者 鄭羿菲)距11月28日地方選舉只剩90多天,前台灣民眾黨主席柯文哲賣力拜票,26日傍晚5點半戴著自嘲“時尚”的監控手環到新北市板橋府中商圈,陪民眾黨新北市議員參選人林子宇拜票。短短半小時就有逾130位民眾上前跟柯文哲拿菜瓜布、衛生紙、垃圾袋等競選小物,還一起熱情合照、握手加簽名,“柯P旋風”仍受民眾歡迎。 柯文哲傍晚5點半來到人潮繁忙的板橋府中商圈路口陪",
+      "link": "http://www.crntt.com/doc/7_0_160261497_1_0827001909.html",
+      "pubDate": "2026-08-26 16:19:08",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/26/160261502.JPG",
+      "keywords": [
+        "粉絲",
+        "民眾黨",
+        "林子宇",
+        "板橋",
+        "柯文哲"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "70b5dcbf92efb5a544d924a9438c1bef",
+      "title": "紀欣:“尊重”拜靖國神社=認同日再軍事化",
+      "description": "中評社台北8月26日電(作者 紀欣)8月15日,二戰日本投降81周年,日本防衛大臣小泉進次郎等四名閣員與自民黨高層分別參拜靖國神社,首相高市早苗雖未進入神社,卻以自民黨總裁名義自費奉納玉串料(祭祀費),並在鄰近的停車場對神社方向遙拜。高市之後在“全國戰歿者追悼儀式”上未就日本發動戰爭表達“反省”,反而高調指稱:“日本能為解決各國面臨的各種議題發揮重要作用,並能以印太閃耀的燈塔,成為值得依靠、信",
+      "link": "http://www.crntt.com/doc/7_0_107228070_1_0827001311.html",
+      "pubDate": "2026-08-26 16:13:11",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/27/107228182.jpg",
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1959d46a0325eb1f01cf3284da147352",
+      "title": "美司法部稱曾遭中國黑客攻擊 另涉NASA聯儲局等敏感機構",
+      "description": "美國司法部8月26日發聲明稱,查獲一項由中國黑客發起的攻擊行動,該行動導致美國司法部、太空總署(NASA)、聯儲局、聯邦參議院,以及其他敏感政府",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60384016/%E7%BE%8E%E5%8F%B8%E6%B3%95%E9%83%A8%E7%A8%B1%E6%9B%BE%E9%81%AD%E4%B8%AD%E5%9C%8B%E9%BB%91%E5%AE%A2%E6%94%BB%E6%93%8A-%E5%8F%A6%E6%B6%89nasa%E8%81%AF%E5%84%B2%E5%B1%80%E7%AD%89%E6%95%8F%E6%84%9F%E6%A9%9F%E6%A7%8B",
+      "pubDate": "2026-08-26 16:09:11",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20240709/887351085176459264354621.jpeg/-Pty4EbnOHhwCg2eiN-__XNKfDag-mXc6qelaeqnpWk",
+      "keywords": [
+        "世界新聞",
+        "國際",
+        "國際新聞",
+        "hk01",
+        "環球",
+        "新聞",
+        "香港01"
+      ],
+      "category": [
+        "politics",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "65aec3023177b69e631a16206ecc9626",
+      "title": "ASUS ROG XBOX Ally X20紀念版登場|透明黑金配AR眼鏡套裝預購",
+      "description": "ASUS ROG XBOX Ally X20紀念版登場|Republic of Gamers 為慶祝成立20週年,正式對外發表全新 ROG XBOX Ally X20 紀念版手提遊戲機。新機不但承襲",
+      "link": "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60383752/asus-rog-xbox-ally-x20%E7%B4%80%E5%BF%B5%E7%89%88%E7%99%BB%E5%A0%B4-%E9%80%8F%E6%98%8E%E9%BB%91%E9%87%91%E9%85%8Dar%E7%9C%BC%E9%8F%A1%E5%A5%97%E8%A3%9D%E9%A0%90%E8%B3%BC",
+      "pubDate": "2026-08-26 16:01:04",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260826/1169256916828819456250719.jpeg/3Hc-3vL8c_hhzqA7dz-horxC40-x8lGc6AQs4ugELOI",
+      "keywords": [
+        "android",
+        "動漫",
+        "航拍",
+        "科技",
+        "ios",
+        "tesla",
+        "手遊",
+        "潮物",
+        "app",
+        "facebook",
+        "apple",
+        "香港01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
     },
     {
       "id": "2368800b213733b1b19e2f2893d01f1d",
@@ -1733,6 +2213,25 @@
       "region": "hk"
     },
     {
+      "id": "6cd65315ffe7f869f63556a77decaa93",
+      "title": "美國第二季GDP增長維持初值不變 PCE增長向上修訂",
+      "description": "美國經濟增長按本地生產總值(GDP)計算,第二季增長1.5%,與上月公布的初值一致,符合彭博截至美東時間上午6時10分調查預期。 第一季GDP增長2.1%。 個人消費開支(PCE)增長3.4%,第一季為增長0.5%,較初值增長3.2%向上修訂。 非住宅固定投資貢獻亦輕微向上修訂,但私人庫存、淨出口及政府支出貢獻則...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B%E7%AC%AC%E4%BA%8C%E5%AD%A3gdp%E5%A2%9E%E9%95%B7%E7%B6%AD%E6%8C%81%E5%88%9D%E5%80%BC%E4%B8%8D%E8%AE%8A-pce%E5%A2%9E%E9%95%B7%E5%90%91%E4%B8%8A%E4%BF%AE%E8%A8%82-125154853.html",
+      "pubDate": "2026-08-26 12:51:54",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "美東時間",
+        "gdp",
+        "本地生產總值"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "4b14ef4dce0b2c8eba79ca57cfa482c9",
       "title": "探班直播間!宋濤呼籲助推台品進入大陸市場",
       "description": "中評社上海8月26日電(記者 陳思遠)中共中央台辦、國務院台辦主任宋濤25日晚來到位於上海黃浦江邊的“兩岸青年交流季Young市集”,探班正在直播帶貨的台灣演員明道。宋濤強調,大陸人口眾多、市場廣闊、消費能力強,希望大家一起為兩岸的交流合作,為兩岸的融合發展,為台灣農漁產品、優質產品進入大陸市場共同努力。 剛步入市集,身著少數民族服飾的台灣青年便熱情迎上前來,歡迎宋濤、張榮恭一行。",
@@ -2184,26 +2683,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "4b4f72b1b68243d3eb21959a9961a1a4",
-      "title": "特朗普稱霍爾木茲海峽國際水域已清除水雷 警告伊朗再布雷將摧毀船隻",
-      "description": "美國總統特朗普周二表示,霍爾木茲海峽國際水域的水雷已全部引爆或移除,並警告伊朗,任何船隻或快艇如再布設水雷,美方將予以摧毀。 特朗普:太空軍正監視霍爾木茲海峽 特朗普在社交平台Truth Social發文稱,美國透過太空軍監視霍爾木茲海峽「每一平方吋」,並強調美方已全面實施對布雷行動的「零容忍政策」。 另外,伊朗及阿曼周二商討在霍爾木茲海峽設立臨時聯合航道,以及共同清除水雷。阿曼外交大臣巴德爾(B",
-      "link": "https://www.stheadline.com/realtime-world/3608265/%E7%89%B9%E6%9C%97%E6%99%AE%E7%A8%B1%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E5%9C%8B%E9%9A%9B%E6%B0%B4%E5%9F%9F%E5%B7%B2%E6%B8%85%E9%99%A4%E6%B0%B4%E9%9B%B7-%E8%AD%A6%E5%91%8A%E4%BC%8A%E6%9C%97%E5%86%8D%E5%B8%83%E9%9B%B7%E5%B0%87%E6%91%A7%E6%AF%80%E8%88%B9%E9%9A%BB",
-      "pubDate": "2026-08-25 18:50:40",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/7a39d6bb11692386686dd830d885b839/2026-08/2026-08-24T202227Z_1102145854_RC275NA3BY3Q_RTRMADP_3_USA-TRUMP_0.JPG",
-      "keywords": [
-        "美國",
-        "霍爾木茲",
-        "伊朗"
-      ],
-      "category": [
-        "politics",
-        "top"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "ba3e88d811e6c7b169702b2d42dcef61",
@@ -5817,6 +6296,28 @@
         "health"
       ],
       "region": "hk"
+    },
+    {
+      "id": "c8e9319659b52fa6f7b75021c6fb3731",
+      "title": "馬雲過去幾天斥6 億元買入阿里巴巴股份 蔡崇信吳泳銘合共斥約2 億購股",
+      "description": "《南華早報》引述知情人士報道,阿里巴巴(09988)集團創辦人馬雲連續數日買入阿里巴巴股份,總價值超過6億元。 消息人士表示,這些增持行動顯示馬雲「對阿里巴巴實現其AI雄心並把握未來長期成長機會充滿信心」。 在此之前,阿里巴巴董事長蔡崇信(Joe Tsai)和首席執行官吳泳銘(Eddie Wu Yongming)過去兩天內累計斥資2.02億元購入公司股票。 蔡崇信繼周一買入價值8000萬元的股票後,又於周二增持了約8200萬港元的股票;吳泳銘也在周一投入了約4000萬元。 阿里巴巴星期日宣布發行新股集資800億元以發展AI;是中國致力於AI發展的企業進行的最大規模融資行動之一。阿里巴巴周一股價顯著下挫。周二,阿里巴巴在香港的股價上漲1.5%,收在114.20港元。 有報道指,阿里巴巴在數小時內就達到了800億港元的預定目標,總認購需求接近目標規模的三倍。 消息人士稱,此次發行吸引了280億美元的認購需求,其中包括來自主權財富基金和長線投資者的60億美元;主要認購需求來自中東、歐洲和亞洲的頂級主權財富基金。 他們表示,最終配售份額中,超過40%將分配給主權財富基金和長線投資基金。 根據《南華早報》先前報道,馬雲在2023年購入了價值約5,000萬美元的公司股票。",
+      "link": "https://www.bastillepost.com/hongkong/article/16638336-%E9%A6%AC%E9%9B%B2%E9%81%8E%E5%8E%BB%E5%B9%BE%E5%A4%A9%E6%96%A56-%E5%84%84%E5%85%83%E8%B2%B7%E5%85%A5%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E8%82%A1%E4%BB%BD-%E8%94%A1%E5%B4%87%E4%BF%A1%E5%90%B3",
+      "pubDate": "2026-08-25 11:50:50",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/02/20250218_FI_source-ap_China_Xi_Business_25048435658296.jpg",
+      "keywords": [
+        "阿里巴巴(09988)",
+        "馬雲",
+        "錢財事",
+        "吳泳銘",
+        "蔡崇信"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "96aec656e02f3fce986a56d34cad77fc",
@@ -225059,6 +225560,20 @@
       "region": "hk"
     },
     {
+      "id": "a88af2e026f8a206",
+      "title": "胡諾言大女｜陳琪曬溫馨慶生全家福　胡諾言16歲餅印大女婷婷玉立　學霸胡芷苓IGCES成績優異獲獎學金",
+      "description": "【胡諾言 / 陳琪 / 星二代】藝人胡諾言（Jack）與陳琪結婚多年，感情一直恩愛如昔，兩人育有兩女一子，分別是大女胡芷苓（Jay）、二女胡芷悠（Jacey）及細子胡澔錕（Jayden），一家五口生活...",
+      "link": "https://topick.hket.com/article/4183594",
+      "pubDate": "2026-08-27 12:29:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4183594/16IGCES_300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "96c9f28d37b6423f",
       "title": "Tim Curry逝世︱《寶貝智多星續集》《洛奇恐怖晚會》男星Tim Curry離世享年80歲　14年前中風致左半身癱瘓",
       "description": "曾主演《洛奇恐怖晚會》（The Rocky Horror Picture Show）、《小丑回魂》（It），以及參演《寶貝智多星續集玩轉紐約》（Home Alone 2：Lost in New Yor...",
@@ -227088,6 +227603,6 @@
       "pinned": true
     }
   ],
-  "total": 11533,
-  "last_updated": "2026-08-27T12:06:12.942365"
+  "total": 11559,
+  "last_updated": "2026-08-27T13:06:35.360158"
 }
