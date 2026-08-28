@@ -1,0 +1,10 @@
+{
+  "id": "705f81f85c418edc4587e32c4e5ea28c",
+  "title": "神秘模型Ox Alpha身份揭曉 智譜開源模型跑國產芯片 曾登用量榜第二",
+  "source_name": "Bastillepost",
+  "link": "https://www.bastillepost.com/hongkong/article/16657165-%E7%A5%9E%E7%A7%98%E6%A8%A1%E5%9E%8Box-alpha%E8%BA%AB%E4%BB%BD%E6%8F%AD%E6%9B%89-%E6%99%BA%E8%AD%9C%E9%96%8B%E6%BA%90%E6%A8%A1%E5%9E%8B%E8%B7%91%E5%9C%8B%E7%94%A2%E8%8A%AF%E7%89%87-%E6%9B%BE%E7%99%BB",
+  "rewritten_title": "智譜AI揭曉匿名模型Ox Alpha真身 開源GLM-5.3-Flash跑國產芯片",
+  "rewritten": "智譜AI（Z.ai）正式發布並開源GLM-5.3-Flash（320B-A18B）模型，確認其為此前在OpenRouter平台以「Ox Alpha」匿名身份測試、一度並列用量榜第二的模型。該模型總參數達3,200億，每次推理激活180億參數，支持約100萬Tokens上下文及多模態輸入。其編程能力在全球測試中接近Anthropic的Claude Opus 4.8，而API定價僅為旗艦模型GLM-5…",
+  "status": "done",
+  "fetched_at": "2026-08-29T01:06:56"
+}

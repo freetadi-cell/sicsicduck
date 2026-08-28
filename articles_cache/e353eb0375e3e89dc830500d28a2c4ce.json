@@ -1,0 +1,10 @@
+{
+  "id": "e353eb0375e3e89dc830500d28a2c4ce",
+  "title": "AI時代|IBM新開源模型 專攻AI代理",
+  "source_name": "Startupbeat",
+  "link": "https://www.ejtech.ai/ceoai/ai%E6%99%82%E4%BB%A3%EF%BD%9Cibm%E6%96%B0%E9%96%8B%E6%BA%90%E6%A8%A1%E5%9E%8B-%E5%B0%88%E6%94%BBai%E4%BB%A3%E7%90%86/",
+  "rewritten_title": "IBM開源Granite 4.2系列模型 專為AI代理應用設計",
+  "rewritten": "國際商業機器（IBM）發布開源大型語言模型Granite 4.2系列，提供30億、80億及300億參數三種版本，以Apache 2.0授權釋出。該系列模型專為代理式人工智能（Agentic AI）設計，結合推理、工具使用、編碼及語音功能，適用於雲端、本地及邊緣環境部署。其中80億參數版本可在現代Mac及低階GPU上運行。同時，IBM推出兩款僅含4.7億參數的語音模型Granite Speech 5.0 Turbo CTC及NC版本，適合筆記簿電腦與智能手機等邊緣設備。",
+  "status": "done",
+  "fetched_at": "2026-08-29T01:09:34"
+}
