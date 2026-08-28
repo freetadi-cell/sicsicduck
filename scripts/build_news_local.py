@@ -34,6 +34,37 @@ def to_trad(text):
     return text
 
 
+def _extract_summary(raw):
+    """Extract summary text from rewritten field.
+    Handles plain text, ```json fenced JSON, and truncated JSON."""
+    if not raw:
+        return raw
+    s = raw.strip()
+    # Strip ```json ... ``` fences
+    if s.startswith('```'):
+        s = re.sub(r'^```(?:json)?\s*\n?', '', s)
+        s = re.sub(r'\n?```\s*$', '', s)
+        s = s.strip()
+    # Try to parse as JSON and extract "summary" field
+    try:
+        d = json.loads(s)
+        if isinstance(d, dict) and d.get('summary'):
+            return d['summary']
+    except (json.JSONDecodeError, ValueError):
+        pass
+    # Fallback: regex extract from (possibly truncated) JSON
+    # Try full match first (complete JSON with closing quote)
+    m = re.search(r'"summary"\s*:\s*"(.*?)"\s*[,}]', s, re.DOTALL)
+    if m:
+        return m.group(1)
+    # Try truncated match (no closing quote)
+    m = re.search(r'"summary"\s*:\s*"(.*)', s, re.DOTALL)
+    if m:
+        return m.group(1).rstrip('\\n ')
+    # Not JSON or no summary field — return as-is (plain text)
+    return raw
+
+
 def esc(s):
     return html.escape(str(s or ""), quote=True)
 
@@ -50,7 +81,7 @@ def load_summary(aid):
     try:
         d = json.loads(p.read_text(encoding="utf-8"))
         if d.get("status") == "done" and d.get("rewritten"):
-            return to_trad(d["rewritten"])
+            return to_trad(_extract_summary(d["rewritten"]))
     except json.JSONDecodeError:
         pass
     return None
