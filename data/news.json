@@ -1,6 +1,48 @@
 {
   "articles": [
     {
+      "id": "2403bea89bb506f04eac30b11def6f9f",
+      "title": "特朗普不排除美國加大制裁伊朗會影響中國 暗示或制裁中國銀行業",
+      "description": "美國日前傳出加大對伊朗制裁規模,總統特朗普(Donald Trump,又譯川普)8月27日在白宮被問及會否因這些制裁影響到中國銀行業界時,不排除這種可能",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60384445/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8D%E6%8E%92%E9%99%A4%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%A4%A7%E5%88%B6%E8%A3%81%E4%BC%8A%E6%9C%97%E6%9C%83%E5%BD%B1%E9%9F%BF%E4%B8%AD%E5%9C%8B-%E6%9A%97%E7%A4%BA%E6%88%96%E5%88%B6%E8%A3%81%E4%B8%AD%E5%9C%8B%E9%8A%80%E8%A1%8C%E6%A5%AD",
+      "pubDate": "2026-08-28 01:31:44",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1169939766448230400284719.jpeg/7_x181m7TOtiwWyDRU9cIuDoeEue-KmNcFZPIHBWTyA",
+      "keywords": [
+        "世界新聞",
+        "國際",
+        "國際新聞",
+        "hk01",
+        "環球",
+        "新聞",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "8c405aea350218d521cf0ab29abbd581",
+      "title": "官方樓指上月跌0.5% 連升13月斷纜 首7個月仍升7.3% 業界料大漲小回非樓市轉角",
+      "description": "【明報專訊】本港樓價經過逾一年來大幅反彈後,今年中起樓價出現輕微調整,主要反映6至7月間、即四年一度世界盃前後市况的7月份差餉物業估價署私宅售價指數,最新報321.5點,按月回落約0.46%,結束過去長達13個月連升的局面(見圖)。不過,本月樓市似乎重新起動,全月一手成交大有機會重返逾千宗水平。業界人士普遍認為,樓價指數回落只屬大漲小回,而非出現轉角市,並看好全年樓價仍會上升約一成。",
+      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260828/s00004/1787848135099/%E5%AE%98%E6%96%B9%E6%A8%93%E6%8C%87%E4%B8%8A%E6%9C%88%E8%B7%8C0-5-%E9%80%A3%E5%8D%8713%E6%9C%88%E6%96%B7%E7%BA%9C-%E9%A6%967%E5%80%8B%E6%9C%88%E4%BB%8D%E5%8D%877-3-%E6%A5%AD%E7%95%8C%E6%96%99%E5%A4%A7%E6%BC%B2%E5%B0%8F%E5%9B%9E%E9%9D%9E%E6%A8%93%E5%B8%82%E8%BD%89%E8%A7%92",
+      "pubDate": "2026-08-27 20:30:00",
+      "source_name": "Ming Pao",
+      "image_url": "https://fs.mingpao.com/pns/20260828/s00072/b3d0b7507a024298b2363def605fc5d6.jpg",
+      "keywords": [
+        "大漲小回",
+        "樓價指數",
+        "差餉物業估價署"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "0c98ba72e60847437dd83e056d81a2eb",
       "title": "聯儲會主席沃什傑克遜霍爾首秀將至 市場關注改革藍圖與利率前景",
       "description": null,
@@ -37,67 +79,151 @@
       "pinned": true
     },
     {
-      "id": "26485ea63e726337ddeeaffd3bf094d8",
-      "title": "《港樓》差估署:本港7月私宅售價指數自近三年高位回落0.46% 連升13個月斷纜 租金指數續創新高",
-      "description": "差估署公布,本港7月私宅售價指數自近三年高位回落0.46%,至321.5,十三個月升勢斷纜。本年首七個月累升7.3%,但較2025年3月所創逾八年低位仍高出12.8%。 實用面積100平方米以下的中小型單位,售價指數按月跌0.46%,本年首七個月累升7.4%。實用面積100平方米或以上大型單位,售價指數按月跌0....",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B7%AE%E4%BC%B0%E7%BD%B2-%E6%9C%AC%E6%B8%AF7%E6%9C%88%E7%A7%81%E5%AE%85%E5%94%AE%E5%83%B9%E6%8C%87%E6%95%B8%E8%87%AA%E8%BF%91%E4%B8%89%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%9B%9E%E8%90%BD0-46-%E9%80%A3%E5%8D%8713%E5%80%8B%E6%9C%88%E6%96%B7%E7%BA%9C-025726790.html",
-      "pubDate": "2026-08-27 02:57:26",
+      "id": "951d4ae555bf09c1d0223625e2c2aca4",
+      "title": "中尼邊境泥石流至少392死逾1400人失蹤 堰塞湖潰泄風險高",
+      "description": "<匯港通訊> 中國與尼泊爾邊境的嚴重泥石流,增至最少392人死亡,超過1400人失蹤,其中尼泊爾一側有389人遇難,910人失蹤,包括500多名外國遊客,中國西藏吉隆亦有3人遇難,558人失蹤,包括260名外國人。中國自然資源部專家表示,今次泥石流是由尼泊爾境內的高位冰川崩塌引發,高速流動的過程中鏟刮溝道的冰磧物...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%B0%BC%E9%82%8A%E5%A2%83%E6%B3%A5%E7%9F%B3%E6%B5%81%E8%87%B3%E5%B0%91392%E6%AD%BB%E9%80%BE1400%E4%BA%BA%E5%A4%B1%E8%B9%A4-%E5%A0%B0%E5%A1%9E%E6%B9%96%E6%BD%B0%E6%B3%84%E9%A2%A8%E9%9A%AA%E9%AB%98-225316394.html",
+      "pubDate": "2026-08-27 22:53:16",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "retirement",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "9d2ad804e3c9555bff3bc07541f8c7d6",
+      "title": "租盤緊張!杏花邨兩房放租3日微減不足4%成交|二手樓租賃",
+      "description": null,
+      "link": "https://www.am730.com.hk/%E5%9C%B0%E7%94%A2/1049916/%E7%A7%9F%E7%9B%A4%E7%B7%8A%E5%BC%B5-%E6%9D%8F%E8%8A%B1%E9%82%A8%E5%85%A9%E6%88%BF%E6%94%BE%E7%A7%9F3%E6%97%A5%E5%BE%AE%E6%B8%9B%E4%B8%8D%E8%B6%B34-%E6%88%90%E4%BA%A4-%E4%BA%8C%E6%89%8B%E6%A8%93%E7%A7%9F%E8%B3%83",
+      "pubDate": "2026-08-28 08:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049916/article/1049916/wm/01M11TA6DRJV5QH6X1KHFQQ55C.JPG?updatedAt=1787841391",
+      "keywords": null,
+      "category": [
         "business",
-        "401k",
-        "investment tools",
-        "business news",
-        "stock",
-        "quote",
-        "investor",
-        "stocks",
-        "finance",
-        "economy",
-        "market news",
-        "personal finance",
-        "suze orman",
-        "stock research",
-        "tax",
-        "mortgage",
-        "real estate",
-        "track portfolio",
-        "financial information"
+        "top"
       ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "100434ad465ea7cc118ce58955d45156",
-      "title": "特朗普放棄伊朗備忘錄,霍爾木茲海峽談判陷僵局,油價風險升溫",
-      "description": "特朗普總統此前在凡爾賽宮簽署的初步協議,由副總統JD萬斯協助談判促成,旨在重開霍爾木茲海峽,並啟動伊朗核計劃談判,以換取制裁鬆綁及德黑蘭獲取其被凍結資產的權利。然而,協議在數週內便宣告破裂,原因是伊朗隨後對船隻發動攻擊,試圖鞏固對該水道的控制權。特朗普其後轉向最大經濟壓力政策,據《華爾街日報》報導,他已對該備忘錄...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BE%E6%A3%84%E4%BC%8A%E6%9C%97%E5%82%99%E5%BF%98%E9%8C%84-%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%AB%87%E5%88%A4%E9%99%B7%E5%83%B5%E5%B1%80-%E6%B2%B9%E5%83%B9%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%BA%AB-191521521.html",
-      "pubDate": "2026-08-27 19:15:21",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM4S17S_M.jpg",
+      "id": "16b2b99ba9ea48820169447acc5562cc",
+      "title": "從市場准入到長期信任:KuCoin 副總裁 Edwin Wong 提出機構級數字資產「四維信任框架」",
+      "description": "香港2026年8月28日 /美通社/ -- KuCoin 副總裁、風控與內控負責人Edwin Wong 今日在 CYPHER ASIA 智能加密金融峰會發表主題演講,圍繞數字資產機構化進程,分享行業如何建立更具韌性、可驗證且可持續的信任體系。 隨著香港加快完善數字資產監管、代幣化及金融基礎設施,機構化正成為市場發展的重要背景。Edwin 指出,機構化並不只是吸引更多機構參與交易,更意味著整個市場的評價標準正在發生變化——行業關注點正從增長與市場准入,進一步轉向治理、運營韌性、安全、風險管理和長期信任。 「機構化不是替代增長,而是在增長之上增加一套更嚴格的信任標準。」...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/kucoin--edwin-wong--302862631.html",
+      "pubDate": "2026-08-28 08:00:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1977413/20260828031425EDT_image_1.jpg?id=OA2917711&p=original",
       "keywords": [
-        "特朗普",
-        "霍爾木茲海峽",
-        "伊朗",
-        "諒解備忘錄"
+        "tds"
       ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8d7d8e57f82eedd99526a68924fa06ea",
+      "title": "洪永城細女士多啤梨痣歷8次激光治療 出入醫院全程緊張陪診",
+      "description": "梁諾妍在片中表示,Beryl滿月時眼袋有一點紅,其後慢慢變大、變深色,經兒科醫生診斷為士多啤梨痣,即血管痣或血管瘤,屬胎記一種。她解釋因位置接近眼部,每次治療後都要好好保護眼睛。她透露經轉介後在公立醫院處理,展開為期一年的激光治療:「喺呢一年入邊,我哋每個月都要做一次治療,最後一共做咗八次。」她指每次療程好快,只是打幾下,十幾二十秒就完成。",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1050041/%E6%B4%AA%E6%B0%B8%E5%9F%8E%E7%B4%B0%E5%A5%B3%E5%A3%AB%E5%A4%9A%E5%95%A4%E6%A2%A8%E7%97%A3%E6%AD%B78%E6%AC%A1%E6%BF%80%E5%85%89%E6%B2%BB%E7%99%82-%E5%87%BA%E5%85%A5%E9%86%AB%E9%99%A2%E5%85%A8%E7%A8%8B%E7%B7%8A%E5%BC%B5%E9%99%AA%E8%A8%BA",
+      "pubDate": "2026-08-28 08:00:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1050041/article/1050041/df/01M13HYR0ZY1H96NQ5PHRHE4WT.jpeg?updatedAt=1787907463",
+      "keywords": null,
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6c9a920ac5d65535cfe8285769fbe6b0",
+      "title": "安大略湖改名 特朗普稱大西洋、太平洋也要改",
+      "description": "中評社北京8月28日電/美國東部時間8月27日下午,美國總統特朗普在白宮簽署行政令,將美國與加拿大邊境的安大略湖更名為“美國湖”,而特朗普此舉很快招來加拿大總理卡尼的批評。 央視新聞報導,特朗普在白宮簽署這項行政令後,再次對媒體抱怨加拿大在貿易問題上“一直占美國便宜”,稱美國“不能任由這種持續幾十年的局面繼續下去,必須叫停”。 特朗普還稱,他已把墨西哥灣改名為“美國灣”,“",
+      "link": "http://www.crntt.com/doc/7_0_107228707_1_0828155928.html",
+      "pubDate": "2026-08-28 07:59:28",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "business",
+        "politics",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "24cd620a3c552eac1a213d81e8d22f48",
+      "title": "景甜爆內地演藝圈黑材料 「劇組夫妻」做完愛當冇事發生",
+      "description": "有「爛片女王」之稱的內地女星景甜,近日捲入代孕協議與金錢糾紛,遭加密貨幣企業家孫宇晨公開控訴,其富豪男友孫宇晨在社交平台發布一篇《我的女友景甜》的長文,大談跟女方交往的細節及代孕生子的過程,並以違約理由向景甜追討逾3000萬人民幣。",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1050062/%E6%99%AF%E7%94%9C%E7%88%86%E5%85%A7%E5%9C%B0%E6%BC%94%E8%97%9D%E5%9C%88%E9%BB%91%E6%9D%90%E6%96%99-%E5%8A%87%E7%B5%84%E5%A4%AB%E5%A6%BB-%E5%81%9A%E5%AE%8C%E6%84%9B%E7%95%B6%E5%86%87%E4%BA%8B%E7%99%BC%E7%94%9F",
+      "pubDate": "2026-08-28 07:59:09",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1050062/article/1050062/df/01M13NX44MWYSRYJF00NBX6H27.jpg?updatedAt=1787904005",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0fc42b135ce169a95ceae78825397169",
+      "title": "美擬制裁涉伊朗業務中資銀行 國家外交部:反對非法單邊制裁",
+      "description": "對於美國可能制裁仍與伊朗保持業務往來的中國的各家銀行,國家外交部發言人林劍表示,關於伊朗局勢,中方始終認為對話談判是解決問題的唯一出路,中方反對非法單邊制裁的立場是一貫的、明確的。(jl/u)~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E6%93%AC%E5%88%B6%E8%A3%81%E6%B6%89%E4%BC%8A%E6%9C%97%E6%A5%AD%E5%8B%99%E4%B8%AD%E8%B3%87%E9%8A%80%E8%A1%8C-%E5%9C%8B%E5%AE%B6%E5%A4%96%E4%BA%A4%E9%83%A8-%E5%8F%8D%E5%B0%8D%E9%9D%9E%E6%B3%95%E5%96%AE%E9%82%8A%E5%88%B6%E8%A3%81-075907332.html",
+      "pubDate": "2026-08-28 07:59:07",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "b57380b4a66b029db290e637b777aa92",
-      "title": "國壽(02628)中期純利升2.29倍至1344.9億人幣,派息35.8分人幣",
-      "description": "《經濟通通訊社27日專訊》國壽(02628)公布,截至2026年6月30日止中期 純利1344.89億元(人民幣.下同),按年升2.29倍;每股基本盈利4.76元,派 發中期息35.8分。 期內收入4345.63億元,升81.5%。 期內保險業務再攀新高,新單保費達1800.39億元,按年增長11.6%;總保費達 5366.34億元。上半年新業務價值達381.67億元,在上年同期",
-      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360827492",
-      "pubDate": "2026-08-27 08:57:00",
+      "id": "fbcbf70b6e040c89769a328babbd90ad",
+      "title": "「海瑅灣」系列今日連沽28伙 有大手客斥逾1.1億元購15伙",
+      "description": "<匯港通訊> 由信和置業(00083.HK)、嘉里建設(00683.HK)、嘉華國際(00173.HK)、招商局置地(00978.HK)及港鐵公司(00066.HK)合作發展,位於港鐵康城站上蓋終極臨海壓軸的項目「海瑅灣」系列今日連沽28伙,套現逾2.1億港元。市場消息指,有大手客斥資逾1.1億港元,一連購入15...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B5%B7%E7%91%85%E7%81%A3-%E7%B3%BB%E5%88%97%E4%BB%8A%E6%97%A5%E9%80%A3%E6%B2%BD28%E4%BC%99-%E6%9C%89%E5%A4%A7%E6%89%8B%E5%AE%A2%E6%96%A5%E9%80%BE1-1%E5%84%84%E5%85%83%E8%B3%BC15%E4%BC%99-075906904.html",
+      "pubDate": "2026-08-28 07:59:06",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0cd6bb8089940ea2dfbb7293a65836d3",
+      "title": "選彰化縣長?柯呈枋收到登記表稱要想一想",
+      "description": "中評社彰化8月28日電/中國國民黨徵召的彰化縣長參選人魏平政訂9月3日辦理登記。不過,爭取國民黨提名失利的彰化縣前副縣長柯呈枋28日表示,有民眾拿一份縣長參選登記表給他,“這份期待,我會放在心裡。至於接下來的路,讓我再好好想一想,有些事情,不能急著決定”。“這一刻,心裡其實很難平靜”。 2026彰化縣長選舉,包括民進黨陳素月、國民黨魏平政、無黨籍邱建富宣布參選。其中魏平政雖然獲得國民",
+      "link": "http://www.crntt.com/doc/7_0_160262276_1_0828155900.html",
+      "pubDate": "2026-08-28 07:58:59",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/160262301.jpg",
+      "keywords": [
+        "國民黨",
+        "柯呈枋",
+        "彰化縣"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4a0862605cbc409d6a3aca870509b9a2",
+      "title": "【中東戰火】美海軍被指挪用工資填補伊朗戰事花費",
+      "description": "《經濟通通訊社28日專訊》英國《衛報》報道,美國對伊朗的軍事行動導致美軍陷入嚴重 財政危機,不得不挪用工資來支持戰事花費。 《衛報》訪問海軍官員、承包商等,以及取得文件顯示,美伊戰事令美軍財政百上加斤。國 防部一份有關美國海軍經費的備忘錄顯示,國防部「洗劫」工資賬戶,以資助作戰行動,導致資 金短缺。由於資金緊張,美國海軍一些岸上設施的非緊急維護工作也要暫停。 一名知情海軍軍官說,",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360828244",
+      "pubDate": "2026-08-28 07:58:00",
       "source_name": "Etnet",
       "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
       "keywords": [
@@ -106,8 +232,967 @@
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "c11d40130c65899ea5e6e2a7caf59de7",
+      "title": "特首李家超將於9月16日公布香港首份五年規劃",
+      "description": "香港特別行政區行政長官李家超周三表示,將於9月16日公布香港首份五年規劃,並隨後發表2026年施政報告。 他於記者會上指出,香港首份五年規劃,為特區未來五年的經濟及社會發展訂下藍圖,作為一份具前瞻性、策略性及方向性的指導文件。 他表示,施政報告是行政長官落實香港首個五年規劃的年度報告,以及因應實際情況的年度施政重點,兩者息息相關。 他補充說,施政報告將設定年度里程碑指標。而在往後年份,當年的施政報告將考慮到國際環境、經濟預測及最新動態,制定針對性措施,以持續推動實現藍圖的努力。 (CGTN)",
+      "link": "https://www.bastillepost.com/hongkong/article/16658901-%E7%89%B9%E9%A6%96%E6%9D%8E%E5%AE%B6%E8%B6%85%E5%B0%87%E6%96%BC9%E6%9C%8816%E6%97%A5%E5%85%AC%E5%B8%83%E9%A6%99%E6%B8%AF%E9%A6%96%E4%BB%BD%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83",
+      "pubDate": "2026-08-28 07:57:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/screenshot_8496411_01_FB.jpeg",
+      "keywords": [
+        "兩岸",
+        "cgtn"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "639ba49a9cd58e0ec7cf33a357a8ddac",
+      "title": "愛達花城號聯袂廣州文藝院團打造首航主題文藝晚會",
+      "description": "近日,愛達郵輪(Adora Cruises)宣布,將攜手廣州市文化發展集團有限公司(以下簡稱“廣州文化集團”)及五大專業文藝院團,於2026年11月22日聯袂推",
+      "link": "https://www.hk01.com/%E5%A5%BD%E7%94%9F%E6%B4%BB/60384614/%E6%84%9B%E9%81%94%E8%8A%B1%E5%9F%8E%E8%99%9F%E8%81%AF%E8%A2%82%E5%BB%A3%E5%B7%9E%E6%96%87%E8%97%9D%E9%99%A2%E5%9C%98%E6%89%93%E9%80%A0%E9%A6%96%E8%88%AA%E4%B8%BB%E9%A1%8C%E6%96%87%E8%97%9D%E6%99%9A%E6%9C%83",
+      "pubDate": "2026-08-28 07:56:46",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170032242659954688296310.jpeg/nRFoM_-RDWvFojEhydPzEsXa_b7z_GWQzF8WG8xfFhs",
+      "keywords": [
+        "科技",
+        "香港新聞",
+        "香港01",
+        "旅遊",
+        "新聞",
+        "美容",
+        "gadget",
+        "時裝",
+        "吃喝玩樂",
+        "hk01",
+        "飲食"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6c8da25bad7120e660080ca9753e20cc",
+      "title": "車廂實體鍵越黎越少 BMW 澳洲行政總裁:因為後生仔鍾意用語音",
+      "description": "BMW Group Australia 行政總裁 Vikram Pawah 表示,45 歲或以下消費者較快適應 [...]",
+      "link": "https://unwire.hk/2026/08/28/bmw-physical-buttons-voice-control/life-tech/auto/",
+      "pubDate": "2026-08-28 07:56:34",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/bmw.jpg",
+      "keywords": [
+        "車載系統",
+        "語音控制",
+        "汽車科技",
+        "bmw",
+        "neue klasse"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f60c54bea9ee495fe9ab91742367a234",
+      "title": "美智庫:美伊戰爭半年 華府遭戰略性挫敗",
+      "description": "中評社香港8月28日電(記者 郭至君)截至今日,美伊戰爭已經進行了整整6個月仍未見曙光。美國外交關係協會(CFR)的多位專家針對這場戰爭對美國及該地區的意義,以及未來應關注的動向在其官網上發表了最新的報告。有專家直言,美國發動此次戰爭是一次重大誤判,這場戰爭造成的各類損害要延宕數年。 中東與非洲研究資深研究員史蒂文·庫克(Steven A. Cook)指出,特朗普顯然從未預料到伊朗會",
+      "link": "http://www.crntt.com/doc/7_0_107228629_1_0828155531.html",
+      "pubDate": "2026-08-28 07:55:30",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/107228634.jpg",
+      "keywords": [
+        "中東",
+        "美伊"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bf84aab8a563795e14d1d9037176b7e0",
+      "title": "海瑅灣單日連沽28伙 吸金逾2.1億 投資公司逾1.1億買購15伙收租",
+      "description": "信和置業(0083)、嘉里建設(0683)、嘉華國際(0173)、招商局置地(0978)及港鐵公司(0066)合作發展的將軍澳日出康城海瑅灣系列,今日(28日",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60384622/%E6%B5%B7%E7%91%85%E7%81%A3%E5%96%AE%E6%97%A5%E9%80%A3%E6%B2%BD28%E4%BC%99-%E5%90%B8%E9%87%91%E9%80%BE2-1%E5%84%84-%E6%8A%95%E8%B3%87%E5%85%AC%E5%8F%B8%E9%80%BE1-1%E5%84%84%E8%B2%B7%E8%B3%BC15%E4%BC%99%E6%94%B6%E7%A7%9F",
+      "pubDate": "2026-08-28 07:55:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260330/1115330722383532032407851.jpeg/kElrYQ6CxvECidq3TURxnB4UdW9StQ7FXSe7IF0nuyA",
+      "keywords": [
+        "財經透視",
+        "香港新聞",
+        "香港01",
+        "地產消息",
+        "新聞",
+        "經濟",
+        "港股",
+        "財經網",
+        "財經新聞",
+        "財經台",
+        "hk01",
+        "股票",
+        "a股",
+        "恆生指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "409e96fbbb11716e7f6ac567184be780",
+      "title": "西餅客出動!海瑅灣單日連沽28伙 投資公司逾1.1億買購15伙收租",
+      "description": "信和置業(0083)、嘉里建設(0683)、嘉華國際(0173)、招商局置地(0978)及港鐵公司(0066)合作發展的將軍澳日出康城海瑅灣系列,今日(28日",
+      "link": "https://www.hk01.com/%E5%9C%B0%E7%94%A2%E6%A8%93%E5%B8%82/60384622/%E8%A5%BF%E9%A4%85%E5%AE%A2%E5%87%BA%E5%8B%95-%E6%B5%B7%E7%91%85%E7%81%A3%E5%96%AE%E6%97%A5%E9%80%A3%E6%B2%BD28%E4%BC%99-%E6%8A%95%E8%B3%87%E5%85%AC%E5%8F%B8%E9%80%BE1-1%E5%84%84%E8%B2%B7%E8%B3%BC15%E4%BC%99%E6%94%B6%E7%A7%9F",
+      "pubDate": "2026-08-28 07:55:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260330/1115330722383532032407851.jpeg/kElrYQ6CxvECidq3TURxnB4UdW9StQ7FXSe7IF0nuyA",
+      "keywords": [
+        "新聞",
+        "股票",
+        "經濟",
+        "財經透視",
+        "a股",
+        "香港新聞",
+        "港股",
+        "財經新聞",
+        "地產消息",
+        "財經台",
+        "hk01",
+        "財經網",
+        "恆生指數",
+        "香港01"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6b4716c75594d1bd63c2d77150aff003",
+      "title": "玫琳凯加速美妆创新与数字化转型",
+      "description": "重磅举措树立全新里程碑,赋能玫琳凯服务当代及未来消费者 上海 2026年8月28日 /美通社/ -- 全球知名美妆与创业领域领军企业之一玫琳凯今日公布多项业务转型重大里程碑,邀请新一代消费者体验焕新升级的玫琳凯。 玫琳凯首席执行官 Ryan Rogers 发言: \"我们正在重新定义玫琳凯的时代篇章。我们持续投入技术研发与科研创新,打造流畅无缝的数字化体验,同时坚守让玫琳凯脱颖而出的人际联结与社群文化。从玫琳凯'我的商城'上线,到下一代产品创新与价值导向的社会影响力项目,每一座里程碑都印证着我们转型的澎湃动能。立足六十余年创业积淀,我们重新构想消费者与玫琳凯的交互方式,在用户社交、购物、分享的各个场景触达他们,同时拓展独立美容顾问的发展机遇,助力其在瞬息万变的数字时代蓬勃发展。在集团一众变革型管理者的带领下,玫琳凯正将宏大愿景转化为战略增长,为一代代利益相关方创造长久价值。\" 如需进一步了解变革管理团队详情,请访问玫琳凯全球官网 领导力页面 。 玫琳凯\"我的商城\":重塑线上消费者的品牌体验通路 玫琳凯\"我的商城\"是数字化迭代成果,优化消费者购物体验,满足数字原生一代对便捷、多元选择与流畅交互的诉求。该商城不仅简化玫琳凯产品的线上直购流程,也方便消费者对接独立美容顾问,获取个性化服务。 \"我的商城\"是一套云优先集成平台,为独立美容顾问配备全新个性化线上店铺,打通玫琳凯电商、支付、履约发货以及社交媒体能力。无论线下、线上还是社交平台,美容顾问都可以在客户所在场景完成 服务, 这种灵活模式在当下市场至关重要。 该商城2025年率先于美国、德国上线;2026年夏季拓展至加拿大、墨西哥、西班牙,并将逐步在全球各市场落地。 智慧包容型美妆创新,适配新一代日常护肤彩妆习惯 玫琳凯打造贴合当代人生活与美妆习惯的产品矩阵,诠释 现代美妆 内涵。产品矩阵涵盖智慧护肤、多元肤色彩妆、主打轻松且个性化的彩妆产品,以及适配各类护肤流程的健康养护方案,陪伴新一代消费者走过每一段美妆旅程与日常生活。 护肤为本: 玫琳凯怡泰妍系列屏障修护调理乳1:1:3,采用专利配比脂肪酸、神经酰胺与胆固醇,强韧肌肤屏障*;玫琳凯深润保湿面膜,实现一抹深补水。幻时粉底液拥有智能配色科技,兼顾妆效与护肤力。 明星眼部组合: 无论是打造浓郁眼妆,还是轻松卸妆,臻爱浓密睫毛膏搭配玫琳凯清爽卸妆洁肤液,帮助美妆爱好者打造、演绎、快速重置各类眼妆。 负责任的产品包装与原料采购: 玫琳凯持续降低塑料使用量,提高消费后回收塑料占比,提升包装可回收/易于回收水平。例如,玫琳凯幻时美体紧致乳液的瓶身含94% 消费后再生材料。同时玫琳凯依托全球乳木果联盟、可持续棕榈油圆桌会议,践行乳木果油与棕榈油可持续采购。欢迎查阅 玫琳凯2026可持续发展报告 。 美妆科技: 为实现个性化产品推荐、升级消费体验,玫琳凯AI粉底测色工具依托人工智能,用户手机扫描面部,精准识别151个面部特征点,数秒内输出专属粉底色号推荐。 该工具已在全球上线,斩获多项重磅行业荣誉。 玫琳凯全球社交先锋队:激活新生代数字创作者全球社群 玫琳凯全球社交先锋队于2026年3月正式启动,属于战略试点项目,赋能新一代内容创作者,强化与全球美妆爱好者的联结。 项目助力独立美容顾问转型为真实的内容创作者,输出产品科普、美妆灵感、前沿趋势等高质量优质内容。首期试点集结来自北美、亚太、拉美、欧洲四大区域,15个市场的70余位创作者。 通过创作者培育与社群建设,玫琳凯搭建社交优先的传播网络,拓宽品牌与产品触达渠道,拉近与全球消费者的距离。 创业焕新时代 面向新一代创业者: 承袭玫琳凯・艾施女士\"女性互助\"的核心理念,玫琳凯链接渴望成长、回馈社会、追求更高价值的消费者与创业者。这份兼具社会使命,融合数字化与人情温度的创业机会,契合Z世代的创业理想、数字素养以及强烈的社群归属感。2025年美国新创立企业中,Z世代创办企业占比9% [1] ;超过半数Z世代成年人认真考虑过创业,市场对灵活创业路径需求旺盛 [2] 。 社交为先的大型活动: 玫琳凯持续投入\"研讨会\"\"领袖会议\"等标志性销售团队盛会,汇聚全球玫琳凯社群,共庆业务成果、深化情感联结。活动也向社交优先、科技赋能的全新体验升级,专为美妆创业者打造。它不止是一场集会,更是新一代创业者的成长跳板,赋能独立销售团队掌握社交媒体运营、电商知识与智能数字化工具,实现链接用户、业务增长与团队引领。 使命落地:粉色改变生命 作为全球美妆领军企业之一,玫琳凯打造以使命、信任、归属感为内核的鲜活社群,跨越代际,在年轻群体中建立文化共鸣。 这份使命通过玫琳凯全球社会影响力项目 粉色改变生命 落地社区。自2008年起,项目累计投入超过2.3亿美元现金及实物捐赠,助力癌症研究、帮扶家庭暴力幸存者、在全球创造经济赋能机会,改善女性及其家庭生活。 斩获多项全球重磅品牌荣誉 玫琳凯公司 连续四年(2023-2026) 被欧睿国际评为 \"全球直销护肤及彩妆第一品牌\" [3] 玫琳凯在《福布斯》2026年度最佳客户服务榜单中排名升至第2位,2025年位列93位 [4] ;是榜单前15名中唯一美妆品牌,前50名中唯一直销企业。 在5,500个品牌里,玫琳凯在\"福布斯2026最佳社会影响力品牌\"榜单中攀升至第8位 [5] (2025年位列第9位);是榜单前15名内唯一美妆品牌,也是榜单中唯一直销企业。 在《Happi》2026美国企业50强报告中位列第13名 [6] 。 你知道吗: 玫琳凯高管团队女性占比63%;研发科学家女性占比64%;全球品牌及创意团队女性占比79%;全球员工女性占比63%;集团十大重点市场领导层岗位女性占比达60% [7] 。 *美国专利发明专利,专利号US12274776B2&US12005135B2 [1] 来源:Gusto最新报告——《新生代 Z 世代创业者初创企业数量首次超过婴儿潮一代》 [2] 2026 年 LendingTree 研究报告 [3] *\"源自Euromonitor International Limited;美容与个人护理数据库2026/2025/2024/2023版本,分别以2025/2024/2023/2022年零售价格计算零售额数据\"。 [4] Alan Schwarz,2025年10月14日,《2026 Best Customer Service》( 《2026年最佳客户服务》 )。 [5] Alan Schwarz, Forbes Staff,2026年3月17日,《2026 Best Brands for Social Impact》( 《2026年最佳社会影响力品牌》 )。 [6] 《Happi 美国企业 50 强报告》 https://www.happi.com/top-companies-reports/top-50-us-companies/ [7] 《玫琳凯女性人员构成与领导力报告》(2026 年 5 月)",
+      "link": "https://www.prnasia.com/story/545626-1.shtml",
+      "pubDate": "2026-08-28 07:54:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "mag",
+        "hou",
+        "fit",
+        "dei",
+        "rea",
+        "wom",
+        "cpc",
+        "svy",
+        "cpr",
+        "ecm"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c25e510109892931c28371e77d351a6e",
+      "title": "金門縣長多方混戰 梁文韜、李文良已領表",
+      "description": "中評社金門8月28日電/2026年底地方公職人員選舉自27日起開放領表,有意參選金門縣長的成功大學教授梁文韜搶下頭香率先領回表單;無黨籍金門縣長參選人、前副縣長李文良則於28日上午牽著妻子前往縣選委會領取參選表件,並提出“海峽之心、跨域同城、金門Rising、邁向國際”作為金門未來發展的願景,振臂喊“我才是縣長最適合的人選”;至於中國國民黨提名的陳玉珍與外傳將回鍋參選的前縣長楊鎮浯,迄今日午前",
+      "link": "http://www.crntt.com/doc/7_0_160262280_1_0828155327.html",
+      "pubDate": "2026-08-28 07:53:26",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/160262287.jpg",
+      "keywords": [
+        "金門縣長",
+        "李文良",
+        "梁文韜"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6ce781cd441a527e3a62f82c38bb3206",
+      "title": "鄭麗文:竹北特殊性高 藍白要贏2026",
+      "description": "中評社台北8月28日電/針對竹北市長選舉藍白合面臨破局,中國國民黨主席鄭麗文今天在臉書發文表示,針對台灣民眾黨主席黃國昌今日談話,她理解黃主席的心情,也感謝民眾黨一路以來展現合作誠意。 鄭麗文指出,竹北選情具有高度特殊性,地方經營、民意結構及整體布局,都有必須審慎考量的因素,因此在人選安排上,雙方確實存在不同評估,但這並不改變彼此共同努力、追求合作的初衷。 傳藍白在新竹的合",
+      "link": "http://www.crntt.com/doc/7_0_160262308_1_0828155239.html",
+      "pubDate": "2026-08-28 07:52:39",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/160262312.jpg",
+      "keywords": [
+        "藍白合",
+        "鄭麗文"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "910fcbddcf1765ba28ac111c5df08b11",
+      "title": "挪威國王哈拉爾五世去世",
+      "description": "中評社北京8月28日電/當地時間8月28日,挪威國王哈拉爾五世因病去世,終年89歲。 據央視新聞報導,這位歐洲最年長的國家元首因血液疾病已住院一周多。 哈拉爾五世於1991年1月繼承王位。近年來,他曾因健康問題多次住院。",
+      "link": "http://www.crntt.com/doc/7_0_107228702_1_0828155053.html",
+      "pubDate": "2026-08-28 07:50:52",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/107228704.jpg",
+      "keywords": [
+        "挪威"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7c951b65a1fc00485c94a8757df7ae79",
+      "title": "政治局會議部署西藏吉隆泥石流搶險救援",
+      "description": "中評社北京8月28日電/中共中央政治局8月28日召開會議,研究部署西藏日喀則市吉隆縣泥石流災害搶險救援工作。中共中央總書記習近平主持會議。 據新華社報導,會議開始時,中共中央總書記、國家主席、中央軍委主席習近平提議全體起立,向西藏日喀則市吉隆縣泥石流災害遇難人員默哀。 會議指出,這次因尼泊爾一側發生泥石流災害,造成西藏日喀則市吉隆縣吉隆口岸重大人員傷亡、失聯。災害發生後,黨",
+      "link": "http://www.crntt.com/doc/7_0_107228697_1_0828155021.html",
+      "pubDate": "2026-08-28 07:50:21",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": [
+        "泥石流",
+        "吉隆口岸"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f72a0014a8a98b8995686b0d1fee5bc8",
+      "title": "陸浩明求婚成功|未婚妻陳詩欣理大碩士畢業 高䠷甜美獲封翻版張曼玉 Ayan被讚體貼懂事",
+      "description": "現年47歲的TVB人氣主持「6號」陸浩明與38歲女友陳詩欣(Ayan)相戀長達14年,兩人多年來感情甜蜜穩定,不時在社交平台高調放閃,卻始終未正式「拉埋天窗」,令身邊好友及網民頻頻催婚。今日(8月28日),陸浩明終於公布喜訊,正式宣布在度假勝地馬爾代夫向陳詩欣求婚成功,為漫長的愛情長跑畫上圓滿句號,收穫全城滿滿祝福。 陳詩欣獲封翻版張曼玉 陸浩明的未婚妻陳詩欣可謂美貌與智慧並重。現年38歲的她不僅",
+      "link": "https://www.stheadline.com/film-drama/3609191/%E9%99%B8%E6%B5%A9%E6%98%8E%E6%B1%82%E5%A9%9A%E6%88%90%E5%8A%9F%E6%9C%AA%E5%A9%9A%E5%A6%BB%E9%99%B3%E8%A9%A9%E6%AC%A3%E7%90%86%E5%A4%A7%E7%A2%A9%E5%A3%AB%E7%95%A2%E6%A5%AD-%E9%AB%98%E4%A0%B7%E7%94%9C%E7%BE%8E%E7%8D%B2%E5%B0%81%E7%BF%BB%E7%89%88%E5%BC%B5%E6%9B%BC%E7%8E%89-Ayan%E8%A2%AB%E8%AE%9A%E9%AB%94%E8%B2%BC%E6%87%82%E4%BA%8B",
+      "pubDate": "2026-08-28 07:49:47",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/2acad9b415fde36360d4f89ec93cefd4/2026-08/441_5.jpg",
+      "keywords": [
+        "未婚妻",
+        "陳詩欣",
+        "翻版張曼玉",
+        "求婚",
+        "陸浩明",
+        "理大",
+        "碩士",
+        "ayan"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "411adc5edf57e5772db22c64cf45f638",
+      "title": "30,000Pa 吸力.全屋清潔無死角 小米一次推出 4 款潔淨家電",
+      "description": "小米香港今日(8 月 28 日)除了推出一系列個人電子產品之外,在家電方面亦有新品:4 款全新潔淨類家電進一步完善智能家居清潔產品線。新品包括 Xiaomi 掃拖機器人 6、米家無線吸塵器 4 Max、米家無線洗地機 5 Pro,以及米家車用吸塵器,覆蓋全屋地面、低矮空間以至車廂清潔,強調強勁吸力、自動清潔與智慧互聯。這批產品分別於 8 月中至 9 月陸續開售。 這篇文章 30,000Pa 吸力.全屋清潔無死角 小米一次推出 4 款潔淨家電 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/xiaomi-hk-4-new-cleaning-appliances-robot-vacuum-6-2026/",
+      "pubDate": "2026-08-28 07:49:09",
+      "source_name": "Pcm",
+      "image_url": "https://cdn.pcmarket.com.hk/wp-content/uploads/2026/08/28153601/xiaomi-hk-4-new-cleaning-appliances-robot-vacuum-6-2026-01.jpg",
+      "keywords": [
+        "科技新聞",
+        "buyer guide",
+        "吸塵機",
+        "掃地機械人",
+        "小米",
+        "tech"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "12a4d74e3a3879419b925144cb47f840",
+      "title": "TWICE 娜璉財力驚人!砸 95 億購「清潭洞轉角大樓」,進軍房產富婆圈",
+      "description": "據韓國房地產業界與《朝鮮Biz》今日(28日)報導,女團TWICE成員娜璉於今年 5 月 3 日正式簽約,以高達 95 億韓元買下位於首爾江南區清潭洞的核心土地與整棟建築,並已於本月 24 日順利完成所有權轉移登記。",
+      "link": "https://www.koreastardaily.com/tc/news/163785",
+      "pubDate": "2026-08-28 07:49:00",
+      "source_name": "Ksd",
+      "image_url": "https://a.ksd-i.com/a/2026-08-28/163785-1063177.jpg",
+      "keywords": [
+        "新聞"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2d2a75dc4c23de7ade4d82125e311f91",
+      "title": "神科男起薪僅兩萬唔敢聚舊 傳統名校生廿年後過成點? 舊生親自戳破光環 揭「天堂與地獄」極端下場|Juicy叮",
+      "description": "一名自稱於某港島直資男女名校、且「神科」畢業的港男在網上發文,大嘆自己雖然名校出身,但起薪僅兩萬多,越做越迷惘,甚至自卑得不敢聚舊。他不禁好奇發問:「傳統名校生廿年後過成點?」帖文隨即引爆大批舊生回應,有人親自戳破名校光環,大爆畢業生「天堂與地獄」的極端下場。詳情見下圖及下文: 神科男起薪僅兩萬唔敢聚舊 傳統名校生廿年後過成點? 舊生親自戳破光環 揭「天堂與地獄」極端下場逐張睇↓↓↓↓ 神科男起薪",
+      "link": "https://www.stheadline.com/local-topics/3609137/%E7%A5%9E%E7%A7%91%E7%94%B7%E8%B5%B7%E8%96%AA%E5%83%85%E5%85%A9%E8%90%AC%E5%94%94%E6%95%A2%E8%81%9A%E8%88%8A-%E5%82%B3%E7%B5%B1%E5%90%8D%E6%A0%A1%E7%94%9F%E5%BB%BF%E5%B9%B4%E5%BE%8C%E9%81%8E%E6%88%90%E9%BB%9E-%E8%88%8A%E7%94%9F%E8%A6%AA%E8%87%AA%E6%88%B3%E7%A0%B4%E5%85%89%E7%92%B0-%E6%8F%AD%E5%A4%A9%E5%A0%82%E8%88%87%E5%9C%B0%E7%8D%84%E6%A5%B5%E7%AB%AF%E4%B8%8B%E5%A0%B4Juicy%E5%8F%AE",
+      "pubDate": "2026-08-28 07:45:33",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/27c6417fb18f6802c5496f649924c970/2026-08/20260828_NEWS_SCHOOL.png",
+      "keywords": [
+        "juicy叮",
+        "熱話"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cb79fc2aed433324b8b4308b8367e957",
+      "title": "AI短劇《把人寫成了妖》懶人包!網民封神作10大重點一文看懂隱喻",
+      "description": "長達26分鐘的內地AI生成短劇《我這一生最大的罪,是把人寫成了妖......》近期橫掃Bilibili(B站),截至今日(28日)為止,播放量已極速突破1447萬。本",
+      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60384498/ai%E7%9F%AD%E5%8A%87-%E6%8A%8A%E4%BA%BA%E5%AF%AB%E6%88%90%E4%BA%86%E5%A6%96-%E6%87%B6%E4%BA%BA%E5%8C%85-%E7%B6%B2%E6%B0%91%E5%B0%81%E7%A5%9E%E4%BD%9C10%E5%A4%A7%E9%87%8D%E9%BB%9E%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E9%9A%B1%E5%96%BB",
+      "pubDate": "2026-08-28 07:43:06",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170012191454138368369728.png/hZs5BK5yIQxnu0yagqeBsFeNbgqrTIxt_BqljfwapY0",
+      "keywords": [
+        "港產片",
+        "外語片",
+        "經典電影",
+        "睇戲",
+        "電影",
+        "香港01",
+        "影評"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2b339adf20698784a922942d542a58fb",
+      "title": "北大訪問團訪問嶺南大學 商北都大學城合作機遇",
+      "description": "京港高校合作聚焦北都發展,北京大學黨委書記何光彩昨率團訪問嶺南大學,並到洪水橋實地考察北部都會區大學城用地。何光彩肯定北都發展潛力,強調北大將支持大學城建設,盼與香港高校協作,把握北都發展契機,達至「互利共贏」。 校長秦泗釗、學術暨教務副校長陳漢夫、副校長(研究及創新)姚新、副校長(行政)陳志民等嶺大高層接待代表團。秦泗釗指兩校近年合作緊密,連續三年合辦「嶺南—元培STEM暑期學苑」,已成為京港教",
+      "link": "https://www.stheadline.com/edu-news/3609187/%E5%8C%97%E5%A4%A7%E8%A8%AA%E5%95%8F%E5%9C%98%E8%A8%AA%E5%95%8F%E5%B6%BA%E5%8D%97%E5%A4%A7%E5%AD%B8-%E5%95%86%E5%8C%97%E9%83%BD%E5%A4%A7%E5%AD%B8%E5%9F%8E%E5%90%88%E4%BD%9C%E6%A9%9F%E9%81%87",
+      "pubDate": "2026-08-28 07:42:01",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/st_edu/04b7ae030df903e68d5c8b98ea1c3c70/2026-08/Photo_7_jpg_.jpg",
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "93bad9308fbb45cf29d4612bbdf5274f",
+      "title": "歐聯|一文看清歐聯列強階段賽程 曼城巴塞PSG陷硬仗 阿仙奴惡鬥皇馬拜仁",
+      "description": "歐聯聯賽階段抽籤賽程正式出爐,因此《星島》為各位讀者再次提供一文看清階段賽程,方便大家為愛隊打氣!當中巴黎聖日耳門(PSG)與巴塞隆拿籤運最受矚目,兩隊除了同室操戈外,更需分別硬撼英超勁旅曼城。巴塞更要主場鬥曼城兼作客PSG,賽程極具考驗。英超代表阿仙奴籤運同樣嚴峻,將於主場迎戰皇家馬德里,並作客硬撼拜仁慕尼黑。此外,利物浦將與馬德里體育會及國際米蘭交鋒,曼聯亦需接連硬碰拜仁與馬體會。 各大球隊歐",
+      "link": "https://www.stheadline.com/football-news/3609186/%E6%AD%90%E8%81%AF%E4%B8%80%E6%96%87%E7%9C%8B%E6%B8%85%E6%AD%90%E8%81%AF%E5%88%97%E5%BC%B7%E9%9A%8E%E6%AE%B5%E8%B3%BD%E7%A8%8B-%E6%9B%BC%E5%9F%8E%E5%B7%B4%E5%A1%9EPSG%E9%99%B7%E7%A1%AC%E4%BB%97-%E9%98%BF%E4%BB%99%E5%A5%B4%E6%83%A1%E9%AC%A5%E7%9A%87%E9%A6%AC%E6%8B%9C%E4%BB%81",
+      "pubDate": "2026-08-28 07:41:10",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/5c7f0d6f5129c7f580273af556257265/2026-08/Copy_of_KF_-_2026-08-28T160350_697.png",
+      "keywords": [
+        "馬德里體育會",
+        "歐聯",
+        "曼城",
+        "利物浦",
+        "巴黎聖日耳門",
+        "曼聯"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3c9af106f4b7a3278a286f929e6bba92",
+      "title": "AI手臂秀研磨拋光技術 陳其邁也肯定",
+      "description": "中評社高雄8月28日電(記者 蔣繼平)高雄近年力拼產業轉型,“2026亞灣新創大南方”連續第6年在高雄登場,今年展現更多實際合作成果,譬如“大型鑄件AI研磨解決方案”,用機器設備也能達到傳統老師傅級的手藝,連民進黨籍高雄市長陳其邁看了後也表示肯定。 “2026 Meet Greater South亞灣新創大南方”28日在高雄展覽館登場,已連辦6年,超過250組參展商,展會聚焦南台灣產",
+      "link": "http://www.crntt.com/doc/7_0_160262210_1_0828154020.html",
+      "pubDate": "2026-08-28 07:40:19",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/160262223.jpg",
+      "keywords": [
+        "ai",
+        "高雄"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d77e5467e83762984b08a9b50198d88d",
+      "title": "華女南韓遭肢解案|疑犯反口拒接受精神人格測試 擬已聘律師全力抗辯",
+      "description": "南韓一名中國女留學生在本月20日失蹤,後竟遭其同校解剖學男講師殺害並肢解。《韓聯社》28日援引韓國警方最新消息稱,本案中國籍嫌疑人鄭昌聖反口,拒絕先前會接受「精神病態人格測試」的承諾。 相關新聞:華女研究生南韓遭中國講師肢解 棄屍250公里傳曾性騷擾其他女學生 報道稱,警方一天前試圖對鄭某進行精神病態人格測試,鄭某起初同意,後改口拒絕。警方表示,精神病態人格測試以面談方式進行,若嫌疑人拒絕接受,警",
+      "link": "https://www.stheadline.com/realtime-china/3609182/%E8%8F%AF%E5%A5%B3%E5%8D%97%E9%9F%93%E9%81%AD%E8%82%A2%E8%A7%A3%E6%A1%88%E7%96%91%E7%8A%AF%E5%8F%8D%E5%8F%A3%E6%8B%92%E6%8E%A5%E5%8F%97%E7%B2%BE%E7%A5%9E%E4%BA%BA%E6%A0%BC%E6%B8%AC%E8%A9%A6-%E6%93%AC%E5%B7%B2%E8%81%98%E5%BE%8B%E5%B8%AB%E5%85%A8%E5%8A%9B%E6%8A%97%E8%BE%AF",
+      "pubDate": "2026-08-28 07:37:46",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/42bfc2208f9ebea7075b5f5d98c0e57c/2026-08/FotoJet_-_2026-08-28T151929_706_0.jpg",
+      "keywords": [
+        "殺人",
+        "鄭昌聖"
+      ],
+      "category": [
+        "top",
+        "politics",
+        "crime"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9e1b4dd7bb3a58d0051bdf799724a9fb",
+      "title": "大阪日本環球影城擬擴建 增設遊樂設施",
+      "description": "多間日本傳媒今日(8月28日)引述知情人士報道,日本大阪著名旅遊景點日本環球影城(USJ)準備大規模擴建,以加建遊樂設施吸引更多遊客,預計將投資2000億至3000億日元(約98億至148億港元),是2001年開園以來首次擴大園區面積。大阪市料即將公布有關計劃,預計在2028年春季簽署租賃協議。",
+      "link": "https://www.am730.com.hk/%E5%9C%8B%E9%9A%9B/1050056/%E5%A4%A7%E9%98%AA%E6%97%A5%E6%9C%AC%E7%92%B0%E7%90%83%E5%BD%B1%E5%9F%8E%E6%93%AC%E6%93%B4%E5%BB%BA-%E5%A2%9E%E8%A8%AD%E9%81%8A%E6%A8%82%E8%A8%AD%E6%96%BD",
+      "pubDate": "2026-08-28 07:37:08",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1050056/article/1050056/df/01M13MQWVX61QDCT1BBSVBQK2Z.png?updatedAt=1787902628",
+      "keywords": null,
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d652589165d8500f099f4e02875e1553",
+      "title": "網約車|今日起開放平台公司申請牌照 Uber、滴滴擬申請",
+      "description": "運輸署今(28日)起接受網約車平台申請牌照,吸引了不少網約車平台表明會申請。網約車平台「Uber」指出,現正積極籌備網約車服務平台牌照的申請;而另一網約車平台「滴滴」則指,將按照有關程序盡快遞交牌照申請。 Uber:正積極籌備申請 Uber發言人表示,正積極籌備網約車服務平台牌照的申請。Uber在審批過程中,將保持高度透明,全力配合監管機構的各項工作。發言人又指,非常歡迎這次發牌機會,並期望藉此展",
+      "link": "https://www.stheadline.com/society/3609179/%E7%B6%B2%E7%B4%84%E8%BB%8A%E4%BB%8A%E6%97%A5%E8%B5%B7%E9%96%8B%E6%94%BE%E5%B9%B3%E5%8F%B0%E5%85%AC%E5%8F%B8%E7%94%B3%E8%AB%8B%E7%89%8C%E7%85%A7-Uber%E6%BB%B4%E6%BB%B4%E6%93%AC%E7%94%B3%E8%AB%8B",
+      "pubDate": "2026-08-28 07:35:07",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e40db7e66aee3c36715251ca2c56c5b8/2026-08/NA260608TX01.jpg",
+      "keywords": [
+        "滴滴",
+        "網約車",
+        "uber"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ded8a586c5d5ae7c4e7d4fe9b96ce14",
+      "title": "前魔兵靴里拉免費踢第3級聯賽:最後圓夢",
+      "description": "【Now Sports】曾效力曼聯的西班牙中場安達靴里拉今季返回西班牙,重投現於西班牙第3級別皇家足協甲組聯賽的薩拉戈薩,為助母會度過難關更不收分文,免費效力。37歲的安達靴里拉(Ander Herrera)效力阿根廷球隊小保加一年半後於今夏離隊,選擇加盟目前在西班牙皇家足協甲組聯賽作賽的薩拉戈薩。過去曾在曼聯、...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%89%8D%E9%AD%94%E5%85%B5%E9%9D%B4%E9%87%8C%E6%8B%89%E5%85%8D%E8%B2%BB%E8%B8%A2%E7%AC%AC3%E7%B4%9A%E8%81%AF%E8%B3%BD-%E6%9C%80%E5%BE%8C%E5%9C%93%E5%A4%A2-073437875.html",
+      "pubDate": "2026-08-28 07:34:37",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/04e2eee1f6fb5830bd5c355c1ac7fe8492537a5de2fbb6ec18742998c6337410/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fc6bbbe5f-7b18-49fb-8de2-3951065e5557",
+      "keywords": [
+        "曼聯",
+        "巴黎聖日耳門",
+        "巴黎",
+        "過去",
+        "西班牙皇家足協",
+        "西班牙",
+        "第3",
+        "ander herrera",
+        "今季",
+        "安達"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2fa82de8095f3ffd008b7fc7856d3c26",
+      "title": "洪永城細女捱8次血管瘤激光治療 梁諾妍門外煎熬:終於告一段落",
+      "description": "洪永城與太太梁諾妍(Inez)育有兩女兒,兩歲的細女Beryl自出世起便飽受俗稱「士多啤梨痣」的血管瘤困擾。歷經一年多、合共8次的激光治療後,Beryl",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384543/%E6%B4%AA%E6%B0%B8%E5%9F%8E%E7%B4%B0%E5%A5%B3%E6%8D%B18%E6%AC%A1%E8%A1%80%E7%AE%A1%E7%98%A4%E6%BF%80%E5%85%89%E6%B2%BB%E7%99%82-%E6%A2%81%E8%AB%BE%E5%A6%8D%E9%96%80%E5%A4%96%E7%85%8E%E7%86%AC-%E7%B5%82%E6%96%BC%E5%91%8A%E4%B8%80%E6%AE%B5%E8%90%BD",
+      "pubDate": "2026-08-28 07:30:55",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1169998783610621952895103.png/Hiq1ZLcnFk4oPKjS6bs29rW29SeKjkl5yXHsR8lx7Ec",
+      "keywords": [
+        "韓星",
+        "香港新聞",
+        "香港01",
+        "新聞",
+        "明星",
+        "藝人",
+        "即時娛樂",
+        "即時娛樂新聞",
+        "娛樂新聞",
+        "hk01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e7f090d9076787e06df631c7aaf92f74",
+      "title": "GTA 6公布27分鐘PS5實機演示!雙主角無縫切換 換人時AI自動接管",
+      "description": "今天凌晨,Rockstar Games正式推出《GTA6》時長接近27分鐘的官方超長實機演示,影片素材全部錄製自PS5主機,完整展示雙主角、戰鬥追逐、開放世界交",
+      "link": "https://www.hk01.com/%E9%81%8A%E6%88%B2%E5%8B%95%E6%BC%AB/60384576/gta-6%E5%85%AC%E5%B8%8327%E5%88%86%E9%90%98ps5%E5%AF%A6%E6%A9%9F%E6%BC%94%E7%A4%BA-%E9%9B%99%E4%B8%BB%E8%A7%92%E7%84%A1%E7%B8%AB%E5%88%87%E6%8F%9B-%E6%8F%9B%E4%BA%BA%E6%99%82ai%E8%87%AA%E5%8B%95%E6%8E%A5%E7%AE%A1",
+      "pubDate": "2026-08-28 07:30:17",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170019029084016640793806.jpeg/ywb7anRkiCnUkv7luCcxKNm61EQUHegE1uiknNbopJw",
+      "keywords": [
+        "app store",
+        "遊戲產業",
+        "switch",
+        "遊戲文化",
+        "google play",
+        "sony",
+        "vr",
+        "steam",
+        "geme",
+        "香港01",
+        "games",
+        "本土遊戲",
+        "game development",
+        "gamers",
+        "香港遊戲",
+        "hk01",
+        "遊戲評論",
+        "獨立遊戲",
+        "indie games",
+        "遊戲開發"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1b1b06ef22d1eaa0c0bbc81504ec06b9",
+      "title": "林定國率團接力訪問烏茲別克斯坦 推動兩地專業服務協作共贏",
+      "description": "律政司司長林定國結束哈薩克斯坦行程後,馬不停蹄轉往烏茲別克斯坦首都塔什干訪問。林定國指出,行政長官李家超於今年 6月曾率領商貿代表團到訪當地,並簽署多份範疇廣泛的合作備忘錄,為兩地合作奠定堅實基礎。他今次率團接力而至,旨在以「協作共贏」為主題,延續兩地交流,推廣香港的專業服務,期望成為各地企業邁向全球的最佳夥伴。 林定國8月27日早上聯同代表團首先到訪塔什干國立法律大學,與校方高層會面並參觀校園。校方表示有意在法律教育、培訓及研究方面,與香港的法律院校探討合作空間。林定國表示樂意從中穿針引線,並預告律政司香港國際法律人才培訓學院亦非常樂意與該校簽訂合作備忘錄,進一步落實法律人才的培訓與交流工作。 作為烏茲別克斯坦的經濟及金融重鎮,塔什干是推動兩地深化合作的重要門戶。林定國隨後與塔什干市長出席午餐會面,其間向市長團隊介紹香港在「一國兩制」下的獨特優勢,強調兩地可在經貿、法律、專業服務及能力建設等領域加強合作。市長對深化雙方往來表示歡迎,林定國亦誠意邀請市長親自到訪香港,實地感受這座城市的魅力。 林定國強調,烏茲別克斯坦地處中亞心臟地帶,自古以來是絲綢之路的關鍵樞紐。近年當地積極推動經濟改革,令營商環境持續優化。他認為無論是內地企業希望「走出去」,或是烏國企業有意開拓國際市場,香港都能擔當最理想的跳板作用。 在隨後的行程中,林定國及代表團亦與烏茲別克斯坦中國企業商會,以及烏茲別克國家企業協會的高層及成員會面,多個法律界專業機構如塔什干國際仲裁中心總監及當地主要律師行代表亦有出席。林定國向與會者建議,除了現有的合作渠道外,兩地可考慮成立由跨專業界別組成的工作小組,為有意拓展國際市場的公司提供一站式專業服務。他深信這不僅為香港帶來機遇,亦有助香港發揮全球參與者的角色。",
+      "link": "https://www.bastillepost.com/hongkong/article/16658239-%E6%9E%97%E5%AE%9A%E5%9C%8B%E7%8E%87%E5%9C%98%E6%8E%A5%E5%8A%9B%E8%A8%AA%E5%95%8F%E7%83%8F%E8%8C%B2%E5%88%A5%E5%85%8B%E6%96%AF%E5%9D%A6-%E6%8E%A8%E5%8B%95%E5%85%A9%E5%9C%B0%E5%B0%88%E6%A5%AD%E6%9C%8D",
+      "pubDate": "2026-08-28 07:29:11",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/img_c767beb6_01_FB_v2-2.jpg",
+      "keywords": [
+        "交流",
+        "社會事",
+        "林定國",
+        "source-gov",
+        "律政司",
+        "太極影片",
+        "ai小助手"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "610133945406ac356afe4fef5ebd5e0a",
+      "title": "創新科技署署長李國彬視察科學園生物科技設施 聚焦生命健康科研發展",
+      "description": "創新科技署署長李國彬8月27日到訪香港科學園,實地參觀多項生物科技設施,深入了解香港科技園公司(科技園公司)在支援生命健康科技方面的最新進展。署長一行先後視察了藥物非臨床研究質量管理規範藥物安全測試中心、生物醫學技術支援中心,以及生物樣本庫及組織病理學服務,藉此掌握園區內科研基建的實際運作情況。 生命健康科技屬政府重點支援的策略群組之一,科技園公司近年持續優化實驗室空間及相關配套,以推動香港生物科技研發,促進整個生物科技產業生態蓬勃發展。有關設施不僅服務園區內的科技企業,園區外的大學及科研機構同樣可以受惠。目前香港科學園及創新中心已匯聚約350家從事生命健康科技的企業,佔園區租戶總數超過20%。 參觀期間,李國彬與科學園內生物醫藥領域的初創企業代表會面交流,聽取業界需求,並邀請科技園公司研究如何進一步提供更適切的支援。創新科技署表示,將繼續支持科技園公司為創科企業提供優質基建設施及推出各項支援措施,攜手構建蓬勃的創科生態圈。 這次參觀的藥物安全測試中心,為香港首個獲得國際實驗動物評估和認可委員會認證的非學術機構設施,並於2024年4月開始提供符合美國食品及藥物管理局藥物臨床前研究質量管理規範的新藥臨床研究審批申報要求的藥物安全測試服務,協助新藥在通過相關審批後開展臨床試驗。 至於生物醫學技術支援中心,佔地22,000平方英尺,設有300多套生物醫學儀器,涵蓋蛋白質組及代謝體學分析、細胞影像及基因組學等類別,並配備靈活的共享實驗室套件,有助提升新型生命科學的研發水平,促進生物醫學研發。 生物樣本庫及組織病理學服務則提供超低溫儲存設備、液態氮保存設備及組織塊和組織玻片供樣本存放,同時提供組織病理學和細胞學服務,包括組織分切和處理石蠟塊的嵌入和切片、染色、細胞影像、細胞培養和質控測試等。相關設備及服務旨在促進香港科技企業和科研機構的研發活動。",
+      "link": "https://www.bastillepost.com/hongkong/article/16658287-%E5%89%B5%E6%96%B0%E7%A7%91%E6%8A%80%E7%BD%B2%E7%BD%B2%E9%95%B7%E6%9D%8E%E5%9C%8B%E5%BD%AC%E8%A6%96%E5%AF%9F%E7%A7%91%E5%AD%B8%E5%9C%92%E7%94%9F%E7%89%A9%E7%A7%91%E6%8A%80%E8%A8%AD%E6%96%BD-%E8%81%9A",
+      "pubDate": "2026-08-28 07:23:18",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/img_c75d209b_01_FB_v2-2.jpg",
+      "keywords": [
+        "社會事",
+        "科學園",
+        "source-gov",
+        "創新科技署",
+        "太極影片",
+        "ai小助手",
+        "科技"
+      ],
+      "category": [
+        "science",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "897e2bdb3c72ead419856de4c8d6196b",
+      "title": "JULIEN'S AUCTIONS 宣佈舉辦「KAIJU KING: THE SOMPOTE SANDS LEGACY COLLECTION」拍賣會",
+      "description": "為紀念 Ultraman 這個先驅系列誕生 60 週年,具前瞻視野的科幻電影製作人 Sompote Sands 之私人珍藏將首度登上拍賣場 珍稀拍品包括 Ultraman 宣傳飛行模型、設計雕像、面具、拍攝戲服及人偶;著名設計師 Tohl Narita 創作的 Ultraman、Pigmon 及 Alien Baltan 立體畫作; 以及來自經典電影 《Hanuman and the Five Kamen Riders》、《Hanuman and the Seven Ultramen》和《Jumborg Ace & Giant》 等作品的手繪原版海報畫稿及其他珍藏...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/juliens-auctions-kaiju-king-the-sompote-sands-legacy-collection-302862620.html",
+      "pubDate": "2026-08-28 07:22:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://i.ytimg.com/vi/hNhyNOtpn-0/hqdefault.jpg",
+      "keywords": [
+        "asi",
+        "bfa"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c32d791cff2cf01d82045ef8ceb593ea",
+      "title": "轉會消息|車路士傳簽阿根廷門神馬天尼斯 哥列斯卡免費加盟阿士東維拉",
+      "description": "歐洲的轉會窗餘下這個周末,故此球隊也加快完成轉會。將出戰歐聯的維拉,從帕爾馬簽入鈴木彩艷後,達米安馬天尼斯未來似乎已不在艾馬利(Unai Emery)的計劃,在大敗給白禮頓的首場聯賽,用上後備門將的比蘇治(Marco Bizot),鈴木彩艷只任後備,因此馬天尼斯的離隊只是時間問題。而車路士在對富咸的聯賽雖然贏波,不過門將的羅拔山齊士(Robert Sanchez)仍不穩固,雖然球隊也有從法國斯特拉斯堡來投的比利時門將彭達斯(Mike Penders),但藍戰士仍對達米安感興趣。33歲的達米安在上一屆世界盃贏得冠軍之外,也獲得了金手套。在之前意大利的祖雲達斯對馬天尼斯感興趣,但轉會因為馬天尼斯手指的受傷而告吹,老婦人之後也借用了熱刺的古里莫維卡里奧(Guglielmo Vicario)替補,因此車路士願意接受維拉開出的750萬英鎊報價,以簽入這位33歲門將。",
+      "link": "https://www.am730.com.hk/%E9%AB%94%E8%82%B2/1050039/%E8%BD%89%E6%9C%83%E6%B6%88%E6%81%AF-%E8%BB%8A%E8%B7%AF%E5%A3%AB%E5%82%B3%E7%B0%BD%E9%98%BF%E6%A0%B9%E5%BB%B7%E9%96%80%E7%A5%9E%E9%A6%AC%E5%A4%A9%E5%B0%BC%E6%96%AF-%E5%93%A5%E5%88%97%E6%96%AF%E5%8D%A1%E5%85%8D%E8%B2%BB%E5%8A%A0%E7%9B%9F%E9%98%BF%E5%A3%AB%E6%9D%B1%E7%B6%AD%E6%8B%89",
+      "pubDate": "2026-08-28 07:17:38",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1050039/article/1050039/df/01M13HJYNG6HRS1DDZYFMP5VWE.jpg?updatedAt=1787901458",
+      "keywords": null,
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a7008370a926a555abba09a7b8d73cb6",
+      "title": "神舟二十三號航天員出艙5.5小時 完成維修及安裝空間碎片防護裝置",
+      "description": "中國載人航天工程辦公室公布,神舟二十三號乘組航天員朱楊柱、張志遠、黎家盈於8月28日下午1時59分完成約5.5小時的出艙活動,在空間站機械臂和地面科研人員配合支持下,順利完成太陽翼艙外維修、空間碎片防護裝置安裝等任務。 是次任務的出艙航天員為朱楊柱及張志遠,其中朱楊柱時隔3年再度漫步太空,而張志遠則是首次執行出艙任務。據介紹,這是中國航天員第二次對太陽翼進行艙外維修,有效確保了空間站供電的安全性與穩定性。 自5月25日進駐空間站以來,乘組已完成在軌輪換、應用載荷出艙等任務,並進行交會對接、醫療救護等在軌訓練和全系統壓力應急演練,同時常態化開展空間站平台維護照料、生活和健康保障等工作。他們承擔的空間生命科學與人體研究、微重力物理科學、空間新技術等領域實(試)驗任務亦正穩步推進。 目前,3名航天員在軌工作已超過3個月。後續,他們將按計劃持續開展相關科學實驗與技術試驗、應用載荷進出艙、科普教育等工作。",
+      "link": "https://www.bastillepost.com/hongkong/article/16658450-%E7%A5%9E%E8%88%9F%E4%BA%8C%E5%8D%81%E4%B8%89%E8%99%9F%E8%88%AA%E5%A4%A9%E5%93%A1%E5%87%BA%E8%89%995-5%E5%B0%8F%E6%99%82-%E5%AE%8C%E6%88%90%E7%B6%AD%E4%BF%AE%E5%8F%8A%E5%AE%89%E8%A3%9D%E7%A9%BA",
+      "pubDate": "2026-08-28 07:17:26",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/07/screenshot_8489014_01_FB.jpeg",
+      "keywords": [
+        "兩岸",
+        "神舟二十三號",
+        "source-1",
+        "黎家盈"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1eb8da0de89d78a2bf2da8271ccb930a",
+      "title": "鍾培生推「天價」月餅?HKTCG套裝連Pokémon卡售價達4位數 網民評價兩極:智商稅VS有價值",
+      "description": "「香港電競之父」鍾培生於今年創立本地卡牌平台HKTCG,適逢中秋節將至,平台宣佈推出「HKTCG月餅套裝」,月餅、Pokémon卡牌補充包及鑑定卡套裝售價最高達4位數,引起一眾網民熱議,有人認為這盒「天價」月餅套裝物有所值,但亦有網民認為是「智商稅」。詳情即看下文! 鍾培生創卡牌平台HKTCG 中秋節推4位數Pokémon卡月餅套裝? 集換式卡牌(PTCG)熱潮席捲全球,其中Pokémon(寶可夢",
+      "link": "https://www.stheadline.com/food/3609151/%E9%8D%BE%E5%9F%B9%E7%94%9F%E6%8E%A8%E5%A4%A9%E5%83%B9%E6%9C%88%E9%A4%85HKTCG%E5%A5%97%E8%A3%9D%E9%80%A3Pok%C3%A9mon%E5%8D%A1%E5%94%AE%E5%83%B9%E9%81%944%E4%BD%8D%E6%95%B8-%E7%B6%B2%E6%B0%91%E8%A9%95%E5%83%B9%E5%85%A9%E6%A5%B5%E6%99%BA%E5%95%86%E7%A8%85VS%E6%9C%89%E5%83%B9%E5%80%BC",
+      "pubDate": "2026-08-28 07:16:56",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a2c1df3eb4f3b197b0eb4c4d4d7fb6fb/2026-08/2024__KF_TF_1__1.jpg",
+      "keywords": [
+        "月餅",
+        "hktcg",
+        "鍾培生",
+        "pokémon卡"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0a8b71390a09151d372d1c547f63dbac",
+      "title": "美國|企業政治捐款創新高 破50億",
+      "description": "美國監察組織「公民」(Public Citizen)最新數據指出,企業的政治捐款達6.46億美元(約50.6億港元),打破歷史新高,甚至比2024年總統大選競選周期多40%。美國|擬限國際學生實習 恐...",
+      "link": "https://inews.hket.com/article/4184533",
+      "pubDate": "2026-08-28 07:13:00",
+      "source_name": "Hket",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4184533/280826_169_iet_fish_50_v1_300.jpg",
+      "keywords": [
+        "地緣政治",
+        "美國國會",
+        "美國",
+        "美國民主黨",
+        "總統大選",
+        "美國共和黨",
+        "選舉"
+      ],
+      "category": [
+        "world"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "518ff65dcec0c5e292278356b3647660",
+      "title": "名古屋亞運羽毛球|謝影雪五戰亞運 以老帶新率17歲小將戰混雙",
+      "description": "鄧俊文早前重創前十字韌帶,與謝影雪組成的羽毛球「鄧謝配」注定無緣名古屋亞運。香港羽毛球隊今日(28日)會見傳媒,公布亞運名單,謝影雪同樣出",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60384433/%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E7%BE%BD%E6%AF%9B%E7%90%83-%E8%AC%9D%E5%BD%B1%E9%9B%AA%E4%BA%94%E6%88%B0%E4%BA%9E%E9%81%8B-%E4%BB%A5%E8%80%81%E5%B8%B6%E6%96%B0%E7%8E%8717%E6%AD%B2%E5%B0%8F%E5%B0%87%E6%88%B0%E6%B7%B7%E9%9B%99",
+      "pubDate": "2026-08-28 07:12:25",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170015837537439744247856.jpeg/s7AhJrcww2wb9RJaCTr0P9wmTLec6Z7UUUGIEFFBiBA",
+      "keywords": [
+        "f1賽車",
+        "新聞",
+        "體育",
+        "nba",
+        "體育消息",
+        "網球",
+        "高爾夫球",
+        "香港新聞",
+        "hk01",
+        "籃球",
+        "香港01",
+        "體育新聞"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bf117e69fb47fc579ec0057bb6548f38",
+      "title": "日媒:大阪日本環球影城擬擴建 增設遊樂設施",
+      "description": "日本《讀賣新聞》8月28日引述知情人士報道,大阪著名旅遊景點日本環球影城(USJ)準備大規模擴建,以加建遊樂設施吸引更多遊客。報道提到,擴建計",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60384596/%E6%97%A5%E5%AA%92-%E5%A4%A7%E9%98%AA%E6%97%A5%E6%9C%AC%E7%92%B0%E7%90%83%E5%BD%B1%E5%9F%8E%E6%93%AC%E6%93%B4%E5%BB%BA-%E5%A2%9E%E8%A8%AD%E9%81%8A%E6%A8%82%E8%A8%AD%E6%96%BD",
+      "pubDate": "2026-08-28 07:09:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260630/1148692881876193280340892.png/VG-4mYwnbalCySU1Adp7_k9zmiyq2i-Jj4x-n4-Mfp8",
+      "keywords": [
+        "新聞",
+        "國際新聞",
+        "環球",
+        "hk01",
+        "國際",
+        "世界新聞",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4f33a09c221ac77d8de67726ac67da81",
+      "title": "英超轉會消息|世界盃冠軍門將大特賣 傳阿根廷鋼門馬天尼斯750萬上「車」",
+      "description": "阿士東維拉門將達米安馬天尼斯去向再有消息,據報這名世界盃一冠一亞龍門,將以750萬鎊的轉會費轉投車路士,頂替近期表現不佳的羅拔山齊士。 馬天尼斯750萬荀價投車路士 現年33歲的阿根廷神龍達米安馬天尼斯,去年已有去意,本和曼聯已接近完成交易,但將近「埋牙」便突然告吹,而今季阿士東維拉3000萬鎊引入日本門將鈴木彩艷後,他的出場時間勢必更進一步壓縮。本身有傳他會轉投祖雲達斯,但據指「老婦人」因擔心他",
+      "link": "https://www.stheadline.com/football-news/3609173/%E8%8B%B1%E8%B6%85%E8%BD%89%E6%9C%83%E6%B6%88%E6%81%AF%E4%B8%96%E7%95%8C%E7%9B%83%E5%86%A0%E8%BB%8D%E9%96%80%E5%B0%87%E5%A4%A7%E7%89%B9%E8%B3%A3-%E5%82%B3%E9%98%BF%E6%A0%B9%E5%BB%B7%E9%8B%BC%E9%96%80%E9%A6%AC%E5%A4%A9%E5%B0%BC%E6%96%AF750%E8%90%AC%E4%B8%8A%E8%BB%8A",
+      "pubDate": "2026-08-28 07:08:34",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/06355d501662f9a45025f7dc3814de72/2026-08/KF_49_.png",
+      "keywords": [
+        "車路士",
+        "達米安馬天尼斯",
+        "英超轉會消息",
+        "阿士東維拉",
+        "世界盃",
+        "阿根廷"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "357dff92cdfc7b8946d5ec80b3068dad",
+      "title": "泰利丹CIS111探測器搭載MTG-I2衛星升空 助實時追蹤惡劣天氣",
+      "description": "泰利丹太空影像作為太空認證成像傳感器、焦平面陣列及集成相機系統的主要供應商,宣布搭載其CIS111探測器的第三代氣象衛星成像儀二號(MTG-I2)已成功發射。該探測器搭載於MTG-I2衛星的靈活組合成像儀(FCI)儀器內。MTG-I2衛星於8月27日英國夏令時間晚上9時11分,在法屬圭亞那歐洲太空中心,由亞利安六號火箭發射升空。 這次發射標誌著第三代氣象衛星(MTG)計劃的另一個里程碑,該計劃是迄今為止開發的最先進地球同步氣象衛星系統之一。這新一代地球同步衛星由歐洲氣象衛星組織營運,提供更強大的氣象能力,從地球同步軌道提供更詳細、更頻繁的觀測。該系統將有助預報員近乎實時追蹤惡劣天氣發展,改善數值天氣預報模型,並首次支援歐洲、非洲、中東及周邊水域的持續閃電探測。這些能力將有助氣象服務提供更早、更準確的惡劣天氣事件預警,同時為長期氣候監測作出貢獻。 MTG-I2繼2022年12月成功發射的MTG-I1(現稱氣象衛星十二號)之後升空,延續泰利丹太空影像透過其CIS111探測器技術對第三代氣象衛星計劃的貢獻。 泰利丹太空影像策略及科技主管兼CIS111設計師謝羅姆·普拉特隆表示:「為MTG等任務開發探測器技術,需要仔細平衡性能、可靠性及彈性。CIS111專門設計以滿足從地球同步軌道持續觀測地球的嚴苛要求,採用獨特的大像素架構及抗輻射設計。MTG-I2的發射標誌著MTG計劃及泰利丹太空影像團隊的另一個重要里程碑,我們期待未來多年支援提供關鍵氣象及環境數據。」 FCI旨在從地球同步軌道提供頻繁、高解像度的地球觀測。其核心是CIS111,這是一個由泰利丹太空影像開發的五通道、大像素、可編程、抗輻射的集成傳感器組件。該探測器採用尺寸達100 x 100微米的超大菱形像素,而非成像傳感器常用的傳統方形像素架構,這提高了MTG-I2特定應用的成像解像度。該設備亦採用泰利丹太空影像開發的專有黑色塗層工藝,以最大限度減少內部反射並優化圖像性能。 MTG-I2是計劃用於該衛星群的四顆第三代氣象衛星成像儀(MTG-I)中的第二顆,餘下兩顆衛星目前定於2032年及2036年發射。隨著衛星群持續擴展,它將提供關鍵觀測數據,支援全球天氣預報、氣候科學、災害應變、航空安全及廣泛的環境服務。 關於泰利丹太空影像 泰利丹科技公司(紐約證券交易所代號:TDY)旗下的泰利丹太空影像,在為美國太空總署、歐洲太空總署、日本宇宙航空研究開發機構及南韓航空宇宙研究院等主要太空機構及天文台開發獲太空認證的成像傳感器、焦平面陣列及集成相機系統方面擁有卓越的傳統。其歷史涵蓋超250個太空項目,以及各種商業太空應用。泰利丹太空影像設計、測試及製造一系列電荷耦合器件、互補式金屬氧化物半導體及紅外線探測器,並提供光學濾波器及封裝選項,以滿足所有性能要求。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16658544-%E6%B3%B0%E5%88%A9%E4%B8%B9cis111%E6%8E%A2%E6%B8%AC%E5%99%A8%E6%90%AD%E8%BC%89mtg-i2%E8%A1%9B%E6%98%9F%E5%8D%87%E7%A9%BA-%E5%8A%A9%E5%AF%A6%E6%99%82%E8%BF%BD%E8%B9%A4%E6%83%A1%E5%8A%A3%E5%A4%A9",
+      "pubDate": "2026-08-28 07:02:31",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/167c7be6c31c4bb6886c1c66219e8ed0_CIS111_imaging_sensor_aboard_MTGI2_FB.jpg",
+      "keywords": [
+        "地球同步軌道",
+        "商業事",
+        "氣象衛星",
+        "mtg-i2",
+        "cis111探測器",
+        "泰利丹太空影像"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8690985cc29bbfe3a922d2240666a735",
+      "title": "蘇州男食隔夜桃 腹瀉致腎損傷 醫生斥:冰箱不是保險箱 切開水果要隔夜即棄",
+      "description": "夏日炎炎,多汁甜桃是不少人的消暑首選。惟蘇州一名男子吃下在雪櫃存放一晚、已開始軟爛的削皮桃子後,竟引發劇烈腹瀉及嘔吐,一日腹瀉十多次,最終導致急性腎損傷,一度需入院治療。醫生警告,雪櫃並非「食物保險箱」,切開的水果即使冷藏,微生物仍會迅速滋生,變壞後進食可致嚴重脫水,短時間內損害腎功能。 去皮桃放雪櫃翌日食用 男子腹瀉嘔吐致腎損傷 據內媒報道,江蘇蘇州一名男子將削皮後未吃完的桃放入雪櫃,隔日取出進",
+      "link": "https://www.stheadline.com/food-safety/3608506/%E8%98%87%E5%B7%9E%E7%94%B7%E9%A3%9F%E9%9A%94%E5%A4%9C%E6%A1%83-%E8%85%B9%E7%80%89%E8%87%B4%E8%85%8E%E6%90%8D%E5%82%B7-%E9%86%AB%E7%94%9F%E6%96%A5%E5%86%B0%E7%AE%B1%E4%B8%8D%E6%98%AF%E4%BF%9D%E9%9A%AA%E7%AE%B1-%E5%88%87%E9%96%8B%E6%B0%B4%E6%9E%9C%E8%A6%81%E9%9A%94%E5%A4%9C%E5%8D%B3%E6%A3%84",
+      "pubDate": "2026-08-28 07:02:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/808d4da1f001caad02721efeb82c58c4/2026-08/image_1787800328603476.png",
+      "keywords": null,
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "be64613bc8c37afcdd7c60478be2418d",
+      "title": "支聯會案求情:李卓人、何俊仁爭取輕判,鄒幸彤指「一日監都不應坐」|Whatsnew",
+      "description": null,
+      "link": "https://theinitium.com/20260828-whatsnew-hongkong-64-hkaspdmc-trial-mitigation/",
+      "pubDate": "2026-08-28 07:00:52",
+      "source_name": "端傳媒",
+      "image_url": "https://storage.ghost.io/c/bd/52/bd52a4c1-eed6-4103-b487-e9a77365f6b3/content/images/2026/08/64-008-3.jpg",
+      "keywords": [
+        "法律",
+        "人權",
+        "速遞",
+        "公民社會",
+        "六四週年",
+        "社會運動",
+        "香港"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4a1bbf1acdbbe31609c91d1f90ca59f0",
+      "title": "ViuTV全新飲食節目《人妻私房料理》 王君馨大談夫妻間保鮮大法",
+      "description": "ViuTV全新飲食節目《啱Kee 啱你多啲 Keeta 呈獻:人妻私房料理》即將於8月31日,逢星期一至五晚,晚上8時播放。節目將鏡頭對準一眾人妻藝人,她們將會擔任嘉賓,在節目中親自烹調各自的拿手菜式,並與觀眾大方分享煮食心得。除此之外,她們亦會大談持家之道,以及如何在人妻與藝人兩個身份之間取得平衡。節目主持包括:Fatboy@ERROR、陳安立、黃奕晨、陳子豐、香胤宅。 第一集節目組找來重量級嘉賓王君馨Grace。她笑談自己的拿手菜,包括煮烏冬及煎蛋,形容自己煎的蛋味道一流。Grace今次親自下廚示範做法,落力炮製出兩道背後藏有意義的菜式「洋蔥蘋果雞湯」及兒時回憶「牛肉芝士通心粉」。 與老公相戀21年的Grace在節目中大方分享現時婚姻狀態,並大談夫妻間相處之道和保鮮大法。其後,Grace亦講到成為媽媽後心態上的轉變,她稱上帝送女兒來,讓自己學會無私的愛。當媽媽的經歷,令她以後在演藝、歌唱事業路上,感受亦會變深了。",
+      "link": "https://www.bastillepost.com/hongkong/article/16652261-viutv%E5%85%A8%E6%96%B0%E9%A3%B2%E9%A3%9F%E7%AF%80%E7%9B%AE%E3%80%8A%E4%BA%BA%E5%A6%BB%E7%A7%81%E6%88%BF%E6%96%99%E7%90%86%E3%80%8B-%E7%8E%8B%E5%90%9B%E9%A6%A8%E5%A4%A7%E8%AB%87%E5%A4%AB%E5%A6%BB",
+      "pubDate": "2026-08-28 07:00:39",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260827_FB_EN_Crace_source-web_.jpg",
+      "keywords": [
+        "陳安立",
+        "王君馨",
+        "人妻私房料理",
+        "娛圈事"
+      ],
+      "category": [
+        "top",
+        "food",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "97ff46d925487b23a793e854f4671aa1",
+      "title": "妮歌潔曼罕談22歲閃婚湯告魯斯 公開當年愛情宣言:事業不要也罷",
+      "description": "59歲奧斯卡影后妮歌潔曼(Nicole Kidman)曾在1990年平安夜與「阿湯哥」湯告魯斯(Tom Cruise)閃婚,卻在2001年宣布離婚,震驚全球娛樂圈。近日妮",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384485/%E5%A6%AE%E6%AD%8C%E6%BD%94%E6%9B%BC%E7%BD%95%E8%AB%8722%E6%AD%B2%E9%96%83%E5%A9%9A%E6%B9%AF%E5%91%8A%E9%AD%AF%E6%96%AF-%E5%85%AC%E9%96%8B%E7%95%B6%E5%B9%B4%E6%84%9B%E6%83%85%E5%AE%A3%E8%A8%80-%E4%BA%8B%E6%A5%AD%E4%B8%8D%E8%A6%81%E4%B9%9F%E7%BD%B7",
+      "pubDate": "2026-08-28 07:00:19",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1169962579380932608549021.png/l7_Qk4df6kEFTmvQFCC1GWngM2lejL0BOsNVPTrDVT0",
+      "keywords": [
+        "新聞",
+        "即時娛樂新聞",
+        "韓星",
+        "藝人",
+        "香港新聞",
+        "即時娛樂",
+        "hk01",
+        "明星",
+        "娛樂新聞",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "940d355e5e1e3eb9b3cfcf58b3759cdc",
+      "title": "晨光追擊│「堅先生」一見傾心",
+      "description": "今朝依舊天氣一般,時不時有雨,不過多位騎師現身操馬,出跳馬尚算不少。 「文明戰士」戴頭罩由潘頓跳兩段,回港首課快跳即交出好表現,精神飽滿出腳順滑俐落,馬身已收壯唔肥。「增旺」戴眼罩及頭罩由布文拍伴跳馬跳兩段,原本落後四個馬位,狂追之下終點前落後近一個馬位,衝刺凌厲火力愈來愈旺盛。 「堅先生」戴頭罩由潘頓跳兩段,動作瀟灑,展步俐落神態暢旺,毛色又夠油潤,一見傾心。「騰雲絕影」奧爾民拍「金滙千帥」黃寶",
+      "link": "https://www.stheadline.com/trackwork/3609118/%E6%99%A8%E5%85%89%E8%BF%BD%E6%93%8A%E5%A0%85%E5%85%88%E7%94%9F%E4%B8%80%E8%A6%8B%E5%82%BE%E5%BF%83",
+      "pubDate": "2026-08-28 07:00:15",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ur/sthl_square/dc8c43ae39488ec3a20a5558edbf003a/2026-08/mon_14.JPG",
+      "keywords": [
+        "堅先生",
+        "後無來者",
+        "騰雲絕影",
+        "增旺"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c56271e321deea4237f4109a5c7b40d0",
+      "title": "喝咖啡會胃酸倒流?營養師教3招健康飲 latte加奶算不算空腹?",
+      "description": "早晨習慣來一杯咖啡醒腦,卻總是換來胸口一陣火燒心,或是喉嚨湧上陣陣酸水嗎?對許多每天依賴咖啡的上班族來說,胃食道逆流彷彿是享受香醇的代價。",
+      "link": "https://www.hk01.com/%E6%95%99%E7%85%AE/60365807/%E5%96%9D%E5%92%96%E5%95%A1%E6%9C%83%E8%83%83%E9%85%B8%E5%80%92%E6%B5%81-%E7%87%9F%E9%A4%8A%E5%B8%AB%E6%95%993%E6%8B%9B%E5%81%A5%E5%BA%B7%E9%A3%B2-latte%E5%8A%A0%E5%A5%B6%E7%AE%97%E4%B8%8D%E7%AE%97%E7%A9%BA%E8%85%B9",
+      "pubDate": "2026-08-28 07:00:14",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260616/1143506648636067840520763.jpeg/jSgSVSzPQNF-myjXMeqW3OSTJi9Z-ZwyWirqBFoq6gQ",
+      "keywords": [
+        "新聞",
+        "食譜",
+        "飲食",
+        "兒童疫苗",
+        "消費者委員會",
+        "科興",
+        "吃喝玩樂",
+        "香港新聞",
+        "停學",
+        "天文台",
+        "復必泰",
+        "教育局",
+        "停課",
+        "快速檢測",
+        "hk01",
+        "疫苗安全",
+        "香港01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2712c503804fe8ed6f6181302653dfae",
+      "title": "喝咖啡會胃酸逆流?營養師教3招健康飲用 latte有加奶不算空腹?",
+      "description": "早晨習慣來一杯咖啡醒腦,卻總是換來胸口一陣火燒心,或是喉嚨湧上陣陣酸水嗎?對許多每天依賴咖啡的上班族來說,胃食道逆流彷彿是享受香醇的代價。",
+      "link": "https://www.hk01.com/%E6%95%99%E7%85%AE/60365807/%E5%96%9D%E5%92%96%E5%95%A1%E6%9C%83%E8%83%83%E9%85%B8%E9%80%86%E6%B5%81-%E7%87%9F%E9%A4%8A%E5%B8%AB%E6%95%993%E6%8B%9B%E5%81%A5%E5%BA%B7%E9%A3%B2%E7%94%A8-latte%E6%9C%89%E5%8A%A0%E5%A5%B6%E4%B8%8D%E7%AE%97%E7%A9%BA%E8%85%B9",
+      "pubDate": "2026-08-28 07:00:14",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260616/1143506648636067840520763.jpeg/jSgSVSzPQNF-myjXMeqW3OSTJi9Z-ZwyWirqBFoq6gQ",
+      "keywords": [
+        "兒童疫苗",
+        "停課",
+        "新聞",
+        "消費者委員會",
+        "科興",
+        "快速檢測",
+        "飲食",
+        "疫苗安全",
+        "復必泰",
+        "天文台",
+        "香港新聞",
+        "hk01",
+        "吃喝玩樂",
+        "食譜",
+        "停學",
+        "香港01",
+        "教育局"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "606be038e207eec7cb552293a25b17af",
+      "title": "惠英紅訪問片翻Hit 直斥關詠荷拍攝《苗翠花》不理睬人:覺得佢幾討厭,藐嘴藐舌",
+      "description": "TVB經典劇集《苗翠花》當年大受歡迎,劇中飾演「三姨太」的影后惠英紅與女主角關詠荷擦出無數火花,但原來兩人初次合作時曾有過誤會。近日訪談節目《回到未紅時》片段於網上翻Hit,惠英紅在訪問中,竟當面大爆最初十分討厭關詠荷,更當場指責對方當年「藐嘴藐舌」兼不理人。 惠英紅指責關詠荷不理人 節目中惠英紅被問及對關詠荷的第一印象時,惠英紅毫不掩飾地表示:「我初初識佢呢,我就覺得佢幾討厭!藐嘴藐舌呀,又唔睬",
+      "link": "https://www.stheadline.com/film-drama/3608921/%E6%83%A0%E8%8B%B1%E7%B4%85%E8%A8%AA%E5%95%8F%E7%89%87%E7%BF%BBHit-%E7%9B%B4%E6%96%A5%E9%97%9C%E8%A9%A0%E8%8D%B7%E6%8B%8D%E6%94%9D%E8%8B%97%E7%BF%A0%E8%8A%B1%E4%B8%8D%E7%90%86%E7%9D%AC%E4%BA%BA%E8%A6%BA%E5%BE%97%E4%BD%A2%E5%B9%BE%E8%A8%8E%E5%8E%AD%E8%97%90%E5%98%B4%E8%97%90%E8%88%8C",
+      "pubDate": "2026-08-28 07:00:03",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/645237f7dfbd72c516eef2c685964641/2026-08/Copy_of_KF__128.png",
+      "keywords": [
+        "苗翠花三姨太",
+        "回到未紅時",
+        "藐嘴藐舌",
+        "苗翠花",
+        "無綫訪談節目",
+        "關詠荷",
+        "惠英紅",
+        "影后惠英紅",
+        "關詠荷專訪",
+        "經典港劇"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
     },
     {
       "id": "16418eb94decbe74fa6569a15811bb76",
@@ -5273,29 +6358,6 @@
       "region": "hk"
     },
     {
-      "id": "2403bea89bb506f04eac30b11def6f9f",
-      "title": "特朗普不排除美國加大制裁伊朗會影響中國 暗示或制裁中國銀行業",
-      "description": "美國日前傳出加大對伊朗制裁規模,總統特朗普(Donald Trump,又譯川普)8月27日在白宮被問及會否因這些制裁影響到中國銀行業界時,不排除這種可能",
-      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60384445/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8D%E6%8E%92%E9%99%A4%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%A4%A7%E5%88%B6%E8%A3%81%E4%BC%8A%E6%9C%97%E6%9C%83%E5%BD%B1%E9%9F%BF%E4%B8%AD%E5%9C%8B-%E6%9A%97%E7%A4%BA%E6%88%96%E5%88%B6%E8%A3%81%E4%B8%AD%E5%9C%8B%E9%8A%80%E8%A1%8C%E6%A5%AD",
-      "pubDate": "2026-08-28 01:31:44",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1169939766448230400284719.jpeg/7_x181m7TOtiwWyDRU9cIuDoeEue-KmNcFZPIHBWTyA",
-      "keywords": [
-        "世界新聞",
-        "國際",
-        "國際新聞",
-        "hk01",
-        "環球",
-        "新聞",
-        "香港01"
-      ],
-      "category": [
-        "politics"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "0ceceae4759ba8898abd105955103988",
       "title": "俄烏戰爭 | CIA局長突訪俄惹關注 特朗普:普京不會攻擊北約領土",
       "description": "美國總統特朗普周四表示,他和俄羅斯總統普京進行過很好的交談,認為普京「不會攻擊」北約領土,淡化美國媒體有關華府擔憂俄羅斯可能對歐洲採取軍事行動的報道。克里姆林宮也駁斥美媒指稱俄羅斯可能攻擊北約的報道,形容這種說法是「危言聳聽」。 克宮:「危言聳聽」 美國中央情報局(CIA)局長拉特克利夫(John Ratcliffe)日前突訪莫斯科。美國傳媒報道,這次訪問的目的是要警告俄羅斯不要攻擊北約。《華爾街",
@@ -6674,20 +7736,6 @@
       "region": "hk"
     },
     {
-      "id": "951d4ae555bf09c1d0223625e2c2aca4",
-      "title": "中尼邊境泥石流至少392死逾1400人失蹤 堰塞湖潰泄風險高",
-      "description": "<匯港通訊> 中國與尼泊爾邊境的嚴重泥石流,增至最少392人死亡,超過1400人失蹤,其中尼泊爾一側有389人遇難,910人失蹤,包括500多名外國遊客,中國西藏吉隆亦有3人遇難,558人失蹤,包括260名外國人。中國自然資源部專家表示,今次泥石流是由尼泊爾境內的高位冰川崩塌引發,高速流動的過程中鏟刮溝道的冰磧物...",
-      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%B0%BC%E9%82%8A%E5%A2%83%E6%B3%A5%E7%9F%B3%E6%B5%81%E8%87%B3%E5%B0%91392%E6%AD%BB%E9%80%BE1400%E4%BA%BA%E5%A4%B1%E8%B9%A4-%E5%A0%B0%E5%A1%9E%E6%B9%96%E6%BD%B0%E6%B3%84%E9%A2%A8%E9%9A%AA%E9%AB%98-225316394.html",
-      "pubDate": "2026-08-27 22:53:16",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "3839c9783e26fac2d20454723e5e4ff4",
       "title": "美媒稱美國“羅斯福”號航母將被派往中東",
       "description": "中評社北京8月28日電/新華社綜合報導,美國有線電視新聞網27日援引美國海軍官員的話報導說,美國“西奧多·羅斯福”號航空母艦及5000名艦上官兵將在未來幾周被派往中東地區,接替“華盛頓”號航母,執行至少7個月的部署任務。 報導說,“華盛頓”號航母20日剛剛接替了在海上部署長達200多天的“林肯”號。 另據美國海軍學會新聞網26日報導,自今年2月對伊朗發起軍事行動以來,美國持",
@@ -7612,25 +8660,6 @@
       "region": "hk"
     },
     {
-      "id": "8c405aea350218d521cf0ab29abbd581",
-      "title": "官方樓指上月跌0.5% 連升13月斷纜 首7個月仍升7.3% 業界料大漲小回非樓市轉角",
-      "description": "【明報專訊】本港樓價經過逾一年來大幅反彈後,今年中起樓價出現輕微調整,主要反映6至7月間、即四年一度世界盃前後市况的7月份差餉物業估價署私宅售價指數,最新報321.5點,按月回落約0.46%,結束過去長達13個月連升的局面(見圖)。不過,本月樓市似乎重新起動,全月一手成交大有機會重返逾千宗水平。業界人士普遍認為,樓價指數回落只屬大漲小回,而非出現轉角市,並看好全年樓價仍會上升約一成。",
-      "link": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20260828/s00004/1787848135099/%E5%AE%98%E6%96%B9%E6%A8%93%E6%8C%87%E4%B8%8A%E6%9C%88%E8%B7%8C0-5-%E9%80%A3%E5%8D%8713%E6%9C%88%E6%96%B7%E7%BA%9C-%E9%A6%967%E5%80%8B%E6%9C%88%E4%BB%8D%E5%8D%877-3-%E6%A5%AD%E7%95%8C%E6%96%99%E5%A4%A7%E6%BC%B2%E5%B0%8F%E5%9B%9E%E9%9D%9E%E6%A8%93%E5%B8%82%E8%BD%89%E8%A7%92",
-      "pubDate": "2026-08-27 20:30:00",
-      "source_name": "Ming Pao",
-      "image_url": "https://fs.mingpao.com/pns/20260828/s00072/b3d0b7507a024298b2363def605fc5d6.jpg",
-      "keywords": [
-        "大漲小回",
-        "樓價指數",
-        "差餉物業估價署"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "d3693a3748e245c5617ba943e60e61bf",
       "title": "租金指數上月升0.78% 連升9個月破頂",
       "description": "【明報專訊】相對私宅樓價指數結束過去13個月「連升」格局,受惠暑期租賃旺季,加上內地生及專才持續進入本港,差餉物業估價署7月私宅租金指數最新報207.4點,按月升0.78%,連升9個月,並累升3.75%,再創歷史新高。今年首7個月計,租金指數已累升3.44%。",
@@ -8200,6 +9229,26 @@
         "politics"
       ],
       "region": "hk"
+    },
+    {
+      "id": "100434ad465ea7cc118ce58955d45156",
+      "title": "特朗普放棄伊朗備忘錄,霍爾木茲海峽談判陷僵局,油價風險升溫",
+      "description": "特朗普總統此前在凡爾賽宮簽署的初步協議,由副總統JD萬斯協助談判促成,旨在重開霍爾木茲海峽,並啟動伊朗核計劃談判,以換取制裁鬆綁及德黑蘭獲取其被凍結資產的權利。然而,協議在數週內便宣告破裂,原因是伊朗隨後對船隻發動攻擊,試圖鞏固對該水道的控制權。特朗普其後轉向最大經濟壓力政策,據《華爾街日報》報導,他已對該備忘錄...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BE%E6%A3%84%E4%BC%8A%E6%9C%97%E5%82%99%E5%BF%98%E9%8C%84-%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%AB%87%E5%88%A4%E9%99%B7%E5%83%B5%E5%B1%80-%E6%B2%B9%E5%83%B9%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%BA%AB-191521521.html",
+      "pubDate": "2026-08-27 19:15:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4S17S_M.jpg",
+      "keywords": [
+        "特朗普",
+        "霍爾木茲海峽",
+        "伊朗",
+        "諒解備忘錄"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "d850b8a45e97b082c6ad59c580a195ee",
@@ -14285,6 +15334,23 @@
       "region": "hk"
     },
     {
+      "id": "b57380b4a66b029db290e637b777aa92",
+      "title": "國壽(02628)中期純利升2.29倍至1344.9億人幣,派息35.8分人幣",
+      "description": "《經濟通通訊社27日專訊》國壽(02628)公布,截至2026年6月30日止中期 純利1344.89億元(人民幣.下同),按年升2.29倍;每股基本盈利4.76元,派 發中期息35.8分。 期內收入4345.63億元,升81.5%。 期內保險業務再攀新高,新單保費達1800.39億元,按年增長11.6%;總保費達 5366.34億元。上半年新業務價值達381.67億元,在上年同期",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360827492",
+      "pubDate": "2026-08-27 08:57:00",
+      "source_name": "Etnet",
+      "image_url": "https://www.etnet.com.hk/www/tc/common/images/etnet_logo_fb.jpg",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "cf9d383a030ea2e0e239d506a059c2cb",
       "title": "美國|CIA局長突訪俄羅斯 美媒:警告勿攻擊北約國家",
       "description": "美國媒體報道,中央情報局(CIA)局長拉特克利夫(John Ratcliffe)本周突然訪問俄羅斯,被指目的是警告對方不要攻擊北約(NATO)成員國。特朗普|不急與伊朗重啟談判 卡塔爾續斡旋《華爾街日...",
@@ -18791,6 +19857,42 @@
         "politics"
       ],
       "region": "hk"
+    },
+    {
+      "id": "26485ea63e726337ddeeaffd3bf094d8",
+      "title": "《港樓》差估署:本港7月私宅售價指數自近三年高位回落0.46% 連升13個月斷纜 租金指數續創新高",
+      "description": "差估署公布,本港7月私宅售價指數自近三年高位回落0.46%,至321.5,十三個月升勢斷纜。本年首七個月累升7.3%,但較2025年3月所創逾八年低位仍高出12.8%。 實用面積100平方米以下的中小型單位,售價指數按月跌0.46%,本年首七個月累升7.4%。實用面積100平方米或以上大型單位,售價指數按月跌0....",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B7%AE%E4%BC%B0%E7%BD%B2-%E6%9C%AC%E6%B8%AF7%E6%9C%88%E7%A7%81%E5%AE%85%E5%94%AE%E5%83%B9%E6%8C%87%E6%95%B8%E8%87%AA%E8%BF%91%E4%B8%89%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%9B%9E%E8%90%BD0-46-%E9%80%A3%E5%8D%8713%E5%80%8B%E6%9C%88%E6%96%B7%E7%BA%9C-025726790.html",
+      "pubDate": "2026-08-27 02:57:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "retirement",
+        "business",
+        "401k",
+        "investment tools",
+        "business news",
+        "stock",
+        "quote",
+        "investor",
+        "stocks",
+        "finance",
+        "economy",
+        "market news",
+        "personal finance",
+        "suze orman",
+        "stock research",
+        "tax",
+        "mortgage",
+        "real estate",
+        "track portfolio",
+        "financial information"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "369482d80b42734949a0278ec4d20523",
@@ -250864,6 +251966,6 @@
       "pinned": true
     }
   ],
-  "total": 12728,
-  "last_updated": "2026-08-29T03:09:26.789216"
+  "total": 12781,
+  "last_updated": "2026-08-29T04:08:14.285921"
 }
