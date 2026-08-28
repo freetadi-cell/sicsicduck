@@ -1,7 +1,839 @@
 {
-  "last_updated": "2026-08-28T08:14:53.677590",
-  "total": 12151,
   "articles": [
+    {
+      "id": "07bcbfdf0db65fda8ea18f8543966d16",
+      "title": "堪薩斯城聯儲主席施密德:利率未限制經濟,暗示支持加息",
+      "description": "Investing.com - 堪薩斯城聯邦儲備銀行行長傑弗里·施密德(Jeffrey Schmid)週四表示,當前利率水平並未對經濟構成限制,暗示他仍支持進一步加息,以將通膨率拉回2%的目標水準。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A0%AA%E8%96%A9%E6%96%AF%E5%9F%8E%E8%81%AF%E5%84%B2%E4%B8%BB%E5%B8%AD%E6%96%BD%E5%AF%86%E5%BE%B7-%E5%88%A9%E7%8E%87%E6%9C%AA%E9%99%90%E5%88%B6%E7%B6%93%E6%BF%9F-%E6%9A%97%E7%A4%BA%E6%94%AF%E6%8C%81%E5%8A%A0%E6%81%AF-125215008.html",
+      "pubDate": "2026-08-27 12:52:15",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4P15W_M.jpg",
+      "keywords": [
+        "聯準會",
+        "jeffrey schmid",
+        "堪薩斯",
+        "施密德",
+        "聯邦儲備銀行"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "26485ea63e726337ddeeaffd3bf094d8",
+      "title": "《港樓》差估署:本港7月私宅售價指數自近三年高位回落0.46% 連升13個月斷纜 租金指數續創新高",
+      "description": "差估署公布,本港7月私宅售價指數自近三年高位回落0.46%,至321.5,十三個月升勢斷纜。本年首七個月累升7.3%,但較2025年3月所創逾八年低位仍高出12.8%。 實用面積100平方米以下的中小型單位,售價指數按月跌0.46%,本年首七個月累升7.4%。實用面積100平方米或以上大型單位,售價指數按月跌0....",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B7%AE%E4%BC%B0%E7%BD%B2-%E6%9C%AC%E6%B8%AF7%E6%9C%88%E7%A7%81%E5%AE%85%E5%94%AE%E5%83%B9%E6%8C%87%E6%95%B8%E8%87%AA%E8%BF%91%E4%B8%89%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%9B%9E%E8%90%BD0-46-%E9%80%A3%E5%8D%8713%E5%80%8B%E6%9C%88%E6%96%B7%E7%BA%9C-025726790.html",
+      "pubDate": "2026-08-27 02:57:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "retirement",
+        "business",
+        "401k",
+        "investment tools",
+        "business news",
+        "stock",
+        "quote",
+        "investor",
+        "stocks",
+        "finance",
+        "economy",
+        "market news",
+        "personal finance",
+        "suze orman",
+        "stock research",
+        "tax",
+        "mortgage",
+        "real estate",
+        "track portfolio",
+        "financial information"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "2b0bc49a0af9e3628f66f4fba1e05db1",
+      "title": "永利澳門(01128)中期純利15.46億港元升570.55% 派息22.3港仙",
+      "description": "<匯港通訊> 永利澳門有限公司(01128)公布截至2026年6月30日止中期業績:股東應佔溢利: 15.46億港元, 同比升 570.55% (去年同期純利2.31億港元)每股盈利: 0.3港元中期息: 0.223港元(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B0%B8%E5%88%A9%E6%BE%B3%E9%96%80-01128-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A915-46%E5%84%84%E6%B8%AF%E5%85%83%E5%8D%87570-55-125456032.html",
+      "pubDate": "2026-08-27 12:54:56",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "永利澳門有限公司"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "a127852ab47bb5f0b87cac9514ffc261",
+      "title": "普丁據悉準備升級對烏克蘭的戰爭 俄羅斯官員愈發認為最終恐動用核武",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E6%99%AE%E4%B8%81%E6%93%9A%E6%82%89%E6%BA%96%E5%82%99%E5%8D%87%E7%B4%9A%E5%B0%8D%E7%83%8F%E5%85%8B%E8%98%AD%E7%9A%84%E6%88%B0%E7%88%AD-%E4%BF%84%E7%BE%85%E6%96%AF%E5%AE%98%E5%93%A1%E6%84%88%E7%99%BC%E8%AA%8D%E7%82%BA%E6%9C%80%E7%B5%82%E6%81%90%E5%8B%95%E7%94%A8%E6%A0%B8%E6%AD%A6-163421233.html",
+      "pubDate": "2026-08-26 16:34:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/3786fa9b45c7e54635d87adebbce5b8b.jpg",
+      "keywords": [
+        "俄羅斯",
+        "普丁",
+        "烏克蘭",
+        "莫斯科",
+        "克里姆林宮"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "59c8305a3c021aceb9fc163488cd9118",
+      "title": "向太認慈母多敗兒揭「斷聯向佑」內幕 因向華強不准打罵兒子導致難管教",
+      "description": "影視大亨向華強與太太陳嵐(向太)近年大方公開家事,曾提到對細仔向佑恨鐵不成鋼,二人已打算將遺產將全數交由兒媳郭碧婷管理。最近向佐頻頻發話,為弟弟向佑發聲,而且協助向佑與父母修補關係。向太近日亮相內地節目《陳魯豫慢談》訪問,爆料指細仔向佑不聽勸,與昔日向華強因寵溺兒子不准打罵有關。 向太自認慈母多敗兒 向太提到與兩子向佐、向佑的親子關係,面對細仔甚少來往,向太直言打擊不大,反而大嘆自己是「慈母多敗兒",
+      "link": "https://www.stheadline.com/film-drama/3608881/%E5%90%91%E5%A4%AA%E8%AA%8D%E6%85%88%E6%AF%8D%E5%A4%9A%E6%95%97%E5%85%92%E6%8F%AD%E6%96%B7%E8%81%AF%E5%90%91%E4%BD%91%E5%85%A7%E5%B9%95-%E5%9B%A0%E5%90%91%E8%8F%AF%E5%BC%B7%E4%B8%8D%E5%87%86%E6%89%93%E7%BD%B5%E5%85%92%E5%AD%90%E5%B0%8E%E8%87%B4%E9%9B%A3%E7%AE%A1%E6%95%99",
+      "pubDate": "2026-08-27 13:00:00",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/8fae4601291a12119ae667cb22efdeec/2026-08/KF_172.jpg",
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9c6373bcbb0c14e922db864cd2a01945",
+      "title": "嗶哩嗶哩(09626)第二財季經調整盈利按年增25%",
+      "description": "<匯港通訊> 嗶哩嗶哩(09626.HK/BILI.US)第二財季多賺56.95%至3.44億元人民幣(下同),每股盈利0.82元。期內經調整淨利潤7.04億元,按年增加25%。淨營業額總額79.4億元,按年升8.21%。廣告營業額31.3億元,增加28%,主要由於廣告產品供應改善及廣告效益提升所致。增值服務營業...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9-09626-%E7%AC%AC%E4%BA%8C%E8%B2%A1%E5%AD%A3%E7%B6%93%E8%AA%BF%E6%95%B4%E7%9B%88%E5%88%A9%E6%8C%89%E5%B9%B4%E5%A2%9E25-125945418.html",
+      "pubDate": "2026-08-27 12:59:45",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a9b1a178688724c4c903606c86cd15ce",
+      "title": "王氏國際(00099)中期虧轉盈賺5040萬港元 派息2.5港仙",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E7%8E%8B%E6%B0%8F%E5%9C%8B%E9%9A%9B-00099-%E4%B8%AD%E6%9C%9F%E8%99%A7%E8%BD%89%E7%9B%88%E8%B3%BA5040%E8%90%AC%E6%B8%AF%E5%85%83-%E6%B4%BE%E6%81%AF2-5%E6%B8%AF%E4%BB%99-125933506.html",
+      "pubDate": "2026-08-27 12:59:33",
+      "source_name": "Yahoo Finance",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "88ca0cf2fc16d318c792cb66ea85c728",
+      "title": "美國防部高層「七國咁亂」 赫格塞斯職位恐不保 3大「罪狀」失特朗普歡心",
+      "description": "《孫子兵法》有一段講軍事領導,十分精警:「不知三軍之事而同三軍之政,則軍士惑矣。」意即不懂軍隊事務,而強行插手干預,則令將士迷惑,結果是「亂軍引勝」,自亂陣腳而喪失勝利。美國國防部長赫格塞斯正正犯了這兵法大忌,《紐約時報》今日報導,他重手清洗將領,令軍隊領導千瘡百孔,群龍無首,加上內鬥頻仍,搞到「七國咁亂」。早前有消息指,國防部一團糟,攻伊戰事又陷入僵局,特朗普對他越來越不滿,地位岌岌可危,被炒機會甚大。政治上,特老闆亦需在中期選舉前找一隻「代罪羊」,若如此,「赫仔」應是首選。 赫格塞斯本來只是電視台名嘴,雖當過兵幾年,但只屬中下層,管理軍隊經驗入限,全因獲特老闆賞識,才搖身一變成為國防部長。若他EQ夠高,入主後應與高級將領好好合作,先鞏固自己地位,但他本性狂妄,就任後即在國防部四處樹敵,排擠異己,連高級將領都不能倖免,同時全面清洗「意識形態」不同的高層官員,紛紛被整走。 《紐約時報》指,一番大整肅後,軍隊領導層被搞到零星落索,其中一個被砍的重要人物,是陸軍參謀長喬治上將,因老將軍德高望重,敢逆部長之意,令赫格塞斯極感不爽,今年4月突然手起刀落,將其炒魷。 其後,他把3名有資格接替喬治將軍的將領整走,提拔自己的心腹、前高级軍事助理拉內夫,暫代陸軍參謀長之職。不過因國會反對此人坐正,特朗普又不置可否,這個位至今仍然半懸空。 國防部另一重要人物、陸軍部長德里斯科,也因與赫格塞斯長期不和,加上曾被視為國防部長人選,惹來老闆猜忌,故亦黯然引退,準備於年底前離職。他與喬治將軍一直策劃改革陸軍,如今兩人相繼被整走,計劃亦告擱置。 《紐時》翻查近年國防部人事變動資料,發現赫格塞斯掌權之初,軍隊共有10名四星將軍,但到最近,已削到只有5名。因高層將領不足,一些特別計劃的領導已懸空多月,負責駐歐洲軍務的將領唐納休亦於7月退休,仍未有適當人選接上。 赫格塞斯把國防部搞到亂七八糟,提携他的特朗普看在眼裏,亦開始不悦,特別是陸軍部長德里斯科被迫走,更令他感到可惜,因他向來器重此人,曾說過「這種人才是最棒的」,故對赫格塞斯為了權鬥排擠叻人,很不以為然。 這只是特朗普心目中的「罪行」之一,他曾就幾件事對赫格塞斯表示不滿,1是早前他在大衛營一次內部會議中,在團隊其他成員面前,直指赫格塞斯在導彈庫存問題上誤導他,令他錯估形勢。對老闆而言,虚報軍情並非輕罪,遲早要算賬。 2是他在一次記者會上,當眾指着赫格塞斯說,「是這個人叫我攻打伊朗的」。他雖沒詳細說明,但意思很清楚,就是赫格塞斯聳擁他開戰,卻無策略應對隨之出現的不利情況,結果目標不達,反而陷入僵局,赫格塞斯須對這「爛尾局」負一定責任。 3是最近航母「林肯」号爆出醜聞,水兵竟在海上苦熬250天,過着地獄般生活,此事令美國軍隊蒙羞,更在國會被民主黨追擊,極不利中期選舉選情,特朗普當然也會把賬算在赫格塞斯身上。 《南華早報》早前報道,根據各方可靠消息,特朗普正考慮撤換赫格塞斯,其職位料將不保。這情況發生的可能性的確很高,正如復旦大學國際問題研究院教授趙明明昊所講,國會中期選舉前內閣改組是常態,「有人要為伊戰僵局扛下責任」。 那人當然不會是特朗普自己,如果他要找人孭黑鑊,首選必是赫格塞斯了。",
+      "link": "https://www.bastillepost.com/hongkong/article/16653202-%E7%BE%8E%E5%9C%8B%E9%98%B2%E9%83%A8%E9%AB%98%E5%B1%A4%E3%80%8C%E4%B8%83%E5%9C%8B%E5%92%81%E4%BA%82%E3%80%8D-%E8%B5%AB%E6%A0%BC%E5%A1%9E%E6%96%AF%E8%81%B7%E4%BD%8D%E6%81%90%E4%B8%8D%E4%BF%9D-3",
+      "pubDate": "2026-08-27 12:58:56",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/cropped-image-1777468516-18.jpg",
+      "keywords": [
+        "時人物語",
+        "博客焦點",
+        "博客文章"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "42aef83b4cf9d6a6e0b5f460eeca0981",
+      "title": "富通科技(00465)中期虧損擴大至3484萬元人民幣 不派息",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/%E5%AF%8C%E9%80%9A%E7%A7%91%E6%8A%80-00465-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7%E8%87%B33484%E8%90%AC%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3-%E4%B8%8D%E6%B4%BE%E6%81%AF-125818766.html",
+      "pubDate": "2026-08-27 12:58:18",
+      "source_name": "Yahoo Finance",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "212f61ee5d0b0ac351a9106b81ef077b",
+      "title": "利華高域入「塞」當後備門將",
+      "description": "【Now Sports】巴塞隆拿宣佈從費倫巴治簽入31歲門將利華高域,雙方簽約至2030年6月。巴塞隆拿周四發聲明,宣佈簽入門將利華高域(Dominik Livakovic):「巴塞隆拿與費倫巴治就利華高域的轉會達成協議。這位克羅地亞門將簽約效力4季,至2030年6月30日止。」據了解,巴塞原先計劃是簽入利華高域...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%88%A9%E8%8F%AF%E9%AB%98%E5%9F%9F%E5%85%A5-%E5%A1%9E-%E7%95%B6%E5%BE%8C%E5%82%99%E9%96%80%E5%B0%87-125736473.html",
+      "pubDate": "2026-08-27 12:57:36",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "巴塞隆拿",
+        "克羅地亞",
+        "費倫巴治",
+        "利華高域",
+        "dominik livakovic",
+        "施贊斯尼",
+        "門將"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4ab383a1a5020a2a494057b3a4180433",
+      "title": "四川成渝高速公路(00107)中期賺9.01億人民幣升1.96% 不派息",
+      "description": "<匯港通訊> 四川成渝高速公路股份有限公司(00107)公布截至2026年6月30日止中期業績:股東應佔溢利: 9.01億元人民幣, 同比升 1.96% (去年同期純利8.83億元人民幣)每股盈利: 0.28元人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E5%9B%9B%E5%B7%9D%E6%88%90%E6%B8%9D%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF-00107-%E4%B8%AD%E6%9C%9F%E8%B3%BA9-01%E5%84%84%E4%BA%BA%E6%B0%91%E5%B9%A3%E5%8D%871-96-125723539.html",
+      "pubDate": "2026-08-27 12:57:23",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "四川成渝高速公路股份有限公司",
+        "人民幣",
+        "<匯港通訊"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "80d00d818782d697ea8ce958b55bfd50",
+      "title": "納入DAX指數未必帶來預期漲幅,德意志銀行深度分析",
+      "description": "Investing.com - 德意志銀行分析師在DAX指數9月審核前發出警示:被納入德國藍籌DAX指數,未必能為股價帶來投資者所預期的提振效果。",
+      "link": "https://hk.finance.yahoo.com/news/%E7%B4%8D%E5%85%A5dax%E6%8C%87%E6%95%B8%E6%9C%AA%E5%BF%85%E5%B8%B6%E4%BE%86%E9%A0%90%E6%9C%9F%E6%BC%B2%E5%B9%85-%E5%BE%B7%E6%84%8F%E5%BF%97%E9%8A%80%E8%A1%8C%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90-125606468.html",
+      "pubDate": "2026-08-27 12:56:06",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA9Q076_M.jpg",
+      "keywords": [
+        "德意志銀行",
+        "漢莎航空",
+        "dax指數",
+        "分析師"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "21e365dbca5aa234f45b2e1db77e1e4b",
+      "title": "大宗商品的下一個投資機會在哪裡?",
+      "description": "Investing.com - 瑞銀(UBS)週四在一份研究報告中指出,大宗商品的投資價值遠不止於能源領域,工業金屬、農業商品及黃金同樣具備可觀的回報潛力,並可作為對抗通膨的有效工具。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E5%AE%97%E5%95%86%E5%93%81%E7%9A%84%E4%B8%8B-%E5%80%8B%E6%8A%95%E8%B3%87%E6%A9%9F%E6%9C%83%E5%9C%A8%E5%93%AA%E8%A3%A1-125458687.html",
+      "pubDate": "2026-08-27 12:54:58",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM5B1RH_M.jpg",
+      "keywords": [
+        "瑞銀"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f522ae4aecb3a387a9544895eb8cac6e",
+      "title": "萬科企業(02202)中期虧損擴大至149.51億元人民幣 不派息",
+      "description": "<匯港通訊> 萬科企業股份有限公司(02202)公布截至2026年6月30日止中期業績:股東應佔虧損: 149.51億元人民幣, 虧損擴大 (去年同期虧損119.47億元人民幣)每股虧損: 1.25元人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E8%90%AC%E7%A7%91%E4%BC%81%E6%A5%AD-02202-%E4%B8%AD%E6%9C%9F%E8%99%A7%E6%90%8D%E6%93%B4%E5%A4%A7%E8%87%B3149-51%E5%84%84%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3-%E4%B8%8D%E6%B4%BE%E6%81%AF-125326469.html",
+      "pubDate": "2026-08-27 12:53:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "人民幣",
+        "萬科企業",
+        "股份有限公司"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d4590b342e139ee43625e2bfb34fe1a5",
+      "title": "東光化工(01702)中期純利1.12億元人民幣升55% 不派息",
+      "description": "<匯港通訊> 東光化工有限公司(01702)公布截至2026年6月30日止中期業績:股東應佔溢利: 1.12億元人民幣, 同比升 55% (去年同期純利7231.8萬元人民幣)每股盈利: 18.1分人民幣派息: 無(WH)",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9D%B1%E5%85%89%E5%8C%96%E5%B7%A5-01702-%E4%B8%AD%E6%9C%9F%E7%B4%94%E5%88%A91-12%E5%84%84%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3%E5%8D%8755-%E4%B8%8D%E6%B4%BE%E6%81%AF-125211593.html",
+      "pubDate": "2026-08-27 12:52:11",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "人民幣"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "57e2de132e8534b655a196999f8c96c4",
+      "title": "菲律賓金融科技公司Mynt旗下GStocks發展為菲律賓本土股票市場最大線上散戶交易平台",
+      "description": "菲律賓馬尼拉2026年8月27日 /美通社/ -- Mynt是菲律賓頭部金融超級應用GCash的母公司。除了在公共交通、線上線下無現金消費、個人轉賬等場景提供便捷的數字支付服務之外,該公司也正通過旗下財富科技平台,降低菲律賓民眾參與投資的門檻。 GStocks PH依托券商AB Capital Securities Inc.開展業務,目前服務超200萬菲律賓用戶,在菲律賓證券交易所(PSE)的全部線上散戶股票賬戶中占比超過50%,進一步鞏固了GCash作為菲律賓本土股票投資領域規模最大線上散戶平台的地位。...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/myntgstocks-302861839.html",
+      "pubDate": "2026-08-27 12:50:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1976797/20260827024148EDT_image_1.jpg?id=OA2916238&p=original",
+      "keywords": [
+        "pdt"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "59069f7e98aab81030756a7272c9ad33",
+      "title": "伊朗陸軍發言人:所有武器系統已完成重建",
+      "description": "中評社北京8月27日電/央視新聞報導,據伊朗方面消息,伊朗陸軍發言人穆罕默德·阿克拉米尼亞當地時間8月26日表示,伊朗軍隊所有的武器系統,包括此前遭到破壞的武器系統,都已經重建。同時,伊朗還從國外進口了新的武器系統。 阿克拉米尼亞表示,伊朗在重建和重新部署遭到破壞的武器系統方面採取了認真的措施,這些武器系統增強了伊朗的作戰能力。",
+      "link": "http://www.crntt.com/doc/7_0_107228430_1_0827205000.html",
+      "pubDate": "2026-08-27 12:50:00",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/27/107228433.jpg",
+      "keywords": [
+        "伊朗軍隊"
+      ],
+      "category": [
+        "top",
+        "politics",
+        "crime"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9b111df477848356c50982866f920f37",
+      "title": "Biosidus 擴充生物製劑生產能力,並強化阿加糖酶β的全球供應能力",
+      "description": "阿根廷布宜諾斯艾利斯2026年8月27日 /美通社/ -- 擁有超過四十年生物相似藥研發與製造經驗的阿根廷生物科技公司 Biosidus,宣佈其新建的生物反應器廠房現已投入運作,此舉不僅提升了該公司的生物製劑生產能力,更強化了其滿足潛在國際市場需求的能力。 此次擴張強化了 Biosidus 的產業平台,正值各醫療體系日益重視製造可靠性、治療的連續性,以及複雜生物製劑的多樣化供應來源之際。 由阿根廷研發及製造的 Biosidus 阿加糖酶β (agalsidase...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/biosidus--302861836.html",
+      "pubDate": "2026-08-27 12:47:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1976323/shutterstock_2117314604.jpg?id=OA2916182&p=original",
+      "keywords": [
+        "tri",
+        "cxp"
+      ],
+      "category": [
+        "technology",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "57f5f580fed7899e7a7800af6b12e97f",
+      "title": "香港如何製造多一個黃澤林? 網總倡重建維園 冀成華南網球之都",
+      "description": "網球一直是香港其中一個最熱門消閒運動,近年以黃澤林(Coleman)、張瑋桓(Eudice)為首一班職業球手在國際賽場屢創香港網球歷史新一頁,加上已重",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60384239/%E9%A6%99%E6%B8%AF%E5%A6%82%E4%BD%95%E8%A3%BD%E9%80%A0%E5%A4%9A%E4%B8%80%E5%80%8B%E9%BB%83%E6%BE%A4%E6%9E%97-%E7%B6%B2%E7%B8%BD%E5%80%A1%E9%87%8D%E5%BB%BA%E7%B6%AD%E5%9C%92-%E5%86%80%E6%88%90%E8%8F%AF%E5%8D%97%E7%B6%B2%E7%90%83%E4%B9%8B%E9%83%BD",
+      "pubDate": "2026-08-27 12:46:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169694073661952000814362.jpeg/pDomLR-iMNqNzisydp4X8SnR8yGnbtsa34QRXvWEEV4",
+      "keywords": [
+        "新聞",
+        "籃球",
+        "體育",
+        "香港新聞",
+        "網球",
+        "nba",
+        "體育消息",
+        "體育新聞",
+        "高爾夫球",
+        "f1賽車",
+        "hk01",
+        "香港01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ab435fdb232cff9893579f8281bdb952",
+      "title": "網總專訪1—如何製造多一個黃澤林?倡重建維園 冀成華南網球之都",
+      "description": "網球一直是香港其中一個最熱門消閒運動,近年以黃澤林(Coleman)、張瑋桓(Eudice)為首一班職業球手在國際賽場屢創香港網球歷史新一頁,加上已重",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60384239/%E7%B6%B2%E7%B8%BD%E5%B0%88%E8%A8%AA1-%E5%A6%82%E4%BD%95%E8%A3%BD%E9%80%A0%E5%A4%9A%E4%B8%80%E5%80%8B%E9%BB%83%E6%BE%A4%E6%9E%97-%E5%80%A1%E9%87%8D%E5%BB%BA%E7%B6%AD%E5%9C%92-%E5%86%80%E6%88%90%E8%8F%AF%E5%8D%97%E7%B6%B2%E7%90%83%E4%B9%8B%E9%83%BD",
+      "pubDate": "2026-08-27 12:46:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169694073661952000814362.jpeg/pDomLR-iMNqNzisydp4X8SnR8yGnbtsa34QRXvWEEV4",
+      "keywords": [
+        "新聞",
+        "籃球",
+        "體育",
+        "香港新聞",
+        "網球",
+        "nba",
+        "體育消息",
+        "體育新聞",
+        "高爾夫球",
+        "f1賽車",
+        "hk01",
+        "香港01"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "08b056796e547845ed2a672b94339207",
+      "title": "84歲盧海鵬9月開騷!靠周潤發教慢跑呼吸法甩三高+降血糖5食物",
+      "description": "盧海鵬|糖尿病症狀|現年84歲的盧海鵬(鵬哥),近年飽受糖尿病困擾,早前更被拍到身形消瘦,走路都需要人扶。不過他近日拍片宣佈重返舞台開演唱",
+      "link": "https://www.hk01.com/%E6%95%99%E7%85%AE/60384256/84%E6%AD%B2%E7%9B%A7%E6%B5%B7%E9%B5%AC9%E6%9C%88%E9%96%8B%E9%A8%B7-%E9%9D%A0%E5%91%A8%E6%BD%A4%E7%99%BC%E6%95%99%E6%85%A2%E8%B7%91%E5%91%BC%E5%90%B8%E6%B3%95%E7%94%A9%E4%B8%89%E9%AB%98-%E9%99%8D%E8%A1%80%E7%B3%965%E9%A3%9F%E7%89%A9",
+      "pubDate": "2026-08-27 12:38:06",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169746456110698496645213.jpeg/eA3x3zIRM4hEUA32yzVujQb5frhrdIg7CPpTXQj6U10",
+      "keywords": [
+        "新聞",
+        "食譜",
+        "飲食",
+        "兒童疫苗",
+        "消費者委員會",
+        "科興",
+        "吃喝玩樂",
+        "香港新聞",
+        "停學",
+        "天文台",
+        "復必泰",
+        "教育局",
+        "停課",
+        "快速檢測",
+        "hk01",
+        "疫苗安全",
+        "香港01"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "842e2eefff0b8a94d93e0cfa3f8dab58",
+      "title": "AudienceView擴展與StubHub及viagogo合作 增強門票分銷能力",
+      "description": "AudienceView今日宣布,擴展與StubHub及viagogo的合作夥伴關係,推出全新應用程式介面(API)整合。這次整合將為AudienceView Unlimited客戶提供直接途徑,透過StubHub及viagogo的全球市場分銷官方門票庫存。 這次擴展的整合建基於現有合作關係,將市場平台的使用權擴展至AudienceView Unlimited的客戶,涵蓋藝術及娛樂、體育、表演藝術、高等教育及其他現場活動機構。 這次整合為各機構提供另一種方式,增加其活動的曝光率,並接觸到其直接銷售渠道以外的觀眾,同時繼續使用AudienceView Unlimited作為其主要售票系統。 StubHub開放分銷副總裁肖恩·史超活表示:「我們與AudienceView合作已有一段時間,成果顯著。將這次整合擴展至所有AudienceView Unlimited客戶,意味著更多場地、更多活動及更多粉絲能夠獲得他們原本可能找不到的門票。這正是我們希望繼續建立的合作夥伴關係。」 創造更多活動發掘途徑 購買途徑日益擴展至機構自身網站以外。觀眾透過搜尋引擎、社交媒體、市場平台及其他數碼渠道發掘活動,然後才決定參與哪些活動及在哪裡購票。 透過擴展的開放分銷整合,AudienceView Unlimited客戶可將選定的官方庫存透過StubHub及viagogo提供,為觀眾發掘及購買門票創造另一個機會。 客戶繼續透過AudienceView Unlimited管理其活動及售票營運,同時保持對其庫存、定價及客戶策略的控制。 AudienceView首席營收官史提夫·鮑姆加特納表示:「每個場地都有其獨特的觀眾策略,我們能做的最有力的事,就是讓他們在接觸購票者方面有更多選擇。這次整合讓我們的客戶靈活決定何時及如何透過StubHub及viagogo提供官方庫存,同時將AudienceView Unlimited置於其售票營運的核心。這關乎擴展發掘途徑,而非剝奪場地的控制權。」 擴展覆蓋範圍同時保持控制 這次整合將StubHub及viagogo增設為額外分銷渠道,而非取代機構現有的售票基礎設施。 客戶決定他們希望提供哪些庫存,而購票者則可透過StubHub及viagogo發掘及購買該庫存。訂單及門票履行透過這次整合連接回AudienceView Unlimited。 透過擴展官方庫存的發掘地點,AudienceView為現場活動機構提供另一種方式,增加曝光率、接觸新觀眾,並將更多需求轉化為實際入場人數。 這次擴展的開放分銷整合,是AudienceView持續專注於創造更緊密發掘至購買途徑的一部分,為觀眾提供更多機會尋找他們喜愛的體驗,同時協助機構保持對其售票及觀眾策略的控制。 AudienceView是一個統一活動商務平台,連接現場活動旅程中的觀眾、營運及互動。AudienceView旗下公司在全球擁有超300名員工,服務超3,000個機構,年度交易額超33億美元,為表演藝術機構、體育項目、高等教育機構、現場音樂場地、展覽會、節日、牛仔競技、景點及旅遊目的地場地提供售票、支付、數碼營銷、觀眾互動及活動營運解決方案。 StubHub是一個領先的全球現場活動門票市場平台。透過StubHub及其國際品牌viagogo,該公司服務超200個國家及地區的客戶,支援超30種語言,並接受超45種貨幣支付,涵蓋體育、音樂、喜劇、舞蹈、節日以至戲劇等各類活動。StubHub提供安全便捷的方式,讓全球客戶購買或出售現場活動門票,以獲得難忘的現場體驗。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16653140-audienceview%E6%93%B4%E5%B1%95%E8%88%87stubhub%E5%8F%8Aviagogo%E5%90%88%E4%BD%9C-%E5%A2%9E%E5%BC%B7%E9%96%80%E7%A5%A8%E5%88%86%E9%8A%B7%E8%83%BD%E5%8A%9B",
+      "pubDate": "2026-08-27 12:32:07",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/10ed057e17114793b64af8eb1ccc0e39_AudienceView_StubHub_viagogo_FB.jpg",
+      "keywords": [
+        "門票分銷",
+        "viagogo",
+        "api整合",
+        "商業事",
+        "audienceview",
+        "stubhub"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a7ea063d36d5ec4eb3b2d6d372f2ac85",
+      "title": "皮膚紅疹,濕疹定乾癬搞錯?",
+      "description": "皮膚紅腫痕癢,以為濕疹,搽類固醇。但若紅疹邊界清晰、銀白厚鱗,可能係銀屑病(乾癬),類固醇短期紓緩但停藥反彈更勁,甚至轉為膿皰型。 濕疹(異位性皮炎)係皮膚屏障缺陷,過敏原或刺激物滲入,致發炎。特徵:邊界模糊、滲液結痂、劇癢、對稱分布、常見於屈曲位(手肘內側、膝後)。銀屑病則係自體免疫,T細胞攻擊皮膚,細胞更新加速。特徵:邊界清晰、紅斑上覆銀白色厚鱗、Auspitz徵象(刮除鱗屑見點狀出血)、常見於伸側(手肘外側、膝蓋前)、頭皮、指甲點狀凹陷。 更弊係誤治。濕疹用類固醇、保濕、避開致敏原。銀屑病雖可用類固醇,但需配合維他命D衍生物、光療或生物製劑。單純長期類固醇,停藥後反彈,甚至誘發膿皰型銀屑病,全身紅皮。 分辨要點:濕疹邊界模糊、滲液、屈曲位;銀屑病邊界清晰、厚鱗、伸側、指甲改變。家族史有幫助,銀屑病約30%有家族史。 治療:濕疹用潤膚霜、局部類固醇、鈣調神經磷酸酶抑制劑。銀屑病輕度用局部藥,中度照UVB,重度生物製劑(如抗TNF、抗IL-17)。兩者皆可伴隨關節炎,要留意。紅疹唔一定係濕疹,睇清楚邊界同鱗屑,先至搽啱藥。",
+      "link": "https://www.bastillepost.com/hongkong/article/16563177-%E7%9A%AE%E8%86%9A%E7%B4%85%E7%96%B9%EF%BC%8C%E6%BF%95%E7%96%B9%E5%AE%9A%E4%B9%BE%E7%99%AC%E6%90%9E%E9%8C%AF%EF%BC%9F",
+      "pubDate": "2026-08-27 12:31:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/E79AAEE8869AE7B485E796B9EFBC8CE6BF95E796B9E5AE9AE4B9BEE799ACE6909EE98CAFEFBC9F.jpg",
+      "keywords": [
+        "博客文章"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cb5f727301690d1a08b88f9d15aef7b4",
+      "title": "Bruno Mars明年啟德開騷連唱四場 鄭裕玲遠赴紐約專訪獲贈紅玫瑰",
+      "description": "國際樂壇天王Bruno Mars正式宣布,將於2027年5月登陸香港啟德體育園主場館,舉行一連四場《The Romantic Tour》巡迴演唱會。主辦單位Live Nation H",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384257/bruno-mars%E6%98%8E%E5%B9%B4%E5%95%9F%E5%BE%B7%E9%96%8B%E9%A8%B7%E9%80%A3%E5%94%B1%E5%9B%9B%E5%A0%B4-%E9%84%AD%E8%A3%95%E7%8E%B2%E9%81%A0%E8%B5%B4%E7%B4%90%E7%B4%84%E5%B0%88%E8%A8%AA%E7%8D%B2%E8%B4%88%E7%B4%85%E7%8E%AB%E7%91%B0",
+      "pubDate": "2026-08-27 12:30:04",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169674642760142848906471.jpeg/_UdF0HsE8HgLA5TrAxYa-PcjTEw65Jho_CA7I_wgOyM",
+      "keywords": [
+        "新聞",
+        "明星",
+        "娛樂新聞",
+        "藝人",
+        "香港新聞",
+        "即時娛樂",
+        "韓星",
+        "hk01",
+        "即時娛樂新聞",
+        "香港01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "30f1850403d4daabcab1c8bc7031edd8",
+      "title": "莊思敏丁母憂 莊思明感謝媽咪臨終前硬撐出席婚禮",
+      "description": "莊氏三姊妹分別透過社交網公布母親死訊,並貼出昔日跟媽媽的合照悼念,莊思敏寫道:「我們帶着悲傷和不捨通知大家,我們親愛又敬重的媽媽在親友陪伴下離開了我們,完成了她的人生旅程。We will always love you and miss you。」莊母的悼念儀式於本月30日一連三天在吉隆坡富貴生命館舉行,莊思明表示:「請給我和家人們空間和時間,亦請尊重我們媽媽,現階段不便打擾,我們一概不會回應,謝謝體諒!」",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1049887/%E8%8E%8A%E6%80%9D%E6%95%8F%E4%B8%81%E6%AF%8D%E6%86%82-%E8%8E%8A%E6%80%9D%E6%98%8E%E6%84%9F%E8%AC%9D%E5%AA%BD%E5%92%AA%E8%87%A8%E7%B5%82%E5%89%8D%E7%A1%AC%E6%92%90%E5%87%BA%E5%B8%AD%E5%A9%9A%E7%A6%AE",
+      "pubDate": "2026-08-27 12:30:00",
+      "source_name": "Am730",
+      "image_url": "https://cdn3.am730.com.hk/processed/2026-08/1049887/article/1049887/df/01M11J4J1JXPP1NSX55ZXBGDNT.jpg?updatedAt=1787833087",
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a5509eeef45efaf48a13bad2fceab75f",
+      "title": "香山論壇—9月15日至17日北京舉行 聚焦大國關係與太空安全",
+      "description": "國防部27宣布,,第13屆北京香山論壇將於9月15日至17日,在北京國際會議中心舉行,主題為「凝聚穩定共識、同促安全治理」。今年適逢北京香山論壇創立20周年,會聚焦於大國關係、局部衝突、太空安全等議題。 國防部發言人張曉剛大校在例行記者會宣布論壇的召開。他指,今屆將安排4場全體會議與8場平行分組會議,聚焦大國關係、局部衝突、海上通道安全、新興技術軍事應用風險及太空安全等熱點議題,期間也會舉辦第四屆",
+      "link": "https://www.stheadline.com/china-politics/3608900/%E9%A6%99%E5%B1%B1%E8%AB%96%E5%A3%879%E6%9C%8815%E6%97%A5%E8%87%B317%E6%97%A5%E5%8C%97%E4%BA%AC%E8%88%89%E8%A1%8C-%E8%81%9A%E7%84%A6%E5%A4%A7%E5%9C%8B%E9%97%9C%E4%BF%82%E8%88%87%E5%A4%AA%E7%A9%BA%E5%AE%89%E5%85%A8",
+      "pubDate": "2026-08-27 12:28:22",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/e0d907497ea46794959ec972535bd1c9/2026-08/New_Project_VFBGFGGNBFB.jpg",
+      "keywords": [
+        "香山論壇"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "505e65584a26e4ef8dc0dd6582dc9cc3",
+      "title": "新皇崗口岸|康諮會實測大樓內外無障礙設施 保安局:逐一跟進各項意見",
+      "description": "新皇崗口岸即將開通,保安局今日(27日)邀請康復諮詢委員會轄下無障礙小組委員會及香港社會服務聯會機構會員的代表擔任「特邀體驗官」,實地測試口岸大樓內外的各項無障礙設施,包括觸覺引路帶、暢通易達洗手間、升降機及無障礙旅檢通道。 跨部門協作 參與者肯定配套全面 體驗過程中,入境處及海關人員陪同講解過關流程;運輸署人員詳細介紹交通安排;建築署人員講解大樓的無障礙設計;政府產業署則簡介大樓未來將提供的貼心",
+      "link": "https://www.stheadline.com/society/3608883/%E6%96%B0%E7%9A%87%E5%B4%97%E5%8F%A3%E5%B2%B8%E5%BA%B7%E8%AB%AE%E6%9C%83%E5%AF%A6%E6%B8%AC%E5%A4%A7%E6%A8%93%E5%85%A7%E5%A4%96%E7%84%A1%E9%9A%9C%E7%A4%99%E8%A8%AD%E6%96%BD-%E4%BF%9D%E5%AE%89%E5%B1%80%E9%80%90%E4%B8%80%E8%B7%9F%E9%80%B2%E5%90%84%E9%A0%85%E6%84%8F%E8%A6%8B",
+      "pubDate": "2026-08-27 12:27:48",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/fbd8babdccbf9918d316c9acbebf352c/2026-08/787021974_1663912005346459_95851633135584914_n.jpg",
+      "keywords": [
+        "新皇崗口岸",
+        "保安局",
+        "過關"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8d581cc35e50b4680dc01511f834b3ca",
+      "title": "灣仔綠山居護老院4人染產碳青霉烯酶腸道桿菌 疑同層人交叉感染",
+      "description": "衞生防護中心今日(27日)正調查一宗產碳青霉烯酶腸道桿菌帶菌個案群組,涉及灣仔綠山居護老院的一男三女,年齡介乎73至90歲,現時情況穩定。中心",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60384367/%E7%81%A3%E4%BB%94%E7%B6%A0%E5%B1%B1%E5%B1%85%E8%AD%B7%E8%80%81%E9%99%A24%E4%BA%BA%E6%9F%93%E7%94%A2%E7%A2%B3%E9%9D%92%E9%9C%89%E7%83%AF%E9%85%B6%E8%85%B8%E9%81%93%E6%A1%BF%E8%8F%8C-%E7%96%91%E5%90%8C%E5%B1%A4%E4%BA%BA%E4%BA%A4%E5%8F%89%E6%84%9F%E6%9F%93",
+      "pubDate": "2026-08-27 12:27:27",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169741596971765760209135.jpeg/mjxN7fcv3HyrUVDhUAy5QudcssTMz3R4tkhF17ZIRdc",
+      "keywords": [
+        "頭條新聞",
+        "即時新聞",
+        "香港新聞",
+        "香港01",
+        "hk01",
+        "新聞",
+        "國際新聞",
+        "港聞"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4bc42dc6372fa0555513d095546cc560",
+      "title": "國防部8月27日例行記者會全文",
+      "description": "中評社北京8月27日電(記者 王教仁)國防部27日下午舉行例行記者會,國防部新聞發言人張曉剛大校就台灣防務預算、日本擴軍備武、菲律賓南海挑釁、中外聯演聯訓等近期涉軍熱點議題回答中外記者提問,以下是問答全文: 張曉剛:大家下午好!歡迎參加國防部例行記者會。 首先,我發布一條信息。 9月15日至17日,第十三屆北京香山論壇將在北京國際會議中心舉辦。本屆論壇主題為“凝聚",
+      "link": "http://www.crntt.com/doc/7_0_107228417_1_0827202422.html",
+      "pubDate": "2026-08-27 12:24:22",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/27/107228421.JPG",
+      "keywords": [
+        "國防部發布會"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7fa7b79134c23d252f06ce00702ef4e9",
+      "title": "夫妻的博弈|孔德賢二度挑戰富二代備受讚賞 爆母親做演技指導",
+      "description": "無綫熱播劇集《夫妻的博弈》劇情漸入高潮,劇中飾演富二代的孔德賢(Danny),憑藉精湛演技成功塑造出角色卑劣卻又複雜的性格,吸引大批觀眾目光,",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384340/%E5%A4%AB%E5%A6%BB%E7%9A%84%E5%8D%9A%E5%BC%88-%E5%AD%94%E5%BE%B7%E8%B3%A2%E4%BA%8C%E5%BA%A6%E6%8C%91%E6%88%B0%E5%AF%8C%E4%BA%8C%E4%BB%A3%E5%82%99%E5%8F%97%E8%AE%9A%E8%B3%9E-%E7%88%86%E6%AF%8D%E8%A6%AA%E5%81%9A%E6%BC%94%E6%8A%80%E6%8C%87%E5%B0%8E",
+      "pubDate": "2026-08-27 12:15:52",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169710696061997056341572.jpeg/1vyEAsrzspYzRNEBHUgtIG8zzuD6ThIU7jSEONg0hDg",
+      "keywords": [
+        "即時娛樂",
+        "香港新聞",
+        "香港01",
+        "藝人",
+        "hk01",
+        "新聞",
+        "娛樂新聞",
+        "明星",
+        "即時娛樂新聞",
+        "韓星"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "184c687699b6f8b81155a854613e5732",
+      "title": "ESPN:拖肥趕尾班車買曉爾",
+      "description": "【Now Sports】ESPN指愛華頓現正密鑼緊鼓,希望趕在轉會窗關閉前,收購新特蘭後衛曉爾。愛華頓今夏僅花費6000萬鎊增兵,領隊莫耶斯(David Moyes)早前曾公開呼籲球會,必須在下周二轉會窗關閉前補強陣容。ESPN指,拖肥正在努力爭取以2000萬鎊轉會費從新特蘭引入後衛曉爾(Trai Hume)。莫...",
+      "link": "https://hk.sports.yahoo.com/news/espn-%E6%8B%96%E8%82%A5%E8%B6%95%E5%B0%BE%E7%8F%AD%E8%BB%8A%E8%B2%B7%E6%9B%89%E7%88%BE-121457888.html",
+      "pubDate": "2026-08-27 12:14:57",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "曉爾",
+        "新特蘭",
+        "愛華頓",
+        "莫耶斯"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b89f252914e45dad82b88eb8ae595128",
+      "title": "Seclore 與 Glean 攜手,為企業提供具情境感知能力且持續生效的敏感度分類及安全管控",
+      "description": "此項整合將 Glean 的 企業級 AI 平台及企業數據,與 Seclore ARMOR 的數據安全智能層相結合,為受監管機構提供具情境感知能力的敏感度分類功能,以及可據此採取行動的修復管控措施。 加州聖克拉拉 2026年8月27日 /美通社/ -- 企業數據安全智能公司 Seclore 今日宣佈,ARMOR DSPM 與領先的企業級 AI 平台 Glean 推出整合方案。 ARMOR DSPM 以 Glean 提供的情境數據作為敏感度分類基礎,讓客戶可透過統一的修復工具套件,針對識別結果採取行動。系統亦會將標籤直接寫入來源檔案,確保標籤持續保留並可供 Glean 讀取。對金融服務、醫療保健、法律服務及政府領域的 Glean 客戶而言,此項整合建基於 Glean 的安全基礎,有助加快在整個數據環境中識別及管控可供 AI 使用的數據。 Seclore-X-Glean 情境感知:切合企業實際數據運用方式的分類 Glean 的 Enterprise Graph 會為機構所使用的所有系統建立數據索引,並勾勒內容、人員與工作之間的關聯。ARMOR DSPM 會分析文件內容及元數據,並將其輸入分類引擎,根據每個檔案的實際內容,判定其敏感度、資訊類型及數據暴露風險。同一套分類情境亦可用於將數據對應至 GDPR、HIPAA、印度《數碼個人資料保護法》(DPDP Act)及其他監管框架。Glean 客戶可在 Glean 已建立索引的全部數據範圍內進行分類,毋須另行設立一套僅涵蓋部分系統的數據發現流程。 可行操作:內置修復及安全態勢管理功能 識別只是起點,而非終點。ARMOR DSPM 完成敏感數據分類後,客戶即可透過 ARMOR 的修復工具套件採取行動:相關功能包括原生整合的 EDRM ,提供持續生效的檔案級加密及使用管控。即使檔案在不同用戶、系統及外部收件人之間流轉,相關保護措施仍會隨檔案同行。此外,系統亦可根據數據的敏感度及所處情境調整存取權限,決定哪些人士可以開啟、分享或修改數據。對 Glean 客戶而言,透過 Glean 安全且能識別權限的平台調取的內容,仍會受同一套持續性管控框架規管。 持續生效:隨數據同行的標籤 ARMOR DSPM 會將分類標籤直接寫入來源檔案。標籤不受任何特定平台限制,並會一直附隨檔案:即使檔案歷經不同索引週期、數據在不同系統之間流轉,或檔案從來源應用程式開啟或透過 Glean 調取,標籤仍會保持完整。由於標籤儲存於檔案本身,任何讀取該檔案的系統均可識別相同的分類。 此項整合對受監管行業 Glean 客戶的意義 對金融服務、醫療保健、法律服務及政府領域的 Glean 客戶而言,此項整合有助機構在維持受監管環境所需管控措施的同時,加快 AI 應用步伐。 加快在整個企業範圍內進行分類。 ARMOR DSPM 利用 Glean 已建立索引的數據,在 Glean 覆蓋的所有系統中快速建立敏感度分類,縮短達致全面覆蓋所需的時間。ARMOR 連接器則部署於需要執行修復措施的位置。 識別結果直接驅動行動。 分類、安全態勢管理及以 EDRM 為基礎的保護功能均整合於同一套管控模式之中,敏感數據不再只是被識別,更會得到切實保護。 提供覆蓋整個企業的合規證據。 透過持續對應適用的監管框架,客戶可在 Glean 已覆蓋的同等廣泛範圍內,建立具充分理據支持且經得起審查的合規態勢。 「Glean 建立了業界最全面的企業級 AI 平台,其核心企業情境圖譜可為企業賴以運作的每個系統建立數據索引。透過 ARMOR,Glean 客戶可在同樣廣泛的數據範圍內進行敏感度分類,獲得隨檔案同行的 EDRM 保護,並建立能夠應對不同監管機構審查的穩健合規態勢。對受監管行業而言,這意味著機構可以更快由識別數據邁向實施管控。」 Seclore 行政總裁 Vishal Gauri 博士表示。 「受監管行業希望加快應用 AI,但同時亦需要對敏感資訊的處理方式抱有充分信心。透過結合 Glean 的企業情境層與 Seclore ARMOR,客戶可運用更充分的情境資訊識別重要數據,將相關洞察轉化為適當的管控措施,並更有信心地將 AI 引入更多受監管的工作流程。這正好說明 Glean 生態系統如何協助客戶將可信賴的 AI 引入更多受監管且具高價值的工作流程。」 Glean 合作夥伴業務副總裁 Zubin Irani 表示。 供應情況 此項整合現已可供同時使用 ARMOR DSPM 及 Glean 的機構採用。 關於 Seclore Seclore 是企業 AI 時代的數據安全智能公司。隨著 AI 系統日益在缺乏人類直接監督的情況下讀取、生成及處理數據,機構需要的不僅是可視性,還需要智能分析、管控能力及可驗證的證據。Seclore ARMOR 將數據發現、情境智能、持續保護、持續執行管控及使用洞察整合於單一管控模式之中。透過保護數據本身,並確保相關保護措施隨數據同行,Seclore 讓機構能夠放心採用 AI、持續證明其合規狀況,並在人員、合作夥伴及 AI 系統之間維持信任。詳情請瀏覽: https://www.seclore.com/glean/ 傳媒聯絡: Isaac Roybal isaac.roybal@seclore.com",
+      "link": "https://hk.prnasia.com/story/545515-2.shtml",
+      "pubDate": "2026-08-27 12:14:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnasia.com/media/MS1975910/Seclore-X-Glean.jpg?id=OA2916159&p=medium600",
+      "keywords": [
+        "afi",
+        "lic",
+        "iot",
+        "hts",
+        "stw",
+        "dta",
+        "cpr"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5e964ee2df2b8460fc4840f8cca5f7a1",
+      "title": "曼城馬雷斯卡冀轉會窗增聘「一至兩名隊長」助爭冠",
+      "description": "曼城領隊恩佐馬雷斯卡希望球會,在夏季轉會窗最後數天,物色「多一至兩名隊長」加入球隊,以爭奪今季各項錦標。 曼城今夏大清洗,多名經驗豐富的球員離隊,包括約翰史東斯、貝拿度施華、洛迪及尼敦阿基。 球隊兩名主要新簽入球員,分別是十八歲中場艾約布布瓦迪,以及二十三歲中場艾利奧安達臣。曼城目標是在周二較後時間截止前,引入更多球員。 馬雷斯卡希望,無論簽入哪位球員,都能立即成為曼城日趨年輕的陣容中,領導層的一員。 馬雷斯卡周四在記者會上表示:「我們當然有經驗豐富的球員,亦有領袖。現在我們需要再等四至五天,看看能否在魯賓戴亞斯及艾寧夏蘭特兩名隊長以外,再增添一至兩名隊長。」曼城將於周五迎戰水晶宮,出戰英超賽事。 英國傳媒報道,曼城仍然對車路士中場恩佐費南迪斯感興趣。馬雷斯卡在倫敦球會任職期間,曾任命恩佐費南迪斯為副隊長。 馬雷斯卡強調,曼城現階段未接近簽入更多球員。 他表示:「不,不,不。周三抵達的是艾約布,我們會在未來四至五天再觀察。」 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16653096-%E6%9B%BC%E5%9F%8E%E9%A6%AC%E9%9B%B7%E6%96%AF%E5%8D%A1%E5%86%80%E8%BD%89%E6%9C%83%E7%AA%97%E5%A2%9E%E8%81%98%E3%80%8C%E4%B8%80%E8%87%B3%E5%85%A9%E5%90%8D%E9%9A%8A%E9%95%B7%E3%80%8D%E5%8A%A9%E7%88%AD",
+      "pubDate": "2026-08-27 12:12:35",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/4d51338bd314575ac20f91a095c10522_Britain_Soccer_Real_Sociedad_Chelsea_78191_FB.jpg",
+      "keywords": [
+        "體育",
+        "轉會窗",
+        "英超",
+        "恩佐馬雷斯卡",
+        "曼城",
+        "足球"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3a708697b3b487280c806d4918ae1338",
+      "title": "Seclore 与 Glean 达成合作,为企业提供基于上下文、持久的敏感信息管理与安全控制措施",
+      "description": "此次整合将 Glean 的 企业级 AI 平台和企业数据与 Seclore ARMOR 的数据安全智能层相结合,为受监管机构提供了基于上下文的敏感信息分类功能,以及相应的补救控制措施。 加利福尼亚州圣克拉拉 2026年8月27日 /美通社/ -- 企业数据安全智能公司 Seclore 今日宣布,其 ARMOR DSPM 与领先的企业级 AI 平台 Glean 实现了集成。 ARMOR DSPM 以 Glean 的上下文数据为基础进行敏感性分类,为客户提供统一的修复工具包以针对已识别的问题采取行动,并将标签直接写入源文件中,这些标签将长期保留在文件中,且 Glean 能够持续读取。对于来自金融服务、医疗保健、法律服务和政府领域的 Glean 客户而言,这一基于 Glean 安全基础架构构建的集成方案,为他们在整个数据资产范围内实现基于人工智能的数据识别与控制提供了更快捷的途径。 Seclore-X-Glean 情境感知:反映企业实际使用数据的分类 Glean 的企业图谱对组织所使用的每个系统中的数据进行索引,并映射内容、人员和工作之间的关联。ARMOR DSPM 处理文档内容和元数据, 将它们作为分类引擎的输入,并根据每个文件的实际内容,为其分配敏感度、信息类型和暴露风险。相同的分类框架还推动了与《通用数据保护条例》(GDPR)、《健康保险流通与责任法案》(HIPAA)、印度《数据保护与隐私法案》(DPDP Act) 及其他监管框架的映射。Glean 的客户获得的分类功能,可覆盖 Glean 已建立索引的全部数据范围——而非在部分系统上进行的并行检索过程。 切实可行:内置的补救和安全态势管理功能 身份确认是开始,而不是结束。一旦 ARMOR DSPM 对敏感数据进行了分类,客户就会通过 ARMOR 的补救工具包对其采取行动:包括原生集成的 EDRM ,可实现持久的文件级加密和使用控制,这些控制措施会随文件在用户、系统和外部接收方之间同步;访问控制功能可根据数据敏感度和上下文,动态调整谁可以打开、共享或修改数据。对于 Glean 的客户而言,通过 Glean 安全且支持权限管理的平台呈现的内容,仍可受同一套持久化控制框架的管控。 持久:随数据一起旅行的标签 ARMOR DSPM 将分类信息直接写入源文件中。标签与文件紧密关联,不受任何平台限制:标签在索引周期之间得以保留,随数据在不同系统间迁移,无论文件是在源应用程序中打开,还是通过 Glean 呈现,标签均保持完整。由于标签存储在文件本身中,因此任何读取该文件的系统都会看到相同的分类。 这对受监管行业中的 Glean 客户意味着什么 对于来自金融服务、医疗保健、法律服务和政府领域的 Glean 客户而言,此次集成有助于组织在利用人工智能加速发展的同时,仍能遵守监管环境所要求的控制措施。 加快企业范围内的分类。 ARMOR DSPM 利用 Glean 的索引数据,在 Glean 已覆盖的系统中快速建立敏感性分类,从而缩短了覆盖时间。ARMOR 连接器部署在需要采取补救措施的位置。 识别与行动直接相关。 分类、数据姿态管理以及基于 EDRM 的保护措施共同构成一个控制模型——敏感数据不仅会被发现,还会得到保护。 企业范围内的合规性证明。 通过与适用监管框架的持续映射,客户能够在 Glean 已建立的同等广度范围内,保持一种经得起推敲的安全态势。 “ Glean 构建了业内最全面的企业级人工智能平台,其核心的企业上下文图对企业所依赖的每个系统中的数据进行了索引。借助 ARMOR,Glean 客户可以获得相同范围的灵敏度分类、随文件一起传输的基于 EDRM 的保护,以及经得起各监管机构检验的合规态势。“对于受监管的行业而言,这意味着从识别到控制的进程将更加快捷,” Seclore 首席执行官 Vishal Gauri 博士 表示。 “受监管的行业希望借助人工智能加快步伐,但他们也需要对敏感信息的处理方式抱有信心。通过将 Glean 的企业上下文层与 Seclore ARMOR 相结合,客户能够基于更丰富的上下文信息识别重要数据,将这些洞察与相应的控制措施相连接,并更有信心地将人工智能引入更多受监管的工作流程中。这是 Glean 生态系统如何帮助客户将可信人工智能引入更受监管的高价值工作流程的有力例子。” Glean 合作伙伴关系副总裁 Zubin Irani 说。 可用性 对于正在运行 ARMOR DSPM 和 Glean 的组织,该集成功能现已上线。",
+      "link": "https://www.prnasia.com/story/545514-1.shtml",
+      "pubDate": "2026-08-27 12:06:00",
+      "source_name": "美通社",
+      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "keywords": [
+        "hts",
+        "lic",
+        "cpr",
+        "iot",
+        "stw",
+        "afi",
+        "dta"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "14d68a310e42d506ad8d7e52aa39dbf4",
+      "title": "迪努沙百年得分助斯里蘭卡力保和局 印度仍贏系列賽",
+      "description": "斯里蘭卡球員索納爾·迪努沙周四在第二場板球測試賽中,憑藉奮力取得的百年得分,以及與尾棒球員的後防反擊,協助球隊力保和局,但印度仍以場數1比0贏得這次兩場系列賽。 這是迪努沙在這次比賽中取得的第二個百年得分,他於首局已取得103分。 印度贏得擲毫後率先擊球,取得503分並宣布九人出局,其中德夫杜特·帕迪卡爾取得117分,是他這次系列賽的第二個百年得分,而德魯夫·朱雷爾則貢獻115分。 印度投球手隨後在首局以290分將斯里蘭卡淘汰出局,並以213分的領先優勢強制對方跟進擊球。斯里蘭卡在第二局宣布九人出局,取得429分,領先216分,當日只剩下17個回合,隨後比賽結束。 迪努沙以133分保持不敗,成為繼印度球員維賈伊·哈扎雷及津巴布韋球員安迪·弗勞爾之後,史上第三位在跟進擊球後取得雙百年得分的球員。 斯里蘭卡周四恢復第二局比賽,當時僅以微弱優勢領先,手握四個三柱門,需要爭取時間擊球,以期力保和局。 迪努沙與尾棒球員合作擊球,第八棒的凱沙拉·努萬塔在150次投球中取得46分,第十棒的拉希魯·庫馬拉則在90次投球中取得12分。 迪努沙擊球長達七小時,面對264次投球,擊出兩次六分球及八次邊界球。 他獲選為這次比賽的最佳球員,而帕迪卡爾則因在加勒取得167分及在科倫坡取得117分,獲選為這次系列賽的最佳球員。 印度左臂旋轉投球手拉溫德拉·賈德賈(3-94)及馬納夫·蘇塔爾(3-121)共同為印度取得投球榮譽。 第四日,斯里蘭卡取得229分並六人出局,僅領先16分,其後因下雨提早結束比賽。帕辛杜·蘇里亞班達拉及卡明杜·門迪斯均取得半百年得分。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16651484-%E6%96%AF%E9%87%8C%E8%98%AD%E5%8D%A1%E6%9D%BF%E7%90%83%E6%B8%AC%E8%A9%A6%E8%B3%BD%E7%AC%AC%E4%BA%94%E6%97%A5-%E8%BF%AA%E5%8A%AA%E6%B2%99%E5%8D%8A%E4%B8%96%E7%B4%80%E5%8A%A9%E7%90%83%E9%9A%8A%E9%A0%98",
+      "pubDate": "2026-08-27 12:05:37",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/f49eaab7c2f1f5aef625d2360445baee_Sri_Lanka_India_Cricket_86421_FB.jpg",
+      "keywords": [
+        "印度",
+        "測試賽",
+        "斯里蘭卡",
+        "體育",
+        "板球",
+        "迪努沙"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "96bb3e8cb0ee4649f97867e390e3085e",
+      "title": "數字辦推AI分析電郵增1823熱線效能 急案分流由兩天縮至數小時",
+      "description": "數字政策辦公室今日( 27日)公布推進使用AI人工智能提升1823熱線的效能,將於今年下半年推出4個全新AI項目,以AI分析電郵,自動識別優先處理個案,",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60384192/%E6%95%B8%E5%AD%97%E8%BE%A6%E6%8E%A8ai%E5%88%86%E6%9E%90%E9%9B%BB%E9%83%B5%E5%A2%9E1823%E7%86%B1%E7%B7%9A%E6%95%88%E8%83%BD-%E6%80%A5%E6%A1%88%E5%88%86%E6%B5%81%E7%94%B1%E5%85%A9%E5%A4%A9%E7%B8%AE%E8%87%B3%E6%95%B8%E5%B0%8F%E6%99%82",
+      "pubDate": "2026-08-27 12:05:05",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260827/1169658582535245824013579.jpeg/REXOijw_AmCEuhJsNAYNXrgvuioyN57ZiCod1IgqHdQ",
+      "keywords": [
+        "頭條新聞",
+        "即時新聞",
+        "香港新聞",
+        "香港01",
+        "hk01",
+        "新聞",
+        "國際新聞",
+        "港聞"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fdd9f1212847f7d4b3e84c3810eced2d",
+      "title": "挪威國王哈拉爾五世病危 王后、王儲取消行程隨侍",
+      "description": "挪威王室宣布,因溶血性貧血住院的國王五世(Harald V)病情「極為嚴重」,其妻王后索尼婭(Queen Sonja)與日前臨時攝政的王儲哈康(Crown Prince Haakon)已取消所有王室行程,侍在病榻旁。 現年89歲的哈拉爾五世是歐洲最年長的在位君主,因溶血性貧血,自17日起入住奧斯陸的醫院。住院接受治療。王室聲明表示:「國王陛下的健康狀況極為嚴重。」聲明未提供其他細節。 溶血性貧血是",
+      "link": "https://www.stheadline.com/realtime-world/3608893/%E6%8C%AA%E5%A8%81%E5%9C%8B%E7%8E%8B%E5%93%88%E6%8B%89%E7%88%BE%E4%BA%94%E4%B8%96%E7%97%85%E5%8D%B1-%E7%8E%8B%E5%90%8E%E7%8E%8B%E5%84%B2%E5%8F%96%E6%B6%88%E8%A1%8C%E7%A8%8B%E9%9A%A8%E4%BE%8D",
+      "pubDate": "2026-08-27 12:05:05",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/66490c40eb2673318dfd0f79797e5099/2026-08/a1_0_32.jpg",
+      "keywords": [
+        "哈拉爾五世",
+        "王儲哈康",
+        "挪威國王"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4aaaedaf0e944dad19339cf2908dff05",
+      "title": "Seaspan 獲 KBRA 上調評級至投資級別",
+      "description": "新加坡2026年8月27日 /美通社/ -- 全球海運領導企業、全球最大獨立貨櫃船船東及營運商 Seaspan Corporation Pte. Ltd. (Seaspan)今日宣佈,Kroll Bond Rating Agency(KBRA)已將公司的發行人評級及高級無抵押債務評級由 BB+ 上調至 BBB-,同時確認其高級有抵押債務評級為 BBB。 是次評級上調肯定了 Seaspan 持續增長、穩健的合約現金流、靈活的融資能力、高水平的船舶利用率及一貫穩定的營運表現,充分彰顯公司業務模式及長遠策略的優勢。KBRA 指出,Seaspan...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/seaspan--kbra--302861797.html",
+      "pubDate": "2026-08-27 12:04:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "https://mmx.prnewswire.com/media/MS1508346/Seaspan-Corporation-Seaspan-%E7%8D%B2-KBRA-%E4%B8%8A%E8%AA%BF%E8%A9%95%E7%B4%9A%E8%87%B3%E6%8A%95%E8%B3%87%E7%B4%9A%E5%88%A5.jpg?id=OA2914334&p=original",
+      "keywords": [
+        "acc"
+      ],
+      "category": [
+        "technology",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2525c8cc69a65afe8040b4425cbac174",
+      "title": "duPont REGISTRY Group獲科技高層家族辦公室策略投資",
+      "description": "duPont REGISTRY Group(dRG)今日宣布,已從科技行政總裁蘇里爾·喬克西的家族辦公室獲得一項重要的策略性投資。喬克西同時是Vantage數據中心的總裁兼行政總裁,亦是一位熱衷賽車手及汽車收藏家。 這次策略性投資鞏固了dRG在豪華汽車界首屈一指的實體地位。這亦突顯了該集團致力於建立一個無縫可靠的生態系統,讓愛好者及收藏家能夠輕鬆買賣並投入他們對汽車的熱情。此舉證明了dRG全球客戶及收藏級汽車數據庫的非凡價值,以及該集團知名品牌的強大吸引力。該品牌作為豪華及珍稀車輛的可靠來源,聲譽已超40年。 喬克西表示:「我對安東尼及其團隊如何利用科技、專有數據及人工智能,改變客戶交易及參與豪華及珍稀汽車的方式印象深刻。dRG擁有穩固基礎及市場地位,未來有令人振奮的增長機遇。」 duPont REGISTRY Group行政總裁安東尼·泰西耶指出:「蘇里爾的投資進一步證明我們已建立具長遠發展潛力的穩健業務。他在大規模營運、管理複雜全球平台,並策略性地思考數據及資本部署方面的經驗,將有助我們在繼續擴展科技及基礎設施以擴大dRG影響力時,提升我們的專注度。」 duPont REGISTRY Group(dRG)是全球首屈一指的豪華汽車平台,涵蓋高端汽車生活品味的文化、社群及商業。其生態系統結合優質內容、綜合平台及沉浸式體驗,包括全球超120場活動,吸引近12萬名參與者。dRG透過結合尖端科技與無與倫比的車輛獲取途徑,重新定義愛好者聯繫及交易方式。超40年來,dRG一直為活躍的全球收藏家及愛好者社群提供可靠來源,協助他們買賣豪華車輛。dRG利用數據洞察及先進科技,建立無縫且可擴展的數碼市場,促成數十億美元交易,並重新定義愛好者及收藏家在豪華汽車界的參與方式。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16653033-dupont-registry-group%E7%8D%B2%E7%A7%91%E6%8A%80%E9%AB%98%E5%B1%A4%E5%AE%B6%E6%97%8F%E8%BE%A6%E5%85%AC%E5%AE%A4%E7%AD%96%E7%95%A5%E6%8A%95%E8%B3%87",
+      "pubDate": "2026-08-27 12:02:56",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/afb683347ef14fd8abf6431412c89aae_dRG_Sureel_FB.jpg",
+      "keywords": [
+        "dupont registry group",
+        "vantage數據中心",
+        "策略投資",
+        "蘇里爾·喬克西",
+        "商業事",
+        "豪華汽車"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4589046f674ddcdfa3e0f516f6deec0a",
+      "title": "陳庭欣告別「10億女友」首過單身39歲生日 群星拱照「東張緋聞男友」曾錦燊貼心慶祝",
+      "description": "2010年港姐冠軍陳庭欣(Toby)今日(27日)踏入39歲,是其回復單身後的首個生日。陳庭欣揮別昔日戀情,昨晚(29日)在社交平台上載一張與大班圈中好友慶祝的照片,場面熱鬧,氣氛歡愉。 陳庭欣生日搞派對 從陳庭欣分享的相片中,眾人在一家裝潢型格、氣派十足的餐廳私人房間內聚會,長餐枱上以精緻的燭光和花藝佈置,陳庭欣與一眾好友坐在一起,笑容滿面。壽星女陳庭欣坐在席間,狀態極佳,並在帖文中寫道:「開心",
+      "link": "https://www.stheadline.com/film-drama/3608874/%E9%99%B3%E5%BA%AD%E6%AC%A3%E5%91%8A%E5%88%A510%E5%84%84%E5%A5%B3%E5%8F%8B%E9%A6%96%E9%81%8E%E5%96%AE%E8%BA%AB39%E6%AD%B2%E7%94%9F%E6%97%A5-%E7%BE%A4%E6%98%9F%E6%8B%B1%E7%85%A7%E6%9D%B1%E5%BC%B5%E7%B7%8B%E8%81%9E%E7%94%B7%E5%8F%8B%E6%9B%BE%E9%8C%A6%E7%87%8A%E8%B2%BC%E5%BF%83%E6%85%B6%E7%A5%9D",
+      "pubDate": "2026-08-27 12:00:56",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/40c108c6cb67dddffd993ec86ad0030d/2026-08/KF_169.jpg",
+      "keywords": [
+        "陳庭欣39歲",
+        "曾錦燊",
+        "港姐冠軍陳庭欣",
+        "東張曾錦燊",
+        "陳庭欣生日",
+        "陳庭欣",
+        "陳庭欣單身",
+        "10億女友"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7d5fbbdae4174c01ef0a7fbcbc7c4f52",
+      "title": "新城知訊台經典節目《我芝訂》27年後重組 親揀歌送祝福 張栢芝「穿越」撐老友!",
+      "description": "新城知訊台經典節目《我芝訂》相隔27年後重組,原班主持陳小芝、葉文輝(啤梨)及懷鈺再次聚首開咪。最重情義的張栢芝得悉老友重組節目後,立即親自錄製祝賀視頻及錄音,更特別為節目揀歌,以行動支持相識多年的三位主持。 栢芝在祝賀片段中表示:「《我芝訂》其實是由1999年穿越到2026年。小芝、啤梨、懷鈺他們是我的好朋友,這個節目重組我很開心,二十多年的相遇與緣分得來不易,我全力支持,希望大家支持這個節目!」 《我芝訂》於1999年在新城廣播開播,當年栢芝剛以歌手身分出道,節目更率先播放她的歌曲《任何天氣》。其後她多次擔任節目嘉賓,與三位主持建立深厚感情;懷鈺曾經模仿栢芝,栢芝亦曾反過來模仿懷鈺主持節目。今次經典節目「穿越」到2026年重組,栢芝再次送上錄影、錄音兼親自揀歌,念舊及重情的一面表露無遺。 三位主持重新合作,全因葉文輝(啤梨)發起。三人於1999年一同主持節目,兩年後各自發展,感情卻一直沒有疏遠,二十多年來仍定期見面。小芝透露,由於她與懷鈺各有正職,節目只能每周「短聚」一小時;啤梨則表示,三人與聽眾一同成長,今次重組會延續原有內容,與大家分享生活智慧。懷鈺感謝栢芝支持,並說很感恩當年因為節目而認識她。 《我芝訂》由8月28日起,逢星期五下午一時在新城知訊台播出。",
+      "link": "https://www.bastillepost.com/hongkong/article/16649611-%E6%96%B0%E5%9F%8E%E7%9F%A5%E8%A8%8A%E5%8F%B0%E7%B6%93%E5%85%B8%E7%AF%80%E7%9B%AE%E3%80%8A%E6%88%91%E8%8A%9D%E8%A8%82%E3%80%8B27%E5%B9%B4%E5%BE%8C%E9%87%8D%E7%B5%84-%E8%A6%AA%E6%8F%80%E6%AD%8C",
+      "pubDate": "2026-08-27 12:00:08",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260826_FB_EN_Gi_source-web_.jpg",
+      "keywords": [
+        "葉文輝",
+        "娛圈事",
+        "我芝訂",
+        "懷鈺",
+        "陳小芝",
+        "張栢芝",
+        "啤梨"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
     {
       "id": "cbbc7635bbd0733ebb45f1692fee4833",
       "title": "張繼聰諗過《人夫集團》開晒日場同農夫度橋唔敢認叻 欣賞古天樂衝破心理關口",
@@ -7325,42 +8157,6 @@
       "region": "hk"
     },
     {
-      "id": "26485ea63e726337ddeeaffd3bf094d8",
-      "title": "《港樓》差估署:本港7月私宅售價指數自近三年高位回落0.46% 連升13個月斷纜 租金指數續創新高",
-      "description": "差估署公布,本港7月私宅售價指數自近三年高位回落0.46%,至321.5,十三個月升勢斷纜。本年首七個月累升7.3%,但較2025年3月所創逾八年低位仍高出12.8%。 實用面積100平方米以下的中小型單位,售價指數按月跌0.46%,本年首七個月累升7.4%。實用面積100平方米或以上大型單位,售價指數按月跌0....",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B7%AE%E4%BC%B0%E7%BD%B2-%E6%9C%AC%E6%B8%AF7%E6%9C%88%E7%A7%81%E5%AE%85%E5%94%AE%E5%83%B9%E6%8C%87%E6%95%B8%E8%87%AA%E8%BF%91%E4%B8%89%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%9B%9E%E8%90%BD0-46-%E9%80%A3%E5%8D%8713%E5%80%8B%E6%9C%88%E6%96%B7%E7%BA%9C-025726790.html",
-      "pubDate": "2026-08-27 02:57:26",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "retirement",
-        "business",
-        "401k",
-        "investment tools",
-        "business news",
-        "stock",
-        "quote",
-        "investor",
-        "stocks",
-        "finance",
-        "economy",
-        "market news",
-        "personal finance",
-        "suze orman",
-        "stock research",
-        "tax",
-        "mortgage",
-        "real estate",
-        "track portfolio",
-        "financial information"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "369482d80b42734949a0278ec4d20523",
       "title": "渣打料人民幣中期看漲 上調明年匯率預測至6.46",
       "description": "<匯港通訊> 渣打上調人民幣兌美元匯率預測。該行發表研究報告指,最新預測今年底人民幣匯率將見6.65,高於原先的6.8,並將明年底的人民幣匯率預測由原先7顯著調高至為6.46,以反映其對人民幣的中期看漲觀點。報告指,看漲人民幣觀點是基於結構性經常帳表現強勁、中國 AI 競爭力迅速提升、股息支付後季節性因素改善,以...",
@@ -11859,27 +12655,6 @@
         "entertainment"
       ],
       "region": "hk"
-    },
-    {
-      "id": "a127852ab47bb5f0b87cac9514ffc261",
-      "title": "普丁據悉準備升級對烏克蘭的戰爭 俄羅斯官員愈發認為最終恐動用核武",
-      "description": null,
-      "link": "https://hk.finance.yahoo.com/news/%E6%99%AE%E4%B8%81%E6%93%9A%E6%82%89%E6%BA%96%E5%82%99%E5%8D%87%E7%B4%9A%E5%B0%8D%E7%83%8F%E5%85%8B%E8%98%AD%E7%9A%84%E6%88%B0%E7%88%AD-%E4%BF%84%E7%BE%85%E6%96%AF%E5%AE%98%E5%93%A1%E6%84%88%E7%99%BC%E8%AA%8D%E7%82%BA%E6%9C%80%E7%B5%82%E6%81%90%E5%8B%95%E7%94%A8%E6%A0%B8%E6%AD%A6-163421233.html",
-      "pubDate": "2026-08-26 16:34:21",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://media.zenfs.com/ko/bloomberg_chinese_traditional_757/3786fa9b45c7e54635d87adebbce5b8b.jpg",
-      "keywords": [
-        "俄羅斯",
-        "普丁",
-        "烏克蘭",
-        "莫斯科",
-        "克里姆林宮"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "e581fadf95fe9d767622a334b735af1b",
@@ -239247,5 +240022,7 @@
       "region": "hk",
       "pinned": true
     }
-  ]
+  ],
+  "total": 12190,
+  "last_updated": "2026-08-28T09:18:04.498356"
 }
