@@ -1,0 +1,10 @@
+{
+  "id": "2e6871c7cdca0b97bd63f7e859fc7001",
+  "title": "Ring 千億級影片搜尋曝光 講句「藍色衫的人」2 秒內找到片段",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/28/ring-ai-vector-video-search-rds/genai-and-cloud/",
+  "rewritten_title": "Ring 揭示語義影片搜尋技術 千億級向量數據2秒內定位片段",
+  "rewritten": "智能門鈴品牌 Ring 公開其「語義影片搜尋」技術架構，利用 Amazon RDS for PostgreSQL 及 pgvector 擴充，處理高達 2,000 億個向量嵌入。用戶只需輸入如「穿藍色恤衫的人」等自然語言描述，系統便能在 2 秒內從海量錄影中找到相關片段。該系統橫跨四大洲、9 個 AWS 區域，每日處理數十億次讀取請求，數據量達 140 至 150 TB。Ring 選擇在現有關聯式…",
+  "status": "done",
+  "fetched_at": "2026-08-28T22:10:27"
+}
