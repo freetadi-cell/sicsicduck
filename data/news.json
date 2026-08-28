@@ -1,101 +1,259 @@
 {
+  "last_updated": "2026-08-28T16:13:18.272998",
+  "total": 12330,
   "articles": [
     {
-      "id": "368cca36213863d90e6d87f2ba408a8c",
-      "title": "Nvidia上季業績勝預期 料下財年收入增長約70%高過預期",
-      "description": "Nvidia公布最新季度業績,盈利按年急升近1.3倍至596.9億美元,經調整每股盈利2.22美元,優於市場預期的2.09美元,表現再度超出分析師預期。 期內收入按年增長近1.1倍,達到962.2億美元,同樣高過市場預期的922.9億美元。作為集團增長引 擎的數據中心業務,收入按年升約1.2倍至890.2億美元,亦高於市場預期的858.3億美元。毛利率則為75%,與前一季度大致持平。 集團對本季度的收入預測為1,080億美元,按年增長近90%,市場平均預估則為1,052億美元,部分分析師的預測更超過1,100億美元。 首席財務官Colette Kress表示,需求即使在目前的規模下仍在加速增長,預計2028財年收入將增長約70%,高過市場估計的44%。她又指出,客戶的預測表明,明年增速可能翻倍。 行政總裁黃仁勳表示,公司從未提前一年提供業績指引,需求增長已超過70%。他補充,如果沒有供應限制,公司2028財年的業績展望將更高。 受業績理想帶動,公司股價在收市後延長交易時段升逾4%。",
-      "link": "https://www.bastillepost.com/hongkong/article/16648024-nvidia%E4%B8%8A%E5%AD%A3%E6%A5%AD%E7%B8%BE%E5%8B%9D%E9%A0%90%E6%9C%9F%E3%80%80%E6%96%99%E4%B8%8B%E8%B2%A1%E5%B9%B4%E6%94%B6%E5%85%A5%E5%A2%9E%E9%95%B7%E7%B4%8470%E9%AB%98%E9%81%8E%E9%A0%90%E6%9C%9F",
-      "pubDate": "2026-08-26 23:52:08",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/07/20250715_FI_source-web_Nvidia-1.jpg",
+      "id": "e02c461823ad8a439ad03f964d3dc661",
+      "title": "傳加利殊若出「城」意欲重投拖肥",
+      "description": "【Now Sports】BBC透露,加利殊若在轉會窗關閉前離開曼城,個人意願是重返愛華頓。30歲的加利殊(Jack Grealish)在曼城今季頭兩場比賽,均後備上陣,而新帥馬利斯卡對於在下周二轉會窗關閉前,讓該英格蘭中場球星離隊持開放態度。據了解,一旦加利殊離開曼城,意屬重投莫耶斯領軍的愛華頓。加利殊於去季曾以...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%82%B3%E5%8A%A0%E5%88%A9%E6%AE%8A%E8%8B%A5%E5%87%BA-%E5%9F%8E-%E6%84%8F%E6%AC%B2%E9%87%8D%E6%8A%95%E6%8B%96%E8%82%A5-195634921.html",
+      "pubDate": "2026-08-27 19:56:34",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
       "keywords": [
-        "source-2",
-        "英偉達",
-        "錢財事"
+        "愛華頓",
+        "jack grealish",
+        "加利殊",
+        "伊利文安戴耶",
+        "曼"
       ],
       "category": [
-        "business",
-        "top"
+        "sports"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "26485ea63e726337ddeeaffd3bf094d8",
-      "title": "《港樓》差估署:本港7月私宅售價指數自近三年高位回落0.46% 連升13個月斷纜 租金指數續創新高",
-      "description": "差估署公布,本港7月私宅售價指數自近三年高位回落0.46%,至321.5,十三個月升勢斷纜。本年首七個月累升7.3%,但較2025年3月所創逾八年低位仍高出12.8%。 實用面積100平方米以下的中小型單位,售價指數按月跌0.46%,本年首七個月累升7.4%。實用面積100平方米或以上大型單位,售價指數按月跌0....",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B7%AE%E4%BC%B0%E7%BD%B2-%E6%9C%AC%E6%B8%AF7%E6%9C%88%E7%A7%81%E5%AE%85%E5%94%AE%E5%83%B9%E6%8C%87%E6%95%B8%E8%87%AA%E8%BF%91%E4%B8%89%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%9B%9E%E8%90%BD0-46-%E9%80%A3%E5%8D%8713%E5%80%8B%E6%9C%88%E6%96%B7%E7%BA%9C-025726790.html",
-      "pubDate": "2026-08-27 02:57:26",
+      "id": "70412f7c616e6e5e6674e5820e30c8ad",
+      "title": "Anthropic計劃在創紀錄IPO中允許內部人士出售股份",
+      "description": null,
+      "link": "https://hk.finance.yahoo.com/news/anthropic%E8%A8%88%E5%8A%83%E5%9C%A8%E5%89%B5%E7%B4%80%E9%8C%84ipo%E4%B8%AD%E5%85%81%E8%A8%B1%E5%85%A7%E9%83%A8%E4%BA%BA%E5%A3%AB%E5%87%BA%E5%94%AE%E8%82%A1%E4%BB%BD-193918058.html",
+      "pubDate": "2026-08-27 19:39:18",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEA6U04V_M.jpg",
+      "keywords": [
+        "並於",
+        "anthropic",
+        "investing.com"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "45c9617e8e656642ffebf3c6e5f8de7a",
+      "title": "美網外圍賽│黃澤林直落2盤擊敗拿祖域 連續2年躋身男單正賽",
+      "description": "黃澤林(Coleman)連續兩年躋身美網男單正賽。這名香港網球一哥周四出戰美國網球公開賽男單外圍賽第三圈,輕鬆直落兩盤擊敗塞爾維亞老將拿祖域,取得主賽圈席位,下周將會展開生涯第二次美網正賽之旅。 黃澤林首盤先贏6:4 被列為外圍賽二號種子的黃澤林,今仗面對36歲的塞爾維亞老將拿祖域,首盤雖然未發揮最高水準,但成功保住所有發球局之餘,還一次破發成功,先贏6:4。第二盤Coleman和拿祖域各自保持頭",
+      "link": "https://www.stheadline.com/realtime-sport/3608985/%E7%BE%8E%E7%B6%B2%E5%A4%96%E5%9C%8D%E8%B3%BD%E9%BB%83%E6%BE%A4%E6%9E%97%E7%9B%B4%E8%90%BD2%E7%9B%A4%E6%93%8A%E6%95%97%E6%8B%BF%E7%A5%96%E5%9F%9F-%E9%80%A3%E7%BA%8C2%E5%B9%B4%E8%BA%8B%E8%BA%AB%E7%94%B7%E5%96%AE%E6%AD%A3%E8%B3%BD",
+      "pubDate": "2026-08-27 19:37:27",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/534d61b7d2630f820e0cf1600dc1a923/2026-08/KF_-_2026-08-28T011429_869.png",
+      "keywords": [
+        "美網",
+        "網球",
+        "coleman wong",
+        "黃澤林"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "43634083dfd5ced7ef23bea05f595411",
+      "title": "跨部門多區掃黃兼打擊非法勞工 29男女被捕",
+      "description": "警方表示,新界南總區機動部隊、葵青警區、荃灣警區、大嶼山警區、沙田警區及機場警區聯同相關部門人員,昨日(27日)進行代號「冠軍」的反非法勞",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60384418/%E8%B7%A8%E9%83%A8%E9%96%80%E5%A4%9A%E5%8D%80%E6%8E%83%E9%BB%83%E5%85%BC%E6%89%93%E6%93%8A%E9%9D%9E%E6%B3%95%E5%8B%9E%E5%B7%A5-29%E7%94%B7%E5%A5%B3%E8%A2%AB%E6%8D%95",
+      "pubDate": "2026-08-27 19:34:33",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1169847438073139200716085.jpeg/b_3sMdxZw6PHz4Ph_wBDyfpBwFRvHZst_FjWI_xY1iM",
+      "keywords": [
+        "頭條新聞",
+        "香港新聞",
+        "香港01",
+        "國際新聞",
+        "新聞",
+        "即時新聞",
+        "hk01",
+        "港聞"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "24937c9dac1f707533d71b098a70ec5e",
+      "title": "跨部門新界南多處掃黃兼打擊非法勞工 29男女被捕",
+      "description": "警方表示,新界南總區機動部隊、葵青警區、荃灣警區、大嶼山警區、沙田警區及機場警區聯同相關部門人員,昨日(27日)進行代號「冠軍」的反非法勞",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60384418/%E8%B7%A8%E9%83%A8%E9%96%80%E6%96%B0%E7%95%8C%E5%8D%97%E5%A4%9A%E8%99%95%E6%8E%83%E9%BB%83%E5%85%BC%E6%89%93%E6%93%8A%E9%9D%9E%E6%B3%95%E5%8B%9E%E5%B7%A5-29%E7%94%B7%E5%A5%B3%E8%A2%AB%E6%8D%95",
+      "pubDate": "2026-08-27 19:34:33",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1169847438073139200716085.jpeg/b_3sMdxZw6PHz4Ph_wBDyfpBwFRvHZst_FjWI_xY1iM",
+      "keywords": [
+        "頭條新聞",
+        "香港新聞",
+        "香港01",
+        "國際新聞",
+        "新聞",
+        "即時新聞",
+        "hk01",
+        "港聞"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "100434ad465ea7cc118ce58955d45156",
+      "title": "特朗普放棄伊朗備忘錄,霍爾木茲海峽談判陷僵局,油價風險升溫",
+      "description": "特朗普總統此前在凡爾賽宮簽署的初步協議,由副總統JD萬斯協助談判促成,旨在重開霍爾木茲海峽,並啟動伊朗核計劃談判,以換取制裁鬆綁及德黑蘭獲取其被凍結資產的權利。然而,協議在數週內便宣告破裂,原因是伊朗隨後對船隻發動攻擊,試圖鞏固對該水道的控制權。特朗普其後轉向最大經濟壓力政策,據《華爾街日報》報導,他已對該備忘錄...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BE%E6%A3%84%E4%BC%8A%E6%9C%97%E5%82%99%E5%BF%98%E9%8C%84-%E9%9C%8D%E7%88%BE%E6%9C%A8%E8%8C%B2%E6%B5%B7%E5%B3%BD%E8%AB%87%E5%88%A4%E9%99%B7%E5%83%B5%E5%B1%80-%E6%B2%B9%E5%83%B9%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%BA%AB-191521521.html",
+      "pubDate": "2026-08-27 19:15:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4S17S_M.jpg",
+      "keywords": [
+        "特朗普",
+        "霍爾木茲海峽",
+        "伊朗",
+        "諒解備忘錄"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d850b8a45e97b082c6ad59c580a195ee",
+      "title": "景甜捲代孕風波 600億富豪孫宇晨起訴女方涉3千萬",
+      "description": "近日大陸女星景甜捲入了一宗涉及代孕的爭議事件,並與比特幣圈的知名大亨,身家估計有665億港元的孫宇晨發生法律糾紛。據聞景甜被指控收取富商男友",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384415/%E6%99%AF%E7%94%9C%E6%8D%B2%E4%BB%A3%E5%AD%95%E9%A2%A8%E6%B3%A2-600%E5%84%84%E5%AF%8C%E8%B1%AA%E5%AD%AB%E5%AE%87%E6%99%A8%E8%B5%B7%E8%A8%B4%E5%A5%B3%E6%96%B9%E6%B6%893%E5%8D%83%E8%90%AC",
+      "pubDate": "2026-08-27 19:08:22",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1169840161706479616731859.jpeg/4VnLXIA2-nS3__HW6LuF1Y93qpatwsu8Qlvje0Jb43s",
+      "keywords": [
+        "韓星",
+        "香港新聞",
+        "香港01",
+        "新聞",
+        "明星",
+        "藝人",
+        "即時娛樂",
+        "即時娛樂新聞",
+        "娛樂新聞",
+        "hk01"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "74c20f19020648fc3fcd277f541f002b",
+      "title": "川普稱與普丁進行「良好對話」 相信俄羅斯不會攻擊北約領土",
+      "description": "【彭博】-- 美國總統唐納德·川普表示,他不認為俄羅斯總統普丁會攻擊北約成員國。當前,隨著俄羅斯針對向烏克蘭提供武器和資金支持的國家,歐洲緊張局勢持續升溫。川普周四表示,他與普丁進行了「良好對話」,並稱:「他不會攻擊北約領土。」川普發表上述言論之前,美國中情局局長John Ratcliffe周二罕見地前往俄羅斯進...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%B7%9D%E6%99%AE%E7%A8%B1%E8%88%87%E6%99%AE%E4%B8%81%E9%80%B2%E8%A1%8C-%E8%89%AF%E5%A5%BD%E5%B0%8D%E8%A9%B1-%E7%9B%B8%E4%BF%A1%E4%BF%84%E7%BE%85%E6%96%AF%E4%B8%8D%E6%9C%83%E6%94%BB%E6%93%8A%E5%8C%97%E7%B4%84%E9%A0%98%E5%9C%9F-190712281.html",
+      "pubDate": "2026-08-27 19:07:12",
       "source_name": "Yahoo Finance",
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "retirement",
-        "business",
-        "401k",
-        "investment tools",
-        "business news",
-        "stock",
-        "quote",
-        "investor",
-        "stocks",
-        "finance",
-        "economy",
-        "market news",
-        "personal finance",
-        "suze orman",
-        "stock research",
-        "tax",
-        "mortgage",
-        "real estate",
-        "track portfolio",
-        "financial information"
+        "川普",
+        "普丁",
+        "ratcliffe",
+        "北約國家",
+        "北約",
+        "華爾街日報",
+        "唐納德·川普",
+        "俄羅斯",
+        "trump",
+        "與普丁",
+        "美國",
+        "ratcliffe周二",
+        "約成",
+        "中情局"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "141853c4fbbf741f7fb8d5ed3bc72e76",
-      "title": "加拿大9月8日起 對約700種美國進口貨品加徵報復性關稅 最高50%",
-      "description": "路透社報道,加拿大周二宣布,將對總值276億加元(約199.4億美元/約1,555億港元)的美國進口貨品加徵報復性關稅,與美方新關稅「以額對額、以率對率」反制。新措施將於9月8日生效,涉及約700種產品。 700種貨品加徵15%至50% 鋼鋁最高50% 加拿大政府表示,相關貨品將分別加徵15%、25%及50%關稅。其中鋼鐵、鋁材、家具及服裝等部分重要產品稅率達50%;芝士、家電及部分海產加徵25%",
-      "link": "https://www.stheadline.com/realtime-world/3608212/%E5%8A%A0%E6%8B%BF%E5%A4%A79%E6%9C%888%E6%97%A5%E8%B5%B7-%E5%B0%8D%E7%B4%84700%E7%A8%AE%E7%BE%8E%E5%9C%8B%E9%80%B2%E5%8F%A3%E8%B2%A8%E5%93%81%E5%8A%A0%E5%BE%B5%E5%A0%B1%E5%BE%A9%E6%80%A7%E9%97%9C%E7%A8%85-%E6%9C%80%E9%AB%9850",
-      "pubDate": "2026-08-25 15:43:19",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/70490445c5db188159f8973b99622d80/2026-08/AP26234773742119.jpg",
+      "id": "85ac37aaa175a7da2932677b5679eedd",
+      "title": "8月夜期收市報25476點 跌122點",
+      "description": "<匯港通訊> 8月夜期期指收市報25476點,跌122點,低水90點,成交4658張;9月夜期期指報25395點,跌125點,低水171點,成交7788張。",
+      "link": "https://hk.finance.yahoo.com/news/8%E6%9C%88%E5%A4%9C%E6%9C%9F%E6%94%B6%E5%B8%82%E5%A0%B125476%E9%BB%9E-%E8%B7%8C122%E9%BB%9E-190500068.html",
+      "pubDate": "2026-08-27 19:05:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": [
-        "美國",
-        "關稅",
-        "加拿大"
+        "<匯港通訊>"
       ],
       "category": [
-        "business",
-        "top"
+        "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
     },
     {
-      "id": "07bcbfdf0db65fda8ea18f8543966d16",
-      "title": "堪薩斯城聯儲主席施密德:利率未限制經濟,暗示支持加息",
-      "description": "Investing.com - 堪薩斯城聯邦儲備銀行行長傑弗里·施密德(Jeffrey Schmid)週四表示,當前利率水平並未對經濟構成限制,暗示他仍支持進一步加息,以將通膨率拉回2%的目標水準。",
-      "link": "https://hk.finance.yahoo.com/news/%E5%A0%AA%E8%96%A9%E6%96%AF%E5%9F%8E%E8%81%AF%E5%84%B2%E4%B8%BB%E5%B8%AD%E6%96%BD%E5%AF%86%E5%BE%B7-%E5%88%A9%E7%8E%87%E6%9C%AA%E9%99%90%E5%88%B6%E7%B6%93%E6%BF%9F-%E6%9A%97%E7%A4%BA%E6%94%AF%E6%8C%81%E5%8A%A0%E6%81%AF-125215008.html",
-      "pubDate": "2026-08-27 12:52:15",
+      "id": "579ed472bb98402a3efd97993d02c539",
+      "title": "聯準會柯林斯:通膨數據喜憂參半,不排除再度升息",
+      "description": "Investing.com - 波士頓聯邦儲備銀行行長蘇珊·柯林斯(Susan Collins)週四表示,最新公布的美國通膨報告呈現喜憂參半的結果——整體數字雖高於預期,但推動通膨上升的因素未必需要以升息來應對。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E6%BA%96%E6%9C%83%E6%9F%AF%E6%9E%97%E6%96%AF-%E9%80%9A%E8%86%A8%E6%95%B8%E6%93%9A%E5%96%9C%E6%86%82%E5%8F%83%E5%8D%8A-%E4%B8%8D%E6%8E%92%E9%99%A4%E5%86%8D%E5%BA%A6%E5%8D%87%E6%81%AF-190415269.html",
+      "pubDate": "2026-08-27 19:04:15",
       "source_name": "Yahoo Finance",
-      "image_url": "https://content-media.investing.com/news/LYNXMPEM4P15W_M.jpg",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM3T0Z5_M.jpg",
       "keywords": [
         "聯準會",
-        "jeffrey schmid",
-        "堪薩斯",
-        "施密德",
-        "聯邦儲備銀行"
+        "通膨",
+        "柯林斯"
       ],
       "category": [
         "business"
       ],
-      "region": "hk",
-      "pinned": true
+      "region": "hk"
+    },
+    {
+      "id": "08e37671e1cba663297ab8a8906d906f",
+      "title": "米勒推出Copilot Builder焊接系統 具備適應性自動化功能",
+      "description": "米勒電氣製造公司(Miller Electric Mfg. LLC)作為領先的電弧焊接設備製造商,今日宣布推出由NovAITM驅動的Copilot Builder with Blue iQ。該焊接系統與Novarc Technologies合作開發,旨在協助製造商將機械人焊接應用於傳統上難以自動化的工序,這些工序因零件差異、裝配不一致、點焊以及大型複雜製造的挑戰而難以自動化。 許多製造工序仍未能實現傳統自動化,因為焊接條件並非總能預測。Copilot Builder with Blue iQ利用適應性智能,實時持續應對焊接變化,協助製造商處理更多應用,而無需大量重新編程或昂貴的夾具。 米勒電氣業務部門總監Sam Harvey指出:「自動化的價值已廣為人知,但許多製造應用仍難以透過傳統系統處理,因為其條件並非總能預測。」他續指:「製造商需要符合其營運實際情況的解決方案,因為零件裝配、接頭條件和生產需求可能因不同工序而異。透過Copilot Builder with Blue iQ,系統可隨時適應變化,協助製造商自動化更廣泛的焊接應用,提升生產力,並更有效利用其熟練勞動力,同時保持營運所需的靈活性。」 Novarc Technologies行政總裁兼聯合創辦人Soroush Karimzadeh表示:「為數據中心、造船、能源基礎設施和重型設備供應產品的製造商,正面對熟練焊工和編程員日益短缺,以及機械人焊接操作中零件可變性相關的挑戰。我們很高興能利用龐大的焊接數據,將我們的實體人工智能平台引入Copilot Builder,以解決這些機械人焊接挑戰。NovAITM是我們由人工智能驅動的電腦視覺解決方案,無需預先掃描接頭即可進行實時適應性焊接。透過我們的合作夥伴關係,焊接自動化現已可在更廣泛的焊接應用中實現。」 由NovAITM驅動的Copilot Builder with Blue iQ,將與Novarc的集中式企業焊接智能平台NovHubTM整合。NovHubTM透過連接焊接數據、影片、工藝參數和生產記錄,為機械人及機械化焊接操作提供可視性。這將生產數據轉化為可操作的見解,從而擴展系統的功能。 由NovAITM驅動的Copilot Builder with Blue iQ的主要技術包括:該系統可安裝於水平、垂直及倒置表面,以適應不同的工作空間和零件幾何形狀,並更好地整合到現有工作流程中。遙距操作有助提升安全性,讓操作員可遠離高溫和煙霧工作,而整合數據則支援持續的工藝改進。 米勒電氣製造公司總部設於威斯康辛州阿普爾頓,是Miller®品牌電弧焊接產品的全球領先製造商,亦是Illinois Tool Works Inc.(紐約證券交易所代號:ITW)的全資附屬公司。 Novarc Technologies Inc.是一家工業實體人工智能公司,透過開創企業焊接智能,為全球製造業革新焊接自動化。Novarc為電弧焊接機械人賦予感知和認知能力。目前,這些工業機械人若缺乏視覺智能,會導致代價高昂的錯誤,造成返工、報廢、重建和停機。Novarc的實體人工智能平台結合了實時電腦視覺、適應性控制和焊接智能,並透過無線軟件更新,將機械人焊接系統轉變為持續改進的實體人工智能終端。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16654791-%E7%B1%B3%E5%8B%92%E6%8E%A8%E5%87%BAcopilot-builder%E7%84%8A%E6%8E%A5%E7%B3%BB%E7%B5%B1-%E5%85%B7%E5%82%99%E9%81%A9%E6%87%89%E6%80%A7%E8%87%AA%E5%8B%95%E5%8C%96%E5%8A%9F%E8%83%BD",
+      "pubDate": "2026-08-27 19:01:27",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/b98ac3692b8a4020a738621d111cce2d_Copilot_Builder_with_BlueIQ_LF_FB.jpg",
+      "keywords": [
+        "copilot builder",
+        "novai",
+        "焊接自動化",
+        "blue iq",
+        "商業事",
+        "miller"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ddba46ab22d385155743454bb9c08aa8",
+      "title": "上午02時30分 天文台特別天氣提示:天文台發出特別天氣提示香港廣泛地區可能受大雨影響",
+      "description": "天文台於2026年8月28日凌晨2時30分發出特別天氣提示,預計未來兩至三小時內,香港廣泛地區可能受大雨影響。市民應提高警覺,並採取必要的安全措施。 大雨可能導致低窪地區出現水浸情況,駕駛人士需注意道路濕滑及視線受阻。市民外出時應攜帶雨具,並避免前往危險地區如河流或山坡附近。此外,請留意最新的天氣報告,以便作出適當的應對。 天文台提醒市民保持警惕,並密切留意天氣變化。如有需要,請聯絡相關部門尋求協助。 The post 上午02時30分 天文台特別天氣提示:天文台發出特別天氣提示香港廣泛地區可能受大雨影響 appeared first on 經濟一週 .",
+      "link": "https://www.edigest.hk/%E7%94%9F%E6%B4%BB/%E5%A4%A9%E6%96%87%E5%8F%B0-%E7%89%B9%E5%88%A5%E5%A4%A9%E6%B0%A3%E6%8F%90%E7%A4%BA-%E5%A4%A7%E9%9B%A8%E8%AD%A6%E5%91%8A-aplt2-100-2036040/",
+      "pubDate": "2026-08-27 19:00:39",
+      "source_name": "Edigest",
+      "image_url": "https://images.edigest.hk/wp-content/uploads/2025/08/6102915770909576456_12072579806895dc3ce6cae.jpg",
+      "keywords": [
+        "特別天氣提示",
+        "大雨警告",
+        "天文台",
+        "生活"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
     },
     {
       "id": "3e736cf758e5826798dc384a72c8fa2f",
@@ -2657,6 +2815,27 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "07bcbfdf0db65fda8ea18f8543966d16",
+      "title": "堪薩斯城聯儲主席施密德:利率未限制經濟,暗示支持加息",
+      "description": "Investing.com - 堪薩斯城聯邦儲備銀行行長傑弗里·施密德(Jeffrey Schmid)週四表示,當前利率水平並未對經濟構成限制,暗示他仍支持進一步加息,以將通膨率拉回2%的目標水準。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A0%AA%E8%96%A9%E6%96%AF%E5%9F%8E%E8%81%AF%E5%84%B2%E4%B8%BB%E5%B8%AD%E6%96%BD%E5%AF%86%E5%BE%B7-%E5%88%A9%E7%8E%87%E6%9C%AA%E9%99%90%E5%88%B6%E7%B6%93%E6%BF%9F-%E6%9A%97%E7%A4%BA%E6%94%AF%E6%8C%81%E5%8A%A0%E6%81%AF-125215008.html",
+      "pubDate": "2026-08-27 12:52:15",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://content-media.investing.com/news/LYNXMPEM4P15W_M.jpg",
+      "keywords": [
+        "聯準會",
+        "jeffrey schmid",
+        "堪薩斯",
+        "施密德",
+        "聯邦儲備銀行"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "d4590b342e139ee43625e2bfb34fe1a5",
@@ -10554,6 +10733,42 @@
       "region": "hk"
     },
     {
+      "id": "26485ea63e726337ddeeaffd3bf094d8",
+      "title": "《港樓》差估署:本港7月私宅售價指數自近三年高位回落0.46% 連升13個月斷纜 租金指數續創新高",
+      "description": "差估署公布,本港7月私宅售價指數自近三年高位回落0.46%,至321.5,十三個月升勢斷纜。本年首七個月累升7.3%,但較2025年3月所創逾八年低位仍高出12.8%。 實用面積100平方米以下的中小型單位,售價指數按月跌0.46%,本年首七個月累升7.4%。實用面積100平方米或以上大型單位,售價指數按月跌0....",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B7%AE%E4%BC%B0%E7%BD%B2-%E6%9C%AC%E6%B8%AF7%E6%9C%88%E7%A7%81%E5%AE%85%E5%94%AE%E5%83%B9%E6%8C%87%E6%95%B8%E8%87%AA%E8%BF%91%E4%B8%89%E5%B9%B4%E9%AB%98%E4%BD%8D%E5%9B%9E%E8%90%BD0-46-%E9%80%A3%E5%8D%8713%E5%80%8B%E6%9C%88%E6%96%B7%E7%BA%9C-025726790.html",
+      "pubDate": "2026-08-27 02:57:26",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "retirement",
+        "business",
+        "401k",
+        "investment tools",
+        "business news",
+        "stock",
+        "quote",
+        "investor",
+        "stocks",
+        "finance",
+        "economy",
+        "market news",
+        "personal finance",
+        "suze orman",
+        "stock research",
+        "tax",
+        "mortgage",
+        "real estate",
+        "track portfolio",
+        "financial information"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "369482d80b42734949a0278ec4d20523",
       "title": "渣打料人民幣中期看漲 上調明年匯率預測至6.46",
       "description": "<匯港通訊> 渣打上調人民幣兌美元匯率預測。該行發表研究報告指,最新預測今年底人民幣匯率將見6.65,高於原先的6.8,並將明年底的人民幣匯率預測由原先7顯著調高至為6.46,以反映其對人民幣的中期看漲觀點。報告指,看漲人民幣觀點是基於結構性經常帳表現強勁、中國 AI 競爭力迅速提升、股息支付後季節性因素改善,以...",
@@ -12707,6 +12922,26 @@
         "top"
       ],
       "region": "hk"
+    },
+    {
+      "id": "368cca36213863d90e6d87f2ba408a8c",
+      "title": "Nvidia上季業績勝預期 料下財年收入增長約70%高過預期",
+      "description": "Nvidia公布最新季度業績,盈利按年急升近1.3倍至596.9億美元,經調整每股盈利2.22美元,優於市場預期的2.09美元,表現再度超出分析師預期。 期內收入按年增長近1.1倍,達到962.2億美元,同樣高過市場預期的922.9億美元。作為集團增長引 擎的數據中心業務,收入按年升約1.2倍至890.2億美元,亦高於市場預期的858.3億美元。毛利率則為75%,與前一季度大致持平。 集團對本季度的收入預測為1,080億美元,按年增長近90%,市場平均預估則為1,052億美元,部分分析師的預測更超過1,100億美元。 首席財務官Colette Kress表示,需求即使在目前的規模下仍在加速增長,預計2028財年收入將增長約70%,高過市場估計的44%。她又指出,客戶的預測表明,明年增速可能翻倍。 行政總裁黃仁勳表示,公司從未提前一年提供業績指引,需求增長已超過70%。他補充,如果沒有供應限制,公司2028財年的業績展望將更高。 受業績理想帶動,公司股價在收市後延長交易時段升逾4%。",
+      "link": "https://www.bastillepost.com/hongkong/article/16648024-nvidia%E4%B8%8A%E5%AD%A3%E6%A5%AD%E7%B8%BE%E5%8B%9D%E9%A0%90%E6%9C%9F%E3%80%80%E6%96%99%E4%B8%8B%E8%B2%A1%E5%B9%B4%E6%94%B6%E5%85%A5%E5%A2%9E%E9%95%B7%E7%B4%8470%E9%AB%98%E9%81%8E%E9%A0%90%E6%9C%9F",
+      "pubDate": "2026-08-26 23:52:08",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2025/07/20250715_FI_source-web_Nvidia-1.jpg",
+      "keywords": [
+        "source-2",
+        "英偉達",
+        "錢財事"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "dfd29de00b8dd0c671bf79d636137102",
@@ -18446,6 +18681,26 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "141853c4fbbf741f7fb8d5ed3bc72e76",
+      "title": "加拿大9月8日起 對約700種美國進口貨品加徵報復性關稅 最高50%",
+      "description": "路透社報道,加拿大周二宣布,將對總值276億加元(約199.4億美元/約1,555億港元)的美國進口貨品加徵報復性關稅,與美方新關稅「以額對額、以率對率」反制。新措施將於9月8日生效,涉及約700種產品。 700種貨品加徵15%至50% 鋼鋁最高50% 加拿大政府表示,相關貨品將分別加徵15%、25%及50%關稅。其中鋼鐵、鋁材、家具及服裝等部分重要產品稅率達50%;芝士、家電及部分海產加徵25%",
+      "link": "https://www.stheadline.com/realtime-world/3608212/%E5%8A%A0%E6%8B%BF%E5%A4%A79%E6%9C%888%E6%97%A5%E8%B5%B7-%E5%B0%8D%E7%B4%84700%E7%A8%AE%E7%BE%8E%E5%9C%8B%E9%80%B2%E5%8F%A3%E8%B2%A8%E5%93%81%E5%8A%A0%E5%BE%B5%E5%A0%B1%E5%BE%A9%E6%80%A7%E9%97%9C%E7%A8%85-%E6%9C%80%E9%AB%9850",
+      "pubDate": "2026-08-25 15:43:19",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/70490445c5db188159f8973b99622d80/2026-08/AP26234773742119.jpg",
+      "keywords": [
+        "美國",
+        "關稅",
+        "加拿大"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "141844f970239542546b279fcb4ed356",
@@ -240288,6 +240543,20 @@
       "region": "hk"
     },
     {
+      "id": "012c5922015b9be1",
+      "title": "陸浩明陳詩欣結婚︱陸浩明女友陳詩欣背景大公開　Ayan理大時裝設計碩士身高1米73",
+      "description": "【6號 / 陸浩明 / 陳詩欣】現年47歲TVB藝人「6號」陸浩明與女友陳詩欣（Ayan）拍拖14年，二人不時放閃，可是總不肯「拉埋天窗」，一直被不少朋友催婚。在今日（8月28日），陸浩明終於宣布在馬...",
+      "link": "https://topick.hket.com/article/4184529",
+      "pubDate": "2026-08-28 15:03:00",
+      "source_name": "香港經濟日報",
+      "image_url": "https://static04.hket.com/res/v3/image/content/4180000/4184529/Ayan20260828_THUMB__300.png",
+      "keywords": [],
+      "category": [
+        "rss"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "1c12a3663d24362a",
       "title": "陸浩明結婚︱「6號」陸浩明結束14年愛情長跑　馬爾代夫向成功向女友Ayan求婚",
       "description": "【陸浩明 / 陳詩欣 / 6號】現年47歲的TVB藝人「6號」陸浩明，與模特兒女友陳詩欣（Ayan）拍拖超過十年，感情一直相當穩定。今日（8月28日），陸浩明於社交平台突然公布喜訊，上載多張在馬爾代夫...",
@@ -242456,7 +242725,5 @@
       "region": "hk",
       "pinned": true
     }
-  ],
-  "total": 12317,
-  "last_updated": "2026-08-28T15:10:19.647608"
+  ]
 }
