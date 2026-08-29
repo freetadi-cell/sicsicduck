@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-28T08:39:53.929628+08:00",
+  "last_updated": "2026-08-29T08:34:24.756767+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -102,22 +102,6 @@
             "note": "新資金定期存款",
             "source": "llm"
           }
-        },
-        "7d": {
-          "new_funds": {
-            "rate": 5.0,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 2.0,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
         }
       },
       "usd": {
@@ -132,22 +116,6 @@
         "6m": {
           "new_funds": {
             "rate": 3.3,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "7d": {
-          "new_funds": {
-            "rate": 10.0,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 4.0,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -174,22 +142,6 @@
         "12m": {
           "new_funds": {
             "rate": 1.3,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "7d": {
-          "new_funds": {
-            "rate": 11.8,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 3.5,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -350,11 +302,59 @@
       "type": "traditional",
       "logo_color": "#005594",
       "hkd": {
+        "1m": {
+          "new_funds": {
+            "rate": 2.35,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.35,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
+        "2m": {
+          "new_funds": {
+            "rate": 2.45,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.45,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
         "3m": {
           "new_funds": {
             "rate": 2.8,
             "min_deposit": 10000,
             "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.8,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
+        "4m": {
+          "new_funds": {
+            "rate": 2.8,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.8,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
             "source": "llm"
           }
         },
@@ -364,6 +364,12 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.95,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "12m": {
@@ -372,13 +378,47 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.95,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         }
       },
       "usd": {
+        "1m": {
+          "new_funds": {
+            "rate": 3.75,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 3.75,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
+        "2m": {
+          "new_funds": {
+            "rate": 3.9,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 3.9,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
         "3m": {
           "new_funds": {
-            "rate": 4.05,
+            "rate": 4.0,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -390,11 +430,31 @@
             "source": "llm"
           }
         },
+        "4m": {
+          "new_funds": {
+            "rate": 3.9,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 3.9,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
         "6m": {
           "new_funds": {
             "rate": 3.9,
             "min_deposit": 10000,
             "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 3.9,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
             "source": "llm"
           }
         },
@@ -404,16 +464,56 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 3.9,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         }
       },
       "cny": {
+        "1m": {
+          "new_funds": {
+            "rate": 1.3,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 1.3,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
+        "2m": {
+          "new_funds": {
+            "rate": 1.3,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 1.3,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
+          }
+        },
         "3m": {
           "new_funds": {
             "rate": 1.4,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 1.4,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "6m": {
@@ -422,6 +522,12 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 1.4,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "12m": {
@@ -429,6 +535,12 @@
             "rate": 1.4,
             "min_deposit": 10000,
             "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 1.4,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
             "source": "llm"
           }
         }
@@ -441,49 +553,9 @@
       "type": "traditional",
       "logo_color": "#C5001A",
       "hkd": {
-        "98d": {
-          "new_funds": {
-            "rate": 2.85,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "188d": {
-          "new_funds": {
-            "rate": 2.95,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "388d": {
-          "new_funds": {
-            "rate": 2.95,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 1.5,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "2m": {
-          "new_funds": {
-            "rate": 2.1,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
         "3m": {
           "new_funds": {
-            "rate": 2.75,
+            "rate": 2.9,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -491,7 +563,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 2.8,
+            "rate": 2.95,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -499,7 +571,7 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 2.8,
+            "rate": 2.95,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -507,49 +579,9 @@
         }
       },
       "usd": {
-        "98d": {
-          "new_funds": {
-            "rate": 3.75,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "188d": {
-          "new_funds": {
-            "rate": 3.85,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "388d": {
-          "new_funds": {
-            "rate": 3.85,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 3.1,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "2m": {
-          "new_funds": {
-            "rate": 3.35,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
         "3m": {
           "new_funds": {
-            "rate": 3.6,
+            "rate": 3.8,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -557,7 +589,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 3.7,
+            "rate": 3.9,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -565,7 +597,7 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 3.7,
+            "rate": 3.9,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -573,49 +605,9 @@
         }
       },
       "cny": {
-        "98d": {
-          "new_funds": {
-            "rate": 1.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "188d": {
-          "new_funds": {
-            "rate": 1.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "388d": {
-          "new_funds": {
-            "rate": 1.3,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 0.75,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "2m": {
-          "new_funds": {
-            "rate": 1.05,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
         "3m": {
           "new_funds": {
-            "rate": 1.15,
+            "rate": 1.2,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -623,7 +615,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 1.15,
+            "rate": 1.2,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -631,7 +623,7 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 1.25,
+            "rate": 1.3,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -815,13 +807,13 @@
         },
         "3m": {
           "new_funds": {
-            "rate": 2.79,
+            "rate": 2.8,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
           },
           "existing_funds": {
-            "rate": 2.59,
+            "rate": 2.7,
             "min_deposit": 10000,
             "note": "現有資金定期存款",
             "source": "llm"
@@ -829,13 +821,13 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 3.3,
+            "rate": 2.95,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
           },
           "existing_funds": {
-            "rate": 2.73,
+            "rate": 2.85,
             "min_deposit": 10000,
             "note": "現有資金定期存款",
             "source": "llm"
@@ -843,13 +835,13 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 3.03,
+            "rate": 3.05,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
           },
           "existing_funds": {
-            "rate": 2.83,
+            "rate": 2.95,
             "min_deposit": 10000,
             "note": "現有資金定期存款",
             "source": "llm"
@@ -881,6 +873,12 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.0,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "2m": {
@@ -889,13 +887,25 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.0,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "3m": {
           "new_funds": {
-            "rate": 3.0,
+            "rate": 2.45,
             "min_deposit": 10000,
             "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.45,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
             "source": "llm"
           }
         },
@@ -905,13 +915,25 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.45,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "6m": {
           "new_funds": {
-            "rate": 3.2,
+            "rate": 2.5,
             "min_deposit": 10000,
             "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.5,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
             "source": "llm"
           }
         },
@@ -921,6 +943,12 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.4,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "12m": {
@@ -928,6 +956,12 @@
             "rate": 2.4,
             "min_deposit": 10000,
             "note": "新資金定期存款",
+            "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.4,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
             "source": "llm"
           }
         }
@@ -964,12 +998,6 @@
             "rate": 2.45,
             "min_deposit": 10000,
             "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 2.15,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
             "source": "llm"
           }
         },
@@ -1070,7 +1098,7 @@
       "hkd": {
         "1m": {
           "new_funds": {
-            "rate": 2.08,
+            "rate": 2.4,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1078,7 +1106,7 @@
         },
         "3m": {
           "new_funds": {
-            "rate": 2.73,
+            "rate": 2.8,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1086,7 +1114,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 2.88,
+            "rate": 2.95,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1094,7 +1122,7 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 2.98,
+            "rate": 3.05,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1108,12 +1136,6 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 2.98,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
-            "source": "llm"
           }
         },
         "3m": {
@@ -1121,12 +1143,6 @@
             "rate": 3.65,
             "min_deposit": 10000,
             "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 3.48,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
             "source": "llm"
           }
         },
@@ -1136,12 +1152,6 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 3.58,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
-            "source": "llm"
           }
         },
         "12m": {
@@ -1149,12 +1159,6 @@
             "rate": 3.75,
             "min_deposit": 10000,
             "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 3.58,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
             "source": "llm"
           }
         }
@@ -1166,12 +1170,6 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 0.58,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
-            "source": "llm"
           }
         },
         "3m": {
@@ -1179,12 +1177,6 @@
             "rate": 1.25,
             "min_deposit": 10000,
             "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 0.98,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
             "source": "llm"
           }
         },
@@ -1194,12 +1186,6 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 1.03,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
-            "source": "llm"
           }
         },
         "12m": {
@@ -1207,12 +1193,6 @@
             "rate": 1.3,
             "min_deposit": 10000,
             "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 1.03,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
             "source": "llm"
           }
         }
@@ -1433,49 +1413,9 @@
       "type": "traditional",
       "logo_color": "#8B4513",
       "hkd": {
-        "1d": {
-          "new_funds": {
-            "rate": 0.001,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "7d": {
-          "new_funds": {
-            "rate": 0.01,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "14d": {
-          "new_funds": {
-            "rate": 0.01,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 0.1,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "2m": {
-          "new_funds": {
-            "rate": 0.1,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
         "3m": {
           "new_funds": {
-            "rate": 0.125,
+            "rate": 0.12,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1483,15 +1423,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 0.125,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "9m": {
-          "new_funds": {
-            "rate": 0.25,
+            "rate": 0.12,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1499,15 +1431,7 @@
         },
         "12m": {
           "new_funds": {
-            "rate": 0.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "24m": {
-          "new_funds": {
-            "rate": 0.25,
+            "rate": 0.2,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1515,46 +1439,6 @@
         }
       },
       "usd": {
-        "1d": {
-          "new_funds": {
-            "rate": 0.001,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "7d": {
-          "new_funds": {
-            "rate": 0.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "14d": {
-          "new_funds": {
-            "rate": 0.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 0.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "2m": {
-          "new_funds": {
-            "rate": 0.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
         "3m": {
           "new_funds": {
             "rate": 0.25,
@@ -1564,14 +1448,6 @@
           }
         },
         "6m": {
-          "new_funds": {
-            "rate": 0.25,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "9m": {
           "new_funds": {
             "rate": 0.25,
             "min_deposit": 10000,
@@ -1589,38 +1465,6 @@
         }
       },
       "cny": {
-        "7d": {
-          "new_funds": {
-            "rate": 0.35,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "14d": {
-          "new_funds": {
-            "rate": 0.35,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1m": {
-          "new_funds": {
-            "rate": 0.35,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "2m": {
-          "new_funds": {
-            "rate": 0.35,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
         "3m": {
           "new_funds": {
             "rate": 0.35,
@@ -1637,23 +1481,7 @@
             "source": "llm"
           }
         },
-        "9m": {
-          "new_funds": {
-            "rate": 0.35,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
         "12m": {
-          "new_funds": {
-            "rate": 0.35,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "24m": {
           "new_funds": {
             "rate": 0.35,
             "min_deposit": 10000,
@@ -1672,7 +1500,7 @@
       "hkd": {
         "1w": {
           "new_funds": {
-            "rate": 6.88,
+            "rate": 1.0,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1685,6 +1513,12 @@
           }
         },
         "1m": {
+          "new_funds": {
+            "rate": 1.6,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "llm"
+          },
           "existing_funds": {
             "rate": 1.6,
             "min_deposit": 10000,
@@ -1698,6 +1532,12 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 2.7,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "6m": {
@@ -1706,11 +1546,17 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
+          },
+          "existing_funds": {
+            "rate": 3.0,
+            "min_deposit": 10000,
+            "note": "現有資金定期存款",
+            "source": "llm"
           }
         },
         "12m": {
           "new_funds": {
-            "rate": 3.1,
+            "rate": 3.0,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -1903,12 +1749,6 @@
       "logo_color": "#00B4D8",
       "hkd": {
         "3m": {
-          "new_funds": {
-            "rate": 0.51,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
           "existing_funds": {
             "rate": 0.51,
             "min_deposit": 10000,
@@ -1917,12 +1757,6 @@
           }
         },
         "4m": {
-          "new_funds": {
-            "rate": 0.61,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
           "existing_funds": {
             "rate": 0.61,
             "min_deposit": 10000,
@@ -1931,12 +1765,6 @@
           }
         },
         "6m": {
-          "new_funds": {
-            "rate": 1.61,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
           "existing_funds": {
             "rate": 1.61,
             "min_deposit": 10000,
@@ -1945,12 +1773,6 @@
           }
         },
         "12m": {
-          "new_funds": {
-            "rate": 2.01,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
           "existing_funds": {
             "rate": 2.01,
             "min_deposit": 10000,
@@ -2177,25 +1999,13 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 0.25,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
-            "source": "llm"
           }
         },
         "1m": {
           "new_funds": {
-            "rate": 0.5,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
             "rate": 1.2,
             "min_deposit": 10000,
-            "note": "現有資金定期存款",
+            "note": "新資金定期存款",
             "source": "llm"
           }
         },
@@ -2205,81 +2015,45 @@
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
-          },
-          "existing_funds": {
-            "rate": 0.5,
-            "min_deposit": 10000,
-            "note": "現有資金定期存款",
-            "source": "llm"
           }
         },
         "3m": {
           "new_funds": {
-            "rate": 1.1,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
             "rate": 2.65,
             "min_deposit": 10000,
-            "note": "現有資金定期存款",
+            "note": "新資金定期存款",
             "source": "llm"
           }
         },
         "4m": {
           "new_funds": {
-            "rate": 1.2,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
             "rate": 2.65,
             "min_deposit": 10000,
-            "note": "現有資金定期存款",
+            "note": "新資金定期存款",
             "source": "llm"
           }
         },
         "6m": {
           "new_funds": {
-            "rate": 1.3,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
             "rate": 2.65,
             "min_deposit": 10000,
-            "note": "現有資金定期存款",
+            "note": "新資金定期存款",
             "source": "llm"
           }
         },
         "9m": {
           "new_funds": {
-            "rate": 1.3,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
             "rate": 2.7,
             "min_deposit": 10000,
-            "note": "現有資金定期存款",
+            "note": "新資金定期存款",
             "source": "llm"
           }
         },
         "12m": {
           "new_funds": {
-            "rate": 1.6,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
             "rate": 2.7,
             "min_deposit": 10000,
-            "note": "現有資金定期存款",
+            "note": "新資金定期存款",
             "source": "llm"
           }
         }
@@ -2496,14 +2270,6 @@
             "note": "新資金定期存款",
             "source": "llm"
           }
-        },
-        "1w": {
-          "new_funds": {
-            "rate": 5.0,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
         }
       },
       "usd": {
@@ -2514,28 +2280,12 @@
             "note": "新資金定期存款",
             "source": "llm"
           }
-        },
-        "1w": {
-          "new_funds": {
-            "rate": 5.0,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
         }
       },
       "cny": {
         "1m": {
           "new_funds": {
             "rate": 3.0,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          }
-        },
-        "1w": {
-          "new_funds": {
-            "rate": 10.0,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -2560,15 +2310,9 @@
         },
         "1m": {
           "new_funds": {
-            "rate": 2.5,
-            "min_deposit": 10000,
-            "note": "新資金定期存款",
-            "source": "llm"
-          },
-          "existing_funds": {
             "rate": 2.88,
             "min_deposit": 10000,
-            "note": "現有資金定期存款",
+            "note": "新資金定期存款",
             "source": "llm"
           }
         },
@@ -2705,7 +2449,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 2.95,
+            "rate": 2.9,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -2745,7 +2489,7 @@
       "usd": {
         "6m": {
           "new_funds": {
-            "rate": 3.9,
+            "rate": 3.85,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
@@ -2755,7 +2499,7 @@
       "cny": {
         "6m": {
           "new_funds": {
-            "rate": 1.35,
+            "rate": 1.3,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "llm"
