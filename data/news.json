@@ -1,74 +1,626 @@
 {
   "articles": [
     {
-      "id": "33ee5f38eb78082a196ae5d3ef54127d",
-      "title": "美團(03690)第二財季經調整盈利25.24億元人民幣按年增69%",
-      "description": "<匯港通訊> 美團(03690.HK)第二財季盈利21.55億元人民幣(下同),按年急升約4.9倍,而第一財季則錄虧損68.27億元;經調整盈利25.24億元,按年增長69%,首財季則錄得經調整虧損49.68億元。上季收入1046.4億元,按年升14.4%,按季亦升14.9%。按業務劃分,上季核心本地商業經營溢利...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%98-03690-%E7%AC%AC%E4%BA%8C%E8%B2%A1%E5%AD%A3%E7%B6%93%E8%AA%BF%E6%95%B4%E7%9B%88%E5%88%A925-24%E5%84%84%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3%E6%8C%89%E5%B9%B4%E5%A2%9E69-105403126.html",
-      "pubDate": "2026-08-28 10:54:03",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "id": "89b957b736b9dd0a9fe5f53272631b22",
+      "title": "五大行派成績表 中期合共賺6610.94億元 中行純利升幅最大",
+      "description": "內銀股昨日紛紛公布中期業績,「中工建農」及交行(3328)的五大國有行,在面對淨息差個別發展的背景下,合共純利6610.94億元(人民幣,下同),按年多賺3.3%至5.1%,當中以中行(3988)取勝,純利按年升5.1%為最多。五大行資產質素除交行外均有改善,不良貸款率均按年微降。 中行純利升最多達5.1% 五大國有行中,農行(1288)中期純利1463.8億元,增長4.9%,中行亦賺1235.9",
+      "link": "https://www.stheadline.com/stock-market/3609283/%E4%BA%94%E5%A4%A7%E8%A1%8C%E6%B4%BE%E6%88%90%E7%B8%BE%E8%A1%A8-%E4%B8%AD%E6%9C%9F%E5%90%88%E5%85%B1%E8%B3%BA661094%E5%84%84%E5%85%83-%E4%B8%AD%E8%A1%8C%E7%B4%94%E5%88%A9%E5%8D%87%E5%B9%85%E6%9C%80%E5%A4%A7",
+      "pubDate": "2026-08-28 12:56:36",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/c7b5bb1b09aca2ce32e6cbf224c0cd05/2026-08/KF__ricki_-_2026-08-28T204843_309.png",
       "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "e37f9ac90c73e553b9d88e06b636f50a",
-      "title": "台灣晶片恐受特朗普關稅波及 AI伺服器、Notebook或一併納稅",
-      "description": "美國總統特朗普政府據報正考慮推出新一輪半導體關稅,課稅範圍可能不只限於進口晶片,還將擴大至搭載晶片的手提電腦、遊戲機及資料中心伺服器等科技",
-      "link": "https://www.hk01.com/%E5%8F%B0%E7%81%A3%E6%96%B0%E8%81%9E/60384686/%E5%8F%B0%E7%81%A3%E6%99%B6%E7%89%87%E6%81%90%E5%8F%97%E7%89%B9%E6%9C%97%E6%99%AE%E9%97%9C%E7%A8%85%E6%B3%A2%E5%8F%8A-ai%E4%BC%BA%E6%9C%8D%E5%99%A8-notebook%E6%88%96%E4%B8%80%E4%BD%B5%E7%B4%8D%E7%A8%85",
-      "pubDate": "2026-08-28 11:30:39",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260806/1161993999691550720630471.jpeg/k3JSWZ0DXm7_nW9w9YVWJPVYtfMFjBdpL5Nvny-Tb58",
-      "keywords": [
-        "兩岸",
-        "台灣",
-        "大陸",
-        "中國",
-        "香港01"
-      ],
-      "category": [
-        "politics"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "fbcbf70b6e040c89769a328babbd90ad",
-      "title": "「海瑅灣」系列今日連沽28伙 有大手客斥逾1.1億元購15伙",
-      "description": "<匯港通訊> 由信和置業(00083.HK)、嘉里建設(00683.HK)、嘉華國際(00173.HK)、招商局置地(00978.HK)及港鐵公司(00066.HK)合作發展,位於港鐵康城站上蓋終極臨海壓軸的項目「海瑅灣」系列今日連沽28伙,套現逾2.1億港元。市場消息指,有大手客斥資逾1.1億港元,一連購入15...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B5%B7%E7%91%85%E7%81%A3-%E7%B3%BB%E5%88%97%E4%BB%8A%E6%97%A5%E9%80%A3%E6%B2%BD28%E4%BC%99-%E6%9C%89%E5%A4%A7%E6%89%8B%E5%AE%A2%E6%96%A5%E9%80%BE1-1%E5%84%84%E5%85%83%E8%B3%BC15%E4%BC%99-075906904.html",
-      "pubDate": "2026-08-28 07:59:06",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
-      "id": "c11d40130c65899ea5e6e2a7caf59de7",
-      "title": "特首李家超將於9月16日公布香港首份五年規劃",
-      "description": "香港特別行政區行政長官李家超周三表示,將於9月16日公布香港首份五年規劃,並隨後發表2026年施政報告。 他於記者會上指出,香港首份五年規劃,為特區未來五年的經濟及社會發展訂下藍圖,作為一份具前瞻性、策略性及方向性的指導文件。 他表示,施政報告是行政長官落實香港首個五年規劃的年度報告,以及因應實際情況的年度施政重點,兩者息息相關。 他補充說,施政報告將設定年度里程碑指標。而在往後年份,當年的施政報告將考慮到國際環境、經濟預測及最新動態,制定針對性措施,以持續推動實現藍圖的努力。 (CGTN)",
-      "link": "https://www.bastillepost.com/hongkong/article/16658901-%E7%89%B9%E9%A6%96%E6%9D%8E%E5%AE%B6%E8%B6%85%E5%B0%87%E6%96%BC9%E6%9C%8816%E6%97%A5%E5%85%AC%E5%B8%83%E9%A6%99%E6%B8%AF%E9%A6%96%E4%BB%BD%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83",
-      "pubDate": "2026-08-28 07:57:00",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/screenshot_8496411_01_FB.jpeg",
-      "keywords": [
-        "兩岸",
-        "cgtn"
-      ],
       "category": [
         "business",
         "top"
       ],
       "region": "hk",
       "pinned": true
+    },
+    {
+      "id": "26f4889ee6d2a1d887a40d5f6ccf9b71",
+      "title": "中銀香港料下半年樓價升幅或收窄 商業房地產市場續分化",
+      "description": "對於近期內地跨境追稅及收緊資金外流等措施,中銀香港管理層表示,這些措施有助引導資金回流合法渠道,長遠有利市場健康發展。而事實上,上半年整體",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60384744/%E4%B8%AD%E9%8A%80%E9%A6%99%E6%B8%AF%E6%96%99%E4%B8%8B%E5%8D%8A%E5%B9%B4%E6%A8%93%E5%83%B9%E5%8D%87%E5%B9%85%E6%88%96%E6%94%B6%E7%AA%84-%E5%95%86%E6%A5%AD%E6%88%BF%E5%9C%B0%E7%94%A2%E5%B8%82%E5%A0%B4%E7%BA%8C%E5%88%86%E5%8C%96",
+      "pubDate": "2026-08-28 12:32:07",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170106840818651136391586.jpeg/K_XtDsppsbZtrFrGMwVS68u-3MOoLyEDylV6IcpVeiE",
+      "keywords": [
+        "財經透視",
+        "香港新聞",
+        "香港01",
+        "地產消息",
+        "新聞",
+        "經濟",
+        "港股",
+        "財經網",
+        "財經新聞",
+        "財經台",
+        "hk01",
+        "股票",
+        "a股",
+        "恆生指數"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "5c3e0b780a2597dc2661ef6999198b01",
+      "title": "中銀香港三年股東回報計劃 擬有序增派息率 按經營等情況決定",
+      "description": "中銀香港公佈中期業績,並宣布董事會已批准實施2026至2028年三年股東回報計劃,包括在既定派息區間內有序提升常規派息比率,並計劃在此三年期間額",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60384706/%E4%B8%AD%E9%8A%80%E9%A6%99%E6%B8%AF%E4%B8%89%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%9B%9E%E5%A0%B1%E8%A8%88%E5%8A%83-%E6%93%AC%E6%9C%89%E5%BA%8F%E5%A2%9E%E6%B4%BE%E6%81%AF%E7%8E%87-%E6%8C%89%E7%B6%93%E7%87%9F%E7%AD%89%E6%83%85%E6%B3%81%E6%B1%BA%E5%AE%9A",
+      "pubDate": "2026-08-28 12:22:58",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170105089851920384729385.jpeg/-K-EKsLJhFlSt3OSojU-7epAidDlY_2CTXN_FE1zfxQ",
+      "keywords": [
+        "財經新聞",
+        "地產消息",
+        "恆生指數",
+        "港股",
+        "香港新聞",
+        "a股",
+        "財經透視",
+        "經濟",
+        "香港01",
+        "hk01",
+        "新聞",
+        "財經網",
+        "股票",
+        "財經台"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "e05502b4ae2448878c06a378a509fef2",
+      "title": "美聯邦法官裁定 國防部封殺 Anthropic 屬違法 破紀錄 IPO 料 10 月登場",
+      "description": "美國聯邦地區法院法官 Rita Lin 於一份長達 59 頁判決書中裁定,國防部將 Anthropic 列為「 [...]",
+      "link": "https://unwire.hk/2026/08/28/anthropic-pentagon-ban-illegal-ruling/ai/",
+      "pubDate": "2026-08-28 12:09:23",
+      "source_name": "Unwire",
+      "image_url": "https://cdn.unwire.hk/wp-content/uploads/2026/08/anthropicsettlementp.png",
+      "keywords": [
+        "anthropic",
+        "特朗普",
+        "人工智能",
+        "claude",
+        "ipo"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "8e971c6b4036528c85ad7e9c5858cce8",
+      "title": "演藝學院成立創新中心 夥數碼港與科企推藝術科技教育",
+      "description": "隨著創新科技持續發展,表演藝術的創作與呈現空間亦不斷拓展。演藝學院今日分別與數碼港及兩家科企簽署兩份合作備忘錄,支持演藝學院在明年初成立「演藝創新中心」,促進學術與業界及科技間的合作,推動人工智能電影製作與創意教育。 演藝學院與數碼港簽訂的合作備忘錄,將透過人才培育、知識交流、創業支援及產學合作,包括擴展實習及就業機會、連繫初創企業生態圈、促進學生創業,及探索建立沉浸式創作空間,惠及學生及科技創新",
+      "link": "https://www.stheadline.com/edu-news/3609284/%E6%BC%94%E8%97%9D%E5%AD%B8%E9%99%A2%E6%88%90%E7%AB%8B%E5%89%B5%E6%96%B0%E4%B8%AD%E5%BF%83-%E5%A4%A5%E6%95%B8%E7%A2%BC%E6%B8%AF%E8%88%87%E7%A7%91%E4%BC%81%E6%8E%A8%E8%97%9D%E8%A1%93%E7%A7%91%E6%8A%80%E6%95%99%E8%82%B2",
+      "pubDate": "2026-08-28 12:58:22",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/ul/st_edu/fd5f03a70ed0d6f24995fa0fcd08aa56/2026-08/Photo_1_JPG_.jpeg",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b508eb10d100e2ee7ce023709524c427",
+      "title": "施政報告|李家超落區遇蘇屋邨舊街坊 細數童年放紙鷂、玩燈籠",
+      "description": "新一份施政報告及香港五年規劃下月16日發表。行政長官李家超星期三(26日)下午到深水埗元州邨元盛樓家訪收集意見。期間到訪元州邨浸信會耆樂中心",
+      "link": "https://www.hk01.com/%E6%94%BF%E6%83%85/60384742/%E6%96%BD%E6%94%BF%E5%A0%B1%E5%91%8A-%E6%9D%8E%E5%AE%B6%E8%B6%85%E8%90%BD%E5%8D%80%E9%81%87%E8%98%87%E5%B1%8B%E9%82%A8%E8%88%8A%E8%A1%97%E5%9D%8A-%E7%B4%B0%E6%95%B8%E7%AB%A5%E5%B9%B4%E6%94%BE%E7%B4%99%E9%B7%82-%E7%8E%A9%E7%87%88%E7%B1%A0",
+      "pubDate": "2026-08-28 12:54:06",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260826/1169330543721058304109538.jpeg/KzvO5DsWqtBEnV1X-vTHX9spd6H80IsYU7Vac3a1WnM",
+      "keywords": [
+        "司長",
+        "高官",
+        "撥款",
+        "議員",
+        "行政會議",
+        "區議會",
+        "選舉",
+        "委員會",
+        "特區政府",
+        "立法會",
+        "林鄭月娥",
+        "班子",
+        "內閣",
+        "政治",
+        "候任特首",
+        "局長",
+        "特首",
+        "問責官員"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ae4abddfe0d5cc805368786d8043e358",
+      "title": "習近平在吉爾吉斯斯坦媒體發表署名文章",
+      "description": "中評社北京8月28日電/央視網消息,8月28日,在赴比什凱克對吉爾吉斯斯坦進行國事訪問並出席2026年上海合作組織峰會前夕,國家主席習近平在《吉爾吉斯斯坦言論報》、“卡巴爾”國家通訊社發表題為《攜手開創中吉關係高質量發展新局面》的署名文章。文章全文如下: 時維孟秋,天朗氣清。在這個收穫的時節,應扎帕羅夫總統邀請,我即將對吉爾吉斯斯坦進行國事訪問,並出席上海合作組織成員國元首理事會第二",
+      "link": "http://www.crntt.com/doc/7_0_107228834_1_0828205126.html",
+      "pubDate": "2026-08-28 12:51:26",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "18bf3638708a0bc14c1675ae7c68514d",
+      "title": "神舟二十三號太空人完成首次艙外活動",
+      "description": "中國載人航天工程辦公室表示,中國太空站上的神舟二十三號太空人,周五完成這次任務的首次艙外活動。 三名太空人朱楊柱、張志遠及黎家盈工作約五點五小時,於北京時間下午一時五十九分完成任務,在太空站機械臂及地面支援團隊協助下,順利完成所有預定任務。朱楊柱是繼三年前之後,第二次進行艙外活動,而張志遠則是首次出艙。 中國載人航天工程辦公室指出,朱楊柱及張志遠安裝碎片防護罩,並維修太空站的太陽能電池板,確保供電安全穩定。這是中國太空人第二次執行此類在軌維護任務。 三名太空人於5月24日乘坐神舟二十三號飛船升空,執行延長在軌任務。 據該辦公室表示,太空人抵達太空站後,已完成在軌交接、部署艙外應用載荷,並進行對接演練、醫療救援演練及全系統壓力應急響應演練。 中國載人航天工程辦公室補充,太空生命科學、人體研究、微重力物理及新太空技術等科學實驗和技術測試正穩步推進。未來數月,他們將進行科學實驗、技術測試、艙外應用載荷部署及公眾科普活動。 (CGTN)",
+      "link": "https://www.bastillepost.com/hongkong/article/16660723-%E7%A5%9E%E8%88%9F%E4%BA%8C%E5%8D%81%E4%B8%89%E8%99%9F%E5%A4%AA%E7%A9%BA%E4%BA%BA%E5%AE%8C%E6%88%90%E9%A6%96%E6%AC%A1%E8%89%99%E5%A4%96%E6%B4%BB%E5%8B%95",
+      "pubDate": "2026-08-28 12:50:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/screenshot_8496476_01_FB.jpeg",
+      "keywords": [
+        "兩岸",
+        "cgtn"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "806230d1805265d94d26bebe108c2591",
+      "title": "陳茂波:香港新加坡互相觀察學習砥礪 以「競合」精神為區域發展作貢獻",
+      "description": "財政司司長陳茂波表示,香港和新加坡之間固然存在良性競爭,雙方互相觀察、學習和砥礪,但面對複雜的地緣政治環境和全球經濟格局轉變,兩地更應在關鍵範疇加強合作,以「競合」精神充分發揮各自潛力,並為區域發展作出更大貢獻。 陳茂波出席新加坡國慶晚宴致辭時又說,新加坡在港投資存量達3100億元,逾2萬8千名新加坡人以香港為家。去年共有590間新加坡公司在港營運,按年增加14%,不少正擴展業務;兩家新加坡主要金融機構更合共斥資約40億元購入香港辦公室,反映對香港前景的信心。香港在新加坡的投資亦約達3400億元,香港科技園公司旗下創投基金去年底亦策略性投資一家新加坡科技企業,支持其全球業務拓展。 他說,兩地正共同面對人工智能、尤其是人工智能體帶來的機遇與挑戰,包括提升營運效率和生產力,以及應對勞動市場可能出現的變化。面對科技迅速發展,區域協作是推動各經濟體增長的最佳途徑;市場空間充足,關鍵在於攜手把「餅」做大。 陳茂波指出,香港正全力發展北部都會區,聯同粵港澳大灣區內地城市,匯聚創科、先進製造、世界級大學、人才和資本。北部都會區將面向區域和全球開放,成為連接大灣區與亞洲的重要節點,歡迎新加坡投資者和創業家參與。 陳茂波又說,香港和新加坡也應該攜手加強亞洲在全球事務中的聲音和影響力,包括就綠色及轉型金融分類標準、人工智能管治框架、跨境數據流動規則等推動協調立場,降低區內營商成本及提升整體競爭力。兩地亦可協助東盟成員和其他新興經濟體發展基建融資、金融服務、人才培育及制度建設,促進區域穩定與繁榮。",
+      "link": "https://www.bastillepost.com/hongkong/article/16660259-%E9%99%B3%E8%8C%82%E6%B3%A2%EF%BC%9A%E9%A6%99%E6%B8%AF%E6%96%B0%E5%8A%A0%E5%9D%A1%E4%BA%92%E7%9B%B8%E8%A7%80%E5%AF%9F%E5%AD%B8%E7%BF%92%E7%A0%A5%E7%A4%AA-%E4%BB%A5%E3%80%8C%E7%AB%B6%E5%90%88%E3%80%8D",
+      "pubDate": "2026-08-28 12:47:23",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260928_CR_Source-Web_PaulChan_02.png",
+      "keywords": [
+        "source-2",
+        "政事",
+        "陳茂波"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e5c10079fc3a67ea0202f77195b5b23f",
+      "title": "名古屋亞運2026射箭|香港運動員名單+賽程賽果+歷屆成績",
+      "description": "愛知.名古屋亞運2026的射箭項目將於9月26日至10月3日舉行,香港射箭隊將派出3男4女參賽。本文詳列香港射箭隊參賽名單、比賽日期及最新賽程。名古",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60366638/%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B2026%E5%B0%84%E7%AE%AD-%E9%A6%99%E6%B8%AF%E9%81%8B%E5%8B%95%E5%93%A1%E5%90%8D%E5%96%AE-%E8%B3%BD%E7%A8%8B%E8%B3%BD%E6%9E%9C-%E6%AD%B7%E5%B1%86%E6%88%90%E7%B8%BE",
+      "pubDate": "2026-08-28 12:42:53",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170109435863896064753891.jpeg/K-BF1Uzhcc7at379uphNhIV6ekuKgPsR52VnFedlZxU",
+      "keywords": [
+        "網球",
+        "香港新聞",
+        "體育新聞",
+        "籃球",
+        "香港01",
+        "體育消息",
+        "新聞",
+        "高爾夫球",
+        "hk01",
+        "nba",
+        "體育",
+        "f1賽車"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "73d027fb5dee26ec126488c5f5c3ce47",
+      "title": "泌尿科名醫葉維晉涉不當開藥案 時任診所護士作供遭質疑可信性",
+      "description": "泌尿外科專科醫生葉維晉涉不當向一名患末期肺癌的內地男子開藥一案,今日(28日)於醫務委員會續審,先後傳召兩名證人作供,包括案發時於葉維晉診",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60384722/%E6%B3%8C%E5%B0%BF%E7%A7%91%E5%90%8D%E9%86%AB%E8%91%89%E7%B6%AD%E6%99%89%E6%B6%89%E4%B8%8D%E7%95%B6%E9%96%8B%E8%97%A5%E6%A1%88-%E6%99%82%E4%BB%BB%E8%A8%BA%E6%89%80%E8%AD%B7%E5%A3%AB%E4%BD%9C%E4%BE%9B%E9%81%AD%E8%B3%AA%E7%96%91%E5%8F%AF%E4%BF%A1%E6%80%A7",
+      "pubDate": "2026-08-28 12:34:58",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170079428345073664625907.jpeg/dG6b2_M43_rVgm2uXCmC29EmcUC2pisaHaGaADShmgA",
+      "keywords": [
+        "頭條新聞",
+        "香港新聞",
+        "香港01",
+        "國際新聞",
+        "新聞",
+        "即時新聞",
+        "hk01",
+        "港聞"
+      ],
+      "category": [
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "a1e35de375d145d24060c701b5e0ac05",
+      "title": "鄭麗文將陪高虹安登記 新竹市藍營有雜音",
+      "description": "中評社台北8月28日電/國民黨新竹市黨部證實黨主席鄭麗文預計在9月2日陪同新竹市長高虹安登記參選,消息一出,讓部分藍營人士頗有微詞,認為此舉將造成選民認知混亂,不過藍營市議會黨團總召陳慶齡駁斥此說法,認為黨團的立場與共識就是全力支持高虹安連任,同時力挺每一位黨籍議員參選人。 中時網報導,國民黨在新竹市議員選戰提名徵召18人、民眾黨提名7人,共推高虹安爭取連任,且市黨部也證實黨主席鄭麗",
+      "link": "http://www.crntt.com/doc/7_0_107228833_1_0828203431.html",
+      "pubDate": "2026-08-28 12:34:31",
+      "source_name": "Crntt",
+      "image_url": null,
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6c38242c8f697978d4332d71dfd47c61",
+      "title": "AC米蘭歐霸盃抽籤遇英格蘭雙雄 艾摩林領軍鬥新特蘭般尼茅夫",
+      "description": "AC 米蘭與新任教練魯賓·艾摩林,在歐霸盃抽籤中抽到兩支英格蘭對手,將會主場迎戰新特蘭,並作客般尼茅夫。 艾摩林曾於曼聯執教14個月,期間大部分時間並不愉快,並於一月離任。他曾於2025年歐霸盃決賽中落敗。 AC 米蘭亦將在聖西路球場,於八場聯賽階段中主場迎戰賓菲加。AC 米蘭曾於1990年歐冠盃決賽中擊敗賓菲加。 祖雲達斯抽到兩支西班牙對手,皇家蘇斯達及切爾達維戈,並將前往中立場地,與以色列的夏普爾貝爾謝瓦對賽。 夏普爾貝爾謝瓦需要前往荷蘭、比利時、英格蘭及土耳其,分別與阿爾克馬爾、聖基萊斯聯、般尼茅夫及比錫達斯對賽。 上季贏得第三級別歐協聯冠軍的水晶宮,在被歐洲足協阻止參賽一年後,這次終於能夠參與歐霸盃。歐洲足協當時阻止其參賽,是因為水晶宮透過美國商人約翰·泰克斯特,與里昂足球會存在共同擁有權關係。 泰克斯特與這支法國球會切斷關係後,里昂將會在這項賽事中主場迎戰水晶宮。里昂現由另一位美國人米歇爾·康擁有。 些路迪將主場迎戰馬賽,並將兩次作客葡萄牙,分別對陣賓菲加及第二級別的托倫斯。些路迪曾於1967年在賓菲加主場贏得歐冠盃冠軍。托倫斯是葡萄牙盃的爆冷冠軍。 利華古遜在2024年決賽中落敗,此前他們在聯賽及歐霸盃均保持不敗。這次他們抽到法國球隊馬賽及里昂。 歐霸盃賽事將於9月16日至17日展開,第八及最後一輪賽事將於1月28日舉行。五月的決賽將在法蘭克福的球場舉行。 36支球隊將會分享歐洲足協總值5.65億歐元(約6.58億美元)的獎金。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16660242-ac%E7%B1%B3%E8%98%AD%E6%AD%90%E9%9C%B8%E7%9B%83%E6%8A%BD%E7%B1%A4%E9%81%87%E8%8B%B1%E6%A0%BC%E8%98%AD%E9%9B%99%E9%9B%84-%E8%89%BE%E6%91%A9%E6%9E%97%E9%A0%98%E8%BB%8D%E9%AC%A5%E6%96%B0%E7%89%B9",
+      "pubDate": "2026-08-28 12:31:42",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/26520c95b2c9e1677ee0b93da4173cce_Italy_Soccer_Serie_A_899_1_FB.jpg",
+      "keywords": [
+        "ac米蘭",
+        "歐霸盃",
+        "般尼茅夫",
+        "體育",
+        "魯賓艾摩林",
+        "新特蘭"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "031d6a92de7c6df66c18bb8b1f89e66b",
+      "title": "森林訪紅軍兩主將可候命",
+      "description": "【Now Sports】諾定咸森林領隊加士拿證實,隊中兩名球員傑斯韋治和懷恩耶斯,均可在作客利物浦時披甲上陣。加士拿出席賽前記者會,談及傑斯韋治(Morgan Gibbs-White)和懷恩耶斯(Ryan Yates)時說:「傑斯韋治可以披甲上陣,懷恩耶斯亦可候命,都是好消息。」傑斯韋治在開鑼首戰對列斯聯一役勇戰...",
+      "link": "https://hk.sports.yahoo.com/news/%E6%A3%AE%E6%9E%97%E8%A8%AA%E7%B4%85%E8%BB%8D%E5%85%A9%E4%B8%BB%E5%B0%87%E5%8F%AF%E5%80%99%E5%91%BD-123123840.html",
+      "pubDate": "2026-08-28 12:31:23",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/80b9021f6a296b5400aa822db875e0dae4d7f2cee1f2a6300bdb59252a077704/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F5b7847f3-7b23-4a27-981b-8cdc0f09b1b9",
+      "keywords": [
+        "white",
+        "周六",
+        "浦時",
+        "懷恩耶斯",
+        "yates",
+        "morgan gibbs",
+        "利物",
+        "林領隊",
+        "耶斯"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dec94b53791e2ceadd580b83782e8904",
+      "title": "李珉廷產女後回歸小螢幕 與金知碩搭檔演「離婚夫妻」展默契",
+      "description": "全新愛情韓劇《好,離婚吧》在8月19日首播,今個星期播出第3、4集。劇集改編自金賢京作家同名小說,故事圍繞著婚紗店共同代表白美英(李珉廷 飾) 與池元浩(金知碩 飾)結婚7年,女方因為公司與家庭的雙重壓力下疲憊不堪,最終提出離婚的故事。 《好,離婚吧》是李珉廷產女後首部拍攝的復出劇集,劇中她與金知碩搭檔扮演夫妻,兩人飾演結婚7年的婚紗店共同代表夫婦,從圍讀階段就展現了絕佳默契!製作組盛讚他們以扎實的演技征服拍攝現場,從喜劇到深情演技自如切換,將離婚前夫妻的複雜情感與矛盾細膩呈現!李珉廷亦表示:「這是一部能讓大家充分共鳴、一起哭一起笑的有趣電視劇。」讓人對這對「離婚夫婦」的化學反應充滿期待。 《好,離婚吧》改編自金賢京作家同名小說,由曾執導《Monster》、《擺飯桌的男人》的朱成宇導演與黃智彥編劇聯手打造,再加上黃金演員陣容,從開播前就備受關注!製作組透露:「這不是單純講述離婚的故事,而是兩人重新理解彼此的過程。面臨離婚危機的兩人將會做出怎樣的選擇,請大家一起關注!此外,李現瞋、李真伊、吳妍兒、鄭義諸等演員細膩的演技和角色間的默契,也是作品的另一種魅力,希望大家多多關注各個人物所創造的化學反應。」 劇中男女主角經營的婚紗店為他人打造最美瞬間,經營者自己的婚姻卻走向破裂!這種充滿諷刺的設定,讓人深刻反思婚姻與愛情的真正意義。香港地區觀眾可透過Viu免費追看《好,離婚吧》,逢星期三、四晚上線。 觀看相關影片按以下連結:https://youtu.be/ae0t-S_BfvQ?si=2tFZ_tHgvFkvaP2R",
+      "link": "https://www.bastillepost.com/hongkong/article/16659966-%E6%9D%8E%E7%8F%89%E5%BB%B7%E7%94%A2%E5%A5%B3%E5%BE%8C%E5%9B%9E%E6%AD%B8%E5%B0%8F%E8%9E%A2%E5%B9%95-%E8%88%87%E9%87%91%E7%9F%A5%E7%A2%A9%E6%90%AD%E6%AA%94%E6%BC%94%E3%80%8C%E9%9B%A2%E5%A9%9A%E5%A4%AB",
+      "pubDate": "2026-08-28 12:30:50",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260829_EN_Divorse_source-web_FB.jpg",
+      "keywords": [
+        "心韓",
+        "李珉廷",
+        "金知碩",
+        "好，離婚吧"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f21da50eb7e6c90922c71de83ef1a296",
+      "title": "「我是書店店員」,與台港關係的傷痕|端聞 Podcast",
+      "description": null,
+      "link": "https://theinitium.com/20260828-initium-audio-hongkong-taiwan-stand-with-bookstores-debate/",
+      "pubDate": "2026-08-28 12:30:39",
+      "source_name": "端傳媒",
+      "image_url": "https://storage.ghost.io/c/bd/52/bd52a4c1-eed6-4103-b487-e9a77365f6b3/content/images/2026/08/IMGL3251-copy-2.jpg",
+      "keywords": [
+        "獨立書店眼前路",
+        "播客",
+        "輿論現象",
+        "端聞 | 新聞播客",
+        "香港"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "20e9c44cc36b4680cf34ec949c6468aa",
+      "title": "吳雨霏成寄養媽媽直言難捨放手 談觀塘apm老婦摑女童事件極心痛",
+      "description": "歌手吳雨霏(Kary)今日(28/8)出席品牌活動,接受《香港01》訪問時大方分享家中再添新成員的喜訊。育有三名子女的她,正式宣布成為寄養家庭。對",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384698/%E5%90%B3%E9%9B%A8%E9%9C%8F%E6%88%90%E5%AF%84%E9%A4%8A%E5%AA%BD%E5%AA%BD%E7%9B%B4%E8%A8%80%E9%9B%A3%E6%8D%A8%E6%94%BE%E6%89%8B-%E8%AB%87%E8%A7%80%E5%A1%98apm%E8%80%81%E5%A9%A6%E6%91%91%E5%A5%B3%E7%AB%A5%E4%BA%8B%E4%BB%B6%E6%A5%B5%E5%BF%83%E7%97%9B",
+      "pubDate": "2026-08-28 12:30:24",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170066444184981504320619.png/VsaIueYaYqSeIelhLPEytn2Q-mcnEsZq2eYRqdnmEak",
+      "keywords": [
+        "韓星",
+        "香港新聞",
+        "香港01",
+        "新聞",
+        "明星",
+        "藝人",
+        "即時娛樂",
+        "即時娛樂新聞",
+        "娛樂新聞",
+        "hk01"
+      ],
+      "category": [
+        "entertainment"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5faa81d92335be0b1c57e7f030fa96de",
+      "title": "肩膊痛,舉唔到手定頸神經搗亂?",
+      "description": "肩膊痛舉唔到手,以為五十肩,自己拉筋、做運動。但若痛由頸部放射、伴隨手指麻痺,可能係頸椎神經根受壓,亂拉筋反致神經損傷。 五十肩(沾黏性肩關節囊炎)係肩關節囊發炎纖維化,活動範圍全面受限,主動同被動活動都受限,夜間痛劇,常見於40至60歲、糖尿病、甲狀腺病患者。頸椎神經根病變則係頸椎退化、椎間盤突出壓住神經,痛由頸後放射至肩、臂、手指,特定神經根分布區域麻痺,肩關節活動本身未必受限。 更弊係誤治。五十肩要活動,拉筋、物理治療、關節內注射。頸椎神經根受壓則要減少頸部活動,亂拉筋反致神經水腫加重。磁力共振可分辨,但多數人先試錯數月。 分辨要點:五十肩,肩關節無論自己郁或人幫郁都受限,痛集中肩前外側。頸椎神經根,頸部轉動誘發或加重,麻痺沿神經根走(如C6至拇指、C7至中指、C8至尾指),肩關節被動活動正常。 治療:五十肩,發炎期休息,粘連期積極拉筋,頑固者麻醉下手法鬆解或關節鏡。頸椎神經根,頸部牽引、神經鬆動術、核心肌群強化,嚴重手術減壓。肩膊痛唔一定係肩有問題,頸神經搗亂都要諗。",
+      "link": "https://www.bastillepost.com/hongkong/article/16563209-%E8%82%A9%E8%86%8A%E7%97%9B%EF%BC%8C%E8%88%89%E5%94%94%E5%88%B0%E6%89%8B%E5%AE%9A%E9%A0%B8%E7%A5%9E%E7%B6%93%E6%90%97%E4%BA%82%EF%BC%9F",
+      "pubDate": "2026-08-28 12:30:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/E9A0ADE79AAEE5B191E99BAAE88AB1E9A39BEFBC8CE9828AE5808BE69097E4BA82EFBC9F-4.jpg",
+      "keywords": [
+        "博客文章"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8251489ea2ec610e0fe2e665f991eb14",
+      "title": "運輸及物流局:樂見港鐵以平移建造法興建洪水橋站 提升工程效率",
+      "description": "港鐵屯馬綫洪水橋站將採用創新的「平移建造法」,將車站結構推移至營運中的屯馬綫高架橋位置,或令屯馬綫三個車站服務受影響。 運輸及物流局表示,將會是全球首次兼最大型、在營運中的鐵路高架橋上,以「平移建造法」興建的重鐵車站。當局已要求港鐵公司詳細評估對鐵路服務的影響,包括時間、受影響乘客數目等,並制定詳細臨時交通安排;選定鐵路服務需求相對較低的日子進行工程,將對乘客及市民的影響減至最低。 當局指,有待詳細評估完成後,港鐵會向政府報告,適時公布具體細節。當局又說,樂見洪水橋站採用有關技術,可大幅減低工程對屯馬綫營運構成的風險,並提升工程效率。",
+      "link": "https://www.bastillepost.com/hongkong/article/16660159-%E9%81%8B%E8%BC%B8%E5%8F%8A%E7%89%A9%E6%B5%81%E5%B1%80%EF%B9%95%E6%A8%82%E8%A6%8B%E6%B8%AF%E9%90%B5%E4%BB%A5%E5%B9%B3%E7%A7%BB%E5%BB%BA%E9%80%A0%E6%B3%95%E8%88%88%E5%BB%BA%E6%B4%AA%E6%B0%B4%E6%A9%8B",
+      "pubDate": "2026-08-28 12:22:07",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/20260928_CR_Source-Web_MTR_05.png",
+      "keywords": [
+        "社會事",
+        "港鐵",
+        "source-2",
+        "運輸及物流局"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "40694ba80eb59c9897e10735d845858d",
+      "title": "小輪車賽場秀絕活 智能騎行裝備齊亮相",
+      "description": "中評社北京8月28日電(記者 王教仁)小輪車只以前輪著地,車手騰身控車,喝彩聲隨動作響起;現場AI騎行眼鏡和台灣展商帶來的“自行車跑步機”也引人注目圍觀。2026北京國際自行車展28日在中國國際展覽中心朝陽館開幕。 展會於8月28日至30日舉行,匯聚百餘家產業鏈企業和150個騎行品牌,展品涵蓋整車、零部件、騎行裝備及智能設備。 賽場中央,一名車手壓低身體,前輪穩穩撐住車身,",
+      "link": "http://www.crntt.com/doc/7_0_107228784_1_0828201839.html",
+      "pubDate": "2026-08-28 12:18:38",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/107228787.jpg",
+      "keywords": [
+        "2026北京國際自行車展"
+      ],
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "21df987480f7e72b94f4fde792fa6653",
+      "title": "半島論壇:中韓交流可降東北亞陣營對立",
+      "description": "中評社首爾8月28日電(記者 崔銀珍)在中美戰略競爭、俄朝關係深化的背景下,東北亞是否正走向以中俄朝和美日韓為軸心的陣營對立?27日至28日在首爾舉行的2026國際半島論壇上,來自韓美中日俄的專家對此給出不同判斷。中國華東師範大學教授沈志華認為,中國今後的選擇將影響東北亞會否陷入“新冷戰”,擴大中韓交流、增進相互理解,可降低兩個三角走向對立的可能性;俄羅斯科學院的亞歷山大·沃龍佐夫則指出,目前",
+      "link": "http://www.crntt.com/doc/7_0_107228663_1_0828201707.html",
+      "pubDate": "2026-08-28 12:17:06",
+      "source_name": "Crntt",
+      "image_url": "https://hkpic.crntt.com/upload/202608/28/107228665.jpg",
+      "keywords": [
+        "中韓關係",
+        "半島和平",
+        "陣營化"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9c0936f75558c5f5c11368a0014e62ee",
+      "title": "軍隊反腐|張又俠被免軍委副主席 與劉振立巨乾生鍾紹軍同被罷免人大代表",
+      "description": "十四屆全國人大常委會第24次會議今日閉幕,決定免去張又俠的中華人民共和國中央軍委副主席職務,免去劉振立的軍委委員職務,同時罷免張又俠、劉振立,及原戰略支援部隊司令員巨乾生、中央軍委辦公廳原主任鍾紹軍4人的全國人大代表資格。 今年1月24日,官方公布中共中央政治局委員兼中央軍委副主席張又俠,以及中央軍委委員兼聯合參謀部參謀長劉振立,涉嫌嚴重違紀違法,被立案審查調查。 張又俠現年76歲,陝西渭南人,是",
+      "link": "https://www.stheadline.com/realtime-china/3609241/%E8%BB%8D%E9%9A%8A%E5%8F%8D%E8%85%90%E5%BC%B5%E5%8F%88%E4%BF%A0%E8%A2%AB%E5%85%8D%E8%BB%8D%E5%A7%94%E5%89%AF%E4%B8%BB%E5%B8%AD-%E8%88%87%E5%8A%89%E6%8C%AF%E7%AB%8B%E5%B7%A8%E4%B9%BE%E7%94%9F%E9%8D%BE%E7%B4%B9%E8%BB%8D%E5%90%8C%E8%A2%AB%E7%BD%B7%E5%85%8D%E4%BA%BA%E5%A4%A7%E4%BB%A3%E8%A1%A8",
+      "pubDate": "2026-08-28 12:16:12",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/6d03024cfbe8dd1653868ac21b0f33b0/2026-08/IMG_0041_0.jpeg",
+      "keywords": [
+        "軍隊反腐",
+        "劉振立",
+        "張又俠"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f748dcaf095e859ddb74f83ae81dc79d",
+      "title": "星島提質增效 上半年收入3.2億元 業績按年持平",
+      "description": "星島新聞集團(1105)公布中期業績,收入3.2億元,按年少7.3%,惟期內秉持穩健經營、提質增效的核心戰略,通過優化組織架構等多項舉措,以減少營運開支及提升資源使用效率,上半年虧損4561.5萬元,與去年持平。 期內,星島正式啟動「星島環球」戰略升級計劃,全面整合香港、內地、北美及歐洲等全球營運網絡,而新媒體部門持續升級優化核心產品《星島頭條》,新媒體平台上半年整體閱讀量及用戶活躍度顯著提升。對",
+      "link": "https://www.stheadline.com/stock-market/3609276/%E6%98%9F%E5%B3%B6%E6%8F%90%E8%B3%AA%E5%A2%9E%E6%95%88-%E4%B8%8A%E5%8D%8A%E5%B9%B4%E6%94%B6%E5%85%A532%E5%84%84%E5%85%83-%E6%A5%AD%E7%B8%BE%E6%8C%89%E5%B9%B4%E6%8C%81%E5%B9%B3",
+      "pubDate": "2026-08-28 12:13:23",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/7c890c34cbc817455066b795b2986a4d/2026-08/images_7.jpg",
+      "keywords": null,
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "574bdea9a9447f6f3176706980977557",
+      "title": "斯威士蘭再接收兩名美國遣返移民 惹人權組織批評",
+      "description": "南部非洲國家斯威士蘭當局表示,再有兩名由美國遣返的移民抵達當地。這次遣返是根據兩國之間一份協議進行,但該協議惹來人權組織批評。 斯威士蘭政府周四晚發表聲明,形容該批人士為「第三國國民」,指他們來自拉丁美洲,並在美國與斯威士蘭磋商及達成協議後抵達。這是自2025年7月首批被遣返者抵達以來,美國向非洲內陸王國斯威士蘭送抵的第五批被遣返者。 部分較早前被遣返者已獲遣返原居地。一名牙買加男子於9月被遣返原居地,而一名柬埔寨男子在高度設防監獄被扣押五個月後,於3月獲釋等候遣返。 倡議者表示,特朗普政府推行打擊移民措施,根據多份通常屬秘密的協議,已將數千人遣返至24個並非他們原居地的國家。 移民律師指出,這種做法被用作法律漏洞,間接將部分尋求庇護者遣返至他們逃離的國家。 估計有11份相關協議是與非洲國家簽訂,包括盧旺達、加納、喀麥隆、剛果、烏干達、塞拉利昂及中非共和國。 特朗普政府選擇與非洲國家簽訂遣返協議並支付金錢的做法亦備受審視,因為許多國家,包括斯威士蘭、南蘇丹及赤道幾內亞,均以高壓統治聞名,人權紀錄惡劣。 斯威士蘭國王姆斯瓦蒂三世長期被指打壓民主運動,有時更採取暴力手段。 利比里亞已成為特朗普政府擴大第三國遣返計劃的焦點,該國同意接收超1200名移民,是迄今最大批,並於本月迎接首批被遣返者。 今年7月,牙買加政府表示,其三名被遣返至斯威士蘭的公民中,有兩人已正式拒絕遣返至這個加勒比海國家。 斯威士蘭政府未有確認兩名最新被遣返者的身份,亦未披露他們的國籍,或說明他們將在該國逗留多久。 民主及公民權利組織一直透過跨境示威、訴訟及公開反對,強烈反對斯威士蘭與美國簽訂的秘密協議,以接收第三國被遣返者。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16660166-%E6%96%AF%E5%A8%81%E5%A3%AB%E8%98%AD%E5%86%8D%E6%8E%A5%E6%94%B6%E5%85%A9%E5%90%8D%E7%BE%8E%E5%9C%8B%E9%81%A3%E8%BF%94%E7%A7%BB%E6%B0%91-%E6%83%B9%E4%BA%BA%E6%AC%8A%E7%B5%84%E7%B9%94%E6%89%B9%E8%A9%95",
+      "pubDate": "2026-08-28 12:10:07",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/73724e3fe524311e03ff41e473f91aea_Eswatini_US_Deportees_41333_FB.jpg",
+      "keywords": [
+        "大視野",
+        "遣返移民",
+        "人權",
+        "美國",
+        "特朗普政府",
+        "斯威士蘭"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b7588d604b167fe0682077fdde21b288",
+      "title": "伊朗國安高官否認密謀暗殺特朗普幼子 稱是內塔尼亞胡謊言",
+      "description": "針對外界傳言伊朗正密謀刺殺美國總統特朗普(Donald Trump)幼子巴倫(Barron Trump),伊朗最高國家安全委員會秘書雷扎伊(Mohsen Rezaei)8月27",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60384701/%E4%BC%8A%E6%9C%97%E5%9C%8B%E5%AE%89%E9%AB%98%E5%AE%98%E5%90%A6%E8%AA%8D%E5%AF%86%E8%AC%80%E6%9A%97%E6%AE%BA%E7%89%B9%E6%9C%97%E6%99%AE%E5%B9%BC%E5%AD%90-%E7%A8%B1%E6%98%AF%E5%85%A7%E5%A1%94%E5%B0%BC%E4%BA%9E%E8%83%A1%E8%AC%8A%E8%A8%80",
+      "pubDate": "2026-08-28 12:01:58",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20250413/988046084486205440672348.jpeg/el6WKPwx_Mft7b0t0xQDAfXq8q8d5OtmK2pfXytqX18",
+      "keywords": [
+        "世界新聞",
+        "國際",
+        "香港01",
+        "hk01",
+        "新聞",
+        "國際新聞",
+        "環球"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "526e43483827a0f22c08f4442538518d",
+      "title": "日本爆紅「睡前拉筋操」每天只需1分鐘改善骨盆傾斜!3組動作各做10次",
+      "description": "都市人經常久坐不動,容易引致骨盆歪斜、下腹突出及入睡困難等問題。最近日本媽媽「lana__stretch」分享一組睡前療癒拉筋動作,每晚只需花 1 分鐘進行這組伸展,就能讓疲憊的身體徹底放鬆。不少體驗過的網民表示,這套動作不僅能舒緩髖關節繃緊、改善睡眠質素,更能順帶收緊小腹、修正體態。 【同場加映】肚腩分兩層?肚腩大但手腳瘦?營養師教分4種肚腩 踢走壓力肚啤酒肚 睡前1分鐘三步伸展指引 這套爆紅伸",
+      "link": "https://www.stheadline.com/exercise/3608078/%E6%97%A5%E6%9C%AC%E7%88%86%E7%B4%85%E7%9D%A1%E5%89%8D%E6%8B%89%E7%AD%8B%E6%93%8D%E6%AF%8F%E5%A4%A9%E5%8F%AA%E9%9C%801%E5%88%86%E9%90%98%E6%94%B9%E5%96%84%E9%AA%A8%E7%9B%86%E5%82%BE%E6%96%9C3%E7%B5%84%E5%8B%95%E4%BD%9C%E5%90%84%E5%81%9A10%E6%AC%A1",
+      "pubDate": "2026-08-28 12:01:35",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/9e9c65ed0cb37b0672f060da6cee7a5f/2026-08/20260826_health_sleepyoga.png",
+      "keywords": [
+        "拉筋"
+      ],
+      "category": [
+        "health",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d91912cf113faf2ddac11b63567a3518",
+      "title": "AI泡沬論|軟銀據悉再「撲水」百億美元 為OpenAI投資再融資",
+      "description": "軟銀集團據悉尋求另一筆100億美元貸款,為OpenAI投資進行再融資。彭博引述知情人士透露,軟銀集團正在尋求另一筆100億美元的貸款,以幫助籌集更多",
+      "link": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60384716/ai%E6%B3%A1%E6%B2%AC%E8%AB%96-%E8%BB%9F%E9%8A%80%E6%93%9A%E6%82%89%E5%86%8D-%E6%92%B2%E6%B0%B4-%E7%99%BE%E5%84%84%E7%BE%8E%E5%85%83-%E7%82%BAopenai%E6%8A%95%E8%B3%87%E5%86%8D%E8%9E%8D%E8%B3%87",
+      "pubDate": "2026-08-28 12:00:37",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20231107/798692615544377344208367.jpeg/ILpV5-GngKZgeXmcuP_eVFEWGtCc8EEi3Byiytwcoso",
+      "keywords": [
+        "財經新聞",
+        "地產消息",
+        "恆生指數",
+        "港股",
+        "香港新聞",
+        "a股",
+        "財經透視",
+        "經濟",
+        "香港01",
+        "hk01",
+        "新聞",
+        "財經網",
+        "股票",
+        "財經台"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d13c8c99c03cd425417a9e2e46de38b3",
+      "title": "永續美元債全攻略:入門者必讀,高息背後的機會與風險",
+      "description": "近年債券市場話題不斷,銀行類永續債券更是市場焦點。2026年3月,滙豐控股(0005.HK) 宣布發行總額25億美元的永久後償或可轉換證券,也就是市場俗",
+      "link": "https://www.hk01.com/%E9%A3%9F%E7%8E%A9%E8%B2%B7/60383450/%E6%B0%B8%E7%BA%8C%E7%BE%8E%E5%85%83%E5%82%B5%E5%85%A8%E6%94%BB%E7%95%A5-%E5%85%A5%E9%96%80%E8%80%85%E5%BF%85%E8%AE%80-%E9%AB%98%E6%81%AF%E8%83%8C%E5%BE%8C%E7%9A%84%E6%A9%9F%E6%9C%83%E8%88%87%E9%A2%A8%E9%9A%AA",
+      "pubDate": "2026-08-28 12:00:22",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260825/1168940331845029888924038.png/-r_xlPtc_C2vycOMIOBlrzy17_Dnte_LayXzs2sl87M",
+      "keywords": [
+        "網上媒體",
+        "網絡媒體",
+        "香港新聞",
+        "香港媒體",
+        "香港01",
+        "hk01",
+        "香港傳媒",
+        "新聞",
+        "于品海",
+        "香港零一"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b5e3113bf305423e807ce12f4e1d2023",
+      "title": "首屆「智影榜」AI 影像創作比賽 金牌經理人黃柏高任評審嘉賓",
+      "description": "由 Scene Score AI (香港國際人工智能影視有限公司)與 ZODA (數搭國際數據開源社區)攜手合辦的全新 AIGC 影視業界盛事 —「智影榜」(AIGC Fil",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60384672/%E9%A6%96%E5%B1%86-%E6%99%BA%E5%BD%B1%E6%A6%9C-ai-%E5%BD%B1%E5%83%8F%E5%89%B5%E4%BD%9C%E6%AF%94%E8%B3%BD-%E9%87%91%E7%89%8C%E7%B6%93%E7%90%86%E4%BA%BA%E9%BB%83%E6%9F%8F%E9%AB%98%E4%BB%BB%E8%A9%95%E5%AF%A9%E5%98%89%E8%B3%93",
+      "pubDate": "2026-08-28 12:00:08",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260828/1170052842321350656036185.jpeg/lpqnCGClJbt4OZPrq5UasXY89SPzoXjRQtlowkLZaMI",
+      "keywords": [
+        "即時娛樂",
+        "香港新聞",
+        "香港01",
+        "藝人",
+        "hk01",
+        "新聞",
+        "娛樂新聞",
+        "明星",
+        "即時娛樂新聞",
+        "韓星"
+      ],
+      "category": [
+        "technology",
+        "entertainment"
+      ],
+      "region": "hk"
     },
     {
       "id": "f0b7a74e8573d894af00fcbb623805be",
@@ -398,6 +950,27 @@
         "entertainment"
       ],
       "region": "hk"
+    },
+    {
+      "id": "e37f9ac90c73e553b9d88e06b636f50a",
+      "title": "台灣晶片恐受特朗普關稅波及 AI伺服器、Notebook或一併納稅",
+      "description": "美國總統特朗普政府據報正考慮推出新一輪半導體關稅,課稅範圍可能不只限於進口晶片,還將擴大至搭載晶片的手提電腦、遊戲機及資料中心伺服器等科技",
+      "link": "https://www.hk01.com/%E5%8F%B0%E7%81%A3%E6%96%B0%E8%81%9E/60384686/%E5%8F%B0%E7%81%A3%E6%99%B6%E7%89%87%E6%81%90%E5%8F%97%E7%89%B9%E6%9C%97%E6%99%AE%E9%97%9C%E7%A8%85%E6%B3%A2%E5%8F%8A-ai%E4%BC%BA%E6%9C%8D%E5%99%A8-notebook%E6%88%96%E4%B8%80%E4%BD%B5%E7%B4%8D%E7%A8%85",
+      "pubDate": "2026-08-28 11:30:39",
+      "source_name": "Hk01.com",
+      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260806/1161993999691550720630471.jpeg/k3JSWZ0DXm7_nW9w9YVWJPVYtfMFjBdpL5Nvny-Tb58",
+      "keywords": [
+        "兩岸",
+        "台灣",
+        "大陸",
+        "中國",
+        "香港01"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "66084bcc6751381ed03f2e6aaa4cd14f",
@@ -922,6 +1495,21 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "33ee5f38eb78082a196ae5d3ef54127d",
+      "title": "美團(03690)第二財季經調整盈利25.24億元人民幣按年增69%",
+      "description": "<匯港通訊> 美團(03690.HK)第二財季盈利21.55億元人民幣(下同),按年急升約4.9倍,而第一財季則錄虧損68.27億元;經調整盈利25.24億元,按年增長69%,首財季則錄得經調整虧損49.68億元。上季收入1046.4億元,按年升14.4%,按季亦升14.9%。按業務劃分,上季核心本地商業經營溢利...",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%98-03690-%E7%AC%AC%E4%BA%8C%E8%B2%A1%E5%AD%A3%E7%B6%93%E8%AA%BF%E6%95%B4%E7%9B%88%E5%88%A925-24%E5%84%84%E5%85%83%E4%BA%BA%E6%B0%91%E5%B9%A3%E6%8C%89%E5%B9%B4%E5%A2%9E69-105403126.html",
+      "pubDate": "2026-08-28 10:54:03",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "50adb0f32000844fe2320b6ea474e3c5",
@@ -4132,6 +4720,21 @@
       "region": "hk"
     },
     {
+      "id": "fbcbf70b6e040c89769a328babbd90ad",
+      "title": "「海瑅灣」系列今日連沽28伙 有大手客斥逾1.1億元購15伙",
+      "description": "<匯港通訊> 由信和置業(00083.HK)、嘉里建設(00683.HK)、嘉華國際(00173.HK)、招商局置地(00978.HK)及港鐵公司(00066.HK)合作發展,位於港鐵康城站上蓋終極臨海壓軸的項目「海瑅灣」系列今日連沽28伙,套現逾2.1億港元。市場消息指,有大手客斥資逾1.1億港元,一連購入15...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B5%B7%E7%91%85%E7%81%A3-%E7%B3%BB%E5%88%97%E4%BB%8A%E6%97%A5%E9%80%A3%E6%B2%BD28%E4%BC%99-%E6%9C%89%E5%A4%A7%E6%89%8B%E5%AE%A2%E6%96%A5%E9%80%BE1-1%E5%84%84%E5%85%83%E8%B3%BC15%E4%BC%99-075906904.html",
+      "pubDate": "2026-08-28 07:59:06",
+      "source_name": "Yahoo Finance",
+      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
       "id": "0cd6bb8089940ea2dfbb7293a65836d3",
       "title": "選彰化縣長?柯呈枋收到登記表稱要想一想",
       "description": "中評社彰化8月28日電/中國國民黨徵召的彰化縣長參選人魏平政訂9月3日辦理登記。不過,爭取國民黨提名失利的彰化縣前副縣長柯呈枋28日表示,有民眾拿一份縣長參選登記表給他,“這份期待,我會放在心裡。至於接下來的路,讓我再好好想一想,有些事情,不能急著決定”。“這一刻,心裡其實很難平靜”。 2026彰化縣長選舉,包括民進黨陳素月、國民黨魏平政、無黨籍邱建富宣布參選。其中魏平政雖然獲得國民",
@@ -4165,6 +4768,25 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "c11d40130c65899ea5e6e2a7caf59de7",
+      "title": "特首李家超將於9月16日公布香港首份五年規劃",
+      "description": "香港特別行政區行政長官李家超周三表示,將於9月16日公布香港首份五年規劃,並隨後發表2026年施政報告。 他於記者會上指出,香港首份五年規劃,為特區未來五年的經濟及社會發展訂下藍圖,作為一份具前瞻性、策略性及方向性的指導文件。 他表示,施政報告是行政長官落實香港首個五年規劃的年度報告,以及因應實際情況的年度施政重點,兩者息息相關。 他補充說,施政報告將設定年度里程碑指標。而在往後年份,當年的施政報告將考慮到國際環境、經濟預測及最新動態,制定針對性措施,以持續推動實現藍圖的努力。 (CGTN)",
+      "link": "https://www.bastillepost.com/hongkong/article/16658901-%E7%89%B9%E9%A6%96%E6%9D%8E%E5%AE%B6%E8%B6%85%E5%B0%87%E6%96%BC9%E6%9C%8816%E6%97%A5%E5%85%AC%E5%B8%83%E9%A6%99%E6%B8%AF%E9%A6%96%E4%BB%BD%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83",
+      "pubDate": "2026-08-28 07:57:00",
+      "source_name": "Bastillepost",
+      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/08/screenshot_8496411_01_FB.jpeg",
+      "keywords": [
+        "兩岸",
+        "cgtn"
+      ],
+      "category": [
+        "business",
+        "top"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "639ba49a9cd58e0ec7cf33a357a8ddac",
@@ -255973,6 +256595,6 @@
       "pinned": true
     }
   ],
-  "total": 12965,
-  "last_updated": "2026-08-29T08:08:02.981375"
+  "total": 12994,
+  "last_updated": "2026-08-29T09:07:34.007163"
 }
