@@ -1,0 +1,10 @@
+{
+  "id": "d8c167b86d00b72d6323289e5d01bf4f",
+  "title": "【中國AI開源新王】Z.ai GLM-5.3全面開源 效能直逼Claude Opus 4.8",
+  "source_name": "Edigest",
+  "link": "https://www.edigest.hk/%E6%9C%80%E6%96%B0%E8%B2%A1%E7%B6%93%E6%B6%88%E6%81%AF/z-ai-glm-5-3%E9%96%8B%E6%BA%90%E4%B8%8A%E6%9E%B6hugging-face%E6%95%88%E8%83%BD%E7%9B%B4%E9%80%BCclaude-opus-2036648/",
+  "rewritten_title": "Z.ai旗艦模型GLM-5.3全面開源 效能逼近Claude Opus 4.8",
+  "rewritten": "中國AI企業Z.ai將旗艦模型GLM-5.3以開放權重形式在Hugging Face及ModelScope上架，採Apache-2.0授權容許免費商用部署，輕量版GLM-5.3-Flash則以MIT授權釋出。模型為7440億參數MoE架構，實際運算僅啟用約400億參數，支援20萬Token長上下文，訓練規模逾28萬億Token。官方指其在Terminal Bench取得81.0分，逼近Claude…",
+  "status": "done",
+  "fetched_at": "2026-08-31T03:12:46"
+}
