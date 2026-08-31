@@ -1,0 +1,10 @@
+{
+  "id": "a59b9b575cc5e395b92d531cf40b3db2",
+  "title": "都叫你插快啲! ELECOM:USB 3.0 裝置插得太慢 有機會變回 USB 2.0",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/08/31/usb3-slow-insert-usb2/notebook/",
+  "rewritten_title": "ELECOM與Dell證實USB 3.0裝置插得太慢或被誤判為USB 2.0",
+  "rewritten": "日本週邊廠商ELECOM及電腦品牌Dell的官方技術文件均指出，若緩慢插入USB 3.0裝置，系統有機會將其識別為USB 2.0，導致傳輸速度由5 Gbps大幅降至480 Mbps。問題源於USB Type-A接頭設計：USB 2.0的四個接點位置較前，USB 3.0新增的五個SuperSpeed接點設於更深處；緩慢插入時，USB 2.0接點先接觸，電腦可能提前判斷裝置已連接，SuperSpeed…",
+  "status": "done",
+  "fetched_at": "2026-09-01T06:11:47"
+}
