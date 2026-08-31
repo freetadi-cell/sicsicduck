@@ -1,0 +1,10 @@
+{
+  "id": "7b9c086b05df5d410a0674b8fa2a1aea",
+  "title": "台灣AI平台Zeabur被入侵 大量用戶Anthropic、OpenAI、OpenRouter API金鑰遭盜用",
+  "source_name": "Bastillepost",
+  "link": "https://www.bastillepost.com/hongkong/article/16672708-%E5%8F%B0%E7%81%A3ai%E5%B9%B3%E5%8F%B0zeabur%E8%A2%AB%E5%85%A5%E4%BE%B5-%E5%A4%A7%E9%87%8F%E7%94%A8%E6%88%B6anthropic%E3%80%81openai%E3%80%81openrouter-api%E9%87%91%E9%91%B0%E9%81%AD%E7%9B%9C%E7%94%A8",
+  "rewritten_title": "台灣AI平台Zeabur遭入侵 Anthropic、OpenAI及OpenRouter金鑰外洩遭盜用",
+  "rewritten": "台灣雲端部署平台Zeabur證實8月27日發生資安事件，內部服務憑證遭未授權存取，攻擊者藉此取得部分用戶專案的環境變數紀錄，導致大量第三方服務憑證外洩。外洩範圍涵蓋OpenAI、Anthropic、OpenRouter、Gemini、GitHub、AWS、Cloudflare及Stripe等API金鑰，以及資料庫連線字串、密碼與JWT_Secret等，官方已確認Anthropic等金鑰遭盜用。有用…",
+  "status": "done",
+  "fetched_at": "2026-08-31T23:19:52"
+}
