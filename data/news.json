@@ -1,7 +1,22 @@
 {
-  "last_updated": "2026-09-04T00:00:14.226265",
-  "total": 88,
+  "last_updated": "2026-09-04T00:12:47.177678",
+  "total": 51,
   "articles": [
+    {
+      "id": "49712366dd9de1b34b36014ac5a6ff9b",
+      "title": "《香港01》十周年｜卓永興冀續以深度報道引領公眾　推動香港進步",
+      "description": "",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60386638/%E9%A6%99%E6%B8%AF01-%E5%8D%81%E5%91%A8%E5%B9%B4-%E5%8D%93%E6%B0%B8%E8%88%88%E5%86%80%E7%BA%8C%E4%BB%A5%E6%B7%B1%E5%BA%A6%E5%A0%B1%E9%81%93%E5%BC%95%E9%A0%98%E5%85%AC%E7%9C%BE-%E6%8E%A8%E5%8B%95%E9%A6%99%E6%B8%AF%E9%80%B2%E6%AD%A5",
+      "pubDate": "2026-09-04 00:10:14",
+      "fetched_at": "2026-09-04 00:10:14",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
     {
       "id": "cbd1347a989e58e1aeba48400fdd4fda",
       "title": "香港政協青年聯會成立十二周年暨第七屆執委會就職典禮圓滿成功",
@@ -333,37 +348,6 @@
       "region": "intl"
     },
     {
-      "id": "5a5b6b5e63022ae08a89dfdbd2710fb6",
-      "title": "Life, But Better",
-      "description": "Show all",
-      "link": "https://edition.cnn.com/interactive/life-but-better/",
-      "pubDate": "2026-09-03 23:53:20",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "CNN",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "international"
-      ],
-      "region": "intl"
-    },
-    {
-      "id": "37b7094a2c3713da",
-      "title": "凍齡女神｜陳自瑤45歲生日波點Look如少女　大批圈中好友齊聚慶生　羅天宇陳懿德情侶裝成焦點",
-      "description": "【陳自瑤 / 凍齡女神 / 宅男女神】陳自瑤（Yoyo）早前迎來45歲生日，與同為8月生日的名媛胡曦文齊齊舉行生日派對，並在社交平台分享慶生亮相，向來是圈中「凍齡女神」的Yoyo當日身穿復古波點套裝，...",
-      "link": "https://topick.hket.com/article/4188117",
-      "pubDate": "2026-09-03 22:33:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4188117/YOYO_0903_THUMBS_300.png",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "73e784ea0a626101",
       "title": "女神配對計劃2｜5大女神Portrait靚爆鏡！　何沛珈瞇眼派吻送心極甜美　郭珮文簡約Tube Top型格登場",
       "description": "【女神配對計劃2 / 何沛珈 /阮嘉敏 /陳若思 /俞可程 /郭珮文】由「金牌媒人」林盛斌（Bob）主持的TVB戀愛真人騷《女神配對計劃2》，將於本周日（6 日）起播映。第一季贏盡全城正評及熱話的《女...",
@@ -380,54 +364,6 @@
       "region": "hk"
     },
     {
-      "id": "9556119d79732cef",
-      "title": "未來3天截止過戶股預告",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188167",
-      "pubDate": "2026-09-03 19:30:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "99d84b25c35f35e2",
-      "title": "未來3天除淨股預告",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188166",
-      "pubDate": "2026-09-03 19:30:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "6ac639cedc02022e",
-      "title": "未來3天派息股預告",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188165",
-      "pubDate": "2026-09-03 19:30:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "acc219e7405edca6",
       "title": "媽樣年華︱周家怡忍受傷痛拍攝坦言壓力山大　泰妹楊雅文初登大銀幕幸得前輩鼓勵",
       "description": "由陳心遙監製、GenZ新晉導演胡翠兒執導，周家怡、金燕玲、陳湛文、楊雅文、張迪文主演「第七屆首部劇情電影計劃」大專組得獎作品《媽樣年華》，宣布於10月23日上映，並即將於9月中起追加口碑優先場。女主角...",
@@ -436,118 +372,6 @@
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
       "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4188075/HKFILM20260903_THUMB_300.png",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "051ffd1e282a6904",
-      "title": "深股通｜寧德時代（深：300750）為深股通10大成交活躍股榜首",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188074",
-      "pubDate": "2026-09-03 17:46:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "cb91093de8c76ddb",
-      "title": "港股通｜騰訊控股（00700）為港股通（深）10大活躍成交股榜首",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188073",
-      "pubDate": "2026-09-03 17:46:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "3565bc0393cc0520",
-      "title": "滬股通｜兆易創新（滬：603986）為滬股通10大成交活躍股榜首",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188072",
-      "pubDate": "2026-09-03 17:46:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "b253d4b7e5387634",
-      "title": "港股通｜（00100）為港股通（滬）10大活躍成交股榜首",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188071",
-      "pubDate": "2026-09-03 17:46:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "4ca193d6adbb54ea",
-      "title": "港股通｜騰訊控股（00700）為港股通活躍成交股榜首",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188070",
-      "pubDate": "2026-09-03 17:46:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "d98aa72bda3a8933",
-      "title": "北水新貴｜建滔集團相隔17日再打入港股通（滬）十大成交榜",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188079",
-      "pubDate": "2026-09-03 17:39:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "0f686c1d597b72fb",
-      "title": "北水炒D乜｜淨流入33.95億元，買南方恆生科技沽阿里",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188078",
-      "pubDate": "2026-09-03 17:39:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -716,38 +540,6 @@
       "region": "hk"
     },
     {
-      "id": "fa0e27fd895779f8",
-      "title": "今日復牌之上市公司一覽表",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4187695",
-      "pubDate": "2026-09-03 08:58:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "c0b29d9f5bbf7efe",
-      "title": "停牌上市公司一覽表",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4187685",
-      "pubDate": "2026-09-03 08:58:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "696e66481f55f78e",
       "title": "TVB小花｜聲夢小花開學日無預警宣布新身份　轉行做小學老師兼報讀碩士課程：應該會忙到飛起",
       "description": "【蔡愷穎 / 聲夢傳奇 / 小學老師】現年23歲的蔡愷穎（Lolita），參加選秀節目《聲夢傳奇》第一季止步15強，之後加入TVB並成為音樂廠牌「愛爆音樂」女歌手，發布過多首個人單曲，亦客串過熱播劇。...",
@@ -764,34 +556,38 @@
       "region": "hk"
     },
     {
-      "id": "410e4cd53f4aed58",
-      "title": "港滬深通｜港股總市值46.8萬億元，滬深97萬億人民幣",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4187677",
-      "pubDate": "2026-09-03 08:14:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
+      "id": "9286e5fa7b3d6221c6803089b1beeed9",
+      "title": "陳茂波:大灣區憑獨特優勢 助推亞太深度合作",
+      "description": "財政司司長陳茂波今日(3日)在「2026大灣區論壇」發表視像致辭,指出大灣區憑藉金融、創科及製造業等獨特優勢,能成為促進亞太合作及連接世界的重要平台。他強調,香港將發揮國際聯繫優勢,透過深化亞洲金融市場互聯互通、推動前沿科技落地,以及建設國際教育樞紐,為區域經濟協同發展產生乘數效應。 亞洲協同發展新階段 互聯互通深化金融市場 陳茂波表示,在地緣政治及科技變革推動下,亞洲協同發展正進入新階段。粵港澳",
+      "link": "https://www.stheadline.com/politics/3611172/%E9%99%B3%E8%8C%82%E6%B3%A2%E5%A4%A7%E7%81%A3%E5%8D%80%E6%86%91%E7%8D%A8%E7%89%B9%E5%84%AA%E5%8B%A2-%E5%8A%A9%E6%8E%A8%E4%BA%9E%E5%A4%AA%E6%B7%B1%E5%BA%A6%E5%90%88%E4%BD%9C",
+      "pubDate": "2026-09-03 04:09:43",
+      "source_name": "Stheadline",
+      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/4716158907dac693e60c5813232c04ab/2026-09/09031148123.png",
+      "keywords": [
+        "大灣區",
+        "陳茂波"
+      ],
       "category": [
-        "finance",
-        "local"
+        "top",
+        "business"
       ],
       "region": "hk"
     },
     {
-      "id": "b2e3b9d75abe48ca",
-      "title": "ET個股推介｜定單高增長  留意ASMPT（00522）",
-      "description": "今日ET個股推介——ASMPT（00522）。【揀選原因】ASMPT（00522）近年投資邏輯出現質變：市場開始由過往將其視為傳統半導體後段設備周期股，逐步重新定位為AI先進封裝設備平台。2025年A...",
-      "link": "https://invest.hket.com/article/4187395",
-      "pubDate": "2026-09-03 06:00:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187395/522FA_300.jpg",
-      "keywords": [],
+      "id": "0bf10c872405db64f8e2e4ae6672d8dc",
+      "title": "艾卡拿斯反勝晉級第3圈:",
+      "description": "【Now Sports】衛冕男單的西班牙球星艾卡拿斯,周三在美國公開賽次圈先輸一盤4:6,及後連贏3盤6:0、6:3、6:2,得以擊敗葡萄牙球手法利亞,艾卡拿斯賽後說:「首盤打得不夠耐性,令我付出代價。」艾卡拿斯(Carlos Alcaraz)在2022、2025年揚威美網,期望衛冕之旅可走得遠,而他今仗首盤多次...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%89%BE%E5%8D%A1%E6%8B%BF%E6%96%AF%E5%8F%8D%E5%8B%9D%E6%99%89%E7%B4%9A%E7%AC%AC3%E5%9C%88-040745993.html",
+      "pubDate": "2026-09-03 04:07:45",
+      "source_name": "All In Yahoo",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "keywords": [
+        "美國公開賽",
+        "艾卡拿斯",
+        "西班牙球星"
+      ],
       "category": [
-        "finance",
-        "local"
+        "sports"
       ],
       "region": "hk"
     },
@@ -865,44 +661,6 @@
       "region": "hk"
     },
     {
-      "id": "c4dadba9e7199bb54b35e210265116db",
-      "title": "簡樸房|首半年收逾7萬個分間單位申請 涉約2萬個住宅單位 梁文廣籲餘下業主盡快登記",
-      "description": "簡樸房制度登記期首輪早鳥計劃日前已截止。房屋局局長何永賢表示,一年登記期於今年3月1日開始,很高興見到有關業主和營運者都積極響應政策,截至本星期一(8月31日)的半年內,共收到涉及超過7萬個分間單位,即約2萬個住宅單位的登記申請。 何永賢:首半年申請佔全港分間單位逾六成 何永賢在社交平台表示,在早鳥優惠措施的推動下,當中8月的升幅非常顯著。香港現存約11萬個分間單位,換言之首半年遞交登記申請所涉及",
-      "link": "https://www.stheadline.com/society/3611176/%E7%B0%A1%E6%A8%B8%E6%88%BF%E9%A6%96%E5%8D%8A%E5%B9%B4%E6%94%B6%E9%80%BE7%E8%90%AC%E5%80%8B%E5%88%86%E9%96%93%E5%96%AE%E4%BD%8D%E7%94%B3%E8%AB%8B-%E6%B6%89%E7%B4%842%E8%90%AC%E5%80%8B%E4%BD%8F%E5%AE%85%E5%96%AE%E4%BD%8D-%E6%A2%81%E6%96%87%E5%BB%A3%E7%B1%B2%E9%A4%98%E4%B8%8B%E6%A5%AD%E4%B8%BB%E7%9B%A1%E5%BF%AB%E7%99%BB%E8%A8%98",
-      "pubDate": "2026-09-03 03:57:15",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a8cae999e13a831e94d2deb8b340f7d2/2026-09/d.jpeg",
-      "keywords": [
-        "簡樸房",
-        "分間單位",
-        "劣質劏房"
-      ],
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "d2800bf0bf78118488470b00068435c6",
-      "title": "簡樸房|首半年收逾7萬個分間單位申請 涉約2萬個住宅單位",
-      "description": "簡樸房制度登記期首輪早鳥計劃日前已截止。房屋局局長何永賢表示,一年登記期於今年3月1日開始,很高興見到有關業主和營運者都積極響應政策,截至本星期一(8月31日)的半年內,共收到涉及超過7萬個分間單位,即約2萬個住宅單位的登記申請。 何永賢在社交平台表示,在早鳥優惠措施的推動下,當中8月的升幅非常顯著。香港現存約11萬個分間單位,換言之首半年遞交登記申請所涉及的數目已佔全港分間單位逾六成,若以約8萬",
-      "link": "https://www.stheadline.com/society/3611176/%E7%B0%A1%E6%A8%B8%E6%88%BF%E9%A6%96%E5%8D%8A%E5%B9%B4%E6%94%B6%E9%80%BE7%E8%90%AC%E5%80%8B%E5%88%86%E9%96%93%E5%96%AE%E4%BD%8D%E7%94%B3%E8%AB%8B-%E6%B6%89%E7%B4%842%E8%90%AC%E5%80%8B%E4%BD%8F%E5%AE%85%E5%96%AE%E4%BD%8D",
-      "pubDate": "2026-09-03 03:57:15",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/a8cae999e13a831e94d2deb8b340f7d2/2026-09/d.jpeg",
-      "keywords": [
-        "簡樸房",
-        "分間單位",
-        "劣質劏房"
-      ],
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "a45b4ee54859742a3bd155a2030cfa3f",
       "title": "Uber 全球大裁員 3300 人 大削兩成管理層 佔總員工約一成 料每年慳 20 億美元 資金轉投自動駕駛",
       "description": "網約車平台 Uber 宣布進行大規模架構重組,計劃裁減約 3,300 個職位(佔全球總員工約一成)。此舉旨在打破臃腫的企業架構,大幅降低營運成本,並將資金重新分配至核心業務及自動駕駛領域。 管理層大瘦身與架構重組 Uber 行政總裁 Dara Khosrowshahi 指出,公司過往快速擴張導致管理層增加、協調工作繁重。為使公司運作更「簡單快捷」,Uber 推出以下精簡措施: 削減管理階層: 大幅削減行政總裁以下超過 7 個階層的管理人員數量,整體管理人員將減少約 20%(部分將調任為一般員工)。 精簡微型團隊: 將僅有 1.. The post Uber 全球大裁員 3300 人 大削兩成管理層 佔總員工約一成 料每年慳 20 億美元 資金轉投自動駕駛 appeared first on 經濟一週 .",
@@ -913,20 +671,6 @@
       "keywords": [
         "即時財經"
       ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "f45f298dcb348a3b0e5f61478bee63bc",
-      "title": "日本宮崎縣捕蝦漁船失聯 3名船員尋獲證實不治",
-      "description": "<匯港通訊> 日本宮崎縣日南市外海發生漁船事故。一艘載有3人的龍蝦捕撈漁船今早出海後失聯,當地漁業協會隨後展開搜救,並在海上尋獲3名船員,惟送院後均證實不治。據日本廣播協會(NHK)報道,宮崎海上保安部於上午接報,指涉事漁船未按原定計劃返回港口。當地漁業協會派出船隻前往預定作業海域搜尋,隨後在海面發現包括船長在內...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%97%A5%E6%9C%AC%E5%AE%AE%E5%B4%8E%E7%B8%A3%E6%8D%95%E8%9D%A6%E6%BC%81%E8%88%B9%E5%A4%B1%E8%81%AF-3%E5%90%8D%E8%88%B9%E5%93%A1%E5%B0%8B%E7%8D%B2%E8%AD%89%E5%AF%A6%E4%B8%8D%E6%B2%BB-035706672.html",
-      "pubDate": "2026-09-03 03:57:06",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
       "category": [
         "business"
       ],
@@ -948,208 +692,6 @@
       "category": [
         "top",
         "politics"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "83f80d9c07d716126acccdb57b2a0f97",
-      "title": "《大行》招銀國際微降英諾賽科(02577.HK)目標價至74.2元 上半年產品組合及利潤率改善",
-      "description": "招銀國際發表研究報告,英諾賽科(02577.HK)今年上半年收入按年增長50.6%至8.34億元人民幣(下同),遜於市場預期。期內毛利率由去年同期為6.8%及去年下半年的7.7%改善至11.6%,主要受惠於產能利用率提升、產品升級及產品組合優化,經營現金流亦轉正。高附加值應用收入按年增長70%至5.32億元,佔總...",
-      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E6%8B%9B%E9%8A%80%E5%9C%8B%E9%9A%9B%E5%BE%AE%E9%99%8D%E8%8B%B1%E8%AB%BE%E8%B3%BD%E7%A7%91-02577-hk-%E7%9B%AE%E6%A8%99%E5%83%B9%E8%87%B374-035544497.html",
-      "pubDate": "2026-09-03 03:55:44",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "investing",
-        "business",
-        "economy",
-        "personal finance",
-        "suze orman",
-        "business news",
-        "finance",
-        "investment tools",
-        "tax",
-        "track portfolio",
-        "financial information",
-        "401k",
-        "real estate",
-        "stock",
-        "quote",
-        "mutual funds",
-        "investor",
-        "stocks",
-        "stock research",
-        "mortgage"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "0b726303452ed3729fdb7dd9dc0bdd18",
-      "title": "瑞銀財管續看好中國科技行業 首選半導體設備 其次是互聯網",
-      "description": "<匯港通訊> 瑞銀財富管理投資總監辦公室發表報告認為,若秋季政策出現財政支持力度加大的明確信號,將有望提振投資者情緒,帶動中國股市新一輪反彈。但更重要的是盈利增長動能需有所提升,這是支持下一波補漲行情的關鍵。該行稱,近期公佈的第二季財報進一步支持其看好科技股。由於高度週期性,中國半導體生態系在 K 型增長格局中最...",
-      "link": "https://hk.finance.yahoo.com/news/%E7%91%9E%E9%8A%80%E8%B2%A1%E7%AE%A1%E7%BA%8C%E7%9C%8B%E5%A5%BD%E4%B8%AD%E5%9C%8B%E7%A7%91%E6%8A%80%E8%A1%8C%E6%A5%AD-%E9%A6%96%E9%81%B8%E5%8D%8A%E5%B0%8E%E9%AB%94%E8%A8%AD%E5%82%99-%E5%85%B6%E6%AC%A1%E6%98%AF%E4%BA%92%E8%81%AF%E7%B6%B2-035524936.html",
-      "pubDate": "2026-09-03 03:55:24",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "ba162211b4bde57d70ee40669855d140",
-      "title": "馬會上財年回饋社會共393億元 投注總額3,317億元創新高 從化馬場開跑延期",
-      "description": "香港賽馬會昨天(2日)舉行週年大會,並於會後公佈截至2026年6月30日止的2025/26財政年度業績。全財年,馬會的博彩及獎券投注總額創下3,317億港元的新高,為政府帶來293億港元博彩稅及利得稅;馬會所繳納的稅款,佔稅務局2025/26課稅年度整體稅收的6.4%。此外,馬會向獎券基金撥款14億港元;馬會慈善...",
-      "link": "https://hk.finance.yahoo.com/news/%E9%A6%AC%E6%9C%83%E4%B8%8A%E8%B2%A1%E5%B9%B4%E5%9B%9E%E9%A5%8B%E7%A4%BE%E6%9C%83%E5%85%B1393%E5%84%84%E5%85%83-%E6%8A%95%E6%B3%A8%E7%B8%BD%E9%A1%8D3-317%E5%84%84%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E5%BE%9E%E5%8C%96%E9%A6%AC%E5%A0%B4%E9%96%8B%E8%B7%91%E5%BB%B6%E6%9C%9F-035450419.html",
-      "pubDate": "2026-09-03 03:54:50",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "investing",
-        "business",
-        "economy",
-        "personal finance",
-        "suze orman",
-        "business news",
-        "finance",
-        "investment tools",
-        "tax",
-        "track portfolio",
-        "financial information",
-        "401k",
-        "real estate",
-        "stock",
-        "quote",
-        "mutual funds",
-        "investor",
-        "stocks",
-        "stock research",
-        "mortgage"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "bb13182b11993204b9641f18a1a14f3d",
-      "title": "【AI獨角獸赴港】Kimi母公司月之暗面傳秘密遞表上市!估值高達500億美元最快半年內掛牌",
-      "description": "內媒引述消息指出,國產人工智能(AI)大模型 Kimi 的開發商「月之暗面」(Moonshot AI),已於本周以保密形式向港交所(00388)遞交 A1 上市申請表格,正式啟動港股 IPO 流程。 秘密遞表啟動 IPO 最快半年內掛牌 A1 文件為企業申請在港交所主板上市時提交的正式申請表之一。消息指出,月之暗面已向投資者發送上市議案,目標最快在六個月內完成港股上市。對於市場傳聞,月之暗面官方回應表示「不予置評」,並指目前暫無可以披露的訊息。 F輪狂超購3倍 G輪估值衝上3,900億港元 月之暗面在資本市場上備受追捧。據早前報道,公司 F 輪融資的認購金額超出原本目標逾 3 倍,並已提前關閉。.. The post 【AI獨角獸赴港】Kimi母公司月之暗面傳秘密遞表上市!估值高達500億美元最快半年內掛牌 appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/news/kimi-moonshot-ai-secret-hk-ipo-a1-filing-valuation-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2037449/",
-      "pubDate": "2026-09-03 03:54:44",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/09/981c73fd-2667-47f0-af82-9e0b293bd2de_4028964656a98fc714dd82.png",
-      "keywords": [
-        "即時財經"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "2b67428d6a1535900fd36abc68b93447",
-      "title": "力挺蔣萬安 藍委:選舉不該選到攻擊小孩",
-      "description": "中評社台北9月3日電(記者 張嘉文)中國國民黨籍台北市長蔣萬安兒子蔣得立錄取台北市教育局國際交換學生計劃,獲補助赴美一年,引發綠營質疑未利益迴避。國民黨籍“立委”賴士葆今天受訪時力挺蔣萬安表示,相關申請及審查都有公開規定,不能因為申請人是市長的小孩就被政治化,“特別現在要選舉,去攻擊孩子很不應該,放過小孩子吧!” 蔣得立錄取名額僅25人的台北市2026學年度國際交換學生學習實施計劃,",
-      "link": "http://www.crntt.com/doc/7_0_160264298_1_0903115424.html",
-      "pubDate": "2026-09-03 03:54:23",
-      "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202609/3/160264300.JPG",
-      "keywords": [
-        "蔣得立",
-        "蔣萬安",
-        "賴士葆"
-      ],
-      "category": [
-        "top",
-        "politics"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "eb99fd1391e77471fb8ea6b6a0700631",
-      "title": "傳香港置地擬豪擲$10億美元進軍日本 彭博引述消息 :洽購東京紀尾井町及大手町地標",
-      "description": "彭博引述消息指,香港置地(Hongkong Land)正積極洽談進軍日本房地產市場,擬物色價值約 10 億美元(約 78 億港元)的東京核心區高端寫字樓、零售及酒店綜合項目,作為母公司怡和集團轉型為投資公司的核心策略之一。 🏢 一、 鎖定東京 CBD 地標 洽購兩大數十億美元項目 消息指出,香港置地已接洽黑石集團(Blackstone)及日本地產巨頭 Hulic,分別就收購「東京 Garden Terrace 紀尾井町」(Tokyo Garden Terrace Kioicho)及「大手町廣場」(Otemachi.. The post 傳香港置地擬豪擲$10億美元進軍日本 彭博引述消息 :洽購東京紀尾井町及大手町地標 appeared first on 經濟一週 .",
-      "link": "https://www.edigest.hk/news/hongkong-land-japan-real-estate-tokyo-gardens-otemachi-place-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2037447/",
-      "pubDate": "2026-09-03 03:53:43",
-      "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/09/981c73fd-2667-47f0-af82-9e0b293bd2de_4028964656a98fc714dd82.png",
-      "keywords": [
-        "即時財經"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "e85b387a7e1dbcc59b0666785375d9c6",
-      "title": "內地生租賃旺 香港菁雋呎租破70元",
-      "description": "中評社香港9月3日電/雖然暑假傳統租賃旺季剛結束,但本港私宅租金升勢依然強勁,有“龍床盤”之稱的屯門菁雋呎租衝破70元大關,該盤一夥開放式戶剛反價至9200元租出,實用呎租達71.9元,再度刷新屯門區屋苑租金最貴紀錄。 大公報報導,菁雋挾屋苑樓齡新、單位面積細、租金入場門檻低的條件,其呎租不斷屢創高位,領漲屯門區私人屋苑。消息人士透露,菁雋低層31室,實用面積128方呎,採開放式設計",
-      "link": "http://www.crntt.com/doc/7_0_107230508_1_0903115342.html",
-      "pubDate": "2026-09-03 03:53:42",
-      "source_name": "Crntt",
-      "image_url": null,
-      "keywords": null,
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "1bd7a45bf48fed0a8f6a136b5009ff7e",
-      "title": "抗戰勝利紀念 香港青年:從歷史中汲取力量",
-      "description": "中評社香港9月3日電(記者 黎人愷)中國人民抗日戰爭勝利日紀念儀式3日在香港大會堂紀念花園舉行。香港民眾安全服務隊青年團成員代表在現場接受中評社記者採訪時表示,戰爭是一件非常殘酷的事情,會給國家和人民帶來沉重的傷痛。正因為深知戰爭的代價,我們更要盡最大努力避免戰爭的出現,珍惜來之不易的和平,共同守護世界和平。 民安隊青年團成員吳祖樂表示,能來到現場參加這次紀念儀式,他感到活動非常有意",
-      "link": "http://www.crntt.com/doc/7_0_107230385_1_0903115241.html",
-      "pubDate": "2026-09-03 03:52:41",
-      "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202609/3/107230389.jpg",
-      "keywords": [
-        "中國人民抗日戰爭勝利日紀念儀式"
-      ],
-      "category": [
-        "top",
-        "politics"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "9663bb2a156aa2a7418ce6a0d23dcb8a",
-      "title": "《港樓》利嘉閣鄭健糧:屯門16區站二期吸引四大財團競逐 業界對優質房地產信心堅定",
-      "description": "港鐵(00066.HK)屯門16區站第二期」昨日(2日)截標,總樓面達302萬平方呎、提供最多5,510伙,吸引四大財團競投(長實(01113.HK)、新地(00016.HK)、恒地(00012.HK)獨資入標,信置(00083.HK)夥嘉里(00683.HK)、中海外(00688.HK)及鷹君(00041.HK...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%88%A9%E5%98%89%E9%96%A3%E9%84%AD%E5%81%A5%E7%B3%A7-%E5%B1%AF%E9%96%8016%E5%8D%80%E7%AB%99%E4%BA%8C%E6%9C%9F%E5%90%B8%E5%BC%95%E5%9B%9B%E5%A4%A7%E8%B2%A1%E5%9C%98%E7%AB%B6%E9%80%90-%E6%A5%AD%E7%95%8C%E5%B0%8D%E5%84%AA%E8%B3%AA%E6%88%BF%E5%9C%B0%E7%94%A2%E4%BF%A1%E5%BF%83%E5%A0%85%E5%AE%9A-035226553.html",
-      "pubDate": "2026-09-03 03:52:26",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "investing",
-        "business",
-        "economy",
-        "personal finance",
-        "suze orman",
-        "business news",
-        "finance",
-        "investment tools",
-        "tax",
-        "track portfolio",
-        "financial information",
-        "401k",
-        "real estate",
-        "stock",
-        "quote",
-        "mutual funds",
-        "investor",
-        "stocks",
-        "stock research",
-        "mortgage"
-      ],
-      "category": [
-        "business"
       ],
       "region": "hk"
     },
@@ -1179,45 +721,6 @@
       "region": "hk"
     },
     {
-      "id": "ff313f63af8ad3160f2ff83232f8ca05",
-      "title": "霍爾木茲|特朗普倡改名 「特朗普海峽」",
-      "description": "美國總統特朗普(Donald Trump)再度提出要更改地名,在社交平台表示,建議將霍爾木茲海峽(Hormuz Strait)改名為「特朗普海峽」(Trump Strait)。特朗普周三(2日)表示,...",
-      "link": "https://inews.hket.com/article/4187807",
-      "pubDate": "2026-09-03 03:52:00",
-      "source_name": "Hket",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187807/04cafp001__1024_1_300.jpg",
-      "keywords": [
-        "外交",
-        "特朗普",
-        "伊朗",
-        "國防",
-        "美國",
-        "美軍",
-        "地緣政治",
-        "白宮",
-        "軍事",
-        "霍爾木茲海峽"
-      ],
-      "category": [
-        "world"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "7d18148944b58713fe5d3d3a81f3193c",
-      "title": "市建局土瓜灣道/榮光街發展計劃邀請合作發展意向書 可建900伙",
-      "description": "<匯港通訊> 市區重建局將於今日就土瓜灣道/榮光街發展計劃,邀請發展商及財團提交合作發展意向書。項目地盤總面積約5475平方米,可興建約900個住宅單位。項目為全港首個「小區重建新社區」的最後一個重建項目,是市建局以「小區發展」模式推行的八個重建項目之一。項目鄰近港鐵土瓜灣站,並擬建兩條行人天橋,分別連接港鐵站出...",
-      "link": "https://hk.finance.yahoo.com/news/%E5%B8%82%E5%BB%BA%E5%B1%80%E5%9C%9F%E7%93%9C%E7%81%A3%E9%81%93-%E6%A6%AE%E5%85%89%E8%A1%97%E7%99%BC%E5%B1%95%E8%A8%88%E5%8A%83%E9%82%80%E8%AB%8B%E5%90%88%E4%BD%9C%E7%99%BC%E5%B1%95%E6%84%8F%E5%90%91%E6%9B%B8-%E5%8F%AF%E5%BB%BA900%E4%BC%99-035148309.html",
-      "pubDate": "2026-09-03 03:51:48",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": null,
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "d32789daa0517982b183430350726968",
       "title": "中國海警普陀山艦編隊位台灣島以東常態巡查 維護國家領土主權",
       "description": "中國海警局新聞發言人姜略表示,9月3日,中國海警普陀山艦編隊位中國台灣島以東海域依法開展常態化執法巡查。據「中國海警」微信公眾號消息,中國",
@@ -1232,42 +735,6 @@
         "突發"
       ],
       "category": [
-        "politics"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "4fc2ecc588543a5fe264b7a196948fce",
-      "title": "中期選舉臨近 特朗普誓為共和黨人全力助選",
-      "description": "中評社北京9月3日電/美國總統特朗普2日誓言,將在11月中期選舉前積極為共和黨候選人助選,並表示已計劃前往選情激烈的州屬進行密集訪問。 據聯合早報報導,在白宮為國會共和黨人舉辦的晚宴上,特朗普大談自己為該黨助選取得的成效,並承諾在選戰的最後一個月裡安排密集的助選行程,這與他本人為2024年大選所進行的不間斷競選活動如出一轍。 特朗普星期三(9月2日)對在場人士說:“從現在到",
-      "link": "http://www.crntt.com/doc/7_0_107230467_1_0903115118.html",
-      "pubDate": "2026-09-03 03:51:18",
-      "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202609/3/107230492.jpg",
-      "keywords": [
-        "共和黨",
-        "中期選舉",
-        "特朗普"
-      ],
-      "category": [
-        "top",
-        "politics"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "5915a5381d1675a6b8197255c351d6ed",
-      "title": "港九大隊老戰士:繼承先烈精神 守護今日和平",
-      "description": "中評社香港9月3日電(記者 黎人愷)中國人民抗日戰爭勝利日紀念儀式3日在香港大會堂紀念花園舉行。港九大隊老戰士林珍在紀念儀式現場接受中評社記者採訪時表示,抗戰紀念活動傳遞著一個意識,不能忘記當年先輩為世界和平、為國家民族復興而艱苦奮鬥的歲月,更不能忘記為此獻出生命的烈士。 林珍表示,能參加今天的中國人民抗日戰爭勝利日紀念儀式,她的心情非常激動。她說,這樣的活動承載並傳遞著一個意識——",
-      "link": "http://www.crntt.com/doc/7_0_107230380_1_0903115106.html",
-      "pubDate": "2026-09-03 03:51:06",
-      "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202609/3/107230382.jpg",
-      "keywords": [
-        "中國人民抗日戰爭勝利日紀念儀式"
-      ],
-      "category": [
-        "top",
         "politics"
       ],
       "region": "hk"
@@ -1289,74 +756,6 @@
       "region": "hk"
     },
     {
-      "id": "423fd1b19a6d1a82720f377645d34472",
-      "title": "越南進口雞蛋除害劑「氟蟲腈」超標1.2倍 食安中心指令停售及回收",
-      "description": "香港再有毒雞蛋入口?食安中心表示,正跟進一個越南進口雞蛋樣本的除害劑氟蟲腈含量超出法例標準。中心已指令涉事進口商立即將受影響產品停售、下架及展開回收,並呼籲業界應立即停止使用或出售受影響產品。 產品資料如下: 產品名稱:雞蛋 來源地:越南 進口商:富國拓展有限公司 越南農場:QL Farms (Tay Ninh) Liability Limited Company 生產日期:2026年6月 氟蟲腈",
-      "link": "https://www.stheadline.com/society/3611169/%E8%B6%8A%E5%8D%97%E9%80%B2%E5%8F%A3%E9%9B%9E%E8%9B%8B%E9%99%A4%E5%AE%B3%E5%8A%91%E6%B0%9F%E8%9F%B2%E8%85%88%E8%B6%85%E6%A8%9912%E5%80%8D-%E9%A3%9F%E5%AE%89%E4%B8%AD%E5%BF%83%E6%8C%87%E4%BB%A4%E5%81%9C%E5%94%AE%E5%8F%8A%E5%9B%9E%E6%94%B6",
-      "pubDate": "2026-09-03 03:50:19",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/b9b77d6857a774b0cb7f67887e25bede/2026-09/KF_90_.png",
-      "keywords": [
-        "食安中心",
-        "雞蛋"
-      ],
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "882e90bab61b86b0a44a09773c61e3ef",
-      "title": "《港樓》市建局土瓜灣道/榮光街發展計劃邀收發展意向 涉900伙",
-      "description": "市建局將於今日(3日)就土瓜灣道/榮光街發展計劃,邀請發展商及財團提交合作發展意向書。截收意向書的時間為9月17日中午12時。 項目地盤總面積約5,475平方米,可興建約900個住宅單位。項目為全港首個「小區重建新社區」的最後一個重建項目,是市建局以「小區發展」模式推行的八個重建項目之一。項目鄰近港鐵土瓜灣站,並...",
-      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B8%82%E5%BB%BA%E5%B1%80%E5%9C%9F%E7%93%9C%E7%81%A3%E9%81%93-%E6%A6%AE%E5%85%89%E8%A1%97%E7%99%BC%E5%B1%95%E8%A8%88%E5%8A%83%E9%82%80%E6%94%B6%E7%99%BC%E5%B1%95%E6%84%8F%E5%90%91-%E6%B6%89900%E4%BC%99-035006105.html",
-      "pubDate": "2026-09-03 03:50:06",
-      "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
-      "keywords": [
-        "investing",
-        "business",
-        "economy",
-        "personal finance",
-        "suze orman",
-        "business news",
-        "finance",
-        "investment tools",
-        "tax",
-        "track portfolio",
-        "financial information",
-        "401k",
-        "real estate",
-        "stock",
-        "quote",
-        "mutual funds",
-        "investor",
-        "stocks",
-        "stock research",
-        "mortgage"
-      ],
-      "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "6afcdc7f722d55957e04dcaf7747a451",
-      "title": "柏傲莊四房呎價超三萬 貴絕大圍",
-      "description": "新世界發展(00017)旗下大圍站上蓋項目柏傲莊III,近日價量齊鳴,熾熱氣氛席捲二手市場,造價屢創新高。最新一宗4房單位交易,以3010萬元易手,實用呎價高見30160元,雙雙刷新屋苑紀錄,更引領大圍區分層住宅首次衝破3萬元呎大關,樹立區內新標杆。與此同時,陸續有炒家伺機沽樓,該盤一夥2房單位剛以1300萬轉售,短短4個月炒貴17%。 大公報報導,中原地產高級資深分區營業經理黎浚宇透露,柏",
-      "link": "http://www.crntt.com/doc/7_0_107230509_1_0903115000.html",
-      "pubDate": "2026-09-03 03:50:00",
-      "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202609/3/107230514.jpg",
-      "keywords": null,
-      "category": [
-        "top",
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "d61b887f2d2d9c7347c30849441c6971",
       "title": "IMF總裁格奧爾基耶娃:債券孳息率飆升 恐打擊發展中國家減債努力",
       "description": "<匯港通訊> 國際貨幣基金組織(IMF)總裁格奧爾基耶娃出席二十國集團(G20)財金領袖會議期間接受專訪時警告,發達經濟體債務暴增及政府債券孳息率高企,正顯著推高全球融資成本,恐打擊發展中國家及低收入地區在控制債務方面取得的成果。格奧爾基耶娃分析,多項因素推高發達國家的債券孳息率,包括整體債務規模上升、霍爾木茲海...",
@@ -1366,21 +765,6 @@
       "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
       "keywords": null,
       "category": [
-        "business"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "3ab691e1443c22f2e05062db8516123a",
-      "title": "加拿大央行:美國關稅威脅衝擊加經濟復甦前景",
-      "description": "中評社香港9月3日電/據央視新聞消息,加拿大銀行(央行)當地時間2日宣布將基準利率維持在2.25%不變。自2025年10月底以來,加拿大一直保持基準利率不變。 加拿大銀行當天在新聞公報中表示,加拿大經濟在第二季度復甦,但面臨很高不確定性。美國的新關稅和進一步採取關稅行動的威脅對加拿大經濟復甦的可持續性構成風險。 加拿大銀行說,由於中東衝突仍在持續,而且霍爾木茲海峽的重新開放",
-      "link": "http://www.crntt.com/doc/7_0_107230505_1_0903114919.html",
-      "pubDate": "2026-09-03 03:49:19",
-      "source_name": "Crntt",
-      "image_url": null,
-      "keywords": null,
-      "category": [
-        "top",
         "business"
       ],
       "region": "hk"
@@ -1421,52 +805,6 @@
       "region": "hk"
     },
     {
-      "id": "04fb21fd202a11bbdf11565f3e034acf",
-      "title": "NBA|快艇李安納陰陽合同案有結果 剝奪快艇未來5個首輪籤 班主波曼停止聯盟和球隊活動一年",
-      "description": "早在去年快艇已被爆出和陣中球星李安納(Kawhi Leonard)利用班主波曼(Steve Ballmer)所持有的公司簽代言合約,從而規避NBA工資帽,歷經一年調查,聯盟調查結果周三(2日)出爐,並指快艇存在規避薪資限額的行為,剝奪由2029–2033年的五個首輪籖,罰款3000萬美元並暫停班主波曼參與聯盟和球隊事務一年。 快艇坐實規避薪資帽 聯盟重盟沒收首輪籖 事件在去年因一間波曼有注資的公司",
-      "link": "https://www.stheadline.com/basketball-zone/3611167/NBA%E5%BF%AB%E8%89%87%E6%9D%8E%E5%AE%89%E7%B4%8D%E9%99%B0%E9%99%BD%E5%90%88%E5%90%8C%E6%A1%88%E6%9C%89%E7%B5%90%E6%9E%9C-%E5%89%9D%E5%A5%AA%E5%BF%AB%E8%89%87%E6%9C%AA%E4%BE%865%E5%80%8B%E9%A6%96%E8%BC%AA%E7%B1%A4-%E7%8F%AD%E4%B8%BB%E6%B3%A2%E6%9B%BC%E5%81%9C%E6%AD%A2%E8%81%AF%E7%9B%9F%E5%92%8C%E7%90%83%E9%9A%8A%E6%B4%BB%E5%8B%95%E4%B8%80%E5%B9%B4",
-      "pubDate": "2026-09-03 03:44:35",
-      "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/8a1f721273a69cd484b503d27259cbb3/2026-09/KF_58_.png",
-      "keywords": [
-        "steve ballmer",
-        "nba",
-        "adam silver",
-        "快艇",
-        "李安納",
-        "蕭華",
-        "波曼",
-        "kawhi leonard"
-      ],
-      "category": [
-        "top",
-        "sports"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "f75c1aec143ed00e7314ba9ce38dbc0a",
-      "title": "委內瑞拉前總統馬杜羅夫婦要求駁回販毒指控 稱享元首豁免權",
-      "description": "委內瑞拉前總統馬杜羅及其妻子周三要求法官駁回針對他們的販毒起訴,理由是他們作為外國元首及第一夫人,享有豁免權。 馬杜羅的律師在曼哈頓聯邦法院提交的文件中表示,法官依法必須駁回起訴,因為不能針對外國元首提出起訴。 律師寫道:「從未有美國法院審理過外國元首的刑事案件,而該元首在被起訴時,獲其國家承認為在任國家元首。」他們指出:「這並非歷史巧合,而是反映一項比普通法更古老的規則:國家元首除本國法院外,豁免於任何國家法院的刑事訴訟程序。」 馬杜羅及其妻子定於明年6月1日,就販毒控罪受審。法官海勒斯坦已將駁回起訴動議的口頭辯論,定於11月17日舉行。 63歲的馬杜羅及其69歲的妻子西莉亞·弗洛雷斯,自1月初美國部隊在深夜突襲他們位於加拉加斯的住所,並將他們帶到紐約後,一直被關押在布魯克林一所監獄。 弗洛雷斯的律師周三提交獨立文件,表示她亦基於主權豁免權,獲豁免美國的起訴。她的律師寫道:「這是委內瑞拉主權的屬性,只有委內瑞拉可以放棄。」 馬杜羅的律師表示,即使馬杜羅作為國家元首不享有主權豁免權,針對他的案件也必須駁回,因為他亦享有基於行為的主權豁免權。同時,律師們爭辯指,馬杜羅「極力否認對他的指控」。他們稱:「如果此案進入審訊階段,將會顯然他被錯誤指控。」 兩人均對一宗刑事案件表示不認罪,該案於六年前首次針對多名被指控的同謀提出。如果陪審團同意他們參與將可卡因運往美國的陰謀,他們將面臨終身監禁。 聯邦檢察官定於本月稍後時間,就這些論點提交回應。 美國總統特朗普政府,為這次拘捕馬杜羅的突襲行動辯護,形容為「精準的執法行動」。馬杜羅則稱自己為戰俘,並指其被捕是綁架。 美國檢察官指,馬杜羅透過與委內瑞拉執法部門串通,協助販毒集團,實施將數千噸可卡因運入美國的陰謀。 (美聯社)",
-      "link": "https://www.bastillepost.com/hongkong/article/16694480-%E5%A7%94%E5%85%A7%E7%91%9E%E6%8B%89%E5%89%8D%E7%B8%BD%E7%B5%B1%E9%A6%AC%E6%9D%9C%E7%BE%85%E5%A4%AB%E5%A9%A6%E8%A6%81%E6%B1%82%E9%A7%81%E5%9B%9E%E8%B2%A9%E6%AF%92%E6%8C%87%E6%8E%A7-%E7%A8%B1%E4%BA%AB",
-      "pubDate": "2026-09-03 03:37:41",
-      "source_name": "Bastillepost",
-      "image_url": "https://image.bastillepost.com/640x/wp-content/uploads/hongkong/2026/09/000ee40342a3ace42d8fac3ea19b102e_Venezuela_Maduro_3646__FB.jpg",
-      "keywords": [
-        "美國",
-        "馬杜羅",
-        "大視野",
-        "販毒",
-        "委內瑞拉",
-        "豁免權"
-      ],
-      "category": [
-        "top",
-        "politics"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "4c9228a729c257cf7af692a52cc19b29",
       "title": "泥石流 | 中國尼泊爾至少1225人死 為何尼國向中美印索賠?",
       "description": "中尼邊境上月26日發生嚴重泥石流災害。據新華社報道,尼泊爾國家減少災害風險管理局昨日(2日)發布最新報告,截至當地時間2日18時,該國泥石流受災地區已尋獲1204具遇難者遺體,另有4216人仍然失聯。...",
@@ -1496,28 +834,6 @@
       "region": "hk"
     },
     {
-      "id": "671a064bc95e052a66ef719297bd3266",
-      "title": "末世行者|列尼史葛末日電影 狗仔Jasper最搶鏡全片要三隻合演",
-      "description": "殿堂級傳奇大導演列尼史葛(Ridley Scott)又一大師級鉅製,《末世行者》(THE DOG STARS)現已上映。今次大導既有壯麗浩瀚的影像,連場刺激動作大",
-      "link": "https://www.hk01.com/%E9%9B%BB%E5%BD%B1/60386169/%E6%9C%AB%E4%B8%96%E8%A1%8C%E8%80%85-%E5%88%97%E5%B0%BC%E5%8F%B2%E8%91%9B%E6%9C%AB%E6%97%A5%E9%9B%BB%E5%BD%B1-%E7%8B%97%E4%BB%94jasper%E6%9C%80%E6%90%B6%E9%8F%A1%E5%85%A8%E7%89%87%E8%A6%81%E4%B8%89%E9%9A%BB%E5%90%88%E6%BC%94",
-      "pubDate": "2026-09-03 03:30:55",
-      "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260902/1171862120761921536948721.jpeg/dxNF3M3OE_WudPJ-5lj_XgORC0yl8FJ11PqWytT6lso",
-      "keywords": [
-        "經典電影",
-        "香港01",
-        "睇戲",
-        "港產片",
-        "外語片",
-        "影評",
-        "電影"
-      ],
-      "category": [
-        "entertainment"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "d42ac0f89b1422e8",
       "title": "玄戰｜甄敏芳大起底　170cm高䠷身形笑容甜美獲激讚　入行1年多三棲發展",
       "description": "【甄敏芳 / 玄戰 / 聲秀】由洪永城、陳懿德、甄敏芳及堪輿學家陳定幫主持的玄學競賽節目《玄戰》，自8月31日首播雖然戰況激烈，但不少網民卻將焦點集中在兩位女主持身上，當中尤以憑《聲秀》入行，以甜美笑...",
@@ -1526,22 +842,6 @@
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
       "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187479/170cm_300.png",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "e533c22d2ac157b0",
-      "title": "股份分拆及合併",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4187371",
-      "pubDate": "2026-09-03 00:01:00",
-      "fetched_at": "2026-09-03 23:53:20",
-      "source_name": "香港經濟日報",
-      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
