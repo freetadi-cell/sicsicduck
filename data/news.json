@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-04T01:14:05.392513",
-  "total": 69,
+  "last_updated": "2026-09-04T02:07:43.997207",
+  "total": 77,
   "articles": [
     {
       "id": "bdb5ef8a92d617bc9871c4eb362f1829",
@@ -410,6 +410,22 @@
       "region": "hk"
     },
     {
+      "id": "41b30bade65f27a5",
+      "title": "黃金8月漲勢主要由投資需求驅動，而非美國財政部回購計劃",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E9%BB%83%E9%87%918%E6%9C%88%E6%BC%B2%E5%8B%A2%E4%B8%BB%E8%A6%81%E7%94%B1%E6%8A%95%E8%B3%87%E9%9C%80%E6%B1%82%E9%A9%85%E5%8B%95-%E8%80%8C%E9%9D%9E%E7%BE%8E%E5%9C%8B%E8%B2%A1%E6%94%BF%E9%83%A8%E5%9B%9E%E8%B3%BC%E8%A8%88%E5%8A%83-170107152.html",
+      "pubDate": "2026-09-03 17:01:07",
+      "fetched_at": "2026-09-04 02:00:08",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "dbd22590812322eb",
       "title": "香港小姐｜郭柏妍港姐決賽重執單簧管　騷15年前首次入TVB舊照",
       "description": "【郭柏妍 / 香港小姐 / 夫妻的博弈】現年28歲的TVB小花郭柏妍（Rosita），2020年獲選港姐季軍入行，近期憑在熱播劇集《夫妻的博弈》中，突破以往清純形象演活「綠茶機心女」，演技受到觀眾認可...",
@@ -582,6 +598,186 @@
       "category": [
         "finance",
         "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e275f078fbae1e110bb86b0d0e61228d",
+      "title": "《港樓》將軍澳暑假錄1,300宗租賃成交按年增8% 海茵莊園一房租1.6萬元",
+      "description": "中原地產表示,今年暑假將軍澳7月及8月合共錄得1,300宗租賃成交,較去年同期1,204宗增長8%。今年首八個月,將軍澳累積錄得4,132宗租賃成交,亦較去年同期3,442宗錄得20%增長,反映需求持續增加。租賃成交量增加,租金亦持續上揚,回報亦跟隨上漲。 中原最新促成一宗海茵莊園租賃交投,單位為2座高層B3室,...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E6%A8%93-%E5%B0%87%E8%BB%8D%E6%BE%B3%E6%9A%91%E5%81%87%E9%8C%841-300%E5%AE%97%E7%A7%9F%E8%B3%83%E6%88%90%E4%BA%A4%E6%8C%89%E5%B9%B4%E5%A2%9E8-%E6%B5%B7%E8%8C%B5%E8%8E%8A%E5%9C%92-%E6%88%BF%E7%A7%9F1-055916623.html",
+      "pubDate": "2026-09-03 05:59:16",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "mortgage",
+        "stocks",
+        "financial information",
+        "stock",
+        "investment tools",
+        "mutual funds",
+        "track portfolio",
+        "business news",
+        "quote",
+        "economy",
+        "personal finance",
+        "real estate",
+        "business",
+        "tax",
+        "market news",
+        "retirement",
+        "stock valuation",
+        "finance",
+        "investor",
+        "investing"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "010dce16644dde4973d03171f16fedab",
+      "title": "《大行》大華繼顯:騰訊(00700.HK)、信達生物(01801.HK)等加入「買入」名單 TMT及IT硬件維持正面看法",
+      "description": "大華繼顯發表報告,中資股8月整固,恒生指數及MSCI中國指數按月分別下跌1.2%及0.4%,大致守住7月升幅。該行不預期國家主席習近平9月24日訪美會帶來重大催化劑,基本面仍看好TMT(科技、傳媒及通信)及IT硬件,偏好受惠人工智能相關資本開支,以及半導體與先進製造設備國產化的公司。 該行將大族激光(002008...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E5%A4%A7%E8%8F%AF%E7%B9%BC%E9%A1%AF-%E9%A8%B0%E8%A8%8A-00700-hk-055732501.html",
+      "pubDate": "2026-09-03 05:57:32",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "mortgage",
+        "stocks",
+        "financial information",
+        "stock",
+        "investment tools",
+        "mutual funds",
+        "track portfolio",
+        "business news",
+        "quote",
+        "economy",
+        "personal finance",
+        "real estate",
+        "business",
+        "tax",
+        "market news",
+        "retirement",
+        "stock valuation",
+        "finance",
+        "investor",
+        "investing"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8f008356cc2dcb3bd98e7ec62de66e7e",
+      "title": "闊別半世紀重返香港!美國雪糕品牌「Dairy Queen」11月4店齊開 銅鑼灣/觀塘The ANGLE都有得食招牌「反轉唔跌」暴風雪",
+      "description": "近年不少經典海外餐飲品牌再度進軍香港市場,喚起大眾集體回憶。擁有八十多年歷史的美國雪糕巨頭「Dairy Queen(DQ)」在相隔近半世紀後宣布重返香港,有網民近日發現其新分店將落戶觀塘全新商場,並預計於11月開業。 美國雪糕品牌「Dairy Queen」落戶觀塘新商場The ANGLE 預計11月正式開幕 早前,有海外媒體率先預告Dairy Queen計劃重返香港市場的消息。直至最近,有網民在新",
+      "link": "https://www.stheadline.com/food/3611177/%E9%97%8A%E5%88%A5%E5%8D%8A%E4%B8%96%E7%B4%80%E9%87%8D%E8%BF%94%E9%A6%99%E6%B8%AF%E7%BE%8E%E5%9C%8B%E9%9B%AA%E7%B3%95%E5%93%81%E7%89%8CDairy-Queen11%E6%9C%884%E5%BA%97%E9%BD%8A%E9%96%8B-%E9%8A%85%E9%91%BC%E7%81%A3%E8%A7%80%E5%A1%98The-ANGLE%E9%83%BD%E6%9C%89%E5%BE%97%E9%A3%9F%E6%8B%9B%E7%89%8C%E5%8F%8D%E8%BD%89%E5%94%94%E8%B7%8C%E6%9A%B4%E9%A2%A8%E9%9B%AA",
+      "pubDate": "2026-09-03 05:54:20",
+      "source_name": "Stheadline",
+      "image_url": "",
+      "keywords": [
+        "dairy queen",
+        "觀塘"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d88f7563b55e8d97ab92b9ee550369c1",
+      "title": "沙德爾減弱為熱帶低氣壓 一號信號今日維持",
+      "description": "<匯港通訊> 一號戒備信號現正生效,熱帶風暴沙德爾已減弱為熱帶低氣壓。天文台表示,受沙德爾與東北季候風的共同影響,本港離岸及高地間中吹強風。一號戒備信號會在今日維持。天文台又說,沙德爾正橫過廣東東部內陸。預料沙德爾會在明日靠近珠江口一帶,但會繼續減弱。天文台會視乎沙德爾接近珠江口時的強度,相關的強風區與珠江口的距...",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B2%99%E5%BE%B7%E7%88%BE%E6%B8%9B%E5%BC%B1%E7%82%BA%E7%86%B1%E5%B8%B6%E4%BD%8E%E6%B0%A3%E5%A3%93-%E8%99%9F%E4%BF%A1%E8%99%9F%E4%BB%8A%E6%97%A5%E7%B6%AD%E6%8C%81-055227584.html",
+      "pubDate": "2026-09-03 05:52:27",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "mortgage",
+        "stocks",
+        "financial information",
+        "stock",
+        "investment tools",
+        "mutual funds",
+        "track portfolio",
+        "business news",
+        "quote",
+        "economy",
+        "personal finance",
+        "real estate",
+        "business",
+        "tax",
+        "market news",
+        "retirement",
+        "stock valuation",
+        "finance",
+        "investor",
+        "investing"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4c7769047a483b08202b145f8c4d7a42",
+      "title": "對沖基金ExodusPoint的亞洲人手今年有望擴充80%",
+      "description": "【彭博】-- 一位知情人士表示,Michael Gelband旗下ExodusPoint Capital Management的亞洲人手今年有望擴充近80%,其中包括根據近期協議接收亞洲同行Ovata Capital Management的員工。 該人稱,到今年年底,這家規模近150億美元的多策略對沖基金香港、新...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%B0%8D%E6%B2%96%E5%9F%BA%E9%87%91exoduspoint%E7%9A%84%E4%BA%9E%E6%B4%B2%E4%BA%BA%E6%89%8B%E4%BB%8A%E5%B9%B4%E6%9C%89%E6%9C%9B%E6%93%B4%E5%85%8580-055223529.html",
+      "pubDate": "2026-09-03 05:52:23",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "今年",
+        "亞洲",
+        "東京辦公室",
+        "今年年底",
+        "80%"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "56dc67a797cb51485885d75327c26e2d",
+      "title": "中日關係 | 日本跨黨派團體 協調年輕議員本月訪華",
+      "description": "日本跨黨派團體「日中友好議員聯盟」會長森山裕(自民黨前幹事長)今日(3日)稱,正在協調讓年輕成員大致在本月內訪華。如能實現,則將是自去年11月首相高市早苗涉台國會答辯導致日中關係惡化以來,該議員聯盟首...",
+      "link": "https://china.hket.com/article/4187882",
+      "pubDate": "2026-09-03 05:46:00",
+      "source_name": "Hket",
+      "image_url": "",
+      "keywords": [
+        "中共中央政治局",
+        "國防",
+        "日本",
+        "地緣政治",
+        "中國共產黨",
+        "中日關係",
+        "北京",
+        "外交"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "06f8088cdf0a99936187ef4172263afd",
+      "title": "美國|紐約市頒學生AI禁令 限高中以上使用",
+      "description": "美國紐約市計劃,將在新學年起禁止公立學前班到八年級(中二)全面禁止學生使用人工智能(AI),估計超過50萬名學生受影響。紐約市公立學校系統證實,將在2026/2027學年實施限制高中以下學生的AI使用...",
+      "link": "https://inews.hket.com/article/4187851",
+      "pubDate": "2026-09-03 05:45:00",
+      "source_name": "Hket",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "world"
       ],
       "region": "hk"
     },
