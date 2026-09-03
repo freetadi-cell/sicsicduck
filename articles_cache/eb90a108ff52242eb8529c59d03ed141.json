@@ -3,7 +3,8 @@
   "title": "Fear & Greed",
   "source_name": "CNN",
   "link": "https://edition.cnn.com/markets/fear-and-greed",
-  "rewritten": "",
-  "status": "rewrite_failed",
-  "fetched_at": "2026-09-03T14:15:30"
+  "rewritten_title": "CNN恐懼與貪婪指數：七大指標衡量市場情緒",
+  "rewritten": "CNN恐懼與貪婪指數透過七項市場指標，評估股市走勢及股票定價是否合理，以判斷驅動市場的情緒。這些指標包括市場動能（比較標普500指數與其125日均線）、股價強度（紐交所52週新高與新低股票數量）、股價廣度（麥克萊蘭成交量累積指數，衡量上漲與下跌股票成交量）以及看跌看漲期權比率等。指數旨在回答「當前是什麼情緒在驅動市場？」，並提供極度恐懼至極度貪婪的範圍評估。",
+  "status": "done",
+  "fetched_at": "2026-09-03T21:08:18"
 }
