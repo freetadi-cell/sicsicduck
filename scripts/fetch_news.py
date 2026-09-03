@@ -10,8 +10,11 @@ import json
 import feedparser
 import hashlib
 import html as html_lib
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+# Hong Kong timezone (UTC+8)
+HKT = timezone(timedelta(hours=8))
 
 # API Configuration
 API_KEY = "pub_00e12f838504473cab89480d31d35522"
