@@ -1,5 +1,5 @@
 {
-  "collection_date": "2026-09-03",
+  "collection_date": "2026-09-04",
   "currency": "HKD",
   "type": "time_deposit",
   "data_sources": [
@@ -289,16 +289,16 @@
       "name_en": "Chiu Yuen",
       "name_tc": "集友",
       "rates": {
-        "1m": null,
+        "1m": "2.08",
         "3m": null,
         "6m": null,
         "12m": null,
         "24m": null
       },
-      "min_deposit": null,
-      "notes": "DNS resolution failed for chiubank.com. No data available from comparison sites. Chiu Yuen Bank website appears down or restructured.",
-      "source": "N/A",
-      "source_url": "https://www.chiubank.com"
+      "min_deposit": "10000",
+      "notes": "Official: 港元1個月特優2.08%（外幣兌換定期存款，需兌換資金；1星期推廣5.00%）。官網推廣頁未列3/6/12個月港元利率。利率為2026-07-01公佈。",
+      "source": "Official website (direct)",
+      "source_url": "https://www.chiyubank.com/cyb/index/zxxx/20230523/index.shtml"
     },
     {
       "id": 19,
