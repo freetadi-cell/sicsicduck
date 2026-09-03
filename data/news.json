@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-09-04T00:12:47.177678",
-  "total": 51,
+  "last_updated": "2026-09-04T00:34:41.038714",
+  "total": 73,
   "articles": [
+    {
+      "id": "a884d4bac7e2d9aceea718a7d6591650",
+      "title": "最新天氣｜天文台：沙德爾減弱低壓區　取消所有熱帶氣旋警告信號",
+      "description": "",
+      "link": "https://www.hk01.com/%E5%A4%A9%E6%B0%A3/60385255/%E6%9C%80%E6%96%B0%E5%A4%A9%E6%B0%A3-%E5%A4%A9%E6%96%87%E5%8F%B0-%E6%B2%99%E5%BE%B7%E7%88%BE%E6%B8%9B%E5%BC%B1%E4%BD%8E%E5%A3%93%E5%8D%80-%E5%8F%96%E6%B6%88%E6%89%80%E6%9C%89%E7%86%B1%E5%B8%B6%E6%B0%A3%E6%97%8B%E8%AD%A6%E5%91%8A%E4%BF%A1%E8%99%9F",
+      "pubDate": "2026-09-04 00:34:41",
+      "fetched_at": "2026-09-04 00:34:41",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5a5b6b5e63022ae08a89dfdbd2710fb6",
+      "title": "Life, But Better",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/interactive/life-but-better/",
+      "pubDate": "2026-09-04 00:34:40",
+      "fetched_at": "2026-09-04 00:34:40",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
     {
       "id": "49712366dd9de1b34b36014ac5a6ff9b",
       "title": "《香港01》十周年｜卓永興冀續以深度報道引領公眾　推動香港進步",
@@ -13,6 +43,22 @@
       "image_url": "",
       "keywords": [],
       "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "dd599e1b0405f8f7",
+      "title": "股份分拆及合併",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4188014",
+      "pubDate": "2026-09-04 00:01:00",
+      "fetched_at": "2026-09-04 00:34:40",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
         "local"
       ],
       "region": "hk"
@@ -355,7 +401,7 @@
       "pubDate": "2026-09-03 21:46:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187947/5Portrait292_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -371,7 +417,7 @@
       "pubDate": "2026-09-03 17:59:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4188075/HKFILM20260903_THUMB_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -387,7 +433,7 @@
       "pubDate": "2026-09-03 15:41:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187845/15TVB_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -483,7 +529,7 @@
       "pubDate": "2026-09-03 13:59:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187891/chan20260903_thumb_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -499,7 +545,7 @@
       "pubDate": "2026-09-03 12:32:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187838/tom20260903_thumb_nnnn_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -515,7 +561,7 @@
       "pubDate": "2026-09-03 11:10:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187760/3_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -531,7 +577,7 @@
       "pubDate": "2026-09-03 09:41:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187721/MINGSIR20260903_THUMB_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
@@ -547,11 +593,390 @@
       "pubDate": "2026-09-03 08:31:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187401/LOLITA_0902_THUMBS_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
         "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bcfd9a1a7ea1ad142c885fa9386b2ba4",
+      "title": "德國光學巨頭蔡司:中國在尖端晶片製造設備落後約15年",
+      "description": null,
+      "link": "https://www.am730.com.hk/%E8%B2%A1%E7%B6%93/1051041/%E5%BE%B7%E5%9C%8B%E5%85%89%E5%AD%B8%E5%B7%A8%E9%A0%AD%E8%94%A1%E5%8F%B8-%E4%B8%AD%E5%9C%8B%E5%9C%A8%E5%B0%96%E7%AB%AF%E6%99%B6%E7%89%87%E8%A3%BD%E9%80%A0%E8%A8%AD%E5%82%99%E8%90%BD%E5%BE%8C%E7%B4%8415%E5%B9%B4",
+      "pubDate": "2026-09-03 04:33:30",
+      "source_name": "Am730",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ea175cdb3b5ac7f7fb97773e708961b6",
+      "title": "《大行》大摩:理想汽車(02015.HK)新款MEGA售價下調5萬人幣 料月銷量復甦",
+      "description": "摩根士丹利發表報告指,理想汽車(02015.HK)推出全新MEGA車型,單一配置售價為50.98萬元人民幣,較2025款MEGA Home下調5萬元人民幣。新款MEGA本周開始交付,右軚版本計劃於今年底前在香港、澳門、新加坡及泰國推出。 大摩認為,是次改款重點在於操控性能及自動駕駛,而非車廂細節調整。新車配備線控...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E5%A4%A7%E6%91%A9-%E7%90%86%E6%83%B3%E6%B1%BD%E8%BB%8A-02015-hk-043316550.html",
+      "pubDate": "2026-09-03 04:33:16",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "investing",
+        "business",
+        "economy",
+        "personal finance",
+        "suze orman",
+        "business news",
+        "finance",
+        "investment tools",
+        "tax",
+        "track portfolio",
+        "financial information",
+        "401k",
+        "real estate",
+        "stock",
+        "quote",
+        "mutual funds",
+        "investor",
+        "stocks",
+        "stock research",
+        "mortgage"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "705690dc40760ed2feba8afb1ca3cdbe",
+      "title": "人民幣匯率升破6.72,觸及三年半高位!過去20個月累升近9%",
+      "description": "Investing.com -周四, 9月3日,人民幣兌美元匯率近期升破6.72,觸及三年半高位,過去20個月累計升值近9%,但央行的\"隱形之手\"正對升勢踩下刹車。",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E6%B0%91%E5%B9%A3%E5%8C%AF%E7%8E%87%E5%8D%87%E7%A0%B46-72-%E8%A7%B8%E5%8F%8A%E4%B8%89%E5%B9%B4%E5%8D%8A%E9%AB%98%E4%BD%8D-%E9%81%8E%E5%8E%BB20%E5%80%8B%E6%9C%88%E7%B4%AF%E5%8D%87%E8%BF%919-043256386.html",
+      "pubDate": "2026-09-03 04:32:56",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "人民幣兌美元匯率",
+        "investing.com",
+        "6",
+        "9月3日",
+        "9月2日",
+        "9月1日",
+        "20個月",
+        "三年半高位",
+        "72"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "76105e8a60cbc0f84972b329e4bdbf50",
+      "title": "傳字節跳動獲296億美元貸款 規模為今年來亞洲第二大",
+      "description": "<匯港通訊> 據《彭博》引述消息人士指,中國科技巨頭字節跳動原計劃尋求200億美元(約1560億港元)貸款融資,因銀行認購反應踴躍,最終將貸款規模擴大至296億美元(約2309億港元),成為今年以來亞洲地區規模第二大的美元計價貸款,僅次於日本軟銀集團於3月獲得的400億美元過橋貸款。消息人士指出,參貸銀行目前正在...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%82%B3%E5%AD%97%E7%AF%80%E8%B7%B3%E5%8B%95%E7%8D%B2296%E5%84%84%E7%BE%8E%E5%85%83%E8%B2%B8%E6%AC%BE-%E8%A6%8F%E6%A8%A1%E7%82%BA%E4%BB%8A%E5%B9%B4%E4%BE%86%E4%BA%9E%E6%B4%B2%E7%AC%AC%E4%BA%8C%E5%A4%A7-043250583.html",
+      "pubDate": "2026-09-03 04:32:50",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "edc06a9574fa5baf123ed538606f92f9",
+      "title": "張慧儀走過創傷後遺症伴養子抗病成功 Hanson當面告白:我愛你",
+      "description": "張慧儀昨日(2/9)帶同患有先天性心臟病的養子張晃維(Hanson)一同出席無綫節目《健康誠諾書》記者會。張慧儀多年來獨力撫養Hanson,無懼艱辛不離",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60386273/%E5%BC%B5%E6%85%A7%E5%84%80%E8%B5%B0%E9%81%8E%E5%89%B5%E5%82%B7%E5%BE%8C%E9%81%BA%E7%97%87%E4%BC%B4%E9%A4%8A%E5%AD%90%E6%8A%97%E7%97%85%E6%88%90%E5%8A%9F-hanson%E7%95%B6%E9%9D%A2%E5%91%8A%E7%99%BD-%E6%88%91%E6%84%9B%E4%BD%A0",
+      "pubDate": "2026-09-03 04:30:58",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "新聞",
+        "即時娛樂新聞",
+        "明星",
+        "香港新聞",
+        "即時娛樂",
+        "香港01",
+        "韓星",
+        "hk01",
+        "娛樂新聞",
+        "藝人"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "ff0f7f5557e0e71f3c9e71adc5284639",
+      "title": "長者勞動人口24萬 佔65歲或以上人口13.5% 每8名長者1人仍工作",
+      "description": "本港銀齡就業日益常見,據統計處最新數據,本港65歲或以上長者勞動人口接近24萬,10年間增加1.2倍;同期長者勞動人口參與率亦由9.9%升至13.5%,即",
+      "link": "https://www.hk01.com/%E7%A0%94%E6%95%B8%E6%89%80/60385362/%E9%95%B7%E8%80%85%E5%8B%9E%E5%8B%95%E4%BA%BA%E5%8F%A324%E8%90%AC-%E4%BD%9465%E6%AD%B2%E6%88%96%E4%BB%A5%E4%B8%8A%E4%BA%BA%E5%8F%A313-5-%E6%AF%8F8%E5%90%8D%E9%95%B7%E8%80%851%E4%BA%BA%E4%BB%8D%E5%B7%A5%E4%BD%9C",
+      "pubDate": "2026-09-03 04:30:51",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "big data是什麼",
+        "媒體分析",
+        "大數據big data",
+        "資料分析",
+        "大數據預測",
+        "動態圖表",
+        "數據分析",
+        "圖表分析",
+        "大數據演算法",
+        "統計資料",
+        "大數據應用",
+        "數據新聞",
+        "大數據行銷",
+        "大數據分析",
+        "大數據問題",
+        "數據",
+        "大數據技術",
+        "big data應用",
+        "big data",
+        "統計"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8156c806a1673b80a82c5be257d73d63",
+      "title": "遊韓注意|首爾廣藏市場黑心攤販回收食剩生菜再賣 辯稱AI說可以",
+      "description": "南韓首爾知名觀光景點廣藏市場爆發嚴重食品衛生及「劏客」醜聞,市場內部分黑心攤販不僅利用「陰陽菜單」欺瞞外國遊客,更嚴重違反食品安全規範,重",
+      "link": "https://www.hk01.com/%E5%81%A5%E5%BA%B7Easy/60386014/%E9%81%8A%E9%9F%93%E6%B3%A8%E6%84%8F-%E9%A6%96%E7%88%BE%E5%BB%A3%E8%97%8F%E5%B8%82%E5%A0%B4%E9%BB%91%E5%BF%83%E6%94%A4%E8%B2%A9%E5%9B%9E%E6%94%B6%E9%A3%9F%E5%89%A9%E7%94%9F%E8%8F%9C%E5%86%8D%E8%B3%A3-%E8%BE%AF%E7%A8%B1ai%E8%AA%AA%E5%8F%AF%E4%BB%A5",
+      "pubDate": "2026-09-03 04:30:18",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "新聞",
+        "網上媒體",
+        "香港傳媒",
+        "香港零一",
+        "于品海",
+        "香港新聞",
+        "香港01",
+        "hk01",
+        "香港媒體",
+        "網絡媒體"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1bbd04e600b3e92eb76e2ba46a5d4bd6",
+      "title": "偏頭痛又發作?拆解抗痛「435飲食法」",
+      "description": null,
+      "link": "https://www.am730.com.hk/column/%E5%81%A5%E5%BA%B7/2009678/%E5%81%8F%E9%A0%AD%E7%97%9B%E5%8F%88%E7%99%BC%E4%BD%9C-%E6%8B%86%E8%A7%A3%E6%8A%97%E7%97%9B-435%E9%A3%B2%E9%A3%9F%E6%B3%95-",
+      "pubDate": "2026-09-03 04:30:00",
+      "source_name": "Am730",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "health"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "d1b6c9572a05b533c50f14dc01945e04",
+      "title": "屯門私樓全海景三房呎價唔使1萬 同區業主「買多間」自用|二手成交",
+      "description": "黃慶德指,買家表示原住所空間不足,欲購多一間物業自住,因此反覆睇樓兩年多,表示鍾情上述單位內櫳附雅緻裝修,收樓後即可入住,而且廳房景觀擁開揚大海景,十分優質,見原業主有累減17萬元的議幅,遂便決定以643萬元購入作自住之用,呎價約9,954元,屬市場價成交。",
+      "link": "https://www.am730.com.hk/%E5%9C%B0%E7%94%A2/1050963/%E5%B1%AF%E9%96%80%E7%A7%81%E6%A8%93%E5%85%A8%E6%B5%B7%E6%99%AF%E4%B8%89%E6%88%BF%E5%91%8E%E5%83%B9%E5%94%94%E4%BD%BF1%E8%90%AC-%E5%90%8C%E5%8D%80%E6%A5%AD%E4%B8%BB-%E8%B2%B7%E5%A4%9A%E9%96%93-%E8%87%AA%E7%94%A8-%E4%BA%8C%E6%89%8B%E6%88%90%E4%BA%A4",
+      "pubDate": "2026-09-03 04:30:00",
+      "source_name": "Am730",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8ab2ec4dd5b8a942b8c8fb4bbbadf663",
+      "title": "《強積金》GUM:8月強積金人均賺4933元,年初至今賺2.5萬元",
+      "description": "《經濟通通訊社3日專訊》GUM公布8月份強積金表現。2026年8月,「GUM強積 金綜合指數」報308.7點,上升1.5%。強積金8月份整體上升,人均賺4933元,年 初至今人均賺25335元。 GUM強積金股票基金指數8月整體回報上升1.8%。AI供應鏈主題反彈,日、韓、台 股市回升,帶動亞洲股票基金升3.5%,成為當月表現最佳的股票基金類別,年初至今回報 25.6%,穩守第一;日",
+      "link": "http://www.etnet.com.hk/www/tc/news/home_categorized_news_detail.php?newsid=ETN360903527",
+      "pubDate": "2026-09-03 04:29:00",
+      "source_name": "Etnet",
+      "image_url": "",
+      "keywords": [
+        "latest"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f060bada8b76a5d590c3d6672d86dec5",
+      "title": "恒指半日微升6點 小米跌3% 內房炒上 潤地升4% 曦智科技飆近14% | 港股開市",
+      "description": "恒指今早高開171點,隨後升幅逐步收窄,更一度倒跌17點,中午收市升6點或0.02%,報25317點,半日成交金額1050.13億;科指跌25點或0.56%,中午報4491點。 重磅科網股向下,小米(1810)跌3.06%;美團(3690)跌1.4%;京東(9618)跌1.2%;阿里巴巴(9988)跌1.18%;騰訊(700)跌0.14%。 核心城市二手房交投回暖 內房股集體抽升,8月核心城市二手",
+      "link": "https://www.stheadline.com/stock-market/3611116/%E6%81%92%E6%8C%87%E5%8D%8A%E6%97%A5%E5%BE%AE%E5%8D%876%E9%BB%9E-%E5%B0%8F%E7%B1%B3%E8%B7%8C3-%E5%85%A7%E6%88%BF%E7%82%92%E4%B8%8A-%E6%BD%A4%E5%9C%B0%E5%8D%874-%E6%9B%A6%E6%99%BA%E7%A7%91%E6%8A%80%E9%A3%86%E8%BF%9114-%E6%B8%AF%E8%82%A1%E9%96%8B%E5%B8%82",
+      "pubDate": "2026-09-03 04:27:27",
+      "source_name": "Stheadline",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e7ceebb7dd2e76c0f36774f0ac8987ef",
+      "title": "和黃醫藥(00013.HK)與GSK就KRAS-EGFR抗體偶聯癌症藥物達成許可協議",
+      "description": "和黃醫藥(00013.HK)公布,與GSK plc(葛蘭素史克)的附屬公司達成一項獨家開發及許可協議,授予該葛蘭素史克附屬公司除中國、香港、澳門和台灣以外的全球範圍內開發和商業化款全球首創的KRAS-EGFR 抗體靶向偶聯藥物HMPL-A830的權利。臨床開發將首先聚焦於結直腸癌、胰腺癌和肺癌適應症。 協議包括1...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%92%8C%E9%BB%83%E9%86%AB%E8%97%A5-00013-hk-%E8%88%87gsk%E5%B0%B1kras-egfr%E6%8A%97%E9%AB%94%E5%81%B6%E8%81%AF%E7%99%8C%E7%97%87%E8%97%A5%E7%89%A9%E9%81%94%E6%88%90%E8%A8%B1%E5%8F%AF%E5%8D%94%E8%AD%B0-042519027.html",
+      "pubDate": "2026-09-03 04:25:19",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "investing",
+        "business",
+        "economy",
+        "personal finance",
+        "suze orman",
+        "business news",
+        "finance",
+        "investment tools",
+        "tax",
+        "track portfolio",
+        "financial information",
+        "401k",
+        "real estate",
+        "stock",
+        "quote",
+        "mutual funds",
+        "investor",
+        "stocks",
+        "stock research",
+        "mortgage"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "90da7c5d6b4599bb03d9622401a19fc5",
+      "title": "英超│李察利臣勢投特拉布宗 人工加三倍到每周285萬",
+      "description": "英國媒體《The Athletic UK》報導,土耳其豪門特拉布宗正全力追求熱刺前鋒李察利臣(Richarlison),據報他們曾兩次報價都被熱刺拒絕,預計於日內送上第三份報價,有望成事。消息指特拉布宗為吸引這名29歲巴西鋒將來投,決定開出比他現時高三倍的人工,由周薪9萬鎊加至27萬鎊(約285萬港元),已得到球員本人同意。 特拉布宗兩次報價被拒 周五關窗前再出價 《The Athletic UK",
+      "link": "https://www.stheadline.com/football-news/3611190/%E8%8B%B1%E8%B6%85%E6%9D%8E%E5%AF%9F%E5%88%A9%E8%87%A3%E5%8B%A2%E6%8A%95%E7%89%B9%E6%8B%89%E5%B8%83%E5%AE%97-%E4%BA%BA%E5%B7%A5%E5%8A%A0%E4%B8%89%E5%80%8D%E5%88%B0%E6%AF%8F%E5%91%A8285%E8%90%AC",
+      "pubDate": "2026-09-03 04:23:32",
+      "source_name": "Stheadline",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3da9b04c81508cec7481e502f2668c62",
+      "title": "美擬加徵半導體新關稅 盧特尼克:台灣下周宣布追加300億美元對美投資",
+      "description": "美國商務部長盧特尼克周三(2日)表示,台灣下周將宣布對美國投資200億到300億美元,他補充說這是先前與台灣的貿易協議的一部分。綜合彭博社及台媒報道,盧特尼克接受CNBC訪問時表示,特朗普政府評估徵收...",
+      "link": "https://china.hket.com/article/4187828",
+      "pubDate": "2026-09-03 04:21:00",
+      "source_name": "Hket",
+      "image_url": "",
+      "keywords": [
+        "財政政策",
+        "特朗普",
+        "美國",
+        "台積電",
+        "科技戰",
+        "經濟",
+        "關稅",
+        "地緣政治",
+        "台灣",
+        "美元",
+        "芯片",
+        "貿易",
+        "貿易戰",
+        "科技產品",
+        "美股"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "720c65ad5af42f3903c1ccfa26f0f439",
+      "title": "真人版Street Fighter下月上映 《街霸》眾星新宿造勢大電視公開最新預告",
+      "description": "《街霸》演員包括《殺手列車》(Bullet Train)英日混血男星安德魯小路(Andrew Koji)、《愛的過去進行式》男主角諾亞森迪尼奧(Noah Centineo),二人分別扮演主角Ryu、Ken,加拿大的華人女演員Callina Liang飾演春麗一角,還有「水行俠」積遜莫瑪(Jason Momoa) 以特技妝容化身怪獸Blanka,而饒舌天王50 Cent則演黑市拳王角色Balrog。",
+      "link": "https://www.am730.com.hk/%E5%A8%9B%E6%A8%82/1051038/%E7%9C%9F%E4%BA%BA%E7%89%88street-fighter%E4%B8%8B%E6%9C%88%E4%B8%8A%E6%98%A0-%E8%A1%97%E9%9C%B8-%E7%9C%BE%E6%98%9F%E6%96%B0%E5%AE%BF%E9%80%A0%E5%8B%A2%E5%A4%A7%E9%9B%BB%E8%A6%96%E5%85%AC%E9%96%8B%E6%9C%80%E6%96%B0%E9%A0%90%E5%91%8A",
+      "pubDate": "2026-09-03 04:15:26",
+      "source_name": "Am730",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "56897bcb3e9bdb8e05970be6b09fb61c",
+      "title": "8月RatingDog服務業PMI升至51.4勝預期",
+      "description": "RatingDog/標普全球公布,8月經季節性調整的中國服務業採購經理指數(PMI)回升至51.4,高於市場預期的50.6,較上月升1個百分點,但仍是14個月來次低水平。8月份,綜合產出指數錄得52....",
+      "link": "https://china.hket.com/article/4187825",
+      "pubDate": "2026-09-03 04:14:00",
+      "source_name": "Hket",
+      "image_url": "",
+      "keywords": [
+        "貨幣政策",
+        "pmi",
+        "新興市場",
+        "中國",
+        "就業",
+        "經濟數據表現",
+        "服務",
+        "採購",
+        "指數",
+        "市場拓展",
+        "商品"
+      ],
+      "category": [
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "977ae97a11b9dcce29b4d7724010278a",
+      "title": "陳日君何韻詩等5人 不滿612基金被指違社團條例 上訴被駁回",
+      "description": "用以支援社運人士的612人道支援基金,被指未有註冊為社團,任基金信託人的天主教榮休樞機陳日君、藝人何韻詩等5人,早前就被裁定違反《社團條例》",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60386442/%E9%99%B3%E6%97%A5%E5%90%9B%E4%BD%95%E9%9F%BB%E8%A9%A9%E7%AD%895%E4%BA%BA-%E4%B8%8D%E6%BB%BF612%E5%9F%BA%E9%87%91%E8%A2%AB%E6%8C%87%E9%81%95%E7%A4%BE%E5%9C%98%E6%A2%9D%E4%BE%8B-%E4%B8%8A%E8%A8%B4%E8%A2%AB%E9%A7%81%E5%9B%9E",
+      "pubDate": "2026-09-03 04:11:45",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "香港新聞",
+        "香港01",
+        "國際新聞",
+        "新聞",
+        "頭條新聞",
+        "即時新聞",
+        "港聞",
+        "hk01"
+      ],
+      "category": [
+        "politics",
+        "lifestyle"
       ],
       "region": "hk"
     },
@@ -562,7 +987,7 @@
       "link": "https://www.stheadline.com/politics/3611172/%E9%99%B3%E8%8C%82%E6%B3%A2%E5%A4%A7%E7%81%A3%E5%8D%80%E6%86%91%E7%8D%A8%E7%89%B9%E5%84%AA%E5%8B%A2-%E5%8A%A9%E6%8E%A8%E4%BA%9E%E5%A4%AA%E6%B7%B1%E5%BA%A6%E5%90%88%E4%BD%9C",
       "pubDate": "2026-09-03 04:09:43",
       "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/4716158907dac693e60c5813232c04ab/2026-09/09031148123.png",
+      "image_url": "",
       "keywords": [
         "大灣區",
         "陳茂波"
@@ -580,7 +1005,7 @@
       "link": "https://hk.sports.yahoo.com/news/%E8%89%BE%E5%8D%A1%E6%8B%BF%E6%96%AF%E5%8F%8D%E5%8B%9D%E6%99%89%E7%B4%9A%E7%AC%AC3%E5%9C%88-040745993.html",
       "pubDate": "2026-09-03 04:07:45",
       "source_name": "All In Yahoo",
-      "image_url": "https://s.yimg.com/lo/mysterio/api/150afeec82b96c8edfb05d7e98a23e7e5f1e6917dc328e2c1a7c8ecc4d4736fe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fcv%2Fapiv2%2Fsocial%2Fimages%2Fyahoo_default_logo-1200x1200.png",
+      "image_url": "",
       "keywords": [
         "美國公開賽",
         "艾卡拿斯",
@@ -592,13 +1017,63 @@
       "region": "hk"
     },
     {
+      "id": "e17e8e8b3df3d860534e933d75c3d0a0",
+      "title": "沈伯洋誇蔣萬安兒子優秀 強調做好利益迴避",
+      "description": "中評社台北9月3日電(記者 張嘉文)中國國民黨籍台北市長蔣萬安兒子蔣得立錄取台北市教育局國際交換學生計劃,引發綠營利益迴避爭議。蔣萬安的對手、民進黨台北市長參選人沈伯洋今天並未強烈批判蔣此事,他受訪時反而先稱讚說,蔣得立本身很優秀,考上建中、現在要出境都是好事,外界不應討論小孩本身。 沈伯洋強調,真正的問題是政治人物在事情前階段,有沒有做好利益迴避,這才是該討論的焦點。 至",
+      "link": "http://www.crntt.com/doc/7_0_160264344_1_0903120504.html",
+      "pubDate": "2026-09-03 04:05:04",
+      "source_name": "Crntt",
+      "image_url": "",
+      "keywords": [
+        "沈伯洋",
+        "蔣得立",
+        "蔣萬安"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8966540c33adfc38c6d6afccf472f0c8",
+      "title": "周杰倫演唱會2026廣州|門票攻略+購票連結+座位表",
+      "description": "周杰倫《時光機》廣州嘉年華世界巡迴演唱會將於2026年12月4‐6日在廣州天河體育中心體育場舉行,會在貓眼、大麥網開始公開發售,即刻看內文了解如何",
+      "link": "https://www.hk01.com/%E7%9C%BE%E6%A8%82%E8%BF%B7/60386362/%E5%91%A8%E6%9D%B0%E5%80%AB%E6%BC%94%E5%94%B1%E6%9C%832026%E5%BB%A3%E5%B7%9E-%E9%96%80%E7%A5%A8%E6%94%BB%E7%95%A5-%E8%B3%BC%E7%A5%A8%E9%80%A3%E7%B5%90-%E5%BA%A7%E4%BD%8D%E8%A1%A8",
+      "pubDate": "2026-09-03 04:04:03",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "香港新聞",
+        "即時娛樂",
+        "娛樂新聞",
+        "mirror",
+        "香港01",
+        "明星",
+        "新聞",
+        "即時娛樂新聞",
+        "tvb",
+        "藝人",
+        "韓星",
+        "viu",
+        "marvel",
+        "美劇",
+        "hk01"
+      ],
+      "category": [
+        "entertainment",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "fe9d2bb751193b213b70d48430cdc8bc",
       "title": "ARTiSTORY艺述事斩获第26届IAI传鉴国际广告奖金奖,入选《2026全球顶级授权代理商》TOP60",
       "description": "上海 2026年9月3日 /美通社/ -- 2026年6月,第26届IAI传鉴国际创意节在北京举行。ARTiSTORY艺述事团队凭借卓越的创意叙事能力,从4105件参赛作品中脱颖而出,一举摘得四项重磅大奖,涵盖跨界营销、年度公司及数字化系统等多个类别,充分彰显其在文化艺术IP授权与全链运营领域的综合实力。 ARTiSTORY艺述事斩获第26届IAI传鉴国际广告奖四项重磅大奖 金奖首秀:东西方文化的诗意碰撞 本届IAI金奖比例仅为3.1%。艺述事以\"大英图书馆×霸王茶姬:午后伯爵原叶鲜奶茶系列\"荣获\"跨界营销类金奖\",项目负责人、ARTiSTORY首席营销官刘靓出席领奖。该项目以\"茶遇奇境\"为主题,在马来西亚与新加坡推出新品及快闪活动,精准融合霸王茶姬\"以茶会友\"的品牌内核与大英图书馆中\"疯帽子茶话会\"的友谊哲学,促成东方茶文化与西方文学瑰宝的深度对话,使产品成为文化媒介,助力中国茶文化以世界性语言走向全球。 ARTiSTORY艺述事以该案例入围2026全球授权业卓越大奖\"最佳授权推广项目\"(Best Licensed Promotion)。 艺述事以“大英图书馆×霸王茶姬:午后伯爵原叶鲜奶茶系列”荣获“跨界营销类金奖” 项目负责人、ARTiSTORY首席营销官刘靓出席领奖 荣耀加冕:全链能力再获行业认可 除跨界营销金奖与铜奖外,艺述事在年度公司类别亦成绩斐然: 作为本年度 唯一 获得\"年度文旅营销机构\"殊荣的企业,艺述事深耕文博文旅IP体系化建设。旗下\"ARTiSTORY STORE艺述事博物集\"以艺术策展型复合商业模式,融合国际展陈、文创零售与美育工坊,分别在南京牛首山、上海西岸、济南落地文博IP主题店,构建沉浸式文化社群平台,形成从IP深度运营到线下场景创新的全链路能力。 艺述事旗下“ARTiSTORY STORE艺述事博物集” 同时,艺述事与敦煌文旅集团旗下\"敦煌文创\"\"敦煌风尚\"双IP续签五年全球全品类授权运营合作协议,合作期从2026年延长至2031年,率先成为 国内首个 陪伴地方文博文旅IP品牌建设十年长跑的专业运营机构。\"敦煌文创×暹罗百丽宫:'欢乐中国年'系列活动\"获\"跨界营销类铜奖\",借中泰建交50周年契机,将敦煌IP引入 曼谷知名商业 地标,通过《乐动敦煌》首秀及明星助阵,引发泰国主流媒体广泛报道,成为文化出海经典案例。 艺述事以“敦煌文创×暹罗百丽宫:‘欢乐中国年’系列活动”项目获“跨界营销类铜奖” 艺述事自研\"离火IP授权运营管理系统\"荣获\"年度最具价值系统/工具/平台\",以\"资源资产化、品牌体系化、资产产品化、运营可持续化\"为核心方法论,为文博文旅机构提供IP体系化建设服务。作为 中国首个 拥有自主知识产权的文博文旅IP授权管理系统,已入驻20余家海内外文博机构及40余个品牌方,落地100余项授权合作,实现流程可视化、资产可追溯、风险可管控,并正研发专属智能体,向更智能、开放、生态化演进。 聚势新生:艺术与商业共融共生 在国际授权行业权威媒体License Global发布的《2026全球 顶级 授权代理商排行榜》中,ARTiSTORY艺述事首次登榜,位列全球第57位、中国第5位,标志其全球授权版图影响力与品牌价值再上新台阶。 ARTiSTORY艺述事登榜国际授权行业权威媒体License Global发布的《2026全球顶级授权代理商排行榜》,位列全球第57位 同年,由ARTiSTORY艺述事授权代理的\"大英图书馆\"入围2026亚洲授权业卓越大奖年度新秀奖(Licensing International Asian Awards-The Newcomer Award)。 2026年3月,艺述事推动大英图书馆与《恋与制作人》游戏深度联动,以专业IP运营与创意策划,将莎翁戏剧魅力融入互动叙事,搭建跨界协作桥梁。 艺述事推动大英图书馆与《恋与制作人》游戏深度联动 新诤信集团版权事业部总经理、艺述事管理合伙人于飞表示:\"艺述事与2026年世界博物馆日主题'博物馆:联结世界的桥梁'理念不谋而合,致力于帮助国内文博文旅IP及品牌出海,找到新的叙事路径,进而在AI时代增加品牌价值的权重,达成聚势新增长的目标。\" 新诤信集团版权事业部总经理、艺述事管理合伙人于飞 作为专注全球文化艺术IP授权与全链运营的专业机构,艺述事始终以长线视角参与IP品牌规划、成长与迭代,通过文化资产系统梳理、内容叙事持续优化及市场趋势敏锐洞察,推动文化艺术IP从资源整合走向价值放大,实现品牌化、体系化与可持续化发展。 从助力中国品牌出海到推动国际文旅交流,从线下体验空间运营到线上授权管理技术革新,艺述事聚焦文化价值与品牌战略的深度契合。未来,将继续以全球知名文化艺术IP为支点,携手合作伙伴,撬动更具想象力的商业可能。",
       "link": "https://www.prnasia.com/story/546335-1.shtml",
       "pubDate": "2026-09-03 04:00:00",
       "source_name": "美通社",
-      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "image_url": "",
       "keywords": [
         "adv",
         "fas",
@@ -618,7 +1093,7 @@
       "link": "https://www.am730.com.hk/%E7%94%9F%E6%B4%BB/1050865/%E5%A3%BD%E5%8F%B8%E9%83%8E%E5%A1%AB%E5%95%8F%E5%8D%B7%E6%8A%BD-60%E5%88%86%E9%90%98%E9%9B%99%E4%BA%BA%E6%94%BE%E9%A1%8C%E5%88%B8-%E8%B4%8F-500%E5%84%AA%E6%83%A0%E5%88%B8-%E8%90%8C%E6%8A%B1%E5%A3%BD%E5%8F%B8%E5%B0%8F%E5%A4%9C%E7%87%88-%E5%A3%BD%E5%8F%B8%E7%B8%BD%E9%81%B8%E8%88%8910%E6%9C%88%E9%9C%87%E6%92%BC%E5%84%AA%E6%83%A0",
       "pubDate": "2026-09-03 04:00:00",
       "source_name": "Am730",
-      "image_url": "https://cdn3.am730.com.hk/processed/2026-09/1050865/article/1050865/df/01M1GP9CZ4HMAMFQ2VFJZW21NV.jpg?updatedAt=1788340405",
+      "image_url": "",
       "keywords": null,
       "category": [
         "top",
@@ -633,7 +1108,7 @@
       "link": "https://www.prnasia.com/story/546334-1.shtml",
       "pubDate": "2026-09-03 04:00:00",
       "source_name": "美通社",
-      "image_url": "https://mmx.prnewswire.com/media/MS1885219/MORFIUS.jpg?id=OA2769962&p=facebook",
+      "image_url": "",
       "keywords": [
         "pdt",
         "ent",
@@ -652,7 +1127,7 @@
       "link": "http://www.crntt.com/doc/7_0_107230479_1_0903115745.html",
       "pubDate": "2026-09-03 03:57:44",
       "source_name": "Crntt",
-      "image_url": "https://hkpic.crntt.com/upload/202609/3/107230494.jpg",
+      "image_url": "",
       "keywords": null,
       "category": [
         "top",
@@ -667,7 +1142,7 @@
       "link": "https://www.edigest.hk/news/uber-global-layoffs-3300-employees-management-restructuring-autonomous-driving-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2037454/",
       "pubDate": "2026-09-03 03:57:06",
       "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/09/bdb0ce54-6b49-46ed-8cd6-aacabcabe505_3557508296a98fb9502e57.png",
+      "image_url": "",
       "keywords": [
         "即時財經"
       ],
@@ -683,7 +1158,7 @@
       "link": "https://www.stheadline.com/realtime-china/3611161/%E9%96%93%E8%AB%9C%E6%A1%88%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%B8%AD%E5%9C%8B%E7%95%99%E5%AD%B8%E7%94%9F%E5%9C%A8%E7%BE%8E%E8%A2%AB%E6%8D%95-%E4%BE%9B%E8%AA%8D%E6%94%B6%E5%A0%B1%E9%85%AC%E6%8B%8D%E6%94%9D%E6%A9%9F%E5%A0%B4%E8%A8%AD%E6%96%BD%E5%8F%8A%E9%A3%9B%E6%A9%9F",
       "pubDate": "2026-09-03 03:56:58",
       "source_name": "Stheadline",
-      "image_url": "https://image.hkhl.hk/f/1200p0/0x0/100/none/21859660d069cdd30621f849d400915d/2026-09/FotoJet_7_.jpg",
+      "image_url": "",
       "keywords": [
         "加拿大",
         "留學生",
@@ -702,7 +1177,7 @@
       "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60386388/bts%E6%9F%BE%E5%9C%8B%E7%9B%B4%E6%92%AD%E6%8B%8B-%E6%93%87%E5%81%B6%E6%A2%9D%E4%BB%B6-%E8%A6%81%E6%B1%82%E6%84%9B%E5%96%9D%E9%85%92-%E5%81%A5%E8%AB%87-%E7%B2%89%E7%B5%B2%E8%B5%B7%E5%93%84%E7%9C%9F%E7%9B%B8%E7%AC%91%E7%98%8B",
       "pubDate": "2026-09-03 03:52:17",
       "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260903/1172144426747695104309728.png/NDyi6X4lo5Be4FprUH6Us293HLvUBOodbiqB8m4qgfI",
+      "image_url": "",
       "keywords": [
         "香港新聞",
         "即時娛樂",
@@ -727,7 +1202,7 @@
       "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E4%B8%AD%E5%9C%8B/60386419/%E4%B8%AD%E5%9C%8B%E6%B5%B7%E8%AD%A6%E6%99%AE%E9%99%80%E5%B1%B1%E8%89%A6%E7%B7%A8%E9%9A%8A%E4%BD%8D%E5%8F%B0%E7%81%A3%E5%B3%B6%E4%BB%A5%E6%9D%B1%E5%B8%B8%E6%85%8B%E5%B7%A1%E6%9F%A5-%E7%B6%AD%E8%AD%B7%E5%9C%8B%E5%AE%B6%E9%A0%98%E5%9C%9F%E4%B8%BB%E6%AC%8A",
       "pubDate": "2026-09-03 03:51:31",
       "source_name": "Hk01.com",
-      "image_url": "https://cdn.hk01.com/di/media/images/dw/20260903/1172144764359806976320549.png/lwN6NyJsqNBIpTaZajEtWvUQpVo19gNncoMYhnKDGIY",
+      "image_url": "",
       "keywords": [
         "香港01",
         "時事",
@@ -746,7 +1221,7 @@
       "link": "https://www.edigest.hk/news/japan-takaichi-abolishes-45-hour-overtime-limit-overwork-culture-%E5%8D%B3%E6%99%82%E8%B2%A1%E7%B6%93-2037444/",
       "pubDate": "2026-09-03 03:50:41",
       "source_name": "Edigest",
-      "image_url": "https://images.edigest.hk/wp-content/uploads/2026/09/51be3497-fd67-4922-8a81-b5517f3c9e0a_21182109356a98fdb60fe39.png",
+      "image_url": "",
       "keywords": [
         "即時財經"
       ],
@@ -762,7 +1237,7 @@
       "link": "https://hk.finance.yahoo.com/news/imf%E7%B8%BD%E8%A3%81%E6%A0%BC%E5%A5%A7%E7%88%BE%E5%9F%BA%E8%80%B6%E5%A8%83-%E5%82%B5%E5%88%B8%E5%AD%B3%E6%81%AF%E7%8E%87%E9%A3%86%E5%8D%87-%E6%81%90%E6%89%93%E6%93%8A%E7%99%BC%E5%B1%95%E4%B8%AD%E5%9C%8B%E5%AE%B6%E6%B8%9B%E5%82%B5%E5%8A%AA%E5%8A%9B-034934601.html",
       "pubDate": "2026-09-03 03:49:34",
       "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "image_url": "",
       "keywords": null,
       "category": [
         "business"
@@ -776,7 +1251,7 @@
       "link": "https://hk.finance.yahoo.com/news/%E5%A4%A7%E8%A1%8C-%E9%AB%98%E7%9B%9B%E5%8D%87%E6%88%B4%E7%88%BE-dell-us-%E7%9B%AE%E6%A8%99%E5%83%B9%E8%87%B3570%E7%BE%8E%E5%85%83-034916214.html",
       "pubDate": "2026-09-03 03:49:16",
       "source_name": "Yahoo Finance",
-      "image_url": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png",
+      "image_url": "",
       "keywords": [
         "investing",
         "business",
@@ -811,7 +1286,7 @@
       "link": "https://china.hket.com/article/4187798",
       "pubDate": "2026-09-03 03:36:00",
       "source_name": "Hket",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187798/xxjpbee000063_20260903_pepfn0a001_1_300.jpg",
+      "image_url": "",
       "keywords": [
         "氣候暖化",
         "外交",
@@ -841,7 +1316,7 @@
       "pubDate": "2026-09-03 00:01:00",
       "fetched_at": "2026-09-03 23:53:20",
       "source_name": "香港經濟日報",
-      "image_url": "https://static04.hket.com/res/v3/image/content/4185000/4187479/170cm_300.png",
+      "image_url": "",
       "keywords": [],
       "category": [
         "finance",
