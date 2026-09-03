@@ -218,7 +218,7 @@ def card(a, show_image, lead_index=0):
     # 標題：優先用改寫標題（避版權），冇先 fallback 原標題
     title = esc(load_title(aid) or to_trad(a.get("title", "")))
     src = esc(a.get("source_name", ""))
-    pub = esc((a.get("pubDate", "") or "")[:10])
+    pub = esc((a.get("fetched_at", "") or a.get("pubDate", ""))[:16])
     # 原始分類 + 財經層面分類（股市/地產/利率）併入 data-category
     cats_raw = list(a.get("category", []) or [])
     cats_raw += finance_tags(a)

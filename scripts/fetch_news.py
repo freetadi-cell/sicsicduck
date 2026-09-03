@@ -13,6 +13,11 @@ import html as html_lib
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    BeautifulSoup = None
+
 # Hong Kong timezone (UTC+8)
 HKT = timezone(timedelta(hours=8))
 
@@ -42,12 +47,44 @@ REGIONS = ['hk']
 
 # RSS Feeds - Hong Kong Chinese news sources
 RSS_FEEDS = {
+    "yahoo_finance_hk": {
+        "name": "Yahoo Finance HK",
+        "feeds": [
+            "https://hk.finance.yahoo.com/news/rssindex",
+        ],
+        "default_category": ["finance", "local"],
+    },
     "hket": {
         "name": "香港經濟日報",
         "feeds": [
             "https://www.hket.com/rss/hongkong",
             "https://www.hket.com/rss/finance",
-        ]
+        ],
+        "default_category": ["finance", "local"],
+    },
+}
+
+# Web scraping sources (no RSS available)
+SCRAPE_SOURCES = {
+    "cnn_world": {
+        "name": "CNN",
+        "url": "https://edition.cnn.com/world",
+        "default_category": ["international"],
+    },
+    "cnn_business": {
+        "name": "CNN Business",
+        "url": "https://edition.cnn.com/business",
+        "default_category": ["finance", "us"],
+    },
+    "hk01": {
+        "name": "HK01",
+        "url": "https://www.hk01.com",
+        "default_category": ["local"],
+    },
+    "investing": {
+        "name": "Investing.com",
+        "url": "https://www.investing.com/news/financial-news",
+        "default_category": ["finance", "us"],
     },
 }
 
@@ -243,7 +280,7 @@ def fetch_news(days=7, max_per_category=10):
     return articles
 
 
-def fetch_rss_feed(feed_url, source_name):
+def fetch_rss_feed(feed_url, source_name, source_key=None):
     """Fetch and parse RSS feed"""
     articles = []
     
@@ -320,10 +357,11 @@ def fetch_rss_feed(feed_url, source_name):
                 "description": description,
                 "link": link,
                 "pubDate": pub_date_str,
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
                 "source_name": source_name,
                 "image_url": image_url,
                 "keywords": [],
-                "category": ["rss"],
+                "category": RSS_FEEDS.get(source_key, {}).get("default_category", ["rss"]),
                 "region": "hk",
             }
             
@@ -336,6 +374,666 @@ def fetch_rss_feed(feed_url, source_name):
         return []
 
 
+
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+}
+
+def scrape_cnn(url, source_name, category):
+    """Scrape CNN news pages"""
+    if not BeautifulSoup:
+        print(f"    bs4 not available, skipping {source_name}")
+        return []
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 10:
+                continue
+            if "/video/" in href or "/gallery/" in href or "/live-news/" in href:
+                continue
+            if not href.startswith("http"):
+                href = "https://edition.cnn.com" + href if href.startswith("/") else href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            desc_tag = a_tag.find_next("p")
+            desc = desc_tag.get_text(strip=True)[:500] if desc_tag else ""
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": desc,
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": source_name,
+                "image_url": "",
+                "keywords": [],
+                "category": category,
+                "region": "intl",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error {source_name}: {e}")
+        return []
+
+def scrape_hk01():
+    """Scrape HK01 local news"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping HK01")
+        return []
+    try:
+        resp = requests.get("https://www.hk01.com/hk/1/即時新聞", headers=HEADERS, timeout=30)
+        if resp.status_code != 200:
+            resp = requests.get("https://www.hk01.com", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 8:
+                continue
+            if "/tag/" in href or "/topic/" in href or href.count("/") < 3:
+                continue
+            if not href.startswith("http"):
+                href = "https://www.hk01.com" + href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": "",
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "HK01",
+                "image_url": "",
+                "keywords": [],
+                "category": ["local"],
+                "region": "hk",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error HK01: {e}")
+        return []
+
+def scrape_investing():
+    """Fetch Investing.com financial news via RSS (HTML page returns 403)"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping Investing.com")
+        return []
+    try:
+        resp = requests.get("https://www.investing.com/rss/news_285.rss", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(resp.content)
+        articles = []
+        for item in root.findall(".//item"):
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            desc = item.findtext("description", "")
+            pub = item.findtext("pubDate", "")
+            if not title or not link:
+                continue
+            article_id = hashlib.md5(link.encode()).hexdigest()
+            # Parse pubDate if available
+            pub_str = ""
+            if pub:
+                try:
+                    from email.utils import parsedate_to_datetime
+                    dt = parsedate_to_datetime(pub)
+                    pub_str = dt.strftime("%Y-%m-%d %H:%M:%S")
+                except Exception:
+                    pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            else:
+                pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            articles.append({
+                "id": article_id,
+                "title": title[:200],
+                "description": desc[:500] if desc else "",
+                "link": link,
+                "pubDate": pub_str,
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "Investing.com",
+                "image_url": "",
+                "keywords": [],
+                "category": ["finance", "us"],
+                "region": "us",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error Investing.com: {e}")
+        return []
+
+def fetch_scraped_news():
+    """Fetch news from web scraping sources"""
+    all_articles = []
+    print("\nScraping web sources...")
+    print("  CNN World...")
+    arts = scrape_cnn("https://edition.cnn.com/world", "CNN", ["international"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  CNN Business...")
+    arts = scrape_cnn("https://edition.cnn.com/business", "CNN Business", ["finance", "us"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  HK01...")
+    arts = scrape_hk01()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  Investing.com...")
+    arts = scrape_investing()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    return all_articles
+
+
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+}
+
+def scrape_cnn(url, source_name, category):
+    """Scrape CNN news pages"""
+    if not BeautifulSoup:
+        print(f"    bs4 not available, skipping {source_name}")
+        return []
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 10:
+                continue
+            if "/video/" in href or "/gallery/" in href or "/live-news/" in href:
+                continue
+            if not href.startswith("http"):
+                href = "https://edition.cnn.com" + href if href.startswith("/") else href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            desc_tag = a_tag.find_next("p")
+            desc = desc_tag.get_text(strip=True)[:500] if desc_tag else ""
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": desc,
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": source_name,
+                "image_url": "",
+                "keywords": [],
+                "category": category,
+                "region": "intl",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error {source_name}: {e}")
+        return []
+
+def scrape_hk01():
+    """Scrape HK01 local news"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping HK01")
+        return []
+    try:
+        resp = requests.get("https://www.hk01.com/hk/1/即時新聞", headers=HEADERS, timeout=30)
+        if resp.status_code != 200:
+            resp = requests.get("https://www.hk01.com", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 8:
+                continue
+            if "/tag/" in href or "/topic/" in href or href.count("/") < 3:
+                continue
+            if not href.startswith("http"):
+                href = "https://www.hk01.com" + href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": "",
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "HK01",
+                "image_url": "",
+                "keywords": [],
+                "category": ["local"],
+                "region": "hk",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error HK01: {e}")
+        return []
+
+def scrape_investing():
+    """Fetch Investing.com financial news via RSS (HTML page returns 403)"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping Investing.com")
+        return []
+    try:
+        resp = requests.get("https://www.investing.com/rss/news_285.rss", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(resp.content)
+        articles = []
+        for item in root.findall(".//item"):
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            desc = item.findtext("description", "")
+            pub = item.findtext("pubDate", "")
+            if not title or not link:
+                continue
+            article_id = hashlib.md5(link.encode()).hexdigest()
+            # Parse pubDate if available
+            pub_str = ""
+            if pub:
+                try:
+                    from email.utils import parsedate_to_datetime
+                    dt = parsedate_to_datetime(pub)
+                    pub_str = dt.strftime("%Y-%m-%d %H:%M:%S")
+                except Exception:
+                    pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            else:
+                pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            articles.append({
+                "id": article_id,
+                "title": title[:200],
+                "description": desc[:500] if desc else "",
+                "link": link,
+                "pubDate": pub_str,
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "Investing.com",
+                "image_url": "",
+                "keywords": [],
+                "category": ["finance", "us"],
+                "region": "us",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error Investing.com: {e}")
+        return []
+
+def fetch_scraped_news():
+    """Fetch news from web scraping sources"""
+    all_articles = []
+    print("\nScraping web sources...")
+    print("  CNN World...")
+    arts = scrape_cnn("https://edition.cnn.com/world", "CNN", ["international"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  CNN Business...")
+    arts = scrape_cnn("https://edition.cnn.com/business", "CNN Business", ["finance", "us"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  HK01...")
+    arts = scrape_hk01()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  Investing.com...")
+    arts = scrape_investing()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    return all_articles
+
+
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+}
+
+def scrape_cnn(url, source_name, category):
+    """Scrape CNN news pages"""
+    if not BeautifulSoup:
+        print(f"    bs4 not available, skipping {source_name}")
+        return []
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 10:
+                continue
+            if "/video/" in href or "/gallery/" in href or "/live-news/" in href:
+                continue
+            if not href.startswith("http"):
+                href = "https://edition.cnn.com" + href if href.startswith("/") else href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            desc_tag = a_tag.find_next("p")
+            desc = desc_tag.get_text(strip=True)[:500] if desc_tag else ""
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": desc,
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": source_name,
+                "image_url": "",
+                "keywords": [],
+                "category": category,
+                "region": "intl",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error {source_name}: {e}")
+        return []
+
+def scrape_hk01():
+    """Scrape HK01 local news"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping HK01")
+        return []
+    try:
+        resp = requests.get("https://www.hk01.com/hk/1/即時新聞", headers=HEADERS, timeout=30)
+        if resp.status_code != 200:
+            resp = requests.get("https://www.hk01.com", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 8:
+                continue
+            if "/tag/" in href or "/topic/" in href or href.count("/") < 3:
+                continue
+            if not href.startswith("http"):
+                href = "https://www.hk01.com" + href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": "",
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "HK01",
+                "image_url": "",
+                "keywords": [],
+                "category": ["local"],
+                "region": "hk",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error HK01: {e}")
+        return []
+
+def scrape_investing():
+    """Fetch Investing.com financial news via RSS (HTML page returns 403)"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping Investing.com")
+        return []
+    try:
+        resp = requests.get("https://www.investing.com/rss/news_285.rss", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(resp.content)
+        articles = []
+        for item in root.findall(".//item"):
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            desc = item.findtext("description", "")
+            pub = item.findtext("pubDate", "")
+            if not title or not link:
+                continue
+            article_id = hashlib.md5(link.encode()).hexdigest()
+            # Parse pubDate if available
+            pub_str = ""
+            if pub:
+                try:
+                    from email.utils import parsedate_to_datetime
+                    dt = parsedate_to_datetime(pub)
+                    pub_str = dt.strftime("%Y-%m-%d %H:%M:%S")
+                except Exception:
+                    pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            else:
+                pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            articles.append({
+                "id": article_id,
+                "title": title[:200],
+                "description": desc[:500] if desc else "",
+                "link": link,
+                "pubDate": pub_str,
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "Investing.com",
+                "image_url": "",
+                "keywords": [],
+                "category": ["finance", "us"],
+                "region": "us",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error Investing.com: {e}")
+        return []
+
+def fetch_scraped_news():
+    """Fetch news from web scraping sources"""
+    all_articles = []
+    print("\nScraping web sources...")
+    print("  CNN World...")
+    arts = scrape_cnn("https://edition.cnn.com/world", "CNN", ["international"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  CNN Business...")
+    arts = scrape_cnn("https://edition.cnn.com/business", "CNN Business", ["finance", "us"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  HK01...")
+    arts = scrape_hk01()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  Investing.com...")
+    arts = scrape_investing()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    return all_articles
+
+
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+}
+
+def scrape_cnn(url, source_name, category):
+    """Scrape CNN news pages"""
+    if not BeautifulSoup:
+        print(f"    bs4 not available, skipping {source_name}")
+        return []
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 10:
+                continue
+            if "/video/" in href or "/gallery/" in href or "/live-news/" in href:
+                continue
+            if not href.startswith("http"):
+                href = "https://edition.cnn.com" + href if href.startswith("/") else href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            desc_tag = a_tag.find_next("p")
+            desc = desc_tag.get_text(strip=True)[:500] if desc_tag else ""
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": desc,
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": source_name,
+                "image_url": "",
+                "keywords": [],
+                "category": category,
+                "region": "intl",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error {source_name}: {e}")
+        return []
+
+def scrape_hk01():
+    """Scrape HK01 local news"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping HK01")
+        return []
+    try:
+        resp = requests.get("https://www.hk01.com/hk/1/即時新聞", headers=HEADERS, timeout=30)
+        if resp.status_code != 200:
+            resp = requests.get("https://www.hk01.com", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        articles = []
+        seen = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag.get("href", "")
+            title_text = a_tag.get_text(strip=True)
+            if not title_text or len(title_text) < 8:
+                continue
+            if "/tag/" in href or "/topic/" in href or href.count("/") < 3:
+                continue
+            if not href.startswith("http"):
+                href = "https://www.hk01.com" + href
+            article_id = hashlib.md5(href.encode()).hexdigest()
+            if article_id in seen:
+                continue
+            seen.add(article_id)
+            articles.append({
+                "id": article_id,
+                "title": title_text[:200],
+                "description": "",
+                "link": href,
+                "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "HK01",
+                "image_url": "",
+                "keywords": [],
+                "category": ["local"],
+                "region": "hk",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error HK01: {e}")
+        return []
+
+def scrape_investing():
+    """Fetch Investing.com financial news via RSS (HTML page returns 403)"""
+    if not BeautifulSoup:
+        print("    bs4 not available, skipping Investing.com")
+        return []
+    try:
+        resp = requests.get("https://www.investing.com/rss/news_285.rss", headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(resp.content)
+        articles = []
+        for item in root.findall(".//item"):
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            desc = item.findtext("description", "")
+            pub = item.findtext("pubDate", "")
+            if not title or not link:
+                continue
+            article_id = hashlib.md5(link.encode()).hexdigest()
+            # Parse pubDate if available
+            pub_str = ""
+            if pub:
+                try:
+                    from email.utils import parsedate_to_datetime
+                    dt = parsedate_to_datetime(pub)
+                    pub_str = dt.strftime("%Y-%m-%d %H:%M:%S")
+                except Exception:
+                    pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            else:
+                pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
+            articles.append({
+                "id": article_id,
+                "title": title[:200],
+                "description": desc[:500] if desc else "",
+                "link": link,
+                "pubDate": pub_str,
+                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
+                "source_name": "Investing.com",
+                "image_url": "",
+                "keywords": [],
+                "category": ["finance", "us"],
+                "region": "us",
+            })
+        return articles[:15]
+    except Exception as e:
+        print(f"    Scrape error Investing.com: {e}")
+        return []
+
+def fetch_scraped_news():
+    """Fetch news from web scraping sources"""
+    all_articles = []
+    print("\nScraping web sources...")
+    print("  CNN World...")
+    arts = scrape_cnn("https://edition.cnn.com/world", "CNN", ["international"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  CNN Business...")
+    arts = scrape_cnn("https://edition.cnn.com/business", "CNN Business", ["finance", "us"])
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  HK01...")
+    arts = scrape_hk01()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    print("  Investing.com...")
+    arts = scrape_investing()
+    print(f"    Fetched {len(arts)} articles")
+    all_articles.extend(arts)
+    return all_articles
+
 def fetch_all_rss():
     """Fetch all RSS feeds and scrape extra sources"""
     all_articles = []
@@ -346,9 +1044,13 @@ def fetch_all_rss():
         print(f"  {source_info['name']}:")
         
         for feed_url in source_info['feeds']:
-            articles = fetch_rss_feed(feed_url, source_info['name'])
+            articles = fetch_rss_feed(feed_url, source_info["name"], source_key)
             print(f"    Fetched {len(articles)} articles from {feed_url}")
             all_articles.extend(articles)
+    
+    # Add scraped web sources (CNN, HK01, Investing.com)
+    scraped = fetch_scraped_news()
+    all_articles.extend(scraped)
     
     return all_articles
 
