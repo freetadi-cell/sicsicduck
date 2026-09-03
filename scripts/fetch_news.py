@@ -32,7 +32,7 @@ NEWS_FILE = DATA_DIR / "news.json"
 CACHE_DIR = SCRIPT_DIR.parent / "articles_cache"
 
 # Settings
-MAX_AGE_DAYS = 30  # Remove articles older than this
+MAX_AGE_DAYS = 7  # Remove articles older than this (daily cleanup)
 MAX_PER_CATEGORY_NORMAL = 10  # Max articles per category per region for daily cron
 MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initial build
 
