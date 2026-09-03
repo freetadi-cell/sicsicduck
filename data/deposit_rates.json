@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "last_updated": "2026-09-03",
+    "source": "sicsicduck.com",
+    "currency": "HKD",
+    "rates_type": "time_deposit"
+  },
+  "banks": [
+    {
+      "id": "hsbc",
+      "name_zh": "滙豐銀行",
+      "name_en": "HSBC",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.40,
+        "6m": 2.20,
+        "12m": null,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "新資金優惠，卓越理財/HSBC One"
+    },
+    {
+      "id": "hangseng",
+      "name_zh": "恒生銀行",
+      "name_en": "Hang Seng",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.40,
+        "6m": 2.40,
+        "12m": null,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "優越理財/優進理財客戶"
+    },
+    {
+      "id": "boc",
+      "name_zh": "中國銀行（香港）",
+      "name_en": "Bank of China (Hong Kong)",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.40,
+        "6m": 2.40,
+        "12m": null,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "手機/網上銀行新資金特惠"
+    },
+    {
+      "id": "scb",
+      "name_zh": "渣打銀行",
+      "name_en": "Standard Chartered",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.40,
+        "6m": 2.40,
+        "12m": 2.80,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "SC Mobile 網上開立"
+    },
+    {
+      "id": "dbs",
+      "name_zh": "星展銀行",
+      "name_en": "DBS",
+      "type": "traditional",
+      "rates": {
+        "1m": 2.00,
+        "3m": 2.55,
+        "6m": 2.60,
+        "12m": 2.50,
+        "24m": null
+      },
+      "min_deposit": "50000",
+      "notes": "網上新資金定存優惠"
+    },
+    {
+      "id": "citibank",
+      "name_zh": "花旗銀行",
+      "name_en": "Citibank",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.80,
+        "6m": 3.00,
+        "12m": 3.00,
+        "24m": null
+      },
+      "min_deposit": "500000",
+      "notes": "Citi Mobile App 優惠利率"
+    },
+    {
+      "id": "icbc",
+      "name_zh": "工銀亞洲",
+      "name_en": "ICBC Asia",
+      "type": "traditional",
+      "rates": {
+        "1m": 1.70,
+        "3m": 2.90,
+        "6m": 2.65,
+        "12m": 2.65,
+        "24m": null
+      },
+      "min_deposit": "50000",
+      "notes": "網上銀行/手機銀行優惠"
+    },
+    {
+      "id": "bocom",
+      "name_zh": "交通銀行（香港）",
+      "name_en": "Bank of Communications (Hong Kong)",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.85,
+        "6m": 2.85,
+        "12m": 2.85,
+        "24m": null
+      },
+      "min_deposit": "100000",
+      "notes": "新資金定存優惠"
+    },
+    {
+      "id": "citic",
+      "name_zh": "中信銀行（國際）",
+      "name_en": "CITIC International",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.70,
+        "6m": 2.80,
+        "12m": 2.90,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "線上開立"
+    },
+    {
+      "id": "cmbwl",
+      "name_zh": "招商永隆銀行",
+      "name_en": "CMB Wing Lung",
+      "type": "traditional",
+      "rates": {
+        "1m": 1.15,
+        "3m": 1.95,
+        "6m": 2.00,
+        "12m": 2.00,
+        "24m": null
+      },
+      "min_deposit": "500000",
+      "notes": "網上定存優惠"
+    },
+    {
+      "id": "dahsing",
+      "name_zh": "大新銀行",
+      "name_en": "Dah Sing",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.45,
+        "6m": 2.50,
+        "12m": 2.60,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "網上開立"
+    },
+    {
+      "id": "chonghing",
+      "name_zh": "創興銀行",
+      "name_en": "Chong Hing",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.55,
+        "6m": 2.55,
+        "12m": 2.60,
+        "24m": null
+      },
+      "min_deposit": "5000",
+      "notes": "網上銀行優惠"
+    },
+    {
+      "id": "ncb",
+      "name_zh": "南洋商業銀行",
+      "name_en": "Nanyang Commercial Bank",
+      "type": "traditional",
+      "rates": {
+        "1m": 2.50,
+        "3m": 2.85,
+        "6m": 3.05,
+        "12m": 3.05,
+        "24m": null
+      },
+      "min_deposit": "100000",
+      "notes": "智優息新資金定存"
+    },
+    {
+      "id": "shacombank",
+      "name_zh": "上海商業銀行",
+      "name_en": "Shanghai Commercial Bank",
+      "type": "traditional",
+      "rates": {
+        "1m": 2.08,
+        "3m": 2.73,
+        "6m": 2.88,
+        "12m": 2.98,
+        "24m": null
+      },
+      "min_deposit": "1000",
+      "notes": "網上銀行/流動銀行優惠"
+    },
+    {
+      "id": "ccb",
+      "name_zh": "建設銀行（亞洲）",
+      "name_en": "CCB (Asia)",
+      "type": "traditional",
+      "rates": {
+        "1m": 2.40,
+        "3m": 2.60,
+        "6m": 2.45,
+        "12m": 2.45,
+        "24m": null
+      },
+      "min_deposit": "100000",
+      "notes": "新資金定存推廣"
+    },
+    {
+      "id": "ocbc",
+      "name_zh": "華僑永亨銀行",
+      "name_en": "OCBC Wing Hang",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.80,
+        "6m": 3.08,
+        "12m": 3.20,
+        "24m": null
+      },
+      "min_deposit": "100000",
+      "notes": "全新資金專屬方案"
+    },
+    {
+      "id": "fubon",
+      "name_zh": "富邦銀行",
+      "name_en": "Fubon",
+      "type": "traditional",
+      "rates": {
+        "1m": 2.45,
+        "3m": 2.85,
+        "6m": 2.85,
+        "12m": 2.90,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "Fubon+ App 開立"
+    },
+    {
+      "id": "chiuyen",
+      "name_zh": "集友銀行",
+      "name_en": "Chiu Yuen",
+      "type": "traditional",
+      "rates": {
+        "1m": null,
+        "3m": 2.40,
+        "6m": 2.40,
+        "12m": 2.50,
+        "24m": null
+      },
+      "min_deposit": "10000",
+      "notes": "網上銀行優惠"
+    },
+    {
+      "id": "public",
+      "name_zh": "大眾銀行（香港）",
+      "name_en": "Public Bank (Hong Kong)",
+      "type": "traditional",
+      "rates": {
+        "1m": 2.30,
+        "3m": 2.60,
+        "6m": 2.70,
+        "12m": 2.90,
+        "24m": null
+      },
+      "min_deposit": "500000",
+      "notes": "按存款額分階利率"
+    },
+    {
+      "id": "mox",
+      "name_zh": "Mox Bank",
+      "name_en": "Mox Bank",
+      "type": "virtual",
+      "rates": {
+        "1m": null,
+        "3m": 2.60,
+        "6m": 2.90,
+        "12m": 2.75,
+        "24m": null
+      },
+      "min_deposit": "1",
+      "notes": "渣打旗下虛擬銀行"
+    },
+    {
+      "id": "welab",
+      "name_zh": "WeLab Bank",
+      "name_en": "WeLab Bank",
+      "type": "virtual",
+      "rates": {
+        "1m": null,
+        "3m": 2.85,
+        "6m": 3.00,
+        "12m": 3.00,
+        "24m": null
+      },
+      "min_deposit": "10",
+      "notes": "GoSave 2.0 定存"
+    },
+    {
+      "id": "paob",
+      "name_zh": "PAO Bank",
+      "name_en": "PAO Bank",
+      "type": "virtual",
+      "rates": {
+        "1m": null,
+        "3m": 3.00,
+        "6m": 3.20,
+        "12m": 3.20,
+        "24m": null
+      },
+      "min_deposit": "1",
+      "notes": "平安數字銀行"
+    },
+    {
+      "id": "antbank",
+      "name_zh": "螞蟻銀行",
+      "name_en": "Ant Bank",
+      "type": "virtual",
+      "rates": {
+        "1m": null,
+        "3m": 2.80,
+        "6m": 3.00,
+        "12m": 3.00,
+        "24m": null
+      },
+      "min_deposit": "1",
+      "notes": "新資金額外年利率"
+    }
+  ]
+}
