@@ -81,11 +81,6 @@ SCRAPE_SOURCES = {
         "url": "https://www.hk01.com",
         "default_category": ["local"],
     },
-    "investing": {
-        "name": "Investing.com",
-        "url": "https://www.investing.com/news/financial-news",
-        "default_category": ["finance", "us"],
-    },
 }
 
 
@@ -469,54 +464,6 @@ def scrape_hk01():
         print(f"    Scrape error HK01: {e}")
         return []
 
-def scrape_investing():
-    """Fetch Investing.com financial news via RSS (HTML page returns 403)"""
-    if not BeautifulSoup:
-        print("    bs4 not available, skipping Investing.com")
-        return []
-    try:
-        resp = requests.get("https://www.investing.com/rss/news_25.rss", headers=HEADERS, timeout=30)
-        resp.raise_for_status()
-        import xml.etree.ElementTree as ET
-        root = ET.fromstring(resp.content)
-        articles = []
-        for item in root.findall(".//item"):
-            title = item.findtext("title", "")
-            link = item.findtext("link", "")
-            desc = item.findtext("description", "")
-            pub = item.findtext("pubDate", "")
-            if not title or not link:
-                continue
-            article_id = hashlib.md5(link.encode()).hexdigest()
-            # Parse pubDate if available
-            pub_str = ""
-            if pub:
-                try:
-                    from email.utils import parsedate_to_datetime
-                    dt = parsedate_to_datetime(pub)
-                    pub_str = dt.strftime("%Y-%m-%d %H:%M:%S")
-                except Exception:
-                    pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
-            else:
-                pub_str = datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S")
-            articles.append({
-                "id": article_id,
-                "title": title[:200],
-                "description": desc[:500] if desc else "",
-                "link": link,
-                "pubDate": pub_str,
-                "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
-                "source_name": "Investing.com",
-                "image_url": "",
-                "keywords": [],
-                "category": ["finance", "us"],
-                "region": "us",
-            })
-        return articles[:15]
-    except Exception as e:
-        print(f"    Scrape error Investing.com: {e}")
-        return []
-
 def fetch_scraped_news():
     """Fetch news from web scraping sources"""
     all_articles = []
@@ -531,10 +478,6 @@ def fetch_scraped_news():
     all_articles.extend(arts)
     print("  HK01...")
     arts = scrape_hk01()
-    print(f"    Fetched {len(arts)} articles")
-    all_articles.extend(arts)
-    print("  Investing.com...")
-    arts = scrape_investing()
     print(f"    Fetched {len(arts)} articles")
     all_articles.extend(arts)
     return all_articles
@@ -553,7 +496,7 @@ def fetch_all_rss():
             print(f"    Fetched {len(articles)} articles from {feed_url}")
             all_articles.extend(articles)
     
-    # Add scraped web sources (CNN, HK01, Investing.com)
+    # Add scraped web sources (CNN, HK01)
     scraped = fetch_scraped_news()
     all_articles.extend(scraped)
     
