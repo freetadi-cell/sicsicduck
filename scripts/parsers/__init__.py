@@ -37,7 +37,6 @@ from .welab import parse as parse_welab
 from .livi import parse as parse_livi
 from .ant import parse as parse_ant
 from .chiyu import parse as parse_chiyu
-from .pingan import parse as parse_pingan
 from .ncb import parse as parse_ncb
 
 
