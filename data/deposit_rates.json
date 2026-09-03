@@ -1,355 +1,384 @@
 {
-  "metadata": {
-    "last_updated": "2026-09-03",
-    "source": "sicsicduck.com",
-    "currency": "HKD",
-    "rates_type": "time_deposit"
-  },
+  "collection_date": "2026-09-03",
+  "currency": "HKD",
+  "type": "time_deposit",
+  "data_sources": [
+    "bank official websites (direct scraping)",
+    "StashAway comparison (截至 2026-08-31)",
+    "HKInsu.com (2026-07-31)",
+    "ezone.hk (D260902, daily updated)",
+    "HKET wealth (2026-08-31)",
+    "MoneyHero (2026-08-11)"
+  ],
+  "notes": "Rates shown are the best available rate (highest tier/new fund preferential) unless noted. N/A means data not available from sources. Rates marked with '*' are from comparison sites; others from official bank pages. All rates are annualized % p.a.",
   "banks": [
     {
-      "id": "hsbc",
-      "name_zh": "滙豐銀行",
+      "id": 1,
       "name_en": "HSBC",
-      "type": "traditional",
+      "name_tc": "滙豐",
       "rates": {
         "1m": null,
-        "3m": 2.40,
-        "6m": 2.20,
+        "3m": "2.40",
+        "6m": "2.20",
         "12m": null,
         "24m": null
       },
       "min_deposit": "10000",
-      "notes": "新資金優惠，卓越理財/HSBC One"
+      "notes": "New fund online rate. 3m=2.40% all tiers. 6m=2.20%. No 1m/12m listed for online preferential.",
+      "source": "ezone.hk, StashAway",
+      "source_url": "https://www.hsbc.com.hk/accounts/products/time-deposits/"
     },
     {
-      "id": "hangseng",
-      "name_zh": "恒生銀行",
+      "id": 2,
       "name_en": "Hang Seng",
-      "type": "traditional",
+      "name_tc": "恒生",
       "rates": {
         "1m": null,
-        "3m": 2.40,
-        "6m": 2.40,
+        "3m": "2.40",
+        "6m": "2.40",
         "12m": null,
         "24m": null
       },
       "min_deposit": "10000",
-      "notes": "優越理財/優進理財客戶"
+      "notes": "Online preferential rate for 優越私人理財/優越理財/優進理財: 2/3/6 months all 2.40%. 1m/12m not listed.",
+      "source": "ezone.hk, StashAway",
+      "source_url": "https://www.hangseng.com/en-hk/personal/banking/rates/deposit-interest-rates/"
     },
     {
-      "id": "boc",
-      "name_zh": "中國銀行（香港）",
-      "name_en": "Bank of China (Hong Kong)",
-      "type": "traditional",
+      "id": 3,
+      "name_en": "BoC HK",
+      "name_tc": "中銀",
       "rates": {
         "1m": null,
-        "3m": 2.40,
-        "6m": 2.40,
+        "3m": "2.40",
+        "6m": "2.40",
         "12m": null,
         "24m": null
       },
       "min_deposit": "10000",
-      "notes": "手機/網上銀行新資金特惠"
+      "notes": "Online/mobile new fund preferential. Both Wealth Mgmt and regular customers: 3m=2.40%, 6m=2.40%. 1m/12m not offered for online channel.",
+      "source": "Official website (direct scrape), ezone.hk",
+      "source_url": "https://www.bochk.com/en/deposits/promotion/timedeposits.html"
     },
     {
-      "id": "scb",
-      "name_zh": "渣打銀行",
+      "id": 4,
       "name_en": "Standard Chartered",
-      "type": "traditional",
+      "name_tc": "渣打",
       "rates": {
         "1m": null,
-        "3m": 2.40,
-        "6m": 2.40,
-        "12m": 2.80,
+        "3m": "2.40",
+        "6m": "2.20",
+        "12m": "2.20",
         "24m": null
       },
       "min_deposit": "10000",
-      "notes": "SC Mobile 網上開立"
+      "notes": "SC Mobile online preferential rates. ezone shows 3m=2.40%, 6m=2.20%, 12m=2.20%.",
+      "source": "ezone.hk, HKInsu",
+      "source_url": "https://www.sc.com/hk/deposits/foreign-exchange-time-deposit/"
     },
     {
-      "id": "dbs",
-      "name_zh": "星展銀行",
+      "id": 5,
       "name_en": "DBS",
-      "type": "traditional",
+      "name_tc": "星展",
       "rates": {
-        "1m": 2.00,
-        "3m": 2.55,
-        "6m": 2.60,
-        "12m": 2.50,
+        "1m": "2.00",
+        "3m": "2.45",
+        "6m": "2.50",
+        "12m": "2.40",
         "24m": null
       },
       "min_deposit": "50000",
-      "notes": "網上新資金定存優惠"
+      "notes": "New fund / existing fund rates. 1m=2.00%, 3m=2.45%, 6m=2.50%, 9m=2.40%, 12m=2.40%. Same for general and Wealth Mgmt.",
+      "source": "ezone.hk",
+      "source_url": "https://www.dbs.com.hk/personal-zh/deposits/time-deposit/default.page"
     },
     {
-      "id": "citibank",
-      "name_zh": "花旗銀行",
+      "id": 6,
       "name_en": "Citibank",
-      "type": "traditional",
+      "name_tc": "花旗",
       "rates": {
         "1m": null,
-        "3m": 2.80,
-        "6m": 3.00,
-        "12m": 3.00,
+        "3m": "3.00",
+        "6m": null,
+        "12m": null,
         "24m": null
       },
-      "min_deposit": "500000",
-      "notes": "Citi Mobile App 優惠利率"
+      "min_deposit": "1",
+      "notes": "New Private Banking customer 3m=3.00%. New Citigold customer 3m=2.80%. Limited tenure options for preferential rate.",
+      "source": "ezone.hk",
+      "source_url": "https://www.citibank.com.hk/chinese/personal-banking/time-deposit/"
     },
     {
-      "id": "icbc",
-      "name_zh": "工銀亞洲",
+      "id": 7,
       "name_en": "ICBC Asia",
-      "type": "traditional",
+      "name_tc": "工銀亞洲",
       "rates": {
-        "1m": 1.70,
-        "3m": 2.90,
-        "6m": 2.65,
-        "12m": 2.65,
+        "1m": "1.50",
+        "3m": "2.75",
+        "6m": "2.80",
+        "12m": "2.80",
         "24m": null
       },
       "min_deposit": "50000",
-      "notes": "網上銀行/手機銀行優惠"
+      "notes": "Official online rates (50k-800k tier): 1m=1.50%, 2m=2.10%, 3m=2.75%, 6m=2.80%, 12m=2.80%. 800k+: 3m=2.85%, 6m/12m=2.90%. 3M+: Wise Gold 3m=2.90%, 6m/12m=2.95%.",
+      "source": "Official website (direct scrape), ezone.hk, StashAway",
+      "source_url": "https://www.icbcasia.com/hk/en/personal/latest-promotion/online-time-deposit.html"
     },
     {
-      "id": "bocom",
-      "name_zh": "交通銀行（香港）",
-      "name_en": "Bank of Communications (Hong Kong)",
-      "type": "traditional",
+      "id": 8,
+      "name_en": "BoCom HK",
+      "name_tc": "交通銀行",
       "rates": {
         "1m": null,
-        "3m": 2.85,
-        "6m": 2.85,
-        "12m": 2.85,
-        "24m": null
-      },
-      "min_deposit": "100000",
-      "notes": "新資金定存優惠"
-    },
-    {
-      "id": "citic",
-      "name_zh": "中信銀行（國際）",
-      "name_en": "CITIC International",
-      "type": "traditional",
-      "rates": {
-        "1m": null,
-        "3m": 2.70,
-        "6m": 2.80,
-        "12m": 2.90,
-        "24m": null
-      },
-      "min_deposit": "10000",
-      "notes": "線上開立"
-    },
-    {
-      "id": "cmbwl",
-      "name_zh": "招商永隆銀行",
-      "name_en": "CMB Wing Lung",
-      "type": "traditional",
-      "rates": {
-        "1m": 1.15,
-        "3m": 1.95,
-        "6m": 2.00,
-        "12m": 2.00,
+        "3m": "0.12",
+        "6m": "0.12",
+        "12m": "0.15",
         "24m": null
       },
       "min_deposit": "500000",
-      "notes": "網上定存優惠"
+      "notes": "Standard牌價 rates very low. StashAway shows: 7d=0.01%, 1m=0.10%, 3m=0.12%, 6m=0.12%, 12m=0.15% for HKD 500,000. Actual preferential rates require branch inquiry.",
+      "source": "StashAway, HKInsu",
+      "source_url": "https://www.hk.bankcomm.com/hk/shtml/hk/en/2005742/2005763/2005764/list.shtml"
     },
     {
-      "id": "dahsing",
-      "name_zh": "大新銀行",
-      "name_en": "Dah Sing",
-      "type": "traditional",
+      "id": 9,
+      "name_en": "CITIC International",
+      "name_tc": "中信國際",
       "rates": {
-        "1m": null,
-        "3m": 2.45,
-        "6m": 2.50,
-        "12m": 2.60,
+        "1m": "2.40",
+        "3m": "2.60",
+        "6m": "2.69",
+        "12m": "2.73",
         "24m": null
       },
       "min_deposit": "10000",
-      "notes": "網上開立"
+      "notes": "StashAway data: 7d=0.001%, 1m=2.40%, 3m=2.60%, 6m=2.69%, 12m=2.73%. 大富翁存款 extra bonus up to 3.38% for new customers.",
+      "source": "StashAway, ezone.hk",
+      "source_url": "https://www.cncbinternational.com"
     },
     {
-      "id": "chonghing",
-      "name_zh": "創興銀行",
-      "name_en": "Chong Hing",
-      "type": "traditional",
+      "id": 10,
+      "name_en": "CMB Wing Lung",
+      "name_tc": "招商永隆",
+      "rates": {
+        "1m": "1.15",
+        "3m": "1.95",
+        "6m": "2.00",
+        "12m": "2.00",
+        "24m": "0.15"
+      },
+      "min_deposit": "10000",
+      "notes": "Standard rate (existing funds, mobile): 1m=1.15%, 3m=1.95%, 6m=2.00%, 12m=2.00%, 24m=0.15% (all 50k+). New fund 6m: 10k-500k=2.90%, 500k+=2.95%. 金葵花/私人財富 extra 0.05%.",
+      "source": "HKET wealth (2026-08-31)",
+      "source_url": "https://www.cmbwinglungbank.com/wlb_corporate/hk/personal/investments/financial-information/interest-rates/deposit-interest-rates.html"
+    },
+    {
+      "id": 11,
+      "name_en": "Dah Sing",
+      "name_tc": "大新",
       "rates": {
         "1m": null,
-        "3m": 2.55,
-        "6m": 2.55,
-        "12m": 2.60,
+        "3m": "2.80",
+        "6m": "2.80",
+        "12m": "2.80",
         "24m": null
+      },
+      "min_deposit": "200000",
+      "notes": "New fund preferential (branch only): 3-6m ~2.5%-2.8%. 悅出本息 12m=2.8% (new fund 10-50w). Standard rates ~2%-2.3%. Actual rate varies daily.",
+      "source": "HKET wealth, moneyhk101.com",
+      "source_url": "https://www.dahsing.com/personal/deposits/time-deposit.html"
+    },
+    {
+      "id": 12,
+      "name_en": "Chong Hing",
+      "name_tc": "創興",
+      "rates": {
+        "1m": "2.45",
+        "3m": "2.75",
+        "6m": "2.15",
+        "12m": "0.80",
+        "24m": "0.20"
       },
       "min_deposit": "5000",
-      "notes": "網上銀行優惠"
+      "notes": "Cloud rate (online/mobile). 1m=2.45%, 2m=2.50%, 3m=2.75%, 6m=2.15%, 12m=0.80%, 24m=0.20% (for 5k-499k). Higher for 500k+: 3m=2.85%, 6m=2.30%. StashAway shows different (old) data.",
+      "source": "ezone.hk (daily updated)",
+      "source_url": "https://www.chbank.com/en/personal/banking-services/useful-information/deposit-rates/index.shtml"
     },
     {
-      "id": "ncb",
-      "name_zh": "南洋商業銀行",
-      "name_en": "Nanyang Commercial Bank",
-      "type": "traditional",
+      "id": 13,
+      "name_en": "NCB",
+      "name_tc": "南洋商業",
       "rates": {
-        "1m": 2.50,
-        "3m": 2.85,
-        "6m": 3.05,
-        "12m": 3.05,
-        "24m": null
+        "1m": "2.88",
+        "3m": "2.85",
+        "6m": "3.05",
+        "12m": "3.05",
+        "24m": "3.05"
       },
-      "min_deposit": "100000",
-      "notes": "智優息新資金定存"
+      "min_deposit": "1000",
+      "notes": "HKET data (2026-08-31): 1w=6.8% (FX), 1m=2.88% (new fund), 2m=2.65%, 3m=2.85%, 6m=3.05%, 9m=3.05%, 12m=3.05%, 2y=3.05%, 3y=3.05%. StashAway: 1m=2.50%, 3m=2.85%, 6m=3.05%, 12m=3.05% (HKD100k). New customer 1m=3.48%.",
+      "source": "HKET wealth (2026-08-31), StashAway",
+      "source_url": "https://www.ncb.com.hk/nanyang_bank/popup1/ncbinfo.html"
     },
     {
-      "id": "shacombank",
-      "name_zh": "上海商業銀行",
-      "name_en": "Shanghai Commercial Bank",
-      "type": "traditional",
+      "id": 14,
+      "name_en": "Shanghai Commercial",
+      "name_tc": "上海商業",
       "rates": {
-        "1m": 2.08,
-        "3m": 2.73,
-        "6m": 2.88,
-        "12m": 2.98,
+        "1m": "2.40",
+        "3m": "2.80",
+        "6m": "2.95",
+        "12m": "3.05",
         "24m": null
       },
       "min_deposit": "1000",
-      "notes": "網上銀行/流動銀行優惠"
+      "notes": "Official website (online channel): 1m=2.40%, 3m=2.80%, 6m=2.95%, 12m=3.05%. Branch rates lower: 1m=2.08%, 3m=2.73%, 6m=2.88%, 12m=2.98%.",
+      "source": "Official website (direct scrape), StashAway",
+      "source_url": "https://www.shacombank.com.hk/tch/personal/promotion/fix-rate.jsp"
     },
     {
-      "id": "ccb",
-      "name_zh": "建設銀行（亞洲）",
-      "name_en": "CCB (Asia)",
-      "type": "traditional",
+      "id": 15,
+      "name_en": "CCB Asia",
+      "name_tc": "建行（亞洲）",
       "rates": {
-        "1m": 2.40,
-        "3m": 2.60,
-        "6m": 2.45,
-        "12m": 2.45,
+        "1m": null,
+        "3m": "7.88",
+        "6m": null,
+        "12m": null,
         "24m": null
       },
       "min_deposit": "100000",
-      "notes": "新資金定存推廣"
+      "notes": "Official: 貴賓理財 new fund 3m HKD/CNY up to 7.88% (FX promotion). Regular online 3m HKD up to 3.00%. 6.88% for 100w+ branch new fund. High rates are FX-tied promotions.",
+      "source": "Official website (direct scrape), ezone.hk",
+      "source_url": "https://www.asia.ccb.com/hongkong_tc/personal/accounts/dep_rates.html"
     },
     {
-      "id": "ocbc",
-      "name_zh": "華僑永亨銀行",
+      "id": 16,
       "name_en": "OCBC Wing Hang",
-      "type": "traditional",
+      "name_tc": "華僑永亨",
       "rates": {
-        "1m": null,
-        "3m": 2.80,
-        "6m": 3.08,
-        "12m": 3.20,
+        "1m": "1.85",
+        "3m": "2.80",
+        "6m": "3.08",
+        "12m": "3.20",
         "24m": null
       },
       "min_deposit": "100000",
-      "notes": "全新資金專屬方案"
+      "notes": "HKET (2026-08-31): 宏富理財 new fund: 1m=1.85%, 3m=2.80%, 6m=3.08%, 9m=3.15%, 12m=3.20%. General: 1m=1.85%(50w+), 3m=2.50%, 6m=3.00%, 9m=3.00%, 12m=3.05%. New customer 3m=3.4% (300w-800w). HKInsu: 3m=2.80%, 6m=3.08%, 12m=3.20%.",
+      "source": "HKET wealth (2026-08-31), HKInsu",
+      "source_url": "https://www.ocbcwh.com"
     },
     {
-      "id": "fubon",
-      "name_zh": "富邦銀行",
+      "id": 17,
       "name_en": "Fubon",
-      "type": "traditional",
+      "name_tc": "富邦",
       "rates": {
-        "1m": 2.45,
-        "3m": 2.85,
-        "6m": 2.85,
-        "12m": 2.90,
+        "1m": "2.35",
+        "3m": "2.80",
+        "6m": "2.95",
+        "12m": "2.95",
         "24m": null
       },
       "min_deposit": "10000",
-      "notes": "Fubon+ App 開立"
+      "notes": "ezone: Fubon+ App (100w+): 1m=2.35%, 2m=2.45%, 3m=2.80%, 6m=2.95%, 12m=2.95%. Lower tiers: 200k-500k 3m=1.60%, 6m/12m=1.75%. Branch 100w+: 3m=2.50%, 6m/12m=2.65%. HKInsu: 3m=2.95%, 6m=3.10%, 12m=3.10%.",
+      "source": "ezone.hk, HKInsu",
+      "source_url": "https://www.fubonbank.com.hk/en/deposit/latest-promotions/new-customers-promotion.html"
     },
     {
-      "id": "chiuyen",
-      "name_zh": "集友銀行",
+      "id": 18,
       "name_en": "Chiu Yuen",
-      "type": "traditional",
+      "name_tc": "集友",
       "rates": {
         "1m": null,
-        "3m": 2.40,
-        "6m": 2.40,
-        "12m": 2.50,
+        "3m": null,
+        "6m": null,
+        "12m": null,
         "24m": null
       },
-      "min_deposit": "10000",
-      "notes": "網上銀行優惠"
+      "min_deposit": null,
+      "notes": "DNS resolution failed for chiubank.com. No data available from comparison sites. Chiu Yuen Bank website appears down or restructured.",
+      "source": "N/A",
+      "source_url": "https://www.chiubank.com"
     },
     {
-      "id": "public",
-      "name_zh": "大眾銀行（香港）",
-      "name_en": "Public Bank (Hong Kong)",
-      "type": "traditional",
+      "id": 19,
+      "name_en": "Public Bank",
+      "name_tc": "大眾",
       "rates": {
-        "1m": 2.30,
-        "3m": 2.60,
-        "6m": 2.70,
-        "12m": 2.90,
-        "24m": null
-      },
-      "min_deposit": "500000",
-      "notes": "按存款額分階利率"
-    },
-    {
-      "id": "mox",
-      "name_zh": "Mox Bank",
-      "name_en": "Mox Bank",
-      "type": "virtual",
-      "rates": {
-        "1m": null,
-        "3m": 2.60,
-        "6m": 2.90,
-        "12m": 2.75,
+        "1m": "2.40",
+        "3m": "2.80",
+        "6m": "2.75",
+        "12m": "2.95",
         "24m": null
       },
       "min_deposit": "1",
-      "notes": "渣打旗下虛擬銀行"
+      "notes": "Official website (direct scrape, 500k+ tier): 1m=2.40%, 2m=2.60%, 3m=2.80%, 6m=2.75%, 12m=2.95%. Lower tiers: <100k: 1m=2.30%, 3m=2.65%, 6m=2.65%, 12m=2.85%.",
+      "source": "Official website (direct scrape), ezone.hk, StashAway",
+      "source_url": "https://www.publicbank.com.hk/tc/usefultools/rates/depositinterestrates"
     },
     {
-      "id": "welab",
-      "name_zh": "WeLab Bank",
-      "name_en": "WeLab Bank",
-      "type": "virtual",
+      "id": 20,
+      "name_en": "Mox",
+      "name_tc": "Mox",
       "rates": {
-        "1m": null,
-        "3m": 2.85,
-        "6m": 3.00,
-        "12m": 3.00,
-        "24m": null
+        "1m": "3.20",
+        "3m": "3.80",
+        "6m": "3.45",
+        "12m": "3.30",
+        "24m": "3.30"
+      },
+      "min_deposit": "1",
+      "notes": "Official website (promotional rate): 1m=3.2%, 3m=3.8%, 6m=3.45%, 9m=3.35%, 12m=3.3%, 24m=3.3%. Standard rate (table 2): 3m=2.55%, 6m=2.60%, 9m=2.65%, 12m=2.90%, 24m=3.00%. StashAway: 3m=2.55%, 6m=2.60%, 12m=2.90%.",
+      "source": "Official website (direct scrape), StashAway",
+      "source_url": "https://mox.com/zh/promotions/time-deposit/"
+    },
+    {
+      "id": 21,
+      "name_en": "WeLab Bank",
+      "name_tc": "WeLab Bank",
+      "rates": {
+        "1m": "0.50",
+        "3m": "2.45",
+        "6m": "2.45",
+        "12m": "2.40",
+        "24m": "2.25"
       },
       "min_deposit": "10",
-      "notes": "GoSave 2.0 定存"
+      "notes": "ezone.hk: 1m=0.50%, 3m=2.45%, 6m=2.45%, 12m=2.40%, 18m=2.25%, 24m=2.25%. HKInsu: 3m=2.80%, 6m=3.00%, 12m=3.00%. StashAway: 3m=2.85%, 6m/12m=3.00%. Rates vary; official site uses JS rendering.",
+      "source": "ezone.hk, HKInsu, StashAway",
+      "source_url": "https://www.welab.bank/zh/feature/gosave_2/"
     },
     {
-      "id": "paob",
-      "name_zh": "PAO Bank",
+      "id": 22,
       "name_en": "PAO Bank",
-      "type": "virtual",
+      "name_tc": "PAO Bank",
       "rates": {
-        "1m": null,
-        "3m": 3.00,
-        "6m": 3.20,
-        "12m": 3.20,
+        "1m": "2.30",
+        "3m": "2.60",
+        "6m": "2.50",
+        "12m": "2.50",
         "24m": null
       },
       "min_deposit": "1",
-      "notes": "平安數字銀行"
+      "notes": "ezone.hk: 1m=2.30%, 3m=2.60%, 6m=2.50%, 12m=2.50%. Official website shows Smart Savings rates (首30天 1.00%, etc.) which are different products.",
+      "source": "ezone.hk",
+      "source_url": "https://www.paob.com.hk/tc/retail-savings.html"
     },
     {
-      "id": "antbank",
-      "name_zh": "螞蟻銀行",
+      "id": 23,
       "name_en": "Ant Bank",
-      "type": "virtual",
+      "name_tc": "Ant Bank",
       "rates": {
         "1m": null,
-        "3m": 2.80,
-        "6m": 3.00,
-        "12m": 3.00,
+        "3m": null,
+        "6m": null,
+        "12m": null,
         "24m": null
       },
-      "min_deposit": "1",
-      "notes": "新資金額外年利率"
+      "min_deposit": null,
+      "notes": "Official website uses JS rendering, no static rate data extractable. Not listed in major comparison sites (StashAway, ezone, HKInsu). Ant Bank may have limited or no HKD time deposit product.",
+      "source": "N/A (JS-rendered site)",
+      "source_url": "https://www.antbank.hk/rates?lang=zh_hk"
     }
   ]
 }
