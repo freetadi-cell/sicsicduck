@@ -29,7 +29,12 @@ MAX_PER_CATEGORY_NORMAL = 10  # Max articles per category per region for daily c
 MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initial build
 
 # Categories and regions (removed 'cn' and 'tw' to exclude Simplified Chinese and Taiwan news)
-CATEGORIES = ['business', 'technology', 'entertainment', 'sports', 'science', 'health', 'politics', 'world']
+# Categories merged into 2 batches to reduce API calls (8 → 2)
+# NewsData.io supports comma-separated categories in a single request
+CATEGORY_BATCHES = [
+    ['business', 'technology', 'science', 'health'],
+    ['entertainment', 'sports', 'politics', 'world'],
+]
 REGIONS = ['hk']
 
 # RSS Feeds - Hong Kong Chinese news sources
@@ -136,7 +141,7 @@ def sort_articles_by_date(articles):
 
 def fetch_news(days=7, max_per_category=10):
     """
-    Fetch Chinese news from NewsData.io from multiple categories and regions
+    Fetch Chinese news from NewsData.io using batched categories (2 API calls instead of 8)
     
     Args:
         days: Number of days to look back
@@ -148,23 +153,24 @@ def fetch_news(days=7, max_per_category=10):
     articles = []
     
     print(f"Fetching Chinese news from NewsData.io...")
-    print(f"Categories: {', '.join(CATEGORIES)}")
+    print(f"Category batches: {len(CATEGORY_BATCHES)} (merged from 8 categories)")
     print(f"Regions: {', '.join(REGIONS)}")
     print(f"Date range: {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
     
-    for category in CATEGORIES:
-        print(f"\nFetching {category} news...")
-        category_articles = []
+    for batch_idx, category_batch in enumerate(CATEGORY_BATCHES, 1):
+        category_str = ','.join(category_batch)
+        print(f"\nBatch {batch_idx}: {category_str}")
+        batch_articles = []
         
         for region in REGIONS:
             print(f"  Region: {region}")
             page = None
             
-            while len(category_articles) < max_per_category:
+            while len(batch_articles) < max_per_category * len(category_batch):
                 params = {
                     "apikey": API_KEY,
                     "language": "zh",
-                    "category": category,
+                    "category": category_str,
                     "country": region,
                 }
                 
@@ -204,20 +210,20 @@ def fetch_news(days=7, max_per_category=10):
                             "source_name": article.get("source_name"),
                             "image_url": article.get("image_url"),
                             "keywords": article.get("keywords", []),
-                            "category": article.get("category", [category]),
+                            "category": article.get("category", category_batch[:1]),
                             "region": region,
                         }
                         
                         if not processed["title"]:
                             continue
                         
-                        category_articles.append(processed)
+                        batch_articles.append(processed)
                         
-                        if len(category_articles) >= max_per_category:
+                        if len(batch_articles) >= max_per_category * len(category_batch):
                             break
                     
                     next_page = data.get("next_page")
-                    if not next_page or len(category_articles) >= max_per_category:
+                    if not next_page or len(batch_articles) >= max_per_category * len(category_batch):
                         break
                     page = next_page
                     
@@ -228,8 +234,8 @@ def fetch_news(days=7, max_per_category=10):
                     print(f"    JSON error: {e}")
                     break
         
-        articles.extend(category_articles)
-        print(f"  Total for {category}: {len(category_articles)} articles")
+        articles.extend(batch_articles)
+        print(f"  Total for batch {batch_idx}: {len(batch_articles)} articles")
     
     return articles
 
