@@ -75,15 +75,10 @@ RSS_FEEDS = {
 
 # Web scraping sources (no RSS available)
 SCRAPE_SOURCES = {
-    "cnn_world": {
+    "cnn_breaking": {
         "name": "CNN",
-        "url": "https://edition.cnn.com/world",
+        "url": "https://edition.cnn.com/?refresh=1",
         "default_category": ["international"],
-    },
-    "cnn_business": {
-        "name": "CNN Business",
-        "url": "https://edition.cnn.com/business",
-        "default_category": ["finance", "us"],
     },
     "hk01": {
         "name": "HK01",
@@ -453,12 +448,8 @@ def fetch_scraped_news():
     """Fetch news from web scraping sources"""
     all_articles = []
     print("\nScraping web sources...")
-    print("  CNN World...")
-    arts = scrape_cnn("https://edition.cnn.com/world", "CNN", ["international"])
-    print(f"    Fetched {len(arts)} articles")
-    all_articles.extend(arts)
-    print("  CNN Business...")
-    arts = scrape_cnn("https://edition.cnn.com/business", "CNN Business", ["finance", "us"])
+    print("  CNN Breaking...")
+    arts = scrape_cnn("https://edition.cnn.com/?refresh=1", "CNN", ["international"])
     print(f"    Fetched {len(arts)} articles")
     all_articles.extend(arts)
     print("  HK01...")
