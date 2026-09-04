@@ -1,7 +1,103 @@
 {
-  "last_updated": "2026-09-04T09:16:08.182124",
-  "total": 87,
   "articles": [
+    {
+      "id": "368f458440713c92",
+      "title": "今日我咁睇｜聯儲放風加息機會減 環球股市料反彈 港股升幅料有限｜小編苟豪",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BB%8A%E6%97%A5%E6%88%91%E5%92%81%E7%9D%87-%E8%81%AF%E5%84%B2%E6%94%BE%E9%A2%A8%E5%8A%A0%E6%81%AF%E6%A9%9F%E6%9C%83%E6%B8%9B-%E7%92%B0%E7%90%83%E8%82%A1%E5%B8%82%E6%96%99%E5%8F%8D%E5%BD%88-%E6%B8%AF%E8%82%A1%E5%8D%87%E5%B9%85%E6%96%99%E6%9C%89%E9%99%90-%E5%B0%8F%E7%B7%A8%E8%8B%9F%E8%B1%AA-020000619.html",
+      "pubDate": "2026-09-04 02:00:00",
+      "fetched_at": "2026-09-04 10:10:09",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "b9d50332f9115662",
+      "title": "港股高開逾300點    騰訊等高開2%、紫金高開4%",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E6%B8%AF%E8%82%A1%E9%AB%98%E9%96%8B%E9%80%BE300%E9%BB%9E-%E9%A8%B0%E8%A8%8A%E7%AD%89%E9%AB%98%E9%96%8B2-%E7%B4%AB%E9%87%91%E9%AB%98%E9%96%8B4-013243120.html",
+      "pubDate": "2026-09-04 01:32:43",
+      "fetched_at": "2026-09-04 10:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "146b323bf27c74d6",
+      "title": "中生製藥(01177.HK)GPC3 ADC臨床試驗申請獲FDA批准",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E7%94%9F%E8%A3%BD%E8%97%A5-01177-hk-gpc3-adc%E8%87%A8%E5%BA%8A%E8%A9%A6%E9%A9%97%E7%94%B3%E8%AB%8B%E7%8D%B2fda%E6%89%B9%E5%87%86-012446311.html",
+      "pubDate": "2026-09-04 01:24:46",
+      "fetched_at": "2026-09-04 10:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "231949bf9c30347b",
+      "title": "人幣中間價上調20點 報6.7787兌一美元",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BA%BA%E5%B9%A3%E4%B8%AD%E9%96%93%E5%83%B9%E4%B8%8A%E8%AA%BF20%E9%BB%9E-%E5%A0%B16-7787%E5%85%8C-%E7%BE%8E%E5%85%83-012309887.html",
+      "pubDate": "2026-09-04 01:23:09",
+      "fetched_at": "2026-09-04 10:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "9333331b8c9124a46042f11daf5e5751",
+      "title": "大坑勵德邨單位疑閉門失火　一度傳出爆炸聲　40人疏散離開",
+      "description": "",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60386682/%E5%A4%A7%E5%9D%91%E5%8B%B5%E5%BE%B7%E9%82%A8%E5%96%AE%E4%BD%8D%E7%96%91%E9%96%89%E9%96%80%E5%A4%B1%E7%81%AB-%E4%B8%80%E5%BA%A6%E5%82%B3%E5%87%BA%E7%88%86%E7%82%B8%E8%81%B2-40%E4%BA%BA%E7%96%8F%E6%95%A3%E9%9B%A2%E9%96%8B",
+      "pubDate": "2026-09-04 10:00:11",
+      "fetched_at": "2026-09-04 10:00:11",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ef7e23c276212609936698c7f8fa45e",
+      "title": "大埔林村河現魔鬼魚群　有釣客出動舢舨捕獲滿載而歸　專家籲放生",
+      "description": "",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60386561/%E5%A4%A7%E5%9F%94%E6%9E%97%E6%9D%91%E6%B2%B3%E7%8F%BE%E9%AD%94%E9%AC%BC%E9%AD%9A%E7%BE%A4-%E6%9C%89%E9%87%A3%E5%AE%A2%E5%87%BA%E5%8B%95%E8%88%A2%E8%88%A8%E6%8D%95%E7%8D%B2%E6%BB%BF%E8%BC%89%E8%80%8C%E6%AD%B8-%E5%B0%88%E5%AE%B6%E7%B1%B2%E6%94%BE%E7%94%9F",
+      "pubDate": "2026-09-04 10:00:11",
+      "fetched_at": "2026-09-04 10:00:11",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
     {
       "id": "7c9e6f302ee7646624cafe106bd42b93",
       "title": "《香港01》十周年｜于品海：主動變革擁抱AI　引領香港媒體轉型",
@@ -13,6 +109,70 @@
       "image_url": "",
       "keywords": [],
       "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "81640bc1e1df0260",
+      "title": "想業務資源管理更加有效率？即搜尋【ERP System】了解！",
+      "description": "",
+      "link": "https://hk.promotions.yahoo.com/ysm/unified/?fr=strm&p=ERP%20System&type=fin_mfp_005_1000&tag=%E6%8F%90%E5%8D%87%E7%AB%B6%E7%88%AD%E5%8A%9B%7C%E5%B0%88%E5%AE%B6%7C%E5%A4%9A%E5%85%83%E5%8C%96%7C%E4%BC%81%E6%A5%AD&ct=6kg=122&bgm=&bgd=&date=202609041000&yptr=yahoo",
+      "pubDate": "2026-09-04 02:00:00",
+      "fetched_at": "2026-09-04 10:10:09",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3beacfdc2f5c7621",
+      "title": "世界華文媒體(00685.HK)約491.5萬美元沽加拿大物業",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%96%E7%95%8C%E8%8F%AF%E6%96%87%E5%AA%92%E9%AB%94-00685-hk-%E7%B4%84491-5%E8%90%AC%E7%BE%8E%E5%85%83%E6%B2%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%89%A9%E6%A5%AD-014652289.html",
+      "pubDate": "2026-09-04 01:46:52",
+      "fetched_at": "2026-09-04 10:10:09",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "858929d9a175963b",
+      "title": "金融資產止損 數碼通全年盈利升一成",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E9%87%91%E8%9E%8D%E8%B3%87%E7%94%A2%E6%AD%A2%E6%90%8D-%E6%95%B8%E7%A2%BC%E9%80%9A%E5%85%A8%E5%B9%B4%E7%9B%88%E5%88%A9%E5%8D%87-%E6%88%90-012649854.html",
+      "pubDate": "2026-09-04 01:26:49",
+      "fetched_at": "2026-09-04 10:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0b907c5547b03730",
+      "title": "Tesla(TSLA.US)收升逾5% 大摩予「中性」評級聚焦美國德州Cybercab活動細節",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/tesla-tsla-us-%E6%94%B6%E5%8D%87%E9%80%BE5-%E5%A4%A7%E6%91%A9%E4%BA%88-012247524.html",
+      "pubDate": "2026-09-04 01:22:47",
+      "fetched_at": "2026-09-04 10:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
         "local"
       ],
       "region": "hk"
@@ -553,6 +713,41 @@
       "region": "hk"
     },
     {
+      "id": "34e2c5db1a63dd4983ad14be27762c93",
+      "title": "美國8月ISM服務業PMI為55.4,高於前值的54.1。預測值為54.3。",
+      "description": "美國8月ISM服務業PMI為55.4,高於前值的54.1。預測值為54.3。~ 阿思達克財經新聞 網址: www.aastocks.com",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B8%E6%9C%88ism%E6%9C%8D%E5%8B%99%E6%A5%ADpmi%E7%82%BA55-4-%E9%AB%98%E6%96%BC%E5%89%8D%E5%80%BC%E7%9A%8454-1-%E9%A0%90%E6%B8%AC%E5%80%BC%E7%82%BA54-140000434.html",
+      "pubDate": "2026-09-03 14:00:00",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "quote",
+        "business news",
+        "investment tools",
+        "financial information",
+        "suze orman",
+        "mortgage",
+        "personal finance",
+        "finance",
+        "stock research",
+        "real estate",
+        "investor",
+        "stocks",
+        "investing",
+        "tax",
+        "mutual funds",
+        "market news",
+        "business",
+        "retirement",
+        "track portfolio",
+        "stock valuation"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
       "id": "512497f4b52aa9dd",
       "title": "劉兆銘離世︱「小龍女」發文悼念「一燈大師」劉兆銘　陳玉蓮：他留下的作品與精神長久留在觀眾心中",
       "description": "【劉兆銘 / 陳玉蓮 / 神鵰俠侶】資深藝人「Ming Sir」劉兆銘在昨晚（9月2日）驚傳離世，享年94歲。近年已很少出席公開活動的「小龍女」陳玉蓮，在個人社交平台悼念劉兆銘。陳玉蓮分享在宴會與劉兆...",
@@ -565,6 +760,360 @@
       "category": [
         "finance",
         "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0cd037010f5d7d6e44223c05d63369f9",
+      "title": "蔣得立長相遭嘲諷!粉專痛批連小孩都不放過",
+      "description": "中評社台北9月3日電/台北市長蔣萬安長子蔣得立近日錄取北市教育局公費交換生計劃,卻遭部分民進黨支持者質疑,還有人在社群平台議論其長相,甚至留言嘲諷“相由心生”。對此,政治粉專“政客爽”今(3)日痛批,“請問一個孩子到底做了什麼,要因為爸爸是政治人物,就被一群成年人拿外貌公開羞辱?” TVBS報導,政治粉專“政客爽”今撰文寫到,一場選舉,民進黨跟青鳥“相由心生”,拿政治人物開酸,至少還",
+      "link": "http://www.crntt.com/doc/7_0_107230732_1_0903215849.html",
+      "pubDate": "2026-09-03 13:58:49",
+      "source_name": "Crntt",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "aa697a5f1e2e1397c06d5dfd86d3ac3d",
+      "title": "AI 幫你記鎖匙位置、Guided Vision 幫你睇菜單夾成份表!Google September Android Drop 重點新功能盤點",
+      "description": "Google 正式發佈最新的 September Android Drop(Android 季度功能推送)!今次更新結合了圖像感知、Gemini AI 與日常貼心工具,重點功能包括防暈車浪模式、AI 記憶隨身物品,以及 Google Messages 直連 Keep 協作等。即睇今次 Android 系統有哪些實用新升級! 這篇文章 AI 幫你記鎖匙位置、Guided Vision 幫你睇菜單夾成份表!Google September Android Drop 重點新功能盤點 最早出現於 PCM 。",
+      "link": "https://www.pcmarket.com.hk/roundup-of-key-new-features-from-googles-september-android-update/",
+      "pubDate": "2026-09-03 13:57:14",
+      "source_name": "Pcm",
+      "image_url": "",
+      "keywords": [
+        "google ai",
+        "google september android drop",
+        "how to",
+        "google gemini",
+        "android",
+        "流動應用",
+        "tech"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fdda0fb3b684397ef6c56dc73e330071",
+      "title": "聯儲局官員沃勒:若通脹持續降溫,支持9月維持利率不變",
+      "description": "沃勒發表上述言論後,國債收益率跌至盤中低位,標普500期貨則隨之走高。交易員隨即下調對9月加息的預期,聯邦基金期貨及掉期市場顯示,9月加息與不加息的概率已接近五五之數。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E5%84%B2%E5%B1%80%E5%AE%98%E5%93%A1%E6%B2%83%E5%8B%92-%E8%8B%A5%E9%80%9A%E8%84%B9%E6%8C%81%E7%BA%8C%E9%99%8D%E6%BA%AB-%E6%94%AF%E6%8C%819%E6%9C%88%E7%B6%AD%E6%8C%81%E5%88%A9%E7%8E%87%E4%B8%8D%E8%AE%8A-135646311.html",
+      "pubDate": "2026-09-03 13:56:46",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "週四",
+        "聯邦基金",
+        "8月",
+        "8月28日",
+        "聯邦公開市",
+        "聯儲局",
+        "9月",
+        "高盛",
+        "9月15日至16日",
+        "9月16日",
+        "9月4日",
+        "路透社",
+        "investing.com"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8bac47343375cb0b08f1bd1359456e3f",
+      "title": "加拿大7月貿易順差大幅收窄,出口六個月來首次下滑",
+      "description": "Investing.com - 加拿大7月商品貿易順差急劇收窄,出口六個月來首次出現下滑,進口則同步上升。在美加關稅不確定性持續升溫的背景下,加拿大貿易形勢再度承壓。",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8A%A0%E6%8B%BF%E5%A4%A77%E6%9C%88%E8%B2%BF%E6%98%93%E9%A0%86%E5%B7%AE%E5%A4%A7%E5%B9%85%E6%94%B6%E7%AA%84-%E5%87%BA%E5%8F%A3%E5%85%AD%E5%80%8B%E6%9C%88%E4%BE%86%E9%A6%96%E6%AC%A1%E4%B8%8B%E6%BB%91-135408025.html",
+      "pubDate": "2026-09-03 13:54:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "7月",
+        "6月15",
+        "6月",
+        "加拿大",
+        "美國",
+        "investing.com",
+        "加拿大統計局"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "21012ff93fa9ebc60161d1db440415b5",
+      "title": "花旗做淡美元/加元,背後原因解析",
+      "description": "Investing.com - 花旗銀行建議對美元兌加元建立空倉,押注兩國之間已被拉大的利率差距將逆轉,轉而有利於加元,因為即將公布的經濟數據或將挑戰市場對美國貨幣政策的現有預期。",
+      "link": "https://hk.finance.yahoo.com/news/%E8%8A%B1%E6%97%97%E5%81%9A%E6%B7%A1%E7%BE%8E%E5%85%83-%E5%8A%A0%E5%85%83-%E8%83%8C%E5%BE%8C%E5%8E%9F%E5%9B%A0%E8%A7%A3%E6%9E%90-135408749.html",
+      "pubDate": "2026-09-03 13:54:08",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "花旗",
+        "花旗銀行",
+        "花旗預計"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "99d1551fd461368653cdaaa49005f551",
+      "title": "格洛麗亞·斯坦能逝世 享年92歲 畢生倡導女權運動",
+      "description": "圖片展示了格洛麗亞·斯坦能數十年來作為美國婦女運動的領軍人物,以及女權事業的終身倡導者。 這位《女士雜誌》的共同創辦人,以將其理念帶到集會、遊行及校園而聞名,她已於92歲離世。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16698277-%E6%A0%BC%E6%B4%9B%E9%BA%97%E4%BA%9E%C2%B7%E6%96%AF%E5%9D%A6%E8%83%BD%E9%80%9D%E4%B8%96-%E4%BA%AB%E5%B9%B492%E6%AD%B2-%E7%95%A2%E7%94%9F%E5%80%A1%E5%B0%8E%E5%A5%B3%E6%AC%8A%E9%81%8B%E5%8B%95",
+      "pubDate": "2026-09-03 13:51:30",
+      "source_name": "Bastillepost",
+      "image_url": "",
+      "keywords": [
+        "格洛麗亞·斯坦能",
+        "女權運動",
+        "美國",
+        "逝世",
+        "大視野",
+        "婦女權益"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "6aa39375058e50abe1b4171b40900b57",
+      "title": "銀色債券2026|今午2時截止 市場指銷情「好爆」 人數金額勢創新高 分配料少於去年16手",
+      "description": "【銀色債券2026/銀債】新一批銀色債券(簡稱「銀債」)保底息高達4.25厘,將於本月4日(星期五)下午2時截止認購。綜合市場人士指出,今年銀債銷情「爆得好厲害」,認購額增幅凌厲,預計人數勢破紀錄,認購金額亦料突破千億元,再創新高,在僧多粥少下,意味每人獲配銀債手數難望有去年16、17手之多。 銀色債券2026|認購金額勢破千億 穩定高息夠吸引 市場人士指,今批銀債認購反應熾熱,除了本身超高保底息",
+      "link": "https://www.stheadline.com/investment/3601531/%E9%8A%80%E8%89%B2%E5%82%B5%E5%88%B82026%E4%BB%8A%E5%8D%882%E6%99%82%E6%88%AA%E6%AD%A2-%E5%B8%82%E5%A0%B4%E6%8C%87%E9%8A%B7%E6%83%85%E5%A5%BD%E7%88%86-%E4%BA%BA%E6%95%B8%E9%87%91%E9%A1%8D%E5%8B%A2%E5%89%B5%E6%96%B0%E9%AB%98-%E5%88%86%E9%85%8D%E6%96%99%E5%B0%91%E6%96%BC%E5%8E%BB%E5%B9%B416%E6%89%8B",
+      "pubDate": "2026-09-03 13:50:00",
+      "source_name": "Stheadline",
+      "image_url": "",
+      "keywords": [
+        "銀色債券",
+        "保底息",
+        "認購優惠",
+        "認購",
+        "銀債",
+        "銀色債券2026"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5e2dca032c632794ba030de3119be042",
+      "title": "美國7月貿易逆差擴大至886億美元,創2025年初以來最大缺口",
+      "description": "Investing.com - 美國商務部週四公布數據顯示,美國7月份貨物與服務貿易逆差擴大至886億美元,為2025年初以來的最大缺口。",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%8E%E5%9C%8B7%E6%9C%88%E8%B2%BF%E6%98%93%E9%80%86%E5%B7%AE%E6%93%B4%E5%A4%A7%E8%87%B3886%E5%84%84%E7%BE%8E%E5%85%83-%E5%89%B52025%E5%B9%B4%E5%88%9D%E4%BB%A5%E4%BE%86%E6%9C%80%E5%A4%A7%E7%BC%BA%E5%8F%A3-134820371.html",
+      "pubDate": "2026-09-03 13:48:20",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "美國商務部",
+        "貿易",
+        "美國最高法院",
+        "美國",
+        "進口額",
+        "investing.com"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f6e6e4adc0a014312d94a4ab3043f4ac",
+      "title": "名古屋亞運劍擊|符妤名因傷錯失大賽 歷膝傷三戰亞運更可貴",
+      "description": "戰畢上海花劍大獎賽後,符妤名因膝傷一直避戰,傷勢一直未明,加上接連錯過季尾兩項大賽,最後發現是膝部半月板磨損,原本擔心能否三戰亞運。幸好經",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E9%AB%94%E8%82%B2/60386381/%E5%90%8D%E5%8F%A4%E5%B1%8B%E4%BA%9E%E9%81%8B%E5%8A%8D%E6%93%8A-%E7%AC%A6%E5%A6%A4%E5%90%8D%E5%9B%A0%E5%82%B7%E9%8C%AF%E5%A4%B1%E5%A4%A7%E8%B3%BD-%E6%AD%B7%E8%86%9D%E5%82%B7%E4%B8%89%E6%88%B0%E4%BA%9E%E9%81%8B%E6%9B%B4%E5%8F%AF%E8%B2%B4",
+      "pubDate": "2026-09-03 13:48:11",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "網球",
+        "香港01",
+        "體育",
+        "nba",
+        "籃球",
+        "香港新聞",
+        "新聞",
+        "高爾夫球",
+        "f1賽車",
+        "體育新聞",
+        "hk01",
+        "體育消息"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "272a8e59dcf65099117ed23487183a86",
+      "title": "華為 「Chase the Wild」 全球創新產品發佈會慕尼黑啟幕 多款旗艦新品亮相",
+      "description": "慕尼黑2026年9月3日 /美通社/ -- 華為於9月2日在德國慕尼黑舉行 「Chase the Wild」全球創新產品發佈會。華為在此正式發佈覆蓋智能穿戴、平板、手機、音頻四大品類的多款旗艦新品,以全場景智慧科技助力全球消費者追逐熱愛、擁抱自由而溫暖的生活方式。 「Wild 是自在馳騁、勇赴曠野的生命力,是科技向善、陪伴征途的守護力,亦是熱忱喜樂、隨心表達的創造力。」華為表示希望以穿戴、平板、手機等全場景產品為載體,將科技融入用戶探索自然、記錄熱愛、科學健康與自由創作的每一個瞬間。 作為本次發佈會的領銜之作,HUAWEI WATCH GT 7...",
+      "link": "https://www.prnewswire.com/apac/zh/news-releases/-chase-the-wild---302869063.html",
+      "pubDate": "2026-09-03 13:48:00",
+      "source_name": "Pr Newswire Apac",
+      "image_url": "",
+      "keywords": [
+        "pdt",
+        "tds"
+      ],
+      "category": [
+        "business",
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b4b625c0c024a7dd4198e27773f71211",
+      "title": "范振宗作勢呼鄭麗文巴掌遭譴責 本人說明",
+      "description": "中評社新竹9月3日電/中國國民黨主席鄭麗文3日赴新竹陪新竹縣長參選人徐欣瑩登記,84歲的前縣長范振宗致詞時當眾開轟鄭麗文,“藍白不合萬一失手,最大戰犯就是妳”。更在致詞前作勢要呼鄭麗文巴掌,鄭快速閃過,引起熱議。遭到譴責的范振宗事後解釋,因為“愛之深、責之切”才會有這些舉動。 影像傳出後,范振宗遭到許多抨擊,認為他不尊重人。民眾黨竹北市議員參選人張育慈更痛批,無論本意是玩笑、訓斥,還",
+      "link": "http://www.crntt.com/doc/7_0_160264774_1_0903214422.html",
+      "pubDate": "2026-09-03 13:44:22",
+      "source_name": "Crntt",
+      "image_url": "",
+      "keywords": [
+        "鄭麗文",
+        "范振宗"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4432284051c26c201bd704b4d4143de7",
+      "title": "陳松勇印尼看護傳1年花光近百萬遺產 開視像秀「滿手金飾」闢謠",
+      "description": "已故金馬影帝陳松勇生前飽受病痛所苦,晚年生活起居多仰賴印尼籍看護Yuli陪伴照料,兩人情同父女,陳松勇更曾將她視為親生女兒,生前也留下約400萬",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%A8%9B%E6%A8%82/60386407/%E9%99%B3%E6%9D%BE%E5%8B%87%E5%8D%B0%E5%B0%BC%E7%9C%8B%E8%AD%B7%E5%82%B31%E5%B9%B4%E8%8A%B1%E5%85%89%E8%BF%91%E7%99%BE%E8%90%AC%E9%81%BA%E7%94%A2-%E9%96%8B%E8%A6%96%E5%83%8F%E7%A7%80-%E6%BB%BF%E6%89%8B%E9%87%91%E9%A3%BE-%E9%97%A2%E8%AC%A0",
+      "pubDate": "2026-09-03 13:30:33",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "hk01",
+        "即時娛樂新聞",
+        "新聞",
+        "香港01",
+        "香港新聞",
+        "韓星",
+        "娛樂新聞",
+        "明星",
+        "即時娛樂",
+        "藝人"
+      ],
+      "category": [
+        "entertainment",
+        "top"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "27a43571f82e61f7d5100ee10c1c9073",
+      "title": "美國出生子女恐拿不到護照?特朗普政府擬改政策打擊「生育旅遊」",
+      "description": "美國兒童申請護照的規定可能迎來重大變化。即使孩子出生在美國,父母今後也可能被要求提交自己的美國公民或移民身份證明,由政府進一步判斷孩子是否",
+      "link": "https://www.hk01.com/%E7%86%B1%E7%88%86%E8%A9%B1%E9%A1%8C/60386481/%E7%BE%8E%E5%9C%8B%E5%87%BA%E7%94%9F%E5%AD%90%E5%A5%B3%E6%81%90%E6%8B%BF%E4%B8%8D%E5%88%B0%E8%AD%B7%E7%85%A7-%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E6%93%AC%E6%94%B9%E6%94%BF%E7%AD%96%E6%89%93%E6%93%8A-%E7%94%9F%E8%82%B2%E6%97%85%E9%81%8A",
+      "pubDate": "2026-09-03 13:30:22",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "話題",
+        "熱話",
+        "城中熱話"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "284ab14ec96d6098ab02e8acbfd20d08",
+      "title": "安察洛堤皇馬探班 順便視察巴西軍情",
+      "description": "【Now Sports】前皇家馬德里教練安察洛堤,周四返回皇馬訓練基地探班,並特別關注了3名有傷在身的巴西國腳安迪歷、洛迪高和美列度奧。西班牙《馬卡報》指,已離開皇家馬德里逾1年的安察洛堤(Carlo Ancelotti),周四以來賓身份重臨皇馬訓練基地,探望一眾舊部,期間跟現任皇馬教練摩連奴攀談,亦跟多名球員開...",
+      "link": "https://hk.sports.yahoo.com/news/%E5%AE%89%E5%AF%9F%E6%B4%9B%E5%A0%A4%E7%9A%87%E9%A6%AC%E6%8E%A2%E7%8F%AD-%E9%A0%86%E4%BE%BF%E8%A6%96%E5%AF%9F%E5%B7%B4%E8%A5%BF%E8%BB%8D%E6%83%85-132854560.html",
+      "pubDate": "2026-09-03 13:28:54",
+      "source_name": "All In Yahoo",
+      "image_url": "",
+      "keywords": [
+        "安察洛堤",
+        "皇家馬德里",
+        "摩連奴",
+        "洛迪高",
+        "安迪歷"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f314f4402eb019175ebcbdf18ad9ef0c",
+      "title": "84歲范振宗呼鄭麗文巴掌?林碩彥還原經過",
+      "description": "中評社新竹9月3日電(記者 盧誠輝)中國國民黨主席鄭麗文3日陪國民黨新竹縣長候選人徐欣瑩登記時,84歲的前民進黨籍新竹縣長范振宗作勢打巴掌,引發熱議。當天邀請范振宗陪同登記的台灣民眾黨籍新竹縣議員林碩彥向中評社還原經過表示,范、鄭本來就是老朋友,有這樣的互動外界不必過度解讀。鄭麗文未因此動怒,所以外界不必過度解讀。 范振宗1989年加入民進黨並當選2屆新竹縣長,2009年自行宣布退出",
+      "link": "http://www.crntt.com/doc/7_0_160264762_1_0903212811.html",
+      "pubDate": "2026-09-03 13:28:10",
+      "source_name": "Crntt",
+      "image_url": "",
+      "keywords": [
+        "國民黨主席",
+        "藍白合",
+        "鄭麗文",
+        "2026地方選舉",
+        "范振宗",
+        "林碩彥"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2f0a95aff416b8e79a5a172a64670b5f",
+      "title": "代母出征|兩姊妺撰86頁圖文PDF 控武大女教授介入父母婚姻摧毀家庭",
+      "description": "兩名自稱武漢大學付姓教授女兒的女孩。一個20歲、一個15歲,在網上發布多達86頁的PDF長文。實名舉報武漢大學化學與分子科學學院一名曾姓女副教授,指控其靠「權色交易」上位,勾引自己的導師,也就是她們的父親,並破壞她們的家庭。 這兩名女孩發布詳細的PDF,圖文並茂講述這名曾姓女副教授的「惡行」。大致內容為,她們的父母都是武大教授,「小三」原來是她父親的博士研究生,後來跟他爸好上了,後來留校任教。她們",
+      "link": "https://www.stheadline.com/realtime-china/3611383/%E4%BB%A3%E6%AF%8D%E5%87%BA%E5%BE%81%E5%85%A9%E5%A7%8A%E5%A6%BA%E6%92%B086%E9%A0%81%E5%9C%96%E6%96%87PDF-%E6%8E%A7%E6%AD%A6%E5%A4%A7%E5%A5%B3%E6%95%99%E6%8E%88%E4%BB%8B%E5%85%A5%E7%88%B6%E6%AF%8D%E5%A9%9A%E5%A7%BB%E6%91%A7%E6%AF%80%E5%AE%B6%E5%BA%AD",
+      "pubDate": "2026-09-03 13:26:07",
+      "source_name": "Stheadline",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1ccefbfc3cacb1799b0aef31bc8a76a9",
+      "title": "悼念831事件 等於執著天女散的花....",
+      "description": "最近見到海外有人悼念2019年的所謂「太子站打死人」的「831事件」,有些地方甚至煞有介事用紙紮了一個太子站出來,將一件子虛烏有的事件,念念不忘地悼念,頗顯人世間之虛幻。這讓我想起佛家的一個「天女散花」的故事。 我最近到敦煌參觀莫高窟,在其中一個洞窟看到很有名的「維摩詰經變」的故事。維摩詰經變是根據《維摩詰所說經》繪製的大型佛教壁畫。所謂「經變」,就是以圖畫形式講述佛經的故事。 它描述的是古印度毗耶離城大居士維摩詰與文殊菩薩辯論的場景。維摩詰辯才無礙,佛祖釋迦牟尼的很多弟子都給他辯倒。釋迦牟尼就派智慧第一的文殊菩薩,藉探病為名,去和維摩詰辯經。 辯論之餘就發生一個旁枝故事。維摩詰居士和文殊菩薩激烈辯論佛法,現場氣氛神聖。一位居於維摩詰宅第中的天女,就被兩人的法音感動,現身虛空之中。天女用神通,將曼陀羅天花灑向在場的所有菩薩與弟子身上,這就是「天女散花」這個說法的由來。 落在菩薩身上的花朵,立刻全部掉落在地上,但是落在文殊菩薩的弟子舍利弗身上的花,就好像黏著一樣,怎樣甩也甩不掉。舍利弗覺得僧侶身上黏著花,違反戒律,顯得不莊重,便運起神通想要將花拂去,怎料越弄越黏。天女對舍利弗說,花本身沒有「分別心」,是人自身自己心生分別,所以花才這麼黏。 故事的核心要義在於人的執著。花本來不著身,只是因為人的執著,花才會黏著,這就是「花因心滯」的道理。 2019年的太子站事件,當時有人在網上蓄意散播警察打死6個人的假消息,示威者相信了,就不斷去太子站悼念,不斷和警察發生衝突。後來即使是被傳聞的死者之一已經在英國重新現身,外界查來查去都沒有查出任何一個示威者死在太子站,但信者恆信,很多流亡海外的香港人仍然執著相信太子站的死人事件。到今年的8.31,仍然有人在加拿大溫哥華等地設壇悼念所謂「831事件」。 這是一種執著,執著一件從未發生的事,認為警察殺人罪大惡極,香港極之恐怖,所以要逃離香港,移民海外。即使移民後仍然念念不忘,事過7年還跑出來悼念。這真是一個「天下本無事,庸人自擾之」的典型。 2019年黑暴事件的支持者移民外國,重新開始,這是他們的選擇,本應開始新生活,做好一個外國人。但他們還是記掛著香港這件無中生有的假事,在他們心中揮之不去,就如黏在舍利弗身上的花一樣,那朵花本來虛罔,但只要你認定花的存在,碎碎念著花黏身是一種災難,它就永遠會黏著你。 世界不會因為他們的執念而改變,但他們自己的人生就被執念毀了。 盧永雄",
+      "link": "https://www.bastillepost.com/hongkong/article/16698117-%E6%82%BC%E5%BF%B5831%E4%BA%8B%E4%BB%B6-%E7%AD%89%E6%96%BC%E5%9F%B7%E8%91%97%E5%A4%A9%E5%A5%B3%E6%95%A3%E7%9A%84%E8%8A%B1",
+      "pubDate": "2026-09-03 13:19:33",
+      "source_name": "Bastillepost",
+      "image_url": "",
+      "keywords": [
+        "博客文章",
+        "博客焦點"
+      ],
+      "category": [
+        "top",
+        "politics"
       ],
       "region": "hk"
     },
@@ -1601,5 +2150,7 @@
       ],
       "region": "hk"
     }
-  ]
+  ],
+  "total": 115,
+  "last_updated": "2026-09-04T10:13:30.012456"
 }
