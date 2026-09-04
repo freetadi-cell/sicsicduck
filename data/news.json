@@ -1,7 +1,72 @@
 {
-  "last_updated": "2026-09-04T17:00:12.072822",
-  "total": 274,
   "articles": [
+    {
+      "id": "034ba92915490f66",
+      "title": "聯準會升息預期降溫提振科技股，亞股普漲，靜待美國就業數據",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E6%BA%96%E6%9C%83%E5%8D%87%E6%81%AF%E9%A0%90%E6%9C%9F%E9%99%8D%E6%BA%AB%E6%8F%90%E6%8C%AF%E7%A7%91%E6%8A%80%E8%82%A1-%E4%BA%9E%E8%82%A1%E6%99%AE%E6%BC%B2-%E9%9D%9C%E5%BE%85%E7%BE%8E%E5%9C%8B%E5%B0%B1%E6%A5%AD%E6%95%B8%E6%93%9A-042847492.html",
+      "pubDate": "2026-09-04 04:28:47",
+      "fetched_at": "2026-09-04 13:00:11",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "1a3d9109ffbc3f1b360ecaab687cc890",
+      "title": "Israel-Hamas War",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/world/middleeast/israel",
+      "pubDate": "2026-09-04 15:00:08",
+      "fetched_at": "2026-09-04 15:00:08",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl",
+      "pinned": true
+    },
+    {
+      "id": "fbd875c9601e57e7",
+      "title": "樓價微跌0.22%終止升勢　分區兩升兩跌｜ 租金微升0.13%見六連升　新界東熾熱獨力撐市",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E6%A8%93%E5%83%B9%E5%BE%AE%E8%B7%8C0-22-%E7%B5%82%E6%AD%A2%E5%8D%87%E5%8B%A2-%E5%88%86%E5%8D%80%E5%85%A9%E5%8D%87%E5%85%A9%E8%B7%8C-%E7%A7%9F%E9%87%91%E5%BE%AE%E5%8D%870-082040343.html",
+      "pubDate": "2026-09-04 08:20:40",
+      "fetched_at": "2026-09-04 17:00:11",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "19fe0ab6f8007235",
+      "title": "匯豐:銀債認購總額按年升23%  申請人數增31%  兩者均創新高",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E5%8C%AF%E8%B1%90-%E9%8A%80%E5%82%B5%E8%AA%8D%E8%B3%BC%E7%B8%BD%E9%A1%8D%E6%8C%89%E5%B9%B4%E5%8D%8723-%E7%94%B3%E8%AB%8B%E4%BA%BA%E6%95%B8%E5%A2%9E31-%E5%85%A9%E8%80%85%E5%9D%87%E5%89%B5%E6%96%B0%E9%AB%98-082129905.html",
+      "pubDate": "2026-09-04 08:21:29",
+      "fetched_at": "2026-09-04 17:00:11",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
     {
       "id": "eba72765ec05b3e522ff80fddb662b8a",
       "title": "港鐵北角站外爆污水渠｜渠務署洗渠泵污水　勘察揭私家渠嚴重破損",
@@ -235,22 +300,6 @@
       "region": "hk"
     },
     {
-      "id": "70722d39b7fbec71",
-      "title": "停牌上市公司一覽表",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188313",
-      "pubDate": "2026-09-04 08:58:00",
-      "fetched_at": "2026-09-04 17:00:11",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "ed9c68b166e9ab47e88e7eee2d0cd5ad",
       "title": "棋藝導師性交後才知女方12歲　女童滿13歲後再兩度性交　認罪候懲",
       "description": "",
@@ -297,22 +346,6 @@
       "region": "hk"
     },
     {
-      "id": "a87fa01c30c0951b",
-      "title": "港滬深通｜港股總市值46.7萬億元，滬深97.1萬億人民幣",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188301",
-      "pubDate": "2026-09-04 08:15:00",
-      "fetched_at": "2026-09-04 17:00:11",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "02a7482498b312815c34dcf60cf6fd1c",
       "title": "青衣IVE火警．有片｜香港專業教育學院分校失火　逾400人急疏散",
       "description": "",
@@ -328,22 +361,6 @@
       "region": "hk"
     },
     {
-      "id": "47d739d95020d075",
-      "title": "ET個股推介｜AH溢價收窄  寧德時代（03750）趁調整吸納",
-      "description": "今日ET個股推介——寧德時代（03750）。【揀選原因】寧德時代（03750）上半年盈利432.8億元人民幣，按年升約42%，增長速度仍然強勁。據彭博綜合券商預測，寧德2026至2028年盈利分別按年...",
-      "link": "https://invest.hket.com/article/4187888",
-      "pubDate": "2026-09-04 06:00:00",
-      "fetched_at": "2026-09-04 17:00:11",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "0b3b3a6289c3ad50a5d2db442e7f23bb",
       "title": "海關搗21間派對房間涉提供侵權卡拉OK　拉5人侵犯版權",
       "description": "",
@@ -354,22 +371,6 @@
       "image_url": "",
       "keywords": [],
       "category": [
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "dd599e1b0405f8f7",
-      "title": "股份分拆及合併",
-      "description": "...",
-      "link": "https://invest.hket.com/article/4188014",
-      "pubDate": "2026-09-04 00:01:00",
-      "fetched_at": "2026-09-04 17:00:11",
-      "source_name": "香港經濟日報",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
         "local"
       ],
       "region": "hk"
@@ -730,21 +731,6 @@
       "region": "hk"
     },
     {
-      "id": "1a3d9109ffbc3f1b360ecaab687cc890",
-      "title": "Israel-Hamas War",
-      "description": "Show all",
-      "link": "https://edition.cnn.com/world/middleeast/israel",
-      "pubDate": "2026-09-04 15:00:08",
-      "fetched_at": "2026-09-04 15:00:08",
-      "source_name": "CNN",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "international"
-      ],
-      "region": "intl"
-    },
-    {
       "id": "e1eed2b8479cf3679bb9e68dacb4cf91",
       "title": "城大Ocamp玩除衫｜網上流傳新畫面　男女生大腿布瘀痕、背留紅印",
       "description": "",
@@ -958,22 +944,6 @@
       "region": "intl"
     },
     {
-      "id": "19fe0ab6f8007235",
-      "title": "匯豐:銀債認購總額按年升23%  申請人數增31%  兩者均創新高",
-      "description": "",
-      "link": "https://hk.finance.yahoo.com/news/%E5%8C%AF%E8%B1%90-%E9%8A%80%E5%82%B5%E8%AA%8D%E8%B3%BC%E7%B8%BD%E9%A1%8D%E6%8C%89%E5%B9%B4%E5%8D%8723-%E7%94%B3%E8%AB%8B%E4%BA%BA%E6%95%B8%E5%A2%9E31-%E5%85%A9%E8%80%85%E5%9D%87%E5%89%B5%E6%96%B0%E9%AB%98-082129905.html",
-      "pubDate": "2026-09-04 08:21:29",
-      "fetched_at": "2026-09-04 17:00:11",
-      "source_name": "Yahoo Finance HK",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
-    },
-    {
       "id": "d2faaafaf5370551264f5d2f71981cb3",
       "title": "Facts First",
       "description": "Show all",
@@ -987,22 +957,6 @@
         "international"
       ],
       "region": "intl"
-    },
-    {
-      "id": "fbd875c9601e57e7",
-      "title": "樓價微跌0.22%終止升勢　分區兩升兩跌｜ 租金微升0.13%見六連升　新界東熾熱獨力撐市",
-      "description": "",
-      "link": "https://hk.finance.yahoo.com/news/%E6%A8%93%E5%83%B9%E5%BE%AE%E8%B7%8C0-22-%E7%B5%82%E6%AD%A2%E5%8D%87%E5%8B%A2-%E5%88%86%E5%8D%80%E5%85%A9%E5%8D%87%E5%85%A9%E8%B7%8C-%E7%A7%9F%E9%87%91%E5%BE%AE%E5%8D%870-082040343.html",
-      "pubDate": "2026-09-04 08:20:40",
-      "fetched_at": "2026-09-04 17:00:11",
-      "source_name": "Yahoo Finance HK",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk"
     },
     {
       "id": "4dbb16ce669cdb5c7d981a2425420ff0",
@@ -1848,23 +1802,6 @@
       "region": "hk"
     },
     {
-      "id": "034ba92915490f66",
-      "title": "聯準會升息預期降溫提振科技股，亞股普漲，靜待美國就業數據",
-      "description": "",
-      "link": "https://hk.finance.yahoo.com/news/%E8%81%AF%E6%BA%96%E6%9C%83%E5%8D%87%E6%81%AF%E9%A0%90%E6%9C%9F%E9%99%8D%E6%BA%AB%E6%8F%90%E6%8C%AF%E7%A7%91%E6%8A%80%E8%82%A1-%E4%BA%9E%E8%82%A1%E6%99%AE%E6%BC%B2-%E9%9D%9C%E5%BE%85%E7%BE%8E%E5%9C%8B%E5%B0%B1%E6%A5%AD%E6%95%B8%E6%93%9A-042847492.html",
-      "pubDate": "2026-09-04 04:28:47",
-      "fetched_at": "2026-09-04 13:00:11",
-      "source_name": "Yahoo Finance HK",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "9286e5fa7b3d6221c6803089b1beeed9",
       "title": "陳茂波:大灣區憑獨特優勢 助推亞太深度合作",
       "description": "財政司司長陳茂波今日(3日)在「2026大灣區論壇」發表視像致辭,指出大灣區憑藉金融、創科及製造業等獨特優勢,能成為促進亞太合作及連接世界的重要平台。他強調,香港將發揮國際聯繫優勢,透過深化亞洲金融市場互聯互通、推動前沿科技落地,以及建設國際教育樞紐,為區域經濟協同發展產生乘數效應。 亞洲協同發展新階段 互聯互通深化金融市場 陳茂波表示,在地緣政治及科技變革推動下,亞洲協同發展正進入新階段。粵港澳",
@@ -1983,26 +1920,6 @@
       "category": [
         "finance",
         "local"
-      ],
-      "region": "hk"
-    },
-    {
-      "id": "ba412675d9dd8ee08f416b98f48ad03d",
-      "title": "京都擬限制民宿經營範圍 住宅及工業用地將納入規管 居民調查七成贊成加強監管",
-      "description": "日本京都市向專家要求,制定限制民宿在住宅及工業用地上經營的規則,並希望在明年2月的市議會會議上進行修例。 日本媒體報道,京都市8月31日向專家要求制定限制民宿在住宅及工業地上經營的規定。 根據日本觀光廳在今年7月表示,地方政府有權因應居民生活環境受影響,而制定法律限制民宿的經營。報道指,有關計劃將不論業主是否在該物業居住,在住宅及工業區域用地上的經營都會受限。 根據京都市的統計,在上個財政年度末,全京都有1,216家根據民宿經營法例登記的住宿場所,比2018年的490家大增逾兩倍。之前因為接到一系列關於噪音及垃圾處理問題的投訴,市長松井孝治在今年1月宣布,該市將在本財政年度內修訂相關法例,以加強監管。 在市政府對民宿附近居民進行的一項調查中,518名受訪者中有70%表示「應該加強監管」。",
-      "link": "https://www.bastillepost.com/hongkong/article/16688433-%E4%BA%AC%E9%83%BD%E6%93%AC%E9%99%90%E5%88%B6%E6%B0%91%E5%AE%BF%E7%B6%93%E7%87%9F%E7%AF%84%E5%9C%8D-%E4%BD%8F%E5%AE%85%E5%8F%8A%E5%B7%A5%E6%A5%AD%E7%94%A8%E5%9C%B0%E5%B0%87%E7%B4%8D%E5%85%A5%E8%A6%8F",
-      "pubDate": "2026-09-03 20:20:00",
-      "source_name": "Bastillepost",
-      "image_url": "",
-      "keywords": [
-        "旅遊",
-        "大視野",
-        "住宿",
-        "太極影片"
-      ],
-      "category": [
-        "top",
-        "business"
       ],
       "region": "hk"
     },
@@ -5060,5 +4977,7 @@
       ],
       "region": "hk"
     }
-  ]
+  ],
+  "total": 269,
+  "last_updated": "2026-09-04T17:09:11.296840"
 }
