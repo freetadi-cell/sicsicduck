@@ -517,6 +517,73 @@ def fetch_scraped_news():
     all_articles.extend(arts)
     return all_articles
 
+# ===== 新聞價值評分（0-100）=====
+# 財經/國際大事高分，一般地方/體育低分
+_HIGH_VALUE_KW = [
+    # 財經核心（80-100）
+    "股", "市", "恒指", "恆指", "美股", "港股", "nasdaq", "dow", "利率", "利息", "加息", "減息",
+    "債", "國債", "美債", "聯儲", "儲局", "通脹", "央行", "匯率", "美元", "港元",
+    "金價", "黃金", "石油", "原油", "油價",
+    "樓", "地產", "物業", "按揭", "租金", "發展商",
+    "ipo", "上市", "停牌", "私有化", "回購", "派息", "股息",
+    "基金", "etf", "投資", "理財", "證券",
+    # 國際大事（70-90）
+    "特朗普", "美國", "中國", "日本", "歐盟", "俄羅斯", "烏克蘭",
+    "戰爭", "制裁", "關稅", "貿易戰", "地緣",
+    "联合国", "聯合國", "北約", "nato",
+    # 科技/產業（60-80）
+    "晶片", "半導體", "nvidia", "輝達", "蘋果", "微軟", "谷歌", "ai", "人工智能",
+    "電動車", "比亞迪", "tesla", "新能源",
+    # 香港政策/經濟（60-80）
+    "港府", "財政", "預算案", "金管局", "gdp", "經濟", "失業",
+]
+_LOW_VALUE_KW = [
+    "體育", "足球", "籃球", "羽毛球", "乒乓",
+    "健康", "飲食", "食譜", "減肥",
+    "星座", "運程", "塔羅",
+    "旅遊", "景點", "酒店",
+    "天氣", "颱風", "暴雨",
+]
+
+def news_value_score(article):
+    """評分 0-100，越高越值得報導"""
+    title = str(article.get('title') or '').lower()
+    desc = str(article.get('description') or '').lower()
+    text = title + ' ' + desc
+    cats = ' '.join(article.get('category', []) or []).lower()
+    source = str(article.get('source_name') or '').lower()
+
+    score = 40  # 基礎分
+    # 高價值關鍵詞加分（每中一個 +15，上限 +60）
+    bonus = 0
+    for kw in _HIGH_VALUE_KW:
+        if kw.lower() in text:
+            bonus += 15
+    score += min(bonus, 60)
+    # 低價值關鍵詞扣分
+    for kw in _LOW_VALUE_KW:
+        if kw.lower() in text:
+            score -= 20
+    # 來源加分：財經來源更高分
+    if 'finance' in source or '經濟' in source or 'yahoo' in source:
+        score += 15
+    if source == 'cnn':
+        score += 10
+    # 標題長度適中加分（20-80 字最理想）
+    title_len = len(str(article.get('title') or ''))
+    if 20 <= title_len <= 80:
+        score += 5
+    return max(0, min(100, score))
+
+
+def filter_by_value(articles, min_score=35):
+    """只保留高價值新聞"""
+    scored = [(news_value_score(a), a) for a in articles]
+    scored.sort(key=lambda x: x[0], reverse=True)
+    filtered = [a for s, a in scored if s >= min_score]
+    return filtered
+
+
 def fetch_all_rss():
     """Fetch all RSS feeds and scrape extra sources"""
     all_articles = []
@@ -585,6 +652,13 @@ def main(initial_build=False):
         print(f"Removed {old_removed} articles older than {MAX_AGE_DAYS} days")
     
     all_articles = sort_articles_by_date(all_articles)
+    
+    # 新聞價值過濾：只保留高價值新聞
+    before_value = len(all_articles)
+    all_articles = filter_by_value(all_articles, min_score=35)
+    low_value_removed = before_value - len(all_articles)
+    if low_value_removed > 0:
+        print(f"Removed {low_value_removed} low-value articles")
     
     # 每個來源最多 30%
     all_articles = cap_by_source(all_articles)
