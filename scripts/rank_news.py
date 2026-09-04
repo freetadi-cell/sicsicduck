@@ -35,7 +35,7 @@ NEWS_FILE = DATA_DIR / "news.json"
 OPENCLAW_CFG = Path("/home/freet/.openclaw/openclaw.json")
 API_BASE = "https://yuanyuaicloud.cn/v1"
 API_MODEL = "kimi-k3"
-API_TIMEOUT = 60
+API_TIMEOUT = 30
 
 # ---- 置頂篇數 ----
 TOP_N = 4

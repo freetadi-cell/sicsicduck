@@ -217,8 +217,27 @@ def main():
         candidates.append(a)
 
     print(f"需處理候選 {len(candidates)} 篇")
+    # 按新聞價值評分排序（高分優先），只改寫最有價值嘅文章
+    def _score(a):
+        title = str(a.get('title') or '').lower()
+        desc = str(a.get('description') or '').lower()
+        text = title + ' ' + desc
+        source = str(a.get('source_name') or '').lower()
+        s = 40
+        _hi = ['股', '恒指', '美股', '港股', '利率', '加息', '減息', '債', '國債', '美債', '聯儲', '通脹', '央行', '匯率', '美元', '港元', '金價', '黃金', '石油', '原油', '樓', '地產', '物業', '按揭', '租金', 'ipo', '上市', '基金', 'etf', '投資', '特朗普', '美國', '中國', '日本', '歐盟', '俄羅斯', '烏克蘭', '戰爭', '制裁', '關稅', '晶片', '半導體', 'nvidia', 'ai', '人工智能', '電動車', '比亞迪', '港府', '財政', '經濟', 'gdp']
+        _lo = ['體育', '足球', '籃球', '健康', '飲食', '星座', '旅遊', '天氣', '颱風', '暴雨']
+        bonus = 0
+        for kw in _hi:
+            if kw.lower() in text: bonus += 15
+        s += min(bonus, 60)
+        for kw in _lo:
+            if kw.lower() in text: s -= 20
+        if 'finance' in source or '經濟' in source or 'yahoo' in source: s += 15
+        if source == 'cnn': s += 10
+        return max(0, min(100, s))
+    candidates.sort(key=_score, reverse=True)
     if BATCH_LIMIT > 0:
-        print(f"（取頭 {BATCH_LIMIT} 篇）")
+        print(f"（按價值排序，取頭 {BATCH_LIMIT} 篇最高價值文章）")
         candidates = candidates[:BATCH_LIMIT]
 
     done = no_body = failed = 0
