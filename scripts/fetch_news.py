@@ -408,7 +408,7 @@ HEADERS = {
 }
 
 def scrape_cnn(url, source_name, category):
-    """Scrape CNN news pages"""
+    """Scrape CNN breaking news from homepage — 只攞 article body 內容"""
     if not BeautifulSoup:
         print(f"    bs4 not available, skipping {source_name}")
         return []
@@ -421,9 +421,12 @@ def scrape_cnn(url, source_name, category):
         for a_tag in soup.find_all("a", href=True):
             href = a_tag.get("href", "")
             title_text = a_tag.get_text(strip=True)
-            if not title_text or len(title_text) < 10:
+            if not title_text or len(title_text) < 15:
                 continue
+            # 只保留真正嘅新聞 article URL（/YYYY/MM/DD/ 格式）
             if "/video/" in href or "/gallery/" in href or "/live-news/" in href:
+                continue
+            if not re.search(r"/\d{4}/\d{2}/\d{2}/", href):
                 continue
             if not href.startswith("http"):
                 href = "https://edition.cnn.com" + href if href.startswith("/") else href

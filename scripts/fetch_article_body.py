@@ -84,21 +84,29 @@ PAY_WALL_HINTS = ["登入以繼續", "請登入", "會員計劃", "立即訂閱"
 
 
 def extract_body(url, html):
-    """用 bs4 抽取正文純文字（hkej/rthk/scmp 通用），返回截斷正文。"""
+    """用 bs4 抽取正文純文字，CNN 優先用 article tag 抽正文"""
     soup = BeautifulSoup(html, "html.parser")
 
     # 逐 tag 拆掉 menu / nav / header / footer / script / style / 廣告
     for tag in soup(["script", "style", "nav", "header", "footer", "aside",
-                     "form", "button", "iframe", "noscript"]):
+                     "form", "button", "iframe", "noscript",
+                     "section[data-component-name=advertisement]",
+                     "div[data-component-name=related-content]",
+                     "div[data-component-name=more-news]",
+                     "div[data-component-name=live-updates]",
+                     "div[data-editable=timeline]",
+                     ]):
         tag.decompose()
 
-    text = soup.get_text("\n")
+    # CNN 優先用 <article> tag（最乾淨嘅正文區域）
+    host = urlparse(url).netloc.lower() if url else ""
+    article_tag = soup.find("article")
+    if article_tag:
+        text = article_tag.get_text("\n")
+    else:
+        text = soup.get_text("\n")
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
     body = "\n".join(lines)
-
-    # 檢查是否付費牆
-    if any(h in body for h in PAY_WALL_HINTS) and len(body) < 400:
-        return None  # 代表付費牆，無正文
 
     # 截斷，避免傳成噸文字畀 API（也避免過度使用原文）
     if len(body) > 4000:
@@ -138,6 +146,8 @@ def rewrite_with_kimi(api_key, title, body):
                   "  - 唔好改成 clickbait 或誇大失真，客觀持平\n"
                   "【摘要要求】將新聞正文改寫為一段約"
                   f"{MAX_SUMMARY_CHARS}字以內嘅中文摘要。\n"
+                  "  - 一篇新聞只講一件事：揀最重要嘅一個重點深入講，唔好貪多堆砌\n"
+                  "  - 如果正文涉及多個話題，只保留最核心嗰個，其餘一筆帶過或省略\n"
                   "  - 用你自己嘅措辭重新組織，不得逐字複製原文句子\n"
                   "  - 客觀陳述事實，保留必要數字、公司名、人名\n"
                   "  - 唔好加個人評論，唔好加『以下係』『總結嚟講』等套話\n"
