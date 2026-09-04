@@ -178,6 +178,66 @@ def sort_articles_by_date(articles):
     return sorted(articles, key=get_sort_key)
 
 
+MAX_SOURCE_RATIO = 0.30  # 每個來源最多佔總數 30%
+
+
+def cap_by_source(articles, max_ratio=MAX_SOURCE_RATIO):
+    """每個來源最多佔總數 max_ratio，超出部分按日期排序移除最舊"""
+    if not articles:
+        return articles
+    from collections import defaultdict
+    by_src = defaultdict(list)
+    for a in articles:
+        by_src[a.get("source_name", "unknown")].append(a)
+    total = len(articles)
+    cap = max(1, int(total * max_ratio))
+    trimmed = []
+    for src, src_arts in by_src.items():
+        trimmed.extend(src_arts[:cap])
+    removed = total - len(trimmed)
+    if removed > 0:
+        print(f"[cap] 移除 {removed} 篇超額，每源上限 {cap} 篇")
+    return trimmed
+
+
+def interleave_sources(articles):
+    """混合排列：同一來源嘅文章唔會相鄰（貪心算法）"""
+    from collections import defaultdict, deque
+    if not articles:
+        return articles
+    queues = defaultdict(deque)
+    for a in articles:
+        queues[a.get("source_name", "unknown")].append(a)
+    source_keys = list(queues.keys())
+    result = []
+    prev_src = None
+    while queues:
+        picked = None
+        for _ in range(len(source_keys)):
+            src = source_keys[0]
+            source_keys = source_keys[1:]
+            if queues[src]:
+                if src != prev_src:
+                    picked = queues[src].popleft()
+                    if not queues[src]:
+                        del queues[src]
+                    prev_src = src
+                    source_keys.append(src)
+                    break
+                else:
+                    source_keys.append(src)
+        if picked is None:
+            # 所有剩餘文章都同上一篇撞源，揀最多嘅嗰個
+            src = max(queues, key=lambda s: len(queues[s]))
+            picked = queues[src].popleft()
+            if not queues[src]:
+                del queues[src]
+            prev_src = src
+            source_keys.append(src)
+        result.append(picked)
+    return result
+
+
 def fetch_news(days=7, max_per_category=10):
     """
     Fetch Chinese news from NewsData.io using batched categories (2 API calls instead of 8)
@@ -527,10 +587,11 @@ def main(initial_build=False):
     
     all_articles = sort_articles_by_date(all_articles)
     
-    # Ensure newsdata.io articles appear above RSS articles
-    non_rss = [a for a in all_articles if "rss" not in a.get("category", [])]
-    rss = [a for a in all_articles if "rss" in a.get("category", [])]
-    all_articles = non_rss + rss
+    # 每個來源最多 30%
+    all_articles = cap_by_source(all_articles)
+    
+    # 混合排列：同一來源唔相鄰
+    all_articles = interleave_sources(all_articles)
     
     save_news(all_articles)
     print(f"\n✅ Total: {len(all_articles)} articles saved")
