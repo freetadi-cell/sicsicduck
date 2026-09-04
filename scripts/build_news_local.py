@@ -116,6 +116,78 @@ THEME_RATES = "/assets/news/theme-rates.jpg"     # 國庫債券（公有領域�
 THEME_MINING = "/assets/news/theme-mining.jpg"   # 露天礦場（公有領域）
 THEME_TECH = "/assets/news/theme-tech.jpg"       # 晶片/半導體（公有領域）
 THEME_GOLD = "/assets/news/theme-gold.jpg"       # 金條（CC0）
+THEME_CRIME = "/assets/news/theme-crime.jpg"
+THEME_ENT = "/assets/news/theme-ent.jpg"
+THEME_EDU = "/assets/news/theme-edu.jpg"
+THEME_HEALTH = "/assets/news/theme-health.jpg"
+THEME_LIFE = "/assets/news/theme-life.jpg"
+THEME_WEATHER = "/assets/news/theme-weather.jpg"
+THEME_MILITARY = "/assets/news/theme-military.jpg"
+THEME_POLITICS = "/assets/news/theme-politics.jpg"
+THEME_SCIENCE = "/assets/news/theme-science.jpg"
+THEME_SOCIETY = "/assets/news/theme-society.jpg"
+THEME_TRANSPORT = "/assets/news/theme-transport.jpg"
+THEME_FOOD = "/assets/news/theme-food.jpg"
+THEME_BUSINESS = "/assets/news/theme-business.jpg"
+THEME_PROPERTY = "/assets/news/theme-property.jpg"
+THEME_INVESTMENT = "/assets/news/theme-investment.jpg"
+THEME_CHART = "/assets/news/theme-chart.jpg"
+THEME_TRADING = "/assets/news/theme-trading.jpg"
+THEME_AI = "/assets/news/theme-ai.jpg"
+THEME_FINANCE_CHART = "/assets/news/theme-finance-chart.jpg"
+THEME_HK_SKYLINE = "/assets/news/theme-hk-skyline.jpg"
+THEME_HK_HARBOUR = "/assets/news/theme-hk-harbour.jpg"
+THEME_HK_MARKET = "/assets/news/theme-hk-market.jpg"
+THEME_HK_TEMPLE = "/assets/news/theme-hk-temple.jpg"
+THEME_CRYPTO = "/assets/news/theme-crypto.jpg"
+THEME_BANK = "/assets/news/theme-bank.jpg"
+THEME_ENERGY = "/assets/news/theme-energy.jpg"
+THEME_LOGISTICS = "/assets/news/theme-logistics.jpg"
+THEME_REAL_ESTATE = "/assets/news/theme-realestate.jpg"
+THEME_AGRICULTURE = "/assets/news/theme-agriculture.jpg"
+THEME_AUTO = "/assets/news/theme-auto.jpg"
+THEME_RESTAURANT = "/assets/news/theme-restaurant.jpg"
+THEME_SHOPPING = "/assets/news/theme-shopping.jpg"
+THEME_PHARMA = "/assets/news/theme-pharma.jpg"
+THEME_FINANCIAL = "/assets/news/theme-financial.jpg"
+THEME_FACTORY = "/assets/news/theme-factory.jpg"
+THEME_UNIVERSITY = "/assets/news/theme-university.jpg"
+THEME_HOSPITAL = "/assets/news/theme-hospital.jpg"
+THEME_MOBILE = "/assets/news/theme-mobile.jpg"
+THEME_GREEN = "/assets/news/theme-green.jpg"
+THEME_COMPUTER = "/assets/news/theme-computer.jpg"
+THEME_NIGHT = "/assets/news/theme-night.jpg"
+THEME_NATURE = "/assets/news/theme-nature.jpg"
+THEME_CROWD = "/assets/news/theme-crowd.jpg"
+THEME_BOOKS = "/assets/news/theme-books.jpg"
+THEME_TV = "/assets/news/theme-tv.jpg"
+THEME_COINS = "/assets/news/theme-coins.jpg"
+THEME_METRO = "/assets/news/theme-metro.jpg"
+THEME_CAFE = "/assets/news/theme-cafe.jpg"
+THEME_TRAVEL = "/assets/news/theme-travel.jpg"
+THEME_ARCHITECTURE = "/assets/news/theme-architecture.jpg"
+THEME_MUSIC = "/assets/news/theme-music.jpg"
+THEME_SPORTS = "/assets/news/theme-sports.jpg"
+THEME_FINTECH = "/assets/news/theme-fintech.jpg"
+THEME_CLOUD = "/assets/news/theme-cloud.jpg"
+THEME_EV = "/assets/news/theme-ev.jpg"
+THEME_SEMI = "/assets/news/theme-semiconductor.jpg"
+THEME_CONTAINER = "/assets/news/theme-container.jpg"
+THEME_DRONE = "/assets/news/theme-drone.jpg"
+THEME_SOLAR = "/assets/news/theme-solar.jpg"
+THEME_ROBOT = "/assets/news/theme-robot.jpg"
+THEME_DATA = "/assets/news/theme-data.jpg"
+THEME_VACCINE = "/assets/news/theme-vaccine.jpg"
+THEME_OIL = "/assets/news/theme-oil.jpg"
+THEME_CONSTRUCTION = "/assets/news/theme-construction.jpg"
+THEME_CYBER = "/assets/news/theme-cyber.jpg"
+THEME_WIND = "/assets/news/theme-wind.jpg"
+THEME_TRAIN = "/assets/news/theme-train.jpg"
+THEME_SHIP = "/assets/news/theme-ship.jpg"
+THEME_LUXURY = "/assets/news/theme-luxury.jpg"
+THEME_PROTEST = "/assets/news/theme-protest.jpg"
+THEME_WALLET = "/assets/news/theme-wallet.jpg"
+THEME_WORKSPACE = "/assets/news/theme-workspace.jpg"
 
 # 兜底：無匹配主題時用嘅通用財經圖（多張輪住派，避免頭幾篇重複）
 THEME_FALLBACKS = [
@@ -125,14 +197,18 @@ THEME_FALLBACKS = [
     "/assets/news/finance-5.jpg",
     "/assets/news/finance-6.jpg",
     "/assets/news/theme-life.jpg",
+    "/assets/news/theme-business.jpg",
+    "/assets/news/theme-investment.jpg",
+    "/assets/news/theme-chart.jpg",
+    "/assets/news/theme-trading.jpg",
+    "/assets/news/theme-money.jpg",
+    "/assets/news/theme-stock.jpg",
+    "/assets/news/theme-hk.jpg",
+    "/assets/news/theme-night.jpg",
+    "/assets/news/theme-cafe.jpg",
+    "/assets/news/theme-coffee.jpg",
+    "/assets/news/theme-workspace.jpg",
 ]
-
-# 生活/人物/娛樂/教育/健康類主題圖（CC0/公有領域）
-THEME_LIFE = "/assets/news/theme-life.jpg"      # 城市/生活（CC0）
-THEME_ENT = "/assets/news/theme-ent.jpg"        # 娛樂/演藝（公有領域）
-THEME_EDU = "/assets/news/theme-edu.jpg"        # 教育/校園（公有領域）
-THEME_HEALTH = "/assets/news/theme-health.jpg"  # 健康/醫療（公有領域）
-THEME_WEATHER = "/assets/news/theme-weather.jpg" # 天氣/氣候（公有領域）
 
 # 主題判斷關鍵詞（標題 + category + keywords）
 THEME_KEYWORDS = [
@@ -140,7 +216,31 @@ THEME_KEYWORDS = [
     (THEME_GOLD, ["金價", "黃金", "金條", "貴金屬", "金市", "金飾", "實金"]),
     (THEME_MINING, ["礦業", "礦產", "礦場", "開採", "稀土", "鋰", "銅礦", "鐵礦", "能源轉型"]),
     (THEME_TECH, ["晶片", "半導體", "芯片", "微軟", "谷歌", "蘋果", "ai", "人工智能", "數據中心", "科技股", "軟銀", "nvidia", "輝達"]),
-    (THEME_RATES, ["利率", "利息", "息口", "加息", "減息", "債息", "孳息", "國債", "美債", "儲局", "聯儲", "基準利率", "存款利率", "按揭利率", "美匯", "匯率", "外匯", "美元", "港元", "走勢", "通脹", "貨幣"]),
+    (THEME_CRYPTO, ["加密貨幣", "比特幣", "虛擬貨幣", "數碼貨幣", "虛幣", "ethereum", "以太坊", "crypto", "web3", "nft"]),
+    (THEME_BANK, ["銀行", "匯豐", "渣打", "中銀", "恒生", "工商", "信用卡"]),
+    (THEME_ENERGY, ["能源", "電力", "發電", "電費", "電網"]),
+    (THEME_LOGISTICS, ["物流", "供應鏈", "快遞", "倉儲"]),
+    (THEME_AUTO, ["汽車", "車輛", "新車", "二手車", "豐田", "比亞迪"]),
+    (THEME_SHOPPING, ["購物", "零售", "消費", "品牌", "電商"]),
+    (THEME_PHARMA, ["製藥", "藥廠", "藥物", "臨床"]),
+    (THEME_FACTORY, ["工廠", "製造", "生產線", "產能"]),
+    (THEME_MOBILE, ["手機", "通訊", "5g", "電訊"]),
+    (THEME_GREEN, ["環保", "碳中和", "可持續", "減碳"]),
+    (THEME_TRAVEL, ["旅行", "旅遊", "機票", "酒店", "航線"]),
+    (THEME_MUSIC, ["音樂", "歌曲", "樂隊"]),
+    (THEME_SPORTS, ["運動", "體育", "足球", "籃球", "奧運"]),
+    (THEME_FINTECH, ["金融科技", "fintech", "電子支付"]),
+    (THEME_OIL, ["石油", "原油", "油價", "opec"]),
+    (THEME_VACCINE, ["疫苗", "防疫", "接種"]),
+    (THEME_CYBER, ["網絡安全", "黑客", "數據洩露"]),
+    (THEME_SOLAR, ["太陽能", "光伏"]),
+    (THEME_DRONE, ["無人機", "航拍"]),
+    (THEME_ROBOT, ["機器人", "自動化"]),
+    (THEME_DATA, ["大數據", "數據分析"]),
+    (THEME_PROTEST, ["示威", "抗議", "遊行"]),
+    (THEME_LUXURY, ["奢侈品", "名牌", "珠寶"]),
+    (THEME_WALLET, ["電子錢包", "移動支付"]),
+    # 生活/人物/娛樂/教育/健康/天氣 ["利率", "利息", "息口", "加息", "減息", "債息", "孳息", "國債", "美債", "儲局", "聯儲", "基準利率", "存款利率", "按揭利率", "美匯", "匯率", "外匯", "美元", "港元", "走勢", "通脹", "貨幣"]),
     (THEME_STOCK, ["股市", "港股", "美股", "股價", "恒指", "恆指", "納指", "道指", "上證", "深證", "a股", "ipo", "股份", "牛市", "熊市", "成交", "基金", "etf", "海力士", "半導體股", "私有化", "回購", "復牌", "溢價", "券商", "證監會", "上市", "停牌", "股息", "派息"]),
     (THEME_HK, ["樓市", "樓價", "屋苑", "物業", "住宅", "新盤", "樓花", "租金", "買樓", "賣樓", "地皮", "發展商", "地產", "置業", "按揭", "香港", "港府", "金管局"]),
     (THEME_WORLD, ["全球", "美國", "特朗普", "俄羅斯", "烏克蘭", "戰爭", "襲擊", "無人機", "爆炸", "軍事", "國防", "伊朗", "以色列", "聯合國", "北約", "歐盟", "世界", "外交", "地緣", "攻擊", "威脅", "衝突", "中東", "亞太", "南海", "台海", "對華", "美中"]),

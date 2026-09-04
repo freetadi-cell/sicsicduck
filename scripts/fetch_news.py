@@ -50,7 +50,7 @@ MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initia
 # NewsData.io supports comma-separated categories in a single request
 CATEGORY_BATCHES = [
     ['business', 'technology', 'science', 'health'],
-    ['entertainment', 'sports', 'politics', 'world'],
+    ['sports', 'politics', 'world'],
 ]
 REGIONS = ['hk']
 
