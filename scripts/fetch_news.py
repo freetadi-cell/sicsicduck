@@ -349,6 +349,11 @@ def fetch_rss_feed(feed_url, source_name, source_key=None):
             if not title or not link:
                 continue
             
+            # 過濾娛樂新聞（所有來源）
+            _ent_kw = ['演唱會', '藝人', '明星', '歌手', '演員', '頒獎', '紅館', '女主播', '影帝', '影后', '緋聞', '結婚', '離婚', '懷孕', '生仔', '女神', '偶像', '男團', '女團', '星二代', '八卦', 'TVB', '港姐', '離世', '悼念', '古天樂', '譚詠麟']
+            if any(kw in title for kw in _ent_kw):
+                continue
+            
             # Generate ID
             content = f"{link}|{title}"
             article_id = hashlib.md5(content.encode()).hexdigest()[:16]
