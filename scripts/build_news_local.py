@@ -254,7 +254,7 @@ def card(a, show_image, lead_index=0):
             </div>
             <div class="news-modal-footer">
                 <a class="news-modal-link" href="{link}" target="_blank" rel="noopener">📄 閱讀原文 →</a>
-                <a class="news-modal-whatsapp" href="https://wa.me/?text={esc(summary)}%0A%0Ahttps%3A%2F%2Fsicsicduck.com%2Fnews.html" target="_blank" rel="noopener">💬 轉載</a>
+                <a class="news-modal-whatsapp" href="https://wa.me/?text={esc(summary)}%0A%0Ahttps%3A%2F%2Fsicsicduck.com%2Fnews.html" target="_blank" rel="noopener" aria-label="WhatsApp 轉載"><img src="assets/news/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a>
             </div>
         </div>
     </div>'''
@@ -294,7 +294,7 @@ def card(a, show_image, lead_index=0):
             </div>
             <div class="news-modal-footer">
                 <a class="news-modal-link" href="{link}" target="_blank" rel="noopener">📄 閱讀原文 →</a>
-                <a class="news-modal-whatsapp" href="https://wa.me/?text={esc(summary_esc)}%0A%0Ahttps%3A%2F%2Fsicsicduck.com%2Fnews.html" target="_blank" rel="noopener">💬 轉載</a>
+                <a class="news-modal-whatsapp" href="https://wa.me/?text={esc(summary_esc)}%0A%0Ahttps%3A%2F%2Fsicsicduck.com%2Fnews.html" target="_blank" rel="noopener" aria-label="WhatsApp 轉載"><img src="assets/news/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a>
             </div>
         </div>
     </div>'''
@@ -547,16 +547,18 @@ document.addEventListener('keydown', (e) => {
         }}
         .news-modal-link:hover {{ filter: brightness(1.05); }}
         .news-modal-whatsapp {{
-            display: inline-block;
-            padding: 10px 20px;
-            background: linear-gradient(135deg, #25D366, #128C7E);
-            color: var(--white);
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700; font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: #25D366;
+            vertical-align: middle;
             margin-left: 10px;
+            transition: filter 0.2s;
         }}
-        .news-modal-whatsapp:hover {{ filter: brightness(1.1); }}
+        .news-modal-whatsapp img {{ width: 22px; height: 22px; }}
+        .news-modal-whatsapp:hover {{ filter: brightness(1.15); }}
     </style>
 </head>
 <body>
