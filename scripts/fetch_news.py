@@ -208,32 +208,23 @@ def interleave_sources(articles):
     queues = defaultdict(deque)
     for a in articles:
         queues[a.get("source_name", "unknown")].append(a)
-    source_keys = list(queues.keys())
     result = []
-    prev_src = None
     while queues:
+        last_src = result[-1].get("source_name", "unknown") if result else None
+        # 揀一個唔同於上一篇嘅來源
         picked = None
-        for _ in range(len(source_keys)):
-            src = source_keys[0]
-            source_keys = source_keys[1:]
-            if queues[src]:
-                if src != prev_src:
-                    picked = queues[src].popleft()
-                    if not queues[src]:
-                        del queues[src]
-                    prev_src = src
-                    source_keys.append(src)
-                    break
-                else:
-                    source_keys.append(src)
+        for src in list(queues.keys()):
+            if src != last_src:
+                picked = queues[src].popleft()
+                if not queues[src]:
+                    del queues[src]
+                break
         if picked is None:
             # 所有剩餘文章都同上一篇撞源，揀最多嘅嗰個
             src = max(queues, key=lambda s: len(queues[s]))
             picked = queues[src].popleft()
             if not queues[src]:
                 del queues[src]
-            prev_src = src
-            source_keys.append(src)
         result.append(picked)
     return result
 
