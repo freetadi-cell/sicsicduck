@@ -7,6 +7,7 @@ Expanded sources: HK + TW regions from NewsData.io + RSS feeds (SCMP)
 
 import requests
 import json
+import re
 import feedparser
 import hashlib
 import html as html_lib
