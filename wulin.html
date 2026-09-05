@@ -273,6 +273,33 @@ function alignDiff(pk,nk){return Math.abs(pk-nk)}
 function aff(key){const p=player(),n=world.npcs.find(x=>x.key===key);if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0}
 function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
 
+/* ---- 確認出發對話框 ---- */
+let _pendingTravel=null;
+function confirmTravel(dest,days){
+  _pendingTravel={dest,days};
+  $('modal').classList.add('open');
+  $('mbox').innerHTML=`
+    <button class="mclose" onclick="cancelTravel()">✕</button>
+    <div style="text-align:center;padding:10px 0">
+      <div style="font-size:40px;margin-bottom:12px">🚶</div>
+      <div class="mname">確認出發</div>
+      <div class="mmeta" style="margin:14px 0">
+        目的地：<b style="color:var(--gold);font-size:16px">${esc(dest)}</b><br>
+        行程時間：<b>${days} 分鐘</b>（${days} 遊戲日）<br>
+        <span style="color:var(--red);font-size:12px">冷卻期間無法與任何人互動</span>
+      </div>
+      <button class="abtn" onclick="confirmGo()">確認出發</button>
+      <button class="abtn" style="margin-top:8px;border-color:var(--border);color:var(--muted)" onclick="cancelTravel()">留喺度</button>
+    </div>`;
+}
+function confirmGo(){
+  if(!_pendingTravel)return;
+  const{dest,days}=_pendingTravel;_pendingTravel=null;
+  $('modal').classList.remove('open');
+  startTravel(dest,days);
+}
+function cancelTravel(){_pendingTravel=null;$('modal').classList.remove('open')}
+
 /* ---- 地區（真實時間：1分鐘 = 1遊戲日） ---- */
 // cooldown 喺 player 保存為 {dest:'襄陽城',until:timestamp} 而非日數
 // travelDays 乘 60000ms = 真實冷却毫秒
@@ -315,8 +342,6 @@ function renderRegionPanel(){
   </div>`;
 
   if(cd){
-    const totalMs=(cur,cd.dest); // 距離已喺 startTravel 記錄
-    const p2=player();const startMs=p2.travel.until-(p2.travel.until-Date.now()); // 不需要
     const fmtMs=cd.remainingMs;
     const mins=Math.floor(fmtMs/60000);
     const secs=Math.floor((fmtMs%60000)/1000);
@@ -337,7 +362,7 @@ function renderRegionPanel(){
 function doTravel(dest,days){
   const cd=playerCooldown();
   if(cd){toast('你仲喺趕路，唔可以再出發');return}
-  startTravel(dest,days);
+  confirmTravel(dest,days);
 }
 function tickCooldown(){} // 已改為真實時間，無需 tickCooldown
 
