@@ -162,7 +162,7 @@ def rewrite_with_kimi(api_key, title, body):
             {"role": "user", "content": user_prompt},
         ],
         "temperature": 0.5,
-        "max_tokens": 700,
+        "max_tokens": 3000,  # kimi-k3 係 reasoning 模型，思考會燒 token；700 會令 JSON 被截斷成「冇回摘要」
     }).encode("utf-8")
 
     req = urllib.request.Request(
