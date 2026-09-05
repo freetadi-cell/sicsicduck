@@ -1,0 +1,10 @@
+{
+  "id": "37d49cd6680a0d8b57af886ff6c16b80",
+  "title": "免費修音工具 Audacity 4 正式登場 擺脫「殘舊介面」迎 26 年來最大革新",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/09/05/audacity-4-release-major-update-redesign/software/",
+  "rewritten_title": "Audacity 4 正式發布 首次引入非破壞性編輯與全新介面",
+  "rewritten": "開源音訊剪輯軟件 Audacity 發布第 4 代版本，母公司 Muse Group 稱這是軟件 26 年歷史以來最大革新。新版本核心改動是全面採用非破壞性編輯流程，用戶剪輯後可輕易還原，片段亦可重疊與群組操作。介面則改用 Qt 技術重新開發，支援高解像度顯示，並加入可自訂的工作區與主題。不過，部分舊有功能如 MIDI 音軌及混音台等暫未移植，官方強調現階段仍專注於音訊剪輯核心功能。軟件依然免費及開放原始碼。",
+  "status": "done",
+  "fetched_at": "2026-09-06T07:12:12"
+}
