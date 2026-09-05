@@ -183,8 +183,11 @@ async function sha256(s){
   let h=5381;for(const c of s)h=((h*33)^c.codePointAt(0))>>>0;return 'f'+h.toString(16);
 }
 function player(){
-  let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){}
-  if(p&&p.name&&accounts()[p.name])return p;return null;
+  let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){console.log('[WULIN] player() parse error',e)}
+  const a=accounts();
+  const ok=p&&p.name&&a[p.name];
+  console.log('[WULIN] player() check:',{hasP:!!p,name:p?.name,hasAccount:!!a[p?.name],result:ok?'VALID':'NULL',accounts:Object.keys(a)});
+  return ok?p:null;
 }
 function savePlayer(p){
   localStorage.setItem('wulin_player',JSON.stringify(p));
