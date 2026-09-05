@@ -18,11 +18,16 @@ header{text-align:center;padding:36px 0 24px;border-bottom:1px solid var(--borde
 header::before{content:"武";position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:120px;color:rgba(212,175,55,.05);font-weight:900;pointer-events:none}
 h1{font-size:34px;letter-spacing:14px;color:var(--gold);text-indent:14px;font-weight:700}
 .sub{color:var(--muted);font-size:13px;margin-top:6px;letter-spacing:2px}
-.worldbar{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:18px 0 26px}
-.chip{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:14px}
+.worldbar{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px 0 26px}
+.chip{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:6px 14px;font-size:13px}
 .chip b{color:var(--gold);font-weight:600}
 .chip a{color:var(--muted);font-size:12px;text-decoration:none;margin-left:6px}
 .chip a:hover{color:var(--gold)}
+.chip .align-bar{display:inline-block;width:60px;height:5px;background:var(--bg2);border-radius:3px;margin-left:6px;vertical-align:middle;overflow:hidden}
+.chip .align-bar i{display:block;height:100%;border-radius:3px;transition:width .4s}
+.chip .align-bar i.evil{background:var(--red)}
+.chip .align-bar i.neutral{background:var(--muted)}
+.chip .align-bar i.good{background:var(--green)}
 h2{font-size:17px;color:var(--gold);margin:26px 0 12px;letter-spacing:3px;display:flex;align-items:center;gap:10px}
 h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
 .events{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px}
@@ -37,6 +42,10 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .npc .loc{font-size:12px;color:var(--muted)}
 .npc .mood{font-size:13px;margin-top:8px;color:var(--text)}
 .npc .att{font-size:12px;color:var(--muted);margin-top:4px}
+.npc .alabel{font-size:11px;margin-top:6px}
+.npc .alabel.good{color:var(--green)}
+.npc .alabel.neutral{color:var(--muted)}
+.npc .alabel.evil{color:var(--red)}
 .affbar{height:5px;background:var(--bg2);border-radius:3px;margin-top:10px;overflow:hidden}
 .affbar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold2),var(--gold));border-radius:3px;transition:width .4s}
 .affnum{font-size:11px;color:var(--muted);margin-top:4px;text-align:right}
@@ -55,10 +64,15 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .dlg.me{border-left:none;border-right:3px solid var(--gold);border-radius:8px 0 0 8px;background:var(--card2);color:var(--gold);text-align:left}
 .dlg .who{font-size:11px;color:var(--muted);display:block;margin-bottom:2px}
 .dlg.me .who{color:var(--gold2)}
+.dlg.npcattack{border-left:3px solid var(--red);background:rgba(192,57,43,.12)}
+.dlg.npcattack .who{color:var(--red)}
 .dlg.new{animation:pop .4s}
 @keyframes pop{from{opacity:0;transform:translateX(-6px)}to{opacity:1}}
 @keyframes popr{from{opacity:0;transform:translateX(6px)}to{opacity:1}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@keyframes flash{0%{background:rgba(192,57,43,.3)}100%{background:rgba(192,57,43,.0)}}
 .dlg.new.me{animation:popr .4s}
+.mbox.shake{animation:shake .4s}
 .chatlabel{font-size:12px;color:var(--muted);letter-spacing:2px;margin:16px 0 6px}
 .opt{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--border);color:var(--text);padding:9px 14px;border-radius:8px;cursor:pointer;font-size:14px;margin:6px 0;transition:.2s;font-family:inherit}
 .opt:hover:not(:disabled){border-color:var(--gold2);background:var(--card2)}
@@ -76,6 +90,11 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .affdelta.up{color:var(--green)}
 .affdelta.down{color:var(--red)}
 .mfoot{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}
+.difflabel{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin:0 0 8px}
+.difflabel.friendly{background:rgba(39,174,96,.15);color:var(--green)}
+.difflabel.neutral{background:rgba(154,165,177,.12);color:var(--muted)}
+.difflabel.tension{background:rgba(192,57,43,.15);color:var(--red)}
+.difflabel.locked{background:rgba(192,57,43,.25);color:var(--red);font-weight:700;letter-spacing:1px}
 /* auth */
 #auth{display:none;position:fixed;inset:0;z-index:150;background:var(--bg)}
 #auth.open{display:block}
@@ -103,12 +122,14 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 <div class="wrap">
   <header>
     <h1>武 林</h1>
-    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v3</div>
+    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v4</div>
   </header>
 
   <div class="worldbar">
     <div class="chip">🗓 <b id="worldTime">載入中…</b></div>
-    <div class="chip">🧍 <b id="playerName">…</b> · 閱歷 <b id="playerXp">0</b> · <a href="#" onclick="logout();return false">登出</a></div>
+    <div class="chip">🧍 <b id="playerName">…</b></div>
+    <div class="chip">⚡ 閱歷 <b id="playerXp">0</b></div>
+    <div class="chip" id="playerAlignChip" style="display:none">⚖️ <b id="playerAlignLabel">中立</b> <span class="align-bar"><i id="playerAlignBar"></i></span> <b id="playerAlignNum">500</b> <a href="#" onclick="logout();return false">登出</a></div>
     <div class="chip">👥 <b id="npcCount">–</b> 位江湖人</div>
   </div>
 
@@ -141,50 +162,31 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 let world=null,worldDay=1;
 const $=id=>document.getElementById(id);
 
-/* ================= 帳號系統（本機 localStorage） =================
-   wulin_accounts: { [名號]: { ph:密碼SHA-256, save:玩家進度 } }
-   wulin_player:   目前登入玩家嘅進度（session）                  */
+/* ================= 帳號系統 ================= */
 function accounts(){try{return JSON.parse(localStorage.getItem('wulin_accounts'))||{}}catch(e){return{}}}
 function saveAccounts(a){localStorage.setItem('wulin_accounts',JSON.stringify(a))}
-
 async function sha256(s){
-  if(window.crypto&&crypto.subtle){
-    const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('wulin·'+s));
-    return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
-  }
-  let h=5381;for(const c of s)h=((h*33)^c.codePointAt(0))>>>0; // 非安全環境 fallback
-  return 'f'+h.toString(16);
+  if(window.crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('wulin·'+s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+  let h=5381;for(const c of s)h=((h*33)^c.codePointAt(0))>>>0;return 'f'+h.toString(16);
 }
-
-function player(){ // 已登入先有
+function player(){
   let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){}
-  if(p&&p.name&&accounts()[p.name])return p;
-  return null;
+  if(p&&p.name&&accounts()[p.name])return p;return null;
 }
 function savePlayer(p){
   localStorage.setItem('wulin_player',JSON.stringify(p));
-  const a=accounts();
-  if(a[p.name]){a[p.name].save=p;saveAccounts(a)} // 同步返帳號存檔
+  const a=accounts();if(a[p.name]){a[p.name].save=p;saveAccounts(a)}
 }
-function logout(){
-  localStorage.removeItem('wulin_player');
-  closeModal();
-  toast('已登出江湖');
-  authTab('login');
-  $('auth').classList.add('open');
-}
+function logout(){localStorage.removeItem('wulin_player');closeModal();toast('已登出江湖');authTab('login');$('auth').classList.add('open')}
 
-/* ---- 登入 / 註冊畫面 ---- */
+/* ---- 登入 / 註冊 ---- */
 let authMode='login';
 function authTab(m){
-  authMode=m;
-  $('tabLogin').classList.toggle('on',m==='login');
-  $('tabReg').classList.toggle('on',m==='reg');
+  authMode=m;$('tabLogin').classList.toggle('on',m==='login');$('tabReg').classList.toggle('on',m==='reg');
   const names=Object.keys(accounts());
   const dl=names.length?`<datalist id="knownNames">${names.map(n=>`<option value="${esc(n)}">`).join('')}</datalist>`:'';
   const old=JSON.parse(localStorage.getItem('wulin_player')||'null');
   if(m==='reg'){
-    // 舊玩家（v2 時代）補設密碼：保留原有進度
     const migrating=old&&old.name&&!accounts()[old.name];
     $('authBody').innerHTML=`
       ${migrating?`<div class="mmeta" style="text-align:center">歡迎返嚟，<b style="color:var(--gold)">${esc(old.name)}</b>！為舊存檔設定密碼：</div>`:''}
@@ -208,105 +210,110 @@ function authTab(m){
 }
 const NAME_POOL=['清風劍客','月下客','鐵掌書生','江南浪子','無名小俠','白衣少年','狂歌客','孤鴻子'];
 function regRandom(){const el=$('regName');if(el&&!el.readOnly)el.value=NAME_POOL[Math.floor(Math.random()*NAME_POOL.length)]}
-
 function authErr(msg){const e=$('authErr');if(e)e.textContent=msg||''}
-
 async function regGo(){
-  const name=($('regName').value||'').trim().slice(0,10);
-  const p1=$('regPass').value,p2=$('regPass2').value;
+  const name=($('regName').value||'').trim().slice(0,10),p1=$('regPass').value,p2=$('regPass2').value;
   if(!name){authErr('總要有個名號嘛');return}
   if(p1.length<4){authErr('密碼至少 4 個字元');return}
   if(p1!==p2){authErr('兩次密碼唔一致');return}
-  const a=accounts();
-  const old=JSON.parse(localStorage.getItem('wulin_player')||'null');
+  const a=accounts(),old=JSON.parse(localStorage.getItem('wulin_player')||'null');
   const migrating=old&&old.name===name&&!a[name];
   if(a[name]){authErr('呢個名號已有人用，揀過另一個');return}
   const ph=await sha256(p1);
-  const st=migrating?old:{name,xp:0,aff:{},spoke:{},gifts:{},opts:{},day:0};
-  a[name]={ph,save:st};
-  saveAccounts(a);
-  localStorage.setItem('wulin_player',JSON.stringify(st));
+  const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0};
+  if(!st.alignment)st.alignment=500; // 舊存檔補 alignment
+  a[name]={ph,save:st};saveAccounts(a);localStorage.setItem('wulin_player',JSON.stringify(st));
   $('auth').classList.remove('open');
-  toast(migrating?`存檔已加密保護 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);
-  render();
+  toast(migrating?`存檔已加密保護 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);render();
 }
 async function loginGo(){
-  const name=($('logName').value||'').trim().slice(0,10);
-  const pw=$('logPass').value;
-  const a=accounts();
+  const name=($('logName').value||'').trim().slice(0,10),pw=$('logPass').value,a=accounts();
   if(!a[name]){authErr('冇呢個名號——先註冊先入到江湖');return}
-  const ph=await sha256(pw);
-  if(ph!==a[name].ph){authErr('名號或密碼錯誤');return}
-  localStorage.setItem('wulin_player',JSON.stringify(a[name].save));
-  $('auth').classList.remove('open');
-  authErr('');
-  toast(`歡迎返嚟，${name}`);
-  render();
+  if(await sha256(pw)!==a[name].ph){authErr('名號或密碼錯誤');return}
+  const save=a[name].save;if(!save.alignment)save.alignment=500; // 舊存檔補
+  localStorage.setItem('wulin_player',JSON.stringify(save));
+  $('auth').classList.remove('open');authErr('');toast(`歡迎返嚟，${name}`);render();
 }
 
 /* ================= 遊戲邏輯 ================= */
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 
-function aff(key){ // 好感：玩家本地為準，冇先攞世界預設
-  const p=player(),n=world.npcs.find(x=>x.key===key);
-  if(p&&p.aff[key]!=null)return p.aff[key];
-  return n?(n.affinity||0):0;
+/* ---- 善惡系統 ---- */
+function playerAlign(){const p=player();return p?(p.alignment||500):500}
+function npcAlign(key){const n=world.npcs.find(x=>x.key===key);return n?(n.alignment||500):500}
+function alignDiff(pk,nk){return Math.abs(pk-nk)}
+function alignLabel(a){
+  if(a>=800)return '大義凜然';if(a>=650)return '行俠仗義';if(a>=550)return '正氣凜然';
+  if(a>=450)return '亦正亦邪';if(a>=350)return '乖張無常';if(a>=200)return '心狠手辣';return '惡貫滿盈';
 }
-function setAff(key,v){
+function alignLabelShort(a){
+  if(a>=650)return '正派';if(a>=450)return '中立';return '邪惡';
+}
+function alignCss(a){return a>=600?'good':a>=400?'neutral':'evil'}
+function alignBarPct(a){return Math.round(a/10)}
+function setPlayerAlign(delta){
   const p=player();if(!p)return;
-  p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));
-  savePlayer(p);
+  p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+delta)));
+  savePlayer(p);renderPlayerBar();
 }
+function renderPlayerBar(){
+  const a=playerAlign(),bar=$('playerAlignBar'),lbl=$('playerAlignLabel'),num=$('playerAlignNum');
+  if(bar){bar.style.width=alignBarPct(a)+'%';bar.className=alignCss(a)}
+  if(lbl)lbl.textContent=alignLabel(a);
+  if(num)num.textContent=a;
+}
+
+function aff(key){
+  const p=player(),n=world.npcs.find(x=>x.key===key);
+  if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0;
+}
+function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
 
 /* ---- 載入同渲染 ---- */
 async function load(){
-  try{
-    const r=await fetch('data/wulin_world.json?t='+Date.now());
-    world=await r.json();
-  }catch(e){$('worldTime').textContent='載入失敗';return}
+  try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
+  catch(e){$('worldTime').textContent='載入失敗';return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
-  if(!player()){
-    // 未登入：照樣渲染世界（背後模糊可見），彈登入畫面
-    const old=JSON.parse(localStorage.getItem('wulin_player')||'null');
-    authTab(old&&old.name&&!accounts()[old.name]?'reg':'login');
-    $('auth').classList.add('open');
-    renderGuest();
-    return;
-  }
+  if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
   render();
 }
 function renderGuest(){
-  $('worldTime').textContent=world.meta.world_time||'—';
-  $('npcCount').textContent=world.npcs.length;
+  $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;
   $('playerName').textContent='—';$('playerXp').textContent='—';
   $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
     `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
-  $('npcGrid').innerHTML=world.npcs.map(n=>`
-    <div class="npc" style="opacity:.55">
-      <div class="nm">${esc(n.name)}</div>
-      <div class="tt">${esc(n.title||'')}</div>
+  $('npcGrid').innerHTML=world.npcs.map(n=>{
+    const a=n.alignment||500;
+    return `<div class="npc" style="opacity:.55">
+      <div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div>
       <div class="loc">📍 ${esc(n.location||'')}</div>
-    </div>`).join('');
+      <div class="alabel ${alignCss(a)}">${alignLabelShort(a)} · ${a}</div>
+    </div>`}).join('');
 }
 function render(){
-  $('worldTime').textContent=world.meta.world_time||'—';
-  $('npcCount').textContent=world.npcs.length;
+  $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;
   const p=player();if(!p){renderGuest();return}
-  $('playerName').textContent=p.name;
-  $('playerXp').textContent=p.xp;
+  $('playerName').textContent=p.name;$('playerXp').textContent=p.xp;
+  $('playerAlignChip').style.display='';
+  renderPlayerBar();
   $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
     `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
+  renderNpcs();
+}
+function renderNpcs(){
+  const p=player(),pa=playerAlign();
   $('npcGrid').innerHTML=world.npcs.map(n=>{
-    const a=aff(n.key);
+    const a=aff(n.key),al=n.alignment||500,diff=alignDiff(pa,al);
+    const ac=alignCss(al);
     return `<div class="npc" onclick="openNpc('${n.key}')">
-      <div class="nm">${esc(n.name)}</div>
-      <div class="tt">${esc(n.title||'')}</div>
+      <div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div>
       <div class="loc">📍 ${esc(n.location||'')}</div>
+      <div class="alabel ${ac}">${alignLabelShort(al)} · ${al}</div>
       <div class="mood">心境：${esc(n.mood||'')}</div>
       <div class="att">${esc(n.attitude||'')}</div>
       <div class="affbar"><i style="width:${a}%"></i></div>
-      <div class="affnum">好感 ${a}</div>
+      <div class="affnum">好感 ${a}${diff>300?' · <span style="color:var(--red)">道不同</span>':''}</div>
     </div>`}).join('');
 }
 
@@ -314,56 +321,105 @@ function render(){
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   const p=player();if(!p){authTab('login');$('auth').classList.add('open');return}
+  const pa=playerAlign(),na=n.alignment||500,diff=alignDiff(pa,na);
+  const locked=diff>300 && diff<=500; // 301-500: 道不同——冇對話選項
+  const hostile=diff>500; // 501+: 極端——攻擊玩家
   const rel=Object.entries(n.relations||{}).slice(0,4).map(([k,v])=>{
-    const o=world.npcs.find(x=>x.key===k);
-    return o?`${esc(o.name)} ${v}`:'';
+    const o=world.npcs.find(x=>x.key===k);return o?`${esc(o.name)} ${v}`:'';
   }).filter(Boolean).join(' · ');
   const a=aff(key);
-  const opts=(n.chat_options||[]).map((o,i)=>{
-    const used=p.opts[key+':'+i]===worldDay;
-    const fx=o.affinity_delta>0?`<span class="fx up">♥+${o.affinity_delta}</span>`
-            :o.affinity_delta<0?`<span class="fx down">♥${o.affinity_delta}</span>`:'';
-    return `<button class="opt" id="opt_${key}_${i}" ${used?'disabled':''} onclick="say('${key}',${i})">${esc(o.say)}${used?' <span class="fx">✓ 講過</span>':fx}</button>`;
-  }).join('');
-  $('mbox').innerHTML=`
+
+  // 好感條
+  let html=`
     <button class="mclose" onclick="closeModal()">✕</button>
     <div class="mname">${esc(n.name)}</div>
     <div class="mtitle">${esc(n.title||'')}</div>
     <div class="mmeta">📍 ${esc(n.location||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div>
     <div class="affbig"><div class="affbar"><i id="affBar" style="width:${a}%"></i></div><span style="color:var(--gold);font-size:13px">好感 <span id="affNum">${a}</span><span id="affDelta" class="affdelta"></span></span></div>
-    <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg"><span class="who">${esc(n.name)}</span>${esc(d)}</div>`).join('')}</div>
-    <div class="chatlabel">— 你開口講（每日一款）—</div>
-    <div id="optArea">${opts||'<div class="mmeta">（佢暫時冇咩想聽……聽日再嚟）</div>'}</div>
-    ${rel?`<div class="mmeta" style="margin-top:12px">交情：${rel}</div>`:''}
-    <div class="acts">
-      <button class="btn" id="btnGift" ${p.gifts[key]===worldDay?'disabled':''} onclick="act('${key}','gift')">🎁 贈禮</button>
-      <button class="btn" id="btnSpar" ${p.spoke[key+'#spar']===worldDay?'disabled':''} onclick="act('${key}','spar')">⚔️ 切磋</button>
-    </div>
-    <div class="mfoot">講嘅嘢會即刻影響好感 · NPC 心境每日都唔同</div>`;
+    <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg"><span class="who">${esc(n.name)}</span>${esc(d)}</div>`).join('')}</div>`;
+
+  // 善惡差異標籤
+  if(diff<=100) html+=`<div class="difflabel friendly">道合 · 善惡差 ${diff}</div>`;
+  else if(diff<=300) html+=`<div class="difflabel neutral">各行其道 · 善惡差 ${diff}</div>`;
+  else if(diff<=500) html+=`<div class="difflabel tension">道不同不相為謀 · 善惡差 ${diff}</div>`;
+  else html+=`<div class="difflabel locked">⛔ 善惡懸殊 · 善惡差 ${diff} — 無話可說</div>`;
+
+  // 對話選項——善惡差>300 時鎖住
+  if(hostile){
+    html+=`<div class="chatlabel" style="color:var(--red)">— 此人視你為敵，無法交流 —</div>`;
+  }else if(locked){
+    html+=`<div class="chatlabel" style="color:var(--red)">— 道不同不相為謀 —</div>
+           <div class="mmeta" style="text-align:center">你同${esc(n.name)}善惡懸殊，無話可說。<br>你嘅善惡值：<b>${pa}</b>　佢嘅善惡值：<b>${na}</b><br>差 ${diff}（需要 ≤300 先可以傾偈）</div>`;
+  }else{
+    const opts=(n.chat_options||[]).map((o,i)=>{
+      const used=p.opts[key+':'+i]===worldDay;
+      let fxText='';
+      if(o.affinity_delta>0)fxText+=`<span class="fx up">♥+${o.affinity_delta}</span>`;
+      else if(o.affinity_delta<0)fxText+=`<span class="fx down">♥${o.affinity_delta}</span>`;
+      if(o.alignment_delta>0)fxText+=`<span class="fx up">☯+${o.alignment_delta}</span>`;
+      else if(o.alignment_delta<0)fxText+=`<span class="fx down">☯${o.alignment_delta}</span>`;
+      return `<button class="opt" id="opt_${key}_${i}" ${used?'disabled':''} onclick="say('${key}',${i})">${esc(o.say)}${used?' <span class="fx">✓ 講過</span>':fxText}</button>`;
+    }).join('');
+    html+=`<div class="chatlabel">— 你開口講（每日一款）—</div>
+            <div id="optArea">${opts||'<div class="mmeta">（佢暫時冇咩想聽……聽日再嚟）</div>'}</div>`;
+  }
+
+  if(rel)html+=`<div class="mmeta" style="margin-top:12px">交情：${rel}</div>`;
+
+  // 行動按鈕——善惡差>500 全鎖；301-500 留贈禮/切磋
+  html+=`<div class="acts">`;
+  if(!hostile){
+    html+=`<button class="btn" id="btnGift" ${p.gifts[key]===worldDay?'disabled':''} onclick="act('${key}','gift')">🎁 贈禮</button>`;
+    html+=`<button class="btn" id="btnSpar" ${p.spoke[key+'#spar']===worldDay?'disabled':''} onclick="act('${key}','spar')">⚔️ 切磋</button>`;
+  }else{
+    html+=`<button class="btn" id="btnFlee" onclick="act('${key}','flee')">🏃 逃走</button>`;
+  }
+  html+=`</div>`;
+  html+=`<div class="mfoot">善惡差 >300：無法對話 · >500：觸發攻擊 · 玩家善惡值 ${pa}（${alignLabel(pa)}）</div>`;
+
+  $('mbox').innerHTML=html;
   $('modal').classList.add('open');
+
+  // 如果係攻擊狀態——自動觸發
+  if(hostile)setTimeout(()=>triggerAttack(key),600);
 }
 function closeModal(){$('modal').classList.remove('open')}
 
-function pushDlg(text,me){
+function pushDlg(text,me,cls,whoName){
   const d=document.createElement('div');
-  d.className='dlg new'+(me?' me':'');
+  d.className='dlg new'+(me?' me':'')+(cls?' '+cls:'');
   if(me)d.innerHTML=`<span class="who">${esc(player().name)}</span>${esc(text)}`;
-  else d.textContent=text;
-  $('dlgArea').appendChild(d);
-  const box=$('mbox');box.scrollTop=box.scrollHeight;
-}
-function bumpAff(key,delta){
-  if(!delta)return;
-  const v=aff(key)+delta;setAff(key,v);
-  const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');
-  if(bar)bar.style.width=v+'%';
-  if(num)num.textContent=v;
-  if(dl){
-    dl.textContent=(delta>0?'+':'')+delta;
-    dl.className='affdelta '+(delta>0?'up':'down');
-    setTimeout(()=>{dl.textContent=''},2500);
+  else{
+    const wh=cls==='npcattack'?`<b style="color:var(--red)">⚔️ ${esc(whoName)}</b>`:(whoName?esc(whoName):'');
+    d.innerHTML=`<span class="who">${wh}</span>${cls==='npcattack'?'<b style="color:var(--red)">'+esc(text)+'</b>':esc(text)}`;
   }
+  $('dlgArea').appendChild(d);
+  $('mbox').scrollTop=$('mbox').scrollHeight;
+}
+
+function bumpAff(key,delta){
+  if(!delta)return;const v=aff(key)+delta;setAff(key,v);
+  const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');
+  if(bar)bar.style.width=v+'%';if(num)num.textContent=v;
+  if(dl){dl.textContent=(delta>0?'+':'')+delta;dl.className='affdelta '+(delta>0?'up':'down');setTimeout(()=>{dl.textContent=''},2500)}
   const p=player();$('playerXp').textContent=p.xp;
+}
+
+function triggerAttack(key){
+  const n=world.npcs.find(x=>x.key===key);if(!n)return;
+  $('mbox').classList.add('shake');
+  pushDlg(`${esc(n.name)}大喝一聲：「受死！」`,false,'npcattack',n.name);
+  setTimeout(()=>{
+    const p=player();
+    const dmg=Math.max(1,Math.round(Math.random()*3+1));
+    const xpLost=Math.min(p.xp,dmg*2);
+    p.xp=Math.max(0,p.xp-xpLost);
+    // 攻擊同時微量影響善惡（被邪惡攻擊……玩家嘅善惡唔應該因此變，只有自己講嘢先變）
+    savePlayer(p);$('playerXp').textContent=p.xp;
+    pushDlg(`你被${esc(n.name)}一掌擊退，跌坐地上，損失閱歷 ${xpLost}`,true);
+    toast(`⚔️ 遭到${esc(n.name)}攻擊！閱歷 -${xpLost}`);
+    if(xpLost>=5)toast('下次小心揀傾偈對象！');
+  },800);
 }
 
 /* ---- 玩家開口講 ---- */
@@ -380,16 +436,31 @@ function say(key,i){
   setTimeout(()=>{
     pushDlg(o.reply,false);
     bumpAff(key,o.affinity_delta||0);
-    if(o.affinity_delta>0)toast('佢幾受落 · 好感 +'+o.affinity_delta);
-    else if(o.affinity_delta<0)toast('講錯嘢喇… 好感 '+o.affinity_delta);
+    // 善惡值效果
+    const ad=o.alignment_delta||0;
+    if(ad)setPlayerAlign(ad);
+    let msg='';
+    if(o.affinity_delta>0)msg='佢幾受落 · 好感 +'+o.affinity_delta;
+    else if(o.affinity_delta<0)msg='講錯嘢喇… 好感 '+o.affinity_delta;
+    if(ad>0)msg+=msg?' · ☯ 善行 +'+ad:'☯ 善行 +'+ad;
+    else if(ad<0)msg+=msg?' · ☯ '+ad:'☯ '+ad;
+    if(msg)toast(msg);
     if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}
   },400);
 }
 
-/* ---- 贈禮 / 切磋 ---- */
+/* ---- 贈禮 / 切磋 / 逃走 ---- */
 function act(key,type){
   const n=world.npcs.find(x=>x.key===key);
   const p=player();
+  if(type==='flee'){
+    const flee=Math.random()>0.3;
+    if(flee){pushDlg('（你轉身狂奔，好彩甩掉'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}
+    else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）走？冇咁容易！',false,'npcattack',n.name);
+      const xpLost=3;p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;
+      pushDlg(`被摑一巴，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}
+    return;
+  }
   if(type==='gift'){
     if(p.gifts[key]===worldDay)return;
     p.gifts[key]=worldDay;
@@ -398,30 +469,33 @@ function act(key,type){
     setTimeout(()=>{
       pushDlg('（'+esc(n.name)+'接過，神色微動）你有心。',false);
       bumpAff(key,4);toast('贈禮 · 好感 +4');
+      // 送禮微量加善惡（對方正派→玩家加正，對方邪惡→玩家加邪）
+      const na=n.alignment||500,pa=playerAlign();
+      if(na>pa)setPlayerAlign(1);else if(na<pa)setPlayerAlign(-1);
     },400);
   }else if(type==='spar'){
     if(p.spoke[key+'#spar']===worldDay)return;
     p.spoke[key+'#spar']=worldDay;
     const btn=$('btnSpar');if(btn)btn.disabled=true;
-    const a=aff(key);
+    const a=aff(key),na=n.alignment||500,diff=alignDiff(playerAlign(),na);
     const win=Math.random()<(0.35+a/200);
     p.xp+=win?5:3;savePlayer(p);
     pushDlg('（你抱拳：請指教！）',true);
     setTimeout(()=>{
       if(win){pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下散手！俾面你。',false);bumpAff(key,3);toast('切磋勝 · 閱歷 +5 · 好感 +3')}
       else{pushDlg('（三招之內被制住）後生人，基本功返去緊啲。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')}
+      // 切磋善惡效果：正派贏+善，邪惡贏+邪
+      if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);
       $('playerXp').textContent=p.xp;
     },400);
   }
 }
 
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeModal(); // auth 畫面唔會被 Esc 關掉
-  if(e.key==='Enter'){
-    if($('auth').classList.contains('open')){
-      if(authMode==='reg'&&document.activeElement&&document.activeElement.id!=='regPass2'){$('regPass2').focus();return}
-      authMode==='reg'?regGo():loginGo();
-    }
+  if(e.key==='Escape')closeModal();
+  if(e.key==='Enter'&&$('auth').classList.contains('open')){
+    if(authMode==='reg'&&document.activeElement&&document.activeElement.id!=='regPass2'){$('regPass2').focus();return}
+    authMode==='reg'?regGo():loginGo();
   }
 });
 load();

@@ -48,7 +48,8 @@
           "reply": "收聲！我姑姑個名都係你講得㗎？",
           "affinity_delta": -3
         }
-      ]
+      ],
+      "alignment": 600
     },
     {
       "key": "xiaolongnu",
@@ -83,7 +84,8 @@
           "reply": "外面嘅事，與我無關。你出去。",
           "affinity_delta": -2
         }
-      ]
+      ],
+      "alignment": 500
     },
     {
       "key": "guo_jing",
@@ -120,7 +122,8 @@
           "reply": "襄陽係門戶，城在人在。呢種說話，唔好再講。",
           "affinity_delta": -3
         }
-      ]
+      ],
+      "alignment": 800
     },
     {
       "key": "huang_rong",
@@ -157,7 +160,8 @@
           "reply": "我個女輪到你評頭品足？小兄弟，講嘢有分寸。",
           "affinity_delta": -4
         }
-      ]
+      ],
+      "alignment": 750
     },
     {
       "key": "guo_fu",
@@ -192,7 +196,8 @@
           "reply": "你講咩話？再講一句，我唔客氣！",
           "affinity_delta": -4
         }
-      ]
+      ],
+      "alignment": 600
     },
     {
       "key": "li_mochou",
@@ -229,7 +234,8 @@
           "reply": "報應？我條命早唔要㗎喇。擋我者——死。",
           "affinity_delta": -5
         }
-      ]
+      ],
+      "alignment": 100
     },
     {
       "key": "jinlun_fawang",
@@ -264,7 +270,8 @@
           "reply": "大膽！我鐵騎踏平嘅地方多得很。再犯，殺。",
           "affinity_delta": -4
         }
-      ]
+      ],
+      "alignment": 50
     },
     {
       "key": "zhou_botong",
@@ -298,7 +305,8 @@
           "reply": "老友記？我係老頑童！悶到發霉先至慘！",
           "affinity_delta": -1
         }
-      ]
+      ],
+      "alignment": 700
     },
     {
       "key": "lu_wushuang",
@@ -334,7 +342,8 @@
           "reply": "你講咩？！傻蛋你欠打！行開！",
           "affinity_delta": -2
         }
-      ]
+      ],
+      "alignment": 600
     },
     {
       "key": "cheng_ying",
@@ -370,7 +379,8 @@
           "reply": "柔弱？桃花島傳人唔係白當嘅。你睇漏眼了。",
           "affinity_delta": -2
         }
-      ]
+      ],
+      "alignment": 700
     }
   ],
   "events": [
