@@ -377,11 +377,13 @@ function startTravelTimer(){
 }
 
 /* ================= 載入同渲染 ================= */
+let _wulinReady=false; // 防止 load() 覆蓋已登入嘅 render
 async function load(){
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
   catch(e){$('worldTime').textContent='載入失敗';return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
+  _wulinReady=true;
   tickCooldown();startTravelTimer();
   render();
 }
@@ -395,7 +397,8 @@ function renderGuest(){
 }
 function render(){
   $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;
-  const p=player();if(!p){renderGuest();return}
+  const p=player();console.log('[WULIN] render() player:',p?p.name:'NULL','region:',p?p.region:'?');
+  if(!p){renderGuest();return}
   $('playerName').textContent=p.name;$('playerXp').textContent=p.xp;
   $('playerAlignChip').style.display='';renderPlayerBar();
   $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
@@ -404,7 +407,7 @@ function render(){
   renderNpcs(p);
 }
 function renderNpcs(p){
-  const p2=player(); // 重新 check 一次，避免 stale p
+  const p2=p||player(); // 用傳入嘅 p，唔好再 check localStorage
   if(!p2){renderNpcGrid(world.npcs);return} // guest
   const cur=playerRegion(),cd=playerCooldown();
   const local=world.npcs.filter(n=>n.region===cur);
