@@ -3,9 +3,9 @@
     "project": "wulin",
     "based_on": "神鵰俠侶",
     "version": 1,
-    "world_time": "第一日 · 暮春",
+    "world_time": "第二日 · 暮春",
     "player_setting": "你係一名闖蕩江湖嘅無名少年，機緣巧合踏入神鵰世界",
-    "updated_at": "2026-09-05T12:00:00+08:00"
+    "updated_at": "2026-09-05T15:41:30"
   },
   "npcs": [
     {
@@ -13,13 +13,13 @@
       "name": "楊過",
       "title": "神鵰大俠",
       "location": "終南山 · 活死人墓外",
-      "mood": "瀟灑不羈，心中掛念小龍女",
+      "mood": "長嘯寄情，思念更深",
       "attitude": "對呢個陌生少年充滿好奇",
       "affinity": 30,
       "dialogue": [
-        "閣下邊位？喺終南山下徘徊，莫非想上山學藝？",
-        "世人常話我楊過叛逆無禮，哈哈，你點睇？",
-        "姑姑喺墓入面……我等佢出返嚟，幾多年都等。"
+        "今晚長嘯三聲，姑姑你聽到麼？",
+        "全真啲牛鼻子又嚟趕我，正好陪我過招。",
+        "少年人，你話世上真有一見鍾情？哈哈。"
       ],
       "relations": {
         "xiaolongnu": 98,
@@ -31,64 +31,133 @@
         "jinlun_fawang": 25,
         "cheng_ying": 65,
         "lu_wushuang": 68
-      }
+      },
+      "chat_options": [
+        {
+          "say": "楊大俠深情一片，天下少有！",
+          "reply": "你識貨！等我姑姑出嚟，我請你飲終南山嘅雪水酒。",
+          "affinity_delta": 4
+        },
+        {
+          "say": "過兒，全真啲道士咪理佢，行自己條路啦。",
+          "reply": "嘿，你倒啱傾！世人罵我叛逆，你算半個知音。",
+          "affinity_delta": 1
+        },
+        {
+          "say": "你成日掛住小龍女，唔悶咩？",
+          "reply": "收聲！我姑姑個名都係你講得㗎？",
+          "affinity_delta": -3
+        }
+      ]
     },
     {
       "key": "xiaolongnu",
       "name": "小龍女",
       "title": "古墓派傳人",
       "location": "終南山 · 活死人墓",
-      "mood": "清冷恬淡，古井不波",
-      "attitude": "與世無爭，對外人淡漠",
+      "mood": "古井微瀾，若有所聞",
+      "attitude": "對墓外動靜開始留意",
       "affinity": 15,
       "dialogue": [
-        "……",
-        "外面嘅事，與我無關。",
-        "過兒话你可以入嚟，你先好入嚟。"
+        "……墓外有嘯聲，似係過兒。",
+        "師姐又喺江湖殺人了，與我無關。",
+        "過兒话你係朋友，你先算半個。"
       ],
       "relations": {
-        "yang_guo": 98,
+        "yang_guo": 99,
         "li_mochou": 20
-      }
+      },
+      "chat_options": [
+        {
+          "say": "龍姑娘，楊過喺墓外等你好耐喇。",
+          "reply": "……我知道。你話畀佢聽，我叫佢保重。",
+          "affinity_delta": 2
+        },
+        {
+          "say": "古墓清幽，晚輩唔敢打擾，就此告退。",
+          "reply": "好。你識禮數，過兒冇睇錯人。",
+          "affinity_delta": 1
+        },
+        {
+          "say": "你住咗耐會唔會悶？出嚟行吓啦。",
+          "reply": "外面嘅事，與我無關。你出去。",
+          "affinity_delta": -2
+        }
+      ]
     },
     {
       "key": "guo_jing",
       "name": "郭靖",
       "title": "北俠",
       "location": "襄陽城 · 城頭",
-      "mood": "憂國憂民，堅毅沉穩",
+      "mood": "強敵叫陣，沉毅如山",
       "attitude": "對後輩慈和，但觀人甚準",
       "affinity": 35,
       "dialogue": [
-        "少俠遠道而來，襄陽雖然兵凶戰危，一碗熱飯仲有。",
-        "守城唔靠武功，靠人心。",
-        "過兒佢……我好擔心佢行錯路。"
+        "法王今日城下叫陣，好，我郭靖接便係。",
+        "蓉兒，城內糧草仲撐幾耐，你心中有數就好。",
+        "過兒喺終南山……亂世之中，盼佢行正路。"
       ],
       "relations": {
         "huang_rong": 95,
         "yang_guo": 60,
         "guo_fu": 80,
-        "jinlun_fawang": 10
-      }
+        "jinlun_fawang": 8
+      },
+      "chat_options": [
+        {
+          "say": "郭大俠俠之大者，晚輩拜服！",
+          "reply": "俠之大者唔敢當，為國為民，盡本分啫。",
+          "affinity_delta": 3
+        },
+        {
+          "say": "郭伯伯，金輪法王武功好邪，千祈咪輕敵。",
+          "reply": "多謝提醒。佢龍象般若功確實難纏，我會小心。",
+          "affinity_delta": 2
+        },
+        {
+          "say": "守城咁辛苦，不如放棄襄陽算啦。",
+          "reply": "襄陽係門戶，城在人在。呢種說話，唔好再講。",
+          "affinity_delta": -3
+        }
+      ]
     },
     {
       "key": "huang_rong",
       "name": "黃蓉",
       "title": "丐幫前幫主",
       "location": "襄陽城 · 帥府",
-      "mood": "機敏慧黠，心事重重",
+      "mood": "運籌帷幄，暗憂糧草",
       "attitude": "笑容背後觀察入微",
       "affinity": 25,
       "dialogue": [
-        "小兄弟面生得很，從邊度嚟㗎？",
-        "靖哥哥淨係識得打仗，城中糧草仲係我諗辦法。",
-        "過兒呢個仔聰明，但太聰明嘅人，好易行歪。"
+        "靖哥哥唔准落城應戰，打狗棒法我都帶埋嚟。",
+        "蒙古人圍而不攻，係等我哋糧盡，呢招最毒。",
+        "打探消息嘅小兄弟，你眼耳倒係伶俐。"
       ],
       "relations": {
         "guo_jing": 95,
         "guo_fu": 85,
-        "yang_guo": 45
-      }
+        "yang_guo": 45,
+        "jinlun_fawang": 49
+      },
+      "chat_options": [
+        {
+          "say": "蓉姨，我喺城外見到蒙古軍運糧草。",
+          "reply": "哦？邊個方向？你帶路，我即刻派人查。",
+          "affinity_delta": 4
+        },
+        {
+          "say": "黃幫主智慧過人，襄陽有你就穩陣。",
+          "reply": "口甜舌滑……你係咪有嘢想打聽呀？講啦。",
+          "affinity_delta": 2
+        },
+        {
+          "say": "你個女郭芙咁跋扈，你都唔管下？",
+          "reply": "我個女輪到你評頭品足？小兄弟，講嘢有分寸。",
+          "affinity_delta": -4
+        }
+      ]
     },
     {
       "key": "guo_fu",
@@ -106,41 +175,96 @@
         "yang_guo": 30,
         "huang_rong": 85,
         "guo_jing": 80
-      }
+      },
+      "chat_options": [
+        {
+          "say": "郭小姐劍法超群，江湖邊個唔知？",
+          "reply": "算你有眼光。呢句中聽，姑且信你。",
+          "affinity_delta": 3
+        },
+        {
+          "say": "郭小姐，武家嗰兩位又喺度等你。",
+          "reply": "佢哋等我關我咩事？煩死人，唔好提。",
+          "affinity_delta": 0
+        },
+        {
+          "say": "大小姐脾氣咁大，難怪冇人敢惹。",
+          "reply": "你講咩話？再講一句，我唔客氣！",
+          "affinity_delta": -4
+        }
+      ]
     },
     {
       "key": "li_mochou",
       "name": "李莫愁",
       "title": "赤練仙子",
       "location": "江湖漂泊",
-      "mood": "怨毒痴執",
+      "mood": "追蹤索命，怨毒日深",
       "attitude": "見人就殺心起，唯獨聽到《問世間情為何物》會怔住",
       "affinity": 5,
       "dialogue": [
-        "問世間，情為何物……你識條鐵咩！",
-        "擋我者死。"
+        "陸無雙，偷咗我《五毒秘傳》，天涯海角都捉你返嚟。",
+        "嘉興南湖簫聲好雅，可惜擋我路者死。",
+        "問世間情為何物……哼，呢句唔准你唱！"
       ],
       "relations": {
         "xiaolongnu": 20,
-        "yang_guo": 15
-      }
+        "yang_guo": 15,
+        "cheng_ying": 48,
+        "lu_wushuang": 48
+      },
+      "chat_options": [
+        {
+          "say": "李前輩，聽講陸無雙喺嘉興南湖。",
+          "reply": "哦？講得詳細啲……你識做嘢，我唔殺你。",
+          "affinity_delta": 3
+        },
+        {
+          "say": "問世間，情為何物，直教生死相許……",
+          "reply": "……你唱落去。……哼，冇嘢，行啦。",
+          "affinity_delta": 1
+        },
+        {
+          "say": "你殺咗咁多人，唔怕報應咩？",
+          "reply": "報應？我條命早唔要㗎喇。擋我者——死。",
+          "affinity_delta": -5
+        }
+      ]
     },
     {
       "key": "jinlun_fawang",
       "name": "金輪法王",
       "title": "蒙古國師",
       "location": "蒙古軍營",
-      "mood": "野心勃勃",
-      "attitude": "惜才，但更想收服",
+      "mood": "鋒芒畢露，志在必得",
+      "attitude": "對中原高手戰意更濃",
       "affinity": 8,
       "dialogue": [
-        "中原武功，不過如此。",
-        "小兄弟，可願隨我學龍象般若功？"
+        "郭靖，你守得住城，守唔守得住人心？",
+        "中原臥虎藏龍？哈，我龍象般若功正好領教。",
+        "嗰個楊過……若肯為我所用，何愁大事不成。"
       ],
       "relations": {
-        "guo_jing": 10,
+        "guo_jing": 8,
         "yang_guo": 25
-      }
+      },
+      "chat_options": [
+        {
+          "say": "法王龍象般若功天下無敵，晚輩仰慕。",
+          "reply": "哈哈，有眼光！中原小輩就係識貨嘅唔多。",
+          "affinity_delta": 3
+        },
+        {
+          "say": "法王，郭靖守城靠人心，硬攻唔著數。",
+          "reply": "人心？亂世人心最賤。不過你肯講，算你坦白。",
+          "affinity_delta": 1
+        },
+        {
+          "say": "你蒙古人侵人國土，算咩英雄？",
+          "reply": "大膽！我鐵騎踏平嘅地方多得很。再犯，殺。",
+          "affinity_delta": -4
+        }
+      ]
     },
     {
       "key": "zhou_botong",
@@ -157,46 +281,148 @@
       "relations": {
         "yang_guo": 70,
         "guo_jing": 75
-      }
+      },
+      "chat_options": [
+        {
+          "say": "周爺爺，我陪你玩養蜜蜂！",
+          "reply": "好嘢！你細個咁醒，我最鍾意你呢種後生仔！",
+          "affinity_delta": 5
+        },
+        {
+          "say": "老頑童，教你左右互搏得唔得？",
+          "reply": "哈！你都想學？聰明，不過要陪我先教。",
+          "affinity_delta": 2
+        },
+        {
+          "say": "你咁大個人仲咁百厭，正一老友記。",
+          "reply": "老友記？我係老頑童！悶到發霉先至慘！",
+          "affinity_delta": -1
+        }
+      ]
     },
     {
       "key": "lu_wushuang",
       "name": "陸無雙",
       "title": "跛腳姑娘",
       "location": "江南",
-      "mood": "倔強帶俏",
+      "mood": "強敵迫近，倔強強撐",
       "attitude": "嘴硬心軟",
       "affinity": 40,
       "dialogue": [
-        "傻蛋！又係你？",
-        "我條腿點都醫唔返，唔使可憐我。"
+        "傻蛋，李莫愁追到嘉興嚟喇，你話點算？",
+        "我條腿廢咗，把刀唔會廢！",
+        "表姐總係咁溫溫吞吞，急死人。"
       ],
       "relations": {
         "yang_guo": 68,
-        "cheng_ying": 80
-      }
+        "cheng_ying": 80,
+        "li_mochou": 47
+      },
+      "chat_options": [
+        {
+          "say": "無雙姑娘，我幫你打聽李莫愁下落。",
+          "reply": "……傻蛋，你真係肯幫我？唔好呃我啊。",
+          "affinity_delta": 4
+        },
+        {
+          "say": "陸姑娘把刀好快，剛才一招好靚。",
+          "reply": "廢話少講，快就係快，唔使你讚。",
+          "affinity_delta": 1
+        },
+        {
+          "say": "跛腳就跛腳啦，發咩脾氣啫。",
+          "reply": "你講咩？！傻蛋你欠打！行開！",
+          "affinity_delta": -2
+        }
+      ]
     },
     {
       "key": "cheng_ying",
       "name": "程英",
       "title": "桃花島傳人",
       "location": "嘉興 · 南湖",
-      "mood": "溫婉內斂",
+      "mood": "簫聲示警，溫婉中帶剛",
       "attitude": "溫柔體貼，心事藏於簫聲",
       "affinity": 45,
       "dialogue": [
-        "既見君子，雲胡不喜……",
-        "飲杯茶先啦，慢慢講。"
+        "昨夜簫聲送客，但願李莫愁聽得明。",
+        "無雙妹心情唔好，你講嘢細聲啲。",
+        "既見君子，雲胡不喜——你坐低飲杯茶。"
       ],
       "relations": {
         "yang_guo": 65,
-        "lu_wushuang": 80
-      }
+        "lu_wushuang": 80,
+        "li_mochou": 47
+      },
+      "chat_options": [
+        {
+          "say": "程姑娘簫聲清雅，『既見君子』講邊個？",
+          "reply": "……你聽得明簫中意，難得。飲杯茶慢慢傾。",
+          "affinity_delta": 4
+        },
+        {
+          "say": "程姑娘，李莫愁好狠，不如通知郭大俠。",
+          "reply": "多謝關心。不過我哋姊妹嘅事，自己會應付。",
+          "affinity_delta": 1
+        },
+        {
+          "say": "你咁柔弱，跟埋嚟江湖做咩？",
+          "reply": "柔弱？桃花島傳人唔係白當嘅。你睇漏眼了。",
+          "affinity_delta": -2
+        }
+      ]
     }
   ],
   "events": [
-    {"day": 1, "text": "蒙古大軍屯兵襄陽城外，戰雲密佈", "npcs": ["guo_jing", "huang_rong", "jinlun_fawang"]},
-    {"day": 1, "text": "楊過夜宿終南山破廟，遙望活死人墓燈火", "npcs": ["yang_guo", "xiaolongnu"]},
-    {"day": 1, "text": "李莫愁喺江南出現，施展赤練神掌，江湖人心惶惶", "npcs": ["li_mochou"]}
+    {
+      "day": 1,
+      "text": "蒙古大軍屯兵襄陽城外，戰雲密佈",
+      "npcs": [
+        "guo_jing",
+        "huang_rong",
+        "jinlun_fawang"
+      ]
+    },
+    {
+      "day": 1,
+      "text": "楊過夜宿終南山破廟，遙望活死人墓燈火",
+      "npcs": [
+        "yang_guo",
+        "xiaolongnu"
+      ]
+    },
+    {
+      "day": 1,
+      "text": "李莫愁喺江南出現，施展赤練神掌，江湖人心惶惶",
+      "npcs": [
+        "li_mochou"
+      ]
+    },
+    {
+      "day": 2,
+      "text": "金輪法王單騎到襄陽城下叫陣，郭靖登城回應，雙方言語交鋒，一場大戰如箭在弦",
+      "npcs": [
+        "guo_jing",
+        "jinlun_fawang",
+        "huang_rong"
+      ]
+    },
+    {
+      "day": 2,
+      "text": "楊過夜半喺終南山長嘯寄情，嘯聲直入活死人墓，小龍女心湖微起漣漪",
+      "npcs": [
+        "yang_guo",
+        "xiaolongnu"
+      ]
+    },
+    {
+      "day": 2,
+      "text": "李莫愁追查《五毒秘傳》下落殺到嘉興，程英南湖畔簫聲示警，雙方初次照面，劍拔弩張",
+      "npcs": [
+        "li_mochou",
+        "cheng_ying",
+        "lu_wushuang"
+      ]
+    }
   ]
 }
