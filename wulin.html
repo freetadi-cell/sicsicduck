@@ -50,15 +50,36 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .mmeta{font-size:13px;color:var(--muted);margin-bottom:14px}
 .mmeta b{color:var(--text);font-weight:500}
 .dlg{background:var(--card);border-left:3px solid var(--gold2);border-radius:0 8px 8px 0;padding:10px 14px;margin:8px 0;font-size:14px}
-.dlg.new{border-left-color:var(--gold);animation:pop .4s}
+.dlg.me{border-left:none;border-right:3px solid var(--gold);border-radius:8px 0 0 8px;background:var(--card2);color:var(--gold);text-align:left}
+.dlg .who{font-size:11px;color:var(--muted);display:block;margin-bottom:2px}
+.dlg.me .who{color:var(--gold2)}
+.dlg.new{animation:pop .4s}
 @keyframes pop{from{opacity:0;transform:translateX(-6px)}to{opacity:1}}
+@keyframes popr{from{opacity:0;transform:translateX(6px)}to{opacity:1}}
+.dlg.new.me{animation:popr .4s}
+.chatlabel{font-size:12px;color:var(--muted);letter-spacing:2px;margin:16px 0 6px}
+.opt{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--border);color:var(--text);padding:9px 14px;border-radius:8px;cursor:pointer;font-size:14px;margin:6px 0;transition:.2s;font-family:inherit}
+.opt:hover:not(:disabled){border-color:var(--gold2);background:var(--card2)}
+.opt:disabled{opacity:.45;cursor:not-allowed}
+.opt .fx{float:right;font-size:12px;color:var(--muted)}
+.opt .fx.up{color:var(--green)}
+.opt .fx.down{color:var(--red)}
 .acts{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
 .btn{flex:1;min-width:100px;background:var(--card);border:1px solid var(--gold2);color:var(--gold);padding:10px;border-radius:8px;cursor:pointer;font-size:14px;letter-spacing:2px;transition:.2s}
-.btn:hover{background:var(--gold2);color:#111}
+.btn:hover:not(:disabled){background:var(--gold2);color:#111}
 .btn:disabled{opacity:.4;cursor:not-allowed}
 .affbig{display:flex;align-items:center;gap:10px;margin:12px 0}
 .affbig .affbar{flex:1;margin:0;height:7px}
+.affdelta{font-size:12px;font-weight:700;margin-left:6px}
+.affdelta.up{color:var(--green)}
+.affdelta.down{color:var(--red)}
 .mfoot{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}
+/* registration */
+.reg{max-width:420px;margin:8vh auto;text-align:center}
+.reg .mname{margin-bottom:6px}
+.reg input{width:100%;background:var(--card);border:1px solid var(--gold2);border-radius:8px;color:var(--text);font-size:18px;padding:12px;text-align:center;letter-spacing:3px;font-family:inherit;margin:16px 0}
+.reg input:focus{outline:none;border-color:var(--gold)}
+.reg .hint{font-size:12px;color:var(--muted);margin-bottom:14px}
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--gold2);color:#111;padding:10px 22px;border-radius:24px;font-size:14px;opacity:0;transition:.3s;z-index:200;pointer-events:none}
 .toast.show{opacity:1}
 footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;letter-spacing:1px}
@@ -69,12 +90,12 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 <div class="wrap">
   <header>
     <h1>武 林</h1>
-    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v1</div>
+    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v2</div>
   </header>
 
   <div class="worldbar">
     <div class="chip">🗓 <b id="worldTime">載入中…</b></div>
-    <div class="chip">🧍 <b id="playerName">無名少年</b> · 閱歷 <b id="playerXp">0</b></div>
+    <div class="chip">🧍 <b id="playerName">…</b> · 閱歷 <b id="playerXp">0</b></div>
     <div class="chip">👥 <b id="npcCount">–</b> 位江湖人</div>
   </div>
 
@@ -84,124 +105,210 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   <h2>江湖人物</h2>
   <div class="grid" id="npcGrid"></div>
 
-  <footer>世界由 AI 推進 · NPC 狀態隨時間演化 · 本頁為未公開原型</footer>
+  <footer>世界由 AI 推進 · 對話選項每日更換 · 本頁為未公開原型</footer>
 </div>
 
-<div class="modal" id="modal">
-  <div class="mback" onclick="closeModal()"></div>
-  <div class="mbox" id="mbox"></div>
-</div>
+<div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
 <div class="toast" id="toast"></div>
 
 <script>
-let world=null;
+let world=null,worldDay=1;
 const $=id=>document.getElementById(id);
 
-function player(){ // localStorage 玩家狀態
+/* ---- 玩家狀態（localStorage）----
+   {name, xp, aff:{key:好感}, spoke:{key:day}, gifts:{key:day}, opts:{key:day:index,...}} */
+function player(){
   let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){}
-  if(!p)p={xp:0,gifts:{},spoke:{}};
+  if(!p||!p.name)p=null; // 冇註冊過當新玩家
   return p;
 }
 function savePlayer(p){localStorage.setItem('wulin_player',JSON.stringify(p))}
-function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 
+function aff(key){ // 好感：玩家本地為準，冇先攞世界預設
+  const p=player(),n=world.npcs.find(x=>x.key===key);
+  if(p.aff[key]!=null)return p.aff[key];
+  return n?(n.affinity||0):0;
+}
+function setAff(key,v){
+  const p=player();
+  p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));
+  savePlayer(p);
+}
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+/* ---- 註冊 ---- */
+const NAME_POOL=['清風劍客','月下客','鐵掌書生','江南浪子','無名小俠','白衣少年','狂歌客','孤鴻子'];
+function showReg(){
+  $('mbox').innerHTML=`<div class="reg">
+    <button class="mclose" onclick="regSkip()">✕</button>
+    <div class="mname">初入江湖</div>
+    <div class="mmeta">前輩話你將踏入一個刀光劍影嘅世界。<br>報上名號，江湖先會記得你。</div>
+    <input id="regName" maxlength="10" placeholder="你的江湖稱號" autofocus>
+    <div class="hint">或者：<a href="#" style="color:var(--gold2)" onclick="regRandom();return false">幫我改個名</a></div>
+    <button class="btn" style="width:100%" onclick="regGo()">踏 入 江 湖</button>
+  </div>`;
+  $('modal').classList.add('open');
+  $('regName').focus();
+}
+function regRandom(){$('regName').value=NAME_POOL[Math.floor(Math.random()*NAME_POOL.length)]}
+function regSkip(){ // 唔報名就當「無名少年」
+  finishReg('無名少年');
+}
+function regGo(){
+  const v=$('regName').value.trim();
+  if(!v){toast('總要有個名號嘛');return}
+  finishReg(v.slice(0,10));
+}
+function finishReg(name){
+  savePlayer({name,xp:0,aff:{},spoke:{},gifts:{},opts:{},day:0});
+  $('modal').classList.remove('open');
+  toast(`「${name}」踏入江湖 🌻`);
+  render();
+}
+
+/* ---- 載入同渲染 ---- */
 async function load(){
   try{
     const r=await fetch('data/wulin_world.json?t='+Date.now());
     world=await r.json();
   }catch(e){$('worldTime').textContent='載入失敗';return}
+  worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
   render();
 }
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-
 function render(){
   $('worldTime').textContent=world.meta.world_time||'—';
   $('npcCount').textContent=world.npcs.length;
   const p=player();
+  if(!p){renderNpcs(null);showReg();return}
+  $('playerName').textContent=p.name;
   $('playerXp').textContent=p.xp;
-  $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
-    `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
-  $('npcGrid').innerHTML=world.npcs.map(n=>`
-    <div class="npc" onclick="openNpc('${n.key}')">
+  renderNpcs(p);
+}
+function renderNpcs(p){
+  $('npcGrid').innerHTML=world.npcs.map(n=>{
+    const a=p?aff(n.key):(n.affinity||0);
+    return `<div class="npc" onclick="openNpc('${n.key}')">
       <div class="nm">${esc(n.name)}</div>
       <div class="tt">${esc(n.title||'')}</div>
       <div class="loc">📍 ${esc(n.location||'')}</div>
       <div class="mood">心境：${esc(n.mood||'')}</div>
       <div class="att">${esc(n.attitude||'')}</div>
-      <div class="affbar"><i style="width:${n.affinity||0}%"></i></div>
-      <div class="affnum">好感 ${n.affinity||0}</div>
-    </div>`).join('');
+      <div class="affbar"><i style="width:${a}%"></i></div>
+      <div class="affnum">好感 ${a}</div>
+    </div>`}).join('');
 }
 
+/* ---- NPC 對話框 ---- */
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
-  const p=player();
+  const p=player();if(!p){showReg();return}
   const rel=Object.entries(n.relations||{}).slice(0,4).map(([k,v])=>{
     const o=world.npcs.find(x=>x.key===k);
     return o?`${esc(o.name)} ${v}`:'';
   }).filter(Boolean).join(' · ');
+  const a=aff(key);
+  const doneSpoke=p.spoke[key]===worldDay;
+  const opts=(n.chat_options||[]).map((o,i)=>{
+    const used=p.opts[key+':'+i]===worldDay;
+    const fx=o.affinity_delta>0?`<span class="fx up">♥+${o.affinity_delta}</span>`
+            :o.affinity_delta<0?`<span class="fx down">♥${o.affinity_delta}</span>`:'';
+    return `<button class="opt" id="opt_${key}_${i}" ${used?'disabled':''} onclick="say('${key}',${i})">${esc(o.say)}${used?' <span class="fx">✓ 講過</span>':fx}</button>`;
+  }).join('');
   $('mbox').innerHTML=`
     <button class="mclose" onclick="closeModal()">✕</button>
     <div class="mname">${esc(n.name)}</div>
     <div class="mtitle">${esc(n.title||'')}</div>
     <div class="mmeta">📍 ${esc(n.location||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div>
-    <div class="affbig"><div class="affbar"><i style="width:${n.affinity||0}%"></i></div><span style="color:var(--gold);font-size:13px">好感 ${n.affinity||0}</span></div>
-    <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg">${esc(d)}</div>`).join('')}</div>
+    <div class="affbig"><div class="affbar"><i id="affBar" style="width:${a}%"></i></div><span style="color:var(--gold);font-size:13px">好感 <span id="affNum">${a}</span><span id="affDelta" class="affdelta"></span></span></div>
+    <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg"><span class="who">${esc(n.name)}</span>${esc(d)}</div>`).join('')}</div>
+    <div class="chatlabel">— 你開口講（每日一款）—</div>
+    <div id="optArea">${opts||'<div class="mmeta">（佢暫時冇咩想聽……聽日再嚟）</div>'}</div>
     ${rel?`<div class="mmeta" style="margin-top:12px">交情：${rel}</div>`:''}
     <div class="acts">
-      <button class="btn" onclick="act('${key}','talk')">💬 交談</button>
-      <button class="btn" onclick="act('${key}','gift')">🎁 贈禮</button>
-      <button class="btn" onclick="act('${key}','spar')">⚔️ 切磋</button>
+      <button class="btn" id="btnGift" ${p.gifts[key]===worldDay?'disabled':''} onclick="act('${key}','gift')">🎁 贈禮</button>
+      <button class="btn" id="btnSpar" ${p.spoke[key+'#spar']===worldDay?'disabled':''} onclick="act('${key}','spar')">⚔️ 切磋</button>
     </div>
-    <div class="mfoot">你嘅互動會影響下次 AI 推進時 NPC 嘅態度</div>`;
+    <div class="mfoot">講嘅嘢會即刻影響好感 · NPC 心境每日都唔同</div>`;
   $('modal').classList.add('open');
 }
 function closeModal(){$('modal').classList.remove('open')}
 
-function pushDlg(text){
+function pushDlg(text,me){
   const d=document.createElement('div');
-  d.className='dlg new';d.textContent=text;
+  d.className='dlg new'+(me?' me':'');
+  if(me)d.innerHTML=`<span class="who">${esc(player().name)}</span>${esc(text)}`;
+  else d.textContent=text;
   $('dlgArea').appendChild(d);
+  const box=$('mbox');box.scrollTop=box.scrollHeight;
 }
 function bumpAff(key,delta){
-  const n=world.npcs.find(x=>x.key===key);
-  n.affinity=Math.max(0,Math.min(100,(n.affinity||0)+delta));
-  const bar=document.querySelector('#mbox .affbar i');
-  if(bar)bar.style.width=n.affinity+'%';
-  const num=document.querySelector('#mbox .affbig span');
-  if(num)num.textContent='好感 '+n.affinity;
+  if(!delta)return;
+  const v=aff(key)+delta;setAff(key,v);
+  const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');
+  if(bar)bar.style.width=v+'%';
+  if(num)num.textContent=v;
+  if(dl){
+    dl.textContent=(delta>0?'+':'')+delta;
+    dl.className='affdelta '+(delta>0?'up':'down');
+    setTimeout(()=>{dl.textContent=''},2500);
+  }
+  const p=player();$('playerXp').textContent=p.xp;
 }
 
+/* ---- 玩家開口講 ---- */
+function say(key,i){
+  const n=world.npcs.find(x=>x.key===key);if(!n)return;
+  const o=(n.chat_options||[])[i];if(!o)return;
+  const p=player();
+  if(p.opts[key+':'+i]===worldDay)return;
+  p.opts[key+':'+i]=worldDay;
+  savePlayer(p);
+  const btn=$('opt_'+key+'_'+i);
+  if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 講過</span>'}
+  pushDlg(o.say,true);
+  setTimeout(()=>{
+    pushDlg(o.reply,false);
+    bumpAff(key,o.affinity_delta||0);
+    if(o.affinity_delta>0)toast('佢幾受落 · 好感 +'+o.affinity_delta);
+    else if(o.affinity_delta<0)toast('講錯嘢喇… 好感 '+o.affinity_delta);
+    if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}
+  },400);
+}
+
+/* ---- 贈禮 / 切磋 ---- */
 function act(key,type){
   const n=world.npcs.find(x=>x.key===key);
   const p=player();
-  const today=new Date().toDateString();
-  if(type==='talk'){
-    const lines=n.dialogue||['……'];
-    pushDlg(lines[Math.floor(Math.random()*lines.length)]);
-    if(p.spoke[key]!==today){p.spoke[key]=today;p.xp+=2;bumpAff(key,1);toast('閱歷 +2 · 好感 +1')}
-    else toast('今日已傾過，NPC 記得你 😏');
-  }else if(type==='gift'){
-    const g=p.gifts[key]||0;
-    if(g>=3){pushDlg('（'+n.name+'擺手）心意領咗，唔使再破費。');toast('今日贈禮已夠')}
-    else{
-      p.gifts[key]=g+1;p.xp+=1;
-      const gain=[5,3,2][g];
-      bumpAff(key,gain);
-      pushDlg(g===0?'（'+n.name+'接過禮物，眼神微動）你有心。':'（'+n.name+'微微點頭）又係你？');
-      toast('好感 +'+gain);
-    }
+  if(type==='gift'){
+    if(p.gifts[key]===worldDay)return;
+    p.gifts[key]=worldDay;
+    const btn=$('btnGift');if(btn)btn.disabled=true;
+    pushDlg('（你奉上一份禮物）',true);
+    setTimeout(()=>{
+      pushDlg('（'+n.name+'接過，神色微動）你有心。',false);
+      bumpAff(key,4);toast('贈禮 · 好感 +4');
+    },400);
   }else if(type==='spar'){
-    const win=Math.random()<(0.35+(n.affinity||0)/200);
-    p.xp+=win?5:3;
-    if(win){bumpAff(key,3);pushDlg('（過了三招，'+n.name+'收勢）有幾下散手！俾面你。');toast('切磋勝 · 閱歷 +5 · 好感 +3')}
-    else{bumpAff(key,-1);pushDlg('（三招之內被制住）後生人，基本功返去緊啲。');toast('切磋敗 · 閱歷 +3 · 好感 -1')}
+    if(p.spoke[key+'#spar']===worldDay)return;
+    p.spoke[key+'#spar']=worldDay;
+    const btn=$('btnSpar');if(btn)btn.disabled=true;
+    const a=aff(key);
+    const win=Math.random()<(0.35+a/200);
+    p.xp+=win?5:3;savePlayer(p);
+    pushDlg('（你抱拳：請指教！）',true);
+    setTimeout(()=>{
+      if(win){pushDlg('（過了三招，'+n.name+'收勢）有幾下散手！俾面你。',false);bumpAff(key,3);toast('切磋勝 · 閱歷 +5 · 好感 +3')}
+      else{pushDlg('（三招之內被制住）後生人，基本功返去緊啲。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')}
+      $('playerXp').textContent=p.xp;
+    },400);
   }
-  savePlayer(p);
-  $('playerXp').textContent=p.xp;
 }
 
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')closeModal();
+  if(e.key==='Enter'&&document.getElementById('regName')&&document.activeElement===$('regName'))regGo();
+});
 load();
 </script>
 </body>

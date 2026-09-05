@@ -48,7 +48,7 @@ def call_kimi(api_key, sys_prompt, user_prompt, max_tokens=4000):
         f"{API_BASE}/chat/completions", data=payload,
         headers={"Content-Type": "application/json",
                  "Authorization": f"Bearer {api_key}"})
-    with urllib.request.urlopen(req, timeout=180) as resp:
+    with urllib.request.urlopen(req, timeout=360) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     return data["choices"][0]["message"]["content"].strip()
 
