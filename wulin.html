@@ -404,16 +404,17 @@ function render(){
   renderNpcs(p);
 }
 function renderNpcs(p){
+  const p2=player(); // 重新 check 一次，避免 stale p
+  if(!p2){renderNpcGrid(world.npcs);return} // guest
   const cur=playerRegion(),cd=playerCooldown();
   const local=world.npcs.filter(n=>n.region===cur);
   $('npcLocal').textContent=local.length;
-  $('regionTag').textContent=cd>0?`(冷卻中 ${cd} 日)`:`(喺 ${esc(cur)})`;
+  $('regionTag').textContent=cd?`(冷卻中)`:`(喺 ${esc(cur)})`;
 
-  if(cd>0){
+  if(cd){
     $('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正喺趕路，到達後先可以同 NPC 互動</div>`;
     return;
   }
-  if(!p)return renderNpcGrid(world.npcs); // guest
   renderNpcGrid(local);
 }
 function renderNpcGrid(npcs){
