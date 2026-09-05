@@ -70,6 +70,11 @@ SYS_PROMPT = """你係金庸《神鵰俠侶》世界嘅「天命」——負責�
       "affinity_delta": 0,
       "relation_deltas": {"其他npc_key": -2}
     }
+  },
+  "chat_options": {
+    "npc_key": [
+      {"say": "玩家開口講嘅一句話", "reply": "NPC 嘅即時回應", "affinity_delta": 1}
+    ]
   }
 }
 
@@ -81,7 +86,9 @@ SYS_PROMPT = """你係金庸《神鵰俠侶》世界嘅「天命」——負責�
 5. 新增 1-3 條 events，要同之前嘅事件敘事連貫（世界有歷史感）
 6. 忠於原著人物性格、武功、關係
 7. 玩家係「無名少年」，NPC 對玩家嘅好感主要由玩家行為影響，NPC 互動只輕微帶動
-8. 只輸出 JSON，唔好 markdown fence、唔好解釋"""
+8. chat_options：每位 NPC 都要俾 3 個選項——「玩家可以開口講嘅話」，廣東話口語 8-20 字，語氣各有不同（恭維／直言相勸／打探消息／挑釁／求助……自由配搭，貼合 NPC 身份）
+9. reply 係 NPC 聽完嗰句嘅即時回應，廣東話 15-40 字，貼合佢性格同當前心境；affinity_delta（-5 至 +5）反映嗰句令 NPC 幾受落——三句效果要拉開明顯差距（例如 +5 / +1 / -3），唔好全部一樣
+10. 只輸出 JSON，唔好 markdown fence、唔好解釋"""
 
 
 def strip_fences(txt):
@@ -134,6 +141,25 @@ def apply_delta(world, delta):
                 rels[k2] = clamp(rels.get(k2, 50) + int(dv))
             except (TypeError, ValueError):
                 pass
+
+    # 玩家對話選項：每位 NPC 三句「可以講嘅話」+ NPC 回應 + 好感效果
+    for key, arr in (delta.get("chat_options") or {}).items():
+        n = npcs.get(key)
+        if not n:
+            print(f"  ⚠️ 未知 NPC key（chat_options）：{key}（跳過）")
+            continue
+        cleaned = []
+        for o in arr if isinstance(arr, list) else []:
+            if isinstance(o, dict) and o.get("say") and o.get("reply"):
+                try:
+                    d = max(-5, min(5, int(o.get("affinity_delta", 0))))
+                except (TypeError, ValueError):
+                    d = 0
+                cleaned.append({"say": str(o["say"])[:60],
+                                "reply": str(o["reply"])[:150],
+                                "affinity_delta": d})
+        if cleaned:
+            n["chat_options"] = cleaned[:3]
     return world
 
 
@@ -160,7 +186,7 @@ def main():
 
     delta = None
     # kimi-k3 係 reasoning 模型：先燒 token 思考先寫 content，max_tokens 太細會空回覆
-    for attempt, mt in enumerate([6000, 10000, 16000], 1):
+    for attempt, mt in enumerate([8000, 12000, 20000], 1):
         try:
             content = call_kimi(api_key, SYS_PROMPT, user_prompt, max_tokens=mt)
             if not content:
@@ -179,6 +205,9 @@ def main():
     print(f"✅ 推進至：{world['meta'].get('world_time')}")
     for e in world.get("events", [])[-3:]:
         print(f"   第{e['day']}日 · {e['text']}")
+    n_opts = sum(len(n.get("chat_options", [])) for n in world["npcs"])
+    n_has = sum(1 for n in world["npcs"] if n.get("chat_options"))
+    print(f"   對話選項：{n_opts} 條（{n_has}/{len(world['npcs'])} 位 NPC）")
 
     if dry:
         print("（dry run，唔寫檔）")
