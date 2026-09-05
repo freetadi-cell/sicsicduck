@@ -21,6 +21,8 @@ h1{font-size:34px;letter-spacing:14px;color:var(--gold);text-indent:14px;font-we
 .worldbar{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:18px 0 26px}
 .chip{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:14px}
 .chip b{color:var(--gold);font-weight:600}
+.chip a{color:var(--muted);font-size:12px;text-decoration:none;margin-left:6px}
+.chip a:hover{color:var(--gold)}
 h2{font-size:17px;color:var(--gold);margin:26px 0 12px;letter-spacing:3px;display:flex;align-items:center;gap:10px}
 h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
 .events{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px}
@@ -74,28 +76,39 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .affdelta.up{color:var(--green)}
 .affdelta.down{color:var(--red)}
 .mfoot{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}
-/* registration */
-.reg{max-width:420px;margin:8vh auto;text-align:center}
-.reg .mname{margin-bottom:6px}
-.reg input{width:100%;background:var(--card);border:1px solid var(--gold2);border-radius:8px;color:var(--text);font-size:18px;padding:12px;text-align:center;letter-spacing:3px;font-family:inherit;margin:16px 0}
-.reg input:focus{outline:none;border-color:var(--gold)}
-.reg .hint{font-size:12px;color:var(--muted);margin-bottom:14px}
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--gold2);color:#111;padding:10px 22px;border-radius:24px;font-size:14px;opacity:0;transition:.3s;z-index:200;pointer-events:none}
+/* auth */
+#auth{display:none;position:fixed;inset:0;z-index:150;background:var(--bg)}
+#auth.open{display:block}
+.acard{max-width:400px;margin:7vh auto 0;background:var(--bg2);border:1px solid var(--gold2);border-radius:12px;padding:28px}
+.acard h3{text-align:center;font-size:24px;color:var(--gold);letter-spacing:6px;margin-bottom:4px}
+.atabs{display:flex;gap:8px;margin:18px 0 14px}
+.atab{flex:1;background:var(--card);border:1px solid var(--border);color:var(--muted);padding:9px;border-radius:8px;cursor:pointer;font-size:14px;letter-spacing:2px;font-family:inherit}
+.atab.on{border-color:var(--gold2);color:var(--gold);background:var(--card2)}
+.afld{margin:10px 0}
+.afld label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;letter-spacing:1px}
+.afld input{width:100%;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:16px;padding:10px 12px;font-family:inherit}
+.afld input:focus{outline:none;border-color:var(--gold)}
+.aerr{color:var(--red);font-size:13px;min-height:20px;margin:6px 0}
+.abtn{width:100%;background:var(--card);border:1px solid var(--gold2);color:var(--gold);padding:12px;border-radius:8px;cursor:pointer;font-size:16px;letter-spacing:4px;font-family:inherit;transition:.2s}
+.abtn:hover{background:var(--gold2);color:#111}
+.ahint{font-size:12px;color:var(--muted);margin-top:14px;text-align:center;line-height:1.6}
+.ahint a{color:var(--gold2);cursor:pointer;text-decoration:none}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--gold2);color:#111;padding:10px 22px;border-radius:24px;font-size:14px;opacity:0;transition:.3s;z-index:300;pointer-events:none}
 .toast.show{opacity:1}
 footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;letter-spacing:1px}
-@media(max-width:600px){h1{font-size:26px;letter-spacing:8px}.mbox{margin:4vh 12px}}
+@media(max-width:600px){h1{font-size:26px;letter-spacing:8px}.mbox{margin:4vh 12px}.acard{margin:4vh 12px 0}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>武 林</h1>
-    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v2</div>
+    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v3</div>
   </header>
 
   <div class="worldbar">
     <div class="chip">🗓 <b id="worldTime">載入中…</b></div>
-    <div class="chip">🧍 <b id="playerName">…</b> · 閱歷 <b id="playerXp">0</b></div>
+    <div class="chip">🧍 <b id="playerName">…</b> · 閱歷 <b id="playerXp">0</b> · <a href="#" onclick="logout();return false">登出</a></div>
     <div class="chip">👥 <b id="npcCount">–</b> 位江湖人</div>
   </div>
 
@@ -105,66 +118,145 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   <h2>江湖人物</h2>
   <div class="grid" id="npcGrid"></div>
 
-  <footer>世界由 AI 推進 · 對話選項每日更換 · 本頁為未公開原型</footer>
+  <footer>世界由 AI 推進 · 對話選項每日更換 · 帳號資料只儲存於本裝置瀏覽器</footer>
 </div>
 
+<!-- NPC 對話框 -->
 <div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
+
+<!-- 登入 / 註冊 -->
+<div id="auth">
+  <div class="acard">
+    <h3>武 林</h3>
+    <div class="atabs">
+      <button class="atab" id="tabLogin" onclick="authTab('login')">登 入</button>
+      <button class="atab" id="tabReg" onclick="authTab('reg')">新玩家註冊</button>
+    </div>
+    <div id="authBody"></div>
+  </div>
+</div>
 <div class="toast" id="toast"></div>
 
 <script>
 let world=null,worldDay=1;
 const $=id=>document.getElementById(id);
 
-/* ---- 玩家狀態（localStorage）----
-   {name, xp, aff:{key:好感}, spoke:{key:day}, gifts:{key:day}, opts:{key:day:index,...}} */
-function player(){
-  let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){}
-  if(!p||!p.name)p=null; // 冇註冊過當新玩家
-  return p;
-}
-function savePlayer(p){localStorage.setItem('wulin_player',JSON.stringify(p))}
+/* ================= 帳號系統（本機 localStorage） =================
+   wulin_accounts: { [名號]: { ph:密碼SHA-256, save:玩家進度 } }
+   wulin_player:   目前登入玩家嘅進度（session）                  */
+function accounts(){try{return JSON.parse(localStorage.getItem('wulin_accounts'))||{}}catch(e){return{}}}
+function saveAccounts(a){localStorage.setItem('wulin_accounts',JSON.stringify(a))}
 
-function aff(key){ // 好感：玩家本地為準，冇先攞世界預設
-  const p=player(),n=world.npcs.find(x=>x.key===key);
-  if(p.aff[key]!=null)return p.aff[key];
-  return n?(n.affinity||0):0;
+async function sha256(s){
+  if(window.crypto&&crypto.subtle){
+    const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('wulin·'+s));
+    return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
+  }
+  let h=5381;for(const c of s)h=((h*33)^c.codePointAt(0))>>>0; // 非安全環境 fallback
+  return 'f'+h.toString(16);
 }
-function setAff(key,v){
-  const p=player();
-  p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));
-  savePlayer(p);
+
+function player(){ // 已登入先有
+  let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){}
+  if(p&&p.name&&accounts()[p.name])return p;
+  return null;
 }
+function savePlayer(p){
+  localStorage.setItem('wulin_player',JSON.stringify(p));
+  const a=accounts();
+  if(a[p.name]){a[p.name].save=p;saveAccounts(a)} // 同步返帳號存檔
+}
+function logout(){
+  localStorage.removeItem('wulin_player');
+  closeModal();
+  toast('已登出江湖');
+  authTab('login');
+  $('auth').classList.add('open');
+}
+
+/* ---- 登入 / 註冊畫面 ---- */
+let authMode='login';
+function authTab(m){
+  authMode=m;
+  $('tabLogin').classList.toggle('on',m==='login');
+  $('tabReg').classList.toggle('on',m==='reg');
+  const names=Object.keys(accounts());
+  const dl=names.length?`<datalist id="knownNames">${names.map(n=>`<option value="${esc(n)}">`).join('')}</datalist>`:'';
+  const old=JSON.parse(localStorage.getItem('wulin_player')||'null');
+  if(m==='reg'){
+    // 舊玩家（v2 時代）補設密碼：保留原有進度
+    const migrating=old&&old.name&&!accounts()[old.name];
+    $('authBody').innerHTML=`
+      ${migrating?`<div class="mmeta" style="text-align:center">歡迎返嚟，<b style="color:var(--gold)">${esc(old.name)}</b>！為舊存檔設定密碼：</div>`:''}
+      <div class="afld"><label>江湖稱號</label><input id="regName" maxlength="10" placeholder="你的名號" value="${migrating?esc(old.name):''}" ${migrating?'readonly style="opacity:.6"':''}></div>
+      <div class="afld"><label>密碼（至少 4 個字元）</label><input id="regPass" type="password" maxlength="32" placeholder="••••••"></div>
+      <div class="afld"><label>確認密碼</label><input id="regPass2" type="password" maxlength="32" placeholder="••••••"></div>
+      ${migrating?'':`<div class="ahint" style="margin-top:2px;text-align:left">冇諗到？<a onclick="regRandom()">隨機改個名</a></div>`}
+      <div class="aerr" id="authErr"></div>
+      <button class="abtn" onclick="regGo()">踏 入 江 湖</button>
+      <div class="ahint">⚠️ 帳號同密碼只儲存喺呢部裝置嘅瀏覽器，<br>清除瀏覽器資料會令存檔消失，密碼唔可以找回。</div>${dl}`;
+    $('regName').focus();
+  }else{
+    $('authBody').innerHTML=`
+      <div class="afld"><label>江湖稱號</label><input id="logName" maxlength="10" placeholder="你的名號" list="knownNames"></div>
+      <div class="afld"><label>密碼</label><input id="logPass" type="password" maxlength="32" placeholder="••••••"></div>
+      <div class="aerr" id="authErr"></div>
+      <button class="abtn" onclick="loginGo()">登 入</button>
+      ${names.length?'':`<div class="ahint">仲未係玩家？<a onclick="authTab('reg')">去註冊</a></div>`}${dl}`;
+    $('logName').focus();
+  }
+}
+const NAME_POOL=['清風劍客','月下客','鐵掌書生','江南浪子','無名小俠','白衣少年','狂歌客','孤鴻子'];
+function regRandom(){const el=$('regName');if(el&&!el.readOnly)el.value=NAME_POOL[Math.floor(Math.random()*NAME_POOL.length)]}
+
+function authErr(msg){const e=$('authErr');if(e)e.textContent=msg||''}
+
+async function regGo(){
+  const name=($('regName').value||'').trim().slice(0,10);
+  const p1=$('regPass').value,p2=$('regPass2').value;
+  if(!name){authErr('總要有個名號嘛');return}
+  if(p1.length<4){authErr('密碼至少 4 個字元');return}
+  if(p1!==p2){authErr('兩次密碼唔一致');return}
+  const a=accounts();
+  const old=JSON.parse(localStorage.getItem('wulin_player')||'null');
+  const migrating=old&&old.name===name&&!a[name];
+  if(a[name]){authErr('呢個名號已有人用，揀過另一個');return}
+  const ph=await sha256(p1);
+  const st=migrating?old:{name,xp:0,aff:{},spoke:{},gifts:{},opts:{},day:0};
+  a[name]={ph,save:st};
+  saveAccounts(a);
+  localStorage.setItem('wulin_player',JSON.stringify(st));
+  $('auth').classList.remove('open');
+  toast(migrating?`存檔已加密保護 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);
+  render();
+}
+async function loginGo(){
+  const name=($('logName').value||'').trim().slice(0,10);
+  const pw=$('logPass').value;
+  const a=accounts();
+  if(!a[name]){authErr('冇呢個名號——先註冊先入到江湖');return}
+  const ph=await sha256(pw);
+  if(ph!==a[name].ph){authErr('名號或密碼錯誤');return}
+  localStorage.setItem('wulin_player',JSON.stringify(a[name].save));
+  $('auth').classList.remove('open');
+  authErr('');
+  toast(`歡迎返嚟，${name}`);
+  render();
+}
+
+/* ================= 遊戲邏輯 ================= */
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 
-/* ---- 註冊 ---- */
-const NAME_POOL=['清風劍客','月下客','鐵掌書生','江南浪子','無名小俠','白衣少年','狂歌客','孤鴻子'];
-function showReg(){
-  $('mbox').innerHTML=`<div class="reg">
-    <button class="mclose" onclick="regSkip()">✕</button>
-    <div class="mname">初入江湖</div>
-    <div class="mmeta">前輩話你將踏入一個刀光劍影嘅世界。<br>報上名號，江湖先會記得你。</div>
-    <input id="regName" maxlength="10" placeholder="你的江湖稱號" autofocus>
-    <div class="hint">或者：<a href="#" style="color:var(--gold2)" onclick="regRandom();return false">幫我改個名</a></div>
-    <button class="btn" style="width:100%" onclick="regGo()">踏 入 江 湖</button>
-  </div>`;
-  $('modal').classList.add('open');
-  $('regName').focus();
+function aff(key){ // 好感：玩家本地為準，冇先攞世界預設
+  const p=player(),n=world.npcs.find(x=>x.key===key);
+  if(p&&p.aff[key]!=null)return p.aff[key];
+  return n?(n.affinity||0):0;
 }
-function regRandom(){$('regName').value=NAME_POOL[Math.floor(Math.random()*NAME_POOL.length)]}
-function regSkip(){ // 唔報名就當「無名少年」
-  finishReg('無名少年');
-}
-function regGo(){
-  const v=$('regName').value.trim();
-  if(!v){toast('總要有個名號嘛');return}
-  finishReg(v.slice(0,10));
-}
-function finishReg(name){
-  savePlayer({name,xp:0,aff:{},spoke:{},gifts:{},opts:{},day:0});
-  $('modal').classList.remove('open');
-  toast(`「${name}」踏入江湖 🌻`);
-  render();
+function setAff(key,v){
+  const p=player();if(!p)return;
+  p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));
+  savePlayer(p);
 }
 
 /* ---- 載入同渲染 ---- */
@@ -174,20 +266,39 @@ async function load(){
     world=await r.json();
   }catch(e){$('worldTime').textContent='載入失敗';return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
+  if(!player()){
+    // 未登入：照樣渲染世界（背後模糊可見），彈登入畫面
+    const old=JSON.parse(localStorage.getItem('wulin_player')||'null');
+    authTab(old&&old.name&&!accounts()[old.name]?'reg':'login');
+    $('auth').classList.add('open');
+    renderGuest();
+    return;
+  }
   render();
+}
+function renderGuest(){
+  $('worldTime').textContent=world.meta.world_time||'—';
+  $('npcCount').textContent=world.npcs.length;
+  $('playerName').textContent='—';$('playerXp').textContent='—';
+  $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
+    `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
+  $('npcGrid').innerHTML=world.npcs.map(n=>`
+    <div class="npc" style="opacity:.55">
+      <div class="nm">${esc(n.name)}</div>
+      <div class="tt">${esc(n.title||'')}</div>
+      <div class="loc">📍 ${esc(n.location||'')}</div>
+    </div>`).join('');
 }
 function render(){
   $('worldTime').textContent=world.meta.world_time||'—';
   $('npcCount').textContent=world.npcs.length;
-  const p=player();
-  if(!p){renderNpcs(null);showReg();return}
+  const p=player();if(!p){renderGuest();return}
   $('playerName').textContent=p.name;
   $('playerXp').textContent=p.xp;
-  renderNpcs(p);
-}
-function renderNpcs(p){
+  $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
+    `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
   $('npcGrid').innerHTML=world.npcs.map(n=>{
-    const a=p?aff(n.key):(n.affinity||0);
+    const a=aff(n.key);
     return `<div class="npc" onclick="openNpc('${n.key}')">
       <div class="nm">${esc(n.name)}</div>
       <div class="tt">${esc(n.title||'')}</div>
@@ -202,13 +313,12 @@ function renderNpcs(p){
 /* ---- NPC 對話框 ---- */
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
-  const p=player();if(!p){showReg();return}
+  const p=player();if(!p){authTab('login');$('auth').classList.add('open');return}
   const rel=Object.entries(n.relations||{}).slice(0,4).map(([k,v])=>{
     const o=world.npcs.find(x=>x.key===k);
     return o?`${esc(o.name)} ${v}`:'';
   }).filter(Boolean).join(' · ');
   const a=aff(key);
-  const doneSpoke=p.spoke[key]===worldDay;
   const opts=(n.chat_options||[]).map((o,i)=>{
     const used=p.opts[key+':'+i]===worldDay;
     const fx=o.affinity_delta>0?`<span class="fx up">♥+${o.affinity_delta}</span>`
@@ -286,7 +396,7 @@ function act(key,type){
     const btn=$('btnGift');if(btn)btn.disabled=true;
     pushDlg('（你奉上一份禮物）',true);
     setTimeout(()=>{
-      pushDlg('（'+n.name+'接過，神色微動）你有心。',false);
+      pushDlg('（'+esc(n.name)+'接過，神色微動）你有心。',false);
       bumpAff(key,4);toast('贈禮 · 好感 +4');
     },400);
   }else if(type==='spar'){
@@ -298,7 +408,7 @@ function act(key,type){
     p.xp+=win?5:3;savePlayer(p);
     pushDlg('（你抱拳：請指教！）',true);
     setTimeout(()=>{
-      if(win){pushDlg('（過了三招，'+n.name+'收勢）有幾下散手！俾面你。',false);bumpAff(key,3);toast('切磋勝 · 閱歷 +5 · 好感 +3')}
+      if(win){pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下散手！俾面你。',false);bumpAff(key,3);toast('切磋勝 · 閱歷 +5 · 好感 +3')}
       else{pushDlg('（三招之內被制住）後生人，基本功返去緊啲。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')}
       $('playerXp').textContent=p.xp;
     },400);
@@ -306,8 +416,13 @@ function act(key,type){
 }
 
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeModal();
-  if(e.key==='Enter'&&document.getElementById('regName')&&document.activeElement===$('regName'))regGo();
+  if(e.key==='Escape')closeModal(); // auth 畫面唔會被 Esc 關掉
+  if(e.key==='Enter'){
+    if($('auth').classList.contains('open')){
+      if(authMode==='reg'&&document.activeElement&&document.activeElement.id!=='regPass2'){$('regPass2').focus();return}
+      authMode==='reg'?regGo():loginGo();
+    }
+  }
 });
 load();
 </script>
