@@ -313,6 +313,7 @@ function playerCooldown(){ // 返回 {dest,remainingMs} 或 null
   if(remaining<=0)return null; // 已到達
   return{dest:p.travel.dest,remainingMs:remaining};
 }
+function getDistance(a,b){const d=world?.meta?.region_distances;return d?.[a]?.[b]??d?.[b]?.[a]??1}
 function startTravel(dest,travelDays){ // 觸發旅行
   const p=player();if(!p)return;
   const ms=travelDays*60000; // 1分鐘=1日
