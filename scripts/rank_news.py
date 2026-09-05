@@ -14,7 +14,7 @@ rank_news.py — 用 kimi-k3 判斷「當日最火熱 + 非娛樂花邊」新聞
     ./venv/bin/python3 scripts/rank_news.py            # 正常執行，改寫 news.json
     ./venv/bin/python3 scripts/rank_news.py --dry-run  # 只輸出決策，唔寫檔
 
-如果無候選或 GLM 呼叫失敗 → 唔改動，保持原排序（安全 fallback）。
+如果無候選或 kimi-k3 呼叫失敗 → 唔改動，保持原排序（安全 fallback）。
 """
 
 import json
@@ -41,7 +41,7 @@ API_TIMEOUT = 30
 TOP_N = 4
 
 # ---- 娛樂花邊關鍵詞（規則預篩，第一道閘）----
-# 命中 => 唔會俾 GLM 揀（亦唔會置頂）
+# 命中 => 唔會俾 kimi-k3 揀（亦唔會置頂）
 ENTERTAIN_KEYWORDS = [
     # category / keywords / 標題
     "entertainment",
@@ -59,12 +59,12 @@ ENTERTAIN_KEYWORDS = [
     # 娛樂圈雜項
     "娛樂圈", "娛圈", "明星穿搭", "素顏", "街拍", "粉絲", "應援", "代言",
     "時裝周", "米蘭時裝周",
-    # 生活瑣碎（非財經大事，GLM 通常唔揀，但預篩先剔走）
+    # 生活瑣碎（非財經大事，kimi-k3 通常唔揀，但預篩先剔走）
     "洗頭水", "護膚", "食譜", "湯水", "防靜電", "家居清潔",
 ]
 
 # 標題層另外過濾：人名 + 娛樂字眼連住（eg 蒙嘉慧…返日本 / 鄭伊健）
-# 呢啲單靠關鍵詞可能漏，靠 GLM 判斷兜底。
+# 呢啲單靠關鍵詞可能漏，靠 kimi-k3 判斷兜底。
 
 
 def load_news():
@@ -163,7 +163,7 @@ def rank(articles):
     if len(cands) < TOP_N:
         return articles, [], f"候選不足（{len(cands)}）"
 
-    # 打包標題俾 GLM
+    # 打包標題俾 kimi-k3
     lines = []
     for idx, (i, a) in enumerate(cands):
         title = (a.get("title", "") or "").strip().replace("\n", " ")
@@ -235,7 +235,7 @@ def rank(articles):
         if cid not in chosen_set:
             chosen_set.add(cid)
             ordered_ids.append(cid)
-    # 原列表分兩組：揀中（按 GLM 順序） vs 未揀中（保持原序）
+    # 原列表分兩組：揀中（按 kimi-k3 順序） vs 未揀中（保持原序）
     pinned_map = {cid: None for cid in ordered_ids}
     rest = []
     for a in articles:

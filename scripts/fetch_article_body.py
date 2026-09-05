@@ -283,7 +283,7 @@ def main():
                 # 兼容舊版：直接當摘要
                 rewritten = out.strip()
             if not rewritten:
-                raise ValueError("GLM 冇回摘要")
+                raise ValueError("kimi-k3 冇回摘要")
             if len(rewritten) > MAX_SUMMARY_CHARS + 50:
                 rewritten = rewritten[:MAX_SUMMARY_CHARS] + "…"
             entry = {
