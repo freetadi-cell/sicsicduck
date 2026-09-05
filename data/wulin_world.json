@@ -5,7 +5,60 @@
     "version": 1,
     "world_time": "第二日 · 暮春",
     "player_setting": "你係一名闖蕩江湖嘅無名少年，機緣巧合踏入神鵰世界",
-    "updated_at": "2026-09-05T15:41:30"
+    "updated_at": "2026-09-05T15:41:30",
+    "player_region": "襄陽城",
+    "region_distances": {
+      "襄陽城": {
+        "終南山": 2,
+        "嘉興": 3,
+        "百花谷": 1,
+        "蒙古軍營": 1,
+        "江南": 3
+      },
+      "終南山": {
+        "襄陽城": 2,
+        "嘉興": 3,
+        "百花谷": 2,
+        "蒙古軍營": 4,
+        "江南": 3
+      },
+      "嘉興": {
+        "襄陽城": 3,
+        "終南山": 3,
+        "百花谷": 3,
+        "蒙古軍營": 4,
+        "江南": 1
+      },
+      "百花谷": {
+        "襄陽城": 1,
+        "終南山": 2,
+        "嘉興": 3,
+        "蒙古軍營": 2,
+        "江南": 3
+      },
+      "蒙古軍營": {
+        "襄陽城": 1,
+        "終南山": 4,
+        "嘉興": 4,
+        "百花谷": 2,
+        "江南": 4
+      },
+      "江南": {
+        "襄陽城": 3,
+        "終南山": 3,
+        "嘉興": 1,
+        "百花谷": 3,
+        "蒙古軍營": 4
+      }
+    },
+    "regions": {
+      "襄陽城": "蒙古大軍圍城，戰雲密佈，義士雲集",
+      "終南山": "重山疊嶂，活死人墓深藏其間，全真派香火鼎盛",
+      "嘉興": "南湖煙雨，文人雅士薈萃，亦暗藏殺機",
+      "百花谷": "世外桃園，百花盛開，老頑童獨居之地",
+      "蒙古軍營": "鐵騎如林，戰鼓雷動，國師坐鎮中軍",
+      "江南": "水鄉澤國，江湖人四處漂泊，消息最靈通"
+    }
   },
   "npcs": [
     {
@@ -49,7 +102,8 @@
           "affinity_delta": -3
         }
       ],
-      "alignment": 600
+      "alignment": 600,
+      "region": "終南山"
     },
     {
       "key": "xiaolongnu",
@@ -85,7 +139,8 @@
           "affinity_delta": -2
         }
       ],
-      "alignment": 500
+      "alignment": 500,
+      "region": "終南山"
     },
     {
       "key": "guo_jing",
@@ -123,7 +178,8 @@
           "affinity_delta": -3
         }
       ],
-      "alignment": 800
+      "alignment": 800,
+      "region": "襄陽城"
     },
     {
       "key": "huang_rong",
@@ -161,7 +217,8 @@
           "affinity_delta": -4
         }
       ],
-      "alignment": 750
+      "alignment": 750,
+      "region": "襄陽城"
     },
     {
       "key": "guo_fu",
@@ -197,7 +254,8 @@
           "affinity_delta": -4
         }
       ],
-      "alignment": 600
+      "alignment": 600,
+      "region": "襄陽城"
     },
     {
       "key": "li_mochou",
@@ -235,7 +293,8 @@
           "affinity_delta": -5
         }
       ],
-      "alignment": 100
+      "alignment": 100,
+      "region": "江南"
     },
     {
       "key": "jinlun_fawang",
@@ -271,7 +330,8 @@
           "affinity_delta": -4
         }
       ],
-      "alignment": 50
+      "alignment": 50,
+      "region": "蒙古軍營"
     },
     {
       "key": "zhou_botong",
@@ -306,7 +366,8 @@
           "affinity_delta": -1
         }
       ],
-      "alignment": 700
+      "alignment": 700,
+      "region": "百花谷"
     },
     {
       "key": "lu_wushuang",
@@ -343,7 +404,8 @@
           "affinity_delta": -2
         }
       ],
-      "alignment": 600
+      "alignment": 600,
+      "region": "嘉興"
     },
     {
       "key": "cheng_ying",
@@ -380,7 +442,8 @@
           "affinity_delta": -2
         }
       ],
-      "alignment": 700
+      "alignment": 700,
+      "region": "嘉興"
     }
   ],
   "events": [

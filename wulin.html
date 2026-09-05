@@ -18,18 +18,31 @@ header{text-align:center;padding:36px 0 24px;border-bottom:1px solid var(--borde
 header::before{content:"武";position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:120px;color:rgba(212,175,55,.05);font-weight:900;pointer-events:none}
 h1{font-size:34px;letter-spacing:14px;color:var(--gold);text-indent:14px;font-weight:700}
 .sub{color:var(--muted);font-size:13px;margin-top:6px;letter-spacing:2px}
-.worldbar{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px 0 26px}
+.worldbar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px 0 26px}
 .chip{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:6px 14px;font-size:13px}
 .chip b{color:var(--gold);font-weight:600}
 .chip a{color:var(--muted);font-size:12px;text-decoration:none;margin-left:6px}
 .chip a:hover{color:var(--gold)}
-.chip .align-bar{display:inline-block;width:60px;height:5px;background:var(--bg2);border-radius:3px;margin-left:6px;vertical-align:middle;overflow:hidden}
+.chip .align-bar{display:inline-block;width:50px;height:5px;background:var(--bg2);border-radius:3px;margin-left:4px;vertical-align:middle;overflow:hidden}
 .chip .align-bar i{display:block;height:100%;border-radius:3px;transition:width .4s}
 .chip .align-bar i.evil{background:var(--red)}
 .chip .align-bar i.neutral{background:var(--muted)}
 .chip .align-bar i.good{background:var(--green)}
 h2{font-size:17px;color:var(--gold);margin:26px 0 12px;letter-spacing:3px;display:flex;align-items:center;gap:10px}
 h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+/* region panel */
+.region-panel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:18px}
+.region-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.region-current{font-size:15px;color:var(--text)}
+.region-current b{color:var(--gold)}
+.region-desc{font-size:12px;color:var(--muted);margin-top:4px}
+.region-travel{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.travel-btn{background:var(--bg2);border:1px solid var(--border);color:var(--text);padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit;transition:.2s}
+.travel-btn:hover:not(:disabled){border-color:var(--gold2);color:var(--gold)}
+.travel-btn:disabled{opacity:.4;cursor:not-allowed}
+.travel-btn .days{color:var(--gold2);font-weight:600}
+.cooling{background:rgba(192,57,43,.12);border:1px solid rgba(192,57,43,.3);color:var(--red);padding:8px 14px;border-radius:8px;font-size:13px;text-align:center;margin-top:10px}
+.cooling b{color:var(--text)}
 .events{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px}
 .events li{list-style:none;padding:6px 0;border-bottom:1px dashed var(--border);font-size:14px;color:var(--text)}
 .events li:last-child{border-bottom:none}
@@ -70,7 +83,6 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 @keyframes pop{from{opacity:0;transform:translateX(-6px)}to{opacity:1}}
 @keyframes popr{from{opacity:0;transform:translateX(6px)}to{opacity:1}}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
-@keyframes flash{0%{background:rgba(192,57,43,.3)}100%{background:rgba(192,57,43,.0)}}
 .dlg.new.me{animation:popr .4s}
 .mbox.shake{animation:shake .4s}
 .chatlabel{font-size:12px;color:var(--muted);letter-spacing:2px;margin:16px 0 6px}
@@ -122,30 +134,31 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 <div class="wrap">
   <header>
     <h1>武 林</h1>
-    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v4</div>
+    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v5</div>
   </header>
 
   <div class="worldbar">
     <div class="chip">🗓 <b id="worldTime">載入中…</b></div>
     <div class="chip">🧍 <b id="playerName">…</b></div>
     <div class="chip">⚡ 閱歷 <b id="playerXp">0</b></div>
-    <div class="chip" id="playerAlignChip" style="display:none">⚖️ <b id="playerAlignLabel">中立</b> <span class="align-bar"><i id="playerAlignBar"></i></span> <b id="playerAlignNum">500</b> <a href="#" onclick="logout();return false">登出</a></div>
-    <div class="chip">👥 <b id="npcCount">–</b> 位江湖人</div>
+    <div class="chip" id="playerAlignChip" style="display:none">⚖️ <b id="playerAlignLabel">中立</b> <span class="align-bar"><i id="playerAlignBar"></i></span> <b id="playerAlignNum">500</b></div>
+    <div class="chip">👥 <b id="npcCount">–</b> 位 · <b id="npcLocal">–</b> 同區</div>
+    <div class="chip"><a href="#" onclick="logout();return false">登出</a></div>
   </div>
+
+  <div class="region-panel" id="regionPanel" style="display:none"></div>
 
   <h2>江湖大事</h2>
   <div class="events" id="events">載入中…</div>
 
-  <h2>江湖人物</h2>
+  <h2>江湖人物<span id="regionTag" style="font-size:12px;color:var(--muted);font-weight:normal;margin-left:12px"></span></h2>
   <div class="grid" id="npcGrid"></div>
 
-  <footer>世界由 AI 推進 · 對話選項每日更換 · 帳號資料只儲存於本裝置瀏覽器</footer>
+  <footer>世界由 AI 推進 · 只有同區 NPC 先可以互動 · 本頁為未公開原型</footer>
 </div>
 
-<!-- NPC 對話框 -->
 <div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
 
-<!-- 登入 / 註冊 -->
 <div id="auth">
   <div class="acard">
     <h3>武 林</h3>
@@ -220,8 +233,8 @@ async function regGo(){
   const migrating=old&&old.name===name&&!a[name];
   if(a[name]){authErr('呢個名號已有人用，揀過另一個');return}
   const ph=await sha256(p1);
-  const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0};
-  if(!st.alignment)st.alignment=500; // 舊存檔補 alignment
+  const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
+  if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
   a[name]={ph,save:st};saveAccounts(a);localStorage.setItem('wulin_player',JSON.stringify(st));
   $('auth').classList.remove('open');
   toast(migrating?`存檔已加密保護 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);render();
@@ -230,7 +243,7 @@ async function loginGo(){
   const name=($('logName').value||'').trim().slice(0,10),pw=$('logPass').value,a=accounts();
   if(!a[name]){authErr('冇呢個名號——先註冊先入到江湖');return}
   if(await sha256(pw)!==a[name].ph){authErr('名號或密碼錯誤');return}
-  const save=a[name].save;if(!save.alignment)save.alignment=500; // 舊存檔補
+  const save=a[name].save;if(!save.alignment)save.alignment=500;if(!save.region)save.region='襄陽城';if(!save.cooldown)save.cooldown=0;
   localStorage.setItem('wulin_player',JSON.stringify(save));
   $('auth').classList.remove('open');authErr('');toast(`歡迎返嚟，${name}`);render();
 }
@@ -239,76 +252,130 @@ async function loginGo(){
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 
-/* ---- 善惡系統 ---- */
+/* ---- 善惡 ---- */
 function playerAlign(){const p=player();return p?(p.alignment||500):500}
-function npcAlign(key){const n=world.npcs.find(x=>x.key===key);return n?(n.alignment||500):500}
-function alignDiff(pk,nk){return Math.abs(pk-nk)}
 function alignLabel(a){
   if(a>=800)return '大義凜然';if(a>=650)return '行俠仗義';if(a>=550)return '正氣凜然';
   if(a>=450)return '亦正亦邪';if(a>=350)return '乖張無常';if(a>=200)return '心狠手辣';return '惡貫滿盈';
 }
-function alignLabelShort(a){
-  if(a>=650)return '正派';if(a>=450)return '中立';return '邪惡';
-}
+function alignLabelShort(a){if(a>=650)return '正派';if(a>=450)return '中立';return '邪惡'}
 function alignCss(a){return a>=600?'good':a>=400?'neutral':'evil'}
 function alignBarPct(a){return Math.round(a/10)}
-function setPlayerAlign(delta){
-  const p=player();if(!p)return;
-  p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+delta)));
-  savePlayer(p);renderPlayerBar();
-}
+function setPlayerAlign(delta){const p=player();if(!p)return;p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+delta)));savePlayer(p);renderPlayerBar()}
 function renderPlayerBar(){
   const a=playerAlign(),bar=$('playerAlignBar'),lbl=$('playerAlignLabel'),num=$('playerAlignNum');
   if(bar){bar.style.width=alignBarPct(a)+'%';bar.className=alignCss(a)}
-  if(lbl)lbl.textContent=alignLabel(a);
-  if(num)num.textContent=a;
+  if(lbl)lbl.textContent=alignLabel(a);if(num)num.textContent=a;
 }
+function alignDiff(pk,nk){return Math.abs(pk-nk)}
 
-function aff(key){
-  const p=player(),n=world.npcs.find(x=>x.key===key);
-  if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0;
-}
+/* ---- 好感 ---- */
+function aff(key){const p=player(),n=world.npcs.find(x=>x.key===key);if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0}
 function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
 
-/* ---- 載入同渲染 ---- */
+/* ---- 地區 ---- */
+function playerRegion(){const p=player();return p?(p.region||'襄陽城'):'襄陽城'}
+function playerCooldown(){const p=player();return p?(p.cooldown||0):0}
+function setPlayerCooldown(d){const p=player();if(!p)return;p.cooldown=Math.max(0,d);savePlayer(p)}
+function setPlayerRegion(r){const p=player();if(!p)return;p.region=r;savePlayer(p)}
+function getDistance(from,to){
+  const d=world.meta.region_distances||{};
+  if(d[from]&&d[from][to]!=null)return d[from][to];
+  if(d[to]&&d[to][from]!=null)return d[to][from];
+  return 3; // default
+}
+
+function renderRegionPanel(){
+  const reg=$('regionPanel');
+  const p=player();if(!p){reg.style.display='none';return}
+  const cur=playerRegion(),cd=playerCooldown();
+  const regions=world.meta.regions||{};
+  const allR=Object.keys(regions);
+
+  let html=`<div class="region-header">
+    <div class="region-current">📍 你喺 <b>${esc(cur)}</b>　<span style="font-size:12px;color:var(--muted)">${esc(regions[cur]||'')}</span></div>
+  </div>`;
+
+  if(cd>0){
+    html+=`<div class="cooling">🚶 你正喺趕路…… <b>${cd}</b> 日後先可以再行動</div>`;
+  }else{
+    html+=`<div class="region-travel">`;
+    for(const r of allR){
+      if(r===cur)continue;
+      const days=getDistance(cur,r);
+      const npcs=world.npcs.filter(n=>n.region===r);
+      html+=`<button class="travel-btn" onclick="doTravel('${esc(r)}',${days})">${esc(r)} <span class="days">${days}日</span>　<span style="font-size:11px;color:var(--muted)">${npcs.map(n=>n.name).join('、')||'（冇人）'}</span></button>`;
+    }
+    html+=`</div>`;
+  }
+  reg.innerHTML=html;
+  reg.style.display='block';
+}
+function doTravel(dest,days){
+  const cd=playerCooldown();
+  if(cd>0){toast('你仲喺趕路，唔可以再出發');return}
+  setPlayerRegion(dest);setPlayerCooldown(days);
+  toast(`出發前往 ${dest}（${days} 日後抵達）`);
+  render();
+}
+
+/* ---- 冷卻倒數（每日推進時自動扣） ---- */
+function tickCooldown(){
+  const p=player();if(!p)return;
+  if(p.cooldown>0){
+    p.cooldown--;
+    savePlayer(p);
+    if(p.cooldown===0)toast('你抵達目的地，可以行動喇！');
+  }
+}
+
+/* ================= 載入同渲染 ================= */
 async function load(){
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
   catch(e){$('worldTime').textContent='載入失敗';return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
+  tickCooldown();
   render();
 }
 function renderGuest(){
-  $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;
+  $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;$('npcLocal').textContent='—';
   $('playerName').textContent='—';$('playerXp').textContent='—';
   $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
     `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
-  $('npcGrid').innerHTML=world.npcs.map(n=>{
-    const a=n.alignment||500;
-    return `<div class="npc" style="opacity:.55">
-      <div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div>
-      <div class="loc">📍 ${esc(n.location||'')}</div>
-      <div class="alabel ${alignCss(a)}">${alignLabelShort(a)} · ${a}</div>
-    </div>`}).join('');
+  $('regionPanel').style.display='none';
+  renderNpcs(null);
 }
 function render(){
   $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;
   const p=player();if(!p){renderGuest();return}
   $('playerName').textContent=p.name;$('playerXp').textContent=p.xp;
-  $('playerAlignChip').style.display='';
-  renderPlayerBar();
+  $('playerAlignChip').style.display='';renderPlayerBar();
   $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
     `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
-  renderNpcs();
+  renderRegionPanel();
+  renderNpcs(p);
 }
-function renderNpcs(){
+function renderNpcs(p){
+  const cur=playerRegion(),cd=playerCooldown();
+  const local=world.npcs.filter(n=>n.region===cur);
+  $('npcLocal').textContent=local.length;
+  $('regionTag').textContent=cd>0?`(冷卻中 ${cd} 日)`:`(喺 ${esc(cur)})`;
+
+  if(cd>0){
+    $('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正喺趕路，${cd} 日後先可以同 NPC 互動</div>`;
+    return;
+  }
+  if(!p)return renderNpcGrid(world.npcs); // guest
+  renderNpcGrid(local);
+}
+function renderNpcGrid(npcs){
   const p=player(),pa=playerAlign();
-  $('npcGrid').innerHTML=world.npcs.map(n=>{
+  $('npcGrid').innerHTML=npcs.map(n=>{
     const a=aff(n.key),al=n.alignment||500,diff=alignDiff(pa,al);
     const ac=alignCss(al);
     return `<div class="npc" onclick="openNpc('${n.key}')">
       <div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div>
-      <div class="loc">📍 ${esc(n.location||'')}</div>
       <div class="alabel ${ac}">${alignLabelShort(al)} · ${al}</div>
       <div class="mood">心境：${esc(n.mood||'')}</div>
       <div class="att">${esc(n.attitude||'')}</div>
@@ -321,30 +388,26 @@ function renderNpcs(){
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   const p=player();if(!p){authTab('login');$('auth').classList.add('open');return}
+  const cd=playerCooldown();if(cd>0){toast('你仲喺趕路，唔可以互動');return}
+  const cur=playerRegion();if(n.region!==cur){toast('你同佢唔喺同一個地區');return}
   const pa=playerAlign(),na=n.alignment||500,diff=alignDiff(pa,na);
-  const locked=diff>300 && diff<=500; // 301-500: 道不同——冇對話選項
-  const hostile=diff>500; // 501+: 極端——攻擊玩家
+  const locked=diff>300&&diff<=500;
+  const hostile=diff>500;
   const rel=Object.entries(n.relations||{}).slice(0,4).map(([k,v])=>{
     const o=world.npcs.find(x=>x.key===k);return o?`${esc(o.name)} ${v}`:'';
   }).filter(Boolean).join(' · ');
   const a=aff(key);
-
-  // 好感條
   let html=`
     <button class="mclose" onclick="closeModal()">✕</button>
     <div class="mname">${esc(n.name)}</div>
     <div class="mtitle">${esc(n.title||'')}</div>
-    <div class="mmeta">📍 ${esc(n.location||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div>
+    <div class="mmeta">📍 ${esc(n.location||'')} · ${esc(n.region||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div>
     <div class="affbig"><div class="affbar"><i id="affBar" style="width:${a}%"></i></div><span style="color:var(--gold);font-size:13px">好感 <span id="affNum">${a}</span><span id="affDelta" class="affdelta"></span></span></div>
     <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg"><span class="who">${esc(n.name)}</span>${esc(d)}</div>`).join('')}</div>`;
-
-  // 善惡差異標籤
   if(diff<=100) html+=`<div class="difflabel friendly">道合 · 善惡差 ${diff}</div>`;
   else if(diff<=300) html+=`<div class="difflabel neutral">各行其道 · 善惡差 ${diff}</div>`;
   else if(diff<=500) html+=`<div class="difflabel tension">道不同不相為謀 · 善惡差 ${diff}</div>`;
   else html+=`<div class="difflabel locked">⛔ 善惡懸殊 · 善惡差 ${diff} — 無話可說</div>`;
-
-  // 對話選項——善惡差>300 時鎖住
   if(hostile){
     html+=`<div class="chatlabel" style="color:var(--red)">— 此人視你為敵，無法交流 —</div>`;
   }else if(locked){
@@ -363,10 +426,7 @@ function openNpc(key){
     html+=`<div class="chatlabel">— 你開口講（每日一款）—</div>
             <div id="optArea">${opts||'<div class="mmeta">（佢暫時冇咩想聽……聽日再嚟）</div>'}</div>`;
   }
-
   if(rel)html+=`<div class="mmeta" style="margin-top:12px">交情：${rel}</div>`;
-
-  // 行動按鈕——善惡差>500 全鎖；301-500 留贈禮/切磋
   html+=`<div class="acts">`;
   if(!hostile){
     html+=`<button class="btn" id="btnGift" ${p.gifts[key]===worldDay?'disabled':''} onclick="act('${key}','gift')">🎁 贈禮</button>`;
@@ -375,12 +435,9 @@ function openNpc(key){
     html+=`<button class="btn" id="btnFlee" onclick="act('${key}','flee')">🏃 逃走</button>`;
   }
   html+=`</div>`;
-  html+=`<div class="mfoot">善惡差 >300：無法對話 · >500：觸發攻擊 · 玩家善惡值 ${pa}（${alignLabel(pa)}）</div>`;
-
+  html+=`<div class="mfoot">善惡差 >300 無法對話 · >500 觸發攻擊 · 玩家善惡值 ${pa}（${alignLabel(pa)}）</div>`;
   $('mbox').innerHTML=html;
   $('modal').classList.add('open');
-
-  // 如果係攻擊狀態——自動觸發
   if(hostile)setTimeout(()=>triggerAttack(key),600);
 }
 function closeModal(){$('modal').classList.remove('open')}
@@ -396,15 +453,12 @@ function pushDlg(text,me,cls,whoName){
   $('dlgArea').appendChild(d);
   $('mbox').scrollTop=$('mbox').scrollHeight;
 }
-
 function bumpAff(key,delta){
   if(!delta)return;const v=aff(key)+delta;setAff(key,v);
   const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');
   if(bar)bar.style.width=v+'%';if(num)num.textContent=v;
   if(dl){dl.textContent=(delta>0?'+':'')+delta;dl.className='affdelta '+(delta>0?'up':'down');setTimeout(()=>{dl.textContent=''},2500)}
-  const p=player();$('playerXp').textContent=p.xp;
 }
-
 function triggerAttack(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   $('mbox').classList.add('shake');
@@ -414,29 +468,23 @@ function triggerAttack(key){
     const dmg=Math.max(1,Math.round(Math.random()*3+1));
     const xpLost=Math.min(p.xp,dmg*2);
     p.xp=Math.max(0,p.xp-xpLost);
-    // 攻擊同時微量影響善惡（被邪惡攻擊……玩家嘅善惡唔應該因此變，只有自己講嘢先變）
     savePlayer(p);$('playerXp').textContent=p.xp;
     pushDlg(`你被${esc(n.name)}一掌擊退，跌坐地上，損失閱歷 ${xpLost}`,true);
     toast(`⚔️ 遭到${esc(n.name)}攻擊！閱歷 -${xpLost}`);
-    if(xpLost>=5)toast('下次小心揀傾偈對象！');
   },800);
 }
-
-/* ---- 玩家開口講 ---- */
 function say(key,i){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   const o=(n.chat_options||[])[i];if(!o)return;
   const p=player();
   if(p.opts[key+':'+i]===worldDay)return;
-  p.opts[key+':'+i]=worldDay;
-  savePlayer(p);
+  p.opts[key+':'+i]=worldDay;savePlayer(p);
   const btn=$('opt_'+key+'_'+i);
   if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 講過</span>'}
   pushDlg(o.say,true);
   setTimeout(()=>{
     pushDlg(o.reply,false);
     bumpAff(key,o.affinity_delta||0);
-    // 善惡值效果
     const ad=o.alignment_delta||0;
     if(ad)setPlayerAlign(ad);
     let msg='';
@@ -448,8 +496,6 @@ function say(key,i){
     if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}
   },400);
 }
-
-/* ---- 贈禮 / 切磋 / 逃走 ---- */
 function act(key,type){
   const n=world.npcs.find(x=>x.key===key);
   const p=player();
@@ -463,28 +509,24 @@ function act(key,type){
   }
   if(type==='gift'){
     if(p.gifts[key]===worldDay)return;
-    p.gifts[key]=worldDay;
-    const btn=$('btnGift');if(btn)btn.disabled=true;
+    p.gifts[key]=worldDay;const btn=$('btnGift');if(btn)btn.disabled=true;
     pushDlg('（你奉上一份禮物）',true);
     setTimeout(()=>{
       pushDlg('（'+esc(n.name)+'接過，神色微動）你有心。',false);
       bumpAff(key,4);toast('贈禮 · 好感 +4');
-      // 送禮微量加善惡（對方正派→玩家加正，對方邪惡→玩家加邪）
-      const na=n.alignment||500,pa=playerAlign();
-      if(na>pa)setPlayerAlign(1);else if(na<pa)setPlayerAlign(-1);
+      const na=n.alignment||500;
+      if(na>playerAlign())setPlayerAlign(1);else if(na<playerAlign())setPlayerAlign(-1);
     },400);
   }else if(type==='spar'){
     if(p.spoke[key+'#spar']===worldDay)return;
-    p.spoke[key+'#spar']=worldDay;
-    const btn=$('btnSpar');if(btn)btn.disabled=true;
-    const a=aff(key),na=n.alignment||500,diff=alignDiff(playerAlign(),na);
+    p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
+    const a=aff(key),na=n.alignment||500;
     const win=Math.random()<(0.35+a/200);
     p.xp+=win?5:3;savePlayer(p);
     pushDlg('（你抱拳：請指教！）',true);
     setTimeout(()=>{
       if(win){pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下散手！俾面你。',false);bumpAff(key,3);toast('切磋勝 · 閱歷 +5 · 好感 +3')}
       else{pushDlg('（三招之內被制住）後生人，基本功返去緊啲。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')}
-      // 切磋善惡效果：正派贏+善，邪惡贏+邪
       if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);
       $('playerXp').textContent=p.xp;
     },400);
