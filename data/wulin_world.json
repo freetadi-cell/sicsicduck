@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "project": "wulin",
+    "based_on": "神鵰俠侶",
+    "version": 1,
+    "world_time": "第一日 · 暮春",
+    "player_setting": "你係一名闖蕩江湖嘅無名少年，機緣巧合踏入神鵰世界",
+    "updated_at": "2026-09-05T12:00:00+08:00"
+  },
+  "npcs": [
+    {
+      "key": "yang_guo",
+      "name": "楊過",
+      "title": "神鵰大俠",
+      "location": "終南山 · 活死人墓外",
+      "mood": "瀟灑不羈，心中掛念小龍女",
+      "attitude": "對呢個陌生少年充滿好奇",
+      "affinity": 30,
+      "dialogue": [
+        "閣下邊位？喺終南山下徘徊，莫非想上山學藝？",
+        "世人常話我楊過叛逆無禮，哈哈，你點睇？",
+        "姑姑喺墓入面……我等佢出返嚟，幾多年都等。"
+      ],
+      "relations": {
+        "xiaolongnu": 98,
+        "guo_jing": 60,
+        "huang_rong": 45,
+        "guo_fu": 30,
+        "zhou_botong": 70,
+        "li_mochou": 15,
+        "jinlun_fawang": 25,
+        "cheng_ying": 65,
+        "lu_wushuang": 68
+      }
+    },
+    {
+      "key": "xiaolongnu",
+      "name": "小龍女",
+      "title": "古墓派傳人",
+      "location": "終南山 · 活死人墓",
+      "mood": "清冷恬淡，古井不波",
+      "attitude": "與世無爭，對外人淡漠",
+      "affinity": 15,
+      "dialogue": [
+        "……",
+        "外面嘅事，與我無關。",
+        "過兒话你可以入嚟，你先好入嚟。"
+      ],
+      "relations": {
+        "yang_guo": 98,
+        "li_mochou": 20
+      }
+    },
+    {
+      "key": "guo_jing",
+      "name": "郭靖",
+      "title": "北俠",
+      "location": "襄陽城 · 城頭",
+      "mood": "憂國憂民，堅毅沉穩",
+      "attitude": "對後輩慈和，但觀人甚準",
+      "affinity": 35,
+      "dialogue": [
+        "少俠遠道而來，襄陽雖然兵凶戰危，一碗熱飯仲有。",
+        "守城唔靠武功，靠人心。",
+        "過兒佢……我好擔心佢行錯路。"
+      ],
+      "relations": {
+        "huang_rong": 95,
+        "yang_guo": 60,
+        "guo_fu": 80,
+        "jinlun_fawang": 10
+      }
+    },
+    {
+      "key": "huang_rong",
+      "name": "黃蓉",
+      "title": "丐幫前幫主",
+      "location": "襄陽城 · 帥府",
+      "mood": "機敏慧黠，心事重重",
+      "attitude": "笑容背後觀察入微",
+      "affinity": 25,
+      "dialogue": [
+        "小兄弟面生得很，從邊度嚟㗎？",
+        "靖哥哥淨係識得打仗，城中糧草仲係我諗辦法。",
+        "過兒呢個仔聰明，但太聰明嘅人，好易行歪。"
+      ],
+      "relations": {
+        "guo_jing": 95,
+        "guo_fu": 85,
+        "yang_guo": 45
+      }
+    },
+    {
+      "key": "guo_fu",
+      "name": "郭芙",
+      "title": "郭家大小姐",
+      "location": "襄陽城",
+      "mood": "驕縱躁急",
+      "attitude": "眼高於頂",
+      "affinity": 12,
+      "dialogue": [
+        "你邊個？識唔識規矩㗎？",
+        "大武小武都讓我三分，你算咩？"
+      ],
+      "relations": {
+        "yang_guo": 30,
+        "huang_rong": 85,
+        "guo_jing": 80
+      }
+    },
+    {
+      "key": "li_mochou",
+      "name": "李莫愁",
+      "title": "赤練仙子",
+      "location": "江湖漂泊",
+      "mood": "怨毒痴執",
+      "attitude": "見人就殺心起，唯獨聽到《問世間情為何物》會怔住",
+      "affinity": 5,
+      "dialogue": [
+        "問世間，情為何物……你識條鐵咩！",
+        "擋我者死。"
+      ],
+      "relations": {
+        "xiaolongnu": 20,
+        "yang_guo": 15
+      }
+    },
+    {
+      "key": "jinlun_fawang",
+      "name": "金輪法王",
+      "title": "蒙古國師",
+      "location": "蒙古軍營",
+      "mood": "野心勃勃",
+      "attitude": "惜才，但更想收服",
+      "affinity": 8,
+      "dialogue": [
+        "中原武功，不過如此。",
+        "小兄弟，可願隨我學龍象般若功？"
+      ],
+      "relations": {
+        "guo_jing": 10,
+        "yang_guo": 25
+      }
+    },
+    {
+      "key": "zhou_botong",
+      "name": "周伯通",
+      "title": "老頑童",
+      "location": "百花谷",
+      "mood": "玩興大發",
+      "attitude": "見到後生就想到嚟玩",
+      "affinity": 55,
+      "dialogue": [
+        "哈哈！陪我玩嚇啦，玩唔玩養蜜蜂？",
+        "我師兄王重陽死咗好耐，但佢啲道理我仲記得晒。"
+      ],
+      "relations": {
+        "yang_guo": 70,
+        "guo_jing": 75
+      }
+    },
+    {
+      "key": "lu_wushuang",
+      "name": "陸無雙",
+      "title": "跛腳姑娘",
+      "location": "江南",
+      "mood": "倔強帶俏",
+      "attitude": "嘴硬心軟",
+      "affinity": 40,
+      "dialogue": [
+        "傻蛋！又係你？",
+        "我條腿點都醫唔返，唔使可憐我。"
+      ],
+      "relations": {
+        "yang_guo": 68,
+        "cheng_ying": 80
+      }
+    },
+    {
+      "key": "cheng_ying",
+      "name": "程英",
+      "title": "桃花島傳人",
+      "location": "嘉興 · 南湖",
+      "mood": "溫婉內斂",
+      "attitude": "溫柔體貼，心事藏於簫聲",
+      "affinity": 45,
+      "dialogue": [
+        "既見君子，雲胡不喜……",
+        "飲杯茶先啦，慢慢講。"
+      ],
+      "relations": {
+        "yang_guo": 65,
+        "lu_wushuang": 80
+      }
+    }
+  ],
+  "events": [
+    {"day": 1, "text": "蒙古大軍屯兵襄陽城外，戰雲密佈", "npcs": ["guo_jing", "huang_rong", "jinlun_fawang"]},
+    {"day": 1, "text": "楊過夜宿終南山破廟，遙望活死人墓燈火", "npcs": ["yang_guo", "xiaolongnu"]},
+    {"day": 1, "text": "李莫愁喺江南出現，施展赤練神掌，江湖人心惶惶", "npcs": ["li_mochou"]}
+  ]
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>武林 · Wulin Project（Prototype）</title>
+<style>
+:root{
+  --bg:#0d1117;--bg2:#141b24;--card:#1a222d;--card2:#212b38;
+  --text:#e6e1d5;--muted:#9aa5b1;--gold:#d4af37;--gold2:#b8962e;
+  --red:#c0392b;--green:#27ae60;--border:#2a3441;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
+.wrap{max-width:960px;margin:0 auto;padding:20px 16px 60px}
+header{text-align:center;padding:36px 0 24px;border-bottom:1px solid var(--border);margin-bottom:20px;position:relative}
+header::before{content:"武";position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:120px;color:rgba(212,175,55,.05);font-weight:900;pointer-events:none}
+h1{font-size:34px;letter-spacing:14px;color:var(--gold);text-indent:14px;font-weight:700}
+.sub{color:var(--muted);font-size:13px;margin-top:6px;letter-spacing:2px}
+.worldbar{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:18px 0 26px}
+.chip{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:14px}
+.chip b{color:var(--gold);font-weight:600}
+h2{font-size:17px;color:var(--gold);margin:26px 0 12px;letter-spacing:3px;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+.events{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px}
+.events li{list-style:none;padding:6px 0;border-bottom:1px dashed var(--border);font-size:14px;color:var(--text)}
+.events li:last-child{border-bottom:none}
+.events .tag{color:var(--gold2);font-size:12px;margin-right:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.npc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;cursor:pointer;transition:.2s;position:relative;overflow:hidden}
+.npc:hover{border-color:var(--gold2);background:var(--card2);transform:translateY(-2px)}
+.npc .nm{font-size:18px;font-weight:700;color:var(--text)}
+.npc .tt{font-size:12px;color:var(--gold);margin:2px 0 8px}
+.npc .loc{font-size:12px;color:var(--muted)}
+.npc .mood{font-size:13px;margin-top:8px;color:var(--text)}
+.npc .att{font-size:12px;color:var(--muted);margin-top:4px}
+.affbar{height:5px;background:var(--bg2);border-radius:3px;margin-top:10px;overflow:hidden}
+.affbar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold2),var(--gold));border-radius:3px;transition:width .4s}
+.affnum{font-size:11px;color:var(--muted);margin-top:4px;text-align:right}
+/* modal */
+.modal{display:none;position:fixed;inset:0;z-index:100}
+.modal.open{display:block}
+.mback{position:absolute;inset:0;background:rgba(0,0,0,.7)}
+.mbox{position:relative;max-width:560px;margin:6vh auto;background:var(--bg2);border:1px solid var(--gold2);border-radius:12px;padding:24px;max-height:84vh;overflow-y:auto}
+.mclose{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer}
+.mclose:hover{color:var(--gold)}
+.mname{font-size:22px;font-weight:700}
+.mtitle{color:var(--gold);font-size:13px;margin-bottom:10px}
+.mmeta{font-size:13px;color:var(--muted);margin-bottom:14px}
+.mmeta b{color:var(--text);font-weight:500}
+.dlg{background:var(--card);border-left:3px solid var(--gold2);border-radius:0 8px 8px 0;padding:10px 14px;margin:8px 0;font-size:14px}
+.dlg.new{border-left-color:var(--gold);animation:pop .4s}
+@keyframes pop{from{opacity:0;transform:translateX(-6px)}to{opacity:1}}
+.acts{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.btn{flex:1;min-width:100px;background:var(--card);border:1px solid var(--gold2);color:var(--gold);padding:10px;border-radius:8px;cursor:pointer;font-size:14px;letter-spacing:2px;transition:.2s}
+.btn:hover{background:var(--gold2);color:#111}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.affbig{display:flex;align-items:center;gap:10px;margin:12px 0}
+.affbig .affbar{flex:1;margin:0;height:7px}
+.mfoot{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--gold2);color:#111;padding:10px 22px;border-radius:24px;font-size:14px;opacity:0;transition:.3s;z-index:200;pointer-events:none}
+.toast.show{opacity:1}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;letter-spacing:1px}
+@media(max-width:600px){h1{font-size:26px;letter-spacing:8px}.mbox{margin:4vh 12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>武 林</h1>
+    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v1</div>
+  </header>
+
+  <div class="worldbar">
+    <div class="chip">🗓 <b id="worldTime">載入中…</b></div>
+    <div class="chip">🧍 <b id="playerName">無名少年</b> · 閱歷 <b id="playerXp">0</b></div>
+    <div class="chip">👥 <b id="npcCount">–</b> 位江湖人</div>
+  </div>
+
+  <h2>江湖大事</h2>
+  <div class="events" id="events">載入中…</div>
+
+  <h2>江湖人物</h2>
+  <div class="grid" id="npcGrid"></div>
+
+  <footer>世界由 AI 推進 · NPC 狀態隨時間演化 · 本頁為未公開原型</footer>
+</div>
+
+<div class="modal" id="modal">
+  <div class="mback" onclick="closeModal()"></div>
+  <div class="mbox" id="mbox"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+let world=null;
+const $=id=>document.getElementById(id);
+
+function player(){ // localStorage 玩家狀態
+  let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){}
+  if(!p)p={xp:0,gifts:{},spoke:{}};
+  return p;
+}
+function savePlayer(p){localStorage.setItem('wulin_player',JSON.stringify(p))}
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
+
+async function load(){
+  try{
+    const r=await fetch('data/wulin_world.json?t='+Date.now());
+    world=await r.json();
+  }catch(e){$('worldTime').textContent='載入失敗';return}
+  render();
+}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+function render(){
+  $('worldTime').textContent=world.meta.world_time||'—';
+  $('npcCount').textContent=world.npcs.length;
+  const p=player();
+  $('playerXp').textContent=p.xp;
+  $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
+    `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
+  $('npcGrid').innerHTML=world.npcs.map(n=>`
+    <div class="npc" onclick="openNpc('${n.key}')">
+      <div class="nm">${esc(n.name)}</div>
+      <div class="tt">${esc(n.title||'')}</div>
+      <div class="loc">📍 ${esc(n.location||'')}</div>
+      <div class="mood">心境：${esc(n.mood||'')}</div>
+      <div class="att">${esc(n.attitude||'')}</div>
+      <div class="affbar"><i style="width:${n.affinity||0}%"></i></div>
+      <div class="affnum">好感 ${n.affinity||0}</div>
+    </div>`).join('');
+}
+
+function openNpc(key){
+  const n=world.npcs.find(x=>x.key===key);if(!n)return;
+  const p=player();
+  const rel=Object.entries(n.relations||{}).slice(0,4).map(([k,v])=>{
+    const o=world.npcs.find(x=>x.key===k);
+    return o?`${esc(o.name)} ${v}`:'';
+  }).filter(Boolean).join(' · ');
+  $('mbox').innerHTML=`
+    <button class="mclose" onclick="closeModal()">✕</button>
+    <div class="mname">${esc(n.name)}</div>
+    <div class="mtitle">${esc(n.title||'')}</div>
+    <div class="mmeta">📍 ${esc(n.location||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div>
+    <div class="affbig"><div class="affbar"><i style="width:${n.affinity||0}%"></i></div><span style="color:var(--gold);font-size:13px">好感 ${n.affinity||0}</span></div>
+    <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg">${esc(d)}</div>`).join('')}</div>
+    ${rel?`<div class="mmeta" style="margin-top:12px">交情：${rel}</div>`:''}
+    <div class="acts">
+      <button class="btn" onclick="act('${key}','talk')">💬 交談</button>
+      <button class="btn" onclick="act('${key}','gift')">🎁 贈禮</button>
+      <button class="btn" onclick="act('${key}','spar')">⚔️ 切磋</button>
+    </div>
+    <div class="mfoot">你嘅互動會影響下次 AI 推進時 NPC 嘅態度</div>`;
+  $('modal').classList.add('open');
+}
+function closeModal(){$('modal').classList.remove('open')}
+
+function pushDlg(text){
+  const d=document.createElement('div');
+  d.className='dlg new';d.textContent=text;
+  $('dlgArea').appendChild(d);
+}
+function bumpAff(key,delta){
+  const n=world.npcs.find(x=>x.key===key);
+  n.affinity=Math.max(0,Math.min(100,(n.affinity||0)+delta));
+  const bar=document.querySelector('#mbox .affbar i');
+  if(bar)bar.style.width=n.affinity+'%';
+  const num=document.querySelector('#mbox .affbig span');
+  if(num)num.textContent='好感 '+n.affinity;
+}
+
+function act(key,type){
+  const n=world.npcs.find(x=>x.key===key);
+  const p=player();
+  const today=new Date().toDateString();
+  if(type==='talk'){
+    const lines=n.dialogue||['……'];
+    pushDlg(lines[Math.floor(Math.random()*lines.length)]);
+    if(p.spoke[key]!==today){p.spoke[key]=today;p.xp+=2;bumpAff(key,1);toast('閱歷 +2 · 好感 +1')}
+    else toast('今日已傾過，NPC 記得你 😏');
+  }else if(type==='gift'){
+    const g=p.gifts[key]||0;
+    if(g>=3){pushDlg('（'+n.name+'擺手）心意領咗，唔使再破費。');toast('今日贈禮已夠')}
+    else{
+      p.gifts[key]=g+1;p.xp+=1;
+      const gain=[5,3,2][g];
+      bumpAff(key,gain);
+      pushDlg(g===0?'（'+n.name+'接過禮物，眼神微動）你有心。':'（'+n.name+'微微點頭）又係你？');
+      toast('好感 +'+gain);
+    }
+  }else if(type==='spar'){
+    const win=Math.random()<(0.35+(n.affinity||0)/200);
+    p.xp+=win?5:3;
+    if(win){bumpAff(key,3);pushDlg('（過了三招，'+n.name+'收勢）有幾下散手！俾面你。');toast('切磋勝 · 閱歷 +5 · 好感 +3')}
+    else{bumpAff(key,-1);pushDlg('（三招之內被制住）後生人，基本功返去緊啲。');toast('切磋敗 · 閱歷 +3 · 好感 -1')}
+  }
+  savePlayer(p);
+  $('playerXp').textContent=p.xp;
+}
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+load();
+</script>
+</body>
+</html>
