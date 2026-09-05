@@ -273,21 +273,39 @@ function alignDiff(pk,nk){return Math.abs(pk-nk)}
 function aff(key){const p=player(),n=world.npcs.find(x=>x.key===key);if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0}
 function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
 
-/* ---- 地區 ---- */
+/* ---- 地區（真實時間：1分鐘 = 1遊戲日） ---- */
+// cooldown 喺 player 保存為 {dest:'襄陽城',until:timestamp} 而非日數
+// travelDays 乘 60000ms = 真實冷却毫秒
 function playerRegion(){const p=player();return p?(p.region||'襄陽城'):'襄陽城'}
-function playerCooldown(){const p=player();return p?(p.cooldown||0):0}
-function setPlayerCooldown(d){const p=player();if(!p)return;p.cooldown=Math.max(0,d);savePlayer(p)}
-function setPlayerRegion(r){const p=player();if(!p)return;p.region=r;savePlayer(p)}
-function getDistance(from,to){
-  const d=world.meta.region_distances||{};
-  if(d[from]&&d[from][to]!=null)return d[from][to];
-  if(d[to]&&d[to][from]!=null)return d[to][from];
-  return 3; // default
+function playerCooldown(){ // 返回 {dest,remainingMs} 或 null
+  const p=player();if(!p||!p.travel)return null;
+  const remaining=p.travel.until-Date.now();
+  if(remaining<=0)return null; // 已到達
+  return{dest:p.travel.dest,remainingMs:remaining};
+}
+function startTravel(dest,travelDays){ // 觸發旅行
+  const p=player();if(!p)return;
+  const ms=travelDays*60000; // 1分鐘=1日
+  p.travel={dest,until:Date.now()+ms};
+  savePlayer(p);
+  render();
+  toast(`出發前往 ${dest}（${travelDays} 分鐘 / ${travelDays} 遊戲日後抵達）`);
+}
+function finishTravelIfDone(){ // 自動到達
+  const p=player();if(!p||!p.travel)return;
+  if(Date.now()>=p.travel.until){
+    const dest=p.travel.dest;
+    p.region=dest;p.travel=null;
+    savePlayer(p);
+    toast(`🏃 你抵達 ${dest}，可以行動喇！`);
+    render();
+  }
 }
 
 function renderRegionPanel(){
   const reg=$('regionPanel');
   const p=player();if(!p){reg.style.display='none';return}
+  finishTravelIfDone(); // 檢查到達
   const cur=playerRegion(),cd=playerCooldown();
   const regions=world.meta.regions||{};
   const allR=Object.keys(regions);
@@ -296,15 +314,20 @@ function renderRegionPanel(){
     <div class="region-current">📍 你喺 <b>${esc(cur)}</b>　<span style="font-size:12px;color:var(--muted)">${esc(regions[cur]||'')}</span></div>
   </div>`;
 
-  if(cd>0){
-    html+=`<div class="cooling">🚶 你正喺趕路…… <b>${cd}</b> 日後先可以再行動</div>`;
+  if(cd){
+    const totalMs=(cur,cd.dest); // 距離已喺 startTravel 記錄
+    const p2=player();const startMs=p2.travel.until-(p2.travel.until-Date.now()); // 不需要
+    const fmtMs=cd.remainingMs;
+    const mins=Math.floor(fmtMs/60000);
+    const secs=Math.floor((fmtMs%60000)/1000);
+    html+=`<div class="cooling">🚶 你正喺趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${mins}分${String(secs).padStart(2,'0')}秒</b></div>`;
   }else{
     html+=`<div class="region-travel">`;
     for(const r of allR){
       if(r===cur)continue;
       const days=getDistance(cur,r);
       const npcs=world.npcs.filter(n=>n.region===r);
-      html+=`<button class="travel-btn" onclick="doTravel('${esc(r)}',${days})">${esc(r)} <span class="days">${days}日</span>　<span style="font-size:11px;color:var(--muted)">${npcs.map(n=>n.name).join('、')||'（冇人）'}</span></button>`;
+      html+=`<button class="travel-btn" onclick="doTravel('${esc(r)}',${days})">${esc(r)} <span class="days">${days}分鐘</span>　<span style="font-size:11px;color:var(--muted)">${npcs.map(n=>n.name).join('、')||'（冇人）'}</span></button>`;
     }
     html+=`</div>`;
   }
@@ -313,20 +336,19 @@ function renderRegionPanel(){
 }
 function doTravel(dest,days){
   const cd=playerCooldown();
-  if(cd>0){toast('你仲喺趕路，唔可以再出發');return}
-  setPlayerRegion(dest);setPlayerCooldown(days);
-  toast(`出發前往 ${dest}（${days} 日後抵達）`);
-  render();
+  if(cd){toast('你仲喺趕路，唔可以再出發');return}
+  startTravel(dest,days);
 }
+function tickCooldown(){} // 已改為真實時間，無需 tickCooldown
 
-/* ---- 冷卻倒數（每日推進時自動扣） ---- */
-function tickCooldown(){
-  const p=player();if(!p)return;
-  if(p.cooldown>0){
-    p.cooldown--;
-    savePlayer(p);
-    if(p.cooldown===0)toast('你抵達目的地，可以行動喇！');
-  }
+/* ---- 冷卻倒數（真實時間改為 setInterval） ---- */
+let travelTimer=null;
+function startTravelTimer(){
+  if(travelTimer)clearInterval(travelTimer);
+  travelTimer=setInterval(()=>{
+    finishTravelIfDone();
+    renderRegionPanel(); // 更新倒數顯示
+  },1000);
 }
 
 /* ================= 載入同渲染 ================= */
@@ -335,7 +357,7 @@ async function load(){
   catch(e){$('worldTime').textContent='載入失敗';return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
-  tickCooldown();
+  tickCooldown();startTravelTimer();
   render();
 }
 function renderGuest(){
@@ -363,7 +385,7 @@ function renderNpcs(p){
   $('regionTag').textContent=cd>0?`(冷卻中 ${cd} 日)`:`(喺 ${esc(cur)})`;
 
   if(cd>0){
-    $('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正喺趕路，${cd} 日後先可以同 NPC 互動</div>`;
+    $('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正喺趕路，到達後先可以同 NPC 互動</div>`;
     return;
   }
   if(!p)return renderNpcGrid(world.npcs); // guest
@@ -388,7 +410,7 @@ function renderNpcGrid(npcs){
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   const p=player();if(!p){authTab('login');$('auth').classList.add('open');return}
-  const cd=playerCooldown();if(cd>0){toast('你仲喺趕路，唔可以互動');return}
+  const cd=playerCooldown();if(cd){toast('你仲喺趕路，唔可以互動');return}
   const cur=playerRegion();if(n.region!==cur){toast('你同佢唔喺同一個地區');return}
   const pa=playerAlign(),na=n.alignment||500,diff=alignDiff(pa,na);
   const locked=diff>300&&diff<=500;
