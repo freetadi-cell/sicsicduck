@@ -219,7 +219,7 @@ function accounts(){
 }
 function saveAccounts(a){
   localStorage.setItem('wulin_accounts',JSON.stringify(a));
-  cloudSave(a);
+  return cloudSave(a).then(ok=>{console.log('[CLOUD] save result:',ok?'✅':'❌');return ok}).catch(e=>{console.error('[CLOUD] save error',e);return false});
 }
 async function sha256(s){
   if(window.crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('wulin·'+s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
@@ -300,7 +300,10 @@ async function regGo(){
   const ph=await sha256(p1);
   const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
   if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
-  a[name]={ph,save:st};saveAccounts(a);localStorage.setItem('wulin_player',JSON.stringify(st));
+  a[name]={ph,save:st};
+  const saved=await saveAccounts(a);
+  if(!saved){authErr('雲端儲存失敗，請稍後再試');return}
+  localStorage.setItem('wulin_player',JSON.stringify(st));
   $('auth').classList.remove('open');
   toast(migrating?`存檔已同步到雲端 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);render();
 }
@@ -439,6 +442,9 @@ async function load(){
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
   catch(e){$('worldTime').textContent='載入失敗';return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
+  // 啟動時先載入雲端帳號，否則重新開頁面後只會睇到本機 localStorage
+  const cloudReady=await cloudLoad();
+  console.log('[CLOUD] initial load:',cloudReady?'✅':'⚠️ fallback to local data');
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
   _wulinReady=true;
   tickCooldown();startTravelTimer();
