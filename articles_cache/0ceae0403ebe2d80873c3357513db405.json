@@ -1,0 +1,10 @@
+{
+  "id": "0ceae0403ebe2d80873c3357513db405",
+  "title": "本地 AI 可結合家中電腦一齊運算 NVIDIA 推出免費工具「PAIR」",
+  "source_name": "Unwire",
+  "link": "https://unwire.hk/2026/09/06/nvidia-pair-ai-router/ai/",
+  "rewritten_title": "NVIDIA 推出免費工具 PAIR，支援本地電腦組成 AI 運算叢集",
+  "rewritten": "NVIDIA 發布免費工具 PAIR（Personal AI Router），可自動偵測同一網絡內的相容電腦，將 AI 推理工作分配至多部裝置處理，以解決多個 AI 代理人同時運作時造成的系統瓶頸。該工具相容於 Ollama 及 LM Studio 等本機 AI 執行環境，用戶無需修改現有程式碼。實測顯示，透過 PAIR 將三部裝置組成叢集處理任務，時間較單一裝置大幅縮短。PAIR 目前處於公開測試階段，支援多種作業系統及顯示卡。",
+  "status": "done",
+  "fetched_at": "2026-09-07T01:11:56"
+}
