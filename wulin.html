@@ -447,7 +447,7 @@ async function load(){
   console.log('[CLOUD] initial load:',cloudReady?'✅':'⚠️ fallback to local data');
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
   _wulinReady=true;
-  tickCooldown();startTravelTimer();
+  startTravelTimer();
   render();
 }
 function renderGuest(){
