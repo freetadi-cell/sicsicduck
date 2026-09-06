@@ -1,41 +1,76 @@
 {
-  "last_updated": "2026-09-06T23:00:16.192550",
+  "last_updated": "2026-09-07T00:05:56.088649",
   "timezone": "Asia/Hong_Kong",
   "source": "Yahoo Finance (即時報價)",
   "description": "Market Yield on US Treasury Securities",
   "current": {
     "3M": {
       "yield": 3.757,
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "series": "^IRX",
       "source": "Yahoo Finance (即時報價)"
     },
     "2Y": {
       "yield": 3.961,
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "series": "2YY=F",
       "source": "Yahoo Finance (即時報價)"
     },
     "5Y": {
       "yield": 4.55,
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "series": "^FVX",
       "source": "Yahoo Finance (即時報價)"
     },
     "10Y": {
       "yield": 4.784,
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "series": "^TNX",
       "source": "Yahoo Finance (即時報價)"
     },
     "30Y": {
       "yield": 5.246,
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "series": "^TYX",
       "source": "Yahoo Finance (即時報價)"
     }
   },
   "history": [
+    {
+      "date": "2026-09-07",
+      "yields": {
+        "3M": {
+          "yield": 3.757,
+          "date": "2026-09-07",
+          "series": "^IRX",
+          "source": "Yahoo Finance (即時報價)"
+        },
+        "2Y": {
+          "yield": 3.961,
+          "date": "2026-09-07",
+          "series": "2YY=F",
+          "source": "Yahoo Finance (即時報價)"
+        },
+        "5Y": {
+          "yield": 4.55,
+          "date": "2026-09-07",
+          "series": "^FVX",
+          "source": "Yahoo Finance (即時報價)"
+        },
+        "10Y": {
+          "yield": 4.784,
+          "date": "2026-09-07",
+          "series": "^TNX",
+          "source": "Yahoo Finance (即時報價)"
+        },
+        "30Y": {
+          "yield": 5.246,
+          "date": "2026-09-07",
+          "series": "^TYX",
+          "source": "Yahoo Finance (即時報價)"
+        }
+      }
+    },
     {
       "date": "2026-09-06",
       "yields": {
@@ -1046,41 +1081,6 @@
         "30Y": {
           "yield": 5.21,
           "date": "2026-07-30",
-          "series": "DGS30",
-          "source": "FRED (Federal Reserve)"
-        }
-      }
-    },
-    {
-      "date": "2026-07-31",
-      "yields": {
-        "3M": {
-          "yield": 3.83,
-          "date": "2026-07-29",
-          "series": "DGS3MO",
-          "source": "FRED (Federal Reserve)"
-        },
-        "2Y": {
-          "yield": 4.22,
-          "date": "2026-07-29",
-          "series": "DGS2",
-          "source": "FRED (Federal Reserve)"
-        },
-        "5Y": {
-          "yield": 4.37,
-          "date": "2026-07-29",
-          "series": "DGS5",
-          "source": "FRED (Federal Reserve)"
-        },
-        "10Y": {
-          "yield": 4.67,
-          "date": "2026-07-29",
-          "series": "DGS10",
-          "source": "FRED (Federal Reserve)"
-        },
-        "30Y": {
-          "yield": 5.2,
-          "date": "2026-07-29",
           "series": "DGS30",
           "source": "FRED (Federal Reserve)"
         }
