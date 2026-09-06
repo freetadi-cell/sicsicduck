@@ -178,8 +178,41 @@ let world=null,worldDay=1;
 const $=id=>document.getElementById(id);
 
 /* ================= 帳號系統 ================= */
-function accounts(){try{return JSON.parse(localStorage.getItem('wulin_accounts'))||{}}catch(e){return{}}}
-function saveAccounts(a){localStorage.setItem('wulin_accounts',JSON.stringify(a))}
+const GH_FILE='data/players.json';
+const WORKER_URL='https://wulin-proxy.YOUR_ACCOUNT.workers.dev'; // ← 部署後改做你嘅 Worker URL
+let _cloudAccounts=null,_cloudSha=null;
+async function cloudLoad(){
+  try{
+    const r=await fetch(WORKER_URL+'/api/players');
+    if(!r.ok)return false;const d=await r.json();
+    if(d.error){console.log('[CLOUD] load error',d.error);return false}
+    _cloudAccounts=d.accounts;_cloudSha=d.sha;return true;
+  }catch(e){console.log('[CLOUD] load error',e);return false}
+}
+async function cloudSave(accounts){
+  try{
+    const sha=_cloudSha||await getCloudSha();
+    const r=await fetch(WORKER_URL+'/api/players',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({accounts,sha})});
+    if(!r.ok){console.log('[CLOUD] save error',await r.text());return false}
+    const d=await r.json();if(d.error){console.log('[CLOUD] save error',d.error);return false}
+    return true;
+  }catch(e){console.log('[CLOUD] save error',e);return false}
+}
+async function getCloudSha(){
+  try{
+    const r=await fetch(WORKER_URL+'/api/players');
+    if(!r.ok)return null;const d=await r.json();
+    _cloudSha=d.sha;return d.sha;
+  }catch(e){return null}
+}
+function accounts(){
+  if(_cloudAccounts)return _cloudAccounts;
+  try{return JSON.parse(localStorage.getItem('wulin_accounts'))||{}}catch(e){return{}}
+}}
+function saveAccounts(a){
+  localStorage.setItem('wulin_accounts',JSON.stringify(a));
+  cloudSave(a);
+}
 async function sha256(s){
   if(window.crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('wulin·'+s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
   let h=5381;for(const c of s)h=((h*33)^c.codePointAt(0))>>>0;return 'f'+h.toString(16);
