@@ -143,6 +143,8 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="chip">⚡ 閱歷 <b id="playerXp">0</b></div>
     <div class="chip" id="playerAlignChip" style="display:none">⚖️ <b id="playerAlignLabel">中立</b> <span class="align-bar"><i id="playerAlignBar"></i></span> <b id="playerAlignNum">500</b></div>
     <div class="chip">👥 <b id="npcCount">–</b> 位 · <b id="npcLocal">–</b> 同區</div>
+    <div class="chip"><a href="#" onclick="exportSave();return false">📦 匯出</a></div>
+    <div class="chip"><a href="#" onclick="importSave();return false">📥 匯入</a></div>
     <div class="chip"><a href="#" onclick="logout();return false">登出</a></div>
   </div>
 
@@ -194,6 +196,26 @@ function savePlayer(p){
   const a=accounts();if(a[p.name]){a[p.name].save=p;saveAccounts(a)}
 }
 function logout(){localStorage.removeItem('wulin_player');closeModal();toast('已登出江湖');authTab('login');$('auth').classList.add('open')}
+function exportSave(){
+  const p=player();if(!p){toast('請先登入');return}
+  const a=accounts();const s=a[p.name]?.save||p;
+  const data={v:1,name:p.name,save:s,accounts:a,exportedAt:new Date().toISOString()};
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);const el=document.createElement('a');
+  el.href=url;el.download='wulin_'+p.name+'_save.json';el.click();URL.revokeObjectURL(url);
+  toast('存檔已匯出 📦');
+}
+function importSave(){
+  const input=document.createElement('input');input.type='file';input.accept='.json';
+  input.onchange=e=>{const file=e.target.files[0];if(!file)return;
+    const reader=new FileReader();reader.onload=ev=>{
+      try{const data=JSON.parse(ev.target.result);
+        if(data.accounts){saveAccounts(data.accounts)}
+        if(data.save){localStorage.setItem('wulin_player',JSON.stringify(data.save))}
+        toast('存檔已匯入 📥 正在重新載入…');setTimeout(()=>location.reload(),800);
+      }catch(err){toast('匯入失敗：檔案損壞')}};reader.readAsText(file)};
+  input.click();
+}
 
 /* ---- 登入 / 註冊 ---- */
 let authMode='login';
