@@ -30,7 +30,6 @@ h1{font-size:34px;letter-spacing:14px;color:var(--gold);text-indent:14px;font-we
 .chip .align-bar i.good{background:var(--green)}
 h2{font-size:17px;color:var(--gold);margin:26px 0 12px;letter-spacing:3px;display:flex;align-items:center;gap:10px}
 h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
-/* region panel */
 .region-panel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:18px}
 .region-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .region-current{font-size:15px;color:var(--text)}
@@ -62,7 +61,6 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .affbar{height:5px;background:var(--bg2);border-radius:3px;margin-top:10px;overflow:hidden}
 .affbar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold2),var(--gold));border-radius:3px;transition:width .4s}
 .affnum{font-size:11px;color:var(--muted);margin-top:4px;text-align:right}
-/* modal */
 .modal{display:none;position:fixed;inset:0;z-index:100}
 .modal.open{display:block}
 .mback{position:absolute;inset:0;background:rgba(0,0,0,.7)}
@@ -107,7 +105,6 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .difflabel.neutral{background:rgba(154,165,177,.12);color:var(--muted)}
 .difflabel.tension{background:rgba(192,57,43,.15);color:var(--red)}
 .difflabel.locked{background:rgba(192,57,43,.25);color:var(--red);font-weight:700;letter-spacing:1px}
-/* auth */
 #auth{display:none;position:fixed;inset:0;z-index:150;background:var(--bg)}
 #auth.open{display:block}
 .acard{max-width:400px;margin:7vh auto 0;background:var(--bg2);border:1px solid var(--gold2);border-radius:12px;padding:28px}
@@ -177,38 +174,49 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 let world=null,worldDay=1;
 const $=id=>document.getElementById(id);
 
-/* ================= 帳號系統 ================= */
-const GH_FILE='data/players.json';
-const WORKER_URL='https://wulin-proxy.YOUR_ACCOUNT.workers.dev'; // ← 部署後改做你嘅 Worker URL
+/* ================= 帳號系統（Supabase） ================= */
+const SUPABASE_URL='https://YOUR_PROJECT.supabase.co';
+const SUPABASE_ANON='YOUR_ANON_KEY';
 let _cloudAccounts=null,_cloudSha=null;
+
 async function cloudLoad(){
   try{
-    const r=await fetch(WORKER_URL+'/api/players');
-    if(!r.ok)return false;const d=await r.json();
-    if(d.error){console.log('[CLOUD] load error',d.error);return false}
-    _cloudAccounts=d.accounts;_cloudSha=d.sha;return true;
+    const r=await fetch(`${SUPABASE_URL}/rest/v1/players?select=*`,{
+      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON}
+    });
+    if(!r.ok)return false;
+    const rows=await r.json();
+    const accounts={};
+    rows.forEach(row=>{accounts[row.name]={ph:row.ph,save:row.save}});
+    _cloudAccounts=accounts;
+    return true;
   }catch(e){console.log('[CLOUD] load error',e);return false}
 }
+
 async function cloudSave(accounts){
   try{
-    const sha=_cloudSha||await getCloudSha();
-    const r=await fetch(WORKER_URL+'/api/players',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({accounts,sha})});
-    if(!r.ok){console.log('[CLOUD] save error',await r.text());return false}
-    const d=await r.json();if(d.error){console.log('[CLOUD] save error',d.error);return false}
+    // 先用 upsert 寫入每個玩家
+    const entries=Object.entries(accounts);
+    for(const [name,data] of entries){
+      await fetch(`${SUPABASE_URL}/rest/v1/players`,{
+        method:'POST',
+        headers:{
+          'apikey':SUPABASE_ANON,
+          'Authorization':'Bearer '+SUPABASE_ANON,
+          'Content-Type':'application/json',
+          'Prefer':'resolution=merge-duplicates'
+        },
+        body:JSON.stringify({name,ph:data.ph,save:data.save})
+      });
+    }
     return true;
   }catch(e){console.log('[CLOUD] save error',e);return false}
 }
-async function getCloudSha(){
-  try{
-    const r=await fetch(WORKER_URL+'/api/players');
-    if(!r.ok)return null;const d=await r.json();
-    _cloudSha=d.sha;return d.sha;
-  }catch(e){return null}
-}
+
 function accounts(){
   if(_cloudAccounts)return _cloudAccounts;
   try{return JSON.parse(localStorage.getItem('wulin_accounts'))||{}}catch(e){return{}}
-}}
+}
 function saveAccounts(a){
   localStorage.setItem('wulin_accounts',JSON.stringify(a));
   cloudSave(a);
@@ -250,7 +258,6 @@ function importSave(){
   input.click();
 }
 
-/* ---- 登入 / 註冊 ---- */
 let authMode='login';
 function authTab(m){
   authMode=m;$('tabLogin').classList.toggle('on',m==='login');$('tabReg').classList.toggle('on',m==='reg');
@@ -267,7 +274,7 @@ function authTab(m){
       ${migrating?'':`<div class="ahint" style="margin-top:2px;text-align:left">冇諗到？<a onclick="regRandom()">隨機改個名</a></div>`}
       <div class="aerr" id="authErr"></div>
       <button class="abtn" onclick="regGo()">踏 入 江 湖</button>
-      <div class="ahint">⚠️ 帳號同密碼只儲存喺呢部裝置嘅瀏覽器，<br>清除瀏覽器資料會令存檔消失，密碼唔可以找回。</div>${dl}`;
+      <div class="ahint">⚠️ 帳號同密碼會同步到雲端，跨裝置可用。</div>${dl}`;
     $('regName').focus();
   }else{
     $('authBody').innerHTML=`
@@ -295,7 +302,7 @@ async function regGo(){
   if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
   a[name]={ph,save:st};saveAccounts(a);localStorage.setItem('wulin_player',JSON.stringify(st));
   $('auth').classList.remove('open');
-  toast(migrating?`存檔已加密保護 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);render();
+  toast(migrating?`存檔已同步到雲端 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);render();
 }
 async function loginGo(){
   const name=($('logName').value||'').trim().slice(0,10),pw=$('logPass').value,a=accounts();
@@ -310,7 +317,6 @@ async function loginGo(){
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 
-/* ---- 善惡 ---- */
 function playerAlign(){const p=player();return p?(p.alignment||500):500}
 function alignLabel(a){
   if(a>=800)return '大義凜然';if(a>=650)return '行俠仗義';if(a>=550)return '正氣凜然';
@@ -327,11 +333,9 @@ function renderPlayerBar(){
 }
 function alignDiff(pk,nk){return Math.abs(pk-nk)}
 
-/* ---- 好感 ---- */
 function aff(key){const p=player(),n=world.npcs.find(x=>x.key===key);if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0}
 function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
 
-/* ---- 確認出發對話框 ---- */
 let _pendingTravel=null;
 function confirmTravel(dest,days){
   _pendingTravel={dest,days};
@@ -358,26 +362,23 @@ function confirmGo(){
 }
 function cancelTravel(){_pendingTravel=null;$('modal').classList.remove('open')}
 
-/* ---- 地區（真實時間：1分鐘 = 1遊戲日） ---- */
-// cooldown 喺 player 保存為 {dest:'襄陽城',until:timestamp} 而非日數
-// travelDays 乘 60000ms = 真實冷却毫秒
 function playerRegion(){const p=player();return p?(p.region||'襄陽城'):'襄陽城'}
-function playerCooldown(){ // 返回 {dest,remainingMs} 或 null
+function playerCooldown(){
   const p=player();if(!p||!p.travel)return null;
   const remaining=p.travel.until-Date.now();
-  if(remaining<=0)return null; // 已到達
+  if(remaining<=0)return null;
   return{dest:p.travel.dest,remainingMs:remaining};
 }
 function getDistance(a,b){const d=world?.meta?.region_distances;return d?.[a]?.[b]??d?.[b]?.[a]??1}
-function startTravel(dest,travelDays){ // 觸發旅行
+function startTravel(dest,travelDays){
   const p=player();if(!p)return;
-  const ms=travelDays*60000; // 1分鐘=1日
+  const ms=travelDays*60000;
   p.travel={dest,until:Date.now()+ms};
   savePlayer(p);
   render();
   toast(`出發前往 ${dest}（${travelDays} 分鐘 / ${travelDays} 遊戲日後抵達）`);
 }
-function finishTravelIfDone(){ // 自動到達
+function finishTravelIfDone(){
   const p=player();if(!p||!p.travel)return;
   if(Date.now()>=p.travel.until){
     const dest=p.travel.dest;
@@ -391,7 +392,7 @@ function finishTravelIfDone(){ // 自動到達
 function renderRegionPanel(){
   const reg=$('regionPanel');
   const p=player();if(!p){reg.style.display='none';return}
-  finishTravelIfDone(); // 檢查到達
+  finishTravelIfDone();
   const cur=playerRegion(),cd=playerCooldown();
   const regions=world.meta.regions||{};
   const allR=Object.keys(regions);
@@ -423,20 +424,17 @@ function doTravel(dest,days){
   if(cd){toast('你仲喺趕路，唔可以再出發');return}
   confirmTravel(dest,days);
 }
-function tickCooldown(){} // 已改為真實時間，無需 tickCooldown
 
-/* ---- 冷卻倒數（真實時間改為 setInterval） ---- */
 let travelTimer=null;
 function startTravelTimer(){
   if(travelTimer)clearInterval(travelTimer);
   travelTimer=setInterval(()=>{
     finishTravelIfDone();
-    renderRegionPanel(); // 更新倒數顯示
+    renderRegionPanel();
   },1000);
 }
 
-/* ================= 載入同渲染 ================= */
-let _wulinReady=false; // 防止 load() 覆蓋已登入嘅 render
+let _wulinReady=false;
 async function load(){
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
   catch(e){$('worldTime').textContent='載入失敗';return}
@@ -466,8 +464,8 @@ function render(){
   renderNpcs(p);
 }
 function renderNpcs(p){
-  const p2=p||player(); // 用傳入嘅 p，唔好再 check localStorage
-  if(!p2){renderNpcGrid(world.npcs);return} // guest
+  const p2=p||player();
+  if(!p2){renderNpcGrid(world.npcs);return}
   const cur=playerRegion(),cd=playerCooldown();
   const local=world.npcs.filter(n=>n.region===cur);
   $('npcLocal').textContent=local.length;
@@ -494,7 +492,6 @@ function renderNpcGrid(npcs){
     </div>`}).join('');
 }
 
-/* ---- NPC 對話框 ---- */
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   const p=player();if(!p){authTab('login');$('auth').classList.add('open');return}

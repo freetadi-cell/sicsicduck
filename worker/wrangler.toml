@@ -1,3 +1,7 @@
 name = "wulin-proxy"
 main = "worker/wulin-proxy.js"
 compatibility_date = "2026-09-03"
+
+routes = [
+  { pattern = "api.sicsicduck.com/*", zone_name = "sicsicduck.com" }
+]
