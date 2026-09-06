@@ -45,23 +45,6 @@
       "pinned": true
     },
     {
-      "id": "a21d81829bad95d9",
-      "title": "俄羅斯和烏克蘭夜間互相襲擊 美國特使即將前往基輔",
-      "description": "",
-      "link": "https://hk.finance.yahoo.com/news/%E4%BF%84%E7%BE%85%E6%96%AF%E5%92%8C%E7%83%8F%E5%85%8B%E8%98%AD%E5%A4%9C%E9%96%93%E4%BA%92%E7%9B%B8%E8%A5%B2%E6%93%8A-%E7%BE%8E%E5%9C%8B%E7%89%B9%E4%BD%BF%E5%8D%B3%E5%B0%87%E5%89%8D%E5%BE%80%E5%9F%BA%E8%BC%94-081528532.html",
-      "pubDate": "2026-09-06 08:15:28",
-      "fetched_at": "2026-09-06 17:10:29",
-      "source_name": "Yahoo Finance HK",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk",
-      "pinned": true
-    },
-    {
       "id": "e95e668b2d63c9092fc0a11402241dbf",
       "title": "美伊油輪衝突升級,荷姆茲海峽局勢持續惡化",
       "description": "Investing.com - 美伊衝突於週末進一步激化。德黑蘭宣稱對一艘美國操控的無人艇及多艘商業船隻發動新一輪攻擊。此前,華盛頓已對三艘伊朗油輪實施打擊,令荷姆茲海峽的對峙態勢持續擴大。上述消息由半島電視台於週日報導。",
@@ -86,6 +69,23 @@
       ],
       "category": [
         "business"
+      ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "e4ef375bbe9ad41d",
+      "title": "今日非農就業數據與下週CPI數據，將是股市走向的關鍵",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BB%8A%E6%97%A5%E9%9D%9E%E8%BE%B2%E5%B0%B1%E6%A5%AD%E6%95%B8%E6%93%9A%E8%88%87%E4%B8%8B%E9%80%B1cpi%E6%95%B8%E6%93%9A-%E5%B0%87%E6%98%AF%E8%82%A1%E5%B8%82%E8%B5%B0%E5%90%91%E7%9A%84%E9%97%9C%E9%8D%B5-093548698.html",
+      "pubDate": "2026-09-04 09:35:48",
+      "fetched_at": "2026-09-04 18:13:12",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
       ],
       "region": "hk",
       "pinned": true
@@ -331,6 +331,23 @@
         "business"
       ],
       "region": "hk"
+    },
+    {
+      "id": "a21d81829bad95d9",
+      "title": "俄羅斯和烏克蘭夜間互相襲擊 美國特使即將前往基輔",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BF%84%E7%BE%85%E6%96%AF%E5%92%8C%E7%83%8F%E5%85%8B%E8%98%AD%E5%A4%9C%E9%96%93%E4%BA%92%E7%9B%B8%E8%A5%B2%E6%93%8A-%E7%BE%8E%E5%9C%8B%E7%89%B9%E4%BD%BF%E5%8D%B3%E5%B0%87%E5%89%8D%E5%BE%80%E5%9F%BA%E8%BC%94-081528532.html",
+      "pubDate": "2026-09-06 08:15:28",
+      "fetched_at": "2026-09-06 17:10:29",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "9754af8002f5c6653a95b994a5e5af2a",
@@ -2019,23 +2036,6 @@
         "business"
       ],
       "region": "hk"
-    },
-    {
-      "id": "e4ef375bbe9ad41d",
-      "title": "今日非農就業數據與下週CPI數據，將是股市走向的關鍵",
-      "description": "",
-      "link": "https://hk.finance.yahoo.com/news/%E4%BB%8A%E6%97%A5%E9%9D%9E%E8%BE%B2%E5%B0%B1%E6%A5%AD%E6%95%B8%E6%93%9A%E8%88%87%E4%B8%8B%E9%80%B1cpi%E6%95%B8%E6%93%9A-%E5%B0%87%E6%98%AF%E8%82%A1%E5%B8%82%E8%B5%B0%E5%90%91%E7%9A%84%E9%97%9C%E9%8D%B5-093548698.html",
-      "pubDate": "2026-09-04 09:35:48",
-      "fetched_at": "2026-09-04 18:13:12",
-      "source_name": "Yahoo Finance HK",
-      "image_url": "",
-      "keywords": [],
-      "category": [
-        "finance",
-        "local"
-      ],
-      "region": "hk",
-      "pinned": true
     },
     {
       "id": "878be366577c85ea9c19a80b682ab65e",
@@ -26771,5 +26771,5 @@
     }
   ],
   "total": 1422,
-  "last_updated": "2026-09-07T06:38:58.690678"
+  "last_updated": "2026-09-07T06:39:02.424204"
 }
