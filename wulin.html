@@ -153,7 +153,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   <h2>江湖人物<span id="regionTag" style="font-size:12px;color:var(--muted);font-weight:normal;margin-left:12px"></span></h2>
   <div class="grid" id="npcGrid"></div>
 
-  <footer>世界由 AI 推進 · 只有同區 NPC 先可以互動 · 本頁為未公開原型</footer>
+  <footer>世界由 AI 推進 · 只有同區 NPC 才可以互動 · 本頁為未公開原型</footer>
 </div>
 
 <div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
@@ -271,10 +271,10 @@ function authTab(m){
       <div class="afld"><label>江湖稱號</label><input id="regName" maxlength="10" placeholder="你的名號" value="${migrating?esc(old.name):''}" ${migrating?'readonly style="opacity:.6"':''}></div>
       <div class="afld"><label>密碼（至少 4 個字元）</label><input id="regPass" type="password" maxlength="32" placeholder="••••••"></div>
       <div class="afld"><label>確認密碼</label><input id="regPass2" type="password" maxlength="32" placeholder="••••••"></div>
-      ${migrating?'':`<div class="ahint" style="margin-top:2px;text-align:left">冇諗到？<a onclick="regRandom()">隨機改個名</a></div>`}
+      ${migrating?'':`<div class="ahint" style="margin-top:2px;text-align:left">想不到？<a onclick="regRandom()">隨機取個名</a></div>`}
       <div class="aerr" id="authErr"></div>
       <button class="abtn" onclick="regGo()">踏 入 江 湖</button>
-      <div class="ahint">⚠️ 帳號同密碼會同步到雲端，跨裝置可用。</div>${dl}`;
+      <div class="ahint">⚠️ 帳號和密碼會同步到雲端，跨裝置可用。</div>${dl}`;
     $('regName').focus();
   }else{
     $('authBody').innerHTML=`
@@ -282,7 +282,7 @@ function authTab(m){
       <div class="afld"><label>密碼</label><input id="logPass" type="password" maxlength="32" placeholder="••••••"></div>
       <div class="aerr" id="authErr"></div>
       <button class="abtn" onclick="loginGo()">登 入</button>
-      ${names.length?'':`<div class="ahint">仲未係玩家？<a onclick="authTab('reg')">去註冊</a></div>`}${dl}`;
+      ${names.length?'':`<div class="ahint">還不是玩家？<a onclick="authTab('reg')">去註冊</a></div>`}${dl}`;
     $('logName').focus();
   }
 }
@@ -291,12 +291,12 @@ function regRandom(){const el=$('regName');if(el&&!el.readOnly)el.value=NAME_POO
 function authErr(msg){const e=$('authErr');if(e)e.textContent=msg||''}
 async function regGo(){
   const name=($('regName').value||'').trim().slice(0,10),p1=$('regPass').value,p2=$('regPass2').value;
-  if(!name){authErr('總要有個名號嘛');return}
+  if(!name){authErr('總要有一個名號');return}
   if(p1.length<4){authErr('密碼至少 4 個字元');return}
-  if(p1!==p2){authErr('兩次密碼唔一致');return}
+  if(p1!==p2){authErr('兩次密碼不一致');return}
   const a=accounts(),old=JSON.parse(localStorage.getItem('wulin_player')||'null');
   const migrating=old&&old.name===name&&!a[name];
-  if(a[name]){authErr('呢個名號已有人用，揀過另一個');return}
+  if(a[name]){authErr('這個名號已有人使用，請另選一個');return}
   const ph=await sha256(p1);
   const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
   if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
@@ -309,7 +309,7 @@ async function regGo(){
 }
 async function loginGo(){
   const name=($('logName').value||'').trim().slice(0,10),pw=$('logPass').value,a=accounts();
-  if(!a[name]){authErr('冇呢個名號——先註冊先入到江湖');return}
+  if(!a[name]){authErr('沒有這個名號——需先註冊才能進入江湖');return}
   if(await sha256(pw)!==a[name].ph){authErr('名號或密碼錯誤');return}
   const save=a[name].save;if(!save.alignment)save.alignment=500;if(!save.region)save.region='襄陽城';if(!save.cooldown)save.cooldown=0;
   localStorage.setItem('wulin_player',JSON.stringify(save));
@@ -354,7 +354,7 @@ function confirmTravel(dest,days){
         <span style="color:var(--red);font-size:12px">冷卻期間無法與任何人互動</span>
       </div>
       <button class="abtn" onclick="confirmGo()">確認出發</button>
-      <button class="abtn" style="margin-top:8px;border-color:var(--border);color:var(--muted)" onclick="cancelTravel()">留喺度</button>
+      <button class="abtn" style="margin-top:8px;border-color:var(--border);color:var(--muted)" onclick="cancelTravel()">留在原地</button>
     </div>`;
 }
 function confirmGo(){
@@ -387,7 +387,7 @@ function finishTravelIfDone(){
     const dest=p.travel.dest;
     p.region=dest;p.travel=null;
     savePlayer(p);
-    toast(`🏃 你抵達 ${dest}，可以行動喇！`);
+    toast(`🏃 你抵達 ${dest}，可以行動了！`);
     render();
   }
 }
@@ -401,21 +401,21 @@ function renderRegionPanel(){
   const allR=Object.keys(regions);
 
   let html=`<div class="region-header">
-    <div class="region-current">📍 你喺 <b>${esc(cur)}</b>　<span style="font-size:12px;color:var(--muted)">${esc(regions[cur]||'')}</span></div>
+    <div class="region-current">📍 你在 <b>${esc(cur)}</b>　<span style="font-size:12px;color:var(--muted)">${esc(regions[cur]||'')}</span></div>
   </div>`;
 
   if(cd){
     const fmtMs=cd.remainingMs;
     const mins=Math.floor(fmtMs/60000);
     const secs=Math.floor((fmtMs%60000)/1000);
-    html+=`<div class="cooling">🚶 你正喺趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${mins}分${String(secs).padStart(2,'0')}秒</b></div>`;
+    html+=`<div class="cooling">🚶 你正在趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${mins}分${String(secs).padStart(2,'0')}秒</b></div>`;
   }else{
     html+=`<div class="region-travel">`;
     for(const r of allR){
       if(r===cur)continue;
       const days=getDistance(cur,r);
       const npcs=world.npcs.filter(n=>n.region===r);
-      html+=`<button class="travel-btn" onclick="doTravel('${esc(r)}',${days})">${esc(r)} <span class="days">${days}分鐘</span>　<span style="font-size:11px;color:var(--muted)">${npcs.map(n=>n.name).join('、')||'（冇人）'}</span></button>`;
+      html+=`<button class="travel-btn" onclick="doTravel('${esc(r)}',${days})">${esc(r)} <span class="days">${days}分鐘</span>　<span style="font-size:11px;color:var(--muted)">${npcs.map(n=>n.name).join('、')||'（沒有人）'}</span></button>`;
     }
     html+=`</div>`;
   }
@@ -424,7 +424,7 @@ function renderRegionPanel(){
 }
 function doTravel(dest,days){
   const cd=playerCooldown();
-  if(cd){toast('你仲喺趕路，唔可以再出發');return}
+  if(cd){toast('你還在趕路，不能再出發');return}
   confirmTravel(dest,days);
 }
 
@@ -475,10 +475,10 @@ function renderNpcs(p){
   const cur=playerRegion(),cd=playerCooldown();
   const local=world.npcs.filter(n=>n.region===cur);
   $('npcLocal').textContent=local.length;
-  $('regionTag').textContent=cd?`(冷卻中)`:`(喺 ${esc(cur)})`;
+  $('regionTag').textContent=cd?`(冷卻中)`:`(在 ${esc(cur)})`;
 
   if(cd){
-    $('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正喺趕路，到達後先可以同 NPC 互動</div>`;
+    $('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正在趕路，到達後才能與 NPC 互動</div>`;
     return;
   }
   renderNpcGrid(local);
@@ -501,8 +501,8 @@ function renderNpcGrid(npcs){
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   const p=player();if(!p){authTab('login');$('auth').classList.add('open');return}
-  const cd=playerCooldown();if(cd){toast('你仲喺趕路，唔可以互動');return}
-  const cur=playerRegion();if(n.region!==cur){toast('你同佢唔喺同一個地區');return}
+  const cd=playerCooldown();if(cd){toast('你還在趕路，無法互動');return}
+  const cur=playerRegion();if(n.region!==cur){toast('你與他不在同一個地區');return}
   const pa=playerAlign(),na=n.alignment||500,diff=alignDiff(pa,na);
   const locked=diff>300&&diff<=500;
   const hostile=diff>500;
@@ -525,7 +525,7 @@ function openNpc(key){
     html+=`<div class="chatlabel" style="color:var(--red)">— 此人視你為敵，無法交流 —</div>`;
   }else if(locked){
     html+=`<div class="chatlabel" style="color:var(--red)">— 道不同不相為謀 —</div>
-           <div class="mmeta" style="text-align:center">你同${esc(n.name)}善惡懸殊，無話可說。<br>你嘅善惡值：<b>${pa}</b>　佢嘅善惡值：<b>${na}</b><br>差 ${diff}（需要 ≤300 先可以傾偈）</div>`;
+           <div class="mmeta" style="text-align:center">你與${esc(n.name)}善惡懸殊，無話可說。<br>你的善惡值：<b>${pa}</b>　他的善惡值：<b>${na}</b><br>差 ${diff}（需要 ≤300 才能交談）</div>`;
   }else{
     const opts=(n.chat_options||[]).map((o,i)=>{
       const used=p.opts[key+':'+i]===worldDay;
@@ -534,10 +534,10 @@ function openNpc(key){
       else if(o.affinity_delta<0)fxText+=`<span class="fx down">♥${o.affinity_delta}</span>`;
       if(o.alignment_delta>0)fxText+=`<span class="fx up">☯+${o.alignment_delta}</span>`;
       else if(o.alignment_delta<0)fxText+=`<span class="fx down">☯${o.alignment_delta}</span>`;
-      return `<button class="opt" id="opt_${key}_${i}" ${used?'disabled':''} onclick="say('${key}',${i})">${esc(o.say)}${used?' <span class="fx">✓ 講過</span>':fxText}</button>`;
+      return `<button class="opt" id="opt_${key}_${i}" ${used?'disabled':''} onclick="say('${key}',${i})">${esc(o.say)}${used?' <span class="fx">✓ 已說</span>':fxText}</button>`;
     }).join('');
-    html+=`<div class="chatlabel">— 你開口講（每日一款）—</div>
-            <div id="optArea">${opts||'<div class="mmeta">（佢暫時冇咩想聽……聽日再嚟）</div>'}</div>`;
+    html+=`<div class="chatlabel">— 你開口說話（每天一種）—</div>
+            <div id="optArea">${opts||'<div class="mmeta">（他暫時沒有什麼想說……明天再來）</div>'}</div>`;
   }
   if(rel)html+=`<div class="mmeta" style="margin-top:12px">交情：${rel}</div>`;
   html+=`<div class="acts">`;
@@ -593,7 +593,7 @@ function say(key,i){
   if(p.opts[key+':'+i]===worldDay)return;
   p.opts[key+':'+i]=worldDay;savePlayer(p);
   const btn=$('opt_'+key+'_'+i);
-  if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 講過</span>'}
+  if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 已說</span>'}
   pushDlg(o.say,true);
   setTimeout(()=>{
     pushDlg(o.reply,false);
@@ -601,8 +601,8 @@ function say(key,i){
     const ad=o.alignment_delta||0;
     if(ad)setPlayerAlign(ad);
     let msg='';
-    if(o.affinity_delta>0)msg='佢幾受落 · 好感 +'+o.affinity_delta;
-    else if(o.affinity_delta<0)msg='講錯嘢喇… 好感 '+o.affinity_delta;
+    if(o.affinity_delta>0)msg='他頗受用 · 好感 +'+o.affinity_delta;
+    else if(o.affinity_delta<0)msg='說錯話了… 好感 '+o.affinity_delta;
     if(ad>0)msg+=msg?' · ☯ 善行 +'+ad:'☯ 善行 +'+ad;
     else if(ad<0)msg+=msg?' · ☯ '+ad:'☯ '+ad;
     if(msg)toast(msg);
@@ -614,10 +614,10 @@ function act(key,type){
   const p=player();
   if(type==='flee'){
     const flee=Math.random()>0.3;
-    if(flee){pushDlg('（你轉身狂奔，好彩甩掉'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}
-    else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）走？冇咁容易！',false,'npcattack',n.name);
+    if(flee){pushDlg('（你轉身狂奔，幸虧甩掉了'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}
+    else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）想走？沒那麼容易！',false,'npcattack',n.name);
       const xpLost=3;p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;
-      pushDlg(`被摑一巴，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}
+      pushDlg(`被打了幾巴掌，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}
     return;
   }
   if(type==='gift'){
@@ -638,8 +638,8 @@ function act(key,type){
     p.xp+=win?5:3;savePlayer(p);
     pushDlg('（你抱拳：請指教！）',true);
     setTimeout(()=>{
-      if(win){pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下散手！俾面你。',false);bumpAff(key,3);toast('切磋勝 · 閱歷 +5 · 好感 +3')}
-      else{pushDlg('（三招之內被制住）後生人，基本功返去緊啲。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')}
+      if(win){pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下本領！給你面子。',false);bumpAff(key,3);toast('切磋勝 · 閱歷 +5 · 好感 +3')}
+      else{pushDlg('（三招之內被制住）年輕人，基本功回去再練練。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')}
       if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);
       $('playerXp').textContent=p.xp;
     },400);

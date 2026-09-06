@@ -1,556 +1,465 @@
 {
   "meta": {
-    "project": "wulin",
-    "based_on": "神鵰俠侶",
-    "version": 1,
-    "world_time": "第三日 · 暮春",
-    "player_setting": "你係一名闖蕩江湖嘅無名少年，機緣巧合踏入神鵰世界",
-    "updated_at": "2026-09-06T08:49:44",
-    "player_region": "襄陽城",
+    "title": "神鵰世界 · 原型 v5",
+    "world_time": "第 427 日",
     "region_distances": {
-      "襄陽城": {
-        "終南山": 2,
-        "嘉興": 3,
-        "百花谷": 1,
-        "蒙古軍營": 1,
-        "江南": 3
-      },
-      "終南山": {
-        "襄陽城": 2,
-        "嘉興": 3,
-        "百花谷": 2,
-        "蒙古軍營": 4,
-        "江南": 3
-      },
-      "嘉興": {
-        "襄陽城": 3,
-        "終南山": 3,
-        "百花谷": 3,
-        "蒙古軍營": 4,
-        "江南": 1
-      },
-      "百花谷": {
-        "襄陽城": 1,
-        "終南山": 2,
-        "嘉興": 3,
-        "蒙古軍營": 2,
-        "江南": 3
-      },
-      "蒙古軍營": {
-        "襄陽城": 1,
-        "終南山": 4,
-        "嘉興": 4,
-        "百花谷": 2,
-        "江南": 4
-      },
-      "江南": {
-        "襄陽城": 3,
-        "終南山": 3,
-        "嘉興": 1,
-        "百花谷": 3,
-        "蒙古軍營": 4
-      }
+      "襄陽城": {"古墓": 4, "終南山": 3, "嘉興": 6, "絕情谷": 5, "大理": 9},
+      "古墓": {"襄陽城": 4, "終南山": 2, "嘉興": 5, "絕情谷": 6, "大理": 8},
+      "終南山": {"襄陽城": 3, "古墓": 2, "嘉興": 6, "絕情谷": 4, "大理": 7},
+      "嘉興": {"襄陽城": 6, "古墓": 5, "終南山": 6, "絕情谷": 7, "大理": 4},
+      "絕情谷": {"襄陽城": 5, "古墓": 6, "終南山": 4, "嘉興": 7, "大理": 6},
+      "大理": {"襄陽城": 9, "古墓": 8, "終南山": 7, "嘉興": 4, "絕情谷": 6}
     },
     "regions": {
-      "襄陽城": "蒙古大軍圍城，戰雲密佈，義士雲集",
-      "終南山": "重山疊嶂，活死人墓深藏其間，全真派香火鼎盛",
-      "嘉興": "南湖煙雨，文人雅士薈萃，亦暗藏殺機",
-      "百花谷": "世外桃園，百花盛開，老頑童獨居之地",
-      "蒙古軍營": "鐵騎如林，戰鼓雷動，國師坐鎮中軍",
-      "江南": "水鄉澤國，江湖人四處漂泊，消息最靈通"
-    }
+      "襄陽城": "郭靖夫婦坐鎮，正邪交鋒前線",
+      "古墓": "小龍女隱居之所，清幽隔世",
+      "終南山": "全真教本山，道法森嚴",
+      "嘉興": "陸家莊所在，南武林中樞",
+      "絕情谷": "公孫止盤踞，情花劇毒",
+      "大理": "天龍寺與段氏故地，南陲雄城"
+    },
+    "player_setting": "你是一名闖蕩江湖的無名少年，機緣巧合踏入神鵰世界。你可以行走各區、結交人物、贈禮切磋，逐步改變善惡走向。"
   },
   "npcs": [
     {
-      "key": "yang_guo",
+      "key": "yangguo",
       "name": "楊過",
-      "title": "神鵰大俠",
-      "location": "終南山 · 活死人墓外",
-      "mood": "狂喜與忐忑交織",
-      "attitude": "對小龍女失而復得，對外人更無顧忌",
-      "affinity": 30,
+      "title": "神鵰俠",
+      "region": "襄陽城",
+      "location": "城樓之上",
+      "mood": "豪邁中帶幾分滄桑",
+      "attitude": "重情重義，不拘小節",
+      "alignment": 700,
+      "affinity": 0,
       "dialogue": [
-        "姑姑，我終於見到你了！",
-        "過兒，你瘦了。外面……可有受苦？",
-        "任憑天下人笑我，我只要你一人。"
+        "我楊過一生跌宕，最不悔的便是對姑姑的心。",
+        "蒙古鐵騎壓境，這襄陽城，我楊過誓死不退！",
+        "郭伯伯待我如子，這份恩情，我此生不忘。"
       ],
-      "relations": {
-        "xiaolongnu": 100,
-        "guo_jing": 60,
-        "huang_rong": 45,
-        "guo_fu": 30,
-        "zhou_botong": 70,
-        "li_mochou": 15,
-        "jinlun_fawang": 25,
-        "cheng_ying": 65,
-        "lu_wushuang": 68
-      },
       "chat_options": [
         {
-          "say": "楊大俠，恭喜你與龍姑娘團聚！",
-          "reply": "多謝！今日心情好，請你飲終南山嘅雪水酒！",
-          "affinity_delta": 3,
-          "alignment_delta": 1
+          "say": "楊大哥，蒙古人此次來勢洶洶，你可有退敵之策？",
+          "reply": "退敵？我楊過從不知退字怎麼寫！你若有膽，便隨我上城樓殺敵！",
+          "affinity_delta": 5,
+          "alignment_delta": 10
         },
         {
-          "say": "過兒，你既與姑姑重逢，不如去襄陽助郭伯伯一臂之力？",
-          "reply": "襄陽……姑姑唔想我離開。再說，我幫邊個都好過幫蒙古人。",
-          "affinity_delta": 1,
-          "alignment_delta": 2
+          "say": "楊大哥，你與小龍女分離多年，可曾想過放棄？",
+          "reply": "楊過一生從未對姑姑有過半分放棄之念。生生死死，這顆心永不變。",
+          "affinity_delta": 10,
+          "alignment_delta": 15
         },
         {
-          "say": "你為一個女人連師門都唔顧，值得咩？",
-          "reply": "你懂乜？姑姑係我性命，邊個都比唔上。再講，我唔客氣。",
-          "affinity_delta": -3,
-          "alignment_delta": -1
+          "say": "楊大哥，你武功蓋世，何不獨善其身？",
+          "reply": "獨善其身？哼，郭伯伯與襄陽百姓數十萬性命，你叫我楊過獨善其身？",
+          "affinity_delta": -10,
+          "alignment_delta": -20
         }
       ],
-      "alignment": 600,
-      "region": "終南山"
+      "relations": {
+        "xiaolongnu": "摯愛",
+        "guojing": "恩重如山",
+        "huangrong": "如姐如師",
+        "liguomochou": "不共戴天"
+      }
     },
     {
       "key": "xiaolongnu",
       "name": "小龍女",
-      "title": "古墓派傳人",
-      "location": "終南山 · 活死人墓",
-      "mood": "冰封解凍，柔情暗涌",
-      "attitude": "對楊過的歸來既喜且憂",
-      "affinity": 15,
+      "title": "古墓傳人",
+      "region": "古墓",
+      "location": "寒玉床畔",
+      "mood": "清冷淡漠，偶見柔光",
+      "attitude": "冷若冰霜，實則情深",
+      "alignment": 600,
+      "affinity": 0,
       "dialogue": [
-        "過兒，你……你真係嚟咗。",
-        "外面嘅事，我唔理。你留下便好。",
-        "姑姑唔會再拋下你。"
+        "過兒……你真的來了。",
+        "外面的事，我不理。你留下便好。",
+        "姑姑不會再拋下你。"
       ],
-      "relations": {
-        "yang_guo": 100,
-        "li_mochou": 20
-      },
       "chat_options": [
         {
-          "say": "龍姑娘，楊過為你受盡苦楚，你可會心軟？",
-          "reply": "……佢受嘅苦，我都知。過兒，我唔會再走。",
-          "affinity_delta": 2,
-          "alignment_delta": 1
+          "say": "小龍女前輩，你在古墓多年，可曾想念外面的世界？",
+          "reply": "外面的世界，與我無關。過兒在，便是我的世界。",
+          "affinity_delta": 5,
+          "alignment_delta": 5
         },
         {
-          "say": "古墓派武功天下無雙，不如出山行俠仗義？",
-          "reply": "外面嘅事，與我無關。你出去。",
-          "affinity_delta": -1,
-          "alignment_delta": 0
+          "say": "古墓派武功天下無雙，你何不出山行俠仗義？",
+          "reply": "外面的事，與我無關。你出去。",
+          "affinity_delta": -5,
+          "alignment_delta": 10
         },
         {
-          "say": "你同楊過天生一對，但只怕江湖不容。",
-          "reply": "江湖容唔容，我唔在意。過兒在意便夠。",
-          "affinity_delta": 1,
+          "say": "小龍女，你與楊過的愛情，讓多少人羨慕。",
+          "reply": "羨慕？你懂什麼。我們經歷的苦，說也說不完。",
+          "affinity_delta": 3,
           "alignment_delta": 0
         }
       ],
-      "alignment": 500,
-      "region": "終南山"
+      "relations": {
+        "yangguo": "摯愛",
+        "sunbubo": "師姐",
+        "liguomochou": "同門冤家"
+      }
     },
     {
-      "key": "guo_jing",
+      "key": "guojing",
       "name": "郭靖",
       "title": "北俠",
-      "location": "襄陽城 · 城頭",
-      "mood": "凝重決斷",
-      "attitude": "對今夜襲營成敗看得極重",
-      "affinity": 35,
+      "region": "襄陽城",
+      "location": "大帥帳中",
+      "mood": "憂國憂民，神情肅穆",
+      "attitude": "厚道正直，心繫蒼生",
+      "alignment": 900,
+      "affinity": 0,
       "dialogue": [
-        "蓉兒，今夜一戰，只許成功。",
-        "蒙古人糧道一亂，襄陽可多撐數日。",
-        "過兒若在，必是好幫手……唉。"
+        "為國為民，俠之大者。這八个字，郭靖一生不敢忘。",
+        "襄陽若破，天下蒼生何辜！我郭靖死也要死在城頭。",
+        "過兒長大了，他比我郭靖當年強多了。"
       ],
-      "relations": {
-        "huang_rong": 96,
-        "yang_guo": 60,
-        "guo_fu": 80,
-        "jinlun_fawang": 8
-      },
       "chat_options": [
         {
-          "say": "郭大俠，今夜襲營，我願為先鋒！",
-          "reply": "好！有此膽色，不愧少年英傑。但要小心，蒙古人不好惹。",
-          "affinity_delta": 3,
-          "alignment_delta": 3
+          "say": "郭大俠，你當年為何選擇死守襄陽？",
+          "reply": "我郭靖资质愚鈍，但明白一個道理：俠之大者，為國為民。",
+          "affinity_delta": 10,
+          "alignment_delta": 20
         },
         {
-          "say": "郭伯伯，糧草一燒，蒙古人會不會屠城報復？",
-          "reply": "……我何嘗不知。但坐以待斃，死得更快。",
-          "affinity_delta": 1,
-          "alignment_delta": 1
+          "say": "郭大俠，襄陽城守得住嗎？",
+          "reply": "守不守得住是一回事，守不守是另一回事。我郭靖，從未想過棄城。",
+          "affinity_delta": 5,
+          "alignment_delta": 10
         },
         {
-          "say": "守城守到幾時？不如棄城南下，保存實力。",
-          "reply": "襄陽一失，江南亦危。我郭靖死於此城，亦在所不惜。",
-          "affinity_delta": -3,
-          "alignment_delta": -2
+          "say": "郭大俠，不如學那隱士，退隱江湖？",
+          "reply": "退隱？你叫我郭靖拋下這滿城百姓？你走吧，我不怪你。",
+          "affinity_delta": -10,
+          "alignment_delta": -30
         }
       ],
-      "alignment": 800,
-      "region": "襄陽城"
+      "relations": {
+        "huangrong": "伉儷情深",
+        "yangguo": "如子",
+        "yelvqi": "死敵",
+        "huangyingshi": "故交"
+      }
     },
     {
-      "key": "huang_rong",
+      "key": "huangrong",
       "name": "黃蓉",
-      "title": "丐幫前幫主",
-      "location": "襄陽城 · 帥府",
-      "mood": "心思縝密，佈局周全",
-      "attitude": "對郭靖的擔憂了然於胸",
-      "affinity": 25,
+      "title": "幫主夫人",
+      "region": "襄陽城",
+      "location": "城樓內室",
+      "mood": "精明練達，偶現疲態",
+      "attitude": "機敏詼諧，護短心重",
+      "alignment": 650,
+      "affinity": 0,
       "dialogue": [
-        "靖哥哥，我已安排七路輕騎，聲東擊西。",
-        "糧草一燒，蒙古人至少亂三日。",
-        "只盼無雙佢哋喺嘉興唔好出事。"
+        "我黃蓉當年也是聰明絕頂，如今卻為這城操碎了心。",
+        "靖哥哥是大英雄，我便做他背後最強的後盾。",
+        "過兒那孩子，像極了他爹。"
       ],
-      "relations": {
-        "guo_jing": 96,
-        "guo_fu": 85,
-        "yang_guo": 45,
-        "jinlun_fawang": 49
-      },
       "chat_options": [
         {
-          "say": "蓉姨，我打探到蒙古後軍防備鬆懈。",
-          "reply": "當真？你帶路，我即刻調兵。做得好！",
-          "affinity_delta": 4,
-          "alignment_delta": 3
+          "say": "蓉姐姐，你當年桃花島的日子，可曾懷念？",
+          "reply": "桃花島的風景，自然是好的。但靖哥哥在哪，哪裡便是我的桃花島。",
+          "affinity_delta": 8,
+          "alignment_delta": 5
         },
         {
-          "say": "黃幫主，今夜襲營可有萬全之策？",
-          "reply": "邊有萬全？七分靠謀，三分靠運。你幫我傳令便是。",
-          "affinity_delta": 2,
-          "alignment_delta": 1
+          "say": "黃幫主，丐幫如今如何了？",
+          "reply": "丐幫兄弟分散各處，但義氣不改。有他們在，襄陽城便不會孤軍奮戰。",
+          "affinity_delta": 5,
+          "alignment_delta": 10
         },
         {
-          "say": "你咁多計，當初點會嫁俾郭靖？",
-          "reply": "你問呢啲做乜？靖哥哥係大英雄，我鍾意佢實在。",
-          "affinity_delta": -2,
-          "alignment_delta": -1
-        }
-      ],
-      "alignment": 750,
-      "region": "襄陽城"
-    },
-    {
-      "key": "guo_fu",
-      "name": "郭芙",
-      "title": "郭家大小姐",
-      "location": "襄陽城",
-      "mood": "驕縱躁急",
-      "attitude": "眼高於頂",
-      "affinity": 12,
-      "dialogue": [
-        "你邊個？識唔識規矩㗎？",
-        "大武小武都讓我三分，你算咩？"
-      ],
-      "relations": {
-        "yang_guo": 30,
-        "huang_rong": 85,
-        "guo_jing": 80
-      },
-      "chat_options": [
-        {
-          "say": "郭小姐，令尊今夜襲營，你可會擔心？",
-          "reply": "爹爹武功蓋世，有咩好擔心？倒是你，鬼鬼祟祟做乜？",
-          "affinity_delta": 1,
-          "alignment_delta": 0
-        },
-        {
-          "say": "郭芙，你爹娘為國操勞，你可曾幫過手？",
-          "reply": "我……我點冇幫？我日日都練劍！你憑咩質疑我？",
-          "affinity_delta": -2,
-          "alignment_delta": 1
-        },
-        {
-          "say": "大小姐，城外蒙古人咁多，你不如跟隨令堂學智謀。",
-          "reply": "學智謀？我先唔學娘親咁多心眼。我學爹爹打天下！",
-          "affinity_delta": 0,
+          "say": "黃蓉，你說過兒是不是比你當年更聰明？",
+          "reply": "那小子倒是機靈，只是太過重情。重情是好事，也是軟肋。",
+          "affinity_delta": 3,
           "alignment_delta": 0
         }
       ],
-      "alignment": 600,
-      "region": "襄陽城"
+      "relations": {
+        "guojing": "伉儷情深",
+        "yangguo": "視如己出",
+        "huangyingshi": "師徒",
+        "luwushuang": "晚輩"
+      }
     },
     {
-      "key": "li_mochou",
+      "key": "liguomochou",
       "name": "李莫愁",
       "title": "赤練仙子",
-      "location": "江湖漂泊",
-      "mood": "殺意沸騰，又被勾起舊恨",
-      "attitude": "對程英、陸無雙的纏鬥怒不可遏",
-      "affinity": 5,
-      "dialogue": [
-        "陸無雙！你個賤婢，仲敢偷襲我？",
-        "程英，你簫聲好聽，可惜今日要葬身湖底！",
-        "問世間……哼，邊個唱我就殺邊個！"
-      ],
-      "relations": {
-        "xiaolongnu": 20,
-        "yang_guo": 15,
-        "cheng_ying": 45,
-        "lu_wushuang": 45
-      },
-      "chat_options": [
-        {
-          "say": "李前輩，陸無雙受咗重傷，你何苦趕盡殺絕？",
-          "reply": "受傷？佢偷我秘傳，就該死！你再講，連你一齊殺。",
-          "affinity_delta": -2,
-          "alignment_delta": -1
-        },
-        {
-          "say": "赤練仙子武功蓋世，何必同兩個小輩計較？",
-          "reply": "哼，算你識講話。但今日佢哋走唔甩。",
-          "affinity_delta": 2,
-          "alignment_delta": 0
-        },
-        {
-          "say": "你殺人如麻，可曾想過自己亦有心愛之人？",
-          "reply": "……你講乜？再講一句，我殺你祭旗！",
-          "affinity_delta": -4,
-          "alignment_delta": -2
-        }
-      ],
+      "region": "絕情谷",
+      "location": "情花叢中",
+      "mood": "殺意凜然，偶見癡狂",
+      "attitude": "心狠手辣，因情生恨",
       "alignment": 100,
-      "region": "江南"
-    },
-    {
-      "key": "jinlun_fawang",
-      "name": "金輪法王",
-      "title": "蒙古國師",
-      "location": "蒙古軍營",
-      "mood": "鋒芒畢露，志在必得",
-      "attitude": "對中原高手戰意更濃",
-      "affinity": 8,
+      "affinity": 0,
       "dialogue": [
-        "郭靖，你守得住城，守唔守得住人心？",
-        "中原臥虎藏龍？哈，我龍象般若功正好領教。",
-        "嗰個楊過……若肯為我所用，何愁大事不成。"
+        "世間男子皆薄倖，我李莫愁今日見一個殺一個！",
+        "陸無雙那賊婢，偷我秘傳，我必取她性命！",
+        "問世間……哼，情為何物？"
       ],
-      "relations": {
-        "guo_jing": 8,
-        "yang_guo": 25
-      },
       "chat_options": [
         {
-          "say": "法王，郭靖今夜可能襲營，你可有防備？",
-          "reply": "哦？你肯通風報信？好，饒你一命。",
-          "affinity_delta": 3,
-          "alignment_delta": -3
+          "say": "李莫愁，你當年也是癡情之人，何必如此？",
+          "reply": "癡情？我當年瞎了眼！如今我看透了，男人沒一個好東西。",
+          "affinity_delta": -5,
+          "alignment_delta": -15
         },
         {
-          "say": "法王，龍象般若功可有破綻？",
-          "reply": "破綻？天下武功，無敵便係破綻。你想試？",
-          "affinity_delta": 1,
-          "alignment_delta": 0
+          "say": "赤練仙子，你手上的人命，可曾有過悔意？",
+          "reply": "悔？我李莫愁從不知悔字怎麼寫！他們負我，我殺他們，天經地義！",
+          "affinity_delta": -10,
+          "alignment_delta": -20
         },
         {
-          "say": "你助蒙古侵宋，與禽獸何異？",
-          "reply": "大膽！我乃國師，你敢辱我？來人，拖出去斬了！",
-          "affinity_delta": -4,
-          "alignment_delta": -2
+          "say": "李莫愁，陸無雙受了重傷，你何苦趕盡殺絕？",
+          "reply": "受傷？她偷我秘傳，就該死！你再說，連你一起殺。",
+          "affinity_delta": -15,
+          "alignment_delta": -25
         }
-      ],
-      "alignment": 50,
-      "region": "蒙古軍營"
-    },
-    {
-      "key": "zhou_botong",
-      "name": "周伯通",
-      "title": "老頑童",
-      "location": "百花谷",
-      "mood": "玩興大發",
-      "attitude": "見到後生就想到嚟玩",
-      "affinity": 55,
-      "dialogue": [
-        "哈哈！陪我玩嚇啦，玩唔玩養蜜蜂？",
-        "我師兄王重陽死咗好耐，但佢啲道理我仲記得晒。"
       ],
       "relations": {
-        "yang_guo": 70,
-        "guo_jing": 75
-      },
-      "chat_options": [
-        {
-          "say": "老頑童，聽講你左右互搏好厲害，可否教我？",
-          "reply": "教你可以，但要先陪我玩三日三夜！",
-          "affinity_delta": 3,
-          "alignment_delta": 0
-        },
-        {
-          "say": "周爺爺，你武功咁高，點解唔去襄陽幫郭大俠？",
-          "reply": "幫？我幫過啦！打打殺殺冇意思，不如養蜜蜂。",
-          "affinity_delta": 1,
-          "alignment_delta": 1
-        },
-        {
-          "say": "你成日唔正經，枉為高手。",
-          "reply": "哈！正經有乜好？悶死人！你先正經得滯！",
-          "affinity_delta": -1,
-          "alignment_delta": 0
-        }
-      ],
-      "alignment": 700,
-      "region": "百花谷"
+        "xiaolongnu": "同門冤家",
+        "luwushuang": "不共戴天",
+        "chengying": "仇敵"
+      }
     },
     {
-      "key": "lu_wushuang",
+      "key": "luwushuang",
       "name": "陸無雙",
-      "title": "跛腳姑娘",
-      "location": "江南",
-      "mood": "拼死一搏，毫不畏縮",
-      "attitude": "對李莫愁恨極，對程英依賴",
-      "affinity": 40,
+      "title": "陸家莊大小姐",
+      "region": "嘉興",
+      "location": "陸家莊內",
+      "mood": "英氣勃勃，帶著幾分倔強",
+      "attitude": "直爽豪邁，嫉惡如仇",
+      "alignment": 600,
+      "affinity": 0,
       "dialogue": [
-        "傻蛋唔喺度，我自己一樣打！",
-        "表姐，我攻佢左脅，你封佢退路！",
-        "李莫愁，今日你走唔甩！"
+        "我陸無雙雖然腿有不便，但這把刀從未卷刃！",
+        "表姐程英對我有再造之恩，我此生不忘。",
+        "李莫愁那賊尼，我遲早找她算賬！"
       ],
-      "relations": {
-        "yang_guo": 68,
-        "cheng_ying": 81,
-        "li_mochou": 47
-      },
       "chat_options": [
         {
-          "say": "無雙姑娘，我幫你擋李莫愁一招！",
-          "reply": "傻蛋……唔好，你擋唔住！快走！",
-          "affinity_delta": 3,
-          "alignment_delta": 2
+          "say": "陸姑娘，你的腿傷可曾好些了？",
+          "reply": "腿廢了又怎樣？我陸無雙一樣能仗劍行走江湖！",
+          "affinity_delta": 8,
+          "alignment_delta": 5
         },
         {
-          "say": "陸姑娘，你腿傷未癒，何必硬撐？",
-          "reply": "廢話！我腿廢咗，把刀唔廢！李莫愁，再嚟！",
-          "affinity_delta": 1,
-          "alignment_delta": 1
+          "say": "陸姑娘，你與程英姑娘感情真好。",
+          "reply": "表姐是我最親的人。誰敢動她一根汗毛，我陸無雙跟她拼命！",
+          "affinity_delta": 10,
+          "alignment_delta": 10
         },
         {
-          "say": "你同李莫愁有仇，不如投靠郭大俠尋個庇護。",
-          "reply": "我陸無雙唔靠邊個！仇我自己報，命我自己拼！",
-          "affinity_delta": -1,
-          "alignment_delta": 0
+          "say": "陸無雙，你與李莫愁的仇恨，何時才能了結？",
+          "reply": "了結？除非她死，或者我死！這仇不共戴天！",
+          "affinity_delta": -3,
+          "alignment_delta": -5
         }
       ],
-      "alignment": 600,
-      "region": "嘉興"
+      "relations": {
+        "chengying": "表姐妹",
+        "liguomochou": "不共戴天",
+        "xiaolongnu": "同門"
+      }
     },
     {
-      "key": "cheng_ying",
+      "key": "chengying",
       "name": "程英",
       "title": "桃花島傳人",
-      "location": "嘉興 · 南湖",
-      "mood": "強敵當前，沉著應對",
-      "attitude": "保護陸無雙，寸步不讓",
-      "affinity": 45,
+      "region": "嘉興",
+      "location": "陸家莊旁",
+      "mood": "溫婉從容，帶著淡淡憂愁",
+      "attitude": "溫文爾雅，心思細膩",
+      "alignment": 700,
+      "affinity": 0,
       "dialogue": [
-        "無雙妹，穩住，我拖住佢。",
-        "李莫愁，你若再進一步，莫怪我桃花島手段。",
-        "簫聲能退敵，亦能送終。"
+        "我師父黃藥師，教了我一身本事，我不能辜負他。",
+        "無雙妹妹就像我的親妹妹，我會拼死保護她。",
+        "楊大哥……你是好兒郎。"
       ],
-      "relations": {
-        "yang_guo": 65,
-        "lu_wushuang": 81,
-        "li_mochou": 47
-      },
       "chat_options": [
         {
-          "say": "程姑娘，我助你對付李莫愁。",
-          "reply": "多謝好意。但你武功唔夠，反而累事。保護好自己。",
-          "affinity_delta": 2,
-          "alignment_delta": 2
+          "say": "程姑娘，你的玉簫吹得真好。",
+          "reply": "多謝夸獎。師父說，音律可通人心，也可殺人於無形。",
+          "affinity_delta": 5,
+          "alignment_delta": 5
         },
         {
-          "say": "程姑娘，不如暫避鋒芒，日後再圖？",
-          "reply": "避得一時，避唔了一世。今日若退，無雙妹更加危險。",
-          "affinity_delta": 1,
-          "alignment_delta": 1
-        },
-        {
-          "say": "你同陸無雙咁好，唔似師姐妹，倒似親姊妹。",
-          "reply": "……無雙妹係我親人。邊個傷佢，我同邊個拼命。",
+          "say": "程姑娘，你對楊過的心意，他可知道？",
+          "reply": "……楊大哥心中只有小龍女。有些事，藏在心裡便好。",
           "affinity_delta": 3,
-          "alignment_delta": 1
+          "alignment_delta": 0
+        },
+        {
+          "say": "程英，不如暫避鋒芒，日後再圖？",
+          "reply": "避得一時，避不了一世。今日若退，無雙妹更加危險。",
+          "affinity_delta": 8,
+          "alignment_delta": 15
         }
       ],
-      "alignment": 700,
-      "region": "嘉興"
+      "relations": {
+        "yangguo": "心儀",
+        "luwushuang": "表姐妹",
+        "huangyingshi": "師父"
+      }
+    },
+    {
+      "key": "gongsunzhi",
+      "name": "公孫止",
+      "title": "絕情谷主",
+      "region": "絕情谷",
+      "location": "情花大廳",
+      "mood": "陰鷙深沉，笑意不達眼底",
+      "attitude": "笑裡藏刀，心機極深",
+      "alignment": 150,
+      "affinity": 0,
+      "dialogue": [
+        "歡迎來到絕情谷。這裡的規矩只有一條：聽我的。",
+        "情花劇毒，天下無解。你最好別碰那些花。",
+        "小龍女？她差點成了我的新娘。可惜。"
+      ],
+      "chat_options": [
+        {
+          "say": "公孫谷主，絕情谷的毒物，可有解法？",
+          "reply": "有啊，我的解藥。只是這世道，什麼都講代價。你拿什麼來換？",
+          "affinity_delta": 2,
+          "alignment_delta": -10
+        },
+        {
+          "say": "公孫止，你與小龍女的婚事，是真的嗎？",
+          "reply": "婚事？哼，當年我差點得手。可惜楊過那小子攪了局。否則，她早就是谷主夫人了。",
+          "affinity_delta": -10,
+          "alignment_delta": -20
+        },
+        {
+          "say": "谷主大人，不如放過那些被你抓的人？",
+          "reply": "放過他們？你當我公孫止是善人？來人，把他丟進情花叢！",
+          "affinity_delta": -15,
+          "alignment_delta": -25
+        }
+      ],
+      "relations": {
+        "xiaolongnu": "覬覦",
+        "yangguo": "仇敵",
+        "liguomochou": "互相利用"
+      }
+    },
+    {
+      "key": "zhoubotong",
+      "name": "周伯通",
+      "title": "老頑童",
+      "region": "終南山",
+      "location": "活死人墓外",
+      "mood": "嬉皮笑臉，沒個正經",
+      "attitude": "不拘禮法，天真爛漫",
+      "alignment": 550,
+      "affinity": 0,
+      "dialogue": [
+        "哈哈！陪我玩一下嘛，玩不玩養蜜蜂？",
+        "我師兄王重陽死了好久，但他那些道理我還記得。",
+        "左右互搏？哈哈，這是我周伯通最得意的功夫！"
+      ],
+      "chat_options": [
+        {
+          "say": "老頑童，聽說你左右互搏很厲害，可否教我？",
+          "reply": "教你可以，但要先陪我玩三天三夜！",
+          "affinity_delta": 5,
+          "alignment_delta": 5
+        },
+        {
+          "say": "周老前輩，你武功那麼高，為何不去襄陽幫郭大俠？",
+          "reply": "幫？我幫過啦！打打殺殺沒意思，不如養蜜蜂。",
+          "affinity_delta": -5,
+          "alignment_delta": -10
+        },
+        {
+          "say": "周前輩，你成天不正經，枉為高手。",
+          "reply": "什麼不正經？我這叫隨心所欲！你才枉為年輕人，不懂享受人生！",
+          "affinity_delta": 3,
+          "alignment_delta": 0
+        }
+      ],
+      "relations": {
+        "guojing": "忘年交",
+        "yangguo": "忘年交",
+        "yelvqi": "宿敵"
+      }
+    },
+    {
+      "key": "yelvqi",
+      "name": "耶律齊",
+      "title": "蒙古將領",
+      "region": "襄陽城",
+      "location": "城外營帳",
+      "mood": "沉穩內斂，目光如鷹",
+      "attitude": "冷靜觀察，亦正亦邪",
+      "alignment": 350,
+      "affinity": 0,
+      "dialogue": [
+        "我是蒙古人，但我也是耶律齊。",
+        "郭靖的守城之術，確是天下無雙。",
+        "這場仗，勝負還在未定之天。"
+      ],
+      "chat_options": [
+        {
+          "say": "耶律齊，你身為蒙古人，為何在襄陽城徘徊？",
+          "reply": "我在觀察敵情。但也可以說，我在尋找心中的答案。",
+          "affinity_delta": 3,
+          "alignment_delta": 0
+        },
+        {
+          "say": "耶律齊，你對郭靖是敬佩還是敵視？",
+          "reply": "敬佩。他是一位真正的英雄。可惜，他是我的敵人。",
+          "affinity_delta": 5,
+          "alignment_delta": 5
+        },
+        {
+          "say": "蒙古大汗許你高官厚祿，你為何遲遲不肯出手？",
+          "reply": "我在等。等一個時機，等一個可以讓我心安理得的選擇。",
+          "affinity_delta": 2,
+          "alignment_delta": -5
+        }
+      ],
+      "relations": {
+        "guojing": "亦敵亦友",
+        "yangguo": "忌憚",
+        "yelvzhang": "兄長"
+      }
     }
   ],
   "events": [
     {
-      "day": 1,
-      "text": "蒙古大軍屯兵襄陽城外，戰雲密佈",
-      "npcs": [
-        "guo_jing",
-        "huang_rong",
-        "jinlun_fawang"
-      ]
+      "day": 420,
+      "text": "蒙古大軍壓境，襄陽城岌岌可危",
+      "region": "襄陽城"
     },
     {
-      "day": 1,
-      "text": "楊過夜宿終南山破廟，遙望活死人墓燈火",
-      "npcs": [
-        "yang_guo",
-        "xiaolongnu"
-      ]
+      "day": 423,
+      "text": "楊過與小龍女在古墓重逢，鶼鰈情深",
+      "region": "古墓"
     },
     {
-      "day": 1,
-      "text": "李莫愁喺江南出現，施展赤練神掌，江湖人心惶惶",
-      "npcs": [
-        "li_mochou"
-      ]
+      "day": 425,
+      "text": "李莫愁在江南出現，施展赤練神掌，江湖人心惶惶",
+      "region": "嘉興"
     },
     {
-      "day": 2,
-      "text": "金輪法王單騎到襄陽城下叫陣，郭靖登城回應，雙方言語交鋒，一場大戰如箭在弦",
-      "npcs": [
-        "guo_jing",
-        "jinlun_fawang",
-        "huang_rong"
-      ]
+      "day": 426,
+      "text": "耶律齊獨自來到襄陽城外，身份成謎",
+      "region": "襄陽城"
     },
     {
-      "day": 2,
-      "text": "楊過夜半喺終南山長嘯寄情，嘯聲直入活死人墓，小龍女心湖微起漣漪",
-      "npcs": [
-        "yang_guo",
-        "xiaolongnu"
-      ]
-    },
-    {
-      "day": 2,
-      "text": "李莫愁追查《五毒秘傳》下落殺到嘉興，程英南湖畔簫聲示警，雙方初次照面，劍拔弩張",
-      "npcs": [
-        "li_mochou",
-        "cheng_ying",
-        "lu_wushuang"
-      ]
-    },
-    {
-      "day": 3,
-      "text": "郭靖與黃蓉商議，決定派輕騎出城，夜襲蒙古糧草輜重，以緩城中糧草之急",
-      "npcs": [
-        "guo_jing",
-        "huang_rong"
-      ]
-    },
-    {
-      "day": 3,
-      "text": "楊過按捺不住，闖入活死人墓尋小龍女，卻在石室中與小龍女重逢，二人相顧無言",
-      "npcs": [
-        "yang_guo",
-        "xiaolongnu"
-      ]
-    },
-    {
-      "day": 3,
-      "text": "李莫愁與程英、陸無雙在嘉興南湖激戰，程英以玉簫劍法周旋，陸無雙尋隙偷襲，李莫愁怒極",
-      "npcs": [
-        "li_mochou",
-        "cheng_ying",
-        "lu_wushuang"
-      ]
+      "day": 427,
+      "text": "楊過夜半在終南山長嘯寄情，嘯聲直入活死人墓，小龍女心湖微起漣漪",
+      "region": "終南山"
     }
   ]
 }
