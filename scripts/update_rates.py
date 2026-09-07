@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """
 香港銀行定期存款利率自動更新腳本（完整版）
-整合爬蟲 + Parser + 變動報告
+整合爬蟲 + Parser + LLM 驗證 + 變動報告
 
 流程：
 1. 用 Playwright 爬取 22 間銀行網頁
-2. 用各銀行嘅 parser 提取利率
-3. 比對舊利率，標注變動
-4. 更新 rates.json
-5. Git commit + push
-6. 輸出變動報告
+2. 用各銀行嘅 parser 提取利率（初篩）
+3. LLM 比對 Parser 結果同 sicsicduck.com 現有資料
+4. 如果有變動 → LLM 上銀行官網核對一次，確保正確
+5. 更新 rates.json
+6. Git commit + push
+7. 輸出變動報告
 """
 
 import json
@@ -525,15 +526,15 @@ def main():
             'parsed': parsed_result,
         })
     
-    llm_results = llm_verify_all(banks_for_llm)
+    llm_results = llm_verify_all(banks_for_llm, old_rates=old_rates, bank_urls_data=url_data)
     llm_stats = llm_results.get('stats', {})
     llm_verified = llm_results.get('verified', {})
     llm_discrepancies = llm_results.get('discrepancies', [])
     
-    logger.info(f"  LLM 驗證完成: {llm_stats.get('parser_ok', 0)} 一致, "
-                f"{llm_results['stats'].get('llm_fixed', 0)} 修正, "
-                f"{llm_results['stats'].get('llm_only', 0)} LLM接管, "
-                f"{llm_results['stats'].get('llm_failed', 0)} 失敗")
+    logger.info(f"  LLM 驗證完成: {llm_stats.get('parser_ok', 0)} 無變動, "
+                f"{llm_stats.get('llm_fixed', 0)} 變動已核對, "
+                f"{llm_stats.get('llm_only', 0)} Parser失敗LLM接管, "
+                f"{llm_stats.get('llm_failed', 0)} 失敗")
     
     # 用 LLM 驗證結果覆蓋 rates.json 入面嘅利率
     if llm_verified:
