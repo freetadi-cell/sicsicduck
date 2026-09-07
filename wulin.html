@@ -222,6 +222,15 @@ async function loadNpcSkills(npcKey){
   return [];
 }
 
+const BASIC_SKILLS=['瑛姑指法','基礎吐納','基礎步法'];
+async function grantBasicSkills(playerName){
+  for(const sk of BASIC_SKILLS){
+    if(!_playerSkillsCache.some(ps=>ps.skill_key===sk)){
+      await playerLearnSkill(playerName,sk);
+    }
+  }
+}
+
 async function loadPlayerSkills(playerName){
   try{
     const r=await fetch(`${SUPABASE_URL}/rest/v1/player_skills?select=skill_key,equipped&player_name=eq.${encodeURIComponent(playerName)}`,{
@@ -370,12 +379,17 @@ async function regGo(){
   const migrating=old&&old.name===name&&!a[name];
   if(a[name]){authErr('這個名號已有人使用，請另選一個');return}
   const ph=await sha256(p1);
-  const st=migrating?old:{name,xp:0,alignment:500,martial:10,neigong:10,qinggong:10,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
+  const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
   if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
   a[name]={ph,save:st};
   const saved=await saveAccounts(a);
   if(!saved){authErr('雲端儲存失敗，請稍後再試');return}
   localStorage.setItem('wulin_player',JSON.stringify(st));
+  // Give new player basic skills
+  if(!migrating){
+    await playerLearnSkill(name,'基礎步法');
+    await playerLearnSkill(name,'基礎吐納');
+  }
   $('auth').classList.remove('open');
   toast(migrating?`存檔已同步到雲端 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);render();
 }
@@ -521,6 +535,7 @@ async function load(){
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
   _wulinReady=true;
   await loadPlayerSkills(player().name);
+  await grantBasicSkills(player().name);
   startTravelTimer();
   render();
 }
