@@ -202,7 +202,8 @@ async function loadSkillsDb(){
     const r=await fetch(`${SUPABASE_URL}/rest/v1/skills?select=key,name,type,power,rarity,description&order=type,power.desc`,{
       headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON}
     });
-    if(r.ok)_skillsDb=await r.json();
+    if(r.ok){_skillsDb=await r.json();console.log('[SKILLS] loaded',_skillsDb.length,'skills')}
+    else{console.log('[SKILLS] fetch failed',r.status)}
   }catch(e){console.log('[SKILLS] load error',e)}
 }
 
@@ -262,8 +263,11 @@ function renderNpcSkillTags(skills,equipped){
   return skills.map(s=>renderSkillTag(s,equipped)).join('');
 }
 function renderPlayerHeaderSkills(){
-  const p=player();if(!p){$('playerSkillsText').textContent='—';return}
+  const p=player();
+  console.log('[SKILLS] renderHeader player:',p?p.name:'null','skillsDb:',_skillsDb.length,'playerSkills:',_playerSkillsCache.length);
+  if(!p){$('playerSkillsText').textContent='—';return}
   const equipped=getPlayerEquippedSkills(p.name);
+  console.log('[SKILLS] equipped:',equipped.length);
   if(equipped.length===0){$('playerSkillsText').textContent='未裝備技能';return}
   $('playerSkillsText').innerHTML=equipped.map(s=>renderSkillTag(s,true)).join(' ');
 }
