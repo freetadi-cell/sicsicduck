@@ -98,7 +98,10 @@
         "guojing": "恩重如山",
         "huangrong": "如姐如師",
         "liguomochou": "不共戴天"
-      }
+      },
+      "martial": 94,
+      "neigong": 85,
+      "qinggong": 90
     },
     {
       "key": "xiaolongnu",
@@ -139,7 +142,10 @@
         "yangguo": "摯愛",
         "sunbubo": "師姐",
         "liguomochou": "同門冤家"
-      }
+      },
+      "martial": 80,
+      "neigong": 82,
+      "qinggong": 95
     },
     {
       "key": "guojing",
@@ -181,7 +187,10 @@
         "yangguo": "如子",
         "yelvqi": "死敵",
         "huangyingshi": "故交"
-      }
+      },
+      "martial": 92,
+      "neigong": 90,
+      "qinggong": 70
     },
     {
       "key": "huangrong",
@@ -224,7 +233,10 @@
         "huangyingshi": "師徒",
         "luwushuang": "晚輩",
         "yelvqi": 51
-      }
+      },
+      "martial": 78,
+      "neigong": 72,
+      "qinggong": 82
     },
     {
       "key": "liguomochou",
@@ -265,7 +277,10 @@
         "xiaolongnu": "同門冤家",
         "luwushuang": "不共戴天",
         "chengying": "仇敵"
-      }
+      },
+      "martial": 75,
+      "neigong": 70,
+      "qinggong": 88
     },
     {
       "key": "luwushuang",
@@ -306,7 +321,10 @@
         "chengying": "表姐妹",
         "liguomochou": "不共戴天",
         "xiaolongnu": "同門"
-      }
+      },
+      "martial": 45,
+      "neigong": 40,
+      "qinggong": 50
     },
     {
       "key": "chengying",
@@ -347,7 +365,10 @@
         "yangguo": "心儀",
         "luwushuang": "表姐妹",
         "huangyingshi": "師父"
-      }
+      },
+      "martial": 50,
+      "neigong": 45,
+      "qinggong": 55
     },
     {
       "key": "gongsunzhi",
@@ -388,7 +409,10 @@
         "xiaolongnu": "覬覦",
         "yangguo": "仇敵",
         "liguomochou": "互相利用"
-      }
+      },
+      "martial": 72,
+      "neigong": 68,
+      "qinggong": 70
     },
     {
       "key": "zhoubotong",
@@ -429,7 +453,10 @@
         "guojing": "忘年交",
         "yangguo": "忘年交",
         "yelvqi": "宿敵"
-      }
+      },
+      "martial": 95,
+      "neigong": 88,
+      "qinggong": 85
     },
     {
       "key": "yelvqi",
@@ -470,7 +497,10 @@
         "guojing": "亦敵亦友",
         "yangguo": "忌憚",
         "yelvzhang": "兄長"
-      }
+      },
+      "martial": 70,
+      "neigong": 65,
+      "qinggong": 72
     }
   ],
   "events": [

@@ -61,6 +61,11 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .affbar{height:5px;background:var(--bg2);border-radius:3px;margin-top:10px;overflow:hidden}
 .affbar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold2),var(--gold));border-radius:3px;transition:width .4s}
 .affnum{font-size:11px;color:var(--muted);margin-top:4px;text-align:right}
+.stats{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.stat{font-size:11px;padding:2px 7px;border-radius:4px;background:var(--card2);color:var(--muted);white-space:nowrap}
+.stat b{color:var(--gold);font-weight:600}
+.mstats{display:flex;gap:10px;margin:10px 0;flex-wrap:wrap}
+.mstats .stat{font-size:13px;padding:4px 10px}
 .modal{display:none;position:fixed;inset:0;z-index:100}
 .modal.open{display:block}
 .mback{position:absolute;inset:0;background:rgba(0,0,0,.7)}
@@ -139,6 +144,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="chip">🧍 <b id="playerName">…</b></div>
     <div class="chip">⚡ 閱歷 <b id="playerXp">0</b></div>
     <div class="chip" id="playerAlignChip" style="display:none">⚖️ <b id="playerAlignLabel">中立</b> <span class="align-bar"><i id="playerAlignBar"></i></span> <b id="playerAlignNum">500</b></div>
+    <div class="chip">⚔️ <b id="playerMartial">10</b> · 🧘 <b id="playerNeigong">10</b> · 💨 <b id="playerQinggong">10</b></div>
     <div class="chip">👥 <b id="npcCount">–</b> 位 · <b id="npcLocal">–</b> 同區</div>
     <div class="chip"><a href="#" onclick="logout();return false">登出</a></div>
   </div>
@@ -275,7 +281,7 @@ async function regGo(){
   const migrating=old&&old.name===name&&!a[name];
   if(a[name]){authErr('這個名號已有人使用，請另選一個');return}
   const ph=await sha256(p1);
-  const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
+  const st=migrating?old:{name,xp:0,alignment:500,martial:10,neigong:10,qinggong:10,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
   if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
   a[name]={ph,save:st};
   const saved=await saveAccounts(a);
@@ -440,6 +446,7 @@ function render(){
   const p=player();console.log('[WULIN] render() player:',p?p.name:'NULL','region:',p?p.region:'?');
   if(!p){renderGuest();return}
   $('playerName').textContent=p.name;$('playerXp').textContent=p.xp;
+  $('playerMartial').textContent=p.martial||10;$('playerNeigong').textContent=p.neigong||10;$('playerQinggong').textContent=p.qinggong||10;
   $('playerAlignChip').style.display='';renderPlayerBar();
   $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
     `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
@@ -472,6 +479,7 @@ function renderNpcGrid(npcs){
       <div class="att">${esc(n.attitude||'')}</div>
       <div class="affbar"><i style="width:${a}%"></i></div>
       <div class="affnum">好感 ${a}${diff>300?' · <span style="color:var(--red)">道不同</span>':''}</div>
+      <div class="stats"><span class="stat">⚔️ <b>${n.martial||'?'}</b></span><span class="stat">🧘 <b>${n.neigong||'?'}</b></span><span class="stat">💨 <b>${n.qinggong||'?'}</b></span></div>
     </div>`}).join('');
 }
 
@@ -492,6 +500,7 @@ function openNpc(key){
     <div class="mname">${esc(n.name)}</div>
     <div class="mtitle">${esc(n.title||'')}</div>
     <div class="mmeta">📍 ${esc(n.location||'')} · ${esc(n.region||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div>
+    <div class="mstats"><span class="stat">⚔️ 武功 <b>${n.martial||'?'}</b></span><span class="stat">🧘 內功 <b>${n.neigong||'?'}</b></span><span class="stat">💨 輕功 <b>${n.qinggong||'?'}</b></span></div>
     <div class="affbig"><div class="affbar"><i id="affBar" style="width:${a}%"></i></div><span style="color:var(--gold);font-size:13px">好感 <span id="affNum">${a}</span><span id="affDelta" class="affdelta"></span></span></div>
     <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg"><span class="who">${esc(n.name)}</span>${esc(d)}</div>`).join('')}</div>`;
   if(diff<=100) html+=`<div class="difflabel friendly">道合 · 善惡差 ${diff}</div>`;
