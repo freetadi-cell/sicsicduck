@@ -4,6 +4,7 @@ update_wulin.py — Wulin Project 世界推進引擎（delta 模式）
 
 用 kimi-k3 模擬 NPC 之間嘅互動 + 時間流逝，每日演化世界。
 AI 只輸出「變化」（delta），Python 合併入世界 JSON——快、平、唔怕截斷。
+Day number 由 code 自動計算，唔信 AI 輸出，確保每日只 +1。
 
 版面 wulin.html（靜態）讀 data/wulin_world.json 顯示世界。
 
@@ -26,6 +27,10 @@ WORLD_FILE = ROOT / "data" / "wulin_world.json"
 OPENCLAW_CFG = Path("/home/freet/.openclaw/openclaw.json")
 API_BASE = "https://yuanyuaicloud.cn/v1"
 API_MODEL = "kimi-k3"
+
+# Season cycle: 春→夏→秋→冬 (60 days each)
+SEASONS = ["暮春", "初夏", "盛夏", "初秋", "深秋", "嚴冬"]
+SEASON_LEN = 60
 
 
 def get_api_key():
@@ -56,11 +61,9 @@ def call_kimi(api_key, sys_prompt, user_prompt, max_tokens=4000):
 SYS_PROMPT = """你係金庸《神鵰俠侶》世界嘅「天命」——負責推進江湖一日嘅敘事者。
 
 讀完而家嘅世界狀態，推進一日，只輸出「變化」（delta），唔使重複冇變嘅嘢：
-
 {
-  "world_time": "第X日 · 暮春",
   "events": [
-    {"day": 2, "text": "江湖大事描述", "npcs": ["相關npc_key"]}
+    {"day": X, "text": "江湖大事描述", "npcs": ["相關npc_key"]}
   ],
   "npc_updates": {
     "npc_key": {
@@ -106,16 +109,33 @@ def clamp(v, lo=0, hi=100):
     return max(lo, min(hi, int(v)))
 
 
-def apply_delta(world, delta):
-    """合併 AI delta 入世界 JSON，原地修改並返回"""
+def get_current_day(world):
+    """從 world_time 解析目前 day number"""
+    m = re.search(r"第(\d+)日", world["meta"].get("world_time", ""))
+    return int(m.group(1)) if m else 1
+
+
+def calc_season(day):
+    """根據 day number 計算季節"""
+    return SEASONS[((day - 1) // SEASON_LEN) % len(SEASONS)]
+
+
+def make_world_time(day):
+    """生成 world_time 字串"""
+    season = calc_season(day)
+    return f"第{day}日 · {season}"
+
+
+def apply_delta(world, delta, new_day):
+    """合併 AI delta 入世界 JSON，day number 由 code 控制"""
     meta = world["meta"]
-    meta["world_time"] = str(delta.get("world_time") or meta.get("world_time"))
+    meta["world_time"] = make_world_time(new_day)
 
     events = world.get("events", [])
-    for e in delta.get("events", []) or []:
+    for e in delta.get("events") or []:
         if isinstance(e, dict) and e.get("text"):
             events.append({
-                "day": int(e.get("day", 1)),
+                "day": new_day,
                 "text": str(e["text"]),
                 "npcs": list(e.get("npcs", []) or []),
             })
@@ -186,11 +206,15 @@ def main():
     dry = "--dry" in sys.argv
     api_key = get_api_key()
     world = json.loads(WORLD_FILE.read_text(encoding="utf-8"))
-    print(f"而家世界：{world['meta'].get('world_time')} · {len(world['npcs'])} 位 NPC · {len(world.get('events', []))} 條事件")
+
+    current_day = get_current_day(world)
+    new_day = current_day + 1
+    print(f"而家世界：{make_world_time(current_day)} → 推進至第{new_day}日")
+    print(f"    {len(world['npcs'])} 位 NPC · {len(world.get('events', []))} 條事件")
 
     user_prompt = ("而家嘅世界狀態 JSON：\n"
                    + json.dumps(world, ensure_ascii=False)
-                   + "\n\n請推進一日，只輸出 delta JSON。")
+                   + f"\n\n請推進一日（第{new_day}日），只輸出 delta JSON。")
 
     delta = None
     # kimi-k3 係 reasoning 模型：先燒 token 思考先寫 content，max_tokens 太細會空回覆
@@ -209,7 +233,7 @@ def main():
                 print("❌ 三次嘗試都失敗，今輪唔推進（世界保持原狀）")
                 sys.exit(1)
 
-    world = apply_delta(world, delta)
+    world = apply_delta(world, delta, new_day)
     print(f"✅ 推進至：{world['meta'].get('world_time')}")
     for e in world.get("events", [])[-3:]:
         print(f"   第{e['day']}日 · {e['text']}")
