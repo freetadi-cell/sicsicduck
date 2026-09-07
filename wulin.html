@@ -511,8 +511,9 @@ function startTravelTimer(){
 
 let _wulinReady=false;
 async function load(){
+  console.log('[WULIN] load() start');
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
-  catch(e){$('worldTime').textContent='載入失敗';return}
+  catch(e){$('worldTime').textContent='載入失敗';console.log('[WULIN] load() fetch error',e);return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
   await loadSkillsDb();
   const cloudReady=await cloudLoad();
@@ -764,7 +765,7 @@ document.addEventListener('keydown',e=>{
     authMode==='reg'?regGo():loginGo();
   }
 });
-load();
+console.log('[WULIN] calling load()');load();
 </script>
 </body>
 </html>
