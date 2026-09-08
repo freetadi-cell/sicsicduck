@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-08T18:36:44.747084",
-  "total": 3,
+  "last_updated": "2026-09-08T19:00:47.412290",
+  "total": 61,
   "articles": [
     {
       "id": "06771ed57681ffdc",
@@ -16,7 +16,8 @@
         "finance",
         "local"
       ],
-      "region": "hk"
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "527cf5690597ead2",
@@ -32,7 +33,8 @@
         "finance",
         "local"
       ],
-      "region": "hk"
+      "region": "hk",
+      "pinned": true
     },
     {
       "id": "fa0f54e0c3d61ebc",
@@ -48,7 +50,1014 @@
         "finance",
         "local"
       ],
+      "region": "hk",
+      "pinned": true
+    },
+    {
+      "id": "8ff3819cf3948963",
+      "title": "港滬深通｜港股總市值47萬億元，滬深97.2萬億人民幣",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4189901",
+      "pubDate": "2026-09-08 08:13:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
       "region": "hk"
+    },
+    {
+      "id": "5dde1340af060ac9",
+      "title": "盤前異動：能源股因伊朗緊張局勢上漲，伊頓獲瑞銀升評大漲",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E7%9B%A4%E5%89%8D%E7%95%B0%E5%8B%95-%E8%83%BD%E6%BA%90%E8%82%A1%E5%9B%A0%E4%BC%8A%E6%9C%97%E7%B7%8A%E5%BC%B5%E5%B1%80%E5%8B%A2%E4%B8%8A%E6%BC%B2-%E4%BC%8A%E9%A0%93%E7%8D%B2%E7%91%9E%E9%8A%80%E5%8D%87%E8%A9%95%E5%A4%A7%E6%BC%B2-102904295.html",
+      "pubDate": "2026-09-08 10:29:04",
+      "fetched_at": "2026-09-08 19:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "41b601d7640461d4",
+      "title": "ET個股推介｜油價續高  中海油（00883）最受惠",
+      "description": "今日ET個股推介——中海油（00883）。【揀選原因】布蘭特期油價由6月底每桶約70美元反彈，最新回升至每桶96美元水平，今年以來升約六成。油價回升，利好上游油氣開發企業盈利表現。三桶油中，中海油（0...",
+      "link": "https://invest.hket.com/article/4189764",
+      "pubDate": "2026-09-08 06:00:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3e29629ebfd9e6c9",
+      "title": "義大利電信股價攀升，義大利郵政提高收購要約",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%9B%BB%E4%BF%A1%E8%82%A1%E5%83%B9%E6%94%80%E5%8D%87-%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%83%B5%E6%94%BF%E6%8F%90%E9%AB%98%E6%94%B6%E8%B3%BC%E8%A6%81%E7%B4%84-102142882.html",
+      "pubDate": "2026-09-08 10:21:42",
+      "fetched_at": "2026-09-08 19:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "267110815405f992",
+      "title": "港股通｜智譜（02513）為港股通（深）10大活躍成交股榜首",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4190307",
+      "pubDate": "2026-09-08 17:46:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "59c7d25a84dae573",
+      "title": "9月期指結算價25226點 跌110點 低水91點",
+      "description": "",
+      "link": "https://hk.finance.yahoo.com/news/9%E6%9C%88%E6%9C%9F%E6%8C%87%E7%B5%90%E7%AE%97%E5%83%B925226%E9%BB%9E-%E8%B7%8C110%E9%BB%9E-%E4%BD%8E%E6%B0%B491%E9%BB%9E-102301940.html",
+      "pubDate": "2026-09-08 10:23:01",
+      "fetched_at": "2026-09-08 19:00:10",
+      "source_name": "Yahoo Finance HK",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "bf4280dbced11584",
+      "title": "港股通｜智譜（02513）為港股通（滬）10大活躍成交股榜首",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4190305",
+      "pubDate": "2026-09-08 17:46:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9f3355b80da18a3ce937482a9756ce2c",
+      "title": "環鴻科技發表AI視覺檢測解決方案,加速智慧製造升級",
+      "description": "南投 2026年9月8日 /美通社/ -- 環鴻科技今日發表新一代 AI視覺檢測方案,以完整的邊緣運算平台及軟體能力,賦能製造業加速推動數位轉型。透過 AI 驅動智慧工廠在品質檢測、製程自動化、物流優化等方面,協助企業提升營運效率、強化產品生產品質,打造高競爭力的智慧製造場域。 環鴻科技 AI視覺檢測方案整合了高效能、低功耗的邊緣運算平台、高解析度成像技術,以及自主研發的AI軟體平台,可在邊緣端即時完成影像分析與判讀。在智慧製造應用方面,此解決方案能協助企業實現檢測自動化、及早發現產品瑕疵,並進行更快速且一致的品質判斷。透過降低檢測成本、提升生產效率與產品品質,協助製造業加速邁向更智慧化、自主化的先進製造模式。 對製造業而言,AI 視覺系統導入的關鍵不只是實現單一的物件辨識或瑕疵檢測,更在於能否將AI專案從概念驗證快速轉化為可實際落地的解決方案,並且兼具高效能以及客製化能力,因應工業生產特殊需求。 環鴻科技提供完整AI專案開發流程軟體平台,提供涵蓋資料蒐集、資料集建置、模型訓練到邊緣部署的完整開發流程。搭配自主研發的無程式碼(No-Code)與低程式碼(Low-Code)模型開發及訓練平台,可大幅簡化 AI 導入與開發程序,協助企業以高效率、低門檻的方式建構並部署視覺檢測應用,加速 AI專案從概念驗證走向實際量產落地。 環鴻科技AI視覺解決方案主要特色如下: 即時邊緣運算: 於邊緣端即時執行影像分析與推論,提供即時性、低延遲的視覺判讀能力,實現快速的決策與即時回應,同時降低對集中式運算資源的依賴。 結合高解析度、低照度成像能力的相機模組與高效能邊緣 AI 運算平台,為工業檢測與機器視覺應用提供精準、可靠的影像擷取與分析能力。 快速導入: 整合硬體平台、嵌入式軟體及 AI 視覺開發工具,打造完整且量產就緒的 AI 解決方案,協助客戶縮短開發週期、降低導入門檻,加速 AI 應用從概念驗證邁向規模化生產部署。 多元視覺應用:支援物件偵測、瑕疵辨識、OCR文字辨識、關鍵零件定位與追蹤、組裝驗證、產品分類,以及作業行為偵測與分析等應用。 無縫整合工業環境:採用工業級強固設計,並提供 Ethernet、Power over Ethernet(PoE)、HDMI 及 MicroSD 等豐富介面,可與既有設備、機器視覺系統及自動化平台無縫整合,加速部署並降低系統整合複雜度。 透過自動化視覺檢測與瑕疵辨識,AI智慧攝影機可降低對人工品保作業的依賴,同時提升檢測一致性;其即時視覺智慧亦能提供可執行數據,協助製造業者迅速掌握製程偏差、降低瑕疵率並節省生產成本。此平台亦可作為自動化生產的智慧視覺決策層,為機器人系統提供即時視覺引導與回饋,協助製造業者從檢測自動化邁向反應更靈敏、更自主化的生產流程。 環鴻科技垂直移動方案產品中心處長張宏齊表示:「隨著製造業對 AI 視覺應用的需求快速成長,企業所需要的已不再只是硬體,而是需要能夠快速部署、有效落地,並創造實質商業價值的端到端解決方案。透過結合先進的邊緣運算能力與整合式AI視覺平台,環鴻科技協助客戶加速導入智慧製造、品質檢測及工業自動化應用,讓 AI專案能夠更快速、更有效率地從概念驗證(PoC)走向量產部署階段,進一步釋放智慧製造的真正價值。」 身為全球 ODM 合作夥伴,環鴻科技憑藉在產品設計、系統整合、製造服務及邊緣運算領域的專業實力,為客戶提供從概念發想、方案開發到量產導入的完整解決方案。環鴻科技已將此 AI 視覺檢測系統實際導入自有生產線,完成量產環境驗證,充分展現其技術成熟度與實際應用價值。 基於產線導入經驗與ODM 客製化能力,環鴻科技能針對客戶的特定應用場景與製造流程需求,快速打造並部署 AI 視覺解決方案,協助客戶降低導入門檻與專案風險,縮短產品上市時程,加速邁向智慧化、自主化的先進製造模式。",
+      "link": "https://hk.prnasia.com/story/546858-2.shtml",
+      "pubDate": "2026-09-07 23:00:00",
+      "source_name": "美通社",
+      "image_url": "",
+      "keywords": [
+        "net",
+        "sem",
+        "pdt",
+        "ecp",
+        "cpr",
+        "stw",
+        "tds",
+        "hrd",
+        "mfg",
+        "afi",
+        "iot"
+      ],
+      "category": [
+        "technology"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "b48a47495df25c4b",
+      "title": "港股通｜智譜（02513）為港股通活躍成交股榜首",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4190304",
+      "pubDate": "2026-09-08 17:46:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8d5b901bf01a58fd96aa2e6cf918a343",
+      "title": "攻擊-11實彈發射霹靂-15 「忠誠僚機」畫面曝光 空軍有人無人協同戰法成形",
+      "description": "近期,解放軍攻擊-11「玄龍」無人機發射霹靂-15中遠距空對空導彈的影片截圖在互聯網曝光。此前外界已根據公開模型、航展展示以及相關資訊判斷,攻擊-11具備攜帶空對空導彈執行空戰任務的能力,但這次畫面至少從證據層面進一步印證了這項推斷。更重要的是,此次畫面的披露說明,攻擊-11的任務定位,已不只是傳統意義上利用自身隱身能力實施對地對海打擊,而是開始向具備有人與無人協同作戰能力的空戰平台發展。 攻擊-11無人機最早於2019年國慶閱兵中公開亮相,由中航工業601所研製,洪都飛機製造廠生產。該機採用全無尾飛翼布局,機體沒有傳統意義上的垂尾和平尾,再配合機體表面隱身塗料、內置彈艙、隱身化進氣道與發動機尾噴口等技術,具備了極佳的紅外和雷達隱身能力。根據相關資料介紹,攻擊-11無人機機長12.2米,機高2.7米,翼展14.4米,機體正向雷達散射截面積小於0.01平方米,動力裝置為一台小型渦扇發動機,飛行速度為高亞音速,最大航程4,000公里。 小於0.01平方米的正向雷達散射截面積,意味著該機在對手雷達螢幕上幾乎等同於一隻小型鳥類或一個微弱雜波,具備極強的低可探測性。配合無尾飛翼帶來的良好氣動條件,攻擊-11能夠在不開加力的情況下保持較長的巡航半徑,深入對手縱深防區而不易被發現,這為它執行多種高危任務提供了基礎。 相比攻擊-1、攻擊-2和攻擊-3等以察打一體為主要任務定位的無人攻擊機,攻擊-11明顯屬於更高一級的無人作戰平台。它既可以依靠隱身性能深入對手防區,執行偵察、對地精確打擊、防空壓制、反艦作戰等任務,又能夠借助數據鏈與有人戰機建立協同關係,以有人戰機「忠誠僚機」的身份共同實施空戰任務。為了適配攻擊-11的多任務屬性,其機腹的兩個內置彈艙可根據需要搭載多型武器裝備。從目前公開的資訊看,攻擊-11在實施對地及反艦攻擊時,可以掛載6枚小直徑精確制導滑翔炸彈以及1枚重型精確制導滑翔炸彈,或8枚中型精確制導滑翔炸彈;而在實施對空作戰任務時,則可在兩個內置彈艙裡各搭載一枚霹靂-15中遠距空對空導彈。內置彈艙的設計既保證了彈藥的掛載量,又避免了外掛武器破壞隱身外形,使攻擊-11在火力與隱身之間取得了較好的平衡。 霹靂-15中遠距空對空導彈由中國空導院研製生產。公開資料顯示,該彈彈長4米,彈徑203毫米,彈重210公斤,採用雙脈衝固體火箭發動機,最大射程可達200至300公里,並使用配備無線電近炸引信的破片殺傷戰鬥部。同時,該彈應用「慣性制導加北斗衛星制導加雙向數據鏈修正加主動雷達末制導」的複合制導體制,且使用了有源相控陣雷達主動導引頭,不僅擁有極強的探測和抗干擾能力,且信號截獲率較低,具備較強的攻擊突然性。雙脈衝發動機的設計,使霹靂-15能夠在飛行中段通過二次點火延長有效射程,同時在中遠距離上仍保有較高的末端動能,從而維持較大的不可逃逸區。這項技術指標在國際同類空對空導彈譜系中亦居於前列水準,在綜合性能上與美制AIM-120D等新一代中距導彈旗鼓相當,部分關鍵參數更具優勢,為攻擊-11實施超視距空戰提供了可靠的彈藥基礎。 在實戰過程中,攜帶霹靂-15中遠距空對空導彈的攻擊-11無人機,主要是與殲-20、殲-16等先進國產雙座戰鬥機實施有人與無人協同作戰,這一點曾在此前的央視公開畫面中得到證實。 根據央視的公開介紹,一架殲-20或殲-16戰鬥機可同時協同3架攻擊-11無人機進行作戰。在這個組合中,有人戰鬥機主要負責戰場態勢判斷、任務授權和核心決策,而攻擊-11無人機則承擔火力打擊、電子支援、誘導以及偵察等高風險任務。如此一來,有人戰鬥機就不需要把所有任務都集中到自身平台上,而是可以通過數據鏈把攻擊-11納入一個更大的作戰網絡,從而進一步擴大己方空戰體系的感知範圍和火力覆蓋範圍,尤其是在面對敵方大型電子戰機、運輸機、預警機以及加油機等高價值空中目標時,這一點顯得更為重要。借助攻擊-11的前出偵察與火力前推,有人機能夠在更遠距離上鎖定並打擊敵方軟肋目標,而不必讓寶貴的飛行員冒著重大的風險突入對手防線。 從更寬的視野看,「忠誠僚機」式的有人與無人協同,正是當前世界主要軍事強國都在探索的方向。美國正在推進以XQ-58A等隱身無人機配合有人戰機作戰的構想,歐洲多國也有類似的協同作戰項目。相比之下,央視公開畫面、航展展示以及此次實彈發射截圖表明,中國已推動這一作戰形態由概念構想邁向實際運用階段。這既反映了中國航空工業在無人機平台、數據鏈、傳感器和彈藥體系上的整體進步,也說明這套作戰體系已具備相當的成熟度。 所以,此次攻擊-11發射霹靂-15中遠距空對空導彈的畫面,真正值得關注的並不是驗證了這一長久以來的說法,而是凸顯出空軍未來空戰形態的變化。過去,空軍的空戰核心仍然是以有人戰鬥機為主的制空權爭奪;未來則變成有人戰鬥機負責指揮和決策,無人機負責前出火力打擊、電子戰以及偵察等任務,其中多架先進無人戰機甚至可以共同組成配套有人戰鬥機使用的分佈式作戰節點,以此增強空軍的作戰效能。這種從「有人平台為中心」向「有人加無人體系對抗」的轉變,很可能會成為未來空戰格局演變的重要方向。",
+      "link": "https://www.bastillepost.com/hongkong/article/16712753-%E6%94%BB%E6%93%8A-11%E5%AF%A6%E5%BD%88%E7%99%BC%E5%B0%84%E9%9C%B9%E9%9D%82-15-%E3%80%8C%E5%BF%A0%E8%AA%A0%E5%83%9A%E6%A9%9F%E3%80%8D%E7%95%AB%E9%9D%A2%E6%9B%9D%E5%85%89-%E7%A9%BA%E8%BB%8D%E6%9C%89",
+      "pubDate": "2026-09-07 23:00:00",
+      "source_name": "Bastillepost",
+      "image_url": "",
+      "keywords": [
+        "博客文章",
+        "時事熱話"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f3ba324396538fda",
+      "title": "北水新貴｜中海油相隔29日再打入港股通（滬）十大成交榜",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4190313",
+      "pubDate": "2026-09-08 17:39:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4cb3903960122d6ee9df12ddb4d088b4",
+      "title": "職業生涯剛起步即傳噩耗 18歲澳洲籍高球新星泰國集訓突發腦出血離世",
+      "description": "18歲澳洲籍高爾夫球新星在泰國備戰期間突發腦出血,搶救近兩周宣告不治,父親悲痛抱骨灰返居住地韓國。 Rising golf star Jessica Bang dead at 18 after suffering brain hemorrhage https://t.co/DZGr5CgBSM pic.twitter.com/uzqFMKWYUs — New York Post (@nypost) August 13, 2026 日前,澳洲女子高爾夫球壇傳來噩耗。出生於韓國、年僅18歲的澳洲籍職業高爾夫球新星Jessica Bang,在泰國曼谷備戰期間突然腦出血昏迷,送院後緊急接受腦部手術,之後一直在深切治療部搶救,惟最終於8月13日不治。澳洲女子職業高爾夫巡迴賽(WPGA Tour of Australasia)事後發表聲明證實死訊,對這名年輕球手驟然離世表示深切哀悼。 8月1日,Jessica當時身處泰國,正為即將舉行的高爾夫球資格賽進行密集式訓練。期間,她突然感到身體嚴重不適,隨即倒地昏迷,現場人員立即將她送往曼谷一間醫院搶救。醫療團隊檢查後確認Jessica出現腦出血(Brain Hemorrhage),情況危殆,隨即安排她接受緊急腦部手術。手術後,她一直留在深切治療部接受治療,惟經過近兩周搶救,最終因病情嚴重,於8月13日不治,終年18歲。 Jessica去年底透過澳洲女子職業高爾夫巡迴賽資格賽取得參賽資格,正式展開職業球手生涯。今年2月,她出戰職業生涯第五場正式賽事——新南威爾斯女子公開賽地區資格賽(Women’s New South Wales Open Regional Qualifying Event),並在最後一輪打出65桿佳績,成功奪冠。這場勝利令Jessica開始受到外界關注,也為她取得歐洲女子巡迴賽(Ladies European Tour)相關賽事的參賽資格。年僅18歲便在職業賽場嶄露頭角,她被視為澳洲女子高爾夫球壇其中一名備受期待的新星。 Jessica離世後,澳洲女子職業高爾夫巡迴賽發表聲明悼念,表示澳洲高爾夫球界對這名年輕巡迴賽成員在泰國離世感到深切悲痛。聲明形容,Jessica是一名出色且極具潛力的年輕球手,雖然職業巡迴賽生涯短暫,卻已留下令人深刻的印象。 Jessica的葬禮於8月16日在韓國京畿道舉行,她的母親受訪時悲痛表示,女兒原定於星期六乘搭航班返回韓國,「她原本應該在星期六乘搭航班回韓國,我從沒想過她爸爸會是抱著她的骨灰盒登機」。 Jessica的表親在事發後於眾籌平台GoFundMe設立專頁,為其醫療及善後開支籌款,目前已籌得逾5萬澳元(約27.7萬港元)。家屬在專頁發文悼念Jessica,表示會永遠珍惜與她共同度過的時光及回憶,又形容她性格開朗活潑、富有幽默感,這些珍貴回憶將一直留在家人心中。 Jessica生前也十分喜歡曾出演韓劇《非常律師禹英禑》的韓國演員河允景(Ha Yoon-kyoung),更曾特意前往釜山參加對方的粉絲簽名會。據報,河允景得悉Jessica離世的消息後,也親自到場弔唁,送別這名年輕粉絲。 從去年底正式轉戰職業,到今年初在職業生涯第五場正式賽事便奪得冠軍,Jessica的職業高球之路才剛剛起步。如今這名備受期待的新星突然離世,令她的家人以及澳洲高爾夫球界深感悲痛與惋惜。",
+      "link": "https://www.bastillepost.com/hongkong/article/16613494-%E8%81%B7%E6%A5%AD%E7%94%9F%E6%B6%AF%E5%89%9B%E8%B5%B7%E6%AD%A5%E5%8D%B3%E5%82%B3%E5%99%A9%E8%80%97-18%E6%AD%B2%E6%BE%B3%E6%B4%B2%E7%B1%8D%E9%AB%98%E7%88%BE%E5%A4%AB%E7%90%83%E6%96%B0%E6%98%9F",
+      "pubDate": "2026-09-07 22:00:29",
+      "source_name": "Bastillepost",
+      "image_url": "",
+      "keywords": [
+        "奇聞",
+        "plastic"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "164920c97fbab9cf",
+      "title": "深股通｜寧德時代（深：300750）為深股通10大成交活躍股榜首",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4190308",
+      "pubDate": "2026-09-08 17:46:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "deef6ba1effd188da8a6cec794600141",
+      "title": "孩子全獲領養 怕醜貓媽被退回收容所惹心酸 獲關注後終尋得新家",
+      "description": "澳洲一隻貓媽媽因性格害羞、經常躲在角落而屢被領養者忽略,眼看孩子們全數找到新家,只有牠仍留在收容所。所幸故事曝光後獲得關注,最終也成功遇上新主人。 在 Instagram 查看這則帖子 The Lost Dogs’ Home(@lostdogshome)分享的帖子 近日,澳洲北墨爾本一間動物收容所The Lost Dogs’ Home於社交平台分享一隻黑白貓「瑪姬」(Maggie)的故事。工作人員介紹,瑪姬性格較為害羞,牠在收容所生活一個後,因需要照顧幼貓而被安排到寄養家庭,惟隨著所有孩子陸續獲得領養,最後只剩下牠未能找到新主人,只好再次回到收容所生活,令工作人員心疼不已。 工作人員表示,瑪姬一直未被領養,並非因為牠不親人,而是由於性格較膽小,經常躲在貓窩角落,因此容易被前來尋找領養對象的民眾忽略。不過,只要願意花時間與牠相處,就會發現瑪姬其實十分溫柔,甚至會主動用頭輕蹭人的手撒嬌。 瑪姬的故事曝光後,引起不少網民關注,「希望瑪姬能夠趕快遇到永遠的家人」、「領養比較膽小的貓雖然很有挑戰性,但成功與牠們變熟後,也會特別欣慰」。 隨著瑪姬在網上獲得更多關注,收容所也傳出好消息,指牠最終已成功獲領養。收容所同時呼籲,有意領養寵物的人士不妨多留意性格害羞、容易被忽略的貓咪,因為仍有不少像瑪姬一樣的動物,正等待一個被看見及被接納的機會。",
+      "link": "https://www.bastillepost.com/hongkong/article/16619110-%E5%AD%A9%E5%AD%90%E5%85%A8%E7%8D%B2%E9%A0%98%E9%A4%8A-%E5%AE%B3%E7%BE%9E%E8%B2%93%E5%AA%BD%E5%AA%BD%E8%A2%AB%E9%80%80%E5%9B%9E%E6%94%B6%E5%AE%B9%E6%89%80%E6%83%B9%E5%BF%83%E9%85%B8-%E7%8D%B2%E9%97%9C",
+      "pubDate": "2026-09-07 22:35:21",
+      "source_name": "Bastillepost",
+      "image_url": "",
+      "keywords": [
+        "暖心",
+        "plastic"
+      ],
+      "category": [
+        "top",
+        "politics",
+        "lifestyle"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5b914ef65fdb3a2c",
+      "title": "滬股通｜紫金礦業（滬：601899）為滬股通10大成交活躍股榜首",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4190306",
+      "pubDate": "2026-09-08 17:46:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "27e0d9bf927eebc00e3e0e914d0c1cd7",
+      "title": "紅牛車隊續用羅臣出戰馬德里大獎賽 哈賈爾手腕傷勢未癒",
+      "description": "一級方程式紅牛車隊周一宣布,由於車手伊薩克·哈賈爾手腕骨折仍未康復,利安·羅臣將連續第三場比賽夥拍麥斯·韋斯達賓,代表車隊出戰。 哈賈爾在夏季休賽期間受傷,至今仍未完全康復,因此紅牛車隊決定讓羅臣本周駕駛賽車,出戰馬德里大獎賽。 紅牛車隊發表聲明指:「伊薩克(哈賈爾)的康復進度持續正面。雖然他尚未準備好重返駕駛艙,但他將會到馬德里支持車隊。」 羅臣今季在一級方程式表現強勁,目前在車手榜排名第九,僅落後哈賈爾一位。這亦促使這位新西蘭籍車手重返紅牛車隊,他曾於2025年僅出戰兩場比賽後便被車隊放棄。 甲骨文紅牛車隊補充指:「甲骨文紅牛車隊全體成員期待伊薩克(哈賈爾)很快重返駕駛艙。」 馬德里大獎賽結束後,賽事將於9月26日移師阿塞拜疆舉行。 (美聯社)",
+      "link": "https://www.bastillepost.com/hongkong/article/16722022-%E7%B4%85%E7%89%9B%E8%BB%8A%E9%9A%8A%E7%BA%8C%E7%94%A8%E7%BE%85%E8%87%A3%E5%87%BA%E6%88%B0%E9%A6%AC%E5%BE%B7%E9%87%8C%E5%A4%A7%E7%8D%8E%E8%B3%BD-%E5%93%88%E8%B3%88%E7%88%BE%E6%89%8B%E8%85%95%E5%82%B7",
+      "pubDate": "2026-09-07 22:35:08",
+      "source_name": "Bastillepost",
+      "image_url": "",
+      "keywords": [
+        "伊薩克哈賈爾",
+        "體育",
+        "利安羅臣",
+        "一級方程式",
+        "馬德里大獎賽",
+        "紅牛車隊"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "25e98be0b7805bd9",
+      "title": "股份分拆及合併",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4189605",
+      "pubDate": "2026-09-08 00:01:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "0013ef010ef191d925e7ecbd170aedf1",
+      "title": "伊朗設經濟戰爭指揮部研判戰事對企業經營影響並解決問題",
+      "description": "<匯港通訊> 伊朗經濟部已設立經濟戰爭指揮部,以集中研判戰爭造成的經濟問題,並協調有關部門加快制定及落實解決方案。伊朗邁赫爾通訊社報道,經濟部副部長扎馬尼安表示,經濟戰爭指揮部設於經濟部內部,初期將重點處理經濟部職責權限範圍內的問題,包括戰爭對企業經營、貿易、融資等領域造成的影響,以加快跟進並解決有關問題,對於超...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BC%8A%E6%9C%97%E8%A8%AD%E7%B6%93%E6%BF%9F%E6%88%B0%E7%88%AD%E6%8C%87%E6%8F%AE%E9%83%A8%E7%A0%94%E5%88%A4%E6%88%B0%E4%BA%8B%E5%B0%8D%E4%BC%81%E6%A5%AD%E7%B6%93%E7%87%9F%E5%BD%B1%E9%9F%BF%E4%B8%A6%E8%A7%A3%E6%B1%BA%E5%95%8F%E9%A1%8C-223821354.html",
+      "pubDate": "2026-09-07 22:38:21",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "eed6b1b200bed6a5",
+      "title": "北水炒D乜｜淨流入61.28億元，買長飛光纖光纜沽中芯",
+      "description": "...",
+      "link": "https://invest.hket.com/article/4190312",
+      "pubDate": "2026-09-08 17:39:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "5607b721f96aff2b12ccbe989ec068aa",
+      "title": "伊朗外交部發言人以韓文警告別國勿做美國侵略幫兇軍事介入霍峽",
+      "description": "<匯港通訊> 伊朗外交部發言人巴加埃在社交媒體發文,警告其他國家不要成為美國侵略行徑的幫兇,軍事介入霍爾木茲海峽。巴加埃用韓文發出貼文,指出伊朗高度重視與韓國的友好關係,但在波斯灣及霍爾木茲海峽維持軍事存在或參與軍事行動的國家,只會被視為直接支持侵略者,並將引發嚴重後果。《韓聯社》報道,上星期有消息指韓國政府正推...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%BC%8A%E6%9C%97%E5%A4%96%E4%BA%A4%E9%83%A8%E7%99%BC%E8%A8%80%E4%BA%BA%E4%BB%A5%E9%9F%93%E6%96%87%E8%AD%A6%E5%91%8A%E5%88%A5%E5%9C%8B%E5%8B%BF%E5%81%9A%E7%BE%8E%E5%9C%8B%E4%BE%B5%E7%95%A5%E5%B9%AB%E5%85%87%E8%BB%8D%E4%BA%8B%E4%BB%8B%E5%85%A5%E9%9C%8D%E5%B3%BD-223924423.html",
+      "pubDate": "2026-09-07 22:39:24",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "mortgage",
+        "stocks",
+        "financial information",
+        "stock",
+        "investment tools",
+        "mutual funds",
+        "track portfolio",
+        "business news",
+        "quote",
+        "economy",
+        "personal finance",
+        "real estate",
+        "business",
+        "tax",
+        "market news",
+        "retirement",
+        "stock valuation",
+        "finance",
+        "investor",
+        "investing"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9ff041f38dc12950",
+      "title": "賀歲片2027︱阿Sa林峯拍檔主演賀歲片開　 《破·地獄》導演陳茂賢監製",
+      "description": "【蔡卓妍 / 阿Sa / 賀歲片】昨日，蔡卓妍（阿Sa）於IG公布由她擔任女主角的全新英皇電影2027年賀歲片正式開鏡，並引發大眾熱烈期待。今次電影由曾與阿Sa合作過《祥賭必贏》的羅耀輝執導；監製則為...",
+      "link": "https://topick.hket.com/article/4190191",
+      "pubDate": "2026-09-08 15:58:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cc8e19a1f402ecdcf1f0d403bd97f729",
+      "title": "查理斯三世稱哈里夫婦在英期間不代表英國王室",
+      "description": "<匯港通訊> 英國國王查理斯三世表示,哈里王子及妻子梅根在英國期間,將以私人身份活動,不代表英國王室,亦不會代表王室履行相關公務。查理斯三世重申,哈里夫婦不會恢復王室高級成員身份。報道指意味兩人在英國期間參與的活動,將被視為私人安排,與英國王室官方事務無關。 (BC)#英國 #哈里 #查理斯三世",
+      "link": "https://hk.finance.yahoo.com/news/%E6%9F%A5%E7%90%86%E6%96%AF%E4%B8%89%E4%B8%96%E7%A8%B1%E5%93%88%E9%87%8C%E5%A4%AB%E5%A9%A6%E5%9C%A8%E8%8B%B1%E6%9C%9F%E9%96%93%E4%B8%8D%E4%BB%A3%E8%A1%A8%E8%8B%B1%E5%9C%8B%E7%8E%8B%E5%AE%A4-224424560.html",
+      "pubDate": "2026-09-07 22:44:24",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "mortgage",
+        "stocks",
+        "financial information",
+        "stock",
+        "investment tools",
+        "mutual funds",
+        "track portfolio",
+        "business news",
+        "quote",
+        "economy",
+        "personal finance",
+        "real estate",
+        "business",
+        "tax",
+        "market news",
+        "retirement",
+        "stock valuation",
+        "finance",
+        "investor",
+        "investing"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e6936672ea45f889",
+      "title": "死有對證｜宣傳活動遇粉絲激動推撞險出意外　陳曉華從容不迫冷靜應對獲讚",
+      "description": "【陳曉華 / 死有對證 / 香港小姐】現年31歲的TVB當紅小花陳曉華（Hera），作為新劇主演之一，昨日（7日）現身荃灣出席《死有對證》宣傳活動，吸引大批粉絲到場支持。然而，Hera入場時卻遇到不理...",
+      "link": "https://topick.hket.com/article/4190107",
+      "pubDate": "2026-09-08 15:22:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "cee90092fb4b03db3030626c000d25a6",
+      "title": "塞爾維亞總理提出解散議會 以提前舉行議會選舉",
+      "description": "<匯港通訊> 塞爾維亞總理馬楚特提出解散議會,以提前舉行議會選舉。馬楚特在政府特別會議後發表講話,提議政府根據憲法,向總統提出解散國民議會,並舉行議會選舉。馬楚特指政府一直聽到部分民眾要求提前舉行議會選舉的呼聲,為消除民眾疑慮,將選擇權交予塞爾維亞公民是有力的回應。塞爾維亞進步黨總委員會於過去的星期六決定,推舉現...",
+      "link": "https://hk.finance.yahoo.com/news/%E5%A1%9E%E7%88%BE%E7%B6%AD%E4%BA%9E%E7%B8%BD%E7%90%86%E6%8F%90%E5%87%BA%E8%A7%A3%E6%95%A3%E8%AD%B0%E6%9C%83-%E4%BB%A5%E6%8F%90%E5%89%8D%E8%88%89%E8%A1%8C%E8%AD%B0%E6%9C%83%E9%81%B8%E8%88%89-223714139.html",
+      "pubDate": "2026-09-07 22:37:14",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": [
+        "mortgage",
+        "stocks",
+        "financial information",
+        "stock",
+        "investment tools",
+        "mutual funds",
+        "track portfolio",
+        "business news",
+        "quote",
+        "economy",
+        "personal finance",
+        "real estate",
+        "business",
+        "tax",
+        "market news",
+        "retirement",
+        "stock valuation",
+        "finance",
+        "investor",
+        "investing"
+      ],
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c7fedda1ad5a31b9",
+      "title": "你好，打劫！Return︱20場圓滿落幕芯駖阿Dee不捨灑淚　劉德華現身預告「舞台山莊」新搞作",
+      "description": "由劉德華出品、鄧永威監製、魯文傑導演，以及麥沛東、李芯駖、巢嘉倫、何啟華、陳湛文、王俊傑主演的舞台劇《你好，打劫！Return》20場演出（9月6日）圓滿結束。最後一場演出阿Dee的兄弟193郭嘉駿、...",
+      "link": "https://topick.hket.com/article/4190106",
+      "pubDate": "2026-09-08 13:48:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "013cfdc44084070a0aeebf4ab0528532",
+      "title": "世界氣象組織報告憂氣溶膠及地表臭氧威脅人類健康",
+      "description": "<匯港通訊> 世界氣象組織發表最新報告,通過追蹤空氣質素與氣候之間的複雜關係,揭示氣溶膠,包括顆粒物、黑碳、微塑膠等與近地面的臭氧,對人體健康的負面影響,呼籲加強監測。報告指出,PM2.5顆粒物由直徑小於2.5微米的微小顆粒及液滴組成,能深入肺部及血液,對健康構成威脅。PM2.5有多種多樣的排放源,包括工業活動、...",
+      "link": "https://hk.finance.yahoo.com/news/%E4%B8%96%E7%95%8C%E6%B0%A3%E8%B1%A1%E7%B5%84%E7%B9%94%E5%A0%B1%E5%91%8A%E6%86%82%E6%B0%A3%E6%BA%B6%E8%86%A0%E5%8F%8A%E5%9C%B0%E8%A1%A8%E8%87%AD%E6%B0%A7%E5%A8%81%E8%84%85%E4%BA%BA%E9%A1%9E%E5%81%A5%E5%BA%B7-224010215.html",
+      "pubDate": "2026-09-07 22:40:10",
+      "source_name": "Yahoo Finance",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "1c26e1ce924479e2",
+      "title": "美魔女︱靚媽車婉婉孫慧雪坦白有白髮問題　蘇玉華擁抱身體變化悟人生五大事",
+      "description": "【蘇玉華 / 車婉婉 / 孫慧雪】染髮霜品牌繼演技精湛、形象入屋的蘇玉華任代言人後，最近還邀請「凍齡靚媽」孫慧雪及憑主持《中年好聲音》系列人氣大增的車婉婉，加盟拍攝廣告，3人在廣告中提及有白頭髮問題，...",
+      "link": "https://topick.hket.com/article/4190073",
+      "pubDate": "2026-09-08 12:46:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "7b13d1f1a6fab5c80b8aecbb86852b79",
+      "title": "AI股急跌後，係陷阱定撈底良機？專家親授建倉、對沖與配置秘技",
+      "description": "",
+      "link": "https://www.hk01.com/%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1/60379375/ai%E8%82%A1%E6%80%A5%E8%B7%8C%E5%BE%8C-%E4%BF%82%E9%99%B7%E9%98%B1%E5%AE%9A%E6%92%88%E5%BA%95%E8%89%AF%E6%A9%9F-%E5%B0%88%E5%AE%B6%E8%A6%AA%E6%8E%88%E5%BB%BA%E5%80%89-%E5%B0%8D%E6%B2%96%E8%88%87%E9%85%8D%E7%BD%AE%E7%A7%98%E6%8A%80",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "fe134309b414ff45",
+      "title": "東張西望︱韓國OPPA金先生被港妻派帽　揭女兒非親生尋出姦夫反遭恐嚇",
+      "description": "【東張西望 / 出軌 / 甘詠寧】在今年6月中一篇帖文成網絡熱話，內容指一位韓國人金先生公開香港太太Grace出軌，並發現女兒不是他親生，希望透過網絡，能找到女兒的親生父親羅先生出來負責。金先生更主動...",
+      "link": "https://topick.hket.com/article/4189943",
+      "pubDate": "2026-09-08 10:02:00",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "香港經濟日報",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "finance",
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4be76f50a6b6c7f7682c66fd994d2e83",
+      "title": "摺機懶人包2026｜三星升級、蘋果參戰！規格爆料＋格價攻略",
+      "description": "",
+      "link": "https://www.hk01.com/issue/10426/%E6%91%BA%E6%A9%9F%E6%87%B6%E4%BA%BA%E5%8C%852026-%E4%B8%89%E6%98%9F%E5%8D%87%E7%B4%9A-%E8%98%8B%E6%9E%9C%E5%8F%83%E6%88%B0-%E8%A6%8F%E6%A0%BC%E7%88%86%E6%96%99-%E6%A0%BC%E5%83%B9%E6%94%BB%E7%95%A5",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "f3849428a3dc4ffabfb5c0d38ad26e1d",
+      "title": "【華爾街日報】中國政府將向銀行和保險公司注入巨資以提振增長",
+      "description": "中國八家最大金融機構於周末表示,正尋求籌集人民幣3,600億元,財政部將提供其中大部分資金。這是不到兩年內進行的第二輪注資。",
+      "link": "https://theinitium.com/20260908-wsj-beijing-to-inject-more-than-50-billion-into-banks-insurers-to-boost-growth/",
+      "pubDate": "2026-09-07 22:58:37",
+      "source_name": "端傳媒",
+      "image_url": "",
+      "keywords": [
+        "大陸",
+        "專題",
+        "wsj守護精選",
+        "經濟"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "972ca5e7ac928365c952d3f003e2f0df",
+      "title": "葵涌華姐冰室外賣現幼鼠｜食肆今日休業　食環署承辦商清潔街道",
+      "description": "",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60387895/%E8%91%B5%E6%B6%8C%E8%8F%AF%E5%A7%90%E5%86%B0%E5%AE%A4%E5%A4%96%E8%B3%A3%E7%8F%BE%E5%B9%BC%E9%BC%A0-%E9%A3%9F%E8%82%86%E4%BB%8A%E6%97%A5%E4%BC%91%E6%A5%AD-%E9%A3%9F%E7%92%B0%E7%BD%B2%E6%89%BF%E8%BE%A6%E5%95%86%E6%B8%85%E6%BD%94%E8%A1%97%E9%81%93",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4ab59f7684dac60e11df71d9028bc85c",
+      "title": "朝鮮國防相批評美日韓軍演損地區穩定 稱必要時強力回應",
+      "description": "美國、韓國和日本9月7日起,於濟州島附近海域啟動為期5天的「自由之刃」(Freedom Edge)聯合演習。朝鮮國防相金成基同日警告,如果美國及其盟國企",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60387759/%E6%9C%9D%E9%AE%AE%E5%9C%8B%E9%98%B2%E7%9B%B8%E6%89%B9%E8%A9%95%E7%BE%8E%E6%97%A5%E9%9F%93%E8%BB%8D%E6%BC%94%E6%90%8D%E5%9C%B0%E5%8D%80%E7%A9%A9%E5%AE%9A-%E7%A8%B1%E5%BF%85%E8%A6%81%E6%99%82%E5%BC%B7%E5%8A%9B%E5%9B%9E%E6%87%89",
+      "pubDate": "2026-09-07 22:53:28",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "香港01",
+        "新聞",
+        "hk01",
+        "世界新聞",
+        "國際",
+        "環球",
+        "國際新聞"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "00d10aedc92d40c170a9f5560f6566db",
+      "title": "Uber籌備申請網約車牌照冀年底有好消息　即日起推WeChat召車功能",
+      "description": "",
+      "link": "https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/60388036/uber%E7%B1%8C%E5%82%99%E7%94%B3%E8%AB%8B%E7%B6%B2%E7%B4%84%E8%BB%8A%E7%89%8C%E7%85%A7%E5%86%80%E5%B9%B4%E5%BA%95%E6%9C%89%E5%A5%BD%E6%B6%88%E6%81%AF-%E5%8D%B3%E6%97%A5%E8%B5%B7%E6%8E%A8wechat%E5%8F%AC%E8%BB%8A%E5%8A%9F%E8%83%BD",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "8e1799f50ad884f7b541455ae9fd8160",
+      "title": "特朗普發布擴張版美國地圖 涵蓋墨西哥、加拿大、古巴、冰島等地",
+      "description": "美國總統特朗普(Donald Trump,又譯川普)9月7日發布一張「擴張版美國地圖」,美國國旗圖案除覆蓋在美國之上,還包括加拿大、墨西哥、中美洲大部",
+      "link": "https://www.hk01.com/%E5%8D%B3%E6%99%82%E5%9C%8B%E9%9A%9B/60387766/%E7%89%B9%E6%9C%97%E6%99%AE%E7%99%BC%E5%B8%83%E6%93%B4%E5%BC%B5%E7%89%88%E7%BE%8E%E5%9C%8B%E5%9C%B0%E5%9C%96-%E6%B6%B5%E8%93%8B%E5%A2%A8%E8%A5%BF%E5%93%A5-%E5%8A%A0%E6%8B%BF%E5%A4%A7-%E5%8F%A4%E5%B7%B4-%E5%86%B0%E5%B3%B6%E7%AD%89%E5%9C%B0",
+      "pubDate": "2026-09-07 21:53:51",
+      "source_name": "Hk01.com",
+      "image_url": "",
+      "keywords": [
+        "香港01",
+        "新聞",
+        "hk01",
+        "國際",
+        "世界新聞",
+        "環球",
+        "國際新聞"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "9d527cd0de4089aaef9869ae073b357c",
+      "title": "施政報告2026消息懶人包｜重推租置料交代　港珠澳橋乘客無感通關",
+      "description": "",
+      "link": "https://www.hk01.com/%E6%94%BF%E6%83%85/60387894/%E6%96%BD%E6%94%BF%E5%A0%B1%E5%91%8A2026%E6%87%B6%E4%BA%BA%E5%8C%85-%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83-%E6%96%99%E9%87%8D%E6%8E%A8%E7%A7%9F%E7%BD%AE-%E6%B8%AF%E7%8F%A0%E6%BE%B3%E6%A9%8B%E7%84%A1%E6%84%9F%E9%80%9A%E9%97%9C",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "928ef0693cf085b77d85d34ade792c2e",
+      "title": "觀察:中美戰區對話的戰略信號",
+      "description": "中評社香港9月8日電(作者 陳澄明)8月31日至9月2日於加拿大維多利亞召開的第28屆亞太國防軍司令會議期間,中國人民解放軍東部戰區司令員楊志斌與美軍太平洋司令部司令帕帕羅舉行首次雙邊閉門會談,標誌著中美兩軍戰區級面對面溝通正式恢復。中國國防部於9月4日對外證實此次會談。 此次會晤發生在美國持續強化“印太戰略”、對台軍售動作不斷的背景之下,其釋放的戰略信號清晰而沉重——台海絕不能成為",
+      "link": "http://www.crntt.com/doc/7_0_107231982_1_0908065939.html",
+      "pubDate": "2026-09-07 22:59:39",
+      "source_name": "Crntt",
+      "image_url": "",
+      "keywords": [
+        "陳澄明",
+        "中美關係"
+      ],
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "07261208be818cf3f9cba004eec913d3",
+      "title": "警搗落馬洲依托咪酯工場檢$150萬貨　無業男涉每月收$4萬製毒",
+      "description": "",
+      "link": "https://www.hk01.com/%E7%AA%81%E7%99%BC/60388003/%E8%AD%A6%E6%90%97%E8%90%BD%E9%A6%AC%E6%B4%B2%E4%BE%9D%E6%89%98%E5%92%AA%E9%85%AF%E5%B7%A5%E5%A0%B4%E6%AA%A2-150%E8%90%AC%E8%B2%A8-%E7%84%A1%E6%A5%AD%E7%94%B7%E6%B6%89%E6%AF%8F%E6%9C%88%E6%94%B6-4%E8%90%AC%E8%A3%BD%E6%AF%92",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "c53e83eb37e5b9fe2b39571feef2d2b0",
+      "title": "賴芭堅娜輕取大坂直美 8強鬥鄭欽文",
+      "description": "【Now Sports】2號種子賴芭堅娜周一在美國公開賽以直落兩盤輕取大坂直美,8強對手為鄭欽文,而她距離榮登一姐之路就只差這一步。賴芭堅娜(Elena Rybakina)面對擁有4個大滿貫錦標的Osaka,戰況較預期為一面倒,尤其是首盤兩度打破對方發球局,只花22分鐘即贏6:1。第2盤戰況相對緊湊,賴芭堅娜全場...",
+      "link": "https://hk.sports.yahoo.com/news/%E8%B3%B4%E8%8A%AD%E5%A0%85%E5%A8%9C%E8%BC%95%E5%8F%96%E5%A4%A7%E5%9D%82%E7%9B%B4%E7%BE%8E-8%E5%BC%B7%E9%AC%A5%E9%84%AD%E6%AC%BD%E6%96%87-215604996.html",
+      "pubDate": "2026-09-07 21:56:04",
+      "source_name": "All In Yahoo",
+      "image_url": "",
+      "keywords": [
+        "美國公開賽",
+        "賴芭堅娜",
+        "elena rybakina",
+        "鄭欽文"
+      ],
+      "category": [
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "2747c62a4b9653fb35e4d859d49ab293",
+      "title": "《香港01》十周年｜與香港並肩前行　求真求變　不止於此！",
+      "description": "",
+      "link": "https://www.hk01.com/issue/10432/%E9%A6%99%E6%B8%AF01-%E5%8D%81%E5%91%A8%E5%B9%B4-%E8%88%87%E9%A6%99%E6%B8%AF%E4%B8%A6%E8%82%A9%E5%89%8D%E8%A1%8C-%E6%B1%82%E7%9C%9F%E6%B1%82%E8%AE%8A-%E4%B8%8D%E6%AD%A2%E6%96%BC%E6%AD%A4",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "3fcc1cc47726dacec3af06dccca72ed5",
+      "title": "•AnalysisAnalysisTrump’s blockade pushes Iran toward military escalationAs Washington abandons talks with Iran for an aggressive economic pressure campaign, a cornered Tehran is now threatening milita",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/middleeast/trump-blockade-iran-military-escalation-intl-latam",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "2b26c5e93cb955659a442c4f0bad32cb",
+      "title": "施政報告2026．五年規劃｜北都大學城落地　學生津貼、租置重推？",
+      "description": "",
+      "link": "https://www.hk01.com/issue/10430/%E6%96%BD%E6%94%BF%E5%A0%B1%E5%91%8A2026-%E4%BA%94%E5%B9%B4%E8%A6%8F%E5%8A%83-%E5%8C%97%E9%83%BD%E5%A4%A7%E5%AD%B8%E5%9F%8E%E8%90%BD%E5%9C%B0-%E5%AD%B8%E7%94%9F%E6%B4%A5%E8%B2%BC-%E7%A7%9F%E7%BD%AE%E9%87%8D%E6%8E%A8",
+      "pubDate": "2026-09-08 19:00:12",
+      "fetched_at": "2026-09-08 19:00:12",
+      "source_name": "HK01",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "local"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "4d35a5439ea65d42fb9ce39b3c70f886",
+      "title": "Volcanic ash in Indonesia",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/06/travel/anak-krakatau-indonesia-eruption-airports-intl-hnk",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "b296475dcdd6fcf9b4923170025680c6",
+      "title": "德東薩安州選舉極右黨大勝震撼歐洲 馬斯克大讚「做得好!」",
+      "description": "德國東部薩克森—安哈爾特州周日(6日)舉行州議會選舉,反移民、親俄羅斯的極右翼政黨「德國另類選擇黨」(AfD)取得歷史性勝利,以43.8%得票率成為議會第一大黨,支持度較5年前增加逾一倍。 默茨對戰果表震驚 稱須推動「根本性改革」 根據薩安州選舉部門公布的初步最終結果,全州2,661個選區已完成點票。AfD在83席州議會中取得39席,距離過半數所需的42席只差3席,創下該黨歷來最佳州選舉成績,也是",
+      "link": "https://www.stheadline.com/realtime-world/3612781/%E5%BE%B7%E6%9D%B1%E8%96%A9%E5%AE%89%E5%B7%9E%E9%81%B8%E8%88%89%E6%A5%B5%E5%8F%B3%E9%BB%A8%E5%A4%A7%E5%8B%9D%E9%9C%87%E6%92%BC%E6%AD%90%E6%B4%B2-%E9%A6%AC%E6%96%AF%E5%85%8B%E5%A4%A7%E8%AE%9A%E5%81%9A%E5%BE%97%E5%A5%BD",
+      "pubDate": "2026-09-07 22:24:42",
+      "source_name": "Stheadline",
+      "image_url": "",
+      "keywords": null,
+      "category": [
+        "top",
+        "politics"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "061a9d4b9c42201d9d049a877b05011a",
+      "title": "America’s high gas prices",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/economy/gas-price-pain",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "e42fcdc4579af8973351f70346f8799b",
+      "title": "專欄 蘇哈仔|拉舒福特變新造的人?",
+      "description": "上周英超大勝葉士域治,拉舒福特回歸後首次為曼聯正選出場。他沒有入球和助攻,但表現備受好評,有媒體形容他就像新援一樣,為紅魔帶來不一樣的比賽元素。睇過比賽,認同「新援」這一點,福頭同離隊前的確不一樣。 拉舒福特的實力,從來不用懷疑,2022至23球季單季入30球,幾乎以一人之力撐起球隊,另外還有兩季入超過20球,歷來為曼聯攻入138球,還有79次助攻,魔迷一直知道他的進攻能力。對葉士域治佢無直接參與",
+      "link": "https://www.stheadline.com/football-tips/3612637/%E5%B0%88%E6%AC%84-%E8%98%87%E5%93%88%E4%BB%94%E6%8B%89%E8%88%92%E7%A6%8F%E7%89%B9%E8%AE%8A%E6%96%B0%E9%80%A0%E7%9A%84%E4%BA%BA",
+      "pubDate": "2026-09-07 23:00:00",
+      "source_name": "Stheadline",
+      "image_url": "",
+      "keywords": [
+        "蘇偉業",
+        "蘇哈仔",
+        "拉舒福特"
+      ],
+      "category": [
+        "top",
+        "sports"
+      ],
+      "region": "hk"
+    },
+    {
+      "id": "e4a807023c63a59f5a94bccd9d69facc",
+      "title": "New World screwworms",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/health/screwworm-billion-flies",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "a4bbfc04d7a1b57436f088ae8e0508eb",
+      "title": "Venice Film Festival",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/03/style/venice-film-festival-red-carpet-fashion-2026",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "f2faa92b4f477bdbd1715da41914c2ec",
+      "title": "Laura Proctor/Bloomberg/Getty Images",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/economy/trump-carney-canada-us-trade-war",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "14ada713f78db27df39529db811ba0d9",
+      "title": "AP/Getty Images/Reuters",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/08/politics/democrats-target-red-territory-2026-midterms",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "8d2880387f47cf1be8d2f80e61eb0c55",
+      "title": "Russia pounds Kyiv one day after visit by Witkoff and Kushner",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/world/ukraine-russia-kyiv-attacks-intl-hnk",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "fe37bdeae824482f6be1457026c32ad7",
+      "title": "US officials quietly discuss cutting Middle East presenceShow all",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/08/politics/us-military-intelligence-bases-troops-middle-east",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "22852b1481cc57302333e9b23ea96453",
+      "title": "•AnalysisMichael Brandt/dpa/picture-alliance/AP",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/08/europe/germany-far-right-afd-election-europe-intl",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "82c599d2df83758d8cc0d0619f22e135",
+      "title": "Annegret Hilse/Reuters",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/europe/afd-first-place-saxony-germany-election-intl",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "594c15ae83bf40d8394f75f123b14390",
+      "title": "Harry and Meghan",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/uk/prince-harry-meghan-non-working-royals-intl",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "ea0ca1327d07f228543bb4815f68a0e5",
+      "title": "Kids’ mental health",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/07/health/ruining-kids-sports-mental-health-wellness",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "b5c9c12409f34f7e1474f51c74c8a421",
+      "title": "Scores wounded as Iran-backed Houthis attack Saudi Arabia in major regional escalationSaudi Arabia is vowing a resolute response to a wave of attacks from Yemen’s Iran-backed Houthi rebels early Tuesd",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/08/middleeast/houthis-attack-saudi-arabia-yemen-intl-hnk",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
+    },
+    {
+      "id": "235600348fd588dca9dbd7ca9b0c3e4d",
+      "title": "Brazil’s oil exports surge as China seeks alternatives to Iranian crudeBrazilian oil production and exports have hit record highs this year, largely due to increased demand from China as the US-Iran w",
+      "description": "Show all",
+      "link": "https://edition.cnn.com/2026/09/08/business/oil-brazil-china",
+      "pubDate": "2026-09-08 19:00:11",
+      "fetched_at": "2026-09-08 19:00:11",
+      "source_name": "CNN",
+      "image_url": "",
+      "keywords": [],
+      "category": [
+        "international"
+      ],
+      "region": "intl"
     }
   ]
 }
