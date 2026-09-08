@@ -78,6 +78,15 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .skill-tag.equipped{outline:2px solid var(--gold);outline-offset:1px}
 .learn-msg{background:rgba(39,174,96,.15);border:1px solid rgba(39,174,96,.3);border-radius:8px;padding:10px 14px;margin:8px 0;font-size:13px;color:var(--green)}
 .fail-msg{background:rgba(192,57,43,.1);border:1px solid rgba(192,57,43,.2);border-radius:8px;padding:10px 14px;margin:8px 0;font-size:13px;color:var(--red)}
+.skillpanel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin:10px 0}
+.skillpanel h3{font-size:14px;color:var(--gold);margin:12px 0 8px;letter-spacing:2px}
+.skillpanel .sk-row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;margin:4px 0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.skillpanel .sk-row:hover{border-color:var(--gold2);background:var(--card2)}
+.skillpanel .sk-row.active{border-color:var(--gold);background:rgba(212,175,55,.08)}
+.skillpanel .sk-row .sk-name{flex:1;font-size:13px}
+.skillpanel .sk-row .sk-rarity{font-size:11px;padding:1px 6px;border-radius:4px}
+.skillpanel .sk-row .sk-equipped{font-size:11px;color:var(--gold);font-weight:600}
+.skillpanel .sk-empty{font-size:12px;color:var(--muted);padding:8px 10px}
 .modal{display:none;position:fixed;inset:0;z-index:100}
 .modal.open{display:block}
 .mback{position:absolute;inset:0;background:rgba(0,0,0,.7)}
@@ -156,7 +165,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="chip">🧍 <b id="playerName">…</b></div>
     <div class="chip">⚡ 閱歷 <b id="playerXp">0</b></div>
     <div class="chip" id="playerAlignChip" style="display:none">⚖️ <b id="playerAlignLabel">中立</b> <span class="align-bar"><i id="playerAlignBar"></i></span> <b id="playerAlignNum">500</b></div>
-    <div class="chip" id="playerSkillsChip">⚔️ <span id="playerSkillsText">載入中…</span></div>
+    <div class="chip" id="playerSkillsChip" style="cursor:pointer" onclick="openSkillPanel()">⚔️ <span id="playerSkillsText">載入中…</span></div>
     <div class="chip">👥 <b id="npcCount">–</b> 位 · <b id="npcLocal">–</b> 同區</div>
     <div class="chip"><a href="#" onclick="logout();return false">登出</a></div>
   </div>
@@ -780,6 +789,80 @@ document.addEventListener('keydown',e=>{
     authMode==='reg'?regGo():loginGo();
   }
 });
+function openSkillPanel(){
+  const p=player();if(!p)return;
+  const types=[{key:'martial',label:'⚔️ 武功',icon:'⚔️'},{key:'neigong',label:'🧘 內功',icon:'🧘'},{key:'qinggong',label:'💨 輕功',icon:'💨'}];
+  let html=`<button class="mclose" onclick="closeModal()">✕</button>
+    <div class="mname">我的技能</div>
+    <div class="mmeta">點擊技能可裝備/卸下（每類型只能裝備一個）</div>`;
+  
+  for(const t of types){
+    const typeSkills=getPlayerAllSkills(p.name).filter(s=>s.type===t.key);
+    const equipped=typeSkills.find(s=>s.equipped);
+    html+=`<div class="skillpanel"><h3>${t.label}${equipped?' — 已裝備：'+esc(equipped.name):''}</h3>`;
+    if(typeSkills.length===0){
+      html+=`<div class="sk-empty">尚未學會此類技能</div>`;
+    }else{
+      for(const s of typeSkills){
+        const isActive=s.equipped;
+        html+=`<div class="sk-row${isActive?' active':''}" onclick="toggleEquip('${s.key}','${s.type}')">
+          <span class="sk-name">${esc(s.name)}</span>
+          <span class="sk-rarity skill-tag ${s.rarity}">${RARITY_ORD[s.rarity]||''}${RARITY_LABEL[s.rarity]||''}</span>
+          ${isActive?'<span class="sk-equipped">✓ 裝備中</span>':''}
+        </div>`;
+      }
+    }
+    html+=`</div>`;
+  }
+  $('mbox').innerHTML=html;
+  $('modal').classList.add('open');
+}
+
+async function toggleEquip(skillKey,skillType){
+  const p=player();if(!p)return;
+  const currentlyEquipped=_playerSkillsCache.filter(s=>{
+    if(!s.equipped)return false;
+    const info=getSkillInfo(s.skill_key);
+    return info&&info.type===skillType;
+  });
+  
+  if(currentlyEquipped.length>0&&currentlyEquipped[0].skill_key===skillKey){
+    // Unequip
+    await fetch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${skillKey}`,{
+      method:'PATCH',
+      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json'},
+      body:JSON.stringify({equipped:false})
+    });
+    toast('已卸下');
+  }else{
+    // Unequip current in same slot
+    for(const s of currentlyEquipped){
+      await fetch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${s.skill_key}`,{
+        method:'PATCH',
+        headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json'},
+        body:JSON.stringify({equipped:false})
+      });
+    }
+    // Equip new (ensure learned first)
+    await fetch(`${SUPABASE_URL}/rest/v1/player_skills`,{
+      method:'POST',
+      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json','Prefer':'resolution=merge-duplicates'},
+      body:JSON.stringify({player_name:p.name,skill_key:skillKey,equipped:true})
+    });
+    // If not yet learned, do a proper insert
+    await fetch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${skillKey}`,{
+      method:'PATCH',
+      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json'},
+      body:JSON.stringify({equipped:true})
+    });
+    const si=getSkillInfo(skillKey);
+    toast('裝備了「'+esc(si?si.name:skillKey)+'」');
+  }
+  await loadPlayerSkills(p.name);
+  renderPlayerHeaderSkills();
+  openSkillPanel();
+}
+
 console.log('[WULIN] calling load()');load();
 </script>
 </body>
