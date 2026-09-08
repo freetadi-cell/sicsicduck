@@ -6,17 +6,20 @@
 <meta name="robots" content="noindex, nofollow">
 <title>武林 · Wulin Project</title>
 <style>
-:root{--bg:#0d1117;--bg2:#141b24;--card:#1a222d;--card2:#212b38;--text:#e6e1d5;--muted:#9aa5b1;--gold:#d4af37;--gold2:#b8962e;--red:#c0392b;--green:#27ae60;--border:#2a3441}
+:root{--bg:#0c0c12;--bg2:#111118;--card:#15151f;--card2:#1c1c2a;--text:#e0ddd5;--muted:#6b6b7b;--gold:#d4af37;--gold2:#c9a84c;--gold3:rgba(212,175,55,.12);--red:#c0392b;--green:#27ae60;--border:#2a2a3a}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Noto Sans TC","PingFang TC",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
-.wrap{max-width:960px;margin:0 auto;padding:20px 16px 60px}
-header{text-align:center;padding:36px 0 24px;border-bottom:1px solid var(--border);margin-bottom:20px;position:relative}
-header::before{content:"武";position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:120px;color:rgba(212,175,55,.05);font-weight:900;pointer-events:none}
-.wulin-logo{height:80px;width:auto;object-fit:contain}
-h1{font-size:34px;letter-spacing:14px;color:var(--gold);text-indent:14px;font-weight:700}
-.sub{color:var(--muted);font-size:13px;margin-top:6px;letter-spacing:2px}
-.worldbar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px 0 26px}
-.chip{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:6px 14px;font-size:13px}
+body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px 60px}
+
+/* Hero — template style */
+.hero{position:relative;text-align:center;padding:50px 20px 30px;overflow:hidden;background:linear-gradient(180deg,#08080d 0%,#10101a 40%,#0c0c12 100%);border-bottom:1px solid var(--border)}
+.hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(212,175,55,.05) 0%,transparent 70%);pointer-events:none}
+.hero-badge{font-size:12px;color:var(--gold);letter-spacing:6px;margin-bottom:12px;opacity:.7;text-transform:uppercase}
+.wulin-logo{height:100px;width:auto;object-fit:contain;display:block;margin:0 auto 12px}
+.hero-sub{color:var(--muted);font-size:12px;letter-spacing:3px;margin-top:4px}
+.hero-line{width:40px;height:1px;background:var(--gold);margin:16px auto;opacity:.35}
+.worldbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0;padding:16px 20px;background:var(--card);border-bottom:1px solid var(--border)}
+.chip{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:12px}
 .chip b{color:var(--gold);font-weight:600}
 .chip a{color:var(--muted);font-size:12px;text-decoration:none;margin-left:6px}
 .chip a:hover{color:var(--gold)}
@@ -25,8 +28,10 @@ h1{font-size:34px;letter-spacing:14px;color:var(--gold);text-indent:14px;font-we
 .chip .align-bar i.evil{background:var(--red)}
 .chip .align-bar i.neutral{background:var(--muted)}
 .chip .align-bar i.good{background:var(--green)}
-h2{font-size:17px;color:var(--gold);margin:26px 0 12px;letter-spacing:3px;display:flex;align-items:center;gap:10px}
-h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+h2{font-size:16px;color:var(--gold);margin:30px 0 14px;letter-spacing:4px;text-align:center;position:relative}
+h2::before{content:'';display:inline-block;width:30px;height:1px;background:var(--gold);vertical-align:middle;margin-right:12px;opacity:.4}
+h2::after{content:'';display:inline-block;width:30px;height:1px;background:var(--gold);vertical-align:middle;margin-left:12px;opacity:.4}
+
 .region-panel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:18px}
 .region-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .region-current{font-size:15px;color:var(--text)}
@@ -43,10 +48,10 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .events li:last-child{border-bottom:none}
 .events .tag{color:var(--gold2);font-size:12px;margin-right:8px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
-.npc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;cursor:pointer;transition:.2s;position:relative;overflow:hidden}
-.npc:hover{border-color:var(--gold2);background:var(--card2);transform:translateY(-2px)}
-.npc .nm{font-size:18px;font-weight:700;color:var(--text)}
-.npc .tt{font-size:12px;color:var(--gold);margin:2px 0 8px}
+.npc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;cursor:pointer;transition:.25s;position:relative;overflow:hidden}
+.npc:hover{border-color:var(--gold2);background:var(--card2);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.npc .nm{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px}
+.npc .tt{font-size:12px;color:var(--gold);margin:2px 0 8px;letter-spacing:1px}
 .npc .mood{font-size:13px;margin-top:8px;color:var(--text)}
 .npc .att{font-size:12px;color:var(--muted);margin-top:4px}
 .npc .alabel{font-size:11px;margin-top:6px}
@@ -144,10 +149,12 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 </head>
 <body>
 <div class="wrap">
-  <header>
+  <div class="hero">
+    <div class="hero-badge">WULIN PROJECT · 神鵰世界</div>
     <img src="assets/wulin_logo.jpg" alt="武林" class="wulin-logo">
-    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v6</div>
-  </header>
+    <div class="hero-sub">PROTOTYPE v6</div>
+    <div class="hero-line"></div>
+  </div>
   <div class="worldbar">
     <div class="chip">🗓 <b id="worldTime">載入中…</b></div>
     <div class="chip">🧍 <b id="playerName">…</b></div>
