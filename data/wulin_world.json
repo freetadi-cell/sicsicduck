@@ -504,6 +504,48 @@
       "martial": 70,
       "neigong": 65,
       "qinggong": 72
+    },
+    {
+      "key": "testren",
+      "name": "測試人",
+      "title": "無名俠客",
+      "region": "襄陽城",
+      "location": "城門口",
+      "mood": "悠閒自得",
+      "attitude": "友善隨和",
+      "alignment": 500,
+      "affinity": 50,
+      "martial": 78,
+      "neigong": 47,
+      "qinggong": 32,
+      "dialogue": [
+        "你也是來襄陽城闖蕩的嗎？",
+        "聽說蒙古人最近又有動作，得小心點。",
+        "有什麼事尽管說，能幫的我一定幫。"
+      ],
+      "chat_options": [
+        {
+          "say": "你好，請問這裏有什麼好玩的？",
+          "reply": "好玩？城裏最近倒是熱鬧，不過小心別惹到不该惹的人。",
+          "affinity_delta": 2,
+          "alignment_delta": 0
+        },
+        {
+          "say": "你武功看起來不錯，可否切磋一下？",
+          "reply": "哦？你有興趣？那就來試試吧，點到即止。",
+          "affinity_delta": 1,
+          "alignment_delta": 1
+        },
+        {
+          "say": "蒙古人何時攻城？你知道內幕嗎？",
+          "reply": "這個…我也不太清楚，不過聽說郭大俠正在部署。",
+          "affinity_delta": 0,
+          "alignment_delta": 0
+        }
+      ],
+      "relations": {
+        "guojing": "泛泛之交"
+      }
     }
   ],
   "events": [
