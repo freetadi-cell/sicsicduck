@@ -4,3 +4,28 @@ __pycache__/
 *.log
 fcm-service-account.json
 data/news.json.bak_rank
+
+# Cache & scratch
+articles_cache/
+data/_scratch/
+data/*.jpg
+data/*.csv
+data/*.txt
+data/*.bak
+data/*.backup*
+data/*.log
+
+# Build / runtime
+node_modules/
+venv/
+.wrangler/
+.wrangler.toml
+
+# Dev / internal
+scripts/
+research/
+docs/
+.github/
+
+# Media too large for Pages
+*.mp4
