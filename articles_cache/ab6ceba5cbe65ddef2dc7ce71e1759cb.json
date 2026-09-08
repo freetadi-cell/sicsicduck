@@ -1,0 +1,10 @@
+{
+  "id": "ab6ceba5cbe65ddef2dc7ce71e1759cb",
+  "title": "DLSS 5 疑令 RTX 5090 功耗暴增?用戶 16-pin 接口過熱熔毀惹安全爭議",
+  "source_name": "Pcm",
+  "link": "https://www.pcmarket.com.hk/dlss-5-rtx-5090-power-connector-melting/",
+  "rewritten_title": "DLSS 5疑致RTX 5090功耗飆升逾600W，16-pin接口過熱熔毀惹安全憂慮",
+  "rewritten": "NVIDIA DLSS 5技術正式推出後，有RTX 5090用戶erek在《NBA 2K27》測試時，發現顯示卡功耗從平時約450W暴增至613.5W，隨後16-pin電源接口因過熱而塑膠熔化、端子燒焦，事件引發硬件安全爭議。專家分析指，DLSS 5的生成式AI渲染可能增加GPU負荷，但RTX 5090過往已有類似接口事故，根本問題或涉及端子電流分配不均。目前證據不足以直接證明DLSS 5為熔毀主因，卻凸顯高階顯卡在極端功耗下的供電系統風險。",
+  "status": "done",
+  "fetched_at": "2026-09-08T10:14:09"
+}
