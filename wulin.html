@@ -4,15 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>武林 · Wulin Project（Prototype）</title>
+<title>武林 · Wulin Project</title>
 <style>
-:root{
-  --bg:#0d1117;--bg2:#141b24;--card:#1a222d;--card2:#212b38;
-  --text:#e6e1d5;--muted:#9aa5b1;--gold:#d4af37;--gold2:#b8962e;
-  --red:#c0392b;--green:#27ae60;--border:#2a3441;
-}
+:root{--bg:#0d1117;--bg2:#141b24;--card:#1a222d;--card2:#212b38;--text:#e6e1d5;--muted:#9aa5b1;--gold:#d4af37;--gold2:#b8962e;--red:#c0392b;--green:#27ae60;--border:#2a3441}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
+body{font-family:"Noto Sans TC","PingFang TC",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
 .wrap{max-width:960px;margin:0 auto;padding:20px 16px 60px}
 header{text-align:center;padding:36px 0 24px;border-bottom:1px solid var(--border);margin-bottom:20px;position:relative}
 header::before{content:"武";position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:120px;color:rgba(212,175,55,.05);font-weight:900;pointer-events:none}
@@ -34,7 +30,6 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .region-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .region-current{font-size:15px;color:var(--text)}
 .region-current b{color:var(--gold)}
-.region-desc{font-size:12px;color:var(--muted);margin-top:4px}
 .region-travel{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .travel-btn{background:var(--bg2);border:1px solid var(--border);color:var(--text);padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit;transition:.2s}
 .travel-btn:hover:not(:disabled){border-color:var(--gold2);color:var(--gold)}
@@ -51,7 +46,6 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .npc:hover{border-color:var(--gold2);background:var(--card2);transform:translateY(-2px)}
 .npc .nm{font-size:18px;font-weight:700;color:var(--text)}
 .npc .tt{font-size:12px;color:var(--gold);margin:2px 0 8px}
-.npc .loc{font-size:12px;color:var(--muted)}
 .npc .mood{font-size:13px;margin-top:8px;color:var(--text)}
 .npc .att{font-size:12px;color:var(--muted);margin-top:4px}
 .npc .alabel{font-size:11px;margin-top:6px}
@@ -61,11 +55,6 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .affbar{height:5px;background:var(--bg2);border-radius:3px;margin-top:10px;overflow:hidden}
 .affbar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold2),var(--gold));border-radius:3px;transition:width .4s}
 .affnum{font-size:11px;color:var(--muted);margin-top:4px;text-align:right}
-.stats{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
-.stat{font-size:11px;padding:2px 7px;border-radius:4px;background:var(--card2);color:var(--muted);white-space:nowrap}
-.stat b{color:var(--gold);font-weight:600}
-.mstats{display:flex;gap:10px;margin:10px 0;flex-wrap:wrap}
-.mstats .stat{font-size:13px;padding:4px 10px}
 .skill-list{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
 .skill-tag{font-size:10px;padding:2px 6px;border-radius:4px;white-space:nowrap}
 .skill-tag.martial{background:rgba(192,57,43,.15);color:#e74c3c}
@@ -77,7 +66,6 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bo
 .skill-tag.common{border:1px solid rgba(100,100,100,.2)}
 .skill-tag.equipped{outline:2px solid var(--gold);outline-offset:1px}
 .learn-msg{background:rgba(39,174,96,.15);border:1px solid rgba(39,174,96,.3);border-radius:8px;padding:10px 14px;margin:8px 0;font-size:13px;color:var(--green)}
-.fail-msg{background:rgba(192,57,43,.1);border:1px solid rgba(192,57,43,.2);border-radius:8px;padding:10px 14px;margin:8px 0;font-size:13px;color:var(--red)}
 .skillpanel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin:10px 0}
 .skillpanel h3{font-size:14px;color:var(--gold);margin:12px 0 8px;letter-spacing:2px}
 .skillpanel .sk-row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;margin:4px 0;cursor:pointer;transition:.2s;border:1px solid transparent}
@@ -157,9 +145,8 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 <div class="wrap">
   <header>
     <h1>武 林</h1>
-    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v5</div>
+    <div class="sub">WULIN PROJECT · 神鵰世界 · PROTOTYPE v6</div>
   </header>
-
   <div class="worldbar">
     <div class="chip">🗓 <b id="worldTime">載入中…</b></div>
     <div class="chip">🧍 <b id="playerName">…</b></div>
@@ -169,20 +156,14 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="chip">👥 <b id="npcCount">–</b> 位 · <b id="npcLocal">–</b> 同區</div>
     <div class="chip"><a href="#" onclick="logout();return false">登出</a></div>
   </div>
-
   <div class="region-panel" id="regionPanel" style="display:none"></div>
-
   <h2>江湖大事</h2>
   <div class="events" id="events">載入中…</div>
-
   <h2>江湖人物<span id="regionTag" style="font-size:12px;color:var(--muted);font-weight:normal;margin-left:12px"></span></h2>
   <div class="grid" id="npcGrid"></div>
-
   <footer>世界由 AI 推進 · 只有同區 NPC 才可以互動 · 本頁為未公開原型</footer>
 </div>
-
 <div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
-
 <div id="auth">
   <div class="acard">
     <h3>武 林</h3>
@@ -196,158 +177,66 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 <div class="toast" id="toast"></div>
 
 <script>
+const SUPABASE_URL='https://swsdzpakaywkxxngatiw.supabase.co';
+const SUPABASE_ANON='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3c2R6cGFrYXl3a3h4bmdhdGl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2ODU1NTcsImV4cCI6MjEwNDI2MTU1N30.WGbiqYuXMHeWNf1u4Ou9-YAQxBp2KTxDy0vZKr4CJEk';
+
 let world=null,worldDay=1;
 const $=id=>document.getElementById(id);
 
-/* ================= 帳號系統（Supabase） ================= */
-const SUPABASE_URL='https://swsdzpakaywkxxngatiw.supabase.co';
-const SUPABASE_ANON='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3c2R6cGFrYXl3a3h4bmdhdGl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2ODU1NTcsImV4cCI6MjEwNDI2MTU1N30.WGbiqYuXMHeWNf1u4Ou9-YAQxBp2KTxDy0vZKr4CJEk';
-let _cloudAccounts=null,_cloudSha=null;
-/* ================= 武功系統 ================= */
+/* ===== Supabase helpers ===== */
+const apiHeaders=()=>({'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON});
+async function apiGet(url){const r=await fetch(url,{headers:apiHeaders()});return r.ok?await r.json():[]}
+async function apiPost(url,body){const r=await fetch(url,{method:'POST',headers:{...apiHeaders(),'Content-Type':'application/json','Prefer':'resolution=merge-duplicates'},body:JSON.stringify(body)});return r.ok}
+async function apiPatch(url,body){const r=await fetch(url,{method:'PATCH',headers:{...apiHeaders(),'Content-Type':'application/json'},body:JSON.stringify(body)});return r.ok}
+
+/* ===== Skills DB ===== */
 let _skillsDb=[],_npcSkillsCache={},_playerSkillsCache=[];
-
-async function loadSkillsDb(){
-  try{
-    const r=await fetch(`${SUPABASE_URL}/rest/v1/skills?select=key,name,type,power,rarity,description&order=type,power.desc`,{
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON}
-    });
-    if(r.ok){_skillsDb=await r.json();console.log('[SKILLS] loaded',_skillsDb.length,'skills')}
-    else{console.log('[SKILLS] fetch failed',r.status)}
-  }catch(e){console.log('[SKILLS] load error',e)}
-}
-
-async function loadNpcSkills(npcKey){
-  if(_npcSkillsCache[npcKey])return _npcSkillsCache[npcKey];
-  try{
-    const r=await fetch(`${SUPABASE_URL}/rest/v1/npc_skills?select=skill_key,proficiency&npc_key=eq.${npcKey}`,{
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON}
-    });
-    if(r.ok){
-      const rows=await r.json();
-      _npcSkillsCache[npcKey]=rows;
-      return rows;
-    }
-  }catch(e){}
-  return [];
-}
-
-const BASIC_SKILLS=['瑛姑指法','基礎吐納','基礎步法'];
-async function grantBasicSkills(playerName){
-  for(const sk of BASIC_SKILLS){
-    if(!_playerSkillsCache.some(ps=>ps.skill_key===sk)){
-      await playerLearnSkill(playerName,sk);
-    }
-  }
-}
-
-async function loadPlayerSkills(playerName){
-  try{
-    const r=await fetch(`${SUPABASE_URL}/rest/v1/player_skills?select=skill_key,equipped&player_name=eq.${encodeURIComponent(playerName)}`,{
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON}
-    });
-    if(r.ok){_playerSkillsCache=await r.json();return _playerSkillsCache}
-  }catch(e){}
-  return [];
-}
-
-async function playerLearnSkill(playerName,skillKey){
-  try{
-    const r=await fetch(`${SUPABASE_URL}/rest/v1/player_skills`,{
-      method:'POST',
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json','Prefer':'resolution=merge-duplicates'},
-      body:JSON.stringify({player_name:playerName,skill_key:skillKey,equipped:false})
-    });
-    if(r.ok){await loadPlayerSkills(playerName);return true}
-  }catch(e){}
-  return false;
-}
-
-function getSkillInfo(key){return _skillsDb.find(s=>s.key===key)||null}
-function getPlayerEquippedSkills(playerName){
-  return _playerSkillsCache.filter(s=>s.equipped).map(s=>getSkillInfo(s.skill_key)).filter(Boolean);
-}
-function getPlayerAllSkills(playerName){
-  return _playerSkillsCache.map(s=>{const info=getSkillInfo(s.skill_key);return info?{...info,equipped:s.equipped}:null}).filter(Boolean);
-}
 const RARITY_TIER={common:1,uncommon:2,rare:3,legendary:4};
 const RARITY_LABEL={common:'凡',uncommon:'中',rare:'高',legendary:'絕'};
 const RARITY_ORD={common:'',uncommon:'二',rare:'三',legendary:'四'};
-function canLearnViaSpar(skillKey){const s=getSkillInfo(skillKey);return s?RARITY_TIER[s.rarity]<=2:false}
-function renderSkillTag(skill,equipped){
-  const cls=`skill-tag ${skill.type} ${skill.rarity}${equipped?' equipped':''}`;
-  return `<span class="${cls}" title="${esc(skill.description||'')}">${esc(skill.name)}</span>`;
+const BASIC_SKILLS=['瑛姑指法','基礎吐納','基礎步法'];
+
+async function loadSkillsDb(){try{_skillsDb=await apiGet(`${SUPABASE_URL}/rest/v1/skills?select=key,name,type,power,rarity,description&order=type,power.desc`)}catch(e){}}
+function getSkillInfo(key){return _skillsDb.find(s=>s.key===key)||null}
+function canLearnViaSpar(k){const s=getSkillInfo(k);return s?RARITY_TIER[s.rarity]<=2:false}
+function renderSkillTag(s,eq){return `<span class="skill-tag ${s.type} ${s.rarity}${eq?' equipped':''}" title="${esc(s.description||'')}">${esc(s.name)}</span>`}
+
+async function loadNpcSkills(npcKey){
+  if(_npcSkillsCache[npcKey])return _npcSkillsCache[npcKey];
+  const rows=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=skill_key,proficiency&npc_key=eq.${npcKey}`);
+  _npcSkillsCache[npcKey]=rows;return rows;
 }
-function renderNpcSkillTags(skills,equipped){
-  return skills.map(s=>renderSkillTag(s,equipped)).join('');
+async function loadPlayerSkills(name){
+  _playerSkillsCache=await apiGet(`${SUPABASE_URL}/rest/v1/player_skills?select=skill_key,equipped&player_name=eq.${encodeURIComponent(name)}`);
+  return _playerSkillsCache;
 }
+async function playerLearnSkill(name,skillKey){
+  return await apiPost(`${SUPABASE_URL}/rest/v1/player_skills`,{player_name:name,skill_key:skillKey,equipped:false});
+}
+async function grantBasicSkills(name){
+  for(const sk of BASIC_SKILLS){if(!_playerSkillsCache.some(ps=>ps.skill_key===sk))await playerLearnSkill(name,sk)}
+}
+function getPlayerEquippedSkills(name){return _playerSkillsCache.filter(s=>s.equipped).map(s=>getSkillInfo(s.skill_key)).filter(Boolean)}
+function getPlayerAllSkills(name){return _playerSkillsCache.map(s=>{const i=getSkillInfo(s.skill_key);return i?{...i,equipped:s.equipped}:null}).filter(Boolean)}
 function renderPlayerHeaderSkills(){
-  const p=player();
-  console.log('[SKILLS] renderHeader player:',p?p.name:'null','skillsDb:',_skillsDb.length,'playerSkills:',_playerSkillsCache.length);
-  if(!p){$('playerSkillsText').textContent='—';return}
-  const equipped=getPlayerEquippedSkills(p.name);
-  console.log('[SKILLS] equipped:',equipped.length);
-  if(equipped.length===0){$('playerSkillsText').textContent='未裝備技能';return}
-  $('playerSkillsText').innerHTML=equipped.map(s=>renderSkillTag(s,true)).join(' ');
+  const p=player();if(!p){$('playerSkillsText').textContent='—';return}
+  const eq=getPlayerEquippedSkills(p.name);
+  if(eq.length===0){$('playerSkillsText').textContent='未裝備技能';return}
+  $('playerSkillsText').innerHTML=eq.map(s=>renderSkillTag(s,true)).join(' ');
 }
 
-async function cloudLoad(){
-  try{
-    const r=await fetch(`${SUPABASE_URL}/rest/v1/players?select=*`,{
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON}
-    });
-    if(!r.ok)return false;
-    const rows=await r.json();
-    const accounts={};
-    rows.forEach(row=>{accounts[row.name]={ph:row.ph,save:row.save}});
-    _cloudAccounts=accounts;
-    return true;
-  }catch(e){console.log('[CLOUD] load error',e);return false}
-}
+/* ===== Account system (Supabase) ===== */
+let _cloudAccounts=null;
+async function cloudLoad(){try{const r=await fetch(`${SUPABASE_URL}/rest/v1/players?select=*`,{headers:apiHeaders()});if(!r.ok)return false;const rows=await r.json();_cloudAccounts={};rows.forEach(row=>{_cloudAccounts[row.name]={ph:row.ph,save:row.save}});return true}catch(e){return false}}
+async function cloudSave(accounts){try{for(const [name,data] of Object.entries(accounts)){await fetch(`${SUPABASE_URL}/rest/v1/players`,{method:'POST',headers:{...apiHeaders(),'Content-Type':'application/json','Prefer':'resolution=merge-duplicates'},body:JSON.stringify({name,ph:data.ph,save:data.save})})}return true}catch(e){return false}}
+function accounts(){if(_cloudAccounts)return _cloudAccounts;try{return JSON.parse(localStorage.getItem('wulin_accounts'))||{}}catch(e){return{}}}
+function saveAccounts(a){localStorage.setItem('wulin_accounts',JSON.stringify(a));return cloudSave(a)}
+async function sha256(s){if(window.crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('wulin·'+s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}let h=5381;for(const c of s)h=((h*33)^c.codePointAt(0))>>>0;return 'f'+h.toString(16)}
 
-async function cloudSave(accounts){
-  try{
-    // 先用 upsert 寫入每個玩家
-    const entries=Object.entries(accounts);
-    for(const [name,data] of entries){
-      await fetch(`${SUPABASE_URL}/rest/v1/players`,{
-        method:'POST',
-        headers:{
-          'apikey':SUPABASE_ANON,
-          'Authorization':'Bearer '+SUPABASE_ANON,
-          'Content-Type':'application/json',
-          'Prefer':'resolution=merge-duplicates'
-        },
-        body:JSON.stringify({name,ph:data.ph,save:data.save})
-      });
-    }
-    return true;
-  }catch(e){console.log('[CLOUD] save error',e);return false}
-}
-
-function accounts(){
-  if(_cloudAccounts)return _cloudAccounts;
-  try{return JSON.parse(localStorage.getItem('wulin_accounts'))||{}}catch(e){return{}}
-}
-function saveAccounts(a){
-  localStorage.setItem('wulin_accounts',JSON.stringify(a));
-  return cloudSave(a).then(ok=>{console.log('[CLOUD] save result:',ok?'✅':'❌');return ok}).catch(e=>{console.error('[CLOUD] save error',e);return false});
-}
-async function sha256(s){
-  if(window.crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('wulin·'+s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
-  let h=5381;for(const c of s)h=((h*33)^c.codePointAt(0))>>>0;return 'f'+h.toString(16);
-}
-function player(){
-  let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){console.log('[WULIN] player() parse error',e)}
-  const a=accounts();
-  const ok=p&&p.name&&a[p.name];
-  console.log('[WULIN] player() check:',{hasP:!!p,name:p?.name,hasAccount:!!a[p?.name],result:ok?'VALID':'NULL',accounts:Object.keys(a)});
-  return ok?p:null;
-}
-function savePlayer(p){
-  localStorage.setItem('wulin_player',JSON.stringify(p));
-  const a=accounts();if(a[p.name]){a[p.name].save=p;saveAccounts(a)}
-}
+function player(){let p;try{p=JSON.parse(localStorage.getItem('wulin_player'))}catch(e){}const a=accounts();return(p&&p.name&&a[p.name])?p:null}
+function savePlayer(p){localStorage.setItem('wulin_player',JSON.stringify(p));const a=accounts();if(a[p.name]){a[p.name].save=p;saveAccounts(a)}}
 function logout(){localStorage.removeItem('wulin_player');closeModal();toast('已登出江湖');authTab('login');$('auth').classList.add('open')}
+
 let authMode='login';
 function authTab(m){
   authMode=m;$('tabLogin').classList.toggle('on',m==='login');$('tabReg').classList.toggle('on',m==='reg');
@@ -394,11 +283,7 @@ async function regGo(){
   const saved=await saveAccounts(a);
   if(!saved){authErr('雲端儲存失敗，請稍後再試');return}
   localStorage.setItem('wulin_player',JSON.stringify(st));
-  // Give new player basic skills
-  if(!migrating){
-    await playerLearnSkill(name,'基礎步法');
-    await playerLearnSkill(name,'基礎吐納');
-  }
+  if(!migrating){await playerLearnSkill(name,'瑛姑指法');await playerLearnSkill(name,'基礎吐納');await playerLearnSkill(name,'基礎步法')}
   $('auth').classList.remove('open');
   toast(migrating?`存檔已同步到雲端 · 歡迎返嚟，${name}`:`「${name}」踏入江湖 🌻`);render();
 }
@@ -411,459 +296,131 @@ async function loginGo(){
   $('auth').classList.remove('open');authErr('');toast(`歡迎返嚟，${name}`);render();
 }
 
-/* ================= 遊戲邏輯 ================= */
+/* ===== Game logic ===== */
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-
 function playerAlign(){const p=player();return p?(p.alignment||500):500}
-function alignLabel(a){
-  if(a>=800)return '大義凜然';if(a>=650)return '行俠仗義';if(a>=550)return '正氣凜然';
-  if(a>=450)return '亦正亦邪';if(a>=350)return '乖張無常';if(a>=200)return '心狠手辣';return '惡貫滿盈';
-}
-function alignLabelShort(a){if(a>=650)return '正派';if(a>=450)return '中立';return '邪惡'}
+function alignLabel(a){if(a>=800)return'大義凜然';if(a>=650)return'行俠仗義';if(a>=550)return'正氣凜然';if(a>=450)return'亦正亦邪';if(a>=350)return'乖張無常';if(a>=200)return'心狠手辣';return'惡貫滿盈'}
+function alignLabelShort(a){if(a>=650)return'正派';if(a>=450)return'中立';return'邪惡'}
 function alignCss(a){return a>=600?'good':a>=400?'neutral':'evil'}
 function alignBarPct(a){return Math.round(a/10)}
-function setPlayerAlign(delta){const p=player();if(!p)return;p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+delta)));savePlayer(p);renderPlayerBar()}
-function renderPlayerBar(){
-  const a=playerAlign(),bar=$('playerAlignBar'),lbl=$('playerAlignLabel'),num=$('playerAlignNum');
-  if(bar){bar.style.width=alignBarPct(a)+'%';bar.className=alignCss(a)}
-  if(lbl)lbl.textContent=alignLabel(a);if(num)num.textContent=a;
-}
+function setPlayerAlign(d){const p=player();if(!p)return;p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+d)));savePlayer(p);renderPlayerBar()}
+function renderPlayerBar(){const a=playerAlign(),bar=$('playerAlignBar'),lbl=$('playerAlignLabel'),num=$('playerAlignNum');if(bar){bar.style.width=alignBarPct(a)+'%';bar.className=alignCss(a)}if(lbl)lbl.textContent=alignLabel(a);if(num)num.textContent=a}
 function alignDiff(pk,nk){return Math.abs(pk-nk)}
-
 function aff(key){const p=player(),n=world.npcs.find(x=>x.key===key);if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0}
 function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
 
+/* ===== Travel ===== */
 let _pendingTravel=null;
-function confirmTravel(dest,days){
-  _pendingTravel={dest,days};
-  $('modal').classList.add('open');
-  $('mbox').innerHTML=`
-    <button class="mclose" onclick="cancelTravel()">✕</button>
-    <div style="text-align:center;padding:10px 0">
-      <div style="font-size:40px;margin-bottom:12px">🚶</div>
-      <div class="mname">確認出發</div>
-      <div class="mmeta" style="margin:14px 0">
-        目的地：<b style="color:var(--gold);font-size:16px">${esc(dest)}</b><br>
-        行程時間：<b>${days} 分鐘</b>（${days} 遊戲日）<br>
-        <span style="color:var(--red);font-size:12px">冷卻期間無法與任何人互動</span>
-      </div>
-      <button class="abtn" onclick="confirmGo()">確認出發</button>
-      <button class="abtn" style="margin-top:8px;border-color:var(--border);color:var(--muted)" onclick="cancelTravel()">留在原地</button>
-    </div>`;
-}
-function confirmGo(){
-  if(!_pendingTravel)return;
-  const{dest,days}=_pendingTravel;_pendingTravel=null;
-  $('modal').classList.remove('open');
-  startTravel(dest,days);
-}
+function confirmTravel(dest,days){_pendingTravel={dest,days};$('modal').classList.add('open');$('mbox').innerHTML=`<button class="mclose" onclick="cancelTravel()">✕</button><div style="text-align:center;padding:10px 0"><div style="font-size:40px;margin-bottom:12px">🚶</div><div class="mname">確認出發</div><div class="mmeta" style="margin:14px 0">目的地：<b style="color:var(--gold);font-size:16px">${esc(dest)}</b><br>行程時間：<b>${days} 分鐘</b>（${days} 遊戲日）<br><span style="color:var(--red);font-size:12px">冷卻期間無法與任何人互動</span></div><button class="abtn" onclick="confirmGo()">確認出發</button><button class="abtn" style="margin-top:8px;border-color:var(--border);color:var(--muted)" onclick="cancelTravel()">留在原地</button></div>`}
+function confirmGo(){if(!_pendingTravel)return;const{dest,days}=_pendingTravel;_pendingTravel=null;$('modal').classList.remove('open');startTravel(dest,days)}
 function cancelTravel(){_pendingTravel=null;$('modal').classList.remove('open')}
-
 function playerRegion(){const p=player();return p?(p.region||'襄陽城'):'襄陽城'}
-function playerCooldown(){
-  const p=player();if(!p||!p.travel)return null;
-  const remaining=p.travel.until-Date.now();
-  if(remaining<=0)return null;
-  return{dest:p.travel.dest,remainingMs:remaining};
-}
+function playerCooldown(){const p=player();if(!p||!p.travel)return null;const r=p.travel.until-Date.now();return r<=0?null:{dest:p.travel.dest,remainingMs:r}}
 function getDistance(a,b){const d=world?.meta?.region_distances;return d?.[a]?.[b]??d?.[b]?.[a]??1}
-function startTravel(dest,travelDays){
-  const p=player();if(!p)return;
-  const ms=travelDays*60000;
-  p.travel={dest,until:Date.now()+ms};
-  savePlayer(p);
-  render();
-  toast(`出發前往 ${dest}（${travelDays} 分鐘 / ${travelDays} 遊戲日後抵達）`);
-}
-function finishTravelIfDone(){
-  const p=player();if(!p||!p.travel)return;
-  if(Date.now()>=p.travel.until){
-    const dest=p.travel.dest;
-    p.region=dest;p.travel=null;
-    savePlayer(p);
-    toast(`🏃 你抵達 ${dest}，可以行動了！`);
-    render();
-  }
-}
-
-function renderRegionPanel(){
-  const reg=$('regionPanel');
-  const p=player();if(!p){reg.style.display='none';return}
-  finishTravelIfDone();
-  const cur=playerRegion(),cd=playerCooldown();
-  const regions=world.meta.regions||{};
-  const allR=Object.keys(regions);
-
-  let html=`<div class="region-header">
-    <div class="region-current">📍 你在 <b>${esc(cur)}</b>　<span style="font-size:12px;color:var(--muted)">${esc(regions[cur]||'')}</span></div>
-  </div>`;
-
-  if(cd){
-    const fmtMs=cd.remainingMs;
-    const mins=Math.floor(fmtMs/60000);
-    const secs=Math.floor((fmtMs%60000)/1000);
-    html+=`<div class="cooling">🚶 你正在趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${mins}分${String(secs).padStart(2,'0')}秒</b></div>`;
-  }else{
-    html+=`<div class="region-travel">`;
-    for(const r of allR){
-      if(r===cur)continue;
-      const days=getDistance(cur,r);
-      const npcs=world.npcs.filter(n=>n.region===r);
-      html+=`<button class="travel-btn" onclick="doTravel('${esc(r)}',${days})">${esc(r)} <span class="days">${days}分鐘</span>　<span style="font-size:11px;color:var(--muted)">${npcs.map(n=>n.name).join('、')||'（沒有人）'}</span></button>`;
-    }
-    html+=`</div>`;
-  }
-  reg.innerHTML=html;
-  reg.style.display='block';
-}
-function doTravel(dest,days){
-  const cd=playerCooldown();
-  if(cd){toast('你還在趕路，不能再出發');return}
-  confirmTravel(dest,days);
-}
-
+function startTravel(dest,days){const p=player();if(!p)return;p.travel={dest,until:Date.now()+days*60000};savePlayer(p);render();toast(`出發前往 ${dest}（${days} 分鐘 / ${days} 遊戲日後抵達）`)}
+function finishTravelIfDone(){const p=player();if(!p||!p.travel)return;if(Date.now()>=p.travel.until){p.region=p.travel.dest;p.travel=null;savePlayer(p);toast(`🏃 你抵達 ${p.region}，可以行動了！`);render()}}
+function renderRegionPanel(){const reg=$('regionPanel');const p=player();if(!p){reg.style.display='none';return}finishTravelIfDone();const cur=playerRegion(),cd=playerCooldown();const regions=world.meta.regions||{};const allR=Object.keys(regions);let html=`<div class="region-header"><div class="region-current">📍 你在 <b>${esc(cur)}</b>　<span style="font-size:12px;color:var(--muted)">${esc(regions[cur]||'')}</span></div></div>`;if(cd){const mins=Math.floor(cd.remainingMs/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);html+=`<div class="cooling">🚶 你正在趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${mins}分${String(secs).padStart(2,'0')}秒</b></div>`}else{html+=`<div class="region-travel">`;for(const r of allR){if(r===cur)continue;const days=getDistance(cur,r);const npcs=world.npcs.filter(n=>n.region===r);html+=`<button class="travel-btn" onclick="doTravel('${esc(r)}',${days})">${esc(r)} <span class="days">${days}分鐘</span>　<span style="font-size:11px;color:var(--muted)">${npcs.map(n=>n.name).join('、')||'（沒有人）'}</span></button>`}html+=`</div>`}reg.innerHTML=html;reg.style.display='block'}
+function doTravel(dest,days){if(playerCooldown()){toast('你還在趕路，不能再出發');return}confirmTravel(dest,days)}
 let travelTimer=null;
-function startTravelTimer(){
-  if(travelTimer)clearInterval(travelTimer);
-  travelTimer=setInterval(()=>{
-    finishTravelIfDone();
-    renderRegionPanel();
-  },1000);
-}
+function startTravelTimer(){if(travelTimer)clearInterval(travelTimer);travelTimer=setInterval(()=>{finishTravelIfDone();renderRegionPanel()},1000)}
 
-let _wulinReady=false;
+/* ===== Load & Render ===== */
 async function load(){
-  console.log('[WULIN] load() start');
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
-  catch(e){$('worldTime').textContent='載入失敗';console.log('[WULIN] load() fetch error',e);return}
+  catch(e){$('worldTime').textContent='載入失敗';return}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
   await loadSkillsDb();
-  const cloudReady=await cloudLoad();
-  console.log('[CLOUD] initial load:',cloudReady?'✅':'⚠️ fallback to local data');
+  await cloudLoad();
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
-  _wulinReady=true;
   await loadPlayerSkills(player().name);
   await grantBasicSkills(player().name);
-  startTravelTimer();
-  render();
+  startTravelTimer();render();
 }
-function renderGuest(){
-  $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;$('npcLocal').textContent='—';
-  $('playerName').textContent='—';$('playerXp').textContent='—';
-  $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
-    `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
-  $('regionPanel').style.display='none';
-  renderNpcs(null);
-}
-function render(){
-  $('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;
-  const p=player();console.log('[WULIN] render() player:',p?p.name:'NULL','region:',p?p.region:'?');
-  if(!p){renderGuest();return}
-  $('playerName').textContent=p.name;$('playerXp').textContent=p.xp;
-  renderPlayerHeaderSkills();
-  $('playerAlignChip').style.display='';renderPlayerBar();
-  $('events').innerHTML=(world.events||[]).slice(-6).map(e=>
-    `<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
-  renderRegionPanel();
-  renderNpcs(p);
-}
-function renderNpcs(p){
-  const p2=p||player();
-  if(!p2){renderNpcGrid(world.npcs);return}
-  const cur=playerRegion(),cd=playerCooldown();
-  const local=world.npcs.filter(n=>n.region===cur);
-  $('npcLocal').textContent=local.length;
-  $('regionTag').textContent=cd?`(冷卻中)`:`(在 ${esc(cur)})`;
+function renderGuest(){$('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;$('npcLocal').textContent='—';$('playerName').textContent='—';$('playerXp').textContent='—';$('events').innerHTML=(world.events||[]).slice(-6).map(e=>`<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');$('regionPanel').style.display='none';renderNpcs(null)}
+function render(){$('worldTime').textContent=world.meta.world_time||'—';$('npcCount').textContent=world.npcs.length;const p=player();if(!p){renderGuest();return}$('playerName').textContent=p.name;$('playerXp').textContent=p.xp;renderPlayerHeaderSkills();$('playerAlignChip').style.display='';renderPlayerBar();$('events').innerHTML=(world.events||[]).slice(-6).map(e=>`<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');renderRegionPanel();renderNpcs(p)}
+function renderNpcs(p){const p2=p||player();if(!p2){renderNpcGrid(world.npcs);return}const cur=playerRegion(),cd=playerCooldown();const local=world.npcs.filter(n=>n.region===cur);$('npcLocal').textContent=local.length;$('regionTag').textContent=cd?`(冷卻中)`:`(在 ${esc(cur)})`;if(cd){$('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正在趕路，到達後才能與 NPC 互動</div>`;return}renderNpcGrid(local)}
+function renderNpcGrid(npcs){const p=player(),pa=playerAlign();$('npcGrid').innerHTML=npcs.map(n=>{const a=aff(n.key),al=n.alignment||500,diff=alignDiff(pa,al),ac=alignCss(al);return`<div class="npc" onclick="openNpc('${n.key}')"><div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div><div class="alabel ${ac}">${alignLabelShort(al)} · ${al}</div><div class="mood">心境：${esc(n.mood||'')}</div><div class="att">${esc(n.attitude||'')}</div><div class="skill-list" id="npcSkills_${n.key}">載入中…</div><div class="affbar"><i style="width:${a}%"></i></div><div class="affnum">好感 ${a}${diff>300?' · <span style="color:var(--red)">道不同</span>':''}</div></div>`}).join('');npcs.forEach(async n=>{const rows=await loadNpcSkills(n.key);const skills=rows.map(r=>getSkillInfo(r.skill_key)).filter(Boolean);const el=document.getElementById('npcSkills_'+n.key);if(el)el.innerHTML=skills.map(s=>renderSkillTag(s,false)).join('')})}
 
-  if(cd){
-    $('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正在趕路，到達後才能與 NPC 互動</div>`;
-    return;
-  }
-  renderNpcGrid(local);
-}
-function renderNpcGrid(npcs){
-  const p=player(),pa=playerAlign();
-  $('npcGrid').innerHTML=npcs.map(n=>{
-    const a=aff(n.key),al=n.alignment||500,diff=alignDiff(pa,al);
-    const ac=alignCss(al);
-    return `<div class="npc" onclick="openNpc('${n.key}')">
-      <div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div>
-      <div class="alabel ${ac}">${alignLabelShort(al)} · ${al}</div>
-      <div class="mood">心境：${esc(n.mood||'')}</div>
-      <div class="att">${esc(n.attitude||'')}</div>
-      <div class="skill-list" id="npcSkills_${n.key}">載入中…</div>
-      <div class="affbar"><i style="width:${a}%"></i></div>
-      <div class="affnum">好感 ${a}${diff>300?' · <span style="color:var(--red)">道不同</span>':''}</div>
-    </div>`}).join('');
-  npcs.forEach(async n=>{
-    const rows=await loadNpcSkills(n.key);
-    const skills=rows.map(r=>getSkillInfo(r.skill_key)).filter(Boolean);
-    const el=document.getElementById('npcSkills_'+n.key);
-    if(el)el.innerHTML=renderNpcSkillTags(skills,false);
-  });
-}
-
+/* ===== NPC Modal ===== */
 function openNpc(key){
   const n=world.npcs.find(x=>x.key===key);if(!n)return;
   const p=player();if(!p){authTab('login');$('auth').classList.add('open');return}
   const cd=playerCooldown();if(cd){toast('你還在趕路，無法互動');return}
   const cur=playerRegion();if(n.region!==cur){toast('你與他不在同一個地區');return}
   const pa=playerAlign(),na=n.alignment||500,diff=alignDiff(pa,na);
-  const locked=diff>300&&diff<=500;
-  const hostile=diff>500;
-  const rel=Object.entries(n.relations||{}).slice(0,4).map(([k,v])=>{
-    const o=world.npcs.find(x=>x.key===k);return o?`${esc(o.name)} ${v}`:'';
-  }).filter(Boolean).join(' · ');
+  const locked=diff>300&&diff<=500,hostile=diff>500;
+  const rel=Object.entries(n.relations||{}).slice(0,4).map(([k,v])=>{const o=world.npcs.find(x=>x.key===k);return o?`${esc(o.name)} ${v}`:''}).filter(Boolean).join(' · ');
   const a=aff(key);
-  let html=`
-    <button class="mclose" onclick="closeModal()">✕</button>
-    <div class="mname">${esc(n.name)}</div>
-    <div class="mtitle">${esc(n.title||'')}</div>
-    <div class="mmeta">📍 ${esc(n.location||'')} · ${esc(n.region||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div>
-    <div class="skill-list" id="modalNpcSkills">載入中…</div>
-    <div class="affbig"><div class="affbar"><i id="affBar" style="width:${a}%"></i></div><span style="color:var(--gold);font-size:13px">好感 <span id="affNum">${a}</span><span id="affDelta" class="affdelta"></span></span></div>
-    <div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg"><span class="who">${esc(n.name)}</span>${esc(d)}</div>`).join('')}</div>`;
-  if(diff<=100) html+=`<div class="difflabel friendly">道合 · 善惡差 ${diff}</div>`;
-  else if(diff<=300) html+=`<div class="difflabel neutral">各行其道 · 善惡差 ${diff}</div>`;
-  else if(diff<=500) html+=`<div class="difflabel tension">道不同不相為謀 · 善惡差 ${diff}</div>`;
+  let html=`<button class="mclose" onclick="closeModal()">✕</button><div class="mname">${esc(n.name)}</div><div class="mtitle">${esc(n.title||'')}</div><div class="mmeta">📍 ${esc(n.location||'')} · ${esc(n.region||'')}<br>心境：<b>${esc(n.mood||'')}</b><br>待人：<b>${esc(n.attitude||'')}</b></div><div class="skill-list" id="modalNpcSkills">載入中…</div><div class="affbig"><div class="affbar"><i id="affBar" style="width:${a}%"></i></div><span style="color:var(--gold);font-size:13px">好感 <span id="affNum">${a}</span><span id="affDelta" class="affdelta"></span></span></div><div id="dlgArea">${(n.dialogue||[]).map(d=>`<div class="dlg"><span class="who">${esc(n.name)}</span>${esc(d)}</div>`).join('')}</div>`;
+  if(diff<=100)html+=`<div class="difflabel friendly">道合 · 善惡差 ${diff}</div>`;
+  else if(diff<=300)html+=`<div class="difflabel neutral">各行其道 · 善惡差 ${diff}</div>`;
+  else if(diff<=500)html+=`<div class="difflabel tension">道不同不相為謀 · 善惡差 ${diff}</div>`;
   else html+=`<div class="difflabel locked">⛔ 善惡懸殊 · 善惡差 ${diff} — 無話可說</div>`;
-  if(hostile){
-    html+=`<div class="chatlabel" style="color:var(--red)">— 此人視你為敵，無法交流 —</div>`;
-  }else if(locked){
-    html+=`<div class="chatlabel" style="color:var(--red)">— 道不同不相為謀 —</div>
-           <div class="mmeta" style="text-align:center">你與${esc(n.name)}善惡懸殊，無話可說。<br>你的善惡值：<b>${pa}</b>　他的善惡值：<b>${na}</b><br>差 ${diff}（需要 ≤300 才能交談）</div>`;
-  }else{
-    const opts=(n.chat_options||[]).map((o,i)=>{
-      const used=p.opts[key+':'+i]===worldDay;
-      let fxText='';
-      if(o.affinity_delta>0)fxText+=`<span class="fx up">♥+${o.affinity_delta}</span>`;
-      else if(o.affinity_delta<0)fxText+=`<span class="fx down">♥${o.affinity_delta}</span>`;
-      if(o.alignment_delta>0)fxText+=`<span class="fx up">☯+${o.alignment_delta}</span>`;
-      else if(o.alignment_delta<0)fxText+=`<span class="fx down">☯${o.alignment_delta}</span>`;
-      return `<button class="opt" id="opt_${key}_${i}" ${used?'disabled':''} onclick="say('${key}',${i})">${esc(o.say)}${used?' <span class="fx">✓ 已說</span>':fxText}</button>`;
-    }).join('');
-    html+=`<div class="chatlabel">— 你開口說話（每天一種）—</div>
-            <div id="optArea">${opts||'<div class="mmeta">（他暫時沒有什麼想說……明天再來）</div>'}</div>`;
-  }
+  if(hostile){html+=`<div class="chatlabel" style="color:var(--red)">— 此人視你為敵，無法交流 —</div>`}
+  else if(locked){html+=`<div class="chatlabel" style="color:var(--red)">— 道不同不相為謀 —</div><div class="mmeta" style="text-align:center">你與${esc(n.name)}善惡懸殊，無話可說。<br>你的善惡值：<b>${pa}</b>　他的善惡值：<b>${na}</b><br>差 ${diff}（需要 ≤300 才能交談）</div>`}
+  else{const opts=(n.chat_options||[]).map((o,i)=>{const used=p.opts[key+':'+i]===worldDay;let fx='';if(o.affinity_delta>0)fx+=`<span class="fx up">♥+${o.affinity_delta}</span>`;else if(o.affinity_delta<0)fx+=`<span class="fx down">♥${o.affinity_delta}</span>`;if(o.alignment_delta>0)fx+=`<span class="fx up">☯+${o.alignment_delta}</span>`;else if(o.alignment_delta<0)fx+=`<span class="fx down">☯${o.alignment_delta}</span>`;return`<button class="opt" id="opt_${key}_${i}" ${used?'disabled':''} onclick="say('${key}',${i})">${esc(o.say)}${used?' <span class="fx">✓ 已說</span>':fx}</button>`}).join('');html+=`<div class="chatlabel">— 你開口說話（每天一種）—</div><div id="optArea">${opts||'<div class="mmeta">（他暫時沒有什麼想說……明天再來）</div>'}</div>`}
   if(rel)html+=`<div class="mmeta" style="margin-top:12px">交情：${rel}</div>`;
   html+=`<div class="acts">`;
-  if(!hostile){
-    html+=`<button class="btn" id="btnGift" ${p.gifts[key]===worldDay?'disabled':''} onclick="act('${key}','gift')">🎁 贈禮</button>`;
-    html+=`<button class="btn" id="btnSpar" ${p.spoke[key+'#spar']===worldDay?'disabled':''} onclick="act('${key}','spar')">⚔️ 切磋</button>`;
-  }else{
-    html+=`<button class="btn" id="btnFlee" onclick="act('${key}','flee')">🏃 逃走</button>`;
-  }
-  html+=`</div>`;
-  html+=`<div class="mfoot">善惡差 >300 無法對話 · >500 觸發攻擊 · 玩家善惡值 ${pa}（${alignLabel(pa)}）</div>`;
-  $('mbox').innerHTML=html;
-  $('modal').classList.add('open');
+  if(!hostile){html+=`<button class="btn" id="btnGift" ${p.gifts[key]===worldDay?'disabled':''} onclick="act('${key}','gift')">🎁 贈禮</button><button class="btn" id="btnSpar" ${p.spoke[key+'#spar']===worldDay?'disabled':''} onclick="act('${key}','spar')">⚔️ 切磋</button>`}
+  else{html+=`<button class="btn" id="btnFlee" onclick="act('${key}','flee')">🏃 逃走</button>`}
+  html+=`</div><div class="mfoot">善惡差 >300 無法對話 · >500 觸發攻擊 · 玩家善惡值 ${pa}（${alignLabel(pa)}）</div>`;
+  $('mbox').innerHTML=html;$('modal').classList.add('open');
   if(hostile)setTimeout(()=>triggerAttack(key),600);
-  (async()=>{const rows=await loadNpcSkills(key);const skills=rows.map(r=>getSkillInfo(r.skill_key)).filter(Boolean);const el=document.getElementById('modalNpcSkills');if(el)el.innerHTML=renderNpcSkillTags(skills,false);})();
+  (async()=>{const rows=await loadNpcSkills(key);const skills=rows.map(r=>getSkillInfo(r.skill_key)).filter(Boolean);const el=document.getElementById('modalNpcSkills');if(el)el.innerHTML=skills.map(s=>renderSkillTag(s,false)).join('')})();
 }
 function closeModal(){$('modal').classList.remove('open')}
-
-function pushDlg(text,me,cls,whoName){
-  const d=document.createElement('div');
-  d.className='dlg new'+(me?' me':'')+(cls?' '+cls:'');
-  if(me)d.innerHTML=`<span class="who">${esc(player().name)}</span>${esc(text)}`;
-  else{
-    const wh=cls==='npcattack'?`<b style="color:var(--red)">⚔️ ${esc(whoName)}</b>`:(whoName?esc(whoName):'');
-    d.innerHTML=`<span class="who">${wh}</span>${cls==='npcattack'?'<b style="color:var(--red)">'+esc(text)+'</b>':esc(text)}`;
-  }
-  $('dlgArea').appendChild(d);
-  $('mbox').scrollTop=$('mbox').scrollHeight;
-}
-function bumpAff(key,delta){
-  if(!delta)return;const v=aff(key)+delta;setAff(key,v);
-  const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');
-  if(bar)bar.style.width=v+'%';if(num)num.textContent=v;
-  if(dl){dl.textContent=(delta>0?'+':'')+delta;dl.className='affdelta '+(delta>0?'up':'down');setTimeout(()=>{dl.textContent=''},2500)}
-}
-function triggerAttack(key){
-  const n=world.npcs.find(x=>x.key===key);if(!n)return;
-  $('mbox').classList.add('shake');
-  pushDlg(`${esc(n.name)}大喝一聲：「受死！」`,false,'npcattack',n.name);
-  setTimeout(()=>{
-    const p=player();
-    const dmg=Math.max(1,Math.round(Math.random()*3+1));
-    const xpLost=Math.min(p.xp,dmg*2);
-    p.xp=Math.max(0,p.xp-xpLost);
-    savePlayer(p);$('playerXp').textContent=p.xp;
-    pushDlg(`你被${esc(n.name)}一掌擊退，跌坐地上，損失閱歷 ${xpLost}`,true);
-    toast(`⚔️ 遭到${esc(n.name)}攻擊！閱歷 -${xpLost}`);
-  },800);
-}
-function say(key,i){
-  const n=world.npcs.find(x=>x.key===key);if(!n)return;
-  const o=(n.chat_options||[])[i];if(!o)return;
-  const p=player();
-  if(p.opts[key+':'+i]===worldDay)return;
-  p.opts[key+':'+i]=worldDay;savePlayer(p);
-  const btn=$('opt_'+key+'_'+i);
-  if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 已說</span>'}
-  pushDlg(o.say,true);
-  setTimeout(()=>{
-    pushDlg(o.reply,false);
-    bumpAff(key,o.affinity_delta||0);
-    const ad=o.alignment_delta||0;
-    if(ad)setPlayerAlign(ad);
-    let msg='';
-    if(o.affinity_delta>0)msg='他頗受用 · 好感 +'+o.affinity_delta;
-    else if(o.affinity_delta<0)msg='說錯話了… 好感 '+o.affinity_delta;
-    if(ad>0)msg+=msg?' · ☯ 善行 +'+ad:'☯ 善行 +'+ad;
-    else if(ad<0)msg+=msg?' · ☯ '+ad:'☯ '+ad;
-    if(msg)toast(msg);
-    if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}
-  },400);
-}
+function pushDlg(text,me,cls,whoName){const d=document.createElement('div');d.className='dlg new'+(me?' me':'')+(cls?' '+cls:'');if(me)d.innerHTML=`<span class="who">${esc(player().name)}</span>${esc(text)}`;else{const wh=cls==='npcattack'?`<b style="color:var(--red)">⚔️ ${esc(whoName)}</b>`:(whoName?esc(whoName):'');d.innerHTML=`<span class="who">${wh}</span>${cls==='npcattack'?'<b style="color:var(--red)">'+esc(text)+'</b>':esc(text)}`}$('dlgArea').appendChild(d);$('mbox').scrollTop=$('mbox').scrollHeight}
+function bumpAff(key,delta){if(!delta)return;const v=aff(key)+delta;setAff(key,v);const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');if(bar)bar.style.width=v+'%';if(num)num.textContent=v;if(dl){dl.textContent=(delta>0?'+':'')+delta;dl.className='affdelta '+(delta>0?'up':'down');setTimeout(()=>{dl.textContent=''},2500)}}
+function triggerAttack(key){const n=world.npcs.find(x=>x.key===key);if(!n)return;$('mbox').classList.add('shake');pushDlg(`${esc(n.name)}大喝一聲：「受死！」`,false,'npcattack',n.name);setTimeout(()=>{const p=player();const dmg=Math.max(1,Math.round(Math.random()*3+1));const xpLost=Math.min(p.xp,dmg*2);p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;pushDlg(`你被${esc(n.name)}一掌擊退，跌坐地上，損失閱歷 ${xpLost}`,true);toast(`⚔️ 遭到${esc(n.name)}攻擊！閱歷 -${xpLost}`)},800)}
+function say(key,i){const n=world.npcs.find(x=>x.key===key);if(!n)return;const o=(n.chat_options||[])[i];if(!o)return;const p=player();if(p.opts[key+':'+i]===worldDay)return;p.opts[key+':'+i]=worldDay;savePlayer(p);const btn=$('opt_'+key+'_'+i);if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 已說</span>'}pushDlg(o.say,true);setTimeout(()=>{pushDlg(o.reply,false);bumpAff(key,o.affinity_delta||0);const ad=o.alignment_delta||0;if(ad)setPlayerAlign(ad);let msg='';if(o.affinity_delta>0)msg='他頗受用 · 好感 +'+o.affinity_delta;else if(o.affinity_delta<0)msg='說錯話了… 好感 '+o.affinity_delta;if(ad>0)msg+=msg?' · ☯ 善行 +'+ad:'☯ 善行 +'+ad;else if(ad<0)msg+=msg?' · ☯ '+ad:'☯ '+ad;if(msg)toast(msg);if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}},400)}
 function act(key,type){
-  const n=world.npcs.find(x=>x.key===key);
-  const p=player();
-  if(type==='flee'){
-    const flee=Math.random()>0.3;
-    if(flee){pushDlg('（你轉身狂奔，幸虧甩掉了'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}
-    else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）想走？沒那麼容易！',false,'npcattack',n.name);
-      const xpLost=3;p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;
-      pushDlg(`被打了幾巴掌，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}
-    return;
-  }
+  const n=world.npcs.find(x=>x.key===key);const p=player();
+  if(type==='flee'){const flee=Math.random()>0.3;if(flee){pushDlg('（你轉身狂奔，幸虧甩掉了'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）想走？沒那麼容易！',false,'npcattack',n.name);const xpLost=3;p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;pushDlg(`被打了幾巴掌，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}return}
   if(type==='gift'){
-    if(p.gifts[key]===worldDay)return;
-    p.gifts[key]=worldDay;const btn=$('btnGift');if(btn)btn.disabled=true;
+    if(p.gifts[key]===worldDay)return;p.gifts[key]=worldDay;const btn=$('btnGift');if(btn)btn.disabled=true;
     pushDlg('（你奉上一份禮物）',true);
-    setTimeout(async()=>{
-      pushDlg('（'+esc(n.name)+'接過，神色微動）你有心。',false);
-      bumpAff(key,4);
-      let giftMsg='贈禮 · 好感 +4';
-      const na=n.alignment||500;
-      if(na>playerAlign())setPlayerAlign(1);else if(na<playerAlign())setPlayerAlign(-1);
-      const diff=alignDiff(playerAlign(),na);
-      const a=aff(key);
-      if(diff<5&&a>50){
-        const npcRows=await loadNpcSkills(key);
-        const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));
-        if(teachable.length>0&&Math.random()<0.3){
-          const taught=teachable[Math.floor(Math.random()*teachable.length)];
-          await playerLearnSkill(p.name,taught);
-          const si=getSkillInfo(taught);
-          giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';
-          pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg');
-        }
-      }
-      toast(giftMsg);
-    },400);
+    setTimeout(async()=>{pushDlg('（'+esc(n.name)+'接過，神色微動）你有心。',false);bumpAff(key,4);let giftMsg='贈禮 · 好感 +4';const na=n.alignment||500;if(na>playerAlign())setPlayerAlign(1);else if(na<playerAlign())setPlayerAlign(-1);const diff=alignDiff(playerAlign(),na),a=aff(key);if(diff<5&&a>50){const npcRows=await loadNpcSkills(key);const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(teachable.length>0&&Math.random()<0.3){const taught=teachable[Math.floor(Math.random()*teachable.length)];await playerLearnSkill(p.name,taught);const si=getSkillInfo(taught);giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg')}};toast(giftMsg)},400)
   }else if(type==='spar'){
-    if(p.spoke[key+'#spar']===worldDay)return;
-    p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
-    const a=aff(key),na=n.alignment||500;
-    const win=Math.random()<(0.35+a/200);
-    p.xp+=win?5:3;savePlayer(p);
-    pushDlg('（你抱拳：請指教！）',true);
-    setTimeout(async()=>{
-      if(win){
-        pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下本領！給你面子。',false);bumpAff(key,3);
-        let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';
-        const npcRows=await loadNpcSkills(key);
-        const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));
-        if(sparable.length>0&&Math.random()<0.4){
-          const learned=sparable[Math.floor(Math.random()*sparable.length)];
-          await playerLearnSkill(p.name,learned);
-          const si=getSkillInfo(learned);
-          sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';
-          pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg');
-        }
-        toast(sparMsg);
-      }
-      else{pushDlg('（三招之內被制住）年輕人，基本功回去再練練。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')}
-      if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);
-      $('playerXp').textContent=p.xp;
-    },400);
+    if(p.spoke[key+'#spar']===worldDay)return;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
+    const a=aff(key),na=n.alignment||500,win=Math.random()<(0.35+a/200);
+    p.xp+=win?5:3;savePlayer(p);pushDlg('（你抱拳：請指教！）',true);
+    setTimeout(async()=>{if(win){pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下本領！給你面子。',false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg('（三招之內被制住）年輕人，基本功回去再練練。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
   }
 }
 
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeModal();
-  if(e.key==='Enter'&&$('auth').classList.contains('open')){
-    if(authMode==='reg'&&document.activeElement&&document.activeElement.id!=='regPass2'){$('regPass2').focus();return}
-    authMode==='reg'?regGo():loginGo();
-  }
-});
+/* ===== Skill Panel ===== */
 function openSkillPanel(){
   const p=player();if(!p)return;
-  const types=[{key:'martial',label:'⚔️ 武功',icon:'⚔️'},{key:'neigong',label:'🧘 內功',icon:'🧘'},{key:'qinggong',label:'💨 輕功',icon:'💨'}];
-  let html=`<button class="mclose" onclick="closeModal()">✕</button>
-    <div class="mname">我的技能</div>
-    <div class="mmeta">點擊技能可裝備/卸下（每類型只能裝備一個）</div>`;
-  
+  const types=[{key:'martial',label:'⚔️ 武功'},{key:'neigong',label:'🧘 內功'},{key:'qinggong',label:'💨 輕功'}];
+  let html=`<button class="mclose" onclick="closeModal()">✕</button><div class="mname">我的技能</div><div class="mmeta">點擊技能可裝備/卸下（每類型只能裝備一個）</div>`;
   for(const t of types){
     const typeSkills=getPlayerAllSkills(p.name).filter(s=>s.type===t.key);
     const equipped=typeSkills.find(s=>s.equipped);
     html+=`<div class="skillpanel"><h3>${t.label}${equipped?' — 已裝備：'+esc(equipped.name):''}</h3>`;
-    if(typeSkills.length===0){
-      html+=`<div class="sk-empty">尚未學會此類技能</div>`;
-    }else{
-      for(const s of typeSkills){
-        const isActive=s.equipped;
-        html+=`<div class="sk-row${isActive?' active':''}" onclick="toggleEquip('${s.key}','${s.type}')">
-          <span class="sk-name">${esc(s.name)}</span>
-          <span class="sk-rarity skill-tag ${s.rarity}">${RARITY_ORD[s.rarity]||''}${RARITY_LABEL[s.rarity]||''}</span>
-          ${isActive?'<span class="sk-equipped">✓ 裝備中</span>':''}
-        </div>`;
-      }
-    }
+    if(typeSkills.length===0)html+=`<div class="sk-empty">尚未學會此類技能</div>`;
+    else{for(const s of typeSkills){html+=`<div class="sk-row${s.equipped?' active':''}" onclick="toggleEquip('${s.key}','${s.type}')"><span class="sk-name">${esc(s.name)}</span><span class="sk-rarity skill-tag ${s.rarity}">${RARITY_ORD[s.rarity]||''}${RARITY_LABEL[s.rarity]||''}</span>${s.equipped?'<span class="sk-equipped">✓ 裝備中</span>':''}</div>`}}
     html+=`</div>`;
   }
-  $('mbox').innerHTML=html;
-  $('modal').classList.add('open');
+  $('mbox').innerHTML=html;$('modal').classList.add('open');
 }
-
 async function toggleEquip(skillKey,skillType){
   const p=player();if(!p)return;
-  const currentlyEquipped=_playerSkillsCache.filter(s=>{
-    if(!s.equipped)return false;
-    const info=getSkillInfo(s.skill_key);
-    return info&&info.type===skillType;
-  });
-  
+  const currentlyEquipped=_playerSkillsCache.filter(s=>{if(!s.equipped)return false;const info=getSkillInfo(s.skill_key);return info&&info.type===skillType});
   if(currentlyEquipped.length>0&&currentlyEquipped[0].skill_key===skillKey){
-    // Unequip
-    await fetch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${skillKey}`,{
-      method:'PATCH',
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json'},
-      body:JSON.stringify({equipped:false})
-    });
+    await apiPatch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${skillKey}`,{equipped:false});
     toast('已卸下');
   }else{
-    // Unequip current in same slot
-    for(const s of currentlyEquipped){
-      await fetch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${s.skill_key}`,{
-        method:'PATCH',
-        headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json'},
-        body:JSON.stringify({equipped:false})
-      });
-    }
-    // Equip new (ensure learned first)
-    await fetch(`${SUPABASE_URL}/rest/v1/player_skills`,{
-      method:'POST',
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json','Prefer':'resolution=merge-duplicates'},
-      body:JSON.stringify({player_name:p.name,skill_key:skillKey,equipped:true})
-    });
-    // If not yet learned, do a proper insert
-    await fetch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${skillKey}`,{
-      method:'PATCH',
-      headers:{'apikey':SUPABASE_ANON,'Authorization':'Bearer '+SUPABASE_ANON,'Content-Type':'application/json'},
-      body:JSON.stringify({equipped:true})
-    });
-    const si=getSkillInfo(skillKey);
-    toast('裝備了「'+esc(si?si.name:skillKey)+'」');
+    for(const s of currentlyEquipped){await apiPatch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${s.skill_key}`,{equipped:false})}
+    await apiPatch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(p.name)}&skill_key=eq.${skillKey}`,{equipped:true});
+    const si=getSkillInfo(skillKey);toast('裝備了「'+esc(si?si.name:skillKey)+'」');
   }
-  await loadPlayerSkills(p.name);
-  renderPlayerHeaderSkills();
-  openSkillPanel();
+  await loadPlayerSkills(p.name);renderPlayerHeaderSkills();openSkillPanel();
 }
 
-console.log('[WULIN] calling load()');load();
+/* ===== Init ===== */
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='Enter'&&$('auth').classList.contains('open')){if(authMode==='reg'&&document.activeElement&&document.activeElement.id!=='regPass2'){$('regPass2').focus();return}authMode==='reg'?regGo():loginGo()}});
+load();
 </script>
 </body>
 </html>
