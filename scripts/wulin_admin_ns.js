@@ -42,10 +42,12 @@ function selectNsNpc(key){
   // Add skill
   html+=`<div style="margin-top:16px"><b style="color:var(--gold);font-size:13px">添加技能</b></div>`;
   if(unassigned.length){
-    html+=`<div style="margin-top:8px"><select id="nsSkillSelect" style="width:100%">
-      <option value="">— 選擇技能 —</option>
-      ${unassigned.map(s=>`<option value="${s.key}">${esc(s.name)} (${TYPE_LABEL[s.type]||s.type}, ⚡${s.power})</option>`).join('')}
-    </select></div>
+    html+='<div style="margin-top:8px"><select id="nsSkillSelect" style="width:100%">';
+    html+='<option value="">— 選擇技能 —</option>';
+    for(const s of unassigned){
+      html+='<option value="'+esc(s.key)+'">'+esc(s.name)+' ('+(TYPE_LABEL[s.type]||s.type)+', ⚡'+s.power+')</option>';
+    }
+    html+='</select></div>';
     html+=`<div class="stat-bar" style="margin-top:8px"><label>熟練度</label><input type="range" min="0" max="100" value="50" id="nsProf" oninput="this.nextElementSibling.textContent=this.value"><span class="val">50</span></div>`;
     html+=`<div class="btn-row"><button class="btn btn-primary" onclick="addNpcSkill('${key}')">➕ 添加</button></div>`;
   }else{html+=`<div class="empty" style="padding:10px">所有技能已配置</div>`}
