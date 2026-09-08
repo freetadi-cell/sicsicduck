@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神鵰世界 · 後台管理</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#12121a;--card2:#1a1a25;--border:#2a2a3a;--gold:#d4af37;--gold2:#c9a84c;--text:#e0ddd5;--muted:#6b6b7b;--red:#e74c3c;--green:#2ecc71;--blue:#3498db;--purple:#9b59b6}
+body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC','SimSun',serif;min-height:100vh}
+.header{background:linear-gradient(135deg,#0d0d15,#1a1a28);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:100}
+.header h1{font-size:20px;color:var(--gold);letter-spacing:4px}
+.header .sub{font-size:12px;color:var(--muted)}
+.tabs{display:flex;gap:4px;margin-left:auto}
+.tab{padding:8px 16px;border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--muted);cursor:pointer;font-size:13px;font-family:inherit;transition:.2s}
+.tab:hover{border-color:var(--gold2);color:var(--text)}
+.tab.active{background:rgba(212,175,55,.1);border-color:var(--gold);color:var(--gold)}
+.main{max-width:1200px;margin:0 auto;padding:20px}
+.panel{display:none}.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px}
+.card h3{font-size:14px;color:var(--gold);margin-bottom:12px;letter-spacing:2px}
+.grid{display:grid;gap:12px}
+.grid-2{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:1fr 1fr 1fr}
+@media(max-width:768px){.grid-2,.grid-3{grid-template-columns:1fr}}
+label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
+input,textarea,select{width:100%;padding:8px 10px;background:var(--card2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;font-family:inherit}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--gold)}
+textarea{min-height:60px;resize:vertical}
+.btn{padding:8px 16px;border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--text);cursor:pointer;font-size:13px;font-family:inherit;transition:.2s}
+.btn:hover{border-color:var(--gold2)}
+.btn-primary{background:rgba(212,175,55,.15);border-color:var(--gold);color:var(--gold)}
+.btn-danger{border-color:var(--red);color:var(--red)}
+.btn-sm{padding:4px 10px;font-size:11px}
+.btn-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;margin:2px}
+.tag-martial{background:rgba(192,57,43,.15);color:#e74c3c}
+.tag-neigong{background:rgba(46,204,113,.15);color:#2ecc71}
+.tag-qinggong{background:rgba(52,152,219,.15);color:#3498db}
+.tag-legendary{border:1px solid rgba(212,175,55,.4)}
+.tag-rare{border:1px solid rgba(155,89,182,.3)}
+.tag-uncommon{border:1px solid rgba(149,165,166,.2)}
+.tag-common{border:1px solid rgba(100,100,102,.2)}
+.list-item{display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:.2s}
+.list-item:hover{border-color:var(--gold2);background:var(--card2)}
+.list-item.active{border-color:var(--gold);background:rgba(212,175,55,.05)}
+.list-item .name{flex:1;font-size:14px}
+.list-item .meta{font-size:11px;color:var(--muted)}
+.toast{position:fixed;bottom:20px;right:20px;padding:10px 20px;border-radius:8px;font-size:13px;z-index:999;opacity:0;transition:.3s}
+.toast.show{opacity:1}
+.toast.ok{background:rgba(46,204,113,.9);color:#fff}
+.toast.err{background:rgba(231,76,60,.9);color:#fff}
+.empty{text-align:center;padding:40px;color:var(--muted);font-size:13px}
+.loading{text-align:center;padding:20px;color:var(--muted)}
+.skill-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)}
+.skill-row:last-child{border-bottom:none}
+.skill-row .sk-name{flex:1;font-size:13px}
+.skill-row .sk-meta{font-size:11px;color:var(--muted)}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;align-items:center;justify-content:center}
+.modal-overlay.open{display:flex}
+.modal{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;max-width:600px;width:90%;max-height:80vh;overflow-y:auto}
+.modal h3{color:var(--gold);margin-bottom:16px}
+.modal .close{float:right;background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px}
+.stat-bar{display:flex;align-items:center;gap:8px;margin:4px 0}
+.stat-bar label{width:50px;margin:0}
+.stat-bar input[type=range]{flex:1;accent-color:var(--gold)}
+.stat-bar .val{width:30px;text-align:right;font-size:13px;color:var(--gold)}
+.search{margin-bottom:12px}
+.search input{width:100%;padding:10px 14px;background:var(--card2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px}
+.world-info{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.world-info .chip{padding:6px 12px;background:var(--card);border:1px solid var(--border);border-radius:6px;font-size:12px}
+.world-info .chip b{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1>神鵰世界 · 後台</h1>
+    <div class="sub">Wulin Admin Panel</div>
+  </div>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('npcs')">角色管理</button>
+    <button class="tab" onclick="showTab('skills')">技能管理</button>
+    <button class="tab" onclick="showTab('npcskills')">角色技能</button>
+  </div>
+</div>
+
+<div class="main">
+  <!-- NPC Panel -->
+  <div id="panel-npcs" class="panel active">
+    <div class="world-info" id="worldInfo"></div>
+    <div class="grid grid-2">
+      <div>
+        <div class="search"><input id="npcSearch" placeholder="搜索角色…" oninput="filterNpcs()"></div>
+        <div id="npcList" class="grid" style="gap:6px"></div>
+        <div class="btn-row"><button class="btn btn-primary" onclick="showAddNpc()">+ 新增角色</button></div>
+      </div>
+      <div>
+        <div class="card" id="npcEditor">
+          <div class="empty">← 選擇一個角色</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Panel -->
+  <div id="panel-skills" class="panel">
+    <div class="grid grid-2">
+      <div>
+        <div class="search"><input id="skillSearch" placeholder="搜索技能…" oninput="filterSkills()"></div>
+        <div id="skillList" class="grid" style="gap:6px"></div>
+        <div class="btn-row"><button class="btn btn-primary" onclick="showAddSkill()">+ 新增技能</button></div>
+      </div>
+      <div>
+        <div class="card" id="skillEditor">
+          <div class="empty">← 選擇一個技能</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NPC Skills Panel -->
+  <div id="panel-npcskills" class="panel">
+    <div class="grid grid-2">
+      <div>
+        <div class="search"><input id="nsSearch" placeholder="搜索角色…" oninput="filterNpcSkills()"></div>
+        <div id="nsNpcList" class="grid" style="gap:6px"></div>
+      </div>
+      <div>
+        <div class="card" id="nsEditor">
+          <div class="empty">← 選擇一個角色查看技能</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modalContent" onclick="event.stopPropagation()"></div>
+</div>
+
+<script>
+const SUPABASE_URL='https://swsdzpakaywkxxngatiw.supabase.co';
+const SUPABASE_ANON='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3c2R6cGFrYXl3a3h4bmdhdGl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2ODU1NTcsImV4cCI6MjEwNDI2MTU1N30.WGbiqYuXMHeWNf1u4Ou9-YAQxBp2KTxDy0vZKr4CJEk';
+</script>
+<script src="scripts/wulin_admin.js"></script>
+<script src="scripts/wulin_admin_npc.js"></script>
+<script src="scripts/wulin_admin_skill.js"></script>
+<script src="scripts/wulin_admin_ns.js"></script>
+</body>
+</html>
