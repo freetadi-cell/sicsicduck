@@ -145,9 +145,379 @@ textarea{min-height:60px;resize:vertical}
 const SUPABASE_URL='https://swsdzpakaywkxxngatiw.supabase.co';
 const SUPABASE_ANON='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3c2R6cGFrYXl3a3h4bmdhdGl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2ODU1NTcsImV4cCI6MjEwNDI2MTU1N30.WGbiqYuXMHeWNf1u4Ou9-YAQxBp2KTxDy0vZKr4CJEk';
 </script>
-<script src="scripts/wulin_admin.js"></script>
-<script src="scripts/wulin_admin_npc.js"></script>
-<script src="scripts/wulin_admin_skill.js"></script>
-<script src="scripts/wulin_admin_ns.js"></script>
+<script>
+// ===== API Layer =====
+async function apiGet(url){const r=await fetch(url,{headers:{'apikey':SUPABASE_ANON,'Authorization':`Bearer ${SUPABASE_ANON}`}});
+if(!r.ok)throw new Error(`GET ${url}: ${r.status}`);return r.json()}
+async function apiPost(url,body){const r=await fetch(url,{method:'POST',headers:{'apikey':SUPABASE_ANON,'Authorization':`Bearer ${SUPABASE_ANON}`,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(body)});
+if(!r.ok){const t=await r.text();throw new Error(`POST: ${r.status} ${t}`)}return r}
+async function apiPatch(url,body){const r=await fetch(url,{method:'PATCH',headers:{'apikey':SUPABASE_ANON,'Authorization':`Bearer ${SUPABASE_ANON}`,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(body)});
+if(!r.ok){const t=await r.text();throw new Error(`PATCH: ${r.status} ${t}`)}return r}
+async function apiDelete(url){const r=await fetch(url,{method:'DELETE',headers:{'apikey':SUPABASE_ANON,'Authorization':`Bearer ${SUPABASE_ANON}`,'Prefer':'return=minimal'}});
+if(!r.ok){const t=await r.text();throw new Error(`DELETE: ${r.status} ${t}`)}return r}
+
+// ===== State =====
+let worldData=null, npcs=[], skills=[], npcSkills=[], selectedNpc=null, selectedSkill=null;
+
+// ===== Helpers =====
+function toast(msg,ok=true){const t=document.getElementById('toast');t.textContent=msg;t.className='toast show '+(ok?'ok':'err');setTimeout(()=>t.className='toast',2500)}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function showTab(name){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+document.querySelector(`.tab[onclick="showTab('${name}')"]`).classList.add('active');document.getElementById('panel-'+name).classList.add('active')}
+function closeModal(e){if(e&&e.target!==document.getElementById('modalOverlay'))return;document.getElementById('modalOverlay').classList.remove('open')}
+
+// ===== Load All =====
+async function loadAll(){
+  try{const wr=await fetch('data/wulin_world.json');worldData=await wr.json();npcs=worldData.npcs||[]}catch(e){npcs=[]}
+  try{skills=await apiGet(`${SUPABASE_URL}/rest/v1/skills?select=*&order=type,power.desc`)}catch(e){skills=[]}
+  try{npcSkills=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=*&order=npc_key`)}catch(e){npcSkills=[]}
+  renderWorldInfo();renderNpcList();renderSkillList();renderNsNpcList();
+}
+
+function renderWorldInfo(){
+  if(!worldData)return;const m=worldData.meta||{};
+  document.getElementById('worldInfo').innerHTML=`
+    <div class="chip">🗓 <b>${m.world_time||'?'}</b></div>
+    <div class="chip">🗺 <b>${Object.keys(m.region_distances||{}).length}</b> 區域</div>
+    <div class="chip">👤 <b>${npcs.length}</b> 角色</div>
+    <div class="chip">⚔️ <b>${skills.length}</b> 技能</div>
+    <div class="chip">🔗 <b>${npcSkills.length}</b> 技能配置</div>`;
+}
+
+// ===== NPC Management =====
+function renderNpcList(filter=''){
+  const el=document.getElementById('npcList');
+  const f=filter.toLowerCase();
+  const filtered=npcs.filter(n=>!f||n.name.includes(f)||n.key.includes(f)||(n.title||'').includes(f));
+  if(!filtered.length){el.innerHTML='<div class="empty">冇角色</div>';return}
+  el.innerHTML=filtered.map(n=>{
+    const active=selectedNpc&&selectedNpc.key===n.key;
+    return `<div class="list-item${active?' active':''}" onclick="selectNpc('${n.key}')">
+      <div class="name">${esc(n.name)}</div>
+      <div class="meta">${esc(n.title||'')} · ${esc(n.region||'')}</div>
+    </div>`;
+  }).join('');
+}
+function filterNpcs(){renderNpcList(document.getElementById('npcSearch').value)}
+
+function selectNpc(key){
+  selectedNpc=npcs.find(n=>n.key===key)||null;
+  renderNpcList(document.getElementById('npcSearch').value);
+  if(!selectedNpc){document.getElementById('npcEditor').innerHTML='<div class="empty">← 選擇一個角色</div>';return}
+  const n=selectedNpc;
+  const aff=n.alignment||500;
+  document.getElementById('npcEditor').innerHTML=`
+    <h3>${esc(n.name)} <span style="font-size:12px;color:var(--muted)">${esc(n.key)}</span></h3>
+    <div class="grid grid-2">
+      <div><label>姓名</label><input id="npcName" value="${esc(n.name)}"></div>
+      <div><label>稱號</label><input id="npcTitle" value="${esc(n.title||'')}"></div>
+      <div><label>區域</label><input id="npcRegion" value="${esc(n.region||'')}"></div>
+      <div><label>位置</label><input id="npcLocation" value="${esc(n.location||'')}"></div>
+    </div>
+    <div style="margin-top:10px"><label>心境</label><input id="npcMood" value="${esc(n.mood||'')}"></div>
+    <div style="margin-top:8px"><label>待人態度</label><input id="npcAttitude" value="${esc(n.attitude||'')}"></div>
+    <div class="stat-bar" style="margin-top:10px">
+      <label>道心</label>
+      <input type="range" min="0" max="1000" value="${aff}" id="npcAlign" oninput="this.nextElementSibling.textContent=this.value">
+      <span class="val">${aff}</span>
+    </div>
+    <div class="grid grid-3" style="margin-top:10px">
+      <div class="stat-bar"><label>武功</label><input type="range" min="1" max="100" value="${n.martial||50}" id="npcMartial" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${n.martial||50}</span></div>
+      <div class="stat-bar"><label>內功</label><input type="range" min="1" max="100" value="${n.neigong||50}" id="npcNeigong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${n.neigong||50}</span></div>
+      <div class="stat-bar"><label>輕功</label><input type="range" min="1" max="100" value="${n.qinggong||50}" id="npcQinggong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${n.qinggong||50}</span></div>
+    </div>
+    <div style="margin-top:10px">
+      <label>對白（每行一句）</label>
+      <textarea id="npcDialogue" rows="4">${(n.dialogue||[]).join('\n')}</textarea>
+    </div>
+    <div style="margin-top:10px">
+      <label>關係（JSON）</label>
+      <textarea id="npcRelations" rows="3">${JSON.stringify(n.relations||{},null,1)}</textarea>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="saveNpc()">💾 保存到本地</button>
+      <button class="btn btn-danger" onclick="deleteNpcConfirm()">🗑 刪除</button>
+    </div>`;
+}
+
+async function saveNpc(){
+  if(!selectedNpc)return;
+  const idx=npcs.findIndex(n=>n.key===selectedNpc.key);
+  if(idx<0)return;
+  const n=npcs[idx];
+  n.name=document.getElementById('npcName').value.trim();
+  n.title=document.getElementById('npcTitle').value.trim();
+  n.region=document.getElementById('npcRegion').value.trim();
+  n.location=document.getElementById('npcLocation').value.trim();
+  n.mood=document.getElementById('npcMood').value.trim();
+  n.attitude=document.getElementById('npcAttitude').value.trim();
+  n.alignment=parseInt(document.getElementById('npcAlign').value)||500;
+  n.martial=parseInt(document.getElementById('npcMartial').value)||50;
+  n.neigong=parseInt(document.getElementById('npcNeigong').value)||50;
+  n.qinggong=parseInt(document.getElementById('npcQinggong').value)||50;
+  n.dialogue=document.getElementById('npcDialogue').value.split('\n').map(s=>s.trim()).filter(Boolean);
+  try{n.relations=JSON.parse(document.getElementById('npcRelations').value)}catch(e){}
+  worldData.npcs=npcs;
+  // Save to local file via download
+  const blob=new Blob([JSON.stringify(worldData,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='wulin_world.json';a.click();
+  toast('✅ 已下載 wulin_world.json（手動上傳至 repo）');
+  renderNpcList(document.getElementById('npcSearch').value);
+  renderWorldInfo();
+}
+
+function deleteNpcConfirm(){
+  if(!selectedNpc)return;
+  if(!confirm(`確定刪除 ${selectedNpc.name}？`))return;
+  npcs=npcs.filter(n=>n.key!==selectedNpc.key);
+  worldData.npcs=npcs;
+  selectedNpc=null;
+  const blob=new Blob([JSON.stringify(worldData,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='wulin_world.json';a.click();
+  document.getElementById('npcEditor').innerHTML='<div class="empty">← 選擇一個角色</div>';
+  renderNpcList(document.getElementById('npcSearch').value);
+  renderWorldInfo();
+  toast('✅ 已刪除');
+}
+
+function showAddNpc(){
+  const key=prompt('新角色 key（英文，如 zhangwuji）:');
+  if(!key)return;
+  if(npcs.find(n=>n.key===key)){toast('key 已存在',false);return}
+  const newNpc={key,name:key,title:'',region:'襄陽城',location:'',mood:'',attitude:'',alignment:500,martial:50,neigong:50,qinggong:50,dialogue:[],chat_options:[],relations:{}};
+  npcs.push(newNpc);worldData.npcs=npcs;
+  selectNpc(key);
+  toast('✅ 新角色已建立，請填寫資料後保存');
+}
+
+// ===== Skill Management =====
+const RARITY_LABEL={common:'凡',uncommon:'中',rare:'高',legendary:'絕'};
+const TYPE_LABEL={martial:'⚔️武功',neigong:'🧘內功',qinggong:'💨輕功'};
+const TYPE_CSS={martial:'tag-martial',neigong:'tag-neigong',qinggong:'tag-qinggong'};
+
+function renderSkillList(filter=''){
+  const el=document.getElementById('skillList');
+  const f=filter.toLowerCase();
+  const filtered=skills.filter(s=>!f||s.name.includes(f)||s.key.includes(f)||s.type.includes(f));
+  if(!filtered.length){el.innerHTML='<div class="empty">冇技能</div>';return}
+  el.innerHTML=filtered.map(s=>{
+    const active=selectedSkill&&selectedSkill.key===s.key;
+    return `<div class="list-item${active?' active':''}" onclick="selectSkill('${esc(s.key)}')">
+      <span class="tag ${TYPE_CSS[s.type]||''} ${s.rarity}">${TYPE_LABEL[s.type]||s.type}</span>
+      <div class="name">${esc(s.name)}</div>
+      <div class="meta">⚡${s.power} ${RARITY_LABEL[s.rarity]||s.rarity}</div>
+    </div>`;
+  }).join('');
+}
+function filterSkills(){renderSkillList(document.getElementById('skillSearch').value)}
+
+function selectSkill(key){
+  selectedSkill=skills.find(s=>s.key===key)||null;
+  renderSkillList(document.getElementById('skillSearch').value);
+  if(!selectedSkill){document.getElementById('skillEditor').innerHTML='<div class="empty">← 選擇一個技能</div>';return}
+  const s=selectedSkill;
+  document.getElementById('skillEditor').innerHTML=`
+    <h3>${esc(s.name)}</h3>
+    <div class="grid grid-2">
+      <div><label>Key</label><input id="skKey" value="${esc(s.key)}"></div>
+      <div><label>名稱</label><input id="skName" value="${esc(s.name)}"></div>
+      <div><label>類型</label><select id="skType">
+        <option value="martial"${s.type==='martial'?' selected':''}>⚔️ 武功</option>
+        <option value="neigong"${s.type==='neigong'?' selected':''}>🧘 內功</option>
+        <option value="qinggong"${s.type==='qinggong'?' selected':''}>💨 輕功</option>
+      </select></div>
+      <div><label>稀有度</label><select id="skRarity">
+        <option value="common"${s.rarity==='common'?' selected':''}>凡</option>
+        <option value="uncommon"${s.rarity==='uncommon'?' selected':''}>中</option>
+        <option value="rare"${s.rarity==='rare'?' selected':''}>高</option>
+        <option value="legendary"${s.rarity==='legendary'?' selected':''}>絕</option>
+      </select></div>
+    </div>
+    <div class="stat-bar" style="margin-top:10px">
+      <label>威力</label>
+      <input type="range" min="1" max="100" value="${s.power}" id="skPower" oninput="this.nextElementSibling.textContent=this.value">
+      <span class="val">${s.power}</span>
+    </div>
+    <div style="margin-top:10px"><label>描述</label><textarea id="skDesc" rows="3">${esc(s.description||'')}</textarea></div>
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="saveSkill()">💾 保存</button>
+      <button class="btn btn-danger" onclick="deleteSkillConfirm()">🗑 刪除</button>
+    </div>`;
+}
+
+async function saveSkill(){
+  if(!selectedSkill)return;
+  const body={
+    key:document.getElementById('skKey').value.trim(),
+    name:document.getElementById('skName').value.trim(),
+    type:document.getElementById('skType').value,
+    rarity:document.getElementById('skRarity').value,
+    power:parseInt(document.getElementById('skPower').value)||50,
+    description:document.getElementById('skDesc').value.trim()
+  };
+  if(!body.key||!body.name){toast('Key 和名稱不能為空',false);return}
+  try{
+    if(body.key===selectedSkill.key){
+      // Update existing
+      await apiPatch(`${SUPABASE_URL}/rest/v1/skills?key=eq.${encodeURIComponent(body.key)}`,body);
+    }else{
+      // Key changed — delete old, insert new
+      await apiDelete(`${SUPABASE_URL}/rest/v1/skills?key=eq.${encodeURIComponent(selectedSkill.key)}`);
+      await apiPost(`${SUPABASE_URL}/rest/v1/skills`,body);
+    }
+    skills=await apiGet(`${SUPABASE_URL}/rest/v1/skills?select=*&order=type,power.desc`);
+    renderSkillList(document.getElementById('skillSearch').value);
+    selectSkill(body.key);
+    renderWorldInfo();
+    toast('✅ 技能已保存');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+async function deleteSkillConfirm(){
+  if(!selectedSkill)return;
+  if(!confirm(`確定刪除「${selectedSkill.name}」？`))return;
+  try{
+    await apiDelete(`${SUPABASE_URL}/rest/v1/skills?key=eq.${encodeURIComponent(selectedSkill.key)}`);
+    // Also remove from npc_skills
+    await apiDelete(`${SUPABASE_URL}/rest/v1/npc_skills?skill_key=eq.${encodeURIComponent(selectedSkill.key)}`);
+    skills=await apiGet(`${SUPABASE_URL}/rest/v1/skills?select=*&order=type,power.desc`);
+    npcSkills=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=*&order=npc_key`);
+    selectedSkill=null;
+    document.getElementById('skillEditor').innerHTML='<div class="empty">← 選擇一個技能</div>';
+    renderSkillList(document.getElementById('skillSearch').value);
+    renderNsNpcList();renderWorldInfo();
+    toast('✅ 已刪除');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+function showAddSkill(){
+  const m=document.getElementById('modalContent');
+  m.innerHTML=`<button class="close" onclick="closeModal(event)">✕</button>
+    <h3>新增技能</h3>
+    <div class="grid grid-2">
+      <div><label>Key</label><input id="newSkKey" placeholder="如: taijiquan"></div>
+      <div><label>名稱</label><input id="newSkName" placeholder="太極拳"></div>
+      <div><label>類型</label><select id="newSkType">
+        <option value="martial">⚔️ 武功</option><option value="neigong">🧘 內功</option><option value="qinggong">💨 輕功</option>
+      </select></div>
+      <div><label>稀有度</label><select id="newSkRarity">
+        <option value="common">凡</option><option value="uncommon">中</option><option value="rare">高</option><option value="legendary">絕</option>
+      </select></div>
+    </div>
+    <div class="stat-bar" style="margin-top:10px"><label>威力</label><input type="range" min="1" max="100" value="50" id="newSkPower" oninput="this.nextElementSibling.textContent=this.value"><span class="val">50</span></div>
+    <div style="margin-top:10px"><label>描述</label><textarea id="newSkDesc" rows="2"></textarea></div>
+    <div class="btn-row"><button class="btn btn-primary" onclick="addSkill()">確認新增</button></div>`;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+async function addSkill(){
+  const body={
+    key:document.getElementById('newSkKey').value.trim(),
+    name:document.getElementById('newSkName').value.trim(),
+    type:document.getElementById('newSkType').value,
+    rarity:document.getElementById('newSkRarity').value,
+    power:parseInt(document.getElementById('newSkPower').value)||50,
+    description:document.getElementById('newSkDesc').value.trim()
+  };
+  if(!body.key||!body.name){toast('Key 和名稱不能為空',false);return}
+  try{
+    await apiPost(`${SUPABASE_URL}/rest/v1/skills`,body);
+    skills=await apiGet(`${SUPABASE_URL}/rest/v1/skills?select=*&order=type,power.desc`);
+    renderSkillList(document.getElementById('skillSearch').value);
+    document.getElementById('modalOverlay').classList.remove('open');
+    renderWorldInfo();
+    toast('✅ 技能已新增');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+// ===== NPC Skill Assignment =====
+function renderNsNpcList(filter=''){
+  const el=document.getElementById('nsNpcList');
+  const f=filter.toLowerCase();
+  const filtered=npcs.filter(n=>!f||n.name.includes(f)||n.key.includes(f));
+  if(!filtered.length){el.innerHTML='<div class="empty">冇角色</div>';return}
+  el.innerHTML=filtered.map(n=>{
+    const count=npcSkills.filter(ns=>ns.npc_key===n.key).length;
+    return `<div class="list-item" onclick="selectNsNpc('${n.key}')">
+      <div class="name">${esc(n.name)}</div>
+      <div class="meta">${count} 技能</div>
+    </div>`;
+  }).join('');
+}
+function filterNpcSkills(){renderNsNpcList(document.getElementById('nsSearch').value)}
+
+function selectNsNpc(key){
+  const npc=npcs.find(n=>n.key===key);
+  if(!npc)return;
+  const assigned=npcSkills.filter(ns=>ns.npc_key===key);
+  const assignedKeys=new Set(assigned.map(a=>a.skill_key));
+  const unassigned=skills.filter(s=>!assignedKeys.has(s.key));
+
+  let html=`<h3>${esc(npc.name)} 的技能</h3>`;
+
+  // Assigned skills
+  html+=`<div style="margin-top:12px"><b style="color:var(--gold);font-size:13px">已配置 (${assigned.length})</b></div>`;
+  if(assigned.length){
+    html+=assigned.map(a=>{
+      const sk=skills.find(s=>s.key===a.skill_key);
+      const name=sk?sk.name:a.skill_key;
+      const type=sk?sk.type:'';
+      return `<div class="skill-row">
+        <span class="tag ${TYPE_CSS[type]||''}">${TYPE_LABEL[type]||type}</span>
+        <span class="sk-name">${esc(name)}</span>
+        <span class="sk-meta">熟練度 ${a.proficiency||0}</span>
+        <button class="btn btn-sm btn-danger" onclick="removeNpcSkill('${key}','${a.skill_key}')">✕</button>
+      </div>`;
+    }).join('');
+  }else{html+=`<div class="empty" style="padding:10px">無</div>`}
+
+  // Add skill
+  html+=`<div style="margin-top:16px"><b style="color:var(--gold);font-size:13px">添加技能</b></div>`;
+  if(unassigned.length){
+    html+=`<div style="margin-top:8px"><select id="nsSkillSelect" style="width:100%">
+      <option value="">— 選擇技能 —</option>
+      ${unassigned.map(s=>`<option value="${s.key}">${esc(s.name)} (${TYPE_LABEL[s.type]||s.type}, ⚡${s.power})</option>`).join('')}
+    </select></div>
+    html+=`<div class="stat-bar" style="margin-top:8px"><label>熟練度</label><input type="range" min="0" max="100" value="50" id="nsProf" oninput="this.nextElementSibling.textContent=this.value"><span class="val">50</span></div>`;
+    html+=`<div class="btn-row"><button class="btn btn-primary" onclick="addNpcSkill('${key}')">➕ 添加</button></div>`;
+  }else{html+=`<div class="empty" style="padding:10px">所有技能已配置</div>`}
+
+  document.getElementById('nsEditor').innerHTML=html;
+}
+
+async function addNpcSkill(npcKey){
+  const sel=document.getElementById('nsSkillSelect');
+  const skillKey=sel.value;
+  if(!skillKey){toast('請選擇技能',false);return}
+  const prof=parseInt(document.getElementById('nsProf').value)||50;
+  try{
+    // Check duplicate
+    const exists=npcSkills.find(n=>n.npc_key===npcKey&&n.skill_key===skillKey);
+    if(exists){
+      await apiPatch(`${SUPABASE_URL}/rest/v1/npc_skills?npc_key=eq.${npcKey}&skill_key=eq.${skillKey}`,{proficiency:prof});
+    }else{
+      await apiPost(`${SUPABASE_URL}/rest/v1/npc_skills`,{npc_key:npcKey,skill_key:skillKey,proficiency:prof});
+    }
+    npcSkills=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=*&order=npc_key`);
+    selectNsNpc(npcKey);renderNsNpcList(document.getElementById('nsSearch').value);renderWorldInfo();
+    toast('✅ 已添加');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+async function removeNpcSkill(npcKey,skillKey){
+  if(!confirm('確定移除？'))return;
+  try{
+    await apiDelete(`${SUPABASE_URL}/rest/v1/npc_skills?npc_key=eq.${npcKey}&skill_key=eq.${skillKey}`);
+    npcSkills=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=*&order=npc_key`);
+    selectNsNpc(npcKey);renderNsNpcList(document.getElementById('nsSearch').value);renderWorldInfo();
+    toast('✅ 已移除');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+// ===== Init =====
+loadAll();
+
+
+</script>
 </body>
 </html>
