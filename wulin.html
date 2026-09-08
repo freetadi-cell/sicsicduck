@@ -374,6 +374,40 @@ function pushDlg(text,me,cls,whoName){const d=document.createElement('div');d.cl
 function bumpAff(key,delta){if(!delta)return;const v=aff(key)+delta;setAff(key,v);const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');if(bar)bar.style.width=v+'%';if(num)num.textContent=v;if(dl){dl.textContent=(delta>0?'+':'')+delta;dl.className='affdelta '+(delta>0?'up':'down');setTimeout(()=>{dl.textContent=''},2500)}}
 function triggerAttack(key){const n=world.npcs.find(x=>x.key===key);if(!n)return;$('mbox').classList.add('shake');pushDlg(`${esc(n.name)}大喝一聲：「受死！」`,false,'npcattack',n.name);setTimeout(()=>{const p=player();const dmg=Math.max(1,Math.round(Math.random()*3+1));const xpLost=Math.min(p.xp,dmg*2);p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;pushDlg(`你被${esc(n.name)}一掌擊退，跌坐地上，損失閱歷 ${xpLost}`,true);toast(`⚔️ 遭到${esc(n.name)}攻擊！閱歷 -${xpLost}`)},800)}
 function say(key,i){const n=world.npcs.find(x=>x.key===key);if(!n)return;const o=(n.chat_options||[])[i];if(!o)return;const p=player();if(p.opts[key+':'+i]===worldDay)return;p.opts[key+':'+i]=worldDay;savePlayer(p);const btn=$('opt_'+key+'_'+i);if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 已說</span>'}pushDlg(o.say,true);setTimeout(()=>{pushDlg(o.reply,false);bumpAff(key,o.affinity_delta||0);const ad=o.alignment_delta||0;if(ad)setPlayerAlign(ad);let msg='';if(o.affinity_delta>0)msg='他頗受用 · 好感 +'+o.affinity_delta;else if(o.affinity_delta<0)msg='說錯話了… 好感 '+o.affinity_delta;if(ad>0)msg+=msg?' · ☯ 善行 +'+ad:'☯ 善行 +'+ad;else if(ad<0)msg+=msg?' · ☯ '+ad:'☯ '+ad;if(msg)toast(msg);if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}},400)}
+/* ===== 切磋戰況描述 ===== */
+const SPAR_WIN={bigGap:[
+  "你一掌拍出，${n}避無可避，胸口一悶，踉蹌退了三步。你收勢而立，點到即止。",
+  "你欺身而進，指如疾風點中${n}腕脈，對方手臂一麻，已無還手之力。",
+  "${n}方欲出招，你已看破破綻，一記拂袖將其兵器震落，胜负已分。",
+  "你踏步上前，輕描淡寫化去${n}攻勢，反手一按，已將其制住。"
+],close:[
+  "二人拆了十餘招，拳來腳往難分高下。${n}忽使險招，你側身避過，趁隙反擊，一記巧勁將其逼退半步，這才收手。",
+  "激鬥良久，你與${n}各展所長。你虛晃一招引其露了破綻，旋即搶攻得手，這才拱手道：承讓。",
+  "雙方你來我往打了二十餘回合，${n}漸落下風。你趁其氣息未調之際猛攻三掌，對方抵擋不住，連退數步。",
+  "纏鬥多時，你與${n}互有攻守。最後你賣個破綻，誘其深入，反手一扣，拿住其手腕，胜负已判。"
+],epic:[
+  "你與${n}對视一眼，同時出手。掌風拳影交錯，拆了五十餘招仍難分勝負。${n}忽運起剛猛內力轟出一拳，你以柔化剛借力打力，雙方各退三步，相視而笑——這一戰，暢快！",
+  "場中勁風激盪，你與${n}已戰至酣處。雙方各施絕學，招式變幻莫測。百招過後，${n}氣息漸亂，你抓住一線破綻連出三掌，這才分出高下。${n}長嘆：好功夫！",
+  "二人身影交錯如電，拳勁掌風震得周圍樹葉簌簌而落。你與${n}激戰百餘招，招招驚險。最終你以一記險招搶得先機，${n}退後三步，抱拳道：閣下好武藝，佩服！"
+]},SPAR_LOSE={bigGap:[
+  "你剛出一招，已被${n}扣住手腕，動彈不得。實力差距，一望即知。",
+  "${n}隨手一拂，你便覺得一股大力湧來，立足不穩，跌坐在地。",
+  "你方欲出手，${n}指尖已點到你肩井穴。快到你根本來不及反應。"
+],close:[
+  "你與${n}拆了十餘招，互有攻守。但${n}老辣許多，抓住你一個破綻，反手將你制住。你嘆道：承讓了。",
+  "激鬥良久，你漸落下風。${n}一記重手逼退你，你踉蹌數步，自知不敵，拱手認輸。",
+  "雙方你來我往二十餘回合，${n}忽變招險攻，你抵擋不住，退後三步。再打下去也無益，只得收手。"
+],epic:[
+  "你與${n}激戰百餘招，拳影掌風遮天蔽日。你已拼盡全力，但${n}終究技高一籌，一記剛猛掌力將你逼退。你深吸一口氣：好功夫，我輸得心服口服。",
+  "場中二人你來我往，拆了不下百招。你與${n}各展絕學，精彩紛呈。最終${n}以深厚內力壓過你一線，你氣血翻湊，退後五步，抱拳道：前輩武功，在下佩服。"
+]};
+
+function pickSparDesc(npcName,powerDiff,win){
+  const tier=powerDiff>30?'bigGap':powerDiff>10?'close':'epic';
+  const pool=win?SPAR_WIN[tier]:SPAR_LOSE[tier];
+  return pool[Math.floor(Math.random()*pool.length)].replace(/\$\{n\}/g,npcName);
+}
+
 function act(key,type){
   const n=world.npcs.find(x=>x.key===key);const p=player();
   if(type==='flee'){const flee=Math.random()>0.3;if(flee){pushDlg('（你轉身狂奔，幸虧甩掉了'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）想走？沒那麼容易！',false,'npcattack',n.name);const xpLost=3;p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;pushDlg(`被打了幾巴掌，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}return}
@@ -385,7 +419,7 @@ function act(key,type){
     if(p.spoke[key+'#spar']===worldDay)return;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
     const a=aff(key),na=n.alignment||500,win=Math.random()<(0.35+a/200);
     p.xp+=win?5:3;savePlayer(p);pushDlg('（你抱拳：請指教！）',true);
-    setTimeout(async()=>{if(win){pushDlg('（過了三招，'+esc(n.name)+'收勢）有幾下本領！給你面子。',false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg('（三招之內被制住）年輕人，基本功回去再練練。',false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
+    setTimeout(async()=>{const pd=Math.abs((n.martial||50)-50);if(win){pushDlg(pickSparDesc(n.name,pd,true),false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg(pickSparDesc(n.name,pd,false),false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
   }
 }
 
