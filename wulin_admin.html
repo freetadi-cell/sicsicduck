@@ -542,7 +542,7 @@ function renderPlayerList(filter=''){
   if(!filtered.length){el.innerHTML='<div class="empty">冇玩家</div>';return}
   el.innerHTML=filtered.map(p=>{
     const active=selectedPlayer&&selectedPlayer.name===p.name;
-    const save=typeof p.save==='string'?JSON.parse(p.save):(p.save||{});
+    let save=p.save||{};if(typeof save==='string'){try{save=JSON.parse(save)}catch(e){save={}}}
     const xp=save.xp||0;
     const region=save.region||'?';
     return `<div class="list-item${active?' active':''}" onclick="selectPlayer('${esc(p.name)}')">
@@ -562,7 +562,7 @@ async function selectPlayer(name){
     const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=*&name=eq.${encodeURIComponent(name)}`);
     if(!rows.length){document.getElementById('playerEditor').innerHTML='<div class="empty">找不到玩家</div>';return}
     const p=rows[0];
-    const save=typeof p.save==='string'?JSON.parse(p.save):(p.save||{});
+    let save=p.save||{};if(typeof save==='string'){try{save=JSON.parse(save)}catch(e){save={}}}
     const playerSkills=await apiGet(`${SUPABASE_URL}/rest/v1/player_skills?select=*,skill_key&player_name=eq.${encodeURIComponent(name)}`);
     const aff=save.aff||{};
     const alignment=save.alignment||500;
@@ -619,7 +619,7 @@ async function savePlayerData(){
   try{
     const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=save&name=eq.${encodeURIComponent(selectedPlayer.name)}`);
     if(!rows.length){toast('找不到玩家',false);return}
-    const save=rows[0].save?JSON.parse(rows[0].save):{};
+    let save=rows[0].save||{};if(typeof save==='string'){try{save=JSON.parse(save)}catch(e){save={}}}
     save.region=region;save.xp=xp;save.alignment=alignment;
     await apiPatch(`${SUPABASE_URL}/rest/v1/players?name=eq.${encodeURIComponent(selectedPlayer.name)}`,{save:JSON.stringify(save)});
     players=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=name,created_at&order=created_at.desc`);
