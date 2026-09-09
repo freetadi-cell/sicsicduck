@@ -580,6 +580,12 @@ async function selectPlayer(name){
     html+=`<div><label>閱歷</label><input type="number" id="plXp" value="${xp}"></div>`;
     html+=`<div class="stat-bar"><label>善惡</label><input type="range" min="0" max="1000" value="${alignment}" id="plAlign" oninput="this.nextElementSibling.textContent=this.value"><span class="val" style="color:${alignColor}">${alignment} ${alignLabel}</span></div>`;
     html+=`</div>`;
+    const martial=save.martial||1,neigong=save.neigong||1,qinggong=save.qinggong||1;
+    html+=`<div class="grid grid-3" style="margin-top:8px">`;
+    html+=`<div class="stat-bar"><label>武功</label><input type="range" min="1" max="100" value="${martial}" id="plMartial" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${martial}</span></div>`;
+    html+=`<div class="stat-bar"><label>內功</label><input type="range" min="1" max="100" value="${neigong}" id="plNeigong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${neigong}</span></div>`;
+    html+=`<div class="stat-bar"><label>輕功</label><input type="range" min="1" max="100" value="${qinggong}" id="plQinggong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${qinggong}</span></div>`;
+    html+=`</div>`;
     html+=`<div style="margin-top:10px"><label>已學技能 (${playerSkills.length})</label>`;
     if(playerSkills.length){
       html+=playerSkills.map(s=>{
@@ -616,11 +622,14 @@ async function savePlayerData(){
   const region=document.getElementById('plRegion').value.trim();
   const xp=parseInt(document.getElementById('plXp').value)||0;
   const alignment=parseInt(document.getElementById('plAlign').value)||500;
+  const martial=parseInt(document.getElementById('plMartial').value)||1;
+  const neigong=parseInt(document.getElementById('plNeigong').value)||1;
+  const qinggong=parseInt(document.getElementById('plQinggong').value)||1;
   try{
     const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=save&name=eq.${encodeURIComponent(selectedPlayer.name)}`);
     if(!rows.length){toast('找不到玩家',false);return}
     let save=rows[0].save||{};if(typeof save==='string'){try{save=JSON.parse(save)}catch(e){save={}}}
-    save.region=region;save.xp=xp;save.alignment=alignment;
+    save.region=region;save.xp=xp;save.alignment=alignment;save.martial=martial;save.neigong=neigong;save.qinggong=qinggong;
     await apiPatch(`${SUPABASE_URL}/rest/v1/players?name=eq.${encodeURIComponent(selectedPlayer.name)}`,{save:JSON.stringify(save)});
     players=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=name,created_at&order=created_at.desc`);
     renderPlayerList(document.getElementById('playerSearch').value);

@@ -285,7 +285,7 @@ async function regGo(){
   const migrating=old&&old.name===name&&!a[name];
   if(a[name]){authErr('這個名號已有人使用，請另選一個');return}
   const ph=await sha256(p1);
-  const st=migrating?old:{name,xp:0,alignment:500,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
+  const st=migrating?old:{name,xp:0,alignment:500,martial:1,neigong:1,qinggong:1,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
   if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
   a[name]={ph,save:st};
   const saved=await saveAccounts(a);
