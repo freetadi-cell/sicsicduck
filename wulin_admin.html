@@ -542,7 +542,7 @@ function renderPlayerList(filter=''){
   if(!filtered.length){el.innerHTML='<div class="empty">冇玩家</div>';return}
   el.innerHTML=filtered.map(p=>{
     const active=selectedPlayer&&selectedPlayer.name===p.name;
-    const save=p.save?JSON.parse(p.save):{};
+    const save=typeof p.save==='string'?JSON.parse(p.save):(p.save||{});
     const xp=save.xp||0;
     const region=save.region||'?';
     return `<div class="list-item${active?' active':''}" onclick="selectPlayer('${esc(p.name)}')">
@@ -562,7 +562,7 @@ async function selectPlayer(name){
     const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=*&name=eq.${encodeURIComponent(name)}`);
     if(!rows.length){document.getElementById('playerEditor').innerHTML='<div class="empty">找不到玩家</div>';return}
     const p=rows[0];
-    const save=p.save?JSON.parse(p.save):{};
+    const save=typeof p.save==='string'?JSON.parse(p.save):(p.save||{});
     const playerSkills=await apiGet(`${SUPABASE_URL}/rest/v1/player_skills?select=*,skill_key&player_name=eq.${encodeURIComponent(name)}`);
     const aff=save.aff||{};
     const alignment=save.alignment||500;
