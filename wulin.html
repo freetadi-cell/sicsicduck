@@ -416,13 +416,46 @@ function pickSparDesc(npcName,powerDiff,win){
   return pool[Math.floor(Math.random()*pool.length)].replace(/\$\{n\}/g,npcName);
 }
 
+/* ===== 贈禮反應描述 ===== */
+const GIFT_REACT={refuse:[
+  "${n}看了一眼，淡淡道：「無功不受祿，你還是收回吧。」",
+  "${n}搖頭道：「我不缺這些，你留着自己用。」",
+  "${n}將禮物推回：「你的心意我領了，但這東西我不便收。」",
+  "${n}皺眉道：「我們之間…還不到送禮的程度。」"
+],lukewarm:[
+  "${n}接過禮物，點點頭：「嗯，有心了。」",
+  "${n}收下禮物，神色平淡：「多謝。」",
+  "${n}將禮物放好：「還行吧，謝了。」"
+],warm:[
+  "${n}接過禮物，神色微動：「你有心了，我很歡喜。」",
+  "${n}眼中掠過一絲暖意：「难得你記得我喜歡這些。」",
+  "${n}輕聲道：「謝謝，這份情誼我記住了。」"
+],enthusiastic:[
+  "${n}雙眼一亮：「這正是我想要的！你真是太懂我了！」",
+  "${n}歡喜地收下：「好東西！你對我真好，這份恩情我銘記於心。」",
+  "${n}大笑道：「哈哈，好！這份禮物深得我心！」"
+]};
+
+function pickGiftDesc(npcName,affinity,alignDiff){
+  if(affinity<20||alignDiff>300){
+    const pool=GIFT_REACT.refuse;
+    return{accepted:false,text:pool[Math.floor(Math.random()*pool.length)].replace(/\$\{n\}/g,npcName)};
+  }
+  let tier,affDelta;
+  if(affinity>70&&alignDiff<50){tier='enthusiastic';affDelta=6}
+  else if(affinity>50&&alignDiff<100){tier='warm';affDelta=4}
+  else{tier='lukewarm';affDelta=2}
+  const pool=GIFT_REACT[tier];
+  return{accepted:true,text:pool[Math.floor(Math.random()*pool.length)].replace(/\$\{n\}/g,npcName),affDelta};
+}
+
 function act(key,type){
   const n=world.npcs.find(x=>x.key===key);const p=player();
   if(type==='flee'){const flee=Math.random()>0.3;if(flee){pushDlg('（你轉身狂奔，幸虧甩掉了'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）想走？沒那麼容易！',false,'npcattack',n.name);const xpLost=3;p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;pushDlg(`被打了幾巴掌，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}return}
   if(type==='gift'){
     if(p.gifts[key]===worldDay)return;p.gifts[key]=worldDay;const btn=$('btnGift');if(btn)btn.disabled=true;
     pushDlg('（你奉上一份禮物）',true);
-    setTimeout(async()=>{pushDlg('（'+esc(n.name)+'接過，神色微動）你有心。',false);bumpAff(key,4);let giftMsg='贈禮 · 好感 +4';const na=n.alignment||500;if(na>playerAlign())setPlayerAlign(1);else if(na<playerAlign())setPlayerAlign(-1);const diff=alignDiff(playerAlign(),na),a=aff(key);if(diff<5&&a>50){const npcRows=await loadNpcSkills(key);const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(teachable.length>0&&Math.random()<0.3){const taught=teachable[Math.floor(Math.random()*teachable.length)];await playerLearnSkill(p.name,taught);const si=getSkillInfo(taught);giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg')}};toast(giftMsg)},400)
+    setTimeout(async()=>{const na=n.alignment||500,diff=alignDiff(playerAlign(),na),a=aff(key);const r=pickGiftDesc(n.name,a,diff);pushDlg(r.text,false);if(!r.accepted){toast(`${n.name} 拒絕了禮物`);savePlayer(p);return}bumpAff(key,r.affDelta);let giftMsg=`贈禮 · 好感 +${r.affDelta}`;if(na>playerAlign())setPlayerAlign(1);else if(na<playerAlign())setPlayerAlign(-1);if(diff<5&&a>50){const npcRows=await loadNpcSkills(key);const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(teachable.length>0&&Math.random()<0.3){const taught=teachable[Math.floor(Math.random()*teachable.length)];await playerLearnSkill(p.name,taught);const si=getSkillInfo(taught);giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg')}};toast(giftMsg)},400)
   }else if(type==='spar'){
     if(p.spoke[key+'#spar']===worldDay)return;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
     const a=aff(key),na=n.alignment||500,win=Math.random()<(0.35+a/200);
