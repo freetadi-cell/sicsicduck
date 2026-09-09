@@ -82,6 +82,7 @@ textarea{min-height:60px;resize:vertical}
     <button class="tab active" onclick="showTab('npcs')">角色管理</button>
     <button class="tab" onclick="showTab('skills')">技能管理</button>
     <button class="tab" onclick="showTab('npcskills')">角色技能</button>
+    <button class="tab" onclick="showTab('players')">玩家管理</button>
   </div>
 </div>
 
@@ -133,6 +134,21 @@ textarea{min-height:60px;resize:vertical}
       </div>
     </div>
   </div>
+
+  <!-- Players Panel -->
+  <div id="panel-players" class="panel">
+    <div class="grid grid-2">
+      <div>
+        <div class="search"><input id="playerSearch" placeholder="搜索玩家…" oninput="filterPlayers()"></div>
+        <div id="playerList" class="grid" style="gap:6px"></div>
+      </div>
+      <div>
+        <div class="card" id="playerEditor">
+          <div class="empty">← 選擇一個玩家</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="toast" class="toast"></div>
@@ -157,7 +173,7 @@ async function apiDelete(url){const r=await fetch(url,{method:'DELETE',headers:{
 if(!r.ok){const t=await r.text();throw new Error(`DELETE: ${r.status} ${t}`)}return r}
 
 // ===== State =====
-let worldData=null, npcs=[], skills=[], npcSkills=[], selectedNpc=null, selectedSkill=null;
+let worldData=null, npcs=[], skills=[], npcSkills=[], players=[], selectedNpc=null, selectedSkill=null, selectedPlayer=null;
 
 // ===== Helpers =====
 function toast(msg,ok=true){const t=document.getElementById('toast');t.textContent=msg;t.className='toast show '+(ok?'ok':'err');setTimeout(()=>t.className='toast',2500)}
@@ -171,7 +187,8 @@ async function loadAll(){
   try{const wr=await fetch('data/wulin_world.json');worldData=await wr.json();npcs=worldData.npcs||[]}catch(e){npcs=[]}
   try{skills=await apiGet(`${SUPABASE_URL}/rest/v1/skills?select=*&order=type,power.desc`)}catch(e){skills=[]}
   try{npcSkills=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=*&order=npc_key`)}catch(e){npcSkills=[]}
-  renderWorldInfo();renderNpcList();renderSkillList();renderNsNpcList();
+  try{players=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=name,created_at&order=created_at.desc`)}catch(e){players=[]}
+  renderWorldInfo();renderNpcList();renderSkillList();renderNsNpcList();renderPlayerList();
 }
 
 function renderWorldInfo(){
@@ -181,7 +198,8 @@ function renderWorldInfo(){
     <div class="chip">🗺 <b>${Object.keys(m.region_distances||{}).length}</b> 區域</div>
     <div class="chip">👤 <b>${npcs.length}</b> 角色</div>
     <div class="chip">⚔️ <b>${skills.length}</b> 技能</div>
-    <div class="chip">🔗 <b>${npcSkills.length}</b> 技能配置</div>`;
+    <div class="chip">🔗 <b>${npcSkills.length}</b> 技能配置</div>
+    <div class="chip">🎮 <b>${players.length}</b> 玩家</div>`;
 }
 
 // ===== NPC Management =====
@@ -513,6 +531,117 @@ async function removeNpcSkill(npcKey,skillKey){
     npcSkills=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=*&order=npc_key`);
     selectNsNpc(npcKey);renderNsNpcList(document.getElementById('nsSearch').value);renderWorldInfo();
     toast('✅ 已移除');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+// ===== Player Management =====
+function renderPlayerList(filter=''){
+  const el=document.getElementById('playerList');
+  const f=filter.toLowerCase();
+  const filtered=players.filter(p=>!f||p.name.toLowerCase().includes(f));
+  if(!filtered.length){el.innerHTML='<div class="empty">冇玩家</div>';return}
+  el.innerHTML=filtered.map(p=>{
+    const active=selectedPlayer&&selectedPlayer.name===p.name;
+    const save=p.save?JSON.parse(p.save):{};
+    const xp=save.xp||0;
+    const region=save.region||'?';
+    return `<div class="list-item${active?' active':''}" onclick="selectPlayer('${esc(p.name)}')">
+      <div class="name">${esc(p.name)}</div>
+      <div class="meta">⚡${xp} · 📍${esc(region)}</div>
+    </div>`;
+  }).join('');
+}
+function filterPlayers(){renderPlayerList(document.getElementById('playerSearch').value)}
+
+async function selectPlayer(name){
+  selectedPlayer=players.find(p=>p.name===name)||null;
+  renderPlayerList(document.getElementById('playerSearch').value);
+  if(!selectedPlayer){document.getElementById('playerEditor').innerHTML='<div class="empty">← 選擇一個玩家</div>';return}
+  // Fetch full player data
+  try{
+    const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=*&name=eq.${encodeURIComponent(name)}`);
+    if(!rows.length){document.getElementById('playerEditor').innerHTML='<div class="empty">找不到玩家</div>';return}
+    const p=rows[0];
+    const save=p.save?JSON.parse(p.save):{};
+    const playerSkills=await apiGet(`${SUPABASE_URL}/rest/v1/player_skills?select=*,skill_key&player_name=eq.${encodeURIComponent(name)}`);
+    const aff=save.aff||{};
+    const alignment=save.alignment||500;
+    const alignLabel=alignment>=700?'正義':alignment>=550?'善':alignment>=450?'中立':alignment>=300?'惡':'邪惡';
+    const region=save.region||'襄陽城';
+    const xp=save.xp||0;
+    const alignColor=alignment>=600?'var(--green)':alignment>=400?'var(--muted)':'var(--red)';
+
+    let html=`<h3>${esc(p.name)}</h3>`;
+    html+=`<div class="grid grid-2" style="margin-top:10px">`;
+    html+=`<div><label>玩家名稱</label><input id="plName" value="${esc(p.name)}" readonly style="opacity:.6"></div>`;
+    html+=`<div><label>所在區域</label><input id="plRegion" value="${esc(region)}"></div>`;
+    html+=`</div>`;
+    html+=`<div class="grid grid-2" style="margin-top:8px">`;
+    html+=`<div><label>閱歷</label><input type="number" id="plXp" value="${xp}"></div>`;
+    html+=`<div class="stat-bar"><label>善惡</label><input type="range" min="0" max="1000" value="${alignment}" id="plAlign" oninput="this.nextElementSibling.textContent=this.value"><span class="val" style="color:${alignColor}">${alignment} ${alignLabel}</span></div>`;
+    html+=`</div>`;
+    html+=`<div style="margin-top:10px"><label>已學技能 (${playerSkills.length})</label>`;
+    if(playerSkills.length){
+      html+=playerSkills.map(s=>{
+        const sk=skills.find(x=>x.key===s.skill_key);
+        const skName=sk?sk.name:s.skill_key;
+        const skType=sk?sk.type:'';
+        const eq=s.equipped?' ⚡裝備中':'';
+        return `<div class="skill-row"><span class="tag ${TYPE_CSS[skType]||''}">${TYPE_LABEL[skType]||skType}</span><span class="sk-name">${esc(skName)}${eq}</span></div>`;
+      }).join('');
+    }else{html+=`<div style="font-size:12px;color:var(--muted);padding:6px 0">尚無技能</div>`}
+    html+=`</div>`;
+    // Affinity list
+    const affKeys=Object.keys(aff);
+    if(affKeys.length){
+      html+=`<div style="margin-top:10px"><label>好感度</label>`;
+      html+=affKeys.map(k=>{
+        const npc=npcs.find(n=>n.key===k);
+        const npcName=npc?npc.name:k;
+        const v=aff[k];
+        return `<div style="display:flex;align-items:center;gap:8px;padding:3px 0;font-size:12px"><span style="width:60px;color:var(--muted)">${esc(npcName)}</span><div style="flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden"><div style="width:${v}%;height:100%;background:var(--gold);border-radius:2px"></div></div><span style="width:24px;text-align:right;color:var(--gold)">${v}</span></div>`;
+      }).join('');
+      html+=`</div>`;
+    }
+    html+=`<div class="btn-row" style="margin-top:14px">`;
+    html+=`<button class="btn btn-primary" onclick="savePlayerData()">💾 保存</button>`;
+    html+=`<button class="btn btn-danger" onclick="deletePlayerConfirm()">🗑 刪除玩家</button>`;
+    html+=`</div>`;
+    document.getElementById('playerEditor').innerHTML=html;
+  }catch(e){document.getElementById('playerEditor').innerHTML=`<div class="empty">載入失敗: ${esc(e.message)}</div>`}
+}
+
+async function savePlayerData(){
+  if(!selectedPlayer)return;
+  const region=document.getElementById('plRegion').value.trim();
+  const xp=parseInt(document.getElementById('plXp').value)||0;
+  const alignment=parseInt(document.getElementById('plAlign').value)||500;
+  try{
+    const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=save&name=eq.${encodeURIComponent(selectedPlayer.name)}`);
+    if(!rows.length){toast('找不到玩家',false);return}
+    const save=rows[0].save?JSON.parse(rows[0].save):{};
+    save.region=region;save.xp=xp;save.alignment=alignment;
+    await apiPatch(`${SUPABASE_URL}/rest/v1/players?name=eq.${encodeURIComponent(selectedPlayer.name)}`,{save:JSON.stringify(save)});
+    players=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=name,created_at&order=created_at.desc`);
+    renderPlayerList(document.getElementById('playerSearch').value);
+    selectPlayer(selectedPlayer.name);
+    renderWorldInfo();
+    toast('✅ 玩家資料已保存');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+async function deletePlayerConfirm(){
+  if(!selectedPlayer)return;
+  if(!confirm(`確定刪除玩家「${selectedPlayer.name}」？此操作不可逆！`))return;
+  try{
+    await apiDelete(`${SUPABASE_URL}/rest/v1/players?name=eq.${encodeURIComponent(selectedPlayer.name)}`);
+    await apiDelete(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(selectedPlayer.name)}`);
+    players=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=name,created_at&order=created_at.desc`);
+    selectedPlayer=null;
+    document.getElementById('playerEditor').innerHTML='<div class="empty">← 選擇一個玩家</div>';
+    renderPlayerList(document.getElementById('playerSearch').value);
+    renderWorldInfo();
+    toast('✅ 玩家已刪除');
   }catch(e){toast('❌ '+e.message,false)}
 }
 
