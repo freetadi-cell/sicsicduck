@@ -29,3 +29,8 @@ docs/
 
 # Media too large for Pages
 *.mp4
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example

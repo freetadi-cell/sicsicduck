@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sicsicduck",
+  "main": "worker/wulin-proxy.js",
+  "compatibility_date": "2026-09-08",
+  "routes": [
+    { "pattern": "api.sicsicduck.com/*", "zone_name": "sicsicduck.com" }
+  ]
+}
