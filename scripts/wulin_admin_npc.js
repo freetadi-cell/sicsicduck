@@ -31,9 +31,14 @@ function selectNpc(key){
     <div style="margin-top:10px"><label>心境</label><input id="npcMood" value="${esc(n.mood||'')}"></div>
     <div style="margin-top:8px"><label>待人態度</label><input id="npcAttitude" value="${esc(n.attitude||'')}"></div>
     <div class="stat-bar" style="margin-top:10px">
-      <label>道心</label>
+      <label>善惡</label>
       <input type="range" min="0" max="1000" value="${aff}" id="npcAlign" oninput="this.nextElementSibling.textContent=this.value">
       <span class="val">${aff}</span>
+    </div>
+    <div class="stat-bar" style="margin-top:6px">
+      <label>道心</label>
+      <input type="range" min="0" max="1000" value="${n.daoxin||500}" id="npcDaoxin" oninput="this.nextElementSibling.textContent=this.value">
+      <span class="val">${n.daoxin||500}</span>
     </div>
     <div class="grid grid-3" style="margin-top:10px">
       <div class="stat-bar"><label>武功</label><input type="range" min="1" max="100" value="${n.martial||50}" id="npcMartial" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${n.martial||50}</span></div>
@@ -66,6 +71,7 @@ async function saveNpc(){
   n.mood=document.getElementById('npcMood').value.trim();
   n.attitude=document.getElementById('npcAttitude').value.trim();
   n.alignment=parseInt(document.getElementById('npcAlign').value)||500;
+  n.daoxin=parseInt(document.getElementById('npcDaoxin').value)||500;
   n.martial=parseInt(document.getElementById('npcMartial').value)||50;
   n.neigong=parseInt(document.getElementById('npcNeigong').value)||50;
   n.qinggong=parseInt(document.getElementById('npcQinggong').value)||50;
@@ -98,7 +104,7 @@ function showAddNpc(){
   const key=prompt('新角色 key（英文，如 zhangwuji）:');
   if(!key)return;
   if(npcs.find(n=>n.key===key)){toast('key 已存在',false);return}
-  const newNpc={key,name:key,title:'',region:'襄陽城',location:'',mood:'',attitude:'',alignment:500,martial:50,neigong:50,qinggong:50,dialogue:[],chat_options:[],relations:{}};
+  const newNpc={key,name:key,title:'',region:'襄陽城',location:'',mood:'',attitude:'',alignment:500,daoxin:500,martial:50,neigong:50,qinggong:50,dialogue:[],chat_options:[],relations:{}};
   npcs.push(newNpc);worldData.npcs=npcs;
   selectNpc(key);
   toast('✅ 新角色已建立，請填寫資料後保存');
