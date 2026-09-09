@@ -337,8 +337,6 @@ function startTravelTimer(){if(travelTimer)clearInterval(travelTimer);travelTime
 async function load(){
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
   catch(e){$('worldTime').textContent='載入失敗';return}
-  // Load NPCs from Supabase
-  try{const npcs=await apiGet(`${SUPABASE_URL}/rest/v1/npcs?select=*&order=key`);if(npcs.length)world.npcs=npcs}catch(e){}
   worldDay=parseInt((String(world.meta.world_time).match(/第(\d+)日/)||[0,1])[1])||1;
   await loadSkillsDb();
   await cloudLoad();
