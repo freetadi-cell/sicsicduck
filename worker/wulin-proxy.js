@@ -9,14 +9,19 @@
  *   GITHUB_PAT  — GitHub Personal Access Token
  *
  * 支援：
- *   GET  /api/players        → 讀取 players.json
- *   PUT  /api/players        → 更新 players.json（body: JSON）
- *   OPTIONS                  → CORS preflight
+ *   GET  /api/players             → 讀取 players.json
+ *   PUT  /api/players             → 更新 players.json（body: JSON）
+ *   GET  /api/world               → 讀取 wulin_world.json
+ *   PUT  /api/world               → 更新 wulin_world.json（body: JSON）
+ *   OPTIONS                      → CORS preflight
  */
 
 const GH_OWNER = "freetadi-cell";
 const GH_REPO  = "sicsicduck";
-const GH_FILE  = "data/players.json";
+const FILES = {
+  players: "data/players.json",
+  world:   "data/wulin_world.json",
+};
 
 const CORS = {
   "Access-Control-Allow-Origin":  "*",
@@ -32,12 +37,13 @@ function jsonResp(body, status = 200, extraHeaders = {}) {
   });
 }
 
-async function ghGet(pat) {
+async function ghGet(pat, fileKey) {
+  const filePath = FILES[fileKey];
   const r = await fetch(
-    `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`,
+    `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${filePath}`,
     {
       headers: {
-        Authorization: `token ${pat}`,
+        Authorization: `Bearer ${pat}`,
         Accept: "application/vnd.github.v3+json",
         "User-Agent": "wulin-worker",
       },
@@ -50,19 +56,20 @@ async function ghGet(pat) {
   return r.json(); // { content, sha, ... }
 }
 
-async function ghPut(pat, content, sha) {
+async function ghPut(pat, fileKey, content, sha, commitMsg) {
+  const filePath = FILES[fileKey];
   const body = {
-    message: `Wulin: update player data`,
+    message: commitMsg || `Wulin: update ${filePath}`,
     content: btoa(unescape(encodeURIComponent(content))),
     sha,
     branch: "master",
   };
   const r = await fetch(
-    `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`,
+    `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${filePath}`,
     {
       method: "PUT",
       headers: {
-        Authorization: `token ${pat}`,
+        Authorization: `Bearer ${pat}`,
         "Content-Type": "application/json",
         Accept: "application/vnd.github.v3+json",
         "User-Agent": "wulin-worker",
@@ -84,6 +91,7 @@ export default {
 
     const url = new URL(request.url);
     const method = request.method;
+    const path = url.pathname;
 
     // CORS preflight
     if (method === "OPTIONS") {
@@ -91,9 +99,9 @@ export default {
     }
 
     // GET /api/players — 讀取
-    if (method === "GET" && url.pathname === "/api/players") {
+    if (method === "GET" && path === "/api/players") {
       try {
-        const data = await ghGet(pat);
+        const data = await ghGet(pat, "players");
         const accounts = JSON.parse(
           decodeURIComponent(escape(atob(data.content)))
         );
@@ -104,14 +112,42 @@ export default {
     }
 
     // PUT /api/players — 更新
-    if (method === "PUT" && url.pathname === "/api/players") {
+    if (method === "PUT" && path === "/api/players") {
       try {
         const { accounts, sha } = await request.json();
         if (!accounts || !sha) {
           return jsonResp({ error: "Missing accounts or sha" }, 400);
         }
         const content = JSON.stringify(accounts, null, 2);
-        await ghPut(pat, content, sha);
+        await ghPut(pat, "players", content, sha, "Wulin: update player data");
+        return jsonResp({ ok: true });
+      } catch (e) {
+        return jsonResp({ error: e.message }, 502);
+      }
+    }
+
+    // GET /api/world — 讀取 wulin_world.json
+    if (method === "GET" && path === "/api/world") {
+      try {
+        const data = await ghGet(pat, "world");
+        const world = JSON.parse(
+          decodeURIComponent(escape(atob(data.content)))
+        );
+        return jsonResp({ world, sha: data.sha });
+      } catch (e) {
+        return jsonResp({ error: e.message }, 502);
+      }
+    }
+
+    // PUT /api/world — 更新 wulin_world.json
+    if (method === "PUT" && path === "/api/world") {
+      try {
+        const { world, sha, message } = await request.json();
+        if (!world || !sha) {
+          return jsonResp({ error: "Missing world or sha" }, 400);
+        }
+        const content = JSON.stringify(world, null, 2);
+        await ghPut(pat, "world", content, sha, message || "Wulin: update world data");
         return jsonResp({ ok: true });
       } catch (e) {
         return jsonResp({ error: e.message }, 502);

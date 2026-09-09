@@ -163,6 +163,7 @@ const SUPABASE_ANON='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 </script>
 <script>
 // ===== API Layer =====
+const WORKER_URL='https://api.sicsicduck.com';
 async function apiGet(url){const r=await fetch(url,{headers:{'apikey':SUPABASE_ANON,'Authorization':`Bearer ${SUPABASE_ANON}`}});
 if(!r.ok)throw new Error(`GET ${url}: ${r.status}`);return r.json()}
 async function apiPost(url,body){const r=await fetch(url,{method:'POST',headers:{'apikey':SUPABASE_ANON,'Authorization':`Bearer ${SUPABASE_ANON}`,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(body)});
@@ -172,8 +173,12 @@ if(!r.ok){const t=await r.text();throw new Error(`PATCH: ${r.status} ${t}`)}retu
 async function apiDelete(url){const r=await fetch(url,{method:'DELETE',headers:{'apikey':SUPABASE_ANON,'Authorization':`Bearer ${SUPABASE_ANON}`,'Prefer':'return=minimal'}});
 if(!r.ok){const t=await r.text();throw new Error(`DELETE: ${r.status} ${t}`)}return r}
 
+// ===== Worker API for world data =====
+async function workerGetWorld(){const r=await fetch(`${WORKER_URL}/api/world`);if(!r.ok)throw new Error(`Worker GET: ${r.status}`);return r.json()}
+async function workerPutWorld(world,sha,msg){const r=await fetch(`${WORKER_URL}/api/world`,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({world,sha,message:msg||'Wulin admin: update world data'})});if(!r.ok){const t=await r.text();throw new Error(`Worker PUT: ${r.status} ${t}`)}return r.json()}
+
 // ===== State =====
-let worldData=null, npcs=[], skills=[], npcSkills=[], players=[], selectedNpc=null, selectedSkill=null, selectedPlayer=null;
+let worldData=null, worldSha=null, npcs=[], skills=[], npcSkills=[], players=[], selectedNpc=null, selectedSkill=null, selectedPlayer=null;
 
 // ===== Helpers =====
 function toast(msg,ok=true){const t=document.getElementById('toast');t.textContent=msg;t.className='toast show '+(ok?'ok':'err');setTimeout(()=>t.className='toast',2500)}
@@ -184,7 +189,7 @@ function closeModal(e){if(e&&e.target!==document.getElementById('modalOverlay'))
 
 // ===== Load All =====
 async function loadAll(){
-  try{const wr=await fetch('data/wulin_world.json');worldData=await wr.json();npcs=worldData.npcs||[]}catch(e){npcs=[]}
+  try{const wr=await workerGetWorld();worldData=wr.world;worldSha=wr.sha;npcs=worldData.npcs||[]}catch(e){npcs=[]}
   try{skills=await apiGet(`${SUPABASE_URL}/rest/v1/skills?select=*&order=type,power.desc`)}catch(e){skills=[]}
   try{npcSkills=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=*&order=npc_key`)}catch(e){npcSkills=[]}
   try{players=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=name,created_at&order=created_at.desc`)}catch(e){players=[]}
@@ -258,7 +263,7 @@ function selectNpc(key){
       <textarea id="npcRelations" rows="3">${JSON.stringify(n.relations||{},null,1)}</textarea>
     </div>
     <div class="btn-row">
-      <button class="btn btn-primary" onclick="saveNpc()">💾 保存到本地</button>
+      <button class="btn btn-primary" onclick="saveNpc()">💾 保存並部署</button>
       <button class="btn btn-danger" onclick="deleteNpcConfirm()">🗑 刪除</button>
     </div>`;
 }
@@ -282,10 +287,12 @@ async function saveNpc(){
   n.dialogue=document.getElementById('npcDialogue').value.split('\n').map(s=>s.trim()).filter(Boolean);
   try{n.relations=JSON.parse(document.getElementById('npcRelations').value)}catch(e){}
   worldData.npcs=npcs;
-  // Save to local file via download
-  const blob=new Blob([JSON.stringify(worldData,null,2)],{type:'application/json'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='wulin_world.json';a.click();
-  toast('✅ 已下載 wulin_world.json（手動上傳至 repo）');
+  try{
+    await workerPutWorld(worldData,worldSha,`Wulin admin: update NPC ${n.name} (${n.key})`);
+    // Re-fetch to get new SHA
+    const wr=await workerGetWorld();worldSha=wr.sha;
+    toast('✅ 已保存並部署');
+  }catch(e){toast('❌ '+e.message,false);return}
   renderNpcList(document.getElementById('npcSearch').value);
   renderWorldInfo();
 }
@@ -293,11 +300,11 @@ async function saveNpc(){
 function deleteNpcConfirm(){
   if(!selectedNpc)return;
   if(!confirm(`確定刪除 ${selectedNpc.name}？`))return;
+  const deletedName=selectedNpc.name, deletedKey=selectedNpc.key;
   npcs=npcs.filter(n=>n.key!==selectedNpc.key);
   worldData.npcs=npcs;
   selectedNpc=null;
-  const blob=new Blob([JSON.stringify(worldData,null,2)],{type:'application/json'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='wulin_world.json';a.click();
+  workerPutWorld(worldData,worldSha,`Wulin admin: delete NPC ${deletedName} (${deletedKey})`).then(()=>workerGetWorld()).then(wr=>{worldSha=wr.sha});
   document.getElementById('npcEditor').innerHTML='<div class="empty">← 選擇一個角色</div>';
   renderNpcList(document.getElementById('npcSearch').value);
   renderWorldInfo();
