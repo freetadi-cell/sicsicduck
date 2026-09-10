@@ -237,28 +237,28 @@ function selectNpc(key){
       <div><label>區域</label><input id="npcRegion" value="${esc(n.region||'')}"></div>
       <div><label>位置</label><input id="npcLocation" value="${esc(n.location||'')}"></div>
     </div>
-    <div style="margin-top:10px"><label>心境</label><input id="npcMood" value="${esc(n.mood||'')}"></div>
+    <div style="margin-top:8px"><label>心境</label><input id="npcMood" value="${esc(n.mood||'')}"></div>
     <div style="margin-top:8px"><label>待人態度</label><input id="npcAttitude" value="${esc(n.attitude||'')}"></div>
-    <div class="stat-bar" style="margin-top:10px">
+    <div class="stat-bar" style="margin-top:8px">
       <label>善惡</label>
       <input type="range" min="0" max="1000" value="${aff}" id="npcAlign" oninput="this.nextElementSibling.textContent=this.value">
       <span class="val">${aff}</span>
     </div>
-    <div class="stat-bar" style="margin-top:6px">
+    <div class="stat-bar" style="margin-top:8px">
       <label>道心</label>
       <input type="range" min="0" max="1000" value="${n.daoxin||500}" id="npcDaoxin" oninput="this.nextElementSibling.textContent=this.value">
       <span class="val">${n.daoxin||500}</span>
     </div>
-    <div class="grid grid-3" style="margin-top:10px">
+    <div class="grid grid-3" style="margin-top:8px">
       <div class="stat-bar"><label>武功</label><input type="range" min="1" max="100" value="${n.martial||50}" id="npcMartial" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${n.martial||50}</span></div>
       <div class="stat-bar"><label>內功</label><input type="range" min="1" max="100" value="${n.neigong||50}" id="npcNeigong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${n.neigong||50}</span></div>
       <div class="stat-bar"><label>輕功</label><input type="range" min="1" max="100" value="${n.qinggong||50}" id="npcQinggong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${n.qinggong||50}</span></div>
     </div>
-    <div style="margin-top:10px">
+    <div style="margin-top:8px">
       <label>對白（每行一句）</label>
       <textarea id="npcDialogue" rows="4">${(n.dialogue||[]).join('\n')}</textarea>
     </div>
-    <div style="margin-top:10px">
+    <div style="margin-top:8px">
       <label>關係（JSON）</label>
       <textarea id="npcRelations" rows="3">${JSON.stringify(n.relations||{},null,1)}</textarea>
     </div>
@@ -364,12 +364,12 @@ function selectSkill(key){
         <option value="legendary"${s.rarity==='legendary'?' selected':''}>絕</option>
       </select></div>
     </div>
-    <div class="stat-bar" style="margin-top:10px">
+    <div class="stat-bar" style="margin-top:8px">
       <label>威力</label>
       <input type="range" min="1" max="100" value="${s.power}" id="skPower" oninput="this.nextElementSibling.textContent=this.value">
       <span class="val">${s.power}</span>
     </div>
-    <div style="margin-top:10px"><label>描述</label><textarea id="skDesc" rows="3">${esc(s.description||'')}</textarea></div>
+    <div style="margin-top:8px"><label>描述</label><textarea id="skDesc" rows="3">${esc(s.description||'')}</textarea></div>
     <div class="btn-row">
       <button class="btn btn-primary" onclick="saveSkill()">💾 保存</button>
       <button class="btn btn-danger" onclick="deleteSkillConfirm()">🗑 刪除</button>
@@ -435,8 +435,8 @@ function showAddSkill(){
         <option value="common">凡</option><option value="uncommon">中</option><option value="rare">高</option><option value="legendary">絕</option>
       </select></div>
     </div>
-    <div class="stat-bar" style="margin-top:10px"><label>威力</label><input type="range" min="1" max="100" value="50" id="newSkPower" oninput="this.nextElementSibling.textContent=this.value"><span class="val">50</span></div>
-    <div style="margin-top:10px"><label>描述</label><textarea id="newSkDesc" rows="2"></textarea></div>
+    <div class="stat-bar" style="margin-top:8px"><label>威力</label><input type="range" min="1" max="100" value="50" id="newSkPower" oninput="this.nextElementSibling.textContent=this.value"><span class="val">50</span></div>
+    <div style="margin-top:8px"><label>描述</label><textarea id="newSkDesc" rows="2"></textarea></div>
     <div class="btn-row"><button class="btn btn-primary" onclick="addSkill()">確認新增</button></div>`;
   document.getElementById('modalOverlay').classList.add('open');
 }
@@ -586,7 +586,7 @@ async function selectPlayer(name){
     const alignColor=alignment>=600?'var(--green)':alignment>=400?'var(--muted)':'var(--red)';
 
     let html=`<h3>${esc(p.name)}</h3>`;
-    html+=`<div class="grid grid-2" style="margin-top:10px">`;
+    html+=`<div class="grid grid-2" style="margin-top:8px">`;
     html+=`<div><label>玩家名稱</label><input id="plName" value="${esc(p.name)}" readonly style="opacity:.6"></div>`;
     html+=`<div><label>所在區域</label><input id="plRegion" value="${esc(region)}"></div>`;
     html+=`</div>`;
@@ -594,14 +594,14 @@ async function selectPlayer(name){
     html+=`<div><label>閱歷</label><input type="number" id="plXp" value="${xp}"></div>`;
     html+=`<div class="stat-bar"><label>善惡</label><input type="range" min="0" max="1000" value="${alignment}" id="plAlign" oninput="this.nextElementSibling.textContent=this.value"><span class="val" style="color:${alignColor}">${alignment} ${alignLabel}</span></div>`;
     html+=`</div>`;
-    html+=`<div class="stat-bar" style="margin-top:10px"><label>道心</label><input type="range" min="0" max="1000" value="${daoxin}" id="plDaoxin" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${daoxin}</span></div>`;
+    html+=`<div class="stat-bar" style="margin-top:8px"><label>道心</label><input type="range" min="0" max="1000" value="${daoxin}" id="plDaoxin" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${daoxin}</span></div>`;
     const martial=save.martial||1,neigong=save.neigong||1,qinggong=save.qinggong||1;
     html+=`<div class="grid grid-3" style="margin-top:8px">`;
     html+=`<div class="stat-bar"><label>武功</label><input type="range" min="1" max="100" value="${martial}" id="plMartial" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${martial}</span></div>`;
     html+=`<div class="stat-bar"><label>內功</label><input type="range" min="1" max="100" value="${neigong}" id="plNeigong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${neigong}</span></div>`;
     html+=`<div class="stat-bar"><label>輕功</label><input type="range" min="1" max="100" value="${qinggong}" id="plQinggong" oninput="this.nextElementSibling.textContent=this.value"><span class="val">${qinggong}</span></div>`;
     html+=`</div>`;
-    html+=`<div style="margin-top:10px"><label>已學技能 (${playerSkills.length})</label>`;
+    html+=`<div style="margin-top:8px"><label>已學技能 (${playerSkills.length})</label>`;
     if(playerSkills.length){
       html+=playerSkills.map(s=>{
         const sk=skills.find(x=>x.key===s.skill_key);
@@ -615,7 +615,7 @@ async function selectPlayer(name){
     // Affinity list
     const affKeys=Object.keys(aff);
     if(affKeys.length){
-      html+=`<div style="margin-top:10px"><label>好感度</label>`;
+      html+=`<div style="margin-top:8px"><label>好感度</label>`;
       html+=affKeys.map(k=>{
         const npc=npcs.find(n=>n.key===k);
         const npcName=npc?npc.name:k;
