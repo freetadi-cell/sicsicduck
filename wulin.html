@@ -461,8 +461,10 @@ function act(key,type){
     const na=n.alignment||500;
     const pps=(p.martial||1)*0.5+(p.neigong||1)*0.3+(p.qinggong||1)*0.2;
     const nps=(n.martial||50)*0.5+(n.neigong||50)*0.3+(n.qinggong||50)*0.2;
+    console.log(`[切磋] ${n.name}: NPC戰力=${nps.toFixed(1)} vs 玩家戰力=${pps.toFixed(1)} (武${p.martial||1}/內${p.neigong||1}/輕${p.qinggong||1})`);
     const ratio=nps>=2*pps?0:Math.max(0,Math.min(1,pps/nps));
     const winRate=ratio===0?0:Math.max(0,Math.min(0.80,0.50+(ratio-1.0)*0.60));
+    console.log(`[切磋] ratio=${ratio.toFixed(3)}, winRate=${(winRate*100).toFixed(1)}%`);
     const win=Math.random()<winRate;
     const pd=Math.abs(nps-pps);
     p.xp+=win?5:3;savePlayer(p);pushDlg('（你抱拳：請指教！）',true);
