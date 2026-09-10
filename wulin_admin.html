@@ -608,10 +608,22 @@ async function selectPlayer(name){
         const skName=sk?sk.name:s.skill_key;
         const skType=sk?sk.type:'';
         const eq=s.equipped?' ⚡裝備中':'';
-        return `<div class="skill-row"><span class="tag ${TYPE_CSS[skType]||''}">${TYPE_LABEL[skType]||skType}</span><span class="sk-name">${esc(skName)}${eq}</span></div>`;
+        return `<div class="skill-row"><span class="tag ${TYPE_CSS[skType]||''}">${TYPE_LABEL[skType]||skType}</span><span class="sk-name">${esc(skName)}${eq}</span><button class="btn btn-sm btn-danger" onclick="removePlayerSkill('${esc(p.name)}','${esc(s.skill_key)}')">✕</button></div>`;
       }).join('');
     }else{html+=`<div style="font-size:12px;color:var(--muted);padding:6px 0">尚無技能</div>`}
     html+=`</div>`;
+    // Add skill section
+    const assignedKeys=new Set(playerSkills.map(s=>s.skill_key));
+    const unassigned=skills.filter(s=>!assignedKeys.has(s.key));
+    html+=`<div style="margin-top:12px"><label>添加技能</label></div>`;
+    if(unassigned.length){
+      html+=`<div style="display:flex;gap:8px;align-items:center;margin-top:4px"><select id="plSkillSelect" style="flex:1">`;
+      html+=`<option value="">— 選擇技能 —</option>`;
+      for(const s of unassigned){
+        html+=`<option value="${esc(s.key)}">${esc(s.name)} (${TYPE_LABEL[s.type]||s.type}, ⚡${s.power})</option>`;
+      }
+      html+=`</select><button class="btn btn-primary btn-sm" onclick="addPlayerSkill('${esc(p.name)}')">➕ 添加</button></div>`;
+    }else{html+=`<div style="font-size:12px;color:var(--muted);padding:6px 0">所有技能已學會</div>`}
     // Affinity list
     const affKeys=Object.keys(aff);
     if(affKeys.length){
@@ -667,6 +679,26 @@ async function deletePlayerConfirm(){
     renderPlayerList(document.getElementById('playerSearch').value);
     renderWorldInfo();
     toast('✅ 玩家已刪除');
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+async function addPlayerSkill(playerName){
+  const sel=document.getElementById('plSkillSelect');
+  const skillKey=sel.value;
+  if(!skillKey){toast('請選擇技能',false);return}
+  try{
+    await apiPost(`${SUPABASE_URL}/rest/v1/player_skills`,{player_name:playerName,skill_key:skillKey,equipped:false});
+    toast('✅ 已添加');
+    selectPlayer(playerName);
+  }catch(e){toast('❌ '+e.message,false)}
+}
+
+async function removePlayerSkill(playerName,skillKey){
+  if(!confirm('確定移除？'))return
+  try{
+    await apiDelete(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(playerName)}&skill_key=eq.${encodeURIComponent(skillKey)}`);
+    toast('✅ 已移除');
+    selectPlayer(playerName);
   }catch(e){toast('❌ '+e.message,false)}
 }
 
