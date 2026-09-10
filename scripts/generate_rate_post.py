@@ -196,10 +196,10 @@ def generate_post(data):
 
 
 def send_telegram(message):
-    """Send message via openclaw CLI."""
+    """Send message via Hermes CLI."""
     try:
         result = subprocess.run(
-            ["openclaw", "message", "send", "--channel", "telegram", "-t", "telegram:885017126", "-m", message],
+            ["hermes", "send", "--channel", "telegram", "-m", message],
             capture_output=True, text=True, timeout=30
         )
         if result.returncode != 0:

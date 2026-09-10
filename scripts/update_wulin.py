@@ -25,7 +25,7 @@ ROOT = SCRIPT_DIR.parent
 WORLD_FILE = ROOT / "data" / "wulin_world.json"
 
 OPENCLAW_CFG = Path("/home/freet/.openclaw/openclaw.json")
-API_BASE = "https://yuanyuaicloud.cn/v1"
+API_BASE = os.environ.get("YUANYUAI_BASE_URL", "https://yuanyuaicloud.cn/v1")
 API_MODEL = "kimi-k3"
 
 # Season cycle: 春→夏→秋→冬 (60 days each)
@@ -34,6 +34,10 @@ SEASON_LEN = 60
 
 
 def get_api_key():
+    # 優先用環境變量，fallback 到 openclaw.json
+    key = os.environ.get("YUANYUAI_API_KEY")
+    if key:
+        return key
     with open(OPENCLAW_CFG, encoding="utf-8") as f:
         cfg = json.load(f)
     return cfg["models"]["providers"]["yuanyuai"]["apiKey"]

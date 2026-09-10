@@ -34,3 +34,4 @@ docs/
 !.dev.vars.example
 .env*
 !.env.example
+.env

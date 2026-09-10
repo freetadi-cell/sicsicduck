@@ -2,23 +2,14 @@
 # 新聞更新腳本：抓取 → 選篇 → 摘要 → 建頁 → 推送
 export PATH="/home/freet/.nvm/versions/node/v24.18.0/bin:$PATH"
 cd /home/freet/.openclaw/workspace/sicsicduck
+[ -f .env ] && export $(grep -v '^#' .env | xargs)
 
 PUSH_TIMEOUT=60
 PUSH_RETRIES=3
 
-# 通知頻率控制
-NOTIFY_HOURS=(8 12 17 22)
-NOTIFY_NOW=$(date '+%H')
-NOTIFY_YES=0
-for h in "${NOTIFY_HOURS[@]}"; do
-  if [ "$NOTIFY_NOW" -eq "$h" ]; then NOTIFY_YES=1; break; fi
-  if [ "$NOTIFY_NOW" -eq "$(printf '%d' "$h")" ]; then NOTIFY_YES=1; break; fi
-done
-export SIC_NEWS_NOTIFY="$NOTIFY_YES"
-
 # 1) 抓取新聞（fetch + dedup + value filter → news.json）
 if ! python3 scripts/fetch_news.py >> /tmp/sicsicduck-news.log 2>&1; then
-  openclaw message send --channel telegram -t telegram:885017126 -m "❌ 新聞抓取失敗，請檢查 /tmp/sicsicduck-news.log" 2>/dev/null
+  echo "❌ 新聞抓取失敗，請檢查 /tmp/sicsicduck-news.log"
   exit 1
 fi
 
@@ -38,11 +29,7 @@ fi
 # 5) 提交變更
 git add -A
 if git diff --staged --quiet; then
-  if [ "$SIC_NEWS_NOTIFY" -eq 1 ]; then
-    openclaw message send --channel telegram -t telegram:885017126 -m "✅ 新聞更新：無新變更" 2>/dev/null
-  else
-    echo "[cron_news] 非通知時段，無新變更" >> /tmp/sicsicduck-news.log
-  fi
+  echo "✅ 新聞更新：無新變更"
   exit 0
 fi
 git commit -m "Auto: news update $(date '+%Y-%m-%d %H:%M')" >> /tmp/sicsicduck-news.log 2>&1
@@ -57,12 +44,10 @@ for i in $(seq 1 $PUSH_RETRIES); do
   sleep 5
 done
 
-# 7) 通知
+# 7) 結果
 if [ "$push_ok" -eq 1 ]; then
-  if [ "$SIC_NEWS_NOTIFY" -eq 1 ]; then
-    openclaw message send --channel telegram -t telegram:885017126 -m "📰 新聞更新完成 ✅" 2>/dev/null
-  fi
+  echo "📰 新聞更新完成 ✅"
 else
-  openclaw message send --channel telegram -t telegram:885017126 -m "❌ 新聞推送失敗（重試 ${PUSH_RETRIES} 次），請檢查 /tmp/sicsicduck-news.log" 2>/dev/null
+  echo "❌ 新聞推送失敗（重試 ${PUSH_RETRIES} 次），請檢查 /tmp/sicsicduck-news.log"
   exit 1
 fi
