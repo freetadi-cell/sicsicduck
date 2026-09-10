@@ -13,9 +13,12 @@ Day number 由 code 自動計算，唔信 AI 輸出，確保每日只 +1。
     ./venv/bin/python3 scripts/update_wulin.py --dry    # 只顯示 delta 唔寫檔
 """
 import json
+import os
 import re
 import subprocess
 import sys
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime
 from pathlib import Path
@@ -57,9 +60,19 @@ def call_kimi(api_key, sys_prompt, user_prompt, max_tokens=4000):
         f"{API_BASE}/chat/completions", data=payload,
         headers={"Content-Type": "application/json",
                  "Authorization": f"Bearer {api_key}"})
-    with urllib.request.urlopen(req, timeout=360) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-    return data["choices"][0]["message"]["content"].strip()
+    try:
+        with urllib.request.urlopen(req, timeout=360) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"HTTP {e.code}: {body[:200]}") from e
+    if "error" in data:
+        raise RuntimeError(f"API error: {data['error']}")
+    # Handle both standard {"choices": [...]} and {"data": {"choices": [...]}} formats
+    choices = data.get("choices") or (data.get("data", {}).get("choices") if isinstance(data.get("data"), dict) else None)
+    if not choices:
+        raise RuntimeError(f"Unexpected response (no choices): {json.dumps(data)[:300]}")
+    return choices[0]["message"]["content"].strip()
 
 
 SYS_PROMPT = """你係金庸《神鵰俠侶》世界嘅「天命」——負責推進江湖一日嘅敘事者。
@@ -237,6 +250,8 @@ def main():
             if attempt == 3:
                 print("❌ 三次嘗試都失敗，今輪唔推進（世界保持原狀）")
                 sys.exit(1)
+            print(f"  等 {attempt * 10}s 再試...")
+            time.sleep(attempt * 10)
 
     world = apply_delta(world, delta, new_day)
     print(f"✅ 推進至：{world['meta'].get('world_time')}")
