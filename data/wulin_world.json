@@ -100,9 +100,9 @@
         "liguomochou": "不共戴天",
         "zhoubotong": 52
       },
-      "martial": 94,
-      "neigong": 85,
-      "qinggong": 90
+      "martial": 100,
+      "neigong": 98,
+      "qinggong": 100
     },
     {
       "key": "xiaolongnu",
@@ -144,9 +144,9 @@
         "sunbubo": "師姐",
         "liguomochou": "同門冤家"
       },
-      "martial": 80,
-      "neigong": 82,
-      "qinggong": 95
+      "martial": 98,
+      "neigong": 100,
+      "qinggong": 100
     },
     {
       "key": "guojing",
@@ -189,9 +189,9 @@
         "yelvqi": "死敵",
         "huangyingshi": "故交"
       },
-      "martial": 92,
-      "neigong": 90,
-      "qinggong": 70,
+      "martial": 100,
+      "neigong": 100,
+      "qinggong": 92,
       "daoxin": 500
     },
     {
@@ -236,9 +236,9 @@
         "luwushuang": "晚輩",
         "yelvqi": 53
       },
-      "martial": 78,
-      "neigong": 72,
-      "qinggong": 82
+      "martial": 100,
+      "neigong": 100,
+      "qinggong": 93
     },
     {
       "key": "liguomochou",
@@ -283,8 +283,8 @@
         "yangguo": 46
       },
       "martial": 75,
-      "neigong": 70,
-      "qinggong": 88
+      "neigong": 68,
+      "qinggong": 95
     },
     {
       "key": "luwushuang",
@@ -326,9 +326,9 @@
         "liguomochou": "不共戴天",
         "xiaolongnu": "同門"
       },
-      "martial": 45,
-      "neigong": 40,
-      "qinggong": 50
+      "martial": 72,
+      "neigong": 74,
+      "qinggong": 60
     },
     {
       "key": "chengying",
@@ -371,9 +371,9 @@
         "huangyingshi": "師父",
         "liguomochou": 47
       },
-      "martial": 50,
-      "neigong": 45,
-      "qinggong": 55
+      "martial": 96,
+      "neigong": 68,
+      "qinggong": 78
     },
     {
       "key": "gongsunzhi",
@@ -416,9 +416,9 @@
         "liguomochou": "互相利用",
         "zhoubotong": 48
       },
-      "martial": 72,
-      "neigong": 68,
-      "qinggong": 70
+      "martial": 77,
+      "neigong": 70,
+      "qinggong": 60
     },
     {
       "key": "zhoubotong",
@@ -428,7 +428,7 @@
       "location": "活死人墓外",
       "mood": "兴奋，认真",
       "attitude": "戏耍公孫止，守护暗室",
-      "alignment": 550,
+      "alignment": 600,
       "affinity": 0,
       "dialogue": [
         "哈哈，公孫止，你这毒物还想跟我玩？",
@@ -461,9 +461,9 @@
         "yelvqi": "宿敵",
         "gongsunzhi": 49
       },
-      "martial": 95,
-      "neigong": 88,
-      "qinggong": 85
+      "martial": 100,
+      "neigong": 100,
+      "qinggong": 100
     },
     {
       "key": "yelvqi",
@@ -507,7 +507,7 @@
       },
       "martial": 70,
       "neigong": 65,
-      "qinggong": 72
+      "qinggong": 70
     },
     {
       "key": "testren",
@@ -519,9 +519,9 @@
       "attitude": "友善隨和",
       "alignment": 500,
       "affinity": 50,
-      "martial": 78,
-      "neigong": 47,
-      "qinggong": 32,
+      "martial": 76,
+      "neigong": 95,
+      "qinggong": 65,
       "dialogue": [
         "襄阳城打得真凶，郭大侠辛苦了。",
         "古墓那边好像有打架声，不知是誰。",
