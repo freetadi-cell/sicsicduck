@@ -459,7 +459,14 @@ function act(key,type){
   }else if(type==='spar'){
     if(p.spoke[key+'#spar']===worldDay)return;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
     const na=n.alignment||500;
-    const pps=(p.martial||1)*0.5+(p.neigong||1)*0.3+(p.qinggong||1)*0.2;
+    // 計算玩家戰力：從裝備嘅技能 power 計算
+    const equipped=_playerSkillsCache.filter(s=>s.equipped);
+    let pm=0,pn=0,pq=0,ec=0;
+    for(const eq of equipped){const si=getSkillInfo(eq.skill_key);if(!si)continue;
+      if(si.type==='martial'){pm=Math.max(pm,si.power);ec++}
+      else if(si.type==='neigong'){pn=Math.max(pn,si.power);ec++}
+      else if(si.type==='qinggong'){pq=Math.max(pq,si.power);ec++}}
+    const pps=ec>0?(pm*0.5+pn*0.3+pq*0.2):1;
     const nps=(n.martial||50)*0.5+(n.neigong||50)*0.3+(n.qinggong||50)*0.2;
     const ratio=nps>=2*pps?0:Math.max(0,Math.min(1,pps/nps));
     const winRate=ratio===0?0:Math.max(0,Math.min(0.80,0.50+(ratio-1.0)*0.60));
