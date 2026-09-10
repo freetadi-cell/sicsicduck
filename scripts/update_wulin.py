@@ -209,8 +209,14 @@ def apply_delta(world, delta, new_day):
 
 
 def git_push():
+    # Stash any dirty changes before pull
+    subprocess.run(["git", "stash"], cwd=ROOT,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    subprocess.run(["git", "pull", "--rebase", "origin", "master"], cwd=ROOT,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    subprocess.run(["git", "stash", "pop"], cwd=ROOT,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     for cmd in (
-        ["git", "pull", "--rebase", "origin", "master"],
         ["git", "add", "data/wulin_world.json"],
         ["git", "commit", "-m",
          f"Wulin: world advances to {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
