@@ -156,7 +156,7 @@
       "location": "大帥帳中",
       "mood": "浴血後稍見振奮",
       "attitude": "乘勝整軍，準備迎接下一輪猛攻",
-      "alignment": 740,
+      "alignment": 866,
       "affinity": 0,
       "dialogue": [
         "耶律賢侄，你這一把火燒得好，救了城中無數百姓。",
@@ -191,7 +191,8 @@
       },
       "martial": 92,
       "neigong": 90,
-      "qinggong": 70
+      "qinggong": 70,
+      "daoxin": 500
     },
     {
       "key": "huangrong",
