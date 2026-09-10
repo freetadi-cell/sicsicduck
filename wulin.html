@@ -411,7 +411,7 @@ const SPAR_WIN={bigGap:[
 ]};
 
 function pickSparDesc(npcName,powerDiff,win){
-  const tier=powerDiff>30?'bigGap':powerDiff>10?'close':'epic';
+  const tier=powerDiff>40?'bigGap':powerDiff>15?'close':'epic';
   const pool=win?SPAR_WIN[tier]:SPAR_LOSE[tier];
   return pool[Math.floor(Math.random()*pool.length)].replace(/\$\{n\}/g,npcName);
 }
@@ -458,9 +458,15 @@ function act(key,type){
     setTimeout(async()=>{const na=n.alignment||500,diff=alignDiff(playerAlign(),na),a=aff(key);const r=pickGiftDesc(n.name,a,diff);pushDlg(r.text,false);if(!r.accepted){toast(`${n.name} 拒絕了禮物`);savePlayer(p);return}bumpAff(key,r.affDelta);let giftMsg=`贈禮 · 好感 +${r.affDelta}`;if(na>playerAlign())setPlayerAlign(1);else if(na<playerAlign())setPlayerAlign(-1);if(diff<5&&a>50){const npcRows=await loadNpcSkills(key);const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(teachable.length>0&&Math.random()<0.3){const taught=teachable[Math.floor(Math.random()*teachable.length)];await playerLearnSkill(p.name,taught);const si=getSkillInfo(taught);giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg')}};toast(giftMsg)},400)
   }else if(type==='spar'){
     if(p.spoke[key+'#spar']===worldDay)return;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
-    const a=aff(key),na=n.alignment||500,win=Math.random()<(0.35+a/200);
+    const na=n.alignment||500;
+    const pps=(p.martial||1)*0.5+(p.neigong||1)*0.3+(p.qinggong||1)*0.2;
+    const nps=(n.martial||50)*0.5+(n.neigong||50)*0.3+(n.qinggong||50)*0.2;
+    const ratio=nps>=2*pps?0:Math.max(0,Math.min(1,pps/nps));
+    const winRate=ratio===0?0:Math.max(0,Math.min(0.80,0.50+(ratio-1.0)*0.60));
+    const win=Math.random()<winRate;
+    const pd=Math.abs(nps-pps);
     p.xp+=win?5:3;savePlayer(p);pushDlg('（你抱拳：請指教！）',true);
-    setTimeout(async()=>{const pd=Math.abs((n.martial||50)-50);if(win){pushDlg(pickSparDesc(n.name,pd,true),false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg(pickSparDesc(n.name,pd,false),false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
+    setTimeout(async()=>{if(win){pushDlg(pickSparDesc(n.name,pd,true),false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg(pickSparDesc(n.name,pd,false),false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
   }
 }
 
