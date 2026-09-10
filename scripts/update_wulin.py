@@ -61,7 +61,7 @@ def call_kimi(api_key, sys_prompt, user_prompt, max_tokens=4000):
         headers={"Content-Type": "application/json",
                  "Authorization": f"Bearer {api_key}"})
     try:
-        with urllib.request.urlopen(req, timeout=360) as resp:
+        with urllib.request.urlopen(req, timeout=540) as resp:
             data = json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
