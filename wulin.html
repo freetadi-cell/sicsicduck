@@ -18,20 +18,24 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .wulin-logo{height:100px;width:auto;object-fit:contain;display:block;margin:0 auto 12px}
 .hero-sub{color:var(--muted);font-size:12px;letter-spacing:3px;margin-top:4px}
 .hero-line{width:40px;height:1px;background:var(--gold);margin:16px auto;opacity:.35}
-.worldbar{background:var(--card);border-bottom:1px solid var(--border);padding:0}
-.wb-row{display:flex;flex-direction:column;gap:6px;padding:12px 20px}
-.wb-top{display:flex;align-items:center;justify-content:space-between}
-.wb-date{font-size:13px;color:var(--muted);white-space:nowrap}
+.worldbar{background:var(--card);border-bottom:1px solid var(--border);padding:14px 20px}
+.wb-date{font-size:15px;color:var(--muted);margin-bottom:4px}
 .wb-date b{color:var(--gold)}
-.wb-player{display:flex;align-items:center;gap:6px;font-size:13px;flex-wrap:wrap}
-.wb-name{font-weight:700;color:var(--text);font-size:14px}
+.wb-name{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px;margin-bottom:2px}
+.wb-align{font-size:11px;margin-bottom:6px}
+.wb-align.good{color:var(--green)}
+.wb-align.neutral{color:var(--muted)}
+.wb-align.evil{color:var(--red)}
+.wb-align .align-bar{display:inline-block;width:50px;height:5px;background:var(--bg2);border-radius:3px;margin-left:6px;vertical-align:middle;overflow:hidden}
+.wb-align .align-bar i{display:block;height:100%;border-radius:3px;transition:width .4s}
+.wb-align .align-bar i.good{background:var(--green)}
+.wb-align .align-bar i.neutral{background:var(--muted)}
+.wb-align .align-bar i.evil{background:var(--red)}
+.wb-xp{font-size:13px;color:var(--muted);margin-bottom:6px}
 .wb-xp b{color:var(--gold)}
-.wb-sep{color:var(--border);margin:0 2px}
-.wb-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.wb-logout{color:var(--muted);font-size:12px;text-decoration:none;white-space:nowrap}
-.wb-logout:hover{color:var(--gold)}
-.logout-fixed{position:fixed;top:14px;right:16px;z-index:50;color:var(--muted);font-size:12px;text-decoration:none;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:5px 12px;transition:.2s}
-.logout-fixed:hover{color:var(--gold);border-color:var(--gold2)}
+.wb-skills{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.wb-logout{position:fixed;top:14px;right:16px;z-index:50;color:var(--muted);font-size:12px;text-decoration:none;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:5px 12px;transition:.2s}
+.wb-logout:hover{color:var(--gold);border-color:var(--gold2)}
 .chip{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:12px}
 .chip b{color:var(--gold);font-weight:600}
 .chip a{color:var(--muted);font-size:12px;text-decoration:none;margin-left:6px}
@@ -174,28 +178,11 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="hero-line"></div>
   </div>
   <div class="worldbar">
-    <div class="wb-row">
-      <div class="wb-top">
-        <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
-      </div>
-      <div class="wb-player">
-        <span class="wb-name" id="playerName">…</span>
-        <span class="wb-sep">·</span>
-        <span class="wb-xp">⚡<b id="playerXp">0</b></span>
-        <span class="wb-sep">·</span>
-        <span id="playerRegionText">📍 –</span>
-      </div>
-      <div class="wb-right">
-        <div class="chip" id="playerAlignChip" style="display:none">
-          <span id="playerAlignLabel">中立</span>
-          <span class="align-bar"><i id="playerAlignBar"></i></span>
-          <b id="playerAlignNum">500</b>
-        </div>
-        <div class="chip" id="playerSkillsChip" style="cursor:pointer" onclick="openSkillPanel()">
-          ⚔️ <span id="playerSkillsText">載入中…</span>
-        </div>
-      </div>
-    </div>
+    <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
+    <div class="wb-name" id="playerName">…</div>
+    <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <span class="align-bar"><i id="playerAlignBarI"></i></span> <b id="playerAlignNum2">500</b></div>
+    <div class="wb-xp">⚡ 閱歷 <b id="playerXp">0</b>　📍 <span id="playerRegionText">–</span></div>
+    <div class="wb-skills" id="playerSkillsText">載入中…</div>
   </div>
   <h2 id="travelTitle" style="display:none">行走江湖</h2>
   <div class="region-panel" id="regionPanel" style="display:none"></div>
@@ -263,8 +250,8 @@ function getPlayerAllSkills(name){return _playerSkillsCache.map(s=>{const i=getS
 function renderPlayerHeaderSkills(){
   const p=player();if(!p){$('playerSkillsText').textContent='—';return}
   const eq=getPlayerEquippedSkills(p.name);
-  if(eq.length===0){$('playerSkillsText').textContent='未裝備技能';return}
-  $('playerSkillsText').innerHTML=eq.map(s=>renderSkillTag(s,true)).join(' ');
+  if(eq.length===0){$('playerSkillsText').innerHTML='⚔️ <span style=\"color:var(--muted)\">未裝備技能</span>';return}
+  $('playerSkillsText').innerHTML='⚔️ '+eq.map(s=>renderSkillTag(s,true)).join(' ');
 }
 
 /* ===== Account system (Supabase) ===== */
@@ -347,7 +334,7 @@ function alignLabelShort(a){if(a>=650)return'正派';if(a>=450)return'中立';re
 function alignCss(a){return a>=600?'good':a>=400?'neutral':'evil'}
 function alignBarPct(a){return Math.round(a/10)}
 function setPlayerAlign(d){const p=player();if(!p)return;p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+d)));savePlayer(p);renderPlayerBar()}
-function renderPlayerBar(){const a=playerAlign(),bar=$('playerAlignBar'),lbl=$('playerAlignLabel'),num=$('playerAlignNum');if(bar){bar.style.width=alignBarPct(a)+'%';bar.className=alignCss(a)}if(lbl)lbl.textContent=alignLabel(a);if(num)num.textContent=a}
+function renderPlayerBar(){const a=playerAlign(),bar=$('playerAlignBarI'),lbl=$('playerAlignLabel2'),num=$('playerAlignNum2'),wrap=$('playerAlignBar2');if(wrap){wrap.className='wb-align '+alignCss(a)}if(bar){bar.style.width=alignBarPct(a)+'%';bar.className=alignCss(a)}if(lbl)lbl.textContent=alignLabel(a);if(num)num.textContent=a}
 function alignDiff(pk,nk){return Math.abs(pk-nk)}
 function aff(key){const p=player(),n=world.npcs.find(x=>x.key===key);if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0}
 function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
@@ -380,7 +367,7 @@ async function load(){
   startTravelTimer();render();
 }
 function renderGuest(){$('worldTime').textContent=world.meta.world_time||'—';$('playerName').textContent='—';$('playerXp').textContent='—';$('playerRegionText').textContent='📍 –';$('events').innerHTML=(world.events||[]).slice(-6).map(e=>`<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');$('regionPanel').style.display='none';$('travelTitle').style.display='none';renderNpcs(null)}
-function render(){$('worldTime').textContent=world.meta.world_time||'—';const p=player();if(!p){renderGuest();return}$('playerName').textContent=p.name;$('playerXp').textContent=p.xp;$('playerRegionText').textContent='📍 '+(p.region||'襄陽城');renderPlayerHeaderSkills();$('playerAlignChip').style.display='';renderPlayerBar();$('events').innerHTML=(world.events||[]).slice(-6).map(e=>`<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');renderRegionPanel();renderNpcs(p)}
+function render(){$('worldTime').textContent=world.meta.world_time||'—';const p=player();if(!p){renderGuest();return}$('playerName').textContent=p.name;$('playerXp').textContent=p.xp;$('playerRegionText').textContent=p.region||'襄陽城';renderPlayerHeaderSkills();renderPlayerBar();$('events').innerHTML=(world.events||[]).slice(-6).map(e=>`<li><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');renderRegionPanel();renderNpcs(p)}
 function renderNpcs(p){const p2=p||player();if(!p2){renderNpcGrid(world.npcs);return}const cur=playerRegion(),cd=playerCooldown();const local=world.npcs.filter(n=>n.region===cur);$('regionTag').textContent=cd?`(冷卻中)`:`(在 ${esc(cur)})`;if(cd){$('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正在趕路，到達後才能與 NPC 互動</div>`;return}renderNpcGrid(local)}
 function renderNpcGrid(npcs){const p=player(),pa=playerAlign();$('npcGrid').innerHTML=npcs.map(n=>{const a=aff(n.key),al=n.alignment||500,diff=alignDiff(pa,al),ac=alignCss(al);return`<div class="npc" onclick="openNpc('${n.key}')"><div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div><div class="alabel ${ac}">${alignLabelShort(al)} · ${al}</div><div class="mood">心境：${esc(n.mood||'')}</div><div class="att">${esc(n.attitude||'')}</div><div class="skill-list" id="npcSkills_${n.key}">載入中…</div><div class="affbar"><i style="width:${a}%"></i></div><div class="affnum">好感 ${a}${diff>300?' · <span style="color:var(--red)">道不同</span>':''}</div></div>`}).join('');npcs.forEach(async n=>{const rows=await loadNpcSkills(n.key);const skills=rows.map(r=>getSkillInfo(r.skill_key)).filter(Boolean);const el=document.getElementById('npcSkills_'+n.key);if(el)el.innerHTML=skills.map(s=>renderSkillTag(s,false)).join('')})}
 
