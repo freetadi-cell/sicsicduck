@@ -19,7 +19,8 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .hero-sub{color:var(--muted);font-size:12px;letter-spacing:3px;margin-top:4px}
 .hero-line{width:40px;height:1px;background:var(--gold);margin:16px auto;opacity:.35}
 .worldbar{background:var(--card);border-bottom:1px solid var(--border);padding:0}
-.wb-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;flex-wrap:wrap}
+.wb-row{display:flex;flex-direction:column;gap:6px;padding:12px 20px}
+.wb-top{display:flex;align-items:center;justify-content:space-between}
 .wb-date{font-size:13px;color:var(--muted);white-space:nowrap}
 .wb-date b{color:var(--gold)}
 .wb-player{display:flex;align-items:center;gap:6px;font-size:13px;flex-wrap:wrap}
@@ -171,7 +172,10 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   </div>
   <div class="worldbar">
     <div class="wb-row">
-      <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
+      <div class="wb-top">
+        <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
+        <a href="#" class="wb-logout" onclick="logout();return false">登出</a>
+      </div>
       <div class="wb-player">
         <span class="wb-name" id="playerName">…</span>
         <span class="wb-sep">·</span>
@@ -188,7 +192,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
         <div class="chip" id="playerSkillsChip" style="cursor:pointer" onclick="openSkillPanel()">
           ⚔️ <span id="playerSkillsText">載入中…</span>
         </div>
-        <a href="#" class="wb-logout" onclick="logout();return false">登出</a>
       </div>
     </div>
   </div>
