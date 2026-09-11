@@ -21,7 +21,8 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .worldbar{background:var(--card);border-bottom:1px solid var(--border);padding:14px 20px}
 .wb-date{font-size:15px;color:var(--muted);margin-bottom:4px}
 .wb-date b{color:var(--gold)}
-.wb-name{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px;margin-bottom:2px}
+.wb-name-row{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
+.wb-name{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px}
 .wb-align{font-size:11px;margin-bottom:6px}
 .wb-align.good{color:var(--green)}
 .wb-align.neutral{color:var(--muted)}
@@ -34,8 +35,8 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .wb-xp{font-size:13px;color:var(--muted);margin-bottom:6px}
 .wb-xp b{color:var(--gold)}
 .wb-skills{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
-.wb-logout{position:fixed;top:14px;right:16px;z-index:50;color:var(--muted);font-size:12px;text-decoration:none;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:5px 12px;transition:.2s}
-.wb-logout:hover{color:var(--gold);border-color:var(--gold2)}
+.wb-logout{color:var(--muted);font-size:11px;text-decoration:none;font-weight:normal;letter-spacing:0;margin-left:6px;opacity:.7;transition:.2s}
+.wb-logout:hover{color:var(--gold);opacity:1}
 .chip{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:12px}
 .chip b{color:var(--gold);font-weight:600}
 .chip a{color:var(--muted);font-size:12px;text-decoration:none;margin-left:6px}
@@ -179,7 +180,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   </div>
   <div class="worldbar">
     <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
-    <div class="wb-name" id="playerName">…</div>
+    <div class="wb-name-row"><span class="wb-name" id="playerName">…</span><a href="#" class="wb-logout" onclick="logout();return false">登出</a></div>
     <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <span class="align-bar"><i id="playerAlignBarI"></i></span> <b id="playerAlignNum2">500</b></div>
     <div class="wb-xp">⚡ 閱歷 <b id="playerXp">0</b>　📍 <span id="playerRegionText">–</span></div>
     <div class="wb-skills" id="playerSkillsText">載入中…</div>
