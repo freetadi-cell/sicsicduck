@@ -134,7 +134,15 @@ def main():
         print(f"[select_top] DRY-RUN，唔寫檔（{len(pinned)} 置頂 + {len(rest)} 其餘）")
         return
 
-    # 置頂放最前，其餘保持原序
+    # 置頂放最前（按分數排序），其餘按日期+重要性排序
+    def article_sort_key(a):
+        pub = a.get("pubDate", "") or a.get("fetched_at", "") or ""
+        score = a.get("_score", 0)
+        return (pub[:10], score)  # 日期降序 + 分數降序
+
+    pinned.sort(key=lambda a: -(a.get("_score", 0)))
+    rest.sort(key=article_sort_key, reverse=True)
+
     all_articles = pinned + rest
 
     # 清走 _score
