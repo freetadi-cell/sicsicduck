@@ -246,7 +246,7 @@ function renderPlayerHeaderSkills(){
   const p=player();if(!p){$('playerSkillsText').textContent='—';return}
   const eq=getPlayerEquippedSkills(p.name);
   if(eq.length===0){$('playerSkillsText').innerHTML='<span style=\"color:var(--muted)\">未裝備技能</span>';return}
-  $('playerSkillsText').innerHTML=eq.map(s=>renderSkillTag(s,true)).join(' ');
+  $('playerSkillsText').innerHTML=eq.map(s=>renderSkillTag(s,false)).join(' ');
 }
 
 /* ===== Account system (Supabase) ===== */
