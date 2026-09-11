@@ -30,6 +30,8 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .wb-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .wb-logout{color:var(--muted);font-size:12px;text-decoration:none;white-space:nowrap}
 .wb-logout:hover{color:var(--gold)}
+.logout-fixed{position:fixed;top:14px;right:16px;z-index:50;color:var(--muted);font-size:12px;text-decoration:none;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:5px 12px;transition:.2s}
+.logout-fixed:hover{color:var(--gold);border-color:var(--gold2)}
 .chip{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:12px}
 .chip b{color:var(--gold);font-weight:600}
 .chip a{color:var(--muted);font-size:12px;text-decoration:none;margin-left:6px}
@@ -163,6 +165,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
 </style>
 </head>
 <body>
+<a href="#" class="logout-fixed" onclick="logout();return false">登出</a>
 <div class="wrap">
   <div class="hero">
     <div class="hero-badge">WULIN PROJECT · 神鵰世界</div>
@@ -174,7 +177,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="wb-row">
       <div class="wb-top">
         <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
-        <a href="#" class="wb-logout" onclick="logout();return false">登出</a>
       </div>
       <div class="wb-player">
         <span class="wb-name" id="playerName">…</span>
