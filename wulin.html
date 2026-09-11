@@ -29,7 +29,6 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .wb-align.evil{color:var(--red)}
 .wb-xp{font-size:13px;color:var(--muted);margin-bottom:6px}
 .wb-xp b{color:var(--gold)}
-.wb-skills{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
 .wb-logout{color:var(--muted);font-size:11px;text-decoration:none;font-weight:normal;letter-spacing:0;margin-left:6px;opacity:.7;transition:.2s}
 .wb-logout:hover{color:var(--gold);opacity:1}
 .chip{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:12px}
@@ -178,7 +177,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="wb-name-row"><span class="wb-name" id="playerName">…</span><a href="#" class="wb-logout" onclick="logout();return false">登出</a></div>
     <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <b id="playerAlignNum2">500</b></div>
     <div class="wb-xp">閱歷 <b id="playerXp">0</b>　📍 <span id="playerRegionText">–</span></div>
-    <div class="wb-skills" id="playerSkillsText">載入中…</div>
+    <div class="skill-list" id="playerSkillsText">載入中…</div>
   </div>
   <h2 id="travelTitle" style="display:none">行走江湖</h2>
   <div class="region-panel" id="regionPanel" style="display:none"></div>
