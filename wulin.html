@@ -27,11 +27,6 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .wb-align.good{color:var(--green)}
 .wb-align.neutral{color:var(--muted)}
 .wb-align.evil{color:var(--red)}
-.wb-align .align-bar{display:inline-block;width:50px;height:5px;background:var(--bg2);border-radius:3px;margin-left:6px;vertical-align:middle;overflow:hidden}
-.wb-align .align-bar i{display:block;height:100%;border-radius:3px;transition:width .4s}
-.wb-align .align-bar i.good{background:var(--green)}
-.wb-align .align-bar i.neutral{background:var(--muted)}
-.wb-align .align-bar i.evil{background:var(--red)}
 .wb-xp{font-size:13px;color:var(--muted);margin-bottom:6px}
 .wb-xp b{color:var(--gold)}
 .wb-skills{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
@@ -181,8 +176,8 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   <div class="worldbar">
     <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
     <div class="wb-name-row"><span class="wb-name" id="playerName">…</span><a href="#" class="wb-logout" onclick="logout();return false">登出</a></div>
-    <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <span class="align-bar"><i id="playerAlignBarI"></i></span> <b id="playerAlignNum2">500</b></div>
-    <div class="wb-xp">⚡ 閱歷 <b id="playerXp">0</b>　📍 <span id="playerRegionText">–</span></div>
+    <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <b id="playerAlignNum2">500</b></div>
+    <div class="wb-xp">閱歷 <b id="playerXp">0</b>　📍 <span id="playerRegionText">–</span></div>
     <div class="wb-skills" id="playerSkillsText">載入中…</div>
   </div>
   <h2 id="travelTitle" style="display:none">行走江湖</h2>
@@ -251,8 +246,8 @@ function getPlayerAllSkills(name){return _playerSkillsCache.map(s=>{const i=getS
 function renderPlayerHeaderSkills(){
   const p=player();if(!p){$('playerSkillsText').textContent='—';return}
   const eq=getPlayerEquippedSkills(p.name);
-  if(eq.length===0){$('playerSkillsText').innerHTML='⚔️ <span style=\"color:var(--muted)\">未裝備技能</span>';return}
-  $('playerSkillsText').innerHTML='⚔️ '+eq.map(s=>renderSkillTag(s,true)).join(' ');
+  if(eq.length===0){$('playerSkillsText').innerHTML='<span style=\"color:var(--muted)\">未裝備技能</span>';return}
+  $('playerSkillsText').innerHTML=eq.map(s=>renderSkillTag(s,true)).join(' ');
 }
 
 /* ===== Account system (Supabase) ===== */
@@ -335,7 +330,7 @@ function alignLabelShort(a){if(a>=650)return'正派';if(a>=450)return'中立';re
 function alignCss(a){return a>=600?'good':a>=400?'neutral':'evil'}
 function alignBarPct(a){return Math.round(a/10)}
 function setPlayerAlign(d){const p=player();if(!p)return;p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+d)));savePlayer(p);renderPlayerBar()}
-function renderPlayerBar(){const a=playerAlign(),bar=$('playerAlignBarI'),lbl=$('playerAlignLabel2'),num=$('playerAlignNum2'),wrap=$('playerAlignBar2');if(wrap){wrap.className='wb-align '+alignCss(a)}if(bar){bar.style.width=alignBarPct(a)+'%';bar.className=alignCss(a)}if(lbl)lbl.textContent=alignLabel(a);if(num)num.textContent=a}
+function renderPlayerBar(){const a=playerAlign(),lbl=$('playerAlignLabel2'),num=$('playerAlignNum2'),wrap=$('playerAlignBar2');if(wrap){wrap.className='wb-align '+alignCss(a)}if(lbl)lbl.textContent=alignLabel(a);if(num)num.textContent=a}
 function alignDiff(pk,nk){return Math.abs(pk-nk)}
 function aff(key){const p=player(),n=world.npcs.find(x=>x.key===key);if(p&&p.aff[key]!=null)return p.aff[key];return n?(n.affinity||0):0}
 function setAff(key,v){const p=player();if(!p)return;p.aff[key]=Math.max(0,Math.min(100,Math.round(v)));savePlayer(p)}
