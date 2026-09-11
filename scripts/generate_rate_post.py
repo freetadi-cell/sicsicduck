@@ -199,7 +199,7 @@ def send_telegram(message):
     """Send message via Hermes CLI."""
     try:
         result = subprocess.run(
-            ["hermes", "send", "--channel", "telegram", "-m", message],
+            ["hermes", "send", "-t", "telegram", message],
             capture_output=True, text=True, timeout=30
         )
         if result.returncode != 0:
