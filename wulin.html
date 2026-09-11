@@ -48,7 +48,11 @@ h2::after{content:'';display:inline-block;width:30px;height:1px;background:var(-
 .events li:last-child{border-bottom:none}
 .events .tag{color:var(--gold2);font-size:12px;margin-right:8px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
-.npc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;cursor:pointer;transition:.25s;position:relative;overflow:hidden}
+.npc-scroll{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--gold2) var(--bg2)}
+.npc-scroll::-webkit-scrollbar{height:4px}
+.npc-scroll::-webkit-scrollbar-track{background:var(--bg2);border-radius:2px}
+.npc-scroll::-webkit-scrollbar-thumb{background:var(--gold2);border-radius:2px}
+.npc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;cursor:pointer;transition:.25s;position:relative;overflow:hidden;flex:0 0 220px;scroll-snap-align:start}
 .npc:hover{border-color:var(--gold2);background:var(--card2);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
 .npc .nm{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px}
 .npc .tt{font-size:12px;color:var(--gold);margin:2px 0 8px;letter-spacing:1px}
@@ -168,7 +172,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   <h2>江湖大事</h2>
   <div class="events" id="events">載入中…</div>
   <h2>江湖人物<span id="regionTag" style="font-size:12px;color:var(--muted);font-weight:normal;margin-left:12px"></span></h2>
-  <div class="grid" id="npcGrid"></div>
+  <div class="npc-scroll" id="npcGrid"></div>
   <footer>世界由 AI 推進 · 只有同區 NPC 才可以互動 · 本頁為未公開原型</footer>
 </div>
 <div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
