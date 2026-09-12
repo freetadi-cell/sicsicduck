@@ -202,7 +202,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
     <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <b id="playerAlignNum2">500</b></div>
     <div class="wb-xp">閱歷 <b id="playerXp">0</b>　📍 <span id="playerRegionText">–</span></div>
     <div class="skill-row"><div class="skill-list" id="playerSkillsText">載入中…</div><a href="#" class="wb-link" onclick="openSkillPanel();return false">技能設置</a></div>
-    <div id="trainCooldownText"></div>
   </div>
   <h2 id="travelTitle" style="display:none">行走江湖</h2>
   <div class="region-panel" id="regionPanel" style="display:none"></div>
@@ -212,7 +211,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   <div class="npc-scroll" id="npcGrid"></div>
   <footer>世界由 AI 推進 · 只有同區 NPC 才可以互動 · 本頁為未公開原型</footer>
 </div>
-<div class="actmenu" id="actMenu"><div class="mback" onclick="closeActMenu()"></div><div class="mbox"><div class="mtitle">你想要做什麼？</div><div id="actTrainStatus"></div><div class="act-row" onclick="doAction('train')"><div class="act-icon">🧘</div><div class="act-info"><div class="act-name">練功</div><div class="act-desc">修煉裝備中的技能（3小時，熟練度+1）</div></div></div><div class="act-row" onclick="doAction('quest')"><div class="act-icon">📜</div><div class="act-info"><div class="act-name">找尋任務</div><div class="act-desc">在城中尋找可以接下的任務</div></div></div><div class="act-row" onclick="doAction('wander')"><div class="act-icon">🚶</div><div class="act-info"><div class="act-name">到處走走</div><div class="act-desc">在城中隨意走走，也許會有意外收穫</div></div></div></div></div>
+<div class="actmenu" id="actMenu"><div class="mback" onclick="closeActMenu()"></div><div class="mbox"><div class="mtitle">你想要做什麼？</div><div class="act-row" id="actTrainRow" onclick="doAction('train')"><div class="act-icon">🧘</div><div class="act-info" id="actTrainInfo"><div class="act-name">練功</div><div class="act-desc">修煉裝備中的技能（3小時，熟練度+1）</div></div></div><div class="act-row" onclick="doAction('quest')"><div class="act-icon">📜</div><div class="act-info"><div class="act-name">找尋任務</div><div class="act-desc">在城中尋找可以接下的任務</div></div></div><div class="act-row" onclick="doAction('wander')"><div class="act-icon">🚶</div><div class="act-info"><div class="act-name">到處走走</div><div class="act-desc">在城中隨意走走，也許會有意外收穫</div></div></div></div></div>
 <div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
 <div id="auth">
   <div class="acard">
@@ -380,9 +379,8 @@ function selectTravel(el,dest,days){document.querySelectorAll('.tm-row').forEach
 function confirmTravelFromModal(){if(!_selectedDest)return;if(playerCooldown()){toast('你還在趕路，不能再出發');closeModal();return}closeModal();startTravel(_selectedDest,_selectedDays);_selectedDest=null}
 function doTravel(dest,days){if(playerCooldown()){toast('你還在趕路，不能再出發');return}confirmTravel(dest,days)}
 let travelTimer=null;
-function startTravelTimer(){if(travelTimer)clearInterval(travelTimer);travelTimer=setInterval(()=>{finishTravelIfDone();finishTrainIfDone();updateCooldown();updateTrainCooldown()},1000)}
+function startTravelTimer(){if(travelTimer)clearInterval(travelTimer);travelTimer=setInterval(()=>{finishTravelIfDone();finishTrainIfDone();updateCooldown()},1000)}
 function updateCooldown(){const cd=playerCooldown();const el=$('cooldownText');if(!el)return;if(!cd){const reg=$('regionPanel');if(reg&&reg.style.display!=='none')renderRegionPanel();return}const hrs=Math.floor(cd.remainingMs/3600000);const mins=Math.floor((cd.remainingMs%3600000)/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);el.innerHTML=`🚶 你正在趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${hrs}時${String(mins).padStart(2,'0')}分${String(secs).padStart(2,'0')}秒</b>`}
-function updateTrainCooldown(){const cd=playerTrainCooldown();const el=$('trainCooldownText');if(!el)return;if(!cd){el.innerHTML='';return}const hrs=Math.floor(cd.remainingMs/3600000);const mins=Math.floor((cd.remainingMs%3600000)/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);el.innerHTML=`🧘 練功中…… 剩餘 <b>${hrs}時${String(mins).padStart(2,'0')}分${String(secs).padStart(2,'0')}秒</b>`}
 
 /* ===== Load & Render ===== */
 async function load(){
@@ -533,8 +531,9 @@ function act(key,type){
 }
 
 /* ===== Action Menu ===== */
-function openActMenu(){$('actMenu').classList.add('open');const cd=playerTrainCooldown();const el=$('actTrainStatus');if(cd){const hrs=Math.floor(cd.remainingMs/3600000);const mins=Math.floor((cd.remainingMs%3600000)/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);el.innerHTML=`<div style="background:rgba(212,175,55,.1);border:1px solid var(--gold2);border-radius:8px;padding:10px;margin-bottom:12px;font-size:13px;color:var(--gold);text-align:center">🧘 練功中…… 剩餘 ${hrs}時${String(mins).padStart(2,'0')}分${String(secs).padStart(2,'0')}秒</div>`}else{el.innerHTML=''}}
+function openActMenu(){$('actMenu').classList.add('open');updateTrainButton()}
 function closeActMenu(){$('actMenu').classList.remove('open')}
+function updateTrainButton(){const cd=playerTrainCooldown();const info=$('actTrainInfo');const row=$('actTrainRow');if(!info||!row)return;if(cd){const hrs=Math.floor(cd.remainingMs/3600000);const mins=Math.floor((cd.remainingMs%3600000)/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);info.innerHTML=`<div class="act-name" style="color:var(--gold)">🧘 練功中…… ${hrs}時${String(mins).padStart(2,'0')}分${String(secs).padStart(2,'0')}秒</div><div class="act-desc">完成後熟練度 +1</div>`;row.style.pointerEvents='none';row.style.opacity='.6'}else{info.innerHTML=`<div class="act-name">練功</div><div class="act-desc">修煉裝備中的技能（3小時，熟練度+1）</div>`;row.style.pointerEvents='';row.style.opacity='1'}}
 function playerTrainCooldown(){const p=player();if(!p||!p.train)return null;const r=p.train.until-Date.now();return r<=0?null:{remainingMs:r}}
 function finishTrainIfDone(){const p=player();if(!p||!p.train)return;if(Date.now()>=p.train.until){const equipped=_playerSkillsCache.filter(s=>s.equipped);p.train=null;savePlayer(p);(async()=>{for(const eq of equipped){await bumpSkillMastery(p.name,eq.skill_key,1)}p.xp+=1;savePlayer(p);toast('🧘 練功完成 · 閱歷 +1 · 熟練度 +1');renderPlayerHeaderSkills();render()})()}}
 async function doAction(type){
@@ -552,8 +551,6 @@ async function doAction(type){
     toast('到處走走功能即將開放');
   }
 }
-function renderTrainCooldown(){const cd=playerTrainCooldown();if(!cd)return'';const hrs=Math.floor(cd.remainingMs/3600000);const mins=Math.floor((cd.remainingMs%3600000)/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);return`<div style="font-size:12px;color:var(--gold);margin-top:8px">🧘 練功中…… 剩餘 <b>${hrs}時${String(mins).padStart(2,'0')}分${String(secs).padStart(2,'0')}秒</b></div>`}
-
 /* ===== Skill Panel ===== */
 function openSkillPanel(){
   const p=player();if(!p)return;
