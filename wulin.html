@@ -108,6 +108,7 @@ h2::after{content:'';display:inline-block;width:30px;height:1px;background:var(-
 .skillpanel .sk-row:hover{border-color:var(--gold2);background:var(--card2)}
 .skillpanel .sk-row.active{border-color:var(--gold);background:rgba(212,175,55,.08)}
 .skillpanel .sk-row .sk-name{flex:1;font-size:13px}
+.sk-stats{font-size:10px;color:var(--muted);letter-spacing:0}
 .skillpanel .sk-row .sk-rarity{font-size:11px;padding:1px 6px;border-radius:4px}
 .skillpanel .sk-row .sk-equipped{font-size:11px;color:var(--gold);font-weight:600}
 .skillpanel .sk-empty{font-size:12px;color:var(--muted);padding:8px 10px}
@@ -238,16 +239,19 @@ function renderSkillTag(s,eq){return `<span class="skill-tag ${s.type} ${s.rarit
 
 async function loadNpcSkills(npcKey){
   if(_npcSkillsCache[npcKey])return _npcSkillsCache[npcKey];
-  const rows=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=skill_key,proficiency&npc_key=eq.${npcKey}`);
+  const rows=await apiGet(`${SUPABASE_URL}/rest/v1/npc_skills?select=skill_key,proficiency,mastery,combat_exp&npc_key=eq.${npcKey}`);
   _npcSkillsCache[npcKey]=rows;return rows;
 }
 async function loadPlayerSkills(name){
-  _playerSkillsCache=await apiGet(`${SUPABASE_URL}/rest/v1/player_skills?select=skill_key,equipped&player_name=eq.${encodeURIComponent(name)}`);
+  _playerSkillsCache=await apiGet(`${SUPABASE_URL}/rest/v1/player_skills?select=skill_key,equipped,mastery,combat_exp&player_name=eq.${encodeURIComponent(name)}`);
   return _playerSkillsCache;
 }
 async function playerLearnSkill(name,skillKey){
-  return await apiPost(`${SUPABASE_URL}/rest/v1/player_skills`,{player_name:name,skill_key:skillKey,equipped:false});
+  return await apiPost(`${SUPABASE_URL}/rest/v1/player_skills`,{player_name:name,skill_key:skillKey,equipped:false,mastery:0,combat_exp:0});
 }
+function skillActualPower(basePower,mastery,combatExp){return basePower/2+basePower/2*(mastery*2+combatExp)/300}
+async function bumpSkillMastery(name,skillKey,amount){const m=_playerSkillsCache.find(s=>s.skill_key===skillKey);if(!m)return;const nv=Math.min(100,(m.mastery||0)+amount);await apiPatch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(name)}&skill_key=eq.${skillKey}`,{mastery:nv});m.mastery=nv}
+async function bumpSkillCombat(name,skillKey,amount){const m=_playerSkillsCache.find(s=>s.skill_key===skillKey);if(!m)return;const nv=Math.min(100,(m.combat_exp||0)+amount);await apiPatch(`${SUPABASE_URL}/rest/v1/player_skills?player_name=eq.${encodeURIComponent(name)}&skill_key=eq.${skillKey}`,{combat_exp:nv});m.combat_exp=nv}
 async function grantBasicSkills(name){
   for(const sk of BASIC_SKILLS){if(!_playerSkillsCache.some(ps=>ps.skill_key===sk))await playerLearnSkill(name,sk)}
 }
@@ -491,13 +495,14 @@ function act(key,type){
   }else if(type==='spar'){
     if(p.spoke[key+'#spar']===worldDay)return;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
     const na=n.alignment||500;
-    // 計算玩家戰力：從裝備嘅技能 power 計算
+    // 計算玩家戰力：從裝備嘅技能用 skillActualPower 計算
     const equipped=_playerSkillsCache.filter(s=>s.equipped);
     let pm=0,pn=0,pq=0,ec=0;
     for(const eq of equipped){const si=getSkillInfo(eq.skill_key);if(!si)continue;
-      if(si.type==='martial'){pm=Math.max(pm,si.power);ec++}
-      else if(si.type==='neigong'){pn=Math.max(pn,si.power);ec++}
-      else if(si.type==='qinggong'){pq=Math.max(pq,si.power);ec++}}
+      const ap=skillActualPower(si.power,eq.mastery||0,eq.combat_exp||0);
+      if(si.type==='martial'){pm=Math.max(pm,ap);ec++}
+      else if(si.type==='neigong'){pn=Math.max(pn,ap);ec++}
+      else if(si.type==='qinggong'){pq=Math.max(pq,ap);ec++}}
     const pps=ec>0?(pm*0.5+pn*0.3+pq*0.2):1;
     const nps=(n.martial||50)*0.5+(n.neigong||50)*0.3+(n.qinggong||50)*0.2;
     const ratio=nps>=2*pps?0:Math.max(0,Math.min(1,pps/nps));
@@ -505,7 +510,10 @@ function act(key,type){
     const win=Math.random()<winRate;
     const pd=Math.abs(nps-pps);
     p.xp+=win?5:3;savePlayer(p);pushDlg('（你抱拳：請指教！）',true);
-    setTimeout(async()=>{if(win){pushDlg(pickSparDesc(n.name,pd,true),false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg(pickSparDesc(n.name,pd,false),false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
+    setTimeout(async()=>{if(win){pushDlg(pickSparDesc(n.name,pd,true),false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg(pickSparDesc(n.name,pd,false),false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};
+    // 切磋後提升裝備技能嘅熟練度同實戰度
+    for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillMastery(p.name,eq.skill_key,win?5:3);await bumpSkillCombat(p.name,eq.skill_key,win?8:5)}
+    if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
   }
 }
 
@@ -519,7 +527,7 @@ function openSkillPanel(){
     const equipped=typeSkills.find(s=>s.equipped);
     html+=`<div class="skillpanel"><h3>${t.label}${equipped?' — 已裝備：'+esc(equipped.name):''}</h3>`;
     if(typeSkills.length===0)html+=`<div class="sk-empty">尚未學會此類技能</div>`;
-    else{for(const s of typeSkills){html+=`<div class="sk-row${s.equipped?' active':''}" onclick="toggleEquip('${s.key}','${s.type}')"><span class="sk-name">${esc(s.name)}</span><span class="sk-rarity skill-tag ${s.rarity}">${RARITY_ORD[s.rarity]||''}${RARITY_LABEL[s.rarity]||''}</span>${s.equipped?'<span class="sk-equipped">✓ 裝備中</span>':''}</div>`}}
+    else{for(const s of typeSkills){const m=s.mastery||0,c=s.combat_exp||0;html+=`<div class="sk-row${s.equipped?' active':''}" onclick="toggleEquip('${s.key}','${s.type}')"><span class="sk-name">${esc(s.name)}<br><span class="sk-stats">熟練 ${m}　實戰 ${c}</span></span><span class="sk-rarity skill-tag ${s.rarity}">${RARITY_ORD[s.rarity]||''}${RARITY_LABEL[s.rarity]||''}</span>${s.equipped?'<span class="sk-equipped">✓ 裝備中</span>':''}</div>`}}
     html+=`</div>`;
   }
   $('mbox').innerHTML=html;$('modal').classList.add('open');
