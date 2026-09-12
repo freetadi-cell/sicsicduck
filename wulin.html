@@ -20,7 +20,19 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .wb-date{font-size:15px;color:var(--muted);margin-bottom:4px}
 .wb-date b{color:var(--gold)}
 .wb-name-row{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
-.wb-name{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px}
+.wb-name{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px;cursor:pointer;transition:.2s}
+.wb-name:hover{color:var(--gold)}
+.actmenu{position:fixed;inset:0;z-index:100;display:none}
+.actmenu.open{display:block}
+.actmenu .mback{position:absolute;inset:0;background:rgba(0,0,0,.6)}
+.actmenu .mbox{position:relative;z-index:1;max-width:320px;margin:30vh auto;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px}
+.actmenu .mtitle{font-size:16px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:16px;text-align:center}
+.act-row{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--border);border-radius:8px;margin:8px 0;cursor:pointer;transition:.2s}
+.act-row:hover{border-color:var(--gold2);background:var(--card2)}
+.act-icon{font-size:22px;width:36px;text-align:center}
+.act-info{flex:1}
+.act-name{font-size:14px;font-weight:600;color:var(--text)}
+.act-desc{font-size:11px;color:var(--muted);margin-top:2px}
 .wb-align{font-size:11px;margin-bottom:6px}
 .wb-align.good{color:var(--green)}
 .wb-align.neutral{color:var(--muted)}
@@ -199,6 +211,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   <div class="npc-scroll" id="npcGrid"></div>
   <footer>世界由 AI 推進 · 只有同區 NPC 才可以互動 · 本頁為未公開原型</footer>
 </div>
+<div class="actmenu" id="actMenu"><div class="mback" onclick="closeActMenu()"></div><div class="mbox"><div class="mtitle">你想要做什麼？</div><div class="act-row" onclick="doAction('train')"><div class="act-icon">🧘</div><div class="act-info"><div class="act-name">練功</div><div class="act-desc">修煉裝備中的技能（3小時，熟練度+1）</div></div></div><div class="act-row" onclick="doAction('quest')"><div class="act-icon">📜</div><div class="act-info"><div class="act-name">找尋任務</div><div class="act-desc">在城中尋找可以接下的任務</div></div></div><div class="act-row" onclick="doAction('wander')"><div class="act-icon">🚶</div><div class="act-info"><div class="act-name">到處走走</div><div class="act-desc">在城中隨意走走，也許會有意外收穫</div></div></div></div></div>
 <div class="modal" id="modal"><div class="mback" onclick="closeModal()"></div><div class="mbox" id="mbox"></div></div>
 <div id="auth">
   <div class="acard">
