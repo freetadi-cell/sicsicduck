@@ -215,10 +215,11 @@ def send_telegram(message):
 def main():
     data = load_data()
     post = generate_post(data)
-    print(post)
 
     if "--send" in sys.argv:
         send_telegram(post)
+    else:
+        print(post)
 
 
 if __name__ == "__main__":
