@@ -86,6 +86,8 @@ SYS_PROMPT = """你係金庸《神鵰俠侶》世界嘅「天命」——負責�
     "npc_key": {
       "mood": "新心境（有變先寫）",
       "attitude": "新待人態度（有變先寫）",
+      "region": "新位置（只在 NPC 移動時填，必須是已有區域名）",
+      "location": "新詳細地點（跟隨 region 變動時填）",
       "dialogue": ["三句最新台詞", "…", "…"],
       "affinity_delta": 0,
       "alignment_delta": 0,
@@ -107,6 +109,7 @@ SYS_PROMPT = """你係金庸《神鵰俠侶》世界嘅「天命」——負責�
 5. relation_deltas 係 NPC 之間交情變化（-5 至 +5），有先寫
 5. 新增 1-3 條 events，要同之前嘅事件敘事連貫（世界有歷史感）
 6. 忠於原著人物性格、武功、關係
+7. NPC 可以因劇情需要移動到其他區域（region），例如：楊過去襄陽助戰、李莫愁逃往絕情谷。移動時必須同時寫 region 同 location。可用區域：襄陽城、古墓、終南山、嘉興、絕情谷、大理。移動要合理，唔好無故把人搬來搬去
 7. 玩家係「無名少年」，NPC 對玩家嘅好感主要由玩家行為影響，NPC 互動只輕微帶動
 7. chat_options：每位 NPC 都要俾 3 個選項——「玩家可以開口講嘅話」，白話文 8-20 字，語氣各有不同（恭維／直言相勸／打探消息／挑釁／求助……自由配搭，貼合 NPC 身份）
 8. reply 係 NPC 聽完嗰句嘅即時回應，白話文 15-40 字，貼合佢性格同當前心境；affinity_delta（-5 至 +5）反映嗰句令 NPC 幾受落——三句效果要拉開明顯差距（例如 +5 / +1 / -3），唔好全部一樣
@@ -216,6 +219,10 @@ def apply_delta(world, delta, new_day):
             n["mood"] = to_traditional(str(up["mood"]))
         if up.get("attitude"):
             n["attitude"] = to_traditional(str(up["attitude"]))
+        if up.get("region"):
+            n["region"] = to_traditional(str(up["region"]))
+            if up.get("location"):
+                n["location"] = to_traditional(str(up["location"]))
         dlg = up.get("dialogue")
         if isinstance(dlg, list) and dlg:
             n["dialogue"] = [to_traditional(str(d)) for d in dlg][:3]
