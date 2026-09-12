@@ -198,7 +198,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   </div>
   <div class="worldbar">
     <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
-    <div class="wb-name-row"><span class="wb-name" id="playerName">…</span><a href="#" class="wb-logout" onclick="logout();return false">登出</a></div>
+    <div class="wb-name-row"><span class="wb-name" id="playerName" onclick="openActMenu()">…</span><a href="#" class="wb-logout" onclick="logout();return false">登出</a></div>
     <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <b id="playerAlignNum2">500</b></div>
     <div class="wb-xp">閱歷 <b id="playerXp">0</b>　📍 <span id="playerRegionText">–</span></div>
     <div class="skill-row"><div class="skill-list" id="playerSkillsText">載入中…</div><a href="#" class="wb-link" onclick="openSkillPanel();return false">技能設置</a></div>
@@ -527,6 +527,28 @@ function act(key,type){
     // 切磋後提升裝備技能嘅熟練度同實戰度
     for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillMastery(p.name,eq.skill_key,win?5:3);await bumpSkillCombat(p.name,eq.skill_key,win?8:5)}
     if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
+  }
+}
+
+/* ===== Action Menu ===== */
+function openActMenu(){$('actMenu').classList.add('open')}
+function closeActMenu(){$('actMenu').classList.remove('open')}
+async function doAction(type){
+  const p=player();if(!p)return;closeActMenu();
+  if(type==='train'){
+    const equipped=_playerSkillsCache.filter(s=>s.equipped);
+    if(equipped.length===0){toast('你沒有裝備任何技能');return}
+    // 練功 3 小時（遊戲時間），提升熟練度 +1
+    for(const eq of equipped){await bumpSkillMastery(p.name,eq.skill_key,1)}
+    p.xp+=1;savePlayer(p);
+    let msg='練功完成 · 閱歷 +1 · 熟練度 +1（裝備技能）';
+    toast(msg);pushDlg('（你靜坐修煉，內力流轉，武功更進一步）',false,'learn-msg');
+    $('playerXp').textContent=p.xp;renderPlayerHeaderSkills();
+    openSkillPanel(); // 重新顯示技能面板
+  }else if(type==='quest'){
+    toast('找尋任務功能即將開放');
+  }else if(type==='wander'){
+    toast('到處走走功能即將開放');
   }
 }
 
