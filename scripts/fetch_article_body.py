@@ -11,7 +11,7 @@
     "fetched_at": ISO
   }
 """
-import json, re, sys, time, urllib.request, hashlib
+import json, re, sys, os, time, urllib.request, hashlib
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
