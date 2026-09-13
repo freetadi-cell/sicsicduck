@@ -254,6 +254,12 @@ def main():
         src = a.get("source_name", "")
         print(f"\n[{i}/{len(candidates)}] {title[:40]}... ({src})")
 
+        # 已有 rewritten summary 嘅文章唔再改寫
+        if a.get("rewritten"):
+            print("    已有摘要，跳過")
+            done += 1
+            continue
+
         cached = load_cache(aid)
         if cached and cached.get("status") in ("no_body", "rewrite_failed"):
             # 短時間內唔重試同一失敗
