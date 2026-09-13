@@ -174,7 +174,10 @@ def rewrite_with_kimi(api_key, title, body):
                  "Authorization": f"Bearer {api_key}"})
     with urllib.request.urlopen(req, timeout=90) as resp:
         data = json.loads(resp.read().decode("utf-8"))
-    return data["choices"][0]["message"]["content"].strip()
+    choices = data.get("choices") or (data.get("data", {}).get("choices") if isinstance(data.get("data"), dict) else None)
+    if not choices:
+        raise KeyError(f"No choices in response: {list(data.keys())}")
+    return choices[0]["message"]["content"].strip()
 
 
 # ---------- 主流程 ----------
