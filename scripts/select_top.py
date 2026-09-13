@@ -70,8 +70,20 @@ def news_value_score(article):
 
 
 def select_top(articles, top_n=3, max_per_source=1):
-    """按分數排序，逐篇揀入，置頂文章來自唔同來源。"""
-    scored = [(news_value_score(a), i, a) for i, a in enumerate(articles)]
+    """按分數+日期排序，逐篇揀入，置頂文章來自唔同來源。"""
+    scored = []
+    for i, a in enumerate(articles):
+        s = news_value_score(a)
+        # 日期加权：每舊一天扣 2 分，鼓勵選最新嘅
+        pub = a.get("pubDate", "")[:10]
+        if pub:
+            try:
+                from datetime import datetime
+                days_ago = (datetime.now() - datetime.strptime(pub, "%Y-%m-%d")).days
+                s -= days_ago * 2
+            except ValueError:
+                pass
+        scored.append((s, i, a))
     scored.sort(key=lambda x: (-x[0], x[1]))  # 分數高優先，同分按原序
 
     selected_ids = set()
