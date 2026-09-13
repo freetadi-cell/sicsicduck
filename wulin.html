@@ -330,7 +330,7 @@ async function regGo(){
   const migrating=old&&old.name===name&&!a[name];
   if(a[name]){authErr('這個名號已有人使用，請另選一個');return}
   const ph=await sha256(p1);
-  const st=migrating?old:{name,xp:0,alignment:500,silver:10,martial:1,neigong:1,qinggong:1,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
+  const st=migrating?old:{name,xp:0,alignment:500,silver:10,stamina:100,martial:1,neigong:1,qinggong:1,aff:{},spoke:{},gifts:{},opts:{},day:0,region:'襄陽城',cooldown:0};
   if(!st.alignment)st.alignment=500;if(!st.region)st.region='襄陽城';if(!st.cooldown)st.cooldown=0;
   a[name]={ph,save:st};
   const saved=await saveAccounts(a);
@@ -344,7 +344,7 @@ async function loginGo(){
   const name=($('logName').value||'').trim().slice(0,10),pw=$('logPass').value,a=accounts();
   if(!a[name]){authErr('沒有這個名號——需先註冊才能進入江湖');return}
   if(await sha256(pw)!==a[name].ph){authErr('名號或密碼錯誤');return}
-  const save=a[name].save;if(!save.alignment)save.alignment=500;if(!save.region)save.region='襄陽城';if(!save.cooldown)save.cooldown=0;if(save.silver===undefined)save.silver=10;
+  const save=a[name].save;if(!save.alignment)save.alignment=500;if(!save.region)save.region='襄陽城';if(!save.cooldown)save.cooldown=0;if(save.silver===undefined)save.silver=10;if(save.stamina===undefined)save.stamina=100;recoverStamina(save);
   localStorage.setItem('wulin_player',JSON.stringify(save));
   $('auth').classList.remove('open');authErr('');toast(`歡迎返嚟，${name}`);render();
 }
