@@ -344,7 +344,7 @@ async function loginGo(){
   const name=($('logName').value||'').trim().slice(0,10),pw=$('logPass').value,a=accounts();
   if(!a[name]){authErr('沒有這個名號——需先註冊才能進入江湖');return}
   if(await sha256(pw)!==a[name].ph){authErr('名號或密碼錯誤');return}
-  const save=a[name].save;if(!save.alignment)save.alignment=500;if(!save.region)save.region='襄陽城';if(!save.cooldown)save.cooldown=0;if(save.silver===undefined)save.silver=10;if(save.stamina===undefined)save.stamina=100;recoverStamina(save);
+  const save=a[name].save;if(!save.alignment)save.alignment=500;if(!save.region)save.region='襄陽城';if(!save.cooldown)save.cooldown=0;if(save.silver===undefined)save.silver=10;if(save.stamina===undefined)save.stamina=100;
   localStorage.setItem('wulin_player',JSON.stringify(save));
   $('auth').classList.remove('open');authErr('');toast(`歡迎返嚟，${name}`);render();
 }
@@ -352,7 +352,6 @@ async function loginGo(){
 /* ===== Game logic ===== */
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function recoverStamina(p){if(!p||p.stamina>=100)return;if(!p._staminaTick)return;const elapsed=Date.now()-p._staminaTick;const ticks=Math.floor(elapsed/600000);if(ticks>0){p.stamina=Math.min(100,p.stamina+ticks*10);p._staminaTick=Date.now();savePlayer(p)}}
 function playerAlign(){const p=player();return p?(p.alignment||500):500}
 function alignLabel(a){if(a>=800)return'大義凜然';if(a>=650)return'行俠仗義';if(a>=550)return'正氣凜然';if(a>=450)return'亦正亦邪';if(a>=350)return'乖張無常';if(a>=200)return'心狠手辣';return'惡貫滿盈'}
 function alignLabelShort(a){if(a>=650)return'正派';if(a>=450)return'中立';return'邪惡'}
@@ -392,7 +391,7 @@ async function load(){
   await loadSkillsDb();
   await cloudLoad();
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
-  const p=player();if(p._staminaTick===undefined)p._staminaTick=Date.now();recoverStamina(p);$('playerStamina').textContent=p.stamina||0;
+  const p=player();$('playerStamina').textContent=p.stamina||0;
   await loadPlayerSkills(p.name);
   await grantBasicSkills(player().name);
   startTravelTimer();render();
