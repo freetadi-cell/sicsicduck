@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "神鵰世界 · 原型 v5",
-    "world_time": "第443日 · 初夏",
+    "world_time": "第444日 · 初夏",
     "region_distances": {
       "襄陽城": {
         "古墓": 4,
@@ -55,7 +55,7 @@
       "大理": "天龍寺與段氏故地，南陲雄城"
     },
     "player_setting": "你是一名闖蕩江湖的無名少年，機緣巧合踏入神鵰世界。你可以行走各區、結交人物、贈禮切磋，逐步改變善惡走嚮。",
-    "updated_at": "2026-09-13T03:02:51"
+    "updated_at": "2026-09-14T03:02:12"
   },
   "npcs": [
     {
@@ -75,21 +75,21 @@
       ],
       "chat_options": [
         {
-          "say": "楊大哥，你與郭大俠並肩作戰，真乃俠義！",
-          "reply": "郭伯伯恩重如山，我自當盡力。",
-          "affinity_delta": 2,
+          "say": "楊大哥，你與郭大俠守城，真乃英雄！",
+          "reply": "襄陽危急，自當盡力。",
+          "affinity_delta": 3,
           "alignment_delta": 2
         },
         {
-          "say": "楊過，蒙古砲火猛烈，需避其鋒芒。",
-          "reply": "戰場之上，豈能退縮？",
-          "affinity_delta": 0,
+          "say": "楊過，蒙古軍勢大，可有退敵良策？",
+          "reply": "兵來將擋，唯有死戰。",
+          "affinity_delta": 1,
           "alignment_delta": 0
         },
         {
-          "say": "你心法大成，卻來守城，是否可惜？",
-          "reply": "武功用於守護，方顯其值。",
-          "affinity_delta": -1,
+          "say": "你武功再高，也守不住這城。",
+          "reply": "守不住便守不住，但求問心無愧。",
+          "affinity_delta": -2,
           "alignment_delta": -1
         }
       ],
@@ -121,13 +121,13 @@
       ],
       "chat_options": [
         {
-          "say": "龍姑娘，你劍法精妙，守城有功！",
-          "reply": "這劍法為守護而用，便是其妙。",
+          "say": "龍姑娘，你劍法如仙，守城有功！",
+          "reply": "劍法為守護而用，便是其值。",
           "affinity_delta": 3,
           "alignment_delta": 2
         },
         {
-          "say": "小龍女，蒙古人多，小心為上。",
+          "say": "小龍女，戰場兇險，小心為上。",
           "reply": "過兒在旁，我自會小心。",
           "affinity_delta": 1,
           "alignment_delta": 0
@@ -217,8 +217,8 @@
           "alignment_delta": 2
         },
         {
-          "say": "蓉兒，地道是否安全？",
-          "reply": "已盡量隱蔽，但非長久之計。",
+          "say": "蓉兒，城防可有疏漏？",
+          "reply": "已盡力加固，但蒙古砲猛。",
           "affinity_delta": 1,
           "alignment_delta": 0
         },
@@ -244,21 +244,21 @@
       "key": "liguomochou",
       "name": "李莫愁",
       "title": "赤練仙子",
-      "region": "絕情谷",
-      "location": "情花叢中",
-      "mood": "怨毒，虛弱但兇悍",
-      "attitude": "先殺公孫止，再圖小龍女",
+      "region": "終南山",
+      "location": "山道",
+      "mood": "痛苦，毒性發作，但仍強撐",
+      "attitude": "逃避公孫止，尋求解藥",
       "alignment": 100,
       "affinity": 0,
       "dialogue": [
-        "公孫止老賊，今日便是你死期！",
-        "情花毒？我以毒攻毒！",
-        "小龍女，你遲早也會落在我手裡。"
+        "這毒……竟如此厲害！",
+        "小龍女，我必先找到你！",
+        "公孫止，此仇不報非君子！"
       ],
       "chat_options": [
         {
-          "say": "李莫愁，你重傷還能逞兇，佩服！",
-          "reply": "哼，我死也要拉幾個墊背的！",
+          "say": "李莫愁，你重傷逃亡，可謂狼狽。",
+          "reply": "哼，我便是死也要拉幾個墊背的！",
           "affinity_delta": 1,
           "alignment_delta": -2
         },
@@ -279,7 +279,7 @@
         "xiaolongnu": "同門冤家",
         "luwushuang": "不共戴天",
         "chengying": "仇敵",
-        "gongsunzhi": 31,
+        "gongsunzhi": 26,
         "yangguo": 46
       },
       "martial": 75,
@@ -290,16 +290,16 @@
       "key": "luwushuang",
       "name": "陸無雙",
       "title": "陸家莊大小姐",
-      "region": "嘉興",
-      "location": "陸家莊內",
-      "mood": "憤怒，渴望",
-      "attitude": "誓報前仇",
+      "region": "終南山",
+      "location": "山道",
+      "mood": "急切，堅定",
+      "attitude": "前往襄陽助戰",
       "alignment": 600,
       "affinity": 0,
       "dialogue": [
-        "李莫愁又作惡，我定要殺她！",
-        "程英姐姐，我們去襄陽助戰吧。",
-        "楊大哥出關了，不知戰況如何。"
+        "襄陽危急，我們快走！",
+        "程英姐姐，我腿傷已無大礙。",
+        "楊大哥，等我來助你！"
       ],
       "chat_options": [
         {
@@ -334,16 +334,16 @@
       "key": "chengying",
       "name": "程英",
       "title": "桃花島傳人",
-      "region": "嘉興",
-      "location": "陸家莊旁",
-      "mood": "警惕，憂慮",
-      "attitude": "加強戒備，推演局勢",
+      "region": "終南山",
+      "location": "山道",
+      "mood": "警惕，擔憂",
+      "attitude": "護送無雙，兼程趕路",
       "alignment": 700,
       "affinity": 0,
       "dialogue": [
-        "李莫愁重傷還能殺人，不可小覷。",
-        "楊大哥前往襄陽，我們也該準備。",
-        "絕情谷動亂，恐波及江湖。"
+        "無雙妹，慢些，小心傷勢。",
+        "襄陽戰事激烈，需從長計議。",
+        "李莫愁在絕情谷鬧事，江湖更亂。"
       ],
       "chat_options": [
         {
@@ -381,14 +381,14 @@
       "title": "絕情谷主",
       "region": "絕情谷",
       "location": "情花大廳",
-      "mood": "驚怒，重傷",
-      "attitude": "防禦李莫愁，療傷",
+      "mood": "虛弱，憤怒",
+      "attitude": "療傷，追殺李莫愁",
       "alignment": 150,
       "affinity": 0,
       "dialogue": [
-        "李莫愁，你竟敢燒我毒草！",
-        "弟子們，擒住她！",
-        "我這傷……必須盡快解毒。"
+        "李莫愁這賤人，我必殺之！",
+        "弟子們，封鎖谷口，別讓她跑了！",
+        "我的傷……需要情花毒解。"
       ],
       "chat_options": [
         {
@@ -404,7 +404,7 @@
           "alignment_delta": -2
         },
         {
-          "say": "李莫愁來襲，是否求助郭靖？",
+          "say": "李莫愁逃走，是否求助郭靖？",
           "reply": "郭靖？那守城老兒，不來染指絕情谷便好。",
           "affinity_delta": 0,
           "alignment_delta": -1
@@ -554,30 +554,6 @@
     }
   ],
   "events": [
-    {
-      "day": 430,
-      "text": "周伯通在終南山發現全真教的一條祕道，玩心大起，卻意外觸動機關，引發一場小騷動，驚動了楊過。",
-      "npcs": [
-        "zhoubotong",
-        "yangguo"
-      ]
-    },
-    {
-      "day": 431,
-      "text": "蒙古軍猛攻襄陽城東，郭靖黃蓉指揮守軍，利用地形優勢擊退敵軍，但損失不少。",
-      "npcs": [
-        "guojing",
-        "huangrong"
-      ]
-    },
-    {
-      "day": 431,
-      "text": "李莫愁抵達絕情谷，與公孫止在情花大廳密談，提出以古墓派武功交換情花毒解藥。",
-      "npcs": [
-        "liguomochou",
-        "gongsunzhi"
-      ]
-    },
     {
       "day": 431,
       "text": "楊過在終南山祕道救出被困的周伯通，兩人發現祕道通嚮古墓附近，決定探查。",
@@ -882,6 +858,30 @@
         "yelvqi",
         "guojing",
         "huangrong"
+      ]
+    },
+    {
+      "day": 444,
+      "text": "蒙古軍利用分兵佯攻，集中兵力猛攻城西缺口，城牆崩塌數處。郭靖率親兵與楊過合力堵口，黃蓉指揮弓箭手掩護，戰況危急。",
+      "npcs": [
+        "guojing",
+        "yangguo",
+        "huangrong"
+      ]
+    },
+    {
+      "day": 444,
+      "text": "李莫愁在絕情谷外毒性發作，強行壓制，逃離谷地，往終南山方向而去，意圖尋找解藥或避難。",
+      "npcs": [
+        "liguomochou"
+      ]
+    },
+    {
+      "day": 444,
+      "text": "陸無雙聽聞襄陽戰況，不顧傷勢，與程英商議後，決定啟程前往襄陽助戰，從嘉興出發。",
+      "npcs": [
+        "luwushuang",
+        "chengying"
       ]
     }
   ]
