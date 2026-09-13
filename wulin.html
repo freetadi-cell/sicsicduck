@@ -380,7 +380,8 @@ function selectTravel(el,dest,days){document.querySelectorAll('.tm-row').forEach
 function confirmTravelFromModal(){if(!_selectedDest)return;if(playerCooldown()){toast('你還在趕路，不能再出發');closeModal();return}closeModal();startTravel(_selectedDest,_selectedDays);_selectedDest=null}
 function doTravel(dest,days){if(playerCooldown()){toast('你還在趕路，不能再出發');return}confirmTravel(dest,days)}
 let travelTimer=null;
-function startTravelTimer(){if(travelTimer)clearInterval(travelTimer);travelTimer=setInterval(()=>{finishTravelIfDone();finishTrainIfDone();updateCooldown()},1000)}
+function startTravelTimer(){if(travelTimer)clearInterval(travelTimer);travelTimer=setInterval(()=>{finishTravelIfDone();finishTrainIfDone();updateCooldown()},1000);setInterval(syncStamina,60000)}
+async function syncStamina(){const p=player();if(!p)return;try{const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=save&name=eq.${encodeURIComponent(p.name)}`);if(rows&&rows[0]&&rows[0].save){const sv=typeof rows[0].save==='string'?JSON.parse(rows[0].save):rows[0].save;if(sv.stamina!==undefined&&sv.stamina!==p.stamina){p.stamina=sv.stamina;savePlayer(p);$('playerStamina').textContent=p.stamina}}}catch(e){}}
 function updateCooldown(){const cd=playerCooldown();const el=$('cooldownText');if(!el)return;if(!cd){const reg=$('regionPanel');if(reg&&reg.style.display!=='none')renderRegionPanel();return}const hrs=Math.floor(cd.remainingMs/3600000);const mins=Math.floor((cd.remainingMs%3600000)/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);el.innerHTML=`🚶 你正在趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${hrs}時${String(mins).padStart(2,'0')}分${String(secs).padStart(2,'0')}秒</b>`}
 
 /* ===== Load & Render ===== */
