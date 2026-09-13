@@ -79,6 +79,21 @@ def save_cache(entry):
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     p = CACHE_DIR / f"{entry['id']}.json"
     p.write_text(json.dumps(entry, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 同步 rewritten 到 news.json（保持一致）
+    if entry.get("status") == "done" and entry.get("rewritten"):
+        try:
+            with open(NEWS_FILE, encoding="utf-8") as f:
+                nj = json.load(f)
+            for a in nj.get("articles", []):
+                if a.get("id") == entry["id"]:
+                    a["rewritten"] = entry["rewritten"]
+                    if entry.get("rewritten_title"):
+                        a["rewritten_title"] = entry["rewritten_title"]
+                    break
+            with open(NEWS_FILE, "w", encoding="utf-8") as f:
+                json.dump(nj, f, ensure_ascii=False, indent=None)
+        except Exception:
+            pass
 
 
 # ---------- 正文抽取 ----------
