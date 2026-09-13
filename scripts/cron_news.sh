@@ -2,6 +2,7 @@
 # 新聞更新腳本：抓取 → 選篇 → 摘要 → 建頁 → 推送
 export PATH="/home/freet/.nvm/versions/node/v24.18.0/bin:$PATH"
 cd /home/freet/.openclaw/workspace/sicsicduck
+[ -f .env ] && export $(grep -v '^#' .env | xargs)
 
 PUSH_TIMEOUT=60
 PUSH_RETRIES=3
