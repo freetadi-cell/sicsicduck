@@ -546,15 +546,123 @@ async function doAction(type){
     if(playerTrainCooldown()){toast('你還在練功中，請稍後');return}
     const equipped=_playerSkillsCache.filter(s=>s.equipped);
     if(equipped.length===0){toast('你沒有裝備任何技能');return}
-    // 練功 3 小時（3 real hours）
     p.train={until:Date.now()+3*3600000};savePlayer(p);
     toast('開始練功（3小時後完成）');render();
   }else if(type==='quest'){
     toast('找尋任務功能即將開放');
   }else if(type==='wander'){
-    toast('到處走走功能即將開放');
+    if((p.stamina||0)<20){toast('體力不足，需要20體力才能到處走走');return}
+    p.stamina=Math.max(0,(p.stamina||0)-20);savePlayer(p);$('playerStamina').textContent=p.stamina;
+    const roll=Math.random()*100;
+    if(roll<30) await wanderJustice(p);
+    else if(roll<60) await wanderMerchant(p);
+    else if(roll<80) await wanderNpc(p);
+    else if(roll<83) await wanderSkillBook(p);
+    else if(roll<93) await wanderSilver(p);
+    else{toast('你在城中閒逛，什麼也沒發生');render()}
   }
 }
+
+// --- Wandering: Justice ---
+const THUG_NAMES=['張三','李四','王五','趙六','劉七','陳八','吳九','鄭十','马大哈','牛二'];
+const LOW_SKILLS=['瑛姑指法','毒砂掌','劈空掌','羅漢拳','蛇豬不若功','泥鰍功','雁行功','基礎步法','基礎吐納','天羅地網掌','草上飛','伏魔杖法'];
+async function wanderJustice(p){
+  const name=THUG_NAMES[Math.floor(Math.random()*THUG_NAMES.length)];
+  const skillKey=LOW_SKILLS[Math.floor(Math.random()*LOW_SKILLS.length)];
+  const si=getSkillInfo(skillKey)||{name:'粗淺武功',power:40,type:'martial'};
+  const enemyPower=si.power*0.7;
+  const eps=enemyPower*0.5;
+  const pps=getPlayerPower();
+  const ratio=eps>=2*pps?0:Math.max(0,Math.min(1,pps/eps));
+  const winRate=ratio===0?0:Math.max(0,Math.min(0.90,0.55+(ratio-1.0)*0.60));
+  const win=Math.random()<winRate;
+  $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">路見不平</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">
+    你路過${esc(playerRegion())}的一條小巷，見到一伙流氓「<b>${esc(name)}</b>」正在欺凌百姓！<br>
+    <span style="color:var(--muted)">對手使出「${esc(si.name)}」（威力 ${Math.round(enemyPower)}）</span>
+    ${win?`<div style="color:var(--green);margin-top:10px">✅ 你擊敗了${esc(name)}！百姓感激不盡。</div><div style="margin-top:8px">閱歷 +3　善惡 +5　實戰度 +5</div>`
+    :`<div style="color:var(--red);margin-top:10px">❌ ${esc(name)}武功比你想像中強，你被擊敗了。</div><div style="margin-top:8px">閱歷 +1　實戰度 +3</div>`}
+  </div><button class="abtn" onclick="closeModal()">離開</button></div>`;$('modal').classList.add('open');
+  if(win){p.xp+=3;setPlayerAlign(5)}else{p.xp+=1}
+  savePlayer(p);$('playerXp').textContent=p.xp;
+  for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillCombat(p.name,eq.skill_key,win?5:3)}
+  render();
+}
+
+// --- Wandering: Merchant ---
+const MERCHANT_NAMES=['西域商人','糧商','絲綢商人','藥商','珠寶商人','茶商'];
+const GUARD_SKILLS=['全真劍法','鐵掌功','越女劍法','倒亂刃法','八仙劍','松風劍法'];
+async function wanderMerchant(p){
+  const merchant=MERCHANT_NAMES[Math.floor(Math.random()*MERCHANT_NAMES.length)];
+  const silverReward=Math.floor(Math.random()*8)+3;
+  const dialog=`你路過${esc(playerRegion())}的官道，遇見一隊${esc(merchant)}的鏢隊。鏢師「<b>趙鏢頭</b>」護送着滿載貨物的車隊。`;
+  const actionText='你可以選擇搶劫鏢車（善惡-10），或者放過他們（善惡+2）。';
+  $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">路遇商旅</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">${dialog}<br><span style="color:var(--muted)">${actionText}</span></div><div class="acts"><button class="btn" onclick="merchantRob()">🔪 搶劫</button><button class="btn" onclick="merchantSpare()">🙏 放過</button></div></div>`;$('modal').classList.add('open');
+  window._merchantCtx={merchant,silverReward};
+}
+function merchantRob(){
+  closeModal();const ctx=window._merchantCtx;const p=player();
+  const skillKey=GUARD_SKILLS[Math.floor(Math.random()*GUARD_SKILLS.length)];
+  const si=getSkillInfo(skillKey)||{name:'鏢師武功',power:55,type:'martial'};
+  const enemyPower=si.power*0.8;
+  const eps=enemyPower*0.5;
+  const pps=getPlayerPower();
+  const ratio=eps>=2*pps?0:Math.max(0,Math.min(1,pps/eps));
+  const winRate=ratio===0?0:Math.max(0,Math.min(0.85,0.50+(ratio-1.0)*0.60));
+  const win=Math.random()<winRate;
+  setPlayerAlign(-10);
+  $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">鏢局之戰</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">
+    鏢師「趙鏢頭」使出「${esc(si.name)}」（威力 ${Math.round(enemyPower)}）與你交手！
+    ${win?`<div style="color:var(--green);margin-top:10px">✅ 你擊敗了趙鏢頭，搶走了鏢車！</div><div style="margin-top:8px">銀兩 +${ctx.silverReward}　閱歷 +3　善惡 -10　實戰度 +8</div>`
+    :`<div style="color:var(--red);margin-top:10px">❌ 趙鏢頭武藝高強，你搶劫失敗！</div><div style="margin-top:8px">閱歷 +1　善惡 -10　實戰度 +3</div>`}
+  </div><button class="abtn" onclick="closeModal()">離開</button></div>`;$('modal').classList.add('open');
+  if(win){p.silver=(p.silver||0)+ctx.silverReward;p.xp+=3}else{p.xp+=1}
+  savePlayer(p);$('playerXp').textContent=p.xp;$('playerSilver').textContent=p.silver||0;
+  for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillCombat(p.name,eq.skill_key,win?8:3)}
+  render();
+}
+function merchantSpare(){closeModal();const p=player();p.xp+=1;setPlayerAlign(2);savePlayer(p);$('playerXp').textContent=p.xp;toast('你放過了鏢隊，善惡 +2');render()}
+
+// --- Wandering: Meet NPC ---
+async function wanderNpc(p){
+  const cur=playerRegion();
+  const local=world.npcs.filter(n=>n.region===cur);
+  if(local.length===0){toast('你在城中閒逛，什麼也沒發生');render();return}
+  const npc=local[Math.floor(Math.random()*local.length)];
+  p.xp+=2;bumpAff(npc.key,2);savePlayer(p);$('playerXp').textContent=p.xp;
+  toast(`你在${esc(cur)}遇到了${esc(npc.name)}！好感 +2　閱歷 +2`);
+  render();openNpc(npc.key);
+}
+
+// --- Wandering: Skill Book ---
+async function wanderSkillBook(p){
+  const learnable=['美女拳法','赤練神掌','玉簫劍法','三無三不手','玉女素心劍法','金鈴索','玉蜂針','風雷掌','玄門掌','鐵布衫奇功','狂風迅雷功','蘭花拂穴手','黃沙萬里鞭法','釋迦擲象功','金雁功','閉穴功','八卦掌','大手印功'];
+  const unlearned=learnable.filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));
+  if(unlearned.length===0){toast('你在城中閒逛，什麼也沒發生');render();return}
+  const skillKey=unlearned[Math.floor(Math.random()*unlearned.length)];
+  await playerLearnSkill(p.name,skillKey);await loadPlayerSkills(p.name);
+  const si=getSkillInfo(skillKey);
+  $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">拾獲秘笈</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">
+    你在${esc(playerRegion())}的街角拾到一本泛黃的秘笈！<br>
+    <div style="color:var(--gold);font-size:16px;font-weight:700;margin:10px 0">📖 ${esc(si?si.name:skillKey)}</div>
+    <span style="color:var(--muted)">${esc(si?si.description:'')}</span>
+    <div style="color:var(--green);margin-top:8px">✅ 你已學會此技能！</div>
+  </div><button class="abtn" onclick="closeModal()">收下秘笈</button></div>`;$('modal').classList.add('open');
+  renderPlayerHeaderSkills();
+}
+
+// --- Wandering: Silver ---
+function wanderSilver(p){
+  const amount=Math.floor(Math.random()*10)+1;
+  p.silver=(p.silver||0)+amount;savePlayer(p);$('playerSilver').textContent=p.silver;
+  toast(`你在${esc(playerRegion())}的地上拾到 ${amount} 兩銀子！`);render();
+}
+
+// --- Helper: Player Power ---
+function getPlayerPower(){const equipped=_playerSkillsCache.filter(s=>s.equipped);let pm=0,pn=0,pq=0,ec=0;
+  for(const eq of equipped){const si=getSkillInfo(eq.skill_key);if(!si)continue;
+    const ap=skillActualPower(si.power,eq.mastery||0,eq.combat_exp||0);
+    if(si.type==='martial'){pm=Math.max(pm,ap);ec++}else if(si.type==='neigong'){pn=Math.max(pn,ap);ec++}else if(si.type==='qinggong'){pq=Math.max(pq,ap);ec++}}
+  return ec>0?(pm*0.5+pn*0.3+pq*0.2):1}
 /* ===== Skill Panel ===== */
 function openSkillPanel(){
   const p=player();if(!p)return;
