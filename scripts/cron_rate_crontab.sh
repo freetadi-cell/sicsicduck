@@ -1,6 +1,6 @@
 #!/bin/bash
 # crontab wrapper: generate rate post and send via hermes
-export PATH="/home/freet/.nvm/versions/node/v24.18.0/bin:$PATH"
+export PATH="/home/freet/.local/bin:/home/freet/.nvm/versions/node/v24.18.0/bin:$PATH"
 cd /home/freet/.openclaw/workspace/sicsicduck
 
 # Generate rate post to temp file
