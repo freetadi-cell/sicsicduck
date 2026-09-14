@@ -599,7 +599,7 @@ async function wanderMerchant(p){
   $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">路遇商旅</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">${dialog}<br><span style="color:var(--muted)">${actionText}</span></div><div class="acts"><button class="btn" onclick="merchantRob()">🔪 搶劫</button><button class="btn" onclick="merchantSpare()">🙏 放過</button></div></div>`;$('modal').classList.add('open');
   window._merchantCtx={merchant,silverReward};
 }
-function merchantRob(){
+async function merchantRob(){
   closeModal();const ctx=window._merchantCtx;const p=player();
   const skillKey=GUARD_SKILLS[Math.floor(Math.random()*GUARD_SKILLS.length)];
   const si=getSkillInfo(skillKey)||{name:'鏢師武功',power:55,type:'martial'};
