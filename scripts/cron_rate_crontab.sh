@@ -1,16 +1,18 @@
 #!/bin/bash
-# crontab wrapper: generate rate post and send via hermes
+# Crontab wrapper: generate rate post and send via Telegram Bot API directly
+# This bypasses Hermes gateway entirely to avoid text batch merging
 export PATH="/home/freet/.local/bin:/home/freet/.nvm/versions/node/v24.18.0/bin:$PATH"
 cd /home/freet/.openclaw/workspace/sicsicduck
 
-# Generate rate post to temp file
-TMPFILE=$(mktemp /tmp/rate-post-XXXXXX.txt)
-python3 scripts/generate_rate_post.py > "$TMPFILE" 2>/dev/null
+# Load env
+[ -f /home/freet/.hermes/.env ] && export $(grep -v '^#' /home/freet/.hermes/.env | xargs)
 
-# Send via hermes
-if [ -s "$TMPFILE" ]; then
-    MSG=$(cat "$TMPFILE")
-    hermes send -t telegram "$MSG" >> /tmp/sicsicduck-rate-cron.log 2>&1
+# Generate rate post
+MSG=$(python3 scripts/generate_rate_post.py 2>/dev/null)
+
+# Send via Telegram Bot API directly (no gateway, no merge)
+if [ -n "$MSG" ]; then
+    curl -s --max-time 30 -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+        --data-urlencode "chat_id=885017126" \
+        --data-urlencode "text=$MSG" >> /tmp/sicsicduck-rate-cron.log 2>&1
 fi
-
-rm -f "$TMPFILE"
