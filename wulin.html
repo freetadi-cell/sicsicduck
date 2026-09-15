@@ -685,7 +685,7 @@ function openSkillPanel(){
     else{for(const s of typeSkills){const m=s.mastery||0,c=s.combat_exp||0;html+=`<div class="sk-row${s.equipped?' active':''}" onclick="toggleEquip('${s.key}','${s.type}')"><span class="sk-name">${esc(s.name)}<br><span class="sk-stats">熟練 ${m}　實戰 ${c}</span></span><span class="sk-rarity skill-tag ${s.rarity}">${RARITY_ORD[s.rarity]||''}${RARITY_LABEL[s.rarity]||''}</span>${s.equipped?'<span class="sk-equipped">✓ 裝備中</span>':''}</div>`}}
     html+=`</div>`;
   }
-  $('mbox').innerHTML=html;$('modal').classList.add('open');
+  $('modal').innerHTML=html;$('modal').classList.add('open');
 }
 async function toggleEquip(skillKey,skillType){
   const p=player();if(!p)return;
