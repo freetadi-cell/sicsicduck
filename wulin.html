@@ -599,17 +599,19 @@ function justiceWalkAway(){closeModal();const p=player();setPlayerAlign(-2);save
 
 // --- Wandering: Merchant ---
 const MERCHANT_NAMES=['西域商人','糧商','絲綢商人','藥商','珠寶商人','茶商'];
+const GUARD_NAMES=['趙鏢頭','錢鏢師','孫鏢師','李鏢師','周鏢師','吳鏢師','鄭鏢師','王鏢師','馮鏢師','陳鏢師'];
 const GUARD_SKILLS=['全真劍法','鐵掌功','越女劍法','倒亂刃法','八仙劍','松風劍法'];
 async function wanderMerchant(p){
   const merchant=MERCHANT_NAMES[Math.floor(Math.random()*MERCHANT_NAMES.length)];
+  const guardName=GUARD_NAMES[Math.floor(Math.random()*GUARD_NAMES.length)];
   const silverReward=Math.floor(Math.random()*8)+3;
   const skillKey=GUARD_SKILLS[Math.floor(Math.random()*GUARD_SKILLS.length)];
   const si=getSkillInfo(skillKey)||{name:'鏢師武功',power:55,type:'martial'};
   const enemyPower=Math.round(si.power*0.8);
-  const dialog=`你路過${esc(playerRegion())}的官道，遇見一隊${esc(merchant)}的鏢隊。鏢師「<b>趙鏢頭</b>」護送着滿載貨物的車隊。`;
+  const dialog=`你路過${esc(playerRegion())}的官道，遇見一隊${esc(merchant)}的鏢隊。鏢師「<b>${esc(guardName)}</b>」護送着滿載貨物的車隊。`;
   const guardInfo=`<span style="color:var(--muted)">鏢師使出「${esc(si.name)}」（威力 ${enemyPower}）</span>`;
   $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">路遇商旅</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">${dialog}<br>${guardInfo}<br><span style="color:var(--gold)">你可以選擇搶劫鏢車（善惡-10），或者放過他們（善惡+2）。</span></div><div class="acts"><button class="btn" onclick="merchantRob()">🔪 搶劫</button><button class="btn" onclick="merchantSpare()">🙏 放過</button></div></div>`;$('modal').classList.add('open');
-  window._merchantCtx={merchant,silverReward,skillKey,si,enemyPower};
+  window._merchantCtx={merchant,guardName,silverReward,skillKey,si,enemyPower};
 }
 async function merchantRob(){
   closeModal();const ctx=window._merchantCtx;const p=player();
@@ -621,9 +623,9 @@ async function merchantRob(){
   const win=Math.random()<winRate;
   setPlayerAlign(-10);
   $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">鏢局之戰</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">
-    鏢師「趙鏢頭」使出「${esc(si.name)}」（威力 ${Math.round(enemyPower)}）與你交手！
-    ${win?`<div style="color:var(--green);margin-top:10px">✅ 你擊敗了趙鏢頭，搶走了鏢車！</div><div style="margin-top:8px">銀兩 +${ctx.silverReward}　閱歷 +3　善惡 -10　實戰度 +8</div>`
-    :`<div style="color:var(--red);margin-top:10px">❌ 趙鏢頭武藝高強，你搶劫失敗！</div><div style="margin-top:8px">閱歷 +1　善惡 -10　實戰度 +3</div>`}
+    鏢師「${esc(ctx.guardName)}」使出「${esc(si.name)}」（威力 ${Math.round(enemyPower)}）與你交手！
+    ${win?`<div style="color:var(--green);margin-top:10px">✅ 你擊敗了${esc(ctx.guardName)}，搶走了鏢車！</div><div style="margin-top:8px">銀兩 +${ctx.silverReward}　閱歷 +3　善惡 -10　實戰度 +8</div>`
+    :`<div style="color:var(--red);margin-top:10px">❌ ${esc(ctx.guardName)}武藝高強，你搶劫失敗！</div><div style="margin-top:8px">閱歷 +1　善惡 -10　實戰度 +3</div>`}
   </div><button class="abtn" onclick="closeModal()">離開</button></div>`;$('modal').classList.add('open');
   if(win){p.silver=(p.silver||0)+ctx.silverReward;p.xp+=3}else{p.xp+=1}
   savePlayer(p);$('playerXp').textContent=p.xp;$('playerSilver').textContent=p.silver||0;
