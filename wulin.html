@@ -433,7 +433,7 @@ function closeModal(){$('modal').classList.remove('open')}
 function pushDlg(text,me,cls,whoName){const d=document.createElement('div');d.className='dlg new'+(me?' me':'')+(cls?' '+cls:'');if(me)d.innerHTML=`<span class="who">${esc(player().name)}</span>${esc(text)}`;else{const wh=cls==='npcattack'?`<b style="color:var(--red)">⚔️ ${esc(whoName)}</b>`:(whoName?esc(whoName):'');d.innerHTML=`<span class="who">${wh}</span>${cls==='npcattack'?'<b style="color:var(--red)">'+esc(text)+'</b>':esc(text)}`}$('dlgArea').appendChild(d);$('mbox').scrollTop=$('mbox').scrollHeight}
 function bumpAff(key,delta){if(!delta)return;const v=aff(key)+delta;setAff(key,v);const bar=$('affBar'),num=$('affNum'),dl=$('affDelta');if(bar)bar.style.width=v+'%';if(num)num.textContent=v;if(dl){dl.textContent=(delta>0?'+':'')+delta;dl.className='affdelta '+(delta>0?'up':'down');setTimeout(()=>{dl.textContent=''},2500)}}
 function triggerAttack(key){const n=world.npcs.find(x=>x.key===key);if(!n)return;$('mbox').classList.add('shake');pushDlg(`${esc(n.name)}大喝一聲：「受死！」`,false,'npcattack',n.name);setTimeout(()=>{const p=player();const dmg=Math.max(1,Math.round(Math.random()*3+1));const xpLost=Math.min(p.xp,dmg*2);p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;pushDlg(`你被${esc(n.name)}一掌擊退，跌坐地上，損失閱歷 ${xpLost}`,true);toast(`⚔️ 遭到${esc(n.name)}攻擊！閱歷 -${xpLost}`)},800)}
-function say(key,i){const n=world.npcs.find(x=>x.key===key);if(!n)return;const o=(n.chat_options||[])[i];if(!o)return;const p=player();if(p.opts[key+':'+i]===worldDay)return;p.opts[key+':'+i]=worldDay;savePlayer(p);const btn=$('opt_'+key+'_'+i);if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 已說</span>'}pushDlg(o.say,true);setTimeout(()=>{pushDlg(o.reply,false);bumpAff(key,o.affinity_delta||0);const ad=o.alignment_delta||0;if(ad)setPlayerAlign(ad);let msg='';if(o.affinity_delta>0)msg='他頗受用 · 好感 +'+o.affinity_delta;else if(o.affinity_delta<0)msg='說錯話了… 好感 '+o.affinity_delta;if(ad>0)msg+=msg?' · ☯ 善行 +'+ad:'☯ 善行 +'+ad;else if(ad<0)msg+=msg?' · ☯ '+ad:'☯ '+ad;if(msg)toast(msg);if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}},400)}
+function say(key,i){const n=world.npcs.find(x=>x.key===key);if(!n)return;const o=(n.chat_options||[])[i];if(!o)return;const p=player();if(p.opts[key+':'+i]===worldDay)return;p.opts[key+':'+i]=worldDay;savePlayer(p);const btn=$('opt_'+key+'_'+i);if(btn){btn.disabled=true;btn.innerHTML=esc(o.say)+' <span class="fx">✓ 已說</span>'}pushDlg(o.say,true);setTimeout(()=>{pushDlg(o.reply,false);bumpAff(key,o.affinity_delta||0);const ad=o.alignment_delta||0;if(ad){p.alignment=Math.max(0,Math.min(1000,Math.round((p.alignment||500)+ad)));renderPlayerBar()}let msg='';if(o.affinity_delta>0)msg='他頗受用 · 好感 +'+o.affinity_delta;else if(o.affinity_delta<0)msg='說錯話了… 好感 '+o.affinity_delta;if(ad>0)msg+=msg?' · ☯ 善行 +'+ad:'☯ 善行 +'+ad;else if(ad<0)msg+=msg?' · ☯ '+ad:'☯ '+ad;if(msg)toast(msg);if(p.spoke[key]!==worldDay){p.spoke[key]=worldDay;p.xp+=2;savePlayer(p);$('playerXp').textContent=p.xp}},400)}
 /* ===== 切磋戰況描述 ===== */
 const SPAR_WIN={bigGap:[
   "你一掌拍出，${n}避無可避，胸口一悶，踉蹌退了三步。你收勢而立，點到即止。",
@@ -507,7 +507,7 @@ function act(key,type){
   if(type==='gift'){
     if(p.gifts[key]===worldDay)return;if((p.silver||0)<5){toast('銀兩不足，送禮需要5兩');return}p.silver=(p.silver||0)-5;$('playerSilver').textContent=p.silver;p.gifts[key]=worldDay;const btn=$('btnGift');if(btn)btn.disabled=true;
     pushDlg('（你奉上一份禮物）',true);
-    setTimeout(async()=>{const na=n.alignment||500,diff=alignDiff(playerAlign(),na),a=aff(key);const r=pickGiftDesc(n.name,a,diff);pushDlg(r.text,false);if(!r.accepted){toast(`${n.name} 拒絕了禮物`);savePlayer(p);return}bumpAff(key,r.affDelta);let giftMsg=`贈禮 · 好感 +${r.affDelta}`;if(na>playerAlign())setPlayerAlign(1);else if(na<playerAlign())setPlayerAlign(-1);if(diff<5&&a>50){const npcRows=await loadNpcSkills(key);const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(teachable.length>0&&Math.random()<0.3){const taught=teachable[Math.floor(Math.random()*teachable.length)];await playerLearnSkill(p.name,taught);const si=getSkillInfo(taught);giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg')}};toast(giftMsg)},400)
+    setTimeout(async()=>{const na=n.alignment||500,diff=alignDiff(playerAlign(),na),a=aff(key);const r=pickGiftDesc(n.name,a,diff);pushDlg(r.text,false);if(!r.accepted){toast(`${n.name} 拒絕了禮物`);savePlayer(p);return}bumpAff(key,r.affDelta);let giftMsg=`贈禮 · 好感 +${r.affDelta}`;if(na>playerAlign()){p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)+1));renderPlayerBar()}else if(na<playerAlign()){p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)-1));renderPlayerBar()}if(diff<5&&a>50){const npcRows=await loadNpcSkills(key);const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(teachable.length>0&&Math.random()<0.3){const taught=teachable[Math.floor(Math.random()*teachable.length)];await playerLearnSkill(p.name,taught);const si=getSkillInfo(taught);giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg')}};toast(giftMsg)},400)
   }else if(type==='spar'){
     if(p.spoke[key+'#spar']===worldDay)return;if((p.stamina||0)<20){toast('體力不足，需要20體力才能切磋');return}p.stamina=Math.max(0,(p.stamina||0)-20);savePlayer(p);$('playerStamina').textContent=p.stamina;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
     const na=n.alignment||500;
@@ -529,7 +529,7 @@ function act(key,type){
     setTimeout(async()=>{if(win){pushDlg(pickSparDesc(n.name,pd,true),false);bumpAff(key,3);let sparMsg='切磋勝 · 閱歷 +5 · 好感 +3';const npcRows=await loadNpcSkills(key);const sparable=npcRows.map(r=>r.skill_key).filter(sk=>canLearnViaSpar(sk)&&!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(sparable.length>0&&Math.random()<0.4){const learned=sparable[Math.floor(Math.random()*sparable.length)];await playerLearnSkill(p.name,learned);const si=getSkillInfo(learned);sparMsg+=' · 學會了「'+esc(si?si.name:learned)+'」！';pushDlg('（你領悟了'+esc(si?si.name:learned)+'的訣竅）',false,'learn-msg')};toast(sparMsg)}else{pushDlg(pickSparDesc(n.name,pd,false),false);bumpAff(key,-1);toast('切磋敗 · 閱歷 +3 · 好感 -1')};
     // 切磋後提升裝備技能嘅熟練度同實戰度
     for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillMastery(p.name,eq.skill_key,win?5:3);await bumpSkillCombat(p.name,eq.skill_key,win?8:5)}
-    if(win&&na>=600)setPlayerAlign(2);else if(!win&&na<400)setPlayerAlign(-1);$('playerXp').textContent=p.xp},400)
+    if(win&&na>=600){p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)+2));renderPlayerBar()}else if(!win&&na<400){p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)-1));renderPlayerBar()}$('playerXp').textContent=p.xp},400)
   }
 }
 
@@ -590,12 +590,12 @@ async function justiceFight(){
     ${win?`<div style="color:var(--green);margin-top:10px">✅ 你擊敗了${esc(ctx.name)}！百姓感激不盡。</div><div style="margin-top:8px">閱歷 +3　善惡 +5　實戰度 +5</div>`
     :`<div style="color:var(--red);margin-top:10px">❌ ${esc(ctx.name)}武功比你想像中強，你被擊敗了。</div><div style="margin-top:8px">閱歷 +1　實戰度 +3</div>`}
   </div><button class="abtn" onclick="closeModal()">離開</button></div>`;$('modal').classList.add('open');
-  if(win){p.xp+=3;setPlayerAlign(5)}else{p.xp+=1}
+  if(win){p.xp+=3;p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)+5));renderPlayerBar()}else{p.xp+=1}
   savePlayer(p);$('playerXp').textContent=p.xp;
   for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillCombat(p.name,eq.skill_key,win?5:3)}
   render();
 }
-function justiceWalkAway(){closeModal();const p=player();setPlayerAlign(-2);savePlayer(p);toast('你選擇離開，善惡 -2');render()}
+function justiceWalkAway(){closeModal();const p=player();p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)-2));savePlayer(p);renderPlayerBar();toast('你選擇離開，善惡 -2');render()}
 
 // --- Wandering: Merchant ---
 const MERCHANT_NAMES=['西域商人','糧商','絲綢商人','藥商','珠寶商人','茶商'];
@@ -621,7 +621,7 @@ async function merchantRob(){
   const ratio=eps>=2*pps?0:Math.max(0,Math.min(1,pps/eps));
   const winRate=ratio===0?0:Math.max(0,Math.min(0.85,0.50+(ratio-1.0)*0.60));
   const win=Math.random()<winRate;
-  setPlayerAlign(-10);
+  p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)-10));renderPlayerBar();
   $('modal').innerHTML=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">鏢局之戰</div><div class="mmeta" style="margin:12px 0;text-align:left;font-size:14px;line-height:1.8">
     鏢師「${esc(ctx.guardName)}」使出「${esc(si.name)}」（威力 ${Math.round(enemyPower)}）與你交手！
     ${win?`<div style="color:var(--green);margin-top:10px">✅ 你擊敗了${esc(ctx.guardName)}，搶走了鏢車！</div><div style="margin-top:8px">銀兩 +${ctx.silverReward}　閱歷 +3　善惡 -10　實戰度 +8</div>`
@@ -632,7 +632,7 @@ async function merchantRob(){
   for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillCombat(p.name,eq.skill_key,win?8:3)}
   render();
 }
-function merchantSpare(){closeModal();const p=player();p.xp+=1;setPlayerAlign(2);savePlayer(p);$('playerXp').textContent=p.xp;toast('你放過了鏢隊，善惡 +2');render()}
+function merchantSpare(){closeModal();const p=player();p.xp+=1;p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)+2));savePlayer(p);renderPlayerBar();$('playerXp').textContent=p.xp;toast('你放過了鏢隊，善惡 +2');render()}
 
 // --- Wandering: Meet NPC ---
 async function wanderNpc(p){
