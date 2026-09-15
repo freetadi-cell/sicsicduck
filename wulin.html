@@ -551,8 +551,8 @@ async function doAction(type){
   }else if(type==='quest'){
     toast('找尋任務功能即將開放');
   }else if(type==='wander'){
-    if((p.stamina||0)<20){toast('體力不足，需要20體力才能到處走走');return}
-    p.stamina=Math.max(0,(p.stamina||0)-20);savePlayer(p);$('playerStamina').textContent=p.stamina;
+    if((p.stamina||0)<10){toast('體力不足，需要10體力才能到處走走');return}
+    p.stamina=Math.max(0,(p.stamina||0)-10);savePlayer(p);$('playerStamina').textContent=p.stamina;
     const roll=Math.random()*100;
     if(roll<30) await wanderJustice(p);
     else if(roll<60) await wanderMerchant(p);
