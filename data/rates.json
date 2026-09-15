@@ -560,13 +560,13 @@
       "hkd": {
         "3m": {
           "new_funds": {
-            "rate": 3.5,
+            "rate": 2.75,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "bank"
           },
           "existing_funds": {
-            "rate": 3.4,
+            "rate": 2.65,
             "min_deposit": 10000,
             "note": "定期存款牌價利率",
             "source": "bank"
@@ -575,13 +575,28 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 3.5,
+            "rate": 2.75,
             "min_deposit": 10000,
             "note": "新資金定期存款",
             "source": "bank"
           },
           "existing_funds": {
-            "rate": 3.4,
+            "rate": 2.65,
+            "min_deposit": 10000,
+            "note": "定期存款牌價利率",
+            "source": "bank"
+          },
+          "exchange": null
+        },
+        "12m": {
+          "new_funds": {
+            "rate": 2.75,
+            "min_deposit": 10000,
+            "note": "新資金定期存款",
+            "source": "bank"
+          },
+          "existing_funds": {
+            "rate": 2.65,
             "min_deposit": 10000,
             "note": "定期存款牌價利率",
             "source": "bank"
