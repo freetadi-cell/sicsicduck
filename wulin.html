@@ -679,7 +679,7 @@ function getPlayerPower(){const equipped=_playerSkillsCache.filter(s=>s.equipped
 function openSkillPanel(){
   const p=player();if(!p)return;
   const types=[{key:'martial',label:'⚔️ 武功'},{key:'neigong',label:'🧘 內功'},{key:'qinggong',label:'💨 輕功'}];
-  let html=`<button class="mclose" onclick="closeModal()">✕</button><div class="mname">我的技能</div><div class="mmeta">點擊技能可裝備/卸下（每類型只能裝備一個）</div>`;
+  let html=`<div class="mback" onclick="closeModal()"></div><div class="mbox"><button class="mclose" onclick="closeModal()">✕</button><div class="mname">我的技能</div><div class="mmeta">點擊技能可裝備/卸下（每類型只能裝備一個）</div>`;
   for(const t of types){
     const typeSkills=getPlayerAllSkills(p.name).filter(s=>s.type===t.key);
     const equipped=typeSkills.find(s=>s.equipped);
@@ -688,6 +688,7 @@ function openSkillPanel(){
     else{for(const s of typeSkills){const m=s.mastery||0,c=s.combat_exp||0;html+=`<div class="sk-row${s.equipped?' active':''}" onclick="toggleEquip('${s.key}','${s.type}')"><span class="sk-name">${esc(s.name)}<br><span class="sk-stats">熟練 ${m}　實戰 ${c}</span></span><span class="sk-rarity skill-tag ${s.rarity}">${RARITY_ORD[s.rarity]||''}${RARITY_LABEL[s.rarity]||''}</span>${s.equipped?'<span class="sk-equipped">✓ 裝備中</span>':''}</div>`}}
     html+=`</div>`;
   }
+  html+=`</div>`;
   $('modal').innerHTML=html;$('modal').classList.add('open');
 }
 async function toggleEquip(skillKey,skillType){
