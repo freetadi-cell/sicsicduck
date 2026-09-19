@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetch Chinese news from NewsData.io + RSS feeds for sicsicduck.com
-Incremental mode: keeps old news, deduplicates, removes articles older than 30 days
+Incremental mode: keeps old news, deduplicates, removes articles older than 7 days
 Expanded sources: HK + TW regions from NewsData.io + RSS feeds (SCMP)
 """
 
