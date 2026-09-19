@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T08:32:26.673167+08:00",
+  "last_updated": "2026-09-19T08:32:21.840521+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1227,13 +1227,13 @@
       "logo_color": "#003B6F",
       "hkd": {
         "1m": {
-          "rate": 2.45,
+          "rate": 2.4,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 2.75,
+          "rate": 2.7,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
@@ -1453,20 +1453,20 @@
           "source": "bank"
         },
         "6m": {
-          "rate": 2.3,
+          "rate": 2.4,
           "min_deposit": 5000.0,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "9m": {
-          "rate": 1.05,
-          "min_deposit": 500000.0,
+          "rate": 2.4,
+          "min_deposit": 5000.0,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "12m": {
-          "rate": 0.95,
-          "min_deposit": 500000.0,
+          "rate": 2.4,
+          "min_deposit": 5000.0,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
         }
@@ -1491,19 +1491,19 @@
           "source": "bank"
         },
         "6m": {
-          "rate": 3.9,
+          "rate": 4.0,
           "min_deposit": 1000.0,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "9m": {
-          "rate": 3.9,
+          "rate": 4.0,
           "min_deposit": 1000.0,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
         },
         "12m": {
-          "rate": 3.9,
+          "rate": 4.0,
           "min_deposit": 1000.0,
           "note": "雲利率（網上/流動理財）",
           "source": "bank"
@@ -2028,7 +2028,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.7,
+            "rate": 2.75,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2042,7 +2042,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.7,
+            "rate": 2.75,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2056,7 +2056,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.7,
+            "rate": 2.75,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2070,7 +2070,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.7,
+            "rate": 2.75,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
