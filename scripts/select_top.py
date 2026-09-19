@@ -44,6 +44,18 @@ _LOW_VALUE_KW = [
 ]
 
 
+def _normalize_source(source):
+    """將唔同來源名稱歸一化（例如 Yahoo 3 個變一個）。"""
+    s = source.lower()
+    if "yahoo" in s:
+        return "Yahoo Finance"
+    if "hket" in s or "香港經濟日報" in s:
+        return "Hk01.com"  # merge hket variants
+    if s == "hk01":
+        return "Hk01.com"
+    return source
+
+
 def news_value_score(article):
     title = str(article.get("title") or "").lower()
     desc = str(article.get("description") or "").lower()
@@ -59,7 +71,7 @@ def news_value_score(article):
     for kw in _LOW_VALUE_KW:
         if kw.lower() in text:
             score -= 20
-    if "finance" in source or "經濟" in source or "yahoo" in source:
+    if "finance" in source or "經濟" in source:
         score += 15
     if source == "cnn":
         score += 10
@@ -89,7 +101,7 @@ def select_top(articles, top_n=3, max_per_source=1):
     selected_ids = set()
     source_count = {}
     for score, orig_i, a in scored:
-        src = a.get("source_name", "unknown")
+        src = _normalize_source(a.get("source_name", "unknown"))
         if source_count.get(src, 0) >= max_per_source:
             continue
         selected_ids.add(id(a))
@@ -135,7 +147,7 @@ def main():
         if id(a) in selected_ids:
             a["pinned"] = True
             pinned.append(a)
-            src = a.get("source_name", "?")
+            src = _normalize_source(a.get("source_name", "?"))
             score = a.get("_score", "?")
             title = a.get("title", "")[:50]
             print(f"  🔝 [{score}] ({src}) {title}")
