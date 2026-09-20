@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetch Chinese news from NewsData.io + RSS feeds for sicsicduck.com
-Incremental mode: keeps old news, deduplicates, removes articles older than 7 days
+Incremental mode: keeps old news, deduplicates, removes articles older than 14 days
 Expanded sources: HK + TW regions from NewsData.io + RSS feeds (SCMP)
 """
 
@@ -42,7 +42,7 @@ NEWS_FILE = DATA_DIR / "news.json"
 CACHE_DIR = SCRIPT_DIR.parent / "articles_cache"
 
 # Settings
-MAX_AGE_DAYS = 7  # Remove articles older than this (daily cleanup)
+MAX_AGE_DAYS = 14  # Remove articles older than this (daily cleanup)
 MAX_PER_CATEGORY_NORMAL = 10  # Max articles per category per region for daily cron
 MAX_PER_CATEGORY_INITIAL = 50  # Max articles per category per region for initial build
 
