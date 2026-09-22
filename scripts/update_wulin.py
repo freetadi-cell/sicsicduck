@@ -55,6 +55,7 @@ def call_kimi(api_key, sys_prompt, user_prompt, max_tokens=4000):
         ],
         "temperature": 0.8,
         "max_tokens": max_tokens,
+        "reasoning_effort": "none",
     }).encode("utf-8")
     req = urllib.request.Request(
         f"{API_BASE}/chat/completions", data=payload,
@@ -296,7 +297,7 @@ def main():
                    + f"\n\n請推進一日（第{new_day}日），只輸出 delta JSON。")
 
     delta = None
-    # kimi-k3 係 reasoning 模型：先燒 token 思考先寫 content，max_tokens 太細會空回覆
+    # kimi-k3 reasoning_effort=none：冇 reasoning burn，8000 tokens 全用喺 content（實測 ~3K-6K 輸出）
     for attempt, mt in enumerate([8000, 12000, 20000], 1):
         try:
             content = call_kimi(api_key, SYS_PROMPT, user_prompt, max_tokens=mt)
