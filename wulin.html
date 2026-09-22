@@ -17,11 +17,17 @@ body{font-family:'Noto Serif SC','Noto Sans TC','PingFang TC',serif;background:v
 .hero-badge{font-size:12px;color:var(--gold);letter-spacing:6px;margin-bottom:12px;opacity:.7;text-transform:uppercase}
 .wulin-logo{height:100px;width:auto;object-fit:contain;display:block;margin:0 auto 12px}
 .worldbar{background:var(--card);border-bottom:1px solid var(--border);padding:14px 20px}
-.wb-date{font-size:15px;color:var(--muted);margin-bottom:4px}
+.wb-date{font-size:15px;color:var(--muted);margin-bottom:10px}
 .wb-date b{color:var(--gold)}
-.wb-name-row{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
+.wb-top-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .wb-name{font-size:18px;font-weight:700;color:var(--text);letter-spacing:1px;cursor:pointer;transition:.2s}
 .wb-name:hover{color:var(--gold)}
+.wb-chip{font-size:13px;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:3px 12px;white-space:nowrap}
+.wb-chip b{color:var(--text);font-weight:600}
+.wb-spacer{flex:1}
+.wb-panel{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);animation:panelDown .25s ease}
+.wb-panel.open{display:block}
+@keyframes panelDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .actmenu{position:fixed;inset:0;z-index:100;display:none}
 .actmenu.open{display:block}
 .actmenu .mback{position:absolute;inset:0;background:rgba(0,0,0,.6)}
@@ -93,6 +99,39 @@ h2::after{content:'';display:inline-block;width:30px;height:1px;background:var(-
 .events li{list-style:none;padding:6px 0;border-bottom:1px dashed var(--border);font-size:14px;color:var(--text)}
 .events li:last-child{border-bottom:none}
 .events .tag{color:var(--gold2);font-size:12px;margin-right:8px}
+/* ===== Events timeline ===== */
+.timeline{position:relative;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 18px 20px 40px}
+.timeline::before{content:'';position:absolute;left:20px;top:28px;bottom:28px;width:1px;background:linear-gradient(180deg,transparent,var(--border) 8%,var(--border) 92%,transparent)}
+.tl-item{position:relative;padding:0 0 18px}
+.tl-item:last-of-type{padding-bottom:0}
+.tl-dot{position:absolute;left:-25px;top:4px;width:10px;height:10px;border-radius:50%;box-sizing:border-box;border:2px solid var(--muted);background:var(--card)}
+.tl-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+.tl-day{font-size:11px;color:var(--gold);background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1px 8px;letter-spacing:.5px}
+.tl-type{font-size:10px;border-radius:10px;padding:1px 8px;letter-spacing:.5px;white-space:nowrap}
+.tl-you{font-size:10px;color:var(--gold);border:1px solid rgba(212,175,55,.4);border-radius:10px;padding:1px 8px;white-space:nowrap}
+.tl-text{font-size:14px;line-height:1.75;color:var(--text)}
+.tl-npcs{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+.tl-npc{font-size:10px;background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:1px 6px;color:var(--muted)}
+.tl-more{display:block;width:100%;margin-top:14px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--muted);padding:9px;font-size:12px;font-family:inherit;cursor:pointer;letter-spacing:1px;transition:.2s}
+.tl-more:hover{border-color:var(--gold2);color:var(--gold)}
+.tl-item.tl-rel .tl-dot{box-shadow:0 0 0 3px rgba(212,175,55,.16)}
+/* type colours — dot border + badge */
+.t-war .tl-dot,.tl-dot.t-war{border-color:#e74c3c}
+.tl-type.t-war{color:#e74c3c;background:rgba(231,76,60,.14)}
+.t-poison .tl-dot,.tl-dot.t-poison{border-color:#9b59b6}
+.tl-type.t-poison{color:#b07cd6;background:rgba(155,89,182,.16)}
+.t-feud .tl-dot,.tl-dot.t-feud{border-color:#ec4899}
+.tl-type.t-feud{color:#ec4899;background:rgba(236,72,153,.14)}
+.t-martial .tl-dot,.tl-dot.t-martial{border-color:#d4af37}
+.tl-type.t-martial{color:#d4af37;background:rgba(212,175,55,.14)}
+.t-sect .tl-dot,.tl-dot.t-sect{border-color:#3498db}
+.tl-type.t-sect{color:#5dade2;background:rgba(52,152,219,.14)}
+.t-travel .tl-dot,.tl-dot.t-travel{border-color:#27ae60}
+.tl-type.t-travel{color:#2ecc71;background:rgba(39,174,96,.14)}
+.t-relic .tl-dot,.tl-dot.t-relic{border-color:#f39c12}
+.tl-type.t-relic{color:#f39c12;background:rgba(243,156,18,.14)}
+.t-misc .tl-dot,.tl-dot.t-misc{border-color:var(--muted)}
+.tl-type.t-misc{color:var(--muted);background:rgba(107,107,123,.14)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
 .npc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;padding:0 4px 8px}
 .npc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;cursor:pointer;transition:.25s;position:relative;overflow:hidden;word-wrap:break-word;overflow-wrap:break-word}
@@ -218,16 +257,26 @@ footer{text-align:center;color:var(--muted);font-size:12px;margin-top:40px;lette
   </div>
   <div class="worldbar">
     <div class="wb-date">🗓 <b id="worldTime">載入中…</b></div>
-    <div class="wb-name-row"><span class="wb-name" id="playerName" onclick="openActMenu()">…</span><a href="#" class="wb-link" style="color:var(--gold)" onclick="openActMenu();return false">你現在要做什麼</a><a href="#" class="wb-logout" onclick="logout();return false">登出</a></div>
-    <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <b id="playerAlignNum2">500</b></div>
-    <div class="wb-progress-wrap"><div class="wb-progress" id="alignProgress"><i id="alignProgressFill" style="width:50%" class="neutral"></i></div><span class="wb-progress-label" id="alignProgressLabel">500</span></div>
-    <div class="wb-xp">閱歷 <b id="playerXp">0</b>　銀兩 <b id="playerSilver">0</b>　體力 <b id="playerStamina">0</b>　📍 <span id="playerRegionText">–</span></div>
-    <div class="skill-row"><div class="skill-list" id="playerSkillsText">載入中…</div><a href="#" class="wb-link" onclick="openSkillPanel();return false">技能設置</a></div>
+    <div class="wb-top-row">
+      <span class="wb-name" id="playerName" onclick="togglePlayerPanel()">…</span>
+      <span class="wb-chip" id="wbSilver">🪙 <b>0</b></span>
+      <span class="wb-chip" id="wbStamina">⚡ <b>0</b></span>
+      <span class="wb-chip" id="wbRegion">📍 <b>–</b></span>
+      <span class="wb-spacer"></span>
+      <a href="#" class="wb-link" style="color:var(--gold)" onclick="openActMenu();return false">行動</a>
+      <a href="#" class="wb-logout" onclick="logout();return false">登出</a>
+    </div>
+    <div class="wb-panel" id="playerPanel">
+      <div class="wb-align" id="playerAlignBar2"><span id="playerAlignLabel2">–</span> <b id="playerAlignNum2">500</b></div>
+      <div class="wb-progress-wrap"><div class="wb-progress" id="alignProgress"><i id="alignProgressFill" style="width:50%" class="neutral"></i></div><span class="wb-progress-label" id="alignProgressLabel">500</span></div>
+      <div class="wb-xp">閱歷 <b id="playerXp">0</b></div>
+      <div class="skill-row"><div class="skill-list" id="playerSkillsText">載入中…</div><a href="#" class="wb-link" onclick="openSkillPanel();return false">技能設置</a></div>
+    </div>
   </div>
   <h2 id="travelTitle" style="display:none">行走江湖</h2>
   <div class="region-panel" id="regionPanel" style="display:none"></div>
   <h2>江湖大事</h2>
-  <div class="events" id="events">載入中…</div>
+  <div class="timeline" id="events">載入中…</div>
   <h2>江湖人物<span id="regionTag" style="font-size:12px;color:var(--muted);font-weight:normal;margin-left:12px"></span></h2>
   <div class="npc-grid" id="npcGrid"></div>
   <footer>世界由 AI 推進 · 只有同區 NPC 才可以互動 · 本頁為未公開原型</footer>
@@ -401,29 +450,56 @@ function confirmTravelFromModal(){if(!_selectedDest)return;if(playerCooldown()){
 function doTravel(dest,days){if(playerCooldown()){toast('你還在趕路，不能再出發');return}confirmTravel(dest,days)}
 let travelTimer=null;
 function startTravelTimer(){if(travelTimer)clearInterval(travelTimer);travelTimer=setInterval(()=>{finishTravelIfDone();finishTrainIfDone();updateCooldown()},1000);setInterval(syncStamina,60000)}
-async function syncStamina(){const p=player();if(!p)return;try{const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=save&name=eq.${encodeURIComponent(p.name)}`);if(rows&&rows[0]&&rows[0].save){const sv=typeof rows[0].save==='string'?JSON.parse(rows[0].save):rows[0].save;if(sv.stamina!==undefined&&sv.stamina!==p.stamina){p.stamina=sv.stamina;savePlayer(p);$('playerStamina').textContent=p.stamina}}}catch(e){}}
+async function syncStamina(){const p=player();if(!p)return;try{const rows=await apiGet(`${SUPABASE_URL}/rest/v1/players?select=save&name=eq.${encodeURIComponent(p.name)}`);if(rows&&rows[0]&&rows[0].save){const sv=typeof rows[0].save==='string'?JSON.parse(rows[0].save):rows[0].save;if(sv.stamina!==undefined&&sv.stamina!==p.stamina){p.stamina=sv.stamina;savePlayer(p);updatePlayerChips()}}}catch(e){}}
 function updateCooldown(){const cd=playerCooldown();const el=$('cooldownText');if(!el)return;if(!cd){const reg=$('regionPanel');if(reg&&reg.style.display!=='none')renderRegionPanel();return}const hrs=Math.floor(cd.remainingMs/3600000);const mins=Math.floor((cd.remainingMs%3600000)/60000);const secs=Math.floor((cd.remainingMs%60000)/1000);el.innerHTML=`🚶 你正在趕路去 <b>${esc(cd.dest)}</b>…… 剩餘 <b>${hrs}時${String(mins).padStart(2,'0')}分${String(secs).padStart(2,'0')}秒</b>`}
+
+/* ===== Events timeline ===== */
+const EVENT_TYPES=[
+  {key:'war',label:'⚔️ 戰事',re:/攻城|夜襲|大戰|激戰|交戰|廝殺|圍攻|伏兵|亂箭|火油|行軍|兵敗|偷襲|決鬥/},
+  {key:'poison',label:'☠️ 毒傷',re:/中毒|毒發|毒入|情花|斷腸草|解藥|毒性|毒/},
+  {key:'feud',label:'💢 恩怨',re:/仇|恨|怨|背叛|反目|報復|奪|搶|憤然|大怒|反噬/},
+  {key:'travel',label:'🐎 行蹤',re:/前往|離開|直奔|趕往|策馬|南奔|北|逃往|潛入|入城|抵達|動身/},
+  {key:'martial',label:'🗡️ 武學',re:/武功|內力|練成|領悟|絕學|秘笈|劍法|掌法|心法|真經|招式/},
+  {key:'relic',label:'📜 秘寶',re:/絹帛|寶|玉|丹|經書|藏寶|遺物/},
+  {key:'sect',label:'🏯 門派',re:/全真|古墓|丐幫|少林|武當|大理|蒙古|門派|教派|幫/},
+];
+const EVENT_TYPE_MAP=Object.fromEntries(EVENT_TYPES.map(t=>[t.key,t]));
+const EVENT_FALLBACK={key:'misc',label:'📌 江湖'};
+function eventType(e){
+  if(e.type&&EVENT_TYPE_MAP[e.type])return EVENT_TYPE_MAP[e.type];
+  const text=e.text||'';
+  for(const t of EVENT_TYPES){if(t.re.test(text))return t}
+  return EVENT_FALLBACK;
+}
+/* NPC keys the player has actually met — used to highlight relevant events */
+function playerKnownKeys(){
+  const p=player();const s=new Set();if(!p)return s;
+  Object.keys(p.aff||{}).forEach(k=>s.add(k));
+  Object.keys(p.spoke||{}).forEach(k=>s.add(String(k).split('#')[0]));
+  return s
+}
+let _eventsExpanded=false;
+const EVENTS_COLLAPSED=6;
+function renderEvents(){
+  const el=$('events');if(!el)return;
+  const all=(world.events||[]);
+  const known=playerKnownKeys();
+  const list=_eventsExpanded?all.slice(-40):all.slice(-EVENTS_COLLAPSED);
+  if(list.length===0){el.innerHTML='<div class="tl-text" style="color:var(--muted)">江湖暫時風平浪靜……</div>';return}
+  const html=list.map(e=>{
+    const t=eventType(e);
+    const npcs=(e.npcs||[]);
+    const rel=npcs.some(k=>known.has(k));
+    return `<div class="tl-item${rel?' tl-rel':''}"><span class="tl-dot t-${t.key}"></span><div class="tl-head"><span class="tl-day">第${esc(e.day)}日</span><span class="tl-type t-${t.key}">${t.label}</span>${rel?'<span class="tl-you">你認識的人</span>':''}</div><div class="tl-text">${esc(e.text)}</div>${npcs.length?`<div class="tl-npcs">${npcs.map(k=>{const n=(world.npcs||[]).find(x=>x.key===k);return n?`<span class="tl-npc">${esc(n.name)}</span>`:''}).join('')}</div>`:''}</div>`
+  }).join('');
+  const more=all.length>EVENTS_COLLAPSED?`<button class="tl-more" onclick="toggleEvents()">${_eventsExpanded?'▲ 收起':'▼ 查看全部 '+all.length+' 條江湖大事'}</button>`:'';
+  el.innerHTML=html+more;
+}
+function toggleEvents(){_eventsExpanded=!_eventsExpanded;renderEvents()}
 
 /* ===== Load & Render ===== */
 const NPC_AVATARS={yangguo:'🦅',xiaolongnu:'❄️',guojing:'🐉',huangrong:'🪷',liguomochou:'🌺',luwushuang:'🌸',chengying:'🎋',gongsunzhi:'🌿',zhoubotong:'🐒',yelvqi:'🏹',testren:'👤'};
 function npcAvatar(key){return NPC_AVATARS[key]||'🎭'}
-function eventIcon(text){
-  const t=String(text||'');
-  if(/秘笈|神兵|寶劍|名劍|寶刀/.test(t))return'🗡️';
-  if(/蒙古|攻城|守軍|敵軍|重兵|軍營|大軍|戰況|激戰|猛攻|守城/.test(t))return'🏯';
-  if(/毒|毒霧|寒毒|蠱/.test(t))return'☠️';
-  if(/奪|搶|劫|殺|血|仇|衝突/.test(t))return'⚔️';
-  if(/傷|死|昏迷|奄奄/.test(t))return'💔';
-  if(/救|醫|療|解藥|丹/.test(t))return'💊';
-  if(/結盟|聯手|和解|拜/.test(t))return'🤝';
-  if(/婚|姻緣|愛慕|鍾情/.test(t))return'❤️';
-  return'📜';
-}
-function renderEventsList(){
-  const evts=world.events||[];
-  const maxDay=evts.length?evts.reduce((m,e)=>Math.max(m,e.day||0),0):0;
-  return evts.slice(-6).map(e=>`<li class="${e.day===maxDay?'event-new':''}"><span class="e-icon">${eventIcon(e.text)}</span><span class="tag">第${e.day}日</span>${esc(e.text)}</li>`).join('');
-}
 async function load(){
   try{const r=await fetch('data/wulin_world.json?t='+Date.now());world=await r.json()}
   catch(e){$('worldTime').textContent='載入失敗';return}
@@ -431,13 +507,15 @@ async function load(){
   await loadSkillsDb();
   await cloudLoad();
   if(!player()){authTab('login');$('auth').classList.add('open');renderGuest();return}
-  const p=player();$('playerStamina').textContent=p.stamina||0;
+  const p=player();updatePlayerChips();
   await loadPlayerSkills(p.name);
   await grantBasicSkills(player().name);
   startTravelTimer();render();
 }
-function renderGuest(){$('worldTime').textContent=world.meta.world_time||'—';$('playerName').textContent='—';$('playerXp').textContent='—';$('playerRegionText').textContent='📍 –';$('events').innerHTML=renderEventsList();$('regionPanel').style.display='none';$('travelTitle').style.display='none';renderNpcs(null)}
-function render(){$('worldTime').textContent=world.meta.world_time||'—';const p=player();if(!p){renderGuest();return}$('playerName').textContent=p.name;$('playerXp').textContent=p.xp;$('playerSilver').textContent=p.silver||0;$('playerStamina').textContent=p.stamina||0;$('playerRegionText').textContent=p.region||'襄陽城';renderPlayerHeaderSkills();renderPlayerBar();$('events').innerHTML=renderEventsList();renderRegionPanel();renderNpcs(p)}
+function renderGuest(){$('worldTime').textContent=world.meta.world_time||'—';$('playerName').textContent='—';$('wbSilver').innerHTML='🪙 <b>–</b>';$('wbStamina').innerHTML='⚡ <b>–</b>';$('wbRegion').innerHTML='📍 <b>–</b>';$('playerPanel').classList.remove('open');renderEvents();$('regionPanel').style.display='none';$('travelTitle').style.display='none';renderNpcs(null)}
+function togglePlayerPanel(){const el=$('playerPanel');if(!el)return;el.classList.toggle('open')}
+function updatePlayerChips(){const p=player();if(!p)return;const s=$('wbSilver'),st=$('wbStamina'),r=$('wbRegion'),xp=$('playerXp');if(s)s.innerHTML=`🪙 <b>${p.silver||0}</b>`;if(st)st.innerHTML=`⚡ <b>${p.stamina||0}</b>`;if(r)r.innerHTML=`📍 <b>${esc(p.region||'襄陽城')}</b>`;if(xp)xp.textContent=p.xp||0}
+function render(){$('worldTime').textContent=world.meta.world_time||'—';const p=player();if(!p){renderGuest();return}$('playerName').textContent=p.name;$('playerXp').textContent=p.xp;$('wbSilver').innerHTML=`🪙 <b>${p.silver||0}</b>`;$('wbStamina').innerHTML=`⚡ <b>${p.stamina||0}</b>`;$('wbRegion').innerHTML=`📍 <b>${esc(p.region||'襄陽城')}</b>`;renderPlayerHeaderSkills();renderPlayerBar();renderEvents();renderRegionPanel();renderNpcs(p)}
 function renderNpcs(p){const p2=p||player();if(!p2){renderNpcGrid(world.npcs);return}const cur=playerRegion(),cd=playerCooldown();const local=world.npcs.filter(n=>n.region===cur);$('regionTag').textContent=cd?`(冷卻中)`:`(在 ${esc(cur)})`;if(cd){$('npcGrid').innerHTML=`<div style="text-align:center;color:var(--muted);padding:30px;font-size:14px;grid-column:1/-1">🚶 你正在趕路，到達後才能與 NPC 互動</div>`;return}renderNpcGrid(local)}
 function renderNpcGrid(npcs){const p=player(),pa=playerAlign();$('npcGrid').innerHTML=npcs.map(n=>{const a=aff(n.key),al=n.alignment||500,diff=alignDiff(pa,al),ac=alignCss(al);return`<div class="npc" onclick="openNpc('${n.key}')"><div class="npc-top ${ac}"></div><div class="npc-head"><div class="npc-avatar ${ac}">${npcAvatar(n.key)}</div><div><div class="nm">${esc(n.name)}</div><div class="tt">${esc(n.title||'')}</div></div></div><div class="alabel ${ac}">${alignLabelShort(al)} · ${al}</div><div class="mood">心境：${esc(n.mood||'')}</div><div class="att">${esc(n.attitude||'')}</div><div class="skill-list" id="npcSkills_${n.key}">載入中…</div><div class="affbar"><i style="width:${a}%"></i></div><div class="affnum">好感 ${a}${diff>300?' · <span style="color:var(--red)">道不同</span>':''}</div></div>`}).join('');npcs.forEach(async n=>{const rows=await loadNpcSkills(n.key);const skills=rows.map(r=>getSkillInfo(r.skill_key)).filter(Boolean);const el=document.getElementById('npcSkills_'+n.key);if(el)el.innerHTML=skills.map(s=>renderSkillTag(s,false)).join('')})}
 
@@ -544,11 +622,11 @@ function act(key,type){
   const n=world.npcs.find(x=>x.key===key);const p=player();
   if(type==='flee'){const flee=Math.random()>0.3;if(flee){pushDlg('（你轉身狂奔，幸虧甩掉了'+esc(n.name)+'）',true);toast('成功逃走！');setTimeout(closeModal,1000)}else{pushDlg('（你轉身想走，被'+esc(n.name)+'一把揪住）想走？沒那麼容易！',false,'npcattack',n.name);const xpLost=3;p.xp=Math.max(0,p.xp-xpLost);savePlayer(p);$('playerXp').textContent=p.xp;pushDlg(`被打了幾巴掌，損失閱歷 ${xpLost}`,true);toast('逃走失敗！閱歷 -'+xpLost)}return}
   if(type==='gift'){
-    if(p.gifts[key]===worldDay)return;if((p.silver||0)<5){toast('銀兩不足，送禮需要5兩');return}p.silver=(p.silver||0)-5;$('playerSilver').textContent=p.silver;p.gifts[key]=worldDay;const btn=$('btnGift');if(btn)btn.disabled=true;
+    if(p.gifts[key]===worldDay)return;if((p.silver||0)<5){toast('銀兩不足，送禮需要5兩');return}p.silver=(p.silver||0)-5;updatePlayerChips();p.gifts[key]=worldDay;const btn=$('btnGift');if(btn)btn.disabled=true;
     pushDlg('（你奉上一份禮物）',true);
     setTimeout(async()=>{const na=n.alignment||500,diff=alignDiff(playerAlign(),na),a=aff(key);const r=pickGiftDesc(n.name,a,diff);pushDlg(r.text,false);if(!r.accepted){toast(`${n.name} 拒絕了禮物`);savePlayer(p);return}bumpAff(key,r.affDelta);let giftMsg=`贈禮 · 好感 +${r.affDelta}`;if(na>playerAlign()){p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)+1));renderPlayerBar()}else if(na<playerAlign()){p.alignment=Math.max(0,Math.min(1000,(p.alignment||500)-1));renderPlayerBar()}if(diff<5&&a>50){const npcRows=await loadNpcSkills(key);const teachable=npcRows.map(r=>r.skill_key).filter(sk=>!_playerSkillsCache.some(ps=>ps.skill_key===sk));if(teachable.length>0&&Math.random()<0.3){const taught=teachable[Math.floor(Math.random()*teachable.length)];await playerLearnSkill(p.name,taught);const si=getSkillInfo(taught);giftMsg+=' · '+esc(n.name)+'傳授了「'+esc(si?si.name:taught)+'」！';pushDlg('（'+esc(n.name)+'將「'+esc(si?si.name:taught)+'」傳授予你）',false,'learn-msg')}};toast(giftMsg)},400)
   }else if(type==='spar'){
-    if(p.spoke[key+'#spar']===worldDay)return;if((p.stamina||0)<20){toast('體力不足，需要20體力才能切磋');return}p.stamina=Math.max(0,(p.stamina||0)-20);savePlayer(p);$('playerStamina').textContent=p.stamina;p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
+    if(p.spoke[key+'#spar']===worldDay)return;if((p.stamina||0)<20){toast('體力不足，需要20體力才能切磋');return}p.stamina=Math.max(0,(p.stamina||0)-20);savePlayer(p);updatePlayerChips();p.spoke[key+'#spar']=worldDay;const btn=$('btnSpar');if(btn)btn.disabled=true;
     const na=n.alignment||500;
     // 計算玩家戰力：從裝備嘅技能用 skillActualPower 計算
     const equipped=_playerSkillsCache.filter(s=>s.equipped);
@@ -591,7 +669,7 @@ async function doAction(type){
     toast('找尋任務功能即將開放');
   }else if(type==='wander'){
     if((p.stamina||0)<10){toast('體力不足，需要10體力才能到處走走');return}
-    p.stamina=Math.max(0,(p.stamina||0)-10);savePlayer(p);$('playerStamina').textContent=p.stamina;
+    p.stamina=Math.max(0,(p.stamina||0)-10);savePlayer(p);updatePlayerChips();
     const roll=Math.random()*100;
     if(roll<30) await wanderJustice(p);
     else if(roll<60) await wanderMerchant(p);
@@ -667,7 +745,7 @@ async function merchantRob(){
     :`<div style="color:var(--red);margin-top:10px">❌ ${esc(ctx.guardName)}武藝高強，你搶劫失敗！</div><div style="margin-top:8px">閱歷 +1　善惡 -10　實戰度 +3</div>`}
   </div><button class="abtn" onclick="closeModal()">離開</button></div>`;$('modal').classList.add('open');
   if(win){p.silver=(p.silver||0)+ctx.silverReward;p.xp+=3}else{p.xp+=1}
-  savePlayer(p);$('playerXp').textContent=p.xp;$('playerSilver').textContent=p.silver||0;
+  savePlayer(p);$('playerXp').textContent=p.xp;updatePlayerChips()
   for(const eq of _playerSkillsCache.filter(s=>s.equipped)){await bumpSkillCombat(p.name,eq.skill_key,win?8:3)}
   render();
 }
@@ -704,7 +782,7 @@ async function wanderSkillBook(p){
 // --- Wandering: Silver ---
 function wanderSilver(p){
   const amount=Math.floor(Math.random()*10)+1;
-  p.silver=(p.silver||0)+amount;savePlayer(p);$('playerSilver').textContent=p.silver;
+  p.silver=(p.silver||0)+amount;savePlayer(p);updatePlayerChips();
   toast(`你在${esc(playerRegion())}的地上拾到 ${amount} 兩銀子！`);render();
 }
 
