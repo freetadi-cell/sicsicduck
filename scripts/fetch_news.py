@@ -423,30 +423,47 @@ def scrape_cnn(url, source_name, category):
         resp = requests.get(url, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        articles = []
-        seen = set()
+        # 圖說過濾：攝影師 credit（Getty/Reuters/AP/EPA/Shutterstock…）同埋 'Clipped From Video'
+        CAPTION_RE = re.compile(
+            r"Getty|Reuters|EPA-EFE|Shutterstock|NurPhoto|/AP\b|\bAP$| Courtesy |Clipped From Video",
+            re.I)
+        # CNN 首頁 anchor 會包住 badge（•、Breaking News、Analysis、Fact Check 等）+ 圖說 + headline，
+        # a_tag.get_text() 成版都攞埋。真正標題喺 class 含 'headline' 嘅 span。
+        PREFIX_RE = re.compile(
+            r"^(•+|Breaking News|Analysis|Live Updates?|Exclusive|Flashback|Fact Check|Editor’s Note|Opinion)\s*[:：]?\s*",
+            re.I)
+        BYLINE_RE = re.compile(r"^by\s+[A-Z]", re.I)
+
+        best = {}  # href -> 最長 title（CNN 同一篇文會有多個 anchor/span，短長不一）
         for a_tag in soup.find_all("a", href=True):
             href = a_tag.get("href", "")
-            title_text = a_tag.get_text(strip=True)
-            if not title_text or len(title_text) < 15:
-                continue
             # 只保留真正嘅新聞 article URL（/YYYY/MM/DD/ 格式）
             if "/video/" in href or "/gallery/" in href or "/live-news/" in href:
                 continue
             if not re.search(r"/\d{4}/\d{2}/\d{2}/", href):
                 continue
+            # 同一 anchor 入面可能有多個 headline span — 攞最長嗰個
+            spans = a_tag.find_all("span", class_=re.compile(r"headline"))
+            candidates = []
+            for sp in spans:
+                t = PREFIX_RE.sub("", sp.get_text(strip=True))
+                if t and len(t) >= 15 and not CAPTION_RE.search(t) and not BYLINE_RE.match(t):
+                    candidates.append(t)
+            if not candidates:
+                continue
+            title_text = max(candidates, key=len)
             if not href.startswith("http"):
                 href = "https://edition.cnn.com" + href if href.startswith("/") else href
+            if href not in best or len(title_text) > len(best[href]):
+                best[href] = title_text
+
+        articles = []
+        for href, title_text in best.items():
             article_id = hashlib.md5(href.encode()).hexdigest()
-            if article_id in seen:
-                continue
-            seen.add(article_id)
-            desc_tag = a_tag.find_next("p")
-            desc = desc_tag.get_text(strip=True)[:500] if desc_tag else ""
             articles.append({
                 "id": article_id,
                 "title": title_text[:200],
-                "description": desc,
+                "description": "",
                 "link": href,
                 "pubDate": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
                 "fetched_at": datetime.now(HKT).strftime("%Y-%m-%d %H:%M:%S"),
