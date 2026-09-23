@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>digger对照测试</title>
+<link rel="stylesheet" href="js-dos.css">
+<style>body{background:#000;margin:0}#dos{width:960px;height:720px;margin:20px auto}</style>
+</head><body>
+<div id="dos"></div>
+<script src="js-dos.js"></script>
+<script>
+Dos(document.getElementById("dos"), {
+  url: "./digger-test.jsdos",
+  pathPrefix: "./emulators/",
+  theme: "dark",
+  backend: "dosbox",
+  backendLocked: true
+});
+</script>
+</body></html>
