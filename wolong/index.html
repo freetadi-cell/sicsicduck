@@ -91,19 +91,22 @@
     }, 200);
   }
 
-  // canvas 內容區（扣掉 letterbox 黑邊）→ 0..1 座標
+  // canvas 內容區 → 0..1 座標
+  // Ga() 已經將 canvas 本身 resize + 置中到啱啱好包住遊戲內容，
+  // 所以直接用 canvas CSS 盒（style.width/height/left/top）即係內容區。
   function toGameXY(clientX, clientY) {
     var canvas = el.querySelector("canvas");
     if (!canvas) { return null; }
     var r = canvas.getBoundingClientRect();
-    // 遊戲 320x200 (16:10) fit 入 canvas：以闊為準計出實際內容高
-    var contentH = r.width * (200 / 320);
-    var top = r.top + (r.height - contentH) / 2;
-    var x = (clientX - r.left) / r.width;
-    var y = (clientY - top) / contentH;
-    x = Math.max(0, Math.min(1, x));
-    y = Math.max(0, Math.min(1, y));
-    return { x: x, y: y };
+    if (r.width <= 0 || r.height <= 0) { return null; }
+    var cs = getComputedStyle(canvas);
+    var cw = parseFloat(cs.width) || r.width;
+    var ch = parseFloat(cs.height) || r.height;
+    var cl = parseFloat(cs.left) || 0;
+    var ct = parseFloat(cs.top) || 0;
+    var cssX = clientX - r.left - cl, cssY = clientY - r.top - ct;
+    if (cssX < 0 || cssY < 0 || cssX > cw || cssY > ch) { return null; }
+    return { x: cssX / cw, y: cssY / ch };
   }
 
   function click(btn, holdMs) {
