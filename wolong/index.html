@@ -175,12 +175,15 @@
   function bindTouch(layer) {
     var startX = 0, startY = 0, startT = 0;
     var lastTapT = 0, lastTapX = 0, lastTapY = 0;
-    var moved = false, downSent = false, longTimer = null;
+    var moved = false, downSent = false, longTimer = null, pendingLeft = null;
     var TAP_MS = 350, TAP_PX = 14, DBL_MS = 320, DBL_PX = 30, LONG_MS = 350;
     function clearLong() { if (longTimer) { clearTimeout(longTimer); longTimer = null; } }
+    function clearPending() { if (pendingLeft) { clearTimeout(pendingLeft); pendingLeft = null; } }
 
     layer.addEventListener("touchstart", function (e) {
       if (!ci || e.touches.length !== 1) { return; }
+      // 上一下 tap 仲等緊確認係咪 double-tap（delayed 左鍵未送出）：取消佢
+      clearPending();
       var t = e.touches[0];
       startX = t.clientX; startY = t.clientY; startT = Date.now();
       moved = false; downSent = false;
@@ -279,21 +282,33 @@
       var p = toGameXY(t.clientX, t.clientY);
       logTouch("tap", t.clientX, t.clientY, p);
       if (!p) { e.preventDefault(); return; }
-      try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
       if (now - lastTapT < DBL_MS &&
           Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY) < DBL_PX) {
-        click(1);            // 第二下 → 右鍵
+        try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
+        click(1);            // 第二下 → 右鍵（唔送左鍵）
         lastTapT = 0;
       } else {
-        // 第一點 hold 0.8s（DOS 輪詢式讀掣，太快會 miss）
-        click(0, 800);
+        // 第一點：等 DBL_MS，期間無第二下先送左鍵（hold 0.8s，DOS 輪詢先食到）。
+        // 有第二下就變右鍵，左鍵唔送——唔會再有多餘左鍵彈 cursor。
+        (function (pp) {
+          pendingLeft = setTimeout(function () {
+            pendingLeft = null;
+            try {
+              ci.sendMouseMotion(pp.x, pp.y);
+              ci.sendMouseButton(0, true);
+              setTimeout(function () {
+                try { ci.sendMouseButton(0, false); } catch (e2) {}
+              }, 800);
+            } catch (err) {}
+          }, DBL_MS);
+        })(p);
         lastTapT = now; lastTapX = t.clientX; lastTapY = t.clientY;
       }
       e.preventDefault();
     }, { passive: false });
 
     layer.addEventListener("touchcancel", function () {
-      clearLong();
+      clearLong(); clearPending();
       if (ci && downSent) { try { ci.sendMouseButton(0, false); } catch (e) {} }
       downSent = false; moved = false; lastTapT = 0;
     });
