@@ -216,6 +216,7 @@
       if (!ci || e.touches.length !== 1) { return; }
       // 上一下 tap 仲等緊確認係咪 double-tap（delayed 左鍵未送出）：取消佢
       clearPending();
+      window.__padSentX = 0; window.__padSentY = 0;   // 觸控板增量歸零
       var t = e.touches[0];
       startX = t.clientX; startY = t.clientY; startT = Date.now();
       moved = false; downSent = false;
@@ -246,7 +247,9 @@
       var dx = t.clientX - startX, dy = t.clientY - startY;
       if (TOUCH_MODE === "touchpad") {
         // 觸控板模式：手指位移 → 相對 mouse motion（唔㩒掣純郁 cursor；
-        // 單指拖曳就㩒住左鍵拖）
+        // 單指拖曳就㩒住左鍵拖）。
+        // 注意：rx/ry 係 handler 頂計出嚟嘅全量。moved 之前每下 move 只送
+        // 其中一小部分（0.2x），郁得多先慢慢加速，避免一起手就飛。
         var canvas = el.querySelector("canvas");
         var r = canvas ? canvas.getBoundingClientRect() : { width: 800, height: 600 };
         var rx = dx / r.width, ry = dy / r.height;
@@ -259,9 +262,17 @@
             ci.sendMouseButton(0, true);
           }
           if (moved) { ci.sendMouseRelativeMotion(rx, ry); }
-          else { ci.sendMouseRelativeMotion(rx * 0.2, ry * 0.2); }
+          else {
+            // 未夠 threshold 郁 cursor 都要郁，但要細步＋唔㩒掣。
+            // rx/ry 係由 touchstart 起計嘅全量——唔可以直接送，
+            // 要減返上次已送嘅剩低增量，否則每次累加愈送愈大。
+            var px = (window.__padSentX || 0), py = (window.__padSentY || 0);
+            var ix = rx * 0.2 - px, iy = ry * 0.2 - py;
+            window.__padSentX = rx * 0.2; window.__padSentY = ry * 0.2;
+            if (ix || iy) { ci.sendMouseRelativeMotion(ix, iy); }
+          }
         } catch (err) {}
-        startX = t.clientX; startY = t.clientY;   // 增量式
+        if (moved) { startX = t.clientX; startY = t.clientY; }   // 增量式（淨拖曳先 reset）
         swallowEvent(e);
         return;
       }
