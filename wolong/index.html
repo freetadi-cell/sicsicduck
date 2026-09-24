@@ -227,6 +227,9 @@
         var canvas = el.querySelector("canvas");
         var r = canvas ? canvas.getBoundingClientRect() : { width: 800, height: 600 };
         var rx = dx / r.width, ry = dy / r.height;
+        if (e.touches.length === 1) {
+          logTouch("pad-move", t.clientX, t.clientY, toGameXY(t.clientX, t.clientY));
+        }
         try {
           if (!moved && Math.hypot(dx, dy) > TAP_PX) {
             moved = true; downSent = true;
@@ -267,7 +270,11 @@
         try { if (downSent) { ci.sendMouseButton(0, false); } } catch (err) {}
         if (!moved) {
           var dt0 = Date.now() - startT;
-          if (dt0 <= TAP_MS) { click(0, 120); }
+          if (dt0 <= TAP_MS) {
+            var tt = e.changedTouches[0];
+            logTouch("pad-tap", tt.clientX, tt.clientY, toGameXY(tt.clientX, tt.clientY));
+            click(0, 120);
+          }
         }
         downSent = false; moved = false; lastTapT = 0;
         swallowEvent(e);
