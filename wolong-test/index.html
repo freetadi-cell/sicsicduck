@@ -43,22 +43,175 @@
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div class="hint">
-  🧪 <b>測試版：</b>已關閉所有音效 + 改用 dosboxX 核心，測試 Android Chrome 會唔會仲 backend crash。<br>
-  📱 建議轉橫屏遊玩。點畫面 = 滑鼠點擊；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
-  🔑 <b>過密碼關：</b>滑鼠<b>點住「確定」唔好放（約1秒）</b>再鬆開。<br>
+  🧪 <b>測試版：</b>dosboxX 核心 + 自訂觸控（唔使開 Mobile controls）。<br>
+  📱 <b>觸控：</b>點一下 = 滑鼠左鍵；連點兩下 = 滑鼠右鍵；撳住拖曳 = 滑動地圖。建議轉橫屏遊玩；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
+  🔑 <b>過密碼關：</b>點住「確定」唔好放（約1秒）再鬆開。<br>
 </div>
 <script src="./js-dos.js"></script>
 <script>
 (function () {
   var el = document.getElementById("dos");
+  var ci = null;          // CommandInterface, filled on ci-ready
+  var IS_TOUCH = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
 
   Dos(el, {
     url: "./wolong.jsdos",
     pathPrefix: "./emulators/",
     theme: "dark",
     backend: "dosboxX",
-    backendLocked: true
+    backendLocked: true,
+    onEvent: function (ev, arg) {
+      if (ev === "ci-ready") {
+        ci = arg; window.__ciReady = true;
+        var tl = document.getElementById("touchLayer");
+        if (tl) { tl.style.display = "block"; }
+      }
+    }
   });
+
+  // ---------- 自訂觸控層（mobile only）：tap=左鍵、double-tap=右鍵、drag=滑動 ----------
+  // 注意：冇 ci（未 ci-ready）之前唔攔截，等 Play 掣可以正常撳
+  if (IS_TOUCH) {
+    var layer = document.createElement("div");
+    layer.id = "touchLayer";
+    layer.style.cssText = "position:absolute;inset:0;z-index:30;touch-action:none;display:none;";
+    // 等 player 建好 stage 結構先掛上去
+    var tries = 0;
+    var mountTimer = setInterval(function () {
+      var anchor = el.querySelector(".bg-black.h-full") || el;
+      if (anchor && getComputedStyle(anchor).position === "static") {
+        anchor.style.position = "relative";
+      }
+      if (anchor) {
+        anchor.appendChild(layer);
+        clearInterval(mountTimer);
+        bindTouch(layer);
+      }
+      if (++tries > 100) { clearInterval(mountTimer); }
+    }, 200);
+  }
+
+  // canvas 內容區（扣掉 letterbox 黑邊）→ 0..1 座標
+  function toGameXY(clientX, clientY) {
+    var canvas = el.querySelector("canvas");
+    if (!canvas) { return null; }
+    var r = canvas.getBoundingClientRect();
+    // 遊戲 320x200 (16:10) fit 入 canvas：以闊為準計出實際內容高
+    var contentH = r.width * (200 / 320);
+    var top = r.top + (r.height - contentH) / 2;
+    var x = (clientX - r.left) / r.width;
+    var y = (clientY - top) / contentH;
+    x = Math.max(0, Math.min(1, x));
+    y = Math.max(0, Math.min(1, y));
+    return { x: x, y: y };
+  }
+
+  function click(btn, holdMs) {
+    if (!ci) { return; }
+    try {
+      ci.sendMouseButton(btn, true);
+      setTimeout(function () {
+        try { ci.sendMouseButton(btn, false); } catch (e) {}
+      }, holdMs || 60);
+    } catch (e) {}
+  }
+
+  function bindTouch(layer) {
+    var startX = 0, startY = 0, startT = 0;
+    var lastTapT = 0, lastTapX = 0, lastTapY = 0;
+    var moved = false, downSent = false, longTimer = null;
+    var TAP_MS = 350, TAP_PX = 14, DBL_MS = 320, DBL_PX = 30, LONG_MS = 350;
+    function clearLong() { if (longTimer) { clearTimeout(longTimer); longTimer = null; } }
+
+    layer.addEventListener("touchstart", function (e) {
+      if (!ci || e.touches.length !== 1) { return; }
+      var t = e.touches[0];
+      startX = t.clientX; startY = t.clientY; startT = Date.now();
+      moved = false; downSent = false;
+      clearLong();
+      // 長撳唔郁：350ms 後當拖曳起點（㩒住左鍵），方便過「確定」呢類要 hold 嘅掣
+      (function (sx, sy) {
+        longTimer = setTimeout(function () {
+          if (!moved && ci) {
+            moved = true;
+            var p = toGameXY(sx, sy);
+            if (p) {
+              try {
+                ci.sendMouseMotion(p.x, p.y);
+                ci.sendMouseButton(0, true);
+                downSent = true;
+              } catch (err) {}
+            }
+          }
+          longTimer = null;
+        }, LONG_MS);
+      })(startX, startY);
+      e.preventDefault();
+    }, { passive: false });
+
+    layer.addEventListener("touchmove", function (e) {
+      if (!ci || e.touches.length !== 1) { return; }
+      var t = e.touches[0];
+      var dx = t.clientX - startX, dy = t.clientY - startY;
+      if (!moved && Math.hypot(dx, dy) > TAP_PX) {
+        clearLong();
+        moved = true;
+        // 開始拖曳：按住左鍵 + 同步 mouse motion
+        var p = toGameXY(startX, startY);
+        if (p) {
+          try {
+            ci.sendMouseMotion(p.x, p.y);
+            ci.sendMouseButton(0, true);
+            downSent = true;
+          } catch (err) {}
+        }
+      }
+      if (moved) {
+        var q = toGameXY(t.clientX, t.clientY);
+        if (q) { try { ci.sendMouseMotion(q.x, q.y); } catch (err) {} }
+      }
+      e.preventDefault();
+    }, { passive: false });
+
+    layer.addEventListener("touchend", function (e) {
+      if (!ci) { return; }
+      clearLong();
+      var dt = Date.now() - startT;
+      var t = e.changedTouches[0];
+      if (moved) {
+        // 拖曳結束：補最後位置 + 放開左鍵
+        var q = toGameXY(t.clientX, t.clientY);
+        try {
+          if (q) { ci.sendMouseMotion(q.x, q.y); }
+          if (downSent) { ci.sendMouseButton(0, false); }
+        } catch (err) {}
+        lastTapT = 0;   // 拖曳唔計入 double-tap
+        e.preventDefault();
+        return;
+      }
+      if (dt > TAP_MS && !moved) { lastTapT = 0; e.preventDefault(); return; }  // 長撳但 timer 未起動（極少見）
+      var now = Date.now();
+      var p = toGameXY(t.clientX, t.clientY);
+      if (!p) { e.preventDefault(); return; }
+      try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
+      if (now - lastTapT < DBL_MS &&
+          Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY) < DBL_PX) {
+        click(1);            // 第二下 → 右鍵
+        lastTapT = 0;
+      } else {
+        // 第一點 hold 0.8s（DOS 輪詢式讀掣，太快會 miss）
+        click(0, 800);
+        lastTapT = now; lastTapX = t.clientX; lastTapY = t.clientY;
+      }
+      e.preventDefault();
+    }, { passive: false });
+
+    layer.addEventListener("touchcancel", function () {
+      clearLong();
+      if (ci && downSent) { try { ci.sendMouseButton(0, false); } catch (e) {} }
+      downSent = false; moved = false; lastTapT = 0;
+    });
+  }
 
   document.getElementById("btnFs").addEventListener("click", function () {
     var s = document.getElementById("stage");
