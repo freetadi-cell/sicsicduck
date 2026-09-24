@@ -19,9 +19,9 @@
   .spacer { flex: 1; }
   .btn { background: #1c1c2a; color: #e0ddd5; border: 1px solid #d4af37; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
   .btn:active { background: #d4af37; color: #0c0c12; }
-  #stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 8px; min-height: 0; }
-  #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
-  #dos canvas { width: 100% !important; height: 100% !important; }
+  #stage { flex: 1; display: flex; align-items: flex-start; justify-content: center; padding: 8px; min-height: 0; overflow-y: auto; }
+  #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; max-height: calc(100dvh - 90px); background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
+  #dos canvas { object-fit: contain; }
   .hint { padding: 10px 16px 16px; font-size: 12px; color: #6b6b7b; line-height: 1.8; }
   .hint b { color: #d4af37; }
   @media (orientation: landscape) and (max-height: 500px) {
@@ -60,6 +60,7 @@
     theme: "dark",
     backend: "dosboxX",
     backendLocked: true,
+    renderAspect: "4/3",
     onEvent: function (ev, arg) {
       if (ev === "ci-ready") {
         ci = arg; window.__ciReady = true;
