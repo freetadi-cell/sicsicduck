@@ -39,11 +39,10 @@
   <span class="spacer"></span>
   <button class="btn" id="btnFs">⛶ 全螢幕</button>
   <button class="btn" id="btnKb">⌨️ 鍵盤</button>
-  <button class="btn" id="btnDbg" style="display:none;">🐞 座標</button>
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div class="hint">
-  📱 <b>觸控（手機）：</b>點一下 = 滑鼠左鍵；連點兩下 = 滑鼠右鍵；撳住唔放／拖曳 = 撳住左鍵（滑動地圖、點住「確定」過關）。入地圖後如游標亂飛，撳右下角切換做「🧭 觸控板模式」。建議轉橫屏遊玩；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
+  📱 <b>觸控（手機）：</b>點一下 = 滑鼠左鍵；連點兩下 = 滑鼠右鍵；撳住唔放／拖曳 = 撳住左鍵（滑動地圖、點住「確定」過關）。建議轉橫屏遊玩；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
   🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」（點住約1秒再鬆開）。<br>
   💾 遊戲進度自動存喺呢部裝置（瀏覽器儲存空間），唔使擔心唔見 save。<br>
   ⚠️ 懷舊遊戲僅供測試交流，請支持正版。<br>
@@ -64,80 +63,47 @@
     renderAspect: "4/3",
     onEvent: function (ev, arg) {
       if (ev === "ci-ready") {
-        ci = arg; window.__ciReady = true; hookCi();
+        ci = arg; window.__ciReady = true;
         var tl = document.getElementById("touchLayer");
         if (tl) { tl.style.display = "block"; }
-        var mb = document.getElementById("touchModeBtn");
-        if (mb) { mb.style.display = "block"; }
-        var db = document.getElementById("btnDbg");
-        if (db && IS_TOUCH) { db.style.display = ""; }
       }
     }
   });
 
   // ---------- 自訂觸控層（mobile only）：tap=左鍵、double-tap=右鍵、drag=滑動 ----------
   // 注意：冇 ci（未 ci-ready）之前唔攔截，等 Play 掣可以正常撳
-  // 兩種模式：touchscreen（點邊打邊，預設）/ touchpad（觸控板，相對移動）
-  // 地圖畫面如果遊戲轉咗 relative mouse，用觸控板模式先掂
-  var TOUCH_MODE = "touchscreen";
-  try {
-    if (localStorage.getItem("wolong_touchmode") === "touchpad") { TOUCH_MODE = "touchpad"; }
-  } catch (e) {}
   if (IS_TOUCH) {
     var layer = document.createElement("div");
     layer.id = "touchLayer";
     layer.style.cssText = "position:absolute;inset:0;z-index:30;touch-action:none;display:none;";
-    var modeBtn = document.createElement("button");
-    modeBtn.id = "touchModeBtn";
-    modeBtn.style.cssText = "position:fixed;right:12px;bottom:12px;z-index:60;display:none;" +
-      "background:#1c1c2a;color:#d4af37;border:1px solid #d4af37;border-radius:20px;" +
-      "padding:10px 14px;font-size:13px;opacity:0.9;";
-    document.body.appendChild(modeBtn);
-    var refreshModeBtn = function () {
-      modeBtn.textContent = (TOUCH_MODE === "touchscreen") ? "🖱️ 觸屏模式" : "🧭 觸控板模式";
-    };
-    refreshModeBtn();
-    modeBtn.addEventListener("click", function () {
-      TOUCH_MODE = (TOUCH_MODE === "touchscreen") ? "touchpad" : "touchscreen";
-      try { localStorage.setItem("wolong_touchmode", TOUCH_MODE); } catch (e) {}
-      refreshModeBtn();
-    });
-    window.__getTouchMode = function () { return TOUCH_MODE; };
-    var anchorLayer = function () {
+    // 等 player 建好 stage 結構先掛上去
+    var tries = 0;
+    var mountTimer = setInterval(function () {
       var anchor = el.querySelector(".bg-black.h-full") || el;
       if (anchor && getComputedStyle(anchor).position === "static") {
         anchor.style.position = "relative";
       }
-      if (anchor && !layer.isConnected) {
+      if (anchor) {
         anchor.appendChild(layer);
+        clearInterval(mountTimer);
         bindTouch(layer);
       }
-    };
-    // 等 player 建好 stage 結構先掛上去；之後每 2s 檢查（遊戲切畫面可能重建 DOM）
-    var mountTimer = setInterval(function () {
-      anchorLayer();
-      if (ci) { clearInterval(mountTimer); }
+      if (++tries > 100) { clearInterval(mountTimer); }
     }, 200);
-    setInterval(function () {
-      if (ci && !layer.isConnected) { anchorLayer(); }
-    }, 2000);
   }
 
   // canvas 內容區 → 0..1 座標
-  // 遊戲會轉 video mode（選單一個、地圖一個），canvas attr 會跟住變，
-  // 所以每次 touch 都重讀 canvas.width/height，用 aspect-fit 計出內容區（置中＋黑邊）。
+  // #dos canvas CSS 係 width/height 100%（!important 蓋過 Ga() 內聯 sizing），
+  // 所以 canvas 的 getBoundingClientRect 本身就係內容區：直接相減即啱，
+  // 唔可以再減 style.left/top（rect 已經包咗佢，減多次 Y 會成個向上偏）。
   function toGameXY(clientX, clientY) {
     var canvas = el.querySelector("canvas");
     if (!canvas) { return null; }
-    var aw = canvas.width || 640, ah = canvas.height || 480;
     var r = canvas.getBoundingClientRect();
     if (r.width <= 0 || r.height <= 0) { return null; }
-    var scale = Math.min(r.width / aw, r.height / ah);
-    var lw = aw * scale, lh = ah * scale;
-    var px = (r.width - lw) / 2, py = (r.height - lh) / 2;
-    var cssX = clientX - r.left - px, cssY = clientY - r.top - py;
-    if (cssX < 0 || cssY < 0 || cssX > lw || cssY > lh) { return null; }
-    return { x: cssX / lw, y: cssY / lh };
+    var cssX = clientX - r.left, cssY = clientY - r.top;
+    if (cssX < 0 || cssY < 0 || cssX > r.width || cssY > r.height) { return null; }
+    return { x: cssX / r.width, y: cssY / r.height };
   }
 
   function click(btn, holdMs) {
@@ -150,73 +116,15 @@
     } catch (e) {}
   }
 
-  // ---------- 座標除錯：記低每次 touch（兩種模式都記）＋每次實際送出嘅 ci call ----------
-  window.__touchLog = [];
-  window.__ciLog = [];
-  function hookCi() {
-    if (!ci || ci.__hooked) { return; }
-    try {
-      ci.__hooked = true;
-      ["sendMouseMotion", "sendMouseRelativeMotion", "sendMouseButton"].forEach(function (m) {
-        var orig = ci[m];
-        if (typeof orig !== "function") { return; }
-        ci[m] = function () {
-          var args = Array.prototype.slice.call(arguments).map(function (a) {
-            return (typeof a === "number") ? +a.toFixed(3) : a;
-          });
-          window.__ciLog.push(m.replace("sendMouse", "") + "(" + args.join(",") + ")");
-          if (window.__ciLog.length > 50) { window.__ciLog.shift(); }
-          return orig.apply(ci, arguments);
-        };
-      });
-    } catch (e) {}
-  }
-  function logTouch(kind, clientX, clientY, game) {
-    var canvas = el.querySelector("canvas");
-    var r = canvas ? canvas.getBoundingClientRect() : null;
-    window.__touchLog.push({
-      kind: kind,
-      client: [Math.round(clientX), Math.round(clientY)],
-      game: game ? [+game.x.toFixed(3), +game.y.toFixed(3)] : null,
-      canvasAttr: canvas ? [canvas.width, canvas.height] : null,
-      canvasRect: r ? [Math.round(r.x), Math.round(r.y), Math.round(r.width), Math.round(r.height)] : null,
-      t: Date.now()
-    });
-    if (window.__touchLog.length > 50) { window.__touchLog.shift(); }
-  }
-  document.getElementById("btnDbg").addEventListener("click", function () {
-    var lines = window.__touchLog.slice(-8).map(function (e, i) {
-      return (i + 1) + ". " + e.kind + " 手指(" + e.client + ") → 遊戲(" + e.game + ") 畫布" + e.canvasAttr + " 矩形" + e.canvasRect;
-    });
-    var ciLines = window.__ciLog.slice(-8).map(function (s, i) {
-      return "ci" + (i + 1) + ". " + s;
-    });
-    alert((lines.length ? lines.join("\n") : "未撳過遊戲區") +
-      (ciLines.length ? "\n----\n" + ciLines.join("\n") : ""));
-  });
-
-  // 吞 event：唔好淨 preventDefault，一定要 stopPropagation＋stopImmediatePropagation。
-  // player 嘅 enders（pointerup/touchend）無 target check，bubble 上去會用佢自己條數
-  // 再送多一次 motion＋button-up，cursor 就俾佢扯走。
-  function swallowEvent(e) {
-    try { e.preventDefault(); } catch (_) {}
-    try { e.stopPropagation(); } catch (_) {}
-    try { if (e.stopImmediatePropagation) { e.stopImmediatePropagation(); } } catch (_) {}
-  }
-
   function bindTouch(layer) {
     var startX = 0, startY = 0, startT = 0;
     var lastTapT = 0, lastTapX = 0, lastTapY = 0;
-    var moved = false, downSent = false, longTimer = null, pendingLeft = null;
+    var moved = false, downSent = false, longTimer = null;
     var TAP_MS = 350, TAP_PX = 14, DBL_MS = 320, DBL_PX = 30, LONG_MS = 350;
     function clearLong() { if (longTimer) { clearTimeout(longTimer); longTimer = null; } }
-    function clearPending() { if (pendingLeft) { clearTimeout(pendingLeft); pendingLeft = null; } }
 
     layer.addEventListener("touchstart", function (e) {
       if (!ci || e.touches.length !== 1) { return; }
-      // 上一下 tap 仲等緊確認係咪 double-tap（delayed 左鍵未送出）：取消佢
-      clearPending();
-      window.__padSentX = 0; window.__padSentY = 0;   // 觸控板增量歸零
       var t = e.touches[0];
       startX = t.clientX; startY = t.clientY; startT = Date.now();
       moved = false; downSent = false;
@@ -238,44 +146,13 @@
           longTimer = null;
         }, LONG_MS);
       })(startX, startY);
-      swallowEvent(e);
+      e.preventDefault();
     }, { passive: false });
 
     layer.addEventListener("touchmove", function (e) {
       if (!ci || e.touches.length !== 1) { return; }
       var t = e.touches[0];
       var dx = t.clientX - startX, dy = t.clientY - startY;
-      if (TOUCH_MODE === "touchpad") {
-        // 觸控板模式：手指位移 → 相對 mouse motion（唔㩒掣純郁 cursor；
-        // 單指拖曳就㩒住左鍵拖）。
-        // 注意：rx/ry 係 handler 頂計出嚟嘅全量。moved 之前每下 move 只送
-        // 其中一小部分（0.2x），郁得多先慢慢加速，避免一起手就飛。
-        var canvas = el.querySelector("canvas");
-        var r = canvas ? canvas.getBoundingClientRect() : { width: 800, height: 600 };
-        var rx = dx / r.width, ry = dy / r.height;
-        if (e.touches.length === 1) {
-          logTouch("pad-move", t.clientX, t.clientY, toGameXY(t.clientX, t.clientY));
-        }
-        try {
-          if (!moved && Math.hypot(dx, dy) > TAP_PX) {
-            moved = true; downSent = true;
-            ci.sendMouseButton(0, true);
-          }
-          if (moved) { ci.sendMouseRelativeMotion(rx, ry); }
-          else {
-            // 未夠 threshold 郁 cursor 都要郁，但要細步＋唔㩒掣。
-            // rx/ry 係由 touchstart 起計嘅全量——唔可以直接送，
-            // 要減返上次已送嘅剩低增量，否則每次累加愈送愈大。
-            var px = (window.__padSentX || 0), py = (window.__padSentY || 0);
-            var ix = rx * 0.2 - px, iy = ry * 0.2 - py;
-            window.__padSentX = rx * 0.2; window.__padSentY = ry * 0.2;
-            if (ix || iy) { ci.sendMouseRelativeMotion(ix, iy); }
-          }
-        } catch (err) {}
-        if (moved) { startX = t.clientX; startY = t.clientY; }   // 增量式（淨拖曳先 reset）
-        swallowEvent(e);
-        return;
-      }
       if (!moved && Math.hypot(dx, dy) > TAP_PX) {
         clearLong();
         moved = true;
@@ -291,89 +168,46 @@
       }
       if (moved) {
         var q = toGameXY(t.clientX, t.clientY);
-        logTouch("drag", t.clientX, t.clientY, q);
         if (q) { try { ci.sendMouseMotion(q.x, q.y); } catch (err) {} }
       }
-      swallowEvent(e);
+      e.preventDefault();
     }, { passive: false });
 
     layer.addEventListener("touchend", function (e) {
       if (!ci) { return; }
       clearLong();
-      if (TOUCH_MODE === "touchpad") {
-        // 觸控板：tap = 左鍵 click；拖完放開左鍵
-        try { if (downSent) { ci.sendMouseButton(0, false); } } catch (err) {}
-        if (!moved) {
-          var dt0 = Date.now() - startT;
-          if (dt0 <= TAP_MS) {
-            var tt = e.changedTouches[0];
-            logTouch("pad-tap", tt.clientX, tt.clientY, toGameXY(tt.clientX, tt.clientY));
-            click(0, 120);
-          }
-        }
-        downSent = false; moved = false; lastTapT = 0;
-        swallowEvent(e);
-        return;
-      }
       var dt = Date.now() - startT;
       var t = e.changedTouches[0];
       if (moved) {
         // 拖曳結束：補最後位置 + 放開左鍵
         var q = toGameXY(t.clientX, t.clientY);
-        logTouch("dragend", t.clientX, t.clientY, q);
         try {
           if (q) { ci.sendMouseMotion(q.x, q.y); }
           if (downSent) { ci.sendMouseButton(0, false); }
         } catch (err) {}
         lastTapT = 0;   // 拖曳唔計入 double-tap
-        swallowEvent(e);
+        e.preventDefault();
         return;
       }
-      if (dt > TAP_MS && !moved) { lastTapT = 0; swallowEvent(e); return; }  // 長撳但 timer 未起動（極少見）
+      if (dt > TAP_MS && !moved) { lastTapT = 0; e.preventDefault(); return; }  // 長撳但 timer 未起動（極少見）
       var now = Date.now();
       var p = toGameXY(t.clientX, t.clientY);
-      logTouch("tap", t.clientX, t.clientY, p);
-      if (!p) { swallowEvent(e); return; }
+      if (!p) { e.preventDefault(); return; }
+      try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
       if (now - lastTapT < DBL_MS &&
           Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY) < DBL_PX) {
-        try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
-        click(1);            // 第二下 → 右鍵（唔送左鍵）
-        lastTapT = 0;
-      } else if (TOUCH_MODE === "touchpad") {
-        // 觸控板模式第一點：即送 motion＋短左鍵（唔等 double-tap，
-        // 觸控板無右鍵手勢，唔使 delay）
-        try {
-          ci.sendMouseMotion(p.x, p.y);
-          ci.sendMouseButton(0, true);
-          setTimeout(function () {
-            try { ci.sendMouseButton(0, false); } catch (e2) {}
-          }, 120);
-        } catch (err) {}
+        click(1);            // 第二下 → 右鍵
         lastTapT = 0;
       } else {
-        // 第一點：等 DBL_MS，期間無第二下先送左鍵（短撳 120ms 就夠；
-        // 長撳 hold 靠 longTimer（350ms 起動㩒住唔放），唔好喺度 hold 800ms——
-        // 地圖撳城 hold 太耐會變拖曳，地圖捲走，cursor 睇落似飛走）。
-        // 有第二下就變右鍵，左鍵唔送——唔會再有多餘左鍵彈 cursor。
-        (function (pp) {
-          pendingLeft = setTimeout(function () {
-            pendingLeft = null;
-            try {
-              ci.sendMouseMotion(pp.x, pp.y);
-              ci.sendMouseButton(0, true);
-              setTimeout(function () {
-                try { ci.sendMouseButton(0, false); } catch (e2) {}
-              }, 120);
-            } catch (err) {}
-          }, DBL_MS);
-        })(p);
+        // 第一點 hold 0.8s（DOS 輪詢式讀掣，太快會 miss）
+        click(0, 800);
         lastTapT = now; lastTapX = t.clientX; lastTapY = t.clientY;
       }
-      swallowEvent(e);
+      e.preventDefault();
     }, { passive: false });
 
     layer.addEventListener("touchcancel", function () {
-      clearLong(); clearPending();
+      clearLong();
       if (ci && downSent) { try { ci.sendMouseButton(0, false); } catch (e) {} }
       downSent = false; moved = false; lastTapT = 0;
     });
