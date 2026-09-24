@@ -167,7 +167,7 @@
   }
   document.getElementById("btnDbg").addEventListener("click", function () {
     var lines = window.__touchLog.slice(-8).map(function (e, i) {
-      return (i + 1) + ". " + e.kind + " 手指(" + e.client + ") → 遊戲(" + e.game + ") 畫布" + e.canvasAttr;
+      return (i + 1) + ". " + e.kind + " 手指(" + e.client + ") → 遊戲(" + e.game + ") 畫布" + e.canvasAttr + " 矩形" + e.canvasRect;
     });
     alert(lines.length ? lines.join("\n") : "未撳過遊戲區");
   });
