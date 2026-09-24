@@ -42,7 +42,7 @@
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div class="hint">
-  📱 <b>觸控（手機）：</b>點一下 = 滑鼠左鍵；連點兩下 = 滑鼠右鍵；撳住唔放／拖曳 = 撳住左鍵（滑動地圖、點住「確定」過關）。建議轉橫屏遊玩；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
+  📱 <b>觸控（手機）：</b>點一下 = 滑鼠左鍵；連點兩下 = 滑鼠右鍵；撳住唔放／拖曳 = 撳住左鍵（滑動地圖、點住「確定」過關）。入地圖後如游標亂飛，撳右下角切換做「🧭 觸控板模式」。建議轉橫屏遊玩；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
   🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」（點住約1秒再鬆開）。<br>
   💾 遊戲進度自動存喺呢部裝置（瀏覽器儲存空間），唔使擔心唔見 save。<br>
   ⚠️ 懷舊遊戲僅供測試交流，請支持正版。<br>
@@ -65,30 +65,58 @@
         ci = arg; window.__ciReady = true;
         var tl = document.getElementById("touchLayer");
         if (tl) { tl.style.display = "block"; }
+        var mb = document.getElementById("touchModeBtn");
+        if (mb) { mb.style.display = "block"; }
       }
     }
   });
 
   // ---------- 自訂觸控層（mobile only）：tap=左鍵、double-tap=右鍵、drag=滑動 ----------
   // 注意：冇 ci（未 ci-ready）之前唔攔截，等 Play 掣可以正常撳
+  // 兩種模式：touchscreen（點邊打邊，預設）/ touchpad（觸控板，相對移動）
+  // 地圖畫面如果遊戲轉咗 relative mouse，用觸控板模式先掂
+  var TOUCH_MODE = "touchscreen";
+  try {
+    if (localStorage.getItem("wolong_touchmode") === "touchpad") { TOUCH_MODE = "touchpad"; }
+  } catch (e) {}
   if (IS_TOUCH) {
     var layer = document.createElement("div");
     layer.id = "touchLayer";
     layer.style.cssText = "position:absolute;inset:0;z-index:30;touch-action:none;display:none;";
-    // 等 player 建好 stage 結構先掛上去
-    var tries = 0;
-    var mountTimer = setInterval(function () {
+    var modeBtn = document.createElement("button");
+    modeBtn.id = "touchModeBtn";
+    modeBtn.style.cssText = "position:fixed;right:12px;bottom:12px;z-index:60;display:none;" +
+      "background:#1c1c2a;color:#d4af37;border:1px solid #d4af37;border-radius:20px;" +
+      "padding:10px 14px;font-size:13px;opacity:0.9;";
+    document.body.appendChild(modeBtn);
+    var refreshModeBtn = function () {
+      modeBtn.textContent = (TOUCH_MODE === "touchscreen") ? "🖱️ 觸屏模式" : "🧭 觸控板模式";
+    };
+    refreshModeBtn();
+    modeBtn.addEventListener("click", function () {
+      TOUCH_MODE = (TOUCH_MODE === "touchscreen") ? "touchpad" : "touchscreen";
+      try { localStorage.setItem("wolong_touchmode", TOUCH_MODE); } catch (e) {}
+      refreshModeBtn();
+    });
+    window.__getTouchMode = function () { return TOUCH_MODE; };
+    var anchorLayer = function () {
       var anchor = el.querySelector(".bg-black.h-full") || el;
       if (anchor && getComputedStyle(anchor).position === "static") {
         anchor.style.position = "relative";
       }
-      if (anchor) {
+      if (anchor && !layer.isConnected) {
         anchor.appendChild(layer);
-        clearInterval(mountTimer);
         bindTouch(layer);
       }
-      if (++tries > 100) { clearInterval(mountTimer); }
+    };
+    // 等 player 建好 stage 結構先掛上去；之後每 2s 檢查（遊戲切畫面可能重建 DOM）
+    var mountTimer = setInterval(function () {
+      anchorLayer();
+      if (ci) { clearInterval(mountTimer); }
     }, 200);
+    setInterval(function () {
+      if (ci && !layer.isConnected) { anchorLayer(); }
+    }, 2000);
   }
 
   // canvas 內容區 → 0..1 座標
@@ -152,6 +180,24 @@
       if (!ci || e.touches.length !== 1) { return; }
       var t = e.touches[0];
       var dx = t.clientX - startX, dy = t.clientY - startY;
+      if (TOUCH_MODE === "touchpad") {
+        // 觸控板模式：手指位移 → 相對 mouse motion（唔㩒掣純郁 cursor；
+        // 單指拖曳就㩒住左鍵拖）
+        var canvas = el.querySelector("canvas");
+        var r = canvas ? canvas.getBoundingClientRect() : { width: 800, height: 600 };
+        var rx = dx / r.width, ry = dy / r.height;
+        try {
+          if (!moved && Math.hypot(dx, dy) > TAP_PX) {
+            moved = true; downSent = true;
+            ci.sendMouseButton(0, true);
+          }
+          if (moved) { ci.sendMouseRelativeMotion(rx, ry); }
+          else { ci.sendMouseRelativeMotion(rx * 0.2, ry * 0.2); }
+        } catch (err) {}
+        startX = t.clientX; startY = t.clientY;   // 增量式
+        e.preventDefault();
+        return;
+      }
       if (!moved && Math.hypot(dx, dy) > TAP_PX) {
         clearLong();
         moved = true;
@@ -175,6 +221,17 @@
     layer.addEventListener("touchend", function (e) {
       if (!ci) { return; }
       clearLong();
+      if (TOUCH_MODE === "touchpad") {
+        // 觸控板：tap = 左鍵 click；拖完放開左鍵
+        try { if (downSent) { ci.sendMouseButton(0, false); } } catch (err) {}
+        if (!moved) {
+          var dt0 = Date.now() - startT;
+          if (dt0 <= TAP_MS) { click(0, 120); }
+        }
+        downSent = false; moved = false; lastTapT = 0;
+        e.preventDefault();
+        return;
+      }
       var dt = Date.now() - startT;
       var t = e.changedTouches[0];
       if (moved) {
