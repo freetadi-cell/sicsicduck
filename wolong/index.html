@@ -97,17 +97,21 @@
   }
 
   // canvas 內容區 → 0..1 座標
-  // #dos canvas CSS 係 width/height 100%（!important 蓋過 Ga() 內聯 sizing），
-  // 所以 canvas 的 getBoundingClientRect 本身就係內容區：直接相減即啱，
-  // 唔可以再減 style.left/top（rect 已經包咗佢，減多次 Y 會成個向上偏）。
+  // player 會將 canvas 置中（style.left/top），rect 入面有黑邊，
+  // 黑邊部份唔係遊戲內容，要扣咗先 map，否則 cursor 成個偏移。
   function toGameXY(clientX, clientY) {
     var canvas = el.querySelector("canvas");
     if (!canvas) { return null; }
     var r = canvas.getBoundingClientRect();
     if (r.width <= 0 || r.height <= 0) { return null; }
-    var cssX = clientX - r.left, cssY = clientY - r.top;
-    if (cssX < 0 || cssY < 0 || cssX > r.width || cssY > r.height) { return null; }
-    return { x: cssX / r.width, y: cssY / r.height };
+    var cs = getComputedStyle(canvas);
+    var cw = parseFloat(cs.width) || r.width;
+    var ch = parseFloat(cs.height) || r.height;
+    var cl = parseFloat(cs.left) || 0;
+    var ct = parseFloat(cs.top) || 0;
+    var cssX = clientX - r.left - cl, cssY = clientY - r.top - ct;
+    if (cssX < 0 || cssY < 0 || cssX > cw || cssY > ch) { return null; }
+    return { x: cssX / cw, y: cssY / ch };
   }
 
   // click() 而家淨係右鍵用（click(1) 預設 60ms 就夠）。
