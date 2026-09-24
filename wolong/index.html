@@ -121,17 +121,20 @@
   }
 
   // canvas 內容區 → 0..1 座標
-  // #dos canvas CSS 係 width/height 100%（!important 蓋過 Ga() 內聯 sizing），
-  // 所以 canvas 的 getBoundingClientRect 本身就係內容區：直接相減即啱，
-  // 唔可以再減 style.left/top（rect 已經包咗佢，減多次 Y 會成個向上偏）。
+  // 遊戲會轉 video mode（選單一個、地圖一個），canvas attr 會跟住變，
+  // 所以每次 touch 都重讀 canvas.width/height，用 aspect-fit 計出內容區（置中＋黑邊）。
   function toGameXY(clientX, clientY) {
     var canvas = el.querySelector("canvas");
     if (!canvas) { return null; }
+    var aw = canvas.width || 640, ah = canvas.height || 480;
     var r = canvas.getBoundingClientRect();
     if (r.width <= 0 || r.height <= 0) { return null; }
-    var cssX = clientX - r.left, cssY = clientY - r.top;
-    if (cssX < 0 || cssY < 0 || cssX > r.width || cssY > r.height) { return null; }
-    return { x: cssX / r.width, y: cssY / r.height };
+    var scale = Math.min(r.width / aw, r.height / ah);
+    var lw = aw * scale, lh = ah * scale;
+    var px = (r.width - lw) / 2, py = (r.height - lh) / 2;
+    var cssX = clientX - r.left - px, cssY = clientY - r.top - py;
+    if (cssX < 0 || cssY < 0 || cssX > lw || cssY > lh) { return null; }
+    return { x: cssX / lw, y: cssY / lh };
   }
 
   function click(btn, holdMs) {
