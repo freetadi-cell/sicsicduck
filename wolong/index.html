@@ -288,7 +288,9 @@
         click(1);            // 第二下 → 右鍵（唔送左鍵）
         lastTapT = 0;
       } else {
-        // 第一點：等 DBL_MS，期間無第二下先送左鍵（hold 0.8s，DOS 輪詢先食到）。
+        // 第一點：等 DBL_MS，期間無第二下先送左鍵（短撳 120ms 就夠；
+        // 長撳 hold 靠 longTimer（350ms 起動㩒住唔放），唔好喺度 hold 800ms——
+        // 地圖撳城 hold 太耐會變拖曳，地圖捲走，cursor 睇落似飛走）。
         // 有第二下就變右鍵，左鍵唔送——唔會再有多餘左鍵彈 cursor。
         (function (pp) {
           pendingLeft = setTimeout(function () {
@@ -298,7 +300,7 @@
               ci.sendMouseButton(0, true);
               setTimeout(function () {
                 try { ci.sendMouseButton(0, false); } catch (e2) {}
-              }, 800);
+              }, 120);
             } catch (err) {}
           }, DBL_MS);
         })(p);
