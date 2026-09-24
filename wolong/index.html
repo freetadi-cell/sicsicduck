@@ -287,6 +287,17 @@
         try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
         click(1);            // 第二下 → 右鍵（唔送左鍵）
         lastTapT = 0;
+      } else if (TOUCH_MODE === "touchpad") {
+        // 觸控板模式第一點：即送 motion＋短左鍵（唔等 double-tap，
+        // 觸控板無右鍵手勢，唔使 delay）
+        try {
+          ci.sendMouseMotion(p.x, p.y);
+          ci.sendMouseButton(0, true);
+          setTimeout(function () {
+            try { ci.sendMouseButton(0, false); } catch (e2) {}
+          }, 120);
+        } catch (err) {}
+        lastTapT = 0;
       } else {
         // 第一點：等 DBL_MS，期間無第二下先送左鍵（短撳 120ms 就夠；
         // 長撳 hold 靠 longTimer（350ms 起動㩒住唔放），唔好喺度 hold 800ms——
