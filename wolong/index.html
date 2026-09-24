@@ -172,6 +172,15 @@
     alert(lines.length ? lines.join("\n") : "未撳過遊戲區");
   });
 
+  // 吞 event：唔好淨 preventDefault，一定要 stopPropagation＋stopImmediatePropagation。
+  // player 嘅 enders（pointerup/touchend）無 target check，bubble 上去會用佢自己條數
+  // 再送多一次 motion＋button-up，cursor 就俾佢扯走。
+  function swallowEvent(e) {
+    try { e.preventDefault(); } catch (_) {}
+    try { e.stopPropagation(); } catch (_) {}
+    try { if (e.stopImmediatePropagation) { e.stopImmediatePropagation(); } } catch (_) {}
+  }
+
   function bindTouch(layer) {
     var startX = 0, startY = 0, startT = 0;
     var lastTapT = 0, lastTapX = 0, lastTapY = 0;
@@ -205,7 +214,7 @@
           longTimer = null;
         }, LONG_MS);
       })(startX, startY);
-      e.preventDefault();
+      swallowEvent(e);
     }, { passive: false });
 
     layer.addEventListener("touchmove", function (e) {
@@ -227,7 +236,7 @@
           else { ci.sendMouseRelativeMotion(rx * 0.2, ry * 0.2); }
         } catch (err) {}
         startX = t.clientX; startY = t.clientY;   // 增量式
-        e.preventDefault();
+        swallowEvent(e);
         return;
       }
       if (!moved && Math.hypot(dx, dy) > TAP_PX) {
@@ -247,7 +256,7 @@
         var q = toGameXY(t.clientX, t.clientY);
         if (q) { try { ci.sendMouseMotion(q.x, q.y); } catch (err) {} }
       }
-      e.preventDefault();
+      swallowEvent(e);
     }, { passive: false });
 
     layer.addEventListener("touchend", function (e) {
@@ -261,7 +270,7 @@
           if (dt0 <= TAP_MS) { click(0, 120); }
         }
         downSent = false; moved = false; lastTapT = 0;
-        e.preventDefault();
+        swallowEvent(e);
         return;
       }
       var dt = Date.now() - startT;
@@ -274,14 +283,14 @@
           if (downSent) { ci.sendMouseButton(0, false); }
         } catch (err) {}
         lastTapT = 0;   // 拖曳唔計入 double-tap
-        e.preventDefault();
+        swallowEvent(e);
         return;
       }
-      if (dt > TAP_MS && !moved) { lastTapT = 0; e.preventDefault(); return; }  // 長撳但 timer 未起動（極少見）
+      if (dt > TAP_MS && !moved) { lastTapT = 0; swallowEvent(e); return; }  // 長撳但 timer 未起動（極少見）
       var now = Date.now();
       var p = toGameXY(t.clientX, t.clientY);
       logTouch("tap", t.clientX, t.clientY, p);
-      if (!p) { e.preventDefault(); return; }
+      if (!p) { swallowEvent(e); return; }
       if (now - lastTapT < DBL_MS &&
           Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY) < DBL_PX) {
         try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
@@ -317,7 +326,7 @@
         })(p);
         lastTapT = now; lastTapX = t.clientX; lastTapY = t.clientY;
       }
-      e.preventDefault();
+      swallowEvent(e);
     }, { passive: false });
 
     layer.addEventListener("touchcancel", function () {
