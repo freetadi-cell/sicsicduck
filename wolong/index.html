@@ -72,6 +72,9 @@
 
   // ---------- 自訂觸控層（mobile only）：tap=左鍵、double-tap=右鍵、drag=滑動 ----------
   // 注意：冇 ci（未 ci-ready）之前唔攔截，等 Play 掣可以正常撳
+  // touchLayer 只蓋遊戲 canvas，唔好蓋 sidebar——否則左邊功能掣撳唔到。
+  // 所以 anchor 改掛 canvas 嘅 parent（.bg-black.h-full 包住 canvas），唔係成個 #dos。
+  // 注意：canvas 嘅 parent 先係啱，el 本體（#dos）包埋 sidebar，會冚住掣。
   if (IS_TOUCH) {
     var layer = document.createElement("div");
     layer.id = "touchLayer";
@@ -79,7 +82,8 @@
     // 等 player 建好 stage 結構先掛上去
     var tries = 0;
     var mountTimer = setInterval(function () {
-      var anchor = el.querySelector(".bg-black.h-full") || el;
+      var canvas0 = el.querySelector("canvas");
+      var anchor = canvas0 ? canvas0.parentElement : null;
       if (anchor && getComputedStyle(anchor).position === "static") {
         anchor.style.position = "relative";
       }
