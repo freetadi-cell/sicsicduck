@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="robots" content="noindex, nofollow">
+<title>臥龍傳（無聲測試版） | 食息鴨</title>
+<link rel="stylesheet" href="./js-dos.css">
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { background: #0c0c12; color: #e0ddd5; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+  header { padding: 12px 16px; border-bottom: 1px solid #2a2a3a; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  header h1 { font-size: 18px; letter-spacing: 2px; }
+  header h1 a { color: #d4af37; text-decoration: none; }
+  header .sub { font-size: 12px; color: #6b6b7b; }
+  .spacer { flex: 1; }
+  .btn { background: #1c1c2a; color: #e0ddd5; border: 1px solid #d4af37; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
+  .btn:active { background: #d4af37; color: #0c0c12; }
+  #stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 8px; min-height: 0; }
+  #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
+  #dos canvas { width: 100% !important; height: 100% !important; }
+  .hint { padding: 10px 16px 16px; font-size: 12px; color: #6b6b7b; line-height: 1.8; }
+  .hint b { color: #d4af37; }
+  @media (orientation: landscape) and (max-height: 500px) {
+    header { padding: 6px 12px; }
+    header h1 { font-size: 15px; }
+    #stage { padding: 4px; }
+    .hint { display: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🐉 <a href="/">臥龍傳（測試）</a></h1>
+  <span class="sub">無聲測試版 · 調試中 · 食息鴨</span>
+  <span class="spacer"></span>
+  <button class="btn" id="btnFs">⛶ 全螢幕</button>
+  <button class="btn" id="btnKb">⌨️ 鍵盤</button>
+</header>
+<div id="stage"><div id="dos"></div></div>
+<div class="hint">
+  🧪 <b>測試版：</b>已關閉所有音效（nosound=true、sbtype=none、pcspeaker=false），測試 Android Chrome 會唔會仲 backend crash。<br>
+  📱 建議轉橫屏遊玩。點畫面 = 滑鼠點擊；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
+  🔑 <b>過密碼關：</b>滑鼠<b>點住「確定」唔好放（約1秒）</b>再鬆開。<br>
+</div>
+<script src="./js-dos.js"></script>
+<script>
+(function () {
+  var el = document.getElementById("dos");
+
+  Dos(el, {
+    url: "./wolong.jsdos",
+    pathPrefix: "./emulators/",
+    theme: "dark",
+    backend: "dosbox",
+    backendLocked: true
+  });
+
+  document.getElementById("btnFs").addEventListener("click", function () {
+    var s = document.getElementById("stage");
+    if (document.fullscreenElement) { document.exitFullscreen(); }
+    else if (s.requestFullscreen) { s.requestFullscreen(); }
+    else if (s.webkitRequestFullscreen) { s.webkitRequestFullscreen(); }
+  });
+  document.getElementById("btnKb").addEventListener("click", function () {
+    var btns = document.querySelectorAll(".sidebar-button");
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].innerHTML.indexOf("507.9") !== -1) { btns[i].click(); return; }
+    }
+    alert("遊戲未載入完成，請先撳 ▶ 開始遊戲，再撳此按鈕。");
+  });
+})();
+</script>
+</body>
+</html>
