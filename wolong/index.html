@@ -44,6 +44,7 @@
 <div class="hint">
   📱 <b>手機玩法：</b>建議轉橫屏遊玩。點畫面 = 滑鼠點擊；撳「⌨️ 鍵盤」叫出輸入鍵盤；「⛶ 全螢幕」放大畫面。<br>
   🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」。<br>
+  🔑 <b>過密碼關：</b>滑鼠<b>點住「確定」唔好放（約1秒）</b>再鬆開，遊戲就會過關。輕輕撳一下可能冇反應。<br>
   💾 遊戲進度自動存喺呢部裝置（瀏覽器儲存空間），唔使擔心唔見 save。<br>
   ⚠️ 懷舊遊戲僅供測試交流，請支持正版。
 </div>
@@ -68,10 +69,12 @@
     else if (s.webkitRequestFullscreen) { s.webkitRequestFullscreen(); }
   });
   document.getElementById("btnKb").addEventListener("click", function () {
-    if (ci && ci.sendBackendEvent) {
-      try { ci.sendBackendEvent({ type: "soft-keyboard-toggle" }); } catch (e) {}
+    // 撳模擬器側欄個鍵盤掣（認 viewBox 507.9 嗰個就係）
+    var btns = document.querySelectorAll(".sidebar-button");
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].innerHTML.indexOf("507.9") !== -1) { btns[i].click(); return; }
     }
-    alert("如果鍵盤冇彈出，請先點一下遊戲畫面，再撳此按鈕。");
+    alert("遊戲未載入完成，請先撳 ▶ 開始遊戲，再撳此按鈕。");
   });
 })();
 </script>
