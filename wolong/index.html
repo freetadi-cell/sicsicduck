@@ -64,7 +64,7 @@
     renderAspect: "4/3",
     onEvent: function (ev, arg) {
       if (ev === "ci-ready") {
-        ci = arg; window.__ciReady = true;
+        ci = arg; window.__ciReady = true; hookCi();
         var tl = document.getElementById("touchLayer");
         if (tl) { tl.style.display = "block"; }
         var mb = document.getElementById("touchModeBtn");
@@ -150,8 +150,27 @@
     } catch (e) {}
   }
 
-  // ---------- 座標除錯：每下 touch 記低 client XY + 算出嚟嘅 game XY + canvas 狀態 ----------
+  // ---------- 座標除錯：記低每次 touch（兩種模式都記）＋每次實際送出嘅 ci call ----------
   window.__touchLog = [];
+  window.__ciLog = [];
+  function hookCi() {
+    if (!ci || ci.__hooked) { return; }
+    try {
+      ci.__hooked = true;
+      ["sendMouseMotion", "sendMouseRelativeMotion", "sendMouseButton"].forEach(function (m) {
+        var orig = ci[m];
+        if (typeof orig !== "function") { return; }
+        ci[m] = function () {
+          var args = Array.prototype.slice.call(arguments).map(function (a) {
+            return (typeof a === "number") ? +a.toFixed(3) : a;
+          });
+          window.__ciLog.push(m.replace("sendMouse", "") + "(" + args.join(",") + ")");
+          if (window.__ciLog.length > 50) { window.__ciLog.shift(); }
+          return orig.apply(ci, arguments);
+        };
+      });
+    } catch (e) {}
+  }
   function logTouch(kind, clientX, clientY, game) {
     var canvas = el.querySelector("canvas");
     var r = canvas ? canvas.getBoundingClientRect() : null;
@@ -169,7 +188,11 @@
     var lines = window.__touchLog.slice(-8).map(function (e, i) {
       return (i + 1) + ". " + e.kind + " 手指(" + e.client + ") → 遊戲(" + e.game + ") 畫布" + e.canvasAttr + " 矩形" + e.canvasRect;
     });
-    alert(lines.length ? lines.join("\n") : "未撳過遊戲區");
+    var ciLines = window.__ciLog.slice(-8).map(function (s, i) {
+      return "ci" + (i + 1) + ". " + s;
+    });
+    alert((lines.length ? lines.join("\n") : "未撳過遊戲區") +
+      (ciLines.length ? "\n----\n" + ciLines.join("\n") : ""));
   });
 
   // 吞 event：唔好淨 preventDefault，一定要 stopPropagation＋stopImmediatePropagation。
@@ -257,6 +280,7 @@
       }
       if (moved) {
         var q = toGameXY(t.clientX, t.clientY);
+        logTouch("drag", t.clientX, t.clientY, q);
         if (q) { try { ci.sendMouseMotion(q.x, q.y); } catch (err) {} }
       }
       swallowEvent(e);
@@ -285,6 +309,7 @@
       if (moved) {
         // 拖曳結束：補最後位置 + 放開左鍵
         var q = toGameXY(t.clientX, t.clientY);
+        logTouch("dragend", t.clientX, t.clientY, q);
         try {
           if (q) { ci.sendMouseMotion(q.x, q.y); }
           if (downSent) { ci.sendMouseButton(0, false); }
