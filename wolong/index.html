@@ -22,10 +22,6 @@
   #stage { flex: 1; display: flex; align-items: flex-start; justify-content: center; padding: 8px; min-height: 0; overflow-y: auto; }
   #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; max-height: calc(100dvh - 90px); background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
   #dos canvas { object-fit: contain; }
-  #btnLeft { position: fixed; left: 12px; bottom: 12px; z-index: 60; display: none;
-    background: #1c1c2a; color: #d4af37; border: 1px solid #d4af37; border-radius: 50%;
-    width: 64px; height: 64px; font-size: 26px; opacity: 0.9; }
-  #btnLeft:active { background: #d4af37; color: #0c0c12; }
   .hint { padding: 10px 16px 16px; font-size: 12px; color: #6b6b7b; line-height: 1.8; }
   .hint b { color: #d4af37; }
   @media (orientation: landscape) and (max-height: 500px) {
@@ -45,7 +41,6 @@
   <button class="btn" id="btnKb">⌨️ 鍵盤</button>
 </header>
 <div id="stage"><div id="dos"></div></div>
-<button id="btnLeft" title="滑鼠左鍵">🖱️</button>
 <div class="hint">
   📱 <b>觸控（手機）：</b>點一下 = 滑鼠左鍵；連點兩下 = 滑鼠右鍵；撳住唔放／拖曳 = 撳住左鍵（滑動地圖、點住「確定」過關）。建議轉橫屏遊玩；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
   🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」（點住約1秒再鬆開）。<br>
@@ -71,8 +66,6 @@
         ci = arg; window.__ciReady = true;
         var tl = document.getElementById("touchLayer");
         if (tl) { tl.style.display = "block"; }
-        var lb = document.getElementById("btnLeft");
-        if (lb && IS_TOUCH) { lb.style.display = "block"; }
       }
     }
   });
@@ -233,21 +226,6 @@
     }
     alert("遊戲未載入完成，請先撳 ▶ 開始遊戲，再撳此按鈕。");
   });
-
-  // ---------- 左下角滑鼠左鍵掣：cursor 停啱位先撳，唔郁 cursor 淨送 click ----------
-  // touchstart 即㩒（唔等 click 升泡，唔經 touchLayer，唔會郁 cursor）
-  (function () {
-    var b = document.getElementById("btnLeft");
-    var fire = function (e) {
-      if (e) { try { e.preventDefault(); } catch (_) {} try { e.stopPropagation(); } catch (_) {} }
-      click(0, 800);
-    };
-    b.addEventListener("touchstart", fire, { passive: false });
-    b.addEventListener("mousedown", function (e) {
-      // desktop 後備（IS_TOUCH 裝置唔會 show 粒掣，唔怕 double-fire）
-      if (!IS_TOUCH) { fire(e); }
-    });
-  })();
 })();
 </script>
 </body>
