@@ -39,6 +39,7 @@
   <span class="spacer"></span>
   <button class="btn" id="btnFs">⛶ 全螢幕</button>
   <button class="btn" id="btnKb">⌨️ 鍵盤</button>
+  <button class="btn" id="btnDbg" style="display:none;">🐞 座標</button>
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div class="hint">
@@ -68,6 +69,8 @@
         if (tl) { tl.style.display = "block"; }
         var mb = document.getElementById("touchModeBtn");
         if (mb) { mb.style.display = "block"; }
+        var db = document.getElementById("btnDbg");
+        if (db && IS_TOUCH) { db.style.display = ""; }
       }
     }
   });
@@ -146,6 +149,28 @@
       }, holdMs || 60);
     } catch (e) {}
   }
+
+  // ---------- 座標除錯：每下 touch 記低 client XY + 算出嚟嘅 game XY + canvas 狀態 ----------
+  window.__touchLog = [];
+  function logTouch(kind, clientX, clientY, game) {
+    var canvas = el.querySelector("canvas");
+    var r = canvas ? canvas.getBoundingClientRect() : null;
+    window.__touchLog.push({
+      kind: kind,
+      client: [Math.round(clientX), Math.round(clientY)],
+      game: game ? [+game.x.toFixed(3), +game.y.toFixed(3)] : null,
+      canvasAttr: canvas ? [canvas.width, canvas.height] : null,
+      canvasRect: r ? [Math.round(r.x), Math.round(r.y), Math.round(r.width), Math.round(r.height)] : null,
+      t: Date.now()
+    });
+    if (window.__touchLog.length > 50) { window.__touchLog.shift(); }
+  }
+  document.getElementById("btnDbg").addEventListener("click", function () {
+    var lines = window.__touchLog.slice(-8).map(function (e, i) {
+      return (i + 1) + ". " + e.kind + " 手指(" + e.client + ") → 遊戲(" + e.game + ") 畫布" + e.canvasAttr;
+    });
+    alert(lines.length ? lines.join("\n") : "未撳過遊戲區");
+  });
 
   function bindTouch(layer) {
     var startX = 0, startY = 0, startT = 0;
@@ -252,6 +277,7 @@
       if (dt > TAP_MS && !moved) { lastTapT = 0; e.preventDefault(); return; }  // 長撳但 timer 未起動（極少見）
       var now = Date.now();
       var p = toGameXY(t.clientX, t.clientY);
+      logTouch("tap", t.clientX, t.clientY, p);
       if (!p) { e.preventDefault(); return; }
       try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
       if (now - lastTapT < DBL_MS &&
