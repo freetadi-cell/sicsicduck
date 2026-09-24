@@ -139,11 +139,12 @@
       startX = t.clientX; startY = t.clientY; startT = Date.now();
       moved = false; downSent = false;
       clearLong();
-      // 長撳唔郁：350ms 後當拖曳起點（㩒住左鍵），方便過「確定」呢類要 hold 嘅掣
+      // 長撳唔郁（350ms）：乜都唔送，淨係當佢唔係 tap（唔計 double-tap）。
+      // 「確定」呢類要 hold 嘅掣：㩒住唔放 350ms 後先至㩒住左鍵唔放，手指一郁就拖曳。
       (function (sx, sy) {
         longTimer = setTimeout(function () {
           if (!moved && ci) {
-            moved = true;
+            moved = true;   // 轉做 hold/drag 狀態，唔再當 tap
             var p = toGameXY(sx, sy);
             if (p) {
               try {
@@ -166,15 +167,7 @@
       if (!moved && Math.hypot(dx, dy) > TAP_PX) {
         clearLong();
         moved = true;
-        // 開始拖曳：按住左鍵 + 同步 mouse motion
-        var p = toGameXY(startX, startY);
-        if (p) {
-          try {
-            ci.sendMouseMotion(p.x, p.y);
-            ci.sendMouseButton(0, true);
-            downSent = true;
-          } catch (err) {}
-        }
+        // 開始拖曳：淨送 mouse motion 郁 cursor，唔㩒掣
       }
       if (moved) {
         var q = toGameXY(t.clientX, t.clientY);
@@ -189,7 +182,7 @@
       var dt = Date.now() - startT;
       var t = e.changedTouches[0];
       if (moved) {
-        // 拖曳結束：補最後位置 + 放開左鍵
+        // 拖曳／長撳 hold 結束：補最後位置＋放開左鍵（如果㩒住咗）
         var q = toGameXY(t.clientX, t.clientY);
         try {
           if (q) { ci.sendMouseMotion(q.x, q.y); }
