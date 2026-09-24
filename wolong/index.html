@@ -19,9 +19,9 @@
   .spacer { flex: 1; }
   .btn { background: #1c1c2a; color: #e0ddd5; border: 1px solid #d4af37; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
   .btn:active { background: #d4af37; color: #0c0c12; }
-  #stage { flex: 1; display: flex; align-items: flex-start; justify-content: center; padding: 8px; min-height: 0; overflow-y: auto; }
-  #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; max-height: calc(100dvh - 90px); background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
-  #dos canvas { object-fit: contain; }
+  #stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 8px; min-height: 0; }
+  #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
+  #dos canvas { width: 100% !important; height: 100% !important; }
   .hint { padding: 10px 16px 16px; font-size: 12px; color: #6b6b7b; line-height: 1.8; }
   .hint b { color: #d4af37; }
   @media (orientation: landscape) and (max-height: 500px) {
@@ -42,186 +42,25 @@
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div class="hint">
-  📱 <b>觸控（手機）：</b>點一下 = 滑鼠左鍵；連點兩下 = 滑鼠右鍵；撳住唔放／拖曳 = 撳住左鍵（滑動地圖、點住「確定」過關）。建議轉橫屏遊玩；撳「⌨️ 鍵盤」叫出輸入鍵盤。<br>
-  🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」（點住約1秒再鬆開）。<br>
+  📱 <b>手機玩法：</b>建議轉橫屏遊玩。點畫面 = 滑鼠點擊；撳「⌨️ 鍵盤」叫出輸入鍵盤；「⛶ 全螢幕」放大畫面。<br>
+  🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」。<br>
+  🔑 <b>過密碼關：</b>滑鼠<b>點住「確定」唔好放（約1秒）</b>再鬆開，遊戲就會過關。輕輕撳一下可能冇反應。<br>
   💾 遊戲進度自動存喺呢部裝置（瀏覽器儲存空間），唔使擔心唔見 save。<br>
-  ⚠️ 懷舊遊戲僅供測試交流，請支持正版。<br>
+  ⚠️ 懷舊遊戲僅供測試交流，請支持正版。
 </div>
 <script src="./js-dos.js"></script>
 <script>
 (function () {
   var el = document.getElementById("dos");
-  var ci = null;          // CommandInterface, filled on ci-ready
-  var IS_TOUCH = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+  var ci = null;
 
   Dos(el, {
     url: "./wolong.jsdos",
     pathPrefix: "./emulators/",
     theme: "dark",
-    backend: "dosboxX",
-    backendLocked: true,
-    renderAspect: "4/3",
-    onEvent: function (ev, arg) {
-      if (ev === "ci-ready") {
-        ci = arg; window.__ciReady = true;
-        var tl = document.getElementById("touchLayer");
-        if (tl) { tl.style.display = "block"; }
-      }
-    }
+    backend: "dosbox",
+    backendLocked: true
   });
-
-  // ---------- 自訂觸控層（mobile only）：tap=左鍵、double-tap=右鍵、drag=滑動 ----------
-  // 注意：冇 ci（未 ci-ready）之前唔攔截，等 Play 掣可以正常撳
-  // touchLayer 只蓋遊戲 canvas，唔好蓋 sidebar——否則左邊功能掣撳唔到。
-  // 所以 anchor 改掛 canvas 嘅 parent（.bg-black.h-full 包住 canvas），唔係成個 #dos。
-  // 注意：canvas 嘅 parent 先係啱，el 本體（#dos）包埋 sidebar，會冚住掣。
-  if (IS_TOUCH) {
-    var layer = document.createElement("div");
-    layer.id = "touchLayer";
-    layer.style.cssText = "position:absolute;inset:0;z-index:30;touch-action:none;display:none;";
-    // 等 player 建好 stage 結構先掛上去
-    var tries = 0;
-    var mountTimer = setInterval(function () {
-      var canvas0 = el.querySelector("canvas");
-      var anchor = canvas0 ? canvas0.parentElement : null;
-      if (anchor && getComputedStyle(anchor).position === "static") {
-        anchor.style.position = "relative";
-      }
-      if (anchor) {
-        anchor.appendChild(layer);
-        clearInterval(mountTimer);
-        bindTouch(layer);
-      }
-      if (++tries > 100) { clearInterval(mountTimer); }
-    }, 200);
-  }
-
-  // canvas 內容區 → 0..1 座標
-  // player 會將 canvas 置中（style.left/top），rect 入面有黑邊，
-  // 黑邊部份唔係遊戲內容，要扣咗先 map，否則 cursor 成個偏移。
-  function toGameXY(clientX, clientY) {
-    var canvas = el.querySelector("canvas");
-    if (!canvas) { return null; }
-    var r = canvas.getBoundingClientRect();
-    if (r.width <= 0 || r.height <= 0) { return null; }
-    var cs = getComputedStyle(canvas);
-    var cw = parseFloat(cs.width) || r.width;
-    var ch = parseFloat(cs.height) || r.height;
-    var cl = parseFloat(cs.left) || 0;
-    var ct = parseFloat(cs.top) || 0;
-    var cssX = clientX - r.left - cl, cssY = clientY - r.top - ct;
-    if (cssX < 0 || cssY < 0 || cssX > cw || cssY > ch) { return null; }
-    return { x: cssX / cw, y: cssY / ch };
-  }
-
-  // click() 而家淨係右鍵用（click(1) 預設 60ms 就夠）。
-  // 左鍵唔經呢度：tap 行下面即送短撳，longTimer 行 hold。
-  function click(btn, holdMs) {
-    if (!ci) { return; }
-    try {
-      ci.sendMouseButton(btn, true);
-      setTimeout(function () {
-        try { ci.sendMouseButton(btn, false); } catch (e) {}
-      }, holdMs || 60);
-    } catch (e) {}
-  }
-
-  function bindTouch(layer) {
-    var startX = 0, startY = 0, startT = 0;
-    var lastTapT = 0, lastTapX = 0, lastTapY = 0;
-    var moved = false, downSent = false, longTimer = null;
-    var TAP_MS = 350, TAP_PX = 14, DBL_MS = 320, DBL_PX = 30, LONG_MS = 350;
-    function clearLong() { if (longTimer) { clearTimeout(longTimer); longTimer = null; } }
-
-    layer.addEventListener("touchstart", function (e) {
-      if (!ci || e.touches.length !== 1) { return; }
-      var t = e.touches[0];
-      startX = t.clientX; startY = t.clientY; startT = Date.now();
-      moved = false; downSent = false;
-      clearLong();
-      // 長撳唔郁（350ms）：乜都唔送，淨係當佢唔係 tap（唔計 double-tap）。
-      // 「確定」呢類要 hold 嘅掣：㩒住唔放 350ms 後先至㩒住左鍵唔放，手指一郁就拖曳。
-      (function (sx, sy) {
-        longTimer = setTimeout(function () {
-          if (!moved && ci) {
-            moved = true;   // 轉做 hold/drag 狀態，唔再當 tap
-            var p = toGameXY(sx, sy);
-            if (p) {
-              try {
-                ci.sendMouseMotion(p.x, p.y);
-                ci.sendMouseButton(0, true);
-                downSent = true;
-              } catch (err) {}
-            }
-          }
-          longTimer = null;
-        }, LONG_MS);
-      })(startX, startY);
-      e.preventDefault();
-    }, { passive: false });
-
-    layer.addEventListener("touchmove", function (e) {
-      if (!ci || e.touches.length !== 1) { return; }
-      var t = e.touches[0];
-      var dx = t.clientX - startX, dy = t.clientY - startY;
-      if (!moved && Math.hypot(dx, dy) > TAP_PX) {
-        clearLong();
-        moved = true;
-        // 開始拖曳：淨送 mouse motion 郁 cursor，唔㩒掣
-      }
-      if (moved) {
-        var q = toGameXY(t.clientX, t.clientY);
-        if (q) { try { ci.sendMouseMotion(q.x, q.y); } catch (err) {} }
-      }
-      e.preventDefault();
-    }, { passive: false });
-
-    layer.addEventListener("touchend", function (e) {
-      if (!ci) { return; }
-      clearLong();
-      var dt = Date.now() - startT;
-      var t = e.changedTouches[0];
-      if (moved) {
-        // 拖曳／長撳 hold 結束：補最後位置＋放開左鍵（如果㩒住咗）
-        var q = toGameXY(t.clientX, t.clientY);
-        try {
-          if (q) { ci.sendMouseMotion(q.x, q.y); }
-          if (downSent) { ci.sendMouseButton(0, false); }
-        } catch (err) {}
-        lastTapT = 0;   // 拖曳唔計入 double-tap
-        e.preventDefault();
-        return;
-      }
-      if (dt > TAP_MS && !moved) { lastTapT = 0; e.preventDefault(); return; }  // 長撳但 timer 未起動（極少見）
-      var now = Date.now();
-      var p = toGameXY(t.clientX, t.clientY);
-      if (!p) { e.preventDefault(); return; }
-      try { ci.sendMouseMotion(p.x, p.y); } catch (err) {}
-      if (now - lastTapT < DBL_MS &&
-          Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY) < DBL_PX) {
-        click(1);            // 第二下 → 右鍵
-        lastTapT = 0;
-      } else {
-        // 第一點：即送 motion＋短左鍵（down 120ms 即放），唔等唔 hold——
-        // 地圖係即時 mouse driver，落掣即選中；hold 太耐會變拖曳捲地圖。
-        // 「確定」呢類要 hold 嘅掣靠上面 longTimer（350ms 起動㩒住唔放）。
-        try {
-          ci.sendMouseButton(0, true);
-          setTimeout(function () {
-            try { ci.sendMouseButton(0, false); } catch (e2) {}
-          }, 120);
-        } catch (err) {}
-        lastTapT = now; lastTapX = t.clientX; lastTapY = t.clientY;
-      }
-      e.preventDefault();
-    }, { passive: false });
-
-    layer.addEventListener("touchcancel", function () {
-      clearLong();
-      if (ci && downSent) { try { ci.sendMouseButton(0, false); } catch (e) {} }
-      downSent = false; moved = false; lastTapT = 0;
-    });
-  }
 
   document.getElementById("btnFs").addEventListener("click", function () {
     var s = document.getElementById("stage");
@@ -230,6 +69,7 @@
     else if (s.webkitRequestFullscreen) { s.webkitRequestFullscreen(); }
   });
   document.getElementById("btnKb").addEventListener("click", function () {
+    // 撳模擬器側欄個鍵盤掣（認 viewBox 507.9 嗰個就係）
     var btns = document.querySelectorAll(".sidebar-button");
     for (var i = 0; i < btns.length; i++) {
       if (btns[i].innerHTML.indexOf("507.9") !== -1) { btns[i].click(); return; }
