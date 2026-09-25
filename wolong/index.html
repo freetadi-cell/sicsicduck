@@ -49,6 +49,7 @@
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div id="mouseBtns">
+  <div class="mbtn" id="btnLeft"><span>👆</span>左鍵</div>
   <div class="mbtn" id="btnRight"><span>🖱️</span>右鍵</div>
 </div>
 <script src="./js-dos.js"></script>
@@ -272,17 +273,19 @@
     }, 2000);
   }
 
-  // 撳掣時嘅視覺回饋
-  function flash() {
-    var b = document.getElementById("btnRight");
+  // 撳掣時嘅視覺回饋（tap  Left 掣閃，右鍵掣自己閃）
+  function flash(id) {
+    var b = document.getElementById(id || "btnLeft");
     if (!b) { return; }
     b.classList.add("on");
     setTimeout(function () { b.classList.remove("on"); }, 140);
   }
 
-  // ---- 右下角「右鍵」掣：喺游標現時位置送右鍵（唔郁游標）----
-  (function () {
-    var b = document.getElementById("btnRight");
+  // ---- 右下角「左鍵 / 右鍵」掣：喺游標現時位置送 click（唔郁游標）----
+  // 用途：游標已經喺啱位但遊戲食唔到 tap（例如地圖畫面 offset 時），
+  // 先拖游標去啱位，再撳呢度補 click，唔使再 tap 郁個游標。
+  function bindClickBtn(id, btn) {
+    var b = document.getElementById(id);
     if (!b) { return; }
     var last = 0;
     function fire(e) {
@@ -292,12 +295,14 @@
       last = now;
       b.classList.add("on");
       setTimeout(function () { b.classList.remove("on"); }, 140);
-      sendBtn(1, true);
-      setTimeout(function () { sendBtn(1, false); }, MIN_PRESS_MS);
+      sendBtn(btn, true);
+      setTimeout(function () { sendBtn(btn, false); }, MIN_PRESS_MS);
     }
     b.addEventListener("touchstart", fire, { passive: false });
     b.addEventListener("mousedown", fire);
-  })();
+  }
+  bindClickBtn("btnLeft", 0);
+  bindClickBtn("btnRight", 1);
 
   document.getElementById("btnFs").addEventListener("click", function () {
     var s = document.getElementById("stage");
