@@ -37,6 +37,12 @@
     #stage { padding: 2px; }
     .mbtn { width: 52px; height: 52px; }
   }
+  /* 掣多咗一粒，窄芒唔好逼爆 header */
+  @media (max-width: 480px) {
+    header { gap: 6px; padding: 8px 8px; }
+    header h1 { font-size: 14px; }
+    .btn { padding: 6px 7px; font-size: 12px; }
+  }
 </style>
 </head>
 <body>
@@ -46,9 +52,11 @@
   <span class="spacer"></span>
   <button class="btn" id="btnFs">⛶ 全螢幕</button>
   <button class="btn" id="btnKb">⌨️ 鍵盤</button>
+  <button class="btn" id="btnMode">👆 觸屏</button>
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div id="mouseBtns">
+  <div class="mbtn" id="btnHold"><span>✊</span>按住</div>
   <div class="mbtn" id="btnLeft"><span>👆</span>左鍵</div>
   <div class="mbtn" id="btnRight"><span>🖱️</span>右鍵</div>
 </div>
@@ -133,6 +141,21 @@
   }
 
   // ---- 觸控層：點一下 = 左鍵；撳住 = 按住左鍵；拖 = 淨郁游標 ----
+  // 模式開關：TOUCH（預設，指邊撳邊）↔ PAD（mousepad，淨相對郁，入地圖用）
+  // 掣上面顯示而家咩 mode，撳一下即轉。
+  var inputMode = "touch";
+  var btnMode = document.getElementById("btnMode");
+  function paintModeBtn() {
+    if (btnMode) { btnMode.textContent = inputMode === "touch" ? "👆 觸屏" : "🖱️ 滑鼠"; }
+  }
+  function setInputMode(m) {
+    if (inputMode === m) { paintModeBtn(); return; }
+    inputMode = m;
+    paintModeBtn();
+    LOG.push(["mode", m, Date.now()]);
+    toast(m === "touch" ? "👆 觸屏模式：指邊撳邊" : "🖱️ 滑鼠模式：拖郁游標＋左鍵撳");
+  }
+  paintModeBtn();
   var TAP_PX = 14;      // 郁多過呢個 = 拖
   var HOLD_MS = 400;    // 撳住唔郁超過呢個 = 按住左鍵
   var HOLD_KEEP_MS = 700; // 按住最少總時長（過密碼「確定」）
@@ -172,6 +195,7 @@
       sx = t.clientX; sy = t.clientY;
       moved = false; held = false;
       clearHold();
+      if (inputMode !== "touch") { eat(e); return; } // PAD 唔跳游標
       // 手指一落 → 游標即刻跳去嗰點
       var p = toGame(t.clientX, t.clientY);
       if (p) { sendMotion(p.x, p.y); }
@@ -193,6 +217,27 @@
       if (!moved && Math.hypot(t.clientX - sx, t.clientY - sy) > TAP_PX) {
         moved = true;
         if (!held) { clearHold(); }
+      }
+      if (inputMode !== "touch") {
+        // PAD：手指郁幾多，游標跟住郁幾多（相對 mousepad）
+        var dx = (t.clientX - sx) / window.innerWidth;
+        var dy = (t.clientY - sy) / window.innerHeight;
+        sx = t.clientX; sy = t.clientY;
+        try {
+          var cur = (typeof window.__padPos === "undefined") ? null : window.__padPos;
+          var nx, ny;
+          if (cur) { nx = cur.x + dx; ny = cur.y + dy; }
+          else {
+            // 未有上次位：唔估，用住畫面中間起步，郁兩下就追得返
+            nx = 0.5 + dx; ny = 0.5 + dy;
+          }
+          nx = Math.max(0, Math.min(1, nx));
+          ny = Math.max(0, Math.min(1, ny));
+          window.__padPos = { x: nx, y: ny };
+          sendMotion(nx, ny);
+        } catch (err) {}
+        eat(e);
+        return;
       }
       // 拖 = 淨係郁游標，唔按任何掣
       var p = toGame(t.clientX, t.clientY);
@@ -216,11 +261,16 @@
         eat(e);
         return;
       }
+      // touchend 嚟嗰陣支手指已經離開: moved 係 true 就純郁游標, 唔撳
+      // PAD mode：tap 即係 click（喺游標現時位置，唔跳游標）
       if (wasMoved) { eat(e); return; }
 
       // tap = 左鍵：先確認游標已到位，等遊戲 poll 到，之後才送 button
-      var p = toGame(t.clientX, t.clientY);
-      if (p) { sendMotion(p.x, p.y); }
+      // （淨係 TOUCH mode 先跳游標；PAD mode 個 tap 純粹係 click）
+      if (inputMode === "touch") {
+        var p = toGame(t.clientX, t.clientY);
+        if (p) { sendMotion(p.x, p.y); }
+      }
       flash();
       setTimeout(function () {
         sendBtn(0, true);
@@ -303,6 +353,42 @@
   }
   bindClickBtn("btnLeft", 0);
   bindClickBtn("btnRight", 1);
+
+  // 按住左鍵唔放（地圖／密碼「確定」嗰類要長撳嘅掣）：撳一下開始長撳，再撳放手
+  var holdOn = false;
+  var btnHold = document.getElementById("btnHold");
+  function setHold(on) {
+    holdOn = on;
+    if (btnHold) { btnHold.classList.toggle("on", on); }
+    sendBtn(0, on);
+  }
+  if (btnHold) {
+    btnHold.addEventListener("touchstart", function (e) { eat(e); setHold(!holdOn); }, { passive: false });
+    btnHold.addEventListener("mousedown", function (e) { eat(e); setHold(!holdOn); });
+  }
+
+  // 右上角 mode 掣：觸屏 ↔ 滑鼠
+  if (btnMode) {
+    btnMode.addEventListener("click", function () {
+      setInputMode(inputMode === "touch" ? "pad" : "touch");
+    });
+  }
+
+  // 轉 mode 嗰陣提一提（兩秒自動消失）
+  var toastTimer = null;
+  function toast(msg) {
+    var t = document.getElementById("modeToast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "modeToast";
+      t.style.cssText = "position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:rgba(28,28,42,.95);border:1px solid #d4af37;color:#e0ddd5;padding:8px 16px;border-radius:8px;font-size:13px;z-index:99;pointer-events:none;white-space:nowrap;";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.style.display = "block";
+    if (toastTimer) { clearTimeout(toastTimer); }
+    toastTimer = setTimeout(function () { t.style.display = "none"; }, 2000);
+  }
 
   document.getElementById("btnFs").addEventListener("click", function () {
     var s = document.getElementById("stage");
