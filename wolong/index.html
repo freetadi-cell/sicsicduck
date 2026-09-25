@@ -136,6 +136,12 @@
   var HOLD_MS = 400;    // 撳住唔郁超過呢個 = 按住左鍵
   var HOLD_KEEP_MS = 700; // 按住最少總時長（過密碼「確定」）
 
+  // touchLayer 要長期錨定：過場／轉 video mode 時 player 會重建 DOM，
+  // mount-once 嘅層會被丟低，tap 就會跌返落 player 預設嘅相對 mousepad 路徑，
+  // 即係你見到嘅「自動變鼠標模式」：手指郁少少 cursor 飛老遠。
+  var touchLayer = null;
+  var anchorWatchStarted = false;
+
   function buildTouch() {
     var c = el.querySelector("canvas");
     var host = (c && c.parentElement) || el;
@@ -146,6 +152,8 @@
     layer.id = "touchLayer";
     layer.style.cssText = "position:absolute;inset:0;z-index:40;touch-action:none;background:transparent;";
     host.appendChild(layer);
+    touchLayer = layer;
+    startAnchorWatch();
 
     var sx = 0, sy = 0, moved = false, held = false, holdTimer = null, pressStart = 0;
 
@@ -222,6 +230,33 @@
     ["pointerdown", "pointermove", "pointerup", "pointercancel"].forEach(function (type) {
       layer.addEventListener(type, function (e) { eat(e); }, { capture: true, passive: false });
     });
+  }
+
+  // 每 2 秒檢查一次 touchLayer 仲喺唔喺 DOM 入面／仲係咪蓋住 canvas：
+  // player 重建過 DOM 就重新掛過，咁無論入咩場都唔會跌返落相對 mousepad 模式。
+  function startAnchorWatch() {
+    if (anchorWatchStarted) { return; }
+    anchorWatchStarted = true;
+    setInterval(function () {
+      if (!ci) { return; }
+      var c = el.querySelector("canvas");
+      if (!c) { return; }
+      var host = c.parentElement || el;
+      var inDom = touchLayer && touchLayer.isConnected && touchLayer.parentElement === host;
+      if (!inDom) {
+        // 舊層丟咗／掛錯位：拆咗重建（buildTouch 有 guard，唔會重複）
+        if (touchLayer && touchLayer.parentElement) {
+          try { touchLayer.parentElement.removeChild(touchLayer); } catch (e) {}
+        }
+        touchLayer = null;
+        var stale = document.getElementById("touchLayer");
+        if (stale && stale.parentElement) {
+          try { stale.parentElement.removeChild(stale); } catch (e) {}
+        }
+        buildTouch();
+        LOG.push(["re-anchor", Date.now()]);
+      }
+    }, 2000);
   }
 
   // 撳掣時嘅視覺回饋
