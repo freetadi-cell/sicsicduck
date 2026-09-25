@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T08:32:10.130864+08:00",
+  "last_updated": "2026-09-25T08:32:51.569940+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -293,36 +293,36 @@
       "logo_color": "#005594",
       "hkd": {
         "3m": {
-          "rate": 3.2,
+          "rate": 3.3,
           "fund_type": "new_funds",
           "min_deposit": 500000,
           "note": "新資金定期存款優惠",
           "source": "bank",
-          "existing_funds_rate": 2.9
+          "existing_funds_rate": 3.1
         },
         "6m": {
-          "rate": 3.2,
-          "fund_type": "new_funds",
-          "min_deposit": 500000,
-          "note": "新資金定期存款優惠",
-          "source": "bank"
-        },
-        "1m": {
-          "rate": 2.45,
+          "rate": 3.4,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
-        "2m": {
+        "1m": {
           "rate": 2.55,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
+        "2m": {
+          "rate": 2.65,
+          "fund_type": "existing_funds",
+          "min_deposit": 500000,
+          "note": "Fubon+手機App定期存款",
+          "source": "bank"
+        },
         "4m": {
-          "rate": 3.15,
+          "rate": 3.25,
           "fund_type": "existing_funds",
           "min_deposit": 500000,
           "note": "Fubon+手機App定期存款",
@@ -331,43 +331,43 @@
       },
       "usd": {
         "3m": {
-          "rate": 4.25,
+          "rate": 4.35,
           "fund_type": "new_funds",
           "min_deposit": 128000,
           "note": "新資金定期存款優惠",
           "source": "bank",
-          "existing_funds_rate": 4.2
+          "existing_funds_rate": 4.3
         },
         "1m": {
-          "rate": 3.95,
+          "rate": 4.05,
           "fund_type": "existing_funds",
           "min_deposit": 65000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "2m": {
-          "rate": 4.1,
+          "rate": 4.2,
           "fund_type": "existing_funds",
           "min_deposit": 65000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "4m": {
-          "rate": 4.2,
+          "rate": 4.3,
           "fund_type": "existing_funds",
           "min_deposit": 65000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "6m": {
-          "rate": 4.2,
+          "rate": 4.3,
           "fund_type": "existing_funds",
           "min_deposit": 65000,
           "note": "Fubon+手機App定期存款",
           "source": "bank"
         },
         "12m": {
-          "rate": 4.2,
+          "rate": 4.3,
           "fund_type": "existing_funds",
           "min_deposit": 65000,
           "note": "Fubon+手機App定期存款",
@@ -1719,7 +1719,7 @@
           "source": "bank"
         },
         "12m": {
-          "rate": 3.2,
+          "rate": 3.25,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -2021,7 +2021,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.8,
+            "rate": 2.9,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2035,7 +2035,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.75,
+            "rate": 2.85,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2049,7 +2049,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.75,
+            "rate": 2.85,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2063,7 +2063,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.75,
+            "rate": 2.9,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
@@ -2077,7 +2077,7 @@
             "source": "bank"
           },
           "new_funds": {
-            "rate": 2.75,
+            "rate": 2.9,
             "min_deposit": 50000,
             "note": "5萬+利率",
             "source": "bank"
