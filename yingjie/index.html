@@ -63,17 +63,18 @@
     backend: "dosboxX",
     backendLocked: true,
     // 開機即 QWERTY：Dos options 唔食 softKeyboardLayout（player 唔認呢個 key），
-    // 要經 Dos() 回傳 api 嘅 .softKeyboardLayout()；ci-ready 嗰陣 set，
+    // 要經 Dos() 回傳 api 嘅 .setSoftKeyboardLayout()；ci-ready 嗰陣 set，
     // 撳「鍵盤」直接出打到字嘅全鍵盤，唔使再撳 ⎘ 轉
-    // 格式：[[page1 rows...]]（pages 嘅 array，每 page 係 rows 嘅 array）
+    // 格式注意：l = layout[activeLayout] 係 pages；每 page 係 columns 嘅 array；
+    // 每 column 係 rows 嘅 array；row 係空白分隔字串。照抄內置 QWERTY 嗰頁結構。
     onEvent: function (ev, arg) {
       if (ev === "ci-ready" && dosApi && dosApi.setSoftKeyboardLayout) {
         try {
           dosApi.setSoftKeyboardLayout([[
-            "` 1 2 3 4 5 6 7 8 9 0 ( ) - = {bksp} {enter}",
-            "{tab} q w e r t y u i o p { } \\ [ ] {up}",
-            "{shift} {left} {right} a s d f g h j k l : ; ' [ {down}",
-            "{layout} {symbols} {alt} {ctrl} z x c v b n m , . / ] {space}"
+            ["` 1 2 3 4 5 6 7 8 9 0 ( ) - = {bksp} {enter}"],
+            ["{tab} q w e r t y u i o p { } \\ [ ] {up}"],
+            ["{shift} {left} {right} a s d f g h j k l : ; ' [ {down}"],
+            ["{layout} {symbols} {alt} {ctrl} z x c v b n m , . / ] {space}"]
           ]]);
           window.__kbQwerty = true;
         } catch (e) { window.__kbQwerty = "err:" + e; }
@@ -339,13 +340,38 @@
     else if (s.webkitRequestFullscreen) { s.webkitRequestFullscreen(); }
   });
   document.getElementById("btnKb").addEventListener("click", function () {
-    // 撳模擬器側欄個鍵盤掣（認 viewBox 507.9 嗰個就係）
+    // 撳模擬器側欄個鍵盤掣（認 viewBox 507.9 嗰個就係）。
+    // player 啲掣係 div.onClick（React 合成事件），直接 .click() 有時唔着；
+    // 逐層試：真實 pointer 事件 → .click() fallback。
     var btns = document.querySelectorAll(".sidebar-button");
     for (var i = 0; i < btns.length; i++) {
-      if (btns[i].innerHTML.indexOf("507.9") !== -1) { btns[i].click(); return; }
+      if (btns[i].innerHTML.indexOf("507.9") !== -1) {
+        pressPlayerBtn(btns[i]);
+        return;
+      }
     }
     alert("遊戲未載入完成，請先撳 ▶ 開始遊戲，再撳此按鈕。");
   });
+
+  // 撳 player 側欄掣：React onClick 認 pointer 事件，唔認 synthetic click。
+  // 先送 pointerdown/up（touch 機經 touch 亦得），唔 work 先 fallback .click()。
+  function pressPlayerBtn(b) {
+    try {
+      var r = b.getBoundingClientRect();
+      var x = r.left + r.width / 2, y = r.top + r.height / 2;
+      var opts = { bubbles: true, cancelable: true, clientX: x, clientY: y, pointerId: 1, pointerType: "touch", isPrimary: true };
+      var ok = true;
+      try {
+        b.dispatchEvent(new PointerEvent("pointerdown", opts));
+        b.dispatchEvent(new PointerEvent("pointerup", opts));
+      } catch (e) { ok = false; }
+      if (!ok) { b.click(); return; }
+      // 確認軟鍵盤有冇開；冇就補 .click()
+      setTimeout(function () {
+        if (!document.querySelector(".soft-keyboard")) { try { b.click(); } catch (e2) {} }
+      }, 400);
+    } catch (e) { try { b.click(); } catch (e3) {} }
+  }
 })();
 </script>
 </body>
