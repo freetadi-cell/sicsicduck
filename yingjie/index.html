@@ -56,14 +56,28 @@
 (function () {
   var el = document.getElementById("dos");
   var ci = null;
-
-  Dos(el, {
+  var dosApi = Dos(el, {
     url: "./yingjie.jsdos",
     pathPrefix: "./emulators/",
     theme: "dark",
     backend: "dosboxX",
     backendLocked: true,
+    // 開機即 QWERTY：Dos options 唔食 softKeyboardLayout（player 唔認呢個 key），
+    // 要經 Dos() 回傳 api 嘅 .softKeyboardLayout()；ci-ready 嗰陣 set，
+    // 撳「鍵盤」直接出打到字嘅全鍵盤，唔使再撳 ⎘ 轉
+    // 格式：[[page1 rows...]]（pages 嘅 array，每 page 係 rows 嘅 array）
     onEvent: function (ev, arg) {
+      if (ev === "ci-ready" && dosApi && dosApi.setSoftKeyboardLayout) {
+        try {
+          dosApi.setSoftKeyboardLayout([[
+            "` 1 2 3 4 5 6 7 8 9 0 ( ) - = {bksp} {enter}",
+            "{tab} q w e r t y u i o p { } \\ [ ] {up}",
+            "{shift} {left} {right} a s d f g h j k l : ; ' [ {down}",
+            "{layout} {symbols} {alt} {ctrl} z x c v b n m , . / ] {space}"
+          ]]);
+          window.__kbQwerty = true;
+        } catch (e) { window.__kbQwerty = "err:" + e; }
+      }
       if (ev === "ci-ready") {
         ci = arg;
         window.__ci = arg;
