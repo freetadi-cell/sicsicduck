@@ -19,6 +19,7 @@
   .spacer { flex: 1; }
   .btn { background: #1c1c2a; color: #e0ddd5; border: 1px solid #d4af37; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
   .btn:active { background: #d4af37; color: #0c0c12; }
+  .btn.on { background: #d4af37; color: #0c0c12; }
   #stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 8px; min-height: 0; }
   #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
   /* 唔好強制拉伸 canvas：js-dos 自己會按比例算好尺寸同置中，
@@ -40,10 +41,11 @@
   <span class="spacer"></span>
   <button class="btn" id="btnFs">⛶ 全螢幕</button>
   <button class="btn" id="btnKb">⌨️ 鍵盤</button>
+  <button class="btn" id="btnPad">🖱️ 滑鼠</button>
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div class="hint">
-  📱 <b>手機玩法：</b>建議轉橫屏遊玩。點一下 = 滑鼠左鍵；撳住唔放 = 按住左鍵（過密碼「確定」用）；拖曳 = 郁游標。撳「⌨️ 鍵盤」叫出輸入鍵盤；「⛶ 全螢幕」放大畫面。<br>
+  📱 <b>手機玩法：</b>建議轉橫屏遊玩。點一下 = 滑鼠左鍵；撳住唔放 = 按住左鍵（過密碼「確定」用）；拖曳 = 郁游標。入<b>地圖</b>撳右上「🖱️ 滑鼠」轉 mousepad：拖郁游標、tap 即撳，唔會飛去錯位。撳「⌨️ 鍵盤」叫出輸入鍵盤；「⛶ 全螢幕」放大畫面。<br>
   🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」。<br>
   🔑 <b>過密碼關：</b>手指<b>點住「確定」唔好放（約1秒）</b>再鬆開，遊戲就會過關。輕輕撳一下可能冇反應。<br>
   💾 遊戲進度自動存喺呢部裝置（瀏覽器儲存空間），唔使擔心唔見 save。<br>
@@ -112,8 +114,48 @@
   // ---- 觸控層：tap = 左鍵，撳住 = 按住左鍵，拖 = 淨郁游標 ----
   // 掛喺 canvas 專用容器（唔包 sidebar，唔會冚住功能掣）。
   // 未 ci-ready 之前唔攔截，等 ▶ 可以正常撳。
+  // PAD 模式（入地圖用）：手指落點唔跳游標；拖郁幾多、游標跟幾多（相對）；
+  // tap 即 click（唔郁游標）。地圖係捲動 viewport，absolute 跳點會飛去錯位，
+  // 相對郁先係啱。右上「滑鼠」掣開關，開咗掣會著色。
+  var inputMode = "touch";
+  var btnPad = document.getElementById("btnPad");
+  function paintPad() {
+    if (btnPad) {
+      btnPad.textContent = inputMode === "touch" ? "🖱️ 滑鼠" : "👆 觸屏";
+      btnPad.classList.toggle("on", inputMode !== "touch");
+    }
+  }
+  function setInputMode(m) {
+    inputMode = m;
+    window.__padPos = null; // 轉 mode 清相對錨點，唔好用舊位起步
+    paintPad();
+    toast(m === "touch" ? "👆 觸屏：指邊撳邊" : "🖱️ 滑鼠：拖郁游標，tap 即撳");
+  }
+  paintPad();
+  if (btnPad) {
+    btnPad.addEventListener("click", function () {
+      setInputMode(inputMode === "touch" ? "pad" : "touch");
+    });
+  }
+  // 轉 mode 提示（兩秒自動消失）
+  var toastTimer = null;
+  function toast(msg) {
+    var t = document.getElementById("modeToast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "modeToast";
+      t.style.cssText = "position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:rgba(28,28,42,.95);border:1px solid #d4af37;color:#e0ddd5;padding:8px 16px;border-radius:8px;font-size:13px;z-index:99;pointer-events:none;white-space:nowrap;";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.style.display = "block";
+    if (toastTimer) { clearTimeout(toastTimer); }
+    toastTimer = setTimeout(function () { t.style.display = "none"; }, 2000);
+  }
+  // PAD 靈敏度：手指郁一隻芒闊，游標郁幾多個遊戲闊
+  var PAD_SENS = 0.6;
   var TAP_PX = 14;       // 郁多過呢個 = 拖
-  var HOLD_MS = 400;     // 撳住唔郁超過呢個 = 按住左鍵
+  var HOLD_MS = 400;     // 撳住唔郁超過呢個 = 按住左鍵（淨 TOUCH mode）
   var HOLD_KEEP_MS = 700; // 按住最少總時長（過密碼「確定」）
 
   function buildTouch() {
@@ -139,6 +181,7 @@
       sx = t.clientX; sy = t.clientY;
       moved = false; held = false;
       clearHold();
+      if (inputMode !== "touch") { eat(e); return; } // PAD：落點唔跳游標
       // 手指一落 → 游標即刻跳去嗰點
       var p = toGame(t.clientX, t.clientY);
       if (p) { sendMotion(p.x, p.y); }
@@ -160,6 +203,26 @@
       if (!moved && Math.hypot(t.clientX - sx, t.clientY - sy) > TAP_PX) {
         moved = true;
         if (!held) { clearHold(); }
+      }
+      if (inputMode !== "touch") {
+        // PAD：相對 mousepad —— 手指郁幾多，游標跟住郁幾多，唔跳點。
+        // 地圖係捲動 viewport，游標位置 = 遊戲內部狀態，我哋估唔到；
+        // 所以用累加：上次送出位 + 今次手指位移 x 靈敏度。
+        var dx = (t.clientX - sx) * PAD_SENS / window.innerWidth;
+        var dy = (t.clientY - sy) * PAD_SENS / window.innerHeight;
+        sx = t.clientX; sy = t.clientY;
+        try {
+          var cur = window.__padPos || null;
+          var nx = (cur ? cur.x : 0.5) + dx;
+          var ny = (cur ? cur.y : 0.5) + dy;
+          nx = Math.max(0, Math.min(1, nx));
+          ny = Math.max(0, Math.min(1, ny));
+          window.__padPos = { x: nx, y: ny };
+          sendMotion(nx, ny);
+          window.__padLastMove = Date.now();
+        } catch (err) {}
+        eat(e);
+        return;
       }
       // 拖 = 淨係郁游標，唔按任何掣
       var p = toGame(t.clientX, t.clientY);
@@ -185,9 +248,13 @@
       }
       if (wasMoved) { eat(e); return; }
 
-      // tap = 左鍵：先確認游標已到位，等遊戲 poll 到，之後才送 button
-      var p = toGame(t.clientX, t.clientY);
-      if (p) { sendMotion(p.x, p.y); }
+      // tap = 左鍵。
+      // TOUCH：先跳游標去手指位，等遊戲 poll 到，之後才送 button。
+      // PAD（地圖）：唔跳游標，純粹喺游標現時位置 click。
+      if (inputMode === "touch") {
+        var p = toGame(t.clientX, t.clientY);
+        if (p) { sendMotion(p.x, p.y); }
+      }
       setTimeout(function () {
         sendBtn(0, true);
         setTimeout(function () { sendBtn(0, false); }, MIN_PRESS_MS);
