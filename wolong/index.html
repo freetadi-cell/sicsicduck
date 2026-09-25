@@ -150,9 +150,13 @@
 
     var layer = document.createElement("div");
     layer.id = "touchLayer";
-    layer.style.cssText = "position:absolute;inset:0;z-index:40;touch-action:none;background:transparent;";
+    // 注意：z-index 要高過 mouseOverlay 但唔可以冚住 sidebar；
+    // host 係 canvas 專用容器（唔包 sidebar），所以用 inset:0 全蓋係安全嘅。
+    layer.style.cssText = "position:absolute;inset:0;z-index:40;touch-action:none;background:transparent;pointer-events:auto;";
     host.appendChild(layer);
     touchLayer = layer;
+    // 即刻驗一次疊放：layer 頂面座標逐隻 sidebar 掣中心做 elementFromPoint，
+    // 中咗自己以外嘅嘢就記低（電話實測回報用）。
     startAnchorWatch();
 
     var sx = 0, sy = 0, moved = false, held = false, holdTimer = null, pressStart = 0;
@@ -234,6 +238,9 @@
 
   // 每 2 秒檢查一次 touchLayer 仲喺唔喺 DOM 入面／仲係咪蓋住 canvas：
   // player 重建過 DOM 就重新掛過，咁無論入咩場都唔會跌返落相對 mousepad 模式。
+  // 另：開住「Mobile controls」嗰陣 player 會彈起 mouseOverlay（z 高過我哋），
+  // 佢會用自己嘅相對座標再送多一次 motion —— 所以每次檢查都順手將佢撳返熄（display:none），
+  // 等實際輸入淨係經我哋 absolute touchLayer 出，唔會有雙重輸入。
   function startAnchorWatch() {
     if (anchorWatchStarted) { return; }
     anchorWatchStarted = true;
@@ -255,6 +262,12 @@
         }
         buildTouch();
         LOG.push(["re-anchor", Date.now()]);
+      }
+      // 熄 mouseOverlay：唔好俾 player 經佢送多一次相對 motion（同我哋 absolute 打架）
+      var ov = host.querySelector(".emulator-mouse-overlay");
+      if (ov && ov.style.display !== "none") {
+        ov.style.display = "none";
+        LOG.push(["overlay-off", Date.now()]);
       }
     }, 2000);
   }
