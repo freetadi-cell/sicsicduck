@@ -11,24 +11,31 @@
 <style>
   :root { color-scheme: dark; }
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  body { background: #0c0c12; color: #e0ddd5; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
-  header { padding: 12px 16px; border-bottom: 1px solid #2a2a3a; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  header h1 { font-size: 18px; letter-spacing: 2px; }
+  html, body { height: 100%; overflow: hidden; }
+  body { background: #0c0c12; color: #e0ddd5; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; display: flex; flex-direction: column; }
+  header { padding: 8px 12px; border-bottom: 1px solid #2a2a3a; display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+  header h1 { font-size: 16px; letter-spacing: 1px; white-space: nowrap; }
   header h1 a { color: #d4af37; text-decoration: none; }
-  header .sub { font-size: 12px; color: #6b6b7b; }
+  header .sub { font-size: 11px; color: #6b6b7b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .spacer { flex: 1; }
-  .btn { background: #1c1c2a; color: #e0ddd5; border: 1px solid #d4af37; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
+  .btn { background: #1c1c2a; color: #e0ddd5; border: 1px solid #d4af37; border-radius: 8px; padding: 6px 10px; font-size: 13px; cursor: pointer; white-space: nowrap; }
   .btn:active { background: #d4af37; color: #0c0c12; }
-  #stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 8px; min-height: 0; }
-  #dos { width: 100%; max-width: 960px; aspect-ratio: 4 / 3; background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; }
-  #dos canvas { width: 100% !important; height: 100% !important; }
-  .hint { padding: 10px 16px 16px; font-size: 12px; color: #6b6b7b; line-height: 1.8; }
-  .hint b { color: #d4af37; }
+  /* stage 剩餘高度全部俾遊戲畫面；唔可以超出，超出就會被切底 → 下半部撳唔到 */
+  #stage { flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 6px; overflow: hidden; }
+  #dos { background: #000; border: 1px solid #2a2a3a; border-radius: 8px; overflow: hidden; touch-action: none; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; }
+  /* 唔好強制 canvas 100%：js-dos 自己會按 4:3 算好尺寸同置中。
+     我哋蓋咗佢會令畫面非等比拉伸，游標同實際畫面就會唔對位。 */
+  /* 右下角浮動掣 */
+  #mouseBtns { position: fixed; right: 10px; bottom: 10px; z-index: 95; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+  .mbtn { width: 58px; height: 58px; border-radius: 50%; border: 2px solid #d4af37; background: rgba(28,28,42,.9); color: #d4af37; font-size: 12px; font-weight: 700; line-height: 1.1; display: flex; flex-direction: column; align-items: center; justify-content: center; user-select: none; -webkit-user-select: none; touch-action: none; box-shadow: 0 2px 8px rgba(0,0,0,.6); }
+  .mbtn span { font-size: 17px; }
+  .mbtn.on { background: #d4af37; color: #0c0c12; }
   @media (orientation: landscape) and (max-height: 500px) {
-    header { padding: 6px 12px; }
-    header h1 { font-size: 15px; }
-    #stage { padding: 4px; }
-    .hint { display: none; }
+    header { padding: 4px 10px; }
+    header h1 { font-size: 14px; }
+    header .sub { display: none; }
+    #stage { padding: 2px; }
+    .mbtn { width: 52px; height: 52px; }
   }
 </style>
 </head>
@@ -41,35 +48,217 @@
   <button class="btn" id="btnKb">⌨️ 鍵盤</button>
 </header>
 <div id="stage"><div id="dos"></div></div>
-<div class="hint">
-  📱 <b>手機玩法：</b>建議轉橫屏遊玩。點畫面 = 滑鼠點擊；撳「⌨️ 鍵盤」叫出輸入鍵盤；「⛶ 全螢幕」放大畫面。<br>
-  🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」。<br>
-  🔑 <b>過密碼關：</b>滑鼠<b>點住「確定」唔好放（約1秒）</b>再鬆開，遊戲就會過關。輕輕撳一下可能冇反應。<br>
-  💾 遊戲進度自動存喺呢部裝置（瀏覽器儲存空間），唔使擔心唔見 save。<br>
-  ⚠️ 懷舊遊戲僅供測試交流，請支持正版。
+<div id="mouseBtns">
+  <div class="mbtn" id="btnRight"><span>🖱️</span>右鍵</div>
 </div>
 <script src="./js-dos.js"></script>
 <script>
 (function () {
   var el = document.getElementById("dos");
   var ci = null;
+  var IS_TOUCH = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+
+  var LOG = [];
+  window.__wolongLog = LOG;
+
+  // ---- 令遊戲畫面完整fit入可用空間（唔切底、唔切邊）----
+  function fitDos() {
+    var stage = document.getElementById("stage");
+    var availW = stage.clientWidth - 12;
+    var availH = stage.clientHeight - 12;
+    if (availW <= 0 || availH <= 0) { return; }
+    var w = Math.min(1200, availW, availH * 4 / 3);
+    el.style.width = Math.floor(w) + "px";
+    el.style.height = Math.floor(w * 3 / 4) + "px";
+  }
+  fitDos();
+  window.addEventListener("resize", fitDos);
+  window.addEventListener("orientationchange", function () { setTimeout(fitDos, 250); });
+  document.addEventListener("fullscreenchange", function () { setTimeout(fitDos, 250); });
 
   Dos(el, {
     url: "./wolong.jsdos",
     pathPrefix: "./emulators/",
     theme: "dark",
     backend: "dosboxX",
-    backendLocked: true
+    backendLocked: true,
+    onEvent: function (ev, arg) {
+      if (ev === "ci-ready") {
+        ci = arg;
+        window.__ci = arg;
+        window.__ciReady = true;
+        fitDos();
+        if (IS_TOUCH) { buildTouch(); }
+      }
+    }
   });
+
+  // ---- 送 mouse 事件（座標 0..1）----
+  function sendMotion(x, y) {
+    if (!ci) { return; }
+    try { ci.sendMouseMotion(x, y); LOG.push(["M", +x.toFixed(4), +y.toFixed(4)]); } catch (e) {}
+  }
+  function sendBtn(b, down) {
+    if (!ci) { return; }
+    try { ci.sendMouseButton(b, down); LOG.push(["B", b, down]); } catch (e) {}
+  }
+  // 掣最少按住幾耐（DOS 遊戲多數 poll 得慢，太短會當冇撳過）
+  var MIN_PRESS_MS = 160;
+  // 送游標位置之後，等遊戲 poll 到先送 button，否則會用舊位置判定
+  var SETTLE_MS = 100;
+
+  function eat(e) {
+    if (!e) { return; }
+    if (e.cancelable) { e.preventDefault(); }
+    e.stopPropagation();
+    if (e.stopImmediatePropagation) { e.stopImmediatePropagation(); }
+  }
+
+  // 螢幕座標 → 遊戲 0..1（同 js-dos 自己嘅算法一致：按畫面比例置中取內容區）
+  function toGame(clientX, clientY) {
+    var c = el.querySelector("canvas");
+    if (!c || !ci || typeof ci.width !== "function") { return null; }
+    var r = c.getBoundingClientRect();
+    var sw = 0, sh = 0;
+    try { sw = ci.width(); sh = ci.height(); } catch (e) {}
+    if (!sw || !sh || r.width <= 0 || r.height <= 0) { return null; }
+    var ar = sw / sh;
+    var w = r.width, h = r.width / ar;
+    if (h > r.height) { h = r.height; w = r.height * ar; }
+    var offX = (r.width - w) / 2, offY = (r.height - h) / 2;
+    var x = Math.max(0, Math.min(1, (clientX - r.left - offX) / w));
+    var y = Math.max(0, Math.min(1, (clientY - r.top - offY) / h));
+    return { x: x, y: y };
+  }
+
+  // ---- 觸控層：點一下 = 左鍵；撳住 = 按住左鍵；拖 = 淨郁游標 ----
+  var TAP_PX = 14;      // 郁多過呢個 = 拖
+  var HOLD_MS = 400;    // 撳住唔郁超過呢個 = 按住左鍵
+  var HOLD_KEEP_MS = 700; // 按住最少總時長（過密碼「確定」）
+
+  function buildTouch() {
+    var c = el.querySelector("canvas");
+    var host = (c && c.parentElement) || el;
+    if (!host || document.getElementById("touchLayer")) { return; }
+    if (getComputedStyle(host).position === "static") { host.style.position = "relative"; }
+
+    var layer = document.createElement("div");
+    layer.id = "touchLayer";
+    layer.style.cssText = "position:absolute;inset:0;z-index:40;touch-action:none;background:transparent;";
+    host.appendChild(layer);
+
+    var sx = 0, sy = 0, moved = false, held = false, holdTimer = null, pressStart = 0;
+
+    function clearHold() {
+      if (holdTimer) { clearTimeout(holdTimer); holdTimer = null; }
+    }
+
+    layer.addEventListener("touchstart", function (e) {
+      if (!ci || e.touches.length !== 1) { return; }
+      var t = e.touches[0];
+      sx = t.clientX; sy = t.clientY;
+      moved = false; held = false;
+      clearHold();
+      // 手指一落 → 游標即刻跳去嗰點
+      var p = toGame(t.clientX, t.clientY);
+      if (p) { sendMotion(p.x, p.y); }
+      // 撳住唔郁 → 按住左鍵（過密碼「確定」嗰類掣）
+      holdTimer = setTimeout(function () {
+        holdTimer = null;
+        if (!moved && ci) {
+          held = true;
+          pressStart = Date.now();
+          sendBtn(0, true);
+        }
+      }, HOLD_MS);
+      eat(e);
+    }, { passive: false });
+
+    layer.addEventListener("touchmove", function (e) {
+      if (!ci || e.touches.length !== 1) { return; }
+      var t = e.touches[0];
+      if (!moved && Math.hypot(t.clientX - sx, t.clientY - sy) > TAP_PX) {
+        moved = true;
+        if (!held) { clearHold(); }
+      }
+      // 拖 = 淨係郁游標，唔按任何掣
+      var p = toGame(t.clientX, t.clientY);
+      if (p) { sendMotion(p.x, p.y); }
+      eat(e);
+    }, { passive: false });
+
+    function finish(e) {
+      if (!ci) { return; }
+      var t = (e.changedTouches && e.changedTouches[0]) || null;
+      if (!t) { return; }
+      var wasHeld = held, wasMoved = moved;
+      held = false;
+      clearHold();
+
+      if (wasHeld) {
+        // 保證按住夠長，再放手
+        var heldFor = Date.now() - pressStart;
+        var wait = Math.max(0, HOLD_KEEP_MS - heldFor);
+        setTimeout(function () { sendBtn(0, false); }, wait);
+        eat(e);
+        return;
+      }
+      if (wasMoved) { eat(e); return; }
+
+      // tap = 左鍵：先確認游標已到位，等遊戲 poll 到，之後才送 button
+      var p = toGame(t.clientX, t.clientY);
+      if (p) { sendMotion(p.x, p.y); }
+      flash();
+      setTimeout(function () {
+        sendBtn(0, true);
+        setTimeout(function () { sendBtn(0, false); }, MIN_PRESS_MS);
+      }, SETTLE_MS);
+      eat(e);
+    }
+    layer.addEventListener("touchend", finish, { passive: false });
+    layer.addEventListener("touchcancel", finish, { passive: false });
+
+    // 唔俾 player 自己再插一手（佢綁喺 canvas 嘅 pointer 事件會用錯座標多送一次）
+    ["pointerdown", "pointermove", "pointerup", "pointercancel"].forEach(function (type) {
+      layer.addEventListener(type, function (e) { eat(e); }, { capture: true, passive: false });
+    });
+  }
+
+  // 撳掣時嘅視覺回饋
+  function flash() {
+    var b = document.getElementById("btnRight");
+    if (!b) { return; }
+    b.classList.add("on");
+    setTimeout(function () { b.classList.remove("on"); }, 140);
+  }
+
+  // ---- 右下角「右鍵」掣：喺游標現時位置送右鍵（唔郁游標）----
+  (function () {
+    var b = document.getElementById("btnRight");
+    if (!b) { return; }
+    var last = 0;
+    function fire(e) {
+      eat(e);
+      var now = Date.now();
+      if (now - last < 220) { return; }
+      last = now;
+      b.classList.add("on");
+      setTimeout(function () { b.classList.remove("on"); }, 140);
+      sendBtn(1, true);
+      setTimeout(function () { sendBtn(1, false); }, MIN_PRESS_MS);
+    }
+    b.addEventListener("touchstart", fire, { passive: false });
+    b.addEventListener("mousedown", fire);
+  })();
 
   document.getElementById("btnFs").addEventListener("click", function () {
     var s = document.getElementById("stage");
     if (document.fullscreenElement) { document.exitFullscreen(); }
     else if (s.requestFullscreen) { s.requestFullscreen(); }
     else if (s.webkitRequestFullscreen) { s.webkitRequestFullscreen(); }
+    setTimeout(fitDos, 300);
   });
   document.getElementById("btnKb").addEventListener("click", function () {
-    // 撳模擬器側欄個鍵盤掣（認 viewBox 507.9 嗰個就係）
     var btns = document.querySelectorAll(".sidebar-button");
     for (var i = 0; i < btns.length; i++) {
       if (btns[i].innerHTML.indexOf("507.9") !== -1) { btns[i].click(); return; }
