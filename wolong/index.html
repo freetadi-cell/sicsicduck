@@ -45,7 +45,7 @@
 </header>
 <div id="stage"><div id="dos"></div></div>
 <div class="hint">
-  📱 <b>手機玩法：</b>建議轉橫屏遊玩。點一下 = 滑鼠左鍵；撳住唔放 = 按住左鍵（過密碼「確定」用）；拖曳 = 郁游標。入<b>地圖</b>撳右上「🖱️ 滑鼠」轉 mousepad：拖郁游標、tap 即撳，唔會飛去錯位。撳「⌨️ 鍵盤」叫出輸入鍵盤；「⛶ 全螢幕」放大畫面。<br>
+  📱 <b>手機玩法：</b>建議轉橫屏遊玩。點一下 = 滑鼠左鍵；連點兩下 = 右鍵；撳住唔放 = 按住左鍵（過密碼「確定」用）；拖曳 = 郁游標。入<b>地圖</b>撳右上「🖱️ 滑鼠」轉 mousepad：拖郁游標、tap 即撳，唔會飛去錯位。撳「⌨️ 鍵盤」叫出輸入鍵盤；「⛶ 全螢幕」放大畫面。<br>
   🖥️ <b>電腦：</b>點一下畫面鎖定滑鼠，Esc 解鎖。遊戲內遇到密碼，直接用滑鼠點擊「决定」。<br>
   🔑 <b>過密碼關：</b>手指<b>點住「確定」唔好放（約1秒）</b>再鬆開，遊戲就會過關。輕輕撳一下可能冇反應。<br>
   💾 遊戲進度自動存喺呢部裝置（瀏覽器儲存空間），唔使擔心唔見 save。<br>
@@ -154,6 +154,11 @@
   }
   // PAD 靈敏度：手指郁一隻芒闊，游標郁幾多個遊戲闊
   var PAD_SENS = 0.6;
+  // double-tap = 右鍵（第一下等 DBL_MS 確認唔係連點先送左鍵；
+  // 第二下 350ms 內+30px 內即送右鍵，第一下左鍵取消——乾淨，唔附送）
+  var DBL_MS = 350, DBL_PX = 30;
+  var lastTapT = 0, lastTapX = 0, lastTapY = 0;
+  var pendingTapTimer = null, pendingTapPos = null;
   var TAP_PX = 14;       // 郁多過呢個 = 拖
   var HOLD_MS = 400;     // 撳住唔郁超過呢個 = 按住左鍵（淨 TOUCH mode）
   var HOLD_KEEP_MS = 700; // 按住最少總時長（過密碼「確定」）
@@ -243,22 +248,46 @@
         var heldFor = Date.now() - pressStart;
         var wait = Math.max(0, HOLD_KEEP_MS - heldFor);
         setTimeout(function () { sendBtn(0, false); }, wait);
+        lastTapT = 0; // 長撳唔計入 double-tap
         eat(e);
         return;
       }
-      if (wasMoved) { eat(e); return; }
+      if (wasMoved) { lastTapT = 0; eat(e); return; } // 拖曳唔計入 double-tap
 
       // tap = 左鍵。
       // TOUCH：先跳游標去手指位，等遊戲 poll 到，之後才送 button。
       // PAD（地圖）：唔跳游標，純粹喺游標現時位置 click。
+      var now = Date.now();
       if (inputMode === "touch") {
         var p = toGame(t.clientX, t.clientY);
         if (p) { sendMotion(p.x, p.y); }
       }
-      setTimeout(function () {
-        sendBtn(0, true);
-        setTimeout(function () { sendBtn(0, false); }, MIN_PRESS_MS);
-      }, SETTLE_MS);
+      // double-tap（350ms 內、30px 內第二下）= 右鍵：第一下嘅左鍵取消，直接右鍵
+      if (now - lastTapT < DBL_MS &&
+          Math.hypot(t.clientX - lastTapX, t.clientY - lastTapY) < DBL_PX) {
+        lastTapT = 0;
+        if (pendingTapTimer) { clearTimeout(pendingTapTimer); pendingTapTimer = null; }
+        pendingTapPos = null;
+        sendBtn(1, true);
+        setTimeout(function () { sendBtn(1, false); }, MIN_PRESS_MS);
+        eat(e);
+        return;
+      }
+      lastTapT = now; lastTapX = t.clientX; lastTapY = t.clientY;
+      // 第一點唔即送：等 DBL_MS 睇下有冇第二下；
+      // 單 tap 慢 DBL_MS 先出左鍵，double-tap 第二下即出右鍵、第一下嘅左鍵取消。
+      pendingTapTimer = setTimeout(function () {
+        pendingTapTimer = null;
+        if (inputMode === "touch") {
+          var q = pendingTapPos ? toGame(pendingTapPos.x, pendingTapPos.y) : null;
+          if (q) { sendMotion(q.x, q.y); }
+        }
+        setTimeout(function () {
+          sendBtn(0, true);
+          setTimeout(function () { sendBtn(0, false); }, MIN_PRESS_MS);
+        }, SETTLE_MS);
+      }, DBL_MS);
+      pendingTapPos = { x: t.clientX, y: t.clientY };
       eat(e);
     }
     layer.addEventListener("touchend", finish, { passive: false });
