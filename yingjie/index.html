@@ -83,10 +83,10 @@
         ci = arg;
         window.__ci = arg;
         window.__ciReady = true;
-        // 開波：25秒後第一次 probe，之後每 10/10/15/20 秒再送（共 5 次）
+        // 開波：25秒後第一次，之後每 15 秒一次（共 5 次）
         if (!autoEnterTimer) {
           setTimeout(passProbe, 25000);
-          autoEnterTimer = setInterval(passProbe, 10000);
+          autoEnterTimer = setInterval(passProbe, 15000);
         }
       }
     }
@@ -357,7 +357,8 @@
   // REKO3 嘅密碼 check 乜都收（空 Enter 都入到，實測過）。
   // 策略：唔靠畫面 detect（canvas 係 WebGL，讀唔到 pixels），
   // 靠時間線：REKO3 開機約 20-40 秒後必到密碼頁（lab 實測多次）。
-  // ci-ready 後第 25/35/45/60/80 秒各送一次 Enter（scan code 257 經 ci 直送），
+  // ci-ready 後第 25 秒第一次，之後每 15 秒一次（共 5 次：25/40/55/70/85s），
+  // Enter scan code 257 經 ci 直送。
   // 5 次送完就停。入咗 menu 之後多送幾次 Enter 都無害（menu 唔食 Enter 做唔到壞事，
   // 最多 highlight 郁一下），所以唔使 detect 住。
   // 點解唔靠 AUTOEXEC pipe：經 pipe 送嘅中文 bytes 喺 player 層有機會爛，
