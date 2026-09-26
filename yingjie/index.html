@@ -83,9 +83,10 @@
         ci = arg;
         window.__ci = arg;
         window.__ciReady = true;
-        // 開波：每 3 秒 probe 一次密碼頁，最多自動 Enter 5 次
+        // 開波：25秒後第一次 probe，之後每 10/10/15/20 秒再送（共 5 次）
         if (!autoEnterTimer) {
-          autoEnterTimer = setInterval(passProbe, 3000);
+          setTimeout(passProbe, 25000);
+          autoEnterTimer = setInterval(passProbe, 10000);
         }
       }
     }
@@ -354,76 +355,23 @@
 
   // ---- 密碼頁自動撳 Enter ----
   // REKO3 嘅密碼 check 乜都收（空 Enter 都入到，實測過）。
-  // ci-ready 後每 3 秒讀一幀 canvas 畫面，check 有冇密碼頁特徵就送 Enter。
-  // 最多送 5 次，入咗 menu 就停。
+  // 策略：唔靠畫面 detect（canvas 係 WebGL，讀唔到 pixels），
+  // 靠時間線：REKO3 開機約 20-40 秒後必到密碼頁（lab 實測多次）。
+  // ci-ready 後第 25/35/45/60/80 秒各送一次 Enter（scan code 257 經 ci 直送），
+  // 5 次送完就停。入咗 menu 之後多送幾次 Enter 都無害（menu 唔食 Enter 做唔到壞事，
+  // 最多 highlight 郁一下），所以唔使 detect 住。
   // 點解唔靠 AUTOEXEC pipe：經 pipe 送嘅中文 bytes 喺 player 層有機會爛，
   // 而 Enter scan code 經 ci 直送，實測 100% 食到。
-  // 注意：canvas 唔係全幅遊戲內容 —— 640x480 text mode 置中，前後有黑邊；
-  // 要用 ci 尺寸計返內容區先至 probe 得準（同 toGame 同一算法）。
   var autoEnterCount = 0;
   var autoEnterTimer = null;
-  function gameContentRect() {
-    var c = el.querySelector("canvas");
-    if (!c || !ci || typeof ci.width !== "function") { return null; }
-    var r = c.getBoundingClientRect();
-    var sw = 0, sh = 0;
-    try { sw = ci.width(); sh = ci.height(); } catch (e) {}
-    if (!sw || !sh || r.width <= 0 || r.height <= 0) { return null; }
-    var ar = sw / sh;
-    var w = r.width, h = r.width / ar;
-    if (h > r.height) { h = r.height; w = r.height * ar; }
-    var offX = (r.width - w) / 2, offY = (r.height - h) / 2;
-    return { left: r.left + offX, top: r.top + offY, w: w, h: h };
-  }
   function passProbe() {
     if (!ci || autoEnterCount >= 5) {
       if (autoEnterTimer) { clearInterval(autoEnterTimer); autoEnterTimer = null; }
       return;
     }
-    try {
-      var c = el.querySelector("canvas");
-      if (!c || !c.width || !c.height) { return; }
-      var g0 = gameContentRect();
-      if (!g0) { return; }
-      // 內容座標（0..1）→ canvas pixel：密碼框喺內容左上約 x 0-30%, y 0-18%
-      var px = function (fx) { return Math.floor(fx * c.width); };
-      var py = function (fy) { return Math.floor(fy * c.height); };
-      var x0 = px(0.0), x1 = px(0.32), yy1 = py(0.20);
-      var w = 96, h = 72;
-      var cv = passProbe._cv;
-      if (!cv) { cv = passProbe._cv = document.createElement("canvas"); }
-      cv.width = w; cv.height = h;
-      var g = cv.getContext("2d", { willReadFrequently: true });
-      g.drawImage(c, 0, 0, w, h);
-      var d = g.getImageData(0, 0, w, h).data;
-      var sx0 = Math.floor(x0 / c.width * w), sx1 = Math.floor(x1 / c.width * w);
-      var sy1 = Math.floor(yy1 / c.height * h);
-      var bright = 0, total = 0;
-      for (var y = 0; y < sy1; y++) {
-        for (var x = sx0; x < sx1; x++) {
-          var o = (y * w + x) * 4;
-          total++;
-          if (d[o] > 150 && d[o + 1] > 150 && d[o + 2] > 150) { bright++; }
-        }
-      }
-      // 其餘大面積係咪夠暗（遊戲未出畫，淨黑底+細框）
-      var dark = 0, tot2 = 0;
-      for (var yy2 = Math.floor(h * 0.3); yy2 < h; yy2 += 2) {
-        for (var xx = 0; xx < w; xx += 2) {
-          var oo = (yy2 * w + xx) * 4;
-          tot2++;
-          if (d[oo] < 40 && d[oo + 1] < 40 && d[oo + 2] < 40) { dark++; }
-        }
-      }
-      var ratio = bright / Math.max(1, total);
-      var darkRatio = dark / Math.max(1, tot2);
-      window.__probeDbg = { ratio: +ratio.toFixed(4), dark: +darkRatio.toFixed(4) };
-      // 密碼頁：左上有細白框（光點 1%-30%），其他位九成黑
-      if (ratio > 0.008 && ratio < 0.32 && darkRatio > 0.85) {
-        autoEnterCount++;
-        tapEnter();
-      }
-    } catch (e) {}
+    autoEnterCount++;
+    window.__autoEnter = autoEnterCount;
+    tapEnter();
   }
 
   document.getElementById("btnFs").addEventListener("click", function () {
