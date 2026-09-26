@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25T08:32:51.569940+08:00",
+  "last_updated": "2026-09-26T08:32:31.675140+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -455,19 +455,19 @@
       "logo_color": "#C5001A",
       "hkd": {
         "3m": {
-          "rate": 3.05,
-          "min_deposit": 50000,
-          "note": "工銀亞洲新資金定期存款推廣（分行）",
-          "source": "bank"
-        },
-        "6m": {
           "rate": 3.15,
           "min_deposit": 50000,
           "note": "工銀亞洲新資金定期存款推廣（分行）",
           "source": "bank"
         },
+        "6m": {
+          "rate": 3.3,
+          "min_deposit": 50000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
         "12m": {
-          "rate": 3.25,
+          "rate": 3.4,
           "min_deposit": 50000,
           "note": "工銀亞洲新資金定期存款推廣（分行）",
           "source": "bank"
@@ -487,19 +487,19 @@
       },
       "usd": {
         "3m": {
-          "rate": 3.9,
-          "min_deposit": 15000,
-          "note": "工銀亞洲新資金定期存款推廣（分行）",
-          "source": "bank"
-        },
-        "6m": {
           "rate": 4.0,
           "min_deposit": 15000,
           "note": "工銀亞洲新資金定期存款推廣（分行）",
           "source": "bank"
         },
-        "12m": {
+        "6m": {
           "rate": 4.1,
+          "min_deposit": 15000,
+          "note": "工銀亞洲新資金定期存款推廣（分行）",
+          "source": "bank"
+        },
+        "12m": {
+          "rate": 4.2,
           "min_deposit": 15000,
           "note": "工銀亞洲新資金定期存款推廣（分行）",
           "source": "bank"
@@ -1234,25 +1234,25 @@
       "logo_color": "#003B6F",
       "hkd": {
         "1m": {
-          "rate": 2.4,
+          "rate": 2.45,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 2.7,
+          "rate": 2.75,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.8,
+          "rate": 2.85,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "12m": {
-          "rate": 3.05,
+          "rate": 3.15,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
@@ -1689,7 +1689,7 @@
           "source": "bank"
         },
         "2m": {
-          "rate": 1.9,
+          "rate": 2.1,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -1701,25 +1701,25 @@
           "source": "bank"
         },
         "4m": {
-          "rate": 2.7,
+          "rate": 2.8,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
         },
         "6m": {
-          "rate": 2.9,
-          "min_deposit": 1,
-          "note": "象象銀行港元定期存款",
-          "source": "bank"
-        },
-        "9m": {
           "rate": 3.1,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
         },
+        "9m": {
+          "rate": 3.2,
+          "min_deposit": 1,
+          "note": "象象銀行港元定期存款",
+          "source": "bank"
+        },
         "12m": {
-          "rate": 3.25,
+          "rate": 3.3,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
