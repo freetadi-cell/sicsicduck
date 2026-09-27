@@ -29,7 +29,7 @@ WORLD_FILE = ROOT / "data" / "wulin_world.json"
 
 OPENCLAW_CFG = Path("/home/freet/.openclaw/openclaw.json")
 API_BASE = os.environ.get("YUANYUAI_BASE_URL", "https://yuanyuaicloud.cn/v1")
-API_MODEL = "glm-5"
+API_MODEL = "glm-5.2"
 
 # Season cycle: 春→夏→秋→冬 (60 days each)
 SEASONS = ["暮春", "初夏", "盛夏", "初秋", "深秋", "嚴冬"]
