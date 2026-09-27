@@ -28,7 +28,7 @@ NEWS_FILE = DATA_DIR / "news.json"
 # API key 從 openclaw.json models.providers.yuanyuai 提取
 OPENCLAW_CFG = Path("/home/freet/.openclaw/openclaw.json")
 API_BASE = "https://yuanyuaicloud.cn/v1"
-API_MODEL = "kimi-k3"
+API_MODEL = "glm-5"
 
 UA = ("Mozilla/5.0 (compatible; SicsicDuck/1.0; +https://sicsicduck.com) "
       "AppleWebKit/537.36")
