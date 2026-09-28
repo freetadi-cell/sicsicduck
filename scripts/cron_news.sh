@@ -27,6 +27,25 @@ if ! python3 scripts/select_top.py --top 3 --max-per-source 1 >> /tmp/sicsicduck
   echo "[cron_news] select_top 失敗" >> /tmp/sicsicduck-news.log
 fi
 
+# 2.5) 清理 14 日以上舊新聞（news.json + articles_cache）
+find articles_cache -name '*.json' -mtime +14 -delete 2>/dev/null
+python3 - <<'PY'
+import json
+from datetime import datetime, timedelta
+from pathlib import Path
+root = Path('/home/freet/.openclaw/workspace/sicsicduck')
+p = root / 'data' / 'news.json'
+nj = json.loads(p.read_text(encoding='utf-8'))
+cut = (datetime.now() - timedelta(days=14)).timestamp()
+arts = nj.get('articles', [])
+before = len(arts)
+nj['articles'] = [a for a in arts if not (a.get('pubDate') or '')[:19] or (lambda ts: ts >= cut)(
+    datetime.strptime(a['pubDate'][:19], '%Y-%m-%d %H:%M:%S').timestamp())]
+if len(nj['articles']) != before:
+    p.write_text(json.dumps(nj, ensure_ascii=False), encoding='utf-8')
+    print(f"[cron_news] 清理 {before - len(nj['articles'])} 篇 >14日舊文")
+PY
+
 # 3) 摘要
 if ! python3 scripts/fetch_article_body.py --all-sources 10 >> /tmp/sicsicduck-news.log 2>&1; then
   echo "[cron_news] 摘要生成失敗（已跳過）" >> /tmp/sicsicduck-news.log
