@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29T08:32:23.495428+08:00",
+  "last_updated": "2026-09-30T08:33:11.180556+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -1234,13 +1234,13 @@
       "logo_color": "#003B6F",
       "hkd": {
         "1m": {
-          "rate": 2.45,
+          "rate": 2.5,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
         },
         "3m": {
-          "rate": 2.75,
+          "rate": 2.8,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
@@ -1252,7 +1252,7 @@
           "source": "bank"
         },
         "12m": {
-          "rate": 3.15,
+          "rate": 3.2,
           "min_deposit": 500000,
           "note": "定期存款年利率",
           "source": "bank"
@@ -1689,7 +1689,7 @@
           "source": "bank"
         },
         "2m": {
-          "rate": 2.2,
+          "rate": 2.15,
           "min_deposit": 1,
           "note": "象象銀行港元定期存款",
           "source": "bank"
@@ -1943,13 +1943,13 @@
           "source": "bank"
         },
         "6m": {
-          "rate": 3.15,
+          "rate": 3.1,
           "min_deposit": 1,
           "note": "GoSave 2.0 定期存款",
           "source": "bank"
         },
         "12m": {
-          "rate": 3.05,
+          "rate": 3.2,
           "min_deposit": 1,
           "note": "GoSave 2.0 定期存款",
           "source": "bank"
