@@ -74,26 +74,50 @@ def load_news():
         return json.load(f).get("articles", [])
 
 
+# news.json 嘅 id -> rewritten 索引（lazy 建立，只讀一次）。
+# 之前 load_summary() 每次 fallback 都重讀成個 9.5MB news.json，
+# 6887 篇就係 ~9 分鐘嘅 build 時間（2026-10-05 實測 11m11s）。
+_rewritten_index = None
+# aid -> 已轉換嘅 summary（避免重複 opencc + 解析）
+_summary_cache = {}
+
+
+def _get_rewritten_index():
+    global _rewritten_index
+    if _rewritten_index is None:
+        try:
+            with open(DATA_DIR / "news.json", encoding="utf-8") as f:
+                nj = json.load(f)
+            _rewritten_index = {
+                a.get("id"): a.get("rewritten")
+                for a in nj.get("articles", [])
+                if a.get("id") and a.get("rewritten")
+            }
+        except Exception:
+            _rewritten_index = {}
+    return _rewritten_index
+
+
 def load_summary(aid):
+    if aid in _summary_cache:
+        return _summary_cache[aid]
+    result = None
     # 1. 先讀 articles_cache
     p = CACHE_DIR / f"{aid}.json"
     if p.exists():
         try:
             d = json.loads(p.read_text(encoding="utf-8"))
             if d.get("status") == "done" and d.get("rewritten"):
-                return to_trad(_extract_summary(d["rewritten"]))
+                result = to_trad(_extract_summary(d["rewritten"]))
         except json.JSONDecodeError:
             pass
-    # 2. Fallback: 讀 news.json 嘅 rewritten field
-    try:
-        with open(DATA_DIR / "news.json", encoding="utf-8") as f:
-            nj = json.load(f)
-        for a in nj.get("articles", []):
-            if a.get("id") == aid and a.get("rewritten"):
-                return to_trad(_extract_summary(a["rewritten"]))
-    except Exception:
-        pass
-    return None
+    # 2. Fallback: 用預先建立嘅索引（唔再逐篇重讀 news.json）
+    if result is None:
+        raw = _get_rewritten_index().get(aid)
+        if raw:
+            result = to_trad(_extract_summary(raw))
+    _summary_cache[aid] = result
+    return result
 
 
 def load_title(aid):
