@@ -311,6 +311,17 @@ def main():
                 rewritten = out.strip()
             if not rewritten:
                 raise ValueError("kimi-k3 冇回摘要")
+            # 拒絕/垃圾回覆偵測：模型有時會答「抱歉，我无法回答」而非摘要
+            # （多數係敏感題材觸發 safety filter，或者正文無內容令佢當成問題）
+            _reject_markers = (
+                "无法回答", "無法回答", "无法识别", "無法識別",
+                "未找到相关", "未找到相關", "没有找到相关", "沒有找到相關",
+                "无法提供", "無法提供", "很遗憾不能帮助", "很遺憾不能幫助",
+                "cannot answer", "I can't answer", "抱歉", "对不起", "對不起",
+            )
+            _probe = rewritten[:80].strip().lower()
+            if any(m in _probe for m in _reject_markers) or len(rewritten) < 20:
+                raise ValueError(f"模型拒絕/垃圾回覆，當失敗處理: {rewritten[:60]!r}")
             if len(rewritten) > MAX_SUMMARY_CHARS + 50:
                 rewritten = rewritten[:MAX_SUMMARY_CHARS] + "…"
             entry = {
