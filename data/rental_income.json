@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-09T16:31:36.189556+08:00",
+  "last_updated": "2026-10-11T00:01:33.076816+08:00",
   "source": "中原數據",
-  "price_update_note": "實用呎價：2026-10-09 更新（中原城市領先指數 CCL）",
+  "price_update_note": "實用呎價：2026-10-11 更新（中原城市領先指數 CCL）",
   "rent_update_note": "實用呎租：中原城市租金指數 CRI 最新數據",
   "disclaimer": "租金回報率 = 每呎租金 × 12 / 呎價 × 100%。數據僅供參考，不構成投資建議。",
   "estates": [
@@ -11,7 +11,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 15465,
-      "avg_rent_sqft": 52.98,
+      "avg_rent_sqft": 53.48,
       "yield": 4.32,
       "building_age": 43
     },
@@ -21,9 +21,19 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 8237,
-      "avg_rent_sqft": 29.78,
+      "avg_rent_sqft": 29.57,
       "yield": 4.26,
       "building_age": 44
+    },
+    {
+      "name": "薈朗",
+      "name_en": "薈朗",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 14085,
+      "avg_rent_sqft": 49.84,
+      "yield": 4.25,
+      "building_age": null
     },
     {
       "name": "得寶花園",
@@ -31,7 +41,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 13762,
-      "avg_rent_sqft": 45.23,
+      "avg_rent_sqft": 44.38,
       "yield": 4.24,
       "building_age": 45
     },
@@ -41,7 +51,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 13237,
-      "avg_rent_sqft": 45.3,
+      "avg_rent_sqft": 46.55,
       "yield": 4.22,
       "building_age": 40
     },
@@ -51,7 +61,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 16160,
-      "avg_rent_sqft": 56.59,
+      "avg_rent_sqft": 55.68,
       "yield": 4.11,
       "building_age": 35
     },
@@ -61,9 +71,19 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 13028,
-      "avg_rent_sqft": 43.93,
+      "avg_rent_sqft": 44.37,
       "yield": 4.1,
       "building_age": 40
+    },
+    {
+      "name": "翰林峰",
+      "name_en": "翰林峰",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 26506,
+      "avg_rent_sqft": 90.49,
+      "yield": 4.1,
+      "building_age": null
     },
     {
       "name": "青怡花園",
@@ -71,7 +91,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 12471,
-      "avg_rent_sqft": 42.61,
+      "avg_rent_sqft": 43.43,
       "yield": 4.1,
       "building_age": 37
     },
@@ -81,7 +101,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 11999,
-      "avg_rent_sqft": 39.05,
+      "avg_rent_sqft": 38.62,
       "yield": 4.09,
       "building_age": 58
     },
@@ -91,7 +111,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 14677,
-      "avg_rent_sqft": 52.44,
+      "avg_rent_sqft": 51.11,
       "yield": 4.09,
       "building_age": 41
     },
@@ -101,7 +121,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9572,
-      "avg_rent_sqft": 31.63,
+      "avg_rent_sqft": 31.78,
       "yield": 4.05,
       "building_age": 42
     },
@@ -111,7 +131,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11368,
-      "avg_rent_sqft": 37.92,
+      "avg_rent_sqft": 36.67,
       "yield": 4.01,
       "building_age": 44
     },
@@ -121,7 +141,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 17791,
-      "avg_rent_sqft": 57.09,
+      "avg_rent_sqft": 58.19,
       "yield": 3.97,
       "building_age": 19
     },
@@ -131,7 +151,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11773,
-      "avg_rent_sqft": 40.96,
+      "avg_rent_sqft": 40.75,
       "yield": 3.93,
       "building_age": 41
     },
@@ -141,7 +161,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 21098,
-      "avg_rent_sqft": 65.35,
+      "avg_rent_sqft": 58.75,
       "yield": 3.82,
       "building_age": 27
     },
@@ -151,7 +171,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 13720,
-      "avg_rent_sqft": 42.43,
+      "avg_rent_sqft": 43.55,
       "yield": 3.78,
       "building_age": 45
     },
@@ -161,7 +181,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11894,
-      "avg_rent_sqft": 43.64,
+      "avg_rent_sqft": 40.51,
       "yield": 3.78,
       "building_age": 41
     },
@@ -171,7 +191,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 11421,
-      "avg_rent_sqft": 35.72,
+      "avg_rent_sqft": 35.94,
       "yield": 3.75,
       "building_age": 46
     },
@@ -181,7 +201,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 13190,
-      "avg_rent_sqft": 39.03,
+      "avg_rent_sqft": 40.58,
       "yield": 3.75,
       "building_age": 35
     },
@@ -191,7 +211,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 12548,
-      "avg_rent_sqft": 38.2,
+      "avg_rent_sqft": 40.95,
       "yield": 3.75,
       "building_age": 40
     },
@@ -201,7 +221,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 14524,
-      "avg_rent_sqft": 40.25,
+      "avg_rent_sqft": 41.29,
       "yield": 3.72,
       "building_age": 31
     },
@@ -211,7 +231,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 10541,
-      "avg_rent_sqft": 32.73,
+      "avg_rent_sqft": 30.61,
       "yield": 3.72,
       "building_age": 37
     },
@@ -221,7 +241,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 14052,
-      "avg_rent_sqft": 42.42,
+      "avg_rent_sqft": 42.26,
       "yield": 3.71,
       "building_age": 40
     },
@@ -231,7 +251,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 15436,
-      "avg_rent_sqft": 42.38,
+      "avg_rent_sqft": 42.84,
       "yield": 3.7,
       "building_age": 44
     },
@@ -241,7 +261,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 15123,
-      "avg_rent_sqft": 44.68,
+      "avg_rent_sqft": 44.01,
       "yield": 3.7,
       "building_age": 27
     },
@@ -251,7 +271,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11897,
-      "avg_rent_sqft": 35.34,
+      "avg_rent_sqft": 33.88,
       "yield": 3.68,
       "building_age": 22
     },
@@ -261,7 +281,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 10460,
-      "avg_rent_sqft": 30.93,
+      "avg_rent_sqft": 30.92,
       "yield": 3.67,
       "building_age": 43
     },
@@ -271,7 +291,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9417,
-      "avg_rent_sqft": 27.69,
+      "avg_rent_sqft": 29.24,
       "yield": 3.67,
       "building_age": 42
     },
@@ -281,7 +301,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13877,
-      "avg_rent_sqft": 48.8,
+      "avg_rent_sqft": 48.9,
       "yield": 3.65,
       "building_age": 44
     },
@@ -291,7 +311,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 12297,
-      "avg_rent_sqft": 35.25,
+      "avg_rent_sqft": 36.69,
       "yield": 3.64,
       "building_age": 38
     },
@@ -301,7 +321,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 15988,
-      "avg_rent_sqft": 49.07,
+      "avg_rent_sqft": 47.44,
       "yield": 3.62,
       "building_age": 24
     },
@@ -311,7 +331,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 12866,
-      "avg_rent_sqft": 36.97,
+      "avg_rent_sqft": 35.01,
       "yield": 3.62,
       "building_age": 36
     },
@@ -321,7 +341,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9204,
-      "avg_rent_sqft": 28.16,
+      "avg_rent_sqft": 28.44,
       "yield": 3.62,
       "building_age": 22
     },
@@ -331,7 +351,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 14696,
-      "avg_rent_sqft": 48.03,
+      "avg_rent_sqft": 43.63,
       "yield": 3.61,
       "building_age": 37
     },
@@ -341,7 +361,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 11856,
-      "avg_rent_sqft": 37.91,
+      "avg_rent_sqft": 38.26,
       "yield": 3.58,
       "building_age": 44
     },
@@ -351,7 +371,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9449,
-      "avg_rent_sqft": 30.58,
+      "avg_rent_sqft": 30.88,
       "yield": 3.58,
       "building_age": 34
     },
@@ -361,7 +381,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 10896,
-      "avg_rent_sqft": 36.45,
+      "avg_rent_sqft": 33.25,
       "yield": 3.57,
       "building_age": 28
     },
@@ -371,7 +391,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 15380,
-      "avg_rent_sqft": 44.49,
+      "avg_rent_sqft": 43.66,
       "yield": 3.53,
       "building_age": 29
     },
@@ -381,7 +401,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 12445,
-      "avg_rent_sqft": 38.31,
+      "avg_rent_sqft": 39.83,
       "yield": 3.52,
       "building_age": 45
     },
@@ -391,7 +411,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13728,
-      "avg_rent_sqft": 39.74,
+      "avg_rent_sqft": 37.7,
       "yield": 3.52,
       "building_age": 37
     },
@@ -401,7 +421,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 14893,
-      "avg_rent_sqft": 41.76,
+      "avg_rent_sqft": 41.09,
       "yield": 3.51,
       "building_age": 40
     },
@@ -411,7 +431,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 8544,
-      "avg_rent_sqft": 26.38,
+      "avg_rent_sqft": 26.43,
       "yield": 3.51,
       "building_age": null
     },
@@ -421,7 +441,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13442,
-      "avg_rent_sqft": 37.99,
+      "avg_rent_sqft": 39.28,
       "yield": 3.51,
       "building_age": 41
     },
@@ -431,7 +451,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11531,
-      "avg_rent_sqft": 32.9,
+      "avg_rent_sqft": 34.35,
       "yield": 3.5,
       "building_age": 23
     },
@@ -441,7 +461,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 17811,
-      "avg_rent_sqft": 55.88,
+      "avg_rent_sqft": 55.93,
       "yield": 3.49,
       "building_age": 26
     },
@@ -451,7 +471,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 12331,
-      "avg_rent_sqft": 34.34,
+      "avg_rent_sqft": 34.92,
       "yield": 3.49,
       "building_age": 25
     },
@@ -461,7 +481,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13918,
-      "avg_rent_sqft": 38.34,
+      "avg_rent_sqft": 36.26,
       "yield": 3.49,
       "building_age": 43
     },
@@ -471,7 +491,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 15119,
-      "avg_rent_sqft": 43.71,
+      "avg_rent_sqft": 42.52,
       "yield": 3.47,
       "building_age": 34
     },
@@ -481,7 +501,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11058,
-      "avg_rent_sqft": 33.58,
+      "avg_rent_sqft": 32.71,
       "yield": 3.47,
       "building_age": 36
     },
@@ -491,7 +511,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 17812,
-      "avg_rent_sqft": 51.46,
+      "avg_rent_sqft": 52.59,
       "yield": 3.46,
       "building_age": 41
     },
@@ -501,7 +521,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 22389,
-      "avg_rent_sqft": 66.02,
+      "avg_rent_sqft": 69.05,
       "yield": 3.44,
       "building_age": 19
     },
@@ -511,7 +531,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17134,
-      "avg_rent_sqft": 50.86,
+      "avg_rent_sqft": 50.77,
       "yield": 3.44,
       "building_age": 23
     },
@@ -521,7 +541,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11612,
-      "avg_rent_sqft": 35.44,
+      "avg_rent_sqft": 32.72,
       "yield": 3.44,
       "building_age": 34
     },
@@ -531,7 +551,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11241,
-      "avg_rent_sqft": 37.48,
+      "avg_rent_sqft": 37.29,
       "yield": 3.44,
       "building_age": 27
     },
@@ -541,7 +561,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 15617,
-      "avg_rent_sqft": 44.91,
+      "avg_rent_sqft": 44.58,
       "yield": 3.43,
       "building_age": 37
     },
@@ -551,7 +571,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 16064,
-      "avg_rent_sqft": 45.65,
+      "avg_rent_sqft": 43.74,
       "yield": 3.43,
       "building_age": 28
     },
@@ -561,7 +581,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 11537,
-      "avg_rent_sqft": 31.98,
+      "avg_rent_sqft": 32.38,
       "yield": 3.43,
       "building_age": 21
     },
@@ -571,7 +591,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9727,
-      "avg_rent_sqft": 26.18,
+      "avg_rent_sqft": 26.19,
       "yield": 3.43,
       "building_age": 40
     },
@@ -581,7 +601,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 10962,
-      "avg_rent_sqft": 33.27,
+      "avg_rent_sqft": 35.27,
       "yield": 3.41,
       "building_age": 38
     },
@@ -591,7 +611,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11883,
-      "avg_rent_sqft": 33.26,
+      "avg_rent_sqft": 34.66,
       "yield": 3.4,
       "building_age": 21
     },
@@ -601,7 +621,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 10009,
-      "avg_rent_sqft": 27.46,
+      "avg_rent_sqft": 28.08,
       "yield": 3.4,
       "building_age": 34
     },
@@ -611,7 +631,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11360,
-      "avg_rent_sqft": 31.79,
+      "avg_rent_sqft": 31.44,
       "yield": 3.39,
       "building_age": 11
     },
@@ -621,9 +641,19 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 22098,
-      "avg_rent_sqft": 61.26,
+      "avg_rent_sqft": 60.97,
       "yield": 3.38,
       "building_age": 22
+    },
+    {
+      "name": "東環",
+      "name_en": "東環",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12346,
+      "avg_rent_sqft": 34.75,
+      "yield": 3.38,
+      "building_age": null
     },
     {
       "name": "泓景臺",
@@ -631,7 +661,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17210,
-      "avg_rent_sqft": 46.34,
+      "avg_rent_sqft": 47.52,
       "yield": 3.37,
       "building_age": 22
     },
@@ -641,7 +671,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17614,
-      "avg_rent_sqft": 45.89,
+      "avg_rent_sqft": 46,
       "yield": 3.37,
       "building_age": 24
     },
@@ -651,7 +681,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9955,
-      "avg_rent_sqft": 32.14,
+      "avg_rent_sqft": 32.44,
       "yield": 3.37,
       "building_age": 11
     },
@@ -661,7 +691,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 21664,
-      "avg_rent_sqft": 55.14,
+      "avg_rent_sqft": 54.1,
       "yield": 3.36,
       "building_age": 21
     },
@@ -671,7 +701,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13178,
-      "avg_rent_sqft": 36.57,
+      "avg_rent_sqft": 36.72,
       "yield": 3.36,
       "building_age": 31
     },
@@ -681,7 +711,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 14145,
-      "avg_rent_sqft": 41.53,
+      "avg_rent_sqft": 43.38,
       "yield": 3.35,
       "building_age": 28
     },
@@ -691,7 +721,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 10140,
-      "avg_rent_sqft": 28.68,
+      "avg_rent_sqft": 28.89,
       "yield": 3.35,
       "building_age": 21
     },
@@ -701,7 +731,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9718,
-      "avg_rent_sqft": 26.79,
+      "avg_rent_sqft": 25.91,
       "yield": 3.35,
       "building_age": 18
     },
@@ -711,7 +741,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 10815,
-      "avg_rent_sqft": 31.93,
+      "avg_rent_sqft": 32.52,
       "yield": 3.34,
       "building_age": 17
     },
@@ -721,7 +751,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17686,
-      "avg_rent_sqft": 46.93,
+      "avg_rent_sqft": 47.87,
       "yield": 3.34,
       "building_age": 21
     },
@@ -731,7 +761,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9554,
-      "avg_rent_sqft": 26.91,
+      "avg_rent_sqft": 26.87,
       "yield": 3.34,
       "building_age": 37
     },
@@ -741,7 +771,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 15858,
-      "avg_rent_sqft": 38.97,
+      "avg_rent_sqft": 40.6,
       "yield": 3.33,
       "building_age": 46
     },
@@ -751,7 +781,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 15882,
-      "avg_rent_sqft": 44.46,
+      "avg_rent_sqft": 43.73,
       "yield": 3.33,
       "building_age": 26
     },
@@ -761,7 +791,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 21393,
-      "avg_rent_sqft": 53.19,
+      "avg_rent_sqft": 53.65,
       "yield": 3.33,
       "building_age": 25
     },
@@ -771,7 +801,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 18394,
-      "avg_rent_sqft": 47.41,
+      "avg_rent_sqft": 44.42,
       "yield": 3.33,
       "building_age": 21
     },
@@ -781,7 +811,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 18805,
-      "avg_rent_sqft": 55.06,
+      "avg_rent_sqft": 59.29,
       "yield": 3.33,
       "building_age": 28
     },
@@ -791,7 +821,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 14865,
-      "avg_rent_sqft": 45.35,
+      "avg_rent_sqft": 44.45,
       "yield": 3.33,
       "building_age": 37
     },
@@ -801,7 +831,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 14079,
-      "avg_rent_sqft": 35.78,
+      "avg_rent_sqft": 33.8,
       "yield": 3.32,
       "building_age": 31
     },
@@ -811,7 +841,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17717,
-      "avg_rent_sqft": 48.78,
+      "avg_rent_sqft": 46.19,
       "yield": 3.31,
       "building_age": 17
     },
@@ -821,7 +851,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17510,
-      "avg_rent_sqft": 46.25,
+      "avg_rent_sqft": 47.53,
       "yield": 3.31,
       "building_age": 22
     },
@@ -831,7 +861,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 8820,
-      "avg_rent_sqft": 25.32,
+      "avg_rent_sqft": 25.29,
       "yield": 3.31,
       "building_age": 35
     },
@@ -841,7 +871,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 18110,
-      "avg_rent_sqft": 46.14,
+      "avg_rent_sqft": 46.41,
       "yield": 3.27,
       "building_age": 48
     },
@@ -851,7 +881,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 15058,
-      "avg_rent_sqft": 42.41,
+      "avg_rent_sqft": 40.93,
       "yield": 3.27,
       "building_age": 21
     },
@@ -861,7 +891,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9441,
-      "avg_rent_sqft": 26.82,
+      "avg_rent_sqft": 27.57,
       "yield": 3.26,
       "building_age": 38
     },
@@ -871,9 +901,19 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 19126,
-      "avg_rent_sqft": 46.6,
+      "avg_rent_sqft": 49.45,
       "yield": 3.25,
       "building_age": 22
+    },
+    {
+      "name": "峻弦",
+      "name_en": "峻弦",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 14773,
+      "avg_rent_sqft": 40.04,
+      "yield": 3.25,
+      "building_age": null
     },
     {
       "name": "新峰花園",
@@ -881,7 +921,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9808,
-      "avg_rent_sqft": 32.77,
+      "avg_rent_sqft": 32.95,
       "yield": 3.25,
       "building_age": 37
     },
@@ -891,7 +931,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 12123,
-      "avg_rent_sqft": 37.16,
+      "avg_rent_sqft": 37,
       "yield": 3.24,
       "building_age": 28
     },
@@ -901,7 +941,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 16298,
-      "avg_rent_sqft": 50.14,
+      "avg_rent_sqft": 47.13,
       "yield": 3.22,
       "building_age": 29
     },
@@ -911,7 +951,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13301,
-      "avg_rent_sqft": 32.02,
+      "avg_rent_sqft": 35.59,
       "yield": 3.22,
       "building_age": 13
     },
@@ -921,9 +961,19 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 26999,
-      "avg_rent_sqft": 67.73,
+      "avg_rent_sqft": 66.28,
       "yield": 3.2,
       "building_age": 16
+    },
+    {
+      "name": "形薈",
+      "name_en": "形薈",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 18677,
+      "avg_rent_sqft": 49.71,
+      "yield": 3.19,
+      "building_age": null
     },
     {
       "name": "新元朗中心",
@@ -931,7 +981,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13866,
-      "avg_rent_sqft": 37.44,
+      "avg_rent_sqft": 37.18,
       "yield": 3.18,
       "building_age": 30
     },
@@ -941,7 +991,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 14133,
-      "avg_rent_sqft": 39.13,
+      "avg_rent_sqft": 39.12,
       "yield": 3.17,
       "building_age": 17
     },
@@ -951,7 +1001,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 15224,
-      "avg_rent_sqft": 43.95,
+      "avg_rent_sqft": 43.91,
       "yield": 3.14,
       "building_age": 39
     },
@@ -961,7 +1011,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11821,
-      "avg_rent_sqft": 33.4,
+      "avg_rent_sqft": 33.9,
       "yield": 3.14,
       "building_age": 24
     },
@@ -971,7 +1021,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 16122,
-      "avg_rent_sqft": 39.91,
+      "avg_rent_sqft": 41.88,
       "yield": 3.13,
       "building_age": 13
     },
@@ -981,7 +1031,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 12407,
-      "avg_rent_sqft": 31.69,
+      "avg_rent_sqft": 32.42,
       "yield": 3.11,
       "building_age": 25
     },
@@ -991,7 +1041,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 24008,
-      "avg_rent_sqft": 54.2,
+      "avg_rent_sqft": 58.73,
       "yield": 3.1,
       "building_age": 23
     },
@@ -1001,7 +1051,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13493,
-      "avg_rent_sqft": 34.78,
+      "avg_rent_sqft": 34.76,
       "yield": 3.08,
       "building_age": 24
     },
@@ -1011,7 +1061,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 19253,
-      "avg_rent_sqft": 47.4,
+      "avg_rent_sqft": 48.23,
       "yield": 3.07,
       "building_age": 26
     },
@@ -1021,7 +1071,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17162,
-      "avg_rent_sqft": 46.54,
+      "avg_rent_sqft": 48.21,
       "yield": 3.07,
       "building_age": 16
     },
@@ -1031,7 +1081,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11522,
-      "avg_rent_sqft": 30.63,
+      "avg_rent_sqft": 30.68,
       "yield": 3.06,
       "building_age": 17
     },
@@ -1041,7 +1091,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 20859,
-      "avg_rent_sqft": 56.4,
+      "avg_rent_sqft": 55.8,
       "yield": 3.05,
       "building_age": 23
     },
@@ -1051,7 +1101,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 11985,
-      "avg_rent_sqft": 30.08,
+      "avg_rent_sqft": 31.48,
       "yield": 3.04,
       "building_age": 22
     },
@@ -1061,7 +1111,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 23633,
-      "avg_rent_sqft": 50.3,
+      "avg_rent_sqft": 50.36,
       "yield": 3.03,
       "building_age": 26
     },
@@ -1071,7 +1121,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 16477,
-      "avg_rent_sqft": 46.89,
+      "avg_rent_sqft": 48.71,
       "yield": 3.03,
       "building_age": 27
     },
@@ -1081,7 +1131,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 17975,
-      "avg_rent_sqft": 47.02,
+      "avg_rent_sqft": 45.58,
       "yield": 3.03,
       "building_age": 27
     },
@@ -1091,7 +1141,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 9885,
-      "avg_rent_sqft": 23.77,
+      "avg_rent_sqft": 25.73,
       "yield": 3.02,
       "building_age": 22
     },
@@ -1101,9 +1151,19 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 20131,
-      "avg_rent_sqft": 49.53,
+      "avg_rent_sqft": 51.71,
       "yield": 2.99,
       "building_age": 22
+    },
+    {
+      "name": "海之戀",
+      "name_en": "海之戀",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 19498,
+      "avg_rent_sqft": 48.38,
+      "yield": 2.98,
+      "building_age": null
     },
     {
       "name": "維景灣畔",
@@ -1111,7 +1171,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 17668,
-      "avg_rent_sqft": 43.54,
+      "avg_rent_sqft": 42.12,
       "yield": 2.97,
       "building_age": 24
     },
@@ -1121,9 +1181,19 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 20020,
-      "avg_rent_sqft": 48.98,
+      "avg_rent_sqft": 48.78,
       "yield": 2.96,
       "building_age": null
+    },
+    {
+      "name": "天晉",
+      "name_en": "天晉",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 19731,
+      "avg_rent_sqft": 48.59,
+      "yield": 2.96,
+      "building_age": 16
     },
     {
       "name": "曼克頓山",
@@ -1131,7 +1201,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 21088,
-      "avg_rent_sqft": 51.29,
+      "avg_rent_sqft": 51.19,
       "yield": 2.96,
       "building_age": 19
     },
@@ -1141,7 +1211,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 23195,
-      "avg_rent_sqft": 60.01,
+      "avg_rent_sqft": 59.39,
       "yield": 2.95,
       "building_age": 17
     },
@@ -1151,7 +1221,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 18909,
-      "avg_rent_sqft": 47.68,
+      "avg_rent_sqft": 47.86,
       "yield": 2.93,
       "building_age": 18
     },
@@ -1161,7 +1231,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 17837,
-      "avg_rent_sqft": 44.56,
+      "avg_rent_sqft": 44.8,
       "yield": 2.92,
       "building_age": 15
     },
@@ -1171,7 +1241,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 28614,
-      "avg_rent_sqft": 64.22,
+      "avg_rent_sqft": 66.65,
       "yield": 2.91,
       "building_age": 15
     },
@@ -1181,7 +1251,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 16013,
-      "avg_rent_sqft": 37.19,
+      "avg_rent_sqft": 37.16,
       "yield": 2.9,
       "building_age": 13
     },
@@ -1191,7 +1261,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 22359,
-      "avg_rent_sqft": 57.82,
+      "avg_rent_sqft": 57.49,
       "yield": 2.89,
       "building_age": 22
     },
@@ -1201,7 +1271,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 37941,
-      "avg_rent_sqft": 67.11,
+      "avg_rent_sqft": 75.47,
       "yield": 2.87,
       "building_age": 21
     },
@@ -1211,7 +1281,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 17123,
-      "avg_rent_sqft": 41.89,
+      "avg_rent_sqft": 41.87,
       "yield": 2.84,
       "building_age": 34
     },
@@ -1221,7 +1291,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 21625,
-      "avg_rent_sqft": 52.89,
+      "avg_rent_sqft": 54.05,
       "yield": 2.83,
       "building_age": 20
     },
@@ -1231,7 +1301,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 15488,
-      "avg_rent_sqft": 38.52,
+      "avg_rent_sqft": 37.93,
       "yield": 2.83,
       "building_age": 22
     },
@@ -1241,7 +1311,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 22892,
-      "avg_rent_sqft": 52.74,
+      "avg_rent_sqft": 54.7,
       "yield": 2.81,
       "building_age": 23
     },
@@ -1251,7 +1321,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 24490,
-      "avg_rent_sqft": 58.98,
+      "avg_rent_sqft": 59.04,
       "yield": 2.77,
       "building_age": 23
     },
@@ -1261,7 +1331,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 15796,
-      "avg_rent_sqft": 39.35,
+      "avg_rent_sqft": 37.06,
       "yield": 2.75,
       "building_age": 16
     },
@@ -1271,7 +1341,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 23382,
-      "avg_rent_sqft": 52.51,
+      "avg_rent_sqft": 53.07,
       "yield": 2.72,
       "building_age": 16
     },
@@ -1291,7 +1361,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 25244,
-      "avg_rent_sqft": 55.88,
+      "avg_rent_sqft": 55.86,
       "yield": 2.69,
       "building_age": 47
     },
@@ -1301,7 +1371,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 20253,
-      "avg_rent_sqft": 55.19,
+      "avg_rent_sqft": 54.5,
       "yield": 2.68,
       "building_age": 28
     },
@@ -1311,7 +1381,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 22378,
-      "avg_rent_sqft": 51,
+      "avg_rent_sqft": 50.88,
       "yield": 2.65,
       "building_age": 24
     },
@@ -1321,7 +1391,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 25835,
-      "avg_rent_sqft": 53.87,
+      "avg_rent_sqft": 54.81,
       "yield": 2.63,
       "building_age": 22
     },
@@ -1331,7 +1401,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13390,
-      "avg_rent_sqft": 30.38,
+      "avg_rent_sqft": 27.93,
       "yield": 2.61,
       "building_age": 31
     },
@@ -1341,7 +1411,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 31992,
-      "avg_rent_sqft": 58.47,
+      "avg_rent_sqft": 56.53,
       "yield": 2.59,
       "building_age": 31
     },
@@ -1351,7 +1421,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 21233,
-      "avg_rent_sqft": 48.13,
+      "avg_rent_sqft": 45.2,
       "yield": 2.58,
       "building_age": 47
     },
@@ -1361,7 +1431,7 @@
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 19076,
-      "avg_rent_sqft": 42.5,
+      "avg_rent_sqft": 43.95,
       "yield": 2.58,
       "building_age": 18
     },
@@ -1371,7 +1441,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 21920,
-      "avg_rent_sqft": 56.96,
+      "avg_rent_sqft": 54.68,
       "yield": 2.55,
       "building_age": null
     },
@@ -1381,7 +1451,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 29465,
-      "avg_rent_sqft": 55.77,
+      "avg_rent_sqft": 55.11,
       "yield": 2.49,
       "building_age": 33
     },
@@ -1391,7 +1461,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 29316,
-      "avg_rent_sqft": 60.21,
+      "avg_rent_sqft": 58.67,
       "yield": 2.48,
       "building_age": 21
     },
@@ -1401,7 +1471,7 @@
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 24308,
-      "avg_rent_sqft": 54,
+      "avg_rent_sqft": 54.91,
       "yield": 2.26,
       "building_age": 23
     },
@@ -1411,7 +1481,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 41178,
-      "avg_rent_sqft": 72.44,
+      "avg_rent_sqft": 70.14,
       "yield": 2.01,
       "building_age": 23
     },
@@ -1421,7 +1491,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 28241,
-      "avg_rent_sqft": 49.48,
+      "avg_rent_sqft": 51.02,
       "yield": 1.93,
       "building_age": 35
     },
@@ -1431,7 +1501,7 @@
       "district": "香港",
       "district_code": "hk",
       "avg_price_sqft": 39466,
-      "avg_rent_sqft": 53.28,
+      "avg_rent_sqft": 53.29,
       "yield": 1.84,
       "building_age": 30
     }
