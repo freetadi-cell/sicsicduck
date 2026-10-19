@@ -1,20 +1,10 @@
 {
-  "last_updated": "2026-10-16T16:30:54.545580+08:00",
+  "last_updated": "2026-10-19T16:31:27.060999+08:00",
   "source": "中原數據",
-  "price_update_note": "實用呎價：2026-10-16 更新（中原城市領先指數 CCL）",
+  "price_update_note": "實用呎價：2026-10-19 更新（中原城市領先指數 CCL）",
   "rent_update_note": "實用呎租：中原城市租金指數 CRI 最新數據",
   "disclaimer": "租金回報率 = 每呎租金 × 12 / 呎價 × 100%。數據僅供參考，不構成投資建議。",
   "estates": [
-    {
-      "name": "沙田中心",
-      "name_en": "沙田中心",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 15462,
-      "avg_rent_sqft": 53.48,
-      "yield": 4.32,
-      "building_age": 43
-    },
     {
       "name": "荃威花園",
       "name_en": "荃威花園",
@@ -22,7 +12,27 @@
       "district_code": "nt",
       "avg_price_sqft": 8227,
       "avg_rent_sqft": 29.57,
-      "yield": 4.26,
+      "yield": 4.64,
+      "building_age": 44
+    },
+    {
+      "name": "黃埔新邨",
+      "name_en": "黃埔新邨",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 13170,
+      "avg_rent_sqft": 46.55,
+      "yield": 4.38,
+      "building_age": 40
+    },
+    {
+      "name": "沙田第一城",
+      "name_en": "沙田第一城",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 14017,
+      "avg_rent_sqft": 48.9,
+      "yield": 4.29,
       "building_age": 44
     },
     {
@@ -36,54 +46,14 @@
       "building_age": null
     },
     {
-      "name": "得寶花園",
-      "name_en": "得寶花園",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 13692,
-      "avg_rent_sqft": 44.38,
-      "yield": 4.24,
-      "building_age": 45
-    },
-    {
-      "name": "黃埔新邨",
-      "name_en": "黃埔新邨",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 13170,
-      "avg_rent_sqft": 46.55,
-      "yield": 4.22,
-      "building_age": 40
-    },
-    {
-      "name": "嘉輝花園",
-      "name_en": "嘉輝花園",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 16140,
-      "avg_rent_sqft": 55.68,
-      "yield": 4.11,
-      "building_age": 35
-    },
-    {
-      "name": "南豐新邨",
-      "name_en": "南豐新邨",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 13117,
-      "avg_rent_sqft": 44.37,
-      "yield": 4.1,
-      "building_age": 40
-    },
-    {
-      "name": "青怡花園",
-      "name_en": "青怡花園",
+      "name": "大埔中心",
+      "name_en": "大埔中心",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 12321,
-      "avg_rent_sqft": 43.43,
-      "yield": 4.1,
-      "building_age": 37
+      "avg_price_sqft": 11891,
+      "avg_rent_sqft": 40.51,
+      "yield": 4.23,
+      "building_age": 41
     },
     {
       "name": "美孚新邨",
@@ -92,8 +62,18 @@
       "district_code": "kl",
       "avg_price_sqft": 11136,
       "avg_rent_sqft": 38.62,
-      "yield": 4.09,
+      "yield": 4.21,
       "building_age": 58
+    },
+    {
+      "name": "嘉輝花園",
+      "name_en": "嘉輝花園",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 16140,
+      "avg_rent_sqft": 55.68,
+      "yield": 4.2,
+      "building_age": 35
     },
     {
       "name": "河畔花園",
@@ -102,18 +82,48 @@
       "district_code": "nt",
       "avg_price_sqft": 14674,
       "avg_rent_sqft": 51.11,
-      "yield": 4.09,
+      "yield": 4.16,
       "building_age": 41
     },
     {
-      "name": "華景山莊",
-      "name_en": "華景山莊",
+      "name": "得寶花園",
+      "name_en": "得寶花園",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 13692,
+      "avg_rent_sqft": 44.38,
+      "yield": 4.15,
+      "building_age": 45
+    },
+    {
+      "name": "會展中心 會景閣",
+      "name_en": "會展中心 會景閣",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 21067,
+      "avg_rent_sqft": 58.75,
+      "yield": 4.12,
+      "building_age": 27
+    },
+    {
+      "name": "南豐新邨",
+      "name_en": "南豐新邨",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 13117,
+      "avg_rent_sqft": 44.37,
+      "yield": 4.11,
+      "building_age": 40
+    },
+    {
+      "name": "沙田中心",
+      "name_en": "沙田中心",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 9427,
-      "avg_rent_sqft": 31.78,
-      "yield": 4.05,
-      "building_age": 42
+      "avg_price_sqft": 15462,
+      "avg_rent_sqft": 53.48,
+      "yield": 4.1,
+      "building_age": 43
     },
     {
       "name": "美景花園",
@@ -122,8 +132,38 @@
       "district_code": "nt",
       "avg_price_sqft": 11354,
       "avg_rent_sqft": 36.67,
-      "yield": 4.01,
+      "yield": 4.06,
       "building_age": 44
+    },
+    {
+      "name": "太湖花園",
+      "name_en": "太湖花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 11771,
+      "avg_rent_sqft": 40.75,
+      "yield": 4.03,
+      "building_age": 41
+    },
+    {
+      "name": "黃埔花園",
+      "name_en": "黃埔花園",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 14622,
+      "avg_rent_sqft": 43.63,
+      "yield": 4,
+      "building_age": 37
+    },
+    {
+      "name": "青怡花園",
+      "name_en": "青怡花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12321,
+      "avg_rent_sqft": 43.43,
+      "yield": 3.99,
+      "building_age": 37
     },
     {
       "name": "翰林峰",
@@ -146,264 +186,14 @@
       "building_age": 19
     },
     {
-      "name": "太湖花園",
-      "name_en": "太湖花園",
+      "name": "新峰花園",
+      "name_en": "新峰花園",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 11771,
-      "avg_rent_sqft": 40.75,
-      "yield": 3.93,
-      "building_age": 41
-    },
-    {
-      "name": "會展中心 會景閣",
-      "name_en": "會展中心 會景閣",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 21067,
-      "avg_rent_sqft": 58.75,
-      "yield": 3.82,
-      "building_age": 27
-    },
-    {
-      "name": "淘大花園",
-      "name_en": "淘大花園",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 13643,
-      "avg_rent_sqft": 43.55,
-      "yield": 3.78,
-      "building_age": 45
-    },
-    {
-      "name": "大埔中心",
-      "name_en": "大埔中心",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 11891,
-      "avg_rent_sqft": 40.51,
-      "yield": 3.78,
-      "building_age": 41
-    },
-    {
-      "name": "德福花園",
-      "name_en": "德福花園",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 11012,
-      "avg_rent_sqft": 35.94,
-      "yield": 3.75,
-      "building_age": 46
-    },
-    {
-      "name": "匯景花園",
-      "name_en": "匯景花園",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 12978,
-      "avg_rent_sqft": 40.58,
-      "yield": 3.75,
-      "building_age": 35
-    },
-    {
-      "name": "銀禧花園",
-      "name_en": "銀禧花園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 12545,
-      "avg_rent_sqft": 40.95,
-      "yield": 3.75,
-      "building_age": 40
-    },
-    {
-      "name": "馬鞍山中心",
-      "name_en": "馬鞍山中心",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 14824,
-      "avg_rent_sqft": 41.29,
-      "yield": 3.72,
-      "building_age": 31
-    },
-    {
-      "name": "麗城花園",
-      "name_en": "麗城花園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 10528,
-      "avg_rent_sqft": 30.61,
-      "yield": 3.72,
+      "avg_price_sqft": 10203,
+      "avg_rent_sqft": 32.95,
+      "yield": 3.95,
       "building_age": 37
-    },
-    {
-      "name": "城市花園",
-      "name_en": "城市花園",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 13992,
-      "avg_rent_sqft": 42.26,
-      "yield": 3.71,
-      "building_age": 40
-    },
-    {
-      "name": "康怡花園",
-      "name_en": "康怡花園",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 15370,
-      "avg_rent_sqft": 42.84,
-      "yield": 3.7,
-      "building_age": 44
-    },
-    {
-      "name": "新寶城",
-      "name_en": "新寶城",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 15017,
-      "avg_rent_sqft": 44.01,
-      "yield": 3.7,
-      "building_age": 27
-    },
-    {
-      "name": "碧堤半島",
-      "name_en": "碧堤半島",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 11883,
-      "avg_rent_sqft": 33.88,
-      "yield": 3.68,
-      "building_age": 22
-    },
-    {
-      "name": "富豪花園",
-      "name_en": "富豪花園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 10458,
-      "avg_rent_sqft": 30.92,
-      "yield": 3.67,
-      "building_age": 43
-    },
-    {
-      "name": "大興花園",
-      "name_en": "大興花園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 9432,
-      "avg_rent_sqft": 29.24,
-      "yield": 3.67,
-      "building_age": 42
-    },
-    {
-      "name": "沙田第一城",
-      "name_en": "沙田第一城",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 14017,
-      "avg_rent_sqft": 48.9,
-      "yield": 3.65,
-      "building_age": 44
-    },
-    {
-      "name": "屯門市廣場",
-      "name_en": "屯門市廣場",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 12315,
-      "avg_rent_sqft": 36.69,
-      "yield": 3.64,
-      "building_age": 38
-    },
-    {
-      "name": "藍灣半島",
-      "name_en": "藍灣半島",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 15920,
-      "avg_rent_sqft": 47.44,
-      "yield": 3.62,
-      "building_age": 24
-    },
-    {
-      "name": "麗港城",
-      "name_en": "麗港城",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 12360,
-      "avg_rent_sqft": 35.01,
-      "yield": 3.62,
-      "building_age": 36
-    },
-    {
-      "name": "蝶翠峰",
-      "name_en": "蝶翠峰",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 9218,
-      "avg_rent_sqft": 28.44,
-      "yield": 3.62,
-      "building_age": 22
-    },
-    {
-      "name": "黃埔花園",
-      "name_en": "黃埔花園",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 14622,
-      "avg_rent_sqft": 43.63,
-      "yield": 3.61,
-      "building_age": 37
-    },
-    {
-      "name": "香港仔中心",
-      "name_en": "香港仔中心",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 11842,
-      "avg_rent_sqft": 38.26,
-      "yield": 3.58,
-      "building_age": 44
-    },
-    {
-      "name": "浪翠園",
-      "name_en": "浪翠園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 9438,
-      "avg_rent_sqft": 30.88,
-      "yield": 3.58,
-      "building_age": 34
-    },
-    {
-      "name": "疊茵庭",
-      "name_en": "疊茵庭",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 10912,
-      "avg_rent_sqft": 33.25,
-      "yield": 3.57,
-      "building_age": 28
-    },
-    {
-      "name": "新都城",
-      "name_en": "新都城",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 15303,
-      "avg_rent_sqft": 43.66,
-      "yield": 3.53,
-      "building_age": 29
-    },
-    {
-      "name": "置富花園",
-      "name_en": "置富花園",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 12501,
-      "avg_rent_sqft": 39.83,
-      "yield": 3.52,
-      "building_age": 45
     },
     {
       "name": "翠怡花園",
@@ -412,8 +202,208 @@
       "district_code": "nt",
       "avg_price_sqft": 13711,
       "avg_rent_sqft": 37.7,
-      "yield": 3.52,
+      "yield": 3.94,
       "building_age": 37
+    },
+    {
+      "name": "淘大花園",
+      "name_en": "淘大花園",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 13643,
+      "avg_rent_sqft": 43.55,
+      "yield": 3.93,
+      "building_age": 45
+    },
+    {
+      "name": "德福花園",
+      "name_en": "德福花園",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 11012,
+      "avg_rent_sqft": 35.94,
+      "yield": 3.91,
+      "building_age": 46
+    },
+    {
+      "name": "麗城花園",
+      "name_en": "麗城花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 10528,
+      "avg_rent_sqft": 30.61,
+      "yield": 3.88,
+      "building_age": 37
+    },
+    {
+      "name": "疊茵庭",
+      "name_en": "疊茵庭",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 10912,
+      "avg_rent_sqft": 33.25,
+      "yield": 3.85,
+      "building_age": 28
+    },
+    {
+      "name": "銀禧花園",
+      "name_en": "銀禧花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12545,
+      "avg_rent_sqft": 40.95,
+      "yield": 3.82,
+      "building_age": 40
+    },
+    {
+      "name": "置富花園",
+      "name_en": "置富花園",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 12501,
+      "avg_rent_sqft": 39.83,
+      "yield": 3.81,
+      "building_age": 45
+    },
+    {
+      "name": "碧堤半島",
+      "name_en": "碧堤半島",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 11883,
+      "avg_rent_sqft": 33.88,
+      "yield": 3.79,
+      "building_age": 22
+    },
+    {
+      "name": "華景山莊",
+      "name_en": "華景山莊",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9427,
+      "avg_rent_sqft": 31.78,
+      "yield": 3.76,
+      "building_age": 42
+    },
+    {
+      "name": "香港仔中心",
+      "name_en": "香港仔中心",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 11842,
+      "avg_rent_sqft": 38.26,
+      "yield": 3.75,
+      "building_age": 44
+    },
+    {
+      "name": "麗港城",
+      "name_en": "麗港城",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 12360,
+      "avg_rent_sqft": 35.01,
+      "yield": 3.75,
+      "building_age": 36
+    },
+    {
+      "name": "富豪花園",
+      "name_en": "富豪花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 10458,
+      "avg_rent_sqft": 30.92,
+      "yield": 3.75,
+      "building_age": 43
+    },
+    {
+      "name": "翠擁華庭",
+      "name_en": "翠擁華庭",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 11239,
+      "avg_rent_sqft": 37.29,
+      "yield": 3.73,
+      "building_age": 27
+    },
+    {
+      "name": "翰林軒",
+      "name_en": "翰林軒",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 17790,
+      "avg_rent_sqft": 55.93,
+      "yield": 3.72,
+      "building_age": 26
+    },
+    {
+      "name": "花都廣場",
+      "name_en": "花都廣場",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 11609,
+      "avg_rent_sqft": 32.72,
+      "yield": 3.72,
+      "building_age": 34
+    },
+    {
+      "name": "光明臺",
+      "name_en": "光明臺",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 17736,
+      "avg_rent_sqft": 52.59,
+      "yield": 3.69,
+      "building_age": 41
+    },
+    {
+      "name": "新港城",
+      "name_en": "新港城",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 14861,
+      "avg_rent_sqft": 44.45,
+      "yield": 3.67,
+      "building_age": 37
+    },
+    {
+      "name": "海濱花園",
+      "name_en": "海濱花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 10949,
+      "avg_rent_sqft": 35.27,
+      "yield": 3.66,
+      "building_age": 38
+    },
+    {
+      "name": "城市花園",
+      "name_en": "城市花園",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 13992,
+      "avg_rent_sqft": 42.26,
+      "yield": 3.65,
+      "building_age": 40
+    },
+    {
+      "name": "新寶城",
+      "name_en": "新寶城",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 15017,
+      "avg_rent_sqft": 44.01,
+      "yield": 3.62,
+      "building_age": 27
+    },
+    {
+      "name": "蝶翠峰",
+      "name_en": "蝶翠峰",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9218,
+      "avg_rent_sqft": 28.44,
+      "yield": 3.6,
+      "building_age": 22
     },
     {
       "name": "杏花邨",
@@ -422,8 +412,18 @@
       "district_code": "hk",
       "avg_price_sqft": 14865,
       "avg_rent_sqft": 41.09,
-      "yield": 3.51,
+      "yield": 3.58,
       "building_age": 40
+    },
+    {
+      "name": "港灣豪庭",
+      "name_en": "港灣豪庭",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 16873,
+      "avg_rent_sqft": 50.77,
+      "yield": 3.58,
+      "building_age": 23
     },
     {
       "name": "嘉湖山莊",
@@ -432,18 +432,118 @@
       "district_code": "nt",
       "avg_price_sqft": 8634,
       "avg_rent_sqft": 26.43,
-      "yield": 3.51,
+      "yield": 3.58,
       "building_age": null
     },
     {
-      "name": "綠楊新邨",
-      "name_en": "綠楊新邨",
+      "name": "嵐山",
+      "name_en": "嵐山",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 13155,
-      "avg_rent_sqft": 39.28,
-      "yield": 3.51,
-      "building_age": 41
+      "avg_price_sqft": 10951,
+      "avg_rent_sqft": 32.44,
+      "yield": 3.57,
+      "building_age": 11
+    },
+    {
+      "name": "馬鞍山中心",
+      "name_en": "馬鞍山中心",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 14824,
+      "avg_rent_sqft": 41.29,
+      "yield": 3.57,
+      "building_age": 31
+    },
+    {
+      "name": "聽濤雅苑",
+      "name_en": "聽濤雅苑",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12121,
+      "avg_rent_sqft": 37,
+      "yield": 3.56,
+      "building_age": 28
+    },
+    {
+      "name": "海翠花園",
+      "name_en": "海翠花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9456,
+      "avg_rent_sqft": 27.57,
+      "yield": 3.55,
+      "building_age": 38
+    },
+    {
+      "name": "麗都花園",
+      "name_en": "麗都花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9542,
+      "avg_rent_sqft": 26.87,
+      "yield": 3.55,
+      "building_age": 37
+    },
+    {
+      "name": "東港城",
+      "name_en": "東港城",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 14074,
+      "avg_rent_sqft": 43.38,
+      "yield": 3.54,
+      "building_age": 28
+    },
+    {
+      "name": "鯉景灣",
+      "name_en": "鯉景灣",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 15639,
+      "avg_rent_sqft": 44.58,
+      "yield": 3.53,
+      "building_age": 37
+    },
+    {
+      "name": "又一居",
+      "name_en": "又一居",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 18773,
+      "avg_rent_sqft": 59.29,
+      "yield": 3.53,
+      "building_age": 28
+    },
+    {
+      "name": "珀麗灣",
+      "name_en": "珀麗灣",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 11517,
+      "avg_rent_sqft": 34.35,
+      "yield": 3.53,
+      "building_age": 23
+    },
+    {
+      "name": "浪翠園",
+      "name_en": "浪翠園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9438,
+      "avg_rent_sqft": 30.88,
+      "yield": 3.53,
+      "building_age": 34
+    },
+    {
+      "name": "新都城",
+      "name_en": "新都城",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 15303,
+      "avg_rent_sqft": 43.66,
+      "yield": 3.5,
+      "building_age": 29
     },
     {
       "name": "峻弦",
@@ -456,54 +556,14 @@
       "building_age": null
     },
     {
-      "name": "珀麗灣",
-      "name_en": "珀麗灣",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 11517,
-      "avg_rent_sqft": 34.35,
-      "yield": 3.5,
-      "building_age": 23
-    },
-    {
-      "name": "翰林軒",
-      "name_en": "翰林軒",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 17790,
-      "avg_rent_sqft": 55.93,
+      "name": "日出康城 2期",
+      "name_en": "日出康城 2期",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 10761,
+      "avg_rent_sqft": 32.52,
       "yield": 3.49,
-      "building_age": 26
-    },
-    {
-      "name": "牽晴間",
-      "name_en": "牽晴間",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 12328,
-      "avg_rent_sqft": 34.92,
-      "yield": 3.49,
-      "building_age": 25
-    },
-    {
-      "name": "愉景新城",
-      "name_en": "愉景新城",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 13841,
-      "avg_rent_sqft": 36.26,
-      "yield": 3.49,
-      "building_age": 43
-    },
-    {
-      "name": "海怡半島",
-      "name_en": "海怡半島",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 14969,
-      "avg_rent_sqft": 42.52,
-      "yield": 3.47,
-      "building_age": 34
+      "building_age": 17
     },
     {
       "name": "粉嶺中心",
@@ -512,88 +572,38 @@
       "district_code": "nt",
       "avg_price_sqft": 11397,
       "avg_rent_sqft": 32.71,
-      "yield": 3.47,
+      "yield": 3.49,
       "building_age": 36
     },
     {
-      "name": "光明臺",
-      "name_en": "光明臺",
+      "name": "屯門市廣場",
+      "name_en": "屯門市廣場",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12315,
+      "avg_rent_sqft": 36.69,
+      "yield": 3.49,
+      "building_age": 38
+    },
+    {
+      "name": "大興花園",
+      "name_en": "大興花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9432,
+      "avg_rent_sqft": 29.24,
+      "yield": 3.48,
+      "building_age": 42
+    },
+    {
+      "name": "和富中心",
+      "name_en": "和富中心",
       "district": "香港",
       "district_code": "hk",
-      "avg_price_sqft": 17736,
-      "avg_rent_sqft": 52.59,
+      "avg_price_sqft": 15117,
+      "avg_rent_sqft": 43.91,
       "yield": 3.46,
-      "building_age": 41
-    },
-    {
-      "name": "聚賢居",
-      "name_en": "聚賢居",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 22356,
-      "avg_rent_sqft": 69.05,
-      "yield": 3.44,
-      "building_age": 19
-    },
-    {
-      "name": "港灣豪庭",
-      "name_en": "港灣豪庭",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 16873,
-      "avg_rent_sqft": 50.77,
-      "yield": 3.44,
-      "building_age": 23
-    },
-    {
-      "name": "花都廣場",
-      "name_en": "花都廣場",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 11609,
-      "avg_rent_sqft": 32.72,
-      "yield": 3.44,
-      "building_age": 34
-    },
-    {
-      "name": "翠擁華庭",
-      "name_en": "翠擁華庭",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 11239,
-      "avg_rent_sqft": 37.29,
-      "yield": 3.44,
-      "building_age": 27
-    },
-    {
-      "name": "鯉景灣",
-      "name_en": "鯉景灣",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 15639,
-      "avg_rent_sqft": 44.58,
-      "yield": 3.43,
-      "building_age": 37
-    },
-    {
-      "name": "港運城",
-      "name_en": "港運城",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 15995,
-      "avg_rent_sqft": 43.74,
-      "yield": 3.43,
-      "building_age": 28
-    },
-    {
-      "name": "日出康城 1期",
-      "name_en": "日出康城 1期",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 10910,
-      "avg_rent_sqft": 32.38,
-      "yield": 3.43,
-      "building_age": 21
+      "building_age": 39
     },
     {
       "name": "新屯門中心",
@@ -602,38 +612,18 @@
       "district_code": "nt",
       "avg_price_sqft": 9742,
       "avg_rent_sqft": 26.19,
-      "yield": 3.43,
+      "yield": 3.46,
       "building_age": 40
     },
     {
-      "name": "海濱花園",
-      "name_en": "海濱花園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 10949,
-      "avg_rent_sqft": 35.27,
-      "yield": 3.41,
-      "building_age": 38
-    },
-    {
-      "name": "藍天海岸",
-      "name_en": "藍天海岸",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 11591,
-      "avg_rent_sqft": 34.66,
-      "yield": 3.4,
-      "building_age": 21
-    },
-    {
-      "name": "邁亞美海灣",
-      "name_en": "邁亞美海灣",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 10025,
-      "avg_rent_sqft": 28.08,
-      "yield": 3.4,
-      "building_age": 34
+      "name": "匯景花園",
+      "name_en": "匯景花園",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 12978,
+      "avg_rent_sqft": 40.58,
+      "yield": 3.45,
+      "building_age": 35
     },
     {
       "name": "尚悅",
@@ -642,7 +632,7 @@
       "district_code": "nt",
       "avg_price_sqft": 11377,
       "avg_rent_sqft": 31.44,
-      "yield": 3.39,
+      "yield": 3.44,
       "building_age": 11
     },
     {
@@ -652,8 +642,78 @@
       "district_code": "hk",
       "avg_price_sqft": 21283,
       "avg_rent_sqft": 60.97,
-      "yield": 3.38,
+      "yield": 3.42,
       "building_age": 22
+    },
+    {
+      "name": "傲雲峰",
+      "name_en": "傲雲峰",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 17422,
+      "avg_rent_sqft": 47.53,
+      "yield": 3.42,
+      "building_age": 22
+    },
+    {
+      "name": "星河明居",
+      "name_en": "星河明居",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 16394,
+      "avg_rent_sqft": 48.71,
+      "yield": 3.42,
+      "building_age": 27
+    },
+    {
+      "name": "牽晴間",
+      "name_en": "牽晴間",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12328,
+      "avg_rent_sqft": 34.92,
+      "yield": 3.42,
+      "building_age": 25
+    },
+    {
+      "name": "海怡半島",
+      "name_en": "海怡半島",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 14969,
+      "avg_rent_sqft": 42.52,
+      "yield": 3.41,
+      "building_age": 34
+    },
+    {
+      "name": "聚賢居",
+      "name_en": "聚賢居",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 22356,
+      "avg_rent_sqft": 69.05,
+      "yield": 3.41,
+      "building_age": 19
+    },
+    {
+      "name": "學士臺",
+      "name_en": "學士臺",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 16278,
+      "avg_rent_sqft": 47.13,
+      "yield": 3.4,
+      "building_age": 29
+    },
+    {
+      "name": "碧瑤灣",
+      "name_en": "碧瑤灣",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 15839,
+      "avg_rent_sqft": 40.6,
+      "yield": 3.39,
+      "building_age": 46
     },
     {
       "name": "東環",
@@ -676,64 +736,14 @@
       "building_age": 22
     },
     {
-      "name": "昇悅居",
-      "name_en": "昇悅居",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 17347,
-      "avg_rent_sqft": 46,
-      "yield": 3.37,
+      "name": "御皇庭",
+      "name_en": "御皇庭",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 11819,
+      "avg_rent_sqft": 33.9,
+      "yield": 3.35,
       "building_age": 24
-    },
-    {
-      "name": "嵐山",
-      "name_en": "嵐山",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 10951,
-      "avg_rent_sqft": 32.44,
-      "yield": 3.37,
-      "building_age": 11
-    },
-    {
-      "name": "嘉亨灣",
-      "name_en": "嘉亨灣",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 20660,
-      "avg_rent_sqft": 54.1,
-      "yield": 3.36,
-      "building_age": 21
-    },
-    {
-      "name": "上水中心",
-      "name_en": "上水中心",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 13175,
-      "avg_rent_sqft": 36.72,
-      "yield": 3.36,
-      "building_age": 31
-    },
-    {
-      "name": "東港城",
-      "name_en": "東港城",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 14074,
-      "avg_rent_sqft": 43.38,
-      "yield": 3.35,
-      "building_age": 28
-    },
-    {
-      "name": "映灣園",
-      "name_en": "映灣園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 9948,
-      "avg_rent_sqft": 28.89,
-      "yield": 3.35,
-      "building_age": 21
     },
     {
       "name": "栢慧豪園",
@@ -746,104 +756,14 @@
       "building_age": 18
     },
     {
-      "name": "日出康城 2期",
-      "name_en": "日出康城 2期",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 10761,
-      "avg_rent_sqft": 32.52,
-      "yield": 3.34,
-      "building_age": 17
-    },
-    {
-      "name": "宇晴軒",
-      "name_en": "宇晴軒",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 16704,
-      "avg_rent_sqft": 47.87,
-      "yield": 3.34,
-      "building_age": 21
-    },
-    {
-      "name": "麗都花園",
-      "name_en": "麗都花園",
+      "name": "香港黃金海岸",
+      "name_en": "香港黃金海岸",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 9542,
-      "avg_rent_sqft": 26.87,
-      "yield": 3.34,
-      "building_age": 37
-    },
-    {
-      "name": "碧瑤灣",
-      "name_en": "碧瑤灣",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 15839,
-      "avg_rent_sqft": 40.6,
-      "yield": 3.33,
-      "building_age": 46
-    },
-    {
-      "name": "將軍澳中心",
-      "name_en": "將軍澳中心",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 15802,
-      "avg_rent_sqft": 43.73,
-      "yield": 3.33,
-      "building_age": 26
-    },
-    {
-      "name": "維港灣",
-      "name_en": "維港灣",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 21435,
-      "avg_rent_sqft": 53.65,
-      "yield": 3.33,
-      "building_age": 25
-    },
-    {
-      "name": "翔龍灣",
-      "name_en": "翔龍灣",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 18407,
-      "avg_rent_sqft": 44.42,
-      "yield": 3.33,
-      "building_age": 21
-    },
-    {
-      "name": "又一居",
-      "name_en": "又一居",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 18773,
-      "avg_rent_sqft": 59.29,
-      "yield": 3.33,
-      "building_age": 28
-    },
-    {
-      "name": "新港城",
-      "name_en": "新港城",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 14861,
-      "avg_rent_sqft": 44.45,
-      "yield": 3.33,
-      "building_age": 37
-    },
-    {
-      "name": "駿景園",
-      "name_en": "駿景園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 14076,
-      "avg_rent_sqft": 33.8,
-      "yield": 3.32,
-      "building_age": 31
+      "avg_price_sqft": 8810,
+      "avg_rent_sqft": 25.29,
+      "yield": 3.35,
+      "building_age": 35
     },
     {
       "name": "海濱南岸",
@@ -852,38 +772,128 @@
       "district_code": "kl",
       "avg_price_sqft": 17628,
       "avg_rent_sqft": 46.19,
-      "yield": 3.31,
+      "yield": 3.34,
       "building_age": 17
     },
     {
-      "name": "傲雲峰",
-      "name_en": "傲雲峰",
+      "name": "日出康城 1期",
+      "name_en": "日出康城 1期",
       "district": "九龍",
       "district_code": "kl",
-      "avg_price_sqft": 17422,
-      "avg_rent_sqft": 47.53,
-      "yield": 3.31,
-      "building_age": 22
+      "avg_price_sqft": 10910,
+      "avg_rent_sqft": 32.38,
+      "yield": 3.32,
+      "building_age": 21
     },
     {
-      "name": "香港黃金海岸",
-      "name_en": "香港黃金海岸",
+      "name": "邁亞美海灣",
+      "name_en": "邁亞美海灣",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 8810,
-      "avg_rent_sqft": 25.29,
-      "yield": 3.31,
-      "building_age": 35
+      "avg_price_sqft": 10025,
+      "avg_rent_sqft": 28.08,
+      "yield": 3.32,
+      "building_age": 34
     },
     {
-      "name": "太古城",
-      "name_en": "太古城",
+      "name": "綠楊新邨",
+      "name_en": "綠楊新邨",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 13155,
+      "avg_rent_sqft": 39.28,
+      "yield": 3.31,
+      "building_age": 41
+    },
+    {
+      "name": "藍灣半島",
+      "name_en": "藍灣半島",
       "district": "香港",
       "district_code": "hk",
-      "avg_price_sqft": 17864,
-      "avg_rent_sqft": 46.41,
+      "avg_price_sqft": 15920,
+      "avg_rent_sqft": 47.44,
+      "yield": 3.29,
+      "building_age": 24
+    },
+    {
+      "name": "維景灣畔",
+      "name_en": "維景灣畔",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 17579,
+      "avg_rent_sqft": 42.12,
+      "yield": 3.29,
+      "building_age": 24
+    },
+    {
+      "name": "港運城",
+      "name_en": "港運城",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 15995,
+      "avg_rent_sqft": 43.74,
+      "yield": 3.28,
+      "building_age": 28
+    },
+    {
+      "name": "翔龍灣",
+      "name_en": "翔龍灣",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 18407,
+      "avg_rent_sqft": 44.42,
       "yield": 3.27,
-      "building_age": 48
+      "building_age": 21
+    },
+    {
+      "name": "海典灣",
+      "name_en": "海典灣",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 14130,
+      "avg_rent_sqft": 39.12,
+      "yield": 3.24,
+      "building_age": 17
+    },
+    {
+      "name": "映灣園",
+      "name_en": "映灣園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9948,
+      "avg_rent_sqft": 28.89,
+      "yield": 3.24,
+      "building_age": 21
+    },
+    {
+      "name": "愉景新城",
+      "name_en": "愉景新城",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 13841,
+      "avg_rent_sqft": 36.26,
+      "yield": 3.24,
+      "building_age": 43
+    },
+    {
+      "name": "康怡花園",
+      "name_en": "康怡花園",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 15370,
+      "avg_rent_sqft": 42.84,
+      "yield": 3.23,
+      "building_age": 44
+    },
+    {
+      "name": "將軍澳中心",
+      "name_en": "將軍澳中心",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 15802,
+      "avg_rent_sqft": 43.73,
+      "yield": 3.23,
+      "building_age": 26
     },
     {
       "name": "爵悅庭",
@@ -892,68 +902,28 @@
       "district_code": "nt",
       "avg_price_sqft": 16230,
       "avg_rent_sqft": 40.93,
-      "yield": 3.27,
+      "yield": 3.23,
       "building_age": 21
     },
     {
-      "name": "海翠花園",
-      "name_en": "海翠花園",
+      "name": "上水中心",
+      "name_en": "上水中心",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 9456,
-      "avg_rent_sqft": 27.57,
-      "yield": 3.26,
-      "building_age": 38
+      "avg_price_sqft": 13175,
+      "avg_rent_sqft": 36.72,
+      "yield": 3.22,
+      "building_age": 31
     },
     {
-      "name": "深灣軒",
-      "name_en": "深灣軒",
+      "name": "逸濤灣",
+      "name_en": "逸濤灣",
       "district": "香港",
       "district_code": "hk",
-      "avg_price_sqft": 19228,
-      "avg_rent_sqft": 49.45,
-      "yield": 3.25,
-      "building_age": 22
-    },
-    {
-      "name": "新峰花園",
-      "name_en": "新峰花園",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 10203,
-      "avg_rent_sqft": 32.95,
-      "yield": 3.25,
-      "building_age": 37
-    },
-    {
-      "name": "聽濤雅苑",
-      "name_en": "聽濤雅苑",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 12121,
-      "avg_rent_sqft": 37,
-      "yield": 3.24,
-      "building_age": 28
-    },
-    {
-      "name": "學士臺",
-      "name_en": "學士臺",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 16278,
-      "avg_rent_sqft": 47.13,
-      "yield": 3.22,
-      "building_age": 29
-    },
-    {
-      "name": "天賦海灣",
-      "name_en": "天賦海灣",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 12049,
-      "avg_rent_sqft": 35.59,
-      "yield": 3.22,
-      "building_age": 13
+      "avg_price_sqft": 20770,
+      "avg_rent_sqft": 55.8,
+      "yield": 3.21,
+      "building_age": 23
     },
     {
       "name": "形薈",
@@ -966,94 +936,24 @@
       "building_age": null
     },
     {
-      "name": "縉城峰",
-      "name_en": "縉城峰",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 26966,
-      "avg_rent_sqft": 66.28,
-      "yield": 3.2,
-      "building_age": 16
-    },
-    {
       "name": "新元朗中心",
       "name_en": "新元朗中心",
       "district": "新界",
       "district_code": "nt",
       "avg_price_sqft": 13887,
       "avg_rent_sqft": 37.18,
-      "yield": 3.18,
+      "yield": 3.21,
       "building_age": 30
     },
     {
-      "name": "海典灣",
-      "name_en": "海典灣",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 14130,
-      "avg_rent_sqft": 39.12,
-      "yield": 3.17,
-      "building_age": 17
-    },
-    {
-      "name": "和富中心",
-      "name_en": "和富中心",
+      "name": "尚翹峰",
+      "name_en": "尚翹峰",
       "district": "香港",
       "district_code": "hk",
-      "avg_price_sqft": 15117,
-      "avg_rent_sqft": 43.91,
-      "yield": 3.14,
-      "building_age": 39
-    },
-    {
-      "name": "御皇庭",
-      "name_en": "御皇庭",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 11819,
-      "avg_rent_sqft": 33.9,
-      "yield": 3.14,
-      "building_age": 24
-    },
-    {
-      "name": "迎海",
-      "name_en": "迎海",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 16118,
-      "avg_rent_sqft": 41.88,
-      "yield": 3.13,
-      "building_age": 13
-    },
-    {
-      "name": "采葉庭",
-      "name_en": "采葉庭",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 12426,
-      "avg_rent_sqft": 32.42,
-      "yield": 3.11,
-      "building_age": 25
-    },
-    {
-      "name": "港景峰",
-      "name_en": "港景峰",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 23643,
-      "avg_rent_sqft": 58.73,
-      "yield": 3.1,
-      "building_age": 23
-    },
-    {
-      "name": "帝堡城",
-      "name_en": "帝堡城",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 13490,
-      "avg_rent_sqft": 34.76,
-      "yield": 3.08,
-      "building_age": 24
+      "avg_price_sqft": 23096,
+      "avg_rent_sqft": 59.39,
+      "yield": 3.2,
+      "building_age": 17
     },
     {
       "name": "海逸豪園",
@@ -1062,18 +962,18 @@
       "district_code": "kl",
       "avg_price_sqft": 19156,
       "avg_rent_sqft": 48.23,
-      "yield": 3.07,
+      "yield": 3.19,
       "building_age": 26
     },
     {
-      "name": "現崇山",
-      "name_en": "現崇山",
+      "name": "昇悅居",
+      "name_en": "昇悅居",
       "district": "九龍",
       "district_code": "kl",
-      "avg_price_sqft": 17076,
-      "avg_rent_sqft": 48.21,
-      "yield": 3.07,
-      "building_age": 16
+      "avg_price_sqft": 17347,
+      "avg_rent_sqft": 46,
+      "yield": 3.17,
+      "building_age": 24
     },
     {
       "name": "皇府山",
@@ -1082,48 +982,18 @@
       "district_code": "nt",
       "avg_price_sqft": 11519,
       "avg_rent_sqft": 30.68,
-      "yield": 3.06,
+      "yield": 3.17,
       "building_age": 17
     },
     {
-      "name": "逸濤灣",
-      "name_en": "逸濤灣",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 20770,
-      "avg_rent_sqft": 55.8,
-      "yield": 3.05,
-      "building_age": 23
-    },
-    {
-      "name": "帝庭軒",
-      "name_en": "帝庭軒",
+      "name": "采葉庭",
+      "name_en": "采葉庭",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 11982,
-      "avg_rent_sqft": 31.48,
-      "yield": 3.04,
-      "building_age": 22
-    },
-    {
-      "name": "漾日居",
-      "name_en": "漾日居",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 23526,
-      "avg_rent_sqft": 50.36,
-      "yield": 3.03,
-      "building_age": 26
-    },
-    {
-      "name": "星河明居",
-      "name_en": "星河明居",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 16394,
-      "avg_rent_sqft": 48.71,
-      "yield": 3.03,
-      "building_age": 27
+      "avg_price_sqft": 12426,
+      "avg_rent_sqft": 32.42,
+      "yield": 3.17,
+      "building_age": 25
     },
     {
       "name": "盈翠半島",
@@ -1132,38 +1002,178 @@
       "district_code": "nt",
       "avg_price_sqft": 17954,
       "avg_rent_sqft": 45.58,
-      "yield": 3.03,
+      "yield": 3.15,
       "building_age": 27
     },
     {
-      "name": "豫豐花園",
-      "name_en": "豫豐花園",
+      "name": "藍天海岸",
+      "name_en": "藍天海岸",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 9900,
-      "avg_rent_sqft": 25.73,
+      "avg_price_sqft": 11591,
+      "avg_rent_sqft": 34.66,
+      "yield": 3.14,
+      "building_age": 21
+    },
+    {
+      "name": "名城",
+      "name_en": "名城",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 17832,
+      "avg_rent_sqft": 44.8,
+      "yield": 3.13,
+      "building_age": 15
+    },
+    {
+      "name": "駿景園",
+      "name_en": "駿景園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 14076,
+      "avg_rent_sqft": 33.8,
+      "yield": 3.13,
+      "building_age": 31
+    },
+    {
+      "name": "陽明山莊",
+      "name_en": "陽明山莊",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 21395,
+      "avg_rent_sqft": 48.52,
+      "yield": 3.11,
+      "building_age": 36
+    },
+    {
+      "name": "縉城峰",
+      "name_en": "縉城峰",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 26966,
+      "avg_rent_sqft": 66.28,
+      "yield": 3.11,
+      "building_age": 16
+    },
+    {
+      "name": "雍景臺",
+      "name_en": "雍景臺",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 21430,
+      "avg_rent_sqft": 54.5,
+      "yield": 3.11,
+      "building_age": 28
+    },
+    {
+      "name": "現崇山",
+      "name_en": "現崇山",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 17076,
+      "avg_rent_sqft": 48.21,
+      "yield": 3.11,
+      "building_age": 16
+    },
+    {
+      "name": "帝庭軒",
+      "name_en": "帝庭軒",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 11982,
+      "avg_rent_sqft": 31.48,
+      "yield": 3.1,
+      "building_age": 22
+    },
+    {
+      "name": "宇晴軒",
+      "name_en": "宇晴軒",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 16704,
+      "avg_rent_sqft": 47.87,
+      "yield": 3.09,
+      "building_age": 21
+    },
+    {
+      "name": "帝峰‧皇殿",
+      "name_en": "帝峰‧皇殿",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 24544,
+      "avg_rent_sqft": 54.68,
+      "yield": 3.09,
+      "building_age": null
+    },
+    {
+      "name": "太古城",
+      "name_en": "太古城",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 17864,
+      "avg_rent_sqft": 46.41,
+      "yield": 3.08,
+      "building_age": 48
+    },
+    {
+      "name": "南灣",
+      "name_en": "南灣",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 23368,
+      "avg_rent_sqft": 53.07,
+      "yield": 3.03,
+      "building_age": 16
+    },
+    {
+      "name": "維港灣",
+      "name_en": "維港灣",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 21435,
+      "avg_rent_sqft": 53.65,
       "yield": 3.02,
-      "building_age": 22
+      "building_age": 25
     },
     {
-      "name": "浪澄灣",
-      "name_en": "浪澄灣",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 19825,
-      "avg_rent_sqft": 51.71,
-      "yield": 2.99,
-      "building_age": 22
+      "name": "嘉亨灣",
+      "name_en": "嘉亨灣",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 20660,
+      "avg_rent_sqft": 54.1,
+      "yield": 3.01,
+      "building_age": 21
     },
     {
-      "name": "維景灣畔",
-      "name_en": "維景灣畔",
+      "name": "譽‧港灣",
+      "name_en": "譽‧港灣",
       "district": "九龍",
       "district_code": "kl",
-      "avg_price_sqft": 17579,
-      "avg_rent_sqft": 42.12,
+      "avg_price_sqft": 19919,
+      "avg_rent_sqft": 48.78,
+      "yield": 3.01,
+      "building_age": null
+    },
+    {
+      "name": "YOHO MIDTOWN",
+      "name_en": "YOHO MIDTOWN",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 15820,
+      "avg_rent_sqft": 37.06,
+      "yield": 3.01,
+      "building_age": 16
+    },
+    {
+      "name": "君匯港",
+      "name_en": "君匯港",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 21257,
+      "avg_rent_sqft": 54.05,
       "yield": 2.97,
-      "building_age": 24
+      "building_age": 20
     },
     {
       "name": "天晉",
@@ -1186,74 +1196,34 @@
       "building_age": null
     },
     {
-      "name": "譽‧港灣",
-      "name_en": "譽‧港灣",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 19919,
-      "avg_rent_sqft": 48.78,
-      "yield": 2.96,
-      "building_age": null
-    },
-    {
-      "name": "曼克頓山",
-      "name_en": "曼克頓山",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 20767,
-      "avg_rent_sqft": 51.19,
-      "yield": 2.96,
-      "building_age": 19
-    },
-    {
-      "name": "尚翹峰",
-      "name_en": "尚翹峰",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 23096,
-      "avg_rent_sqft": 59.39,
-      "yield": 2.95,
-      "building_age": 17
-    },
-    {
-      "name": "半山壹號",
-      "name_en": "半山壹號",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 18877,
-      "avg_rent_sqft": 47.86,
-      "yield": 2.93,
-      "building_age": 18
-    },
-    {
-      "name": "名城",
-      "name_en": "名城",
+      "name": "迎海",
+      "name_en": "迎海",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 17832,
-      "avg_rent_sqft": 44.8,
-      "yield": 2.92,
-      "building_age": 15
-    },
-    {
-      "name": "囍匯",
-      "name_en": "囍匯",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 28492,
-      "avg_rent_sqft": 66.65,
-      "yield": 2.91,
-      "building_age": 15
-    },
-    {
-      "name": "瓏門",
-      "name_en": "瓏門",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 16038,
-      "avg_rent_sqft": 37.16,
-      "yield": 2.9,
+      "avg_price_sqft": 16118,
+      "avg_rent_sqft": 41.88,
+      "yield": 2.96,
       "building_age": 13
+    },
+    {
+      "name": "雅典居",
+      "name_en": "雅典居",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12911,
+      "avg_rent_sqft": 27.93,
+      "yield": 2.92,
+      "building_age": 31
+    },
+    {
+      "name": "深灣軒",
+      "name_en": "深灣軒",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 19228,
+      "avg_rent_sqft": 49.45,
+      "yield": 2.91,
+      "building_age": 22
     },
     {
       "name": "泓都",
@@ -1262,18 +1232,8 @@
       "district_code": "hk",
       "avg_price_sqft": 22332,
       "avg_rent_sqft": 57.49,
-      "yield": 2.89,
+      "yield": 2.9,
       "building_age": 22
-    },
-    {
-      "name": "凱旋門",
-      "name_en": "凱旋門",
-      "district": "九龍",
-      "district_code": "kl",
-      "avg_price_sqft": 36556,
-      "avg_rent_sqft": 75.47,
-      "yield": 2.87,
-      "building_age": 21
     },
     {
       "name": "海柏花園",
@@ -1282,18 +1242,38 @@
       "district_code": "nt",
       "avg_price_sqft": 17118,
       "avg_rent_sqft": 41.87,
-      "yield": 2.84,
+      "yield": 2.9,
       "building_age": 34
     },
     {
-      "name": "君匯港",
-      "name_en": "君匯港",
+      "name": "曼克頓山",
+      "name_en": "曼克頓山",
       "district": "九龍",
       "district_code": "kl",
-      "avg_price_sqft": 21257,
-      "avg_rent_sqft": 54.05,
-      "yield": 2.83,
-      "building_age": 20
+      "avg_price_sqft": 20767,
+      "avg_rent_sqft": 51.19,
+      "yield": 2.88,
+      "building_age": 19
+    },
+    {
+      "name": "帝堡城",
+      "name_en": "帝堡城",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 13490,
+      "avg_rent_sqft": 34.76,
+      "yield": 2.88,
+      "building_age": 24
+    },
+    {
+      "name": "天賦海灣",
+      "name_en": "天賦海灣",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 12049,
+      "avg_rent_sqft": 35.59,
+      "yield": 2.88,
+      "building_age": 13
     },
     {
       "name": "YOHO TOWN",
@@ -1302,7 +1282,7 @@
       "district_code": "nt",
       "avg_price_sqft": 15511,
       "avg_rent_sqft": 37.93,
-      "yield": 2.83,
+      "yield": 2.88,
       "building_age": 22
     },
     {
@@ -1312,68 +1292,78 @@
       "district_code": "kl",
       "avg_price_sqft": 22544,
       "avg_rent_sqft": 54.7,
-      "yield": 2.81,
+      "yield": 2.87,
       "building_age": 23
     },
     {
-      "name": "寶翠園",
-      "name_en": "寶翠園",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 24475,
-      "avg_rent_sqft": 59.04,
-      "yield": 2.77,
+      "name": "港景峰",
+      "name_en": "港景峰",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 23643,
+      "avg_rent_sqft": 58.73,
+      "yield": 2.87,
       "building_age": 23
     },
     {
-      "name": "YOHO MIDTOWN",
-      "name_en": "YOHO MIDTOWN",
+      "name": "瓏門",
+      "name_en": "瓏門",
       "district": "新界",
       "district_code": "nt",
-      "avg_price_sqft": 15820,
-      "avg_rent_sqft": 37.06,
-      "yield": 2.75,
-      "building_age": 16
+      "avg_price_sqft": 16038,
+      "avg_rent_sqft": 37.16,
+      "yield": 2.87,
+      "building_age": 13
     },
     {
-      "name": "南灣",
-      "name_en": "南灣",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 23368,
-      "avg_rent_sqft": 53.07,
-      "yield": 2.72,
-      "building_age": 16
+      "name": "半山壹號",
+      "name_en": "半山壹號",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 18877,
+      "avg_rent_sqft": 47.86,
+      "yield": 2.85,
+      "building_age": 18
     },
     {
-      "name": "陽明山莊",
-      "name_en": "陽明山莊",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 21395,
-      "avg_rent_sqft": 48.52,
-      "yield": 2.71,
-      "building_age": 36
+      "name": "浪澄灣",
+      "name_en": "浪澄灣",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 19825,
+      "avg_rent_sqft": 51.71,
+      "yield": 2.81,
+      "building_age": 22
     },
     {
-      "name": "比華利山",
-      "name_en": "比華利山",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 25208,
-      "avg_rent_sqft": 55.86,
-      "yield": 2.69,
-      "building_age": 47
+      "name": "豫豐花園",
+      "name_en": "豫豐花園",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 9900,
+      "avg_rent_sqft": 25.73,
+      "yield": 2.81,
+      "building_age": 22
     },
     {
-      "name": "雍景臺",
-      "name_en": "雍景臺",
+      "name": "囍匯",
+      "name_en": "囍匯",
       "district": "香港",
       "district_code": "hk",
-      "avg_price_sqft": 21430,
-      "avg_rent_sqft": 54.5,
-      "yield": 2.68,
-      "building_age": 28
+      "avg_price_sqft": 28492,
+      "avg_rent_sqft": 66.65,
+      "yield": 2.8,
+      "building_age": 15
+    },
+    {
+      "name": "御龍山",
+      "name_en": "御龍山",
+      "district": "新界",
+      "district_code": "nt",
+      "avg_price_sqft": 19071,
+      "avg_rent_sqft": 43.95,
+      "yield": 2.78,
+      "building_age": 18
     },
     {
       "name": "君頤峰",
@@ -1382,28 +1372,38 @@
       "district_code": "kl",
       "avg_price_sqft": 22340,
       "avg_rent_sqft": 50.88,
-      "yield": 2.65,
+      "yield": 2.75,
       "building_age": 24
     },
     {
-      "name": "貝沙灣",
-      "name_en": "貝沙灣",
+      "name": "賽西湖大廈",
+      "name_en": "賽西湖大廈",
       "district": "香港",
       "district_code": "hk",
-      "avg_price_sqft": 25819,
-      "avg_rent_sqft": 54.81,
-      "yield": 2.63,
-      "building_age": 22
+      "avg_price_sqft": 21202,
+      "avg_rent_sqft": 45.2,
+      "yield": 2.71,
+      "building_age": 47
     },
     {
-      "name": "雅典居",
-      "name_en": "雅典居",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 12911,
-      "avg_rent_sqft": 27.93,
-      "yield": 2.61,
-      "building_age": 31
+      "name": "比華利山",
+      "name_en": "比華利山",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 25208,
+      "avg_rent_sqft": 55.86,
+      "yield": 2.68,
+      "building_age": 47
+    },
+    {
+      "name": "寶翠園",
+      "name_en": "寶翠園",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 24475,
+      "avg_rent_sqft": 59.04,
+      "yield": 2.64,
+      "building_age": 23
     },
     {
       "name": "嘉富麗苑",
@@ -1416,44 +1416,14 @@
       "building_age": 31
     },
     {
-      "name": "賽西湖大廈",
-      "name_en": "賽西湖大廈",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 21202,
-      "avg_rent_sqft": 45.2,
-      "yield": 2.58,
-      "building_age": 47
-    },
-    {
-      "name": "御龍山",
-      "name_en": "御龍山",
-      "district": "新界",
-      "district_code": "nt",
-      "avg_price_sqft": 19071,
-      "avg_rent_sqft": 43.95,
-      "yield": 2.58,
-      "building_age": 18
-    },
-    {
-      "name": "帝峰‧皇殿",
-      "name_en": "帝峰‧皇殿",
+      "name": "漾日居",
+      "name_en": "漾日居",
       "district": "九龍",
       "district_code": "kl",
-      "avg_price_sqft": 24544,
-      "avg_rent_sqft": 54.68,
-      "yield": 2.55,
-      "building_age": null
-    },
-    {
-      "name": "嘉雲臺",
-      "name_en": "嘉雲臺",
-      "district": "香港",
-      "district_code": "hk",
-      "avg_price_sqft": 29422,
-      "avg_rent_sqft": 55.11,
-      "yield": 2.49,
-      "building_age": 33
+      "avg_price_sqft": 23526,
+      "avg_rent_sqft": 50.36,
+      "yield": 2.59,
+      "building_age": 26
     },
     {
       "name": "擎天半島",
@@ -1466,14 +1436,44 @@
       "building_age": 21
     },
     {
+      "name": "貝沙灣",
+      "name_en": "貝沙灣",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 25819,
+      "avg_rent_sqft": 54.81,
+      "yield": 2.36,
+      "building_age": 22
+    },
+    {
       "name": "畢架山一號",
       "name_en": "畢架山一號",
       "district": "九龍",
       "district_code": "kl",
       "avg_price_sqft": 24268,
       "avg_rent_sqft": 54.91,
-      "yield": 2.26,
+      "yield": 2.36,
       "building_age": 23
+    },
+    {
+      "name": "凱旋門",
+      "name_en": "凱旋門",
+      "district": "九龍",
+      "district_code": "kl",
+      "avg_price_sqft": 36556,
+      "avg_rent_sqft": 75.47,
+      "yield": 2.33,
+      "building_age": 21
+    },
+    {
+      "name": "嘉雲臺",
+      "name_en": "嘉雲臺",
+      "district": "香港",
+      "district_code": "hk",
+      "avg_price_sqft": 29422,
+      "avg_rent_sqft": 55.11,
+      "yield": 2.31,
+      "building_age": 33
     },
     {
       "name": "禮頓山",
@@ -1482,7 +1482,7 @@
       "district_code": "hk",
       "avg_price_sqft": 41118,
       "avg_rent_sqft": 70.14,
-      "yield": 2.01,
+      "yield": 2.16,
       "building_age": 23
     },
     {
@@ -1492,7 +1492,7 @@
       "district_code": "hk",
       "avg_price_sqft": 28224,
       "avg_rent_sqft": 51.02,
-      "yield": 1.93,
+      "yield": 1.94,
       "building_age": 35
     },
     {
@@ -1502,7 +1502,7 @@
       "district_code": "hk",
       "avg_price_sqft": 39443,
       "avg_rent_sqft": 53.29,
-      "yield": 1.84,
+      "yield": 1.61,
       "building_age": 30
     }
   ]
