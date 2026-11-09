@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06T16:32:56+08:00",
+  "last_updated": "2026-11-09T16:32:52+08:00",
   "source": "etnet (派息) + Yahoo Finance (股價)",
   "method": "上一財政年度總派息 / 現價",
   "disclaimer": "息率 = 上一財政年度總派息（港元）/ 現價 × 100%。派息數據來自經濟通 etnet，股價來自 Yahoo Finance。數據僅供參考，不構成投資建議。",
@@ -7,9 +7,9 @@
     {
       "ticker": "00288",
       "name": "萬洲國際",
-      "price": 6.59,
+      "price": 6.62,
       "dividend": 1.1067,
-      "yield": 16.79,
+      "yield": 16.72,
       "fy": "2025/12",
       "sector": "食品",
       "div_source": "etnet"
@@ -17,9 +17,9 @@
     {
       "ticker": "00762",
       "name": "中國聯通",
-      "price": 5.46,
+      "price": 5.51,
       "dividend": 0.4647,
-      "yield": 8.51,
+      "yield": 8.43,
       "fy": "2025/12",
       "sector": "電訊",
       "div_source": "etnet"
@@ -27,9 +27,9 @@
     {
       "ticker": "00101",
       "name": "恒隆地產",
-      "price": 6.62,
+      "price": 6.55,
       "dividend": 0.52,
-      "yield": 7.85,
+      "yield": 7.94,
       "fy": "2025/12",
       "sector": "地產",
       "div_source": "etnet"
@@ -37,9 +37,9 @@
     {
       "ticker": "06862",
       "name": "海底撈",
-      "price": 10.19,
+      "price": 10.08,
       "dividend": 0.722,
-      "yield": 7.09,
+      "yield": 7.16,
       "fy": "2025/12",
       "sector": "餐飲",
       "div_source": "etnet"
@@ -47,9 +47,9 @@
     {
       "ticker": "01044",
       "name": "恒安國際",
-      "price": 22.18,
+      "price": 21.98,
       "dividend": 1.5587,
-      "yield": 7.03,
+      "yield": 7.09,
       "fy": "2025/12",
       "sector": "消費品",
       "div_source": "etnet"
@@ -57,9 +57,9 @@
     {
       "ticker": "01876",
       "name": "百威亞太",
-      "price": 6.38,
+      "price": 6.58,
       "dividend": 0.4425,
-      "yield": 6.94,
+      "yield": 6.72,
       "fy": "2025/12",
       "sector": "食品",
       "div_source": "etnet"
@@ -67,9 +67,9 @@
     {
       "ticker": "01928",
       "name": "金沙中國",
-      "price": 11.03,
+      "price": 11.19,
       "dividend": 0.75,
-      "yield": 6.8,
+      "yield": 6.7,
       "fy": "2025/12",
       "sector": "博彩",
       "div_source": "etnet"
@@ -77,9 +77,9 @@
     {
       "ticker": "00941",
       "name": "中國移動",
-      "price": 81.1,
+      "price": 81.25,
       "dividend": 5.27,
-      "yield": 6.5,
+      "yield": 6.49,
       "fy": "2025/12",
       "sector": "電訊",
       "div_source": "etnet"
@@ -87,9 +87,9 @@
     {
       "ticker": "00823",
       "name": "領展房產基金",
-      "price": 40.98,
+      "price": 40.72,
       "dividend": 2.5361,
-      "yield": 6.19,
+      "yield": 6.23,
       "fy": "2026/03",
       "sector": "房地產信託",
       "div_source": "etnet"
@@ -97,9 +97,9 @@
     {
       "ticker": "02313",
       "name": "申洲國際",
-      "price": 42.12,
+      "price": 41.8,
       "dividend": 2.58,
-      "yield": 6.13,
+      "yield": 6.17,
       "fy": "2025/12",
       "sector": "紡織",
       "div_source": "etnet"
@@ -107,9 +107,9 @@
     {
       "ticker": "02318",
       "name": "中國平安",
-      "price": 53.15,
+      "price": 52.85,
       "dividend": 3.0518,
-      "yield": 5.74,
+      "yield": 5.77,
       "fy": "2025/12",
       "sector": "保險",
       "div_source": "etnet"
@@ -117,9 +117,9 @@
     {
       "ticker": "00291",
       "name": "華潤啤酒",
-      "price": 20.92,
+      "price": 20.96,
       "dividend": 1.148,
-      "yield": 5.49,
+      "yield": 5.48,
       "fy": "2025/12",
       "sector": "食品",
       "div_source": "etnet"
@@ -127,9 +127,9 @@
     {
       "ticker": "00267",
       "name": "中信股份",
-      "price": 12.87,
+      "price": 12.84,
       "dividend": 0.662,
-      "yield": 5.14,
+      "yield": 5.16,
       "fy": "2025/12",
       "sector": "綜合企業",
       "div_source": "etnet"
@@ -137,9 +137,9 @@
     {
       "ticker": "00857",
       "name": "中國石油",
-      "price": 10.38,
+      "price": 10.43,
       "dividend": 0.5283,
-      "yield": 5.09,
+      "yield": 5.07,
       "fy": "2025/12",
       "sector": "能源",
       "div_source": "etnet"
@@ -157,9 +157,9 @@
     {
       "ticker": "01398",
       "name": "工商銀行",
-      "price": 7.95,
+      "price": 7.99,
       "dividend": 0.3502,
-      "yield": 4.41,
+      "yield": 4.38,
       "fy": "2025/12",
       "sector": "銀行",
       "div_source": "etnet"
@@ -167,9 +167,9 @@
     {
       "ticker": "00006",
       "name": "電能實業",
-      "price": 65.4,
+      "price": 65.7,
       "dividend": 2.82,
-      "yield": 4.31,
+      "yield": 4.29,
       "fy": "2025/12",
       "sector": "公用事業",
       "div_source": "etnet"
@@ -177,9 +177,9 @@
     {
       "ticker": "00027",
       "name": "銀河娛樂",
-      "price": 34.84,
+      "price": 35.0,
       "dividend": 1.5,
-      "yield": 4.31,
+      "yield": 4.29,
       "fy": "2025/12",
       "sector": "博彩",
       "div_source": "etnet"
@@ -187,19 +187,9 @@
     {
       "ticker": "00005",
       "name": "滙豐控股",
-      "price": 137.5,
+      "price": 137.3,
       "dividend": 5.8623,
-      "yield": 4.26,
-      "fy": "2025/12",
-      "sector": "銀行",
-      "div_source": "etnet"
-    },
-    {
-      "ticker": "02388",
-      "name": "中銀香港",
-      "price": 50.0,
-      "dividend": 2.125,
-      "yield": 4.25,
+      "yield": 4.27,
       "fy": "2025/12",
       "sector": "銀行",
       "div_source": "etnet"
@@ -207,19 +197,19 @@
     {
       "ticker": "00012",
       "name": "恒基兆業地產",
-      "price": 29.7,
+      "price": 29.66,
       "dividend": 1.26,
-      "yield": 4.24,
+      "yield": 4.25,
       "fy": "2025/12",
       "sector": "地產",
       "div_source": "etnet"
     },
     {
-      "ticker": "03328",
-      "name": "交通銀行",
-      "price": 8.68,
-      "dividend": 0.3673,
-      "yield": 4.23,
+      "ticker": "02388",
+      "name": "中銀香港",
+      "price": 50.8,
+      "dividend": 2.125,
+      "yield": 4.18,
       "fy": "2025/12",
       "sector": "銀行",
       "div_source": "etnet"
@@ -227,19 +217,29 @@
     {
       "ticker": "03968",
       "name": "招商銀行",
-      "price": 54.15,
+      "price": 54.4,
       "dividend": 2.2719,
-      "yield": 4.2,
+      "yield": 4.18,
       "fy": "2025/12",
       "sector": "銀行",
       "div_source": "etnet"
     },
     {
-      "ticker": "03988",
-      "name": "中國銀行",
-      "price": 6.12,
-      "dividend": 0.2556,
-      "yield": 4.18,
+      "ticker": "01109",
+      "name": "華潤置地",
+      "price": 31.92,
+      "dividend": 1.329,
+      "yield": 4.16,
+      "fy": "2025/12",
+      "sector": "地產",
+      "div_source": "etnet"
+    },
+    {
+      "ticker": "03328",
+      "name": "交通銀行",
+      "price": 8.86,
+      "dividend": 0.3673,
+      "yield": 4.15,
       "fy": "2025/12",
       "sector": "銀行",
       "div_source": "etnet"
@@ -247,28 +247,28 @@
     {
       "ticker": "00939",
       "name": "建設銀行",
-      "price": 10.53,
+      "price": 10.59,
       "dividend": 0.4389,
-      "yield": 4.17,
+      "yield": 4.14,
       "fy": "2025/12",
       "sector": "建設銀行",
       "div_source": "etnet"
     },
     {
-      "ticker": "01109",
-      "name": "華潤置地",
-      "price": 32.02,
-      "dividend": 1.329,
-      "yield": 4.15,
+      "ticker": "00868",
+      "name": "信義玻璃",
+      "price": 8.28,
+      "dividend": 0.34,
+      "yield": 4.11,
       "fy": "2025/12",
-      "sector": "地產",
+      "sector": "工業",
       "div_source": "etnet"
     },
     {
-      "ticker": "01288",
-      "name": "農業銀行",
-      "price": 6.87,
-      "dividend": 0.2813,
+      "ticker": "03988",
+      "name": "中國銀行",
+      "price": 6.25,
+      "dividend": 0.2556,
       "yield": 4.09,
       "fy": "2025/12",
       "sector": "銀行",
@@ -277,29 +277,39 @@
     {
       "ticker": "01997",
       "name": "九龍倉置業",
-      "price": 32.54,
+      "price": 32.62,
       "dividend": 1.32,
-      "yield": 4.06,
+      "yield": 4.05,
       "fy": "2025/12",
       "sector": "地產",
       "div_source": "etnet"
     },
     {
-      "ticker": "00868",
-      "name": "信義玻璃",
-      "price": 8.43,
-      "dividend": 0.34,
-      "yield": 4.03,
+      "ticker": "01288",
+      "name": "農業銀行",
+      "price": 6.96,
+      "dividend": 0.2813,
+      "yield": 4.04,
       "fy": "2025/12",
-      "sector": "工業",
+      "sector": "銀行",
+      "div_source": "etnet"
+    },
+    {
+      "ticker": "00017",
+      "name": "新世界發展",
+      "price": 5.05,
+      "dividend": 0.2,
+      "yield": 3.96,
+      "fy": "2024/06",
+      "sector": "地產",
       "div_source": "etnet"
     },
     {
       "ticker": "00002",
       "name": "中電控股",
-      "price": 80.95,
+      "price": 81.25,
       "dividend": 3.2,
-      "yield": 3.95,
+      "yield": 3.94,
       "fy": "2025/12",
       "sector": "公用事業",
       "div_source": "etnet"
@@ -307,29 +317,19 @@
     {
       "ticker": "02628",
       "name": "中國人壽",
-      "price": 25.18,
+      "price": 24.78,
       "dividend": 0.9708,
-      "yield": 3.86,
+      "yield": 3.92,
       "fy": "2025/12",
       "sector": "保險",
       "div_source": "etnet"
     },
     {
-      "ticker": "00017",
-      "name": "新世界發展",
-      "price": 5.22,
-      "dividend": 0.2,
-      "yield": 3.83,
-      "fy": "2024/06",
-      "sector": "地產",
-      "div_source": "etnet"
-    },
-    {
       "ticker": "00066",
       "name": "港鐵公司",
-      "price": 34.3,
+      "price": 34.7,
       "dividend": 1.31,
-      "yield": 3.82,
+      "yield": 3.78,
       "fy": "2025/12",
       "sector": "運輸",
       "div_source": "etnet"
@@ -337,9 +337,9 @@
     {
       "ticker": "01038",
       "name": "長江基建",
-      "price": 71.0,
+      "price": 71.95,
       "dividend": 2.61,
-      "yield": 3.68,
+      "yield": 3.63,
       "fy": "2025/12",
       "sector": "公用事業",
       "div_source": "etnet"
@@ -347,7 +347,7 @@
     {
       "ticker": "01113",
       "name": "長實集團",
-      "price": 49.12,
+      "price": 49.2,
       "dividend": 1.78,
       "yield": 3.62,
       "fy": "2025/12",
@@ -357,9 +357,9 @@
     {
       "ticker": "00175",
       "name": "吉利汽車",
-      "price": 14.56,
+      "price": 14.41,
       "dividend": 0.5,
-      "yield": 3.43,
+      "yield": 3.47,
       "fy": "2025/12",
       "sector": "汽車",
       "div_source": "etnet"
@@ -367,9 +367,9 @@
     {
       "ticker": "01093",
       "name": "石藥集團",
-      "price": 8.45,
+      "price": 8.43,
       "dividend": 0.29,
-      "yield": 3.43,
+      "yield": 3.44,
       "fy": "2025/12",
       "sector": "醫藥",
       "div_source": "etnet"
@@ -377,9 +377,9 @@
     {
       "ticker": "00016",
       "name": "新鴻基地產",
-      "price": 117.7,
+      "price": 117.4,
       "dividend": 3.91,
-      "yield": 3.32,
+      "yield": 3.33,
       "fy": "2026/06",
       "sector": "地產",
       "div_source": "etnet"
@@ -387,9 +387,9 @@
     {
       "ticker": "00388",
       "name": "香港交易所",
-      "price": 385.6,
+      "price": 384.4,
       "dividend": 12.52,
-      "yield": 3.25,
+      "yield": 3.26,
       "fy": "2025/12",
       "sector": "金融",
       "div_source": "etnet"
@@ -397,9 +397,9 @@
     {
       "ticker": "09633",
       "name": "農夫山泉",
-      "price": 45.22,
+      "price": 44.78,
       "dividend": 1.13,
-      "yield": 2.5,
+      "yield": 2.52,
       "fy": "2025/12",
       "sector": "食品",
       "div_source": "etnet"
@@ -407,7 +407,7 @@
     {
       "ticker": "01299",
       "name": "友邦保險",
-      "price": 78.45,
+      "price": 78.55,
       "dividend": 1.9308,
       "yield": 2.46,
       "fy": "2025/12",
@@ -417,39 +417,39 @@
     {
       "ticker": "02382",
       "name": "舜宇光學",
-      "price": 64.05,
+      "price": 63.0,
       "dividend": 1.206,
-      "yield": 1.88,
+      "yield": 1.91,
       "fy": "2025/12",
       "sector": "科技",
       "div_source": "etnet"
     },
     {
-      "ticker": "00669",
-      "name": "創科實業",
-      "price": 142.6,
-      "dividend": 2.57,
-      "yield": 1.8,
-      "fy": "2025/12",
-      "sector": "工業",
-      "div_source": "etnet"
-    },
-    {
       "ticker": "01177",
       "name": "中國生物製藥",
-      "price": 5.6,
+      "price": 5.47,
       "dividend": 0.1,
-      "yield": 1.79,
+      "yield": 1.83,
       "fy": "2025/12",
       "sector": "醫藥",
       "div_source": "etnet"
     },
     {
+      "ticker": "00669",
+      "name": "創科實業",
+      "price": 141.7,
+      "dividend": 2.57,
+      "yield": 1.81,
+      "fy": "2025/12",
+      "sector": "工業",
+      "div_source": "etnet"
+    },
+    {
       "ticker": "00700",
       "name": "騰訊控股",
-      "price": 419.8,
+      "price": 418.4,
       "dividend": 5.3,
-      "yield": 1.26,
+      "yield": 1.27,
       "fy": "2025/12",
       "sector": "科技",
       "div_source": "etnet"
@@ -457,9 +457,9 @@
     {
       "ticker": "02018",
       "name": "瑞聲科技",
-      "price": 37.64,
+      "price": 37.12,
       "dividend": 0.35,
-      "yield": 0.93,
+      "yield": 0.94,
       "fy": "2025/12",
       "sector": "科技",
       "div_source": "etnet"
@@ -467,9 +467,9 @@
     {
       "ticker": "01211",
       "name": "比亞迪",
-      "price": 74.15,
+      "price": 72.45,
       "dividend": 0.4114,
-      "yield": 0.55,
+      "yield": 0.57,
       "fy": "2025/12",
       "sector": "汽車",
       "div_source": "etnet"
