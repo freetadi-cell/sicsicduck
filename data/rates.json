@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T08:32:42.154127+08:00",
+  "last_updated": "2026-11-17T08:32:54.468738+08:00",
   "source": "各銀行官網 / HKET香港經濟日報（補充）",
   "disclaimer": "利率僅供參考，一切資訊以銀行公布為準。數據自動更新，不構成投資建議。",
   "banks": [
@@ -142,7 +142,7 @@
         },
         "6m": {
           "new_funds": {
-            "rate": 2.4,
+            "rate": 2.2,
             "min_deposit": 10000,
             "note": "新資金定期存款優惠（網上理財）",
             "source": "bank"
@@ -1272,19 +1272,19 @@
           "source": "bank"
         },
         "3m": {
-          "rate": 4.1,
-          "min_deposit": 2000,
-          "note": "定期存款年利率",
-          "source": "bank"
-        },
-        "6m": {
           "rate": 4.15,
           "min_deposit": 2000,
           "note": "定期存款年利率",
           "source": "bank"
         },
+        "6m": {
+          "rate": 4.25,
+          "min_deposit": 2000,
+          "note": "定期存款年利率",
+          "source": "bank"
+        },
         "12m": {
-          "rate": 4.2,
+          "rate": 4.3,
           "min_deposit": 2000,
           "note": "定期存款年利率",
           "source": "bank"
